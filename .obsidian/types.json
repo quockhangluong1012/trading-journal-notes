@@ -1,0 +1,17 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Position": "multitext",
+    "Stop Loss": "number",
+    "Take Profit": "number",
+    "Entry": "number",
+    "Date": "datetime",
+    "Kill zone": "multitext",
+    "Hit StopLoss": "checkbox",
+    "Misstake": "multitext",
+    "Mistake": "multitext",
+    "mistakes": "multitext"
+  }
+}

@@ -1,0 +1,77 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">IRL &amp; ERL — Vòng xoay External → Internal → External</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Dealing range: ERL ở 2 cực, IRL (FVG) bên trong; giá luân chuyển giữa chúng</text>
+
+  <!-- Dealing range box -->
+  <rect x="90" y="90" width="600" height="280" fill="#94A3B8" opacity="0.06" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="98" y="232" font-size="12" fill="#64748B" transform="rotate(-90 98 232)">Dealing Range</text>
+
+  <!-- ERL top = BSL -->
+  <line x1="90" y1="100" x2="690" y2="100" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="560" y="94" font-size="13" font-weight="700" fill="#2563EB">ERL — BSL (đỉnh range)</text>
+
+  <!-- ERL bottom = SSL -->
+  <line x1="90" y1="360" x2="690" y2="360" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="560" y="378" font-size="13" font-weight="700" fill="#2563EB">ERL — SSL (đáy range)</text>
+
+  <!-- IRL: FVG zone in middle -->
+  <rect x="90" y="210" width="600" height="44" fill="#3B82F6" opacity="0.14"/>
+  <text x="98" y="237" font-size="13" font-weight="700" fill="#1D4ED8">IRL — FVG / OB (inefficiency bên trong)</text>
+
+  <!-- Equilibrium -->
+  <line x1="90" y1="230" x2="690" y2="230" stroke="#9333EA" stroke-width="1" stroke-dasharray="2 3"/>
+  <text x="98" y="200" font-size="11" fill="#9333EA">EQ 50%</text>
+
+  <!-- price starts at top ERL (swept BSL) -->
+  <rect x="150" y="100" width="2" height="40" fill="#DC2626"/>
+  <rect x="144" y="105" width="14" height="25" fill="#DC2626" rx="1"/>
+  <rect x="176" y="120" width="2" height="60" fill="#DC2626"/>
+  <rect x="170" y="130" width="14" height="45" fill="#DC2626" rx="1"/>
+  <!-- drop to IRL FVG -->
+  <rect x="202" y="160" width="2" height="70" fill="#DC2626"/>
+  <rect x="196" y="175" width="14" height="50" fill="#DC2626" rx="1"/>
+  <!-- react at IRL, bounce -->
+  <rect x="228" y="200" width="2" height="55" fill="#16A34A"/>
+  <rect x="222" y="215" width="14" height="35" fill="#16A34A" rx="1"/>
+  <rect x="254" y="160" width="2" height="70" fill="#16A34A"/>
+  <rect x="248" y="170" width="14" height="50" fill="#16A34A" rx="1"/>
+
+  <!-- arrow ERL -> IRL -->
+  <path d="M 320 115 L 320 205" stroke="#374151" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="328" y="160" font-size="12" fill="#374151">ERL → IRL</text>
+
+  <!-- continue down to SSL ERL -->
+  <rect x="280" y="200" width="2" height="120" fill="#DC2626"/>
+  <rect x="274" y="215" width="14" height="90" fill="#DC2626" rx="1"/>
+  <rect x="306" y="280" width="2" height="90" fill="#DC2626"/>
+  <rect x="300" y="295" width="14" height="65" fill="#DC2626" rx="1"/>
+  <!-- sweep SSL -->
+  <rect x="332" y="320" width="2" height="55" fill="#16A34A"/>
+  <rect x="326" y="335" width="14" height="35" fill="#16A34A" rx="1"/>
+
+  <path d="M 400 250 L 400 350" stroke="#374151" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="408" y="305" font-size="12" fill="#374151">IRL → ERL (sweep SSL)</text>
+
+  <!-- rotate back up to ERL BSL -->
+  <rect x="430" y="280" width="2" height="90" fill="#16A34A"/>
+  <rect x="424" y="295" width="14" height="65" fill="#16A34A" rx="1"/>
+  <rect x="456" y="200" width="2" height="110" fill="#16A34A"/>
+  <rect x="450" y="215" width="14" height="85" fill="#16A34A" rx="1"/>
+  <rect x="482" y="130" width="2" height="100" fill="#16A34A"/>
+  <rect x="476" y="145" width="14" height="75" fill="#16A34A" rx="1"/>
+  <rect x="508" y="95" width="2" height="80" fill="#16A34A"/>
+  <rect x="502" y="105" width="14" height="55" fill="#16A34A" rx="1"/>
+
+  <path d="M 560 340 L 560 120" stroke="#374151" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="568" y="230" font-size="12" fill="#374151">ERL → ERL (draw lên BSL)</text>
+
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#374151"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="440" font-size="16" font-weight="700" fill="#16A34A">✓ Đúng</text>
+  <text x="78" y="440" font-size="13" fill="#374151">Đọc đúng draw: từ ERL về IRL rebalance, rồi về ERL đối diện — định target rõ ràng.</text>
+</svg>

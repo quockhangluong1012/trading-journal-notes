@@ -1,0 +1,54 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Implied FVG đúng — imbalance ẩn qua trung điểm 2 bóng nến</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">4 nến: bóng chồng nhau nhưng IFVG = từ midpoint bóng nến dưới → midpoint bóng nến trên</text>
+
+  <defs><marker id="ag2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#16A34A"/></marker></defs>
+
+  <!-- Implied FVG zone -->
+  <rect x="120" y="205" width="520" height="55" fill="#3B82F6" opacity="0.14"/>
+  <line x1="120" y1="205" x2="640" y2="205" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="648" y="209" font-size="11" fill="#2563EB" font-weight="600">midpoint bóng trên nến trên</text>
+  <line x1="120" y1="260" x2="640" y2="260" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="648" y="264" font-size="11" fill="#2563EB" font-weight="600">midpoint bóng dưới nến dưới</text>
+  <text x="300" y="238" font-size="13" fill="#1F2937" font-weight="700">Implied FVG (imbalance ẩn)</text>
+
+  <!-- 4 candle pattern: 2 large bodied with overlapping wicks -->
+  <!-- candle 1 small -->
+  <rect x="160" y="280" width="2" height="40" fill="#16A34A"/><rect x="154" y="290" width="14" height="22" fill="#16A34A" rx="1"/>
+  <text x="150" y="335" font-size="11" fill="#6B7280">N1</text>
+
+  <!-- candle 2 large bullish, long upper wick (lower of the two big) -->
+  <rect x="220" y="180" width="2" height="160" fill="#16A34A"/>
+  <rect x="214" y="245" width="14" height="80" fill="#16A34A" rx="1"/>
+  <circle cx="221" cy="212" r="4" fill="#7C3AED"/>
+  <text x="232" y="216" font-size="11" fill="#7C3AED" font-weight="600">midpoint bóng trên N2</text>
+  <text x="208" y="355" font-size="11" fill="#6B7280">N2 (lớn)</text>
+
+  <!-- candle 3 large bullish, long lower wick (upper of the two big) -->
+  <rect x="290" y="120" width="2" height="160" fill="#16A34A"/>
+  <rect x="284" y="135" width="14" height="80" fill="#16A34A" rx="1"/>
+  <circle cx="291" cy="247" r="4" fill="#7C3AED"/>
+  <text x="302" y="251" font-size="11" fill="#7C3AED" font-weight="600">midpoint bóng dưới N3</text>
+  <text x="278" y="300" font-size="11" fill="#6B7280">N3 (lớn)</text>
+
+  <!-- overlapping wick region note -->
+  <rect x="214" y="205" width="84" height="55" fill="none" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="218" y="200" font-size="10" fill="#9CA3AF">bóng nến chồng nhau (không có FVG 3-nến)</text>
+
+  <!-- candle 4 -->
+  <rect x="360" y="115" width="2" height="55" fill="#16A34A"/><rect x="354" y="122" width="14" height="40" fill="#16A34A" rx="1"/>
+  <text x="350" y="185" font-size="11" fill="#6B7280">N4</text>
+
+  <!-- price returns to IFVG and rejects -->
+  <rect x="410" y="160" width="2" height="60" fill="#DC2626"/><rect x="404" y="168" width="14" height="44" fill="#DC2626" rx="1"/>
+  <rect x="450" y="200" width="2" height="48" fill="#DC2626"/><rect x="444" y="210" width="14" height="32" fill="#DC2626" rx="1"/>
+  <rect x="490" y="218" width="2" height="34" fill="#16A34A"/><rect x="484" y="230" width="14" height="16" fill="#16A34A" rx="1"/>
+  <rect x="530" y="170" width="2" height="60" fill="#16A34A"/><rect x="524" y="178" width="14" height="46" fill="#16A34A" rx="1"/>
+
+  <path d="M 505 235 L 545 195" stroke="#16A34A" stroke-width="1.5" marker-end="url(#ag2)"/>
+  <text x="430" y="290" font-size="13" fill="#374151">Giá retrace về IFVG → reject → tiếp tục tăng</text>
+
+  <text x="24" y="436" font-size="15" font-weight="700" fill="#16A34A">✓ Đúng</text>
+  <text x="78" y="436" font-size="12" fill="#374151">IFVG xác định bằng trung điểm bóng 2 nến lớn — imbalance ẩn hợp lệ</text>
+</svg>

@@ -1,0 +1,11 @@
+
+- [ ] HTF Bias rõ ràng
+- [ ] Giá nằm trong POI
+- [ ] Có Liquidity Sweep
+- [ ] Có Displacement
+- [ ] Có MSS
+- [ ] Có FVG/PD Array để entry
+- [ ] SL nằm ngoài vùng invalidation
+- [ ] Không có high-impact news gần thời điểm entry
+- [ ] Không FOMO
+- [ ] Không revenge trade
