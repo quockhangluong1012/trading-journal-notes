@@ -44,6 +44,7 @@ tags:
 | Ngày | Tiến độ % | Ghi chú |
 |---|---:|---|
 | 2026-06-23 | 40 | Đang ghi ~3 ngày/tuần; cần đưa lên hàng ngày. |
+| 2026-07-03 | 40 | Ngày 1 của hệ thống nhật ký tự động (file task đầu tiên trong `00 - Inbox/01 - Daily Tasks` + daily summary đầu tiên trong `00 - Inbox/02 - Daily Summary` được tạo hôm nay). Không có lệnh live, không có backtest mới hôm nay. Cột mốc vẫn 0/4 chưa tick — progress 40% ghi tay ở frontmatter CHƯA khớp cột mốc thực tế (theo cột mốc thì đang là 0%). Cân nhắc tick cột mốc #1 ("Định nghĩa quy trình ghi nhật ký hàng ngày") nếu xác nhận hệ thống tasks+summary này đã đủ rõ ràng để tính là "đã định nghĩa quy trình". |
 
 ## Liên kết
 - Lộ trình: [[01 - Roadmap]]
