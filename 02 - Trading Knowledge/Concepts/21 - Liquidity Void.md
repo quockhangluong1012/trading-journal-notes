@@ -25,7 +25,7 @@ importance: 4
 confidence: 1
 last_reviewed:
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-03
 related_concepts:
   - "[[Fair Value Gap]]"
   - "[[34 - Vacuum Block]]"
@@ -172,6 +172,57 @@ Liquidity Void có hai vai trò trái ngược nhau — và phần khó nhất l
 - [ ] **Overlap nhiều** giữa các nến — chất lượng inefficiency thấp.
 - [ ] Không có **draw on liquidity** rõ ràng ở phía xa.
 
+### Nâng cao — Phân biệt Liquidity Void vs Fair Value Gap vs Balanced Price Range (BPR)
+
+Ba khái niệm này đều thuộc "họ gap/imbalance" của ICT nhưng dễ bị dùng lẫn lộn vì cùng xoay quanh ý tưởng "khoảng trống giá chưa cân bằng". Điểm khác biệt cốt lõi nằm ở **quy mô cấu trúc** và **cơ chế hình thành**: FVG là đơn vị nhỏ nhất (3 nến), Liquidity Void là một "container" rộng hơn thường chứa nhiều FVG, còn BPR lại là sản phẩm của **hai FVG ngược chiều chồng lên nhau** — tức một dạng đã được "cân bằng" chứ không còn thuần một chiều như void hay FVG.
+
+![[LiquidityVoid-Advanced-vs-FVG-vs-BPR.svg]]
+*So sánh trực quan ba PD-array: FVG là một đơn vị 3 nến duy nhất, Liquidity Void là cả một dải displacement chứa nhiều FVG con, BPR là phần overlap giữa hai FVG ngược chiều.*
+
+| Tiêu chí | **Liquidity Void** | **[[13 - FVG  - Fair Value Gap]]** | **[[03 - Balanced Price Range]] (BPR)** |
+|---|---|---|---|
+| Cơ chế định nghĩa | Chuỗi **nhiều nến displacement** cùng chiều, gần như không overlap thân nến | **3 nến** cụ thể: gap giữa nến 1 và nến 3, nến 2 là displacement | **2 FVG ngược chiều CHỒNG LẤP** nhau trên cùng dải giá |
+| Số nến tối thiểu | Không cố định — thường ≥ 4-5 nến, có thể tới 8-10 nến | Đúng 3 nến | Tối thiểu 2 leg ngược chiều (mỗi leg tự đủ 3 nến để tạo FVG riêng) |
+| Cái gì "lấp" (fills) nó | Giá quay lại và trượt qua một đoạn — thường chỉ tới **CE của cả dải**, không cần candle-by-candle | Giá retrace vào gap, tôn trọng CE (50%) rồi reject | Giá test lại vùng overlap; vì đã có order flow 2 chiều nên phản ứng thường sắc bén hơn |
+| Điều gì vô hiệu hóa nó | Void đã **lấp gần hết** hoặc xuất hiện **void mới ngược chiều** (đổi bias) | Giá **đóng nến xuyên qua** toàn bộ FVG (mitigation → có thể đảo thành IFVG) | Giá **đóng nến xuyên qua toàn bộ vùng overlap** (order flow đã đổi mạnh) |
+| Vai trò chính | **TARGET** (draw on liquidity) hoặc **MAGNET** (rebalance) — mô tả *đoạn đường* | **POI** để vào lệnh — mô tả *một điểm* | **POI cao cấp** — S/R mạnh hơn FVG đơn nhờ confluence kép |
+
+**Khi nào một void và một FVG/BPR chồng lấp, khi nào chúng tách biệt:**
+- **Chồng lấp (thường xuyên):** một Liquidity Void gần như luôn **chứa nhiều FVG con** bên trong nó — đây là quan hệ bao trùm bình thường (void = "bức tường", FVG = "viên gạch", xem mục 1). Khi trade một void làm target, điểm vào cụ thể vẫn lấy từ một FVG con bên trong hoặc ở rìa void.
+- **Chồng lấp (đặc biệt):** nếu ngay **trong lòng một void** xuất hiện một cú đảo chiều ngắn tạo ra một FVG ngược hướng chồng lên FVG gốc, phần chồng đó chính là một **BPR nằm bên trong void**. Đây là dấu hiệu void đang bị "thử" bởi lực ngược trước khi quyết định tiếp tục hay đảo bias — quan sát kỹ khi thấy tình huống này.
+- **Tách biệt (thường xuyên):** một Liquidity Void "sạch" — chưa có leg đảo chiều nào cắt vào nó — thì **không có BPR nào cả**, nó vẫn thuần túy là vùng một chiều. Ngược lại, một BPR có thể hình thành hoàn toàn **bên ngoài** mọi void (ví dụ ngay tại điểm V-reversal nhỏ giữa range) mà không cần một void rộng đi kèm.
+
+> [!tip] Cách hỏi nhanh khi không chắc
+> "Tôi đang nhìn **một điểm** (FVG), **một đoạn đường** (Liquidity Void), hay **một vùng đã được test hai chiều** (BPR)?" Ba câu trả lời dẫn tới ba cách dùng khác nhau: entry cụ thể, target/magnet, hoặc S/R phòng thủ.
+
+Ghi log các trường `void_vs_fvg_overlap` (yes/no) và `void_contains_bpr` (yes/no) khi backtest để tránh nhầm lẫn ba khái niệm này trong nhật ký.
+
+### Nâng cao — Macro Liquidity Void: khoảng trống xuyên nhiều nến liên tiếp
+
+Một FVG chuẩn chỉ cần 3 nến. Nhưng trên thực tế, những cú displacement mạnh nhất (thường quanh news, mở phiên, hoặc breakout khỏi accumulation dài) không dừng lại ở 3 nến — chúng kéo dài thành **6, 8, thậm chí 10+ nến liên tiếp cùng chiều**, mỗi nến gần như không chồng lấp thân với nến trước. Đây là một **Macro Liquidity Void**: về bản chất vẫn là Liquidity Void, nhưng quy mô đủ lớn để cần một cách tiếp cận riêng khi xác định biên và kỳ vọng retest.
+
+![[LiquidityVoid-Advanced-MacroVoid.svg]]
+*Một macro void trải dài qua 7-8 nến displacement liên tiếp. Biên thật của void lấy từ nến đầu tiên và nến cuối cùng trong chuỗi, không phải một cặp nến 1-3 riêng lẻ nào ở giữa.*
+
+**Cách xác định biên thật của một macro void:**
+- **Biên xa (đầu chuỗi):** lấy từ **high của nến đầu tiên** trong chuỗi displacement (với void tăng) — đây là điểm giá "rời đi" trước khi bắt đầu one-sided delivery.
+- **Biên gần (cuối chuỗi):** lấy từ **low của nến cuối cùng** trong chuỗi (nến mà ngay sau đó bắt đầu có nến đối lập/overlap trở lại) — đây là nơi displacement "hết hơi".
+- **Không cộng dồn biên của từng FVG con.** Sai lầm phổ biến là vẽ riêng biên cho từng cặp nến rồi cố "nối" chúng lại; thay vào đó hãy nhìn cả chuỗi như MỘT khối duy nhất và chỉ lấy hai điểm cực trị ngoài cùng.
+
+**Vì sao retest hành xử khác với một FVG đơn 3-nến:**
+
+| Đặc điểm | FVG 3-nến đơn | Macro Liquidity Void |
+|---|---|---|
+| Cách lấp khi retest | Giá đi vào gap, thường chạm CE trong 1 nhịp ngắn | Giá thường lấp **một cục lớn** của cả dải trong 1-2 nến mạnh, không lấp tuần tự từng FVG con |
+| Tốc độ di chuyển trong vùng | Tương đối chậm, có thể phản ứng ngay ở mép | Thường **trượt nhanh** xuyên qua nhiều FVG con liên tiếp trước khi chạm CE của toàn dải |
+| Mức tham chiếu chính | CE của chính FVG đó | CE của **toàn bộ macro void** (không phải CE của từng FVG con riêng lẻ) |
+| Rủi ro khi phân tích sai | Nhầm gap nhỏ giữa range thành FVG thật | Nhầm một đoạn nến giữa chuỗi là "điểm kết thúc" void, cắt ngắn void thật và đặt CE sai vị trí |
+
+> [!warning]
+> Đừng dừng việc đo void lại ở nến thứ 3-4 chỉ vì "FVG chuẩn có 3 nến". Nếu displacement vẫn tiếp diễn với các nến sau đó tiếp tục *không overlap* với nến trước, void còn đang mở rộng — hãy đợi tới khi thấy nến đầu tiên có overlap đáng kể (thân nến chồng lên thân nến liền trước) mới chốt biên gần của void.
+
+Vì cơ chế lấp khác nhau, khi trade một macro void, ưu tiên coi **CE của toàn dải** — không phải CE của FVG con gần giá nhất — là mốc kỳ vọng partial fill chính; các FVG con bên trong chỉ dùng để tinh chỉnh entry cụ thể một khi giá đã tiến vào vùng lân cận CE đó.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -256,7 +307,7 @@ HTF: H4 premium, bias DOWN, có void cũ CHƯA lấp phía trên: [void_low] -> 
 
 ## 6. Ví dụ chart
 
-![[LiquidityVoid-Example-Correct.png]]
+![[LiquidityVoid-Example-Correct.svg]]
 
 **Mô tả:** Trên chart [SYMBOL] khung [TF], giá quét [[30 - Sell-side Liquidity]] tại đáy cũ [level], sau đó bùng nổ displacement đi lên tạo một **Liquidity Void** rộng từ [void_low] đến [void_high], bên trong chứa [N] FVG liên tiếp. Phía xa của void trỏ thẳng tới buy-side liquidity tại [target_level]. Sau khi mở void, giá pullback nhẹ về một FVG ở chân void quanh [entry], rồi tiếp tục **lao qua void** lên chạm target.
 
@@ -266,7 +317,7 @@ HTF: H4 premium, bias DOWN, có void cũ CHƯA lấp phía trên: [void_low] -> 
 - Điểm vào đến từ một FVG cụ thể *bên trong* void — void làm target, FVG làm POI.
 - Giá tôn trọng CE của FVG khi pullback (partial fill rồi đi tiếp).
 
-![[LiquidityVoid-Example-Wrong.png]]
+![[LiquidityVoid-Example-Wrong.svg]]
 
 **Mô tả:** Trên chart [SYMBOL] khung [TF], một void hình thành sau cú nhảy do tin tức, nhưng **ngược với bias HTF DOWN** và nằm sâu trong **premium**. Trader vào Long kỳ vọng giá lấp tiếp void lên trên, nhưng giá chỉ chạm CE rồi đảo chiều, tạo **void mới ngược hướng** (displacement DOWN) — báo hiệu đây thực ra là pullback rebalance trong xu hướng giảm, không phải void-target để Long.
 
@@ -276,7 +327,7 @@ HTF: H4 premium, bias DOWN, có void cũ CHƯA lấp phía trên: [void_low] -> 
 - Khi **void mới ngược chiều** xuất hiện kèm MSS → đó là tín hiệu thoát/đảo, không phải tín hiệu vào tiếp.
 - Đừng đòi void phải lấp 100% — partial fill tới CE là rất bình thường.
 
-![[LiquidityVoid-Anatomy.png]]
+![[LiquidityVoid-Anatomy.svg]]
 
 **Mô tả (giải phẫu):** Sơ đồ đánh dấu các thành phần của một Liquidity Void chuẩn: (1) điểm sweep tạo "nhiên liệu", (2) dải displacement thiếu overlap, (3) các FVG con bên trong, (4) đường CE giữa void, (5) cụm thanh khoản ở phía xa làm target. Dùng sơ đồ này như khuôn mẫu để đối chiếu mỗi khi đánh dấu void mới trên chart thật.
 
@@ -427,6 +478,29 @@ Liquidity Void hiếm khi là điểm vào trực tiếp — nó định *hướ
 - [ ] Backtest 10 setup "void làm target" trong [[18 - Kill Zones]] (ghi RR thực tế).
 - [ ] Backtest 10 setup "rebalance void" và đo tỷ lệ partial fill tới CE.
 - [ ] Cập nhật `confidence` và `status` sau khi hoàn tất backtest.
+
+---
+
+## Best Practices
+
+> [!success] Nguyên tắc vàng
+> **Liquidity Void chỉ đáng tin khi bạn phân biệt được nó với FVG/BPR, đo được biên thật của nó (kể cả khi trải dài nhiều nến), và luôn ghép nó với một draw on liquidity + bias đúng phía — nếu không, "void" chỉ là một cái tên đẹp gắn cho một đoạn chart bất kỳ.**
+
+1. **Luôn phân loại trước khi trade: đây là FVG (điểm), Liquidity Void (đoạn đường), hay BPR (vùng đã cân bằng)?** Nhầm ba khái niệm này là lỗi gốc phổ biến nhất — mỗi loại có cách fill và cách vô hiệu hóa khác nhau (xem bảng so sánh ở mục 3). Ghi `void_vs_fvg_overlap: yes/no` cho mỗi lần đánh dấu void để về sau kiểm tra bạn có đang lẫn lộn hai khái niệm không. Xem thêm [[13 - FVG  - Fair Value Gap]] và [[03 - Balanced Price Range]].
+
+2. **Với void trải dài nhiều nến (macro void), lấy biên từ nến đầu và nến cuối của CẢ chuỗi, không chốt sớm ở nến thứ 3-4.** Nếu các nến sau vẫn tiếp tục không overlap với nến liền trước, void còn đang mở rộng. Ghi `void_span_candles` (số nến tạo void) vào journal — con số này giúp phân biệt một FVG-cỡ-lớn với một macro void thực sự.
+
+3. **Không đòi hỏi full fill; dùng CE của toàn dải làm mốc kỳ vọng mặc định.** Dữ liệu thực chiến (và cách ICT/practitioner mô tả khái niệm này) đều cho thấy giá thường chỉ cần tới **Consequent Encroachment (50%)** là đủ để tiếp tục di chuyển theo hướng cũ. Giữ lệnh chờ lấp 100% dễ khiến bạn bỏ lỡ điểm reject thật hoặc hoảng loạn khi thấy giá "chưa lấp đủ". Ghi `void_fill_percent` khi review để tự xây ngưỡng kỳ vọng theo từng thị trường (NQ1/EURUSD/XAUUSD có thể khác nhau — **cần backtest xác nhận**).
+
+4. **Chỉ coi void là draw đáng trade khi có cụm thanh khoản rõ ràng ở phía xa.** Một void không có buy-side/sell-side liquidity nào chờ sẵn ở đầu kia chỉ là một quan sát cấu trúc, không phải một target thực chiến. Luôn hỏi: "Giá đang bị hút VỀ ĐÂU, không chỉ 'đi qua đâu'?" Cross-link target với [[07 - Buy-side Liquidity]] / [[30 - Sell-side Liquidity]].
+
+5. **Bắt buộc đối chiếu void với [[12 - Daily Bias]] và [[27 - Premium Discount]] trước khi gán vai trò TARGET hay MAGNET.** Cùng một void, sai bias/sai phía PD sẽ biến một "draw hợp lệ" thành một cái bẫy đảo chiều. Không có void nào tự thân nó quyết định hướng — narrative HTF quyết định.
+
+6. **Cảnh giác với void mới hình thành ngược chiều bên trong một void cũ — đó thường là tín hiệu đổi bias, không phải nhiễu.** Nếu một pullback "rebalance" bất ngờ tạo ra một displacement mạnh ngược hướng với [[21 - Market Structure Shift]] đi kèm, dừng ngay giả định "đang lấp void cũ" và đánh giá lại toàn bộ setup.
+
+7. **Đặt SL ngoài cấu trúc tạo void, không đặt SL nằm giữa lòng void.** Vì bản chất void là vùng mỏng thanh khoản, một SL đặt giữa void rất dễ bị quét khi giá "trượt" qua nhanh. SL logic phải nằm ngoài điểm bắt đầu/kết thúc thật của dải displacement.
+
+8. **Log đầy đủ và review sau 20-30 mẫu trên NQ1/EURUSD/XAUUSD trước khi tin bất kỳ con số cụ thể nào.** Các trường nên có: `void_span_candles`, `void_vs_fvg_overlap`, `void_contains_bpr`, `void_fill_percent`, `role` (target/magnet), `bias_match` (yes/no). Không có dữ liệu thực chiến, mọi ngưỡng trong note này chỉ là khung tham khảo ban đầu — **cần backtest xác nhận** trước khi nâng `confidence`/`status` của khái niệm.
 
 ---
 

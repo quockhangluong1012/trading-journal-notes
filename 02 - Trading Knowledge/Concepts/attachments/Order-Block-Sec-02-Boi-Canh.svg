@@ -1,0 +1,46 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Bối cảnh sử dụng — Phân loại Order Block</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Chất lượng OB phụ thuộc: đã mitigate chưa &amp; thuận hay ngược dòng lệnh HTF</text>
+
+  <!-- 2x2 matrix -->
+  <text x="150" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#16A34A">Low-resistance (thuận dòng)</text>
+  <text x="150" y="108" text-anchor="middle" font-size="10" fill="#6B7280">đồng hướng HTF delivery</text>
+  <text x="470" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#DC2626">High-resistance (ngược dòng)</text>
+  <text x="470" y="108" text-anchor="middle" font-size="10" fill="#6B7280">ngược HTF delivery</text>
+
+  <text x="35" y="175" font-size="12" font-weight="700" fill="#1D4ED8" transform="rotate(-90 35 175)">Unmitigated</text>
+  <text x="35" y="315" font-size="12" font-weight="700" fill="#9CA3AF" transform="rotate(-90 35 315)">Mitigated</text>
+
+  <!-- cell 1: unmitigated + low res = best -->
+  <rect x="52" y="120" width="296" height="120" rx="8" fill="#16A34A" opacity="0.10"/>
+  <rect x="52" y="120" width="296" height="120" rx="8" fill="none" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="200" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#16A34A">★ Chất lượng cao nhất</text>
+  <text x="68" y="176" font-size="11" fill="#374151">OB "tươi", chưa bị chạm lần nào</text>
+  <text x="68" y="196" font-size="11" fill="#374151">+ thuận dòng lệnh HTF</text>
+  <text x="68" y="222" font-size="11" fill="#374151">→ Ưu tiên làm POI, phản ứng mạnh nhất</text>
+
+  <!-- cell 2: unmitigated + high res -->
+  <rect x="372" y="120" width="336" height="120" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="388" y="150" font-size="12" font-weight="700" fill="#D97706">Tươi nhưng ngược dòng</text>
+  <text x="388" y="176" font-size="11" fill="#374151">Xác suất thấp, nhiều lực cản</text>
+  <text x="388" y="196" font-size="11" fill="#374151">Chỉ dùng với counter-trend</text>
+  <text x="388" y="216" font-size="11" fill="#374151">playbook đã backtest riêng</text>
+
+  <!-- cell 3: mitigated + low res -->
+  <rect x="52" y="252" width="296" height="120" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="68" y="282" font-size="12" font-weight="700" fill="#374151">Đã chạm, vẫn thuận dòng</text>
+  <text x="68" y="308" font-size="11" fill="#374151">Giá trị giảm dần mỗi lần test</text>
+  <text x="68" y="328" font-size="11" fill="#374151">Phản ứng kế tiếp yếu hơn</text>
+  <text x="68" y="348" font-size="11" fill="#374151">→ Cẩn trọng, cần thêm confirmation</text>
+
+  <!-- cell 4: mitigated + high res = worst -->
+  <rect x="372" y="252" width="336" height="120" rx="8" fill="#DC2626" opacity="0.08"/>
+  <rect x="372" y="252" width="336" height="120" rx="8" fill="none" stroke="#DC2626" stroke-width="1.3"/>
+  <text x="388" y="282" font-size="12" font-weight="700" fill="#DC2626">✘ Tránh</text>
+  <text x="388" y="308" font-size="11" fill="#374151">Đã bị lấp + ngược dòng lệnh</text>
+  <text x="388" y="328" font-size="11" fill="#374151">Nếu xuyên thân + acceptance</text>
+  <text x="388" y="348" font-size="11" fill="#374151">→ khả năng đã thành Breaker Block</text>
+
+  <text x="380" y="410" text-anchor="middle" font-size="12" fill="#374151">Combo lý tưởng: Unmitigated + Low-resistance + đúng premium/discount + ngay sau liquidity sweep.</text>
+</svg>

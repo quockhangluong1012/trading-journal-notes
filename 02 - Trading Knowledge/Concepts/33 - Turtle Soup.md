@@ -24,7 +24,7 @@ importance: 5
 confidence: 1
 last_reviewed:
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-03
 related_concepts:
   - "[[20 - Liquidity Sweep]]"
   - "[[21 - Market Structure Shift]]"
@@ -169,6 +169,58 @@ Turtle Soup gần như **đồng nghĩa với cách dùng đảo chiều của [
 - Reclaim yếu, không có FVG, MSS mơ hồ.
 - Còn thanh khoản lớn chưa quét ở xa hơn cùng chiều.
 
+### Nâng cao — Nguồn gốc Turtle Soup: từ hệ thống Turtle Trading gốc tới đảo ngược logic của ICT
+
+Cái tên "Turtle Soup" chỉ có ý nghĩa khi biết nó **đảo ngược** một hệ thống nổi tiếng khác. Hiểu đúng gốc gác giúp thấy rõ ICT đã giữ lại gì và thay đổi gì khi đưa khái niệm này vào ngôn ngữ thanh khoản.
+
+![[TurtleSoup-Advanced-Origin.svg]]
+*Dòng thời gian 4 bước: hệ thống breakout Donchian → nhóm "Turtles" của Dennis/Eckhardt → chiến lược fade "Turtle Soup" của Raschke/Connors → bản đóng khung lại của ICT bằng liquidity sweep/swing point.*
+
+Trình tự lịch sử, theo đúng thứ tự phát sinh:
+1. **Hệ thống breakout Donchian.** Richard Donchian phổ biến ý tưởng mua khi giá phá đỉnh N-ngày, bán khi giá phá đáy N-ngày — nền tảng của mọi hệ thống trend-following cơ học sau này.
+2. **Turtle Trading (1983-84).** Richard Dennis và William Eckhardt tuyển và huấn luyện một nhóm học trò — biệt danh **"the Turtles"** — theo một hệ thống breakout dựa trên **kênh Donchian 20-ngày** (entry) và **55-ngày** (entry hệ 2 / lọc thêm), cùng quy tắc quản lý vị thế chặt chẽ. Đây là một trong những case study nổi tiếng nhất về trading có hệ thống.
+3. **Turtle Soup (1995).** Linda Bradford Raschke và Laurence A. Connors công bố chiến lược này trong sách *Street Smarts: High Probability Short-Term Trading Strategies*. Raschke nhận ra điểm yếu cố hữu của mọi hệ thống breakout: một tỷ lệ đáng kể các cú phá vỡ đỉnh/đáy 20-ngày là **giả** — giá chỉ nhú qua mức rồi quay đầu, quét sạch stop của các Turtle-style trader vừa vào lệnh theo breakout. Bà xây chiến lược **fade** chính xác những cú phá giả đó: bán khi giá tạo đáy 20-ngày mới rồi bật lại, mua khi giá tạo đỉnh 20-ngày mới rồi rớt lại. Tên gọi "Turtle Soup" là cách chơi chữ: chiến lược này "nấu súp" từ chính các Turtle-style breakout trader bị bẫy.
+4. **ICT hấp thụ và tổng quát hoá.** ICT giữ lại lõi logic (fade một cú phá giả tại một mức được coi là "hiển nhiên"), nhưng **bỏ tham số cố định 20-ngày** của bản gốc Donchian và thay bằng **bất kỳ swing point / liquidity pool nào** — PDH/PDL, equal highs/lows, session high/low, swing cấu trúc trên bất kỳ khung thời gian nào (M1 đến D1). Đổi lại, ICT gắn thêm bộ lọc xác nhận riêng: **reclaim + displacement + MSS/CHoCH**, thay vì chỉ dựa vào việc giá "không đi tiếp" như bản gốc cổ điển thường quan sát bằng mắt.
+
+> [!note] Điểm khác biệt cốt lõi
+> Bản gốc Raschke/Connors là một **hệ thống cơ học gắn với một tham số cụ thể** (20-ngày high/low, thường trade trên daily chart của futures/hàng hoá). Bản ICT là một **khuôn mẫu hành vi giá tổng quát**: bất kỳ khi nào một mức thanh khoản hiển nhiên bị quét rồi từ chối, dù trên M1 hay D1, đều có thể gọi là Turtle Soup — miễn thoả điều kiện reclaim + displacement + MSS. Điều không đổi giữa hai bản: **edge nằm ở việc phần lớn breakout là giả, và người kiên nhẫn chờ phản ứng sẽ ăn tiền của người vội vàng đu theo**.
+
+### Nâng cao — Turtle Soup vs Judas Swing vs Liquidity Sweep thông thường
+
+Ba khái niệm này đều xoay quanh "giá quét một mức rồi đảo chiều", nên rất dễ gọi nhầm lẫn cho nhau. Sự khác biệt nằm ở **phạm vi khái niệm** và **bối cảnh/session** đi kèm.
+
+![[TurtleSoup-Advanced-vs-JudasSwing.svg]]
+*So sánh Turtle Soup (fade tại một mức hiển nhiên, không ràng buộc phiên) với Judas Swing (false move ràng buộc khung giờ mở phiên London/NY).*
+
+| Tiêu chí | **Turtle Soup** | **Judas Swing** | **Liquidity Sweep thông thường** |
+|---|---|---|---|
+| Định nghĩa/trigger | Fade một cú phá giả tại một mức **external hiển nhiên** (PDH/PDL, equal H/L, swing cũ) | False move **ngay đầu phiên** (thường London Open) trước khi giá đảo về "true move" của NY | Khái niệm gốc, rộng nhất: bất kỳ cú quét thanh khoản nào, đảo chiều hay không |
+| Bối cảnh/session | Không ràng buộc phiên — có thể xảy ra bất cứ lúc nào giá chạm mức | **Ràng buộc chặt** với khung giờ mở phiên (kill zone mở cửa) | Không ràng buộc — có thể là một phần của Turtle Soup, Judas Swing, hoặc continuation |
+| Điều kiện xác nhận | Reclaim + displacement + MSS ngược chiều cú quét | Giá đảo chiều rõ rệt sau false move, thường đi kèm MSS trước NY session | Chỉ cần giá chạm/quét pool; **không nhất thiết** phải đảo chiều (có thể dẫn tới continuation) |
+| Điều làm vô hiệu | Giá **đóng cửa chấp nhận** ngoài mức (real breakout, không reclaim) | False move không đảo trước khi NY vào — biến thành trend thật theo hướng false move | Không có khái niệm "vô hiệu" riêng — sweep luôn "xảy ra", chỉ khác là dẫn tới reversal hay continuation |
+| Quan hệ bao hàm | Là một **dạng ứng dụng cụ thể** của Liquidity Sweep, không ràng buộc session | Cũng là một **dạng ứng dụng cụ thể** của Liquidity Sweep, ràng buộc session mở cửa | Khái niệm **cha**, bao trùm cả Turtle Soup và Judas Swing như hai trường hợp riêng |
+
+> [!warning] Cạm bẫy hay gặp
+> Một cú quét xảy ra đúng giờ London Open **không tự động** là Judas Swing, và một cú quét ở PDH/PDL giữa phiên NY AM **không tự động** là Turtle Soup — cả hai đều cần đủ điều kiện riêng (Judas Swing cần đúng khung giờ mở phiên + đảo về true move; Turtle Soup cần mức hiển nhiên + reclaim + MSS). Khi không chắc, quay về khái niệm cha: **đây có phải một Liquidity Sweep không, và nó có đảo chiều với xác nhận đầy đủ không?** Nếu có nhưng không khớp điều kiện session của Judas Swing, gọi nó là Turtle Soup (hoặc đơn giản là liquidity sweep reversal) sẽ chính xác hơn.
+
+### Nâng cao — Turtle Soup Plus One: biến thể chờ thêm 1 nến xác nhận
+
+Bản gốc của Raschke/Connors trong *Street Smarts* còn có một biến thể gọi là **"Turtle Soup Plus One"**: về cơ bản là Turtle Soup tiêu chuẩn, nhưng **trì hoãn entry thêm một nến/thanh giá** sau tín hiệu ban đầu để chờ thêm xác nhận hướng, thay vì vào ngay khi giá reclaim.
+
+![[TurtleSoup-Advanced-PlusOne.svg]]
+*So sánh entry: Turtle Soup chuẩn vào ngay sau nến reclaim (entry tốt hơn, stop hẹp hơn); Turtle Soup Plus One chờ thêm 1 nến xác nhận hướng rồi mới vào (entry tệ hơn, stop rộng hơn, nhưng lọc bớt tín hiệu giả).*
+
+Cơ chế và đánh đổi:
+- **Turtle Soup chuẩn (immediate):** vào lệnh ngay sau khi nến sweep đóng cửa reclaim lại vào range. Ưu điểm là **entry gần cực trị cú quét** → stop hẹp → RR tiềm năng lớn. Nhược điểm: một số cú "reclaim" chỉ là dao động tạm thời rồi giá vẫn tiếp tục quét sâu hơn (double sweep) trước khi đảo thật — bản chuẩn dễ dính false reclaim hơn.
+- **Turtle Soup Plus One:** sau nến reclaim, **chờ thêm một nến nữa** xác nhận hướng di chuyển (nến đó nên đóng cửa cùng chiều với reclaim, lý tưởng là tiếp tục đà displacement). Chỉ vào lệnh sau nến xác nhận này. Ưu điểm: lọc được một phần các false reclaim/double sweep vì đã có thêm bằng chứng thị trường thực sự đổi hướng. Nhược điểm: **entry price tệ hơn** (giá đã đi xa hơn khỏi điểm cực trị) và **stop phải rộng hơn** (vẫn đặt ngoài wick sweep gốc nhưng khoảng cách từ entry tới stop lớn hơn) → RR trên mỗi lệnh giảm so với bản chuẩn.
+
+Khi nào nên ưu tiên biến thể nào — *cần backtest xác nhận trên dữ liệu thực của từng thị trường/khung thời gian*, nhưng về mặt logic:
+- Ưu tiên **bản chuẩn (immediate)** khi: mức bị quét rất hiển nhiên (equal highs/lows dày, PDH/PDL), displacement sau reclaim mạnh và rõ, đang trong kill zone chất lượng cao, và trader đã có kinh nghiệm phân biệt sweep thật/giả tốt.
+- Ưu tiên **Plus One** khi: thị trường đang nhiễu/range hẹp, lịch sử hay có double sweep tại loại mức đó, hoặc trader mới làm quen với Turtle Soup và muốn giảm tỷ lệ vào lệnh vào false reclaim, chấp nhận đổi lấy RR thấp hơn mỗi lệnh.
+
+> [!tip]
+> Ghi trường `plus_one_variant_used: yes/no` vào journal cho mỗi lệnh Turtle Soup. Sau khi tích luỹ đủ mẫu (≥ 20-30 lệnh mỗi biến thể trên cùng một thị trường), so sánh win-rate và R trung bình giữa hai nhóm — đó là cách duy nhất biết được biến thể nào thực sự phù hợp với phong cách và thị trường bạn hay trade, thay vì chọn theo cảm tính.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -253,7 +305,7 @@ Confidence: __/5   | Kill zone: London/NY AM
 ## 6. Ví dụ chart
 
 ### Ví dụ ĐÚNG
-![[TurtleSoup-Example-Correct.png]]
+![[TurtleSoup-Example-Correct.svg]]
 **Mô tả:** Turtle Soup Long tại PDL/equal lows trong NY AM kill zone, đúng [[12 - Daily Bias]] bullish.
 - Giá tiến về cụm **equal lows** (SSL hiển nhiên) — đám đông đặt stop dưới đó.
 - Cú quét nhú **qua** equal lows tạo wick dài @ [level], **không đóng cửa chấp nhận** bên dưới.
@@ -262,7 +314,7 @@ Confidence: __/5   | Kill zone: London/NY AM
 - Entry limit tại FVG [range], stop dưới wick @ [level], TP về BSL đối diện @ [level].
 
 ### Ví dụ SAI
-![[TurtleSoup-Example-Wrong.png]]
+![[TurtleSoup-Example-Wrong.svg]]
 **Mô tả:** Vào lệnh fade một cú phá hoá ra là **real breakout** — bài học không reclaim.
 - Giá phá đỉnh nhưng **đóng cửa chấp nhận** (thân nến) ngoài mức → đây là acceptance.
 - Không có reclaim, không MSS đảo chiều; thay vào đó là **BOS** cùng chiều ([[Break of Structure]]).
@@ -270,7 +322,7 @@ Confidence: __/5   | Kill zone: London/NY AM
 - Bài học: **chờ reclaim + displacement + MSS**, không fade một breakout còn đang có acceptance.
 
 ### Giải phẫu (tuỳ chọn)
-![[TurtleSoup-Anatomy.png]]
+![[TurtleSoup-Anatomy.svg]]
 **Mô tả:** Sơ đồ tuần tự: `Mức hiển nhiên → Quét (sweep) → Reject → Reclaim → Displacement (+FVG) → MSS → Entry → Target`.
 
 ---
@@ -397,6 +449,29 @@ BSL (equal highs/PDH) -> sweep -> reject -> reclaim
 - Backtest ≥ 30 cú Turtle Soup (cả đúng & sai) trên NQ1 / EURUSD, ghi vào [[04 - Backtesting]].
 - Đối chiếu mỗi case với [[20 - Liquidity Sweep]] và [[21 - Market Structure Shift]].
 - Review lại note này khi `confidence` lên ≥ 3; cập nhật `status` seed → developing → tested.
+
+---
+
+## Best Practices
+
+> [!success] Nguyên tắc vàng
+> **Turtle Soup chỉ tồn tại khi có ba thứ cùng lúc: một mức thanh khoản THẬT SỰ hiển nhiên, một cú quét KHÔNG acceptance, và một phản ứng đảo chiều được XÁC NHẬN bằng displacement + MSS.** Thiếu một trong ba, đó không phải Turtle Soup — đó là đoán đáy/đỉnh mặc áo ICT.
+
+1. **Chỉ gọi là Turtle Soup khi mức bị quét là một swing/liquidity pool đã được định nghĩa rõ trước đó — không phải bất kỳ wick ngẫu nhiên nào.** PDH/PDL, equal highs/lows, session high/low, hoặc swing point cấu trúc rõ trên HTF đều hợp lệ; một wick nhỏ giữa range mà không ai để ý thì không. Ghi trường `swept_level_type: PDH|PDL|equal-highs|equal-lows|session-hl|swing-point` vào journal cho mỗi lệnh — nếu sau vài chục lệnh nhóm "swing-point mơ hồ" cho win-rate thấp hơn hẳn nhóm PDH/PDL hay equal-highs/lows, đó là bằng chứng để siết lại tiêu chí chọn mức.
+
+2. **Phân biệt rạch ròi Turtle Soup với một Judas Swing thông thường trước khi vào lệnh.** Cả hai đều là sweep-and-reverse, nhưng Judas Swing ràng buộc chặt với khung giờ mở phiên (London/NY Open) còn Turtle Soup thì không. Nhầm lẫn hai khái niệm khiến trader áp sai bộ lọc thời gian — ví dụ chờ "Judas Swing" ngoài giờ mở phiên, hoặc áp timing cứng nhắc của Judas Swing lên một setup Turtle Soup xảy ra giữa phiên NY AM. Xem thêm [[28 - Rejection Block]] để phân biệt thêm với trường hợp PD-array (Rejection Block) hình thành từ chính wick của cú Turtle Soup.
+
+3. **Không bao giờ vào lệnh khi giá còn đang nhú qua mức — luôn chờ đóng nến xác nhận phản ứng.** Tại thời điểm giá vượt mức, không có cách nào phân biệt sweep giả với breakout thật. Ghi thời điểm entry thực tế (nến nào sau reclaim) để tự kiểm tra kỷ luật — nếu bạn thường xuyên vào trước khi có MSS, đó là dấu hiệu FOMO cần sửa trước khi sửa kỹ thuật.
+
+4. **Dùng Turtle Soup Plus One khi thị trường nhiễu hoặc bạn còn mới, chấp nhận entry tệ hơn để đổi lấy ít false reclaim hơn.** Đây không phải lựa chọn "đúng/sai" cố định — nó là một tham số cấu hình theo điều kiện thị trường và kinh nghiệm cá nhân. Ghi `plus_one_variant_used: yes/no` cho mỗi lệnh và so sánh win-rate/R giữa hai nhóm sau đủ mẫu trước khi quyết định dùng biến thể nào làm mặc định.
+
+5. **Đặt stop ngoài cực trị của cú quét, luôn kèm buffer, và chủ động lường trước double sweep.** Equal highs/lows đặc biệt hay bị quét hai lần (dụ rồi quét sâu hơn) vì pool thanh khoản dày. Đặt SL sát ngay wick đầu tiên là mời gọi bị quét nốt ở lần hai. Ghi `double_sweep_occurred: yes/no` để theo dõi tần suất trên từng loại mức và thị trường bạn hay trade.
+
+6. **Luôn lọc theo [[12 - Daily Bias]] và đúng phía [[27 - Premium Discount]] trước khi cân nhắc bất kỳ Turtle Soup nào.** Một setup kỹ thuật hoàn hảo nhưng ngược dòng tiền HTF vẫn là một lệnh xác suất thấp. Turtle Soup mạnh nhất khi nó xác nhận bias đã có, không phải khi nó tự đứng một mình chống lại bias.
+
+7. **Không fade một cú phá vỡ có acceptance rõ ràng — đó là continuation, không phải Turtle Soup, dù bạn "cảm thấy" giá đã đi quá xa.** Đây là lỗi tốn tiền nhất trong nhóm setup sweep-and-reverse. Nếu thân nến đóng cửa dứt khoát ngoài mức và không reclaim trong vài nến kế tiếp, đứng ngoài hoặc chuyển sang tư duy theo trend, đừng cố "bắt đáy/đỉnh" một cú breakout thật.
+
+8. **Backtest tối thiểu 30 mẫu Turtle Soup (cả đúng lẫn sai) trên từng thị trường trước khi tin vào bất kỳ con số hiệu suất nào — mọi tỉ lệ thắng nêu trong note này đều cần backtest xác nhận, không phải số đo sẵn.** Ghi đầy đủ `swept_level_type`, `plus_one_variant_used`, `double_sweep_occurred`, kết quả và R vào [[04 - Backtesting]] cho từng lệnh. Đối chiếu với [[20 - Liquidity Sweep]] và [[21 - Market Structure Shift]], cập nhật [[02 - Skill Metrics]] và nâng `confidence`/`status` của note này khi đã có đủ dữ liệu thay vì giữ mãi ở mức seed.
 
 ---
 

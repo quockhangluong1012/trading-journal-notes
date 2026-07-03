@@ -1,0 +1,58 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Smart Money Low hop le vs. Inducement (sweep gia)</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">So sanh hanh vi gia ngay sau cu quet SSL. Chart minh hoa khai niem, khong phai du lieu giao dich that.</text>
+  <rect x="24" y="76" width="345" height="330" rx="8" fill="#F0FDF4" stroke="#86EFAC"/>
+  <text x="36" y="100" font-size="13" font-weight="700" fill="#16A34A">Smart Money Low hop le</text>
+  <line x1="40" y1="260" x2="350" y2="260" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="44" y="255" font-size="9.5" fill="#DC2626">SSL cu</text>
+  <rect x="56.0" y="212" width="2" height="24" fill="#16A34A"/>
+  <rect x="50" y="220" width="14" height="10" fill="#16A34A" rx="1"/>
+  <rect x="82.0" y="217" width="2" height="21" fill="#DC2626"/>
+  <rect x="76" y="225" width="14" height="7" fill="#DC2626" rx="1"/>
+  <rect x="108.0" y="224" width="2" height="37" fill="#DC2626"/>
+  <rect x="102" y="232" width="14" height="23" fill="#DC2626" rx="1"/>
+  <rect x="134.0" y="264" width="2" height="52" fill="#16A34A"/>
+  <rect x="128" y="272" width="14" height="38" fill="#16A34A" rx="1"/>
+  <rect x="161.0" y="300" width="2" height="-38" fill="#DC2626"/>
+  <rect x="154" y="250" width="16" height="12" fill="#DC2626" rx="1"/>
+  <text x="144" y="316" font-size="10" fill="#DC2626">Sweep duoi SSL</text>
+  <rect x="190.0" y="220" width="2" height="38" fill="#16A34A"/>
+  <rect x="184" y="220" width="14" height="30" fill="#16A34A" rx="1"/>
+  <rect x="216.0" y="195" width="2" height="27" fill="#16A34A"/>
+  <rect x="210" y="195" width="14" height="25" fill="#16A34A" rx="1"/>
+  <text x="166" y="182" font-size="10" fill="#16A34A">Reclaim nhanh (1-2 nen)</text>
+  <rect x="242.0" y="140" width="2" height="60" fill="#16A34A"/>
+  <rect x="236" y="150" width="14" height="45" fill="#16A34A" rx="1"/>
+  <rect x="268.0" y="100" width="2" height="55" fill="#16A34A"/>
+  <rect x="262" y="110" width="14" height="40" fill="#16A34A" rx="1"/>
+  <path d="M300,190 L340,190" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="250" y="120" font-size="10" font-weight="700" fill="#2563EB">MSS tang that + FVG</text>
+  <text x="36" y="386" font-size="11" fill="#374151">Reclaim dut khoat, pha swing high, SML xac nhan</text>
+  <rect x="391" y="76" width="345" height="330" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="403" y="100" font-size="13" font-weight="700" fill="#DC2626">Inducement (sweep gia)</text>
+  <line x1="407" y1="230" x2="717" y2="230" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="411" y="225" font-size="9.5" fill="#DC2626">Day cu (bay)</text>
+  <rect x="423.0" y="182" width="2" height="24" fill="#16A34A"/>
+  <rect x="417" y="190" width="14" height="10" fill="#16A34A" rx="1"/>
+  <rect x="449.0" y="187" width="2" height="21" fill="#DC2626"/>
+  <rect x="443" y="195" width="14" height="7" fill="#DC2626" rx="1"/>
+  <rect x="475.0" y="194" width="2" height="34" fill="#DC2626"/>
+  <rect x="469" y="202" width="14" height="20" fill="#DC2626" rx="1"/>
+  <rect x="502.0" y="260" width="2" height="-28" fill="#DC2626"/>
+  <rect x="495" y="218" width="16" height="14" fill="#DC2626" rx="1"/>
+  <text x="485" y="286" font-size="10" fill="#DC2626">Sweep duoi day</text>
+  <rect x="531.0" y="205" width="2" height="19" fill="#16A34A"/>
+  <rect x="525" y="205" width="14" height="13" fill="#16A34A" rx="1"/>
+  <text x="491" y="196" font-size="10" fill="#DC2626">Nay yeu - khong pha swing high</text>
+  <rect x="557.0" y="215" width="2" height="23" fill="#DC2626"/>
+  <rect x="551" y="215" width="14" height="20" fill="#DC2626" rx="1"/>
+  <rect x="583.0" y="235" width="2" height="30" fill="#DC2626"/>
+  <rect x="577" y="235" width="14" height="25" fill="#DC2626" rx="1"/>
+  <rect x="609.0" y="258" width="2" height="42" fill="#DC2626"/>
+  <rect x="603" y="260" width="14" height="35" fill="#DC2626" rx="1"/>
+  <text x="539" y="330" font-size="10" font-weight="700" fill="#DC2626">Gia tiep tuc giam - day moi thap hon</text>
+  <text x="403" y="386" font-size="11" fill="#374151">Khong MSS that, sell program con tiep dien</text>
+  <rect x="24" y="418" width="712" height="30" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="438" font-size="12" font-weight="700" fill="#92400E">Chi tin la Smart Money Low khi reclaim NHANH + MSS tang that xay ra ngay sau sweep - khong phai moi cu quet deu la day.</text>
+</svg>

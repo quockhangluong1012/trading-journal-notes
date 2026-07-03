@@ -1,0 +1,82 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ba PD-array họ "gap" — Liquidity Void vs Fair Value Gap vs Balanced Price Range</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cùng nói về imbalance/inefficiency, nhưng khác quy mô, cơ chế hình thành và vai trò sử dụng.</text>
+
+  <rect x="24" y="70" width="712" height="234" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- Column 1: FVG (single 3-candle unit) -->
+  <g>
+    <text x="60" y="94" font-size="12" font-weight="700" fill="#1D4ED8">FVG — 1 đơn vị (3 nến)</text>
+    <rect x="60" y="180" width="16" height="30" fill="#6B7280" opacity="0.7"/>
+    <rect x="66" y="172" width="4" height="46" fill="#6B7280"/>
+    <rect x="86" y="140" width="16" height="48" fill="#16A34A" opacity="0.9"/>
+    <rect x="92" y="132" width="4" height="64" fill="#15803D"/>
+    <rect x="112" y="110" width="16" height="28" fill="#6B7280" opacity="0.7"/>
+    <rect x="118" y="102" width="4" height="44" fill="#6B7280"/>
+    <rect x="80" y="140" width="38" height="48" fill="#3B82F6" opacity="0.16" stroke="#1D4ED8" stroke-dasharray="3 2"/>
+    <text x="60" y="230" font-size="10" fill="#374151">Gap giữa nến 1 &amp; nến 3,</text>
+    <text x="60" y="244" font-size="10" fill="#374151">nến giữa là displacement.</text>
+    <text x="60" y="264" font-size="10" font-weight="700" fill="#1D4ED8">Vai trò: POI / entry.</text>
+    <text x="60" y="282" font-size="9.5" fill="#6B7280">Fill: chạm CE (50%) là</text>
+    <text x="60" y="296" font-size="9.5" fill="#6B7280">"respect"; đóng nến xuyên</text>
+    <text x="60" y="310" font-size="9.5" fill="#6B7280">qua = invalid → IFVG.</text>
+  </g>
+
+  <!-- Column 2: Liquidity Void (multi-candle span) -->
+  <g>
+    <text x="300" y="94" font-size="12" font-weight="700" fill="#B45309">Liquidity Void — nhiều nến liên tiếp</text>
+    <rect x="300" y="200" width="14" height="26" fill="#16A34A" opacity="0.9"/>
+    <rect x="306" y="192" width="3" height="42" fill="#15803D"/>
+    <rect x="320" y="170" width="14" height="30" fill="#16A34A" opacity="0.9"/>
+    <rect x="326" y="162" width="3" height="46" fill="#15803D"/>
+    <rect x="340" y="142" width="14" height="28" fill="#16A34A" opacity="0.9"/>
+    <rect x="346" y="134" width="3" height="44" fill="#15803D"/>
+    <rect x="360" y="116" width="14" height="26" fill="#16A34A" opacity="0.9"/>
+    <rect x="366" y="108" width="3" height="42" fill="#15803D"/>
+    <rect x="294" y="108" width="88" height="118" fill="#F59E0B" opacity="0.16" stroke="#B45309" stroke-dasharray="4 3"/>
+    <text x="300" y="240" font-size="10" fill="#374151">Cả dải displacement,</text>
+    <text x="300" y="254" font-size="10" fill="#374151">chứa NHIỀU FVG con.</text>
+    <text x="300" y="274" font-size="10" font-weight="700" fill="#B45309">Vai trò: TARGET / MAGNET.</text>
+    <text x="300" y="292" font-size="9.5" fill="#6B7280">Fill: thường lấp một</text>
+    <text x="300" y="306" font-size="9.5" fill="#6B7280">"cục" tới CE của toàn dải,</text>
+    <text x="300" y="320" font-size="9.5" fill="#6B7280">không cần từng FVG con.</text>
+  </g>
+
+  <!-- Column 3: BPR (two opposing FVGs overlapping) -->
+  <g>
+    <text x="560" y="94" font-size="12" font-weight="700" fill="#7C3AED">BPR — 2 FVG ngược chiều chồng nhau</text>
+    <!-- down leg FVG -->
+    <rect x="560" y="150" width="16" height="30" fill="#DC2626" opacity="0.5"/>
+    <rect x="566" y="142" width="4" height="46" fill="#B91C1C" opacity="0.6"/>
+    <rect x="586" y="170" width="16" height="30" fill="#DC2626" opacity="0.5"/>
+    <rect x="612" y="190" width="16" height="30" fill="#DC2626" opacity="0.5"/>
+    <rect x="560" y="150" width="68" height="60" fill="#DC2626" opacity="0.12" stroke="#B91C1C" stroke-dasharray="3 2"/>
+    <!-- up leg FVG overlapping -->
+    <rect x="612" y="190" width="16" height="30" fill="#16A34A" opacity="0.55"/>
+    <rect x="638" y="170" width="16" height="30" fill="#16A34A" opacity="0.55"/>
+    <rect x="664" y="150" width="16" height="30" fill="#16A34A" opacity="0.55"/>
+    <rect x="612" y="150" width="68" height="70" fill="#16A34A" opacity="0.12" stroke="#15803D" stroke-dasharray="3 2"/>
+    <!-- overlap -->
+    <rect x="612" y="150" width="16" height="70" fill="#7C3AED" opacity="0.30" stroke="#7C3AED"/>
+    <text x="590" y="238" font-size="10" fill="#374151">Phần OVERLAP của SIBI</text>
+    <text x="590" y="252" font-size="10" fill="#374151">+ BISI = vùng "balanced".</text>
+    <text x="590" y="272" font-size="10" font-weight="700" fill="#7C3AED">Vai trò: POI cao cấp (S/R).</text>
+    <text x="590" y="290" font-size="9.5" fill="#6B7280">Fill: đã có order flow cả</text>
+    <text x="590" y="304" font-size="9.5" fill="#6B7280">2 chiều — invalid khi đóng</text>
+    <text x="590" y="318" font-size="9.5" fill="#6B7280">nến xuyên hết overlap.</text>
+  </g>
+
+  <line x1="290" y1="80" x2="290" y2="330" stroke="#E5E7EB" stroke-width="1.4"/>
+  <line x1="548" y1="80" x2="548" y2="330" stroke="#E5E7EB" stroke-width="1.4"/>
+
+  <!-- comparison table -->
+  <rect x="24" y="316" width="712" height="126" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="334" font-size="12" font-weight="700" fill="#1F2937">Khi nào chồng lấp, khi nào tách biệt?</text>
+  <line x1="36" y1="342" x2="724" y2="342" stroke="#E5E7EB"/>
+  <text x="42" y="360" font-size="10" fill="#374151">• Một Liquidity Void THƯỜNG chứa nhiều FVG con — chúng chồng lấp về mặt cấu trúc (void = "bức tường", FVG = "viên gạch").</text>
+  <text x="42" y="378" font-size="10" fill="#374151">• Một BPR có thể nằm NGAY TẠI rìa hoặc giữa một void nếu displacement đảo chiều xảy ra trong lòng void — nhưng BPR tự nó</text>
+  <text x="52" y="392" font-size="10" fill="#374151">  không phải là void (BPR là vùng ĐÃ cân bằng 2 chiều; void là vùng CHƯA cân bằng, một chiều thuần túy).</text>
+  <text x="42" y="410" font-size="10" fill="#374151">• Void và BPR là hai khái niệm TÁCH BIỆT khi void vẫn "sạch" một chiều (chưa có leg đảo nào tạo FVG ngược chồng lên nó).</text>
+  <text x="42" y="428" font-size="10" font-weight="700" fill="#92400E">• Ghi log: void_vs_fvg_overlap (yes/no) và void_contains_bpr (yes/no) để tách rõ vai trò từng vùng khi review.</text>
+</svg>

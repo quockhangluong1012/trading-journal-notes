@@ -1,0 +1,42 @@
+<svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="oba" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6B7280"/></marker>
+  </defs>
+  <rect x="0" y="0" width="760" height="520" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Quy trình phân tích đa khung thời gian</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Hỏi trước khi dùng OB: gắn displacement? sweep trước? còn unmitigated &amp; đúng P/D? low- hay high-resistance?</text>
+
+  <!-- D1/H4 -->
+  <rect x="24" y="72" width="712" height="112" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="24" y="72" width="6" height="112" fill="#1D4ED8"/>
+  <text x="44" y="98" font-size="14" font-weight="700" fill="#1D4ED8">D1 / H4 — Bias &amp; Narrative</text>
+  <text x="44" y="122" font-size="12" fill="#374151">• Bias: Bullish / Bearish / Neutral</text>
+  <text x="44" y="142" font-size="12" fill="#374151">• HTF OB còn unmitigated, gắn displacement + BOS</text>
+  <text x="44" y="162" font-size="12" fill="#374151">• Location OB: premium hay discount của range?</text>
+  <text x="410" y="122" font-size="12" fill="#374151">• OB đồng hướng draw on liquidity chính?</text>
+  <text x="410" y="142" font-size="12" fill="#374151">• Narrative: retrace mitigate OB tại P/D →</text>
+  <text x="410" y="162" font-size="12" fill="#374151">   đẩy tiếp về liquidity target; invalid nếu ___</text>
+  <line x1="380" y1="188" x2="380" y2="202" stroke="#6B7280" stroke-width="1.5" marker-end="url(#oba)"/>
+
+  <!-- H1/M15 -->
+  <rect x="84" y="208" width="592" height="112" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="84" y="208" width="6" height="112" fill="#D97706"/>
+  <text x="104" y="234" font-size="14" font-weight="700" fill="#D97706">H1 / M15 — POI &amp; Context</text>
+  <text x="104" y="258" font-size="12" fill="#374151">• OB cụ thể: vùng giá + timeframe</text>
+  <text x="104" y="278" font-size="12" fill="#374151">• Hợp lệ? displacement + FVG + sweep + unmitigated</text>
+  <text x="104" y="298" font-size="12" fill="#374151">• Low- hay high-resistance so với HTF?</text>
+  <text x="410" y="258" font-size="12" fill="#374151">• Xác định Mean Threshold (50% OB)</text>
+  <text x="410" y="278" font-size="12" fill="#374151">• OB vs Breaker: đã fail &amp; flip chưa?</text>
+  <line x1="380" y1="324" x2="380" y2="338" stroke="#6B7280" stroke-width="1.5" marker-end="url(#oba)"/>
+
+  <!-- M5/M1 -->
+  <rect x="144" y="344" width="472" height="112" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="144" y="344" width="6" height="112" fill="#16A34A"/>
+  <text x="164" y="370" font-size="14" font-weight="700" fill="#16A34A">M5 / M1 — Confirmation &amp; Entry</text>
+  <text x="164" y="394" font-size="12" fill="#374151">• Giá chạm OB / Mean Threshold chưa?</text>
+  <text x="164" y="414" font-size="12" fill="#374151">• MSS + displacement nhỏ confirm tại OB</text>
+  <text x="164" y="434" font-size="12" fill="#374151">• Entry OB/MT/FVG • Stop qua đầu kia OB • TP liquidity</text>
+
+  <text x="44" y="484" font-size="12" font-weight="600" fill="#D97706">OB nhỏ trên M1/M5 KHÔNG tạo bias — chỉ execution sau khi HTF narrative + location + sweep đã đúng.</text>
+  <text x="44" y="502" font-size="11" fill="#6B7280">Không vẽ OB rồi vào lệnh tách rời khỏi context HTF.</text>
+</svg>

@@ -24,7 +24,7 @@ models:
   - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-07-03
 common_mistakes:
   - "[[Mistake - Buy in Premium / Sell in Discount]]"
   - "[[Mistake - Wrong Dealing Range]]"
@@ -165,6 +165,59 @@ ICT 2022 model chỉ có edge khi entry nằm đúng **vị trí giá trị**. M
 - Đã có nhiều lần test vùng đó khiến PD Array bị mitigate cạn.
 - Range quá lớn/quá cũ khiến vị trí premium/discount không còn liên quan tới price delivery hiện tại.
 
+### Nâng cao — Chia nhỏ Premium/Discount thành quartile (0-25-50-75-100%) để đọc "sâu" hay "nhẹ"
+
+Nhị phân trên/dưới 50% là phép chia thô: nó chỉ nói giá "rẻ" hay "đắt", chứ không nói **rẻ tới mức nào**. ICT thực chiến hay chia nhỏ range thành **4 quartile** để định lượng độ "sâu" — dùng con số này để điều chỉnh conviction và mức độ mạnh dạn khi entry, thay vì coi mọi điểm dưới 50% là như nhau.
+
+![[Premium-Discount-Advanced-Quartiles.svg]]
+*Bốn quartile của một dealing range: Deep Discount (0-25%) và Deep Premium (75-100%) là vùng conviction cao nhất — nơi PD Array đáng tin nhất và OTE (62-79%) thường rơi vào; Discount nông (25-50%) và Premium nông (50-75%) đòi hỏi thêm confluence trước khi tin tưởng.*
+
+| Quartile | Khoảng Fib | Đọc "sâu/nhẹ" | Conviction / hành động |
+|---|---|---|---|
+| **Deep Discount** | 0% → 25% | Rất "rẻ" | Conviction cao nhất cho Long; size đủ theo plan nếu có PD Array + sweep |
+| **Discount nông** | 25% → 50% | "Rẻ" vừa phải | Long được nhưng cần thêm confluence (POI HTF, MSS rõ); cẩn trọng vì có thể còn nhúng sâu hơn |
+| **Premium nông** | 50% → 75% | "Đắt" vừa phải | Short được nhưng cần thêm confluence; phản ứng thường yếu hơn deep premium |
+| **Deep Premium** | 75% → 100% | Rất "đắt" | Conviction cao nhất cho Short; size đủ theo plan nếu có PD Array + sweep |
+
+> [!tip]
+> Quartile không đổi **hướng** lệnh — discount nông vẫn là discount, vẫn chỉ đi tìm Long. Nó chỉ đổi **mức độ tự tin và cỡ lệnh**: một bullish FVG ở deep discount (0-25%) đáng tin hơn nhiều so với cùng loại FVG ở discount nông (25-50%), vốn dễ bị giá xuyên qua để tìm tiếp vùng sâu hơn. Ghi trường `pd_quartile: extreme-discount | discount | premium | extreme-premium` vào journal cho mỗi lệnh để sau này so sánh win rate/R theo từng quartile — cần backtest xác nhận trước khi coi đây là quy tắc cứng.
+
+### Nâng cao — Premium/Discount lồng nhau đa khung thời gian: khi H4 và M15 mâu thuẫn
+
+Dealing Range có tính fractal (xem [[12 - Dealing Range]]): H4 có range của nó, và bên trong H4 lại có một range con nhỏ hơn trên M15. Vì hai range đo trên hai swing khác nhau, **cùng một điểm giá hoàn toàn có thể vừa nằm ở Discount của H4, vừa nằm ở Premium của M15** — đây không phải lỗi vẽ sai, mà là hệ quả tự nhiên của cấu trúc lồng nhau.
+
+![[Premium-Discount-Advanced-NestedTimeframes.svg]]
+*Một H4 dealing range lớn (trái) với giá đang ở Discount, chứa bên trong nó một M15 range nhỏ hơn (zoom phải) nơi CHÍNH điểm giá đó lại rơi vào Premium của M15. Quy tắc: H4 quyết định bias/POI, M15 chỉ tinh chỉnh thời điểm entry.*
+
+Quy tắc giải quyết xung đột — **HTF governs bias/POI, LTF refines entry timing**:
+- **HTF dealing range (H4) quyết định HƯỚNG được phép tìm lệnh.** Nếu H4 đang discount, chỉ đi tìm Long — bất kể M15 đang premium hay discount.
+- **LTF dealing range (M15) không được phép phủ quyết hướng của HTF.** Vai trò của M15 chỉ là tinh chỉnh **thời điểm và giá entry cụ thể**, không phải để quyết định Long hay Short.
+- Khi H4 discount nhưng M15 đang premium: **chờ** — hoặc chờ M15 tự retrace về discount của chính nó, hoặc chờ M15 tạo một MSS bullish riêng (nhịp displacement mới nội bộ) trước khi tìm entry. Không Long ngay lúc M15 đang premium chỉ vì H4 đã discount.
+- Khi H4 discount VÀ M15 cũng discount (cộng hưởng hai tầng) → đây là setup chất lượng cao nhất, conviction tối đa.
+
+**Ví dụ thực hành:** H4 bias Bullish, giá ở discount H4 (khoảng 30% range H4). Trên M15, cùng điểm giá đó lại nằm ở 65% của range M15 con (tức premium M15) vì M15 vừa tạo một swing low mới gần hơn. Quy tắc: KHÔNG Long ngay. Chờ M15 hoặc retrace xuống dưới 50% của chính nó, hoặc quét thanh khoản nội bộ rồi MSS bullish — khi đó M15 mới "đồng ý" với H4, và entry lúc này có cả hai tầng xác suất cộng dồn.
+
+> [!warning]
+> Đừng nhầm mâu thuẫn đa khung với "chọn sai range". Nếu cả H4 và M15 đều được vẽ đúng (swing có displacement/BOS, có liquidity ở hai đầu), mâu thuẫn Premium/Discount giữa chúng là **bình thường** — chỉ cần biết tầng nào governs quyết định gì. Xem thêm ma trận alignment 2 tầng ở [[12 - Dealing Range]] (mục A2. Nested ranges).
+
+### Nâng cao — Overlap giữa Premium/Discount và OTE (62-79%)
+
+[[26 - OTE - Optimal Trade Entry|OTE]] và Premium/Discount thường được dạy tách rời, nhưng về bản chất chúng là **hai công cụ đo cùng một thứ ở hai độ phân giải khác nhau**: Premium/Discount cho biết giá đang ở nửa nào của range; OTE (62-79% retracement của nhịp displacement) tinh chỉnh xuống một dải giá cụ thể — và với một nhịp Long hợp lệ, dải 62-79% đó gần như luôn rơi vào phần **discount sâu** của chính range đang dùng. Đây là lý do OTE "vừa vặn" cho R:R tốt: nó là điểm cực đoan của discount, không phải điểm giữa.
+
+![[Premium-Discount-Advanced-vs-OTE.svg]]
+*Bên trái: trường hợp lý tưởng — dải OTE 62-79% được tính trên CHÍNH nhịp tạo ra dealing range, nên nằm gọn trong Discount → hai lớp confluence cộng hưởng. Bên phải: trường hợp phân kỳ — OTE tính trên một nhịp displacement nhỏ hơn/khác swing với dealing range, khiến dải OTE lấn gần hoặc vượt qua Equilibrium.*
+
+| Tình huống | Quan hệ OTE ↔ Premium/Discount | Hành động |
+|---|---|---|
+| Fib OTE kéo trên đúng nhịp tạo dealing range | OTE 62-79% nằm gọn trong discount (Long)/premium (Short) | Confluence mạnh nhất — vào theo kế hoạch, conviction cao |
+| Fib OTE kéo trên một nhịp LTF nhỏ hơn, nội bộ | OTE có thể lấn gần EQ hoặc lệch sang nửa đối diện | Kiểm tra lại: nhịp LTF có thực sự phá cấu trúc và đồng hướng bias không trước khi tin |
+| OTE nằm đúng vùng nhưng dealing range chọn sai (swing nhỏ/cũ) | Coi như "trùng khớp giả" | Vẽ lại dealing range đúng trước, rồi xét lại OTE có còn hợp lệ không |
+
+**Quy tắc giải quyết khi hai công cụ mâu thuẫn:** nếu vùng OTE (tính đúng theo quy trình của [[26 - OTE - Optimal Trade Entry]] — trên nhịp displacement đã phá cấu trúc) lại rơi ra ngoài Discount/Premium của dealing range đúng, **ưu tiên vị trí Premium/Discount của HTF dealing range** làm bộ lọc chính; OTE lúc này chỉ dùng để tinh entry trong phần discount/premium đó, không dùng để đổi hướng bias. Ngược lại, nếu dealing range đúng nhưng OTE tính sai nhịp (nhịp không phá cấu trúc), lỗi nằm ở OTE — sửa theo checklist của OTE trước, không đổ lỗi cho Premium/Discount.
+
+> [!note]
+> Khi cả hai đồng thuận (OTE nằm trong đúng nửa range của Premium/Discount), đây là một trong những confluence mạnh nhất trong ICT 2022 Model — hai công cụ độc lập cùng chỉ về một vùng giá. Cần backtest xác nhận tỉ lệ entry "OTE trùng discount/premium" thắng nhiều hơn "OTE lệch khỏi discount/premium" trước khi coi đây là rule cứng cho size lệnh.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -251,6 +304,17 @@ Invalidation: giá đóng nến chấp nhận trên đỉnh range (range bị ph
 ---
 
 ## 6. Ví dụ chart
+
+### Giải phẫu
+![[Premium-Discount-Anatomy.svg]]
+
+**Mô tả:**
+Cấu trúc đầy đủ của một dealing range: **swing low (0%)** và **swing high (100%)** xác định hai đầu range; mốc **50% (Equilibrium)** chia range thành **Premium** (nửa trên, đi tìm Short) và **Discount** (nửa dưới, đi tìm Long); dải **OTE (62–79%)** được overlay bên trong discount — vùng entry tối ưu khi giá retrace đủ sâu sau một nhịp displacement.
+
+- **Swing High (100%)** và **Swing Low (0%)** phải được tạo bởi displacement/BOS, không phải swing ngẫu nhiên (xem [[12 - Dealing Range]]).
+- **Equilibrium (50%)** là ranh giới, không phải vùng entry — chỉ dùng để biết nghiêng Long hay Short.
+- **Dải OTE (62–79%)** nằm gọn trong phần discount sâu — đây là lý do OTE cho R:R tốt hơn nhiều so với entry ở 50%.
+- Bullish PD Array (OB/FVG) nằm trong discount đáng tin hơn cùng loại PD Array nằm trong premium, và ngược lại với bearish PD Array.
 
 ### Ví dụ đúng — Long từ Discount + OTE đồng hướng Bullish Bias
 ![[Premium-Discount-Example-Correct.png]]
@@ -441,6 +505,29 @@ HTF Bearish Bias
 - [ ] So sánh riêng lệnh entry ở discount/premium (aligned) với lệnh ở equilibrium hoặc ngược vị trí.
 - [ ] Thống kê win rate, average R theo `pd_location` và `entry_in_ote`.
 - [ ] Cập nhật rule chỉ khi dữ liệu backtest/forward test đủ mẫu.
+
+---
+
+## Best Practices
+
+> [!success] Nguyên tắc vàng
+> **Premium/Discount chỉ có nghĩa khi được đo trên một dealing range đúng — và ngay cả khi range đúng, nó vẫn chỉ là một bộ lọc VỊ TRÍ, không phải tín hiệu vào lệnh.** Càng định lượng vị trí đó (quartile, đa khung, overlap OTE) thay vì dừng ở nhị phân trên/dưới 50%, bộ lọc này càng sắc và càng đáng để backtest xác nhận.
+
+1. **Luôn xác định đúng dealing range trước khi đọc bất kỳ con số premium/discount nào.** Range phải được vẽ từ swing có displacement/BOS, lý tưởng là đã lấy liquidity ở hai đầu (xem [[12 - Dealing Range]]). Chọn range quá nhỏ hoặc quá cũ khiến toàn bộ premium/discount phái sinh đều sai — đây là lỗi gốc rễ nguy hiểm nhất trong khái niệm này.
+
+2. **Khi H4 và M15 (hoặc bất kỳ cặp HTF/LTF nào) mâu thuẫn về premium/discount, luôn để HTF quyết định hướng, LTF chỉ tinh entry.** Không bao giờ để một range LTF phủ quyết bias đã xác lập trên HTF. Nếu H4 discount nhưng M15 đang premium, chờ M15 tự retrace hoặc tạo MSS riêng — không Long ngay. Ghi trường `htf_ltf_pd_conflict: yes/no` vào journal cho mỗi lệnh để sau này đo xem việc chờ đồng thuận hai tầng có thực sự nâng win rate không.
+
+3. **Dùng quartile (0-25-50-75-100%) để định lượng conviction, không chỉ dừng ở nhị phân trên/dưới 50%.** Một PD Array ở deep discount (0-25%) đáng tin hơn nhiều so với cùng loại PD Array ở discount nông (25-50%) — vốn còn nguy cơ bị giá xuyên qua để tìm vùng sâu hơn. Ghi `pd_quartile: extreme-discount | discount | premium | extreme-premium` cho mỗi lệnh và dùng nó để điều chỉnh size, không chỉ hướng lệnh.
+
+4. **Coi overlap giữa Premium/Discount và [[26 - OTE - Optimal Trade Entry|OTE]] là một lớp confluence cần kiểm tra, không phải hai khái niệm tách rời.** Khi dải OTE 62-79% của một nhịp displacement hợp lệ nằm gọn trong discount (Long)/premium (Short) của dealing range đang dùng, đó là entry có hai lớp xác suất cộng dồn. Nếu chúng phân kỳ, ưu tiên vị trí Premium/Discount của HTF dealing range làm bộ lọc chính.
+
+5. **Không bao giờ coi equilibrium (50%) là vùng entry.** Đây là ranh giới ra quyết định, không phải POI — vào lệnh ngay tại 50% gần như luôn cho R:R kém và dễ bị chop. Luôn chờ giá đi đủ sâu vào premium/discount (lý tưởng tới OTE hoặc quartile cực trị) trước khi tìm PD Array để entry.
+
+6. **Premium/Discount không thay thế Daily Bias, PD Array, liquidity sweep hay MSS — nó là một lớp lọc trong một chuỗi, không phải toàn bộ chuỗi.** Discount đồng hướng bias mà không có PD Array hợp lệ = không có POI = không có lệnh. Luôn xác nhận đủ chuỗi: `Bias → Dealing Range → Premium/Discount → PD Array (POI) → Liquidity Sweep → MSS/Displacement → FVG/OB entry`.
+
+7. **Ghi lại đầy đủ các trường định lượng cho mỗi lệnh có dùng Premium/Discount:** `pd_location`, `pd_quartile`, `htf_ltf_pd_conflict`, `entry_in_ote`. Đây là dữ liệu tối thiểu để trả lời câu hỏi thực chiến: quartile nào cho win rate cao nhất, xung đột đa khung có đáng chờ không, overlap OTE có thực sự nâng R không — tất cả **cần backtest xác nhận** trước khi trở thành quy tắc cứng.
+
+8. **Sau 20–30 mẫu, review riêng theo `symbol`** (NQ1/NAS100, EURUSD, GBPUSD, XAUUSD gần như chắc chắn có đặc tính retrace/quartile khác nhau) thay vì gộp chung mọi thị trường vào một con số kết luận. Đối chiếu kết quả với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]], đồng thời nâng `confidence` của note này khi đã có đủ bằng chứng.
 
 ---
 

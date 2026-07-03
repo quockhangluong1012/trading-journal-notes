@@ -1,0 +1,76 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Giải phẫu Fibonacci OTE — thang mức trên một nhịp displacement Long</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Kéo fib từ đáy nhịp (100%) lên đỉnh nhịp (0%); vùng 62–79% là OTE, 70.5% là sweet spot.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- fib ladder lines -->
+  <!-- 0% top -->
+  <line x1="90" y1="100" x2="700" y2="100" stroke="#374151" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="700" y="96" font-size="11" fill="#374151" text-anchor="end">0% — đỉnh nhịp</text>
+
+  <!-- -0.27 ext -->
+  <line x1="90" y1="82" x2="700" y2="82" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="700" y="78" font-size="10.5" fill="#15803D" text-anchor="end">-0.27 ext — target 1</text>
+
+  <!-- 50% EQ -->
+  <line x1="90" y1="200" x2="700" y2="200" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="700" y="196" font-size="11" fill="#6B7280" text-anchor="end">50% (EQ) — không phải OTE</text>
+
+  <!-- 62% -->
+  <line x1="90" y1="248" x2="700" y2="248" stroke="#3B82F6" stroke-width="1.4"/>
+  <text x="700" y="244" font-size="11" fill="#1D4ED8" text-anchor="end">62% — mép trên vùng OTE</text>
+
+  <!-- 70.5% sweet spot -->
+  <rect x="86" y="248" width="614" height="38" fill="#FEF3C7" opacity="0.7"/>
+  <line x1="90" y1="267" x2="700" y2="267" stroke="#F59E0B" stroke-width="2.2"/>
+  <text x="700" y="263" font-size="12" font-weight="700" fill="#B45309" text-anchor="end">70.5% — sweet spot (vùng OTE)</text>
+
+  <!-- 79% -->
+  <line x1="90" y1="286" x2="700" y2="286" stroke="#3B82F6" stroke-width="1.4"/>
+  <text x="700" y="300" font-size="11" fill="#1D4ED8" text-anchor="end">79% — mép sâu vùng OTE</text>
+
+  <!-- 100% bottom -->
+  <line x1="90" y1="330" x2="700" y2="330" stroke="#DC2626" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="700" y="344" font-size="11" fill="#B91C1C" text-anchor="end">100% — đáy nhịp (stop reference)</text>
+
+  <!-- -0.62 ext further target -->
+  <line x1="90" y1="60" x2="700" y2="60" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="700" y="56" font-size="10.5" fill="#15803D" text-anchor="end">-0.62 ext — target 2</text>
+
+  <!-- OTE zone label left -->
+  <rect x="40" y="248" width="20" height="38" fill="#3B82F6" opacity="0.18"/>
+  <text x="20" y="272" font-size="11" font-weight="700" fill="#1D4ED8" transform="rotate(-90 30 272)">OTE 62–79%</text>
+
+  <!-- candle path bouncing through zone -->
+  <path d="M110,330 L110,290 L150,150 L150,100 L190,100 L190,175 L230,270 L230,286 L270,220 L270,180 L320,60 L320,80 L420,60"
+        fill="none" stroke="#374151" stroke-width="2.4"/>
+
+  <!-- candles along the impulse leg -->
+  <rect x="105" y="220" width="10" height="90" fill="#16A34A"/><rect x="108" y="200" width="4" height="130" fill="#16A34A"/>
+  <rect x="145" y="115" width="10" height="70" fill="#16A34A"/><rect x="148" y="100" width="4" height="100" fill="#16A34A"/>
+
+  <!-- retrace candles into OTE zone -->
+  <rect x="185" y="140" width="10" height="55" fill="#DC2626"/><rect x="188" y="130" width="4" height="75" fill="#DC2626"/>
+  <rect x="225" y="235" width="10" height="45" fill="#DC2626"/><rect x="228" y="228" width="4" height="60" fill="#DC2626"/>
+
+  <!-- reaction candle at OTE (bullish) -->
+  <circle cx="230" cy="267" r="7" fill="#F59E0B"/>
+  <text x="245" y="271" font-size="11" font-weight="700" fill="#B45309">① Entry quanh 70.5% (sweet spot)</text>
+
+  <!-- push up candles to targets -->
+  <rect x="265" y="185" width="10" height="45" fill="#16A34A"/><rect x="268" y="175" width="4" height="65" fill="#16A34A"/>
+  <rect x="315" y="65" width="10" height="120" fill="#16A34A"/><rect x="318" y="55" width="4" height="140" fill="#16A34A"/>
+
+  <text x="330" y="70" font-size="10.5" font-weight="700" fill="#15803D">② Chạy tới target mở rộng</text>
+
+  <!-- stop marker -->
+  <line x1="90" y1="330" x2="700" y2="330" stroke="#DC2626" stroke-width="0"/>
+  <circle cx="110" cy="330" r="5" fill="#DC2626"/>
+  <text x="90" y="352" font-size="10.5" font-weight="700" fill="#B91C1C">③ Stop ngoài 100% (đầu nhịp)</text>
+
+  <rect x="24" y="410" width="712" height="56" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="428" font-size="11.5" font-weight="700" fill="#92400E">Long: kéo fib đáy(100%) → đỉnh(0%). 50% chỉ là equilibrium — KHÔNG phải OTE. Entry tối ưu nằm</text>
+  <text x="36" y="446" font-size="11.5" font-weight="700" fill="#92400E">trong 62–79%, trọng tâm 70.5%. Stop ngoài 100%; target tại -0.27/-0.62 hoặc liquidity pool.</text>
+</svg>

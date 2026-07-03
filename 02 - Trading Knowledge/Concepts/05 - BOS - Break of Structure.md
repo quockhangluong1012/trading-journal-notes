@@ -28,7 +28,7 @@ importance: 5
 confidence: 0
 last_reviewed: 2026-06-22
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-07-02
 common_mistakes:
   - "[[Mistake - Wick Sweep Mistaken for BOS]]"
   - "[[Mistake - BOS Confused with MSS]]"
@@ -54,6 +54,10 @@ BOS trong ICT là việc giá phá một **swing point trước đó theo đúng
 - **Bearish BOS:** trong một downtrend, giá đóng nến **xuống dưới swing low gần nhất** → xác nhận sellers vẫn kiểm soát, leg giảm tiếp diễn.
 
 BOS là dấu hiệu **tiếp diễn (continuation)**, không phải tín hiệu đảo chiều. Nó nói: "xu hướng hiện tại vẫn còn hiệu lực".
+
+![[BOS-Advanced-Anatomy.svg|697]]
+
+**Vì sao body close quan trọng đến vậy (logic đấu giá):** một wick xuyên qua swing chỉ chứng minh rằng *lệnh thị trường đã chạm tới đó* — thường là stop bị kích hoạt. Một **body đóng bên ngoài swing** chứng minh điều khác hẳn: sau khi mọi stop đã khớp, thị trường vẫn **chấp nhận (acceptance)** giá ở mức mới cho tới hết cây nến. Sweep = *ghé thăm rồi bị đuổi về*; BOS = *chuyển đến ở hẳn*. Đó là lý do một cú phá chỉ được "tin" khi nến đóng — gắn nhãn khi nến chưa đóng là gắn nhãn cho một tương lai chưa xảy ra.
 
 **Mục đích trong ICT:**  
 - Xác nhận **order flow tiếp tục** theo hướng cũ → khẳng định bias tiếp diễn.
@@ -91,6 +95,19 @@ BOS là cách ICT đọc "thị trường có còn đi theo hướng tôi nghĩ 
 
 > [!tip]
 > **Internal BOS sống bên trong External BOS.** Một loạt internal BOS cùng hướng dồn lại để cuối cùng tạo ra một external BOS. Đừng coi internal BOS trên M1/M5 ngang hàng với external BOS trên H4/D1 khi xác định bias.
+
+![[BOS-Advanced-Internal-External.svg|697]]
+
+### Nâng cao — BOS là lệnh "cập nhật bản đồ" (remap dealing range)
+
+Giá trị lớn nhất của một external BOS không nằm ở tín hiệu vào lệnh, mà ở việc nó **bắt buộc bạn vẽ lại toàn bộ khung tham chiếu**:
+
+1. **Dealing range mới:** đo từ **protected low mới** (ITL cuối cùng trước cú phá — *không phải* đáy cũ của range) tới đỉnh mới mà leg sau BOS đang in. Xem thêm [[37 - Re-mapping Dealing Range sau Displacement]].
+2. **Premium/Discount dịch chuyển:** vùng từng là premium của range cũ có thể trở thành **discount của range mới**. Đây là lý do nhiều trader "chờ giá rẻ" mãi không thấy — họ đang đo độ rẻ trên bản đồ đã hết hạn.
+3. **Protected swing dời theo:** mỗi BOS dời protected low/high lên/xuống một nấc. Stop loss của vị thế đang chạy cũng nên được đánh giá lại theo protected swing mới (trail theo cấu trúc, không trail theo cảm giác).
+4. **Liquidity map mới:** swing vừa bị phá giờ là mốc liquidity hai phía — phía trên nó là stop của phe short mới; quay lại retest vùng phá (breaker logic) là hành vi phổ biến trước khi leg tiếp tục.
+
+![[BOS-Advanced-Range-Remap.svg|697]]
 
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Đang có một xu hướng rõ ràng (chuỗi HH/HL cho uptrend, LH/LL cho downtrend) để "tiếp diễn" có nghĩa.
@@ -226,6 +243,8 @@ Invalidation: H4 đóng body TRÊN protected high [level] = MSS bullish, hủy b
 
 ### Phân biệt "wick sweep" và "BOS thật"
 
+![[BOS-Advanced-Triple-Compare.svg|697]]
+
 | Quan sát | Cách đọc hợp lý |
 |---|---|
 | Giá **wick** xuyên qua swing high/low rồi đóng nến **trở lại trong range**, kèm displacement ngược | **Liquidity sweep** — lấy stop tại swing rồi quay đầu; KHÔNG phải BOS; cảnh báo khả năng reversal |
@@ -275,6 +294,18 @@ Trong uptrend, giá đẩy lên và **wick xuyên qua** swing high gần nhất,
 - Luôn hỏi: "giá phá để **tiếp diễn** (body close + giữ giá) hay chỉ **sweep rồi quay đầu** (wick + reclaim)?"
 
 ---
+
+## 7. Entry model liên quan
+
+Khái niệm này thường kết hợp với:
+- [[21 - Market Structure Shift]] — "người anh em ngược chiều": phá ngược trend = MSS
+- [[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]] — đo BOS đúng degree
+- [[20 - Liquidity Sweep]] — bộ lọc phân biệt phá thật vs quét thanh khoản
+- [[13 - FVG  - Fair Value Gap]] / [[25 - OB - Order Block]] — entry model sau cú phá
+- [[12 - Dealing Range]] / [[37 - Re-mapping Dealing Range sau Displacement]] — remap sau external BOS
+- [[27 - Premium Discount]] — đo lại trên range mới
+- [[04 - BB - Breaker Block]] — swing bị phá trở thành vùng retest
+
 ### Sequence mẫu — Long tiếp diễn xác nhận bằng BOS
 ```text
 HTF Uptrend (chuỗi HH/HL) + Bullish Daily Bias
@@ -436,6 +467,29 @@ HTF Downtrend (chuỗi LH/LL) + Bearish Daily Bias
 - [ ] Lọc riêng các lệnh có `bos_confirmation: wick-only` và `bos_vs_mss: reversal` để đo tỷ lệ nhầm lẫn.
 - [ ] Thống kê win rate theo `bos_type` (internal vs external) và `structure_alignment`.
 - [ ] Cập nhật rule chỉ khi dữ liệu backtest/forward test đủ mẫu.
+
+---
+
+## 14. Best Practices
+
+> [!success] Nguyên tắc vàng
+> **"Body close là BOS, wick là sweep. Thuận trend là BOS, ngược trend là MSS."** Hai câu hỏi này phải trở thành phản xạ — hỏi trước MỌI cú phá, trước khi cảm xúc kịp gắn nhãn hộ bạn.
+
+![[BOS-Advanced-Quality-Grading.svg|697]]
+
+1. **Chờ nến ĐÓNG rồi mới gắn nhãn.** Một nến đang phá swing với body lớn có thể đóng cửa thành một wick sweep hoàn hảo. Gắn nhãn BOS khi nến chưa đóng là dự đoán, không phải phân tích. Với H1/H4, đây là chỗ cần kiên nhẫn nhất — và là chỗ tách trader có kỷ luật khỏi đám đông.
+
+2. **Chấm grade A/B/C cho mọi BOS trước khi hành động.** Grade A (body close + displacement + FVG + sweep trước đó + đúng degree + đồng bias) mới đáng full size. Grade B đòi thêm confluence. Grade C không được dùng cho bất kỳ quyết định nào — kể cả "giữ lệnh thêm chút".
+
+3. **Sau external BOS, việc ĐẦU TIÊN là remap, không phải tìm entry.** Vẽ lại dealing range từ protected low/high mới, đo lại premium/discount, dời protected swing. Entry chỉ hợp lệ khi được đặt trên bản đồ mới. Nhiều cú "mua discount" thua lỗ thực chất là mua premium của range mới.
+
+4. **Không chase điểm phá — cú phá càng đẹp, retrace về FVG càng đáng chờ.** Displacement mạnh gần như luôn để lại imbalance, và thị trường có thói quen quay lại "nạp xăng" tại đó. Vào ngay tại điểm phá cho stop xa gấp 2–3 lần so với vào tại FVG với cùng target.
+
+5. **Một chuỗi BOS cùng hướng là dữ liệu, một BOS đơn lẻ là sự kiện.** Bias mạnh được xây từ *chuỗi* external BOS đồng hướng trên H4/D1. Đừng nâng cấp một BOS M5 đơn độc thành "trend mới" — đó là công việc của external structure.
+
+6. **Cẩn trọng với BOS cuối range (exhaustion break).** Khi daily range đã chạy gần hết ADR, hoặc leg đã lấy xong pool liquidity mục tiêu, cú BOS tiếp theo có xác suất cao là cú phân phối cuối — body close thật đấy, nhưng không còn nhiên liệu phía trước. Luôn hỏi: "sau cú phá này, giá còn CHẠY VỀ ĐÂU?"
+
+7. **Review định kỳ các lệnh gắn nhãn sai.** Mỗi tuần lọc các lệnh thua có tag BOS và phân loại lại: bao nhiêu thực ra là sweep? bao nhiêu là MSS đọc ngược? Nhầm lẫn có hệ thống sẽ lộ ra sau 20–30 mẫu — và đó chính là mistake note đáng viết vào [[06 - Mistake Database]].
 
 ---
 

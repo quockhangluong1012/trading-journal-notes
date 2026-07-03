@@ -20,9 +20,10 @@ timeframes:
   - M1
 models:
   - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+importance: 5
 last_reviewed: 2026-07-01
 created: 2026-06-22
-updated: 2026-07-01
+updated: 2026-07-02
 common_mistakes:
   - "[[Mistake - MSS not in POI Zone]]"
   - "[[Mistake - MSS Before Liquidity Sweep]]"
@@ -48,6 +49,8 @@ Market Structure Shift (MSS) trong ICT là sự **phá vỡ cấu trúc ngược
 - **Bearish MSS:** sau khi giá **sweep một đỉnh (Buy-Side Liquidity / BSL)**, giá **phá xuống qua higher-low gần nhất** bằng **displacement**.
 
 MSS không chỉ là “giá vượt một mức”. Nó là sự kiện đánh dấu thị trường vừa **lấy thanh khoản phía này rồi quay sang phân phối về phía đối diện** — tức là chuyển trạng thái giao hàng giá (delivery).
+
+![[MSS-Advanced-Anatomy.svg|697]]
 
 > [!note] MSS (ICT) vs CHoCH (SMC)
 > ICT gọi sự phá cấu trúc đảo chiều này là **MSS (Market Structure Shift)**. Trường phái SMC (Smart Money Concepts) gọi hiện tượng tương tự là **CHoCH (Change of Character)**. Hai thuật ngữ mô tả cùng một ý: phá vỡ ngược hướng → khả năng đảo chiều. Trong note này ta giữ trọng tâm và ngôn ngữ **MSS theo ICT**, nhưng nếu đọc tài liệu SMC thì CHoCH ≈ MSS.
@@ -102,6 +105,8 @@ Không phải cứ có "một cú quét" là MSS theo sau đáng tin ngang nhau.
 | **Thấp** | Swing đã bị quét/test nhiều lần trước đó | Pool đã "mỏng" — phần lớn stop đã bị lấy ở các lần quét trước; MSS sau đó dễ là failed shift |
 | **Không tính là pool hợp lệ** | Micro swing (hình thành trong vài nến, không có ý nghĩa cấu trúc) | Đây là lỗi "phá micro swing" ở mục 9 — MSS theo sau chỉ là nhiễu |
 
+![[MSS-Advanced-Pool-Tiers.svg|697]]
+
 > [!tip] Ba yếu tố nhân chất lượng (không chỉ loại pool)
 > Ngay cả khi pool đúng tier cao, MSS theo sau vẫn cần thêm ba yếu tố để đạt chất lượng cao nhất: **(1) vị trí** — sweep xảy ra TẠI một HTF POI hợp lệ, đúng phía premium/discount; **(2) thời điểm** — diễn ra trong kill zone (London Open hoặc NY AM), ngoài kill zone thanh khoản mỏng dễ tạo MSS giả; **(3) có CISD đi kèm** — xem callout CISD ở mục 7 để phân biệt rõ với MSS.
 
@@ -114,6 +119,8 @@ HTF Bias  →  HTF POI  →  Liquidity Sweep  →  [MSS trên LTF]  →  Displac
 ```
 
 MSS là cây cầu giữa **liquidity event** (sweep) và **entry model** (FVG/OB). Bỏ qua bất kỳ bước nào trước MSS đều làm MSS mất giá trị.
+
+![[MSS-Advanced-Sequence-Chain.svg|697]]
 
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Giá đã chạm một **HTF / H1 POI hợp lệ** (FVG, OB, breaker, mitigation block) phù hợp với Daily Bias.
@@ -262,6 +269,16 @@ Entry: retrace vào FVG | Stop: trên swept high | Target: SSL [level]
 | MSS hình thành nhưng giá sau đó đóng ngược lại qua MSS level và giữ acceptance | **Failed MSS.** Cấu trúc không đảo thật; xem lại bias/POI |
 | Giá phá **thuận** hướng leg đang chạy (phá higher-high khi đang tăng) | Đây là **BOS (tiếp diễn)**, KHÔNG phải MSS (đảo chiều) |
 
+![[MSS-Advanced-Failed-MSS.svg|697]]
+
+### Nâng cao — Đọc Failed MSS như một tín hiệu (không chỉ là thất bại)
+
+Một failed MSS không chỉ nói "setup hỏng" — nó nói **phía đối diện vẫn còn kiểm soát**. Ba hệ quả thực chiến:
+
+1. **Kịch bản "sweep kép":** failed bullish MSS sau khi quét một đáy nông thường có nghĩa là thị trường muốn quét **pool sâu hơn** (đáy lớn hơn / PDL) trước khi đảo thật. Đừng coi vùng đó là "chết" — đặt cảnh báo tại pool sâu hơn và chờ sequence lặp lại ở đó với chất lượng cao hơn.
+2. **Thông tin cho bias:** nhiều failed MSS ngược bias liên tiếp = HTF delivery còn rất mạnh — đó là *bằng chứng* củng cố Daily Bias hiện tại, đáng ghi vào Daily Note.
+3. **Kỷ luật thoát:** ranh giới hành động là **acceptance** — một nến đóng ngược qua MSS level + một nến giữ bên kia. Retrace sâu vào FVG nhưng chưa đóng qua level vẫn là "chờ"; đóng qua + giữ là "thoát", không thương lượng.
+
 ---
 
 ## 6. Ví dụ chart
@@ -291,6 +308,19 @@ Daily Bias vẫn Bullish, BSL phía trên còn mở. Giá đang ở giữa range
 - Luôn hỏi: “Đã sweep chưa? Có ở POI không? Có displacement không?” trước khi tin một MSS.
 
 ---
+
+## 7. Entry model liên quan
+
+Khái niệm này thường kết hợp với:
+- [[20 - Liquidity Sweep]] — điều kiện tiên quyết đứng TRƯỚC MSS
+- [[05 - BOS - Break of Structure]] — "người anh em thuận chiều": phá thuận trend = BOS
+- [[09 - Change of Character]] — CHoCH (SMC) ≈ MSS (ICT)
+- [[13 - FVG  - Fair Value Gap]] / [[25 - OB - Order Block]] — entry model từ displacement leg
+- [[26 - OTE - Optimal Trade Entry]] — refine điểm vào trong retrace
+- [[12 - Daily Bias]] — MSS chỉ là execution, bias đến từ HTF
+- [[18 - Kill Zones]] — thời điểm MSS đáng tin nhất
+- [[35 - Aggressive Displacement Entry]] — biến thể vào sớm theo CISD
+
 ### Sequence mẫu — Long với Bullish MSS
 ```text
 HTF Bullish Bias
@@ -330,6 +360,8 @@ HTF Bearish Bias
 > | **Rủi ro nếu dùng riêng** | Vào sớm khi order flow chưa thật sự đảo → dễ false signal nếu thiếu sweep + POI đi kèm | Vào muộn hơn, entry có thể ở giá kém hơn nếu chờ đủ MSS mới vào |
 >
 > **Cách dùng kết hợp:** nhiều trader ICT dùng **CISD làm early trigger**, và **MSS làm lớp xác nhận cấu trúc** phía sau. Khi CISD in ra sớm NGAY SAU một liquidity sweep chất lượng cao (xem bảng phân tầng ở mục 2), và MSS xác nhận lại bằng body close qua swing ngay sau đó — đó là setup có xác suất cao nhất, vì cả tín hiệu "sớm" (CISD) và tín hiệu "chắc" (MSS) đều đồng thuận.
+
+![[MSS-Advanced-CISD-vs-MSS.svg|697]]
 
 > [!note]
 > Sequence chất lượng KHÔNG phải “thấy MSS rồi vào”. MSS chỉ là một mắt xích: **HTF draw on liquidity → POI → liquidity sweep → MSS/displacement → FVG/OB entry**. Bỏ bước nào trước MSS thì MSS mất giá trị.
@@ -471,6 +503,27 @@ HTF Bearish Bias
 - [ ] Thống kê win rate, average R, lỗi lặp lại theo từng tổ hợp điều kiện.
 - [ ] So sánh các lệnh "MSS đúng sequence" vs "MSS thiếu điều kiện" để củng cố rule.
 - [ ] Cập nhật rule chỉ khi dữ liệu backtest/forward test đủ mẫu.
+
+---
+
+## 14. Best Practices
+
+> [!success] Nguyên tắc vàng
+> **"MSS là câu trả lời, không phải câu hỏi."** Chỉ đi tìm MSS khi ba điều kiện đứng trước nó đã có mặt: bias rõ, giá tại HTF POI, sweep vừa xảy ra. Nếu bạn đang quét chart tìm MSS "đẹp" để trade — bạn đã đảo ngược quy trình.
+
+1. **Kiểm tra 3 cổng theo đúng thứ tự: Sweep trước? Tại POI? Có displacement?** Thiếu một cổng = không trade, không ngoại lệ. Viết ba câu này lên sticky note cạnh màn hình cho tới khi thành phản xạ — phần lớn lệnh thua gắn tag MSS trong journal sẽ rơi vào nhóm thiếu cổng 1 hoặc 2.
+
+2. **Chấm tier cho pool bị quét TRƯỚC khi tin MSS.** Equal highs/lows và PDH/PDL (Tier 1–2) mới đủ nhiên liệu cho đảo chiều thật; swing đã bị quét nhiều lần hay micro swing thì MSS theo sau phần lớn là nhiễu. Ghi `swept_pool_tier` vào journal để có số liệu riêng của bạn.
+
+3. **Dùng CISD làm mắt, MSS làm tay.** CISD in sớm cho bạn *chuẩn bị* (khoanh FVG dự kiến, tính size); MSS body close cho bạn *bóp cò*. Vào hẳn từ CISD chỉ khi sweep thuộc Tier 1–2 và nằm trong kill zone — còn lại, chờ đủ MSS.
+
+4. **Không vào tại cây nến MSS — kỷ luật chờ retrace.** Displacement leg gần như luôn để lại FVG; entry tại FVG cho stop ngắn hơn 2–3 lần với cùng target. Nếu giá chạy thẳng không retrace: chấp nhận lỡ. Thống kê backtest của chính bạn sẽ cho thấy nhóm "chase tại MSS" có R trung bình tệ hơn hẳn.
+
+5. **Định nghĩa failed MSS bằng acceptance, không bằng cảm giác.** Ranh giới cứng: một nến đóng ngược qua MSS level + nến sau giữ bên kia = thoát. Trước ranh giới đó, retrace sâu là bình thường — đừng thoát non vì sợ. Sau ranh giới đó, đừng giữ vì hy vọng. Quy tắc này bảo vệ cả hai phía của tâm lý.
+
+6. **Một M5 MSS không bao giờ được đảo Daily Bias một mình.** Nó chỉ được *thực thi* bias, hoặc — khi xảy ra sau sweep tại HTF POI — được *đề xuất* xem xét lại bias, việc đảo thật cần bằng chứng H1/H4. Ghi nhớ phân cấp quyền lực này giúp tránh lỗi đắt nhất: đổi hướng cả ngày vì một cú phá 5 phút.
+
+7. **Backtest MSS theo tổ hợp điều kiện, không theo tổng thể.** Đừng hỏi "MSS có win rate bao nhiêu?" — hỏi "MSS + sweep Tier 1 + trong POI + kill zone có win rate bao nhiêu, so với MSS thiếu từng điều kiện?" 20–30 mẫu mỗi nhóm là đủ thấy sự chênh lệch, và đó là cách biến niềm tin thành quy tắc có số liệu ([[04 - Backtesting]]).
 
 ---
 

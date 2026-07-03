@@ -1,0 +1,61 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Giải phẫu Implied Fair Value Gap</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Nến lớn ở giữa + trung điểm (CE) bóng nến hai bên → vùng imbalance ẩn khi không có FVG 3-nến rõ</text>
+
+  <rect x="24" y="70" width="712" height="290" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <defs>
+    <marker id="anat-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#7C3AED"/>
+    </marker>
+  </defs>
+
+  <!-- baseline -->
+  <line x1="60" y1="330" x2="716" y2="330" stroke="#D8DBE2" stroke-width="1"/>
+
+  <!-- Candle 1 (preceding) - has upper wick that overlaps into the big candle's range -->
+  <rect x="170" y="150" width="3" height="150" fill="#16A34A"/>
+  <rect x="160" y="230" width="24" height="55" fill="#16A34A" rx="1.5"/>
+  <text x="146" y="315" font-size="11.5" fill="#374151" font-weight="600">Nến 1 (trước)</text>
+
+  <!-- CE marker on candle 1's upper wick (the part overlapping the big candle) -->
+  <line x1="150" y1="190" x2="300" y2="190" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <circle cx="171" cy="190" r="4" fill="#3B82F6"/>
+  <text x="306" y="194" font-size="11.5" fill="#1D4ED8" font-weight="700">① CE bóng trên Nến 1 (50%)</text>
+
+  <!-- Candle 2 (large displacement candle) -->
+  <rect x="330" y="90" width="4" height="220" fill="#15803D"/>
+  <rect x="316" y="105" width="32" height="190" fill="#16A34A" rx="1.5"/>
+  <text x="296" y="325" font-size="11.5" fill="#166534" font-weight="700">② Nến lớn (displacement)</text>
+
+  <!-- Candle 3 (following) - has lower wick overlapping into the big candle's range -->
+  <rect x="480" y="140" width="3" height="150" fill="#16A34A"/>
+  <rect x="470" y="145" width="24" height="55" fill="#16A34A" rx="1.5"/>
+  <text x="456" y="315" font-size="11.5" fill="#374151" font-weight="600">Nến 3 (sau)</text>
+
+  <!-- CE marker on candle 3's lower wick -->
+  <line x1="440" y1="250" x2="600" y2="250" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <circle cx="481" cy="250" r="4" fill="#3B82F6"/>
+  <text x="606" y="254" font-size="11.5" fill="#1D4ED8" font-weight="700">③ CE bóng dưới Nến 3 (50%)</text>
+
+  <!-- Implied FVG zone between the two CE lines -->
+  <rect x="150" y="190" width="566" height="60" fill="#F59E0B" opacity="0.16"/>
+  <text x="330" y="222" font-size="12.5" font-weight="700" fill="#92400E">④ Vùng Implied FVG (giữa 2 mức CE)</text>
+
+  <!-- invalidation level -->
+  <line x1="150" y1="285" x2="716" y2="285" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="606" y="298" font-size="11" fill="#B91C1C" font-weight="700">⑤ Invalidation: đóng nến xuyên hết vùng</text>
+
+  <!-- overlap note -->
+  <path d="M 250 200 L 300 300" stroke="#7C3AED" stroke-width="1.3" marker-end="url(#anat-arrow)" fill="none"/>
+  <text x="185" y="140" font-size="10.5" fill="#7C3AED">Bóng Nến 1 &amp; Nến 3 "ăn" vào range Nến 2</text>
+  <text x="185" y="124" font-size="10.5" fill="#7C3AED">→ không còn khoảng trống 3-nến rõ ràng</text>
+
+  <!-- summary banner -->
+  <rect x="24" y="372" width="712" height="86" rx="8" fill="#FEF3C7" stroke="#F59E0B"/>
+  <text x="40" y="396" font-size="13" font-weight="700" fill="#92400E">Quy tắc cốt lõi</text>
+  <text x="40" y="416" font-size="12" fill="#78350F">Không lấy high/low thô của 3 nến như FVG chuẩn. Lấy CE (trung điểm 50%) của bóng nến liền kề</text>
+  <text x="40" y="434" font-size="12" fill="#78350F">hai bên nến lớn — khoảng giữa hai mức CE đó chính là vùng Implied FVG (imbalance ẩn).</text>
+  <text x="40" y="452" font-size="11.5" fill="#92400E">Vô hiệu khi giá đóng nến xuyên qua toàn bộ vùng (mất cả hai mức CE).</text>
+</svg>

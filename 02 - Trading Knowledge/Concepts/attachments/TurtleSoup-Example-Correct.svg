@@ -1,0 +1,64 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ đúng — Turtle Soup Long: quét SSL rõ ràng, reclaim, displacement, MSS</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Giá nhú qua equal lows (SSL hiển nhiên), không acceptance, reclaim nhanh vào range rồi đảo chiều mạnh.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- discount zone -->
+  <rect x="44" y="290" width="672" height="96" fill="#3B82F6" opacity="0.06"/>
+  <text x="52" y="308" font-size="10.5" fill="#1D4ED8">Discount của dealing range — nơi Turtle Soup Long có xác suất cao</text>
+
+  <!-- equal lows / SSL level -->
+  <line x1="90" y1="330" x2="520" y2="330" stroke="#6B7280" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="96" y="326" font-size="10" fill="#374151">Equal lows — SSL hiển nhiên, đám đông đặt stop dưới đây</text>
+
+  <!-- down-move into the level -->
+  <path d="M60,150 L120,220 L160,260 L188,300" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <text x="64" y="140" font-size="10.5" fill="#6B7280">① Giá tiến về cụm equal lows (mức bị nhắm)</text>
+
+  <!-- sweep wick: pokes below the level, no acceptance -->
+  <rect x="182" y="298" width="16" height="14" fill="#DC2626" opacity="0.85" rx="1"/>
+  <rect x="188" y="312" width="4" height="62" fill="#DC2626" opacity="0.85"/>
+  <circle cx="230" cy="345" r="14" fill="none" stroke="#B45309" stroke-width="1.6"/>
+  <text x="204" y="392" font-size="10.5" font-weight="700" fill="#B91C1C">② Sweep: wick nhú qua SSL, KHÔNG đóng cửa chấp nhận ngoài mức</text>
+
+  <!-- sweep zone box -->
+  <rect x="182" y="298" width="30" height="76" fill="#DC2626" opacity="0.12" stroke="#B45309" stroke-dasharray="4 3"/>
+  <text x="216" y="302" font-size="9.5" font-weight="700" fill="#B45309">Sweep</text>
+  <text x="216" y="314" font-size="9" fill="#92400E">wick vượt SSL</text>
+
+  <!-- reclaim + displacement up + MSS -->
+  <path d="M198,308 L215,300 L232,255 L255,270 L300,160" fill="none" stroke="#16A34A" stroke-width="2.8"/>
+  <rect x="303" y="150" width="13" height="70" fill="#16A34A" rx="1"/><rect x="308" y="144" width="2" height="86" fill="#16A34A"/>
+  <text x="203" y="270" font-size="10" font-weight="700" fill="#15803D">③ Reclaim vào range</text>
+  <text x="320" y="158" font-size="10.5" font-weight="700" fill="#15803D">④ Displacement + FVG + MSS bullish</text>
+
+  <!-- swing high broken -->
+  <circle cx="255" cy="270" r="6" fill="none" stroke="#3B82F6" stroke-width="2.2"/>
+  <line x1="255" y1="270" x2="480" y2="270" stroke="#3B82F6" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="330" y="266" font-size="10" fill="#1D4ED8">Swing high LTF bị phá = MSS bullish</text>
+
+  <!-- FVG entry -->
+  <rect x="298" y="170" width="20" height="45" fill="#16A34A" opacity="0.15" stroke="#166534" stroke-dasharray="3 3"/>
+  <text x="322" y="200" font-size="9.5" fill="#166534">FVG entry</text>
+
+  <!-- retrace back to FVG -->
+  <path d="M316,150 L360,190 L397,205 L430,220 L480,255 L540,140" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="397" cy="205" r="7" fill="#16A34A"/>
+  <text x="365" y="235" font-size="10.5" font-weight="700" fill="#15803D">⑤ Entry limit tại FVG (hoặc market sau MSS)</text>
+
+  <!-- entry / stop / target labels -->
+  <line x1="360" y1="205" x2="720" y2="205" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="600" y="200" font-size="10" fill="#166534">Entry: FVG displacement</text>
+
+  <line x1="182" y1="374" x2="720" y2="374" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="600" y="388" font-size="10" fill="#B91C1C">SL: dưới wick sweep (extreme)</text>
+
+  <line x1="540" y1="140" x2="716" y2="98" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="590" y="94" font-size="10.5" fill="#166534">⑥ TP: buy-side liquidity đối diện</text>
+
+  <rect x="24" y="410" width="712" height="56" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="430" font-size="11.5" font-weight="700" fill="#92400E">Chuỗi: quét SSL hiển nhiên (wick, không acceptance) → reclaim → displacement + FVG → MSS bullish</text>
+  <text x="36" y="450" font-size="11.5" font-weight="700" fill="#92400E">→ Long tại FVG, SL dưới wick sweep, TP về BSL đối diện. Mức bị quét PHẢI là mức hiển nhiên/external.</text>
+</svg>

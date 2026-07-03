@@ -21,7 +21,7 @@ models:
   - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
-updated: 2026-07-02
+updated: 2026-07-03
 common_mistakes:
   - "[[Mistake - Wrong Dealing Range]]"
   - "[[Mistake - Premium Discount Off Wrong Range]]"
@@ -40,6 +40,9 @@ common_mistakes:
 ---
 
 ## 1. Định nghĩa
+
+![[Dealing-Range-Sec-01-Dinh-Nghia.svg|720]]
+*Sơ đồ: Dealing Range xác định bởi cặp swing high – swing low gần nhất; mức 50% chia premium / discount.*
 
 **Khái niệm:**  
 Dealing Range trong ICT là **khoảng giá giữa một swing high và một swing low có ý nghĩa** mà giá đang dao động bên trong tại thời điểm phân tích. Hai đầu range không phải là hai điểm bất kỳ: chúng là hai điểm mà **liquidity đã được lấy** (một đỉnh rõ ràng đã quét buy-side liquidity và một đáy rõ ràng đã quét sell-side liquidity), hoặc tối thiểu là một đỉnh rõ tới một đáy rõ tạo bởi displacement/BOS. Dealing Range là **khung tham chiếu** (reference frame) để chia premium/discount, để biết đâu là liquidity bên trong, đâu là liquidity bên ngoài, và để đoán giá đang bị hút về phía nào.
@@ -70,6 +73,9 @@ Premium/Discount, OTE, equilibrium — tất cả đều là **tỷ lệ phần 
 ---
 
 ## 2. Bối cảnh sử dụng
+
+![[Dealing-Range-Sec-02-Boi-Canh.svg|720]]
+*Sơ đồ: Bối cảnh dùng Dealing Range — định vị vùng premium/discount để canh entry đồng hướng bias.*
 
 ### Các trạng thái / phân loại liquidity trong một Dealing Range
 
@@ -104,6 +110,9 @@ Premium/Discount, OTE, equilibrium — tất cả đều là **tỷ lệ phần 
 ---
 
 ## 3. Cấu trúc nhận diện trên chart
+
+![[Dealing-Range-Sec-03-Nhan-Dien.svg|720]]
+*Sơ đồ: Cách chọn đúng cặp swing high/low để vẽ một Dealing Range hợp lệ trên chart.*
 
 ### Dấu hiệu chính
 1. **Một swing high có ý nghĩa:** đỉnh được tạo bởi displacement/BOS, và lý tưởng là đã quét BSL phía trên (đỉnh cũ / equal highs / PDH...).
@@ -147,6 +156,9 @@ Premium/Discount, OTE, equilibrium — tất cả đều là **tỷ lệ phần 
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
+
+![[Dealing-Range-Sec-04-Da-Khung.svg|720]]
+*Sơ đồ: Dealing Range đa khung — HTF làm khung tham chiếu, LTF để tinh chỉnh entry trong quadrant.*
 
 > [!example] Quy trình 4 câu bắt buộc trước khi đo Premium/Discount
 > 1. **Range nào là Dealing Range hợp lệ cho timeframe/narrative tôi đang phân tích?**  
@@ -201,6 +213,9 @@ Re-draw khi: SSL dưới D1 low bị lấy → cập nhật range mới
 ---
 
 ## 5. Quy tắc xác nhận / vô hiệu hóa
+
+![[Dealing-Range-Sec-05-Xac-Nhan.svg|720]]
+*Sơ đồ: Khi nào Dealing Range còn hiệu lực và khi nào phải re-map sau displacement phá range.*
 
 ### Dealing Range được xem là hợp lệ khi
 - [ ] Hai đầu range là swing có ý nghĩa, tạo bởi displacement/BOS.
@@ -411,6 +426,9 @@ Trước mỗi phiên, chỉ cần trả lời: **"Giá đang ở pha nào của
 ---
 
 ## 9. Lỗi thường gặp
+
+![[Dealing-Range-Sec-09-Loi-Thuong-Gap.svg|720]]
+*Sơ đồ: Các lỗi phổ biến khi chọn Dealing Range — range quá nhỏ, sai timeframe, không vẽ lại, và cách sửa.*
 
 | Lỗi | Dấu hiệu | Vì sao nguy hiểm | Cách sửa |
 |---|---|---|---|

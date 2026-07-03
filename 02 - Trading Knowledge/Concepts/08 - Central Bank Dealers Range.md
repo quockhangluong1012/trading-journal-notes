@@ -17,9 +17,10 @@ timeframes:
   - M5
 models:
   - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
-last_reviewed: 2026-06-23
+importance: 5
+last_reviewed: 2026-07-02
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-07-02
 common_mistakes:
   - "[[Mistake - Trade Every FVG]]"
   - "[[Mistake - Entry Before Liquidity Sweep]]"
@@ -41,7 +42,12 @@ common_mistakes:
 **Khái niệm:**
 Central Bank Dealers Range là vùng giá tích lũy hình thành trong khoảng thời gian các dealer ngân hàng trung ương "án binh" cuối phiên New York, trước khi phiên Á mở. Trong cách dạy ICT cổ điển, cửa sổ đo là **14:00–20:00 giờ New York** (tương đương **20:00–02:00 GMT** tùy DST). Ta đo **high và low** của vùng này — ưu tiên dùng **thân nến (body)** thay vì bóng nến — để xác định kích thước range.
 
-Từ kích thước range đó, ta chiếu các bội số **standard deviation (độ lệch chuẩn)** lên trên và xuống dưới: **+1 SD, +2 SD, +3 SD** và **-1 SD, -2 SD, -3 SD**. Mỗi SD = một lần chiều cao của CBDR. Các mức này trở thành **mục tiêu giá / vùng thanh khoản dự kiến** cho expansion của phiên Á và London.
+Từ kích thước range đó, ta chiếu các bội số **standard deviation (độ lệch chuẩn)** lên trên và xuống dưới: **+1 SD, +2 SD, +3 SD** và **-1 SD, -2 SD, -3 SD**. Mỗi SD = một lần chiều cao của CBDR. Các mức này trở thành **mục tiêu giá / vùng thanh khoản dự kiến** cho expansion của phiên Á và London. Xem thêm [[31 - Standard Deviation]] để hiểu bản chất phép chiếu.
+
+![[CBDR-Advanced-SD-Projection.svg|697]]
+
+> [!info] Thang SD chiếu từ range CBDR
+> Range CBDR (đo theo thân nến) là "đơn vị" — mỗi bậc SD cách nhau đúng một chiều cao range. +2 SD trùng BSL thường là target chính; bias bullish thì ưu tiên phía trên, bias bearish ưu tiên phía dưới. Giá thường tôn trọng +1/+2 SD chứ hiếm khi chạm hết mọi bậc.
 
 **Liên hệ với Asian Range & Flout:**
 - **Asian Range** là một biến thể: đo range của riêng phiên Á (thường 19:00/20:00–00:00 NY) rồi chiếu SD tương tự.
@@ -81,6 +87,11 @@ CBDR là một trong số ít công cụ ICT cho ra **target định lượng** 
 | **CBDR** | ~14:00–20:00 | High–Low (body) cuối phiên NY | Lý tưởng ~40 pip FX |
 | **Asian Range** | ~19:00/20:00–00:00 | High–Low phiên Á | Dùng khi phiên Á tích lũy gọn |
 | **Flout** | Kết hợp CBDR + Asian | Trung bình/hợp nhất 2 range | Cho đơn vị "trơn" hơn |
+
+![[CBDR-Advanced-Range-Variants.svg|697]]
+
+> [!info] Ba cửa sổ đo trên cùng trục thời gian NY
+> Cả ba biến thể chung một logic (lấy vùng tích lũy hẹp làm đơn vị rồi project SD), chỉ khác cửa sổ đo. Chọn CBDR khi cuối phiên NY tích lũy gọn; chuyển sang Asian Range khi CBDR dính đuôi tin NY nhưng phiên Á lại sạch; dùng Flout khi muốn một đơn vị SD "trơn", ít nhạy với một range lẻ méo.
 
 > [!tip]
 > Mặc định **đo theo thân nến (body)** trong cách dạy cổ điển để loại bỏ nhiễu bóng nến. Một số trader dùng cả high/low bóng — hãy nhất quán một cách đo và backtest riêng từng cách.
@@ -140,6 +151,11 @@ CBDR là một trong số ít công cụ ICT cho ra **target định lượng** 
 > 3. **Mức SD nào trùng liquidity pool / POI HTF để làm target?**
 > 4. **Có tin tức nào làm range/SD mất giá trị không?**
 
+![[CBDR-Advanced-AMD-Cycle.svg|697]]
+
+> [!info] CBDR đọc theo khung AMD
+> CBDR chính là pha **Accumulation** (xem [[02 - AMD]]): vùng tích lũy hẹp làm gốc. **Manipulation** thường quét -1 SD / SSL ([[30 - Sell-side Liquidity]]) phiên Á để bẫy trước, rồi **Distribution** mới chạy expansion về +2 SD / BSL ([[07 - Buy-side Liquidity]]) đúng bias bullish. Timeline: NY cuối phiên → Á (sweep) → London (expansion).
+
 ### D1 / H4 — Bias & Narrative
 - **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
 - **Dealing range HTF:** giá đang Premium hay Discount của [[12 - Dealing Range]] lớn?
@@ -191,6 +207,11 @@ Invalid: đóng nến vượt -2 SD ngược bias / range gốc quá rộng
 - [ ] Sản phẩm biến động lớn (indices/gold) làm SD lệch nhiều.
 - [ ] Gap đầu tuần ([[24 - New Week Opening Gap]]) làm méo cấu trúc.
 
+![[CBDR-Advanced-Clean-vs-Dirty.svg|697]]
+
+> [!info] Range sạch vô hiệu hóa range bẩn
+> Bên trái là range **sạch** (~40 pip, ít bóng, đo body): SD sắc nét, giá chạy tới +1/+2 SD. Bên phải là range **bẩn** (>90 pip do tin tức, bóng dài, đo cả wick): SD bị đẩy ra xa vô nghĩa, giá lẹt đẹt không chạm nổi +1 SD. Range bẩn là điều kiện vô hiệu hóa hàng đầu — thấy nó thì bỏ phiên, đừng cố ép SD.
+
 ### Đọc phản ứng tại các mức SD
 
 | Quan sát | Ý nghĩa | Cách đọc hợp lý |
@@ -200,12 +221,51 @@ Invalid: đóng nến vượt -2 SD ngược bias / range gốc quá rộng
 | Giá xuyên +2 SD dễ dàng | Momentum mạnh | +3 SD hoặc liquidity HTF làm target kế |
 | Giá không tới nổi +1 SD, quay đầu | Range gốc sai/bias yếu | Xem lại chất lượng CBDR & bias |
 
+### Nâng cao — Kết hợp CBDR SD với Silver Bullet / Kill Zones (target × timing)
+
+CBDR và [[18 - Kill Zones]] trả lời hai câu hỏi khác nhau và **bổ sung** cho nhau, không thay thế: **CBDR nói giá đi BAO XA (target theo SD), Kill Zone / Silver Bullet nói vào lệnh KHI NÀO (timing).** Một setup chất lượng cao là khi hai trục này giao nhau: SD projection cho một target đo lường được, còn kill zone cung cấp cửa sổ thanh khoản để cú expansion thực sự chạy tới target đó.
+
+Trình tự thực chiến để ghép hai công cụ:
+1. **Đêm/pre-market:** đo CBDR, project SD, đánh dấu mức SD nào trùng liquidity pool HTF ([[07 - Buy-side Liquidity]] / [[30 - Sell-side Liquidity]]). Đây là "bản đồ target" tĩnh cho ngày.
+2. **Kill zone mở (London 02:00–05:00 NY hoặc NY AM 08:30–11:00):** chờ manipulation quét SD gần đối diện bias, rồi entry theo ICT 2022 (sweep → MSS → displacement → FVG). Silver Bullet (10:00–11:00 NY) là cửa sổ hẹp đặc biệt hợp để "bóp cò" khi SD target đã rõ.
+3. **Quản lý:** dùng +1 SD làm TP1 (thường trong tầm với của một kill zone), +2 SD / BSL làm TP2. Nếu +2 SD nằm quá xa so với range trung bình một phiên của sản phẩm, hạ kỳ vọng xuống +1 SD.
+
+| Bối cảnh | Vai trò CBDR (target) | Vai trò Kill Zone / Silver Bullet (timing) | Ghép lại |
+|---|---|---|---|
+| London Open, bias bullish | +1/+2 SD trên = draw on liquidity | London KZ cung cấp expansion mạnh nhất trong ngày | SD trùng BSL + KZ London = xác suất cao nhất |
+| NY AM, đã lỡ London | +2 SD / BSL còn mở phía trên | NY AM / Silver Bullet cho nhịp continuation | Vào nhịp NY nếu SD chưa bị lấy hết |
+| Ngoài kill zone (giữa ngày) | SD vẫn là bản đồ | Thanh khoản mỏng, dễ tạo sweep giả | Giữ SD làm tham chiếu, KHÔNG entry |
+| Phiên Á | -1 SD hay bị quét (manipulation) | Á thường là pha bẫy, không phải expansion | Coi sweep Á là tín hiệu chuẩn bị, chờ London |
+
+> [!tip]
+> Ghi vào journal cặp `sd_target_hit` × `kill_zone`: bạn sẽ nhanh chóng thấy phần lớn lần chạm +1/+2 SD "chất lượng" rơi vào đúng cửa sổ London / NY AM, còn các lần chạm ngoài KZ thường là nhiễu — dữ liệu này giúp bạn ngừng trade CBDR ngoài giờ có edge.
+
+### Nâng cao — Vì sao SD kém tin trên indices/gold: gap, volatility và cách hiệu chỉnh
+
+CBDR sinh ra và được kiểm chứng chủ yếu trên **FX major** (EURUSD/GBPUSD) — nơi thị trường gần như liên tục 24h, range đêm hình thành sạch, và biến động phiên tương đối đồng nhất. Trên **indices (NDX/NAS100, ES)** và **gold (XAUUSD)**, ba yếu tố cấu trúc làm SD projection lệch nhiều:
+
+- **Gap phiên/cash open:** indices có phiên cash (RTH) và gap giữa các phiên; giá "nhảy" qua các mức SD thay vì chạy liền mạch, khiến mức SD không được test đúng như FX.
+- **Volatility cao & không đồng nhất:** ATR của NDX/XAUUSD lớn và co giãn mạnh theo tin tức; một range đêm hẹp có thể bị một phiên RTH biến động gấp nhiều lần, làm +1/+2 SD trở nên quá gần (bị xuyên tức thì) hoặc quá xa (không bao giờ tới).
+- **Thanh khoản phân mảnh theo phiên:** dealer FX "án binh" cuối NY tạo range tích lũy có ý nghĩa; indices/gold không có cùng cơ chế micro-structure đó ở cửa sổ CBDR cổ điển.
+
+Cách hiệu chỉnh nếu vẫn muốn thử CBDR trên các sản phẩm này:
+
+| Vấn đề | Biểu hiện | Cách hiệu chỉnh |
+|---|---|---|
+| Gap làm lệch mốc | Giá mở nhảy qua SD | Đo range trên cửa sổ khớp phiên đang trade (dùng Asian Range cho phiên Á-Âu), tránh bắc cầu qua gap |
+| Range chuẩn hóa theo pip vô nghĩa | "~40 pip" không áp được cho NDX/XAUUSD | Chuẩn hóa theo **ATR / % giá** thay vì pip tuyệt đối; định nghĩa "hẹp" = range đêm < X% ATR ngày |
+| SD bị xuyên tức thì | +1 SD chạm trong vài phút rồi đi tiếp | Giãn kỳ vọng: dùng +2/+3 SD làm target chính, +1 SD chỉ là trạm trung gian |
+| Kết quả nhiễu, khó tin | Win rate thất thường | **Backtest riêng từng sản phẩm** ≥20–30 mẫu trước khi dùng tiền thật; nếu thống kê không có edge → bỏ hẳn CBDR cho sản phẩm đó |
+
+> [!warning]
+> Đừng "port" các con số của EURUSD sang NDX/XAUUSD. ~40 pip là ngưỡng của FX; trên indices/gold, khái niệm "range hẹp & sạch" phải được **định nghĩa lại bằng ATR/%**, và chỉ sau khi có dữ liệu backtest riêng. Mặc định của vault: ưu tiên EURUSD/GBPUSD, cẩn trọng hoặc bỏ trên NDX/XAUUSD.
+
 ---
 
 ## 6. Ví dụ chart
 
 ### Ví dụ đúng
-![[Central-Bank-Dealers-Range-Example-Correct.svg]]
+![[Central-Bank-Dealers-Range-Example-Correct.svg|697]]
 
 **Mô tả:**
 Range CBDR 14:00–20:00 NY hẹp (~40 pip), đo theo thân nến. Bias D1 bullish nên ưu tiên SD trên. Phiên London mở, giá quét nhẹ -1 SD (manipulation) rồi displacement tăng phá cấu trúc, chạy thẳng tới +2 SD đúng nơi có BSL HTF. SD projection đóng vai bản đồ target, entry thực hiện theo ICT 2022 tại discount sau sweep.
@@ -217,7 +277,7 @@ Range CBDR 14:00–20:00 NY hẹp (~40 pip), đo theo thân nến. Bias D1 bulli
 - Giá tôn trọng cấu trúc AMD: quét SD gần → expansion về SD xa.
 
 ### Ví dụ sai / dễ nhầm
-![[Central-Bank-Dealers-Range-Example-Wrong.svg]]
+![[Central-Bank-Dealers-Range-Example-Wrong.svg|691]]
 
 **Mô tả lỗi:**
 Cửa sổ đo dính tin tức cuối phiên NY, các nến có bóng dài, range bị tính cả bóng → rộng hơn 90 pip. SD projection vì thế bị đẩy ra quá xa, không khả thi. Giá lẹt đẹt trong range cả phiên Á/London, không bao giờ tới +1 SD. Trader đặt TP tại SD và lệnh không bao giờ chạm target.
@@ -364,6 +424,27 @@ HTF Bullish Bias
 - [ ] Thống kê tỉ lệ giá chạm +1/+2/+3 SD theo độ "sạch" của range.
 - [ ] So sánh độ tin cậy SD trên EURUSD/GBPUSD vs XAUUSD/NDX.
 - [ ] Cập nhật rule chỉ khi dữ liệu đủ mẫu.
+
+---
+
+## 14. Best Practices
+
+> [!success] Nguyên tắc vàng
+> **"CBDR cho tôi biết giá đi BAO XA, không cho tôi biết vào lệnh KHI NÀO."** CBDR là công cụ Time & Price để dự phóng target (SD), không phải tín hiệu entry — và nó chỉ đáng tin khi range đêm qua HẸP & SẠCH. Range bẩn (rộng, dính tin, nhiều bóng) → bỏ phiên đó, đừng ép SD.
+
+1. **Lọc chất lượng range TRƯỚC khi project SD.** Chỉ đo và chiếu SD khi range CBDR hẹp (~40 pip hoặc nhỏ hơn trên FX major) và sạch (ít bóng dài, không spike tin tức). Ghi trường `range_width_pip` và `clean_dirty` cho mỗi phiên; sau 20–30 mẫu bạn sẽ thấy rõ SD từ range sạch có tỉ lệ chạm target cao hơn hẳn range bẩn.
+
+2. **Chuẩn hóa cửa sổ giờ theo New York và luôn kiểm tra DST.** Sai múi giờ hoặc quên đổi giờ mùa làm lệch toàn bộ range → SD sai từ gốc. Cố định cửa sổ 14:00–20:00 NY (hoặc biến thể Asian Range/Flout bạn đã chọn) và đánh dấu sẵn trên chart để không đo nhầm.
+
+3. **Đo theo thân nến (body), nhất quán một quy ước.** Bóng nến gây nhiễu làm range phồng lên và đẩy SD ra xa vô lý. Dùng body high/low theo cách dạy cổ điển, và nếu muốn thử đo cả bóng thì backtest riêng — đừng đổi qua lại giữa hai cách trong cùng một hệ thống.
+
+4. **Để Daily Bias quyết định phía SD ưu tiên.** CBDR chiếu cả SD trên lẫn dưới, nhưng chỉ một phía là target chính theo [[12 - Daily Bias]]: bias bullish → ưu tiên +SD (BSL phía trên); bias bearish → ưu tiên −SD. Không có bias rõ → không chọn được SD → không trade theo CBDR.
+
+5. **Chỉ trade khi SD target trùng một liquidity pool / POI HTF (confluence).** Một mức +2 SD đơn thuần yếu hơn nhiều so với +2 SD trùng BSL/PDH hoặc một FVG HTF. Ưu tiên các phiên mà SD projection rơi đúng vào [[07 - Buy-side Liquidity|BSL]]/[[30 - Sell-side Liquidity|SSL]] có ý nghĩa — đó là nơi giá thực sự bị hút về.
+
+6. **Dùng SD làm TP, entry theo ICT 2022; kết hợp Kill Zone cho timing.** CBDR trả lời "đi bao xa", [[18 - Kill Zones]]/Silver Bullet trả lời "vào lúc nào". Vào lệnh theo chuỗi sweep → MSS → displacement → FVG tại discount/premium, đặt +1 SD làm TP1 và +2 SD (hoặc pool trùng) làm TP2; stop nằm ngoài điểm sweep, KHÔNG tại mức SD.
+
+7. **Cẩn trọng trên gold/indices và backtest riêng từng sản phẩm.** NDX/XAUUSD biến động lớn và hay gap khiến SD kém tin cậy hơn EURUSD/GBPUSD. Đừng áp cùng một kỳ vọng SD cho mọi sản phẩm — thống kê tỉ lệ chạm +1/+2/+3 SD riêng cho từng cặp/phiên qua 20–30 mẫu ([[04 - Backtesting]]) rồi mới đưa vào playbook.
 
 ---
 

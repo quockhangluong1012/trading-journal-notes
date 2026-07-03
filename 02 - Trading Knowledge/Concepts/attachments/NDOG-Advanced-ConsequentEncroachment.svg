@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">CE (50%) của NDOG như nam châm / mốc mean-threshold trong phiên</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Giống cách CE dùng cho FVG: giá bị hút về 50% của NDOG rồi phản ứng, đặt trong khung Premium/Discount của ngày.</text>
+
+  <rect x="24" y="70" width="712" height="250" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- NDOG box with CE -->
+  <line x1="60" y1="120" x2="716" y2="120" stroke="#3B82F6" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="66" y="114" font-size="10.5" font-weight="700" fill="#1D4ED8">Prior Day Close</text>
+  <rect x="60" y="120" width="656" height="90" fill="#F59E0B" opacity="0.14" stroke="#B45309" stroke-dasharray="4 3"/>
+  <line x1="60" y1="210" x2="716" y2="210" stroke="#3B82F6" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="66" y="226" font-size="10.5" font-weight="700" fill="#1D4ED8">Reopen</text>
+
+  <!-- CE line, drawn prominent as magnet -->
+  <line x1="60" y1="165" x2="716" y2="165" stroke="#DC2626" stroke-width="2.4" stroke-dasharray="2 3"/>
+  <text x="330" y="160" font-size="12" font-weight="700" fill="#B91C1C">CE = 50% NDOG — nam châm mean-threshold</text>
+
+  <!-- magnet arrows pulling price toward CE from both sides -->
+  <path d="M120,90 L160,120 L200,150 L230,163" fill="none" stroke="#16A34A" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+  <text x="90" y="80" font-size="10" font-weight="700" fill="#166534">① Giá từ premium bị hút xuống CE</text>
+
+  <path d="M560,270 L600,235 L630,200 L650,168" fill="none" stroke="#16A34A" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+  <text x="540" y="290" font-size="10" font-weight="700" fill="#166534">② Giá từ discount bị hút lên CE</text>
+
+  <defs>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <!-- premium/discount split relative to CE -->
+  <rect x="44" y="90" width="672" height="75" fill="#3B82F6" opacity="0.05"/>
+  <text x="52" y="102" font-size="10" fill="#1D4ED8">Premium của ngày (trên CE) — vùng tìm Short theo Daily Bias bearish</text>
+  <rect x="44" y="165" width="672" height="75" fill="#F59E0B" opacity="0.05"/>
+  <text x="52" y="256" font-size="10" fill="#92400E">Discount của ngày (dưới CE) — vùng tìm Long theo Daily Bias bullish</text>
+
+  <!-- reaction marker at CE -->
+  <circle cx="400" cy="165" r="8" fill="#DC2626"/>
+  <text x="360" y="188" font-size="10" font-weight="700" fill="#B91C1C">③ Phản ứng tại CE — target đạt được, không phải điểm vào lệnh</text>
+
+  <rect x="24" y="336" width="712" height="112" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="356" font-size="11.5" font-weight="700" fill="#1F2937">CE của NDOG trong khung Premium/Discount</text>
+  <text x="36" y="374" font-size="10.5" fill="#374151">1. CE là TARGET/mốc chờ phản ứng, không phải trigger entry — cùng logic dùng CE cho FVG (xem Consequent Encroachment).</text>
+  <text x="36" y="392" font-size="10.5" fill="#374151">2. Kết hợp với Premium Discount: giá trên CE = premium của ngày (ưu tiên Short theo bias bearish); dưới CE = discount (ưu tiên Long).</text>
+  <text x="36" y="410" font-size="10.5" fill="#374151">3. Khi giá đạt CE, vẫn cần sweep + MSS trước khi coi đó là entry; CE chỉ xác nhận "giá đã đến vùng cân bằng", không tự ra tín hiệu.</text>
+  <text x="36" y="428" font-size="10" fill="#6B7280">Ghi lại `ce_reaction` (yes/no) và thời gian đạt CE mỗi ngày để đo tốc độ "trả nợ" NDOG — cần backtest xác nhận số liệu.</text>
+</svg>

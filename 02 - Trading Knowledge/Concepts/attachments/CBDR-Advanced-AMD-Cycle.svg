@@ -1,0 +1,50 @@
+<svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="500" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#1F2937">CBDR + AMD — Accumulation, Manipulation, Distribution chồng lên SD</text>
+  <text x="24" y="52" font-size="13" fill="#6B7280">Bias bullish: tích lũy trong CBDR → quét -1 SD/SSL (bẫy) → expansion về +2 SD/BSL.</text>
+
+  <rect x="24" y="66" width="712" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- SD reference lines -->
+  <line x1="60" y1="130" x2="700" y2="130" stroke="#16A34A" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="60" y="125" font-size="10" font-weight="700" fill="#15803D">+2 SD / BSL — target Distribution</text>
+  <line x1="60" y1="185" x2="700" y2="185" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="60" y="180" font-size="10" fill="#166534">+1 SD</text>
+  <line x1="60" y1="240" x2="700" y2="240" stroke="#374151" stroke-width="1.2"/>
+  <text x="60" y="235" font-size="10" fill="#6B7280">CBDR high (0 SD)</text>
+  <line x1="60" y1="290" x2="700" y2="290" stroke="#374151" stroke-width="1.2"/>
+  <text x="60" y="305" font-size="10" fill="#6B7280">CBDR low (0 SD)</text>
+  <line x1="60" y1="345" x2="700" y2="345" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="60" y="360" font-size="10" font-weight="700" fill="#B91C1C">-1 SD / SSL — bẫy Manipulation</text>
+
+  <!-- Accumulation zone (CBDR) -->
+  <rect x="120" y="240" width="140" height="50" fill="#374151" opacity="0.12" stroke="#374151" stroke-width="1"/>
+  <text x="130" y="228" font-size="11" font-weight="700" fill="#374151">A — Accumulation</text>
+  <text x="130" y="335" font-size="9.5" fill="#6B7280">vùng CBDR tích lũy hẹp</text>
+  <!-- choppy accumulation price -->
+  <path d="M120,262 L140,252 L160,272 L180,255 L200,275 L220,258 L240,270 L260,262" fill="none" stroke="#374151" stroke-width="1.8"/>
+
+  <!-- Manipulation: sweep down to -1 SD -->
+  <rect x="285" y="290" width="110" height="70" fill="#DC2626" opacity="0.08"/>
+  <text x="290" y="405" font-size="11" font-weight="700" fill="#B91C1C">M — Manipulation</text>
+  <text x="290" y="420" font-size="9.5" fill="#991B1B">quét -1 SD / SSL phiên Á (bẫy short)</text>
+  <path d="M260,262 L300,300 L330,352 L350,340" fill="none" stroke="#DC2626" stroke-width="2.4"/>
+  <circle cx="330" cy="352" r="8" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="342" y="352" font-size="9.5" font-weight="700" fill="#B45309">sweep + reject</text>
+
+  <!-- Distribution: expansion up to +2 SD -->
+  <rect x="405" y="120" width="290" height="240" fill="#16A34A" opacity="0.05"/>
+  <text x="470" y="405" font-size="11" font-weight="700" fill="#15803D">D — Distribution</text>
+  <text x="470" y="420" font-size="9.5" fill="#166534">displacement tăng → +2 SD / BSL (đúng bias bullish)</text>
+  <path d="M350,340 L390,270 L420,240 L440,255 L470,180 L520,200 L560,150 L640,130" fill="none" stroke="#16A34A" stroke-width="2.8"/>
+  <circle cx="640" cy="130" r="6" fill="#16A34A"/>
+
+  <!-- Timeline of sessions -->
+  <rect x="60" y="446" width="640" height="0" />
+  <line x1="120" y1="440" x2="660" y2="440" stroke="#9CA3AF" stroke-width="1.2"/>
+  <g font-size="10" fill="#6B7280" text-anchor="middle">
+    <circle cx="190" cy="440" r="3" fill="#374151"/><text x="190" y="462" fill="#374151">NY cuối (14:00–20:00)</text>
+    <circle cx="340" cy="440" r="3" fill="#B91C1C"/><text x="340" y="462" fill="#B91C1C">Phiên Á (quét SSL)</text>
+    <circle cx="580" cy="440" r="3" fill="#15803D"/><text x="580" y="462" fill="#15803D">London (expansion)</text>
+  </g>
+</svg>

@@ -27,7 +27,7 @@ models:
   - MMXM
 last_reviewed: 2026-06-22
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-07-03
 common_mistakes:
   - "[[Mistake - Skip Liquidity Sweep]]"
   - "[[Mistake - Chase Displacement]]"
@@ -46,6 +46,10 @@ common_mistakes:
 ---
 
 ## 1. Định nghĩa
+
+![[ICT2022-7Step-Flow-Diagram.png]]
+> [!info] Ảnh minh họa cần vẽ/dán tại đây
+> Sơ đồ luồng (flow diagram) dạng 7 khối nối tiếp nhau theo chiều ngang hoặc chiều dọc, mỗi khối là một bước: **(1) Bias (HTF) → (2) Draw on Liquidity → (3) Liquidity Sweep → (4) Displacement + MSS → (5) FVG (POI) → (6) Entry (retrace) → (7) Target**. Dùng mũi tên liền nét nối các bước theo đúng thứ tự bắt buộc, có thể thêm icon nhỏ cho từng bước (con mắt cho Bias, nam châm cho Liquidity, lưỡi dao cho Sweep, tia chớp cho Displacement, khoảng trống cho FVG, mục tiêu cho Entry, cờ đích cho Target). Đây là sơ đồ khái niệm minh họa quy trình, không phải chart giá thật.
 
 **Khái niệm:**
 ICT 2022 Model là **mô hình giao dịch tổng hợp** mà ICT công bố trong loạt bài năm 2022, gói toàn bộ các khái niệm cốt lõi (bias, liquidity, sweep, displacement, MSS, FVG, premium/discount) thành **một quy trình entry duy nhất, lặp lại được**. Mục tiêu: biến mớ khái niệm rời rạc thành một checklist hành động rõ ràng từ HTF xuống LTF.
@@ -82,6 +86,30 @@ Hầu hết người học ICT biết từng khái niệm riêng nhưng không b
 - Không phải cái cớ để bỏ qua bias / premium-discount.
 - Không phải chỉ dùng được một timeframe — nó là quy trình HTF→LTF.
 - Không phải đảm bảo thắng; nó là khung xác suất cần kết hợp risk management.
+
+### Vì sao mô hình này hoạt động — nền tảng IPDA & "smart money"
+
+> [!important] Đây là phần lý thuyết nền — hiểu WHY trước khi hỏi WHAT
+> Phần lớn trader học thuộc 7 bước như một công thức máy móc mà không hiểu **vì sao** chuỗi này lặp lại được trên mọi thị trường, mọi khung thời gian. Không hiểu lý thuyết nền thì khi thị trường "phá lệ" một lần, trader sẽ hoảng và bỏ mô hình đúng lúc nó vẫn đang đúng.
+
+**IPDA — Interbank Price Delivery Algorithm (khái niệm của ICT):**
+- ICT mô tả price delivery trên các cặp FX/index/kim loại như được chi phối bởi một **thuật toán phân phối giá liên ngân hàng** — không phải một cái máy chủ vật lý cụ thể, mà là **mô hình tư duy** để giải thích hành vi giá lặp lại: giá không di chuyển ngẫu nhiên, nó di chuyển **từ pool thanh khoản này sang pool thanh khoản khác**, dùng các phạm vi lookback chuẩn (IPDA data ranges: 20/40 ngày cho short-term, 1 năm / nhiều năm cho long-term) để xác định đâu là "old high/low" đáng quét.
+- Hệ quả thực dụng cho ICT 2022 Model: bước 2 (**draw on liquidity**) không phải đoán mò — nó dựa trên giả định rằng thuật toán sẽ **tìm tới thanh khoản nghỉ tại các mức cũ** (equal highs/lows, old swing points, session highs/lows) trước khi thực sự "muốn" đi xa hơn.
+
+**Vì sao giá "phải" săn thanh khoản trước khi di chuyển thật:**
+- Thị trường OTC (FX, một phần index CFD) không có sàn khớp lệnh tập trung; các tổ chức lớn (ngân hàng, quỹ) cần **thanh khoản đối ứng đủ lớn** để vào/thoát vị thế mà không trượt giá quá nhiều.
+- Thanh khoản đối ứng lớn nhất nằm ở **cụm lệnh dừng (stop-loss) của retail** — nằm ngay trên đỉnh cũ (buy-side liquidity) và ngay dưới đáy cũ (sell-side liquidity), vì đó là nơi phần lớn trader retail đặt stop hoặc chờ breakout.
+- "Smart money" (thuật ngữ ICT dùng, không hàm ý một nhóm cụ thể) được mô hình hóa như bên **hấp thụ (absorb)** thanh khoản đó: đẩy giá **quét qua** các mức stop này (bước 3 — Sweep) để có đủ đối ứng khớp lệnh, RỒI mới đẩy giá thật theo hướng dự định (bước 4 — Displacement).
+- Đây là lý do bước Sweep **luôn đứng trước** Displacement trong chuỗi — về logic, không thể có move thật "miễn phí" khi vẫn còn pool thanh khoản gần đó chưa bị động tới; thị trường có xu hướng dọn thanh khoản gần nhất trước khi cam kết hướng đi.
+
+**Vì sao displacement để lại FVG là dấu hiệu của "intent":**
+- Khi các lệnh lớn được khớp dồn dập theo một hướng (sau khi đã có đủ thanh khoản đối ứng từ sweep), giá bị đẩy nhanh tới mức **bên mua/bên bán không kịp giao dịch ở mọi mức giá trung gian** → để lại khoảng trống (imbalance / FVG). FVG vì vậy không phải hiện tượng ngẫu nhiên, mà là **dấu vân tay của việc "hết đối ứng"** tại các mức đó — một bằng chứng gián tiếp cho thấy vừa có dòng lệnh mất cân bằng thật, không phải noise.
+- Đây cũng là lý do ICT dùng FVG (thay vì chỉ dùng MSS) làm POI: FVG đánh dấu đúng **vùng giá mà thị trường "nợ" một sự cân bằng lại** — xác suất giá quay lại lấp một phần cao hơn so với chọn bừa một vùng hỗ trợ/kháng cự cũ.
+
+**Áp dụng thực dụng của lý thuyết này:**
+- Trước phiên, luôn hỏi: *"Pool thanh khoản nào retail đang set up để bị quét?"* — đó thường chính là setup mà đám đông nhìn thấy rõ nhất (equal highs/lows đẹp, đỉnh/đáy vừa hình thành).
+- Đừng coi sweep là "tín hiệu đảo chiều ngay lập tức" — nó là bước **thu thập thanh khoản**; xác nhận đảo chiều thật nằm ở bước Displacement + MSS theo sau.
+- Hiểu IPDA giúp bạn KHÔNG hoảng khi giá "quét" thêm một pool nữa trước khi displacement — thuật toán có thể cần nhiều hơn một lần quét nếu thanh khoản một pool không đủ; đây là lý do một số setup có "double sweep" trước khi displacement thật sự xảy ra.
 
 ---
 
@@ -163,6 +191,44 @@ Hầu hết người học ICT biết từng khái niệm riêng nhưng không b
 - Nhiều FVG chồng chéo, POI mơ hồ.
 - Ngoài kill zone, gần tin tức.
 
+### Displacement thật vs. nến to nhưng yếu — khung đánh giá khách quan hóa
+
+![[ICT2022-Displacement-vs-WeakCandle-Comparison.png]]
+> [!info] Ảnh minh họa cần vẽ/dán tại đây
+> Chart minh họa 2 cột cạnh nhau: bên trái là "Displacement hợp lệ" — một nến/chuỗi nến thân lớn, đóng cửa gần đỉnh/đáy (close location value cao), bấc ngắn, phá rõ swing point cũ và có nến sau đó KHÔNG đóng cửa lấp lại vùng vừa phá (acceptance), để lại FVG rõ 3 nến. Bên phải là "Nến to nhưng yếu" — nến thân lớn nhưng bấc dài cả hai đầu, đóng cửa giữa thân (close location value ~50%), không thực sự phá qua swing point hoặc phá rồi bị nến sau đóng cửa lấp ngược lại (rejection/failure to accept), không để lại FVG sạch. Đây là chart minh họa khái niệm, không phải dữ liệu giao dịch thật.
+
+> [!important] Đây là bước chủ quan nhất trong mô hình — cần một khung đánh giá càng khách quan càng tốt
+> "Displacement" là điểm mà trader mới hay nhầm nhất: thấy một nến thân dài là gọi ngay là displacement. Nhưng không phải cứ nến to là có "intent" thật. Dưới đây là 4 tiêu chí kiểm tra gần như định lượng được, dùng thay thế cho cảm tính "nhìn to là được".
+
+**Tiêu chí 1 — Close Location Value (CLV):**
+- Công thức: `CLV = (Close − Low) / (High − Low)` cho nến tăng mong muốn (ngược lại cho nến giảm dùng `(High − Close) / (High − Low)`).
+- Displacement hợp lệ: CLV nên **≥ 0.7–0.8** — tức giá đóng cửa gần đỉnh nến (cho move tăng) hoặc gần đáy nến (cho move giảm). CLV thấp (~0.5) nghĩa là phe đối lập đã đẩy giá lùi lại đáng kể trong chính nến đó → dấu hiệu hấp thụ (absorption), không phải đẩy giá dứt khoát.
+
+**Tiêu chí 2 — Tỷ lệ thân nến / bấc nến (body-to-wick ratio):**
+- Displacement hợp lệ: thân nến nên chiếm **≥ 65–70%** tổng range của nến; bấc đối lập (bấc trên với nến tăng, bấc dưới với nến giảm) nên nhỏ.
+- Bấc đối lập dài cho thấy có lực cản mạnh đã đẩy giá lùi lại trong quá trình hình thành nến — một "nến to" với bấc dài hai đầu thường là kết quả của volatility/tin tức, không phải một dòng lệnh một chiều thật.
+
+**Tiêu chí 3 — Có phá swing point kèm "acceptance" hay không:**
+- Không chỉ cần giá xuyên qua swing high/low cũ; cần **nến tiếp theo (hoặc vài nến sau) KHÔNG đóng cửa quay lại bên trong** vùng vừa phá — đây gọi là "acceptance" (thị trường chấp nhận mức giá mới).
+- Nếu giá phá swing rồi nến ngay sau đó đóng cửa lấp lại (failure to accept / phá giả), đây là **liquidity grab**, không phải MSS + displacement thật — thường đây chính là bước Sweep của một chu kỳ khác, không phải Displacement.
+
+**Tiêu chí 4 — Có để lại FVG sạch 3 nến hay không:**
+- Displacement thật gần như luôn để lại một FVG rõ ràng (gap giữa wick của nến 1 và nến 3 trong bộ 3 nến) vì tốc độ di chuyển vượt quá khả năng khớp lệnh liên tục ở mọi mức giá.
+- Nếu "nến to" đó KHÔNG để lại FVG nào (các nến liền kề chồng lấn hoàn toàn), khả năng cao đó là volatility thường (tin tức, thanh khoản mỏng cuối phiên) chứ không phải dòng lệnh mất cân bằng có chủ đích.
+
+**Bảng quyết định nhanh:**
+
+| Tiêu chí | Displacement hợp lệ | Nến to nhưng yếu (bỏ qua) |
+|---|---|---|
+| CLV | ≥ 0.7–0.8 | ~0.4–0.6 |
+| Body/wick ratio | Thân ≥ 65–70% range | Bấc hai đầu dài, thân < 50% |
+| Phá swing + acceptance | Có, nến sau không lấp lại | Phá rồi bị lấp ngay (failure) |
+| FVG để lại | Có, 3 nến rõ | Không có gap, nến chồng lấn |
+| Số nến tạo move | 1–3 nến dứt khoát | Nhiều nến giằng co rồi mới đóng xa |
+
+> [!tip]
+> Nếu một setup đạt ≥ 3/4 tiêu chí trên, có thể coi là displacement hợp lệ để tiếp tục sang bước FVG/Entry. Nếu chỉ đạt 1–2 tiêu chí, nên hạ cấp thành "chờ xác nhận thêm" thay vì loại vào entry ngay.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -217,6 +283,53 @@ Invalid: đóng nến trên FVG (acceptance)
 
 > [!warning]
 > **Đừng "chase" displacement.** Bước displacement là để XÁC NHẬN, không phải để vào lệnh. Entry xảy ra ở bước RETRACE về FVG. Vào ngay khi thấy nến lớn = bỏ qua bước 6, R:R xấu và dễ trúng đỉnh/đáy ngắn hạn.
+
+### Mô hình biểu hiện khác nhau ra sao trên từng thị trường đang trade
+
+![[ICT2022-CrossMarket-Behavior-Comparison.png]]
+> [!info] Ảnh minh họa cần vẽ/dán tại đây
+> Bảng/sơ đồ 3 cột so sánh side-by-side hành vi giá của NQ1/NDX, EURUSD/GBPUSD, và XAUUSD trong cùng một khung thời gian intraday (ví dụ cùng 1 phiên NY AM), mỗi cột minh họa nhịp sweep-displacement-FVG điển hình của thị trường đó với biên độ và tốc độ khác nhau (NQ1 nhiều nhịp nhỏ liên tục, FX có "khoảng lặng" quanh handoff phiên, XAUUSD có nhịp giật mạnh quanh mốc tin tức với FVG rộng). Đây là sơ đồ minh họa hành vi thị trường mang tính khái niệm, không phải chart giá thật.
+
+Cùng một chuỗi 7 bước, nhưng **tốc độ, biên độ, và rủi ro thực thi khác nhau đáng kể** giữa các thị trường đang trade. Không điều chỉnh theo đặc tính thị trường là nguyên nhân phổ biến khiến một setup "đúng lý thuyết" vẫn lỗ vì sai kỳ vọng thực thi.
+
+| Đặc tính | NQ1 / NDX (NAS100) | EURUSD / GBPUSD | XAUUSD |
+|---|---|---|---|
+| Beta / biến động | Rất cao, biến động nhanh theo phút | Trung bình, mượt hơn theo phiên | Cao, giật mạnh quanh tin |
+| Tần suất sweep trong ngày | Nhiều lần intraday (thường 3–6+ lần) | Thường 1–2 sweep rõ mỗi phiên chính | Thất thường, tăng đột biến quanh tin |
+| Động lực thanh khoản chính | Order flow index, phái sinh, mở cửa phiên Mỹ | Handoff thanh khoản London → NY (Á/Âu thấp) | Tin tức vĩ mô (CPI, NFP, Fed) + dòng trú ẩn an toàn |
+| Kích thước FVG điển hình | Nhỏ–vừa, lấp nhanh (vài phút–giờ) | Nhỏ, thường lấp trong phiên | Rộng hơn hẳn, có thể để trống nhiều giờ/ngày |
+| Rủi ro trượt giá (slippage) | Trung bình (CFD/future, spread giãn quanh tin) | Thấp (thanh khoản FX lớn) trừ lúc tin | Cao, đặc biệt quanh NFP/CPI/FOMC |
+| Kill zone hiệu quả nhất | NY AM (mở cửa phiên Mỹ), London Open | London Open, NY AM (giờ handoff) | London Open, NY AM, và quanh giờ tin |
+| Điều chỉnh thực dụng | Size nhỏ hơn vì biến động nhanh; chấp nhận nhiều setup A+ hơn/ngày; stop cần buffer do wick dài | Kiên nhẫn chờ đúng phiên handoff; tránh trade giờ Á thanh khoản mỏng; sweep dễ "sạch" hơn nhờ thanh khoản sâu | Tránh vào lệnh sát giờ tin nếu chưa có displacement rõ; nới stop/giảm size vì FVG rộng và slippage cao; ưu tiên chờ displacement dứt khoát hơn là entry sớm |
+
+> [!tip]
+> Quy tắc thực dụng: **NQ1 → nhiều cơ hội, cần kỷ luật KHÔNG ép thêm lệnh; FX → cần kiên nhẫn chờ đúng phiên; XAUUSD → ưu tiên chất lượng displacement hơn tốc độ vào lệnh, và luôn tính slippage vào R:R kế hoạch.**
+
+### Biến thể nâng cao — Single-leg vs. Multi-leg continuation entry
+
+Phần lớn ví dụ trong note này mô tả **một chu kỳ 7 bước duy nhất** (single-leg): sweep → displacement → FVG → entry → target, kết thúc khi chạm target. Nhưng trong một ngày có xu hướng mạnh, mô hình có thể **lặp lại nhiều lần theo cùng một hướng** — đây là biến thể multi-leg continuation.
+
+- **Single-leg entry:** một chu kỳ 7 bước, một entry, một target; phù hợp với ngày sideway/range hoặc khi chỉ có một cơ hội A+ rõ ràng.
+- **Multi-leg continuation:** sau khi chu kỳ 7 bước đầu tiên hoàn tất và target internal bị chạm, giá tạo ra một **dealing range mới** (thường nhỏ hơn) ngay trong nhịp trend đang chạy; nhịp retrace tiếp theo lại tạo ra một sweep nhỏ + displacement mới + FVG mới trong nội bộ trend đó → đây thực chất là chạy lại 7 bước ở một "vòng lặp" nhỏ hơn (nested cycle) mà không cần chờ giá quay lại bias gốc.
+- Điều kiện bắt buộc để coi là multi-leg hợp lệ (không phải chase): sau mỗi leg, **dealing range phải được re-map lại** dựa trên displacement mới nhất — xem chi tiết tại [[37 - Re-mapping Dealing Range sau Displacement]]. Nếu không re-map, trader dễ nhầm lẫn giữa "continuation hợp lệ" và "chase trend đã muộn".
+- Quản trị rủi ro cho multi-leg: mỗi leg vẫn phải tuân thủ risk ≤0.5%/lệnh độc lập; không cộng dồn size chỉ vì "đang đúng trend"; chỉ vào leg tiếp theo nếu leg đó **đi qua đủ 7 bước riêng của nó** (đặc biệt vẫn cần một sweep nhỏ nội bộ, không chỉ có displacement).
+
+> [!warning]
+> Multi-leg continuation KHÔNG có nghĩa là "cứ trend là vào thêm". Mỗi leg mới vẫn phải có sweep + displacement + FVG riêng. Vào thêm chỉ vì "đang thắng, muốn nhồi lệnh" mà bỏ qua sweep nội bộ là chase, không phải multi-leg hợp lệ.
+
+### Mô hình lồng trong AMD đa khung thời gian (Nested AMD)
+
+![[ICT2022-Nested-AMD-Diagram.png]]
+> [!info] Ảnh minh họa cần vẽ/dán tại đây
+> Sơ đồ 3 tầng lồng nhau kiểu "hộp trong hộp": tầng ngoài cùng là một chu kỳ AMD Daily (Accumulation–Manipulation–Distribution) trải dài cả phiên; bên trong pha Manipulation/Distribution của tầng Daily, vẽ một chu kỳ AMD Hourly hoàn chỉnh thu nhỏ; và bên trong pha Manipulation/Distribution của tầng Hourly đó lại vẽ tiếp một chu kỳ AMD 5-phút hoàn chỉnh. Dùng màu khác nhau cho mỗi tầng và ghi chú rõ "Daily AMD ⊃ Hourly AMD ⊃ 5-min AMD". Đây là sơ đồ khái niệm minh họa tính fractal của mô hình, không phải chart giá thật.
+
+> [!important] Đây là cách nhìn nâng cao nhất về mô hình — tính chất fractal
+> ICT 2022 Model không chỉ chạy một lần trên một khung thời gian. Vì AMD (Accumulation – Manipulation – Distribution, xem [[02 - AMD]]) có tính **fractal**, một chu kỳ AMD lớn trên Daily luôn CHỨA nhiều chu kỳ AMD nhỏ hơn trên Hourly, và mỗi chu kỳ Hourly đó lại chứa nhiều chu kỳ AMD nhỏ hơn nữa trên M5. Bước Sweep + Displacement của ICT 2022 Model thực chất là cách gọi tên hành vi giá tại pha Manipulation → Distribution, ở BẤT KỲ tầng nào trong cấu trúc lồng này.
+
+- **Daily AMD:** Accumulation thường là phiên Á (range hẹp), Manipulation là sweep thanh khoản đầu London/NY, Distribution là move chính trong ngày (thường London hoặc NY session) — đây là bias/draw on liquidity ở bước 1–2 của mô hình.
+- **Hourly AMD (lồng trong pha Manipulation/Distribution của Daily):** trong chính nhịp di chuyển chính của ngày, vẫn có các chu kỳ tích lũy–thao túng–phân phối nhỏ hơn theo giờ — mỗi chu kỳ này có thể tự nó là một setup ICT 2022 Model đầy đủ (sweep nhỏ + displacement nhỏ + FVG nhỏ) dùng để refine entry cho hướng Daily.
+- **5-phút AMD (lồng trong pha Manipulation/Distribution của Hourly):** đây là nơi entry thực tế thường diễn ra — một chu kỳ AMD cực ngắn cho phép xác định điểm sweep + displacement chính xác tới từng nến M1–M5, tối ưu hóa stop loss và điểm vào so với chỉ dùng H1.
+- **Ứng dụng thực dụng:** khi phân tích đa khung thời gian (xem mục 4 phía trên), thực chất bạn đang **xác định vị trí hiện tại trong 3 tầng AMD lồng nhau** — D1 cho biết đang ở pha nào của AMD lớn, H1 cho biết đang ở pha nào của AMD vừa, M5/M1 cho biết đang ở pha nào của AMD nhỏ nhất để bấm entry. Một setup A+ thực sự mạnh là khi **cả 3 tầng đều đang ở pha Manipulation→Distribution cùng hướng** (confluence đa tầng), không chỉ một tầng.
 
 ---
 
@@ -323,7 +436,71 @@ Khái niệm này tổng hợp:
 
 ---
 
-## 8. Checklist trước khi áp dụng vào trade
+## Best Practices
+
+> [!summary]
+> Đây là các thói quen ở mức chuyên nghiệp / chuẩn prop-firm — thứ phân biệt trader áp dụng ICT 2022 Model một cách nhất quán, có kỷ luật, với trader chỉ biết lý thuyết nhưng thực thi tùy hứng. Mục tiêu cuối: qua được vòng đánh giá prop-firm và giữ được tài khoản funded lâu dài, không chỉ "biết mô hình".
+
+### Quy trình pre-session — map bias & liquidity TRƯỚC khi phiên bắt đầu
+
+- **Không phân tích phản ứng (reactive), luôn phân tích chủ động (proactive) trước phiên.** Việc map bias và pool thanh khoản phải hoàn tất TRƯỚC khi kill zone mở, không phải trong lúc giá đang chạy.
+- Trình tự pre-session đề xuất (làm 15–30 phút trước London Open hoặc NY AM):
+  1. Xem lại D1/H4: xác định Bias hiện tại, dealing range, premium/discount.
+  2. Đánh dấu sẵn TẤT CẢ pool thanh khoản còn "sống" trên H1/M15 (equal highs/lows, đỉnh/đáy phiên trước, old swing points) — cả hai phía, không chỉ phía đồng hướng bias.
+  3. Xác định trước 1–2 pool nào **nhiều khả năng bị sweep trước** (dựa trên khoảng cách, độ "đẹp" của equal highs/lows — pool càng rõ ràng, càng dễ hút giá).
+  4. Viết sẵn kịch bản Long và kịch bản Short vào Quick Reference Card (mục Appendix) trước khi phiên mở — kể cả kịch bản bạn cho là ít khả năng hơn.
+  5. Xác định kill zone sẽ theo dõi và **khung giờ dừng tìm setup mới** nếu không có gì xảy ra (tránh ngồi canh cả ngày).
+- Lợi ích: khi sweep + displacement thật sự xảy ra, bạn chỉ cần "khớp" với kịch bản đã viết sẵn thay vì phân tích trong áp lực thời gian thực — giảm mạnh sai số cảm tính.
+
+### Kỷ luật `missing_step` — biến thành nghi thức review hằng tuần
+
+- Trường `missing_step` (xem mục 13) không nên chỉ là một ô điền cho có. Biến nó thành **một nghi thức bắt buộc trong Weekly Review** (xem [[07 - Reviews]]):
+  - Cuối mỗi tuần, lọc toàn bộ lệnh thua/BE trong tuần, thống kê `missing_step` xuất hiện bao nhiêu lần cho mỗi giá trị (`sweep`, `displacement`, `retrace`, `target`, `none`).
+  - Nếu một giá trị chiếm >40% lệnh thua trong tuần → đây là **ưu tiên sửa số 1** của tuần kế tiếp, ghi thẳng vào note Weekly Review và gắn `[[Mistake - ...]]` tương ứng.
+  - Không cho phép để trống `missing_step` ở lệnh thua "vì lười điền" — thiếu dữ liệu này làm hỏng toàn bộ vòng lặp cải thiện dựa trên số liệu mà note này đang xây dựng.
+- Sau 4–6 tuần áp dụng nghi thức này liên tục, nên thấy tần suất một `missing_step` cụ thể giảm dần — đây là bằng chứng khách quan cho việc kỷ luật đang cải thiện, không chỉ "cảm thấy tốt hơn".
+
+### Kỳ vọng thực tế: bao nhiêu setup A+ mỗi ngày/tuần
+
+- Với một mô hình đòi hỏi đủ 7 bước (đặc biệt sweep + displacement hợp lệ theo khung ở mục 3), số setup A+ thật sự **hiếm hơn nhiều** so với số lần "trông giống" setup.
+- Kỳ vọng thực dụng theo thị trường:
+  - NQ1/NDX: khoảng **1–3 setup A+/ngày** trong kill zone chính (NY AM), có ngày 0.
+  - EURUSD/GBPUSD: khoảng **3–6 setup A+/tuần** trên mỗi cặp nếu chỉ săn trong London/NY kill zone.
+  - XAUUSD: thất thường hơn, phụ thuộc lịch tin — có tuần 1–2 setup rất sạch, có tuần gần như không có gì đạt chuẩn.
+- **Ép thêm lệnh để "đủ chỉ tiêu" phá hủy edge thống kê của toàn bộ hệ thống** — mỗi lệnh không đủ chuỗi 7 bước làm loãng win rate và R kỳ vọng đã được backtest, khiến số liệu thật của bạn không còn phản ánh đúng chất lượng mô hình. Số lệnh ít nhưng đúng chuẩn luôn tốt hơn số lệnh nhiều nhưng lẫn lộn.
+- Quy tắc thực dụng: đặt **giới hạn cứng số lệnh tối đa/ngày** (ví dụ 1–2 lệnh cho NQ1) và một khi đã chạm giới hạn, chuyển sang chế độ quan sát/ghi chép, không tìm thêm lý do để vào lệnh.
+
+### Scale confidence & size chỉ sau khi đã backtest đủ mẫu
+
+- Không tăng size hoặc confidence cho một biến thể/setup con (ví dụ: multi-leg continuation, Silver Bullet trong kill zone cụ thể, hoặc một market riêng như XAUUSD) chỉ dựa trên vài lệnh live "cảm thấy đúng".
+- Chuẩn tối thiểu trước khi tăng size: **≥ 30–50 mẫu backtest** cho đúng biến thể đó, ghi đầy đủ frontmatter theo chuẩn backtest của vault (`type: backtest`, `setup`, `entry_model`, `r_multiple`, `followed_plan`...) và tổng hợp qua [[04 - Backtesting/_Backtest Dashboard]].
+- Quy trình scale đề xuất:
+  1. Backtest ≥30–50 mẫu → xác nhận win rate và average R dương có ý nghĩa thống kê (không phải may mắn từ mẫu nhỏ).
+  2. Forward test với size tối thiểu (risk thấp hơn mức chuẩn ≤0.5%) trên tài khoản demo hoặc live nhỏ trong 15–20 lệnh tiếp theo.
+  3. Chỉ sau khi cả hai giai đoạn trên khớp với kỳ vọng đã backtest, mới tăng size về mức chuẩn ≤0.5%/lệnh.
+- Không bao giờ nhảy thẳng từ "lý thuyết đọc được" sang "trade full size" — đây là lỗi phổ biến nhất khiến trader mất tài khoản prop-firm ngay trong tháng đầu.
+
+### Amateur habits vs. Professional habits khi thực thi mô hình live
+
+| Khía cạnh | Amateur (nghiệp dư) | Professional (chuyên nghiệp / chuẩn prop-firm) |
+|---|---|---|
+| Chuẩn bị trước phiên | Mở chart khi kill zone đã bắt đầu, phân tích tại chỗ | Map bias + pool thanh khoản + kịch bản Long/Short xong trước khi kill zone mở |
+| Phản ứng với sweep | Vào lệnh ngay khi thấy giá quét đỉnh/đáy | Chờ displacement + MSS xác nhận sau sweep rồi mới hành động |
+| Phản ứng với displacement | Chase ngay khi thấy nến lớn | Chờ retrace về FVG (bước 6), không đuổi giá |
+| Đánh giá displacement | "Nến to là được" | Kiểm tra CLV, body/wick ratio, acceptance, FVG theo khung ở mục 3 |
+| Số lệnh/ngày | Trade nhiều để "kiếm cơ hội", ép setup yếu | Giới hạn cứng số lệnh A+/ngày, chấp nhận ngày 0 lệnh |
+| Sau lệnh thua | Vào lệnh gỡ ngay (revenge trade) | Dừng, ghi `missing_step`, chờ setup A+ tiếp theo đúng chuẩn |
+| Tăng size | Tăng size sau vài lệnh thắng liên tiếp "cảm thấy tự tin" | Chỉ tăng size sau ≥30–50 mẫu backtest + forward test xác nhận |
+| Review cuối tuần | Chỉ nhìn tổng P&L | Thống kê `missing_step`, `chained_fully`, `killzone` theo dữ liệu, không chỉ theo cảm giác |
+| Đa thị trường | Áp dụng y hệt một cách trade cho NQ1, FX, XAUUSD | Điều chỉnh size/kỳ vọng/kiên nhẫn theo đặc tính từng thị trường (mục 4) |
+| Multi-leg trong trend | Nhồi thêm lệnh chỉ vì "đang đúng trend" | Chỉ vào leg mới nếu có sweep + displacement riêng, re-map dealing range trước |
+
+> [!tip]
+> Nếu phải tóm gọn toàn bộ Best Practices thành một câu: **"Chuẩn bị trước, chờ đủ chuỗi, đo lường bằng số liệu — không phải cảm giác."**
+
+---
+
+## 9. Checklist trước khi áp dụng vào trade
 
 > [!warning] Không trade chỉ vì thấy một mảnh của mô hình
 > Phải đủ chuỗi. Một FVG hay một MSS đơn lẻ KHÔNG phải là ICT 2022 Model.
@@ -351,7 +528,7 @@ Khái niệm này tổng hợp:
 
 ---
 
-## 9. Lỗi thường gặp
+## 10. Lỗi thường gặp
 
 | Lỗi | Dấu hiệu | Vì sao nguy hiểm | Cách sửa |
 |---|---|---|---|
@@ -367,7 +544,7 @@ Khái niệm này tổng hợp:
 
 ---
 
-## 10. Câu hỏi tự kiểm tra
+## 11. Câu hỏi tự kiểm tra
 
 - Mình có đọc thuộc chuỗi 7 bước (Bias→Liquidity→Sweep→Displacement/MSS→FVG→Entry→Target) không?
 - Setup này đã đi qua đủ chuỗi chưa, đang thiếu bước nào?
@@ -380,7 +557,7 @@ Khái niệm này tổng hợp:
 
 ---
 
-## 11. Flashcards / Active Recall
+## 12. Flashcards / Active Recall
 
 ### Q1
 **Hỏi:** Chuỗi 7 bước của ICT 2022 Model là gì?
@@ -412,7 +589,7 @@ Khái niệm này tổng hợp:
 
 ---
 
-## 12. Liên kết với Trade Journal
+## 13. Liên kết với Trade Journal
 
 ### Lệnh áp dụng đúng khái niệm này
 ```dataview
@@ -453,7 +630,7 @@ missing_step: none # none | sweep | displacement | retrace | target
 
 ---
 
-## 13. Lesson Learned
+## 14. Lesson Learned
 
 ### Bài học chính
 - ICT 2022 Model là **một chuỗi có thứ tự**, không phải tập hợp tín hiệu rời.
@@ -474,7 +651,7 @@ missing_step: none # none | sweep | displacement | retrace | target
 
 ---
 
-## 14. Mức độ thành thạo
+## 15. Mức độ thành thạo
 
 | Tiêu chí | Điểm 1-5 | Ghi chú |
 |---|---:|---|

@@ -25,7 +25,7 @@ importance: 4
 confidence: 1
 last_reviewed:
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-03
 related_concepts:
   - "[[19 - Liquidity]]"
   - "[[20 - Liquidity Sweep]]"
@@ -249,12 +249,75 @@ common_mistakes: []
 > [!note]
 > Một mức SD bị "xuyên qua" **không có nghĩa projection sai** — nó có nghĩa target dịch sang **mức SD kế tiếp** (ví dụ -2 SD bị phá → kỳ vọng -2.5 / -3 SD). Đây là lý do nên chiếu cả bộ mức ngay từ đầu thay vì chỉ một mức.
 
+### Nâng cao — Chọn đúng manipulation leg khi có NHIỀU ứng viên (session Judas vs daily Judas vs weekly Judas)
+
+Trên cùng một chart, tại cùng một thời điểm, thường tồn tại **nhiều manipulation leg lồng nhau ở nhiều quy mô khác nhau**: một cú Judas swing nhỏ quanh giờ mở phiên trên M15, một cú Judas cấp ngày trên H1 (quét thanh khoản của ngày hôm trước), và một cú Judas cấp tuần trên H4/D1 (quét thanh khoản của tuần trước). Cả ba đều là manipulation leg "hợp lệ" theo định nghĩa (đều có sweep + displacement sau đó) — nhưng chúng **không tương đương nhau**, và neo SD vào sai tầng sẽ cho ra các mức chiếu chênh lệch nhau rất lớn, thậm chí mâu thuẫn hướng kỳ vọng ngắn hạn so với dài hạn.
+
+Vấn đề thực chiến: một trader đang tìm entry intraday (giữ lệnh vài giờ trong phiên) nhưng lại chiếu SD từ manipulation leg cấp tuần sẽ nhận về các mức target cách xa hàng trăm point — không bao giờ đạt được trong phiên, khiến TP đặt sai và quản trị lệnh rối loạn. Ngược lại, một trader đang giữ swing đa ngày nhưng chỉ chiếu SD từ Judas leg của một phiên London sẽ có target quá gần, chốt lời non trong khi cấu trúc lớn còn nhiều dư địa.
+
+**Quy tắc phân tầng: quy mô anchor phải khớp quy mô trade đang cầm.** Nếu bạn đang trade intraday (vào và thoát trong ngày), neo SD vào manipulation leg cấp session (Judas quét thanh khoản đầu phiên Á/London/NY trên M15-M5). Nếu bạn đang trade theo cấu trúc trong ngày nhưng kỳ vọng giữ 1-2 ngày, neo vào Judas cấp ngày (quét PDH/PDL trên H1). Nếu bạn đang trade swing đa ngày/tuần theo bias HTF, neo vào Judas cấp tuần (quét thanh khoản tuần trước trên H4/D1).
+
+![[StandardDeviation-Advanced-Manipulation-Tiers.svg]]
+*Ba manipulation leg lồng nhau trên cùng một price path: leg session (đỏ, M15) cho ladder SD nhỏ dùng cho target intraday; leg daily (cam, H1) cho ladder trung bình dùng cho target swing 1-2 ngày; leg weekly (xanh, H4/D1) cho ladder lớn dùng cho target đa ngày/tuần. Chọn sai tầng anchor sẽ cho target lệch hẳn quy mô trade đang cầm.*
+
+| Trade horizon | Manipulation leg nên anchor | Khung thời gian xem leg | Typical SD target scale |
+|---|---|---|---|
+| Scalp / intraday (thoát trong phiên) | Session Judas (quét liquidity đầu phiên Á/London/NY) | M15 / M5 | Vài chục point NQ1, vài pip EURUSD — target trong phiên |
+| Day trade giữ 1-2 ngày | Daily Judas (quét PDH/PDL, liquidity ngày hôm trước) | H1 | Trăm point NQ1, vài chục pip — target qua đêm/vài phiên |
+| Swing đa ngày / theo tuần | Weekly Judas (quét liquidity tuần trước, thường quanh Sunday/Monday range) | H4 / D1 | Vài trăm đến nghìn point NQ1, hàng chục-trăm pip — target đa ngày/tuần |
+
+> [!tip]
+> Khi không chắc nên dùng tầng nào, hỏi: **"Tôi định giữ lệnh này bao lâu?"** — câu trả lời quyết định tầng manipulation leg cần neo. Ghi rõ `anchor_scale: session|daily|weekly` trong journal để sau này đối chiếu xem tầng nào cho tỷ lệ giá "tới đích" cao nhất với phong cách trade của bạn.
+
+### Nâng cao — SD kết hợp với Liquidity Void: đoạn giá đi nhanh qua vùng trống thanh khoản
+
+Một chi tiết hay bị bỏ qua khi quản trị lệnh theo SD: **tốc độ giá tiếp cận một mức SD phụ thuộc vào cấu trúc giá nằm giữa entry và mức đó**, không chỉ vào bản thân mức SD. Khi một mức chiếu (ví dụ -2 SD) rơi vào hoặc ngay sau một **liquidity void** — một FVG lớn hoặc một vùng gần như không có nến/wick cũ (ít lệnh chờ, ít người mắc kẹt) — giá thường **lướt qua rất nhanh và ít bị cản** so với khi phải "cày" qua một vùng dày đặc cấu trúc cũ (consolidation, nhiều wick, nhiều order block chồng lấn).
+
+Hệ quả: một nhịp displacement hướng tới mức -2/-2.5 SD nằm sau một liquidity void thường trông như một cú "tăng tốc đột ngột" thay vì một nhịp trườn đều. Nhiều trader mới thấy giá chạy nhanh bất thường liền hoảng và **chốt lời non** vì nghĩ "giá chạy quá nhanh chắc sắp đảo" — trong khi thực ra đó chỉ là hành vi bình thường khi đi qua vùng trống thanh khoản, và target thật (nơi có confluence) còn ở xa hơn.
+
+Hàm ý quản trị lệnh cụ thể:
+- **Trước khi hoảng vì tốc độ giá, kiểm tra cấu trúc phía trước:** nếu đoạn giữa giá hiện tại và mức SD mục tiêu là một liquidity void / FVG lớn chưa lấp, kỳ vọng một cú di chuyển nhanh là BÌNH THƯỜNG — không phải tín hiệu đảo chiều.
+- **Ngược lại, nếu giá phải đi qua vùng dày cấu trúc cũ** (nhiều đỉnh/đáy nội bộ, order block chồng lấn) mà lại **chậm lại hoặc dừng sớm** trước khi chạm mức SD kỳ vọng, đó mới là dấu hiệu đáng chú ý — có thể là exhaustion, nên cân nhắc chốt một phần thay vì chờ đủ mức.
+- **Đừng dùng "tốc độ giá" một mình làm lý do thoát lệnh.** Luôn đối chiếu với: (1) đoạn phía trước là void hay dense structure, (2) đã có phản ứng thật (rejection/MSS ngược) tại mức nào chưa.
+
+| Cấu trúc phía trước mức SD | Kỳ vọng tốc độ | Hành vi quản trị lệnh hợp lý |
+|---|---|---|
+| Liquidity void / FVG lớn chưa lấp | Nhanh, ít cản trở | Giữ runner, không hoảng vì tốc độ; target thật vẫn ở xa hơn |
+| Vùng dày đặc cấu trúc cũ (consolidation, nhiều OB) | Chậm, dễ giằng co | Bình thường nếu vẫn tiến; đáng ngờ nếu dừng hẳn giữa chừng |
+| Giá chậm lại sớm bất thường trong một void | Không khớp kỳ vọng | Cảnh báo exhaustion — cân nhắc chốt một phần |
+| Giá tăng tốc bất thường qua vùng dày cấu trúc | Không khớp kỳ vọng (hiếm, thường do tin tức) | Kiểm tra news; có thể là breakout thật, không phải nhiễu |
+
+> [!warning]
+> Đừng nhầm "giá đi nhanh" với "giá sắp hết đà". Một cú di chuyển nhanh qua liquidity void là dấu hiệu **market đang làm đúng việc nó nên làm** (không có ai chặn đường); nó không tự động có nghĩa là gần target. Chỉ tin vào phản ứng thật (rejection có cấu trúc) tại một mức SD có confluence, không tin vào cảm giác "chạy nhanh quá rồi".
+
+### Nâng cao — SD Projection vs Fibonacci Extension truyền thống: giống và khác nhau ở đâu
+
+Về mặt cơ chế, SD Projection của ICT gần như giống hệt một **Fibonacci trend-based extension** cổ điển: cả hai đều lấy một đoạn giá tham chiếu (leg) rồi chiếu các bội số của nó ra phía trước để ước lượng target. Công cụ vẽ trên phần mềm charting thậm chí thường là cùng một công cụ ("trend-based Fib extension" / "Fib projection"). Vì vậy nhiều người mới học dễ nghĩ SD chỉ là "fib extension đổi tên".
+
+**Khác biệt cốt lõi nằm ở việc CHỌN LEG NÀO làm tham chiếu, chứ không nằm ở phép toán.** Fib extension truyền thống thường lấy **nhịp swing gần nhất, dễ thấy nhất** của cú di chuyển hiện tại (ví dụ: swing A-B-C gần đây nhất trên chart) — tiêu chí chọn chủ yếu là **độ rõ ràng và độ mới** của swing. Trong khi đó, SD Projection của ICT **cố tình neo vào manipulation/Judas leg** — đoạn giá đại diện cho "lời nói dối" trước khi thị trường tiết lộ "sự thật" (displacement thật). Tiêu chí chọn ở đây không phải là swing to nhất hay mới nhất, mà là swing **có ý nghĩa tường thuật** (narrative): nó phải là đoạn quét thanh khoản, gài bẫy phe yếu, trước khi giá đảo hướng thật.
+
+Vì hai công cụ đo cùng một kiểu bội số nhưng trên hai đoạn tham chiếu khác nhau, chúng thường cho ra **các mức target khác nhau** trên cùng một chart. Một số trader ICT tận dụng chính sự khác biệt này: **vẽ cả hai** — một fib extension cổ điển trên nhịp swing gần nhất VÀ một SD projection trên manipulation leg — rồi xem hai bộ mức có **trùng nhau ở đâu**. Vùng mà cả hai ladder hội tụ (thường lệch nhau một chút vì đo trên hai leg khác nhau, nhưng có thể rơi gần nhau) được xem là **confluence rất mạnh**, vì hai phương pháp đo độc lập cùng chỉ về một vùng giá.
+
+![[StandardDeviation-Advanced-vs-FibExtension.svg]]
+*Hai ladder chiếu trên cùng một price path: "Fib Extension" (xanh lá, neo trên nhịp swing gần nhất — tiêu chí là độ mới/độ rõ) và "ICT SD Projection" (xanh dương, neo trên manipulation/Judas leg — tiêu chí là ý nghĩa liquidity engineering). Vùng hai ladder gần trùng nhau (khung vàng) là confluence mạnh hơn hẳn so với khi chỉ một công cụ đứng riêng lẻ.*
+
+| Tiêu chí | Fibonacci Extension truyền thống | ICT SD Projection |
+|---|---|---|
+| Logic đo | Bội số đối xứng của một leg tham chiếu | Bội số đối xứng của một leg tham chiếu (giống) |
+| Tiêu chí chọn leg | Swing gần nhất / rõ nhất của nhịp hiện tại | Manipulation/Judas leg — đoạn quét thanh khoản trước displacement thật |
+| Ý nghĩa của leg | Kỹ thuật thuần túy (kích thước, vị trí) | Narrative (liquidity engineering — "lie" trước "truth") |
+| Use-case điển hình | Target cho bất kỳ nhịp trending nào | Target sau khi đã xác nhận AMD (accumulation-manipulation-distribution) |
+| Cách dùng kết hợp | Vẽ song song với SD, tìm vùng hai ladder trùng nhau | Vẽ song song với fib ext, ưu tiên mức có cả hai xác nhận |
+
+> [!example]
+> Nếu -2 SD (neo trên manipulation leg) và mức fib 1.618 extension (neo trên nhịp swing gần nhất) cùng rơi vào một vùng giá cách nhau vài point/pip, đó là tín hiệu confluence mạnh hơn nhiều so với việc chỉ có một trong hai mức đứng đơn độc — ghi lại các trường hợp này trong journal để đo xem confluence kép có thực sự nâng cao win-rate so với chỉ dùng một công cụ.
+
 ---
 
 ## 6. Ví dụ chart
 
 ### Ví dụ đúng
-![[StandardDeviation-Example-Correct.png]]
+![[StandardDeviation-Example-Correct.svg]]
 
 **Mô tả:**
 - Trong NY KZ, giá quét SSL (Judas swing xuống) tạo manipulation leg từ high [level] → low [level], rồi displacement tăng + MSS bullish.
@@ -269,7 +332,7 @@ common_mistakes: []
 - SD chỉ dùng để **đặt TP**, entry vẫn theo cấu trúc — đúng vai trò của công cụ.
 
 ### Ví dụ sai
-![[StandardDeviation-Example-Wrong.png]]
+![[StandardDeviation-Example-Wrong.svg]]
 
 **Mô tả:**
 - Trader neo SD vào một swing **không hề sweep liquidity** (chọn đại một đoạn để con số "đẹp").
@@ -283,7 +346,7 @@ common_mistakes: []
 - Luôn chờ cấu trúc (sweep + MSS) xác nhận trước khi tin vào projection.
 
 ### Giải phẫu SD Projection
-![[StandardDeviation-Anatomy.png]]
+![[StandardDeviation-Anatomy.svg]]
 
 **Mô tả:** Sơ đồ chú thích manipulation leg (anchor A→B), hướng displacement, và bộ mức -1/-2/-2.5/-3/-4 SD; đánh dấu mức nào trùng liquidity pool / FVG HTF làm target chính.
 
@@ -434,6 +497,29 @@ SORT date DESC
 - [ ] Đối chiếu: mức SD có confluence vs không confluence — mức nào "ăn" hơn.
 - [ ] Cập nhật [[01 - Roadmap]] và [[02 - Skill Metrics]].
 - [ ] Review lại note này sau 2 tuần, cập nhật `confidence` & `last_reviewed`.
+
+---
+
+## Best Practices
+
+> [!success] Nguyên tắc vàng
+> **SD chỉ trả lời "giá đi tới đâu", không bao giờ trả lời "vào lệnh ở đâu."** Toàn bộ giá trị của công cụ này sụp đổ nếu neo sai swing (không sweep) hoặc nếu bạn biến nó thành tín hiệu entry — hai lỗi này gộp lại là nguyên nhân của gần như mọi lệnh thua liên quan đến SD trong journal. Chỉ tin một mức SD khi nó vừa được neo đúng vào manipulation leg, vừa có confluence thật với liquidity/FVG/PD-array.
+
+1. **Không bao giờ dùng SD như tín hiệu entry.** SD là công cụ target/projection — nó cho biết nơi giá có khả năng đi tới, không phải nơi nên vào lệnh. Entry luôn phải đến từ chuỗi sweep → [[21 - Market Structure Shift]] → [[Fair Value Gap]]/OB độc lập với các mức SD. Đặt lệnh limit mù tại một mức SD (như trong "Ví dụ sai" ở mục 6) là lỗi khiến trader bỏ qua toàn bộ xác nhận cấu trúc.
+
+2. **Luôn neo vào một manipulation leg đã thực sự quét thanh khoản — không bao giờ là một swing tiện tay.** Trước khi vẽ SD, tự hỏi: đoạn A→B này có sweep [[19 - Liquidity]] (BSL/SSL) thật không, hay mình chỉ đang chọn một đoạn để các con số "nhìn đẹp"? Nếu không chắc, chạy phép thử tương tự phép thử sweep dùng trong [[22 - Mitigation Block]] và [[04 - BB - Breaker Block]]: xem body/close có thực sự vượt qua đỉnh/đáy cũ hay chỉ là wick.
+
+3. **Khớp quy mô anchor với quy mô trade đang cầm** (xem mục "Nâng cao — Chọn đúng manipulation leg" ở mục 5). Trade intraday neo vào Judas leg cấp session; trade giữ 1-2 ngày neo vào Judas cấp ngày; swing đa ngày/tuần neo vào Judas cấp tuần. Ghi trường `anchor_scale` trong journal để không lẫn lộn giữa các quy mô khi review.
+
+4. **Chỉ tin những mức SD có confluence thật — bỏ qua các mức "treo lơ lửng".** Một mức SD đứng một mình giữa khoảng trống giá không có giá trị dự báo cao hơn một con số tròn ngẫu nhiên. Chỉ nâng mức đó lên thành target chính khi nó trùng với một liquidity pool, một [[Fair Value Gap]] đối nghịch, hoặc biên [[12 - Dealing Range]] / [[27 - Premium Discount]] đã đánh dấu từ trước ở khung HTF.
+
+5. **Nhận diện liquidity void trước khi phản ứng với tốc độ giá.** Khi giá lướt nhanh bất thường về phía một mức SD xa, kiểm tra xem đoạn phía trước có phải một FVG lớn / vùng trống thanh khoản hay không (xem mục "Nâng cao — SD kết hợp với Liquidity Void"). Di chuyển nhanh qua void là bình thường; đừng chốt lời non chỉ vì giá "chạy nhanh quá". Ngược lại, dừng sớm bất thường khi đi qua vùng dày cấu trúc mới là tín hiệu đáng ngờ.
+
+6. **Luôn chiếu cả bộ ladder (-1 đến -4 SD) ngay từ đầu, không chỉ một mức.** Khi một mức bị đóng nến xuyên qua mà không có phản ứng, target không "sai" — nó dịch sang mức kế tiếp. Có sẵn cả bộ mức giúp bạn phản ứng ngay (dời TP, giữ runner) thay vì phải vẽ lại giữa lúc thị trường đang di chuyển.
+
+7. **Cân nhắc vẽ thêm một fib extension cổ điển trên nhịp swing gần nhất để đối chiếu** (xem mục "Nâng cao — SD Projection vs Fibonacci Extension"). Vùng mà cả hai công cụ đo độc lập cùng hội tụ là confluence mạnh hơn một công cụ đứng một mình — đặc biệt hữu ích khi manipulation leg không thật sự rõ ràng.
+
+8. **Backtest tối thiểu 15-20 mẫu trước khi tin cậy hoàn toàn vào SD**, ghi lại trong journal: chất lượng anchor leg (có sweep rõ hay mơ hồ), mức SD nào thực sự có confluence, và mức SD nào giá thực sự dừng/đảo. Thống kê theo từng thị trường (NQ1/NDX, EURUSD, GBPUSD, XAUUSD) vì hành vi tại các mức SD có thể khác nhau đáng kể giữa index và forex. Đối chiếu kết quả với [[02 - Skill Metrics]] và cập nhật `confidence` của note này sau mỗi đợt review.
 
 ---
 

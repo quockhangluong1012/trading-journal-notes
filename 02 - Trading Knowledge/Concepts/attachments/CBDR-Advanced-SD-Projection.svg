@@ -1,0 +1,69 @@
+<svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="560" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#1F2937">CBDR — Standard Deviation Projection (thang SD)</text>
+  <text x="24" y="52" font-size="13" fill="#6B7280">Đo range CBDR (theo thân nến) làm đơn vị, rồi chiếu ±1/±2/±3 SD. Mỗi SD = đúng 1× chiều cao range.</text>
+
+  <rect x="24" y="66" width="712" height="470" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- CBDR range band in the middle -->
+  <rect x="240" y="278" width="150" height="44" fill="#374151" opacity="0.12" stroke="#374151" stroke-width="1.2"/>
+  <text x="248" y="294" font-size="10.5" font-weight="700" fill="#374151">CBDR range (body)</text>
+  <text x="248" y="308" font-size="10" fill="#6B7280">high–low ~40 pip = 1 đơn vị SD</text>
+  <line x1="240" y1="278" x2="704" y2="278" stroke="#374151" stroke-width="1.4"/>
+  <line x1="240" y1="322" x2="704" y2="322" stroke="#374151" stroke-width="1.4"/>
+  <text x="640" y="274" font-size="9.5" fill="#6B7280">CBDR high (0 SD)</text>
+  <text x="640" y="336" font-size="9.5" fill="#6B7280">CBDR low (0 SD)</text>
+
+  <!-- vertical measure bracket showing one unit -->
+  <line x1="200" y1="278" x2="200" y2="322" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="196" y1="278" x2="204" y2="278" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="196" y1="322" x2="204" y2="322" stroke="#1D4ED8" stroke-width="1.6"/>
+  <text x="150" y="304" font-size="10" font-weight="700" fill="#1D4ED8">1× range</text>
+
+  <!-- SD levels ABOVE (bullish) - green -->
+  <!-- +1 SD -->
+  <line x1="240" y1="234" x2="704" y2="234" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="248" y="229" font-size="10.5" font-weight="700" fill="#15803D">+1 SD</text>
+  <text x="300" y="229" font-size="9.5" fill="#166534">target trung gian</text>
+  <!-- +2 SD -->
+  <line x1="240" y1="190" x2="704" y2="190" stroke="#16A34A" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <text x="248" y="185" font-size="10.5" font-weight="700" fill="#15803D">+2 SD</text>
+  <rect x="520" y="176" width="180" height="22" rx="4" fill="#16A34A" opacity="0.14"/>
+  <text x="528" y="191" font-size="10" font-weight="700" fill="#15803D">+2 SD trùng BSL = TARGET CHÍNH</text>
+  <!-- +3 SD -->
+  <line x1="240" y1="146" x2="704" y2="146" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="248" y="141" font-size="10.5" font-weight="700" fill="#15803D">+3 SD</text>
+  <text x="300" y="141" font-size="9.5" fill="#166534">chỉ khi momentum rất mạnh</text>
+
+  <!-- SD levels BELOW (bearish) - red -->
+  <!-- -1 SD -->
+  <line x1="240" y1="366" x2="704" y2="366" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="248" y="380" font-size="10.5" font-weight="700" fill="#B91C1C">-1 SD</text>
+  <text x="300" y="380" font-size="9.5" fill="#991B1B">vùng manipulation kỳ vọng</text>
+  <!-- -2 SD -->
+  <line x1="240" y1="410" x2="704" y2="410" stroke="#DC2626" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <text x="248" y="424" font-size="10.5" font-weight="700" fill="#B91C1C">-2 SD</text>
+  <text x="300" y="424" font-size="9.5" fill="#991B1B">invalid nếu đóng nến vượt (ngược bias bullish)</text>
+  <!-- -3 SD -->
+  <line x1="240" y1="454" x2="704" y2="454" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="248" y="468" font-size="10.5" font-weight="700" fill="#B91C1C">-3 SD</text>
+
+  <!-- equal-spacing ticks on left axis showing each = 1 range height -->
+  <g stroke="#9CA3AF" stroke-width="1">
+    <line x1="112" y1="146" x2="112" y2="454"/>
+  </g>
+  <g font-size="9" fill="#9CA3AF">
+    <line x1="108" y1="146" x2="116" y2="146" stroke="#9CA3AF"/>
+    <line x1="108" y1="190" x2="116" y2="190" stroke="#9CA3AF"/>
+    <line x1="108" y1="234" x2="116" y2="234" stroke="#9CA3AF"/>
+    <line x1="108" y1="278" x2="116" y2="278" stroke="#9CA3AF"/>
+    <line x1="108" y1="322" x2="116" y2="322" stroke="#9CA3AF"/>
+    <line x1="108" y1="366" x2="116" y2="366" stroke="#9CA3AF"/>
+    <line x1="108" y1="410" x2="116" y2="410" stroke="#9CA3AF"/>
+    <line x1="108" y1="454" x2="116" y2="454" stroke="#9CA3AF"/>
+  </g>
+  <text x="60" y="304" font-size="9.5" fill="#9CA3AF" transform="rotate(-90 60 304)" text-anchor="middle">mỗi khoảng = 1× chiều cao range</text>
+
+  <rect x="24" y="510" width="712" height="22" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="525" font-size="11" font-weight="700" fill="#92400E">Nguyên tắc: giá thường tôn trọng +1/+2 SD; không kỳ vọng chạm mọi SD. Bias bullish → ưu tiên phía trên.</text>
+</svg>

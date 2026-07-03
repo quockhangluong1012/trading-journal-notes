@@ -15,9 +15,9 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[ICT 2022 Model]]"
 markets:
-  - NDX
+  - NDX/NQ1
   - EURUSD
   - GBPUSD
   - XAUUSD
@@ -25,18 +25,18 @@ importance: 4
 confidence: 2
 last_reviewed: 2026-06-29
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-03
 related_concepts:
+  - "[[20 - Liquidity Sweep]]"
+  - "[[21 - Market Structure Shift]]"
   - "[[13 - FVG  - Fair Value Gap]]"
   - "[[10 - Consequent Encroachment (Mean Threshold)]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[20 - Liquidity Sweep]]"
   - "[[17 - Inverse Fair Value Gap - iFVG]]"
+  - "[[25 - OB - Order Block]]"
   - "[[26 - OTE - Optimal Trade Entry]]"
-  - "[[32 - Top-down Analysis (Multiple Timeframes)]]"
 prerequisites:
-  - "[[21 - Market Structure Shift]]"
   - "[[20 - Liquidity Sweep]]"
+  - "[[21 - Market Structure Shift]]"
   - "[[13 - FVG  - Fair Value Gap]]"
 common_mistakes: []
 ---
@@ -75,6 +75,22 @@ Aggressive Displacement Entry là cách tìm điểm vào lệnh khi sau chuỗi
 - Không phải phủ định FVG — mà là chọn **FVG/PD array đúng vị trí** (cao hơn, nhỏ hơn).
 - Không phải bỏ stop logic — stop vẫn dưới swing/điểm sweep gần nhất.
 - Không phải mọi displacement đều "aggressive" — chỉ áp dụng khi lực đẩy thật sự mạnh và retrace nông.
+
+### Cơ sở Order Flow / Auction Market
+
+![[AggressiveDisplacement-Anatomy-Comparison.png]]
+*Chú thích: đây là sơ đồ minh hoạ/khái niệm (KHÔNG phải chart thật) — hãy vẽ lại hoặc dán ảnh chụp có chú thích thật của bạn. Bố cục gợi ý: bên trái vẽ một move "retrace bình thường" quay đầy đủ về đáy FVG; bên phải vẽ một move "aggressive displacement" với chuỗi nến thân lớn liên tiếp, retrace chỉ chạm CE rồi tiếp tục đi — dùng cùng một trục giá để đối chiếu trực quan độ nông/sâu của hai kiểu retrace.*
+
+**Vì sao displacement mạnh tạo ra retrace nông — nhìn qua lăng kính order flow:**
+
+Theo lý thuyết thị trường đấu giá (Auction Market Theory), mỗi mức giá chỉ "được xác nhận" là hợp lý khi có đủ hai bên đồng ý giao dịch tại đó (thể hiện qua khối lượng khớp lệnh). Một displacement aggressive là hệ quả của sự **mất cân bằng thanh khoản nghỉ (resting liquidity)** giữa hai phía order book:
+
+- **Lệnh thị trường (market orders) áp đảo một chiều:** khi sweep xảy ra và MSS xác nhận, dòng lệnh market mua/bán dồn dập theo một hướng, "ăn" hết các lệnh giới hạn (limit orders) đang chờ ở phía đối diện (offers khi tăng, bids khi giảm) qua nhiều mức giá liên tiếp mà không có đủ thanh khoản đối ứng để hấp thụ hết lực đẩy — dẫn tới các nến thân lớn, ít wick đối nghịch.
+- **Delivery giá "một chiều" và không hiệu quả (inefficient one-sided delivery):** vì lệnh limit hai chiều không đủ dày ở các mức trung gian, giá "nhảy" qua các vùng đó để lại FVG/imbalance — đây chính là dấu hiệu thị trường **chấp nhận một mức chiết khấu (discount) hoặc premium lớn hơn bình thường** chỉ trong một nhịp, thay vì thương lượng dần từng bước như trong một move "bình thường".
+- **Hệ quả cho retrace:** vì phần lớn thanh khoản giới hạn hai chiều đã bị quét sạch trong chính cú displacement, không còn nhiều lệnh chờ "kéo" giá quay lại sâu vào vùng FVG gốc. Giá chỉ cần lùi về **CE** — nơi đại diện cho "giá trị hợp lý trung bình" của cú đẩy — là đã đủ để bên tổ chức tiếp tục nhiệm vụ chính: dẫn giá về draw on liquidity. Đây là lý do tại sao "chờ fill sâu" thường vô nghĩa trong bối cảnh này.
+
+> [!info] Diễn giải ngắn gọn
+> Retrace nông không phải "may mắn" — nó là hệ quả trực tiếp của việc thanh khoản đối ứng đã bị tiêu thụ gần hết ngay trong cú displacement. Thị trường không cần trả giá về vùng cũ vì không còn nhiều ai chờ giao dịch ở đó.
 
 ---
 
@@ -117,6 +133,22 @@ Aggressive Displacement Entry là cách tìm điểm vào lệnh khi sau chuỗi
 - Không có FVG/OB nào ở M1 để bấu víu → entry thiếu logic.
 - Giá đã đi quá xa, retrace nông vẫn cho R:R kém.
 
+### Sắc thái theo từng thị trường (NQ1/NDX vs EURUSD/GBPUSD vs XAUUSD)
+
+![[AggressiveDisplacement-Recognition.png]]
+*Chú thích: sơ đồ minh hoạ/khái niệm (KHÔNG phải chart thật) — hãy thay bằng ảnh chụp thật của bạn. Gợi ý bố cục: một chart annotated với 3-4 nến thân lớn liên tiếp được khoanh vùng, ghi chú "body ≥ X × ATR", đường CE kẻ ngang đậm tại 50% của FVG lớn, và một mũi tên nhỏ đánh dấu điểm retrace nông dừng lại đúng tại CE — kèm ô chú thích "micro sweep + micro MSS tại đây" nếu có.*
+
+"Aggressive" không có một ngưỡng cố định — nó phụ thuộc vào đặc tính biến động và cấu trúc phiên của từng thị trường. Dưới đây là kim chỉ nam thực chiến cho 4 thị trường trong phạm vi giao dịch:
+
+| Thị trường | Bối cảnh sinh displacement mạnh | Ngưỡng gợi ý để gọi là "aggressive" | Lưu ý thực chiến |
+|---|---|---|---|
+| **NQ1 / NDX (NAS100)** | Spike do thuật toán/tin tức trong Kill Zone London/NY, phá cấu trúc quanh mở cửa RTH | Thân nến (body) **≥ 1.5× ATR(14) trên M5**; chuỗi ≥2-3 nến cùng hướng, wick đối nghịch rất nhỏ | Biến động cao, dễ có nến "outlier" do thanh khoản mỏng — luôn đối chiếu với volume/tick nếu có; retrace thường nông nhất trong 3 thị trường vì tốc độ thuật toán cao |
+| **EURUSD / GBPUSD** | Momentum bùng nổ theo phiên, đặc biệt quanh **London Open** hoặc tin vĩ mô (NFP, CPI, lãi suất) | Thân nến **≥ 1.2–1.3× ATR(14) trên M5**; đủ để vượt trội rõ rệt so với biến động trung bình phiên Á trước đó | Move mạnh ở FX chính thường "sạch" hơn (ít nhiễu) nhưng biên độ tuyệt đối nhỏ hơn NQ1 — cần nhìn tương quan ATR chứ không nhìn số pip tuyệt đối |
+| **XAUUSD (Gold)** | Spike quanh CPI/NFP/FOMC hoặc risk-off/risk-on đột ngột; average true range/ngày vốn đã lớn hơn nhiều so với FX | Thân nến **≥ 1.5–2× ATR(14) trên M5** vì range nền đã rộng — ngưỡng thấp hơn dễ nhầm biến động thường ngày với "aggressive" thật | Spread giãn mạnh quanh tin; chờ nến đóng cửa ổn định trước khi tin vào retrace nông là thật, tránh nhầm spike thanh khoản mỏng với displacement có sponsorship thật |
+
+> [!warning] Ngưỡng ATR chỉ là điểm khởi đầu, không phải luật cứng
+> Các hệ số ATR trên là gợi ý để bắt đầu backtest cá nhân — hãy tự đo lại trên dữ liệu thật của từng thị trường/khung giờ bạn giao dịch và điều chỉnh. Đừng áp dụng máy móc một con số cho mọi phiên hay mọi giai đoạn biến động.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -140,6 +172,31 @@ Aggressive Displacement Entry là cách tìm điểm vào lệnh khi sau chuỗi
 - Lý tưởng: M1 tạo một micro sweep + micro MSS tại vùng đó → xác nhận entry.
 - Đặt limit tại **CE của FVG M5** hoặc tại M1 FVG/OB; stop dưới swing/điểm sweep gần nhất.
 - Nếu giá không chạm CE → move quá mạnh, **không đuổi**, chờ leg tiếp theo.
+
+### Trường hợp không có M1 PD Array & tương tác với CE / iFVG
+
+![[AggressiveDisplacement-MTF-Refine-Flow.png]]
+*Chú thích: sơ đồ flow từng bước (KHÔNG phải chart thật) — hãy thay bằng lưu đồ/ảnh chụp thật của bạn. Gợi ý bố cục dạng flowchart dọc: Khối 1 "Xác nhận displacement aggressive" → Khối 2 "Tính CE của FVG M5" → Khối 3 rẽ nhánh "Có M1 FVG/OB trong leg retrace?" → nhánh YES dẫn tới "Refine entry tại M1 PD array + micro MSS", nhánh NO dẫn tới khối quyết định ở phần mô tả bên dưới (chờ leg tiếp theo / chấp nhận FVG sâu hơn) → khối cuối "Entry hoặc No-trade".*
+
+Có những leg retrace nông đến mức **không để lại bất kỳ FVG hay Order Block nào ở M1** — toàn bộ cú hồi chỉ là 1-2 nến nhỏ không tạo imbalance rõ ràng. Đây là tình huống dễ khiến trader "đoán mò" một vùng entry không có cơ sở. Cây quyết định xử lý:
+
+1. **Kiểm tra lại CE của FVG M5 trước tiên.** Nếu giá đã chạm hoặc đi vào vùng lân cận CE mà không có M1 PD array, CE vẫn có thể dùng làm vùng entry độc lập (không bắt buộc phải có xác nhận M1) — miễn là đã có sweep + MSS hợp lệ trước đó. Đây là lựa chọn ưu tiên nếu CE nằm ở vị trí hợp lý về R:R.
+2. **Nếu giá còn cách CE khá xa và không có M1 PD array:** đừng vào lệnh dựa trên "cảm giác" — hai lựa chọn hợp lệ:
+   - **(a) Chờ leg tiếp theo:** đứng ngoài, để giá tiếp tục di chuyển; một leg đẩy mới thường sẽ để lại một FVG/OB mới rõ ràng hơn để refine. Đây là lựa chọn kỷ luật mặc định khi không chắc chắn.
+   - **(b) Chấp nhận một FVG sâu hơn nhưng vẫn hợp lệ:** nếu có một FVG ở khung M5 (không phải M1) nằm gần CE và vẫn còn "trẻ" (chưa bị lấp một phần đáng kể), có thể dùng FVG đó thay vì cố tìm một PD array M1 không tồn tại — miễn là entry vẫn nằm **trên/dưới CE theo đúng hướng an toàn hơn** (tức không sâu hơn đáy FVG M5 gốc) và R:R vẫn đạt tối thiểu theo kế hoạch.
+   - **Không hợp lệ:** tự vẽ một "FVG" giả hoặc dùng một mức giá bất kỳ chỉ vì "nhìn có vẻ đẹp" — đây là hành vi đoán, không phải phân tích.
+
+**Tương tác với [[10 - Consequent Encroachment (Mean Threshold)]]:**
+CE là ngưỡng entry kỳ vọng tối thiểu trong toàn bộ concept này. Khi không có M1 PD array, CE trở thành **tuyến phòng thủ chính** — nếu giá không chạm được cả CE, đó là bằng chứng move quá mạnh để tham gia bằng limit order, và quy tắc "không đuổi" áp dụng nghiêm ngặt.
+
+**Tương tác với [[17 - Inverse Fair Value Gap - iFVG]]:**
+Có một tình huống nâng cao đáng chú ý: nếu giá **chạm CE nhưng sau đó đóng nến xuyên ngược qua CE** (tức thất bại giữ vùng entry kỳ vọng) và tiếp tục đóng cửa ở phía "sai" của FVG M5 gốc, bản thân FVG đó có thể **đảo vai trò**:
+- Nếu giá không chỉ chạm CE mà còn đóng cửa xuyên qua **toàn bộ FVG** theo hướng ngược lại với bias ban đầu, FVG gốc (vốn được kỳ vọng là vùng nâng đỡ/kháng cự) có thể **flip thành iFVG** — nghĩa là vùng đó bây giờ đóng vai trò ngược lại (kháng cự nếu trước đó là hỗ trợ, và ngược lại).
+- Về logic quyết định: (1) nếu chỉ chạm/xuyên nhẹ CE rồi bật lại đúng hướng ban đầu → vẫn là retrace nông hợp lệ, cứ theo kế hoạch entry gốc; (2) nếu đóng cửa dứt khoát xuyên qua toàn bộ FVG và giữ giá ở phía đối diện → coi setup gốc **đã bị vô hiệu hóa (invalidated)**, và đánh giá lại toàn bộ FVG đó như một iFVG/breaker tiềm năng cho hướng ngược lại — cần một MSS mới theo hướng ngược để xác nhận, không tự động đảo lệnh chỉ vì giá xuyên qua.
+- Không nhầm lẫn "test CE rồi tiếp diễn" (bình thường, dự kiến được) với "đóng cửa xuyên hẳn FVG" (invalidation thật) — ranh giới là **acceptance** (đóng nến ổn định phía bên kia), không phải một wick xuyên qua tạm thời.
+
+> [!warning] Đừng tự động đảo lệnh khi CE thất bại
+> CE thất bại không tự động nghĩa là "vào lệnh ngược". Nó nghĩa là **thoát khỏi setup gốc** và chờ cấu trúc mới (MSS ngược hướng) xác nhận trước khi coi vùng đó là iFVG/breaker khả dụng.
 
 ```text
 Mẫu ghi nhanh — Aggressive Displacement (Long)
@@ -171,7 +228,7 @@ No-trade: displacement yếu / hết room / không có M1 PD array
 ## 6. Ví dụ chart
 
 ### Ví dụ đúng — SSL sweep → MSS → displacement mạnh, retrace nông
-![[paste-image-here.png]]
+![[AggressiveDisplacement-Example-Correct-ShallowRetrace.png]]
 
 **Mô tả:**
 Giá quét SSL (đáy, blue line), tạo MSS phá lower-high bằng displacement rất mạnh. FVG M5 to/thấp được đánh dấu nhưng giá **không quay về** — chỉ retrace nông tới CE của một FVG cao hơn rồi tiếp tục mở rộng lên. Entry hợp lý là CE FVG M5 / M1 FVG, không phải đáy FVG to.
@@ -182,7 +239,7 @@ Giá quét SSL (đáy, blue line), tạo MSS phá lower-high bằng displacement
 - Không chase tại đỉnh leg.
 
 ### Ví dụ sai / dễ nhầm — chờ fill sâu vào FVG to nhất
-![[paste-image-here.png]]
+![[AggressiveDisplacement-Example-Wrong-WaitedFullFVG.png]]
 
 **Mô tả lỗi:**
 Đặt limit ở đáy FVG to/thấp nhất ngay sau MSS. Giá chỉ retrace nông rồi đi tiếp → limit không bao giờ được khớp → bỏ lỡ một move đúng narrative. Sau đó FOMO chase ở giá xấu.
@@ -215,7 +272,70 @@ HTF Bias → Sweep (SSL/BSL) → MSS → Displacement MẠNH
 
 ---
 
-## 8. Checklist trước khi áp dụng vào trade
+## 8. Best Practices
+
+> [!tip] Pre-plan khả năng displacement aggressive TRƯỚC khi nó xảy ra
+> Trader chuyên nghiệp không đợi thấy displacement mạnh rồi mới nghĩ cách xử lý — họ chuẩn bị sẵn **hai kịch bản entry** ngay từ lúc đánh dấu POI, trước khi biết move sẽ mạnh hay yếu:
+> - **Kịch bản A (di sản/mặc định):** limit tại đáy FVG M5 nếu displacement chỉ ở mức bình thường.
+> - **Kịch bản B (contingency cho aggressive):** limit dự phòng tại **CE của FVG M5**, cộng kế hoạch hạ M1 để tìm FVG/OB refine nếu retrace nông hơn dự kiến.
+> Việc chuẩn bị sẵn cả hai giúp loại bỏ độ trễ ra quyết định — khi retrace thực sự nông, trader không mất thời gian "nghĩ lại từ đầu" mà chuyển thẳng sang kịch bản B đã lên sẵn.
+
+**Bảng pre-plan trước khi displacement xảy ra:**
+
+| Bước chuẩn bị | Nội dung | Thời điểm thực hiện |
+|---|---|---|
+| 1. Đánh dấu FVG M5 gốc | Xác định range đầy đủ ngay khi displacement leg hình thành | Ngay sau khi MSS được xác nhận |
+| 2. Tính sẵn CE | Tính CE (50%) của FVG M5 làm limit dự phòng | Cùng lúc với bước 1, không chờ retrace xảy ra |
+| 3. Xác định vùng "quan sát M1" | Khoanh vùng giá (giữa đỉnh leg và CE) sẽ hạ M1 nếu retrace nông | Trước khi giá bắt đầu retrace |
+| 4. Đặt ngưỡng "aggressive" cá nhân | Dùng bảng ATR theo thị trường (xem mục 3) để biết khi nào chuyển sang kịch bản B | Trong giai đoạn phân tích HTF, trước phiên |
+| 5. Quyết định trước "điểm bỏ cuộc" | Xác định trước: nếu giá không chạm cả CE thì bỏ, không đuổi | Trước khi vào lệnh, không phải lúc đang hồi hộp chờ fill |
+
+**Position-management nuance — entry nông thay đổi bài toán R:R và size như thế nào:**
+
+Vì entry tại CE/M1 PD array nằm **cao hơn (gần đỉnh leg hơn)** so với entry tại đáy FVG M5, khoảng cách từ entry tới stop (dưới swing/điểm sweep) **ngắn hơn** so với kịch bản chờ fill sâu. Điều này có hệ quả trực tiếp lên quản lý vị thế — xem thêm cách tính pip/lot/margin cụ thể tại [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]]:
+
+| Yếu tố | Entry tại đáy FVG (giả định, thường KHÔNG khớp trong move aggressive) | Entry tại CE / M1 refine (thực tế trong move aggressive) |
+|---|---|---|
+| Khoảng cách entry → stop | Rộng hơn (entry thấp, stop vẫn ở cùng một mức dưới swing) | **Hẹp hơn** (entry cao hơn, cùng mức stop) |
+| R:R tại cùng một target | Thấp hơn (mẫu số R rộng hơn) | **Cao hơn** (mẫu số R hẹp hơn, cùng khoảng cách tới target) |
+| Position size ở cùng mức rủi ro ≤0.5% | Size nhỏ hơn (SL rộng hơn tính theo pip/point) | **Size có thể lớn hơn** một chút cho cùng mức rủi ro tiền tệ, vì SL tính theo pip/point hẹp hơn — nhưng vẫn phải tuân thủ trần rủi ro ≤0.5%/lệnh, không "tận dụng" SL hẹp để tăng risk% |
+| Độ nhạy với slippage | Thấp hơn tương đối (biên rộng hơn) | Cao hơn tương đối — SL hẹp hơn dễ bị ảnh hưởng bởi spread/slippage, đặc biệt trên XAUUSD hoặc quanh tin |
+
+> [!warning] SL hẹp hơn không có nghĩa là "risk tự do tăng size"
+> Nhiều trader nhầm lẫn: vì SL (tính theo pip) hẹp hơn khi entry ở CE/M1, họ tăng size để "risk vẫn ra cùng số tiền nhưng khối lượng lớn hơn". Điều này đúng về mặt toán học miễn là **vẫn tuân thủ đúng ≤0.5% vốn/lệnh** — tuyệt đối không tăng risk% chỉ vì SL hẹp hơn, và luôn cộng thêm biên an toàn cho spread/slippage khi tính size trên SL hẹp.
+
+**Checklist backtest dành riêng cho Aggressive Displacement Entry:**
+
+| Trường log | Mô tả |
+|---|---|
+| Tỉ lệ body/range của nến displacement | Đo body-to-range ratio của (các) nến displacement chính — dùng để định lượng "mức độ aggressive" thay vì đánh giá cảm tính |
+| Độ sâu retrace (%) | Retrace dừng lại ở bao nhiêu % của FVG M5 (0% = không hồi, 50% = đúng CE, 100% = lấp hết) |
+| CE hay M1 array được dùng | Ghi rõ entry cuối cùng dựa trên CE của FVG M5 hay một FVG/OB ở M1 |
+| Có micro sweep + micro MSS ở M1 không | Có/không — dùng để đánh giá chất lượng xác nhận entry |
+| Kết quả | Thắng/Thua/BE, R đạt được, có vi phạm checklist nào không |
+
+**Trường dữ liệu khuyến nghị đưa vào nhật ký (journaling fields):**
+- Thị trường, khung hình thành displacement, khung entry thực tế (CE M5 hay M1).
+- Body-to-range ratio của nến displacement chính, và hệ số so với ATR(14) tại thời điểm đó (đối chiếu bảng ở mục 3).
+- Độ sâu retrace thực tế (%) so với FVG M5 gốc.
+- Có/không có M1 PD array; nếu không có, đã chọn nhánh nào trong cây quyết định ở mục 4 (chờ leg tiếp theo hay chấp nhận FVG sâu hơn).
+- R:R kế hoạch vs R:R thực tế, và size lệnh so với mức rủi ro ≤0.5%.
+- Liên kết [[06 - Mistake Database]] nếu có vi phạm (chase, dời SL, vào không có xác nhận...).
+
+**Bảng đối chiếu: thói quen nghiệp dư vs thói quen chuyên nghiệp khi move không quay về FVG rõ ràng**
+
+| Tình huống | Thói quen nghiệp dư | Thói quen chuyên nghiệp |
+|---|---|---|
+| Giá không hồi về FVG M5 như kỳ vọng | Tiếp tục chờ, hi vọng giá sẽ quay lại | Nhận diện ngay đây có thể là displacement aggressive, chuyển sang kịch bản B (CE/M1) đã pre-plan |
+| Thấy giá đã chạy xa mà chưa vào lệnh | FOMO chase market ngay tại thời điểm phát hiện | Chờ leg tiếp theo hoặc chấp nhận bỏ lệnh, không đuổi giá |
+| Không có FVG/OB ở M1 trong leg retrace | Tự vẽ một vùng "nhìn có vẻ hợp lý" để có lý do vào lệnh | Áp dụng cây quyết định ở mục 4: dùng CE độc lập, chờ leg mới, hoặc chấp nhận FVG M5 sâu hơn có kiểm soát |
+| Tính size lệnh khi SL hẹp hơn (entry tại CE/M1) | Giữ nguyên số lot cố định mọi lúc, không tính lại risk% | Tính lại size theo khoảng cách SL mới, giữ đúng rủi ro ≤0.5%, có biên an toàn cho slippage |
+| CE thất bại (giá xuyên ngược qua CE) | Vẫn cố giữ lệnh hoặc vào ngược ngay lập tức mà không chờ xác nhận | Thoát khỏi setup gốc, chờ MSS ngược hướng xác nhận trước khi coi vùng đó là iFVG/breaker (xem mục 4) |
+| Backtest concept này | Chỉ nhớ vài lần "đúng đẹp" rồi tin tưởng tuyệt đối | Log đầy đủ body-to-range ratio, độ sâu retrace, loại PD array dùng, và kết quả theo bảng ở trên |
+
+---
+
+## 9. Checklist trước khi áp dụng vào trade
 
 > [!warning] Không trade chỉ vì thấy displacement mạnh
 > Aggressive Displacement Entry chỉ hợp lệ trong đúng context sweep + MSS + còn room. Đừng dùng nó để biện minh cho việc chase.
@@ -230,7 +350,7 @@ HTF Bias → Sweep (SSL/BSL) → MSS → Displacement MẠNH
 
 ---
 
-## 9. Lỗi thường gặp
+## 10. Lỗi thường gặp
 
 | Lỗi | Dấu hiệu | Cách sửa |
 |---|---|---|
@@ -242,7 +362,7 @@ HTF Bias → Sweep (SSL/BSL) → MSS → Displacement MẠNH
 
 ---
 
-## 10. Câu hỏi tự kiểm tra
+## 11. Câu hỏi tự kiểm tra
 
 - Move này thật sự aggressive (body lớn, retrace nông) hay chỉ là displacement bình thường?
 - CE của FVG M5 nằm ở đâu, và giá có khả năng chạm tới đó không?
@@ -252,7 +372,7 @@ HTF Bias → Sweep (SSL/BSL) → MSS → Displacement MẠNH
 
 ---
 
-## 11. Flashcards / Active Recall
+## 12. Flashcards / Active Recall
 
 ### Q1
 **Hỏi:** Vì sao trong displacement mạnh, FVG to/thấp thường không được giá quay về?
@@ -268,7 +388,7 @@ HTF Bias → Sweep (SSL/BSL) → MSS → Displacement MẠNH
 
 ---
 
-## 12. Liên kết với Trade Journal
+## 13. Liên kết với Trade Journal
 
 ### Lệnh áp dụng đúng khái niệm này
 ```dataview
@@ -288,7 +408,7 @@ SORT date DESC
 
 ---
 
-## 13. Lesson Learned
+## 14. Lesson Learned
 
 ### Bài học chính
 - Displacement càng mạnh → retrace càng nông → entry càng phải **cao hơn và refine ở khung nhỏ hơn**.
@@ -305,7 +425,7 @@ SORT date DESC
 
 ---
 
-## 14. Mức độ thành thạo
+## 15. Mức độ thành thạo
 
 | Tiêu chí | Điểm 1-5 | Ghi chú |
 |---|---:|---|

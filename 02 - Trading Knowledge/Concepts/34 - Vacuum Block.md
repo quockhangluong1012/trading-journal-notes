@@ -23,7 +23,7 @@ importance: 3
 confidence: 1
 last_reviewed:
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-03
 related_concepts:
   - "[[21 - Liquidity Void]]"
   - "[[24 - New Week Opening Gap]]"
@@ -100,6 +100,53 @@ Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trườn
 - **Không phải** chỉ dùng để fill rồi đảo — giá có thể chỉ chạm CE (partial) rồi đi tiếp theo bias.
 - **Không phải** thay thế bias — VB chỉ trả lời "về đâu", còn "đi hướng nào" vẫn do [[12 - Daily Bias]] quyết định.
 
+### Order-flow / market-maker rationale — vì sao gap chưa lấp lại hoạt động như nam châm
+
+![[VacuumBlock-OrderFlow-Rationale.png]]
+
+**Mô tả — Giải phẫu logic order-flow đằng sau một Vacuum Block (sơ đồ minh hoạ, KHÔNG phải chart thật):**
+- Cột bên trái: sổ lệnh (order book) trước gap — thể hiện thanh khoản hai chiều dày đặc quanh vùng giá cũ.
+- Vùng giữa (tô xám, có ký hiệu "∅"): dải giá **không có lệnh khớp** — đúng nghĩa "chân không" thanh khoản.
+- Cột bên phải: sổ lệnh sau gap — thanh khoản tái tập trung quanh mức giá mới, để lại một "khoảng trống định giá" ở giữa.
+- Mũi tên cong từ vùng giá hiện tại quay ngược về dải "∅" minh hoạ lực hút "repricing" khi thuật toán tổ chức tìm **fair value** trong dải trống.
+
+Diễn giải theo **lý thuyết thị trường đấu giá (Auction Market Theory)**: mọi mức giá tồn tại là vì có đủ hai bên đồng ý giao dịch tại đó (value được "xác nhận" bằng khối lượng). Một gap là nơi thị trường **bỏ qua bước đấu giá** — giá "nhảy cóc" từ điểm cân bằng A sang điểm cân bằng B mà không dừng lại thương lượng ở giữa. Về mặt lý thuyết định giá công bằng (fair value), dải bị bỏ qua đó **chưa từng được thị trường "phê duyệt"** là mức giá hợp lý. Đó là lý do:
+- **Market maker / thuật toán delivery giá (algorithmic price delivery)** có xu hướng dẫn giá quay lại các dải chưa được đấu giá để "hoàn tất" quá trình khám phá giá (price discovery) trước khi tiếp tục xu hướng — tương tự cách IPDA (Interbank Price Delivery Algorithm) được ICT mô tả là dẫn giá tới các mức inefficiency theo chu kỳ.
+- Vì không có lệnh limit/dừng nào "mắc kẹt" bên trong dải gap (không ai từng giao dịch ở đó), tính thanh khoản trong vacuum gần như bằng 0 → khi giá quay lại, nó thường **di chuyển nhanh xuyên qua phần giữa** dải (ít lực cản) rồi mới chậm lại quanh CE hoặc mép xa nơi có order flow thật.
+- Đây cũng là lý do CE (50%) quan trọng hơn việc lấp 100%: về mặt thống kê, "trung điểm định giá công bằng" là nơi xác suất hai bên đồng thuận cao nhất — thuật toán không cần lấp hết dải mới coi là "đủ tái cân bằng", chỉ cần chạm ngưỡng trung bình là đủ để tiếp diễn nhiệm vụ chính (dẫn giá tới draw on liquidity xa hơn).
+
+> [!info] Không phải phép màu, là hệ quả cấu trúc
+> "Giá bị hút về gap" không phải vì thị trường có ý thức — mà vì **thanh khoản residual** (lệnh chờ, stop, order tổ chức) luôn tập trung ở các mức có giao dịch trước đó, còn vùng gap thì trống rỗng. Đường ít lực cản nhất (path of least resistance) của giá luôn đi qua vùng trống trước khi gặp vùng có thanh khoản thật.
+
+### Cross-market nuances — VB khác nhau thế nào trên từng thị trường bạn giao dịch
+
+Vacuum Block không "đồng nhất" giữa các thị trường — nguồn gốc gap, chu kỳ lặp lại, và độ tin cậy của magnet khác nhau đáng kể giữa index futures, forex, và vàng. Bảng dưới đây là kim chỉ nam thực chiến cho 4 thị trường trong phạm vi giao dịch:
+
+| Thị trường | Nguồn gap chính | Đặc thù cần lưu ý | Gợi ý thực chiến |
+|---|---|---|---|
+| **NQ1 / NDX (NAS100)** | Session gap quanh giờ mở cửa RTH (futures đóng cửa ngắn rồi mở lại), gap qua đêm (overnight gap) do CME có phiên electronic gần như 24h nhưng thanh khoản mỏng ngoài RTH | Gap quanh mở cửa NY thường **rebalance rất nhanh** (trong Kill Zone London/NY mở) vì thanh khoản dồn về; gap qua đêm dễ bị "giả" nếu chỉ do thanh khoản mỏng chứ không phải tin thật | Ưu tiên VB hình thành ngay trước/sau [[18 - Kill Zones]] NY; cẩn trọng VB sinh trong phiên Á thanh khoản thấp — dễ bị nuốt lại ngay khi London mở |
+| **EURUSD / GBPUSD** | Chủ yếu là **NWOG** (gap cuối tuần, thị trường đóng cửa thật từ tối thứ Sáu tới Chủ Nhật) — xem [[24 - New Week Opening Gap]]; hiếm khi có session gap giữa tuần vì forex giao dịch liên tục 24/5 | Sunday open thanh khoản cực thấp (chủ yếu Úc/Á mở cửa) → gap cuối tuần dễ bị "spike giả" trước khi ổn định; NWOG có xu hướng được rebalance trong 1–3 ngày đầu tuần nếu không có tin lớn phá vỡ | Không vào lệnh ngay lúc mở cửa Chủ Nhật; chờ thanh khoản London/NY thứ Hai xác nhận hướng trước khi coi NWOG là DOL đáng tin |
+| **XAUUSD (Gold)** | Gap chủ yếu do **tin tức** (NFP, CPI, FOMC, biến động địa chính trị) và do vàng giao dịch qua nhiều sàn (spot vs futures) với giờ nghỉ khác nhau; ATR/ngày lớn hơn nhiều so với FX chính | Gap tin tức trên vàng thường **rộng hơn** (tính theo % ATR) và có thể **không rebalance ngay** nếu là displacement thật theo tin cơ bản (thay đổi kỳ vọng lãi suất, risk-off mạnh) — dễ nhầm "gap chờ fill" với "repricing vĩnh viễn" | Với VB do tin: đợi ít nhất 1 nến H1 đóng cửa ổn định, spread thu hẹp về bình thường rồi mới đánh giá; size lệnh nhỏ hơn bình thường vì SL cần rộng hơn theo ATR |
+
+> [!warning] Đừng áp dụng máy móc một bộ luật cho mọi thị trường
+> Một VB "unfilled 2 ngày" trên EURUSD có ý nghĩa khác hẳn một VB "unfilled 2 ngày" trên XAUUSD sau tin FOMC. Luôn hỏi: **gap này sinh ra từ cơ chế nào** (đóng/mở phiên thuần túy, hay biến động cơ bản thật)? Câu trả lời quyết định độ tin cậy của magnet.
+
+### Edge cases nâng cao
+
+- **Thống kê partial-fill**: trong thực chiến, đa số VB sinh từ session/weekend gap **chỉ cần chạm CE** là đã đủ để giá tiếp diễn theo bias (partial rebalance) — full fill 100% thường chỉ xảy ra khi VB nằm ngược một xu hướng yếu hoặc thị trường đi ngang tích lũy. Khi backtest, luôn tách riêng hai nhóm số liệu "chạm CE rồi tiếp diễn" và "lấp hết range" — gộp chung sẽ làm sai lệch kỳ vọng entry (xem mục Best Practices bên dưới cho cách log).
+- **VB chồng (stacked/nested VB)**: đôi khi một chuỗi phiên liên tiếp để lại nhiều gap nhỏ xếp lớp lên nhau (ví dụ 2–3 phiên gap up liên tiếp trong xu hướng mạnh). Khi đó: (1) coi **toàn bộ dải từ mép ngoài cùng tới mép ngoài cùng** là một "vùng inefficiency tổng hợp", (2) mỗi VB con vẫn có CE riêng — VB con gần giá hiện tại nhất thường được test trước, (3) nếu giá xuyên qua nhiều VB con liên tiếp mà không phản ứng, đó là dấu hiệu **displacement thật** (không phải noise) — hạ ưu tiên coi các VB con này là POI phản ứng, nâng ưu tiên coi cả dải là target liquidity một chiều.
+- **VB nằm trong một FVG khung lớn hơn (HTF)**: khi một Vacuum Block (thường ở M15/H1) rơi đúng vào bên trong một Fair Value Gap ở D1/H4, đây là **confluence rất mạnh** vì hai loại inefficiency khác họ (gap thật + imbalance giao dịch liên tục) cùng chỉ về một vùng giá. Quy tắc thực chiến: ưu tiên CE của khung lớn hơn (D1/H4 FVG) làm mục tiêu chính; CE của VB nhỏ hơn dùng để tinh chỉnh entry.
+- **VB trở thành breaker sau khi rebalance thất bại**: nếu giá vào vùng VB, cố gắng lấp gap nhưng **thất bại giữa chừng** (không tới CE, bị đẩy ngược lại mạnh kèm displacement) — vùng biên nơi giá bị từ chối có thể hình thành một **breaker block** theo hướng ngược lại. Đây là lúc VB "đổi vai": từ target/POI rebalance chuyển thành vùng cấu trúc cho lệnh ngược hướng ban đầu. Cần MSS xác nhận trước khi coi đây là breaker hợp lệ — không tự suy diễn.
+
+### VB và Algorithmic Price Delivery / IPDA data ranges
+
+ICT mô tả **IPDA (Interbank Price Delivery Algorithm)** như cơ chế thuật toán dẫn giá qua các chu kỳ tra cứu dữ liệu chuẩn: **20 ngày, 40 ngày, 60 ngày**. Vacuum Block liên quan trực tiếp tới khung này theo hai cách:
+1. **VB nằm trong phạm vi lookback 20/40/60 ngày** có xác suất được "thăm lại" cao hơn — vì thuật toán định giá được ICT mô tả là quét lại các mức cao/thấp và inefficiency trong các cửa sổ dữ liệu này để tìm thanh khoản và tái cân bằng giá.
+2. **VB càng cũ (ngoài mốc 60 ngày)** càng mất dần độ ưu tiên trong khung IPDA hiện tại — không có nghĩa nó vô hiệu vĩnh viễn, nhưng nên hạ ưu tiên xuống dưới các VB mới hơn nằm trong lookback range đang active.
+
+> [!tip] Cách dùng thực tế
+> Khi liệt kê danh sách VB unfilled trên D1, đánh dấu thêm cột "cách đây bao nhiêu ngày" và đối chiếu với mốc 20/40/60. VB nằm trong 20 ngày gần nhất luôn được ưu tiên xem xét trước trong phiên phân tích hằng ngày.
+
 ---
 
 ## 2. Bối cảnh sử dụng
@@ -170,6 +217,30 @@ Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trườn
 - Ngược bias mà không có lý do AMD rõ.
 - Môi trường tin tức quá hỗn loạn, chưa rõ hướng.
 
+### Ma trận nhận diện đa khung thời gian (Recognition Matrix)
+
+![[VacuumBlock-Recognition-Matrix.png]]
+
+**Mô tả — Bản đồ minh hoạ nhận diện VB qua nhiều khung thời gian (sơ đồ mẫu, hãy thay bằng chart thật của bạn):**
+- Hàng trên cùng: khung D1 — hiển thị 2–3 gap lớn (session/weekend) được khoanh vùng bằng khung chữ nhật, mỗi khung ghi chú range + CE.
+- Hàng giữa: khung H4 — cùng một vùng giá nhưng phóng to, cho thấy VB D1 "chứa" nhiều cấu trúc nhỏ hơn (OB, FVG nội bộ) bên trong range của nó.
+- Hàng dưới: khung H1/M15 — đánh dấu đường kẻ ngang tại CE của VB D1 kéo dài xuống, cùng chú thích "vùng canh phản ứng LTF".
+- Mũi tên nối 3 hàng theo chiều dọc để nhấn mạnh nguyên tắc **top-down**: VB luôn được xác định trước ở khung lớn, sau đó "chiếu" xuống khung nhỏ để tìm entry.
+
+### So sánh dấu hiệu nhận diện theo từng khung thời gian
+
+Không phải mọi khung thời gian đều cho tín hiệu VB rõ như nhau — bảng dưới tổng hợp cách "đọc" gap khác nhau theo khung:
+
+| Khung | Gap dễ thấy nhất từ nguồn nào | Độ tin cậy magnet | Rủi ro đọc sai |
+|---|---|---|---|
+| **D1** | Weekend gap (NWOG), gap sau tin lớn qua đêm | Cao — ít nhiễu, gap thường lớn và rõ | Dễ bỏ sót gap nhỏ hơn nằm bên trong |
+| **H4** | Session gap (đóng/mở phiên), gap sau tin giữa ngày | Trung bình–cao | Có thể nhầm biến động mạnh trong phiên với gap thật nếu không kiểm tra kỹ dữ liệu tick |
+| **H1** | Gap quanh chuyển phiên (Á→London, London→NY) | Trung bình | Gap H1 đôi khi chỉ là noise thanh khoản mỏng, không phải inefficiency có ý nghĩa cấu trúc |
+| **M15/M5** | Hiếm khi có gap thật (giao dịch gần như liên tục); chủ yếu thấy imbalance kiểu FVG | Thấp cho vai trò "VB", nhưng hữu ích để tìm FVG nội bộ khi entry | Dễ gọi nhầm displacement M5 thành "vacuum" — thực chất là Liquidity Void/FVG, không phải VB đúng nghĩa |
+
+> [!note] Nguyên tắc top-down bắt buộc
+> Luôn **xác định VB ở D1/H4 trước**, sau đó mới dùng H1/M15/M5 để tìm thời điểm entry quanh CE đã đánh dấu. Không tự vẽ VB mới ở khung nhỏ nếu nó không xuất phát từ một gap thật có thể nhìn thấy ở khung lớn hơn — nếu không sẽ nhầm sang Liquidity Void/FVG.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -206,6 +277,34 @@ Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trườn
 
 > [!warning] Cảnh báo timing
 > VB là **magnet**, không phải tín hiệu đảo chiều tự động. Đừng vào lệnh chỉ vì "giá đang về gap". Phải có **xác nhận giá** (sweep + displacement/MSS) tại VB. Riêng news-gap: chờ biến động lắng và spread bình thường mới hành động.
+
+### Sơ đồ quy trình top-down đầy đủ (MTF Flow)
+
+![[VacuumBlock-MTF-Flow.png]]
+
+**Mô tả — Flowchart minh hoạ quy trình phân tích VB từ D1 xuống M1 (sơ đồ khối, hãy vẽ lại hoặc thay bằng ảnh chụp quy trình thật của bạn):**
+- Khối 1 (trên cùng): "D1/H4 — Quét toàn bộ VB unfilled + xác định bias" → mũi tên xuống.
+- Khối 2: "Chọn VB làm DOL chính (đúng phía bias + confluence)" → mũi tên xuống, có nhánh rẽ "Không đạt điều kiện → loại, quay lại Khối 1".
+- Khối 3: "H1/M15 — Theo dõi giá tiếp cận mép/CE, quan sát phản ứng sơ bộ" → mũi tên xuống.
+- Khối 4: "M5/M1 — Chờ liquidity sweep + displacement/MSS tại VB" → nhánh rẽ "Không có xác nhận → KHÔNG vào lệnh, tiếp tục chờ".
+- Khối 5 (dưới cùng): "Entry tại FVG nội bộ → SL ngoài mép xa → TP theo CE/mép đối diện/DOL kế" → khối kết thúc "Log vào nhật ký (xem Best Practices)".
+
+### Quy tắc phân bổ thời gian quan sát theo khung
+
+Một sai lầm phổ biến là dành quá nhiều thời gian "canh" VB ở khung lớn và quá ít thời gian xác nhận ở khung nhỏ (hoặc ngược lại). Phân bổ hợp lý:
+
+| Giai đoạn | Khung chính | Mục tiêu | Tần suất kiểm tra |
+|---|---|---|---|
+| Quét & lập danh sách VB | D1/H4 | Xác định toàn bộ VB unfilled, gắn cột "ngày tuổi" theo IPDA 20/40/60 | 1 lần/ngày (đầu phiên) |
+| Theo dõi tiếp cận | H1/M15 | Phát hiện giá bắt đầu di chuyển về VB đã chọn | Vài lần/phiên, tăng tần suất khi giá còn cách CE < 1×ATR(H1) |
+| Xác nhận & bấm entry | M5/M1 | Bắt sweep + displacement/MSS, vào lệnh đúng FVG nội bộ | Liên tục trong Kill Zone khi giá đã chạm vùng VB |
+
+### Tình huống đặc biệt: VB xuất hiện ngay trong Kill Zone đang active
+
+Khi một gap mới (ví dụ session-gap NQ1 lúc mở cửa NY) hình thành **ngay trong** [[18 - Kill Zones]] đang diễn ra, quy trình top-down chuẩn (D1 → H1 → M5) không kịp áp dụng tuần tự. Xử lý thực tế:
+1. Xác nhận ngay đây có phải gap thật (đứt gãy giao dịch) hay chỉ là nến biến động mạnh trong dữ liệu — kiểm tra dữ liệu tick/giá mở cửa chính thức nếu có thể.
+2. Đo nhanh range + CE trên khung đang giao dịch (thường H1/M15).
+3. **Không vào lệnh ngay** — một VB vừa sinh ra trong phiên biến động cần ít nhất một nhịp ổn định (1–2 nến) trước khi coi là POI đáng tin, vì spread/độ trượt giá ngay lúc mở phiên có thể tạo tín hiệu giả.
 
 ---
 
@@ -288,7 +387,54 @@ Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trườn
 
 ---
 
-## 8. Checklist trước khi áp dụng vào trade
+## Best Practices
+
+> [!tip] Kỷ luật thực thi (execution discipline)
+> - **Không bao giờ đặt lệnh limit "mù" ngay tại mép xa của VB** chỉ vì "gap sẽ fill". Luôn chờ xác nhận (sweep + displacement/MSS) trước khi đặt lệnh — limit đặt sẵn không xác nhận là cách nhanh nhất để bị "quét" bởi một cú spike rồi đảo chiều ngược lại.
+> - Nếu dùng limit order để đón phản ứng tại CE, hãy đặt **sau khi đã thấy dấu hiệu chậm lại** (wick dài, absorption) ở khung LTF — không đặt limit ngay khi vừa phát hiện VB ở D1/H4.
+> - Với VB sinh trong lúc tin ra hoặc ngay đầu phiên biến động: **ưu tiên market order sau xác nhận**, tránh limit order vì spread/độ trượt có thể khiến giá không bao giờ khớp đúng mức mong muốn hoặc khớp vào đúng đỉnh/đáy spike giả.
+> - Không dời SL ra xa hơn "để tránh bị quét" quanh VB — nếu setup cần SL rộng hơn mức risk cho phép, giảm size chứ không nới SL.
+
+> [!warning] Position sizing theo biến động của gap
+> - Kích thước gap (range VB) và ATR tại thời điểm đó quyết định độ rộng SL hợp lý — **không dùng size cố định cho mọi VB**. Gap càng rộng so với ATR trung bình, SL càng cần rộng hơn tương ứng → size phải giảm để giữ đúng rủi ro ≤0.5%/lệnh.
+> - Với **XAUUSD và các VB gốc tin tức**: mặc định coi ATR đã tăng đột biến, tính size dựa trên SL rộng hơn bình thường (ví dụ dùng ATR(H1) đo ngay sau tin, không dùng ATR trung bình 14 ngày trước đó).
+> - Với **NWOG trên EURUSD/GBPUSD**: nếu gap hình thành sau một tuần có tin vĩ mô lớn (bầu cử, quyết định lãi suất cuối tuần), coi như biến động tăng và giảm size 30–50% so với NWOG "bình thường" cho tới khi thị trường ổn định lại sau phiên mở cửa thứ Hai.
+> - Không bao giờ tăng size chỉ vì "gap này to nên chắc ăn" — gap to đi kèm rủi ro trượt giá/SL rộng hơn, không đồng nghĩa xác suất thắng cao hơn.
+
+**Phương pháp backtest cho Vacuum Block:**
+
+| Bước | Nội dung |
+|---|---|
+| 1. Cỡ mẫu | Backtest tối thiểu **20–30 VB** mỗi thị trường trước khi rút kết luận (khớp với mốc "Tested" ở mục 14); tách riêng mẫu theo loại (session/weekend/news) vì hành vi khác nhau |
+| 2. Log partial vs full | Với mỗi VB: ghi rõ giá có chạm CE không, có lấp hết range không, và **giá đóng cửa nến xác nhận ở đâu** so với CE — không chỉ ghi "rebalance: có/không" |
+| 3. Thống kê cần theo dõi | Tỉ lệ % partial vs full theo từng loại gap; R trung bình đạt được từ entry tại CE; thời gian trung bình (số nến/giờ) từ lúc gap hình thành tới lúc chạm CE; tỉ lệ VB bị bỏ qua do vi phạm checklist mục 5 |
+| 4. Phân tách theo thị trường | Không gộp chung NQ1, EURUSD/GBPUSD, XAUUSD vào một bảng thống kê — hành vi gap khác nhau theo cơ chế sinh ra (xem bảng cross-market ở mục 1) |
+| 5. Đối chiếu IPDA | Ghi thêm "tuổi" của VB tại thời điểm test (trong hay ngoài mốc 20/40/60 ngày) để sau này đánh giá có mối liên hệ giữa độ tuổi và tỉ lệ rebalance hay không |
+
+**Trường dữ liệu nên có trong nhật ký (journaling fields) khi log một trade quanh VB:**
+- Loại VB (gap up/down, session/news/weekend), thị trường, khung hình thành.
+- Range gap (mép trên/dưới), CE, và tuổi VB tính theo ngày tại thời điểm vào lệnh.
+- Có confluence không (OB/FVG/liquidity/PD level nào).
+- Xác nhận tại VB: loại sweep, loại displacement/MSS, có FVG nội bộ không.
+- Kết quả: partial hay full rebalance, R đạt được, có vi phạm checklist nào không (liên kết [[06 - Mistake Database]] nếu có).
+- Ghi chú ATR/biến động tại thời điểm vào lệnh (đặc biệt bắt buộc với XAUUSD và mọi news-gap).
+
+**Bảng đối chiếu: thói quen nghiệp dư vs thói quen chuyên nghiệp**
+
+| Tình huống | Thói quen nghiệp dư | Thói quen chuyên nghiệp |
+|---|---|---|
+| Phát hiện VB mới | Vào lệnh ngay khi giá chạm mép gap | Chờ sweep + displacement/MSS xác nhận trước khi hành động |
+| Đặt lệnh chờ | Đặt limit "mù" tại CE hoặc mép xa từ sớm | Chỉ đặt limit sau khi LTF cho dấu hiệu phản ứng rõ |
+| Size lệnh | Dùng size cố định cho mọi VB bất kể độ rộng gap | Điều chỉnh size theo ATR/độ rộng gap để giữ đúng ≤0.5% risk |
+| VB do tin tức | Nhảy vào ngay giữa cú spike vì "sợ bỏ lỡ" | Đợi nến đóng cửa ổn định, spread bình thường rồi mới đánh giá |
+| VB đã filled | Vẫn cố tìm phản ứng tại gap cũ | Loại khỏi danh sách theo dõi, tìm DOL/VB mới |
+| Backtest | Xem vài ví dụ "đẹp" rồi kết luận VB "luôn work" | Backtest ≥20–30 mẫu, tách theo loại gap và thị trường, log đầy đủ partial/full |
+| Nhật ký | Chỉ ghi thắng/thua, không ghi lại bối cảnh VB | Ghi đủ trường dữ liệu ở trên để review được nguyên nhân gốc rễ |
+| VB chồng lớp | Coi mỗi VB con là một cơ hội entry riêng lẻ | Đánh giá cả dải tổng hợp, ưu tiên VB con gần giá nhất, cảnh giác displacement thật |
+
+---
+
+## 9. Checklist trước khi áp dụng vào trade
 
 > [!warning] Bắt buộc soát đủ trước khi vào lệnh quanh một Vacuum Block.
 
@@ -311,7 +457,7 @@ Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trườn
 
 ---
 
-## 9. Lỗi thường gặp
+## 10. Lỗi thường gặp
 
 | Lỗi | Dấu hiệu | Vì sao nguy hiểm | Cách sửa |
 |---|---|---|---|
@@ -325,7 +471,7 @@ Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trườn
 
 ---
 
-## 10. Câu hỏi tự kiểm tra
+## 11. Câu hỏi tự kiểm tra
 - VB khác FVG ở điểm cốt lõi nào? (gợi ý: có/không giao dịch ở giữa)
 - Vì sao một gap unfilled lại hoạt động như nam châm?
 - CE của VB là gì và vì sao nó quan trọng hơn việc fill 100%?
@@ -335,7 +481,7 @@ Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trườn
 
 ---
 
-## 11. Flashcards / Active Recall
+## 12. Flashcards / Active Recall
 
 > [!tip] Active recall — che đáp án và tự trả lời.
 
@@ -359,7 +505,7 @@ Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trườn
 
 ---
 
-## 12. Lesson Learned
+## 13. Lesson Learned
 
 > [!example] Ghi chú quan sát cá nhân
 > - (Điền sau khi backtest/live) VB loại nào trên NQ1/NAS100 hay được rebalance nhất? ____
@@ -369,7 +515,7 @@ Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trườn
 
 ---
 
-## 13. Mức độ thành thạo
+## 14. Mức độ thành thạo
 
 | Cấp độ | Tiêu chí | Đạt? |
 |---|---|---|

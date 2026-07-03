@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Bối cảnh sử dụng — Ba trạng thái bias</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Neutral cũng là một kết luận hợp lệ — không bịa bias để có lệnh</text>
+
+  <!-- Bullish -->
+  <rect x="24" y="72" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="24" y="72" width="228" height="30" rx="8" fill="#16A34A" opacity="0.12"/>
+  <text x="40" y="92" font-size="14" font-weight="700" fill="#16A34A">Bullish</text>
+  <text x="40" y="124" font-size="11" fill="#374151">Draw on liquidity ở PHÍA TRÊN</text>
+  <line x1="44" y1="150" x2="232" y2="150" stroke="#DC2626" stroke-dasharray="4 3"/><text x="44" y="145" font-size="9" fill="#DC2626">BSL (draw)</text>
+  <line x1="60" y1="250" x2="60" y2="300" stroke="#16A34A" stroke-width="1.3"/><rect x="55" y="262" width="10" height="30" fill="#16A34A"/>
+  <line x1="90" y1="270" x2="90" y2="330" stroke="#16A34A" stroke-width="1.3"/><rect x="85" y="300" width="10" height="30" fill="#16A34A"/>
+  <line x1="120" y1="240" x2="120" y2="335" stroke="#16A34A" stroke-width="1.3"/><rect x="115" y="255" width="10" height="70" fill="#16A34A"/>
+  <line x1="150" y1="160" x2="150" y2="250" stroke="#16A34A" stroke-width="1.3"/><rect x="145" y="175" width="10" height="70" fill="#16A34A"/>
+  <text x="40" y="316" font-size="9" fill="#DC2626">↓ discount</text>
+  <text x="40" y="352" font-size="10.5" fill="#374151">Retrace về discount → sweep</text>
+  <text x="40" y="366" font-size="10.5" fill="#374151">SSL → bullish MSS + FVG</text>
+
+  <!-- Bearish -->
+  <rect x="266" y="72" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="266" y="72" width="228" height="30" rx="8" fill="#DC2626" opacity="0.12"/>
+  <text x="282" y="92" font-size="14" font-weight="700" fill="#DC2626">Bearish</text>
+  <text x="282" y="124" font-size="11" fill="#374151">Draw on liquidity ở PHÍA DƯỚI</text>
+  <line x1="286" y1="150" x2="474" y2="150" stroke="#DC2626" stroke-dasharray="4 3"/><text x="286" y="145" font-size="9" fill="#DC2626">BSL (sweep) — premium</text>
+  <line x1="302" y1="160" x2="302" y2="240" stroke="#DC2626" stroke-width="1.3"/><rect x="297" y="175" width="10" height="60" fill="#DC2626"/>
+  <line x1="332" y1="150" x2="332" y2="250" stroke="#DC2626" stroke-width="1.3"/><rect x="327" y="165" width="10" height="70" fill="#DC2626"/>
+  <line x1="362" y1="230" x2="362" y2="320" stroke="#DC2626" stroke-width="1.3"/><rect x="357" y="245" width="10" height="60" fill="#DC2626"/>
+  <line x1="392" y1="280" x2="392" y2="335" stroke="#DC2626" stroke-width="1.3"/><rect x="387" y="292" width="10" height="35" fill="#DC2626"/>
+  <line x1="286" y1="332" x2="474" y2="332" stroke="#1D4ED8" stroke-dasharray="4 3"/><text x="286" y="352" font-size="9" fill="#1D4ED8">SSL (draw)</text>
+  <text x="282" y="366" font-size="10.5" fill="#374151">Retrace lên premium → sweep BSL</text>
+
+  <!-- Neutral -->
+  <rect x="508" y="72" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="508" y="72" width="228" height="30" rx="8" fill="#6B7280" opacity="0.12"/>
+  <text x="524" y="92" font-size="14" font-weight="700" fill="#6B7280">Neutral / Mixed</text>
+  <text x="524" y="124" font-size="11" fill="#374151">Giá quanh equilibrium (50%)</text>
+  <line x1="528" y1="130" x2="716" y2="130" stroke="#DC2626" stroke-dasharray="4 3"/><text x="528" y="126" font-size="9" fill="#DC2626">BSL gần</text>
+  <line x1="528" y1="220" x2="716" y2="220" stroke="#9CA3AF" stroke-dasharray="2 3"/><text x="528" y="216" font-size="9" fill="#6B7280">50% equilibrium</text>
+  <line x1="528" y1="312" x2="716" y2="312" stroke="#1D4ED8" stroke-dasharray="4 3"/><text x="528" y="326" font-size="9" fill="#1D4ED8">SSL gần</text>
+  <line x1="580" y1="200" x2="580" y2="250" stroke="#6B7280" stroke-width="1.3"/><rect x="575" y="210" width="10" height="30" fill="#9CA3AF"/>
+  <line x1="620" y1="205" x2="620" y2="255" stroke="#6B7280" stroke-width="1.3"/><rect x="615" y="228" width="10" height="20" fill="#9CA3AF"/>
+  <line x1="660" y1="195" x2="660" y2="245" stroke="#6B7280" stroke-width="1.3"/><rect x="655" y="212" width="10" height="25" fill="#9CA3AF"/>
+  <text x="524" y="352" font-size="10.5" fill="#374151">Giảm tần suất, không ép trade;</text>
+  <text x="524" y="366" font-size="10.5" fill="#374151">chờ narrative rõ hơn</text>
+
+  <text x="380" y="410" text-anchor="middle" font-size="12" fill="#374151">Bias xác định HƯỚNG chờ đợi và vùng entry; chưa phải tín hiệu vào lệnh.</text>
+</svg>

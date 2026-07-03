@@ -1,0 +1,46 @@
+<svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arwG" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6B7280"/></marker>
+  </defs>
+  <rect x="0" y="0" width="760" height="520" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Quy trình phân tích đa khung thời gian</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">4 câu hỏi: Draw chính? Còn room? Engineered nào đang dọn sẵn? Pool nào bị sweep trước?</text>
+
+  <!-- D1/H4 -->
+  <rect x="24" y="72" width="712" height="112" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="24" y="72" width="6" height="112" fill="#1D4ED8"/>
+  <text x="44" y="98" font-size="14" font-weight="700" fill="#1D4ED8">D1 / H4 — Bias &amp; Narrative</text>
+  <text x="44" y="122" font-size="12" fill="#374151">• Draw chính: BSL hay SSL? — ghi level cụ thể</text>
+  <text x="44" y="142" font-size="12" fill="#374151">• External liquidity: đỉnh &amp; đáy dealing range</text>
+  <text x="44" y="162" font-size="12" fill="#374151">• Pool còn mở: PDH/PDL, PWH/PWL, swing lớn</text>
+  <text x="400" y="122" font-size="12" fill="#374151">• Internal liquidity: FVG/OB lớn giữa range</text>
+  <text x="400" y="142" font-size="12" fill="#374151">• Narrative: giá bị hút về ___ vì ___;</text>
+  <text x="400" y="162" font-size="12" fill="#374151">   sẽ sweep ___ trước khi đảo về ___</text>
+  <line x1="380" y1="188" x2="380" y2="202" stroke="#6B7280" stroke-width="1.5" marker-end="url(#arwG)"/>
+
+  <!-- H1/M15 -->
+  <rect x="84" y="208" width="592" height="112" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="84" y="208" width="6" height="112" fill="#D97706"/>
+  <text x="104" y="234" font-size="14" font-weight="700" fill="#D97706">H1 / M15 — POI &amp; Context</text>
+  <text x="104" y="258" font-size="12" fill="#374151">• Pool nào sắp bị chạm: BSL hay SSL?</text>
+  <text x="104" y="278" font-size="12" fill="#374151">• Equal highs/lows engineered trên H1/M15?</text>
+  <text x="104" y="298" font-size="12" fill="#374151">• Sweep (reject/reclaim) hay break-and-go?</text>
+  <text x="400" y="258" font-size="12" fill="#374151">• Pool là internal hay external range?</text>
+  <text x="400" y="278" font-size="12" fill="#374151">• Sau sweep, có FVG/OB hợp lệ</text>
+  <text x="400" y="298" font-size="12" fill="#374151">   để tìm entry không?</text>
+  <line x1="380" y1="324" x2="380" y2="338" stroke="#6B7280" stroke-width="1.5" marker-end="url(#arwG)"/>
+
+  <!-- M5/M1 -->
+  <rect x="144" y="344" width="472" height="112" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="144" y="344" width="6" height="112" fill="#16A34A"/>
+  <text x="164" y="370" font-size="14" font-weight="700" fill="#16A34A">M5 / M1 — Confirmation &amp; Entry</text>
+  <text x="164" y="394" font-size="12" fill="#374151">• Sweep + reclaim đã hoàn tất chưa?</text>
+  <text x="164" y="414" font-size="12" fill="#374151">• MSS + displacement (để lại FVG)?</text>
+  <text x="164" y="434" font-size="12" fill="#374151">• Entry tại FVG/OB của displacement</text>
+  <text x="420" y="394" font-size="12" fill="#374151">• Stop: SAU điểm sweep</text>
+  <text x="420" y="414" font-size="12" fill="#374151">• Target: external BSL/SSL</text>
+  <text x="420" y="434" font-size="12" fill="#374151">   đã chọn từ HTF</text>
+
+  <text x="44" y="484" font-size="12" font-weight="600" fill="#D97706">Lưu ý: Liquidity LTF không tạo bias — equal highs nhỏ trên M5 không làm đổi draw chính của D1.</text>
+  <text x="44" y="502" font-size="11" fill="#6B7280">LTF chỉ cho biết pool nào bị quét để execution, sau khi HTF đã chỉ rõ draw chính.</text>
+</svg>

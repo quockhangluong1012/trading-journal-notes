@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">MMBM - Vi du dung: Sweep SSL -> Smart Money Low -> MSS tang -> mua LRB -> BSL</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">HTF bias Bullish, gia o discount. Chart minh hoa khai niem, khong phai du lieu giao dich that.</text>
+  <rect x="48.0" y="232" width="2" height="26" fill="#16A34A"/>
+  <rect x="40" y="240" width="18" height="10" fill="#16A34A" rx="1"/>
+  <rect x="72.0" y="237" width="2" height="29" fill="#DC2626"/>
+  <rect x="64" y="245" width="18" height="13" fill="#DC2626" rx="1"/>
+  <rect x="96.0" y="250" width="2" height="38" fill="#DC2626"/>
+  <rect x="88" y="258" width="18" height="22" fill="#DC2626" rx="1"/>
+  <rect x="120.0" y="272" width="2" height="46" fill="#DC2626"/>
+  <rect x="112" y="280" width="18" height="30" fill="#DC2626" rx="1"/>
+  <rect x="144.0" y="292" width="2" height="26" fill="#16A34A"/>
+  <rect x="136" y="300" width="18" height="10" fill="#16A34A" rx="1"/>
+  <rect x="168.0" y="292" width="2" height="36" fill="#DC2626"/>
+  <rect x="160" y="300" width="18" height="20" fill="#DC2626" rx="1"/>
+  <rect x="192.0" y="312" width="2" height="41" fill="#DC2626"/>
+  <rect x="184" y="320" width="18" height="25" fill="#DC2626" rx="1"/>
+  <rect x="216.0" y="322" width="2" height="31" fill="#16A34A"/>
+  <rect x="208" y="330" width="18" height="15" fill="#16A34A" rx="1"/>
+  <rect x="240.0" y="292" width="2" height="46" fill="#16A34A"/>
+  <rect x="232" y="300" width="18" height="30" fill="#16A34A" rx="1"/>
+  <rect x="264.0" y="257" width="2" height="51" fill="#16A34A"/>
+  <rect x="256" y="265" width="18" height="35" fill="#16A34A" rx="1"/>
+  <rect x="288.0" y="217" width="2" height="56" fill="#16A34A"/>
+  <rect x="280" y="225" width="18" height="40" fill="#16A34A" rx="1"/>
+  <rect x="312.0" y="217" width="2" height="36" fill="#DC2626"/>
+  <rect x="304" y="225" width="18" height="20" fill="#DC2626" rx="1"/>
+  <rect x="336.0" y="214" width="2" height="39" fill="#16A34A"/>
+  <rect x="328" y="222" width="18" height="23" fill="#16A34A" rx="1"/>
+  <rect x="360.0" y="182" width="2" height="48" fill="#16A34A"/>
+  <rect x="352" y="190" width="18" height="32" fill="#16A34A" rx="1"/>
+  <rect x="384.0" y="147" width="2" height="51" fill="#16A34A"/>
+  <rect x="376" y="155" width="18" height="35" fill="#16A34A" rx="1"/>
+  <rect x="408.0" y="112" width="2" height="51" fill="#16A34A"/>
+  <rect x="400" y="120" width="18" height="35" fill="#16A34A" rx="1"/>
+  <rect x="432.0" y="87" width="2" height="41" fill="#16A34A"/>
+  <rect x="424" y="95" width="18" height="25" fill="#16A34A" rx="1"/>
+  <line x1="30" y1="345" x2="448" y2="345" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="34" y="340" font-size="10" fill="#DC2626">SSL pool</text>
+  <circle cx="217" cy="335" r="9" fill="none" stroke="#2563EB" stroke-width="2.4"/>
+  <text x="178" y="380" font-size="11" font-weight="700" fill="#2563EB">Smart Money Low (sweep + reclaim)</text>
+  <rect x="256" y="260" width="66" height="42" fill="#DBEAFE" opacity="0.6" stroke="#2563EB" stroke-dasharray="3 2"/>
+  <text x="256" y="252" font-size="10" font-weight="700" fill="#2563EB">MSS tang + FVG (bullish)</text>
+  <circle cx="337" cy="235" r="7" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+  <text x="308" y="215" font-size="10" font-weight="700" fill="#16A34A">LRB#1 - Entry</text>
+  <rect x="620" y="86" width="110" height="24" rx="5" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="630" y="102" font-size="11" font-weight="700" fill="#374151">BSL (Target)</text>
+  <text x="24" y="432" font-size="15" font-weight="700" fill="#16A34A">✓ Đúng</text>
+  <text x="90" y="432" font-size="12" fill="#374151">— sweep SSL + reclaim truoc, MSS tang xac nhan, entry o LRB (retrace), khong chase.</text>
+</svg>

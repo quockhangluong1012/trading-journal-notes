@@ -1,0 +1,68 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Nguồn gốc Turtle Soup — từ Donchian breakout tới đảo ngược logic của ICT</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Dòng thời gian 4 bước: hệ thống gốc → nhóm Turtles → chiến lược fade → ICT hấp thụ vào ngôn ngữ thanh khoản.</text>
+
+  <rect x="24" y="70" width="712" height="310" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- timeline spine -->
+  <line x1="80" y1="120" x2="680" y2="120" stroke="#D8DBE2" stroke-width="2"/>
+
+  <!-- Node 1: Donchian breakout system -->
+  <circle cx="120" cy="120" r="9" fill="#3B82F6"/>
+  <text x="90" y="105" font-size="10.5" font-weight="700" fill="#1D4ED8">① 1970s-80s</text>
+  <rect x="46" y="140" width="150" height="120" rx="6" fill="#3B82F6" opacity="0.08" stroke="#3B82F6" stroke-dasharray="3 3"/>
+  <text x="56" y="160" font-size="11" font-weight="700" fill="#1D4ED8">Donchian Breakout</text>
+  <text x="56" y="176" font-size="9.5" fill="#374151">Richard Donchian: mua khi</text>
+  <text x="56" y="189" font-size="9.5" fill="#374151">giá phá đỉnh N-ngày, bán</text>
+  <text x="56" y="202" font-size="9.5" fill="#374151">khi phá đáy N-ngày.</text>
+  <text x="56" y="222" font-size="9.5" fill="#374151">Nền tảng cho hệ thống</text>
+  <text x="56" y="235" font-size="9.5" fill="#374151">trend-following cơ học.</text>
+
+  <!-- Node 2: Turtle Trading -->
+  <circle cx="290" cy="120" r="9" fill="#3B82F6"/>
+  <text x="250" y="105" font-size="10.5" font-weight="700" fill="#1D4ED8">② 1983-84</text>
+  <rect x="216" y="140" width="150" height="120" rx="6" fill="#3B82F6" opacity="0.08" stroke="#3B82F6" stroke-dasharray="3 3"/>
+  <text x="226" y="160" font-size="11" font-weight="700" fill="#1D4ED8">Turtle Trading</text>
+  <text x="226" y="176" font-size="9.5" fill="#374151">Richard Dennis &amp;</text>
+  <text x="226" y="189" font-size="9.5" fill="#374151">William Eckhardt dạy</text>
+  <text x="226" y="202" font-size="9.5" fill="#374151">nhóm "Turtles" trade</text>
+  <text x="226" y="222" font-size="9.5" fill="#374151">breakout Donchian</text>
+  <text x="226" y="235" font-size="9.5" fill="#374151">20-ngày / 55-ngày.</text>
+
+  <!-- Node 3: Turtle Soup fade -->
+  <circle cx="460" cy="120" r="9" fill="#F59E0B"/>
+  <text x="418" y="105" font-size="10.5" font-weight="700" fill="#92400E">③ 1995</text>
+  <rect x="386" y="140" width="150" height="120" rx="6" fill="#F59E0B" opacity="0.1" stroke="#B45309" stroke-dasharray="3 3"/>
+  <text x="396" y="160" font-size="11" font-weight="700" fill="#92400E">Turtle Soup (fade)</text>
+  <text x="396" y="176" font-size="9.5" fill="#374151">Linda Raschke &amp;</text>
+  <text x="396" y="189" font-size="9.5" fill="#374151">Laurence Connors,</text>
+  <text x="396" y="202" font-size="9.5" fill="#374151">"Street Smarts": fade</text>
+  <text x="396" y="222" font-size="9.5" fill="#374151">các breakout 20-ngày</text>
+  <text x="396" y="235" font-size="9.5" fill="#374151">THẤT BẠI — đảo ngược Turtles.</text>
+
+  <!-- Node 4: ICT adaptation -->
+  <circle cx="630" cy="120" r="9" fill="#16A34A"/>
+  <text x="590" y="105" font-size="10.5" font-weight="700" fill="#15803D">④ ICT</text>
+  <rect x="556" y="140" width="150" height="120" rx="6" fill="#16A34A" opacity="0.1" stroke="#166534" stroke-dasharray="3 3"/>
+  <text x="566" y="160" font-size="11" font-weight="700" fill="#15803D">ICT Adaptation</text>
+  <text x="566" y="176" font-size="9.5" fill="#374151">Thay "20-ngày high/low"</text>
+  <text x="566" y="189" font-size="9.5" fill="#374151">cứng bằng swing point /</text>
+  <text x="566" y="202" font-size="9.5" fill="#374151">liquidity pool bất kỳ khung.</text>
+  <text x="566" y="222" font-size="9.5" fill="#374151">Gắn thêm MSS +</text>
+  <text x="566" y="235" font-size="9.5" fill="#374151">displacement để xác nhận.</text>
+
+  <!-- arrows -->
+  <path d="M196,200 L214,200" stroke="#9CA3AF" stroke-width="2" marker-end="url(#arrTS)"/>
+  <path d="M366,200 L384,200" stroke="#9CA3AF" stroke-width="2" marker-end="url(#arrTS)"/>
+  <path d="M536,200 L554,200" stroke="#9CA3AF" stroke-width="2" marker-end="url(#arrTS)"/>
+  <defs>
+    <marker id="arrTS" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#9CA3AF"/>
+    </marker>
+  </defs>
+
+  <rect x="24" y="396" width="712" height="50" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="416" font-size="11.5" font-weight="700" fill="#92400E">Điều thay đổi khi ICT hấp thụ: bỏ tham số cố định "20-ngày", thay bằng bất kỳ swing/liquidity pool nào,</text>
+  <text x="36" y="434" font-size="11.5" font-weight="700" fill="#92400E">ở bất kỳ khung thời gian nào — miễn có sweep + reclaim + displacement + MSS xác nhận.</text>
+</svg>

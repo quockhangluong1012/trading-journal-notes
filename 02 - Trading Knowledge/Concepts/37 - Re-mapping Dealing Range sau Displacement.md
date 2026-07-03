@@ -21,7 +21,7 @@ timeframes:
   - M5
 last_reviewed: 2026-07-01
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-03
 common_mistakes:
   - "[[Mistake - Không re-map range sau displacement]]"
   - "[[Mistake - Wrong Dealing Range]]"
@@ -66,6 +66,30 @@ Vì thị trường vận động theo chu kỳ **expansion → retracement → 
 - Không phải lý do để "dời cọc" cho khớp lệnh đang thua; re-map là đọc cấu trúc khách quan, không phải hợp lý hóa.
 - Không phải chỉ đổi con số Fibonacci; nó bao gồm tái phân loại liquidity và xác định POI mới.
 - Không phải tín hiệu vào lệnh; sau khi re-map xong, entry vẫn cần sweep + MSS + displacement trên LTF.
+
+### Lý thuyết nested ranges (range lồng nhau / fractal range)
+
+**Nguyên lý fractal:** Dealing range không tồn tại đơn lẻ trên một khung thời gian — nó luôn là một **mảnh vỡ (fractal)** của một range lớn hơn ở khung cao hơn. Một range M15 mới re-map luôn nằm **bên trong** một range H1 vẫn còn hiệu lực; range H1 đó lại nằm bên trong một range H4/D1 còn hiệu lực. Re-mapping ở LTF **không xóa** range HTF — nó chỉ cập nhật "lớp trong cùng" của một chồng range (stack) đang tồn tại song song trên nhiều khung. Đây là phần mở rộng trực tiếp của tư duy đa khung thời gian ở [[32 - Top-down Analysis (Multiple Timeframes)]].
+
+> [!example] Mô hình "chồng range" (range stack)
+> ```text
+> D1 range   [chưa chết — external D1 chưa bị lấy]
+>   └─ H4 range   [chưa chết — external H4 chưa bị lấy]
+>        └─ H1 range   [VỪA CHẾT — re-map sau displacement]
+>             └─ M15 range MỚI   [vừa vẽ lại, con của H1 mới]
+> ```
+> Khi H1 range chết và được re-map, H4 và D1 range **phía trên nó không nhất thiết đổi** — chúng chỉ đổi khi chính external của H4/D1 bị lấy. Re-map luôn diễn ra từ trong ra ngoài (LTF trước), hiếm khi buộc phải vẽ lại HTF.
+
+**Cách giữ "ngăn xếp range" (range stack) trong đầu mà không bị rối:**
+1. **Luôn neo theo thứ tự D1 → H4 → H1 → M15** khi review — không nhảy cóc khung.
+2. Với mỗi khung, chỉ ghi 3 giá trị: **đáy, đỉnh, equilibrium**. Đây là "trạng thái" tối thiểu của một range.
+3. Khi một range con (M15/H1) được re-map, **kiểm tra ngay** range cha (H4/D1) có còn chứa range con mới không — nếu range con mới đã "trồi" ra ngoài range cha (tức displacement đã đủ mạnh để lấy cả external cha), thì range cha cũng phải re-map theo tầng.
+4. Dùng Quick Reference Card ở Appendix cho **từng tầng** riêng biệt trong Daily Note, đánh số tầng (D1/H4/H1/M15) để không lẫn lộn quy tắc "range nào đang chết, range nào vẫn sống".
+5. Quy tắc vàng: **range con chết thường xuyên hơn range cha rất nhiều lần** — đừng hoảng khi phải re-map M15 nhiều lần trong một phiên, miễn range cha (H4/D1) vẫn nguyên vẹn thì bias tổng thể không đổi.
+
+> [!info] Ví dụ minh họa — Nested Ranges Diagram
+> ![[RemapRange-Nested-Ranges-Diagram.png]]
+> **Chú thích cần vẽ (minh họa khái niệm, KHÔNG phải dữ liệu giao dịch thật):** một khung hình chữ nhật lớn nhãn "D1 Range (đáy–đỉnh)" bao ngoài; bên trong vẽ một hình chữ nhật nhỏ hơn nhãn "H1 Range (đáy–đỉnh, nằm trong discount D1)"; bên trong hình đó vẽ tiếp một hình nhỏ nhất nhãn "M15 Range mới sau displacement". Dùng 3 màu khác nhau cho 3 khung, mỗi khung ghi kèm equilibrium (đường 50% chấm) của chính nó, thể hiện rõ cả ba range tồn tại đồng thời, lồng vào nhau, không cái nào "xóa" cái nào.
 
 ---
 
@@ -136,6 +160,22 @@ Vì thị trường vận động theo chu kỳ **expansion → retracement → 
 - FVG/OB của nhịp đẩy đã bị lấp gần hết → POI cạn.
 - Range mới quá nhỏ, không đủ room tới external → R:R kém.
 
+> [!info] Ví dụ minh họa — 5-Step Re-map Process Visual
+> ![[RemapRange-5Step-Process-Visual.png]]
+> **Chú thích cần vẽ (minh họa quy trình, KHÔNG phải chart giao dịch thật):** một sơ đồ 5 ô theo chiều ngang hoặc dọc, đánh số 1→5, khớp đúng "Quy trình re-map 5 bước" ở trên: Ô 1 "Xác nhận displacement thật" (vẽ nến thân dài + FVG); Ô 2 "Vẽ range mới" (vẽ 2 đường ngang đáy/đỉnh mới); Ô 3 "Đo equilibrium" (vẽ đường 50% chấm giữa); Ô 4 "Phân loại lại liquidity" (đánh dấu external mới bằng mũi tên, internal mới bằng khung FVG/OB); Ô 5 "Chọn POI tiếp theo" (khoanh tròn FVG/OB còn unmitigated ở đúng nửa range). Dùng mũi tên nối tuần tự 1→2→3→4→5 để nhấn mạnh đây là quy trình có thứ tự, không được nhảy bước.
+
+### Rủi ro hai đầu: Over-re-mapping vs Under-re-mapping
+
+Re-mapping là một kỹ năng cần **hiệu chỉnh đúng tần suất** — sai ở cả hai phía đều tốn tiền, theo hai cách khác nhau.
+
+| Thất bại | Biểu hiện | Hậu quả | Cách tự kiểm tra |
+|---|---|---|---|
+| **Over-re-mapping** (vẽ lại quá thường xuyên trên noise) | Redraw range mỗi khi có một nến thân vừa hoặc một wick nhỏ chạm quanh đỉnh/đáy; không phân biệt được displacement thật với dao động bình thường | Liên tục đổi bias, đổi POI; không đủ thời gian để một setup "chín"; giao dịch quá tay theo từng nến nhỏ; dễ bị nhiễu trên NQ1/NDX vì volatility cao | Hỏi: "Nến vừa rồi có FVG không, có đóng thân qua external cũ và giữ acceptance không?" Nếu không cả hai → chưa đủ điều kiện re-map |
+| **Under-re-mapping** (bám range cũ đã chết) | Range đã bị displacement thật xuyên qua từ lâu nhưng vẫn tiếp tục đo premium/discount trên range cũ; chờ giá quay lại một OB đã mitigate | Bỏ lỡ toàn bộ chuỗi lệnh tiếp theo cùng narrative; đọc sai premium/discount → Long nhầm premium của range mới; "đóng băng" phân tích vì cố tìm POI không còn tồn tại | Hỏi: "External nào của range hiện tại tôi đang dùng đã bị lấy chưa? Nếu rồi, tại sao tôi chưa vẽ range mới?" |
+
+> [!tip] Vùng an toàn ở giữa
+> Điểm cân bằng đúng là: **chỉ re-map khi CẢ HAI** điều kiện xảy ra đồng thời — (1) có displacement thật xác nhận bằng momentum + FVG, VÀ (2) nó lấy external hoặc tạo swing point có ý nghĩa. Thiếu một trong hai → chưa re-map (tránh over); đủ cả hai mà vẫn không re-map → đang under.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -163,6 +203,45 @@ Vì thị trường vận động theo chu kỳ **expansion → retracement → 
 
 > [!warning]
 > Range M5 cục bộ chỉ dùng cho execution. Việc "giá đang discount" để quyết định Long/Short phải đo trên **range H1/D1 đã re-map**, không phải range M5.
+
+### Khung quyết định nâng cao — "Consumed hoàn toàn" hay "Consumed một phần"?
+
+Đây là **ca khó nhất** trong re-mapping: displacement vừa lấy một internal liquidity pool, nhưng pool đó lại nằm **rất gần** (hoặc trùng) với external HTF. Câu hỏi bắt buộc: range đã "vẽ xong" (draw complete, cân nhắc đảo bias) hay "mới lấy một phần" (còn room, re-map và đi tiếp)?
+
+> [!example] Ba tiêu chí phân định — chấm điểm từng cái trước khi kết luận
+> 1. **Khoảng cách tới external HTF thật:** internal vừa lấy có phải chính là external HTF (trùng giá, hoặc lệch dưới 10-15% biên độ range HTF) không? Nếu đúng → nghiêng về "fully consumed". Nếu internal đó chỉ là một minor high/low nằm giữa chừng, còn cách external HTF một khoảng đáng kể → nghiêng về "partially consumed".
+> 2. **Cấu trúc HTF có break không?** Nếu nhịp displacement chỉ tạo BOS/MSS trên LTF (M15/H1) mà cấu trúc H4/D1 **chưa break** (chưa có higher high/lower low mới trên H4/D1) → range HTF vẫn nguyên, đây là "partially consumed", re-map con bên trong là đủ. Nếu displacement đủ mạnh để **break luôn cấu trúc H4/D1** → "fully consumed", phải re-map cả tầng cha, và cân nhắc nghiêm túc khả năng đảo bias.
+> 3. **FVG HTF còn unmitigated không?** Nếu vẫn còn một FVG H4/D1 phía sau (chưa bị lấp) làm "lực hút ngược" hoặc làm điểm dừng hợp lý cho retracement → thị trường nhiều khả năng chưa "xong việc" ở phía đó, ủng hộ "partially consumed". Nếu FVG HTF đó đã bị lấp hoàn toàn trong đúng nhịp displacement này → giảm một điểm tựa quan trọng cho việc tiếp tục, nghiêng về "fully consumed".
+
+| Tiêu chí | Nghiêng "Partially consumed" (re-map, đi tiếp) | Nghiêng "Fully consumed" (draw complete, cân nhắc đảo) |
+|---|---|---|
+| Khoảng cách internal vừa lấy → external HTF | Còn cách xa (>15-20% biên độ range HTF) | Trùng hoặc rất sát external HTF |
+| Cấu trúc H4/D1 | Chưa break, chỉ break LTF | Đã break cùng lúc trên H4/D1 |
+| FVG HTF phía sau | Còn unmitigated, chưa bị chạm | Đã bị lấp bởi chính nhịp displacement |
+| Phản ứng giá tại vùng vừa quét | Tiếp tục momentum cùng hướng, đóng nến giữ acceptance | Wick dài, đảo chiều ngay, dấu hiệu turtle soup |
+| Hành động đúng | Re-map range con, tìm POI mới, đi tiếp cùng bias | Re-map range cha, hạ độ ưu tiên bias cũ, tìm xác nhận đảo (sweep + MSS ngược) trước khi vào lệnh ngược |
+
+> [!warning] Khi không chắc — mặc định thận trọng
+> Nếu 3 tiêu chí trên cho tín hiệu trái chiều nhau (ví dụ: khoảng cách gần external nhưng cấu trúc H4 chưa break), **ưu tiên giả định "partially consumed" nhưng giảm size** — vẫn re-map và đi tiếp, nhưng không all-in vào giả thuyết tiếp diễn; đồng thời đặt cảnh báo theo dõi sát dấu hiệu đảo (sweep thất bại, MSS ngược trên LTF).
+
+### Re-mapping theo đặc thù thị trường: NQ1/NDX vs EURUSD/GBPUSD/XAUUSD
+
+Tần suất và cách re-map **không giống nhau** giữa các thị trường bạn giao dịch, vì volatility và nhịp độ phiên khác nhau đáng kể.
+
+| Đặc điểm | NQ1 / NDX (NAS100) | EURUSD / GBPUSD / XAUUSD |
+|---|---|---|
+| Tần suất re-map trong 1 phiên | Cao — có thể re-map nhiều lần trong cùng London hoặc NY session do các nhịp displacement liên tiếp, volatility lớn, nhiều swing nhỏ có ý nghĩa | Thấp hơn — thường 1-2 lần re-map "đáng kể" mỗi ngày; range có xu hướng bền hơn giữa các phiên |
+| Biên độ mỗi lần re-map | Range con thường nhỏ (theo điểm chỉ số) nhưng tỷ lệ % biến động lớn → dễ nhầm noise với displacement thật nếu không kiểm tra FVG rõ ràng | Range con thường lớn hơn về "thời gian hình thành", ít range giả; displacement rõ ràng hơn trên M15/H1 |
+| Rủi ro chính | **Over-re-mapping**: đuổi theo từng nhịp giật do tin tức/thanh khoản mỏng đầu phiên NY; dễ đổi POI liên tục trong 15-30 phút | **Under-re-mapping**: giữ range cũ quá lâu vì thị trường "chậm", dễ bỏ lỡ khi một displacement hiếm hoi nhưng thật sự quan trọng xảy ra (đặc biệt quanh tin NFP/CPI với XAUUSD) |
+| Khung nên dùng để xác nhận displacement trước khi re-map | Bắt buộc xác nhận trên M15/H1 (không re-map chỉ dựa trên M1/M5 noise) | Có thể tin tưởng M15/H1 ngay khi displacement xuất hiện, ít cần lọc thêm |
+| Hướng dẫn thực hành | Giới hạn số lần re-map thực sự ảnh hưởng đến quyết định vào lệnh — tối đa theo dõi 2-3 tầng range (H1 → M15 → M5) mỗi phiên; bỏ qua các "giả displacement" trên M1 | Khi một displacement H1/H4 thật xuất hiện (hiếm hơn), re-map ngay lập tức và nghiêm túc theo hết chuỗi lệnh — đây thường là narrative chính trong ngày, không phải noise |
+
+> [!tip] Quy tắc thực dụng cho tài khoản của bạn
+> Với **NQ1/NDX**: chỉ tăng mức độ tin cậy của một re-map khi displacement đóng thân rõ ràng qua external trên **H1** (không phải M5), vì volatility cao khiến M5 sinh ra rất nhiều "range giả". Với **EURUSD/GBPUSD/XAUUSD**: đừng chờ quá lâu để xác nhận — một displacement H1 thật trên các cặp này thường là toàn bộ cơ hội trong ngày, chậm re-map đồng nghĩa bỏ lỡ cả chuỗi lệnh.
+
+> [!info] Ví dụ minh họa — Displacement (tạo range mới) vs Pullback (không tạo range mới)
+> ![[RemapRange-Displacement-vs-Pullback-Comparison.png]]
+> **Chú thích cần vẽ (so sánh khái niệm cạnh nhau, KHÔNG phải chart giao dịch thật):** chia đôi hình theo chiều dọc. Bên trái nhãn "DISPLACEMENT — tạo range mới": vẽ 2-3 nến thân dài liên tiếp cùng hướng, để lại một FVG rõ ràng, đóng thân qua đường external cũ (nét đứt) và giữ giá ở bên ngoài (acceptance) — ghi chú "Re-map required". Bên phải nhãn "PULLBACK — không tạo range mới": vẽ các nến thân nhỏ, nhiều wick, dao động qua lại quanh một vùng, không chạm external, không để lại FVG đáng kể — ghi chú "Giữ nguyên range cũ, không re-map". Dùng cùng trục giá để người xem so sánh trực quan biên độ và "chất lượng" của hai loại nhịp.
 
 ---
 
@@ -195,7 +274,7 @@ Vì thị trường vận động theo chu kỳ **expansion → retracement → 
 ## 6. Ví dụ chart
 
 ### Ví dụ đúng — Re-map sau khi Long chạm internal liquidity, tìm được FVG H1 làm POI tiếp
-![[paste-image-here.png]]
+![[RemapRange-Example-Correct-NewPOIFound.png]]
 
 **Mô tả:**  
 Range cũ: đáy đã sweep SSL → OB H1 ở discount. Trader Long tại FVG M5 trong OB đó, giá displacement đi lên và **quét một đỉnh cũ (internal BSL)** — trader thoát 1.6R. Thay vì kết luận "hết POI vì OB đã mitigate", trader **re-map**: vẽ range mới từ **đáy vừa entry → đỉnh vừa quét**, đo equilibrium. Nhịp đẩy lên để lại một **FVG H1** nằm ở discount của range mới, còn unmitigated. Đó là POI tiếp theo. Trader chờ giá retrace về FVG H1, xuống M5 chờ MSS + displacement + FVG M5, vào Long tiếp, target là external BSL còn mở (đỉnh cao hơn / đường xanh trên).
@@ -207,7 +286,7 @@ Range cũ: đáy đã sweep SSL → OB H1 ở discount. Trader Long tại FVG M5
 - Luồng internal → external được nối tiếp mạch lạc thay vì "chờ trong vô định".
 
 ### Ví dụ sai / dễ nhầm — không re-map, cố chờ OB cũ hoặc Long ở premium range mới
-![[paste-image-here.png]]
+![[RemapRange-Example-Wrong-StuckOnOldOB.png]]
 
 **Mô tả lỗi:**  
 Sau khi thoát lệnh, trader vẫn dán mắt vào OB H1 cũ (đã mitigate) và chờ giá quay lại đó — nhưng giá không về, trader bỏ lỡ nhịp tiếp theo. Hoặc tệ hơn: trader thấy giá đang đi lên, nhảy vào Long ngay mà không re-map, hóa ra giá đang ở **premium của range mới**, sát BSL sắp bị quét → giá đảo, lệnh thua.
@@ -253,7 +332,56 @@ Khái niệm này thường kết hợp với:
 
 ---
 
-## 8. Checklist trước khi áp dụng vào trade
+## Best Practices
+
+> [!summary] Tinh thần của mục này
+> Biết quy trình re-map (mục 3-4) là điều kiện cần; **biến nó thành thói quen kỷ luật, nhất quán** mới là điều kiện đủ để nó tạo ra edge thật trên tài khoản. Đây là những thói quen phân biệt trader chuyên nghiệp với người mới biết khái niệm.
+
+### 1. Re-map NGAY khi xác nhận displacement thật — đừng chờ
+
+Ngay khi nến đóng thân xác nhận displacement (momentum + FVG + lấy external/tạo swing mới), **vẽ range mới trong vòng vài giây**, không đợi thêm nến xác nhận, không đợi "chắc chắn hơn".
+
+> [!warning] Cái giá của re-map trễ
+> Re-mapping trễ (chờ thêm 2-3 nến để "chắc ăn") thường khiến bạn **bỏ lỡ chính nhịp continuation** mà range mới vừa mở ra — giá đã chạy qua POI mới (FVG/OB của nhịp đẩy) trước khi bạn kịp đánh dấu nó. Hậu quả điển hình: bạn nhận ra POI mới *sau khi* giá đã rời khỏi đó, và phải chờ một chu kỳ displacement khác. Trong ICT 2022 Model, cửa sổ giữa lúc POI mới hình thành và lúc giá quay lại lấp nó thường rất hẹp — chậm một nhịp là mất một entry.
+
+### 2. Giữ một log/screenshot đơn giản cho mỗi lần re-map trong phiên
+
+Mỗi khi re-map, chụp nhanh 1 ảnh màn hình (hoặc ghi 1 dòng vào Quick Reference Card ở Appendix) với tối thiểu: giờ, hai đầu range mới, POI được chọn. Cuối phiên/cuối ngày, xâu chuỗi lại các log này theo thứ tự thời gian.
+
+> [!tip] Vì sao việc này quan trọng
+> Một chuỗi log re-map theo thời gian biến một phiên giao dịch rời rạc thành **một câu chuyện có thể review**: bạn thấy rõ narrative đã "consumed" bao nhiêu tầng liquidity, ở đâu range bị đọc sai, ở đâu bạn re-map đúng nhưng vào lệnh sai thời điểm. Không có log này, review cuối ngày chỉ dựa vào trí nhớ — dễ bóp méo theo hướng có lợi cho cái tôi (hindsight bias).
+
+### 3. Tự kiểm tra để tránh bẫy "re-map để hợp lý hóa lệnh thua"
+
+Đây là lỗi nghiêm trọng nhất liên quan đến re-mapping (xem thêm mục 10). Trước khi vẽ lại bất kỳ range nào **trong lúc đang có một lệnh mở đang lỗ**, bắt buộc tự hỏi:
+
+> [!question] Câu hỏi tự kiểm tra bắt buộc
+> **"Nếu tôi KHÔNG có lệnh nào đang mở lúc này, tôi có vẽ range y hệt thế này không?"**
+> - Nếu câu trả lời là **Có** (bạn sẽ vẽ giống vậy dù không có lệnh nào bị ảnh hưởng) → re-map hợp lệ, cứ tiếp tục.
+> - Nếu câu trả lời là **Không / Không chắc** (bạn đang cố nắn range để đường equilibrium/POI trùng khớp với vị thế đang có) → đây là bias confirmation, dừng lại, không re-map, chấp nhận đọc cấu trúc khách quan kể cả khi nó xác nhận lệnh đang thua.
+
+### 4. Re-mapping phải dẫn dắt scale-out & giữ runner, không chỉ dẫn dắt entry
+
+Mỗi lần re-map không chỉ tìm POI vào lệnh mới — nó còn định nghĩa lại **các mốc internal/external tiếp theo để quản lý lệnh đang chạy**:
+- Khi giá tiến tới **internal liquidity mới** (được xác định lại sau re-map gần nhất) → đây là điểm hợp lý để **chốt một phần (scale-out)**, đúng như bài học ở mục 6 (sửa lỗi thoát toàn bộ ở 1.6R).
+- Phần **runner còn lại** nên được giữ tới **external mới** của range vừa re-map — không phải external của range cũ (đã tiêu thụ) và cũng không chốt cảm tính giữa chừng.
+- Mỗi khi một external mới bị lấy, đó vừa là tín hiệu chốt thêm một phần, vừa là tín hiệu **re-map lần kế tiếp** — hai hành động luôn đi cùng nhau, không tách rời.
+
+### 5. Bảng đối chiếu: Thói quen nghiệp dư vs Thói quen chuyên nghiệp
+
+| Tình huống | Thói quen nghiệp dư | Thói quen chuyên nghiệp |
+|---|---|---|
+| Vừa xác nhận displacement thật | Ghi nhận trong đầu, "để lát nữa vẽ lại" | Vẽ range mới ngay lập tức, ghi giá hai đầu trước khi làm gì khác |
+| Đang có lệnh mở đang lỗ | Vẽ lại range sao cho entry "trông như" đang ở discount/premium đúng | Tự hỏi "nếu không có lệnh, tôi có vẽ vậy không?" — giữ range khách quan dù bất lợi cho lệnh hiện tại |
+| OB/POI cũ đã mitigate | Kết luận "hết setup", đứng ngoài chờ giá quay lại chỗ cũ | Re-map ngay, tìm POI mới (FVG/OB của nhịp đẩy) trong range vừa vẽ lại |
+| Giá chạm internal liquidity mới | Thoát toàn bộ vị thế vì "ăn chắc", hoặc ngược lại tham lam không chốt gì cả | Scale-out một phần tại internal, dời stop hợp lý, giữ runner tới external mới |
+| Review cuối ngày | Nhớ lại đại khái "hôm nay có re-map vài lần" | Có log/screenshot từng lần re-map theo thời gian, đối chiếu được narrative đã đi đúng hay sai ở đâu |
+| Nhịp giá nhỏ, nhiều wick xuất hiện | Vẽ lại range theo mỗi dao động nhỏ (over-re-mapping) | Kiểm tra đủ điều kiện (momentum + FVG + lấy external/swing mới) trước khi re-map |
+| External HTF đã bị lấy, draw hoàn tất | Cố re-map liên tục để tìm lệnh cùng hướng cũ | Dừng tìm lệnh cùng hướng, đánh giá nghiêm túc khả năng đảo bias |
+
+---
+
+## 9. Checklist trước khi áp dụng vào trade
 
 > [!warning] Không trade chỉ vì thấy khái niệm xuất hiện
 > Re-map cho bạn range và POI mới — nhưng có range chưa phải có lệnh. Vẫn cần location đúng + POI hợp lệ + xác nhận LTF.
@@ -284,7 +412,7 @@ Khái niệm này thường kết hợp với:
 
 ---
 
-## 9. Lỗi thường gặp
+## 10. Lỗi thường gặp
 
 | Lỗi | Dấu hiệu | Cách sửa |
 |---|---|---|
@@ -298,7 +426,7 @@ Khái niệm này thường kết hợp với:
 
 ---
 
-## 10. Câu hỏi tự kiểm tra
+## 11. Câu hỏi tự kiểm tra
 
 - Nhịp vừa rồi là displacement thật hay chỉ pullback?
 - Displacement đó đã lấy external nào, tạo swing mới ở đâu?
@@ -311,7 +439,7 @@ Khái niệm này thường kết hợp với:
 
 ---
 
-## 11. Flashcards / Active Recall
+## 12. Flashcards / Active Recall
 
 ### Q1
 **Hỏi:** Re-mapping Dealing Range là gì?  
@@ -339,7 +467,7 @@ Khái niệm này thường kết hợp với:
 
 ---
 
-## 12. Liên kết với Trade Journal
+## 13. Liên kết với Trade Journal
 
 ### Lệnh áp dụng đúng khái niệm này
 ```dataview
@@ -362,7 +490,7 @@ SORT date DESC
 
 ---
 
-## 13. Lesson Learned
+## 14. Lesson Learned
 
 ### Bài học chính
 - **POI không biến mất, nó đổi dạng.** OB mitigate ≠ hết cơ hội; displacement tạo POI mới.
@@ -382,7 +510,7 @@ SORT date DESC
 
 ---
 
-## 14. Mức độ thành thạo
+## 15. Mức độ thành thạo
 
 | Tiêu chí | Điểm 1-5 | Ghi chú |
 |---|---:|---|

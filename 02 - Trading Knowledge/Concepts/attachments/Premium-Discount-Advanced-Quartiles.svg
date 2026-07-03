@@ -1,0 +1,49 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Chia nhỏ Premium/Discount thành Quartile (0-25-50-75-100%)</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Đọc "sâu" hay "nhẹ" thay vì chỉ nhị phân trên/dưới 50% — quartile quyết định độ tin cậy và conviction.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- 4 quartile bands, top(100%) to bottom(0%), each 65px tall -->
+  <!-- Q4: 75-100% deep premium -->
+  <rect x="60" y="96" width="560" height="65" fill="#DC2626" opacity="0.16"/>
+  <text x="70" y="118" font-size="12" font-weight="700" fill="#B91C1C">75–100% — DEEP PREMIUM</text>
+  <text x="70" y="134" font-size="10" fill="#991B1B">Short tối ưu, conviction cao nhất; cấm mở Long mới</text>
+  <text x="70" y="150" font-size="10" fill="#991B1B">Size lệnh có thể full theo plan nếu đủ confluence</text>
+
+  <!-- Q3: 50-75% premium nong -->
+  <rect x="60" y="161" width="560" height="65" fill="#F59E0B" opacity="0.16"/>
+  <text x="70" y="183" font-size="12" font-weight="700" fill="#92400E">50–75% — PREMIUM NÔNG</text>
+  <text x="70" y="199" font-size="10" fill="#92400E">Short được nhưng cần confluence mạnh hơn (POI HTF + sweep)</text>
+  <text x="70" y="215" font-size="10" fill="#92400E">Conviction trung bình; size giảm nếu thiếu xác nhận</text>
+
+  <!-- Equilibrium line -->
+  <line x1="60" y1="226" x2="620" y2="226" stroke="#3B82F6" stroke-width="2.6" stroke-dasharray="7 4"/>
+  <text x="628" y="222" font-size="11" font-weight="700" fill="#1D4ED8">50% EQ</text>
+
+  <!-- Q2: 25-50% discount nong -->
+  <rect x="60" y="226" width="560" height="65" fill="#86EFAC" opacity="0.28"/>
+  <text x="70" y="248" font-size="12" font-weight="700" fill="#166534">25–50% — DISCOUNT NÔNG</text>
+  <text x="70" y="264" font-size="10" fill="#166534">Long được nhưng cần confluence mạnh hơn</text>
+  <text x="70" y="280" font-size="10" fill="#166534">Dễ bị nhúng sâu thêm về deep discount — cẩn trọng size</text>
+
+  <!-- Q1: 0-25% deep discount -->
+  <rect x="60" y="291" width="560" height="65" fill="#16A34A" opacity="0.22"/>
+  <text x="70" y="313" font-size="12" font-weight="700" fill="#166534">0–25% — DEEP DISCOUNT</text>
+  <text x="70" y="329" font-size="10" fill="#15803D">Long tối ưu, conviction cao nhất — nơi OTE (62–79%) thường rơi vào</text>
+  <text x="70" y="345" font-size="10" fill="#15803D">Size lệnh full theo plan nếu đủ confluence</text>
+
+  <!-- axis labels 100/75/50/25/0 -->
+  <text x="628" y="100" font-size="10" fill="#374151">100%</text>
+  <text x="628" y="165" font-size="10" fill="#374151">75%</text>
+  <text x="628" y="291" font-size="10" fill="#374151">25%</text>
+  <text x="628" y="360" font-size="10" fill="#374151">0%</text>
+
+  <!-- conviction gauge on right -->
+  <text x="90" y="88" font-size="10.5" fill="#6B7280">Conviction / aggressiveness entry tăng khi giá vào quartile cực trị (Q1 hoặc Q4)</text>
+
+  <rect x="24" y="410" width="712" height="54" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="428" font-size="11.5" font-weight="700" fill="#92400E">Quartile không đổi hướng lệnh — chỉ đổi CONVICTION và AGGRESSIVENESS entry. Q1/Q4 = size đủ + entry sớm hơn;</text>
+  <text x="36" y="446" font-size="11.5" font-weight="700" fill="#92400E">Q2/Q3 = đòi thêm confluence (sweep + MSS + POI HTF) trước khi vào, hoặc giảm size / bỏ qua nếu thiếu.</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">CLOSE vs WICK — điều kiện sống còn của IFVG</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Chỉ khi BODY đóng xuyên + giữ giá bên kia thì FVG mới đảo cực. Bóng chọc qua ≠ inversion.</text>
+
+  <!-- LEFT PANEL: WICK -->
+  <rect x="24" y="72" width="345" height="340" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="24" y="72" width="345" height="30" rx="8" fill="#16A34A" opacity="0.12"/>
+  <text x="40" y="92" font-size="13.5" font-weight="700" fill="#15803D">WICK qua FVG → FVG vẫn RESPECT</text>
+
+  <!-- FVG zone left -->
+  <rect x="44" y="230" width="305" height="34" fill="#16A34A" opacity="0.16"/>
+  <text x="52" y="224" font-size="10" fill="#15803D">Bullish FVG (hỗ trợ)</text>
+
+  <!-- price coming down, wick pierces, body closes inside/above -->
+  <path d="M60,150 L100,200 L130,185 L165,240" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <!-- the wick candle: long lower wick through FVG, body closes back inside -->
+  <line x1="180" y1="245" x2="180" y2="320" stroke="#16A34A" stroke-width="2"/>
+  <rect x="172" y="245" width="16" height="18" fill="#16A34A" rx="1"/>
+  <text x="196" y="315" font-size="10" fill="#DC2626">Bóng chọc XUỐNG qua gap</text>
+  <text x="196" y="330" font-size="10" font-weight="700" fill="#15803D">nhưng body ĐÓNG LẠI bên trong</text>
+
+  <!-- price continues original direction (up) -->
+  <path d="M180,255 L220,215 L250,235 L295,150 L330,120" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <text x="205" y="140" font-size="10.5" font-weight="700" fill="#15803D">→ KHÔNG đảo cực</text>
+  <text x="205" y="155" font-size="10.5" fill="#15803D">tiếp tục hướng GỐC (lên)</text>
+
+  <rect x="44" y="360" width="305" height="40" rx="6" fill="#DCFCE7"/>
+  <text x="56" y="378" font-size="10.5" font-weight="700" fill="#166534">Phán quyết: FVG còn sống.</text>
+  <text x="56" y="393" font-size="10.5" fill="#166534">Trade theo hướng GỐC — KHÔNG phải IFVG.</text>
+
+  <!-- RIGHT PANEL: CLOSE -->
+  <rect x="391" y="72" width="345" height="340" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="391" y="72" width="345" height="30" rx="8" fill="#DC2626" opacity="0.12"/>
+  <text x="407" y="92" font-size="13.5" font-weight="700" fill="#B91C1C">CLOSE qua FVG → INVERSION (IFVG)</text>
+
+  <!-- FVG zone right -->
+  <rect x="411" y="200" width="305" height="34" fill="#16A34A" opacity="0.16"/>
+  <text x="419" y="194" font-size="10" fill="#15803D">Bullish FVG cũ</text>
+
+  <!-- price down, body closes THROUGH and holds below -->
+  <path d="M427,140 L465,190 L495,175 L525,210" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <!-- big bearish body closing through -->
+  <line x1="540" y1="185" x2="540" y2="300" stroke="#DC2626" stroke-width="2"/>
+  <rect x="532" y="205" width="16" height="90" fill="#DC2626" rx="1"/>
+  <text x="556" y="235" font-size="10.5" font-weight="700" fill="#B91C1C">Body ĐÓNG XUYÊN</text>
+  <text x="556" y="250" font-size="10.5" fill="#B91C1C">+ giữ giá bên kia</text>
+
+  <!-- price holds below (acceptance) -->
+  <path d="M540,295 L575,320 L605,305 L640,345 L690,360" fill="none" stroke="#DC2626" stroke-width="2.4"/>
+  <text x="560" y="335" font-size="10" fill="#B91C1C">acceptance dưới gap</text>
+
+  <rect x="411" y="360" width="305" height="40" rx="6" fill="#FEE2E2"/>
+  <text x="423" y="378" font-size="10.5" font-weight="700" fill="#991B1B">Phán quyết: inversion xác nhận.</text>
+  <text x="423" y="393" font-size="10.5" fill="#991B1B">Vùng cũ → kháng cự. Chờ retest → Short (IFVG).</text>
+
+  <rect x="24" y="424" width="712" height="34" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="445" font-size="11.5" font-weight="700" fill="#92400E">Nguyên tắc vàng: Đóng nến xuyên = FVG đảo cực. Bóng chọc qua = FVG vẫn sống — chờ CLOSE, rồi chờ retest.</text>
+</svg>

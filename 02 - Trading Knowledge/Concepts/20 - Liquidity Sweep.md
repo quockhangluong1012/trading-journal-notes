@@ -25,7 +25,7 @@ models:
   - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
-updated: 2026-07-02
+updated: 2026-07-03
 common_mistakes:
   - "[[Mistake - Trade The Wick Immediately]]"
   - "[[Mistake - Confuse Real Break With Sweep]]"
@@ -44,6 +44,10 @@ common_mistakes:
 ---
 
 ## 1. Định nghĩa
+
+![[Liquidity-Sweep-Definition.svg]]
+
+*Hình: Phân biệt Sweep (wick xuyên → reclaim + displacement → đảo chiều) với Break thật (đóng nến vượt hẳn + acceptance → tiếp diễn).*
 
 **Khái niệm:**
 Liquidity Sweep (còn gọi stop hunt, liquidity grab, stop raid) là khi giá di chuyển vượt qua một mức nơi tập trung lệnh chờ — đỉnh cũ, đáy cũ, equal highs/lows, hoặc đường xu hướng rõ ràng — để **kích hoạt** các lệnh đó, sau đó **đảo chiều**. Nhóm thanh khoản bị quét chính là "nhiên liệu": stop loss của trader đang giữ lệnh + breakout order của trader mới vào, cộng lại tạo đủ khối lượng đối ứng để smart money khớp lệnh lớn của họ.
@@ -81,6 +85,10 @@ Phần lớn trader thua lỗ vì họ **là** thanh khoản: họ đặt stop n
 
 ## 2. Bối cảnh sử dụng
 
+![[Liquidity-Sweep-Context-Types.svg]]
+
+*Hình: Các loại sweep — SSL Sweep (→ Long), BSL Sweep (→ Short), Turtle Soup, internal vs external; khi nào giá trị cao / nên bỏ qua.*
+
 ### Các loại / trạng thái của Liquidity Sweep
 
 | Loại | Mô tả | Ý nghĩa thực chiến |
@@ -113,6 +121,10 @@ Phần lớn trader thua lỗ vì họ **là** thanh khoản: họ đặt stop n
 ---
 
 ## 3. Cấu trúc nhận diện trên chart
+
+![[Liquidity-Sweep-Structure.svg]]
+
+*Hình: Chuỗi 5 dấu hiệu của sweep hợp lệ — Pool → Spike/wick → Reclaim → Displacement → MSS.*
 
 ### Dấu hiệu chính
 1. **Pool liquidity được xác định trước:** một mức có nhiều stop (equal highs/lows, đỉnh/đáy cũ rõ).
@@ -155,6 +167,10 @@ Phần lớn trader thua lỗ vì họ **là** thanh khoản: họ đặt stop n
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
+
+![[Liquidity-Sweep-MTF-Workflow.svg]]
+
+*Hình: Top-down D1/H4 → H1/M15 → M5/M1 với 4 câu hỏi bắt buộc; trade phản ứng sau sweep, không trade cú sweep.*
 
 > [!example] Quy trình 4 câu bắt buộc trước khi dùng Liquidity Sweep
 > 1. **Pool liquidity nào đang là mục tiêu, và cú quét vừa rồi lấy pool nào?**
@@ -210,6 +226,10 @@ Invalid: đóng nến M15/H1 lại lên trên [level] (thành break thật)
 ---
 
 ## 5. Quy tắc xác nhận / vô hiệu hóa
+
+![[Liquidity-Sweep-Validation.svg]]
+
+*Hình: Sweep thành công vs Sweep yếu vs Break thật vs Double sweep — và cách phòng tránh cái bẫy double sweep.*
 
 ### Setup được xem là hợp lệ khi
 - [ ] Pool liquidity bị quét rõ ràng (equal highs/lows, swing cũ, PDH/PDL).

@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Giải phẫu Bullish Breaker — OB fail + sweep + MSS = đảo cực</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Bối cảnh: giá ở discount, một cụm nến giảm (OB cũ) sắp bị "phá vai trò" sau sweep + displacement.</text>
+
+  <rect x="24" y="70" width="712" height="340" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- OB cu = cụm nến giảm gần High1 -->
+  <rect x="150" y="150" width="120" height="34" fill="#DC2626" opacity="0.14"/>
+  <text x="150" y="144" font-size="10.5" fill="#B91C1C">① OB cũ = cụm nến giảm gần High1 (vùng breaker tương lai)</text>
+
+  <!-- leg: Low1 -> High1 -->
+  <path d="M60,340 L110,250 L160,175 L210,220" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="60" cy="340" r="5" fill="#D1D5DB"/>
+  <text x="40" y="360" font-size="10" fill="#9CA3AF">Low1</text>
+  <circle cx="160" cy="175" r="6" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+  <text x="120" y="165" font-size="10.5" font-weight="700" fill="#15803D">High1 — mức MSS phải phá</text>
+  <line x1="160" y1="175" x2="470" y2="175" stroke="#16A34A" stroke-width="1.4" stroke-dasharray="6 4"/>
+
+  <!-- xuống quét SSL -->
+  <path d="M210,220 L250,300 L285,390" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <line x1="60" y1="345" x2="360" y2="345" stroke="#6B7280" stroke-width="1.1" stroke-dasharray="4 4"/>
+  <text x="366" y="349" font-size="9.5" fill="#9CA3AF">mức Low1</text>
+  <circle cx="285" cy="390" r="9" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+  <line x1="225" y1="396" x2="345" y2="396" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <text x="235" y="416" font-size="10.5" font-weight="700" fill="#B45309">② Sweep SSL (Low2 &lt; Low1) rồi reject — PHẢI xảy ra trước</text>
+
+  <!-- displacement lên phá High1 -->
+  <path d="M285,390 L330,320 L350,338 L420,150" fill="none" stroke="#16A34A" stroke-width="2.8"/>
+  <rect x="424" y="140" width="2" height="90" fill="#16A34A"/><rect x="418" y="148" width="13" height="70" fill="#16A34A" rx="1"/>
+  <text x="440" y="152" font-size="10.5" font-weight="700" fill="#15803D">③ Displacement phá High1 = MSS bullish</text>
+  <text x="440" y="167" font-size="10.5" fill="#15803D">+ để lại FVG (body close, không phải wick)</text>
+
+  <!-- FVG -->
+  <rect x="360" y="228" width="120" height="24" fill="#3B82F6" opacity="0.18"/>
+  <text x="484" y="244" font-size="10.5" fill="#1D4ED8">FVG của nhịp displacement</text>
+
+  <!-- OB flip -> bullish breaker (hỗ trợ) -->
+  <rect x="150" y="184" width="330" height="0" fill="none"/>
+  <rect x="360" y="150" width="130" height="34" fill="#16A34A" opacity="0.16" stroke="#16A34A" stroke-dasharray="4 3"/>
+  <text x="360" y="270" font-size="10.5" font-weight="700" fill="#15803D">④ OB cũ đảo cực → BULLISH BREAKER (hỗ trợ)</text>
+
+  <!-- retest + entry -->
+  <path d="M420,150 L455,205 L478,240 L500,205 L555,150 L600,180 L660,95" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="478" cy="240" r="6" fill="#16A34A"/>
+  <text x="470" y="298" font-size="10.5" font-weight="700" fill="#15803D">⑤ Retest breaker/FVG = Entry Long</text>
+  <text x="470" y="313" font-size="10.5" fill="#6B7280">stop dưới Low2; vào tại mép/Mean Threshold</text>
+
+  <!-- target BSL -->
+  <line x1="600" y1="95" x2="716" y2="95" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="600" y="86" font-size="10.5" fill="#166534">⑥ Target: BSL (buy-side liquidity)</text>
+
+  <rect x="24" y="418" width="712" height="52" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="438" font-size="11.5" font-weight="700" fill="#92400E">Bearish Breaker đối xứng: cụm nến TĂNG gần Low1 (OB cũ) → sweep BSL trên đỉnh (High2 &gt; High1)</text>
+  <text x="36" y="456" font-size="11.5" font-weight="700" fill="#92400E">→ displacement phá Low1 = MSS bearish + FVG → OB đảo cực thành kháng cự → Short khi retest; target SSL.</text>
+</svg>

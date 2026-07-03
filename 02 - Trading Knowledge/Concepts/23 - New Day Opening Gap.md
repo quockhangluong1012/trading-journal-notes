@@ -22,7 +22,7 @@ models:
 importance: 4
 confidence: 1
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-03
 related_concepts:
   - "[[24 - New Week Opening Gap]]"
   - "[[10 - Consequent Encroachment (Mean Threshold)]]"
@@ -184,6 +184,37 @@ Reopen (~18:00 ET) ───────────── cạnh dưới ──
 - [ ] Giá đã xuyên CE nhiều lần không phản ứng.
 - [ ] Mức HTF mạnh hơn (NWOG, weekly level) nằm ngay sát.
 
+### Nâng cao — NY Midnight Open Price Theory và mối liên hệ với NDOG
+
+ICT dùng một mốc riêng gọi là **Midnight Open (MO)** — giá mở cửa tại đúng **00:00 ET** — như đường tham chiếu bias cho toàn bộ phần còn lại của ngày: **giá đang giao dịch TRÊN Midnight Open thì thiên hướng của ngày là bullish; giá đang giao dịch DƯỚI Midnight Open thì thiên hướng là bearish.** Đây không phải là NDOG, nhưng hai mốc này gắn rất chặt với nhau về mặt thời gian và giá trị: NDOG là khoảng gap giữa Prior Day Close (~16:00–16:15 ET) và Reopen (~18:00 ET), còn Midnight Open nằm ngay bên trong (hoặc rất sát) hành trình giá diễn ra sau đó — nói cách khác, **NDOG straddle (bao trùm/nằm sát) quanh đúng mốc Midnight Open** vì cả hai đều hình thành trong cùng một cửa sổ "đầu ngày mới" theo giờ ET.
+
+![[NDOG-Advanced-MidnightOpenTheory.svg]]
+*Giá trên đường Midnight Open (00:00 ET) mang thiên hướng bullish trong ngày; giá dưới mang thiên hướng bearish. NDOG luôn straddle sát mốc này vì cả hai đều hình thành quanh cùng một khung giờ đầu ngày.*
+
+Cách một trader dùng cặp mốc này làm bộ lọc hướng trong ngày:
+1. **Xác định vị trí giá so với CE của NDOG** (premium hay discount — xem [[27 - Premium Discount]]) và **vị trí giá so với Midnight Open** (trên hay dưới) gần như cùng lúc.
+2. **Khi hai tín hiệu đồng thuận** (vd: giá vừa ở discount của NDOG vừa đang trên Midnight Open sau khi retest) → độ tin cậy của [[12 - Daily Bias]] hướng bullish tăng lên, vì hai mốc độc lập cùng chỉ một hướng.
+3. **Khi hai tín hiệu mâu thuẫn** (vd: giá ở discount của NDOG nhưng vẫn nằm dưới Midnight Open) → nên coi bias là chưa rõ ràng, cần thêm [[21 - Market Structure Shift]] LTF xác nhận trước khi vào lệnh, thay vì ép theo một mốc duy nhất.
+4. Midnight Open cũng hoạt động như một **mốc support/resistance intraday riêng** — giá có xu hướng retrace về đây trong phiên NY trước khi tiếp tục — tương tự cách CE của NDOG hút giá về, nhưng đây là hai mốc tách biệt, không nên gộp làm một.
+
+> [!info] Phân biệt rõ hai mốc
+> **NDOG** = khoảng gap giữa hai mức giá (Prior Close ↔ Reopen), có **độ rộng** và một **CE ở giữa**. **Midnight Open** = một **đường giá đơn** tại đúng 00:00 ET, không có độ rộng. Chúng gần nhau về thời gian và thường được dùng cùng lúc, nhưng là hai công cụ khác nhau — NDOG cho vùng/target, Midnight Open cho bộ lọc hướng nhanh. Số liệu thắng/thua khi kết hợp cả hai **cần backtest xác nhận** trên từng thị trường (NQ1/NDX khác EURUSD/GBPUSD/XAUUSD).
+
+### Nâng cao — Consequent Encroachment (50%) của NDOG như một mốc mean-threshold/target
+
+CE (50% của NDOG) không chỉ là "đường ở giữa cho đẹp" — nó hoạt động như một **nam châm giá (mean-threshold)** đúng theo logic ICT vẫn dùng cho [[10 - Consequent Encroachment (Mean Threshold)]] khi áp cho FVG: thị trường có xu hướng quay lại lấp một nửa vùng inefficiency trước khi quyết định tiếp diễn hay đảo chiều thật sự. Với NDOG, CE là nơi giá "cân bằng lại" giữa Prior Day Close và Reopen sau khi gap hình thành qua giờ nghỉ bảo trì.
+
+![[NDOG-Advanced-ConsequentEncroachment.svg]]
+*CE (50% của NDOG) hoạt động như nam châm hút giá từ cả premium lẫn discount của ngày; giá trên CE = premium (ưu tiên Short theo bias bearish), giá dưới CE = discount (ưu tiên Long theo bias bullish).*
+
+Cách CE của NDOG tương tác với khung Premium/Discount trong ngày:
+- **Giá trên CE = premium của ngày** — vùng ưu tiên tìm Short nếu [[12 - Daily Bias]] là bearish; giá dưới CE = **discount của ngày** — vùng ưu tiên tìm Long nếu bias bullish. Đây là cách dùng CE của NDOG y hệt cách dùng CE của một FVG lớn để định vị premium/discount cục bộ, chỉ khác quy mô thời gian (cả ngày thay vì một cú swing).
+- **CE là TARGET/mốc chờ phản ứng, không phải trigger entry.** Giá đạt CE chỉ xác nhận "đã về tới vùng cân bằng" — vẫn cần [[20 - Liquidity Sweep]] + [[21 - Market Structure Shift]] LTF trước khi coi đó là một setup hợp lệ, giống hệt nguyên tắc đã nêu ở mục 3 và mục 5 của note này.
+- Khi **CE của NDOG trùng với CE của một [[24 - New Week Opening Gap]]** đang mở, đây là một dạng confluence mean-threshold hai tầng (ngày + tuần) — độ tin cậy của target cao hơn, nhưng theo nguyên tắc đã nêu ở phần so sánh NDOG/NWOG, vẫn ưu tiên NWOG khi hai mốc mâu thuẫn về hướng.
+
+> [!tip] Fractal với NWOG
+> Về bản chất, **một tuần giao dịch chứa nhiều NDOG lồng bên trong nó** — mỗi NDOG là một "phiên bản thu nhỏ theo ngày" của cùng cơ chế gap-qua-thời-gian tạo ra [[24 - New Week Opening Gap]] ở quy mô tuần. CE của từng NDOG trong tuần có thể được nhìn như các mốc mean-threshold nhỏ nằm bên trong mốc mean-threshold lớn hơn là CE của NWOG — một quan hệ fractal giữa hai khung thời gian, không phải hai công cụ độc lập.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -259,7 +290,7 @@ Reopen (~18:00 ET) ───────────── cạnh dưới ──
 ## 6. Ví dụ chart
 
 ### Ví dụ đúng
-![[NDOG-Example-Correct.png]]
+![[NDOG-Example-Correct.svg]]
 
 **Mô tả:**
 - Ngày mở **gap down** (Reopen < Prior Close); giá đầu phiên nằm ở discount dưới CE.
@@ -273,7 +304,7 @@ Reopen (~18:00 ET) ───────────── cạnh dưới ──
 - Tiếp cận trong kill zone, đúng phía premium/discount.
 
 ### Ví dụ sai
-![[NDOG-Example-Wrong.png]]
+![[NDOG-Example-Wrong.svg]]
 
 **Mô tả:**
 - Trader vào long ngay khi giá **vừa chạm CE** mà không chờ phản ứng/MSS.
@@ -287,7 +318,7 @@ Reopen (~18:00 ET) ───────────── cạnh dưới ──
 - Phải xác định trước hướng bias (premium/discount); vào ngược bias là sai.
 
 ### Giải phẫu NDOG
-![[NDOG-Anatomy.png]]
+![[NDOG-Anatomy.svg]]
 
 **Mô tả:** Sơ đồ chú thích Prior Day Close, giờ nghỉ bảo trì 17:00–18:00 ET, Reopen, NDOG range, CE 50%, và cách giữ 1–3 NDOG gần nhất làm mốc tham chiếu (so với 3–5 NWOG của tuần).
 
@@ -415,6 +446,29 @@ Reopen (~18:00 ET) ───────────── cạnh dưới ──
 - [ ] So sánh win rate khi NDOG trùng NWOG vs đứng riêng.
 - [ ] Đối chiếu với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]].
 - [ ] Review lại note này sau 2 tuần, cập nhật `confidence` & `last_reviewed`.
+
+---
+
+## Best Practices
+
+> [!success] Nguyên tắc vàng
+> **NDOG có sức nặng thật nhất trên futures/index (NQ1, NAS100) — nơi giờ nghỉ bảo trì tạo ra một inefficiency có thật; trên forex 24 giờ (EURUSD, GBPUSD, XAUUSD), "NDOG" chỉ là một xấp xỉ quanh Midnight Open, không phải một gap đúng nghĩa.** Nhầm lẫn hai trường hợp này là nguồn sai lầm phổ biến nhất khi áp dụng NDOG trên danh mục thị trường hỗn hợp mà bạn đang trade.
+
+1. **Phân biệt rõ NDOG futures thật với NDOG-xấp-xỉ trên forex.** Trên NQ1/NAS100 (CME futures), giờ nghỉ bảo trì ~17:00–18:00 ET tạo một khoảng thị trường **thực sự không giao dịch**, nên NDOG là một inefficiency có thật với sức nặng đáng tin. Trên EURUSD/GBPUSD/XAUUSD (giao dịch gần như 24 giờ), không có halt thật — chênh lệch giá quanh nửa đêm chỉ là một **xấp xỉ** dựa trên chênh lệch giá quanh Midnight Open, thường rất mỏng và kém tin cậy hơn nhiều. Ghi trường `ndog_instrument_type: futures / forex-approx` cho mỗi lần dùng NDOG trong journal để tách riêng thống kê hai nhóm — đừng gộp chung win-rate của NQ1 và EURUSD dưới cùng một nhãn "NDOG".
+
+2. **Trên forex, ưu tiên Midnight Open + Daily Bias hơn là cố vẽ một NDOG "cho có".** Nếu chênh lệch giá quanh 00:00 ET trên EURUSD/GBPUSD/XAUUSD quá mỏng để tạo thành một vùng có ý nghĩa, đừng ép vẽ NDOG — thay vào đó dùng trực tiếp vị trí giá so với đường Midnight Open làm bộ lọc hướng (xem mục Nâng cao ở trên). Ghi `midnight_open_side: above/below` mỗi ngày cho các cặp forex, thay vì cố gắn `ndog_range` cho một gap gần như không tồn tại.
+
+3. **Dùng CE của NDOG làm target/mốc chờ phản ứng, không bao giờ làm trigger entry độc lập.** Giá chạm CE chỉ xác nhận "đã về vùng cân bằng" — luôn cần [[20 - Liquidity Sweep]] + [[21 - Market Structure Shift]] LTF trong [[18 - Kill Zones]] trước khi coi đó là setup hợp lệ. Ghi `ce_reaction: yes/no` cho từng lần giá tiếp cận CE để đo tỉ lệ phản ứng thật so với xuyên qua không phản ứng.
+
+4. **Luôn ghép NDOG với [[12 - Daily Bias]] trước khi diễn giải hướng.** Một NDOG đứng một mình không nói lên gì về hướng đi — nó chỉ là một vùng tham chiếu. Phải trả lời trước: bias HTF của ngày là gì, giá đang premium hay discount theo [[27 - Premium Discount]], rồi mới dùng NDOG/CE để tìm điểm vào lệnh đúng phía. Vào lệnh tại CE mà ngược bias là lỗi kinh điển (xem mục 9 và ví dụ sai ở mục 6).
+
+5. **Giữ khung fractal rõ ràng giữa NDOG và [[24 - New Week Opening Gap]].** NDOG là bản sao theo-ngày của NWOG; nhiều NDOG trong một tuần lồng bên trong khung của NWOG tuần đó. Khi NDOG và NWOG trùng/chồng nhau, đó là confluence hai tầng thời gian — ưu tiên NWOG khi hai mốc mâu thuẫn về hướng, nhưng ghi nhận confluence này làm tăng độ tin cậy khi chúng đồng thuận.
+
+6. **Không xóa NDOG đã fill, và không ép giá phải "trả nợ" gap trong cùng ngày.** Gap đã fill vẫn là support/resistance lịch sử; NDOG unfilled là draw on liquidity nhưng có thể mất nhiều phiên mới được lấp. Giữ 1–3 NDOG gần nhất trên chart bất kể trạng thái fill.
+
+7. **Trên các phiên thiếu thanh khoản hoặc có news lớn, hạ trọng số cho mọi mốc NDOG/Midnight Open.** Cả hai công cụ đều dựa trên hành vi "giá quay lại cân bằng" trong điều kiện thị trường bình thường; một cú news mạnh có thể xóa sạch logic đó trong vài phút. Kiểm tra lịch kinh tế trước khi đặt kỳ vọng vào phản ứng tại CE.
+
+8. **Backtest riêng NQ1/NDX và riêng từng cặp forex trước khi tin vào con số cụ thể nào.** Vì sức nặng của NDOG khác nhau rõ rệt giữa futures và forex, mọi phát biểu kiểu "NDOG fill trong X% thời gian" hay "CE phản ứng Y% số lần" **cần backtest xác nhận** theo từng nhóm thị trường riêng biệt — không dùng chung một con số cho cả bốn thị trường bạn đang trade (NQ1/NDX, EURUSD, GBPUSD, XAUUSD). Đối chiếu kết quả với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]] sau mỗi đợt review.
 
 ---
 

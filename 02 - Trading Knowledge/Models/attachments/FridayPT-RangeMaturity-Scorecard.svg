@@ -1,0 +1,40 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Scorecard: Range tuan da chin hay chua?</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">4 tieu chi khach quan hoa thay vi doan cam tinh. So do khai niem minh hoa khung danh gia.</text>
+  <rect x="40" y="90" width="500" height="40" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="52" y="100" width="20" height="20" rx="4" fill="#16A34A"/>
+  <text x="58" y="116" font-size="13" font-weight="700" fill="#FFFFFF">✓</text>
+  <text x="86" y="116" font-size="11.5" fill="#374151">1. % Average Weekly Range da di (>=70-80%)</text>
+  <rect x="560" y="102" width="140" height="16" rx="4" fill="#E5E7EB"/>
+  <rect x="560" y="102" width="119" height="16" rx="4" fill="#16A34A"/>
+  <text x="705" y="115" font-size="10" fill="#374151">vi du</text>
+  <rect x="40" y="140" width="500" height="40" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="52" y="150" width="20" height="20" rx="4" fill="#16A34A"/>
+  <text x="58" y="166" font-size="13" font-weight="700" fill="#FFFFFF">✓</text>
+  <text x="86" y="166" font-size="11.5" fill="#374151">2. Dinh/day tuan lap ro rang Tue-Thu (co MSS that)</text>
+  <rect x="560" y="152" width="140" height="16" rx="4" fill="#E5E7EB"/>
+  <rect x="560" y="152" width="107" height="16" rx="4" fill="#16A34A"/>
+  <text x="705" y="165" font-size="10" fill="#374151">vi du</text>
+  <rect x="40" y="190" width="500" height="40" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="52" y="200" width="20" height="20" rx="4" fill="#16A34A"/>
+  <text x="58" y="216" font-size="13" font-weight="700" fill="#FFFFFF">✓</text>
+  <text x="86" y="216" font-size="11.5" fill="#374151">3. Da sweep pool thanh khoan chinh cua tuan</text>
+  <rect x="560" y="202" width="140" height="16" rx="4" fill="#E5E7EB"/>
+  <rect x="560" y="202" width="96" height="16" rx="4" fill="#16A34A"/>
+  <text x="705" y="215" font-size="10" fill="#374151">vi du</text>
+  <rect x="40" y="240" width="500" height="40" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="52" y="250" width="20" height="20" rx="4" fill="#DC2626"/>
+  <text x="58" y="266" font-size="13" font-weight="700" fill="#FFFFFF">✗</text>
+  <text x="86" y="266" font-size="11.5" fill="#374151">4. Khong co tin lon / ngay lich dac biet thu Sau</text>
+  <rect x="560" y="252" width="140" height="16" rx="4" fill="#E5E7EB"/>
+  <rect x="560" y="252" width="85" height="16" rx="4" fill="#DC2626"/>
+  <text x="705" y="265" font-size="10" fill="#374151">vi du</text>
+  <text x="40" y="310" font-size="12" font-weight="700" fill="#374151">Ket luan tong hop:</text>
+  <rect x="40" y="320" width="220" height="26" rx="6" fill="#DC2626" opacity="0.85"/>
+  <text x="60" y="338" font-size="11" font-weight="700" fill="#FFFFFF">Chua chin (0-1/4)</text>
+  <rect x="270" y="320" width="220" height="26" rx="6" fill="#F59E0B" opacity="0.9"/>
+  <text x="300" y="338" font-size="11" font-weight="700" fill="#FFFFFF">Chua chac (2-3/4)</text>
+  <rect x="500" y="320" width="220" height="26" rx="6" fill="#16A34A"/>
+  <text x="545" y="338" font-size="11" font-weight="700" fill="#FFFFFF">Da chin (4/4)</text>
+</svg>

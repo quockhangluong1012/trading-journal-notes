@@ -23,7 +23,7 @@ importance: 4
 confidence: 1
 last_reviewed:
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-03
 related_concepts:
   - "[[10 - Consequent Encroachment (Mean Threshold)]]"
   - "[[Fair Value Gap]]"
@@ -178,6 +178,37 @@ Sunday Open (18:00 ET) ── cạnh dưới ───┘
 - [ ] Giá đã xuyên CE nhiều lần không phản ứng.
 - [ ] Mức HTF mạnh hơn nằm ngay sát.
 
+### Nâng cao — True Week Open và vai trò của nến Chủ Nhật (Sunday candle)
+
+Một điểm gây nhầm lẫn thường gặp: **"Sunday Open" dùng để vẽ cạnh NWOG không phải lúc nào cũng trùng với cái mà một số tài liệu ICT gọi là "True Week Open"**. Cạnh NWOG luôn là **giá mở cửa thực tế khi futures reopen** (~17:00–18:00 ET Chủ Nhật) — đây là mốc khách quan, ai cũng vẽ giống nhau vì nó là điểm dữ liệu có thật đầu tiên của tuần. Trong khi đó, một số cách dạy ICT dùng thêm khái niệm **"true day open"/"true week open"** neo vào **00:00 (nửa đêm) giờ New York của Thứ 2** như một mốc tham chiếu bias bổ sung cho cấu trúc ngày/tuần "thật" theo múi giờ NY, tách biệt với giờ mở cửa sàn theo truyền thống.
+
+![[NWOG-Advanced-TrueWeekOpen.svg]]
+*So sánh giá mở cửa Chủ Nhật (literal reopen, dùng để vẽ cạnh NWOG) với mốc "true week open" ở một số cách dạy ICT (00:00 NY Thứ 2) — cùng với đặc điểm nến Chủ Nhật thường mỏng, nhiễu, spread rộng.*
+
+Ba điều cần tách bạch khi làm việc với dữ liệu đầu tuần:
+1. **Cạnh NWOG = Sunday Reopen literal.** Đây là mức giá đầu tiên khi thị trường giao dịch trở lại — dùng mức này để vẽ gap và tính CE, **không** thay bằng "true week open" nếu không chắc hai nguồn dữ liệu định nghĩa giống nhau.
+2. **"True week open" là một tham chiếu bias bổ sung, không phải cạnh gap.** Nếu dùng khái niệm này, hãy rõ ràng nó phục vụ mục đích khác (đọc cấu trúc ngày/tuần theo giờ NY chuẩn), không lẫn vào công thức tính NWOG.
+3. **Nến Chủ Nhật đầu tiên thường thanh khoản mỏng và dễ nhiễu** — spread rộng hơn bình thường, dễ có wick giả do thanh khoản thấp lúc vừa mở lại. Tránh vội kết luận cấu trúc (MSS, swing quan trọng) chỉ dựa vào 1–2 nến Chủ Nhật đầu tiên; nên chờ đến khi phiên Á/London Thứ 2 vào để dữ liệu đáng tin hơn.
+
+> [!warning] So sánh & edge case
+> Nếu broker/data feed của bạn hiển thị giờ mở cửa Chủ Nhật khác với "true week open" mà bạn quen dùng, **đừng trộn hai mốc**: giữ nguyên NWOG = Friday Close vs Sunday Reopen literal cho mọi tính toán CE/premium-discount, và chỉ dùng "true week open" như một ghi chú bias phụ nếu bạn có lý do cụ thể để tin tưởng cách định nghĩa đó. Sự nhất quán về mốc thời gian quan trọng hơn việc chọn "đúng" trường phái nào — cần backtest xác nhận trường phái nào phù hợp hơn với phong cách của bạn.
+
+### Nâng cao — NWOG lồng NDOG: cấu trúc fractal đa khung theo tuần
+
+NWOG và [[23 - New Day Opening Gap]] không phải hai công cụ tách biệt — chúng là **cùng một cơ chế (gap do ngắt quãng thời gian) lặp lại ở hai khung khác nhau**, theo đúng tinh thần fractal của ICT: mỗi tuần có **một NWOG** (Friday Close → Sunday Open) đóng vai trò khung lớn, và **bên trong tuần đó có 4–5 NDOG hằng ngày** (mỗi ngày một gap prior-close → reopen) nằm lồng bên trong phạm vi thời gian của NWOG đó.
+
+![[NWOG-Advanced-NestedWithNDOG.svg]]
+*Một tuần giao dịch với NWOG khung lớn bao trùm toàn bộ tuần, trong khi mỗi ngày (Thứ 2 đến Thứ 6) có một NDOG riêng nằm lồng bên trong — bias tuần đến từ NWOG, phản ứng trong ngày đến từ NDOG.*
+
+Cách phối hợp hai khung này trong phân tích thực chiến:
+- **NWOG (D1/H4) trả lời câu hỏi bias**: giá tuần này đang premium hay discount so với CE của NWOG? Draw on liquidity của cả tuần nằm ở NWOG nào (unfilled)?
+- **NDOG (H1/M15) trả lời câu hỏi timing trong ngày**: hôm nay giá có khả năng phản ứng ở đâu, dựa trên gap ngày hôm nay?
+- **Chỉ ưu tiên NDOG cùng hướng với bias NWOG.** Nếu NWOG cho bias bullish (giá ở discount tuần) nhưng một NDOG cụ thể lại gợi ý short ngắn hạn ngược hướng, NWOG (khung lớn hơn) có trọng số cao hơn — dùng NDOG đó thận trọng hơn hoặc chỉ như phản ứng ngắn hạn trong xu hướng lớn.
+- **Khi một NDOG trong tuần trùng vị trí với CE hoặc cạnh của NWOG** → đây là điểm confluence đa khung mạnh nhất trong tuần: cùng lúc vừa là mốc tham chiếu ngày, vừa là mốc tham chiếu tuần.
+
+> [!note] So sánh nhanh
+> Tư duy giống hệt cách NWOG khác NDOG về sức nặng (xem bảng so sánh ở mục 1): NWOG là **khung tham chiếu cho toàn bộ tuần**, NDOG là **khung tham chiếu cho một ngày cụ thể bên trong tuần đó**. Luôn đọc NDOG trong bối cảnh của NWOG hiện hành, không đọc NDOG một mình như thể nó là mốc cao nhất.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -253,7 +284,7 @@ Sunday Open (18:00 ET) ── cạnh dưới ───┘
 ## 6. Ví dụ chart
 
 ### Ví dụ đúng
-![[NWOG-Example-Correct.png]]
+![[NWOG-Example-Correct.svg]]
 
 **Mô tả:**
 - Tuần mở **gap down** (Sunday Open < Friday Close); giá đầu tuần nằm ở discount dưới CE.
@@ -267,7 +298,7 @@ Sunday Open (18:00 ET) ── cạnh dưới ───┘
 - Tiếp cận trong kill zone, đúng phía premium/discount.
 
 ### Ví dụ sai
-![[NWOG-Example-Wrong.png]]
+![[NWOG-Example-Wrong.svg]]
 
 **Mô tả:**
 - Trader vào long ngay khi giá **vừa chạm CE** mà không chờ phản ứng/MSS.
@@ -281,7 +312,7 @@ Sunday Open (18:00 ET) ── cạnh dưới ───┘
 - Phải xác định trước hướng bias (premium/discount); vào ngược bias là sai.
 
 ### Giải phẫu NWOG
-![[NWOG-Anatomy.png]]
+![[NWOG-Anatomy.svg]]
 
 **Mô tả:** Sơ đồ chú thích Friday Close, Sunday Open, NWOG range, CE 50%, và cách giữ 3–5 NWOG gần nhất làm mốc tham chiếu.
 
@@ -406,6 +437,29 @@ Sunday Open (18:00 ET) ── cạnh dưới ───┘
 - [ ] Mỗi tuần: vẽ NWOG mới Chủ Nhật, ghi lại phản ứng tới CE trong tuần.
 - [ ] Đối chiếu với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]].
 - [ ] Review lại note này sau 2 tuần, cập nhật `confidence` & `last_reviewed`.
+
+---
+
+## Best Practices
+
+> [!success] Nguyên tắc vàng
+> **NWOG mạnh nhất và "sạch" nhất khi có một khoảng đóng cửa thị trường thật sự (index/futures); trên forex nó chỉ là một xấp xỉ mềm hơn nhiều. Dùng NWOG làm mốc bias/draw ở khung tuần — không bao giờ làm tín hiệu entry độc lập — và luôn đối chiếu với [[12 - Daily Bias]] trước khi diễn giải hướng.**
+
+1. **Trên index/futures (NQ1/NDX, NAS100) NWOG là "sạch" nhất — nên coi đây là ứng dụng chuẩn.** CME futures thực sự đóng cửa cuối tuần và có giờ reopen cố định (~17:00–18:00 ET Chủ Nhật), tạo ra một khoảng gap giá thật, khách quan, không ai tranh cãi được. Đây là nơi lý thuyết NWOG được ICT xây dựng gốc và có độ tin cậy cao nhất trong bốn thị trường bạn theo dõi. Ghi `nwog_instrument_type: futures` khi log các setup trên NQ1/NAS100.
+
+2. **Trên forex (EURUSD, GBPUSD, XAUUSD) NWOG chỉ là một xấp xỉ mềm — hạ trọng số tương ứng.** Thị trường forex giao dịch gần như liên tục qua nhiều trung tâm tài chính; phiên Chủ Nhật tối mở lại với thanh khoản rất mỏng nhưng **không có một "market close" chính thức** như futures. Gap quan sát được thường nhỏ hơn, đôi khi gần như "inside" (xem ví dụ sai ở mục 6). Không đối xử với NWOG forex y hệt NWOG futures — coi nó như một tín hiệu bổ trợ yếu hơn, cần nhiều confluence hơn để tin tưởng. Ghi `nwog_instrument_type: forex-approx` để sau này so sánh win-rate giữa hai nhóm.
+
+3. **Luôn dùng NWOG như một mốc bias/target ở khung TUẦN, không phải một tín hiệu entry.** NWOG trả lời câu hỏi "giá đang premium hay discount so với tuần, và draw on liquidity của tuần nằm ở đâu" — nó không tự nó nói "vào lệnh ngay". Mọi entry thực tế vẫn cần chuỗi sweep → MSS → FVG/OB trên LTF như mô tả ở mục 4–5. Ghi `weekly_bias_aligned: yes/no` cho mỗi lệnh: lệnh có đi đúng hướng bias mà NWOG/CE gợi ý không?
+
+4. **Kết hợp NWOG với [[12 - Daily Bias]] ở cấp độ tuần trước khi hạ xuống ngày.** Trước khi dùng Daily Bias để định hướng cho một ngày cụ thể, hãy hỏi: vị trí giá so với CE của NWOG hiện hành có đồng thuận với bias ngày không? Nếu Daily Bias ngược với vị trí premium/discount của NWOG tuần, đó là tín hiệu cần thận trọng hơn (bias ngày có thể chỉ là một nhịp điều chỉnh trong bias tuần lớn hơn) chứ không phải lý do bỏ qua một trong hai.
+
+5. **Giữ 3–5 NWOG gần nhất trên mọi chart, không chỉ chart đang trade.** Vì NWOG là mốc lịch sử (gap đã fill vẫn là SR), việc xóa sớm khiến bạn mất khả năng nhận diện confluence khi giá quay lại một mức cũ nhiều tuần sau. Việc này tốn ít công nhưng thường bị bỏ qua khi chart bị "dọn dẹp" quá tay.
+
+6. **Không ép giá phải fill NWOG trong tuần hiện tại.** NWOG unfilled là draw on liquidity dài hạn — nó có thể mất vài tuần mới được test lại. Ép lệnh vì "tuần này giá phải về gap" là sai logic; hãy để price action (sweep + MSS đúng phía) xác nhận thời điểm, không phải lịch tuần.
+
+7. **Phân biệt rõ vai trò của Sunday candle khi phân tích cấu trúc đầu tuần.** Như đã nêu ở mục 3 (Nâng cao — True Week Open), dữ liệu Chủ Nhật đầu tiên thường mỏng và nhiễu. Đừng dùng riêng 1–2 nến đó để kết luận MSS hay xác nhận hướng; chờ phiên Á/London Thứ 2 vào để có dữ liệu đáng tin hơn trước khi hành động theo NWOG.
+
+8. **Log đầy đủ và review theo thị trường riêng biệt.** Ghi `nwog_instrument_type`, `weekly_bias_aligned`, trạng thái filled/unfilled, và kết quả R-multiple cho mỗi lần dùng NWOG trong kế hoạch trade. Sau 15–20 mẫu mỗi nhóm (futures vs forex), so sánh win-rate và mức độ "sạch" của phản ứng tại CE — **cần backtest xác nhận** liệu NWOG forex có đáng để giữ trong bộ checklist hay chỉ nên dùng làm ghi chú tham khảo phụ. Đối chiếu kết quả với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]], nâng `confidence` của note này khi có đủ bằng chứng thay vì để mãi ở mức seed.
 
 ---
 

@@ -1,0 +1,71 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Phân cấp Fractal — STL → ITL → LTL (định nghĩa đệ quy)</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Mỗi degree được "nâng cấp" từ degree nhỏ hơn: STL có STL cao hơn hai bên = ITL; ITL có ITL cao hơn hai bên = LTL.</text>
+
+  <!-- ===== Left: price path with nested swings ===== -->
+  <rect x="24" y="70" width="470" height="390" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <polyline points="50,200 85,310 115,250 150,390 200,260 235,320 285,210 320,280 350,240 380,330 440,170 480,230 530,120"
+            fill="none" stroke="#374151" stroke-width="2"/>
+
+  <!-- STL markers (small gray) -->
+  <circle cx="85" cy="310" r="4" fill="#9CA3AF"/><text x="70" y="328" font-size="10" fill="#6B7280">STL</text>
+  <circle cx="235" cy="320" r="4" fill="#9CA3AF"/><text x="222" y="338" font-size="10" fill="#6B7280">STL</text>
+  <circle cx="320" cy="280" r="4" fill="#9CA3AF"/><text x="307" y="298" font-size="10" fill="#6B7280">STL</text>
+  <circle cx="480" cy="230" r="4" fill="#9CA3AF"/><text x="467" y="248" font-size="10" fill="#6B7280">STL</text>
+
+  <!-- ITL markers -->
+  <circle cx="380" cy="330" r="7" fill="none" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="362" y="352" font-size="11" font-weight="700" fill="#2563EB">ITL</text>
+  <text x="330" y="368" font-size="9.5" fill="#6B7280">(STL thấp nhất giữa 2 STL cao hơn)</text>
+
+  <!-- LTL marker (also ITL + STL) -->
+  <circle cx="150" cy="390" r="11" fill="none" stroke="#7C3AED" stroke-width="3"/>
+  <circle cx="150" cy="390" r="6" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="150" cy="390" r="2.5" fill="#9CA3AF"/>
+  <text x="128" y="418" font-size="12" font-weight="700" fill="#7C3AED">LTL</text>
+  <text x="98" y="433" font-size="9.5" fill="#6B7280">(đồng thời là ITL và STL — lồng nhau)</text>
+
+  <!-- STH markers -->
+  <circle cx="115" cy="250" r="4" fill="#D1D5DB"/><text x="102" y="240" font-size="10" fill="#9CA3AF">STH</text>
+  <circle cx="350" cy="240" r="4" fill="#D1D5DB"/><text x="337" y="230" font-size="10" fill="#9CA3AF">STH</text>
+
+  <!-- ITH markers -->
+  <circle cx="285" cy="210" r="7" fill="none" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="270" y="198" font-size="11" font-weight="700" fill="#DC2626">ITH</text>
+  <circle cx="440" cy="170" r="7" fill="none" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="425" y="158" font-size="11" font-weight="700" fill="#DC2626">ITH</text>
+
+  <!-- LTH -->
+  <circle cx="530" cy="120" r="11" fill="none" stroke="#7C3AED" stroke-width="3" transform="translate(-60,0)"/>
+  <text x="452" y="102" font-size="12" font-weight="700" fill="#7C3AED">LTH tiềm năng</text>
+
+  <text x="40" y="90" font-size="12" font-weight="700" fill="#1F2937">Uptrend: chuỗi ITL dâng lên + ITH bị phá liên tiếp</text>
+
+  <!-- ===== Right: 3-candle fractal inset ===== -->
+  <rect x="510" y="70" width="226" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="522" y="94" font-size="13" font-weight="700" fill="#1D4ED8">Viên gạch nền: STL</text>
+  <!-- candle left (higher low) -->
+  <rect x="552" y="130" width="2" height="70" fill="#DC2626"/><rect x="546" y="138" width="14" height="48" fill="#DC2626" rx="1"/>
+  <!-- middle candle (lowest low) -->
+  <rect x="592" y="150" width="2" height="85" fill="#DC2626"/><rect x="586" y="155" width="14" height="50" fill="#16A34A" rx="1"/>
+  <!-- right candle (higher low) -->
+  <rect x="632" y="120" width="2" height="75" fill="#16A34A"/><rect x="626" y="126" width="14" height="52" fill="#16A34A" rx="1"/>
+  <circle cx="593" cy="237" r="5" fill="#2563EB"/>
+  <line x1="546" y1="200" x2="606" y2="200" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="586" y1="195" x2="646" y2="195" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="522" y="258" font-size="10.5" fill="#374151">Low thấp nhất, nến hai bên đều có</text>
+  <text x="522" y="262" font-size="10.5" fill="#374151" dy="10">low CAO HƠN → STL hợp lệ</text>
+
+  <!-- ===== Right bottom: hierarchy ladder ===== -->
+  <rect x="510" y="286" width="226" height="174" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="522" y="310" font-size="13" font-weight="700" fill="#1F2937">Thang nâng cấp degree</text>
+  <rect x="522" y="322" width="200" height="26" rx="5" fill="#F3F4F6"/>
+  <text x="532" y="340" font-size="11.5" fill="#374151"><tspan font-weight="700" fill="#6B7280">STL/STH</tspan> — nến + 2 nến kề</text>
+  <text x="614" y="366" font-size="13" fill="#9CA3AF">▼ gom lại</text>
+  <rect x="522" y="374" width="200" height="26" rx="5" fill="#DBEAFE"/>
+  <text x="532" y="392" font-size="11.5" fill="#1E40AF"><tspan font-weight="700">ITL/ITH</tspan> — STL/STH cực trị</text>
+  <text x="614" y="418" font-size="13" fill="#9CA3AF">▼ gom lại</text>
+  <rect x="522" y="426" width="200" height="26" rx="5" fill="#EDE9FE"/>
+  <text x="532" y="444" font-size="11.5" fill="#5B21B6"><tspan font-weight="700">LTL/LTH</tspan> — ITL/ITH cực trị</text>
+</svg>

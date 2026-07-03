@@ -23,7 +23,7 @@ models:
   - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-07-03
 common_mistakes:
   - "[[Mistake - Trade Outside Killzone]]"
   - "[[Mistake - Trade Dead Zone Chop]]"
@@ -153,6 +153,66 @@ Nhiều trader có hệ thống tốt nhưng vẫn thua vì trade SAI GIỜ — 
 - Tin tức làm nhiễu trong KZ.
 - Ép vào lệnh dù KZ không cho setup rõ.
 
+### Nâng cao — Bảng quy đổi giờ Kill Zone sang giờ Việt Nam (UTC+7) và ảnh hưởng của Daylight Saving Time (DST)
+
+Đây là chỗ trader Việt Nam sai nhiều nhất: không phải sai khái niệm Kill Zone, mà sai **quy đổi giờ**. ICT dạy theo giờ New York (EST/EDT), trong khi Việt Nam dùng UTC+7 quanh năm và **không có DST**. Kết quả là cùng một Kill Zone, giờ Việt Nam sẽ lệch **đúng 1 tiếng** tùy thời điểm trong năm — nếu không để ý, bạn dễ canh lệnh sai giờ cả tháng liền mà không nhận ra.
+
+Mỹ chuyển giờ hai lần mỗi năm: "spring forward" vào Chủ Nhật thứ hai của tháng 3 (chuyển sang EDT, UTC−4 — mùa hè) và "fall back" vào Chủ Nhật đầu tháng 11 (chuyển về EST, UTC−5 — mùa đông). Vì Việt Nam đứng yên ở UTC+7, khoảng cách giờ giữa New York và Việt Nam **co giãn theo mùa của Mỹ**, không theo mùa của Việt Nam.
+
+![[KillZone-Advanced-DST-Conversion.svg]]
+*So sánh giờ Việt Nam của từng Kill Zone giữa hai chế độ: mùa hè Mỹ (EDT, UTC−4, Việt Nam = giờ NY + 11 giờ) và mùa đông Mỹ (EST, UTC−5, Việt Nam = giờ NY + 12 giờ). Toàn bộ các mốc dịch lùi thêm 1 giờ khi Mỹ chuyển sang giờ mùa đông.*
+
+| Kill Zone (giờ New York) | Giờ VN — mùa hè Mỹ (EDT) | Giờ VN — mùa đông Mỹ (EST) |
+|---|---|---|
+| Asian Range 20:00–00:00 | 07:00–11:00 | 08:00–12:00 |
+| London Open KZ 02:00–05:00 | 13:00–16:00 | 14:00–17:00 |
+| Silver Bullet London 03:00–04:00 | 14:00–15:00 | 15:00–16:00 |
+| New York AM KZ 07:00–10:00 | 18:00–21:00 | 19:00–22:00 |
+| Silver Bullet NY AM 10:00–11:00 | 21:00–22:00 | 22:00–23:00 |
+| NY Lunch (vùng chết) 11:30–13:00 | 22:30–00:00 | 23:30–01:00 |
+| London Close KZ 10:00–12:00 | 21:00–23:00 | 22:00–00:00 |
+
+> [!warning] Quy tắc kiểm tra nhanh chế độ nào đang áp dụng
+> Mỹ ở **giờ mùa hè (EDT)** khoảng từ Chủ Nhật thứ hai tháng 3 đến Chủ Nhật đầu tháng 11; phần còn lại của năm là **giờ mùa đông (EST)**. Ngày chuyển chính xác thay đổi mỗi năm — luôn tra lại lịch DST của Mỹ cho năm hiện tại trước khi tự quy đổi bằng trí nhớ. Cách an toàn nhất vẫn là **set đồng hồ chart theo New York time** thay vì tự cộng trừ giờ tay, vì phần lớn nền tảng chart tự động xử lý DST đúng.
+
+### Nâng cao — Chồng lấp Kill Zone (session overlap) và mức biến động tương đối
+
+Các Kill Zone không tồn tại độc lập — một số cửa sổ **chồng lấp lên nhau**, và đó thường là nơi thanh khoản dồn về nhiều nhất trong ngày. Hiểu phần chồng lấp giúp bạn biết nên "căng mắt" nhất vào lúc nào nếu chỉ có thời gian theo dõi một phần trong ngày.
+
+![[KillZone-Advanced-SessionOverlap.svg]]
+*NY AM Kill Zone (07:00–10:00 EST) và London Close Kill Zone (10:00–12:00 EST) nối tiếp/giao nhau quanh mốc 10:00; toàn bộ khung 07:00–10:00 là lúc London (đang đóng) và New York (vừa mở, gồm cả giờ mở cửa NYSE 09:30) cùng hoạt động — vùng được nhiều nguồn ICT coi là khối lượng giao dịch lớn nhất trong ngày.*
+
+Về bản chất, "London Close KZ" theo ICT (10:00–12:00 EST) là phần **cuối phiên London** chồng vào **đầu phiên New York**; còn toàn bộ khối 07:00–10:00 EST (London vẫn mở tới ~11:30 giờ London, New York vừa mở) là vùng chồng lấp rộng hơn với khối lượng lệnh cao. Đây cũng là lý do NY AM KZ được nhiều nguồn ICT xem là Kill Zone có xác suất cao nhất trong ngày.
+
+Xếp hạng biến động tương đối theo thị trường (định tính, **không phải số liệu đo được** — cần backtest xác nhận trên dữ liệu thật của chính bạn):
+
+| Thị trường | Kill Zone thường "nóng" nhất (tương đối) | Ghi chú |
+|---|---|---|
+| **NQ1 / NAS100** | NY AM (đặc biệt quanh giờ mở cửa NYSE 09:30) > London Open > London Close > NY PM | Chỉ số Mỹ nhạy nhất với phiên Mỹ mở cửa |
+| **EURUSD / GBPUSD** | London Open & vùng chồng lấp NY AM/London Close > NY AM thuần > NY PM | Cặp tiền châu Âu nhạy với London hơn NAS100 |
+| **XAUUSD** | NY AM (tin Mỹ như CPI/NFP) & London Open thường biến động mạnh > London Close > NY PM | Vàng phản ứng mạnh với tin vĩ mô Mỹ rơi vào NY AM |
+
+> [!warning] Đừng biến bảng này thành luật cứng
+> Đây là xu hướng chung được nhiều tài liệu ICT mô tả, **không phải thống kê đo trên tài khoản của bạn**. Biến động thực tế còn phụ thuộc lịch tin, mùa thị trường (kỳ nghỉ lễ, thanh khoản mỏng cuối năm), và đặc thù từng broker/sàn. Hãy tự backtest và log `kill_zone_traded` cho từng lệnh trên NQ1, EURUSD, GBPUSD, XAUUSD trước khi kết luận cửa sổ nào thực sự phù hợp với bạn.
+
+### Nâng cao — ICT Macro Times (khung 20 phút) lồng bên trong Kill Zone
+
+Bên trong mỗi Kill Zone (cửa sổ rộng vài giờ), ICT còn dạy một lớp timing hẹp hơn gọi là **Macro** — các cửa sổ khoảng **20 phút**, thường nằm quanh ranh giới giờ (ví dụ 10 phút cuối của một giờ + 10 phút đầu giờ kế tiếp), nơi thuật toán được cho là "khởi động" một nhịp di chuyển giá mới. Macro không thay thế Kill Zone hay Silver Bullet — nó là một lớp tinh chỉnh **bên trong** khung đã chọn.
+
+![[KillZone-Advanced-SilverBulletMacro.svg]]
+*Quan hệ lồng nhau ba cấp: NY AM Kill Zone (07:00–10:00 EST, cửa sổ rộng nhất) chứa Silver Bullet NY AM (10:00–11:00 EST, cửa sổ 1 giờ chọn lọc hơn), và bên trong/quanh đó là các Macro ~20 phút (ví dụ 09:50–10:10, 10:50–11:10 EST) — lớp timing hẹp nhất.*
+
+Cách các lớp lồng vào nhau:
+
+| Cấp độ | Độ rộng cửa sổ | Ví dụ (giờ NY) | Vai trò |
+|---|---|---|---|
+| **Kill Zone** | Vài giờ | NY AM 07:00–10:00 | Xác định NGÀY/PHIÊN nào đáng săn entry |
+| **Silver Bullet** | 1 giờ | NY AM 10:00–11:00 | Cửa sổ hẹp hơn để tìm FVG entry chọn lọc |
+| **Macro** | ~20 phút | 09:50–10:10, 10:50–11:10 | Tinh chỉnh THỜI ĐIỂM vào lệnh trong khung trên |
+
+> [!note] So sánh với phần Silver Bullet đã có ở Mục 1
+> Ghi chú này **không thay đổi** giờ Silver Bullet đã nêu ở đầu note (03:00–04:00 / 10:00–11:00 / 14:00–15:00 EST) — Macro chỉ là một lớp phân tích bổ sung, chi tiết hơn, nằm bên trong hoặc lân cận các cửa sổ đó. Nếu bạn chưa quen dùng Macro, không bắt buộc phải thêm vào quy trình — Kill Zone + Silver Bullet vẫn là hai lớp chính đã đủ dùng cho phần lớn setup ICT 2022 Model.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -226,6 +286,17 @@ Vùng chết cần tránh: NY lunch (~23:30–01:00 VN)
 ---
 
 ## 6. Ví dụ chart
+
+### Giải phẫu — Dòng thời gian 24 giờ của các Kill Zone
+![[KillZone-Anatomy.svg]]
+
+**Mô tả:**
+Toàn bộ các Kill Zone chính đặt trên một dòng thời gian 24 giờ duy nhất theo giờ New York, kèm hàng giờ Việt Nam (mùa hè EDT) ngay bên dưới để đối chiếu nhanh. Asian Range nằm về đêm giờ NY (sáng giờ VN); London Open và Silver Bullet London nối tiếp; NY AM KZ (chứa Silver Bullet NY AM) và London Close KZ chồng lấp quanh mốc 10:00; NY Lunch là vùng chết xen giữa NY AM và NY PM.
+
+**Vì sao nên nhìn cả ngày trên một trục:**
+- Thấy rõ **thứ tự** các KZ diễn ra trong ngày, không chỉ từng ô rời rạc.
+- Thấy được **vùng chồng lấp** (NY AM / London Close) và **vùng chết** (NY Lunch) nằm ở đâu tương đối với nhau.
+- Dễ đối chiếu chéo giờ Việt Nam mà không cần tính tay mỗi lần mở chart.
 
 ### Ví dụ đúng — Setup A+ xuất hiện trong London Kill Zone
 ![[Kill-Zones-Example-Correct.png]]
@@ -397,6 +468,22 @@ Cửa sổ Silver Bullet NY 10:00–11:00 EST
 - [ ] Review riêng: `in_killzone` true vs false; London vs NY.
 - [ ] Thống kê win rate, average R theo `killzone`.
 - [ ] Cập nhật rule chỉ khi dữ liệu đủ mẫu.
+
+---
+
+## Best Practices
+
+> [!success] Nguyên tắc vàng
+> **Kill Zone chỉ có giá trị khi giờ quy đổi ĐÚNG.** Một setup hoàn hảo canh sai giờ 1 tiếng vì quên DST cũng vô dụng như một setup không có sweep. Luôn xác nhận giờ trước, xác nhận context sau.
+
+1. **Luôn kiểm tra chế độ DST của Mỹ (EDT hay EST) trước khi quy đổi Kill Zone sang giờ Việt Nam.** Vì Việt Nam không có DST, khoảng cách giờ với New York co giãn 1 tiếng tùy mùa (+11h mùa hè Mỹ, +12h mùa đông Mỹ) — xem bảng quy đổi ở Mục 3. Ghi trường `dst_regime: summer|winter` vào kế hoạch trade mỗi ngày để không bao giờ phải đoán.
+2. **Ưu tiên set chart theo New York time thay vì tự cộng trừ giờ tay.** Hầu hết nền tảng chart tự xử lý DST chính xác; tự tính nhẩm là nguồn lỗi phổ biến nhất khi mới học Kill Zone. Nếu bắt buộc dùng giờ địa phương, đối chiếu lại bảng quy đổi mỗi lần Mỹ chuyển giờ (tháng 3 và tháng 11).
+3. **Tránh vào lệnh ở các khung giờ thanh khoản thấp ngoài Kill Zone** — đặc biệt NY Lunch (11:30–13:00 EST), đêm khuya FX, và cuối phiên NY. Đây là nơi giá thường chỉ chop/whipsaw dù setup nhìn "đẹp" trên chart. Log `kill_zone_traded` (hoặc `dead_zone: true`) cho mỗi lệnh để sau này lọc ra và đo win rate riêng của nhóm trade ngoài giờ.
+4. **Hiểu rõ các cửa sổ chồng lấp (overlap) và tận dụng chúng khi có thể** — đặc biệt vùng NY AM / London Close quanh mốc 10:00 EST, nơi nhiều nguồn ICT cho là khối lượng giao dịch cao nhất trong ngày (xem Mục 3). Đây thường là ưu tiên số một nếu bạn chỉ có thời gian theo dõi một cửa sổ mỗi ngày.
+5. **Dùng Silver Bullet như một sub-window cụ thể (10:00–11:00 EST cho NY AM), không phải cách gọi khác của cả NY AM KZ.** Nhầm hai khái niệm khiến bạn mở rộng "Silver Bullet" ra 3 tiếng thay vì 1 tiếng chọn lọc — làm giảm chất lượng bộ lọc thời gian. Nếu dùng thêm ICT Macro (~20 phút, xem Mục 3), coi đó là lớp tinh chỉnh bên trong Silver Bullet, không phải thay thế nó.
+6. **Không ép có lệnh chỉ vì đang trong Kill Zone.** KZ là điều kiện CẦN, không phải ĐỦ — vẫn phải có bias, sweep, và POI đúng như checklist ở Mục 8. Ghi lại số lần bạn "ép lệnh trong KZ" vào `common_mistakes` liên kết tới [[Mistake - Trade Outside Killzone]] nếu việc này lặp lại.
+7. **Backtest và so sánh hiệu suất theo từng Kill Zone cho đúng thị trường bạn giao dịch (NQ1, EURUSD, GBPUSD, XAUUSD).** Bảng xếp hạng biến động tương đối ở Mục 3 chỉ là định tính từ tài liệu ICT chung — không phải số đo trên tài khoản của bạn. Sau 20–30 mẫu, so sánh win rate/average R giữa London Open, NY AM, London Close cho từng thị trường, và chỉ giữ lại Kill Zone thực sự chứng minh được edge cho phong cách của bạn.
+8. **Liên kết lại với [[02 - AMD]] và [[19 - Liquidity]] mỗi khi review.** Kill Zone chỉ là một trục trong bộ ba Time–Price–Liquidity; đánh giá một trade không nên dừng ở "có đúng giờ không" mà phải hỏi thêm "đúng pha AMD chưa, đúng liquidity chưa".
 
 ---
 

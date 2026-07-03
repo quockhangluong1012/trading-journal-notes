@@ -1,0 +1,75 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Họ "Order Block" — phân biệt 4 vùng dễ nhầm</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Ba câu hỏi chốt: (a) có SWEEP không? (b) swing bị PHÁ hay GIỮ? (c) nguồn gốc từ OB hay FVG?</text>
+
+  <!-- 4 columns -->
+  <!-- col 1: Order Block -->
+  <rect x="24" y="72" width="172" height="300" rx="8" fill="#FFFFFF" stroke="#374151" stroke-width="1.6"/>
+  <rect x="24" y="72" width="172" height="30" rx="8" fill="#374151"/>
+  <text x="110" y="92" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Order Block</text>
+  <text x="36" y="126" font-size="10.5" font-weight="700" fill="#1F2937">Chưa fail</text>
+  <text x="36" y="146" font-size="10" fill="#4B5563">Cụm nến cuối TRƯỚC</text>
+  <text x="36" y="160" font-size="10" fill="#4B5563">displacement gốc.</text>
+  <text x="36" y="184" font-size="10" fill="#4B5563">Sweep? — không bắt buộc</text>
+  <text x="36" y="204" font-size="10" fill="#4B5563">Swing? — còn GIỮ</text>
+  <text x="36" y="224" font-size="10" fill="#4B5563">Nguồn? — OB</text>
+  <rect x="36" y="240" width="148" height="30" rx="4" fill="#374151" opacity="0.08"/>
+  <text x="44" y="259" font-size="10" fill="#374151">Vào THEO hướng gốc</text>
+  <text x="36" y="300" font-size="9.5" fill="#6B7280">Vùng chưa bị "phá vai</text>
+  <text x="36" y="313" font-size="9.5" fill="#6B7280">trò"; delivery gốc còn.</text>
+  <text x="36" y="352" font-size="10.5" font-weight="700" fill="#15803D">[[25 - OB]]</text>
+
+  <!-- col 2: Breaker -->
+  <rect x="204" y="72" width="172" height="300" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="2"/>
+  <rect x="204" y="72" width="172" height="30" rx="8" fill="#16A34A"/>
+  <text x="290" y="92" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Breaker Block</text>
+  <text x="216" y="126" font-size="10.5" font-weight="700" fill="#1F2937">OB fail + đảo cực</text>
+  <text x="216" y="146" font-size="10" fill="#4B5563">OB cũ thất bại sau khi</text>
+  <text x="216" y="160" font-size="10" fill="#4B5563">có sweep + MSS.</text>
+  <text x="216" y="184" font-size="10" font-weight="700" fill="#B45309">Sweep? — CÓ (bắt buộc)</text>
+  <text x="216" y="204" font-size="10" font-weight="700" fill="#B91C1C">Swing? — bị PHÁ (MSS)</text>
+  <text x="216" y="224" font-size="10" fill="#4B5563">Nguồn? — OB (đảo cực)</text>
+  <rect x="216" y="240" width="148" height="30" rx="4" fill="#16A34A" opacity="0.12"/>
+  <text x="224" y="259" font-size="10" font-weight="700" fill="#15803D">Vào THEO hướng MỚI</text>
+  <text x="216" y="300" font-size="9.5" fill="#6B7280">Chỉ là breaker khi ĐỦ</text>
+  <text x="216" y="313" font-size="9.5" fill="#6B7280">sweep + MSS + retest.</text>
+  <text x="216" y="352" font-size="10.5" font-weight="700" fill="#15803D">Note này</text>
+
+  <!-- col 3: Mitigation Block -->
+  <rect x="384" y="72" width="172" height="300" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.6"/>
+  <rect x="384" y="72" width="172" height="30" rx="8" fill="#6B7280"/>
+  <text x="470" y="92" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Mitigation Block</text>
+  <text x="396" y="126" font-size="10.5" font-weight="700" fill="#1F2937">OB fail, KHÔNG sweep</text>
+  <text x="396" y="146" font-size="10" fill="#4B5563">Vùng quay lại "giải tỏa"</text>
+  <text x="396" y="160" font-size="10" fill="#4B5563">lệnh kẹt, không quét pool.</text>
+  <text x="396" y="184" font-size="10" font-weight="700" fill="#B91C1C">Sweep? — KHÔNG</text>
+  <text x="396" y="204" font-size="10" font-weight="700" fill="#15803D">Swing? — GIỮ (không phá)</text>
+  <text x="396" y="224" font-size="10" fill="#4B5563">Nguồn? — OB</text>
+  <rect x="396" y="240" width="148" height="30" rx="4" fill="#6B7280" opacity="0.10"/>
+  <text x="404" y="259" font-size="10" fill="#374151">Vào theo hướng đảo (nhẹ)</text>
+  <text x="396" y="300" font-size="9.5" fill="#6B7280">Yếu hơn breaker vì</text>
+  <text x="396" y="313" font-size="9.5" fill="#6B7280">thiếu "nhiên liệu" sweep.</text>
+  <text x="396" y="352" font-size="10.5" font-weight="700" fill="#15803D">[[22 - Mitigation]]</text>
+
+  <!-- col 4: IFVG -->
+  <rect x="564" y="72" width="172" height="300" rx="8" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.6"/>
+  <rect x="564" y="72" width="172" height="30" rx="8" fill="#1D4ED8"/>
+  <text x="650" y="92" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">IFVG</text>
+  <text x="576" y="126" font-size="10.5" font-weight="700" fill="#1F2937">FVG fail + đảo cực</text>
+  <text x="576" y="146" font-size="10" fill="#4B5563">Một FVG bị đóng nến</text>
+  <text x="576" y="160" font-size="10" fill="#4B5563">xuyên qua → đảo vai trò.</text>
+  <text x="576" y="184" font-size="10" fill="#4B5563">Sweep? — không bắt buộc</text>
+  <text x="576" y="204" font-size="10" fill="#4B5563">Fail bằng? — CLOSE qua FVG</text>
+  <text x="576" y="224" font-size="10" font-weight="700" fill="#1D4ED8">Nguồn? — FVG (không phải OB)</text>
+  <rect x="576" y="240" width="148" height="30" rx="4" fill="#1D4ED8" opacity="0.10"/>
+  <text x="584" y="259" font-size="10" fill="#1D4ED8">Vào theo hướng MỚI</text>
+  <text x="576" y="300" font-size="9.5" fill="#6B7280">Cùng ý "đảo cực" với</text>
+  <text x="576" y="313" font-size="9.5" fill="#6B7280">breaker, khác NGUỒN gốc.</text>
+  <text x="576" y="352" font-size="10.5" font-weight="700" fill="#15803D">[[17 - iFVG]]</text>
+
+  <rect x="24" y="388" width="712" height="66" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="408" font-size="11.5" font-weight="700" fill="#92400E">Điểm phân biệt cốt lõi: Breaker là vùng DUY NHẤT bắt buộc có SWEEP + swing bị PHÁ (MSS).</text>
+  <text x="36" y="426" font-size="11" fill="#92400E">Mitigation = OB fail nhưng KHÔNG sweep, swing GIỮ. IFVG = nguồn từ FVG (fail bằng CLOSE), không phải OB.</text>
+  <text x="36" y="444" font-size="11" fill="#92400E">Nếu thiếu sweep + MSS → đừng gọi là breaker; nhiều khả năng chỉ là OB thường hoặc mitigation block.</text>
+</svg>

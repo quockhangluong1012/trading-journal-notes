@@ -28,9 +28,10 @@ timeframes:
   - M1
 models:
   - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+importance: 5
 last_reviewed: 2026-06-23
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-07-02
 common_mistakes:
   - "[[Mistake - Mislabel Market Structure]]"
   - "[[Mistake - BOS On Minor Swing]]"
@@ -59,6 +60,12 @@ Advance Market Structure (cấu trúc thị trường nâng cao) là hệ thốn
 - **Intermediate Term High (ITH):** một **STH có một STH thấp hơn ở mỗi bên**.
 - **Long Term Low (LTL):** một **ITL có một ITL cao hơn ở mỗi bên**. Đây là swing point cấp cao nhất — đáy của một range lớn.
 - **Long Term High (LTH):** một **ITH có một ITH thấp hơn ở mỗi bên**.
+
+![[AMS-Advanced-Fractal-Hierarchy.svg|697]]
+
+**Tính lồng nhau (nesting):** một LTL luôn **đồng thời** là một ITL và một STL — degree cao không thay thế degree thấp mà *bao trùm* nó. Khi nhìn một đáy quan trọng, hãy tự hỏi: "đáy này đang đội bao nhiêu lớp mũ?" Đáy càng nhiều lớp (STL + ITL + LTL cùng lúc), stop loss dồn phía dưới càng nhiều và ý nghĩa cấu trúc càng lớn.
+
+**Cấu trúc là "bộ nhớ" của thị trường:** mỗi swing point là dấu vết một lần order flow đổi phía tại đó. STL ghi lại cuộc giằng co vài nến; ITL ghi lại cuộc giằng co của cả một nhịp; LTL ghi lại điểm mà cả một chiến dịch mua/bán lớn được khởi động. Vì vậy khi giá quay lại gần một swing degree cao, thị trường "nhớ" — phản ứng thường mạnh và nhiều thanh khoản hơn hẳn khi chạm một STL vô danh.
 
 **Bản chất (fractal):** cấu trúc lặp lại ở mọi degree. Một STL trên M5 có thể là một ITL khi nhìn rộng hơn, và một LTL trên M15 có thể chỉ là một STL trên H4. **Degree luôn mang tính tương đối với khung quan sát.** Điều quan trọng không phải con số tuyệt đối mà là **thứ bậc**: cái nào gom cái nào.
 
@@ -98,6 +105,30 @@ Mọi khái niệm ICT khác (bias, dealing range, premium/discount, OTE, liquid
 | **Intermediate Term (ITL/ITH)** | STL có STL cao hơn hai bên | STH có STH thấp hơn hai bên | Swing trung hạn; định nghĩa dealing range thực; BOS/MSS có ý nghĩa |
 | **Long Term (LTL/LTH)** | ITL có ITL cao hơn hai bên | ITH có ITH thấp hơn hai bên | Swing cấp cao; protected high/low; cấu trúc & bias chính |
 
+![[AMS-Advanced-Degree-Liquidity-Weight.svg|697]]
+
+### Nâng cao — Trọng lượng liquidity theo degree
+
+Mỗi swing point là một **kho stop loss**, nhưng kho không bằng nhau:
+
+- **Dưới STL:** chỉ có stop của trader LTF vào lệnh vài nến gần đây → pool mỏng. Sweep tại đây thường chỉ là **inducement** cho một nhịp nhỏ.
+- **Dưới ITL:** cộng dồn stop của tất cả những ai mua trong cả nhịp đó → pool trung bình. Sweep ITL đủ nhiên liệu cho một leg M15–H1.
+- **Dưới LTL:** stop của các vị thế swing/position + pending sell-stop breakout → pool "nặng" nhất. Sweep LTL thường mở ra **đảo chiều HTF hoặc leg nhiều ngày**.
+
+Hệ quả thực chiến: **target và sweep phải "cân degree"**. Một setup M5 nhắm tới BSL trên một STH thì R:R nhỏ và hợp lý; nhưng kỳ vọng đảo chiều H4 chỉ vì giá sweep một STL trên M5 là lệch degree — nhiên liệu không đủ cho kỳ vọng đó. Ngược lại, khi giá vừa sweep một LTL của khung H4 mà bạn chỉ dám nhắm 10 pip, bạn đang bỏ phí phần lớn move.
+
+### Nâng cao — Neo degree vào timeframe (khung phán quyết)
+
+Vì degree tương đối, mỗi trader phải tự **khóa một quy ước** và giữ nó nhất quán. Quy ước gợi ý cho hệ ICT 2022 intraday (NQ/FX):
+
+| Vai trò | Timeframe | Degree dùng ở khung này |
+|---|---|---|
+| Khung phán quyết bias | D1 / H4 | Chuỗi ITH/ITL của D1-H4 quyết định trend; LTL/LTH = invalidation của cả narrative |
+| Khung làm việc (dealing range) | H1 / M15 | ITL/ITH của H1-M15 vẽ dealing range thực; BOS/MSS "có ý nghĩa" đo ở đây |
+| Khung execution | M5 / M1 | STL/STH để timing entry, đặt stop, đọc inducement |
+
+Nguyên tắc: **nhãn degree chỉ có nghĩa bên trong khung đã chọn**. Khi chuyển khung, phải "dịch" lại nhãn (xem sơ đồ ở mục 4), không mang nhãn M1 lên áp cho H4.
+
 > [!tip]
 > Một mẹo đọc nhanh: bắt đầu từ **STL/STH** (chấm tất cả các đáy/đỉnh có higher-low/lower-high hai bên), rồi "nâng cấp": STL nào có STL cao hơn hai bên → ITL; ITL nào có ITL cao hơn hai bên → LTL. Bạn đang xây một cây phân cấp từ dưới lên. Cùng logic cho high.
 
@@ -118,6 +149,8 @@ Mọi khái niệm ICT khác (bias, dealing range, premium/discount, OTE, liquid
 ---
 
 ## 3. Cấu trúc nhận diện trên chart
+
+![[AMS-Advanced-Mapping-Workflow.svg|697]]
 
 ### Dấu hiệu chính
 1. **STL/STH (cấp 1):** một nến low (high) với nến hai bên đều có low cao hơn (high thấp hơn). Đây là viên gạch nền.
@@ -166,6 +199,8 @@ Mọi khái niệm ICT khác (bias, dealing range, premium/discount, OTE, liquid
 > 3. **Cái vừa bị phá là STH/STL lẻ (nội bộ) hay ITH/ITL/LTH/LTL (xu hướng)?**
 > 4. **Protected High/Low hiện tại ở đâu, và thủng nó nghĩa là gì?**
 
+![[AMS-Advanced-MTF-Mapping.svg|697]]
+
 ### D1 / H4 — Bias & Degree chính
 - **Bias hiện tại:** đọc theo chuỗi ITH/ITL (hoặc LTH/LTL) — dâng lên = bullish, hạ xuống = bearish.
 - **Long Term structure:** xác định LTL/LTH gần nhất; đây là khung của bias chính.
@@ -211,12 +246,16 @@ Invalid: đóng nến thủng protected ITL/LTL → bias bullish hỏng
 - [ ] Không có displacement — chỉ trôi qua mức cũ một chút.
 - [ ] Break ngược degree HTF mà không có chuỗi xác nhận (sweep → displacement → BOS đúng degree).
 
+![[AMS-Advanced-Protected-Levels.svg|697]]
+
 ### Đổi cấu trúc (Change of Character) được xác nhận khi
 - [ ] Trong uptrend, giá **đóng nến thủng Protected Low (ITL/LTL)** đang giữ → cấu trúc bullish bị tổn thương.
 - [ ] Sau đó hình thành lower ITH + lower ITL → xác nhận downtrend mới.
 - [ ] (Đảo ngược cho downtrend → uptrend.)
 
 ### So sánh: Sweep vs BOS thật
+
+![[AMS-Advanced-Sweep-vs-BOS.svg|697]]
 
 | Quan sát | Tên gọi | Cách đọc hợp lý |
 |---|---|---|
@@ -233,7 +272,7 @@ Invalid: đóng nến thủng protected ITL/LTL → bias bullish hỏng
 ## 6. Ví dụ chart
 
 ### Ví dụ đúng
-![[Advance-Market-Structure-Example-Correct.svg]]
+![[Advance-Market-Structure-Example-Correct.svg|697]]
 
 **Mô tả:**  
 Một uptrend đọc đúng phân cấp: các STL nhỏ được gom thành ITL, các ITL được gom dưới một LTL gốc (protected low). Mỗi degree đều thỏa điều kiện higher-low hai bên. BOS được đo khi giá đóng nến vượt ITH degree trung hạn, kèm chuỗi higher-high nối tiếp. Đáy LTL phía dưới là protected low — chừng nào chưa thủng, bias vẫn bullish.
@@ -245,7 +284,7 @@ Một uptrend đọc đúng phân cấp: các STL nhỏ được gom thành ITL,
 - Cấu trúc sạch giúp đặt dealing range và đọc liquidity theo degree.
 
 ### Ví dụ sai / dễ nhầm
-![[Advance-Market-Structure-Example-Wrong.svg]]
+![[Advance-Market-Structure-Example-Wrong.svg|697]]
 
 **Mô tả lỗi:**  
 Trader gắn nhãn "BOS" lên một STH lẻ xuất hiện trong một pullback của xu hướng giảm. Thực tế Protected High (LTH) phía trên chưa hề bị phá, và chuỗi lower-low vẫn tiếp diễn. "BOS" này chỉ là chuyển động nội bộ Short Term, không phải đổi xu hướng. Vào Long theo nó là trade ngược cấu trúc lớn.
@@ -257,6 +296,18 @@ Trader gắn nhãn "BOS" lên một STH lẻ xuất hiện trong một pullback 
 - Đọc sai degree = mọi phân tích phía sau (bias, P/D, target) đều lệch.
 
 ---
+
+## 7. Entry model liên quan
+
+Khái niệm này thường kết hợp với:
+- [[05 - BOS - Break of Structure]] — cú phá tiếp diễn, phải đo đúng degree
+- [[21 - Market Structure Shift]] — cú phá đảo chiều, xác nhận trên LTF
+- [[09 - Change of Character]] — thủng protected level, cảnh báo đổi cấu trúc
+- [[12 - Dealing Range]] — vẽ từ swing degree cao
+- [[27 - Premium Discount]] — đo trên dealing range đúng degree
+- [[19 - Liquidity]] / [[20 - Liquidity Sweep]] — trọng lượng pool theo degree
+- [[15 - Inducement]] — sweep STL nội bộ trước move thật
+
 ### Sequence mẫu — Long theo cấu trúc tăng đúng degree
 ```text
 HTF: chuỗi ITL dâng → Bullish; LTL = protected low
@@ -406,6 +457,27 @@ Uptrend: ITL đang dâng, LTL = protected low
 - [ ] Review riêng: BOS thật vs nhầm sweep; MSS đồng hướng vs ngược HTF; protected level còn nguyên vs đã thủng.
 - [ ] Thống kê win rate theo `bos_degree` và `mss_aligned_htf`.
 - [ ] Chỉ cập nhật rule khi đủ mẫu backtest/forward test.
+
+---
+
+## 14. Best Practices
+
+> [!success] Nguyên tắc vàng
+> **"Chấm degree trước, tìm setup sau."** Mở chart là chấm STL→ITL→LTL và protected level TRƯỚC KHI nghĩ đến bất kỳ lệnh nào. Setup chỉ là hệ quả của cấu trúc đọc đúng.
+
+1. **Khóa một khung phán quyết và không đổi giữa phiên.** Chọn H4 (bias) + M15 (dealing range) + M5/M1 (execution) rồi giữ nguyên quy ước. Phần lớn lỗi mislabel đến từ việc "trượt khung" vô thức khi lệnh đang chạy — chart lúc đó không đổi, chỉ có tâm lý muốn tìm lý do giữ lệnh.
+
+2. **Chấm swing bằng bóng nến, không bằng body.** STL/STH được định nghĩa bằng low/high tuyệt đối (kể cả wick). Chỉ khi đánh giá *cú phá* (BOS/MSS/CHoCH) mới yêu cầu body close. Hai việc này ngược nhau và hay bị lẫn: **xác lập swing = wick; xác nhận phá = body**.
+
+3. **Luôn biết hai con số: Protected Low và Protected High hiện tại.** Trước mỗi phiên, viết ra hai mức này trong Daily Note. Nếu không trả lời được "thủng mức nào thì bias hỏng?" trong 5 giây, nghĩa là chưa đọc xong cấu trúc — chưa được trade.
+
+4. **Cân degree giữa sweep, entry và target.** Sweep STL → kỳ vọng nhịp nhỏ; sweep ITL → leg M15-H1; sweep LTL → khả năng đảo HTF. Đừng bắt một cú sweep STL "gánh" một target external HTF, và đừng thoát non một lệnh bắt nguồn từ sweep LTL.
+
+5. **Khi cấu trúc choppy, quyền cao nhất là đứng ngoài.** Nếu sau 5 phút chấm swing mà các degree chồng chéo không phân định được, thị trường đang trong giai đoạn tái tích lũy — mọi nhãn BOS/MSS lúc này đều là đoán. Ghi "No Trade — structure unclear" là một quyết định trading đúng nghĩa.
+
+6. **Sau mỗi BOS, dời protected level một cách máy móc.** BOS mới → protected low/high mới = ITL/ITH cuối trước cú phá. Làm thủ công từng lần, đừng để mức cũ "dính" trên chart — protected level lỗi thời là nguyên nhân phổ biến của việc giữ lệnh quá lâu sau khi cấu trúc đã đổi.
+
+7. **Backtest riêng kỹ năng gắn nhãn, tách khỏi kỹ năng entry.** Mỗi tuần lấy 10 đoạn chart cũ, che phần bên phải, chấm degree rồi so với diễn biến thật. Kỹ năng này đo được ([[02 - Skill Metrics]]) và cải thiện nhanh hơn nhiều khi luyện tách rời khỏi áp lực vào lệnh.
 
 ---
 

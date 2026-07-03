@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arwB" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1D4ED8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Liquidity — cụm lệnh chờ trên đỉnh &amp; dưới đáy</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Thị trường vận hành như thuật toán: bị hút tới pool lệnh (draw on liquidity) để fill khối lượng lớn</text>
+
+  <rect x="24" y="68" width="712" height="292" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- BSL labels -->
+  <text x="44" y="92" font-size="12" font-weight="600" fill="#D97706">BSL (Buy-side Liquidity) — buy stops: SL của lệnh Short + buy stop breakout</text>
+  <text x="44" y="107" font-size="11" fill="#6B7280">nằm phía TRÊN old highs / equal highs / swing highs</text>
+
+  <!-- BSL pool -->
+  <line x1="170" y1="128" x2="345" y2="128" stroke="#D97706" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <circle cx="192" cy="118" r="3" fill="#D97706"/><circle cx="220" cy="118" r="3" fill="#D97706"/>
+  <circle cx="248" cy="118" r="3" fill="#D97706"/><circle cx="276" cy="118" r="3" fill="#D97706"/>
+  <circle cx="304" cy="118" r="3" fill="#D97706"/><circle cx="332" cy="118" r="3" fill="#D97706"/>
+  <text x="72" y="132" font-size="11" fill="#6B7280">equal highs</text>
+
+  <!-- price path -->
+  <polyline points="60,255 115,175 160,225 205,138 250,205 300,138 355,240 420,305 470,250 525,305 585,235 660,160" fill="none" stroke="#1D4ED8" stroke-width="2"/>
+
+  <!-- draw on liquidity arrow -->
+  <path d="M315,150 Q430,190 505,292" fill="none" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arwB)"/>
+  <text x="505" y="195" font-size="12" font-weight="600" fill="#1D4ED8">draw on liquidity</text>
+  <text x="505" y="210" font-size="11" fill="#6B7280">giá được hút từ pool → pool</text>
+
+  <!-- SSL pool -->
+  <line x1="390" y1="316" x2="560" y2="316" stroke="#D97706" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <circle cx="410" cy="327" r="3" fill="#D97706"/><circle cx="438" cy="327" r="3" fill="#D97706"/>
+  <circle cx="466" cy="327" r="3" fill="#D97706"/><circle cx="494" cy="327" r="3" fill="#D97706"/>
+  <circle cx="522" cy="327" r="3" fill="#D97706"/><circle cx="548" cy="327" r="3" fill="#D97706"/>
+  <text x="575" y="320" font-size="11" fill="#6B7280">equal lows</text>
+  <text x="44" y="349" font-size="12" font-weight="600" fill="#D97706">SSL (Sell-side Liquidity) — sell stops: SL của lệnh Long + sell stop breakout (phía DƯỚI old lows / equal lows)</text>
+
+  <!-- bottom boxes -->
+  <rect x="24" y="372" width="346" height="72" rx="8" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="40" y="394" font-size="13" font-weight="700" fill="#16A34A">Pool liquidity</text>
+  <text x="40" y="412" font-size="11.5" fill="#374151">= cụm lệnh chờ (resting orders) tại đỉnh/đáy — có lệnh thật để quét</text>
+  <text x="40" y="428" font-size="11.5" fill="#374151">Dùng làm TARGET / draw — không phải tín hiệu entry</text>
+
+  <rect x="390" y="372" width="346" height="72" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="406" y="394" font-size="13" font-weight="700" fill="#DC2626">Không phải liquidity</text>
+  <text x="406" y="412" font-size="11.5" fill="#374151">FVG / liquidity void = vùng giá đi nhanh, THIẾU giao dịch</text>
+  <text x="406" y="428" font-size="11.5" fill="#374151">Cũng không phải traded volume cổ điển — đừng chờ sweep ở đó</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">MMSM - Vi du sai: bat dinh giua buy program, chua co Smart Money High (ban nham Inducement)</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Chart minh hoa khai niem, khong phai du lieu giao dich that.</text>
+  <rect x="48.0" y="252" width="2" height="28" fill="#DC2626"/>
+  <rect x="40" y="260" width="18" height="12" fill="#DC2626" rx="1"/>
+  <rect x="74.0" y="250" width="2" height="30" fill="#16A34A"/>
+  <rect x="66" y="258" width="18" height="14" fill="#16A34A" rx="1"/>
+  <rect x="100.0" y="227" width="2" height="39" fill="#16A34A"/>
+  <rect x="92" y="235" width="18" height="23" fill="#16A34A" rx="1"/>
+  <rect x="126.0" y="212" width="2" height="31" fill="#16A34A"/>
+  <rect x="118" y="220" width="18" height="15" fill="#16A34A" rx="1"/>
+  <rect x="152.0" y="212" width="2" height="28" fill="#DC2626"/>
+  <rect x="144" y="220" width="18" height="12" fill="#DC2626" rx="1"/>
+  <rect x="178.0" y="212" width="2" height="28" fill="#16A34A"/>
+  <rect x="170" y="220" width="18" height="12" fill="#16A34A" rx="1"/>
+  <rect x="204.0" y="192" width="2" height="36" fill="#16A34A"/>
+  <rect x="196" y="200" width="18" height="20" fill="#16A34A" rx="1"/>
+  <rect x="230.0" y="167" width="2" height="41" fill="#16A34A"/>
+  <rect x="222" y="175" width="18" height="25" fill="#16A34A" rx="1"/>
+  <rect x="256.0" y="142" width="2" height="41" fill="#16A34A"/>
+  <rect x="248" y="150" width="18" height="25" fill="#16A34A" rx="1"/>
+  <rect x="282.0" y="117" width="2" height="41" fill="#16A34A"/>
+  <rect x="274" y="125" width="18" height="25" fill="#16A34A" rx="1"/>
+  <line x1="30" y1="220" x2="300" y2="220" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="34" y="215" font-size="10" fill="#16A34A">Dinh trung gian (bi nham la dinh)</text>
+  <circle cx="153" cy="232" r="8" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+  <text x="84" y="256" font-size="10" font-weight="700" fill="#16A34A">Ban "bat dinh" - chua sweep BSL chinh, chua MSS</text>
+  <path d="M153,240 L153,270" stroke="#16A34A" stroke-width="2" stroke-dasharray="3 2"/>
+  <text x="212" y="110" font-size="10" font-weight="700" fill="#16A34A">Buy program tiep dien - quet stop, dinh that cao hon</text>
+  <text x="24" y="432" font-size="15" font-weight="700" fill="#DC2626">✗ Sai</text>
+  <text x="90" y="432" font-size="12" fill="#374151">— khong co sweep BSL chinh + MSS giam - day chi la Inducement, khong phai Smart Money High.</text>
+</svg>

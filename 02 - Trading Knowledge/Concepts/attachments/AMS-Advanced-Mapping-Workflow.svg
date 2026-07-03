@@ -1,0 +1,37 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Quy trình chấm cấu trúc 6 bước (Structure Mapping Workflow)</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Làm theo đúng thứ tự, từ trên xuống — mỗi bước là input của bước sau. Sai bước 1–2 thì mọi thứ phía sau lệch.</text>
+
+  <!-- Step boxes -->
+  <rect x="40" y="76" width="680" height="52" rx="8" fill="#EDE9FE" stroke="#C4B5FD"/>
+  <text x="56" y="98" font-size="13" font-weight="700" fill="#5B21B6">① Chọn khung phán quyết (H4/H1) — khóa nhãn degree tại khung này</text>
+  <text x="56" y="116" font-size="11" fill="#4B5563">Không đổi khung giữa chừng. LTF chỉ để execution, không để "vẽ lại" degree.</text>
+
+  <rect x="40" y="138" width="680" height="52" rx="8" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="56" y="160" font-size="13" font-weight="700" fill="#374151">② Chấm tất cả STL/STH — viên gạch nền (higher-low / lower-high hai bên)</text>
+  <text x="56" y="178" font-size="11" fill="#4B5563">Dùng cả bóng nến; đừng bỏ sót swing chỉ vì body nhỏ.</text>
+
+  <rect x="40" y="200" width="680" height="52" rx="8" fill="#DBEAFE" stroke="#93C5FD"/>
+  <text x="56" y="222" font-size="13" font-weight="700" fill="#1E40AF">③ Nâng cấp ITL/ITH → LTL/LTH theo định nghĩa đệ quy</text>
+  <text x="56" y="240" font-size="11" fill="#4B5563">STL thấp nhất giữa 2 STL cao hơn = ITL; ITL thấp nhất giữa 2 ITL cao hơn = LTL (đảo cho high).</text>
+
+  <rect x="40" y="262" width="680" height="52" rx="8" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text x="56" y="284" font-size="13" font-weight="700" fill="#92400E">④ Xác định trend + Protected High/Low hiện tại</text>
+  <text x="56" y="302" font-size="11" fill="#4B5563">Chuỗi ITH/ITL dâng = bullish (protected low = ITL/LTL trước BOS gần nhất); hạ = bearish.</text>
+
+  <rect x="40" y="324" width="680" height="52" rx="8" fill="#FEE2E2" stroke="#FECACA"/>
+  <text x="56" y="346" font-size="13" font-weight="700" fill="#991B1B">⑤ Định vị liquidity theo degree + vẽ dealing range từ swing degree cao</text>
+  <text x="56" y="364" font-size="11" fill="#4B5563">SSL dưới ITL/LTL, BSL trên ITH/LTH → biết draw on liquidity và premium/discount thật.</text>
+
+  <rect x="40" y="386" width="680" height="52" rx="8" fill="#DCFCE7" stroke="#86EFAC"/>
+  <text x="56" y="408" font-size="13" font-weight="700" fill="#166534">⑥ Chỉ khi đó mới xuống LTF tìm entry — MSS/BOS execution phải ĐỒNG HƯỚNG degree HTF</text>
+  <text x="56" y="426" font-size="11" fill="#4B5563">Mọi tín hiệu LTF ngược khung phán quyết → mặc định bỏ qua (trừ playbook counter-trend đã backtest).</text>
+
+  <!-- connecting arrows -->
+  <text x="376" y="136" font-size="12" fill="#9CA3AF">▼</text>
+  <text x="376" y="198" font-size="12" fill="#9CA3AF">▼</text>
+  <text x="376" y="260" font-size="12" fill="#9CA3AF">▼</text>
+  <text x="376" y="322" font-size="12" fill="#9CA3AF">▼</text>
+  <text x="376" y="384" font-size="12" fill="#9CA3AF">▼</text>
+</svg>

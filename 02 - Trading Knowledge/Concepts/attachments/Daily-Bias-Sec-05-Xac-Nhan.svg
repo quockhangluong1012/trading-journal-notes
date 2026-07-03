@@ -1,0 +1,49 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Quy tắc xác nhận / vô hiệu hóa</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Phân biệt "wick qua level" (sweep) và invalidation thật (acceptance)</text>
+
+  <!-- Left: hợp lệ -->
+  <rect x="24" y="70" width="350" height="230" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="94" font-size="14" font-weight="700" fill="#16A34A">✔ Setup hợp lệ</text>
+  <g font-size="11.5" fill="#374151">
+    <text x="40" y="120">• Narrative đủ: range → location → draw → POI → invalidation</text>
+    <text x="40" y="142">• Giá tới đúng POI &amp; vị trí premium/discount</text>
+    <text x="40" y="164">• Liquidity đối diện entry đã bị sweep</text>
+    <text x="40" y="186">• LTF tạo MSS có ý nghĩa TRONG / ngay sau POI</text>
+    <text x="40" y="208">• Displacement + FVG/OB để vào lệnh có cấu trúc</text>
+    <text x="40" y="230">• Target = liquidity còn mở (không TP tùy ý)</text>
+    <text x="40" y="252">• R:R sau spread/slippage vẫn đạt tối thiểu</text>
+    <text x="40" y="278" font-weight="700" fill="#16A34A">→ Thực thi theo checklist</text>
+  </g>
+
+  <!-- Right: vô hiệu -->
+  <rect x="386" y="70" width="350" height="230" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="402" y="94" font-size="14" font-weight="700" fill="#DC2626">✘ Setup bị vô hiệu</text>
+  <g font-size="11.5" fill="#374151">
+    <text x="402" y="120">• Giá phá hẳn POI, đóng nến &amp; giữ acceptance ngoài vùng</text>
+    <text x="402" y="142">• MSS xảy ra nhưng NGOÀI POI</text>
+    <text x="402" y="164">• Không có displacement rõ sau sweep/POI</text>
+    <text x="402" y="186">• Chưa sweep liquidity đã cố vào lệnh</text>
+    <text x="402" y="208">• Entry ngược bias không có lý do mạnh</text>
+    <text x="402" y="230">• Target HTF của bias đã delivered xong</text>
+    <text x="402" y="252">• Điều kiện invalidation đã được xác nhận</text>
+    <text x="402" y="278" font-weight="700" fill="#DC2626">→ Đứng ngoài / đánh giá lại narrative</text>
+  </g>
+
+  <!-- Bottom: wick vs acceptance -->
+  <rect x="24" y="314" width="712" height="120" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="338" font-size="13" font-weight="700" fill="#1F2937">Wick qua level (sweep)  vs  Đóng thân qua level (acceptance)</text>
+  <!-- sweep candle -->
+  <line x1="120" y1="352" x2="120" y2="360" stroke="#DC2626" stroke-width="1.3"/>
+  <line x1="120" y1="360" x2="120" y2="420" stroke="#16A34A" stroke-width="1.3"/><rect x="114" y="378" width="12" height="34" fill="#16A34A"/>
+  <line x1="90" y1="360" x2="200" y2="360" stroke="#DC2626" stroke-dasharray="4 3"/>
+  <text x="150" y="372" font-size="10.5" fill="#16A34A">wick vượt → đóng lại trong range = sweep, chờ reject</text>
+  <!-- acceptance candle -->
+  <line x1="460" y1="392" x2="460" y2="360" stroke="#374151" stroke-width="1.3"/>
+  <rect x="454" y="360" width="12" height="40" fill="#374151"/>
+  <line x1="430" y1="392" x2="540" y2="392" stroke="#DC2626" stroke-dasharray="4 3"/>
+  <text x="490" y="378" font-size="10.5" fill="#374151">đóng thân qua &amp; giữ giá ngoài = acceptance → invalid</text>
+
+  <text x="380" y="456" text-anchor="middle" font-size="12" fill="#374151">Một M1/M5 break ngược khi D1/H4 còn nguyên = pullback nội bộ, KHÔNG tự động đảo Daily Bias.</text>
+</svg>

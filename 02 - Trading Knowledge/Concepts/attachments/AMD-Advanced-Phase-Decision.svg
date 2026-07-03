@@ -1,0 +1,50 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Cây quyết định theo pha — "Bây giờ tôi được phép làm gì?"</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Trả lời câu "đang ở pha nào?" trước, hành động là hệ quả. Mỗi pha chỉ có MỘT việc đúng.</text>
+
+  <!-- Q1 -->
+  <rect x="250" y="72" width="260" height="44" rx="22" fill="#1F2937"/>
+  <text x="290" y="99" font-size="13" font-weight="700" fill="#FFFFFF">Giá đang ở pha nào?</text>
+
+  <!-- arrows -->
+  <line x1="310" y1="116" x2="140" y2="160" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="380" y1="116" x2="380" y2="160" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="450" y1="116" x2="620" y2="160" stroke="#9CA3AF" stroke-width="1.5"/>
+
+  <!-- Accumulation branch -->
+  <rect x="40" y="162" width="210" height="42" rx="8" fill="#F3F4F6" stroke="#D1D5DB"/>
+  <text x="66" y="188" font-size="12.5" font-weight="700" fill="#4B5563">ACCUMULATION (range)</text>
+  <rect x="40" y="216" width="210" height="120" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="52" y="238" font-size="11" font-weight="700" fill="#374151">Việc đúng duy nhất: CHUẨN BỊ</text>
+  <text x="52" y="258" font-size="10.5" fill="#4B5563">• Đánh dấu open + range H/L</text>
+  <text x="52" y="274" font-size="10.5" fill="#4B5563">• Viết kịch bản Judas 2 chiều</text>
+  <text x="52" y="290" font-size="10.5" fill="#4B5563">• Xem pool nào ngược bias để chờ quét</text>
+  <text x="52" y="312" font-size="10.5" font-weight="700" fill="#B91C1C">✗ Cấm: trade breakout range</text>
+
+  <!-- Manipulation branch -->
+  <rect x="275" y="162" width="210" height="42" rx="8" fill="#FEE2E2" stroke="#FCA5A5"/>
+  <text x="300" y="188" font-size="12.5" font-weight="700" fill="#B91C1C">MANIPULATION (Judas)</text>
+  <rect x="275" y="216" width="210" height="120" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="287" y="238" font-size="11" font-weight="700" fill="#374151">Việc đúng duy nhất: QUAN SÁT</text>
+  <text x="287" y="258" font-size="10.5" fill="#4B5563">• Xác nhận pool đã bị quét chưa</text>
+  <text x="287" y="274" font-size="10.5" fill="#4B5563">• Chờ reclaim + displacement + MSS</text>
+  <text x="287" y="290" font-size="10.5" fill="#4B5563">• Chuẩn bị vùng entry (FVG dự kiến)</text>
+  <text x="287" y="312" font-size="10.5" font-weight="700" fill="#B91C1C">✗ Cấm: đuổi theo cú phá</text>
+
+  <!-- Distribution branch -->
+  <rect x="510" y="162" width="210" height="42" rx="8" fill="#DCFCE7" stroke="#86EFAC"/>
+  <text x="546" y="188" font-size="12.5" font-weight="700" fill="#166534">DISTRIBUTION (thật)</text>
+  <rect x="510" y="216" width="210" height="120" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="522" y="238" font-size="11" font-weight="700" fill="#374151">Việc đúng duy nhất: THỰC THI</text>
+  <text x="522" y="258" font-size="10.5" fill="#4B5563">• Early: entry FVG/OB, stop ngoài Judas</text>
+  <text x="522" y="274" font-size="10.5" fill="#4B5563">• Mid: quản lý lệnh, partial tại internal</text>
+  <text x="522" y="290" font-size="10.5" fill="#4B5563">• Late: KHÔNG mở lệnh mới (chase)</text>
+  <text x="522" y="312" font-size="10.5" font-weight="700" fill="#B91C1C">✗ Cấm: vào khi giá đã gần target</text>
+
+  <!-- Unknown row -->
+  <rect x="40" y="356" width="680" height="42" rx="8" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text x="56" y="382" font-size="12" font-weight="700" fill="#92400E">Không xác định được pha (range mơ hồ / trend thẳng / tin lớn)? → Bỏ khung AMD cho ngày đó. "Không rõ pha" = "không có lệnh".</text>
+
+  <text x="40" y="428" font-size="11" fill="#6B7280">Ghi vào journal tại mỗi entry: phase_at_entry = accumulation / manipulation / distribution-early / distribution-late — để backtest xem lệnh của bạn thực sự nằm ở pha nào.</text>
+</svg>

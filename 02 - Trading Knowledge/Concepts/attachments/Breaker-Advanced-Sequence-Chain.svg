@@ -1,0 +1,71 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="360" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Chuỗi ICT 2022 với Breaker làm POI</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Breaker không đứng một mình — nó là mắt xích sau sweep + MSS, trước entry.</text>
+
+  <!-- Row 1 -->
+  <!-- HTF Bias -->
+  <rect x="24" y="80" width="150" height="56" rx="8" fill="#374151"/>
+  <text x="99" y="104" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">① HTF Bias</text>
+  <text x="99" y="122" font-size="10" fill="#D1D5DB" text-anchor="middle">Bullish / Bearish</text>
+
+  <!-- HTF POI/Discount -->
+  <rect x="204" y="80" width="150" height="56" rx="8" fill="#3B82F6" opacity="0.9"/>
+  <text x="279" y="104" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">② HTF POI</text>
+  <text x="279" y="122" font-size="10" fill="#DBEAFE" text-anchor="middle">Discount / Premium</text>
+
+  <!-- Sweep SSL -->
+  <rect x="384" y="80" width="150" height="56" rx="8" fill="#F59E0B"/>
+  <text x="459" y="104" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">③ Sweep SSL/BSL</text>
+  <text x="459" y="122" font-size="10" fill="#FEF3C7" text-anchor="middle">lấy liquidity + reject</text>
+
+  <!-- Displacement + MSS -->
+  <rect x="564" y="80" width="172" height="56" rx="8" fill="#16A34A"/>
+  <text x="650" y="104" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">④ Displacement + MSS</text>
+  <text x="650" y="122" font-size="10" fill="#DCFCE7" text-anchor="middle">phá cấu trúc ngược</text>
+
+  <!-- arrows row 1 -->
+  <line x1="174" y1="108" x2="200" y2="108" stroke="#9CA3AF" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="354" y1="108" x2="380" y2="108" stroke="#9CA3AF" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="534" y1="108" x2="560" y2="108" stroke="#9CA3AF" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- down connector -->
+  <line x1="650" y1="136" x2="650" y2="170" stroke="#9CA3AF" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Row 2 (reverse direction) -->
+  <!-- OB flip = Breaker -->
+  <rect x="564" y="178" width="172" height="56" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="2.4"/>
+  <text x="650" y="202" font-size="12" font-weight="700" fill="#15803D" text-anchor="middle">⑤ OB flip = BREAKER</text>
+  <text x="650" y="220" font-size="10" fill="#4B5563" text-anchor="middle">vùng đảo cực (POI mới)</text>
+
+  <!-- Retest (trùng FVG) -->
+  <rect x="384" y="178" width="150" height="56" rx="8" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.8"/>
+  <text x="459" y="202" font-size="12" font-weight="700" fill="#1D4ED8" text-anchor="middle">⑥ Retest</text>
+  <text x="459" y="220" font-size="10" fill="#4B5563" text-anchor="middle">lý tưởng trùng FVG</text>
+
+  <!-- Entry -->
+  <rect x="204" y="178" width="150" height="56" rx="8" fill="#FFFFFF" stroke="#374151" stroke-width="1.8"/>
+  <text x="279" y="202" font-size="12" font-weight="700" fill="#1F2937" text-anchor="middle">⑦ Entry</text>
+  <text x="279" y="220" font-size="10" fill="#4B5563" text-anchor="middle">stop ngoài điểm sweep</text>
+
+  <!-- Target -->
+  <rect x="24" y="178" width="150" height="56" rx="8" fill="#166534"/>
+  <text x="99" y="202" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">⑧ Target BSL/SSL</text>
+  <text x="99" y="220" font-size="10" fill="#DCFCE7" text-anchor="middle">draw on liquidity</text>
+
+  <!-- arrows row 2 (leftward) -->
+  <line x1="564" y1="206" x2="538" y2="206" stroke="#9CA3AF" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="384" y1="206" x2="358" y2="206" stroke="#9CA3AF" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="204" y1="206" x2="178" y2="206" stroke="#9CA3AF" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="24" y="270" width="712" height="70" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="292" font-size="11.5" font-weight="700" fill="#92400E">Breaker là POI xuất hiện tại bước ⑤ — SAU khi sweep (③) và MSS (④) đã xảy ra.</text>
+  <text x="36" y="311" font-size="11" fill="#92400E">Bỏ qua bước ③ hoặc ④ thì vùng đó KHÔNG phải breaker (chỉ là OB/level thường).</text>
+  <text x="36" y="330" font-size="11" fill="#92400E">Confluence mạnh nhất: breaker (⑤) trùng FVG của chính nhịp displacement (④), đúng premium/discount.</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#9CA3AF"/>
+    </marker>
+  </defs>
+</svg>

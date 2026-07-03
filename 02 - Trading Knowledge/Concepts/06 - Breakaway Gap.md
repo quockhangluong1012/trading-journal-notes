@@ -23,7 +23,7 @@ importance: 3
 confidence: 1
 last_reviewed:
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-03
 related_concepts:
   - "[[Fair Value Gap]]"
   - "[[21 - Liquidity Void]]"
@@ -188,6 +188,63 @@ Bullish Breakaway Gap
 - Gap bị test nhiều lần, ăn mòn.
 - Không có target liquidity rõ.
 
+### Nâng cao — Định lượng độ mạnh của displacement tạo breakaway
+
+"Displacement mạnh" là một phán đoán trực quan dễ sai lệch: một cây nến trông "to" trên chart NQ1 khung M1 có thể chỉ là nhiễu bình thường, trong khi một cây nến "vừa phải" trên D1 XAUUSD đã là một cú bứt phá cực đoan. Nếu chỉ eyeball, hai trader nhìn cùng một breakout có thể kết luận trái ngược nhau về việc đó có phải breakaway thật hay không. Cần một phép đo tương đối — giống cách [[31 - Standard Deviation]] dùng bội số của một đoạn tham chiếu thay vì áng chừng bằng mắt — để tách bạch một cú break đáng tin khỏi một cú break yếu dễ thành false break.
+
+![[BreakawayGap-Advanced-DisplacementStrength.svg]]
+*Ba nến cùng phá một biên range nhưng độ mạnh khác nhau: yếu (body ≈ 0.8x range trung bình 10-20 nến trước, ≈45% tổng range nến, mất 6-8 nến mới phá xong biên), vừa (body ≈ 2x average range, ≈65% tổng range, phá trong 2-3 nến), và mạnh (body ≥ 3.5x average range, ≥80% tổng range, phá chỉ trong 1 nến). Tier càng cao, breakaway càng đáng tin.*
+
+Ba phép đo nên dùng song song, tương tự cách tiếp cận của [[28 - Rejection Block]] với tỉ lệ wick/body:
+
+1. **Body nến displacement so với range trung bình của 10-20 nến trước đó** (một proxy kiểu ATR đơn giản, không cần chỉ báo). Đo chiều cao body (open→close) của nến bứt phá, chia cho trung bình biên độ (high-low) của 10-20 nến ngay trước nó. Tỉ lệ càng lớn, cú break càng vượt trội so với "nhịp điệu" bình thường của thị trường ngay trước đó.
+2. **Body chiếm bao nhiêu % tổng range (high-low) của chính cây nến displacement.** Body chiếm phần lớn tổng range (thay vì một cây nến có wick dài hai đầu và body nhỏ ở giữa) cho thấy lực mua/bán áp đảo trong suốt cây nến, không chỉ ở một thời điểm ngắn.
+3. **Tốc độ / số nến cần dùng để phá xong toàn bộ biên range.** Một cú phá sạch biên chỉ trong 1 nến thể hiện động lượng dứt khoát; một cú phải "cày" qua 6-8 nến nhỏ mới vượt được biên cho thấy phe đối lập vẫn còn kháng cự đáng kể — rủi ro false break/pullback sâu cao hơn.
+
+| Body / avg range (10-20 nến) | Body / total range nến | Tốc độ phá biên | Tier | Hàm ý |
+|---|---|---|---|---|
+| < 1x avg range | < 50% | 6-8+ nến mới phá xong | **Yếu (weak)** | Dễ là false break; đòi hỏi thêm sweep + FVG rõ mới cân nhắc |
+| 1.5x – 3x avg range | 55% – 75% | 2-3 nến | **Vừa (moderate)** | Chỉ trade khi có thêm confluence (sweep, bias, draw on liquidity) |
+| > 3.5x avg range | ≥ 80% | 1 nến | **Mạnh (strong)** | Breakaway tin cậy cao; ưu tiên làm POI tiếp diễn chính |
+
+> [!tip]
+> Ghi `displacement_atr_ratio` (body / average range 10-20 nến) vào journal cho mỗi breakaway gap đã trade. Sau 20-30 mẫu trên NQ1/EURUSD/XAUUSD, bạn sẽ biết ngưỡng nào thực sự phân biệt breakaway "ăn tiền" khỏi breakaway "yếu dễ fail" trên từng thị trường, thay vì dùng cảm giác "nến to" chung chung.
+
+> [!note] Không nhầm với đo Rejection Block
+> Phép đo này nhìn vào **body của nến displacement khi phá RA KHỎI range** (đo động lượng tạo breakaway); còn tỉ lệ wick/body của [[28 - Rejection Block]] nhìn vào **wick của nến tại một swing high/low** (đo sự từ chối). Hai phép đo phục vụ hai câu hỏi khác nhau: "cú break này có mạnh không?" (Breakaway Gap) vs "cú từ chối này có mạnh không?" (Rejection Block) — đừng lẫn hai bảng tier với nhau khi ghi journal.
+
+### Nâng cao — Breakaway Gap lồng nhau đa khung thời gian (nested/fractal breakaway)
+
+Một sai lầm phổ biến khi phân tích đa khung thời gian là coi breakaway gap trên mỗi khung là một "sự kiện" độc lập. Thực tế, một breakaway gap HTF (H4/D1) hầu như luôn được **dệt nên từ một chuỗi breakaway gap nhỏ hơn trên LTF (M15/M5)** xảy ra trong cùng một nhịp displacement — chính cú "một nến" mạnh mẽ trên D1 khi zoom vào M15 lại hiện ra là 2-3 lần bứt phá nhỏ, mỗi lần tự nó cũng đủ điều kiện gọi là một breakaway gap thu nhỏ (range nhỏ → displacement nhỏ → gap nhỏ giữ).
+
+![[BreakawayGap-Advanced-NestedTimeframes.svg]]
+*Một breakaway gap H4/D1 duy nhất (khung trên) khi zoom vào M15/M5 (khung dưới) hóa ra gồm 2-3 breakaway gap nhỏ nối tiếp nhau, mỗi cái là một range → displacement → gap thu nhỏ trong cùng nhịp tăng lớn.*
+
+Vì sao điều này quan trọng cho việc tinh chỉnh entry đa khung thời gian:
+- **Các LTF breakaway gap bên trong HTF gap là POI tiếp diễn BỔ SUNG, không phải tín hiệu mâu thuẫn.** Nếu bạn đang chờ giá retest toàn bộ HTF gap để vào lệnh nhưng move quá mạnh không bao giờ quay lại đủ sâu, các LTF gap gần nhất chính là cơ hội entry tiếp diễn thực tế hơn — cùng logic, cùng hướng, chỉ khác quy mô.
+- **Không nên "hủy" ý tưởng breakaway HTF chỉ vì giá không quay về đúng gap lớn.** Giá retest một trong các LTF gap con (gần điểm hiện tại nhất) vẫn tôn trọng toàn bộ cấu trúc HTF — đó là hành vi nested bình thường, không phải dấu hiệu breakaway HTF thất bại.
+- **Áp dụng đúng logic phân tầng như [[31 - Standard Deviation]]**: quy mô POI phải khớp quy mô trade đang cầm. Trade intraday nên ưu tiên retest một LTF gap gần nhất; trade swing đa ngày có thể chờ retest HTF gap tổng nếu còn đủ thời gian nắm giữ.
+
+```text
+[WALKTHROUGH — Nested Breakaway trên NQ1]
+HTF (H4): Range 21200-21250 → 1 nến H4 bứt lên 21250 → 21480, để lại
+          HTF breakaway gap 21250-21310 (nhìn như MỘT cú displacement)
+
+Zoom M15 trong đúng khung giờ của nến H4 đó:
+  Leg con #1: range nhỏ 21250-21270 → displacement M15 → gap M15 #1 (21270-21290)
+  Leg con #2: range nhỏ 21290-21310 → displacement M15 → gap M15 #2 (21310-21330)
+  Leg con #3: range nhỏ 21340-21360 → displacement M15 → gap M15 #3 (21360-21390)
+
+→ Giá sau đó chỉ retrace về gap M15 #3 (gần nhất), KHÔNG quay lại toàn bộ
+  HTF gap 21250-21310.
+→ Đây vẫn là entry tiếp diễn hợp lệ: cùng bias, cùng câu chuyện HTF, chỉ
+  refine bằng LTF gap gần nhất thay vì chờ vô ích một retest sâu hơn.
+→ SL: far side của gap M15 #3 (không phải far side của HTF gap).
+```
+
+> [!warning]
+> Đừng đảo ngược logic: một LTF breakaway gap không tự động có nghĩa gì nếu nó **ngược hướng** hoặc **nằm ngoài** một HTF breakaway gap/bias đang có hiệu lực. Tính "lồng nhau" chỉ có giá trị khi LTF gap nằm **bên trong** phạm vi của nhịp displacement HTF và **cùng hướng** với nó — nếu không, đó chỉ là một breakaway gap LTF độc lập, cần đánh giá lại theo context riêng của nó.
+
 ---
 
 ## 4. Quy trình phân tích đa khung thời gian
@@ -276,7 +333,7 @@ Bullish Breakaway Gap
 ## 6. Ví dụ chart
 
 ### Ví dụ đúng — Bullish Breakaway Gap: phá range + displacement, retest giữ, Long tiếp diễn
-![[BreakawayGap-Example-Correct.png]]
+![[BreakawayGap-Example-Correct.svg]]
 
 **Mô tả:**
 Giá tích lũy trong một range; (lý tưởng) quét SSL dưới biên dưới range (sweep). Một **displacement tăng** bứt LÊN phá biên trên range, để lại một **gap/FVG** = breakaway gap. Giá retrace về cạnh gap, **giữ** và reject; M5 cho MSS tiếp diễn. Long tại đó; SL dưới far side gap / dưới biên range; target BSL/draw phía trên.
@@ -288,7 +345,7 @@ Giá tích lũy trong một range; (lý tưởng) quét SSL dưới biên dướ
 - Target là liquidity rõ ràng phía hướng break.
 
 ### Ví dụ sai / dễ nhầm — Fade một breakaway, hoặc gọi exhaustion là breakaway
-![[BreakawayGap-Example-Wrong.png]]
+![[BreakawayGap-Example-Wrong.svg]]
 
 **Mô tả lỗi:**
 Trader thấy một gap sau khi giá đã chạy rất dài và đặt lệnh **ngược lại kỳ vọng "gap sẽ fill"** — nhưng đó là một breakaway gap thật, giá đi tiếp và quét stop. HOẶC: gọi một **exhaustion gap** (cuối move, bị fill nhanh) là "breakaway" và đu theo, rồi dính đảo chiều.
@@ -300,7 +357,7 @@ Trader thấy một gap sau khi giá đã chạy rất dài và đặt lệnh **
 - Theo dõi xem gap có **bị đóng nến xuyên qua (fill)** không — đó là tín hiệu invalidation quan trọng.
 
 ### Giải phẫu Breakaway Gap
-![[BreakawayGap-Anatomy.png]]
+![[BreakawayGap-Anatomy.svg]]
 
 **Mô tả:** Sơ đồ chú thích range/consolidation, sweep biên, displacement bứt phá, breakaway gap (FVG/liquidity void), vùng retest, và mức invalidation (đóng nến xuyên gap).
 
@@ -481,6 +538,29 @@ HTF Bias Bearish
 - [ ] Thống kê tỉ lệ gap "giữ" vs "fill" theo vị trí trong move.
 - [ ] Đối chiếu với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]].
 - [ ] Review lại note này sau 2 tuần, cập nhật `confidence` & `last_reviewed`.
+
+---
+
+## Best Practices
+
+> [!success] Nguyên tắc vàng
+> **Một breakaway gap chỉ đáng tin khi có đủ ba yếu tố: phá range/level thật, displacement đủ mạnh theo tỉ lệ định lượng (không phải eyeball), và cùng hướng bias/draw on liquidity.** Thiếu một trong ba, "breakaway" chỉ là cái tên gắn cho một cú dao động bình thường hoặc một cái bẫy fade — đủ cả ba, nó trở thành một trong những tín hiệu tiếp diễn rõ ràng nhất trong bộ công cụ ICT.
+
+1. **Đừng bao giờ fade một breakaway gap thật.** Đây là lỗi tốn tiền nhất gắn với khái niệm này: thấy gap "trông xa" rồi kỳ vọng nó phải fill như một exhaustion gap, trong khi bản chất breakaway là GIỮ và tiếp diễn. Trước khi đặt bất kỳ lệnh ngược nào quanh một gap, tự hỏi: *"Gap này đang ở đầu hay cuối move?"* — câu trả lời quyết định toàn bộ hướng tiếp cận.
+
+2. **Luôn xác nhận đủ chuỗi "phá range/level + displacement" trước khi gọi tên một gap là breakaway.** Không phải mọi khoảng trống trên chart đều là breakaway — thiếu một cú phá cấu trúc thật phía sau, đó chỉ là imbalance vu vơ giữa range. Ghi `range_break_confirmed: yes/no` vào journal cho mỗi gap được đánh dấu, để tránh thói quen gọi bừa mọi gap là "breakaway".
+
+3. **Định lượng độ mạnh displacement thay vì tin vào cảm giác "nến to".** Dùng ngưỡng cụ thể: body ≥ 3.5x average range của 10-20 nến trước, body ≥ 80% tổng range nến, hoặc phá xong biên chỉ trong 1 nến (xem mục "Nâng cao — Định lượng độ mạnh của displacement"). Ghi `displacement_atr_ratio` cho từng lệnh; một breakaway "yếu" theo bảng tier này nên đòi thêm confluence trước khi tin, không nên trade một mình.
+
+4. **Phân biệt dứt khoát Breakaway với Exhaustion bằng vị trí trong move, không chỉ bằng hình dạng nến.** Hai loại gap có thể trông giống hệt nhau trên một khung nhìn hẹp; điều tách bạch chúng là gap này nằm ở **đầu** một nhịp mới hay ở **cuối** một move đã chạy dài. Luôn zoom ra HTF để đặt câu hỏi "move này đã đi được bao xa rồi?" trước khi tin vào bất kỳ gap nào.
+
+5. **Yêu cầu confluence với [[Fair Value Gap]] / [[21 - Liquidity Void]] và lý tưởng một [[20 - Liquidity Sweep]] trước khi coi breakaway là chất lượng cao.** Một cú phá range không kèm sweep vẫn có thể là breakaway thật, nhưng xác suất thấp hơn hẳn so với một cú phá xảy ra ngay sau khi quét sạch thanh khoản ở biên range — đó là dấu hiệu dòng tiền lớn đã "dọn dẹp" trước khi đẩy giá đi. Ghi `liquidity_swept_before_break: yes/no` để so sánh nhóm có sweep với nhóm không.
+
+6. **Đặt SL ở far side của gap (hoặc far side của gap con gần nhất nếu đang refine theo LTF nested gap), không đặt sát mép gần.** Đóng nến sạch xuyên ngược qua gap là mức invalidation chuẩn — đặt SL trong lòng gap khiến lệnh dễ bị quét bởi một nhịp pullback bình thường trước khi giá tiếp diễn đúng hướng.
+
+7. **Khi phân tích đa khung thời gian, tận dụng breakaway gap lồng nhau (nested) thay vì chỉ chờ retest gap HTF.** Nếu move quá mạnh khiến giá không bao giờ quay lại đủ sâu để test toàn bộ HTF gap, các breakaway gap M15/M5 nằm bên trong nhịp displacement đó là POI tiếp diễn hợp lệ để refine entry — không phải tín hiệu mâu thuẫn với câu chuyện HTF. Ghi `nested_ltf_confirmed: yes/no` khi entry dựa trên một LTF gap con thay vì HTF gap gốc.
+
+8. **Backtest 20-30 mẫu breakaway gap trên NQ1/EURUSD/XAUUSD trước khi tin cậy hoàn toàn**, tách riêng theo: có sweep hay không, tier displacement (yếu/vừa/mạnh), và kết quả gap giữ hay bị fill. Chỉ dữ liệu thực chiến mới trả lời được ngưỡng `displacement_atr_ratio` nào thực sự phân biệt breakaway "ăn tiền" khỏi breakaway hay fail trên từng thị trường. Đối chiếu với [[01 - Roadmap]], cập nhật [[02 - Skill Metrics]], và chỉ nâng `confidence` của note này sau khi có đủ bằng chứng thay vì để mãi ở mức seed.
 
 ---
 

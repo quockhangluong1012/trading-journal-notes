@@ -1,0 +1,71 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Turtle Soup chuẩn vs Turtle Soup Plus One — đánh đổi entry sớm/muộn</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Plus One chờ thêm 1 nến xác nhận sau reclaim: entry tệ hơn + stop rộng hơn, nhưng lọc bớt tín hiệu giả.</text>
+
+  <rect x="24" y="70" width="712" height="240" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <line x1="380" y1="80" x2="380" y2="300" stroke="#E5E7EB" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="140" y="94" font-size="11.5" font-weight="700" fill="#1D4ED8">TURTLE SOUP CHUẨN</text>
+  <text x="470" y="94" font-size="11.5" font-weight="700" fill="#15803D">TURTLE SOUP PLUS ONE</text>
+
+  <!-- level -->
+  <line x1="60" y1="230" x2="700" y2="230" stroke="#6B7280" stroke-width="1.3" stroke-dasharray="6 4"/>
+  <text x="64" y="224" font-size="9.5" fill="#374151">Mức bị quét (SSL)</text>
+
+  <!-- Standard side: sweep candle then immediate entry -->
+  <path d="M60,150 L110,190 L150,220 L175,228" fill="none" stroke="#374151" stroke-width="2"/>
+  <rect x="172" y="226" width="12" height="10" fill="#DC2626" opacity="0.85" rx="1"/>
+  <rect x="177" y="236" width="3" height="30" fill="#DC2626" opacity="0.85"/>
+  <text x="140" y="285" font-size="9.5" font-weight="700" fill="#B91C1C">① Nến sweep + reclaim</text>
+
+  <path d="M180,236 L210,210 L250,175" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <circle cx="182" cy="234" r="7" fill="#16A34A"/>
+  <text x="190" y="200" font-size="9.5" font-weight="700" fill="#15803D">② Entry NGAY sau nến reclaim</text>
+  <line x1="182" y1="266" x2="360" y2="266" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="188" y="280" font-size="9" fill="#B91C1C">SL sát dưới wick sweep (hẹp)</text>
+
+  <!-- Plus One side: sweep candle, then wait one more confirming candle -->
+  <path d="M400,150 L450,190 L490,220 L515,228" fill="none" stroke="#374151" stroke-width="2"/>
+  <rect x="512" y="226" width="12" height="10" fill="#DC2626" opacity="0.85" rx="1"/>
+  <rect x="517" y="236" width="3" height="30" fill="#DC2626" opacity="0.85"/>
+  <text x="480" y="285" font-size="9.5" font-weight="700" fill="#B91C1C">① Nến sweep + reclaim (giống hệt)</text>
+
+  <!-- extra confirming candle -->
+  <rect x="535" y="210" width="12" height="14" fill="#16A34A" opacity="0.85" rx="1"/>
+  <rect x="540" y="200" width="3" height="34" fill="#16A34A" opacity="0.85"/>
+  <circle cx="541" cy="217" r="10" fill="none" stroke="#166534" stroke-width="1.5"/>
+  <text x="480" y="185" font-size="9.5" font-weight="700" fill="#166534">② Chờ THÊM 1 nến xác nhận hướng</text>
+
+  <path d="M547,205 L580,180 L620,150" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <circle cx="547" cy="204" r="7" fill="#16A34A"/>
+  <text x="555" y="170" font-size="9.5" font-weight="700" fill="#15803D">③ Entry sau nến xác nhận (muộn hơn)</text>
+  <line x1="182" y1="266" x2="182" y2="266" stroke="none"/>
+  <line x1="512" y1="266" x2="700" y2="266" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="518" y="280" font-size="9" fill="#B91C1C">SL vẫn dưới wick sweep gốc (rộng hơn vì entry cao hơn)</text>
+
+  <!-- comparison table -->
+  <rect x="24" y="318" width="712" height="128" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="336" font-size="12" font-weight="700" fill="#1F2937">Đánh đổi Entry / Stop / Xác suất</text>
+  <line x1="36" y1="344" x2="724" y2="344" stroke="#E5E7EB"/>
+
+  <text x="42" y="360" font-size="10" font-weight="700" fill="#374151">Tiêu chí</text>
+  <text x="260" y="360" font-size="10" font-weight="700" fill="#1D4ED8">Chuẩn (immediate)</text>
+  <text x="500" y="360" font-size="10" font-weight="700" fill="#15803D">Plus One (chờ 1 nến)</text>
+  <line x1="36" y1="368" x2="724" y2="368" stroke="#F3F4F6"/>
+
+  <text x="42" y="384" font-size="9.5" fill="#374151">Thời điểm entry</text>
+  <text x="260" y="384" font-size="9.5" fill="#1D4ED8">Ngay sau nến reclaim</text>
+  <text x="500" y="384" font-size="9.5" fill="#15803D">Sau 1 nến xác nhận thêm</text>
+
+  <text x="42" y="400" font-size="9.5" fill="#374151">Giá entry</text>
+  <text x="260" y="400" font-size="9.5" fill="#1D4ED8">Tốt hơn (gần đáy/đỉnh sweep)</text>
+  <text x="500" y="400" font-size="9.5" fill="#15803D">Tệ hơn (đã đi xa hơn)</text>
+
+  <text x="42" y="416" font-size="9.5" fill="#374151">Stop</text>
+  <text x="260" y="416" font-size="9.5" fill="#1D4ED8">Hẹp hơn</text>
+  <text x="500" y="416" font-size="9.5" fill="#15803D">Rộng hơn (RR kém hơn)</text>
+
+  <text x="42" y="432" font-size="9.5" fill="#374151">Tỉ lệ tín hiệu giả</text>
+  <text x="260" y="432" font-size="9.5" fill="#1D4ED8">Cao hơn (nhiều false reclaim)</text>
+  <text x="500" y="432" font-size="9.5" fill="#15803D">Thấp hơn — đã lọc thêm 1 lớp</text>
+</svg>

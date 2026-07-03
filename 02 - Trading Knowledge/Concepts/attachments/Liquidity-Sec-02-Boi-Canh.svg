@@ -1,0 +1,58 @@
+<svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arwC" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1D4ED8"/></marker>
+  </defs>
+  <rect x="0" y="0" width="760" height="520" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Bối cảnh sử dụng — phân loại pool &amp; Internal vs External</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Quy luật ICT: giá thường dao động external → internal → external đối diện</text>
+
+  <!-- Left: internal vs external -->
+  <rect x="24" y="68" width="336" height="264" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="92" font-size="13" font-weight="700" fill="#1F2937">Internal vs External range liquidity</text>
+  <rect x="44" y="118" width="150" height="176" fill="#3B82F6" opacity="0.08"/>
+  <line x1="44" y1="118" x2="194" y2="118" stroke="#D97706" stroke-width="2"/>
+  <line x1="44" y1="294" x2="194" y2="294" stroke="#D97706" stroke-width="2"/>
+  <rect x="88" y="196" width="62" height="18" fill="#16A34A" opacity="0.18" stroke="#16A34A"/>
+  <path d="M60,126 Q70,170 90,198" fill="none" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arwC)"/>
+  <path d="M148,216 Q170,255 182,284" fill="none" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arwC)"/>
+  <text x="204" y="124" font-size="12" font-weight="600" fill="#D97706">External: BSL</text>
+  <text x="204" y="138" font-size="11" fill="#6B7280">trên range high (draw lớn)</text>
+  <text x="204" y="204" font-size="12" font-weight="600" fill="#16A34A">Internal: FVG / OB</text>
+  <text x="204" y="218" font-size="11" fill="#6B7280">điểm retrace giữa range</text>
+  <text x="204" y="292" font-size="12" font-weight="600" fill="#D97706">External: SSL</text>
+  <text x="204" y="306" font-size="11" fill="#6B7280">dưới range low (draw lớn)</text>
+  <text x="40" y="322" font-size="11" fill="#374151">Lấy external → về internal → đi external đối diện</text>
+
+  <!-- Right: pool hierarchy -->
+  <rect x="372" y="68" width="364" height="264" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="388" y="92" font-size="13" font-weight="700" fill="#1F2937">Phân loại pool theo cấp độ (draw mạnh → yếu)</text>
+  <rect x="388" y="104" width="4" height="46" fill="#1D4ED8"/>
+  <text x="402" y="122" font-size="12" font-weight="600" fill="#1F2937">HTF / Daily: PDH · PDL · PWH · PWL</text>
+  <text x="402" y="140" font-size="11" fill="#6B7280">Draw mạnh nhất — target chính của ngày / tuần</text>
+  <rect x="388" y="156" width="4" height="46" fill="#3B82F6"/>
+  <text x="402" y="174" font-size="12" font-weight="600" fill="#1F2937">Session: Asia / London / NY high–low</text>
+  <text x="402" y="192" font-size="11" fill="#6B7280">London thường quét Asia, NY thường quét London</text>
+  <rect x="388" y="208" width="4" height="46" fill="#D97706"/>
+  <text x="402" y="226" font-size="12" font-weight="600" fill="#1F2937">Engineered: equal highs / equal lows</text>
+  <text x="402" y="244" font-size="11" fill="#6B7280">Được "dọn sẵn" để dụ trader — dễ bị quét nhất</text>
+  <rect x="388" y="260" width="4" height="46" fill="#6B7280"/>
+  <text x="402" y="278" font-size="12" font-weight="600" fill="#1F2937">Structural: old high/low, swing, trendline</text>
+  <text x="402" y="296" font-size="11" fill="#6B7280">Stop loss tự nhiên của trader — pool cổ điển nhất</text>
+
+  <!-- bottom boxes -->
+  <rect x="24" y="348" width="350" height="152" rx="8" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="40" y="372" font-size="13" font-weight="700" fill="#16A34A">Giá trị cao khi</text>
+  <text x="40" y="392" font-size="11.5" fill="#374151">• Pool rõ &amp; CHƯA bị lấy (PDH/PDL, PWH/PWL, eq H/L)</text>
+  <text x="40" y="412" font-size="11.5" fill="#374151">• Xác định được draw CHÍNH, tách khỏi pool thứ yếu</text>
+  <text x="40" y="432" font-size="11.5" fill="#374151">• Cùng Daily Bias + đúng Premium/Discount</text>
+  <text x="40" y="452" font-size="11.5" fill="#374151">• Equal highs/lows hình thành đúng phía draw</text>
+  <text x="40" y="472" font-size="11.5" fill="#374151">• Còn nhiều room tới external → đủ R:R</text>
+
+  <rect x="386" y="348" width="350" height="152" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="402" y="372" font-size="13" font-weight="700" fill="#DC2626">Bỏ qua khi</text>
+  <text x="402" y="392" font-size="11.5" fill="#374151">• Liquidity hai phía đều gần — draw chính không rõ</text>
+  <text x="402" y="412" font-size="11.5" fill="#374151">• Draw chính đã bị lấy, chưa có pool mới</text>
+  <text x="402" y="432" font-size="11.5" fill="#374151">• Giá ở giữa range, xa external liquidity</text>
+  <text x="402" y="452" font-size="11.5" fill="#374151">• "Pool" thực ra là imbalance / liquidity void</text>
+  <text x="402" y="472" font-size="11.5" fill="#374151">• Đường tới target bị pool gần hơn chặn lại</text>
+</svg>

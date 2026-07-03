@@ -1,0 +1,68 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Giải phẫu New Week Opening Gap (NWOG)</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Friday Close, Sunday Open, vùng NWOG, CE 50% và nguyên tắc giữ 3–5 NWOG gần nhất trên chart.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- Friday candles leading into close -->
+  <g>
+    <rect x="70" y="150" width="16" height="40" fill="#374151" rx="1"/>
+    <rect x="76" y="140" width="4" height="60" fill="#374151"/>
+    <rect x="110" y="140" width="16" height="35" fill="#374151" rx="1"/>
+    <rect x="116" y="128" width="4" height="58" fill="#374151"/>
+    <rect x="150" y="128" width="16" height="30" fill="#16A34A" rx="1"/>
+    <rect x="156" y="118" width="4" height="50" fill="#16A34A"/>
+    <text x="60" y="115" font-size="10.5" fill="#6B7280">Tuần cũ (Thứ 2 → Thứ 6)</text>
+  </g>
+
+  <!-- Friday close line -->
+  <line x1="166" y1="128" x2="716" y2="128" stroke="#3B82F6" stroke-width="1.6" stroke-dasharray="7 4"/>
+  <text x="590" y="122" font-size="11" font-weight="700" fill="#1D4ED8">① Friday Close (settlement ~16:59–17:00 ET)</text>
+  <circle cx="166" cy="128" r="5" fill="#3B82F6"/>
+
+  <!-- weekend gap zone -->
+  <rect x="182" y="128" width="60" height="130" fill="#F59E0B" opacity="0.14" stroke="#B45309" stroke-dasharray="4 3"/>
+  <text x="248" y="150" font-size="11" font-weight="700" fill="#92400E">③ NWOG range</text>
+  <text x="248" y="164" font-size="9.5" fill="#92400E">(không có giao dịch cuối tuần)</text>
+
+  <!-- weekend gap markers: Sat/Sun no candles -->
+  <text x="188" y="200" font-size="9.5" fill="#9CA3AF" transform="rotate(-90 196 200)">Thứ 7 — Chủ Nhật (đóng cửa)</text>
+
+  <!-- CE 50% dashed -->
+  <line x1="182" y1="193" x2="716" y2="193" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="3 3"/>
+  <circle cx="212" cy="193" r="5" fill="#DC2626"/>
+  <text x="590" y="188" font-size="11" font-weight="700" fill="#B91C1C">④ CE — 50% NWOG (mức phản ứng chính)</text>
+
+  <!-- Sunday open line -->
+  <line x1="242" y1="258" x2="716" y2="258" stroke="#3B82F6" stroke-width="1.6" stroke-dasharray="7 4"/>
+  <circle cx="242" cy="258" r="5" fill="#3B82F6"/>
+  <text x="590" y="252" font-size="11" font-weight="700" fill="#1D4ED8">② Sunday Open (reopen ~17:00–18:00 ET)</text>
+
+  <!-- new week candles reacting to CE -->
+  <g>
+    <rect x="260" y="240" width="16" height="35" fill="#16A34A" rx="1"/>
+    <rect x="266" y="228" width="4" height="55" fill="#16A34A"/>
+    <rect x="300" y="205" width="16" height="30" fill="#16A34A" rx="1"/>
+    <rect x="306" y="193" width="4" height="50" fill="#16A34A"/>
+    <path d="M330,215 L370,193 L420,193 L470,150" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+    <circle cx="420" cy="193" r="7" fill="#16A34A" opacity="0.9"/>
+    <text x="380" y="178" font-size="9.5" fill="#166534">Giá bị hút về CE rồi phản ứng</text>
+  </g>
+
+  <text x="60" y="290" font-size="10.5" fill="#6B7280">Tuần mới (Thứ 2 →)</text>
+
+  <!-- historical NWOGs kept on chart -->
+  <rect x="24" y="310" width="712" height="78" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="328" font-size="11.5" font-weight="700" fill="#1F2937">⑤ Giữ 3–5 NWOG gần nhất trên chart (kể cả đã fill)</text>
+  <line x1="60" y1="360" x2="200" y2="360" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="64" y="374" font-size="9.5" fill="#6B7280">NWOG tuần trước (đã fill — vẫn là SR)</text>
+  <line x1="260" y1="360" x2="400" y2="360" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="264" y="374" font-size="9.5" fill="#6B7280">NWOG 2 tuần trước</text>
+  <line x1="460" y1="360" x2="600" y2="360" stroke="#F59E0B" stroke-width="1.8" stroke-dasharray="5 3"/>
+  <text x="464" y="374" font-size="9.5" fill="#92400E">NWOG tuần này (unfilled — draw mạnh)</text>
+
+  <rect x="24" y="408" width="712" height="58" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="428" font-size="11.5" font-weight="700" fill="#92400E">Friday Close + Sunday Open = 2 cạnh NWOG; CE = trung điểm, là nam châm chính.</text>
+  <text x="36" y="448" font-size="11.5" font-weight="700" fill="#92400E">Giữ 3–5 NWOG gần nhất làm mốc tham chiếu cố định cho premium/discount và draw on liquidity của tuần.</text>
+</svg>

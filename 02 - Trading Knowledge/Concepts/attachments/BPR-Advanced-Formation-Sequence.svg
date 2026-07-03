@@ -1,0 +1,67 @@
+<svg viewBox="0 0 760 450" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="450" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Trình tự hình thành Bullish BPR — 4 bước</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">① Leg giảm để lại SIBI → ② Sweep + đảo chiều → ③ Leg tăng để lại BISI chồng lên → ④ Retest phần OVERLAP (quanh CE).</text>
+
+  <!-- Step 1: down leg + SIBI -->
+  <rect x="24" y="76" width="172" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="100" font-size="12.5" font-weight="700" fill="#DC2626">① Leg giảm → SIBI</text>
+  <rect x="70" y="120" width="2" height="45" fill="#DC2626"/><rect x="64" y="126" width="12" height="32" fill="#DC2626" rx="1"/>
+  <rect x="98" y="132" width="2" height="110" fill="#DC2626"/><rect x="92" y="140" width="12" height="92" fill="#DC2626" rx="1"/>
+  <rect x="126" y="228" width="2" height="60" fill="#DC2626"/><rect x="120" y="235" width="12" height="45" fill="#DC2626" rx="1"/>
+  <rect x="58" y="160" width="110" height="62" fill="#EF4444" opacity="0.13"/>
+  <text x="60" y="154" font-size="10.5" fill="#DC2626">bearish FVG (SIBI)</text>
+  <text x="36" y="380" font-size="10" fill="#6B7280">Displacement giảm mạnh,</text>
+  <text x="36" y="394" font-size="10" fill="#6B7280">gap 1 chiều chưa được lấp.</text>
+
+  <!-- Step 2: sweep + reversal -->
+  <rect x="208" y="76" width="172" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="220" y="100" font-size="12.5" font-weight="700" fill="#B45309">② Sweep SSL + đảo</text>
+  <rect x="252" y="240" width="2" height="80" fill="#DC2626"/><rect x="246" y="248" width="12" height="52" fill="#DC2626" rx="1"/>
+  <!-- sweep candle long lower wick -->
+  <rect x="280" y="262" width="2" height="105" fill="#16A34A"/><rect x="274" y="268" width="12" height="42" fill="#16A34A" rx="1"/>
+  <circle cx="281" cy="360" r="9" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+  <line x1="240" y1="352" x2="330" y2="352" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <text x="222" y="384" font-size="10" fill="#B45309">wick quét SSL dưới đáy cũ</text>
+  <rect x="308" y="200" width="2" height="90" fill="#16A34A"/><rect x="302" y="208" width="12" height="66" fill="#16A34A" rx="1"/>
+  <text x="220" y="130" font-size="10" fill="#6B7280">V-reversal: đáy phản ứng</text>
+  <text x="220" y="144" font-size="10" fill="#6B7280">hình thành sau cú quét.</text>
+
+  <!-- Step 3: up leg + BISI overlapping -->
+  <rect x="392" y="76" width="172" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="404" y="100" font-size="12.5" font-weight="700" fill="#16A34A">③ Leg tăng → BISI chồng</text>
+  <rect x="436" y="230" width="2" height="80" fill="#16A34A"/><rect x="430" y="238" width="12" height="58" fill="#16A34A" rx="1"/>
+  <rect x="464" y="130" width="2" height="130" fill="#16A34A"/><rect x="458" y="140" width="12" height="105" fill="#16A34A" rx="1"/>
+  <rect x="492" y="115" width="2" height="55" fill="#16A34A"/><rect x="486" y="120" width="12" height="40" fill="#16A34A" rx="1"/>
+  <!-- SIBI zone (from step 1, same band) -->
+  <rect x="424" y="160" width="120" height="62" fill="#EF4444" opacity="0.12"/>
+  <!-- BISI zone overlapping -->
+  <rect x="424" y="185" width="120" height="65" fill="#3B82F6" opacity="0.14"/>
+  <!-- overlap -->
+  <rect x="424" y="185" width="120" height="37" fill="#7C3AED" opacity="0.22"/>
+  <text x="404" y="290" font-size="10" fill="#1D4ED8">BISI (bullish FVG) đè lên SIBI</text>
+  <text x="404" y="306" font-size="10.5" font-weight="700" fill="#5B21B6">Phần tím = OVERLAP = BPR</text>
+  <text x="404" y="380" font-size="10" fill="#6B7280">Chỉ phần giao nhau mới là BPR,</text>
+  <text x="404" y="394" font-size="10" fill="#6B7280">không phải toàn bộ 2 FVG.</text>
+
+  <!-- Step 4: retest CE -->
+  <rect x="576" y="76" width="160" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="588" y="100" font-size="12.5" font-weight="700" fill="#5B21B6">④ Retest CE → entry</text>
+  <rect x="588" y="185" width="136" height="37" fill="#7C3AED" opacity="0.22"/>
+  <line x1="588" y1="203" x2="724" y2="203" stroke="#5B21B6" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="592" y="199" font-size="9.5" fill="#5B21B6">CE (50% overlap)</text>
+  <path d="M600,130 L622,160 L636,200 L650,206 L664,180 L680,150 L700,120" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="650" cy="206" r="6" fill="#16A34A"/>
+  <text x="588" y="240" font-size="10" font-weight="700" fill="#15803D">entry quanh CE</text>
+  <text x="588" y="256" font-size="10" fill="#B91C1C">stop dưới đáy BPR/sweep</text>
+  <text x="588" y="380" font-size="10" fill="#6B7280">Reject sắc bén tại CE =</text>
+  <text x="588" y="394" font-size="10" fill="#6B7280">respect; đi tiếp về BSL.</text>
+
+  <!-- arrows between panels -->
+  <text x="197" y="245" font-size="16" fill="#9CA3AF">→</text>
+  <text x="381" y="245" font-size="16" fill="#9CA3AF">→</text>
+  <text x="565" y="245" font-size="16" fill="#9CA3AF">→</text>
+
+  <rect x="24" y="416" width="712" height="24" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="432" font-size="11.5" font-weight="700" fill="#92400E">Bearish BPR: đối xứng hoàn toàn — leg tăng để lại BISI, sweep BSL, leg giảm để lại SIBI chồng lên; retest overlap từ dưới lên để Short.</text>
+</svg>

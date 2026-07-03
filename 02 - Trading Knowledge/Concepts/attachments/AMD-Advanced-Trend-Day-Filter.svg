@@ -1,0 +1,38 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Bộ lọc: Ngày AMD chuẩn vs Trend Day — đừng ép khung sai</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Câu hỏi phân loại: cú phá range Á có RECLAIM không? Reclaim = Judas (AMD). Giữ luôn + tiếp diễn = Trend day.</text>
+
+  <!-- Left: AMD day -->
+  <rect x="24" y="70" width="350" height="300" rx="8" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="38" y="94" font-size="13" font-weight="700" fill="#166534">Ngày AMD — phá giả rồi reclaim</text>
+  <rect x="50" y="180" width="90" height="36" fill="#9CA3AF" opacity="0.18"/>
+  <text x="54" y="174" font-size="9.5" fill="#6B7280">Range Á</text>
+  <line x1="50" y1="216" x2="340" y2="216" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <path d="M55,198 L75,192 L95,204 L115,196 L140,200 L165,250 L185,240 L200,262 L220,208 L240,190 L265,155 L285,168 L320,120" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="200" cy="262" r="7" fill="none" stroke="#DC2626" stroke-width="2.2"/>
+  <text x="148" y="288" font-size="10.5" fill="#B91C1C">phá đáy range → bị TỪ CHỐI</text>
+  <circle cx="220" cy="208" r="5" fill="#0EA5E9"/>
+  <text x="232" y="230" font-size="10.5" fill="#0284C7">reclaim vào lại range</text>
+  <text x="38" y="330" font-size="11" font-weight="700" fill="#166534">→ Trade theo AMD: chờ MSS + FVG, vào hướng phân phối</text>
+  <text x="38" y="348" font-size="10.5" fill="#6B7280">Đặc điểm: wick dài tại cực điểm, displacement ngược ngay sau,</text>
+  <text x="38" y="362" font-size="10.5" fill="#6B7280">momentum đổi phía rõ ràng.</text>
+
+  <!-- Right: trend day -->
+  <rect x="386" y="70" width="350" height="300" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="400" y="94" font-size="13" font-weight="700" fill="#B91C1C">Trend Day — phá thật và không quay lại</text>
+  <rect x="412" y="150" width="90" height="36" fill="#9CA3AF" opacity="0.18"/>
+  <text x="416" y="144" font-size="9.5" fill="#6B7280">Range Á</text>
+  <line x1="412" y1="186" x2="700" y2="186" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <path d="M417,168 L437,162 L457,174 L477,166 L502,172 L530,230 L548,215 L570,265 L590,252 L615,300 L640,290 L668,340" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <text x="520" y="210" font-size="10.5" fill="#B91C1C">phá xuống, pullback NÔNG,</text>
+  <text x="520" y="224" font-size="10.5" fill="#B91C1C">không reclaim range</text>
+  <text x="400" y="330" font-size="11" font-weight="700" fill="#B91C1C">→ Bỏ khung AMD: không chờ "Judas quay đầu" nữa</text>
+  <text x="400" y="348" font-size="10.5" fill="#6B7280">Dấu hiệu: đóng nến H1 ngoài range + pullback không về được open;</text>
+  <text x="400" y="362" font-size="10.5" fill="#6B7280">thường đi kèm tin lớn / delivery một chiều cả ngày.</text>
+
+  <!-- bottom rule -->
+  <rect x="24" y="386" width="712" height="36" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="401" font-size="11.5" font-weight="700" fill="#92400E">Quy tắc 2 lần thử: nếu đã bị stop 1 lần vì "tưởng Judas" và giá vẫn không reclaim → coi là trend day, hoặc đứng ngoài</text>
+  <text x="36" y="416" font-size="11.5" font-weight="700" fill="#92400E">hoặc chỉ trade THEO hướng phá với pullback nông. Không đánh ngược trend day lần thứ ba.</text>
+</svg>

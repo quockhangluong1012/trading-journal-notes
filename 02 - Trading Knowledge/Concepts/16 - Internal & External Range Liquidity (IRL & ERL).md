@@ -21,9 +21,11 @@ timeframes:
   - M1
 models:
   - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+importance: 5
+confidence: 1
 last_reviewed: 2026-06-23
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-07-03
 common_mistakes:
   - "[[Mistake - Target Past Unfilled IRL]]"
   - "[[Mistake - Ignore Draw On Liquidity]]"
@@ -73,6 +75,9 @@ IRL/ERL là bản đồ "giá đi từ đâu tới đâu". Không có nó, trade
 - ERL không phải lúc nào cũng đảo chiều — quét ERL có thể chỉ là lấy thanh khoản rồi tiếp tục.
 - IRL không phải là "đáy/đỉnh" — nó là vùng inefficiency bên trong, không phải biên range.
 - Không thay thế dealing range — phải xác định đúng range trước thì IRL/ERL mới có nghĩa.
+
+![[IRL-ERL-Advanced-Anatomy.svg|697]]
+*Giải phẫu một dealing range hoàn chỉnh: ERL đỉnh (BSL, old highs) và ERL đáy (SSL, old lows) đóng vai trò hai cực; một FVG (IRL) nằm bên trong range. Vòng xoay delivery được đánh số ① giá quét ERL đỉnh (lấy BSL) → ② quay vào rebalance IRL (FVG nội bộ) → ③ tiếp tục hướng ra ERL đáy (lấy SSL), minh họa đúng nguyên tắc "external → internal → external".*
 
 ---
 
@@ -215,12 +220,63 @@ Invalid: giá đóng nến xuyên xuống dưới đáy ERL đã quét
 | Giá quét ERL nhưng đóng nến chấp nhận ra ngoài | Range mở rộng | Range cũ thất bại; xác định range mới |
 | Nhiều IRL chồng chéo giữa giá và ERL | Đường đi "nghẽn" | Chia target theo từng IRL; giảm kỳ vọng TP xa |
 
+### Nâng cao — Equal highs/lows vs single old high: sức hút ERL khác nhau thế nào
+
+Không phải mọi ERL có sức hút như nhau. Một **single old high/low** (đỉnh/đáy đơn, chỉ một lần chạm) chứa một lớp stop mỏng — vài lệnh short-stop hoặc buy-stop nằm rải rác quanh đó. Ngược lại, **equal highs/equal lows** (hai hay nhiều lần giá chạm cùng một vùng mà không phá qua) tạo ra một **resting liquidity pool** dày đặc: mỗi lần retest thất bại lại có thêm trader đặt stop mới NGAY TẠI/NGAY TRÊN vùng đó (vì "đỉnh này đã giữ hai lần rồi, chắc là kháng cự mạnh"), cộng dồn lên lớp stop cũ chưa bị quét. Đó là lý do thuật toán/order flow tổ chức ưu tiên target các pool bị stack nhiều lần: quét một vùng có nhiều stop xếp chồng cho phép fill một khối lượng lớn hiệu quả hơn nhiều so với quét một single high chỉ có vài lệnh rải rác — chi phí trượt giá (slippage) trên mỗi đơn vị thanh khoản lấy được thấp hơn.
+
+Thang chấm sức hút ERL theo số lần chạm:
+
+| Loại ERL | Số lần chạm | Sức hút | Xác suất bị quét trong phiên |
+|---|---|---|---|
+| Single wick top/bottom | 1 lần (chỉ bóng nến) | Thấp | Thấp — dễ bị bỏ qua, không đủ hấp dẫn |
+| Old high/low rõ (1 lần chạm bằng body) | 1 lần | Trung bình | Trung bình |
+| Double top/bottom (2 lần chạm) | 2 lần | Khá cao | Khá cao — đã có "niềm tin" kháng cự/hỗ trợ |
+| Equal highs/lows (3+ lần chạm) | 3 lần trở lên | Rất cao | Cao — pool dày, gần như luôn nằm trong watch-list draw on liquidity |
+
+> [!tip]
+> Khi có nhiều ứng viên ERL trên chart, ưu tiên equal highs/lows làm target chính thay vì một single old high gần hơn nhưng mỏng. Ghi lại số lần chạm của ERL vào ghi chú setup (`erl_target` kèm số lần chạm) — sau một khoảng thời gian bạn sẽ thấy các lệnh nhắm vào equal highs/lows có tỉ lệ chạm target cao hơn rõ rệt so với single high/low.
+
+### Nâng cao — Tính phân dạng (fractal nesting) của IRL/ERL: một ERL lớn chứa bên trong nó một dealing range nhỏ hơn
+
+IRL/ERL không phải một cấu trúc cố định gắn chết vào một khung thời gian — nó **phân dạng (fractal)**: cùng một vùng giá, ở khung lớn có thể là ERL (biên ngoài của dealing range D1), nhưng khi zoom vào H1/M15 ngay tại vùng đó, bạn sẽ thấy nó tự nó là biên của một **dealing range nhỏ hơn**, với IRL và ERL riêng nằm bên trong. Nói cách khác: cái mà D1 gọi là "đỉnh range" chỉ là điểm zoom-in để bắt đầu một chu kỳ ERL → IRL → ERL mới ở khung nhỏ hơn.
+
+Kỹ thuật thực chiến: khi giá tiếp cận một ERL lớn (HTF) mà bạn muốn Long/Short phản ứng tại đó, đừng vào lệnh ngay tại biên HTF một cách thô — hãy **zoom vào H1/M15/M5** ngay tại vùng ERL đó để tìm dealing range nội bộ mới, xác định IRL/ERL riêng của nó, và tìm entry tinh chỉnh hơn (ví dụ Short tại ERL đỉnh D1, nhưng entry thực tế đặt tại IRL — một FVG H1 — bên trong dealing range nhỏ ngay dưới đỉnh D1 đó).
+
+| Khung thời gian | Vai trò | IRL bên trong | ERL bên trong | Mục đích sử dụng |
+|---|---|---|---|---|
+| D1 (HTF) | Toàn bộ dealing range lớn | FVG/OB D1-H4 chưa lấp | Đỉnh/đáy D1 (BSL/SSL chính) | Xác định bias, target chính, draw tổng thể |
+| H1 (nested trong ERL D1) | Dealing range con ngay tại vùng ERL D1 | FVG/OB H1 mới hình thành khi giá tiếp cận ERL D1 | Đỉnh/đáy H1 nội bộ (có thể chỉ là vài chục pip) | Tìm entry tinh chỉnh, stop ngắn hơn, R:R tốt hơn |
+| M15/M5 (nested trong ERL H1) | Dealing range con nhỏ hơn nữa | FVG/OB M15-M5 | Đỉnh/đáy M5 nội bộ | Xác nhận MSS/displacement LTF trước khi bấm lệnh |
+
+> [!note]
+> Cấu trúc phân dạng này chính là lý do phân tích đa khung thời gian (top-down) hiệu quả: bạn không "bỏ" logic IRL/ERL khi chuyển từ D1 xuống M15 — bạn chỉ đang **áp lại đúng logic đó ở một tỉ lệ nhỏ hơn**, ngay bên trong vùng mà khung lớn hơn gọi là ERL.
+
+![[IRL-ERL-Advanced-Nested-Fractal.svg|697]]
+*Bên trái là dealing range HTF với ERL đỉnh/đáy riêng của nó. Ô "zoom" nét đứt phóng to đúng vùng ERL đỉnh HTF sang bên phải, cho thấy bên trong vùng đó tồn tại một dealing range LTF hoàn toàn riêng — với ERL và IRL (FVG) của chính nó. Đây là bằng chứng trực quan cho tính phân dạng: "ERL" chỉ là tên gọi phụ thuộc khung thời gian đang xét, không phải một thuộc tính cố định của vùng giá.*
+
+### Nâng cao — Khi không có IRL: liquidity void và cú chạy thẳng (news / low-inefficiency conditions)
+
+Quy tắc "external → internal → external" giả định luôn tồn tại một IRL (FVG/OB) có ý nghĩa nằm giữa hai cực ERL. Nhưng thực tế có những trường hợp **không hề có IRL đáng kể** giữa đường: một dealing range "sạch" hiếm inefficiency, hoặc một nhịp mở rộng nhanh do tin tức (news) tạo ra các nến thân dài, ít overlap, gần như không để lại FVG/OB nào làm điểm dừng. Khi đó giá không "ghé" IRL nào cả — nó chạy thẳng một mạch từ ERL này sang ERL đối diện. Đây gọi là **liquidity void / cú chạy thẳng**, và nó phá vỡ kỳ vọng "sẽ có trạm dừng giữa đường" nếu bạn áp dụng máy móc mô hình external-internal-external.
+
+Cách nhận diện trước khi nó xảy ra:
+- **Thân nến mỏng, ít overlap wick:** nhìn dọc theo đường đi dự kiến tới ERL target — nếu phần lớn nến có thân nhỏ và các wick không chồng lấn nhau nhiều, đó là dấu hiệu thiếu ứng viên Order Block (OB cần một cụm nến ngược chiều rõ ràng để hình thành).
+- **Không có FVG nào rõ:** quét kỹ khung phân tích — nếu không tìm được một FVG 3 nến rõ ràng nào nằm giữa giá hiện tại và ERL target, khả năng cao đây là một dealing range không có IRL thật.
+- **Bối cảnh tin tức / thanh khoản mỏng:** các phiên tin tức lớn (NFP, FOMC, CPI) hoặc thanh khoản mỏng (rollover, lễ) thường tạo displacement liên tục không để lại imbalance để rebalance ngay — giá "nợ" việc rebalance đó cho một phiên sau.
+
+Điều này thay đổi kỳ vọng entry/target ra sao: **đừng cố ép một entry limit tại một IRL không tồn tại** chỉ vì mô hình lý thuyết nói "phải có trạm dừng". Nếu không xác định được IRL thật trên đường đi, có hai lựa chọn hợp lý: (1) chờ một **market-structure-shift entry** — vào theo xác nhận MSS/displacement LTF tại thời điểm giá phản ứng thực tế, thay vì đặt lệnh chờ tại một vùng "lý thuyết"; hoặc (2) chấp nhận không có partial-TP giữa đường và đặt kế hoạch quản trị lệnh cho khả năng giá chạy thẳng tới ERL đối diện mà không hồi.
+
+> [!warning]
+> Đừng vẽ một FVG/OB gượng ép chỉ để "có IRL cho đủ mô hình". Một liquidity void thật sự không có PD array nào đáng tin cậy nằm giữa hai ERL — cố nhồi nhét một vùng entry limit vào đó thường dẫn tới việc bỏ lỡ hoàn toàn cú chạy thẳng (giá không bao giờ hồi về "IRL" tưởng tượng), hoặc vào lệnh tại một vùng không có cơ sở thống kê. Khi nghi ngờ có liquidity void, ưu tiên xác nhận bằng MSS thay vì limit order tại một mức "IRL" không tồn tại.
+
+![[IRL-ERL-Advanced-Liquidity-Void.svg|697]]
+*So sánh hai kịch bản: panel trái là một dealing range bình thường với một FVG (IRL) rõ ràng — giá dừng lại, phản ứng, rebalance trước khi tiếp tục tới ERL đối diện. Panel phải là một liquidity void — không có FVG/OB nào đáng kể giữa hai ERL — nên giá chạy thẳng một mạch từ ERL này sang ERL kia mà không dừng, đúng như đặc điểm của một cú chạy thẳng do tin tức hoặc range không hiệu suất thấp (low-inefficiency).*
+
 ---
 
 ## 6. Ví dụ chart
 
 ### Ví dụ đúng
-![[IRL-ERL-Example-Correct.svg]]
+![[IRL-ERL-Example-Correct.svg|697]]
 
 **Mô tả:**  
 Một dealing range rõ với ERL ở đỉnh (BSL) và đáy (SSL), một FVG (IRL) nằm giữa. Giá bắt đầu từ ERL đỉnh, đi vào trong rebalance IRL (FVG), phản ứng tại đó, rồi tiếp tục xuống quét ERL đáy (SSL). Sau khi lấy SSL, giá xoay ngược lên hướng về ERL đỉnh (BSL). Vòng xoay **ERL → IRL → ERL** được đọc rõ, mỗi bước cho một draw / target hợp lý.
@@ -232,7 +288,7 @@ Một dealing range rõ với ERL ở đỉnh (BSL) và đáy (SSL), một FVG (
 - Không nhảy cóc: giá xử lý IRL trước khi với tới ERL đối diện.
 
 ### Ví dụ sai / dễ nhầm
-![[IRL-ERL-Example-Wrong.svg]]
+![[IRL-ERL-Example-Wrong.svg|697]]
 
 **Mô tả lỗi:**  
 Trader Long từ đáy range và đặt target thẳng lên ERL đỉnh (BSL), nhưng bỏ qua một **bearish FVG (IRL) chưa lấp** nằm chặn đường đi lên. Giá rally tới IRL đó, bị reject ngay tại FVG nội bộ, rồi quay đầu xuống — TP tại ERL đỉnh không bao giờ chạm tới. Lệnh đáng lẽ chốt một phần tại IRL lại thành lệnh hòa hoặc thua.
@@ -268,183 +324,4 @@ HTF Bearish Bias
 ```
 
 > [!note]
-> IRL/ERL là khung target tổng quát, ghép tốt với mọi entry model: [[Order Block]], [[Fair Value Gap]], [[Optimal Trade Entry]]. Entry model cho biết VÀO ở đâu; IRL/ERL cho biết giá ĐI tới đâu (draw / target) và còn trạm dừng nào trên đường.
-
----
-
-## 8. Checklist trước khi áp dụng vào trade
-
-> [!warning] Không trade chỉ vì thấy khái niệm xuất hiện
-> IRL/ERL chỉ có giá trị khi đặt trong **dealing range đúng + bias rõ + đánh dấu đầy đủ hai loại thanh khoản**.
-
-### A. Context (HTF)
-- [ ] Dealing range được định rõ (swing high/low có ý nghĩa).
-- [ ] Daily Bias rõ: `Bullish / Bearish / Neutral`.
-- [ ] ERL đánh dấu ở hai cực (BSL đỉnh, SSL đáy).
-- [ ] IRL đánh dấu bên trong (FVG/OB chưa lấp).
-- [ ] Xác định giá vừa lấy thanh khoản loại nào → draw tiếp theo.
-- [ ] Gắn premium/discount qua equilibrium.
-
-### B. Execution (LTF)
-- [ ] Entry tại IRL đúng premium/discount cho hướng trade.
-- [ ] Có MSS/displacement xác nhận tại IRL/ERL.
-- [ ] Đã quét đường đi tới ERL target xem có IRL chặn không.
-- [ ] Stop logic: ngoài ERL/IRL vừa phản ứng.
-- [ ] Target chia theo IRL kế tiếp (partial) → ERL (full).
-- [ ] R:R đạt kế hoạch tính tới IRL chặn đường.
-
-### C. Quy tắc "không có lệnh"
-- [ ] Không xác định được dealing range → không trade.
-- [ ] Không rõ draw tiếp theo (external hay internal) → không trade.
-- [ ] Target phải nhảy cóc qua IRL chưa lấp → điều chỉnh hoặc không trade.
-- [ ] Dùng IRL/ERL như tín hiệu đơn lẻ không có entry model → không trade.
-
----
-
-## 9. Lỗi thường gặp
-
-| Lỗi | Dấu hiệu | Vì sao nguy hiểm | Cách sửa |
-|---|---|---|---|
-| Bỏ qua IRL trên đường tới ERL | Đặt TP tại ERL, lờ FVG nội bộ chặn đường | Giá reject tại IRL trước khi tới ERL | Quét IRL chưa lấp; chia target theo IRL trước |
-| Chọn sai dealing range | Lấy swing quá nhỏ/cũ làm biên | Toàn bộ bản đồ IRL/ERL sai | Chọn swing tạo displacement/BOS rõ |
-| Coi mọi chạm ERL là đảo chiều | Đảo lệnh ngay khi giá chạm đỉnh/đáy | ERL có thể bị quét rồi tiếp tục | Chờ sweep + MSS xác nhận mới đảo |
-| Không xác định draw tiếp theo | Không biết external hay internal kế tiếp | Target tùy hứng, không logic | Hỏi "vừa lấy gì → đối diện là gì" |
-| Nhầm IRL với ERL | Coi FVG nội bộ là target cuối / coi đỉnh là IRL | Sai bản chất → target/stop sai | IRL = inefficiency bên trong; ERL = biên range |
-| Target ERL quá xa khi nhiều IRL | TP tại ERL khi range "nghẽn" FVG | Kỳ vọng phi thực tế | Giảm kỳ vọng; chốt từng IRL |
-| Quên premium/discount của IRL | Long ở IRL premium, Short ở IRL discount | Entry thành chase | Long tại IRL discount, Short tại IRL premium |
-
----
-
-## 10. Câu hỏi tự kiểm tra
-
-- Mình giải thích "external to internal, internal to external" trong 30 giây không?
-- Dealing range hiện tại là gì, và ERL/IRL nằm ở đâu?
-- Giá vừa lấy thanh khoản loại nào → draw tiếp theo là gì?
-- Còn IRL (FVG) chưa lấp nào chặn đường tới ERL target không?
-- IRL entry của mình nằm ở premium hay discount?
-- ERL đối diện có phải là target thực tế không, hay cần chốt sớm tại IRL?
-- Nếu giá phá biên range, range mới của mình là gì?
-- Setup nào trong journal mình đặt TP vượt qua IRL và bị reject?
-
----
-
-## 11. Flashcards / Active Recall
-
-### Q1
-**Hỏi:** ERL và IRL khác nhau ở đâu?  
-**Đáp:** ERL (External Range Liquidity) = thanh khoản ở HAI CỰC range (đỉnh BSL, đáy SSL — old highs/lows). IRL (Internal Range Liquidity) = inefficiency BÊN TRONG range (FVG, OB) cần rebalance.
-
-### Q2
-**Hỏi:** Câu cốt lõi mô tả vòng xoay delivery là gì?  
-**Đáp:** "External to internal, internal to external" — giá luân chuyển: lấy ERL → rebalance IRL → lấy ERL đối diện, lặp lại.
-
-### Q3
-**Hỏi:** Sau khi giá quét ERL đáy (lấy SSL), draw tiếp theo thường là gì?  
-**Đáp:** Một IRL bên trong (thường là FVG chưa lấp ở discount) để rebalance, rồi sau đó hướng ra ERL đỉnh (BSL).
-
-### Q4
-**Hỏi:** Vì sao không nên đặt target nhảy cóc qua một IRL chưa lấp?  
-**Đáp:** Vì giá có xu hướng rebalance IRL (FVG) trên đường đi trước; TP đặt vượt qua nó có thể không chạm tới trước khi giá quay đầu tại IRL đó.
-
-### Q5
-**Hỏi:** IRL/ERL chủ yếu giúp xác định điều gì — entry hay target?  
-**Đáp:** Chủ yếu là DRAW on liquidity / target và trình tự delivery. Nó là khung target, không phải tín hiệu entry đơn lẻ.
-
-### Q6
-**Hỏi:** ERL đỉnh và đáy gắn với premium/discount thế nào?  
-**Đáp:** ERL đỉnh nằm trong vùng premium; ERL đáy nằm trong vùng discount; equilibrium (50%) chia range.
-
----
-
-## 12. Liên kết với Trade Journal
-
-### Lệnh áp dụng đúng khái niệm này
-```dataview
-TABLE date, symbol, position, pnl, r_multiple
-FROM ""
-WHERE contains(file.outlinks, this.file.link)
-SORT date DESC
-```
-
-### Lệnh mắc lỗi liên quan
-```dataview
-TABLE date, symbol, position, pnl, r_multiple, Mistake
-FROM ""
-WHERE contains(string(Mistake), this.file.name)
-SORT date DESC
-```
-
-> [!note]
-> Nếu vault của bạn có folder riêng như `Trades`, `Journal`, hoặc `Trading Journal`, hãy thay `FROM ""` bằng path tương ứng, ví dụ: `FROM "03 - Trading Journal/Trades"`.
-
-### Gợi ý frontmatter bổ sung cho mỗi trade
-```yaml
-dealing_range: "1.0800 → 1.0920" # biên range
-draw_state: external-to-internal # external-to-internal | internal-to-external
-liquidity_just_taken: SSL # ERL/IRL vừa lấy: BSL | SSL | IRL-FVG
-irl_entry: "1.0840 → 1.0855" # vùng IRL (FVG/OB) làm entry
-erl_target: 1.0920 # ERL target chính
-irl_blocking_path: false # có IRL chưa lấp chặn đường tới ERL không
-```
-
-> [!tip]
-> Sau 30–50 lệnh, so sánh: lệnh có `irl_blocking_path: true` (đặt TP vượt IRL chưa lấp) vs `false`. Mục tiêu là kiểm chứng rằng chia target theo IRL trước ERL cải thiện tỉ lệ chạm TP và R thực tế.
-
----
-
-## 13. Lesson Learned
-
-### Bài học chính
-- Giá luân chuyển: **external → internal → internal → external**; biết "vừa lấy gì" là biết "draw tiếp theo".
-- ERL = biên range (BSL/SSL); IRL = inefficiency bên trong (FVG/OB) cần rebalance.
-- Đừng nhảy cóc qua IRL chưa lấp — giá thường xử lý nó trước khi với tới ERL.
-- IRL/ERL là khung TARGET, ghép với entry model để biết VÀO đâu và ĐI tới đâu.
-- Gắn IRL/ERL với premium/discount để entry đúng phía rẻ/đắt.
-
-### Quy tắc cá nhân rút ra
-- [ ] Tôi luôn định dealing range trước, rồi đánh dấu ERL (2 cực) và IRL (nội bộ).
-- [ ] Tôi xác định "giá vừa lấy gì" để suy ra draw tiếp theo.
-- [ ] Tôi quét đường đi tới ERL target xem có IRL chưa lấp chặn không.
-- [ ] Tôi chia target: IRL kế tiếp (partial) → ERL đối diện (full).
-- [ ] Tôi chỉ entry tại IRL đúng premium/discount cho hướng trade.
-
-### Câu nhắc nhở khi trade
-> **"Giá đi từ thanh khoản này tới thanh khoản kia — tôi luôn hỏi: vừa lấy gì, đối diện là gì, và có IRL nào chặn đường không."**
-
----
-
-## 14. Mức độ thành thạo
-
-| Tiêu chí | Điểm 1-5 | Ghi chú |
-|---|---:|---|
-| Hiểu định nghĩa |  | Phân biệt rõ IRL vs ERL và vòng xoay không? |
-| Nhận diện trên chart |  | Đánh dấu đúng ERL (2 cực) và IRL (nội bộ) không? |
-| Biết khi nào bỏ qua |  | Có dừng khi không xác định được range/draw không? |
-| Kết hợp với context HTF |  | IRL/ERL có gắn bias + premium/discount không? |
-| Áp dụng vào trade thực tế |  | Target có tính tới IRL chặn đường không? |
-
-**Kế hoạch review tiếp theo:**  
-- [ ] Thu thập 20–30 setup gắn tag `[[Internal & External Range Liquidity (IRL & ERL)]]`.
-- [ ] Review riêng: target có IRL chặn vs không; tỉ lệ chạm ERL target.
-- [ ] Thống kê R thực tế theo `draw_state` và `irl_blocking_path`.
-
----
-
-## Appendix — IRL & ERL Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**  
-> **Daily Bias:** Bullish / Bearish / Neutral  
-> **Dealing range (low → high):** ____  
-> **ERL đỉnh (BSL):** ____ | **ERL đáy (SSL):** ____  
-> **IRL nội bộ (FVG/OB chưa lấp):** ____  
-> **Equilibrium (50%):**  
-> **Giá vừa lấy thanh khoản loại nào:** BSL / SSL / IRL  
-> **Draw tiếp theo:** external → internal / internal → external  
-> **IRL chặn đường tới ERL target?** Yes / No — vùng: ____  
-> **Entry zone (IRL, đúng premium/discount):**  
-> **Target:** IRL kế tiếp (partial) → ERL (full)  
-> **Stop logic:**  
-> **Invalidation (phá biên range tại):**  
-> **Kill zone permitted:** London / NY AM / NY PM  
-> **No-trade condition:** range mơ hồ / draw không rõ
+> IRL/ERL là khung target tổng quát, ghép tốt với mọi entry model: [[Order Block]], [[Fair Value Gap]], [[Optimal Trade Entry]]. Entry model cho biết VÀO ở đâu; IRL/ERL cho biết giá ĐI tới đâu (draw / t
