@@ -1,0 +1,1 @@
+Link: [ICT 2024 Mentorship Lecture 2 Notes — 07:00 AM IFVG Model + PDF](https://innercircletrader.net/tutorials/ict-2024/mentorship-lecture-2/)

@@ -10,34 +10,11 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#LiquidityVoid"
-status: seed
+status: developing
 category: PD Array
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[ICT 2022 Model]]"
-importance: 4
-confidence: 1
 last_reviewed:
 created: 2026-06-24
 updated: 2026-07-03
-related_concepts:
-  - "[[Fair Value Gap]]"
-  - "[[34 - Vacuum Block]]"
-  - "[[29 - Sell-side Imbalance Buy-side Inefficiency]]"
-  - "[[Displacement]]"
-  - "[[19 - Liquidity]]"
-  - "[[12 - Daily Bias]]"
-prerequisites:
-  - "[[Fair Value Gap]]"
-  - "[[Displacement]]"
-  - "[[27 - Premium Discount]]"
-common_mistakes: []
 ---
 
 # Liquidity Void
