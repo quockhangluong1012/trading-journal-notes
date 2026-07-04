@@ -469,24 +469,3 @@ Cách CE của NDOG tương tác với khung Premium/Discount trong ngày:
 7. **Trên các phiên thiếu thanh khoản hoặc có news lớn, hạ trọng số cho mọi mốc NDOG/Midnight Open.** Cả hai công cụ đều dựa trên hành vi "giá quay lại cân bằng" trong điều kiện thị trường bình thường; một cú news mạnh có thể xóa sạch logic đó trong vài phút. Kiểm tra lịch kinh tế trước khi đặt kỳ vọng vào phản ứng tại CE.
 
 8. **Backtest riêng NQ1/NDX và riêng từng cặp forex trước khi tin vào con số cụ thể nào.** Vì sức nặng của NDOG khác nhau rõ rệt giữa futures và forex, mọi phát biểu kiểu "NDOG fill trong X% thời gian" hay "CE phản ứng Y% số lần" **cần backtest xác nhận** theo từng nhóm thị trường riêng biệt — không dùng chung một con số cho cả bốn thị trường bạn đang trade (NQ1/NDX, EURUSD, GBPUSD, XAUUSD). Đối chiếu kết quả với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]] sau mỗi đợt review.
-
----
-
-## Appendix — New Day Opening Gap Quick Reference Card
-
-> [!abstract] Thẻ tra nhanh NDOG
-> - **Định nghĩa:** Gap giữa Prior Day Close (~16:00–16:15 ET) và Reopen (~18:00 ET), qua giờ nghỉ bảo trì 17:00–18:00 ET.
-> - **Mốc đóng cửa (prior day):** ____ ET → giá: [level]
-> - **Mốc mở cửa (reopen):** ____ ET → giá: [level]
-> - **NDOG range:** [range]
-> - **CE (50%):** [level]  ← mức phản ứng chính
-> - **Trạng thái:** gap up / gap down / inside / filled / unfilled = ____
-> - **Vị trí giá hiện tại:** premium / discount so với CE = ____
-> - **Draw on liquidity (NDOG unfilled gần nhất):** [level]
-> - **Trùng NWOG?** Yes / No → [level]
-> - **Confluence:** OB / FVG / liquidity / CBDR / NWOG = ____
-> - **Kill zone tiếp cận:** London / NY = ____
-> - **Điều kiện entry:** sweep + MSS + FVG, SL ngoài cạnh NDOG
-> - **TP1:** CE [level]   **TP2:** cạnh đối diện / NDOG unfilled [level]
-> - **Giữ trên chart:** 1–3 NDOG gần nhất (kể cả đã fill) + 3–5 NWOG
-> - **Liên quan:** [[24 - New Week Opening Gap]] · [[10 - Consequent Encroachment (Mean Threshold)]] · [[Fair Value Gap]] · [[27 - Premium Discount]] · [[12 - Daily Bias]] · [[18 - Kill Zones]] · [[ICT 2022 Model]]

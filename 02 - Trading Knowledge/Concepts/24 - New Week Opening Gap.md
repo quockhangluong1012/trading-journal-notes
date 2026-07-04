@@ -460,23 +460,3 @@ Cách phối hợp hai khung này trong phân tích thực chiến:
 7. **Phân biệt rõ vai trò của Sunday candle khi phân tích cấu trúc đầu tuần.** Như đã nêu ở mục 3 (Nâng cao — True Week Open), dữ liệu Chủ Nhật đầu tiên thường mỏng và nhiễu. Đừng dùng riêng 1–2 nến đó để kết luận MSS hay xác nhận hướng; chờ phiên Á/London Thứ 2 vào để có dữ liệu đáng tin hơn trước khi hành động theo NWOG.
 
 8. **Log đầy đủ và review theo thị trường riêng biệt.** Ghi `nwog_instrument_type`, `weekly_bias_aligned`, trạng thái filled/unfilled, và kết quả R-multiple cho mỗi lần dùng NWOG trong kế hoạch trade. Sau 15–20 mẫu mỗi nhóm (futures vs forex), so sánh win-rate và mức độ "sạch" của phản ứng tại CE — **cần backtest xác nhận** liệu NWOG forex có đáng để giữ trong bộ checklist hay chỉ nên dùng làm ghi chú tham khảo phụ. Đối chiếu kết quả với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]], nâng `confidence` của note này khi có đủ bằng chứng thay vì để mãi ở mức seed.
-
----
-
-## Appendix — New Week Opening Gap Quick Reference Card
-
-> [!abstract] Thẻ tra nhanh NWOG
-> - **Định nghĩa:** Gap giữa Friday Close (~17:00 ET) và Sunday Open (~18:00 ET).
-> - **Mốc đóng cửa (Fri):** ____ ET → giá: [level]
-> - **Mốc mở cửa (Sun):** ____ ET → giá: [level]
-> - **NWOG range:** [range]
-> - **CE (50%):** [level]  ← mức phản ứng chính
-> - **Trạng thái:** gap up / gap down / inside / filled / unfilled = ____
-> - **Vị trí giá hiện tại:** premium / discount so với CE = ____
-> - **Draw on liquidity (NWOG unfilled gần nhất):** [level]
-> - **Confluence:** OB / FVG / liquidity / CBDR = ____
-> - **Kill zone tiếp cận:** London / NY = ____
-> - **Điều kiện entry:** sweep + MSS + FVG, SL ngoài cạnh NWOG
-> - **TP1:** CE [level]   **TP2:** cạnh đối diện / NWOG unfilled [level]
-> - **Giữ trên chart:** 3–5 NWOG gần nhất (kể cả đã fill)
-> - **Liên quan:** [[10 - Consequent Encroachment (Mean Threshold)]] · [[Fair Value Gap]] · [[27 - Premium Discount]] · [[12 - Daily Bias]] · [[18 - Kill Zones]] · [[ICT 2022 Model]]

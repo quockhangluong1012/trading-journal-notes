@@ -12,40 +12,9 @@ tags:
   - "#OSOK"
 status: developing
 category: Entry Model
-timeframes:
-  - W1
-  - D1
-  - H4
-  - H1
-  - M15
-markets:
-  - EURUSD
-  - GBPUSD
-  - XAUUSD
-  - NDX
-models:
-  - ICT 2022
-  - OTE
-  - AMD
-importance: 4
-confidence: 3
 last_reviewed: 2026-06-24
 created: 2026-06-24
 updated: 2026-07-03
-related_concepts:
-  - "[[12 - Daily Bias]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[Optimal Trade Entry]]"
-  - "[[18 - Kill Zones]]"
-  - "[[21 - Market Structure Shift]]"
-prerequisites:
-  - "[[12 - Daily Bias]]"
-  - "[[19 - Liquidity]]"
-  - "[[Optimal Trade Entry]]"
-common_mistakes:
-  - "[[Mistake - Overtrading]]"
-  - "[[Mistake - Trade Against Bias]]"
-  - "[[Mistake - Chase Displacement]]"
 ---
 
 # One Shot One Kill Trading Model
@@ -125,14 +94,14 @@ Theo tài liệu gốc ICT, "anchor point" (điểm neo cho setup) thường hì
 | 1 | Weekly bias | [[12 - Daily Bias]] | Tuần nghiêng Bull hay Bear? |
 | 2 | Draw on liquidity tuần | [[19 - Liquidity]], [[16 - Internal & External Range Liquidity (IRL & ERL)]] | Pool tuần là target nào? |
 | 3 | Chọn ngày/kill zone | [[18 - Kill Zones]] | Ngày & KZ nào setup chín nhất? |
-| 4 | Setup A+ | [[Optimal Trade Entry]], [[Fair Value Gap]], [[ICT 2022 Model]] | OTE/FVG đồng hướng bias sau sweep? |
+| 4 | Setup A+ | [[Optimal Trade Entry]], [[Fair Value Gap]], [[01 - ICT 2022 Model]] | OTE/FVG đồng hướng bias sau sweep? |
 | 5 | Một mục tiêu | [[19 - Liquidity]] | 50–75 pips / pool tuần ở đâu? |
 
 ### Biến thể thường gặp
-- **+ ICT 2022 Model:** "phát bắn" thường chính là một chuỗi [[ICT 2022 Model]] hoàn chỉnh trong kill zone ([[ICT 2022 Model]]).
+- **+ ICT 2022 Model:** "phát bắn" thường chính là một chuỗi [[01 - ICT 2022 Model]] hoàn chỉnh trong kill zone ([[01 - ICT 2022 Model]]).
 - **+ OTE:** entry tinh chỉnh bằng vùng OTE 62–79% của nhịp đẩy theo bias ([[Optimal Trade Entry]]).
 - **+ Silver Bullet:** cửa sổ 1 giờ trong kill zone là nơi ưa thích để "bắn" ([[18 - Kill Zones]]).
-- **+ MMXM:** dùng [[Market Maker Buy Model – MMBM]] / [[Market Maker Sell Model – MMSM]] để biết tuần đang ở nửa nào của chu kỳ.
+- **+ MMXM:** dùng [[04 - Market Maker Buy Model – MMBM]] / [[06 - Market Maker Sell Model – MMSM]] để biết tuần đang ở nửa nào của chu kỳ.
 
 > [!tip]
 > Cách nhớ nhanh OSOK: **"Một tuần, một mục tiêu, một phát ngon."** Nếu không có setup A+ đồng hướng weekly bias trong kill zone → không bóp cò.
@@ -381,9 +350,9 @@ Khái niệm này tổng hợp:
 - [[Optimal Trade Entry]]
 - [[27 - Premium Discount]]
 - [[18 - Kill Zones]]
-- [[ICT 2022 Model]]
-- [[Market Maker Buy Model – MMBM]]
-- [[Market Maker Sell Model – MMSM]]
+- [[01 - ICT 2022 Model]]
+- [[04 - Market Maker Buy Model – MMBM]]
+- [[06 - Market Maker Sell Model – MMSM]]
 
 ### Sequence mẫu — OSOK (đầy đủ)
 ```text
@@ -397,7 +366,7 @@ Khái niệm này tổng hợp:
 ```
 
 > [!note]
-> OSOK là "kỷ luật + tần suất" bọc quanh các entry chuẩn. Lõi entry thường là một chuỗi [[ICT 2022 Model]]; OSOK thêm tầng quản lý: chỉ chọn phát ngon nhất tuần và biết dừng.
+> OSOK là "kỷ luật + tần suất" bọc quanh các entry chuẩn. Lõi entry thường là một chuỗi [[01 - ICT 2022 Model]]; OSOK thêm tầng quản lý: chỉ chọn phát ngon nhất tuần và biết dừng.
 
 ---
 
@@ -615,21 +584,3 @@ hit_weekly_target: true
 - [ ] Thống kê pips/tuần và số lệnh/tuần.
 - [ ] So sánh tuần kỷ luật vs tuần overtrade.
 - [ ] Cập nhật rule khi đủ mẫu.
-
----
-
-## Appendix — OSOK Quick Reference Card
-
-> [!abstract] Copy vào Weekly Plan / Monday pre-market
-> **Tuần / Market:**
-> **Weekly bias:** Bullish / Bearish
-> **Draw on liquidity tuần (target):** BSL / SSL @ ____
-> **Ngày/Kill zone dự kiến:** ____ / London / NY AM
-> **(1) Sweep ngược hướng:** @ ____
-> **(2) MSS + displacement → FVG:** Yes/No
-> **(3) Entry (OTE/FVG):** ____ ; Stop (ngoài sweep): ____
-> **(4) Target tuần:** ____ (≈ 50–75 pips)
-> **Đây là A+ nhất tuần?** Yes / No
-> **Số lệnh đã vào tuần này:** ____ (giữ ≤ 1–2)
-> **R:R dự kiến:**
-> **No-trade condition:**

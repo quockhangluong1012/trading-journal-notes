@@ -501,26 +501,3 @@ Liquidity Void hiếm khi là điểm vào trực tiếp — nó định *hướ
 7. **Đặt SL ngoài cấu trúc tạo void, không đặt SL nằm giữa lòng void.** Vì bản chất void là vùng mỏng thanh khoản, một SL đặt giữa void rất dễ bị quét khi giá "trượt" qua nhanh. SL logic phải nằm ngoài điểm bắt đầu/kết thúc thật của dải displacement.
 
 8. **Log đầy đủ và review sau 20-30 mẫu trên NQ1/EURUSD/XAUUSD trước khi tin bất kỳ con số cụ thể nào.** Các trường nên có: `void_span_candles`, `void_vs_fvg_overlap`, `void_contains_bpr`, `void_fill_percent`, `role` (target/magnet), `bias_match` (yes/no). Không có dữ liệu thực chiến, mọi ngưỡng trong note này chỉ là khung tham khảo ban đầu — **cần backtest xác nhận** trước khi nâng `confidence`/`status` của khái niệm.
-
----
-
-## Appendix — Liquidity Void Quick Reference Card
-
-> [!abstract] Pre-market — điền nhanh trước phiên
-> **Ngày:** ____    **Symbol:** ____    **Phiên/Kill Zone:** ____
->
-> **HTF Bias (D1/H4):** ☐ Long ☐ Short → ____
-> **Dealing Range / PD:** đỉnh [____] · đáy [____] · đang ở ☐ Premium ☐ Discount
->
-> **Void chính (target):** [void_low] → [void_high] · hướng ____ · đã lấp ~__%
-> **Void rebalance (magnet) cũ:** [____] → [____] · chưa lấp ☐
-> **Sweep tạo void:** ☐ SSL ☐ BSL tại [____]
-> **Draw phía xa (target thanh khoản):** [target_level] (☐ BSL ☐ SSL)
->
-> **POI vào lệnh (bên trong/rìa void):** ☐ FVG ☐ OB ☐ OTE tại [entry]
-> **CE (mean threshold):** [ce_level]
-> **SL (ngoài cấu trúc):** [sl]    **TP1 (rìa xa void):** [____]    **TP2 (thanh khoản):** [____]
-> **RR dự kiến:** ____
->
-> **Vô hiệu nếu:** void lấp 100% · void mới ngược chiều + MSS · giá xuyên qua không phản ứng
-> **Vai trò void hôm nay:** ☐ TARGET (đi theo) ☐ MAGNET (quay về rebalance)

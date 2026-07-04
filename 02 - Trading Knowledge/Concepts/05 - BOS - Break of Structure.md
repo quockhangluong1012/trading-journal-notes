@@ -18,7 +18,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 markets:
   - EURUSD
   - GBPUSD
@@ -304,7 +304,7 @@ Khái niệm này thường kết hợp với:
 - [[13 - FVG  - Fair Value Gap]] / [[25 - OB - Order Block]] — entry model sau cú phá
 - [[12 - Dealing Range]] / [[37 - Re-mapping Dealing Range sau Displacement]] — remap sau external BOS
 - [[27 - Premium Discount]] — đo lại trên range mới
-- [[04 - BB - Breaker Block]] — swing bị phá trở thành vùng retest
+- [[04 - Breaker Block]] — swing bị phá trở thành vùng retest
 
 ### Sequence mẫu — Long tiếp diễn xác nhận bằng BOS
 ```text
@@ -490,23 +490,3 @@ HTF Downtrend (chuỗi LH/LL) + Bearish Daily Bias
 6. **Cẩn trọng với BOS cuối range (exhaustion break).** Khi daily range đã chạy gần hết ADR, hoặc leg đã lấy xong pool liquidity mục tiêu, cú BOS tiếp theo có xác suất cao là cú phân phối cuối — body close thật đấy, nhưng không còn nhiên liệu phía trước. Luôn hỏi: "sau cú phá này, giá còn CHẠY VỀ ĐÂU?"
 
 7. **Review định kỳ các lệnh gắn nhãn sai.** Mỗi tuần lọc các lệnh thua có tag BOS và phân loại lại: bao nhiêu thực ra là sweep? bao nhiêu là MSS đọc ngược? Nhầm lẫn có hệ thống sẽ lộ ra sau 20–30 mẫu — và đó chính là mistake note đáng viết vào [[06 - Mistake Database]].
-
----
-
-## Appendix — BOS Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market khi đánh giá một cú phá
-> **Date / Market:**  
-> **Trend nền hiện tại:** Uptrend / Downtrend / Choppy  
-> **Swing bị phá:** (level + có phải protected high/low không)  
-> **Hướng cú phá so với trend:** Thuận (→ BOS) / Ngược (→ MSS)  
-> **Xác nhận:** Body close + displacement? (Có / Không — nếu chỉ wick = sweep)  
-> **Để lại FVG/imbalance:** Có / Không  
-> **Liquidity:** lấy BSL/SSL nào? Tiếp tục đi hay quay đầu?  
-> **Cấp độ:** Internal (timing) / External (vẽ lại dealing range)  
-> **Dealing range mới:** [low] → [high]  
-> **Protected high/low mới:**  
-> **Đồng bộ Daily Bias:** Có / Không  
-> **Draw on liquidity tiếp theo:**  
-> **POI để tham gia tiếp diễn:**  
-> **No-trade condition:** chỉ wick / ngược trend (MSS) / giữa range / chase  

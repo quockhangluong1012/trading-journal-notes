@@ -374,20 +374,3 @@ Planned RR: ____
 | Tránh các lỗi thường gặp | ____ | |
 
 **Kế hoạch review:** ôn lại sau 1 tuần → 2 tuần → 1 tháng; cập nhật `last_reviewed`; nâng `status` seed → developing khi đã backtest ≥ ___ lần; nâng `confidence` khi phân biệt SIBI/BISI không còn do dự.
-
----
-
-## Appendix — SIBI Quick Reference Card
-
-> [!abstract] SIBI — Thẻ tra nhanh
-> - **Là gì:** Bullish inefficiency từ displacement **LÊN**; = bullish FVG qua lăng kính imbalance.
-> - **Đo gap:** `high(C1)` → `low(C3)` (chuỗi 3 nến lên). **CE** = `(low(C3)+high(C1))/2`.
-> - **Vùng PD:** Premium. **Counterpart:** BISI (bearish, discount, cú xuống).
-> - **Tên giải mã:** Sell-side = phía bán bị nuốt; Buy-side Inefficiency = mua không hiệu quả → để lại gap. **KHÔNG phải tín hiệu bán.**
-> - **Vai trò:** từ dưới → kháng cự/target; từ trên retrace → hỗ trợ; đóng cửa xuyên → inversion (IFVG).
-> - **Dùng để:** POI entry (hỗ trợ tại CE) hoặc target (draw to fill phía trên).
-> - **Xác nhận:** displacement + MSS + align HTF + có liquidity phía trên.
-> - **Vô hiệu:** fill hết không phản ứng / MSS ngược.
-> - **Quy tắc nhớ:** Side nào "Imbalance" → hướng cú đẩy. SIBI = S → người **bán** bị nuốt → **LÊN** → bullish.
-> - **SL/entry:** entry tại CE; SL ngoài `high(C1)`; risk ≤ 0.5%.
-> - **Liên kết:** [[Fair Value Gap]] · [[21 - Liquidity Void]] · [[27 - Premium Discount]] · [[10 - Consequent Encroachment (Mean Threshold)]] · [[Displacement]] · [[ICT 2022 Model]]

@@ -12,42 +12,9 @@ tags:
   - "#Venom"
 status: developing
 category: Entry Model
-timeframes:
-  - D1
-  - H1
-  - M15
-  - M5
-  - M1
-markets:
-  - NDX
-  - NQ1
-  - EURUSD
-  - GBPUSD
-  - XAUUSD
-models:
-  - ICT 2022
-  - Silver Bullet
-  - OTE
-  - AMD
-importance: 4
-confidence: 2
 last_reviewed: 2026-06-24
 created: 2026-06-24
 updated: 2026-07-03
-related_concepts:
-  - "[[18 - Kill Zones]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[Fair Value Gap]]"
-  - "[[12 - Daily Bias]]"
-prerequisites:
-  - "[[18 - Kill Zones]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[21 - Market Structure Shift]]"
-common_mistakes:
-  - "[[Mistake - Skip Liquidity Sweep]]"
-  - "[[Mistake - Chase Displacement]]"
-  - "[[Mistake - Overtrading]]"
 ---
 
 # Venom Model
@@ -64,7 +31,7 @@ common_mistakes:
 ## 1. Định nghĩa
 
 **Khái niệm:**
-Venom Model là **mô hình entry theo thời gian (time-based)** trong hệ ICT, tập trung vào việc khai thác **liquidity của các phiên trước** (Asia, London) hoặc đỉnh/đáy session ngay trong một **cửa sổ kill zone**, đặc biệt quanh **New York open**. Khi giá "tiêm nọc" — tức quét pool liquidity của session — và sau đó **displacement** theo bias để lại FVG, đó là tín hiệu vào lệnh. Về cơ chế, Venom dùng đúng chuỗi [[ICT 2022 Model]] nhưng đặt nó trong một khung thời gian và một bộ liquidity reference cụ thể của phiên.
+Venom Model là **mô hình entry theo thời gian (time-based)** trong hệ ICT, tập trung vào việc khai thác **liquidity của các phiên trước** (Asia, London) hoặc đỉnh/đáy session ngay trong một **cửa sổ kill zone**, đặc biệt quanh **New York open**. Khi giá "tiêm nọc" — tức quét pool liquidity của session — và sau đó **displacement** theo bias để lại FVG, đó là tín hiệu vào lệnh. Về cơ chế, Venom dùng đúng chuỗi [[01 - ICT 2022 Model]] nhưng đặt nó trong một khung thời gian và một bộ liquidity reference cụ thể của phiên.
 
 **Chuỗi điển hình của Venom:**
 1. **Bias / khung tham chiếu:** xác định hướng (HTF bias) và các pool liquidity của phiên trước (Asia high/low, London high/low, PDH/PDL).
@@ -174,7 +141,7 @@ Nhiều trader thua vì giao dịch **sai thời điểm** (giữa phiên chết
 
 ### Biến thể thường gặp
 - **+ Silver Bullet:** Venom rất gần Silver Bullet — chạy chuỗi trong cửa sổ 1 giờ của kill zone ([[18 - Kill Zones]]).
-- **+ ICT 2022 Model:** lõi entry chính là chuỗi [[ICT 2022 Model]] đặt trong time window.
+- **+ ICT 2022 Model:** lõi entry chính là chuỗi [[01 - ICT 2022 Model]] đặt trong time window.
 - **+ OTE:** tinh chỉnh entry bằng OTE 62–79% trùng FVG ([[Optimal Trade Entry]]).
 - **+ AMD:** sweep đầu NY ~ pha manipulation; displacement ~ distribution ([[02 - AMD]]).
 
@@ -375,8 +342,8 @@ Khái niệm này tổng hợp:
 - [[27 - Premium Discount]]
 - [[18 - Kill Zones]]
 - [[02 - AMD]]
-- [[ICT 2022 Model]]
-- [[One Shot One Kill Trading Model]]
+- [[01 - ICT 2022 Model]]
+- [[03- One Shot One Kill Trading Model]]
 
 ### Sequence mẫu — Venom Long (đầy đủ)
 ```text
@@ -390,7 +357,7 @@ Khái niệm này tổng hợp:
 ```
 
 > [!note]
-> Venom, Silver Bullet và [[ICT 2022 Model]] dùng chung lõi (sweep → MSS → FVG). Điểm khác của Venom là **neo vào time window NY open + liquidity của session trước**. Kết hợp tốt với [[One Shot One Kill Trading Model]] khi muốn chọn một phát chất lượng trong ngày.
+> Venom, Silver Bullet và [[01 - ICT 2022 Model]] dùng chung lõi (sweep → MSS → FVG). Điểm khác của Venom là **neo vào time window NY open + liquidity của session trước**. Kết hợp tốt với [[03- One Shot One Kill Trading Model]] khi muốn chọn một phát chất lượng trong ngày.
 
 ---
 
@@ -599,22 +566,3 @@ missing_step: none # none | time | sweep | displacement | retrace
 - [ ] Review theo `missing_step` (time vs sweep).
 - [ ] Thống kê win rate theo `time_window` và `session_pool_swept`.
 - [ ] Cập nhật rule khi đủ mẫu.
-
----
-
-## Appendix — Venom Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Bias:** Bullish / Bearish
-> **Reference pools:** Asia ____ / London ____ / PDH-PDL ____
-> **Time window:** NY open / NY AM kill zone
-> **Location:** Premium / Discount
-> **(1) Venom strike (sweep session):** pool ____ @ ____ — reclaim? Yes/No
-> **(2) Displacement + MSS:** phá ____ → FVG? Yes/No
-> **(3) FVG (POI):** [low]–[high], CE ____ ; OTE/OB? ____
-> **(4) Entry:** ____ ; Stop (ngoài sweep): ____
-> **(5) Target:** session pool đối diện / PD ____
-> **Đúng cửa sổ + đã quét session pool?** Yes / No
-> **R:R dự kiến:**
-> **No-trade condition:**

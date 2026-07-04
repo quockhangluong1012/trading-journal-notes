@@ -1,6 +1,6 @@
 ---
 type: ict-concept
-concept: "Advance Market Structure"
+concept: Advance Market Structure
 aliases:
   - Advance Market Structure
   - Fractal Market Structure
@@ -27,7 +27,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
 last_reviewed: 2026-06-23
 created: 2026-06-23
@@ -478,23 +478,3 @@ Uptrend: ITL đang dâng, LTL = protected low
 6. **Sau mỗi BOS, dời protected level một cách máy móc.** BOS mới → protected low/high mới = ITL/ITH cuối trước cú phá. Làm thủ công từng lần, đừng để mức cũ "dính" trên chart — protected level lỗi thời là nguyên nhân phổ biến của việc giữ lệnh quá lâu sau khi cấu trúc đã đổi.
 
 7. **Backtest riêng kỹ năng gắn nhãn, tách khỏi kỹ năng entry.** Mỗi tuần lấy 10 đoạn chart cũ, che phần bên phải, chấm degree rồi so với diễn biến thật. Kỹ năng này đo được ([[02 - Skill Metrics]]) và cải thiện nhanh hơn nhiều khi luyện tách rời khỏi áp lực vào lệnh.
-
----
-
-## Appendix — Advance Market Structure Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**  
-> **Degree chính (HTF):** Short / Intermediate / Long  
-> **Direction (chuỗi ITH/ITL):** Bullish / Bearish / Range  
-> **Protected Low (ITL/LTL):**  
-> **Protected High (ITH/LTH):**  
-> **Dealing range (theo swing degree cao):** [low]–[high]  
-> **Vị trí hiện tại:** Premium / Discount / Equilibrium  
-> **SSL gần (dưới ITL/LTL):**  
-> **BSL gần (trên ITH/LTH):**  
-> **Cái vừa bị phá là:** Internal (STH/STL) / BOS đúng degree / Sweep / CHoCH  
-> **MSS execution đồng hướng HTF?** Yes / No  
-> **Invalidation (đóng nến thủng protected tại):**  
-> **Kill zone permitted:** London / NY AM / NY PM  
-> **No-trade condition:**  

@@ -1,6 +1,6 @@
 ---
 type: ict-concept
-concept: "Implied Fair Value Gap"
+concept: Implied Fair Value Gap
 aliases:
   - Implied FVG
   - IFVG (Implied)
@@ -18,7 +18,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-23
 created: 2026-06-23
 updated: 2026-07-03
@@ -453,24 +453,3 @@ Trường hợp B — Inverse FVG:
 7. **Entry quanh CE của vùng implied, không phải biên xa — và đặt stop ngoài biên xa, không phải trong vùng.** Vì vùng implied đã là một xấp xỉ (CE của hai bóng nến, không phải một gap sắc nét), vào ở biên xa hoặc đặt stop bên trong vùng làm tăng rủi ro bị quét bởi biến động bình thường quanh mức tham chiếu.
 
 8. **Log đầy đủ và backtest riêng nhóm Implied FVG trước khi tin tưởng nó ngang FVG chuẩn.** Thu thập tối thiểu 15–25 mẫu có gắn `[[Implied Fair Value Gap]]`, ghi `implied_or_standard`, `ce_midpoint_used`, `liquidity_swept`, `ltf_mss_confirmed` cho từng lệnh, rồi so sánh win-rate/average R với nhóm FVG chuẩn trên [[04 - Backtesting]]. Đến khi có đủ dữ liệu, mọi con số về "hiệu quả" của Implied FVG chỉ nên được xem là giả thuyết — không fabricate thống kê khi chưa backtest.
-
----
-
-## Appendix — Implied FVG Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Daily Bias:** Bullish / Bearish / Neutral
-> **Xác nhận: Implied (ẩn) — KHÔNG phải Inverse (đảo cực)?** Yes / No
-> **Cụm 4 nến, hai nến thân lớn, bóng chồng lấp?** Yes / No
-> **Implied zone (2 trung điểm bóng):** [low] → [high]
-> **CE (50%) của implied:**
-> **Sinh từ displacement phá cấu trúc?** Yes / No
-> **Location:** Premium / Discount / Equilibrium
-> **Có FVG 3-nến rõ hơn để ưu tiên?** Yes / No
-> **Liquidity sweep trước cụm nến?** Yes / No — pool: ____
-> **Entry plan (quanh CE):**
-> **Stop logic (ngoài biên xa vùng implied):**
-> **Target / draw on liquidity:**
-> **Kill zone permitted:** London / NY AM / NY PM
-> **No-trade condition:** mô hình ép / nhầm Inverse / ngược bias

@@ -1,6 +1,6 @@
 ---
 type: ict-concept
-concept: "Consequent Encroachment"
+concept: Consequent Encroachment
 aliases:
   - CE
   - Mean Threshold
@@ -19,7 +19,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
 last_reviewed: 2026-07-02
 created: 2026-06-23
@@ -475,23 +475,3 @@ Bullish FVG hợp lệ nhưng giá ĐÓNG NẾN vượt CE xuống (CE breach)
 6. **Đặt stop ngoài mép xa array, tuyệt đối không sát CE.** Vùng quanh 50% là nơi nhiễu và stop-hunt tập trung. Entry quanh CE nhưng stop phải nằm ngoài mép xa array (hoặc ngoài điểm sweep) để chịu được dao động bình thường trong array. Đây chính là lý do vào tại CE cho R:R tốt hơn vào mép mà vẫn an toàn.
 
 7. **Backtest entry-at-CE vs entry-at-edge để định lượng lợi ích.** Gắn trường `entry_location: edge|ce|shallow` cho mỗi lệnh và so sánh win rate + average R qua 20–30 mẫu ([[04 - Backtesting]]). Bạn sẽ thấy đánh đổi thật giữa fill-rate (vào mép dễ khớp hơn) và R:R (vào CE stop gọn hơn) — và tự chọn được điểm cân bằng phù hợp với sản phẩm/phiên của mình.
-
----
-
-## Appendix — CE Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Daily Bias:** Bullish / Bearish / Neutral
-> **Array type:** FVG / OB / BPR / void / NWOG
-> **Array timeframe & range:** ____ , [low]–[high]
-> **CE (50%):** ____ = (high + low) / 2
-> **Array hợp lệ? (displacement + sweep + P/D)** Yes / No
-> **CE confluence (OTE/equilibrium/OB/CE khung khác):**
-> **Location:** Premium / Discount / Equilibrium
-> **Entry plan (quanh CE):**
-> **Stop logic (ngoài mép xa array):**
-> **Respect vs breach (đóng nến vượt CE tại):**
-> **Target / draw on liquidity:**
-> **Kill zone permitted:** London / NY AM / NY PM
-> **No-trade condition:** array rác / CE breach / không LTF confirm

@@ -19,7 +19,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
 last_reviewed: 2026-07-01
 created: 2026-06-22
@@ -524,22 +524,3 @@ HTF Bearish Bias
 6. **Một M5 MSS không bao giờ được đảo Daily Bias một mình.** Nó chỉ được *thực thi* bias, hoặc — khi xảy ra sau sweep tại HTF POI — được *đề xuất* xem xét lại bias, việc đảo thật cần bằng chứng H1/H4. Ghi nhớ phân cấp quyền lực này giúp tránh lỗi đắt nhất: đổi hướng cả ngày vì một cú phá 5 phút.
 
 7. **Backtest MSS theo tổ hợp điều kiện, không theo tổng thể.** Đừng hỏi "MSS có win rate bao nhiêu?" — hỏi "MSS + sweep Tier 1 + trong POI + kill zone có win rate bao nhiêu, so với MSS thiếu từng điều kiện?" 20–30 mẫu mỗi nhóm là đủ thấy sự chênh lệch, và đó là cách biến niềm tin thành quy tắc có số liệu ([[04 - Backtesting]]).
-
----
-
-## Appendix — MSS Confirmation Card
-
-> [!abstract] Copy vào Daily Note / pre-market khi chờ entry
-> **Date / Market:**
-> **Daily Bias:** Bullish / Bearish / Neutral
-> **HTF/H1 POI đang chờ:**
-> **Liquidity pool sẽ sweep trước MSS:** SSL / BSL tại ___
-> **Leg ngắn hạn hiện tại:** giảm (chờ bullish MSS) / tăng (chờ bearish MSS)
-> **Swing cần bị phá:** lower-high / higher-low tại ___
-> **Sweep đã xảy ra?** Yes / No
-> **MSS xác nhận?** Yes / No — phá bằng body close: Yes / No
-> **Displacement + FVG?** Yes / No — FVG zone: ___
-> **CISD củng cố?** Yes / No
-> **MSS trong POI?** Yes / No
-> **Entry plan:** FVG/OB tại ___ | Stop: ___ | Target: ___
-> **No-trade condition:** MSS trước sweep / giữa range / ngoài POI / không displacement

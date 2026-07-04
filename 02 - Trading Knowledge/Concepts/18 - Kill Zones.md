@@ -20,7 +20,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
 updated: 2026-07-03
@@ -484,21 +484,3 @@ Cửa sổ Silver Bullet NY 10:00–11:00 EST
 6. **Không ép có lệnh chỉ vì đang trong Kill Zone.** KZ là điều kiện CẦN, không phải ĐỦ — vẫn phải có bias, sweep, và POI đúng như checklist ở Mục 8. Ghi lại số lần bạn "ép lệnh trong KZ" vào `common_mistakes` liên kết tới [[Mistake - Trade Outside Killzone]] nếu việc này lặp lại.
 7. **Backtest và so sánh hiệu suất theo từng Kill Zone cho đúng thị trường bạn giao dịch (NQ1, EURUSD, GBPUSD, XAUUSD).** Bảng xếp hạng biến động tương đối ở Mục 3 chỉ là định tính từ tài liệu ICT chung — không phải số đo trên tài khoản của bạn. Sau 20–30 mẫu, so sánh win rate/average R giữa London Open, NY AM, London Close cho từng thị trường, và chỉ giữ lại Kill Zone thực sự chứng minh được edge cho phong cách của bạn.
 8. **Liên kết lại với [[02 - AMD]] và [[19 - Liquidity]] mỗi khi review.** Kill Zone chỉ là một trục trong bộ ba Time–Price–Liquidity; đánh giá một trade không nên dừng ở "có đúng giờ không" mà phải hỏi thêm "đúng pha AMD chưa, đúng liquidity chưa".
-
----
-
-## Appendix — Kill Zones Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Daily Bias:** Bullish / Bearish / Neutral
-> **Chart timezone:** New York (EST/EDT)
-> **Asian range:** [low]–[high]
-> **KZ hôm nay được phép trade:** London Open / NY AM / London Close / Silver Bullet
-> **London Open KZ:** 02:00–05:00 EST (≈14:00–17:00 VN đông / 13:00–16:00 VN hè)
-> **New York AM KZ:** 07:00–10:00 EST (≈19:00–22:00 VN đông / 18:00–21:00 VN hè)
-> **Silver Bullet:** 10:00–11:00 EST (≈22:00–23:00 VN đông)
-> **Tin tức trong KZ?** Yes / No — giờ: ____
-> **Vùng chết cần tránh:** NY lunch 11:30–13:00 EST
-> **Plan theo giờ:**
-> **No-trade condition:**

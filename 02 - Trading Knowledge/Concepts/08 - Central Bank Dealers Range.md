@@ -1,6 +1,6 @@
 ---
 type: ict-concept
-concept: "Central Bank Dealers Range"
+concept: Central Bank Dealers Range
 aliases:
   - CBDR
   - Central Bank Dealers Range
@@ -16,7 +16,7 @@ timeframes:
   - M15
   - M5
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
 last_reviewed: 2026-07-02
 created: 2026-06-23
@@ -445,22 +445,3 @@ HTF Bullish Bias
 6. **Dùng SD làm TP, entry theo ICT 2022; kết hợp Kill Zone cho timing.** CBDR trả lời "đi bao xa", [[18 - Kill Zones]]/Silver Bullet trả lời "vào lúc nào". Vào lệnh theo chuỗi sweep → MSS → displacement → FVG tại discount/premium, đặt +1 SD làm TP1 và +2 SD (hoặc pool trùng) làm TP2; stop nằm ngoài điểm sweep, KHÔNG tại mức SD.
 
 7. **Cẩn trọng trên gold/indices và backtest riêng từng sản phẩm.** NDX/XAUUSD biến động lớn và hay gap khiến SD kém tin cậy hơn EURUSD/GBPUSD. Đừng áp cùng một kỳ vọng SD cho mọi sản phẩm — thống kê tỉ lệ chạm +1/+2/+3 SD riêng cho từng cặp/phiên qua 20–30 mẫu ([[04 - Backtesting]]) rồi mới đưa vào playbook.
-
----
-
-## Appendix — CBDR Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Daily Bias:** Bullish / Bearish / Neutral
-> **CBDR window (NY):** 14:00–20:00 (kiểm tra DST)
-> **Range (body):** [low]–[high] = ____ pip
-> **Range hẹp & sạch?** Yes / No
-> **SD ưu tiên (theo bias):** trên / dưới
-> **+1 SD:** ____  **+2 SD:** ____  **+3 SD:** ____
-> **-1 SD:** ____  **-2 SD:** ____  **-3 SD:** ____
-> **SD trùng liquidity pool / POI HTF:**
-> **Manipulation kỳ vọng quét SD nào:**
-> **Target chính (SD):**
-> **Kill zone permitted:** London / NY AM
-> **No-trade condition:** range rộng / dính tin / gold-indices

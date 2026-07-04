@@ -19,7 +19,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
 updated: 2026-06-22
@@ -438,22 +438,3 @@ HTF Bearish Bias
 - [ ] Review riêng các lệnh Long sau **sweep** đúng quy trình vs các lần bắt đáy lúc **acceptance**.
 - [ ] Thống kê win rate, average R theo `sweep_or_acceptance` và `reclaim_confirmed`.
 - [ ] Cập nhật rule chỉ khi dữ liệu backtest/forward test đủ mẫu.
-
----
-
-## Appendix — SSL Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**  
-> **HTF Bias:** Bullish / Bearish / Neutral  
-> **Cụm SSL chính:** (equal lows / PDL / PWL / swing low) tại level ___  
-> **SSL role:** Sweep zone (chờ Long) / Target (chốt Short)  
-> **SSL đã bị lấy chưa:** Còn mở / Đã sweep  
-> **POI bullish gần SSL (cho Long):**  
-> **Điều kiện Long:** sweep SSL → reclaim → MSS lên + displacement trong POI  
-> **Stop:** dưới sweep low  
-> **Target leg Long:** BSL phía trên tại ___  
-> **Phân biệt sweep vs acceptance:** wick + reclaim = sweep | body đóng dưới + giữ giá = acceptance  
-> **No-trade condition:** chỉ chạm SSL chưa sweep / acceptance dưới SSL / không có MSS lên  
-> **Kill zone permitted:** London / NY AM / NY PM  
-> **Max risk / max trades:**  

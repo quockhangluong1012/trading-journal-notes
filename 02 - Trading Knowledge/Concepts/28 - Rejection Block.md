@@ -479,24 +479,3 @@ Nhưng chúng **không phải là từ đồng nghĩa**:
 7. **Nhận diện đúng mối quan hệ RB với [[33 - Turtle Soup]] mà không đánh đồng hai khái niệm.** Turtle Soup là entry model (false breakout + reversal theo kịch bản cấu trúc); RB là PD-array (vùng wick để retest). Chúng chồng lấp khi nến đảo chiều của một Turtle Soup chính là RB, nhưng bạn có thể gặp RB không kèm Turtle Soup (trong continuation) và Turtle Soup không để lại RB textbook. Đừng gọi mọi RB là "Turtle Soup" hay ngược lại — mỗi cái có logic quản trị lệnh riêng.
 
 8. **Log `wick_body_ratio`, loại cụm-hay-đơn, và kết quả từng lệnh RB, rồi review sau 20-30 mẫu trên NQ1/EURUSD/XAUUSD.** Chỉ dữ liệu thực chiến mới trả lời được các câu hỏi: ngưỡng wick/body nào cho win-rate tốt nhất trên từng thị trường? RB cụm có thực sự outperform RB đơn không? RB có kém tin cậy hơn OB tại cùng điểm đảo hay không? Đối chiếu kết quả với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]] sau mỗi đợt review, đồng thời nâng `confidence` của note này khi đã có đủ bằng chứng thay vì để mãi ở mức seed.
-
----
-
-## Appendix — Rejection Block Quick Reference Card
-
-> [!abstract] Quick Reference (điền nhanh khi live)
-> **Loại RB:** [bullish / bearish] ___
-> **Vị trí:** swing [high / low] @ [level] ___
-> **Wick định hướng:** [trên / dưới], độ dài: ___
-> **Sweep thanh khoản:** [buy-side / sell-side] @ [level] ___
-> **Premium/Discount:** ___  | **Bias HTF:** ___
-> **RB zone (body→wick):** [range] – [range] ___
-> **MSS xác nhận:** [có / chưa] @ [level] ___
-> **Entry (mép body):** [____]
-> **SL (sau wick extreme):** [____]
-> **TP1 / TP2:** [____] / [____]
-> **R dự kiến:** [____]  | **Kill zone:** ___
-> **Invalidation:** đóng cửa [dưới low wick / trên high wick] @ [____]
-> **Confluence (OB/FVG/OTE):** ___
-> ---
-> **Nhắc:** RB = wick, không phải body. Không sweep + không MSS = không vào.

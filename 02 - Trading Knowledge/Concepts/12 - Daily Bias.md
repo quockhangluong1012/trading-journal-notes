@@ -18,7 +18,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-21
 created: 2026-06-20
 updated: 2026-07-03
@@ -505,23 +505,3 @@ Ghi `bias_tier` vào pre-market note và journal. Sau 30+ ngày sẽ thấy rõ:
 - [ ] Review riêng các lệnh **aligned**, **counter-trend**, và **neutral nhưng vẫn trade**.
 - [ ] Thống kê win rate, average R, lỗi lặp lại theo `bias_alignment`.
 - [ ] Cập nhật rule chỉ khi dữ liệu backtest/forward test đủ mẫu.
-
----
-
-## Appendix — Pre-market Daily Bias Card
-
-> [!abstract] Copy vào Daily Note trước London / New York
-> **Date / Market:**  
-> **Economic events to respect:**  
-> **D1/H4 dealing range:**  
-> **HTF location:** Premium / Discount / Equilibrium  
-> **Primary draw on liquidity:**  
-> **Daily Bias:** Bullish / Bearish / Neutral  
-> **HTF/H1 POI for execution:**  
-> **Expected sequence:**  
-> **Invalidation:**  
-> **Kill zone permitted:** London / NY AM / NY PM  
-> **Long criteria:**  
-> **Short criteria:**  
-> **No-trade condition:**  
-> **Max risk / max trades:**  

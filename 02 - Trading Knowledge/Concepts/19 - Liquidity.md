@@ -19,7 +19,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
 updated: 2026-07-03
@@ -552,21 +552,3 @@ liquidity_target_hit: false # target đã được delivered chưa
 - [ ] Review riêng các lệnh **có sweep trước entry** và **không có sweep**.
 - [ ] Thống kê win rate, average R, lỗi lặp lại theo `liquidity_type` và `liquidity_range`.
 - [ ] Cập nhật rule chỉ khi dữ liệu backtest/forward test đủ mẫu.
-
----
-
-## Appendix — Liquidity Map Card
-
-> [!abstract] Copy vào Daily Note trước London / New York
-> **Date / Market:**  
-> **HTF dealing range (external liquidity hai phía):**  
-> **Buy-side liquidity (BSL) còn mở:** PWH / PDH / equal highs / swing high @ ___  
-> **Sell-side liquidity (SSL) còn mở:** PWL / PDL / equal lows / swing low @ ___  
-> **Engineered liquidity quan sát:** equal highs / equal lows @ ___  
-> **Internal range liquidity:** FVG / OB @ ___  
-> **DRAW ON LIQUIDITY chính (target):** BSL / SSL @ ___  
-> **Pool cần SWEEP trước reversal:** ___  
-> **Pool đã bị lấy (loại khỏi target):** ___  
-> **Session đang quan sát:** Asia / London / NY  
-> **Điều kiện invalidation (acceptance qua pool):** ___  
-> **No-trade condition:** draw chưa rõ / liquidity đã cạn / là void chứ không phải pool

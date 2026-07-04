@@ -20,7 +20,7 @@ timeframes:
   - M15
   - M5
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 4
 last_reviewed: 2026-06-22
 created: 2026-06-22
@@ -488,21 +488,3 @@ Daily Bias: Bearish
 
 7. **Ngày không rõ pha = ngày không trade.** Khoảng 2–3 ngày mỗi tuần AMD in rất rõ; những ngày còn lại méo mó. Lợi thế của khung này đến từ việc **chỉ chơi những ngày sách giáo khoa** — đó cũng chính là kỷ luật mà Prop Firm exam đòi hỏi.
 
----
-
-## Appendix — AMD Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Daily Bias:** Bullish / Bearish / Neutral
-> **Daily Open:**
-> **Accumulation range (Á):** [low]–[high]
-> **Judas direction (manipulation):** Down / Up — sweep pool: SSL / BSL @ ____
-> **Reclaim xác nhận?** Yes / No
-> **Distribution (displacement + MSS)?** Yes / No — FVG: ____
-> **Pha hiện tại:** Accumulation / Manipulation / Distribution-early / Distribution-late
-> **Entry plan (theo distribution):**
-> **Stop (ngoài cực điểm Judas):**
-> **Target (pool HTF):**
-> **Kill zone:** Asia / London / NY-AM / NY-PM
-> **No-trade condition:**

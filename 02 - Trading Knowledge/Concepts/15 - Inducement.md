@@ -1,6 +1,6 @@
 ---
 type: ict-concept
-concept: "Inducement"
+concept: Inducement
 aliases:
   - IDM
   - Inducement
@@ -19,7 +19,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
 last_reviewed: 2026-07-02
 created: 2026-06-23
@@ -533,24 +533,3 @@ entry_after_idm: true # entry sau khi IDM bị quét (true) hay tại IDM (false
 6. **Dùng IDM như bộ lọc kiên nhẫn chống FOMO.** IDM tồn tại chính là để khai thác nỗi sợ lỡ sóng. Khi thấy giá chạy nhanh về phía POI và tay muốn "vào cho kịp", nhắc bản thân: mồi là để chờ. Chuỗi bất di bất dịch: **IDM bị quét → POI phản ứng → MSS + displacement → entry**; thiếu bước "IDM bị quét", entry gần như luôn non.
 
 7. **Backtest `entry_after_idm: true` vs `false` để biến niềm tin thành số liệu.** Gắn tag mỗi lệnh theo việc bạn đã chờ IDM bị quét hay vào tại IDM, rồi so sánh win rate và average R qua 30–50 mẫu ([[04 - Backtesting]]). Gần như chắc chắn nhóm "chờ IDM bị quét" vượt trội — và chính con số của bạn (không phải lời khuyên của ai khác) mới đủ sức giữ kỷ luật khi thị trường cám dỗ.
-
----
-
-## Appendix — Inducement Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Daily Bias:** Bullish / Bearish / Neutral
-> **POI thật (OB/FVG) & vùng:** ____
-> **IDM type:** SSL (dưới bullish OB) / BSL (trên bearish OB)
-> **IDM level (đáy/đỉnh mồi):**
-> **IDM nằm giữa giá và POI?** Yes / No
-> **Đây là IDM hay external sweep?** IDM / External
-> **Location:** Premium / Discount / Equilibrium
-> **Draw on liquidity / target:**
-> **Kế hoạch:** chờ quét IDM → chạm POI → MSS → entry
-> **Entry plan (tại POI, sau khi IDM bị quét):**
-> **Stop logic (ngoài đầu kia POI):**
-> **Invalidation (đóng nến xuyên POI tại):**
-> **Kill zone permitted:** London / NY AM / NY PM
-> **No-trade condition:** IDM chưa bị quét / không có POI thật

@@ -18,7 +18,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
 confidence: 1
 last_reviewed: 2026-06-22
@@ -526,24 +526,3 @@ HTF Bearish Bias
 7. **Luôn giữ OTE ở vị trí phụ thuộc [[12 - Daily Bias]], không bao giờ dùng nó để fade xu hướng.** OTE là một execution model — nó cho biết VÙNG GIÁ để vào lệnh theo một hướng đã được xác định trước bởi bias và nhịp displacement, không phải một tín hiệu độc lập để đoán đảo chiều. Long tại vùng OTE giữa một downtrend rõ ràng (khi nhịp kéo fib không hề phá cấu trúc theo hướng bullish) là bắt dao rơi, không phải OTE.
 
 8. **Đặt stop nghiêm ngặt ngoài mốc 100% hoặc ngoài rìa của array confluence, không bao giờ đặt bên trong chính vùng OTE.** Stop bên trong vùng 62–79% gần như chắc chắn bị quét bởi nhiễu giá bình thường trước khi nhịp đi đúng hướng — đó là lỗi "stop quá sát" đã liệt kê trong bảng lỗi thường gặp. Stop hợp lý nằm ngoài đầu nhịp (100%) hoặc ngoài rìa xa của FVG/OB đang tạo confluence cho vùng, tùy điểm nào rộng hơn nhưng vẫn hợp lý với kế hoạch R:R.
-
----
-
-## Appendix — OTE Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Daily Bias:** Bullish / Bearish / Neutral
-> **Direction:** Long / Short
-> **Nhịp impulse (đã MSS?):** [low]→[high] / [high]→[low]
-> **OTE levels:** 62%=____ 70.5%=____ 79%=____
-> **Confluence (FVG/OB trùng vùng?):** Yes / No — vùng: ____
-> **Location:** Premium / Discount / Equilibrium
-> **Sweep trước nhịp?** Yes / No — pool: ____
-> **Entry plan (quanh 70.5%):**
-> **Stop (ngoài 100%):**
-> **Target (mở rộng -0.27/-0.62 + liquidity):**
-> **R:R dự kiến:**
-> **Kill zone permitted:** London / NY AM / NY PM
-> **Invalidation (đóng nến vượt 100% tại):**
-> **No-trade condition:**

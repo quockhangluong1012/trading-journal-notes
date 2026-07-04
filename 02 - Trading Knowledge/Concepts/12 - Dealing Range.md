@@ -18,7 +18,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
 updated: 2026-07-03
@@ -529,23 +529,3 @@ Trước mỗi phiên, chỉ cần trả lời: **"Giá đang ở pha nào của
 - [ ] Review riêng các lệnh đo trên **range đúng** vs **range sai/quá nhỏ/quá cũ**.
 - [ ] Thống kê win rate và average R theo `location_in_range`.
 - [ ] Cập nhật rule chọn range chỉ khi dữ liệu backtest/forward test đủ mẫu.
-
----
-
-## Appendix — Dealing Range Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**  
-> **Timeframe của range:** D1 / H4 / H1  
-> **Swing high (đầu trên):** ___ (là BSL?)  
-> **Swing low (đầu dưới):** ___ (là SSL?)  
-> **Hai đầu tạo bởi displacement/BOS?:** Yes / No  
-> **Equilibrium (50%):**  
-> **Location hiện tại:** Premium / Discount / Equilibrium  
-> **External liquidity còn mở (draw):** BSL above ___ / SSL below ___  
-> **Internal liquidity (POI):** FVG/OB tại ___ (premium/discount?)  
-> **Luồng kỳ vọng:** internal → external / sweep external → đảo về internal đối diện  
-> **Range còn hiệu lực?:** Yes / No  
-> **Điều kiện vẽ lại range:** external (đỉnh/đáy) bị lấy → cập nhật range mới  
-> **Hướng ưu tiên:** Long ở discount / Short ở premium / chờ  
-> **No-trade condition:** range mơ hồ / giá ở equilibrium / external đã bị lấy chưa re-draw

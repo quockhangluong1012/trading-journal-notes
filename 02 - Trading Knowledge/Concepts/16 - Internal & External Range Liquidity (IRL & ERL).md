@@ -1,6 +1,6 @@
 ---
 type: ict-concept
-concept: "Internal & External Range Liquidity"
+concept: Internal & External Range Liquidity
 aliases:
   - IRL
   - ERL
@@ -20,7 +20,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
 confidence: 1
 last_reviewed: 2026-06-23

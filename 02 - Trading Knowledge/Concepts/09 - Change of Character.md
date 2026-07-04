@@ -533,25 +533,3 @@ HTF Uptrend (HH/HL) + giá tới vùng Premium cực đoan / HTF Bearish POI
 6. **Đừng chase — vào tại POI (FVG/OB) do cú displacement của CHoCH để lại.** Vào ngay tại điểm phá đặt bạn ở premium (cho Long) / discount (cho Short) của leg mới với stop xa, R:R kém. Chờ giá retrace về POI, lý tưởng có thêm LTF CHoCH/BOS đồng pha; stop dưới/trên swing tạo CHoCH. Nếu giá reclaim lại trend cũ (đóng body ngược qua swing) → gọi CHoCH thất bại và đứng ngoài.
 
 7. **Backtest CHoCH-only vs CHoCH + BOS-confirmation để định lượng edge.** Đừng hỏi "CHoCH win rate bao nhiêu?" — hỏi "CHoCH + body close + sweep tier cao + đúng premium/discount + có BOS xác nhận có win rate bao nhiêu so với CHoCH thiếu từng điều kiện?". So sánh qua 20–30 mẫu mỗi nhóm ([[04 - Backtesting]]); dữ liệu này cũng là căn cứ để nâng `confidence` và đổi `status` từ `seed` → `developing`.
-
----
-
-## Appendix — Change of Character Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market khi đánh giá một cú phá ngược trend
-> **Date / Market:**
-> **Trend nền hiện tại:** Uptrend (HH/HL) / Downtrend (LH/LL) / Choppy
-> **Cú phá NGƯỢC trend?** Có / Không (Không → là BOS, không phải CHoCH)
-> **Là cú ngược trend ĐẦU TIÊN?** Có / Không
-> **Protected swing bị phá:** (level — higher-low / lower-high; có phải protected thật không?)
-> **Xác nhận:** Body close + displacement? (Có / Không — nếu chỉ wick / không displacement = inducement)
-> **Để lại FVG/imbalance:** Có / Không
-> **Sweep external liquidity trước CHoCH:** lấy BSL/SSL nào? tại HTF POI nào?
-> **Vị trí:** Premium / Discount (bearish CHoCH ưu tiên premium; bullish CHoCH ưu tiên discount)
-> **Cấp độ:** HTF bias-CHoCH (định hướng) / LTF entry-CHoCH (timing)
-> **Đồng pha đa khung:** HTF đã CHoCH chưa? LTF có đồng pha không?
-> **BOS hướng mới sau CHoCH:** Có / Chưa (đèn xanh xác nhận order flow đã đổi)
-> **POI hướng mới để vào lệnh:** (FVG/OB từ displacement của CHoCH)
-> **Stop logic:** dưới/trên swing tạo CHoCH / sweep
-> **Target hướng mới:** internal trước → external (BSL/SSL) sau
-> **No-trade condition:** wick-only / không displacement / phá inducement / giữa range / LTF ngược HTF / reclaim trend cũ / sai premium-discount

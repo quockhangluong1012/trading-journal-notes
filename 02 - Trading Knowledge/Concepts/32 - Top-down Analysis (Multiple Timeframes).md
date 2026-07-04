@@ -581,32 +581,3 @@ SORT date DESC
 7. **Chỉ rút gọn còn khung 2 tầng sau khi đã có kinh nghiệm backtest đáng kể trên một instrument/session cụ thể.** Như đã phân tích ở mục Nâng cao tương ứng, rút gọn tầng đổi lấy tốc độ bằng việc giảm confluence và tăng nguy cơ nhầm nhiễu HTF thành move thật. Người mới còn đang xây dựng pattern recognition nên luôn giữ đủ 3 tầng; chỉ cân nhắc 2 tầng sau khi có tối thiểu vài chục mẫu backtest chứng minh cặp khung rút gọn vẫn giữ được edge.
 
 8. **Ghi lại chính xác tầng nào đã "giết chết" một setup tưởng như tốt, để xây dựng hồ sơ cá nhân về sức mạnh bộ lọc của top-down.** Mỗi khi một ý tưởng trade bị loại (ví dụ: "POI Intermediate đẹp nhưng HTF bias ngược" hoặc "LTF có MSS nhưng giá chưa từng tới POI"), gắn nhãn rõ tầng gây loại bỏ đó trong journal. Sau 30–50 lần ghi nhận, bạn sẽ có dữ liệu định lượng cho thấy tầng nào lọc nhiều nhất và học được cách nhận diện sớm hơn — biến top-down từ một quy trình trừu tượng thành một kỹ năng đo lường được, liên kết trực tiếp với [[02 - Skill Metrics]].
-
----
-
-## Appendix — Top-down Analysis Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Bộ khung dùng:** ____ (HTF) → ____ (Intermediate) → ____ (LTF)
-> ---
-> **TẦNG 1 — HTF (Bias & Draw)**
-> - Daily Bias: Bullish / Bearish
-> - Draw on Liquidity (DOL): [level]
-> - Premium / Discount: ____
-> ---
-> **TẦNG 2 — INTERMEDIATE (POI & Range)**
-> - POI: [range] (OB / FVG / NWOG CE / breaker)
-> - Confluence: ____
-> - IRL (target gần): [level]   ERL (target xa): [level]
-> ---
-> **TẦNG 3 — LTF (Entry & Timing)**
-> - Giá đã tới POI? Yes / No
-> - Kill Zone: London / NY AM / NY PM
-> - Sweep: Yes / No   MSS: Yes / No   FVG/OB: ____
-> - Entry: ____   SL (ngoài sweep): [level]
-> - TP1 (IRL): [level]   TP2 (ERL/DOL): [level]
-> - RR dự kiến: ____
-> ---
-> **ĐỒNG THUẬN 3 TẦNG?** ✓ / ✗  → nếu ✗ thì **No Trade**
-> **Liên quan:** [[ICT 2022 Model]] · [[12 - Daily Bias]] · [[27 - Premium Discount]] · [[12 - Dealing Range]] · [[16 - Internal & External Range Liquidity (IRL & ERL)]] · [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[Fair Value Gap]] · [[26 - OTE - Optimal Trade Entry]] · [[18 - Kill Zones]]

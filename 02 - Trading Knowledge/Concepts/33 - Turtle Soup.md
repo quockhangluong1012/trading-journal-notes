@@ -9,7 +9,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#TurtleSoup"
-status: seed
+status: developing
 category: Entry Model
 timeframes:
   - D1
@@ -472,21 +472,3 @@ BSL (equal highs/PDH) -> sweep -> reject -> reclaim
 7. **Không fade một cú phá vỡ có acceptance rõ ràng — đó là continuation, không phải Turtle Soup, dù bạn "cảm thấy" giá đã đi quá xa.** Đây là lỗi tốn tiền nhất trong nhóm setup sweep-and-reverse. Nếu thân nến đóng cửa dứt khoát ngoài mức và không reclaim trong vài nến kế tiếp, đứng ngoài hoặc chuyển sang tư duy theo trend, đừng cố "bắt đáy/đỉnh" một cú breakout thật.
 
 8. **Backtest tối thiểu 30 mẫu Turtle Soup (cả đúng lẫn sai) trên từng thị trường trước khi tin vào bất kỳ con số hiệu suất nào — mọi tỉ lệ thắng nêu trong note này đều cần backtest xác nhận, không phải số đo sẵn.** Ghi đầy đủ `swept_level_type`, `plus_one_variant_used`, `double_sweep_occurred`, kết quả và R vào [[04 - Backtesting]] cho từng lệnh. Đối chiếu với [[20 - Liquidity Sweep]] và [[21 - Market Structure Shift]], cập nhật [[02 - Skill Metrics]] và nâng `confidence`/`status` của note này khi đã có đủ dữ liệu thay vì giữ mãi ở mức seed.
-
----
-
-## Appendix — Turtle Soup Quick Reference Card
-
-> [!abstract] Quick Reference (điền nhanh khi trade)
-> **Hướng:** Long ☐ (quét SSL) / Short ☐ (quét BSL)
-> **Mức bị quét:** PDH/PDL ☐ · Equal H/L ☐ · Session H/L ☐ · Swing cũ ☐ → @ [level]
-> **Sweep:** wick qua, không acceptance? ☐
-> **Reclaim:** đóng cửa lại trong range? ☐
-> **Displacement + FVG:** @ [range] ☐
-> **MSS / CHoCH:** ☐
-> **Context:** Bias trùng ☐ · Premium/Discount đúng phe ☐ · Kill zone ☐
-> **Entry:** [level] (FVG/OB / market sau MSS)
-> **SL:** ngoài cực trị quét @ [level] (+buffer)
-> **TP1:** trong range @ [level] · **TP2:** thanh khoản đối diện @ [level]
-> **Risk:** ≤ 0.5% · **RR:** 1:____
-> **Vô hiệu hoá:** acceptance ngoài mức / không MSS / reclaim thất bại

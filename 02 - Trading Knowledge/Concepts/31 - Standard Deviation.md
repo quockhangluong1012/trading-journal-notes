@@ -507,7 +507,7 @@ SORT date DESC
 
 1. **Không bao giờ dùng SD như tín hiệu entry.** SD là công cụ target/projection — nó cho biết nơi giá có khả năng đi tới, không phải nơi nên vào lệnh. Entry luôn phải đến từ chuỗi sweep → [[21 - Market Structure Shift]] → [[Fair Value Gap]]/OB độc lập với các mức SD. Đặt lệnh limit mù tại một mức SD (như trong "Ví dụ sai" ở mục 6) là lỗi khiến trader bỏ qua toàn bộ xác nhận cấu trúc.
 
-2. **Luôn neo vào một manipulation leg đã thực sự quét thanh khoản — không bao giờ là một swing tiện tay.** Trước khi vẽ SD, tự hỏi: đoạn A→B này có sweep [[19 - Liquidity]] (BSL/SSL) thật không, hay mình chỉ đang chọn một đoạn để các con số "nhìn đẹp"? Nếu không chắc, chạy phép thử tương tự phép thử sweep dùng trong [[22 - Mitigation Block]] và [[04 - BB - Breaker Block]]: xem body/close có thực sự vượt qua đỉnh/đáy cũ hay chỉ là wick.
+2. **Luôn neo vào một manipulation leg đã thực sự quét thanh khoản — không bao giờ là một swing tiện tay.** Trước khi vẽ SD, tự hỏi: đoạn A→B này có sweep [[19 - Liquidity]] (BSL/SSL) thật không, hay mình chỉ đang chọn một đoạn để các con số "nhìn đẹp"? Nếu không chắc, chạy phép thử tương tự phép thử sweep dùng trong [[22 - Mitigation Block]] và [[04 - Breaker Block]]: xem body/close có thực sự vượt qua đỉnh/đáy cũ hay chỉ là wick.
 
 3. **Khớp quy mô anchor với quy mô trade đang cầm** (xem mục "Nâng cao — Chọn đúng manipulation leg" ở mục 5). Trade intraday neo vào Judas leg cấp session; trade giữ 1-2 ngày neo vào Judas cấp ngày; swing đa ngày/tuần neo vào Judas cấp tuần. Ghi trường `anchor_scale` trong journal để không lẫn lộn giữa các quy mô khi review.
 
@@ -520,21 +520,3 @@ SORT date DESC
 7. **Cân nhắc vẽ thêm một fib extension cổ điển trên nhịp swing gần nhất để đối chiếu** (xem mục "Nâng cao — SD Projection vs Fibonacci Extension"). Vùng mà cả hai công cụ đo độc lập cùng hội tụ là confluence mạnh hơn một công cụ đứng một mình — đặc biệt hữu ích khi manipulation leg không thật sự rõ ràng.
 
 8. **Backtest tối thiểu 15-20 mẫu trước khi tin cậy hoàn toàn vào SD**, ghi lại trong journal: chất lượng anchor leg (có sweep rõ hay mơ hồ), mức SD nào thực sự có confluence, và mức SD nào giá thực sự dừng/đảo. Thống kê theo từng thị trường (NQ1/NDX, EURUSD, GBPUSD, XAUUSD) vì hành vi tại các mức SD có thể khác nhau đáng kể giữa index và forex. Đối chiếu kết quả với [[02 - Skill Metrics]] và cập nhật `confidence` của note này sau mỗi đợt review.
-
----
-
-## Appendix — Standard Deviation Quick Reference Card
-
-> [!abstract] Thẻ tra nhanh SD Projection
-> - **Bản chất:** Công cụ TARGET — chiếu bội số đối xứng của một swing để dự phóng draw on liquidity. KHÔNG phải entry.
-> - **Anchor (manipulation leg):** A [level] → B [level]  (đã sweep liquidity? Yes/No)
-> - **Displacement + MSS xác nhận hướng:** Yes / No
-> - **Bias / vị trí:** Bullish / Bearish · Premium / Discount
-> - **Mức chiếu:** -1 [level] · -2 [level] · -2.5 [level] · -3 [level] · -4 [level]
-> - **Confluence (mức nào trùng liquidity/FVG/PD-array HTF):** ____
-> - **Target chính (confluence cao nhất):** [level]
-> - **TP từng phần:** TP1 -1 SD [level] · TP2 -2 SD [level] · Runner -2.5/-3 SD
-> - **SL (theo cấu trúc, KHÔNG theo SD):** [level]
-> - **Kill zone:** London / NY = ____
-> - **Quy tắc vàng:** Neo đúng manipulation leg · Chỉ tin mức có confluence · Không bao giờ vào lệnh mù tại mức SD
-> - **Liên quan:** [[ICT 2022 Model]] · [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[Fair Value Gap]] · [[19 - Liquidity]] · [[12 - Dealing Range]] · [[27 - Premium Discount]] · [[12 - Daily Bias]]

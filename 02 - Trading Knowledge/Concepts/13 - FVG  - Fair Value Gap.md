@@ -21,7 +21,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
 updated: 2026-07-03
@@ -555,24 +555,3 @@ ICT nhấn mạnh **thời gian đứng trước giá**: cùng một cấu trúc
 - [ ] Review riêng: FVG có displacement vs không; entry tại CE vs mép gap; FVG sau sweep vs trước sweep.
 - [ ] Thống kê win rate, average R, lỗi lặp lại theo `fvg_from_displacement` và `entry_relative_to_ce`.
 - [ ] Cập nhật rule chỉ khi dữ liệu backtest/forward test đủ mẫu.
-
----
-
-## Appendix — FVG Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**  
-> **Daily Bias:** Bullish / Bearish / Neutral  
-> **FVG type:** BISI (bullish) / SIBI (bearish) / IFVG  
-> **FVG timeframe & range:** ____ , [low]–[high]  
-> **CE (50%):**  
-> **Sinh từ displacement phá cấu trúc?** Yes / No  
-> **Location:** Premium / Discount / Equilibrium  
-> **Trùng POI HTF nào:**  
-> **Liquidity sweep trước FVG?** Yes / No — pool: ____  
-> **Draw on liquidity / target:**  
-> **Entry plan (quanh CE):**  
-> **Stop logic:**  
-> **Invalidation (đóng nến xuyên qua tại):**  
-> **Kill zone permitted:** London / NY AM / NY PM  
-> **No-trade condition:**  

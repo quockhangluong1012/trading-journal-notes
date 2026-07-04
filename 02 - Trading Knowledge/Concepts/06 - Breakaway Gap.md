@@ -562,26 +562,3 @@ HTF Bias Bearish
 
 8. **Backtest 20-30 mẫu breakaway gap trên NQ1/EURUSD/XAUUSD trước khi tin cậy hoàn toàn**, tách riêng theo: có sweep hay không, tier displacement (yếu/vừa/mạnh), và kết quả gap giữ hay bị fill. Chỉ dữ liệu thực chiến mới trả lời được ngưỡng `displacement_atr_ratio` nào thực sự phân biệt breakaway "ăn tiền" khỏi breakaway hay fail trên từng thị trường. Đối chiếu với [[01 - Roadmap]], cập nhật [[02 - Skill Metrics]], và chỉ nâng `confidence` của note này sau khi có đủ bằng chứng thay vì để mãi ở mức seed.
 
----
-
-## Appendix — Breakaway Gap Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Daily Bias:** Bullish / Bearish
-> **Loại gap:** Bullish BAG / Bearish BAG
-> **Vùng trước break (range/level):** [range]
-> **Sweep biên range?** SSL / BSL — mức: ____
-> **Displacement bứt phá tại:** [level]
-> **Breakaway gap zone:** [low]–[high]
-> **Confluence FVG / Liquidity Void?** Yes / No
-> **Vị trí trong move:** Đầu (breakaway) / Cuối (nghi exhaustion)
-> **Gap đã retest & giữ?** Yes / No
-> **Entry plan (retest cạnh gap/FVG):** ____
-> **Stop (far side gap):** ____
-> **Target (liquidity hướng break):** TP1 [level] · TP2 [level]
-> **R:R dự kiến:** ____
-> **Kill zone permitted:** London / NY AM / NY PM
-> **Invalidation (đóng nến sạch xuyên gap tại):** [level]
-> **No-trade condition:** ____
-> **Liên quan:** [[Fair Value Gap]] · [[21 - Liquidity Void]] · [[Displacement]] · [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[27 - Premium Discount]] · [[12 - Daily Bias]] · [[ICT 2022 Model]]

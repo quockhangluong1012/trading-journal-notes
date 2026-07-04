@@ -1,6 +1,6 @@
 ---
 type: ict-concept
-concept: "Balanced Price Range"
+concept: Balanced Price Range
 aliases:
   - Balanced Price Range
   - BPR
@@ -19,7 +19,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 3
 last_reviewed: 2026-06-23
 created: 2026-06-23
@@ -500,23 +500,3 @@ HTF Bearish Bias
 
 7. **Log riêng hai trường `bpr_overlap_confirmed` và `sweep_before_bpr` cho mọi lệnh gắn tag BPR.** Sau 20–30 mẫu, dữ liệu của chính bạn sẽ cho biết edge nằm ở đâu — thường kết quả sẽ nghiêng hẳn về nhóm "overlap thật + có sweep", và đó là bằng chứng để tin quy tắc thay vì tin trí nhớ.
 
----
-
-## Appendix — BPR Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**  
-> **Daily Bias:** Bullish / Bearish / Neutral  
-> **BPR type:** Bullish / Bearish  
-> **BPR timeframe & overlap range:** ____ , [low]–[high]  
-> **CE (50% của overlap):**  
-> **Hai FVG ngược chiều có CHỒNG nhau?** Yes / No  
-> **Location:** Premium / Discount / Equilibrium  
-> **Trùng POI HTF nào:**  
-> **Liquidity sweep trước BPR?** Yes / No — pool: ____  
-> **Draw on liquidity / target:**  
-> **Entry plan (quanh CE):**  
-> **Stop logic:**  
-> **Invalidation (đóng nến xuyên toàn bộ BPR tại):**  
-> **Kill zone permitted:** London / NY AM / NY PM  
-> **No-trade condition:**  

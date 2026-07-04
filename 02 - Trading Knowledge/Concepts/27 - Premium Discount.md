@@ -21,7 +21,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
 updated: 2026-07-03
@@ -528,21 +528,3 @@ HTF Bearish Bias
 7. **Ghi lại đầy đủ các trường định lượng cho mỗi lệnh có dùng Premium/Discount:** `pd_location`, `pd_quartile`, `htf_ltf_pd_conflict`, `entry_in_ote`. Đây là dữ liệu tối thiểu để trả lời câu hỏi thực chiến: quartile nào cho win rate cao nhất, xung đột đa khung có đáng chờ không, overlap OTE có thực sự nâng R không — tất cả **cần backtest xác nhận** trước khi trở thành quy tắc cứng.
 
 8. **Sau 20–30 mẫu, review riêng theo `symbol`** (NQ1/NAS100, EURUSD, GBPUSD, XAUUSD gần như chắc chắn có đặc tính retrace/quartile khác nhau) thay vì gộp chung mọi thị trường vào một con số kết luận. Đối chiếu kết quả với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]], đồng thời nâng `confidence` của note này khi đã có đủ bằng chứng.
-
----
-
-## Appendix — Premium/Discount Quick Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**  
-> **Daily Bias:** Bullish / Bearish / Neutral  
-> **Dealing range:** swing low ___ → swing high ___ (hoặc ngược lại)  
-> **Fib direction:** low→high (bullish) / high→low (bearish)  
-> **Vị trí hiện tại:** Premium / Discount / Equilibrium (___%)  
-> **Vùng OTE (0.62–0.79):** ___ – ___  
-> **PD Array tại vùng đó:** ___ (bullish/bearish OB, FVG, breaker...)  
-> **Draw on liquidity (phía bên kia EQ):** ___  
-> **Hành động ưu tiên:** Long từ discount / Short từ premium / No-trade  
-> **Sweep cần thấy trước entry:** SSL (Long) / BSL (Short) tại ___  
-> **Invalidation:** acceptance ra ngoài range tại ___  
-> **No-trade condition:** giá ở equilibrium / range không rõ / ngược bias  

@@ -1,6 +1,6 @@
 ---
 type: ict-concept
-concept: "Inverse Fair Value Gap"
+concept: Inverse Fair Value Gap
 aliases:
   - IFVG
   - Inversion FVG
@@ -19,7 +19,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
 last_reviewed: 2026-07-02
 created: 2026-06-23
@@ -257,7 +257,7 @@ Invalid: giá đóng nến XUỐNG lại dưới IFVG (lấy lại gap) → bỏ
 
 IFVG không phải khái niệm "đảo cực" duy nhất trong ICT. Ba PD array cùng dựa trên logic **vùng cũ đổi vai trò sau khi cấu trúc đổi** — nhưng khác nhau ở *nguồn gốc vùng* và *sự kiện kích hoạt*. Hiểu rõ ba cái này giúp bạn không gọi nhầm tên và chọn đúng vùng để retest.
 
-| Tiêu chí | Inverse FVG (IFVG) | [[04 - BB - Breaker Block\|Breaker Block]] | [[22 - Mitigation Block\|Mitigation Block]] |
+| Tiêu chí | Inverse FVG (IFVG) | [[04 - Breaker Block\|Breaker Block]] | [[22 - Mitigation Block\|Mitigation Block]] |
 |---|---|---|---|
 | **Vùng gốc** | Một [[Fair Value Gap\|FVG]] (imbalance 3 nến) | Một [[Order Block]] tạo swing high/low **bị phá** kèm sweep | Order block của một swing **không** lấy được liquidity trước khi bị phá |
 | **Sự kiện kích hoạt** | Đóng nến (body close) XUYÊN qua FVG | Giá sweep liquidity → phá qua OB → OB đảo vai trò | Giá phá cấu trúc, quay lại "mitigate" OB chưa hoàn thành nhiệm vụ |
@@ -531,25 +531,3 @@ ifvg_alignment: aligned # aligned với bias mới | counter
 6. **Chỉ trade IFVG ĐỒNG hướng bias mới, đúng premium/discount.** Một bearish IFVG (từ bullish FVG fail) đáng tin nhất khi retest nằm ở premium và bias đã chuyển bearish; ngược lại cho bullish IFVG ở discount. IFVG counter-trend không có narrative đổi delivery thật thường thiếu room và xác suất thấp.
 
 7. **Xếp hạng chất lượng inversion và backtest theo tổ hợp.** Chấm mỗi IFVG theo: độ mạnh displacement + có/không MSS + độ rõ acceptance. So sánh win rate / average R của nhóm "close + MSS + retest" vs các nhóm thiếu điều kiện qua 30–50 mẫu ([[04 - Backtesting]]) — dữ liệu của chính bạn sẽ chứng minh IFVG chỉ có edge khi hội đủ close + MSS + retest.
-
----
-
-## Appendix — Inverse FVG Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Bias mới:** Bullish / Bearish
-> **FVG gốc (loại & vùng):** bullish / bearish , [low]–[high]
-> **Violation:** CLOSE (hợp lệ) / WICK (không hợp lệ)
-> **Có displacement + MSS kèm theo?** Yes / No
-> **IFVG zone (vùng retest):** ____
-> **Vùng IFVG giờ là:** Hỗ trợ / Kháng cự
-> **Đồng hướng bias mới?** Yes / No
-> **Không nhầm với Implied FVG?** Confirmed
-> **Location:** Premium / Discount / Equilibrium
-> **Draw on liquidity / target:**
-> **Entry plan (tại retest):**
-> **Stop logic (ngoài đầu kia IFVG):**
-> **Invalidation (giá đóng nến lấy lại gap tại):**
-> **Kill zone permitted:** London / NY AM / NY PM
-> **No-trade condition:** chỉ bóng chọc / không MSS / lấy lại gap

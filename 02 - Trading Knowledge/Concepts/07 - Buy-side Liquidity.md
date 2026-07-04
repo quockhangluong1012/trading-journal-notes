@@ -1,6 +1,6 @@
 ---
 type: ict-concept
-concept: "Buy-side Liquidity"
+concept: Buy-side Liquidity
 aliases:
   - Buy-side Liquidity
   - Buyside Liquidity
@@ -20,7 +20,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-23
 created: 2026-06-23
 updated: 2026-06-23
@@ -419,25 +419,3 @@ HTF Bullish Bias
 - [ ] Review riêng: Short sau sweep + MSS vs Short mù; BSL external (target) vs internal (inducement).
 - [ ] Thống kê win rate, average R theo `swept_before_entry` và `mss_after_sweep`.
 - [ ] Chỉ cập nhật rule khi đủ mẫu backtest/forward test.
-
----
-
-## Appendix — Buy-side Liquidity Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**  
-> **Daily Bias:** Bullish / Bearish / Neutral  
-> **BSL role:** Target (bullish) / Sweep-reversal (bearish)  
-> **BSL type:** EQH / Swing High / PDH / PWH / Session High / Trendline / Internal  
-> **BSL level:**  
-> **External (target thật) hay Internal (inducement)?** External / Internal  
-> **Location:** Premium / Discount / Equilibrium  
-> **Trùng POI HTF nào:**  
-> **Đã sweep BSL chưa?** Yes / No (vượt + đóng nến quay lại?)  
-> **MSS giảm sau sweep?** Yes / No  
-> **SSL target phía dưới:**  
-> **Entry plan:**  
-> **Stop logic (trên đỉnh sweep):**  
-> **Invalidation (đóng nến accept trên BSL tại):**  
-> **Kill zone permitted:** London / NY AM / NY PM  
-> **No-trade condition:**  

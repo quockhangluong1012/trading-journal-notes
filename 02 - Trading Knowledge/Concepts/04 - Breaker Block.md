@@ -21,7 +21,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
 last_reviewed: 2026-07-02
 created: 2026-06-22
@@ -504,25 +504,3 @@ HTF Bias chuyển Bearish
 6. **Đọc một Failed Breaker như tín hiệu tiếp diễn, không cố "gồng".** Ranh giới cứng là acceptance: một nến đóng ngược xuyên qua vùng breaker + một nến giữ bên kia = breaker fail → thoát, và cảnh giác thị trường muốn tiếp diễn hướng cũ. Trước ranh giới đó, retrace sâu vào vùng là bình thường; sau ranh giới đó, đừng giữ vì hy vọng.
 
 7. **Backtest breaker theo tổ hợp điều kiện, không theo tổng thể.** Đừng hỏi "breaker win rate bao nhiêu?" — hỏi "breaker + sweep Tier 1 + trùng FVG + đúng premium/discount có win rate bao nhiêu so với breaker thiếu từng điều kiện?". 20–30 mẫu mỗi nhóm đủ thấy chênh lệch ([[04 - Backtesting]]), và đó là cách biến niềm tin thành quy tắc có số liệu.
-
----
-
-## Appendix — Breaker Block Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Daily Bias (đã đổi?):** Bullish / Bearish
-> **Loại breaker:** Bullish / Bearish
-> **OB cũ (fail) range:**
-> **Sweep pool:** SSL / BSL — mức: ____
-> **MSS phá cấu trúc tại:**
-> **Breaker zone:** [low]–[high]
-> **Confluence FVG?** Yes / No
-> **Location:** Premium / Discount
-> **Entry plan (retest):**
-> **Stop (ngoài điểm sweep):**
-> **Target (liquidity hướng mới):**
-> **R:R dự kiến:**
-> **Kill zone permitted:** London / NY AM / NY PM
-> **Invalidation (đóng nến xuyên breaker tại):**
-> **No-trade condition:**

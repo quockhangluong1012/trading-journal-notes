@@ -22,7 +22,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
 updated: 2026-07-03
@@ -521,23 +521,3 @@ Một wick sweep trên M15 khi thả xuống M1 là **cả một cấu trúc ho�
 - [ ] Review riêng: vào trên wick vs sau reclaim; stop sát mép vs ngoài POI.
 - [ ] Thống kê win rate, average R theo `reclaim_confirmed` và `displacement_after_sweep`.
 - [ ] Cập nhật rule chỉ khi dữ liệu đủ mẫu.
-
----
-
-## Appendix — Liquidity Sweep Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market
-> **Date / Market:**
-> **Daily Bias:** Bullish / Bearish / Neutral
-> **Pool mục tiêu (draw):**
-> **Pool vừa bị quét:** equal-highs / equal-lows / PDH / PDL / swing — mức: ____
-> **Sweep hay Break?** (đóng trong = sweep / đóng ngoài = break)
-> **Reclaim xác nhận?** Yes / No
-> **Displacement + MSS sau sweep?** Yes / No
-> **Location:** Premium / Discount / Equilibrium
-> **Trùng POI HTF nào:**
-> **Entry plan (sau reclaim):**
-> **Stop (ngoài đáy/đỉnh sweep):**
-> **Target (pool đối diện):**
-> **Kill zone permitted:** London / NY AM / NY PM
-> **No-trade condition:**

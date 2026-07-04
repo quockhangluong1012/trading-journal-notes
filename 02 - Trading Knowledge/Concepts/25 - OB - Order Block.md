@@ -20,7 +20,7 @@ timeframes:
   - M5
   - M1
 models:
-  - "[[Trading Journal/02 - Trading Knowledge/Models/ICT 2022 Model|ICT 2022]]"
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-07-01
 created: 2026-06-22
 updated: 2026-07-03
@@ -561,26 +561,3 @@ OB không đứng một mình. ICT có cả một **họ "block"**, và đọc n
 - [ ] Review riêng `unmitigated vs mitigated`, `low- vs high-resistance`, `có sweep vs không sweep`.
 - [ ] Thống kê win rate, average R, lỗi lặp lại theo `ob_resistance` và `ob_location`.
 - [ ] Cập nhật rule chỉ khi dữ liệu backtest/forward test đủ mẫu.
-
----
-
-## Appendix — Order Block Quick Reference Card
-
-> [!abstract] Copy vào Daily Note / pre-market khi đánh dấu một OB
-> **Date / Market:**  
-> **OB type:** Bullish OB / Bearish OB  
-> **Timeframe của OB:** D1 / H4 / H1 / M15 / M5 / M1  
-> **OB zone (đầu – đáy):**  
-> **Mean Threshold (50%):**  
-> **Sweep ngay trước OB:** (liquidity pool nào, ở đâu)  
-> **Displacement + BOS/MSS:** Có / Không  
-> **FVG/imbalance đi kèm:** Có / Không  
-> **Mitigated?** Unmitigated / đã mitigate ___ lần  
-> **Resistance:** Low-resistance / High-resistance  
-> **Location:** Premium / Discount / Equilibrium  
-> **Đồng hướng Daily Bias?** Có / Không  
-> **Entry:** OB / Mean Threshold / FVG đi kèm  
-> **Stop:** qua đầu kia OB / qua điểm sweep  
-> **Target liquidity:**  
-> **OB hay Breaker?** Còn vai trò OB / đã fail → đọc như [[Breaker Block]]  
-> **No-trade condition:**  
