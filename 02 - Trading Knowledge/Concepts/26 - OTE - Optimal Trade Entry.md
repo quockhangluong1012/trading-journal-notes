@@ -9,7 +9,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#OTE"
-status: developing
+status: seed
 category: Entry Model
 timeframes:
   - H4

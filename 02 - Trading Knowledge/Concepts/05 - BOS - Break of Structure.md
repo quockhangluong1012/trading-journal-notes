@@ -8,7 +8,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#BOS"
-status: developing
+status: seed
 category: Market Structure
 timeframes:
   - D1

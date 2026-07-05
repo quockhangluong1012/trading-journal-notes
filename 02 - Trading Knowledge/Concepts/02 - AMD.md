@@ -11,7 +11,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#AMD"
-status: developing
+status: seed
 category: Market Model
 timeframes:
   - D1

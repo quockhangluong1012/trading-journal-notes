@@ -9,7 +9,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#ImpliedFVG"
-status: developing
+status: seed
 category: PD Array
 timeframes:
   - H4

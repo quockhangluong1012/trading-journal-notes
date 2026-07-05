@@ -8,7 +8,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#CBDR"
-status: developing
+status: seed
 category: Time & Price
 timeframes:
   - D1

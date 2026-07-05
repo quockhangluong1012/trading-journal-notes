@@ -18,18 +18,9 @@ tags:
   - trading/risk
 status: developing # seed | developing | tested | mastered
 category: "Risk Management"
-timeframes: [] # cơ chế thị trường, không phụ thuộc khung thời gian
-models: []
-markets: [EURUSD, GBPUSD, NDX, XAUUSD]
-importance: 5 # 1-5: nền tảng bắt buộc trước khi tính size & rủi ro
-confidence: 0 # 1-5: mức độ mình hiểu khái niệm này
 last_reviewed: 
 created: 2026-07-01
 updated: 2026-07-03
-related_concepts:
-  - "[[19 - Liquidity]]"
-  - "[[27 - Premium Discount]]"
-prerequisites: []
 common_mistakes:
   - "Nhầm 1 lot với 1 đơn vị tài sản"
   - "Tính size theo cảm tính thay vì theo pip value và stop loss"

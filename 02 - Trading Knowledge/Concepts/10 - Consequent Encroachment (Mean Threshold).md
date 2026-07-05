@@ -9,7 +9,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#CE"
-status: developing
+status: seed
 category: PD Array
 timeframes:
   - D1

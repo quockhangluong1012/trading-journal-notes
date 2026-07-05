@@ -9,7 +9,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#Inducement"
-status: developing
+status: seed
 category: Liquidity
 timeframes:
   - D1

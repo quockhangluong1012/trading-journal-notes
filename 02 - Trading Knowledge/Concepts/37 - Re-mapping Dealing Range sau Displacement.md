@@ -13,12 +13,6 @@ tags:
   - "#Displacement"
 status: developing
 category: Market Structure
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
 last_reviewed: 2026-07-01
 created: 2026-07-01
 updated: 2026-07-03

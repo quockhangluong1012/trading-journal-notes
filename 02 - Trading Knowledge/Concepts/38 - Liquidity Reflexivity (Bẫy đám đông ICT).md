@@ -13,39 +13,9 @@ tags:
   - "#reflexivity"
 status: developing
 category: Liquidity
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[01 - ICT 2022 Model|ICT 2022]]"
-markets:
-  - NDX
-  - EURUSD
-  - GBPUSD
-  - XAUUSD
-importance: 5
-confidence: 2
 last_reviewed: 2026-07-04
 created: 2026-07-04
 updated: 2026-07-04
-related_concepts:
-  - "[[19 - Liquidity]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[15 - Inducement]]"
-  - "[[17 - Inverse Fair Value Gap - iFVG]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[33 - Turtle Soup]]"
-prerequisites:
-  - "[[19 - Liquidity]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[15 - Inducement]]"
-common_mistakes:
-  - "[[Mistake - Enter before liquidity sweep]]"
-  - "[[Mistake - Entry When MSS not in POI Zone]]"
 ---
 
 # Liquidity Reflexivity (Bẫy đám đông ICT)

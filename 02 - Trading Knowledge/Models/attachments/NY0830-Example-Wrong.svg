@@ -1,0 +1,6 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="300" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ SAI — 08:30 Model</text>
+<text x="24" y="54" font-size="13" fill="#6B7280">Các lỗi hủy hoại xác suất của mô hình.</text>
+<rect x="24" y="70" width="712" height="220" rx="8" fill="#FFFFFF" stroke="#FCA5A5"/><text x="44" y="112" font-size="12.5" fill="#B91C1C">✘ Vào lệnh TRƯỚC 08:30 (front-run cú raid)</text><text x="44" y="144" font-size="12.5" fill="#B91C1C">✘ Bỏ qua MSS — vào ngay khi vừa raid</text><text x="44" y="176" font-size="12.5" fill="#B91C1C">✘ Trade không có context 15m (chỉ nhìn 1m)</text><text x="44" y="208" font-size="12.5" fill="#B91C1C">✘ Chọn sai PD array (đợi hồi quá sâu → lỡ lệnh)</text><text x="44" y="240" font-size="12.5" fill="#B91C1C">✘ Stop quá chặt — chỉ đặt tại swing MSS thay vì ngoài toàn range post-08:30</text>
+</svg>

@@ -6,18 +6,10 @@ tags:
   - trading/ict/concept
   - trading/study
 status: seed # seed | developing | tested | mastered
-category: "" # Liquidity | Market Structure | PD Array | Entry Model | Time & Price | Risk Management | Psychology
-timeframes: [] # D1 | H4 | H1 | M15 | M5 | M1
-models: [] # ICT 2022 | Silver Bullet | OTE | AMD | MMXM
-markets: [] # EURUSD | GBPUSD | NDX | XAUUSD...
-importance: 0 # 1-5
-confidence: 0 # 1-5: mức độ mình hiểu khái niệm này
+category: "" # Liquidity | Market Structure | PD Array | Entry Model | 
 last_reviewed: 
 created: {{date}}
 updated: {{date}}
-related_concepts: []
-prerequisites: []
-common_mistakes: []
 ---
 
 # {{title}}

@@ -9,36 +9,11 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#AggressiveDisplacement"
-status: developing
+status: seed
 category: Entry Model
-timeframes:
-  - M5
-  - M1
-models:
-  - "[[ICT 2022 Model]]"
-markets:
-  - NDX/NQ1
-  - EURUSD
-  - GBPUSD
-  - XAUUSD
-importance: 4
-confidence: 2
 last_reviewed: 2026-06-29
 created: 2026-06-29
 updated: 2026-07-03
-related_concepts:
-  - "[[20 - Liquidity Sweep]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[13 - FVG  - Fair Value Gap]]"
-  - "[[10 - Consequent Encroachment (Mean Threshold)]]"
-  - "[[17 - Inverse Fair Value Gap - iFVG]]"
-  - "[[25 - OB - Order Block]]"
-  - "[[26 - OTE - Optimal Trade Entry]]"
-prerequisites:
-  - "[[20 - Liquidity Sweep]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[13 - FVG  - Fair Value Gap]]"
-common_mistakes: []
 ---
 
 # Aggressive Displacement Entry

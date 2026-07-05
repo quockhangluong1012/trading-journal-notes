@@ -9,7 +9,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#BPR"
-status: developing
+status: seed
 category: PD Array
 timeframes:
   - D1

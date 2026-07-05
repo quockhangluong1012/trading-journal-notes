@@ -11,7 +11,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#BreakerBlock"
-status: developing
+status: seed
 category: PD Array
 timeframes:
   - D1
