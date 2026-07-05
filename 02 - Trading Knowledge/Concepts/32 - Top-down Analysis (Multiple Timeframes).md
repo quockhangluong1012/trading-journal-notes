@@ -12,37 +12,9 @@ tags:
   - "#TopDownAnalysis"
 status: seed
 category: Market Structure
-timeframes:
-  - MN
-  - W1
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[ICT 2022 Model]]"
-importance: 5
-confidence: 1
 last_reviewed:
 created: 2026-06-26
 updated: 2026-07-03
-related_concepts:
-  - "[[12 - Daily Bias]]"
-  - "[[27 - Premium Discount]]"
-  - "[[12 - Dealing Range]]"
-  - "[[19 - Liquidity]]"
-  - "[[16 - Internal & External Range Liquidity (IRL & ERL)]]"
-  - "[[18 - Kill Zones]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[Fair Value Gap]]"
-prerequisites:
-  - "[[12 - Daily Bias]]"
-  - "[[27 - Premium Discount]]"
-  - "[[12 - Dealing Range]]"
-  - "[[19 - Liquidity]]"
-common_mistakes: []
 ---
 
 # Top-down Analysis (Multiple Timeframes)

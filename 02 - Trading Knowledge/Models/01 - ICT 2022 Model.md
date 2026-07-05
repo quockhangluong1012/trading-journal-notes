@@ -27,7 +27,7 @@ models:
   - MMXM
 last_reviewed: 2026-06-22
 created: 2026-06-22
-updated: 2026-07-03
+updated: 2026-07-05
 common_mistakes:
   - "[[Mistake - Skip Liquidity Sweep]]"
   - "[[Mistake - Chase Displacement]]"
@@ -407,6 +407,22 @@ Khái niệm này tổng hợp:
 - [[18 - Kill Zones]]
 - [[02 - AMD]]
 
+**Confluence nâng cao (mục 8):**
+- [[42 - SMT Divergence]]
+- [[40 - Macro Times]]
+- [[41 - Change in State of Delivery]]
+- [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]
+- [[04 - Breaker Block]]
+- [[07 - Unicorn Model]]
+- [[17 - Inverse Fair Value Gap - iFVG]]
+- [[31 - Standard Deviation]]
+- [[15 - Inducement]]
+- [[16 - Internal & External Range Liquidity (IRL & ERL)]]
+- [[10 - Consequent Encroachment (Mean Threshold)]]
+- [[23 - New Day Opening Gap]]
+- [[24 - New Week Opening Gap]]
+- [[43 - Position Sizing]]
+
 ### Sequence mẫu — ICT 2022 Long (đầy đủ)
 ```text
 (1) HTF Bullish Bias + Draw on liquidity = BSL
@@ -433,6 +449,172 @@ Khái niệm này tổng hợp:
 
 > [!note]
 > Đây là mô hình "mẹ"; mọi note khác trong vault là một mắt xích của nó. Khi review một trade, hãy soi nó qua 7 bước này — lỗi thường nằm ở một bước cụ thể bị bỏ qua, và đó là dữ liệu vàng để sửa.
+
+---
+
+## 8. Confluence Stack & POI nâng cao — nâng cấp mô hình
+
+![[ICT2022-Confluence-Stack-Diagram.png]]
+> [!info] Ảnh minh họa cần vẽ/dán tại đây
+> Sơ đồ dạng "cột chồng lớp" (stacked layers): nền dưới cùng là **Core Sequence** (7 bước bắt buộc) vẽ như một nền tảng đặc; phía trên xếp chồng 4 lớp confluence trong suốt, mỗi lớp một màu — (1) **POI Quality** (FVG⊂OB⊂Breaker⊂Unicorn), (2) **Timing** (Killzone → Macro time → NWOG/NDOG), (3) **Cross-market** (SMT divergence NQ/ES, EURUSD/GBPUSD/DXY), (4) **Location/Target** (P/D + Std Dev + ERL). Bên phải là một "cột nhiệt kế" chấm điểm chạy từ C (dưới) → A+ (trên) tương ứng số lớp confluence xếp được. Đây là sơ đồ khái niệm minh họa cách "chồng" xác suất, không phải chart giá thật.
+
+> [!important] Confluence KHÔNG thay thế Core Sequence — nó chỉ CHỒNG THÊM xác suất
+> Mục này giả định setup đã đi qua đủ chuỗi 7 bước ở mục 1–5 (Bias → Sweep → Displacement/MSS → FVG → Entry retrace → Target). **Confluence là lớp phủ (overlay), không phải lớp thay thế.** Không bao giờ dùng "có SMT" hay "đúng macro time" để bù cho một setup **thiếu sweep** — thiếu core là No Trade bất kể bao nhiêu confluence. Confluence chỉ có tác dụng phân loại **A+ vs A vs B** giữa những setup ĐÃ hợp lệ, và quyết định **size**.
+
+Bốn nhóm confluence dưới đây được sắp theo đúng thứ tự bạn nên kiểm tra sau khi core sequence đã pass: **(8.1) chọn & xếp hạng POI → (8.2) xác nhận chéo thị trường → (8.3) tinh chỉnh timing → (8.4) chấm điểm tổng & quyết định size.**
+
+---
+
+### 8.1 — POI Refinement: chọn và xếp hạng điểm vào khi có nhiều lựa chọn
+
+Bước 5 của mô hình gốc chỉ nói "FVG (POI)". Trong thực tế, sau một displacement thường tồn tại **nhiều POI chồng nhau** (FVG, OB, Breaker, iFVG, OTE zone). Vấn đề không phải "có POI không" mà là "**POI nào chất lượng nhất để đặt entry và stop**". Đây là thang phân loại POI theo độ mạnh (từ yếu → mạnh):
+
+| Hạng | Loại POI | Vì sao mạnh hơn | Note liên kết |
+|---|---|---|---|
+| 1 (nền) | **FVG đơn thuần** | Chỉ là imbalance 3 nến — bằng chứng "hết đối ứng", nhưng đứng một mình là POI cơ bản nhất | [[Fair Value Gap]] |
+| 2 | **FVG + Order Block** | FVG nằm chồng lên OB (nến gốc trước displacement) — vừa có imbalance vừa có vùng lệnh tổ chức | [[Order Block]] |
+| 3 | **Breaker Block** | OB đã fail + flip polarity — thêm bằng chứng "đổi trạng thái giao hàng" | [[04 - Breaker Block]] |
+| 4 | **iFVG** | FVG bị close-through và đảo cực — xác nhận delivery đã flip, mạnh cho reversal entry | [[17 - Inverse Fair Value Gap - iFVG]] |
+| 5 (đỉnh) | **Unicorn (Breaker ∩ FVG)** | Breaker và FVG từ cùng displacement **trùng vùng** — hai loại POI độc lập cùng chỉ một mức giá | [[07 - Unicorn Model]] |
+
+> [!tip] Quy tắc chọn POI khi có nhiều cái chồng nhau
+> Ưu tiên POI **có nhiều "lý do" trùng nhau tại cùng một dải giá**, không phải POI gần giá nhất. Thứ tự ưu tiên thực dụng: **Unicorn > iFVG/Breaker có FVG hỗ trợ > FVG+OB > FVG đơn**. Nếu POI hạng cao (Unicorn) nằm sâu hơn một chút nhưng cho R:R vẫn đạt kế hoạch → chọn nó thay vì FVG nông nhưng "trơ trọi".
+
+**Refine entry trong POI bằng CE và OTE (hai lớp lồng nhau):**
+- **CE (Consequent Encroachment) = 50% của FVG** ([[10 - Consequent Encroachment (Mean Threshold)]]): mức tham chiếu chuẩn để đặt limit trong FVG. Giá thường phản ứng quanh CE hơn là mép FVG.
+- **OTE 62–79% (sweet spot 70.5%)** ([[Optimal Trade Entry]]): đo trên toàn nhịp displacement (từ điểm sweep tới đỉnh/đáy displacement).
+- **Confluence entry mạnh nhất = CE của FVG rơi trúng dải OTE 62–79%.** Khi hai lớp này overlap, bạn có một entry vừa "đúng imbalance" (CE) vừa "đúng chiết khấu Fibonacci" (OTE) — đây là điểm vào tối ưu của mô hình.
+
+> [!warning] Bẫy "POI đẹp quá" — liquidity reflexivity
+> Một POI trông "sạch và rõ" (FVG đẹp, OB rõ, equal highs ngay trên) chính là nơi **đám đông ICT cũng nhìn thấy** → cụm stop retail dồn về đó → trở thành pool thanh khoản để smart money quét ngược ([[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]). Đối phó: đừng đặt entry/stop tại mép POI "hiển nhiên"; ưu tiên POI có thêm một **inducement** ([[15 - Inducement]]) bị quét trước nó, và đặt stop ngoài vùng thanh khoản mà đám đông sẽ đặt.
+
+**Phân biệt POI internal vs external (dùng để xếp thứ tự target):**
+- POI/entry thường nằm ở **IRL (internal range liquidity)** — FVG, OB bên trong dealing range.
+- Target đi theo trình tự **external → internal → external**: sau khi sweep ERL, giá lấp IRL (đây là entry), rồi chạy về ERL đối diện ([[16 - Internal & External Range Liquidity (IRL & ERL)]]). Điều này giúp bạn không đặt target "lửng lơ" giữa range.
+
+---
+
+### 8.2 — Multi-market Confirmation: xác nhận chéo thị trường
+
+Đây là lớp confluence mạnh nhất mà mô hình gốc chưa khai thác: **một setup trên một cặp/chỉ số được xác nhận bởi hành vi của cặp/chỉ số tương quan.** Cốt lõi là **SMT Divergence** ([[42 - SMT Divergence]]).
+
+**Các cặp tương quan dùng cho hai thị trường bạn trade:**
+
+| Thị trường trade | Cặp/chỉ số soi kèm | Loại tương quan | Cách đọc SMT |
+|---|---|---|---|
+| **NQ1 / NAS100** | ES / S&P 500 (SPX) | Thuận (dương) | Đáy: NQ tạo **lower low** nhưng ES chỉ **higher low** (không confirm đáy) → **bullish SMT**. Đỉnh: NQ **higher high** nhưng ES **lower high** → **bearish SMT**. |
+| **EURUSD** | GBPUSD | Thuận (dương) | Đáy: một cặp quét đáy mới, cặp kia giữ đáy cao hơn → bullish SMT cho cặp giữ được. |
+| **EURUSD / GBPUSD** | DXY (Dollar Index) | Nghịch (âm) | DXY tạo **higher high** nhưng EURUSD **không** tạo lower low tương ứng → **bullish SMT** cho EURUSD (USD đuối). |
+
+> [!important] SMT chỉ có giá trị TẠI điểm sweep, trong bối cảnh HTF PD Array
+> SMT không phải chỉ báo chạy nền. Nó chỉ đáng tin khi xuất hiện **đúng lúc bước 3 (Sweep) của mô hình** đang diễn ra, tại một HTF POI/PD array. Quy trình ghép SMT vào ICT 2022 Model:
+> 1. Setup tới bước 3: giá đang quét pool thanh khoản (SSL cho Long / BSL cho Short).
+> 2. Mở cặp tương quan **cùng khung thời gian** (M15/M5 cho execution) đặt cạnh nhau.
+> 3. Kiểm tra: tại chính cú sweep đó, cặp kia **có confirm cùng cực trị không**? Nếu **không confirm** (divergence) → đây là bằng chứng cú sweep là "quét thanh khoản rồi quay đầu", không phải breakout thật.
+> 4. SMT divergence + displacement/MSS theo sau = xác nhận sweep chất lượng cao → +điểm confluence.
+
+**Nguyên tắc độ tin cậy:** tương quan càng chặt, SMT càng đáng tin. ES↔NQ và EURUSD↔GBPUSD tương quan rất chặt trong phiên chính → SMT giữa chúng đáng tin. Tương quan yếu đi ngoài killzone hoặc quanh tin riêng lẻ (ví dụ tin chỉ tác động GBP) → giảm trọng số SMT lúc đó.
+
+> [!tip] Reflexivity như một lớp xác nhận ngược
+> Ngoài SMT, hãy tự hỏi câu của [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]: *"Nếu tôi là đám đông ICT, tôi sẽ vào ở đâu và đặt stop ở đâu?"* Nếu cú sweep vừa rồi vừa quét đúng cụm stop đó VÀ có SMT divergence xác nhận → xác suất setup là "bẫy đám đông đã hoàn tất, giờ tới lượt move thật" tăng mạnh.
+
+---
+
+### 8.3 — Timing & Macro Precision: bấm entry đúng "giờ thuật toán"
+
+Mô hình gốc chỉ yêu cầu "trong kill zone". Lớp này siết timing xuống **cửa sổ macro 5–20 phút** — nơi IPDA thực sự repricing ([[40 - Macro Times]], [[18 - Kill Zones]]).
+
+**Ba tầng timing, siết dần:**
+1. **Killzone (tầng thô):** London Open & NY AM là hai KZ chất lượng nhất cho cả NQ1 và FX.
+2. **Macro time (tầng tinh) — giờ ET:** đây là các cửa sổ giá hay sweep/displacement nhất *bên trong* KZ:
+
+| Macro (ET) | Vai trò | Ghi chú thị trường |
+|---|---|---|
+| 02:33–03:00 | London 1 | FX: nhịp London đầu, sweep Asian range |
+| 04:03–04:30 | London 2 (xác suất cao) | FX: nhịp London chính |
+| 08:50–09:10 | NY AM 1 | Trùng quanh tin 08:30, cẩn trọng slippage |
+| **09:50–10:10** | **NY AM 2 — lõi Silver Bullet** | **NQ1: cửa sổ vàng.** FVG entry hình thành ~09:50, distribution fire ~10:10 |
+| 10:50–11:10 | NY AM 3 | Nhịp continuation sau SB |
+| 13:10–13:40 | NY PM 1 | Sau lunch, thanh khoản quay lại |
+| 14:50–15:10 | NY PM 2 | Dễ biến động quanh FOMC |
+
+3. **Silver Bullet (cửa sổ 1 giờ):** NY AM **10:00–11:00 ET** là bản Silver Bullet mạnh nhất — trùng overlap London–NY, dòng lệnh tổ chức Mỹ triển khai sau khi opening range đã lập. Với NQ1 đây là khung ưu tiên số một; setup ICT 2022 đủ chuỗi rơi vào 09:50–10:10 ET = confluence timing mạnh nhất.
+
+> [!info] Đổi giờ Việt Nam (UTC+7)
+> Nhớ trừ DST của Mỹ: khi Mỹ dùng **EDT (mùa hè)**, 10:00 ET ≈ **21:00 VN**; khi Mỹ dùng **EST (mùa đông)**, 10:00 ET ≈ **22:00 VN**. Chi tiết xem bảng trong [[40 - Macro Times]] và [[18 - Kill Zones]].
+
+**Session-open gaps như POI/target bổ sung:**
+- **NDOG — New Day Opening Gap** ([[23 - New Day Opening Gap]]): gap 17:00 ET; giá hay quay lại lấp, dùng làm POI/target intraday.
+- **NWOG — New Week Opening Gap** ([[24 - New Week Opening Gap]]): gap cuối tuần → thứ Hai; là mức tham chiếu tuần quan trọng, đặc biệt cho FX. Nếu FVG entry của bạn trùng NWOG/NDOG → +điểm confluence.
+
+> [!warning] News filter — bắt buộc cho cả hai thị trường
+> Đừng vào entry **sát giờ tin lớn** (NFP, CPI, FOMC, ECB/BoE rate) khi chưa có displacement rõ. Với NQ1, tin 08:30 ET và FOMC 14:00 ET dễ tạo "nến to giả" (volatility, không phải intent — xem khung CLV/wick ở mục 3). Với EURUSD/GBPUSD, tránh entry quanh tin USD (làm nhiễu SMT với DXY) và tin riêng của GBP (phá tương quan EURUSD↔GBPUSD). Quy tắc: có tin đỏ trong 15 phút tới → chờ tin ra + displacement xác nhận rồi mới tính entry.
+
+---
+
+### 8.4 — Confluence Scoring & Risk Filter: chấm điểm và quyết định size
+
+Đây là phần biến toàn bộ mục 8 thành **một quy tắc khách quan, backtest được**. Ý tưởng: tách rõ **GATE (cổng bắt buộc)** khỏi **SCORE (điểm cộng thêm)**.
+
+> [!important] Bước 0 — GATE (không tính điểm, chỉ pass/fail)
+> Nếu **bất kỳ** mục nào dưới đây fail → **No Trade**, dừng luôn, không cần chấm điểm:
+> - [ ] Bias HTF rõ + draw on liquidity xác định
+> - [ ] Có liquidity sweep TRƯỚC displacement (+ reclaim)
+> - [ ] Displacement hợp lệ theo khung CLV/wick/acceptance/FVG ở mục 3 (đạt ≥3/4 tiêu chí)
+> - [ ] Có FVG sạch từ displacement + entry là **retrace** (không chase)
+> - [ ] Entry đúng phía Premium/Discount, đồng hướng bias
+> - [ ] Stop có logic (ngoài sweep / đầu kia FVG) + target là pool rõ + R:R ≥ kế hoạch
+
+**Bước 1 — SCORE: mỗi confluence dưới đây +1 điểm** (chỉ chấm sau khi GATE đã pass):
+
+| # | Confluence | +Điểm | Nguồn |
+|---|---|---:|---|
+| 1 | POI hạng ≥3 (Breaker/iFVG/**Unicorn**), không phải FVG trơ | +1 | 8.1 |
+| 2 | CE của FVG trùng dải OTE 62–79% | +1 | 8.1 |
+| 3 | SMT divergence xác nhận tại điểm sweep | +1 | 8.2 |
+| 4 | CISD xác nhận flip delivery trên LTF | +1 | [[41 - Change in State of Delivery]] |
+| 5 | Entry rơi trong **macro time** (không chỉ killzone) | +1 | 8.3 |
+| 6 | Trùng NWOG/NDOG hoặc HTF PD array (FVG/OB HTF) | +1 | 8.3 |
+| 7 | Target trùng **-2 SD projection** và/hoặc ERL rõ | +1 | [[31 - Standard Deviation]], 8.1 |
+| 8 | Có inducement bị quét trước POI (bẫy đám đông đã xong) | +1 | [[15 - Inducement]] |
+
+**Bước 2 — Quy đổi điểm → hạng → size:**
+
+| Tổng điểm | Hạng | Hành động & Size (theo [[43 - Position Sizing]]) |
+|---:|---|---|
+| ≥ 5 | **A+** | Full size chuẩn **≤0.5%**. Setup ưu tiên cao nhất. |
+| 3–4 | **A** | Size chuẩn hoặc giảm nhẹ (0.3–0.5%). Vào nếu R:R tốt. |
+| 2 | **B** | Half-size (≤0.25%) hoặc bỏ nếu ngoài killzone. |
+| 0–1 | **C** | **No Trade** — chỉ quan sát/ghi chép. GATE pass nhưng thiếu confluence = xác suất chưa đủ để cam kết vốn. |
+
+> [!warning] Ba quy tắc chống lạm dụng điểm số
+> 1. **Không "chế" điểm.** Chỉ tick confluence khi nó thực sự có mặt tại thời điểm ra quyết định, không phải nhìn lại sau khi giá đã chạy.
+> 2. **GATE luôn thắng SCORE.** 8/8 điểm nhưng thiếu một mục GATE = vẫn No Trade.
+> 3. **Điểm cao không được phép phá risk.** A+ vẫn ≤0.5%/lệnh và vẫn tuân thủ daily/weekly loss limit + số lệnh tối đa/ngày. Điểm số quyết định **có vào và size bao nhiêu trong khung cho phép**, không phải cái cớ để nhồi rủi ro.
+
+**Khác biệt thực dụng theo thị trường (áp cho scoring):**
+- **NQ1/NAS100:** confluence #3 (SMT với ES) và #5 (macro 09:50–10:10) là hai điểm dễ đạt và giá trị nhất — ưu tiên săn A+ trong Silver Bullet. Do biến động nhanh, một setup chỉ B (2 điểm) ngoài macro time nên **bỏ** thay vì half-size, vì slippage/wick dễ ăn stop.
+- **EURUSD/GBPUSD:** confluence #3 (SMT EURUSD↔GBPUSD↔DXY) và #6 (NWOG) rất mạnh nhờ thanh khoản sâu và tương quan chặt. Kiên nhẫn chờ đúng phiên handoff London→NY; sweep ở FX "sạch" hơn nên khi có SMT + macro time, độ tin cậy A+ cao.
+
+> [!tip] Gợi ý frontmatter để log & backtest điểm confluence
+> Bổ sung vào frontmatter mỗi trade (nối tiếp mục 13) để Weekly Review thống kê được hiệu quả của từng confluence:
+> ```yaml
+> confluence_score: 5        # tổng điểm 0-8
+> grade: A+                  # A+ | A | B | C
+> poi_type: Unicorn          # FVG | FVG+OB | Breaker | iFVG | Unicorn
+> ce_ote_overlap: true
+> smt_confirm: true          # có SMT tại sweep không
+> cisd_confirm: true
+> in_macro_time: true        # 8.3
+> nwog_ndog_align: false
+> sd_target_align: true      # target trùng -2SD/ERL
+> idm_swept: true
+> correlated_asset: ES       # ES | GBPUSD | DXY
+> ```
+> Sau 30–50 lệnh, thống kê **win rate & average R theo `grade` và theo từng confluence** — bạn sẽ biết confluence nào thực sự tạo edge trên chính dữ liệu của mình, không chỉ theo lý thuyết. Đây là vòng lặp cải thiện dựa trên số liệu mà cả note này hướng tới.
+
+> [!note] Tóm tắt mục 8 trong một câu
+> **Core Sequence quyết định CÓ được vào lệnh không (GATE); Confluence Stack quyết định lệnh đó ĐÁNG bao nhiêu (SCORE → hạng → size). Xác suất được "chồng" chứ không "thay thế".**
 
 ---
 

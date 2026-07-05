@@ -9,7 +9,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#Inducement"
-status: seed
+status: developing
 category: Liquidity
 timeframes:
   - D1
@@ -35,7 +35,7 @@ common_mistakes:
 > **Inducement (IDM) là thanh khoản "mồi" được engineer (cố ý tạo ra) — một swing nhỏ hoặc pool đỉnh/đáy lộ liễu nằm NGAY TRƯỚC POI thật (Order Block / FVG), dùng để dụ retail vào lệnh sớm và cung cấp đúng lượng thanh khoản mà smart money cần để khớp lệnh trước khi giá chạm POI thật.**
 
 > [!important] Nguyên tắc cốt lõi
-> **IDM là thanh khoản phải bị LẤY TRƯỚC khi giá tới POI thật. Một POI hợp lệ gần như luôn có inducement nằm phía trước nó (đáy nhỏ dưới một bullish OB, đỉnh nhỏ trên một bearish OB). Nếu bạn không thấy IDM, hãy nghi ngờ chính cái POI đó.**
+> **IDM là thanh khoản phải bị LẤY TRƯỚC khi giá tới POI thật. Một POI hợp lệ gần như luôn có inducement nằm phía trước nó (đáy nhỏ trên một bullish OB, đỉnh nhỏ dưới một bearish OB). Nếu bạn không thấy IDM, hãy nghi ngờ chính cái POI đó.**
 > Vào lệnh TẠI vùng IDM = bạn chính là thanh khoản. Smart money quét stop của bạn rồi mới đẩy giá tới POI thật.
 
 ---
@@ -88,14 +88,14 @@ IDM là lý do số 1 khiến trader "đúng hướng nhưng vẫn thua": họ n
 
 | Dạng IDM | Vị trí | Loại liquidity bị lấy | Ý nghĩa thực chiến |
 |---|---|---|---|
-| **IDM dưới bullish OB** | Đáy nhỏ phía trên OB tăng | [[30 - Sell-side Liquidity]] (SSL) | Phải quét đáy nhỏ trước → rồi chạm OB → Long |
-| **IDM trên bearish OB** | Đỉnh nhỏ phía dưới OB giảm | [[07 - Buy-side Liquidity]] (BSL) | Phải quét đỉnh nhỏ trước → rồi chạm OB → Short |
+| **IDM trên bullish OB** | Đáy nhỏ phía trên OB tăng | [[30 - Sell-side Liquidity]] (SSL) | Phải quét đáy nhỏ trước → rồi chạm OB → Long |
+| **IDM dưới bearish OB** | Đỉnh nhỏ phía dưới OB giảm | [[07 - Buy-side Liquidity]] (BSL) | Phải quét đỉnh nhỏ trước → rồi chạm OB → Short |
 | **IDM kiểu equal highs/lows** | Cặp đỉnh/đáy bằng nhau lộ liễu trước POI | BSL / SSL cụm dày | Mồi rất "ngon mắt" → càng dễ là bẫy |
 | **IDM trong leg (pullback nhỏ)** | Một pullback nhỏ giữa một displacement leg | Stop của counter-trend | Lấy thanh khoản nhỏ trước khi continuation |
 
 ![[Inducement-Advanced-Types.svg|697]]
 
-> Bốn dạng IDM trực quan: đáy nhỏ dưới bullish OB (SSL), đỉnh nhỏ trên bearish OB (BSL), cụm equal highs/lows "ngon mắt", và pullback nhỏ trong một leg đẩy. Cả bốn đều là nơi để CHỜ bị quét — entry luôn tại POI sau khi mồi bị lấy.
+> Bốn dạng IDM trực quan: đỉnh nhỏ trên bullish OB (SSL), đáy nhỏ dưới bearish OB (BSL), cụm equal highs/lows "ngon mắt", và pullback nhỏ trong một leg đẩy. Cả bốn đều là nơi để CHỜ bị quét — entry luôn tại POI sau khi mồi bị lấy.
 
 > [!tip]
 > Quy tắc ngón tay cái của nhiều trader theo IDM: **"Mọi POI hợp lệ đều có inducement phía trước nó."** Khi quét một OB/FVG để vào lệnh, hãy hỏi: *đâu là đáy/đỉnh nhỏ mà giá sẽ lấy trước khi chạm POI này?* Nếu không tìm được IDM, POI có thể chưa "chín" hoặc bạn đang nhìn sai vùng.
@@ -125,7 +125,7 @@ IDM là lý do số 1 khiến trader "đúng hướng nhưng vẫn thua": họ n
 2. **Một swing nhỏ / pool lộ liễu** nằm GIỮA giá hiện tại và POI thật — đây là IDM.
 3. **IDM "ngon mắt":** đáy/đỉnh rõ, dễ nhận, nhiều khả năng cụm stop loss + pending orders.
 4. **Khoảng cách:** IDM nằm GẦN POI (cùng leg), không phải ở cực range đối diện.
-5. **Logic hướng:** IDM dưới bullish OB là một đáy nhỏ; IDM trên bearish OB là một đỉnh nhỏ.
+5. **Logic hướng:** IDM trên bullish OB là một đáy nhỏ; IDM dưới bearish OB là một đỉnh nhỏ.
 
 ### Phân biệt Inducement vs Structural Sweep (cốt lõi)
 
@@ -221,7 +221,7 @@ Invalid: giá đóng nến xuyên thủng trên OB mà không phản ứng
 
 ### Setup được xem là hợp lệ khi
 - [ ] Có POI HTF hợp lệ đồng hướng bias.
-- [ ] Có IDM nằm logic giữa giá và POI (đáy nhỏ dưới bullish OB / đỉnh nhỏ trên bearish OB).
+- [ ] Có IDM nằm logic giữa giá và POI (đáy nhỏ trên bullish OB / đỉnh nhỏ dưới bearish OB).
 - [ ] Giá **đã quét IDM** (lấy thanh khoản mồi) TRƯỚC khi chạm POI.
 - [ ] Giá phản ứng tại POI (reject) với displacement / MSS LTF.
 - [ ] Entry SAU khi IDM bị quét, không phải tại IDM.
@@ -439,44 +439,6 @@ HTF Bearish Bias
 **Hỏi:** Stop loss nên đặt ở đâu trong setup có IDM?
 **Đáp:** Ngoài đầu kia của POI (sau khi IDM đã bị quét), KHÔNG đặt tại IDM — vì IDM chính là nơi market còn muốn quét.
 
----
-
-## 12. Liên kết với Trade Journal
-
-### Lệnh áp dụng đúng khái niệm này
-```dataview
-TABLE date, symbol, position, pnl, r_multiple
-FROM ""
-WHERE contains(file.outlinks, this.file.link)
-SORT date DESC
-```
-
-### Lệnh mắc lỗi liên quan
-```dataview
-TABLE date, symbol, position, pnl, r_multiple, Mistake
-FROM ""
-WHERE contains(string(Mistake), this.file.name)
-SORT date DESC
-```
-
-> [!note]
-> Nếu vault của bạn có folder riêng như `Trades`, `Journal`, hoặc `Trading Journal`, hãy thay `FROM ""` bằng path tương ứng, ví dụ: `FROM "03 - Trading Journal/Trades"`.
-
-### Gợi ý frontmatter bổ sung cho mỗi trade
-```yaml
-idm_present: true # có inducement trước POI không
-idm_type: SSL # SSL (dưới bullish OB) | BSL (trên bearish OB)
-idm_level: 1.0840 # mức đáy/đỉnh nhỏ làm mồi
-idm_swept_before_entry: true # IDM đã bị quét TRƯỚC khi vào lệnh chưa
-poi_type: OB # OB | FVG — POI thật phía sau IDM
-entry_after_idm: true # entry sau khi IDM bị quét (true) hay tại IDM (false)
-```
-
-> [!tip]
-> Sau 30–50 lệnh, so sánh: lệnh `entry_after_idm: true` vs `false`. Mục tiêu là kiểm chứng bằng dữ liệu rằng kiên nhẫn chờ IDM bị quét (thay vì vào tại IDM) thực sự cải thiện win rate và R trung bình của bạn.
-
----
-
 ## 13. Lesson Learned
 
 ### Bài học chính
@@ -495,23 +457,6 @@ entry_after_idm: true # entry sau khi IDM bị quét (true) hay tại IDM (false
 
 ### Câu nhắc nhở khi trade
 > **"Đáy/đỉnh nhỏ trước POI là mồi nhử — tôi chờ nó bị quét, tôi không phải là thanh khoản."**
-
----
-
-## 14. Mức độ thành thạo
-
-| Tiêu chí | Điểm 1-5 | Ghi chú |
-|---|---:|---|
-| Hiểu định nghĩa |  | Phân biệt được IDM vs POI vs external sweep không? |
-| Nhận diện trên chart |  | Tìm đúng IDM nằm giữa giá và POI không? |
-| Biết khi nào bỏ qua |  | Có dám không-trade khi IDM chưa bị quét không? |
-| Kết hợp với context HTF |  | IDM có được đặt trong narrative bias + premium/discount không? |
-| Áp dụng vào trade thực tế |  | Entry có thực sự xảy ra SAU khi IDM bị quét không? |
-
-**Kế hoạch review tiếp theo:**
-- [ ] Thu thập 20–30 setup gắn tag `[[Inducement]]`.
-- [ ] Review riêng: lệnh vào sau khi IDM bị quét vs vào tại IDM.
-- [ ] Thống kê win rate / R theo `idm_swept_before_entry`.
 
 ---
 

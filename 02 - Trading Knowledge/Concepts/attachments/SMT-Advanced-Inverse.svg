@@ -1,0 +1,20 @@
+<svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="340" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">SMT nghịch đảo — đọc EURUSD với DXY</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Với cặp NGHỊCH: đỉnh của DXY nên khớp đáy của EURUSD. Khi chúng KHÔNG khớp → SMT.</text>
+
+  <rect x="24" y="72" width="352" height="230" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="96" font-size="13" font-weight="700" fill="#166534">EURUSD — tạo HIGHER LOW ✓</text>
+  <polyline points="60,150 110,220 160,180 220,250 280,190 340,225" fill="none" stroke="#166534" stroke-width="2.5"/>
+  <circle cx="220" cy="250" r="6" fill="#166534"/><circle cx="340" cy="225" r="7" fill="none" stroke="#16A34A" stroke-width="2.5"/>
+  <text x="250" y="285" font-size="10" font-weight="700" fill="#166534">đáy 2 CAO hơn (giữ đáy)</text>
+
+  <rect x="392" y="72" width="344" height="230" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="96" font-size="13" font-weight="700" fill="#B91C1C">DXY — tạo HIGHER HIGH (quét BSL)</text>
+  <polyline points="420,240 470,170 520,205 580,140 640,195 705,120" fill="none" stroke="#B91C1C" stroke-width="2.5"/>
+  <circle cx="580" cy="140" r="6" fill="#B91C1C"/><circle cx="705" cy="120" r="7" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="560" y="285" font-size="10" font-weight="700" fill="#B45309">đỉnh 2 CAO hơn (quét đỉnh)</text>
+
+  <rect x="150" y="308" width="460" height="24" rx="5" fill="#DCFCE7"/>
+  <text x="170" y="325" font-size="10.5" font-weight="700" fill="#166534">DXY quét đỉnh nhưng EURUSD KHÔNG phá đáy → bullish SMT cho EURUSD</text>
+</svg>

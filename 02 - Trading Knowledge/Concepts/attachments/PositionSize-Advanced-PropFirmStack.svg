@@ -1,0 +1,44 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="420" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Chồng giới hạn Prop Firm — size phải thấp hơn TẤT CẢ</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Ví dụ tài khoản $100k. Con số minh họa (mỗi firm khác nhau — luôn đọc rule cụ thể). Size của bạn bị giới hạn bởi ràng buộc CHẶT nhất.</text>
+
+  <rect x="24" y="74" width="452" height="326" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Các "trần" thường gặp (tài khoản $100k)</text>
+
+  <rect x="40" y="112" width="420" height="44" rx="6" fill="#FEE2E2"/>
+  <text x="52" y="132" font-size="12" font-weight="700" fill="#B91C1C">Max Overall Loss / Trailing Drawdown: ~$6.000–$10.000</text>
+  <text x="52" y="149" font-size="10.5" fill="#374151">Chạm = FAIL tài khoản. Ràng buộc tối thượng.</text>
+
+  <rect x="40" y="164" width="420" height="44" rx="6" fill="#FEF3C7"/>
+  <text x="52" y="184" font-size="12" font-weight="700" fill="#B45309">Daily Loss Limit: ~$5.000 (5%)</text>
+  <text x="52" y="201" font-size="10.5" fill="#374151">Chạm trong 1 ngày = FAIL. Reset mỗi ngày.</text>
+
+  <rect x="40" y="216" width="420" height="44" rx="6" fill="#DBEAFE"/>
+  <text x="52" y="236" font-size="12" font-weight="700" fill="#1D4ED8">Profit Target: ~$8.000–$10.000 (8–10%)</text>
+  <text x="52" y="253" font-size="10.5" fill="#374151">Cần đạt để pass — nhưng KHÔNG vội, đừng tăng size.</text>
+
+  <rect x="40" y="268" width="420" height="44" rx="6" fill="#EDE9FE"/>
+  <text x="52" y="288" font-size="12" font-weight="700" fill="#6D28D9">Consistency Rule: 1 ngày ≤ ~30–40% tổng lãi</text>
+  <text x="52" y="305" font-size="10.5" fill="#374151">Cấm "1 lệnh ăn cả" → buộc size đều, nhỏ.</text>
+
+  <rect x="40" y="320" width="420" height="60" rx="6" fill="#DCFCE7"/>
+  <text x="52" y="342" font-size="11.5" font-weight="700" fill="#166534">Suy ra size an toàn:</text>
+  <text x="52" y="360" font-size="10.5" fill="#374151">0,5%/lệnh = $500 risk. Cần 10 lệnh thua liên tiếp mới</text>
+  <text x="52" y="375" font-size="10.5" fill="#374151">chạm daily limit → gần như bất khả → an toàn tuyệt đối.</text>
+
+  <rect x="492" y="74" width="244" height="326" rx="8" fill="#F9FAFB" stroke="#E5E7EB"/>
+  <text x="508" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Quy tắc vàng</text>
+  <text x="508" y="126" font-size="11" fill="#374151">1. Tính risk theo % nhỏ</text>
+  <text x="508" y="144" font-size="11" fill="#374151">   (0,25–0,5%), KHÔNG</text>
+  <text x="508" y="162" font-size="11" fill="#374151">   theo daily limit.</text>
+  <text x="508" y="188" font-size="11" fill="#374151">2. Đặt "circuit breaker"</text>
+  <text x="508" y="206" font-size="11" fill="#374151">   cá nhân: dừng sau</text>
+  <text x="508" y="224" font-size="11" fill="#374151">   −2%/ngày hoặc 3 thua.</text>
+  <text x="508" y="250" font-size="11" fill="#374151">3. Trailing DD: tính từ</text>
+  <text x="508" y="268" font-size="11" fill="#374151">   ĐỈNH balance, không</text>
+  <text x="508" y="286" font-size="11" fill="#374151">   phải vốn ban đầu.</text>
+  <text x="508" y="312" font-size="11" fill="#374151">4. Về target thì GIẢM</text>
+  <text x="508" y="330" font-size="11" fill="#374151">   size để bảo vệ, đừng</text>
+  <text x="508" y="348" font-size="11" fill="#374151">   tăng để "về đích nhanh".</text>
+</svg>

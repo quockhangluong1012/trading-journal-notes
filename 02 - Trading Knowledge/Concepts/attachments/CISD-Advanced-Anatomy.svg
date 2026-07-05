@@ -1,0 +1,42 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">CISD — Giải phẫu tín hiệu: giá đóng qua OPEN của chuỗi nến giao hàng</text>
+  <text x="24" y="55" font-size="12.5" fill="#6B7280">Delivery bearish (chuỗi nến giảm liên tiếp) → sweep đáy → nến tăng ĐÓNG CỬA qua open của chuỗi đẩy = Change in State of Delivery.</text>
+
+  <rect x="24" y="72" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- bearish delivery leg -->
+  <rect x="90" y="120" width="2" height="72" fill="#DC2626"/><rect x="82" y="128" width="16" height="52" fill="#DC2626" rx="1"/>
+  <rect x="124" y="150" width="2" height="86" fill="#DC2626"/><rect x="116" y="158" width="16" height="64" fill="#DC2626" rx="1"/>
+  <rect x="158" y="198" width="2" height="92" fill="#DC2626"/><rect x="150" y="206" width="16" height="70" fill="#DC2626" rx="1"/>
+  <rect x="192" y="250" width="2" height="100" fill="#DC2626"/><rect x="184" y="258" width="16" height="78" fill="#DC2626" rx="1"/>
+  <text x="80" y="112" font-size="10.5" font-weight="700" fill="#B91C1C">Chuỗi nến giao hàng GIẢM (bearish delivery leg)</text>
+
+  <!-- CISD line = open of first candle of the push series -->
+  <line x1="82" y1="128" x2="560" y2="128" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="8 4"/>
+  <rect x="565" y="119" width="170" height="20" rx="4" fill="#E0F2FE"/>
+  <text x="573" y="133" font-size="10.5" font-weight="700" fill="#0284C7">CISD level = OPEN nến đầu chuỗi</text>
+
+  <!-- sweep low + reject -->
+  <rect x="226" y="300" width="2" height="96" fill="#16A34A"/><rect x="218" y="336" width="16" height="42" fill="#16A34A" rx="1"/>
+  <circle cx="227" cy="392" r="10" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="200" y="418" font-size="10.5" font-weight="700" fill="#B45309">① Sweep SSL (lấy thanh khoản đáy)</text>
+
+  <!-- reversal candles up -->
+  <rect x="262" y="235" width="2" height="112" fill="#16A34A"/><rect x="254" y="245" width="16" height="92" fill="#16A34A" rx="1"/>
+  <!-- displacement candle closing above CISD line -->
+  <rect x="298" y="100" width="2" height="150" fill="#16A34A"/><rect x="290" y="112" width="16" height="128" fill="#16A34A" rx="1"/>
+  <circle cx="298" cy="118" r="7" fill="#0EA5E9"/>
+  <text x="312" y="98" font-size="11" font-weight="700" fill="#0284C7">② Nến ĐÓNG qua CISD level → CISD xác nhận</text>
+  <text x="312" y="114" font-size="10" fill="#374151">Delivery đã lật từ bán sang mua (buy-side).</text>
+
+  <!-- FVG left by displacement -->
+  <rect x="286" y="240" width="40" height="34" fill="#DCFCE7" stroke="#16A34A" stroke-dasharray="3 3"/>
+  <text x="332" y="262" font-size="10" font-weight="700" fill="#166534">③ FVG do displacement → vùng entry</text>
+
+  <!-- continuation up -->
+  <rect x="334" y="80" width="2" height="70" fill="#16A34A"/><rect x="326" y="90" width="16" height="52" fill="#16A34A" rx="1"/>
+  <rect x="368" y="105" width="2" height="60" fill="#16A34A"/><rect x="360" y="112" width="16" height="46" fill="#16A34A" rx="1"/>
+
+  <text x="40" y="440" font-size="10.5" fill="#6B7280">Điểm mấu chốt: CISD KHÔNG đo bằng swing high; nó đo bằng OPEN của nến đầu tiên trong chuỗi giao hàng cuối cùng → in tín hiệu sớm hơn MSS.</text>
+</svg>

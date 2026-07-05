@@ -1,0 +1,26 @@
+<svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="320" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Bullish SMT vs Bearish SMT</text>
+
+  <rect x="24" y="54" width="352" height="240" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="40" y="80" font-size="13.5" font-weight="700" fill="#166534">Bullish SMT (tại ĐÁY)</text>
+  <text x="40" y="104" font-size="11" fill="#374151">A tạo LOWER LOW (quét SSL);</text>
+  <text x="40" y="122" font-size="11" fill="#374151">B tạo HIGHER LOW (không theo).</text>
+  <polyline points="60,180 100,230 140,200 190,260" fill="none" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="60" y="172" font-size="9.5" fill="#1D4ED8">A: LL</text>
+  <polyline points="220,180 260,225 300,200 340,235" fill="none" stroke="#166534" stroke-width="2"/>
+  <text x="300" y="172" font-size="9.5" fill="#166534">B: HL</text>
+  <rect x="40" y="268" width="320" height="20" rx="4" fill="#DCFCE7"/>
+  <text x="52" y="283" font-size="10.5" font-weight="700" fill="#166534">→ Chờ SSL bị quét, tìm entry LONG</text>
+
+  <rect x="392" y="54" width="344" height="240" rx="8" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="408" y="80" font-size="13.5" font-weight="700" fill="#B91C1C">Bearish SMT (tại ĐỈNH)</text>
+  <text x="408" y="104" font-size="11" fill="#374151">A tạo HIGHER HIGH (quét BSL);</text>
+  <text x="408" y="122" font-size="11" fill="#374151">B tạo LOWER HIGH (không theo).</text>
+  <polyline points="428,240 468,180 508,210 548,150" fill="none" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="520" y="145" font-size="9.5" fill="#1D4ED8">A: HH</text>
+  <polyline points="588,240 628,185 668,215 708,175" fill="none" stroke="#B91C1C" stroke-width="2"/>
+  <text x="680" y="168" font-size="9.5" fill="#B91C1C">B: LH</text>
+  <rect x="408" y="268" width="320" height="20" rx="4" fill="#FEE2E2"/>
+  <text x="420" y="283" font-size="10.5" font-weight="700" fill="#B91C1C">→ Chờ BSL bị quét, tìm entry SHORT</text>
+</svg>

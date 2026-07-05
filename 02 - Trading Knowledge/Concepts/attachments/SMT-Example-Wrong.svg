@@ -1,0 +1,24 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="360" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="16" font-weight="700" fill="#B91C1C">✗ SMT giả — sai cặp tương quan &amp; không có sweep</text>
+
+  <rect x="24" y="50" width="352" height="280" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="74" font-size="12" font-weight="700" fill="#B91C1C">Lỗi 1: so hai tài sản KHÔNG tương quan</text>
+  <text x="40" y="98" font-size="10.5" fill="#374151">Vd đọc SMT giữa NQ và XAUUSD, hoặc</text>
+  <text x="40" y="116" font-size="10.5" fill="#374151">EURUSD và Bitcoin. Tương quan yếu →</text>
+  <text x="40" y="134" font-size="10.5" fill="#374151">"lệch pha" là ngẫu nhiên, vô nghĩa.</text>
+  <polyline points="60,180 110,240 160,200 220,250" fill="none" stroke="#1D4ED8" stroke-width="2"/>
+  <polyline points="240,200 290,180 330,230 360,190" fill="none" stroke="#B45309" stroke-width="2"/>
+  <text x="60" y="300" font-size="10" fill="#6B7280">NQ và Gold không đủ tương quan để so.</text>
+
+  <rect x="392" y="50" width="344" height="280" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="74" font-size="12" font-weight="700" fill="#B91C1C">Lỗi 2: SMT giữa range, không quét pool</text>
+  <text x="408" y="98" font-size="10.5" fill="#374151">SMT chỉ có giá trị tại CỰC TRỊ nơi có</text>
+  <text x="408" y="116" font-size="10.5" fill="#374151">thanh khoản (SSL/BSL, equal H/L). SMT ở</text>
+  <text x="408" y="134" font-size="10.5" fill="#374151">giữa range = nhiễu, không phải tín hiệu.</text>
+  <line x1="410" y1="250" x2="726" y2="250" stroke="#6B7280" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="420" y="245" font-size="9.5" fill="#6B7280">SSL thật (chưa bị chạm)</text>
+  <polyline points="430,150 480,190 530,160 590,200" fill="none" stroke="#1D4ED8" stroke-width="2"/>
+  <polyline points="600,150 650,185 690,165 720,195" fill="none" stroke="#166534" stroke-width="2"/>
+  <text x="430" y="300" font-size="10" fill="#6B7280">Divergence xuất hiện xa pool → bỏ qua.</text>
+</svg>

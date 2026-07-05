@@ -1,0 +1,41 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Unicorn biểu hiện khác nhau theo thị trường</text>
+<text x="24" y="54" font-size="13" fill="#6B7280">Cùng cấu trúc overlap, nhưng độ sạch của displacement & wick khác nhau.</text>
+<rect x="24" y="72" width="230" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="139" y="98" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">NQ1 / NDX</text>
+<rect x="60" y="130" width="160" height="16" fill="#F59E0B" opacity="0.2"/>
+<rect x="60" y="138" width="160" height="20" fill="#7C3AED" opacity="0.28" stroke="#6D28D9" stroke-dasharray="3 2"/>
+<rect x="60" y="150" width="160" height="16" fill="#3B82F6" opacity="0.18"/>
+<text x="60" y="190" font-size="11" fill="#374151">• Overlap sắc nét, 1m/5m sạch</text>
+<text x="60" y="212" font-size="11" fill="#374151">• Displacement dứt khoát</text>
+<text x="60" y="234" font-size="11" fill="#374151">• Killzone NY AM/09:30 mở NYSE</text>
+<text x="60" y="256" font-size="11" fill="#374151">• Rủi ro: nhiều FVG nhỏ chồng</text>
+<text x="60" y="278" font-size="11" fill="#374151">  → dễ chọn nhầm overlap</text>
+<text x="60" y="312" font-size="11" font-weight="700" fill="#B45309">Điều chỉnh: ưu tiên FVG</text>
+<text x="60" y="330" font-size="11" font-weight="700" fill="#B45309">"first & clean" sau MSS.</text>
+<rect x="264" y="72" width="230" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="379" y="98" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">EURUSD / GBPUSD</text>
+<rect x="300" y="130" width="160" height="14" fill="#F59E0B" opacity="0.2"/>
+<rect x="300" y="140" width="160" height="14" fill="#7C3AED" opacity="0.28" stroke="#6D28D9" stroke-dasharray="3 2"/>
+<rect x="300" y="148" width="160" height="14" fill="#3B82F6" opacity="0.18"/>
+<text x="300" y="190" font-size="11" fill="#374151">• Overlap thường mỏng hơn</text>
+<text x="300" y="212" font-size="11" fill="#374151">• Displacement quanh London/NY</text>
+<text x="300" y="234" font-size="11" fill="#374151">• Thanh khoản sâu, sweep sạch</text>
+<text x="300" y="256" font-size="11" fill="#374151">• Rủi ro: range hẹp, overlap dễ</text>
+<text x="300" y="278" font-size="11" fill="#374151">  bị "nuốt" bởi spread</text>
+<text x="300" y="312" font-size="11" font-weight="700" fill="#B45309">Điều chỉnh: tính spread vào</text>
+<text x="300" y="330" font-size="11" font-weight="700" fill="#B45309">CE; ưu tiên overlap ≥ vài pip.</text>
+<rect x="504" y="72" width="232" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="620" y="98" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">XAUUSD</text>
+<rect x="540" y="128" width="160" height="20" fill="#F59E0B" opacity="0.2"/>
+<rect x="540" y="140" width="160" height="26" fill="#7C3AED" opacity="0.28" stroke="#6D28D9" stroke-dasharray="3 2"/>
+<rect x="540" y="156" width="160" height="20" fill="#3B82F6" opacity="0.18"/>
+<text x="540" y="196" font-size="11" fill="#374151">• Overlap rộng, wick dài</text>
+<text x="540" y="218" font-size="11" fill="#374151">• Displacement rất mạnh quanh tin</text>
+<text x="540" y="240" font-size="11" fill="#374151">• Dễ xuyên qua vùng rồi hồi lại</text>
+<text x="540" y="262" font-size="11" fill="#374151">• Rủi ro: stop bị wick quét dù</text>
+<text x="540" y="284" font-size="11" fill="#374151">  hướng đúng</text>
+<text x="540" y="318" font-size="11" font-weight="700" fill="#B45309">Điều chỉnh: nới stop ngoài</text>
+<text x="540" y="336" font-size="11" font-weight="700" fill="#B45309">wick sweep; giảm size.</text>
+</svg>

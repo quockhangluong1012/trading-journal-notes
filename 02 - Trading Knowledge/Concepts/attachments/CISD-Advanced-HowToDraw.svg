@@ -1,0 +1,38 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Cách vẽ CISD line — quy trình 3 bước</text>
+
+  <rect x="24" y="56" width="228" height="216" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="52" cy="86" r="15" fill="#0EA5E9"/><text x="52" y="91" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+  <text x="78" y="84" font-size="12.5" font-weight="700" fill="#1F2937">Xác định chuỗi</text>
+  <text x="78" y="100" font-size="12.5" font-weight="700" fill="#1F2937">giao hàng cuối</text>
+  <text x="40" y="128" font-size="11" fill="#374151">Đoạn nến CÙNG MÀU liên</text>
+  <text x="40" y="144" font-size="11" fill="#374151">tiếp đẩy giá về phía</text>
+  <text x="40" y="160" font-size="11" fill="#374151">thanh khoản (vd chuỗi</text>
+  <text x="40" y="176" font-size="11" fill="#374151">nến đỏ đẩy xuống SSL).</text>
+  <rect x="60" y="196" width="12" height="50" fill="#DC2626"/><rect x="82" y="206" width="12" height="46" fill="#DC2626"/><rect x="104" y="214" width="12" height="46" fill="#DC2626"/>
+
+  <rect x="266" y="56" width="228" height="216" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="294" cy="86" r="15" fill="#0EA5E9"/><text x="294" y="91" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+  <text x="320" y="84" font-size="12.5" font-weight="700" fill="#1F2937">Đánh dấu OPEN</text>
+  <text x="320" y="100" font-size="12.5" font-weight="700" fill="#1F2937">của nến ĐẦU chuỗi</text>
+  <text x="282" y="128" font-size="11" fill="#374151">Kẻ đường ngang tại giá</text>
+  <text x="282" y="144" font-size="11" fill="#374151">mở cửa của nến đầu tiên</text>
+  <text x="282" y="160" font-size="11" fill="#374151">trong chuỗi giao hàng.</text>
+  <text x="282" y="176" font-size="11" fill="#374151">Đây là CISD level.</text>
+  <rect x="302" y="196" width="12" height="50" fill="#DC2626"/>
+  <line x1="296" y1="196" x2="470" y2="196" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="6 3"/>
+  <text x="360" y="190" font-size="10" font-weight="700" fill="#0284C7">CISD level</text>
+
+  <rect x="508" y="56" width="228" height="216" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="536" cy="86" r="15" fill="#16A34A"/><text x="536" y="91" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+  <text x="562" y="84" font-size="12.5" font-weight="700" fill="#1F2937">Chờ nến ngược</text>
+  <text x="562" y="100" font-size="12.5" font-weight="700" fill="#1F2937">ĐÓNG qua line</text>
+  <text x="524" y="128" font-size="11" fill="#374151">Một nến đối hướng đóng</text>
+  <text x="524" y="144" font-size="11" fill="#374151">cửa BODY vượt CISD level</text>
+  <text x="524" y="160" font-size="11" fill="#374151">→ delivery đã đổi trạng</text>
+  <text x="524" y="176" font-size="11" fill="#374151">thái. Wick xuyên KHÔNG tính.</text>
+  <line x1="522" y1="210" x2="700" y2="210" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="6 3"/>
+  <rect x="600" y="188" width="14" height="56" fill="#16A34A"/>
+  <text x="620" y="204" font-size="10" font-weight="700" fill="#166534">close qua line ✓</text>
+</svg>

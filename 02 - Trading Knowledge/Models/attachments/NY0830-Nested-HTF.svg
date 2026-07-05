@@ -1,0 +1,25 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="420" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">08:30 setup phải ĐỒNG HƯỚNG với DOL của khung 15m/H1</text>
+<text x="24" y="54" font-size="13" fill="#6B7280">1m/5m chỉ là trigger; 15m/H1 quyết định phe. Đừng đánh 08:30 ngược DOL lớn.</text>
+<rect x="24" y="72" width="712" height="140" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="40" y="96" font-size="13" font-weight="700" fill="#334155">15m / H1 — bias &amp; draw on liquidity</text>
+<path d="M60 170 Q200 150 340 165 T640 120" stroke="#111827" stroke-width="2" fill="none"/>
+<line x1="60" y1="115" x2="700" y2="115" stroke="#94A3B8" stroke-dasharray="4 3"/>
+<text x="64" y="110" font-size="10.5" fill="#64748B">DOL = BSL phía trên (bias bullish) → 08:30 nên tìm BUY</text>
+<line x1="60" y1="195" x2="700" y2="195" stroke="#94A3B8" stroke-dasharray="4 3"/>
+<text x="64" y="208" font-size="10.5" fill="#64748B">SSL phía dưới = nơi giá raid trước khi đảo lên</text>
+<rect x="24" y="226" width="712" height="178" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="40" y="250" font-size="13" font-weight="700" fill="#334155">1m — sau 08:30, zoom vào để trigger THEO hướng DOL</text>
+<path d="M70 300 L110 300" stroke="#94A3B8"/>
+<text x="70" y="288" font-size="10" fill="#64748B">08:30</text>
+<path d="M120 300 Q170 340 210 348" stroke="#DC2626" stroke-width="2" fill="none"/>
+<text x="150" y="372" font-size="10.5" fill="#B91C1C">Raid SSL (đi ngược tạm)</text>
+<path d="M210 348 Q300 300 360 250 T560 210" stroke="#10B981" stroke-width="2.5" fill="none"/>
+<rect x="360" y="245" width="150" height="24" fill="#3B82F6" opacity="0.16"/>
+<text x="365" y="240" font-size="10" font-weight="700" fill="#1D4ED8">BISI/OB (PD array) → BUY retest</text>
+<text x="360" y="300" font-size="10.5" fill="#374151">MSS lên (đóng trên swing high)</text>
+<text x="540" y="330" font-size="11" font-weight="700" fill="#047857">Target = BSL của DOL 15m ↑</text>
+<path d="M560 210 L640 150" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#h)"/>
+<defs><marker id="h" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#10B981"/></marker></defs>
+</svg>

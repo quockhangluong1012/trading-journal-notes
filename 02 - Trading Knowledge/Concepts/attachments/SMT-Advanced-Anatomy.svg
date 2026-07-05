@@ -1,0 +1,24 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">SMT Divergence — hai tài sản tương quan "lệch pha" tại cực trị</text>
+  <text x="24" y="55" font-size="12.5" fill="#6B7280">Bullish SMT: một chỉ số tạo đáy THẤP hơn (quét SSL) trong khi chỉ số kia tạo đáy CAO hơn (không quét) → phe mạnh đang gom.</text>
+
+  <rect x="24" y="72" width="352" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="96" font-size="13" font-weight="700" fill="#1D4ED8">NQ (yếu hơn) — tạo LOWER LOW</text>
+  <polyline points="60,140 110,200 150,160 200,260 250,190 320,300" fill="none" stroke="#1D4ED8" stroke-width="2.5"/>
+  <line x1="50" y1="260" x2="360" y2="260" stroke="#6B7280" stroke-width="1" stroke-dasharray="4 3"/>
+  <circle cx="200" cy="260" r="6" fill="#1D4ED8"/>
+  <circle cx="320" cy="300" r="7" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="250" y="330" font-size="10.5" font-weight="700" fill="#B45309">đáy 2 THẤP hơn (quét SSL) ✗</text>
+
+  <rect x="392" y="72" width="344" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="96" font-size="13" font-weight="700" fill="#166534">ES (mạnh hơn) — tạo HIGHER LOW</text>
+  <polyline points="420,140 470,200 510,160 560,255 610,190 700,235" fill="none" stroke="#166534" stroke-width="2.5"/>
+  <line x1="410" y1="255" x2="726" y2="255" stroke="#6B7280" stroke-width="1" stroke-dasharray="4 3"/>
+  <circle cx="560" cy="255" r="6" fill="#166534"/>
+  <circle cx="700" cy="235" r="7" fill="none" stroke="#16A34A" stroke-width="2.5"/>
+  <text x="600" y="330" font-size="10.5" font-weight="700" fill="#166534">đáy 2 CAO hơn (không quét) ✓</text>
+
+  <rect x="180" y="356" width="400" height="34" rx="6" fill="#DCFCE7"/>
+  <text x="200" y="378" font-size="11.5" font-weight="700" fill="#166534">SMT divergence → tín hiệu ĐẢO CHIỀU TĂNG (bullish)</text>
+</svg>

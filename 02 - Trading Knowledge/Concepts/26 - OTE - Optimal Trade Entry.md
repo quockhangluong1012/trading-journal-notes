@@ -9,25 +9,11 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#OTE"
-status: seed
+status: developing
 category: Entry Model
-timeframes:
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[01 - ICT 2022 Model|ICT 2022]]"
-importance: 5
-confidence: 1
 last_reviewed: 2026-06-22
 created: 2026-06-22
 updated: 2026-07-03
-common_mistakes:
-  - "[[Mistake - Fib Without Structure]]"
-  - "[[Mistake - Enter Shallow Retrace]]"
-  - "[[Mistake - OTE Against Bias]]"
 ---
 
 # Optimal Trade Entry (OTE)

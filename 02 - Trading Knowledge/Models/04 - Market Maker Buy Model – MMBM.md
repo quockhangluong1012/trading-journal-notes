@@ -341,31 +341,6 @@ Trader thấy giá giảm "đã sâu" nên **mua bắt đáy** giữa sell progr
 - "Giảm sâu" không phải tín hiệu mua; **sweep + reclaim + MSS** mới là tín hiệu.
 - Luôn chờ LRB sau khi đáy đã xác nhận, và luôn kiểm tra khung đánh giá ở mục 3 trước khi tin một đáy là Smart Money Low.
 
----
-
-## 7. Entry model liên quan
-
-Khái niệm này tổng hợp:
-- [[02 - AMD]]
-- [[12 - Daily Bias]]
-- [[19 - Liquidity]]
-- [[30 - Sell-side Liquidity]]
-- [[07 - Buy-side Liquidity]]
-- [[16 - Internal & External Range Liquidity (IRL & ERL)]]
-- [[20 - Liquidity Sweep]]
-- [[21 - Market Structure Shift]]
-- [[Displacement]]
-- [[Fair Value Gap]]
-- [[Order Block]]
-- [[Optimal Trade Entry]]
-- [[27 - Premium Discount]]
-- [[18 - Kill Zones]]
-- [[15 - Inducement]]
-- [[33 - Turtle Soup]]
-- [[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]]
-- [[01 - ICT 2022 Model]]
-- [[06 - Market Maker Sell Model – MMSM]]
-
 ### Sequence mẫu — MMBM (đầy đủ)
 ```text
 (1) Original consolidation + BSL target (đỉnh)

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="300" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">CISD theo khung thời gian — fractal &amp; vai trò</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">CISD là fractal: HTF định hướng, LTF cho entry. Càng lên HTF, CISD càng đáng tin nhưng vào lệnh càng muộn.</text>
+
+  <rect x="24" y="72" width="228" height="200" rx="8" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="40" y="98" font-size="13" font-weight="700" fill="#1D4ED8">H4 / H1 — Bias</text>
+  <text x="40" y="124" font-size="11" fill="#374151">CISD trên HTF xác nhận</text>
+  <text x="40" y="140" font-size="11" fill="#374151">draw on liquidity đã đổi</text>
+  <text x="40" y="156" font-size="11" fill="#374151">hướng. Dùng để CHỌN phe,</text>
+  <text x="40" y="172" font-size="11" fill="#374151">không dùng để entry.</text>
+  <text x="40" y="200" font-size="10.5" font-weight="700" fill="#1D4ED8">Độ tin cậy: ★★★★★</text>
+  <text x="40" y="220" font-size="10.5" fill="#6B7280">Entry giá: muộn</text>
+
+  <rect x="266" y="72" width="228" height="200" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="282" y="98" font-size="13" font-weight="700" fill="#166534">M15 / M5 — Context</text>
+  <text x="282" y="124" font-size="11" fill="#374151">Sau khi HTF cho bias,</text>
+  <text x="282" y="140" font-size="11" fill="#374151">chờ CISD M15/M5 tại POI</text>
+  <text x="282" y="156" font-size="11" fill="#374151">HTF trong killzone → xác</text>
+  <text x="282" y="172" font-size="11" fill="#374151">nhận thao túng kết thúc.</text>
+  <text x="282" y="200" font-size="10.5" font-weight="700" fill="#166534">Độ tin cậy: ★★★★</text>
+  <text x="282" y="220" font-size="10.5" fill="#6B7280">Cân bằng tốt nhất</text>
+
+  <rect x="508" y="72" width="228" height="200" rx="8" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="524" y="98" font-size="13" font-weight="700" fill="#B45309">M1 — Entry</text>
+  <text x="524" y="124" font-size="11" fill="#374151">CISD M1 cho entry sớm,</text>
+  <text x="524" y="140" font-size="11" fill="#374151">giá tốt nhất, stop nhỏ.</text>
+  <text x="524" y="156" font-size="11" fill="#374151">CHỈ dùng khi HTF + M5 đã</text>
+  <text x="524" y="172" font-size="11" fill="#374151">đồng thuận, nếu không = nhiễu.</text>
+  <text x="524" y="200" font-size="10.5" font-weight="700" fill="#B45309">Độ tin cậy: ★★ (đơn lẻ)</text>
+  <text x="524" y="220" font-size="10.5" fill="#6B7280">Cần confluence HTF</text>
+</svg>
