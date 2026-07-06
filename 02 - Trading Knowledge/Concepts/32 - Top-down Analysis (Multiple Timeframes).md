@@ -12,7 +12,7 @@ tags:
   - "#TopDownAnalysis"
 status: seed
 category: Market Structure
-last_reviewed:
+last_reviewed: 2026-07-06
 created: 2026-06-26
 updated: 2026-07-03
 ---
@@ -346,19 +346,6 @@ Khung 3 tầng (HTF/Intermediate/LTF) là chuẩn mực vì nó tối đa hoá c
 **Mô tả:** Sơ đồ chú thích ba tầng HTF → Intermediate → LTF, với câu hỏi tương ứng từng tầng (Bias/Draw → POI/Range → Entry/Timing) và mũi tên đồng thuận xuyên suốt.
 
 ---
-
-## 7. Entry model liên quan
-
-Khái niệm này là **bộ khung chứa** các entry model sau:
-- [[ICT 2022 Model]] — hiện thân trực tiếp của top-down: bias → POI → sweep → MSS → FVG entry.
-- [[12 - Daily Bias]] — sản phẩm của tầng HTF.
-- [[27 - Premium Discount]] / [[12 - Dealing Range]] — định vị giá ở mỗi tầng.
-- [[19 - Liquidity]] / [[16 - Internal & External Range Liquidity (IRL & ERL)]] — draw & target.
-- [[20 - Liquidity Sweep]] → [[21 - Market Structure Shift]] / [[Break of Structure]] — trigger LTF.
-- [[Fair Value Gap]] / [[Order Block]] / [[26 - OTE - Optimal Trade Entry]] — entry array tầng LTF.
-- [[18 - Kill Zones]] — timing cho tầng LTF.
-- [[24 - New Week Opening Gap]] / [[23 - New Day Opening Gap]] — POI/draw thường dùng ở tầng HTF/Intermediate.
-
 ### Sequence mẫu — chuỗi top-down chuẩn
 ```text
 HTF (D1): Daily Bias + Draw on Liquidity + Premium/Discount
@@ -462,29 +449,6 @@ HTF (D1): Daily Bias + Draw on Liquidity + Premium/Discount
 
 ---
 
-## 12. Liên kết với Trade Journal
-
-### Lệnh áp dụng đúng khái niệm này
-```dataview
-TABLE date, symbol, position, pnl, r_multiple
-FROM ""
-WHERE contains(file.outlinks, this.file.link)
-SORT date DESC
-```
-
-### Lệnh mắc lỗi liên quan
-```dataview
-TABLE date, symbol, position, pnl, r_multiple, Mistake
-FROM ""
-WHERE contains(string(Mistake), this.file.name)
-SORT date DESC
-```
-
-> [!note]
-> Nếu vault của bạn có folder riêng như `Trades`, `Journal`, hoặc `Trading Journal`, hãy thay `FROM ""` bằng path tương ứng, ví dụ: `FROM "05 - Live Trading Journal/Trades"`.
-
----
-
 ## 13. Lesson Learned
 
 > [!example] Ghi nhận khi áp dụng thực tế
@@ -510,26 +474,6 @@ SORT date DESC
 
 ### Câu nhắc nhở khi trade
 > **"Khung cao chọn hướng, khung thấp chọn thời điểm — entry chỉ là mảnh khớp cuối cùng của một câu chuyện đã viết xong từ Daily."**
-
----
-
-## 14. Mức độ thành thạo
-
-| Tiêu chí | Điểm 1-5 | Ghi chú |
-|---|---:|---|
-| Hiểu định nghĩa & phân cấp khung |  | Có giải thích 3 tầng trong 30 giây không? |
-| Phân tích đúng chiều (top-down) |  | Có bao giờ bị bottom-up không? |
-| Xác định POI Intermediate |  | Có hay bỏ tầng này không? |
-| Kỷ luật đồng thuận khung |  | Có dám bỏ LTF ngược HTF không? |
-| Tích hợp vào [[ICT 2022 Model]] |  | Quy trình có liền mạch không? |
-| Áp dụng vào trade thực tế |  | Kiểm tra bằng journal thay vì cảm tính? |
-
-**Kế hoạch review tiếp theo:**
-- [ ] Backtest 10–20 setup, ghi rõ ba tầng (HTF/Intermediate/LTF) cho từng cái trên NQ1/NAS100 & EURUSD.
-- [ ] Mỗi phiên: viết bias HTF + DOL **trước khi** mở khung thấp.
-- [ ] Thống kê win rate của setup "đồng thuận 3 tầng" vs "thiếu đồng thuận".
-- [ ] Đối chiếu với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]].
-- [ ] Review lại note này sau 2 tuần, cập nhật `confidence` & `last_reviewed`.
 
 ---
 

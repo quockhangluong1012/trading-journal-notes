@@ -11,30 +11,9 @@ tags:
   - "#VacuumBlock"
 status: seed
 category: PD Array
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-models:
-  - "[[ICT 2022 Model]]"
-importance: 3
-confidence: 1
 last_reviewed:
 created: 2026-06-24
 updated: 2026-07-03
-related_concepts:
-  - "[[21 - Liquidity Void]]"
-  - "[[24 - New Week Opening Gap]]"
-  - "[[Fair Value Gap]]"
-  - "[[10 - Consequent Encroachment (Mean Threshold)]]"
-  - "[[Displacement]]"
-prerequisites:
-  - "[[Fair Value Gap]]"
-  - "[[21 - Liquidity Void]]"
-  - "[[Displacement]]"
-common_mistakes: []
 ---
 
 # Vacuum Block

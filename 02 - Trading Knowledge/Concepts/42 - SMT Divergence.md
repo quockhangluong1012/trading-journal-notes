@@ -12,7 +12,7 @@ tags:
   - trading/study
   - "#confirmation"
   - "#liquidity"
-status: developing
+status: seed
 category: Confirmation
 timeframes:
   - H4

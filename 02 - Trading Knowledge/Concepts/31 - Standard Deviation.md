@@ -10,36 +10,11 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#StandardDeviation"
-status: seed
+status: developing
 category: Time & Price
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[ICT 2022 Model]]"
-importance: 4
-confidence: 1
 last_reviewed:
 created: 2026-06-26
 updated: 2026-07-03
-related_concepts:
-  - "[[19 - Liquidity]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[Fair Value Gap]]"
-  - "[[27 - Premium Discount]]"
-  - "[[12 - Dealing Range]]"
-  - "[[12 - Daily Bias]]"
-  - "[[18 - Kill Zones]]"
-prerequisites:
-  - "[[21 - Market Structure Shift]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[12 - Dealing Range]]"
-common_mistakes: []
 ---
 
 # Standard Deviation
@@ -352,31 +327,6 @@ Vì hai công cụ đo cùng một kiểu bội số nhưng trên hai đoạn th
 
 ---
 
-## 7. Entry model liên quan
-
-- [[ICT 2022 Model]] — sweep → MSS → FVG entry; SD dùng để **đặt target** cho lệnh đã vào.
-- [[20 - Liquidity Sweep]] — tạo manipulation leg để neo SD.
-- [[21 - Market Structure Shift]] — xác nhận hướng expansion trước khi chiếu SD.
-- [[Fair Value Gap]] — vừa là entry array (sau MSS) vừa là confluence cho mức SD target.
-- [[19 - Liquidity]] — các pool (BSL/SSL) là nơi mức SD nên "hạ cánh".
-- [[12 - Dealing Range]] / [[27 - Premium Discount]] — biên range thường trùng mức SD đáng tin.
-- [[12 - Daily Bias]] — xác định hướng để chiếu SD đúng phía.
-
-```text
-[Chuỗi triển khai chuẩn — SD làm target]
-1. HTF: Daily Bias + Dealing Range + đánh dấu draw on liquidity (BSL/SSL/FVG)
-2. Chờ manipulation/Judas leg quét liquidity trong kill zone
-3. Displacement + MSS xác nhận hướng → vào lệnh theo mô hình (sweep+MSS+FVG)
-4. Neo SD vào manipulation leg; chiếu -1/-2/-2.5/-3/-4 SD
-5. Đối chiếu mức SD với liquidity/FVG HTF → chọn target chính (confluence cao nhất)
-6. TP từng phần tại các mức SD; dời SL BE sau -1 SD; runner tới -2.5/-3 SD nếu trending
-```
-
-> [!note]
-> SD ghép tốt nhất với [[ICT 2022 Model]] ở **khâu quản trị lệnh / target**, không phải khâu entry. Entry do sweep + MSS + FVG quyết định; SD chỉ giúp biết chốt lời ở đâu cho hợp lý và khớp với draw on liquidity.
-
----
-
 ## 8. Checklist trước khi áp dụng vào trade
 
 > [!warning]
@@ -440,30 +390,6 @@ Vì hai công cụ đo cùng một kiểu bội số nhưng trên hai đoạn th
   → A5: Target dịch sang mức SD kế tiếp (vd -2 SD phá → kỳ vọng -2.5/-3 SD); projection không "sai", chỉ chuyển mức.
 - **Q6:** Ba lỗi chí mạng khi dùng SD?
   → A6: (1) neo sai swing không sweep; (2) dùng SD làm entry/đặt limit mù; (3) tin mức SD không có confluence.
-
----
-
-## 12. Liên kết với Trade Journal
-
-### Lệnh áp dụng đúng khái niệm này
-```dataview
-TABLE date, symbol, position, pnl, r_multiple
-FROM ""
-WHERE contains(file.outlinks, this.file.link)
-SORT date DESC
-```
-
-### Lệnh mắc lỗi liên quan
-```dataview
-TABLE date, symbol, position, pnl, r_multiple, Mistake
-FROM ""
-WHERE contains(string(Mistake), this.file.name)
-SORT date DESC
-```
-
-> [!note]
-> Nếu vault của bạn có folder riêng như `Trades`, `Journal`, hoặc `Trading Journal`, hãy thay `FROM ""` bằng path tương ứng, ví dụ: `FROM "05 - Live Trading Journal/Trades"`.
-
 ---
 
 ## 13. Lesson Learned
@@ -477,26 +403,6 @@ SORT date DESC
 > - Điều làm đúng: ____
 > - Điều cần sửa: ____
 > - Liên kết tới [[Mistake - ...]] nếu có: ____
-
----
-
-## 14. Mức độ thành thạo
-
-| Tiêu chí | Điểm (1–5) | Ghi chú |
-|---|---:|---|
-| Hiểu định nghĩa & cách chiếu | ____ | SD là target, không phải entry? |
-| Neo đúng manipulation leg | ____ | Có chọn đúng swing đã sweep không? |
-| Đọc confluence của mức SD | ____ | Có đối chiếu liquidity/FVG/PD-array HTF? |
-| Quản trị TP theo SD | ____ | TP từng phần tại -1/-2/-2.5 SD? |
-| Tích hợp vào ICT 2022 Model | ____ | Dùng ở khâu target, không phải entry? |
-| Kỷ luật không trade mù tại SD | ____ | Có chờ cấu trúc xác nhận không? |
-
-**Kế hoạch ôn tập:**
-- [ ] Backtest 15–20 lần: neo SD vào manipulation leg và ghi mức nào giá thực sự dừng (NQ1/NAS100 & EURUSD).
-- [ ] Thống kê tần suất giá dừng tại -1 / -2 / -2.5 / -3 SD theo từng market.
-- [ ] Đối chiếu: mức SD có confluence vs không confluence — mức nào "ăn" hơn.
-- [ ] Cập nhật [[01 - Roadmap]] và [[02 - Skill Metrics]].
-- [ ] Review lại note này sau 2 tuần, cập nhật `confidence` & `last_reviewed`.
 
 ---
 

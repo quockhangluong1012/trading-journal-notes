@@ -11,7 +11,7 @@ tags:
   - trading/study
   - "#market-structure"
   - "#entry-trigger"
-status: developing
+status: seed
 category: Market Structure
 timeframes:
   - H4
