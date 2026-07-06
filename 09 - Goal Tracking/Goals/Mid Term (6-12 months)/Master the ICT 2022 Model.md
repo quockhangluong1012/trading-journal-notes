@@ -45,6 +45,7 @@ tags:
 | Ngày | Tiến độ % | Ghi chú |
 |---|---:|---|
 | 2026-06-23 | 30 | Đã ghi ~20 setup; checklist còn sơ sài. |
+| 2026-07-06 | 30 | 2 setup ICT 2022 Model mới được backtest hôm nay (EURUSD Short 2005-04-12 và 2005-04-13), cả hai Grade A, followed_plan: Yes, đủ chuỗi Sweep → Displacement → MSS → FVG. Tổng setup ghi nhận trong `04 - Backtesting` hiện là 3 — không phải ~20 như `baseline` ghi. Checklist vào/ra lệnh (cột mốc #1) vẫn chưa được viết thành văn bản riêng; cột mốc "50 setup đã ghi nhận" vẫn 0/5. |
 
 ## Liên kết
 - Lộ trình: [[01 - Roadmap]]
