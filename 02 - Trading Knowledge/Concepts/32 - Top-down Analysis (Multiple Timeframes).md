@@ -10,7 +10,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#TopDownAnalysis"
-status: seed
+status: developing
 category: Market Structure
 last_reviewed: 2026-07-06
 created: 2026-06-26

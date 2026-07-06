@@ -22,15 +22,15 @@ tags: [weekly-summary, prop-firm-prep]
 
 ## 📊 Những gì thực sự biết được
 
-| Ngày | Daily Tasks | Daily Summary | Ghi chú |
-|---|---|---|---|
-| 2026-06-29 (Mon) | ❌ | ❌ | Không có dữ liệu |
-| 2026-06-30 (Tue) | ❌ | ❌ | Không có dữ liệu |
-| 2026-07-01 (Wed) | ❌ | ❌ | Không có dữ liệu |
-| 2026-07-02 (Thu) | ❌ | ❌ | Không có dữ liệu |
-| 2026-07-03 (Fri) | ✅ | ✅ | Ngày 1 của hệ thống tự động |
-| 2026-07-04 (Sat) | ✅ | ❌ | Có kế hoạch, không có bản ghi thực tế đã xảy ra |
-| 2026-07-05 (Sun) | ✅ | ❌ | Có kế hoạch, không có bản ghi thực tế đã xảy ra |
+| Ngày             | Daily Tasks | Daily Summary | Ghi chú                                         |
+| ---------------- | ----------- | ------------- | ----------------------------------------------- |
+| 2026-06-29 (Mon) | ❌           | ❌             | Không có dữ liệu                                |
+| 2026-06-30 (Tue) | ❌           | ❌             | Không có dữ liệu                                |
+| 2026-07-01 (Wed) | ❌           | ❌             | Không có dữ liệu                                |
+| 2026-07-02 (Thu) | ❌           | ❌             | Không có dữ liệu                                |
+| 2026-07-03 (Fri) | ✅           | ✅             | Ngày 1 của hệ thống tự động                     |
+| 2026-07-04 (Sat) | ✅           | ❌             | Có kế hoạch, không có bản ghi thực tế đã xảy ra |
+| 2026-07-05 (Sun) | ✅           | ❌             | Có kế hoạch, không có bản ghi thực tế đã xảy ra |
 
 **Từ ngày duy nhất có Daily Summary (07-03):** `backtests_logged: 0`, `trades_logged: 0`, `concepts_reviewed: 1` ([[33 - Turtle Soup]] — có bằng chứng frontmatter), `mistakes_triggered: []`, `net_r_today: 0`.
 
