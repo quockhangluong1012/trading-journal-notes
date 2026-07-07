@@ -45,6 +45,7 @@ tags:
 |---|---:|---|
 | 2026-06-23 | 25 | Đã làm ~15 backtest; cần nhịp độ hàng tuần đều hơn. |
 | 2026-07-06 | 25 | 2 backtest mới log hôm nay (`04 - Backtesting/2026-07-06/`, EURUSD Short, Grade A, R 2.1 và 2.78), phá thế đứt nhịp 5 ngày (07-02 → 07-05). Tổng số backtest thực tế trong toàn vault hiện là **3 note** — không phải ~15 như `baseline` ở trên vẫn ghi; sai lệch này đã được nêu từ 2026-07-03 nhưng `baseline` vẫn chưa được sửa. Cột mốc "50 backtest đã log" vẫn 0/4. |
+| 2026-07-07 | 25 | 2 backtest mới log hôm nay (`04 - Backtesting/2026-07-07/`, EURUSD Long, Grade A, R 2.23 và 2.48), ngày backtest thứ 2 liên tiếp. Tổng số backtest thực tế trong toàn vault hiện là **5 note** — `baseline` ở frontmatter đã được sửa thành "5" hôm nay (khớp thực tế), nhưng mục "Cách đo lường → Hiện tại" ở trên vẫn ghi "~15 backtest", chưa cập nhật theo. Cột mốc "50 backtest đã log" vẫn 0/4. Nhịp thực tế 5/14 ngày ≈ 0,357/ngày, vẫn chậm hơn nhịp cần thiết (0,538/ngày) khoảng 1,5 lần. |
 
 ## Liên kết
 - Lộ trình: [[01 - Roadmap]]
