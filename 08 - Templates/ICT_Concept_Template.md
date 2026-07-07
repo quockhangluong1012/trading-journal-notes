@@ -142,28 +142,9 @@ updated: {{date}}
 - 
 - 
 - 
-
 ---
 
-## 7. Entry model liên quan
-
-Khái niệm này thường kết hợp với:
-- [[20 - Liquidity Sweep]]
-- [[21 - Market Structure Shift]]
-- [[Displacement]]
-- [[Fair Value Gap]]
-- [[Order Block]]
-- [[Optimal Trade Entry]]
-- [[Premium Discount Array]]
-
-### Sequence mẫu
-```text
-HTF Bias → Dealing Range → Premium/Discount → POI → Liquidity Sweep → MSS → Displacement → FVG/OB Entry → Liquidity Target
-```
-
----
-
-## 8. Checklist trước khi áp dụng vào trade
+## 7. Checklist trước khi áp dụng vào trade
 
 > [!warning] Không trade chỉ vì thấy khái niệm xuất hiện
 > Khái niệm ICT chỉ có giá trị khi nằm đúng **context + timeframe + liquidity narrative**.
@@ -221,30 +202,7 @@ HTF Bias → Dealing Range → Premium/Discount → POI → Liquidity Sweep → 
 
 ---
 
-## 12. Liên kết với Trade Journal
-
-### Lệnh áp dụng đúng khái niệm này
-```dataview
-TABLE date, symbol, position, pnl, r_multiple
-FROM ""
-WHERE contains(file.outlinks, this.file.link)
-SORT date DESC
-```
-
-### Lệnh mắc lỗi liên quan
-```dataview
-TABLE date, symbol, position, pnl, r_multiple, Mistake
-FROM ""
-WHERE contains(string(Mistake), this.file.name)
-SORT date DESC
-```
-
-> [!note]
-> Nếu vault của bạn có folder riêng như `Trades`, `Journal`, hoặc `Trading Journal`, hãy thay `FROM ""` bằng path tương ứng, ví dụ: `FROM "03 - Trading Journal/Trades"`.
-
----
-
-## 13. Lesson Learned
+## 12. Lesson Learned
 
 ### Bài học chính
 - 
@@ -260,16 +218,3 @@ SORT date DESC
 > 
 
 ---
-
-## 14. Mức độ thành thạo
-
-| Tiêu chí | Điểm 1-5 | Ghi chú |
-|---|---:|---|
-| Hiểu định nghĩa |  |  |
-| Nhận diện trên chart |  |  |
-| Biết khi nào bỏ qua |  |  |
-| Kết hợp với context HTF |  |  |
-| Áp dụng vào trade thực tế |  |  |
-
-**Kế hoạch review tiếp theo:**  
-

@@ -9,21 +9,11 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#MarketStructureShift"
-status: seed
+status: developing
 category: Market Structure
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[01 - ICT 2022 Model|ICT 2022]]"
-importance: 5
-last_reviewed: 2026-07-01
+last_reviewed: 2026-07-07
 created: 2026-06-22
-updated: 2026-07-02
+updated: 2026-07-07
 common_mistakes:
   - "[[Mistake - MSS not in POI Zone]]"
   - "[[Mistake - MSS Before Liquidity Sweep]]"
@@ -308,45 +298,6 @@ Daily Bias vẫn Bullish, BSL phía trên còn mở. Giá đang ở giữa range
 - Luôn hỏi: “Đã sweep chưa? Có ở POI không? Có displacement không?” trước khi tin một MSS.
 
 ---
-
-## 7. Entry model liên quan
-
-Khái niệm này thường kết hợp với:
-- [[20 - Liquidity Sweep]] — điều kiện tiên quyết đứng TRƯỚC MSS
-- [[05 - BOS - Break of Structure]] — "người anh em thuận chiều": phá thuận trend = BOS
-- [[09 - Change of Character]] — CHoCH (SMC) ≈ MSS (ICT)
-- [[13 - FVG  - Fair Value Gap]] / [[25 - OB - Order Block]] — entry model từ displacement leg
-- [[26 - OTE - Optimal Trade Entry]] — refine điểm vào trong retrace
-- [[12 - Daily Bias]] — MSS chỉ là execution, bias đến từ HTF
-- [[18 - Kill Zones]] — thời điểm MSS đáng tin nhất
-- [[35 - Aggressive Displacement Entry]] — biến thể vào sớm theo CISD
-
-### Sequence mẫu — Long với Bullish MSS
-```text
-HTF Bullish Bias
-→ HTF Dealing Range + Discount location
-→ Giá chạm Bullish HTF/H1 POI
-→ Sweep Sell-Side Liquidity (SSL)
-→ Bullish MSS: phá lower-high bằng displacement (trong POI)
-→ Displacement leg để lại Bullish FVG/OB
-→ Retrace vào FVG/OB (M5/M1) — kết hợp OTE nếu muốn
-→ Stop dưới swept low / swing logic
-→ Target: Internal liquidity trước, External BSL chính sau
-```
-
-### Sequence mẫu — Short với Bearish MSS
-```text
-HTF Bearish Bias
-→ HTF Dealing Range + Premium location
-→ Giá chạm Bearish HTF/H1 POI
-→ Sweep Buy-Side Liquidity (BSL)
-→ Bearish MSS: phá higher-low bằng displacement (trong POI)
-→ Displacement leg để lại Bearish FVG/OB
-→ Retrace vào FVG/OB (M5/M1) — kết hợp OTE nếu muốn
-→ Stop trên swept high / swing logic
-→ Target: Internal liquidity trước, External SSL chính sau
-```
-
 > [!note] CISD — Change in State of Delivery
 > **CISD (Change in State of Delivery)** là sự chuyển trạng thái giao hàng giá: thị trường vừa giao theo một hướng (ví dụ chuỗi nến giảm), rồi đột ngột chuyển sang giao hướng ngược (chuỗi nến tăng quyết đoán). CISD thường được đo bằng việc giá đóng qua điểm mở của loạt nến đẩy gần nhất ngược hướng. CISD **củng cố MSS**: một MSS có CISD đi kèm là dấu hiệu order flow thực sự đã đảo, không chỉ là một wick phá cấu trúc. Khi MSS + CISD + displacement trùng nhau tại POI sau sweep, đó là confirmation chất lượng cao nhất.
 >

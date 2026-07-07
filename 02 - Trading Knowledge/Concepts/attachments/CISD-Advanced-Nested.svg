@@ -1,0 +1,49 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">CISD lồng nhau (nested) &amp; CISD thất bại (failed)</text>
+  <text x="24" y="55" font-size="12.5" fill="#6B7280">HTF CISD chứa nhiều LTF CISD. CISD thất bại khi giá đóng ngược trở lại qua level.</text>
+
+  <!-- LEFT: nested -->
+  <rect x="24" y="74" width="352" height="360" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="96" font-size="12.5" font-weight="700" fill="#166534">CISD lồng nhau (fractal)</text>
+  <!-- HTF CISD line -->
+  <line x1="48" y1="150" x2="352" y2="150" stroke="#0EA5E9" stroke-width="2.5" stroke-dasharray="10 4"/>
+  <rect x="250" y="128" width="100" height="18" rx="3" fill="#E0F2FE"/><text x="256" y="141" font-size="9.5" font-weight="700" fill="#0284C7">HTF CISD (M15)</text>
+  <!-- bearish HTF leg -->
+  <rect x="70" y="160" width="2" height="60" fill="#DC2626"/><rect x="63" y="166" width="14" height="46" fill="#DC2626" rx="1"/>
+  <rect x="98" y="192" width="2" height="80" fill="#DC2626"/><rect x="91" y="200" width="14" height="62" fill="#DC2626" rx="1"/>
+  <rect x="126" y="240" width="2" height="96" fill="#DC2626"/><rect x="119" y="250" width="14" height="74" fill="#DC2626" rx="1"/>
+  <circle cx="127" cy="336" r="8" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+  <!-- LTF nested CISDs (small ticks) -->
+  <line x1="150" y1="300" x2="250" y2="300" stroke="#22C55E" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <line x1="176" y1="250" x2="270" y2="250" stroke="#22C55E" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="150" y="294" font-size="8.5" fill="#16A34A">ltf cisd</text>
+  <text x="176" y="244" font-size="8.5" fill="#16A34A">ltf cisd</text>
+  <!-- reversal up -->
+  <rect x="154" y="262" width="2" height="80" fill="#16A34A"/><rect x="147" y="270" width="14" height="64" fill="#16A34A" rx="1"/>
+  <rect x="182" y="200" width="2" height="90" fill="#16A34A"/><rect x="175" y="212" width="14" height="74" fill="#16A34A" rx="1"/>
+  <rect x="210" y="120" width="2" height="110" fill="#16A34A"/><rect x="203" y="132" width="14" height="92" fill="#16A34A" rx="1"/>
+  <circle cx="211" cy="150" r="6" fill="#0EA5E9"/>
+  <text x="40" y="418" font-size="9.5" fill="#6B7280">Vào LTF CISD → gia tăng khi HTF CISD xác nhận.</text>
+
+  <!-- RIGHT: failed -->
+  <rect x="392" y="74" width="344" height="360" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="96" font-size="12.5" font-weight="700" fill="#B91C1C">CISD thất bại (bẫy)</text>
+  <line x1="416" y1="170" x2="720" y2="170" stroke="#0EA5E9" stroke-width="2.5" stroke-dasharray="10 4"/>
+  <rect x="620" y="148" width="100" height="18" rx="3" fill="#E0F2FE"/><text x="626" y="161" font-size="9.5" font-weight="700" fill="#0284C7">CISD level</text>
+  <!-- bearish leg -->
+  <rect x="438" y="180" width="2" height="70" fill="#DC2626"/><rect x="431" y="186" width="14" height="54" fill="#DC2626" rx="1"/>
+  <rect x="466" y="214" width="2" height="86" fill="#DC2626"/><rect x="459" y="222" width="14" height="66" fill="#DC2626" rx="1"/>
+  <!-- fake reversal closing just above -->
+  <rect x="494" y="150" width="2" height="112" fill="#16A34A"/><rect x="487" y="158" width="14" height="92" fill="#16A34A" rx="1"/>
+  <circle cx="495" cy="165" r="6" fill="#0EA5E9"/>
+  <text x="470" y="132" font-size="9.5" font-weight="700" fill="#16A34A">đóng qua level...</text>
+  <!-- price closes back under -> fail -->
+  <rect x="522" y="160" width="2" height="120" fill="#DC2626"/><rect x="515" y="172" width="14" height="98" fill="#DC2626" rx="1"/>
+  <rect x="550" y="210" width="2" height="130" fill="#DC2626"/><rect x="543" y="222" width="14" height="106" fill="#DC2626" rx="1"/>
+  <rect x="578" y="270" width="2" height="120" fill="#DC2626"/><rect x="571" y="282" width="14" height="98" fill="#DC2626" rx="1"/>
+  <path d="M600 250 l40 0 l0 0" stroke="none"/>
+  <text x="512" y="150" font-size="9.5" font-weight="700" fill="#B91C1C">✘ đóng ngược lại dưới level</text>
+  <text x="408" y="404" font-size="9.5" fill="#6B7280">Invalidation: nến đóng body trở lại phía sai của CISD level</text>
+  <text x="408" y="420" font-size="9.5" fill="#6B7280">→ CISD vô hiệu; thường do thiếu sweep/ngược bias. Cắt lệnh.</text>
+</svg>

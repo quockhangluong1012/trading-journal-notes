@@ -6,7 +6,7 @@ status: In Progress
 priority: Medium
 progress: 25
 metric: Tổng số backtest đã log trong 04 - Backtesting
-baseline: ~15 backtest
+baseline: "5"
 target: 200 backtest đã log
 phase: Phase 2 - Edge Building
 start_date: 2026-06-23

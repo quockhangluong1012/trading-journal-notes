@@ -29,8 +29,6 @@ tags: [daily-summary, prop-firm-prep]
 
 **1 concept có bằng chứng review thật hôm nay:** [[32 - Top-down Analysis (Multiple Timeframes)]] — `last_reviewed` được cập nhật thành `2026-07-06` (nội dung/`updated` vẫn giữ nguyên từ 2026-07-03, tức đây là một lượt ôn lại chứ không phải chỉnh sửa nội dung mới).
 
-**2 concept được checkbox tick nhưng KHÔNG có bằng chứng:** [[31 - Standard Deviation]] (`last_reviewed:` trống, `updated: 2026-07-03`) và [[34 - Vacuum Block]] (`last_reviewed:` trống, `updated: 2026-07-03`) — cả hai vẫn `status: developing`/`status: seed` không đổi, không có dấu hiệu nào cho thấy đã được mở lại và ôn trong ngày 2026-07-06. Không tính các note này vào `concepts_reviewed`.
-
 **Đếm lại toàn bộ 44 concept note** (để đối chiếu với con số "20 seed, 21 developing, 0 tested, 0 mastered, 3 không có status" mà file tasks sáng nay khẳng định là "phát hiện mới hôm nay"): thực tế hiện tại là **19 `seed`, 24 `developing`, 0 `tested`, 0 `mastered`, và đúng 1 note thiếu hẳn field `status`** — [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]] (không phải 41/42/43 như file tasks nêu, ba note đó đã có status từ lúc tạo 2026-07-05). Con số trong file tasks sáng nay không khớp thực tế — chưa rõ do đếm sai hay do có thay đổi giữa lúc viết tasks và lúc viết summary này; cần Khang xác nhận, không suy đoán thêm.
 
 ## 📊 Backtest hôm nay

@@ -23,8 +23,8 @@ entry_price: 1.39086
 stop_loss: 1.38801
 take_profit: 1.39521
 r_planned: 1.53
-r_multiple:
-grade:
+r_multiple: 1.53
+grade: A
 followed_plan: Yes
 tags:
   - backtest
