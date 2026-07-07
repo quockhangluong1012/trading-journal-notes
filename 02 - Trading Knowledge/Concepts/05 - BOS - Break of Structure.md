@@ -10,29 +10,9 @@ tags:
   - "#BOS"
 status: seed
 category: Market Structure
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[01 - ICT 2022 Model|ICT 2022]]"
-markets:
-  - EURUSD
-  - GBPUSD
-  - NDX
-  - XAUUSD
-importance: 5
-confidence: 0
 last_reviewed: 2026-06-22
 created: 2026-06-22
 updated: 2026-07-02
-common_mistakes:
-  - "[[Mistake - Wick Sweep Mistaken for BOS]]"
-  - "[[Mistake - BOS Confused with MSS]]"
-  - "[[Mistake - Chasing After BOS]]"
 ---
 
 # Break of Structure
