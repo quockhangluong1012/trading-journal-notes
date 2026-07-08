@@ -44,6 +44,7 @@ tags:
 | Ngày | Tiến độ % | Ghi chú |
 |---|---:|---|
 | 2026-06-23 | 20 | Lấy điểm xuất phát từ Mistake Frequency Dashboard. |
+| 2026-07-08 | 20 | **Chuyển động thật đầu tiên sau 15 ngày đứng yên.** 3 note lỗi top-3 — rỗng suốt 6 ngày (từ 07-03) — hôm nay đã có nội dung THẬT kèm biện pháp đối phó cụ thể: [[06 - Mistake - Not Have Market Structure Shift]] (244 dòng — "sweep là câu hỏi, MSS là câu trả lời"; 2 biến thể lỗi; rule "No MSS No Entry"), [[09 - Mistake - Wrong daily bias]] (280 dòng, kèm SVG), [[07 - Mistake - Risk more than 0.5% total account]] (287 dòng). Việc này **mở khoá cột mốc #2** ("Viết biện pháp đối phó cho từng lỗi") vốn bị chặn từ 07-03. Cột mốc #1 ("Xác định top-3 từ Mistake Database") cũng đã có đủ bằng chứng (top-3 hiện tại: 06=14 lần, 09=7 lần, 07=5 lần trên trade live). **Đề nghị tick cột mốc #1 + #2** và chỉnh `progress` cho khớp. Lưu ý: tần suất lỗi live-trade CHƯA đổi (không có lệnh live hôm nay; lỗi #1 tái xuất hôm nay chỉ trong backtest, không tính vào [[02 - Mistake Frequency Dashboard]]). |
 
 ## Liên kết
 - Lộ trình: [[01 - Roadmap]]
