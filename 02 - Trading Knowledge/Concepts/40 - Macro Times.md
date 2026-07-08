@@ -50,8 +50,8 @@ prerequisites:
   - "[[13 - FVG  - Fair Value Gap]]"
   - "[[12 - Daily Bias]]"
 common_mistakes:
-  - "[[Mistake - Enter before liquidity sweep]]"
-  - "[[Mistake - Entry When MSS not in POI Zone]]"
+  - "[[02 - Mistake - Enter before liquidity sweep]]"
+  - "[[03 - Mistake - Entry When MSS not in POI Zone]]"
 ---
 
 # Macro Times

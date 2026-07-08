@@ -46,7 +46,7 @@ prerequisites:
   - "[[19 - Liquidity]]"
   - "[[12 - Daily Bias]]"
 common_mistakes:
-  - "[[Mistake - Enter before liquidity sweep]]"
+  - "[[02 - Mistake - Enter before liquidity sweep]]"
 ---
 
 # SMT Divergence

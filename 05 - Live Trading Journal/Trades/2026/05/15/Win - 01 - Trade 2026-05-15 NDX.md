@@ -16,7 +16,7 @@ pnl: 105
 r_multiple:
 risk_percent: 5%
 mistakes:
-  - "[[Mistake - Risk more than 0.5% total account]]"
+  - "[[07 - Mistake - Risk more than 0.5% total account]]"
 tags:
 planned_rr: 1.92
 ---

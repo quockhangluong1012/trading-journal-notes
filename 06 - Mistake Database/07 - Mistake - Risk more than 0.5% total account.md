@@ -1,0 +1,287 @@
+---
+type: mistake
+category: risk
+severity: critical
+related_model: ICT 2022
+frequency: 2
+status: active
+tags:
+  - trading/ict/mistake
+  - trading/review
+  - trading/risk
+created: 2026-06-19
+updated: 2026-07-08
+---
+
+# Mistake - Risk more than 0.5% total account
+
+> [!summary] Tóm tắt 1 câu
+> Risk vượt quá 0.5% equity trên một lệnh — dù bằng lot quá khổ, SL bị nới rộng mà không giảm size, gồng thêm vào lệnh đang thua, hay stack các vị thế tương quan cao cùng lúc — là con đường nhanh nhất để một chuỗi thua hoàn toàn bình thường (thống kê) biến thành một lần bị loại khỏi challenge FTMO/The5ers.
+
+> [!danger] Nguyên tắc cốt lõi
+> 0.5% không phải là con số "an toàn cho có" — nó là tham số được tính toán để một chuỗi 8-10 lệnh thua liên tiếp (điều **sẽ** xảy ra với bất kỳ edge nào, kể cả edge dương) vẫn nằm trong daily loss limit, và một chuỗi ~20 lệnh thua vẫn nằm trong max loss limit. Vượt 0.5% không làm bạn "kiếm nhanh hơn" — nó chỉ rút ngắn khoảng cách từ một ngày xấu bình thường đến việc mất tài khoản.
+
+---
+
+## 1. Mô tả lỗi
+
+Đây là lỗi risk quản lý nghiêm trọng nhất trong toàn bộ vault, vì nó không cần sai về phân tích (bias, entry, cấu trúc) vẫn có thể phá hủy tài khoản chỉ bằng cách vi phạm một con số duy nhất: **$ risk trên mỗi lệnh vượt quá 0.5% equity**. Lỗi này có 4 hình thái, thường xuất hiện độc lập nhưng cũng hay cộng dồn với nhau:
+
+1. **Lot quá khổ (oversized lot):** vào size lớn hơn công thức cho phép vì "cảm thấy chắc ăn" (high conviction), bỏ qua việc tính toán từ khoảng cách SL.
+2. **SL rộng hơn nhưng giữ nguyên lot:** kế hoạch ban đầu là SL 20 điểm với lot X, nhưng khi giá không cho phép đặt SL sát như vậy, trader dời SL ra 35-40 điểm mà **không** tính lại lot — $ risk tăng tỷ lệ thuận với SL mới.
+3. **Gồng lệnh thua (adding to losers):** thêm vị thế cùng hướng vào một lệnh đang âm để "trung bình giá", với hy vọng giá quay đầu — biến một lệnh 0.5% ban đầu thành 1%, 1.5% hoặc hơn trên cùng một hướng sai.
+4. **Stack correlated exposure:** mở nhiều lệnh "0.5% mỗi lệnh" trên các instrument tương quan cao cùng lúc (NAS100 + US30, EURUSD + GBPUSD) — trên giấy tờ mỗi lệnh đúng luật, nhưng rủi ro tổng hợp gần như một lệnh 1% duy nhất vì chúng di chuyển cùng chiều.
+
+Điểm chung của cả 4 hình thái: trader luôn có thể tự biện minh rằng "về mặt kỹ thuật tôi vẫn tuân thủ 0.5%" trong khi $ risk thực tế đã vượt xa mức đó.
+
+![[OverRisk-Sec-01-MoTa.svg|760]]
+*Sơ đồ: 4 con đường phá vỡ trần 0.5%/lệnh và cách chúng cộng dồn thành rủi ro tổng vượt cap.*
+
+---
+
+## 2. Biểu hiện & Dấu hiệu nhận biết
+
+| Dấu hiệu | Mức độ cảnh báo |
+|---|---|
+| "Setup này chắc ăn quá, size gấp đôi thôi" | Đỏ |
+| Dời SL rộng hơn kế hoạch nhưng không bấm lại lot size | Đỏ |
+| Vào thêm lệnh để "trung bình giá" khi đang âm | Đỏ |
+| Mở cùng lúc NAS100 + US30, hoặc EURUSD + GBPUSD cùng hướng | Amber |
+| "Risk creep" sau vài lệnh thắng liên tiếp — cảm giác "chơi bằng tiền của thị trường" | Amber |
+| Revenge sizing — tăng size để "gỡ lại" lệnh vừa thua | Đỏ |
+| Không biết chính xác $ risk trước khi bấm lệnh (chỉ biết "khoảng khoảng") | Đỏ |
+
+Checklist nhận diện nhanh trước khi bấm lệnh:
+
+- [ ] Tôi đã tính $ risk chính xác từ StopDistance và xác định lot size tương ứng chưa, hay đang áng chừng?
+- [ ] Nếu SL phải rộng hơn dự kiến, tôi đã **giảm lot** để giữ nguyên $ risk chưa?
+- [ ] Tôi có đang mở cùng lúc một lệnh tương quan cao (NAS100/US30, EURUSD/GBPUSD, XAUUSD/DXY) không?
+- [ ] Đây có phải là revenge sizing hay "chơi bằng tiền của thị trường" sau chuỗi thắng không?
+- [ ] Tôi có đang thêm size vào một lệnh đang âm để trung bình giá không?
+
+![[OverRisk-Sec-02-BieuHien.svg|760]]
+*Sơ đồ: các tell cảnh báo khi risk thực tế (từng lệnh hoặc cộng dồn) vượt 0.5%.*
+
+---
+
+## 3. Cơ chế & Vì sao nguy hiểm
+
+### Position sizing — công thức bắt buộc phải thuộc lòng
+
+```
+PositionSize = (AccountEquity × RiskPercent) / (StopDistance × ValuePerPoint hoặc ValuePerPip)
+```
+
+**Ví dụ 1 — NAS100:** Equity $10,000, risk 0.5% = $50. SL kế hoạch 25 điểm. Value/điểm ≈ $10 cho mỗi 1.0 lot (tức $1/điểm cho mỗi 0.1 lot).
+
+```
+Size = $50 / (25 điểm × $10/điểm) = $50 / $250 = 0.2 lot
+```
+
+Nếu cấu trúc thị trường buộc SL phải rộng ra 40 điểm để hợp lệ (dưới swing low thật, không phải SL "đoán"), size **phải giảm**:
+
+```
+Size mới = $50 / (40 × $10) = 0.125 lot (làm tròn xuống theo bước lot broker cho phép)
+```
+
+Đây chính là điểm phân biệt trader kỷ luật và trader phá vỡ 0.5%: **không bao giờ giữ nguyên lot khi SL nới rộng — luôn tính lại size để $ risk cố định.**
+
+**Ví dụ 2 — EURUSD:** Equity $10,000, risk 0.5% = $50. SL kế hoạch 15 pips. Giả sử (dùng số tròn để minh họa, số thực tế phụ thuộc broker/account currency): $1/pip cho mỗi micro lot (0.01 lot) trên tài khoản của bạn.
+
+```
+Size = $50 / (15 pip × $1/pip) = 3.33 → làm tròn XUỐNG 3 micro lot (0.03 lot)
+```
+
+*Ghi chú kỹ thuật:* theo chuẩn thị trường phổ biến, 1 lot chuẩn EURUSD ≈ $10/pip, 1 mini lot (0.1) ≈ $1/pip, 1 micro lot (0.01) ≈ $0.1/pip — hãy luôn kiểm tra contract specification thật của broker trước khi tính, nguyên tắc công thức không đổi dù $/pip khác nhau. **Luôn làm tròn xuống**, không bao giờ làm tròn lên để "cho đẹp số lot".
+
+### Drawdown & risk-of-ruin — vì sao 0.5% không phải là sự thận trọng thái quá
+
+Một chuỗi thua liên tiếp là **hiện tượng thống kê bình thường**, kể cả với một edge dương rõ ràng. Với win rate 45-50% (khá thực tế cho một discretionary edge như ICT 2022), xác suất gặp một chuỗi 6-10 lệnh thua liên tiếp trong vài trăm lệnh là rất cao — đây không phải dấu hiệu edge bị hỏng, mà là variance tự nhiên. Vấn đề là: **prop firm không quan tâm bạn có edge dương về lâu dài hay không — họ chỉ nhìn drawdown tức thời.**
+
+Bảng dưới đây tính equity còn lại sau N lệnh thua liên tiếp, với size được tính lại theo equity hiện tại sau mỗi lệnh (equity-based sizing, đúng chuẩn compounding):
+
+| N lệnh thua | Equity @ 0.5%/lệnh | Equity @ 1%/lệnh | Equity @ 2%/lệnh |
+|---|---|---|---|
+| 1 | $9,950 | $9,900 | $9,800 |
+| 3 | $9,850.75 | $9,702.99 | $9,411.92 ⚠️ **breach daily** |
+| 5 | $9,752.49 | $9,509.90 | $9,039.21 |
+| 6 | $9,703.73 | $9,414.80 ⚠️ **breach daily** | $8,858.43 🔴 **breach max** |
+| 10 | $9,511.11 | $9,043.82 | $8,170.73 (giả định nếu bị ép tiếp tục) |
+| 11 | $9,463.55 ⚠️ **breach daily** | $8,953.38 🔴 **breach max** | $7,847.17 |
+| 15 | $9,275.69 | $8,600.59 | $7,385.70 |
+| 20 | $9,046.09 | $8,179.07 | $6,676.09 |
+| 21 | $9,000.86 🔴 **≈ breach max** | — | — |
+
+*Ngưỡng FTMO 10K: daily loss 5% = $500 (so với balance đầu ngày, reset mỗi ngày); overall max loss 10% = $1,000 (tính xuyên suốt, không reset).*
+
+Đọc bảng này theo đúng ngữ cảnh: **daily loss limit** chỉ bị vi phạm nếu chuỗi thua xảy ra **trong cùng một ngày giao dịch** (vì nó so với balance đầu ngày và reset hàng ngày); **max loss limit** thì cộng dồn xuyên suốt toàn bộ challenge, không quan tâm chuỗi thua trải dài bao nhiêu ngày. Với logic đó:
+
+- **Ở 2% risk:** chỉ cần một ngày xấu với 3 lệnh thua liên tiếp là đã phá vỡ daily limit; 6 lệnh thua (có thể chỉ trong 1-2 ngày) là phá vỡ luôn max loss — challenge kết thúc.
+- **Ở 1% risk:** cần một ngày cực xấu với 6 lệnh thua để chạm daily limit; nhưng chỉ cần tổng cộng 11 lệnh thua (có thể trải qua vài ngày) để phá vỡ max loss — biên độ an toàn vẫn mỏng.
+- **Ở 0.5% risk:** cần tới ~10-11 lệnh thua **trong cùng một ngày** mới chạm daily limit (kịch bản gần như không xảy ra với kỷ luật entry hợp lý), và cần ~20-21 lệnh thua cộng dồn mới chạm max loss — đủ biên độ để một chuỗi thua thống kê bình thường không đồng nghĩa với việc bị loại.
+
+![[OverRisk-Sec-03-CoChe.svg|760]]
+*Sơ đồ: equity curve so sánh 0.5% / 1% / 2% qua một chuỗi thua liên tiếp — 2% phá vỡ daily limit trong ~3 lệnh và max loss trong ~6 lệnh, trong khi 0.5% vẫn an toàn xuyên suốt.*
+
+### Correlation — hai lệnh 0.5% có thể là một lệnh 1%
+
+Rủi ro không chỉ đến từ một lệnh đơn lẻ mà từ **rủi ro tổng hợp** khi các vị thế di chuyển cùng chiều:
+
+- **NAS100 & US30:** cả hai đều là chỉ số Mỹ, correlation thường ở mức 0.85-0.95. Long cả hai cùng lúc gần như là nhân đôi cùng một cược.
+- **EURUSD & GBPUSD:** cùng chung "chân" USD, correlation thường 0.7-0.9. Một tin tức USD mạnh làm cả hai cặp di chuyển cùng hướng ngược lại vị thế của bạn cùng lúc.
+- **XAUUSD & DXY:** quan hệ nghịch biến rõ rệt — long XAUUSD về bản chất là một cược ngược chiều với USD, tương tự như short một rổ USD. Nếu đồng thời short USD-pair khác, bạn đang cộng dồn cùng một luận điểm vĩ mô hai lần.
+
+**Quy tắc cap:** khi mở từ 2 vị thế trở lên trên các instrument có correlation > 0.7, coi tổng rủi ro của nhóm đó bị giới hạn ở 0.5% aggregate — ví dụ chia đều 0.25%/lệnh, hoặc tốt hơn là chỉ chọn lệnh có conviction cao nhất trong nhóm và bỏ qua các lệnh còn lại.
+
+---
+
+## 4. Ví dụ minh họa
+
+### ✅ Đúng
+
+NAS100 Long, equity $10,000, risk cố định 0.5% = $50. Size được tính từ SL thật (dưới swing low hợp lệ), không phải từ "cảm giác". Khi SL buộc phải rộng ra giữa chừng phân tích, size được tính lại ngay để giữ nguyên $50. Muốn thêm US30 Long cùng hướng — tổng rủi ro nhóm correlated bị cap ở 0.5%, không phải 0.5% × 2. Circuit breaker (dừng sau 2 lệnh thua liên tiếp hoặc -1% ngày) đã được viết ra từ trước.
+
+![[OverRisk-Example-Correct.svg|760]]
+*Sơ đồ: risk 0.5% cố định, size tính từ SL, correlated exposure bị cap, circuit breaker đặt sẵn.*
+
+**Vì sao đúng:** $ risk luôn cố định ở 0.5% bất kể lot size, SL rộng/hẹp, hay số lượng lệnh đang mở — công thức luôn được áp dụng, không có ngoại lệ cho "conviction cao". Correlated exposure được cap chủ động thay vì cộng dồn vô tình. Circuit breaker được quyết định trước khi cảm xúc có cơ hội chi phối, nên một chuỗi thua bình thường (thống kê) — như bảng ở mục 3 cho thấy — không biến thành một lần bị loại khỏi challenge.
+
+### ❌ Sai
+
+Cùng setup NAS100 Long nhưng "cảm thấy chắc ăn quá" nên risk 2% = $200 thay vì $50. Giữa chừng, giá chạy qua SL dự kiến, trader dời SL rộng ra nhưng **giữ nguyên lot** — $ risk thực tế còn cao hơn $200. Đồng thời mở thêm US30 Long "vì cùng xu hướng" — correlation ~0.9 khiến rủi ro tổng hợp gần gấp đôi một vị thế 2% đơn lẻ. Không có circuit breaker nào được đặt trước.
+
+![[OverRisk-Example-Wrong.svg|760]]
+*Sơ đồ: risk 2% "chắc ăn", SL bị nới rộng mà không giảm size, double-up correlated không kiểm soát.*
+
+**Bài học:** Bias đúng và setup "đẹp" không bao giờ là lý do hợp lệ để tăng risk — chúng không làm giảm variance hay xác suất một chuỗi thua bình thường xảy ra. Chỉ cần 3 lệnh thua liên tiếp ở 2% là đã đủ phá vỡ daily loss limit của FTMO; cộng thêm SL bị nới rộng không tính lại và correlated exposure không kiểm soát, con số thiệt hại thực tế thường tệ hơn nhiều so với "$200 trên giấy".
+
+---
+
+## 5. Kiến thức nâng cao (Advanced)
+
+![[OverRisk-Advanced-RiskOfRuin.svg|760]]
+*Sơ đồ: % drawdown sau N lệnh thua liên tiếp ở 0.5% / 1% / 2% — 2% chạm cả daily lẫn max limit trong vài lệnh đầu tiên.*
+
+### 5.1. Risk of ruin & vì sao 0.5% cố tình sub-Kelly
+
+Công thức Kelly criterion cho cỡ cược tối ưu để tối đa hóa tăng trưởng kép dài hạn: `f* = (b×p − q) / b`, với `b` = tỷ lệ RR trung bình, `p` = win rate, `q = 1 − p`. Ví dụ với một backtest cho thấy win rate 45%, RR trung bình 2.5: `f* = (2.5×0.45 − 0.55) / 2.5 = 0.575/2.5 ≈ 23%`. Ngay cả **quarter-Kelly** (25% của Kelly đầy đủ) cũng đã là ~5.75% — cao hơn 0.5% tới hơn 11 lần.
+
+Vì sao vẫn chọn 0.5% thay vì một con số gần Kelly hơn?
+
+1. **Kelly giả định edge đã biết chính xác và ổn định.** Một discretionary edge (đọc cấu trúc, POI, bias bằng mắt) luôn có sai số ước lượng lớn — win rate và RR thực tế trên forward test gần như luôn khác backtest.
+2. **Kelly chấp nhận drawdown ngắn hạn lớn để đổi lấy tăng trưởng dài hạn tối ưu** — điều này hợp lý khi "ruin" là vô hạn (bạn có thể chờ hồi phục). Nhưng prop firm tạo ra một **rào cản ruin nhân tạo và tức thời**: chạm 10% là bị loại ngay lập tức, không quan tâm edge của bạn có thể phục hồi trong 500 lệnh tiếp theo hay không.
+3. Vì rào cản này cứng và gần (chỉ vài chục lệnh trong evaluation), bài toán tối ưu không còn là "tối đa hóa tăng trưởng kép dài hạn" mà là "tối thiểu hóa xác suất chạm rào cản trong N lệnh của kỳ đánh giá" — bài toán này đòi hỏi risk **thấp hơn Kelly rất nhiều**, không phải gần Kelly.
+
+0.5% vì vậy không phải là "thận trọng cho có" — nó là lựa chọn có tính toán để edge chưa được xác nhận chắc chắn vẫn sống sót qua sai số ước lượng và variance tự nhiên trong giới hạn cứng của prop firm.
+
+### 5.2. Correlation-adjusted risk & exposure cap
+
+Rủi ro cộng dồn cần được nhìn theo **nhóm tương quan**, không theo từng lệnh riêng lẻ. Quy tắc thực dụng: liệt kê các nhóm correlated chính bạn hay giao dịch (Indices: NAS100/US30/SP500; USD-pairs: EURUSD/GBPUSD/AUDUSD; Metals vs DXY: XAUUSD/XAGUSD nghịch biến với USD) và áp dụng cap: **tổng risk mở đồng thời trong một nhóm correlation > 0.7 không vượt quá 0.5% aggregate**, không phải 0.5% nhân với số lệnh. Nếu hệ thống giao dịch của bạn thực sự cần vào nhiều lệnh trong cùng nhóm, hãy coi chúng như MỘT vị thế duy nhất khi tính size.
+
+### 5.3. Daily & weekly loss limits, circuit breakers
+
+Risk per trade đúng chuẩn (0.5%) là điều kiện cần nhưng chưa đủ — cần thêm các circuit breaker cấp cao hơn:
+
+- **Circuit breaker ngày:** dừng giao dịch ngay khi (a) thua 2 lệnh liên tiếp trong ngày, hoặc (b) equity ngày giảm -1%. Đây là "phanh khẩn cấp" trước khi tilt khiến bạn phá vỡ chính rule 0.5%.
+- **Circuit breaker tuần:** nếu tuần đang -2% equity, giảm risk per trade xuống 0.25% cho phần còn lại của tuần hoặc tạm dừng, thay vì cố "gỡ" bằng cách tăng risk.
+- Các rule này **phải được viết ra và cam kết trước** khi vào lệnh đầu tiên trong ngày/tuần — quyết định giữa lúc đang thua luôn bị cảm xúc chi phối.
+
+### 5.4. Sizing off backtest — dùng chuỗi thua & drawdown lịch sử của chính bạn
+
+0.5% là điểm khởi đầu hợp lý, nhưng nên được hiệu chỉnh dựa trên dữ liệu backtest thực tế của chính hệ thống (xem `04 - Backtesting`). Nếu backtest cho thấy chuỗi thua dài nhất từng ghi nhận là 8 lệnh liên tiếp, và bạn muốn chuỗi đó (nếu lặp lại) chỉ tiêu tốn tối đa 60% daily loss budget ($500 × 0.6 = $300) làm biên an toàn:
+
+```
+risk_max ≈ SafeBudget / LongestLosingStreak = $300 / 8 ≈ $37.5/lệnh ≈ 0.375% equity
+```
+
+Con số này **thấp hơn cả 0.5%** — cho thấy 0.5% không phải là mức trần tuyệt đối miễn nhiễm với mọi kịch bản; nếu chuỗi thua thật của hệ thống dài hơn giả định, cần hạ risk thấp hơn nữa hoặc siết chặt circuit breaker thay vì tin tưởng mù quáng vào "0.5% là đủ an toàn".
+
+### 5.5. Mô hình "one good trade" — giảm áp lực tâm lý phải tăng size
+
+Thay vì nghĩ "lệnh này phải thắng để bù cho những lệnh trước", hãy coi **mỗi lệnh là một sự kiện độc lập**, đóng góp một phần nhỏ ($50 ở ví dụ NAS100) vào kỳ vọng dài hạn của toàn bộ hệ thống. Khi tư duy chuyển từ "lệnh này quan trọng" sang "đây chỉ là một trong hàng trăm lệnh good trade tôi sẽ thực hiện", áp lực phải tăng size để "làm cho nó đáng giá" biến mất — đây là cơ chế tâm lý trực tiếp chống lại risk creep và revenge sizing.
+
+### 5.6. Equity-based vs balance-based sizing — vì sao khác biệt với The5ers
+
+- **FTMO 10K:** daily loss limit so với **balance cố định tại đầu ngày** (giờ reset theo server time), không di chuyển trong ngày dù equity thả nổi tăng/giảm. Overall max loss 10% tính trên balance ban đầu của toàn challenge. FTMO còn yêu cầu số ngày giao dịch tối thiểu (minimum trading days) — vi phạm risk không chỉ đe dọa giới hạn loss mà còn có thể khiến bạn "cháy" trước khi đủ điều kiện pass.
+- **The5ers 10K:** logic loss limit tham chiếu theo **equity đóng cửa của ngày TRƯỚC** (prior-day closing equity), bao gồm cả floating P/L của các vị thế còn mở khi ngày đóng cửa. Điều này có nghĩa là nếu bạn sizing theo "balance" (chỉ tính P/L đã đóng) thay vì equity thực (bao gồm floating), bạn có thể đang risk nhiều hơn 0.5% thực tế mà không biết — đặc biệt khi giữ lệnh qua đêm. The5ers cũng yêu cầu một số ngày có lãi (mỗi ngày ≥ khoảng 0.5%+), nên risk quá tay một ngày không chỉ đe dọa giới hạn loss mà còn phá hỏng luôn điều kiện "ngày lãi" đó.
+- **Bài học chung:** luôn sizing off equity hiện tại (không phải balance cũ hoặc con số "tưởng tượng"), và với The5ers, kiểm tra lại equity thực tế mỗi khi có lệnh giữ qua đêm trước khi tính risk cho ngày mới.
+
+---
+
+## 6. Best Practices
+
+> [!success] Best Practices
+> 1. Luôn tính size bằng công thức `PositionSize = (Equity × Risk%) / (StopDistance × ValuePerPoint/Pip)` — không bao giờ áng chừng lot bằng cảm giác.
+> 2. Khi SL buộc phải nới rộng, **giảm lot ngay lập tức** để giữ nguyên $ risk — không bao giờ giữ nguyên lot và chấp nhận risk cao hơn.
+> 3. Coi các instrument correlation > 0.7 (NAS100/US30, EURUSD/GBPUSD, XAUUSD/DXY) như một nhóm — cap tổng risk nhóm ở 0.5% aggregate, không cộng dồn 0.5% mỗi lệnh.
+> 4. Đặt circuit breaker ngày (dừng sau 2 lệnh thua liên tiếp hoặc -1% ngày) và tuần (-2% ngày giảm risk hoặc dừng) **trước** khi vào lệnh đầu tiên.
+> 5. Hiệu chỉnh risk dựa trên chuỗi thua dài nhất và max drawdown thực tế từ backtest của chính hệ thống, không chỉ dựa vào con số 0.5% mặc định.
+> 6. Sizing luôn theo equity hiện tại (bao gồm floating P/L nếu giữ lệnh qua đêm), đặc biệt quan trọng với The5ers vì loss limit tham chiếu prior-day closing equity.
+> 7. Dùng mô hình "one good trade" — mỗi lệnh là một sự kiện độc lập, không phải cơ hội để "gỡ" hay "làm cho đáng giá".
+> 8. Không bao giờ tăng size để bù lỗ (revenge sizing) hoặc vì vừa thắng vài lệnh liên tiếp (risk creep) — $ risk luôn cố định theo % equity, bất kể tâm trạng.
+
+---
+
+## 7. Rule phòng tránh & Checklist
+
+- [ ] Tính $ risk và lot size bằng công thức trước khi vào lệnh, không áng chừng.
+- [ ] Nếu SL nới rộng hơn kế hoạch, tính lại lot ngay để giữ nguyên $ risk cố định.
+- [ ] Kiểm tra correlation trước khi mở lệnh thứ 2 trở lên — nếu > 0.7 với vị thế đang mở, cap tổng risk nhóm ở 0.5%.
+- [ ] Không thêm size vào một lệnh đang âm (không trung bình giá).
+- [ ] Circuit breaker ngày: dừng sau 2 lệnh thua liên tiếp hoặc equity ngày -1%.
+- [ ] Circuit breaker tuần: nếu tuần -2%, hạ risk per trade xuống 0.25% hoặc dừng hẳn.
+- [ ] Sizing off equity hiện tại (không phải balance cũ) — đặc biệt kiểm tra lại nếu có lệnh giữ qua đêm (The5ers).
+- [ ] Tự hỏi trước khi bấm lệnh: "Đây có phải revenge sizing hay risk creep sau chuỗi thắng không?"
+
+---
+
+## 8. Ví dụ đã xảy ra
+
+- 
+
+*Định dạng liên kết khi có trade thực tế: `[[Loss - NN - Trade YYYY-MM-DD SYMBOL Position]]`*
+
+---
+
+## 9. Flashcards / Active Recall
+
+**Q1:** Viết công thức tính position size và áp dụng cho NAS100 với equity $10,000, risk 0.5%, SL 25 điểm, value/điểm $10 mỗi 1.0 lot.
+**A1:** `PositionSize = (Equity × Risk%) / (StopDistance × ValuePerPoint)` = ($10,000 × 0.5%) / (25 × $10) = $50 / $250 = 0.2 lot.
+
+**Q2:** Khi SL phải nới rộng hơn kế hoạch giữa chừng, bạn nên làm gì với lot size?
+**A2:** Giảm lot ngay để giữ nguyên $ risk cố định — không bao giờ giữ nguyên lot và chấp nhận $ risk cao hơn.
+
+**Q3:** Vì sao hai lệnh "0.5% mỗi lệnh" trên NAS100 và US30 mở cùng lúc có thể tương đương một lệnh 1%?
+**A3:** Vì NAS100 và US30 có correlation cao (0.85-0.95, cùng là chỉ số Mỹ) — khi chúng di chuyển cùng chiều, rủi ro tổng hợp thực tế gần bằng tổng risk của cả hai, không phải hai rủi ro độc lập.
+
+**Q4:** Vì sao 0.5% được coi là cố tình sub-Kelly thay vì gần với Kelly criterion?
+**A4:** Vì Kelly giả định edge đã biết chính xác và chấp nhận drawdown ngắn hạn lớn để tối ưu tăng trưởng dài hạn — hợp lý khi ruin không có giới hạn thời gian. Nhưng prop firm tạo rào cản ruin nhân tạo và tức thời (10% = loại ngay), nên bài toán thực tế là tối thiểu hóa xác suất chạm rào cản trong một số lệnh giới hạn của kỳ đánh giá, đòi hỏi risk thấp hơn Kelly rất nhiều.
+
+**Q5:** Khác biệt cốt lõi giữa cách FTMO và The5ers tính loss limit là gì, và nó ảnh hưởng thế nào tới cách bạn sizing?
+**A5:** FTMO so daily loss với balance cố định đầu ngày (không đổi trong ngày); The5ers so với equity đóng cửa ngày trước đó (bao gồm floating P/L). Vì vậy với The5ers, phải luôn sizing theo equity thực tế (kể cả floating), đặc biệt khi giữ lệnh qua đêm — sizing theo "balance" cũ có thể khiến bạn risk nhiều hơn 0.5% thực tế mà không biết.
+
+**Q6:** Ở risk 2%/lệnh, cần bao nhiêu lệnh thua liên tiếp để phá vỡ daily loss limit và overall max loss limit của FTMO 10K?
+**A6:** Khoảng 3 lệnh thua liên tiếp để phá vỡ daily limit (5% = $500), và khoảng 6 lệnh để phá vỡ overall max loss (10% = $1,000) — so với 0.5% cần tới ~10-11 lệnh (daily) và ~20-21 lệnh (max).
+
+---
+
+## 10. Lesson Learned
+
+Bài học chính: **risk per trade là tham số duy nhất quyết định bạn có còn "trong cuộc chơi" để chờ edge của mình phát huy hay không.** Một chuỗi thua 6-10 lệnh liên tiếp không phải bằng chứng edge sai — đó là variance bình thường mà bất kỳ hệ thống có xác suất nào cũng sẽ gặp. Ở 0.5%, chuỗi đó chỉ là một tuần khó chịu. Ở 2%, chuỗi đó là dấu chấm hết cho challenge, bất kể edge của bạn có tốt đến đâu về lâu dài.
+
+Đối với FTMO và The5ers, 0.5% không phải là sự thận trọng cho có — nó là **tham số để pass challenge**, được tính toán dựa trên chính các giới hạn cứng (daily loss, max loss) mà prop firm áp đặt. Một "lệnh thua tốt" ở 0.5% (đúng kế hoạch, đúng size, đúng correlation cap) luôn tốt hơn một "lệnh thắng may mắn" ở 2% — vì lệnh thắng may mắn ở 2% củng cố sai thói quen sẽ giết tài khoản ở lần thua tiếp theo.
+
+Quy tắc cá nhân:
+- [ ] Không bao giờ risk vượt 0.5% equity trên một lệnh, dù conviction cao đến đâu.
+- [ ] Luôn tính lại lot khi SL thay đổi — $ risk cố định, lot là biến số phụ thuộc.
+- [ ] Cap tổng risk ở 0.5% cho mọi nhóm correlated đang mở đồng thời.
+
+> Một chuỗi thua bình thường chỉ nguy hiểm khi bạn tự biến nó thành bất thường bằng cách tăng risk giữa chừng.
+
+---
+
+## 11. Liên kết
+
+**Concepts:** [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]]
+
+**Mistakes liên quan:** [[05 - Mistake - Not enough RR]] · [[01 - Mistake - Emotional revenge trade]] · [[09 - Mistake - Wrong daily bias]] · [[02 - Mistake - Enter before liquidity sweep]]

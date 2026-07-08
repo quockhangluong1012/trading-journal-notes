@@ -50,7 +50,7 @@ tags:
 | Setup                | ICT 2022 Model                                    |
 | Entry Model          | Liquidity Sweep + MSS + FVG / OB Reaction / Other |
 | Entry Timeframe      | M5                                                |
-| HTF Bias             | Bullish                                           |
+| HTF Bias             | Bearish                                           |
 | Bias Correct?        | Yes                                               |
 | Entry                | 1.29239                                           |
 | Stop Loss            | 1.29545                                           |
@@ -176,15 +176,20 @@ tags:
 
 ### Bài học kỹ thuật
 
-- 
+- **Kỷ luật lớn nhất của lệnh này là "no FVG → no entry".** Khi giá bật ra khỏi CE nhưng các nến có râu trùng lắp và *không* để lại FVG, đó là dấu hiệu thiếu displacement thật → khả năng cao còn quét EQH/inducement. Không vào vội ở nhịp bật giả này chính là điều tách một entry A khỏi một lệnh bị stop sớm.
+- Chỉ nhịp **displacement thật tạo Liquidity Void (nhiều FVG chồng nhau)** sau khi quét inducement mới là xác nhận MSS đáng tin. Đây là bộ lọc chất lượng dịch chuyển, không chỉ nhìn "giá có đi xuống hay không".
+- Đọc đúng **cấu trúc thanh khoản nhiều tầng** (CE của FVG H1 → EQH tại CE → inducement) là điểm mạnh nhất của lần backtest này; đó là lý do RR đạt tới 2.78 với SL rất gọn.
 
 ### Pattern lặp lại (điều cần để ý lần sau)
 
-- 
+- Giá thường **quét CE của FVG HTF ~2 lần** rồi mới thực sự đi. Lần chạm CE đầu tiên hiếm khi là entry — đừng vào ở cú test đầu.
+- Sau khi quét CE, giá hay **quay lại tạo EQH ngay tại CE**; EQH này chính là **inducement** sẽ bị lấy trước khi đảo chiều thật. Cẩn thận không entry trước khi inducement đó bị quét kèm displacement.
 
 ### Rule cần thêm/cập nhật vào Playbook
 
-- [ ] 
+- [ ] Chính thức hóa rule **"no FVG, no entry"**: nếu nhịp bật khỏi POI không để lại FVG (râu trùng lắp), coi như *chưa có displacement* → chờ tiếp, giả định còn ít nhất một lần sweep inducement nữa.
+- [ ] Đánh dấu mọi **EQH hình thành ngay tại CE là inducement**; chỉ entry sau khi inducement đó bị quét kèm nến displacement tạo FVG mới.
+- [ ] Như lệnh 12/04: RR > 2R thì **lên kế hoạch partial TP trước khi vào** — nhất quán hóa thói quen quản lý lệnh giữa các setup.
 
 ---
 
@@ -192,12 +197,12 @@ tags:
 
 | Tiêu chí | Điểm |
 |---|---|
-| HTF Bias | /10 |
-| POI Selection | /10 |
-| Liquidity Sweep | /10 |
-| MSS Confirmation | /10 |
-| FVG / OB Entry | /10 |
-| Risk Management (RR) | /10 |
+| HTF Bias | 9/10 |
+| POI Selection | 9/10 |
+| Liquidity Sweep | 10/10 |
+| MSS Confirmation | 9/10 |
+| FVG / OB Entry | 9/10 |
+| Risk Management (RR) | 8/10 |
 
 **Overall Grade**: A
 

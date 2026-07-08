@@ -11,7 +11,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#BreakerBlock"
-status: seed
+status: developing
 category: PD Array
 timeframes:
   - D1
@@ -23,9 +23,9 @@ timeframes:
 models:
   - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
-last_reviewed: 2026-07-02
+last_reviewed: 2026-07-08
 created: 2026-06-22
-updated: 2026-07-02
+updated: 2026-07-08
 common_mistakes:
   - "[[Mistake - Confuse OB with Breaker Block]]"
   - "[[Mistake - Breaker Without Sweep]]"

@@ -6,7 +6,7 @@ status: In Progress
 priority: High
 progress: 30
 metric: Số setup 2022-model đã backtest kèm win rate
-baseline: ~20 setup đã ghi nhận
+baseline: "5"
 target: 100 setup @ win rate >55%
 phase: Phase 2 - Edge Building
 start_date: 2026-06-23

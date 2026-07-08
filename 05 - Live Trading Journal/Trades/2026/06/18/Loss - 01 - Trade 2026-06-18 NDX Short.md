@@ -9,7 +9,7 @@ kill_zone:
   - New York
 pnl: -32.43
 r_multiple:
-mistakes: "[[Mistake - Entry When MSS not in POI Zone]]"
+mistakes: "[[03 - Mistake - Entry When MSS not in POI Zone]]"
 tags:
   - DailyBias
   - KillZones
@@ -39,5 +39,5 @@ session: New York
 ![[NDX-20260618-M5.png]]
 ## 2. Phân tích sau lệnh:
 - **Result**: Hit ==stoploss==
-- **Mistake**: [[Mistake - Not Have Market Structure Shift]]
+- **Mistake**: [[06 - Mistake - Not Have Market Structure Shift]]
 - **Lý do**: Thấy giá quét thanh khoản khung H1 khi đó tôi đã xuống ngay khung thời gian nhỏ hơn để tìm điểm vào lệnh mà quên mất ngay vùng đó không có bất kỳ 1 POI nào -> Quá tập trung tìm MSS mà quên mất phải chờ giá retrace về vùng POI sau đó tìm xác nhận

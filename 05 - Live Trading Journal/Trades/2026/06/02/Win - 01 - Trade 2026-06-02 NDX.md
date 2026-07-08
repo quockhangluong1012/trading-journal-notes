@@ -16,7 +16,7 @@ pnl: 265
 r_multiple:
 risk_percent: 5%
 mistakes:
-  - "[[Mistake - Risk more than 0.5% total account]]"
+  - "[[07 - Mistake - Risk more than 0.5% total account]]"
 tags:
   - BOS
   - DailyBias
@@ -177,9 +177,9 @@ planned_rr: 2.94
 
 - **Result**: Manual Close - Đạt profit tuy nhiên đây xét các yếu tố thì là lệnh ăn may, thoát sớm trước khi giá đảo chiều theo dialy bias và đóng xuống dưới OB và đáy cũ
 - **Mistake chính**:
-  - [[Mistake - Not Have Market Structure Shift]]
+  - [[06 - Mistake - Not Have Market Structure Shift]]
 - **Nguyên nhân gốc rễ**:
-  - [[Mistake - Wrong daily bias]]
+  - [[09 - Mistake - Wrong daily bias]]
 - **Tại sao lệnh này thua/thắng?**
   - Lệnh này thắng do ăn may, thoát lệnh trước khi giá đồng pha (align) với khung D1
 - **Thị trường đã cho tín hiệu cảnh báo nào trước khi thua?**

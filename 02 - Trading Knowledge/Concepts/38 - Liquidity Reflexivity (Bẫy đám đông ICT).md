@@ -109,7 +109,7 @@ ICT dạy rằng giá săn stop của retail đặt tại equal highs/lows, tạ
 ### Điều kiện xác nhận một setup KHÔNG phải bẫy (tăng độ tin)
 - [ ] Sweep xảy ra tại **POI HTF hợp lệ** (không phải giữa range).
 - [ ] MSS đồng hướng [[12 - Daily Bias|bias HTF]], không ngược.
-- [ ] Đã có sweep thanh khoản **rõ ràng** trước MSS (không vào trước sweep — xem [[Mistake - Enter before liquidity sweep]]).
+- [ ] Đã có sweep thanh khoản **rõ ràng** trước MSS (không vào trước sweep — xem [[02 - Mistake - Enter before liquidity sweep]]).
 - [ ] Entry nằm đúng [[27 - Premium Discount|premium/discount]] cho hướng trade.
 - [ ] Còn liquidity target rõ ràng phía trước (đủ room).
 

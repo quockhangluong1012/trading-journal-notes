@@ -21,7 +21,7 @@ tags: [daily-summary, prop-firm-prep]
 > - **Không có lệnh live nào trong 17 ngày** (lệnh gần nhất: `Loss - 01 - Trade 2026-06-18 NDX Short`, 2026-06-18). Theo CONTEXT của routine này, khối lượng lệnh không phải ưu tiên của Giai đoạn 1 nên bản thân con số này không tự nó là thất bại — nhưng đã vượt xa ngưỡng cảnh báo 10 ngày nên vẫn nêu ra để không bị quên.
 > - **Bảng "Nhật ký tiến độ" đứng yên 12 ngày (từ 2026-06-23) ở 5/6 goal nền tảng:** [[Pass FTMO first package challenge (10K$)]], [[Pass The5er first package challenge (10k$)]], [[Build a statistically validated backtest sample]], [[Master the ICT 2022 Model]], [[Cut my top 3 repeated mistakes]]. Chỉ [[Hold daily journaling and process discipline]] có dòng cập nhật gần đây (2026-07-03, và thêm 1 dòng hôm nay — xem mục Cập nhật bên dưới).
 > - **Bảng tuần 2026-W27 trong [[02 - Skill Metrics]] vẫn chưa được thêm** — kế hoạch nêu việc này 3 ngày liên tiếp (07-03, 07-04, 07-05) mà chưa từng thực hiện; bảng vẫn chỉ có dòng 2026-W26 bỏ trống. Việc này cần Khang tự chấm tay (Chất lượng quy trình, Kỷ luật) nên routine này không tự điền thay.
-> - **3 note lỗi top-3 vẫn hoàn toàn rỗng** (0 dòng nội dung, đã xác nhận lại hôm nay bằng cách đọc trực tiếp file): [[Mistake - Not Have Market Structure Shift]], [[Mistake - Wrong daily bias]], [[Mistake - Risk more than 0.5% total account]] — chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] ("viết biện pháp đối phó"), đã bị nêu từ 2026-07-03 mà chưa vá.
+> - **3 note lỗi top-3 vẫn hoàn toàn rỗng** (0 dòng nội dung, đã xác nhận lại hôm nay bằng cách đọc trực tiếp file): [[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]], [[07 - Mistake - Risk more than 0.5% total account]] — chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] ("viết biện pháp đối phó"), đã bị nêu từ 2026-07-03 mà chưa vá.
 > - **Pace risk không đổi so với hôm qua vì không có hoạt động mới:** còn 186 ngày tới 2027-01-07. Backtest vẫn 1/200 (0,5%) sau 12 ngày kể từ start_date (2026-06-23) — nhịp cần thiết để về đích trước due_date riêng của goal (2027-06-30, ~372 ngày kể từ start) là ~0,54 backtest/ngày, thực tế đang là ~0,08/ngày. Cả 4 goal nền tảng/edge (FTMO, The5ers, Backtest sample, Journaling) vẫn có cột mốc `## Cột mốc` 0/N — theo cách tính đúng (cột mốc, không phải field `progress` ghi tay), tiến độ thực tế vẫn là **0%** ở cả 4 goal này sau 12 ngày. Đây là ngày thứ tư liên tiếp thế bế tắc này được nêu ra mà chưa được phá.
 
 ## 📚 Học hôm nay
@@ -46,7 +46,7 @@ Net R hôm nay: **0** (không có lệnh nào được thực hiện).
 
 **Không có mistake nào được kích hoạt hôm nay** (không có lệnh live nào để phạm lỗi).
 
-Đã mở trực tiếp cả 3 note lỗi top-3 hôm nay để xác nhận tình trạng: [[Mistake - Not Have Market Structure Shift]] (0 dòng), [[Mistake - Wrong daily bias]] (0 dòng), [[Mistake - Risk more than 0.5% total account]] (0 dòng) — cả ba vẫn hoàn toàn trống, không có định nghĩa lỗi hay biện pháp đối phó nào được viết. Đây là khoảng trống dữ liệu độc lập với việc hôm nay không phạm lỗi nào — nó chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] ("viết biện pháp đối phó cụ thể cho từng lỗi").
+Đã mở trực tiếp cả 3 note lỗi top-3 hôm nay để xác nhận tình trạng: [[06 - Mistake - Not Have Market Structure Shift]] (0 dòng), [[09 - Mistake - Wrong daily bias]] (0 dòng), [[07 - Mistake - Risk more than 0.5% total account]] (0 dòng) — cả ba vẫn hoàn toàn trống, không có định nghĩa lỗi hay biện pháp đối phó nào được viết. Đây là khoảng trống dữ liệu độc lập với việc hôm nay không phạm lỗi nào — nó chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] ("viết biện pháp đối phó cụ thể cho từng lỗi").
 
 ## 🎯 Đối chiếu mục tiêu
 
@@ -73,7 +73,7 @@ Net R hôm nay: **0** (không có lệnh nào được thực hiện).
 ## 🔭 Việc cần làm ngày mai
 
 1. **Phá thế đứt nhịp backtest đã kéo dài 4 ngày** — log tối thiểu 1 backtest mới vào `04 - Backtesting/2026-07-06/` trước khi làm bất kỳ việc gì khác có thể trì hoãn được.
-2. **Viết nội dung cho ít nhất 1/3 note lỗi rỗng** ([[Mistake - Not Have Market Structure Shift]], [[Mistake - Wrong daily bias]], [[Mistake - Risk more than 0.5% total account]]) — đang chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] từ 2026-07-03, đã 3 ngày.
+2. **Viết nội dung cho ít nhất 1/3 note lỗi rỗng** ([[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]], [[07 - Mistake - Risk more than 0.5% total account]]) — đang chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] từ 2026-07-03, đã 3 ngày.
 3. **Cập nhật bảng "Nhật ký tiến độ" cho ít nhất 1 trong 5 goal đang đứng yên 12 ngày** (FTMO, The5ers, Backtest sample, Master 2022 Model, Cut top-3 mistakes) — kể cả khi ghi "0 hoạt động mới", đừng để trống.
 4. **Ghi dòng 2026-W27 vào bảng tuần trong [[02 - Skill Metrics]]** — việc này đã bị hoãn 3 ngày liên tiếp (07-03, 07-04, 07-05); cần Khang tự chấm tay Chất lượng quy trình và Kỷ luật (1–5).
 5. **Đối chiếu lại baseline sai lệch:** `baseline: ~15 backtest` của [[Build a statistically validated backtest sample]] và `baseline: ~20 setup` của [[Master the ICT 2022 Model]] đều lệch xa với thực tế chỉ 1 backtest note — cần xác nhận số cũ có bị thất lạc hay ghi nhầm, rồi sửa lại cho khớp.

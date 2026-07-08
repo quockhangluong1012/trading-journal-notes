@@ -23,8 +23,8 @@ last_reviewed: 2026-06-21
 created: 2026-06-20
 updated: 2026-07-03
 common_mistakes:
-  - "[[Mistake - Wrong Daily Bias]]"
-  - "[[Mistake - Entry When MSS not in POI Zone]]"
+  - "[[09 - Mistake - Wrong daily bias]]"
+  - "[[03 - Mistake - Entry When MSS not in POI Zone]]"
   - "[[Mistake - Entry Before Liquidity Sweep]]"
 ---
 

@@ -16,9 +16,9 @@ pnl: -44.46
 r_multiple:
 risk_percent: 0.5%
 mistakes:
-  - "[[Mistake - Wrong daily bias]]"
-  - "[[Mistake - Not Have Market Structure Shift]]"
-  - "[[Mistake - Entry When MSS not in POI Zone]]"
+  - "[[09 - Mistake - Wrong daily bias]]"
+  - "[[06 - Mistake - Not Have Market Structure Shift]]"
+  - "[[03 - Mistake - Entry When MSS not in POI Zone]]"
 tags:
 planned_rr: 2.35
 ---
@@ -155,9 +155,9 @@ planned_rr: 2.35
 
 - **Result**: Hit SL
 - **Mistake chính**:
-  - [[Mistake - Wrong daily bias]]
-  - [[Mistake - Entry When MSS not in POI Zone]]
-  - [[Mistake - Emotional revenge trade]]
+  - [[09 - Mistake - Wrong daily bias]]
+  - [[03 - Mistake - Entry When MSS not in POI Zone]]
+  - [[01 - Mistake - Emotional revenge trade]]
 - **Nguyên nhân gốc rễ**:
   - Revenge trade, cố gắng vào lệnh để gỡ lại 2 lệnh thua trước đó
 - **Tại sao lệnh này thua/thắng?**

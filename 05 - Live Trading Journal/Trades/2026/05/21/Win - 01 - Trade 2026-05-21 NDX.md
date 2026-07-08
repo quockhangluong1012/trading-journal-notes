@@ -16,7 +16,7 @@ pnl: 200
 r_multiple:
 risk_percent: 5%
 mistakes:
-  - "[[Mistake - Not Have Market Structure Shift]]"
+  - "[[06 - Mistake - Not Have Market Structure Shift]]"
 tags:
   - DailyBias
   - FairValueGap

@@ -9,7 +9,7 @@ kill_zone:
   - London
 pnl: -32
 r_multiple:
-mistakes: "[[Mistake - Not Have Market Structure Shift]]"
+mistakes: "[[06 - Mistake - Not Have Market Structure Shift]]"
 tags:
   - Discount
   - FVG
@@ -46,6 +46,6 @@ session: London
   ![[EURUSD-20260617-M1.png]]
 ## 2. Phân tích sau lệnh:
 - **Result**: Hit ==stoploss==
-- **Mistake**: [[Mistake - Not Have Market Structure Shift]]
+- **Mistake**: [[06 - Mistake - Not Have Market Structure Shift]]
 - **Lý do**: Vào đuổi giá vì sợ lỡ mất nhịp giá. Khi dó giá chạm PD Array và xuất hiện displacement, tuy nhiên không có MSS. Tôi bỏ qua một điều kiện xác định quan trọng và vào lệnh Long trong khi các khung M15/M5 là nhịp giá giảm
 - Không check các tin tức quan trọng của ngày

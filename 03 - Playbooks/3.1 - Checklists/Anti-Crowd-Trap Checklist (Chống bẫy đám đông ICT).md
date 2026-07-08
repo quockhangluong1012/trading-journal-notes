@@ -33,8 +33,8 @@ tags:
 
 - [ ] Sweep xảy ra tại **POI HTF hợp lệ**, không phải giữa range
 - [ ] Sweep **đủ sâu** (chạm vùng thanh khoản có ý nghĩa), không phải mồi nông
-- [ ] MSS **đồng hướng [[12 - Daily Bias|bias HTF]]**, không phải MSS giả giữa range — xem [[Mistake - Entry When MSS not in POI Zone]]
-- [ ] Có sweep RÕ RÀNG trước MSS (không vào trước sweep) — xem [[Mistake - Enter before liquidity sweep]]
+- [ ] MSS **đồng hướng [[12 - Daily Bias|bias HTF]]**, không phải MSS giả giữa range — xem [[03 - Mistake - Entry When MSS not in POI Zone]]
+- [ ] Có sweep RÕ RÀNG trước MSS (không vào trước sweep) — xem [[02 - Mistake - Enter before liquidity sweep]]
 - [ ] Displacement là thật (để lại FVG cùng hướng), không phải nhịp mồi rồi hồi ngay
 
 ---
@@ -55,7 +55,7 @@ tags:
 - [ ] SL **KHÔNG** nằm tại swing hiển nhiên nhất (nơi cả đám đặt)
 - [ ] SL đã lùi ra **ngoài vùng thanh khoản logic** / ngoài điểm sweep
 - [ ] Còn liquidity target rõ ràng phía trước (đủ room)
-- [ ] **RR ≥ kế hoạch** sau khi đã lùi stop — xem [[Mistake - Not enough RR]]
+- [ ] **RR ≥ kế hoạch** sau khi đã lùi stop — xem [[05 - Mistake - Not enough RR]]
 - [ ] Rủi ro lệnh **≤ 0.5%** — xem [[Daily Risk & Circuit Breaker Checklist]]
 
 ---
@@ -65,7 +65,7 @@ tags:
 - [ ] Tôi KHÔNG vào chỉ vì "sợ lỡ" một setup đẹp — setup đẹp là setup dễ bẫy
 - [ ] Nếu bị shakeout ngược, tôi coi đó là **cơ hội / bước dọn stop**, không hoảng loạn cắt lệnh (khi bias HTF còn nguyên)
 - [ ] Tôi KHÔNG lạm dụng "reflexivity" để counter-trade mọi setup đẹp mà không có bằng chứng — tránh overtrade
-- [ ] Không revenge trade — xem [[Mistake - Emotional revenge trade]]
+- [ ] Không revenge trade — xem [[01 - Mistake - Emotional revenge trade]]
 
 ---
 

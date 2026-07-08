@@ -8,11 +8,11 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#BOS"
-status: seed
+status: developing
 category: Market Structure
-last_reviewed: 2026-06-22
+last_reviewed: 2026-07-08
 created: 2026-06-22
-updated: 2026-07-02
+updated: 2026-07-08
 ---
 
 # Break of Structure
@@ -273,43 +273,6 @@ Trong uptrend, giá đẩy lên và **wick xuyên qua** swing high gần nhất,
 - Sweep tại swing thường là điểm phân phối, không phải xác nhận tiếp diễn.
 - Luôn hỏi: "giá phá để **tiếp diễn** (body close + giữ giá) hay chỉ **sweep rồi quay đầu** (wick + reclaim)?"
 
----
-
-## 7. Entry model liên quan
-
-Khái niệm này thường kết hợp với:
-- [[21 - Market Structure Shift]] — "người anh em ngược chiều": phá ngược trend = MSS
-- [[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]] — đo BOS đúng degree
-- [[20 - Liquidity Sweep]] — bộ lọc phân biệt phá thật vs quét thanh khoản
-- [[13 - FVG  - Fair Value Gap]] / [[25 - OB - Order Block]] — entry model sau cú phá
-- [[12 - Dealing Range]] / [[37 - Re-mapping Dealing Range sau Displacement]] — remap sau external BOS
-- [[27 - Premium Discount]] — đo lại trên range mới
-- [[04 - Breaker Block]] — swing bị phá trở thành vùng retest
-
-### Sequence mẫu — Long tiếp diễn xác nhận bằng BOS
-```text
-HTF Uptrend (chuỗi HH/HL) + Bullish Daily Bias
-→ Giá pullback về Discount + Bullish POI (FVG/OB)
-→ Sweep Sell-Side Liquidity dưới đáy ngắn hạn
-→ Internal Bullish BOS (LTF) — body close trên swing high gần nhất + displacement
-→ Để lại bullish FVG / OB
-→ Retrace vào FVG/OB (M5/M1)
-→ Stop dưới swing / sweep low logic
-→ Target: Internal liquidity trước → External BOS / BSL chính sau
-```
-
-### Sequence mẫu — Short tiếp diễn xác nhận bằng BOS
-```text
-HTF Downtrend (chuỗi LH/LL) + Bearish Daily Bias
-→ Giá pullback lên Premium + Bearish POI (FVG/OB)
-→ Sweep Buy-Side Liquidity trên đỉnh ngắn hạn
-→ Internal Bearish BOS (LTF) — body close dưới swing low gần nhất + displacement
-→ Để lại bearish FVG / OB
-→ Retrace vào FVG/OB (M5/M1)
-→ Stop trên swing / sweep high logic
-→ Target: Internal liquidity trước → External BOS / SSL chính sau
-```
-
 > [!note]
 > BOS xác nhận **context tiếp diễn** và cung cấp **target mapping** (swing/liquidity tiếp theo), nhưng entry vẫn nằm ở POI sau displacement. Đừng vào lệnh ngay tại điểm phá; chờ retrace vào FVG/OB hình thành từ cú phá.
 
@@ -428,25 +391,6 @@ HTF Downtrend (chuỗi LH/LL) + Bearish Daily Bias
 
 ### Câu nhắc nhở khi trade
 > **"Body close là BOS, wick là sweep. Thuận trend là BOS, ngược trend là MSS. Hỏi đúng hai câu này trước khi tin vào bất kỳ cú phá nào."**
-
----
-
-## 13. Mức độ thành thạo
-
-| Tiêu chí | Điểm 1-5 | Ghi chú |
-|---|---:|---|
-| Hiểu định nghĩa |  | Có phân biệt được BOS (continuation) với MSS (reversal) không? |
-| Nhận diện trên chart |  | Có phân biệt body close (BOS) với wick sweep không? |
-| Biết khi nào bỏ qua |  | Có bỏ qua wick sweep / BOS giữa range / chase không? |
-| Kết hợp với context HTF |  | Có tách internal BOS (timing) khỏi external BOS (vẽ range) không? |
-| Áp dụng vào trade thực tế |  | Entry có tại POI sau BOS, không phải chase tại điểm phá không? |
-| Review sau trade |  | Có kiểm tra lệnh thua vì nhầm sweep/MSS thành BOS bằng dữ liệu không? |
-
-**Kế hoạch review tiếp theo:**  
-- [ ] Thu thập tối thiểu 20–30 setup có gắn tag `[[Break of Structure]]`.
-- [ ] Lọc riêng các lệnh có `bos_confirmation: wick-only` và `bos_vs_mss: reversal` để đo tỷ lệ nhầm lẫn.
-- [ ] Thống kê win rate theo `bos_type` (internal vs external) và `structure_alignment`.
-- [ ] Cập nhật rule chỉ khi dữ liệu backtest/forward test đủ mẫu.
 
 ---
 

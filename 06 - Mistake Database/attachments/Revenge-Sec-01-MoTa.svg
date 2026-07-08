@@ -1,0 +1,44 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ba biến thể của Revenge Trading</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Ba trigger khác nhau — cùng một cơ chế: cảm xúc thay thế process</text>
+
+  <rect x="24" y="72" width="712" height="384" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <rect x="44" y="94" width="212" height="98" rx="6" fill="#DC2626" fill-opacity="0.08" stroke="#DC2626"/>
+  <text x="56" y="116" font-size="12.5" font-weight="700" fill="#B91C1C">1. Loss-Revenge</text>
+  <text x="56" y="136" font-size="11" fill="#374151">Vừa dính 1 lệnh thua</text>
+  <text x="56" y="152" font-size="11" fill="#374151">(kể cả lệnh đúng plan)</text>
+  <text x="56" y="172" font-size="11" fill="#374151">Muốn "lấy lại" ngay lập tức</text>
+
+  <rect x="274" y="94" width="212" height="98" rx="6" fill="#D97706" fill-opacity="0.08" stroke="#D97706"/>
+  <text x="286" y="116" font-size="12.5" font-weight="700" fill="#B45309">2. FOMO-Revenge</text>
+  <text x="286" y="136" font-size="11" fill="#374151">Bỏ lỡ 1 con sóng đẹp</text>
+  <text x="286" y="152" font-size="11" fill="#374151">(đứng ngoài, không kịp vào)</text>
+  <text x="286" y="172" font-size="11" fill="#374151">Đuổi theo giá đã chạy xa</text>
+
+  <rect x="504" y="94" width="212" height="98" rx="6" fill="#3B82F6" fill-opacity="0.08" stroke="#1D4ED8"/>
+  <text x="516" y="116" font-size="12.5" font-weight="700" fill="#1D4ED8">3. Win-Tilt</text>
+  <text x="516" y="136" font-size="11" fill="#374151">Vừa thắng 1 lệnh lớn</text>
+  <text x="516" y="152" font-size="11" fill="#374151">"tiền của nhà cái" (house money)</text>
+  <text x="516" y="172" font-size="11" fill="#374151">Vào ẩu, size lớn hơn kế hoạch</text>
+
+  <line x1="150" y1="192" x2="380" y2="240" stroke="#9CA3AF" stroke-width="1.6"/>
+  <line x1="380" y1="192" x2="380" y2="240" stroke="#9CA3AF" stroke-width="1.6"/>
+  <line x1="610" y1="192" x2="380" y2="240" stroke="#9CA3AF" stroke-width="1.6"/>
+  <polygon points="380,240 372,226 388,226" fill="#6B7280"/>
+
+  <rect x="190" y="244" width="380" height="60" rx="6" fill="#374151" fill-opacity="0.06" stroke="#4B5563"/>
+  <text x="210" y="268" font-size="12.5" font-weight="700" fill="#1F2937">Cơ chế chung:</text>
+  <text x="210" y="286" font-size="11.5" fill="#374151">Cảm xúc thắng process — trigger khác nhau, phản ứng giống nhau</text>
+
+  <line x1="380" y1="304" x2="380" y2="322" stroke="#9CA3AF" stroke-width="1.6"/>
+  <polygon points="380,322 372,308 388,308" fill="#6B7280"/>
+
+  <rect x="44" y="326" width="672" height="112" rx="6" fill="#DC2626" fill-opacity="0.06" stroke="#DC2626"/>
+  <text x="60" y="348" font-size="12.5" font-weight="700" fill="#B91C1C">Kết quả: giao dịch bị "bẻ gãy" khỏi ICT 2022 Model</text>
+  <text x="60" y="368" font-size="11" fill="#374151">• Không bias / không POI / không sweep &amp; MSS xác nhận</text>
+  <text x="60" y="386" font-size="11" fill="#374151">• Size vượt kế hoạch (thường vượt xa 0.5%) và entry ngay lập tức, không chờ đợi</text>
+  <text x="60" y="404" font-size="11" fill="#374151">• Thường diễn ra ngoài khung giờ Kill Zone — thiếu volume tổ chức xác nhận</text>
+  <text x="60" y="424" font-size="11" fill="#374151" font-style="italic">Định nghĩa: Revenge trading = giao dịch do CẢM XÚC dẫn dắt, không phải do setup dẫn dắt.</text>
+</svg>

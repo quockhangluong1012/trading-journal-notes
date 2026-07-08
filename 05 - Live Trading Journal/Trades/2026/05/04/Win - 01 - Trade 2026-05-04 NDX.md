@@ -180,10 +180,10 @@ planned_rr: 1.75
 
 - **Result**: Manual Close
 - **Mistake chính**:
-  - [[Mistake - Not Have Market Structure Shift]]
+  - [[06 - Mistake - Not Have Market Structure Shift]]
 - **Nguyên nhân gốc rễ**:
-  - [[Mistake - Not Have Market Structure Shift]]
-  - [[Mistake - Risk more than 0.5% total account]]
+  - [[06 - Mistake - Not Have Market Structure Shift]]
+  - [[07 - Mistake - Risk more than 0.5% total account]]
 - **Tại sao lệnh này thua/thắng?**
   - Lệnh này thắng 1 phần là do may mắn. Tuy đã đúng hầu hết các confluence, nhưng thiếu 1 điều kiện quan trọng là MSS
 - **Thị trường đã cho tín hiệu cảnh báo nào trước khi thua?**

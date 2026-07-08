@@ -1,0 +1,110 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Not Have Market Structure Shift</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cùng một cú sweep tại POI — khác nhau ở việc có hay không một MSS thật (displacement đóng nến qua protected swing + FVG).</text>
+
+  <!-- LEFT: no MSS -->
+  <rect x="24" y="70" width="340" height="392" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="38" y="94" font-size="13" font-weight="700" fill="#B91C1C">SAI — Chỉ sweep + wick rejection, KHÔNG có MSS</text>
+  <rect x="42" y="108" width="304" height="270" rx="4" fill="none" stroke="#9CA3AF" stroke-width="1.2"/>
+
+  <line x1="42" y1="245" x2="346" y2="245" stroke="#6B7280" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="46" y="240" font-size="9" fill="#4B5563">Protected swing (last LH)</text>
+
+  <rect x="54" y="298" width="260" height="42" fill="#3B82F6" opacity="0.12" stroke="#1D4ED8"/>
+  <text x="58" y="294" font-size="9" fill="#1D4ED8">POI: Bullish OB (H1)</text>
+
+  <!-- candles downtrend -->
+  <g stroke="#B91C1C" stroke-width="1.2">
+    <line x1="64" y1="138" x2="64" y2="160"/><rect x="59" y="142" width="10" height="14" fill="#DC2626"/>
+    <line x1="84" y1="150" x2="84" y2="172"/><rect x="79" y="154" width="10" height="14" fill="#DC2626"/>
+    <line x1="104" y1="162" x2="104" y2="184"/><rect x="99" y="166" width="10" height="14" fill="#DC2626"/>
+    <line x1="124" y1="174" x2="124" y2="196"/><rect x="119" y="178" width="10" height="14" fill="#DC2626"/>
+    <line x1="144" y1="186" x2="144" y2="210"/><rect x="139" y="190" width="10" height="16" fill="#DC2626"/>
+    <line x1="164" y1="200" x2="164" y2="224"/><rect x="159" y="204" width="10" height="16" fill="#DC2626"/>
+    <line x1="184" y1="214" x2="184" y2="238"/><rect x="179" y="218" width="10" height="16" fill="#DC2626"/>
+    <line x1="204" y1="228" x2="204" y2="252"/><rect x="199" y="232" width="10" height="16" fill="#DC2626"/>
+    <line x1="224" y1="242" x2="224" y2="268"/><rect x="219" y="246" width="10" height="16" fill="#DC2626"/>
+  </g>
+  <!-- sweep candle -->
+  <line x1="244" y1="255" x2="244" y2="335" stroke="#B91C1C" stroke-width="1.2"/>
+  <rect x="239" y="290" width="10" height="10" fill="#DC2626" stroke="#B91C1C"/>
+  <circle cx="244" cy="332" r="3.5" fill="#D97706"/>
+  <text x="222" y="352" font-size="9" fill="#B45309">Sweep SSL tại POI</text>
+  <!-- rejection candle: wick approaches protected line but no close beyond -->
+  <line x1="264" y1="248" x2="264" y2="305" stroke="#15803D" stroke-width="1.2"/>
+  <rect x="259" y="270" width="10" height="20" fill="#16A34A" stroke="#15803D"/>
+  <!-- continuation down through sweep low -->
+  <line x1="284" y1="285" x2="284" y2="322" stroke="#B91C1C" stroke-width="1.2"/>
+  <rect x="279" y="290" width="10" height="18" fill="#DC2626" stroke="#B91C1C"/>
+  <line x1="304" y1="305" x2="304" y2="345" stroke="#B91C1C" stroke-width="1.2"/>
+  <rect x="299" y="310" width="10" height="20" fill="#DC2626" stroke="#B91C1C"/>
+
+  <polygon points="264,246 258,258 270,258" fill="#D97706"/>
+  <text x="230" y="222" font-size="9" font-weight="700" fill="#B45309">Wick chạm gần protected swing —</text>
+  <text x="230" y="234" font-size="9" font-weight="700" fill="#B45309">KHÔNG đóng nến qua khỏi = không MSS</text>
+
+  <path d="M264 262 L264 240" stroke="#1D4ED8" stroke-width="1.3" marker-end="url(#arrowBlue)"/>
+  <text x="180" y="416" font-size="10.5" font-weight="700" fill="#B91C1C">Entry ngay tại rejection — chỉ vì "đã sweep".</text>
+  <text x="180" y="434" font-size="10" fill="#4B5563">Giá tiếp tục hướng cũ, quét SL đặt cảm tính.</text>
+  <text x="180" y="450" font-size="10" fill="#4B5563">Không có bằng chứng cấu trúc nào đã đổi.</text>
+
+  <!-- RIGHT: valid MSS -->
+  <rect x="396" y="70" width="340" height="392" rx="8" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="410" y="94" font-size="13" font-weight="700" fill="#15803D">ĐÚNG — Displacement đóng nến qua protected swing + FVG</text>
+  <rect x="414" y="108" width="304" height="270" rx="4" fill="none" stroke="#9CA3AF" stroke-width="1.2"/>
+
+  <line x1="414" y1="245" x2="718" y2="245" stroke="#6B7280" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="418" y="240" font-size="9" fill="#4B5563">Protected swing (last LH)</text>
+
+  <rect x="426" y="298" width="260" height="42" fill="#3B82F6" opacity="0.12" stroke="#1D4ED8"/>
+  <text x="430" y="294" font-size="9" fill="#1D4ED8">POI: Bullish OB (H1)</text>
+
+  <g stroke="#B91C1C" stroke-width="1.2">
+    <line x1="436" y1="138" x2="436" y2="160"/><rect x="431" y="142" width="10" height="14" fill="#DC2626"/>
+    <line x1="456" y1="150" x2="456" y2="172"/><rect x="451" y="154" width="10" height="14" fill="#DC2626"/>
+    <line x1="476" y1="162" x2="476" y2="184"/><rect x="471" y="166" width="10" height="14" fill="#DC2626"/>
+    <line x1="496" y1="174" x2="496" y2="196"/><rect x="491" y="178" width="10" height="14" fill="#DC2626"/>
+    <line x1="516" y1="186" x2="516" y2="210"/><rect x="511" y="190" width="10" height="16" fill="#DC2626"/>
+    <line x1="536" y1="200" x2="536" y2="224"/><rect x="531" y="204" width="10" height="16" fill="#DC2626"/>
+    <line x1="556" y1="214" x2="556" y2="238"/><rect x="551" y="218" width="10" height="16" fill="#DC2626"/>
+    <line x1="576" y1="228" x2="576" y2="252"/><rect x="571" y="232" width="10" height="16" fill="#DC2626"/>
+    <line x1="596" y1="242" x2="596" y2="268"/><rect x="591" y="246" width="10" height="16" fill="#DC2626"/>
+  </g>
+  <line x1="616" y1="255" x2="616" y2="335" stroke="#B91C1C" stroke-width="1.2"/>
+  <rect x="611" y="290" width="10" height="10" fill="#DC2626" stroke="#B91C1C"/>
+  <circle cx="616" cy="332" r="3.5" fill="#D97706"/>
+  <text x="594" y="352" font-size="9" fill="#B45309">Sweep SSL tại POI</text>
+
+  <!-- displacement candles closing through protected swing -->
+  <line x1="636" y1="200" x2="636" y2="295" stroke="#15803D" stroke-width="1.3"/>
+  <rect x="630" y="210" width="12" height="80" fill="#16A34A" stroke="#15803D"/>
+  <line x1="660" y1="160" x2="660" y2="218" stroke="#15803D" stroke-width="1.3"/>
+  <rect x="654" y="168" width="12" height="42" fill="#16A34A" stroke="#15803D"/>
+
+  <polygon points="636,206 630,218 642,218" fill="#16A34A"/>
+  <text x="596" y="196" font-size="9" font-weight="700" fill="#15803D">Displacement đóng nến qua protected swing = MSS</text>
+
+  <!-- FVG -->
+  <rect x="640" y="210" width="26" height="24" fill="#3B82F6" opacity="0.22" stroke="#1D4ED8"/>
+  <text x="676" y="226" font-size="9" fill="#1D4ED8">FVG</text>
+
+  <!-- retracement entry candle into FVG -->
+  <line x1="684" y1="202" x2="684" y2="238" stroke="#15803D" stroke-width="1.2"/>
+  <rect x="679" y="208" width="10" height="16" fill="#16A34A" stroke="#15803D"/>
+  <path d="M684 244 L684 226" stroke="#1D4ED8" stroke-width="1.3" marker-end="url(#arrowBlue)"/>
+  <text x="644" y="272" font-size="9" fill="#1D4ED8">Entry tại FVG (sau MSS)</text>
+
+  <path d="M700 200 C 710 185, 715 168, 718 150" fill="none" stroke="#16A34A" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="718,150 709,155 712,141" fill="#16A34A"/>
+
+  <text x="552" y="416" font-size="10.5" font-weight="700" fill="#15803D">MSS xác nhận trước — entry là kết quả của bằng chứng.</text>
+  <text x="552" y="434" font-size="10" fill="#4B5563">SL đặt dưới protected swing vừa bị phá, RR có cơ sở cấu trúc.</text>
+  <text x="552" y="450" font-size="10" fill="#4B5563">Target: BSL — draw on liquidity phía trên.</text>
+
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1D4ED8"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ SAI — MSS giữa range, không có POI (NDX Short)</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Mini-MSS tại EQ dụ entry long → SL bị quét → giá tiếp tục xuống đúng POI H1 thật mới đảo chiều.</text>
+
+  <rect x="24" y="70" width="712" height="360" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+
+  <rect x="60" y="90" width="640" height="105" fill="#DC2626" opacity="0.05"/>
+  <rect x="60" y="195" width="640" height="115" fill="#D97706" opacity="0.08"/>
+  <rect x="60" y="310" width="640" height="100" fill="#16A34A" opacity="0.08"/>
+  <line x1="60" y1="252" x2="700" y2="252" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="704" y="256" font-size="9.5" fill="#6B7280">EQ 50%</text>
+  <text x="66" y="104" font-size="10" fill="#B91C1C">Premium</text>
+  <text x="66" y="326" font-size="10" fill="#15803D">Discount</text>
+
+  <rect x="270" y="220" width="150" height="60" fill="#D97706" opacity="0.18" stroke="#D97706" stroke-dasharray="4 3"/>
+  <text x="278" y="215" font-size="9.5" fill="#B45309">Không có POI ở đây — chỉ là EQ</text>
+
+  <rect x="510" y="355" width="170" height="38" rx="3" fill="#3B82F6" opacity="0.20" stroke="#1D4ED8"/>
+  <text x="518" y="372" font-size="10" fill="#1D4ED8">POI H1 thật (Discount)</text>
+  <text x="518" y="386" font-size="9" fill="#1D4ED8">giá đảo chiều thật tại đây</text>
+
+  <path d="M90 130 C 140 165, 190 195, 240 220 C 265 232, 290 248, 320 260 C 340 268, 350 258, 365 240"
+        fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="320" cy="260" r="4" fill="#D97706"/>
+  <text x="300" y="300" font-size="9.5" fill="#B45309">① Quét micro-swing nội bộ (không phải SSL thật)</text>
+
+  <text x="330" y="200" font-size="9.5" font-weight="700" fill="#B91C1C">② Mini-MSS + FVG "đẹp" — trader vào long</text>
+  <path d="M365 240 C 390 220, 410 210, 430 218" fill="none" stroke="#374151" stroke-width="2"/>
+  <rect x="410" y="205" width="34" height="18" rx="2" fill="#3B82F6" opacity="0.22" stroke="#1D4ED8"/>
+  <polygon points="290,265 300,255 292,245" fill="#374151" opacity="0"/>
+
+  <path d="M430 218 C 450 235, 470 270, 500 305 C 540 350, 570 375, 600 385" fill="none" stroke="#DC2626" stroke-width="2.2"/>
+  <polygon points="600,385 590,378 592,392" fill="#DC2626"/>
+  <text x="440" y="290" font-size="9.5" fill="#B91C1C">③ Giá tiếp tục xuống — quét SL vừa đặt</text>
+
+  <path d="M600 385 C 615 350, 630 300, 645 260 C 660 220, 675 175, 685 130" fill="none" stroke="#16A34A" stroke-width="2.4" stroke-dasharray="6 4"/>
+  <polygon points="685,130 675,138 679,122" fill="#16A34A"/>
+  <text x="600" y="410" font-size="9.5" font-weight="700" fill="#15803D">④ MSS thật xảy ra tại POI H1 — muộn hơn nhiều</text>
+
+  <text x="66" y="425" font-size="10" font-weight="700" fill="#B91C1C">Trade thực tế: [[Loss - 01 - Trade 2026-06-18 NDX Short]]</text>
+</svg>

@@ -48,7 +48,7 @@ Net R hôm nay: **0** (không có lệnh nào được thực hiện).
 
 **Không có mistake nào được kích hoạt hôm nay** (do không có lệnh live nào để phạm lỗi).
 
-Ghi chú dữ liệu: 3 note lỗi đứng đầu tần suất theo [[02 - Mistake Frequency Dashboard]] — [[Mistake - Not Have Market Structure Shift]], [[Mistake - Wrong daily bias]], [[Mistake - Risk more than 0.5% total account]] — hiện đều là **file rỗng** (không có frontmatter, không có nội dung mô tả), nên không thể "diễn giải lại định nghĩa lỗi" như quy trình yêu cầu. Đây là một khoảng trống dữ liệu cần vá (viết mô tả lỗi + biện pháp đối phó vào 3 note này), độc lập với việc hôm nay không phạm lỗi nào.
+Ghi chú dữ liệu: 3 note lỗi đứng đầu tần suất theo [[02 - Mistake Frequency Dashboard]] — [[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]], [[07 - Mistake - Risk more than 0.5% total account]] — hiện đều là **file rỗng** (không có frontmatter, không có nội dung mô tả), nên không thể "diễn giải lại định nghĩa lỗi" như quy trình yêu cầu. Đây là một khoảng trống dữ liệu cần vá (viết mô tả lỗi + biện pháp đối phó vào 3 note này), độc lập với việc hôm nay không phạm lỗi nào.
 
 ## 🎯 Đối chiếu mục tiêu
 
@@ -78,7 +78,7 @@ Ghi chú dữ liệu: 3 note lỗi đứng đầu tần suất theo [[02 - Mista
 2. **Đối chiếu lại baseline backtest sai lệch:** tìm hiểu vì sao goal [[Build a statistically validated backtest sample]] ghi baseline "~15 backtest" trong khi `04 - Backtesting` chỉ có 1 note thực — sửa baseline cho khớp thực tế hoặc xác nhận có backtest bị thất lạc/di chuyển.
 3. **Xác minh lại checkbox "[[09 - Change of Character]]" đã tick hôm nay** — frontmatter note không phản ánh việc ôn tập; nếu thực sự đã ôn, cập nhật `last_reviewed`/`updated` trong note; nếu tick nhầm, bỏ tick.
 4. **Hoàn thành [[22 - Mitigation Block]]** — mục còn lại chưa làm từ checklist buổi sáng hôm nay.
-5. **Viết nội dung cho 3 note lỗi rỗng** ([[Mistake - Not Have Market Structure Shift]], [[Mistake - Wrong daily bias]], [[Mistake - Risk more than 0.5% total account]]) — hiện không có định nghĩa/biện pháp đối phó nào được ghi, chặn mục tiêu [[Cut my top 3 repeated mistakes]].
+5. **Viết nội dung cho 3 note lỗi rỗng** ([[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]], [[07 - Mistake - Risk more than 0.5% total account]]) — hiện không có định nghĩa/biện pháp đối phó nào được ghi, chặn mục tiêu [[Cut my top 3 repeated mistakes]].
 6. **Rà lại nhãn `phase:` của 2 goal FTMO/The5ers** — đang ghi "Phase 4 - Challenge" dù thực tế còn ở Giai đoạn 0 (Chuẩn bị), gây hiểu lầm khi lọc theo phase trong [[01 - Roadmap]].
 7. Cân nhắc quyết định: nếu 15 ngày không lệnh live vẫn tiếp tục, xác nhận rõ đây là lựa chọn có chủ đích (ưu tiên backtest/journaling) chứ không phải trì hoãn — ghi 1 dòng xác nhận vào task list ngày mai.
 

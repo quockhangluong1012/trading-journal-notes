@@ -1,0 +1,40 @@
+<svg viewBox="0 0 760 450" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="450" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#15803D">ĐÚNG — FVG hợp lệ: fresh, Discount, theo bias, CE</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">FVG do displacement+MSS tạo, nằm trong Discount đúng bias HTF bullish, chưa bị chạm; entry tại CE.</text>
+
+  <rect x="24" y="74" width="712" height="356" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-opacity="0.5"/>
+
+  <line x1="50" y1="252" x2="710" y2="252" stroke="#9CA3AF" stroke-width="1.1" stroke-dasharray="6 4"/>
+  <text x="640" y="246" font-size="10" fill="#6B7280">50% (EQ)</text>
+  <text x="58" y="104" font-size="10.5" fill="#B91C1C">PREMIUM</text>
+  <text x="58" y="410" font-size="10.5" fill="#15803D">DISCOUNT (FVG mua hợp lệ ở đây)</text>
+
+  <!-- sweep + displacement + MSS -->
+  <path d="M 70 330 L 130 360 L 170 300" fill="none" stroke="#374151" stroke-width="1.8"/>
+  <circle cx="130" cy="360" r="4.5" fill="#D97706"/>
+  <text x="90" y="382" font-size="9.5" fill="#B45309">Sweep SSL</text>
+  <!-- displacement up creating FVG in discount -->
+  <path d="M 170 300 L 200 210 L 230 175" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+  <line x1="150" y1="290" x2="330" y2="290" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="240" y="284" font-size="9.5" fill="#15803D" font-weight="600">MSS</text>
+  <rect x="180" y="290" width="90" height="46" fill="#3B82F6" fill-opacity="0.2" stroke="#1D4ED8"/>
+  <text x="275" y="308" font-size="10" fill="#1D4ED8" font-weight="600">FVG (fresh)</text>
+  <line x1="180" y1="313" x2="270" y2="313" stroke="#1D4ED8" stroke-dasharray="2 2"/>
+  <text x="275" y="326" font-size="9" fill="#1D4ED8">CE (50%)</text>
+
+  <!-- pullback to CE entry -->
+  <path d="M 230 175 L 270 240 L 300 305" fill="none" stroke="#374151" stroke-width="1.8"/>
+  <circle cx="300" cy="313" r="6" fill="#16A34A"/>
+  <polygon points="300,313 292,327 308,327" fill="#16A34A"/>
+  <text x="310" y="330" font-size="10" fill="#15803D" font-weight="600">Entry tại CE của FVG</text>
+
+  <!-- SL and target -->
+  <line x1="180" y1="342" x2="700" y2="342" stroke="#DC2626" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <text x="560" y="358" font-size="10" fill="#B91C1C">SL dưới FVG/sweep</text>
+  <path d="M 300 305 L 380 220 L 470 150 L 560 110" fill="none" stroke="#16A34A" stroke-width="2"/>
+  <polygon points="560,110 551,126 569,123" fill="#16A34A"/>
+  <text x="470" y="102" font-size="10.5" fill="#15803D" font-weight="600">Target BSL</text>
+
+  <text x="90" y="422" font-size="10.5" fill="#4B5563">6/6 điều kiện: displacement + fresh + Discount + đúng bias + có MSS chống lưng + CE dùng được.</text>
+</svg>

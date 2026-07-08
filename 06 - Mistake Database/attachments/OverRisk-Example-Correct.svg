@@ -1,0 +1,45 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Vi du dung: 0.5% co dinh, size tinh tu SL, cap correlated, circuit breaker</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">NAS100 Long - equity $10,000 - risk $50 (0.5%) du SL la bao nhieu</text>
+
+  <rect x="24" y="76" width="712" height="290" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- formula box -->
+  <rect x="44" y="94" width="672" height="52" rx="6" fill="#16A34A" fill-opacity="0.08" stroke="#16A34A"/>
+  <text x="56" y="114" font-size="12.5" font-weight="700" fill="#15803D">PositionSize = (Equity x Risk%) / (StopDistance x ValuePerPoint)</text>
+  <text x="56" y="134" font-size="12" fill="#374151">= ($10,000 x 0.5%) / (25 diem x $10/diem) = $50 / $250 = 0.2 lot</text>
+
+  <!-- SL widened scenario -->
+  <rect x="44" y="156" width="330" height="86" rx="6" fill="#3B82F6" fill-opacity="0.06" stroke="#1D4ED8" stroke-opacity="0.5"/>
+  <text x="56" y="176" font-size="12" font-weight="700" fill="#1D4ED8">Neu SL phai rong ra 40 diem:</text>
+  <text x="56" y="196" font-size="11.5" fill="#374151">Size moi = $50 / (40 x $10) = 0.125 lot</text>
+  <text x="56" y="214" font-size="11.5" fill="#374151">-&gt; GIAM lot de giu nguyen $50 risk,</text>
+  <text x="56" y="230" font-size="11.5" fill="#374151">khong giu 0.2 lot voi SL rong hon.</text>
+
+  <!-- correlation cap scenario -->
+  <rect x="386" y="156" width="330" height="86" rx="6" fill="#16A34A" fill-opacity="0.06" stroke="#16A34A" stroke-opacity="0.5"/>
+  <text x="398" y="176" font-size="12" font-weight="700" fill="#15803D">Correlated exposure cap:</text>
+  <text x="398" y="196" font-size="11.5" fill="#374151">Muon them US30 Long cung huong NAS100?</text>
+  <text x="398" y="212" font-size="11.5" fill="#374151">Correlation cao -&gt; tong 2 lenh cap o 0.5%</text>
+  <text x="398" y="228" font-size="11.5" fill="#374151">(vd 0.25% moi lenh), khong phai 0.5% x 2.</text>
+
+  <!-- circuit breaker -->
+  <rect x="44" y="252" width="672" height="70" rx="6" fill="#D97706" fill-opacity="0.06" stroke="#D97706" stroke-opacity="0.5"/>
+  <text x="56" y="272" font-size="12" font-weight="700" fill="#B45309">Circuit breaker da dat truoc:</text>
+  <text x="56" y="292" font-size="11.5" fill="#374151">Dung giao dich trong ngay neu: (1) thua 2 lenh lien tiep, hoac (2) equity ngay -1%.</text>
+  <text x="56" y="308" font-size="11.5" fill="#374151">Rule duoc viet ra TRUOC khi vao lenh dau tien, khong quyet dinh giua luc dang thua.</text>
+
+  <!-- equity impact bar -->
+  <text x="44" y="344" font-size="12.5" font-weight="700" fill="#1F2937">Ket qua: du 10 lenh thua lien tiep van con trong daily limit</text>
+  <rect x="44" y="352" width="672" height="18" rx="3" fill="#374151" fill-opacity="0.08"/>
+  <rect x="44" y="352" width="640" height="18" rx="3" fill="#16A34A" fill-opacity="0.7"/>
+  <text x="700" y="365" font-size="10.5" fill="#15803D" font-weight="700" text-anchor="end">Equity con lai: $9,511 (con)</text>
+
+  <!-- annotation -->
+  <rect x="24" y="382" width="712" height="82" rx="6" fill="#374151" fill-opacity="0.04" stroke="#4B5563" stroke-opacity="0.25"/>
+  <text x="40" y="402" font-size="12" fill="#374151" font-weight="700">Vi sao dung: $ risk luon co dinh o 0.5%, bat ke lot size, SL rong/hep, hay</text>
+  <text x="40" y="420" font-size="12" fill="#374151">so luong lenh dang mo. Correlated exposure duoc cap chu khong cong don vo tinh.</text>
+  <text x="40" y="438" font-size="12" fill="#374151">Circuit breaker duoc quyet dinh truoc khi co cam xuc chi phoi - dam bao mot chuoi</text>
+  <text x="40" y="456" font-size="12" fill="#374151">thua binh thuong (thong ke) khong bien thanh mot lan bi loai khoi challenge.</text>
+</svg>

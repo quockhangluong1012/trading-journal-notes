@@ -16,9 +16,9 @@ pnl: -244
 r_multiple:
 risk_percent: 0.5%
 mistakes:
-  - "[[Mistake - Wrong daily bias]]"
-  - "[[Mistake - Not Have Market Structure Shift]]"
-  - "[[Mistake - Enter before liquidity sweep]]"
+  - "[[09 - Mistake - Wrong daily bias]]"
+  - "[[06 - Mistake - Not Have Market Structure Shift]]"
+  - "[[02 - Mistake - Enter before liquidity sweep]]"
 tags:
 planned_rr: 1.99
 ---
@@ -174,8 +174,8 @@ Notes:
 
 - **Result**: Hit SL
 - **Mistake chính**:
-  - [[Mistake - Wrong daily bias]]
-  - [[Mistake - Not Have Market Structure Shift]]
+  - [[09 - Mistake - Wrong daily bias]]
+  - [[06 - Mistake - Not Have Market Structure Shift]]
 - **Nguyên nhân gốc rễ**:
   - Xác định sai Daily bias dẫn đến chỉ tìm những setup bullish trong khi bias đúng ra là Bearish
 - **Tại sao lệnh này thua?**

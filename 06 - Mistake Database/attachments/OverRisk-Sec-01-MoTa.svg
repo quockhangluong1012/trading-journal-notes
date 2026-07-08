@@ -1,0 +1,61 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Mo ta loi: Risk more than 0.5% total account</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">4 con duong pha vo tran 0.5%/lenh - cong don thanh rui ro tong vuot cap</text>
+
+  <rect x="24" y="76" width="712" height="352" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- 4 source boxes -->
+  <rect x="48" y="96" width="152" height="80" rx="6" fill="#DC2626" fill-opacity="0.08" stroke="#DC2626"/>
+  <text x="58" y="118" font-size="12.5" font-weight="700" fill="#B91C1C">1. Lot qua khu</text>
+  <text x="58" y="136" font-size="11" fill="#374151">Vao size lon hon</text>
+  <text x="58" y="150" font-size="11" fill="#374151">cong thuc cho phep</text>
+  <text x="58" y="164" font-size="11" fill="#374151">("high conviction")</text>
+
+  <rect x="212" y="96" width="152" height="80" rx="6" fill="#DC2626" fill-opacity="0.08" stroke="#DC2626"/>
+  <text x="222" y="118" font-size="12.5" font-weight="700" fill="#B91C1C">2. SL rong hon</text>
+  <text x="222" y="136" font-size="11" fill="#374151">Doi SL nhung GIU</text>
+  <text x="222" y="150" font-size="11" fill="#374151">nguyen lot - khong</text>
+  <text x="222" y="164" font-size="11" fill="#374151">tinh lai size</text>
+
+  <rect x="376" y="96" width="152" height="80" rx="6" fill="#DC2626" fill-opacity="0.08" stroke="#DC2626"/>
+  <text x="386" y="118" font-size="12.5" font-weight="700" fill="#B91C1C">3. Gong lenh thua</text>
+  <text x="386" y="136" font-size="11" fill="#374151">Them size vao vi</text>
+  <text x="386" y="150" font-size="11" fill="#374151">the dang am, chờ</text>
+  <text x="386" y="164" font-size="11" fill="#374151">"gia quay dau"</text>
+
+  <rect x="540" y="96" width="152" height="80" rx="6" fill="#DC2626" fill-opacity="0.08" stroke="#DC2626"/>
+  <text x="550" y="118" font-size="12.5" font-weight="700" fill="#B91C1C">4. Stack correlated</text>
+  <text x="550" y="136" font-size="11" fill="#374151">Mo 2-3 lenh cung</text>
+  <text x="550" y="150" font-size="11" fill="#374151">huong tren cac cap</text>
+  <text x="550" y="164" font-size="11" fill="#374151">tuong quan cao</text>
+
+  <!-- arrows down into stacked bar -->
+  <polygon points="124,176 118,196 130,196" fill="#6B7280"/>
+  <polygon points="288,176 282,196 294,196" fill="#6B7280"/>
+  <polygon points="452,176 446,196 458,196" fill="#6B7280"/>
+  <polygon points="616,176 610,196 622,196" fill="#6B7280"/>
+
+  <!-- risk budget cap line -->
+  <line x1="60" y1="330" x2="700" y2="330" stroke="#16A34A" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="66" y="322" font-size="12" fill="#15803D" font-weight="700">Tran cho phep: 0.5% / lenh</text>
+
+  <!-- stacked risk bar exceeding cap -->
+  <rect x="330" y="230" width="100" height="26" fill="#DC2626" fill-opacity="0.75" stroke="#B91C1C"/>
+  <text x="336" y="248" font-size="10.5" fill="#FFFFFF" font-weight="700">Lot qua khu</text>
+  <rect x="330" y="256" width="100" height="24" fill="#DC2626" fill-opacity="0.6" stroke="#B91C1C"/>
+  <text x="336" y="273" font-size="10.5" fill="#FFFFFF" font-weight="700">SL rong</text>
+  <rect x="330" y="280" width="100" height="24" fill="#DC2626" fill-opacity="0.45" stroke="#B91C1C"/>
+  <text x="336" y="297" font-size="10.5" fill="#7F1D1D" font-weight="700">Gong lenh</text>
+  <rect x="330" y="304" width="100" height="24" fill="#DC2626" fill-opacity="0.3" stroke="#B91C1C"/>
+  <text x="332" y="321" font-size="10.5" fill="#7F1D1D" font-weight="700">Correlated</text>
+
+  <text x="240" y="222" font-size="12" fill="#991B1B" font-weight="700">Rui ro tong &gt; 0.5%</text>
+  <text x="452" y="270" font-size="12" fill="#374151">Vuot tran = pha vo</text>
+  <text x="452" y="286" font-size="12" fill="#374151">ky luat rui ro cot loi</text>
+
+  <!-- bottom annotation -->
+  <rect x="48" y="356" width="644" height="56" rx="6" fill="#374151" fill-opacity="0.05" stroke="#4B5563" stroke-opacity="0.3"/>
+  <text x="60" y="376" font-size="12.5" fill="#374151" font-weight="700">Chi can 1 trong 4 con duong tren xay ra la du de $ risk that te</text>
+  <text x="60" y="394" font-size="12.5" fill="#374151">vuot xa 0.5% ma tren giay to "moi lenh van la 0.5%".</text>
+</svg>

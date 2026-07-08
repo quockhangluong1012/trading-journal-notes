@@ -4,7 +4,7 @@ horizon: Mid
 category: Backtest
 status: In Progress
 priority: Medium
-progress: 25
+progress: 5
 metric: Tổng số backtest đã log trong 04 - Backtesting
 baseline: "5"
 target: 200 backtest đã log

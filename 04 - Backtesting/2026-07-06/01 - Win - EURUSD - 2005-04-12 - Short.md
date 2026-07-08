@@ -50,7 +50,7 @@ tags:
 | Setup                | ICT 2022 Model                                    |
 | Entry Model          | Liquidity Sweep + MSS + FVG / OB Reaction / Other |
 | Entry Timeframe      | M5                                                |
-| HTF Bias             | Bullish                                           |
+| HTF Bias             | Bearish                                           |
 | Bias Correct?        | Yes                                               |
 | Entry                | 1.29729                                           |
 | Stop Loss            | 1.30164                                           |
@@ -173,15 +173,19 @@ tags:
 
 ### Bài học kỹ thuật
 
-- 
+- Confluence mạnh nhất của lệnh này là **FVG M5 trùng lắp với Order Block H1**, và toàn bộ POI nằm trong vùng **Premium + OTE**. Đây là loại chồng lớp (HTF POI × LTF FVG × Premium × OTE) cần ưu tiên săn khi backtest — một FVG M5 đơn lẻ không gối lên POI HTF thì giá trị thống kê thấp hơn hẳn.
+- Việc chờ giá quét **cả EQH H1 (thanh khoản quan trọng) lẫn cạnh trên OB** rồi mới xuất hiện MSS là bước lọc entry chất lượng. Sweep đúng thanh khoản mục tiêu (draw on liquidity) trước MSS là điều kiện, không phải tùy chọn.
+- Tín hiệu **nến quét xong quay lại đóng vào trong OB** (close back inside OB) là dấu hiệu sớm, xuất hiện *trước* MSS trên M5 — có thể dùng làm cảnh báo "chuẩn bị vào vùng quan sát".
 
 ### Pattern lặp lại (điều cần để ý lần sau)
 
-- 
+- **EQH nằm bên trong một OB lớn = nam châm thanh khoản.** Giá gần như luôn quét EQH đó trước khi đảo chiều. Khi thấy Equal Highs bên trong POI, mặc định là *chờ quét rồi mới tính entry*, đừng đón đầu.
+- Chuỗi 2022 Model đã khớp gần như sách giáo khoa: Premium → sweep (OB + EQH) → MSS + displacement + FVG → retrace CE → entry. Ghi nhớ đúng trình tự này để nhận diện nhanh lần sau.
 
 ### Rule cần thêm/cập nhật vào Playbook
 
-- [ ] 
+- [ ] Chỉ vào 2022 Model khi **FVG entry M5 trùng/nằm trong POI HTF** (OB hoặc FVG H1). FVG M5 không có confluence HTF → bỏ qua.
+- [ ] Khi kế hoạch RR > 2R, **lập kế hoạch partial TP từ trước khi vào lệnh** (ví dụ chốt 50% tại 1R hoặc tại PD array trung gian). Đây là điểm "nếu vào lại" đã tự nhận ra — biến nó thành rule thay vì tiếc nuối sau lệnh.
 
 ---
 
@@ -189,12 +193,12 @@ tags:
 
 | Tiêu chí | Điểm |
 |---|---|
-| HTF Bias | /10 |
-| POI Selection | /10 |
-| Liquidity Sweep | /10 |
-| MSS Confirmation | /10 |
-| FVG / OB Entry | /10 |
-| Risk Management (RR) | /10 |
+| HTF Bias | 9/10 |
+| POI Selection | 9/10 |
+| Liquidity Sweep | 9/10 |
+| MSS Confirmation | 8/10 |
+| FVG / OB Entry | 9/10 |
+| Risk Management (RR) | 7/10 |
 
 **Overall Grade**: A
 

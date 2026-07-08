@@ -1,0 +1,38 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">6 điều kiện hợp lệ của một FVG</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">FVG chỉ là POI đáng vào khi thỏa ĐỦ các điều kiện. Thiếu 1 điều kiện đỏ = không entry.</text>
+
+  <g font-size="11.5">
+    <rect x="24" y="74" width="350" height="106" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-opacity="0.5"/>
+    <text x="40" y="96" font-weight="700" fill="#15803D">1. Sinh từ displacement mạnh</text>
+    <text x="40" y="116" fill="#6B7280">Nến giữa phải là displacement thật</text>
+    <text x="40" y="134" fill="#6B7280">(body lớn), không phải grinding.</text>
+    <text x="40" y="158" fill="#15803D" font-size="10.5">Xem: Weak Displacement</text>
+
+    <rect x="386" y="74" width="350" height="106" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-opacity="0.5"/>
+    <text x="402" y="96" font-weight="700" fill="#15803D">2. Còn nguyên (fresh/unmitigated)</text>
+    <text x="402" y="116" fill="#6B7280">Chưa bị giá quay lại chạm/lấp.</text>
+    <text x="402" y="134" fill="#6B7280">FVG đã bị test thường mất hiệu lực.</text>
+
+    <rect x="24" y="192" width="350" height="106" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-opacity="0.5"/>
+    <text x="40" y="214" font-weight="700" fill="#15803D">3. Đúng phía Premium/Discount</text>
+    <text x="40" y="234" fill="#6B7280">Bullish FVG phải ở Discount,</text>
+    <text x="40" y="252" fill="#6B7280">bearish FVG phải ở Premium.</text>
+
+    <rect x="386" y="192" width="350" height="106" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-opacity="0.5"/>
+    <text x="402" y="214" font-weight="700" fill="#15803D">4. Cùng hướng bias HTF + draw</text>
+    <text x="402" y="234" fill="#6B7280">FVG phải nằm trong leg đi theo</text>
+    <text x="402" y="252" fill="#6B7280">draw on liquidity của khung lớn.</text>
+
+    <rect x="24" y="310" width="350" height="106" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-opacity="0.5"/>
+    <text x="40" y="332" font-weight="700" fill="#15803D">5. Có cấu trúc chống lưng (MSS/CISD)</text>
+    <text x="40" y="352" fill="#6B7280">FVG được tạo BỞI cú MSS, không</text>
+    <text x="40" y="370" fill="#6B7280">phải một FVG ngẫu nhiên giữa range.</text>
+
+    <rect x="386" y="310" width="350" height="106" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-opacity="0.5"/>
+    <text x="402" y="332" font-weight="700" fill="#15803D">6. Kích thước &amp; CE dùng được</text>
+    <text x="402" y="352" fill="#6B7280">Đủ dày để đặt entry/SL quanh CE (50%),</text>
+    <text x="402" y="370" fill="#6B7280">không quá mỏng để chỉ là nhiễu.</text>
+  </g>
+</svg>

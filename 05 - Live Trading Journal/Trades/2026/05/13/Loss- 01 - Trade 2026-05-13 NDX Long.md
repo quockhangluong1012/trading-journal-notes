@@ -16,8 +16,8 @@ pnl: -129
 r_multiple:
 risk_percent: 5%
 mistakes:
-  - "[[Mistake - Enter before liquidity sweep]]"
-  - "[[Mistake - Risk more than 0.5% total account]]"
+  - "[[02 - Mistake - Enter before liquidity sweep]]"
+  - "[[07 - Mistake - Risk more than 0.5% total account]]"
 tags:
 planned_rr: 2.2
 ---

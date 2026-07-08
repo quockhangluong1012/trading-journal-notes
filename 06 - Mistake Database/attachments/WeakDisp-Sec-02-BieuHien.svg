@@ -1,0 +1,38 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="420" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">5 tiêu chí chấm điểm chất lượng displacement</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Displacement là biến định lượng được — không phải "nhìn có vẻ mạnh". Thiếu ≥2 tiêu chí = weak.</text>
+
+  <g font-size="12">
+    <!-- rows -->
+    <rect x="24" y="76" width="712" height="56" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+    <text x="40" y="100" font-weight="700" fill="#1F2937">1. Body-to-range ratio</text>
+    <text x="40" y="120" fill="#6B7280" font-size="11">Thân nến chiếm bao nhiêu % tổng range của nến?</text>
+    <text x="560" y="100" fill="#B91C1C" font-size="11" font-weight="600">Yếu: &lt;50%</text>
+    <text x="560" y="120" fill="#15803D" font-size="11" font-weight="600">Mạnh: &gt;60-70%</text>
+
+    <rect x="24" y="140" width="712" height="56" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+    <text x="40" y="164" font-weight="700" fill="#1F2937">2. So với ATR / nến liền trước</text>
+    <text x="40" y="184" fill="#6B7280" font-size="11">Range nến so với trung bình các nến gần nhất?</text>
+    <text x="560" y="164" fill="#B91C1C" font-size="11" font-weight="600">Yếu: ~1x hoặc nhỏ hơn</text>
+    <text x="560" y="184" fill="#15803D" font-size="11" font-weight="600">Mạnh: &gt;1.5-2x</text>
+
+    <rect x="24" y="204" width="712" height="56" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+    <text x="40" y="228" font-weight="700" fill="#1F2937">3. Có tạo FVG không?</text>
+    <text x="40" y="248" fill="#6B7280" font-size="11">Cú đẩy có để lại inefficiency 3-nến không?</text>
+    <text x="560" y="228" fill="#B91C1C" font-size="11" font-weight="600">Yếu: không có FVG</text>
+    <text x="560" y="248" fill="#15803D" font-size="11" font-weight="600">Mạnh: FVG rõ ràng</text>
+
+    <rect x="24" y="268" width="712" height="56" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+    <text x="40" y="292" font-weight="700" fill="#1F2937">4. Chồng lấn / overlap</text>
+    <text x="40" y="312" fill="#6B7280" font-size="11">Các nến có chồng lên nhau nhiều không (grinding)?</text>
+    <text x="560" y="292" fill="#B91C1C" font-size="11" font-weight="600">Yếu: chồng lấn nhiều</text>
+    <text x="560" y="312" fill="#15803D" font-size="11" font-weight="600">Mạnh: ít chồng lấn</text>
+
+    <rect x="24" y="332" width="712" height="56" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+    <text x="40" y="356" font-weight="700" fill="#1F2937">5. Tốc độ / urgency &amp; đóng cửa</text>
+    <text x="40" y="376" fill="#6B7280" font-size="11">Bỏ qua nhiều giá nhanh và ĐÓNG cửa qua mức (không chỉ wick)?</text>
+    <text x="560" y="356" fill="#B91C1C" font-size="11" font-weight="600">Yếu: chậm / chỉ wick</text>
+    <text x="560" y="376" fill="#15803D" font-size="11" font-weight="600">Mạnh: nhanh + close</text>
+  </g>
+</svg>

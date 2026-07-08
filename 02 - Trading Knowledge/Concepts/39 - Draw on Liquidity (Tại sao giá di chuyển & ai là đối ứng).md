@@ -47,7 +47,7 @@ prerequisites:
   - "[[07 - Buy-side Liquidity]]"
   - "[[30 - Sell-side Liquidity]]"
 common_mistakes:
-  - "[[Mistake - Enter before liquidity sweep]]"
+  - "[[02 - Mistake - Enter before liquidity sweep]]"
 ---
 
 # Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)
@@ -185,7 +185,7 @@ Không phải mọi tổ chức lớn giao dịch để kiếm lời từ hướ
 ### Tín hiệu bị vô hiệu / cần xét lại khi
 - [ ] Giá phá thẳng DOL, đóng nến vượt qua, không phản ứng → đó là displacement thật, đổi narrative.
 - [ ] Không có cụm lệnh thực sự ở vùng ta tưởng là DOL.
-- [ ] Vào lệnh *trước* khi sweep xảy ra ([[Mistake - Enter before liquidity sweep]]).
+- [ ] Vào lệnh *trước* khi sweep xảy ra ([[02 - Mistake - Enter before liquidity sweep]]).
 
 ---
 

@@ -57,7 +57,7 @@ Không có gì thay đổi so với đối chiếu trong Daily Summary `2026-07-
 **Vấn đề dữ liệu khác đã biết, vẫn chưa được vá:**
 - `baseline: ~15 backtest` của [[Build a statistically validated backtest sample]] vẫn lệch xa với thực tế chỉ **1 note** trong `04 - Backtesting`.
 - `baseline: ~20 setup` của [[Master the ICT 2022 Model]] có cùng vấn đề (chỉ 1 backtest note thực tế).
-- 3/3 note lỗi top hiện tại — [[Mistake - Not Have Market Structure Shift]], [[Mistake - Wrong daily bias]], [[Mistake - Risk more than 0.5% total account]] — vẫn hoàn toàn rỗng (0 dòng nội dung), chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] ("viết biện pháp đối phó").
+- 3/3 note lỗi top hiện tại — [[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]], [[07 - Mistake - Risk more than 0.5% total account]] — vẫn hoàn toàn rỗng (0 dòng nội dung), chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] ("viết biện pháp đối phó").
 
 ## 🩺 Pace check
 
@@ -67,7 +67,7 @@ Còn **186 ngày** tới hạn tự đặt `2027-01-07`. Backtest vẫn **1/200*
 
 1. **Phá chuỗi đứng yên 12 ngày ở bảng "Nhật ký tiến độ"** — ưu tiên tuyệt đối cho ít nhất 1 trong 5 goal đang đứng yên (FTMO, The5ers, Backtest sample, Master 2022 Model, Cut top-3 mistakes), vì đây là nợ cũ nhất, đứng trước cả việc thêm backtest mới.
 2. **Log ít nhất 1 backtest thật** vào `04 - Backtesting/2026-07-06/` (hoặc ngày tương ứng) — nợ đã kéo dài từ `2026-07-02`.
-3. **Viết nội dung cho ít nhất 1/3 note lỗi rỗng** ([[Mistake - Not Have Market Structure Shift]], [[Mistake - Wrong daily bias]], [[Mistake - Risk more than 0.5% total account]]) — đang chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] từ `2026-07-03`.
+3. **Viết nội dung cho ít nhất 1/3 note lỗi rỗng** ([[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]], [[07 - Mistake - Risk more than 0.5% total account]]) — đang chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] từ `2026-07-03`.
 4. Đảm bảo có **Daily Summary cho mọi ngày**, kể cả ngày không có backtest/lệnh live (ghi "0" thay vì bỏ trống) — để tuần `2026-W28` có đủ dữ liệu cho một rollup đầy đủ hơn tuần này.
 
 *(Không có lệnh live nào trong tuần nên không cần chạy Weekly Trading Review đầy đủ — vẫn đúng theo phạm vi Giai đoạn 1.)*
