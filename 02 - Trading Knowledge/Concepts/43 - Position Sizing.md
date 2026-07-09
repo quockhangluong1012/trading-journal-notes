@@ -12,36 +12,11 @@ tags:
   - trading/study
   - "#risk-management"
   - "#prop-firm"
-status: developing
+status: seed
 category: Risk Management
-timeframes:
-  - D1
-  - H1
-  - M15
-  - M5
-models:
-  - "[[01 - ICT 2022 Model|ICT 2022]]"
-markets:
-  - NDX
-  - EURUSD
-  - GBPUSD
-  - XAUUSD
-importance: 5
-confidence: 2
 last_reviewed: 2026-07-05
 created: 2026-07-05
 updated: 2026-07-05
-related_concepts:
-  - "[[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]]"
-  - "[[26 - OTE - Optimal Trade Entry]]"
-  - "[[41 - Change in State of Delivery]]"
-  - "[[42 - SMT Divergence]]"
-  - "[[18 - Kill Zones]]"
-prerequisites:
-  - "[[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]]"
-common_mistakes:
-  - "[[Mistake - Oversized position]]"
-  - "[[Mistake - Moving stop loss]]"
 ---
 
 # Position Sizing

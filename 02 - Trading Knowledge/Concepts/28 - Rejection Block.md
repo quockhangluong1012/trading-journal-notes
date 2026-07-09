@@ -10,30 +10,9 @@ tags:
   - "#RejectionBlock"
 status: seed
 category: PD Array
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[ICT 2022 Model]]"
-importance: 3
-confidence: 1
 last_reviewed:
 created: 2026-06-24
 updated: 2026-07-03
-related_concepts:
-  - "[[Order Block]]"
-  - "[[Breaker Block]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[Fair Value Gap]]"
-  - "[[27 - Premium Discount]]"
-prerequisites:
-  - "[[Order Block]]"
-  - "[[20 - Liquidity Sweep]]"
-common_mistakes: []
 ---
 
 # Rejection Block

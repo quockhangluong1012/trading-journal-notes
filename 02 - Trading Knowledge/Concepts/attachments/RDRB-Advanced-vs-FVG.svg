@@ -1,0 +1,52 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">RDRB vs Fair Value Gap — cùng là PD array, khác cơ chế</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">FVG = 3 nến, gap NHÌN THẤY. RDRB = 2 nến, KHÔNG gap, range ẩn giữa wick nến trước &amp; sau.</text>
+
+  <!-- LEFT: FVG -->
+  <rect x="24" y="72" width="344" height="316" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="94" font-size="13" font-weight="700" fill="#1D4ED8">FVG — imbalance 3 nến (có gap)</text>
+  <!-- visible gap zone between c1 high (240) and c3 low (205) -->
+  <rect x="80" y="205" width="200" height="35" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="150" y="200" font-size="10.5" font-weight="700" fill="#1D4ED8">GAP nhìn thấy (FVG)</text>
+  <!-- c1 -->
+  <line x1="110" y1="240" x2="110" y2="300" stroke="#16A34A" stroke-width="1.5"/><rect x="97" y="250" width="26" height="40" fill="#16A34A"/>
+  <line x1="80" y1="240" x2="280" y2="240" stroke="#6B7280" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="60" y="255" font-size="9.5" fill="#6B7280">high nến 1</text>
+  <!-- c2 displacement -->
+  <line x1="175" y1="160" x2="175" y2="260" stroke="#16A34A" stroke-width="1.5"/><rect x="162" y="170" width="26" height="80" fill="#16A34A"/>
+  <text x="150" y="155" font-size="9.5" fill="#166534">displacement</text>
+  <!-- c3 -->
+  <line x1="240" y1="110" x2="240" y2="205" stroke="#16A34A" stroke-width="1.5"/><rect x="227" y="120" width="26" height="45" fill="#16A34A"/>
+  <line x1="80" y1="205" x2="280" y2="205" stroke="#6B7280" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="255" y="208" font-size="9.5" fill="#6B7280">low nến 3</text>
+  <text x="40" y="350" font-size="10.5" fill="#374151">Wick nến 1 &amp; nến 3 KHÔNG chồng nhau → chừa</text>
+  <text x="40" y="368" font-size="10.5" fill="#374151">một khoảng trống thấy rõ trên chart.</text>
+
+  <!-- RIGHT: RDRB -->
+  <rect x="392" y="72" width="344" height="316" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="94" font-size="13" font-weight="700" fill="#166534">RDRB — deliver/redeliver 2 nến (không gap)</text>
+  <rect x="423" y="207" width="240" height="35" fill="#DCFCE7" stroke="#166534" stroke-width="1.2"/>
+  <text x="546" y="230" font-size="10" font-weight="700" fill="#166534">range ẩn</text>
+  <!-- before -->
+  <line x1="468" y1="242" x2="468" y2="327" stroke="#16A34A" stroke-width="1.5"/><rect x="455" y="257" width="26" height="50" fill="#16A34A"/>
+  <circle cx="468" cy="242" r="5" fill="none" stroke="#166534" stroke-width="2.3"/>
+  <text x="426" y="268" font-size="9" fill="#166534">wick trước</text>
+  <!-- A -->
+  <line x1="533" y1="177" x2="533" y2="272" stroke="#16A34A" stroke-width="1.5"/><rect x="520" y="227" width="26" height="30" fill="#16A34A"/>
+  <!-- B -->
+  <line x1="598" y1="157" x2="598" y2="232" stroke="#16A34A" stroke-width="1.5"/><rect x="585" y="167" width="26" height="60" fill="#16A34A"/>
+  <!-- no-gap bracket between A close(257) and B open(227)? bodies touch region -->
+  <rect x="546" y="227" width="39" height="30" fill="none" stroke="#B45309" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <text x="520" y="150" font-size="9.5" font-weight="700" fill="#B45309">A↔B: không có gap</text>
+  <line x1="565" y1="242" x2="565" y2="152" stroke="#B45309" stroke-width="0.9" stroke-dasharray="2 2"/>
+  <!-- after -->
+  <line x1="663" y1="132" x2="663" y2="207" stroke="#16A34A" stroke-width="1.5"/><rect x="650" y="142" width="26" height="25" fill="#16A34A"/>
+  <circle cx="663" cy="207" r="5" fill="none" stroke="#166534" stroke-width="2.3"/>
+  <text x="673" y="200" font-size="9" fill="#166534">wick sau</text>
+  <text x="408" y="350" font-size="10.5" fill="#374151">Delivery cân bằng → không chừa gap. Muốn thấy</text>
+  <text x="408" y="368" font-size="10.5" fill="#374151">range phải đo giữa wick nến TRƯỚC và nến SAU.</text>
+
+  <text x="24" y="410" font-size="11.5" font-weight="700" fill="#1F2937">Nhận diện: thấy khoảng trống rõ → FVG (hiển). Không thấy trống nhưng giá vẫn phản ứng → nghi RDRB (ẩn).</text>
+  <text x="24" y="434" font-size="11.5" fill="#374151">RDRB là biến thể hiếm, ít người để ý. Cả hai đều là PD array (support/resistance) khi giá quay lại.</text>
+</svg>

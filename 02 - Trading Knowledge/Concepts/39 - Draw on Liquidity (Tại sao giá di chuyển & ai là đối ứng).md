@@ -14,40 +14,9 @@ tags:
   - "#draw-on-liquidity"
 status: developing
 category: Liquidity
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[01 - ICT 2022 Model|ICT 2022]]"
-markets:
-  - NDX
-  - EURUSD
-  - GBPUSD
-  - XAUUSD
-importance: 5
-confidence: 2
 last_reviewed: 2026-07-04
 created: 2026-07-04
 updated: 2026-07-04
-related_concepts:
-  - "[[19 - Liquidity]]"
-  - "[[07 - Buy-side Liquidity]]"
-  - "[[30 - Sell-side Liquidity]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[15 - Inducement]]"
-  - "[[02 - AMD]]"
-  - "[[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]"
-  - "[[16 - Internal & External Range Liquidity (IRL & ERL)]]"
-prerequisites:
-  - "[[19 - Liquidity]]"
-  - "[[07 - Buy-side Liquidity]]"
-  - "[[30 - Sell-side Liquidity]]"
-common_mistakes:
-  - "[[02 - Mistake - Enter before liquidity sweep]]"
 ---
 
 # Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)

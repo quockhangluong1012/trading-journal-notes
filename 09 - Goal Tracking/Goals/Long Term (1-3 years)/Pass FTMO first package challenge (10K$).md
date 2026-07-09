@@ -100,9 +100,9 @@ tags:
 - [ ] **Nhận Funded:** Kích hoạt tài khoản FTMO 10K$ thành công
 
 ## Nhật ký tiến độ
-| Ngày | Phase | Lợi nhuận % | Tiến độ % | Ghi chú |
-|---|---|---:|---:|---|
-| 2026-06-23 |  Chuẩn bị | 0 | 0 | Dựng mục tiêu & ghi luật quỹ. Chưa mua gói — tập trung backtest trước. |
+| Ngày       | Phase    | Lợi nhuận % | Tiến độ % | Ghi chú                                                                |
+| ---------- | -------- | ----------: | --------: | ---------------------------------------------------------------------- |
+| 2026-06-23 | Chuẩn bị |           0 |         0 | Dựng mục tiêu & ghi luật quỹ. Chưa mua gói — tập trung backtest trước. |
 
 ## Liên kết
 - Lộ trình: [[01 - Roadmap]]

@@ -1,0 +1,38 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Nhận diện Hidden OB — 3 bước</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Áp dụng trên HTF bias (D1/H4/H1). Ví dụ minh hoạ cho Bullish Hidden OB.</text>
+
+  <!-- step 1 -->
+  <rect x="24" y="76" width="228" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="46" cy="104" r="11" fill="none" stroke="#1D4ED8" stroke-width="2.5"/><text x="41" y="109" font-size="13" font-weight="700" fill="#1D4ED8">1</text>
+  <text x="64" y="109" font-size="12.5" font-weight="700" fill="#1F2937">2 nến CÙNG MÀU liên tiếp</text>
+  <line x1="110" y1="150" x2="110" y2="280" stroke="#16A34A" stroke-width="1.4"/><rect x="104.5" y="180" width="11" height="70" fill="#16A34A"/>
+  <line x1="150" y1="170" x2="150" y2="300" stroke="#16A34A" stroke-width="1.4"/><rect x="144.5" y="195" width="11" height="70" fill="#16A34A"/>
+  <text x="40" y="330" font-size="10.5" fill="#374151">Tìm 2 nến xanh (hoặc 2 nến đỏ)</text>
+  <text x="40" y="348" font-size="10.5" fill="#374151">đứng cạnh nhau trên khung bias.</text>
+  <text x="40" y="372" font-size="10" fill="#6B7280">Nếu khác màu → không phải Hidden OB.</text>
+
+  <!-- step 2 -->
+  <rect x="266" y="76" width="228" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="288" cy="104" r="11" fill="none" stroke="#B45309" stroke-width="2.5"/><text x="283" y="109" font-size="13" font-weight="700" fill="#B45309">2</text>
+  <text x="306" y="109" font-size="12.5" font-weight="700" fill="#1F2937">Xác nhận WICK CHỒNG nhau</text>
+  <line x1="352" y1="150" x2="352" y2="290" stroke="#16A34A" stroke-width="1.4"/><rect x="346.5" y="180" width="11" height="70" fill="#16A34A"/>
+  <line x1="392" y1="170" x2="392" y2="310" stroke="#16A34A" stroke-width="1.4"/><rect x="386.5" y="195" width="11" height="70" fill="#16A34A"/>
+  <!-- overlap band -->
+  <rect x="330" y="250" width="130" height="60" fill="#FEF3C7" opacity="0.8"/>
+  <text x="336" y="330" font-size="10.5" font-weight="700" fill="#B45309">Vùng wick chồng nhau (overlap)</text>
+  <text x="336" y="348" font-size="10.5" fill="#374151">Lower wick nến 2 phải phủ lên</text>
+  <text x="336" y="363" font-size="10.5" fill="#374151">thân/wick nến 1. Không chồng = bỏ.</text>
+
+  <!-- step 3 -->
+  <rect x="508" y="76" width="228" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="530" cy="104" r="11" fill="none" stroke="#166534" stroke-width="2.5"/><text x="525" y="109" font-size="13" font-weight="700" fill="#166534">3</text>
+  <text x="548" y="109" font-size="12.5" font-weight="700" fill="#1F2937">Vẽ BOX wick → wick</text>
+  <rect x="580" y="140" width="70" height="180" fill="#DBEAFE" stroke="#1D4ED8" stroke-dasharray="4 3"/>
+  <line x1="595" y1="140" x2="595" y2="300" stroke="#16A34A" stroke-width="1.4"/><rect x="589.5" y="180" width="11" height="70" fill="#16A34A"/>
+  <line x1="635" y1="160" x2="635" y2="320" stroke="#16A34A" stroke-width="1.4"/><rect x="629.5" y="195" width="11" height="70" fill="#16A34A"/>
+  <text x="524" y="345" font-size="10.5" font-weight="700" fill="#1D4ED8">Box = low wick nến 2 → high wick nến 1</text>
+  <text x="524" y="363" font-size="10.5" fill="#374151">Đây là vùng Hidden OB để chờ giá</text>
+  <text x="524" y="378" font-size="10.5" fill="#374151">quay lại (retrace), rồi zoom LTF.</text>
+</svg>

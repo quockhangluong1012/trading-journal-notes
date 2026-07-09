@@ -10,32 +10,9 @@ tags:
   - "#BreakawayGap"
 status: seed
 category: PD Array
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[ICT 2022 Model]]"
-importance: 3
-confidence: 1
 last_reviewed:
 created: 2026-06-26
 updated: 2026-07-03
-related_concepts:
-  - "[[Fair Value Gap]]"
-  - "[[21 - Liquidity Void]]"
-  - "[[Displacement]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[03 - Balanced Price Range]]"
-  - "[[12 - Daily Bias]]"
-prerequisites:
-  - "[[Fair Value Gap]]"
-  - "[[Displacement]]"
-  - "[[20 - Liquidity Sweep]]"
-common_mistakes: []
 ---
 
 # Breakaway Gap (BAG)

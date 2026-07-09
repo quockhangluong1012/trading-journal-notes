@@ -1,0 +1,70 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Chuỗi đảo chiều 3 tầng: IFVG/BPR → CISD → MSS</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Bắt đảo chiều SỚM bằng 3 xác nhận nối tiếp. Mỗi tầng đi qua, độ tin cậy (conviction) tăng dần.</text>
+
+  <!-- Panel 1: Stage 1 -->
+  <rect x="24" y="72" width="228" height="284" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="38" y="94" font-size="12" font-weight="700" fill="#B45309">Tầng 1 — IFVG / BPR</text>
+  <text x="38" y="110" font-size="9.5" fill="#6B7280">Giá bắt đầu PHÁ FVG = xu hướng yếu đi</text>
+  <!-- down trend candles -->
+  <line x1="60" y1="130" x2="60" y2="165" stroke="#DC2626" stroke-width="1.4"/><rect x="54.5" y="138" width="11" height="22" fill="#DC2626"/>
+  <line x1="82" y1="150" x2="82" y2="190" stroke="#DC2626" stroke-width="1.4"/><rect x="76.5" y="158" width="11" height="26" fill="#DC2626"/>
+  <line x1="104" y1="178" x2="104" y2="222" stroke="#DC2626" stroke-width="1.4"/><rect x="98.5" y="186" width="11" height="30" fill="#DC2626"/>
+  <!-- FVG zone -->
+  <rect x="46" y="216" width="190" height="34" fill="#FEF3C7"/>
+  <text x="118" y="243" font-size="9" fill="#B45309">FVG cũ</text>
+  <line x1="126" y1="222" x2="126" y2="262" stroke="#DC2626" stroke-width="1.4"/><rect x="120.5" y="230" width="11" height="26" fill="#DC2626"/>
+  <!-- bull candle closing above FVG = IFVG -->
+  <line x1="150" y1="196" x2="150" y2="262" stroke="#16A34A" stroke-width="1.4"/><rect x="144.5" y="204" width="11" height="52" fill="#16A34A"/>
+  <line x1="216" y1="205" x2="216" y2="210" stroke="#16A34A" stroke-width="0"/>
+  <text x="150" y="290" font-size="9" font-weight="700" fill="#166534" text-anchor="middle">close phá ngược FVG</text>
+  <text x="150" y="303" font-size="9" font-weight="700" fill="#166534" text-anchor="middle">→ IFVG (tín hiệu YẾU)</text>
+  <text x="38" y="335" font-size="9.5" fill="#6B7280">Chỉ QUAN SÁT — chưa vào lệnh.</text>
+
+  <!-- Panel 2: Stage 2 -->
+  <rect x="266" y="72" width="228" height="284" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="280" y="94" font-size="12" font-weight="700" fill="#1D4ED8">Tầng 2 — CISD</text>
+  <text x="280" y="110" font-size="9.5" fill="#6B7280">Phá BODY cây bearish cuối = đổi state</text>
+  <!-- last bearish candle -->
+  <line x1="308" y1="150" x2="308" y2="205" stroke="#DC2626" stroke-width="1.4"/><rect x="302.5" y="160" width="11" height="34" fill="#DC2626"/>
+  <!-- CISD level = body low (close) of last bearish -->
+  <line x1="296" y1="194" x2="486" y2="194" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="392" y="189" font-size="9" font-weight="700" fill="#1D4ED8">CISD level = body low</text>
+  <!-- consecutive bullish candles -->
+  <line x1="332" y1="150" x2="332" y2="196" stroke="#16A34A" stroke-width="1.4"/><rect x="326.5" y="158" width="11" height="30" fill="#16A34A"/>
+  <line x1="354" y1="118" x2="354" y2="162" stroke="#16A34A" stroke-width="1.4"/><rect x="348.5" y="126" width="11" height="30" fill="#16A34A"/>
+  <line x1="376" y1="98" x2="376" y2="135" stroke="#16A34A" stroke-width="1.4"/><rect x="370.5" y="106" width="11" height="26" fill="#16A34A"/>
+  <text x="300" y="240" font-size="9.5" fill="#166534">delivery tăng liên tiếp</text>
+  <text x="300" y="256" font-size="9" fill="#6B7280">Là BODY, KHÔNG phải wick.</text>
+  <text x="280" y="335" font-size="9.5" fill="#6B7280">Entry aggressive tại POI sau CISD.</text>
+
+  <!-- Panel 3: Stage 3 -->
+  <rect x="508" y="72" width="228" height="284" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="522" y="94" font-size="12" font-weight="700" fill="#166534">Tầng 3 — MSS</text>
+  <text x="522" y="110" font-size="9.5" fill="#6B7280">Phá swing high đối-xu-hướng gần nhất</text>
+  <!-- lower swing high marker -->
+  <line x1="520" y1="150" x2="720" y2="150" stroke="#166534" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="600" y="145" font-size="9" font-weight="700" fill="#166534">lower swing high gần nhất</text>
+  <!-- down candles then break up -->
+  <line x1="540" y1="150" x2="540" y2="185" stroke="#DC2626" stroke-width="1.4"/><rect x="534.5" y="158" width="11" height="20" fill="#DC2626"/>
+  <line x1="562" y1="170" x2="562" y2="215" stroke="#DC2626" stroke-width="1.4"/><rect x="556.5" y="178" width="11" height="28" fill="#DC2626"/>
+  <line x1="584" y1="195" x2="584" y2="240" stroke="#16A34A" stroke-width="1.4"/><rect x="578.5" y="205" width="11" height="28" fill="#16A34A"/>
+  <line x1="606" y1="160" x2="606" y2="215" stroke="#16A34A" stroke-width="1.4"/><rect x="600.5" y="170" width="11" height="40" fill="#16A34A"/>
+  <!-- break candle -->
+  <line x1="628" y1="120" x2="628" y2="175" stroke="#16A34A" stroke-width="1.4"/><rect x="622.5" y="128" width="11" height="42" fill="#16A34A"/>
+  <circle cx="628" cy="150" r="8" fill="none" stroke="#166534" stroke-width="2.5"/>
+  <text x="640" y="132" font-size="9" font-weight="700" fill="#166534">MSS ✔</text>
+  <text x="522" y="335" font-size="9.5" fill="#6B7280">Conviction cao nhất — vào trên retest.</text>
+
+  <!-- conviction bar -->
+  <rect x="24" y="376" width="712" height="66" rx="6" fill="#F3F4F6"/>
+  <text x="36" y="398" font-size="11.5" font-weight="700" fill="#374151">Độ tin cậy tăng dần qua từng tầng:</text>
+  <rect x="36" y="408" width="150" height="14" rx="3" fill="#FCD34D"/>
+  <rect x="200" y="408" width="230" height="14" rx="3" fill="#60A5FA"/>
+  <rect x="444" y="408" width="280" height="14" rx="3" fill="#16A34A"/>
+  <text x="111" y="419" font-size="9.5" font-weight="700" fill="#7C4A03" text-anchor="middle">watch</text>
+  <text x="315" y="419" font-size="9.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">aggressive</text>
+  <text x="584" y="419" font-size="9.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">highest conviction (retest)</text>
+  <text x="36" y="437" font-size="10" fill="#6B7280">Đủ cả 3 tầng THEO THỨ TỰ tại một HTF PD array = cú đảo chiều mạnh nhất, đi trước retail.</text>
+</svg>

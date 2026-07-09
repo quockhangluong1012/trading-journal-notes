@@ -12,46 +12,11 @@ tags:
   - trading/study
   - "#time-and-price"
   - "#macro"
-status: developing
+status: seed
 category: Time & Price
-timeframes:
-  - D1
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[01 - ICT 2022 Model|ICT 2022]]"
-  - "[[08 - 08 30 AM NY Model]]"
-  - "[[08 - 7 AM Liquidity Hunt + IFVG Entry]]"
-markets:
-  - NDX
-  - EURUSD
-  - GBPUSD
-  - XAUUSD
-importance: 5
-confidence: 2
 last_reviewed: 2026-07-04
 created: 2026-07-04
 updated: 2026-07-04
-related_concepts:
-  - "[[18 - Kill Zones]]"
-  - "[[02 - AMD]]"
-  - "[[13 - FVG  - Fair Value Gap]]"
-  - "[[10 - Consequent Encroachment (Mean Threshold)]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[12 - Daily Bias]]"
-  - "[[16 - Internal & External Range Liquidity (IRL & ERL)]]"
-  - "[[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]"
-prerequisites:
-  - "[[18 - Kill Zones]]"
-  - "[[02 - AMD]]"
-  - "[[13 - FVG  - Fair Value Gap]]"
-  - "[[12 - Daily Bias]]"
-common_mistakes:
-  - "[[02 - Mistake - Enter before liquidity sweep]]"
-  - "[[03 - Mistake - Entry When MSS not in POI Zone]]"
 ---
 
 # Macro Times

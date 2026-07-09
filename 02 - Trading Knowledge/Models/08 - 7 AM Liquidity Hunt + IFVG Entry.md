@@ -14,39 +14,9 @@ tags:
   - "#ny-open"
 status: developing
 category: Entry Model
-timeframes:
-  - 15m
-  - 5m
-  - 1m
-  - 15s (entry tinh)
-models:
-  - ICT 2022 Model
-  - Unicorn Model
-markets:
-  - NQ1/NDX
-  - EURUSD
-  - GBPUSD
-  - XAUUSD
-importance: 5
-confidence: 3
 last_reviewed: 2026-07-05
 created: 2026-07-04
 updated: 2026-07-05
-related_concepts:
-  - "[[17 - Inverse Fair Value Gap - iFVG]]"
-  - "[[10 - Consequent Encroachment (Mean Threshold)]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[31 - Standard Deviation]]"
-  - "[[40 - Macro Times]]"
-prerequisites:
-  - "[[13 - FVG  - Fair Value Gap]]"
-  - "[[17 - Inverse Fair Value Gap - iFVG]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[10 - Consequent Encroachment (Mean Threshold)]]"
-common_mistakes:
-  - Pre-position trước 07:00
-  - Đánh dấu sai IFVG
-  - Quên lưu ý 30 phút đầu
 ---
 
 # 08 - 07:00 AM Liquidity Hunt + IFVG Entry

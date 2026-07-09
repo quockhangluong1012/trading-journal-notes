@@ -1,0 +1,1 @@
+Link: [Most Important ICT Concepts — Complete List for ICT Traders](https://innercircletrader.net/tutorials/most-important-ict-concepts-to-conquer-market-complete-list/)

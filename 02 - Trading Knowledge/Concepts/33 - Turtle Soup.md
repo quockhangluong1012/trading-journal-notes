@@ -11,32 +11,9 @@ tags:
   - "#TurtleSoup"
 status: developing
 category: Entry Model
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-  - M1
-models:
-  - "[[ICT 2022 Model]]"
-importance: 5
-confidence: 1
-last_reviewed:
+last_reviewed: 2026-07-09
 created: 2026-06-24
 updated: 2026-07-03
-related_concepts:
-  - "[[20 - Liquidity Sweep]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[Fair Value Gap]]"
-  - "[[07 - Buy-side Liquidity]]"
-  - "[[30 - Sell-side Liquidity]]"
-  - "[[12 - Daily Bias]]"
-prerequisites:
-  - "[[20 - Liquidity Sweep]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[19 - Liquidity]]"
-common_mistakes: []
 ---
 
 # Turtle Soup

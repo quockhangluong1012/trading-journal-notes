@@ -1,6 +1,6 @@
 ---
 type: ict-concept
-concept: "Forex/CFD Basics — Pip, Lot, Spread, Swap, Leverage, Margin"
+concept: Forex/CFD Basics — Pip, Lot, Spread, Swap, Leverage, Margin
 aliases:
   - Pip
   - Lot
@@ -16,15 +16,15 @@ tags:
   - trading/study
   - trading/foundation
   - trading/risk
-status: developing # seed | developing | tested | mastered
-category: "Risk Management"
-last_reviewed: 
+status: seed
+category: Risk Management
+last_reviewed:
 created: 2026-07-01
 updated: 2026-07-03
 common_mistakes:
-  - "Nhầm 1 lot với 1 đơn vị tài sản"
-  - "Tính size theo cảm tính thay vì theo pip value và stop loss"
-  - "Coi đòn bẩy là 'sức mua miễn phí' thay vì công cụ khuếch đại rủi ro"
+  - Nhầm 1 lot với 1 đơn vị tài sản
+  - Tính size theo cảm tính thay vì theo pip value và stop loss
+  - Coi đòn bẩy là 'sức mua miễn phí' thay vì công cụ khuếch đại rủi ro
 ---
 
 # Forex/CFD Basics — Pip, Lot, Spread, Swap, Leverage, Margin

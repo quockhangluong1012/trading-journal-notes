@@ -14,38 +14,9 @@ tags:
   - "#fvg"
 status: developing
 category: Entry Model
-timeframes:
-  - HTF bias (H4/H1)
-  - LTF entry (5m/1m/15s)
-models:
-  - ICT 2022 Model
-  - MMBM
-  - MMSM
-markets:
-  - NQ1/NDX
-  - EURUSD
-  - GBPUSD
-  - XAUUSD
-importance: 5
-confidence: 3
 last_reviewed: 2026-07-05
 created: 2026-07-04
 updated: 2026-07-05
-related_concepts:
-  - "[[04 - Breaker Block]]"
-  - "[[13 - FVG  - Fair Value Gap]]"
-  - "[[10 - Consequent Encroachment (Mean Threshold)]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[42 - SMT Divergence]]"
-prerequisites:
-  - "[[04 - Breaker Block]]"
-  - "[[13 - FVG  - Fair Value Gap]]"
-  - "[[25 - OB - Order Block]]"
-  - "[[21 - Market Structure Shift]]"
-common_mistakes:
-  - Gọi nhầm FVG/Breaker đơn là unicorn
-  - Vào lúc MSS thay vì chờ hồi
-  - Trade ngược HTF bias
 ---
 
 # 07 - Unicorn Model

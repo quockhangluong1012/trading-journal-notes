@@ -1,0 +1,1 @@
+Link: [ICT Intraday Profiles (Daily Profiles) — London Protraction Model](https://innercircletrader.net/tutorials/ict-intraday-profiles/)

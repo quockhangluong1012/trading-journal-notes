@@ -11,7 +11,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#reflexivity"
-status: developing
+status: seed
 category: Liquidity
 last_reviewed: 2026-07-04
 created: 2026-07-04

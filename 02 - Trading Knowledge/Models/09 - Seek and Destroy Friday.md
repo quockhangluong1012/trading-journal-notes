@@ -1,0 +1,1 @@
+Link: [ICT Seek and Destroy Friday: Profile, Setup & How to Trade It](https://innercircletrader.net/tutorials/ict-seek-and-destroy-friday/)

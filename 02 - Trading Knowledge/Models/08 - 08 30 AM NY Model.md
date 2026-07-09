@@ -13,38 +13,9 @@ tags:
   - "#ny-open"
 status: developing
 category: Entry Model
-timeframes:
-  - 15m (bias + DOL)
-  - 5m (structure)
-  - 1m (trigger)
-models:
-  - ICT 2022 Model
-  - Unicorn Model
-markets:
-  - NQ1/NDX
-  - EURUSD
-  - GBPUSD
-  - XAUUSD
-importance: 5
-confidence: 3
 last_reviewed: 2026-07-05
 created: 2026-07-04
 updated: 2026-07-05
-related_concepts:
-  - "[[21 - Market Structure Shift]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[18 - Kill Zones]]"
-  - "[[40 - Macro Times]]"
-  - "[[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]"
-prerequisites:
-  - "[[12 - Daily Bias]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[25 - OB - Order Block]]"
-  - "[[13 - FVG  - Fair Value Gap]]"
-common_mistakes:
-  - Pre-position trước 08:30
-  - Bỏ qua MSS
-  - Không có context 15m
 ---
 
 # 08 - 08:30 AM NY Model

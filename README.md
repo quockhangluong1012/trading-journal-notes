@@ -69,7 +69,7 @@ Dashboards parse frontmatter directly, so keys must match exactly:
 
 - **Trade**: `date, symbol, position, result, session, setup, entry_model, entry_timeframe, higher_timeframe_bias, bias_correct, entry_price, exit_price, take_profit, stop_loss, pnl, r_multiple, planned_rr, risk_percent, confidence, mistakes, emotions, tags`
 - **Backtest**: `type: backtest, backtest_date, trade_date, symbol, position, result, session, setup, entry_model, entry_timeframe, htf_bias, bias_correct, poi_type, liquidity_swept, displacement, mss, fvg_valid, entry_price, stop_loss, take_profit, r_planned, r_multiple, grade, followed_plan, tags`
-- **ICT concept**: `type: ict-concept, concept, aliases, tags, status (seed|developing|tested|mastered), category, timeframes, models, markets, importance (1-5), confidence (1-5), last_reviewed, created, updated, related_concepts, prerequisites, common_mistakes`
+- **ICT concept**: `type: ict-concept, concept, aliases, tags, status (seed|developing|tested|mastered), category, timeframes, models, markets, importance (1-5), confidence (1-5), last_reviewed, created, updated, prerequisites, common_mistakes`
 - **Goal**: `type: goal, horizon (Long|Mid|Short), category, status, priority, progress (0-100), metric, baseline, target, phase, start_date, due_date, tags` — progress is computed from checkboxes under the `## Cột mốc` (milestones) heading, so keep that heading exact
 - **Weekly review**: `type: weekly-trading-review, week, start_date, end_date, market_focus, strategy, status, tags`
 

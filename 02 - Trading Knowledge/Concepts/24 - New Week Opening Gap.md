@@ -11,29 +11,9 @@ tags:
   - "#NWOG"
 status: seed
 category: Time & Price
-timeframes:
-  - D1
-  - H4
-  - H1
-  - M15
-  - M5
-models:
-  - "[[ICT 2022 Model]]"
-importance: 4
-confidence: 1
 last_reviewed:
 created: 2026-06-24
 updated: 2026-07-03
-related_concepts:
-  - "[[10 - Consequent Encroachment (Mean Threshold)]]"
-  - "[[Fair Value Gap]]"
-  - "[[12 - Daily Bias]]"
-  - "[[27 - Premium Discount]]"
-  - "[[18 - Kill Zones]]"
-prerequisites:
-  - "[[Fair Value Gap]]"
-  - "[[10 - Consequent Encroachment (Mean Threshold)]]"
-common_mistakes: []
 ---
 
 # New Week Opening Gap

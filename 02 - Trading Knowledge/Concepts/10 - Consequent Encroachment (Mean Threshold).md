@@ -9,7 +9,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#CE"
-status: seed
+status: developing
 category: PD Array
 timeframes:
   - D1
@@ -21,9 +21,9 @@ timeframes:
 models:
   - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
-last_reviewed: 2026-07-02
+last_reviewed: 2026-07-09
 created: 2026-06-23
-updated: 2026-07-02
+updated: 2026-07-09
 common_mistakes:
   - "[[Mistake - Trade Every FVG]]"
   - "[[Mistake - Entry Before Liquidity Sweep]]"
@@ -435,25 +435,6 @@ Bullish FVG hợp lệ nhưng giá ĐÓNG NẾN vượt CE xuống (CE breach)
 
 ### Câu nhắc nhở khi trade
 > **"CE làm entry của tôi sắc hơn, không làm một setup tồi trở nên tốt. Đóng nến vượt CE = dừng lại."**
-
----
-
-## 13. Mức độ thành thạo
-
-| Tiêu chí | Điểm 1-5 | Ghi chú |
-|---|---:|---|
-| Hiểu định nghĩa |  | Có nắm CE = 50% (Mean Threshold) và vai trò refine không? |
-| Nhận diện trên chart |  | Có vẽ đúng CE và phân biệt respect/breach không? |
-| Biết khi nào bỏ qua |  | Có bỏ CE của array rác / khi CE breach không? |
-| Kết hợp với context HTF |  | CE có dùng cùng bias + premium/discount + sweep không? |
-| Áp dụng vào trade thực tế |  | Entry có thực sự xảy ra quanh CE với stop logic gọn không? |
-| Review sau trade |  | Có so sánh at-ce vs edge bằng dữ liệu journal không? |
-
-**Kế hoạch review tiếp theo:**
-- [ ] Thu thập 20–30 lệnh có gắn tag `[[Consequent Encroachment]]`.
-- [ ] So sánh R:R & win rate giữa entry at-ce và entry edge.
-- [ ] Thống kê tỉ lệ array respect CE vs breach CE và hệ quả.
-- [ ] Cập nhật rule chỉ khi dữ liệu đủ mẫu.
 
 ---
 

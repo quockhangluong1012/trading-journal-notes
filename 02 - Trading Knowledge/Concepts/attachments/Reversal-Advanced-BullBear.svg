@@ -1,0 +1,58 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Bullish reversal vs Bearish reversal</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Đảo tăng chỉ đáng tin tại DISCOUNT của HTF PD array; đảo giảm tại PREMIUM. Chuỗi bắt đáy/đỉnh.</text>
+
+  <!-- Panel Bullish -->
+  <rect x="24" y="72" width="352" height="308" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="94" font-size="12.5" font-weight="700" fill="#16A34A">Bullish reversal (tại ĐÁY / discount)</text>
+  <!-- PD split: premium top, discount bottom -->
+  <line x1="40" y1="230" x2="360" y2="230" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="46" y="245" font-size="9" fill="#6B7280">50% (equilibrium)</text>
+  <rect x="40" y="230" width="320" height="130" fill="#DBEAFE" opacity="0.4"/>
+  <text x="300" y="352" font-size="9.5" font-weight="700" fill="#1D4ED8">DISCOUNT</text>
+  <!-- HTF PD array (discount FVG/OB) -->
+  <rect x="40" y="290" width="320" height="26" fill="#93C5FD" opacity="0.5"/>
+  <text x="46" y="306" font-size="9" fill="#1E40AF">HTF PD array (discount FVG/OB)</text>
+  <!-- down candles into discount -->
+  <line x1="72" y1="130" x2="72" y2="175" stroke="#DC2626" stroke-width="1.4"/><rect x="66.5" y="138" width="11" height="30" fill="#DC2626"/>
+  <line x1="94" y1="160" x2="94" y2="230" stroke="#DC2626" stroke-width="1.4"/><rect x="88.5" y="170" width="11" height="52" fill="#DC2626"/>
+  <line x1="116" y1="215" x2="116" y2="325" stroke="#DC2626" stroke-width="1.4"/><rect x="110.5" y="230" width="11" height="70" fill="#DC2626"/>
+  <!-- sequence bottom -->
+  <line x1="138" y1="290" x2="138" y2="330" stroke="#16A34A" stroke-width="1.4"/><rect x="132.5" y="298" width="11" height="28" fill="#16A34A"/>
+  <text x="120" y="345" font-size="8.5" fill="#166534">seq. đáy</text>
+  <line x1="160" y1="250" x2="160" y2="305" stroke="#16A34A" stroke-width="1.4"/><rect x="154.5" y="260" width="11" height="40" fill="#16A34A"/>
+  <!-- rise: IFVG/BPR -> CISD -> MSS labels -->
+  <line x1="182" y1="205" x2="182" y2="265" stroke="#16A34A" stroke-width="1.4"/><rect x="176.5" y="215" width="11" height="45" fill="#16A34A"/>
+  <line x1="204" y1="160" x2="204" y2="220" stroke="#16A34A" stroke-width="1.4"/><rect x="198.5" y="170" width="11" height="45" fill="#16A34A"/>
+  <line x1="226" y1="120" x2="226" y2="175" stroke="#16A34A" stroke-width="1.4"/><rect x="220.5" y="130" width="11" height="42" fill="#16A34A"/>
+  <path d="M128 320 Q170 300 230 130" fill="none" stroke="#166534" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="236" y="128" font-size="10" font-weight="700" fill="#166534">↑ đảo tăng</text>
+  <text x="150" y="128" font-size="9" fill="#166534">IFVG/BPR→CISD→MSS</text>
+
+  <!-- Panel Bearish -->
+  <rect x="392" y="72" width="344" height="308" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="94" font-size="12.5" font-weight="700" fill="#DC2626">Bearish reversal (tại ĐỈNH / premium)</text>
+  <line x1="408" y1="222" x2="720" y2="222" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="414" y="237" font-size="9" fill="#6B7280">50% (equilibrium)</text>
+  <rect x="408" y="112" width="312" height="110" fill="#FEE2E2" opacity="0.5"/>
+  <text x="660" y="128" font-size="9.5" font-weight="700" fill="#B91C1C">PREMIUM</text>
+  <rect x="408" y="135" width="312" height="26" fill="#FCA5A5" opacity="0.5"/>
+  <text x="414" y="151" font-size="9" fill="#B91C1C">HTF PD array (premium FVG/OB)</text>
+  <!-- up candles into premium -->
+  <line x1="440" y1="300" x2="440" y2="345" stroke="#16A34A" stroke-width="1.4"/><rect x="434.5" y="308" width="11" height="30" fill="#16A34A"/>
+  <line x1="462" y1="230" x2="462" y2="305" stroke="#16A34A" stroke-width="1.4"/><rect x="456.5" y="240" width="11" height="55" fill="#16A34A"/>
+  <line x1="484" y1="150" x2="484" y2="250" stroke="#16A34A" stroke-width="1.4"/><rect x="478.5" y="160" width="11" height="72" fill="#16A34A"/>
+  <!-- sequence top -->
+  <line x1="506" y1="130" x2="506" y2="170" stroke="#DC2626" stroke-width="1.4"/><rect x="500.5" y="138" width="11" height="28" fill="#DC2626"/>
+  <text x="490" y="126" font-size="8.5" fill="#B91C1C">seq. đỉnh</text>
+  <line x1="528" y1="150" x2="528" y2="210" stroke="#DC2626" stroke-width="1.4"/><rect x="522.5" y="160" width="11" height="40" fill="#DC2626"/>
+  <line x1="550" y1="190" x2="550" y2="255" stroke="#DC2626" stroke-width="1.4"/><rect x="544.5" y="200" width="11" height="45" fill="#DC2626"/>
+  <line x1="572" y1="230" x2="572" y2="300" stroke="#DC2626" stroke-width="1.4"/><rect x="566.5" y="240" width="11" height="50" fill="#DC2626"/>
+  <line x1="594" y1="275" x2="594" y2="335" stroke="#DC2626" stroke-width="1.4"/><rect x="588.5" y="285" width="11" height="42" fill="#DC2626"/>
+  <path d="M500 155 Q560 200 596 330" fill="none" stroke="#B91C1C" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="600" y="330" font-size="10" font-weight="700" fill="#B91C1C">↓ đảo giảm</text>
+  <text x="510" y="360" font-size="9" fill="#B91C1C">IFVG/BPR→CISD→MSS</text>
+
+  <text x="24" y="404" font-size="11.5" font-weight="700" fill="#1D4ED8">Bối cảnh PD array là điều kiện lọc quan trọng: đảo chiều mà KHÔNG đứng ở discount/premium của HTF thường là bẫy.</text>
+</svg>
