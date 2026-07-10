@@ -29,7 +29,7 @@ tags:
 
 ## Cách đo lường
 - **Chỉ số:** Số lượng note backtest
-- **Hiện tại:** 7 backtest
+- **Hiện tại:** 10 backtest
 - **Mục tiêu:** 200 backtest
 - **Tần suất review:** Hàng tuần
 
@@ -48,6 +48,7 @@ tags:
 | 2026-07-07 | 25 | 2 backtest mới log hôm nay (`04 - Backtesting/2026-07-07/`, EURUSD Long, Grade A, R 2.23 và 2.48), ngày backtest thứ 2 liên tiếp. Tổng số backtest thực tế trong toàn vault hiện là **5 note** — `baseline` ở frontmatter đã được sửa thành "5" hôm nay (khớp thực tế), nhưng mục "Cách đo lường → Hiện tại" ở trên vẫn ghi "~15 backtest", chưa cập nhật theo. Cột mốc "50 backtest đã log" vẫn 0/4. Nhịp thực tế 5/14 ngày ≈ 0,357/ngày, vẫn chậm hơn nhịp cần thiết (0,538/ngày) khoảng 1,5 lần. |
 | 2026-07-08 | 5 | 1 backtest mới (`04 - Backtesting/2026-07-08/`, EURUSD Long 2005-05-02, **Loss, Grade D, R −1, followed_plan No** — FOMO vào trước khi có Displacement + MSS). Đây là **điểm dữ liệu âm đầu tiên** của mẫu gần đây (4 note trước đều Win Grade A) → tăng độ tin cậy thống kê của mẫu. Tổng backtest thực tế toàn vault: **6/200 = 3%**, ngày backtest **thứ 3 liên tiếp** (07-06→07-08). Nhịp thực tế 6/15 ngày = **0,40/ngày**, vẫn chậm hơn nhịp cần (0,538/ngày) ~1,35 lần nhưng đã thu hẹp so với 07-07. `progress` frontmatter đã sửa 25 → **5** hôm nay (khớp thực tế). Mục "Cách đo lường → Hiện tại" vẫn ghi "~15 backtest" — **chưa vá**, cần sửa thành "6 backtest". Cột mốc "50 backtest" vẫn 0/4. |
 | 2026-07-09 | 5 | 1 backtest mới (`04 - Backtesting/2026-07-09/`, EURUSD Short 2005-05-11, **Win, Grade A, R thực nhận 2,85 / r_planned 3, followed_plan Yes** — chuỗi đầy đủ: Sweep buy-side tại CE của BPR H1 → Displacement → MSS → FVG → Entry). **Bật lại chất lượng ngay sau điểm Grade D FOMO hôm qua**, áp dụng đúng rule "No MSS No Entry". Tổng backtest thực tế toàn vault: **7/200 = 3,5%**, ngày backtest **thứ 4 liên tiếp** (07-06→07-09) — chuỗi dài nhất từ trước tới nay. Nhịp thực tế 7/16 ngày ≈ **0,44/ngày**, vẫn chậm hơn nhịp cần (~0,54/ngày) ~1,23 lần nhưng tiếp tục thu hẹp. Mục "Cách đo lường → Hiện tại" vẫn ghi "~15 backtest" — **vẫn chưa vá**, cần sửa thành "7 backtest". Cột mốc "50 backtest" vẫn 0/4. |
+| 2026-07-10 | 5 | **3 backtest mới** (`04 - Backtesting/2026-07-10/`, đều EURUSD 2022 Model): 01 Win 2021-05-03 Short **Grade A followed_plan Yes R 3.075**, 02 Loss 2021-05-07 Short **Grade C/D R −1 followed_plan No — vào ngoài Kill Zone (Asia), tự đánh dấu `invalid-out-of-KZ` loại khỏi cohort edge**, 03 Win 2021-07-22 Long **Grade B R 2.86 followed_plan No**. Net R thô +4.94R (cohort hợp lệ +5.94R/2 lệnh). Tổng backtest thực tế toàn vault: **10/200 = 5%**, ngày backtest **thứ 5 liên tiếp** (07-06→07-10) — chuỗi dài nhất từ trước tới nay. Nhịp thực tế **10/17 ngày ≈ 0,588/ngày** → **lần đầu VƯỢT nhịp cần (~0,54/ngày)** cho due 2027-06-30. Prose "Cách đo lường → Hiện tại" đã **sync 7 → 10 backtest** hôm nay. ⚠️ Mẫu lệch 9/10 note là EURUSD — cần thêm NAS100/GBPUSD/XAUUSD. Cột mốc "50 backtest" vẫn 0/4. |
 
 ## Liên kết
 - Lộ trình: [[01 - Roadmap]]
