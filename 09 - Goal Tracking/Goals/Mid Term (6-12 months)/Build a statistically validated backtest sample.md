@@ -4,9 +4,9 @@ horizon: Mid
 category: Backtest
 status: In Progress
 priority: Medium
-progress: 5
+progress: 6
 metric: Tổng số backtest đã log trong 04 - Backtesting
-baseline: "5"
+baseline: "6"
 target: 200 backtest đã log
 phase: Phase 2 - Edge Building
 start_date: 2026-06-23
@@ -29,7 +29,7 @@ tags:
 
 ## Cách đo lường
 - **Chỉ số:** Số lượng note backtest
-- **Hiện tại:** 6 backtest
+- **Hiện tại:** 7 backtest
 - **Mục tiêu:** 200 backtest
 - **Tần suất review:** Hàng tuần
 
