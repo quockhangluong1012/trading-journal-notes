@@ -21,9 +21,9 @@ timeframes:
 models:
   - "[[01 - ICT 2022 Model|ICT 2022]]"
 importance: 5
-last_reviewed: 2026-07-09
+last_reviewed: 2026-07-10
 created: 2026-06-23
-updated: 2026-07-09
+updated: 2026-07-10
 common_mistakes:
   - "[[Mistake - Trade Every FVG]]"
   - "[[Mistake - Entry Before Liquidity Sweep]]"

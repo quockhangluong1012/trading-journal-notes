@@ -29,7 +29,7 @@ tags:
 
 ## Cách đo lường
 - **Chỉ số:** Số lượng note backtest
-- **Hiện tại:** ~15 backtest
+- **Hiện tại:** 6 backtest
 - **Mục tiêu:** 200 backtest
 - **Tần suất review:** Hàng tuần
 
