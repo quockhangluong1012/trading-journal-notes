@@ -159,18 +159,18 @@ Nhiều trader có hệ thống tốt nhưng vẫn thua vì trade SAI GIỜ — 
 
 Mỹ chuyển giờ hai lần mỗi năm: "spring forward" vào Chủ Nhật thứ hai của tháng 3 (chuyển sang EDT, UTC−4 — mùa hè) và "fall back" vào Chủ Nhật đầu tháng 11 (chuyển về EST, UTC−5 — mùa đông). Vì Việt Nam đứng yên ở UTC+7, khoảng cách giờ giữa New York và Việt Nam **co giãn theo mùa của Mỹ**, không theo mùa của Việt Nam.
 
-![[KillZone-Advanced-DST-Conversion.svg]]
+![[KillZone-Advanced-DST-Conversion.svg|697]]
 *So sánh giờ Việt Nam của từng Kill Zone giữa hai chế độ: mùa hè Mỹ (EDT, UTC−4, Việt Nam = giờ NY + 11 giờ) và mùa đông Mỹ (EST, UTC−5, Việt Nam = giờ NY + 12 giờ). Toàn bộ các mốc dịch lùi thêm 1 giờ khi Mỹ chuyển sang giờ mùa đông.*
 
-| Kill Zone (giờ New York) | Giờ VN — mùa hè Mỹ (EDT) | Giờ VN — mùa đông Mỹ (EST) |
-|---|---|---|
-| Asian Range 20:00–00:00 | 07:00–11:00 | 08:00–12:00 |
-| London Open KZ 02:00–05:00 | 13:00–16:00 | 14:00–17:00 |
-| Silver Bullet London 03:00–04:00 | 14:00–15:00 | 15:00–16:00 |
-| New York AM KZ 07:00–10:00 | 18:00–21:00 | 19:00–22:00 |
-| Silver Bullet NY AM 10:00–11:00 | 21:00–22:00 | 22:00–23:00 |
-| NY Lunch (vùng chết) 11:30–13:00 | 22:30–00:00 | 23:30–01:00 |
-| London Close KZ 10:00–12:00 | 21:00–23:00 | 22:00–00:00 |
+| Kill Zone (giờ New York)         | Giờ VN — mùa hè Mỹ (EDT) | Giờ VN — mùa đông Mỹ (EST) |
+| -------------------------------- | ------------------------ | -------------------------- |
+| Asian Range 20:00–00:00          | 07:00–11:00              | 08:00–12:00                |
+| London Open KZ 02:00–05:00       | 13:00–16:00              | 14:00–17:00                |
+| Silver Bullet London 03:00–04:00 | 14:00–15:00              | 15:00–16:00                |
+| New York AM KZ 07:00–10:00       | 18:00–21:00              | 19:00–22:00                |
+| Silver Bullet NY AM 10:00–11:00  | 21:00–22:00              | 22:00–23:00                |
+| NY Lunch (vùng chết) 11:30–13:00 | 22:30–00:00              | 23:30–01:00                |
+| London Close KZ 10:00–12:00      | 21:00–23:00              | 22:00–00:00                |
 
 > [!warning] Quy tắc kiểm tra nhanh chế độ nào đang áp dụng
 > Mỹ ở **giờ mùa hè (EDT)** khoảng từ Chủ Nhật thứ hai tháng 3 đến Chủ Nhật đầu tháng 11; phần còn lại của năm là **giờ mùa đông (EST)**. Ngày chuyển chính xác thay đổi mỗi năm — luôn tra lại lịch DST của Mỹ cho năm hiện tại trước khi tự quy đổi bằng trí nhớ. Cách an toàn nhất vẫn là **set đồng hồ chart theo New York time** thay vì tự cộng trừ giờ tay, vì phần lớn nền tảng chart tự động xử lý DST đúng.
