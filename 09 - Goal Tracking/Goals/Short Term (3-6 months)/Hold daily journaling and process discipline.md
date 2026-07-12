@@ -23,8 +23,8 @@ tags:
 > - **Điều kiện thành công:** Ghi nhật ký mỗi ngày giao dịch và mọi lệnh đều theo checklist playbook, 5 ngày/tuần.
 
 ## Định nghĩa hoàn thành
-- [ ] Có ghi nhật ký mỗi ngày giao dịch
-- [ ] Hoàn thành checklist trước lệnh cho mọi lệnh
+- [x] Có ghi nhật ký mỗi ngày giao dịch
+- [x] Hoàn thành checklist trước lệnh cho mọi lệnh
 - [ ] Duy trì 8 tuần liên tiếp
 
 ## Cách đo lường
@@ -35,8 +35,8 @@ tags:
 
 ## Cột mốc
 > Mỗi checkbox = một cột mốc. Dashboard đếm các mục này để tính tiến độ.
-- [ ] Định nghĩa quy trình ghi nhật ký hàng ngày và checklist trước lệnh
-- [ ] Một tuần trọn vẹn ghi nhật ký mỗi ngày giao dịch
+- [x] Định nghĩa quy trình ghi nhật ký hàng ngày và checklist trước lệnh
+- [x] Một tuần trọn vẹn ghi nhật ký mỗi ngày giao dịch
 - [ ] Bốn tuần liên tiếp đạt 5 ngày/tuần
 - [ ] Tám tuần liên tiếp duy trì đều
 
