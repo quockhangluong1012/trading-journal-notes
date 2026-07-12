@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="470" viewBox="0 0 880 470" font-family="Segoe UI, Arial, sans-serif">
+<rect x="0" y="0" width="880" height="470" rx="12" fill="#191b1f"/>
+<defs>
+<marker id="ad" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#fa5252" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="gg" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#9aa0a6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+
+<text x="24" y="34" font-size="16" fill="#e6e8ea" font-weight="bold">Sweep phai CUNG KHUNG voi MSS/FVG  -  EQH la TARGET, khong phai TRIGGER</text>
+
+<!-- main chart panel -->
+<rect x="24" y="52" width="832" height="284" rx="6" fill="#202329" stroke="#2a2d33"/>
+
+<!-- EQH (BSL H1) -->
+<line x1="150" y1="86" x2="848" y2="86" stroke="#6b7280" stroke-width="1.4"/>
+<circle cx="340" cy="86" r="3" fill="#9aa0a6"/><circle cx="420" cy="86" r="3" fill="#9aa0a6"/><circle cx="500" cy="86" r="3" fill="#9aa0a6"/><circle cx="580" cy="86" r="3" fill="#9aa0a6"/>
+<text x="452" y="80" font-size="11.5" fill="#9aa0a6">EQH (4 dinh ngang) = BSL cap H1  =  TARGET / draw</text>
+
+<!-- gap: EQH chua bi quet -->
+<line x1="278" y1="92" x2="278" y2="146" stroke="#9aa0a6" stroke-width="1.2" stroke-dasharray="4 3" marker-start="url(#gg)" marker-end="url(#gg)"/>
+<text x="286" y="112" font-size="10.5" fill="#9aa0a6">EQH chua</text>
+<text x="286" y="126" font-size="10.5" fill="#9aa0a6">bi quet</text>
+
+<!-- local BSL just above OB -->
+<line x1="150" y1="150" x2="330" y2="150" stroke="#9aa0a6" stroke-width="1.1" stroke-dasharray="5 4"/>
+<text x="40" y="146" font-size="10.5" fill="#9aa0a6">BSL cuc bo (STH ngay tren OB)</text>
+
+<!-- OB box -->
+<rect x="150" y="166" width="698" height="52" fill="#4b5563" opacity="0.22"/>
+<line x1="150" y1="192" x2="848" y2="192" stroke="#f0a500" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="820" y="188" font-size="10.5" fill="#f0a500">CE</text>
+<text x="470" y="184" font-size="11" fill="#e6e8ea">OB H1 (POI premium): 1.75360 - 1.74360</text>
+
+<!-- SSL target -->
+<line x1="40" y1="312" x2="848" y2="312" stroke="#6b7280" stroke-width="1.1" stroke-dasharray="4 4"/>
+<text x="44" y="326" font-size="10.5" fill="#9aa0a6">SSL = TARGET that su (theo bias D1 bearish)</text>
+
+<!-- price: retrace up into OB, wick above OB top (sweep local BSL), reject -->
+<polyline points="60,300 100,268 140,232 176,200 206,176 232,160 244,150" fill="none" stroke="#40c057" stroke-width="2.2"/>
+<circle cx="244" cy="150" r="5" fill="#fa5252"/>
+<!-- displacement down = MSS -->
+<polyline points="244,150 268,186 296,228 324,268 350,300 372,310" fill="none" stroke="#fa5252" stroke-width="2.4" marker-end="url(#ad)"/>
+
+<!-- annotations -->
+<text x="322" y="146" font-size="11" fill="#40c057">&lt;- Wick tren OB + dong lai = SWEEP cap M5 = TRIGGER (da xay ra)</text>
+<text x="386" y="252" font-size="11" fill="#fa5252">Displacement + M5 MSS xuong  -&gt;  vao lenh, chay ve SSL</text>
+
+<!-- bottom: DUNG vs SAI -->
+<rect x="24" y="348" width="408" height="104" rx="6" fill="#20262b" stroke="#40c057"/>
+<text x="40" y="372" font-size="12.5" fill="#40c057" font-weight="bold">DUNG  -  co the vao lenh</text>
+<text x="40" y="394" font-size="11" fill="#e6e8ea">Entry TF = M5  -&gt;  'sweep' can la sweep CAP M5 (STH tai POI).</text>
+<text x="40" y="412" font-size="11" fill="#e6e8ea">Wick tren OB + dong lai DA la sweep do.</text>
+<text x="40" y="430" font-size="11" fill="#e6e8ea">M5 MSS + FVG = du dieu kien. SL tren dinh phan ung, target SSL.</text>
+
+<rect x="448" y="348" width="408" height="104" rx="6" fill="#20262b" stroke="#fa5252"/>
+<text x="464" y="372" font-size="12.5" fill="#fa5252" font-weight="bold">SAI  -  bo lo lenh</text>
+<text x="464" y="394" font-size="11" fill="#e6e8ea">Doi EQH (cap H1) quet moi vao = ep dieu kien HTF</text>
+<text x="464" y="412" font-size="11" fill="#e6e8ea">lam TRIGGER cho entry cap M5  -&gt;  lech khung.</text>
+<text x="464" y="430" font-size="11" fill="#e6e8ea">EQH la TARGET, khong phai trigger. Ket qua: dung nhin lenh troi.</text>
+</svg>
