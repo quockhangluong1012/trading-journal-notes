@@ -127,6 +127,39 @@ dv.table(["Entry Model", "N", "Wins", "Win%", "Tổng R"], rows);
 
 ---
 
+## 5.1 CE vs Edge Entry — So sánh Expectancy
+
+> [!tip] Mục đích
+> So sánh **hai kiểu entry**: `CE` (vào 50% FVG, RR cao nhưng ít khi được fill) và `Edge` (first-touch nửa trên FVG, RR thấp hơn nhưng fill nhiều hơn). Cột **Avg RR-nếu-CE** cho thấy RR bạn *đánh đổi* khi chọn Edge. Sau đủ mẫu, hãy để **Expectancy** làm trọng tài — không phải RR/lệnh.
+
+```dataviewjs
+const pages = dv.pages('"04 - Backtesting"').where(p => p.type == "backtest");
+const avg = a => a.length ? a.reduce((x,y)=>x+y,0)/a.length : 0;
+const groups = {};
+for (const p of pages) {
+  const k = p.entry_type || "—";
+  if (!groups[k]) groups[k] = {n:0, winR:[], lossR:[], rp:[], ce:[]};
+  const g = groups[k];
+  g.n++;
+  const r = Number(p.r_multiple);
+  if (p.result == "Win" && !isNaN(r)) g.winR.push(r);
+  if (p.result == "Loss" && !isNaN(r)) g.lossR.push(r);
+  if (!isNaN(Number(p.r_planned))) g.rp.push(Number(p.r_planned));
+  if (!isNaN(Number(p.rr_if_ce))) g.ce.push(Number(p.rr_if_ce));
+}
+const rows = Object.entries(groups).map(([k,g]) => {
+  const w = g.winR.length, l = g.lossR.length;
+  const decided = w + l;
+  const winPct = decided ? w/decided : 0;
+  const exp = (winPct*avg(g.winR)) + ((1-winPct)*avg(g.lossR));
+  return [k, g.n, `${w}/${l}`, (winPct*100).toFixed(0)+"%",
+          avg(g.rp).toFixed(2)+"R", avg(g.ce).toFixed(2)+"R", exp.toFixed(2)+"R"];
+});
+dv.table(["Entry Type","N","W / L","Win%","Avg RR thực","Avg RR-nếu-CE","Expectancy"], rows);
+```
+
+---
+
 ## 6. Setup điểm cao cần học lại (Grade A/B)
 
 ```dataview

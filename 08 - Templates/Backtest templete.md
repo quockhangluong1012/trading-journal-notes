@@ -21,6 +21,8 @@ stop_loss:
 take_profit:
 r_planned:
 r_multiple:
+entry_type:
+rr_if_ce:
 grade:
 followed_plan:
 tags: [backtest, ICT2022]
@@ -52,9 +54,16 @@ tags: [backtest, ICT2022]
 | Take Profit          |                                                   |
 | R Planned            |                                                   |
 | R Multiple (kết quả) |                                                   |
+| Entry Type           | CE / Edge                                         |
+| RR nếu vào CE        |                                                   |
 | Grade                | A / B / C / D / F                                 |
 
 > ⚠️ Nhớ điền các field tương ứng trong **frontmatter** (phía trên) để Dataview dashboard tự tổng hợp.
+
+> [!note] Cách điền Entry Type & RR nếu vào CE
+> - **`entry_type`**: `CE` nếu vào tại Consequent Encroachment (50% FVG); `Edge` nếu vào first-touch nửa trên FVG (giữa CE và cạnh trên) vì giá khả năng cao không về CE.
+> - **`r_planned`** = RR *thực tế* tại điểm vào (ví dụ Edge = 2.7). **`rr_if_ce`** = RR *giả định nếu* vào ở CE (ví dụ 3.65). Nếu vào đúng CE thì `rr_if_ce` = `r_planned`.
+> - Mục đích: sau ~20–30 mẫu, dashboard tự so sánh **fill-rate + expectancy** của CE vs Edge → để *dữ liệu* quyết định rule, không phải cảm tính. Quy tắc bất biến: chỉ chấp nhận Edge khi RR thực ≥ **RR floor** đã đặt trước.
 
 ---
 
