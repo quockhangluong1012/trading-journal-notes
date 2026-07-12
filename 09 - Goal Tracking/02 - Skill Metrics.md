@@ -30,9 +30,11 @@ dv.container.innerHTML = `
 
 > Mỗi tuần chấm điểm 1–5 cho hai chỉ số chấm tay. **Chất lượng quy trình** = mức độ theo checklist/playbook. **Kỷ luật** = mức độ giữ kế hoạch & quản trị rủi ro. Ghi luôn số backtest trong tuần và số lần mắc lỗi top 3.
 
-| Tuần | Backtest trong tuần | Lỗi top-3 (số lần) | Chất lượng quy trình (1–5) | Kỷ luật (1–5) | Ghi chú |
-|---|---:|---:|---:|---:|---|
-| 2026-W26 |  |  |  |  | Tuần khởi tạo hệ thống mục tiêu |
+| Tuần     | Backtest trong tuần | Lỗi top-3 (số lần) | Chất lượng quy trình (1–5) | Kỷ luật (1–5) | Ghi chú                         |
+| -------- | ------------------: | -----------------: | -------------------------: | ------------: | ------------------------------- |
+| 2026-W26 |                     |                    |                            |               | Tuần khởi tạo hệ thống mục tiêu |
+| 2026-W27 |          1           |          1          |           3                 |        2       | Tập trung học, ôn lại các khái niệm cốt lõi của ICT 2022 Model |
+| 2026-W28 |          10           |                    |            3                |         4      | Tuần đầu bắt đầu tập trung học tập và backtest |
 
 ## Định nghĩa chỉ số
 
