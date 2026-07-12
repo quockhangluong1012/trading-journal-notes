@@ -103,6 +103,7 @@ tags:
 | Ngày       | Phase    | Lợi nhuận % | Tiến độ % | Ghi chú                                                                |
 | ---------- | -------- | ----------: | --------: | ---------------------------------------------------------------------- |
 | 2026-06-23 | Chuẩn bị |           0 |         0 | Dựng mục tiêu & ghi luật quỹ. Chưa mua gói — tập trung backtest trước. |
+| 2026-07-12 | Chuẩn bị |           0 |         0 | **Phá chuỗi 19 ngày im lặng của log này (gần nhất 2026-06-23).** Chuyển động THẬT duy nhất hôm nay: sửa nhãn `phase` frontmatter **`Phase 4 - Challenge` → `Phase 0 - Preparation`** (nhãn cũ sai — chưa mua gói). ⚠️ **Việc mở khoá thật vẫn CHƯA làm:** bảng lot size 0,5%/1% cho tài khoản 10K$ (bước 3 Giai đoạn 0) — file task 07-12 tick `[x]` nhưng **không có note lot-size nào tồn tại** trong `03 - Playbooks` hay `09 - Goal Tracking`. Đây là overtick, không phải hoàn thành. Progress **vẫn 0%**, cột mốc **0/8**, chưa chạm bước Giai đoạn 0 nào có kết quả. Rào cản #1 tới mốc 2027-01-07 (còn 179 ngày). |
 
 ## Liên kết
 - Lộ trình: [[01 - Roadmap]]

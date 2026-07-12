@@ -103,6 +103,7 @@ tags:
 | Ngày | Phase | Lợi nhuận % | Ngày có lãi | Tiến độ % | Ghi chú |
 |---|---|---:|---:|---:|---|
 | 2026-06-23 | Chuẩn bị | 0 | 0 | 0 | Dựng mục tiêu & ghi luật quỹ. Chưa mua gói — tập trung backtest trước. |
+| 2026-07-12 | Chuẩn bị | 0 | 0 | 0 | **Phá chuỗi 19 ngày im lặng (gần nhất 2026-06-23).** Chuyển động THẬT hôm nay: sửa nhãn `phase` **`Phase 4 - Challenge` → `Phase 0 - Preparation`**. ⚠️ **Chưa làm:** bảng lot size 0,5%/1% + ngưỡng "ngày có lãi = +50$ (0,5%)" (bước 3 Giai đoạn 0, dùng chung với FTMO) — file task 07-12 tick `[x]` nhưng **không có note lot-size nào tồn tại** → overtick. Nhắc luật riêng cần nắm trước khi làm bảng: daily drawdown The5ers tính từ **equity ĐÓNG CỬA hôm trước** (không reset về balance gốc như FTMO) + cần **≥3 ngày có lãi ≥0,5%**. Progress **vẫn 0%**, cột mốc **0/8**. Rào cản #1 tới mốc 2027-01-07 (còn 179 ngày). |
 
 ## Liên kết
 - Lộ trình: [[01 - Roadmap]]
