@@ -8,7 +8,7 @@ progress: 0
 metric: Vượt qua 2 phase của FTMO Challenge và nhận tài khoản cấp vốn 10.000$
 baseline: Chưa bắt đầu thử thách (0/2 phase)
 target: Pass Phase 1 (+10%) → Pass Phase 2 (+5%) → Nhận tài khoản Funded 10K$
-phase: Phase 4 - Challenge
+phase: Phase 0 - Preparation
 start_date: 2026-06-23
 due_date: 2027-12-31
 tags:

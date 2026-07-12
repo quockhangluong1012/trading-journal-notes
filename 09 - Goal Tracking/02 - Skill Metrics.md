@@ -12,7 +12,8 @@ dashboard: Skill Metrics
 ```dataviewjs
 function clean(p){ return p.where(x=>x.file && !x.file.name.toLowerCase().includes("dashboard") && !x.file.name.toLowerCase().includes("template")); }
 
-const backtests = clean(dv.pages('"04 - Backtesting"')).length;
+// Đếm theo frontmatter type == "backtest" (đọc đệ quy mọi subfolder {YYYY}-{MM}-{DD}), không phụ thuộc tên file.
+const backtests = dv.pages('"04 - Backtesting"').where(p => p.type == "backtest").length;
 const mistakeTypes = clean(dv.pages('"06 - Mistake Database"')).length;
 
 function card(label,value,sub){ return `<div style="border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;"><div style="font-size:12px;opacity:.7;">${label}</div><div style="font-size:28px;font-weight:700;">${value}</div><div style="font-size:11px;opacity:.6;">${sub||""}</div></div>`; }
