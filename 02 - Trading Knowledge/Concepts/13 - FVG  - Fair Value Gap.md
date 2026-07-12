@@ -11,7 +11,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#FVG"
-status: developing
+status: tested
 category: PD Array
 timeframes:
   - D1

@@ -10,7 +10,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#OrderBlock"
-status: developing
+status: tested
 category: PD Array
 timeframes:
   - D1

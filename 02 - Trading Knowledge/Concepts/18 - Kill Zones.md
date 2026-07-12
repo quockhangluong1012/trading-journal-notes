@@ -12,7 +12,7 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#KillZones"
-status: developing
+status: tested
 category: Time & Price
 timeframes:
   - H1
