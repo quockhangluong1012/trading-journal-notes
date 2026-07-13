@@ -9,11 +9,11 @@ tags:
   - trading/ict/concept
   - trading/study
   - "#AggressiveDisplacement"
-status: developing
+status: tested
 category: Entry Model
-last_reviewed: 2026-07-11
+last_reviewed: 2026-07-13
 created: 2026-06-29
-updated: 2026-07-11
+updated: 2026-07-13
 ---
 
 # Aggressive Displacement Entry

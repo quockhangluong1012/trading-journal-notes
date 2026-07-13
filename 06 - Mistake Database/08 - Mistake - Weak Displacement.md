@@ -4,12 +4,13 @@ category: execution
 severity: high
 related_model: ICT 2022
 frequency: 4
-status: active
+status: tested
 tags:
   - trading/ict/mistake
   - trading/review
 created: 2026-07-08
-updated: 2026-07-08
+updated: 2026-07-13
+last_reviewed: 2026-07-13
 ---
 
 # Mistake - Weak Displacement
