@@ -50,15 +50,15 @@ Khi giá vươn tới một vùng, in ra một wick dài rồi đóng cửa quay
 - **Bearish Rejection Block** → tại **đỉnh** của một up-move, các nến để lại **wick trên dài** (giá bị đẩy xuống trở lại). Đóng vai trò **resistance / premium POI** cho lệnh **Short**.
 
 ### Rejection Block vs Order Block vs Breaker Block
-| Tiêu chí | **Rejection Block** | **[[Order Block]]** | **[[Breaker Block]]** |
-|---|---|---|---|
-| Phần nến định nghĩa | **Wick / tail** (đuôi nến) | **Body** của nến cuối trước displacement | **Body** của OB thất bại (bị phá) |
-| Vị trí hình thành | Swing high/low có wick dài | Nến nghịch hướng cuối trước cú đẩy | OB cũ bị phá rồi giá quay lại |
-| Tín hiệu đi kèm | Long wick = từ chối / sweep | Displacement + FVG ra khỏi OB | MSS/BOS phá qua OB, đảo vai trò |
-| Vai trò | S/R, POI re-entry | POI gốc, gốc của lệnh institutional | POI sau đảo chiều cấu trúc |
-| Khi nào ưu tiên | Từ chối qua wick, không có body sạch | Có body + displacement rõ | Cấu trúc đã đảo, OB cũ flip vai trò |
-| Bullish ở đâu | Đáy down-move, wick dưới dài | Nến đỏ cuối trước cú tăng | OB bán cũ bị phá lên → support |
-| Bearish ở đâu | Đỉnh up-move, wick trên dài | Nến xanh cuối trước cú giảm | OB mua cũ bị phá xuống → resistance |
+| Tiêu chí            | **Rejection Block**                  | **[[Order Block]]**                      | **[[Breaker Block]]**               |
+| ------------------- | ------------------------------------ | ---------------------------------------- | ----------------------------------- |
+| Phần nến định nghĩa | **Wick / tail** (đuôi nến)           | **Body** của nến cuối trước displacement | **Body** của OB thất bại (bị phá)   |
+| Vị trí hình thành   | Swing high/low có wick dài           | Nến nghịch hướng cuối trước cú đẩy       | OB cũ bị phá rồi giá quay lại       |
+| Tín hiệu đi kèm     | Long wick = từ chối / sweep          | Displacement + FVG ra khỏi OB            | MSS/BOS phá qua OB, đảo vai trò     |
+| Vai trò             | S/R, POI re-entry                    | POI gốc, gốc của lệnh institutional      | POI sau đảo chiều cấu trúc          |
+| Khi nào ưu tiên     | Từ chối qua wick, không có body sạch | Có body + displacement rõ                | Cấu trúc đã đảo, OB cũ flip vai trò |
+| Bullish ở đâu       | Đáy down-move, wick dưới dài         | Nến đỏ cuối trước cú tăng                | OB bán cũ bị phá lên → support      |
+| Bearish ở đâu       | Đỉnh up-move, wick trên dài          | Nến xanh cuối trước cú giảm              | OB mua cũ bị phá xuống → resistance |
 
 ### Quan hệ với [[20 - Liquidity Sweep]]
 Wick dài ≈ **dấu vết của một cú quét thanh khoản**. Khi giá đâm qua một swing để lấy [[07 - Buy-side Liquidity]] / [[30 - Sell-side Liquidity]] rồi nhanh chóng đóng cửa quay lại, phần đâm ra đó chính là wick tạo nên RB. Vì vậy RB chất lượng cao thường nằm **ngay sau một sweep** — đây cũng là logic của [[33 - Turtle Soup]]. Hãy luôn hỏi: *"Wick này đã quét thanh khoản gì?"*
