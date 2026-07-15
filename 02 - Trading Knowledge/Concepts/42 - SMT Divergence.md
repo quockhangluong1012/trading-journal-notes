@@ -14,9 +14,9 @@ tags:
   - "#liquidity"
 status: developing
 category: Confirmation
-last_reviewed: 2026-07-11
+last_reviewed: 2026-07-15
 created: 2026-07-05
-updated: 2026-07-11
+updated: 2026-07-15
 ---
 
 # SMT Divergence
