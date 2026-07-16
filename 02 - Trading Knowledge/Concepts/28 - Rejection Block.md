@@ -119,15 +119,15 @@ Nhiều điểm đảo chiều thật **không** để lại một OB body đẹ
 5. Khi retest, giá phản ứng tại **vùng body→wick** (đặc biệt quanh mép body / open-close).
 
 ### Ma trận nhận diện
-| Yếu tố | Bullish RB | Bearish RB | Ý nghĩa |
-|---|---|---|---|
-| Vị trí | Swing low | Swing high | Điểm đảo chiều cấu trúc |
-| Wick | Dưới, dài | Trên, dài | Hướng bị từ chối |
-| Body | Nằm trên wick | Nằm dưới wick | Phe thắng thế đóng cửa |
-| Sweep | Quét sell-side | Quét buy-side | Stop run trước đảo |
-| Phản ứng sau | Đẩy lên | Đẩy xuống | Xác nhận hướng RB |
-| Vùng entry | Mép body trên→low wick | Mép body dưới→high wick | Khu re-entry |
-| Invalidation | Đóng dưới low wick | Đóng trên high wick | RB chết |
+| Yếu tố       | Bullish RB             | Bearish RB              | Ý nghĩa                 |
+| ------------ | ---------------------- | ----------------------- | ----------------------- |
+| Vị trí       | Swing low              | Swing high              | Điểm đảo chiều cấu trúc |
+| Wick         | Dưới, dài              | Trên, dài               | Hướng bị từ chối        |
+| Body         | Nằm trên wick          | Nằm dưới wick           | Phe thắng thế đóng cửa  |
+| Sweep        | Quét sell-side         | Quét buy-side           | Stop run trước đảo      |
+| Phản ứng sau | Đẩy lên                | Đẩy xuống               | Xác nhận hướng RB       |
+| Vùng entry   | Mép body trên→low wick | Mép body dưới→high wick | Khu re-entry            |
+| Invalidation | Đóng dưới low wick     | Đóng trên high wick     | RB chết                 |
 
 ### Điều kiện
 - **Bắt buộc:** có swing high/low; có wick dài thể hiện từ chối; có phản ứng đảo chiều sau đó.

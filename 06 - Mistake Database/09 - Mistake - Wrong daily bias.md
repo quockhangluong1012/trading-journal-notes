@@ -4,12 +4,12 @@ category: analysis
 severity: high
 related_model: ICT 2022
 frequency: 3
-status: active
+status: tested
 tags:
   - trading/ict/mistake
   - trading/review
 created: 2026-06-18
-updated: 2026-07-08
+updated: 2026-07-16
 ---
 
 # Mistake - Wrong daily bias
@@ -261,20 +261,3 @@ Checklist bắt buộc trước khi xác định bias cho phiên:
 > Một bias sai âm thầm hơn một lệnh entry tệ — nó không "trông" như một lỗi tại thời điểm ra quyết định, nhưng lại là nguyên nhân gốc rẻ nhất để phá vỡ cả một ngày giao dịch kỷ luật.
 
 ---
-
-## 11. Liên kết
-
-**Concepts:**
-- [[12 - Daily Bias]]
-- [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]
-- [[27 - Premium Discount]]
-- [[12 - Dealing Range]]
-- [[02 - AMD]]
-- [[18 - Kill Zones]]
-- [[16 - Internal & External Range Liquidity (IRL & ERL)]]
-
-**Mistakes liên quan:**
-- [[03 - Mistake - Entry When MSS not in POI Zone]]
-- [[02 - Mistake - Enter before liquidity sweep]]
-- [[01 - Mistake - Emotional revenge trade]]
-- [[07 - Mistake - Risk more than 0.5% total account]]
