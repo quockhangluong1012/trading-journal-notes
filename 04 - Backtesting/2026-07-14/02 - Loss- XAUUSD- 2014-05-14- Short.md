@@ -24,7 +24,7 @@ stop_loss: 1302.715
 take_profit: 1297.51
 r_planned: 3.22
 r_multiple: -1
-grade: A-
+grade: B-
 followed_plan: Yes
 tags:
   - backtest
@@ -57,7 +57,7 @@ tags:
 | Take Profit          | 1297.51          |
 | R Planned            | 3.22             |
 | R Multiple (kết quả) | -1               |
-| Grade                | A                |
+| Grade                | B-               |
 
 > ⚠️ Nhớ điền các field tương ứng trong **frontmatter** (phía trên) để Dataview dashboard tự tổng hợp.
 

@@ -19,7 +19,7 @@ liquidity_swept: Yes
 displacement: Yes
 mss: Yes
 fvg_valid: Yes
-entry_price: 1300.5
+entry_price: 1301.562
 stop_loss: 1304.113
 take_profit: 1294.173
 r_planned: 2.9
@@ -57,9 +57,16 @@ tags:
 | Take Profit          | 1294.173       |
 | R Planned            | 2.9            |
 | R Multiple (kết quả) | 2.9            |
-| Grade                | A              |
+| Grade                | A-             |
 
 > ⚠️ Nhớ điền các field tương ứng trong **frontmatter** (phía trên) để Dataview dashboard tự tổng hợp.
+
+> [!check] Toàn vẹn dữ liệu — ĐÃ SỬA (2026-07-15)
+> Note tạo bằng cách copy 1 lệnh cũ nên còn sót 2 điểm không khớp giữa frontmatter và Summary table; đã đối chiếu chart và lập luận trong mục 5 để sửa:
+> 1. **Frontmatter `entry_price`**: 1300.5 → **1301.562** (khớp Summary table và cho R = 2.9; giá trị 1300.5 cũ chỉ cho R ≈ 1.75, mâu thuẫn `r_planned`).
+> 2. **Summary table `Grade`**: A → **A-** (đồng bộ với frontmatter `grade: A-`; hạ điểm vì lỗi toàn vẹn dữ liệu + mơ hồ TF entry, theo lập luận mục 5.2).
+>
+> Quy trình phòng ngừa: xem Rule toàn vẹn dữ liệu ở mục 5.3.
 
 ---
 
@@ -229,9 +236,9 @@ Sau khi lấy Buy-side ở Long Term High (~1392) và quét lên **CE của Bear
 
 ### 5.2. Pattern lặp lại (điều cần để ý lần sau)
 
-1. **Nhiễm dữ liệu do copy-paste (nghiêm trọng nhất).** File này còn lẫn nội dung của một setup **Long / NAS100** khác: `htf_bias: Bullish` (lệnh là Short/Bearish), heading "XAUUSD **Long**", Dealing Range **24,570 / 22,822** (số NAS100), POI OB **1.26642–1.26515** (giá EURUSD), câu "vùng **Discount** cho setup **Long**", và ngày tháng lẫn 2014 ↔ 2026. Với backtest, **dữ liệu bẩn = mẫu thống kê vô nghĩa** → đây là rủi ro số 1 cho cả dự án.
-2. **Outcome bias khi chấm điểm.** Grade A / khớp 90% một phần vì lệnh THẮNG. Quy trình tốt thật, nhưng file lỗi dữ liệu + mơ hồ TF entry → công bằng hơn là **A-**. Chấm theo *process sạch*, không theo kết quả.
-3. **`entry_timeframe` ghi M5 nhưng entry thật ở M1.** Thống kê "khung vào lệnh thực tế" sẽ sai lệch.
+1. **Nhiễm dữ liệu do copy-paste (nghiêm trọng nhất).** File này ban đầu bị lẫn nội dung của một setup **Long / NAS100** khác: `htf_bias: Bullish` (lệnh là Short/Bearish), heading "XAUUSD **Long**", Dealing Range **24,570 / 22,822** (số NAS100), POI OB **1.26642–1.26515** (giá EURUSD), câu "vùng **Discount** cho setup **Long**", và ngày tháng lẫn 2014 ↔ 2026. **Đã dọn sạch** (top + frontmatter hiện đúng instrument XAUUSD / Short / Bearish). Với backtest, **dữ liệu bẩn = mẫu thống kê vô nghĩa** → đây vẫn là rủi ro số 1 cho cả dự án nên giữ ghi chú này để cảnh giác.
+2. **Outcome bias khi chấm điểm.** Grade A / khớp 90% một phần vì lệnh THẮNG. Quy trình tốt thật, nhưng file lỗi dữ liệu + mơ hồ TF entry → công bằng hơn là **A-** (đã hạ về A- trong cả frontmatter và Summary table). Chấm theo *process sạch*, không theo kết quả.
+3. **`entry_timeframe`** đã sửa về **M1** (khung thực sự bấm entry), khớp cả frontmatter và Summary table — trước đây ghi nhầm M5 làm lệch thống kê "khung vào lệnh thực tế".
 
 ### 5.3. Rule cần thêm/cập nhật vào Playbook
 
