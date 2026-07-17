@@ -29,7 +29,7 @@ tags:
 
 ## Cách đo lường
 - **Chỉ số:** Số setup đã ghi nhận + win rate
-- **Hiện tại:** 20 setup (16 Win / 4 Loss ≈ 80%, n=20 còn nhỏ)
+- **Hiện tại:** 22 setup (17 Win / 5 Loss ≈ 77%, n=22 còn nhỏ)
 - **Mục tiêu:** 100 setup @ win rate >55%
 - **Tần suất review:** Hàng tuần
 

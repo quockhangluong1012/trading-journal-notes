@@ -3,74 +3,111 @@ type: daily-summary
 date: 2026-07-17
 days_to_prop_exam: 174
 exam_target: 2027-01-07
-backtests_logged: 0
+backtests_logged: 2
 trades_logged: 0
-concepts_reviewed: 0
-mistakes_triggered: []
-net_r_today: "chưa có dữ liệu"
+concepts_reviewed: 2
+mistakes_triggered: ["09 - Mistake - Wrong daily bias", "02 - Mistake - Enter before liquidity sweep"]
+net_r_today: "+1.33R (backtest/replay, KHÔNG phải vốn thật — Win +2.33R, Loss -1R)"
 tags: [daily-summary, prop-firm-prep]
 ---
 
 # 🌙 Daily Summary — 2026-07-17
 
 > [!info] Đếm ngược
-> **174 ngày** còn lại tới mốc tự đặt **2027-01-07** (song song **FTMO 10K$** + **The5ers High Stakes 10K$** — hai track độc lập, KHÔNG gộp luật). Giai đoạn hiện tại: **Giai đoạn 1 — Nền tảng** ([[01 - Roadmap]]), mode **FOUNDATION** (chưa mua gói nào — cả hai goal file vẫn `phase: Phase 0 - Preparation`).
->
-> **Lưu ý về thời điểm chạy:** report này được tạo lúc **06:07 sáng giờ Việt Nam** — đầu ngày thứ Sáu, phiên London/NY của hôm nay **chưa diễn ra**. Vì vậy phần "hôm nay" dưới đây phản ánh đúng thực tế **tính tới giờ này**, không phải một ngày đã kết thúc. Đây không phải bằng chứng của một ngày lười biếng — chỉ là ngày chưa xảy ra. Khang nên coi các mục "0 hoạt động" là ảnh chụp buổi sáng, và bổ sung log thật vào cuối ngày nếu có backtest/học/lệnh mới.
+> **174 ngày** còn lại tới mốc tự đặt **2027-01-07** (song song FTMO 10K$ + The5ers High Stakes 10K$ — hai track độc lập, không mua gói nào). Giai đoạn hiện tại: **Giai đoạn 1 — Nền tảng**. Theme hôm nay: **ngày backtest tốt nhất về nội dung mentor-review trong nhiều ngày, nhưng kỷ luật "đóng vòng đo tiến độ" vẫn là điểm rò rỉ — và lần đầu tiên có một con số chiếu-nhịp cụ thể cho thấy mốc backtest 200 đang lệch sau mốc thi tự đặt.**
 
-> [!warning] Cảnh báo — 3 khoản nợ kỷ luật đang kéo dài, KHÔNG liên quan tới giờ chạy report
-> Các khoản này là nợ tích lũy từ nhiều ngày trước, độc lập với việc hôm nay mới bắt đầu:
-> - **Nhật ký tiến độ của [[Pass FTMO first package challenge (10K$)]] và [[Pass The5er first package challenge (10k$)]] đứng yên từ 2026-07-13 — nay tròn 4 ngày (07-14, 15, 16, 17) không có dòng log mới.**
-> - **Nhật ký tiến độ của [[Cut my top 3 repeated mistakes]] chỉ có đúng 1 dòng, từ 2026-07-08 — nay tròn 9 ngày không cập nhật.**
-> - **[[12 - Mistake - Log Data Mismatch - Backtest]] vẫn CHƯA được tạo** trong `06 - Mistake Database/` — nêu từ 07-14, nhắc lại 07-15/16, nay là **ngày thứ 4** bị hoãn, dù nguyên nhân (dữ liệu copy-paste ở 3 note XAUUSD 07-14) đã được xác nhận sạch từ 07-16.
-> Đây đúng là 3 việc được liệt trong file task sáng nay (`2026-07-17 tasks.md`) — report này xác nhận cả 3 **vẫn chưa được đóng tính tới giờ chạy**.
+> [!warning] ⚠️ Cảnh báo
+> 1. **Mistake top-3 tái diễn trong backtest:** `bias_correct: No` xuất hiện ở note `02 - Loss - GBPUSD - 2014-07-17` — đây là lỗi **#09 Wrong daily bias**, một trong 3 lỗi top hiện tại của Giai đoạn FOUNDATION (06, 08, 09). Xem phân tích chi tiết ở mục Backtest/Mistake dưới — có nuance quan trọng cần đọc, không chỉ là "lại phạm lỗi cũ".
+> 2. **Nhịp backtest KHÔNG kịp mốc thi tự đặt 2027-01-07** (phát hiện mới, xem mục Đối chiếu mục tiêu): tại nhịp hiện tại 0,92 backtest/ngày, mốc 200 backtest sẽ chạm vào khoảng **2027-01-27** — chậm hơn ~20 ngày so với 2027-01-07.
+> 3. **Log tiến độ FTMO + The5ers có dòng cho hôm nay nhưng nội dung rỗng** ("Tập trung backtest") — không đáp ứng yêu cầu cụ thể mà chính file task sáng nay đặt ra (phân biệt luật hai quỹ, đối chiếu số liệu thật). "Có dòng" ≠ "log thật".
+> 4. **Lỗi ghi chép dữ liệu tái diễn ngay trong ngày tạo note lỗi:** note `01 - Win - GBPUSD - 2014-06-25 - Long.md` có filename lệch `trade_date` frontmatter (`2014-07-14`) — đúng loại lỗi mà [[12 - Mistake - Log Data Mismatch - Backtest]] (tạo hôm nay) mô tả. Chưa đổi tên file, chờ Khang xác nhận.
 
 ## 📚 Học hôm nay
 
-**Không có concept nào được ôn tính tới giờ chạy report.** Kiểm tra trực tiếp: [[29 - Sell-side Imbalance Buy-side Inefficiency]] vẫn `last_reviewed:` trống (chưa từng ôn từ khi tạo 2026-06-24), [[12 - Dealing Range]] vẫn `last_reviewed: 2026-06-22`, [[14 - Implied Fair Value Gap]] vẫn `last_reviewed: 2026-06-23` — không note nào trong `02 - Trading Knowledge/Concepts` có `last_reviewed`/`updated` = 2026-07-17. File task sáng nay đã lên lịch ôn 2 concept này (SIBI + Dealing Range, dự phòng thêm Implied FVG) — chưa có bằng chứng đã thực hiện.
+**2 concept được ôn thật** (đối chiếu trực tiếp frontmatter `last_reviewed`, không dựa vào tick task-list):
+
+- **[[29 - Sell-side Imbalance Buy-side Inefficiency]]** (SIBI) — `status: seed → developing`, `last_reviewed: 2026-06-24 → 2026-07-17`. Đây là **lần đầu tiên** concept này được ôn kể từ khi tạo (03 tuần đứng yên). Góc học: SIBI là phần bù của BISI trong một FVG giảm giá — imbalance bên bán mạnh hơn bên mua, dùng để xác nhận hướng displacement giảm trước khi tin MSS xuống; phân biệt với FVG (khái niệm cha) và với BSL/SSL (đây là *imbalance*, không phải *liquidity pool*). ⚠️ **Ghi nhận một mismatch nhỏ tự phát hiện khi đọc note:** frontmatter ghi `created: 2026-07-17` nhưng nội dung note lại nói rõ concept này được tạo từ `2026-06-24` — chính bản thân note học hôm nay cũng mang một vết "Log Data Mismatch" kiểu (a)/(c) giống hệt loại lỗi vừa được đặt tên chính thức trong `06 - Mistake Database/`. Đáng để Khang kiểm tra lại `created` field này.
+- **[[12 - Dealing Range]]** — `status: developing` (không đổi), `last_reviewed: 2026-06-22 → 2026-07-17` (tái ôn, cũ nhất trong nhóm đã từng ôn). Góc học: quy trình chọn đúng swing high/low làm biên dealing range TRƯỚC khi tính Premium/Discount — ưu tiên swing tạo bởi liquidity sweep + MSS thật, không phải swing bất kỳ; chọn sai range là gốc rễ của cả [[Mistake - Wrong Dealing Range]] và [[09 - Mistake - Wrong daily bias]].
+- Cả hai concept được **áp dụng trực tiếp** vào 2 backtest hôm nay (dealing range dùng để định biên H1 cho cả 2 note; SIBI dùng để mô tả "imbalance rõ" khi chấm displacement) — không phải ôn lý thuyết suông.
+- **[[14 - Implied Fair Value Gap]]** (mục "nếu còn thời gian" trong task sáng) — **không có bằng chứng ôn**: `last_reviewed` vẫn giữ `2026-06-23`, không đổi. Checkbox tương ứng trong task sáng cũng để trống `[ ]` — khớp thật, không phải overtick.
 
 ## 📊 Backtest hôm nay
 
-**Không có backtest nào được log hôm nay** — thư mục `04 - Backtesting/2026-07-17/` chưa tồn tại. Chuỗi backtest liên tiếp hiện đứng ở **11 ngày** (07-06→07-16); nếu hết ngày hôm nay vẫn không có note mới, chuỗi này sẽ đứt sau khi vừa lập kỷ lục dài nhất từ trước tới nay. Tổng mẫu backtest toàn vault vẫn là **20/200 (10%)** — 16 Win / 4 Loss (80%), 13 EURUSD + 2 GBPUSD + 1 NAS100 + 4 XAUUSD.
+**2 backtest mới**, cả hai GBPUSD, chuỗi backtest sang **ngày thứ 12 liên tiếp** (07-06 → 07-17). Tổng mẫu toàn vault: **22/200 (11%)** — 13 EURUSD + 4 GBPUSD + 4 XAUUSD + 1 NAS100; **17 Win / 5 Loss ≈ 77,3%** (giảm nhẹ từ 80% ở n=20).
+
+### `01 - Win - GBPUSD - 2014-06-25 - Long` (thực chất trade_date = 2014-07-14)
+- **HTF bias:** Bullish, đúng (D1 HH/HL + Displacement Order Block, draw-on-liquidity BSL thẳng hàng).
+- **Chuỗi entry:** Sweep (nội bộ, quét CE FVG H1) → Displacement + MSS (M5) → FVG M5 → Entry CE FVG M5 = 1.70837. Đủ 6/7 bước, bước 6 (Entry) chỉ **Partial**.
+- **Vấn đề thật:** FVG H1 (1.70833–1.70591) trải từ EQ đến gần 0.705 OTE — bị "cắt đôi" thành nửa nông (EQ–0.618, không phải nơi smart money nạp lệnh) và nửa sâu (0.618–0.705, vùng tài trợ thật). Entry rơi vào **nửa nông**, sát cạnh trên FVG — không vào OTE (0.618–0.786).
+- **R planned vs thực nhận:** 2.33 = 2.33 (hit TP đầy đủ). Nhưng nếu vào đúng sweet spot (0.705), risk ngắn hơn (~16 pip vs 26 pip) → RR lẽ ra ~5.0, gấp đôi.
+- **Followed plan:** Yes. **Grade:** B (không phải A) — quy trình đúng hướng nhưng **entry vị trí kém tối ưu**, và SL sống sót nhờ **chỉ 1,5 pip đệm** khi giá quét ngược xuống cạnh dưới FVG trước khi bật lên TP — "sống sót nhờ may nhiều hơn thiết kế".
+- **Bài học:** MSS trên tap NÔNG của POI HTF là MSS "sớm" — dễ là LTF inducement, chưa phải shift thật. Chỉ tin MSS sau khi giá đã chạm vùng sweet spot của POI.
+- **Root cause (thắng):** đúng bias + đúng phía POI, KHÔNG phải nhờ entry tối ưu — "process che giấu bởi outcome" là đúng bài học "process over outcome" cần khắc sâu, đừng để cú thắng này *củng cố* thói quen vào nông.
+
+### `02 - Loss - GBPUSD - 2014-07-17 - Long`
+- **HTF bias:** Bullish theo D1 (HH/HL + rejection candle tại POI) — **phương pháp đọc đúng**, nhưng `bias_correct: No` vì cấu trúc H1 sau đó lật bearish (CISD). Đây là lỗi #09 top-3, nhưng đọc kỹ thì **không phải lỗi "chọn nhầm hướng từ đầu"** — root cause thật nằm ở bước Sweep (xem dưới), bias D1 tại thời điểm setup là hợp lý.
+- **Chuỗi entry:** Sweep = **No** (SSL cấu trúc — đáy dealing range 1.70592 — CHƯA bị quét trước khi MSS xuất hiện) → Displacement yếu (score 2/4) → MSS (có, nhưng "sớm") → FVG hợp lệ, trong OTE (0.705, CE trùng khớp) → Entry cơ học đúng (CE M5 FVG, không chase).
+- **First error step: Sweep (bước 3).** Theo đúng GATE checklist của chính playbook (sweep phải xảy ra TRƯỚC displacement/MSS), đây đáng lẽ là **No Trade** — không có đệm thanh khoản nội bộ giữa POI và điểm định nghĩa range để hấp thụ, nên giá đâm thẳng qua entry, đóng cửa dưới range low (CISD), FVG lật thành iFVG.
+- **R planned vs thực nhận:** 3.40 → **−1** (SL bị quét, đúng risk 0,5% đã set).
+- **Followed plan:** Yes — **không dời SL, không gồng, không revenge** — đây là **"good loss"** thật về kỷ luật, khác hẳn loss FOMO trước đây.
+- **Grade:** C. Điểm mạnh: entry precision (8/10, CE ~0.705, không nông như note 01), risk management (7/10). Điểm yếu quyết định: Liquidity Sweep (2/10 — GATE fail).
+- **Bài học cốt lõi:** phân biệt **internal liquidity** (wick raid nội bộ, POI còn sống) vs **structural liquidity** (đóng cửa xuyên điểm định nghĩa range = CISD = POI invalidated). MSS sớm + leg yếu + không có đệm thanh khoản nội bộ = tín hiệu No Trade, dù POI/FVG "đẹp" trên giấy.
+- **Pattern mới được đề xuất (KHÔNG tạo note vội — n=1, tránh curve-fitting):** "Entry INTO liquidity — POI sát móng dealing range, SSL cấu trúc chưa quét". Về bản chất, đây trùng khớp gần như hoàn toàn với note đã có sẵn **[[02 - Mistake - Enter before liquidity sweep]]** (frequency 4, status active) — chỉ chưa được gắn wikilink chính thức từ backtest hôm nay. Khuyến nghị: link thẳng vào note có sẵn thay vì tạo note lỗi thứ 13 trùng lặp; nếu pattern "POI sát móng range không đệm" tái diễn ≥3 lần nữa thì tách thành biến thể riêng có ghi rõ trong `06 - Mistake - Enter before liquidity sweep`.
+
+### Aggregate hôm nay
+Net R backtest: **+2.33 (Win) + (−1) (Loss) = +1.33R** (dữ liệu replay lịch sử, KHÔNG phải P&L thật). Grade trung bình B/C. Cả hai note followed_plan: Yes — điểm sáng thật của ngày là **kỷ luật thực thi**, điểm cần sửa là **chất lượng lọc/vị trí entry**, không phải kỷ luật.
 
 ## 💹 Live Trade hôm nay
 
-**Không có lệnh live nào hôm nay.** Lệnh live gần nhất vẫn là `Loss - 01 - Trade 2026-06-18 NDX Short` — nay đã **29 ngày** không có lệnh mới. Đây vẫn là chấp nhận được trong Giai đoạn 1/FOUNDATION (ưu tiên roadmap hiện tại là backtest + journaling, không phải volume lệnh live), nhưng cũng có nghĩa execution live dưới áp lực luật quỹ vẫn là ẩn số hoàn toàn chưa kiểm chứng.
+**Không có lệnh live nào hôm nay** — khớp với việc Giai đoạn 1/FOUNDATION chưa mua gói và chưa ưu tiên khối lượng live. Lệnh live gần nhất vẫn là `Loss - 01 - Trade 2026-06-18 NDX Short` → **29 ngày** không có lệnh live mới. Đây KHÔNG phải thất bại kỷ luật theo đúng roadmap hiện tại (backtest là ưu tiên #1), nhưng cũng là một khoảng trống thật cần ghi nhận: **execution dưới áp lực luật quỹ thật vẫn là ẩn số hoàn toàn chưa kiểm chứng** trong gần một tháng qua — 174 ngày còn lại tới mốc thi không nên trôi hết ở replay/backtest mà không có ít nhất một giai đoạn demo-live theo đúng luật FTMO/The5ers trước khi mua gói (xem Kế hoạch hành động Giai đoạn 1 trong 2 goal file challenge).
 
 ## 🧠 Phân tích lỗi & tâm lý
 
-Không có lỗi nào được trigger hôm nay (không có backtest/trade để trigger). Mistake Database hiện có 11 note đã đặt tên (01–11); note thứ 12 dự kiến — [[12 - Mistake - Log Data Mismatch - Backtest]] (mô tả lỗi copy-paste dữ liệu instrument giữa các note backtest, ví dụ cụ thể từ 3 note XAUUSD 07-14) — vẫn chưa tồn tại, xem cảnh báo ở trên.
+**Mistake chính thức tái diễn hôm nay (top-3 FOUNDATION):**
+
+- **[[09 - Mistake - Wrong daily bias]]** — `bias_correct: No` ở note `02 - Loss GBPUSD 07-17`. **Nuance quan trọng:** đọc kỹ phân tích trong note thì đây KHÔNG phải trường hợp điển hình của lỗi 09 (chọn nhầm hướng D1 từ đầu — phương pháp đọc bias hôm nay đúng, có HH/HL + rejection candle tại POI, hợp lý tại thời điểm setup). Nó gần với việc **H1 delivery lật sau đó** (CISD) hơn là một lỗi phân tích bias gốc. Ghi nhận đúng theo field (`No` để trung thực thống kê) nhưng root cause thật của lệnh này là lỗi Sweep, không phải lỗi Bias — tránh gán nhãn sai khi review sau này.
+- **[[02 - Mistake - Enter before liquidity sweep]]** (chưa được wikilink chính thức từ backtest, nhưng khớp thuyết trình gần như 1:1 với `first_error_step: sweep` của note `02`) — vào Long tại POI trong khi SSL cấu trúc bên dưới còn nguyên, tự nguyện làm thanh khoản đối ứng cho smart money. Đây là lỗi #2 trong Mistake Database (frequency 4, status active) — không phải lỗi mới, chỉ chưa được liên kết đúng từ note hôm nay.
+
+**Mistake mới được TẠO hôm nay (không phải "tái diễn", mà là đóng nợ quy trình):**
+
+- **[[12 - Mistake - Log Data Mismatch - Backtest]]** — tạo thật trong `06 - Mistake Database/`, đóng đúng khoản nợ 4 ngày (07-14 → 07-17) đã được nhắc trong 3 dòng log liên tiếp trước đó. Định nghĩa: dữ liệu backtest lệch nhau giữa frontmatter, bảng Backtest Summary trong thân note, phần narrative, và tên file — khiến chính sample đó không đáng tin cho thống kê expectancy, bất kể setup/entry logic đúng hay sai. 4 dạng mismatch được liệt kê rõ trong note (frontmatter-vs-filename, frontmatter-vs-bảng-summary, narrative-vs-chính-nó, R-multiple không khớp entry/SL/TP).
+- **Trớ trêu cần gọi thẳng:** đúng ngày note lỗi này được tạo, note `01 - Win - GBPUSD - 2014-06-25` (log CÙNG NGÀY) lại mắc đúng dạng mismatch (a) mà note vừa mô tả — filename ghi `2014-06-25`, `trade_date` frontmatter ghi `2014-07-14`. Việc "biết lỗi" và "vẫn mắc lỗi trong cùng buổi" là chính xác kiểu pattern mà mentor cần nêu thẳng, không rationalize. Chưa đổi tên file — chờ Khang xác nhận (và lưu ý: gợi ý đổi số thứ tự file thành `02` trong note đó là SAI, vì đây là backtest đầu tiên của ngày, chỉ cần sửa phần ngày trong tên).
+
+**Không có tín hiệu tâm lý tiêu cực đáng gờm** trong 2 backtest hôm nay — cả hai `followed_plan: Yes`, không có dấu hiệu FOMO/revenge/dời SL. Vấn đề hôm nay thuần về **chất lượng lọc setup và ghi chép dữ liệu**, không phải kỷ luật cảm xúc.
 
 ## 🎯 Đối chiếu mục tiêu
 
-**1. [[Pass FTMO first package challenge (10K$)]]** — `progress: 0%`, cột mốc **0/8**, `phase: Phase 0 - Preparation`. Log tiến độ gần nhất 2026-07-13 → **4 ngày trống**. Không có số liệu mới hôm nay để cập nhật (0 backtest, 0 lệnh, chưa mua gói).
+**1. [[Build a statistically validated backtest sample]]** (Mid Term) — `progress` sync 10 → **11%** (22/200). Cột mốc vẫn **0/4**. ⭐ **Phát hiện quan trọng nhất hôm nay:** nhịp thực tế từ `start_date` (24 ngày) = 22/24 ≈ **0,92 backtest/ngày**. Chiếu nhịp này, mốc 200 backtest rơi vào khoảng **2027-01-27** — **chậm hơn ~20 ngày so với mốc tự đặt sẵn sàng thi 2027-01-07** (còn 174 ngày). Cần nhịp **~1,02/ngày** (nhanh hơn hiện tại ~11%) để chạm cả hai mốc cùng lúc. Due_date frontmatter của goal (2027-06-30) không phải ràng buộc thật — mốc thật là ngày Khang tự đặt; hai mốc này đang lệch, cần quyết định: tăng nhịp, hoặc chấp nhận mua gói sớm hơn với mẫu nhỏ hơn 200 (vd dùng ngưỡng 100 setup của goal #2, cũng due sau 01-07).
 
-**2. [[Pass The5er first package challenge (10k$)]]** — `progress: 0%`, cột mốc **0/8**, `phase: Phase 0 - Preparation`. Cùng tình trạng log 4 ngày trống. Ghi nhận riêng: note `Lot size 10K - The5ers.md` (tạo 2026-07-15, trong `03 - Playbooks/3.1 - Checklists/`) đã có sẵn phần lot size cho tài khoản The5ers — cần đối chiếu xem đã đủ phần "ngày có lãi = +50$ (0,5%)" và mô phỏng daily drawdown từ equity đóng cửa hôm trước hay chưa (mục 4 của note) trước khi tính là đóng bước 2+3 Giai đoạn 0 của track này; log tiến độ hiện chưa phản ánh việc note này tồn tại.
+**2. [[Master the ICT 2022 Model]]** (Mid Term) — `progress` giữ **30%** (đã lệch xa cột mốc thực tế 0/5 = 0%, mismatch này đã được nêu từ 07-16, vẫn chưa được Khang xác nhận sửa). Số liệu sync: 22/100 setup (22%), win rate **77%** (n=22, giảm nhẹ từ 80%, chưa đủ để kết luận xu hướng). Cột mốc #1 "viết checklist vào/ra lệnh thành văn" — đòn bẩy rẻ nhất còn treo, không cần lệnh live — **vẫn chưa làm**, đã treo từ nhiều ngày.
 
-**3. [[Build a statistically validated backtest sample]]** — `progress: 10%` (20/200 backtest, đếm trực tiếp). Không đổi hôm nay vì chưa có backtest mới. Nhịp thô tính từ `start_date` (23 ngày qua tới 07-16) ≈ 0,87/ngày, vẫn trên nhịp cần ~0,52/ngày cho due 2027-06-30 — **còn dư địa lớn**, nhưng dư địa này sẽ thu hẹp dần nếu chuỗi 11 ngày bị đứt hôm nay.
+**3. [[Hold daily journaling and process discipline]]** (Short Term) — Track khoẻ nhất hệ thống. Journaling **14 ngày liên tiếp** (07-05→07-17), dài nhất từ trước tới nay. Progress giữ **50%** (khớp cột mốc 2/4). Cột mốc #3 "4 tuần liên tiếp 5 ngày/tuần" — chuỗi 14 ngày ≈ 2 tuần, chưa chạm nhưng đang đúng hướng.
 
-**4. [[Master the ICT 2022 Model]]** — `progress: 30%` nhưng cột mốc thực tế **0/5 = 0%** — mismatch đã nêu từ 07-16, **vẫn chưa được Khang quyết định** (hạ progress xuống khớp cột mốc, hay tick cột mốc #1 "viết checklist vào/ra" vì đã có đủ bằng chứng nhiều ngày). Không có số liệu mới hôm nay.
+**4. [[Cut my top 3 repeated mistakes]]** (Short Term) — `progress` giữ **20%**, cột mốc vẫn **0/4**. Đã có dòng log cho 2026-07-17 (viết trước khi backtest tối nay hoàn tất) phân tích đúng việc `bias_correct: No` tái xuất và đề xuất pattern sweep mới — nội dung log này **đã khớp tốt** với phân tích ở mục Backtest/Mistake bên trên, không cần thêm dòng trùng lặp. Tần suất lỗi **live-trade** chính thức (06=14, 09=7, 07=5) vẫn đứng yên vì không có lệnh live — chỉ số này bị đóng băng, không phải cải thiện hay xấu đi.
 
-**5. [[Hold daily journaling and process discipline]]** — `progress: 50%`, cột mốc **2/4** — track khoẻ nhất. **Có chuyển động thật hôm nay:** việc viết report này nối chuỗi journaling sang **13 ngày liên tiếp** (07-05→07-17), chuỗi dài nhất từ trước tới nay. Đã thêm 1 dòng log thật (xem mục dưới).
+**5 & 6. [[Pass FTMO first package challenge (10K$)]] và [[Pass The5er first package challenge (10k$)]]** (cả hai nằm ở `09 - Goal Tracking/Goals/Mid Term`, KHÔNG phải `Long Term` như CLAUDE.md map — lệch cấu trúc cần cập nhật memory) — cả hai `progress: 0%`, cột mốc **0/8**, `phase: Phase 0/1 - Preparation`. Cả hai đã có dòng log ngày 2026-07-17 nhưng nội dung chỉ ghi **"Tập trung backtest"** — quá sơ sài, không đáp ứng yêu cầu cụ thể mà file task sáng nay đặt ra (ghi rõ trạng thái prep thật, phân biệt luật FTMO daily-loss-từ-balance-gốc vs The5ers daily-drawdown-từ-equity-đóng-cửa-hôm-trước + ngày-có-lãi ≥0,5%). Phần riêng của The5ers (ngưỡng "ngày có lãi = +50$" + mô phỏng drawdown prior-close) trong [[Lot size 10K]] **vẫn chưa được bổ sung** — nợ treo nhiều ngày.
 
-**6. [[Cut my top 3 repeated mistakes]]** — `progress: 20%`, cột mốc **0/4**. Log tiến độ chỉ có 1 dòng từ 2026-07-08 → **nay 9 ngày không cập nhật**, đồng hồ đo cũ nhất trong toàn hệ thống. Không có số liệu backtest/trade mới hôm nay để cập nhật số đếm lỗi — nợ này cần Khang tự log tay (không phải dữ liệu tự động sinh ra từ backtest/trade hôm nay).
-
-**Verdict nhịp độ:** còn **174 ngày** tới 2027-01-07. Về khối lượng backtest, nhịp hiện tại (~0,87/ngày) đang **vượt** nhịp cần (~0,52/ngày) — nếu giữ được, mẫu 200 sẽ hoàn thành sớm hơn due date rất nhiều. Rủi ro thật không phải là tốc độ backtest, mà là ba khoản nợ kỷ luật ghi chép ở trên (log tiến độ 2 goal challenge + Cut-mistakes + note lỗi dữ liệu) — các khoản này không tự đóng, và đã bị hoãn 4–9 ngày.
+**Verdict nhịp độ (174 ngày còn lại):** Journaling và kỷ luật thực thi đang **trên nhịp rõ rệt** (14 ngày liên tiếp, followed_plan Yes 2/2 hôm nay). Nhưng khi quy đổi ra số cụ thể, **mẫu backtest — điều kiện tiên quyết trước khi mua gói bất kỳ — đang chậm hơn mốc thi ~20 ngày** nếu giữ nhịp hiện tại, và **0 lệnh live 29 ngày** nghĩa là toàn bộ 174 ngày còn lại chưa hề bắt đầu giai đoạn "demo thử luật" (Giai đoạn 1 của cả 2 goal challenge) — giai đoạn này cần ít nhất 2 tuần trước khi mua gói. Nếu tính lùi: Chuẩn bị (backtest+playbook) → Demo 2 tuần → Mua gói → Phase 1/2 — 174 ngày về lý thuyết vẫn đủ, nhưng biên an toàn đang co hẹp lại vì mảng "log tiến độ 2 goal challenge" đang bị đối xử như thủ tục (dòng rỗng) hơn là công cụ điều hướng thật.
 
 ## 📈 Cập nhật Nhật ký tiến độ
 
-- **[[Hold daily journaling and process discipline]]**: đã thêm 1 dòng log thật (2026-07-17) — chuỗi journaling 13 ngày liên tiếp, giữ `progress: 50` (khớp cột mốc 2/4).
-- **[[Pass FTMO first package challenge (10K$)]]**, **[[Pass The5er first package challenge (10k$)]]**, **[[Cut my top 3 repeated mistakes]]**: **KHÔNG thêm dòng log hôm nay** — không có số liệu thật nào đổi (0 backtest, 0 trade, 0 concept, chưa mua gói) tính tới giờ chạy report; thêm dòng lúc này sẽ là dòng log rỗng/trùng lặp, vi phạm nguyên tắc không fabricate. Nếu Khang tạo backtest/học/log tay cho các track này trong phần còn lại của ngày, dòng log thật nên được thêm thủ công hoặc ở lần chạy kế tiếp.
-- **[[Build a statistically validated backtest sample]]**, **[[Master the ICT 2022 Model]]**: không đổi, không thêm dòng (0 backtest hôm nay).
+Đã thêm dòng log **THẬT** cho 2026-07-17 vào 3 goal file (không phải dòng rỗng — mỗi dòng đều gắn số liệu/root-cause cụ thể từ dữ liệu hôm nay):
+
+- **[[Build a statistically validated backtest sample]]** — dòng mới: sync 22/200 (11%), phát hiện nhịp-chậm-hơn-mốc-thi 2027-01-27 vs 2027-01-07, ghi nhận [[12 - Mistake - Log Data Mismatch - Backtest]] đã tạo, cờ mismatch tên file note `01`.
+- **[[Master the ICT 2022 Model]]** — dòng mới: sync 22/100 (22%), win rate 77%, ghi nhận 2 concept áp dụng trực tiếp vào setup hôm nay, cờ mismatch tên file lặp lại.
+- **[[Hold daily journaling and process discipline]]** — dòng bổ sung "(tối)" đè lên dòng sáng sớm (viết lúc 06:07, trước khi có hoạt động) bằng bằng chứng thật cuối ngày: 2 backtest + 2 concept + 1 mistake note mới + 14 ngày liên tiếp; đồng thời gọi thẳng tên vấn đề "log có dòng nhưng nội dung rỗng" ở 2 goal FTMO/The5ers.
+
+**Không thêm dòng** cho [[Pass FTMO first package challenge (10K$)]], [[Pass The5er first package challenge (10k$)]], và [[Cut my top 3 repeated mistakes]] — cả ba đã có dòng log ngày 2026-07-17 sẵn trong file (viết trước khi routine tối nay chạy), thêm dòng nữa sẽ tạo trùng lặp. Thay vào đó, chất lượng của các dòng có sẵn được đánh giá thẳng ở mục Đối chiếu mục tiêu trên (2/3 dòng quá sơ sài, 1/3 dòng — Cut-mistakes — đã đạt chuẩn).
 
 ## 🔭 Việc cần làm ngày mai
 
-1. **Đóng nợ 4 ngày:** thêm 1 dòng log tiến độ THẬT (không phải "chưa đổi") vào cả [[Pass FTMO first package challenge (10K$)]] và [[Pass The5er first package challenge (10k$)]] — kể cả khi vẫn 0% thực chất, cần nêu rõ trạng thái Giai đoạn 0 hiện tại (backtest 20/200, lot size đã có, playbook A+ vào/ra vẫn chưa viết) để log không tiếp tục im lặng.
-2. **Đóng nợ 9 ngày:** thêm 1 dòng log tiến độ vào [[Cut my top 3 repeated mistakes]] — làm rõ track này đang đo lỗi **backtest** (06, 08, 09) trong FOUNDATION mode, không phải lỗi live-trade như dòng log 07-08 cũ.
-3. **Tạo note thật [[12 - Mistake - Log Data Mismatch - Backtest]]** trong `06 - Mistake Database/` (đánh số 12), mô tả sự cố copy-paste dữ liệu 3 note XAUUSD 07-14 làm ví dụ, link từ các note liên quan — nợ đã sang ngày thứ 4.
-4. **Log ít nhất 1 backtest mới** để nối lại chuỗi 11 ngày (07-06→07-16) nếu chưa làm trong phần còn lại của hôm nay 07-17 — nếu bỏ lỡ, đây sẽ là lần đứt chuỗi đầu tiên kể từ 07-06.
-5. **Ôn 2 concept theo rotation đã lên lịch** ([[29 - Sell-side Imbalance Buy-side Inefficiency]] + [[12 - Dealing Range]]) và cập nhật `last_reviewed` ngay khi ôn xong — tránh lặp lại 2 ngày bỏ trống liên tiếp (07-15, 07-16).
-6. Đối chiếu note `Lot size 10K - The5ers.md` với 2 yêu cầu còn thiếu của Giai đoạn 0 (ngưỡng "ngày có lãi" + mô phỏng prior-close drawdown) trước khi coi bước 2+3 The5ers là xong.
+1. **Viết lại THẬT dòng log FTMO + The5ers cho 07-17/07-18** — không chấp nhận "Tập trung backtest" là đủ. Phải có: trạng thái prep cụ thể (backtest 22/200, playbook A+ checklist vào/ra vẫn 0/5), và với The5ers riêng: bổ sung "ngày có lãi = +50$" + ví dụ mô phỏng drawdown prior-close vào [[Lot size 10K]] — nợ đã treo từ 07-13.
+2. **Xác nhận rename file `01 - Win - GBPUSD - 2014-06-25 - Long.md` → `01 - Win - GBPUSD - 2014-07-14 - Long.md`** (giữ số `01`, chỉ sửa ngày) — chưa tự đổi, cần "yes" từ Khang trước.
+3. **Link chính thức [[02 - Mistake - Enter before liquidity sweep]] vào note `02 - Loss - GBPUSD - 2014-07-17 - Long`** (và cân nhắc link tương tự cho note `01` nếu muốn theo dõi pattern "entry nông nửa trên POI" — chưa đủ 3 lần để tách mistake riêng, nhưng nên bắt đầu đếm).
+4. **Kiểm tra `created: 2026-07-17` ở frontmatter [[29 - Sell-side Imbalance Buy-side Inefficiency]]** — có vẻ sai (nội dung note nói tạo từ 06-24); một mismatch nhỏ tự phát hiện trong lúc học hôm nay.
+5. **Xác nhận có tick cột mốc #1+#2 của [[Cut my top 3 repeated mistakes]] hay không** (đề xuất từ 07-08, chưa xác nhận) và cột mốc #1 của [[Master the ICT 2022 Model]] (viết checklist vào/ra — đòn bẩy rẻ nhất, không cần lệnh live).
+6. **Cân nhắc mở giai đoạn Demo thử luật (2 tuần)** cho ít nhất 1 trong 2 track FTMO/The5ers sớm hơn dự kiến — 29 ngày không lệnh live đang ăn vào 174 ngày còn lại mà chưa hề bắt đầu bước kiểm chứng execution dưới luật quỹ.
+7. Tiếp tục chuỗi backtest sang ngày thứ 13 — ưu tiên thị trường non-EURUSD (hiện 9/22 ≈ 41%, đã cân đối tốt hơn nhiều so với tuần trước) và áp GATE "sweep trước displacement" nghiêm hơn để tránh lặp lại first_error_step=sweep.
 
 ## 🔗 Liên kết
 
