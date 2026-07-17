@@ -5,213 +5,282 @@ trade_date: 2024-12-04
 symbol: GBPUSD
 position: Long
 result: Win
-session: New York
+session:
 setup: ICT 2022 Model
+model_variant: Standard
 entry_model: ICT 2022 Model
 entry_timeframe: M5
 htf_bias: Bullish
 bias_correct: Yes
-poi_type: "[[01 - ICT 2022 Model|2022 Model]]"
+poi_type: Order Block
+poi_rank: 2
+poi_timeframe: H1
+poi_location: Discount
+poi_in_ote: No
+ce_ote_overlap: No
+poi_stack: OB (H1, 1.26642-1.26515) + FVG (trên OB) + FVG (tại CE OB)
+fvg_high: 1.26642
+fvg_low: 1.26515
+ce_price: 1.265785
+entry_type: Edge
+entry_precision: Between
+limit_filled: Yes
+fill_depth_pct: 21
+missed_by:
+step1_bias_ok: Yes
+step2_draw_ok: Yes
+step3_sweep_ok: Yes
+step4_displacement_ok: Yes
+step5_poi_ok: Yes
+step6_entry_ok: No
+step7_target_ok: Yes
+first_error_step: entry
+missing_step: none
+chained_fully: Yes
 liquidity_swept: Yes
+sweep_type: Internal
 displacement: Yes
+displacement_score:
 mss: Yes
 fvg_valid: Yes
+confluence_score: 2
+smt_confirm:
+cisd_confirm: Yes
+in_macro_time:
+nwog_ndog_align: No
+sd_target_align: No
+idm_swept: Yes
+correlated_asset: none
 entry_price: 1.26615
 stop_loss: 1.26494
 take_profit: 1.27027
 r_planned: 3.4
+rr_if_ce: 5.31
+rr_if_ote:
 r_multiple: 3.4
-grade: A
+risk_percent:
+spread_cost:
+r_net:
+grade: B
 followed_plan: Yes
+confidence: 3
 tags:
   - backtest
   - ICT2022
+  - POI
 ---
 
-# Backtest 2024-12-04 — GBPUSD Long
+# Backtest 2024-12-04 — GBPUSD Long — POI & Step Decision
 
-> [!info] Mục đích backtest
-> Replay dữ liệu quá khứ để luyện nhận diện **ICT 2022 Model entry** trên GBPUSD. Mỗi file = 1 setup. Mục tiêu: lặp lại đủ nhiều để bias → POI → sweep → MSS → FVG entry trở thành phản xạ, và tích luỹ lesson learned.
+> [!warning] Đã hạ Grade từ A xuống B khi convert — đọc lý do trước khi phản đối
+> Bản gốc chấm **Grade: A**, nhưng chính bạn đã tự đề xuất trong "Rule cần thêm" của bản gốc: *"Nếu D1 bias còn 'tentative' (leg gần nhất ngược hướng)… grade tối đa = B cho tới khi H1 + M5 confirm… Lệnh này về bản chất là mua Discount trong một pullback của leg giảm gần nhất trên D1 — hợp lệ nhưng discretionary, nên grade A hiện đang hơi rộng tay."*
+> Mình áp dụng đúng rule bạn tự đặt ra: D1 bias tại thời điểm phân tích được ghi là *"vẫn chưa được xác nhận chính xác, tạm thời tôi đang xác định là Bullish"* → theo rule, grade tối đa = **B**. Đây không phải đánh giá lại chủ quan của mình, mà là áp dụng nhất quán tiêu chuẩn bạn đã tự rút ra. Nếu bạn thấy rule này chưa nên áp dụng hồi tố, cứ sửa lại `grade` về A.
+>
+> Ngoài ra: `session` để **trống** (bản gốc chỉ ghi "New York" chung, giờ 16:00/16:05-16:50/16:30/16:40 không rõ timezone gốc nên không đủ căn cứ xác định AM/PM) — cần bạn xác nhận. `risk_percent`, `spread_cost`, `r_net`, `smt_confirm`, `in_macro_time`, `displacement_score` cũng để trống vì bản gốc chưa ghi.
 
 ---
 
 ## 0. Backtest Summary
 
-| Field                | Value          |
-| -------------------- | -------------- |
-| Symbol               | GBPUSD         |
-| Trade Date (dữ liệu) | 2024-12-04     |
-| Position             | Long           |
-| Result               | Win            |
-| Session              | New York       |
-| Setup                | ICT 2022 Model |
-| Entry Model          | ICT 2022 Model |
-| Entry Timeframe      | M5             |
-| HTF Bias             | Bullish        |
-| Bias Correct?        | Yes            |
-| Entry                | 1.26615        |
-| Stop Loss            | 1.26494        |
-| Take Profit          | 1.27027        |
-| R Planned            | 3.4           |
-| R Multiple (kết quả) | 3.4           |
-| Grade                | A              |
+| Field                     | Value                                                       |
+| ------------------------- | ----------------------------------------------------------- |
+| Symbol                    | GBPUSD                                                      |
+| Model Variant             | Standard (D1/H4→H1→M5)                                      |
+| Trade Date (dữ liệu)      | 2024-12-04                                                  |
+| Position                  | Long                                                        |
+| Result                    | Win                                                         |
+| Session                   | *(chưa xác nhận AM/PM)*                                      |
+| HTF Bias                  | Bullish (tentative ở D1, confirm ở H1/M5)                   |
+| Bias Correct?             | Yes                                                          |
+| **POI Type**              | Order Block (H1)                                             |
+| POI Rank (8.1)            | 2 (FVG+OB — 2 FVG chồng lên OB)                              |
+| POI Timeframe             | H1                                                            |
+| POI Location              | Discount                                                     |
+| **Entry Type**            | Edge (vào phía trên CE, không chờ về CE)                     |
+| **Limit Filled?**         | Yes                                                          |
+| **First Error Step**      | entry                                                         |
+| R Planned (gross)         | 3.4                                                           |
+| R Net (sau spread)        | *(chưa có)*                                                   |
+| R Multiple (kết quả)      | 3.4                                                           |
+| Confluence Score (0–8)    | 2 (`cisd_confirm` + `idm_swept`; các mục khác chưa đánh giá)  |
+| Grade                     | **B** *(hạ từ A theo rule tự đặt — xem cảnh báo trên)*        |
 
-> ⚠️ Nhớ điền các field tương ứng trong **frontmatter** (phía trên) để Dataview dashboard tự tổng hợp.
+> ⚠️ Nhớ đồng bộ các ô trên với **frontmatter** phía trên — Dataview đọc frontmatter, không đọc bảng này.
 
 ---
 
 ## 1. HTF Context & Bias
 
-### D1 / H4 — Daily Bias
-
-- **Bias**: Bullish
-- **Market Condition**: Trending
-- **Lý do xác định bias** (PD array, draw on liquidity):
-	  - Giá đang trong Order Block (tổng quát) Bullish
-	  - Tuy nhiên leg gần nhất là 1 Bearish displacement
-	  - Sau đó giá có nhịp PullBack hồi lên
-	  - Giá vừa quét các old lows, phía trên còn 1 FVG D1 chưa bị mitigate
-	  - Lúc này Bias vẫn chưa được xác nhận chính xác, tạm thời tôi đang xác định là Bullish
-	  - Bias confirm khi H1 retrace về vùng POI (Order Block) và khung M5 quét OB đó sau đó hình thành CISD nuốt trọn nhịp giảm quét OB trước -> Khi này tôi xác nhạn Bias là Bullish
-	  - DOL phía trên là Dealing Range High khung H1 và FVG chưa mitigated khung D1
-- **Draw on Liquidity (mục tiêu giá hướng tới)**:
-  - Buy-side liquidity: 
-	  - H1 Dealing Range High (1.27497)
-	  - D1 FVG (1.28586 - 1.27688)
-  - Sell-side liquidity: Old low: 
-	  - Giá đã quét SSL, SSL hiện tại là old low vừa tạo ra (1.24852)
-	  - 1 FVG bến dưới: 1.24187 - 1.23954
+- **Bias**: Bullish — *lý do*:
+  - Giá đang trong Order Block (tổng quát) Bullish, nhưng leg gần nhất là một Bearish displacement.
+  - Sau đó giá có nhịp pullback hồi lên.
+  - Giá vừa quét các old lows, phía trên còn 1 FVG D1 chưa mitigate.
+  - **Bias tại thời điểm phân tích D1 chưa được xác nhận chắc chắn** — chỉ confirm khi H1 retrace về POI (OB) và M5 hình thành CISD nuốt trọn nhịp giảm quét OB.
+- **Dealing Range (H1)**: High 1.27497 / Low 1.26164 → **Discount** (đúng phía cho Long).
+- **Draw on Liquidity**:
+  - Buy-side (BSL): H1 Dealing Range High (1.27497); D1 FVG (1.28586–1.27688).
+  - Sell-side (SSL): old low vừa quét (1.24852); FVG bên dưới (1.24187–1.23954).
 
 ![[Pasted image 20260712160925.png]]
+![[Pasted image 20260712161058.png]]
 
-### H1 — Cấu trúc & POI
-- **Cấu trúc H1**: 
-	- HH/HL
-- **Dealing Range**: 
-	- High: 1.27497
-	- Low 1.26164
-	- Giá đang trong vùng Discount cho setup Long
-- **POI chính**: 
-	- OB vùng 1.26642 - 1.26515
-- **Liquidity cần chờ sweep**:
-  - Swing low phía dưới OB
-  - Vùng OB
+---
 
-### Phân Tích:
-	- Cấu trúc H1 đang là HH/HL, Order Flow đang là Bullish
-	- Tuy nhiên giá đang ở vùng EQ (50%)
-	- Bến dưới có 1 vùng OB hình thành từ nhịp displacement lên đỉnh cũ (1.26642 - 1.26515), tại thời điểm 9:00 AM ngày 04/12/2024
-	- Giá retrace về vùng OB này vào thời điểm 16:00 ngày 04/12/2024
-	- Xuống khung M5 quan sát giá
+## 2. POI Profile — điểm vào tôi đã chọn
+
+- **POI Type đã dùng**: Order Block H1 (1.26642–1.26515), hình thành từ nhịp displacement lên đỉnh cũ lúc 9:00 AM ngày 04/12/2024. Giá retrace về vùng này lúc 16:00 cùng ngày.
+- **POI Rank (8.1)**: 2/5 (FVG+OB — CISD để lại 2 FVG chồng lên OB: 1 FVG trên OB, 1 FVG ngay CE của OB).
+- **POI hình thành trên khung**: H1.
+- **POI nằm ở**: Discount — đúng phía cho Long.
+- **POI stack**: OB (H1) + FVG (trên OB) + FVG (tại CE OB).
+- **CE của FVG có trùng OTE 62–79%?**: No — bản gốc không đối chiếu fib Dealing Range, và entry thực tế (fib ~21% trong OB) nông hơn nhiều so với dải OTE.
+- **Bounds & CE**: FVG/OB High 1.26642 · Low 1.26515 · CE 1.265785.
 
 ![[Pasted image 20260712161058.png]]
 
-## M5 - Xác nhận và điểm vào lệnh
+---
 
-### Phân tích:
-	- Khi giá retrace về vùng OB, 1 câ nến Bearish displacement mạnh đóng nến xuyên qua bên kia (xuống cạnh dưới và ra ngoài OB) OB kèm râu nến
-	- Sau đó giá xuất hiện nhiều nến Bullish liên tiếp (có nến thân lớn) nuốt trọng cây nến Bearish displacement (đóng qua OB) trước đó hình thành 1 ** CISD **
-	- Giá Quay lại cạnh trên của OB
-	- Nhịp CISD đó kèm theo 2 FVG: 1 FVG nằm bên trên OB, 1 FVG nằm ngay CE của OB
-	- Sau đó giá retrace về xuyên thùng FVG 1 (trên OB)
-	- Giá sau đó retrace về FVG 2 (ngay CE của OB)
-	- Tuy nhiên giá chưa chạm tới FVG đã quay đầu
-	- Sau nhiều lần backtest tôi nhận ra 1 điều mặc dù vùng CE là điểm entry rất tốt (cho RR đẹp, theo sách giáo khoa) , sẽ có rất nhiều trader đặt Limit order tại đó (điểm này là tôi tự nghĩ sau khi backtest, chưa có bằng chứng cụ thể) -> Lệnh của họ sẽ không được trigger -> lỡ mất 
-	- Tôi thấy giá khi retrace rất hay quay về vùng giữa CE và 1 cạnh rồi quay đầu (những lệnh backtest gần đây), tôi cũng bị lỡ 1 số lệnh khi chờ giá về CE
-- **Entry trigger**:
-	  - Liquidity Sweep: 
-		  - Quét các old lows tạo ra trước đó 
-		  - Quét qua 50% OB khung H1
-	  - MSS: Giá tạo CISD từ 16:05 - 16:50 với các nến Bullish liên tiếp (không có nến Bearish) nuốt trọn nhịp giảm trước đó
-	  - Displacement: có displacement lúc 16:30 (tạo FVG số 2 trùng CE OB), 16:40 (FVG 1 cao hơn OB)
-- **Entry reason**:
-	  - Giá hình thành Setup theo mô hình ICT 2022: Sweep -> MSS + Displacement + FVG -> retrace FVG -> Entry (POI là OB H1, FVG trùng OB)
-- **Invalidation reason**:
-	  - Giá đóng qua OB H1
-- **Tôi có chờ đủ điều kiện không?** Có
+## 3. Entry Precision & Fill — vào cạnh hay CE, có khớp không?
+
+- **Entry Type**: Edge → `entry_type: Edge` (entry 1.26615 nằm trên CE 1.265785, tức phía Edge-top của OB).
+- **Entry Precision**: Between (entry cách top 0.00027, cách CE 0.000365 — nằm giữa Edge-top và CE, gần Edge hơn).
+- **Limit có được khớp không?**: Yes.
+- **Giá đi sâu bao nhiêu vào FVG/OB?**: `fill_depth_pct` ≈ 21% ((1.26642−1.26615)/(1.26642−1.26515)×100).
+- **RR ghi lại**: `r_planned` thực tế = 3.4. Nếu vào đúng CE (1.265785, SL giữ nguyên 1.26494): `rr_if_ce` ≈ **5.31** — RR cao hơn đáng kể nếu chờ CE. `rr_if_ote` để trống (không có định nghĩa OTE rõ ràng cho riêng OB này trong bản gốc).
+
+> [!important] Đây chính là lesson gốc: bạn chọn vào **trên CE** vì tin rằng "nhiều trader đặt limit tại CE nên lệnh của họ không được fill" — một giả thuyết **chưa có bằng chứng** (chính bạn ghi "tôi tự nghĩ, chưa có bằng chứng cụ thể"). Lệnh thắng, nhưng thắng không chứng minh giả thuyết đúng.
 
 ![[Pasted image 20260712162407.png]]
 
 ---
 
-## 2. ICT 2022 Model — Entry Sequence
+## 4. 7-Step Decision Log — bước nào đúng, bước nào sai
 
-Đánh dấu theo đúng thứ tự checklist của mô hình:
+| # | Bước | Đúng? | Ghi chú |
+|---|---|---|---|
+| 1 | **Bias** | Yes | Confirm được trước entry qua chuỗi H1 retrace + M5 CISD, dù D1 ban đầu tentative. |
+| 2 | **Draw on Liquidity** | Yes | BSL/SSL xác định đúng ở bước HTF. |
+| 3 | **Liquidity Sweep** | Yes | Quét old lows + quét 50% OB H1. |
+| 4 | **Displacement + MSS** | Yes | CISD (chuỗi nến bullish nuốt trọn nến bearish displacement) 16:05–16:50; displacement tạo FVG lúc 16:30 và 16:40. |
+| 5 | **POI (FVG/OB...)** | Yes | OB H1 hợp lệ, đúng Discount. |
+| 6 | **Entry (retrace)** | **No** | Vào trên CE dựa trên giả thuyết chưa kiểm chứng ("sợ lệnh không fill tại CE"), không phải rule đã backtest. |
+| 7 | **Target** | Yes | TP 1.27027 đặt có buffer trước H1 DR High (1.27497) — hợp lý, không đua tới sát pool thanh khoản. |
 
-- [x] **1. Liquidity Sweep** — giá quét thanh khoản (Equal H/L, swing, Asia range...)
-  - Loại: Internal / External / Equal Highs / Equal Lows
-- [x] **2. Displacement** — nến đẩy mạnh, tạo FVG, phá cấu trúc nội bộ
-- [x] **3. Market Structure Shift (MSS)** — phá swing point ngược hướng sweep
-- [x] **4. FVG / OB hợp lệ** hình thành trong displacement leg
-- [x] **5. Entry** — limit trong FVG/OB (CE - Consequent Encroachment) trong Kill Zone
-- [x] **6. Stop Loss** — phía trên/dưới điểm sweep (invalidation)
-- [x] **7. Take Profit** — opposing liquidity / PD array kế tiếp
+- **First Error Step**: `entry` — mắt xích duy nhất bị hỏng trong chuỗi 7 bước.
+- **Missing Step**: none.
+- **Đủ chuỗi 7 bước?**: Yes.
 
----
-
-## 3. Setup Quality Checklist
-
-- [x] Bias D1/H4 rõ ràng, không mâu thuẫn H1
-- [x] Giá nằm trong Kill Zone (London / NY AM 8:30–11:00 ET)
-- [x] Có Liquidity Sweep trước entry
-- [x] Có Displacement rõ ràng (không phải nến yếu)
-- [x] Có MSS hợp lệ
-- [x] FVG / OB nằm trong Discount (buy) hoặc Premium (sell)
-- [x] Entry trong POI hợp lệ, không đua giá
-- [x] SL ở vùng invalidation hợp lý
-- [x] RR tối thiểu đạt ≥ 1:2
+> [!warning] Chống hindsight bias
+> Checklist bản gốc từng tick "Bias D1/H4 rõ ràng, không mâu thuẫn H1" trong khi chính văn bản phân tích ghi "tạm thời, chưa xác nhận" — đây là **confirmation bias sau khi biết kết quả**. Template mới không lặp lại lỗi này: field `step1_bias_ok` ở đây được đánh giá dựa trên việc bias **có được confirm trước khi entry** (Yes), không phải "rõ ràng ngay từ D1" (điều này không đúng).
 
 ---
 
-## 4. Phân tích sau lệnh (Replay)
+## 5. Setup Quality & Confluence (GATE + SCORE)
 
-- **Result**: Hit TP
-- **Tại sao lệnh thắng/thua?**
-	  - Kiên nhẫn chờ H1 đồng Bias với khung D1 (Bullish)
-	  - Chờ M5, H1 confirm Bias
-	  - Chờ H1 quay về vùng Discount
-	  - Có quét thanh khoản + CISD
-- **Thị trường có cho tín hiệu cảnh báo trước không?**
-	  - Có Displacement
-	  - Có CISD
-	  - Có FVG
-- **Setup này khớp bao nhiêu % với mô hình chuẩn?** 90%  (Giá không quay về vùng CE cho RR cao hơn)
-- **Nếu được vào lại, tôi sẽ làm gì khác?**
-	  - Cần thêm backtest để xem lúc nào nên vào tại cạnh và khi nào vào tại CE
+**GATE:**
+- [x] Bias HTF (confirm trước entry) + draw xác định
+- [x] Liquidity sweep TRƯỚC displacement + reclaim → `sweep_type: Internal`
+- [x] Displacement hợp lệ (CISD nuốt trọn nến bearish) — `displacement_score` để trống, chưa chấm theo 4 tiêu chí
+- [x] MSS/CISD hợp lệ
+- [x] FVG/POI sạch, entry là retrace (dù ở Edge, không phải CE)
+- [x] Entry đúng Discount, đồng hướng bias
+- [x] Stop có logic (dưới OB) + target R:R 3.4 ≥ kế hoạch
+
+**SCORE (0–8):**
+
+| # | Confluence | +1? | Ghi chú |
+|---|---|---|---|
+| 1 | POI hạng ≥3 | No | Rank 2 |
+| 2 | CE trùng OTE 62–79% | No | Không trùng, entry nông hơn CE |
+| 3 | SMT divergence | *(chưa đánh giá)* | Không ghi nhận |
+| 4 | CISD flip LTF | **Yes** | Chuỗi bullish nuốt trọn nến bearish displacement |
+| 5 | Macro time | *(chưa đánh giá)* | Không rõ timezone giờ vào lệnh |
+| 6 | NWOG/NDOG align | No | Không đề cập |
+| 7 | −2SD/ERL target | No | TP là buffer trước DR High, không phải −2SD |
+| 8 | Inducement bị quét trước POI | **Yes** | Quét old lows/50% OB trước reversal |
+
+- **Confluence Score**: 2.
+- **Correlated asset**: none.
+- **Grade**: **B** (xem cảnh báo đầu file — áp dụng rule bias-tentative bạn tự đề xuất).
 
 ---
 
-## 5. Lesson Learned
+## 6. Phân tích sau lệnh (Replay)
 
+- **Result**: Hit TP.
+- **Tại sao thắng?**
+  - Kiên nhẫn chờ H1 đồng bias với D1, chờ M5/H1 confirm bias, chờ H1 về Discount, có sweep + CISD.
+- **POI đã chọn có phải lựa chọn tốt nhất không?**
+  - OB H1 hợp lệ, nhưng lựa chọn **entry level** (trên CE) chưa có cơ sở dữ liệu — chỉ là cảm nhận cá nhân.
+- **Entry (Edge/CE/OTE) có tối ưu không?**
+  - Không rõ. `rr_if_ce` ≈ 5.31 cho thấy chi phí cơ hội nếu vào Edge thay vì CE là rất lớn (mất gần 2R tiềm năng). Cần backtest thêm để xác định pattern "giá không về CE sau CISD mạnh" có thật hay không.
+- **Fill**: khớp đúng như kỳ vọng tại vùng Edge/Between.
+- **Bước đầu tiên sai**: Entry — nên có rule khách quan (vd: đếm số mẫu lịch sử giá có về CE sau CISD mạnh hay không) thay vì quyết định bằng cảm giác.
+- **Chi phí (spread/slippage)**: chưa ghi nhận.
+- **Setup khớp bao nhiêu % với mô hình chuẩn?** 90%.
+- **Nếu vào lại, tôi sẽ làm gì khác?**
+  - Log thêm `entry_zone`/`ce_filled` qua ≥20–30 mẫu để so sánh win rate + expectancy giữa "vào cạnh" và "chờ CE" bằng dữ liệu, không phải cảm giác.
 
-### 5.1. Bài học kỹ thuật
+---
 
-**Root cause (nguyên nhân gốc) — chỉ có MỘT:**
+## 7. Lesson Learned
 
-Đây là lệnh **thắng và execution rất sạch**, nên "root cause" ở đây không phải một lỗi gây thua — mà là **điểm quyết định (và đồng thời là mắt xích yếu nhất) của cả setup**: quyết định *entry-level* (vào phía trên CE thay vì tại CE) được đưa ra bằng **cảm nhận chưa có dữ liệu backtest** ("giá hay quay đầu trước CE"). Lệnh thắng, nhưng **thắng không chứng minh giả thuyết đúng** — nó chỉ chưa phủ nhận. Toàn bộ chất lượng lệnh này phụ thuộc vào 1 biến chưa được validate.
+### Bài học kỹ thuật (đặc thù POI / bước)
+**Root cause (nguyên nhân gốc):**
+Đây là lệnh thắng và execution khá sạch, nhưng **điểm quyết định (và cũng là mắt xích yếu nhất)** là: quyết định entry-level (vào phía trên CE thay vì tại CE) được đưa ra bằng **cảm nhận chưa có dữ liệu backtest** ("giá hay quay đầu trước CE"). Lệnh thắng, nhưng thắng không chứng minh giả thuyết đúng — nó chỉ chưa phủ nhận.
 
-**Triệu chứng (symptoms) — sinh ra từ root cause:**
+**Triệu chứng (symptoms):**
+- **Mâu thuẫn nội bộ trong journal gốc**: mục HTF Bias tự ghi "chưa xác nhận chính xác", nhưng Setup Quality Checklist lại tick "rõ ràng, không mâu thuẫn" → confirmation bias sau khi biết kết quả (đã sửa cách đánh giá trong mục 4 ở trên).
+- **Narrative chưa có bằng chứng đóng vai "sự thật"**: giả định "nhiều trader đặt limit ở CE nên lệnh họ không fill" là **story chưa kiểm chứng**.
+- **Chấm điểm theo RR thay vì theo tính hợp lệ của trigger**: bản gốc tự trừ xuống 90% chỉ vì giá không về CE — trong khi trigger (sweep + CISD + FVG + Discount) đã hợp lệ 100%.
 
-- **Mâu thuẫn nội bộ trong journal**: mục HTF Bias tự ghi *"Bias vẫn chưa được xác nhận chính xác, tạm thời xác định Bullish"*, nhưng ở **Setup Quality Checklist** lại tick *"Bias D1/H4 rõ ràng, không mâu thuẫn H1"*. Ô tick nói một đằng, phân tích nói một nẻo → dấu hiệu **confirmation bias sau khi biết kết quả**.
-- **Narrative chưa có bằng chứng đóng vai "sự thật"**: giả định "nhiều trader đặt limit ở CE nên lệnh họ không fill" được ghi nhận là lý do giá không về CE. Đây là **story chưa kiểm chứng** (chính bạn cũng note "tôi tự nghĩ, chưa có bằng chứng").
-- **Chấm điểm theo RR thay vì theo tính hợp lệ của trigger**: tự trừ xuống 90% match *chỉ vì giá không về CE cho RR đẹp hơn* — trong khi trigger (sweep + CISD + FVG + entry trong Discount) đã hợp lệ 100%. Việc thiếu "RR đẹp hơn" không làm setup kém chuẩn.
+**Cơ chế thị trường (hiểu để không lặp lại):**
+Giá retrace về H1 OB (Discount) → nến bearish displacement đóng xuyên qua cạnh dưới OB kèm râu (= liquidity sweep) → chuỗi nến bullish CISD nuốt trọn nến đó (= MSS) → leg CISD để lại 2 FVG (một trên OB, một tại CE OB). Sau một CISD mạnh, delivery đã chuyển sang tìm premium, nên giá thường tiếp tục ngay từ FVG đầu tiên/cạnh gần POI chứ không nhất thiết retrace sâu về CE. Việc giá quay đầu trước CE là **hệ quả cơ học của một CISD mạnh**, không nhất thiết vì "limit trader khác ở CE".
 
-**Cơ chế thị trường đã diễn ra (hiểu để không lặp lại):**
+### Pattern lặp lại (điều cần để ý lần sau)
+- **"Lỡ lệnh vì chờ CE"**: pattern lặp lại ở nhiều backtest gần đây — cần định lượng bằng field `entry_type`/`limit_filled` qua ≥20–30 mẫu trước khi đổi rule.
+- **Confirmation bias ở checklist**: xu hướng tick "bias rõ ràng" dù note tự nói chưa chắc — không được tick khi phân tích còn ghi "tạm thời/chưa xác nhận".
+- **Gán narrative cho hành vi giá**: giữ mô tả ở mức cơ chế (sweep/CISD/FVG/premium-discount), không thêm story không kiểm chứng được.
 
-Chuỗi đúng chuẩn 2022 Model: giá retrace về **H1 OB (1.26642–1.26515) trong vùng Discount** → một nến **bearish displacement đóng xuyên qua cạnh dưới OB kèm râu** (đây chính là **liquidity sweep** — quét stop dưới OB / old lows) → chuỗi nến bullish **CISD nuốt trọn** nến bearish đó (**MSS**) → leg CISD để lại **2 FVG** (một trên OB, một trùng CE của OB).
+### Rule cần thêm/cập nhật vào Playbook
+- [ ] **Entry-level rule (chờ dữ liệu xác nhận)**: khi CISD tạo ≥2 FVG chồng lên POI, entry mặc định = CE của FVG gần POI nhất. Chỉ cho phép entry sớm hơn tại cạnh nếu backtest chứng minh fill-rate tại CE thấp — **bắt buộc log `entry_type` để đo**, không đổi rule bằng cảm giác.
+- [ ] **Bias-grade rule**: nếu D1 bias còn "tentative" (leg gần nhất ngược hướng), grade tối đa = B cho tới khi H1+M5 confirm; cấm tick "bias rõ ràng" khi phân tích còn ghi "chưa xác nhận" (**đã áp dụng ngay trong file này — grade B**).
+- [ ] **Kill-zone verify rule**: ghi rõ timezone của mọi mốc giờ (broker/GMT/ET) — chỉ tick "trong Kill Zone" sau khi quy đổi về ET.
+- [ ] **Housekeeping**: điền `risk_percent` — vẫn còn thiếu ở bản convert này.
 
-Điểm cốt lõi cần hiểu: **sau một CISD mạnh, delivery đã chuyển sang tìm premium**, nên giá thường tiếp tục ngay từ **FVG đầu tiên / cạnh gần POI** chứ không nhất thiết retrace sâu về **CE (50%)**. Việc giá quay đầu trước CE là **hệ quả cơ học của một CISD mạnh**, KHÔNG nhất thiết vì "limit của trader khác ở CE". Nếu chờ CE trong một displacement mạnh, bạn thực chất đang chờ một mức inefficiency sâu hơn mà thị trường không có nghĩa vụ phải cho. Đây là lý do "chờ CE" hay bị lỡ — và nó *nhất quán về mặt cơ chế*, không phải xui.
+---
 
-### 5.2. Pattern lặp lại (điều cần để ý lần sau)
+## 8. Final Grade
 
-- **"Lỡ lệnh vì chờ CE"**: bạn đã ghi nhận pattern này lặp lại ở nhiều backtest gần đây. Đây là pattern đáng để **định lượng**, không phải để đổi rule theo cảm giác. Thêm 2 field vào mọi backtest: `entry_zone` (Edge / CE) và `ce_filled` (Yes/No), rồi so **win rate + expectancy** của "vào cạnh" vs "chờ CE" trên **≥ 20–30 mẫu** trước khi kết luận.
-- **Confirmation bias ở checklist**: xu hướng tick "bias rõ ràng" dù note tự nói chưa chắc. Lần sau: nếu chữ trong phần phân tích còn từ "tạm thời / chưa xác nhận" thì **không được** tick ô "rõ ràng".
-- **Gán narrative cho hành vi giá**: xu hướng giải thích chuyển động giá bằng câu chuyện về "trader khác" thay vì cơ chế delivery. Giữ mô tả ở mức cơ chế (sweep/CISD/FVG/premium-discount), không thêm story không kiểm chứng được.
+| Tiêu chí | Điểm | Ghi chú |
+|---|---|---|
+| HTF Bias & Draw | 6/10 | Bias D1 tentative lúc phân tích, chỉ confirm muộn ở H1/M5 |
+| POI Selection (đúng loại + hạng + P/D) | 8/10 | OB H1 hợp lệ, đúng Discount, rank 2 |
+| Liquidity Sweep | 8/10 | Sweep + CISD rõ ràng |
+| Displacement / MSS quality | 8/10 | CISD mạnh, nuốt trọn nhịp giảm |
+| Entry Precision & Fill (Edge/CE/OTE) | 4/10 | Vào Edge dựa trên giả thuyết chưa kiểm chứng |
+| Risk Management (R net, RR) | 6/10 | RR 3.4 tốt nhưng thiếu `risk_percent`/`r_net` |
 
-### 5.3. Rule cần thêm/cập nhật vào Playbook
+**Overall Grade**: **B** (hạ từ A theo rule bias-tentative — xem cảnh báo đầu file)
 
-1. **Entry-level rule (đề xuất, CHỜ dữ liệu xác nhận):** Trong 2022 Model, khi CISD tạo ≥ 2 FVG chồng lên POI, **entry mặc định = 50% (CE) của FVG gần POI nhất**. Chỉ khi backtest chứng minh fill-rate tại CE thấp mới cho phép entry sớm hơn tại **cạnh trên FVG** với SL giữ nguyên dưới sweep. **Điều kiện bắt buộc: phải log `entry_zone` để đo — không đổi rule bằng cảm giác.**
-2. **Bias-grade rule:** Nếu D1 bias còn "tentative" (leg gần nhất ngược hướng, như lệnh này leg D1 gần nhất là *bearish displacement*), **grade tối đa = B** cho tới khi H1 + M5 confirm; và **cấm tick "bias rõ ràng"** khi phần phân tích còn ghi "chưa xác nhận". Lệnh này về bản chất là **mua Discount trong một pullback của leg giảm gần nhất trên D1** — hợp lệ nhưng discretionary, nên grade A hiện đang hơi rộng tay.
-3. **Kill-zone verify rule:** Ghi rõ **timezone của mọi mốc giờ** (broker/GMT/ET) cạnh giờ vào lệnh (16:00 = giờ gì?). Chỉ tick "trong Kill Zone" sau khi quy đổi về ET và xác nhận rơi vào London hoặc NY AM — không tick chay.
-4. **Housekeeping:** Điền `risk_percent` trong frontmatter (chart hiển thị stop = 0.096% biến động giá, nhưng % rủi ro tài khoản phụ thuộc position size — cần con số thật để đối chiếu rule ≤ 0.5%/lệnh).
+> [!tip] Chống curve-fitting
+> Trigger (sweep + CISD + FVG hợp lệ trong Discount) nhận diện được trước outcome — hợp lệ để tính vào thống kê edge, nhưng grade phản ánh chất lượng bias-tại-thời-điểm-phân-tích, không phải chỉ kết quả.
 
+---
+
+### Liên kết
+
+- Model: [[01 - ICT 2022 Model]]
+- POI ladder: [[25 - OB - Order Block]] · [[13 - FVG  - Fair Value Gap]]
+- Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[26 - OTE - Optimal Trade Entry]] · [[27 - Premium Discount]]
+- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]]
+- Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]
+
+---
+
+> [!important] Việc cần bạn bổ sung (không tự suy diễn khi convert)
+> - `session`: xác nhận New York AM hay PM.
+> - `rr_if_ote`: chưa có định nghĩa OTE band rõ ràng cho OB này.
+> - `displacement_score`, `smt_confirm`, `in_macro_time`: cần xem lại chart gốc.
+> - `risk_percent`, `spread_cost`, `r_net`: chưa từng được ghi ở bản gốc.
+> - Xác nhận lại quyết định hạ **Grade A → B** — nếu không đồng ý, sửa lại `grade: A` trong frontmatter.
