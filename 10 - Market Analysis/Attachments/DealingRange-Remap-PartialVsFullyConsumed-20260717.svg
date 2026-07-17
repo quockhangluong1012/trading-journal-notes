@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520" font-family="Segoe UI, Arial, sans-serif">
+<rect x="0" y="0" width="920" height="520" rx="10" fill="#191b1f"/>
+<text x="460" y="26" font-size="14" fill="#e6e8ea" text-anchor="middle" font-weight="600">"Partially Consumed" vs "Fully Consumed" - remap chi LTF hay ca HTF? (minh hoa nguyen ly)</text>
+<line x1="460" y1="40" x2="460" y2="500" stroke="#2b2f36" stroke-width="1.5"/>
+
+<!-- LEFT: partially consumed -->
+<text x="30" y="60" font-size="13" fill="#40c057" font-weight="600">PARTIALLY CONSUMED - remap RANGE CON, giu nguyen HTF</text>
+
+<!-- D1 outer box (unchanged) -->
+<rect x="30" y="90" width="400" height="360" fill="none" stroke="#4dabf7" stroke-width="1.6" rx="6"/>
+<text x="38" y="108" font-size="11" fill="#4dabf7">D1 range (chua doi - external D1 chua bi lay)</text>
+
+<!-- H4 box inside -->
+<rect x="55" y="140" width="350" height="270" fill="none" stroke="#9775fa" stroke-width="1.4" rx="6" stroke-dasharray="6 3"/>
+<text x="63" y="156" font-size="10.5" fill="#9775fa">H4 range (chua doi)</text>
+
+<!-- H1 box - the one that gets remapped -->
+<rect x="80" y="230" width="300" height="150" fill="none" stroke="#f0a500" stroke-width="1.6" rx="6"/>
+<text x="88" y="246" font-size="10.5" fill="#f0a500">H1 range MOI (vua remap - "duong do" = low)</text>
+
+<!-- red line low inside H1 box, far from D1/H4 external -->
+<line x1="100" y1="365" x2="360" y2="365" stroke="#e03131" stroke-width="2"/>
+<text x="105" y="379" font-size="10" fill="#e03131">"duong do" (internal low vua sweep)</text>
+
+<!-- distance marker to D1 external low -->
+<line x1="380" y1="365" x2="380" y2="440" stroke="#9aa0a6" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="30" y1="440" x2="430" y2="440" stroke="#4dabf7" stroke-width="1.6"/>
+<text x="35" y="456" font-size="10" fill="#4dabf7">D1 external low (con cach xa &gt; 15-20% bien do)</text>
+
+<text x="30" y="480" font-size="10.5" fill="#e6e8ea">- Cau truc H4/D1 CHUA break, chi break LTF</text>
+<text x="30" y="494" font-size="10.5" fill="#e6e8ea">- FVG HTF phia sau van con unmitigated -&gt; remap H1, di tiep cung bias</text>
+
+<!-- RIGHT: fully consumed -->
+<text x="490" y="60" font-size="13" fill="#fa5252" font-weight="600">FULLY CONSUMED - remap CA tang cha (cascade)</text>
+
+<rect x="490" y="90" width="400" height="360" fill="none" stroke="#4dabf7" stroke-width="1.6" rx="6" opacity="0.5" stroke-dasharray="4 4"/>
+<text x="498" y="108" font-size="11" fill="#4dabf7" opacity="0.7">D1 range CU (sap bi thay the)</text>
+
+<rect x="515" y="140" width="350" height="270" fill="none" stroke="#9775fa" stroke-width="1.4" rx="6" stroke-dasharray="6 3" opacity="0.5"/>
+
+<!-- H1 low coincides / very close to D1 external -->
+<rect x="540" y="230" width="300" height="150" fill="none" stroke="#f0a500" stroke-width="1.6" rx="6"/>
+<text x="548" y="246" font-size="10.5" fill="#f0a500">H1 range MOI ("duong do" = low)</text>
+
+<line x1="560" y1="405" x2="820" y2="405" stroke="#e03131" stroke-width="2.4"/>
+<text x="565" y="420" font-size="10" fill="#e03131">"duong do" TRUNG / rat sat D1 external low</text>
+
+<!-- new D1 box redrawn (solid) -->
+<rect x="510" y="120" width="380" height="290" fill="none" stroke="#4dabf7" stroke-width="2" rx="6"/>
+<text x="795" y="135" font-size="10" fill="#4dabf7" font-weight="600">D1 range MOI (da cascade)</text>
+
+<text x="490" y="440" font-size="10.5" fill="#e6e8ea">- Displacement du manh, PHA LUON cau truc H4/D1</text>
+<text x="490" y="454" font-size="10.5" fill="#e6e8ea">- FVG HTF phia sau da bi lap boi chinh nhip nay</text>
+<text x="490" y="468" font-size="10.5" fill="#fa5252" font-weight="600">-&gt; remap ca H1 va D1/H4, can nhac nghiem tuc dao bias</text>
+
+<line x1="20" y1="486" x2="900" y2="486" stroke="#2b2f36" stroke-width="1"/>
+<text x="20" y="503" font-size="10.5" fill="#9aa0a6">Neu 3 tieu chi cho tin hieu trai chieu -&gt; mac dinh "partially consumed" nhung giam size, theo doi sat dau hieu dao.</text>
+</svg>

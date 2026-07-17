@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="520" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Range Invalidation -> FVG chuyen thanh iFVG (dao cuc tinh)</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">Wick quet noi bo (con hop le) vs Dong cua + acceptance duoi diem dinh nghia range = CISD (range vo hieu)</text>
+
+  <!-- three phases -->
+  <!-- Phase A -->
+  <text x="180" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#1e8449">1) FVG = HO TRO (Long)</text>
+  <rect x="60" y="110" width="240" height="360" fill="#fafafa" stroke="#ddd"/>
+  <rect x="60" y="200" width="240" height="55" fill="#a9dfbf" fill-opacity="0.6"/>
+  <text x="180" y="232" text-anchor="middle" font-size="12" fill="#1e8449">Bullish FVG</text>
+  <line x1="60" y1="430" x2="300" y2="430" stroke="#333" stroke-width="2"/>
+  <text x="180" y="450" text-anchor="middle" font-size="11" fill="#333">Range Low 1.70592</text>
+  <!-- price bouncing in FVG -->
+  <path d="M 120 150 Q 150 230 175 228 Q 200 226 230 160" stroke="#1e8449" stroke-width="2.2" fill="none"/>
+  <text x="180" y="290" text-anchor="middle" font-size="10.5" fill="#555">Gia retrace ve FVG,</text>
+  <text x="180" y="305" text-anchor="middle" font-size="10.5" fill="#555">ky vong tiep dien tang</text>
+
+  <!-- Phase B -->
+  <text x="450" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#c0392b">2) DONG CUA DUOI RANGE LOW = CISD</text>
+  <rect x="330" y="110" width="240" height="360" fill="#fafafa" stroke="#ddd"/>
+  <rect x="330" y="200" width="240" height="55" fill="#a9dfbf" fill-opacity="0.35"/>
+  <line x1="330" y1="430" x2="570" y2="430" stroke="#333" stroke-width="2"/>
+  <text x="450" y="450" text-anchor="middle" font-size="11" fill="#333">Range Low (bi pha)</text>
+  <!-- displacement candles down through range low -->
+  <g stroke="#c0392b" stroke-width="8">
+    <line x1="405" y1="230" x2="405" y2="300"/>
+    <line x1="430" y1="260" x2="430" y2="345"/>
+    <line x1="455" y1="300" x2="455" y2="400"/>
+    <line x1="480" y1="350" x2="480" y2="465"/>
+  </g>
+  <text x="450" y="345" text-anchor="middle" font-size="10.5" fill="#c0392b" font-weight="700">Bearish displacement</text>
+  <text x="450" y="360" text-anchor="middle" font-size="10.5" fill="#c0392b" font-weight="700">dong cua + duy tri DUOI range low</text>
+
+  <!-- Phase C -->
+  <text x="720" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#c0392b">3) iFVG = KHANG CU (Short)</text>
+  <rect x="600" y="110" width="240" height="360" fill="#fafafa" stroke="#ddd"/>
+  <rect x="600" y="200" width="240" height="55" fill="#f5b7b1" fill-opacity="0.7"/>
+  <text x="720" y="232" text-anchor="middle" font-size="12" fill="#c0392b">iFVG (da dao cuc tinh)</text>
+  <line x1="600" y1="430" x2="840" y2="430" stroke="#333" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- price retest from below and reject -->
+  <path d="M 660 460 Q 700 300 720 250 Q 730 235 745 320 Q 760 400 790 470" stroke="#c0392b" stroke-width="2.2" fill="none" marker-end="url(#arrowD)"/>
+  <text x="720" y="300" text-anchor="middle" font-size="10.5" fill="#c0392b">Gia test lai canh duoi</text>
+  <text x="720" y="315" text-anchor="middle" font-size="10.5" fill="#c0392b">FVG cu tu duoi len -> reject</text>
+
+  <text x="450" y="500" text-anchor="middle" font-size="12.5" fill="#444">Diem chot: WICK xuyen range low roi quay lai = raid noi bo (POI con song). DONG CUA duoi range low = doi character -> POI invalidated, khong re-entry Long.</text>
+
+  <defs>
+    <marker id="arrowD" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+</svg>

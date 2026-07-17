@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Internal Liquidity vs Structural Liquidity — vi sao POI bi dam thung</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">GBPUSD 2014-07-17 Long — POI nam ngay tren "mong" cua dealing range, khong co dem thanh khoan noi bo</text>
+
+  <!-- LEFT PANEL: ACTUAL (WRONG) -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">LENH THUC TE (rui ro cao)</text>
+  <!-- price axis frame -->
+  <rect x="70" y="100" width="330" height="410" fill="#fafafa" stroke="#ddd"/>
+  <!-- range high -->
+  <line x1="70" y1="120" x2="400" y2="120" stroke="#333" stroke-width="2"/>
+  <text x="405" y="124" font-size="11" fill="#333">Range High 1.71924 (0)</text>
+  <!-- EQ 0.5 -->
+  <line x1="70" y1="205" x2="400" y2="205" stroke="#27ae60" stroke-dasharray="4 3"/>
+  <text x="405" y="209" font-size="11" fill="#27ae60">EQ 0.5  1.71257</text>
+  <!-- FVG/POI band + OTE -->
+  <rect x="70" y="240" width="330" height="70" fill="#b0b0b0" fill-opacity="0.45"/>
+  <text x="150" y="235" font-size="11" fill="#555">FVG / OTE (POI)</text>
+  <line x1="70" y1="240" x2="400" y2="240" stroke="#888"/>
+  <text x="405" y="244" font-size="10" fill="#888">0.618  1.71110 (FVG top 1.71103)</text>
+  <line x1="70" y1="273" x2="400" y2="273" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="405" y="277" font-size="10" fill="#e67e22">CE / 0.705  1.70984 = ENTRY</text>
+  <line x1="70" y1="310" x2="400" y2="310" stroke="#888"/>
+  <text x="405" y="307" font-size="10" fill="#888">0.786 / FVG low 1.70873</text>
+  <!-- SL -->
+  <line x1="70" y1="322" x2="400" y2="322" stroke="#c0392b" stroke-dasharray="5 3"/>
+  <text x="405" y="326" font-size="10" fill="#c0392b">SL 1.70840</text>
+  <!-- VOID zone -->
+  <rect x="70" y="322" width="330" height="150" fill="#f9d0c4" fill-opacity="0.5"/>
+  <text x="235" y="390" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">VUNG TRONG — khong co</text>
+  <text x="235" y="408" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">EQL / swing noi bo nao</text>
+  <text x="235" y="426" text-anchor="middle" font-size="11" fill="#a93226">SSL cau truc chua bi quet</text>
+  <!-- range low -->
+  <line x1="70" y1="472" x2="400" y2="472" stroke="#333" stroke-width="2"/>
+  <text x="405" y="476" font-size="11" fill="#333">Range Low 1.70592 (1)</text>
+  <!-- arrow price stabbing through -->
+  <path d="M 300 273 Q 320 360 330 470" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#arrowR)"/>
+  <text x="300" y="500" text-anchor="middle" font-size="11" fill="#c0392b">Gia dam thang xuong quet SSL cau truc</text>
+
+  <!-- RIGHT PANEL: IDEAL -->
+  <text x="665" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#1e8449">SETUP LY TUONG (co dem)</text>
+  <rect x="500" y="100" width="330" height="410" fill="#fafafa" stroke="#ddd"/>
+  <line x1="500" y1="120" x2="830" y2="120" stroke="#333" stroke-width="2"/>
+  <text x="500" y="115" font-size="11" fill="#333">Range High</text>
+  <line x1="500" y1="205" x2="830" y2="205" stroke="#27ae60" stroke-dasharray="4 3"/>
+  <text x="500" y="200" font-size="11" fill="#27ae60">EQ 0.5</text>
+  <rect x="500" y="240" width="330" height="70" fill="#a9dfbf" fill-opacity="0.55"/>
+  <text x="580" y="235" font-size="11" fill="#1e8449">FVG / OTE (POI)</text>
+  <text x="665" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#1e8449">Entry o CE + OTE</text>
+  <!-- internal liquidity buffer -->
+  <line x1="500" y1="370" x2="830" y2="370" stroke="#2980b9" stroke-dasharray="3 2"/>
+  <text x="500" y="365" font-size="10" fill="#2980b9">EQL / swing noi bo (dem thanh khoan)</text>
+  <circle cx="640" cy="370" r="4" fill="#2980b9"/>
+  <circle cx="700" cy="370" r="4" fill="#2980b9"/>
+  <line x1="500" y1="472" x2="830" y2="472" stroke="#333" stroke-width="2"/>
+  <text x="500" y="490" font-size="11" fill="#333">Range Low</text>
+  <!-- price sweeps internal then returns -->
+  <path d="M 665 310 Q 620 360 660 372 Q 700 380 720 300" stroke="#1e8449" stroke-width="2.5" fill="none" marker-end="url(#arrowG)"/>
+  <text x="665" y="440" text-anchor="middle" font-size="11" fill="#1e8449">Gia quet EQL noi bo roi quay len — POI duoc ton trong</text>
+
+  <text x="450" y="540" text-anchor="middle" font-size="12" fill="#444">Bai hoc: neu giua POI va diem dinh nghia range KHONG co thanh khoan noi bo de hap thu, xac suat gia dam xuyen ca range de lay SSL cau truc tang manh.</text>
+
+  <defs>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1e8449"/>
+    </marker>
+  </defs>
+</svg>

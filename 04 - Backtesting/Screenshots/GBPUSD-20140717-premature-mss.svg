@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="500" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Trade INTO liquidity vs Trade AFTER sweep + MSS "som"</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">Entry truoc khi SSL cau truc bi quet — MSS M5 co the la LTF inducement, khong phai shift that</text>
+
+  <!-- WRONG sequence -->
+  <text x="230" y="92" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">SAI: vao truoc khi quet</text>
+  <rect x="50" y="105" width="360" height="330" fill="#fdf1ee" stroke="#e0b4a8"/>
+  <text x="230" y="130" text-anchor="middle" font-size="12" fill="#555">MSS 19:15 -> vao lenh (SSL con nguyen ben duoi)</text>
+  <!-- steps -->
+  <circle cx="90" cy="175" r="14" fill="#c0392b"/><text x="90" y="180" text-anchor="middle" font-size="12" fill="#fff">1</text>
+  <text x="115" y="180" font-size="12" fill="#333">MSS M5 tren cu tap NONG cua POI</text>
+  <circle cx="90" cy="225" r="14" fill="#c0392b"/><text x="90" y="230" text-anchor="middle" font-size="12" fill="#fff">2</text>
+  <text x="115" y="230" font-size="12" fill="#333">Entry 1.70984 (SSL duoi chua quet)</text>
+  <circle cx="90" cy="275" r="14" fill="#c0392b"/><text x="90" y="280" text-anchor="middle" font-size="12" fill="#fff">3</text>
+  <text x="115" y="280" font-size="12" fill="#333">Leg yeu: 3h moi tao M5 FVG, khong toi TP</text>
+  <circle cx="90" cy="325" r="14" fill="#c0392b"/><text x="90" y="330" text-anchor="middle" font-size="12" fill="#fff">4</text>
+  <text x="115" y="325" font-size="12" fill="#333">Gia test SL 3 lan / 14h (do du)</text>
+  <circle cx="90" cy="375" r="14" fill="#c0392b"/><text x="90" y="380" text-anchor="middle" font-size="12" fill="#fff">5</text>
+  <text x="115" y="375" font-size="12" fill="#333">Quet SL -> displacement giam manh</text>
+  <text x="230" y="415" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">= Ban tro thanh thanh khoan cho SSL</text>
+
+  <!-- RIGHT sequence -->
+  <text x="670" y="92" text-anchor="middle" font-size="15" font-weight="700" fill="#1e8449">DUNG: quet xong roi vao</text>
+  <rect x="490" y="105" width="360" height="330" fill="#eafaf1" stroke="#a9dfbf"/>
+  <text x="670" y="130" text-anchor="middle" font-size="12" fill="#555">Doi SSL bi quet -> MSS -> POI moi hinh thanh</text>
+  <circle cx="530" cy="175" r="14" fill="#1e8449"/><text x="530" y="180" text-anchor="middle" font-size="12" fill="#fff">1</text>
+  <text x="555" y="180" font-size="12" fill="#333">Cho gia quet SSL cau truc truoc</text>
+  <circle cx="530" cy="225" r="14" fill="#1e8449"/><text x="530" y="230" text-anchor="middle" font-size="12" fill="#fff">2</text>
+  <text x="555" y="230" font-size="12" fill="#333">MSS + displacement MANH sau sweep</text>
+  <circle cx="530" cy="275" r="14" fill="#1e8449"/><text x="530" y="280" text-anchor="middle" font-size="12" fill="#fff">3</text>
+  <text x="555" y="280" font-size="12" fill="#333">Entry o POI hinh thanh SAU sweep</text>
+  <circle cx="530" cy="325" r="14" fill="#1e8449"/><text x="530" y="330" text-anchor="middle" font-size="12" fill="#fff">4</text>
+  <text x="555" y="325" font-size="12" fill="#333">SSL da sach -> it ly do quet nguoc</text>
+  <circle cx="530" cy="375" r="14" fill="#1e8449"/><text x="530" y="380" text-anchor="middle" font-size="12" fill="#fff">5</text>
+  <text x="555" y="375" font-size="12" fill="#333">Displacement thuan chieu, giu lenh</text>
+  <text x="670" y="415" text-anchor="middle" font-size="12" font-weight="700" fill="#1e8449">= Ban di CUNG smart money</text>
+
+  <text x="450" y="465" text-anchor="middle" font-size="12.5" fill="#444">Tin hieu canh bao som: MSS tren tap nong + leg cham/yeu + nhieu lan test SL = tich luy/phan phoi, khong phai dao chieu dut khoat.</text>
+</svg>

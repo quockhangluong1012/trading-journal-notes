@@ -19,7 +19,7 @@ timeframes:
   - M1
 models:
   - "[[01 - ICT 2022 Model|ICT 2022]]"
-last_reviewed: 2026-06-22
+last_reviewed: 2026-07-17
 created: 2026-06-22
 updated: 2026-07-03
 common_mistakes:

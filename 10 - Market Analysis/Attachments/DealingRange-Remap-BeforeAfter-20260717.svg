@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" font-family="Segoe UI, Arial, sans-serif">
+<rect x="0" y="0" width="900" height="540" rx="10" fill="#191b1f"/>
+<defs>
+<marker id="arB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#9aa0a6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<text x="450" y="26" font-size="14" fill="#e6e8ea" text-anchor="middle" font-weight="600">Re-map Dealing Range Low - Truoc va Sau (minh hoa nguyen ly, khong phai chart that)</text>
+<line x1="450" y1="40" x2="450" y2="520" stroke="#2b2f36" stroke-width="1.5"/>
+
+<!-- ============ LEFT PANEL: BEFORE (old range) ============ -->
+<text x="30" y="58" font-size="13.5" fill="#fa5252" font-weight="600">TRUOC - Range CU (da het hieu luc)</text>
+
+<!-- old DR high/low lines -->
+<line x1="30" y1="90" x2="415" y2="90" stroke="#9aa0a6" stroke-width="1.4"/>
+<text x="35" y="84" font-size="10.5" fill="#9aa0a6">DR High cu (gray)</text>
+<line x1="30" y1="430" x2="415" y2="430" stroke="#9aa0a6" stroke-width="1.4"/>
+<text x="35" y="446" font-size="10.5" fill="#9aa0a6">DR Low cu (gray) - day accumulation goc</text>
+<line x1="30" y1="260" x2="415" y2="260" stroke="#6b7280" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="365" y="256" font-size="10" fill="#6b7280">EQ cu 50%</text>
+
+<!-- accumulation base (small candles near old low) -->
+<g stroke-width="1.1">
+<line x1="55" y1="405" x2="55" y2="422" stroke="#40c057"/><rect x="51" y="410" width="8" height="10" fill="#40c057"/>
+<line x1="72" y1="398" x2="72" y2="418" stroke="#fa5252"/><rect x="68" y="402" width="8" height="12" fill="#fa5252"/>
+<line x1="89" y1="392" x2="89" y2="415" stroke="#40c057"/><rect x="85" y="397" width="8" height="13" fill="#40c057"/>
+</g>
+
+<!-- rally leg up -->
+<g stroke-width="1.2">
+<line x1="115" y1="360" x2="115" y2="398" stroke="#40c057"/><rect x="111" y="368" width="8" height="24" fill="#40c057"/>
+<line x1="132" y1="310" x2="132" y2="362" stroke="#40c057"/><rect x="128" y="318" width="8" height="34" fill="#40c057"/>
+<line x1="149" y1="255" x2="149" y2="315" stroke="#40c057"/><rect x="145" y="262" width="8" height="45" fill="#40c057"/>
+<line x1="166" y1="205" x2="166" y2="262" stroke="#40c057"/><rect x="162" y="212" width="8" height="42" fill="#40c057"/>
+</g>
+
+<!-- top consolidation -->
+<g stroke-width="1.1">
+<line x1="185" y1="185" x2="185" y2="225" stroke="#40c057"/><rect x="181" y="192" width="8" height="26" fill="#40c057"/>
+<line x1="202" y1="195" x2="202" y2="230" stroke="#fa5252"/><rect x="198" y="200" width="8" height="24" fill="#fa5252"/>
+<line x1="219" y1="180" x2="219" y2="222" stroke="#40c057"/><rect x="215" y="188" width="8" height="28" fill="#40c057"/>
+</g>
+
+<!-- distribution leg down (lower highs / lower lows) -->
+<g stroke-width="1.1">
+<line x1="240" y1="205" x2="240" y2="255" stroke="#fa5252"/><rect x="236" y="212" width="8" height="34" fill="#fa5252"/>
+<line x1="257" y1="235" x2="257" y2="280" stroke="#fa5252"/><rect x="253" y="242" width="8" height="30" fill="#fa5252"/>
+<line x1="274" y1="255" x2="274" y2="300" stroke="#40c057"/><rect x="270" y="262" width="8" height="30" fill="#40c057"/>
+<line x1="291" y1="275" x2="291" y2="325" stroke="#fa5252"/><rect x="287" y="282" width="8" height="34" fill="#fa5252"/>
+<line x1="308" y1="300" x2="308" y2="345" stroke="#fa5252"/><rect x="304" y="307" width="8" height="30" fill="#fa5252"/>
+</g>
+
+<!-- sweep + displacement leg (the red-line event) -->
+<line x1="325" y1="330" x2="325" y2="395" stroke="#fa5252" stroke-width="1.4"/><rect x="321" y="345" width="8" height="45" fill="#fa5252"/>
+<!-- new low marked, but in OLD panel it is just "somewhere mid old range" -->
+<line x1="330" y1="392" x2="400" y2="392" stroke="#e03131" stroke-width="1.6" stroke-dasharray="6 3"/>
+<text x="332" y="406" font-size="10" fill="#e03131">"duong do" - chi la 1 diem giua range CU</text>
+
+<line x1="340" y1="360" x2="340" y2="400" stroke="#40c057" stroke-width="1.6"/><rect x="336" y="365" width="8" height="30" fill="#40c057"/>
+
+<text x="30" y="470" font-size="11" fill="#9aa0a6">Do Premium/Discount tren range CU -&gt; vi tri hien tai</text>
+<text x="30" y="484" font-size="11" fill="#9aa0a6">van con nam GIUA range -&gt; khong ro dao/tiep dien.</text>
+<text x="30" y="500" font-size="11.5" fill="#fa5252" font-weight="600">SAI: range da het vai tro, con dung so lieu cu.</text>
+
+<!-- ============ RIGHT PANEL: AFTER (new range) ============ -->
+<text x="480" y="58" font-size="13.5" fill="#40c057" font-weight="600">SAU - Range MOI (da remap)</text>
+
+<!-- reuse same price path shape, offset +450 -->
+<g transform="translate(450,0)">
+<g stroke-width="1.1" opacity="0.55">
+<line x1="55" y1="405" x2="55" y2="422" stroke="#40c057"/><rect x="51" y="410" width="8" height="10" fill="#40c057"/>
+<line x1="72" y1="398" x2="72" y2="418" stroke="#fa5252"/><rect x="68" y="402" width="8" height="12" fill="#fa5252"/>
+<line x1="89" y1="392" x2="89" y2="415" stroke="#40c057"/><rect x="85" y="397" width="8" height="13" fill="#40c057"/>
+<line x1="115" y1="360" x2="115" y2="398" stroke="#40c057"/><rect x="111" y="368" width="8" height="24" fill="#40c057"/>
+<line x1="132" y1="310" x2="132" y2="362" stroke="#40c057"/><rect x="128" y="318" width="8" height="34" fill="#40c057"/>
+<line x1="149" y1="255" x2="149" y2="315" stroke="#40c057"/><rect x="145" y="262" width="8" height="45" fill="#40c057"/>
+<line x1="166" y1="205" x2="166" y2="262" stroke="#40c057"/><rect x="162" y="212" width="8" height="42" fill="#40c057"/>
+</g>
+
+<!-- new DR High = swing high right before final decline leg -->
+<line x1="185" y1="185" x2="185" y2="225" stroke="#40c057"/><rect x="181" y="192" width="8" height="26" fill="#40c057"/>
+<circle cx="185" cy="188" r="5" fill="none" stroke="#f0a500" stroke-width="2"/>
+<line x1="185" y1="184" x2="400" y2="184" stroke="#40c057" stroke-width="1.6"/>
+<text x="188" y="176" font-size="10.5" fill="#40c057" font-weight="600">DR High MOI (swing high truoc leg giam)</text>
+
+<g stroke-width="1.1" opacity="0.85">
+<line x1="202" y1="195" x2="202" y2="230" stroke="#fa5252"/><rect x="198" y="200" width="8" height="24" fill="#fa5252"/>
+<line x1="219" y1="180" x2="219" y2="222" stroke="#40c057"/><rect x="215" y="188" width="8" height="28" fill="#40c057"/>
+<line x1="240" y1="205" x2="240" y2="255" stroke="#fa5252"/><rect x="236" y="212" width="8" height="34" fill="#fa5252"/>
+<line x1="257" y1="235" x2="257" y2="280" stroke="#fa5252"/><rect x="253" y="242" width="8" height="30" fill="#fa5252"/>
+<line x1="274" y1="255" x2="274" y2="300" stroke="#40c057"/><rect x="270" y="262" width="8" height="30" fill="#40c057"/>
+<line x1="291" y1="275" x2="291" y2="325" stroke="#fa5252"/><rect x="287" y="282" width="8" height="34" fill="#fa5252"/>
+<line x1="308" y1="300" x2="308" y2="345" stroke="#fa5252"/><rect x="304" y="307" width="8" height="30" fill="#fa5252"/>
+<line x1="325" y1="330" x2="325" y2="395" stroke="#fa5252"/><rect x="321" y="345" width="8" height="45" fill="#fa5252"/>
+</g>
+
+<!-- new DR Low = red line, sweep wick -->
+<line x1="330" y1="392" x2="330" y2="405" stroke="#fa5252" stroke-width="1.6"/>
+<line x1="325" y1="392" x2="400" y2="392" stroke="#e03131" stroke-width="2"/>
+<circle cx="327" cy="401" r="5" fill="none" stroke="#f0a500" stroke-width="2"/>
+<text x="188" y="418" font-size="10.5" fill="#e03131" font-weight="600">DR Low MOI = duong do (sweep + reclaim)</text>
+
+<!-- displacement candle -->
+<line x1="345" y1="358" x2="345" y2="398" stroke="#40c057" stroke-width="1.8"/><rect x="340" y="362" width="10" height="34" fill="#40c057"/>
+<rect x="342" y="368" width="70" height="16" fill="none" stroke="#f0a500" stroke-width="1.1" stroke-dasharray="4 3" rx="3"/>
+<text x="345" y="365" font-size="9.5" fill="#f0a500">FVG (POI moi)</text>
+
+<!-- new equilibrium -->
+<line x1="150" y1="288" x2="400" y2="288" stroke="#e6e8ea" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="360" y="284" font-size="9.5" fill="#e6e8ea">EQ MOI 50%</text>
+
+<!-- premium / discount shading -->
+<rect x="150" y="184" width="250" height="104" fill="#fa5252" opacity="0.06"/>
+<rect x="150" y="288" width="250" height="104" fill="#40c057" opacity="0.08"/>
+<text x="153" y="200" font-size="10" fill="#fa5252">Premium moi</text>
+<text x="153" y="380" font-size="10" fill="#40c057">Discount moi</text>
+</g>
+
+<text x="480" y="470" font-size="11" fill="#9aa0a6">Do lai Premium/Discount tren range MOI (Low=do, High=</text>
+<text x="480" y="484" font-size="11" fill="#9aa0a6">swing truoc leg giam) -&gt; vi tri hien tai dang o discount.</text>
+<text x="480" y="500" font-size="11.5" fill="#40c057" font-weight="600">DUNG: POI moi (FVG) trung discount range moi.</text>
+</svg>
