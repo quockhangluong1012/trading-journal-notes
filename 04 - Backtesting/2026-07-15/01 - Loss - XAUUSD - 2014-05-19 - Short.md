@@ -2,18 +2,15 @@
 type: backtest
 backtest_date: 2026-07-15
 trade_date: 2014-05-19
-symbol:
-  - XAUUSD
+symbol: XAUUSD
 position: Short
-result:
-  - Loss
+result: Loss
 session: London
 setup: ICT 2022 Model
 entry_model: ICT 2022 Model
 entry_timeframe: M1
 htf_bias: Bearish
-bias_correct:
-  - Yes
+bias_correct: Yes
 poi_type: "[[04 - Breaker Block|Breaker Block]]"
 liquidity_swept: Yes
 displacement: Yes

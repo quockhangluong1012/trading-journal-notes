@@ -2,18 +2,15 @@
 type: backtest
 backtest_date: 2026-07-07
 trade_date: 2005-04-24
-symbol:
-  - EURUSD
+symbol: EURUSD
 position: Long
-result:
-  - Win
+result: Win
 session: New York
 setup: ICT 2022 Model
 entry_model: ICT 2022 Model
 entry_timeframe: M5
 htf_bias: Bullish
-bias_correct:
-  - Yes
+bias_correct: Yes
 poi_type: "[[07 - Unicorn Model|Unicorn Model]]"
 liquidity_swept: Yes
 displacement: Yes

@@ -2,18 +2,15 @@
 type: backtest
 backtest_date: 2026-07-14
 trade_date: 2014-05-12
-symbol:
-  - XAUUSD
+symbol: XAUUSD
 position: Short
-result:
-  - Win
+result: Win
 session: New York
 setup: ICT 2022 Model
 entry_model: ICT 2022 Model
 entry_timeframe: M1
 htf_bias: Bearish
-bias_correct:
-  - Yes
+bias_correct: Yes
 poi_type: "[[13 - FVG  - Fair Value Gap|FVG]]"
 liquidity_swept: Yes
 displacement: Yes

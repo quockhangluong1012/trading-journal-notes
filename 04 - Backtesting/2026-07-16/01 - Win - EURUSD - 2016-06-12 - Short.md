@@ -2,18 +2,15 @@
 type: backtest
 backtest_date: 2026-07-16
 trade_date: 2016-06-12
-symbol:
-  - EURUSD
+symbol: EURUSD
 position: Short
-result:
-  - Win
+result: Win
 session: New York
 setup: ICT 2022 Model
 entry_model: ICT 2022 Model
 entry_timeframe: M5
 htf_bias: Bearish
-bias_correct:
-  - Yes
+bias_correct: Yes
 poi_type: "[[25 - OB - Order Block|Order Block]]"
 liquidity_swept: Yes
 displacement: Yes

@@ -2,18 +2,15 @@
 type: backtest
 backtest_date: 2026-07-15
 trade_date: 2016-11-30
-symbol:
-  - EURUSD
+symbol: EURUSD
 position: Short
-result:
-  - Win
+result: Win
 session: London
 setup: ICT 2022 Model
 entry_model: ICT 2022 Model
 entry_timeframe: M5
 htf_bias: Bearish
-bias_correct:
-  - Yes
+bias_correct: Yes
 poi_type: "[[13 - FVG  - Fair Value Gap|FVG]]"
 liquidity_swept: Yes
 displacement: Yes

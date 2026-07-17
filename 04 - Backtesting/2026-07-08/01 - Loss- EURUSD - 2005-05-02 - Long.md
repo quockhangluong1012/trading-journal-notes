@@ -2,18 +2,15 @@
 type: backtest
 backtest_date: 2026-07-08
 trade_date: 2005-05-02
-symbol:
-  - EURUSD
+symbol: EURUSD
 position: Long
-result:
-  - Loss
+result: Loss
 session: London
 setup: ICT 2022 Model
 entry_model: ICT 2022 Model
 entry_timeframe: M5
 htf_bias: Bullish
-bias_correct:
-  - Yes
+bias_correct: Yes
 poi_type: "[[01 - ICT 2022 Model|2022 Model]]"
 liquidity_swept: Yes
 displacement: No

@@ -5,8 +5,7 @@ position: Short
 entry_price: 30,214.9
 take_profit: 29,989.2
 stop_loss: 30,323.0
-kill_zone:
-  - New York
+kill_zone: New York
 pnl: -32.43
 r_multiple:
 mistakes: "[[03 - Mistake - Entry When MSS not in POI Zone]]"

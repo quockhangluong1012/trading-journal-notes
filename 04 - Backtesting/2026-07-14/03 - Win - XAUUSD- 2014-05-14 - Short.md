@@ -2,18 +2,15 @@
 type: backtest
 backtest_date: 2026-07-14
 trade_date: 2014-05-14
-symbol:
-  - XAUUSD
+symbol: XAUUSD
 position: Short
-result:
-  - Win
+result: Win
 session: New York
 setup: ICT 2022 Model
 entry_model: ICT 2022 Model
 entry_timeframe: M1
 htf_bias: Bearish
-bias_correct:
-  - Yes
+bias_correct: Yes
 poi_type: "[[03 - Balanced Price Range|Balance Price Range]]"
 liquidity_swept: Yes
 displacement: Yes
@@ -256,4 +253,4 @@ Kiên nhẫn chờ giá về đúng **POI có nhiều lớp confluence chồng n
 - **Rule thuật ngữ:** chỉ đánh dấu `liquidity_swept: Yes` khi giá quét một **swing high/low thật** (resting liquidity). Việc râu nến vượt cạnh FVG/OB rồi đóng lại ghi là "return to POI + rejection", KHÔNG tính là sweep.
 - **Rule tách POI:** khi POI chính (H1 FVG) và POI confluence (M5 BPR) khác timeframe, ghi rõ tách biệt trong note — POI chính quyết định invalidation, POI confluence quyết định entry trigger.
 - **Rule XAUUSD:** cần tối thiểu ~20 sample vàng trước khi tin vào logic SL sát; tạm thời cộng thêm buffer cho wick/spread khi backtest vàng và ghi lại xem có bị quét SL "oan" không.
-- **Rule toàn vẹn dữ liệu (bắt buộc):** mỗi backtest, copy entry/SL/TP/R **trực tiếp từ chart**, và kiểm tra **Summary table (mục 0) = frontmatter** trước khi lưu. Xem [[Mistake - Sai lệch dữ liệu nhật ký]] (nếu đã có) hoặc tạo mới.
+- **Rule toàn vẹn dữ liệu (bắt buộc):** mỗi backtest, copy entry/SL/TP/R **trực tiếp từ chart**, và kiểm tra **Summary table (mục 0) = frontmatter** trước khi lưu. Xem [[12 - Mistake - Log Data Mismatch - Backtest]] (nếu đã có) hoặc tạo mới.

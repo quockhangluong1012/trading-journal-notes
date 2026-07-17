@@ -2,18 +2,15 @@
 type: backtest
 backtest_date: 2026-07-16
 trade_date: 2014-06-25
-symbol:
-  - GBPUSD
+symbol: GBPUSD
 position: Long
-result:
-  - Win
+result: Win
 session: London Open KZ
 setup: ICT 2022 Model
 entry_model: ICT 2022 Model (CISD + BPR Entry)
 entry_timeframe: M5
 htf_bias: Bullish
-bias_correct:
-  - Yes
+bias_correct: Yes
 poi_type: "[[25 - OB - Order Block|Order Block (H1)]]"
 liquidity_swept: Yes
 displacement: Yes
