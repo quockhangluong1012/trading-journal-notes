@@ -37,7 +37,7 @@ tags: [daily-summary, prop-firm-prep]
 - **Tâm lý/root cause**: Không ghi nhận cảm xúc tiêu cực; root cause thắng = chain lý luận top-down + kỷ luật chờ đủ 2 lần chạm, tách bạch rõ khỏi phần "may mắn" của gap.
 - **Grade**: B+ (trừ điểm ở Risk Management vì thiếu Weekend Hold Policy).
 
-### 2. [[02 - Win - GBPUSD - 2014-06-25 - Long]]
+### 2. [[Trading Journal/04 - Backtesting/2026-07-16/02 - Win - GBPUSD - 2014-06-25 - Long]]
 - **HTF Bias**: Bullish (D1 HH/HL) — **đúng** (`bias_correct: Yes`), OB nằm đúng phía Discount.
 - **Chuỗi entry**: Sweep (wick vào OB, thân đóng ngoài) → Displacement + FVG Bullish → **CISD full-leg reclaim** (không phải MSS wick cổ điển — note tự phân biệt rõ 2 khái niệm) → BPR (2 FVG đối nghịch chồng nhau) → Entry tại CE của BPR (1.69656).
 - **SL/TP vs kế hoạch**: SL dưới low OB (~1.69380 — **số suy ra từ RR hiển thị trên platform, CHƯA được xác nhận với lệnh thật**, note tự cảnh báo điều này). TP 2 tầng: TP1 1.70311 (EQH internal, đã khớp đủ), TP2 1.70634 (H1 DR High external).
