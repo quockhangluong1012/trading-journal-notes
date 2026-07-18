@@ -1,0 +1,59 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Delayed Judas — bias đúng nhưng low-of-day hình thành 9:30, không phải London</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Kịch bản chuẩn: Judas trong London KZ tạo low. Kịch bản "trễ": London chỉ tích luỹ, manipulation thật chạy ngay sau NYSE open.</text>
+
+  <!-- timeline -->
+  <line x1="40" y1="380" x2="730" y2="380" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="46" y="400" font-size="10" fill="#6B7280">00:00</text>
+  <text x="150" y="400" font-size="10" fill="#6B7280">02:00–05:00 London KZ</text>
+  <text x="420" y="400" font-size="10" fill="#6B7280">08:30</text>
+  <text x="492" y="400" font-size="10" fill="#6B7280">09:30</text>
+  <text x="596" y="400" font-size="10" fill="#6B7280">11:00</text>
+  <text x="690" y="400" font-size="10" fill="#6B7280">16:00</text>
+
+  <!-- zones -->
+  <rect x="148" y="80" width="150" height="300" fill="#DBEAFE" opacity="0.55"/>
+  <rect x="488" y="80" width="120" height="300" fill="#FEF3C7" opacity="0.7"/>
+  <text x="494" y="98" font-size="10.5" font-weight="700" fill="#92400E">NY AM — Judas trễ</text>
+
+  <!-- midnight open line -->
+  <line x1="52" y1="200" x2="730" y2="200" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="7 4"/>
+  <text x="56" y="194" font-size="10.5" font-weight="700" fill="#7C3AED">Midnight Open</text>
+
+  <!-- price path: chop in London below open (two shallow dips), pump fake at 8:30, real dive at 9:30, then rally all day -->
+  <polyline points="52,210 90,222 120,208 160,238 190,224 220,246 250,228 285,244 315,230 350,240 380,226 420,238 445,210 470,232 500,282 522,318 540,296 560,250 585,214 615,186 645,160 680,138 715,120"
+            fill="none" stroke="#1F2937" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- london dip markers -->
+  <circle cx="160" cy="238" r="4.5" fill="#DC2626"/>
+  <circle cx="220" cy="246" r="4.5" fill="#DC2626"/>
+  <text x="130" y="270" font-size="10" font-weight="700" fill="#B91C1C">2 lần "bắt Judas" trong London</text>
+  <text x="130" y="284" font-size="9.5" fill="#DC2626">→ dip nông, không sweep pool nào rõ,</text>
+  <text x="130" y="296" font-size="9.5" fill="#DC2626">không displacement — 2 lệnh stop</text>
+
+  <!-- real low marker -->
+  <circle cx="522" cy="318" r="6" fill="#16A34A"/>
+  <text x="500" y="345" font-size="10.5" font-weight="700" fill="#15803D">Low THẬT của ngày ~9:45</text>
+  <text x="500" y="359" font-size="9.5" fill="#166534">sweep PDL + SSL, displacement + MSS</text>
+
+  <!-- warning box -->
+  <rect x="52" y="80" width="330" height="96" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="66" y="100" font-size="10.5" font-weight="700" fill="#1F2937">Dấu hiệu nhận sớm "hôm nay Judas sẽ trễ":</text>
+  <text x="66" y="117" font-size="10" fill="#374151">① London KHÔNG tạo được displacement giữ hướng nào —</text>
+  <text x="66" y="130" font-size="10" fill="#374151">    chỉ dao động hai phía quanh midnight open, range hẹp</text>
+  <text x="66" y="145" font-size="10" fill="#374151">② Dip London không lấy được pool nào đáng kể (PDL còn nguyên)</text>
+  <text x="66" y="160" font-size="10" fill="#374151">③ Có tin 8:30 / ngày index thuần → manipulation dồn về NY open</text>
+
+  <!-- rule box -->
+  <rect x="620" y="200" width="118" height="150" rx="6" fill="#F0FDF4" stroke="#86EFAC"/>
+  <text x="630" y="220" font-size="10.5" font-weight="700" fill="#166534">Rule ngân sách:</text>
+  <text x="630" y="237" font-size="9.5" fill="#14532D">tối đa 1 lần thử</text>
+  <text x="630" y="250" font-size="9.5" fill="#14532D">mỗi cửa sổ thời</text>
+  <text x="630" y="263" font-size="9.5" fill="#14532D">gian. London fail</text>
+  <text x="630" y="276" font-size="9.5" fill="#14532D">→ giữ nguyên bias,</text>
+  <text x="630" y="289" font-size="9.5" fill="#14532D">chờ pool sâu hơn</text>
+  <text x="630" y="302" font-size="9.5" fill="#14532D">(PDL) bị lấy trong</text>
+  <text x="630" y="315" font-size="9.5" fill="#14532D">NY AM rồi mới</text>
+  <text x="630" y="328" font-size="9.5" fill="#14532D">thử lại lần cuối.</text>
+</svg>

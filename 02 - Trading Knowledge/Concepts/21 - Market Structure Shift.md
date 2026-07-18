@@ -13,7 +13,7 @@ status: developing
 category: Market Structure
 last_reviewed: 2026-07-07
 created: 2026-06-22
-updated: 2026-07-07
+updated: 2026-07-18
 common_mistakes:
   - "[[Mistake - MSS not in POI Zone]]"
   - "[[Mistake - MSS Before Liquidity Sweep]]"
@@ -316,6 +316,71 @@ Daily Bias vẫn Bullish, BSL phía trên còn mở. Giá đang ở giữa range
 
 > [!note]
 > Sequence chất lượng KHÔNG phải “thấy MSS rồi vào”. MSS chỉ là một mắt xích: **HTF draw on liquidity → POI → liquidity sweep → MSS/displacement → FVG/OB entry**. Bỏ bước nào trước MSS thì MSS mất giá trị.
+
+---
+
+## Tình huống thực chiến (War Stories)
+
+> [!info] Vì sao có mục này
+> Các checklist ở trên lọc được MSS *sai*. Mục này xử lý chuyện khó hơn: những MSS **đúng mọi cổng** nhưng vẫn không chuyển thành tiền — vì một biến ẩn mà chỉ backtest sâu và live trade mới lộ ra. Mỗi tình huống có rule đo được cho journal.
+
+### W1. MSS "quá hoàn hảo" — một nến làm cả sweep lẫn MSS, và không bao giờ cho entry
+
+![[MSS-War-One-Candle-MSS.svg|720]]
+*Sơ đồ: nến khổng lồ sweep SSL và phá lower-high trong cùng một nến; FVG nằm quá sâu, retrace chỉ về 25–50% leg.*
+
+**Sách giáo khoa nói:** MSS + displacement + FVG → chờ retrace vào FVG để entry.
+
+**Thực tế phát hiện:** tồn tại một nghịch lý — **MSS càng đẹp thì entry càng khó.** Khi một nến duy nhất (thường trong macro hoặc ngay sau tin) vừa quét SSL vừa đóng qua lower-high, displacement mạnh tới mức FVG nằm rất sâu bên dưới, và chính sức mạnh đó nghĩa là retrace sẽ **nông** (25–50% leg là hết). Người chờ FVG sâu sẽ nhìn giá chạy trọn leg mà không có lệnh; người mất kiên nhẫn sẽ market order đuổi theo ở giá tệ nhất. Cả hai đều xuất phát từ việc không nhận ra: *loại nến này cần playbook riêng.*
+
+**Rule đo được:**
+- Mặc định: **chấp nhận lỡ** — ghi `missed_valid_setup`, đó là dữ liệu xác nhận mình đọc đúng.
+- Nâng cao (chỉ khi sweep Tier 1–2 + trong kill zone): limit tại **50% displacement leg** thay vì FVG sâu, stop dưới sweep low — chính là logic của [[35 - Aggressive Displacement Entry]].
+- Sớm hơn nữa: luyện **CISD làm trigger** (đo bằng open/close chuỗi nến đẩy — in ra trước khi MSS hoàn thành). Backtest nhóm này tách riêng trước khi dùng tiền demo.
+- Cấm tuyệt đối: market order sau khi leg đã chạy quá 50% mà không retrace.
+
+### W2. MSS đúng hình, sai giờ — và cú "re-deliver" trong PM
+
+![[MSS-War-Lunch-Redeliver.svg|720]]
+*Sơ đồ: cùng một cấu trúc MSS — bản in lúc 12:20 chết trong chop; bản thật được giao lại trong macro 13:10 sau một cú sweep sâu hơn.*
+
+**Sách giáo khoa nói:** MSS trong kill zone đáng tin hơn (đã nêu ở mục 2).
+
+**Thực tế phát hiện sau nhiều mẫu lunch:** MSS trong lunch (12:00–13:00 NY) có một kiểu chết đặc trưng — không phải bị đảo ngược ngay (sai hướng), mà **chết vì thời gian**: phá LH bằng nến trung bình, sau đó giá chop quanh entry, FVG bị ăn mòn từng chút, stop cuối cùng bị quét bởi nhiễu chứ không phải bởi order flow ngược. Điều thú vị hơn: rất thường xuyên, **cùng cấu trúc đó được "giao lại" (re-deliver) trong macro 13:10–13:40 hoặc PM leg**, lần này với sweep sâu hơn và displacement thật — và chạy trọn leg.
+
+**Cách khai thác (thay vì chỉ tránh):**
+- MSS hợp lệ nhưng ngoài giờ → **không vào, không xoá**: giữ nguyên MSS level + FVG trên chart như một "kịch bản treo".
+- Kích hoạt lại khi: giá sweep **sâu hơn** đáy/đỉnh cũ trong macro/PM + sequence đầy đủ lặp lại. Lần hai thường là lần thật.
+- Journal: `mss_time_window` (KZ / macro / lunch / other) + `redelivered` (true/false). Sau 20–30 mẫu, so sánh win rate hai nhóm — đây là một trong những thống kê "mở mắt" nhất về vai trò của Time trong ICT.
+
+### W3. M5 nói "MSS", M1 nói "grind" — xung đột giữa hai tầng khung
+
+**Tình huống:** M5 in một nến đóng qua lower-high — checklist pass. Nhưng thả xuống M1, bên trong "cú phá" đó không có capitulation + micro-MSS + displacement, chỉ là một chuỗi nến nhỏ **grind đều** qua mức. Loại phá-bằng-grind này có tỷ lệ fail cao hơn hẳn: không có dấu vết của việc khớp lệnh lớn, chỉ là thanh khoản mỏng bị đẩy trôi.
+
+**Nguyên tắc rút ra:** MSS đáng tin có **cấu trúc fractal** — bản M5 phải được xác nhận bởi một câu chuyện hoàn chỉnh trên M1 (quét → đảo vi mô → displacement ra). Nếu hai tầng khung mâu thuẫn, tầng nhỏ hơn đang nói thật về order flow. Chi tiết đầy đủ về kỹ thuật chọn confirmation timeframe: [[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)]].
+
+**Rule đo được:** với mọi MSS định trade, liếc M1 trong 30 giây và chấm `m1_confirms` (capitulation+shift / grind / không rõ). Không cần phân tích M1 cả phiên — chỉ cần một lần kiểm tra tại thời điểm quyết định.
+
+### W4. Swing bị phá là swing "bẩn" — cấu trúc tạo bởi news spike không phải cấu trúc
+
+**Tình huống:** MSS phá qua một lower-high — nhưng lower-high đó được tạo bởi **spike tin 8:30 tuần trước** (hoặc bởi wick thanh khoản mỏng lúc rollover). Về hình học thì đó là swing; về order flow thì **không ai phòng thủ mức đó** — nó không phải "protected swing", chỉ là vết sẹo của một sự kiện microstructure. MSS phá qua nó không chứng minh điều gì về intent.
+
+**Rule đo được:**
+- Khi đánh dấu swing để chờ MSS, kiểm tra **swing đó sinh ra thế nào**: bởi displacement có cấu trúc (hợp lệ) hay bởi news spike / wick rollover / thanh khoản mỏng ngoài giờ (bẩn — hạ tier hoặc loại).
+- Đây là mặt gương của bài học W3 bên [[20 - Liquidity Sweep]]: swing bẩn vừa không đáng làm reference cho MSS, vừa cần buffer stop rộng hơn nếu buộc phải dùng.
+
+### W5. MSS đúng mọi cổng nhưng "chết vì R:R" — bài kiểm tra room-to-target bị bỏ quên
+
+**Tình huống:** sweep Tier 1 tại POI, MSS displacement đẹp, FVG entry rõ. Vào lệnh — rồi nhận ra target thực tế (internal liquidity đối diện) chỉ cách 1R, còn external thì bị chắn bởi một H1 bearish FVG chưa xử lý ngay trên đầu. Lệnh thắng nhỏ hoặc hòa, nhưng **lặp lại đủ nhiều thì expectancy âm** vì những lệnh thua vẫn -1R đầy đủ.
+
+**Bản chất:** checklist MSS tập trung vào *phía sau* entry (sweep, POI, displacement) mà quên *phía trước* — con đường tới target. Một MSS hoàn hảo trong một range quá hẹp là một setup tồi. Kinh nghiệm thực tế: lỗi này xuất hiện nhiều nhất vào **cuối phiên** (phần lớn daily range đã tiêu thụ) và trong **ngày inside day** (range co).
+
+**Rule đo được:**
+- Trước khi bấm: đo khoảng tới **liquidity gần nhất chưa xử lý theo hướng lệnh** (không phải tới target mơ ước). Dưới 2R → bỏ, dù setup đẹp đến đâu.
+- Journal: `room_to_first_obstacle_r` — thống kê này thường tiết lộ rằng một nửa số lệnh "thắng non" thật ra là lệnh không nên vào.
+
+> [!success] Tổng kết mục War Stories
+> Cả 5 tình huống chung một chủ đề: **MSS là điều kiện cần, không bao giờ là điều kiện đủ.** Biến ẩn lần lượt là: tốc độ displacement (W1), thời gian trong ngày (W2), cấu trúc fractal M1 (W3), nguồn gốc của swing bị phá (W4), và không gian phía trước entry (W5). Journal fields: `missed_valid_setup`, `mss_time_window`, `redelivered`, `m1_confirms`, `room_to_first_obstacle_r`.
 
 ---
 

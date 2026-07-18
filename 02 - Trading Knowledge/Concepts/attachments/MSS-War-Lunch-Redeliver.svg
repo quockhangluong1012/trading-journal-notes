@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">MSS trong lunch — tín hiệu đúng hình, sai giờ, và cú "re-deliver" trong PM</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cùng một cấu trúc MSS: in ra lúc 12:20 thường chết chìm trong chop; phiên bản thật được giao lại trong macro 13:10 hoặc PM leg.</text>
+
+  <!-- timeline axis -->
+  <line x1="40" y1="370" x2="730" y2="370" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="52" y="390" font-size="10" fill="#6B7280">09:30</text>
+  <text x="180" y="390" font-size="10" fill="#6B7280">10:00–11:00</text>
+  <text x="330" y="390" font-size="10" fill="#6B7280">12:00</text>
+  <text x="424" y="390" font-size="10" fill="#6B7280">13:00</text>
+  <text x="500" y="390" font-size="10" fill="#6B7280">13:10–13:40</text>
+  <text x="636" y="390" font-size="10" fill="#6B7280">15:00</text>
+
+  <!-- session zones -->
+  <rect x="60" y="80" width="240" height="290" fill="#DCFCE7" opacity="0.5"/>
+  <text x="130" y="100" font-size="11" font-weight="700" fill="#166534">NY AM — giờ có edge</text>
+  <rect x="330" y="80" width="100" height="290" fill="#F3F4F6"/>
+  <text x="342" y="100" font-size="11" font-weight="700" fill="#6B7280">LUNCH</text>
+  <rect x="497" y="80" width="80" height="290" fill="#FEF3C7" opacity="0.7"/>
+  <text x="500" y="100" font-size="10.5" font-weight="700" fill="#92400E">macro 13:10</text>
+
+  <!-- price path -->
+  <polyline points="60,160 100,200 130,180 165,240 200,220 235,270 270,250 300,282 330,262 350,286 366,252 384,270 398,258 414,276 430,264 452,296 470,320 497,300 520,236 545,252 575,190 610,206 650,140 700,120"
+            fill="none" stroke="#1F2937" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- lunch MSS marker -->
+  <circle cx="366" cy="252" r="6" fill="#DC2626"/>
+  <text x="310" y="128" font-size="10.5" font-weight="700" fill="#B91C1C">"MSS" 12:20</text>
+  <text x="310" y="142" font-size="9.5" fill="#B91C1C">phá LH bằng nến trung bình,</text>
+  <text x="310" y="154" font-size="9.5" fill="#B91C1C">sau đó chop, entry FVG bị ăn mòn,</text>
+  <text x="310" y="166" font-size="9.5" fill="#B91C1C">stop chết vì thời gian, không vì sai hướng</text>
+  <line x1="366" y1="246" x2="366" y2="172" stroke="#DC2626" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- deeper sweep in early PM -->
+  <circle cx="470" cy="320" r="6" fill="#2563EB"/>
+  <text x="418" y="346" font-size="10" font-weight="700" fill="#1D4ED8">sweep sâu hơn ~13:05</text>
+
+  <!-- real MSS marker -->
+  <circle cx="520" cy="236" r="6" fill="#16A34A"/>
+  <text x="540" y="228" font-size="10.5" font-weight="700" fill="#15803D">MSS THẬT trong macro 13:10</text>
+  <text x="540" y="242" font-size="9.5" fill="#166534">cùng cấu trúc, giờ có displacement</text>
+  <text x="540" y="254" font-size="9.5" fill="#166534">thật + volume PM → chạy trọn leg</text>
+
+  <!-- lesson box -->
+  <rect x="60" y="286" width="230" height="72" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="72" y="304" font-size="10.5" font-weight="700" fill="#1F2937">Cách xử lý MSS ngoài giờ:</text>
+  <text x="72" y="319" font-size="9.5" fill="#374151">không vào — nhưng KHÔNG xoá level.</text>
+  <text x="72" y="332" font-size="9.5" fill="#374151">Đánh dấu MSS level + FVG, chờ thuật toán</text>
+  <text x="72" y="345" font-size="9.5" fill="#374151">re-deliver trong macro/PM với sweep sâu hơn.</text>
+</svg>
