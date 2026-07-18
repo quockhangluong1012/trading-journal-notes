@@ -1,0 +1,78 @@
+<svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="560" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Case study thật — EURUSD Short 03/05/2021 (NY AM): Unicorn = Bearish Breaker ⊕ FVG</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Backtest 10/07/2026 · chuỗi 7 bước chained_fully: Yes · entry 1.20650 (CE) · SL 1.20764 · TP 1.20408 · kết quả +3.075R</text>
+
+  <rect x="24" y="70" width="520" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- Level lines (price axis right side of panel) -->
+  <line x1="44" y1="120" x2="524" y2="120" stroke="#DC2626" stroke-width="1.4" stroke-dasharray="7 4"/>
+  <text x="46" y="114" font-size="9.5" font-weight="700" fill="#B91C1C">BSL external (High2) — bị quét</text>
+  <text x="452" y="114" font-size="9" fill="#B91C1C">~1.2080+</text>
+
+  <line x1="44" y1="152" x2="524" y2="152" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="452" y="147" font-size="9" fill="#6B7280">SL 1.20764</text>
+
+  <!-- Breaker zone 1.20750 - 1.20616 -->
+  <rect x="44" y="160" width="480" height="88" fill="#DC2626" opacity="0.10"/>
+  <text x="48" y="174" font-size="10" font-weight="700" fill="#B91C1C">Bearish Breaker 1.20750–1.20616 (cụm nến tăng cuối = OB bullish đã fail)</text>
+
+  <!-- FVG zone 1.20688-1.20430 -->
+  <rect x="44" y="200" width="480" height="150" fill="#7C3AED" opacity="0.07"/>
+  <text x="380" y="344" font-size="10" font-weight="700" fill="#6D28D9">FVG 1.20688–1.20430</text>
+
+  <!-- Unicorn overlap 1.20680-1.20616 -->
+  <rect x="44" y="205" width="480" height="43" fill="#F59E0B" opacity="0.22"/>
+  <text x="48" y="242" font-size="10" font-weight="700" fill="#92400E">UNICORN = vùng chồng 1.20680–1.20616 · CE 1.20648</text>
+  <line x1="44" y1="226" x2="524" y2="226" stroke="#B45309" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+  <!-- Low1 / MSS level -->
+  <line x1="44" y1="330" x2="524" y2="330" stroke="#16A34A" stroke-width="1.3" stroke-dasharray="6 4"/>
+  <text x="46" y="325" font-size="9.5" font-weight="700" fill="#15803D">Low1 — mức MSS bearish phải phá</text>
+
+  <!-- TP -->
+  <line x1="44" y1="416" x2="524" y2="416" stroke="#2563EB" stroke-width="1.3" stroke-dasharray="6 4"/>
+  <text x="46" y="432" font-size="9.5" font-weight="700" fill="#1D4ED8">TP 1.20408 — SSL / external target</text>
+
+  <!-- Price path: up leg forming OB near low? For bearish breaker: High1, pullback Low1, sweep above High1 (High2), displacement breaks Low1, retest unicorn, drop to TP -->
+  <path d="M64,300 L92,240 L118,266 L142,190 L165,215 L188,140 L205,110 L222,132 L245,205 L268,258 L290,338 L312,368 L334,352 L356,300 L378,252 L398,228 L412,222 L430,262 L452,320 L474,372 L496,412"
+        fill="none" stroke="#374151" stroke-width="2.2"/>
+  <!-- markers -->
+  <circle cx="205" cy="110" r="5" fill="none" stroke="#B91C1C" stroke-width="2.2"/>
+  <text x="214" y="102" font-size="9.5" fill="#B91C1C">① sweep BSL (High2 &gt; High1)</text>
+  <circle cx="290" cy="338" r="5" fill="none" stroke="#15803D" stroke-width="2.2"/>
+  <text x="240" y="360" font-size="9.5" fill="#15803D">② displacement phá Low1 = MSS, để lại FVG</text>
+  <circle cx="412" cy="222" r="6" fill="#DC2626"/>
+  <text x="392" y="208" font-size="10.5" font-weight="700" fill="#B91C1C">③ retest → Short 1.20650</text>
+  <circle cx="496" cy="412" r="5" fill="#2563EB"/>
+  <text x="452" y="440" font-size="9.5" font-weight="700" fill="#1D4ED8">④ +3.075R</text>
+
+  <!-- Right column -->
+  <rect x="560" y="70" width="176" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="574" y="94" font-size="12.5" font-weight="700" fill="#1F2937">Vì sao lệnh này là mẫu A+</text>
+  <text x="574" y="118" font-size="10.5" fill="#374151">• Sweep EXTERNAL (pool</text>
+  <text x="582" y="132" font-size="10.5" fill="#374151">thật, nhiều nhiên liệu)</text>
+  <text x="574" y="154" font-size="10.5" fill="#374151">• MSS bằng displacement</text>
+  <text x="582" y="168" font-size="10.5" fill="#374151">rõ, tự để lại FVG</text>
+  <text x="574" y="190" font-size="10.5" fill="#374151">• Breaker ∩ FVG cùng sinh</text>
+  <text x="582" y="204" font-size="10.5" fill="#374151">từ MỘT sự kiện đảo delivery</text>
+  <text x="574" y="226" font-size="10.5" fill="#374151">• Vùng nằm ở PREMIUM,</text>
+  <text x="582" y="240" font-size="10.5" fill="#374151">đúng phía cho Short</text>
+  <text x="574" y="262" font-size="10.5" fill="#374151">• Entry limit tại CE vùng</text>
+  <text x="582" y="276" font-size="10.5" fill="#374151">chồng — không chase mép</text>
+  <text x="574" y="298" font-size="10.5" fill="#374151">• SL 1.20764: NGOÀI breaker</text>
+  <text x="582" y="312" font-size="10.5" fill="#374151">high, dưới điểm sweep</text>
+  <text x="574" y="334" font-size="10.5" fill="#374151">• Session: NY AM kill zone</text>
+  <line x1="574" y1="352" x2="722" y2="352" stroke="#E5E7EB"/>
+  <text x="574" y="374" font-size="10.5" font-weight="700" fill="#92400E">Stop chỉ 11.4 pip cho</text>
+  <text x="574" y="388" font-size="10.5" font-weight="700" fill="#92400E">target 24.2 pip → R 3.075:</text>
+  <text x="574" y="404" font-size="10" fill="#78350F">R:R này CHỈ tồn tại nhờ</text>
+  <text x="574" y="418" font-size="10" fill="#78350F">refine vào vùng chồng hẹp</text>
+  <text x="574" y="432" font-size="10" fill="#78350F">thay vì cả breaker rộng.</text>
+
+  <!-- bottom -->
+  <rect x="24" y="464" width="712" height="80" rx="8" fill="#F3F4F6"/>
+  <text x="38" y="488" font-size="12.5" font-weight="700" fill="#1F2937">Why — vì sao Breaker ∩ FVG (Unicorn) mạnh hơn từng thành phần cộng lại?</text>
+  <text x="38" y="508" font-size="11" fill="#374151">Breaker nói: "vị thế Long cũ đã kẹt ở đây và bị lật". FVG nói: "nhịp lật đó mạnh tới mức giá không kịp giao dịch hai chiều". Khi hai dấu vết</text>
+  <text x="38" y="526" font-size="11" fill="#374151">cùng chỉ về MỘT dải giá hẹp, retest vào đó vừa khớp lệnh người kẹt thoát hàng (bán ra) vừa rebalance inefficiency — hai lực bán cộng hưởng.</text>
+</svg>

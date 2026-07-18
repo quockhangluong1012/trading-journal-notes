@@ -380,6 +380,16 @@ Ghi `bias_tier` vào pre-market note và journal. Sau 30+ ngày sẽ thấy rõ:
 > [!info] Vì sao có mục này
 > Bias sai thì mất tiền — điều đó ai cũng biết. Các tình huống dưới đây nguy hiểm hơn: **bias ĐÚNG mà vẫn mất tiền**, hoặc bias "hết hạn" mà không báo trước. Đây là những pattern chỉ nhìn thấy khi đã có đủ ngày ngồi trước chart với một bias viết sẵn trong tay.
 
+### W0. Tầng WHY nền tảng — vì sao một "ngày" lại có cấu trúc định hướng để mà đọc?
+
+Daily Bias chỉ hợp lý nếu ngày giao dịch thật sự có cấu trúc lặp lại. Ba cơ chế tạo ra cấu trúc đó:
+
+1. **Vì sao ngày có hướng? Vì ngày là MỘT CHẶNG của hành trình giữa hai kho lệnh HTF.** Giá không đi lung tung rồi tình cờ tạo trend — nó được giao từ PD array HTF này tới array đối diện (mục 7.3), và hành trình đó dài hơn một ngày. Mỗi ngày là một "chặng tiếp sức": hoặc tiếp tục chặng (continuation), hoặc bắt đầu chặng mới sau khi đích cũ đã tới (reversal). Bias hoạt động vì nó không đoán ngày — nó **định vị ngày bên trong một hành trình đã có địa chỉ**. Đây là lý do bias chỉ đổi "tại các trạm" (draw bị hit, acceptance qua invalidation) chứ không đổi theo nến LTF: chặng chưa xong thì hướng chưa đổi.
+2. **Vì sao có manipulation trước distribution (PO3)? Vì leg thật cần được TÀI TRỢ trước.** Muốn phân phối giá lên cả ngày, thuật toán cần mua đủ tồn kho ở giá thấp — và người bán cho họ chính là đám đông bị Judas swing thuyết phục rằng ngày sẽ giảm (stop của người Long non + lệnh của breakout seller). Manipulation không phải "trò đùa trước bữa chính"; nó **là** khâu gom vốn của bữa chính. Hệ quả logic: ngày không có cú quét ngược nào trước leg chính là ngày hiếm — và "mua dưới midnight open khi bias bullish" chẳng qua là xếp hàng đúng chỗ khâu gom vốn diễn ra.
+3. **Vì sao thời gian (Kill Zone, midnight open, 8:30, 9:30) lặp lại? Vì thanh khoản là tài nguyên CÓ LỊCH.** Lệnh của ngân hàng, quỹ, doanh nghiệp đổ vào thị trường theo múi giờ làm việc và theo lịch tin — không rải đều 24h. Thuật toán khớp lệnh lớn buộc phải hoạt động ở nơi/lúc có đối tác dày nhất → các cửa sổ London/NY. Bias vì thế luôn là mệnh đề **hai chiều "hướng + giờ"**: đúng hướng sai giờ vẫn thua, vì ngoài cửa sổ không có dòng tiền nào đủ lớn để bảo vệ cấu trúc mình đang trade theo.
+
+Ba cơ chế này là khung đọc các W bên dưới: Judas trễ = khâu gom vốn bị dời sang cửa sổ thanh khoản kế tiếp (W1); mid-week flip = chặng hành trình TUẦN đã tới đích giữa tuần (W2); gap qua draw = chặng bị hoàn thành ngoài giờ, khi mình vắng mặt (W5).
+
 ### W1. Delayed Judas — bias đúng, nhưng low-of-day hình thành lúc 9:30, không phải London
 
 ![[Daily-Bias-War-Delayed-Judas.svg|720]]

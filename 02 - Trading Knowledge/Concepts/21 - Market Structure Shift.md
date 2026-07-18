@@ -324,6 +324,16 @@ Daily Bias vẫn Bullish, BSL phía trên còn mở. Giá đang ở giữa range
 > [!info] Vì sao có mục này
 > Các checklist ở trên lọc được MSS *sai*. Mục này xử lý chuyện khó hơn: những MSS **đúng mọi cổng** nhưng vẫn không chuyển thành tiền — vì một biến ẩn mà chỉ backtest sâu và live trade mới lộ ra. Mỗi tình huống có rule đo được cho journal.
 
+### W0. Tầng WHY nền tảng — vì sao phá một swing lại "có nghĩa"?
+
+Một mức giá bị vượt qua thì có gì đặc biệt? Ba cơ chế trả lời — và chúng quyết định mọi rule bên dưới:
+
+1. **Swing không phải là "điểm trên chart" — nó là NƠI CƯ TRÚ của các vị thế đang sống.** Một lower-high hình thành nghĩa là: tại đó, phe bán đã thắng một trận đấu giá và mở vị thế Short; stop của toàn bộ lớp Short đó nằm **ngay trên** lower-high. Chừng nào giá còn dưới mức đó, các vị thế này "sống" và tiếp tục bán các nhịp hồi (đây là lý do lower-high được "phòng thủ"). Khi giá đóng thân qua lower-high: cả lớp Short bị buộc thoát (mua lại) — **nhiên liệu mua tức thời** — và quan trọng hơn, lớp trader từng bán mỗi nhịp hồi giờ mất chỗ dựa. MSS "có nghĩa" vì nó **giải thể một phe** chứ không chỉ vượt một con số.
+2. **Vì sao phải là body close, không phải wick? Vì wick là câu hỏi, body là câu trả lời của phiên đấu giá.** Wick qua mức = giá được *chào* ở đó nhưng bị từ chối (không ai chấp nhận giao dịch tiếp ở vùng đó) — về bản chất giống một cú sweep mini. Body đóng qua + giữ = mức giá mới được **chấp nhận** làm giá trị — các thuật toán reprice quanh vùng chấp nhận mới. Đây cũng đúng là ranh giới sweep/break bên [[20 - Liquidity Sweep]] nhìn từ hướng ngược lại: cùng một phép phân xử acceptance, áp cho hai mục đích khác nhau.
+3. **Vì sao MSS cần sweep đứng trước? Vì thứ tự "gom hàng → đẩy giá" không thể đảo ngược.** Displacement phá lower-high là hành vi *tiêu tốn* thanh khoản (mua chủ động ăn qua sổ lệnh). Không tổ chức nào đốt chi phí đó **trước khi** có vị thế. Chuỗi bắt buộc về mặt kinh tế là: gom hàng tại pool (sweep) → rồi mới chi tiền đẩy giá (MSS/displacement) để reprice và bảo vệ tồn kho. MSS xuất hiện *trước* sweep nghĩa là chưa ai gom — cú phá đó không có chủ, và cấu trúc không có chủ thì không được bảo vệ → failed shift. "Sweep trước MSS" không phải quy ước ICT; nó là trình tự dòng tiền.
+
+Từ đây suy ra các W bên dưới: MSS một nến khổng lồ = gom và đẩy xảy ra trong cùng một nhịp, không cần retrace (W1); MSS lunch chết vì không có dòng tiền nào đủ lớn hoạt động giờ đó để bảo vệ cấu trúc (W2); grind M1 = không có cú "giải thể phe" nào xảy ra (W3).
+
 ### W1. MSS "quá hoàn hảo" — một nến làm cả sweep lẫn MSS, và không bao giờ cho entry
 
 ![[MSS-War-One-Candle-MSS.svg|720]]

@@ -21,7 +21,7 @@ models:
   - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-07-17
 created: 2026-06-22
-updated: 2026-07-03
+updated: 2026-07-18
 common_mistakes:
   - "[[Mistake - Wrong Dealing Range]]"
   - "[[Mistake - Premium Discount Off Wrong Range]]"

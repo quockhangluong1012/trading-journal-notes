@@ -420,6 +420,16 @@ ICT nhấn mạnh **thời gian đứng trước giá**: cùng một cấu trúc
 > [!info] Vì sao có mục này
 > Checklist ở mục 8 lọc FVG *xấu*. Mục này dành cho những FVG **pass toàn bộ checklist** nhưng vẫn thất bại — vì các biến mà lý thuyết chuẩn không đặt tên: chất liệu của nến tạo gap, tốc độ giá tiếp cận gap, lịch sử chạm ngoài phiên của mình, và microstructure của chính công cụ đang trade.
 
+### W0. Tầng WHY nền tảng — vì sao giá "phải" quay lại một cái gap?
+
+"Thị trường quay lại lấp imbalance" nghe như tín điều. Ba cơ chế biến nó thành logic — và phân xử luôn gap nào lấp, gap nào không:
+
+1. **Gap = quãng giá KHÔNG AI KỊP GIAO DỊCH — và các lệnh bị bỏ lại vẫn còn sống.** Khi displacement kéo giá qua một vùng quá nhanh, các lệnh limit mua/bán đặt sẵn trong vùng đó **không được khớp** (giá nhảy qua). Các tổ chức đặt lệnh đó không hủy kế hoạch — lệnh của họ vẫn nằm trong sổ, tại đúng các mức giá bên trong gap. Giá quay lại FVG không phải vì "thị trường công bằng", mà vì **về đó còn thanh khoản chờ sẵn để khớp nốt phần việc dang dở** — với bên đã đẩy giá, đó là nơi rẻ nhất để mua thêm/xả bớt tồn kho. FVG là POI vì nó là *kho lệnh chưa dùng*.
+2. **Vì sao CE (50%) hoạt động? Vì nó là điểm cân bằng chi phí của chính bên tạo gap.** Bên khởi xướng displacement có giá vốn trung bình quanh nửa dưới của leg. Cho phép giá retrace *qua* CE của gap do chính mình tạo nghĩa là để vị thế chìm về vùng vốn — mất lợi thế đã trả tiền mua. Vì vậy lớp phòng thủ tự nhiên (mua thêm để chặn) tập trung từ CE trở xuống proximal. CE bị đóng thân xuyên qua đồng nghĩa **bên tạo gap đã bỏ vị thế hoặc bị nuốt** — đó là lý do inversion (IFVG) là bằng chứng đổi delivery chứ không phải pattern trang trí.
+3. **Vì sao có gap KHÔNG lấp (breakaway)? Vì không còn tồn kho nào cần cân.** Nếu displacement khởi phát từ một accumulation đã hoàn tất (mọi lệnh đã gom đủ trước đó), bên khởi xướng **không cần quay lại mua thêm** — không có lệnh dang dở trong gap, không có lý do kinh tế nào để redeliver. Câu hỏi "gap này có lấp không?" vì thế quy về: **"bên tạo gap còn việc chưa xong ở đó không?"** — trả lời bằng bối cảnh (gap thoát khỏi POI sau sweep = breakaway; gap giữa leg đang chạy = kho lệnh còn dùng).
+
+Ba cơ chế này chạy xuyên các W bên dưới: news gap không có kho lệnh nào bên trong (W1); grind vào gap = kho lệnh bị rút dần trước khi giá tới (W2); cú chạm ngoài phiên đã tiêu một phần kho (W3).
+
 ### W1. FVG sinh từ news candle — cùng hình dạng, khác hẳn "chất liệu"
 
 ![[FVG-War-News-Candle-FVG.svg|720]]
