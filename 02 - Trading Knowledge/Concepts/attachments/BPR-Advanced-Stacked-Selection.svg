@@ -1,0 +1,49 @@
+<svg viewBox="0 0 760 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="540" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Nhiều BPR xếp chồng trong một cú V — chọn vùng nào, bỏ vùng nào?</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">V-reversal choppy tạo 2–3 cặp FVG chồng nhau. Không phải mọi overlap đều bình đẳng: chỉ overlap "kẹp" đúng điểm sweep mới mang câu chuyện đảo chiều.</text>
+
+  <rect x="24" y="70" width="712" height="350" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- SSL line -->
+  <line x1="44" y1="370" x2="716" y2="370" stroke="#9CA3AF" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="46" y="384" font-size="10" fill="#9CA3AF">SSL — điểm sweep của cú V</text>
+
+  <!-- BPR A (core, at the V, low) -->
+  <rect x="180" y="300" width="520" height="36" fill="#F59E0B" opacity="0.25"/>
+  <text x="560" y="314" font-size="11" font-weight="700" fill="#92400E">BPR A — CORE (giữ)</text>
+  <text x="560" y="328" font-size="9.5" fill="#92400E">kẹp trực tiếp điểm sweep, ở discount</text>
+
+  <!-- BPR B mid -->
+  <rect x="260" y="216" width="440" height="26" fill="#9CA3AF" opacity="0.22"/>
+  <text x="560" y="227" font-size="11" font-weight="700" fill="#4B5563">BPR B — giữa V (hạ cấp)</text>
+  <text x="560" y="239" font-size="9.5" fill="#6B7280">sinh từ chop nội bộ, gần equilibrium</text>
+
+  <!-- BPR C high -->
+  <rect x="330" y="140" width="370" height="22" fill="#9CA3AF" opacity="0.16"/>
+  <text x="560" y="150" font-size="11" font-weight="700" fill="#9CA3AF">BPR C — nông (bỏ)</text>
+  <text x="560" y="161" font-size="9.5" fill="#9CA3AF">sát đỉnh nhịp hồi → premium của leg mới</text>
+
+  <!-- price path: down leg (leaves SIBI), chop at bottom sweeping SSL, up leg leaving BISI overlapping at low; mid chop creates second pair; retrace comes back to A -->
+  <path d="M60,110 L95,180 L120,160 L150,250 L175,232 L200,330 L218,378 L236,352 L252,318 L266,340 L285,290 L300,258 L315,272 L332,225 L350,205 L368,232 L385,175 L402,150 L420,132 L438,158 L458,196 L478,246 L498,296 L515,330 L535,312 L560,262 L590,205 L625,150 L660,110"
+        fill="none" stroke="#374151" stroke-width="2.2"/>
+  <!-- sweep marker -->
+  <circle cx="218" cy="378" r="5" fill="none" stroke="#B45309" stroke-width="2.2"/>
+  <text x="120" y="400" font-size="10" font-weight="700" fill="#B45309">sweep SSL — điểm neo của cả câu chuyện</text>
+  <!-- entry at A -->
+  <circle cx="515" cy="330" r="6" fill="#16A34A"/>
+  <text x="470" y="356" font-size="10.5" font-weight="700" fill="#15803D">✓ retest BPR A → Long</text>
+  <!-- pass-through B annotation -->
+  <circle cx="498" cy="296" r="4.5" fill="none" stroke="#6B7280" stroke-width="1.8"/>
+  <text x="404" y="288" font-size="9.5" fill="#6B7280">giá xuyên B trên đường về A</text>
+
+  <text x="44" y="106" font-size="10" fill="#6B7280">leg giảm để lại SIBI ↓</text>
+  <text x="620" y="98" font-size="10" fill="#15803D">leg tăng để lại BISI ↑</text>
+
+  <!-- bottom rules -->
+  <rect x="24" y="434" width="712" height="90" rx="8" fill="#F3F4F6"/>
+  <text x="38" y="456" font-size="12.5" font-weight="700" fill="#1F2937">Thứ tự ưu tiên khi có nhiều overlap</text>
+  <text x="38" y="476" font-size="11" fill="#374151">① BPR "kẹp" trực tiếp điểm sweep (hai displacement của chính cú đảo) + nằm ở discount/premium đúng phía → CORE, dùng làm entry.</text>
+  <text x="38" y="494" font-size="11" fill="#374151">② BPR sinh từ chop giữa V: chỉ là dấu vết đấu giá tạm — kỳ vọng bị xuyên trên đường giá tìm về CORE (nó là inducement của BPR thật).</text>
+  <text x="38" y="512" font-size="11" fill="#374151">③ BPR sát đỉnh/đáy nhịp hồi: sai phía của dealing range mới → bỏ. Một chart chỉ nên còn lại MỘT BPR được tô đậm.</text>
+</svg>

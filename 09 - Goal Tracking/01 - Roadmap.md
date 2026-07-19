@@ -15,6 +15,7 @@ dashboard: Roadmap
 | **Giai đoạn 2 – Dựng edge** | Xác thực edge          | Trung (6–12 tháng) | Thành thạo 2022 model, tăng mẫu backtest, định nghĩa playbook                         |
 | **Giai đoạn 3 – Ổn định**   | Nhân edge lên          | Dài (1–3 năm)      | Tháng có lãi, kiểm soát drawdown, thực thi máy móc                                    |
 | **Giai đoạn 4 - Thử thách** | Thi Quỹ cấp vốn        | Dài (1.5-2 năm)    | Mục tiêu: <br>- Pass package 10K$ của quỹ FTMO<br>- Pass package 10k$ của quỹ The5ers |
+| **Giai đoạn 5 - Scale**     | Nhân vốn lên 100K      | Dài (1-2 năm sau funded 10K) | Mục tiêu:<br>- Payout ổn định từ funded 10K<br>- Pass package 100K$ của cả FTMO & The5ers (gate 5 điều kiện) |
 
 ## Giai đoạn 1 — Nền tảng  ·  ~6 tháng tới
 **Mục tiêu:** Làm cho quy trình và dữ liệu đáng tin. Edge không có ý nghĩa nếu đầu vào nhiễu.
@@ -72,6 +73,20 @@ WHERE type = "goal" AND contains(phase, "Phase 4")
 SORT priority DESC
 ```
 
+## Giai đoạn 5 — Scale lên 100K  ·  1–2 năm sau khi funded 10K
+**Mục tiêu:** Nhân edge đã sống sót qua luật quỹ lên vốn 100K — cùng % rules, gấp 10 về con số tuyệt đối. Chỉ mở khoá khi đủ **5 điều kiện gate** (funded cả 2 quỹ 10K, ≥2 payout, 3 tháng lãi liên tiếp, mistake rate thấp ổn định, phí trả bằng lợi nhuận trading).
+
+- Pass FTMO 2-Step 100K (Phase 1 +10% → Phase 2 +5%).
+- Pass The5ers High Stakes 100K (xác nhận biến thể New 10%+5% / Classic 8%+5% khi mua).
+- Nhận payout 100K đầu tiên.
+
+```dataview
+TABLE horizon AS "Kỳ hạn", status AS "Trạng thái", progress + "%" AS "Tiến độ", due_date AS "Hạn"
+FROM "09 - Goal Tracking/Goals"
+WHERE type = "goal" AND contains(phase, "Phase 5")
+SORT priority DESC
+```
+
 ## Dòng thời gian (trực quan)
 
 ```mermaid
@@ -90,8 +105,12 @@ gantt
     section GD4 - Thu thach quy
     FTMO Challenge 10K      :d1, 2027-06-01, 180d
     The5ers Challenge 10K   :d2, 2027-09-01, 180d
+    section GD5 - Scale 100K
+    Funded 10K va payout    :e1, 2027-09-01, 270d
+    Challenge 100K x2 quy   :e2, 2028-01-01, 180d
 ```
 
 ## Liên kết
 - Dashboard: [[00 - Goal Dashboard]]
 - Chỉ số: [[02 - Skill Metrics]]
+- Lộ trình chi tiết từng giai đoạn (từ số 0 → Funded 100K): [[03 - Lộ trình chi tiết - Từ số 0 đến Funded 100K]]

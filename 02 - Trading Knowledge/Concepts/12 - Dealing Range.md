@@ -21,7 +21,7 @@ models:
   - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-07-17
 created: 2026-06-22
-updated: 2026-07-03
+updated: 2026-07-18
 common_mistakes:
   - "[[Mistake - Wrong Dealing Range]]"
   - "[[Mistake - Premium Discount Off Wrong Range]]"
@@ -391,6 +391,89 @@ Trước mỗi phiên, chỉ cần trả lời: **"Giá đang ở pha nào của
 > 6. **Quanh EQ = không làm gì.** Đặt rule cứng: không mở lệnh mới khi giá trong dải 40–60% của range đang dùng, trừ khi playbook continuation sau rebalance IRL cho phép.
 > 7. **Khi hết external phía trước, dùng SD projection** thay vì "gồng tới mức tròn" — target phải luôn là một cấu trúc đo được.
 > 8. **Định kỳ audit range:** cuối mỗi phiên tự hỏi "range tôi dùng hôm nay có còn đúng cho ngày mai?" — external nào bị lấy, cần re-map gì; ghi vào daily note để sáng hôm sau không phân tích lại từ đầu.
+
+---
+
+## Tình huống thực chiến (War Stories)
+
+> [!info] Vì sao có mục này
+> Mọi mục ở trên dạy cách chọn range *đúng*. Mục này trả lời câu hỏi khó hơn mà chỉ nhiều giờ backtest/live mới đặt ra: **vì sao một range "đúng" vẫn phản bội mình** — và ở tầng sâu nhất, *vì sao* dealing range hoạt động ngay từ đầu. Mỗi tình huống có ba tầng: hiện tượng → cơ chế (WHY) → rule đo được.
+
+### W0. Tầng WHY nền tảng — vì sao giá "tôn trọng" một cái hộp vô hình?
+
+Trước khi vào các tình huống, cần trả lời câu hỏi mà đa số trader bỏ qua: **dealing range không có sức mạnh vật lý nào — vậy tại sao nó hoạt động?**
+
+1. **Range là bản đồ phân bố LỆNH, không phải phân bố giá.** Hai đầu range là nơi tập trung stop (external liquidity); bên trong range là nơi các lệnh đã khớp dở dang cần được "hoàn tất hai chiều" (internal — FVG/OB). Giá di chuyển vì các thuật toán khớp lệnh lớn cần **đối tác**: nơi có lệnh chờ dày nhất chính là nơi giá bị hút về. Range "hoạt động" đơn giản vì nó vẽ lại đúng nơi lệnh đang nằm — xem [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]].
+2. **EQ 50% hoạt động vì lý thuyết đấu giá, không vì Fibonacci.** Một dealing range là một phiên đấu giá chưa ngã ngũ: hai đầu là hai mức mà thị trường đã *từ chối* (quét xong rồi quay lại). Điểm giữa của hai mức từ chối là nơi định giá "công bằng" tạm thời — trên nó người bán có lợi thế vị trí, dưới nó người mua có lợi thế. Premium/discount là phát biểu ICT của khái niệm *value area* trong auction theory. Đây là lý do EQ không cần chính xác từng tick vẫn hoạt động: nó là **vùng trọng tâm của giá trị**, không phải một mức ma thuật.
+3. **Luồng internal ↔ external hoạt động vì tồn kho (inventory) phải được cân.** Market maker/thuật toán khớp một khối lệnh lớn tại external (nơi duy nhất đủ thanh khoản) sẽ ôm một vị thế tồn kho lệch; họ đẩy giá về internal (FVG — nơi giao dịch một chiều còn dang dở) để xả/cân tồn kho ở giá tốt, rồi mới bắt đầu chu kỳ mới. "Nhịp thở" ERL↔IRL ở mục A5 chính là chu kỳ cân tồn kho này nhìn từ bên ngoài.
+
+Ba cơ chế trên là nền của mọi tình huống dưới đây: khi range "phản bội", luôn là vì một trong ba giả định (bản đồ lệnh đúng, đấu giá chưa ngã ngũ, tồn kho chưa cân) đã bị phá mà mình không nhận ra.
+
+### W1. Cùng một ngày, hai bản đồ — range trên Futures khác range trên CFD
+
+![[Dealing-Range-War-Feed-Divergence.svg|720]]
+*Sơ đồ: NQ futures (ETH) có đỉnh overnight mà CFD không hiển thị đủ; hai đầu range lệch → EQ lệch → premium/discount lệch theo.*
+
+**Hiện tượng:** bạn vẽ range trên chart CFD NAS100, đo discount, chờ giá về OTE — giá đảo sớm hơn vùng của bạn vài chục điểm, đúng tại mức mà *trên chart futures* là 62% retracement. Hoặc equal highs "đẹp" trên CFD không tồn tại trên futures (và không bao giờ bị quét).
+
+**WHY — vì sao hai feed khác nhau và vì sao futures thắng:** dealing range hoạt động vì nó vẽ bản đồ *lệnh thật*. Lệnh thật của chỉ số nằm ở **CME (futures NQ)** — đó là nơi các desk lớn đặt stop, nơi thuật toán tham chiếu. CFD là giá tổng hợp broker tạo ra từ futures cộng spread markup, và nhiều broker cắt bớt giờ giao dịch → **đỉnh/đáy overnight (nơi một đầu range thật hình thành) có thể không tồn tại trên chart CFD**. Khi hai đầu range sai thì mọi số phái sinh (EQ, OTE, quadrant) sai theo — đây chính là "chọn sai range" ở mục 9, nhưng dưới dạng không thể phát hiện nếu chỉ nhìn một chart.
+
+**Rule đo được:**
+- Bản đồ (range, pool, EQ) vẽ trên **futures**; thực thi ở đâu cũng được nhưng level lấy từ bản đồ gốc.
+- Backtest và live cùng một feed — nếu không, thống kê `location_in_range` vô nghĩa.
+- Với FX: dùng feed có khối lượng lớn/chuẩn interbank làm tham chiếu, chấp nhận sai số vài pip giữa broker và ghi rõ điều đó vào buffer của stop.
+
+### W2. Seek & Destroy — ngày quét cả hai đầu: range không chết, nó được "sạc lại"
+
+![[Dealing-Range-War-Seek-Destroy-Recharge.svg|720]]
+*Sơ đồ: wick qua BSL, wick qua SSL, đóng ngày giữa range — cả hai external vừa được nạp thanh khoản mới; re-map lúc này là lỗi.*
+
+**Hiện tượng:** ngày S&D quét cả hai external rồi đóng giữa range. Phản xạ sai phổ biến: "cả hai đầu đã bị lấy → range chết → vẽ range mới nhỏ hơn bên trong". Range mới nhỏ hơn đó cho premium/discount nhiễu và hôm sau bị nghiền.
+
+**WHY — vì sao range sau S&D lại *mạnh hơn*:** quay về cơ chế nền W0.1 — stop là hàng tiêu hao, nhưng **cú quét cũng là máy sản xuất stop mới**. Wick qua BSL kích hoạt buy stops cũ *và* kéo một lớp breakout trader mới vào Long (stop của họ giờ nằm dưới); wick qua SSL làm điều đối xứng. Đóng ngày giữa range nghĩa là thuật toán đã **kiểm tra cả hai phía và từ chối cả hai** — đó là bằng chứng đắt giá nhất có thể có rằng biên range đúng. Về mặt đấu giá (W0.2): hai mức từ chối vừa được *tái xác nhận*, nên EQ cũ càng đáng tin. Re-map chỉ được phép khi có **acceptance** (đóng thân + giữ ngoài) — wick hai phía là điều ngược lại của acceptance.
+
+**Rule đo được:**
+- Sau ngày S&D: **giữ nguyên range + EQ**, nâng độ tin của hai external thêm một bậc.
+- Sweep *lần hai* cùng một đầu trong những ngày kế = tier thấp hơn lần đầu (pool đã mỏng đi) — điều chỉnh kỳ vọng reversal tương ứng.
+- Break thật qua external sau ngày S&D thường cần catalyst (tin lớn, mở tuần) — không có catalyst mà "phá" thì nghi ngờ gấp đôi.
+- Journal: `range_context` (fresh / one_side_swept / both_swept_SD).
+
+### W3. Range quá rộng — khi "discount" vẫn còn cách đáy 300 điểm
+
+**Hiện tượng:** D1 range của NQ sau một tuần biến động rộng 800 điểm. Giá "vào discount" (dưới 50%) — nhưng dưới đó vẫn còn 300 điểm không gian. Long "vì đang discount" rồi chịu 3 lần stop trước khi giá tìm được đáy thật ở deep discount.
+
+**WHY — vì sao % không phải là khoảng cách:** premium/discount là **xác suất có điều kiện, không phải mức giá**. "Ở discount" chỉ nói rằng bên mua có lợi thế vị trí *tương đối*; nó không nói lệnh mua thật nằm ở đâu. Lệnh thật (theo W0.1) nằm tại các PD array cụ thể — FVG, OB — và trong range rộng, các array đó phân bố thưa. Khoảng giữa hai array là "đất trống": không có lệnh chờ nào ở đó, nên không có lý do nào để giá dừng ở đó. Range càng rộng, sai số của phép đo % càng lớn so với sai số của một array cụ thể.
+
+**Rule đo được:**
+- Range rộng bất thường (so với ADR trung bình 20 ngày, ví dụ > 1.5×): **cấm trade theo nửa range** — chỉ trade theo quadrant + array cụ thể (deep discount + FVG/OB, không phải "dưới 50%").
+- Kết hợp ma trận A2: vị trí phải cộng hưởng ở cả hai tầng (D1 discount **và** H1 discount) và entry phải nằm *tại một array*, không nằm giữa đất trống.
+- Journal: `range_width_vs_adr` — biến này giải thích một phần lớn các lệnh "đúng vùng, sai 100 điểm".
+
+### W4. EQ "trôi" qua đêm — sáng ra mọi level lệch vài điểm mà không ai báo
+
+**Hiện tượng:** tối hôm trước bạn đo EQ = 20,302 và đặt alert/limit quanh OTE. Trong đêm, giá nhúng nhẹ làm range low thấp hơn 18 điểm — về cấu trúc range **không đổi** (vẫn swing đó, chỉ wick sâu hơn), nhưng **mọi mức % đã trôi**: EQ mới 20,293, OTE dịch theo. Limit của bạn giờ nằm lệch ngoài vùng thật — giá chạm vùng thật, đảo, và bạn đứng ngoài nhìn (hoặc tệ hơn: limit khớp ở mức đã thành premium nông).
+
+**WHY — vì sao vài điểm lại quan trọng ở đây:** bản thân EQ là *vùng*, không phải mức (W0.2) — nhưng **OTE và quadrant biên là nơi các cụm lệnh limit của cả đám đông ICT trader đặt gần nhau**. Thuật toán khớp quanh các cụm đó với độ chính xác cao (đó chính là lý do "quét đúng mép" tồn tại). Sai số 15–20 điểm đủ để bạn rơi từ "trong cụm" ra "ngoài cụm". Level tĩnh trong một thị trường chạy 24h là một giả định sai âm thầm.
+
+**Rule đo được:**
+- **Đo lại toàn bộ range levels mỗi sáng** như một bước cứng trong pre-market routine (không kế thừa số của hôm qua) — cùng nguyên tắc với câu hỏi mở phiên bên [[12 - Daily Bias]].
+- Dùng anchored fib trên chart (neo vào swing, tự cập nhật khi wick giãn) thay vì kẻ tay mức giá tĩnh.
+- Alert đặt ở *vùng* (dải giá quanh OTE) chứ không ở một tick.
+
+### W5. Ba tầng range đều "hợp lệ" — và sự tê liệt của người phân tích giỏi
+
+**Hiện tượng:** sau nhiều ngày consolidation, chart có 3 range lồng nhau đều đúng sách: range tuần (external chưa lấy hai đầu), range 3 ngày, range trong ngày. Ba bản đồ cho ba kết luận premium/discount khác nhau. Người mới chọn bừa; người giỏi… phân tích cả buổi rồi không trade được — cả hai đều thua theo cách của mình.
+
+**WHY — vì sao nhiều range hợp lệ cùng lúc là một *thông điệp*, không phải một bài toán:** theo W0.3, giá di chuyển khi có tồn kho cần cân và pool rõ để nhắm tới. Ba tầng range mơ hồ chồng nhau nghĩa là **không có delivery nào đang dang dở** — thuật toán không nợ ai điều gì ở cả ba tầng. Đó chính là trạng thái "chưa chọn phía" quanh EQ (mục A1) phóng to lên nhiều tầng. Thị trường đang *tích luỹ thanh khoản hai phía để chuẩn bị cho expansion* — và expansion đó sẽ chỉ bắt đầu bằng một cú quét external của tầng LỚN nhất.
+**Câu trả lời đúng không phải "chọn range nào" mà là "chưa có gì để trade cho tới khi tầng lớn nhất bị quét."**
+
+**Rule đo được:**
+- Khi ≥2 tầng range cho kết luận mâu thuẫn và không tầng nào có draw rõ vượt trội → ghi **No Trade / chờ sweep external của tầng cao nhất** vào pre-market note. Đây là một kết luận, không phải sự bất lực.
+- Sau cú sweep external tầng cao nhất: các tầng dưới thường tự sắp hàng lại trong 1–2 phiên — lúc đó ma trận A2 mới dùng được.
+- Journal: `nested_range_conflict` (true/false) — thống kê các lệnh vào trong trạng thái conflict; win rate của nhóm này thường là con số thuyết phục mình đứng ngoài tốt hơn mọi lời khuyên.
+
+> [!success] Tổng kết mục War Stories
+> Tầng WHY chung: dealing range hoạt động vì nó vẽ đúng **bản đồ lệnh** (W0.1), đúng **phiên đấu giá** (W0.2), đúng **chu kỳ cân tồn kho** (W0.3). Nó phản bội khi bản đồ vẽ trên feed sai (W1), khi đọc nhầm "sạc lại" thành "chết" (W2), khi nhầm % với vị trí lệnh thật (W3), khi level tĩnh trong thị trường động (W4), và khi ép mình trade lúc thuật toán không nợ ai điều gì (W5). Journal fields: `range_context`, `range_width_vs_adr`, `nested_range_conflict`.
 
 ---
 

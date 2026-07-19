@@ -1,0 +1,101 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Reclaim giả vs Reclaim thật — thân nến là lời khai, wick chỉ là tin đồn</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cùng một cú quét SSL: bên trái "reclaim" bằng doji lình xình → tầng 2 quét tiếp; bên phải reclaim bằng displacement → đảo thật.</text>
+
+  <!-- LEFT PANEL: fake reclaim -->
+  <rect x="24" y="72" width="352" height="360" rx="8" fill="#FFFFFF" stroke="#FCA5A5"/>
+  <text x="40" y="96" font-size="13" font-weight="800" fill="#B91C1C">✗ RECLAIM GIẢ — doji do dự trên mức</text>
+
+  <!-- equal lows line -->
+  <line x1="40" y1="300" x2="360" y2="300" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="44" y="294" font-size="10.5" font-weight="700" fill="#DC2626">Equal Lows (SSL)</text>
+
+  <!-- downtrend candles -->
+  <line x1="66" y1="120" x2="66" y2="180" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="60" y="128" width="12" height="42" fill="#DC2626"/>
+  <line x1="92" y1="155" x2="92" y2="215" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="86" y="162" width="12" height="45" fill="#DC2626"/>
+  <line x1="118" y1="195" x2="118" y2="252" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="112" y="202" width="12" height="43" fill="#DC2626"/>
+  <line x1="144" y1="232" x2="144" y2="292" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="138" y="240" width="12" height="46" fill="#DC2626"/>
+
+  <!-- sweep candle: wick below, small body closes back above -->
+  <line x1="170" y1="278" x2="170" y2="352" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="164" y="284" width="12" height="14" fill="#16A34A"/>
+  <text x="150" y="368" font-size="10" fill="#6B7280">sweep #1</text>
+
+  <!-- doji candles hovering -->
+  <line x1="196" y1="272" x2="196" y2="298" stroke="#9CA3AF" stroke-width="1.5"/>
+  <rect x="190" y="282" width="12" height="5" fill="#9CA3AF"/>
+  <line x1="222" y1="274" x2="222" y2="299" stroke="#9CA3AF" stroke-width="1.5"/>
+  <rect x="216" y="284" width="12" height="5" fill="#9CA3AF"/>
+  <line x1="248" y1="276" x2="248" y2="300" stroke="#9CA3AF" stroke-width="1.5"/>
+  <rect x="242" y="286" width="12" height="5" fill="#9CA3AF"/>
+
+  <!-- leg 2 down -->
+  <line x1="274" y1="286" x2="274" y2="336" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="268" y="290" width="12" height="40" fill="#DC2626"/>
+  <line x1="300" y1="326" x2="300" y2="386" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="294" y="330" width="12" height="50" fill="#DC2626"/>
+  <text x="290" y="402" font-size="10.5" font-weight="700" fill="#B91C1C">tầng 2 — quét stop của bạn</text>
+
+  <!-- annotation -->
+  <rect x="230" y="118" width="136" height="94" rx="6" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="240" y="136" font-size="10.5" font-weight="700" fill="#991B1B">Dấu hiệu nhận sớm:</text>
+  <text x="240" y="152" font-size="10" fill="#7F1D1D">• thân nến reclaim nhỏ</text>
+  <text x="240" y="166" font-size="10" fill="#7F1D1D">• 2–3 nến lình xình,</text>
+  <text x="240" y="179" font-size="10" fill="#7F1D1D">  không displacement</text>
+  <text x="240" y="195" font-size="10" fill="#7F1D1D">→ do dự = thông tin</text>
+  <text x="240" y="207" font-size="10" fill="#7F1D1D">  PHỦ ĐỊNH kịch bản đảo</text>
+
+  <!-- RIGHT PANEL: real reclaim -->
+  <rect x="386" y="72" width="352" height="360" rx="8" fill="#FFFFFF" stroke="#86EFAC"/>
+  <text x="402" y="96" font-size="13" font-weight="800" fill="#15803D">✓ RECLAIM THẬT — displacement rời hiện trường ngay</text>
+
+  <line x1="402" y1="300" x2="722" y2="300" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="406" y="294" font-size="10.5" font-weight="700" fill="#DC2626">Equal Lows (SSL)</text>
+
+  <!-- downtrend candles -->
+  <line x1="428" y1="120" x2="428" y2="180" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="422" y="128" width="12" height="42" fill="#DC2626"/>
+  <line x1="454" y1="155" x2="454" y2="215" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="448" y="162" width="12" height="45" fill="#DC2626"/>
+  <line x1="480" y1="195" x2="480" y2="252" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="474" y="202" width="12" height="43" fill="#DC2626"/>
+  <line x1="506" y1="232" x2="506" y2="292" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="500" y="240" width="12" height="46" fill="#DC2626"/>
+
+  <!-- sweep candle -->
+  <line x1="532" y1="270" x2="532" y2="352" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="526" y="276" width="12" height="20" fill="#16A34A"/>
+  <text x="512" y="368" font-size="10" fill="#6B7280">sweep</text>
+
+  <!-- displacement candle: big green -->
+  <line x1="558" y1="212" x2="558" y2="300" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="552" y="218" width="12" height="74" fill="#16A34A"/>
+  <text x="536" y="206" font-size="10.5" font-weight="700" fill="#15803D">displacement</text>
+
+  <!-- FVG zone -->
+  <rect x="570" y="252" width="120" height="22" fill="#86EFAC" opacity="0.45"/>
+  <text x="596" y="267" font-size="10" font-weight="700" fill="#166534">FVG entry</text>
+
+  <!-- continuation candles -->
+  <line x1="584" y1="176" x2="584" y2="238" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="578" y="182" width="12" height="48" fill="#16A34A"/>
+  <line x1="610" y1="238" x2="610" y2="272" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="604" y="244" width="12" height="22" fill="#DC2626"/>
+  <line x1="636" y1="150" x2="636" y2="252" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="630" y="156" width="12" height="88" fill="#16A34A"/>
+  <line x1="662" y1="118" x2="662" y2="162" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="656" y="124" width="12" height="34" fill="#16A34A"/>
+
+  <!-- annotation -->
+  <rect x="404" y="330" width="316" height="90" rx="6" fill="#F0FDF4" stroke="#86EFAC"/>
+  <text x="416" y="350" font-size="10.5" font-weight="700" fill="#166534">Chữ ký của stop run thật:</text>
+  <text x="416" y="366" font-size="10" fill="#14532D">• nến ngay sau sweep là displacement body lớn, đóng sâu trong range</text>
+  <text x="416" y="381" font-size="10" fill="#14532D">• để lại FVG để entry — không cần "chờ thêm cho chắc"</text>
+  <text x="416" y="396" font-size="10" fill="#14532D">• quy tắc đếm nến: lình xình ngoài/quanh mức quá 2–3 nến → hủy kịch bản</text>
+  <text x="416" y="411" font-size="10" fill="#14532D">   reversal, coi như break/chưa xong — KHÔNG thương lượng</text>
+</svg>

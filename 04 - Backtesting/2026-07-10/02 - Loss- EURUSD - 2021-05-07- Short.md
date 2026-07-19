@@ -363,6 +363,42 @@ Cú "sweep cạnh trên OB" mà tôi coi là tín hiệu entry chỉ là **inter
 
 ---
 
+## 9. Phân tích bổ sung chuyên sâu (2026-07-18)
+
+> [!info] Mục 7.4–7.6 đã phân tích rất sâu tầng "draw vs bias" và cognitive traps. Mục này bổ sung tầng còn thiếu: **đối chiếu từng khái niệm ICT bị áp dụng sai**, lăng kính **AMD/Power of Three** cho lỗi phiên Asia, và vị trí của lệnh này trong **pattern chung của 4 lệnh thua**.
+
+### 9.1. Các khái niệm ICT bị áp dụng SAI
+
+| Khái niệm | Tôi đã dùng như thế nào (SAI) | Cách dùng ĐÚNG | Ảnh hưởng |
+|---|---|---|---|
+| [[18 - Kill Zones]] | Dùng như một ô confluence để tick SAU khi đã phân tích entry (và phát hiện sai sau khi đặt lệnh) | Kill Zone là **PRECONDITION cấp cổng** của 2022 Model — kiểm tra TRƯỚC khi mở khung M5. Ngoài KZ, displacement/MSS mất luôn ý nghĩa thống kê vì thiếu dòng lệnh tổ chức | Chí mạng (GATE) |
+| [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]] | Dùng một nửa khái niệm: xác định draw dài hạn (SSL dưới) theo HTF bias, bỏ qua draw NGẮN HẠN đang hướng lên (BSL 1.21296–1.21227 chưa lấy) | Draw phải được xác định ở **cả 2 cấp**; khi draw ngắn hạn ngược bias dài hạn → chờ pool gần bị quét xong rồi mới tìm entry theo bias | Chí mạng — first_error |
+| [[16 - Internal & External Range Liquidity (IRL & ERL)]] + [[07 - Buy-side Liquidity]] | Nhầm cú quét cạnh trên OB (internal, nông) thành một raid buy-side thật | Phân loại pool trước khi đếm sweep: sweep hợp lệ cho Short = **external/structural BSL** bị lấy (ở đây là cụm OB 1.21296–1.21227 + swing high liên quan), không phải mọi cú "quét-rồi-đóng-lại" | Chí mạng |
+| [[20 - Liquidity Sweep]] | Đếm sweep theo hình dạng nến (wick qua mép OB) thay vì theo **chức năng** (pool nào bị lấy, còn pool nào chưa) | Câu hỏi đúng không phải "có sweep chưa?" mà là "sweep này lấy LOẠI thanh khoản nào, và pool mục tiêu lớn hơn đã bị lấy chưa?" | Nặng |
+| [[21 - Market Structure Shift]] | Tin MSS M5 hình thành trong phiên Asia mỏng | Trọng số của MSS tỷ lệ thuận với **lực lượng tham gia tạo ra nó**. MSS trong phiên mỏng có thể bị tạo bởi vài lệnh nhỏ và phủ định ngay khi London mở — chỉ đếm MSS trong KZ | Nặng |
+| [[02 - AMD]] (Power of Three) | Không áp dụng: short lúc 10:05 UTC+7 — tức giữa pha **Accumulation** của ngày | Theo AMD, phiên Asia thường là pha A (tích lũy quanh open); nhịp chạy lên quét SL sau đó chính là pha **M (Manipulation / Judas swing)** kinh điển trước khi Distribution theo bias thật. Short trong pha A = tự đặt mình vào đúng hướng của Judas swing sắp tới | Nặng |
+| [[26 - OTE - Optimal Trade Entry]] | Tự nhận "không nằm trong OTE" nhưng vẫn vào | Không đạt location gate = bỏ, không có ngoại lệ vì "các yếu tố khác đẹp" | Nặng |
+| Displacement ([[08 - Mistake - Weak Displacement]]) | Ghi chú "nến không quá lớn" tới 2 lần nhưng vẫn tick hợp lệ | Displacement là biến định lượng (body-to-range, ATR, có FVG) — không phải cảm giác. Tự ghi "không quá lớn" = đã biết nó fail, hợp lý hóa là lỗi kỷ luật | Nặng |
+
+**Điểm đáng chú ý nhất của bảng này:** lệnh chỉ có MỘT bước tick Yes thật sự (POI đúng loại đúng phía) — mọi khái niệm còn lại đều bị dùng sai hoặc dùng một nửa. Điều đó nhất quán với confluence_score 0/8 và tự chấm 40% khớp mô hình: đây không phải một setup "gần đủ", đây là một **non-setup được các pattern bề mặt ngụy trang**.
+
+### 9.2. Đào sâu: cơ chế phiên Asia + vì sao chỉ cần MỘT nến để giết lệnh
+
+Trong phiên mỏng, order book hai bên đều nông. Điều đó tạo ra hai hệ quả ngược nhau mà lệnh này dính cả hai: (1) **tín hiệu giả rẻ** — chỉ cần khối lượng nhỏ đã in được "sweep + MSS + displacement" đủ đẹp trên M5 để dụ entry; (2) **quét thật cũng rẻ** — khi thuật toán muốn chạy lên lấy BSL 1.21296–1.21227, một nến bullish displacement đơn lẻ là đủ xuyên OB + SL mà không gặp kháng cự, vì không có tầng lệnh dày nào hấp thụ giữa đường. Nói cách khác, phiên Asia **khuếch đại cả mồi lẫn bẫy**. Đây là lý do sâu hơn của HARD GATE Kill Zone: không phải "Asia xấu" một cách mê tín, mà là cấu trúc thanh khoản mỏng làm cho mọi bằng chứng kỹ thuật của 2022 Model mất giá trị xác nhận.
+
+### 9.3. Vị trí trong pattern chung 4 lệnh thua (họ lỗi "Unswept Liquidity Path")
+
+| Lệnh | First error | Pool chưa-bị-lấy gần nhất so với entry | SL nằm trong đường lấy pool đó? |
+|---|---|---|---|
+| **EURUSD 2021-05-07 Short (file này)** | draw | BSL external = OB 1.21296–1.21227, phía TRÊN | **Có** (SL 1.20931) |
+| [[02 - Loss - GBPUSD - 2014-07-17 - Long]] | sweep | ERL = range low 1.70592, phía DƯỚI | **Có** |
+| [[01 - Loss - XAUUSD - 2014-05-19 - Short]] | poi | OB 0.786 chưa test, phía TRÊN BB | **Có** |
+| [[02 - Loss- XAUUSD- 2014-05-14- Short]] | poi (SL) | Phần thân còn lại của chính RB, phía TRÊN | **Có** |
+
+4/4 lệnh thua cùng một gốc: **entry được đặt khi pool thanh khoản chưa-bị-lấy gần nhất nằm cùng phía với SL**. File này là phiên bản "external BSL", và cũng là phiên bản duy nhất cộng thêm lỗi session. Note tổng hợp + gate kiểm tra bắt buộc trước mọi lệnh: [[13 - Mistake - Trading Into Unswept Liquidity]].
+
+---
+
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
@@ -370,4 +406,4 @@ Cú "sweep cạnh trên OB" mà tôi coi là tín hiệu entry chỉ là **inter
 - Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[27 - Premium Discount]]
 - Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[18 - Kill Zones]]
 - Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]
-- Mistakes: [[04 - Mistake - FOMO Entry]] · [[12 - Mistake - Log Data Mismatch - Backtest]]
+- Mistakes: [[04 - Mistake - FOMO Entry]] · [[12 - Mistake - Log Data Mismatch - Backtest]] · [[08 - Mistake - Weak Displacement]] · [[13 - Mistake - Trading Into Unswept Liquidity]]

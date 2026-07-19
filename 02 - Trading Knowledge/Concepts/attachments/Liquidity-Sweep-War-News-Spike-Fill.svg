@@ -1,0 +1,82 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Sweep trong news spike — cái wick bạn backtest KHÔNG phải giá bạn khớp được</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">8:30 NY (CPI/NFP): spread giãn, quote đóng băng, slippage. Backtest tính fill tại đáy wick = expectancy bị thổi phồng.</text>
+
+  <!-- chart panel -->
+  <rect x="24" y="72" width="420" height="366" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- equal lows -->
+  <line x1="40" y1="250" x2="430" y2="250" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="44" y="244" font-size="10.5" font-weight="700" fill="#DC2626">Equal Lows (SSL)</text>
+
+  <!-- pre-news small candles -->
+  <line x1="70" y1="170" x2="70" y2="205" stroke="#9CA3AF" stroke-width="1.5"/>
+  <rect x="64" y="178" width="11" height="18" fill="#9CA3AF"/>
+  <line x1="94" y1="165" x2="94" y2="200" stroke="#9CA3AF" stroke-width="1.5"/>
+  <rect x="88" y="172" width="11" height="20" fill="#9CA3AF"/>
+  <line x1="118" y1="172" x2="118" y2="208" stroke="#9CA3AF" stroke-width="1.5"/>
+  <rect x="112" y="180" width="11" height="20" fill="#9CA3AF"/>
+  <text x="60" y="152" font-size="10" fill="#6B7280">consolidation chờ tin</text>
+
+  <!-- spread band around news candle -->
+  <rect x="140" y="120" width="60" height="290" fill="#FB923C" opacity="0.18"/>
+  <text x="146" y="424" font-size="10" font-weight="700" fill="#C2410C">spread giãn 3–10×</text>
+
+  <!-- news candle: giant wick down, closes back up -->
+  <line x1="170" y1="130" x2="170" y2="390" stroke="#16A34A" stroke-width="2"/>
+  <rect x="162" y="140" width="16" height="70" fill="#16A34A"/>
+  <text x="184" y="136" font-size="10.5" font-weight="700" fill="#15803D">nến 8:30</text>
+
+  <!-- backtest fill marker -->
+  <line x1="150" y1="386" x2="260" y2="386" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="266" y="390" font-size="10.5" font-weight="700" fill="#2563EB">Fill trong backtest: đáy wick</text>
+
+  <!-- live fill marker -->
+  <line x1="150" y1="330" x2="260" y2="330" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="266" y="326" font-size="10.5" font-weight="700" fill="#DC2626">Fill thực tế (nếu khớp được):</text>
+  <text x="266" y="340" font-size="10" fill="#DC2626">cao hơn hàng chục điểm/pip</text>
+
+  <!-- gap arrow -->
+  <path d="M 230 382 L 230 336" stroke="#7C3AED" stroke-width="2" marker-end="url(#arrP)"/>
+  <defs>
+    <marker id="arrP" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#7C3AED"/>
+    </marker>
+  </defs>
+  <text x="196" y="366" font-size="9.5" font-weight="700" fill="#7C3AED">phantom R</text>
+
+  <!-- post-news candles -->
+  <line x1="220" y1="150" x2="220" y2="215" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="214" y="158" width="11" height="42" fill="#16A34A"/>
+  <line x1="244" y1="128" x2="244" y2="168" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="238" y="134" width="11" height="26" fill="#16A34A"/>
+
+  <!-- rules panel -->
+  <rect x="458" y="72" width="280" height="366" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="472" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Quy tắc cho sweep quanh tin</text>
+
+  <text x="472" y="126" font-size="10.5" font-weight="700" fill="#DC2626">① Không trade TRONG spike</text>
+  <text x="472" y="141" font-size="10" fill="#374151">Quote đóng băng / requote; lệnh market</text>
+  <text x="472" y="154" font-size="10" fill="#374151">khớp ở giá tệ nhất, stop có thể trượt qua.</text>
+
+  <text x="472" y="182" font-size="10.5" font-weight="700" fill="#B45309">② Chờ 5–15 phút sau tin</text>
+  <text x="472" y="197" font-size="10" fill="#374151">Câu hỏi đúng: "spike vừa LẤY pool nào,</text>
+  <text x="472" y="210" font-size="10" fill="#374151">và giá đang accept ở đâu?" — rồi mới áp</text>
+  <text x="472" y="223" font-size="10" fill="#374151">model sweep/FVG như bình thường.</text>
+
+  <text x="472" y="251" font-size="10.5" font-weight="700" fill="#7C3AED">③ Backtest: loại "phantom fill"</text>
+  <text x="472" y="266" font-size="10" fill="#374151">Setup có entry rơi vào phút ±2 quanh</text>
+  <text x="472" y="279" font-size="10" fill="#374151">high-impact news → gắn cờ riêng</text>
+  <text x="472" y="292" font-size="10" fill="#374151">(news_window: true) và thống kê tách</text>
+  <text x="472" y="305" font-size="10" fill="#374151">biệt. Nếu edge chỉ còn nhờ nhóm này</text>
+  <text x="472" y="318" font-size="10" fill="#374151">→ edge không tồn tại trong live.</text>
+
+  <text x="472" y="346" font-size="10.5" font-weight="700" fill="#15803D">④ Wick tin ≠ swing point sạch</text>
+  <text x="472" y="361" font-size="10" fill="#374151">Đáy/đỉnh tạo bởi spike tin là mức "bẩn":</text>
+  <text x="472" y="374" font-size="10" fill="#374151">stop đặt sau nó cần buffer rộng hơn</text>
+  <text x="472" y="387" font-size="10" fill="#374151">bình thường; swing đó cũng KHÔNG phải</text>
+  <text x="472" y="400" font-size="10" fill="#374151">reference đáng tin cho MSS sau này.</text>
+
+  <text x="472" y="426" font-size="10" font-weight="700" fill="#6B7280">Journal: news_window, fill_slippage</text>
+</svg>

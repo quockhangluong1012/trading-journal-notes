@@ -21,7 +21,7 @@ models:
   - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-21
 created: 2026-06-20
-updated: 2026-07-03
+updated: 2026-07-18
 common_mistakes:
   - "[[09 - Mistake - Wrong daily bias]]"
   - "[[03 - Mistake - Entry When MSS not in POI Zone]]"
@@ -372,6 +372,81 @@ Ghi `bias_tier` vào pre-market note và journal. Sau 30+ ngày sẽ thấy rõ:
 > 6. **Chấm `bias_tier` (A/B/C) và scale risk theo tier** — không phải mọi ngày đều xứng đáng full risk.
 > 7. **Đếm “one good trade”.** Bias tồn tại để tìm MỘT lệnh đúng vị trí đúng giờ mỗi ngày, không phải để trade cả ngày theo một hướng. Sau lệnh đạt target: dừng hoặc chỉ quản lý lệnh cũ.
 > 8. **Nghiệm thu cuối ngày bằng 3 câu:** Bias đúng hay sai? Nếu đúng — mình có kiếm được tiền từ nó không, vì sao? Nếu sai — sai ở narrative hay ở kỷ luật? Ghi vào daily note; đây là dữ liệu quý nhất cho weekly review.
+
+---
+
+## Tình huống thực chiến (War Stories)
+
+> [!info] Vì sao có mục này
+> Bias sai thì mất tiền — điều đó ai cũng biết. Các tình huống dưới đây nguy hiểm hơn: **bias ĐÚNG mà vẫn mất tiền**, hoặc bias "hết hạn" mà không báo trước. Đây là những pattern chỉ nhìn thấy khi đã có đủ ngày ngồi trước chart với một bias viết sẵn trong tay.
+
+### W0. Tầng WHY nền tảng — vì sao một "ngày" lại có cấu trúc định hướng để mà đọc?
+
+Daily Bias chỉ hợp lý nếu ngày giao dịch thật sự có cấu trúc lặp lại. Ba cơ chế tạo ra cấu trúc đó:
+
+1. **Vì sao ngày có hướng? Vì ngày là MỘT CHẶNG của hành trình giữa hai kho lệnh HTF.** Giá không đi lung tung rồi tình cờ tạo trend — nó được giao từ PD array HTF này tới array đối diện (mục 7.3), và hành trình đó dài hơn một ngày. Mỗi ngày là một "chặng tiếp sức": hoặc tiếp tục chặng (continuation), hoặc bắt đầu chặng mới sau khi đích cũ đã tới (reversal). Bias hoạt động vì nó không đoán ngày — nó **định vị ngày bên trong một hành trình đã có địa chỉ**. Đây là lý do bias chỉ đổi "tại các trạm" (draw bị hit, acceptance qua invalidation) chứ không đổi theo nến LTF: chặng chưa xong thì hướng chưa đổi.
+2. **Vì sao có manipulation trước distribution (PO3)? Vì leg thật cần được TÀI TRỢ trước.** Muốn phân phối giá lên cả ngày, thuật toán cần mua đủ tồn kho ở giá thấp — và người bán cho họ chính là đám đông bị Judas swing thuyết phục rằng ngày sẽ giảm (stop của người Long non + lệnh của breakout seller). Manipulation không phải "trò đùa trước bữa chính"; nó **là** khâu gom vốn của bữa chính. Hệ quả logic: ngày không có cú quét ngược nào trước leg chính là ngày hiếm — và "mua dưới midnight open khi bias bullish" chẳng qua là xếp hàng đúng chỗ khâu gom vốn diễn ra.
+3. **Vì sao thời gian (Kill Zone, midnight open, 8:30, 9:30) lặp lại? Vì thanh khoản là tài nguyên CÓ LỊCH.** Lệnh của ngân hàng, quỹ, doanh nghiệp đổ vào thị trường theo múi giờ làm việc và theo lịch tin — không rải đều 24h. Thuật toán khớp lệnh lớn buộc phải hoạt động ở nơi/lúc có đối tác dày nhất → các cửa sổ London/NY. Bias vì thế luôn là mệnh đề **hai chiều "hướng + giờ"**: đúng hướng sai giờ vẫn thua, vì ngoài cửa sổ không có dòng tiền nào đủ lớn để bảo vệ cấu trúc mình đang trade theo.
+
+Ba cơ chế này là khung đọc các W bên dưới: Judas trễ = khâu gom vốn bị dời sang cửa sổ thanh khoản kế tiếp (W1); mid-week flip = chặng hành trình TUẦN đã tới đích giữa tuần (W2); gap qua draw = chặng bị hoàn thành ngoài giờ, khi mình vắng mặt (W5).
+
+### W1. Delayed Judas — bias đúng, nhưng low-of-day hình thành lúc 9:30, không phải London
+
+![[Daily-Bias-War-Delayed-Judas.svg|720]]
+*Sơ đồ: London chỉ tích luỹ quanh midnight open, hai cú dip nông bẫy người "bắt Judas" sớm; manipulation thật chạy sau NYSE open.*
+
+**Sách giáo khoa nói (mục 7.1):** bias bullish → kỳ vọng Judas swing xuống trong London KZ tạo low của ngày.
+
+**Thực tế phát hiện:** có một lớp ngày mà kịch bản này bị **dịch trục thời gian**: London không tạo được displacement nào, chỉ dao động hai phía quanh midnight open với range hẹp; dip London nông và **không lấy pool nào đáng kể** (PDL còn nguyên). Người thuộc bài PO3 sẽ "bắt Judas" ở dip London — đúng hướng, sai giờ, stop 1–2 lần. Manipulation thật chỉ chạy **sau 9:30 NYSE open** (thường quét PDL + London low trong một nhịp), rồi mới distribution cả ngày. Ngày có tin 8:30 và ngày index thuần (NQ) đặc biệt hay theo profile này.
+
+**Rule đo được:**
+- **Ngân sách thử theo cửa sổ:** tối đa 1 entry cho kịch bản Judas trong London. Fail → không đổi bias, không gỡ — chờ pool sâu hơn (PDL) bị lấy trong NY AM rồi thử lần cuối với sequence đầy đủ.
+- Checklist nhận sớm delayed-Judas ngay trong London: (1) không có displacement giữ hướng, (2) PDL/pool chính còn nguyên, (3) có tin 8:30 chắn phía trước → hạ kỳ vọng London, dồn sự chú ý về NY AM.
+- Journal: `manipulation_window_actual` (london / ny_open / none) — thống kê này theo từng symbol; NQ và EURUSD phân bố rất khác nhau.
+
+### W2. Mid-week flip — daily bias "hết hạn" khi weekly draw hoàn thành giữa tuần
+
+![[Daily-Bias-War-Midweek-Flip.svg|720]]
+*Sơ đồ: Thứ 2–3 bearish chỉ là manipulation leg của nến tuần đi tìm weekly discount array; low-of-week in Thứ 4, ai còn short Thứ 5 là short vào distribution.*
+
+**Sách giáo khoa nói (mục 7.2):** low của tuần bullish thường hình thành Thứ 2–Thứ 4.
+
+**Thực tế phát hiện:** cái bẫy không nằm ở lý thuyết mà ở **quán tính tâm lý**: sau hai ngày bearish bias *thắng liên tiếp* (Thứ 2, Thứ 3), niềm tin vào bias bearish mạnh nhất đúng vào lúc nó **vừa hết nhiên liệu** — weekly discount array đã bị chạm, sweep đã xảy ra, low-of-week candidate đã in. Thứ 5 short tiếp là short vào distribution leg của tuần. Chuỗi thua nặng nhất trong journal của nhiều trader không phải tuần đọc sai — mà là **nửa sau của tuần đọc đúng**.
+
+**Rule đo được:**
+- Mỗi sáng, trước khi viết daily bias, trả lời một câu bắt buộc: **"Weekly draw đã bị chạm chưa?"** (`weekly_draw_status`: open / hit / reversed). Trạng thái `hit` = daily bias cũ mất hiệu lực mặc định, phải xây lại từ đầu.
+- Sau khi weekly draw bị hit: bias mới cần **bằng chứng dương** (H4/D1 displacement ngược + draw mới), không tự động flip. Chưa đủ bằng chứng → Neutral một ngày là kết luận chuyên nghiệp, không phải thiếu quyết đoán.
+- Cấm câu "trend tuần này là bearish" sau khi low-of-week candidate đã in kèm sweep + đảo chiều đóng nến.
+
+### W3. Bias đúng, tài khoản vẫn âm — lỗ hổng nằm giữa bias và execution
+
+**Tình huống:** cuối tháng review journal: `bias_correct: true` chiếm 70% số ngày — nhưng P&L tháng âm. Ba kênh rò phổ biến (đều từng thấy trong dữ liệu thật của nhiều trader):
+1. **Đúng hướng, sai vị trí:** bias bullish, nhưng entry ở premium vì sợ lỡ (chase) → stop trong nhiễu dù giá sau đó lên đúng target.
+2. **Đúng ngày, sai trận:** thắng 1R buổi sáng theo bias, rồi trade thêm 2–3 lệnh "bonus" buổi chiều trả lại hết — bias tồn tại để tìm MỘT lệnh, không phải một ngày giao dịch.
+3. **Đúng bias, sai kích cỡ:** những ngày bias tier C (đoán) lại vào full size vì "cảm thấy chắc", ngày tier A lại rén sau chuỗi thua.
+
+**Rule đo được:**
+- Journal bắt buộc tách 2 cột: `bias_correct` (hướng ngày đúng/sai) và `execution_grade` (A/B/C theo checklist entry). Cặp thống kê này trả lời câu hỏi quan trọng nhất của giai đoạn Foundation: *vấn đề của mình nằm ở phân tích hay ở hành vi?* — hai bệnh, hai thuốc hoàn toàn khác nhau.
+- Rule "one good trade": sau lệnh đạt target thuận bias → đóng máy hoặc chỉ quản lý lệnh cũ. Số lệnh sau-lệnh-thắng là thống kê đáng theo dõi riêng.
+
+### W4. Ngày trước FOMC — cái "drift" đẹp nhất tuần là cái bẫy được trả lương
+
+**Tình huống:** chiều Thứ 3 trước FOMC Thứ 4, giá trend đều một hướng, sạch sẽ, dễ đọc lạ thường. Bias theo hướng drift, vào lệnh giữ qua đêm hoặc sáng hôm sau — rồi FOMC đảo toàn bộ. Pattern lặp lại đủ nhiều để có tên: **pre-FOMC drift** là leg định vị (positioning), không phải leg xu hướng; nó thường xuyên bị *dùng làm nhiên liệu* cho move thật sau 14:00 hôm sau, tức là hướng drift và hướng move thật hay ngược nhau.
+
+**Rule đo được:**
+- Bias viết cho ngày trước-FOMC (và trước-CPI ở mức nhẹ hơn) tự động **hạ một tier** và cấm giữ lệnh qua 14:00 hôm sau.
+- Range của phiên trước-FOMC không được dùng làm dealing range tham chiếu cho ngày FOMC — vẽ lại sau 14:30.
+
+### W5. Gap qua draw lúc mở phiên — bias "hoàn thành trước khi kịp trade" (index)
+
+**Tình huống (NQ/NAS100):** bias bullish với draw là BSL tại PDH. Sáng dậy: futures **gap thẳng qua PDH** trong phiên overnight/premarket. Draw đã bị tiêu thụ khi mình chưa có mặt. Phản xạ sai: coi gap là "momentum xác nhận bias" và mua tiếp — thực tế giá đã ở nơi bias *kết thúc*, không phải nơi nó bắt đầu; xác suất cao NY AM sẽ là ngày rebalance ngược (lấp gap / tìm lại IRL bên dưới).
+
+**Rule đo được:**
+- Mỗi sáng với index: câu hỏi đầu tiên là **"overnight đã lấy mất draw của mình chưa?"** Nếu rồi → bias cũ đã hoàn thành; viết lại từ đầu với dealing range mới (thường bias đảo hoặc Neutral chờ NDOG/gap logic — xem [[23 - New Day Opening Gap]]).
+- Không bao giờ "kế thừa" bias hôm qua sang hôm nay mà chưa kiểm tra những gì overnight session đã tiêu thụ.
+
+> [!success] Tổng kết mục War Stories
+> Bias là một **hợp đồng có điều khoản hết hạn**: hết hạn theo cửa sổ thời gian (W1), theo weekly draw (W2), theo hành vi của chính mình (W3), theo lịch tin (W4), và theo những gì overnight đã tiêu thụ (W5). Journal fields: `manipulation_window_actual`, `weekly_draw_status`, `execution_grade`, `bias_tier`, và câu hỏi mở phiên "draw còn không?".
 
 ---
 

@@ -1,0 +1,78 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Mid-week flip — daily bias chết khi weekly draw hoàn thành giữa tuần</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Thứ 2–3 bearish "đúng"; nhưng đó chỉ là manipulation leg của NẾN TUẦN đi tìm HTF discount array. Ai giữ bias bearish tới Thứ 5 là đang short vào distribution tăng.</text>
+
+  <!-- chart panel -->
+  <rect x="24" y="72" width="500" height="360" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- weekly open -->
+  <line x1="40" y1="150" x2="510" y2="150" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="7 4"/>
+  <text x="44" y="144" font-size="10.5" font-weight="700" fill="#7C3AED">Weekly Open</text>
+
+  <!-- HTF discount array -->
+  <rect x="40" y="330" width="470" height="42" fill="#86EFAC" opacity="0.35"/>
+  <text x="46" y="358" font-size="10.5" font-weight="700" fill="#166534">Weekly FVG / HTF discount array (đích của manipulation tuần)</text>
+
+  <!-- daily candles Mon-Fri -->
+  <!-- Mon: red -->
+  <line x1="100" y1="130" x2="100" y2="235" stroke="#DC2626" stroke-width="2"/>
+  <rect x="86" y="152" width="28" height="70" fill="#DC2626"/>
+  <text x="88" y="120" font-size="10.5" font-weight="700" fill="#6B7280">T2</text>
+  <!-- Tue: red big, wick into array -->
+  <line x1="180" y1="205" x2="180" y2="345" stroke="#DC2626" stroke-width="2"/>
+  <rect x="166" y="215" width="28" height="98" fill="#DC2626"/>
+  <text x="168" y="195" font-size="10.5" font-weight="700" fill="#6B7280">T3</text>
+  <!-- Wed: sweep into array, closes green -->
+  <line x1="260" y1="240" x2="260" y2="368" stroke="#16A34A" stroke-width="2"/>
+  <rect x="246" y="252" width="28" height="66" fill="#16A34A"/>
+  <text x="248" y="230" font-size="10.5" font-weight="700" fill="#6B7280">T4</text>
+  <circle cx="260" cy="368" r="5" fill="#16A34A"/>
+  <text x="278" y="382" font-size="10" font-weight="700" fill="#15803D">low of week tại array + sweep</text>
+  <!-- Thu: green -->
+  <line x1="340" y1="160" x2="340" y2="270" stroke="#16A34A" stroke-width="2"/>
+  <rect x="326" y="172" width="28" height="84" fill="#16A34A"/>
+  <text x="328" y="150" font-size="10.5" font-weight="700" fill="#6B7280">T5</text>
+  <!-- Fri: green -->
+  <line x1="420" y1="98" x2="420" y2="196" stroke="#16A34A" stroke-width="2"/>
+  <rect x="406" y="110" width="28" height="72" fill="#16A34A"/>
+  <text x="408" y="90" font-size="10.5" font-weight="700" fill="#6B7280">T6</text>
+
+  <!-- shorts marker -->
+  <path d="M 352 176 L 372 158" stroke="#DC2626" stroke-width="2" marker-end="url(#arrR)"/>
+  <defs>
+    <marker id="arrR" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#DC2626"/>
+    </marker>
+  </defs>
+  <text x="352" y="142" font-size="10" font-weight="700" fill="#B91C1C">"bias bearish" T5</text>
+  <text x="352" y="155" font-size="9.5" fill="#DC2626">= short vào distribution</text>
+
+  <!-- right rules panel -->
+  <rect x="540" y="72" width="198" height="360" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="554" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Trạm re-check bias</text>
+
+  <text x="554" y="126" font-size="10.5" font-weight="700" fill="#7C3AED">① Weekly draw là gì?</text>
+  <text x="554" y="141" font-size="10" fill="#374151">Viết TRƯỚC tuần: tuần này</text>
+  <text x="554" y="154" font-size="10" fill="#374151">giá đi tìm array/pool nào?</text>
+
+  <text x="554" y="182" font-size="10.5" font-weight="700" fill="#B45309">② Draw đã bị chạm chưa?</text>
+  <text x="554" y="197" font-size="10" fill="#374151">Ngày weekly array bị chạm</text>
+  <text x="554" y="210" font-size="10" fill="#374151">+ sweep + đóng nến đảo =</text>
+  <text x="554" y="223" font-size="10" fill="#374151">daily bias cũ HẾT HẠN,</text>
+  <text x="554" y="236" font-size="10" fill="#374151">dù nó vừa "đúng" 2 ngày.</text>
+
+  <text x="554" y="264" font-size="10.5" font-weight="700" fill="#15803D">③ Bias mới cần bằng chứng</text>
+  <text x="554" y="279" font-size="10" fill="#374151">Không tự động flip: cần</text>
+  <text x="554" y="292" font-size="10" fill="#374151">displacement H4/D1 ngược +</text>
+  <text x="554" y="305" font-size="10" fill="#374151">draw mới (BSL phía trên).</text>
+  <text x="554" y="318" font-size="10" fill="#374151">Chưa đủ → Neutral 1 ngày</text>
+  <text x="554" y="331" font-size="10" fill="#374151">là kết luận chuyên nghiệp.</text>
+
+  <text x="554" y="359" font-size="10.5" font-weight="700" fill="#DC2626">④ Cấm nói "trend tuần này</text>
+  <text x="554" y="373" font-size="10.5" font-weight="700" fill="#DC2626">là bearish" sau khi weekly</text>
+  <text x="554" y="387" font-size="10.5" font-weight="700" fill="#DC2626">low candidate đã in.</text>
+
+  <text x="554" y="415" font-size="9.5" font-weight="700" fill="#6B7280">Journal: weekly_draw_status</text>
+  <text x="554" y="428" font-size="9.5" font-weight="700" fill="#6B7280">(open / hit / reversed)</text>
+</svg>

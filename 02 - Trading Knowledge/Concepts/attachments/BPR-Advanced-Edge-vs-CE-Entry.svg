@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="540" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Entry tại mép (Edge) vs tại CE của BPR — cuộc đánh đổi fill-rate ↔ chất lượng</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Bài học từ lệnh thật EURUSD 21/11/2013: Win +3.18R nhưng bị chấm first_error_step = entry vì vào ở mép trên, fill_depth 0%.</text>
+
+  <!-- LEFT panel: Edge entry -->
+  <rect x="24" y="70" width="348" height="330" rx="8" fill="#FFFFFF" stroke="#FCD34D"/>
+  <text x="40" y="94" font-size="13" font-weight="700" fill="#B45309">Entry tại MÉP (edge-top)</text>
+
+  <rect x="44" y="200" width="308" height="80" fill="#F59E0B" opacity="0.18"/>
+  <line x1="44" y1="240" x2="352" y2="240" stroke="#B45309" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <text x="48" y="214" font-size="9.5" fill="#92400E">mép trên BPR — entry tại đây</text>
+  <text x="48" y="254" font-size="9.5" fill="#92400E">CE (50%) — giá không bao giờ tới</text>
+
+  <path d="M64,330 L100,290 L130,310 L165,240 L185,202 L210,215 L240,160 L270,178 L305,110"
+        fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="185" cy="202" r="6" fill="#B45309"/>
+  <text x="196" y="198" font-size="10" font-weight="700" fill="#B45309">khớp ngay khi chạm mép</text>
+
+  <text x="40" y="316" font-size="10.5" fill="#374151">+ Không bao giờ lỡ lệnh (fill-rate ~100%)</text>
+  <text x="40" y="334" font-size="10.5" fill="#374151">− Stop phải đặt ngoài ĐẦU KIA vùng → xa</text>
+  <text x="40" y="352" font-size="10.5" fill="#374151">− Nhận cả những cú chỉ chạm mép rồi xuyên</text>
+  <text x="40" y="370" font-size="10.5" fill="#374151">− R:R mỗi lệnh thấp hơn hệ thống CE</text>
+
+  <!-- RIGHT panel: CE entry -->
+  <rect x="388" y="70" width="348" height="330" rx="8" fill="#FFFFFF" stroke="#86EFAC"/>
+  <text x="404" y="94" font-size="13" font-weight="700" fill="#15803D">Entry tại CE (50% vùng overlap)</text>
+
+  <rect x="408" y="200" width="308" height="80" fill="#F59E0B" opacity="0.18"/>
+  <line x1="408" y1="240" x2="716" y2="240" stroke="#15803D" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="412" y="214" font-size="9.5" fill="#92400E">mép trên BPR</text>
+  <text x="412" y="254" font-size="9.5" font-weight="700" fill="#15803D">CE — limit đặt tại đây</text>
+
+  <path d="M428,330 L464,290 L494,310 L529,240 L549,215 L565,238 L578,244 L592,222 L612,180 L640,196 L676,120"
+        fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="578" cy="244" r="6" fill="#16A34A"/>
+  <text x="590" y="252" font-size="10" font-weight="700" fill="#15803D">khớp tại CE</text>
+
+  <text x="404" y="316" font-size="10.5" fill="#374151">+ Stop ngắn hơn (chỉ cần ngoài vùng + sweep)</text>
+  <text x="404" y="334" font-size="10.5" fill="#374151">+ Lọc bớt cú chạm nông thiếu cam kết</text>
+  <text x="404" y="352" font-size="10.5" fill="#374151">+ R:R trung bình mỗi lệnh cao hơn</text>
+  <text x="404" y="370" font-size="10.5" fill="#374151">− Chấp nhận lỡ các lệnh bật ngay từ mép</text>
+
+  <!-- bottom -->
+  <rect x="24" y="414" width="712" height="110" rx="8" fill="#FEF3C7"/>
+  <text x="38" y="438" font-size="12.5" font-weight="700" fill="#92400E">Why — vì sao "thắng ở mép" vẫn bị chấm lỗi entry?</text>
+  <text x="38" y="458" font-size="11" fill="#78350F">Một lệnh được chấm theo PROCESS, không theo outcome. Vào ở mép nghĩa là chọn hệ thống "khớp mọi cú chạm": nhận cả các cú chạm nông</text>
+  <text x="38" y="476" font-size="11" fill="#78350F">thiếu cam kết mà hệ CE lọc được, và chịu stop dài hơn trên MỌI lệnh. Một lần thắng +3.18R không chứng minh hệ mép tốt hơn —</text>
+  <text x="38" y="494" font-size="11" fill="#78350F">nó chỉ là một mẫu. Quyết định đúng: chọn MỘT hệ (khuyến nghị CE), log `entry_type: Edge|CE` + `fill_depth_pct`, và chỉ đổi hệ</text>
+  <text x="38" y="512" font-size="11" fill="#78350F">khi 30+ mẫu cho thấy phân phối fill của thị trường bạn trade nghiêng hẳn về mép (một số sản phẩm trending mạnh đúng là như vậy).</text>
+</svg>

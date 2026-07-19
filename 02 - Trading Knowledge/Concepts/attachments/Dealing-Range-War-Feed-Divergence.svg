@@ -1,0 +1,43 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Cùng một ngày, hai bản đồ — Dealing Range trên Futures (NQ) vs CFD (NAS100)</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Overnight session và spread markup làm hai đầu range lệch nhau: equal highs tồn tại trên feed này nhưng không có trên feed kia; 50% EQ lệch theo.</text>
+
+  <!-- LEFT: Futures -->
+  <rect x="24" y="72" width="352" height="350" rx="8" fill="#FFFFFF" stroke="#93C5FD"/>
+  <text x="40" y="96" font-size="13" font-weight="800" fill="#1D4ED8">NQ Futures (ETH, 23/24h) — bản đồ GỐC</text>
+
+  <!-- range box -->
+  <rect x="48" y="130" width="300" height="240" fill="#DBEAFE" opacity="0.3"/>
+  <line x1="48" y1="130" x2="348" y2="130" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="52" y="124" font-size="10.5" font-weight="700" fill="#1D4ED8">Range high 20,485 (tạo trong overnight 03:40)</text>
+  <line x1="48" y1="370" x2="348" y2="370" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="52" y="388" font-size="10.5" font-weight="700" fill="#1D4ED8">Range low 20,120</text>
+  <line x1="48" y1="250" x2="348" y2="250" stroke="#1D4ED8" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="290" y="244" font-size="10.5" font-weight="700" fill="#1D4ED8">EQ 20,302</text>
+
+  <!-- price wiggle -->
+  <polyline points="60,340 92,300 118,318 150,262 178,282 208,224 234,248 262,196 290,222 318,170 340,196"
+            fill="none" stroke="#1F2937" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- RIGHT: CFD -->
+  <rect x="386" y="72" width="352" height="350" rx="8" fill="#FFFFFF" stroke="#FCA5A5"/>
+  <text x="402" y="96" font-size="13" font-weight="800" fill="#B91C1C">CFD NAS100 (giờ broker) — bản chiếu CÓ SAI SỐ</text>
+
+  <!-- range box, shifted -->
+  <rect x="410" y="152" width="300" height="230" fill="#FEE2E2" opacity="0.3"/>
+  <line x1="410" y1="152" x2="710" y2="152" stroke="#B91C1C" stroke-width="2"/>
+  <text x="414" y="146" font-size="10.5" font-weight="700" fill="#B91C1C">Range high 20,451 — THIẾU đỉnh overnight thật</text>
+  <line x1="410" y1="382" x2="710" y2="382" stroke="#B91C1C" stroke-width="2"/>
+  <text x="414" y="400" font-size="10.5" font-weight="700" fill="#B91C1C">Range low 20,128 (spread markup wick)</text>
+  <line x1="410" y1="267" x2="710" y2="267" stroke="#B91C1C" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="648" y="261" font-size="10.5" font-weight="700" fill="#B91C1C">EQ lệch ~13pt</text>
+
+  <!-- price wiggle -->
+  <polyline points="422,352 454,314 480,330 512,278 540,296 570,240 596,262 624,212 652,236 680,188 702,212"
+            fill="none" stroke="#1F2937" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- bottom note -->
+  <rect x="120" y="425" width="520" height="0.1" fill="none"/>
+  <text x="380" y="443" font-size="11" font-weight="700" fill="#374151" text-anchor="middle">Hệ quả: premium/discount, OTE, mức sweep — tất cả lệch theo. Bản đồ vẽ trên futures; backtest và live phải cùng MỘT feed.</text>
+</svg>

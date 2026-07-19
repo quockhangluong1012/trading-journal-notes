@@ -13,7 +13,7 @@ status: developing
 category: Entry Model
 last_reviewed: 2026-06-22
 created: 2026-06-22
-updated: 2026-07-03
+updated: 2026-07-18
 ---
 
 # Optimal Trade Entry (OTE)
@@ -512,3 +512,94 @@ HTF Bearish Bias
 7. **Luôn giữ OTE ở vị trí phụ thuộc [[12 - Daily Bias]], không bao giờ dùng nó để fade xu hướng.** OTE là một execution model — nó cho biết VÙNG GIÁ để vào lệnh theo một hướng đã được xác định trước bởi bias và nhịp displacement, không phải một tín hiệu độc lập để đoán đảo chiều. Long tại vùng OTE giữa một downtrend rõ ràng (khi nhịp kéo fib không hề phá cấu trúc theo hướng bullish) là bắt dao rơi, không phải OTE.
 
 8. **Đặt stop nghiêm ngặt ngoài mốc 100% hoặc ngoài rìa của array confluence, không bao giờ đặt bên trong chính vùng OTE.** Stop bên trong vùng 62–79% gần như chắc chắn bị quét bởi nhiễu giá bình thường trước khi nhịp đi đúng hướng — đó là lỗi "stop quá sát" đã liệt kê trong bảng lỗi thường gặp. Stop hợp lý nằm ngoài đầu nhịp (100%) hoặc ngoài rìa xa của FVG/OB đang tạo confluence cho vùng, tùy điểm nào rộng hơn nhưng vẫn hợp lý với kế hoạch R:R.
+
+---
+
+## 15. Edge Cases thực chiến — những tình huống chỉ lộ ra sau nhiều backtest
+
+> [!info] Trước hết: WHY — vì sao vùng 62–79% hoạt động (khi nó hoạt động)?
+> Đừng tin con số Fibonacci vì nó "thần kỳ". Có ba cơ chế trần tục hơn nhiều đứng sau vùng OTE, và hiểu chúng sẽ giải thích được mọi edge case bên dưới:
+> 1. **Trung bình giá của vị thế lớn:** một desk xây vị thế Long quanh đáy leg không thể khớp hết ở một điểm — họ mua rải từ điểm sweep lên. Giá vốn trung bình của họ nằm ở **phần sâu của leg**, và retrace về vùng đó là nơi họ *bồi thêm* thay vì bỏ chạy. 62–79% xấp xỉ vùng giá vốn đó — đó là lý do có "người đỡ" ở đây chứ không phải ở 38%.
+> 2. **Hình học của stop:** retrace 62–79% đưa giá đến **rất gần đầu nhịp (100%)** — đủ gần để stop đặt ngoài 100% trở nên NHỎ so với target, tạo bất đối xứng R:R. Ở 50%, cùng target nhưng stop xa gấp rưỡi. OTE "tối ưu" theo nghĩa hình học trước khi theo nghĩa xác suất.
+> 3. **Kỹ thuật gom inducement:** retrace sâu quét sạch stop của những người vào sớm ở 38–50% (họ Long nông, stop dưới swing nhỏ) — chính cú quét đó cung cấp thanh khoản cuối cùng trước khi leg tiếp tục. Vùng OTE thường là nơi cú quét nội bộ này KẾT THÚC.
+>
+> Trung thực trí tuệ: 62/70.5/79 là các con số **discretionary** của ICT, không phải hằng số vật lý. Cơ chế 1–3 là thật; con số chính xác thì phải để backtest của chính mình phân xử (mục "61.8 vs 70.5 vs 79" phía trên).
+
+### 15.1 Đáy nhịp là một wick sweep dài — neo 100% vào wick hay vào body?
+
+Đây là câu hỏi thực chiến xuất hiện ở **gần như mọi setup 2022 Model**, vì nhịp impulse chuẩn luôn bắt đầu bằng một cú sweep — tức là cây nến khởi đầu leg gần như luôn có wick dài. Neo 100% vào đáy wick hay đáy body cho ra hai vùng OTE lệch nhau, và wick càng dài thì lệch càng lớn.
+
+![[OTE-Advanced-Anchor-Wick-vs-Body.svg|720]]
+
+**Why — cả hai cách neo đều có logic riêng:**
+- **Neo wick:** wick sweep là nơi lệnh thật ĐÃ khớp (stop bị quét = có giao dịch tại đó, xem [[28 - Rejection Block]]). Đáy wick là extreme thật của leg, và stop của bạn kiểu gì cũng phải nằm ngoài nó. Neo wick giữ cho thang fib và stop nhất quán trên cùng một khung tham chiếu.
+- **Neo body:** body là vùng đấu giá được *chấp nhận*; wick sweep là sự kiện chớp nhoáng một lần. Một wick dài bất thường (news, thin liquidity) kéo cả thang fib trượt sâu xuống theo một sự kiện không lặp lại — vùng OTE khi đó bị "neo" vào nhiễu.
+
+**Cách xử lý hệ thống (loại bỏ độ tùy tiện thay vì tranh cãi):**
+1. Vẽ **cả hai** thang fib. Vùng entry hợp lệ = **phần giao** của hai vùng 62–79% ("vùng đồng thuận").
+2. Stop **luôn** ngoài đáy wick, bất kể neo kiểu nào — vì thanh khoản thật đã giao dịch tới đó.
+3. Wick càng dài so với tổng leg (>1/3), vùng đồng thuận càng hẹp → bắt buộc có FVG/OB confluence xác nhận, nếu không thì bỏ.
+4. Log `ote_anchor: wick | body | band` — sau 30 mẫu, dữ liệu sẽ cho biết thị trường bạn trade tôn trọng cách neo nào hơn. Đừng để mỗi lệnh chọn một kiểu theo cảm hứng: đó là curve-fitting thủ công từng ngày.
+
+### 15.2 Runaway trend không bao giờ về OTE — thông tin, không phải thiệt thòi
+
+Trong trend mạnh (NQ trong NY AM có news xuôi chiều), giá thường chỉ retrace 25–40% rồi đi tiếp — vùng OTE kéo xong **không bao giờ được chạm**, hết lần này đến lần khác. Cảm giác "hệ thống bắt mình đứng ngoài đúng những ngày chạy đẹp nhất" là có thật, và nó đẻ ra hai lỗi ngược nhau: nhảy vào 38–50% "kẻo lỡ", hoặc ôm thang fib cũ chờ vô vọng.
+
+![[OTE-Advanced-Runaway-Reanchor.svg|720]]
+
+**Why — vì sao trend mạnh không về OTE, và vì sao điều đó là dữ liệu quý:**
+Retrace sâu tồn tại để position builders gom đủ hàng và quét inducement. Nhưng khi dòng lệnh một chiều đủ mạnh (real money + momentum cùng phía), desk không CẦN chờ giá rẻ — nỗi sợ hụt vị thế lớn hơn nỗi tiếc vài tick, họ mua ngay ở retrace nông và chấp nhận trung bình giá cao. **Việc giá liên tục không về OTE chính là một chỉ báo sức mạnh trend** — thông tin này đáng giá hơn lệnh bạn "lỡ": nó bảo bạn rằng mọi setup NGƯỢC trend hôm đó đều là tự sát, và setup THUẬN trend đáng được nới target.
+
+**Cách xử lý hệ thống:**
+- **Không bao giờ hạ chuẩn xuống 38–50%.** Vào nông không phải "phiên bản linh hoạt của OTE" — nó là một hệ thống khác với stop khác, R:R khác, mà bạn chưa backtest. FOMO mặc đồng phục Fibonacci vẫn là FOMO ([[06 - Mistake Database/04 - Mistake - FOMO Entry|Mistake 04]]).
+- **Re-anchor:** mỗi BOS mới sinh một leg mới → kéo fib mới, OTE mới gần giá hơn, narrative còn nguyên. Trend càng mạnh càng nhiều leg — cơ hội không mất đi, nó chỉ dời lên. Thang fib cũ **xóa ngay** sau BOS mới (đúng logic [[37 - Re-mapping Dealing Range sau Displacement]]: vùng của range cũ không còn ai bảo vệ).
+- Kỷ luật đo lường: đếm số lần "OTE không được chạm" mỗi tuần trong backtest. Nếu >60% setup trên một sản phẩm không bao giờ về OTE, đó là bằng chứng thống kê để xây thêm một entry model tiếp diễn riêng (ví dụ [[35 - Aggressive Displacement Entry]]) — chứ không phải để phá chuẩn của model này.
+
+### 15.3 Giá chạm OTE ngoài kill zone — cùng một mức, khác giờ, khác xác suất
+
+Kịch bản lặp lại rất nhiều trong backtest EURUSD: displacement NY AM tạo leg đẹp, nhưng giá chỉ **bò về vùng OTE lúc 3–4h sáng giờ New York** (phiên Á). Chạm mức, đúng vùng, đúng confluence — rồi lình xình xuyên qua như không có gì.
+
+**Why:** phản ứng tại OTE cần **người thực thi** — desk đã xây vị thế ở leg gốc phải đang hoạt động để bồi thêm khi giá về giá vốn của họ. Thuật toán delivery của các tổ chức lớn tập trung quanh session opens và [[40 - Macro Times]]. Giá trôi vào OTE trong phiên Á giống như khách đến cửa hàng lúc 3h sáng: mức giá đúng, nhưng không có ai đứng quầy. Tệ hơn, cú "thẩm thấu" chậm qua vùng trong giờ vắng sẽ khớp dần hết lệnh chờ — đến khi kill zone mở, vùng đã rỗng.
+
+**Cách xử lý:**
+- OTE chạm lần đầu **trong kill zone** (London Open, NY AM) → được phép dùng limit tại vùng đồng thuận như bình thường.
+- OTE chạm **ngoài kill zone** → rút limit, hạ cấp setup; chỉ vào lại nếu kill zone kế tiếp cho MSS/displacement LTF mới NGAY tại vùng (tức là có bằng chứng "người đứng quầy" đã quay lại).
+- Log `ote_touch_in_kz: Yes/No` — trường này gần như chắc chắn sẽ chia đôi win rate của cùng một setup trên dữ liệu đủ lớn.
+
+---
+
+## 16. Case Study — NQ1 Long trong NY AM: chạy đủ chuỗi với vùng đồng thuận wick/body (ví dụ minh họa)
+
+> [!example] Tình huống minh họa với số liệu cụ thể
+> Đây là **ví dụ giáo dục** tổng hợp từ các cơ chế ở mục 15 (không phải trade thật trong journal — xem ghi chú dữ liệu vault ở cuối). Mọi con số được chọn để có thể kiểm tra lại từng phép tính.
+
+**Bối cảnh (9:30–10:30 NY):**
+- HTF bias Bullish (D1 vừa đóng trên NWOG, draw là BSL tuần tại **21,556**).
+- 9:42 — giá quét SSL phiên Á tại 21,408: nến M5 wick xuống **21,400**, body low **21,412** (wick sweep 12 điểm — không quá dài so với leg).
+- 9:47–9:55 — displacement tăng phá swing high 21,468 (**MSS bullish**), để lại FVG M5 **21,428–21,444**, leg đạt đỉnh **21,508**.
+
+**Bước 1 — hai thang fib (edge case 15.1):**
+
+| Mức | Neo WICK (21,400 → 21,508, range 108) | Neo BODY (21,412 → 21,508, range 96) |
+|---|---|---|
+| 62% | 21,441 | 21,448 |
+| 70.5% | 21,432 | 21,440 |
+| 79% | 21,423 | 21,432 |
+
+→ **Vùng đồng thuận** (giao của hai dải 62–79%): **21,432–21,441**.
+
+**Bước 2 — confluence:** FVG 21,428–21,444 chồng gần trọn vùng đồng thuận; CE của FVG = **21,436** nằm chính giữa vùng. Ba lớp bằng chứng độc lập (fib wick, fib body, FVG) cùng chỉ về một dải 9 điểm — đây là trạng thái `ce_ote_overlap: Yes` trong template backtest.
+
+**Bước 3 — thực thi:**
+- Limit **21,436** (CE của FVG, trong vùng đồng thuận). Giá retrace về 21,433 lúc 10:12 — **trong NY AM kill zone** (thỏa 15.3) — khớp lệnh.
+- Stop **21,396** — ngoài đáy wick 21,400 (nguyên tắc "stop luôn ngoài wick" của 15.1), risk 40 điểm.
+- Target 1: mở rộng −0.27 ≈ **21,537** (+2.5R). Target 2: BSL **21,556** (+3.0R).
+- Wick lúc 10:14 chọc xuống 21,425 (xuyên 79% neo body, còn trong 62–79% neo wick) rồi **đóng nến tại 21,438** — theo bảng CLOSE vs WICK ở mục 5: overshoot bằng wick, nhịp còn sống, giữ lệnh. Giá sau đó chạy một mạch, chốt 21,537 và 21,556.
+
+**Why — điểm đáng học không phải là lệnh thắng:**
+1. **Mọi quyết định đều được đưa ra TRƯỚC, bằng quy tắc:** vùng đồng thuận xử lý tranh cãi wick/body; quy tắc CLOSE vs WICK xử lý cú chọc 21,425 (nếu không có quy tắc này, 90% trader thoát non đúng đáy retrace); kill zone filter xác nhận thời điểm chạm. Không có quyết định nào cần "cảm giác".
+2. **R:R 2.5–3.0 được tạo bởi cấu trúc, không bởi dự đoán:** stop 40 điểm chỉ khả thi vì entry nằm sâu (cách đỉnh leg 72 điểm nhưng cách đáy wick chỉ 36 điểm). Vào ở 50% (21,454) cùng stop → risk 58 điểm, R:R tụt còn ~1.7 với cùng target — đây là cơ chế hình học số 2 trong phần Why đầu mục 15, hiện ra bằng số cụ thể.
+3. **Nếu giá KHÔNG về 21,441 mà chạy thẳng từ 38%?** Không entry, không tiếc — ghi nhận "runaway, chờ BOS kế tiếp để re-anchor" (15.2). Một hệ thống chỉ tốt khi kịch bản không-có-lệnh cũng được định nghĩa sẵn.
+
+> [!warning] Ghi chú dữ liệu vault — lỗ hổng cần lấp
+> Trong các mẫu backtest hiện có, trường `poi_in_ote` và `ce_ote_overlap` gần như toàn **"No"** — nghĩa là **OTE chưa thực sự được kiểm chứng trong mẫu của Khang**; các note lý thuyết (kể cả case study này) đang đi trước dữ liệu. Việc cần làm: (1) với mỗi backtest mới, kéo fib trên nhịp MSS và điền trung thực `poi_in_ote`/`ce_ote_overlap`/`rr_if_ote` kể cả khi không entry theo OTE; (2) sau 30 mẫu, so R trung bình nhóm `ce_ote_overlap: Yes` vs `No`. Nếu chênh lệch không xuất hiện — chấp nhận kết luận đó. OTE phải tự chứng minh mình trong dữ liệu của bạn, giống mọi khái niệm ICT khác.

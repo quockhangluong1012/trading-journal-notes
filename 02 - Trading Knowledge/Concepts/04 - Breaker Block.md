@@ -25,7 +25,7 @@ models:
 importance: 5
 last_reviewed: 2026-07-08
 created: 2026-06-22
-updated: 2026-07-08
+updated: 2026-07-18
 common_mistakes:
   - "[[Mistake - Confuse OB with Breaker Block]]"
   - "[[Mistake - Breaker Without Sweep]]"
@@ -504,3 +504,79 @@ HTF Bias chuyển Bearish
 6. **Đọc một Failed Breaker như tín hiệu tiếp diễn, không cố "gồng".** Ranh giới cứng là acceptance: một nến đóng ngược xuyên qua vùng breaker + một nến giữ bên kia = breaker fail → thoát, và cảnh giác thị trường muốn tiếp diễn hướng cũ. Trước ranh giới đó, retrace sâu vào vùng là bình thường; sau ranh giới đó, đừng giữ vì hy vọng.
 
 7. **Backtest breaker theo tổ hợp điều kiện, không theo tổng thể.** Đừng hỏi "breaker win rate bao nhiêu?" — hỏi "breaker + sweep Tier 1 + trùng FVG + đúng premium/discount có win rate bao nhiêu so với breaker thiếu từng điều kiện?". 20–30 mẫu mỗi nhóm đủ thấy chênh lệch ([[04 - Backtesting]]), và đó là cách biến niềm tin thành quy tắc có số liệu.
+
+---
+
+## 15. Edge Cases thực chiến — những tình huống chỉ lộ ra sau nhiều backtest
+
+> [!info] Vì sao mục này tồn tại
+> Định nghĩa "sweep → MSS → đảo cực" là điều kiện CẦN. Mục này xử lý những trường hợp thỏa định nghĩa trên giấy nhưng vẫn fail có hệ thống — vì điều kiện ĐỦ của breaker không nằm ở hình dạng, mà ở việc **có một vị thế thật bị kẹt và bị lật hay không**. Mọi edge case dưới đây đều quy về câu hỏi đó.
+
+### 15.1 "Breaker" sinh ra từ news spike — sweep + MSS trong chân không thanh khoản
+
+Đây là bẫy nguy hiểm nhất vì nó **thỏa mọi tiêu chí trên chart**: có wick quét qua đáy/đỉnh (sweep ✓), có nến đẩy ngược phá cấu trúc (MSS ✓), có vùng OB cũ bị xuyên (đảo cực ✓). Nhưng toàn bộ chuỗi xảy ra trong 1–3 nến M1 quanh giờ tin CPI/NFP/FOMC.
+
+![[Breaker-Advanced-News-Spike-Trap.svg|720]]
+
+**Why — cơ chế gãy ở đâu:**
+Giá trị của breaker đến từ một câu chuyện vị thế cụ thể: một bên xây lệnh tại OB → bị quét thanh khoản → bị displacement lật → **kẹt hàng** → khi giá retest, chính họ thoát hàng + phe mới vào tiếp → vùng được "bảo vệ". Câu chuyện này đòi hỏi **có lệnh thật được xây và có người thật bị kẹt**.
+
+Trong news spike, điều ngược lại xảy ra: market maker rút quote trước tin, spread giãn 3–10 lần, order book gần như trống. "Sweep" khi đó không quét stop của một vị thế tích lũy — nó chỉ là giá trượt qua vùng không ai đứng. "MSS" không phải displacement của lệnh thể chế — nó là cú giật lại khi quote quay về. **Không ai kẹt → không ai phải mua/bán khi retest → vùng "breaker" đó không có chủ.** Backtest chart-only không nhìn thấy spread nên sẽ đếm những mẫu này như breaker hợp lệ — một nguồn nhiễu làm bẩn thống kê nếu không lọc.
+
+**Quy tắc:**
+- Chuỗi sweep → MSS phải trải ra trên **nhiều nến với đấu giá thật** (các nến đóng, có retrace nội bộ). Sweep và MSS nằm gọn trong 1–2 nến M1 quanh news → không tính.
+- Phép thử acceptance 15–30 phút: sau tin, cấu trúc mới phải được **giữ bằng các nến đóng bình thường** (spread đã co lại) thì chuỗi mới được công nhận.
+- Trong backtest, gắn `news_within_3min: Yes/No` cho mọi mẫu breaker; nếu thiếu lịch tin lịch sử, loại các chuỗi mà nến MSS có range >3× ATR(14) M5.
+
+### 15.2 Tuổi thọ của breaker — first retest là tất cả, và breaker "hết hạn" khi draw đã được giao
+
+Hai breaker giống hệt nhau về cấu trúc nhưng khác nhau về **thời điểm và bối cảnh retest** cho kết quả khác hẳn. Có hai đồng hồ chạy ngầm sau lưng mọi breaker:
+
+1. **Đồng hồ mitigation:** lần retest ĐẦU TIÊN có xác suất cao nhất, vì toàn bộ lệnh kẹt + lệnh chờ của phe mới còn nguyên. Mỗi lần chạm sau, một phần lệnh đã khớp/hủy — vùng mỏng dần đúng như OB. Breaker bị test lần 3 trở đi về cơ bản chỉ còn là một level trống.
+2. **Đồng hồ narrative:** breaker sống trong một câu chuyện delivery cụ thể — "cấu trúc đã đổi, giá đang trên đường tới draw X". **Khi draw X đã được giao (pool target đã bị quét), câu chuyện kết thúc** và breaker mất người bảo vệ, dù chưa từng bị retest. Retest một breaker sau khi target của nó đã delivered là trade một cái xác: thuật toán đã sang chu kỳ re-mapping mới (xem [[37 - Re-mapping Dealing Range sau Displacement]]).
+
+**Why:** người "bảo vệ" breaker là phe vừa lật cấu trúc — họ bảo vệ nó **vì họ còn vị thế hướng về draw**. Draw đạt → họ chốt → không còn ai có động cơ mua/bán tại vùng đó. Vùng giá không có chủ thì không có phản ứng; phản ứng chưa bao giờ đến từ hình vẽ.
+
+**Quy tắc:**
+- Ưu tiên breaker được retest **trong cùng session hoặc session kế tiếp**, khi narrative còn nóng và lý tưởng là trong kill zone.
+- Trước khi đặt limit tại breaker, hỏi: **"target của nhịp MSS này đã bị lấy chưa?"** Nếu rồi → xóa breaker khỏi watchlist bất kể nó "còn tươi".
+- Log `breaker_retest_delay` (cùng session / next session / 2+ ngày) và `target_delivered_before_retest: Yes/No` — nhóm thứ hai gần như chắc chắn kéo tụt expectancy.
+
+### 15.3 V-reversal choppy để lại nhiều "breaker" — chọn vùng nào?
+
+Một cú đảo chiều thật hiếm khi sạch như sách: quanh đáy/đỉnh V thường có 2–3 cụm nến ngược hướng bị xuyên, tức 2–3 ứng viên breaker chồng chéo. Vào cả ba là tự pha loãng edge; chọn bừa là đánh xổ số.
+
+**Thứ tự ưu tiên (từ cơ chế, không từ thẩm mỹ):**
+1. **Cụm nến gắn trực tiếp với swing bị sweep** — OB cuối cùng NGAY TRƯỚC nhịp displacement tạo MSS. Đây là nơi vị thế ngược hướng cuối cùng và lớn nhất bị kẹt (họ vào đúng đỉnh/đáy tin rằng sweep là breakout). Lượng "hàng kẹt" tại đây dày nhất → phản ứng retest mạnh nhất.
+2. **Cụm trùng FVG của nhịp MSS** (trạng thái Unicorn — xem case study dưới).
+3. Cụm nằm đúng premium/discount của dealing range MỚI sau re-mapping.
+4. Các cụm còn lại: coi là nhiễu. Đặc biệt cụm nằm gần equilibrium của range mới — bỏ.
+
+Nếu vùng (1) và (2) không trùng nhau: xử lý như hai POI theo thứ tự giá chạm (FVG thường trước, breaker sâu hơn sau) — đúng nguyên tắc "đừng gộp thành một vùng to" ở mục Nâng cao phía trên. Nếu chúng TRÙNG nhau, đó là setup ưu tiên cao nhất của cả họ breaker.
+
+---
+
+## 16. Case Study — EURUSD Short 03/05/2021: Unicorn (Breaker ⊕ FVG) chạy đủ chuỗi 7 bước, +3.075R
+
+> [!example] Nguồn: backtest thật trong vault
+> Lệnh gốc: [[04 - Backtesting/2026-07-10/01 - Win - EURUSD - 2021-05-03- Short|Win — EURUSD 03/05/2021 Short (backtest 10/07/2026)]] · Breaker 1.20750–1.20616 ⊕ FVG 1.20688–1.20430 → Unicorn 1.20680–1.20616, CE 1.20648 · NY AM · entry 1.20650 · SL 1.20764 · TP 1.20408 · **+3.075R** · `chained_fully: Yes`, `first_error_step: none`.
+
+![[Breaker-Case-Study-EURUSD-20210503.svg|720]]
+
+**Chuỗi reasoning tái dựng (từng bước, kèm Why):**
+
+1. **Bias & draw:** HTF bearish, draw là SSL external phía dưới (`step1`, `step2` ✓). Mọi thứ sau đây chỉ có nghĩa vì hai bước này đứng trước — cùng cấu trúc breaker này trong bias ngược lại là một lệnh khác hoàn toàn.
+2. **Sweep (③):** giá đẩy lên quét **BSL external** (High2 > High1) — pool loại Tier A theo bảng phân tầng mục Nâng cao. *Why quan trọng:* sweep external nghĩa là buy stops của vị thế short cũ + breakout buyers đều đã khớp — một lượng lớn người mua vừa nhận hàng ở đỉnh. Đây chính là đám đông sẽ bị kẹt.
+3. **Displacement + MSS (④):** nhịp giảm mạnh phá Low1, tự để lại FVG 1.20688–1.20430. Cụm nến tăng cuối trước nhịp giảm (OB bullish 1.20750–1.20616) chính thức fail → đảo cực thành **bearish breaker**. *Why:* người mua ở bước 2 giờ kẹt trên đỉnh; OB bullish nơi họ kỳ vọng được "đỡ giá" đã bị xuyên bằng thân nến — mỗi cú hồi lên là cơ hội thoát hàng của họ, tức là nguồn cung mới.
+4. **POI refine (⑤):** breaker ∩ FVG = vùng chồng 1.20680–1.20616 — chỉ **6.4 pip** thay vì 13.4 pip của breaker trần. Nằm ở Premium của dealing range mới ✓.
+5. **Entry (⑥):** limit tại CE 1.20648 của vùng chồng, khớp 1.20650. Không chase mép gần, không tham mép xa.
+6. **Stop & target (⑦):** SL 1.20764 — ngoài breaker high VÀ dưới điểm sweep, đúng nguyên tắc "invalidation tự nhiên = điểm swept". TP 1.20408 tại SSL. Stop 11.4 pip / target 24.2 pip → R kế hoạch = R thực = 3.075.
+
+**Why — bài học cấu trúc từ lệnh này:**
+- **R:R 3+ của lệnh này được TẠO RA bởi bước refine, không phải bước dự đoán.** Cùng ý tưởng short, nếu entry ở mép xa breaker (1.20750) với cùng SL/TP thì R chỉ còn ~2.4; nếu vào cả vùng breaker rộng với stop tương ứng thì còn thấp hơn nữa. Chất xám nằm ở việc thu hẹp vùng bằng phép giao breaker ∩ FVG rồi lấy CE — trong khi hướng đi của giá là như nhau ở mọi phương án.
+- **Unicorn mạnh vì hai bằng chứng cùng nguồn cộng hưởng:** breaker chứng minh có người kẹt (nguồn cung khi retest), FVG chứng minh nhịp lật đủ mạnh để bỏ lại inefficiency (giá cần quay lại rebalance). Retest vào vùng chồng kích hoạt cả hai lực bán cùng lúc.
+- **Đối chiếu với lệnh thua OB 07/05/2021** (4 ngày sau, xem case study trong [[25 - OB - Order Block]]): cùng cặp tiền, cùng tuần, cùng bias bearish — khác nhau duy nhất ở chỗ lệnh này sweep external + chuỗi đủ 7 bước, lệnh kia sweep internal + gãy từ bước draw. Cặp win/loss này là minh chứng gọn nhất trong vault rằng **edge nằm ở chuỗi, không nằm ở POI**.
+
+**Việc cần làm tiếp (để biến 1 mẫu thành quy tắc):**
+- [ ] Gom tất cả mẫu backtest có `poi_stack` chứa Breaker (hiện mới có lệnh này là Unicorn thuần) — cần thêm 20+ mẫu trước khi kết luận về edge của Unicorn so với breaker trần.
+- [ ] Khi log, tách `breaker_bare` vs `breaker_fvg_confluence (Unicorn)` và ghi `zone_width_pips` — kiểm chứng giả thuyết "vùng chồng hẹp → R trung bình cao hơn".

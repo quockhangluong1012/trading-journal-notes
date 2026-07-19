@@ -1,0 +1,63 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Seek &amp; Destroy — ngày quét CẢ HAI đầu range: range không chết, nó được "sạc lại"</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Wick qua hai external rồi đóng giữa range = cả hai đầu vừa được nạp thanh khoản mới. Re-map lúc này là lỗi; range cũ giờ đáng tin HƠN.</text>
+
+  <!-- chart panel -->
+  <rect x="24" y="72" width="450" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- range box -->
+  <rect x="40" y="140" width="420" height="220" fill="#EDE9FE" opacity="0.35"/>
+  <line x1="40" y1="140" x2="460" y2="140" stroke="#7C3AED" stroke-width="2"/>
+  <text x="44" y="134" font-size="10.5" font-weight="700" fill="#7C3AED">Range high (BSL) — external trên</text>
+  <line x1="40" y1="360" x2="460" y2="360" stroke="#7C3AED" stroke-width="2"/>
+  <text x="44" y="378" font-size="10.5" font-weight="700" fill="#7C3AED">Range low (SSL) — external dưới</text>
+  <line x1="40" y1="250" x2="460" y2="250" stroke="#7C3AED" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="416" y="244" font-size="10.5" font-weight="700" fill="#7C3AED">EQ 50%</text>
+
+  <!-- price path: sweeps top (wick), reverses, sweeps bottom (wick), closes mid -->
+  <polyline points="56,260 84,220 108,238 134,184 158,200 182,150 200,118 216,152 240,196 262,246 286,290 308,330 330,372 348,392 362,352 384,312 406,286 428,266 450,252"
+            fill="none" stroke="#1F2937" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- top sweep marker -->
+  <circle cx="200" cy="118" r="5.5" fill="#DC2626"/>
+  <text x="214" y="112" font-size="10" font-weight="700" fill="#B91C1C">① wick qua BSL — buy stops bị lấy,</text>
+  <text x="214" y="125" font-size="10" fill="#B91C1C">KHÔNG acceptance (đóng lại trong)</text>
+
+  <!-- bottom sweep marker -->
+  <circle cx="348" cy="392" r="5.5" fill="#DC2626"/>
+  <text x="252" y="418" font-size="10" font-weight="700" fill="#B91C1C">② wick qua SSL — sell stops bị lấy, cũng không acceptance</text>
+
+  <!-- close marker -->
+  <circle cx="450" cy="252" r="5.5" fill="#16A34A"/>
+  <text x="368" y="234" font-size="10" font-weight="700" fill="#15803D">③ đóng ngày giữa range</text>
+
+  <!-- right explainer -->
+  <rect x="490" y="72" width="248" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="504" y="98" font-size="12.5" font-weight="700" fill="#1F2937">WHY — vì sao range "sạc lại"?</text>
+
+  <text x="504" y="124" font-size="10.5" font-weight="700" fill="#7C3AED">Stop là hàng tiêu hao</text>
+  <text x="504" y="140" font-size="10" fill="#374151">Mỗi đầu range chỉ "hút giá" khi còn</text>
+  <text x="504" y="153" font-size="10" fill="#374151">stop chưa kích hoạt phía sau nó.</text>
+  <text x="504" y="166" font-size="10" fill="#374151">Sau khi bị quét, pool cạn — nhưng</text>
+  <text x="504" y="179" font-size="10" fill="#374151">chính cú quét lại TẠO pool mới:</text>
+  <text x="504" y="192" font-size="10" fill="#374151">stop của người vào theo hai cú</text>
+  <text x="504" y="205" font-size="10" fill="#374151">breakout giả + stop của position</text>
+  <text x="504" y="218" font-size="10" fill="#374151">mới mở trong ngày.</text>
+
+  <text x="504" y="246" font-size="10.5" font-weight="700" fill="#B45309">Không acceptance = không re-map</text>
+  <text x="504" y="262" font-size="10" fill="#374151">Re-map chỉ khi đóng thân + GIỮ giá</text>
+  <text x="504" y="275" font-size="10" fill="#374151">ngoài external. Hai wick hai phía +</text>
+  <text x="504" y="288" font-size="10" fill="#374151">đóng giữa range nghĩa là thuật toán</text>
+  <text x="504" y="301" font-size="10" fill="#374151">đã kiểm tra CẢ HAI phía và từ chối</text>
+  <text x="504" y="314" font-size="10" fill="#374151">cả hai → biên range được XÁC NHẬN</text>
+  <text x="504" y="327" font-size="10" fill="#374151">bằng bằng chứng đắt giá nhất.</text>
+
+  <text x="504" y="355" font-size="10.5" font-weight="700" fill="#15803D">Hôm sau dùng thế nào?</text>
+  <text x="504" y="371" font-size="10" fill="#374151">• Giữ nguyên range + EQ cũ</text>
+  <text x="504" y="384" font-size="10" fill="#374151">• Hai đầu giờ là external "dày" hơn —</text>
+  <text x="504" y="397" font-size="10" fill="#374151">  break thật qua chúng cần lực lớn,</text>
+  <text x="504" y="410" font-size="10" fill="#374151">  thường đi kèm catalyst (tin/mở tuần)</text>
+  <text x="504" y="423" font-size="10" fill="#374151">• Sweep lần HAI cùng một đầu →</text>
+  <text x="504" y="436" font-size="10" fill="#374151">  tier thấp hơn lần đầu (pool mỏng đi)</text>
+</svg>

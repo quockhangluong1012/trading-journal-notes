@@ -1,0 +1,43 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Tốc độ TIẾP CẬN FVG — biến số không nằm trong checklist nào</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cùng một bullish FVG: giá "rơi nhanh, chạm, bật" là hành vi rebalance; giá "bò từ từ vào" là hành vi hấp thụ — thường xuyên thủng.</text>
+
+  <!-- LEFT: fast tap -->
+  <rect x="24" y="72" width="352" height="352" rx="8" fill="#FFFFFF" stroke="#86EFAC"/>
+  <text x="40" y="96" font-size="13" font-weight="800" fill="#15803D">✓ Fast tap — rơi nhanh, chạm, bật</text>
+
+  <!-- FVG zone -->
+  <rect x="48" y="280" width="300" height="44" fill="#86EFAC" opacity="0.4"/>
+  <line x1="48" y1="302" x2="348" y2="302" stroke="#15803D" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="322" y="297" font-size="10" font-weight="700" fill="#166534">CE</text>
+  <text x="52" y="274" font-size="10" font-weight="700" fill="#166534">Bullish FVG (H1)</text>
+
+  <!-- price: sharp V -->
+  <polyline points="60,120 100,150 130,138 168,200 200,240 226,300 240,258 258,210 280,168 306,140 332,112"
+            fill="none" stroke="#1F2937" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="226" cy="300" r="5" fill="#16A34A"/>
+
+  <text x="40" y="352" font-size="10" fill="#374151">• 2–4 nến dốc, wick chạm CE rồi bật ngay trong 1–2 nến</text>
+  <text x="40" y="368" font-size="10" fill="#374151">• retrace kiểu "lấy hàng": nhanh, không nấn ná trong gap</text>
+  <text x="40" y="384" font-size="10" fill="#374151">• hành vi rebalance chuẩn — entry limit tại CE hoạt động tốt</text>
+  <text x="40" y="404" font-size="10" font-weight="700" fill="#15803D">→ giữ nguyên plan, đây là kịch bản FVG được thiết kế cho</text>
+
+  <!-- RIGHT: slow grind -->
+  <rect x="386" y="72" width="352" height="352" rx="8" fill="#FFFFFF" stroke="#FCA5A5"/>
+  <text x="402" y="96" font-size="13" font-weight="800" fill="#B91C1C">✗ Slow grind — bò từng nến nhỏ vào gap</text>
+
+  <!-- FVG zone -->
+  <rect x="410" y="280" width="300" height="44" fill="#FCA5A5" opacity="0.35"/>
+  <line x1="410" y1="302" x2="710" y2="302" stroke="#B91C1C" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="684" y="297" font-size="10" font-weight="700" fill="#B91C1C">CE</text>
+  <text x="414" y="274" font-size="10" font-weight="700" fill="#B91C1C">Bullish FVG (H1)</text>
+
+  <!-- price: stair-step grind down through -->
+  <polyline points="422,130 446,158 462,150 484,180 500,172 520,204 536,196 556,228 572,222 592,252 606,246 624,276 638,286 654,296 668,308 682,326 700,352"
+            fill="none" stroke="#1F2937" stroke-width="2.2" stroke-linejoin="round"/>
+  <text x="402" y="352" font-size="10" fill="#7F1D1D">• chuỗi nến nhỏ bậc thang, mỗi nến gặm một chút vào gap</text>
+  <text x="402" y="368" font-size="10" fill="#7F1D1D">• lệnh trong gap đang bị HẤP THỤ dần — không ai đẩy giá ra</text>
+  <text x="402" y="384" font-size="10" fill="#7F1D1D">• khi tới CE thì "phòng tuyến" đã bị tiêu gần hết → xuyên thủng</text>
+  <text x="402" y="404" font-size="10" font-weight="700" fill="#B91C1C">→ rút limit order, yêu cầu LTF MSS mới được vào (nếu còn vào)</text>
+</svg>

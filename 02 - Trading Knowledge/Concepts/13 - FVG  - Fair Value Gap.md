@@ -24,7 +24,7 @@ models:
   - "[[01 - ICT 2022 Model|ICT 2022]]"
 last_reviewed: 2026-06-22
 created: 2026-06-22
-updated: 2026-07-03
+updated: 2026-07-18
 common_mistakes:
   - "[[Mistake - Trade Every FVG]]"
   - "[[Mistake - FVG Without Displacement]]"
@@ -412,6 +412,81 @@ ICT nhấn mạnh **thời gian đứng trước giá**: cùng một cấu trúc
 > 6. **Tôn trọng thời gian.** Ưu tiên FVG hình thành/retest trong kill zone và macro window; với NQ chú ý FPFVG sau 9:30 và Silver Bullet 10:00–11:00.
 > 7. **Log để kiểm chứng.** Thêm vào frontmatter trade: `fvg_from_displacement`, `entry_relative_to_ce` (proximal/CE/distal), `fill_depth`, `in_killzone`, `fvg_age` — sau 30+ mẫu mới đủ dữ liệu chỉnh rule.
 > 8. **Một FVG fail là dữ liệu, không phải thất bại.** Khi FVG bị xuyên, việc đầu tiên là đánh dấu IFVG và hỏi "delivery state đã flip chưa?" — thay vì tìm FVG khác cùng hướng để "gỡ".
+
+---
+
+## Tình huống thực chiến (War Stories)
+
+> [!info] Vì sao có mục này
+> Checklist ở mục 8 lọc FVG *xấu*. Mục này dành cho những FVG **pass toàn bộ checklist** nhưng vẫn thất bại — vì các biến mà lý thuyết chuẩn không đặt tên: chất liệu của nến tạo gap, tốc độ giá tiếp cận gap, lịch sử chạm ngoài phiên của mình, và microstructure của chính công cụ đang trade.
+
+### W0. Tầng WHY nền tảng — vì sao giá "phải" quay lại một cái gap?
+
+"Thị trường quay lại lấp imbalance" nghe như tín điều. Ba cơ chế biến nó thành logic — và phân xử luôn gap nào lấp, gap nào không:
+
+1. **Gap = quãng giá KHÔNG AI KỊP GIAO DỊCH — và các lệnh bị bỏ lại vẫn còn sống.** Khi displacement kéo giá qua một vùng quá nhanh, các lệnh limit mua/bán đặt sẵn trong vùng đó **không được khớp** (giá nhảy qua). Các tổ chức đặt lệnh đó không hủy kế hoạch — lệnh của họ vẫn nằm trong sổ, tại đúng các mức giá bên trong gap. Giá quay lại FVG không phải vì "thị trường công bằng", mà vì **về đó còn thanh khoản chờ sẵn để khớp nốt phần việc dang dở** — với bên đã đẩy giá, đó là nơi rẻ nhất để mua thêm/xả bớt tồn kho. FVG là POI vì nó là *kho lệnh chưa dùng*.
+2. **Vì sao CE (50%) hoạt động? Vì nó là điểm cân bằng chi phí của chính bên tạo gap.** Bên khởi xướng displacement có giá vốn trung bình quanh nửa dưới của leg. Cho phép giá retrace *qua* CE của gap do chính mình tạo nghĩa là để vị thế chìm về vùng vốn — mất lợi thế đã trả tiền mua. Vì vậy lớp phòng thủ tự nhiên (mua thêm để chặn) tập trung từ CE trở xuống proximal. CE bị đóng thân xuyên qua đồng nghĩa **bên tạo gap đã bỏ vị thế hoặc bị nuốt** — đó là lý do inversion (IFVG) là bằng chứng đổi delivery chứ không phải pattern trang trí.
+3. **Vì sao có gap KHÔNG lấp (breakaway)? Vì không còn tồn kho nào cần cân.** Nếu displacement khởi phát từ một accumulation đã hoàn tất (mọi lệnh đã gom đủ trước đó), bên khởi xướng **không cần quay lại mua thêm** — không có lệnh dang dở trong gap, không có lý do kinh tế nào để redeliver. Câu hỏi "gap này có lấp không?" vì thế quy về: **"bên tạo gap còn việc chưa xong ở đó không?"** — trả lời bằng bối cảnh (gap thoát khỏi POI sau sweep = breakaway; gap giữa leg đang chạy = kho lệnh còn dùng).
+
+Ba cơ chế này chạy xuyên các W bên dưới: news gap không có kho lệnh nào bên trong (W1); grind vào gap = kho lệnh bị rút dần trước khi giá tới (W2); cú chạm ngoài phiên đã tiêu một phần kho (W3).
+
+### W1. FVG sinh từ news candle — cùng hình dạng, khác hẳn "chất liệu"
+
+![[FVG-War-News-Candle-FVG.svg|720]]
+*Sơ đồ: FVG từ displacement có cấu trúc được respect tại CE; FVG từ spike CPI/NFP là vùng chân không — giá cắt xuyên không phản ứng.*
+
+**Sách giáo khoa nói:** gap 3 nến + nến giữa displacement = FVG hợp lệ.
+
+**Thực tế phát hiện:** nến 8:30 CPI/NFP thỏa mọi tiêu chí hình học — body khổng lồ, phá cấu trúc, gap rộng. Nhưng gap đó in ra trong lúc **spread giãn và quote gần như đóng băng**: không có chuỗi lệnh thuật toán thật sự được khớp tại các mức giá bên trong gap. Nó là *vết nhảy* của giá, không phải *dấu vết* của lệnh. Hệ quả: không ai có position cần phòng thủ tại CE của nó → khi giá quay lại, vùng này bị cắt xuyên với tần suất cao hơn hẳn FVG cùng kích thước sinh trong kill zone không có tin.
+
+**Rule đo được:**
+- FVG sinh trong ±2 phút quanh high-impact news → gắn nhãn riêng, **mặc định không dùng làm POI entry**.
+- Nó chỉ "tốt nghiệp" thành POI khi giá **re-deliver** qua vùng đó lần nữa bằng displacement có cấu trúc (sweep đứng trước, không có tin) — lúc đó vẽ lại theo leg mới.
+- Journal: `fvg_origin` (killzone_algo / news_spike / thin_liquidity). Sau 30 mẫu, so respect-rate tại CE giữa các nhóm — chênh lệch thường đủ lớn để tự nó thành rule.
+
+### W2. Tốc độ tiếp cận FVG — "rơi nhanh chạm bật" vs "bò từ từ vào"
+
+![[FVG-War-Approach-Speed.svg|720]]
+*Sơ đồ: fast tap (rebalance chuẩn — giữ plan) vs slow grind bậc thang (hấp thụ — rút limit, đòi LTF MSS).*
+
+**Sách giáo khoa nói:** chờ giá retrace về CE rồi entry.
+
+**Thực tế phát hiện sau nhiều lần bị xuyên limit:** *cách* giá đi vào FVG dự báo kết quả tốt hơn cả chất lượng của chính FVG. Hai chế độ:
+- **Fast tap:** 2–4 nến dốc rơi thẳng vào gap, chạm CE, bật ra trong 1–2 nến. Đây là hành vi rebalance — thuật toán quay lại "lấy nốt hàng" ở giá tốt rồi tiếp tục. Limit tại CE hoạt động đúng thiết kế.
+- **Slow grind:** chuỗi nến nhỏ bậc thang gặm dần vào gap, mỗi nến một chút, không có nỗ lực đẩy ra. Đây là hành vi **hấp thụ**: lệnh nằm trong gap đang bị tiêu hoá dần bởi một dòng lệnh kiên nhẫn ngược hướng. Khi giá tới CE thì phòng tuyến đã mỏng — xuyên thủng là kết cục phổ biến.
+
+**Rule đo được:**
+- Giá tiếp cận FVG bằng grind (nhiều hơn ~5–6 nến LTF liên tiếp cùng hướng, body nhỏ, không có displacement ngược nào xen giữa) → **rút limit order**, chuyển sang chế độ "chỉ vào nếu có LTF MSS trong gap".
+- Journal: `approach_speed` (fast_tap / grind) — biến này kết hợp với `entry_relative_to_ce` là cặp thống kê giá trị nhất về FVG.
+
+### W3. "First touch" giả — cú chạm thật đã xảy ra ngoài phiên của bạn
+
+**Tình huống:** bạn đánh dấu một H1 FVG chưa mitigate từ hôm qua, sáng nay giá quay về, bạn coi là first touch (đáng tin nhất). Lệnh fail. Mở M5 xem lại: **lúc 3 giờ sáng giờ mình ngủ**, giá đã wick vào gap một lần trong phiên Á thanh khoản mỏng. Trên H1 wick đó gần như vô hình (nằm trong bóng một nến dài), nhưng phần lệnh trong gap đã bị tiêu thụ một phần — cú chạm của bạn thực chất là **lần chạm thứ hai**.
+
+**Rule đo được:**
+- Trước khi tin một "first touch": thả xuống M5/M15 và **tua lại toàn bộ lịch sử giá từ lúc FVG hình thành** — đếm số lần wick đã vào gap, kể cả ngoài phiên. Mất 60 giây, cứu nhiều lệnh.
+- Journal: `touch_count_actual` (đếm trên LTF, không phải trên khung đang trade).
+
+### W4. CE là "luật" trên NQ nhưng chỉ là "gợi ý" trên EURUSD — hiệu chỉnh theo từng công cụ
+
+**Tình huống:** cùng một playbook FVG, backtest trên NQ cho thấy giá respect CE rất sạch (chạm 50%, bật); mang nguyên sang EURUSD thì liên tục "thua oan" — giá thường xuyên fill sâu 75–100% gap, thậm chí wick qua distal vài pip rồi mới đảo. Không phải model sai — **độ sâu fill điển hình là thuộc tính riêng của từng thị trường** (độ dày thanh khoản, tick size, mức độ tham gia của thuật toán CME vs interbank khác nhau).
+
+**Rule đo được:**
+- Không dùng chung một quy tắc entry-depth cho mọi market. Thống kê `fill_depth` **theo từng symbol** trong backtest (NQ riêng, EURUSD riêng, XAUUSD riêng) rồi mới đặt rule entry/stop cho từng cái.
+- Với market hay fill sâu: entry mặc định dời từ CE xuống lower quadrant, hoặc luôn đòi LTF MSS; stop buffer sau distal cũng phải rộng hơn (đặc biệt XAUUSD).
+- Đây là ứng dụng trực tiếp của nguyên tắc trong [[04 - Backtesting]]: dữ liệu của chính mình trên chính market đó là trọng tài, không phải video ICT quay trên ES.
+
+### W5. Limit tại mép FVG không khớp — vì chart của bạn là bid-chart
+
+**Tình huống (FX/CFD):** bạn đặt sell limit tại proximal edge của một bearish FVG trên EURUSD/XAUUSD. Giá "chạm đúng mép" trên chart rồi rơi thẳng — nhưng lệnh không khớp, hoặc khớp trong backtest mà không bao giờ khớp live. Lý do: **chart vẽ giá bid**, trong khi sell limit khớp theo bid nhưng cú chạm bạn thấy có thể chỉ là ask chạm (hoặc ngược lại với buy limit — ask đã chạm mức từ trước khi chart hiển thị). Trên gold spread 20–40 cent, sai số này nuốt trọn những cú "chạm mép rồi bay".
+
+**Rule đo được:**
+- Entry mặc định tại **CE thay vì mép** — vừa cải thiện R:R vừa tạo buffer tự nhiên cho spread.
+- Nếu vẫn muốn mép: cộng/trừ spread trung bình của phiên vào giá limit (buy limit đặt cao hơn mép một spread; sell limit thấp hơn một spread).
+- Backtest phải mô phỏng spread — mọi entry "khớp đúng đỉnh wick chạm mép" cần bị nghi ngờ là phantom fill (cùng họ với bài học W3 bên [[20 - Liquidity Sweep]]).
+
+> [!success] Tổng kết mục War Stories
+> Một FVG không chỉ có *hình dạng* — nó có **chất liệu** (nến gì tạo ra nó — W1), **cách bị tiếp cận** (W2), **lịch sử chạm thật** (W3), **quốc tịch** (market nào — W4) và **cơ chế khớp lệnh** quanh nó (W5). Journal fields: `fvg_origin`, `approach_speed`, `touch_count_actual`, `fill_depth` theo symbol.
 
 ---
 
