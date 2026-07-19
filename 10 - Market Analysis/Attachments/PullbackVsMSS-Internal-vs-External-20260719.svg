@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" viewBox="0 0 900 480" font-family="Segoe UI, Arial, sans-serif">
+<rect x="0" y="0" width="900" height="480" rx="12" fill="#191b1f"/>
+<text x="28" y="32" font-size="16" fill="#e6e8ea" font-weight="bold">Tieu chi (a): Break tai INTERNAL structure vs EXTERNAL (protected) structure</text>
+
+<!-- LEFT panel: internal break -->
+<rect x="28" y="52" width="404" height="400" rx="6" fill="#202329" stroke="#2a2d33"/>
+<text x="46" y="76" font-size="12.5" fill="#40c057" font-weight="bold">A. Internal break = KHONG doi bias</text>
+<polyline points="50,380 90,340 120,300 150,260 175,280 200,265 225,240 250,300 275,280 300,220 330,200 360,180 400,150" fill="none" stroke="#40c057" stroke-width="2.2"/>
+<circle cx="225" cy="240" r="4" fill="#9aa0a6"/>
+<circle cx="250" cy="300" r="4" fill="#fa5252"/>
+<line x1="46" y1="240" x2="414" y2="240" stroke="#9aa0a6" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="270" y="236" font-size="9" fill="#9aa0a6">micro swing (internal, vai ngay)</text>
+<text x="200" y="322" font-size="9.3" fill="#fa5252">Gia phá xuong duoi micro low nay</text>
+<rect x="46" y="356" width="368" height="80" rx="5" fill="#20262b" stroke="#2a2d33"/>
+<text x="56" y="374" font-size="9.8" fill="#e6e8ea">Day chi la 1 dip nho hinh thanh TRONG</text>
+<text x="56" y="388" font-size="9.8" fill="#e6e8ea">chinh nhip day gia len (retracement noi bo).</text>
+<text x="56" y="404" font-size="9.8" fill="#40c057" font-weight="bold">=> Day KHONG phai HL dinh nghia leg lon.</text>
+<text x="56" y="420" font-size="9.8" fill="#40c057" font-weight="bold">Pha no = noise, van la Pullback sau hop le.</text>
+
+<!-- RIGHT panel: external break -->
+<rect x="468" y="52" width="404" height="400" rx="6" fill="#202329" stroke="#2a2d33"/>
+<text x="486" y="76" font-size="12.5" fill="#fa5252" font-weight="bold">B. External break = MSS that (doi bias)</text>
+<polyline points="490,400 520,340 545,300 575,260 605,340 640,220 670,180 700,150 725,170" fill="none" stroke="#40c057" stroke-width="2.2"/>
+<polyline points="725,170 745,230 765,290 785,340 805,380" fill="none" stroke="#fa5252" stroke-width="2.6"/>
+<circle cx="605" cy="340" r="6" fill="#f0a500" stroke="#191b1f" stroke-width="1.5"/>
+<text x="530" y="358" font-size="9.5" fill="#f0a500" font-weight="bold">Protected HL (goc cua leg,</text>
+<text x="530" y="371" font-size="9.5" fill="#f0a500" font-weight="bold">tao ra swing high truoc do)</text>
+<line x1="486" y1="340" x2="854" y2="340" stroke="#f0a500" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="700" y="336" font-size="9" fill="#fa5252">displacement pha THUNG + dong cua duoi</text>
+<rect x="486" y="392" width="368" height="52" rx="5" fill="#20262b" stroke="#2a2d33"/>
+<text x="496" y="408" font-size="9.8" fill="#e6e8ea">Day la HL sinh ra chinh leg tang dang xet.</text>
+<text x="496" y="424" font-size="9.8" fill="#fa5252" font-weight="bold">Pha no + dong cua duoi = MSS that, doi bias.</text>
+
+<!-- bottom note -->
+<rect x="28" y="452" width="844" height="0" opacity="0"/>
+<text x="28" y="466" font-size="10.5" fill="#9aa0a6">Nguyen tac: chi swing dinh nghia CA leg (thuong la diem xuat phat cua impulse) moi co quyen tao MSS that khi bi pha. Micro swing giua duong chi la noise.</text>
+</svg>

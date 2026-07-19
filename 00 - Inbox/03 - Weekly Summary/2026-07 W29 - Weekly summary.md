@@ -41,8 +41,11 @@ Không có bản nào cho W29 trước đây → đây đúng là tuần cần c
 
 - Cấp quyền truy cập toàn bộ vault Trading Journal (hoặc tối thiểu: `00 - Inbox/01 - Daily Tasks`, `00 - Inbox/02 - Daily Summary`, `09 - Goal Tracking`, `CLAUDE.md`) cho phiên Cowork chạy task này.
 - Xác nhận lại đường dẫn lưu chuẩn cho Weekly Summary (`00 - Inbox/03 - Weekly Summary` hay `07 - Reviews/01 - Weekly Summary`).
-- Sau khi cấp quyền, chạy lại task cho tuần **2026-W29 (2026-07-13 → 2026-07-19)** — tại thời điểm viết bản này (2026-07-17, thứ Sáu) tuần vẫn đang diễn ra (5/7 ngày đã qua), nên nếu chạy ngay cũng sẽ là bản "tuần chưa kết thúc", cần nêu rõ số ngày có dữ liệu thực tế như mọi khi.
+- Sau khi cấp quyền, chạy lại task cho tuần **2026-W29 (2026-07-13 → 2026-07-19)**.
+
+> [!info] Xác nhận lại lần chạy 2026-07-19 (Chủ nhật, ngày cuối tuần W29)
+> Phiên chạy tự động ngày hôm nay (2026-07-19) đã kiểm tra lại quyền truy cập và **xác nhận tình trạng không đổi so với bản viết ngày 2026-07-17**: vẫn chỉ có quyền đọc/ghi trong `00 - Inbox/03 - Weekly Summary/`, không truy cập được Daily Tasks, Daily Summary, hay Goal Tracking. Tuần W29 nay đã kết thúc trọn vẹn (7/7 ngày đã qua) nhưng vẫn **0/7 ngày có dữ liệu đọc được** — không phải vì thiếu note, mà vì phiên này không có quyền mở các note đó. Không có nội dung mới nào được thêm vào bản rollup vì không có số liệu mới để tổng hợp.
 
 ---
 
-**Nguồn đã đọc trong phiên này:** `00 - Inbox/03 - Weekly Summary/2026-07 W27 - Weekly summary.md`, `00 - Inbox/03 - Weekly Summary/2026-07 W28 - Weekly summary.md` (chỉ để xác nhận định dạng/quy ước đặt tên). Không đọc được file nào khác do giới hạn quyền truy cập nêu trên.
+**Nguồn đã đọc trong phiên này (2026-07-19):** `00 - Inbox/03 - Weekly Summary/2026-07 W27 - Weekly summary.md`, `00 - Inbox/03 - Weekly Summary/2026-07 W28 - Weekly summary.md`, `00 - Inbox/03 - Weekly Summary/2026-07 W29 - Weekly summary.md` (bản trước, để xác nhận vẫn cùng tình trạng chặn quyền truy cập). Không đọc được file nào khác do giới hạn quyền truy cập nêu trên.
