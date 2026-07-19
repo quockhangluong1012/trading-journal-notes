@@ -1,0 +1,70 @@
+<svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="560" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Neo fib ở đâu khi đáy nhịp là một wick sweep dài? — Wick vs Body vs Vùng đồng thuận</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cùng một nhịp, hai cách neo 100% cho hai vùng OTE lệch nhau. Câu trả lời không phải "chọn phe" mà là dùng phần GIAO của hai vùng.</text>
+
+  <rect x="24" y="70" width="500" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- impulse leg: sweep wick low then rally -->
+  <!-- candle with long wick at bottom -->
+  <line x1="105" y1="420" x2="105" y2="330" stroke="#374151" stroke-width="1.6"/>
+  <rect x="99" y="330" width="12" height="28" fill="#16A34A"/>
+  <text x="40" y="436" font-size="9.5" font-weight="700" fill="#B45309">đáy WICK (điểm sweep)</text>
+  <text x="120" y="356" font-size="9.5" fill="#6B7280">đáy BODY</text>
+  <line x1="44" y1="420" x2="524" y2="420" stroke="#B45309" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="44" y1="352" x2="524" y2="352" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- leg up -->
+  <path d="M105,330 L140,300 L165,318 L200,240 L228,258 L262,160 L290,178 L320,112"
+        fill="none" stroke="#374151" stroke-width="2.4"/>
+  <text x="300" y="100" font-size="10" font-weight="700" fill="#15803D">0% — đỉnh nhịp</text>
+  <line x1="44" y1="112" x2="524" y2="112" stroke="#16A34A" stroke-width="1" stroke-dasharray="5 4"/>
+
+  <!-- OTE zone from wick anchor (deeper) -->
+  <rect x="44" y="300" width="480" height="66" fill="#2563EB" opacity="0.10"/>
+  <text x="48" y="313" font-size="9.5" font-weight="700" fill="#1D4ED8">OTE neo WICK: 62–79% tính từ đáy wick (vùng thấp hơn)</text>
+
+  <!-- OTE zone from body anchor -->
+  <rect x="44" y="272" width="480" height="60" fill="#DC2626" opacity="0.08"/>
+  <text x="48" y="285" font-size="9.5" font-weight="700" fill="#B91C1C">OTE neo BODY: 62–79% tính từ đáy body (vùng cao hơn)</text>
+
+  <!-- consensus band = intersection -->
+  <rect x="44" y="300" width="480" height="32" fill="#F59E0B" opacity="0.30"/>
+  <text x="250" y="321" font-size="10.5" font-weight="700" fill="#92400E">VÙNG ĐỒNG THUẬN = giao của 2 cách neo</text>
+
+  <!-- retrace path into band -->
+  <path d="M320,112 L352,180 L372,166 L398,250 L412,242 L432,312 L448,300 L470,232 L495,170 L516,128"
+        fill="none" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="432" cy="312" r="6" fill="#16A34A"/>
+  <text x="380" y="340" font-size="10" font-weight="700" fill="#15803D">entry trong vùng giao</text>
+
+  <!-- right column -->
+  <rect x="540" y="70" width="196" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="554" y="94" font-size="12.5" font-weight="700" fill="#1F2937">Vì sao mỗi cách neo đều có lý?</text>
+  <text x="554" y="118" font-size="10.5" font-weight="700" fill="#1D4ED8">Neo wick:</text>
+  <text x="554" y="133" font-size="10" fill="#374151">wick là nơi lệnh thật cuối</text>
+  <text x="554" y="147" font-size="10" fill="#374151">cùng được khớp (stop bị quét</text>
+  <text x="554" y="161" font-size="10" fill="#374151">= có giao dịch tại đó). Stop</text>
+  <text x="554" y="175" font-size="10" fill="#374151">đặt ngoài wick mới an toàn.</text>
+  <text x="554" y="201" font-size="10.5" font-weight="700" fill="#B91C1C">Neo body:</text>
+  <text x="554" y="216" font-size="10" fill="#374151">body phản ánh vùng đấu giá</text>
+  <text x="554" y="230" font-size="10" fill="#374151">"được chấp nhận"; wick sweep</text>
+  <text x="554" y="244" font-size="10" fill="#374151">chỉ là sự kiện 1 lần, kéo cả</text>
+  <text x="554" y="258" font-size="10" fill="#374151">thang fib trượt xuống theo nó.</text>
+  <line x1="554" y1="276" x2="722" y2="276" stroke="#E5E7EB"/>
+  <text x="554" y="298" font-size="10.5" font-weight="700" fill="#92400E">Cách xử lý thực dụng:</text>
+  <text x="554" y="316" font-size="10" fill="#78350F">① Vẽ CẢ HAI thang fib.</text>
+  <text x="554" y="334" font-size="10" fill="#78350F">② Entry chỉ trong vùng GIAO</text>
+  <text x="562" y="348" font-size="10" fill="#78350F">(nơi 2 cách neo đồng ý).</text>
+  <text x="554" y="366" font-size="10" fill="#78350F">③ Stop LUÔN ngoài đáy wick</text>
+  <text x="562" y="380" font-size="10" fill="#78350F">— bất kể neo kiểu nào.</text>
+  <text x="554" y="398" font-size="10" fill="#78350F">④ Wick càng dài so với leg,</text>
+  <text x="562" y="412" font-size="10" fill="#78350F">vùng giao càng hẹp → đòi</text>
+  <text x="562" y="426" font-size="10" fill="#78350F">FVG/OB confluence xác nhận.</text>
+
+  <!-- bottom -->
+  <rect x="24" y="464" width="712" height="80" rx="8" fill="#FEF3C7"/>
+  <text x="38" y="488" font-size="12.5" font-weight="700" fill="#92400E">Why — vì sao tranh cãi wick/body chỉ nguy hiểm khi wick DÀI?</text>
+  <text x="38" y="508" font-size="11" fill="#78350F">Với nến sweep wick ngắn, hai cách neo cho vùng OTE gần trùng nhau — chọn kiểu nào cũng được. Wick càng dài (sweep càng sâu), hai thang fib</text>
+  <text x="38" y="526" font-size="11" fill="#78350F">càng tách xa → "OTE" trở thành hàm số của cách vẽ chứ không phải của giá. Vùng giao + confluence là cách loại bỏ độ tùy tiện đó khỏi hệ thống.</text>
+</svg>

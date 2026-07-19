@@ -23,7 +23,7 @@ models:
 importance: 3
 last_reviewed: 2026-06-23
 created: 2026-06-23
-updated: 2026-07-02
+updated: 2026-07-18
 common_mistakes:
   - "[[Mistake - Fake BPR No Overlap]]"
   - "[[Mistake - Trade BPR Against Bias]]"
@@ -499,4 +499,71 @@ HTF Bearish Bias
 6. **Mỗi BPR chỉ "mới" một lần.** Lần test đầu tiên có xác suất phản ứng cao nhất; mỗi lần test sau, thanh khoản hai bên vùng bị ăn mòn dần. Đánh dấu BPR đã test 1 lần bằng màu khác và hạ kỳ vọng; sau 2–3 lần test, xóa khỏi watchlist.
 
 7. **Log riêng hai trường `bpr_overlap_confirmed` và `sweep_before_bpr` cho mọi lệnh gắn tag BPR.** Sau 20–30 mẫu, dữ liệu của chính bạn sẽ cho biết edge nằm ở đâu — thường kết quả sẽ nghiêng hẳn về nhóm "overlap thật + có sweep", và đó là bằng chứng để tin quy tắc thay vì tin trí nhớ.
+
+---
+
+## 15. Edge Cases thực chiến — những tình huống chỉ lộ ra sau nhiều backtest
+
+> [!info] Vì sao mục này tồn tại
+> BPR là khái niệm "định nghĩa bằng số" sạch nhất trong họ PD Array (có phép giao số học rõ ràng), nhưng chính vì thế nó dễ tạo ảo giác chắc chắn. Các edge case dưới đây là nơi phép giao đúng về mặt số học nhưng **sai về mặt cơ chế** — và ngược lại. Sợi chỉ đỏ: BPR có giá trị vì nó ghi lại **hai lần cam kết vốn thật, ngược chiều, tại cùng một dải giá**; khi một trong hai "lần cam kết" đó là giả, con số vẫn giao nhau nhưng edge biến mất.
+
+### 15.1 Nhiều BPR xếp chồng trong một cú V — CORE và inducement
+
+Một V-reversal thật (nhất là trên XAUUSD, NQ) hiếm khi chỉ tạo đúng một cặp FVG. Chop quanh đáy/đỉnh thường sinh **2–3 overlap hợp lệ về số học**, xếp tầng từ điểm sweep lên tới đỉnh nhịp hồi. Backtest đủ nhiều sẽ thấy: giá quay lại thường **xuyên qua các overlap nông** rồi mới phản ứng ở overlap thấp nhất.
+
+![[BPR-Advanced-Stacked-Selection.svg|720]]
+
+**Why:** không phải mọi cặp FVG đều kể cùng một câu chuyện. Cặp FVG "kẹp" trực tiếp điểm sweep được tạo bởi **hai displacement của chính sự kiện đảo chiều** — leg xuống là cú quét (vị thế cũ bị kết liễu), leg lên là cú lật (vị thế mới được xây). Đó là hai lần cam kết vốn lớn, có chủ đích, tại điểm chuyển giao. Các cặp FVG sinh từ chop giữa V chỉ là **dấu vết đấu giá tạm** trong lúc thị trường tìm điểm cân bằng ngắn hạn — không ai xây vị thế chiến lược ở đó, nên không ai bảo vệ. Thêm tầng phản xạ: overlap nông là nơi retail SMC đặt limit sớm nhất (dễ thấy nhất, gần giá nhất) — stop của họ ngay dưới đó lại trở thành nhiên liệu để giá tìm về overlap CORE.
+
+**Quy tắc:**
+- Trong một cú V, chỉ tô đậm **một** BPR: overlap gần điểm sweep nhất, ở đúng discount/premium. Các overlap còn lại đánh dấu mờ như "trạm inducement".
+- Nếu giá phản ứng ngay ở overlap nông và chạy mất: chấp nhận lỡ, như mọi trường hợp chase khác.
+- Log `bpr_position_in_v: core | mid | shallow` — đối chiếu win rate sau 20–30 mẫu.
+
+### 15.2 Entry tại mép vs tại CE — và vì sao một lệnh Win vẫn bị chấm lỗi entry
+
+Vault đã có một mẫu thật minh họa hoàn hảo cho đánh đổi này: [[04 - Backtesting/2026-07-11/01 - Win - EURUSD - 2013-11-21- Long|Win — EURUSD 21/11/2013 Long]] — BPR M5 (FVG bullish chồng FVG bearish) nằm trong OB H1 1.34083–1.33909, **thắng +3.18R** nhưng bị chấm `step6_entry_ok: No`, `first_error_step: entry` vì vào ở **mép trên** vùng (`entry_precision: Edge-top`, `fill_depth_pct: 0`).
+
+![[BPR-Advanced-Edge-vs-CE-Entry.svg|720]]
+
+**Why — đây là quyết định hệ thống, không phải quyết định từng lệnh:**
+- Vào ở mép = chọn hệ "khớp mọi cú chạm": fill-rate ~100%, nhưng nhận cả những cú chạm nông thiếu cam kết mà hệ CE lọc được, và stop phải nằm ngoài đầu kia vùng → dài hơn trên **mọi** lệnh. Vào tại CE = chọn hệ "chỉ khớp khi giá cam kết đi vào nửa vùng": bỏ lỡ một phần lệnh, đổi lấy stop ngắn và mẫu chất lượng hơn.
+- Cái sai của lệnh 21/11/2013 không phải là "vào mép thì thua" — nó thắng. Cái sai là **vào mép trong khi plan ghi CE**, tức là hai hệ thống bị trộn lẫn tùy hứng. Một journal trộn lẫn hai hệ sẽ không bao giờ trả lời được "hệ nào tốt hơn cho tôi", vì mỗi mẫu thuộc một phân phối khác nhau.
+- Có một lý do cơ chế khiến CE là mặc định đúng cho BPR nói riêng: vùng BPR đã là vùng "hai chiều" — mép của nó bị test nhiều hơn hẳn mép FVG đơn (cả hai phe đều có tham chiếu ở đó). Phản ứng có ý nghĩa nhất về mặt thống kê dồn về CE của phần overlap, nơi cả hai imbalance cùng đạt trung điểm.
+
+**Quy tắc:** chọn MỘT hệ entry cho BPR (mặc định: CE), ghi vào playbook, và mọi lệnh lệch hệ đều bị chấm lỗi entry **bất kể kết quả**. Trường `entry_type` + `fill_depth_pct` trong template backtest hiện tại đã đủ để sau 30 mẫu quyết định bằng số liệu xem thị trường bạn trade có nghiêng về hệ mép hay không.
+
+### 15.3 BPR sinh từ gap và news — khi một trong hai FVG là "chân không" chứ không phải cam kết
+
+Hai tình huống mà phép giao số học cho ra BPR nhưng cơ chế phía sau đã gãy một nửa:
+
+1. **FVG sinh từ opening gap (NQ/NDX cuối tuần, [[23 - New Day Opening Gap|NDOG]]/[[24 - New Week Opening Gap|NWOG]]):** gap mở cửa tạo "FVG" trên chart nhưng không có displacement nào tạo ra nó — không ai *đánh* giá qua vùng đó, giá chỉ *mở* ở nơi khác. Một overlap mà một nửa là gap kiểu này thiếu một trong hai lần cam kết vốn. Nó vẫn có thể hoạt động như mức tham chiếu rebalance (logic [[34 - Vacuum Block]]/NWOG), nhưng **không nên kỳ vọng nó phản ứng như BPR chuẩn** — người bảo vệ chỉ có ở một phía. Hạ cấp, đòi confluence bổ sung.
+2. **Một trong hai leg là nến news:** như đã phân tích ở note [[04 - Breaker Block]] mục 15.1 — body lớn trong news phản ánh thanh khoản *rút đi*, không phải lệnh lớn *đánh vào*. BPR mà leg thứ hai là spike CPI/NFP có "phía phủ nhận" không được xây bằng vị thế thật → khi retest, phía đó không có ai đỡ. Chờ acceptance sau tin rồi mới công nhận overlap.
+3. **Khác data feed, khác BPR:** trên cùng một thời điểm, chart futures (NQ) và chart CFD (NAS100) có thể cho FVG lệch nhau vài tick vì giờ đóng phiên/gap khác nhau — một overlap "mỏng vừa đủ" trên feed này có thể **không tồn tại** trên feed kia. Với overlap mỏng (cỡ ~1× spread như quy tắc mục 3), đây không còn là chi tiết vặt: hãy backtest và trade trên **cùng một feed**, và coi BPR mỏng chỉ hợp lệ khi nó sống sót trên cả hai cách vẽ.
+
+**Why chung cho cả ba:** BPR = hai lần cam kết vốn ngược chiều. Gap không phải cam kết (không ai đánh); news spike không phải cam kết (không ai kịp đánh); còn khác feed nghĩa là "cam kết" bạn nhìn thấy có thể chỉ là artifact của cách vẽ nến. Phép giao số học là điều kiện cần — nguồn gốc displacement thật của cả hai FVG mới là điều kiện đủ.
+
+---
+
+## 16. Case Study — EURUSD Short 11/05/2005: BPR chuẩn sách giáo khoa trong Premium, +2.85R
+
+> [!example] Nguồn: backtest thật trong vault
+> Lệnh gốc: [[04 - Backtesting/2026-07-09/01 - Win - EURUSD - 2005-05-11- Short|Win — EURUSD 11/05/2005 Short (backtest 09/07/2026)]] · `poi_stack: FVG+FVG (BPR)` — Bullish FVG 04/05 bị Bearish FVG 06/05 xuyên qua · NY AM · Premium · entry 1.28878 (CE) · SL 1.29117 · TP 1.28123 · **+2.85R** (kế hoạch 3R, chốt sớm nhẹ) · `chained_fully: Yes`.
+
+**Chuỗi reasoning tái dựng (từng bước, kèm Why):**
+
+1. **Bias & location:** HTF bearish; giá hồi lên vùng Premium của dealing range. Điều kiện tiên quyết đứng trước mọi phép giao FVG — cùng overlap này ở discount sẽ là một câu chuyện hoàn toàn khác (có khi là bullish BPR).
+2. **Trình tự hai FVG:** một **bullish FVG hình thành ngày 04/05** (leg tăng — phe mua cam kết vốn, để lại inefficiency); hai phiên sau, **bearish FVG của leg giảm 06/05 xuyên qua đúng dải giá đó**. Đây chính là vòng đời FVG → iFVG → BPR ở mục 2: phe mua cũ đã bị phủ nhận *bằng một imbalance ngược*, không chỉ bằng một cú đóng nến xuyên.
+3. **Why tại điểm này:** ai là người bán khi giá quay LÊN retest vùng overlap? (a) phe mua 04/05 còn kẹt — hồi lên là cơ hội thoát hàng của họ; (b) phe bán 06/05 muốn bồi thêm vị thế đúng giá vốn; (c) thuật toán rebalance phần inefficiency còn lại của SIBI. Ba nguồn cung độc lập dồn về một dải giá — đó là nội dung thật của chữ "confluence kép".
+4. **Sweep (③):** external sweep đã xảy ra trước khi giá quay về vùng (`sweep_type: External`, `step3 ✓`) — đủ nhiên liệu cho một nhịp về external liquidity đối diện.
+5. **Entry (⑥):** limit tại **CE của overlap** — khớp 1.28878, đúng hệ CE (đối chiếu edge case 15.2: đây là lệnh làm ĐÚNG những gì lệnh 21/11/2013 làm sai, dù lệnh kia cũng thắng).
+6. **Stop & target (⑦):** SL 1.29117 ngoài đỉnh vùng/điểm sweep; TP 1.28123 về phía SSL. R thực 2.85 — chênh nhẹ so với 3R kế hoạch, một khoản "phí" chấp nhận được, đáng ghi lại để theo dõi thói quen chốt sớm về lâu dài.
+
+**Bài học cấu trúc:**
+- Lệnh này là mẫu **Reversal BPR** đúng nghĩa của bảng biến thể mục 2: overlap hình thành quanh điểm đảo sau sweep, ở đúng phía range, trong kill zone NY AM — mọi yếu tố "nâng cấp" đều có mặt và **không yếu tố nào là con số Fibonacci hay hình vẽ**; tất cả đều là câu hỏi "ai đã cam kết vốn ở đâu, ai đang kẹt".
+- Ghi chú gốc của lệnh đã đề xuất bổ sung "BPR" vào từ vựng chuẩn `poi_type` (hiện phải ép vào `FVG` + `poi_stack`). Đề xuất này nên làm sớm: hiện vault đã có **hai mẫu BPR thắng** (11/05/2005, 21/11/2013) nhưng chúng vô hình trong thống kê `poi_type` — đây chính xác là kiểu dữ liệu bị mất mà sau 50 mẫu sẽ không thể tái dựng.
+
+**Việc cần làm tiếp:**
+- [ ] Thêm `BPR` vào từ vựng chuẩn `poi_type` của template backtest (đã đề xuất trong note lệnh 11/05/2005).
+- [ ] Re-tag hai mẫu BPR hiện có; từ nay log thêm `bpr_position_in_v` và `entry_type` để nuôi hai edge case 15.1–15.2.
 
