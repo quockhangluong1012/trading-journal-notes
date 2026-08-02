@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Case Study — Win: NQ1 sweep BSL NY AM → Sell tại FVG (+3.0R)</text>
+
+<line x1="48" y1="180" x2="910" y2="180" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="52" y="174" font-size="12" fill="#eab308">BSL Á/Âu</text>
+
+<!-- up into sweep during NY AM -->
+<rect x="90" y="280" width="12" height="55" fill="#22c55e"/><line x1="96" y1="270" x2="96" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="120" y="250" width="12" height="60" fill="#22c55e"/><line x1="126" y1="238" x2="126" y2="318" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="150" y="215" width="12" height="60" fill="#22c55e"/><line x1="156" y1="200" x2="156" y2="280" stroke="#9ca3af" stroke-width="1.5"/>
+<defs><marker id="arrOMMSM9" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,6 L6,3 L0,0 Z" fill="#f97316"/></marker></defs>
+<path d="M230,130 C200,145 180,165 170,180" fill="none" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrOMMSM9)"/>
+<text x="185" y="115" font-size="11" fill="#f97316">Sweep 10:20 NY AM</text>
+
+<!-- MSS + displacement + FVG down -->
+<line x1="150" y1="200" x2="330" y2="200" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="335" y="215" font-size="11" fill="#a855f7">MSS 10:38</text>
+<rect x="210" y="220" width="16" height="150" fill="#ef4444"/><line x1="218" y1="210" x2="218" y2="380" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="240" y="270" width="16" height="150" fill="#ef4444"/><line x1="248" y1="260" x2="248" y2="425" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="270" y="320" width="16" height="140" fill="#ef4444"/><line x1="278" y1="310" x2="278" y2="465" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="210" y="245" width="76" height="55" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-dasharray="4 3"/>
+<text x="216" y="272" font-size="11" fill="#93c5fd">FVG entry 10:50</text>
+
+<circle cx="248" cy="272" r="6" fill="#f87171"/>
+
+<!-- continuation to SSL -->
+<polyline points="286,320 400,380 550,430 700,460 860,480" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+<line x1="48" y1="480" x2="910" y2="480" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="52" y="495" font-size="12" fill="#eab308">SSL — TP 14:15 NY PM</text>
+<circle cx="860" cy="480" r="6" fill="#f87171"/>
+
+<rect x="640" y="130" width="250" height="90" rx="8" fill="#1e293b" stroke="#334155"/>
+<text x="655" y="152" font-size="12" fill="#e5e7eb">Entry: 10:50 | SL: trên SMH</text>
+<text x="655" y="172" font-size="12" fill="#e5e7eb">TP: SSL Á/Âu | R:R đạt ~3.0R</text>
+<text x="655" y="192" font-size="12" fill="#4ade80">Kết quả: Win — đóng lệnh 14:15 NY PM</text>
+
+<text x="480" y="565" font-size="12" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa</text>
+</svg>

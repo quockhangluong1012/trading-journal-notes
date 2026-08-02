@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="820" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế Inverse FVG: Lệnh kẹt (trapped orders) &amp; dealer re-hedge</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">Vì sao một FVG bị đóng nến xuyên qua lại đổi vai trò từ hỗ trợ sang kháng cự</text>
+
+  <!-- Panel 1: trapped orders mechanism -->
+  <rect x="40" y="90" width="540" height="330" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="60" y="118" font-size="16" fill="#e2e8f0" font-weight="bold">1. Lệnh kẹt tạo thanh khoản ngược</text>
+
+  <!-- bullish FVG zone before -->
+  <rect x="80" y="180" width="460" height="40" fill="#22c55e" opacity="0.2"/>
+  <text x="90" y="175" font-size="12" fill="#22c55e">Bullish FVG — nhóm Long vào lệnh tại đây</text>
+  <circle cx="150" cy="200" r="4" fill="#38bdf8"/>
+  <circle cx="220" cy="200" r="4" fill="#38bdf8"/>
+  <circle cx="300" cy="200" r="4" fill="#38bdf8"/>
+  <circle cx="380" cy="200" r="4" fill="#38bdf8"/>
+  <text x="90" y="238" font-size="11" fill="#94a3b8">Mỗi chấm = một cụm lệnh Long / vị thế nắm giữ</text>
+
+  <!-- MSS down close-through -->
+  <line x1="600" y1="150" x2="600" y2="300" stroke="#ef4444" stroke-width="2"/>
+  <rect x="589" y="200" width="22" height="90" fill="#ef4444"/>
+  <text x="620" y="200" font-size="12" fill="#ef4444">② Close xuyên qua</text>
+  <text x="620" y="218" font-size="12" fill="#ef4444">+ MSS thật</text>
+
+  <text x="90" y="270" font-size="13" fill="#ef4444">→ Nhóm Long giờ BỊ KẸT trên giá hiện tại</text>
+  <text x="90" y="292" font-size="12" fill="#94a3b8">Lựa chọn: cắt lỗ (bán, đẩy giá xuống thêm)</text>
+  <text x="90" y="310" font-size="12" fill="#94a3b8">hoặc gồng, chờ giá hồi "hòa vốn" rồi bán ra</text>
+
+  <rect x="80" y="330" width="460" height="45" fill="#ef4444" opacity="0.2"/>
+  <text x="90" y="325" font-size="12" fill="#f97316">③ Vùng cũ giờ là bearish iFVG — nơi lệnh chờ bán tập trung</text>
+  <text x="90" y="360" font-size="12" fill="#94a3b8">Khi giá hồi lên CE → gặp áp lực bán thật từ lệnh kẹt</text>
+
+  <!-- Panel 2: dealer re-hedge -->
+  <rect x="620" y="90" width="540" height="330" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="640" y="118" font-size="16" fill="#e2e8f0" font-weight="bold">2. Dealer re-hedge sau MSS thật vs giả</text>
+
+  <text x="660" y="150" font-size="13" fill="#94a3b8">MSS THẬT (displacement + volume xác nhận)</text>
+  <line x1="660" y1="200" x2="1120" y2="200" stroke="#334155"/>
+  <text x="660" y="190" font-size="12" fill="#e2e8f0">Dealer buộc re-hedge theo hướng mới</text>
+  <text x="660" y="220" font-size="12" fill="#22c55e">→ Giá tiếp tục xa CE, KHÔNG reclaim (acceptance)</text>
+
+  <text x="660" y="260" font-size="13" fill="#94a3b8">MSS GIẢ (spike thanh khoản / nến tin)</text>
+  <text x="660" y="300" font-size="12" fill="#e2e8f0">Dealer chưa cần re-hedge thật</text>
+  <text x="660" y="320" font-size="12" fill="#f97316">→ Giá reclaim nhanh vào gap = liquidity purge</text>
+
+  <rect x="660" y="345" width="440" height="55" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="675" y="368" font-size="13" fill="#e2e8f0">"Acceptance" (giữ bên kia 1-2 nến) chính là cách</text>
+  <text x="675" y="388" font-size="13" fill="#e2e8f0">quan sát gián tiếp việc dealer đã re-hedge thật hay chưa</text>
+
+  <!-- Panel 3: comparison table -->
+  <rect x="40" y="450" width="1120" height="180" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="60" y="478" font-size="16" fill="#e2e8f0" font-weight="bold">3. Đối chiếu khung lý thuyết</text>
+  <line x1="60" y1="495" x2="1140" y2="495" stroke="#334155"/>
+
+  <text x="80" y="520" font-size="14" fill="#94a3b8" font-weight="bold">Auction Market Theory</text>
+  <text x="80" y="540" font-size="13" fill="#e2e8f0">Value area migration</text>
+  <text x="80" y="558" font-size="12" fill="#94a3b8">Đo theo phân bố volume toàn phiên</text>
+
+  <line x1="420" y1="505" x2="420" y2="615" stroke="#334155"/>
+  <text x="440" y="520" font-size="14" fill="#94a3b8" font-weight="bold">Wyckoff</text>
+  <text x="440" y="540" font-size="13" fill="#e2e8f0">Change of Character (CHoCH)</text>
+  <text x="440" y="558" font-size="12" fill="#94a3b8">Gắn với giai đoạn phân phối/tích lũy</text>
+
+  <line x1="780" y1="505" x2="780" y2="615" stroke="#334155"/>
+  <text x="800" y="520" font-size="14" fill="#94a3b8" font-weight="bold">Orderflow / Footprint</text>
+  <text x="800" y="540" font-size="13" fill="#e2e8f0">Absorption tại vùng cũ</text>
+  <text x="800" y="558" font-size="12" fill="#94a3b8">Xác nhận trực tiếp bằng volume tại giá</text>
+
+  <rect x="40" y="660" width="1120" height="140" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="60" y="688" font-size="15" fill="#e2e8f0" font-weight="bold">Hệ quả thực chiến</text>
+  <text x="60" y="712" font-size="13" fill="#e2e8f0">"Close" chỉ đưa bạn tới cửa — "acceptance + MSS thật" mới cho bạn vào nhà.</text>
+  <text x="60" y="734" font-size="13" fill="#e2e8f0">Không có ngưỡng định lượng chuẩn hóa cho "MSS thật" — luôn cần đánh giá bối cảnh D1/H4.</text>
+  <text x="60" y="756" font-size="13" fill="#94a3b8">Nested inversion trong choppy = churn, không phải cơ hội trade thêm.</text>
+</svg>

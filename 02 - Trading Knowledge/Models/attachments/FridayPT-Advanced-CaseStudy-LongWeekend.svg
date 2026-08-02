@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 6 — Thứ Sáu trước kỳ nghỉ 3 ngày (Win / giữ tiền sớm)</text>
+<line x1="24" y1="480" x2="936" y2="480" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="380" x2="936" y2="380" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="280" x2="936" y2="280" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="180" x2="936" y2="180" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="360" x2="900" y2="360" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="66" y="352" font-size="12" fill="#38bdf8" text-anchor="start">Weekly Open</text>
+<text x="112" y="560" font-size="12" fill="#94a3b8" text-anchor="middle">Mon</text>
+<text x="292" y="560" font-size="12" fill="#94a3b8" text-anchor="middle">Tue</text>
+<text x="472" y="560" font-size="12" fill="#94a3b8" text-anchor="middle">Wed</text>
+<text x="652" y="560" font-size="12" fill="#94a3b8" text-anchor="middle">Thu</text>
+<text x="832" y="560" font-size="12" fill="#94a3b8" text-anchor="middle">Fri (trước lễ)</text>
+<line x1="150" y1="300" x2="150" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="144.0" y="310" width="12" height="35" fill="#22c55e"/>
+<line x1="220" y1="240" x2="220" y2="310" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="214.0" y="250" width="12" height="55" fill="#22c55e"/>
+<line x1="290" y1="180" x2="290" y2="260" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="284.0" y="190" width="12" height="65" fill="#22c55e"/>
+<line x1="60" y1="180" x2="500" y2="180" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="500" y="172" font-size="12" fill="#eab308" text-anchor="end">Đỉnh tuần lập Thứ Tư</text>
+<line x1="360" y1="200" x2="360" y2="255" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="354.0" y="210" width="12" height="35" fill="#ef4444"/>
+<line x1="430" y1="220" x2="430" y2="275" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="424.0" y="230" width="12" height="35" fill="#ef4444"/>
+<!-- Friday: early aggressive close-out, faster/earlier reversion than usual -->
+<line x1="500" y1="240" x2="500" y2="300" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="494.0" y="250" width="12" height="40" fill="#ef4444"/>
+<line x1="560" y1="280" x2="560" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="554.0" y="290" width="12" height="45" fill="#ef4444"/>
+<circle cx="560" cy="280" r="5" fill="#4ade80"/>
+<text x="480" y="440" font-size="11" font-weight="700" fill="#4ade80" text-anchor="start">Chốt sớm hơn thường lệ — trước 3 ngày nghỉ risk desk giảm exposure mạnh hơn</text>
+<line x1="620" y1="330" x2="620" y2="370" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="614.0" y="340" width="12" height="20" fill="#22c55e"/>
+<line x1="680" y1="340" x2="680" y2="370" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="674.0" y="345" width="12" height="15" fill="#22c55e"/>
+<!-- flat thin volume rest of session -->
+<line x1="740" y1="350" x2="740" y2="368" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="734.0" y="352" width="12" height="10" fill="#ef4444"/>
+<line x1="800" y1="352" x2="800" y2="368" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="794.0" y="354" width="12" height="8" fill="#22c55e"/>
+<rect x="60" y="420" width="836" height="90" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<text x="80" y="444" font-size="12" fill="#e5e7eb" text-anchor="start">Trader nhận diện đây là thứ Sáu trước long weekend, chủ động chốt phần lớn</text>
+<text x="80" y="466" font-size="12" fill="#e5e7eb" text-anchor="start">lệnh sớm hơn bình thường (trước cả khi hồi hết về weekly open), tránh gap</text>
+<text x="80" y="488" font-size="12" fill="#e5e7eb" text-anchor="start">khi mở lại sau 3 ngày. friday_action: take-profit (sớm hơn thường lệ).</text>
+<text x="32" y="576" font-size="12" fill="#94a3b8" text-anchor="start">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa.</text>
+</svg>

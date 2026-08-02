@@ -1,6 +1,61 @@
-<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="400" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Kịch bản BULLISH — 07:00 hunt relative equal lows → IFVG entry</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">Long tại 50% CE của IFVG. Nếu không có IFVG → vào bullish breaker.</text>
-<rect x="24" y="70" width="712" height="325" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/><line x1="60" y1="330" x2="360" y2="330" stroke="#6B7280" stroke-dasharray="6 4"/><text x="60" y="348" font-size="10" fill="#4B5563">Relative Equal Lows (SSL)</text><rect x="150" y="250" width="120" height="26" fill="#3B82F6" opacity="0.16"/><text x="150" y="246" font-size="9" fill="#1D4ED8">FVG đầu tiên (sẽ thành IFVG)</text><rect x="85" y="250" width="2" height="50" fill="#DC2626"/><rect x="80" y="260" width="12" height="35" fill="#DC2626" rx="1"/><rect x="107" y="244" width="2" height="50" fill="#DC2626"/><rect x="102" y="254" width="12" height="35" fill="#DC2626" rx="1"/><rect x="129" y="238" width="2" height="50" fill="#DC2626"/><rect x="124" y="248" width="12" height="35" fill="#DC2626" rx="1"/><rect x="151" y="290" width="2" height="70" fill="#DC2626"/><rect x="146" y="320" width="12" height="30" fill="#DC2626" rx="1"/><text x="120" y="380" font-size="10" fill="#DC2626">hunt post-07:00</text><rect x="173" y="240" width="2" height="80" fill="#16A34A"/><rect x="168" y="255" width="12" height="60" fill="#16A34A" rx="1"/><rect x="195" y="224" width="2" height="82" fill="#16A34A"/><rect x="190" y="239" width="12" height="62" fill="#16A34A" rx="1"/><rect x="217" y="208" width="2" height="84" fill="#16A34A"/><rect x="212" y="223" width="12" height="64" fill="#16A34A" rx="1"/><rect x="239" y="192" width="2" height="86" fill="#16A34A"/><rect x="234" y="207" width="12" height="66" fill="#16A34A" rx="1"/><text x="290" y="205" font-size="10.5" font-weight="700" fill="#15803D">đóng trên swing high = MSS ↑</text><rect x="150" y="250" width="200" height="26" fill="#DC2626" opacity="0.14" stroke="#16A34A" stroke-dasharray="3 2"/><text x="356" y="266" font-size="9.5" fill="#15803D">IFVG · 50% CE = BUY</text><rect x="261" y="255" width="2" height="55" fill="#DC2626"/><rect x="256" y="266" width="12" height="36" fill="#DC2626" rx="1"/><rect x="283" y="259" width="2" height="55" fill="#DC2626"/><rect x="278" y="270" width="12" height="36" fill="#DC2626" rx="1"/><circle cx="350" cy="263" r="5" fill="#16A34A"/><rect x="305" y="205" width="2" height="55" fill="#16A34A"/><rect x="300" y="216" width="12" height="36" fill="#16A34A" rx="1"/><rect x="327" y="197" width="2" height="57" fill="#16A34A"/><rect x="322" y="208" width="12" height="38" fill="#16A34A" rx="1"/><rect x="349" y="189" width="2" height="59" fill="#16A34A"/><rect x="344" y="200" width="12" height="40" fill="#16A34A" rx="1"/><rect x="371" y="181" width="2" height="61" fill="#16A34A"/><rect x="366" y="192" width="12" height="42" fill="#16A34A" rx="1"/><line x1="60" y1="360" x2="300" y2="360" stroke="#16A34A" stroke-dasharray="4 3"/><text x="64" y="374" font-size="10" fill="#15803D">Stop dưới swing low post-07:00</text><text x="470" y="110" font-size="10" fill="#6D28D9">TP: next DOL hoặc Fib -2 / -2.5</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="18" font-weight="700" fill="#e5e7eb" text-anchor="start">Kịch bản BULLISH: grab relative equal lows → MSS → IFVG → BUY</text>
+<line x1="24" y1="70" x2="936" y2="70" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="130" x2="936" y2="130" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="190" x2="936" y2="190" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="250" x2="936" y2="250" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="310" x2="936" y2="310" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="370" x2="936" y2="370" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="430" x2="936" y2="430" stroke="#1f2937" stroke-width="1"/>
+<line x1="80" y1="330" x2="80" y2="380" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="74.0" y="340" width="12" height="30" fill="#ef4444"/>
+<line x1="124" y1="360" x2="124" y2="420" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="118.0" y="370" width="12" height="40" fill="#ef4444"/>
+<line x1="168" y1="385" x2="168" y2="420" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="162.0" y="395" width="12" height="15" fill="#22c55e"/>
+<line x1="212" y1="385" x2="212" y2="450" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="206.0" y="395" width="12" height="45" fill="#ef4444"/>
+<line x1="256" y1="415" x2="256" y2="450" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="250.0" y="425" width="12" height="15" fill="#22c55e"/>
+<line x1="60" y1="455" x2="900" y2="455" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="640" y="475" font-size="12" font-weight="400" fill="#eab308" text-anchor="start">Relative equal lows</text>
+<line x1="300" y1="422" x2="300" y2="470" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="294.0" y="430" width="12" height="35" fill="#ef4444"/>
+<line x1="300" y1="470" x2="308" y2="489" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrBU)"/>
+<text x="280" y="503" font-size="11" font-weight="400" fill="#f97316" text-anchor="start">Grab relative equal lows</text>
+<rect x="218" y="410" width="82" height="30" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="246" y="458" font-size="11" font-weight="400" fill="#3b82f6" text-anchor="middle">FVG đầu tiên trước hunt</text>
+<line x1="344" y1="370" x2="344" y2="470" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="338.0" y="380" width="12" height="80" fill="#22c55e"/>
+<line x1="388" y1="300" x2="388" y2="390" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="382.0" y="310" width="12" height="70" fill="#22c55e"/>
+<line x1="432" y1="235" x2="432" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="426.0" y="245" width="12" height="65" fill="#22c55e"/>
+<line x1="80" y1="360" x2="506" y2="360" stroke="#a855f7" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="388" y="346" font-size="11" font-weight="400" fill="#a855f7" text-anchor="start">Swing high → MSS lên</text>
+<rect x="218" y="410" width="82" height="30" fill="rgba(168,85,247,0.18)" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="212" y1="425.0" x2="692" y2="425.0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="697" y="429.0" font-size="12" font-weight="400" fill="#38bdf8" text-anchor="start">50% CE (Entry BUY)</text>
+<line x1="476" y1="431.0" x2="476" y2="259" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="470.0" y="230" width="12" height="35" fill="#22c55e"/>
+<line x1="476" y1="270" x2="511" y2="200" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrBU)"/>
+<line x1="520" y1="160" x2="520" y2="250" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="514.0" y="170" width="12" height="70" fill="#22c55e"/>
+<line x1="564" y1="100" x2="564" y2="180" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="558.0" y="110" width="12" height="60" fill="#22c55e"/>
+<line x1="280" y1="485" x2="628" y2="485" stroke="#f87171" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="432" y="507" font-size="11" font-weight="400" fill="#f87171" text-anchor="start">Stop dưới swing low post-07:00</text>
+<defs><marker id="arrBU" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f97316"/></marker></defs>
+<rect x="640" y="470" width="12" height="12" fill="#eab308"/>
+<text x="658" y="480" font-size="12" fill="#94a3b8">Liquidity / relative equal lows</text>
+<rect x="640" y="490" width="12" height="12" fill="#3b82f6"/>
+<text x="658" y="500" font-size="12" fill="#94a3b8">FVG đầu tiên trước hunt → IFVG</text>
+<rect x="640" y="510" width="12" height="12" fill="#a855f7"/>
+<text x="658" y="520" font-size="12" fill="#94a3b8">MSS</text>
+<rect x="640" y="530" width="12" height="12" fill="#38bdf8"/>
+<text x="658" y="540" font-size="12" fill="#94a3b8">50% CE (entry)</text>
+<rect x="640" y="550" width="12" height="12" fill="#f87171"/>
+<text x="658" y="560" font-size="12" fill="#94a3b8">Stop</text>
+<text x="32" y="560" font-size="12" fill="#94a3b8" text-anchor="start">Chart minh họa kịch bản Bullish, không phải dữ liệu giao dịch thật.</text>
 </svg>

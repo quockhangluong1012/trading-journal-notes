@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="760" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Edge Cases đắt giá nhất: Feed lệch &amp; Rollover giả</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">EC1 — CFD broker feed vs CME futures gốc | EC2 — nến rollover 00:00 giờ server</text>
+
+  <!-- Panel EC1 -->
+  <rect x="40" y="90" width="560" height="620" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="60" y="120" font-size="17" fill="#e2e8f0" font-weight="bold">EC1. FVG "ma" trên feed CFD broker</text>
+
+  <text x="60" y="150" font-size="13" fill="#94a3b8">Feed CFD broker (tổng hợp từ nhiều LP)</text>
+  <!-- candle set with spike creating fvg -->
+  <line x1="120" y1="260" x2="120" y2="210" stroke="#22c55e" stroke-width="2"/>
+  <rect x="109" y="225" width="22" height="30" fill="#22c55e"/>
+  <line x1="200" y1="270" x2="200" y2="130" stroke="#f97316" stroke-width="2"/>
+  <rect x="189" y="140" width="22" height="120" fill="#f97316"/>
+  <text x="200" y="120" font-size="12" fill="#f97316">spike bất thường (chỉ broker này có)</text>
+  <line x1="280" y1="200" x2="280" y2="150" stroke="#22c55e" stroke-width="2"/>
+  <rect x="269" y="160" width="22" height="30" fill="#22c55e"/>
+  <rect x="109" y="205" width="193" height="55" fill="#22c55e" opacity="0.22"/>
+  <text x="115" y="285" font-size="12" fill="#94a3b8">→ trông như FVG hợp lệ</text>
+
+  <text x="60" y="330" font-size="13" fill="#94a3b8">Đối chiếu feed CME futures gốc (NQ1! / DataMine)</text>
+  <line x1="120" y1="420" x2="120" y2="390" stroke="#22c55e" stroke-width="2"/>
+  <rect x="109" y="400" width="22" height="18" fill="#22c55e"/>
+  <line x1="200" y1="425" x2="200" y2="370" stroke="#22c55e" stroke-width="2"/>
+  <rect x="189" y="380" width="22" height="40" fill="#22c55e"/>
+  <line x1="280" y1="400" x2="280" y2="375" stroke="#22c55e" stroke-width="2"/>
+  <rect x="269" y="382" width="22" height="15" fill="#22c55e"/>
+  <text x="330" y="400" font-size="12" fill="#ef4444">Không có gap ở đây — nến 1 và nến 3 chồng lấp</text>
+
+  <rect x="60" y="460" width="500" height="220" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="80" y="486" font-size="14" fill="#e2e8f0" font-weight="bold">Nhận diện sớm &amp; xử lý</text>
+  <text x="80" y="510" font-size="13" fill="#e2e8f0">• FVG hình thành trong giờ thanh khoản mỏng</text>
+  <text x="80" y="530" font-size="13" fill="#e2e8f0">  (rollover, tin, cuối phiên NY) + "quá đẹp" → nghi ngờ</text>
+  <text x="80" y="554" font-size="13" fill="#e2e8f0">• Đối chiếu nhanh với nguồn futures gốc trước khi tin</text>
+  <text x="80" y="578" font-size="13" fill="#e2e8f0">• Ưu tiên dữ liệu CME gốc cho NQ/ES thay vì CFD tổng hợp</text>
+  <text x="80" y="602" font-size="13" fill="#e2e8f0">• Bỏ qua FVG hình thành 00:00–02:00 giờ server / weekend</text>
+  <text x="80" y="630" font-size="13" fill="#94a3b8">Chỉ tin FVG hình thành trong kill zone thanh khoản sâu</text>
+  <text x="80" y="650" font-size="13" fill="#94a3b8">(London/NY overlap, NY AM)</text>
+
+  <!-- Panel EC2 -->
+  <rect x="620" y="90" width="540" height="620" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="640" y="120" font-size="17" fill="#e2e8f0" font-weight="bold">EC2. Nến rollover 00:00 server time</text>
+
+  <text x="640" y="150" font-size="13" fill="#94a3b8">Timeline giờ server broker (GMT+2/+3)</text>
+  <line x1="650" y1="180" x2="1120" y2="180" stroke="#1c2333" stroke-width="2"/>
+  <line x1="880" y1="165" x2="880" y2="195" stroke="#f97316" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="885" y="170" font-size="12" fill="#f97316">00:00 server = rollover + swap</text>
+
+  <line x1="800" y1="270" x2="800" y2="230" stroke="#22c55e" stroke-width="2"/>
+  <rect x="789" y="240" width="22" height="30" fill="#22c55e"/>
+  <line x1="880" y1="280" x2="880" y2="180" stroke="#f97316" stroke-width="2"/>
+  <rect x="869" y="195" width="22" height="85" fill="#f97316"/>
+  <text x="880" y="170" font-size="0" fill="#000"> </text>
+  <line x1="960" y1="240" x2="960" y2="200" stroke="#22c55e" stroke-width="2"/>
+  <rect x="949" y="210" width="22" height="30" fill="#22c55e"/>
+  <rect x="789" y="220" width="193" height="60" fill="#22c55e" opacity="0.2"/>
+  <text x="795" y="300" font-size="12" fill="#94a3b8">"FVG" M1/M5 giả — do spread giãn/swap tại rollover</text>
+
+  <rect x="640" y="340" width="460" height="120" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="660" y="366" font-size="14" fill="#e2e8f0" font-weight="bold">Vì sao bẫy được cả trader kinh nghiệm</text>
+  <text x="660" y="390" font-size="13" fill="#e2e8f0">Xảy ra đều đặn mỗi ngày → dễ bị hiểu nhầm</text>
+  <text x="660" y="410" font-size="13" fill="#e2e8f0">thành một loại setup có quy luật, thực chất</text>
+  <text x="660" y="430" font-size="13" fill="#e2e8f0">chỉ là nhiễu cơ chế broker (swap/spread).</text>
+
+  <rect x="640" y="480" width="460" height="200" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="660" y="506" font-size="14" fill="#e2e8f0" font-weight="bold">Cách xử lý</text>
+  <text x="660" y="530" font-size="13" fill="#e2e8f0">• Kiểm tra giờ server broker vs giờ NY</text>
+  <text x="660" y="552" font-size="13" fill="#e2e8f0">• Đánh dấu khung 00:00±5 phút server = "vùng nghi ngờ"</text>
+  <text x="660" y="574" font-size="13" fill="#e2e8f0">• Loại trừ FVG rollover khỏi danh sách POI</text>
+  <text x="660" y="596" font-size="13" fill="#e2e8f0">• So sánh cùng thời điểm trên 2-3 broker khác nhau</text>
+  <text x="660" y="618" font-size="13" fill="#94a3b8">Chỉ 1 broker có gap → nhiễu feed, không phải FVG thật</text>
+  <text x="660" y="650" font-size="13" fill="#eab308">Đặc biệt lưu ý trên EURUSD/GBPUSD</text>
+</svg>

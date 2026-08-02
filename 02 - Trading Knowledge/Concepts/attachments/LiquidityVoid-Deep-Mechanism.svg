@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="750" fill="#0f1420" rx="12"/>
+  <text x="30" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế: TWAP/VWAP đuổi quote — vì sao sổ lệnh rút cạn tạo Void</text>
+  <text x="30" y="63" font-size="15" fill="#94a3b8">Market maker "chase quote" theo hướng lệnh lớn thay vì đứng chặn → độ sâu sổ lệnh giảm mạnh nhiều mức giá liên tiếp</text>
+
+  <!-- order book depth visual left -->
+  <g transform="translate(40,100)">
+    <text x="0" y="18.6" font-size="16" fill="#e2e8f0" font-weight="bold">① Trước lệnh TWAP lớn — sổ lệnh dày</text>
+    <rect x="0" y="15" width="120" height="18" fill="#22c55e" opacity="0.5"/>
+    <rect x="0" y="35" width="150" height="18" fill="#22c55e" opacity="0.5"/>
+    <rect x="0" y="55" width="100" height="18" fill="#22c55e" opacity="0.5"/>
+    <rect x="0" y="75" width="130" height="18" fill="#22c55e" opacity="0.5"/>
+    <text x="160" y="28" font-size="12" fill="#94a3b8">bid depth dày</text>
+    <text x="160" y="68" font-size="12" fill="#94a3b8">nhiều mức giá</text>
+  </g>
+
+  <g transform="translate(40,220)">
+    <text x="0" y="18.6" font-size="16" fill="#e2e8f0" font-weight="bold">② Lệnh TWAP ăn liên tục theo lịch trình cố định</text>
+    <rect x="0" y="15" width="40" height="18" fill="#ef4444" opacity="0.5"/>
+    <rect x="0" y="35" width="30" height="18" fill="#ef4444" opacity="0.5"/>
+    <rect x="0" y="55" width="20" height="18" fill="#ef4444" opacity="0.4"/>
+    <rect x="0" y="75" width="35" height="18" fill="#ef4444" opacity="0.5"/>
+    <text x="200" y="28" font-size="12" fill="#f97316">depth mỏng dần —</text>
+    <text x="200" y="46" font-size="12" fill="#f97316">MM "chạy trốn" theo</text>
+    <text x="200" y="64" font-size="12" fill="#f97316">giá, không đứng chặn</text>
+  </g>
+
+  <!-- candle chain showing void -->
+  <g transform="translate(40,360)">
+    <text x="0" y="18.6" font-size="16" fill="#e2e8f0" font-weight="bold">③ Kết quả trên chart: chuỗi nến thiếu overlap liên tục = Void</text>
+    <g stroke="#1c2333"><line x1="0" y1="60" x2="1000" y2="60"/><line x1="0" y1="120" x2="1000" y2="120"/><line x1="0" y1="180" x2="1000" y2="180"/><line x1="0" y1="240" x2="1000" y2="240"/></g>
+    <rect x="20" y="180" width="16" height="45" fill="#ef4444"/><line x1="28" y1="170" x2="28" y2="230" stroke="#ef4444" stroke-width="2"/>
+    <rect x="60" y="150" width="16" height="40" fill="#ef4444"/><line x1="68" y1="140" x2="68" y2="195" stroke="#ef4444" stroke-width="2"/>
+    <rect x="100" y="115" width="16" height="45" fill="#ef4444"/><line x1="108" y1="105" x2="108" y2="165" stroke="#ef4444" stroke-width="2"/>
+    <rect x="140" y="85" width="16" height="40" fill="#ef4444"/><line x1="148" y1="75" x2="148" y2="130" stroke="#ef4444" stroke-width="2"/>
+    <rect x="180" y="55" width="16" height="40" fill="#ef4444"/><line x1="188" y1="45" x2="188" y2="100" stroke="#ef4444" stroke-width="2"/>
+    <rect x="220" y="25" width="16" height="40" fill="#ef4444"/><line x1="228" y1="15" x2="228" y2="70" stroke="#ef4444" stroke-width="2"/>
+    <rect x="16" y="14" width="238" height="216" fill="#eab308" opacity="0.12" stroke="#eab308" stroke-dasharray="4,3"/>
+    <text x="270" y="120" font-size="14" fill="#eab308" font-weight="bold">Liquidity Void — 6 nến, không nến nào overlap</text>
+    <text x="270" y="140" font-size="13" fill="#94a3b8">thân nến liền trước → mỗi mức giá chỉ bị "chạm 1 lần"</text>
+  </g>
+
+  <!-- comparison box -->
+  <g transform="translate(700,100)">
+    <rect x="0" y="0" width="460" height="280" fill="#1e293b" stroke="#334155" rx="8"/>
+    <text x="16" y="26" font-size="16" fill="#e2e8f0" font-weight="bold">Đối chiếu khung lý thuyết</text>
+    <text x="16" y="52" font-size="13" fill="#38bdf8" font-weight="bold">Auction Market Theory:</text>
+    <text x="16" y="70" font-size="12" fill="#94a3b8">"Single print" trên Market Profile — TPO</text>
+    <text x="16" y="86" font-size="12" fill="#94a3b8">chỉ in 1 lần tại dải giá đó</text>
+    <text x="16" y="112" font-size="13" fill="#38bdf8" font-weight="bold">Wyckoff:</text>
+    <text x="16" y="130" font-size="12" fill="#94a3b8">giai đoạn Markup/Markdown — "no supply/</text>
+    <text x="16" y="146" font-size="12" fill="#94a3b8">no demand" sau Accumulation/Distribution</text>
+    <text x="16" y="172" font-size="13" fill="#38bdf8" font-weight="bold">Orderflow/Footprint:</text>
+    <text x="16" y="190" font-size="12" fill="#94a3b8">stacked imbalance nhiều mức giá liên tiếp,</text>
+    <text x="16" y="206" font-size="12" fill="#94a3b8">"unfinished business" ở cực biên order book</text>
+    <rect x="16" y="222" width="428" height="44" fill="#0f1420" stroke="#334155"/>
+    <text x="26" y="242" font-size="12" fill="#a78bfa">Nguồn tạo void: TWAP/VWAP quỹ lớn,</text>
+    <text x="26" y="258" font-size="12" fill="#a78bfa">dealer gamma hedge, liquidation cascade</text>
+  </g>
+
+  <text x="30" y="720" font-size="13" fill="#94a3b8" font-style="italic">Void không phải "ma thuật" — nó là dấu vết của sổ lệnh bị rút cạn khi một luồng lệnh lớn một chiều đi qua nhiều mức giá liên tiếp.</text>
+</svg>

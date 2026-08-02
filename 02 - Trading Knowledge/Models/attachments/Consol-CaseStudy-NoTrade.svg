@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480.0" y="36.0" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Case No-Trade — Range không ổn định (megaphone)</text>
+<line x1="150.0" y1="220.0" x2="150.0" y2="340.0" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="144.0" y="230.0" width="12.0" height="100.0" rx="0" fill="#22c55e" stroke="none" stroke-width="1.5"/>
+<line x1="250.0" y1="200.0" x2="250.0" y2="355.0" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="244.0" y="210.0" width="12.0" height="135.0" rx="0" fill="#ef4444" stroke="none" stroke-width="1.5"/>
+<line x1="350.0" y1="185.0" x2="350.0" y2="370.0" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="344.0" y="195.0" width="12.0" height="165.0" rx="0" fill="#22c55e" stroke="none" stroke-width="1.5"/>
+<line x1="450.0" y1="160.0" x2="450.0" y2="390.0" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="444.0" y="170.0" width="12.0" height="210.0" rx="0" fill="#ef4444" stroke="none" stroke-width="1.5"/>
+<line x1="550.0" y1="170.0" x2="550.0" y2="380.0" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="544.0" y="180.0" width="12.0" height="190.0" rx="0" fill="#22c55e" stroke="none" stroke-width="1.5"/>
+<line x1="650.0" y1="140.0" x2="650.0" y2="410.0" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="644.0" y="150.0" width="12.0" height="250.0" rx="0" fill="#ef4444" stroke="none" stroke-width="1.5"/>
+<line x1="750.0" y1="150.0" x2="750.0" y2="400.0" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="744.0" y="160.0" width="12.0" height="230.0" rx="0" fill="#22c55e" stroke="none" stroke-width="1.5"/>
+<line x1="686.0" y1="246.0" x2="714.0" y2="274.0" stroke="#f87171" stroke-width="3"/>
+<line x1="686.0" y1="274.0" x2="714.0" y2="246.0" stroke="#f87171" stroke-width="3"/>
+<text x="480.0" y="460.0" font-size="14" font-weight="400" fill="#f87171" text-anchor="middle">Không vào lệnh — range không ổn định</text>
+</svg>

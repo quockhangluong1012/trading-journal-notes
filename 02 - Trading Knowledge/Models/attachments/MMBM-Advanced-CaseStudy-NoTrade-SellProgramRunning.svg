@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Case Study — No-trade: Sell program vẫn đang chạy, đứng ngoài đúng</text>
+
+<!-- persistent downtrend, no clear reversal -->
+<rect x="90" y="120" width="12" height="50" fill="#ef4444"/><line x1="96" y1="110" x2="96" y2="180" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="120" y="150" width="12" height="55" fill="#ef4444"/><line x1="126" y1="138" x2="126" y2="215" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="150" y="185" width="12" height="55" fill="#ef4444"/><line x1="156" y1="172" x2="156" y2="250" stroke="#9ca3af" stroke-width="1.5"/>
+<!-- weak bounce, no MSS -->
+<rect x="180" y="215" width="12" height="20" fill="#22c55e"/><line x1="186" y1="208" x2="186" y2="242" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="210" y="225" width="12" height="45" fill="#ef4444"/><line x1="216" y1="215" x2="216" y2="278" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="240" y="260" width="12" height="50" fill="#ef4444"/><line x1="246" y1="248" x2="246" y2="318" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="270" y="300" width="12" height="55" fill="#ef4444"/><line x1="276" y1="288" x2="276" y2="365" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="300" y="340" width="12" height="55" fill="#ef4444"/><line x1="306" y1="328" x2="306" y2="405" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="330" y="380" width="12" height="60" fill="#ef4444"/><line x1="336" y1="368" x2="336" y2="450" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="360" y="420" width="12" height="65" fill="#ef4444"/><line x1="366" y1="408" x2="366" y2="495" stroke="#9ca3af" stroke-width="1.5"/>
+
+<!-- "no MSS yet" annotation -->
+<rect x="420" y="150" width="330" height="130" rx="8" fill="#1e293b" stroke="#334155"/>
+<text x="436" y="172" font-size="12" fill="#e5e7eb">Quan sát: chưa có sweep SSL rõ ràng,</text>
+<text x="436" y="192" font-size="12" fill="#e5e7eb">chưa MSS, sell program vẫn đang chạy</text>
+<text x="436" y="212" font-size="12" fill="#94a3b8">Quyết định: KHÔNG vào lệnh, chờ cấu trúc</text>
+<text x="436" y="232" font-size="12" fill="#94a3b8">rõ hơn dù giá có vẻ "rẻ"</text>
+<text x="436" y="255" font-size="12" fill="#4ade80">Kết quả: giá giảm thêm ~2R nữa mới có SML thật</text>
+<text x="436" y="272" font-size="12" fill="#4ade80">→ đứng ngoài là quyết định đúng</text>
+
+<!-- eventual real reversal much lower -->
+<polyline points="366,485 420,530 480,540" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.5"/>
+<circle cx="480" cy="540" r="14" fill="none" stroke="#4ade80" stroke-width="2" opacity="0.7"/>
+<text x="480" y="558" font-size="11" fill="#4ade80" text-anchor="middle">SML thật xảy ra sau đó</text>
+
+<text x="480" y="580" font-size="12" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa</text>
+</svg>

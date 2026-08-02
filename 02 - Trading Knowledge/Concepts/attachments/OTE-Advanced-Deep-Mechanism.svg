@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Arial, sans-serif">
+  <rect width="1200" height="700" fill="#0f1420" rx="12"/>
+  <g stroke="#1c2333" stroke-width="1">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+  <text x="600" y="40" text-anchor="middle" fill="#e2e8f0" font-size="26" font-weight="bold">OTE: Ba cơ chế orderflow độc lập chồng nhau tại 62-79%</text>
+  <text x="600" y="63" text-anchor="middle" fill="#94a3b8" font-size="15">Không phải một cơ chế riêng — mà là điểm giao của giá vốn trung bình, hình học R:R, và gom inducement</text>
+
+  <!-- Three overlapping circles -->
+  <g opacity="0.9">
+    <circle cx="430" cy="270" r="150" fill="#38bdf8" opacity="0.18" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="600" cy="270" r="150" fill="#a78bfa" opacity="0.18" stroke="#a78bfa" stroke-width="2"/>
+    <circle cx="515" cy="410" r="150" fill="#f97316" opacity="0.18" stroke="#f97316" stroke-width="2"/>
+  </g>
+  <text x="350" y="230" fill="#38bdf8" font-size="15" font-weight="bold">1. Giá vốn</text>
+  <text x="350" y="248" fill="#38bdf8" font-size="15" font-weight="bold">trung bình</text>
+  <text x="350" y="266" fill="#94a3b8" font-size="13">Dòng lệnh institutional</text>
+  <text x="350" y="282" fill="#94a3b8" font-size="13">xây vị thế dọc theo leg</text>
+
+  <text x="660" y="230" fill="#a78bfa" font-size="15" font-weight="bold">2. Hình học</text>
+  <text x="660" y="248" fill="#a78bfa" font-size="15" font-weight="bold">R:R</text>
+  <text x="660" y="266" fill="#94a3b8" font-size="13">Entry sâu hơn = stop</text>
+  <text x="660" y="282" fill="#94a3b8" font-size="13">nhỏ hơn, target giữ nguyên</text>
+
+  <text x="440" y="490" fill="#f97316" font-size="15" font-weight="bold">3. Gom inducement</text>
+  <text x="440" y="508" fill="#94a3b8" font-size="13">Quét stop trader vào sớm</text>
+  <text x="440" y="524" fill="#94a3b8" font-size="13">ở retrace nông (&lt;62%)</text>
+
+  <circle cx="515" cy="330" r="6" fill="#eab308"/>
+  <text x="530" y="335" fill="#eab308" font-size="16" font-weight="bold">62-79% = vùng chồng cả 3</text>
+
+  <!-- Right side: comparison table mini -->
+  <g>
+    <rect x="850" y="120" width="320" height="480" fill="#1e293b" stroke="#334155" rx="8"/>
+    <text x="1010" y="150" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="bold">Đối chiếu lý thuyết</text>
+    <line x1="870" y1="165" x2="1160" y2="165" stroke="#334155"/>
+
+    <text x="870" y="195" fill="#38bdf8" font-size="15" font-weight="bold">Auction Market Theory</text>
+    <text x="870" y="215" fill="#94a3b8" font-size="13">Return to value area sau</text>
+    <text x="870" y="232" fill="#94a3b8" font-size="13">breakout — đo bằng volume,</text>
+    <text x="870" y="249" fill="#94a3b8" font-size="13">không dùng Fibonacci</text>
+
+    <line x1="870" y1="270" x2="1160" y2="270" stroke="#334155"/>
+    <text x="870" y="298" fill="#a78bfa" font-size="15" font-weight="bold">Wyckoff</text>
+    <text x="870" y="318" fill="#94a3b8" font-size="13">Test sau Sign of Strength —</text>
+    <text x="870" y="335" fill="#94a3b8" font-size="13">đọc chất lượng qua khối</text>
+    <text x="870" y="352" fill="#94a3b8" font-size="13">lượng, không qua % cố định</text>
+
+    <line x1="870" y1="373" x2="1160" y2="373" stroke="#334155"/>
+    <text x="870" y="401" fill="#f97316" font-size="15" font-weight="bold">Orderflow / Footprint</text>
+    <text x="870" y="421" fill="#94a3b8" font-size="13">Volume node cao tại 62-79%</text>
+    <text x="870" y="438" fill="#94a3b8" font-size="13">= bằng chứng thật; volume</text>
+    <text x="870" y="455" fill="#94a3b8" font-size="13">thấp = chỉ là con số suông</text>
+
+    <line x1="870" y1="476" x2="1160" y2="476" stroke="#334155"/>
+    <text x="870" y="504" fill="#e2e8f0" font-size="14" font-weight="bold">Điểm chung: cả 3 đều cần</text>
+    <text x="870" y="522" fill="#e2e8f0" font-size="14" font-weight="bold">một nhịp "xác nhận lại"</text>
+    <text x="870" y="540" fill="#e2e8f0" font-size="14" font-weight="bold">sau breakout trước khi tin</text>
+    <text x="870" y="558" fill="#94a3b8" font-size="13">Fibonacci = proxy hình học</text>
+    <text x="870" y="575" fill="#94a3b8" font-size="13">cho hiện tượng orderflow đó</text>
+  </g>
+
+  <text x="600" y="670" text-anchor="middle" fill="#94a3b8" font-size="14">FX: 70.5% ổn định | Index: 62% trong trend mạnh | Crypto: runaway hoặc đào sâu &gt;79% khi thanh khoản mỏng</text>
+</svg>

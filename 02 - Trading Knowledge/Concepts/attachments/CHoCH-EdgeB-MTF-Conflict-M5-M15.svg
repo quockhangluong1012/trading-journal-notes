@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Xung đột đa khung: M5 CHoCH nhưng M15 mới chỉ sweep</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">110 mẫu GBPUSD/XAUUSD - M15 chưa bị wick chạm trước đó: M5 CHoCH giữ hướng chỉ 28%</text>
+
+  <line x1="40" y1="110" x2="1240" y2="110" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- Top: M15 panel -->
+  <text x="60" y="140" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#4a90d9">Khung M15</text>
+  <line x1="60" y1="260" x2="1220" y2="260" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+  <text x="1150" y="252" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">M15 swing low (chưa bị chạm)</text>
+
+  <g>
+    <line x1="150" y1="170" x2="150" y2="220" stroke="#26a69a" stroke-width="2"/>
+    <rect x="140" y="178" width="20" height="30" fill="#26a69a" rx="1"/>
+    <line x1="260" y1="190" x2="260" y2="240" stroke="#26a69a" stroke-width="2"/>
+    <rect x="250" y="198" width="20" height="30" fill="#26a69a" rx="1"/>
+    <line x1="370" y1="200" x2="370" y2="255" stroke="#26a69a" stroke-width="2"/>
+    <rect x="360" y="210" width="20" height="30" fill="#26a69a" rx="1"/>
+  </g>
+  <!-- M15 candle only wicking down slightly, not closing below -->
+  <line x1="480" y1="220" x2="480" y2="275" stroke="#787b86" stroke-width="2"/>
+  <rect x="470" y="225" width="20" height="28" fill="#787b86" rx="1" opacity="0.85"/>
+  <text x="480" y="300" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">wick chạm nhẹ, chưa đóng ngoài</text>
+
+  <g>
+    <line x1="600" y1="200" x2="600" y2="245" stroke="#26a69a" stroke-width="2"/>
+    <rect x="590" y="205" width="20" height="30" fill="#26a69a" rx="1"/>
+  </g>
+
+  <rect x="700" y="130" width="220" height="46" rx="8" fill="#787b86" opacity="0.18" stroke="#787b86" stroke-width="1.5"/>
+  <text x="810" y="159" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#d1d4dc">M15: chỉ sweep, chưa CHoCH</text>
+
+  <!-- Bottom: M5 panel -->
+  <text x="60" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#4a90d9">Khung M5 (cùng khoảng thời gian với nến M15 màu xám)</text>
+  <line x1="60" y1="470" x2="1220" y2="470" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+  <text x="1150" y="462" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">M5 protected low tương ứng</text>
+
+  <g>
+    <line x1="450" y1="400" x2="450" y2="440" stroke="#26a69a" stroke-width="2"/>
+    <rect x="443" y="405" width="14" height="25" fill="#26a69a" rx="1"/>
+    <line x1="490" y1="410" x2="490" y2="450" stroke="#26a69a" stroke-width="2"/>
+    <rect x="483" y="415" width="14" height="25" fill="#26a69a" rx="1"/>
+  </g>
+  <!-- M5 CHoCH candle: closes below M5 protected swing -->
+  <line x1="530" y1="440" x2="530" y2="530" stroke="#ef5350" stroke-width="2.5"/>
+  <rect x="518" y="445" width="24" height="80" fill="#ef5350" rx="1"/>
+  <text x="530" y="555" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">M5 đóng body dưới swing</text>
+
+  <rect x="620" y="380" width="230" height="46" rx="8" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="735" y="409" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#ff6b6b">M5: "CHoCH" nhưng nghi ngờ</text>
+
+  <g>
+    <line x1="600" y1="460" x2="600" y2="500" stroke="#ef5350" stroke-width="2"/>
+    <rect x="593" y="465" width="14" height="25" fill="#ef5350" rx="1"/>
+    <line x1="650" y1="440" x2="650" y2="480" stroke="#ef5350" stroke-width="2"/>
+  </g>
+
+  <line x1="450" y1="600" x2="850" y2="600" stroke="#787b86" stroke-width="1.5"/>
+  <line x1="450" y1="592" x2="450" y2="608" stroke="#787b86" stroke-width="1.5"/>
+  <line x1="850" y1="592" x2="850" y2="608" stroke="#787b86" stroke-width="1.5"/>
+  <text x="650" y="625" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">M15 swing chưa bị chạm trước = thanh khoản còn nguyên</text>
+  <text x="650" y="647" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">-> M5 CHoCH nhiều khả năng chỉ là micro-volatility nội bộ</text>
+
+  <text x="640" y="695" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Rule: kiểm tra m15_swing_pretested trước khi tin M5 CHoCH - xem EC-B4</text>
+</svg>

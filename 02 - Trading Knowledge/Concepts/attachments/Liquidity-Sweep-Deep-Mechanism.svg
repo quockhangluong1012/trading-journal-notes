@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="800" fill="#0f1420" rx="12"/>
+
+  <text x="600" y="40" font-size="26" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Cơ chế Liquidity Sweep: từ Limit Order Book tới Displacement</text>
+  <text x="600" y="64" font-size="15" fill="#94a3b8" text-anchor="middle">Vì sao reclaim là ranh giới khách quan của một "trận đấu" order flow, không phải pattern thẩm mỹ</text>
+
+  <!-- Step 1 -->
+  <text x="60" y="105" font-size="17" font-weight="bold" fill="#38bdf8">Bước 1 — Stop cluster: thanh khoản được bảo đảm trước</text>
+  <rect x="60" y="118" width="330" height="105" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="75" y="142" font-size="12.5" fill="#e2e8f0">Stop loss = lệnh market ĐÃ đặt sẵn,</text>
+  <text x="75" y="160" font-size="12.5" fill="#e2e8f0">kích hoạt tại 1 mức giá biết trước</text>
+  <text x="75" y="178" font-size="12.5" fill="#38bdf8" font-weight="bold">→ đối ứng dự đoán được cả vị trí</text>
+  <text x="75" y="196" font-size="12.5" fill="#38bdf8" font-weight="bold">và khối lượng, khác thanh khoản</text>
+  <text x="75" y="212" font-size="12.5" fill="#38bdf8" font-weight="bold">trôi nổi trên thị trường mở</text>
+
+  <!-- Step 2 -->
+  <text x="450" y="105" font-size="17" font-weight="bold" fill="#f97316">Bước 2 — Sweep: thu hoạch đối ứng</text>
+  <rect x="450" y="118" width="300" height="105" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="465" y="142" font-size="12.5" fill="#e2e8f0">Giá xuyên qua mức, kích hoạt cả</text>
+  <text x="465" y="160" font-size="12.5" fill="#e2e8f0">cụm stop cùng lúc — bên gom hàng</text>
+  <text x="465" y="178" font-size="12.5" fill="#e2e8f0">khớp lệnh lớn mà không tự đẩy giá</text>
+  <text x="465" y="204" font-size="12.5" fill="#f97316" font-weight="bold">→ đây là "trận đấu" giữa 2 dòng lệnh</text>
+
+  <!-- Step 3 -->
+  <text x="800" y="105" font-size="17" font-weight="bold" fill="#22c55e">Bước 3 — Reclaim: ai thắng phiên đấu giá</text>
+  <rect x="800" y="118" width="340" height="105" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="815" y="142" font-size="12.5" fill="#e2e8f0">Đóng nến trở lại trong range = dòng</text>
+  <text x="815" y="160" font-size="12.5" fill="#e2e8f0">mua/bán gom hàng đã NUỐT HẾT dòng</text>
+  <text x="815" y="178" font-size="12.5" fill="#e2e8f0">lệnh vừa bị kích hoạt trong 1 nến</text>
+  <text x="815" y="204" font-size="12.5" fill="#22c55e" font-weight="bold">→ bằng chứng orderflow khách quan</text>
+
+  <!-- diagram -->
+  <text x="600" y="265" font-size="17" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Diễn biến giá qua 3 bước</text>
+
+  <g stroke="#1c2333"><line x1="60" y1="300" x2="1140" y2="300"/><line x1="60" y1="400" x2="1140" y2="400"/><line x1="60" y1="500" x2="1140" y2="500"/></g>
+
+  <line x1="140" y1="330" x2="140" y2="380" stroke="#ef4444" stroke-width="2"/>
+  <rect x="132" y="340" width="16" height="30" fill="#ef4444"/>
+  <line x1="190" y1="350" x2="190" y2="400" stroke="#ef4444" stroke-width="2"/>
+  <rect x="182" y="360" width="16" height="30" fill="#ef4444"/>
+
+  <line x1="100" y1="410" x2="300" y2="410" stroke="#eab308" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="305" y="414" font-size="12.5" fill="#eab308">Pool SSL (equal lows)</text>
+
+  <line x1="250" y1="405" x2="250" y2="460" stroke="#f97316" stroke-width="2.5"/>
+  <rect x="242" y="415" width="16" height="35" fill="#ef4444" stroke="#f97316" stroke-width="1.5"/>
+  <text x="215" y="480" font-size="12" fill="#f97316" font-weight="bold">Sweep (wick xuyên qua pool)</text>
+
+  <line x1="270" y1="440" x2="270" y2="405" stroke="#22c55e" stroke-width="2.5"/>
+  <rect x="262" y="410" width="16" height="30" fill="#22c55e"/>
+  <text x="300" y="440" font-size="12" fill="#22c55e" font-weight="bold">Reclaim (đóng lại trong range)</text>
+
+  <line x1="330" y1="400" x2="330" y2="310" stroke="#22c55e" stroke-width="3"/>
+  <rect x="320" y="320" width="22" height="80" fill="#22c55e"/>
+  <text x="290" y="295" font-size="13" fill="#22c55e" font-weight="bold">Displacement + MSS</text>
+
+  <line x1="390" y1="315" x2="1100" y2="290" stroke="#22c55e" stroke-width="2.5"/>
+  <text x="900" y="275" font-size="12.5" fill="#94a3b8">Giá tiến tới target thanh khoản đối diện</text>
+
+  <!-- comparison boxes -->
+  <text x="60" y="560" font-size="17" font-weight="bold" fill="#e2e8f0">Đối chiếu với các khung lý thuyết khác</text>
+
+  <rect x="60" y="580" width="335" height="95" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="72" y="603" font-size="13" fill="#a78bfa" font-weight="bold">Wyckoff Spring/SOW/SOS</text>
+  <text x="72" y="621" font-size="12" fill="#e2e8f0">Giá xuyên rồi bị từ chối,</text>
+  <text x="72" y="638" font-size="12" fill="#e2e8f0">xác nhận hấp thụ tại mức</text>
+  <text x="72" y="658" font-size="11.5" fill="#94a3b8">Khác: gắn với schematic cố định</text>
+
+  <rect x="432" y="580" width="335" height="95" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="444" y="603" font-size="13" fill="#a78bfa" font-weight="bold">Auction Market Theory</text>
+  <text x="444" y="621" font-size="12" fill="#e2e8f0">Rejection tại "excess" —</text>
+  <text x="444" y="638" font-size="12" fill="#e2e8f0">đuôi phân phối volume</text>
+  <text x="444" y="658" font-size="11.5" fill="#94a3b8">Khác: đo bằng volume profile</text>
+
+  <rect x="804" y="580" width="336" height="95" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="816" y="603" font-size="13" fill="#a78bfa" font-weight="bold">Orderflow / Footprint</text>
+  <text x="816" y="621" font-size="12" fill="#e2e8f0">Absorption/exhaustion —</text>
+  <text x="816" y="638" font-size="12" fill="#e2e8f0">lệnh limit nuốt market order</text>
+  <text x="816" y="658" font-size="11.5" fill="#94a3b8">Khác: đo bằng lệnh khớp thật</text>
+
+  <text x="600" y="730" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-style="italic">Trên Index Futures, dealer hedging/gamma exposure có thể khuếch đại displacement mạnh hơn bình thường — xem bảng 3 thị trường ở mục 15.</text>
+</svg>

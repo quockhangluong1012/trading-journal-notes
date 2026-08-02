@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="700" fill="#0f1420" rx="12"/>
+
+  <text x="600" y="40" font-size="26" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Case Study A — GBPUSD Long: IDM Sweep → OB Reaction → MSS → +9.0R</text>
+  <text x="600" y="64" font-size="15" fill="#94a3b8" text-anchor="middle">London Kill Zone 03:20–13:30 NY — Daily Bias Bullish, H1 discount OB 1.2515–1.2528</text>
+
+  <g stroke="#1c2333">
+    <line x1="60" y1="140" x2="1140" y2="140"/>
+    <line x1="60" y1="260" x2="1140" y2="260"/>
+    <line x1="60" y1="380" x2="1140" y2="380"/>
+    <line x1="60" y1="500" x2="1140" y2="500"/>
+  </g>
+
+  <text x="20" y="144" font-size="12" fill="#94a3b8">1.2680</text>
+  <text x="20" y="264" font-size="12" fill="#94a3b8">1.2600</text>
+  <text x="20" y="384" font-size="12" fill="#94a3b8">1.2542</text>
+  <text x="20" y="504" font-size="12" fill="#94a3b8">1.2510</text>
+
+  <!-- target BSL -->
+  <line x1="60" y1="140" x2="1140" y2="140" stroke="#eab308" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="960" y="135" font-size="13" fill="#eab308">Target 2: BSL 1.2680 (PWH)</text>
+
+  <line x1="60" y1="260" x2="1140" y2="260" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="980" y="255" font-size="12.5" fill="#eab308">Target 1: internal 1.2600</text>
+
+  <!-- price coming down forming IDM -->
+  <line x1="130" y1="300" x2="130" y2="345" stroke="#ef4444" stroke-width="2"/>
+  <rect x="122" y="310" width="16" height="28" fill="#ef4444"/>
+  <line x1="180" y1="320" x2="180" y2="360" stroke="#ef4444" stroke-width="2"/>
+  <rect x="172" y="330" width="16" height="25" fill="#ef4444"/>
+
+  <line x1="90" y1="365" x2="300" y2="365" stroke="#eab308" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="305" y="369" font-size="12" fill="#eab308">IDM equal-lows 1.2542</text>
+
+  <!-- sweep of IDM -->
+  <line x1="250" y1="360" x2="250" y2="410" stroke="#f97316" stroke-width="2.5"/>
+  <rect x="242" y="370" width="16" height="30" fill="#ef4444" stroke="#f97316" stroke-width="1.5"/>
+  <text x="200" y="430" font-size="12.5" fill="#f97316" font-weight="bold">03:20 — Sweep IDM 1.2538 → reclaim 1.2545</text>
+
+  <!-- OB zone -->
+  <rect x="60" y="470" width="300" height="45" fill="#22c55e" opacity="0.2"/>
+  <text x="70" y="490" font-size="12.5" fill="#e2e8f0">H1 bullish OB 1.2515–1.2528</text>
+  <text x="70" y="505" font-size="11" fill="#94a3b8">POI thật</text>
+
+  <!-- continuation to OB -->
+  <line x1="300" y1="400" x2="380" y2="480" stroke="#94a3b8" stroke-width="2" stroke-dasharray="3,3"/>
+
+  <!-- MSS displacement -->
+  <text x="400" y="440" font-size="13" fill="#22c55e" font-weight="bold">03:35 — Bullish MSS</text>
+  <line x1="420" y1="480" x2="420" y2="360" stroke="#22c55e" stroke-width="2.5"/>
+  <rect x="410" y="370" width="20" height="100" fill="#22c55e"/>
+  <text x="400" y="345" font-size="11.5" fill="#94a3b8">phá lower-high 1.2536, đóng 1.2547</text>
+
+  <!-- FVG -->
+  <rect x="410" y="400" width="110" height="45" fill="#22c55e" opacity="0.25"/>
+  <text x="416" y="418" font-size="12" fill="#e2e8f0">FVG</text>
+  <text x="416" y="433" font-size="11" fill="#94a3b8">1.2524–1.2530</text>
+
+  <!-- entry -->
+  <circle cx="465" cy="425" r="6" fill="#38bdf8"/>
+  <text x="478" y="429" font-size="13" fill="#38bdf8" font-weight="bold">Entry 03:48 @ 1.2527</text>
+
+  <!-- stop -->
+  <line x1="60" y1="500" x2="1140" y2="500" stroke="#ef4444" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="960" y="518" font-size="13" fill="#ef4444">Stop 1.2510 (dưới OB, buffer nhẹ)</text>
+
+  <!-- path to targets -->
+  <line x1="465" y1="425" x2="700" y2="255" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="620" y="235" font-size="12" fill="#94a3b8">08:15 chạm T1, dời stop về entry</text>
+  <line x1="700" y1="255" x2="960" y2="140" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="800" y="180" font-size="12" fill="#94a3b8">13:30 chạm T2 1.2680</text>
+  <circle cx="960" cy="140" r="6" fill="#a78bfa"/>
+
+  <!-- results -->
+  <rect x="820" y="470" width="320" height="110" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="835" y="495" font-size="14" font-weight="bold" fill="#e2e8f0">Kết quả</text>
+  <text x="835" y="516" font-size="13" fill="#e2e8f0">Rủi ro: 17 pip</text>
+  <text x="835" y="535" font-size="13" fill="#e2e8f0">Lợi nhuận: 153 pip</text>
+  <text x="835" y="558" font-size="15" fill="#22c55e" font-weight="bold">Kết quả: +9.0R</text>
+
+  <text x="600" y="650" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-style="italic">Bài học: chuỗi IDM→POI hoàn chỉnh, sạch, trong kill zone — không phải setup "thường" — thường cho R vượt xa kỳ vọng ban đầu.</text>
+</svg>

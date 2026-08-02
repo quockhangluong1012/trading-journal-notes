@@ -1,0 +1,78 @@
+<svg viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1280" height="760" rx="14" fill="#131722"/>
+  <rect x="1" y="1" width="1278" height="758" rx="14" fill="none" stroke="#2a2e39"/>
+
+  <text x="32" y="42" font-size="26" font-weight="bold" fill="#d1d4dc">NQ Long — Skip đúng vì OTE mép-wick chạm sớm 53 điểm</text>
+  <text x="32" y="66" font-size="15" fill="#787b86">NQ futures, phiên NY AM — anchor sweep-high vs anchor body-high cho hai vùng entry khác nhau</text>
+
+  <!-- Time axis labels -->
+  <text x="90" y="700" font-size="13" fill="#ff9800">08:30</text>
+  <text x="330" y="700" font-size="13" fill="#ff9800">09:30</text>
+  <text x="620" y="700" font-size="13" fill="#ff9800">10:00</text>
+  <text x="900" y="700" font-size="13" fill="#ff9800">10:15</text>
+  <text x="1120" y="700" font-size="13" fill="#ff9800">10:45</text>
+
+  <!-- decline leg to low -->
+  <g>
+    <rect x="80" y="330" width="16" height="60" fill="#ef5350" rx="1"/><line x1="88" y1="320" x2="88" y2="400" stroke="#ef5350"/>
+    <rect x="110" y="370" width="16" height="70" fill="#ef5350" rx="1"/><line x1="118" y1="358" x2="118" y2="450" stroke="#ef5350"/>
+    <rect x="140" y="430" width="16" height="80" fill="#ef5350" rx="1"/><line x1="148" y1="415" x2="148" y2="522" stroke="#ef5350"/>
+    <rect x="170" y="490" width="16" height="50" fill="#ef5350" rx="1"/><line x1="178" y1="478" x2="178" y2="552" stroke="#ef5350"/>
+  </g>
+  <!-- low anchor -->
+  <line x1="60" y1="540" x2="1220" y2="540" stroke="#787b86" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="1080" y="536" font-size="13" fill="#787b86">Swing low 20,180</text>
+
+  <!-- displacement leg up -->
+  <g>
+    <rect x="210" y="420" width="16" height="90" fill="#26a69a" rx="1"/><line x1="218" y1="408" x2="218" y2="530" stroke="#26a69a"/>
+    <rect x="240" y="330" width="16" height="90" fill="#26a69a" rx="1"/><line x1="248" y1="315" x2="248" y2="425" stroke="#26a69a"/>
+    <!-- displacement candle with body close then long upper wick -->
+    <rect x="270" y="245" width="16" height="80" fill="#26a69a" rx="1"/><line x1="278" y1="150" x2="278" y2="330" stroke="#26a69a" stroke-width="2"/>
+    <rect x="300" y="255" width="16" height="30" fill="#ef5350" rx="1"/><line x1="308" y1="245" x2="308" y2="295" stroke="#ef5350"/>
+  </g>
+
+  <!-- body-high (close of displacement candle) -->
+  <line x1="60" y1="245" x2="1220" y2="245" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="1000" y="240" font-size="13" fill="#4a90d9">Body-high (Anchor B) 20,381</text>
+  <!-- wick-high (Anchor A) -->
+  <line x1="60" y1="152" x2="1220" y2="152" stroke="#b48ead" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="1000" y="147" font-size="13" fill="#b48ead">Wick-high (Anchor A) 20,412</text>
+
+  <!-- OTE zone Anchor A (wick) higher up -->
+  <rect x="60" y="330" width="1100" height="45" fill="#b48ead" opacity="0.12" stroke="#b48ead" stroke-dasharray="6 4" stroke-opacity="0.6"/>
+  <text x="70" y="325" font-size="13" fill="#b48ead">OTE Anchor A (62-79%): 20,308 - 20,253</text>
+
+  <!-- OTE zone Anchor B (body) lower -->
+  <rect x="60" y="405" width="1100" height="45" fill="#4a90d9" opacity="0.12" stroke="#4a90d9" stroke-dasharray="6 4" stroke-opacity="0.6"/>
+  <text x="70" y="400" font-size="13" fill="#4a90d9">OTE Anchor B (62-79%): 20,255 - 20,197</text>
+
+  <!-- retrace candles pulling back into Anchor A OTE only -->
+  <g>
+    <rect x="360" y="345" width="16" height="30" fill="#ef5350" rx="1"/><line x1="368" y1="335" x2="368" y2="380" stroke="#ef5350"/>
+    <rect x="390" y="355" width="16" height="25" fill="#ef5350" rx="1"/><line x1="398" y1="345" x2="398" y2="388" stroke="#ef5350"/>
+    <rect x="420" y="350" width="16" height="20" fill="#26a69a" rx="1"/><line x1="428" y1="340" x2="428" y2="378" stroke="#26a69a"/>
+  </g>
+  <!-- annotation: entry taken at Anchor A CE, price never reaches Anchor B zone -->
+  <line x1="420" y1="345" x2="420" y2="300" stroke="#f2c94c" stroke-dasharray="3 3"/>
+  <text x="360" y="290" font-size="14" fill="#f2c94c">Entry that theo Anchor A tai 20,308</text>
+  <text x="360" y="308" font-size="14" fill="#ff6b6b">-&gt; danh gia lai: chi la 38% cua Anchor B</text>
+
+  <!-- continue trending up without ever reaching Anchor B zone -->
+  <g>
+    <rect x="460" y="270" width="16" height="70" fill="#26a69a" rx="1"/><line x1="468" y1="255" x2="468" y2="345" stroke="#26a69a"/>
+    <rect x="490" y="200" width="16" height="75" fill="#26a69a" rx="1"/><line x1="498" y1="185" x2="498" y2="280" stroke="#26a69a"/>
+  </g>
+
+  <!-- box: what would have happened if waited for Anchor B -->
+  <rect x="700" y="470" width="480" height="200" fill="#1c2030" stroke="#ff6b6b" stroke-dasharray="6 4"/>
+  <text x="716" y="498" font-size="16" font-weight="bold" fill="#ff6b6b">✗ NEU CHO ANCHOR B (chuan hon)</text>
+  <text x="716" y="524" font-size="14" fill="#d1d4dc">Limit tai 20,255 khong bao gio bi cham</text>
+  <text x="716" y="546" font-size="14" fill="#d1d4dc">Gia dao that o 20,296 (thap nhat retrace)</text>
+  <text x="716" y="568" font-size="14" fill="#d1d4dc">roi chay thang len 20,470</text>
+  <text x="716" y="596" font-size="14" fill="#f2c94c">Ket qua: Anchor A dung, Anchor B bo lo</text>
+  <text x="716" y="618" font-size="14" fill="#f2c94c">ca setup — day la ly do phai CHON</text>
+  <text x="716" y="640" font-size="14" fill="#f2c94c">TRUOC 1 giao thuc, khong doi ca hai</text>
+
+  <text x="60" y="730" font-size="13" fill="#565b66">Tái dựng minh họa từ mẫu backtest NQ H1/M15 — không phải giao dịch thật.</text>
+</svg>

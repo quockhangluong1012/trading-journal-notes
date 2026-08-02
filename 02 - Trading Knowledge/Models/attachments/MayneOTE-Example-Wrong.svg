@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="17" font-weight="700" fill="#e5e7eb" text-anchor="start">Ví dụ SAI — vào giữa range, OTE ngược bias, không confirmation</text>
+
+<defs>
+<marker id="arrRedW" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#f87171"/>
+</marker>
+</defs>
+
+<rect x="50" y="120" width="860" height="170" fill="rgba(34,197,94,0.08)" stroke="none"/>
+<rect x="50" y="290" width="860" height="170" fill="rgba(239,68,68,0.08)" stroke="none"/>
+<text x="60" y="138" font-size="12" fill="#94a3b8" text-anchor="start">Discount</text>
+<text x="60" y="308" font-size="12" fill="#94a3b8" text-anchor="start">Premium</text>
+<line x1="50" y1="290" x2="910" y2="290" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 4"/>
+<text x="700" y="286" font-size="11" fill="#94a3b8" text-anchor="start">EQ 50% dealing range</text>
+
+<!-- downtrend structure (LH-LL) — bias is bearish -->
+<line x1="80" y1="150" x2="80" y2="120" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="73.5" y="125" width="13" height="15" fill="#22c55e"/>
+<text x="80" y="112" font-size="11" fill="#94a3b8" text-anchor="middle">LH (đỉnh thấp hơn)</text>
+
+<line x1="104" y1="140" x2="104" y2="230" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="97.5" y="140" width="13" height="70" fill="#ef4444"/>
+<line x1="128" y1="220" x2="128" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="121.5" y="220" width="13" height="90" fill="#ef4444"/>
+<text x="128" y="350" font-size="11" fill="#94a3b8" text-anchor="middle">LL (đáy thấp hơn) — downtrend</text>
+
+<!-- pullback candles into premium — trader buys here (WRONG) -->
+<line x1="152" y1="320" x2="152" y2="260" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="145.5" y="265" width="13" height="55" fill="#22c55e"/>
+<line x1="176" y1="265" x2="176" y2="200" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="169.5" y="205" width="13" height="60" fill="#22c55e"/>
+
+<!-- OTE zone drawn incorrectly on the pullback, in premium, against bias -->
+<rect x="196" y="150" width="90" height="55" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="200" y="146" font-size="11" fill="#3b82f6" text-anchor="start">OTE "đẹp" nhưng ở Premium</text>
+
+<!-- red X mark -->
+<text x="330" y="185" font-size="26" font-weight="700" fill="#f87171" text-anchor="start">✗</text>
+<text x="200" y="230" font-size="12" fill="#f87171" text-anchor="start">(a) Long ở PREMIUM — ngược vị trí đúng</text>
+
+<!-- market order without confirmation -->
+<line x1="196" y1="200" x2="196" y2="175" stroke="#f87171" stroke-width="2.5" marker-end="url(#arrRedW)"/>
+<text x="196" y="242" font-size="12" fill="#f87171" text-anchor="start">(b) Market order ngay, không chờ MSS</text>
+
+<!-- price then reverses down hard, confirming the downtrend (bias) -->
+<line x1="220" y1="180" x2="220" y2="260" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="213.5" y="180" width="13" height="80" fill="#ef4444"/>
+<line x1="244" y1="255" x2="244" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="237.5" y="255" width="13" height="105" fill="#ef4444"/>
+<line x1="268" y1="350" x2="268" y2="460" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="261.5" y="350" width="13" height="110" fill="#ef4444"/>
+<text x="268" y="480" font-size="12" fill="#f87171" text-anchor="middle">(c) HTF bias thắng — SL bị quét</text>
+
+<line x1="50" y1="470" x2="910" y2="470" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="700" y="465" font-size="11" fill="#94a3b8" text-anchor="start">SSL — nơi giá thực sự đi tới</text>
+
+<text x="400" y="150" font-size="12" fill="#94a3b8" text-anchor="start">Cấu trúc HTF là DOWNTREND (LH-LL)</text>
+<text x="400" y="170" font-size="12" fill="#94a3b8" text-anchor="start">→ chỉ nên SHORT tại premium, không LONG</text>
+
+<text x="480" y="580" font-size="12" fill="#94a3b8" text-anchor="middle">Chart minh họa khái niệm sai cấu trúc kịch bản — không phải dữ liệu giao dịch thật.</text>
+</svg>

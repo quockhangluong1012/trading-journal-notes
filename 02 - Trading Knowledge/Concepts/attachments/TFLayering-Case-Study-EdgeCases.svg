@@ -1,0 +1,40 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="32" font-size="15" font-weight="700" fill="#1F2937">3 edge case của Timeframe Layering (kinh nghiệm thực chiến)</text>
+<text x="24" y="52" font-size="11.5" fill="#6B7280">Minh họa khái niệm · những ca mà quy tắc "chờ M15 confirm" phải uốn theo bối cảnh</text>
+<!-- A -->
+<rect x="24" y="66" width="352" height="196" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="38" y="88" font-size="12" font-weight="700" fill="#B45309">A. M15 đã MSS nhưng M5 chưa cho entry</text>
+<rect x="44" y="150" width="322" height="26" fill="#7C3AED" opacity="0.10"/>
+<text x="48" y="146" font-size="8.5" fill="#6D28D9">FVG M15 (chưa được retest)</text>
+<path d="M60,210 L95,175 L130,150 L165,130 L195,120" fill="none" stroke="#374151" stroke-width="2"/>
+<text x="38" y="234" font-size="9.5" fill="#374151">Cấu trúc HTF đã xác nhận, nhưng giá chưa lùi</text>
+<text x="38" y="248" font-size="9.5" font-weight="700" fill="#15803D">→ chờ retrace về FVG; KHÔNG đuổi theo M5</text>
+<!-- B -->
+<rect x="384" y="66" width="352" height="196" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="398" y="88" font-size="12" font-weight="700" fill="#B91C1C">B. Displacement M15 khổng lồ → không retrace</text>
+<path d="M404,220 L430,205 L450,150 L470,105 L500,100 L540,102 L590,105 L640,108 L700,110" fill="none" stroke="#374151" stroke-width="2.1"/>
+<text x="470" y="140" font-size="8.5" fill="#B91C1C">nến M15 quá lớn</text>
+<text x="540" y="132" font-size="8.5" fill="#374151">giá đi luôn, không về FVG</text>
+<text x="398" y="234" font-size="9.5" fill="#374151">Chờ FVG M15 = bỏ lỡ. Lựa chọn: xuống M1 tìm</text>
+<text x="398" y="248" font-size="9.5" font-weight="700" fill="#B45309">FVG con, HOẶC bỏ qua — không chase mép.</text>
+<!-- C -->
+<rect x="24" y="274" width="712" height="196" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="38" y="296" font-size="12" font-weight="700" fill="#1D4ED8">C. Chọn khung xác nhận theo PHIÊN &amp; instrument</text>
+<rect x="44" y="312" width="220" height="140" rx="6" fill="#EFF6FF"/>
+<text x="54" y="332" font-size="10.5" font-weight="700" fill="#1D4ED8">Asia / volatility thấp</text>
+<text x="54" y="352" font-size="9.5" fill="#374151">Nến M15 quá nhỏ, ít tín hiệu</text>
+<text x="54" y="368" font-size="9.5" font-weight="700" fill="#15803D">→ có thể HẠ xuống M5 xác nhận</text>
+<text x="54" y="388" font-size="9.5" fill="#374151">(chấp nhận nhiễu cao hơn chút)</text>
+<rect x="278" y="312" width="220" height="140" rx="6" fill="#FEF2F2"/>
+<text x="288" y="332" font-size="10.5" font-weight="700" fill="#B91C1C">Tin NFP/CPI · NQ volatility cao</text>
+<text x="288" y="352" font-size="9.5" fill="#374151">M5 sinh rất nhiều "MSS giả"</text>
+<text x="288" y="368" font-size="9.5" font-weight="700" fill="#B91C1C">→ NÂNG khung xác nhận lên M15/H1</text>
+<text x="288" y="388" font-size="9.5" fill="#374151">chỉ tin displacement đóng thân rõ</text>
+<rect x="512" y="312" width="204" height="140" rx="6" fill="#F0FDF4"/>
+<text x="522" y="332" font-size="10.5" font-weight="700" fill="#166534">Nguyên tắc bất biến</text>
+<text x="522" y="352" font-size="9.5" fill="#374151">Giữ tỷ lệ ~1 bậc fractal</text>
+<text x="522" y="366" font-size="9.5" fill="#374151">(3–5 lần), KHÔNG 12 lần.</text>
+<text x="522" y="386" font-size="9.5" fill="#374151">Con số khung đổi theo phiên,</text>
+<text x="522" y="400" font-size="9.5" font-weight="700" fill="#166534">nhưng tỷ lệ thì không.</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 4 — No-Trade đúng (Breaker &amp; FVG tách rời)</text>
+<line x1="90" y1="470" x2="90" y2="430" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="83.0" y="440" width="14" height="20" fill="#ef4444"/>
+<line x1="126" y1="450" x2="126" y2="412" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="119.0" y="420" width="14" height="20" fill="#ef4444"/>
+<line x1="162" y1="430" x2="162" y2="395" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="155.0" y="405" width="14" height="15" fill="#ef4444"/>
+<line x1="198" y1="412" x2="198" y2="335" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="191.0" y="340" width="14" height="65" fill="#22c55e"/>
+<line x1="234" y1="346" x2="234" y2="295" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="227.0" y="300" width="14" height="40" fill="#22c55e"/>
+<line x1="270" y1="330" x2="270" y2="290" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="263.0" y="300" width="14" height="20" fill="#ef4444"/>
+<line x1="306" y1="326" x2="306" y2="275" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="299.0" y="280" width="14" height="40" fill="#22c55e"/>
+<line x1="342" y1="286" x2="342" y2="244" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="335.0" y="250" width="14" height="30" fill="#22c55e"/>
+<rect x="76" y="380" width="288" height="47" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="76" y="374" font-size="12" font-weight="400" fill="#ec4899" text-anchor="start">Breaker (trên)</text>
+<rect x="76" y="244" width="288" height="41" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="76" y="300" font-size="12" font-weight="400" fill="#3b82f6" text-anchor="start">FVG (dưới)</text>
+<line x1="76" y1="300" x2="388" y2="300" stroke="#f87171" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="418" y="335" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">✘ Thước đo: KHÔNG cắt nhau</text>
+<text x="76" y="460" font-size="13" font-weight="700" fill="#4ade80" text-anchor="start">Quyết định ĐÚNG: đứng ngoài — đây là FVG đơn/Breaker đơn, không phải Unicorn</text>
+<text x="32" y="560" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Đo trước, tin sau — một No-Trade kỷ luật là một quyết định tốt, không phải cơ hội bị bỏ lỡ.</text>
+<text x="32" y="580" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa — không phải chart giá thật.</text>
+</svg>

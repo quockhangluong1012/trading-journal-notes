@@ -84,7 +84,7 @@ Hai điểm tâm lý/quy trình đáng ghi nhận từ backtest hôm nay (chưa 
 
 Đã thêm dòng mới cho 3 goal có chuyển động thật hôm nay:
 - **[[Build a statistically validated backtest sample]]**: thêm dòng 2026-07-16 — sync tổng 17→**20** (đính chính luôn phần thiếu 1 note của 07-15), `progress` frontmatter 8→**10**.
-- **[[Master the ICT 2022 Model]]**: thêm dòng 2026-07-16 — sync setup 17→**20**, win rate 76%→**80%** (n=20), nêu rõ mismatch progress/cột mốc (giữ nguyên `progress: 30` vì không rõ công thức gốc, chỉ nêu mismatch để Khang tự quyết).
+- **[[Master the ICT 2022 Model]]**: thêm dòng 2026-07-16 — sync setup 17→**20**, win rate 76%→**80%** (n=20), nêu rõ mismatch progress/cột mốc (giữ nguyên `progress: 30` vì không rõ công thức gốc, chỉ nêu mismatch để  tự quyết).
 - **[[Hold daily journaling and process discipline]]**: thêm dòng 2026-07-16 — chuỗi journaling ngày 12, chuỗi backtest ngày 11.
 
 **Không thêm dòng** cho 3 goal còn lại vì không có chuyển động thật hôm nay:

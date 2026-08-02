@@ -1,0 +1,31 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ SAI — CISD giữa range, chưa sweep, ngược bias</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Bias bearish nhưng long chỉ vì "một nến đóng qua open chuỗi giảm" — không sweep, giữa range → giá về SSL, chạm stop</text>
+  <rect x="24" y="70" width="712" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- range boundaries -->
+  <line x1="60" y1="120" x2="700" y2="120" stroke="#94A3B8" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="66" y="114" font-size="10" fill="#475569">Đỉnh range (BSL — chưa liên quan)</text>
+  <line x1="60" y1="410" x2="700" y2="410" stroke="#B91C1C" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="66" y="428" font-size="10" font-weight="700" fill="#B91C1C">SSL đáy range = draw THẬT (bias bearish)</text>
+  <line x1="60" y1="265" x2="700" y2="265" stroke="#9CA3AF" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="606" y="259" font-size="10" fill="#6B7280">Equilibrium — no man's land</text>
+
+  <line x1="150" y1="240" x2="470" y2="240" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="8 4"/>
+  <text x="300" y="234" font-size="10.5" font-weight="700" fill="#0284C7">CISD level — nhưng GIỮA RANGE</text>
+
+  <rect x="150" y="240" width="2" height="40" fill="#DC2626"/><rect x="142" y="242" width="14" height="32" fill="#DC2626" rx="1"/>
+  <rect x="182" y="256" width="2" height="44" fill="#DC2626"/><rect x="174" y="260" width="14" height="34" fill="#DC2626" rx="1"/>
+  <rect x="220" y="210" width="2" height="110" fill="#16A34A"/><rect x="212" y="224" width="14" height="90" fill="#16A34A" rx="1"/>
+  <text x="230" y="216" font-size="10" font-weight="700" fill="#B91C1C">Long ở đây (SAI) — chưa có sweep nào</text>
+  <circle cx="219" cy="240" r="6" fill="#DC2626"/>
+  <text x="150" y="470" font-size="1" fill="#fff"> </text>
+
+  <!-- price continues down to SSL -->
+  <path d="M226,224 L300,270 L380,320 L470,370 L560,405" fill="none" stroke="#DC2626" stroke-width="2.6"/>
+  <text x="470" y="352" font-size="10.5" font-weight="700" fill="#B91C1C">Giá tiếp tục về SSL (draw thật) → stop bị hit</text>
+  <path d="M226,224 L235,215 M226,224 L217,215" stroke="#DC2626" stroke-width="1"/>
+
+  <text x="40" y="440" font-size="10.5" fill="#6B7280">Không sweep = không có "lý do đảo chiều". CISD ngược bias, giữa range chỉ là nhiễu pullback.</text>
+</svg>

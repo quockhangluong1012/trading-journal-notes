@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="800" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế Implied FVG: Midpoint bóng nến = ranh giới mật độ giao dịch</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">Vì sao trung điểm bóng, không phải high/low thô, xấp xỉ đúng ranh giới imbalance</text>
+
+  <!-- Panel 1: wick anatomy -->
+  <rect x="40" y="90" width="540" height="320" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="60" y="118" font-size="16" fill="#e2e8f0" font-weight="bold">1. Giải phẫu một bóng nến dài</text>
+
+  <line x1="200" y1="380" x2="200" y2="150" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="180" y="240" width="40" height="100" fill="#22c55e"/>
+  <text x="240" y="200" font-size="12" fill="#94a3b8">Bóng trên</text>
+
+  <!-- density gradient zones -->
+  <rect x="180" y="150" width="40" height="45" fill="#38bdf8" opacity="0.12"/>
+  <rect x="180" y="195" width="40" height="45" fill="#38bdf8" opacity="0.35"/>
+  <line x1="160" y1="195" x2="380" y2="195" stroke="#eab308" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="390" y="199" font-size="13" fill="#eab308">Midpoint bóng</text>
+
+  <text x="240" y="170" font-size="12" fill="#94a3b8">Mật độ giao dịch THẤP</text>
+  <text x="240" y="175" font-size="11" fill="#64748b">(cú quét nhanh, rút ngay)</text>
+  <text x="240" y="222" font-size="12" fill="#38bdf8">Mật độ giao dịch CAO</text>
+  <text x="240" y="227" font-size="11" fill="#64748b">(gần thân nến, giá "ở lại" lâu hơn)</text>
+
+  <text x="60" y="370" font-size="13" fill="#e2e8f0">→ Midpoint xấp xỉ ranh giới giữa 2 vùng mật độ</text>
+  <text x="60" y="390" font-size="13" fill="#e2e8f0">→ Đây chính là "biên" của Implied FVG</text>
+
+  <!-- Panel 2: 4-candle cluster -->
+  <rect x="620" y="90" width="540" height="320" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="640" y="118" font-size="16" fill="#e2e8f0" font-weight="bold">2. Cụm 4 nến — bóng chồng lấp che FVG</text>
+
+  <line x1="680" y1="330" x2="680" y2="290" stroke="#22c55e" stroke-width="2"/>
+  <rect x="669" y="300" width="22" height="25" fill="#22c55e"/>
+  <text x="680" y="350" font-size="11" fill="#94a3b8" text-anchor="middle">N1</text>
+
+  <line x1="750" y1="340" x2="750" y2="200" stroke="#22c55e" stroke-width="2"/>
+  <rect x="739" y="230" width="22" height="90" fill="#22c55e"/>
+  <text x="750" y="360" font-size="11" fill="#94a3b8" text-anchor="middle">N2 (lớn)</text>
+
+  <line x1="820" y1="300" x2="820" y2="150" stroke="#22c55e" stroke-width="2"/>
+  <rect x="809" y="180" width="22" height="100" fill="#22c55e"/>
+  <text x="820" y="320" font-size="11" fill="#94a3b8" text-anchor="middle">N3 (lớn)</text>
+
+  <line x1="890" y1="200" x2="890" y2="160" stroke="#22c55e" stroke-width="2"/>
+  <rect x="879" y="170" width="22" height="25" fill="#22c55e"/>
+  <text x="890" y="220" font-size="11" fill="#94a3b8" text-anchor="middle">N4</text>
+
+  <!-- overlap zone shown -->
+  <rect x="739" y="200" width="70" height="30" fill="#f97316" opacity="0.35"/>
+  <text x="905" y="218" font-size="12" fill="#f97316">Bóng N2 &amp; N3 chồng lấp</text>
+  <text x="905" y="235" font-size="11" fill="#94a3b8">→ high/low thô KHÔNG cho gap rõ</text>
+
+  <!-- CE lines -->
+  <line x1="739" y1="230" x2="900" y2="230" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="905" y="255" font-size="12" fill="#eab308">CE bóng N2 (hướng lên)</text>
+  <line x1="739" y1="200" x2="900" y2="200" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="905" y="195" font-size="12" fill="#eab308">CE bóng N3 (hướng xuống)</text>
+
+  <rect x="739" y="200" width="70" height="30" fill="#22c55e" opacity="0.3"/>
+  <text x="640" y="395" font-size="13" fill="#a78bfa">Vùng giữa 2 CE = Implied FVG (không phải high/low thô)</text>
+
+  <!-- Panel 3: comparison table -->
+  <rect x="40" y="440" width="1120" height="180" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="60" y="468" font-size="16" fill="#e2e8f0" font-weight="bold">3. Đối chiếu khung lý thuyết</text>
+  <line x1="60" y1="485" x2="1140" y2="485" stroke="#334155"/>
+
+  <text x="80" y="510" font-size="14" fill="#94a3b8" font-weight="bold">Auction Market Theory</text>
+  <text x="80" y="530" font-size="13" fill="#e2e8f0">"Excess" — đuôi TPO một chạm</text>
+  <text x="80" y="548" font-size="12" fill="#94a3b8">Đo bằng số lần TPO (thời gian)</text>
+
+  <line x1="420" y1="495" x2="420" y2="605" stroke="#334155"/>
+  <text x="440" y="510" font-size="14" fill="#94a3b8" font-weight="bold">Wyckoff</text>
+  <text x="440" y="530" font-size="13" fill="#e2e8f0">Upthrust / Spring bị từ chối</text>
+  <text x="440" y="548" font-size="12" fill="#94a3b8">Gắn với giai đoạn phân phối/tích lũy</text>
+
+  <line x1="780" y1="495" x2="780" y2="605" stroke="#334155"/>
+  <text x="800" y="510" font-size="14" fill="#94a3b8" font-weight="bold">Orderflow / Footprint</text>
+  <text x="800" y="530" font-size="13" fill="#e2e8f0">Delta thấp tại vùng đuôi nến</text>
+  <text x="800" y="548" font-size="12" fill="#94a3b8">Bằng chứng TRỰC TIẾP nhất cho midpoint</text>
+
+  <rect x="40" y="650" width="1120" height="130" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="60" y="678" font-size="15" fill="#e2e8f0" font-weight="bold">Hệ quả thực chiến</text>
+  <text x="60" y="702" font-size="13" fill="#e2e8f0">Implied FVG là phép xấp xỉ THỐNG KÊ cho phân bố mật độ giao dịch khi không có volume-at-price thật.</text>
+  <text x="60" y="724" font-size="13" fill="#e2e8f0">Sai số của midpoint tăng theo độ dài bóng nến — càng biến động cao, càng kém chính xác.</text>
+  <text x="60" y="746" font-size="13" fill="#94a3b8">Nếu có footprint, luôn ưu tiên volume node thật thay vì suy luận hình học midpoint.</text>
+</svg>

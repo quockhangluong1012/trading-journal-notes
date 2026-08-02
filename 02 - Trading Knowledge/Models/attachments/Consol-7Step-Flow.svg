@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Arial, sans-serif">
+<defs><marker id="arrBlueF" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/></marker></defs>
+<rect width="960" height="400" rx="12" fill="#0d1117"/>
+<text x="480.0" y="34.0" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">7 bước thực thi Consolidation Trading</text>
+<rect x="60.0" y="150.0" width="108.0" height="90.0" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="114.0" y="188.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">1. Xác định</text>
+<text x="114.0" y="206.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">bias HTF</text>
+<line x1="170.0" y1="195.0" x2="180.0" y2="195.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlueF)"/>
+<rect x="182.0" y="150.0" width="108.0" height="90.0" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="236.0" y="188.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">2. Vẽ range</text>
+<text x="236.0" y="206.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">+ CE</text>
+<line x1="292.0" y1="195.0" x2="302.0" y2="195.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlueF)"/>
+<rect x="304.0" y="150.0" width="108.0" height="90.0" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="358.0" y="188.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">3. Đánh dấu</text>
+<text x="358.0" y="206.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">liquidity mép</text>
+<line x1="414.0" y1="195.0" x2="424.0" y2="195.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlueF)"/>
+<rect x="426.0" y="150.0" width="108.0" height="90.0" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="480.0" y="188.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">4. Chờ sweep</text>
+<text x="480.0" y="206.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">ngược bias</text>
+<line x1="536.0" y1="195.0" x2="546.0" y2="195.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlueF)"/>
+<rect x="548.0" y="150.0" width="108.0" height="90.0" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="602.0" y="188.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">5. MSS</text>
+<text x="602.0" y="206.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">xác nhận LTF</text>
+<line x1="658.0" y1="195.0" x2="668.0" y2="195.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlueF)"/>
+<rect x="670.0" y="150.0" width="108.0" height="90.0" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="724.0" y="188.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">6. Entry</text>
+<text x="724.0" y="206.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">+ stop</text>
+<line x1="780.0" y1="195.0" x2="790.0" y2="195.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlueF)"/>
+<rect x="792.0" y="150.0" width="108.0" height="90.0" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="846.0" y="188.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">7. Target</text>
+<text x="846.0" y="206.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">mép đối diện</text>
+<text x="480.0" y="290.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Bước 1, 4, 5 (viền xanh) là bắt buộc quan trọng nhất</text>
+<text x="480.0" y="312.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Bỏ qua bất kỳ bước nào khác cũng làm giảm chất lượng setup</text>
+</svg>

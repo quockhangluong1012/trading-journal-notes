@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="480" y1="70" x2="480" y2="500"/>
+  </g>
+
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">Case 1 (Gap-mitigated, khong entry) vs Case 3 (Wick sau, body nong, van hop le)</text>
+
+  <!-- LEFT: Case 1 -->
+  <text x="30" y="78" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#ef5350">Case 1: GBPUSD H4 - OB bi mitigate bang gap cuoi tuan</text>
+
+  <rect x="60" y="180" width="220" height="55" fill="rgba(41,98,255,0.25)"/>
+  <text x="60" y="175" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Bullish OB H4 (discount)</text>
+
+  <!-- friday close far above -->
+  <rect x="90" y="100" width="14" height="18" fill="#26a69a"/><line x1="97" y1="92" x2="97" y2="122" stroke="#26a69a" stroke-width="1.5"/>
+  <text x="60" y="140" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc">Dong cua thu Sau (tren OB)</text>
+
+  <line x1="97" y1="122" x2="97" y2="220" stroke="#ef5350" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="105" y="170" font-family="Arial, sans-serif" font-size="12" fill="#ef5350">GAP cuoi tuan (tin chinh tri)</text>
+
+  <!-- Monday open deep in OB -->
+  <rect x="150" y="215" width="16" height="25" fill="#ef5350"/><line x1="158" y1="207" x2="158" y2="248" stroke="#ef5350" stroke-width="1.5"/>
+  <text x="170" y="230" font-family="Arial, sans-serif" font-size="12" fill="#ef5350">Mo cua T2: depth approx 90% ngay lap tuc</text>
+
+  <text x="60" y="270" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Khong nen test dan nao - nhay coc qua toan bo</text>
+  <text x="60" y="292" font-family="Arial, sans-serif" font-size="13" fill="#ef5350">Quyet dinh: KHONG entry, cho test lai lan 2</text>
+
+  <!-- later continues down through OB -->
+  <rect x="200" y="250" width="12" height="20" fill="#ef5350"/><line x1="206" y1="243" x2="206" y2="275" stroke="#ef5350" stroke-width="1.5"/>
+  <rect x="220" y="265" width="12" height="30" fill="#ef5350"/><line x1="226" y1="258" x2="226" y2="300" stroke="#ef5350" stroke-width="1.5"/>
+  <text x="60" y="330" font-family="Arial, sans-serif" font-size="13" fill="#ef5350">Ket qua: gia xuyen luon canh distal, vo hieu hoan toan</text>
+  <text x="30" y="370" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#ef5350">Bai hoc: gap-mitigation khong co bang chung test - tranh duoc thua tiem tang</text>
+
+  <!-- RIGHT: Case 3 -->
+  <text x="510" y="78" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#26a69a">Case 3: NQ1 M15 - wick sau nhung body nong, van hop le</text>
+
+  <rect x="540" y="180" width="220" height="55" fill="rgba(255,152,0,0.25)"/>
+  <text x="540" y="175" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Bearish OB M15 (premium)</text>
+
+  <!-- candle with long wick to distal but body near top -->
+  <rect x="620" y="185" width="16" height="12" fill="#26a69a"/>
+  <line x1="628" y1="178" x2="628" y2="232" stroke="#26a69a" stroke-width="2"/>
+  <text x="645" y="200" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc">Body dong: depth_body approx 35%</text>
+  <text x="645" y="225" font-family="Arial, sans-serif" font-size="12" fill="#f2c94c">Wick cham distal: depth_wick approx 95%</text>
+
+  <!-- confirmation candle down after -->
+  <rect x="660" y="240" width="14" height="30" fill="#ef5350"/><line x1="667" y1="232" x2="667" y2="275" stroke="#ef5350" stroke-width="1.5"/>
+  <rect x="680" y="260" width="14" height="35" fill="#ef5350"/><line x1="687" y1="252" x2="687" y2="300" stroke="#ef5350" stroke-width="1.5"/>
+  <text x="540" y="330" font-family="Arial, sans-serif" font-size="13" fill="#26a69a">Nen sau xac nhan giam tiep - dung theo body</text>
+  <text x="540" y="352" font-family="Arial, sans-serif" font-size="13" fill="#26a69a">Quyet dinh: van entry Short theo huong OB goc</text>
+
+  <text x="510" y="400" font-family="Arial, sans-serif" font-size="15" fill="#26a69a">Ket qua minh hoa: approx +1.8R</text>
+  <text x="510" y="440" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#26a69a">Bai hoc: wick sau la sweep bo sung, khong phai vo hieu neu body van ton trong OB</text>
+
+  <text x="30" y="500" font-family="Arial, sans-serif" font-size="15" font-style="italic" fill="#d1d4dc">Legend: xanh=tang, do=giam, xanh duong/cam=vung OB, do net dut=gap. So lieu minh hoa, khong phai thong ke thuc.</text>
+</svg>

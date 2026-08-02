@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 5 — XAU Win (grade A, phân biệt killzone)</text>
+<defs>
+<marker id="arrGreen5" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#4ade80"/>
+</marker>
+<marker id="arrGray5" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#94a3b8"/>
+</marker>
+</defs>
+<line x1="80" y1="466" x2="80" y2="444" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="74.0" y="450" width="12" height="10" fill="#ef4444"/>
+<line x1="110" y1="456" x2="110" y2="434" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="104.0" y="440" width="12" height="10" fill="#ef4444"/>
+<line x1="140" y1="460" x2="140" y2="430" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="134.0" y="440" width="12" height="15" fill="#ef4444"/>
+<line x1="170" y1="462" x2="170" y2="414" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="164.0" y="420" width="12" height="35" fill="#22c55e"/>
+<line x1="200" y1="426" x2="200" y2="398" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="194.0" y="405" width="12" height="15" fill="#22c55e"/>
+<rect x="68" y="396" width="164" height="20" fill="rgba(236,72,153,0.20)" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+<rect x="68" y="388" width="164" height="14" fill="rgba(59,130,246,0.22)" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="68" y="370" font-size="11.5" font-weight="700" fill="#94a3b8" text-anchor="start">Overlap đẹp nhưng NGOÀI killzone (Á)</text>
+<text x="68" y="460" font-size="12" font-weight="700" fill="#f87171" text-anchor="start">→ hạ cấp, KHÔNG vào</text>
+<line x1="320" y1="436" x2="320" y2="410" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="314.0" y="415" width="12" height="15" fill="#ef4444"/>
+<line x1="350" y1="420" x2="350" y2="390" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="344.0" y="395" width="12" height="20" fill="#ef4444"/>
+<line x1="380" y1="402" x2="380" y2="296" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="374.0" y="300" width="12" height="95" fill="#22c55e"/>
+<line x1="410" y1="308" x2="410" y2="214" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="404.0" y="220" width="12" height="80" fill="#22c55e"/>
+<line x1="440" y1="228" x2="440" y2="188" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="434.0" y="195" width="12" height="25" fill="#22c55e"/>
+<line x1="470" y1="258" x2="470" y2="183" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="464.0" y="195" width="12" height="55" fill="#ef4444"/>
+<line x1="500" y1="255" x2="500" y2="200" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="494.0" y="205" width="12" height="45" fill="#22c55e"/>
+<line x1="530" y1="212" x2="530" y2="135" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="524.0" y="140" width="12" height="65" fill="#22c55e"/>
+<line x1="306" y1="390" x2="560" y2="390" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="306" y="383" font-size="11" font-weight="400" fill="#eab308" text-anchor="start">SSL swept</text>
+<rect x="308" y="296" width="240" height="22" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="308" y="188" width="240" height="36" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="308" y="188" width="240" height="26" fill="rgba(168,85,247,0.35)" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="308" y1="201.0" x2="590" y2="201.0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="594" y="205.0" font-size="11" font-weight="400" fill="#38bdf8" text-anchor="start">Entry 50% CE — 12:30 macro (London/NY)</text>
+<text x="308" y="175" font-size="12" font-weight="700" fill="#4ade80" text-anchor="start">Overlap mới, đúng killzone → vào lệnh</text>
+<line x1="570" y1="140" x2="600" y2="100" stroke="#4ade80" stroke-width="2.5" marker-end="url(#arrGreen5)"/>
+<text x="604" y="95" font-size="12" font-weight="400" fill="#4ade80" text-anchor="start">→ ERL (+2.3R)</text>
+<text x="32" y="560" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Hai overlap hình học tương đương — chỉ khác THỜI ĐIỂM displacement hình thành quyết định chất lượng.</text>
+<text x="32" y="580" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa — không phải chart giá thật.</text>
+</svg>

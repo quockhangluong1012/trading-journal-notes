@@ -1,0 +1,30 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ đúng — NQ, NY AM (Long)</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Bias bullish (HTF discount) → sweep đáy phiên Á (SSL) → nến xanh đóng qua CISD level + FVG → entry retrace → BSL</text>
+  <rect x="24" y="70" width="712" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <line x1="140" y1="150" x2="700" y2="150" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="8 4"/>
+  <text x="470" y="143" font-size="10.5" font-weight="700" fill="#0284C7">CISD level (open chuỗi đỏ)</text>
+  <line x1="60" y1="392" x2="320" y2="392" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <text x="66" y="386" font-size="10" fill="#B45309">SSL — đáy phiên Á</text>
+  <line x1="60" y1="96" x2="700" y2="96" stroke="#15803D" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="600" y="90" font-size="10" font-weight="700" fill="#15803D">BSL = target (draw)</text>
+
+  <rect x="140" y="150" width="2" height="66" fill="#DC2626"/><rect x="132" y="150" width="16" height="58" fill="#DC2626" rx="1"/>
+  <rect x="176" y="204" width="2" height="70" fill="#DC2626"/><rect x="168" y="210" width="16" height="58" fill="#DC2626" rx="1"/>
+  <rect x="212" y="262" width="2" height="86" fill="#DC2626"/><rect x="204" y="268" width="16" height="70" fill="#DC2626" rx="1"/>
+  <rect x="248" y="320" width="2" height="80" fill="#DC2626"/><rect x="240" y="326" width="16" height="60" fill="#DC2626" rx="1"/>
+  <circle cx="249" cy="398" r="7" fill="none" stroke="#B45309" stroke-width="2.4"/>
+  <text x="150" y="420" font-size="10.5" font-weight="700" fill="#B45309">① Sweep SSL + rejection</text>
+
+  <rect x="296" y="120" width="2" height="290" fill="#16A34A"/><rect x="288" y="140" width="16" height="255" fill="#16A34A" rx="1"/>
+  <text x="312" y="132" font-size="10.5" font-weight="700" fill="#15803D">② Nến xanh đóng qua CISD level (displacement)</text>
+  <rect x="326" y="150" width="66" height="56" fill="#3B82F6" opacity="0.2"/>
+  <text x="396" y="182" font-size="10" font-weight="700" fill="#1D4ED8">③ FVG = vùng entry</text>
+  <path d="M308,150 L340,176 L362,200" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="362" cy="196" r="6" fill="#16A34A"/>
+  <text x="372" y="224" font-size="10" font-weight="700" fill="#15803D">④ Entry ở retrace (không đuổi)</text>
+  <path d="M362,200 L440,150 L540,118 L640,100" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+  <text x="470" y="450" font-size="10.5" fill="#6B7280">CISD thuận bias + ngay sau sweep + entry retrace về FVG → stop hợp lý, RR đẹp.</text>
+</svg>

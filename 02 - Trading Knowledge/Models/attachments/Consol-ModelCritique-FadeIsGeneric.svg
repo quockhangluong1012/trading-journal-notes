@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<defs><marker id="arrPurpleG" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#a855f7"/></marker></defs>
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480.0" y="36.0" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Fade breakout có bias — cùng cơ chế, khác từ vựng</text>
+<rect x="90.0" y="120.0" width="360.0" height="340.0" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<rect x="510.0" y="120.0" width="360.0" height="340.0" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="270.0" y="152.0" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">Range trading cổ điển</text>
+<text x="690.0" y="152.0" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">ICT Consolidation</text>
+<text x="114.0" y="190.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Mean-reversion trader</text>
+<text x="114.0" y="216.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Bán ở resistance /</text>
+<text x="114.0" y="242.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">mua ở support khi có bias</text>
+<text x="114.0" y="268.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Fade false breakout</text>
+<text x="534.0" y="190.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Sweep BSL / SSL</text>
+<text x="534.0" y="216.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">MSS xác nhận LTF</text>
+<text x="534.0" y="242.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">CE làm mốc 50%</text>
+<text x="534.0" y="268.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Fade sweep theo bias</text>
+<line x1="458.0" y1="290.0" x2="502.0" y2="290.0" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrPurpleG)"/>
+<line x1="502.0" y1="276.0" x2="458.0" y2="276.0" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrPurpleG)"/>
+<text x="480.0" y="264.0" font-size="12" font-weight="400" fill="#a855f7" text-anchor="middle">Cùng cơ chế thống kê,</text>
+<text x="480.0" y="324.0" font-size="12" font-weight="400" fill="#a855f7" text-anchor="middle">khác từ vựng</text>
+</svg>

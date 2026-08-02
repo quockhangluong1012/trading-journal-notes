@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="400" rx="12" fill="#0d1117"/>
+  <text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Case 5 — Miss vì hai trader chọn pool khác nhau (tranh chấp định nghĩa)</text>
+  <text x="32" y="58" font-size="12" fill="#94a3b8">Case tái dựng minh họa, số liệu hypothetical — không phải lệnh thật</text>
+
+  <g stroke="#1f2937" stroke-width="1">
+    <line x1="60" y1="140" x2="920" y2="140"/>
+    <line x1="60" y1="220" x2="920" y2="220"/>
+    <line x1="60" y1="300" x2="920" y2="300"/>
+  </g>
+
+  <!-- price sweeps only the tighter pool (Trader B's), not the wider one (Trader A's) -->
+  <line x1="60" y1="260" x2="500" y2="260" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="66" y="252" font-size="11.5" fill="#3b82f6">Trader A: Asia range low (chưa chạm)</text>
+
+  <line x1="60" y1="230" x2="500" y2="230" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="66" y="222" font-size="11.5" fill="#eab308">Trader B: pre-market low (đã chạm + reclaim)</text>
+
+  <g>
+    <line x1="200" y1="190" x2="200" y2="245" stroke="#9ca3af" stroke-width="1.5"/><rect x="194" y="198" width="12" height="30" fill="#22c55e"/>
+  </g>
+  <path d="M 220 235 q 12 10 -3 15" fill="none" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrM)"/>
+
+  <text x="300" y="330" font-size="12" fill="#e5e7eb" text-anchor="middle">Trader B vào lệnh theo "sweep" của mình → thắng nhỏ</text>
+  <text x="300" y="348" font-size="12" fill="#f87171" text-anchor="middle">Trader A đứng ngoài vì pool của mình chưa bị chạm → miss</text>
+
+  <rect x="560" y="150" width="330" height="120" rx="8" fill="rgba(168,85,247,0.10)" stroke="#a855f7" stroke-dasharray="4 3"/>
+  <text x="725" y="178" font-size="13" fill="#a855f7" text-anchor="middle" font-weight="700">Bài học</text>
+  <text x="725" y="202" font-size="11.5" fill="#e5e7eb" text-anchor="middle">Cả hai đều "đúng" theo quy tắc riêng —</text>
+  <text x="725" y="220" font-size="11.5" fill="#e5e7eb" text-anchor="middle">chứng minh Venom không có một</text>
+  <text x="725" y="238" font-size="11.5" fill="#e5e7eb" text-anchor="middle">định nghĩa pool phổ quát, khách quan.</text>
+  <text x="725" y="256" font-size="11" fill="#94a3b8" text-anchor="middle">Ghi rõ pool đã dùng vào log để so sánh dài hạn.</text>
+
+  <defs><marker id="arrM" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#f97316"/></marker></defs>
+</svg>

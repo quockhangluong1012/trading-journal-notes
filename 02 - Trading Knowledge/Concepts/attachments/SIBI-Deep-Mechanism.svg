@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="780" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế thị trường thật đằng sau SIBI</text>
+  <text x="40" y="62" font-size="15" fill="#94a3b8">Vì sao displacement để lại "vết nứt" hai chiều chưa khớp — và tại sao giá có xu hướng quay lại lấp</text>
+
+  <!-- LOB panel -->
+  <rect x="40" y="90" width="540" height="320" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="60" y="118" font-size="16" font-weight="bold" fill="#e2e8f0">Two-sided trade bị "bỏ lỡ" trong displacement</text>
+
+  <text x="60" y="150" font-size="13" fill="#94a3b8">Nến bình thường: bid/ask khớp hai chiều liên tục</text>
+  <rect x="60" y="160" width="200" height="20" fill="#22c55e" opacity="0.35"/>
+  <rect x="60" y="185" width="180" height="20" fill="#ef4444" opacity="0.35"/>
+  <text x="270" y="175" font-size="12" fill="#94a3b8">bid ↔ ask khớp đều</text>
+
+  <text x="60" y="235" font-size="13" fill="#eab308">Nến displacement (C2): market order MUA áp đảo</text>
+  <rect x="60" y="245" width="400" height="18" fill="#22c55e" opacity="0.6"/>
+  <text x="470" y="259" font-size="12" fill="#22c55e">toàn buy market order</text>
+  <rect x="60" y="268" width="20" height="18" fill="#ef4444" opacity="0.3"/>
+  <text x="90" y="282" font-size="12" fill="#94a3b8">rất ít ask được test → thiếu two-sided</text>
+
+  <text x="60" y="330" font-size="13" fill="#e2e8f0">→ Vùng giá high(C1)-low(C3) hầu như KHÔNG có giao dịch</text>
+  <text x="60" y="352" font-size="13" fill="#e2e8f0">hai chiều thật → "inefficiency" theo nghĩa auction/orderflow</text>
+  <text x="60" y="384" font-size="13" fill="#94a3b8">Giá có xu hướng quay lại "test" vùng này (fill) vì auction</text>
+  <text x="60" y="400" font-size="13" fill="#94a3b8">market luôn tìm cách đạt được acceptance ở mọi mức giá đã đi qua</text>
+
+  <!-- theory comparison -->
+  <rect x="600" y="90" width="560" height="320" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="620" y="118" font-size="16" font-weight="bold" fill="#e2e8f0">Đối chiếu khung lý thuyết khác</text>
+
+  <text x="620" y="150" font-size="14" fill="#a78bfa" font-weight="bold">Auction Market Theory:</text>
+  <text x="620" y="172" font-size="13" fill="#94a3b8">SIBI ~ "single print" / low-volume node trên volume profile —</text>
+  <text x="620" y="192" font-size="13" fill="#94a3b8">vùng giá đi qua quá nhanh, ít TPO, market thường quay lại lấp.</text>
+
+  <text x="620" y="222" font-size="14" fill="#a78bfa" font-weight="bold">Orderflow / Footprint:</text>
+  <text x="620" y="244" font-size="13" fill="#94a3b8">SIBI ~ vùng delta dương cực mạnh liên tục nhiều nến —</text>
+  <text x="620" y="264" font-size="13" fill="#94a3b8">footprint cho thấy rõ "gap" trong khớp lệnh 2 chiều tại từng mức giá.</text>
+
+  <text x="620" y="294" font-size="14" fill="#a78bfa" font-weight="bold">Wyckoff:</text>
+  <text x="620" y="316" font-size="13" fill="#94a3b8">gần với giai đoạn Markup nhanh (SOS - Sign of Strength) —</text>
+  <text x="620" y="336" font-size="13" fill="#94a3b8">di chuyển giá mạnh, ít test lại, để lại "khoảng trống" hành vi.</text>
+
+  <text x="620" y="366" font-size="13" fill="#e2e8f0" font-weight="bold">Trùng nhau: cả 3 khung đều đồng ý displacement mạnh</text>
+  <text x="620" y="386" font-size="13" fill="#e2e8f0">để lại dấu vết có thể đo lường và có xu hướng bị lấp lại.</text>
+
+  <!-- table -->
+  <text x="40" y="450" font-size="18" font-weight="bold" fill="#e2e8f0">SIBI/BISI theo 3 loại thị trường</text>
+  <g font-size="14">
+    <rect x="40" y="470" width="1120" height="40" fill="#1e293b" stroke="#334155"/>
+    <text x="55" y="495" fill="#e2e8f0" font-weight="bold">Tiêu chí</text>
+    <text x="330" y="495" fill="#e2e8f0" font-weight="bold">FX majors</text>
+    <text x="620" y="495" fill="#e2e8f0" font-weight="bold">Index futures (NQ/ES)</text>
+    <text x="920" y="495" fill="#e2e8f0" font-weight="bold">Crypto (BTC/ETH)</text>
+
+    <rect x="40" y="510" width="1120" height="42" fill="#0f1420" stroke="#334155"/>
+    <text x="55" y="536" fill="#94a3b8">Tốc độ fill lại (rebalance)</text>
+    <text x="330" y="536" fill="#94a3b8">Vài giờ tới vài ngày</text>
+    <text x="620" y="536" fill="#94a3b8">Thường trong phiên, nhanh</text>
+    <text x="920" y="536" fill="#94a3b8">Có thể để "trôi" nhiều tuần</text>
+
+    <rect x="40" y="552" width="1120" height="42" fill="#1e293b" stroke="#334155"/>
+    <text x="55" y="578" fill="#94a3b8">Độ tin cậy CE respect</text>
+    <text x="330" y="578" fill="#94a3b8">Cao trong kill zone</text>
+    <text x="620" y="578" fill="#94a3b8">Cao quanh mở phiên RTH</text>
+    <text x="920" y="578" fill="#94a3b8">Thấp hơn do biến động 24/7</text>
+
+    <rect x="40" y="594" width="1120" height="42" fill="#0f1420" stroke="#334155"/>
+    <text x="55" y="620" fill="#94a3b8">Rủi ro đặc thù</text>
+    <text x="330" y="620" fill="#94a3b8">Tin NFP/CPI tạo SIBI giả</text>
+    <text x="620" y="620" fill="#94a3b8">Gap qua đêm rebalance ngay đầu phiên</text>
+    <text x="920" y="620" fill="#94a3b8">Liquidation cascade tạo SIBI/BISI khổng lồ</text>
+  </g>
+  <text x="40" y="670" font-size="13" fill="#94a3b8">Kết luận: SIBI/BISI là hiện tượng auction/orderflow phổ quát — tên gọi ICT chỉ gắn thêm nhãn "ai bị nuốt" vào một cấu trúc đã được mô tả từ lâu.</text>
+</svg>

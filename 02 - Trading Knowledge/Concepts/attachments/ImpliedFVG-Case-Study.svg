@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1232 700" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1232" height="700" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Case 1: GBPUSD Long — Implied FVG sau sweep London AM</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">Thứ Tư 21/05 · Sweep SSL 1.2668 → displacement → CE của bóng 2 nến → +5.4R</text>
+
+  <!-- grid -->
+  <line x1="60" y1="620" x2="1160" y2="620" stroke="#1c2333"/>
+  <line x1="60" y1="500" x2="1160" y2="500" stroke="#1c2333"/>
+  <line x1="60" y1="380" x2="1160" y2="380" stroke="#1c2333"/>
+  <line x1="60" y1="260" x2="1160" y2="260" stroke="#1c2333"/>
+  <line x1="60" y1="140" x2="1160" y2="140" stroke="#1c2333"/>
+
+  <!-- price labels -->
+  <text x="1170" y="624" font-size="9.0" fill="#94a3b8">1.2650</text>
+  <text x="1170" y="504" font-size="9.0" fill="#94a3b8">1.2700</text>
+  <text x="1170" y="384" font-size="9.0" fill="#94a3b8">1.2750</text>
+  <text x="1170" y="264" font-size="9.0" fill="#94a3b8">1.2800</text>
+  <text x="1170" y="144" font-size="9.0" fill="#a78bfa">1.2810 BSL</text>
+
+  <!-- sweep candle down -->
+  <line x1="120" y1="600" x2="120" y2="500" stroke="#ef4444" stroke-width="2"/>
+  <rect x="109" y="560" width="22" height="30" fill="#ef4444"/>
+  <text x="120" y="640" font-size="11" fill="#eab308" text-anchor="middle">① Sweep SSL</text>
+  <text x="120" y="656" font-size="11" fill="#94a3b8" text-anchor="middle">1.2668</text>
+  <line x1="60" y1="605" x2="1160" y2="605" stroke="#eab308" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- displacement candle 1 -->
+  <rect x="199" y="470" width="22" height="100" fill="#22c55e"/>
+  <line x1="210" y1="580" x2="210" y2="460" stroke="#22c55e" stroke-width="2"/>
+  <text x="210" y="450" font-size="10" fill="#94a3b8" text-anchor="middle">N1</text>
+
+  <!-- displacement candle 2 -->
+  <rect x="269" y="380" width="22" height="100" fill="#22c55e"/>
+  <line x1="280" y1="490" x2="280" y2="360" stroke="#22c55e" stroke-width="2"/>
+  <text x="280" y="350" font-size="10" fill="#94a3b8" text-anchor="middle">N2</text>
+
+  <text x="330" y="420" font-size="12" fill="#f97316">② Displacement mạnh</text>
+  <text x="330" y="438" font-size="11" fill="#94a3b8">Bóng N1 &amp; N2 chồng lấp nhẹ</text>
+
+  <!-- implied FVG zone -->
+  <rect x="269" y="440" width="500" height="40" fill="#22c55e" opacity="0.2"/>
+  <line x1="269" y1="460" x2="769" y2="460" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="780" y="445" font-size="12" fill="#eab308">Implied FVG 1.26995–1.27085</text>
+  <text x="780" y="463" font-size="12" fill="#38bdf8">CE = 1.2704</text>
+
+  <!-- retrace + entry -->
+  <line x1="400" y1="460" x2="470" y2="460" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="470" cy="460" r="5" fill="#38bdf8"/>
+  <text x="480" y="465" font-size="12" fill="#38bdf8">③ Entry 1.2706 (10:15 London, sau M15 MSS)</text>
+
+  <!-- stop -->
+  <line x1="269" y1="490" x2="500" y2="490" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="510" y="494" font-size="12" fill="#ef4444">SL 1.2692 (14 pip)</text>
+
+  <!-- move up -->
+  <line x1="470" y1="460" x2="600" y2="300" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,2"/>
+  <rect x="589" y="270" width="22" height="30" fill="#22c55e"/>
+
+  <!-- TP1 -->
+  <line x1="60" y1="290" x2="1160" y2="290" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="620" y="285" font-size="12" fill="#a78bfa">④ TP1 1.2760 — internal liquidity (+4.1R đóng 50%)</text>
+
+  <!-- move to TP2 -->
+  <line x1="600" y1="300" x2="900" y2="150" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,2"/>
+  <rect x="889" y="130" width="22" height="30" fill="#22c55e"/>
+  <text x="920" y="140" font-size="12" fill="#a78bfa">⑤ TP2 vùng BSL — đóng thủ công 1.2801</text>
+  <text x="920" y="158" font-size="12" fill="#94a3b8">(+6.8R phần còn lại)</text>
+
+  <!-- result box -->
+  <rect x="60" y="660" width="1100" height="30" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="80" y="680" font-size="14" fill="#e2e8f0">Kết quả: R-multiple trung bình +5.4R · Risk 14 pip · Điều kiện: displacement thật + MSS M15 xác nhận + đo CE bằng công cụ chính xác</text>
+</svg>

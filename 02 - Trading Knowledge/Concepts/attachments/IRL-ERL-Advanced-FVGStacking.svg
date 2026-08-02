@@ -1,0 +1,37 @@
+<svg viewBox="0 0 760 490" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="490" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">FVG Stacking — giá thường chỉ lấp lớp nông nhất, bỏ qua các lớp sâu hơn</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Ba nhịp continuation displacement liên tiếp trong cùng một leg tăng, để lại ba lớp FVG chồng nhau</text>
+
+  <rect x="24" y="70" width="712" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- three displacement legs going up, each leaving an FVG -->
+  <path d="M60,380 L110,320 L150,340 L200,260 L240,280 L290,190 L330,210 L380,120" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+
+  <!-- FVG layers -->
+  <rect x="150" y="300" width="50" height="40" fill="#3B82F6" opacity="0.28"/>
+  <text x="204" y="325" font-size="10" font-weight="700" fill="#1D4ED8">Lớp sâu nhất (nhịp 1) — xa giá hiện tại</text>
+
+  <rect x="240" y="220" width="50" height="60" fill="#0D9488" opacity="0.28"/>
+  <text x="294" y="255" font-size="10" font-weight="700" fill="#0F766E">Lớp giữa (nhịp 2)</text>
+
+  <rect x="330" y="140" width="50" height="70" fill="#16A34A" opacity="0.28"/>
+  <text x="384" y="180" font-size="10" font-weight="700" fill="#166534">Lớp nông nhất (nhịp 3) — gần đỉnh leg nhất</text>
+
+  <!-- retrace path that only fills the shallow layer then continues -->
+  <path d="M380,120 L400,160 L370,195 L390,175" fill="none" stroke="#374151" stroke-width="2.2" stroke-dasharray="5 3"/>
+  <text x="410" y="150" font-size="9.5" fill="#374151">Retrace chỉ chạm lớp nông</text>
+
+  <path d="M390,175 L440,140 L490,100 L540,70" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+  <text x="440" y="60" font-size="10.5" font-weight="700" fill="#15803D">Giá tiếp tục lên — không quay lại lớp giữa/sâu</text>
+
+  <circle cx="390" cy="175" r="6" fill="#16A34A"/>
+  <text x="330" y="235" font-size="10" font-weight="700" fill="#15803D">Entry hợp lý: tại lớp nông</text>
+
+  <!-- crossed out limit orders at deeper layers -->
+  <text x="150" y="365" font-size="10" fill="#B91C1C">✕ Limit tại lớp sâu — không bao giờ khớp</text>
+  <text x="240" y="295" font-size="10" fill="#B91C1C">✕ Limit tại lớp giữa — không bao giờ khớp</text>
+
+  <rect x="40" y="412" width="656" height="30" rx="6" fill="#FEF3C7"/>
+  <text x="52" y="432" font-size="10.5" font-weight="700" fill="#92400E">Đừng rải lệnh chờ vào mọi lớp FVG kỳ vọng khớp hết — ưu tiên lớp nông nhất, coi lớp sâu là dự phòng.</text>
+</svg>

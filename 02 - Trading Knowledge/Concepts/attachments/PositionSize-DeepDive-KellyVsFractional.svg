@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="90" y1="450" x2="900" y2="450"/>
+    <line x1="90" y1="60" x2="90" y2="450"/>
+    <line x1="90" y1="360" x2="900" y2="360"/>
+    <line x1="90" y1="270" x2="900" y2="270"/>
+    <line x1="90" y1="180" x2="900" y2="180"/>
+    <line x1="90" y1="90" x2="900" y2="90"/>
+  </g>
+  <text x="30" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">Kelly Criterion vs Fixed Fractional — duong cong equity minh hoa</text>
+
+  <!-- axis labels -->
+  <text x="40" y="455" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">0</text>
+  <text x="450" y="475" font-family="Arial, sans-serif" font-size="16" fill="#d1d4dc">So lenh (minh hoa, khong phai du lieu that)</text>
+  <text x="20" y="260" font-family="Arial, sans-serif" font-size="16" fill="#d1d4dc" transform="rotate(-90 20 260)">Von (%)</text>
+
+  <!-- Full Kelly curve - high variance, jagged, big swings -->
+  <polyline points="90,300 150,220 210,340 270,150 330,380 390,120 450,420 510,100 570,450 630,90 690,430 750,110 810,400 870,95"
+    fill="none" stroke="#ef5350" stroke-width="2.5"/>
+  <text x="700" y="80" font-family="Arial, sans-serif" font-size="16" fill="#ef5350">Full Kelly (bien dong rat manh)</text>
+
+  <!-- Half Kelly - smoother upward, still some variance -->
+  <polyline points="90,300 150,280 210,300 270,250 330,270 390,220 450,240 510,190 570,210 630,160 690,180 750,140 810,155 870,120"
+    fill="none" stroke="#f2c94c" stroke-width="2.5"/>
+  <text x="700" y="135" font-family="Arial, sans-serif" font-size="16" fill="#f2c94c">Half Kelly (giam variance dang ke)</text>
+
+  <!-- Fixed Fractional 0.5% - very smooth, steady -->
+  <polyline points="90,300 150,296 210,299 270,290 330,293 390,285 450,288 510,278 570,281 630,270 690,273 750,262 810,265 870,255"
+    fill="none" stroke="#26a69a" stroke-width="2.5"/>
+  <text x="700" y="245" font-family="Arial, sans-serif" font-size="16" fill="#26a69a">Fixed Fractional 0.5% (on dinh, tang cham)</text>
+
+  <text x="100" y="500" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">Minh hoa dang dieu, KHONG phai so lieu backtest thuc. Full Kelly toi uu hoa growth rate ly thuyet</text>
+  <text x="100" y="520" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">nhung yeu cau bien Sharpe/edge chinh xac va chiu drawdown sau hon nhieu so voi Fixed Fractional nho.</text>
+</svg>

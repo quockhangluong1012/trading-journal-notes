@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="400" rx="12" fill="#0d1117"/>
+<text x="32" y="30" font-size="18" font-weight="700" fill="#e5e7eb" text-anchor="start">Edge case ⑦–⑫ — Bread and Butter Buy</text>
+
+<!-- Cell 7 -->
+<rect x="24" y="48" width="296" height="105" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="40" y="68" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">⑦ Double dip trước MSS thật</text>
+<text x="40" y="86" font-size="11.5" fill="#94a3b8" text-anchor="start">Giá quét đáy 2 lần, lần 1 là bẫy</text>
+<text x="40" y="102" font-size="11.5" fill="#94a3b8" text-anchor="start">MSS giả, lần 2 mới đảo thật</text>
+<text x="40" y="118" font-size="11.5" fill="#94a3b8" text-anchor="start">Xử lý: chờ MSS có displacement</text>
+<text x="40" y="134" font-size="11.5" fill="#94a3b8" text-anchor="start">rõ ràng, bỏ qua MSS yếu lần 1</text>
+
+<!-- Cell 8 -->
+<rect x="332" y="48" width="296" height="105" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="348" y="68" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">⑧ Đáy London mơ hồ/flat</text>
+<text x="348" y="86" font-size="11.5" fill="#94a3b8" text-anchor="start">Phiên London đi ngang, không rõ</text>
+<text x="348" y="102" font-size="11.5" fill="#94a3b8" text-anchor="start">đáy nào là SSL tham chiếu chuẩn</text>
+<text x="348" y="118" font-size="11.5" fill="#94a3b8" text-anchor="start">Xử lý: dùng đáy thấp nhất phiên,</text>
+<text x="348" y="134" font-size="11.5" fill="#94a3b8" text-anchor="start">bỏ setup nếu range quá hẹp</text>
+
+<!-- Cell 9 -->
+<rect x="640" y="48" width="296" height="105" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="656" y="68" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">⑨ Asia range quá rộng</text>
+<text x="656" y="86" font-size="11.5" fill="#94a3b8" text-anchor="start">Range Asia nuốt luôn cả biên độ</text>
+<text x="656" y="102" font-size="11.5" fill="#94a3b8" text-anchor="start">kỳ vọng cho setup 15-20 pip</text>
+<text x="656" y="118" font-size="11.5" fill="#94a3b8" text-anchor="start">Xử lý: so ATR Asia với trung bình,</text>
+<text x="656" y="134" font-size="11.5" fill="#94a3b8" text-anchor="start">bỏ nếu range &gt; 1.5x bình thường</text>
+
+<!-- Cell 10 -->
+<rect x="24" y="165" width="296" height="105" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="40" y="185" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">⑩ Gap cuối tuần làm sai tham chiếu</text>
+<text x="40" y="203" font-size="11.5" fill="#94a3b8" text-anchor="start">Giá gap xuống thứ Hai, đáy thứ Sáu</text>
+<text x="40" y="219" font-size="11.5" fill="#94a3b8" text-anchor="start">không còn là mốc SSL hợp lệ</text>
+<text x="40" y="235" font-size="11.5" fill="#94a3b8" text-anchor="start">Xử lý: bỏ tham chiếu cũ sau gap,</text>
+<text x="40" y="251" font-size="11.5" fill="#94a3b8" text-anchor="start">chờ cấu trúc mới hình thành</text>
+
+<!-- Cell 11 -->
+<rect x="332" y="165" width="296" height="105" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="348" y="185" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">⑪ Rollover/đáo hạn hợp đồng futures</text>
+<text x="348" y="203" font-size="11.5" fill="#94a3b8" text-anchor="start">Chênh lệch giá giữa hợp đồng cũ/mới</text>
+<text x="348" y="219" font-size="11.5" fill="#94a3b8" text-anchor="start">tạo swing giả trên NQ/ES</text>
+<text x="348" y="235" font-size="11.5" fill="#94a3b8" text-anchor="start">Xử lý: kiểm tra lịch rollover,</text>
+<text x="348" y="251" font-size="11.5" fill="#94a3b8" text-anchor="start">tránh giao dịch ngày chuyển hợp đồng</text>
+
+<!-- Cell 12 -->
+<rect x="640" y="165" width="296" height="105" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="656" y="185" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">⑫ NY Judas quá nông</text>
+<text x="656" y="203" font-size="11.5" fill="#94a3b8" text-anchor="start">Judas swing chỉ ~30% ATR(5) trung</text>
+<text x="656" y="219" font-size="11.5" fill="#94a3b8" text-anchor="start">bình, MSS sau đó dễ bị vô hiệu</text>
+<text x="656" y="235" font-size="11.5" fill="#94a3b8" text-anchor="start">Xử lý: đo biên độ swing trước khi</text>
+<text x="656" y="251" font-size="11.5" fill="#94a3b8" text-anchor="start">vào lệnh, bỏ nếu quá nông</text>
+
+<rect x="24" y="290" width="912" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="40" y="312" font-size="12.5" font-weight="700" fill="#e5e7eb" text-anchor="start">Điểm chung của 6 edge case này</text>
+<text x="40" y="332" font-size="12" fill="#94a3b8" text-anchor="start">Nhóm ⑦–⑫ chủ yếu liên quan đến chất lượng dữ liệu tham chiếu (đáy mơ hồ, gap, rollover) và độ tin cậy</text>
+<text x="40" y="350" font-size="12" fill="#94a3b8" text-anchor="start">của tín hiệu Judas/MSS — cần công cụ đo lường khách quan (ATR, lịch hợp đồng) thay vì phán đoán chủ quan</text>
+<text x="40" y="368" font-size="11.5" fill="#94a3b8" text-anchor="start">Xem 6 edge case ①–⑥ tại BBBuy-EdgeCase-Matrix.svg</text>
+</svg>

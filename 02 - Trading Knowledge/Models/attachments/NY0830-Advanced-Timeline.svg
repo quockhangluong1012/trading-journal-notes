@@ -1,6 +1,46 @@
-<svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="320" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Khung thời gian &amp; thời điểm — Mô hình 08:30 AM NY</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">Ngồi trước máy 08:00 NY; chỉ tập trung SAU 08:30. Ba khung: 15m (bias) · 5m (cấu trúc) · 1m (trigger).</text>
-<rect x="24" y="76" width="712" height="70" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/><line x1="60" y1="120" x2="720" y2="120" stroke="#CBD5E1" stroke-width="2"/><circle cx="120" cy="120" r="5" fill="#6B7280"/><text x="120" y="108" font-size="10" fill="#6B7280" text-anchor="middle">08:00 vào bàn</text><circle cx="320" cy="120" r="5" fill="#DC2626"/><text x="320" y="108" font-size="10" fill="#DC2626" text-anchor="middle">08:30 mốc chính</text><circle cx="520" cy="120" r="5" fill="#15803D"/><text x="520" y="108" font-size="10" fill="#15803D" text-anchor="middle">raid + MSS</text><circle cx="680" cy="120" r="5" fill="#1D4ED8"/><text x="680" y="108" font-size="10" fill="#1D4ED8" text-anchor="middle">09:30 NYSE</text><rect x="320" y="112" width="360" height="16" fill="#FEE2E2" opacity="0.6"/><text x="500" y="140" font-size="10" fill="#B91C1C" text-anchor="middle">Cửa sổ setup: post-08:30</text><rect x="40" y="170" width="226" height="120" rx="8" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.5"/><text x="56" y="200" font-size="14" font-weight="700" fill="#1D4ED8">15 phút</text><text x="56" y="226" font-size="11" fill="#374151">BIAS + Draw on Liquidity</text><text x="56" y="244" font-size="11" fill="#374151">(chart mẹ)</text><rect x="276" y="170" width="226" height="120" rx="8" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/><text x="292" y="200" font-size="14" font-weight="700" fill="#7C3AED">5 phút</text><text x="292" y="226" font-size="11" fill="#374151">Bối cảnh cấu trúc</text><rect x="512" y="170" width="226" height="120" rx="8" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/><text x="528" y="200" font-size="14" font-weight="700" fill="#15803D">1 phút</text><text x="528" y="226" font-size="11" fill="#374151">Relative equal H/L +</text><text x="528" y="244" font-size="11" fill="#374151">trigger entry</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="520" rx="12" fill="#0d1117"/>
+<text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Timeline mô hình 08:30 AM NY — build-up → raid → MSS → entry</text>
+<line x1="40" y1="260" x2="920" y2="260" stroke="#334155" stroke-width="2"/>
+<!-- time ticks -->
+<line x1="80" y1="250" x2="80" y2="270" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="80" y="292" font-size="13" fill="#e5e7eb" text-anchor="middle">08:00</text>
+<text x="80" y="308" font-size="11" fill="#94a3b8" text-anchor="middle">Vào bàn, quan sát</text>
+<line x1="300" y1="250" x2="300" y2="270" stroke="#eab308" stroke-width="2"/>
+<text x="300" y="292" font-size="13" fill="#eab308" font-weight="700" text-anchor="middle">08:30</text>
+<text x="300" y="308" font-size="11" fill="#94a3b8" text-anchor="middle">Tin kinh tế Mỹ (CPI/NFP)</text>
+<line x1="470" y1="250" x2="470" y2="270" stroke="#f97316" stroke-width="2"/>
+<text x="470" y="292" font-size="13" fill="#f97316" font-weight="700" text-anchor="middle">08:35-08:45</text>
+<text x="470" y="308" font-size="11" fill="#94a3b8" text-anchor="middle">Raid relative equal</text>
+<line x1="620" y1="250" x2="620" y2="270" stroke="#a855f7" stroke-width="2"/>
+<text x="620" y="292" font-size="13" fill="#a855f7" font-weight="700" text-anchor="middle">08:50</text>
+<text x="620" y="308" font-size="11" fill="#94a3b8" text-anchor="middle">Macro window — MSS</text>
+<line x1="770" y1="250" x2="770" y2="270" stroke="#38bdf8" stroke-width="2"/>
+<text x="770" y="292" font-size="13" fill="#38bdf8" font-weight="700" text-anchor="middle">09:00-09:30</text>
+<text x="770" y="308" font-size="11" fill="#94a3b8" text-anchor="middle">Entry retest PD array</text>
+<line x1="900" y1="250" x2="900" y2="270" stroke="#4ade80" stroke-width="2"/>
+<text x="900" y="292" font-size="13" fill="#4ade80" font-weight="700" text-anchor="middle">09:50</text>
+<text x="900" y="308" font-size="11" fill="#94a3b8" text-anchor="middle">Macro kế / re-entry</text>
+<!-- build-up zone -->
+<rect x="80" y="100" width="220" height="130" rx="8" fill="rgba(234,179,8,0.08)" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="190" y="122" font-size="13" font-weight="700" fill="#eab308" text-anchor="middle">Build-up 08:00→08:30</text>
+<text x="190" y="140" font-size="11" fill="#94a3b8" text-anchor="middle">Relative equal H/L hình thành</text>
+<!-- price path in build up -->
+<polyline points="100,200 130,180 160,195 190,175 220,190 250,178 280,192" fill="none" stroke="#9ca3af" stroke-width="2"/>
+<!-- raid arrow -->
+<path d="M300,200 L340,150" stroke="#f97316" stroke-width="2.5" fill="none" marker-end="url(#arrO)"/>
+<text x="345" y="140" font-size="12" fill="#f97316" text-anchor="start">Raid BSL/SSL</text>
+<!-- MSS zone -->
+<rect x="430" y="100" width="220" height="130" rx="8" fill="rgba(168,85,247,0.08)" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="540" y="122" font-size="13" font-weight="700" fill="#a855f7" text-anchor="middle">Displacement + MSS</text>
+<text x="540" y="140" font-size="11" fill="#94a3b8" text-anchor="middle">Để lại PD array (OB/FVG/Breaker)</text>
+<polyline points="450,210 480,195 510,150 540,120 570,135 600,110" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+<!-- entry zone -->
+<rect x="700" y="100" width="220" height="130" rx="8" fill="rgba(56,189,248,0.08)" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="810" y="122" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle">Retest → Entry → DOL</text>
+<text x="810" y="140" font-size="11" fill="#94a3b8" text-anchor="middle">TP tại draw on liquidity kế</text>
+<polyline points="720,200 750,180 780,190 810,150 840,165 870,120" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+<defs><marker id="arrO" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f97316"/></marker></defs>
+<text x="480" y="420" font-size="12" fill="#94a3b8" text-anchor="middle">Ba khung: 15m = bias + DOL | 5m = cấu trúc | 1m = relative equal H/L + trigger</text>
+<text x="480" y="450" font-size="12" fill="#94a3b8" text-anchor="middle">Chỉ tập trung SAU 08:30 — trước đó chỉ quan sát, không vào lệnh.</text>
 </svg>

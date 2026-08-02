@@ -14,7 +14,7 @@ status: developing
 category: Entry Model
 last_reviewed: 2026-06-24
 created: 2026-06-24
-updated: 2026-07-03
+updated: 2026-07-28
 ---
 
 # Venom Model
@@ -121,8 +121,9 @@ Nhiều trader thua vì giao dịch **sai thời điểm** (giữa phiên chết
 > [!tip] Quy tắc thực dụng
 > Không cần tranh cãi tên gọi khi vào lệnh — điều quan trọng là **pool nào bị quét và có displacement/FVG hợp lệ hay không**. Tên model chỉ hữu ích khi backtest/review để phân loại dữ liệu (`time_window` field trong frontmatter trade).
 
-![[Venom-Session-Timeline-Diagram.png]]
-*Ghi chú minh họa: Vẽ một timeline ngang thể hiện 3 phiên Asia (18:00–03:00 NY time), London (03:00–09:30 NY time), New York (09:30–16:00 NY time). Đánh dấu vùng 07:00–09:30 là "Venom Box hình thành", tô đậm/highlight khung 09:30–10:30 là "Venom Cutting Zone", và đánh dấu nhạt 10:30–10:45 là "Fading Window". Đây là sơ đồ khái niệm minh họa cửa sổ thời gian — không phải dữ liệu giá thật, chỉ dùng để định vị trực quan các khung giờ.*
+![[Venom-Session-Timeline-Diagram.svg]]
+> [!info] Mô tả hình
+> Timeline ngang thể hiện 3 phiên Asia (18:00–03:00 NY), London (03:00–09:30 NY), New York (09:30–16:00 NY). Vùng 07:00–09:30 là "Venom Box hình thành"; khung 09:30–10:30 tô đậm là "Venom Cutting Zone"; vùng nhạt 10:30–10:45 là "Fading Window". Sơ đồ khái niệm định vị các khung giờ, không phải dữ liệu giá thật.
 
 ---
 
@@ -220,8 +221,9 @@ Nhiều trader thua vì giao dịch **sai thời điểm** (giữa phiên chết
 | Vị trí trong cửa sổ | Trong 09:30–10:15 (còn "nhiên liệu" thời gian) | Cuối cửa sổ 10:15–10:30 (dễ là move cạn, không theo sau bởi displacement thật) |
 | Theo sau bởi | Displacement + MSS rõ ràng, để lại FVG sạch | Không có gì theo sau, giá đi ngang hoặc quét tiếp pool khác |
 
-![[Venom-Strike-Recognition-Chart.png]]
-*Ghi chú minh họa: Vẽ một biểu đồ nến minh họa (khung M5 hoặc M15) với: (1) một đường ngang đánh dấu "Pre-market/Session Low" (pool tham chiếu), (2) một cây nến có wick dài thò xuống dưới đường đó rồi đóng cửa trở lại phía trên (khoanh tròn/chú thích "Venom Strike – sweep + reclaim"), (3) chuỗi nến displacement tăng mạnh ngay sau đó phá vỡ swing high gần nhất (chú thích "Displacement + MSS"), (4) vùng Fair Value Gap được tô màu giữa các nến displacement (chú thích "FVG – POI chờ retrace"). Đây là biểu đồ ví dụ khái niệm tự vẽ hoặc dùng chart giả lập — không dùng dữ liệu giá thật của một lệnh cụ thể.*
+![[Venom-Strike-Recognition-Chart.svg]]
+> [!info] Mô tả hình
+> Biểu đồ nến M5/M15 minh họa: (1) đường ngang "Pre-market/Session Low" (pool tham chiếu); (2) một nến wick dài thò xuống dưới đường đó rồi đóng cửa trở lại phía trên ("Venom Strike – sweep + reclaim"); (3) chuỗi nến displacement tăng mạnh phá swing high gần nhất ("Displacement + MSS"); (4) vùng FVG tô màu giữa các nến displacement ("FVG – POI chờ retrace"). Biểu đồ ví dụ khái niệm, không dùng dữ liệu giá thật của một lệnh cụ thể.
 
 ---
 
@@ -268,8 +270,9 @@ Invalid: ngoài cửa sổ / đóng nến dưới FVG
 
 Khi phân tích đa khung thời gian, bước đầu tiên trước khi chạy quy trình 4 câu là **xác định đang săn model nào** — vì reference pool để đối chiếu ở bước D1/H1 sẽ khác nhau (pool session cấp cao cho Venom, swing gần nhất cho Silver Bullet). Xem lại bảng phân biệt tiêu chí ở mục 1.
 
-![[Venom-vs-SilverBullet-Window-Comparison.png]]
-*Ghi chú minh họa: Vẽ sơ đồ so sánh 2 cột song song trên cùng một trục thời gian (07:00–11:00 NY time). Cột trái "Venom": highlight khung 09:30–10:30, chú thích pool bị quét là "Pre-market/Session High-Low", mũi tên chỉ vào một sweep + displacement + FVG mẫu. Cột phải "Silver Bullet AM": highlight khung 10:00–11:00, chú thích pool bị quét là "Swing high/low gần nhất (bất kỳ)", mũi tên chỉ vào một FVG mẫu không gắn với pool session. Vùng chồng lấn 10:00–10:30 tô màu riêng với chú thích "Vùng dễ nhầm lẫn — phân biệt bằng loại pool bị quét, không phải bằng giờ". Đây là sơ đồ khái niệm để đối chiếu hai model, không phải chart giao dịch thật.*
+![[Venom-vs-SilverBullet-Window-Comparison.svg]]
+> [!info] Mô tả hình
+> Sơ đồ so sánh 2 cột song song trên cùng trục thời gian (07:00–11:00 NY). Cột trái "Venom": highlight 09:30–10:30, pool bị quét là "Pre-market/Session High-Low". Cột phải "Silver Bullet AM": highlight 10:00–11:00, pool bị quét là "Swing high/low gần nhất (bất kỳ)". Vùng chồng lấn 10:00–10:30 tô màu riêng, chú thích "Vùng dễ nhầm lẫn — phân biệt bằng loại pool bị quét, không phải bằng giờ". Sơ đồ khái niệm đối chiếu hai model, không phải chart giao dịch thật.
 
 ---
 
@@ -306,7 +309,9 @@ Khi phân tích đa khung thời gian, bước đầu tiên trước khi chạy 
 ## 6. Ví dụ chart
 
 ### Ví dụ đúng — NY open: sweep London low → displacement → FVG entry → session high
-![[Venom-Example-Correct-NYOpen-Sweep.png]]
+![[Venom-Example-Correct-NYOpen-Sweep.svg]]
+> [!info] Mô tả hình
+> Chart nến minh họa chuỗi Venom hợp lệ: (1) sweep London Low + reclaim; (2) displacement tăng + MSS phá swing high để lại FVG; (3) entry tại FVG quanh CE; (4) giá chạy về session high / PDH target.
 
 **Mô tả:**
 HTF bias Bullish, target là session high / PDH. **(1)** Vào **NY open kill zone**, giá **quét London low** (liquidity session) rồi reclaim. **(2)** **Displacement tăng + MSS** phá swing high, để lại bullish FVG. **(3)** Giá retrace về FVG (quanh CE) → **entry**, stop dưới điểm sweep. **(4)** Giá chạy về **session high / PDH target**.
@@ -317,7 +322,9 @@ HTF bias Bullish, target là session high / PDH. **(1)** Vào **NY open kill zon
 - Entry ở discount, không chase; target pool rõ.
 
 ### Ví dụ sai / dễ nhầm — Vào ngoài cửa sổ, chưa quét session pool
-![[Venom-Example-Wrong-OutsideWindow.png]]
+![[Venom-Example-Wrong-OutsideWindow.svg]]
+> [!info] Mô tả hình
+> Chart minh họa lỗi: giữa phiên chết (ngoài cửa sổ Venom), một FVG "đẹp" xuất hiện nhưng chưa có sweep session pool nào trước đó. Entry tại FVG này (đánh dấu X đỏ) dẫn tới giá đi loanh quanh rồi quét stop — vì thiếu cả hai bộ lọc bắt buộc (time + liquidity session).
 
 **Mô tả lỗi:**
 Trader thấy một FVG đẹp **giữa phiên chết** (ngoài cửa sổ Venom) và vào ngay, dù **chưa có cú quét liquidity session** nào. Thiếu cả "đúng giờ" lẫn "tiêm nọc", giá đi loanh quanh rồi quét stop.
@@ -358,6 +365,220 @@ Khái niệm này tổng hợp:
 
 > [!note]
 > Venom, Silver Bullet và [[01 - ICT 2022 Model]] dùng chung lõi (sweep → MSS → FVG). Điểm khác của Venom là **neo vào time window NY open + liquidity của session trước**. Kết hợp tốt với [[03- One Shot One Kill Trading Model]] khi muốn chọn một phát chất lượng trong ngày.
+
+---
+## Chuyên sâu A — Edge cases & Failure modes (thực chiến Venom)
+
+![[Venom-Advanced-EdgeCase-Matrix.svg|720]]
+
+Sáu tình huống dưới đây là những chỗ chuỗi Venom (time → sweep → displacement → FVG) hay gãy trong thực tế mà lý thuyết gọn gàng không nhắc tới. Với mỗi ca: dấu hiệu nhận biết → cơ chế → cách xử lý.
+
+**① Window creep — nới cửa sổ quá 10:30 rồi dán nhãn "Venom".**
+Dấu hiệu: đã quá 10:30 NY time mà chưa có setup, bạn tự nhủ "chờ thêm chút" đến 10:45–11:00 rồi vào một lệnh muộn và vẫn ghi sổ là Venom. Cơ chế: động lực NY AM cạn dần sau 10:30, cái "sweep/displacement" xuất hiện muộn phần lớn là **Silver Bullet muộn** hoặc noise, không còn dòng lệnh cash-open đứng sau. **Xử lý:** đặt hard cutoff 10:30 (alarm thật, không "nhớ trong đầu"); sau mốc đó chưa vào = "miss Venom hôm nay", chuyển model hoặc no-trade. Nếu vẫn vào, đừng gắn nhãn Venom — ghi đúng `time_window` để dữ liệu không bị nhiễm.
+
+**② News spike ≠ Venom strike.**
+Dấu hiệu: quanh 08:30 CPI/NFP giá giật mạnh xuyên một pool, trông như "sweep" nhưng **không có reclaim + displacement sạch** — chỉ là một cú one-way hỗn loạn (đặc biệt XAUUSD). Cơ chế: spike do tin là phản ứng volatility tức thời, chưa phải chuỗi thao túng thanh khoản có chủ đích; wick "quá tay" của XAU dễ nuốt luôn pool rồi đảo chiều mạnh. **Xử lý:** đứng ngoài 15–30 phút đầu sau tin, chờ biến động lắng; chỉ tính là venom strike khi có đủ **sweep + reclaim** (đóng nến lại trong range) **+ displacement** sạch. Không nhầm "nến to do tin" với "nọc đã tiêm".
+
+**③ Sweep KHÔNG reclaim cuối cửa sổ.**
+Dấu hiệu: giá xuyên session pool nhưng **đóng nến luôn ở ngoài pool**, nhất là sát 10:15–10:30. Cơ chế: đóng ngoài pool = acceptance, có thể là **breakout thật đổi hướng** chứ không phải quét thanh khoản → bias trong ngày có thể đang đảo. **Xử lý:** chưa phải sweep hợp lệ; chờ nến đóng trở lại bên trong range mới coi là reclaim. Không reclaim → đứng ngoài, xem lại hướng draw ngắn hạn thay vì cố long/short theo "sweep".
+
+**④ DST / timezone miscalc.**
+Dấu hiệu: bạn quy đổi 09:30 ET sang giờ local nhưng lệch 1 giờ, dẫn tới săn nhầm cửa sổ (vào lúc thị trường thực ra chưa mở cash, hoặc đã qua cutoff). Cơ chế: ET lệch **UTC-5 (mùa đông)** hoặc **UTC-4 (mùa hè DST)**, và Mỹ đổi DST không cùng ngày với châu Âu/địa phương bạn → công thức quy đổi cũ sai vài tuần trong năm. **Xử lý:** mỗi ngày quy đổi lại 07:00/08:30/09:30/10:30 NY time sang giờ local và ghi thẳng vào Quick Reference Card; kiểm tra lại mốc DST khi qua tháng 3 và tháng 11.
+
+**⑤ Sai loại pool.**
+Dấu hiệu: bạn gọi một cú quét là venom strike nhưng cái bị quét chỉ là một **swing nhỏ ngẫu nhiên** trong cửa sổ, không phải session pool. Cơ chế: sức mạnh Venom nằm ở việc quét đúng **pool cấp session** (Venom Box high/low, Asia/London high-low, PDH/PDL) — nơi stop tích lũy thật; quét một swing lẻ M1 không giải phóng đủ thanh khoản để đứng sau displacement bền. **Xử lý:** trước 09:30 đánh dấu sẵn các pool session; trong cửa sổ chỉ tính sweep khi nó chạm đúng một trong các mốc đã đánh dấu. Nếu chỉ là swing lẻ → đó là Silver Bullet, phân loại đúng, đừng ép thành Venom.
+
+**⑥ Displacement trễ & yếu.**
+Dấu hiệu: có sweep nhưng displacement chỉ xuất hiện **10:15–10:30**, thân nến ngắn, đi được một đoạn rồi chop. Cơ chế: cuối cửa sổ hết "nhiên liệu" thời gian, order flow cash-open đã xả xong nên move không đủ lực để chạy về pool đối diện. **Xử lý:** hạ cấp về "chờ xác nhận" — nếu displacement không dứt khoát (không phá cấu trúc sạch, FVG mỏng/lấp nhanh) thì bỏ; đừng vào chỉ vì "đã có sweep rồi".
+
+**⑦ Range tham chiếu chủ quan — hindsight-fit pool theo kết quả.**
+Dấu hiệu: sau khi thấy giá đã chạy đúng hướng, bạn "chọn lại" mốc pool (Asia low thay vì pre-market low, hoặc PDL thay vì Venom Box low) sao cho câu chuyện sweep trở nên đẹp hơn. Cơ chế: Venom không có một định nghĩa pool phổ quát được kiểm chứng độc lập — "pool cấp session" có thể là Asia range, pre-market 07:00–09:30, hoặc PDH/PDL tùy người dùng, và việc chọn sau khi biết kết quả gần như luôn thiên vị về phía xác nhận (confirmation bias). **Xử lý:** cố định trước 1 quy tắc chọn pool cho mỗi thị trường (xem Chuyên sâu B #3) và ghi vào trade log field `pool_type_used`; không đổi quy tắc giữa các ngày để "khớp" với setup vừa thấy.
+
+**⑧ Phụ thuộc timezone — lệch giờ quanh mốc đổi DST.**
+Dấu hiệu: khung giờ 07:00/09:30/10:30 NY time bạn quy đổi ra giờ local bị lệch 1 giờ trong 1–3 tuần quanh Chủ Nhật thứ 2 tháng 3 và Chủ Nhật đầu tháng 11 (Mỹ đổi DST không cùng ngày với châu Âu). Cơ chế: nếu bạn dùng một bảng quy đổi giờ cố định lưu sẵn (không cập nhật theo DST hiện tại), toàn bộ cửa sổ Cutting Zone bị dịch pha 60 phút mà bạn không nhận ra ngay. **Xử lý:** đây là biến thể sâu hơn của case ④; ngoài quy đổi mỗi ngày, đặt một nhắc nhở lịch vào các mốc đổi DST (giữa tháng 3, đầu tháng 11) để kiểm tra lại toàn bộ bảng giờ, không chỉ riêng ngày đổi.
+
+**⑨ Volume/liquidity giả trên thị trường ít thanh khoản (altcoin CFD, exotic FX).**
+Dấu hiệu: bạn áp mô hình Venom (được thiết kế cho NQ1/ES, EURUSD, XAUUSD — các thị trường có dòng lệnh tổ chức quanh cash open Mỹ) lên một cặp tiền exotic hoặc CFD ít thanh khoản, nơi "sweep" có thể chỉ do một lệnh lớn đơn lẻ hoặc broker re-quote, không phải dấu vết dòng lệnh thật. Cơ chế: cơ sở lý luận của Venom (mục 1) dựa trên giả định có đủ dòng lệnh tổ chức đứng sau NY cash open; thị trường mỏng không có "cash open" tương đương nên toàn bộ logic sweep→displacement mất nền tảng. **Xử lý:** giới hạn áp dụng Venom cho các thị trường đã liệt kê có volume đủ lớn (mục "So sánh Venom qua các thị trường"); với thị trường lạ, backtest riêng ≥30-50 mẫu trước khi tin.
+
+**⑩ Đa khung giờ mùa hè/mùa đông của chính thị trường giao dịch (không phải chỉ giờ trader).**
+Dấu hiệu: London mở cửa DST khác Mỹ — có giai đoạn trong năm London/NY overlap dịch chuyển, làm phiên "London" mà bạn quy ước 03:00–09:30 NY thực ra không còn khớp với giờ giao dịch thật của London. Cơ chế: bảng giờ phiên trong mục 1 giả định NY time cố định nhưng biên giới các phiên Asia/London do sàn/thị trường tại địa phương quyết định theo giờ local của họ, không di chuyển cùng tốc độ với DST Mỹ. **Xử lý:** mỗi lần đổi DST, kiểm tra lại không chỉ giờ cửa sổ Venom mà cả biên giới 3 phiên Asia/London/NY đã dùng làm base.
+
+**⑪ Tự tin thái quá sau một chuỗi thắng ngắn (recency bias trên mẫu nhỏ).**
+Dấu hiệu: sau 5–7 lệnh Venom thắng liên tiếp trên một thị trường, bạn tăng size hoặc nới điều kiện vào lệnh (bỏ qua vài core component) vì "đang có duyên". Cơ chế: với cỡ mẫu 5-7, một chuỗi thắng hoàn toàn có thể là biến động ngẫu nhiên của một hệ thống có winrate thực 50-55%, không phải bằng chứng edge tăng lên; não người có xu hướng đọc pattern giả (Chuyên sâu B #7 đã nêu ngưỡng ≥30-50 mẫu). **Xử lý:** cố định size theo kế hoạch risk đã đặt trước; chỉ xét tăng size sau khi cỡ mẫu đủ lớn xác nhận qua nhiều chu kỳ thị trường khác nhau (không chỉ 1 trend rõ).
+
+**⑫ Bỏ qua correlation khi trade nhiều symbol cùng cửa sổ Venom.**
+Dấu hiệu: vào cùng lúc Venom Long trên NQ1 và ES vì cả hai đều "quét pre-market low" trong cùng cửa sổ 09:30-10:30 — tưởng là 2 cơ hội độc lập nhưng thực chất là 1 bet lớn hơn (hai chỉ số index Mỹ tương quan rất cao). Cơ chế: sweep NY cash-open thường xảy ra đồng thời trên các index Mỹ do cùng chịu tác động dòng lệnh mở phiên; nếu cả hai đi sai hướng, thua kép cùng lúc dù tưởng đã "phân tán risk". **Xử lý:** coi các symbol tương quan cao (NQ1/ES/YM, hoặc EURUSD/GBPUSD) là một rổ risk duy nhất trong cùng cửa sổ; giới hạn tổng risk của rổ đó bằng risk 1 lệnh, không cộng dồn.
+
+> [!note] Nguyên tắc chung cho mọi edge case Venom
+> Khi nghi ngờ **bất kỳ** mắt xích nào (time / pool / sweep-reclaim / displacement), hạ cấp về trạng thái **"chờ xác nhận thêm"** thay vì ép entry. Thiếu một core component = **No Trade**, bất kể FVG "trông" đẹp đến đâu.
+
+---
+
+## Chuyên sâu B — Kinh nghiệm live/backtest thực chiến
+
+![[Venom-Advanced-WindowCreep-Timeline.svg|720]]
+
+Những điều dưới đây thường chỉ "thấm" sau vài chục lần trade/backtest Venom — chúng không đổi lý thuyết, nhưng quyết định phần lớn khoảng cách giữa "biết model" và "kiếm được tiền từ model".
+
+**1. Đánh dấu session pool TRƯỚC 09:30, không "tìm" pool trong cửa sổ.**
+Nếu tới lúc cửa sổ mở mà bạn còn đang dò xem đâu là Asia/London high-low hay Venom Box high-low, bạn đã trễ — và dễ **bịa ra một pool cho khớp** với cú giá vừa xảy ra (hindsight). Đánh dấu xong trước 09:30; trong cửa sổ chỉ đọc price action quanh các mốc đã kẻ sẵn.
+
+**2. Spread/slippage giãn quanh cash open 09:30 và tin 08:30 — tính vào R:R.**
+R:R trên chart là gross; cái vào túi là **net sau spread/commission**. Quanh 09:30 và các mốc tin, spread giãn có thể biến stop "an toàn" thành bị wick quét và biến "R:R 3" thành R thực thấp hơn. Với **XAUUSD nới stop + giảm size** thay vì siết stop cho R:R đẹp; ghi lại spread thực để backtest biết tần suất.
+
+**3. Session pool khác nhau theo thị trường.**
+**NQ1/NDX:** pool chính là high/low của **pre-market range (Venom Box 08:00–09:30)** — futures có volume xuyên đêm nên range rõ và đáng tin. **EURUSD/GBPUSD:** dùng **London high/low** (London đã dựng range đầu ngày trước khi NY vào), không có "cash open" như index. **XAUUSD:** thường lấy **Asia range** làm pool tham chiếu, đôi khi kết hợp London. Đừng áp một reference cho mọi thị trường.
+
+**4. Hard cutoff 10:30 — ghi lại mỗi lần bị cám dỗ "chờ thêm".**
+Kỷ luật giờ cắt là phần khó nhất. Mỗi lần bạn muốn nới cửa sổ, ghi nó xuống như một **điểm dữ liệu kỷ luật** (ngày nào, bối cảnh gì, kết quả nếu có vào). Sau 30–50 lần bạn sẽ thấy rõ window creep có "trả tiền" hay không — gần như luôn là không.
+
+**5. Tần suất thực: Venom sạch không xảy ra mỗi ngày.**
+Nhiều ngày sẽ **"miss Venom"** và đó là bình thường, không phải thất bại. Kỳ vọng vào lệnh mỗi ngày là nguồn gốc của window creep và của việc ép nhãn Venom lên setup không đủ chuẩn. Một tuần vài setup A+ tốt hơn mỗi ngày một setup gượng ép.
+
+**6. Phân biệt Venom vs Silver Bullet chỉ để phân loại dữ liệu.**
+Lúc vào lệnh, điều quan trọng là **pool nào bị quét + có displacement/FVG hợp lệ không**, không phải tên gọi. Sau lệnh, ghi `time_window` (và loại pool) để backtest phân loại. Đừng tranh cãi "đây là Venom hay Silver Bullet" trong lúc thị trường đang chạy — nó lấy đi sự tập trung vào price action.
+
+**7. Cỡ mẫu ≥30–50 backtest trước khi tin một biến thể/market.**
+Đừng tăng size/confidence cho một biến thể (một market như XAU, một loại pool, một khung giờ cụ thể) chỉ vì vài lệnh "cảm thấy đúng". Chuẩn tối thiểu: **≥30–50 mẫu** ghi đủ frontmatter → xác nhận win rate & average R dương có ý nghĩa → forward test size nhỏ → rồi mới scale. Để **dữ liệu của chính bạn** làm trọng tài.
+
+**8. Demo vs live vs funded account — kỷ luật giờ cắt "mềm" đi khi tiền thật vào cuộc.**
+Trên demo, hard cutoff 10:30 dễ tuân thủ vì không có cảm giác mất tiền thật. Chuyển sang live (đặc biệt funded/prop-firm), nhiều trader thấy mình "chờ thêm" đúng những phiên căng thẳng nhất — vì áp lực phải có kết quả làm tăng động lực window creep so với lúc backtest/demo. **Ghi nhận riêng** tỷ lệ tuân thủ cutoff trên demo vs live; nếu chênh lệch lớn, vấn đề là tâm lý, không phải model.
+
+**9. Tâm lý sau 2–3 lệnh thua liên tiếp — dễ đổi quy tắc giữa chừng.**
+Sau vài lệnh Venom thua (đúng chuẩn nhưng vẫn thua vì market luôn có tỷ lệ thua), phản ứng thường gặp là nghi ngờ toàn bộ mô hình và bắt đầu "chỉnh" tiêu chí (nới pool, hạ chuẩn displacement) ngay trong lúc đang mất bình tĩnh — đây chính là lúc dễ tạo ra biến thể chưa kiểm chứng. Với winrate giả định 55%, xác suất gặp 3 lệnh thua liên tiếp trong một chuỗi 20 lệnh là *không nhỏ* (~9% mỗi cụm 3 lệnh, và tích lũy qua 18 cụm trong 20 lệnh tăng đáng kể theo phân phối nhị thức) — 2-3 lệnh thua liên tiếp là **bình thường về thống kê**, không phải tín hiệu mô hình hỏng.
+
+**10. Journaling `missing_step` — trường dữ liệu quan trọng nhất, hay bị bỏ qua nhất.**
+Nhiều trade journal chỉ ghi win/loss + R, thiếu trường mô tả **mắt xích nào (nếu có) đã thiếu hoặc yếu** khi vào lệnh (time / pool / sweep-reclaim / displacement). Không có trường này, sau 50 lệnh bạn chỉ biết winrate tổng, không biết case nào trong 12 edge case ở Chuyên sâu A đang lặp lại nhiều nhất — mất chính công cụ để cải thiện có mục tiêu.
+
+**11. Tần suất A+ thực tế theo dữ liệu quan sát — kỳ vọng hợp lý.**
+Không có con số phổ quát, nhưng nhiều trader backtest Venom trên NQ1/ES ghi nhận tần suất setup đủ chuẩn (đủ 4 core component trong cửa sổ) rơi vào khoảng 2–4 lần/tuần, không phải mỗi ngày. XAUUSD do biến động tin tức nhiều thường có tần suất thấp hơn và tỷ lệ "gãy vì news spike" (case ②) cao hơn. Đây là **quan sát cá nhân cần tự kiểm chứng lại bằng backtest riêng**, không phải chuẩn ngành đã công bố.
+
+**12. Điều kiện được phép tăng size — không chỉ dựa vào cỡ mẫu, còn cần đa dạng điều kiện thị trường.**
+Ngoài ngưỡng ≥30–50 mẫu (đã nêu ở #7), nên yêu cầu thêm: mẫu đó trải qua **ít nhất 2 chế độ biến động khác nhau** (một giai đoạn biến động cao như quanh FOMC/NFP, một giai đoạn biến động thấp) và **ít nhất 2 xu hướng HTF khác nhau** (trend rõ + range/sideways). Một winrate đẹp chỉ đến từ một giai đoạn trend mạnh duy nhất chưa đủ để tăng size — nó có thể phản ánh đặc điểm của giai đoạn đó hơn là edge bền của model.
+
+> [!tip] Một câu gói lại
+> Venom thưởng cho **chuẩn bị trước phiên** và **kỷ luật dừng đúng giờ**: đánh dấu pool trước 09:30, cắt cứng tại 10:30, và để **cỡ mẫu backtest** (không phải cảm giác) quyết định biến thể nào đáng tin.
+
+---
+
+## Chuyên sâu C — Case studies mổ xẻ chuyên sâu (kịch bản minh họa)
+
+> [!info] Đây là kịch bản minh họa có nhãn
+> Bốn ca dưới đây là **ví dụ khái niệm** để dạy cách chấm điểm theo chuỗi + rule. Mọi số liệu giá/level là **hypothetical, KHÔNG phải lệnh thật** — đừng dùng làm dữ liệu backtest. Mỗi ca đại diện một *loại* bài học khác nhau.
+
+### Case 1 — NQ1 Win (đúng chuẩn)
+
+![[Venom-Advanced-CaseStudy-Win-NQ.svg|720]]
+
+**Chuỗi:** HTF bias Bullish, target session high. **09:35 NY**, giá **quét pre-market low (Venom Box low)** rồi **reclaim** (đóng nến lại trong range) → **displacement tăng + MSS phá swing high** → để lại bullish FVG → giá retrace về **FVG entry quanh CE ở discount** → chạy về **session high**. Sạch từ time + pool + sweep-reclaim + displacement.
+
+**Chẩn đoán:** đủ cả bốn core component đúng thứ tự, trong cửa sổ 09:30–10:30 (sát cash open), quét đúng **pool cấp session** (Venom Box low của NQ1), entry ở discount không chase. Đây là hình mẫu **A+ Venom**.
+
+**Bài học cốt lõi:** khi **time + đúng pool + sweep-reclaim + displacement** cùng thẳng hàng, việc còn lại chỉ là thực thi theo plan (entry CE, stop dưới sweep, target session high). Không cần "sáng tạo" thêm.
+
+### Case 2 — XAUUSD Loss (news spike nhầm Venom strike)
+
+![[Venom-Advanced-CaseStudy-Loss-NewsSpike-XAU.svg|720]]
+
+**Chuỗi (gãy):** **08:30 CPI**, XAUUSD giật xuống xuyên Asia low. Trader thấy "sweep" và vào long — **NHƯNG nến đóng luôn ở ngoài pool (no reclaim), không có displacement sạch** theo sau. Giá đảo chiều mạnh sau tin, quét stop. `missing_step: sweep (reclaim) / news`.
+
+**Chẩn đoán:** cú giật là **news spike, không phải venom strike**. Thiếu reclaim (đóng nến lại trong range) và thiếu displacement có cấu trúc → không có bằng chứng dòng lệnh tổ chức đứng sau. XAU đặc biệt dễ tạo wick "quá tay" quanh 08:30 rồi đảo. Lẽ ra phải đứng ngoài 15–30 phút chờ tin lắng.
+
+**Bài học cốt lõi:** **sweep không reclaim = chưa phải sweep**; nến to do tin ≠ nọc đã tiêm. Quanh 08:30 giảm size hoặc đứng ngoài, chỉ vào khi cấu trúc sweep + reclaim + displacement hiện rõ sau khi volatility lắng.
+
+### Case 3 — Win nhưng sai quy trình (window creep)
+
+![[Venom-Advanced-CaseStudy-WinWrong-WindowCreep.svg|720]]
+
+**Chuỗi:** cửa sổ 09:30–10:30 trôi qua không có setup. Trader nới giờ, vào một lệnh **lúc 10:50 (ngoài cửa sổ, đã window creep)** và **tình cờ thắng**. Chuỗi price action "trông" giống Venom nhưng thời gian đã sai.
+
+**Chẩn đoán:** kết quả thắng nhưng `first_error_step: time`. Cái nguy hiểm là **thắng sẽ CỦNG CỐ thói quen nới cửa sổ (outcome bias)** — một hành vi chưa hề được backtest validate, và về dài hạn thường thua. Ghi đúng `time_window: sau-cutoff`, đừng dán nhãn Venom.
+
+**Bài học cốt lõi:** một lệnh **THẮNG vẫn phải sửa** nếu sai quy trình. Chấm điểm bằng chuỗi + rule ("đúng cửa sổ chưa?"), không bằng P&L từng lệnh; một "good discipline" quan trọng hơn một "lucky win".
+
+### Case 4 — No-Trade đúng (ngoài cửa sổ, chưa sweep)
+
+![[Venom-Advanced-CaseStudy-NoTrade-OutsideWindow.svg|720]]
+
+**Chuỗi (đứng ngoài):** giữa **phiên chết**, xuất hiện một **FVG đẹp**. Nhưng **chưa quét bất kỳ session pool nào** và đang **ngoài cửa sổ Venom**. Trader không vào — coi như **No-Trade**.
+
+**Chẩn đoán:** thiếu **cả hai bộ lọc bắt buộc** (time + đã quét session pool). FVG đẹp không cứu được bối cảnh sai. Đứng ngoài ở đây là **quyết định đúng**, không phải "bỏ lỡ".
+
+**Bài học cốt lõi:** **No-Trade đúng quy trình là một "kết quả tốt"** cần được ghi nhận và khen, ngang với một lệnh thắng. Kỷ luật bỏ FVG đẹp sai bối cảnh chính là edge dài hạn của Venom.
+
+### Case 5 — Miss vì hai trader chọn pool khác nhau (tranh chấp định nghĩa)
+
+![[Venom-Advanced-CaseStudy-Miss-AmbiguousPool.svg|720]]
+
+**Chuỗi:** Cùng nhìn một chart NQ1 lúc 09:35, **Trader A** dùng Asia range low làm pool tham chiếu (chưa bị chạm), **Trader B** dùng pre-market low làm pool (đã bị chạm + reclaim). Trader B vào lệnh theo "sweep" của mình và thắng nhỏ; Trader A đứng ngoài vì pool của mình chưa bị chạm.
+
+**Chẩn đoán:** cả hai đều tuân thủ đúng *quy tắc riêng* của mình — không ai sai theo logic nội bộ, nhưng kết quả khác nhau hoàn toàn. Đây là bằng chứng trực tiếp cho việc Venom **không có một định nghĩa "pool cấp session" phổ quát, khách quan** được kiểm chứng độc lập — mỗi trader/tài liệu tự chọn quy ước riêng.
+
+**Bài học cốt lõi:** giá trị của Venom không nằm ở việc tìm "định nghĩa đúng duy nhất" (không tồn tại), mà ở việc **cố định một quy tắc chọn pool trước khi backtest** và trung thành với nó đủ lâu để dữ liệu của chính bạn có ý nghĩa thống kê — thay vì đổi quy tắc mỗi ngày theo cảm tính.
+
+### Case 6 — Loss kép do correlation (NQ1 + ES cùng hướng)
+
+![[Venom-Advanced-CaseStudy-Correlation-DoubleLoss.svg|720]]
+
+**Chuỗi:** Trader thấy Venom Strike xuất hiện gần như đồng thời trên **NQ1 và ES** (09:32 và 09:33), vào Long cả hai với risk 1R mỗi lệnh, nghĩ đây là "2 cơ hội độc lập". Cả hai đảo chiều cùng lúc và thua cùng lúc.
+
+**Chẩn đoán:** NQ1 và ES có correlation rất cao (thường >0.85–0.9) vì cùng phản ứng với dòng lệnh mở phiên Mỹ và cùng nhóm tài sản (index Mỹ). Risk thực tế của giao dịch này gần **2R trên một bet tương quan cao**, không phải 2 lệnh 1R độc lập như trader tưởng khi tính position sizing.
+
+**Bài học cốt lõi:** khi setup Venom xuất hiện đồng thời trên các symbol tương quan cao, hãy coi cả rổ là **một risk unit duy nhất** và giới hạn tổng risk bằng risk của 1 lệnh — không cộng dồn theo số lệnh.
+
+### Case 7 — Win nhờ kiểm tra lại giờ quanh mốc đổi DST
+
+![[Venom-Advanced-CaseStudy-Win-DST-Correct.svg|720]]
+
+**Chuỗi:** Đầu tháng 11 (mốc Mỹ đổi DST), trader chủ động kiểm tra lại toàn bộ bảng quy đổi giờ NY→local (thay vì dùng bảng giờ cũ đã lưu), phát hiện lệch 1 giờ và cập nhật kịp trước phiên. Vào đúng cửa sổ Cutting Zone thật, setup đủ chuẩn sweep + displacement + FVG.
+
+**Chẩn đoán:** đây không phải một case "kỹ thuật price action" mà là case về **quy trình phòng ngừa edge case ④/⑧**. Nhiều trader khác trong tuần đổi DST đó vào nhầm cửa sổ lệch 1 giờ do dùng bảng giờ cũ.
+
+**Bài học cốt lõi:** một phần đáng kể của "edge" trong Venom nằm ở **kỷ luật vận hành** (đúng giờ, đúng pool) chứ không chỉ ở việc đọc price action — thói quen kiểm tra định kỳ (mỗi lần đổi DST) là một quy tắc nhỏ nhưng loại bỏ được một nguồn lỗi hoàn toàn có thể tránh.
+
+> [!summary] Bảy ca — một thông điệp
+> **Kết quả (win/loss) là nhiễu ngắn hạn; tín hiệu thật là time + đúng pool + sweep-reclaim + displacement.** Case 1 thắng vì đủ chuỗi; Case 2 thua vì nhầm news spike với sweep; Case 3 thắng mà vẫn phải sửa vì window creep; Case 4 đứng ngoài mà đúng; Case 5 cho thấy định nghĩa pool có thể mơ hồ giữa hai trader; Case 6 thua vì bỏ qua correlation; Case 7 thắng nhờ kỷ luật kiểm tra DST. Chấm điểm theo `missing_step`/`time_window`/`pool_type_used`, không theo P&L từng lệnh.
+
+---
+
+## Phản biện & Giới hạn của mô hình
+
+> [!warning] Đọc trước khi tin tưởng tuyệt đối vào Venom
+> Phần này tổng hợp các giới hạn nhận thức luận (epistemic) và giới hạn thống kê của mô hình Venom. Mục tiêu không phải "bác bỏ" mô hình mà **định vị đúng mức độ tin tưởng** — Venom là một quy tắc thực dụng (heuristic) để phân loại price action theo giờ + pool, không phải một quy luật thị trường đã được chứng minh nhân quả.
+
+### 1. Tính chủ quan khi chọn "range tham chiếu" — vấn đề cốt lõi
+
+![[Venom-Advanced-ReferenceRange-Subjectivity.svg|720]]
+
+Toàn bộ khái niệm "Venom Strike" phụ thuộc vào việc xác định đúng **pool cấp session** (mục 3, Chuyên sâu A case ⑤ và ⑦). Nhưng bản thân "pool cấp session" **không có một định nghĩa khách quan, thống nhất trong tài liệu ICT gốc hay giữa các trader thực hành**:
+
+- Có người dùng **Asia range high/low**, có người dùng **pre-market 07:00–09:30** (Venom Box), có người dùng **PDH/PDL** (previous day high/low), có người kết hợp cả ba theo thứ tự ưu tiên tự đặt ra.
+- Với cùng một chart, cùng một thời điểm, **3 quy tắc chọn pool khác nhau có thể cho ra 3 kết luận "đã sweep" hoặc "chưa sweep" khác nhau** (xem Case 5 ở Chuyên sâu C).
+- Điều này khiến Venom dễ mắc **hindsight bias**: sau khi thấy giá đã chạy đúng hướng, người dùng có xu hướng chọn/điều chỉnh mốc pool sao cho câu chuyện sweep "khớp" và đẹp hơn — một dạng data dredging quy mô nhỏ nhưng lặp lại ở mỗi lệnh.
+
+**Hệ quả cho việc tin tưởng mô hình:** một backtest Venom "thắng cao" có thể phần lớn phản ánh việc chọn pool thuận lợi trong hồi cứu (retrospective), chứ không phải một edge sẽ lặp lại khi chọn pool *trước* khi biết kết quả (prospective). Cách giảm thiểu duy nhất là cố định quy tắc chọn pool **trước khi backtest** và không thay đổi nó giữa các mẫu — nhưng điều này chỉ giảm chủ quan lặp lại, không loại bỏ được chủ quan ban đầu khi *chọn* quy tắc.
+
+### 2. Sự phụ thuộc timezone — điểm yếu vận hành ít được nhắc tới
+
+![[Venom-Advanced-Timezone-DST-Risk.svg|720]]
+
+Mọi mốc giờ của Venom (07:00/09:30/10:30/10:45 NY time) được định nghĩa theo **giờ miền Đông Mỹ (ET)**, buộc trader ở mọi timezone khác phải quy đổi hằng ngày. Ba lớp rủi ro:
+
+- **DST không đồng bộ:** Mỹ đổi giờ (Chủ Nhật thứ 2 tháng 3, Chủ Nhật đầu tháng 11) không cùng ngày với châu Âu hay các nước khác, tạo ra 1–3 tuần mỗi năm nơi công thức quy đổi "quen dùng" bị sai 1 giờ (Chuyên sâu A case ④, ⑧, ⑩).
+- **Biên giới phiên Asia/London/NY** trong mục 1 giả định giờ NY cố định, nhưng biên giới thật của các phiên do giờ giao dịch địa phương của từng thị trường quyết định — cũng bị ảnh hưởng gián tiếp bởi DST của khu vực đó.
+- **Không có cơ chế tự kiểm tra:** trừ khi trader chủ động đặt nhắc nhở lịch, sai lệch DST thường chỉ được phát hiện *sau* khi đã vào nhầm cửa sổ vài lần.
+
+**Hệ quả thực dụng:** độ chính xác của "Cutting Zone 09:30–10:30" phụ thuộc vào việc trader duy trì đúng bảng quy đổi giờ theo thời gian thực — một yêu cầu vận hành nằm ngoài logic price action của mô hình, nhưng có thể phá vỡ toàn bộ tiền đề "đúng giờ" nếu bị bỏ qua.
+
+### 3. Giới hạn thống kê chung
+
+- **Chưa có nghiên cứu độc lập, có kiểm soát (peer-reviewed hoặc dữ liệu công khai lớn)** xác nhận Venom có edge dương ngoài các cộng đồng ICT truyền miệng và backtest cá nhân không công bố phương pháp đầy đủ.
+- Ngưỡng "≥30–50 mẫu" (Chuyên sâu B #7) là quy ước thực dụng do cộng đồng trader đề xuất, **không phải cỡ mẫu tối thiểu có ý nghĩa thống kê được tính toán chính thức** (một kiểm định nhị thức thực sự với sai số hợp lý thường cần hàng trăm mẫu để phân biệt winrate 50% và 55%).
+- Mô hình được thiết kế và mô tả chủ yếu qua quan sát chủ quan (discretionary reading), khiến việc backtest tự động/khách quan khó tái lập giữa hai người khác nhau đọc cùng một chart.
+
+> [!important] Kết luận thực dụng
+> Dùng Venom như một **bộ lọc thời gian + pool** để giảm nhiễu khi đọc price action, không dùng như một "quy luật thị trường" đã kiểm chứng. Luôn ghi `pool_type_used` và giờ quy đổi vào log, và tự đánh giá lại bằng dữ liệu của chính mình theo chu kỳ (ví dụ mỗi 3 tháng) vì cả tính chủ quan trong chọn pool và rủi ro DST đều có thể trôi dần (drift) theo thời gian nếu không được kiểm tra định kỳ.
+
 
 ---
 

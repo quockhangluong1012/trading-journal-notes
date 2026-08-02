@@ -75,7 +75,7 @@ tags:
 > [!info] Ghi chú chuyển đổi template (2026-07-17)
 > Convert từ template backtest cũ sang **template POI & Step Decision**. Dữ liệu gốc (entry/SL/TP/lesson learned) giữ nguyên. Hai điểm cần lưu ý:
 > 1. **Sửa lỗi ngày ở tiêu đề gốc**: header cũ ghi nhầm "Backtest 2005-05-02" trong khi `trade_date` và tên file đều là **2021-07-22**. Đã đồng bộ lại.
-> 2. **`followed_plan` được sửa từ `No` (bản gốc) sang `Yes`**: chính Lesson Learned gốc (mục 5.1) đã tự chỉ ra mâu thuẫn này — phần "Tôi có chờ đủ điều kiện không?" ghi **Có**, toàn bộ Entry Sequence checklist và Setup Quality Checklist đều tick đủ, và không có rule cụ thể nào được nêu là đã vi phạm. Theo đúng rule mà bản gốc tự đề xuất ("chỉ đánh No khi nêu được cụ thể rule bị vi phạm; nếu không, đánh Yes"), giá trị đúng phải là `Yes`. **Đề xuất Khang xác nhận lại** vì đây là sửa dữ liệu, không chỉ đồng bộ hiển thị.
+> 2. **`followed_plan` được sửa từ `No` (bản gốc) sang `Yes`**: chính Lesson Learned gốc (mục 5.1) đã tự chỉ ra mâu thuẫn này — phần "Tôi có chờ đủ điều kiện không?" ghi **Có**, toàn bộ Entry Sequence checklist và Setup Quality Checklist đều tick đủ, và không có rule cụ thể nào được nêu là đã vi phạm. Theo đúng rule mà bản gốc tự đề xuất ("chỉ đánh No khi nêu được cụ thể rule bị vi phạm; nếu không, đánh Yes"), giá trị đúng phải là `Yes`. **Đề xuất  xác nhận lại** vì đây là sửa dữ liệu, không chỉ đồng bộ hiển thị.
 > 3. **Session** suy ra từ mốc giờ cụ thể đã ghi trong bản gốc (19:10 giờ VN = UTC+7) → quy đổi ra ~08:10 ET (giờ mùa hè), rơi vào **New York AM Kill Zone** → `session: New York AM` (đây là suy luận có căn cứ giờ cụ thể, khác với 2 file trước phải đoán vì không có mốc giờ).
 
 ---
@@ -238,7 +238,7 @@ tags:
 | 7 | −2SD/ERL target | Không rõ | Không có dữ liệu gốc |
 | 8 | IDM swept | Không rõ | Không có dữ liệu gốc |
 
-- `confluence_score`: 1 *(lưu ý: frontmatter ở trên để 0 vì lúc soạn frontmatter chưa tính lại điểm `in_macro_time`; con số đúng theo bảng này là **1** — Khang có thể cập nhật frontmatter `confluence_score: 1` nếu đồng ý)*
+- `confluence_score`: 1 *(lưu ý: frontmatter ở trên để 0 vì lúc soạn frontmatter chưa tính lại điểm `in_macro_time`; con số đúng theo bảng này là **1** —  có thể cập nhật frontmatter `confluence_score: 1` nếu đồng ý)*
 
 ---
 

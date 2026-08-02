@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="760" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Edge Case: IRL/ERL flip khi range mở rộng giữa vòng xoay</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">Displacement bất ngờ biến ERL cũ thành IRL mới — bản đồ liquidity phải vẽ lại ngay giữa lệnh</text>
+
+<!-- Before -->
+<rect x="40" y="90" width="540" height="280" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="115" font-size="15" fill="#e2e8f0" font-weight="bold">TRƯỚC displacement — range gốc</text>
+<line x1="70" y1="150" x2="550" y2="150" stroke="#eab308" stroke-dasharray="5,3"/>
+<text x="440" y="145" font-size="11" fill="#eab308">ERL trên (BSL) 21,450</text>
+<line x1="70" y1="300" x2="550" y2="300" stroke="#eab308" stroke-dasharray="5,3"/>
+<text x="440" y="316" font-size="11" fill="#eab308">ERL dưới (SSL) 21,180</text>
+<rect x="200" y="210" width="70" height="25" fill="#22c55e" opacity="0.2" stroke="#22c55e" stroke-dasharray="3,2"/>
+<text x="205" y="205" font-size="11" fill="#22c55e">IRL (FVG) — draw hiện tại</text>
+<circle cx="235" cy="222" r="6" fill="#38bdf8"/>
+<text x="90" y="260" font-size="12" fill="#94a3b8">Lệnh Long đang chạy: đã qua IRL, hướng tới ERL trên 21,450</text>
+
+<!-- After -->
+<rect x="620" y="90" width="540" height="280" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="640" y="115" font-size="15" fill="#e2e8f0" font-weight="bold">SAU displacement tin tức — range MỞ RỘNG</text>
+<line x1="650" y1="130" x2="1130" y2="130" stroke="#eab308" stroke-dasharray="5,3"/>
+<text x="1020" y="125" font-size="11" fill="#eab308">ERL mới (BSL) 21,680</text>
+<line x1="650" y1="300" x2="1130" y2="300" stroke="#94a3b8" stroke-dasharray="2,4"/>
+<text x="900" y="298" font-size="11" fill="#94a3b8">ERL cũ 21,450 → giờ là IRL/hỗ trợ</text>
+<rect x="900" y="140" width="14" height="35" fill="#22c55e"/><line x1="907" y1="130" x2="907" y2="185" stroke="#22c55e" stroke-width="2"/>
+<circle cx="907" cy="150" r="6" fill="#f97316"/>
+<text x="700" y="175" font-size="12" fill="#f97316" font-weight="bold">Displacement tin tức xuyên thẳng qua ERL cũ, để lại FVG mới</text>
+<rect x="850" y="200" width="80" height="25" fill="#22c55e" opacity="0.2" stroke="#22c55e" stroke-dasharray="3,2"/>
+<text x="855" y="195" font-size="11" fill="#22c55e">IRL mới (FVG breakout)</text>
+
+<!-- explanation -->
+<rect x="40" y="395" width="1120" height="340" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="425" font-size="15" fill="#eab308" font-weight="bold">Tình huống → Vì sao bẫy cả trader kinh nghiệm</text>
+<text x="60" y="450" font-size="13" fill="#e2e8f0">Lệnh Long đặt TP tại ERL cũ 21,450 theo kịch bản ban đầu. Tin tức bất ngờ (ví dụ FOMC dovish surprise) tạo displacement xuyên</text>
+<text x="60" y="472" font-size="13" fill="#e2e8f0">thẳng qua 21,450 mà KHÔNG dừng — giá tiếp tục lên 21,680 rồi mới retrace. TP cũ bị bỏ lại quá sớm, hoặc nếu chưa vào lệnh,</text>
+<text x="60" y="494" font-size="13" fill="#e2e8f0">trader chờ giá "quay lại IRL cũ" theo mô hình cũ trong khi ERL 21,450 giờ đã trở thành IRL của range MỚI — chờ mãi không thấy</text>
+<text x="60" y="516" font-size="13" fill="#e2e8f0">"quay lại điểm gốc" vì bản đồ tham chiếu đã lỗi thời ngay giữa lúc quan sát.</text>
+
+<text x="60" y="555" font-size="15" fill="#38bdf8" font-weight="bold">Cách nhận diện sớm</text>
+<text x="60" y="578" font-size="13" fill="#e2e8f0">Nến displacement đóng cửa CHẤP NHẬN (body-close) vượt xa ERL cũ, kèm theo volume/tin tức bất thường — không phải wick-reject.</text>
+<text x="60" y="600" font-size="13" fill="#e2e8f0">Khoảng cách vượt qua ERL cũ lớn hơn nhiều so với biên độ "sweep" thông thường (thường sweep chỉ vượt vài tick/pip, breakout vượt hẳn % đáng kể của range).</text>
+
+<text x="60" y="638" font-size="15" fill="#a78bfa" font-weight="bold">Cách xử lý</text>
+<text x="60" y="661" font-size="13" fill="#e2e8f0">Ngay khi phát hiện body-acceptance ngoài ERL cũ: dừng theo dõi bản đồ IRL/ERL cũ, re-map toàn bộ dealing range theo cấu trúc mới.</text>
+<text x="60" y="683" font-size="13" fill="#e2e8f0" textLength="1134" lengthAdjust="spacingAndGlyphs">Với lệnh đang chạy: dời một phần TP lên theo ERL MỚI thay vì chốt cứng tại ERL cũ, đồng thời dời trailing stop theo IRL mới (FVG breakout) — không đóng toàn bộ lệnh chỉ vì đã "chạm mục tiêu cũ".</text>
+<text x="60" y="705" font-size="12" fill="#94a3b8">Tham chiếu: [[37 - Re-mapping Dealing Range sau Displacement]].</text>
+</svg>

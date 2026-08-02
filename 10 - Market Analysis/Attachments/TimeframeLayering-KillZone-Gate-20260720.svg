@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760" font-family="Segoe UI, Arial, sans-serif">
+<rect x="0" y="0" width="900" height="760" rx="12" fill="#191b1f"/>
+<text x="28" y="32" font-size="16" fill="#e6e8ea" font-weight="bold">Khi nao xuong khung? Quan sat (M15) vs Vao lenh (M5) vs Kill Zone GATE</text>
+
+<!-- Box 1: context -->
+<rect x="200" y="55" width="500" height="60" rx="6" fill="#202329" stroke="#2a2d33"/>
+<text x="450" y="80" font-size="12" fill="#9aa0a6" text-anchor="middle">Boi canh da xac nhan (khong phai trigger)</text>
+<text x="450" y="98" font-size="10.3" fill="#9aa0a6" text-anchor="middle">D1 Bearish - H1 dong bias - BSL ben ngoai da bi quet</text>
+
+<line x1="450" y1="115" x2="450" y2="140" stroke="#5a5f66" stroke-width="2"/>
+<polygon points="450,140 444,130 456,130" fill="#5a5f66"/>
+
+<!-- Box 2: TRIGGER quan sat -->
+<rect x="200" y="142" width="500" height="70" rx="6" fill="#20262b" stroke="#f0a500" stroke-width="1.6"/>
+<text x="450" y="167" font-size="13" fill="#f0a500" font-weight="bold" text-anchor="middle">TRIGGER 1 - Gia CHAM POI H1 (premium OB)</text>
+<text x="450" y="186" font-size="10.3" fill="#e6e8ea" text-anchor="middle">= mo quyen QUAN SAT M15, CHUA mo quyen vao lenh</text>
+<text x="450" y="202" font-size="9.6" fill="#9aa0a6" text-anchor="middle">"Cham POI" khong tu mang theo tin hieu</text>
+
+<line x1="450" y1="212" x2="450" y2="236" stroke="#5a5f66" stroke-width="2"/>
+<polygon points="450,236 444,226 456,226" fill="#5a5f66"/>
+
+<!-- Box 3: M15 decision -->
+<rect x="150" y="238" width="600" height="95" rx="6" fill="#202329" stroke="#2a2d33"/>
+<text x="450" y="262" font-size="12.5" fill="#e6e8ea" font-weight="bold" text-anchor="middle">M15: pool noi bo (inducement) da bi quet + MSS bang</text>
+<text x="450" y="280" font-size="12.5" fill="#e6e8ea" font-weight="bold" text-anchor="middle">displacement (than nen dong) + de lai FVG chua?</text>
+<text x="330" y="310" font-size="10.5" fill="#fa5252">Chua -&gt; dung ngoai, theo doi tiep M15</text>
+<text x="590" y="310" font-size="10.5" fill="#40c057">Roi -&gt; qua GATE thu hai</text>
+
+<line x1="450" y1="333" x2="450" y2="357" stroke="#40c057" stroke-width="2"/>
+<polygon points="450,357 444,347 456,347" fill="#40c057"/>
+
+<!-- Box 4: Kill Zone GATE -->
+<rect x="150" y="359" width="600" height="110" rx="6" fill="#2a1f1f" stroke="#fa5252" stroke-width="1.8"/>
+<text x="450" y="384" font-size="13" fill="#fa5252" font-weight="bold" text-anchor="middle">GATE 2 - Ca chuoi Sweep-MSS-Displacement co</text>
+<text x="450" y="402" font-size="13" fill="#fa5252" font-weight="bold" text-anchor="middle">xay ra TRONG London/NY Kill Zone khong?</text>
+<text x="450" y="422" font-size="10" fill="#e6e8ea" text-anchor="middle">Theo note "Kill Zones" (status: tested): ngoai KZ = VO HIEU HOA,</text>
+<text x="450" y="438" font-size="10" fill="#e6e8ea" text-anchor="middle">khong phai chi giam xac suat - day la dieu kien CAN cung nhu bias/sweep/POI</text>
+<text x="450" y="456" font-size="9.6" fill="#9aa0a6" text-anchor="middle">Luon quy doi dung DST (EDT mua he / EST mua dong) truoc khi ket luan</text>
+
+<line x1="330" y1="469" x2="330" y2="500" stroke="#fa5252" stroke-width="2"/>
+<polygon points="330,500 324,490 336,490" fill="#fa5252"/>
+<line x1="580" y1="469" x2="580" y2="500" stroke="#40c057" stroke-width="2"/>
+<polygon points="580,500 574,490 586,490" fill="#40c057"/>
+
+<!-- No branch -->
+<rect x="130" y="502" width="400" height="90" rx="6" fill="#20262b" stroke="#fa5252" stroke-dasharray="4 3"/>
+<text x="330" y="526" font-size="11.5" fill="#fa5252" font-weight="bold" text-anchor="middle">KHONG - No Trade</text>
+<text x="330" y="546" font-size="9.8" fill="#e6e8ea" text-anchor="middle">Giu nguyen level + FVG nhu "kich ban treo"</text>
+<text x="330" y="562" font-size="9.8" fill="#e6e8ea" text-anchor="middle">Cho re-deliver trong KZ ke tiep (xem War Story W2</text>
+<text x="330" y="578" font-size="9.8" fill="#e6e8ea" text-anchor="middle">cua Liquidity Sweep) - khong xoa setup</text>
+
+<!-- Yes branch -->
+<rect x="570" y="502" width="200" height="90" rx="6" fill="#1e2a20" stroke="#40c057" stroke-dasharray="4 3"/>
+<text x="670" y="526" font-size="11.5" fill="#40c057" font-weight="bold" text-anchor="middle">CO</text>
+<text x="670" y="546" font-size="9.8" fill="#e6e8ea" text-anchor="middle">Du dieu kien</text>
+
+<line x1="670" y1="592" x2="670" y2="616" stroke="#5a5f66" stroke-width="2"/>
+<polygon points="670,616 664,606 676,606" fill="#5a5f66"/>
+
+<!-- Box 5: execution -->
+<rect x="470" y="618" width="400" height="120" rx="6" fill="#202329" stroke="#2a2d33"/>
+<text x="670" y="642" font-size="12.5" fill="#e6e8ea" font-weight="bold" text-anchor="middle">TRIGGER 2 - xuong M5/M1</text>
+<text x="670" y="662" font-size="10" fill="#9aa0a6" text-anchor="middle">Entry tai CE cua FVG M15</text>
+<text x="670" y="678" font-size="10" fill="#9aa0a6" text-anchor="middle">Stop duoi day sweep M15 + buffer</text>
+<text x="670" y="694" font-size="10" fill="#9aa0a6" text-anchor="middle">Target: SSL H1/D1 con mo</text>
+<text x="670" y="714" font-size="9.3" fill="#9aa0a6" font-style="italic" text-anchor="middle">M5 khong tu tim MSS - chi thuc thi</text>
+<text x="670" y="728" font-size="9.3" fill="#9aa0a6" font-style="italic" text-anchor="middle">cau chuyen M15 + Kill Zone da xac nhan</text>
+</svg>

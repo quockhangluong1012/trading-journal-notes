@@ -20,7 +20,7 @@ tags: [daily-summary, prop-firm-prep]
 > 1. **Chuỗi backtest 12 ngày (07-06→07-17) đang treo, có nguy cơ đứt hôm nay** nếu hết ngày 07-18 vẫn không có backtest mới — đây sẽ là lần đứt chuỗi đầu tiên kể từ 07-06.
 > 2. **Nhịp backtest tiếp tục lùi so với mốc thi tự đặt:** tính tới hôm nay (26 ngày kể từ `start_date` 2026-06-23) mà vẫn 22 backtest → nhịp thô đã giảm xuống **22/26 ≈ 0,846/ngày** (từ 0,92/ngày hôm 07-17). Nếu duy trì nhịp này, mốc 200 backtest sẽ dịch xa hơn nữa so với ước tính 2027-01-27 đã nêu hôm 07-17 — độ trễ so với mốc tự đặt 2027-01-07 đang **nới rộng thêm**, chưa thu hẹp lại.
 > 3. **0 lệnh live trong 30 ngày** (gần nhất `Loss - 01 - Trade 2026-06-18 NDX Short`, 2026-06-18 → 2026-07-18 = 30 ngày tròn). Đây KHÔNG phải thất bại kỷ luật theo roadmap FOUNDATION hiện tại (backtest vẫn là ưu tiên #1), nhưng đã vượt xa ngưỡng 10 ngày mà routine này dùng để cảnh báo, và giai đoạn "Demo thử luật 2 tuần" của cả FTMO lẫn The5ers vẫn chưa hề bắt đầu — 173 ngày còn lại đang trôi mà chưa có bất kỳ ngày demo-live nào dưới luật quỹ.
-> 4. **Hai mismatch progress/cột mốc vẫn treo, chưa được Khang xác nhận sửa** (nêu từ 07-16): [[Master the ICT 2022 Model]] ghi `progress: 30` nhưng cột mốc thực tế là **0/5 = 0%**; [[Cut my top 3 repeated mistakes]] ghi `progress: 20` nhưng cột mốc thực tế là **0/4 = 0%**.
+> 4. **Hai mismatch progress/cột mốc vẫn treo, chưa được  xác nhận sửa** (nêu từ 07-16): [[Master the ICT 2022 Model]] ghi `progress: 30` nhưng cột mốc thực tế là **0/5 = 0%**; [[Cut my top 3 repeated mistakes]] ghi `progress: 20` nhưng cột mốc thực tế là **0/4 = 0%**.
 > 5. **Housekeeping nhỏ mới phát hiện hôm nay:** frontmatter của cả [[Pass FTMO first package challenge (10K$)]] và [[Pass The5er first package challenge (10k$)]] đều ghi `horizon: Long`, nhưng cả hai file vật lý lại nằm trong thư mục `09 - Goal Tracking/Goals/Mid Term (6-12 months)/` — lệch giữa metadata và vị trí thư mục (không ảnh hưởng tính toán progress, nhưng nên thống nhất một trong hai). Ngoài ra `progress: 1` ở FTMO không khớp cột mốc 0/8 = 0% (chỉ lệch 1 điểm, khả năng là làm tròn/nhập tay).
 
 ## 📚 Học hôm nay
@@ -29,7 +29,7 @@ tags: [daily-summary, prop-firm-prep]
 
 ## 📊 Backtest hôm nay
 
-**Không có backtest nào được log hôm nay** — thư mục `04 - Backtesting/2026-07-18/` chưa tồn tại. Đối chiếu trực tiếp toàn vault (đếm bằng `grep` trên frontmatter `type: backtest`, không dựa vào log cũ): tổng vẫn **22/200 (11%)** — **13 EURUSD + 4 GBPUSD + 4 XAUUSD + 1 NAS100**, **17 Win / 5 Loss = 77,3%** (n=22, không đổi so với 07-17). [[12 - Mistake - Log Data Mismatch - Backtest]] (tạo 07-17) vẫn là note lỗi mới nhất trong `06 - Mistake Database/` — không có bằng chứng nào cho thấy 2 vấn đề còn treo từ 07-17 (rename file `01 - Win - GBPUSD - 2014-06-25` và wikilink [[02 - Mistake - Enter before liquidity sweep]] vào note `02 - Loss - GBPUSD - 2014-07-17`) đã được xử lý — cả hai vẫn đang chờ xác nhận từ Khang.
+**Không có backtest nào được log hôm nay** — thư mục `04 - Backtesting/2026-07-18/` chưa tồn tại. Đối chiếu trực tiếp toàn vault (đếm bằng `grep` trên frontmatter `type: backtest`, không dựa vào log cũ): tổng vẫn **22/200 (11%)** — **13 EURUSD + 4 GBPUSD + 4 XAUUSD + 1 NAS100**, **17 Win / 5 Loss = 77,3%** (n=22, không đổi so với 07-17). [[12 - Mistake - Log Data Mismatch - Backtest]] (tạo 07-17) vẫn là note lỗi mới nhất trong `06 - Mistake Database/` — không có bằng chứng nào cho thấy 2 vấn đề còn treo từ 07-17 (rename file `01 - Win - GBPUSD - 2014-06-25` và wikilink [[02 - Mistake - Enter before liquidity sweep]] vào note `02 - Loss - GBPUSD - 2014-07-17`) đã được xử lý — cả hai vẫn đang chờ xác nhận từ .
 
 ## 💹 Live Trade hôm nay
 
@@ -47,7 +47,7 @@ tags: [daily-summary, prop-firm-prep]
 
 **3. [[Hold daily journaling and process discipline]]** — track khoẻ nhất hệ thống. File này (2026-07-18) nối chuỗi journaling liên tục sang **ngày thứ 14** (07-05 → 07-18). Cột mốc vẫn 2/4 (50%, khớp `progress` frontmatter). Cột mốc #3 ("4 tuần liên tiếp 5 ngày/tuần") — chuỗi 14 ngày ≈ 2 tuần, chưa chạm.
 
-**4. [[Cut my top 3 repeated mistakes]]** — không có lệnh live hôm nay nên chỉ số tần suất lỗi chính thức tiếp tục đứng yên (đóng băng, không phải cải thiện hay xấu đi). `progress` giữ **20%**, cột mốc vẫn **0/4 = 0%** — mismatch đã nêu từ 07-16, vẫn chưa xác nhận. Đề xuất tick cột mốc #1+#2 từ 07-08 vẫn chưa được Khang xác nhận.
+**4. [[Cut my top 3 repeated mistakes]]** — không có lệnh live hôm nay nên chỉ số tần suất lỗi chính thức tiếp tục đứng yên (đóng băng, không phải cải thiện hay xấu đi). `progress` giữ **20%**, cột mốc vẫn **0/4 = 0%** — mismatch đã nêu từ 07-16, vẫn chưa xác nhận. Đề xuất tick cột mốc #1+#2 từ 07-08 vẫn chưa được  xác nhận.
 
 **5 & 6. [[Pass FTMO first package challenge (10K$)]] và [[Pass The5er first package challenge (10k$)]]** — cả hai vẫn `phase: Phase 0/1 - Preparation`, cột mốc **0/8**, chưa mua gói. Dòng log gần nhất của cả hai vẫn là 2026-07-17 với nội dung "Tập trung backtest" — đã bị chính file 07-17 đánh giá là quá sơ sài. Không có số liệu thật nào đổi hôm nay (0 backtest, 0 học, 0 lệnh live) nên **không thêm dòng log mới** cho cả hai — thêm dòng rỗng sẽ chỉ lặp lại đúng vấn đề đã bị phê bình hôm qua.
 

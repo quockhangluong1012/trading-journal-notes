@@ -1,26 +1,44 @@
-<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Vì sao "08:30" hoạt động — không phải giá đi ĐÂU mà là KHI NÀO</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">08:30 là cửa sổ tin kinh tế Mỹ + đầu NY AM killzone: nơi thanh khoản &amp; displacement dồn lại.</text>
-<rect x="24" y="74" width="345" height="120" rx="8" fill="#FFFFFF" stroke="#3B82F6"/>
-<text x="40" y="98" font-size="13" font-weight="700" fill="#1D4ED8">① Catalyst tin tức 08:30 ET</text>
-<text x="40" y="120" font-size="11.5" fill="#374151">CPI · NFP · PPI · Jobless Claims phát lúc</text>
-<text x="40" y="138" font-size="11.5" fill="#374151">08:30 → biến động + volume tăng vọt.</text>
-<text x="40" y="160" font-size="11.5" fill="#374151">Đây là "cớ" để giá raid thanh khoản đã</text>
-<text x="40" y="178" font-size="11.5" fill="#374151">được xây từ 08:00→08:30.</text>
-<rect x="391" y="74" width="345" height="120" rx="8" fill="#FFFFFF" stroke="#F59E0B"/>
-<text x="407" y="98" font-size="13" font-weight="700" fill="#B45309">② NY AM killzone + macro</text>
-<text x="407" y="120" font-size="11.5" fill="#374151">08:30 nằm đầu NY AM KZ; giải quyết</text>
-<text x="407" y="138" font-size="11.5" fill="#374151">thường trùng macro 08:50 &amp; 09:50.</text>
-<text x="407" y="160" font-size="11.5" fill="#374151">09:30 mở NYSE khuếch đại setup trên</text>
-<text x="407" y="178" font-size="11.5" fill="#374151">NQ/ES → displacement sạch nhất.</text>
-<rect x="24" y="208" width="712" height="96" rx="8" fill="#F5F3FF" stroke="#7C3AED"/>
-<text x="40" y="232" font-size="13" font-weight="700" fill="#5B21B6">③ Cơ chế: build-up → raid → phản công (MSS)</text>
-<text x="40" y="256" font-size="11.5" fill="#374151">Từ 08:00→08:30 giá tạo relative equal H/L (đám đông đặt stop quanh đó). Sau 08:30, giá RAID cụm</text>
-<text x="40" y="274" font-size="11.5" fill="#374151">thanh khoản đó để nạp nhiên liệu, rồi ĐẢO CHIỀU (MSS) — bạn vào theo cú phản công tại PD array.</text>
-<text x="40" y="294" font-size="11.5" fill="#6B7280">→ Raid không kèm MSS = chưa có lệnh. MSS là bước xác nhận thanh khoản đã bị lấy đúng hướng.</text>
-<rect x="24" y="318" width="712" height="86" rx="8" fill="#F0FDF4" stroke="#10B981"/>
-<text x="40" y="342" font-size="12.5" font-weight="700" fill="#047857">Hệ quả thực dụng</text>
-<text x="40" y="364" font-size="11.5" fill="#374151">Bạn KHÔNG cần dự đoán hướng trước 08:30. Bạn để thị trường tự lộ diện bằng cú raid + MSS, rồi</text>
-<text x="40" y="383" font-size="11.5" fill="#374151">tham gia theo phản công. Đây là model "time-based": kỷ luật thời gian quan trọng hơn dự đoán.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="520" rx="12" fill="#0d1117"/>
+<text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Vì sao "08:30" hoạt động — 3 cơ chế thời gian</text>
+<!-- box 1 -->
+<rect x="40" y="80" width="270" height="200" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+<text x="175" y="108" font-size="14" font-weight="700" fill="#eab308" text-anchor="middle">① Catalyst tin tức</text>
+<text x="60" y="135" font-size="12" fill="#e5e7eb" text-anchor="start">CPI / NFP / PPI / Jobless</text>
+<text x="60" y="153" font-size="12" fill="#e5e7eb" text-anchor="start">Claims phát hành đúng 08:30 ET</text>
+<text x="60" y="185" font-size="11.5" fill="#94a3b8" text-anchor="start">Volume + biến động tăng</text>
+<text x="60" y="203" font-size="11.5" fill="#94a3b8" text-anchor="start">= "cái cớ" để raid cụm</text>
+<text x="60" y="221" font-size="11.5" fill="#94a3b8" text-anchor="start">thanh khoản 08:00-08:30</text>
+<text x="60" y="255" font-size="11" fill="#4ade80" text-anchor="start">Ngày không tin: vẫn có dòng</text>
+<text x="60" y="271" font-size="11" fill="#4ade80" text-anchor="start">lệnh mở màn NY AM.</text>
+<!-- box 2 -->
+<rect x="345" y="80" width="270" height="200" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+<text x="480" y="108" font-size="14" font-weight="700" fill="#a855f7" text-anchor="middle">② Killzone + Macro</text>
+<text x="365" y="135" font-size="12" fill="#e5e7eb" text-anchor="start">08:30 mở đầu NY AM</text>
+<text x="365" y="153" font-size="12" fill="#e5e7eb" text-anchor="start">killzone</text>
+<text x="365" y="185" font-size="11.5" fill="#94a3b8" text-anchor="start">Giải quyết thật thường</text>
+<text x="365" y="203" font-size="11.5" fill="#94a3b8" text-anchor="start">trùng macro 08:50 / 09:50</text>
+<text x="365" y="235" font-size="11.5" fill="#94a3b8" text-anchor="start">09:30 mở NYSE bơm thanh</text>
+<text x="365" y="253" font-size="11.5" fill="#94a3b8" text-anchor="start">khoản → displacement</text>
+<text x="365" y="271" font-size="11.5" fill="#94a3b8" text-anchor="start">sạch nhất trên NQ/ES</text>
+<!-- box 3 -->
+<rect x="650" y="80" width="270" height="200" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+<text x="785" y="108" font-size="14" font-weight="700" fill="#f97316" text-anchor="middle">③ Build-up → Raid → MSS</text>
+<text x="670" y="135" font-size="12" fill="#e5e7eb" text-anchor="start">08:00-08:30 in ra relative</text>
+<text x="670" y="153" font-size="12" fill="#e5e7eb" text-anchor="start">equal H/L</text>
+<text x="670" y="185" font-size="11.5" fill="#94a3b8" text-anchor="start">Đám đông đặt stop/lệnh</text>
+<text x="670" y="203" font-size="11.5" fill="#94a3b8" text-anchor="start">chờ quanh đó</text>
+<text x="670" y="235" font-size="11.5" fill="#94a3b8" text-anchor="start">Raid nạp nhiên liệu đối ứng</text>
+<text x="670" y="253" font-size="11.5" fill="#94a3b8" text-anchor="start">rồi đảo chiều tạo MSS</text>
+<!-- flow arrows -->
+<path d="M310,180 L345,180" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrW)"/>
+<path d="M615,180 L650,180" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrW)"/>
+<defs><marker id="arrW" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/></marker></defs>
+<!-- bottom summary -->
+<rect x="120" y="330" width="720" height="130" rx="10" fill="rgba(248,113,113,0.08)" stroke="#f87171" stroke-width="1.5"/>
+<text x="480" y="360" font-size="14" font-weight="700" fill="#f87171" text-anchor="middle">Vì sao MSS bắt buộc</text>
+<text x="150" y="388" font-size="12" fill="#e5e7eb" text-anchor="start">Raid KHÔNG kèm MSS = thanh khoản đã bị lấy nhưng thị trường chưa "cam kết" hướng.</text>
+<text x="150" y="410" font-size="12" fill="#e5e7eb" text-anchor="start">MSS (đóng qua swing đối diện + displacement) là bằng chứng khách quan cú raid đã</text>
+<text x="150" y="432" font-size="12" fill="#e5e7eb" text-anchor="start">hoàn thành nhiệm vụ và giá chuyển hướng — chỉ vào lệnh SAU khi có MSS.</text>
+<text x="480" y="490" font-size="12" fill="#94a3b8" text-anchor="middle">Bạn giao dịch PHẢN ỨNG với thanh khoản đã lộ diện, không giao dịch DỰ ĐOÁN hướng đi.</text>
 </svg>

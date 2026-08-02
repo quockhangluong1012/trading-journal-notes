@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">CISD hop le vs CISD gia do Gap qua dem</text>
+
+  <line x1="480" y1="70" x2="480" y2="480" stroke="#1e222d" stroke-width="2"/>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="0" y1="130" x2="960" y2="130"/>
+    <line x1="0" y1="190" x2="960" y2="190"/>
+    <line x1="0" y1="250" x2="960" y2="250"/>
+    <line x1="0" y1="310" x2="960" y2="310"/>
+    <line x1="0" y1="370" x2="960" y2="370"/>
+  </g>
+
+  <text x="30" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d1d4dc">Trai: CISD hop le (giao dich lien tuc)</text>
+  <g>
+    <line x1="70" y1="230" x2="70" y2="280" stroke="#ef5350" stroke-width="1"/>
+    <rect x="60" y="240" width="20" height="30" fill="#ef5350"/>
+    <line x1="110" y1="240" x2="110" y2="290" stroke="#ef5350" stroke-width="1"/>
+    <rect x="100" y="250" width="20" height="30" fill="#ef5350"/>
+    <line x1="150" y1="250" x2="150" y2="300" stroke="#ef5350" stroke-width="1"/>
+    <rect x="140" y="260" width="20" height="30" fill="#ef5350"/>
+  </g>
+  <line x1="60" y1="240" x2="380" y2="240" stroke="#f2c94c" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="65" y="235" font-family="Arial, sans-serif" font-size="12" fill="#f2c94c">Open chuoi giao hang</text>
+  <!-- continuous volume bars beneath -->
+  <g fill="rgba(41,98,255,0.3)">
+    <rect x="60" y="400" width="16" height="40"/>
+    <rect x="90" y="395" width="16" height="45"/>
+    <rect x="120" y="390" width="16" height="50"/>
+    <rect x="150" y="385" width="16" height="55"/>
+    <rect x="190" y="380" width="16" height="60"/>
+    <rect x="220" y="385" width="16" height="55"/>
+  </g>
+  <text x="60" y="370" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc">Volume giao dich lien tuc</text>
+  <!-- reclaim candle closing above open with continuous volume -->
+  <line x1="190" y1="190" x2="190" y2="250" stroke="#26a69a" stroke-width="1"/>
+  <rect x="180" y="195" width="20" height="45" fill="#26a69a"/>
+  <line x1="230" y1="160" x2="230" y2="220" stroke="#26a69a" stroke-width="1"/>
+  <rect x="220" y="165" width="20" height="45" fill="#26a69a"/>
+  <text x="30" y="460" font-family="Arial, sans-serif" font-size="14" fill="#26a69a">Dong lenh thuc lien tuc xac nhan qua vung gia -&gt; CISD dang tin</text>
+
+  <text x="510" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d1d4dc">Phai: CISD gia do Gap qua dem</text>
+  <!-- previous close -->
+  <line x1="540" y1="290" x2="580" y2="290" stroke="#ef5350" stroke-width="1"/>
+  <rect x="540" y="295" width="20" height="20" fill="#ef5350"/>
+  <text x="540" y="285" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc">Dong cua cuoi tuan truoc</text>
+  <!-- gap zone with no trades -->
+  <rect x="590" y="180" width="80" height="130" fill="none" stroke="#ef5350" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="595" y="175" font-family="Arial, sans-serif" font-size="12" fill="#ef5350">Vung gap: khong co giao dich</text>
+  <!-- new open far above with jump -->
+  <line x1="700" y1="150" x2="700" y2="200" stroke="#26a69a" stroke-width="1"/>
+  <rect x="690" y="160" width="20" height="35" fill="#26a69a"/>
+  <text x="680" y="140" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc">Mo cua tuan moi (gap len)</text>
+  <!-- quickly reverses filling gap -->
+  <line x1="740" y1="200" x2="740" y2="280" stroke="#ef5350" stroke-width="1"/>
+  <rect x="730" y="220" width="20" height="55" fill="#ef5350"/>
+  <line x1="780" y1="260" x2="780" y2="330" stroke="#ef5350" stroke-width="1"/>
+  <rect x="770" y="280" width="20" height="45" fill="#ef5350"/>
+  <text x="700" y="345" font-family="Arial, sans-serif" font-size="12" fill="#ef5350">Gia lap gap va dao chieu tro lai</text>
+  <text x="510" y="460" font-family="Arial, sans-serif" font-size="14" fill="#ef5350">Khong co dong lenh thuc qua vung gap -&gt; CISD gia, de bi lap gap va that bai</text>
+</svg>

@@ -38,7 +38,7 @@ tags: [weekly-summary, prop-firm-prep]
 |---|---|---|
 | Ngày có Daily Summary | **6/7** | 07-06→07-11 có; 07-12 (chốt tuần) chưa có |
 | Backtest log (theo frontmatter Daily Summary) | **9** | 2+2+1+1+3+0 (07-11 frontmatter ghi 0) |
-| Backtest — số **note file thật** trong tuần | **10** | 07-11 nay có 1 note (xem Cảnh báo #4) → khớp con số "10" Khang ghi ở [[02 - Skill Metrics]] |
+| Backtest — số **note file thật** trong tuần | **10** | 07-11 nay có 1 note (xem Cảnh báo #4) → khớp con số "10"  ghi ở [[02 - Skill Metrics]] |
 | Tổng backtest toàn vault | **11** | 10 trong tuần + 1 note W27 (`2026-07-01`) |
 | Lệnh live | **0** | Không có lệnh live nào cả tuần |
 | Net R (live) | **0** | Không có lệnh live |
@@ -73,7 +73,7 @@ tags: [weekly-summary, prop-firm-prep]
 | [[Cut my top 3 repeated mistakes]] | 20% | 0/4 | 0% | ❌ **Lệch** | ✅ Phase 1 hợp lý | 2026-07-08 (**4 ngày**) |
 | [[Hold daily journaling and process discipline]] | 40% | 0/4 | 0% | ❌ **Lệch** | ✅ Phase 1 hợp lý | 2026-07-11 (**1 ngày** — mới nhất) |
 
-> [!note] Cột mốc đã DƯ bằng chứng để tick nhưng chưa được tick (để Khang tự chấm, routine không tự tick)
+> [!note] Cột mốc đã DƯ bằng chứng để tick nhưng chưa được tick (để  tự chấm, routine không tự tick)
 > - [[Hold daily journaling and process discipline]] **#1** ("Định nghĩa quy trình ghi nhật ký hàng ngày") — chuỗi journaling 7 ngày + hệ thống tasks/summary chạy ổn định là bằng chứng quá đủ.
 > - [[Cut my top 3 repeated mistakes]] **#1** ("Xác định top-3") + **#2** ("Viết biện pháp đối phó") — top-3 đã xác định (06/09/07) và cả 3 note đã viết biện pháp từ 07-08.
 > Tick 3 cột mốc này + chỉnh `progress` cho khớp tỉ lệ sẽ xoá được 2/4 mismatch đang tồn tại.
@@ -121,7 +121,7 @@ Còn **179 ngày** tới 2027-01-07; đã trôi **19 ngày** kể từ `start_da
 
 1. **[Nợ 19 ngày — ưu tiên tuyệt đối] Lập bảng lot size 0,5%/1% cho tài khoản 10K$** (50$/100$ mỗi lệnh; pip value & lot cho NQ/NDX, EURUSD, GBPUSD, XAUUSD; The5ers thêm cột ngưỡng "ngày có lãi = +50$"). Xong → **log 1 dòng thật** vào cả [[Pass FTMO first package challenge (10K$)]] và [[Pass The5er first package challenge (10k$)]] để phá thế đứng yên.
 2. **Sửa nhãn `phase`** trong 2 goal challenge: `"Phase 4 - Challenge"` → `"Phase 0 - Preparation"` (1 dòng frontmatter/file).
-3. **Tick cột mốc đã dư bằng chứng** (Khang tự chấm): Journaling #1, Cut-top-3 #1+#2 → rồi chỉnh `progress` cho khớp cột mốc, xoá bớt mismatch.
+3. **Tick cột mốc đã dư bằng chứng** ( tự chấm): Journaling #1, Cut-top-3 #1+#2 → rồi chỉnh `progress` cho khớp cột mốc, xoá bớt mismatch.
 4. **Đa dạng thị trường backtest:** log ≥1 backtest NAS100/GBPUSD/XAUUSD để phá thế 11/11 EURUSD.
 5. **Vá dữ liệu vụn:** đối chiếu note backtest 07-11 với summary 07-11; tạo note `[[Mistake - Vào lệnh sai Kill Zone]]`; đồng bộ `baseline` (Backtest sample & Master 2022 → 11).
 
@@ -129,7 +129,7 @@ Còn **179 ngày** tới 2027-01-07; đã trôi **19 ngày** kể từ `start_da
 
 ## 📋 Đề xuất cập nhật (dán tay vào file gốc — KHÔNG tự sửa file có Dataview)
 
-> [!tip] `02 - Skill Metrics.md` — dòng W28 ĐÃ được Khang điền sẵn
+> [!tip] `02 - Skill Metrics.md` — dòng W28 ĐÃ được  điền sẵn
 > Bảng tuần hiện đã có: `| 2026-W28 | 10 | (trống) | 3 | 4 | Tuần đầu bắt đầu tập trung học tập và backtest |`.
 > Gợi ý tinh chỉnh nhẹ (không bắt buộc):
 > - Cột **"Lỗi top-3 (số lần)"** đang trống → nên ghi **0** (không có lệnh live nào trong tuần; mọi lỗi đều trong backtest, không tính vào tần suất live).

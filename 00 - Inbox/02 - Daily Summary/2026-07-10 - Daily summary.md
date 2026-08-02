@@ -92,7 +92,7 @@ Ngày mốc: **2027-01-07** → còn **181 ngày**.
 | [[Pass The5er first package challenge (10k$)]] | 0% | 0/8 | **2026-06-23 (17 ngày)** | không đổi | **Behind** — như trên. |
 | [[Build a statistically validated backtest sample]] | 6% | 0/4 | 2026-07-09 | **10/200 backtest** | **On track (số lượng)** — xem pace dưới. |
 | [[Master the ICT 2022 Model]] | 30% | 0/5 | 2026-07-09 | **10/100 setup, 80% win** | **On track (số lượng)**, ràng buộc thật = win rate/mẫu lớn. |
-| [[Hold daily journaling and process discipline]] | 40% | 0/4 | 2026-07-09 | **summary #7, 6 ngày liên tiếp** | Thói quen bền; cột mốc #1 đủ bằng chứng tick (để Khang tự chấm). |
+| [[Hold daily journaling and process discipline]] | 40% | 0/4 | 2026-07-09 | **summary #7, 6 ngày liên tiếp** | Thói quen bền; cột mốc #1 đủ bằng chứng tick (để  tự chấm). |
 | [[Cut my top 3 repeated mistakes]] | 20% | 0/4 | 2026-07-08 | live không đổi | Đứng yên hợp lệ (không có lệnh live). |
 
 **Mismatch cần nêu rõ (progress fm vs cột mốc thực):**
@@ -120,7 +120,7 @@ Ngày mốc: **2027-01-07** → còn **181 ngày**.
 - [[Pass FTMO...]] & [[Pass The5er...]]: **chưa làm bước Giai đoạn 0 nào** hôm nay → không có số thật để log; cố tình **không** thêm dòng "vẫn 0%" (giữ cảnh báo 17 ngày trung thực).
 
 > [!note] Việc KHÔNG tự làm thay (để giữ vòng accountability)
-> Không tự tick cột mốc và không tự sửa `progress %` (Khang tự chấm). Không tự dán W27, không tự sửa 2 nhãn `phase`, không tự lập bảng lot size — đây là **nợ tự tay** để tuần tự xoá, đã liệt kê ở Cảnh báo & Việc ngày mai.
+> Không tự tick cột mốc và không tự sửa `progress %` ( tự chấm). Không tự dán W27, không tự sửa 2 nhãn `phase`, không tự lập bảng lot size — đây là **nợ tự tay** để tuần tự xoá, đã liệt kê ở Cảnh báo & Việc ngày mai.
 
 ## 🔭 Việc cần làm ngày mai
 
@@ -130,7 +130,7 @@ Ngày mốc: **2027-01-07** → còn **181 ngày**.
 4. **Data-integrity 2 backtest hôm nay:** BT2 đồng bộ `grade` (C↔D) + `trade_date`/năm trong body; BT3 sửa tên file/heading "Short/2005" → "Long/2021" và thống nhất `followed_plan`.
 5. **Tạo `[[Mistake - Vào lệnh sai Kill Zone]]`** trong Mistake Database để bắt tần suất lỗi Kill Zone (BT2 hôm nay).
 6. **Backtest ngày 6:** giữ chuỗi + **đổi symbol** (NAS100 hoặc GBPUSD/XAUUSD) để giảm lệch mẫu EURUSD 9/10; áp 4-gate pre-trade (Session → Draw → Location/OTE → Signal-quality) mà BT2 đã rút ra.
-7. **Tự chấm cột mốc đã đủ bằng chứng** (Khang tự tick, không tự tick giùm): [[Hold daily journaling...]] #1, [[Cut my top 3...]] #1+#2, rồi chỉnh `progress %` cho khớp cột mốc.
+7. **Tự chấm cột mốc đã đủ bằng chứng** ( tự tick, không tự tick giùm): [[Hold daily journaling...]] #1, [[Cut my top 3...]] #1+#2, rồi chỉnh `progress %` cho khớp cột mốc.
 
 ## 🔗 Liên kết
 

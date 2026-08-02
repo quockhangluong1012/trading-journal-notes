@@ -1,0 +1,40 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Edge case — IDM equal lows bị quét NHIỀU LẦN (multi-poke) trước khi tới POI</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Pool equal highs/lows dày không bị dọn trong một cú sweep sạch — giá thọc 2–3 lần (partial fill) rồi mới displacement tới OB</text>
+  <rect x="24" y="70" width="712" height="374" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- equal lows IDM pool -->
+  <rect x="60" y="196" width="600" height="20" fill="#F59E0B" opacity="0.16"/>
+  <line x1="60" y1="206" x2="660" y2="206" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <text x="66" y="190" font-size="10.5" font-weight="700" fill="#B45309">IDM = equal lows (SSL) — pool stop DÀY, nhiều lớp</text>
+
+  <!-- bullish OB (real POI) below -->
+  <rect x="60" y="330" width="600" height="40" fill="#16A34A" opacity="0.14"/>
+  <line x1="60" y1="330" x2="660" y2="330" stroke="#15803D" stroke-width="1.2"/>
+  <line x1="60" y1="370" x2="660" y2="370" stroke="#15803D" stroke-width="1.2"/>
+  <text x="66" y="360" font-size="10.5" font-weight="700" fill="#15803D">POI thật = bullish OB (dưới IDM)</text>
+
+  <!-- price: poke 1 (shallow) -->
+  <path d="M120,150 L150,200 L175,215 L200,175" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="175" cy="212" r="5" fill="#DC2626"/>
+  <text x="120" y="120" font-size="10" font-weight="700" fill="#B91C1C">Poke #1 (nông) — "IDM đã quét!" → vào Long SỚM (SAI)</text>
+  <text x="150" y="138" font-size="9" fill="#B91C1C">✗ bị chop bởi các poke sau</text>
+
+  <!-- poke 2 deeper -->
+  <path d="M200,175 L235,205 L262,224 L290,190" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="262" cy="222" r="5" fill="#DC2626"/>
+  <text x="230" y="250" font-size="9.5" fill="#6B7280">Poke #2 (sâu hơn)</text>
+
+  <!-- poke 3 full clearance then drop to OB -->
+  <path d="M290,190 L330,240 L370,300 L410,348" fill="none" stroke="#374151" stroke-width="2.4"/>
+  <circle cx="410" cy="348" r="6" fill="#16A34A"/>
+  <text x="330" y="278" font-size="9.5" font-weight="700" fill="#15803D">Poke #3: dọn sạch pool → displacement xuống chạm OB</text>
+  <text x="330" y="392" font-size="10" font-weight="700" fill="#15803D">✓ Entry ĐÚNG: sau khi pool dọn xong + phản ứng tại OB</text>
+
+  <!-- continuation up -->
+  <path d="M410,348 L470,300 L540,240 L620,180" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <text x="470" y="150" font-size="10.5" font-weight="700" fill="#15803D">→ đảo chiều thật từ OB</text>
+
+  <text x="40" y="428" font-size="10.5" fill="#6B7280">Pool càng dày (equal 3+ lần chạm) càng dễ cần nhiều poke: chờ nhịp quét CÓ displacement rời khỏi pool, không vào sau poke đầu.</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Kinh nghiệm live &amp; backtest — Bread and Butter Buy</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">Dữ liệu minh họa tổng hợp, không phải kết quả cam kết</text>
+
+<!-- Panel 1: win rate by session -->
+<rect x="32" y="80" width="280" height="160" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="48" y="102" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">Win-rate theo phiên</text>
+<text x="60" y="122" font-size="11.5" fill="#94a3b8" text-anchor="start">London Open</text>
+<rect x="60" y="128" width="180" height="10" fill="#1f2937"/>
+<rect x="60" y="128" width="112" height="10" fill="#4ade80"/>
+<text x="248" y="137" font-size="11" fill="#e5e7eb" text-anchor="start">62%</text>
+<text x="60" y="155" font-size="11.5" fill="#94a3b8" text-anchor="start">NY Open</text>
+<rect x="60" y="161" width="180" height="10" fill="#1f2937"/>
+<rect x="60" y="161" width="126" height="10" fill="#4ade80"/>
+<text x="248" y="170" font-size="11" fill="#e5e7eb" text-anchor="start">70%</text>
+<text x="60" y="188" font-size="11.5" fill="#94a3b8" text-anchor="start">Asia Open</text>
+<rect x="60" y="194" width="180" height="10" fill="#1f2937"/>
+<rect x="60" y="194" width="99" height="10" fill="#4ade80"/>
+<text x="248" y="203" font-size="11" fill="#e5e7eb" text-anchor="start">55%</text>
+<text x="60" y="221" font-size="11.5" fill="#94a3b8" text-anchor="start">London Close (sell)</text>
+<rect x="60" y="227" width="180" height="10" fill="#1f2937"/>
+<rect x="60" y="227" width="72" height="10" fill="#ef4444"/>
+<text x="248" y="236" font-size="11" fill="#f87171" text-anchor="start">40%</text>
+
+<!-- Panel 2: setup frequency -->
+<rect x="340" y="80" width="280" height="160" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="356" y="102" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">Tần suất setup thực tế</text>
+<text x="356" y="128" font-size="12" fill="#e5e7eb" text-anchor="start">Kỳ vọng brief: 2–3 setup/ngày</text>
+<text x="356" y="150" font-size="12" fill="#e5e7eb" text-anchor="start">Backtest thực tế: 0.8–1.5 setup/ngày</text>
+<text x="356" y="172" font-size="12" fill="#e5e7eb" text-anchor="start">đạt đủ điều kiện bias + MSS sạch</text>
+<text x="356" y="200" font-size="11.5" fill="#94a3b8" text-anchor="start">Phần lớn ngày bỏ lỡ NY hoặc Asia</text>
+<text x="356" y="218" font-size="11.5" fill="#94a3b8" text-anchor="start">vì thiếu MSS rõ ràng hoặc bias yếu</text>
+
+<!-- Panel 3: losing streak -->
+<rect x="648" y="80" width="280" height="160" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="664" y="102" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">Chuỗi thua quan sát được</text>
+<text x="664" y="128" font-size="12" fill="#e5e7eb" text-anchor="start">Chuỗi thua dài nhất: 5–7 lệnh</text>
+<text x="664" y="150" font-size="12" fill="#e5e7eb" text-anchor="start">liên tiếp trong giai đoạn range</text>
+<text x="664" y="176" font-size="11.5" fill="#94a3b8" text-anchor="start">Thường trùng lúc HTF chuyển từ</text>
+<text x="664" y="194" font-size="11.5" fill="#94a3b8" text-anchor="start">bullish rõ sang sideway/phân vân</text>
+<text x="664" y="220" font-size="11.5" fill="#f87171" text-anchor="start">→ giảm size khi bias không rõ</text>
+
+<!-- Panel 4: demo/live/funded -->
+<rect x="32" y="260" width="430" height="150" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="48" y="282" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">Khác biệt demo / live / funded</text>
+<text x="48" y="306" font-size="12" fill="#94a3b8" text-anchor="start">Demo: entry đẹp hơn, ít trượt giá,</text>
+<text x="48" y="322" font-size="12" fill="#94a3b8" text-anchor="start">dễ bỏ qua chi phí spread thật</text>
+<text x="48" y="344" font-size="12" fill="#94a3b8" text-anchor="start">Live vốn nhỏ: trượt giá + spread ăn</text>
+<text x="48" y="360" font-size="12" fill="#94a3b8" text-anchor="start">2–4 pip mỗi lệnh trên target 15–30 pip</text>
+<text x="48" y="382" font-size="12" fill="#94a3b8" text-anchor="start">Funded: áp lực daily loss limit khiến</text>
+<text x="48" y="398" font-size="12" fill="#94a3b8" text-anchor="start">trader bỏ setup NY Open tốt vì sợ risk</text>
+
+<!-- Panel 5: volatility skew -->
+<rect x="478" y="260" width="450" height="150" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+<text x="494" y="282" font-size="13" font-weight="700" fill="#a855f7" text-anchor="start">Volatility skew — điểm khác biệt với Sell</text>
+<text x="494" y="306" font-size="12" fill="#94a3b8" text-anchor="start">Judas swing xuống (Buy) thường nhanh và</text>
+<text x="494" y="322" font-size="12" fill="#94a3b8" text-anchor="start">sắc hơn so với Judas lên (Sell) — hành vi</text>
+<text x="494" y="338" font-size="12" fill="#94a3b8" text-anchor="start">giá giảm nhanh hơn tăng (fear &gt; greed)</text>
+<text x="494" y="360" font-size="12" fill="#94a3b8" text-anchor="start">→ MSS lên sau Judas xuống dễ bị retest sâu</text>
+<text x="494" y="376" font-size="12" fill="#94a3b8" text-anchor="start">hơn, cần kiên nhẫn chờ retest thay vì đuổi giá</text>
+<text x="494" y="398" font-size="11" fill="#94a3b8" text-anchor="start">Bất đối xứng thực nghiệm, không phải suy diễn đảo gương Sell</text>
+
+<!-- Panel 6: when to size up -->
+<rect x="32" y="425" width="896" height="150" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<text x="48" y="450" font-size="13" font-weight="700" fill="#4ade80" text-anchor="start">Khi nào nên tăng size</text>
+<text x="48" y="474" font-size="12" fill="#e5e7eb" text-anchor="start">1. HTF D1/H4 bullish rõ ràng, không mơ hồ, đã được xác nhận nhiều phiên liên tiếp</text>
+<text x="48" y="496" font-size="12" fill="#e5e7eb" text-anchor="start">2. NY Open session — win-rate lịch sử cao nhất (~70%) trong 3 phiên LONG</text>
+<text x="48" y="518" font-size="12" fill="#e5e7eb" text-anchor="start">3. Judas swing có biên độ đạt hoặc vượt ATR(5) trung bình, MSS có displacement rõ</text>
+<text x="48" y="540" font-size="12" fill="#e5e7eb" text-anchor="start">4. Chưa có chuỗi thua trong ngày, daily loss limit funded account còn nhiều dư địa</text>
+<text x="48" y="562" font-size="11.5" fill="#94a3b8" text-anchor="start">Ngược lại: giảm size hoặc bỏ qua khi bias mơ hồ, Judas nông, hoặc đang thua liên tiếp</text>
+</svg>

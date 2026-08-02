@@ -1,0 +1,37 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="32" font-size="15" font-weight="700" fill="#1F2937">Case study — chuỗi 3 lệnh cùng narrative nhờ re-map</text>
+<text x="24" y="52" font-size="11.5" fill="#6B7280">Minh họa khái niệm · mỗi displacement lấy 1 tầng liquidity, để lại POI mới; có 1 bẫy over-re-map ở giữa</text>
+<rect x="24" y="66" width="712" height="322" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<line x1="44" y1="110" x2="716" y2="110" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="46" y="104" font-size="9" font-weight="700" fill="#1D4ED8">HTF BSL = draw cuối (target chuỗi)</text>
+<line x1="44" y1="350" x2="716" y2="350" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="46" y="365" font-size="8.5" fill="#6B7280">SSL đáy gốc — đã tiêu thụ (nhịp 1)</text>
+<!-- staircase up: 3 displacement legs with FVGs -->
+<rect x="120" y="270" width="80" height="26" fill="#7C3AED" opacity="0.10"/>
+<text x="122" y="266" font-size="8" fill="#6D28D9">FVG-1</text>
+<rect x="330" y="205" width="80" height="24" fill="#7C3AED" opacity="0.10"/>
+<text x="332" y="201" font-size="8" fill="#6D28D9">FVG-2</text>
+<rect x="540" y="150" width="80" height="22" fill="#7C3AED" opacity="0.10"/>
+<text x="542" y="146" font-size="8" fill="#6D28D9">FVG-3</text>
+<path d="M60,360 L85,335 L100,352 L120,300 L150,255 L175,238 L185,250 L200,282 L215,265 L235,300 L255,285 L280,240 L310,215 L335,205 L348,218 L365,248 L380,235 L400,205 L430,175 L470,215 L500,235 L520,205 L545,168 L575,150 L590,162 L610,150 L640,130 L680,115" fill="none" stroke="#374151" stroke-width="2"/>
+<circle cx="120" cy="300" r="4.5" fill="#16A34A"/>
+<text x="70" y="392" font-size="8.5" font-weight="700" fill="#166534">① Long nhịp 1 (discount range gốc)</text>
+<circle cx="215" cy="265" r="5" fill="none" stroke="#B45309" stroke-width="2"/>
+<text x="180" y="330" font-size="8" fill="#B45309">quét đỉnh cũ (internal BSL) → scale-out</text>
+<text x="180" y="343" font-size="8" font-weight="700" fill="#166534">RE-MAP → FVG-2 là POI mới</text>
+<circle cx="335" cy="205" r="4.5" fill="#16A34A"/>
+<text x="300" y="392" font-size="8.5" font-weight="700" fill="#166534">② Long nhịp 2 (FVG-2)</text>
+<!-- over-remap trap -->
+<circle cx="470" cy="215" r="5" fill="none" stroke="#B91C1C" stroke-width="2"/>
+<text x="430" y="270" font-size="8" font-weight="700" fill="#B91C1C">⚠ BẪY: nến hồi nhỏ, nhiều wick</text>
+<text x="430" y="283" font-size="8" fill="#B91C1C">— KHÔNG phải displacement → đừng re-map</text>
+<circle cx="545" cy="168" r="4.5" fill="#16A34A"/>
+<text x="510" y="392" font-size="8.5" font-weight="700" fill="#166534">③ Long nhịp 3 (FVG-3)</text>
+<circle cx="680" cy="115" r="5.5" fill="#2563EB"/>
+<text x="600" y="392" font-size="8.5" font-weight="700" fill="#1D4ED8">④ tới HTF BSL → dừng chuỗi</text>
+<rect x="24" y="398" width="712" height="56" rx="8" fill="#F3F4F6"/>
+<text x="38" y="419" font-size="11.5" font-weight="700" fill="#1F2937">Why — "trading the delivery" thay vì "một lệnh rồi hết"</text>
+<text x="38" y="438" font-size="10.5" fill="#374151">Mỗi lần external mới bị lấy vừa là tín hiệu scale-out vừa là tín hiệu re-map. Chuỗi dừng khi draw HTF (BSL) hoàn tất.</text>
+<text x="38" y="451" font-size="10.5" fill="#374151">Bẫy giữa chừng: nhịp hồi nhỏ nhiều wick KHÔNG phải displacement — re-map lúc đó là over-re-mapping.</text>
+</svg>

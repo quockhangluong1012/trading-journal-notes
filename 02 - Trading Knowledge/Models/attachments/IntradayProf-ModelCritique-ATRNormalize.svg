@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<defs><marker id="arrRedATR" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#f87171"/></marker></defs>
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480.0" y="36.0" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Ngưỡng pip cố định không co giãn theo volatility</text>
+<rect x="260.0" y="320.0" width="120.0" height="100.0" rx="0" fill="#334155" stroke="#3b82f6" stroke-width="1.5"/>
+<rect x="560.0" y="200.0" width="120.0" height="220.0" rx="0" fill="#334155" stroke="#3b82f6" stroke-width="1.5"/>
+<line x1="60.0" y1="420.0" x2="900.0" y2="420.0" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="320.0" y="446.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Volatility FX lúc số</text>
+<text x="320.0" y="462.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">liệu gốc phổ biến</text>
+<text x="620.0" y="446.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Volatility FX hiện tại</text>
+<line x1="400.0" y1="320.0" x2="540.0" y2="200.0" stroke="#f87171" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrRedATR)"/>
+<text x="480.0" y="160.0" font-size="13" font-weight="400" fill="#f87171" text-anchor="middle">Ngưỡng pip cố định (40 / 20–30) không co giãn theo cột bên phải</text>
+<text x="480.0" y="90.0" font-size="15" font-weight="700" fill="#4ade80" text-anchor="middle">Ngưỡng = k × ATR(H1, 6 giờ)</text>
+</svg>

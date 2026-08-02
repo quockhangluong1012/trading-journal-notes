@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">BPR quá hẹp so với spread/ATR trên CFD — CE trở nên vô nghĩa</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">XAUUSD CFD M5 — overlap 1.8 pip trong khi spread trung bình đã 2.5 pip</text>
+
+  <line x1="40" y1="600" x2="1240" y2="600" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- zoomed price ladder -->
+  <line x1="100" y1="200" x2="1200" y2="200" stroke="#787b86" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="1110" y="193" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">2412.60</text>
+  <line x1="100" y1="260" x2="1200" y2="260" stroke="#787b86" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="1110" y="253" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">2412.42</text>
+  <line x1="100" y1="320" x2="1200" y2="320" stroke="#787b86" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="1110" y="313" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">2412.24</text>
+
+  <!-- overlap zone, very thin -->
+  <rect x="500" y="228" width="200" height="32" rx="3" fill="#f2c94c" opacity="0.22" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="510" y="222" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Overlap 2412.42-2412.60 = 1.8 pip</text>
+  <line x1="500" y1="244" x2="700" y2="244" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="520" y="270" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">CE ≈ 2412.51</text>
+
+  <!-- spread band overlaying, wider than overlap -->
+  <rect x="480" y="215" width="240" height="58" rx="3" fill="#ff9800" opacity="0.10" stroke="#ff9800" stroke-dasharray="3 3"/>
+  <text x="740" y="240" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff9800">Spread trung bình phiên Á: 2.5 pip</text>
+  <text x="740" y="262" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff9800">→ bao trùm gần hết vùng overlap</text>
+
+  <!-- candles -->
+  <g>
+    <line x1="560" y1="150" x2="560" y2="240" stroke="#ef5350" stroke-width="1"/>
+    <rect x="552" y="160" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="600" y1="180" x2="600" y2="260" stroke="#ef5350" stroke-width="1"/>
+    <rect x="592" y="190" width="16" height="55" rx="1" fill="#ef5350"/>
+    <line x1="640" y1="240" x2="640" y2="330" stroke="#26a69a" stroke-width="1"/>
+    <rect x="632" y="250" width="16" height="60" rx="1" fill="#26a69a"/>
+  </g>
+
+  <!-- comparison box: bid vs ask fill -->
+  <rect x="120" y="400" width="480" height="130" rx="8" fill="#131722" stroke="#2a2e39"/>
+  <text x="135" y="425" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#d1d4dc" font-weight="bold">Vấn đề CE khi overlap ≈ spread</text>
+  <text x="135" y="450" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Limit tại CE trên chart bid có thể</text>
+  <text x="135" y="472" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">không khớp trên ask thực thi (lệch 2.5 pip)</text>
+  <text x="135" y="497" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Stop ngoài đầu kia BPR cũng bị nuốt bởi spread</text>
+  <text x="135" y="519" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">→ R:R lý thuyết không còn đúng thực tế</text>
+
+  <rect x="660" y="400" width="480" height="130" rx="8" fill="#f2c94c" opacity="0.14" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="675" y="425" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">Rule ngưỡng</text>
+  <text x="675" y="450" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">overlap_width / avg_spread &lt; 3 → hạ cấp,</text>
+  <text x="675" y="472" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">đòi confluence khác (OB/OTE) mới trade</text>
+  <text x="675" y="497" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">overlap_width / ATR(14) &lt; 5% → cùng xử lý</text>
+  <text x="675" y="519" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Ưu tiên futures/spot thay CFD khi có thể</text>
+
+  <text x="40" y="660" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">XAUUSD CFD M5 · minh họa cấu trúc — overlap mỏng hơn spread thì CE chỉ còn ý nghĩa lý thuyết</text>
+</svg>

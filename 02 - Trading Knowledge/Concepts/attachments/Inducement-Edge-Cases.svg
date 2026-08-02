@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="780" fill="#0f1420" rx="12"/>
+
+  <text x="600" y="40" font-size="26" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Edge Case đắt giá nhất: HTF IDM đúng nhưng LTF entry Fail liên tục (EC6)</text>
+  <text x="600" y="64" font-size="15" fill="#94a3b8" text-anchor="middle">Tầng IDM ẩn chưa tính tới khi refine từ H1 xuống M5</text>
+
+  <g stroke="#1c2333"><line x1="60" y1="100" x2="1140" y2="100"/><line x1="60" y1="220" x2="1140" y2="220"/><line x1="60" y1="340" x2="1140" y2="340"/></g>
+
+  <text x="70" y="120" font-size="13" fill="#94a3b8">H1: IDM đã bị quét đúng kịch bản, giá đang tiến vào vùng POI H1</text>
+
+  <line x1="120" y1="150" x2="120" y2="190" stroke="#ef4444" stroke-width="2"/>
+  <rect x="112" y="160" width="16" height="25" fill="#ef4444"/>
+  <line x1="200" y1="170" x2="200" y2="215" stroke="#f97316" stroke-width="2.5"/>
+  <rect x="192" y="185" width="16" height="25" fill="#ef4444" stroke="#f97316" stroke-width="1.5"/>
+  <text x="150" y="240" font-size="12" fill="#f97316" font-weight="bold">H1 IDM sweep — đúng kịch bản</text>
+
+  <rect x="280" y="230" width="220" height="55" fill="#22c55e" opacity="0.2"/>
+  <text x="290" y="250" font-size="12.5" fill="#e2e8f0">Vùng POI H1</text>
+  <text x="290" y="267" font-size="11" fill="#94a3b8">Trader chuyển xuống M5 tìm entry</text>
+
+  <!-- M5 zoomed panel with fail x2 then win -->
+  <text x="560" y="120" font-size="13" fill="#94a3b8">M5 refine (zoom trong vùng POI H1): 2 lần fail trước khi đúng</text>
+
+  <g stroke="#1c2333"><line x1="560" y1="140" x2="1140" y2="140"/><line x1="560" y1="230" x2="1140" y2="230"/><line x1="560" y1="320" x2="1140" y2="320"/></g>
+
+  <!-- M5 fail 1 -->
+  <line x1="610" y1="160" x2="610" y2="200" stroke="#ef4444" stroke-width="2"/>
+  <rect x="602" y="170" width="14" height="22" fill="#ef4444"/>
+  <text x="595" y="215" font-size="11.5" fill="#ef4444">Đáy M5 #1</text>
+  <line x1="600" y1="200" x2="700" y2="200" stroke="#eab308" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="650" y1="205" x2="650" y2="245" stroke="#ef4444" stroke-width="2.5"/>
+  <rect x="642" y="215" width="14" height="25" fill="#ef4444" stroke="#f97316"/>
+  <text x="660" y="265" font-size="11" fill="#f97316" font-weight="bold">Fail #1 — vào ngay sau "IDM"</text>
+  <text x="660" y="280" font-size="11" fill="#94a3b8">tưởng đã đủ điều kiện, bị quét</text>
+
+  <!-- M5 fail 2 -->
+  <line x1="750" y1="220" x2="750" y2="260" stroke="#ef4444" stroke-width="2"/>
+  <rect x="742" y="230" width="14" height="22" fill="#ef4444"/>
+  <line x1="740" y1="260" x2="840" y2="260" stroke="#eab308" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="790" y1="265" x2="790" y2="300" stroke="#ef4444" stroke-width="2.5"/>
+  <rect x="782" y="270" width="14" height="25" fill="#ef4444" stroke="#f97316"/>
+  <text x="800" y="290" font-size="11" fill="#f97316" font-weight="bold">Fail #2</text>
+
+  <!-- final win -->
+  <line x1="900" y1="300" x2="900" y2="170" stroke="#22c55e" stroke-width="3"/>
+  <rect x="890" y="180" width="20" height="110" fill="#22c55e"/>
+  <text x="850" y="155" font-size="13" fill="#22c55e" font-weight="bold">Displacement thật — rời hẳn vùng</text>
+  <text x="850" y="310" font-size="11.5" fill="#94a3b8">Sau 2 fail: chuyển confirmation lên M15</text>
+
+  <!-- rule box -->
+  <rect x="560" y="345" width="580" height="60" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="575" y="368" font-size="13" fill="#e2e8f0">Rule đo được: sau ≥2 lần fail liên tiếp cùng khu vực,</text>
+  <text x="575" y="386" font-size="13" fill="#e2e8f0">dừng refine M5, quay lại M15 chờ displacement RỜI hẳn vùng nhiễu</text>
+
+  <!-- other edge cases quick reference -->
+  <text x="60" y="450" font-size="17" font-weight="bold" fill="#e2e8f0">Các Edge Case khác cần nhớ (chi tiết ở mục 19)</text>
+
+  <rect x="60" y="470" width="345" height="110" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="72" y="492" font-size="13" font-weight="bold" fill="#eab308">EC1 — CFD broker vs futures gốc</text>
+  <text x="72" y="512" font-size="12" fill="#e2e8f0">IDM lệch 5-8 điểm giữa nguồn giá</text>
+  <text x="72" y="530" font-size="12" fill="#e2e8f0">→ dùng chart CME làm bản đồ chính</text>
+  <text x="72" y="548" font-size="12" fill="#e2e8f0">khi đánh dấu mức cho index</text>
+
+  <rect x="428" y="470" width="345" height="110" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="440" y="492" font-size="13" font-weight="bold" fill="#eab308">EC5 — Ngày lễ US/UK</text>
+  <text x="440" y="512" font-size="12" fill="#e2e8f0">IDM hình thành nhưng ít trader</text>
+  <text x="440" y="530" font-size="12" fill="#e2e8f0">tham gia thật → hạ tier hoặc</text>
+  <text x="440" y="548" font-size="12" fill="#e2e8f0">bỏ qua IDM ngày lễ chính</text>
+
+  <rect x="796" y="470" width="344" height="110" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="808" y="492" font-size="13" font-weight="bold" fill="#eab308">EC8 — Trend một chiều mạnh</text>
+  <text x="808" y="512" font-size="12" fill="#e2e8f0">Giá không hồi về lấy IDM dự kiến</text>
+  <text x="808" y="530" font-size="12" fill="#e2e8f0">→ đo ATR/pullback trước khi cố</text>
+  <text x="808" y="548" font-size="12" fill="#e2e8f0">định kế hoạch vào việc chờ IDM</text>
+
+  <text x="600" y="630" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-style="italic">Bài học chung: một tầng IDM hợp lệ trên HTF không đảm bảo LTF chỉ có đúng một tầng nhiễu — luôn kiểm tra số lần fail trước khi kết luận "đã đủ điều kiện".</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="520" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="19" font-weight="700" fill="#e5e7eb" text-anchor="start">OTE trùng FVG (confluence) vs OTE "trơ trọi" — chất lượng setup khác nhau</text>
+
+<!-- Left: OTE + FVG confluence -->
+<rect x="30" y="60" width="440" height="420" rx="10" fill="#111827" stroke="#334155" stroke-width="1"/>
+<text x="250" y="88" font-size="14" font-weight="700" fill="#4ade80" text-anchor="middle">OTE + FVG chồng nhau (A/A+)</text>
+
+<line x1="150" y1="440" x2="150" y2="410" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="143.5" y="420" width="13" height="15" fill="#ef4444"/>
+<line x1="174" y1="420" x2="174" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="167.5" y="335" width="13" height="80" fill="#22c55e"/>
+<line x1="198" y1="335" x2="198" y2="240" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="191.5" y="245" width="13" height="85" fill="#22c55e"/>
+<line x1="222" y1="245" x2="222" y2="140" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="215.5" y="145" width="13" height="95" fill="#22c55e"/>
+
+<rect x="246" y="290" width="90" height="70" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="250" y="285" font-size="10" fill="#3b82f6" text-anchor="start">OTE 62–79%</text>
+<rect x="256" y="300" width="70" height="30" fill="rgba(59,130,246,0.30)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="260" y="345" font-size="10" fill="#3b82f6" text-anchor="start">FVG chồng đúng vùng OTE</text>
+
+<line x1="270" y1="325" x2="270" y2="270" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="263.5" y="275" width="13" height="50" fill="#22c55e"/>
+<line x1="294" y1="275" x2="294" y2="180" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="287.5" y="185" width="13" height="90" fill="#22c55e"/>
+
+<text x="60" y="400" font-size="11" fill="#4ade80" text-anchor="start">→ Hai lớp POI đồng thuận cùng vùng giá</text>
+<text x="60" y="420" font-size="11" fill="#4ade80" text-anchor="start">→ Phản ứng dứt khoát, ít bị xuyên sâu</text>
+<text x="60" y="440" font-size="11" fill="#4ade80" text-anchor="start">→ Grade A/A+, size chuẩn/full</text>
+
+<!-- Right: OTE naked (no POI overlap) -->
+<rect x="490" y="60" width="440" height="420" rx="10" fill="#111827" stroke="#334155" stroke-width="1"/>
+<text x="710" y="88" font-size="14" font-weight="700" fill="#eab308" text-anchor="middle">OTE "trơ trọi" — không có POI thật (B/bỏ)</text>
+
+<line x1="610" y1="440" x2="610" y2="410" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="603.5" y="420" width="13" height="15" fill="#ef4444"/>
+<line x1="634" y1="420" x2="634" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="627.5" y="335" width="13" height="80" fill="#22c55e"/>
+<line x1="658" y1="335" x2="658" y2="240" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="651.5" y="245" width="13" height="85" fill="#22c55e"/>
+<line x1="682" y1="245" x2="682" y2="140" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="675.5" y="145" width="13" height="95" fill="#22c55e"/>
+
+<rect x="706" y="290" width="90" height="70" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="710" y="285" font-size="10" fill="#3b82f6" text-anchor="start">OTE 62–79% (không FVG/OB)</text>
+
+<!-- price chops through without clean reaction -->
+<line x1="730" y1="325" x2="730" y2="300" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="723.5" y="305" width="13" height="20" fill="#22c55e"/>
+<line x1="754" y1="310" x2="754" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="747.5" y="315" width="13" height="25" fill="#ef4444"/>
+<line x1="778" y1="335" x2="778" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="771.5" y="340" width="13" height="18" fill="#ef4444"/>
+<text x="754" y="380" font-size="11" fill="#eab308" text-anchor="middle">Giá "chop" trong vùng, không bật rõ</text>
+
+<text x="520" y="400" font-size="11" fill="#eab308" text-anchor="start">→ Chỉ có 1 lớp (fib) — thiếu xác nhận nơi phản ứng</text>
+<text x="520" y="420" font-size="11" fill="#eab308" text-anchor="start">→ Dễ bị xuyên qua/chop, entry kém rõ ràng</text>
+<text x="520" y="440" font-size="11" fill="#eab308" text-anchor="start">→ Grade B hoặc bỏ qua, không ép vào</text>
+</svg>

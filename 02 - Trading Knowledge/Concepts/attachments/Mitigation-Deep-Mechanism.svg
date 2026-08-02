@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="800" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế thật: vì sao Mitigation Block phản ứng "nhẹ tay" hơn Breaker</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">Không có sweep = không có ai bị "bắt" ở điểm cực trị — lực đỡ/cản đến từ nguồn khác: vị thế mới vào sớm + FOMO tiếp diễn</text>
+
+  <rect x="30" y="90" width="1140" height="280" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="55" y="118" font-size="17" fill="#38bdf8" font-weight="bold">So sánh nguồn lực đỡ: Breaker (có sweep) vs Mitigation Block (không sweep)</text>
+
+  <!-- left: breaker -->
+  <rect x="55" y="140" width="520" height="210" fill="#0f1420" stroke="#ef4444" rx="6"/>
+  <text x="75" y="165" font-size="15" fill="#ef4444" font-weight="bold">Breaker (đã sweep đáy cũ)</text>
+  <text x="75" y="190" font-size="13" fill="#94a3b8">1. Đáy cũ bị phá (sweep) → stop loss của</text>
+  <text x="75" y="207" font-size="13" fill="#94a3b8">   long cũ khớp, short mới vào tại đáy mới</text>
+  <text x="75" y="230" font-size="13" fill="#94a3b8">2. Displacement đảo chiều → nhóm short này</text>
+  <text x="75" y="247" font-size="13" fill="#94a3b8">   kẹt sai hướng, đang lỗ nổi</text>
+  <text x="75" y="270" font-size="13" fill="#94a3b8">3. Retest → HỌ đóng lệnh (mua để cắt lỗ)</text>
+  <text x="75" y="287" font-size="13" fill="#94a3b8">   → lực mua CÓ NGUỒN CỤ THỂ, đo được</text>
+  <text x="75" y="313" font-size="14" fill="#22c55e" font-weight="bold">→ Lực đỡ: hàng kẹt thật, thường mạnh</text>
+  <text x="75" y="332" font-size="14" fill="#22c55e" font-weight="bold">   hơn vì có 2 nhóm bị bắt (bước 1+2)</text>
+
+  <!-- right: mitigation -->
+  <rect x="605" y="140" width="540" height="210" fill="#0f1420" stroke="#eab308" rx="6"/>
+  <text x="625" y="165" font-size="15" fill="#eab308" font-weight="bold">Mitigation Block (đáy cũ GIỮ VỮNG)</text>
+  <text x="625" y="190" font-size="13" fill="#94a3b8">1. Đáy cũ KHÔNG bị phá — không ai bị</text>
+  <text x="625" y="207" font-size="13" fill="#94a3b8">   stop-out, không có "hàng kẹt" mới</text>
+  <text x="625" y="230" font-size="13" fill="#94a3b8">2. Higher low hình thành → một số trader</text>
+  <text x="625" y="247" font-size="13" fill="#94a3b8">   "đoán đáy" sớm đã vào tại đây (rủi ro)</text>
+  <text x="625" y="270" font-size="13" fill="#94a3b8">3. MSS xác nhận → retest → lực đỡ đến từ</text>
+  <text x="625" y="287" font-size="13" fill="#94a3b8">   vị thế mới + FOMO tiếp diễn, KHÔNG phải</text>
+  <text x="625" y="304" font-size="13" fill="#94a3b8">   từ việc đóng lệnh cưỡng ép</text>
+  <text x="625" y="328" font-size="14" fill="#f97316" font-weight="bold">→ Lực đỡ: gián tiếp hơn, thường yếu hơn</text>
+  <text x="625" y="347" font-size="14" fill="#f97316" font-weight="bold">   breaker — cần MSS + momentum hỗ trợ</text>
+
+  <!-- bottom: why this matters -->
+  <text x="40" y="410" font-size="18" font-weight="bold" fill="#e2e8f0">Hệ quả thực chiến của sự khác biệt cơ chế này</text>
+  <rect x="30" y="430" width="1140" height="220" fill="#161b28" stroke="#1c2333" rx="8"/>
+  <text x="55" y="460" font-size="14" fill="#a78bfa" font-weight="bold">1. Mitigation Block đòi hỏi MSS + momentum rõ ràng hơn Breaker</text>
+  <text x="55" y="480" font-size="13" fill="#94a3b8">   vì không có lực "cưỡng ép đóng lệnh" tự động hỗ trợ — phản ứng phụ thuộc dòng tiền mới có đủ mạnh để đẩy giá hay không.</text>
+  <text x="55" y="510" font-size="14" fill="#a78bfa" font-weight="bold">2. Mitigation Block hoạt động tốt hơn trong TIẾP DIỄN TREND, yếu hơn khi dùng để BẮT ĐẢO CHIỀU</text>
+  <text x="55" y="530" font-size="13" fill="#94a3b8">   vì "không sweep" thường là dấu hiệu trend còn động lực (bên thắng không cần đẩy giá quá xa để quét thanh khoản).</text>
+  <text x="55" y="560" font-size="14" fill="#a78bfa" font-weight="bold">3. Trong thị trường trending rất mạnh, ranh giới giữa MB và "chỉ là một nhịp pullback bình thường" bị mờ</text>
+  <text x="55" y="580" font-size="13" fill="#94a3b8">   vì gần như MỌI higher low trong trend mạnh đều "không sweep" — cần thêm tiêu chí độ sâu hồi/thời gian để lọc MB có ý nghĩa.</text>
+  <text x="55" y="610" font-size="14" fill="#a78bfa" font-weight="bold">4. Vì lực đỡ gián tiếp hơn, stop-loss cho MB nên chặt hơn tương đối, không nới rộng như logic breaker</text>
+  <text x="55" y="630" font-size="13" fill="#94a3b8">   vì nếu higher low bị phá dù chỉ nhẹ, giả thuyết "không sweep" đã sai — nên đóng ngay, không chờ thêm.</text>
+
+  <text x="40" y="690" font-size="18" font-weight="bold" fill="#e2e8f0">Ba khái niệm họ hàng — cùng nguyên liệu, khác một phép thử</text>
+  <rect x="30" y="710" width="1140" height="70" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="55" y="738" font-size="13" fill="#22c55e">OB: nhịp TIẾP DIỄN, chưa fail</text>
+  <text x="55" y="758" font-size="13" fill="#94a3b8">→ Fail (đóng thân xuyên): nếu có sweep trước đó → Breaker | nếu swing giữ vững, không sweep → Mitigation Block</text>
+  <text x="640" y="738" font-size="13" fill="#eab308">Phép thử phân định duy nhất: SWEEP hay KHÔNG SWEEP tại điểm cực trị liền trước MSS</text>
+</svg>

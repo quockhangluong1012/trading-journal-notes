@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="0" y1="100" x2="960" y2="100"/>
+    <line x1="0" y1="200" x2="960" y2="200"/>
+    <line x1="0" y1="300" x2="960" y2="300"/>
+    <line x1="0" y1="400" x2="960" y2="400"/>
+    <line x1="480" y1="60" x2="480" y2="500" stroke-dasharray="4,4"/>
+  </g>
+
+  <text x="480" y="36" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle">Entry tai Breaker vs Entry tai Reaper IFVG</text>
+
+  <!-- Left: Breaker entry -->
+  <text x="230" y="70" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Nhom vao tai Breaker</text>
+
+  <line x1="80" y1="150" x2="80" y2="200" stroke="#26a69a" stroke-width="2"/>
+  <rect x="72" y="160" width="16" height="30" fill="#26a69a"/>
+  <line x1="120" y1="130" x2="120" y2="180" stroke="#26a69a" stroke-width="2"/>
+  <rect x="112" y="140" width="16" height="30" fill="#26a69a"/>
+
+  <rect x="60" y="185" width="80" height="30" fill="rgba(255,152,0,0.25)"/>
+  <text x="100" y="230" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Breaker</text>
+
+  <!-- entry marker -->
+  <circle cx="140" cy="200" r="5" fill="#ffffff"/>
+  <text x="180" y="195" fill="#ffffff" font-family="Arial, sans-serif" font-size="13">Entry</text>
+
+  <!-- price runs down through breaker to stop -->
+  <line x1="150" y1="200" x2="150" y2="260" stroke="#ef5350" stroke-width="2"/>
+  <rect x="142" y="210" width="16" height="45" fill="#ef5350"/>
+  <line x1="190" y1="230" x2="190" y2="310" stroke="#ef5350" stroke-width="2"/>
+  <rect x="182" y="240" width="16" height="55" fill="#ef5350"/>
+  <line x1="230" y1="280" x2="230" y2="350" stroke="#ef5350" stroke-width="2"/>
+  <rect x="222" y="290" width="16" height="45" fill="#ef5350"/>
+
+  <line x1="55" y1="230" x2="330" y2="230" stroke="#f2c94c" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="330" y="225" fill="#f2c94c" font-family="Arial, sans-serif" font-size="12" text-anchor="end">Stop</text>
+
+  <text x="230" y="380" fill="#ef5350" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Ket qua: Stop-out (-1R)</text>
+  <text x="230" y="400" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Risk lon hon, R:R thap hon</text>
+
+  <!-- Right: Reaper entry -->
+  <text x="730" y="70" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Nhom cho Reaper IFVG</text>
+
+  <line x1="560" y1="150" x2="560" y2="200" stroke="#26a69a" stroke-width="2"/>
+  <rect x="552" y="160" width="16" height="30" fill="#26a69a"/>
+  <line x1="600" y1="130" x2="600" y2="180" stroke="#26a69a" stroke-width="2"/>
+  <rect x="592" y="140" width="16" height="30" fill="#26a69a"/>
+
+  <rect x="540" y="185" width="80" height="30" fill="rgba(255,152,0,0.25)"/>
+  <text x="580" y="235" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Breaker (khong vao)</text>
+
+  <line x1="630" y1="200" x2="630" y2="260" stroke="#ef5350" stroke-width="2"/>
+  <rect x="622" y="210" width="16" height="45" fill="#ef5350"/>
+  <line x1="670" y1="230" x2="670" y2="320" stroke="#ef5350" stroke-width="2"/>
+  <rect x="662" y="240" width="16" height="65" fill="#ef5350"/>
+  <line x1="710" y1="290" x2="710" y2="380" stroke="#ef5350" stroke-width="2"/>
+  <rect x="702" y="300" width="16" height="65" fill="#ef5350"/>
+
+  <rect x="690" y="360" width="90" height="35" fill="rgba(41,98,255,0.25)"/>
+  <text x="735" y="410" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Reaper IFVG</text>
+
+  <circle cx="735" cy="378" r="5" fill="#ffffff"/>
+  <text x="800" y="375" fill="#ffffff" font-family="Arial, sans-serif" font-size="13">Entry (sau MSS)</text>
+
+  <line x1="900" y1="393" x2="690" y2="393" stroke="#f2c94c" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="900" y="410" fill="#f2c94c" font-family="Arial, sans-serif" font-size="12" text-anchor="end">Stop (chat hon)</text>
+
+  <line x1="750" y1="365" x2="800" y2="150" stroke="#26a69a" stroke-width="2"/>
+  <text x="735" y="440" fill="#26a69a" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Ket qua: +2R den +3.5R (minh hoa)</text>
+  <text x="735" y="460" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Risk nho hon, R:R cao hon</text>
+
+  <text x="480" y="500" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">So sanh minh hoa: khong phai moi Breaker deu dan toi Reaper hop le - can Golden Rule</text>
+</svg>

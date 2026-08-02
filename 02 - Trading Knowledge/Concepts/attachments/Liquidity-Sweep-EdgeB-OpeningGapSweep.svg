@@ -1,0 +1,53 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1280" height="720" rx="14" fill="#131722"/>
+  <rect x="1" y="1" width="1278" height="718" rx="14" fill="none" stroke="#2a2e39"/>
+
+  <text x="32" y="42" font-size="26" font-weight="bold" fill="#d1d4dc">Sweep bằng opening gap — lấy level mà không có wick</text>
+  <text x="32" y="66" font-size="15" fill="#787b86">NQ Sunday open — giá gap qua PDH mà không hình thành wick, backtest tick-by-tick dễ bỏ sót</text>
+
+  <!-- Friday close candles -->
+  <g>
+    <rect x="120" y="380" width="20" height="40" fill="#26a69a" rx="1"/><line x1="130" y1="365" x2="130" y2="430" stroke="#26a69a"/>
+    <rect x="160" y="360" width="20" height="35" fill="#26a69a" rx="1"/><line x1="170" y1="345" x2="170" y2="405" stroke="#26a69a"/>
+  </g>
+  <line x1="80" y1="360" x2="1200" y2="360" stroke="#b48ead" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1080" y="352" font-size="13" fill="#b48ead">PDH (Friday) = 20,340</text>
+  <text x="60" y="470" font-size="13" fill="#787b86">Fri close 15:00 CT</text>
+
+  <!-- gap: dashed vertical showing no trading -->
+  <line x1="220" y1="150" x2="220" y2="650" stroke="#787b86" stroke-dasharray="2 6" stroke-opacity="0.5"/>
+  <text x="230" y="170" font-size="13" fill="#787b86">Khong co giao dich (thi truong dong)</text>
+
+  <!-- Sunday open candle appears ABOVE PDH directly, no wick crossing it -->
+  <g>
+    <rect x="320" y="260" width="24" height="50" fill="#26a69a" rx="1"/>
+    <line x1="332" y1="245" x2="332" y2="330" stroke="#26a69a" stroke-width="2"/>
+  </g>
+  <text x="290" y="235" font-size="13" fill="#f2c94c">Sun open = 20,368 (gap thang len)</text>
+  <text x="290" y="255" font-size="13" fill="#f2c94c">PDH bi "lay" nhung KHONG co wick nao quet qua</text>
+
+  <!-- highlight the missing wick zone -->
+  <rect x="200" y="310" width="160" height="50" fill="#ff6b6b" opacity="0.12" stroke="#ff6b6b" stroke-dasharray="4 3" stroke-opacity="0.6"/>
+  <text x="210" y="380" font-size="13" fill="#ff6b6b">Vung gia 20,340-20,368 KHONG</text>
+  <text x="210" y="398" font-size="13" fill="#ff6b6b">TON TAI tren bat ky nen nao</text>
+
+  <!-- continuation reversal after gap sweep -->
+  <g>
+    <rect x="420" y="290" width="20" height="45" fill="#ef5350" rx="1"/><line x1="430" y1="275" x2="430" y2="360" stroke="#ef5350"/>
+    <rect x="460" y="330" width="20" height="55" fill="#ef5350" rx="1"/><line x1="470" y1="315" x2="470" y2="410" stroke="#ef5350"/>
+  </g>
+
+  <rect x="650" y="180" width="500" height="260" fill="#1c2030" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="666" y="208" font-size="15" font-weight="bold" fill="#f2c94c">Vi sao backtest tick-by-tick bo sot</text>
+  <text x="666" y="234" font-size="13" fill="#d1d4dc">Script quet "high &gt; PDH" tren du lieu tick</text>
+  <text x="666" y="254" font-size="13" fill="#d1d4dc">se khong thay giao dich nao xay ra trong</text>
+  <text x="666" y="274" font-size="13" fill="#d1d4dc">khoang 20,340-20,368 vi thi truong dong</text>
+  <text x="666" y="294" font-size="13" fill="#d1d4dc">-&gt; thanh khoan tai PDH van bi "lay mat"</text>
+  <text x="666" y="314" font-size="13" fill="#d1d4dc">ve mat lenh cho (stop) du khong co nen</text>
+  <text x="666" y="334" font-size="13" fill="#d1d4dc">nao thuc su giao dich tai do</text>
+  <text x="666" y="360" font-size="13" fill="#f2c94c">Rule: dinh nghia sweep phai bao gom ca</text>
+  <text x="666" y="380" font-size="13" fill="#f2c94c">"gap qua muc" (so open moi vs level),</text>
+  <text x="666" y="400" font-size="13" fill="#f2c94c">khong chi "wick vuot muc trong 1 nen"</text>
+
+  <text x="60" y="680" font-size="13" fill="#565b66">Ảnh hưởng lớn nhất tại NQ/ES Sunday open và bất kỳ instrument nào có giờ đóng thị trường qua đêm/cuối tuần.</text>
+</svg>

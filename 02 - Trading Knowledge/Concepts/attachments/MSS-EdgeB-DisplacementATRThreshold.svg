@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Displacement đo được: body/ATR(14) M5 quyết định MSS "thật" hay "cosmetic"</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Backtest 400 mẫu MSS EURUSD M5 — phân theo percentile body/ATR</text>
+
+  <line x1="40" y1="400" x2="1240" y2="400" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- left panel: weak MSS body barely above prior high, small body vs ATR -->
+  <rect x="60" y="90" width="330" height="34" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+  <text x="78" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">✗ body/ATR = 0.6 — dưới ngưỡng P40</text>
+
+  <g>
+    <line x1="120" y1="260" x2="120" y2="340" stroke="#ef5350" stroke-width="1"/>
+    <rect x="112" y="270" width="16" height="55" rx="1" fill="#ef5350"/>
+    <line x1="160" y1="250" x2="160" y2="330" stroke="#ef5350" stroke-width="1"/>
+    <rect x="152" y="260" width="16" height="55" rx="1" fill="#ef5350"/>
+  </g>
+  <line x1="200" y1="230" x2="200" y2="300" stroke="#787b86" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="205" y="235" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">LH 1.0850</text>
+  <!-- weak MSS candle small body barely closing above LH -->
+  <line x1="240" y1="215" x2="240" y2="290" stroke="#26a69a" stroke-width="1"/>
+  <rect x="232" y="222" width="16" height="30" rx="1" fill="#26a69a"/>
+  <text x="205" y="310" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">body nhỏ, đóng cách LH 3 pip</text>
+  <line x1="280" y1="225" x2="280" y2="295" stroke="#ef5350" stroke-width="1"/>
+  <rect x="272" y="232" width="16" height="35" rx="1" fill="#ef5350"/>
+  <text x="120" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">"Structure break without delivery"</text>
+  <text x="120" y="380" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Giá lùi lại ngay, không FVG, fail 71% mẫu</text>
+
+  <!-- right panel: strong MSS -->
+  <rect x="700" y="90" width="330" height="34" rx="6" fill="#26a69a" opacity="0.18" stroke="#26a69a"/>
+  <text x="718" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">✓ body/ATR = 1.8 — trên ngưỡng P70</text>
+
+  <g>
+    <line x1="760" y1="270" x2="760" y2="350" stroke="#ef5350" stroke-width="1"/>
+    <rect x="752" y="280" width="16" height="55" rx="1" fill="#ef5350"/>
+    <line x1="800" y1="260" x2="800" y2="340" stroke="#ef5350" stroke-width="1"/>
+    <rect x="792" y="270" width="16" height="55" rx="1" fill="#ef5350"/>
+  </g>
+  <line x1="840" y1="240" x2="840" y2="310" stroke="#787b86" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="845" y="245" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">LH 1.0850</text>
+  <!-- strong displacement candle large body -->
+  <line x1="880" y1="120" x2="880" y2="300" stroke="#26a69a" stroke-width="1"/>
+  <rect x="872" y="130" width="16" height="150" rx="1" fill="#26a69a"/>
+  <rect x="900" y="140" width="60" height="70" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="900" y="228" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">FVG để lại</text>
+  <text x="760" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">Body lớn, đóng xa LH 18 pip, để lại FVG</text>
+  <text x="760" y="380" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Chạy trọn leg 84% mẫu</text>
+
+  <line x1="640" y1="60" x2="640" y2="400" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- bottom: percentile distribution chart -->
+  <text x="40" y="440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#d1d4dc">Phân phối win-rate theo percentile body/ATR(14) M5 — n=400</text>
+
+  <line x1="60" y1="640" x2="1220" y2="640" stroke="#565b66" stroke-width="1"/>
+  <line x1="60" y1="470" x2="60" y2="640" stroke="#565b66" stroke-width="1"/>
+
+  <rect x="110" y="590" width="90" height="50" fill="#ef5350" opacity="0.55"/>
+  <text x="120" y="660" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">P0-P25</text>
+  <text x="122" y="605" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">22%</text>
+
+  <rect x="280" y="560" width="90" height="80" fill="#ef5350" opacity="0.55"/>
+  <text x="290" y="660" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">P25-P50</text>
+  <text x="292" y="575" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">35%</text>
+
+  <rect x="450" y="490" width="90" height="150" fill="#f2c94c" opacity="0.65"/>
+  <text x="452" y="660" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">P50-P70 (ngưỡng)</text>
+  <text x="462" y="505" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">58%</text>
+
+  <rect x="650" y="440" width="90" height="200" fill="#26a69a" opacity="0.7"/>
+  <text x="662" y="660" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">P70-P90</text>
+  <text x="670" y="455" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">76%</text>
+
+  <rect x="820" y="410" width="90" height="230" fill="#26a69a" opacity="0.85"/>
+  <text x="832" y="660" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">P90-P100</text>
+  <text x="842" y="425" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">81%</text>
+
+  <line x1="450" y1="470" x2="450" y2="645" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="960" y="500" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Ngưỡng đề xuất: P60</text>
+  <text x="960" y="522" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">≈ body/ATR(14) ≥ 1.1</text>
+  <text x="960" y="544" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Dưới ngưỡng: coi là</text>
+  <text x="960" y="566" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">"break without delivery"</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">EURUSD M5 · minh họa từ backtest tổng hợp — ngưỡng percentile cần tự hiệu chỉnh theo symbol/session</text>
+</svg>

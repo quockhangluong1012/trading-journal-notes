@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <text x="30" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">Thiet ke backtest: Scale Alignment</text>
+
+  <!-- 4 quadrant boxes -->
+  <g font-family="Arial, sans-serif">
+    <rect x="40" y="70" width="410" height="190" fill="#1e222d" stroke="#2a2e39"/>
+    <text x="55" y="98" font-size="17" font-weight="bold" fill="#26a69a">Nhom A: Trigger LTF tai POI (khong doi HTF)</text>
+    <text x="55" y="125" font-size="15" fill="#d1d4dc">- Sweep STH/STL cung khung entry</text>
+    <text x="55" y="148" font-size="15" fill="#d1d4dc">- MSS + FVG cung khung, tai POI</text>
+    <text x="55" y="171" font-size="15" fill="#d1d4dc">- HTF pool CHUA bi cham</text>
+    <text x="55" y="194" font-size="15" fill="#d1d4dc">- Do: R-multiple, MFE/MAE</text>
+    <text x="55" y="217" font-size="15" fill="#d1d4dc">- Min. mau khuyen nghi: 30-50/thi truong</text>
+    <text x="55" y="240" font-size="15" fill="#d1d4dc">- Tieu chi thang: dong TP1 (T1) >= 1R</text>
+
+    <rect x="510" y="70" width="410" height="190" fill="#1e222d" stroke="#2a2e39"/>
+    <text x="525" y="98" font-size="17" font-weight="bold" fill="#ef5350">Nhom B: Cho HTF pool bi quet moi vao</text>
+    <text x="525" y="125" font-size="15" fill="#d1d4dc">- Cung POI, cung bias</text>
+    <text x="525" y="148" font-size="15" fill="#d1d4dc">- Chi vao SAU khi HTF pool bi wick qua</text>
+    <text x="525" y="171" font-size="15" fill="#d1d4dc">- Bo qua cac lan gia dao tu POI som</text>
+    <text x="525" y="194" font-size="15" fill="#d1d4dc">- Do: so lan "bo lo" so voi nhom A</text>
+    <text x="525" y="217" font-size="15" fill="#d1d4dc">- So sanh win-rate va missed-R hai nhom</text>
+    <text x="525" y="240" font-size="15" fill="#d1d4dc">- Muc tieu: dinh luong chi phi cua mismatch</text>
+
+    <rect x="40" y="290" width="880" height="200" fill="#1e222d" stroke="#2a2e39"/>
+    <text x="55" y="318" font-size="17" font-weight="bold" fill="#d1d4dc">Bien do luong (chuan hoa)</text>
+    <text x="55" y="345" font-size="15" fill="#d1d4dc">1) Khoang cach POI-to-pool / ATR(khung entry)  -> phan loai "cung scale" (~1-2x ATR) vs "khac scale" (&gt;3x ATR)</text>
+    <text x="55" y="368" font-size="15" fill="#d1d4dc">2) So nen hinh thanh pool (vai nen = LTF; hang gio/phien = HTF)</text>
+    <text x="55" y="391" font-size="15" fill="#d1d4dc">3) Ket qua R-multiple tai T1 (pool trung gian) va T2 (bo HTF thuc)</text>
+    <text x="55" y="414" font-size="15" fill="#d1d4dc">4) Nhan "sweep_target_named" (co goi ten pool cu the hay khong) - loai nhieu artifact mo phien</text>
+    <text x="55" y="437" font-size="15" fill="#d1d4dc">5) Phan tang theo instrument (NAS100 ATR lon vs EURUSD/GBPUSD/XAUUSD ATR nho) vi nguong scale khac nhau</text>
+    <text x="55" y="465" font-size="15" fill="#f2c94c">Ket luan can backtest xac nhan truoc khi tin: day la KHUNG THI NGHIEM, khong phai so lieu that.</text>
+  </g>
+</svg>

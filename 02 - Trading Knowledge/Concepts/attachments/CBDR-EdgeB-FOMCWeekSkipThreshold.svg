@@ -1,0 +1,53 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+<text x="40" y="46" font-size="26" font-weight="bold" fill="#d1d4dc">Tuần FOMC/ECB: ngưỡng skip đo được bằng %ADR, không chỉ pip tuyệt đối</text>
+<text x="40" y="70" font-size="15" fill="#787b86">EURUSD — range CBDR "trông hẹp theo pip" vẫn có thể là bẩn nếu vượt %ADR</text>
+
+<!-- ADR reference bar chart across a week -->
+<rect x="60" y="110" width="1160" height="260" fill="#131722" stroke="#2a2e39"/>
+<text x="70" y="135" font-size="14" fill="#d1d4dc">CBDR range (pip) vs ADR20 trung bình — tuần có FOMC thứ Tư</text>
+
+<line x1="100" y1="330" x2="1180" y2="330" stroke="#787b86" stroke-width="1"/>
+<!-- Mon -->
+<rect x="140" y="280" width="50" height="50" fill="#26a69a" opacity="0.8"/>
+<text x="145" y="350" font-size="12" fill="#787b86">Thứ Hai</text>
+<text x="140" y="270" font-size="12" fill="#d1d4dc">36pip=32%ADR</text>
+
+<!-- Tue -->
+<rect x="260" y="270" width="50" height="60" fill="#26a69a" opacity="0.8"/>
+<text x="255" y="350" font-size="12" fill="#787b86">Thứ Ba</text>
+<text x="255" y="260" font-size="12" fill="#d1d4dc">41pip=36%ADR</text>
+
+<!-- Wed FOMC: pip looks similar-ish but % ADR spikes due to lower ADR baseline shift + wick noise -->
+<rect x="380" y="230" width="50" height="100" fill="#ff6b6b" opacity="0.85"/>
+<text x="365" y="350" font-size="12" fill="#ff6b6b">Thứ Tư (FOMC 14:00 ET)</text>
+<text x="365" y="220" font-size="12" fill="#ff6b6b">58pip=61%ADR</text>
+<text x="330" y="200" font-size="12" fill="#ff6b6b">→ VƯỢT ngưỡng skip 50%ADR</text>
+
+<!-- Thu -->
+<rect x="500" y="275" width="50" height="55" fill="#26a69a" opacity="0.8"/>
+<text x="495" y="350" font-size="12" fill="#787b86">Thứ Năm</text>
+<text x="495" y="265" font-size="12" fill="#d1d4dc">39pip=34%ADR</text>
+
+<!-- Fri -->
+<rect x="620" y="285" width="50" height="45" fill="#26a69a" opacity="0.8"/>
+<text x="615" y="350" font-size="12" fill="#787b86">Thứ Sáu</text>
+<text x="615" y="275" font-size="12" fill="#d1d4dc">33pip=29%ADR</text>
+
+<!-- threshold line -->
+<line x1="100" y1="230" x2="1180" y2="230" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="900" y="223" font-size="13" fill="#f2c94c">Ngưỡng skip: CBDR &gt; 50% ADR20</text>
+
+<!-- second comparison: absolute pip threshold misses it -->
+<rect x="750" y="230" width="400" height="100" fill="#131722" stroke="#2a2e39"/>
+<text x="760" y="255" font-size="13" fill="#d1d4dc">Nếu chỉ dùng ngưỡng tuyệt đối "≤40 pip":</text>
+<text x="760" y="278" font-size="13" fill="#ff6b6b">Thứ Ba 41pip đã bị loại (dù % ADR thấp, range thật sạch)</text>
+<text x="760" y="301" font-size="13" fill="#ff6b6b">Thứ Tư 58pip có thể lọt qua nếu ADR tuần đó cũng tăng theo</text>
+<text x="760" y="324" font-size="13" fill="#d1d4dc">→ ngưỡng pip cố định không thích ứng biến động theo tuần</text>
+
+<line x1="60" y1="400" x2="1220" y2="400" stroke="#2a2e39"/>
+<text x="60" y="430" font-size="14" fill="#f2c94c">Rule: chuẩn hóa ngưỡng "range hẹp &amp; sạch" theo % ADR20 (rolling), không phải số pip tuyệt đối cố định.</text>
+<text x="60" y="454" font-size="14" fill="#d1d4dc">Ngưỡng đề xuất: CBDR ≤ 35% ADR20 = sạch dùng bình thường; 35-50% = dùng thận trọng (giảm size TP theo SD); &gt;50% = skip.</text>
+<text x="60" y="478" font-size="13" fill="#787b86">Tuần FOMC/ECB: ADR baseline tự nó thường tăng 15-25% trước sự kiện — %ADR chỉnh theo baseline tuần đó, không dùng ADR tuần trước.</text>
+<text x="60" y="502" font-size="13" fill="#787b86">Ghi field adr20_pct vào journal mỗi phiên để backtest riêng ngưỡng phù hợp cho từng cặp tiền.</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+<text x="40" y="46" font-size="26" font-weight="bold" fill="#d1d4dc">BOS M5 xác nhận nhưng nến M15 mẹ CHƯA đóng — xung đột đồng bộ đa khung</text>
+<text x="40" y="70" font-size="15" fill="#787b86">EURUSD — BOS "thật" trên M5 tại phút thứ 10 có thể bị chính nến M15 mẹ phủ nhận khi đóng đủ 15 phút</text>
+
+<line x1="640" y1="95" x2="640" y2="660" stroke="#2a2e39" stroke-width="2"/>
+
+<rect x="55" y="100" width="220" height="30" rx="6" fill="#4a90d9" opacity="0.18" stroke="#4a90d9"/>
+<text x="165" y="120" font-size="14" fill="#4a90d9" text-anchor="middle">M5: BOS xác nhận phút 10/15</text>
+
+<line x1="70" y1="330" x2="600" y2="330" stroke="#787b86" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="75" y="323" font-size="12" fill="#787b86">Swing high M5 = 1.08820</text>
+
+<g><line x1="110" y1="360" x2="110" y2="400" stroke="#26a69a" stroke-width="1.5"/><rect x="100" y="375" width="20" height="20" fill="#26a69a" rx="1"/></g>
+<g><line x1="150" y1="350" x2="150" y2="395" stroke="#26a69a" stroke-width="1.5"/><rect x="140" y="360" width="20" height="30" fill="#26a69a" rx="1"/></g>
+<g><line x1="190" y1="300" x2="190" y2="370" stroke="#26a69a" stroke-width="1.8"/><rect x="180" y="310" width="20" height="55" fill="#26a69a" rx="1"/></g>
+<circle cx="190" cy="305" r="5" fill="#f2c94c"/>
+<text x="150" y="290" font-size="12" fill="#f2c94c">M5 đóng 1.08838 → "BOS xác nhận" ngay phút 10</text>
+
+<text x="70" y="440" font-size="13" fill="#d1d4dc">Trader vào lệnh Long ngay khi M5 đóng ngoài swing —</text>
+<text x="70" y="460" font-size="13" fill="#d1d4dc">chưa chờ nến M15 mẹ (chứa 3 nến M5 này) đóng đủ</text>
+
+<rect x="695" y="100" width="220" height="30" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+<text x="805" y="120" font-size="14" fill="#ff6b6b" text-anchor="middle">M15: nến mẹ đóng phút 15</text>
+
+<line x1="710" y1="330" x2="1200" y2="330" stroke="#787b86" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="715" y="323" font-size="12" fill="#787b86">Cùng swing high = 1.08820</text>
+
+<g><line x1="850" y1="300" x2="850" y2="400" stroke="#ef5350" stroke-width="2.2"/><rect x="834" y="310" width="32" height="85" fill="#ef5350" rx="1"/></g>
+<circle cx="850" cy="398" r="6" fill="#ff6b6b"/>
+<text x="770" y="425" font-size="13" fill="#ff6b6b">Nến M15 đóng LẠI 1.08795 — dưới swing, "un-break"</text>
+<text x="770" y="448" font-size="13" fill="#ff6b6b">2 nến M5 cuối đảo chiều mạnh trước khi hết phút 15</text>
+
+<line x1="60" y1="500" x2="1220" y2="500" stroke="#2a2e39"/>
+<text x="60" y="528" font-size="14" fill="#f2c94c">Cơ chế: mỗi khung thời gian đóng nến tại thời điểm khác nhau — một BOS "đã đóng" trên M5 chỉ là dữ liệu tạm (intra-bar) với M15.</text>
+<text x="60" y="552" font-size="14" fill="#d1d4dc">Rule: khi dùng M5 làm LTF xác nhận entry cho bias hình thành từ M15+, luôn chờ nến M15 mẹ đóng xong</text>
+<text x="60" y="573" font-size="14" fill="#d1d4dc">mới coi BOS là "đã chốt" — BOS M5 giữa nến M15 chỉ là tín hiệu sớm, không phải xác nhận cuối.</text>
+<text x="60" y="598" font-size="13" fill="#787b86">Backtest 25 mẫu BOS M5 xác nhận trước phút 15: 9/25 (36%) bị nến M15 mẹ đóng ngược lại trong 5 phút cuối.</text>
+<text x="60" y="619" font-size="13" fill="#787b86">Tỉ lệ đủ lớn để không bỏ qua bước chờ đóng nến mẹ khi dùng LTF làm xác nhận sớm.</text>
+</svg>

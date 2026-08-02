@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 2 — LOSS: Entry tại nến sweep, không chờ CISD (NFP Friday)</text>
+<line x1="24" y1="480" x2="936" y2="480" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="380" x2="936" y2="380" stroke="#1f2937" stroke-width="1"/>
+<rect x="60" y="260" width="360" height="90" fill="rgba(59,130,246,0.10)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="240" y="252" font-size="12" fill="#3b82f6" text-anchor="middle">Mon–Thu chop, weekly bias bullish</text>
+<line x1="60" y1="270" x2="420" y2="270" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="60" y1="340" x2="420" y2="340" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="100" y1="290" x2="100" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="94" y="295" width="12" height="25" fill="#22c55e"/>
+<line x1="140" y1="295" x2="140" y2="335" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="134" y="300" width="12" height="30" fill="#ef4444"/>
+<line x1="180" y1="285" x2="180" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="174" y="290" width="12" height="25" fill="#22c55e"/>
+<line x1="220" y1="300" x2="220" y2="340" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="214" y="305" width="12" height="30" fill="#ef4444"/>
+<line x1="260" y1="290" x2="260" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="254" y="295" width="12" height="25" fill="#22c55e"/>
+<line x1="300" y1="295" x2="300" y2="335" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="294" y="300" width="12" height="30" fill="#ef4444"/>
+<line x1="340" y1="285" x2="340" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="334" y="290" width="12" height="25" fill="#22c55e"/>
+<line x1="380" y1="295" x2="380" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="374" y="300" width="12" height="25" fill="#ef4444"/>
+<line x1="440" y1="100" x2="440" y2="480" stroke="#f87171" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="440" y="90" font-size="12" font-weight="700" fill="#f87171" text-anchor="middle">08:30 NY — NFP</text>
+<path d="M 460 320 L 500 400 L 540 280" fill="none" stroke="#f97316" stroke-width="2.5"/>
+<text x="500" y="420" font-size="11" fill="#f97316" text-anchor="middle">Sweep SSL sau NFP</text>
+<circle cx="500" cy="395" r="6" fill="#f87171"/>
+<text x="500" y="440" font-size="12" font-weight="700" fill="#f87171" text-anchor="middle">Entry Long NGAY tại wick — chưa có MSS</text>
+<line x1="580" y1="355" x2="580" y2="405" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="574" y="360" width="12" height="40" fill="#ef4444"/>
+<line x1="620" y1="375" x2="620" y2="425" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="614" y="380" width="12" height="40" fill="#ef4444"/>
+<line x1="660" y1="395" x2="660" y2="445" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="654" y="400" width="12" height="40" fill="#ef4444"/>
+<text x="620" y="455" font-size="11" fill="#f87171" text-anchor="middle">Giá tiếp tục xuống, stop bị quét</text>
+<line x1="700" y1="335" x2="700" y2="385" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="694" y="340" width="12" height="40" fill="#22c55e"/>
+<line x1="740" y1="295" x2="740" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="734" y="300" width="12" height="40" fill="#22c55e"/>
+<line x1="780" y1="255" x2="780" y2="305" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="774" y="260" width="12" height="40" fill="#22c55e"/>
+<line x1="820" y1="215" x2="820" y2="265" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="814" y="220" width="12" height="40" fill="#22c55e"/>
+<line x1="860" y1="175" x2="860" y2="225" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="854" y="180" width="12" height="40" fill="#22c55e"/>
+<text x="780" y="200" font-size="12" font-weight="700" fill="#94a3b8" text-anchor="middle">Đi đúng hướng ban đầu — nhưng sau khi đã bị stop</text>
+<rect x="60" y="500" width="836" height="80" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="80" y="524" font-size="12" fill="#e5e7eb" text-anchor="start">Vào ngay tại nến sweep vì "sợ lỡ" — chưa hề có MSS/CISD 5m/15m xác nhận. missing_step: mss_confirmation.</text>
+<text x="80" y="546" font-size="12" fill="#94a3b8" text-anchor="start">Giá tiếp tục quét về hướng cũ trước khi đảo — bị stop ngay trước khi move thật xảy ra.</text>
+<text x="80" y="568" font-size="12" fill="#94a3b8" text-anchor="start">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa.</text>
+</svg>

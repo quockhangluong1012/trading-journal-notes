@@ -71,7 +71,7 @@ Khác với các mistake khác trong database này (đều là lỗi *tại th�
 
 1. **Dataview dashboard không biết dữ liệu sai** — `_Backtest Dashboard` và các dashboard khác trong `01 - Dashboard/` đọc thẳng frontmatter để tính win rate, average R, expectancy. Một `r_multiple` bị log sai (dù chỉ do gõ nhầm) sẽ **cộng thẳng vào** các con số tổng hợp mà không có cơ chế nào tự phát hiện — vì Dataview không biết "sự thật" của giao dịch, nó chỉ biết những gì được gõ vào.
 
-2. **Vi phạm trực tiếp nguyên tắc "statistically valid backtest"** — mục tiêu của giai đoạn backtesting hiện tại là tích lũy một sample đủ lớn và **đáng tin** của ICT 2022 Model để nó có thể là căn cứ cho readiness gate (trước khi mua challenge FTMO/The5ers). Một sample chứa dữ liệu tự mâu thuẫn không đơn thuần là "1 mẫu bị nhiễu" — nó làm giảm độ tin cậy của toàn bộ kết luận rút ra từ dashboard, vì không ai (kể cả chính Khang) biết chính xác bao nhiêu note khác trong sample cũng có lỗi tương tự nhưng chưa bị phát hiện.
+2. **Vi phạm trực tiếp nguyên tắc "statistically valid backtest"** — mục tiêu của giai đoạn backtesting hiện tại là tích lũy một sample đủ lớn và **đáng tin** của ICT 2022 Model để nó có thể là căn cứ cho readiness gate (trước khi mua challenge FTMO/The5ers). Một sample chứa dữ liệu tự mâu thuẫn không đơn thuần là "1 mẫu bị nhiễu" — nó làm giảm độ tin cậy của toàn bộ kết luận rút ra từ dashboard, vì không ai (kể cả chính ) biết chính xác bao nhiêu note khác trong sample cũng có lỗi tương tự nhưng chưa bị phát hiện.
 
 3. **Tạo điều kiện cho hindsight bias/curve-fitting mà không ai nhận ra** — nếu ngày tháng trong narrative bị lẫn lộn (ví dụ dùng nhầm năm hiện tại `2026` cho một chuỗi phân tích lẽ ra thuộc năm dữ liệu `2016`), rất khó xác minh sau này liệu entry trigger có thực sự "objectively identifiable trước khi biết kết quả" hay narrative đã bị viết lại một cách vô thức để khớp với kết quả đã biết. Đây chính là rủi ro curve-fitting/hindsight bias mà quy trình backtesting cần tránh — và data mismatch làm cho việc audit lại điều này gần như bất khả thi.
 
@@ -96,7 +96,7 @@ File: `04 - Backtesting/2026-07-15/02 - Win - EURUSD - 2026-11-30 - Short.md`
 **Vì sao đây là ví dụ chuẩn của lỗi này:** setup logic được mô tả (Sweep → Displacement → MSS → FVG → entry) hoàn toàn có thể đúng — vấn đề không nằm ở đọc chart. Vấn đề là **không thể xác nhận chắc chắn giao dịch này thực sự xảy ra khi nào**, và con số TP dùng để tính R trong dashboard là con số nào trong hai con số đã log. File này cần được đối chiếu lại với dữ liệu gốc (chart/lịch sử giá) và sửa cho nhất quán trước khi được tính là một mẫu hợp lệ trong sample thống kê.
 
 > [!warning] Chưa chỉnh sửa
-> Note này chưa được sửa — theo house rule "không tự ý sửa dữ liệu trade/backtest", cần xác nhận lại với Khang giá trị nào đúng (entry/SL/TP thật, và năm giao dịch thật là 2016) trước khi cập nhật file.
+> Note này chưa được sửa — theo house rule "không tự ý sửa dữ liệu trade/backtest", cần xác nhận lại với  giá trị nào đúng (entry/SL/TP thật, và năm giao dịch thật là 2016) trước khi cập nhật file.
 
 ### ✅ Đúng — quy trình chuẩn
 
@@ -131,7 +131,7 @@ Nếu ba giá trị gốc (entry/SL/TP) đã được log, R không cần "nhớ
 
 Trade log thật (05 - Live Trading Journal) không có rủi ro này vì luôn là ngày hiện tại. Nhưng **backtest** (04 - Backtesting) luôn có hai "năm" khác nhau tồn tại song song trong cùng một note:
 
-- **`backtest_date`** — ngày Khang *thực hiện* việc backtest (ví dụ hôm nay, 2026).
+- **`backtest_date`** — ngày  *thực hiện* việc backtest (ví dụ hôm nay, 2026).
 - **`trade_date`** — ngày dữ liệu giá *thuộc về* (ví dụ 2014, 2016 — dữ liệu lịch sử dùng để replay).
 
 Vì `backtest_date` luôn mang năm hiện tại (2026) và tay đã quen gõ năm đó, rất dễ vô thức "kéo" năm 2026 vào phần narrative lẽ ra phải thuộc `trade_date` (2016) — chính xác là lỗi đã xảy ra ở ví dụ mục 4. Quy tắc phòng tránh: **luôn viết narrative bằng ngày-tháng-không-năm trước** (ví dụ "30/11"), rồi mới thêm năm của `trade_date` vào một lần duy nhất, thay vì gõ năm lặp lại ở từng dòng.
@@ -174,13 +174,13 @@ Checklist bắt buộc trước khi coi một backtest/trade note là "hoàn t�
 - [ ] Tự tính risk = |entry − SL|, reward = |entry − TP|, R = reward/risk — có khớp `r_planned`/`r_multiple` đã log không?
 - [ ] Toàn bộ mốc thời gian trong narrative dùng nhất quán một năm (năm của `trade_date`, không lẫn năm của `backtest_date`)?
 - [ ] `bias_correct` có nhất quán với nội dung lesson learned không?
-- [ ] Nếu phát hiện mismatch ở note cũ — đã dừng lại để xác nhận giá trị đúng với Khang trước khi sửa, thay vì tự ý ghi đè?
+- [ ] Nếu phát hiện mismatch ở note cũ — đã dừng lại để xác nhận giá trị đúng với  trước khi sửa, thay vì tự ý ghi đè?
 
 ---
 
 ## 8. Ví dụ đã xảy ra
 
-- [[04 - Backtesting/2026-07-15/02 - Win - EURUSD - 2026-11-30 - Short|02 - Win - EURUSD - 2026-11-30 - Short]] — mismatch năm (`trade_date: 2016-11-30` vs filename `2026-11-30`, và năm 2016/2026 lẫn lộn trong narrative) + mismatch giá TP (frontmatter `1.05882` vs bảng Summary `1.05886`). **Chưa được sửa** — cần Khang xác nhận giá trị đúng trước khi cập nhật.
+- [[04 - Backtesting/2026-07-15/02 - Win - EURUSD - 2026-11-30 - Short|02 - Win - EURUSD - 2026-11-30 - Short]] — mismatch năm (`trade_date: 2016-11-30` vs filename `2026-11-30`, và năm 2016/2026 lẫn lộn trong narrative) + mismatch giá TP (frontmatter `1.05882` vs bảng Summary `1.05886`). **Chưa được sửa** — cần  xác nhận giá trị đúng trước khi cập nhật.
 
 *(Thêm các mismatch khác phát hiện được vào danh sách này theo định dạng `[[đường dẫn note|tên hiển thị]] — mô tả ngắn loại mismatch`.)*
 
@@ -219,7 +219,7 @@ Checklist bắt buộc trước khi coi một backtest/trade note là "hoàn t�
 - [ ] Không tự sửa dữ liệu note cũ khi phát hiện mismatch — xác nhận giá trị đúng trước.
 - [ ] Định kỳ audit ngẫu nhiên các note cũ, không chỉ note mới nhất.
 
-> Một backtest sai vì đọc sai chart vẫn là dữ liệu thật, chỉ là bài học đắt. Một backtest đúng chart nhưng log sai dữ liệu không phải là dữ liệu — nó là tiếng ồn mặc áo thống kê, và tiếng ồn đó sẽ len vào chính con số quyết định liệu Khang đã sẵn sàng mua challenge hay chưa.
+> Một backtest sai vì đọc sai chart vẫn là dữ liệu thật, chỉ là bài học đắt. Một backtest đúng chart nhưng log sai dữ liệu không phải là dữ liệu — nó là tiếng ồn mặc áo thống kê, và tiếng ồn đó sẽ len vào chính con số quyết định liệu  đã sẵn sàng mua challenge hay chưa.
 
 ---
 

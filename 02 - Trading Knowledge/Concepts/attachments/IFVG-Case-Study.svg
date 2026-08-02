@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1232 700" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1232" height="700" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Case 16.9: EURUSD Short — Bearish iFVG sau MSS thật + Acceptance</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">Thứ Năm 09/07 · Close-through 1.0855 → MSS H1 → acceptance 2 nến → CE retest → +4.1R</text>
+
+  <!-- grid -->
+  <line x1="60" y1="620" x2="1160" y2="620" stroke="#1c2333"/>
+  <line x1="60" y1="500" x2="1160" y2="500" stroke="#1c2333"/>
+  <line x1="60" y1="380" x2="1160" y2="380" stroke="#1c2333"/>
+  <line x1="60" y1="260" x2="1160" y2="260" stroke="#1c2333"/>
+  <line x1="60" y1="140" x2="1160" y2="140" stroke="#1c2333"/>
+
+  <text x="1170" y="624" font-size="9.0" fill="#94a3b8">1.0790 SSL</text>
+  <text x="1170" y="504" font-size="9.0" fill="#94a3b8">1.0820</text>
+  <text x="1170" y="384" font-size="9.0" fill="#94a3b8">1.0850</text>
+  <text x="1170" y="264" font-size="9.0" fill="#94a3b8">1.0878</text>
+  <text x="1170" y="144" font-size="9.0" fill="#94a3b8">1.0900</text>
+
+  <!-- old bullish FVG zone -->
+  <rect x="80" y="260" width="200" height="60" fill="#22c55e" opacity="0.15"/>
+  <text x="90" y="255" font-size="12" fill="#22c55e">Bullish FVG cũ 1.0862–1.0878</text>
+
+  <!-- close-through candle -->
+  <line x1="330" y1="270" x2="330" y2="400" stroke="#ef4444" stroke-width="2"/>
+  <rect x="319" y="310" width="22" height="70" fill="#ef4444"/>
+  <text x="330" y="420" font-size="11" fill="#eab308" text-anchor="middle">① Close 1.0855</text>
+  <text x="330" y="436" font-size="11" fill="#eab308" text-anchor="middle">xuyên qua + MSS H1</text>
+
+  <!-- acceptance candles -->
+  <line x1="390" y1="400" x2="390" y2="440" stroke="#ef4444" stroke-width="2"/>
+  <rect x="379" y="405" width="22" height="30" fill="#ef4444"/>
+  <line x1="450" y1="420" x2="450" y2="460" stroke="#ef4444" stroke-width="2"/>
+  <rect x="439" y="425" width="22" height="30" fill="#ef4444"/>
+  <text x="420" y="480" font-size="11" fill="#38bdf8">② Acceptance: 2 nến không reclaim</text>
+
+  <!-- bearish iFVG zone marked -->
+  <rect x="80" y="260" width="200" height="60" fill="#ef4444" opacity="0.12"/>
+  <line x1="80" y1="280" x2="1160" y2="280" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="900" y="275" font-size="12" fill="#eab308">Bearish iFVG CE = 1.0870</text>
+
+  <!-- retrace to CE -->
+  <line x1="450" y1="440" x2="620" y2="280" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,2"/>
+  <circle cx="620" cy="280" r="5" fill="#38bdf8"/>
+  <text x="635" y="270" font-size="12" fill="#38bdf8">③ Entry 1.0867 (M15 MSS xác nhận)</text>
+
+  <!-- stop -->
+  <line x1="60" y1="248" x2="1160" y2="248" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="900" y="244" font-size="12" fill="#ef4444">SL 1.0882 (15 pip)</text>
+
+  <!-- move down to TP1 -->
+  <line x1="620" y1="280" x2="800" y2="480" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,2"/>
+  <rect x="789" y="460" width="22" height="30" fill="#ef4444"/>
+  <line x1="60" y1="495" x2="1160" y2="495" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="820" y="490" font-size="12" fill="#a78bfa">④ TP1 1.0815 — internal liquidity (+3.2R đóng 50%)</text>
+
+  <!-- move to TP2 -->
+  <line x1="800" y1="480" x2="1000" y2="600" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,2"/>
+  <rect x="989" y="580" width="22" height="30" fill="#ef4444"/>
+  <text x="1020" y="595" font-size="12" fill="#a78bfa">⑤ TP2 SSL vùng</text>
+  <text x="1020" y="613" font-size="12" fill="#94a3b8">1.0793 (+5.0R còn lại)</text>
+
+  <!-- result box -->
+  <rect x="60" y="660" width="1100" height="30" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="80" y="680" font-size="14" fill="#e2e8f0">Kết quả: R-multiple trung bình +4.1R · Risk 15 pip · Bốn trục đủ điều kiện: close đúng TF + acceptance 2 nến + MSS thật + retest lần đầu</text>
+</svg>

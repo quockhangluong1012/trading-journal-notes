@@ -33,7 +33,7 @@
   <text x="450" y="360" text-anchor="middle" font-size="10.5" fill="#c0392b" font-weight="700">dong cua + duy tri DUOI range low</text>
 
   <!-- Phase C -->
-  <text x="720" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#c0392b">3) iFVG = KHANG CU (Short)</text>
+  <text x="720" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#c0392b">3) iFVG =  CU (Short)</text>
   <rect x="600" y="110" width="240" height="360" fill="#fafafa" stroke="#ddd"/>
   <rect x="600" y="200" width="240" height="55" fill="#f5b7b1" fill-opacity="0.7"/>
   <text x="720" y="232" text-anchor="middle" font-size="12" fill="#c0392b">iFVG (da dao cuc tinh)</text>

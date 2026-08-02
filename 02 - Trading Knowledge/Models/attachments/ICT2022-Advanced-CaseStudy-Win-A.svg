@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="32" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 1 — EURUSD Long: Win +3.18R nhưng sai quy trình (entry cạnh BPR, TP non)</text>
+<rect x="50" y="300" width="860" height="200" fill="rgba(34,197,94,0.08)" stroke="none" stroke-width="1.5" stroke-dasharray="0"/>
+<text x="60" y="316" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Discount D1</text>
+<line x1="60" y1="394" x2="60" y2="418" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="54.0" y="400" width="12" height="12" fill="#ef4444"/>
+<line x1="82" y1="392" x2="82" y2="418" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="76.0" y="398" width="12" height="14" fill="#22c55e"/>
+<line x1="104" y1="392" x2="104" y2="416" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="98.0" y="398" width="12" height="12" fill="#ef4444"/>
+<line x1="126" y1="428" x2="126" y2="405" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="119.5" y="410" width="13" height="15" fill="#ef4444"/>
+<text x="76" y="445" font-size="11" font-weight="400" fill="#f97316" text-anchor="start">Sweep inducement</text>
+<line x1="150" y1="430" x2="150" y2="365" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="142.5" y="370" width="15" height="55" fill="#22c55e"/>
+<line x1="174" y1="375" x2="174" y2="295" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="166.5" y="300" width="15" height="70" fill="#22c55e"/>
+<line x1="198" y1="305" x2="198" y2="230" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="190.5" y="235" width="15" height="65" fill="#22c55e"/>
+<rect x="142" y="300" width="80" height="40" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="142" y1="320.0" x2="222" y2="320.0" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="142" y="332" font-size="12" font-weight="400" fill="#3b82f6" text-anchor="start">BPR + CE</text>
+<line x1="228" y1="348" x2="228" y2="312" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="221.5" y="315" width="13" height="27" fill="#22c55e"/>
+<circle cx="228" cy="336" r="13" fill="none" stroke="#eab308" stroke-width="2.5"/>
+<text x="208" y="300" font-size="11" font-weight="400" fill="#eab308" text-anchor="start">Entry@Edge</text>
+<text x="218" y="370" font-size="10.5" font-weight="400" fill="#eab308" text-anchor="start">(lẽ ra chờ CE)</text>
+<line x1="258" y1="319" x2="258" y2="146" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="252.0" y="150" width="12" height="165" fill="#22c55e"/>
+<line x1="280" y1="154" x2="280" y2="106" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="274.0" y="110" width="12" height="40" fill="#22c55e"/>
+<line x1="302" y1="114" x2="302" y2="86" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="296.0" y="90" width="12" height="20" fill="#22c55e"/>
+<line x1="50" y1="150" x2="700" y2="150" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="380" y="144" font-size="11" font-weight="400" fill="#f87171" text-anchor="start">TP đặt ở internal liquidity (chốt non)</text>
+<line x1="50" y1="80" x2="900" y2="80" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="380" y="74" font-size="11" font-weight="400" fill="#4ade80" text-anchor="start">DOL thật: D1 FVG xa hơn (giá vẫn chạy tiếp sau khi thoát)</text>
+<text x="480" y="575" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest — số liệu minh họa, không phải dữ liệu giao dịch thật kiểm chứng được.</text>
+</svg>

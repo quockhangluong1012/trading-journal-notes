@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">So sanh Case C1 (thang) vs Case C2 (thua du dung quy trinh)</text>
+  <text x="30" y="60" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">Cung cau truc ky thuat hoan chinh - ket qua khac nhau vi yeu to ngoai sinh</text>
+
+  <line x1="480" y1="80" x2="480" y2="500" stroke="#1e222d" stroke-width="2"/>
+
+  <!-- LEFT: C1 win -->
+  <g>
+    <text x="60" y="100" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#26a69a">Case C1 - NQ, NY-AM (Win +2.5R)</text>
+    <g stroke="#1e222d"><line x1="40" y1="150" x2="440" y2="150"/><line x1="40" y1="220" x2="440" y2="220"/><line x1="40" y1="290" x2="440" y2="290"/><line x1="40" y1="360" x2="440" y2="360"/></g>
+    <rect x="60" y="260" width="14" height="40" fill="#ef5350"/><line x1="67" y1="250" x2="67" y2="310" stroke="#ef5350" stroke-width="2"/>
+    <rect x="90" y="280" width="14" height="35" fill="#ef5350"/><line x1="97" y1="270" x2="97" y2="325" stroke="#ef5350" stroke-width="2"/>
+    <rect x="120" y="230" width="14" height="45" fill="#26a69a"/><line x1="127" y1="220" x2="127" y2="285" stroke="#26a69a" stroke-width="2"/>
+    <rect x="105" y="270" width="45" height="35" fill="rgba(41,98,255,0.25)"/>
+    <rect x="150" y="200" width="14" height="50" fill="#26a69a"/><line x1="157" y1="190" x2="157" y2="260" stroke="#26a69a" stroke-width="2"/>
+    <rect x="180" y="170" width="14" height="55" fill="#26a69a"/><line x1="187" y1="160" x2="187" y2="235" stroke="#26a69a" stroke-width="2"/>
+    <line x1="140" y1="255" x2="260" y2="255" stroke="#f2c94c" stroke-width="2" stroke-dasharray="5,4"/>
+    <rect x="210" y="140" width="14" height="55" fill="#26a69a"/><line x1="217" y1="130" x2="217" y2="205" stroke="#26a69a" stroke-width="2"/>
+    <circle cx="217" cy="195" r="8" fill="none" stroke="#26a69a" stroke-width="2"/>
+    <rect x="240" y="160" width="14" height="40" fill="#ef5350"/><line x1="247" y1="150" x2="247" y2="210" stroke="#ef5350" stroke-width="2"/>
+    <rect x="230" y="180" width="40" height="30" fill="rgba(255,152,0,0.25)"/>
+    <rect x="270" y="120" width="14" height="55" fill="#26a69a"/><line x1="277" y1="110" x2="277" y2="185" stroke="#26a69a" stroke-width="2"/>
+    <rect x="300" y="95" width="14" height="55" fill="#26a69a"/><line x1="307" y1="85" x2="307" y2="160" stroke="#26a69a" stroke-width="2"/>
+    <line x1="340" y1="130" x2="440" y2="130" stroke="#26a69a" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="345" y="125" font-family="Arial, sans-serif" font-size="13" fill="#26a69a">TP T2</text>
+    <text x="60" y="390" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Du 3 tang + retest + rejection</text>
+    <text x="60" y="410" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Khong co yeu to ngoai sinh phong</text>
+    <text x="60" y="430" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Ket qua: dat T1 roi T2 = +2.5R</text>
+  </g>
+
+  <!-- RIGHT: C2 loss -->
+  <g>
+    <text x="520" y="100" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#ef5350">Case C2 - XAUUSD, London (Loss -1R)</text>
+    <g stroke="#1e222d"><line x1="500" y1="150" x2="900" y2="150"/><line x1="500" y1="220" x2="900" y2="220"/><line x1="500" y1="290" x2="900" y2="290"/><line x1="500" y1="360" x2="900" y2="360"/></g>
+    <rect x="520" y="180" width="14" height="40" fill="#26a69a"/><line x1="527" y1="170" x2="527" y2="230" stroke="#26a69a" stroke-width="2"/>
+    <rect x="550" y="190" width="14" height="35" fill="#26a69a"/><line x1="557" y1="180" x2="557" y2="235" stroke="#26a69a" stroke-width="2"/>
+    <rect x="565" y="180" width="45" height="35" fill="rgba(41,98,255,0.25)"/>
+    <rect x="580" y="210" width="14" height="45" fill="#ef5350"/><line x1="587" y1="200" x2="587" y2="265" stroke="#ef5350" stroke-width="2"/>
+    <rect x="610" y="230" width="14" height="50" fill="#ef5350"/><line x1="617" y1="220" x2="617" y2="290" stroke="#ef5350" stroke-width="2"/>
+    <line x1="600" y1="225" x2="700" y2="225" stroke="#f2c94c" stroke-width="2" stroke-dasharray="5,4"/>
+    <rect x="640" y="250" width="14" height="55" fill="#ef5350"/><line x1="647" y1="240" x2="647" y2="315" stroke="#ef5350" stroke-width="2"/>
+    <circle cx="647" cy="300" r="8" fill="none" stroke="#ef5350" stroke-width="2"/>
+    <rect x="670" y="220" width="14" height="45" fill="#26a69a"/><line x1="677" y1="210" x2="677" y2="275" stroke="#26a69a" stroke-width="2"/>
+    <rect x="660" y="240" width="40" height="30" fill="rgba(255,152,0,0.25)"/>
+    <!-- news spike reversal against position -->
+    <rect x="700" y="120" width="16" height="130" fill="#26a69a"/><line x1="708" y1="100" x2="708" y2="260" stroke="#26a69a" stroke-width="3"/>
+    <text x="700" y="95" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Tin bat ngo</text>
+    <line x1="500" y1="240" x2="900" y2="240" stroke="#ef5350" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="800" y="235" font-family="Arial, sans-serif" font-size="13" fill="#ef5350">Stop hit</text>
+    <text x="520" y="390" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Du 3 tang + retest + rejection</text>
+    <text x="520" y="410" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Tin bat ngo phá vo cau truc sau entry</text>
+    <text x="520" y="430" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Ket qua: cham stop = -1R (good loss)</text>
+  </g>
+
+  <text x="30" y="500" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">Bai hoc: entry model dung quy trinh khong dam bao thang tung lenh - ban chat la xac suat dai han</text>
+</svg>

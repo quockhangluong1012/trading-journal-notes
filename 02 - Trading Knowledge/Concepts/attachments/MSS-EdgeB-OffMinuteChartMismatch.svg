@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">MSS tồn tại trên M3/M4 nhưng "biến mất" trên M5 — vấn đề đóng nến lẻ</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Cùng dữ liệu tick, hai cách gộp nến cho hai nhãn cấu trúc khác nhau</text>
+
+  <line x1="640" y1="60" x2="640" y2="640" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- Left: M4 chart showing clean MSS -->
+  <rect x="60" y="90" width="220" height="34" rx="6" fill="#26a69a" opacity="0.18" stroke="#26a69a"/>
+  <text x="78" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">✓ M4 — MSS rõ ràng</text>
+
+  <g>
+    <line x1="100" y1="240" x2="100" y2="320" stroke="#ef5350" stroke-width="1"/>
+    <rect x="92" y="250" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="140" y1="270" x2="140" y2="350" stroke="#ef5350" stroke-width="1"/>
+    <rect x="132" y="280" width="16" height="60" rx="1" fill="#ef5350"/>
+  </g>
+  <line x1="180" y1="300" x2="180" y2="370" stroke="#ef5350" stroke-width="1"/>
+  <rect x="172" y="310" width="16" height="50" rx="1" fill="#ef5350"/>
+  <line x1="60" y1="360" x2="600" y2="360" stroke="#b48ead" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="65" y="378" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b48ead">SSL sweep</text>
+
+  <line x1="220" y1="200" x2="220" y2="330" stroke="#26a69a" stroke-width="1"/>
+  <rect x="212" y="210" width="16" height="110" rx="1" fill="#26a69a"/>
+  <line x1="260" y1="180" x2="260" y2="240" stroke="#787b86" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="200" y="165" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">LH</text>
+  <text x="180" y="150" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">Nến M4 đóng thân rõ trên LH</text>
+
+  <text x="60" y="420" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Nến M4 [16:24-16:28] đóng tại giá cao nhất</text>
+  <text x="60" y="444" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">của cả cú đẩy → body đóng qua LH rõ ràng</text>
+  <text x="60" y="480" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">→ platform/backtest engine dùng M4</text>
+  <text x="60" y="502" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">sẽ log: MSS hợp lệ, entry khớp</text>
+
+  <!-- Right: M5 chart same data, candle boundary swallows the push -->
+  <rect x="700" y="90" width="220" height="34" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+  <text x="718" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">✗ M5 — MSS không hiện</text>
+
+  <g>
+    <line x1="740" y1="240" x2="740" y2="320" stroke="#ef5350" stroke-width="1"/>
+    <rect x="732" y="250" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="780" y1="270" x2="780" y2="350" stroke="#ef5350" stroke-width="1"/>
+    <rect x="772" y="280" width="16" height="60" rx="1" fill="#ef5350"/>
+  </g>
+  <line x1="820" y1="300" x2="820" y2="370" stroke="#ef5350" stroke-width="1"/>
+  <rect x="812" y="310" width="16" height="50" rx="1" fill="#ef5350"/>
+  <line x1="700" y1="360" x2="1200" y2="360" stroke="#b48ead" stroke-width="1" stroke-dasharray="5 4"/>
+
+  <line x1="900" y1="220" x2="900" y2="345" stroke="#787b86" stroke-width="1"/>
+  <rect x="892" y="228" width="16" height="105" rx="1" fill="#787b86"/>
+  <line x1="900" y1="180" x2="900" y2="250" stroke="#787b86" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="880" y="165" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">LH</text>
+  <text x="820" y="150" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">Nến M5 [16:25-16:30] gộp cả pullback</text>
+  <text x="820" y="172" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">sau đó → thân đóng NGAY DƯỚI LH</text>
+
+  <text x="700" y="420" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Ranh giới nến M5 [16:25] lệch 1 phút so với</text>
+  <text x="700" y="444" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">đỉnh thật của cú đẩy tick — nến gộp cả</text>
+  <text x="700" y="466" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">phần pullback ngay sau, chỉ còn wick qua LH</text>
+  <text x="700" y="500" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">→ backtest M5-only: "không có MSS ở đây"</text>
+
+  <rect x="60" y="560" width="1160" height="120" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="80" y="588" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#f2c94c">Hệ quả cho backtest đa nền tảng</text>
+  <text x="80" y="614" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Ranh giới nến là quy ước của platform (đếm từ 00:00 server), không phải sự thật vật lý của tick.</text>
+  <text x="80" y="638" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Hai backtester dùng M5 khác offset giờ server có thể ghi nhận MSS khác nhau cho CÙNG một cú đẩy.</text>
+  <text x="80" y="662" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Rule: khi M5 cho tín hiệu biên (đóng sát LH ±2 pip), luôn xác nhận lại bằng M1/tick trước khi loại setup.</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Minh họa cùng dữ liệu tick, hai khung gộp nến khác nhau — không phải hai thị trường khác nhau</text>
+</svg>

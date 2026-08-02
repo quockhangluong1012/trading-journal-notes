@@ -1,26 +1,59 @@
-<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Hanh vi thu Sau khac nhau ra sao theo tung thi truong</text>
-  <text x="24" y="54" font-size="13" fill="#6B7280">Cung hieu ung Friday Profit-Taking, khac muc do tin cay va rui ro ngoai le theo thi truong.</text>
-  <rect x="24" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="36" y="100" font-size="13" font-weight="700" fill="#7C3AED">NQ1 / NDX</text>
-  <line x1="40" y1="220" x2="236" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="42" y="214" font-size="9.5" fill="#6B7280">Nhieu tin dot ngot do dao han</text>
-  <path d="M46,320 L90,300 L130,260 L160,230 L190,260 L215,225" fill="none" stroke="#374151" stroke-width="2.2" transform="translate(-22,0)"/>
-  <text x="36" y="344" font-size="10.5" fill="#374151">Reversion trung binh -</text>
-  <text x="36" y="358" font-size="10.5" fill="#374151">de bi nhieu boi options/futures expiry.</text>
-  <rect x="266" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="278" y="100" font-size="13" font-weight="700" fill="#2563EB">EURUSD / GBPUSD</text>
-  <line x1="282" y1="220" x2="478" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="284" y="214" font-size="9.5" fill="#6B7280">Reversion do tin cay cao</text>
-  <path d="M288,320 L330,290 L360,250 L400,220 L440,235 L458,230" fill="none" stroke="#374151" stroke-width="2.2" transform="translate(220,0)"/>
-  <text x="278" y="344" font-size="10.5" fill="#374151">Reversion kha ro ve</text>
-  <text x="278" y="358" font-size="10.5" fill="#374151">chieu muon gio My.</text>
-  <rect x="508" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="520" y="100" font-size="13" font-weight="700" fill="#166534">XAUUSD</text>
-  <line x1="524" y1="220" x2="720" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="526" y="214" font-size="9.5" fill="#6B7280">Phu thuoc lich tin (NFP)</text>
-  <path d="M530,320 L570,300 L600,200 L630,240 L660,180 L700,230" fill="none" stroke="#374151" stroke-width="2.2" transform="translate(462,0)"/>
-  <text x="520" y="344" font-size="10.5" fill="#374151">Hieu ung bi lu mo hoan</text>
-  <text x="520" y="358" font-size="10.5" fill="#374151">toan neu co NFP/CPI.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">So sánh hành vi thứ Sáu: NQ1 vs FX vs XAUUSD</text>
+<line x1="344" y1="66" x2="344" y2="540" stroke="#1f2937" stroke-width="1"/>
+<line x1="656" y1="66" x2="656" y2="540" stroke="#1f2937" stroke-width="1"/>
+<text x="188" y="86" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">NQ1 / NDX</text>
+<text x="500" y="86" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">EURUSD / GBPUSD</text>
+<text x="812" y="86" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">XAUUSD</text>
+<line x1="60" y1="300" x2="936" y2="300" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 4"/>
+<text x="66" y="292" font-size="11" fill="#38bdf8" text-anchor="start">Weekly Open (mốc chung)</text>
+<!-- NQ1 column: volatile intraday due to expiry, still drifts to open by close -->
+<line x1="100" y1="200" x2="100" y2="260" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="94.0" y="205" width="12" height="45" fill="#ef4444"/>
+<line x1="140" y1="150" x2="140" y2="230" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="134.0" y="160" width="12" height="55" fill="#22c55e"/>
+<line x1="180" y1="180" x2="180" y2="260" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="174.0" y="190" width="12" height="55" fill="#ef4444"/>
+<line x1="220" y1="220" x2="220" y2="310" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="214.0" y="230" width="12" height="60" fill="#ef4444"/>
+<line x1="260" y1="270" x2="260" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="254.0" y="280" width="12" height="30" fill="#22c55e"/>
+<text x="188" y="360" font-size="12" fill="#94a3b8" text-anchor="middle">Biến động mạnh nội</text>
+<text x="188" y="376" font-size="12" fill="#94a3b8" text-anchor="middle">phiên do đáo hạn</text>
+<text x="188" y="392" font-size="12" fill="#94a3b8" text-anchor="middle">phái sinh (expiry)</text>
+<text x="188" y="416" font-size="12" fill="#94a3b8" text-anchor="middle">— vẫn hồi cuối phiên</text>
+<!-- FX column: gradually narrowing range into weekly open, flattening late -->
+<line x1="412" y1="230" x2="412" y2="280" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="406.0" y="235" width="12" height="40" fill="#ef4444"/>
+<line x1="452" y1="250" x2="452" y2="295" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="446.0" y="255" width="12" height="35" fill="#ef4444"/>
+<line x1="492" y1="270" x2="492" y2="305" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="486.0" y="275" width="12" height="25" fill="#22c55e"/>
+<line x1="532" y1="285" x2="532" y2="310" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="526.0" y="290" width="12" height="15" fill="#ef4444"/>
+<line x1="572" y1="292" x2="572" y2="308" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="566.0" y="295" width="12" height="10" fill="#22c55e"/>
+<text x="500" y="360" font-size="12" fill="#94a3b8" text-anchor="middle">Biên độ co hẹp dần,</text>
+<text x="500" y="376" font-size="12" fill="#94a3b8" text-anchor="middle">phẳng lặng nhất</text>
+<text x="500" y="392" font-size="12" fill="#94a3b8" text-anchor="middle">chiều muộn giờ Mỹ</text>
+<!-- XAUUSD column: sharp spike from NFP overriding reversion -->
+<line x1="724" y1="260" x2="724" y2="300" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="718.0" y="265" width="12" height="30" fill="#ef4444"/>
+<line x1="764" y1="255" x2="764" y2="295" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="758.0" y="260" width="12" height="30" fill="#ef4444"/>
+<line x1="804" y1="120" x2="804" y2="270" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="798.0" y="130" width="12" height="120" fill="#22c55e"/>
+<text x="770" y="115" font-size="11" font-weight="400" fill="#f97316" text-anchor="start">NFP spike</text>
+<line x1="844" y1="140" x2="844" y2="190" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="838.0" y="145" width="12" height="35" fill="#22c55e"/>
+<line x1="884" y1="150" x2="884" y2="195" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="878.0" y="155" width="12" height="30" fill="#22c55e"/>
+<text x="812" y="360" font-size="12" fill="#94a3b8" text-anchor="middle">Lịch tin (NFP) lu mờ</text>
+<text x="812" y="376" font-size="12" fill="#94a3b8" text-anchor="middle">hẳn hiệu ứng reversion</text>
+<rect x="60" y="450" width="836" height="110" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="80" y="475" font-size="12" fill="#e5e7eb" text-anchor="start">NQ1: kiểm tra lịch đáo hạn phái sinh trước khi tin giả định reversion.</text>
+<text x="80" y="497" font-size="12" fill="#e5e7eb" text-anchor="start">FX: giả định reversion khá đáng tin, trừ tuần month-end.</text>
+<text x="80" y="519" font-size="12" fill="#e5e7eb" text-anchor="start">XAUUSD: luôn ưu tiên lịch tin (NFP/CPI) hơn giả định thời gian.</text>
+<text x="32" y="576" font-size="12" fill="#94a3b8" text-anchor="start">Sơ đồ minh họa hành vi thị trường mang tính khái niệm, không phải chart giá thật.</text>
 </svg>

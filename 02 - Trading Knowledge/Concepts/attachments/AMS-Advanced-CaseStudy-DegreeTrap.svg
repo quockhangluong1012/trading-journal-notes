@@ -1,0 +1,47 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#1F2937">Case study NQ — bẫy "BOS sai degree" trong pullback về H4 premium FVG</text>
+  <text x="24" y="52" font-size="13" fill="#6B7280">H4 bearish. Một cú phá STH trên M15 bị gọi nhầm là "trend đổi" → Long ngược HTF → stop.</text>
+
+  <rect x="24" y="68" width="712" height="322" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- HTF context: H4 bearish, premium FVG zone -->
+  <rect x="470" y="95" width="250" height="34" fill="#DC2626" opacity="0.13"/>
+  <text x="478" y="90" font-size="10" fill="#B91C1C">H4 bearish FVG (premium) — draw thật của pullback</text>
+  <line x1="40" y1="112" x2="720" y2="112" stroke="#DC2626" stroke-width="1.1" stroke-dasharray="4 4"/>
+  <text x="44" y="108" font-size="9" fill="#B91C1C">Protected High H4 (chưa bị phá) — bias vẫn bearish</text>
+
+  <!-- downtrend leg into discount, then pullback up to premium FVG -->
+  <path d="M50,150 L90,210 L120,185 L165,265 L195,235 L235,320" fill="none" stroke="#DC2626" stroke-width="2.4"/>
+  <text x="70" y="345" font-size="9.5" fill="#B91C1C">Leg giảm H4 → tạo SSL phía dưới</text>
+
+  <!-- pullback up (the "distribution" small leg) with two STH -->
+  <path d="M235,320 L275,270 L300,290 L345,240 L370,258 L410,205 L440,220 L480,150" fill="none" stroke="#374151" stroke-width="2"/>
+  <!-- two STH marks -->
+  <circle cx="345" cy="240" r="4" fill="#374151"/>
+  <text x="330" y="233" font-size="9" fill="#374151">STH-1</text>
+  <circle cx="410" cy="205" r="4" fill="#374151"/>
+  <text x="398" y="198" font-size="9" fill="#374151">STH-2</text>
+
+  <!-- the trap: break of STH-2 -->
+  <line x1="410" y1="205" x2="500" y2="205" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="455" y="180" font-size="10" font-weight="700" fill="#166534">Trader: "BOS bullish!" → Long ở đây</text>
+  <circle cx="480" cy="150" r="6" fill="#16A34A"/>
+  <text x="500" y="150" font-size="10" font-weight="700" fill="#B45309">nhưng đây là premium + H4 FVG</text>
+
+  <!-- reject down from FVG, lower ITH, continue down -->
+  <path d="M480,150 L515,215 L545,195 L585,285 L620,260 L660,345 L700,375" fill="none" stroke="#DC2626" stroke-width="2.6"/>
+  <circle cx="545" cy="195" r="4" fill="#DC2626"/>
+  <text x="552" y="190" font-size="9" fill="#B91C1C">lower ITH → downtrend tiếp</text>
+  <text x="600" y="365" font-size="9.5" fill="#B91C1C">→ chạy về SSL (target thật)</text>
+
+  <!-- stop marker -->
+  <line x1="455" y1="140" x2="530" y2="140" stroke="#DC2626" stroke-width="1.3" stroke-dasharray="3 3"/>
+  <text x="455" y="134" font-size="8.5" fill="#B91C1C">Long stop out</text>
+
+  <!-- diagnosis box -->
+  <rect x="24" y="400" width="712" height="60" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="420" font-size="11.5" font-weight="700" fill="#92400E">Ba lỗi degree cùng lúc: (1) Phá STH-2 chỉ là internal, CHƯA phá ITH của M15 → không phải BOS xu hướng;</text>
+  <text x="36" y="438" font-size="11.5" fill="#92400E">(2) Protected High H4 còn nguyên → bias vẫn bearish; (3) Điểm Long rơi đúng premium + H4 bearish FVG = vùng bán của HTF.</text>
+  <text x="36" y="456" font-size="11.5" fill="#92400E">Bài học: đo BOS ở đúng degree khung làm việc (ITH), và một pullback "mạnh" trên LTF vẫn là pullback tới khi phá đúng degree.</text>
+</svg>

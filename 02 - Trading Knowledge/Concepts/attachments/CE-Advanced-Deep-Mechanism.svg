@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="700" fill="#0f1420" rx="12"/>
+
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế đằng sau CE: giá vốn trung bình của displacement</text>
+<text x="40" y="64" font-size="15" fill="#94a3b8">Vì sao 50% của gap có "người đỡ" chứ không chỉ là con số hình học</text>
+
+<g stroke="#1c2333" stroke-width="1">
+<line x1="40" y1="120" x2="1160" y2="120"/>
+<line x1="40" y1="220" x2="1160" y2="220"/>
+<line x1="40" y1="320" x2="1160" y2="320"/>
+<line x1="40" y1="420" x2="1160" y2="420"/>
+<line x1="40" y1="520" x2="1160" y2="520"/>
+</g>
+
+<!-- candle 1 pre gap -->
+<rect x="120" y="380" width="20" height="50" fill="#22c55e"/>
+<line x1="130" y1="370" x2="130" y2="440" stroke="#22c55e" stroke-width="2"/>
+<text x="100" y="460" font-size="12" fill="#94a3b8">Nến 1</text>
+
+<!-- displacement candle 2 huge -->
+<rect x="200" y="220" width="24" height="160" fill="#22c55e"/>
+<line x1="212" y1="205" x2="212" y2="390" stroke="#22c55e" stroke-width="2.5"/>
+<text x="185" y="410" font-size="12" fill="#94a3b8">Nến 2 (displacement)</text>
+
+<!-- candle 3 -->
+<rect x="280" y="200" width="20" height="40" fill="#22c55e"/>
+<line x1="290" y1="190" x2="290" y2="250" stroke="#22c55e" stroke-width="2"/>
+<text x="265" y="270" font-size="12" fill="#94a3b8">Nến 3</text>
+
+<!-- FVG zone -->
+<rect x="145" y="240" width="220" height="140" fill="#22c55e" opacity="0.18" stroke="#22c55e" stroke-dasharray="4,3"/>
+<text x="380" y="255" font-size="14" fill="#22c55e" font-weight="bold">FVG (khoảng trống đấu giá)</text>
+<text x="380" y="273" font-size="12" fill="#94a3b8">high nến1 → low nến3</text>
+
+<!-- CE line -->
+<line x1="145" y1="310" x2="900" y2="310" stroke="#eab308" stroke-width="2.5" stroke-dasharray="7,4"/>
+<text x="910" y="315" font-size="15" fill="#eab308" font-weight="bold">CE = 50% = (high+low)/2</text>
+
+<!-- annotation: average fill price -->
+<rect x="420" y="150" width="330" height="120" rx="8" fill="#1e293b" stroke="#334155"/>
+<text x="436" y="175" font-size="14" fill="#e2e8f0" font-weight="bold">Giá vốn trung bình của lệnh lớn</text>
+<text x="436" y="197" font-size="13" fill="#94a3b8">Lệnh market lớn bị trượt giá (slippage)</text>
+<text x="436" y="217" font-size="13" fill="#94a3b8">suốt quá trình đẩy giá qua displacement</text>
+<text x="436" y="237" font-size="13" fill="#94a3b8">→ giá vốn trung bình thường rơi gần</text>
+<text x="436" y="257" font-size="13" fill="#94a3b8">trung điểm hình học của gap sinh ra</text>
+
+<!-- arrow from CE to annotation -->
+<path d="M 600 305 L 585 270" stroke="#eab308" stroke-width="2" marker-end="url(#arrY)"/>
+
+<!-- retrace candles down to CE then bounce -->
+<rect x="420" y="320" width="18" height="35" fill="#ef4444"/><line x1="429" y1="312" x2="429" y2="365" stroke="#ef4444" stroke-width="2"/>
+<rect x="470" y="340" width="18" height="35" fill="#ef4444"/><line x1="479" y1="332" x2="479" y2="385" stroke="#ef4444" stroke-width="2"/>
+<rect x="800" y="305" width="20" height="20" fill="#22c55e"/><line x1="810" y1="298" x2="810" y2="335" stroke="#22c55e" stroke-width="2"/>
+<text x="800" y="360" font-size="13" fill="#38bdf8" font-weight="bold">Respect tại CE</text>
+
+<!-- rally away -->
+<rect x="850" y="250" width="18" height="45" fill="#22c55e"/><line x1="859" y1="240" x2="859" y2="305" stroke="#22c55e" stroke-width="2"/>
+<rect x="890" y="200" width="18" height="45" fill="#22c55e"/><line x1="899" y1="190" x2="899" y2="255" stroke="#22c55e" stroke-width="2"/>
+
+<!-- bottom explanation box -->
+<rect x="40" y="560" width="1120" height="110" rx="8" fill="#1e293b" stroke="#334155"/>
+<text x="60" y="588" font-size="14" fill="#e2e8f0" font-weight="bold">Ba cơ chế đằng sau phản ứng tại CE (không phải "phép màu" của con số 50%)</text>
+<text x="60" y="610" font-size="13" fill="#94a3b8">1. Giá vốn trung bình của dòng lệnh tạo displacement thường rơi gần trung điểm gap.</text>
+<text x="60" y="630" font-size="13" fill="#94a3b8">2. Ngưỡng tâm lý "nửa đường" — điểm phân định giữa "xu hướng cũ còn mạnh" và "đã yếu" trong nhận thức số đông.</text>
+<text x="60" y="650" font-size="13" fill="#94a3b8">3. Thị trường không cần lấp hết gap để tái cân bằng — chỉ cần đủ giao dịch hai chiều tại phần gần với xu hướng mới.</text>
+
+<defs>
+<marker id="arrY" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+<polygon points="0,0 10,5 0,10" fill="#eab308"/>
+</marker>
+</defs>
+</svg>

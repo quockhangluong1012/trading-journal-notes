@@ -76,7 +76,7 @@ tags: [daily-summary, prop-firm-prep]
 | [[Pass The5er first package challenge (10k$)]] | 0% | 0/8 | Lot math dùng chung xong; phần riêng The5ers CHƯA | Thiếu cột "ngày có lãi = +50$" + paper-sim daily drawdown từ equity đóng cửa hôm trước. Progress 0% khớp 0/8. |
 | [[Build a statistically validated backtest sample]] | **6%** | 0/4 | **13/200 backtest = 6,5%** | Prose đã sync 12 → 13. Frontmatter giữ 6% (làm tròn xuống, không thổi phồng). Nhịp 0,65/ngày > cần 0,53/ngày → **trên nhịp** cho due 2027-06-30. |
 | [[Master the ICT 2022 Model]] | 30% | 0/5 | **13 setup, 11W/2L ≈ 85%** (n=13 nhỏ) | Prose sync 12 → 13. ⚠️ **Mismatch tồn tại:** progress ghi 30% nhưng cột mốc **0/5** — 30% là ước lượng tay, chưa khớp checkbox nào. Ràng buộc thật là win rate >55% với n đủ lớn — chưa đủ dữ liệu. |
-| [[Hold daily journaling and process discipline]] | **50%** (sync từ 40%) | 2/4 | **Ngày journaling thứ 10; chuỗi 9 ngày liên tiếp** | ✅ Đã **sửa mismatch**: frontmatter 40 → 50 cho khớp cột mốc 2/4 (Khang tick #1+#2 hôm 07-12). Cột mốc #3 (4 tuần) / #4 (8 tuần) cần thêm thời gian. Track **khoẻ nhất**. |
+| [[Hold daily journaling and process discipline]] | **50%** (sync từ 40%) | 2/4 | **Ngày journaling thứ 10; chuỗi 9 ngày liên tiếp** | ✅ Đã **sửa mismatch**: frontmatter 40 → 50 cho khớp cột mốc 2/4 ( tick #1+#2 hôm 07-12). Cột mốc #3 (4 tuần) / #4 (8 tuần) cần thêm thời gian. Track **khoẻ nhất**. |
 | [[Cut my top 3 repeated mistakes]] | 20% | 0/4 | Không đổi (0 lệnh live) | ⚠️ Log gần nhất **07-08 = 5 ngày** không có dòng mới — nhưng đây là **stale hợp lệ**: tần suất lỗi đo trên lệnh live, mà 25 ngày không có lệnh nào → **không thêm dòng rỗng** (Step 6). progress 20% > cột mốc 0/4 (mismatch tay tồn từ đầu). |
 
 **Verdict pace (tới 2027-01-07 = 178 ngày):**

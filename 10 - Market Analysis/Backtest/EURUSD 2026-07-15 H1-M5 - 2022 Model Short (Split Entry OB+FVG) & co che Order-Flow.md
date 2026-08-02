@@ -43,7 +43,7 @@ tags:
 # EURUSD H1 -> M5 - 2022 Model Short (BSL Sweep -> MSS -> FVG) - Split Entry OB+FVG & co che order-flow - 2026-07-15
 
 > [!info] Trang thai
-> **CASE STUDY - lenh backtest da vao (split entry, WIN).** Note tong hop tron phien phan tich [[01 - ICT 2022 Model]] Short tren EURUSD (replay ~28/11-02/12/2016). Cau truc **sweep -> MSS -> FVG** da verify hop le. Diem dat gia: thay vi cho 1 trong 2 POI, Khang **chia entry 50/50** - 0.5 tai FVG (SL xa) + 0.5 tai Bearish OB (premium). Ket qua: **gia quet len tren FVG roi dao manh** xuong TP tai H1 Bullish OB. Note nay giai quyet dut diem cau hoi entry, va them phan **"vi sao gia di nhu vay"** theo dung mong muon phan tich sau cua Khang.
+> **CASE STUDY - lenh backtest da vao (split entry, WIN).** Note tong hop tron phien phan tich [[01 - ICT 2022 Model]] Short tren EURUSD (replay ~28/11-02/12/2016). Cau truc **sweep -> MSS -> FVG** da verify hop le. Diem dat gia: thay vi cho 1 trong 2 POI, **chia entry 50/50** - 0.5 tai FVG (SL xa) + 0.5 tai Bearish OB (premium). Ket qua: **gia quet len tren FVG roi dao manh** xuong TP tai H1 Bullish OB. Note nay giai quyet dut diem cau hoi entry, va them phan **"vi sao gia di nhu vay"** theo dung mong muon phan tich sau cua
 > Note phuong phap + lenh da vao (`in_trade: true`). Gia doc tu chart, co the lam tron.
 
 > [!note] Chart goc
@@ -104,13 +104,13 @@ The luong nan: OB cho gia tot + SL gon nhung **kho khop**; FVG **de khop** nhung
 
 **Dieu chinh lai luan diem truoc do cho dung:** FVG khong phai luc nao cung la bay. Chinh xac hon la:
 - **FVG + SL sat (ngay tren FVG ~1.0646) = bay that.** Gia hay quet len tren FVG roi moi dao -> SL sat se bi quet oan. **Case nay chung minh dieu do**: gia da len ~1.0655 (tren ca FVG) roi moi drop.
-- **FVG + SL xa (tren sweep high) nhu mot phan cua scale-in = cong cu tham gia hop le.** Day chinh la cach Khang da lam.
+- **FVG + SL xa (tren sweep high) nhu mot phan cua scale-in = cong cu tham gia hop le.** Day chinh la cach  da lam.
 
 Loi can tranh van la **phan vai (role confusion)** kieu "vao FVG voi SL sat de RR dep" - do la [[04 - Mistake - FOMO Entry]] + [[05 - Mistake - Not enough RR]]. Nhung "vao FVG voi SL xa, size nho, trong mot ke hoach scale" thi khac han.
 
-## 5. Giai phap Khang ap dung: Split entry 50/50 (scale-in)
+## 5. Giai phap  ap dung: Split entry 50/50 (scale-in)
 
-Thay vi ep chon 1 trong 2, Khang **chia lenh**: **0.5 slot @ FVG (SL xa)** + **0.5 slot @ Bearish OB (premium)**, cung SL tren sweep high. Day la cach xu ly the luong nan **fill-rate vs RR** mot cach ky su:
+Thay vi ep chon 1 trong 2,  **chia lenh**: **0.5 slot @ FVG (SL xa)** + **0.5 slot @ Bearish OB (premium)**, cung SL tren sweep high. Day la cach xu ly the luong nan **fill-rate vs RR** mot cach ky su:
 
 - Leg FVG **bao dam duoc tham gia** (fill cao) - khong bo lo keo.
 - Leg OB **nang gia trung binh va RR** neu gia retrace du sau.
@@ -131,7 +131,7 @@ Thay vi ep chon 1 trong 2, Khang **chia lenh**: **0.5 slot @ FVG (SL xa)** + **0
 
 ## 6. Vi sao gia di nhu vay (co che order-flow)
 
-Day la phan Khang muon dao sau - khong chi "cho mo hinh" ma hieu **tai sao**. Toan bo di chuyen la mot chuoi **di san thanh khoan** giua cac pool doi ung:
+Day la phan  muon dao sau - khong chi "cho mo hinh" ma hieu **tai sao**. Toan bo di chuyen la mot chuoi **di san thanh khoan** giua cac pool doi ung:
 
 1. **Len quet BSL o premium (ERL tren):** gia can day len vung dinh de cham **buy-stops** (breakout buyers + stop cua shorts som). Do la noi co **doi ung mua** du lon de smart money **ban vao** ma khong truot gia. Khong co thanh khoan tren do -> khong co ban lon -> khong co reversal. Xem [[16 - Internal & External Range Liquidity (IRL & ERL)]], [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]].
 2. **Displacement xuong (MSS):** sau khi da hap thu buy-side, dong lenh doi chieu -> pha cau truc, tao FVG (dau chan cua su mat can bang delivery).

@@ -1,0 +1,77 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+<text x="40" y="46" font-size="26" font-weight="bold" fill="#d1d4dc">Đêm holiday Mỹ: range "hẹp và sạch" giả tạo do vắng thanh khoản</text>
+<text x="40" y="70" font-size="15" fill="#787b86">EURUSD — CBDR trông đẹp nhất trên giấy lại là cái bẫy tệ nhất để trade</text>
+
+<line x1="640" y1="95" x2="640" y2="660" stroke="#2a2e39" stroke-width="2"/>
+
+<rect x="55" y="100" width="220" height="30" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+<text x="165" y="120" font-size="14" fill="#ff6b6b" text-anchor="middle">✗ Thanksgiving / July 4th eve</text>
+
+<rect x="70" y="330" width="500" height="20" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+<text x="80" y="323" font-size="12" fill="#4a90d9">CBDR đo được: chỉ 14 pip — "đẹp" hiếm thấy</text>
+
+<g>
+<line x1="120" y1="330" x2="120" y2="345" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="112" y="333" width="16" height="8" fill="#26a69a" rx="1"/>
+</g>
+<g>
+<line x1="160" y1="332" x2="160" y2="347" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="152" y="335" width="16" height="8" fill="#ef5350" rx="1"/>
+</g>
+<g>
+<line x1="200" y1="330" x2="200" y2="346" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="192" y="333" width="16" height="8" fill="#26a69a" rx="1"/>
+</g>
+<g>
+<line x1="240" y1="331" x2="240" y2="348" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="232" y="334" width="16" height="8" fill="#ef5350" rx="1"/>
+</g>
+
+<text x="70" y="400" font-size="13" fill="#d1d4dc">Volume thực tế: ~8% trung bình phiên bình thường</text>
+<text x="70" y="420" font-size="13" fill="#d1d4dc">Range hẹp KHÔNG phải do tích lũy dealer thật — chỉ vì</text>
+<text x="70" y="440" font-size="13" fill="#d1d4dc">không ai giao dịch (bàn Mỹ nghỉ, London/Á cũng giảm hoạt động)</text>
+
+<!-- projected SD lines that never get respected -->
+<line x1="70" y1="250" x2="570" y2="250" stroke="#f2c94c" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="80" y="243" font-size="12" fill="#f2c94c">+2 SD chiếu (14pip×2 = 28pip từ range)</text>
+<g>
+<line x1="300" y1="300" x2="300" y2="345" stroke="#787b86" stroke-width="1.3"/>
+<rect x="292" y="315" width="16" height="20" fill="#787b86" rx="1" opacity="0.6"/>
+</g>
+<text x="330" y="290" font-size="12" fill="#787b86">Phiên Á/London hôm sau: giá lẹt đẹt, không tới +1 SD</text>
+<text x="330" y="310" font-size="12" fill="#787b86">rồi bất ngờ gap/spike bất thường không theo SD nào cả</text>
+
+<rect x="695" y="100" width="220" height="30" rx="6" fill="#26a69a" opacity="0.18" stroke="#26a69a"/>
+<text x="805" y="120" font-size="14" fill="#26a69a" text-anchor="middle">✓ Đêm thường (không lễ)</text>
+
+<rect x="710" y="330" width="500" height="45" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+<text x="720" y="323" font-size="12" fill="#4a90d9">CBDR đo được: 37 pip, volume bình thường</text>
+
+<g>
+<line x1="760" y1="330" x2="760" y2="370" stroke="#26a69a" stroke-width="1.8"/>
+<rect x="748" y="345" width="24" height="20" fill="#26a69a" rx="1"/>
+</g>
+<g>
+<line x1="800" y1="335" x2="800" y2="378" stroke="#ef5350" stroke-width="1.8"/>
+<rect x="788" y="350" width="24" height="20" fill="#ef5350" rx="1"/>
+</g>
+<g>
+<line x1="840" y1="332" x2="840" y2="372" stroke="#26a69a" stroke-width="1.8"/>
+<rect x="828" y="347" width="24" height="18" fill="#26a69a" rx="1"/>
+</g>
+
+<text x="710" y="420" font-size="13" fill="#d1d4dc">Volume: bình thường — dealer thật đang tích lũy vị thế</text>
+<text x="710" y="440" font-size="13" fill="#d1d4dc">Range hẹp phản ánh tích lũy thật → SD projection tin cậy</text>
+
+<g>
+<line x1="960" y1="290" x2="960" y2="340" stroke="#26a69a" stroke-width="2"/>
+<rect x="948" y="300" width="24" height="40" fill="#26a69a" rx="1"/>
+</g>
+<text x="990" y="300" font-size="12" fill="#26a69a">Expansion về +1/+2 SD như kỳ vọng chuẩn</text>
+
+<line x1="60" y1="500" x2="1220" y2="500" stroke="#2a2e39"/>
+<text x="60" y="528" font-size="14" fill="#f2c94c">Rule: kiểm tra lịch nghỉ lễ Mỹ (Thanksgiving, July 4th, Memorial Day, ngày sau Giáng sinh) TRƯỚC khi tin một CBDR "đẹp bất thường".</text>
+<text x="60" y="552" font-size="14" fill="#d1d4dc">Volume M15 trung bình trong cửa sổ CBDR &lt;25% baseline 20 phiên = nghi ngờ range giả do vắng thanh khoản, bất kể range trông hẹp cỡ nào.</text>
+<text x="60" y="576" font-size="13" fill="#787b86">Range "đẹp nhất" trên giấy trong ngày lễ thường đi kèm hành vi giá KHÔNG tuân thủ SD nào — không tích lũy dealer thật đứng sau.</text>
+</svg>

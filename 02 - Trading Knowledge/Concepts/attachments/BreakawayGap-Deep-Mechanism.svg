@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="750" fill="#0f1420" rx="12"/>
+  <text x="30" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế: vì sao Breakaway Gap giữ được, còn Exhaustion Gap thì bị lấp</text>
+  <text x="30" y="63" font-size="15" fill="#94a3b8">Ba nguồn lực cùng chiều (dealer hedge, stop cascade, momentum fund) so với "FOMO cuối chu kỳ" không nhiên liệu</text>
+
+  <!-- LEFT: Breakaway -->
+  <g transform="translate(40,100)">
+    <text x="0" y="20.7" font-size="18" fill="#22c55e" font-weight="bold">BREAKAWAY — 3 nguồn lực cùng đẩy 1 hướng</text>
+    <g stroke="#1c2333"><line x1="0" y1="220" x2="520" y2="220"/></g>
+    <!-- accumulation -->
+    <rect x="10" y="200" width="12" height="20" fill="#94a3b8" opacity="0.5"/>
+    <rect x="30" y="195" width="12" height="25" fill="#94a3b8" opacity="0.5"/>
+    <rect x="50" y="200" width="12" height="20" fill="#94a3b8" opacity="0.5"/>
+    <text x="10" y="250" font-size="12" fill="#94a3b8">tích lũy trước</text>
+    <!-- breakaway candle -->
+    <rect x="90" y="90" width="18" height="110" fill="#22c55e"/><line x1="99" y1="75" x2="99" y2="215" stroke="#22c55e" stroke-width="2"/>
+    <!-- fuel arrows -->
+    <line x1="140" y1="150" x2="220" y2="150" stroke="#f97316" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="140" y="140" font-size="12" fill="#f97316">① Dealer short-gamma hedge (mua thêm)</text>
+    <line x1="140" y1="175" x2="220" y2="175" stroke="#f97316" stroke-width="2"/>
+    <text x="140" y="190" font-size="12" fill="#f97316">② Stop-loss phe thua bị kích hoạt</text>
+    <line x1="140" y1="210" x2="220" y2="210" stroke="#f97316" stroke-width="2"/>
+    <text x="140" y="205" font-size="12" fill="#f97316">③ Momentum/TWAP fund vào lệnh mới</text>
+    <!-- continuation -->
+    <rect x="240" y="60" width="14" height="40" fill="#22c55e"/>
+    <rect x="270" y="30" width="14" height="40" fill="#22c55e"/>
+    <rect x="300" y="10" width="14" height="30" fill="#22c55e"/>
+    <text x="240" y="300" font-size="13" fill="#22c55e" font-weight="bold">→ retest giữ, tiếp diễn (nhiên liệu còn)</text>
+  </g>
+
+  <!-- RIGHT: Exhaustion -->
+  <g transform="translate(640,100)">
+    <text x="0" y="20.7" font-size="18" fill="#ef4444" font-weight="bold">EXHAUSTION — chỉ còn FOMO cuối chu kỳ</text>
+    <g stroke="#1c2333"><line x1="0" y1="220" x2="520" y2="220"/></g>
+    <!-- long trend before -->
+    <rect x="10" y="180" width="12" height="40" fill="#22c55e"/>
+    <rect x="30" y="150" width="12" height="40" fill="#22c55e"/>
+    <rect x="50" y="120" width="12" height="40" fill="#22c55e"/>
+    <rect x="70" y="90" width="12" height="40" fill="#22c55e"/>
+    <text x="5" y="250" font-size="12" fill="#94a3b8">move đã chạy dài (không tích lũy trước)</text>
+    <!-- exhaustion candle -->
+    <rect x="100" y="50" width="18" height="60" fill="#22c55e"/><line x1="109" y1="35" x2="109" y2="118" stroke="#22c55e" stroke-width="2"/>
+    <text x="100" y="30" font-size="12" fill="#f97316">"FOMO buyers cuối" — không dealer hedge mới</text>
+    <!-- reversal -->
+    <line x1="150" y1="80" x2="230" y2="80" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="150" y="70" font-size="12" fill="#ef4444">không có stop cascade/momentum tiếp sức</text>
+    <rect x="240" y="70" width="14" height="35" fill="#ef4444"/>
+    <rect x="270" y="90" width="14" height="45" fill="#ef4444"/>
+    <rect x="300" y="120" width="14" height="55" fill="#ef4444"/>
+    <text x="240" y="300" font-size="13" fill="#ef4444" font-weight="bold">→ đảo ngược nhanh, gap bị lấp lại</text>
+  </g>
+
+  <!-- comparison box bottom -->
+  <g transform="translate(40,430)">
+    <rect x="0" y="0" width="1120" height="230" fill="#1e293b" stroke="#334155" rx="8"/>
+    <text x="20" y="30" font-size="16" fill="#e2e8f0" font-weight="bold">Đối chiếu khung lý thuyết</text>
+    <text x="20" y="58" font-size="13" fill="#38bdf8" font-weight="bold">Auction Market Theory:</text>
+    <text x="20" y="76" font-size="12" fill="#94a3b8">"Range extension" — initiative buying/selling thoát value area cũ với volume cao</text>
+    <text x="20" y="102" font-size="13" fill="#38bdf8" font-weight="bold">Wyckoff:</text>
+    <text x="20" y="120" font-size="12" fill="#94a3b8">"Sign of Strength/Weakness" + "Jump Across the Creek" ngay sau Accumulation/Distribution</text>
+    <text x="20" y="146" font-size="13" fill="#38bdf8" font-weight="bold">Orderflow/Footprint:</text>
+    <text x="20" y="164" font-size="12" fill="#94a3b8">delta lệch mạnh xuyên qua, KHÔNG có absorption ngược ngay sau đó (khác exhaustion — có absorption)</text>
+    <text x="20" y="196" font-size="13" fill="#a78bfa" font-weight="bold">Kết luận: hỏi "ai đang đứng phía nào sổ lệnh SAU khi phá vỡ" — không chỉ nhìn độ mạnh nến lúc phá vỡ</text>
+  </g>
+</svg>

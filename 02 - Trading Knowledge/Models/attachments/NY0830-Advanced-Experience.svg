@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480" y="32" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Kinh nghiệm live/backtest 08:30 — vòng lặp cải thiện</text>
+<!-- flow diagram: pre-session -> execution -> journaling -> review -> adjust -->
+<rect x="30" y="80" width="165" height="90" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="112" y="108" font-size="12.5" font-weight="700" fill="#e5e7eb" text-anchor="middle">Pre-session</text>
+<text x="112" y="128" font-size="10.5" fill="#94a3b8" text-anchor="middle">Bias 15m + DOL</text>
+<text x="112" y="144" font-size="10.5" fill="#94a3b8" text-anchor="middle">Lịch tin 08:30</text>
+<path d="M195,125 L225,125" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrE1)"/>
+<rect x="228" y="80" width="165" height="90" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="310" y="108" font-size="12.5" font-weight="700" fill="#e5e7eb" text-anchor="middle">Execution</text>
+<text x="310" y="128" font-size="10.5" fill="#94a3b8" text-anchor="middle">Raid → MSS → PD array</text>
+<text x="310" y="144" font-size="10.5" fill="#94a3b8" text-anchor="middle">Đồng hướng DOL</text>
+<path d="M393,125 L423,125" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrE1)"/>
+<rect x="426" y="80" width="165" height="90" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="508" y="108" font-size="12.5" font-weight="700" fill="#e5e7eb" text-anchor="middle">Journaling</text>
+<text x="508" y="128" font-size="10.5" fill="#94a3b8" text-anchor="middle">missing_step, R, spread</text>
+<text x="508" y="144" font-size="10.5" fill="#94a3b8" text-anchor="middle">thực tế lúc entry</text>
+<path d="M591,125 L621,125" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrE1)"/>
+<rect x="624" y="80" width="165" height="90" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="706" y="108" font-size="12.5" font-weight="700" fill="#e5e7eb" text-anchor="middle">Review tuần</text>
+<text x="706" y="128" font-size="10.5" fill="#94a3b8" text-anchor="middle">Thống kê theo tag</text>
+<text x="706" y="144" font-size="10.5" fill="#94a3b8" text-anchor="middle">news_0830 / pd_array</text>
+<path d="M789,125 L819,125" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrE1)"/>
+<rect x="762" y="80" width="165" height="90" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<text x="844" y="108" font-size="12.5" font-weight="700" fill="#4ade80" text-anchor="middle">Điều chỉnh &amp; size</text>
+<text x="844" y="128" font-size="10.5" fill="#94a3b8" text-anchor="middle">≥30 mẫu mới scale</text>
+<text x="844" y="144" font-size="10.5" fill="#94a3b8" text-anchor="middle">size lên</text>
+<!-- key stat panels -->
+<rect x="60" y="220" width="400" height="150" rx="10" fill="rgba(56,189,248,0.06)" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="80" y="248" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="start">Slippage/spread thực tế tại 08:30:00</text>
+<text x="80" y="272" font-size="11.5" fill="#e5e7eb" text-anchor="start">Backtest thường không tính spread giãn</text>
+<text x="80" y="292" font-size="11.5" fill="#e5e7eb" text-anchor="start">đúng giây tin ra → live entry fill xấu hơn</text>
+<text x="80" y="312" font-size="11.5" fill="#e5e7eb" text-anchor="start">vài pip so với giá backtest.</text>
+<text x="80" y="340" font-size="11.5" fill="#94a3b8" text-anchor="start">→ Ghi lại spread thực tại thời điểm entry</text>
+<text x="80" y="358" font-size="11.5" fill="#94a3b8" text-anchor="start">mỗi lệnh, so sánh backtest vs live hằng tuần.</text>
+<rect x="500" y="220" width="400" height="150" rx="10" fill="rgba(248,113,113,0.06)" stroke="#f87171" stroke-width="1.5"/>
+<text x="520" y="248" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">Chuỗi thua &amp; tâm lý sau 2-3 loss</text>
+<text x="520" y="272" font-size="11.5" fill="#e5e7eb" text-anchor="start">Với winrate ~45-55%, chuỗi 3-4 thua liên</text>
+<text x="520" y="292" font-size="11.5" fill="#e5e7eb" text-anchor="start">tiếp là BÌNH THƯỜNG về mặt nhị thức,</text>
+<text x="520" y="312" font-size="11.5" fill="#e5e7eb" text-anchor="start">không phải dấu hiệu "model gãy".</text>
+<text x="520" y="340" font-size="11.5" fill="#94a3b8" text-anchor="start">→ Đặt ngưỡng dừng ngày theo số lệnh,</text>
+<text x="520" y="358" font-size="11.5" fill="#94a3b8" text-anchor="start">không theo cảm xúc sau thua.</text>
+<rect x="60" y="400" width="840" height="140" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+<text x="480" y="426" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="middle">Kỳ vọng tần suất setup A+ &amp; điều kiện tăng size</text>
+<text x="80" y="452" font-size="11.5" fill="#94a3b8" text-anchor="start">• Setup A+ (raid rõ + MSS + PD array đồng hướng DOL): thường 2-3 lần/tuần, không phải mỗi ngày.</text>
+<text x="80" y="474" font-size="11.5" fill="#94a3b8" text-anchor="start">• Demo vs live vs funded: funded account có drawdown rule → dễ thoát sớm hoặc siết stop sai lý do kỹ thuật.</text>
+<text x="80" y="496" font-size="11.5" fill="#94a3b8" text-anchor="start">• Chỉ tăng size sau ≥30 mẫu backtest + 15-20 lệnh forward-test đạt kỳ vọng, tách riêng ngày-có-tin vs không-tin.</text>
+<text x="80" y="518" font-size="11.5" fill="#94a3b8" text-anchor="start">• Ghi journaling `missing_step` cho MỌI lệnh không-Win — kể cả BE — để không bỏ sót mẫu.</text>
+<defs><marker id="arrE1" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/></marker></defs>
+<text x="480" y="575" font-size="12" fill="#94a3b8" text-anchor="middle">Vòng lặp: pre-session → execution → journaling → review tuần → điều chỉnh — lặp lại liên tục.</text>
+</svg>

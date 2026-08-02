@@ -1,29 +1,72 @@
-<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Weekly Range Profile - Mon Accumulation, Tue-Thu Expansion, Fri Reversion</text>
-  <text x="24" y="54" font-size="13" fill="#6B7280">Phan lon bien do tuan hoan tat giua tuan; thu Sau thien ve hoi ve weekly open. So do khai niem, khong phai chart gia that.</text>
-  <rect x="40" y="76" width="120" height="300" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="50" y="98" font-size="13" font-weight="700" fill="#374151">Mon</text>
-  <rect x="180" y="76" width="120" height="300" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="190" y="98" font-size="13" font-weight="700" fill="#374151">Tue</text>
-  <rect x="320" y="76" width="120" height="300" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="330" y="98" font-size="13" font-weight="700" fill="#374151">Wed</text>
-  <rect x="460" y="76" width="120" height="300" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="470" y="98" font-size="13" font-weight="700" fill="#374151">Thu</text>
-  <rect x="600" y="76" width="120" height="300" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="610" y="98" font-size="13" font-weight="700" fill="#374151">Fri</text>
-  <line x1="40" y1="230" x2="720" y2="230" stroke="#2563EB" stroke-width="1.4" stroke-dasharray="6 3"/>
-  <text x="628" y="224" font-size="10.5" font-weight="700" fill="#2563EB">Weekly Opening Price</text>
-  <path d="M 60,232 L 90,228 L 120,225 L 160,232 L 200,180 L 240,150 L 280,190 L 320,120 L 360,140 L 400,110 L 440,150 L 480,170 L 540,200 L 600,190 L 650,215 L 700,232" fill="none" stroke="#374151" stroke-width="2.4"/>
-  <circle cx="400" cy="110" r="6" fill="#DC2626"/>
-  <text x="366" y="98" font-size="10.5" font-weight="700" fill="#DC2626">High of Week (Wed)</text>
-  <text x="52" y="330" font-size="11" fill="#374151">Accumulation</text>
-  <text x="192" y="330" font-size="11" fill="#374151">Expansion</text>
-  <text x="332" y="330" font-size="11" fill="#374151">Lap dinh/day tuan</text>
-  <text x="472" y="330" font-size="11" fill="#374151">Distribution</text>
-  <text x="612" y="330" font-size="11" font-weight="700" fill="#2563EB">Reversion</text>
-  <path d="M420,120 C 500,150 560,190 610,225" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="4 2"/>
-  <path d="M602,218 l 14,-4 l -6,12 z" fill="#2563EB"/>
-  <rect x="40" y="392" width="680" height="30" rx="6" fill="#FEF3C7"/>
-  <text x="52" y="412" font-size="12" font-weight="700" fill="#92400E">Range tuan da chin vao Tue-Thu; thu Sau hoi ve weekly open la hanh vi profit-taking dien hinh.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Weekly Range Profile — 5 ngày trong tuần</text>
+<line x1="24" y1="480" x2="936" y2="480" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="380" x2="936" y2="380" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="280" x2="936" y2="280" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="180" x2="936" y2="180" stroke="#1f2937" stroke-width="1"/>
+<!-- 5 columns -->
+<line x1="204" y1="90" x2="204" y2="520" stroke="#1f2937" stroke-width="1"/>
+<line x1="384" y1="90" x2="384" y2="520" stroke="#1f2937" stroke-width="1"/>
+<line x1="564" y1="90" x2="564" y2="520" stroke="#1f2937" stroke-width="1"/>
+<line x1="744" y1="90" x2="744" y2="520" stroke="#1f2937" stroke-width="1"/>
+<text x="114" y="70" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">Mon</text>
+<text x="294" y="70" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">Tue</text>
+<text x="474" y="70" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">Wed</text>
+<text x="654" y="70" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">Thu</text>
+<text x="834" y="70" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">Fri</text>
+<!-- Weekly opening price line -->
+<line x1="60" y1="350" x2="900" y2="350" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="66" y="342" font-size="12" font-weight="400" fill="#38bdf8" text-anchor="start">Weekly Opening Price</text>
+<!-- Mon: narrow range accumulation -->
+<line x1="90" y1="340" x2="90" y2="365" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="84.0" y="345" width="12" height="15" fill="#22c55e"/>
+<line x1="130" y1="335" x2="130" y2="368" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="124.0" y="345" width="12" height="15" fill="#ef4444"/>
+<line x1="170" y1="338" x2="170" y2="362" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="164.0" y="342" width="12" height="16" fill="#22c55e"/>
+<text x="114" y="400" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Accumulation</text>
+<text x="114" y="416" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">dò dẫm</text>
+<!-- Tue: strong expansion up making High of Week -->
+<line x1="230" y1="320" x2="230" y2="358" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="224.0" y="325" width="12" height="30" fill="#22c55e"/>
+<line x1="270" y1="255" x2="270" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="264.0" y="260" width="12" height="65" fill="#22c55e"/>
+<line x1="310" y1="180" x2="310" y2="265" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="304.0" y="185" width="12" height="75" fill="#22c55e"/>
+<line x1="350" y1="150" x2="350" y2="200" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="344.0" y="155" width="12" height="40" fill="#22c55e"/>
+<line x1="60" y1="150" x2="470" y2="150" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="66" y="140" font-size="12" font-weight="400" fill="#eab308" text-anchor="start">High of Week</text>
+<text x="294" y="240" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Expansion —</text>
+<text x="294" y="256" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">lập đỉnh tuần</text>
+<!-- Wed continuation near high, slight pull -->
+<line x1="410" y1="160" x2="410" y2="210" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="404.0" y="165" width="12" height="40" fill="#ef4444"/>
+<line x1="450" y1="170" x2="450" y2="225" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="444.0" y="175" width="12" height="45" fill="#22c55e"/>
+<line x1="490" y1="165" x2="490" y2="215" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="484.0" y="170" width="12" height="40" fill="#ef4444"/>
+<text x="474" y="245" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Continuation /</text>
+<text x="474" y="261" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Distribution</text>
+<!-- Thu slight continuation then stall -->
+<line x1="590" y1="175" x2="590" y2="225" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="584.0" y="180" width="12" height="40" fill="#22c55e"/>
+<line x1="630" y1="185" x2="630" y2="235" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="624.0" y="190" width="12" height="40" fill="#ef4444"/>
+<line x1="670" y1="195" x2="670" y2="240" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="664.0" y="200" width="12" height="35" fill="#ef4444"/>
+<text x="654" y="270" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Chững lại</text>
+<!-- Fri: reversion curve back to weekly open -->
+<path d="M 710 220 C 760 250, 800 300, 850 345" stroke="#f97316" stroke-width="2.5" fill="none" marker-end="url(#arrFri)"/>
+<line x1="770" y1="290" x2="770" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="764.0" y="295" width="12" height="30" fill="#ef4444"/>
+<line x1="810" y1="310" x2="810" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="804.0" y="315" width="12" height="28" fill="#ef4444"/>
+<line x1="850" y1="330" x2="850" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="844.0" y="335" width="12" height="18" fill="#22c55e"/>
+<text x="834" y="425" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Reversion /</text>
+<text x="834" y="441" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Profit-Taking</text>
+<defs><marker id="arrFri" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f97316"/></marker></defs>
+<text x="32" y="576" font-size="12" fill="#94a3b8" text-anchor="start">Sơ đồ khái niệm weekly range profile, không phải chart giá thật.</text>
 </svg>

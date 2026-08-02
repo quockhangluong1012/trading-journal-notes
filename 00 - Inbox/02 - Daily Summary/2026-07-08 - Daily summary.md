@@ -14,7 +14,7 @@ tags: [daily-summary, prop-firm-prep]
 # 🌙 Daily Summary — 2026-07-08
 
 > [!info] Đếm ngược
-> **183 ngày** còn lại tới mốc tự đặt 2027-01-07 (song song FTMO 10K$ + The5ers High Stakes 10K$ — hai track độc lập, không gộp luật). Giai đoạn hiện tại: **Giai đoạn 1 — Nền tảng** (theo [[01 - Roadmap]]). Chủ đề hôm nay: **ngày trả nợ kỷ luật lớn nhất từ khi có hệ thống nhật ký** — Khang đã trả một loạt khoản nợ dài ngày *sau khi* file task sáng nay được tạo (3 note lỗi top-3 rỗng 6 ngày nay đã có nội dung thật, `baseline` sai trong [[Master the ICT 2022 Model]] đã sửa, Lesson Learned 2 backtest 07-06 đã điền), đồng thời nối chuỗi backtest sang **ngày thứ 3 liên tiếp** (07-06 → 07-07 → 07-08). Backtest hôm nay là **lệnh thua đầu tiên** của mẫu gần đây (Grade D, FOMO) — nhưng được phân tích rất sâu, đúng tinh thần "a good loss beats a bad win".
+> **183 ngày** còn lại tới mốc tự đặt 2027-01-07 (song song FTMO 10K$ + The5ers High Stakes 10K$ — hai track độc lập, không gộp luật). Giai đoạn hiện tại: **Giai đoạn 1 — Nền tảng** (theo [[01 - Roadmap]]). Chủ đề hôm nay: **ngày trả nợ kỷ luật lớn nhất từ khi có hệ thống nhật ký** —  đã trả một loạt khoản nợ dài ngày *sau khi* file task sáng nay được tạo (3 note lỗi top-3 rỗng 6 ngày nay đã có nội dung thật, `baseline` sai trong [[Master the ICT 2022 Model]] đã sửa, Lesson Learned 2 backtest 07-06 đã điền), đồng thời nối chuỗi backtest sang **ngày thứ 3 liên tiếp** (07-06 → 07-07 → 07-08). Backtest hôm nay là **lệnh thua đầu tiên** của mẫu gần đây (Grade D, FOMO) — nhưng được phân tích rất sâu, đúng tinh thần "a good loss beats a bad win".
 
 > [!warning] Cảnh báo — các khoản nợ CÒN LẠI (đã trừ những khoản trả xong hôm nay)
 > - **2 goal challenge vẫn đứng yên bảng "Nhật ký tiến độ" 15 ngày** (dòng cuối vẫn 2026-06-23): [[Pass FTMO first package challenge (10K$)]] và [[Pass The5er first package challenge (10k$)]]. Hôm nay không có bước chuẩn bị thật nào cho 2 goal này (chưa mua gói, không có demo/playbook/bảng lot size mới) → không thêm dòng hollow, nhưng khoảng đứng yên đã vượt xa ngưỡng 3 ngày.
@@ -102,11 +102,11 @@ tags: [daily-summary, prop-firm-prep]
 - **[[Pass The5er first package challenge (10k$)]]** — KHÔNG cập nhật: cùng lý do FTMO.
 
 > [!note] Về việc tick cột mốc
-> Mình **không tự tick** cột mốc trong goal (progress % là con số Khang tự chấm — tránh fabricate). Nhưng hôm nay lần đầu có đủ bằng chứng thật để Khang cân nhắc tick: [[Cut my top 3 repeated mistakes]] #1 (xác định top-3) + #2 (viết biện pháp đối phó), và [[Hold daily journaling and process discipline]] #1 (định nghĩa quy trình nhật ký hàng ngày).
+> Mình **không tự tick** cột mốc trong goal (progress % là con số  tự chấm — tránh fabricate). Nhưng hôm nay lần đầu có đủ bằng chứng thật để  cân nhắc tick: [[Cut my top 3 repeated mistakes]] #1 (xác định top-3) + #2 (viết biện pháp đối phó), và [[Hold daily journaling and process discipline]] #1 (định nghĩa quy trình nhật ký hàng ngày).
 
 ## 🔭 Việc cần làm ngày mai
 
-1. **Dán dòng 2026-W27 đã soạn sẵn** vào bảng tuần [[02 - Skill Metrics]] (nguồn: mục "Đề xuất cập nhật" trong [[2026-07 W27 - Weekly summary]]) — trễ 6 ngày, chỉ cần Khang tự chấm Chất lượng quy trình/Kỷ luật (1–5) rồi dán. **Ưu tiên #1** — đây là khoản nợ rẻ nhất còn lại.
+1. **Dán dòng 2026-W27 đã soạn sẵn** vào bảng tuần [[02 - Skill Metrics]] (nguồn: mục "Đề xuất cập nhật" trong [[2026-07 W27 - Weekly summary]]) — trễ 6 ngày, chỉ cần  tự chấm Chất lượng quy trình/Kỷ luật (1–5) rồi dán. **Ưu tiên #1** — đây là khoản nợ rẻ nhất còn lại.
 2. **Vá 2 mismatch prose–frontmatter** đã tồn tại: [[Master the ICT 2022 Model]] "Cách đo lường → Hiện tại: ~20 setup" → **6 setup**; [[Build a statistically validated backtest sample]] "Cách đo lường → Hiện tại: ~15 backtest" → **6 backtest**. Frontmatter đã đúng, chỉ còn prose.
 3. **Tick cột mốc có bằng chứng thật:** [[Cut my top 3 repeated mistakes]] #1 + #2; [[Hold daily journaling and process discipline]] #1 — rồi chỉnh `progress` frontmatter cho khớp tỉ lệ cột mốc mới.
 4. **Sửa nhãn `phase: "Phase 4 - Challenge"`** trong [[Pass FTMO first package challenge (10K$)]] và [[Pass The5er first package challenge (10k$)]] → cho khớp thực tế "Giai đoạn 0 — Chuẩn bị".

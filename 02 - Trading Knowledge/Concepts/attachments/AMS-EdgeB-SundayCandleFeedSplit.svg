@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Nến Chủ Nhật: feed 5-ngày vs 6-ngày đổi cả nhãn STH/ITH</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">EURUSD D1 — hai broker, cùng dữ liệu gốc, hai cấu trúc khác nhau</text>
+
+  <line x1="640" y1="60" x2="640" y2="620" stroke="#2a2e39" stroke-width="1"/>
+
+  <rect x="70" y="90" width="220" height="34" rx="6" fill="#4a90d9" opacity="0.18" stroke="#4a90d9"/>
+  <text x="88" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#4a90d9">Broker A — feed 5 ngày/tuần</text>
+
+  <!-- broker A candles Mon-Fri -->
+  <g>
+    <line x1="110" y1="220" x2="110" y2="320" stroke="#26a69a" stroke-width="1"/>
+    <rect x="100" y="230" width="20" height="70" rx="1" fill="#26a69a"/>
+    <text x="93" y="335" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Mon</text>
+    <line x1="170" y1="180" x2="170" y2="280" stroke="#ef5350" stroke-width="1"/>
+    <rect x="160" y="190" width="20" height="65" rx="1" fill="#ef5350"/>
+    <text x="153" y="295" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Tue</text>
+    <line x1="230" y1="240" x2="230" y2="340" stroke="#26a69a" stroke-width="1"/>
+    <rect x="220" y="250" width="20" height="70" rx="1" fill="#26a69a"/>
+    <text x="223" y="355" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#f2c94c">Wed (STL)</text>
+    <line x1="290" y1="190" x2="290" y2="290" stroke="#ef5350" stroke-width="1"/>
+    <rect x="280" y="200" width="20" height="65" rx="1" fill="#ef5350"/>
+    <text x="283" y="305" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Thu</text>
+    <line x1="350" y1="160" x2="350" y2="260" stroke="#26a69a" stroke-width="1"/>
+    <rect x="340" y="170" width="20" height="65" rx="1" fill="#26a69a"/>
+    <text x="343" y="275" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Fri</text>
+  </g>
+  <text x="70" y="420" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Wed low có higher-low Tue &amp; Thu hai bên</text>
+  <text x="70" y="442" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">→ Wed = STL hợp lệ</text>
+
+  <rect x="690" y="90" width="220" height="34" rx="6" fill="#ff9800" opacity="0.18" stroke="#ff9800"/>
+  <text x="708" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff9800">Broker B — có nến Chủ Nhật (6 ngày)</text>
+
+  <!-- broker B candles Sun-Fri, extra sunday candle inserted -->
+  <g>
+    <line x1="710" y1="300" x2="710" y2="360" stroke="#787b86" stroke-width="1"/>
+    <rect x="702" y="310" width="16" height="40" rx="1" fill="#787b86"/>
+    <text x="695" y="375" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Sun</text>
+    <line x1="760" y1="220" x2="760" y2="320" stroke="#26a69a" stroke-width="1"/>
+    <rect x="750" y="230" width="20" height="70" rx="1" fill="#26a69a"/>
+    <text x="753" y="335" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Mon</text>
+    <line x1="820" y1="180" x2="820" y2="280" stroke="#ef5350" stroke-width="1"/>
+    <rect x="810" y="190" width="20" height="65" rx="1" fill="#ef5350"/>
+    <text x="813" y="295" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Tue</text>
+    <line x1="880" y1="240" x2="880" y2="340" stroke="#26a69a" stroke-width="1"/>
+    <rect x="870" y="250" width="20" height="70" rx="1" fill="#26a69a"/>
+    <text x="857" y="358" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#f2c94c">Wed (không còn STL)</text>
+    <line x1="940" y1="190" x2="940" y2="290" stroke="#ef5350" stroke-width="1"/>
+    <rect x="930" y="200" width="20" height="65" rx="1" fill="#ef5350"/>
+    <text x="933" y="305" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Thu</text>
+    <line x1="1000" y1="160" x2="1000" y2="260" stroke="#26a69a" stroke-width="1"/>
+    <rect x="990" y="170" width="20" height="65" rx="1" fill="#26a69a"/>
+    <text x="993" y="275" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Fri</text>
+  </g>
+  <text x="690" y="420" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Nến Sun (thanh khoản mỏng) chen vào giữa</text>
+  <text x="690" y="442" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">→ Wed so với Mon-Sun không còn higher-low sạch</text>
+  <text x="690" y="464" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">→ Broker B: Wed KHÔNG được chấm STL</text>
+
+  <rect x="70" y="540" width="1140" height="60" rx="8" fill="#f2c94c" opacity="0.14" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="90" y="565" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">Rule: chuẩn hoá feed trước khi chấm D1 — loại/gộp nến Chủ Nhật thanh khoản mỏng</text>
+  <text x="90" y="587" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">theo đúng quy ước bạn dùng để backtest, đừng đổi feed giữa live và backtest</text>
+
+  <text x="40" y="660" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">EURUSD D1 · minh họa cấu trúc — khác feed = khác số nến hai bên = khác nhãn STL/STH</text>
+</svg>

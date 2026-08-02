@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="800" fill="#0f1420" rx="12"/>
+  <!-- grid -->
+  <g stroke="#1c2333" stroke-width="1">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+
+  <text x="600" y="40" font-size="26" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Cơ chế orderflow đằng sau Market Structure Shift</text>
+  <text x="600" y="64" font-size="15" fill="#94a3b8" text-anchor="middle">Từ stop cluster bị giải phóng đến algo TWAP/VWAP tái định giá — không chỉ là "giá vượt một mức"</text>
+
+  <!-- Step 1: price approaching lower-high with stop cluster -->
+  <text x="40" y="105" font-size="16" font-weight="bold" fill="#38bdf8">1) Trước MSS: swing được "phòng thủ"</text>
+  <text x="40" y="128" font-size="13" fill="#94a3b8">Lower-high 1.0832 = nơi phe Short mở vị thế; stop Short nằm ngay trên mức này</text>
+
+  <!-- candles going down forming lower highs -->
+  <g>
+    <line x1="90" y1="160" x2="90" y2="230" stroke="#ef4444" stroke-width="2"/>
+    <rect x="82" y="175" width="16" height="35" fill="#ef4444"/>
+    <line x1="140" y1="150" x2="140" y2="210" stroke="#ef4444" stroke-width="2"/>
+    <rect x="132" y="160" width="16" height="30" fill="#ef4444"/>
+    <line x1="190" y1="175" x2="190" y2="245" stroke="#ef4444" stroke-width="2"/>
+    <rect x="182" y="190" width="16" height="35" fill="#ef4444"/>
+    <line x1="240" y1="165" x2="240" y2="225" stroke="#ef4444" stroke-width="2"/>
+    <rect x="232" y="175" width="16" height="30" fill="#ef4444"/>
+  </g>
+  <line x1="70" y1="165" x2="270" y2="165" stroke="#eab308" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="280" y="169" font-size="13" fill="#eab308">Lower-high 1.0832 (swing "phòng thủ")</text>
+
+  <!-- stop cluster annotation box -->
+  <rect x="60" y="240" width="230" height="55" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="72" y="260" font-size="12.5" fill="#e2e8f0">Cụm stop Short "sống" ngay trên</text>
+  <text x="72" y="277" font-size="12.5" fill="#e2e8f0">mức này — nhiên liệu mua tức thời</text>
+  <text x="72" y="290" font-size="11.5" fill="#94a3b8">khi bị đóng nến xuyên qua</text>
+
+  <!-- Step 2: SSL sweep -->
+  <text x="360" y="105" font-size="16" font-weight="bold" fill="#f97316">2) Sweep SSL: gom counterparty</text>
+  <text x="360" y="128" font-size="13" fill="#94a3b8">Wick xuyên đáy → market sell order kích hoạt → smart money mua đối ứng</text>
+
+  <g>
+    <line x1="400" y1="200" x2="400" y2="300" stroke="#f97316" stroke-width="2.5"/>
+    <rect x="392" y="220" width="16" height="25" fill="#ef4444"/>
+  </g>
+  <text x="415" y="295" font-size="12.5" fill="#f97316">SSL sweep (wick)</text>
+  <line x1="380" y1="290" x2="520" y2="290" stroke="#eab308" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="525" y="294" font-size="12.5" fill="#eab308">equal lows</text>
+
+  <!-- Step 3: displacement body close through lower high -->
+  <text x="620" y="105" font-size="16" font-weight="bold" fill="#22c55e">3) Displacement: body trả lời phiên đấu giá</text>
+  <text x="620" y="128" font-size="13" fill="#94a3b8">Wick = câu hỏi (bị từ chối); body close = mức giá mới ĐƯỢC CHẤP NHẬN</text>
+
+  <g>
+    <line x1="660" y1="270" x2="660" y2="160" stroke="#22c55e" stroke-width="2.5"/>
+    <rect x="650" y="165" width="20" height="90" fill="#22c55e"/>
+  </g>
+  <line x1="640" y1="165" x2="850" y2="165" stroke="#eab308" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="690" y="150" font-size="13" fill="#22c55e" font-weight="bold">Body đóng qua lower-high = MSS</text>
+
+  <!-- FVG left by displacement -->
+  <rect x="650" y="180" width="130" height="55" fill="#22c55e" opacity="0.2"/>
+  <text x="656" y="200" font-size="12.5" fill="#e2e8f0">FVG</text>
+  <text x="656" y="216" font-size="11.5" fill="#94a3b8">algo TWAP/VWAP</text>
+  <text x="656" y="230" font-size="11.5" fill="#94a3b8">tái định giá quanh đây</text>
+
+  <!-- Step 4: dealer hedging / algo box -->
+  <rect x="900" y="150" width="260" height="150" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="915" y="175" font-size="14" font-weight="bold" fill="#a78bfa">4) Khuếch đại sau MSS</text>
+  <text x="915" y="198" font-size="12" fill="#e2e8f0">• Dealer/gamma hedging (ES/SPX,</text>
+  <text x="915" y="213" font-size="12" fill="#e2e8f0">  XAUUSD quanh OI lớn) đẩy thêm</text>
+  <text x="915" y="228" font-size="12" fill="#e2e8f0">  dòng lệnh theo chiều MSS</text>
+  <text x="915" y="248" font-size="12" fill="#e2e8f0">• Limit order book tái cấu trúc:</text>
+  <text x="915" y="263" font-size="12" fill="#e2e8f0">  MM dời sổ lệnh lên vùng giá cao</text>
+  <text x="915" y="278" font-size="12" fill="#e2e8f0">  hơn → khó quay lại vùng cũ</text>
+
+  <!-- bottom: comparison to other frameworks -->
+  <text x="40" y="345" font-size="17" font-weight="bold" fill="#e2e8f0">Đối chiếu khung lý thuyết khác — cùng hiện tượng, cách đo khác nhau</text>
+
+  <g>
+    <rect x="40" y="365" width="350" height="110" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="55" y="388" font-size="14" font-weight="bold" fill="#38bdf8">Wyckoff</text>
+    <text x="55" y="408" font-size="12.5" fill="#e2e8f0">Sign of Strength / Weakness —</text>
+    <text x="55" y="424" font-size="12.5" fill="#e2e8f0">cùng ý tưởng đảo cung-cầu, đo</text>
+    <text x="55" y="440" font-size="12.5" fill="#e2e8f0">bằng volume thay vì displacement</text>
+    <text x="55" y="460" font-size="11.5" fill="#94a3b8">Trùng: đảo chiều có xác nhận lực</text>
+  </g>
+
+  <g>
+    <rect x="415" y="365" width="350" height="110" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="430" y="388" font-size="14" font-weight="bold" fill="#38bdf8">Auction Market Theory</text>
+    <text x="430" y="408" font-size="12.5" fill="#e2e8f0">Breakout khỏi Value Area kèm</text>
+    <text x="430" y="424" font-size="12.5" fill="#e2e8f0">"excess" bị từ chối — giống hệt</text>
+    <text x="430" y="440" font-size="12.5" fill="#e2e8f0">sweep + reclaim, đo bằng TPO</text>
+    <text x="430" y="460" font-size="11.5" fill="#94a3b8">Trùng: từ chối vùng giá trước MSS</text>
+  </g>
+
+  <g>
+    <rect x="790" y="365" width="370" height="110" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="805" y="388" font-size="14" font-weight="bold" fill="#38bdf8">Orderflow / Footprint</text>
+    <text x="805" y="408" font-size="12.5" fill="#e2e8f0">Delta flip = bằng chứng TRỰC TIẾP;</text>
+    <text x="805" y="424" font-size="12.5" fill="#e2e8f0">MSS trên nến chỉ suy luận GIÁN</text>
+    <text x="805" y="440" font-size="12.5" fill="#e2e8f0">TIẾP qua hình dạng thân nến</text>
+    <text x="805" y="460" font-size="11.5" fill="#94a3b8">Khác: cần chờ nến đóng vs real-time</text>
+  </g>
+
+  <!-- table: 3 markets -->
+  <text x="40" y="510" font-size="17" font-weight="bold" fill="#e2e8f0">MSS trên 3 loại thị trường</text>
+  <g font-size="12.5">
+    <rect x="40" y="525" width="1120" height="34" fill="#1e293b" stroke="#334155"/>
+    <text x="55" y="547" fill="#94a3b8" font-weight="bold">Tiêu chí</text>
+    <text x="300" y="547" fill="#94a3b8" font-weight="bold">FX majors</text>
+    <text x="600" y="547" fill="#94a3b8" font-weight="bold">Index Futures (NQ/ES)</text>
+    <text x="900" y="547" fill="#94a3b8" font-weight="bold">Crypto (BTC/ETH)</text>
+
+    <rect x="40" y="559" width="1120" height="40" fill="#0f1420" stroke="#334155"/>
+    <text x="55" y="583" fill="#e2e8f0">Độ tin cậy trong KZ</text>
+    <text x="300" y="583" fill="#e2e8f0">Cao — London/NY flow rõ</text>
+    <text x="600" y="583" fill="#e2e8f0">Cao — quanh RTH open 09:30</text>
+    <text x="900" y="583" fill="#e2e8f0">Trung bình — 24/7, không KZ chuẩn</text>
+
+    <rect x="40" y="599" width="1120" height="40" fill="#1e293b" stroke="#334155"/>
+    <text x="55" y="623" fill="#e2e8f0">Ảnh hưởng dealer/gamma</text>
+    <text x="300" y="623" fill="#e2e8f0">Thấp (không OI tập trung)</text>
+    <text x="600" y="623" fill="#e2e8f0">Cao — ES/SPX quanh 0DTE</text>
+    <text x="900" y="623" fill="#e2e8f0">Thấp–TB (trừ options Deribit)</text>
+
+    <rect x="40" y="639" width="1120" height="40" fill="#0f1420" stroke="#334155"/>
+    <text x="55" y="663" fill="#e2e8f0">Tick/point tham chiếu</text>
+    <text x="300" y="663" fill="#e2e8f0">EURUSD tick 0.0001</text>
+    <text x="600" y="663" fill="#e2e8f0">NQ 1pt=20$ tick 0.25; ES 1pt=50$</text>
+    <text x="900" y="663" fill="#e2e8f0">Đo theo % (0.3–0.8%/leg)</text>
+  </g>
+
+  <text x="600" y="720" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-style="italic">MSS "có nghĩa" vì nó giải thể một phe (thanh lý stop cluster), không chỉ vì giá vượt một con số trên chart.</text>
+</svg>

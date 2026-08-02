@@ -82,5 +82,31 @@ Cần chốt để phân tích chính xác:
 - Chuỗi nến xanh đi vào OB **đã quét BSL / equal highs nào chưa**, hay chạm OB từ giữa hư không? Có sweep → độ tin cậy reversal cao hơn hẳn.
 - Symbol + khung thời gian (để xác định OB có phải gốc displacement thật — tiêu chí A+).
 
+## 7. Tình huống thực chiến (War Stories) — khi drop-xuống-LTF thành công và khi nó phản chủ
+
+> [!info] Vì sao có mục này
+> Mục 1–6 giải quyết đúng câu hỏi kỹ thuật "MSS ở đâu khi M15 không có swing low". Nhưng kỹ thuật drop-xuống-LTF (M5/M1) là một con dao hai lưỡi — nó chỉ đáng tin trong đúng bối cảnh. Hai tình huống dưới đây, rút từ việc quan sát chính kỹ thuật này lặp lại nhiều lần trên các symbol thanh khoản cao, vẽ ranh giới giữa lúc nó cứu một setup và lúc nó tạo ảo giác về một MSS không hề tồn tại.
+
+![[LTF-Drilldown-STL-Formation-20260712.svg]]
+
+### W1 — Trend day: khi LTF cứ tạo STL rồi lại bị xuyên qua, không bao giờ MSS thật
+
+**Tình huống:** đúng kỹ thuật ở mục 3 — drop xuống M1, tìm STL, chờ displacement đóng thân dưới STL. Nhưng trong một **trend day thật sự** (giá phá range và giữ, không có Judas Swing quay đầu — xem [[02 - AMD]] mục Trend Day Filter), mọi STL M1 vừa hình thành đều bị nến tăng tiếp theo xuyên qua ngay, không hề có displacement giảm nào đủ mạnh để đóng dưới nó. Trader áp cứng logic "cứ tìm STL rồi chờ MSS" sẽ liên tục thấy một loạt STL "sắp bị phá" — nhưng thực ra thị trường đang nói một câu khác: đây không phải nhịp pullback vào OB để đảo chiều, đây là một ngày trend, và mô hình reversal-tại-OB không áp dụng.
+
+**Bài học:** trước khi drop xuống LTF săn MSS, luôn hỏi câu hỏi tầng trên trước — HTF hôm nay có dấu hiệu trend day không (theo checklist trong [[02 - AMD]])? Nếu có, việc "chưa tìm thấy MSS" trên M1 không phải vì cần zoom sâu hơn nữa, mà vì đang cố ép một mô hình reversal vào một ngày không có reversal.
+
+**Rule đo được:** trước khi bắt đầu drop-xuống-LTF, chấm `session_type` (AMD bình thường / trend day nghi ngờ / không rõ). Nếu trend day nghi ngờ ở mức cao (đã phá 2+ vùng kháng cự liên tiếp bằng thân nến, không có Judas quay đầu) → không săn MSS reversal tại OB, đứng ngoài hoặc chuyển sang model tiếp diễn.
+
+### W2 — Cái bẫy "STL M1 quá dễ thấy": micro-MSS không có displacement thật
+
+**Tình huống:** khi kéo timeframe xuống M1/M5 quá nhiệt tình, gần như **bất kỳ đâu** cũng có thể vẽ ra một STL — vì ở khung cực nhỏ, giá dao động lên xuống liên tục tạo vô số đáy nhỏ. Nhiều trader mới quen kỹ thuật này rơi vào cực đoan ngược: thấy một nến M1 đóng cửa thấp hơn một đáy M1 li ti nào đó (không phải do displacement, chỉ là nhiễu bình thường của khung nhỏ) và gọi đó là "MSS", vào lệnh — trong khi đó chỉ là dao động ngẫu nhiên không mang ý nghĩa gì về order flow.
+
+**Cách phân biệt:** một STL M1 chỉ đáng để chờ MSS khi nó gắn liền với một **phản ứng thật** tại OB — nghĩa là cụm nến tạo ra nó phải thể hiện rõ sự chững lại / cạn lực mua (thân nến co dần, wick dài hơn, volume giảm nếu có dữ liệu), không phải một đáy vô thưởng vô phạt giữa một chuỗi tăng đều. Đây chính là điều kiện tiên quyết đã nêu ở mục 4 — liquidity sweep + vị trí premium + bias ủng hộ — áp dụng xuống cả cấp M1.
+
+**Rule đo được:** trước khi gọi một đáy M1 là "STL đáng tin", xác nhận nó thỏa ít nhất 2/3 điều kiện ở bảng mục 4 (đã zoom xuống đúng cấp). Field: `stl_has_reaction_context` (có/không) — nếu không, đó là nhiễu, không phải mốc MSS.
+
+> [!success] Tổng kết mục 7
+> Drop-xuống-LTF là công cụ mạnh nhưng không miễn nhiễm với hai lỗi đối lập: **dùng nó khi không nên dùng** (trend day, không có mô hình reversal để tìm — W1), và **dùng nó quá tay** (biến mọi nhiễu M1 thành MSS — W2). Cả hai đều được chữa bằng cùng một kỷ luật: xác nhận bối cảnh HTF/phản ứng thật trước khi tin vào bất kỳ mốc nào ở khung nhỏ.
+
 ---
-*Ghi chú: date = ngày capture (VN, UTC+7). Không log backtest vì không vào lệnh — đây là note phương pháp. Sơ đồ là minh họa nguyên lý, không phải chart thật.*
+*Ghi chú: date = ngày capture (VN, UTC+7). Không log backtest vì không vào lệnh — đây là note phương pháp. Sơ đồ là minh họa nguyên lý, không phải chart thật. Các tình huống ở mục 7 là kinh nghiệm tổng hợp mang tính minh họa (composite), không phải nhật ký của một lệnh cụ thể.*

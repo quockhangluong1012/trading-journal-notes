@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Decay theo số lần chạm — tỉ lệ tôn trọng OB giảm dần rõ rệt sau mỗi lần test</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Backtest 520 OB, EURUSD/GBPUSD/XAUUSD H1-H4, đo win-rate theo lần chạm thứ N</text>
+
+  <!-- bar chart -->
+  <g font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <line x1="120" y1="560" x2="1180" y2="560" stroke="#787b86" stroke-width="1"/>
+    <line x1="120" y1="160" x2="120" y2="560" stroke="#787b86" stroke-width="1"/>
+
+    <!-- Touch 1: 71% -->
+    <rect x="180" y="276" width="120" height="284" fill="#26a69a" opacity="0.85"/>
+    <text x="205" y="260" font-size="16" fill="#d1d4dc" font-weight="bold">71%</text>
+    <text x="185" y="585" font-size="14" fill="#787b86">Chạm lần 1</text>
+    <text x="185" y="603" font-size="12" fill="#565b66">n=520</text>
+
+    <!-- Touch 2: 52% -->
+    <rect x="380" y="374" width="120" height="186" fill="#4a90d9" opacity="0.85"/>
+    <text x="405" y="358" font-size="16" fill="#d1d4dc" font-weight="bold">52%</text>
+    <text x="385" y="585" font-size="14" fill="#787b86">Chạm lần 2</text>
+    <text x="385" y="603" font-size="12" fill="#565b66">n=310</text>
+
+    <!-- Touch 3: 31% -->
+    <rect x="580" y="449" width="120" height="111" fill="#f2c94c" opacity="0.85"/>
+    <text x="605" y="433" font-size="16" fill="#131722" font-weight="bold">31%</text>
+    <text x="585" y="585" font-size="14" fill="#787b86">Chạm lần 3</text>
+    <text x="585" y="603" font-size="12" fill="#565b66">n=140</text>
+
+    <!-- Touch 4+: 14% -->
+    <rect x="780" y="521" width="120" height="39" fill="#ff6b6b" opacity="0.85"/>
+    <text x="800" y="505" font-size="16" fill="#d1d4dc" font-weight="bold">14%</text>
+    <text x="775" y="585" font-size="14" fill="#787b86">Chạm lần 4+</text>
+    <text x="785" y="603" font-size="12" fill="#565b66">n=58</text>
+
+    <text x="60" y="165" font-size="13" fill="#565b66">Win-rate</text>
+    <text x="60" y="280" font-size="13" fill="#565b66">70%</text>
+    <text x="60" y="380" font-size="13" fill="#565b66">50%</text>
+    <text x="60" y="455" font-size="13" fill="#565b66">30%</text>
+  </g>
+
+  <!-- annotation: n shrinks too -->
+  <path d="M 300 555 Q 550 640 780 555" stroke="#ff9800" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+  <text x="470" y="655" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff9800">Mẫu n cũng co lại — phần lớn OB "chết" (bị xuyên hẳn) trước khi tới lần chạm thứ 4</text>
+
+  <rect x="960" y="160" width="260" height="400" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="978" y="188" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#f2c94c">Cơ chế WHY</text>
+  <text x="978" y="214" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">Mỗi lần giá quay lại</text>
+  <text x="978" y="234" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">OB, một phần lệnh</text>
+  <text x="978" y="254" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">limit gốc đã khớp</text>
+  <text x="978" y="274" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">và bị tiêu thụ —</text>
+  <text x="978" y="294" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">độ sâu sổ lệnh còn</text>
+  <text x="978" y="314" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">lại tại vùng giá đó</text>
+  <text x="978" y="334" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">giảm dần mỗi lần.</text>
+  <text x="978" y="364" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">Retail cũng dần</text>
+  <text x="978" y="384" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">nhận diện vùng này</text>
+  <text x="978" y="404" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">trên chart, đặt SL</text>
+  <text x="978" y="424" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">sát biên — tạo lớp</text>
+  <text x="978" y="444" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">thanh khoản mới cho</text>
+  <text x="978" y="464" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">việc xuyên hẳn qua.</text>
+  <text x="978" y="500" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">Rule: chạm 3 → giảm</text>
+  <text x="978" y="520" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">size 50%. Chạm 4+ →</text>
+  <text x="978" y="540" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">bỏ, chờ OB mới hình</text>
+  <text x="978" y="560" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">thành từ sweep khác.</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Backtest tổng hợp EURUSD/GBPUSD/XAUUSD H1-H4 04/2025-06/2026 · n=520 OB gốc</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="700" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Case Study: NQ Long tại CE NDOG — Sweep + MSS + FVG (+3.1R)</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">Thứ Ba 10/03 — bias bullish HTF, NDOG gap-up 18,240–18,278, CE = 18,259</text>
+
+<!-- price axis labels -->
+<text x="1080" y="120" font-size="13" fill="#94a3b8">18,320</text>
+<text x="1080" y="220" font-size="13" fill="#94a3b8">18,278</text>
+<text x="1080" y="290" font-size="13" fill="#38bdf8">18,259 CE</text>
+<text x="1080" y="360" font-size="13" fill="#94a3b8">18,240</text>
+<text x="1080" y="430" font-size="13" fill="#ef4444">18,252 SL</text>
+
+<!-- NDOG zone -->
+<rect x="60" y="220" width="1000" height="140" fill="#22c55e" opacity="0.12"/>
+<line x1="60" y1="220" x2="1060" y2="220" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="60" y1="360" x2="1060" y2="360" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="60" y1="290" x2="1060" y2="290" stroke="#38bdf8" stroke-width="2"/>
+
+<!-- Asian session candles (before reaction) -->
+<rect x="90" y="150" width="16" height="30" fill="#22c55e"/><line x1="98" y1="140" x2="98" y2="190" stroke="#22c55e" stroke-width="2"/>
+<rect x="130" y="140" width="16" height="30" fill="#22c55e"/><line x1="138" y1="130" x2="138" y2="180" stroke="#22c55e" stroke-width="2"/>
+<rect x="170" y="130" width="16" height="35" fill="#22c55e"/><line x1="178" y1="120" x2="178" y2="175" stroke="#22c55e" stroke-width="2"/>
+<text x="90" y="115" font-size="13" fill="#94a3b8">Phiên Á: chạy lên 18,310</text>
+
+<!-- London sweep candle -->
+<rect x="240" y="270" width="18" height="25" fill="#ef4444"/>
+<line x1="249" y1="255" x2="249" y2="345" stroke="#ef4444" stroke-width="2"/>
+<circle cx="249" cy="340" r="5" fill="#f97316"/>
+<text x="190" y="380" font-size="13" fill="#f97316" font-weight="bold">① 03:15 ET sweep sellside</text>
+<text x="190" y="398" font-size="12" fill="#94a3b8">chạm sát CE 18,259 (wick tới 18,253)</text>
+
+<!-- MSS + FVG candle -->
+<rect x="290" y="250" width="18" height="35" fill="#22c55e"/>
+<line x1="299" y1="240" x2="299" y2="295" stroke="#22c55e" stroke-width="2"/>
+<rect x="330" y="235" width="18" height="30" fill="#22c55e"/>
+<line x1="339" y1="225" x2="339" y2="270" stroke="#22c55e" stroke-width="2"/>
+<rect x="300" y="255" width="60" height="20" fill="#22c55e" opacity="0.3" stroke="#22c55e" stroke-dasharray="2,2"/>
+<text x="300" y="410" font-size="13" fill="#22c55e" font-weight="bold">② 03:20 ET MSS tăng + FVG 18,266-18,270</text>
+
+<!-- entry marker -->
+<line x1="360" y1="262" x2="1060" y2="262" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,3"/>
+<text x="365" y="255" font-size="13" fill="#38bdf8" font-weight="bold">③ Entry 18,268</text>
+
+<!-- SL line -->
+<line x1="360" y1="345" x2="1060" y2="345" stroke="#ef4444" stroke-width="2" stroke-dasharray="3,3"/>
+<text x="365" y="340" font-size="12" fill="#ef4444">SL 18,252</text>
+
+<!-- price path to TP1 then TP2 -->
+<rect x="380" y="215" width="16" height="25" fill="#22c55e"/><line x1="388" y1="205" x2="388" y2="245" stroke="#22c55e" stroke-width="2"/>
+<rect x="420" y="205" width="16" height="20" fill="#22c55e"/><line x1="428" y1="195" x2="428" y2="230" stroke="#22c55e" stroke-width="2"/>
+<text x="440" y="200" font-size="12" fill="#a78bfa" font-weight="bold">④ 03:52 ET TP1 18,278 (cạnh trên NDOG)</text>
+
+<rect x="600" y="170" width="16" height="25" fill="#22c55e"/><line x1="608" y1="160" x2="608" y2="200" stroke="#22c55e" stroke-width="2"/>
+<rect x="650" y="150" width="16" height="25" fill="#22c55e"/><line x1="658" y1="140" x2="658" y2="180" stroke="#22c55e" stroke-width="2"/>
+<rect x="750" y="130" width="16" height="25" fill="#22c55e"/><line x1="758" y1="120" x2="758" y2="165" stroke="#22c55e" stroke-width="2"/>
+<line x1="900" y1="118" x2="1000" y2="118" stroke="#a78bfa" stroke-width="2" stroke-dasharray="3,3"/>
+<text x="820" y="110" font-size="13" fill="#a78bfa" font-weight="bold">⑤ 08:40 ET TP2 18,318 (đỉnh phiên Á +8)</text>
+
+<!-- Result box -->
+<rect x="60" y="470" width="1080" height="200" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="80" y="500" font-size="16" fill="#e2e8f0" font-weight="bold">Kết quả bằng số</text>
+<text x="80" y="528" font-size="14" fill="#94a3b8">Risk: 18,268 − 18,252 = 16 điểm NQ</text>
+<text x="80" y="552" font-size="14" fill="#94a3b8">Reward tới TP2: 18,318 − 18,268 = 50 điểm</text>
+<text x="80" y="576" font-size="14" fill="#22c55e" font-weight="bold">R-multiple ≈ +3.1R  |  1 lot × 20 USD/điểm → lãi 1,000 USD (risk 320 USD)</text>
+<text x="80" y="610" font-size="14" fill="#eab308" font-weight="bold">Bài học: CE hiệu quả vì TRÙNG với sweep thanh khoản có sẵn (đáy phiên Á),</text>
+<text x="80" y="632" font-size="14" fill="#eab308" font-weight="bold">không phải vì bản thân CE có "sức hút" độc lập — confluence mới là edge thật.</text>
+</svg>

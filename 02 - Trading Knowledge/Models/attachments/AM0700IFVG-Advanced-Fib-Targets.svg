@@ -1,6 +1,45 @@
-<svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="340" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Mục tiêu Fibonacci — chốt tại -2 / -2.5</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">Vẽ Fib từ swing hình thành post-07:00 hunt VỀ giá mở cửa 07:00. Inputs: 0 · 0.5 · 1 · -2 · -2.5.</text>
-<rect x="24" y="72" width="712" height="250" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/><line x1="80" y1="120" x2="520" y2="120" stroke="#6B7280" stroke-dasharray="6 4"/><text x="528" y="124" font-size="11" fill="#6B7280">1.0  (07:00 open / lowest low)</text><line x1="80" y1="150" x2="520" y2="150" stroke="#94A3B8" stroke-dasharray="6 4"/><text x="528" y="154" font-size="11" fill="#94A3B8">0.5  (giữa)</text><line x1="80" y1="180" x2="520" y2="180" stroke="#1D4ED8" stroke-dasharray="6 4"/><text x="528" y="184" font-size="11" fill="#1D4ED8">0    (swing post-07:00 hunt)</text><line x1="80" y1="230" x2="520" y2="230" stroke="#15803D" stroke-dasharray="6 4"/><text x="528" y="234" font-size="11" fill="#15803D">-2   (TP1 — chốt một phần)</text><line x1="80" y1="275" x2="520" y2="275" stroke="#6D28D9" stroke-dasharray="6 4"/><text x="528" y="279" font-size="11" fill="#6D28D9">-2.5 (TP2 — phần còn lại)</text><path d="M180,182 L230,178 L260,205 L300,232 L340,258 L380,278" fill="none" stroke="#DC2626" stroke-width="2"/><text x="90" y="308" font-size="10.5" fill="#B45309">Chốt theo bậc thang: -2 rồi -2.5; hoặc dùng next draw on liquidity làm target.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="560" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="17" font-weight="700" fill="#e5e7eb" text-anchor="start">Fib target: swing post-07:00 → open 07:00, chốt bậc thang -2 / -2.5</text>
+<line x1="24" y1="70" x2="936" y2="70" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="130" x2="936" y2="130" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="190" x2="936" y2="190" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="250" x2="936" y2="250" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="310" x2="936" y2="310" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="370" x2="936" y2="370" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="140" x2="900" y2="140" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="68" y="134" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Fib 0 (swing post-07:00)</text>
+<line x1="60" y1="220" x2="900" y2="220" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="68" y="214" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Fib 0.5</text>
+<line x1="60" y1="300" x2="900" y2="300" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="68" y="294" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Fib 1 (open 07:00)</text>
+<line x1="60" y1="460" x2="900" y2="460" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="68" y="454" font-size="12" font-weight="400" fill="#38bdf8" text-anchor="start">Fib -2 (T1)</text>
+<line x1="60" y1="500" x2="900" y2="500" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="68" y="494" font-size="12" font-weight="400" fill="#38bdf8" text-anchor="start">Fib -2.5 (T2)</text>
+<line x1="140" y1="132" x2="140" y2="183" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="134.0" y="140" width="12" height="35" fill="#ef4444"/>
+<line x1="180" y1="167" x2="180" y2="228" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="174.0" y="175" width="12" height="45" fill="#ef4444"/>
+<line x1="220" y1="212" x2="220" y2="268" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="214.0" y="220" width="12" height="40" fill="#ef4444"/>
+<line x1="260" y1="252" x2="260" y2="308" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="254.0" y="260" width="12" height="40" fill="#ef4444"/>
+<line x1="300" y1="292" x2="300" y2="333" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="294.0" y="300" width="12" height="25" fill="#ef4444"/>
+<line x1="340" y1="312" x2="340" y2="378" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="334.0" y="320" width="12" height="50" fill="#ef4444"/>
+<line x1="380" y1="362" x2="380" y2="448" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="374.0" y="370" width="12" height="70" fill="#ef4444"/>
+<line x1="420" y1="432" x2="420" y2="528" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="414.0" y="440" width="12" height="80" fill="#ef4444"/>
+<line x1="460" y1="507" x2="460" y2="568" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="454.0" y="515" width="12" height="45" fill="#ef4444"/>
+<line x1="500" y1="552" x2="500" y2="608" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="494.0" y="560" width="12" height="40" fill="#ef4444"/>
+<line x1="540" y1="592" x2="540" y2="646" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="534.0" y="600" width="12" height="38" fill="#ef4444"/>
+<text x="500" y="446" font-size="11" font-weight="400" fill="#4ade80" text-anchor="start">Chốt 1 phần tại -2, dời SL về BE</text>
+<text x="560" y="518" font-size="11" font-weight="400" fill="#4ade80" text-anchor="start">Chốt phần còn lại tại -2.5</text>
+<text x="32" y="540" font-size="12" fill="#94a3b8" text-anchor="start">Sơ đồ khái niệm minh họa cách đo Fib target, không phải chart giá thật.</text>
 </svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 2 — LOSS: NY Open đúng cấu trúc nhưng dính tin NFP</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">GBPUSD — setup hợp lệ nhưng tin 08:30 đảo chiều mạnh sau entry</text>
+
+<line x1="60" y1="500" x2="900" y2="500" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="380" x2="900" y2="380" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="260" x2="900" y2="260" stroke="#1f2937" stroke-width="1"/>
+
+<rect x="60" y="150" width="840" height="130" fill="rgba(239,68,68,0.08)"/>
+<text x="880" y="168" font-size="11" fill="#94a3b8" text-anchor="end">Premium</text>
+
+<rect x="300" y="200" width="130" height="55" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-dasharray="4 3"/>
+<text x="365" y="192" font-size="12" fill="#3b82f6" text-anchor="middle">Premium FVG</text>
+
+<rect x="100" y="400" width="12" height="35" fill="#22c55e"/>
+<line x1="106" y1="392" x2="106" y2="440" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="125" y="360" width="12" height="40" fill="#22c55e"/>
+<line x1="131" y1="350" x2="131" y2="405" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="150" y="320" width="12" height="40" fill="#22c55e"/>
+<line x1="156" y1="310" x2="156" y2="365" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="175" y="280" width="12" height="40" fill="#22c55e"/>
+<line x1="181" y1="268" x2="181" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+
+<line x1="60" y1="240" x2="900" y2="240" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="70" y="235" font-size="12" fill="#eab308" text-anchor="start">BSL</text>
+
+<rect x="210" y="210" width="12" height="35" fill="#22c55e"/>
+<line x1="216" y1="198" x2="216" y2="250" stroke="#f97316" stroke-width="2.5"/>
+<path d="M 216 198 L 208 184 L 224 184 Z" fill="#f97316"/>
+<text x="216" y="178" font-size="12" font-weight="700" fill="#f97316" text-anchor="middle">Judas 08:20 NY</text>
+
+<rect x="260" y="230" width="12" height="30" fill="#ef4444"/>
+<rect x="285" y="260" width="12" height="35" fill="#ef4444"/>
+<line x1="266" y1="223" x2="266" y2="261" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="291" y1="253" x2="291" y2="296" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="230" y1="260" x2="420" y2="260" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="425" y="256" font-size="12" fill="#a855f7" text-anchor="start">MSS 5m</text>
+
+<rect x="310" y="290" width="55" height="30" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-dasharray="4 3"/>
+<rect x="315" y="298" width="12" height="15" fill="#22c55e"/>
+<line x1="321" y1="292" x2="321" y2="315" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="410" y="308" font-size="12" font-weight="700" fill="#4ade80" text-anchor="start">SHORT 1.2650 (08:29 NY)</text>
+
+<!-- NFP spike back up through stop -->
+<rect x="380" y="270" width="12" height="30" fill="#22c55e"/>
+<rect x="405" y="230" width="12" height="45" fill="#22c55e"/>
+<rect x="430" y="185" width="12" height="50" fill="#22c55e"/>
+<line x1="386" y1="260" x2="386" y2="303" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="411" y1="215" x2="411" y2="278" stroke="#f87171" stroke-width="2.5"/>
+<line x1="436" y1="170" x2="436" y2="238" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="411" y="160" font-size="12" font-weight="700" fill="#f87171" text-anchor="middle">NFP 08:30 — spike ngược 40 pips trong 2 phút</text>
+
+<line x1="300" y1="270" x2="600" y2="270" stroke="#f87171" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="610" y="266" font-size="11" fill="#f87171" text-anchor="start">SL 1.2670 bị quét</text>
+
+<text x="700" y="380" font-size="14" font-weight="700" fill="#f87171" text-anchor="middle">-20 pips (SL đầy đủ)</text>
+<text x="700" y="400" font-size="12" fill="#94a3b8" text-anchor="middle">Entry 1.2650, SL 1.2670 — hit ngay phút thứ 2 sau tin</text>
+
+<rect x="60" y="440" width="840" height="90" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="80" y="465" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">Vì sao loss: setup kỹ thuật hoàn toàn hợp lệ nhưng NFP rơi đúng 1 phút sau entry</text>
+<text x="80" y="485" font-size="12" fill="#94a3b8" text-anchor="start">Lỗi quy trình: không kiểm tra lịch tin trước phiên NY Open — 08:30 NFP là rủi ro đã biết trước</text>
+<text x="80" y="505" font-size="12" fill="#94a3b8" text-anchor="start">Bài học: luôn check economic calendar; nếu tin lớn trong 5 phút tới, bỏ qua setup dù đẹp đến đâu</text>
+</svg>

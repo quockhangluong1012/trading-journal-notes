@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Seek and Destroy Friday = Power of 3 nén vào 1 phiên</text>
+<rect x="60" y="100" width="260" height="220" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+<text x="190" y="140" font-size="15" font-weight="700" fill="#3b82f6" text-anchor="middle">ACCUMULATION</text>
+<text x="190" y="164" font-size="12" fill="#94a3b8" text-anchor="middle">Mon–Thu</text>
+<text x="190" y="200" font-size="12" fill="#e5e7eb" text-anchor="middle">Consolidation trước tin,</text>
+<text x="190" y="222" font-size="12" fill="#e5e7eb" text-anchor="middle">liquidity 2 phía được xây</text>
+<rect x="360" y="100" width="260" height="220" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+<text x="490" y="140" font-size="15" font-weight="700" fill="#f97316" text-anchor="middle">MANIPULATION</text>
+<text x="490" y="164" font-size="12" fill="#94a3b8" text-anchor="middle">Friday @ tin</text>
+<text x="490" y="200" font-size="12" fill="#e5e7eb" text-anchor="middle">Sweep bên đối lập bias</text>
+<text x="490" y="222" font-size="12" fill="#e5e7eb" text-anchor="middle">(Judas), quét stop</text>
+<rect x="660" y="100" width="260" height="220" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+<text x="790" y="140" font-size="15" font-weight="700" fill="#4ade80" text-anchor="middle">DISTRIBUTION</text>
+<text x="790" y="164" font-size="12" fill="#94a3b8" text-anchor="middle">Sau sweep</text>
+<text x="790" y="200" font-size="12" fill="#e5e7eb" text-anchor="middle">MSS/CISD LTF, đi đúng</text>
+<text x="790" y="222" font-size="12" fill="#e5e7eb" text-anchor="middle">weekly order flow tới target</text>
+<path d="M 320 210 L 360 210" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrG2)"/>
+<path d="M 620 210 L 660 210" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrG2)"/>
+<defs><marker id="arrG2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#94a3b8"/></marker></defs>
+<rect x="60" y="360" width="860" height="120" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="80" y="386" font-size="12" fill="#e5e7eb" text-anchor="start">AMD ([[02 - AMD]]) thường trải dài nhiều ngày/tuần trong các mô hình khác — ở S&amp;D Friday, cả ba giai đoạn</text>
+<text x="80" y="408" font-size="12" fill="#e5e7eb" text-anchor="start">bị NÉN gọn vào đúng phiên thứ Sáu: accumulation là chính Mon–Thu, manipulation là cú sweep tại tin,</text>
+<text x="80" y="430" font-size="12" fill="#e5e7eb" text-anchor="start">distribution là move thật diễn ra ngay sau đó cùng ngày.</text>
+<text x="80" y="452" font-size="12" fill="#94a3b8" text-anchor="start">Đọc qua khung Power of 3 giúp setup trở nên "hiển nhiên" — không cần đoán, chỉ cần đợi đúng giai đoạn.</text>
+</svg>

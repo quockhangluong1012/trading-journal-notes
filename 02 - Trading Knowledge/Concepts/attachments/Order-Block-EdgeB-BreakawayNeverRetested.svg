@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Breakaway OB không bao giờ quay lại — cái giá của việc "chờ hồi"</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">NQ1 H1: OB bullish hình thành rồi giá chạy thẳng, không hồi về OB trong suốt phần còn lại của trend</text>
+
+  <!-- price action -->
+  <rect x="150" y="380" width="40" height="60" rx="1" fill="#ef5350"/>
+  <line x1="170" y1="365" x2="170" y2="450" stroke="#ef5350" stroke-width="1"/>
+  <rect x="140" y="380" width="200" height="70" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="145" y="470" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">OB bullish 21,180-21,205</text>
+
+  <!-- displacement candles running away -->
+  <g>
+    <line x1="240" y1="200" x2="240" y2="390" stroke="#26a69a" stroke-width="1"/>
+    <rect x="228" y="210" width="24" height="170" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="300" y1="130" x2="300" y2="220" stroke="#26a69a" stroke-width="1"/>
+    <rect x="288" y="140" width="24" height="70" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="360" y1="90" x2="360" y2="150" stroke="#26a69a" stroke-width="1"/>
+    <rect x="348" y="98" width="24" height="45" rx="1" fill="#26a69a"/>
+  </g>
+  <!-- small pullback that never reaches OB -->
+  <g>
+    <line x1="420" y1="110" x2="420" y2="160" stroke="#ef5350" stroke-width="1"/>
+    <rect x="408" y="115" width="24" height="35" rx="1" fill="#ef5350"/>
+  </g>
+  <g>
+    <line x1="480" y1="70" x2="480" y2="130" stroke="#26a69a" stroke-width="1"/>
+    <rect x="468" y="78" width="24" height="45" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="540" y1="50" x2="540" y2="105" stroke="#26a69a" stroke-width="1"/>
+    <rect x="528" y="58" width="24" height="40" rx="1" fill="#26a69a"/>
+  </g>
+
+  <line x1="360" y1="115" x2="900" y2="115" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="600" y="105" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">Pullback sâu nhất chỉ chạm 21,395 — không bao giờ về lại OB</text>
+
+  <path d="M 250 385 C 400 500, 700 560, 900 490" stroke="#787b86" stroke-width="1" fill="none" stroke-dasharray="3 4"/>
+  <text x="650" y="560" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">Khoảng cách bị bỏ lỡ nếu chờ hồi: ~1,900 điểm</text>
+
+  <g>
+    <line x1="620" y1="55" x2="620" y2="95" stroke="#26a69a" stroke-width="1"/>
+    <rect x="608" y="60" width="24" height="30" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="680" y1="40" x2="680" y2="80" stroke="#26a69a" stroke-width="1"/>
+    <rect x="668" y="45" width="24" height="28" rx="1" fill="#26a69a"/>
+  </g>
+  <text x="700" y="35" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">Giá tiếp tục chạy — 21,900+</text>
+
+  <rect x="60" y="440" width="1160" height="230" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="80" y="468" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#f2c94c">Khi nào chấp nhận entry KHÔNG chờ hồi OB?</text>
+  <text x="80" y="496" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Backtest 140 leg trend mạnh (3+ nến displacement liên tiếp cùng hướng, mỗi nến body/ATR&gt;1.1):</text>
+  <text x="80" y="520" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">chỉ 27% quay lại chạm OB gốc trong vòng 15 nến H1 tiếp theo — 73% "breakaway" luôn.</text>
+  <text x="80" y="552" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Rule: nếu 3 nến liên tiếp sau OB đều displacement cùng hướng (không nến nào đóng ngược),</text>
+  <text x="80" y="574" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">coi là "breakaway candidate" — chấp nhận entry tại FVG gần nhất thay vì chờ hồi OB,</text>
+  <text x="80" y="596" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">SL vẫn đặt dưới OB gốc (room rộng hơn, size lệnh giảm tương ứng để giữ rủi ro cố định).</text>
+  <text x="80" y="628" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Chi phí cơ hội của việc "chờ đúng sách vở": trung bình bỏ lỡ 60-70% độ dài leg trong nhóm breakaway.</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">NQ1 H1 minh họa · thống kê tổng hợp backtest 140 leg trend mạnh, đa symbol</text>
+</svg>

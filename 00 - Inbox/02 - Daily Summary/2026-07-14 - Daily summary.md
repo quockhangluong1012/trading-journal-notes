@@ -97,14 +97,14 @@ tags: [daily-summary, prop-firm-prep]
 
 **KHÔNG thêm dòng (tránh dòng rỗng — Step 6):**
 - ⏸️ **[[Cut my top 3 repeated mistakes]]** — 0 lệnh live, tần suất live không đổi.
-- ⏸️ **[[Pass FTMO first package challenge (10K$)]]** và **[[Pass The5er first package challenge (10k$)]]** — không có deliverable mới hôm nay; vòng #2 (tick cột mốc + log) là **việc của Khang tự xác nhận đủ điều kiện**, routine không tự tick khống. *(Ghi rõ ở đây để mai không quên: 07-16 hai log này chạm ngưỡng stale 3 ngày.)*
+- ⏸️ **[[Pass FTMO first package challenge (10K$)]]** và **[[Pass The5er first package challenge (10k$)]]** — không có deliverable mới hôm nay; vòng #2 (tick cột mốc + log) là **việc của  tự xác nhận đủ điều kiện**, routine không tự tick khống. *(Ghi rõ ở đây để mai không quên: 07-16 hai log này chạm ngưỡng stale 3 ngày.)*
 
 ## 🔭 Việc cần làm ngày mai
 
 1. **[Ưu tiên #1 — diệt rủi ro dữ liệu] Tạo note [[12 - Mistake - Log Data Mismatch - Backtest]]** trong `06 - Mistake Database` (biện pháp đối phó: rule R-BT-01 "làm sạch file trước khi lưu" + checklist "Summary table = frontmatter, số copy trực tiếp từ chart"), và **rà lại 3 note 07-14** đảm bảo symbol/bias/số liệu/ngày đều đúng XAUUSD (đặc biệt `01 - Win`: kiểm `htf_bias`, Dealing Range, POI, năm dữ liệu).
 2. **Tạo note [[Mistake - Stop loss đặt sai vị trí]]** (rule: SL luôn neo trên invalidation của POI đang giao dịch + buffer; R do SL đúng quyết định vào/không, không siết SL cho đẹp R). Cân nhắc gắn vào top-3 nếu tái diễn.
 3. **Chấm lại grade trung thực cho 2 note hôm nay:** `02 - Loss` A- → **B/B-** (SL trong POI); `01 - Win` A → **A-** (lỗi dữ liệu) — để win rate/expectancy của [[Master the ICT 2022 Model]] phản ánh chất lượng thật.
-4. **[Đóng vòng #2] Phản ánh lot size vào 2 goal challenge:** nếu Khang tự đánh giá đủ điều kiện, tick một phần cột mốc "Chuẩn bị" và **log 1 dòng 2026-07-15 THẬT** vào cả FTMO + The5ers (dẫn `[[Lot size 10K]]`), trước khi log chạm stale 07-16. **Đồng thời làm phần RIÊNG The5ers** còn thiếu: ngưỡng "ngày có lãi = +50$" + ví dụ daily drawdown tính từ equity đóng cửa hôm trước.
+4. **[Đóng vòng #2] Phản ánh lot size vào 2 goal challenge:** nếu  tự đánh giá đủ điều kiện, tick một phần cột mốc "Chuẩn bị" và **log 1 dòng 2026-07-15 THẬT** vào cả FTMO + The5ers (dẫn `[[Lot size 10K]]`), trước khi log chạm stale 07-16. **Đồng thời làm phần RIÊNG The5ers** còn thiếu: ngưỡng "ngày có lãi = +50$" + ví dụ daily drawdown tính từ equity đóng cửa hôm trước.
 5. **Giữ chuỗi backtest sang ngày thứ 10** — ưu tiên non-EURUSD (NAS100/GBPUSD/thêm XAUUSD để đủ ~20 mẫu vàng như note `03` đề xuất, kiểm tra buffer SL cho wick/spread vàng). Chỉ tính entry sau nến ĐÓNG CỬA phá bằng displacement thật.
 6. **Verify replay cho `02 - Loss`:** sau khi quét SL, giá có xuống TP 1297.51 không? → phân định đây thuần là lỗi SL (đúng hướng, sai vị trí dừng) hay lỗi timing (vào quá sớm).
 7. **Kỷ luật tick trung thực:** giữ nguyên cách xử lý [[42 - SMT Divergence]] (không tick khống). Chỉ `[x]` khi có bằng chứng thật (file tồn tại / `last_reviewed` đổi / dòng log thật).

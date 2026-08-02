@@ -1,0 +1,54 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">"Sách vở" vs Tin tức — khi Sweep, MSS và FVG nén vào một nến duy nhất</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Quy trình lý thuyết giả định các bước tách biệt; quanh tin lớn (NFP/FOMC/CPI) chúng thường xảy ra trong CÙNG một nến</text>
+
+  <!-- Panel 1: textbook -->
+  <rect x="24" y="72" width="344" height="352" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="94" font-size="13.5" font-weight="700" fill="#0D9488">① "Sách vở" — các bước tách biệt</text>
+  <text x="36" y="110" font-size="10" fill="#6B7280">Dễ quan sát từng bước theo trình tự</text>
+
+  <line x1="44" y1="330" x2="340" y2="330" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="5 3"/>
+
+  <!-- sweep candle separate -->
+  <rect x="70" y="300" width="2" height="30" fill="#B45309"/><rect x="64" y="304" width="12" height="22" fill="#B45309" rx="1"/>
+  <circle cx="70" cy="330" r="6" fill="none" stroke="#B45309" stroke-width="2.2"/>
+  <text x="50" y="350" font-size="9" font-weight="700" fill="#B45309">Nến sweep riêng</text>
+
+  <!-- gap then displacement candles separate -->
+  <rect x="130" y="240" width="2" height="60" fill="#0D9488"/><rect x="124" y="246" width="12" height="48" fill="#0D9488" rx="1"/>
+  <rect x="158" y="190" width="2" height="60" fill="#0D9488"/><rect x="152" y="196" width="12" height="48" fill="#0D9488" rx="1"/>
+  <rect x="186" y="140" width="2" height="60" fill="#0D9488"/><rect x="180" y="146" width="12" height="48" fill="#0D9488" rx="1"/>
+  <text x="108" y="130" font-size="9" font-weight="700" fill="#0F766E">Displacement — nến riêng, sau sweep</text>
+
+  <rect x="36" y="360" width="308" height="52" rx="6" fill="#0D9488" opacity="0.08" stroke="#0D9488" stroke-width="1"/>
+  <text x="44" y="376" font-size="9.5" fill="#0F766E">Quan sát được: sweep → (khoảng) → displacement</text>
+  <text x="44" y="390" font-size="9.5" fill="#0F766E">→ MSS → FVG, mỗi bước là 1(+) nến riêng biệt</text>
+
+  <!-- Panel 2: news compressed -->
+  <rect x="392" y="72" width="344" height="352" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="404" y="94" font-size="13.5" font-weight="700" fill="#B91C1C">② Tin tức — nén vào một nến</text>
+  <text x="404" y="110" font-size="10" fill="#6B7280">Sweep + MSS + FVG xảy ra trong ĐÚNG một thanh giá</text>
+
+  <line x1="412" y1="330" x2="708" y2="330" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="416" y="324" font-size="8.5" fill="#6B7280">mức cấu trúc + vùng SSL rất gần nhau</text>
+
+  <!-- small candles before, tight -->
+  <rect x="440" y="316" width="2" height="18" fill="#DC2626"/><rect x="434" y="318" width="12" height="14" fill="#DC2626" rx="1" opacity="0.6"/>
+  <rect x="460" y="312" width="2" height="18" fill="#DC2626"/><rect x="454" y="314" width="12" height="14" fill="#DC2626" rx="1" opacity="0.6"/>
+
+  <!-- ONE giant candle doing everything -->
+  <rect x="520" y="120" width="4" height="220" fill="#DC2626" opacity="0"/>
+  <rect x="520" y="130" width="4" height="210" fill="#B91C1C"/>
+  <rect x="504" y="140" width="36" height="190" fill="#B91C1C" rx="2"/>
+  <text x="548" y="150" font-size="9.5" font-weight="700" fill="#B91C1C">1 nến duy nhất:</text>
+  <text x="548" y="164" font-size="9" fill="#B91C1C">• quét SSL bên dưới</text>
+  <text x="548" y="177" font-size="9" fill="#B91C1C">• xuyên mức cấu trúc</text>
+  <text x="548" y="190" font-size="9" fill="#B91C1C">• để lại FVG khi đóng cửa</text>
+  <text x="548" y="203" font-size="9" fill="#92400E" font-weight="700">→ chỉ đọc được SAU khi đóng nến</text>
+
+  <rect x="404" y="360" width="308" height="52" rx="6" fill="#B91C1C" opacity="0.06" stroke="#B91C1C" stroke-width="1"/>
+  <text x="412" y="376" font-size="9.5" fill="#B91C1C">Xử lý: chờ đóng nến ổn định, đọc ngược:</text>
+  <text x="412" y="390" font-size="9.5" fill="#B91C1C">có quét pool + vượt cấu trúc + để lại FVG?</text>
+  <text x="412" y="404" font-size="9" fill="#92400E">Rồi chờ thêm 1 nến xác nhận trước khi entry</text>
+</svg>

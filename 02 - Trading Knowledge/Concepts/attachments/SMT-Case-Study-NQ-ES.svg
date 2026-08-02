@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="32" font-size="15" font-weight="700" fill="#1F2937">Case study — Bullish SMT NQ/ES tại NY open (09:50 macro)</text>
+<text x="24" y="52" font-size="11.5" fill="#6B7280">Minh họa khái niệm, KHÔNG phải dữ liệu thật · chuỗi A+ = SMT + sweep + CISD/MSS + FVG trong macro window</text>
+<rect x="24" y="66" width="356" height="322" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="38" y="86" font-size="11" font-weight="700" fill="#374151">NQ (instrument giao dịch)</text>
+<line x1="44" y1="300" x2="372" y2="300" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="46" y="295" font-size="8.5" fill="#6B7280">SSL (đáy phiên) — bị quét</text>
+<line x1="44" y1="110" x2="372" y2="110" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="46" y="104" font-size="8.5" font-weight="700" fill="#1D4ED8">BSL = target</text>
+<rect x="44" y="235" width="328" height="34" fill="#7C3AED" opacity="0.09"/>
+<text x="300" y="231" font-size="8" font-weight="700" fill="#6D28D9">FVG (entry)</text>
+<path d="M60,180 L95,225 L130,265 L165,300 L185,322 L200,300 L220,258 L250,235 L275,248 L300,210 L340,150 L370,118" fill="none" stroke="#374151" stroke-width="2.1"/>
+<circle cx="185" cy="322" r="5.5" fill="none" stroke="#B45309" stroke-width="2.3"/>
+<text x="90" y="352" font-size="8.5" font-weight="700" fill="#B45309">① NQ tạo LL, quét SSL</text>
+<circle cx="220" cy="258" r="4.5" fill="none" stroke="#15803D" stroke-width="2"/>
+<text x="90" y="366" font-size="8.5" fill="#15803D">② CISD/MSS + displacement → FVG</text>
+<circle cx="275" cy="248" r="5" fill="#16A34A"/>
+<text x="90" y="380" font-size="8.5" font-weight="700" fill="#166534">③ Long tại FVG (CE)</text>
+<rect x="388" y="66" width="200" height="322" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="402" y="86" font-size="11" font-weight="700" fill="#374151">ES (benchmark)</text>
+<line x1="408" y1="300" x2="580" y2="300" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="410" y="295" font-size="8" fill="#6B7280">đáy trước</text>
+<path d="M420,185 L445,225 L470,262 L495,288 L512,282 L532,250 L555,215 L575,175" fill="none" stroke="#374151" stroke-width="2"/>
+<circle cx="495" cy="288" r="5.5" fill="none" stroke="#166534" stroke-width="2.4"/>
+<text x="400" y="330" font-size="8.5" font-weight="700" fill="#166534">ES giữ HL — KHÔNG phá đáy</text>
+<text x="400" y="346" font-size="8.5" fill="#374151">= phe mua mạnh hơn (leader)</text>
+<text x="400" y="362" font-size="8.5" fill="#374151">→ bullish SMT xác nhận</text>
+<rect x="596" y="66" width="140" height="322" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+<text x="606" y="86" font-size="10.5" font-weight="700" fill="#166534">Tại sao A+</text>
+<text x="606" y="108" font-size="9" fill="#374151">• cặp lõi NQ/ES</text>
+<text x="606" y="126" font-size="9" fill="#374151">• SMT tại pool (SSL)</text>
+<text x="606" y="144" font-size="9" fill="#374151">• discount, thuận bias</text>
+<text x="606" y="162" font-size="9" fill="#374151">• 09:50 macro window</text>
+<text x="606" y="180" font-size="9" fill="#374151">• đủ sweep + CISD</text>
+<text x="614" y="194" font-size="9" fill="#374151">/MSS + FVG</text>
+<line x1="606" y1="208" x2="726" y2="208" stroke="#E5E7EB"/>
+<text x="606" y="228" font-size="9.5" font-weight="700" fill="#92400E">Stop:</text>
+<text x="606" y="244" font-size="9" fill="#374151">dưới wick sweep NQ</text>
+<text x="606" y="262" font-size="9.5" font-weight="700" fill="#1D4ED8">Target:</text>
+<text x="606" y="278" font-size="9" fill="#374151">T1 = IRL, T2 = BSL</text>
+<line x1="606" y1="292" x2="726" y2="292" stroke="#E5E7EB"/>
+<text x="606" y="312" font-size="9" fill="#374151">SMT trả lời câu hỏi</text>
+<text x="606" y="326" font-size="9" fill="#374151">sweep + CISD KHÔNG:</text>
+<text x="606" y="342" font-size="9" font-weight="700" fill="#166534">"đây có phải cú</text>
+<text x="606" y="356" font-size="9" font-weight="700" fill="#166534">sweep CUỐI không?"</text>
+<rect x="24" y="398" width="712" height="58" rx="8" fill="#F3F4F6"/>
+<text x="38" y="420" font-size="11.5" font-weight="700" fill="#1F2937">Why — SMT biến "một sweep" thành "cú sweep cuối cùng"</text>
+<text x="38" y="440" font-size="10.5" fill="#374151">Một sweep đơn lẻ có thể là cú đầu của chuỗi sweep sâu hơn. Nhưng khi ES TỪ CHỐI phá đáy theo NQ, xác suất đây là</text>
+<text x="38" y="453" font-size="10.5" fill="#374151">cú lấy thanh khoản CUỐI tăng vọt → giảm mạnh rủi ro dính "sweep chồng sweep" và bị stop-out sớm.</text>
+</svg>

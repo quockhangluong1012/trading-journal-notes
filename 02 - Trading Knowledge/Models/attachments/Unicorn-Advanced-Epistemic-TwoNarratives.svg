@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="520" rx="12" fill="#0d1117"/>
+<text x="480" y="32" font-size="16" font-weight="700" fill="#e5e7eb" text-anchor="middle">Cùng một vùng Unicorn — hai narrative khác nhau</text>
+<line x1="300" y1="294" x2="300" y2="326" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="293.5" y="300" width="13" height="20" fill="#ef4444"/>
+<line x1="324" y1="294" x2="324" y2="326" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="317.5" y="300" width="13" height="20" fill="#22c55e"/>
+<line x1="348" y1="294" x2="348" y2="346" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="341.5" y="300" width="13" height="40" fill="#ef4444"/>
+<line x1="372" y1="274" x2="372" y2="346" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="365.5" y="280" width="13" height="60" fill="#22c55e"/>
+<line x1="396" y1="300" x2="396" y2="260" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="389.0" y="280" width="14" height="15" fill="#ef4444"/>
+<line x1="422" y1="300" x2="422" y2="235" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="414.5" y="240" width="15" height="55" fill="#22c55e"/>
+<line x1="446" y1="245" x2="446" y2="175" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="438.5" y="180" width="15" height="60" fill="#22c55e"/>
+<line x1="470" y1="185" x2="470" y2="125" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="462.5" y="130" width="15" height="50" fill="#22c55e"/>
+<line x1="200" y1="260" x2="700" y2="260" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="210" y="254" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">SSL / vùng stop cụm</text>
+<rect x="412" y="160" width="78" height="26" fill="rgba(168,85,247,0.30)" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="2 2"/>
+<text x="372" y="100" font-size="11" font-weight="400" fill="#a855f7" text-anchor="start">Vùng chồng lấn Breaker+FVG</text>
+<line x1="452" y1="112" x2="452" y2="158" stroke="#a855f7" stroke-width="1" stroke-dasharray="2 2"/>
+<rect x="30" y="330" width="420" height="150" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+<text x="46" y="356" font-size="13" font-weight="700" fill="#a855f7" text-anchor="start">Narrative ICT</text>
+<text x="46" y="376" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">Breaker + FVG là hai dấu vết cố ý của</text>
+<text x="46" y="392" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">cùng một dòng lệnh tổ chức — giá</text>
+<text x="46" y="408" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">"buộc phải" quay lại để tái cân bằng.</text>
+<text x="46" y="428" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">Không có dữ liệu order flow công khai</text>
+<text x="46" y="444" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">xác nhận "ý định" này.</text>
+<rect x="510" y="330" width="420" height="150" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="526" y="356" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="start">Giải thích thay thế</text>
+<text x="526" y="376" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">Auction market: vùng vừa test không đủ</text>
+<text x="526" y="392" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">đối ứng (FVG) trùng vùng đảo cấu trúc</text>
+<text x="526" y="408" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">gần nhất (Breaker) — cùng một cú đẩy giá.</text>
+<text x="526" y="428" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">Self-fulfilling: đông người cùng vẽ Unicorn,</text>
+<text x="526" y="444" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">cùng đặt limit quanh CE.</text>
+<text x="480" y="500" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="middle">Cùng một chart giá, hai narrative đều "khớp" — không phân biệt được từ hình học đơn thuần.</text>
+</svg>

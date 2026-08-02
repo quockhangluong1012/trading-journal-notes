@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="800" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế thật đằng sau Breaker: hàng kẹt bị lật, không phải "vùng đảo cực huyền bí"</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">Breaker mạnh vì có một nhóm vị thế thật bị sai hướng và buộc phải đóng khi giá retest — không phải vì vùng giá "đổi tên"</text>
+
+  <rect x="30" y="90" width="1140" height="260" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="55" y="118" font-size="17" fill="#38bdf8" font-weight="bold">Chuỗi cơ chế orderflow của một Bullish Breaker</text>
+
+  <!-- step boxes -->
+  <rect x="55" y="140" width="180" height="90" fill="#0f1420" stroke="#ef4444" rx="6"/>
+  <text x="70" y="162" font-size="13" fill="#ef4444" font-weight="bold">1. OB cũ hình thành</text>
+  <text x="70" y="182" font-size="12" fill="#94a3b8">Trader short vào cụm</text>
+  <text x="70" y="198" font-size="12" fill="#94a3b8">nến giảm, tin đây là</text>
+  <text x="70" y="214" font-size="12" fill="#94a3b8">điểm tiếp diễn giảm</text>
+
+  <polygon points="240,180 270,180 270,170 290,185 270,200 270,190 240,190" fill="#94a3b8"/>
+
+  <rect x="300" y="140" width="180" height="90" fill="#0f1420" stroke="#eab308" rx="6"/>
+  <text x="315" y="162" font-size="13" fill="#eab308" font-weight="bold">2. Sweep SSL</text>
+  <text x="315" y="182" font-size="12" fill="#94a3b8">Giá quét dưới Low1 —</text>
+  <text x="315" y="198" font-size="12" fill="#94a3b8">stop của long cũ khớp,</text>
+  <text x="315" y="214" font-size="12" fill="#94a3b8">short mới vào tiếp</text>
+
+  <polygon points="485,180 515,180 515,170 535,185 515,200 515,190 485,190" fill="#94a3b8"/>
+
+  <rect x="545" y="140" width="200" height="90" fill="#0f1420" stroke="#22c55e" rx="6"/>
+  <text x="560" y="162" font-size="13" fill="#22c55e" font-weight="bold">3. Displacement phá High1</text>
+  <text x="560" y="182" font-size="12" fill="#94a3b8">Short ở bước 1 VÀ bước 2</text>
+  <text x="560" y="198" font-size="12" fill="#94a3b8">giờ đều LỖ và KẸT —</text>
+  <text x="560" y="214" font-size="12" fill="#94a3b8">áp lực đóng lệnh tăng dần</text>
+
+  <polygon points="750,180 780,180 780,170 800,185 780,200 780,190 750,190" fill="#94a3b8"/>
+
+  <rect x="815" y="140" width="330" height="90" fill="#0f1420" stroke="#38bdf8" rx="6"/>
+  <text x="830" y="162" font-size="13" fill="#38bdf8" font-weight="bold">4. Retest = họ đóng lệnh (mua lại)</text>
+  <text x="830" y="182" font-size="12" fill="#94a3b8">Khi giá về đúng vùng họ short, việc mua</text>
+  <text x="830" y="198" font-size="12" fill="#94a3b8">để cắt lỗ CỦA HỌ tạo áp lực mua thêm —</text>
+  <text x="830" y="214" font-size="12" fill="#94a3b8">đây là "lực đỡ" thật, không phải huyền bí</text>
+
+  <text x="55" y="260" font-size="14" fill="#a78bfa" font-weight="bold">Kết luận cơ chế:</text>
+  <text x="55" y="282" font-size="13" fill="#e2e8f0">Breaker "đảo cực" không phải vì vùng giá tự nhiên đổi vai trò — mà vì MỘT NHÓM VỊ THẾ CÓ THẬT bị kẹt sai hướng ở bước 1-2,</text>
+  <text x="55" y="300" font-size="13" fill="#e2e8f0">và hành động cắt lỗ/thoát hàng của chính họ khi giá retest tạo ra lực đẩy giá tiếp tục theo hướng MỚI. Đây là cơ chế đo được</text>
+  <text x="55" y="318" font-size="13" fill="#e2e8f0">bằng volume/OI trên futures (CME), khác hẳn narrative "vùng giá thiêng" thường bị hiểu nhầm.</text>
+
+  <!-- table comparing 3 markets -->
+  <text x="40" y="395" font-size="18" font-weight="bold" fill="#e2e8f0">Breaker theo loại thị trường — nơi nào "hàng kẹt" dễ đo được nhất</text>
+  <rect x="30" y="415" width="1140" height="340" fill="#161b28" stroke="#1c2333" rx="8"/>
+
+  <text x="55" y="445" font-size="14" fill="#94a3b8" font-weight="bold">Thị trường</text>
+  <text x="230" y="445" font-size="14" fill="#94a3b8" font-weight="bold">Cách "đo" hàng kẹt</text>
+  <text x="560" y="445" font-size="14" fill="#94a3b8" font-weight="bold">Đặc điểm breaker</text>
+  <text x="900" y="445" font-size="14" fill="#94a3b8" font-weight="bold">Lưu ý thực chiến</text>
+  <line x1="55" y1="457" x2="1120" y2="457" stroke="#334155"/>
+
+  <text x="55" y="485" font-size="14" fill="#22c55e" font-weight="bold">FX Majors</text>
+  <text x="230" y="481" font-size="13" fill="#e2e8f0">Không đo trực tiếp được —</text>
+  <text x="230" y="498" font-size="13" fill="#e2e8f0">suy từ COT report (chậm, tuần)</text>
+  <text x="560" y="481" font-size="13" fill="#e2e8f0">Breaker phản ứng mượt vì</text>
+  <text x="560" y="498" font-size="13" fill="#e2e8f0">nhiều dealer hedge cùng lúc</text>
+  <text x="900" y="481" font-size="13" fill="#e2e8f0">Không có OI/volume thật để</text>
+  <text x="900" y="498" font-size="13" fill="#e2e8f0">xác nhận — dựa cấu trúc giá</text>
+
+  <line x1="55" y1="518" x2="1120" y2="518" stroke="#1c2333"/>
+  <text x="55" y="546" font-size="14" fill="#22c55e" font-weight="bold">Index Futures (NQ/ES)</text>
+  <text x="230" y="542" font-size="13" fill="#e2e8f0">Open Interest + volume tại</text>
+  <text x="230" y="559" font-size="13" fill="#e2e8f0">CME — đo được lượng hàng kẹt</text>
+  <text x="560" y="542" font-size="13" fill="#e2e8f0">Breaker sau sweep volume lớn</text>
+  <text x="560" y="559" font-size="13" fill="#e2e8f0">tin cậy hơn breaker volume mỏng</text>
+  <text x="900" y="542" font-size="13" fill="#e2e8f0">Đối chiếu footprint/delta để</text>
+  <text x="900" y="559" font-size="13" fill="#e2e8f0">xác nhận absorption tại retest</text>
+
+  <line x1="55" y1="578" x2="1120" y2="578" stroke="#1c2333"/>
+  <text x="55" y="606" font-size="14" fill="#22c55e" font-weight="bold">Crypto (BTC/ETH)</text>
+  <text x="230" y="602" font-size="13" fill="#e2e8f0">Open Interest + funding rate,</text>
+  <text x="230" y="619" font-size="13" fill="#e2e8f0">liquidation heatmap (Coinglass)</text>
+  <text x="560" y="602" font-size="13" fill="#e2e8f0">Breaker sau liquidation cascade</text>
+  <text x="560" y="619" font-size="13" fill="#e2e8f0">có thể fail nhanh — hàng kẹt là</text>
+  <text x="560" y="636" font-size="13" fill="#e2e8f0">margin call, không phải discretionary</text>
+  <text x="900" y="602" font-size="13" fill="#e2e8f0">Kiểm tra funding/OI trước khi</text>
+  <text x="900" y="619" font-size="13" fill="#e2e8f0">tin breaker 100% giống FX/futures</text>
+
+  <line x1="55" y1="658" x2="1120" y2="658" stroke="#1c2333"/>
+  <text x="55" y="686" font-size="14" fill="#94a3b8" font-weight="bold">Điều kiện chung</text>
+  <text x="230" y="686" font-size="13" fill="#e2e8f0">Breaker mạnh nhất khi sweep external liquidity (Tier A/B)</text>
+  <text x="230" y="704" font-size="13" fill="#e2e8f0">trong kill zone, đồng hướng bias vừa đổi — yếu khi sweep pool đã mỏng</text>
+</svg>

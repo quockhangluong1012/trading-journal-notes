@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Quy trình Pre-Friday — 4 bước trước phiên Á</text>
+<!-- flow diagram horizontal 4 steps -->
+<rect x="32" y="90" width="200" height="100" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+<text x="132" y="120" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="middle">1. Xác nhận</text>
+<text x="132" y="140" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="middle">Weekly Open</text>
+<text x="132" y="164" font-size="11" fill="#94a3b8" text-anchor="middle">Mốc reversion chính</text>
+<line x1="232" y1="140" x2="278" y2="140" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrExp1)"/>
+<rect x="280" y="90" width="200" height="100" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+<text x="380" y="118" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="middle">2. Chấm điểm</text>
+<text x="380" y="138" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="middle">Range Maturity</text>
+<text x="380" y="160" font-size="11" fill="#94a3b8" text-anchor="middle">4 tiêu chí mục 3</text>
+<text x="380" y="176" font-size="11" fill="#94a3b8" text-anchor="middle">__ / 4</text>
+<line x1="480" y1="140" x2="526" y2="140" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrExp1)"/>
+<rect x="528" y="90" width="200" height="100" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+<text x="628" y="118" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="middle">3. Tra lịch tin</text>
+<text x="628" y="138" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="middle">+ lịch phái sinh</text>
+<text x="628" y="160" font-size="11" fill="#94a3b8" text-anchor="middle">NFP/CPI/FOMC,</text>
+<text x="628" y="176" font-size="11" fill="#94a3b8" text-anchor="middle">month/quarter-end</text>
+<line x1="728" y1="140" x2="774" y2="140" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrExp1)"/>
+<rect x="776" y="90" width="152" height="100" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+<text x="852" y="120" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">4. Viết kế</text>
+<text x="852" y="140" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">hoạch quản</text>
+<text x="852" y="160" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">lý lệnh</text>
+<text x="852" y="178" font-size="10" fill="#94a3b8" text-anchor="middle">Trước cảm xúc FOMO</text>
+<!-- 6 lessons list -->
+<rect x="32" y="222" width="896" height="330" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="52" y="250" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="start">6 bài học live/backtest hay bị bỏ qua</text>
+<text x="52" y="278" font-size="12" fill="#94a3b8" text-anchor="start">1. Chấm điểm range maturity TRƯỚC phiên Á, không cảm tính giữa phiên.</text>
+<text x="52" y="304" font-size="12" fill="#94a3b8" text-anchor="start">2. Đánh dấu weekly open ngay đầu tuần — đợi tới thứ Sáu là muộn.</text>
+<text x="52" y="330" font-size="12" fill="#94a3b8" text-anchor="start">3. Tra CẢ lịch tin VÀ lịch phái sinh/quỹ — thiếu một loại là đủ để sai.</text>
+<text x="52" y="356" font-size="12" fill="#94a3b8" text-anchor="start">4. Hành vi khác nhau theo market: NQ1 (expiry), FX (đáng tin nhất), XAU (theo tin).</text>
+<text x="52" y="382" font-size="12" fill="#94a3b8" text-anchor="start">5. Reversion rõ hơn về chiều muộn; đầu phiên vẫn có thể còn động lực — đừng fade sớm.</text>
+<text x="52" y="408" font-size="12" fill="#94a3b8" text-anchor="start">6. Ghi `friday_action` + `calendar_exception` mỗi tuần để có dữ liệu thật, không suy diễn.</text>
+<text x="52" y="440" font-size="13" font-weight="700" fill="#4ade80" text-anchor="start">Kiểm chứng bằng ≥15-20 tuần dữ liệu cá nhân trước khi đặt luật cứng.</text>
+<text x="52" y="466" font-size="12" fill="#94a3b8" text-anchor="start">So sánh tỷ lệ reversion thật khi điểm ≥3/4 vs &lt;3/4 trên chính thị trường bạn trade.</text>
+<text x="52" y="498" font-size="12" fill="#94a3b8" text-anchor="start">Chỉ siết quy tắc cứng (VD: không trade sau 14:00 Fri) khi có đủ mẫu khách quan.</text>
+<text x="52" y="530" font-size="12" fill="#94a3b8" text-anchor="start">Đừng để lý thuyết đọc được thay thế dữ liệu tự ghi của chính bạn.</text>
+<defs><marker id="arrExp1" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#3b82f6"/></marker></defs>
+<text x="32" y="576" font-size="12" fill="#94a3b8" text-anchor="start">Sơ đồ flow quy trình + tổng hợp kinh nghiệm, không phải chart giá thật.</text>
+</svg>

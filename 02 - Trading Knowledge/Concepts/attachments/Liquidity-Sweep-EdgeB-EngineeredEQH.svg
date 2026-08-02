@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1280" height="720" rx="14" fill="#131722"/>
+  <rect x="1" y="1" width="1278" height="718" rx="14" fill="none" stroke="#2a2e39"/>
+
+  <text x="32" y="42" font-size="26" font-weight="bold" fill="#d1d4dc">EQH đúng từng tick, ai cũng thấy — pool bị "engineered" thế nào?</text>
+  <text x="32" y="66" font-size="15" fill="#787b86">EURUSD H1 — hai đỉnh cách nhau 3 ngày, chênh lệch 0.1 pip, sau đó bị quét vượt xa kỳ vọng</text>
+
+  <line x1="80" y1="360" x2="1200" y2="360" stroke="#b48ead" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1060" y="352" font-size="13" fill="#b48ead">EQH 1.0902 (2 dinh trung tick)</text>
+
+  <!-- peak 1 -->
+  <g>
+    <rect x="160" y="380" width="20" height="60" fill="#26a69a" rx="1"/><line x1="170" y1="360" x2="170" y2="450" stroke="#26a69a"/>
+    <rect x="190" y="400" width="20" height="40" fill="#ef5350" rx="1"/><line x1="200" y1="365" x2="200" y2="450" stroke="#ef5350"/>
+  </g>
+  <text x="140" y="470" font-size="13" fill="#787b86">Dinh 1 (T2)</text>
+
+  <!-- peak 2, days later, equal -->
+  <g>
+    <rect x="380" y="390" width="20" height="50" fill="#26a69a" rx="1"/><line x1="390" y1="362" x2="390" y2="450" stroke="#26a69a"/>
+    <rect x="410" y="400" width="20" height="40" fill="#ef5350" rx="1"/><line x1="420" y1="365" x2="420" y2="450" stroke="#ef5350"/>
+  </g>
+  <text x="360" y="470" font-size="13" fill="#787b86">Dinh 2 (T5, lech 0.1 pip)</text>
+
+  <!-- big crowd expectation label -->
+  <rect x="120" y="140" width="500" height="70" fill="#1c2030" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="136" y="166" font-size="14" fill="#f2c94c">"Ai cung thay" — retail + nhieu bot cung dat</text>
+  <text x="136" y="188" font-size="14" fill="#f2c94c">stop mua ngay tren 1.0902, buffer rat mong</text>
+
+  <!-- sweep candle overshooting far beyond expectation -->
+  <g>
+    <rect x="620" y="200" width="24" height="180" fill="#26a69a" rx="1"/>
+    <line x1="632" y1="130" x2="632" y2="410" stroke="#26a69a" stroke-width="2"/>
+  </g>
+  <text x="580" y="120" font-size="13" fill="#ff6b6b">Wick vuot toi 1.0938 (+36 pip qua EQH)</text>
+  <text x="580" y="140" font-size="13" fill="#ff6b6b">— xa hon 6x buffer thong thuong (5-8 pip)</text>
+
+  <!-- reversal after -->
+  <g>
+    <rect x="700" y="330" width="20" height="50" fill="#ef5350" rx="1"/><line x1="710" y1="315" x2="710" y2="400" stroke="#ef5350"/>
+    <rect x="740" y="400" width="20" height="60" fill="#ef5350" rx="1"/><line x1="750" y1="385" x2="750" y2="480" stroke="#ef5350"/>
+  </g>
+
+  <!-- alternate scenario: pool skipped entirely -->
+  <rect x="850" y="440" width="380" height="200" fill="#1c2030" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="866" y="466" font-size="15" font-weight="bold" fill="#4a90d9">Kich ban thay the: BO QUA pool</text>
+  <text x="866" y="492" font-size="13" fill="#d1d4dc">Khi EQH qua "dep" (trung tick, ai</text>
+  <text x="866" y="512" font-size="13" fill="#d1d4dc">cung thay), thanh khoan thuc mong</text>
+  <text x="866" y="532" font-size="13" fill="#d1d4dc">vi da bi rut/huy truoc — gia co the</text>
+  <text x="866" y="552" font-size="13" fill="#d1d4dc">di ngang ngay duoi muc va dao chieu</text>
+  <text x="866" y="572" font-size="13" fill="#d1d4dc">khong can quet, hoac quet cuc nong</text>
+  <text x="866" y="596" font-size="13" fill="#f2c94c">Ca hai deu la "engineered", khac nhau</text>
+  <text x="866" y="616" font-size="13" fill="#f2c94c">ve huong nhung cung mot nguyen nhan</text>
+
+  <text x="60" y="680" font-size="13" fill="#565b66">Rule: EQH/EQL trùng tick tuyệt đối trên đa số trader theo dõi có xác suất bị "vẽ lại kịch bản" cao hơn EQH lệch tự nhiên vài pip.</text>
+</svg>

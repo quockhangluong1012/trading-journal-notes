@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+<rect x="0" y="0" width="900" height="560" rx="12" fill="#191b1f"/>
+<text x="28" y="32" font-size="16" fill="#e6e8ea" font-weight="bold">EURUSD H1 - Dealing Range, OB kep va Premium/Discount (26/6 - 3/7)</text>
+<text x="28" y="50" font-size="10.5" fill="#9aa0a6">Gia doc tu 2 anh chup FXReplay - uoc luong pixel, verify lai truoc khi dung cho backtest that</text>
+
+<!-- price axis -->
+<line x1="120" y1="80" x2="120" y2="500" stroke="#2a2d33" stroke-width="1.4"/>
+
+<!-- BSL sweep zone (top) -->
+<rect x="120" y="90" width="700" height="40" fill="#2a1f22" stroke="#fa5252" stroke-dasharray="4 3"/>
+<text x="830" y="106" font-size="11" fill="#fa5252" font-weight="bold" text-anchor="end">1.16919</text>
+<text x="830" y="120" font-size="11" fill="#fa5252" font-weight="bold" text-anchor="end">1.16874</text>
+<text x="130" y="106" font-size="10.5" fill="#fa5252">BSL sweep (external, da bi quet)</text>
+
+<!-- premium band -->
+<rect x="120" y="130" width="700" height="185" fill="#20262b"/>
+<text x="480" y="150" font-size="10.5" fill="#f0a500" text-anchor="middle">PREMIUM cua range 1.15266 - 1.16919</text>
+
+<!-- upper OB (shallow) -->
+<rect x="180" y="200" width="560" height="55" fill="#26302c" stroke="#40c057" stroke-dasharray="3 3"/>
+<text x="760" y="222" font-size="10.5" fill="#e6e8ea" text-anchor="end">1.16700</text>
+<text x="760" y="245" font-size="10.5" fill="#e6e8ea" text-anchor="end">1.16580</text>
+<text x="190" y="232" font-size="10.5" fill="#9aa0a6">OB nong (tang 1) - da bi xuyen, khong phan ung ro</text>
+
+<!-- lower OB (deep, current POI) -->
+<rect x="180" y="275" width="560" height="60" fill="#2a2419" stroke="#f0a500" stroke-width="1.6"/>
+<text x="760" y="298" font-size="10.5" fill="#f0a500" font-weight="bold" text-anchor="end">1.16419</text>
+<text x="760" y="322" font-size="10.5" fill="#f0a500" font-weight="bold" text-anchor="end">1.16322</text>
+<text x="190" y="310" font-size="10.5" fill="#f0a500" font-weight="bold">OB sau (tang 2) - POI hien tai, gia dang test</text>
+
+<!-- equilibrium line -->
+<line x1="120" y1="316" x2="820" y2="316" stroke="#e6e8ea" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="130" y="330" font-size="10" fill="#e6e8ea">EQ ~ 1.16093 = (1.15266+1.16919)/2</text>
+
+<!-- discount band -->
+<rect x="120" y="335" width="700" height="120" fill="#20262b"/>
+<text x="480" y="360" font-size="10.5" fill="#9aa0a6" text-anchor="middle">DISCOUNT cua range 1.15266 - 1.16919</text>
+
+<!-- SSL target -->
+<rect x="120" y="460" width="700" height="30" fill="#1e2a20" stroke="#40c057" stroke-dasharray="4 3"/>
+<text x="130" y="479" font-size="10.5" fill="#40c057">SSL 1.15266 - target Short (chua bi lai)</text>
+
+<!-- price path arrow -->
+<polyline points="150,130 200,110 260,105 320,150 380,220 430,260 480,300 520,320 540,340" fill="none" stroke="#e6e8ea" stroke-width="2"/>
+<circle cx="540" cy="340" r="5" fill="#f0a500"/>
+<text x="555" y="344" font-size="10" fill="#f0a500" font-weight="bold">Gia hien tai ~1.1633-1.1635</text>
+
+<text x="28" y="525" font-size="10.3" fill="#9aa0a6">Ca hai OB deu nam TREN equilibrium -&gt; van la Premium, hop ly cho Short tiep dien ve SSL,</text>
+<text x="28" y="540" font-size="10.3" fill="#9aa0a6">khong phai "duoi discount" du gia da roi rat sau tu dinh sweep.</text>
+</svg>

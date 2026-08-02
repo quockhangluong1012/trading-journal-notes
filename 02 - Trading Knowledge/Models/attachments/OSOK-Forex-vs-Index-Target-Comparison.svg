@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="480" rx="12" fill="#0d1117"/>
+  <text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Đơn vị mục tiêu tuần: Forex vs Index/Gold</text>
+  <text x="480" y="58" font-size="12" fill="#94a3b8" text-anchor="middle">Sơ đồ khái niệm, không phải dữ liệu giá thật</text>
+
+  <!-- left column FOREX -->
+  <rect x="60" y="90" width="380" height="30" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="250" y="110" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">FOREX (EURUSD / GBPUSD)</text>
+
+  <line x1="100" y1="180" x2="400" y2="180" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="100" y1="170" x2="100" y2="190" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="400" y1="170" x2="400" y2="190" stroke="#94a3b8" stroke-width="2"/>
+  <text x="250" y="165" font-size="13" fill="#eab308" text-anchor="middle">50–75 PIPS / tuần</text>
+
+  <!-- right column INDEX -->
+  <rect x="520" y="90" width="380" height="30" rx="6" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+  <text x="710" y="110" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">INDEX / GOLD (NQ1, XAUUSD)</text>
+
+  <line x1="560" y1="180" x2="860" y2="180" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="560" y1="170" x2="560" y2="190" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="860" y1="170" x2="860" y2="190" stroke="#94a3b8" stroke-width="2"/>
+  <text x="710" y="165" font-size="13" fill="#eab308" text-anchor="middle">% AWR → ĐIỂM / USD/oz / tuần</text>
+  <text x="710" y="210" font-size="11" fill="#f87171" text-anchor="middle">KHÔNG dùng lại số 50–75 nghĩa đen</text>
+
+  <!-- bidirectional arrow in middle -->
+  <path d="M 420 260 L 540 260" stroke="#4ade80" stroke-width="2.5" marker-start="url(#arrL)" marker-end="url(#arrR)"/>
+  <rect x="230" y="290" width="500" height="60" rx="8" fill="rgba(74,222,128,0.10)" stroke="#4ade80" stroke-dasharray="4 3"/>
+  <text x="480" y="315" font-size="12.5" fill="#4ade80" text-anchor="middle" font-weight="700">Triết lý OSOK giữ nguyên</text>
+  <text x="480" y="335" font-size="12" fill="#e5e7eb" text-anchor="middle">1 setup A+/tuần · 1 narrative · kỷ luật dừng khi đạt target</text>
+
+  <defs>
+    <marker id="arrL" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 Z" fill="#4ade80"/></marker>
+    <marker id="arrR" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#4ade80"/></marker>
+  </defs>
+</svg>

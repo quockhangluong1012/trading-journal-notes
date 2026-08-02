@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="0" y1="100" x2="960" y2="100"/>
+    <line x1="0" y1="200" x2="960" y2="200"/>
+    <line x1="0" y1="300" x2="960" y2="300"/>
+    <line x1="0" y1="400" x2="960" y2="400"/>
+    <line x1="480" y1="60" x2="480" y2="500" stroke-dasharray="4,4"/>
+  </g>
+
+  <text x="480" y="36" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle">FVG Mitigation vs RDRB Retest</text>
+
+  <!-- Left: FVG -->
+  <text x="230" y="70" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">FVG (3 nen, co gap hien thi)</text>
+
+  <line x1="100" y1="150" x2="100" y2="190" stroke="#26a69a" stroke-width="2"/>
+  <rect x="92" y="155" width="16" height="30" fill="#26a69a"/>
+  <line x1="150" y1="110" x2="150" y2="150" stroke="#26a69a" stroke-width="2"/>
+  <rect x="142" y="115" width="16" height="30" fill="#26a69a"/>
+  <line x1="200" y1="90" x2="200" y2="130" stroke="#26a69a" stroke-width="2"/>
+  <rect x="192" y="95" width="16" height="30" fill="#26a69a"/>
+
+  <!-- FVG gap zone visible -->
+  <rect x="85" y="150" width="130" height="30" fill="rgba(41,98,255,0.25)"/>
+  <text x="150" y="200" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Gap nhin thay (imbalance)</text>
+
+  <!-- price returns to fill gap -->
+  <line x1="250" y1="150" x2="250" y2="200" stroke="#ef5350" stroke-width="2"/>
+  <rect x="242" y="160" width="16" height="35" fill="#ef5350"/>
+  <line x1="290" y1="180" x2="290" y2="220" stroke="#26a69a" stroke-width="2"/>
+  <rect x="282" y="185" width="16" height="30" fill="#26a69a"/>
+
+  <text x="230" y="250" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Retest = "lap khoan no"</text>
+  <text x="230" y="270" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">thanh khoan chua giao</text>
+
+  <!-- Right: RDRB -->
+  <text x="730" y="70" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">RDRB (2 nen, KHONG co gap)</text>
+
+  <line x1="590" y1="150" x2="590" y2="190" stroke="#26a69a" stroke-width="2"/>
+  <rect x="582" y="155" width="16" height="30" fill="#26a69a"/>
+  <text x="590" y="215" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">nen truoc</text>
+
+  <!-- nen A: deliver up, pullback wick -->
+  <line x1="630" y1="100" x2="630" y2="170" stroke="#26a69a" stroke-width="2"/>
+  <rect x="622" y="110" width="16" height="45" fill="#26a69a"/>
+  <text x="630" y="90" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">nen A (wick tren)</text>
+
+  <!-- nen B: redeliver up -->
+  <line x1="670" y1="80" x2="670" y2="140" stroke="#26a69a" stroke-width="2"/>
+  <rect x="662" y="85" width="16" height="40" fill="#26a69a"/>
+  <text x="670" y="70" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">nen B</text>
+
+  <line x1="710" y1="90" x2="710" y2="140" stroke="#26a69a" stroke-width="2"/>
+  <rect x="702" y="95" width="16" height="30" fill="#26a69a"/>
+  <text x="710" y="160" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">nen sau</text>
+
+  <!-- RDRB range box: between wick before and wick after, NOT gap -->
+  <rect x="582" y="170" width="144" height="30" fill="rgba(41,98,255,0.25)" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="654" y="220" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">RDRB range = wick truoc - wick sau</text>
+
+  <!-- price returns to test range -->
+  <line x1="780" y1="200" x2="780" y2="260" stroke="#ef5350" stroke-width="2"/>
+  <rect x="772" y="210" width="16" height="40" fill="#ef5350"/>
+  <line x1="820" y1="180" x2="820" y2="230" stroke="#26a69a" stroke-width="2"/>
+  <rect x="812" y="185" width="16" height="30" fill="#26a69a"/>
+
+  <text x="730" y="290" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Retest = kiem tra lai vung</text>
+  <text x="730" y="310" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">da dong thuan (khong phai lap no)</text>
+
+  <text x="480" y="500" fill="#d1d4dc" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Hai co che order-flow khac nhau du hinh dang phan ung ben ngoai co the tuong tu</text>
+</svg>

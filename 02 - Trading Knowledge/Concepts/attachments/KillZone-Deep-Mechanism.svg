@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="780" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế thật đằng sau Kill Zone: Volume theo giờ trung tâm tài chính</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">Không phải "giờ đẹp" huyền bí — là hệ quả của participant các trung tâm lớn mở cửa nối tiếp theo múi giờ</text>
+
+<!-- Timeline axis 24h in ET -->
+<line x1="60" y1="440" x2="1140" y2="440" stroke="#334155" stroke-width="2"/>
+<text x="60" y="460" font-size="12" fill="#94a3b8">18:00 ET (Chủ Nhật)</text>
+<text x="230" y="460" font-size="12" fill="#94a3b8">00:00</text>
+<text x="330" y="460" font-size="12" fill="#eab308">02:00</text>
+<text x="430" y="460" font-size="12" fill="#eab308">05:00</text>
+<text x="560" y="460" font-size="12" fill="#94a3b8">07:00</text>
+<text x="650" y="460" font-size="12" fill="#38bdf8">09:30</text>
+<text x="720" y="460" font-size="12" fill="#eab308">10:00</text>
+<text x="820" y="460" font-size="12" fill="#eab308">11:30</text>
+<text x="900" y="460" font-size="12" fill="#94a3b8">13:00</text>
+<text x="1000" y="460" font-size="12" fill="#eab308">14:00</text>
+<text x="1100" y="460" font-size="12" fill="#94a3b8">17:00 ET</text>
+
+<!-- Volume bars representing volume-by-hour distribution (the real mechanism) -->
+<text x="60" y="120" font-size="16" fill="#e2e8f0" font-weight="bold">Volume trung bình theo giờ trong ngày (dữ liệu định lượng — độc lập với ICT)</text>
+<rect x="80" y="130" width="10" height="260" fill="#334155"/>
+<rect x="80" y="360" width="10" height="30" fill="#94a3b8"/>
+<rect x="140" y="130" width="10" height="260" fill="#334155"/>
+<rect x="140" y="340" width="10" height="50" fill="#94a3b8"/>
+<rect x="200" y="130" width="10" height="260" fill="#334155"/>
+<rect x="200" y="300" width="10" height="90" fill="#94a3b8"/>
+<rect x="330" y="130" width="10" height="260" fill="#334155"/>
+<rect x="330" y="180" width="10" height="210" fill="#eab308"/>
+<rect x="390" y="130" width="10" height="260" fill="#334155"/>
+<rect x="390" y="170" width="10" height="220" fill="#eab308"/>
+<rect x="430" y="130" width="10" height="260" fill="#334155"/>
+<rect x="430" y="230" width="10" height="160" fill="#94a3b8"/>
+<rect x="560" y="130" width="10" height="260" fill="#334155"/>
+<rect x="560" y="220" width="10" height="170" fill="#94a3b8"/>
+<rect x="650" y="130" width="10" height="260" fill="#334155"/>
+<rect x="650" y="150" width="10" height="240" fill="#38bdf8"/>
+<rect x="720" y="130" width="10" height="260" fill="#334155"/>
+<rect x="720" y="160" width="10" height="230" fill="#eab308"/>
+<rect x="820" y="130" width="10" height="260" fill="#334155"/>
+<rect x="820" y="330" width="10" height="60" fill="#ef4444"/>
+<rect x="900" y="130" width="10" height="260" fill="#334155"/>
+<rect x="900" y="340" width="10" height="50" fill="#ef4444"/>
+<rect x="1000" y="130" width="10" height="260" fill="#334155"/>
+<rect x="1000" y="190" width="10" height="200" fill="#f97316"/>
+<rect x="1100" y="130" width="10" height="260" fill="#334155"/>
+<rect x="1100" y="300" width="10" height="90" fill="#94a3b8"/>
+<text x="60" y="410" font-size="12" fill="#94a3b8">Bar vàng/cam = volume cao (KZ chính) · Bar đỏ = NY lunch (thanh khoản mỏng) · Bar cam sáng = FOMC/tin lớn</text>
+
+<!-- Kill zone highlighted bands over timeline -->
+<rect x="330" y="420" width="100" height="40" fill="#eab308" opacity="0.18"/>
+<text x="335" y="415" font-size="12" fill="#eab308" font-weight="bold">London Open KZ</text>
+<rect x="650" y="420" width="170" height="40" fill="#38bdf8" opacity="0.18"/>
+<text x="655" y="415" font-size="12" fill="#38bdf8" font-weight="bold">NY AM KZ (Silver Bullet 10-11h)</text>
+<rect x="820" y="420" width="80" height="40" fill="#ef4444" opacity="0.18"/>
+<text x="825" y="415" font-size="12" fill="#ef4444" font-weight="bold">NY Lunch (vùng chết)</text>
+<rect x="1000" y="420" width="40" height="40" fill="#f97316" opacity="0.25"/>
+<text x="985" y="415" font-size="11" fill="#f97316" font-weight="bold">FOMC 14:00</text>
+
+<!-- Mechanism boxes below -->
+<rect x="60" y="500" width="330" height="240" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="80" y="530" font-size="16" fill="#e2e8f0" font-weight="bold">1. London Open</text>
+<text x="80" y="555" font-size="13" fill="#94a3b8">Desk bank/quỹ London đồng loạt</text>
+<text x="80" y="573" font-size="13" fill="#94a3b8">vào ca → order book đầy lên</text>
+<text x="80" y="591" font-size="13" fill="#94a3b8">nhanh chóng, spread co lại.</text>
+<text x="80" y="619" font-size="13" fill="#e2e8f0">→ Volume tăng đo lường được,</text>
+<text x="80" y="637" font-size="13" fill="#e2e8f0">   độc lập với AMD narrative.</text>
+<text x="80" y="665" font-size="13" fill="#94a3b8">FX majors bị ảnh hưởng mạnh</text>
+<text x="80" y="683" font-size="13" fill="#94a3b8">nhất (EUR, GBP quote tại London)</text>
+
+<rect x="420" y="500" width="330" height="240" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="440" y="530" font-size="16" fill="#e2e8f0" font-weight="bold">2. NY AM / mở NYSE 09:30</text>
+<text x="440" y="555" font-size="13" fill="#94a3b8">TWAP/VWAP algo của quỹ lớn</text>
+<text x="440" y="573" font-size="13" fill="#94a3b8">thường khởi động theo giờ mở</text>
+<text x="440" y="591" font-size="13" fill="#94a3b8">phiên chính thức NYSE.</text>
+<text x="440" y="619" font-size="13" fill="#e2e8f0">→ Gamma hedging dealer quyền</text>
+<text x="440" y="637" font-size="13" fill="#e2e8f0">   chọn 0DTE cũng tập trung đây.</text>
+<text x="440" y="665" font-size="13" fill="#94a3b8">Index futures (NQ/ES) bị ảnh</text>
+<text x="440" y="683" font-size="13" fill="#94a3b8">hưởng mạnh nhất.</text>
+
+<rect x="780" y="500" width="360" height="240" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="800" y="530" font-size="16" fill="#e2e8f0" font-weight="bold">3. NY Lunch — vùng chết</text>
+<text x="800" y="555" font-size="13" fill="#94a3b8">Nhiều desk lớn tạm nghỉ/giảm</text>
+<text x="800" y="573" font-size="13" fill="#94a3b8">hoạt động 11:30-13:00 ET.</text>
+<text x="800" y="591" font-size="13" fill="#94a3b8">Order book mỏng hơn hẳn.</text>
+<text x="800" y="619" font-size="13" fill="#ef4444">→ Lệnh nhỏ cũng đủ đẩy giá,</text>
+<text x="800" y="637" font-size="13" fill="#ef4444">   whipsaw không phản ánh ý</text>
+<text x="800" y="655" font-size="13" fill="#ef4444">   định thị trường thật.</text>
+<text x="800" y="683" font-size="13" fill="#94a3b8">Crypto không có hiện tượng này</text>
+<text x="800" y="701" font-size="13" fill="#94a3b8">rõ ràng (giao dịch liên tục).</text>
+</svg>

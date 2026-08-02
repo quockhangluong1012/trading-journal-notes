@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="750" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế thật đằng sau NDOG: CME Globex Halt &amp; Re-Auction</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">Order book đóng hoàn toàn 17:00–18:00 ET — Reopen là kết quả đấu giá lại, không phải "lực hút" huyền bí</text>
+
+<!-- timeline axis -->
+<line x1="60" y1="380" x2="1140" y2="380" stroke="#334155" stroke-width="2"/>
+<text x="60" y="400" font-size="13" fill="#94a3b8">16:00 ET</text>
+<text x="330" y="400" font-size="13" fill="#94a3b8">16:15 ET</text>
+<text x="620" y="400" font-size="13" fill="#eab308">17:00 ET</text>
+<text x="900" y="400" font-size="13" fill="#eab308">18:00 ET</text>
+<text x="1080" y="400" font-size="13" fill="#94a3b8">18:15 ET</text>
+
+<!-- pre halt candles -->
+<rect x="90" y="300" width="16" height="40" fill="#22c55e"/>
+<line x1="98" y1="285" x2="98" y2="350" stroke="#22c55e" stroke-width="2"/>
+<rect x="130" y="290" width="16" height="35" fill="#22c55e"/>
+<line x1="138" y1="275" x2="138" y2="335" stroke="#22c55e" stroke-width="2"/>
+<rect x="170" y="280" width="16" height="30" fill="#22c55e"/>
+<line x1="178" y1="265" x2="178" y2="320" stroke="#22c55e" stroke-width="2"/>
+<rect x="210" y="270" width="16" height="35" fill="#ef4444"/>
+<line x1="218" y1="255" x2="218" y2="315" stroke="#ef4444" stroke-width="2"/>
+<rect x="250" y="275" width="16" height="20" fill="#22c55e"/>
+<line x1="258" y1="265" x2="258" y2="305" stroke="#22c55e" stroke-width="2"/>
+
+<!-- Prior Day Close line -->
+<line x1="60" y1="270" x2="620" y2="270" stroke="#eab308" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="290" y="260" font-size="15" fill="#eab308" font-weight="bold">Prior Day Close ~16:00–16:15 ET (~2,318.40)</text>
+
+<!-- halt box -->
+<rect x="620" y="150" width="280" height="450" fill="#1e293b" opacity="0.5" stroke="#334155" stroke-dasharray="4,3"/>
+<text x="655" y="175" font-size="16" fill="#f97316" font-weight="bold">HALT KỸ THUẬT</text>
+<text x="655" y="195" font-size="13" fill="#94a3b8">Order book đóng hoàn toàn</text>
+<text x="655" y="213" font-size="13" fill="#94a3b8">Không khớp lệnh, không best bid/offer</text>
+<text x="655" y="240" font-size="13" fill="#e2e8f0">Trong lúc halt:</text>
+<text x="655" y="260" font-size="13" fill="#94a3b8">• Dealer/bank desk hedge option</text>
+<text x="655" y="278" font-size="13" fill="#94a3b8">  tiếp tục nhận tin sau giờ</text>
+<text x="655" y="296" font-size="13" fill="#94a3b8">• ETF market maker cập nhật giá</text>
+<text x="655" y="314" font-size="13" fill="#94a3b8">  trên venue khác (OTC/dark pool)</text>
+<text x="655" y="332" font-size="13" fill="#94a3b8">• TWAP/VWAP algo tạm dừng</text>
+<text x="655" y="350" font-size="13" fill="#94a3b8">  theo lịch, chờ nối lại</text>
+<text x="655" y="378" font-size="14" fill="#38bdf8" font-weight="bold">→ Reopen = re-auction</text>
+<text x="655" y="396" font-size="14" fill="#38bdf8" font-weight="bold">   dựa trên order flow dồn nén</text>
+
+<!-- NDOG range box -->
+<rect x="900" y="270" width="240" height="90" fill="#22c55e" opacity="0.18"/>
+<line x1="900" y1="270" x2="1140" y2="270" stroke="#eab308" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="900" y1="360" x2="1140" y2="360" stroke="#94a3b8" stroke-width="2"/>
+<text x="905" y="350" font-size="14" fill="#e2e8f0" font-weight="bold">Reopen ~18:00 ET (~2,321.80)</text>
+<line x1="900" y1="315" x2="1140" y2="315" stroke="#38bdf8" stroke-width="2"/>
+<text x="905" y="310" font-size="13" fill="#38bdf8" font-weight="bold">CE 50% (nam châm) ~2,320.10</text>
+
+<!-- post reopen candles -->
+<rect x="960" y="300" width="16" height="30" fill="#22c55e"/>
+<line x1="968" y1="290" x2="968" y2="340" stroke="#22c55e" stroke-width="2"/>
+<rect x="1000" y="295" width="16" height="25" fill="#22c55e"/>
+<line x1="1008" y1="285" x2="1008" y2="330" stroke="#22c55e" stroke-width="2"/>
+<rect x="1040" y="290" width="16" height="30" fill="#22c55e"/>
+<line x1="1048" y1="278" x2="1048" y2="330" stroke="#22c55e" stroke-width="2"/>
+
+<!-- annotation boxes bottom: theory comparison -->
+<rect x="40" y="450" width="350" height="260" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="480" font-size="16" fill="#a78bfa" font-weight="bold">1. Auction Market Theory</text>
+<text x="60" y="505" font-size="13" fill="#e2e8f0">Gap = "gap in the profile"</text>
+<text x="60" y="523" font-size="13" fill="#94a3b8">Giá "auction back into" vùng trống</text>
+<text x="60" y="541" font-size="13" fill="#94a3b8">CE ≈ fair value tạm thời</text>
+<text x="60" y="565" font-size="13" fill="#94a3b8">Khác: không dùng "50%" cố định,</text>
+<text x="60" y="583" font-size="13" fill="#94a3b8">dùng POC/Value Area 70%</text>
+
+<rect x="420" y="450" width="350" height="260" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="440" y="480" font-size="16" fill="#a78bfa" font-weight="bold">2. Wyckoff</text>
+<text x="440" y="505" font-size="13" fill="#e2e8f0">Gap = "test" / "no supply" bar</text>
+<text x="440" y="523" font-size="13" fill="#94a3b8">nếu volume reopen thấp</text>
+<text x="440" y="541" font-size="13" fill="#94a3b8">NDOG unfilled ≈ chưa test cung/cầu</text>
+<text x="440" y="565" font-size="13" fill="#94a3b8">Khác: Wyckoff cần volume+effort/</text>
+<text x="440" y="583" font-size="13" fill="#94a3b8">result, ICT chỉ dùng giá thuần túy</text>
+
+<rect x="800" y="450" width="350" height="260" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="820" y="480" font-size="16" fill="#a78bfa" font-weight="bold">3. Orderflow / Footprint</text>
+<text x="820" y="505" font-size="13" fill="#e2e8f0">Volume tick sau 18:00 ET</text>
+<text x="820" y="523" font-size="13" fill="#94a3b8">tại vùng CE thường mỏng bất thường</text>
+<text x="820" y="541" font-size="13" fill="#94a3b8">→ củng cố "vùng chưa kiểm định"</text>
+<text x="820" y="565" font-size="13" fill="#94a3b8">Khác: cần dữ liệu tick thật,</text>
+<text x="820" y="583" font-size="13" fill="#94a3b8">NDOG chỉ suy luận từ 2 điểm giá</text>
+
+<text x="40" y="730" font-size="14" fill="#f97316" font-weight="bold">Kết luận cơ chế: NDOG mạnh nhất khi có halt kỹ thuật THẬT (CME) — trên FX/crypto không halt, đây chỉ là ẩn dụ.</text>
+</svg>

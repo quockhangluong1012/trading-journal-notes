@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">MSS phá thẳng vào HTF opposing FVG — cấu trúc nói đảo, HTF nói fade</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">XAUUSD M5 MSS bullish đi thẳng vào H4 bearish FVG chưa rebalance</text>
+
+  <!-- H4 panel top -->
+  <rect x="40" y="100" width="560" height="34" rx="6" fill="#4a90d9" opacity="0.18" stroke="#4a90d9"/>
+  <text x="58" y="123" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#4a90d9">H4 — bearish FVG chưa rebalance 2,398-2,406</text>
+
+  <rect x="60" y="180" width="140" height="90" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="65" y="285" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">H4 bearish FVG</text>
+  <text x="65" y="303" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">2,398 - 2,406</text>
+
+  <g>
+    <line x1="240" y1="290" x2="240" y2="380" stroke="#26a69a" stroke-width="1"/>
+    <rect x="232" y="300" width="16" height="60" rx="1" fill="#26a69a"/>
+    <line x1="280" y1="260" x2="280" y2="350" stroke="#26a69a" stroke-width="1"/>
+    <rect x="272" y="270" width="16" height="60" rx="1" fill="#26a69a"/>
+  </g>
+
+  <line x1="40" y1="400" x2="1240" y2="400" stroke="#2a2e39" stroke-width="1"/>
+  <text x="40" y="425" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#d1d4dc">M5 — bullish MSS đi thẳng vào FVG H4 đối diện</text>
+
+  <!-- M5 leg with sweep and MSS heading into the FVG zone (mapped down proportionally) -->
+  <g>
+    <line x1="100" y1="600" x2="100" y2="660" stroke="#ef5350" stroke-width="1"/>
+    <rect x="92" y="610" width="16" height="40" rx="1" fill="#ef5350"/>
+    <line x1="140" y1="580" x2="140" y2="650" stroke="#ef5350" stroke-width="1"/>
+    <rect x="132" y="590" width="16" height="45" rx="1" fill="#ef5350"/>
+  </g>
+  <line x1="180" y1="620" x2="180" y2="680" stroke="#ef5350" stroke-width="1"/>
+  <rect x="172" y="630" width="16" height="35" rx="1" fill="#ef5350"/>
+  <text x="150" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b48ead">SSL M5 2,384 sweep</text>
+
+  <line x1="220" y1="480" x2="220" y2="640" stroke="#26a69a" stroke-width="1"/>
+  <rect x="212" y="490" width="16" height="130" rx="1" fill="#26a69a"/>
+  <line x1="260" y1="440" x2="260" y2="500" stroke="#787b86" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="200" y="425" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">LH M5 2,395</text>
+
+  <g>
+    <line x1="300" y1="440" x2="300" y2="500" stroke="#26a69a" stroke-width="1"/>
+    <rect x="292" y="450" width="16" height="40" rx="1" fill="#26a69a"/>
+    <line x1="340" y1="410" x2="340" y2="470" stroke="#26a69a" stroke-width="1"/>
+    <rect x="332" y="420" width="16" height="40" rx="1" fill="#26a69a"/>
+  </g>
+  <text x="220" y="460" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">MSS bullish chuẩn: sweep + displacement + FVG</text>
+
+  <!-- The zone where H4 FVG maps into this M5 view -->
+  <rect x="360" y="410" width="200" height="60" fill="#ff6b6b" opacity="0.16" stroke="#ff6b6b" stroke-dasharray="6 4"/>
+  <text x="368" y="405" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">Target đi thẳng vào H4 FVG bearish 2,398-2,406</text>
+
+  <!-- decision gate box -->
+  <rect x="620" y="440" width="600" height="250" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="640" y="470" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#f2c94c">Cổng ưu tiên xung đột LTF vs HTF</text>
+  <text x="640" y="500" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">1. Đo khoảng MSS-entry tới mép gần FVG H4</text>
+  <text x="640" y="524" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">2. Dưới 1.5R tới FVG đối diện → không trade theo MSS</text>
+  <text x="640" y="548" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">3. FVG H4 unmitigated + fresh (chưa test) → HTF thắng</text>
+  <text x="640" y="572" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">4. FVG H4 đã test 2+ lần, mỏng dần → LTF MSS thắng</text>
+  <text x="640" y="596" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Backtest 90 mẫu: MSS chạy hết leg vào FVG</text>
+  <text x="640" y="618" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">HTF unmitigated chỉ 19%; test 2+ lần thì 61%</text>
+  <text x="640" y="650" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Rule: HTF opposing POI luôn được hỏi trước khi tin MSS</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">XAUUSD H4/M5 · minh họa từ backtest tổng hợp — không thay thế cho draw-on-liquidity gate của Order Block</text>
+</svg>
