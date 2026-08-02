@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Sweep xảy ra NGAY TRONG retracement — fib cũ sai, phải re-anchor theo swing mới</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">EURUSD M5: retrace đang chạy tới 62% thì có một wick sweep sâu hơn — nếu giữ fib cũ, entry lệch 20-30 pip</text>
+
+  <!-- impulse leg -->
+  <g>
+    <line x1="120" y1="500" x2="120" y2="560" stroke="#ef5350" stroke-width="1"/>
+    <rect x="108" y="510" width="24" height="40" rx="1" fill="#ef5350"/>
+  </g>
+  <g>
+    <line x1="180" y1="400" x2="180" y2="510" stroke="#26a69a" stroke-width="1"/>
+    <rect x="168" y="410" width="24" height="90" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="240" y1="300" x2="240" y2="410" stroke="#26a69a" stroke-width="1"/>
+    <rect x="228" y="310" width="24" height="90" rx="1" fill="#26a69a"/>
+  </g>
+  <text x="150" y="290" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">Swing high ban đầu 1.09250</text>
+
+  <!-- fib old (drawn from initial swing) -->
+  <line x1="260" y1="310" x2="1180" y2="310" stroke="#f2c94c" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <text x="1000" y="305" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#f2c94c" opacity="0.6">Fib cũ 0% = 1.09250</text>
+  <line x1="260" y1="420" x2="1180" y2="420" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.5"/>
+  <text x="1000" y="415" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#f2c94c" opacity="0.6">Fib cũ 62% = 1.09112 (SAI)</text>
+
+  <!-- retracement candles heading to 62 -->
+  <g>
+    <line x1="300" y1="330" x2="300" y2="390" stroke="#ef5350" stroke-width="1"/>
+    <rect x="288" y="340" width="24" height="40" rx="1" fill="#ef5350"/>
+  </g>
+  <g>
+    <line x1="360" y1="360" x2="360" y2="420" stroke="#ef5350" stroke-width="1"/>
+    <rect x="348" y="370" width="24" height="40" rx="1" fill="#ef5350"/>
+  </g>
+
+  <!-- SWEEP: deep wick well past old 62%, forming new swing low -->
+  <g>
+    <line x1="420" y1="380" x2="420" y2="500" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="408" y="440" width="24" height="35" rx="1" fill="#ef5350"/>
+  </g>
+  <circle cx="420" cy="498" r="5" fill="#b48ead"/>
+  <text x="440" y="502" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#b48ead">Sweep wick 1.08980 — swing low MỚI</text>
+
+  <!-- new fib anchored from new swing low -->
+  <line x1="440" y1="500" x2="1180" y2="500" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1000" y="495" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">Fib mới 0% = 1.08980</text>
+  <line x1="440" y1="450" x2="1180" y2="450" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1000" y="445" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">Fib mới 62% = 1.09065 (ĐÚNG)</text>
+
+  <!-- entries comparison -->
+  <g>
+    <line x1="500" y1="420" x2="500" y2="470" stroke="#26a69a" stroke-width="1"/>
+    <rect x="488" y="428" width="24" height="35" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="560" y1="380" x2="560" y2="440" stroke="#26a69a" stroke-width="1"/>
+    <rect x="548" y="388" width="24" height="45" rx="1" fill="#26a69a"/>
+  </g>
+
+  <rect x="60" y="560" width="1160" height="130" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="80" y="588" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#f2c94c">Hậu quả nếu giữ fib cũ</text>
+  <text x="80" y="614" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Entry theo fib cũ (1.09112) đã bị quét qua — limit khớp SỚM trước khi sweep hoàn tất, dính đúng vùng bị quét.</text>
+  <text x="80" y="638" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Entry theo fib mới (1.09065) mới đúng: sau sweep, sau MSS xác nhận swing low mới là swing thật.</text>
+  <text x="80" y="662" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">Chênh lệch giữa hai entry: ~47 pip trên EURUSD — đủ để biến 2R thành lệnh hòa vốn hoặc âm.</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">EURUSD M5 minh họa · nguyên tắc re-anchor khi swing tham chiếu bị phá trong lúc retrace</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 6 — LOSS: Spread giãn giờ rollover ăn hết target</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">USDJPY, 17:00 NY (rollover) — setup đúng nhưng chi phí giao dịch nuốt gần hết lợi nhuận</text>
+
+<line x1="60" y1="500" x2="900" y2="500" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="380" x2="900" y2="380" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="260" x2="900" y2="260" stroke="#1f2937" stroke-width="1"/>
+
+<rect x="60" y="150" width="840" height="130" fill="rgba(239,68,68,0.08)"/>
+<text x="880" y="168" font-size="11" fill="#94a3b8" text-anchor="end">Premium</text>
+
+<rect x="330" y="200" width="130" height="55" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-dasharray="4 3"/>
+<text x="395" y="192" font-size="12" fill="#3b82f6" text-anchor="middle">Premium FVG</text>
+
+<rect x="100" y="400" width="12" height="35" fill="#22c55e"/>
+<line x1="106" y1="392" x2="106" y2="440" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="125" y="360" width="12" height="40" fill="#22c55e"/>
+<line x1="131" y1="350" x2="131" y2="405" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="150" y="315" width="12" height="45" fill="#22c55e"/>
+<line x1="156" y1="305" x2="156" y2="365" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="175" y="270" width="12" height="45" fill="#22c55e"/>
+<line x1="181" y1="258" x2="181" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+
+<line x1="60" y1="238" x2="900" y2="238" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="70" y="233" font-size="12" fill="#eab308" text-anchor="start">BSL</text>
+
+<rect x="205" y="210" width="12" height="35" fill="#22c55e"/>
+<line x1="211" y1="198" x2="211" y2="250" stroke="#f97316" stroke-width="2.5"/>
+<path d="M 211 198 L 203 184 L 219 184 Z" fill="#f97316"/>
+<text x="211" y="178" font-size="12" font-weight="700" fill="#f97316" text-anchor="middle">Judas 17:05 NY</text>
+
+<rect x="255" y="228" width="12" height="30" fill="#ef4444"/>
+<rect x="280" y="258" width="12" height="35" fill="#ef4444"/>
+<line x1="261" y1="220" x2="261" y2="259" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="286" y1="250" x2="286" y2="294" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="225" y1="258" x2="420" y2="258" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="425" y="254" font-size="12" fill="#a855f7" text-anchor="start">MSS 5m</text>
+
+<!-- wide spread visual: double wick lines showing bid-ask gap -->
+<rect x="305" y="288" width="60" height="30" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-dasharray="4 3"/>
+<line x1="315" y1="296" x2="315" y2="316" stroke="#f87171" stroke-width="3"/>
+<line x1="325" y1="292" x2="325" y2="312" stroke="#22c55e" stroke-width="1.5"/>
+<text x="410" y="306" font-size="12" font-weight="700" fill="#4ade80" text-anchor="start">SHORT — spread 4.5 pip (bình thường 0.8)</text>
+
+<rect x="350" y="315" width="12" height="35" fill="#ef4444"/>
+<rect x="375" y="345" width="12" height="35" fill="#ef4444"/>
+<line x1="356" y1="308" x2="356" y2="351" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="381" y1="338" x2="381" y2="381" stroke="#9ca3af" stroke-width="1.5"/>
+
+<rect x="410" y="370" width="90" height="25" fill="rgba(34,197,94,0.20)" stroke="#4ade80" stroke-dasharray="4 3"/>
+<text x="455" y="388" font-size="11" fill="#4ade80" text-anchor="middle">TP kỹ thuật đạt được</text>
+
+<text x="700" y="330" font-size="14" font-weight="700" fill="#eab308" text-anchor="middle">Giá di chuyển đúng 16 pips</text>
+<text x="700" y="350" font-size="12" fill="#f87171" text-anchor="middle">Nhưng spread rollover 4.5 pip + commission → net chỉ còn +4 pips</text>
+<text x="700" y="372" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">Coi như LOSS so với rủi ro đã chấp nhận (RR thực tế &lt; 1:4 kế hoạch)</text>
+
+<rect x="60" y="440" width="840" height="90" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="80" y="465" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">Vì sao coi là loss: đúng hướng về mặt kỹ thuật nhưng chi phí giao dịch ăn gần hết edge</text>
+<text x="80" y="485" font-size="12" fill="#94a3b8" text-anchor="start">17:00 NY là giờ rollover — nhiều broker retail giãn spread 3-6 lần so với bình thường</text>
+<text x="80" y="505" font-size="12" fill="#94a3b8" text-anchor="start">Bài học: tránh entry trong khung 16:55-17:15 NY, hoặc tăng target tối thiểu để bù chi phí</text>
+</svg>

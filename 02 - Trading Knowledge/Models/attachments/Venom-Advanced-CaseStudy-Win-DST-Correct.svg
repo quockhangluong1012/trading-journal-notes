@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="400" rx="12" fill="#0d1117"/>
+  <text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Case 7 — Win nhờ kiểm tra lại giờ quanh mốc đổi DST</text>
+  <text x="32" y="58" font-size="12" fill="#94a3b8">Case tái dựng minh họa, số liệu hypothetical — không phải lệnh thật</text>
+
+  <rect x="80" y="100" width="380" height="80" rx="8" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+  <text x="270" y="128" font-size="12.5" fill="#94a3b8" text-anchor="middle">Bảng giờ cũ (trước DST đổi)</text>
+  <text x="270" y="148" font-size="11.5" fill="#f87171" text-anchor="middle">09:30 NY = 20:30 giờ local (SAI sau đổi DST)</text>
+  <text x="270" y="166" font-size="11" fill="#94a3b8" text-anchor="middle">Chưa cập nhật lại</text>
+
+  <path d="M 470 140 L 500 140" stroke="#4ade80" stroke-width="2.5" marker-end="url(#arrD)"/>
+
+  <rect x="510" y="100" width="380" height="80" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+  <text x="700" y="128" font-size="12.5" fill="#4ade80" text-anchor="middle">Trader kiểm tra lại đầu tháng 11</text>
+  <text x="700" y="148" font-size="11.5" fill="#4ade80" text-anchor="middle">09:30 NY = 21:30 giờ local (ĐÚNG)</text>
+  <text x="700" y="166" font-size="11" fill="#94a3b8" text-anchor="middle">Cập nhật kịp trước phiên</text>
+
+  <rect x="200" y="220" width="560" height="120" rx="8" fill="rgba(74,222,128,0.10)" stroke="#4ade80" stroke-dasharray="4 3"/>
+  <text x="480" y="248" font-size="13" fill="#4ade80" text-anchor="middle" font-weight="700">Kết quả: vào đúng cửa sổ, sweep + displacement + FVG chuẩn</text>
+  <text x="480" y="270" font-size="12" fill="#e5e7eb" text-anchor="middle">Nhờ thói quen kiểm tra lại bảng giờ quanh mốc đổi DST (case ④/⑧),</text>
+  <text x="480" y="290" font-size="12" fill="#e5e7eb" text-anchor="middle">trader tránh được lỗi lệch 1 giờ mà nhiều người khác gặp trong tuần đó.</text>
+  <text x="480" y="312" font-size="11.5" fill="#94a3b8" text-anchor="middle">Bài học: quy trình phòng ngừa (không phải may mắn) tạo ra kết quả này.</text>
+
+  <defs><marker id="arrD" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#4ade80"/></marker></defs>
+</svg>

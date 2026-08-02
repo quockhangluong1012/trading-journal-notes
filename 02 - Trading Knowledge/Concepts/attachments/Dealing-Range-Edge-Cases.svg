@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="760" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Edge Case đắt giá nhất: Anchor Ambiguity — chọn sai swing để vẽ range</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">Hai trader nhìn cùng một chart, vẽ hai Dealing Range khác nhau, kết luận Premium/Discount trái ngược</text>
+
+<!-- Panel A: Trader A wrong anchor -->
+<rect x="40" y="90" width="550" height="300" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="118" font-size="17" fill="#ef4444" font-weight="bold">Trader A — chọn swing "gần giá" (SAI)</text>
+<line x1="70" y1="350" x2="560" y2="350" stroke="#1c2333"/>
+<rect x="90" y="280" width="14" height="40" fill="#22c55e"/><line x1="97" y1="270" x2="97" y2="330" stroke="#22c55e" stroke-width="2"/>
+<rect x="115" y="250" width="14" height="45" fill="#22c55e"/><line x1="122" y1="240" x2="122" y2="305" stroke="#22c55e" stroke-width="2"/>
+<rect x="140" y="200" width="14" height="35" fill="#22c55e"/><line x1="147" y1="190" x2="147" y2="245" stroke="#22c55e" stroke-width="2"/>
+<rect x="165" y="180" width="14" height="30" fill="#ef4444"/><line x1="172" y1="170" x2="172" y2="220" stroke="#ef4444" stroke-width="2"/>
+<rect x="190" y="210" width="14" height="35" fill="#ef4444"/><line x1="197" y1="200" x2="197" y2="255" stroke="#ef4444" stroke-width="2"/>
+<line x1="80" y1="185" x2="480" y2="185" stroke="#ef4444" stroke-dasharray="4,3"/>
+<text x="330" y="180" font-size="12" fill="#ef4444">"high" nhỏ, chưa displacement</text>
+<line x1="80" y1="315" x2="480" y2="315" stroke="#ef4444" stroke-dasharray="4,3"/>
+<text x="330" y="335" font-size="12" fill="#ef4444">"low" nhỏ, chưa lấy SSL thật</text>
+<line x1="80" y1="250" x2="480" y2="250" stroke="#a78bfa" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="490" y="254" font-size="12" fill="#a78bfa" font-weight="bold">EQ (A)</text>
+<circle cx="230" cy="235" r="6" fill="#38bdf8"/>
+<text x="245" y="239" font-size="12" fill="#38bdf8">giá hiện tại → kết luận: "Discount" (dưới EQ-A)</text>
+<text x="60" y="375" font-size="13" fill="#e2e8f0">→ Long vì tưởng đang discount — nhưng range này chưa hề lấy liquidity ở đầu nào.</text>
+
+<!-- Panel B: Trader B correct anchor, same price = Premium -->
+<rect x="610" y="90" width="550" height="300" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="630" y="118" font-size="17" fill="#22c55e" font-weight="bold">Trader B — swing có displacement + đã lấy liquidity (ĐÚNG)</text>
+<line x1="640" y1="350" x2="1130" y2="350" stroke="#1c2333"/>
+<line x1="650" y1="130" x2="1050" y2="130" stroke="#eab308" stroke-dasharray="4,3"/>
+<text x="900" y="125" font-size="12" fill="#eab308">D1 high thật — đã quét BSL tuần trước</text>
+<line x1="650" y1="330" x2="1050" y2="330" stroke="#eab308" stroke-dasharray="4,3"/>
+<text x="900" y="348" font-size="12" fill="#eab308">D1 low thật — đã quét SSL tuần trước</text>
+<line x1="650" y1="230" x2="1050" y2="230" stroke="#a78bfa" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="1060" y="234" font-size="12" fill="#a78bfa" font-weight="bold">EQ (B)</text>
+<circle cx="800" cy="235" r="6" fill="#38bdf8"/>
+<text x="815" y="220" font-size="12" fill="#38bdf8" font-weight="bold">CÙNG mức giá → nằm ngay trên EQ-B = "Premium"!</text>
+<text x="630" y="375" font-size="13" fill="#e2e8f0">→ Cùng một điểm giá, range đúng nói Premium — trái ngược hoàn toàn kết luận của Trader A.</text>
+
+<!-- Bottom rule box -->
+<rect x="40" y="410" width="1120" height="320" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="440" font-size="17" fill="#e2e8f0" font-weight="bold">Vì sao bẫy được cả trader kinh nghiệm</text>
+<text x="60" y="465" font-size="13" fill="#94a3b8">Không có trọng tài khách quan nào chấm "swing nào mới đủ ý nghĩa" — ranh giới displacement/BOS vẫn cần phán đoán chủ quan.</text>
+<text x="60" y="485" font-size="13" fill="#94a3b8">Cả hai range đều "nhìn hợp lý" trên chart; sai lầm chỉ lộ ra SAU khi giá phản ứng đúng theo bản đồ đúng.</text>
+
+<text x="60" y="525" font-size="15" fill="#eab308" font-weight="bold">Cách nhận diện sớm</text>
+<text x="60" y="548" font-size="13" fill="#e2e8f0">1. Hỏi: "Hai đầu range này đã quét BSL/SSL rõ ràng chưa, hay chỉ là swing gần giá?"</text>
+<text x="60" y="568" font-size="13" fill="#e2e8f0">2. So sánh với range của khung cao hơn — range con phải nằm gọn trong range mẹ, không mâu thuẫn hướng.</text>
+<text x="60" y="588" font-size="13" fill="#e2e8f0">3. Nếu 2 range khả dĩ cho 2 kết luận trái ngược → mặc định ưu tiên range có displacement mạnh hơn + đã lấy liquidity.</text>
+
+<text x="60" y="628" font-size="15" fill="#38bdf8" font-weight="bold">Cách xử lý</text>
+<text x="60" y="651" font-size="13" fill="#e2e8f0">- Luôn vẽ range theo thứ tự D1 → H4 → H1 TRƯỚC, ghi rõ giá 2 đầu vào journal (loại bỏ "vẽ theo cảm tính").</text>
+<text x="60" y="671" font-size="13" fill="#e2e8f0">- Coi swing "chưa lấy liquidity" là ứng viên yếu; chỉ dùng tạm khi chưa có swing nào tốt hơn, và giảm size.</text>
+<text x="60" y="691" font-size="13" fill="#e2e8f0">- Ghi 2 phiên bản range (nếu mơ hồ) vào note, chờ giá xác nhận range nào đúng bằng phản ứng thật trước khi trade.</text>
+</svg>

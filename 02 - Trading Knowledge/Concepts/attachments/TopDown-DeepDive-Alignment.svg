@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+
+  <text x="480" y="34" text-anchor="middle" fill="#d1d4dc" font-size="22" font-weight="bold">Dong thuan that vs Dong thuan gia (flash crash)</text>
+
+  <!-- Grid lines -->
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="40" y1="80" x2="460" y2="80"/>
+    <line x1="40" y1="150" x2="460" y2="150"/>
+    <line x1="40" y1="220" x2="460" y2="220"/>
+    <line x1="40" y1="290" x2="460" y2="290"/>
+    <line x1="40" y1="360" x2="460" y2="360"/>
+    <line x1="40" y1="430" x2="460" y2="430"/>
+    <line x1="500" y1="80" x2="920" y2="80"/>
+    <line x1="500" y1="150" x2="920" y2="150"/>
+    <line x1="500" y1="220" x2="920" y2="220"/>
+    <line x1="500" y1="290" x2="920" y2="290"/>
+    <line x1="500" y1="360" x2="920" y2="360"/>
+    <line x1="500" y1="430" x2="920" y2="430"/>
+  </g>
+
+  <!-- LEFT PANEL: real alignment -->
+  <text x="250" y="65" text-anchor="middle" fill="#26a69a" font-size="16" font-weight="bold">That: dong lenh co chu dich</text>
+
+  <!-- HTF row -->
+  <text x="45" y="100" fill="#d1d4dc" font-size="13">HTF (D1)</text>
+  <rect x="130" y="85" width="30" height="55" fill="#26a69a"/>
+  <line x1="145" y1="80" x2="145" y2="145" stroke="#26a69a" stroke-width="2"/>
+  <rect x="180" y="70" width="30" height="70" fill="#26a69a"/>
+  <line x1="195" y1="65" x2="195" y2="145" stroke="#26a69a" stroke-width="2"/>
+  <line x1="40" y1="60" x2="460" y2="60" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="380" y="55" fill="#f2c94c" font-size="12">buyside liquidity</text>
+
+  <!-- Intermediate row -->
+  <text x="45" y="175" fill="#d1d4dc" font-size="13">Intermediate (H1)</text>
+  <rect x="230" y="160" width="80" height="40" fill="rgba(255,152,0,0.25)" stroke="#ff9800" stroke-width="1"/>
+  <text x="235" y="155" fill="#ff9800" font-size="11">POI (OB+FVG)</text>
+  <rect x="250" y="175" width="18" height="30" fill="#26a69a"/>
+  <rect x="270" y="165" width="18" height="35" fill="#26a69a"/>
+
+  <!-- LTF row -->
+  <text x="45" y="245" fill="#d1d4dc" font-size="13">LTF (M5)</text>
+  <rect x="240" y="230" width="14" height="24" fill="#ef5350"/>
+  <rect x="256" y="215" width="14" height="35" fill="#26a69a"/>
+  <rect x="272" y="205" width="14" height="30" fill="#26a69a"/>
+  <line x1="245" y1="255" x2="245" y2="265" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="230" y="278" fill="#f2c94c" font-size="10">sweep</text>
+
+  <!-- Arrow showing order flow through tiers -->
+  <line x1="195" y1="145" x2="260" y2="180" stroke="#ffffff" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="260" y1="200" x2="256" y2="215" stroke="#ffffff" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <text x="250" y="410" text-anchor="middle" fill="#d1d4dc" font-size="12">Cau truc lien tuc, tam cua tung tang</text>
+  <text x="250" y="428" text-anchor="middle" fill="#d1d4dc" font-size="12">khop voi vai tro rieng (bias -&gt; POI -&gt; trigger)</text>
+
+  <!-- RIGHT PANEL: fake alignment (flash crash) -->
+  <text x="710" y="65" text-anchor="middle" fill="#ef5350" font-size="16" font-weight="bold">Gia: soc thanh khoan dong loat</text>
+
+  <text x="505" y="100" fill="#d1d4dc" font-size="13">HTF (D1)</text>
+  <rect x="590" y="90" width="30" height="15" fill="#26a69a"/>
+
+  <text x="505" y="175" fill="#d1d4dc" font-size="13">Intermediate (H1)</text>
+  <rect x="590" y="165" width="20" height="15" fill="#26a69a"/>
+
+  <text x="505" y="245" fill="#d1d4dc" font-size="13">LTF (M1)</text>
+  <!-- extreme spike down then partial recovery -->
+  <rect x="620" y="220" width="10" height="10" fill="#26a69a"/>
+  <rect x="633" y="225" width="10" height="90" fill="#ef5350"/>
+  <line x1="638" y1="220" x2="638" y2="320" stroke="#ef5350" stroke-width="1.5"/>
+  <rect x="646" y="240" width="10" height="55" fill="#26a69a"/>
+  <rect x="659" y="235" width="10" height="15" fill="#26a69a"/>
+
+  <text x="700" y="345" fill="#d1d4dc" font-size="12">Bien dong cuc doan tren MOI khung</text>
+  <text x="700" y="363" fill="#d1d4dc" font-size="12">cung luc - khong phan anh mot</text>
+  <text x="700" y="381" fill="#d1d4dc" font-size="12">narrative HTF co chu dich</text>
+
+  <rect x="620" y="400" width="260" height="40" fill="rgba(239,83,80,0.15)" stroke="#ef5350" stroke-width="1"/>
+  <text x="750" y="424" text-anchor="middle" fill="#ef5350" font-size="12">Tin hieu: DUNG NGOAI, khong giao dich</text>
+
+  <!-- Legend -->
+  <g transform="translate(40,470)">
+    <rect x="0" y="0" width="14" height="14" fill="#26a69a"/>
+    <text x="20" y="12" fill="#d1d4dc" font-size="12">Nen tang</text>
+    <rect x="120" y="0" width="14" height="14" fill="#ef5350"/>
+    <text x="140" y="12" fill="#d1d4dc" font-size="12">Nen giam</text>
+    <rect x="240" y="0" width="14" height="14" fill="rgba(255,152,0,0.25)" stroke="#ff9800"/>
+    <text x="260" y="12" fill="#d1d4dc" font-size="12">Vung POI (OB)</text>
+    <line x1="400" y1="7" x2="430" y2="7" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <text x="436" y="12" fill="#d1d4dc" font-size="12">Thanh khoan</text>
+    <line x1="600" y1="7" x2="630" y2="7" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="636" y="12" fill="#d1d4dc" font-size="12">Dong lenh xuyen tang</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#ffffff"/>
+    </marker>
+  </defs>
+</svg>

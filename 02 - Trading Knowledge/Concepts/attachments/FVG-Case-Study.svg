@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="700" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Case Study — EURUSD Long: Sweep London → Displacement → FVG CE</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">Thứ Ba 14/04, London Open — R:R thực chiến +9.8R trung bình</text>
+
+  <!-- price axis labels -->
+  <text x="1100" y="120" font-size="12" fill="#94a3b8">1.0910 (BSL)</text>
+  <line x1="60" y1="125" x2="1140" y2="125" stroke="#eab308" stroke-width="1.3" stroke-dasharray="6,3"/>
+
+  <text x="1100" y="595" font-size="12" fill="#94a3b8">1.0745 (SSL)</text>
+  <line x1="60" y1="590" x2="1140" y2="590" stroke="#eab308" stroke-width="1.3" stroke-dasharray="6,3"/>
+
+  <!-- pre-sweep candles descending -->
+  <g>
+    <line x1="110" y1="480" x2="110" y2="440" stroke="#ef4444" stroke-width="2"/><rect x="99" y="450" width="22" height="25" fill="#ef4444"/>
+    <line x1="160" y1="510" x2="160" y2="470" stroke="#ef4444" stroke-width="2"/><rect x="149" y="480" width="22" height="25" fill="#ef4444"/>
+    <line x1="210" y1="560" x2="210" y2="500" stroke="#ef4444" stroke-width="2"/><rect x="199" y="510" width="22" height="40" fill="#ef4444"/>
+  </g>
+  <!-- sweep candle wicking below SSL -->
+  <line x1="260" y1="605" x2="260" y2="540" stroke="#ef4444" stroke-width="2"/>
+  <rect x="249" y="550" width="22" height="45" fill="#ef4444"/>
+  <polygon points="260,600 250,585 270,585" fill="#f97316"/>
+  <text x="260" y="630" font-size="12" fill="#f97316" text-anchor="middle">Sweep SSL 1.0745</text>
+
+  <!-- displacement candles up -->
+  <line x1="320" y1="560" x2="320" y2="380" stroke="#22c55e" stroke-width="2"/>
+  <rect x="309" y="390" width="22" height="165" fill="#22c55e"/>
+  <text x="320" y="370" font-size="11" fill="#94a3b8" text-anchor="middle">Displ. 1</text>
+  <line x1="380" y1="400" x2="380" y2="300" stroke="#22c55e" stroke-width="2"/>
+  <rect x="369" y="310" width="22" height="85" fill="#22c55e"/>
+  <text x="380" y="290" font-size="11" fill="#94a3b8" text-anchor="middle">Displ. 2 (BOS)</text>
+
+  <!-- FVG zone -->
+  <rect x="309" y="330" width="90" height="55" fill="#22c55e" opacity="0.25"/>
+  <line x1="309" y1="357" x2="399" y2="357" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="405" y="361" font-size="12" fill="#eab308">CE 1.07565</text>
+  <text x="309" y="400" font-size="11" fill="#94a3b8">FVG 1.0752–1.0761</text>
+
+  <!-- retrace candle to CE -->
+  <line x1="460" y1="400" x2="460" y2="345" stroke="#22c55e" stroke-width="2"/>
+  <rect x="449" y="352" width="22" height="35" fill="#22c55e"/>
+  <polygon points="460,355 448,340 472,340" fill="#38bdf8"/>
+  <text x="460" y="330" font-size="12" fill="#38bdf8" text-anchor="middle">Entry 1.0758</text>
+
+  <!-- stop line -->
+  <line x1="309" y1="410" x2="480" y2="410" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="490" y="414" font-size="12" fill="#ef4444">Stop 1.0748</text>
+
+  <!-- expansion up to targets -->
+  <line x1="530" y1="345" x2="530" y2="260" stroke="#22c55e" stroke-width="2"/>
+  <rect x="519" y="270" width="22" height="75" fill="#22c55e"/>
+  <line x1="600" y1="270" x2="600" y2="195" stroke="#22c55e" stroke-width="2"/>
+  <rect x="589" y="205" width="22" height="65" fill="#22c55e"/>
+  <text x="600" y="185" font-size="12" fill="#a78bfa" text-anchor="middle">TP1 1.0820 (+6.4R, đóng 50%)</text>
+  <line x1="600" y1="200" x2="600" y2="200" stroke="#a78bfa"/>
+
+  <line x1="670" y1="200" x2="670" y2="150" stroke="#22c55e" stroke-width="2"/>
+  <rect x="659" y="158" width="22" height="42" fill="#22c55e"/>
+  <line x1="740" y1="160" x2="740" y2="128" stroke="#22c55e" stroke-width="2"/>
+  <rect x="729" y="135" width="22" height="25" fill="#22c55e"/>
+  <text x="800" y="130" font-size="12" fill="#a78bfa">TP2 gần 1.0910 (+14R, đóng thủ công 1.0898)</text>
+
+  <!-- annotation box -->
+  <rect x="850" y="380" width="300" height="230" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="870" y="408" font-size="14" fill="#e2e8f0" font-weight="bold">Diễn biến theo giờ</text>
+  <text x="870" y="432" font-size="12" fill="#94a3b8">08:00 London — sweep SSL 1.0745</text>
+  <text x="870" y="452" font-size="12" fill="#94a3b8">08:05–08:20 — 2 nến displacement,</text>
+  <text x="870" y="470" font-size="12" fill="#94a3b8">MSS bullish, tạo FVG H1</text>
+  <text x="870" y="492" font-size="12" fill="#94a3b8">11:20 — giá retrace về CE 1.0757</text>
+  <text x="870" y="512" font-size="12" fill="#94a3b8">M5 bullish MSS → Entry 1.0758</text>
+  <text x="870" y="534" font-size="12" fill="#94a3b8">15:40 cùng ngày — chạm TP1</text>
+  <text x="870" y="554" font-size="12" fill="#94a3b8">Phiên NY hôm sau — gần chạm TP2</text>
+  <text x="870" y="580" font-size="13" fill="#22c55e" font-weight="bold">Kết quả: +9.8R trung bình</text>
+
+  <text x="60" y="670" font-size="13" fill="#94a3b8" font-style="italic">1→2→3: Sweep SSL → Displacement phá BOS tạo FVG → Retrace CE + M5 MSS → Entry → Target liquidity xa</text>
+</svg>

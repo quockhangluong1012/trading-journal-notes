@@ -52,7 +52,7 @@
 <text x="556" y="318" font-size="10" fill="#9aa0a6">  impulse (leg 3) coi nhu that bai</text>
 <text x="556" y="332" font-size="10" fill="#9aa0a6">  (theo dung quy tac OTE muc 5).</text>
 <rect x="556" y="352" width="300" height="130" rx="5" fill="#191b1f" stroke="#f0a500" stroke-width="1"/>
-<text x="566" y="372" font-size="10" fill="#f0a500" font-weight="bold">Cau hoi con lai (chi Khang tra</text>
+<text x="566" y="372" font-size="10" fill="#f0a500" font-weight="bold">Cau hoi con lai (chi  tra</text>
 <text x="566" y="386" font-size="10" fill="#f0a500" font-weight="bold">loi duoc tu chart that):</text>
 <text x="566" y="406" font-size="9.5" fill="#e6e8ea">Nen dong cua gan nhat DA hay CHUA</text>
 <text x="566" y="420" font-size="9.5" fill="#e6e8ea">dong duoi 1.305? Do la ranh gioi</text>

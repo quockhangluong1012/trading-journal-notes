@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" viewBox="0 0 900 480" font-family="Segoe UI, Arial, sans-serif">
 <rect x="0" y="0" width="900" height="480" rx="12" fill="#191b1f"/>
 <text x="28" y="32" font-size="16" fill="#e6e8ea" font-weight="bold">Tieu chi (e): Phan ung tai vung test - ACCEPT hay REJECT?</text>
-<text x="28" y="50" font-size="10.5" fill="#9aa0a6">Ap dung cho vung 1.305 (launch pad) ma EURUSD dang test lai trong chart cua Khang</text>
+<text x="28" y="50" font-size="10.5" fill="#9aa0a6">Ap dung cho vung 1.305 (launch pad) ma EURUSD dang test lai trong chart cua </text>
 
 <!-- LEFT: reject -->
 <rect x="28" y="66" width="404" height="380" rx="6" fill="#202329" stroke="#2a2d33"/>

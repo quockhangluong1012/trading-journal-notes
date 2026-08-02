@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 4 — NO-TRADE: HTF trung lập, không có bias rõ</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">AUDUSD — giá dao động trong range hẹp cả ngày, không có PD array rõ ràng</text>
+
+<line x1="60" y1="480" x2="900" y2="480" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="360" x2="900" y2="360" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="240" x2="900" y2="240" stroke="#1f2937" stroke-width="1"/>
+
+<rect x="60" y="230" width="840" height="180" fill="rgba(148,163,184,0.06)"/>
+<text x="880" y="248" font-size="11" fill="#94a3b8" text-anchor="end">Range hẹp — không premium/discount rõ</text>
+
+<!-- choppy sideways candles -->
+<rect x="100" y="330" width="12" height="25" fill="#22c55e"/>
+<line x1="106" y1="320" x2="106" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="130" y="320" width="12" height="25" fill="#ef4444"/>
+<line x1="136" y1="310" x2="136" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="160" y="335" width="12" height="20" fill="#22c55e"/>
+<line x1="166" y1="325" x2="166" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="190" y="315" width="12" height="25" fill="#ef4444"/>
+<line x1="196" y1="305" x2="196" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="220" y="330" width="12" height="20" fill="#22c55e"/>
+<line x1="226" y1="320" x2="226" y2="355" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="250" y="325" width="12" height="20" fill="#ef4444"/>
+<line x1="256" y1="315" x2="256" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="280" y="335" width="12" height="20" fill="#22c55e"/>
+<line x1="286" y1="325" x2="286" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="310" y="320" width="12" height="25" fill="#ef4444"/>
+<line x1="316" y1="310" x2="316" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="340" y="330" width="12" height="20" fill="#22c55e"/>
+<line x1="346" y1="320" x2="346" y2="355" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="370" y="315" width="12" height="25" fill="#ef4444"/>
+<line x1="376" y1="305" x2="376" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="400" y="335" width="12" height="20" fill="#22c55e"/>
+<line x1="406" y1="325" x2="406" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="430" y="320" width="12" height="25" fill="#ef4444"/>
+<line x1="436" y1="310" x2="436" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="460" y="330" width="12" height="20" fill="#22c55e"/>
+<line x1="466" y1="320" x2="466" y2="355" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="490" y="325" width="12" height="20" fill="#ef4444"/>
+<line x1="496" y1="315" x2="496" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="520" y="335" width="12" height="20" fill="#22c55e"/>
+<line x1="526" y1="325" x2="526" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="550" y="320" width="12" height="25" fill="#ef4444"/>
+<line x1="556" y1="310" x2="556" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+
+<text x="700" y="300" font-size="14" font-weight="700" fill="#94a3b8" text-anchor="middle">Không có sweep rõ, không có displacement,</text>
+<text x="700" y="322" font-size="14" font-weight="700" fill="#94a3b8" text-anchor="middle">không có MSS đáng tin — chỉ nhiễu</text>
+
+<rect x="620" y="340" width="200" height="1" stroke="#f87171" stroke-width="0"/>
+<path d="M 680 400 L 700 380 L 720 400 L 700 420 Z" fill="none" stroke="#f87171" stroke-width="2"/>
+<text x="700" y="405" font-size="16" fill="#f87171" text-anchor="middle" font-weight="700">✗</text>
+<text x="700" y="445" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">KHÔNG VÀO LỆNH</text>
+
+<rect x="60" y="440" width="840" height="130" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="80" y="465" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">Vì sao đứng ngoài: D1/H4 đi ngang trong range hẹp, ADR ngày hôm đó chỉ đạt 35% trung bình</text>
+<text x="80" y="485" font-size="12" fill="#94a3b8" text-anchor="start">Không xác định được đâu là "old high" đáng tin để chờ sweep — mọi đỉnh đều là nhiễu ngắn hạn</text>
+<text x="80" y="505" font-size="12" fill="#94a3b8" text-anchor="start">Kỷ luật đúng ở đây là KHÔNG giao dịch, dù cảm giác "cả ngày chưa có lệnh nào" rất khó chịu</text>
+<text x="80" y="525" font-size="12" fill="#94a3b8" text-anchor="start">Bài học: setup A+ đòi hỏi bối cảnh rõ ràng — thà bỏ lỡ một ngày còn hơn ép một lệnh không có edge</text>
+</svg>

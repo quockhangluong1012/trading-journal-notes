@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760">
+  <rect width="1280" height="760" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">CS-B2. NQ - CHoCH cuối tuần, skip đúng (0R, tránh thua)</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Tái dựng minh họa từ mẫu backtest - H4, gap Chủ Nhật qua lower-high, không trade</text>
+
+  <!-- lower high line -->
+  <line x1="60" y1="330" x2="1220" y2="330" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.8"/>
+  <text x="1210" y="323" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">lower-high 19610 (bảo vệ, Thứ Năm)</text>
+
+  <!-- downtrend H4 leading -->
+  <g>
+    <line x1="110" y1="220" x2="110" y2="280" stroke="#ef5350" stroke-width="2"/>
+    <rect x="100" y="225" width="20" height="40" fill="#ef5350" rx="1"/>
+    <line x1="160" y1="250" x2="160" y2="310" stroke="#ef5350" stroke-width="2"/>
+    <rect x="150" y="255" width="20" height="40" fill="#ef5350" rx="1"/>
+    <line x1="210" y1="280" x2="210" y2="340" stroke="#ef5350" stroke-width="2"/>
+    <rect x="200" y="285" width="20" height="40" fill="#ef5350" rx="1"/>
+    <line x1="260" y1="310" x2="260" y2="370" stroke="#ef5350" stroke-width="2"/>
+    <rect x="250" y="315" width="20" height="40" fill="#ef5350" rx="1"/>
+  </g>
+  <text x="180" y="400" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">downtrend H4 4 ngày: 19850 -&gt; 19540</text>
+  <text x="260" y="420" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">đóng cửa Thứ Sáu 19560</text>
+
+  <line x1="280" y1="345" x2="280" y2="365" stroke="#787b86" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <!-- gap zone -->
+  <rect x="300" y="140" width="130" height="220" fill="#ff9800" opacity="0.10" stroke="#ff9800" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="365" y="165" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff9800">khoảng trống báo giá</text>
+  <text x="365" y="183" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff9800">gap_size_atr ~2.1x</text>
+
+  <!-- Sunday open candle gapping above lower-high -->
+  <line x1="440" y1="150" x2="440" y2="210" stroke="#26a69a" stroke-width="2.5"/>
+  <rect x="426" y="155" width="28" height="45" fill="#26a69a" rx="1"/>
+  <text x="440" y="130" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ff9800">mở cửa Chủ Nhật 18:05</text>
+  <text x="440" y="230" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">đóng 19695 - qua lower-high</text>
+
+  <rect x="490" y="140" width="230" height="46" rx="8" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="605" y="169" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#ff6b6b">✗ gap_origin: weekend</text>
+
+  <!-- decision box: no trade -->
+  <rect x="490" y="200" width="260" height="70" rx="8" fill="#787b86" opacity="0.14" stroke="#787b86" stroke-width="1.5"/>
+  <text x="620" y="225" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Quyết định: KHÔNG Long</text>
+  <text x="620" y="245" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">chỉ theo dõi mức 19610</text>
+  <text x="620" y="263" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">skip đúng theo rule EC-B5</text>
+
+  <!-- Monday Asia/London: price fills gap down -->
+  <g>
+    <line x1="500" y1="240" x2="500" y2="300" stroke="#ef5350" stroke-width="2"/>
+    <rect x="490" y="245" width="20" height="45" fill="#ef5350" rx="1"/>
+    <line x1="550" y1="280" x2="550" y2="340" stroke="#ef5350" stroke-width="2"/>
+    <rect x="540" y="285" width="20" height="45" fill="#ef5350" rx="1"/>
+    <line x1="600" y1="320" x2="600" y2="380" stroke="#ef5350" stroke-width="2"/>
+    <rect x="590" y="325" width="20" height="45" fill="#ef5350" rx="1"/>
+  </g>
+  <text x="550" y="400" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">Thứ Hai phiên Á/London: lấp dần gap</text>
+
+  <!-- New lower high shallower than 19610 -->
+  <line x1="640" y1="365" x2="1220" y2="365" stroke="#b48ead" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.6"/>
+  <text x="1210" y="358" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#b48ead">lower-high mới 19600 (thấp hơn 19610)</text>
+
+  <g>
+    <line x1="680" y1="330" x2="680" y2="380" stroke="#26a69a" stroke-width="2"/>
+    <rect x="670" y="335" width="20" height="40" fill="#26a69a" rx="1" opacity="0.7"/>
+  </g>
+
+  <!-- Continue down through Friday close and beyond -->
+  <g>
+    <line x1="740" y1="380" x2="740" y2="450" stroke="#ef5350" stroke-width="2"/>
+    <rect x="730" y="385" width="20" height="55" fill="#ef5350" rx="1"/>
+    <line x1="790" y1="420" x2="790" y2="500" stroke="#ef5350" stroke-width="2"/>
+    <rect x="780" y="425" width="20" height="65" fill="#ef5350" rx="1"/>
+    <line x1="840" y1="470" x2="840" y2="550" stroke="#ef5350" stroke-width="2"/>
+    <rect x="830" y="475" width="20" height="65" fill="#ef5350" rx="1"/>
+  </g>
+  <text x="790" y="580" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ef5350">02:40 London: chạm 19565, gần hết lấp gap</text>
+  <text x="790" y="600" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ef5350">tiếp tục xuống 19480 - downtrend H4 xác nhận tiếp diễn</text>
+
+  <rect x="900" y="150" width="280" height="70" rx="8" fill="#26a69a" opacity="0.16" stroke="#26a69a" stroke-width="1.5"/>
+  <text x="1040" y="178" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#26a69a">✓ Kết quả: 0R (đứng ngoài)</text>
+  <text x="1040" y="200" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">tránh được lệnh Long sẽ thua</text>
+
+  <text x="640" y="660" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Giá trị của skip đúng: tương đương một lệnh thắng nếu quy đổi ra R đã tránh được</text>
+
+  <text x="640" y="720" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Xem EC-B5 - đối chiếu futures để xác nhận gap_origin trước khi tin CHoCH cuối tuần</text>
+</svg>

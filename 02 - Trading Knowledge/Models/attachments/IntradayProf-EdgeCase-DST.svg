@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Arial, sans-serif">
+<defs><marker id="arrRedDST" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#f87171"/></marker></defs>
+<rect width="960" height="520" rx="12" fill="#0d1117"/>
+<text x="480.0" y="36.0" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Edge case — DST làm lệch khung giờ CBDR/killzone</text>
+<line x1="100.0" y1="180.0" x2="860.0" y2="180.0" stroke="#334155" stroke-width="1.5"/>
+<rect x="350.0" y="140.0" width="200.0" height="80.0" rx="0" fill="rgba(59,130,246,0.20)" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="100.0" y="128.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Trước DST — CBDR 14h–20h khớp đúng khung</text>
+<line x1="100.0" y1="340.0" x2="860.0" y2="340.0" stroke="#334155" stroke-width="1.5"/>
+<rect x="410.0" y="300.0" width="200.0" height="80.0" rx="0" fill="rgba(239,68,68,0.20)" stroke="#f87171" stroke-width="1.5"/>
+<text x="100.0" y="288.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Sau DST (lệch 1 giờ) — khối CBDR dịch lệch so với nhãn giờ</text>
+<path d="M 350,230 Q 380,260.0 410,290" stroke="#f87171" stroke-width="2.5" fill="none" marker-end="url(#arrRedDST)"/>
+<text x="480.0" y="460.0" font-size="13" font-weight="400" fill="#f87171" text-anchor="middle">Lệch 1 giờ nếu nguồn dữ liệu chưa đổi timezone</text>
+</svg>

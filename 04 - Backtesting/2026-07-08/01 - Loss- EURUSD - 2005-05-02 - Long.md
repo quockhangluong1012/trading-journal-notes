@@ -73,7 +73,7 @@ tags:
 # Backtest 2005-05-02 — EURUSD Long — POI & Step Decision
 
 > [!info] Ghi chú chuyển đổi template (2026-07-17)
-> File này được convert từ template backtest cũ sang **template POI & Step Decision** theo yêu cầu của Khang. Toàn bộ dữ liệu gốc (entry/SL/TP/R/result/lesson learned) được **giữ nguyên 100%**. Các field mới của template (`poi_rank`, `entry_type`, `entry_precision`, `step1-7_ok`, `first_error_step`, `confluence_score`...) **không có sẵn** trong bản ghi gốc nên được **suy luận lại** từ phần phân tích tường thuật đã viết (theo yêu cầu của Khang). Field nào không đủ căn cứ trong bài viết gốc để suy luận (SMT, CISD, macro time, NWOG/NDOG, −2SD, IDM, fill_depth_pct, risk_percent...) được **để trống** thay vì đoán — không fabricate.
+> File này được convert từ template backtest cũ sang **template POI & Step Decision** theo yêu cầu của . Toàn bộ dữ liệu gốc (entry/SL/TP/R/result/lesson learned) được **giữ nguyên 100%**. Các field mới của template (`poi_rank`, `entry_type`, `entry_precision`, `step1-7_ok`, `first_error_step`, `confluence_score`...) **không có sẵn** trong bản ghi gốc nên được **suy luận lại** từ phần phân tích tường thuật đã viết (theo yêu cầu của ). Field nào không đủ căn cứ trong bài viết gốc để suy luận (SMT, CISD, macro time, NWOG/NDOG, −2SD, IDM, fill_depth_pct, risk_percent...) được **để trống** thay vì đoán — không fabricate.
 
 ---
 

@@ -3,13 +3,13 @@ type: market-analysis
 status: methodology
 date: 2026-07-17
 symbol: chưa xác định (ảnh chart không có nhãn symbol/giá)
-timeframe: chưa xác định (ảnh không nhãn trục thời gian; cấu trúc gợi ý một khung HTF, có thể D1/H4 — cần Khang xác nhận)
+timeframe: chưa xác định (ảnh không nhãn trục thời gian; cấu trúc gợi ý một khung HTF, có thể D1/H4 — cần  xác nhận)
 session: không rõ (ảnh không nhãn thời gian)
 htf_bias: "bearish trong distribution leg → đang xem xét đảo bullish sau sweep + displacement tại 'đường đỏ', chờ xác nhận MSS HTF trước khi kết luận"
 setup: "Re-mapping Dealing Range Low sau Liquidity Sweep + Displacement — điều kiện để dời DR Low từ đáy gốc (gray box) lên vị trí đáy mới ('đường đỏ')"
 in_trade: false
 draw_on_liquidity: chưa xác định (ảnh không nhãn giá cụ thể — xem mục 9 câu hỏi cần chốt)
-key_poi: "FVG/OB hình thành trong cây nến displacement ngay sau 'đường đỏ' — ứng viên POI của range mới, cần Khang xác nhận còn unmitigated bằng giá thật"
+key_poi: "FVG/OB hình thành trong cây nến displacement ngay sau 'đường đỏ' — ứng viên POI của range mới, cần  xác nhận còn unmitigated bằng giá thật"
 invalidation: "đóng nến (thân, không chỉ wick) dưới 'đường đỏ' sau khi swing low đã hình thành tại đó — vô hiệu hóa toàn bộ việc remap DR Low lên vị trí này"
 topic: "điều kiện & quy trình remap Dealing Range Low sau liquidity sweep + displacement; phân biệt sweep thật vs đáy thấp nhất tình cờ; đồng bộ DR High khi remap; áp dụng khung quyết định Partially vs Fully Consumed; over-remap vs under-remap"
 tags:
@@ -27,7 +27,7 @@ tags:
 # Re-map Dealing Range Low sau Sweep + Displacement — 2026-07-17
 
 > [!info] Trạng thái
-> **METHODOLOGY — không vào lệnh.** Note này tổng hợp và đào sâu buổi phân tích một chart (không nhãn symbol/giá/khung thời gian) mà Khang gửi trong chat, xoay quanh câu hỏi cốt lõi: *"Điều kiện gì để tôi re-map Dealing Range Low hiện tại (đáy gốc, khoanh bằng box xám) lên vị trí 'đường kẻ đỏ' mà giá vừa quét rồi displacement mạnh?"* Toàn bộ khung lý thuyết áp dụng ở đây đã có sẵn trong vault tại [[12 - Dealing Range]] và đặc biệt [[37 - Re-mapping Dealing Range sau Displacement]] — note này **không lặp lại** hai bài đó mà **áp dụng trực tiếp** vào case cụ thể trên chart của Khang, đồng thời bổ sung một số góc phân tích sâu hơn (đồng bộ DR High, khung Partially/Fully Consumed, rủi ro over/under-remap) đặt trong đúng bối cảnh của case này.
+> **METHODOLOGY — không vào lệnh.** Note này tổng hợp và đào sâu buổi phân tích một chart (không nhãn symbol/giá/khung thời gian) mà  gửi trong chat, xoay quanh câu hỏi cốt lõi: *"Điều kiện gì để tôi re-map Dealing Range Low hiện tại (đáy gốc, khoanh bằng box xám) lên vị trí 'đường kẻ đỏ' mà giá vừa quét rồi displacement mạnh?"* Toàn bộ khung lý thuyết áp dụng ở đây đã có sẵn trong vault tại [[12 - Dealing Range]] và đặc biệt [[37 - Re-mapping Dealing Range sau Displacement]] — note này **không lặp lại** hai bài đó mà **áp dụng trực tiếp** vào case cụ thể trên chart của , đồng thời bổ sung một số góc phân tích sâu hơn (đồng bộ DR High, khung Partially/Fully Consumed, rủi ro over/under-remap) đặt trong đúng bối cảnh của case này.
 
 ---
 ![[DealingRange-RemapCase-20260717-1.png]]
@@ -40,7 +40,7 @@ Chart cho thấy một chuỗi diễn biến khá kinh điển của một nhị
 3. Sau khi chạm đỉnh, giá bước vào một **distribution leg xuống**: chuỗi lower-highs/lower-lows nối tiếp nhau, đặc trưng của MMSM.
 4. Distribution leg kết thúc bằng một cú **quét xuống một mức cụ thể (đường kẻ đỏ)**, ngay sau đó là **một cây nến displacement tăng rất mạnh** đẩy giá bật lên khỏi đường đỏ.
 
-Câu hỏi của Khang: đường đỏ đó có đủ điều kiện để **thay thế vai trò DR Low** (hiện đang là đường kẻ xám phía dưới, đáy của box tích lũy gốc) hay không — và điều kiện cụ thể là gì.
+Câu hỏi của : đường đỏ đó có đủ điều kiện để **thay thế vai trò DR Low** (hiện đang là đường kẻ xám phía dưới, đáy của box tích lũy gốc) hay không — và điều kiện cụ thể là gì.
 
 ![[DealingRange-Remap-BeforeAfter-20260717.svg]]
 *Sơ đồ 1: So sánh Before/After — dùng range CŨ (đáy = box xám gốc) cho ra vị trí premium/discount mập mờ; dùng range MỚI (đáy = đường đỏ, đỉnh = swing high ngay trước leg giảm cuối) cho ra vị trí rõ ràng hơn (discount, khớp với POI vừa hình thành).*
@@ -68,7 +68,7 @@ Câu hỏi của Khang: đường đỏ đó có đủ điều kiện để **th
 
 Theo nguyên tắc cốt lõi của [[37 - Re-mapping Dealing Range sau Displacement]]: *"Sau mỗi nhịp displacement lấy external liquidity của range cũ, range cũ đã chết — phải vẽ lại dealing range trên swing mới để đo lại premium/discount, phân loại lại internal/external liquidity và tìm POI tiếp theo."*
 
-Áp dụng vào case này: nếu Khang tiếp tục dùng range CŨ (đáy = box xám) để tính Equilibrium, thì vị trí giá ngay sau cây nến displacement tại đường đỏ sẽ rơi vào đâu đó **giữa range** — không rõ premium hay discount, R:R không đo được, và quan trọng nhất là **POI mới (FVG của cây displacement) sẽ không được nhận diện đúng vai trò**, vì nó không nằm ở "nửa range" nào có ý nghĩa trên bản đồ cũ. Đây đúng là bẫy được cảnh báo: *"OB cũ mitigate, không còn POI — sai ở đâu? POI không biến mất mà đổi dạng."* Ở case này POI không phải "OB cũ mitigate" mà là "đang dùng sai bản đồ nên không thấy vị trí thật của POI mới".
+Áp dụng vào case này: nếu  tiếp tục dùng range CŨ (đáy = box xám) để tính Equilibrium, thì vị trí giá ngay sau cây nến displacement tại đường đỏ sẽ rơi vào đâu đó **giữa range** — không rõ premium hay discount, R:R không đo được, và quan trọng nhất là **POI mới (FVG của cây displacement) sẽ không được nhận diện đúng vai trò**, vì nó không nằm ở "nửa range" nào có ý nghĩa trên bản đồ cũ. Đây đúng là bẫy được cảnh báo: *"OB cũ mitigate, không còn POI — sai ở đâu? POI không biến mất mà đổi dạng."* Ở case này POI không phải "OB cũ mitigate" mà là "đang dùng sai bản đồ nên không thấy vị trí thật của POI mới".
 
 ---
 
@@ -85,9 +85,9 @@ Theo nguyên tắc cốt lõi của [[37 - Re-mapping Dealing Range sau Displace
 
 1. Chỉ ra được **cụ thể** đáy/cụm equal lows nào đang bị quét — nếu không chỉ tay được vào một mức có tên, mặc định **không phải sweep**, chỉ là điểm thấp nhất tình cờ của một cú giảm liên tục.
 2. Giá **thực sự lấy** mức đó (wick hoặc thân vượt qua).
-3. **Reject nhanh + reclaim**: đóng nến quay trở lại trên mức vừa lấy — đây chính là hành vi Khang mô tả ("ngay sau khi chạm đường đỏ có nến đẩy giá lên rất dốc").
+3. **Reject nhanh + reclaim**: đóng nến quay trở lại trên mức vừa lấy — đây chính là hành vi  mô tả ("ngay sau khi chạm đường đỏ có nến đẩy giá lên rất dốc").
 
-> [!question] Câu hỏi Khang cần tự trả lời trên chart gốc (có giá thật)
+> [!question] Câu hỏi  cần tự trả lời trên chart gốc (có giá thật)
 > Ngay bên trái đường đỏ, có một đáy swing rõ ràng hoặc cụm equal lows nào không? Nếu chuỗi giảm chỉ là một dốc liên tục không có đáy nào được test lại (không có equal lows), thì đường đỏ nhiều khả năng chỉ là điểm cực trị của một cú giảm, và cần hạ độ tin cậy của "sweep" xuống — vẫn có thể remap nhưng với ít bằng chứng structural hơn.
 
 ### 3.2 — Phải có Displacement + MSS xác nhận ngay sau sweep
@@ -105,7 +105,7 @@ FVG tạo ra trong cây displacement là **PD array mới** — Consequent Encro
 
 ### 3.4 — Chưa có nến nào đóng thân dưới đường đỏ sau đó (invalidation)
 
-Đây là điều kiện phủ quyết: nếu sau khi tạo swing low tại đường đỏ, xuất hiện bất kỳ nến nào **đóng thân** (không chỉ wick) bên dưới nó, DR Low mới này bị vô hiệu ngay lập tức — không phải "giảm độ tin cậy", mà là **loại bỏ hoàn toàn**, phải tìm đáy sâu hơn. Điều kiện này cần Khang tự theo dõi tiếp các nến ngoài khung ảnh hiện có.
+Đây là điều kiện phủ quyết: nếu sau khi tạo swing low tại đường đỏ, xuất hiện bất kỳ nến nào **đóng thân** (không chỉ wick) bên dưới nó, DR Low mới này bị vô hiệu ngay lập tức — không phải "giảm độ tin cậy", mà là **loại bỏ hoàn toàn**, phải tìm đáy sâu hơn. Điều kiện này cần  tự theo dõi tiếp các nến ngoài khung ảnh hiện có.
 
 ### 3.5 — DR High phải được đồng bộ, không giữ nguyên đỉnh của range cũ
 
@@ -115,16 +115,16 @@ FVG tạo ra trong cây displacement là **PD array mới** — Consequent Encro
 
 Không bắt buộc tuyệt đối, nhưng một sweep + MSS xảy ra trong London hoặc NY Kill Zone (xem [[18 - Kill Zones]]) có độ tin cậy thống kê cao hơn do đây là khung giờ order flow institutional hoạt động mạnh nhất. Nếu chuỗi sweep này rơi vào phiên Á thanh khoản thấp, nên hạ độ tin cậy của range mới và chờ xác nhận thêm ở phiên kế tiếp trước khi dùng nó làm cơ sở cho một entry thật.
 
-### Bảng tổng hợp — điều kiện nào đã quan sát được từ ảnh, điều kiện nào cần Khang xác nhận thêm
+### Bảng tổng hợp — điều kiện nào đã quan sát được từ ảnh, điều kiện nào cần  xác nhận thêm
 
-| # | Điều kiện | Quan sát được từ ảnh Khang gửi | Cần xác nhận thêm bằng giá/dữ liệu thật |
+| # | Điều kiện | Quan sát được từ ảnh  gửi | Cần xác nhận thêm bằng giá/dữ liệu thật |
 |---|---|---|---|
 | 1 | Sweep thật (có pool cụ thể bị lấy) | Có một wick/thân chạm xuống đường đỏ trước khi bật lên | Xác định chính xác pool nào bị quét (đáy swing/equal lows cụ thể) |
 | 2 | Displacement + MSS | Có một cây nến rất mạnh ngay sau đường đỏ | Xác nhận nó phá qua minor high nào của distribution leg, ghi giá |
 | 3 | FVG còn nguyên (CE) | Cây nến đủ lớn để khả năng cao có để lại FVG | Đo chính xác biên FVG (high/low), theo dõi có bị lấp lại không |
 | 4 | Không invalidation sau đó | Trong khung ảnh, giá tiếp tục đi lên sau đường đỏ | Theo dõi các nến tiếp theo ngoài khung ảnh hiện tại |
 | 5 | DR High đồng bộ | Có thể thấy một vài đỉnh nhỏ trong distribution leg | Chọn đúng swing high làm DR High mới, ghi giá cụ thể (mục 4) |
-| 6 | Kill Zone phù hợp | Không xác định — ảnh không nhãn thời gian | Khang xác nhận phiên giao dịch tại thời điểm sweep |
+| 6 | Kill Zone phù hợp | Không xác định — ảnh không nhãn thời gian |  xác nhận phiên giao dịch tại thời điểm sweep |
 
 ---
 
@@ -155,7 +155,7 @@ Sau khi có cặp Low (đường đỏ) – High (swing mới), Equilibrium mớ
 > [!warning] Khi ba tiêu chí cho tín hiệu trái chiều
 > Nếu không rõ ràng (ví dụ khoảng cách gần external nhưng cấu trúc H4 vẫn chưa break) — mặc định giả định **Partially Consumed nhưng giảm size**: vẫn remap và theo dõi tiếp cùng hướng, nhưng không coi đây là xác nhận đảo bias hoàn toàn, đồng thời theo dõi sát các dấu hiệu đảo ở khung lớn hơn (sweep thất bại, MSS ngược trên LTF).
 
-Không có đủ giá cụ thể từ ảnh hiện tại để kết luận chắc chắn thuộc trường hợp nào — đây là câu hỏi Khang cần tự đối chiếu trên chart thật có đầy đủ trục giá.
+Không có đủ giá cụ thể từ ảnh hiện tại để kết luận chắc chắn thuộc trường hợp nào — đây là câu hỏi  cần tự đối chiếu trên chart thật có đầy đủ trục giá.
 
 ---
 
@@ -166,11 +166,11 @@ Theo đúng chuỗi tư duy chuẩn của dự án (HTF bias → dealing range �
 | Bước | Trạng thái trong case này |
 |---|---|
 | **HTF Bias** | Ban đầu bullish (nhịp tăng gốc) → chuyển bearish trong distribution leg → đang xem xét đảo lại bullish *nếu* toàn bộ 6 điều kiện ở mục 3 được xác nhận bằng dữ liệu thật |
-| **Dealing Range** | Range CŨ (đáy box xám) hết tính thời sự cho mục đích đo premium/discount hiện tại; range MỚI = [đường đỏ] – [swing high trước leg giảm cuối], còn chờ Khang xác nhận giá cụ thể |
+| **Dealing Range** | Range CŨ (đáy box xám) hết tính thời sự cho mục đích đo premium/discount hiện tại; range MỚI = [đường đỏ] – [swing high trước leg giảm cuối], còn chờ  xác nhận giá cụ thể |
 | **Liquidity** | Cần xác định rõ pool nào bị quét tại đường đỏ (đáy swing/equal lows của chính distribution leg) — hiện là "chưa xác định" trong frontmatter, cần điền khi có giá thật |
 | **MSS Confirmation** | Cây displacement sau đường đỏ cần được xác nhận phá qua minor high nào của distribution leg — ghi giá cụ thể khi log |
 | **PD Array Entry** | FVG/OB hình thành trong cây displacement — POI ứng viên, cần xác nhận còn unmitigated và nằm ở discount của range MỚI |
-| **Target** | Draw on liquidity tiếp theo — có thể là external phía trên (DR High mới, hoặc xa hơn là DR High gốc nếu case này là Fully Consumed) — cần Khang xác định bằng giá thật |
+| **Target** | Draw on liquidity tiếp theo — có thể là external phía trên (DR High mới, hoặc xa hơn là DR High gốc nếu case này là Fully Consumed) — cần  xác định bằng giá thật |
 
 ---
 
@@ -225,4 +225,4 @@ Nếu bất kỳ mục nào chưa xác nhận được — chưa nên coi range 
 - Mistakes cần tránh: [[06 - Mistake - Not Have Market Structure Shift]] · [[10 - Mistake - FVG Not Valid]] · [[03 - Mistake - Entry When MSS not in POI Zone]] · [[08 - Mistake - Weak Displacement]]
 
 ---
-*Ghi chú: date = ngày phân tích (VN, UTC+7). Note phương pháp (methodology) tổng hợp từ ảnh chart Khang gửi trong chat — không log backtest vì không vào lệnh và ảnh gốc không nhãn giá/symbol. 3 sơ đồ SVG minh họa nguyên lý, không phải chart thật. Khi Khang bổ sung ảnh gốc + giá cụ thể, cập nhật lại các câu hỏi ở mục 9.*
+*Ghi chú: date = ngày phân tích (VN, UTC+7). Note phương pháp (methodology) tổng hợp từ ảnh chart  gửi trong chat — không log backtest vì không vào lệnh và ảnh gốc không nhãn giá/symbol. 3 sơ đồ SVG minh họa nguyên lý, không phải chart thật. Khi  bổ sung ảnh gốc + giá cụ thể, cập nhật lại các câu hỏi ở mục 9.*

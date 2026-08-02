@@ -1,0 +1,38 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="32" font-size="15" font-weight="700" fill="#1F2937">Khi SMT PHẢN BỘI — 3 kiểu SMT tan rã (thực chiến)</text>
+<text x="24" y="52" font-size="11.5" fill="#6B7280">SMT không phải bùa hộ mệnh; đây là 3 cách nó thất bại mà chỉ trade/backtest nhiều mới thấy</text>
+<!-- A laggard catches up -->
+<rect x="24" y="66" width="352" height="196" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="38" y="88" font-size="12" font-weight="700" fill="#B91C1C">A. Laggard "đuổi kịp" (SMT trễ, không đảo)</text>
+<line x1="44" y1="200" x2="200" y2="200" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M55,150 L80,175 L105,200 L120,215 L140,200 L160,180" fill="none" stroke="#374151" stroke-width="1.8"/>
+<text x="48" y="140" font-size="8.5" fill="#374151">NQ: LL (quét)</text>
+<path d="M215,150 L240,172 L265,192 L285,200 L305,215 L330,232" fill="none" stroke="#6B7280" stroke-width="1.8"/>
+<text x="215" y="140" font-size="8.5" fill="#374151">ES: HL... rồi vài nến sau CŨNG phá đáy</text>
+<circle cx="330" cy="232" r="5" fill="none" stroke="#B91C1C" stroke-width="2"/>
+<text x="38" y="234" font-size="9.5" fill="#374151">SMT chỉ là ĐỘ TRỄ giao hàng, không phải đảo.</text>
+<text x="38" y="248" font-size="9.5" font-weight="700" fill="#B91C1C">Sửa: luôn cần sweep + CISD/MSS mới vào.</text>
+<!-- B regime break -->
+<rect x="384" y="66" width="352" height="196" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="398" y="88" font-size="12" font-weight="700" fill="#B91C1C">B. Tương quan gãy vì tin riêng</text>
+<path d="M404,190 L430,170 L455,150 L480,135 L505,120" fill="none" stroke="#374151" stroke-width="1.8"/>
+<text x="404" y="128" font-size="8.5" font-weight="700" fill="#374151">EUR (ECB dovish)</text>
+<path d="M560,120 L585,140 L610,165 L640,190 L680,215" fill="none" stroke="#6B7280" stroke-width="1.8"/>
+<text x="560" y="112" font-size="8.5" fill="#374151">GBP (BoE hawkish)</text>
+<text x="520" y="165" font-size="16" fill="#B91C1C">⚡</text>
+<text x="398" y="234" font-size="9.5" fill="#374151">"SMT" xuất hiện nhưng do 2 tin ngược nhau.</text>
+<text x="398" y="248" font-size="9.5" font-weight="700" fill="#B91C1C">Sửa: né SMT quanh giờ tin riêng của 1 tài sản.</text>
+<!-- C SMT alone -->
+<rect x="24" y="274" width="712" height="196" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="38" y="296" font-size="12" font-weight="700" fill="#B91C1C">C. SMT đơn lẻ giữa range — chỉ là quan sát, không phải tín hiệu</text>
+<rect x="44" y="330" width="440" height="90" fill="#9CA3AF" opacity="0.08"/>
+<text x="50" y="346" font-size="9" fill="#6B7280">giữa range — không có pool thanh khoản</text>
+<path d="M60,375 L90,360 L120,385 L150,362 L180,388 L210,365 L240,390 L270,368 L300,392 L340,372 L380,395 L430,378" fill="none" stroke="#374151" stroke-width="1.8"/>
+<text x="500" y="352" font-size="10" fill="#374151">Có "lệch pha" nhưng:</text>
+<text x="508" y="372" font-size="9.5" fill="#B91C1C">• không tại pool (SSL/BSL)</text>
+<text x="508" y="390" font-size="9.5" fill="#B91C1C">• không sweep, không CISD/MSS</text>
+<text x="500" y="414" font-size="9.5" font-weight="700" fill="#15803D">→ ghi nhận, KHÔNG trade</text>
+<rect x="44" y="432" width="692" height="30" rx="6" fill="#FEF9C3"/>
+<text x="52" y="451" font-size="10" font-weight="700" fill="#92400E">Chốt: SMT là XÁC NHẬN cực trị terminal, không phải trigger. Thiếu pool + sweep + MSS = vô nghĩa.</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="400" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="18" font-weight="700" fill="#e5e7eb" text-anchor="start">Ma trận 6 Edge Cases bổ sung — Bread and Butter Sell</text>
+<rect x="50" y="60" width="260" height="100" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="180" y="100" font-size="13" fill="#e5e7eb" text-anchor="middle">⑦ Double purge</text>
+<text x="180" y="118" font-size="12" fill="#94a3b8" text-anchor="middle">Quét 2 lần trước</text>
+<text x="180" y="134" font-size="12" fill="#94a3b8" text-anchor="middle">MSS thật</text>
+<rect x="350" y="60" width="260" height="100" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="480" y="100" font-size="13" fill="#e5e7eb" text-anchor="middle">⑧ Session low lệch NY</text>
+<text x="480" y="118" font-size="12" fill="#94a3b8" text-anchor="middle">Đáy hình thành ở NY</text>
+<text x="480" y="134" font-size="12" fill="#94a3b8" text-anchor="middle">thay vì London</text>
+<rect x="650" y="60" width="260" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="780" y="100" font-size="13" fill="#e5e7eb" text-anchor="middle">⑨ Asia range nuốt setup</text>
+<text x="780" y="118" font-size="12" fill="#94a3b8" text-anchor="middle">Range quá rộng,</text>
+<text x="780" y="134" font-size="12" fill="#94a3b8" text-anchor="middle">premium/discount vô nghĩa</text>
+<rect x="50" y="180" width="260" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="180" y="220" font-size="13" fill="#e5e7eb" text-anchor="middle">⑩ Ngày trending thuần</text>
+<text x="180" y="238" font-size="12" fill="#94a3b8" text-anchor="middle">Không có hồi</text>
+<text x="180" y="254" font-size="12" fill="#94a3b8" text-anchor="middle">10h–12h để vào lệnh</text>
+<rect x="350" y="180" width="260" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="480" y="220" font-size="13" fill="#e5e7eb" text-anchor="middle">⑪ DST lệch killzone</text>
+<text x="480" y="238" font-size="12" fill="#94a3b8" text-anchor="middle">Chuyển giờ mùa hè/đông</text>
+<text x="480" y="254" font-size="12" fill="#94a3b8" text-anchor="middle">EU/US lệch nhau 1 tuần</text>
+<rect x="650" y="180" width="260" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="780" y="220" font-size="13" fill="#e5e7eb" text-anchor="middle">⑫ Spread giãn rollover</text>
+<text x="780" y="238" font-size="12" fill="#94a3b8" text-anchor="middle">17h NY spread rộng</text>
+<text x="780" y="254" font-size="12" fill="#94a3b8" text-anchor="middle">ăn hết target 15 pip</text>
+<text x="32" y="380" font-size="12" fill="#94a3b8" text-anchor="start">Sáu tình huống bổ sung từ live/backtest mở rộng — xem chi tiết mạch dấu hiệu → cơ chế → xử lý trong văn bản.</text>
+</svg>

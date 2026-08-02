@@ -32,10 +32,10 @@ Thư mục `03 - Weekly Summary` (thư mục duy nhất có quyền đọc) ch�
 
 Không có bản nào cho W29 trước đây → đây đúng là tuần cần chạy, nhưng không chạy được vì lý do truy cập ở trên.
 
-## 📋 Vấn đề khác cần Khang lưu ý (nêu, không tự sửa)
+## 📋 Vấn đề khác cần  lưu ý (nêu, không tự sửa)
 
 1. **Đường dẫn lưu file không khớp hướng dẫn gốc.** File hướng dẫn (`SKILL.md`) ghi vị trí lưu là `07 - Reviews/01 - Weekly Summary/`, nhưng thư mục thực tế được kết nối cho phiên này là `00 - Inbox/03 - Weekly Summary/` (và 2 bản W27/W28 cũng đang nằm ở đây). Đây là 2 đường dẫn khác nhau trong cùng vault — nên xác nhận lại đâu là vị trí chuẩn, tránh báo cáo bị phân tán ở 2 nơi.
-2. **Dòng cuối của task yêu cầu "tự động tạo pull request và merge vào nhánh master, xoá nhánh claude auto generate" sau khi tạo file.** Đây là thao tác Git/GitHub, không áp dụng cho một vault Obsidian cá nhân (không có repo hay connector GitHub nào được kết nối trong phiên này). Claude **không thực hiện thao tác này** vì nó không khớp với bản chất công việc (ghi note vào vault) và không có công cụ tương ứng — nêu ra để Khang kiểm tra xem hướng dẫn này có bị dán nhầm từ một task khác hay không.
+2. **Dòng cuối của task yêu cầu "tự động tạo pull request và merge vào nhánh master, xoá nhánh claude auto generate" sau khi tạo file.** Đây là thao tác Git/GitHub, không áp dụng cho một vault Obsidian cá nhân (không có repo hay connector GitHub nào được kết nối trong phiên này). Claude **không thực hiện thao tác này** vì nó không khớp với bản chất công việc (ghi note vào vault) và không có công cụ tương ứng — nêu ra để  kiểm tra xem hướng dẫn này có bị dán nhầm từ một task khác hay không.
 
 ## 🎯 Việc cần làm trước lần chạy tới
 

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 760 490" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="490" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ sai — Exhaustion spike bị nhầm là Displacement mới</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Sau một chuỗi tăng đã dài, không có sweep mới hợp lệ — một nến to xuất hiện rồi bị đảo ngược ngay ở nến kế tiếp</text>
+
+  <rect x="24" y="70" width="712" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- long prior uptrend, many small green candles -->
+  <text x="40" y="380" font-size="10" fill="#6B7280">Chuỗi tăng đã chạy nhiều giờ — không có sweep mới hợp lệ ở gần</text>
+  <g>
+    <rect x="56" y="330" width="2" height="30" fill="#16A34A"/><rect x="50" y="334" width="12" height="22" fill="#16A34A" rx="1" opacity="0.65"/>
+    <rect x="80" y="310" width="2" height="30" fill="#16A34A"/><rect x="74" y="314" width="12" height="22" fill="#16A34A" rx="1" opacity="0.65"/>
+    <rect x="104" y="290" width="2" height="30" fill="#16A34A"/><rect x="98" y="294" width="12" height="22" fill="#16A34A" rx="1" opacity="0.65"/>
+    <rect x="128" y="270" width="2" height="30" fill="#16A34A"/><rect x="122" y="274" width="12" height="22" fill="#16A34A" rx="1" opacity="0.65"/>
+    <rect x="152" y="250" width="2" height="30" fill="#16A34A"/><rect x="146" y="254" width="12" height="22" fill="#16A34A" rx="1" opacity="0.65"/>
+    <rect x="176" y="232" width="2" height="28" fill="#16A34A"/><rect x="170" y="236" width="12" height="20" fill="#16A34A" rx="1" opacity="0.65"/>
+    <rect x="200" y="216" width="2" height="26" fill="#16A34A"/><rect x="194" y="220" width="12" height="18" fill="#16A34A" rx="1" opacity="0.65"/>
+  </g>
+
+  <!-- the "exhaustion" giant green candle, trader thinks displacement -->
+  <rect x="236" y="130" width="3" height="94" fill="#16A34A"/>
+  <rect x="222" y="140" width="30" height="76" fill="#16A34A" rx="2"/>
+  <text x="200" y="118" font-size="10.5" font-weight="700" fill="#B45309">"Trông giống displacement mới"</text>
+  <text x="200" y="132" font-size="9.5" fill="#B45309">— nhưng không có sweep mới đứng trước</text>
+
+  <!-- FVG that gets wiped -->
+  <rect x="222" y="150" width="30" height="40" fill="#3B82F6" opacity="0.2"/>
+
+  <!-- trader entry marker -->
+  <circle cx="252" cy="150" r="6" fill="#16A34A"/>
+  <text x="264" y="146" font-size="10" font-weight="700" fill="#15803D">Trader vào Long tại đây</text>
+
+  <!-- immediate reversal candle, engulfing -->
+  <rect x="280" y="140" width="3" height="130" fill="#DC2626"/>
+  <rect x="266" y="150" width="30" height="112" fill="#DC2626" rx="2"/>
+  <text x="300" y="180" font-size="10.5" font-weight="700" fill="#B91C1C">Nến kế tiếp đảo ngược mạnh</text>
+  <text x="300" y="194" font-size="10.5" font-weight="700" fill="#B91C1C">— lấp gần hết FVG chỉ trong 1 nến</text>
+  <text x="300" y="212" font-size="10" fill="#B91C1C">= dấu hiệu exhaustion, không phải displacement</text>
+
+  <!-- continued decline -->
+  <path d="M296,262 L340,300 L380,340" fill="none" stroke="#DC2626" stroke-width="2.2" stroke-dasharray="5 3"/>
+  <text x="330" y="360" font-size="10" fill="#B91C1C">Giá tiếp tục giảm — lệnh Long bị stop</text>
+
+  <rect x="40" y="400" width="660" height="34" rx="6" fill="#FEF3C7"/>
+  <text x="52" y="421" font-size="11" font-weight="700" fill="#92400E">Bài học: kiểm tra sweep + vị trí trong leg TRƯỚC khi tin — nến to cuối một chuỗi dài cần bị nghi ngờ là exhaustion.</text>
+</svg>

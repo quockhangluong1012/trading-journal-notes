@@ -1,19 +1,33 @@
-<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">MMBM long trong mot MMSM D1 lon hon (Nested MMXM)</text>
-  <text x="24" y="54" font-size="13" fill="#6B7280">Mot MMBM H1 sach co the chi la nhip hoi ben trong Sell Program cua mot MMSM D1 chua hoan tat. So do khai niem, khong phai chart gia that.</text>
-  <rect x="30" y="76" width="700" height="340" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
-  <text x="44" y="100" font-size="13" font-weight="700" fill="#DC2626">MMSM D1 (lon hon) - Sell Program dang chay</text>
-  <path d="M 60,130 L 140,160 L 220,150 L 300,190 L 380,175 L 460,230 L 540,210 L 620,280 L 690,350" fill="none" stroke="#DC2626" stroke-width="2.6"/>
-  <circle cx="60" cy="130" r="6" fill="#DC2626"/>
-  <text x="40" y="118" font-size="10" font-weight="700" fill="#DC2626">Smart Money High D1 (dau MMSM)</text>
-  <rect x="290" y="145" width="220" height="140" rx="8" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.6"/>
-  <text x="300" y="163" font-size="11.5" font-weight="700" fill="#16A34A">MMBM H1 (nho hon - nested)</text>
-  <path d="M 300,270 L 330,255 L 360,260 L 390,220 L 420,230 L 450,195 L 480,205" fill="none" stroke="#16A34A" stroke-width="2.2"/>
-  <circle cx="300" cy="270" r="4.5" fill="#16A34A"/>
-  <text x="296" y="292" font-size="9.5" fill="#16A34A">SML nho + MSS tang</text>
-  <text x="300" y="304" font-size="9.5" fill="#16A34A">(chi la 1 LRS ben trong D1)</text>
-  <text x="60" y="392" font-size="11" fill="#374151">Neu mua theo MMBM H1 ma khong kiem tra D1, ban dang mua nguoc trend giam lon hon.</text>
-  <rect x="30" y="428" width="700" height="22" rx="6" fill="#FEF3C7"/>
-  <text x="42" y="444" font-size="12" font-weight="700" fill="#92400E">Luon kiem tra D1/H4 truoc khi tin mot SML LTF la dao chieu that - khong phai nhip hoi (nested) ben trong MMSM lon hon.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">MMBM lồng nhau — H4 chứa M15</text>
+
+<!-- Outer H4 MMBM curve -->
+<text x="60" y="70" font-size="14" font-weight="700" fill="#94a3b8">H4 — MMBM lớn</text>
+<line x1="48" y1="470" x2="910" y2="470" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="52" y="484" font-size="12" fill="#eab308">SSL (H4)</text>
+<polyline points="60,120 160,120 160,220 260,220 260,320 360,320 360,420 430,420 430,470" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.55"/>
+<polyline points="430,470 600,300 780,160 900,100" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.55"/>
+<circle cx="430" cy="470" r="20" fill="none" stroke="#4ade80" stroke-width="2" opacity="0.8"/>
+<text x="430" y="500" font-size="12" fill="#4ade80" text-anchor="middle">Smart Money Low (H4)</text>
+
+<!-- Inner M15 zoom box -->
+<rect x="330" y="330" width="220" height="150" fill="rgba(56,189,248,0.06)" stroke="#38bdf8" stroke-dasharray="4 3"/>
+<text x="340" y="345" font-size="11" fill="#38bdf8">Vùng zoom M15</text>
+
+<!-- zoom callout lines -->
+<line x1="330" y1="330" x2="620" y2="130" stroke="#334155" stroke-width="1"/>
+<line x1="550" y1="480" x2="620" y2="480" stroke="#334155" stroke-width="1"/>
+
+<!-- M15 detail box -->
+<rect x="600" y="120" width="330" height="200" rx="8" fill="#111827" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="615" y="140" font-size="13" font-weight="700" fill="#e5e7eb">M15 — MMBM nhỏ bên trong</text>
+<line x1="615" y1="270" x2="900" y2="270" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+<polyline points="620,190 650,190 650,220 680,220 680,250 710,250 710,270" fill="none" stroke="#ef4444" stroke-width="2"/>
+<circle cx="710" cy="270" r="10" fill="none" stroke="#4ade80" stroke-width="1.5"/>
+<polyline points="710,270 750,230 800,180 860,155 900,150" fill="none" stroke="#22c55e" stroke-width="2"/>
+<text x="710" y="290" font-size="10" fill="#4ade80">SML nhỏ = 1 phần</text>
+<text x="710" y="303" font-size="10" fill="#4ade80">của LRS lớn (H4)</text>
+
+<text x="480" y="560" font-size="12" fill="#94a3b8" text-anchor="middle">Sơ đồ khái niệm: đáy của MMBM khung nhỏ chỉ là bước điều chỉnh trong MMBM khung lớn</text>
 </svg>

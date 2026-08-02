@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="400" rx="12" fill="#0d1117"/>
+<text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Có được xuống M5/M1 quan sát chưa? — 3 GATE tuần tự</text>
+<defs>
+<marker id="arrG" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/>
+</marker>
+<marker id="arrBad" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#f87171"/>
+</marker>
+</defs>
+<rect x="24" y="130" width="210" height="140" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="129.0" y="190.9" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">GATE 1</text>
+<text x="129.0" y="209.1" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">Neo HTF</text>
+<text x="129.0" y="210" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">Bias D1/H4 rõ + draw</text>
+<text x="129.0" y="226" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">on liquidity xác định</text>
+<line x1="238" y1="200.0" x2="256" y2="200.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrG)"/>
+<rect x="260" y="130" width="210" height="140" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="365.0" y="190.9" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">GATE 2</text>
+<text x="365.0" y="209.1" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">Đúng vị trí</text>
+<text x="365.0" y="210" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">Giá đã vào POI H1,</text>
+<text x="365.0" y="226" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">đúng P/D, đồng pha D1↔H1</text>
+<line x1="474" y1="200.0" x2="492" y2="200.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrG)"/>
+<rect x="496" y="130" width="210" height="140" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="601.0" y="190.9" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">GATE 3</text>
+<text x="601.0" y="209.1" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">Đúng thời gian</text>
+<text x="601.0" y="210" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">Trong/sát Killzone London-NY AM, không</text>
+<text x="601.0" y="226" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">tin đỏ 15p</text>
+<rect x="732" y="130" width="204" height="140" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<text x="834.0" y="185.05" font-size="11.5" font-weight="400" fill="#e5e7eb" text-anchor="middle">Đủ cả 3</text>
+<text x="834.0" y="200.0" font-size="11.5" font-weight="400" fill="#e5e7eb" text-anchor="middle">DRILL M5/M1</text>
+<text x="834.0" y="214.95000000000002" font-size="11.5" font-weight="400" fill="#e5e7eb" text-anchor="middle">(refine, không đẻ setup)</text>
+<line x1="704" y1="200.0" x2="728" y2="200.0" stroke="#4ade80" stroke-width="2.5" marker-end="url(#arrG)"/>
+<text x="480" y="320" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Thiếu BẤT KỲ gate nào → chưa được xuống LTF, M5/M1 lúc đó chỉ là noise.</text>
+<text x="480" y="344" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Sơ đồ khái niệm minh họa quy trình quyết định — không phải chart giá thật.</text>
+</svg>

@@ -75,7 +75,7 @@ tags:
 > [!info] Ghi chú chuyển đổi template (2026-07-17)
 > Convert từ template backtest cũ sang **template POI & Step Decision**. Dữ liệu gốc (entry/SL/TP/result/lesson learned) giữ nguyên. Ba điểm cần lưu ý:
 > 1. **Sửa lỗi ngày tháng tồn đọng đã tự phát hiện trong bản gốc**: tiêu đề/heading gốc ghi nhầm "2005-05-02" và bảng Summary ghi nhầm "2021-05-03", trong khi `trade_date` frontmatter và tên file đều là đúng **2021-05-07**. Bản convert này đồng bộ lại ngày ở mọi nơi theo đúng `trade_date`.
-> 2. **Grade đang mâu thuẫn giữa frontmatter (C) và bảng Summary gốc (D)** — bản gốc tự flag việc này ở mục Data Integrity nhưng chưa chốt số nào đúng. Bản convert giữ nguyên `grade: C` từ frontmatter (vì đây là nguồn dashboard đọc), nhưng **đề xuất Khang xem lại**: với 3 GATE fail (sai Kill Zone, displacement yếu, chọn sai short-term draw on liquidity) + tự chấm 40% khớp mô hình, D hoặc thậm chí F có thể phản ánh đúng hơn C.
+> 2. **Grade đang mâu thuẫn giữa frontmatter (C) và bảng Summary gốc (D)** — bản gốc tự flag việc này ở mục Data Integrity nhưng chưa chốt số nào đúng. Bản convert giữ nguyên `grade: C` từ frontmatter (vì đây là nguồn dashboard đọc), nhưng **đề xuất  xem lại**: với 3 GATE fail (sai Kill Zone, displacement yếu, chọn sai short-term draw on liquidity) + tự chấm 40% khớp mô hình, D hoặc thậm chí F có thể phản ánh đúng hơn C.
 > 3. **Nhãn "Order Block 1" / "Order Block 2" trong bản gốc bị đảo ngược so với mức giá** (OB "1 - thấp hơn" nhưng số lại thấp hơn OB "2 - cao hơn" đúng theo tên, tuy vậy prose mô tả trình tự giá đi ngược lại thứ tự liệt kê). Bản convert dùng trực tiếp **mức giá** thay vì nhãn 1/2 để tránh nhầm lẫn thêm — entry 1.20805 rơi đúng vào vùng OB cao hơn (1.20884–1.20780), đây là POI convert dùng cho frontmatter.
 
 ---

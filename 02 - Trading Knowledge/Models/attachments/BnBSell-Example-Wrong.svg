@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Ví dụ SAI — short không bias / bỏ 5m MSS / target tham</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">Short ngay khi chạm premium, chưa xác nhận bias, chưa có MSS → bị stop</text>
+
+<line x1="60" y1="500" x2="900" y2="500" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="400" x2="900" y2="400" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="300" x2="900" y2="300" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="200" x2="900" y2="200" stroke="#1f2937" stroke-width="1"/>
+
+<rect x="60" y="160" width="840" height="140" fill="rgba(239,68,68,0.08)"/>
+<text x="880" y="178" font-size="11" fill="#94a3b8" text-anchor="end">Premium</text>
+
+<!-- Premium zone -->
+<rect x="330" y="220" width="140" height="60" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-dasharray="4 3"/>
+<text x="400" y="212" font-size="12" fill="#3b82f6" text-anchor="middle">Premium (chưa có MSS)</text>
+
+<!-- Price rising steadily, no clear bearish HTF, no reversal -->
+<rect x="90" y="440" width="12" height="40" fill="#22c55e"/>
+<line x1="96" y1="432" x2="96" y2="485" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="115" y="405" width="12" height="40" fill="#22c55e"/>
+<line x1="121" y1="395" x2="121" y2="450" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="140" y="365" width="12" height="45" fill="#22c55e"/>
+<line x1="146" y1="355" x2="146" y2="415" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="165" y="325" width="12" height="45" fill="#22c55e"/>
+<line x1="171" y1="315" x2="171" y2="375" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="190" y="290" width="12" height="40" fill="#22c55e"/>
+<line x1="196" y1="278" x2="196" y2="335" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="215" y="260" width="12" height="35" fill="#22c55e"/>
+<line x1="221" y1="248" x2="221" y2="300" stroke="#9ca3af" stroke-width="1.5"/>
+<!-- Trader shorts here without MSS -->
+<rect x="240" y="235" width="12" height="30" fill="#22c55e"/>
+<line x1="246" y1="225" x2="246" y2="270" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M 246 225 L 260 210 L 260 240 Z" fill="#ef4444"/>
+<text x="270" y="220" font-size="12" font-weight="700" fill="#ef4444" text-anchor="start">SHORT sớm (sai)</text>
+<text x="270" y="238" font-size="11" fill="#94a3b8" text-anchor="start">chưa có 5m MSS, chưa xác nhận bias</text>
+
+<!-- Price continues rising (no reversal) sweeping stop -->
+<rect x="290" y="215" width="12" height="30" fill="#22c55e"/>
+<line x1="296" y1="205" x2="296" y2="250" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="315" y="195" width="12" height="30" fill="#22c55e"/>
+<line x1="321" y1="185" x2="321" y2="230" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="340" y="175" width="12" height="30" fill="#22c55e"/>
+<line x1="346" y1="165" x2="346" y2="210" stroke="#9ca3af" stroke-width="1.5"/>
+
+<!-- stop line and hit marker -->
+<line x1="230" y1="210" x2="600" y2="210" stroke="#f87171" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="610" y="214" font-size="12" fill="#f87171" text-anchor="start">Stop bị quét</text>
+<path d="M 340 180 L 355 165 L 355 195 Z" fill="#f87171"/>
+<text x="480" y="150" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">Giá KHÔNG đảo chiều — tiếp tục tăng vì HTF chưa bearish và không có MSS</text>
+
+<!-- box explaining the two errors -->
+<rect x="60" y="350" width="380" height="130" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="80" y="378" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">Lỗi 1: Chưa xác nhận HTF bearish</text>
+<text x="80" y="398" font-size="12" fill="#94a3b8" text-anchor="start">D1/H4 thực ra đang đi ngang —</text>
+<text x="80" y="414" font-size="12" fill="#94a3b8" text-anchor="start">mọi premium trông giống setup nhưng không có edge</text>
+<text x="80" y="442" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">Lỗi 2: Bỏ qua 5m MSS</text>
+<text x="80" y="462" font-size="12" fill="#94a3b8" text-anchor="start">Short ngay khi "chạm" premium —</text>
+<text x="80" y="478" font-size="12" fill="#94a3b8" text-anchor="start">chạm premium KHÔNG phải là entry</text>
+
+<rect x="500" y="350" width="360" height="80" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="520" y="378" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">missing_step: bias + mss</text>
+<text x="520" y="400" font-size="12" fill="#94a3b8" text-anchor="start">Cả hai điều kiện lõi đều thiếu cùng lúc —</text>
+<text x="520" y="416" font-size="12" fill="#94a3b8" text-anchor="start">đây là một cú short cảm tính, không phải setup</text>
+
+<text x="480" y="540" font-size="13" fill="#e5e7eb" text-anchor="middle">Bài học: chờ HTF bearish + 5m MSS TRƯỚC, đừng short chỉ vì "giá ở premium"</text>
+</svg>

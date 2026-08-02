@@ -171,5 +171,31 @@ Cả ba đều là **lệnh BÁN** nằm chờ → **SSL**. Trong phiên sôi đ
 - FVG low đã bị test chưa? (nếu chưa → liquidity còn sót phía dưới).
 - Có nằm trong **HTF context** (POI + discount + HTF draw) không? Nếu không → bỏ.
 
+## 8. Tình huống thực chiến (War Stories) — cascading sweep & cái giá của việc vào sớm một tầng
+
+> [!info] Vì sao có mục này
+> Mục 1–6 đã lập luận chặt: liquidity là fractal, một cú sweep nội bộ M1 vẫn có thể là trigger hợp lệ **nếu** nằm đúng trong bối cảnh HTF (CE/FVG). Nhưng thực chiến — nhất là trên NAS100, symbol có biên độ nội phiên lớn — thường không chỉ có MỘT tầng sweep nội bộ, mà là một **chuỗi nhiều tầng bị quét lần lượt** trước khi cú đảo chiều thật xảy ra. Hai tình huống dưới đây xử lý đúng cái bẫy tinh vi nhất của Conviction Hierarchy: biết nó tồn tại trên lý thuyết là một chuyện, nhận ra mình đang đứng ở tầng nào giữa lúc thị trường di chuyển là chuyện khác hẳn.
+
+![[ConvictionHierarchy-CascadingSweeps-20260713.svg]]
+
+### W1 — Vào lệnh ở tầng 1, bị cuốn qua tầng 2 và 3: bài học "sweep nội bộ đầu tiên không phải là sweep cuối cùng"
+
+**Tình huống rất hay gặp:** giá quét một cụm equal-lows M1, reclaim, có cả một cây nến displacement trông rất thuyết phục — trader vào lệnh ngay vì "đúng công thức sweep + displacement". Nhưng đây chỉ là **tầng 1** trong một chuỗi cascading sweep: vài phút sau, một tầng M5 sâu hơn bị quét tiếp, cuốn theo cả lệnh vừa vào. Nến displacement ở tầng 1 là thật — nhưng nó không đủ "nhiên liệu" để tạo một cú đảo chiều có ý nghĩa, vì tầng 1 chỉ là stop của một nhóm nhỏ vừa hình thành.
+
+**Cách phân biệt (rút từ mục 5 của note):** hỏi ba câu trước khi tin một cú sweep nội bộ là **tầng cuối**: (1) Tầng này có trùng với một POI HTF thật (CE của FVG, OB, hay chỉ là một đáy M1 trơ trọi)? (2) Đã có bao nhiêu tầng bị quét liên tiếp trong vài phút gần nhất — nếu ≥2 tầng vừa bị xuyên mà chưa có phản ứng nào giữ được, tầng hiện tại nhiều khả năng cũng sẽ bị xuyên tiếp. (3) Displacement sau sweep có đủ mạnh để tạo MSS ở khung **cao hơn** M1 (tối thiểu M5) hay chỉ là nhiễu cục bộ?
+
+**Rule đo được:** field `sweep_tier_confirmed_by_htf_poi` (có/không) trước khi vào; nếu không, hạ xuống `watch_only` và chờ tầng kế tiếp. Field `consecutive_internal_sweeps_before_entry` — ghi số tầng đã bị quét liên tục trước tầng mình định vào; con số càng cao, xác suất đây vẫn chưa phải tầng cuối càng lớn (theo đúng nguyên tắc trong sơ đồ trên).
+
+### W2 — Ra quyết định dưới áp lực NY Open: FVG rebalance hay SSL sweep, không đủ thời gian phân tích
+
+**Tình huống:** vào các phiên biến động cực nhanh (NY Open, sau tin lớn), giá có thể chạm CE của FVG và bật lại trong **vài giây** — không đủ thời gian để zoom xuống M1 kiểm tra kỹ có SSL nội bộ hay không như quy trình lý tưởng ở mục 4. Nếu chờ phân tích xong, giá đã chạy mất; nếu vào ngay theo phản xạ, dễ nhầm một cú FVG rebalance thuần (không có sweep) thành một SSL sweep có conviction cao hơn thực tế.
+
+**Cách xử lý thực dụng:** chuẩn bị **trước khi phiên mở** — không phân tích trong lúc giá đang chạy. Trước NY Open, xác định sẵn: vùng CE của FVG là gì, có internal EQL nào nhìn thấy được trên M5 (không cần M1) nằm ngay trong/dưới vùng đó không, và mức stop dự kiến cho cả hai kịch bản (sweep vs rebalance thuần). Khi giá thật sự chạm vùng, việc cần làm chỉ là nhận diện xem kịch bản nào đang diễn ra theo kế hoạch đã vẽ sẵn, không phải phân tích từ đầu.
+
+**Rule đo được:** trước mỗi phiên kill zone có kế hoạch trade, chuẩn bị sẵn `pre_session_poi_map` (CE, FVG range, internal EQL nếu có, hai mức stop dự kiến). Sau phiên, chấm `decision_made_from_preplan` (có/không) — nếu quyết định thực tế không dựa trên bản đồ chuẩn bị sẵn mà là phản xạ tức thời, đó là tín hiệu cần rút ngắn khung thời gian chuẩn bị hoặc luyện thêm phản xạ nhận diện nhanh trước khi trade sống.
+
+> [!success] Tổng kết mục 8
+> Hai tình huống đều xoay quanh cùng một sự thật: **Conviction Hierarchy không phải một bảng tra cứu tĩnh — nó phải được áp dụng real-time, dưới áp lực thời gian, và với một chuỗi sweep có thể chưa kết thúc.** W1 dạy cách nhận ra mình đang ở tầng nào giữa một chuỗi cascading; W2 dạy cách chuẩn bị trước để không phải phân tích khi giá đã chạy. Cả hai đều quy về kỷ luật gốc của [[01 - ICT 2022 Model|2022 Model]]: chuẩn bị kỹ trước, chỉ xác nhận lúc live — không phân tích từ số 0 giữa lúc thị trường đang di chuyển.
+
 ---
-*Ghi chú: date = ngày study (VN, UTC+7). Không log backtest vì không vào lệnh — đây là note phương pháp. Giá/level do người dùng cung cấp từ chart study; symbol NAS100 suy từ vùng giá ~23,600. 4 sơ đồ minh họa nguyên lý, không phải chart thật. Concept nền liên quan: [[20 - Liquidity Sweep]], [[13 - FVG  - Fair Value Gap]], [[10 - Consequent Encroachment (Mean Threshold)]], [[16 - Internal & External Range Liquidity (IRL & ERL)]], [[33 - Turtle Soup]].*
+*Ghi chú: date = ngày study (VN, UTC+7). Không log backtest vì không vào lệnh — đây là note phương pháp. Giá/level do người dùng cung cấp từ chart study; symbol NAS100 suy từ vùng giá ~23,600. 5 sơ đồ minh họa nguyên lý, không phải chart thật. Các tình huống ở mục 8 là kinh nghiệm tổng hợp mang tính minh họa (composite), không phải nhật ký của một lệnh cụ thể. Concept nền liên quan: [[20 - Liquidity Sweep]], [[13 - FVG  - Fair Value Gap]], [[10 - Consequent Encroachment (Mean Threshold)]], [[16 - Internal & External Range Liquidity (IRL & ERL)]], [[33 - Turtle Soup]].*

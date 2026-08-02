@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="800" fill="#0f1420" rx="12"/>
+  <text x="40" y="42" font-size="26" font-weight="bold" fill="#e2e8f0">Edge Cases: Bias lật giữa ngày sau tin &amp; khó xử Thứ Sáu/Thứ Hai</text>
+  <text x="40" y="66" font-size="15" fill="#94a3b8">Hai tình huống bias không đơn giản là "đúng hoặc sai cả ngày"</text>
+
+  <!-- LEFT: mid-day flip after news -->
+  <text x="60" y="105" font-size="17" fill="#eab308" font-weight="bold">A. Bias lật giữa ngày sau tin (CPI 08:30 NY)</text>
+  <line x1="60" y1="380" x2="580" y2="380" stroke="#334155" stroke-width="2"/>
+  <text x="70" y="400" font-size="12" fill="#94a3b8">00:00</text>
+  <text x="260" y="400" font-size="12" fill="#94a3b8">08:30 CPI</text>
+  <text x="500" y="400" font-size="12" fill="#94a3b8">16:00</text>
+
+  <!-- morning bullish bias path -->
+  <path d="M 80 320 Q 150 300 200 270 T 260 230" stroke="#22c55e" stroke-width="2.5" fill="none"/>
+  <text x="80" y="215" font-size="12" fill="#22c55e">Bias sáng: Bullish (đúng dự kiến)</text>
+
+  <!-- news spike -->
+  <line x1="260" y1="230" x2="260" y2="360" stroke="#f97316" stroke-width="3"/>
+  <text x="200" y="375" font-size="11" fill="#f97316">CPI nóng hơn dự báo</text>
+
+  <!-- afternoon bearish reversal -->
+  <path d="M 260 360 Q 340 355 410 320 T 560 260" stroke="#ef4444" stroke-width="2.5" fill="none"/>
+  <text x="330" y="245" font-size="12" fill="#ef4444">Chiều: Bearish (bias lật hoàn toàn)</text>
+
+  <rect x="60" y="420" width="530" height="130" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="75" y="445" font-size="13" fill="#e2e8f0" font-weight="bold">Vì sao lật:</text>
+  <text x="75" y="465" font-size="12.5" fill="#94a3b8">Tin macro mạnh tái định giá kỳ vọng lãi suất ngay</text>
+  <text x="75" y="483" font-size="12.5" fill="#94a3b8">lập tức — draw on liquidity mới hình thành thay thế</text>
+  <text x="75" y="501" font-size="12.5" fill="#94a3b8">draw cũ. Bias buổi sáng dựa trên cấu trúc TRƯỚC tin,</text>
+  <text x="75" y="519" font-size="12.5" fill="#94a3b8">không còn hiệu lực SAU tin có surprise lớn.</text>
+  <text x="75" y="540" font-size="12.5" fill="#eab308">Xử lý: coi bias là "tạm thời có điều kiện", đánh giá lại</text>
+
+  <!-- RIGHT: Friday/Monday difficulty -->
+  <text x="640" y="105" font-size="17" fill="#eab308" font-weight="bold">B. Thứ Sáu &amp; Thứ Hai — bias khó đọc nhất tuần</text>
+
+  <rect x="640" y="130" width="500" height="230" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="655" y="155" font-size="14" fill="#e2e8f0" font-weight="bold">Thứ Sáu</text>
+  <text x="655" y="176" font-size="12.5" fill="#94a3b8">- Position squaring trước cuối tuần: giá</text>
+  <text x="655" y="194" font-size="12.5" fill="#94a3b8">  hay retrace ngược bias cả tuần vô cớ</text>
+  <text x="655" y="212" font-size="12.5" fill="#94a3b8">- Thanh khoản giảm sau 12:00 NY: move</text>
+  <text x="655" y="230" font-size="12.5" fill="#94a3b8">  cuối ngày dễ bị đảo ngược Thứ Hai</text>
+
+  <line x1="655" y1="245" x2="1125" y2="245" stroke="#334155"/>
+
+  <text x="655" y="268" font-size="14" fill="#e2e8f0" font-weight="bold">Thứ Hai</text>
+  <text x="655" y="289" font-size="12.5" fill="#94a3b8">- Weekend gap tạo mức giá "giả" chưa</text>
+  <text x="655" y="307" font-size="12.5" fill="#94a3b8">  được kiểm định bằng orderflow thật</text>
+  <text x="655" y="325" font-size="12.5" fill="#94a3b8">- Nhiều tổ chức chưa định vị lại đầy đủ</text>
+  <text x="655" y="343" font-size="12.5" fill="#94a3b8">  tới hết phiên London mới rõ hướng thật</text>
+
+  <rect x="640" y="380" width="500" height="150" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="655" y="405" font-size="13" fill="#e2e8f0" font-weight="bold">Số liệu tham khảo (quan sát cá nhân, không phải thống kê chuẩn hóa):</text>
+  <text x="655" y="426" font-size="12.5" fill="#94a3b8">Tỉ lệ bias Thứ Ba/Tư/Năm đúng hướng: cao hơn rõ rệt</text>
+  <text x="655" y="444" font-size="12.5" fill="#94a3b8">Tỉ lệ bias Thứ Hai đúng hướng: thấp nhất tuần, hay</text>
+  <text x="655" y="462" font-size="12.5" fill="#94a3b8">  đảo chiều trong phiên London/NY cùng ngày</text>
+  <text x="655" y="480" font-size="12.5" fill="#94a3b8">Tỉ lệ bias Thứ Sáu đúng hướng tới hết ngày: thấp,</text>
+  <text x="655" y="498" font-size="12.5" fill="#94a3b8">  nhất là sau 12:00 NY do vuông vị thế cuối tuần</text>
+  <text x="655" y="519" font-size="12.5" fill="#eab308">Xử lý: giảm size Thứ Hai/Sáu, ưu tiên Thứ Ba-Năm</text>
+
+  <!-- bottom summary bar -->
+  <rect x="60" y="600" width="1080" height="150" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="80" y="628" font-size="15" fill="#e2e8f0" font-weight="bold">Nguyên tắc chung cho cả hai edge case</text>
+  <text x="80" y="654" font-size="13" fill="#94a3b8">1. Bias không phải một phán quyết cố định 24 giờ — nó là một giả thuyết có điều kiện, cần tái xác nhận</text>
+  <text x="80" y="676" font-size="13" fill="#94a3b8">   sau mỗi sự kiện làm thay đổi draw on liquidity (tin lớn) hoặc mỗi khi cấu trúc phiên đặc biệt (đầu/cuối tuần).</text>
+  <text x="80" y="700" font-size="13" fill="#94a3b8">2. Không có bias nào "miễn nhiễm" với hai edge case này — kể cả bias Tier A với HTF alignment hoàn hảo.</text>
+  <text x="80" y="722" font-size="13" fill="#94a3b8">3. Quy tắc thực dụng: luôn hỏi "tin gì sắp ra" và "hôm nay thứ mấy" TRƯỚC khi tin vào bias đã viết từ tối hôm trước.</text>
+</svg>

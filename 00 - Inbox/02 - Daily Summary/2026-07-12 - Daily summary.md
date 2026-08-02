@@ -74,7 +74,7 @@ Top-3 hiện tại (số đếm live-trade **không đổi** vì không có lệ
 | [[Pass The5er first package challenge (10k$)]] | 0% | 0/8 | **2026-07-12** (mới) | Như FTMO. Nhắc luật riêng: daily DD tính từ equity đóng cửa hôm trước + cần ≥3 ngày có lãi ≥0,5%. |
 | [[Build a statistically validated backtest sample]] | 6% | 0/4 | **2026-07-12** (mới) | 12/200 = 6% → **frontmatter 6 nay KHỚP thực tế**; prose đã sync 11 → **12**. `baseline: "6"` vẫn là tàn dư cũ (không phải lỗi progress). |
 | [[Master the ICT 2022 Model]] | 30% | 0/5 | **2026-07-12** (mới) | prose sync 10 → **12 setup**; win rate 10W/2L ≈83% nhưng **n=12 quá nhỏ** cho ràng buộc >55%. Cột mốc #1 (viết checklist vào/ra) vẫn là mốc dễ mở khoá nhất còn treo. |
-| [[Hold daily journaling and process discipline]] | 40% | **2/4** ✅ | **2026-07-12** (mới) | Khang đã tự tick cột mốc #1+#2 hôm nay → **50%**. `progress` FE 40% giờ **THẤP hơn** cột mốc → nên bump 40 → 50. Track khoẻ nhất: **8 ngày journaling liên tiếp**. |
+| [[Hold daily journaling and process discipline]] | 40% | **2/4** ✅ | **2026-07-12** (mới) |  đã tự tick cột mốc #1+#2 hôm nay → **50%**. `progress` FE 40% giờ **THẤP hơn** cột mốc → nên bump 40 → 50. Track khoẻ nhất: **8 ngày journaling liên tiếp**. |
 | [[Cut my top 3 repeated mistakes]] | 20% | 0/4 | 2026-07-08 (**stale 4 ngày**) | Không có lệnh live → tần suất không đổi → không thêm dòng. Cột mốc #1+#2 đã đủ bằng chứng từ 07-08 nhưng **chưa tick**. |
 
 **Verdict pace (2027-01-07, còn 179 ngày):**

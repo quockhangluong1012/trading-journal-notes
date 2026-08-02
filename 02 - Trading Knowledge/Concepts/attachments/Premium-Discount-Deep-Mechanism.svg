@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1310 780" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1310" height="780" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế đằng sau Premium/Discount: value area, không phải Fibonacci huyền bí</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">Vì sao 50% "hoạt động" — đối chiếu Auction Market Theory, dealer hedging và TWAP/VWAP execution</text>
+
+<!-- Panel 1: auction theory -->
+<rect x="40" y="90" width="550" height="320" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="118" font-size="17" fill="#e2e8f0" font-weight="bold">1. Auction Theory: 2 mức bị từ chối → điểm giữa là "công bằng"</text>
+<rect x="70" y="150" width="480" height="200" fill="#0f1420" stroke="#334155"/>
+<line x1="70" y1="170" x2="550" y2="170" stroke="#ef4444" stroke-dasharray="4,3"/>
+<text x="440" y="165" font-size="12" fill="#ef4444">Bị từ chối (sell) — Premium</text>
+<line x1="70" y1="330" x2="550" y2="330" stroke="#22c55e" stroke-dasharray="4,3"/>
+<text x="440" y="348" font-size="12" fill="#22c55e">Bị từ chối (buy) — Discount</text>
+<line x1="70" y1="250" x2="550" y2="250" stroke="#a78bfa" stroke-width="2"/>
+<text x="440" y="245" font-size="13" fill="#a78bfa" font-weight="bold">EQ = trung tâm value area</text>
+<text x="70" y="370" font-size="12" fill="#94a3b8">Trên EQ: bên bán có lợi thế đàm phán. Dưới EQ: bên mua có lợi thế.</text>
+<text x="60" y="395" font-size="13" fill="#e2e8f0">→ EQ không cần đúng tick vì nó là VÙNG giữa 2 vùng từ chối, không phải điểm ma thuật.</text>
+
+<!-- Panel 2: dealer hedging & VWAP -->
+<rect x="610" y="90" width="550" height="320" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="630" y="118" font-size="17" fill="#e2e8f0" font-weight="bold">2. Dealer hedging &amp; TWAP/VWAP hội tụ quanh EQ</text>
+<text x="630" y="145" font-size="13" fill="#94a3b8">Thuật toán rải lệnh lớn tránh trượt giá → tham chiếu VWAP phiên</text>
+<rect x="650" y="170" width="480" height="150" fill="#0f1420" stroke="#334155"/>
+<path d="M 660 290 Q 780 200 900 245 T 1120 220" stroke="#38bdf8" stroke-width="2" fill="none"/>
+<text x="900" y="200" font-size="12" fill="#38bdf8">VWAP phiên (đường xanh)</text>
+<line x1="650" y1="245" x2="1130" y2="245" stroke="#a78bfa" stroke-dasharray="4,3"/>
+<text x="1000" y="240" font-size="11" fill="#a78bfa">EQ range D1</text>
+<text x="630" y="345" font-size="13" fill="#e2e8f0">→ VWAP thường hội tụ gần 45-55% range trong phiên "bình thường" — không phải trùng hợp.</text>
+<text x="630" y="368" font-size="12" fill="#94a3b8">Option gamma: dealer short gamma quanh strike lớn cũng ghim giá gần vùng trung tâm ngày expiry.</text>
+<text x="630" y="388" font-size="12" fill="#94a3b8">Đây là lý do "chop quanh EQ" trước tin lớn — thuật toán CHƯA CHỌN phía.</text>
+
+<!-- Bottom comparison -->
+<rect x="40" y="430" width="1120" height="310" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="460" font-size="17" fill="#e2e8f0" font-weight="bold">3. Đối chiếu khung lý thuyết</text>
+<line x1="60" y1="475" x2="1140" y2="475" stroke="#334155"/>
+<text x="60" y="500" font-size="14" fill="#94a3b8" font-weight="bold">Khung lý thuyết</text>
+<text x="340" y="500" font-size="14" fill="#94a3b8" font-weight="bold">Khái niệm tương đương</text>
+<text x="680" y="500" font-size="14" fill="#94a3b8" font-weight="bold">Trùng ở đâu</text>
+<text x="960" y="500" font-size="14" fill="#94a3b8" font-weight="bold">Khác ở đâu</text>
+<line x1="60" y1="512" x2="1140" y2="512" stroke="#1c2333"/>
+<text x="60" y="538" font-size="13" fill="#e2e8f0">Auction Market Theory</text>
+<text x="340" y="538" font-size="13" fill="#e2e8f0">Value Area High/Low</text>
+<text x="680" y="538" font-size="13" fill="#e2e8f0">Premium≈VAH, Discount≈VAL</text>
+<text x="960" y="538" font-size="12.5" fill="#e2e8f0">AMT dùng volume/TPO thật, ICT dùng Fib hình học</text>
+<line x1="60" y1="550" x2="1140" y2="550" stroke="#1c2333"/>
+<text x="60" y="576" font-size="13" fill="#e2e8f0">Mean Reversion (quant)</text>
+<text x="340" y="576" font-size="13" fill="#e2e8f0">Z-score / độ lệch khỏi trung bình</text>
+<text x="680" y="576" font-size="13" fill="#e2e8f0">"Mua rẻ bán đắt" = mua khi z-score âm</text>
+<text x="960" y="576" font-size="12.5" fill="#e2e8f0">Quant đo bằng độ lệch chuẩn, ICT bằng % Fib</text>
+<line x1="60" y1="588" x2="1140" y2="588" stroke="#1c2333"/>
+<text x="60" y="614" font-size="13" fill="#e2e8f0">Options Market Making</text>
+<text x="340" y="614" font-size="13" fill="#e2e8f0">Gamma pinning quanh strike lớn</text>
+<text x="680" y="614" font-size="13" fill="#e2e8f0">Giá bị ghim gần trung tâm quanh expiry</text>
+<text x="960" y="614" font-size="11.5" fill="#e2e8f0">Gamma pinning chỉ có ở nơi options sâu (SPX, index)</text>
+<text x="60" y="670" font-size="13" fill="#94a3b8">Kết luận: EQ "hoạt động" nhờ hội tụ của 3 cơ chế độc lập (auction, execution algo, đôi khi options) — không phải vì con số 50% có phép thuật riêng.</text>
+<text x="60" y="695" font-size="13" fill="#94a3b8">Đây cũng là lý do 50% vs 61.8% Fib gây tranh cãi — xem mục 15 Phản biện.</text>
+</svg>

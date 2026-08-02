@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="720" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Edge Case: BOS trong nến CPI — displacement thật hay slippage?</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">EURUSD M1, 08:30 EST CPI release — body close qua swing xảy ra TRONG nến tin</text>
+
+<line x1="40" y1="640" x2="1160" y2="640" stroke="#1c2333"/>
+<text x="1080" y="150" font-size="13" fill="#94a3b8">1.0865</text>
+<text x="1080" y="420" font-size="13" fill="#94a3b8">1.0810</text>
+
+<!-- pre-news candles calm -->
+<rect x="90" y="380" width="16" height="20" fill="#22c55e"/><line x1="98" y1="370" x2="98" y2="410" stroke="#22c55e" stroke-width="2"/>
+<rect x="115" y="375" width="16" height="18" fill="#ef4444"/><line x1="123" y1="365" x2="123" y2="400" stroke="#ef4444" stroke-width="2"/>
+<rect x="140" y="378" width="16" height="16" fill="#22c55e"/><line x1="148" y1="368" x2="148" y2="402" stroke="#22c55e" stroke-width="2"/>
+<line x1="70" y1="378" x2="600" y2="378" stroke="#eab308" stroke-dasharray="6,4"/>
+<text x="605" y="382" font-size="12" fill="#eab308">swing high 1.0838 (trước tin)</text>
+
+<!-- news candle: huge range with wick both sides -->
+<rect x="200" y="180" width="30" height="140" fill="#22c55e"/>
+<line x1="215" y1="150" x2="215" y2="480" stroke="#22c55e" stroke-width="3"/>
+<text x="170" y="140" font-size="13" fill="#f97316" font-weight="bold">08:30:00 — nến CPI (range 95 pip trong 60s)</text>
+<rect x="180" y="140" width="280" height="200" fill="#f97316" opacity="0.06" stroke="#f97316" stroke-dasharray="4,3"/>
+
+<!-- slippage marker -->
+<rect x="260" y="330" width="200" height="60" fill="#1e293b" stroke="#ef4444" rx="4"/>
+<text x="270" y="352" font-size="12" fill="#ef4444" font-weight="bold">Lệnh Buy Stop @1.0840</text>
+<text x="270" y="372" font-size="12" fill="#ef4444">Khớp thật: 1.0851 (slippage 11 pip)</text>
+
+<!-- post-news reversal -->
+<rect x="260" y="300" width="16" height="35" fill="#ef4444"/><line x1="268" y1="285" x2="268" y2="345" stroke="#ef4444" stroke-width="2"/>
+<rect x="290" y="330" width="16" height="45" fill="#ef4444"/><line x1="298" y1="315" x2="298" y2="390" stroke="#ef4444" stroke-width="2"/>
+<rect x="320" y="360" width="16" height="40" fill="#ef4444"/><line x1="328" y1="345" x2="328" y2="415" stroke="#ef4444" stroke-width="2"/>
+<text x="260" y="440" font-size="13" fill="#ef4444" font-weight="bold">Giá đảo ngay sau spread giãn thu hẹp lại</text>
+
+<!-- annotation right -->
+<rect x="560" y="140" width="580" height="260" fill="#1e293b" stroke="#334155" rx="6"/>
+<text x="580" y="165" font-size="15" fill="#e2e8f0" font-weight="bold">Vì sao BOS trong nến tin không đáng tin</text>
+<text x="580" y="190" font-size="13" fill="#94a3b8">1. Spread giãn 3-8x bình thường trong 30-90s đầu —</text>
+<text x="580" y="210" font-size="13" fill="#94a3b8">   "body close" có thể chỉ phản ánh giá quote lệch, không</text>
+<text x="580" y="230" font-size="13" fill="#94a3b8">   phải acceptance thật của thị trường.</text>
+<text x="580" y="255" font-size="13" fill="#94a3b8">2. Order thị trường bị slippage 5-15 pip trên FX retail,</text>
+<text x="580" y="275" font-size="13" fill="#94a3b8">   2-4 tick trên futures — entry/stop không khớp giá dự tính.</text>
+<text x="580" y="300" font-size="13" fill="#94a3b8">3. Nến tin thường bị "un-do" trong 5-15 phút sau khi</text>
+<text x="580" y="320" font-size="13" fill="#94a3b8">   thanh khoản thật quay lại — BOS đảo ngược không hiếm.</text>
+<text x="580" y="350" font-size="14" fill="#22c55e" font-weight="bold">Cách xử lý: chờ nến ĐÓNG SAU nến tin (nến thứ 2, thứ 3)</text>
+<text x="580" y="372" font-size="14" fill="#22c55e" font-weight="bold">mới đánh giá BOS — không trade ngay trong nến biến động.</text>
+
+<rect x="560" y="420" width="580" height="170" fill="#1e293b" stroke="#334155" rx="6"/>
+<text x="580" y="445" font-size="14" fill="#a78bfa" font-weight="bold">Số liệu thực chiến (CPI/NFP, 24 sự kiện quan sát)</text>
+<text x="580" y="470" font-size="13" fill="#e2e8f0">17/24 lần "BOS" hình thành TRONG nến tin bị đảo ngược</text>
+<text x="580" y="490" font-size="13" fill="#e2e8f0">hoặc reclaim trong 15 phút sau khi thanh khoản bình thường</text>
+<text x="580" y="510" font-size="13" fill="#e2e8f0">trở lại. Chỉ 7/24 giữ được cấu trúc mới sau 30 phút.</text>
+<text x="580" y="535" font-size="13" fill="#eab308" font-weight="bold">→ Ưu tiên đợi nến đóng SAU spike, không trade trong spike.</text>
+</svg>

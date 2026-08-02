@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="800" fill="#0f1420" rx="12"/>
+
+  <text x="600" y="40" font-size="26" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Cơ chế Inducement: vì sao Execution Algo phải "ghé qua" mồi trước khi tới POI</text>
+  <text x="600" y="64" font-size="15" fill="#94a3b8" text-anchor="middle">Limit order book + bài toán tối thiểu hóa market impact — không phải âm mưu cá nhân</text>
+
+  <!-- Step 1 -->
+  <text x="60" y="105" font-size="17" font-weight="bold" fill="#38bdf8">Bước 1 — Tổ chức cần mua lớn tại OB, không thể đặt hết lệnh ngay</text>
+  <rect x="60" y="118" width="330" height="110" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="75" y="142" font-size="12.5" fill="#e2e8f0">Đặt toàn bộ lệnh mua ngay tại OB</text>
+  <text x="75" y="160" font-size="12.5" fill="#e2e8f0">→ lộ ý định, giá bị đẩy lên trước</text>
+  <text x="75" y="178" font-size="12.5" fill="#e2e8f0">khi mua đủ khối lượng cần thiết</text>
+  <text x="75" y="204" font-size="12.5" fill="#ef4444" font-weight="bold">Giải pháp: thực thi qua algo,</text>
+  <text x="75" y="220" font-size="12.5" fill="#ef4444" font-weight="bold">tìm đối ứng RẺ trước khi tới OB</text>
+
+  <!-- Step 2 -->
+  <text x="450" y="105" font-size="17" font-weight="bold" fill="#eab308">Bước 2 — Stop cluster là đối ứng "rẻ, chắc chắn"</text>
+  <rect x="450" y="118" width="330" height="110" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="465" y="142" font-size="12.5" fill="#e2e8f0">Đáy/đỉnh nhỏ = nơi retail đặt sẵn</text>
+  <text x="465" y="160" font-size="12.5" fill="#e2e8f0">stop/breakout order (market order</text>
+  <text x="465" y="178" font-size="12.5" fill="#e2e8f0">chờ sẵn, kích hoạt đúng 1 mức giá)</text>
+  <text x="465" y="204" font-size="12.5" fill="#eab308" font-weight="bold">→ nguồn đối ứng rẻ hơn "mua đuổi"</text>
+  <text x="465" y="220" font-size="12.5" fill="#eab308" font-weight="bold">thanh khoản trôi nổi trên thị trường</text>
+
+  <!-- Step 3 -->
+  <text x="840" y="105" font-size="17" font-weight="bold" fill="#f97316" textLength="354" lengthAdjust="spacingAndGlyphs">Bước 3 — TWAP/VWAP chọn "đường vòng" qua mồi</text>
+  <rect x="840" y="118" width="300" height="110" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="855" y="142" font-size="12.5" fill="#e2e8f0">Không đi thẳng tới POI — tối ưu</text>
+  <text x="855" y="160" font-size="12.5" fill="#e2e8f0">giảm market impact bằng cách để</text>
+  <text x="855" y="178" font-size="12.5" fill="#e2e8f0">giá "ghé qua" vùng đối ứng có sẵn</text>
+  <text x="855" y="204" font-size="12.5" fill="#f97316" font-weight="bold">→ đây chính là IDM hình thành</text>
+
+  <!-- diagram: price path -->
+  <text x="600" y="270" font-size="17" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Đường đi của giá qua lăng kính order flow</text>
+
+  <g stroke="#1c2333"><line x1="60" y1="310" x2="1140" y2="310"/><line x1="60" y1="400" x2="1140" y2="400"/><line x1="60" y1="490" x2="1140" y2="490"/></g>
+
+  <!-- downtrend into IDM -->
+  <line x1="110" y1="330" x2="110" y2="370" stroke="#ef4444" stroke-width="2"/>
+  <rect x="102" y="340" width="16" height="25" fill="#ef4444"/>
+  <line x1="160" y1="345" x2="160" y2="385" stroke="#ef4444" stroke-width="2"/>
+  <rect x="152" y="355" width="16" height="25" fill="#ef4444"/>
+
+  <line x1="200" y1="360" x2="330" y2="360" stroke="#eab308" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="335" y="364" font-size="12.5" fill="#eab308">Đáy nhỏ IDM (stop cluster)</text>
+
+  <line x1="220" y1="365" x2="220" y2="400" stroke="#ef4444" stroke-width="2"/>
+  <rect x="212" y="375" width="16" height="22" fill="#ef4444"/>
+
+  <!-- sweep of IDM -->
+  <line x1="260" y1="360" x2="260" y2="420" stroke="#f97316" stroke-width="2.5"/>
+  <rect x="252" y="380" width="16" height="30" fill="#ef4444" stroke="#f97316" stroke-width="1.5"/>
+  <text x="230" y="440" font-size="12" fill="#f97316" font-weight="bold">Sweep mồi (counterparty được gom)</text>
+
+  <!-- continuation to POI -->
+  <line x1="300" y1="400" x2="450" y2="470" stroke="#94a3b8" stroke-width="2" stroke-dasharray="3,3"/>
+
+  <rect x="440" y="470" width="220" height="55" fill="#22c55e" opacity="0.22"/>
+  <text x="450" y="490" font-size="13" fill="#e2e8f0" font-weight="bold">POI thật (OB/FVG)</text>
+  <text x="450" y="507" font-size="11.5" fill="#94a3b8">nơi lệnh lớn hoàn tất tích lũy</text>
+
+  <!-- displacement up -->
+  <line x1="560" y1="490" x2="560" y2="340" stroke="#22c55e" stroke-width="3"/>
+  <rect x="550" y="350" width="22" height="130" fill="#22c55e"/>
+  <text x="510" y="325" font-size="13" fill="#22c55e" font-weight="bold">Displacement → MSS</text>
+
+  <line x1="620" y1="345" x2="1100" y2="330" stroke="#22c55e" stroke-width="2.5"/>
+  <text x="900" y="320" font-size="12.5" fill="#94a3b8">Giá đi tới target thanh khoản đối diện</text>
+
+  <!-- comparison boxes -->
+  <text x="60" y="575" font-size="17" font-weight="bold" fill="#e2e8f0">Đối chiếu với các khung lý thuyết khác</text>
+
+  <rect x="60" y="595" width="335" height="90" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="72" y="618" font-size="13" fill="#a78bfa" font-weight="bold">Wyckoff Spring/Upthrust</text>
+  <text x="72" y="636" font-size="12" fill="#e2e8f0">Test giả dưới support trước khi</text>
+  <text x="72" y="652" font-size="12" fill="#e2e8f0">đảo thật — cùng ý tưởng "mồi"</text>
+  <text x="72" y="670" font-size="11.5" fill="#94a3b8">Khác: gắn với schematic cố định</text>
+
+  <rect x="432" y="595" width="335" height="90" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="444" y="618" font-size="13" fill="#a78bfa" font-weight="bold">Auction Market Theory</text>
+  <text x="444" y="636" font-size="12" fill="#e2e8f0">Test low-volume node trước khi</text>
+  <text x="444" y="652" font-size="12" fill="#e2e8f0">tìm high-volume node</text>
+  <text x="444" y="670" font-size="11.5" fill="#94a3b8">Khác: đo bằng volume profile</text>
+
+  <rect x="804" y="595" width="336" height="90" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="816" y="618" font-size="13" fill="#a78bfa" font-weight="bold">Orderflow / Footprint</text>
+  <text x="816" y="636" font-size="12" fill="#e2e8f0">Absorption yếu tại mồi, mạnh</text>
+  <text x="816" y="652" font-size="12" fill="#e2e8f0">tại vùng giá trị thật</text>
+  <text x="816" y="670" font-size="11.5" fill="#94a3b8">Khác: đo bằng lệnh khớp thật</text>
+
+  <text x="600" y="720" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-style="italic">IDM luôn nhỏ hơn pool chính: nếu ngang bằng, giá thường đảo ngay tại đó (trở thành structural sweep, không còn là IDM).</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 5 — WIN: Double purge trước khi MSS thật xảy ra</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">EURUSD, London Open — giá quét thanh khoản 2 lần, kiên nhẫn đợi lần thứ hai mới vào</text>
+
+<line x1="60" y1="500" x2="900" y2="500" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="380" x2="900" y2="380" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="260" x2="900" y2="260" stroke="#1f2937" stroke-width="1"/>
+
+<rect x="60" y="150" width="840" height="130" fill="rgba(239,68,68,0.08)"/>
+<text x="880" y="168" font-size="11" fill="#94a3b8" text-anchor="end">Premium</text>
+
+<line x1="60" y1="238" x2="900" y2="238" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="70" y="233" font-size="12" fill="#eab308" text-anchor="start">BSL</text>
+
+<!-- rally, first purge -->
+<rect x="100" y="400" width="12" height="35" fill="#22c55e"/>
+<line x1="106" y1="392" x2="106" y2="440" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="125" y="360" width="12" height="40" fill="#22c55e"/>
+<line x1="131" y1="350" x2="131" y2="405" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="150" y="315" width="12" height="45" fill="#22c55e"/>
+<line x1="156" y1="305" x2="156" y2="365" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="175" y="270" width="12" height="45" fill="#22c55e"/>
+<line x1="181" y1="258" x2="181" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="200" y="222" width="12" height="35" fill="#22c55e"/>
+<line x1="206" y1="210" x2="206" y2="265" stroke="#f97316" stroke-width="2.5"/>
+<path d="M 206 210 L 198 196 L 214 196 Z" fill="#f97316"/>
+<text x="206" y="190" font-size="11" font-weight="700" fill="#f97316" text-anchor="middle">Purge #1</text>
+
+<!-- small pullback then second push and purge -->
+<rect x="230" y="235" width="12" height="20" fill="#ef4444"/>
+<line x1="236" y1="225" x2="236" y2="260" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="255" y="210" width="12" height="30" fill="#22c55e"/>
+<line x1="261" y1="198" x2="261" y2="245" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="280" y="185" width="12" height="30" fill="#22c55e"/>
+<line x1="286" y1="172" x2="286" y2="220" stroke="#f97316" stroke-width="2.5"/>
+<path d="M 286 172 L 278 158 L 294 158 Z" fill="#f97316"/>
+<text x="286" y="152" font-size="11" font-weight="700" fill="#f97316" text-anchor="middle">Purge #2 (thật)</text>
+
+<!-- MSS after 2nd purge -->
+<rect x="310" y="200" width="12" height="30" fill="#ef4444"/>
+<rect x="335" y="230" width="12" height="45" fill="#ef4444"/>
+<line x1="316" y1="190" x2="316" y2="231" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="341" y1="222" x2="341" y2="276" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="270" y1="230" x2="470" y2="230" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="475" y="226" font-size="12" fill="#a855f7" text-anchor="start">MSS 5m</text>
+
+<rect x="360" y="265" width="55" height="30" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-dasharray="4 3"/>
+<rect x="365" y="273" width="12" height="15" fill="#22c55e"/>
+<line x1="371" y1="266" x2="371" y2="290" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="440" y="285" font-size="12" font-weight="700" fill="#4ade80" text-anchor="start">SHORT sau purge #2</text>
+
+<rect x="395" y="290" width="12" height="35" fill="#ef4444"/>
+<rect x="420" y="320" width="12" height="40" fill="#ef4444"/>
+<rect x="445" y="355" width="12" height="40" fill="#ef4444"/>
+<line x1="401" y1="283" x2="401" y2="326" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="426" y1="313" x2="426" y2="365" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="451" y1="348" x2="451" y2="400" stroke="#9ca3af" stroke-width="1.5"/>
+
+<text x="700" y="330" font-size="14" font-weight="700" fill="#4ade80" text-anchor="middle">+22 pips</text>
+<text x="700" y="350" font-size="12" fill="#f87171" text-anchor="middle">Nếu vào ngay sau Purge #1: bị hồi -8 pips trước khi hồi phục</text>
+
+<rect x="60" y="440" width="840" height="90" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<text x="80" y="465" font-size="13" font-weight="700" fill="#4ade80" text-anchor="start">Vì sao win: kiên nhẫn không short ngay sau lần quét thanh khoản đầu tiên</text>
+<text x="80" y="485" font-size="12" fill="#94a3b8" text-anchor="start">Purge đầu chỉ là "thử" thanh khoản mỏng — MSS 5m chỉ hình thành rõ ràng sau purge thứ hai</text>
+<text x="80" y="505" font-size="12" fill="#94a3b8" text-anchor="start">Bài học: khi thấy 2 đỉnh liền kề đều bị quét, ưu tiên đợi MSS xác nhận sau lần quét gần entry nhất</text>
+</svg>

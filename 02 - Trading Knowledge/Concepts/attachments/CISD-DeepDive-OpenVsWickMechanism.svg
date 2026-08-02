@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">CISD: do bang Close vs cach doc bang Wick</text>
+
+  <line x1="480" y1="70" x2="480" y2="480" stroke="#1e222d" stroke-width="2"/>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="0" y1="130" x2="960" y2="130"/>
+    <line x1="0" y1="190" x2="960" y2="190"/>
+    <line x1="0" y1="250" x2="960" y2="250"/>
+    <line x1="0" y1="310" x2="960" y2="310"/>
+    <line x1="0" y1="370" x2="960" y2="370"/>
+  </g>
+
+  <text x="30" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d1d4dc">Trai: Wick xuyen qua open (tin hieu yeu)</text>
+  <line x1="60" y1="250" x2="440" y2="250" stroke="#f2c94c" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="65" y="245" font-family="Arial, sans-serif" font-size="13" fill="#f2c94c">Open cua chuoi giao hang</text>
+  <g>
+    <line x1="120" y1="230" x2="120" y2="280" stroke="#ef5350" stroke-width="1"/>
+    <rect x="110" y="240" width="20" height="30" fill="#ef5350"/>
+    <line x1="160" y1="240" x2="160" y2="290" stroke="#ef5350" stroke-width="1"/>
+    <rect x="150" y="250" width="20" height="30" fill="#ef5350"/>
+  </g>
+  <!-- candle with wick crossing open but closing back below -->
+  <line x1="220" y1="200" x2="220" y2="270" stroke="#ef5350" stroke-width="1"/>
+  <rect x="210" y="255" width="20" height="15" fill="#ef5350"/>
+  <text x="200" y="195" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Wick vuot open</text>
+  <text x="200" y="290" font-family="Arial, sans-serif" font-size="12" fill="#ef5350">nhung dong cua tra ve duoi</text>
+  <line x1="260" y1="260" x2="260" y2="310" stroke="#ef5350" stroke-width="1"/>
+  <rect x="250" y="270" width="20" height="30" fill="#ef5350"/>
+  <text x="60" y="420" font-family="Arial, sans-serif" font-size="14" fill="#ef5350">Ket luan: dong luc doi ung khong du ben -&gt; xu huong cu tiep dien</text>
+
+  <text x="510" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d1d4dc">Phai: Close vuot open (CISD hop le)</text>
+  <line x1="540" y1="250" x2="920" y2="250" stroke="#f2c94c" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="545" y="245" font-family="Arial, sans-serif" font-size="13" fill="#f2c94c">Open cua chuoi giao hang</text>
+  <g>
+    <line x1="600" y1="230" x2="600" y2="280" stroke="#ef5350" stroke-width="1"/>
+    <rect x="590" y="240" width="20" height="30" fill="#ef5350"/>
+    <line x1="640" y1="240" x2="640" y2="290" stroke="#ef5350" stroke-width="1"/>
+    <rect x="630" y="250" width="20" height="30" fill="#ef5350"/>
+  </g>
+  <!-- candle closing fully above open -->
+  <line x1="700" y1="180" x2="700" y2="245" stroke="#26a69a" stroke-width="1"/>
+  <rect x="690" y="190" width="20" height="45" fill="#26a69a"/>
+  <text x="680" y="170" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Dong cua vuot han open</text>
+  <line x1="740" y1="150" x2="740" y2="210" stroke="#26a69a" stroke-width="1"/>
+  <rect x="730" y="155" width="20" height="45" fill="#26a69a"/>
+  <text x="510" y="420" font-family="Arial, sans-serif" font-size="14" fill="#26a69a">Ket luan: dong lenh doi ung du manh va ben -&gt; dao chieu duoc xac nhan</text>
+
+  <rect x="30" y="450" width="900" height="60" fill="none" stroke="#d1d4dc" stroke-width="1"/>
+  <text x="45" y="475" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">CISD chi tinh khi gia DONG CUA vuot qua open, khong tinh khi chi co bong nen (wick) cham qua.</text>
+  <text x="45" y="497" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Day la co so co che order-book: dong cua phan anh dong lenh ben vung hon bong nen thoang qua.</text>
+</svg>

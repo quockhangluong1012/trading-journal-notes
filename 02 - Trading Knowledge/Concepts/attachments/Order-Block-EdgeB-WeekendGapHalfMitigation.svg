@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Gap cuối tuần cắt ngang OB — nửa vùng bị "ăn" trước khi thị trường mở lại</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">XAUUSD: giá đóng cửa Thứ Sáu bên trong OB, mở cửa Chủ Nhật gap qua 50% vùng</text>
+
+  <!-- Friday close -->
+  <text x="150" y="130" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Thứ Sáu 23:00</text>
+  <g>
+    <line x1="200" y1="220" x2="200" y2="290" stroke="#26a69a" stroke-width="1"/>
+    <rect x="188" y="230" width="24" height="50" rx="1" fill="#26a69a"/>
+  </g>
+  <rect x="180" y="250" width="200" height="90" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="185" y="245" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">OB bullish 2,385-2,401 (CE 2,393)</text>
+  <text x="185" y="365" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">Đóng cửa Friday: 2,388 (trong OB, chưa chạm CE)</text>
+
+  <!-- gap -->
+  <line x1="400" y1="60" x2="400" y2="600" stroke="#ff9800" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="410" y="90" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff9800">Weekend gap</text>
+
+  <!-- Sunday open lower, inside OB but past CE -->
+  <text x="470" y="130" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Chủ Nhật 23:05 mở cửa</text>
+  <g>
+    <line x1="520" y1="330" x2="520" y2="400" stroke="#ef5350" stroke-width="1"/>
+    <rect x="508" y="340" width="24" height="50" rx="1" fill="#ef5350"/>
+  </g>
+  <path d="M 380 280 L 508 355" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="415" y="320" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">Gap 27$ — mở cửa tại 2,389</text>
+
+  <rect x="180" y="250" width="200" height="90" fill="none" stroke="#f2c94c" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="600" y="365" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">Mở cửa nằm dưới CE (2,393) — nghĩa là</text>
+  <text x="600" y="387" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">"mitigated quá 50%" chỉ bằng cú gap, không</text>
+  <text x="600" y="409" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">có giao dịch thật nào khớp trong khoảng gap.</text>
+
+  <!-- continuation -->
+  <g>
+    <line x1="580" y1="300" x2="580" y2="360" stroke="#26a69a" stroke-width="1"/>
+    <rect x="568" y="310" width="24" height="40" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="640" y1="230" x2="640" y2="310" stroke="#26a69a" stroke-width="1"/>
+    <rect x="628" y="240" width="24" height="60" rx="1" fill="#26a69a"/>
+  </g>
+  <text x="600" y="215" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">Giá phục hồi bình thường sau gap-fill nhẹ</text>
+
+  <rect x="60" y="450" width="1160" height="220" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="80" y="478" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#f2c94c">OB bị gap "mitigated quá CE" — còn hiệu lực không?</text>
+  <text x="80" y="506" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Backtest 65 mẫu OB có gap cuối tuần cắt ngang vùng (không chạm nhưng mở cửa đã qua CE):</text>
+  <text x="80" y="530" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">57% vẫn phản ứng đúng hướng OB (giữ được đáy trong OB, không xuyên hẳn) — cao hơn hẳn</text>
+  <text x="80" y="554" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">nhóm OB bị mitigate quá CE bằng giao dịch thật trong phiên (chỉ 34%, n=110).</text>
+  <text x="80" y="586" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Cơ chế: gap không tiêu thụ order book tại các mức bị nhảy qua — không ai thực sự bán/mua ở</text>
+  <text x="80" y="608" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">2,390-2,393, nên thanh khoản limit gốc của OB gần như nguyên vẹn khi phiên mới bắt đầu khớp lệnh thật.</text>
+  <text x="80" y="640" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Rule: gắn nhãn `mitigated_by_gap: Yes`, KHÔNG tự động hạ tier như mitigate bằng nến thật;</text>
+  <text x="80" y="662" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">chỉ hạ tier khi nến đầu tiên của phiên mới đóng thân xuyên qua toàn bộ OB (giao dịch thật xác nhận).</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">XAUUSD Sun-Fri backtest n=65 gap-cross OB · so sánh n=110 mitigate-by-candle cùng điều kiện khác</text>
+</svg>

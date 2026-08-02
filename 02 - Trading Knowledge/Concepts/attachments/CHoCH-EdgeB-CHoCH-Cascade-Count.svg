@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">CHoCH cascade - đếm số lần fail trước reversal thật</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">65 đảo chiều lớn XAUUSD/NQ/EURUSD - trung bình 2.3 CHoCH fail trước CHoCH thành công cuối cùng</text>
+
+  <!-- Downtrend leading into reversal zone -->
+  <line x1="60" y1="180" x2="1220" y2="180" stroke="#2a2e39" stroke-width="1"/>
+
+  <g>
+    <line x1="100" y1="150" x2="100" y2="220" stroke="#26a69a" stroke-width="2"/>
+    <rect x="90" y="160" width="20" height="45" fill="#26a69a" rx="1"/>
+    <line x1="160" y1="180" x2="160" y2="250" stroke="#26a69a" stroke-width="2"/>
+    <rect x="150" y="190" width="20" height="45" fill="#26a69a" rx="1"/>
+    <line x1="220" y1="210" x2="220" y2="280" stroke="#26a69a" stroke-width="2"/>
+    <rect x="210" y="220" width="20" height="45" fill="#26a69a" rx="1"/>
+  </g>
+  <text x="160" y="120" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">uptrend cũ tiến vào vùng đỉnh HTF</text>
+
+  <!-- protected low #1 -->
+  <line x1="250" y1="330" x2="1220" y2="330" stroke="#b48ead" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.6"/>
+  <text x="1210" y="323" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#b48ead">protected low #1</text>
+
+  <!-- CHoCH #1: fails, reclaims -->
+  <line x1="290" y1="260" x2="290" y2="360" stroke="#ef5350" stroke-width="2.5"/>
+  <rect x="278" y="265" width="24" height="70" fill="#ef5350" rx="1"/>
+  <g>
+    <line x1="330" y1="290" x2="330" y2="330" stroke="#26a69a" stroke-width="2"/>
+    <rect x="322" y="295" width="16" height="25" fill="#26a69a" rx="1"/>
+  </g>
+  <rect x="250" y="380" width="150" height="40" rx="6" fill="#ff6b6b" opacity="0.16" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="325" y="405" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">CHoCH #1: fail, reclaim</text>
+
+  <!-- new shallower protected low #2 -->
+  <line x1="400" y1="300" x2="1220" y2="300" stroke="#b48ead" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.6"/>
+  <text x="1210" y="293" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#b48ead">protected low #2 (nông hơn)</text>
+
+  <g>
+    <line x1="440" y1="240" x2="440" y2="290" stroke="#26a69a" stroke-width="2"/>
+    <rect x="430" y="245" width="20" height="40" fill="#26a69a" rx="1"/>
+  </g>
+
+  <!-- CHoCH #2: fails again, shallower reclaim -->
+  <line x1="500" y1="250" x2="500" y2="330" stroke="#ef5350" stroke-width="2.5"/>
+  <rect x="488" y="255" width="24" height="65" fill="#ef5350" rx="1"/>
+  <g>
+    <line x1="540" y1="260" x2="540" y2="295" stroke="#26a69a" stroke-width="2"/>
+    <rect x="532" y="265" width="16" height="22" fill="#26a69a" rx="1"/>
+  </g>
+  <rect x="460" y="350" width="150" height="40" rx="6" fill="#ff6b6b" opacity="0.16" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="535" y="375" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">CHoCH #2: fail, nông hơn</text>
+
+  <!-- new shallower protected low #3 -->
+  <line x1="610" y1="278" x2="1220" y2="278" stroke="#b48ead" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.6"/>
+  <text x="1210" y="271" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#b48ead">protected low #3 (rất nông)</text>
+
+  <g>
+    <line x1="650" y1="220" x2="650" y2="265" stroke="#26a69a" stroke-width="2"/>
+    <rect x="640" y="225" width="20" height="35" fill="#26a69a" rx="1"/>
+  </g>
+
+  <!-- CHoCH #3: fails minimally -->
+  <line x1="710" y1="230" x2="710" y2="300" stroke="#ef5350" stroke-width="2.5"/>
+  <rect x="698" y="235" width="24" height="60" fill="#ef5350" rx="1"/>
+  <g>
+    <line x1="750" y1="238" x2="750" y2="270" stroke="#26a69a" stroke-width="2"/>
+    <rect x="742" y="243" width="16" height="20" fill="#26a69a" rx="1"/>
+  </g>
+  <rect x="670" y="320" width="150" height="40" rx="6" fill="#ff6b6b" opacity="0.16" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="745" y="345" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">CHoCH #3: fail nhẹ</text>
+
+  <!-- CHoCH #4: real, holds and BOS -->
+  <line x1="880" y1="200" x2="880" y2="450" stroke="#ef5350" stroke-width="3"/>
+  <rect x="864" y="205" width="30" height="240" fill="#ef5350" rx="1"/>
+  <g>
+    <line x1="930" y1="400" x2="930" y2="470" stroke="#ef5350" stroke-width="2"/>
+    <rect x="920" y="405" width="20" height="55" fill="#ef5350" rx="1"/>
+    <line x1="980" y1="440" x2="980" y2="510" stroke="#ef5350" stroke-width="2"/>
+    <rect x="970" y="445" width="20" height="55" fill="#ef5350" rx="1"/>
+    <line x1="1040" y1="480" x2="1040" y2="550" stroke="#ef5350" stroke-width="2"/>
+    <rect x="1030" y="485" width="20" height="55" fill="#ef5350" rx="1"/>
+    <line x1="1100" y1="510" x2="1100" y2="580" stroke="#ef5350" stroke-width="2"/>
+    <rect x="1090" y="515" width="20" height="55" fill="#ef5350" rx="1"/>
+  </g>
+
+  <rect x="900" y="150" width="240" height="46" rx="8" fill="#26a69a" opacity="0.2" stroke="#26a69a" stroke-width="1.5"/>
+  <text x="1020" y="179" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#26a69a">✓ CHoCH #4: giữ + BOS = đảo thật</text>
+
+  <line x1="980" y1="600" x2="1100" y2="600" stroke="#787b86" stroke-width="1.5"/>
+  <line x1="980" y1="592" x2="980" y2="608" stroke="#787b86" stroke-width="1.5"/>
+  <line x1="1100" y1="592" x2="1100" y2="608" stroke="#787b86" stroke-width="1.5"/>
+  <text x="1040" y="625" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">BOS hướng mới xác nhận</text>
+
+  <text x="640" y="700" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Mỗi lần fail làm protected swing tiếp theo nông hơn - dấu hiệu thanh khoản đang cạn dần</text>
+  <text x="640" y="722" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Phân phối: 0 fail trước = 22% mẫu, 1-2 fail = 41%, 3+ fail = 37%</text>
+
+  <text x="640" y="770" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Rule: đếm choch_fail_count trong cùng cụm, không kết luận trend còn nguyên vô thời hạn - xem EC-B6</text>
+</svg>

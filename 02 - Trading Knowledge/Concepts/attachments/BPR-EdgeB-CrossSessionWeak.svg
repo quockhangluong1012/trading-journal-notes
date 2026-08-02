@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">BPR ghép từ 2 leg khác session kém tin hơn BPR same-leg</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">EURUSD H1 — so sánh respect rate: overlap trong 1 phiên vs overlap bắc cầu 2 phiên</text>
+
+  <line x1="640" y1="60" x2="640" y2="640" stroke="#2a2e39" stroke-width="1"/>
+
+  <rect x="70" y="90" width="230" height="34" rx="6" fill="#26a69a" opacity="0.18" stroke="#26a69a"/>
+  <text x="88" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">✓ Same-leg — cùng phiên NY</text>
+
+  <g>
+    <line x1="110" y1="220" x2="110" y2="300" stroke="#ef5350" stroke-width="1"/>
+    <rect x="102" y="230" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="150" y1="250" x2="150" y2="330" stroke="#ef5350" stroke-width="1"/>
+    <rect x="142" y="260" width="16" height="60" rx="1" fill="#ef5350"/>
+  </g>
+  <rect x="95" y="255" width="80" height="55" rx="3" fill="#ef5350" opacity="0.14" stroke="#ef5350" stroke-dasharray="6 4"/>
+  <text x="100" y="330" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ef5350">SIBI 09:15</text>
+
+  <g>
+    <line x1="190" y1="180" x2="190" y2="260" stroke="#26a69a" stroke-width="1"/>
+    <rect x="182" y="190" width="16" height="60" rx="1" fill="#26a69a"/>
+    <line x1="230" y1="150" x2="230" y2="230" stroke="#26a69a" stroke-width="1"/>
+    <rect x="222" y="160" width="16" height="60" rx="1" fill="#26a69a"/>
+  </g>
+  <rect x="175" y="185" width="80" height="55" rx="3" fill="#26a69a" opacity="0.14" stroke="#26a69a" stroke-dasharray="6 4"/>
+  <text x="180" y="175" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">BISI 09:45 (30 phút sau)</text>
+
+  <rect x="140" y="235" width="55" height="30" rx="3" fill="#f2c94c" opacity="0.25" stroke="#f2c94c"/>
+  <text x="145" y="400" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Overlap — cùng nhịp NY AM</text>
+  <text x="90" y="430" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Respect rate mẫu: 68% (n=90, backtest)</text>
+
+  <rect x="690" y="90" width="260" height="34" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+  <text x="708" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">✗ Cross-session — Á bắc cầu NY</text>
+
+  <g>
+    <line x1="740" y1="220" x2="740" y2="300" stroke="#ef5350" stroke-width="1"/>
+    <rect x="732" y="230" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="780" y1="250" x2="780" y2="330" stroke="#ef5350" stroke-width="1"/>
+    <rect x="772" y="260" width="16" height="60" rx="1" fill="#ef5350"/>
+  </g>
+  <rect x="725" y="255" width="80" height="55" rx="3" fill="#ef5350" opacity="0.14" stroke="#ef5350" stroke-dasharray="6 4"/>
+  <text x="730" y="330" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ef5350">SIBI phiên Á 03:00</text>
+
+  <!-- gap in time representing many hours passing, thin volume period -->
+  <line x1="820" y1="60" x2="820" y2="380" stroke="#787b86" stroke-width="1" stroke-dasharray="2 4"/>
+  <text x="826" y="80" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">6 giờ trôi qua, thanh khoản mỏng</text>
+
+  <g>
+    <line x1="900" y1="180" x2="900" y2="260" stroke="#26a69a" stroke-width="1"/>
+    <rect x="892" y="190" width="16" height="60" rx="1" fill="#26a69a"/>
+    <line x1="940" y1="150" x2="940" y2="230" stroke="#26a69a" stroke-width="1"/>
+    <rect x="932" y="160" width="16" height="60" rx="1" fill="#26a69a"/>
+  </g>
+  <rect x="885" y="185" width="80" height="55" rx="3" fill="#26a69a" opacity="0.14" stroke="#26a69a" stroke-dasharray="6 4"/>
+  <text x="890" y="175" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">BISI phiên NY 09:00</text>
+
+  <rect x="760" y="240" width="40" height="30" rx="3" fill="#f2c94c" opacity="0.25" stroke="#f2c94c"/>
+  <text x="690" y="400" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Overlap về SỐ vẫn khớp — nhưng hai "chủ nợ"</text>
+  <text x="690" y="422" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">order flow khác phiên, khác động cơ</text>
+  <text x="690" y="450" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Respect rate mẫu: 41% (n=90, backtest)</text>
+
+  <rect x="690" y="490" width="500" height="70" rx="8" fill="#f2c94c" opacity="0.14" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="705" y="515" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">Rule: log session_gap_hours giữa 2 FVG —</text>
+  <text x="705" y="537" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">&gt; 4 giờ hoặc khác phiên chính = hạ cấp BPR</text>
+
+  <text x="40" y="690" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">EURUSD H1 · minh họa cấu trúc — respect rate minh họa theo phân phối mẫu backtest, không phải số liệu thị trường thật</text>
+</svg>

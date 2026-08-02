@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <!-- grid -->
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="0" y1="90" x2="960" y2="90"/>
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+    <line x1="160" y1="30" x2="160" y2="500"/>
+    <line x1="480" y1="30" x2="480" y2="500"/>
+    <line x1="640" y1="30" x2="640" y2="500"/>
+  </g>
+
+  <text x="480" y="35" fill="#d1d4dc" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Order-flow: giai phong thanh khoan tai 09:30 NY</text>
+
+  <!-- Pre-market zone -->
+  <rect x="40" y="60" width="120" height="410" fill="#1e222d" opacity="0.5"/>
+  <text x="100" y="80" fill="#d1d4dc" font-family="Arial" font-size="15" text-anchor="middle">Pre-market</text>
+  <text x="100" y="98" fill="#787b86" font-family="Arial" font-size="13" text-anchor="middle">thanh khoan mong</text>
+
+  <!-- pre-market candles small range -->
+  <g>
+    <line x1="70" y1="330" x2="70" y2="360" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="65" y="335" width="10" height="18" fill="#26a69a"/>
+    <line x1="95" y1="325" x2="95" y2="355" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="90" y="330" width="10" height="16" fill="#ef5350"/>
+    <line x1="120" y1="335" x2="120" y2="365" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="115" y="338" width="10" height="15" fill="#26a69a"/>
+    <line x1="145" y1="328" x2="145" y2="358" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="140" y="332" width="10" height="15" fill="#ef5350"/>
+  </g>
+
+  <!-- 09:30 open line -->
+  <line x1="160" y1="30" x2="160" y2="500" stroke="#f2c94c" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="160" y="500" fill="#f2c94c" font-family="Arial" font-size="15" text-anchor="middle">09:30 Open</text>
+
+  <!-- displacement candles after open (bigger) -->
+  <g>
+    <line x1="200" y1="300" x2="200" y2="345" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="193" y="310" width="14" height="28" fill="#26a69a"/>
+    <text x="200" y="360" fill="#d1d4dc" font-family="Arial" font-size="13" text-anchor="middle">Nen 1</text>
+
+    <line x1="235" y1="180" x2="235" y2="315" stroke="#26a69a" stroke-width="2"/>
+    <rect x="225" y="195" width="20" height="105" fill="#26a69a"/>
+    <text x="235" y="335" fill="#d1d4dc" font-family="Arial" font-size="13" text-anchor="middle">Nen 2 - Displacement</text>
+    <text x="235" y="170" fill="#26a69a" font-family="Arial" font-size="13" text-anchor="middle">Pha range truoc</text>
+
+    <line x1="270" y1="150" x2="270" y2="190" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="263" y="155" width="14" height="25" fill="#26a69a"/>
+    <text x="270" y="205" fill="#d1d4dc" font-family="Arial" font-size="13" text-anchor="middle">Nen 3</text>
+  </g>
+
+  <!-- FVG zone -->
+  <rect x="190" y="200" width="95" height="95" fill="rgba(41,98,255,0.25)" stroke="#2962ff" stroke-width="1"/>
+  <text x="237" y="255" fill="#d1d4dc" font-family="Arial" font-size="14" text-anchor="middle">1st FVG</text>
+
+  <!-- annotation arrow -->
+  <path d="M 300 250 L 380 250" stroke="#ffffff" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="340" y="240" fill="#ffffff" font-family="Arial" font-size="13" text-anchor="middle">Extend forward</text>
+
+  <!-- extended FVG box across day -->
+  <rect x="380" y="230" width="500" height="40" fill="rgba(41,98,255,0.15)" stroke="#2962ff" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="630" y="255" fill="#d1d4dc" font-family="Arial" font-size="14" text-anchor="middle">Focal point ca ngay - toi 03:45 PM</text>
+
+  <!-- retest -->
+  <circle cx="640" cy="250" r="6" fill="#f2c94c"/>
+  <text x="640" y="290" fill="#f2c94c" font-family="Arial" font-size="13" text-anchor="middle">Retest + CISD/MSS</text>
+
+  <!-- legend -->
+  <g font-family="Arial" font-size="13" fill="#d1d4dc">
+    <rect x="760" y="60" width="14" height="14" fill="rgba(41,98,255,0.25)" stroke="#2962ff"/>
+    <text x="780" y="72">1st FVG</text>
+    <rect x="760" y="85" width="14" height="14" fill="#26a69a"/>
+    <text x="780" y="97">Nen displacement</text>
+  </g>
+
+  <text x="480" y="520" fill="#787b86" font-family="Arial" font-size="14" text-anchor="middle">Thanh khoan "dong bang" truoc mo cua duoc giai phong dong loat, tao displacement dau tien phan anh y dinh goc cua dong lenh to chuc</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#ffffff"/>
+    </marker>
+  </defs>
+</svg>

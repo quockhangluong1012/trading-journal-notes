@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Case Study — Loss: MMBM M15 "sạch" chỉ là 1 bậc LRS trong MMBM H4 (-1R)</text>
+
+<!-- H4 sell program backdrop still going -->
+<text x="60" y="65" font-size="12" fill="#94a3b8">H4: sell program lớn vẫn đang chạy (chưa Smart Money Low H4)</text>
+<polyline points="60,100 160,140 260,180 360,220 460,260 560,300 660,330 760,355 860,375" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.45"/>
+
+<!-- M15 zoom box with clean MMBM inside -->
+<rect x="330" y="180" width="260" height="160" fill="rgba(56,189,248,0.06)" stroke="#38bdf8" stroke-dasharray="4 3"/>
+<text x="340" y="198" font-size="11" fill="#38bdf8">M15 MMBM "sạch" bên trong</text>
+
+<line x1="340" y1="320" x2="580" y2="320" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+<polyline points="350,240 380,240 380,270 410,270 410,300 440,300 440,320" fill="none" stroke="#ef4444" stroke-width="2"/>
+<circle cx="440" cy="320" r="12" fill="none" stroke="#4ade80" stroke-width="2"/>
+<polyline points="440,320 470,290 510,265" fill="none" stroke="#22c55e" stroke-width="2"/>
+<circle cx="470" cy="290" r="5" fill="#4ade80"/>
+<text x="470" y="345" font-size="10" fill="#4ade80">Entry Buy M15</text>
+
+<!-- then H4 trend resumes down, swallows the M15 bounce -->
+<polyline points="510,265 560,310 620,350 680,380" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+<line x1="470" y1="290" x2="960" y2="290" stroke="#f87171" stroke-width="1.5" stroke-dasharray="4 2"/>
+<text x="700" y="285" font-size="11" fill="#f87171">SL quét — H4 nuốt luôn nhịp hồi M15</text>
+
+<rect x="60" y="420" width="560" height="120" rx="8" fill="#1e293b" stroke="#334155"/>
+<text x="76" y="442" font-size="12" fill="#e5e7eb">M15 có đủ sweep + MSS + LRB, trông hoàn hảo trên M15</text>
+<text x="76" y="462" font-size="12" fill="#e5e7eb">Nhưng H4 chưa hề có Smart Money Low + MSS tăng —</text>
+<text x="76" y="482" font-size="12" fill="#e5e7eb">SML M15 chỉ là đáy của 1 bậc LRS bên trong sell program H4</text>
+<text x="76" y="505" font-size="12" fill="#f87171">Kết quả: Loss -1R — giữ lệnh quá lâu, không chốt sớm tại H1</text>
+
+<text x="480" y="565" font-size="12" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 1 — WIN: London Open Judas chuẩn mực</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">EURUSD, thứ Ba — HTF bearish rõ, Judas sạch, MSS tức thời</text>
+
+<line x1="60" y1="500" x2="900" y2="500" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="380" x2="900" y2="380" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="260" x2="900" y2="260" stroke="#1f2937" stroke-width="1"/>
+
+<rect x="60" y="150" width="840" height="130" fill="rgba(239,68,68,0.08)"/>
+<text x="880" y="168" font-size="11" fill="#94a3b8" text-anchor="end">Premium</text>
+
+<rect x="330" y="200" width="130" height="55" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-dasharray="4 3"/>
+<text x="395" y="192" font-size="12" fill="#3b82f6" text-anchor="middle">Premium FVG</text>
+
+<!-- rally into premium -->
+<rect x="100" y="400" width="12" height="40" fill="#22c55e"/>
+<line x1="106" y1="392" x2="106" y2="445" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="125" y="360" width="12" height="45" fill="#22c55e"/>
+<line x1="131" y1="350" x2="131" y2="410" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="150" y="315" width="12" height="45" fill="#22c55e"/>
+<line x1="156" y1="305" x2="156" y2="365" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="175" y="275" width="12" height="45" fill="#22c55e"/>
+<line x1="181" y1="263" x2="181" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="200" y="240" width="12" height="40" fill="#22c55e"/>
+<line x1="206" y1="228" x2="206" y2="285" stroke="#9ca3af" stroke-width="1.5"/>
+
+<line x1="60" y1="235" x2="900" y2="235" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="70" y="230" font-size="12" fill="#eab308" text-anchor="start">BSL old high</text>
+
+<rect x="240" y="205" width="12" height="35" fill="#22c55e"/>
+<line x1="246" y1="192" x2="246" y2="245" stroke="#f97316" stroke-width="2.5"/>
+<path d="M 246 192 L 238 178 L 254 178 Z" fill="#f97316"/>
+<text x="246" y="172" font-size="12" font-weight="700" fill="#f97316" text-anchor="middle">Judas 00:05 NY</text>
+
+<!-- MSS + displacement -->
+<rect x="290" y="225" width="12" height="30" fill="#ef4444"/>
+<rect x="315" y="255" width="12" height="45" fill="#ef4444"/>
+<line x1="296" y1="218" x2="296" y2="256" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="321" y1="248" x2="321" y2="301" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="260" y1="255" x2="460" y2="255" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="465" y="251" font-size="12" fill="#a855f7" text-anchor="start">MSS 5m</text>
+
+<rect x="345" y="290" width="60" height="30" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-dasharray="4 3"/>
+<rect x="350" y="298" width="12" height="15" fill="#22c55e"/>
+<line x1="356" y1="292" x2="356" y2="315" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="440" y="308" font-size="12" font-weight="700" fill="#4ade80" text-anchor="start">SHORT 0.9840</text>
+
+<rect x="380" y="315" width="12" height="35" fill="#ef4444"/>
+<rect x="405" y="345" width="12" height="40" fill="#ef4444"/>
+<rect x="430" y="380" width="12" height="40" fill="#ef4444"/>
+<line x1="386" y1="308" x2="386" y2="351" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="411" y1="338" x2="411" y2="390" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="436" y1="373" x2="436" y2="425" stroke="#9ca3af" stroke-width="1.5"/>
+
+<rect x="460" y="400" width="100" height="30" fill="rgba(34,197,94,0.20)" stroke="#4ade80" stroke-dasharray="4 3"/>
+<text x="510" y="420" font-size="11" fill="#4ade80" text-anchor="middle">TP discount 0.9815</text>
+
+<text x="700" y="380" font-size="14" font-weight="700" fill="#4ade80" text-anchor="middle">+25 pips · RR ~1:1.2</text>
+<text x="700" y="400" font-size="12" fill="#94a3b8" text-anchor="middle">Vào 0.9840, SL 0.9860, TP 0.9815</text>
+
+<rect x="60" y="440" width="840" height="90" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<text x="80" y="465" font-size="13" font-weight="700" fill="#4ade80" text-anchor="start">Vì sao win: HTF D1 bearish rõ + Judas quét đúng BSL cũ + MSS 5m tức thời sau sweep</text>
+<text x="80" y="485" font-size="12" fill="#94a3b8" text-anchor="start">Không có tin lớn xen vào, spread bình thường, retest post-MSS sạch không có double purge</text>
+<text x="80" y="505" font-size="12" fill="#94a3b8" text-anchor="start">Đóng lệnh đúng kế hoạch tại vùng discount, không dời TP xa hơn dù giá còn giảm tiếp</text>
+</svg>

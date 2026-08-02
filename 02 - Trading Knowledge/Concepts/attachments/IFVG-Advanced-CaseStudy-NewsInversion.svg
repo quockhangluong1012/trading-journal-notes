@@ -1,0 +1,38 @@
+<svg viewBox="0 0 760 450" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="450" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#1F2937">Case study NQ — nến tin NFP "đóng xuyên" FVG: inversion thật hay bẫy?</text>
+  <text x="24" y="52" font-size="13" fill="#6B7280">Một nến tin khổng lồ body-close qua FVG KHÔNG tự động là IFVG — thiếu MSS cấu trúc thật, giá whipsaw.</text>
+
+  <rect x="24" y="68" width="712" height="310" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- news time marker -->
+  <line x1="300" y1="80" x2="300" y2="360" stroke="#F59E0B" stroke-width="1.4" stroke-dasharray="4 4"/>
+  <text x="306" y="96" font-size="10" font-weight="700" fill="#B45309">08:30 ET — NFP release</text>
+
+  <!-- bullish FVG before news -->
+  <rect x="120" y="185" width="360" height="34" fill="#16A34A" opacity="0.14"/>
+  <text x="126" y="180" font-size="9" fill="#166534">bullish FVG (trước tin)</text>
+  <path d="M55,270 L90,235 L120,250 L160,205 L190,220 L230,190" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+
+  <!-- huge news candle closing down through FVG -->
+  <rect x="292" y="150" width="16" height="150" fill="#DC2626" rx="1"/>
+  <rect x="298" y="140" width="3" height="175" fill="#DC2626"/>
+  <text x="315" y="175" font-size="9.5" font-weight="700" fill="#B91C1C">Nến tin khổng lồ đóng body</text>
+  <text x="315" y="188" font-size="9.5" fill="#B91C1C">xuyên xuống qua FVG</text>
+  <text x="150" y="330" font-size="9.5" font-weight="700" fill="#92400E">Trader Short "IFVG" ngay khi nến đóng</text>
+
+  <!-- whipsaw back up (no real structure, mean reverts) -->
+  <path d="M300,300 L330,250 L355,275 L390,205 L420,225 L460,165 L500,180 L540,130" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <text x="410" y="150" font-size="9.5" font-weight="700" fill="#166534">Whipsaw LÊN — quét Short + lấy lại gap</text>
+  <line x1="255" y1="205" x2="360" y2="205" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="255" y="200" font-size="8.5" fill="#B91C1C">Short stop out</text>
+
+  <!-- later real structure resolves -->
+  <path d="M540,130 L575,175 L610,155 L650,210 L690,190" fill="none" stroke="#374151" stroke-width="1.8"/>
+  <text x="560" y="240" font-size="9" fill="#6B7280">Cấu trúc thật chỉ hình thành SAU khi biến động tin lắng</text>
+
+  <rect x="24" y="386" width="712" height="58" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="406" font-size="11.5" font-weight="700" fill="#92400E">Chẩn đoán: nến tin tạo body close qua FVG nhưng KHÔNG kèm MSS cấu trúc thật (không phá một swing có ý nghĩa,</text>
+  <text x="36" y="424" font-size="11.5" fill="#92400E">chỉ là spike thanh khoản). Volatility tin thường mean-revert, giá lấy lại gap → inversion bị phủ nhận.</text>
+  <text x="36" y="440" font-size="11.5" fill="#92400E">Sửa: không đọc IFVG trên nến tin; chờ biến động lắng, chờ MSS + acceptance của cấu trúc SAU tin rồi mới đánh giá.</text>
+</svg>

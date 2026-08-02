@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="760" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Case Study — ESUSD (ES), NY AM session, vòng xoay ERL→IRL→ERL trọn vẹn</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">Sweep SSL phiên Á, reclaim London, tiếp diễn lấy IRL rồi chạy tới ERL đối diện trong NY AM kill zone</text>
+
+<rect x="40" y="90" width="1120" height="420" fill="#1e293b" stroke="#334155" rx="8"/>
+
+<!-- ERL top/bottom -->
+<line x1="90" y1="140" x2="1110" y2="140" stroke="#eab308" stroke-dasharray="5,3"/>
+<text x="930" y="135" font-size="12" fill="#eab308">ERL trên (BSL D1) 5,342.00</text>
+<line x1="90" y1="440" x2="1110" y2="440" stroke="#eab308" stroke-dasharray="5,3"/>
+<text x="930" y="456" font-size="12" fill="#eab308">ERL dưới (SSL Á) 5,288.50</text>
+
+<!-- IRL FVG zone -->
+<rect x="90" y="330" width="1020" height="40" fill="#22c55e" opacity="0.15" stroke="#22c55e" stroke-dasharray="3,3"/>
+<text x="100" y="325" font-size="12" fill="#22c55e">IRL — H1 FVG 5,300-5,308 (đã "sạc" từ đợt reclaim London)</text>
+
+<!-- Asian session sweep -->
+<rect x="120" y="380" width="12" height="30" fill="#ef4444"/><line x1="126" y1="370" x2="126" y2="415" stroke="#ef4444" stroke-width="2"/>
+<circle cx="126" cy="408" r="6" fill="#f97316"/>
+<text x="140" y="412" font-size="11" fill="#f97316">Sweep SSL phiên Á 02:20 NY — 5,288.50</text>
+
+<!-- London reclaim -->
+<rect x="200" y="340" width="12" height="35" fill="#22c55e"/><line x1="206" y1="330" x2="206" y2="385" stroke="#22c55e" stroke-width="2"/>
+<rect x="225" y="310" width="12" height="35" fill="#22c55e"/><line x1="231" y1="300" x2="231" y2="355" stroke="#22c55e" stroke-width="2"/>
+<text x="180" y="290" font-size="11" fill="#94a3b8">Reclaim London 04:10 NY, MSS bullish H1</text>
+
+<!-- Entry at IRL retest -->
+<rect x="350" y="335" width="12" height="30" fill="#22c55e"/><line x1="356" y1="325" x2="356" y2="375" stroke="#22c55e" stroke-width="2"/>
+<circle cx="356" cy="350" r="7" fill="#38bdf8"/>
+<text x="370" y="345" font-size="13" fill="#38bdf8" font-weight="bold">① Entry Long 5,304.00 (retest IRL/FVG) — 08:35 NY AM KZ</text>
+<text x="370" y="365" font-size="12" fill="#ef4444">Stop 5,294.00 (dưới FVG + buffer) — risk 10 pt = 200 USD/lot</text>
+
+<!-- price path to ERL -->
+<rect x="500" y="290" width="12" height="40" fill="#22c55e"/><line x1="506" y1="280" x2="506" y2="335" stroke="#22c55e" stroke-width="2"/>
+<rect x="600" y="230" width="12" height="45" fill="#22c55e"/><line x1="606" y1="220" x2="606" y2="280" stroke="#22c55e" stroke-width="2"/>
+<rect x="700" y="180" width="12" height="40" fill="#22c55e"/><line x1="706" y1="170" x2="706" y2="225" stroke="#22c55e" stroke-width="2"/>
+<rect x="850" y="150" width="12" height="35" fill="#22c55e"/><line x1="856" y1="140" x2="856" y2="190" stroke="#22c55e" stroke-width="2"/>
+<circle cx="856" cy="148" r="7" fill="#a78bfa"/>
+<text x="750" y="130" font-size="13" fill="#a78bfa" font-weight="bold">② TP internal 5,320 (50%) → ③ TP ERL trên 5,340 (full)</text>
+
+<!-- bottom summary -->
+<rect x="40" y="530" width="1120" height="200" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="560" font-size="14" fill="#e2e8f0">HTF: ES D1 Bullish, dealing range 5,288.50-5,342.00. Vòng xoay: 02:20 NY sweep ERL dưới (SSL phiên Á) → 04:10 reclaim London tạo IRL (H1 FVG 5,300-5,308).</text>
+<text x="60" y="585" font-size="14" fill="#e2e8f0">08:35 NY AM kill zone: retest IRL, M5 MSS xác nhận. Entry 5,304.00, Stop 5,294.00 (risk 10 điểm = 200 USD/lot ES, 1pt=50 USD).</text>
+<text x="60" y="610" font-size="14" fill="#e2e8f0">TP1 internal OB 5,320.00 (+16 điểm, chốt 50%). TP2 ERL trên (BSL D1) 5,340.00 (+36 điểm) chạm 11:20 NY.</text>
+<text x="60" y="640" font-size="14" fill="#22c55e" font-weight="bold">Kết quả: R-multiple tổng hợp +3.6R — vòng xoay ERL→IRL→ERL diễn ra trọn vẹn trong đúng một phiên NY AM.</text>
+<text x="60" y="665" font-size="13" fill="#94a3b8">Bài học: sweep phiên Á + reclaim London tạo IRL sạch là setup NY AM kill zone đáng tin nhất vì đã qua đủ 2 phiên xác nhận trước khi vào lệnh.</text>
+<text x="60" y="690" font-size="13" fill="#94a3b8">Instrument: ES futures, 1 điểm = 50 USD/hợp đồng, tick 0.25 = 12.5 USD.</text>
+</svg>

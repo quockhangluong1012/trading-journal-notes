@@ -1,0 +1,66 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1280" height="720" rx="14" fill="#131722"/>
+  <rect x="1" y="1" width="1278" height="718" rx="14" fill="none" stroke="#2a2e39"/>
+
+  <text x="32" y="42" font-size="26" font-weight="bold" fill="#d1d4dc">FVG dính liền Volume Imbalance — đo mép nào?</text>
+  <text x="32" y="66" font-size="15" fill="#787b86">4 nến liên tiếp: FVG thật (nến 1-3) ghép ngay với Volume Imbalance (nến 3-4) thành một khối liền mạch</text>
+
+  <!-- candles -->
+  <g>
+    <!-- candle 1 -->
+    <rect x="140" y="420" width="40" height="60" fill="#26a69a" rx="1"/>
+    <line x1="160" y1="400" x2="160" y2="490" stroke="#26a69a"/>
+    <text x="120" y="510" font-size="13" fill="#787b86">Nen 1</text>
+
+    <!-- candle 2 displacement -->
+    <rect x="220" y="260" width="40" height="150" fill="#26a69a" rx="1"/>
+    <line x1="240" y1="245" x2="240" y2="420" stroke="#26a69a"/>
+    <text x="200" y="510" font-size="13" fill="#787b86">Nen 2 (displacement)</text>
+
+    <!-- candle 3 -->
+    <rect x="300" y="220" width="40" height="60" fill="#26a69a" rx="1"/>
+    <line x1="320" y1="205" x2="320" y2="290" stroke="#26a69a"/>
+    <text x="285" y="510" font-size="13" fill="#787b86">Nen 3</text>
+
+    <!-- candle 4 - body gap from candle 3 body but wicks overlap -->
+    <rect x="380" y="180" width="40" height="50" fill="#26a69a" rx="1"/>
+    <line x1="400" y1="160" x2="400" y2="245" stroke="#26a69a"/>
+    <text x="365" y="510" font-size="13" fill="#787b86">Nen 4</text>
+  </g>
+
+  <!-- FVG zone: high candle1 (420) to low candle3 (280) -->
+  <rect x="130" y="280" width="220" height="140" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4" stroke-opacity="0.6"/>
+  <text x="136" y="272" font-size="13" fill="#4a90d9">FVG that (wick n1 - wick n3): 3-nen gap</text>
+
+  <!-- VI zone: body candle3 (220) to body candle4 (230) small sliver -->
+  <rect x="300" y="220" width="120" height="20" fill="#f2c94c" opacity="0.20" stroke="#f2c94c" stroke-dasharray="4 3" stroke-opacity="0.7"/>
+  <text x="430" y="228" font-size="13" fill="#f2c94c">Volume Imbalance (body n3-n4)</text>
+
+  <!-- proximal / distal markers -->
+  <line x1="100" y1="220" x2="1180" y2="220" stroke="#b48ead" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="1000" y="215" font-size="13" fill="#b48ead">Mep ngoai cung TREN (proximal that)</text>
+
+  <line x1="100" y1="420" x2="1180" y2="420" stroke="#b48ead" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="1000" y="440" font-size="13" fill="#b48ead">Mep ngoai cung DUOI (distal that)</text>
+
+  <!-- two panels comparison: treat as 1 zone vs 2 zones -->
+  <rect x="550" y="480" width="330" height="200" fill="#1c2030" stroke="#26a69a" stroke-dasharray="6 4"/>
+  <text x="566" y="508" font-size="15" font-weight="bold" fill="#26a69a">✓ MOT VUNG LIEN TUC</text>
+  <text x="566" y="534" font-size="13" fill="#d1d4dc">Do CE tren toan bo mep ngoai</text>
+  <text x="566" y="554" font-size="13" fill="#d1d4dc">cung (220) den mep ngoai cung</text>
+  <text x="566" y="574" font-size="13" fill="#d1d4dc">duoi (420) - VI la phan noi dai</text>
+  <text x="566" y="600" font-size="13" fill="#f2c94c">Dung khi ca hai cung huong</text>
+  <text x="566" y="620" font-size="13" fill="#f2c94c">displacement, khong bi nen doi</text>
+  <text x="566" y="640" font-size="13" fill="#f2c94c">huong xen giua</text>
+
+  <rect x="920" y="480" width="330" height="200" fill="#1c2030" stroke="#ff6b6b" stroke-dasharray="6 4"/>
+  <text x="936" y="508" font-size="15" font-weight="bold" fill="#ff6b6b">✗ HAI VUNG RIENG</text>
+  <text x="936" y="534" font-size="13" fill="#d1d4dc">FVG that dung CE rieng (350)</text>
+  <text x="936" y="554" font-size="13" fill="#d1d4dc">VI dung nhu mot mep xac nhan</text>
+  <text x="936" y="574" font-size="13" fill="#d1d4dc">phu, khong tinh vao CE chinh</text>
+  <text x="936" y="600" font-size="13" fill="#f2c94c">Dung khi VI qua mong (duoi 15%</text>
+  <text x="936" y="620" font-size="13" fill="#f2c94c">chieu cao FVG) — VI se bi lap</text>
+  <text x="936" y="640" font-size="13" fill="#f2c94c">nhanh, khong doi entry</text>
+
+  <text x="60" y="700" font-size="13" fill="#565b66">Rule chia: neu VI toi thieu 25% chieu cao FVG chinh, gop thanh mot vung; neu khong, VI chi la mep xac nhan.</text>
+</svg>

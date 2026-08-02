@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="820" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế thị trường đằng sau FVG: Liquidity Vacuum &amp; Dealer Inventory</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">Vì sao gap 3 nến trên feed aggregated không phải "khoảng trống" thật trên order book</text>
+
+  <!-- Panel 1: candlestick with FVG -->
+  <rect x="40" y="90" width="520" height="290" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="60" y="118" font-size="16" fill="#e2e8f0" font-weight="bold">1. Trên chart: gap 3 nến (FVG)</text>
+
+  <!-- candle 1 -->
+  <line x1="140" y1="300" x2="140" y2="230" stroke="#22c55e" stroke-width="2"/>
+  <rect x="129" y="250" width="22" height="45" fill="#22c55e"/>
+  <text x="140" y="320" font-size="13" fill="#94a3b8" text-anchor="middle">Nến 1</text>
+  <text x="140" y="336" font-size="12" fill="#94a3b8" text-anchor="middle">High=1.0761</text>
+
+  <!-- candle 2 displacement -->
+  <line x1="220" y1="335" x2="220" y2="150" stroke="#22c55e" stroke-width="2"/>
+  <rect x="209" y="160" width="22" height="165" fill="#22c55e"/>
+  <text x="220" y="345" font-size="13" fill="#94a3b8" text-anchor="middle">Nến 2 (displacement)</text>
+
+  <!-- candle 3 -->
+  <line x1="300" y1="200" x2="300" y2="130" stroke="#22c55e" stroke-width="2"/>
+  <rect x="289" y="140" width="22" height="45" fill="#22c55e"/>
+  <text x="300" y="220" font-size="13" fill="#94a3b8" text-anchor="middle">Nến 3</text>
+  <text x="300" y="236" font-size="12" fill="#94a3b8" text-anchor="middle">Low=1.0779</text>
+
+  <!-- gap zone -->
+  <rect x="129" y="230" width="193" height="80" fill="#22c55e" opacity="0.22"/>
+  <line x1="129" y1="270" x2="322" y2="270" stroke="#eab308" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="330" y="274" font-size="13" fill="#eab308">CE (50%)</text>
+  <text x="140" y="360" font-size="13" fill="#e2e8f0">Vùng gap 1.0761–1.0779</text>
+  <text x="60" y="150" font-size="12" fill="#94a3b8">Chỉ thấy biên OHLC — không thấy mật độ giao dịch bên trong nến 2</text>
+
+  <!-- Panel 2: order book vacuum -->
+  <rect x="600" y="90" width="560" height="290" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="620" y="118" font-size="16" fill="#e2e8f0" font-weight="bold">2. Bên dưới: liquidity vacuum trên order book</text>
+
+  <text x="620" y="145" font-size="13" fill="#94a3b8">Trước displacement: sổ lệnh dày cả 2 phía</text>
+  <g>
+    <rect x="620" y="155" width="14" height="30" fill="#22c55e" opacity="0.6"/>
+    <rect x="640" y="150" width="14" height="35" fill="#22c55e" opacity="0.6"/>
+    <rect x="660" y="158" width="14" height="27" fill="#22c55e" opacity="0.6"/>
+    <rect x="680" y="152" width="14" height="33" fill="#22c55e" opacity="0.6"/>
+  </g>
+  <text x="620" y="205" font-size="13" fill="#f97316">Sau cú quét (aggressor market order):</text>
+  <text x="620" y="223" font-size="12" fill="#94a3b8">Limit order tại các mức trung gian bị "ăn" hết</text>
+  <g>
+    <rect x="620" y="235" width="14" height="8" fill="#334155"/>
+    <rect x="640" y="235" width="14" height="6" fill="#334155"/>
+    <rect x="660" y="235" width="14" height="7" fill="#334155"/>
+    <rect x="680" y="235" width="14" height="5" fill="#334155"/>
+  </g>
+  <text x="620" y="265" font-size="13" fill="#eab308">Market maker chưa kịp "rebuild depth"</text>
+  <text x="620" y="283" font-size="12" fill="#94a3b8">→ vùng này mỏng bất thường trong vài giây-phút</text>
+
+  <rect x="620" y="300" width="520" height="60" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="635" y="320" font-size="13" fill="#e2e8f0">Dealer inventory lệch (short quá mức) sau khi bán</text>
+  <text x="635" y="338" font-size="13" fill="#e2e8f0">cho dòng lệnh mua → cần quay lại mua ở vùng giá vốn</text>
+  <text x="635" y="352" font-size="12" fill="#94a3b8">Vùng giá vốn trung bình ≈ CE của FVG</text>
+
+  <!-- arrow connecting -->
+  <polygon points="590,235 610,225 610,245" fill="#38bdf8"/>
+  <text x="560" y="215" font-size="12" fill="#38bdf8">tương ứng</text>
+
+  <!-- Panel 3: comparison table -->
+  <rect x="40" y="400" width="1120" height="200" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="60" y="428" font-size="16" fill="#e2e8f0" font-weight="bold">3. Đối chiếu khung lý thuyết — cùng hiện tượng, khác cách đo</text>
+
+  <line x1="60" y1="445" x2="1140" y2="445" stroke="#334155"/>
+  <text x="80" y="465" font-size="14" fill="#94a3b8" font-weight="bold">Auction Market Theory</text>
+  <text x="80" y="485" font-size="13" fill="#e2e8f0">"Single print" / poor high-low</text>
+  <text x="80" y="503" font-size="12" fill="#94a3b8">Đo bằng THỜI GIAN dừng tại mỗi mức giá</text>
+
+  <line x1="420" y1="450" x2="420" y2="580" stroke="#334155"/>
+  <text x="440" y="465" font-size="14" fill="#94a3b8" font-weight="bold">Wyckoff</text>
+  <text x="440" y="485" font-size="13" fill="#e2e8f0">No Supply/Demand bar, SOS</text>
+  <text x="440" y="503" font-size="12" fill="#94a3b8">Gắn với chu kỳ Accumulation→Markup</text>
+
+  <line x1="780" y1="450" x2="780" y2="580" stroke="#334155"/>
+  <text x="800" y="465" font-size="14" fill="#94a3b8" font-weight="bold">Orderflow / Footprint</text>
+  <text x="800" y="485" font-size="13" fill="#e2e8f0">Volume gap / stacked imbalance</text>
+  <text x="800" y="503" font-size="12" fill="#94a3b8">Đo CHÍNH XÁC volume mỗi tick — công cụ verify tốt nhất</text>
+
+  <text x="60" y="560" font-size="13" fill="#a78bfa">→ FVG suy luận gián tiếp từ OHLC; footprint xác nhận trực tiếp mật độ giao dịch bên trong gap.</text>
+  <text x="60" y="582" font-size="13" fill="#a78bfa">Một FVG có volume node mỏng thật sự đáng tin hơn nhiều so với FVG chỉ là ảo ảnh gộp nến.</text>
+
+  <!-- footer note -->
+  <rect x="40" y="620" width="1120" height="160" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="60" y="648" font-size="15" fill="#e2e8f0" font-weight="bold">Hệ quả thực chiến</text>
+  <text x="60" y="672" font-size="13" fill="#e2e8f0">FVG là hiện tượng CỦA KHUNG THỜI GIAN bạn đang nhìn — không phải một sự thật tuyệt đối về order book.</text>
+  <text x="60" y="694" font-size="13" fill="#e2e8f0">Một FVG rõ trên M15 có thể "biến mất" khi zoom vào M1, vì M1 lộ ra các nến nhỏ đã lấp một phần</text>
+  <text x="60" y="716" font-size="13" fill="#e2e8f0">mức giá trung gian mà M15 gộp lại thành một cây nến displacement duy nhất.</text>
+  <text x="60" y="748" font-size="13" fill="#94a3b8">CE hoạt động tốt vì nó gần đúng vị trí giá vốn trung bình của dealer/market maker —</text>
+  <text x="60" y="768" font-size="13" fill="#94a3b8">không phải vì "50% là con số ma thuật".</text>
+</svg>

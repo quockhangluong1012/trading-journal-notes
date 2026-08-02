@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="32" font-size="16" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 2 — EURUSD Long: Loss -1R (chase, thiếu displacement thật)</text>
+<rect x="50" y="300" width="860" height="200" fill="rgba(34,197,94,0.08)" stroke="none" stroke-width="1.5" stroke-dasharray="0"/>
+<text x="60" y="316" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Discount D1, OB H1</text>
+<rect x="200" y="350" width="120" height="50" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="200" y="342" font-size="12" font-weight="400" fill="#ec4899" text-anchor="start">OB H1</text>
+<line x1="60" y1="404" x2="60" y2="436" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="54.0" y="410" width="12" height="20" fill="#22c55e"/>
+<line x1="84" y1="404" x2="84" y2="426" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="78.0" y="410" width="12" height="10" fill="#ef4444"/>
+<line x1="108" y1="399" x2="108" y2="426" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="102.0" y="405" width="12" height="15" fill="#22c55e"/>
+<line x1="132" y1="420" x2="132" y2="398" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="125.5" y="405" width="13" height="10" fill="#ef4444"/>
+<line x1="156" y1="330" x2="156" y2="312" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="150.0" y="318" width="12" height="6" fill="#22c55e"/>
+<circle cx="156" cy="318" r="13" fill="none" stroke="#f87171" stroke-width="2.5"/>
+<text x="111" y="280" font-size="11" font-weight="400" fill="#f87171" text-anchor="start">Entry (FOMO)</text>
+<text x="66" y="262" font-size="10.5" font-weight="400" fill="#f87171" text-anchor="start">Chỉ 1 doji nhỏ — KHÔNG displacement/MSS</text>
+<line x1="60" y1="350" x2="196" y2="350" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="86" y="366" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">Entry nằm CAO HƠN đỉnh OB</text>
+<line x1="180" y1="328" x2="180" y2="356" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="174.0" y="324" width="12" height="36" fill="#ef4444"/>
+<line x1="202" y1="364" x2="202" y2="386" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="196.0" y="360" width="12" height="30" fill="#ef4444"/>
+<line x1="224" y1="394" x2="224" y2="436" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="218.0" y="390" width="12" height="50" fill="#ef4444"/>
+<line x1="246" y1="444" x2="246" y2="486" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="240.0" y="440" width="12" height="50" fill="#ef4444"/>
+<line x1="146" y1="350" x2="280" y2="350" stroke="#f87171" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="190" y="366" font-size="11" font-weight="400" fill="#f87171" text-anchor="start">Stop bị dính khi giá quét sâu hơn</text>
+<line x1="280" y1="496" x2="280" y2="414" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="273.5" y="420" width="13" height="70" fill="#22c55e"/>
+<line x1="302" y1="426" x2="302" y2="334" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="295.5" y="340" width="13" height="80" fill="#22c55e"/>
+<line x1="324" y1="346" x2="324" y2="254" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="317.5" y="260" width="13" height="80" fill="#22c55e"/>
+<text x="260" y="520" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">Displacement THẬT xảy ra SAU khi đã bị loại</text>
+<text x="480" y="575" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest — số liệu minh họa, không phải dữ liệu giao dịch thật kiểm chứng được.</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Asia range quá rộng theo %ADR — London không còn "manipulation"</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">EURUSD — so sánh Asia range hẹp chuẩn AMD vs Asia range nuốt gần hết ADR</text>
+
+  <line x1="640" y1="60" x2="640" y2="640" stroke="#2a2e39" stroke-width="1"/>
+
+  <rect x="70" y="90" width="200" height="34" rx="6" fill="#26a69a" opacity="0.18" stroke="#26a69a"/>
+  <text x="88" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">✓ Asia range = 22% ADR</text>
+
+  <!-- left: normal tight asia range -->
+  <rect x="90" y="220" width="480" height="60" rx="4" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="100" y="212" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#4a90d9">Accumulation — range hẹp</text>
+
+  <g>
+    <line x1="120" y1="235" x2="120" y2="265" stroke="#26a69a" stroke-width="1"/>
+    <rect x="112" y="240" width="16" height="20" rx="1" fill="#26a69a"/>
+    <line x1="160" y1="230" x2="160" y2="270" stroke="#ef5350" stroke-width="1"/>
+    <rect x="152" y="238" width="16" height="22" rx="1" fill="#ef5350"/>
+    <line x1="200" y1="235" x2="200" y2="265" stroke="#26a69a" stroke-width="1"/>
+    <rect x="192" y="240" width="16" height="20" rx="1" fill="#26a69a"/>
+  </g>
+
+  <!-- london judas down then real distribution up -->
+  <g>
+    <line x1="280" y1="280" x2="280" y2="340" stroke="#ef5350" stroke-width="1"/>
+    <rect x="272" y="290" width="16" height="40" rx="1" fill="#ef5350"/>
+  </g>
+  <text x="255" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Judas sweep SSL rõ</text>
+
+  <g>
+    <line x1="330" y1="150" x2="330" y2="260" stroke="#26a69a" stroke-width="1"/>
+    <rect x="322" y="160" width="16" height="90" rx="1" fill="#26a69a"/>
+    <line x1="370" y1="110" x2="370" y2="220" stroke="#26a69a" stroke-width="1"/>
+    <rect x="362" y="120" width="16" height="90" rx="1" fill="#26a69a"/>
+  </g>
+  <text x="320" y="95" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">Distribution rõ ràng sau reclaim</text>
+
+  <text x="90" y="410" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">AMD chuẩn: 3 pha tách bạch, mỗi pha có việc riêng</text>
+
+  <rect x="690" y="90" width="220" height="34" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+  <text x="708" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">✗ Asia range = 78% ADR</text>
+
+  <!-- right: wide asia range spanning most of the panel height -->
+  <rect x="710" y="150" width="480" height="220" rx="4" fill="#ff9800" opacity="0.14" stroke="#ff9800" stroke-dasharray="6 4"/>
+  <text x="720" y="142" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff9800">"Accumulation" đã chiếm hết biên độ ngày</text>
+
+  <g>
+    <line x1="740" y1="180" x2="740" y2="260" stroke="#26a69a" stroke-width="1"/>
+    <rect x="732" y="190" width="16" height="60" rx="1" fill="#26a69a"/>
+    <line x1="780" y1="220" x2="780" y2="320" stroke="#ef5350" stroke-width="1"/>
+    <rect x="772" y="230" width="16" height="70" rx="1" fill="#ef5350"/>
+    <line x1="820" y1="170" x2="820" y2="270" stroke="#26a69a" stroke-width="1"/>
+    <rect x="812" y="180" width="16" height="70" rx="1" fill="#26a69a"/>
+    <line x1="860" y1="250" x2="860" y2="350" stroke="#ef5350" stroke-width="1"/>
+    <rect x="852" y="260" width="16" height="70" rx="1" fill="#ef5350"/>
+  </g>
+
+  <!-- london "judas" is tiny within the already-wide range -->
+  <g>
+    <line x1="900" y1="230" x2="900" y2="300" stroke="#ef5350" stroke-width="1"/>
+    <rect x="892" y="240" width="16" height="45" rx="1" fill="#ef5350"/>
+  </g>
+  <text x="850" y="395" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">London "Judas" chỉ là move nội bộ range Á</text>
+  <text x="850" y="417" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">— không quét pool ngoài, không đủ nhiên liệu phân phối</text>
+
+  <rect x="690" y="460" width="500" height="70" rx="8" fill="#f2c94c" opacity="0.14" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="705" y="485" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">Rule: Asia range &gt; ~60% ADR trung bình 20 ngày</text>
+  <text x="705" y="507" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">→ bỏ khung AMD ngày đó, coi cả ngày là một range lớn</text>
+
+  <text x="40" y="690" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">EURUSD D1/H1 · minh họa cấu trúc — ADR = average daily range 20 ngày</text>
+</svg>

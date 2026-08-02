@@ -1,0 +1,29 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="32" font-size="17" font-weight="700" fill="#1F2937">Case 3 — Nhầm S&amp;D với consolidation-trước-expansion (bối cảnh sai)</text>
+<text x="24" y="52" font-size="12.5" fill="#6B7280">Kịch bản minh họa (hypothetical). Chop giống S&amp;D nhưng weekly còn DOL rõ → sau đó bùng nổ thật.</text>
+<rect x="24" y="86" width="470" height="306" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<rect x="506" y="86" width="230" height="306" rx="7" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="24" y="64" width="712" height="18" rx="5" fill="#FEF3C7" stroke="#B45309" stroke-opacity="0.5"/>
+<text x="34" y="77" font-size="10" font-weight="700" fill="#B45309">Bối cảnh sai — chop này là consolidation TRƯỚC expansion, KHÔNG phải S&amp;D (weekly còn draw HTF).</text>
+<line x1="40" y1="150" x2="478" y2="150" stroke="#6B7280" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="44" y="144" font-size="8.5" fill="#374151">Range high</text>
+<line x1="40" y1="250" x2="478" y2="250" stroke="#6B7280" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="44" y="264" font-size="8.5" fill="#374151">Range low</text>
+<line x1="40" y1="352" x2="478" y2="352" stroke="#1D4ED8" stroke-width="1.1" stroke-dasharray="4 3"/>
+<text x="44" y="366" font-size="8.5" fill="#1D4ED8">Draw HTF (DOL còn nguyên)</text>
+<rect x="59" y="185.1" width="2" height="26.0" fill="#16A34A"/><rect x="54" y="192.1" width="12" height="12.0" rx="1" fill="#16A34A"/><rect x="81" y="178.3" width="2" height="26.0" fill="#16A34A"/><rect x="76" y="185.3" width="12" height="12.0" rx="1" fill="#16A34A"/><rect x="103" y="165.0" width="2" height="26.0" fill="#16A34A"/><rect x="98" y="172.0" width="12" height="12.0" rx="1" fill="#16A34A"/><rect x="125" y="157.2" width="2" height="26.0" fill="#16A34A"/><rect x="120" y="164.2" width="12" height="12.0" rx="1" fill="#16A34A"/><rect x="147" y="166.8" width="2" height="26.0" fill="#DC2626"/><rect x="142" y="173.8" width="12" height="12.0" rx="1" fill="#DC2626"/><rect x="169" y="187.0" width="2" height="26.0" fill="#DC2626"/><rect x="164" y="194.0" width="12" height="12.0" rx="1" fill="#DC2626"/><rect x="191" y="207.2" width="2" height="26.0" fill="#DC2626"/><rect x="186" y="214.2" width="12" height="12.0" rx="1" fill="#DC2626"/><rect x="213" y="216.8" width="2" height="26.0" fill="#DC2626"/><rect x="208" y="223.8" width="12" height="12.0" rx="1" fill="#DC2626"/><rect x="235" y="209.0" width="2" height="26.0" fill="#16A34A"/><rect x="230" y="216.0" width="12" height="12.0" rx="1" fill="#16A34A"/><rect x="257" y="195.7" width="2" height="26.0" fill="#16A34A"/><rect x="252" y="202.7" width="12" height="12.0" rx="1" fill="#16A34A"/><rect x="279" y="188.9" width="2" height="26.0" fill="#16A34A"/><rect x="274" y="195.9" width="12" height="12.0" rx="1" fill="#16A34A"/><rect x="301" y="211.0" width="2" height="26.0" fill="#DC2626"/><rect x="296" y="218.0" width="12" height="12.0" rx="1" fill="#DC2626"/><rect x="323" y="235.0" width="2" height="26.0" fill="#DC2626"/><rect x="318" y="242.0" width="12" height="12.0" rx="1" fill="#DC2626"/><rect x="345" y="259.0" width="2" height="26.0" fill="#DC2626"/><rect x="340" y="266.0" width="12" height="12.0" rx="1" fill="#DC2626"/><rect x="367" y="283.0" width="2" height="26.0" fill="#DC2626"/><rect x="362" y="290.0" width="12" height="12.0" rx="1" fill="#DC2626"/><rect x="389" y="307.0" width="2" height="26.0" fill="#DC2626"/><rect x="384" y="314.0" width="12" height="12.0" rx="1" fill="#DC2626"/><rect x="411" y="331.0" width="2" height="26.0" fill="#DC2626"/><rect x="406" y="338.0" width="12" height="12.0" rx="1" fill="#DC2626"/><rect x="433" y="355.0" width="2" height="26.0" fill="#DC2626"/><rect x="428" y="362.0" width="12" height="12.0" rx="1" fill="#DC2626"/><text x="330" y="330" font-size="9" font-weight="700" fill="#B91C1C">Displacement thật → chạy tới DOL</text>
+<text x="518" y="108" font-size="12" fill="#B45309" font-weight="600">Chẩn đoán (minh họa)</text>
+<text x="518" y="128.0" font-size="9.5" fill="#111827" font-weight="600">Kết quả: dán nhãn SAI.</text>
+<text x="518" y="142.5" font-size="9.5" fill="#374151">Nhìn giống S&D (chop, overlap)</text>
+<text x="518" y="157.0" font-size="9.5" fill="#374151">nhưng weekly range CHƯA chín</text>
+<text x="518" y="171.5" font-size="9.5" fill="#374151">và DOL HTF còn nguyên.</text>
+<text x="518" y="186.0" font-size="9.5" fill="#111827" font-weight="600">→ đây là accumulation TRƯỚC</text>
+<text x="518" y="200.5" font-size="9.5" fill="#374151">một cú expansion thật.</text>
+<text x="518" y="215.0" font-size="9.5" fill="#111827" font-weight="600">Sai lầm: gọi S&D quá sớm →</text>
+<text x="518" y="229.5" font-size="9.5" fill="#374151">bỏ lỡ / đứng sai phía move.</text>
+<text x="518" y="244.0" font-size="9.5" fill="#111827" font-weight="600">Sửa: kiểm còn draw HTF không;</text>
+<text x="518" y="258.5" font-size="9.5" fill="#374151">còn DOL rõ → CHƯA phải S&D.</text>
+<text x="518" y="273.0" font-size="9.5" fill="#111827" font-weight="600">profile: (chưa xác định)</text>
+<text x="24" y="456" font-size="10.5" fill="#6B7280">Bài học: chop KHÔNG tự động = S&amp;D. Luôn kiểm weekly context/DOL trước — còn draw HTF thì chờ, đừng dán nhãn vội.</text>
+</svg>

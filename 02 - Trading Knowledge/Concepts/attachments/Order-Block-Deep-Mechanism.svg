@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="800" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế thật đằng sau Order Block: Stop Cluster + Mean Reversion</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">Không phải "ngân hàng đặt lệnh ở đây" — mà là thanh khoản dừng lệnh tập trung tại đúng điểm cực trị của displacement</text>
+
+  <!-- Left panel: narrative ICT thường được hiểu sai -->
+  <rect x="30" y="90" width="550" height="300" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="55" y="118" font-size="17" fill="#f97316" font-weight="bold">Narrative phổ biến (thường bị hiểu sai)</text>
+  <text x="55" y="145" font-size="14" fill="#e2e8f0">"Ngân hàng đặt lệnh mua/bán lớn tại nến OB</text>
+  <text x="55" y="164" font-size="14" fill="#e2e8f0">trước khi đẩy giá — giá quay lại để 'lấp' lệnh đó."</text>
+
+  <rect x="55" y="185" width="500" height="80" fill="#0f1420" stroke="#ef4444" stroke-width="1.5" rx="6"/>
+  <text x="70" y="207" font-size="13" fill="#94a3b8">Vấn đề: FX là thị trường OTC phi tập trung, không có</text>
+  <text x="70" y="225" font-size="13" fill="#94a3b8">order book công khai. Không ai xác minh được "ngân hàng X</text>
+  <text x="70" y="243" font-size="13" fill="#94a3b8">đặt lệnh tại nến này". Đây là suy diễn, không phải dữ liệu.</text>
+
+  <text x="55" y="290" font-size="14" fill="#eab308">Futures (CME) CÓ order book — nhưng không công khai</text>
+  <text x="55" y="310" font-size="13" fill="#94a3b8">danh tính. Volume tại một mức giá không nói lên "ai" đặt,</text>
+  <text x="55" y="328" font-size="13" fill="#94a3b8">chỉ nói lên khối lượng khớp — có thể là retail, HFT, dealer...</text>
+  <text x="55" y="358" font-size="14" fill="#a78bfa" font-weight="bold">→ Narrative "ngân hàng" là câu chuyện tường thuật,</text>
+  <text x="55" y="378" font-size="14" fill="#a78bfa" font-weight="bold">   không phải cơ chế orderflow đã được xác minh.</text>
+
+  <!-- Right panel: giải thích thay thế -->
+  <rect x="620" y="90" width="550" height="300" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="645" y="118" font-size="17" fill="#22c55e" font-weight="bold">Giải thích thay thế: Stop Cluster + Mean Reversion</text>
+
+  <text x="645" y="148" font-size="14" fill="#38bdf8" font-weight="bold">1. Stop cluster tại điểm cực trị</text>
+  <text x="645" y="168" font-size="13" fill="#94a3b8">Nến ngược hướng cuối trước displacement chính là nơi</text>
+  <text x="645" y="186" font-size="13" fill="#94a3b8">breakout-trader vào NGƯỢC hướng (đúng lúc sai) — stop của</text>
+  <text x="645" y="204" font-size="13" fill="#94a3b8">họ nằm ngay tại đó. Giá quay lại = quét cluster stop này,</text>
+  <text x="645" y="222" font-size="13" fill="#94a3b8">không cần "ai đặt lệnh" — chỉ cần đám đông từng sai ở đó.</text>
+
+  <text x="645" y="255" font-size="14" fill="#38bdf8" font-weight="bold">2. Mean reversion / thống kê về giá trị</text>
+  <text x="645" y="275" font-size="13" fill="#94a3b8">Displacement mạnh kéo giá lệch xa fair value tạm thời.</text>
+  <text x="645" y="293" font-size="13" fill="#94a3b8">Retrace về 50-79% là hành vi thống kê phổ biến của MỌI</text>
+  <text x="645" y="311" font-size="13" fill="#94a3b8">impulse move (đúng cả khi không có ICT) — không riêng OB.</text>
+
+  <text x="645" y="344" font-size="14" fill="#38bdf8" font-weight="bold">3. Algo TWAP/VWAP tạo ảo giác "lấp OB"</text>
+  <text x="645" y="364" font-size="13" fill="#94a3b8">Execution algo rải lệnh theo thời gian → tạo pullback đều,</text>
+  <text x="645" y="378" font-size="13" fill="#94a3b8">trùng ngẫu nhiên với vùng OB do retrace tự nhiên.</text>
+
+  <!-- Bottom: bảng đối chiếu 3 loại thị trường -->
+  <text x="40" y="430" font-size="18" font-weight="bold" fill="#e2e8f0">OB mạnh/yếu theo loại thị trường (do cấu trúc thanh khoản khác nhau)</text>
+
+  <rect x="30" y="450" width="1140" height="300" fill="#161b28" stroke="#1c2333" rx="8"/>
+  <!-- headers -->
+  <text x="55" y="480" font-size="14" fill="#94a3b8" font-weight="bold">Thị trường</text>
+  <text x="230" y="480" font-size="14" fill="#94a3b8" font-weight="bold">Cấu trúc thanh khoản</text>
+  <text x="560" y="480" font-size="14" fill="#94a3b8" font-weight="bold">Vì sao OB mạnh/yếu hơn</text>
+  <text x="900" y="480" font-size="14" fill="#94a3b8" font-weight="bold">Lưu ý thực chiến</text>
+  <line x1="55" y1="492" x2="1120" y2="492" stroke="#334155"/>
+
+  <text x="55" y="520" font-size="14" fill="#22c55e" font-weight="bold">FX Majors</text>
+  <text x="230" y="516" font-size="13" fill="#e2e8f0">OTC, phi tập trung, nhiều</text>
+  <text x="230" y="533" font-size="13" fill="#e2e8f0">liquidity provider song song</text>
+  <text x="560" y="516" font-size="13" fill="#e2e8f0">Phản ứng OB "mượt" hơn vì</text>
+  <text x="560" y="533" font-size="13" fill="#e2e8f0">nhiều dealer hedge cùng vùng giá</text>
+  <text x="900" y="516" font-size="13" fill="#e2e8f0">Feed lệch giữa broker; OB</text>
+  <text x="900" y="533" font-size="13" fill="#e2e8f0">M1/M5 không đồng nhất 2 broker</text>
+
+  <line x1="55" y1="552" x2="1120" y2="552" stroke="#1c2333"/>
+  <text x="55" y="580" font-size="14" fill="#22c55e" font-weight="bold">Index Futures (NQ/ES)</text>
+  <text x="230" y="576" font-size="13" fill="#e2e8f0">Tập trung tại CME, có</text>
+  <text x="230" y="593" font-size="13" fill="#e2e8f0">order book + volume profile thật</text>
+  <text x="560" y="576" font-size="13" fill="#e2e8f0">OB gắn với volume node rõ hơn;</text>
+  <text x="560" y="593" font-size="13" fill="#e2e8f0">dễ đối chiếu bằng footprint/DOM</text>
+  <text x="900" y="576" font-size="13" fill="#e2e8f0">Cẩn trọng rollover contract,</text>
+  <text x="900" y="593" font-size="13" fill="#e2e8f0">gap phiên mở/đóng CME</text>
+
+  <line x1="55" y1="612" x2="1120" y2="612" stroke="#1c2333"/>
+  <text x="55" y="640" font-size="14" fill="#22c55e" font-weight="bold">Crypto (BTC/ETH)</text>
+  <text x="230" y="636" font-size="13" fill="#e2e8f0">Phân tán nhiều exchange,</text>
+  <text x="230" y="653" font-size="13" fill="#e2e8f0">thanh khoản mỏng ngoài giờ Mỹ</text>
+  <text x="560" y="636" font-size="13" fill="#e2e8f0">OB dễ bị "xuyên giả" do wick</text>
+  <text x="560" y="653" font-size="13" fill="#e2e8f0">funding/liquidation cascade</text>
+  <text x="900" y="636" font-size="13" fill="#e2e8f0">Kiểm tra funding rate + OI</text>
+  <text x="900" y="653" font-size="13" fill="#e2e8f0">trước khi tin OB 24/7 market</text>
+
+  <line x1="55" y1="672" x2="1120" y2="672" stroke="#1c2333"/>
+  <text x="55" y="700" font-size="14" fill="#94a3b8" font-weight="bold">Điều kiện chung làm OB mạnh</text>
+  <text x="230" y="700" font-size="13" fill="#e2e8f0">Volatility trung bình-cao, regime trending, kill zone,</text>
+  <text x="230" y="718" font-size="13" fill="#e2e8f0">thanh khoản dày (spread hẹp) — OB yếu khi range hẹp/thanh khoản mỏng</text>
+</svg>

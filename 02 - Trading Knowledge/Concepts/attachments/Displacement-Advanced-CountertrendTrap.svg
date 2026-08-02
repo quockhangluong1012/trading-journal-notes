@@ -1,0 +1,62 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="dpct1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#374151"/></marker>
+    <marker id="dpct2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#B91C1C"/></marker>
+  </defs>
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Countertrend displacement: cảnh báo hay cơ hội đảo?</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Bộ phân biệt: cú ngược trend chỉ phá IRL giữa trend (pullback) hay đến từ HTF extreme SAU khi quét ERL (reversal thật)?</text>
+
+  <rect x="24" y="70" width="712" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- ==== LEFT PANEL: pullback trap ==== -->
+  <rect x="40" y="86" width="336" height="348" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="56" y="110" font-size="12.5" font-weight="700" fill="#B91C1C">A. Chỉ phá IRL giữa trend → BẪY (pullback)</text>
+
+  <!-- uptrend staircase (bullish leg) -->
+  <path d="M70,360 L110,330 L150,300 L190,262 L230,224 L268,196" fill="none" stroke="#16A34A" stroke-width="2" opacity="0.55"/>
+  <text x="70" y="378" font-size="9.5" fill="#15803D">uptrend chính đang chạy (bullish)</text>
+
+  <!-- internal structure level (IRL) -->
+  <line x1="60" y1="240" x2="356" y2="240" stroke="#3B82F6" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="228" y="234" font-size="9.5" font-weight="700" fill="#1D4ED8">IRL — cấu trúc NỘI BỘ</text>
+
+  <!-- bearish countertrend displacement candle breaking only IRL -->
+  <rect x="279" y="188" width="2" height="88" fill="#DC2626"/>
+  <rect x="272" y="196" width="14" height="72" fill="#DC2626" rx="1"/>
+  <!-- FVG left behind -->
+  <rect x="272" y="196" width="60" height="26" fill="#3B82F6" opacity="0.16"/>
+  <text x="196" y="182" font-size="9.5" font-weight="700" fill="#B91C1C">displacement giảm mạnh (có FVG)</text>
+
+  <!-- price gets swallowed back up -->
+  <path d="M290,264 L316,246 L336,222" fill="none" stroke="#16A34A" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#dpct1)"/>
+  <text x="130" y="404" font-size="9.5" font-weight="700" fill="#B91C1C">Chưa chạm ERL HTF → nhiều khả năng bị nuốt lại.</text>
+  <text x="130" y="420" font-size="9.5" font-weight="700" fill="#B91C1C">KHÔNG fade trend chính.</text>
+
+  <!-- ==== RIGHT PANEL: real reversal ==== -->
+  <rect x="392" y="86" width="336" height="348" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="110" font-size="12.5" font-weight="700" fill="#15803D">B. Từ HTF extreme SAU ERL sweep → reversal thật</text>
+
+  <!-- uptrend into HTF premium -->
+  <path d="M418,360 L452,326 L488,292 L524,256 L560,220 L596,186" fill="none" stroke="#16A34A" stroke-width="2" opacity="0.55"/>
+
+  <!-- HTF premium zone + ERL/BSL -->
+  <rect x="408" y="150" width="312" height="52" fill="#FEF3C7"/>
+  <text x="416" y="166" font-size="9.5" font-weight="700" fill="#B45309">HTF premium extreme (POI)</text>
+  <line x1="408" y1="158" x2="720" y2="158" stroke="#B45309" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="560" y="145" font-size="9.5" font-weight="700" fill="#B45309">BSL / ERL bị quét</text>
+  <circle cx="600" cy="176" r="6" fill="none" stroke="#B45309" stroke-width="2.4"/>
+
+  <!-- bearish reversal displacement from the extreme -->
+  <rect x="611" y="176" width="2" height="150" fill="#DC2626"/>
+  <rect x="604" y="184" width="14" height="132" fill="#DC2626" rx="1"/>
+  <rect x="604" y="184" width="64" height="30" fill="#3B82F6" opacity="0.16"/>
+  <text x="470" y="330" font-size="9.5" font-weight="700" fill="#B91C1C">displacement giảm phá cấu trúc lớn</text>
+
+  <!-- continuation down -->
+  <path d="M622,312 L652,344 L686,376" fill="none" stroke="#DC2626" stroke-width="2" marker-end="url(#dpct2)"/>
+  <text x="470" y="404" font-size="9.5" font-weight="700" fill="#15803D">Đã quét ERL HTF + đến từ premium extreme →</text>
+  <text x="470" y="420" font-size="9.5" font-weight="700" fill="#15803D">đủ điều kiện đọc là đảo chiều HTF.</text>
+
+  <text x="24" y="466" font-size="11" font-style="italic" fill="#6B7280">Fade trend chính chỉ vì một countertrend displacement CHƯA quét ERL HTF là một cách thua nhanh nhất — hãy hỏi "đã chạm ERL chưa?".</text>
+</svg>

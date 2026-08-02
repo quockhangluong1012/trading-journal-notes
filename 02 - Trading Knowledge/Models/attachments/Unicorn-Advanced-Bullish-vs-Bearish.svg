@@ -1,6 +1,62 @@
-<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="420" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Unicorn Bullish vs Bearish</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">Bullish: quét đáy (SSL) → đẩy lên; Bearish: quét đỉnh (BSL) → đẩy xuống.</text>
-<rect x="24" y="72" width="350" height="330" rx="8" fill="#FFFFFF" stroke="#86EFAC"/><text x="40" y="96" font-size="13" font-weight="700" fill="#15803D">BULLISH UNICORN</text><line x1="40" y1="330" x2="360" y2="330" stroke="#6B7280" stroke-dasharray="6 4"/><text x="40" y="346" font-size="10" fill="#4B5563">SSL (đáy bị quét)</text><rect x="66" y="150" width="2" height="70" fill="#DC2626"/><rect x="60" y="160" width="13" height="55" fill="#DC2626" rx="1"/><rect x="88" y="160" width="2" height="68" fill="#DC2626"/><rect x="82" y="170" width="13" height="53" fill="#DC2626" rx="1"/><rect x="110" y="170" width="2" height="66" fill="#DC2626"/><rect x="104" y="180" width="13" height="51" fill="#DC2626" rx="1"/><rect x="132" y="300" width="2" height="60" fill="#DC2626"/><rect x="126" y="320" width="13" height="32" fill="#DC2626" rx="1"/><rect x="154" y="240" width="2" height="60" fill="#16A34A"/><rect x="148" y="255" width="13" height="40" fill="#16A34A" rx="1"/><rect x="176" y="210" width="2" height="64" fill="#16A34A"/><rect x="170" y="225" width="13" height="44" fill="#16A34A" rx="1"/><rect x="198" y="180" width="2" height="68" fill="#16A34A"/><rect x="192" y="195" width="13" height="48" fill="#16A34A" rx="1"/><rect x="220" y="150" width="2" height="72" fill="#16A34A"/><rect x="214" y="165" width="13" height="52" fill="#16A34A" rx="1"/><rect x="180" y="200" width="150" height="55" fill="#F59E0B" opacity="0.18"/><rect x="180" y="220" width="150" height="35" fill="#3B82F6" opacity="0.16"/><rect x="180" y="220" width="150" height="20" fill="#7C3AED" opacity="0.28"/><text x="255" y="234" font-size="10" font-weight="700" fill="#5B21B6" text-anchor="middle">Unicorn (mua)</text><rect x="386" y="72" width="350" height="330" rx="8" fill="#FFFFFF" stroke="#FCA5A5"/><text x="402" y="96" font-size="13" font-weight="700" fill="#B91C1C">BEARISH UNICORN</text><line x1="402" y1="130" x2="722" y2="130" stroke="#6B7280" stroke-dasharray="6 4"/><text x="402" y="124" font-size="10" fill="#4B5563">BSL (đỉnh bị quét)</text><rect x="426" y="240" width="2" height="60" fill="#16A34A"/><rect x="420" y="255" width="13" height="40" fill="#16A34A" rx="1"/><rect x="448" y="230" width="2" height="62" fill="#16A34A"/><rect x="442" y="245" width="13" height="42" fill="#16A34A" rx="1"/><rect x="470" y="220" width="2" height="64" fill="#16A34A"/><rect x="464" y="235" width="13" height="44" fill="#16A34A" rx="1"/><rect x="492" y="108" width="2" height="72" fill="#16A34A"/><rect x="486" y="120" width="13" height="30" fill="#16A34A" rx="1"/><rect x="514" y="180" width="2" height="70" fill="#DC2626"/><rect x="508" y="195" width="13" height="50" fill="#DC2626" rx="1"/><rect x="536" y="208" width="2" height="68" fill="#DC2626"/><rect x="530" y="223" width="13" height="48" fill="#DC2626" rx="1"/><rect x="558" y="236" width="2" height="66" fill="#DC2626"/><rect x="552" y="251" width="13" height="46" fill="#DC2626" rx="1"/><rect x="580" y="264" width="2" height="64" fill="#DC2626"/><rect x="574" y="279" width="13" height="44" fill="#DC2626" rx="1"/><rect x="540" y="180" width="150" height="55" fill="#F59E0B" opacity="0.18"/><rect x="540" y="180" width="150" height="35" fill="#3B82F6" opacity="0.16"/><rect x="540" y="195" width="150" height="20" fill="#7C3AED" opacity="0.28"/><text x="615" y="209" font-size="10" font-weight="700" fill="#5B21B6" text-anchor="middle">Unicorn (bán)</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Unicorn Bullish vs Bearish</text>
+<defs>
+<marker id="arrOrangeL" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#f97316"/>
+</marker>
+<marker id="arrOrangeR" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#f97316"/>
+</marker>
+</defs>
+<line x1="70" y1="470" x2="70" y2="430" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="63.0" y="440" width="14" height="20" fill="#ef4444"/>
+<line x1="106" y1="450" x2="106" y2="412" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="99.0" y="420" width="14" height="20" fill="#ef4444"/>
+<line x1="142" y1="430" x2="142" y2="395" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="135.0" y="405" width="14" height="15" fill="#ef4444"/>
+<line x1="178" y1="412" x2="178" y2="296" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="171.0" y="300" width="14" height="105" fill="#22c55e"/>
+<line x1="214" y1="308" x2="214" y2="214" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="207.0" y="220" width="14" height="80" fill="#22c55e"/>
+<line x1="250" y1="228" x2="250" y2="188" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="243.0" y="195" width="14" height="25" fill="#22c55e"/>
+<line x1="286" y1="250" x2="286" y2="180" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="279.0" y="195" width="14" height="45" fill="#ef4444"/>
+<text x="178" y="90" font-size="15" font-weight="700" fill="#22c55e" text-anchor="middle">BULLISH UNICORN</text>
+<line x1="50" y1="405" x2="306" y2="405" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="50" y="398" font-size="12" font-weight="400" fill="#eab308" text-anchor="start">SSL</text>
+<rect x="56" y="296" width="236" height="24" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="56" y="188" width="236" height="36" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="56" y="175" font-size="12" font-weight="400" fill="#a855f7" text-anchor="start">Breaker+FVG chồng lấn</text>
+<text x="178" y="480" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">→ mua khi hồi về, target BSL/ERL</text>
+<line x1="480" y1="70" x2="480" y2="500" stroke="#1f2937" stroke-width="1"/>
+<line x1="560" y1="196" x2="560" y2="228" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="553.0" y="200" width="14" height="20" fill="#22c55e"/>
+<line x1="596" y1="214" x2="596" y2="248" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="589.0" y="220" width="14" height="20" fill="#22c55e"/>
+<line x1="632" y1="232" x2="632" y2="262" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="625.0" y="240" width="14" height="15" fill="#22c55e"/>
+<line x1="668" y1="262" x2="668" y2="364" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="661.0" y="255" width="14" height="105" fill="#ef4444"/>
+<line x1="704" y1="368" x2="704" y2="446" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="697.0" y="360" width="14" height="80" fill="#ef4444"/>
+<line x1="740" y1="448" x2="740" y2="472" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="733.0" y="440" width="14" height="25" fill="#ef4444"/>
+<line x1="776" y1="410" x2="776" y2="472" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="769.0" y="420" width="14" height="45" fill="#22c55e"/>
+<text x="668" y="90" font-size="15" font-weight="700" fill="#ef4444" text-anchor="middle">BEARISH UNICORN</text>
+<line x1="540" y1="255" x2="796" y2="255" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="540" y="248" font-size="12" font-weight="400" fill="#eab308" text-anchor="start">BSL</text>
+<rect x="546" y="360" width="236" height="24" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="546" y="410" width="236" height="36" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="546" y="470" font-size="12" font-weight="400" fill="#a855f7" text-anchor="start">Breaker+FVG chồng lấn</text>
+<text x="668" y="500" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">→ bán khi hồi về, target SSL/ERL</text>
+<rect x="32" y="534" width="12" height="12" fill="#ec4899"/>
+<text x="50" y="544" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="start">Breaker</text>
+<rect x="32" y="554" width="12" height="12" fill="#3b82f6"/>
+<text x="50" y="564" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="start">FVG</text>
+<rect x="32" y="574" width="12" height="12" fill="#eab308"/>
+<text x="50" y="584" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="start">Liquidity</text>
+<text x="480" y="585" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Chart minh họa cấu trúc swing đúng kịch bản — không phải dữ liệu giao dịch thật.</text>
 </svg>

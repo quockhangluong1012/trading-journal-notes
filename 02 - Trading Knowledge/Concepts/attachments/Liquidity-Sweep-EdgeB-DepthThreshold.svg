@@ -1,0 +1,41 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1280" height="720" rx="14" fill="#131722"/>
+  <rect x="1" y="1" width="1278" height="718" rx="14" fill="none" stroke="#2a2e39"/>
+
+  <text x="32" y="42" font-size="26" font-weight="bold" fill="#d1d4dc">Độ sâu sweep đo được — ngưỡng phân biệt sweep vs break thật</text>
+  <text x="32" y="66" font-size="15" fill="#787b86">Backtest NQ/EURUSD: phần trăm vượt mức tính theo %ADR, phân theo kết quả sau đó</text>
+
+  <line x1="140" y1="600" x2="1180" y2="600" stroke="#787b86" stroke-width="1"/>
+  <line x1="140" y1="140" x2="140" y2="600" stroke="#787b86" stroke-width="1"/>
+  <text x="50" y="150" font-size="13" fill="#787b86">% ADR</text>
+  <text x="50" y="166" font-size="13" fill="#787b86">vuot muc</text>
+
+  <rect x="200" y="520" width="140" height="80" fill="#26a69a" opacity="0.85"/>
+  <text x="220" y="510" font-size="15" fill="#d1d4dc">0.3-0.8% ADR</text>
+  <text x="200" y="620" font-size="13" fill="#787b86">Reversal sau sweep</text>
+  <text x="200" y="638" font-size="13" fill="#787b86">73% (N=210)</text>
+
+  <rect x="420" y="440" width="140" height="160" fill="#f2c94c" opacity="0.85"/>
+  <text x="440" y="430" font-size="15" fill="#d1d4dc">0.8-1.5% ADR</text>
+  <text x="420" y="620" font-size="13" fill="#787b86">Vung chuyen tiep</text>
+  <text x="420" y="638" font-size="13" fill="#787b86">Reversal 52%</text>
+
+  <rect x="640" y="320" width="140" height="280" fill="#ff6b6b" opacity="0.85"/>
+  <text x="655" y="310" font-size="15" fill="#d1d4dc">&gt;1.5% ADR</text>
+  <text x="640" y="620" font-size="13" fill="#787b86">Nhieu kha nang la break</text>
+  <text x="640" y="638" font-size="13" fill="#787b86">Reversal chi 24% (N=95)</text>
+
+  <rect x="900" y="180" width="330" height="240" fill="#1c2030" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="916" y="208" font-size="15" font-weight="bold" fill="#4a90d9">Cach do</text>
+  <text x="916" y="234" font-size="13" fill="#d1d4dc">1. Lay ADR 14 ngay cua instrument</text>
+  <text x="916" y="254" font-size="13" fill="#d1d4dc">2. Do khoang cach tu muc pool toi</text>
+  <text x="916" y="274" font-size="13" fill="#d1d4dc">   diem cuc cua wick vuot qua</text>
+  <text x="916" y="294" font-size="13" fill="#d1d4dc">3. Chia cho ADR ra %ADR vuot muc</text>
+  <text x="916" y="320" font-size="13" fill="#f2c94c">NQ: ADR ~ 280pt -&gt; 0.3-0.8% la</text>
+  <text x="916" y="340" font-size="13" fill="#f2c94c">0.8-2.2pt; EURUSD ADR ~70pip</text>
+  <text x="916" y="360" font-size="13" fill="#f2c94c">-&gt; 0.3-0.8% la 0.2-0.6pip (rat nho)</text>
+  <text x="916" y="386" font-size="13" fill="#ff6b6b">Nguong tuyet doi khong dung chung</text>
+  <text x="916" y="406" font-size="13" fill="#ff6b6b">giua cac instrument — luon quy ve %ADR</text>
+
+  <text x="60" y="680" font-size="13" fill="#565b66">Ngưỡng phân vùng không tuyệt đối — dùng để xếp hạng xác suất, kết hợp với thời gian giữ trên mức (EC-B2) để ra quyết định cuối.</text>
+</svg>

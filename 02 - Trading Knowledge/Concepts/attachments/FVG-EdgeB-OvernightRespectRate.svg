@@ -1,0 +1,35 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1280" height="720" rx="14" fill="#131722"/>
+  <rect x="1" y="1" width="1278" height="718" rx="14" fill="none" stroke="#2a2e39"/>
+
+  <text x="32" y="42" font-size="26" font-weight="bold" fill="#d1d4dc">Respect-rate của M1 FVG sập theo phiên — Globex/Lunch vs RTH</text>
+  <text x="32" y="66" font-size="15" fill="#787b86">NQ M1 FVG, backtest theo khung giờ hình thành, N=520 mẫu</text>
+
+  <line x1="140" y1="600" x2="1180" y2="600" stroke="#787b86" stroke-width="1"/>
+  <line x1="140" y1="140" x2="140" y2="600" stroke="#787b86" stroke-width="1"/>
+  <text x="50" y="150" font-size="13" fill="#787b86">Respect</text>
+  <text x="50" y="166" font-size="13" fill="#787b86">rate %</text>
+
+  <!-- bars -->
+  <rect x="200" y="220" width="140" height="380" fill="#26a69a" opacity="0.85"/>
+  <text x="230" y="210" font-size="16" fill="#d1d4dc">71%</text>
+  <text x="200" y="640" font-size="13" fill="#787b86">RTH 09:30-11:00</text>
+  <text x="200" y="660" font-size="13" fill="#787b86">(NY AM killzone)</text>
+
+  <rect x="420" y="380" width="140" height="220" fill="#4a90d9" opacity="0.85"/>
+  <text x="450" y="370" font-size="16" fill="#d1d4dc">41%</text>
+  <text x="420" y="640" font-size="13" fill="#787b86">RTH 11:00-15:00</text>
+  <text x="420" y="660" font-size="13" fill="#787b86">(NY PM chung)</text>
+
+  <rect x="640" y="480" width="140" height="120" fill="#f2c94c" opacity="0.85"/>
+  <text x="670" y="470" font-size="16" fill="#d1d4dc">22%</text>
+  <text x="640" y="640" font-size="13" fill="#787b86">NY Lunch</text>
+  <text x="640" y="660" font-size="13" fill="#787b86">12:00-13:00</text>
+
+  <rect x="860" y="530" width="140" height="70" fill="#ff6b6b" opacity="0.85"/>
+  <text x="890" y="520" font-size="16" fill="#d1d4dc">13%</text>
+  <text x="860" y="640" font-size="13" fill="#787b86">Globex overnight</text>
+  <text x="860" y="660" font-size="13" fill="#787b86">18:00-02:00 ET</text>
+
+  <text x="140" y="694" font-size="13" fill="#565b66">Respect-rate = ty le FVG duoc reject tai CE thay vi bi xuyen thang qua trong 3 nen ke tiep.</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="600" rx="12" fill="#0d1117"/>
+  <text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Ma trận 6 Edge case / Failure mode của Venom</text>
+  <text x="32" y="58" font-size="12" fill="#94a3b8">Sơ đồ tổng hợp — xem chi tiết từng ca trong Chuyên sâu A</text>
+
+  <!-- 6 boxes in 2 rows x 3 cols -->
+  <g font-size="12.5">
+    <!-- box 1 -->
+    <rect x="40" y="90" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="55" y="115" font-size="13.5" font-weight="700" fill="#f97316">① Window creep</text>
+    <text x="55" y="138" fill="#e5e7eb">Nới cửa sổ quá 10:30</text>
+    <text x="55" y="156" fill="#94a3b8">rồi dán nhãn "Venom"</text>
+    <text x="55" y="180" fill="#4ade80">Xử lý: hard cutoff 10:30</text>
+    <text x="55" y="198" fill="#4ade80">bằng alarm thật</text>
+
+    <!-- box 2 -->
+    <rect x="340" y="90" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="355" y="115" font-size="13.5" font-weight="700" fill="#f97316">② News spike ≠ strike</text>
+    <text x="355" y="138" fill="#e5e7eb">Giật tin 08:30, không có</text>
+    <text x="355" y="156" fill="#94a3b8">reclaim + displacement sạch</text>
+    <text x="355" y="180" fill="#4ade80">Xử lý: đứng ngoài 15–30p</text>
+    <text x="355" y="198" fill="#4ade80">sau tin</text>
+
+    <!-- box 3 -->
+    <rect x="640" y="90" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="655" y="115" font-size="13.5" font-weight="700" fill="#f97316">③ Sweep không reclaim</text>
+    <text x="655" y="138" fill="#e5e7eb">Đóng nến ngoài pool</text>
+    <text x="655" y="156" fill="#94a3b8">= acceptance, không phải sweep</text>
+    <text x="655" y="180" fill="#4ade80">Xử lý: chờ nến đóng lại</text>
+    <text x="655" y="198" fill="#4ade80">trong range</text>
+
+    <!-- box 4 -->
+    <rect x="40" y="250" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="55" y="275" font-size="13.5" font-weight="700" fill="#f97316">④ DST / timezone miscalc</text>
+    <text x="55" y="298" fill="#e5e7eb">Quy đổi ET sai lệch 1 giờ</text>
+    <text x="55" y="316" fill="#94a3b8">quanh mốc đổi DST 3&amp;11</text>
+    <text x="55" y="340" fill="#4ade80">Xử lý: quy đổi lại mỗi ngày</text>
+    <text x="55" y="358" fill="#4ade80">ghi vào Quick Ref Card</text>
+
+    <!-- box 5 -->
+    <rect x="340" y="250" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="355" y="275" font-size="13.5" font-weight="700" fill="#f97316">⑤ Sai loại pool</text>
+    <text x="355" y="298" fill="#e5e7eb">Quét swing lẻ, không phải</text>
+    <text x="355" y="316" fill="#94a3b8">pool cấp session</text>
+    <text x="355" y="340" fill="#4ade80">Xử lý: đánh dấu pool trước</text>
+    <text x="355" y="358" fill="#4ade80">09:30</text>
+
+    <!-- box 6 -->
+    <rect x="640" y="250" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="655" y="275" font-size="13.5" font-weight="700" fill="#f97316">⑥ Displacement trễ &amp; yếu</text>
+    <text x="655" y="298" fill="#e5e7eb">Xuất hiện 10:15–10:30</text>
+    <text x="655" y="316" fill="#94a3b8">thân ngắn, hết nhiên liệu</text>
+    <text x="655" y="340" fill="#4ade80">Xử lý: hạ cấp "chờ xác</text>
+    <text x="655" y="358" fill="#4ade80">nhận" nếu không dứt khoát</text>
+  </g>
+
+  <rect x="40" y="430" width="880" height="120" rx="8" fill="rgba(168,85,247,0.10)" stroke="#a855f7" stroke-dasharray="4 3"/>
+  <text x="480" y="460" font-size="13.5" fill="#a855f7" text-anchor="middle" font-weight="700">Nguyên tắc chung</text>
+  <text x="480" y="486" font-size="12.5" fill="#e5e7eb" text-anchor="middle">Nghi ngờ bất kỳ mắt xích nào (time / pool / sweep-reclaim / displacement)</text>
+  <text x="480" y="506" font-size="12.5" fill="#e5e7eb" text-anchor="middle">→ hạ cấp về "chờ xác nhận thêm". Thiếu một core component = No Trade.</text>
+</svg>

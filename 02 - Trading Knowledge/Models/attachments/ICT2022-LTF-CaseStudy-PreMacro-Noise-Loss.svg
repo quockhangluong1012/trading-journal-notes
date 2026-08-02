@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="560" rx="12" fill="#0d1117"/>
+<text x="480" y="32" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">Case: NQ1 M5 — vào SỚM trước macro 09:50 ET, dính noise pre-macro</text>
+<line x1="60" y1="380" x2="900" y2="380" stroke="#334155" stroke-width="1.5"/>
+<line x1="130" y1="375" x2="130" y2="385" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="130" y="400" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">20:40 VN</text>
+<line x1="330" y1="375" x2="330" y2="385" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="330" y="400" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">20:45 VN</text>
+<text x="330" y="414" font-size="10" font-weight="400" fill="#f87171" text-anchor="middle">(entry sớm)</text>
+<line x1="530" y1="375" x2="530" y2="385" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="530" y="400" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">20:50 VN</text>
+<text x="530" y="414" font-size="10" font-weight="400" fill="#4ade80" text-anchor="middle">(macro thật 09:50 ET)</text>
+<line x1="730" y1="375" x2="730" y2="385" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="730" y="400" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">21:00 VN</text>
+<line x1="880" y1="375" x2="880" y2="385" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="880" y="400" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">21:10 VN</text>
+<line x1="80" y1="285" x2="80" y2="305" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="75.0" y="290" width="10" height="10" fill="#22c55e"/>
+<line x1="102" y1="285" x2="102" y2="310" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="97.0" y="290" width="10" height="15" fill="#ef4444"/>
+<line x1="124" y1="280" x2="124" y2="310" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="119.0" y="285" width="10" height="20" fill="#22c55e"/>
+<line x1="146" y1="280" x2="146" y2="305" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="141.0" y="285" width="10" height="15" fill="#ef4444"/>
+<line x1="168" y1="250" x2="168" y2="300" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="161.5" y="260" width="13" height="35" fill="#22c55e"/>
+<circle cx="168" cy="270" r="12" fill="none" stroke="#f87171" stroke-width="2.5"/>
+<text x="98" y="230" font-size="11" font-weight="400" fill="#f87171" text-anchor="start">Entry sớm (M5 "MSS")</text>
+<line x1="194" y1="255" x2="194" y2="305" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="188.0" y="260" width="12" height="40" fill="#ef4444"/>
+<line x1="216" y1="295" x2="216" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="210.0" y="300" width="12" height="20" fill="#ef4444"/>
+<circle cx="216" cy="320" r="10" fill="none" stroke="#f87171" stroke-width="2"/>
+<text x="148" y="340" font-size="10.5" font-weight="400" fill="#f87171" text-anchor="start">SL bị quét trước macro thật</text>
+<line x1="238" y1="325" x2="238" y2="265" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="231.5" y="270" width="13" height="50" fill="#22c55e"/>
+<line x1="262" y1="275" x2="262" y2="205" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="255.5" y="210" width="13" height="60" fill="#22c55e"/>
+<line x1="286" y1="215" x2="286" y2="155" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="279.5" y="160" width="13" height="50" fill="#22c55e"/>
+<text x="250" y="150" font-size="10.5" font-weight="400" fill="#4ade80" text-anchor="start">Move thật xảy ra ĐÚNG giờ macro — sau khi đã bị stop</text>
+<rect x="200" y="450" width="560" height="80" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+<text x="216" y="474" font-size="13" font-weight="700" fill="#a855f7" text-anchor="start">Bài học</text>
+<text x="216" y="492" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">M5 "displacement" trước macro time thường là positioning noise,</text>
+<text x="216" y="508" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">không phải động cơ thật — chờ đúng cửa sổ macro mới tin M5 MSS.</text>
+<text x="480" y="545" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest — số liệu minh họa, không phải dữ liệu giao dịch thật kiểm chứng được.</text>
+</svg>

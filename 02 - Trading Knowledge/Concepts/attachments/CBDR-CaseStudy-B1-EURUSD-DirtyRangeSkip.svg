@@ -1,0 +1,73 @@
+<svg viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1280" height="760" rx="14" fill="#131722" stroke="#2a2e39"/>
+<text x="40" y="46" font-size="26" font-weight="bold" fill="#d1d4dc">EURUSD, đêm trước CPI 12/07/2023 — CBDR bẩn, Skip đúng (0R)</text>
+<text x="40" y="70" font-size="15" fill="#787b86">Tái dựng minh họa từ mẫu backtest — range trông "chấp nhận được" theo pip nhưng %ADR và volume tố cáo là bẩn</text>
+
+<!-- time axis -->
+<rect x="60" y="95" width="1160" height="24" fill="#131722"/>
+<text x="70" y="112" font-size="12" fill="#ff9800">14:00-20:00 NY: đo CBDR</text>
+<text x="380" y="112" font-size="12" fill="#ff9800">20:00-00:00: phiên Á mở</text>
+<text x="650" y="112" font-size="12" fill="#ff9800">02:00 London: giá không tới +1 SD</text>
+<text x="950" y="112" font-size="12" fill="#ff9800">08:30 NY: CPI, spike phá cả 2 SD</text>
+
+<!-- CBDR zone -->
+<rect x="60" y="330" width="380" height="35" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+<text x="70" y="323" font-size="13" fill="#4a90d9">CBDR đo được: 47 pip (1.09850-1.09803)</text>
+
+<g>
+<line x1="100" y1="330" x2="100" y2="400" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="90" y="345" width="20" height="35" fill="#26a69a" rx="1"/>
+</g>
+<g>
+<line x1="140" y1="320" x2="140" y2="410" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="130" y="350" width="20" height="40" fill="#ef5350" rx="1"/>
+</g>
+<g>
+<line x1="180" y1="335" x2="180" y2="395" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="170" y="348" width="20" height="30" fill="#26a69a" rx="1"/>
+</g>
+<circle cx="140" cy="322" r="4" fill="#ff6b6b"/>
+<text x="130" y="300" font-size="12" fill="#ff6b6b">Bóng dài bất thường 12:15 NY — tin CPI rò rỉ đồn đoán</text>
+
+<!-- volume note -->
+<text x="70" y="440" font-size="12" fill="#787b86">Volume M15 tại nến bóng dài: 240% trung bình cùng giờ (bất thường)</text>
+<text x="70" y="460" font-size="12" fill="#787b86">%ADR: 47pip = 58% ADR20 → VƯỢT ngưỡng skip 50%</text>
+
+<!-- SD projection lines -->
+<line x1="60" y1="270" x2="1220" y2="270" stroke="#f2c94c" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="1080" y="263" font-size="12" fill="#f2c94c">+1 SD = 1.09897</text>
+<line x1="60" y1="480" x2="1220" y2="480" stroke="#f2c94c" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="1080" y="498" font-size="12" fill="#f2c94c">-1 SD = 1.09756</text>
+
+<!-- Asian/London price action staying inside range, not reaching SD -->
+<g>
+<line x1="500" y1="345" x2="500" y2="390" stroke="#787b86" stroke-width="1.3"/>
+<rect x="490" y="358" width="20" height="20" fill="#787b86" rx="1" opacity="0.6"/>
+</g>
+<g>
+<line x1="560" y1="350" x2="560" y2="400" stroke="#787b86" stroke-width="1.3"/>
+<rect x="550" y="365" width="20" height="20" fill="#787b86" rx="1" opacity="0.6"/>
+</g>
+<g>
+<line x1="620" y1="340" x2="620" y2="395" stroke="#787b86" stroke-width="1.3"/>
+<rect x="610" y="355" width="20" height="20" fill="#787b86" rx="1" opacity="0.6"/>
+</g>
+<text x="500" y="420" font-size="12" fill="#787b86">Giá lẹt đẹt trong range cả phiên Á + London, không chạm +1/-1 SD</text>
+
+<!-- CPI spike breaking both SD levels violently, unrelated to SD map -->
+<g>
+<line x1="900" y1="480" x2="900" y2="230" stroke="#ef5350" stroke-width="2.2"/>
+<rect x="884" y="250" width="32" height="220" fill="#ef5350" rx="1"/>
+</g>
+<circle cx="900" cy="232" r="6" fill="#ff6b6b"/>
+<text x="820" y="195" font-size="13" fill="#ff6b6b">CPI 08:30: giá xuyên cả +1 SD trong 1 nến,</text>
+<text x="820" y="216" font-size="13" fill="#ff6b6b">không theo cấu trúc AMD nào</text>
+
+<rect x="500" y="600" width="220" height="30" rx="6" fill="#787b86" opacity="0.2" stroke="#787b86"/>
+<text x="610" y="620" font-size="13" fill="#d1d4dc" text-anchor="middle">NO TRADE (đúng quyết định)</text>
+
+<line x1="60" y1="660" x2="1220" y2="660" stroke="#2a2e39"/>
+<text x="60" y="688" font-size="14" fill="#d1d4dc">Bài học: range 47pip trông "chỉ hơi rộng hơn 40pip lý tưởng" — nếu chỉ nhìn ngưỡng pip tuyệt đối, dễ vẫn coi là dùng được.</text>
+<text x="60" y="712" font-size="14" fill="#d1d4dc">Nhưng %ADR (58%) và volume bất thường tại nến bóng dài đã báo trước: range bẩn, và biến động thật (CPI) xóa sổ toàn bộ bản đồ SD.</text>
+<text x="60" y="736" font-size="13" fill="#787b86">Nguồn: tái dựng minh họa từ mẫu backtest EURUSD, đêm trước CPI Mỹ, không trade CBDR đêm đó.</text>
+</svg>

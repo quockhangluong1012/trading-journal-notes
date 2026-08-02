@@ -1,0 +1,45 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Wick vs Body mitigation — spike chọc full depth rồi đóng nông</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">XAUUSD / quanh tin: một wick có thể xuyên hết OB (kể cả distal) trong nến, nhưng thân đóng nông — stop theo "độ sâu" bị quét oan</text>
+
+  <!-- LEFT: wick spike -->
+  <rect x="24" y="70" width="345" height="382" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="96" font-size="12.5" font-weight="700" fill="#B91C1C">A. Wick spike (nhiễu biến động cao)</text>
+  <!-- OB zone -->
+  <rect x="60" y="150" width="290" height="120" fill="#16A34A" opacity="0.12"/>
+  <line x1="60" y1="150" x2="350" y2="150" stroke="#15803D" stroke-width="1.2"/>
+  <text x="66" y="145" font-size="9" fill="#15803D">proximal (mép gần)</text>
+  <line x1="60" y1="210" x2="350" y2="210" stroke="#1D4ED8" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="66" y="205" font-size="9" font-weight="700" fill="#1D4ED8">CE (50%)</text>
+  <line x1="60" y1="270" x2="350" y2="270" stroke="#15803D" stroke-width="1.2"/>
+  <text x="66" y="284" font-size="9" fill="#15803D">distal (mép xa)</text>
+  <!-- candle: long lower wick through distal, body closes shallow near proximal -->
+  <rect x="200" y="165" width="3" height="150" fill="#16A34A"/>
+  <rect x="188" y="165" width="26" height="35" fill="#16A34A" rx="1"/>
+  <text x="220" y="185" font-size="9" font-weight="700" fill="#15803D">thân đóng NÔNG (gần proximal) → OB còn sống</text>
+  <text x="150" y="330" font-size="9" fill="#B91C1C">wick chọc qua distal</text>
+  <!-- stop placed just beyond distal gets wicked -->
+  <line x1="60" y1="300" x2="350" y2="300" stroke="#DC2626" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="66" y="316" font-size="9" font-weight="700" fill="#B91C1C">stop đặt sát dưới distal → bị wick quét oan ✗</text>
+  <path d="M203,200 L250,150 L300,120" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+
+  <!-- RIGHT: clean body mitigation -->
+  <rect x="391" y="70" width="345" height="382" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="407" y="96" font-size="12.5" font-weight="700" fill="#15803D">B. Body mitigation "sạch" (thanh khoản dày)</text>
+  <rect x="427" y="150" width="290" height="120" fill="#16A34A" opacity="0.12"/>
+  <line x1="427" y1="150" x2="717" y2="150" stroke="#15803D" stroke-width="1.2"/>
+  <line x1="427" y1="210" x2="717" y2="210" stroke="#1D4ED8" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="433" y="205" font-size="9" font-weight="700" fill="#1D4ED8">CE (50%)</text>
+  <line x1="427" y1="270" x2="717" y2="270" stroke="#15803D" stroke-width="1.2"/>
+  <!-- candle taps to CE cleanly, small wick -->
+  <rect x="560" y="200" width="3" height="52" fill="#16A34A"/>
+  <rect x="548" y="205" width="26" height="35" fill="#16A34A" rx="1"/>
+  <text x="450" y="235" font-size="9" font-weight="700" fill="#15803D">wick &amp; thân đều dừng quanh CE</text>
+  <!-- stop below distal safe -->
+  <line x1="427" y1="292" x2="717" y2="292" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="433" y="308" font-size="9" font-weight="700" fill="#15803D">stop dưới distal + buffer biến động → an toàn ✓</text>
+  <path d="M563,210 L610,160 L670,124" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+
+  <text x="40" y="446" font-size="10.5" fill="#6B7280">Đánh giá độ sâu bằng CLOSE (thân); đặt stop qua buffer biến động (ATR/spread), không dán sát distal — nhất là XAUUSD/tin.</text>
+</svg>

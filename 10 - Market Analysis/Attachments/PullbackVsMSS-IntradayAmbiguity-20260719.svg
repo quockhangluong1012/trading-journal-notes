@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="Segoe UI, Arial, sans-serif">
+<rect x="0" y="0" width="900" height="500" rx="12" fill="#191b1f"/>
+<text x="28" y="30" font-size="16" fill="#e6e8ea" font-weight="bold">Cai bay xet MSS D1 giua phien: 1 nen Daily chua dong, 4 "phan xu" khac nhau trong cung 1 ngay</text>
+<text x="28" y="48" font-size="10.5" fill="#9aa0a6">Ap dung cho vung 1.305 - nen Daily chi thuc su co nghia sau khi DONG CUA, khong phai tai bat ky thoi diem nao trong ngay</text>
+
+<rect x="24" y="64" width="852" height="340" rx="6" fill="#202329" stroke="#2a2d33"/>
+<line x1="60" y1="220" x2="850" y2="220" stroke="#f0a500" stroke-width="1.4" stroke-dasharray="6 4"/>
+<text x="800" y="215" font-size="10.5" fill="#f0a500">vung 1.305</text>
+
+<!-- intraday path across the "day": open above, dips deep below at London, recovers by NY close -->
+<polyline points="70,150 140,165 200,190 260,225 300,255 330,275 355,268 380,250" fill="none" stroke="#e6e8ea" stroke-width="2.2"/>
+<polyline points="380,250 420,235 470,215 520,205 560,195 610,188 660,182 710,178 760,175 800,172" fill="none" stroke="#40c057" stroke-width="2.4"/>
+
+<!-- snapshot markers with time labels -->
+<circle cx="200" cy="190" r="4.5" fill="#9aa0a6"/>
+<line x1="200" y1="190" x2="200" y2="330" stroke="#9aa0a6" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="150" y="346" font-size="9.5" fill="#9aa0a6" text-anchor="middle">08:00 GMT (Asia/London mo)</text>
+<text x="150" y="360" font-size="9.5" fill="#9aa0a6" text-anchor="middle">gia tren 1.305 - "co ve pullback"</text>
+
+<circle cx="330" cy="275" r="4.5" fill="#fa5252"/>
+<line x1="330" y1="275" x2="330" y2="330" stroke="#fa5252" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="330" y="346" font-size="9.5" fill="#fa5252" text-anchor="middle" font-weight="bold">13:00 GMT (London PM)</text>
+<text x="330" y="360" font-size="9.5" fill="#fa5252" text-anchor="middle" font-weight="bold">wick sau duoi 1.305 - "MSS xac nhan!" (VOI VANG)</text>
+
+<circle cx="470" cy="215" r="4.5" fill="#e8b339"/>
+<line x1="470" y1="215" x2="470" y2="330" stroke="#e8b339" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="470" y="346" font-size="9.5" fill="#e8b339" text-anchor="middle">15:30 GMT (NY mo)</text>
+<text x="470" y="360" font-size="9.5" fill="#e8b339" text-anchor="middle">da hoi lai gan 1.305 - "khong chac nua"</text>
+
+<circle cx="800" cy="172" r="5" fill="#40c057"/>
+<line x1="800" y1="172" x2="800" y2="330" stroke="#40c057" stroke-width="1.2"/>
+<text x="800" y="346" font-size="9.5" fill="#40c057" text-anchor="middle" font-weight="bold">21:00 GMT (D1 CLOSE)</text>
+<text x="800" y="360" font-size="9.5" fill="#40c057" text-anchor="middle" font-weight="bold">dong cua TREN 1.305 - Pullback sau xac nhan</text>
+
+<rect x="60" y="378" width="770" height="16" fill="none"/>
+<text x="450" y="392" font-size="10" fill="#9aa0a6" text-anchor="middle" font-style="italic">Ca ngay, 3 "ket luan" khac nhau da xuat hien truoc khi nen dong - chi thoi diem dong cua moi la that</text>
+
+<rect x="60" y="410" width="380" height="76" rx="5" fill="#20262b" stroke="#fa5252" stroke-dasharray="3 3"/>
+<text x="74" y="430" font-size="10.3" fill="#fa5252" font-weight="bold">Sai lam pho bien luc 13:00</text>
+<text x="74" y="448" font-size="9.4" fill="#e6e8ea">Vao Short ngay khi thay wick xuyen 1.305,</text>
+<text x="74" y="464" font-size="9.4" fill="#e6e8ea">coi do la "MSS xac nhan" - trong khi D1</text>
+<text x="74" y="478" font-size="9.4" fill="#e6e8ea">con 8 tieng nua moi dong cua.</text>
+
+<rect x="460" y="410" width="380" height="76" rx="5" fill="#1e2a20" stroke="#40c057" stroke-dasharray="3 3"/>
+<text x="474" y="430" font-size="10.3" fill="#40c057" font-weight="bold">Ky luat dung</text>
+<text x="474" y="448" font-size="9.4" fill="#e6e8ea">Voi quyet dinh cap D1, chi hanh dong SAU KHI</text>
+<text x="474" y="464" font-size="9.4" fill="#e6e8ea">nen D1 dong (~21:00 GMT/00:00 VN) hoac dung</text>
+<text x="474" y="478" font-size="9.4" fill="#e6e8ea">H4/H1 lam confirmation timeframe rieng.</text>
+</svg>

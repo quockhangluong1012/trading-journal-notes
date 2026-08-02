@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Nhận diện S&amp;D week TRƯỚC thứ Sáu — 3 dấu hiệu xác nhận</text>
+<rect x="60" y="90" width="260" height="180" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="190" y="130" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">① Lịch tin</text>
+<text x="190" y="165" font-size="12" fill="#94a3b8" text-anchor="middle">Có tin high-impact</text>
+<text x="190" y="187" font-size="12" fill="#94a3b8" text-anchor="middle">đánh dấu đỏ vào</text>
+<text x="190" y="209" font-size="12" fill="#94a3b8" text-anchor="middle">thứ Sáu (NFP/FOMC/CPI)</text>
+<rect x="340" y="90" width="260" height="180" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="470" y="130" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">② Mon–Thu đi ngang/nhiễu</text>
+<text x="470" y="165" font-size="12" fill="#94a3b8" text-anchor="middle">Daily action sideways</text>
+<text x="470" y="187" font-size="12" fill="#94a3b8" text-anchor="middle">hoặc HH đi kèm LL</text>
+<text x="470" y="209" font-size="12" fill="#94a3b8" text-anchor="middle">(swing bất thường)</text>
+<rect x="620" y="90" width="260" height="180" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="750" y="130" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">③ Divergence HTF↔LTF</text>
+<text x="750" y="165" font-size="12" fill="#94a3b8" text-anchor="middle">Weekly bias RÕ nhưng</text>
+<text x="750" y="187" font-size="12" fill="#94a3b8" text-anchor="middle">daily candles KHÔNG</text>
+<text x="750" y="209" font-size="12" fill="#94a3b8" text-anchor="middle">honor bias đó</text>
+<path d="M 320 180 L 340 180" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrGray)"/>
+<path d="M 600 180 L 620 180" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrGray)"/>
+<defs><marker id="arrGray" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#94a3b8"/></marker></defs>
+<rect x="60" y="320" width="820" height="90" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<text x="80" y="346" font-size="13" font-weight="700" fill="#4ade80" text-anchor="start">Đủ CẢ BA → coi cả tuần còn lại là Seek and Destroy week</text>
+<text x="80" y="368" font-size="12" fill="#e5e7eb" text-anchor="start">Không counter-trend entry giữa tuần. Không đu fakeout giữa range. Đợi tới thứ Sáu, đợi tin.</text>
+<text x="80" y="390" font-size="12" fill="#94a3b8" text-anchor="start">Xác nhận muộn nhất vào chiều thứ Năm (Thursday close) — trước khi phiên thứ Sáu mở.</text>
+<rect x="60" y="430" width="820" height="80" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="80" y="456" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">Cảnh báo: 3 dấu hiệu này có tỷ lệ dương tính giả cao</text>
+<text x="80" y="478" font-size="12" fill="#94a3b8" text-anchor="start">Nhiều tuần "trông giống" S&amp;D nhưng thứ Sáu không hề sweep 2 phía — xem Phản biện &amp; Giới hạn.</text>
+</svg>

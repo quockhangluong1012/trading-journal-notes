@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Respect-rate tại CE theo instrument x session</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Backtest nội bộ, mỗi ô tối thiểu 40 mẫu, đo trong 3 nến sau khi chạm CE</text>
+
+  <!-- table -->
+  <g font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <line x1="60" y1="120" x2="1220" y2="120" stroke="#565b66" stroke-width="1.5"/>
+    <text x="80" y="112" font-size="14" font-weight="bold" fill="#d1d4dc">Instrument</text>
+    <text x="420" y="112" font-size="14" font-weight="bold" fill="#d1d4dc">Session</text>
+    <text x="700" y="112" font-size="14" font-weight="bold" fill="#d1d4dc">Respect-rate</text>
+    <text x="950" y="112" font-size="14" font-weight="bold" fill="#d1d4dc">Ghi chú</text>
+
+    <line x1="60" y1="170" x2="1220" y2="170" stroke="#2a2e39" stroke-width="1"/>
+    <text x="80" y="162" font-size="13" fill="#d1d4dc">NQ (Nasdaq)</text>
+    <text x="420" y="162" font-size="13" fill="#d1d4dc">US macro NY AM</text>
+    <text x="700" y="162" font-size="15" font-weight="bold" fill="#26a69a">61%</text>
+    <rect x="750" y="150" width="122" height="14" fill="#26a69a" opacity="0.5"/>
+    <text x="950" y="162" font-size="12" fill="#787b86">tin macro, retrace sạch</text>
+
+    <line x1="60" y1="215" x2="1220" y2="215" stroke="#2a2e39" stroke-width="1"/>
+    <text x="80" y="207" font-size="13" fill="#d1d4dc">NQ (Nasdaq)</text>
+    <text x="420" y="207" font-size="13" fill="#d1d4dc">NY lunch 12:00-13:30</text>
+    <text x="700" y="207" font-size="15" font-weight="bold" fill="#ff6b6b">29%</text>
+    <rect x="750" y="195" width="58" height="14" fill="#ff6b6b" opacity="0.5"/>
+    <text x="950" y="207" font-size="12" fill="#787b86">thanh khoản mỏng, nhiều</text>
+
+    <line x1="60" y1="260" x2="1220" y2="260" stroke="#2a2e39" stroke-width="1"/>
+    <text x="80" y="252" font-size="13" fill="#d1d4dc">EURUSD</text>
+    <text x="420" y="252" font-size="13" fill="#d1d4dc">London</text>
+    <text x="700" y="252" font-size="15" font-weight="bold" fill="#26a69a">54%</text>
+    <rect x="750" y="240" width="108" height="14" fill="#26a69a" opacity="0.5"/>
+    <text x="950" y="252" font-size="12" fill="#787b86">retrace sau đều đặn</text>
+
+    <line x1="60" y1="305" x2="1220" y2="305" stroke="#2a2e39" stroke-width="1"/>
+    <text x="80" y="297" font-size="13" fill="#d1d4dc">EURUSD</text>
+    <text x="420" y="297" font-size="13" fill="#d1d4dc">Asia</text>
+    <text x="700" y="297" font-size="15" font-weight="bold" fill="#ff9800">38%</text>
+    <rect x="750" y="285" width="76" height="14" fill="#ff9800" opacity="0.5"/>
+    <text x="950" y="297" font-size="12" fill="#787b86">range hẹp, ít test CE thật</text>
+
+    <line x1="60" y1="350" x2="1220" y2="350" stroke="#2a2e39" stroke-width="1"/>
+    <text x="80" y="342" font-size="13" fill="#d1d4dc">XAUUSD</text>
+    <text x="420" y="342" font-size="13" fill="#d1d4dc">NY AM (có tin)</text>
+    <text x="700" y="342" font-size="15" font-weight="bold" fill="#ff9800">45%</text>
+    <rect x="750" y="330" width="90" height="14" fill="#ff9800" opacity="0.5"/>
+    <text x="950" y="342" font-size="12" fill="#787b86">biến động cao, dễ overshoot</text>
+
+    <line x1="60" y1="395" x2="1220" y2="395" stroke="#2a2e39" stroke-width="1"/>
+    <text x="80" y="387" font-size="13" fill="#d1d4dc">GBPJPY</text>
+    <text x="420" y="387" font-size="13" fill="#d1d4dc">London/NY overlap</text>
+    <text x="700" y="387" font-size="15" font-weight="bold" fill="#26a69a">58%</text>
+    <rect x="750" y="375" width="116" height="14" fill="#26a69a" opacity="0.5"/>
+    <text x="950" y="387" font-size="12" fill="#787b86">volatility cao, trend rõ</text>
+  </g>
+
+  <rect x="60" y="460" width="1140" height="150" rx="8" fill="#131722" stroke="#565b66" stroke-width="1"/>
+  <text x="90" y="490" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d1d4dc">Rule đọc số liệu:</text>
+  <text x="90" y="515" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">- Xây bảng riêng cho instrument x session mình giao dịch, tối thiểu 30-40 mẫu/ô</text>
+  <text x="90" y="540" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">- Ô có respect-rate dưới 35% -&gt; đổi sang chiến lược mép-gần hoặc chia đôi lệnh</text>
+  <text x="90" y="565" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">- Loại trừ khung giờ thanh khoản mỏng đã biết trước khỏi mẫu tổng hợp chung</text>
+  <text x="90" y="590" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">Xem EC-C3 chi tiết cơ chế WHY</text>
+
+  <text x="640" y="700" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Số liệu minh họa từ backtest nội bộ, dùng để hiệu chỉnh ngưỡng riêng của bạn</text>
+</svg>

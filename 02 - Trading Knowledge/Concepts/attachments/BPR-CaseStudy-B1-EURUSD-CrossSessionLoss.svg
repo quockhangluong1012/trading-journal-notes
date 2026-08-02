@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">EURUSD — Long tại BPR cross-session bị quét thẳng qua, -1R</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Tái dựng từ mẫu backtest · BPR ghép giữa leg phiên Á và leg phiên NY hôm trước</text>
+
+  <line x1="40" y1="500" x2="1240" y2="500" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- leg 1: NY session previous day -->
+  <g>
+    <line x1="100" y1="200" x2="100" y2="280" stroke="#ef5350" stroke-width="1"/>
+    <rect x="92" y="210" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="140" y1="230" x2="140" y2="310" stroke="#ef5350" stroke-width="1"/>
+    <rect x="132" y="240" width="16" height="60" rx="1" fill="#ef5350"/>
+  </g>
+  <rect x="85" y="235" width="70" height="55" rx="3" fill="#ef5350" opacity="0.14" stroke="#ef5350" stroke-dasharray="6 4"/>
+  <text x="70" y="310" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">SIBI NY hôm trước 21:00 GMT</text>
+
+  <!-- long gap in time -->
+  <line x1="200" y1="60" x2="200" y2="480" stroke="#787b86" stroke-width="1" stroke-dasharray="2 4"/>
+  <text x="206" y="80" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">8 giờ — qua đêm, phiên Á thanh khoản mỏng</text>
+
+  <!-- leg 2: asia session next day -->
+  <g>
+    <line x1="260" y1="150" x2="260" y2="230" stroke="#26a69a" stroke-width="1"/>
+    <rect x="252" y="160" width="16" height="60" rx="1" fill="#26a69a"/>
+    <line x1="300" y1="120" x2="300" y2="200" stroke="#26a69a" stroke-width="1"/>
+    <rect x="292" y="130" width="16" height="60" rx="1" fill="#26a69a"/>
+  </g>
+  <rect x="245" y="155" width="70" height="55" rx="3" fill="#26a69a" opacity="0.14" stroke="#26a69a" stroke-dasharray="6 4"/>
+  <text x="245" y="115" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">BISI phiên Á 03:30 GMT</text>
+
+  <!-- overlap BPR -->
+  <rect x="90" y="220" width="200" height="35" rx="3" fill="#f2c94c" opacity="0.22" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="320" y="240" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">BPR 1.0822-1.0838 (cross-session)</text>
+  <line x1="90" y1="238" x2="290" y2="238" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="320" y="262" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">CE = 1.0830</text>
+
+  <!-- price returns to BPR during London -->
+  <g>
+    <line x1="450" y1="280" x2="450" y2="360" stroke="#ef5350" stroke-width="1"/>
+    <rect x="442" y="290" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="490" y1="240" x2="490" y2="320" stroke="#ef5350" stroke-width="1"/>
+    <rect x="482" y="250" width="16" height="60" rx="1" fill="#ef5350"/>
+  </g>
+  <text x="440" y="380" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">London 08:00 — giá hồi về CE 1.0830</text>
+
+  <!-- entry marker -->
+  <line x1="530" y1="238" x2="590" y2="238" stroke="#4a90d9" stroke-width="2"/>
+  <text x="595" y="243" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#4a90d9">Entry Long 1.0830</text>
+
+  <!-- SL below BPR bottom -->
+  <line x1="530" y1="256" x2="590" y2="256" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="595" y="270" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">SL 1.0815 (dưới đáy BPR)</text>
+
+  <!-- TP -->
+  <line x1="530" y1="180" x2="590" y2="180" stroke="#26a69a" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="595" y="185" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">TP 1.0860 (2R)</text>
+
+  <!-- price continues down through BPR and SL -->
+  <g>
+    <line x1="640" y1="260" x2="640" y2="340" stroke="#ef5350" stroke-width="1"/>
+    <rect x="632" y="270" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="680" y1="300" x2="680" y2="390" stroke="#ef5350" stroke-width="1"/>
+    <rect x="672" y="310" width="16" height="70" rx="1" fill="#ef5350"/>
+    <line x1="720" y1="350" x2="720" y2="440" stroke="#ef5350" stroke-width="1"/>
+    <rect x="712" y="360" width="16" height="70" rx="1" fill="#ef5350"/>
+  </g>
+  <text x="640" y="465" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">Giá xuyên thẳng qua BPR, quét SL 1.0815 — không hề tôn trọng CE</text>
+
+  <!-- stop hit marker -->
+  <circle cx="712" cy="365" r="6" fill="#ff6b6b"/>
+  <text x="725" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">SL hit 09:40 London</text>
+
+  <rect x="820" y="150" width="380" height="120" rx="8" fill="#ff6b6b" opacity="0.14" stroke="#ff6b6b" stroke-dasharray="6 4"/>
+  <text x="835" y="175" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">Kết quả: -1R</text>
+  <text x="835" y="197" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Nguyên nhân gốc: BPR ghép từ 2 leg</text>
+  <text x="835" y="219" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">khác phiên (NY tối hôm trước + Á sáng</text>
+  <text x="835" y="241" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">sau) — respect rate thấp hơn same-leg</text>
+  <text x="835" y="263" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">nhưng không bị lọc trước khi vào lệnh</text>
+
+  <text x="40" y="760" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">EURUSD H1/M15 · tái dựng minh họa từ mẫu backtest — BPR đúng công thức hình học không đồng nghĩa đúng chất lượng order flow</text>
+</svg>

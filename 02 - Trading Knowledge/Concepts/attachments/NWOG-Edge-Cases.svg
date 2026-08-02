@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="750" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Edge Case: DST Mỹ vs DST Châu Âu Lệch 2-3 Tuần Mỗi Năm</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">Trong tuần giao thời, chênh lệch giờ London↔NY tạm thời khác chuẩn — quy đổi Sunday Open dễ sai</text>
+
+<!-- calendar timeline for spring -->
+<text x="60" y="105" font-size="17" fill="#e2e8f0" font-weight="bold">Mùa xuân (tháng 3)</text>
+<line x1="60" y1="130" x2="1140" y2="130" stroke="#334155" stroke-width="2"/>
+<text x="70" y="150" font-size="12" fill="#94a3b8">1/3</text>
+<text x="1100" y="150" font-size="12" fill="#94a3b8">31/3</text>
+
+<!-- US DST marker -->
+<line x1="330" y1="115" x2="330" y2="145" stroke="#38bdf8" stroke-width="3"/>
+<text x="220" y="105" font-size="13" fill="#38bdf8" font-weight="bold">Mỹ "spring forward" (CN thứ 2 tháng 3)</text>
+<!-- EU DST marker -->
+<line x1="900" y1="115" x2="900" y2="145" stroke="#f97316" stroke-width="3"/>
+<text x="780" y="185" font-size="13" fill="#f97316" font-weight="bold">EU "spring forward" (CN cuối tháng 3)</text>
+
+<!-- risk zone -->
+<rect x="330" y="130" width="570" height="20" fill="#ef4444" opacity="0.25"/>
+<text x="450" y="175" font-size="13" fill="#ef4444" font-weight="bold">⚠ Vùng rủi ro quy đổi: ~3 tuần Mỹ đã đổi giờ, EU chưa</text>
+
+<!-- calendar timeline for autumn -->
+<text x="60" y="250" font-size="17" fill="#e2e8f0" font-weight="bold">Mùa thu (tháng 10-11)</text>
+<line x1="60" y1="275" x2="1140" y2="275" stroke="#334155" stroke-width="2"/>
+<text x="70" y="295" font-size="12" fill="#94a3b8">1/10</text>
+<text x="1100" y="295" font-size="12" fill="#94a3b8">15/11</text>
+
+<line x1="500" y1="260" x2="500" y2="290" stroke="#f97316" stroke-width="3"/>
+<text x="390" y="250" font-size="13" fill="#f97316" font-weight="bold">EU "fall back" (CN cuối tháng 10)</text>
+<line x1="700" y1="260" x2="700" y2="290" stroke="#38bdf8" stroke-width="3"/>
+<text x="710" y="330" font-size="13" fill="#38bdf8" font-weight="bold">Mỹ "fall back" (CN đầu tháng 11)</text>
+
+<rect x="500" y="275" width="200" height="20" fill="#ef4444" opacity="0.25"/>
+<text x="500" y="360" font-size="13" fill="#ef4444" font-weight="bold">⚠ Vùng rủi ro quy đổi: ~1 tuần EU đã đổi giờ, Mỹ chưa</text>
+
+<!-- conversion table -->
+<rect x="60" y="410" width="1080" height="290" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="80" y="440" font-size="16" fill="#eab308" font-weight="bold">Sunday Open 18:00 ET quy đổi sang giờ London — 3 chế độ trong năm</text>
+
+<text x="80" y="475" font-size="14" fill="#94a3b8">Chế độ</text>
+<text x="380" y="475" font-size="14" fill="#94a3b8">Mỹ</text>
+<text x="560" y="475" font-size="14" fill="#94a3b8">EU/London</text>
+<text x="780" y="475" font-size="14" fill="#94a3b8">Chênh lệch NY-London</text>
+<text x="1030" y="475" font-size="14" fill="#94a3b8">Giờ London</text>
+<line x1="80" y1="488" x2="1120" y2="488" stroke="#334155"/>
+
+<text x="80" y="515" font-size="14" fill="#e2e8f0">Bình thường (cả 2 EDT/BST)</text>
+<text x="380" y="515" font-size="14" fill="#22c55e">EDT (UTC-4)</text>
+<text x="560" y="515" font-size="14" fill="#22c55e">BST (UTC+1)</text>
+<text x="780" y="515" font-size="14" fill="#94a3b8">5 giờ</text>
+<text x="1030" y="515" font-size="14" fill="#38bdf8" font-weight="bold">23:00</text>
+
+<text x="80" y="550" font-size="14" fill="#f97316" font-weight="bold">Giao thời tháng 3 (Mỹ đã đổi, EU chưa)</text>
+<text x="380" y="550" font-size="14" fill="#22c55e">EDT (UTC-4)</text>
+<text x="560" y="550" font-size="14" fill="#ef4444">GMT (UTC+0)</text>
+<text x="780" y="550" font-size="14" fill="#ef4444" font-weight="bold">4 giờ (lệch!)</text>
+<text x="1030" y="550" font-size="14" fill="#ef4444" font-weight="bold">22:00 (không phải 23:00)</text>
+
+<text x="80" y="585" font-size="14" fill="#f97316" font-weight="bold">Giao thời tháng 10 (EU đã đổi, Mỹ chưa)</text>
+<text x="380" y="585" font-size="14" fill="#22c55e">EDT (UTC-4)</text>
+<text x="560" y="585" font-size="14" fill="#ef4444">GMT (UTC+0)</text>
+<text x="780" y="585" font-size="14" fill="#ef4444" font-weight="bold">4 giờ (lệch!)</text>
+<text x="1030" y="585" font-size="14" fill="#ef4444" font-weight="bold">22:00 (không phải 23:00)</text>
+
+<text x="80" y="625" font-size="14" fill="#e2e8f0">Bình thường (cả 2 EST/GMT)</text>
+<text x="380" y="625" font-size="14" fill="#94a3b8">EST (UTC-5)</text>
+<text x="560" y="625" font-size="14" fill="#94a3b8">GMT (UTC+0)</text>
+<text x="780" y="625" font-size="14" fill="#94a3b8">5 giờ</text>
+<text x="1030" y="625" font-size="14" fill="#38bdf8" font-weight="bold">23:00</text>
+
+<text x="80" y="665" font-size="14" fill="#eab308" font-weight="bold">Xử lý: luôn set chart theo NY time tuyệt đối, không cộng trừ giờ tay trong các tuần giao thời DST.</text>
+</svg>

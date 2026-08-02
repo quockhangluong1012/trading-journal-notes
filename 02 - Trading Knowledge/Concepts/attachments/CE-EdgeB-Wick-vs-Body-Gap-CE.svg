@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">CE của body-gap chuẩn vs wick-gap (implied)</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Backtest 100 mẫu: body-gap CE respect-rate 52% vs wick-gap CE 34%</text>
+
+  <line x1="640" y1="110" x2="640" y2="660" stroke="#2a2e39" stroke-width="2"/>
+
+  <!-- Left: body-gap standard -->
+  <rect x="80" y="140" width="200" height="42" rx="8" fill="#26a69a" opacity="0.16" stroke="#26a69a" stroke-width="1.5"/>
+  <text x="180" y="167" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#26a69a">Body-gap chuẩn (3 nến)</text>
+
+  <g>
+    <line x1="130" y1="230" x2="130" y2="270" stroke="#26a69a" stroke-width="2"/>
+    <rect x="118" y="235" width="24" height="30" fill="#26a69a" rx="1"/>
+    <text x="130" y="215" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#787b86">nến 1</text>
+  </g>
+  <g>
+    <line x1="190" y1="260" x2="190" y2="300" stroke="#26a69a" stroke-width="2"/>
+    <rect x="178" y="265" width="24" height="30" fill="#26a69a" rx="1"/>
+    <text x="190" y="215" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#787b86">nến 2 (displacement)</text>
+  </g>
+  <g>
+    <line x1="250" y1="290" x2="250" y2="330" stroke="#26a69a" stroke-width="2"/>
+    <rect x="238" y="295" width="24" height="30" fill="#26a69a" rx="1"/>
+    <text x="250" y="215" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#787b86">nến 3</text>
+  </g>
+
+  <rect x="130" y="240" width="120" height="55" fill="#f2c94c" opacity="0.16" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="130" y1="267" x2="250" y2="267" stroke="#f2c94c" stroke-width="2.5"/>
+  <text x="190" y="380" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">high nến 1 - low nến 3</text>
+  <text x="190" y="400" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">vùng chưa từng giao dịch thật</text>
+
+  <rect x="90" y="440" width="200" height="42" rx="8" fill="#26a69a" opacity="0.16" stroke="#26a69a" stroke-width="1.5"/>
+  <text x="190" y="466" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#26a69a">✓ respect-rate 52%</text>
+
+  <!-- Right: wick-gap implied -->
+  <rect x="800" y="140" width="220" height="42" rx="8" fill="#ff6b6b" opacity="0.16" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="910" y="167" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff6b6b">Wick-gap (implied, mở rộng)</text>
+
+  <g>
+    <line x1="850" y1="230" x2="850" y2="280" stroke="#26a69a" stroke-width="2"/>
+    <rect x="838" y="240" width="24" height="30" fill="#26a69a" rx="1"/>
+  </g>
+  <g>
+    <line x1="910" y1="255" x2="910" y2="315" stroke="#26a69a" stroke-width="2"/>
+    <rect x="898" y="270" width="24" height="30" fill="#26a69a" rx="1"/>
+  </g>
+  <g>
+    <line x1="970" y1="290" x2="970" y2="330" stroke="#26a69a" stroke-width="2"/>
+    <rect x="958" y="295" width="24" height="30" fill="#26a69a" rx="1"/>
+  </g>
+
+  <rect x="850" y="230" width="120" height="90" fill="#ff6b6b" opacity="0.12" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="850" y1="275" x2="970" y2="275" stroke="#ff6b6b" stroke-width="2.5"/>
+  <text x="910" y="360" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">gap mở rộng bằng bóng nến giữa</text>
+  <text x="910" y="380" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">một phần đã từng có giao dịch (wick)</text>
+
+  <rect x="810" y="440" width="200" height="42" rx="8" fill="#ff6b6b" opacity="0.16" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="910" y="466" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff6b6b">✗ respect-rate 34%</text>
+
+  <text x="640" y="560" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Luôn đo gap theo quy ước body-3-nến chuẩn khi tính CE dùng để trade</text>
+
+  <text x="640" y="695" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Xem EC-C5 - kiểm tra cấu hình indicator trước khi tin gap vẽ đẹp</text>
+</svg>

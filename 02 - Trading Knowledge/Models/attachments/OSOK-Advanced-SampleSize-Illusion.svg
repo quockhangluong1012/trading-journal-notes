@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="420" rx="12" fill="#0d1117"/>
+  <text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Sample size cực nhỏ — vì sao 1 lệnh/tuần khó chứng minh edge</text>
+  <text x="32" y="58" font-size="12" fill="#94a3b8">Minh họa khái niệm về thời gian cần để đủ mẫu, không phải dữ liệu thật</text>
+
+  <!-- comparison bars: weeks needed for N=50 samples -->
+  <text x="60" y="110" font-size="13" fill="#e5e7eb">OSOK: 1 lệnh/tuần</text>
+  <rect x="260" y="92" width="600" height="26" rx="4" fill="#1e293b" stroke="#3b82f6"/>
+  <rect x="260" y="92" width="600" height="26" rx="4" fill="#3b82f6" opacity="0.4"/>
+  <text x="480" y="133" font-size="11.5" fill="#3b82f6" text-anchor="middle">~50 tuần (~1 năm) để đạt N=50 mẫu</text>
+
+  <text x="60" y="160" font-size="13" fill="#e5e7eb">Model 5 lệnh/tuần</text>
+  <rect x="260" y="142" width="60" height="26" rx="4" fill="#1e293b" stroke="#a855f7"/>
+  <rect x="260" y="142" width="60" height="26" rx="4" fill="#a855f7" opacity="0.4"/>
+  <text x="480" y="183" font-size="11.5" fill="#a855f7" text-anchor="middle">~10 tuần để đạt N=50 mẫu</text>
+
+  <rect x="60" y="210" width="840" height="150" rx="8" fill="rgba(239,68,68,0.10)" stroke="#ef4444" stroke-dasharray="4 3"/>
+  <text x="480" y="238" font-size="13" fill="#f87171" text-anchor="middle" font-weight="700">Hệ quả thống kê</text>
+  <text x="480" y="262" font-size="12" fill="#e5e7eb" text-anchor="middle">Cần khoảng ~1 năm giao dịch liên tục chỉ để đạt N=50 mẫu OSOK —</text>
+  <text x="480" y="282" font-size="12" fill="#e5e7eb" text-anchor="middle">trong khi phân biệt winrate 50% và 60% với độ tin cậy hợp lý</text>
+  <text x="480" y="302" font-size="12" fill="#e5e7eb" text-anchor="middle">thường cần N hàng trăm mẫu theo ước lượng nhị thức chuẩn.</text>
+  <text x="480" y="326" font-size="11.5" fill="#94a3b8" text-anchor="middle">→ Sau 1 năm, kết luận "OSOK có edge" từ dữ liệu cá nhân vẫn còn nhiều nhiễu.</text>
+  <text x="480" y="344" font-size="11.5" fill="#94a3b8" text-anchor="middle">Cần nhiều năm hoặc kết hợp nhiều trader/nhiều tài khoản để giảm nhiễu.</text>
+</svg>

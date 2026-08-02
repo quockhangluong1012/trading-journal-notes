@@ -1,0 +1,47 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Edge case — CISD LTF ngược chân delivery HTF còn nguyên (nested opposing)</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Một bullish CISD M1/M5 in NGAY TRONG một sell-side leg M15 chưa hề CISD/MSS = bắt dao rơi ngược state HTF</text>
+  <rect x="24" y="70" width="712" height="374" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <marker id="cconf1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#B91C1C"/>
+  </marker>
+
+  <!-- M15 bearish leg, big, still intact -->
+  <text x="44" y="96" font-size="12.5" font-weight="700" fill="#B91C1C">M15 — sell-side state CÒN NGUYÊN (chưa CISD, chưa MSS)</text>
+  <rect x="70" y="120" width="3" height="70" fill="#DC2626"/><rect x="58" y="126" width="24" height="58" fill="#DC2626" rx="1"/>
+  <rect x="118" y="160" width="3" height="80" fill="#DC2626"/><rect x="106" y="168" width="24" height="66" fill="#DC2626" rx="1"/>
+  <rect x="166" y="210" width="3" height="85" fill="#DC2626"/><rect x="154" y="218" width="24" height="70" fill="#DC2626" rx="1"/>
+  <rect x="214" y="270" width="3" height="90" fill="#DC2626"/><rect x="202" y="278" width="24" height="74" fill="#DC2626" rx="1"/>
+  <path d="M70,150 L340,400" fill="none" stroke="#B91C1C" stroke-width="2.4" marker-end="url(#cconf1)" opacity="0.9"/>
+  <text x="230" y="392" font-size="10.5" font-weight="700" fill="#B91C1C">Draw thật của M15 = SSL phía dưới</text>
+
+  <!-- zoom bubble: M1 bullish CISD inside a pullback -->
+  <rect x="360" y="150" width="340" height="180" rx="10" fill="#FEF3C7" stroke="#B45309" stroke-width="1.5"/>
+  <text x="378" y="176" font-size="12.5" font-weight="700" fill="#B45309">Zoom M1 (bên trong 1 pullback của M15)</text>
+  <line x1="240" y1="250" x2="360" y2="200" stroke="#9CA3AF" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+  <!-- M1 CISD level -->
+  <line x1="380" y1="230" x2="680" y2="230" stroke="#1D4ED8" stroke-width="1.8" stroke-dasharray="7 4"/>
+  <text x="560" y="224" font-size="9.5" font-weight="700" fill="#1D4ED8">CISD level M1</text>
+  <!-- small red leg + green closes through -->
+  <rect x="400" y="230" width="2" height="55" fill="#DC2626"/><rect x="392" y="234" width="12" height="44" fill="#DC2626" rx="1"/>
+  <rect x="428" y="252" width="2" height="52" fill="#DC2626"/><rect x="420" y="256" width="12" height="40" fill="#DC2626" rx="1"/>
+  <circle cx="426" cy="304" r="6" fill="none" stroke="#B45309" stroke-width="2"/>
+  <rect x="460" y="210" width="2" height="94" fill="#16A34A"/><rect x="452" y="222" width="12" height="72" fill="#16A34A" rx="1"/>
+  <text x="470" y="212" font-size="10" font-weight="700" fill="#15803D">bullish CISD M1</text>
+  <!-- bẫy label -->
+  <rect x="500" y="250" width="150" height="60" rx="6" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.4"/>
+  <text x="512" y="272" font-size="11" font-weight="700" fill="#B91C1C">BẪY: bắt dao rơi</text>
+  <text x="512" y="290" font-size="9.5" fill="#374151">ngược sell-side state M15</text>
+  <text x="512" y="304" font-size="9.5" fill="#374151">→ pullback scalp / bỏ qua</text>
+
+  <!-- correct action note -->
+  <rect x="360" y="346" width="340" height="72" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="376" y="368" font-size="11.5" font-weight="700" fill="#15803D">Đúng: xác định STATE M15 trước</text>
+  <text x="376" y="386" font-size="10" fill="#374151">Chỉ trade CISD LTF khi KHÔNG mâu thuẫn state HTF.</text>
+  <text x="376" y="402" font-size="10" fill="#374151">Muốn an toàn → chờ M15 tự in CISD rồi mới vào cùng hướng ở LTF.</text>
+
+  <text x="44" y="432" font-size="10.5" fill="#6B7280">State machine: HTF quyết định phe. Một CISD LTF ngược state HTF không phải cơ hội — nó là bẫy nested.</text>
+</svg>

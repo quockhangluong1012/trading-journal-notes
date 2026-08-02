@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="400" rx="12" fill="#0d1117"/>
+  <text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Case 4 — No-Trade đúng (ngoài cửa sổ, chưa sweep)</text>
+  <text x="32" y="58" font-size="12" fill="#94a3b8">Case tái dựng minh họa, số liệu hypothetical — không phải lệnh thật</text>
+
+  <rect x="60" y="90" width="860" height="220" fill="rgba(148,163,184,0.06)"/>
+  <text x="490" y="330" font-size="12" fill="#94a3b8" text-anchor="middle">"Giữa phiên chết" — ngoài cửa sổ Venom, chưa quét session pool nào</text>
+
+  <g>
+    <line x1="150" y1="200" x2="150" y2="250" stroke="#9ca3af" stroke-width="1.5"/><rect x="144" y="208" width="12" height="30" fill="#ef4444"/>
+    <line x1="200" y1="190" x2="200" y2="240" stroke="#9ca3af" stroke-width="1.5"/><rect x="194" y="198" width="12" height="30" fill="#22c55e"/>
+    <line x1="250" y1="205" x2="250" y2="255" stroke="#9ca3af" stroke-width="1.5"/><rect x="244" y="212" width="12" height="30" fill="#ef4444"/>
+  </g>
+
+  <rect x="320" y="170" width="80" height="40" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-dasharray="4 3"/>
+  <text x="360" y="160" font-size="12" fill="#3b82f6" text-anchor="middle">FVG "đẹp"</text>
+
+  <g stroke="#4ade80" stroke-width="3">
+    <path d="M 500 190 l 10 12 l 20 -24" fill="none"/>
+  </g>
+  <text x="530" y="230" font-size="12" fill="#4ade80" text-anchor="middle">Quyết định: KHÔNG VÀO</text>
+  <text x="530" y="246" font-size="11" fill="#94a3b8" text-anchor="middle">(No-Trade đúng quy trình)</text>
+
+  <text x="700" y="140" font-size="12" fill="#94a3b8" text-anchor="middle">Thiếu cả 2 bộ lọc:</text>
+  <text x="700" y="158" font-size="11.5" fill="#f87171" text-anchor="middle">time ✗   session-pool sweep ✗</text>
+</svg>

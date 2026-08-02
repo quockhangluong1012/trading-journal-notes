@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Nested AMD — Daily ⊃ Hourly ⊃ 5-phút</text>
+<rect x="60" y="70" width="840" height="480" rx="14" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="80" y="96" font-size="15" font-weight="700" fill="#38bdf8" text-anchor="start">Daily AMD</text>
+<text x="80" y="114" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Accumulation (Á) — Manipulation (sweep London/NY) — Distribution (move chính)</text>
+<text x="130" y="140" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Accumulation</text>
+<text x="420" y="140" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Manipulation</text>
+<text x="700" y="140" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Distribution</text>
+<line x1="230" y1="130" x2="230" y2="530" stroke="#334155" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="560" y1="130" x2="560" y2="530" stroke="#334155" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="330" y="170" width="480" height="330" rx="12" fill="none" stroke="#3b82f6" stroke-width="2"/>
+<text x="350" y="194" font-size="14" font-weight="700" fill="#3b82f6" text-anchor="start">Hourly AMD</text>
+<text x="350" y="210" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">A-M-D nhỏ hơn, tự nó có thể là 1 ICT 2022 Model đầy đủ</text>
+<text x="380" y="232" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">Acc.</text>
+<text x="540" y="232" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">Manip.</text>
+<text x="680" y="232" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">Distrib.</text>
+<line x1="460" y1="222" x2="460" y2="480" stroke="#334155" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="640" y1="222" x2="640" y2="480" stroke="#334155" stroke-width="1" stroke-dasharray="2 2"/>
+<rect x="540" y="260" width="240" height="200" rx="10" fill="none" stroke="#f97316" stroke-width="2"/>
+<text x="555" y="282" font-size="13" font-weight="700" fill="#f97316" text-anchor="start">5-phút AMD</text>
+<text x="555" y="300" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">Entry thực tế:</text>
+<text x="555" y="315" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">sweep+displace M1-M5</text>
+<line x1="560" y1="387" x2="560" y2="405" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="555.0" y="392" width="10" height="8" fill="#22c55e"/>
+<line x1="582" y1="375" x2="582" y2="397" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="577.0" y="380" width="10" height="12" fill="#22c55e"/>
+<line x1="604" y1="335" x2="604" y2="385" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="599.0" y="340" width="10" height="40" fill="#22c55e"/>
+<rect x="596" y="335" width="40" height="20" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="660" y="489" width="12" height="12" fill="#38bdf8"/>
+<text x="678" y="499" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="start">Daily AMD (tầng ngoài)</text>
+<rect x="660" y="509" width="12" height="12" fill="#3b82f6"/>
+<text x="678" y="519" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="start">Hourly AMD (lồng trong)</text>
+<rect x="660" y="529" width="12" height="12" fill="#f97316"/>
+<text x="678" y="539" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="start">5-phút AMD (entry thật)</text>
+<text x="480" y="570" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Daily AMD ⊃ Hourly AMD ⊃ 5-min AMD — sơ đồ khái niệm tính fractal, không phải chart giá thật.</text>
+</svg>

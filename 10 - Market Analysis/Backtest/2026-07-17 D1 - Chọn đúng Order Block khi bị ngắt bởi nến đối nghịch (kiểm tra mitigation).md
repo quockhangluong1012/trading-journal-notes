@@ -31,7 +31,7 @@ tags:
 ![[OB-choose-candle-mitigation-20260717.svg]]
 
 > [!warning] Ảnh gốc
-> Ảnh chart do Khang gửi trong chat chưa được lưu vào vault. Nếu muốn tham chiếu lại chính xác, kéo ảnh vào `10 - Market Analysis/Attachments/` (đặt tên gợi ý `OB-daily-case-20260717-1.png`) và thêm dòng `![[OB-daily-case-20260717-1.png]]` phía trên. Sơ đồ SVG ở trên là **minh họa nguyên lý**, không phải chart thật (không có giá cụ thể vì ảnh gốc không nhãn).
+> Ảnh chart do  gửi trong chat chưa được lưu vào vault. Nếu muốn tham chiếu lại chính xác, kéo ảnh vào `10 - Market Analysis/Attachments/` (đặt tên gợi ý `OB-daily-case-20260717-1.png`) và thêm dòng `![[OB-daily-case-20260717-1.png]]` phía trên. Sơ đồ SVG ở trên là **minh họa nguyên lý**, không phải chart thật (không có giá cụ thể vì ảnh gốc không nhãn).
 
 ## 0. Tóm tắt tình huống
 
@@ -39,7 +39,7 @@ Chart Daily cho thấy: nhịp giảm → đảo chiều tăng (chuỗi nến xa
 
 ## 1. Sai lầm ban đầu — và vì sao nó sai
 
-Ở lượt phân tích đầu, tôi đề xuất "gộp nến 1 và nến 2 thành một compound OB" vì cho rằng đây là một cụm consolidation tại đỉnh. Khang chỉ ra đúng vấn đề: **giữa nến 1 và nến 2 thực ra có 3 nến bearish**, không phải một chuỗi liền mạch cùng màu.
+Ở lượt phân tích đầu, tôi đề xuất "gộp nến 1 và nến 2 thành một compound OB" vì cho rằng đây là một cụm consolidation tại đỉnh.  chỉ ra đúng vấn đề: **giữa nến 1 và nến 2 thực ra có 3 nến bearish**, không phải một chuỗi liền mạch cùng màu.
 
 Đây là điểm mấu chốt cần nhớ như một quy tắc cứng:
 
@@ -53,7 +53,7 @@ Do đó: **không gộp nến 1 và nến 2** trong case này. Chúng phải đ�
 | Tiêu chí | Câu hỏi | Áp dụng cho case này |
 |---|---|---|
 | Vị trí | Đây có phải nến ngược màu cuối cùng liền kề trước displacement không? | Nến 2 đạt — không có nến đối nghịch nào giữa nó và cú giảm mạnh |
-| Imbalance | Displacement có để lại FVG không? | Đạt — Khang xác nhận **2 FVG lớn** |
+| Imbalance | Displacement có để lại FVG không? | Đạt —  xác nhận **2 FVG lớn** |
 | Xác nhận cấu trúc | Có MSS xác nhận đảo chiều không? | Đạt — **Bearish MSS trên LTF** |
 | Tính "sạch" (chưa bị test) | Vùng này đã bị giá quay lại giao dịch xuyên qua trước displacement chưa? | Nến 2: **chưa** (liền kề trực tiếp). Nến 1: **cần kiểm tra** (xem mục 4) |
 
@@ -63,7 +63,7 @@ Với timeframe Daily, thân nến 2 nhỏ **không phải điều kiện loại
 
 Nến 2 thỏa đồng thời cả 4 tiêu chí, đặc biệt là tiêu chí quan trọng nhất trong tình huống này: **không có nến đối nghịch nào chen giữa nó và displacement**, nên chưa có cơ hội để giá "dùng trước" thanh khoản ở đó. Kết hợp với 2 FVG lớn (xác nhận imbalance thật) và Bearish MSS trên LTF (xác nhận đảo chiều cấu trúc), nến 2 là **ứng viên Order Block đáng tin cậy nhất** để dùng làm POI khi backtest hoặc theo dõi retest.
 
-## 4. Vai trò còn lại của nến 1 — câu hỏi cần Khang tự kiểm tra trên chart
+## 4. Vai trò còn lại của nến 1 — câu hỏi cần  tự kiểm tra trên chart
 
 Nến 1 tạo ra swing high thực sự của nhịp tăng — có khả năng là nơi buy-side liquidity cũ bị quét. Nhưng để biết nó còn giá trị gì không với vai trò OB dự phòng, cần trả lời một câu hỏi duy nhất:
 
@@ -99,13 +99,13 @@ Nến 1 tạo ra swing high thực sự của nhịp tăng — có khả năng l
 ## 8. Câu hỏi cần chốt (chưa xác nhận)
 
 - **Symbol + khung thời gian chính xác** của chart (ảnh gốc không nhãn) — cần để log vào `04 - Backtesting/` nếu sau này setup này được test thật.
-- **Kết quả kiểm tra mitigation ở mục 4**: 3 nến bearish giữa nến 1 và nến 2 có chạy ngược vào thân nến 1 hay không? Khang tự kiểm tra trên chart gốc và cho biết để cập nhật note này.
+- **Kết quả kiểm tra mitigation ở mục 4**: 3 nến bearish giữa nến 1 và nến 2 có chạy ngược vào thân nến 1 hay không?  tự kiểm tra trên chart gốc và cho biết để cập nhật note này.
 - Vị trí nến 2 so với **premium/discount** của dealing range liên quan (cần range high/low thật để tính).
 
 ## 9. Next steps
 
-- Nếu Khang xác nhận mitigation ở mục 4 và có giá cụ thể, cập nhật note này hoặc tạo file backtest chi tiết trong `04 - Backtesting/`, cross-link ngược về note này.
+- Nếu  xác nhận mitigation ở mục 4 và có giá cụ thể, cập nhật note này hoặc tạo file backtest chi tiết trong `04 - Backtesting/`, cross-link ngược về note này.
 - Nếu case này lặp lại nhiều lần (vùng đỉnh có consolidation bị ngắt bởi nến đối nghịch), cân nhắc viết thành một entry riêng trong `03 - Playbooks/` với checklist "khi nào gộp OB, khi nào tách".
 
 ---
-*Ghi chú: ảnh gốc không nhãn symbol/giá/thời gian; đây là note phương pháp (methodology), không log backtest vì không vào lệnh. Sơ đồ SVG là minh họa nguyên lý theo đúng bố cục 2 nến (1 và 2) + 3 nến bearish xen giữa mà Khang mô tả, không phải chart thật.*
+*Ghi chú: ảnh gốc không nhãn symbol/giá/thời gian; đây là note phương pháp (methodology), không log backtest vì không vào lệnh. Sơ đồ SVG là minh họa nguyên lý theo đúng bố cục 2 nến (1 và 2) + 3 nến bearish xen giữa mà  mô tả, không phải chart thật.*

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="700" fill="#0f1420" rx="12"/>
+
+  <text x="600" y="40" font-size="26" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Case Study A — XAUUSD Short: BSL Sweep tại Premium → MSS → +2.94R</text>
+  <text x="600" y="64" font-size="15" fill="#94a3b8" text-anchor="middle">NY AM 08:40–15:45 — Daily Bias Bearish, H1 bearish OB 2,405–2,412</text>
+
+  <g stroke="#1c2333">
+    <line x1="60" y1="140" x2="1140" y2="140"/>
+    <line x1="60" y1="260" x2="1140" y2="260"/>
+    <line x1="60" y1="380" x2="1140" y2="380"/>
+    <line x1="60" y1="500" x2="1140" y2="500"/>
+  </g>
+
+  <text x="20" y="144" font-size="12" fill="#94a3b8">2,419</text>
+  <text x="20" y="264" font-size="12" fill="#94a3b8">2,398</text>
+  <text x="20" y="384" font-size="12" fill="#94a3b8">2,370</text>
+  <text x="20" y="504" font-size="12" fill="#94a3b8">2,348</text>
+
+  <!-- external sweep at PWH -->
+  <text x="70" y="120" font-size="13" fill="#94a3b8">PWH — pool chính, tại cực dealing range (KHÔNG phải IDM)</text>
+
+  <line x1="130" y1="180" x2="130" y2="220" stroke="#22c55e" stroke-width="2"/>
+  <rect x="122" y="190" width="16" height="25" fill="#22c55e"/>
+  <line x1="180" y1="165" x2="180" y2="210" stroke="#22c55e" stroke-width="2"/>
+  <rect x="172" y="175" width="16" height="25" fill="#22c55e"/>
+
+  <line x1="100" y1="160" x2="280" y2="160" stroke="#eab308" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="285" y="164" font-size="12" fill="#eab308">PWH 2,415 (BSL — pool chính)</text>
+
+  <!-- sweep -->
+  <line x1="240" y1="155" x2="240" y2="200" stroke="#f97316" stroke-width="2.5"/>
+  <rect x="232" y="160" width="16" height="30" fill="#22c55e" stroke="#f97316" stroke-width="1.5"/>
+  <text x="200" y="235" font-size="12.5" fill="#f97316" font-weight="bold">08:40 — Sweep 2,417 → reclaim 2,409 (65% thân nến)</text>
+
+  <!-- OB zone -->
+  <rect x="60" y="200" width="260" height="45" fill="#ef4444" opacity="0.18"/>
+  <text x="70" y="220" font-size="12.5" fill="#e2e8f0">H1 bearish OB 2,405–2,412</text>
+
+  <!-- displacement down and MSS -->
+  <line x1="330" y1="215" x2="330" y2="300" stroke="#ef4444" stroke-width="2.5"/>
+  <rect x="320" y="225" width="20" height="75" fill="#ef4444"/>
+  <text x="290" y="320" font-size="13" fill="#ef4444" font-weight="bold">08:55 — Bearish MSS</text>
+  <text x="270" y="338" font-size="11.5" fill="#94a3b8">phá higher-low 2,403, displacement 2.2x ATR</text>
+
+  <!-- FVG -->
+  <rect x="330" y="250" width="110" height="45" fill="#ef4444" opacity="0.22"/>
+  <text x="336" y="268" font-size="12" fill="#e2e8f0">FVG</text>
+  <text x="336" y="283" font-size="11" fill="#94a3b8">2,398–2,404</text>
+
+  <!-- entry -->
+  <circle cx="400" cy="270" r="6" fill="#38bdf8"/>
+  <text x="412" y="274" font-size="13" fill="#38bdf8" font-weight="bold">Entry 09:08 @ 2,401</text>
+
+  <!-- stop -->
+  <line x1="60" y1="140" x2="1140" y2="140" stroke="#ef4444" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="960" y="135" font-size="13" fill="#ef4444">Stop 2,419 (trên sweep high)</text>
+
+  <!-- path down -->
+  <line x1="400" y1="270" x2="650" y2="380" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="560" y="365" font-size="12" fill="#94a3b8">12:30 chạm T1 2,370, dời stop về entry</text>
+  <line x1="650" y1="380" x2="920" y2="500" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,3"/>
+  <text x="780" y="490" font-size="12" fill="#94a3b8">15:45 chạm T2 2,348</text>
+  <circle cx="920" cy="500" r="6" fill="#a78bfa"/>
+
+  <!-- results -->
+  <rect x="60" y="450" width="320" height="110" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="75" y="475" font-size="14" font-weight="bold" fill="#e2e8f0">Kết quả</text>
+  <text x="75" y="496" font-size="13" fill="#e2e8f0">Rủi ro: 18 USD/oz</text>
+  <text x="75" y="515" font-size="13" fill="#e2e8f0">Lợi nhuận: 53 USD/oz</text>
+  <text x="75" y="538" font-size="15" fill="#22c55e" font-weight="bold">Kết quả: +2.94R</text>
+
+  <text x="600" y="640" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-style="italic">Bài học: pool bị quét (PWH) nằm ĐÚNG tại cực dealing range — external/structural sweep, không phải IDM — nên MSS xuất hiện ngay sau, không cần chờ một chặng nữa.</text>
+</svg>

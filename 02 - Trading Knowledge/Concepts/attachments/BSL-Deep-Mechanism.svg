@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="780" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế thị trường thật đằng sau BSL</text>
+  <text x="40" y="62" font-size="15" fill="#94a3b8">Order book + stop cluster + dealer hedging — không chỉ là "narrative ICT"</text>
+
+  <!-- limit order book visualization -->
+  <rect x="40" y="90" width="520" height="300" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="60" y="118" font-size="16" font-weight="bold" fill="#e2e8f0">Limit Order Book quanh EQH 1.0975</text>
+
+  <!-- ask side (sell limit orders thin above) -->
+  <text x="60" y="145" font-size="13" fill="#94a3b8">Ask (sell limit) — mỏng dần khi giá tiến gần EQH</text>
+  <rect x="60" y="152" width="60" height="14" fill="#ef4444" opacity="0.5"/>
+  <rect x="60" y="170" width="40" height="14" fill="#ef4444" opacity="0.4"/>
+  <rect x="60" y="188" width="25" height="14" fill="#ef4444" opacity="0.3"/>
+
+  <!-- stop cluster (buy market orders resting) -->
+  <text x="60" y="222" font-size="13" fill="#eab308">Stop-buy resting ngay trên 1.0975 (dày)</text>
+  <rect x="60" y="230" width="220" height="16" fill="#eab308" opacity="0.7"/>
+  <rect x="60" y="250" width="180" height="16" fill="#eab308" opacity="0.55"/>
+  <text x="290" y="243" font-size="12" fill="#eab308">SL short-sellers</text>
+  <text x="250" y="263" font-size="12" fill="#eab308">buy-stop breakout</text>
+
+  <line x1="60" y1="285" x2="500" y2="285" stroke="#eab308" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="505" y="290" font-size="13" fill="#eab308">1.0975 = EQH</text>
+
+  <text x="60" y="315" font-size="13" fill="#94a3b8">Bid (buy limit) — dày bên dưới, hỗ trợ giá trước sweep</text>
+  <rect x="60" y="322" width="200" height="14" fill="#22c55e" opacity="0.4"/>
+  <rect x="60" y="340" width="240" height="14" fill="#22c55e" opacity="0.5"/>
+
+  <text x="60" y="375" font-size="13" fill="#e2e8f0">→ Khi giá chạm 1.0975, buy-stop dày này khớp NGAY LẬP TỨC</text>
+
+  <!-- Algo/dealer box -->
+  <rect x="600" y="90" width="560" height="300" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="620" y="118" font-size="16" font-weight="bold" fill="#e2e8f0">Vì sao smart money "cần" pool này?</text>
+  <text x="620" y="148" font-size="14" fill="#e2e8f0">1. Institutional sell order lớn cần đối ứng mua</text>
+  <text x="620" y="170" font-size="13" fill="#94a3b8">   → Bán trực tiếp vào bid mỏng làm trượt giá (slippage)</text>
+  <text x="620" y="192" font-size="13" fill="#94a3b8">   → Đẩy giá lên vùng buy-stop dày để "bán vào" lệnh mua đó</text>
+
+  <text x="620" y="222" font-size="14" fill="#e2e8f0">2. Algo TWAP/VWAP tiến gần EQH → thanh khoản mỏng đi</text>
+  <text x="620" y="244" font-size="13" fill="#94a3b8">   → Giá dễ bị đẩy qua bằng khối lượng vừa phải (ít tốn)</text>
+
+  <text x="620" y="274" font-size="14" fill="#e2e8f0">3. Options dealer gamma hedging (nếu có OI lớn quanh mức)</text>
+  <text x="620" y="296" font-size="13" fill="#94a3b8">   → Dealer short gamma phải mua khi giá tăng → tự khuếch đại sweep</text>
+
+  <text x="620" y="330" font-size="14" fill="#a78bfa">So với Wyckoff: đây là "Upthrust" quanh vùng phân phối</text>
+  <text x="620" y="352" font-size="14" fill="#a78bfa">So với Auction Theory: giá thăm dò "value area" trên, bị từ chối</text>
+  <text x="620" y="374" font-size="14" fill="#a78bfa">So với Orderflow: absorption tại ask → footprint đỏ dù giá vẫn lên</text>
+
+  <!-- market condition table -->
+  <text x="40" y="430" font-size="18" font-weight="bold" fill="#e2e8f0">BSL mạnh/yếu theo điều kiện thị trường</text>
+
+  <g font-size="14">
+    <rect x="40" y="450" width="1120" height="40" fill="#1e293b" stroke="#334155"/>
+    <text x="55" y="475" fill="#e2e8f0" font-weight="bold">Điều kiện</text>
+    <text x="330" y="475" fill="#e2e8f0" font-weight="bold">FX majors</text>
+    <text x="620" y="475" fill="#e2e8f0" font-weight="bold">Index futures (NQ/ES)</text>
+    <text x="920" y="475" fill="#e2e8f0" font-weight="bold">Crypto (BTC/ETH)</text>
+
+    <rect x="40" y="490" width="1120" height="42" fill="#0f1420" stroke="#334155"/>
+    <text x="55" y="516" fill="#94a3b8">Trending mạnh</text>
+    <text x="330" y="516" fill="#94a3b8">BSL hay là waypoint</text>
+    <text x="620" y="516" fill="#94a3b8">Sweep + continuation phổ biến</text>
+    <text x="920" y="516" fill="#94a3b8">Sweep dễ fail, FOMO đẩy tiếp</text>
+
+    <rect x="40" y="532" width="1120" height="42" fill="#1e293b" stroke="#334155"/>
+    <text x="55" y="558" fill="#94a3b8">Ranging</text>
+    <text x="330" y="558" fill="#94a3b8">BSL/SSL phản ứng rất chuẩn</text>
+    <text x="620" y="558" fill="#94a3b8">EQH bị "săn" đều đặn mỗi phiên</text>
+    <text x="920" y="558" fill="#94a3b8">Khó vì thanh khoản CEX phân mảnh</text>
+
+    <rect x="40" y="574" width="1120" height="42" fill="#0f1420" stroke="#334155"/>
+    <text x="55" y="600" fill="#94a3b8">Thanh khoản mỏng (đêm/lễ)</text>
+    <text x="330" y="600" fill="#94a3b8">Sweep dễ, đảo yếu, spread giãn</text>
+    <text x="620" y="600" fill="#94a3b8">Ít volume → sweep giả nhiều</text>
+    <text x="920" y="600" fill="#94a3b8">Wick spike rồi mất thanh khoản nhanh</text>
+
+    <rect x="40" y="616" width="1120" height="42" fill="#1e293b" stroke="#334155"/>
+    <text x="55" y="642" fill="#94a3b8">Tin lớn (NFP/FOMC/CPI)</text>
+    <text x="330" y="642" fill="#94a3b8">Sweep bằng spike, slippage lớn</text>
+    <text x="620" y="642" fill="#94a3b8">Futures CME giãn margin, gap</text>
+    <text x="920" y="642" fill="#94a3b8">Ít ảnh hưởng trực tiếp trừ CPI Mỹ</text>
+  </g>
+
+  <text x="40" y="700" font-size="13" fill="#94a3b8">Kết luận: BSL không phải "ma thuật" — là hệ quả tất yếu của order book mỏng dần + stop cluster dày tại vùng giá nổi bật.</text>
+  <text x="40" y="722" font-size="13" fill="#94a3b8">Độ tin cậy của sweep phụ thuộc độ dày thanh khoản thật tại thời điểm đó, không phải bản thân hình dạng nến.</text>
+</svg>

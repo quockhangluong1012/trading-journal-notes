@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760">
+  <rect width="1280" height="760" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">CS-B1. XAUUSD Short NY AM - CHoCH grab, thua 1R</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Tái dựng minh họa từ mẫu backtest - H1, phiên NY AM, uptrend 18 chân swing trước đó</text>
+
+  <!-- price scale reference lines -->
+  <line x1="60" y1="150" x2="1220" y2="150" stroke="#2a2e39" stroke-width="1"/>
+  <text x="1230" y="154" text-anchor="start" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">2438</text>
+
+  <!-- BSL equal highs zone -->
+  <rect x="60" y="150" width="1160" height="30" fill="#b48ead" opacity="0.12" stroke="#b48ead" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="90" y="170" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b48ead">BSL equal-highs 2434-2438</text>
+
+  <!-- uptrend candles leading up -->
+  <g>
+    <line x1="110" y1="380" x2="110" y2="440" stroke="#26a69a" stroke-width="2"/>
+    <rect x="100" y="390" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="160" y1="340" x2="160" y2="400" stroke="#26a69a" stroke-width="2"/>
+    <rect x="150" y="350" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="210" y1="290" x2="210" y2="350" stroke="#26a69a" stroke-width="2"/>
+    <rect x="200" y="300" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="260" y1="240" x2="260" y2="300" stroke="#26a69a" stroke-width="2"/>
+    <rect x="250" y="250" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="310" y1="185" x2="310" y2="250" stroke="#26a69a" stroke-width="2"/>
+    <rect x="300" y="195" width="20" height="40" fill="#26a69a" rx="1"/>
+  </g>
+  <text x="200" y="470" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">uptrend 3 ngày: 2385 -&gt; 2438, 18 chân swing HH/HL</text>
+
+  <!-- protected low -->
+  <line x1="340" y1="420" x2="1220" y2="420" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.8"/>
+  <text x="1210" y="413" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">protected low 2429.50</text>
+
+  <g>
+    <line x1="360" y1="200" x2="360" y2="260" stroke="#26a69a" stroke-width="2"/>
+    <rect x="350" y="210" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="410" y1="180" x2="410" y2="230" stroke="#ef5350" stroke-width="2"/>
+    <rect x="400" y="190" width="20" height="30" fill="#ef5350" rx="1"/>
+  </g>
+  <text x="400" y="165" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">10:15 NY: chạm 2437.80, quay đầu</text>
+
+  <!-- slow break candle: 10:15-11:07 breaking below protected low, 52 min -->
+  <line x1="470" y1="300" x2="470" y2="450" stroke="#ef5350" stroke-width="2.5"/>
+  <rect x="456" y="305" width="28" height="130" fill="#ef5350" rx="1"/>
+  <text x="470" y="480" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff9800">52 phút để đóng</text>
+  <text x="470" y="500" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#ff6b6b">gap_size_atr 0.18 (grab)</text>
+
+  <!-- entry arrow -->
+  <line x1="500" y1="435" x2="560" y2="435" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="565" y="440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">Short entry 2428.90 (10:16)</text>
+
+  <!-- stop level -->
+  <line x1="60" y1="245" x2="1220" y2="245" stroke="#ff6b6b" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.7"/>
+  <text x="1210" y="238" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#ff6b6b">stop 2434.20</text>
+
+  <!-- reclaim candles -->
+  <g>
+    <line x1="560" y1="380" x2="560" y2="430" stroke="#26a69a" stroke-width="2"/>
+    <rect x="550" y="390" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="610" y1="350" x2="610" y2="400" stroke="#26a69a" stroke-width="2"/>
+    <rect x="600" y="360" width="20" height="35" fill="#26a69a" rx="1"/>
+  </g>
+  <text x="600" y="330" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">11:40 reclaim trên 2429.50</text>
+
+  <!-- new shallow protected low -->
+  <line x1="620" y1="405" x2="1220" y2="405" stroke="#b48ead" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.6"/>
+  <text x="1210" y="398" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#b48ead">low mới 2430.80 (nông hơn)</text>
+
+  <!-- continuation up to stop and beyond -->
+  <g>
+    <line x1="660" y1="300" x2="660" y2="360" stroke="#26a69a" stroke-width="2"/>
+    <rect x="650" y="310" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="710" y1="260" x2="710" y2="320" stroke="#26a69a" stroke-width="2"/>
+    <rect x="700" y="270" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="760" y1="220" x2="760" y2="280" stroke="#26a69a" stroke-width="2"/>
+    <rect x="750" y="230" width="20" height="35" fill="#26a69a" rx="1"/>
+  </g>
+  <text x="720" y="490" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">13:05 stop out 2434.20 (-1.0R)</text>
+
+  <g>
+    <line x1="810" y1="140" x2="810" y2="200" stroke="#26a69a" stroke-width="2"/>
+    <rect x="800" y="150" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="860" y1="110" x2="860" y2="170" stroke="#26a69a" stroke-width="2"/>
+    <rect x="850" y="120" width="20" height="35" fill="#26a69a" rx="1"/>
+  </g>
+  <text x="830" y="95" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">15:30 giá lên 2441, lấy BSL - trend cũ tiếp diễn</text>
+
+  <rect x="900" y="560" width="280" height="46" rx="8" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="1040" y="589" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff6b6b">✗ Kết quả: -1.0R (grab, không CHoCH)</text>
+
+  <text x="640" y="670" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Lỗi: bỏ qua tốc độ phá (52 phút) và gap hẹp (0.18 ATR) - CHoCH #1 sau trend 18 swing</text>
+
+  <text x="640" y="720" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Xem EC-B1 và EC-B3 để biết ngưỡng break_velocity / gap_size_atr</text>
+</svg>

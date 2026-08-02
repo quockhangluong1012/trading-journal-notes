@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Liquidity grab vs CHoCH thật - phân biệt bằng tốc độ</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">150 mẫu M5/M15 NQ, GBPUSD - tốc độ phá và gap-size là hai chỉ báo đo được trước khi nến đóng</text>
+
+  <line x1="640" y1="110" x2="640" y2="660" stroke="#2a2e39" stroke-width="2"/>
+
+  <!-- LEFT PANEL: grab -->
+  <rect x="60" y="140" width="180" height="46" rx="8" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="150" y="169" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff6b6b">✗ GRAB (chậm)</text>
+
+  <line x1="70" y1="450" x2="610" y2="450" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+  <text x="600" y="443" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#f2c94c">protected low</text>
+
+  <g>
+    <line x1="120" y1="330" x2="120" y2="400" stroke="#26a69a" stroke-width="2"/>
+    <rect x="112" y="340" width="16" height="45" fill="#26a69a" rx="1"/>
+    <line x1="170" y1="300" x2="170" y2="380" stroke="#26a69a" stroke-width="2"/>
+    <rect x="162" y="310" width="16" height="50" fill="#26a69a" rx="1"/>
+    <line x1="220" y1="340" x2="220" y2="420" stroke="#26a69a" stroke-width="2"/>
+    <rect x="212" y="360" width="16" height="40" fill="#26a69a" rx="1"/>
+  </g>
+
+  <!-- slow break candle wide body but small real move, narrow gap -->
+  <line x1="290" y1="420" x2="290" y2="475" stroke="#ef5350" stroke-width="2.5"/>
+  <rect x="278" y="425" width="24" height="45" fill="#ef5350" rx="1"/>
+  <text x="290" y="500" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#ff9800">52 phút</text>
+  <rect x="300" y="440" width="14" height="20" fill="#ff6b6b" opacity="0.14" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <g>
+    <line x1="360" y1="410" x2="360" y2="460" stroke="#26a69a" stroke-width="2"/>
+    <rect x="352" y="415" width="16" height="35" fill="#26a69a" rx="1"/>
+    <line x1="410" y1="360" x2="410" y2="430" stroke="#26a69a" stroke-width="2"/>
+    <rect x="402" y="365" width="16" height="55" fill="#26a69a" rx="1"/>
+    <line x1="460" y1="320" x2="460" y2="400" stroke="#26a69a" stroke-width="2"/>
+    <rect x="452" y="330" width="16" height="55" fill="#26a69a" rx="1"/>
+    <line x1="510" y1="290" x2="510" y2="360" stroke="#26a69a" stroke-width="2"/>
+    <rect x="502" y="300" width="16" height="45" fill="#26a69a" rx="1"/>
+  </g>
+  <text x="150" y="560" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">break_velocity thấp (~45% TB)</text>
+  <text x="150" y="582" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">gap_size_atr 0.18 (dưới ngưỡng 0.3)</text>
+  <text x="150" y="604" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">reclaim ngay nến sau -> tiếp diễn trend</text>
+
+  <!-- RIGHT PANEL: real CHoCH -->
+  <rect x="1040" y="140" width="180" height="46" rx="8" fill="#26a69a" opacity="0.18" stroke="#26a69a" stroke-width="1.5"/>
+  <text x="1130" y="169" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#26a69a">✓ CHoCH THẬT (nhanh)</text>
+
+  <line x1="670" y1="450" x2="1210" y2="450" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+  <text x="1200" y="443" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#f2c94c">protected low</text>
+
+  <g>
+    <line x1="720" y1="330" x2="720" y2="400" stroke="#26a69a" stroke-width="2"/>
+    <rect x="712" y="340" width="16" height="45" fill="#26a69a" rx="1"/>
+    <line x1="770" y1="300" x2="770" y2="380" stroke="#26a69a" stroke-width="2"/>
+    <rect x="762" y="310" width="16" height="50" fill="#26a69a" rx="1"/>
+    <line x1="820" y1="340" x2="820" y2="420" stroke="#26a69a" stroke-width="2"/>
+    <rect x="812" y="360" width="16" height="40" fill="#26a69a" rx="1"/>
+  </g>
+
+  <!-- fast displacement candle with wide FVG -->
+  <line x1="890" y1="380" x2="890" y2="560" stroke="#ef5350" stroke-width="3"/>
+  <rect x="876" y="385" width="28" height="170" fill="#ef5350" rx="1"/>
+  <text x="890" y="580" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#ff9800">6 phút</text>
+  <rect x="908" y="450" width="60" height="90" fill="#ff6b6b" opacity="0.14" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="938" y="558" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#ff6b6b">FVG rõ</text>
+
+  <g>
+    <line x1="1010" y1="540" x2="1010" y2="600" stroke="#ef5350" stroke-width="2"/>
+    <rect x="1002" y="545" width="16" height="40" fill="#ef5350" rx="1"/>
+    <line x1="1060" y1="560" x2="1060" y2="620" stroke="#ef5350" stroke-width="2"/>
+    <rect x="1052" y="565" width="16" height="40" fill="#ef5350" rx="1"/>
+  </g>
+  <text x="890" y="640" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">break_velocity cao, gap_size_atr 0.55</text>
+  <text x="890" y="662" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">giữ giá ngoài swing -> đảo thật</text>
+
+  <text x="640" y="695" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Đo lường: break_velocity và gap_size_atr trước khi nến đóng - xem EC-B3</text>
+</svg>

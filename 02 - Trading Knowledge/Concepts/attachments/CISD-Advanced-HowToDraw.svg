@@ -1,0 +1,38 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Cách đếm chuỗi giao hàng cuối &amp; vẽ CISD level</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">80% lỗi vẽ CISD nằm ở đây: level = OPEN nến ĐẦU của chuỗi cùng màu liên tiếp, bỏ qua doji nhỏ xen giữa</text>
+  <rect x="24" y="70" width="712" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- WRONG side -->
+  <text x="44" y="98" font-size="12.5" font-weight="700" fill="#B91C1C">SAI — kẻ level tại open nến bất kỳ</text>
+  <line x1="44" y1="150" x2="360" y2="150" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="120" y="144" font-size="9.5" fill="#B91C1C">level đặt nhầm ở nến thứ 3</text>
+  <rect x="70" y="120" width="2" height="50" fill="#DC2626"/><rect x="62" y="122" width="14" height="40" fill="#DC2626" rx="1"/>
+  <rect x="100" y="150" width="2" height="55" fill="#DC2626"/><rect x="92" y="152" width="14" height="45" fill="#DC2626" rx="1"/>
+  <rect x="130" y="150" width="2" height="70" fill="#DC2626"/><rect x="122" y="176" width="14" height="42" fill="#DC2626" rx="1"/>
+  <rect x="160" y="196" width="2" height="70" fill="#DC2626"/><rect x="152" y="200" width="14" height="58" fill="#DC2626" rx="1"/>
+  <text x="60" y="290" font-size="10" fill="#7F1D1D">Level quá gần → tín hiệu giả, dễ bị nhiễu vi cấu trúc</text>
+
+  <line x1="380" y1="90" x2="380" y2="430" stroke="#E5E7EB" stroke-width="1.5"/>
+
+  <!-- RIGHT side -->
+  <text x="404" y="98" font-size="12.5" font-weight="700" fill="#15803D">ĐÚNG — open nến ĐẦU chuỗi cùng màu</text>
+  <line x1="404" y1="128" x2="710" y2="128" stroke="#16A34A" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="560" y="122" font-size="9.5" font-weight="700" fill="#15803D">CISD level đúng (bảo thủ hơn)</text>
+  <rect x="430" y="128" width="2" height="52" fill="#DC2626"/><rect x="422" y="128" width="14" height="44" fill="#DC2626" rx="1"/>
+  <text x="418" y="196" font-size="9" fill="#B91C1C">nến đầu</text>
+  <!-- doji ignored -->
+  <rect x="466" y="150" width="2" height="34" fill="#6B7280"/><rect x="458" y="162" width="14" height="8" fill="#9CA3AF" rx="1"/>
+  <text x="452" y="200" font-size="8.5" fill="#6B7280">doji → bỏ qua</text>
+  <rect x="502" y="168" width="2" height="60" fill="#DC2626"/><rect x="494" y="172" width="14" height="48" fill="#DC2626" rx="1"/>
+  <rect x="538" y="216" width="2" height="70" fill="#DC2626"/><rect x="530" y="222" width="14" height="56" fill="#DC2626" rx="1"/>
+  <rect x="574" y="270" width="2" height="72" fill="#DC2626"/><rect x="566" y="276" width="14" height="58" fill="#DC2626" rx="1"/>
+  <circle cx="575" cy="344" r="7" fill="none" stroke="#B45309" stroke-width="2.2"/>
+  <text x="470" y="366" font-size="9.5" fill="#B45309">sweep cực trị</text>
+  <!-- green close through -->
+  <rect x="612" y="118" width="2" height="240" fill="#16A34A"/><rect x="604" y="132" width="14" height="210" fill="#16A34A" rx="1"/>
+  <text x="600" y="380" font-size="9.5" font-weight="700" fill="#15803D">thân đóng QUA level (wick không tính)</text>
+
+  <text x="40" y="424" font-size="10.5" fill="#6B7280">Nghi ngờ giữa hai cách đếm → chọn level xa hơn (bảo thủ) hoặc chờ MSS xác nhận.</text>
+</svg>

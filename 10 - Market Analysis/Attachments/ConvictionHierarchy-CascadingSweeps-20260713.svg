@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" font-family="Segoe UI, Arial, sans-serif">
+<rect x="0" y="0" width="900" height="520" rx="12" fill="#191b1f"/>
+<defs>
+<marker id="ch-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#fa5252" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ch-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#40c057" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<text x="28" y="30" font-size="16" fill="#e6e8ea" font-weight="bold">Cascading sweep: cac tang fractal bi quet LAN LUOT truoc khi dao chieu that</text>
+<text x="28" y="48" font-size="10.5" fill="#9aa0a6">Conviction tang dan theo tang bi quet - internal M1 sweep don doc KHONG phai ly do dao chieu</text>
+
+<!-- price path descending through cascading pools -->
+<rect x="24" y="64" width="852" height="360" rx="6" fill="#202329" stroke="#2a2d33"/>
+
+<!-- Tier lines from top (weak/internal) to bottom (strong/HTF) as price falls into discount then reverses -->
+<line x1="60" y1="120" x2="820" y2="120" stroke="#9aa0a6" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="64" y="114" font-size="9.5" fill="#9aa0a6">Tang 1 (M1 internal EQL - vai gia tri thap nhat) - bi quet luc 09:41</text>
+
+<line x1="60" y1="180" x2="820" y2="180" stroke="#9aa0a6" stroke-width="1.1" stroke-dasharray="4 3"/>
+<text x="64" y="174" font-size="9.5" fill="#9aa0a6">Tang 2 (M5 internal swing low) - bi quet luc 09:52</text>
+
+<line x1="60" y1="240" x2="820" y2="240" stroke="#e8b339" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="64" y="234" font-size="9.5" fill="#e8b339">Tang 3 (M15 swing low, gan CE cua H1 FVG) - bi quet luc 10:05</text>
+
+<line x1="60" y1="300" x2="820" y2="300" stroke="#f0a500" stroke-width="1.6"/>
+<text x="64" y="294" font-size="10" fill="#f0a500" font-weight="bold">Tang 4 (H1 FVG low - pool HTF that su) - CHUA bi quet, target sau cung</text>
+
+<!-- price line cascading down through tiers then reversing at tier 3 -->
+<polyline points="80,90 140,105 180,122 220,140 260,160 300,178 340,196 380,215 420,232 460,238" fill="none" stroke="#fa5252" stroke-width="2.2"/>
+<circle cx="140" cy="120" r="4" fill="#e6e8ea"/>
+<circle cx="300" cy="180" r="4" fill="#e6e8ea"/>
+<circle cx="460" cy="238" r="5" fill="#f0a500"/>
+<polyline points="460,238 500,210 540,180 580,150 620,124 660,104" fill="none" stroke="#40c057" stroke-width="2.6" marker-end="url(#ch-g)"/>
+
+<text x="130" y="106" font-size="9" fill="#e6e8ea">quet tang 1</text>
+<text x="290" y="166" font-size="9" fill="#e6e8ea">quet tang 2</text>
+<text x="420" y="226" font-size="9.5" fill="#f0a500" font-weight="bold">quet tang 3 + displacement + MSS = DAO CHIEU THAT</text>
+
+<rect x="500" y="80" width="330" height="130" rx="5" fill="#20262b" stroke="#2a2d33"/>
+<text x="514" y="102" font-size="11" fill="#e6e8ea" font-weight="bold">Vi sao dao chieu xay ra o TANG 3, khong phai tang 1</text>
+<text x="514" y="122" font-size="9.5" fill="#e6e8ea">Tang 1-2 chi la stop nho, khong du "nhien lieu"</text>
+<text x="514" y="138" font-size="9.5" fill="#e6e8ea">cho mot cu day gia nguoc dong that su.</text>
+<text x="514" y="154" font-size="9.5" fill="#e6e8ea">Tang 3 trung CE cua H1 FVG (POI HTF) - noi</text>
+<text x="514" y="170" font-size="9.5" fill="#e6e8ea">smart money da co san vi the cho tu truoc.</text>
+<text x="514" y="190" font-size="9.5" fill="#fa5252" font-weight="bold">Vao lenh o tang 1 hoac 2 = vao som, bi cuon tiep.</text>
+
+<rect x="24" y="440" width="852" height="66" rx="6" fill="#20262b" stroke="#2a2d33"/>
+<text x="450" y="462" font-size="11" fill="#e6e8ea" text-anchor="middle" font-weight="bold">Quy tac: cang nhieu tang internal bi quet LIEN TIEP ma khong dao, cang phai nghi ngo tang hien tai cung se bi xuyen</text>
+<text x="450" y="482" font-size="10" fill="#9aa0a6" text-anchor="middle">Cho toi khi ket hop dung POI HTF (CE/FVG/OB) - do la luc conviction du cao de vao, khong phai tai ban than cu sweep don le</text>
+</svg>

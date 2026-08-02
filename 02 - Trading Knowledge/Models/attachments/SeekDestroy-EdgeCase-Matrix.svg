@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Ma trận 8 edge case — Seek and Destroy Friday</text>
+<rect x="60" y="100" width="196" height="130" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+<circle cx="88" cy="130" r="14" fill="none" stroke="#f97316" stroke-width="2"/>
+<text x="158" y="170" font-size="13" font-weight="700" fill="#f97316" text-anchor="middle">① Chỉ sweep 1 phía</text>
+<rect x="280" y="100" width="196" height="130" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+<circle cx="308" cy="130" r="14" fill="none" stroke="#a855f7" stroke-width="2"/>
+<text x="378" y="170" font-size="13" font-weight="700" fill="#a855f7" text-anchor="middle">② FOMC giữa tuần</text>
+<rect x="500" y="100" width="196" height="130" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<circle cx="528" cy="130" r="14" fill="none" stroke="#3b82f6" stroke-width="2"/>
+<text x="598" y="170" font-size="13" font-weight="700" fill="#3b82f6" text-anchor="middle">③ Không có FVG hồi</text>
+<rect x="720" y="100" width="196" height="130" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+<circle cx="748" cy="130" r="14" fill="none" stroke="#eab308" stroke-width="2"/>
+<text x="818" y="170" font-size="13" font-weight="700" fill="#eab308" text-anchor="middle">④ Tin ra ngoài giờ</text>
+<rect x="60" y="260" width="196" height="130" rx="10" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+<circle cx="88" cy="290" r="14" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<text x="158" y="330" font-size="13" font-weight="700" fill="#94a3b8" text-anchor="middle">⑤ Weekly bias mù mờ</text>
+<rect x="280" y="260" width="196" height="130" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<circle cx="308" cy="290" r="14" fill="none" stroke="#f87171" stroke-width="2"/>
+<text x="378" y="330" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">⑥ Double sweep 1 phía</text>
+<rect x="500" y="260" width="196" height="130" rx="10" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+<circle cx="528" cy="290" r="14" fill="none" stroke="#ec4899" stroke-width="2"/>
+<text x="598" y="330" font-size="13" font-weight="700" fill="#ec4899" text-anchor="middle">⑦ NFP trùng OPEX</text>
+<rect x="720" y="260" width="196" height="130" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<circle cx="748" cy="290" r="14" fill="none" stroke="#4ade80" stroke-width="2"/>
+<text x="818" y="330" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">⑧ Trùng thứ Sáu PT</text>
+<rect x="60" y="440" width="836" height="110" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="80" y="466" font-size="12" fill="#e5e7eb" text-anchor="start">8 tình huống trên đại diện cho các chỗ mô hình "trông đúng" nhưng cơ chế thật khác biệt —</text>
+<text x="80" y="488" font-size="12" fill="#e5e7eb" text-anchor="start">xem chi tiết dấu hiệu → cơ chế → hành động đúng → bài học ở mục Chuyên sâu tương ứng trong bài.</text>
+<text x="80" y="510" font-size="12" fill="#94a3b8" text-anchor="start">Nguyên tắc chung: khi nghi ngờ bất kỳ ô nào ở trên xảy ra, hạ kỳ vọng và ưu tiên đứng ngoài.</text>
+</svg>

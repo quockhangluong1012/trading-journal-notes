@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Tuần chuyển DST — swing tham chiếu của MSS "nhảy" 1 giờ qua đêm</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Broker server GMT+2 chuyển sang GMT+3 — nến D1/H4 tái vẽ ranh giới session</text>
+
+  <line x1="40" y1="400" x2="1240" y2="400" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- Before DST -->
+  <rect x="60" y="90" width="280" height="34" rx="6" fill="#4a90d9" opacity="0.18" stroke="#4a90d9"/>
+  <text x="78" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#4a90d9">Trước DST — server GMT+2, NY AM = 16:30-19:00</text>
+
+  <g>
+    <line x1="100" y1="180" x2="100" y2="260" stroke="#787b86" stroke-width="1"/>
+    <rect x="92" y="190" width="16" height="60" rx="1" fill="#787b86"/>
+    <line x1="140" y1="200" x2="140" y2="280" stroke="#787b86" stroke-width="1"/>
+    <rect x="132" y="210" width="16" height="60" rx="1" fill="#787b86"/>
+  </g>
+  <line x1="180" y1="220" x2="180" y2="300" stroke="#26a69a" stroke-width="1"/>
+  <rect x="172" y="230" width="16" height="60" rx="1" fill="#26a69a"/>
+  <line x1="60" y1="290" x2="600" y2="290" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="220" y="285" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">Swing high H4 đóng 16:30 server</text>
+
+  <text x="60" y="345" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">H4 candle boundary: 14:30/18:30/22:30 server</text>
+  <text x="60" y="368" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">→ swing high nằm ĐÚNG giữa NY AM kill zone</text>
+
+  <!-- After DST -->
+  <rect x="700" y="90" width="280" height="34" rx="6" fill="#ff9800" opacity="0.18" stroke="#ff9800"/>
+  <text x="718" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff9800">Sau DST — server GMT+3, NY AM lệch sang khung khác</text>
+
+  <g>
+    <line x1="740" y1="180" x2="740" y2="260" stroke="#787b86" stroke-width="1"/>
+    <rect x="732" y="190" width="16" height="60" rx="1" fill="#787b86"/>
+    <line x1="780" y1="200" x2="780" y2="280" stroke="#787b86" stroke-width="1"/>
+    <rect x="772" y="210" width="16" height="60" rx="1" fill="#787b86"/>
+  </g>
+  <line x1="820" y1="220" x2="820" y2="300" stroke="#26a69a" stroke-width="1"/>
+  <rect x="812" y="230" width="16" height="60" rx="1" fill="#26a69a"/>
+  <line x1="700" y1="330" x2="1240" y2="330" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="860" y="325" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">Cùng swing, H4 boundary đóng 15:30 server</text>
+
+  <text x="700" y="345" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Nến H4 giờ gộp thêm 1 giờ dữ liệu khác</text>
+  <text x="700" y="368" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">→ giá trị High/Low của "swing cũ" đổi 3-6 pip</text>
+
+  <line x1="640" y1="60" x2="640" y2="400" stroke="#2a2e39" stroke-width="1"/>
+
+  <rect x="60" y="440" width="1160" height="230" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="80" y="468" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#f2c94c">Hệ quả thực chiến trong tuần chuyển DST (Mỹ: tháng 3 &amp; tháng 11)</text>
+  <text x="80" y="496" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">1. Level MSS đang theo dõi từ tuần trước lệch giờ đóng nến → mức "lower-high" không còn là mức thật.</text>
+  <text x="80" y="520" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">2. Indicator/EA tính kill zone theo giờ cố định (ví dụ 8:30-11:00 server) sẽ lệch 1 giờ so với NY AM thật.</text>
+  <text x="80" y="544" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">3. MSS "trong kill zone" theo đồng hồ server có thể thực ra đã xảy ra ngoài kill zone thật — hoặc ngược lại.</text>
+  <text x="80" y="576" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Rule đo được: 5 ngày giao dịch quanh mỗi lần chuyển DST (Mỹ và EU không đổi cùng ngày),</text>
+  <text x="80" y="598" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">verify lại giờ kill zone bằng đồng hồ NY thật, không dùng label cố định trên chart.</text>
+  <text x="80" y="628" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Journal field: `dst_transition_week` (Yes/No) — tách riêng nhóm này khi tính win-rate theo time window,</text>
+  <text x="80" y="650" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">vì swing reference và kill zone label đều kém tin cậy hơn tuần bình thường trong 5-7 ngày này.</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Minh họa broker GMT+2/GMT+3 quanh DST — mức lệch cụ thể phụ thuộc từng broker</text>
+</svg>

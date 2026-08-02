@@ -2,14 +2,14 @@
 type: market-analysis
 status: methodology
 date: 2026-07-19
-symbol: "chưa xác định — ảnh chart gốc không nhãn symbol; vùng giá 1.27–1.40 trong giai đoạn 08/2013–05/2014 gợi ý khả năng cao là EURUSD lịch sử, nhưng CẦN Khang xác nhận trước khi dùng số liệu này cho bất kỳ kết luận backtest nào"
-timeframe: "chưa xác định — ảnh hiển thị nhiều tháng trên một màn hình, nhiều khả năng D1, cần Khang xác nhận"
+symbol: "chưa xác định — ảnh chart gốc không nhãn symbol; vùng giá 1.27–1.40 trong giai đoạn 08/2013–05/2014 gợi ý khả năng cao là EURUSD lịch sử, nhưng CẦN  xác nhận trước khi dùng số liệu này cho bất kỳ kết luận backtest nào"
+timeframe: "chưa xác định — ảnh hiển thị nhiều tháng trên một màn hình, nhiều khả năng D1, cần  xác nhận"
 session: không rõ (ảnh không nhãn phiên/giờ)
-htf_bias: "bullish trong leg Feb'14 → May'14 (leg đang active, đây là leg Khang đang phân tích) → hiện đang trong nhịp retrace giảm, giá vừa cắt xuống dưới CE của leg này; bối cảnh lớn hơn từ Nov'13 vẫn là một chuỗi higher-lows liên tục cho tới khi Feb'14 low bị phá thật"
+htf_bias: "bullish trong leg Feb'14 → May'14 (leg đang active, đây là leg  đang phân tích) → hiện đang trong nhịp retrace giảm, giá vừa cắt xuống dưới CE của leg này; bối cảnh lớn hơn từ Nov'13 vẫn là một chuỗi higher-lows liên tục cho tới khi Feb'14 low bị phá thật"
 setup: "Không phải một setup entry — đây là methodology note trả lời câu hỏi: giữa nhiều đáy cạnh tranh (Nov'13 ~1.330 và Feb'14 1.34792), đáy nào là Dealing Range Low hợp lệ cho leg hiện tại, và đáy còn lại đóng vai trò gì (draw on liquidity hay chỉ là nhiễu)"
 in_trade: false
-draw_on_liquidity: "Ngắn hạn/hiện tại: SSL tại Feb'14 low 1.34792 (đáy Dealing Range đang dùng, chưa bị phá). Có điều kiện, nếu Feb'14 bị phá bởi một MSS giảm thật: draw kế tiếp hướng xuống — cần kiểm tra trước xem có pool nào nằm gần hơn giữa Feb'14 và Nov'13 hay không, rồi mới coi Nov'13 low (~1.330, ước lượng từ ảnh, cần Khang xác nhận giá chính xác) là target xa hơn."
-key_poi: "CE (Equilibrium) của Dealing Range Feb'14–May'14 ≈ 1.37348 (tính từ (1.34792+1.39904)/2). Giá hiện tại theo đường giá trên platform ~1.37271, tức vừa lọt vào discount khoảng 7–8 pip. Chưa xác định được PD array cụ thể (FVG/OB) tại vùng này từ ảnh gốc — cần Khang bổ sung."
+draw_on_liquidity: "Ngắn hạn/hiện tại: SSL tại Feb'14 low 1.34792 (đáy Dealing Range đang dùng, chưa bị phá). Có điều kiện, nếu Feb'14 bị phá bởi một MSS giảm thật: draw kế tiếp hướng xuống — cần kiểm tra trước xem có pool nào nằm gần hơn giữa Feb'14 và Nov'13 hay không, rồi mới coi Nov'13 low (~1.330, ước lượng từ ảnh, cần  xác nhận giá chính xác) là target xa hơn."
+key_poi: "CE (Equilibrium) của Dealing Range Feb'14–May'14 ≈ 1.37348 (tính từ (1.34792+1.39904)/2). Giá hiện tại theo đường giá trên platform ~1.37271, tức vừa lọt vào discount khoảng 7–8 pip. Chưa xác định được PD array cụ thể (FVG/OB) tại vùng này từ ảnh gốc — cần  bổ sung."
 invalidation: "Đóng nến thân (không chỉ wick) dưới Feb'14 low 1.34792 kèm Market Structure Shift giảm trên khung phân tích — lúc đó Dealing Range hiện tại mới thực sự hết hiệu lực và cần vẽ lại, đồng thời Nov'13 low mới chính thức trở thành draw on liquidity chính thay vì chỉ là một pool dự phòng."
 topic: "Khung quyết định 3 bước để chọn đúng Dealing Range Low khi có nhiều đáy cạnh tranh trong một chuỗi higher-lows; phân biệt đáy làm range-anchor hiện tại (MSS origin của leg đang active) với đáy chỉ là draw-on-liquidity ở degree cao hơn (locked swing); áp dụng cụ thể vào case Nov'13 vs Feb'14; tính lại Premium/Discount/CE cho leg đang active và xác định vị trí giá hiện tại"
 tags:
@@ -27,7 +27,7 @@ tags:
 # Chọn Dealing Range Low giữa nhiều đáy cạnh tranh — Nov'13 vs Feb'14 — 2026-07-19
 
 > [!info] Trạng thái
-> **METHODOLOGY — không vào lệnh.** Note này tổng hợp toàn bộ buổi phân tích một chart lịch sử (không nhãn symbol/khung thời gian) mà Khang gửi trong chat, xoay quanh hai câu hỏi liên tiếp: *(1) Dealing Range đánh dấu trên chart (đỉnh 1.39904, đáy 1.34792) đã đúng chưa?* và *(2) giữa hai đáy cạnh tranh — SSL tại Nov'13 (~1.330) và swing low Feb'14 (1.34792) — nên chọn đáy nào làm Dealing Range Low, và đáy còn lại có phải target kế tiếp không?* Khung lý thuyết nền đã có sẵn trong vault tại [[12 - Dealing Range]] (đặc biệt mục 9 "Lỗi thường gặp" và mục A2 "Nested ranges") và [[16 - Internal & External Range Liquidity (IRL & ERL)]] (mục "tính phân dạng") — note này **áp dụng trực tiếp** hai bài đó vào case cụ thể, đồng thời **hệ thống hóa thành một khung quyết định 3 bước** mà vault chưa có ở dạng thao tác được (actionable), để Khang tái sử dụng cho mọi chart sau này có nhiều đáy/đỉnh cạnh tranh.
+> **METHODOLOGY — không vào lệnh.** Note này tổng hợp toàn bộ buổi phân tích một chart lịch sử (không nhãn symbol/khung thời gian) mà  gửi trong chat, xoay quanh hai câu hỏi liên tiếp: *(1) Dealing Range đánh dấu trên chart (đỉnh 1.39904, đáy 1.34792) đã đúng chưa?* và *(2) giữa hai đáy cạnh tranh — SSL tại Nov'13 (~1.330) và swing low Feb'14 (1.34792) — nên chọn đáy nào làm Dealing Range Low, và đáy còn lại có phải target kế tiếp không?* Khung lý thuyết nền đã có sẵn trong vault tại [[12 - Dealing Range]] (đặc biệt mục 9 "Lỗi thường gặp" và mục A2 "Nested ranges") và [[16 - Internal & External Range Liquidity (IRL & ERL)]] (mục "tính phân dạng") — note này **áp dụng trực tiếp** hai bài đó vào case cụ thể, đồng thời **hệ thống hóa thành một khung quyết định 3 bước** mà vault chưa có ở dạng thao tác được (actionable), để  tái sử dụng cho mọi chart sau này có nhiều đáy/đỉnh cạnh tranh.
 
 ![[Pasted image 20260719145010.png]]
 
@@ -35,9 +35,9 @@ tags:
 
 ## 0. Tóm tắt tình huống
 
-Chart Khang gửi cho thấy một chuỗi diễn biến giá trải dài khoảng 9 tháng (Aug 2013 → May 2014), với các mốc giá đã đọc được: đỉnh cao nhất toàn chart **1.39904** (chạm hai lần, khoảng tháng 3 và tháng 5/'14), một đáy sâu **1.34792** khoảng tháng 1–2/'14 ngay trước cú displacement tăng cực mạnh lên đỉnh trên, và một đường giá hiện tại quanh **1.37271**. Bên trái, khoảng tháng 11/'13, có một đáy sâu hơn (~1.330, ước lượng bằng mắt từ chart) mà giá chưa từng quay lại kiểm tra.
+Chart  gửi cho thấy một chuỗi diễn biến giá trải dài khoảng 9 tháng (Aug 2013 → May 2014), với các mốc giá đã đọc được: đỉnh cao nhất toàn chart **1.39904** (chạm hai lần, khoảng tháng 3 và tháng 5/'14), một đáy sâu **1.34792** khoảng tháng 1–2/'14 ngay trước cú displacement tăng cực mạnh lên đỉnh trên, và một đường giá hiện tại quanh **1.37271**. Bên trái, khoảng tháng 11/'13, có một đáy sâu hơn (~1.330, ước lượng bằng mắt từ chart) mà giá chưa từng quay lại kiểm tra.
 
-Khang đã tự vẽ Dealing Range với đỉnh = 1.39904, đáy = 1.34792, và đặt câu hỏi liệu range này đúng chưa, sau đó hỏi tiếp: nên chọn đáy Feb'14 hay đáy Nov'13 làm Dealing Range Low, và nếu Feb'14 bị phá thì đáy Nov'13 có tự động là target kế tiếp không.
+ đã tự vẽ Dealing Range với đỉnh = 1.39904, đáy = 1.34792, và đặt câu hỏi liệu range này đúng chưa, sau đó hỏi tiếp: nên chọn đáy Feb'14 hay đáy Nov'13 làm Dealing Range Low, và nếu Feb'14 bị phá thì đáy Nov'13 có tự động là target kế tiếp không.
 
 **Kết luận ngắn gọn (chi tiết ở các mục dưới):** Dealing Range đánh dấu (1.34792 – 1.39904) là **đúng** cho leg hiện tại. Đáy Nov'13 **không phải** ứng viên cho range-anchor — nó là một pool thanh khoản ở degree cao hơn, hiện đang bị "khóa" phía sau một higher-low (Dec'13) chưa bị phá. Nó **có thể** trở thành draw on liquidity nếu Feb'14 bị phá thật, nhưng **không tự động** là target ngay lập tức — cần kiểm tra xem có pool nào gần hơn chưa được dọn giữa hai mốc.
 
@@ -56,7 +56,7 @@ Khang đã tự vẽ Dealing Range với đỉnh = 1.39904, đáy = 1.34792, và
 | Cuối Nov '13 | Rally lên đỉnh cao hơn Oct | Higher-high, xác nhận xu hướng tăng tiếp diễn |
 | **~Dec '13** | **Đáy ~1.352** (ước lượng) — **cao hơn đáy Nov'13** | Higher-low — đây là mắt xích quan trọng nhất của toàn bộ phân tích |
 | Đầu '14 | Rally lên đỉnh cao hơn nữa | Higher-high tiếp theo |
-| **~Feb '14** | **Đáy 1.34792** (giá đã xác nhận từ đường kẻ Khang vẽ) | Higher-low cuối cùng — điểm khởi phát displacement lớn |
+| **~Feb '14** | **Đáy 1.34792** (giá đã xác nhận từ đường kẻ  vẽ) | Higher-low cuối cùng — điểm khởi phát displacement lớn |
 | Mar – May '14 | Displacement tăng rất mạnh, gần như một mạch, đỉnh **1.39904** (chạm 2 lần) | Xác lập DR High hiện tại |
 | Hiện tại | Sell-off mạnh, giá về **~1.3721–1.37271** | Đang retrace của leg Feb'14→May'14, vừa cắt xuống CE |
 
@@ -73,7 +73,7 @@ Khang đã tự vẽ Dealing Range với đỉnh = 1.39904, đáy = 1.34792, và
 - **Tính thời sự:** cả hai đầu **chưa bị phá** — range vẫn còn hiệu lực, chưa cần re-map theo tiêu chí ở [[37 - Re-mapping Dealing Range sau Displacement]].
 - **Vị trí giá hiện tại:** dưới CE ~7–8 pip → vừa lọt discount, xem mục 4.
 
-**Kết luận:** Dealing Range Khang vẽ là đúng. Vấn đề duy nhất cần làm rõ — và cũng là lý do Khang đặt câu hỏi tiếp theo — là **tại sao không dùng đáy Nov'13 sâu hơn** để mở rộng range. Mục 3 trả lời trực tiếp câu này bằng một khung quyết định tái sử dụng được.
+**Kết luận:** Dealing Range  vẽ là đúng. Vấn đề duy nhất cần làm rõ — và cũng là lý do  đặt câu hỏi tiếp theo — là **tại sao không dùng đáy Nov'13 sâu hơn** để mở rộng range. Mục 3 trả lời trực tiếp câu này bằng một khung quyết định tái sử dụng được.
 
 ---
 
@@ -114,11 +114,11 @@ Giá hiện tại nằm **ngay dưới CE khoảng 7–8 pip** — tức vừa c
 
 ## 5. Nov'13 có phải target kế tiếp không? — Đừng nhảy cóc
 
-Đây là điểm Khang hỏi đúng và cần một câu trả lời có sắc thái, không phải "có/không" đơn giản. Theo nguyên tắc "external → internal → external" trong [[16 - Internal & External Range Liquidity (IRL & ERL)]]: draw on liquidity luôn nhắm vào **pool GẦN NHẤT chưa được dọn theo hướng di chuyển**, không nhảy thẳng tới pool xa nhất/sâu nhất nhìn thấy trên chart.
+Đây là điểm  hỏi đúng và cần một câu trả lời có sắc thái, không phải "có/không" đơn giản. Theo nguyên tắc "external → internal → external" trong [[16 - Internal & External Range Liquidity (IRL & ERL)]]: draw on liquidity luôn nhắm vào **pool GẦN NHẤT chưa được dọn theo hướng di chuyển**, không nhảy thẳng tới pool xa nhất/sâu nhất nhìn thấy trên chart.
 
 Áp dụng vào case này: nếu Feb'14 (1.34792) bị phá bởi một MSS giảm thật, câu hỏi bắt buộc phải hỏi trước khi kết luận "target là Nov'13" là: **giữa 1.34792 và ~1.330 có còn resting liquidity nào khác không** — ví dụ vùng tích lũy cuối Aug'13 (nếu có equal-lows quanh 1.32–1.34) hoặc bất kỳ đáy nhỏ nào khác chưa được nhắc tới trong buổi phân tích này. Nếu có, đó mới là draw ưu tiên trước; Nov'13 chỉ trở thành target khi các pool gần hơn đã bị dọn hoặc không tồn tại.
 
-> [!question] Câu hỏi Khang cần tự trả lời trên chart thật
+> [!question] Câu hỏi  cần tự trả lời trên chart thật
 > Nhìn kỹ vùng giá giữa 1.34792 và 1.330: có cụm equal-lows hay đáy nhỏ nào khác không? Nếu không, Nov'13 là draw hợp lý kế tiếp. Nếu có, pool đó mới là target gần nhất — đừng bỏ qua nó chỉ vì Nov'13 "nhìn nổi bật hơn" trên chart tổng quan.
 
 ---
@@ -133,7 +133,7 @@ Theo đúng chuỗi tư duy chuẩn của dự án (HTF bias → dealing range �
 | **Dealing Range** | Feb'14 low (1.34792) – May'14 high (1.39904) — xác nhận đúng bằng khung quyết định 3 bước ở mục 3 |
 | **Liquidity** | External hiện tại: BSL tại 1.39904 (đã test 2 lần, dày), SSL tại 1.34792 (chưa bị phá). Pool degree cao hơn: SSL Nov'13 ~1.330, hiện chưa liên quan tới leg đang active |
 | **MSS Confirmation** | Chưa có — giá mới cắt CE, chưa xác nhận MSS giảm trên khung entry. Cần theo dõi thêm |
-| **PD Array Entry** | Chưa xác định được FVG/OB cụ thể trong discount từ ảnh gốc — cần Khang bổ sung giá/ảnh chi tiết hơn nếu muốn tiến tới một setup thật |
+| **PD Array Entry** | Chưa xác định được FVG/OB cụ thể trong discount từ ảnh gốc — cần  bổ sung giá/ảnh chi tiết hơn nếu muốn tiến tới một setup thật |
 | **Target** | Nếu tiếp tục giảm và phá Feb'14 với MSS thật: kiểm tra pool gần hơn trước, sau đó mới tới Nov'13 (~1.330, cần xác nhận giá) |
 
 ---
@@ -174,4 +174,4 @@ Theo đúng chuỗi tư duy chuẩn của dự án (HTF bias → dealing range �
 - Case liên quan trong vault: [[2026-07-17 - Re-map Dealing Range Low sau Sweep & Displacement (điều kiện remap, checklist)]]
 
 ---
-*Ghi chú: date = ngày phân tích (VN, UTC+7). Note phương pháp (methodology) tổng hợp từ ảnh chart Khang gửi trong chat (paste trực tiếp, không phải file upload) — không log backtest vì không vào lệnh, ảnh gốc không nhãn symbol/giá đầy đủ, và các giá trị Nov'13/Dec'13 chỉ là ước lượng bằng mắt. 2 sơ đồ SVG minh họa nguyên lý và tương quan cấu trúc đã thảo luận, không phải chart thật — khi Khang bổ sung ảnh gốc rõ nét + giá chính xác, cập nhật lại các câu hỏi ở mục 8.*
+*Ghi chú: date = ngày phân tích (VN, UTC+7). Note phương pháp (methodology) tổng hợp từ ảnh chart  gửi trong chat (paste trực tiếp, không phải file upload) — không log backtest vì không vào lệnh, ảnh gốc không nhãn symbol/giá đầy đủ, và các giá trị Nov'13/Dec'13 chỉ là ước lượng bằng mắt. 2 sơ đồ SVG minh họa nguyên lý và tương quan cấu trúc đã thảo luận, không phải chart thật — khi  bổ sung ảnh gốc rõ nét + giá chính xác, cập nhật lại các câu hỏi ở mục 8.*

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="460" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Chuỗi hình thành Mayne Model — 6 bước</text>
+
+<defs>
+<marker id="arrBlueF" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/>
+</marker>
+</defs>
+
+<!-- Step boxes row 1 (1-3) -->
+<rect x="30" y="70" width="270" height="120" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+<text x="165" y="98" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">1. HTF Structure + Bias</text>
+<text x="165" y="122" font-size="12" fill="#94a3b8" text-anchor="middle">D1/H4: HH-HL hay LH-LL</text>
+<text x="165" y="142" font-size="12" fill="#94a3b8" text-anchor="middle">xác định DOL (BSL/SSL)</text>
+<text x="165" y="170" font-size="12" font-weight="700" fill="#4ade80" text-anchor="middle">Kết quả: hướng trade</text>
+
+<rect x="345" y="70" width="270" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+<text x="480" y="98" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">2. Chờ Pullback</text>
+<text x="480" y="122" font-size="12" fill="#94a3b8" text-anchor="middle">Giá hồi về discount (long)</text>
+<text x="480" y="142" font-size="12" fill="#94a3b8" text-anchor="middle">/ premium (short)</text>
+<text x="480" y="170" font-size="12" font-weight="700" fill="#4ade80" text-anchor="middle">Kết quả: đúng nửa range</text>
+
+<rect x="660" y="70" width="270" height="120" rx="10" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+<text x="795" y="98" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">3. POI</text>
+<text x="795" y="122" font-size="12" fill="#94a3b8" text-anchor="middle">Vùng hồi chạm OB/FVG/</text>
+<text x="795" y="142" font-size="12" fill="#94a3b8" text-anchor="middle">breaker thuận cấu trúc</text>
+<text x="795" y="170" font-size="12" font-weight="700" fill="#4ade80" text-anchor="middle">Kết quả: nơi phản ứng</text>
+
+<line x1="300" y1="130" x2="341" y2="130" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrBlueF)"/>
+<line x1="615" y1="130" x2="656" y2="130" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrBlueF)"/>
+
+<!-- down arrow to row 2 -->
+<line x1="795" y1="190" x2="795" y2="215" stroke="#3b82f6" stroke-width="2"/>
+<line x1="795" y1="215" x2="795" y2="215" stroke="#3b82f6" stroke-width="2"/>
+<path d="M795,215 L165,215" stroke="#3b82f6" stroke-width="2" fill="none"/>
+<line x1="165" y1="215" x2="165" y2="235" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrBlueF)"/>
+
+<!-- Step boxes row 2 (4-6) -->
+<rect x="30" y="245" width="270" height="120" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+<text x="165" y="273" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">4. OTE Fib</text>
+<text x="165" y="297" font-size="12" fill="#94a3b8" text-anchor="middle">Fib trên nhịp đẩy gần nhất</text>
+<text x="165" y="317" font-size="12" fill="#94a3b8" text-anchor="middle">62–79% chồng POI</text>
+<text x="165" y="345" font-size="12" font-weight="700" fill="#4ade80" text-anchor="middle">Kết quả: giá vào cụ thể</text>
+
+<rect x="345" y="245" width="270" height="120" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+<text x="480" y="273" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">5. Sweep + LTF Confirm</text>
+<text x="480" y="297" font-size="12" fill="#94a3b8" text-anchor="middle">Quét STL/STH tại OTE</text>
+<text x="480" y="317" font-size="12" fill="#94a3b8" text-anchor="middle">rồi MSS/breaker khung nhỏ</text>
+<text x="480" y="345" font-size="12" font-weight="700" fill="#4ade80" text-anchor="middle">Kết quả: lọc thời điểm</text>
+
+<rect x="660" y="245" width="270" height="120" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+<text x="795" y="273" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">6. Entry / Stop / Target</text>
+<text x="795" y="297" font-size="12" fill="#94a3b8" text-anchor="middle">Entry sau confirm</text>
+<text x="795" y="317" font-size="12" fill="#94a3b8" text-anchor="middle">Stop ngoài sweep, target DOL</text>
+<text x="795" y="345" font-size="12" font-weight="700" fill="#4ade80" text-anchor="middle">Kết quả: vào lệnh</text>
+
+<line x1="300" y1="305" x2="341" y2="305" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrBlueF)"/>
+<line x1="615" y1="305" x2="656" y2="305" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrBlueF)"/>
+
+<text x="480" y="410" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Bỏ bước 1–2 = ngược dòng/premium. Bỏ bước 4 = POI rộng, stop xa. Bỏ bước 5 = bắt dao rơi.</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="560" rx="12" fill="#0d1117"/>
+  <text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Venom vs Silver Bullet — cửa sổ &amp; pool bị quét</text>
+  <text x="480" y="58" font-size="12" fill="#94a3b8" text-anchor="middle">Sơ đồ khái niệm đối chiếu hai model, không phải chart giao dịch thật</text>
+
+  <!-- shared time axis 07:00-11:00 -->
+  <line x1="60" y1="480" x2="920" y2="480" stroke="#334155" stroke-width="2"/>
+  <g font-size="12" fill="#94a3b8" text-anchor="middle">
+    <text x="60" y="500">07:00</text>
+    <text x="316" y="500">09:00</text>
+    <text x="445" y="500">10:00</text>
+    <text x="573" y="500">10:30</text>
+    <text x="920" y="500">11:00</text>
+  </g>
+
+  <!-- Column left: Venom -->
+  <rect x="60" y="100" width="420" height="30" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="270" y="120" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">VENOM</text>
+
+  <rect x="316" y="150" width="129" height="45" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-dasharray="4 3" stroke-width="2"/>
+  <text x="380" y="172" font-size="12" fill="#e5e7eb" text-anchor="middle">09:30–10:30</text>
+  <text x="380" y="186" font-size="11" fill="#94a3b8" text-anchor="middle">Cutting Zone</text>
+
+  <text x="270" y="225" font-size="12.5" fill="#e5e7eb" text-anchor="middle">Pool bị quét:</text>
+  <text x="270" y="242" font-size="12" fill="#eab308" text-anchor="middle">Pre-market / Session High-Low</text>
+
+  <path d="M 360 260 l 40 20 l 40 -35" fill="none" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrO2)"/>
+  <text x="270" y="305" font-size="12" fill="#94a3b8" text-anchor="middle">Sweep session pool → displacement → FVG</text>
+
+  <!-- Column right: Silver Bullet -->
+  <rect x="480" y="100" width="400" height="30" rx="6" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+  <text x="680" y="120" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">SILVER BULLET AM</text>
+
+  <rect x="445" y="150" width="128" height="45" fill="rgba(168,85,247,0.18)" stroke="#a855f7" stroke-dasharray="4 3" stroke-width="2"/>
+  <text x="509" y="172" font-size="12" fill="#e5e7eb" text-anchor="middle">10:00–11:00</text>
+  <text x="509" y="186" font-size="11" fill="#94a3b8" text-anchor="middle">SB window</text>
+
+  <text x="680" y="225" font-size="12.5" fill="#e5e7eb" text-anchor="middle">Pool bị quét:</text>
+  <text x="680" y="242" font-size="12" fill="#eab308" text-anchor="middle">Swing high/low gần nhất (bất kỳ)</text>
+
+  <path d="M 620 260 l 40 20 l 40 -35" fill="none" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrO2)"/>
+  <text x="680" y="305" font-size="12" fill="#94a3b8" text-anchor="middle">FVG mẫu, không gắn pool session</text>
+
+  <!-- overlap zone -->
+  <rect x="445" y="150" width="128" height="45" fill="rgba(249,115,22,0.15)" stroke="none"/>
+  <line x1="445" y1="340" x2="445" y2="480" stroke="#f97316" stroke-width="1" stroke-dasharray="4 2"/>
+  <line x1="573" y1="340" x2="573" y2="480" stroke="#f97316" stroke-width="1" stroke-dasharray="4 2"/>
+  <rect x="445" y="340" width="128" height="60" fill="rgba(249,115,22,0.12)" stroke="#f97316" stroke-dasharray="4 3"/>
+  <text x="509" y="362" font-size="11.5" fill="#f97316" text-anchor="middle">Vùng dễ nhầm lẫn</text>
+  <text x="509" y="378" font-size="10.5" fill="#94a3b8" text-anchor="middle">phân biệt bằng loại pool</text>
+  <text x="509" y="391" font-size="10.5" fill="#94a3b8" text-anchor="middle">bị quét, không bằng giờ</text>
+
+  <defs>
+    <marker id="arrO2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#f97316"/>
+    </marker>
+  </defs>
+
+  <text x="480" y="440" font-size="12" fill="#94a3b8" text-anchor="middle">Quy tắc thực dụng: pool session bị quét trong 10:00–10:30 → gọi là Venom; swing lẻ → Silver Bullet.</text>
+</svg>

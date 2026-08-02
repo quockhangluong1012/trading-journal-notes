@@ -1,0 +1,47 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">"Sách vở" vs Tin tức — khi IDM và POI nén vào một nến duy nhất</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Quanh NFP/FOMC/CPI, mồi (IDM) và vùng khớp lệnh (OB) có thể bị quét trong ĐÚNG một thanh giá</text>
+
+  <!-- Panel 1: textbook -->
+  <rect x="24" y="72" width="344" height="352" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="94" font-size="13.5" font-weight="700" fill="#0D9488">① "Sách vở" — hai bước tách biệt</text>
+  <text x="36" y="110" font-size="10" fill="#6B7280">Dễ quan sát: quét IDM ở 1 nến, tới OB ở nến sau</text>
+
+  <!-- OB zone -->
+  <rect x="36" y="330" width="308" height="40" fill="#3B82F6" opacity="0.12"/>
+  <text x="40" y="326" font-size="9" font-weight="700" fill="#1D4ED8">OB thật (POI)</text>
+
+  <path d="M60,150 L100,200 L140,180 L175,230" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="175" cy="230" r="6" fill="none" stroke="#F59E0B" stroke-width="2.2"/>
+  <text x="115" y="252" font-size="9" font-weight="700" fill="#B45309">IDM bị quét (nến riêng)</text>
+
+  <path d="M175,230 L210,200 L235,225 L260,280 L290,320 L320,345" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="320" cy="345" r="6" fill="#16A34A"/>
+  <text x="230" y="300" font-size="9" fill="#166534">Giá tiến tới OB ở (các) nến sau</text>
+
+  <rect x="36" y="384" width="308" height="28" rx="6" fill="#0D9488" opacity="0.08" stroke="#0D9488" stroke-width="1"/>
+  <text x="44" y="402" font-size="9.5" fill="#0F766E">Trình tự rõ ràng, dễ đọc từng bước</text>
+
+  <!-- Panel 2: news compressed -->
+  <rect x="392" y="72" width="344" height="352" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="404" y="94" font-size="13.5" font-weight="700" fill="#B91C1C">② Tin tức — nén vào một nến</text>
+  <text x="404" y="110" font-size="10" fill="#6B7280">IDM + OB + đảo chiều xảy ra trong ĐÚNG một nến</text>
+
+  <rect x="404" y="330" width="308" height="40" fill="#3B82F6" opacity="0.12"/>
+  <text x="408" y="326" font-size="9" font-weight="700" fill="#1D4ED8">OB thật (POI)</text>
+
+  <path d="M428,150 L460,190 L490,175 L515,220" fill="none" stroke="#374151" stroke-width="2"/>
+
+  <!-- ONE giant candle spanning IDM level down through OB -->
+  <rect x="560" y="130" width="4" height="230" fill="#B91C1C"/>
+  <rect x="544" y="140" width="32" height="212" fill="#B91C1C" rx="2"/>
+  <text x="590" y="150" font-size="9.5" font-weight="700" fill="#B91C1C">1 nến duy nhất:</text>
+  <text x="590" y="164" font-size="9" fill="#B91C1C">• quét IDM</text>
+  <text x="590" y="177" font-size="9" fill="#B91C1C">• xuyên vào OB</text>
+  <text x="590" y="190" font-size="9" fill="#B91C1C">• đóng cửa rejection</text>
+  <text x="590" y="204" font-size="9" fill="#92400E" font-weight="700">→ chỉ đọc được SAU khi đóng nến</text>
+
+  <rect x="404" y="384" width="308" height="28" rx="6" fill="#B91C1C" opacity="0.06" stroke="#B91C1C" stroke-width="1"/>
+  <text x="412" y="402" font-size="9.5" fill="#B91C1C">Chờ đóng nến ổn định, đọc ngược lại toàn bộ narrative</text>
+</svg>

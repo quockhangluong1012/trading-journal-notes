@@ -39,7 +39,7 @@ tags: [weekly-summary, prop-firm-prep]
 - **Không có lệnh live nào** trong `05 - Live Trading Journal/Trades/2026/07/` (thư mục tháng 7 hoàn toàn trống) và cũng không có ngày nào trong 06/29–06/30. Lệnh gần nhất toàn vault vẫn là `Loss - 01 - Trade 2026-06-18 NDX Short` → 17 ngày không lệnh live tính đến 07-05.
 - **3 concept chuyển từ `seed` → `developing` với `updated` nằm trong tuần** (06-29→07-05): [[22 - Mitigation Block]] (`updated: 2026-07-02`), [[33 - Turtle Soup]] (`updated: 2026-07-03`), [[21 - Liquidity Void]] (`updated: 2026-07-03`). Đây là `concepts_reviewed_week: 3` ở frontmatter trên — tính theo bằng chứng frontmatter thật, không tính theo checkbox tick.
   > [!info] Lệch ngày cần lưu ý
-  > File Daily Tasks `2026-07-04` ghi các mục này là hoàn thành "hôm nay" (07-04), nhưng `updated` của [[22 - Mitigation Block]] lại là `2026-07-02` — sớm hơn 2 ngày so với ngày được tick. Không tự sửa số liệu này — chỉ nêu ra để Khang tự đối chiếu lại xem có phải tick nhầm ngày hay note chỉ được review lại (không sửa nội dung) nên `updated` không đổi.
+  > File Daily Tasks `2026-07-04` ghi các mục này là hoàn thành "hôm nay" (07-04), nhưng `updated` của [[22 - Mitigation Block]] lại là `2026-07-02` — sớm hơn 2 ngày so với ngày được tick. Không tự sửa số liệu này — chỉ nêu ra để  tự đối chiếu lại xem có phải tick nhầm ngày hay note chỉ được review lại (không sửa nội dung) nên `updated` không đổi.
 
 ## 🎯 Đối chiếu mục tiêu (theo công thức cột mốc, không dùng field `progress` ghi tay)
 
@@ -79,7 +79,7 @@ Còn **186 ngày** tới hạn tự đặt `2027-01-07`. Backtest vẫn **1/200*
 ```
 | 2026-W27 | 0 | 0 |  |  | Tuần đầu hệ thống tự động, chỉ 1/7 ngày có Daily Summary (07-03). 3 concept chuyển seed→developing (Mitigation Block, Turtle Soup, Liquidity Void). 0 backtest mới, 0 lệnh live, 12 ngày đứng yên ở 5/6 bảng Nhật ký tiến độ. |
 ```
-(Chất lượng quy trình và Kỷ luật để trống — Khang tự chấm 1–5.)
+(Chất lượng quy trình và Kỷ luật để trống —  tự chấm 1–5.)
 
 **[[Build a statistically validated backtest sample]] → Nhật ký tiến độ** — thêm dòng:
 ```

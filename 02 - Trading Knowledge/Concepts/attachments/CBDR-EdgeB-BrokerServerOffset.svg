@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+<text x="40" y="46" font-size="26" font-weight="bold" fill="#d1d4dc">Chart broker server GMT+2/+3: đo CBDR bằng nến local sai cửa sổ</text>
+<text x="40" y="70" font-size="15" fill="#787b86">Trader dùng đồng hồ nến theo server time thay vì quy đổi về NY time trước khi đo</text>
+
+<line x1="640" y1="95" x2="640" y2="660" stroke="#2a2e39" stroke-width="2"/>
+
+<rect x="55" y="100" width="220" height="30" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+<text x="165" y="120" font-size="14" fill="#ff6b6b" text-anchor="middle">✗ SAI: đo theo giờ server 21-03</text>
+<text x="60" y="150" font-size="13" fill="#787b86">Broker server GMT+3 (mùa hè), trader gõ "21:00-03:00 chart time"</text>
+
+<rect x="70" y="200" width="500" height="30" fill="#ff6b6b" opacity="0.14" stroke="#ff6b6b" stroke-dasharray="6 4"/>
+<text x="80" y="220" font-size="13" fill="#ff6b6b">Server 21:00-03:00 (GMT+3) = 14:00-20:00 GMT = 10:00-16:00 NY (EDT)</text>
+
+<text x="70" y="260" font-size="13" fill="#d1d4dc">Đây là cửa sổ NY AM + đầu NY PM — HOÀN TOÀN SAI,</text>
+<text x="70" y="280" font-size="13" fill="#d1d4dc">không phải "cuối phiên NY trước khi Á mở" (14:00-20:00 NY thật)</text>
+
+<g>
+<line x1="120" y1="330" x2="120" y2="420" stroke="#ef5350" stroke-width="1.8"/>
+<rect x="108" y="345" width="24" height="60" fill="#ef5350" rx="1"/>
+</g>
+<g>
+<line x1="170" y1="300" x2="170" y2="400" stroke="#26a69a" stroke-width="1.8"/>
+<rect x="158" y="320" width="24" height="60" fill="#26a69a" rx="1"/>
+</g>
+<g>
+<line x1="220" y1="280" x2="220" y2="380" stroke="#ef5350" stroke-width="1.8"/>
+<rect x="208" y="300" width="24" height="60" fill="#ef5350" rx="1"/>
+</g>
+<text x="90" y="450" font-size="12" fill="#ff6b6b">Range đo được: cao/thấp của NY AM (biến động mạnh)</text>
+<text x="90" y="470" font-size="12" fill="#ff6b6b">→ range rộng bất thường, SD chiếu quá xa để có ý nghĩa</text>
+
+<rect x="695" y="100" width="220" height="30" rx="6" fill="#26a69a" opacity="0.18" stroke="#26a69a"/>
+<text x="805" y="120" font-size="14" fill="#26a69a" text-anchor="middle">✓ ĐÚNG: quy đổi về NY trước</text>
+<text x="700" y="150" font-size="13" fill="#787b86">Quy đổi 14:00-20:00 NY (EDT, UTC-4) → GMT+3 server = 21:00-03:00 hè kế tiếp</text>
+
+<rect x="710" y="200" width="500" height="30" fill="#26a69a" opacity="0.14" stroke="#26a69a" stroke-dasharray="6 4"/>
+<text x="720" y="220" font-size="13" fill="#26a69a">14:00-20:00 NY (EDT) = 18:00-00:00 GMT = 21:00-03:00 server GMT+3</text>
+
+<text x="710" y="260" font-size="13" fill="#d1d4dc">Trùng ngày dương lịch nhưng PHẢI kiểm tra offset EDT/EST</text>
+<text x="710" y="280" font-size="13" fill="#d1d4dc">riêng, vì server broker và NY có thể đổi DST không cùng ngày</text>
+
+<g>
+<line x1="760" y1="380" x2="760" y2="410" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="750" y="388" width="20" height="18" fill="#26a69a" rx="1"/>
+</g>
+<g>
+<line x1="800" y1="385" x2="800" y2="415" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="790" y="392" width="20" height="18" fill="#ef5350" rx="1"/>
+</g>
+<g>
+<line x1="840" y1="382" x2="840" y2="412" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="830" y="390" width="20" height="18" fill="#26a69a" rx="1"/>
+</g>
+<text x="740" y="450" font-size="12" fill="#26a69a">Range đo được: tích lũy hẹp thật (~38 pip), đúng bản chất CBDR</text>
+
+<line x1="60" y1="510" x2="1220" y2="510" stroke="#2a2e39"/>
+<text x="60" y="538" font-size="14" fill="#f2c94c">Rule: không bao giờ gõ "14:00-20:00" trực tiếp vào chart nếu server không phải giờ NY — luôn quy đổi 2 bước.</text>
+<text x="60" y="562" font-size="14" fill="#d1d4dc">Bước 1: xác định offset server hiện tại (GMT+2 mùa đông / GMT+3 mùa hè EU broker phổ biến). Bước 2: cộng/trừ để ra cửa sổ NY thật.</text>
+<text x="60" y="586" font-size="13" fill="#787b86">Sai lầm phổ biến nhất: quên rằng offset server có thể đổi DST khác ngày với NY, làm lệch 1 giờ trong tuần chuyển giao.</text>
+</svg>

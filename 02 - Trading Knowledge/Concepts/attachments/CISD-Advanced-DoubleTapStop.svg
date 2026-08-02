@@ -1,0 +1,32 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Edge case — Chuỗi đẩy quá ngắn: CISD level sát sweep → stop bị "double-tap"</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Delivery leg 1–2 nến khiến level rất gần đáy sweep → stop siêu nhỏ, nhưng cú quét thứ HAI lấy stop trước khi đảo thật</text>
+  <rect x="24" y="70" width="712" height="374" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <line x1="120" y1="180" x2="700" y2="180" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="8 4"/>
+  <text x="470" y="174" font-size="10.5" font-weight="700" fill="#0284C7">CISD level (chuỗi đỏ chỉ 2 nến → rất gần sweep)</text>
+  <line x1="60" y1="300" x2="360" y2="300" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <text x="66" y="294" font-size="10" fill="#B45309">Sweep #1</text>
+  <line x1="60" y1="330" x2="480" y2="330" stroke="#DC2626" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="360" y="324" font-size="10" font-weight="700" fill="#B91C1C">Sweep #2 (secondary) — nơi stop chặt bị lấy</text>
+
+  <!-- short red leg -->
+  <rect x="120" y="180" width="2" height="80" fill="#DC2626"/><rect x="112" y="182" width="14" height="66" fill="#DC2626" rx="1"/>
+  <rect x="152" y="230" width="2" height="76" fill="#DC2626"/><rect x="144" y="236" width="14" height="52" fill="#DC2626" rx="1"/>
+  <circle cx="151" cy="300" r="7" fill="none" stroke="#B45309" stroke-width="2.2"/>
+
+  <!-- green closes through -> tight stop just under sweep#1 -->
+  <rect x="188" y="150" width="2" height="150" fill="#16A34A"/><rect x="180" y="164" width="14" height="120" fill="#16A34A" rx="1"/>
+  <text x="200" y="150" font-size="10" font-weight="700" fill="#15803D">CISD in — stop chặt ngay dưới sweep #1</text>
+  <text x="60" y="316" font-size="9.5" fill="#B91C1C">stop đặt ở đây (quá gần) ✗</text>
+
+  <!-- price dips again to sweep#2 taking the stop, THEN reverses -->
+  <path d="M194,200 L230,250 L270,320 L300,330" fill="none" stroke="#DC2626" stroke-width="2.2"/>
+  <circle cx="300" cy="330" r="6" fill="#DC2626"/>
+  <text x="270" y="356" font-size="9.5" font-weight="700" fill="#B91C1C">stop bị quét</text>
+  <path d="M300,330 L360,260 L440,180 L540,120 L640,104" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <text x="470" y="112" font-size="10.5" font-weight="700" fill="#15803D">... rồi mới đảo chiều thật (quá muộn cho stop chặt)</text>
+
+  <text x="40" y="424" font-size="10.5" fill="#6B7280">Cách xử lý: chuỗi đẩy quá ngắn → chờ MSS xác nhận, hoặc đặt stop dưới sweep thứ HAI/POI, không dán sát CISD level.</text>
+</svg>

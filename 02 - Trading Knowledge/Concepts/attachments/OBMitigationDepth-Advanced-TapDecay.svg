@@ -1,0 +1,53 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="obtap1" markerWidth="9" markerHeight="9" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#15803D"/></marker>
+    <marker id="obtap2" markerWidth="9" markerHeight="9" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#B45309"/></marker>
+    <marker id="obtap3" markerWidth="9" markerHeight="9" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#B91C1C"/></marker>
+  </defs>
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">OB suy yếu qua mỗi lần chạm — first tap vs re-tap decay</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Cùng một Bullish OB: lần chạm đầu nông &amp; mạnh nhất; các lần sau sâu hơn, yếu hơn, dễ vỡ thành Breaker</text>
+
+  <rect x="24" y="70" width="712" height="360" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- OB zone -->
+  <rect x="60" y="175" width="640" height="120" fill="#16A34A" opacity="0.12"/>
+  <line x1="60" y1="175" x2="700" y2="175" stroke="#15803D" stroke-width="1.2"/>
+  <text x="66" y="170" font-size="9" fill="#15803D">proximal (đỉnh OB / mép gần)</text>
+  <line x1="60" y1="235" x2="700" y2="235" stroke="#1D4ED8" stroke-width="1.3" stroke-dasharray="5 3"/>
+  <text x="66" y="230" font-size="9" font-weight="700" fill="#1D4ED8">CE (50%)</text>
+  <line x1="60" y1="295" x2="700" y2="295" stroke="#15803D" stroke-width="1.2"/>
+  <text x="66" y="309" font-size="9" fill="#15803D">distal (đáy OB / râu)</text>
+
+  <!-- continuous price path -->
+  <path d="M60,120 L140,150 L185,208" fill="none" stroke="#374151" stroke-width="2"/>
+  <!-- tap1 shallow -> strong bounce -->
+  <path d="M185,208 L235,150 L280,108" fill="none" stroke="#15803D" stroke-width="2.6" marker-end="url(#obtap1)"/>
+  <path d="M280,108 L330,160 L380,236" fill="none" stroke="#374151" stroke-width="2"/>
+  <!-- tap2 to CE -> weaker bounce -->
+  <path d="M380,236 L420,196 L458,168" fill="none" stroke="#B45309" stroke-width="2.6" marker-end="url(#obtap2)"/>
+  <path d="M458,168 L510,210 L560,296" fill="none" stroke="#374151" stroke-width="2"/>
+  <!-- tap3 through distal -> breaks -->
+  <path d="M560,296 L610,330 L680,362" fill="none" stroke="#B91C1C" stroke-width="2.6" marker-end="url(#obtap3)"/>
+
+  <!-- tap markers -->
+  <circle cx="185" cy="208" r="10" fill="#FFFFFF" stroke="#15803D" stroke-width="2"/>
+  <text x="185" y="212" font-size="11" font-weight="700" fill="#15803D" text-anchor="middle">1</text>
+  <circle cx="380" cy="236" r="10" fill="#FFFFFF" stroke="#B45309" stroke-width="2"/>
+  <text x="380" y="240" font-size="11" font-weight="700" fill="#B45309" text-anchor="middle">2</text>
+  <circle cx="560" cy="296" r="10" fill="#FFFFFF" stroke="#B91C1C" stroke-width="2"/>
+  <text x="560" y="300" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">3</text>
+
+  <!-- labels -->
+  <text x="150" y="100" font-size="10" font-weight="700" fill="#15803D">Lần 1: chạm NÔNG, bật MẠNH</text>
+  <text x="150" y="113" font-size="9" fill="#166534">order institutional còn nguyên</text>
+  <text x="392" y="150" font-size="10" font-weight="700" fill="#B45309">Lần 2: về CE, bật YẾU hơn</text>
+  <text x="392" y="163" font-size="9" fill="#92400E">order đã bị tiêu thụ một phần</text>
+  <text x="560" y="345" font-size="10" font-weight="700" fill="#B91C1C">Lần 3: xuyên distal → Breaker</text>
+
+  <!-- breaker zone marker -->
+  <rect x="560" y="295" width="140" height="40" fill="#DC2626" opacity="0.1"/>
+  <text x="632" y="384" font-size="9" fill="#B91C1C" text-anchor="middle">OB chết, đảo vai trò</text>
+
+  <text x="40" y="415" font-size="10.5" fill="#6B7280" font-style="italic">Ưu tiên trade OB ở FIRST clean tap; re-tap 2, 3+ → hạ conviction &amp; size, không còn là POI A+ dù "trên lý thuyết vẫn còn đó".</text>
+</svg>

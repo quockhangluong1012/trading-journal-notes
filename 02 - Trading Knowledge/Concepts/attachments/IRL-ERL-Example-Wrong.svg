@@ -1,0 +1,37 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ sai — Nhảy cóc target qua một IRL (FVG) chưa lấp trên đường tới ERL</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Long từ đáy range, đặt TP thẳng tới ERL đỉnh (BSL), bỏ qua một bearish FVG chặn đường — giá reject tại đó, không bao giờ chạm TP</text>
+
+  <rect x="24" y="70" width="712" height="356" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- ERL top target -->
+  <line x1="44" y1="110" x2="704" y2="110" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="52" y="104" font-size="10.5" font-weight="700" fill="#166534">ERL đỉnh (BSL) — TP đặt tại đây, kỳ vọng "chắc chắn tới"</text>
+
+  <!-- ERL bottom, entry -->
+  <line x1="44" y1="370" x2="704" y2="370" stroke="#F59E0B" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="52" y="386" font-size="10.5" font-weight="700" fill="#B45309">ERL đáy (SSL) — nơi Long được vào</text>
+
+  <circle cx="120" cy="370" r="6" fill="#16A34A"/>
+  <text x="130" y="366" font-size="10" font-weight="700" fill="#166534">Entry Long</text>
+
+  <!-- bearish FVG blocking the path -->
+  <rect x="320" y="220" width="90" height="46" fill="#DC2626" opacity="0.2"/>
+  <text x="330" y="214" font-size="10" font-weight="700" fill="#B91C1C">Bearish FVG (IRL) chưa lấp — bị bỏ qua</text>
+
+  <path d="M120,370 L200,320 L260,290 L320,255" fill="none" stroke="#374151" stroke-width="2.2"/>
+
+  <!-- rejection at FVG -->
+  <path d="M320,255 L360,240 L400,255" fill="none" stroke="#DC2626" stroke-width="2.4"/>
+  <circle cx="380" cy="248" r="6" fill="none" stroke="#DC2626" stroke-width="2.2"/>
+  <text x="420" y="245" font-size="10" font-weight="700" fill="#B91C1C">Reject ngay tại FVG nội bộ</text>
+
+  <!-- price reverses back down, never reaching TP -->
+  <path d="M400,255 L440,300 L480,340 L520,368" fill="none" stroke="#DC2626" stroke-width="2.4" stroke-dasharray="5 3"/>
+  <text x="440" y="390" font-size="10" font-weight="700" fill="#B91C1C">Giá quay đầu — TP tại ERL đỉnh không bao giờ chạm tới</text>
+
+  <!-- dashed line showing the naive TP path that was never taken -->
+  <path d="M320,255 L500,150 L680,110" fill="none" stroke="#9CA3AF" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="520" y="140" font-size="9.5" fill="#6B7280">Đường TP "tưởng tượng" — không xảy ra</text>
+</svg>

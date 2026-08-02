@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="17" font-weight="700" fill="#e5e7eb" text-anchor="start">Ví dụ ĐÚNG — Structure + OTE chồng POI + Sweep + MSS → Entry</text>
+
+<defs>
+<marker id="arrOrangeC" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#f97316"/>
+</marker>
+<marker id="arrPurpleC" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#a855f7"/>
+</marker>
+</defs>
+
+<rect x="50" y="120" width="860" height="170" fill="rgba(34,197,94,0.08)" stroke="none"/>
+<rect x="50" y="290" width="860" height="170" fill="rgba(239,68,68,0.08)" stroke="none"/>
+<text x="60" y="138" font-size="12" fill="#94a3b8" text-anchor="start">Discount</text>
+<text x="60" y="308" font-size="12" fill="#94a3b8" text-anchor="start">Premium</text>
+<line x1="50" y1="290" x2="910" y2="290" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 4"/>
+<text x="700" y="286" font-size="11" fill="#94a3b8" text-anchor="start">EQ 50% dealing range</text>
+
+<!-- swing low -->
+<line x1="70" y1="460" x2="70" y2="430" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="63.5" y="440" width="13" height="15" fill="#ef4444"/>
+<text x="70" y="478" font-size="11" fill="#94a3b8" text-anchor="middle">Swing Low</text>
+
+<!-- impulse up (fib anchor leg) -->
+<line x1="94" y1="440" x2="94" y2="380" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="87.5" y="385" width="13" height="55" fill="#22c55e"/>
+<line x1="118" y1="385" x2="118" y2="290" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="111.5" y="295" width="13" height="90" fill="#22c55e"/>
+<line x1="142" y1="295" x2="142" y2="180" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="135.5" y="185" width="13" height="110" fill="#22c55e"/>
+<text x="142" y="168" font-size="11" fill="#94a3b8" text-anchor="middle">Swing High (fib 100%)</text>
+
+<!-- OTE zone -->
+<rect x="166" y="220" width="90" height="60" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="170" y="216" font-size="11" fill="#3b82f6" text-anchor="start">OTE 62–79% + POI</text>
+<line x1="166" y1="250" x2="256" y2="250" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 4"/>
+<text x="180" y="356" font-size="11" fill="#3b82f6" text-anchor="start">0.705 CE ≈ FVG</text>
+
+<!-- pullback candles into OTE -->
+<line x1="166" y1="185" x2="166" y2="215" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="159.5" y="190" width="13" height="25" fill="#ef4444"/>
+<line x1="190" y1="205" x2="190" y2="250" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="183.5" y="210" width="13" height="40" fill="#ef4444"/>
+<line x1="214" y1="240" x2="214" y2="300" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="207.5" y="245" width="13" height="55" fill="#ef4444"/>
+
+<!-- sweep of SSL nội vi -->
+<line x1="256" y1="298" x2="420" y2="298" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="260" y="313" font-size="11" fill="#94a3b8" text-anchor="start">SSL nội vi</text>
+<line x1="238" y1="280" x2="238" y2="303" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrOrangeC)"/>
+<text x="130" y="335" font-size="12" fill="#f97316" text-anchor="start">(1) Sweep SSL @ OTE</text>
+
+<!-- MSS on small tf -->
+<line x1="200" y1="270" x2="330" y2="270" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="200" y="262" font-size="11" fill="#94a3b8" text-anchor="start">MSS — phá swing high nhỏ</text>
+<text x="260" y="378" font-size="12" fill="#a855f7" text-anchor="start">(2) MSS khung nhỏ (M5/M1)</text>
+
+<!-- entry + push to target -->
+<line x1="282" y1="290" x2="282" y2="245" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="275.5" y="250" width="13" height="40" fill="#22c55e"/>
+<text x="282" y="408" font-size="12" fill="#4ade80" text-anchor="start">(3) Entry ~0.705</text>
+<line x1="306" y1="245" x2="306" y2="180" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="299.5" y="185" width="13" height="60" fill="#22c55e"/>
+<line x1="330" y1="185" x2="330" y2="120" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="323.5" y="125" width="13" height="60" fill="#22c55e"/>
+<line x1="354" y1="125" x2="354" y2="90" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="347.5" y="95" width="13" height="30" fill="#22c55e"/>
+
+<line x1="60" y1="100" x2="900" y2="100" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="640" y="94" font-size="12" fill="#94a3b8" text-anchor="start">BSL target (đỉnh cũ phía trên)</text>
+<text x="380" y="86" font-size="12" fill="#4ade80" text-anchor="start">(4) Target BSL — RR lớn</text>
+
+<text x="480" y="585" font-size="12" fill="#94a3b8" text-anchor="middle">Chart minh họa khái niệm đúng cấu trúc kịch bản — không phải dữ liệu giao dịch thật.</text>
+</svg>

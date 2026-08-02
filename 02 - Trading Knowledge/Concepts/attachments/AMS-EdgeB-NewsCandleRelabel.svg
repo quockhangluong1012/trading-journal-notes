@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">News candle nuốt swing trung gian — hai trader nhìn hai cây khác nhau</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">NQ M5 — NFP 08:30 ET, một nến xoá ba STH/STL nội bộ</text>
+
+  <line x1="40" y1="400" x2="1240" y2="400" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- panel divider -->
+  <line x1="640" y1="60" x2="640" y2="640" stroke="#2a2e39" stroke-width="1"/>
+  <rect x="70" y="90" width="180" height="34" rx="6" fill="#4a90d9" opacity="0.18" stroke="#4a90d9"/>
+  <text x="88" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#4a90d9">TRƯỚC tin — nhiều swing nhỏ</text>
+
+  <!-- left panel: pre-news small swings -->
+  <g>
+    <line x1="110" y1="220" x2="110" y2="300" stroke="#26a69a" stroke-width="1"/>
+    <rect x="102" y="230" width="16" height="55" rx="1" fill="#26a69a"/>
+    <line x1="150" y1="190" x2="150" y2="270" stroke="#ef5350" stroke-width="1"/>
+    <rect x="142" y="200" width="16" height="50" rx="1" fill="#ef5350"/>
+    <text x="118" y="180" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">STH-1</text>
+    <line x1="190" y1="250" x2="190" y2="330" stroke="#26a69a" stroke-width="1"/>
+    <rect x="182" y="260" width="16" height="55" rx="1" fill="#26a69a"/>
+    <text x="170" y="350" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">STL-1</text>
+    <line x1="230" y1="210" x2="230" y2="290" stroke="#ef5350" stroke-width="1"/>
+    <rect x="222" y="220" width="16" height="50" rx="1" fill="#ef5350"/>
+    <text x="205" y="200" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">STH-2</text>
+    <line x1="270" y1="240" x2="270" y2="320" stroke="#26a69a" stroke-width="1"/>
+    <rect x="262" y="250" width="16" height="55" rx="1" fill="#26a69a"/>
+    <text x="250" y="345" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">STL-2</text>
+    <line x1="310" y1="200" x2="310" y2="280" stroke="#ef5350" stroke-width="1"/>
+    <rect x="302" y="210" width="16" height="50" rx="1" fill="#ef5350"/>
+    <text x="285" y="190" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">STH-3</text>
+  </g>
+  <text x="70" y="390" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Trader A đã chấm ITL tại STL-1 (STL-2 cao hơn 2 bên)</text>
+
+  <!-- huge news candle bridging both -->
+  <line x1="410" y1="70" x2="410" y2="380" stroke="#26a69a" stroke-width="1.5"/>
+  <rect x="396" y="90" width="28" height="270" rx="1" fill="#26a69a"/>
+  <text x="360" y="60" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">Nến NFP 08:30 — displacement khổng lồ</text>
+
+  <!-- right panel: after news, only 2 swings visible -->
+  <rect x="690" y="90" width="180" height="34" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+  <text x="708" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">SAU tin — swing bị nuốt</text>
+
+  <g>
+    <line x1="740" y1="330" x2="740" y2="400" stroke="#26a69a" stroke-width="1"/>
+    <rect x="732" y="340" width="16" height="50" rx="1" fill="#26a69a"/>
+    <text x="710" y="420" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">STL duy nhất còn lại</text>
+    <line x1="800" y1="120" x2="800" y2="200" stroke="#ef5350" stroke-width="1"/>
+    <rect x="792" y="130" width="16" height="55" rx="1" fill="#ef5350"/>
+    <text x="775" y="110" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">STH duy nhất còn lại</text>
+  </g>
+
+  <text x="690" y="450" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Trader B: STL-1/STL-2/STH-1..3 không còn tồn tại</text>
+  <text x="690" y="472" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">vì nến tin đã bao trùm cả range của chúng</text>
+  <text x="690" y="494" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">→ ITL của Trader A không thể vẽ lại được nữa</text>
+
+  <rect x="690" y="520" width="500" height="70" rx="8" fill="#f2c94c" opacity="0.14" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="705" y="545" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">Rule: một nến bao trùm range của ≥2 swing liền kề</text>
+  <text x="705" y="567" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">→ xoá các swing đó, re-label chỉ từ nến tin trở đi</text>
+
+  <text x="40" y="690" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">NQ M5 · minh họa cấu trúc — displacement tin tức làm mất tư cách swing của các nến bị bao trùm</text>
+</svg>

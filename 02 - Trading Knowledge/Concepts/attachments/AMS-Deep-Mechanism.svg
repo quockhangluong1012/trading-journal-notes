@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="780" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế Order Flow đằng sau Fractal Swing Structure</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">Vì sao STL/ITL/LTL trùng với "swing points" của Auction Market Theory và pivot của Wyckoff</text>
+
+<!-- Left panel: order book / stop cluster under swing -->
+<rect x="40" y="90" width="520" height="300" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="118" font-size="17" fill="#e2e8f0" font-weight="bold">1. Vì sao một swing low là "swing" thật</text>
+<text x="60" y="142" font-size="13" fill="#94a3b8">Auction dừng giảm khi limit-buy chồng dày hơn market-sell</text>
+<line x1="80" y1="330" x2="540" y2="330" stroke="#1c2333" stroke-width="1"/>
+<!-- candles forming a low -->
+<rect x="100" y="220" width="16" height="60" fill="#ef4444"/>
+<line x1="108" y1="205" x2="108" y2="290" stroke="#ef4444" stroke-width="2"/>
+<rect x="130" y="250" width="16" height="70" fill="#ef4444"/>
+<line x1="138" y1="235" x2="138" y2="335" stroke="#ef4444" stroke-width="2"/>
+<rect x="160" y="270" width="16" height="40" fill="#22c55e"/>
+<line x1="168" y1="255" x2="168" y2="320" stroke="#22c55e" stroke-width="2"/>
+<rect x="190" y="230" width="16" height="55" fill="#22c55e"/>
+<line x1="198" y1="215" x2="198" y2="295" stroke="#22c55e" stroke-width="2"/>
+<text x="42" y="308" font-size="13" fill="#94a3b8">higher-low</text>
+<text x="150" y="360" font-size="16" fill="#eab308" font-weight="bold">STL</text>
+<text x="210" y="302" font-size="13" fill="#94a3b8">higher-low</text>
+<!-- stop cluster below -->
+<rect x="90" y="325" width="130" height="26" fill="#eab308" opacity="0.18" stroke="#eab308" stroke-dasharray="4,3"/>
+<text x="228" y="343" font-size="12" fill="#eab308">SSL pool mỏng (stop LTF)</text>
+<!-- limit order book bars -->
+<text x="330" y="164" font-size="13" fill="#94a3b8">Limit Order Book tại đáy:</text>
+<rect x="330" y="174" width="60" height="10" fill="#22c55e" opacity="0.5"/>
+<rect x="330" y="188" width="90" height="10" fill="#22c55e" opacity="0.6"/>
+<rect x="330" y="202" width="130" height="10" fill="#22c55e" opacity="0.8"/>
+<text x="470" y="211" font-size="12" fill="#94a3b8">bids dày → auction dừng</text>
+<rect x="330" y="224" width="40" height="10" fill="#ef4444" opacity="0.6"/>
+<text x="380" y="233" font-size="12" fill="#94a3b8">market-sell mỏng dần</text>
+<text x="60" y="375" font-size="13" fill="#e2e8f0">→ STL = điểm auction TỪNG đảo phía do mất cân bằng lệnh, ghi lại bằng higher-low 2 bên.</text>
+
+<!-- Right panel: nesting/fractal -->
+<rect x="600" y="90" width="560" height="300" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="620" y="118" font-size="17" fill="#e2e8f0" font-weight="bold">2. Nesting: LTL "đội" cả STL + ITL bên trong</text>
+<text x="620" y="142" font-size="13" fill="#94a3b8">Giống pivot Wyckoff lồng trong Phase — degree = zoom level</text>
+<!-- fractal boxes -->
+<rect x="630" y="170" width="500" height="180" fill="#0f1420" stroke="#334155"/>
+<rect x="650" y="290" width="80" height="40" fill="#eab308" opacity="0.15" stroke="#eab308"/>
+<text x="660" y="315" font-size="12" fill="#eab308">STL-1</text>
+<rect x="760" y="300" width="80" height="30" fill="#eab308" opacity="0.15" stroke="#eab308"/>
+<text x="770" y="320" font-size="12" fill="#eab308">STL-2</text>
+<rect x="650" y="270" width="190" height="70" fill="none" stroke="#38bdf8" stroke-dasharray="5,3"/>
+<text x="800" y="265" font-size="12" fill="#38bdf8">ITL bọc STL-1,2</text>
+<rect x="870" y="295" width="80" height="35" fill="#eab308" opacity="0.15" stroke="#eab308"/>
+<text x="880" y="317" font-size="12" fill="#eab308">STL-3</text>
+<rect x="960" y="280" width="90" height="50" fill="#eab308" opacity="0.15" stroke="#eab308"/>
+<text x="975" y="308" font-size="12" fill="#eab308">STL-4</text>
+<rect x="860" y="265" width="200" height="80" fill="none" stroke="#38bdf8" stroke-dasharray="5,3"/>
+<text x="900" y="255" font-size="12" fill="#38bdf8">ITL bọc STL-3,4</text>
+<rect x="645" y="255" width="420" height="105" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="900" y="180" font-size="13" fill="#a78bfa" font-weight="bold">LTL = bọc cả 2 ITL</text>
+<text x="620" y="375" font-size="13" fill="#e2e8f0">→ Zoom in = thấy STL; zoom out = chính chỗ đó là 1 ITL hoặc LTL.</text>
+
+<!-- Bottom: table comparison across asset classes -->
+<rect x="40" y="410" width="1120" height="260" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="438" font-size="17" fill="#e2e8f0" font-weight="bold">3. Hành vi degree theo loại tài sản</text>
+<line x1="60" y1="452" x2="1160" y2="452" stroke="#334155"/>
+<text x="70" y="480" font-size="14" fill="#94a3b8" font-weight="bold">Tiêu chí</text>
+<text x="330" y="480" font-size="14" fill="#94a3b8" font-weight="bold">FX majors (EURUSD)</text>
+<text x="650" y="480" font-size="14" fill="#94a3b8" font-weight="bold">Index futures (NQ/ES)</text>
+<text x="960" y="480" font-size="14" fill="#94a3b8" font-weight="bold">Crypto (BTC/ETH)</text>
+<line x1="60" y1="492" x2="1160" y2="492" stroke="#1c2333"/>
+<text x="70" y="515" font-size="13" fill="#e2e8f0">Độ rõ fractal</text>
+<text x="330" y="515" font-size="13" fill="#e2e8f0">Sạch trong kill zone; mờ off-session</text>
+<text x="650" y="515" font-size="13" fill="#e2e8f0">Rất sạch giờ RTH; nhiễu overnight thanh mỏng</text>
+<text x="960" y="515" font-size="13" fill="#e2e8f0" textLength="234" lengthAdjust="spacingAndGlyphs">Nhiễu 24/7, wick dài do đòn bẩy/liquidation</text>
+<line x1="60" y1="527" x2="1160" y2="527" stroke="#1c2333"/>
+<text x="70" y="550" font-size="13" fill="#e2e8f0">Trọng lượng ITL/LTL</text>
+<text x="330" y="550" font-size="13" fill="#e2e8f0">Trung bình; dealer hedging làm mượt</text>
+<text x="650" y="550" font-size="13" fill="#e2e8f0">Nặng — options gamma quanh strike lớn</text>
+<text x="960" y="550" font-size="13" fill="#e2e8f0" textLength="234" lengthAdjust="spacingAndGlyphs">Rất nặng — liquidation cascade khi sweep LTL</text>
+<line x1="60" y1="562" x2="1160" y2="562" stroke="#1c2333"/>
+<text x="70" y="585" font-size="13" fill="#e2e8f0">Rủi ro mislabel</text>
+<text x="330" y="585" font-size="13" fill="#e2e8f0">DST lệch kill zone → sai nến 2 bên</text>
+<text x="650" y="585" font-size="13" fill="#e2e8f0">Rollover contract tạo gap giả giữa 2 nến</text>
+<text x="960" y="585" font-size="13" fill="#e2e8f0" textLength="234" lengthAdjust="spacingAndGlyphs">Funding time 00:00/08:00 UTC tạo wick giả</text>
+<line x1="60" y1="597" x2="1160" y2="597" stroke="#1c2333"/>
+<text x="70" y="620" font-size="13" fill="#e2e8f0">Regime tốt nhất</text>
+<text x="330" y="620" font-size="13" fill="#e2e8f0">Trending London/NY overlap</text>
+<text x="650" y="620" font-size="13" fill="#e2e8f0">Trending RTH, tránh lunch chop 12-13h ET</text>
+<text x="960" y="620" font-size="10.3" fill="#e2e8f0">Trending sau breakout vol thấp, tránh weekend thin</text>
+<text x="60" y="655" font-size="13" fill="#94a3b8" font-style="italic">Auction Market Theory gọi ITL/LTL là "value area low của một balance area" — cùng ý tưởng, khác tên.</text>
+</svg>

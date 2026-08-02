@@ -1,0 +1,49 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="17" font-weight="700" fill="#1F2937">Case 4 - No-Trade dung (Consolidation / Seek&Destroy day)</text>
+  <text x="24" y="52" font-size="12.5" fill="#6B7280">Kich ban minh hoa (hypothetical). NY khong expand; whipsaw hai phia - dung ngoai la thang.</text>
+  <rect x="40" y="74" width="470" height="310" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+  <rect x="70" y="170" width="410" height="120" fill="#9CA3AF" opacity="0.12"/>
+  <line x1="70" y1="170" x2="480" y2="170" stroke="#9CA3AF" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <line x1="70" y1="290" x2="480" y2="290" stroke="#9CA3AF" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="76" y="164" font-size="9.5" fill="#6B7280">bien tren (BSL)</text>
+  <text x="76" y="306" font-size="9.5" fill="#6B7280">bien duoi (SSL)</text>
+  <rect x="94" y="208" width="2" height="42" fill="#16A34A"/>
+  <rect x="89" y="220" width="12" height="22" rx="1" fill="#16A34A"/>
+  <rect x="132" y="168" width="2" height="42" fill="#DC2626"/>
+  <rect x="127" y="180" width="12" height="22" rx="1" fill="#DC2626"/>
+  <rect x="170" y="223" width="2" height="42" fill="#16A34A"/>
+  <rect x="165" y="235" width="12" height="22" rx="1" fill="#16A34A"/>
+  <rect x="208" y="183" width="2" height="42" fill="#DC2626"/>
+  <rect x="203" y="195" width="12" height="22" rx="1" fill="#DC2626"/>
+  <rect x="246" y="243" width="2" height="42" fill="#DC2626"/>
+  <rect x="241" y="255" width="12" height="22" rx="1" fill="#DC2626"/>
+  <rect x="284" y="178" width="2" height="42" fill="#16A34A"/>
+  <rect x="279" y="190" width="12" height="22" rx="1" fill="#16A34A"/>
+  <rect x="322" y="228" width="2" height="42" fill="#DC2626"/>
+  <rect x="317" y="240" width="12" height="22" rx="1" fill="#DC2626"/>
+  <rect x="360" y="188" width="2" height="42" fill="#16A34A"/>
+  <rect x="355" y="200" width="12" height="22" rx="1" fill="#16A34A"/>
+  <rect x="398" y="238" width="2" height="42" fill="#DC2626"/>
+  <rect x="393" y="250" width="12" height="22" rx="1" fill="#DC2626"/>
+  <rect x="436" y="198" width="2" height="42" fill="#16A34A"/>
+  <rect x="431" y="210" width="12" height="22" rx="1" fill="#16A34A"/>
+  <text x="130" y="176" font-size="17" fill="#DC2626" font-weight="700">&#10007;</text>
+  <text x="360" y="292" font-size="17" fill="#DC2626" font-weight="700">&#10007;</text>
+  <text x="275" y="332" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="middle">quet ca hai phia - khong displacement</text>
+  <rect x="524" y="74" width="196" height="310" rx="8" fill="#F8FAFC" stroke="#E5E7EB" stroke-width="1.2"/>
+  <text x="540" y="94" font-size="12" font-weight="700" fill="#111827">Ghi nhan</text>
+  <text x="540" y="120" font-size="10" fill="#6B7280">Profile</text>
+  <text x="540" y="135" font-size="11" font-weight="700" fill="#374151">Seek & Destroy</text>
+  <text x="540" y="161" font-size="10" fill="#6B7280">NY</text>
+  <text x="540" y="176" font-size="11" font-weight="700" fill="#374151">khong expansion</text>
+  <text x="540" y="202" font-size="10" fill="#6B7280">Driver</text>
+  <text x="540" y="217" font-size="11" font-weight="700" fill="#6B7280">khong co</text>
+  <text x="540" y="243" font-size="10" fill="#6B7280">Ket qua</text>
+  <text x="540" y="258" font-size="11" font-weight="700" fill="#15803D">dung ngoai</text>
+  <text x="540" y="284" font-size="10" fill="#6B7280">missing_step</text>
+  <text x="540" y="299" font-size="11" font-weight="700" fill="#B45309">timing</text>
+  <text x="540" y="325" font-size="10" fill="#6B7280">Ky luat</text>
+  <text x="540" y="340" font-size="11" font-weight="700" fill="#15803D">No-Trade</text>
+  <text x="24" y="456" font-size="10.5" fill="#6B7280">Kich ban minh hoa (hypothetical) - khong co profile expansion &#8594; bao ve von la ket qua tot.</text>
+</svg>

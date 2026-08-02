@@ -1,35 +1,43 @@
-<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">08:30 Model theo từng thị trường</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">Cùng trình tự raid→MSS→PD array, khác nhau ở độ sạch &amp; vai trò của tin 08:30.</text>
-<rect x="24" y="72" width="230" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
-<text x="139" y="98" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">NQ1 / ES</text>
-<text x="42" y="128" font-size="11" fill="#374151">• Precision 1m sạch nhất</text>
-<text x="42" y="150" font-size="11" fill="#374151">• 09:30 mở NYSE khuếch đại</text>
-<text x="42" y="172" font-size="11" fill="#374151">• Relative equal rõ trong phiên</text>
-<text x="42" y="194" font-size="11" fill="#374151">• MSS + PD array dứt khoát</text>
-<text x="42" y="224" font-size="11" font-weight="700" fill="#047857">Tốt nhất cho người mới</text>
-<text x="42" y="246" font-size="11" fill="#374151">học precision entry.</text>
-<text x="42" y="278" font-size="11" font-weight="700" fill="#B45309">Cảnh báo: whipsaw quanh</text>
-<text x="42" y="298" font-size="11" fill="#374151">08:30 nếu tin bất ngờ.</text>
-<rect x="264" y="72" width="230" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
-<text x="379" y="98" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">EURUSD / GBPUSD</text>
-<text x="282" y="128" font-size="11" fill="#374151">• Overlap London muộn + NY</text>
-<text x="282" y="150" font-size="11" fill="#374151">• Thanh khoản sâu, sweep sạch</text>
-<text x="282" y="172" font-size="11" fill="#374151">• Relative equal thoai thoải</text>
-<text x="282" y="194" font-size="11" fill="#374151">• Ít phụ thuộc tin Mỹ hơn NQ</text>
-<text x="282" y="224" font-size="11" font-weight="700" fill="#047857">Nhịp hồi rõ vào range</text>
-<text x="282" y="246" font-size="11" fill="#374151">→ PD array dễ canh.</text>
-<text x="282" y="278" font-size="11" font-weight="700" fill="#B45309">Cảnh báo: 08:30 FX có thể</text>
-<text x="282" y="298" font-size="11" fill="#374151">"lình xình" nếu không có tin.</text>
-<rect x="504" y="72" width="232" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
-<text x="620" y="98" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">XAUUSD</text>
-<text x="522" y="128" font-size="11" fill="#374151">• Displacement sạch quanh tin</text>
-<text x="522" y="150" font-size="11" fill="#374151">  Mỹ 08:30 (CPI/NFP/PPI)</text>
-<text x="522" y="172" font-size="11" fill="#374151">• Raid + MSS có thể dồn vào</text>
-<text x="522" y="194" font-size="11" fill="#374151">  vài phút quanh giờ tin</text>
-<text x="522" y="224" font-size="11" font-weight="700" fill="#B45309">Cảnh báo: wick rất dài</text>
-<text x="522" y="246" font-size="11" fill="#374151">→ stop dễ bị quét.</text>
-<text x="522" y="278" font-size="11" font-weight="700" fill="#047857">Điều chỉnh: chờ MSS + FVG</text>
-<text x="522" y="298" font-size="11" fill="#374151">rõ; nới stop, giảm size.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="520" rx="12" fill="#0d1117"/>
+<text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">So sánh hành vi 08:30 giữa các thị trường</text>
+<!-- 3 columns: NQ/ES, EURUSD/GBPUSD, XAUUSD -->
+<rect x="40" y="70" width="270" height="400" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="175" y="98" font-size="14" font-weight="700" fill="#3b82f6" text-anchor="middle">NQ1 / ES</text>
+<line x1="60" y1="150" x2="60" y2="220" stroke="#9ca3af" stroke-width="1.5"/><rect x="54" y="160" width="12" height="45" fill="#22c55e"/>
+<line x1="90" y1="120" x2="90" y2="200" stroke="#9ca3af" stroke-width="1.5"/><rect x="84" y="130" width="12" height="55" fill="#22c55e"/>
+<text x="60" y="240" font-size="11.5" fill="#94a3b8" text-anchor="start">Precision 1m sạch nhất</text>
+<text x="60" y="260" font-size="11.5" fill="#94a3b8" text-anchor="start">09:30 mở NYSE khuếch đại</text>
+<text x="60" y="290" font-size="11.5" fill="#e5e7eb" text-anchor="start">Phụ thuộc tin: CAO</text>
+<text x="60" y="320" font-size="11.5" fill="#e5e7eb" text-anchor="start">Relative equal: rõ trong phiên</text>
+<text x="60" y="360" font-size="11.5" fill="#f87171" text-anchor="start">Rủi ro: whipsaw nếu tin</text>
+<text x="60" y="378" font-size="11.5" fill="#f87171" text-anchor="start">bất ngờ</text>
+<text x="60" y="410" font-size="11.5" fill="#4ade80" text-anchor="start">Điều chỉnh: ưu tiên PD array</text>
+<text x="60" y="428" font-size="11.5" fill="#4ade80" text-anchor="start">first &amp; clean</text>
+<rect x="345" y="70" width="270" height="400" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+<text x="480" y="98" font-size="14" font-weight="700" fill="#22c55e" text-anchor="middle">EURUSD / GBPUSD</text>
+<line x1="370" y1="170" x2="370" y2="220" stroke="#9ca3af" stroke-width="1.5"/><rect x="364" y="180" width="12" height="30" fill="#ef4444"/>
+<line x1="400" y1="160" x2="400" y2="210" stroke="#9ca3af" stroke-width="1.5"/><rect x="394" y="170" width="12" height="30" fill="#22c55e"/>
+<text x="365" y="240" font-size="11.5" fill="#94a3b8" text-anchor="start">Tốt, nhịp hồi rõ vào range</text>
+<text x="365" y="270" font-size="11.5" fill="#94a3b8" text-anchor="start">09:30 ít ảnh hưởng</text>
+<text x="365" y="290" font-size="11.5" fill="#e5e7eb" text-anchor="start">Phụ thuộc tin: TRUNG BÌNH</text>
+<text x="365" y="320" font-size="11.5" fill="#e5e7eb" text-anchor="start">Relative equal: thoai thoải,</text>
+<text x="365" y="338" font-size="11.5" fill="#e5e7eb" text-anchor="start">thanh khoản sâu</text>
+<text x="365" y="360" font-size="11.5" fill="#f87171" text-anchor="start">Rủi ro: "lình xình" nếu</text>
+<text x="365" y="378" font-size="11.5" fill="#f87171" text-anchor="start">không có tin</text>
+<text x="365" y="410" font-size="11.5" fill="#4ade80" text-anchor="start">Điều chỉnh: chờ nhịp hồi</text>
+<text x="365" y="428" font-size="11.5" fill="#4ade80" text-anchor="start">vào range rõ</text>
+<rect x="650" y="70" width="270" height="400" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+<text x="785" y="98" font-size="14" font-weight="700" fill="#eab308" text-anchor="middle">XAUUSD</text>
+<line x1="675" y1="140" x2="675" y2="240" stroke="#9ca3af" stroke-width="1.5"/><rect x="669" y="175" width="12" height="30" fill="#ef4444"/>
+<line x1="705" y1="130" x2="705" y2="250" stroke="#9ca3af" stroke-width="1.5"/><rect x="699" y="170" width="12" height="40" fill="#22c55e"/>
+<text x="670" y="270" font-size="11.5" fill="#94a3b8" text-anchor="start">Thất thường quanh tin</text>
+<text x="670" y="290" font-size="11.5" fill="#e5e7eb" text-anchor="start">Phụ thuộc tin: RẤT CAO</text>
+<text x="670" y="320" font-size="11.5" fill="#e5e7eb" text-anchor="start">Relative equal: dồn vào</text>
+<text x="670" y="338" font-size="11.5" fill="#e5e7eb" text-anchor="start">vài phút</text>
+<text x="670" y="360" font-size="11.5" fill="#f87171" text-anchor="start">Rủi ro: wick rất dài → stop</text>
+<text x="670" y="378" font-size="11.5" fill="#f87171" text-anchor="start">dễ bị quét</text>
+<text x="670" y="410" font-size="11.5" fill="#4ade80" text-anchor="start">Điều chỉnh: nới stop,</text>
+<text x="670" y="428" font-size="11.5" fill="#4ade80" text-anchor="start">giảm size</text>
+<text x="480" y="500" font-size="12" fill="#94a3b8" text-anchor="middle">Cùng trình tự raid → MSS → PD array, khác nhau ở độ sạch và mức phụ thuộc tin 08:30.</text>
 </svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="520" rx="12" fill="#0d1117"/>
+  <text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Timeline tuần OSOK (Mon–Fri)</text>
+  <text x="32" y="58" font-size="12" fill="#94a3b8">Sơ đồ khái niệm — không phải dữ liệu giá thật</text>
+
+  <line x1="60" y1="440" x2="920" y2="440" stroke="#334155" stroke-width="2"/>
+  <g font-size="13" fill="#94a3b8" text-anchor="middle">
+    <text x="120" y="460">Thứ Hai</text>
+    <text x="320" y="460">Thứ Ba</text>
+    <text x="500" y="460">Thứ Tư</text>
+    <text x="680" y="460">Thứ Năm</text>
+    <text x="860" y="460">Thứ Sáu</text>
+  </g>
+
+  <rect x="60" y="150" width="170" height="60" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="145" y="175" font-size="12" fill="#e5e7eb" text-anchor="middle">Xác định weekly bias</text>
+  <text x="145" y="192" font-size="11" fill="#94a3b8" text-anchor="middle">+ draw on liquidity</text>
+  <text x="145" y="207" font-size="10.5" fill="#94a3b8" text-anchor="middle">(IPDA lookback 20 tuần)</text>
+
+  <rect x="240" y="140" width="350" height="80" rx="6" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-dasharray="4 3" stroke-width="2.5"/>
+  <text x="415" y="170" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="middle">HUNT WINDOW</text>
+  <text x="415" y="190" font-size="11.5" fill="#94a3b8" text-anchor="middle">anchor point + sweep + MSS +</text>
+  <text x="415" y="205" font-size="11.5" fill="#94a3b8" text-anchor="middle">OTE/FVG trong London/NY KZ</text>
+
+  <rect x="600" y="150" width="170" height="60" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <text x="685" y="175" font-size="12" fill="#e5e7eb" text-anchor="middle">Quản lý lệnh đã vào</text>
+  <text x="685" y="192" font-size="11" fill="#94a3b8" text-anchor="middle">trailing / đóng nếu</text>
+  <text x="685" y="207" font-size="10.5" fill="#94a3b8" text-anchor="middle">đạt target</text>
+
+  <rect x="780" y="150" width="140" height="60" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="850" y="172" font-size="11.5" fill="#e5e7eb" text-anchor="middle">Không mở setup mới</text>
+  <text x="850" y="188" font-size="10.5" fill="#94a3b8" text-anchor="middle">trừ khi cực kỳ rõ</text>
+  <text x="850" y="203" font-size="10.5" fill="#94a3b8" text-anchor="middle">ưu tiên chốt sổ tuần</text>
+
+  <g stroke="#334155" stroke-width="1">
+    <line x1="120" y1="435" x2="120" y2="445"/>
+    <line x1="320" y1="435" x2="320" y2="445"/>
+    <line x1="500" y1="435" x2="500" y2="445"/>
+    <line x1="680" y1="435" x2="680" y2="445"/>
+    <line x1="860" y1="435" x2="860" y2="445"/>
+  </g>
+
+  <text x="490" y="280" font-size="12" fill="#94a3b8" text-anchor="middle">Quy tắc: 1 setup A+/tuần trong Hunt Window, không mở lệnh gượng ép ngoài khung này.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="480" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="18" font-weight="700" fill="#e5e7eb" text-anchor="start">7 kinh nghiệm live/backtest — 07:00 IFVG Model</text>
+<text x="40" y="100" font-size="14" font-weight="400" fill="#38bdf8" text-anchor="start">•</text>
+<text x="60" y="100" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="start">1. London H/L là mốc DUY NHẤT cần chuẩn bị</text>
+<text x="40" y="146" font-size="14" font-weight="400" fill="#38bdf8" text-anchor="start">•</text>
+<text x="60" y="146" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="start">2. Để 30' đầu lộ cú hunt rồi mới tìm MSS+IFVG</text>
+<text x="40" y="192" font-size="14" font-weight="400" fill="#38bdf8" text-anchor="start">•</text>
+<text x="60" y="192" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="start">3. IFVG đầu tiên = dấu vết dòng lệnh sai hướng cuối</text>
+<text x="40" y="238" font-size="14" font-weight="400" fill="#38bdf8" text-anchor="start">•</text>
+<text x="60" y="238" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="start">4. NQ1 sạch nhất; XAU thất thường quanh tin</text>
+<text x="40" y="284" font-size="14" font-weight="400" fill="#38bdf8" text-anchor="start">•</text>
+<text x="60" y="284" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="start">5. Stop ngoài TOÀN BỘ swing post-07:00</text>
+<text x="40" y="330" font-size="14" font-weight="400" fill="#38bdf8" text-anchor="start">•</text>
+<text x="60" y="330" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="start">6. Chốt bậc thang: -2 (BE) rồi -2.5</text>
+<text x="40" y="376" font-size="14" font-weight="400" fill="#38bdf8" text-anchor="start">•</text>
+<text x="60" y="376" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="start">7. Kỷ luật missing_step + ≥30 mẫu trước khi scale size</text>
+<text x="32" y="450" font-size="12" fill="#94a3b8" text-anchor="start">Tóm tắt các bài học thực chiến — chi tiết đầy đủ trong văn bản Chuyên sâu B.</text>
+</svg>

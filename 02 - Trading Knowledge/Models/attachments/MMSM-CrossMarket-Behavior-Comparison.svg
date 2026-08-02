@@ -1,26 +1,38 @@
-<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">MMSM bieu hien khac nhau ra sao theo tung thi truong</text>
-  <text x="24" y="54" font-size="13" fill="#6B7280">Cung kich ban 2 nua, khac do dai buy program va so bac LRB truoc Smart Money High that.</text>
-  <rect x="24" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="36" y="100" font-size="13" font-weight="700" fill="#7C3AED">NQ1 / NDX</text>
-  <line x1="40" y1="220" x2="236" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="42" y="214" font-size="9.5" fill="#6B7280">2-4 bac LRB, ~1 phien</text>
-  <path d="M46,320 L70,300 L90,308 L112,255 L134,275 L160,205 L185,220 L215,150" fill="none" stroke="#374151" stroke-width="2.2" transform="translate(-22,0)"/>
-  <text x="36" y="344" font-size="10.5" fill="#374151">Buy program ngan, doc;</text>
-  <text x="36" y="358" font-size="10.5" fill="#374151">nhieu bac LRB trong vai gio.</text>
-  <rect x="266" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="278" y="100" font-size="13" font-weight="700" fill="#2563EB">EURUSD / GBPUSD</text>
-  <line x1="282" y1="220" x2="478" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="284" y="214" font-size="9.5" fill="#6B7280">1-2 bac, trai nhieu ngay</text>
-  <path d="M288,320 L310,305 L330,312 L352,265 L372,282 L400,220 L425,232 L458,160" fill="none" stroke="#374151" stroke-width="2.2" transform="translate(220,0)"/>
-  <text x="278" y="344" font-size="10.5" fill="#374151">Buy program thoai thoai,</text>
-  <text x="278" y="358" font-size="10.5" fill="#374151">keo dai 1-3 ngay.</text>
-  <rect x="508" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <text x="520" y="100" font-size="13" font-weight="700" fill="#166534">XAUUSD</text>
-  <line x1="524" y1="220" x2="720" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="526" y="214" font-size="9.5" fill="#6B7280">Co the 1 bac, gay dot ngot</text>
-  <path d="M530,320 L548,315 L564,308 L582,220 L600,245 L626,180 L648,195 L700,150" fill="none" stroke="#374151" stroke-width="2.2" transform="translate(462,0)"/>
-  <text x="520" y="344" font-size="10.5" fill="#374151">SMH co the toi rat nhanh</text>
-  <text x="520" y="358" font-size="10.5" fill="#374151">quanh gio tin (NFP/CPI/FOMC).</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">MMSM trên 3 thị trường — cùng kịch bản, khác nhịp điệu</text>
+
+<line x1="330" y1="60" x2="330" y2="560" stroke="#1f2937" stroke-width="1"/>
+<line x1="640" y1="60" x2="640" y2="560" stroke="#1f2937" stroke-width="1"/>
+
+<!-- Col 1: NQ1 -->
+<text x="180" y="70" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">NQ1 / NDX</text>
+<text x="180" y="90" font-size="11" fill="#94a3b8" text-anchor="middle">2-3 bậc LRB, vài giờ</text>
+<line x1="60" y1="150" x2="300" y2="150" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<polyline points="70,480 110,480 110,410 150,410 150,330 190,330 190,250 230,250 230,150" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+<circle cx="230" cy="150" r="16" fill="none" stroke="#f87171" stroke-width="2"/>
+<polyline points="230,150 260,230 290,290" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+<text x="180" y="500" font-size="11" fill="#f87171" text-anchor="middle">SMH nhanh, dốc</text>
+
+<!-- Col 2: FX -->
+<text x="485" y="70" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">EURUSD / GBPUSD</text>
+<text x="485" y="90" font-size="11" fill="#94a3b8" text-anchor="middle">1-2 bậc, trải nhiều phiên</text>
+<line x1="370" y1="180" x2="610" y2="180" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<polyline points="380,460 440,460 440,360 500,360 500,240 540,240 540,180" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+<circle cx="540" cy="180" r="16" fill="none" stroke="#f87171" stroke-width="2"/>
+<polyline points="540,180 570,240 600,300" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+<text x="485" y="500" font-size="11" fill="#f87171" text-anchor="middle">SMH thoai thoải</text>
+
+<!-- Col 3: XAU -->
+<text x="795" y="70" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="middle">XAUUSD</text>
+<text x="795" y="90" font-size="11" fill="#94a3b8" text-anchor="middle">1 bậc gãy quanh tin</text>
+<line x1="680" y1="150" x2="920" y2="150" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<polyline points="690,440 730,440 730,400 760,400" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+<!-- sharp news spike candle -->
+<rect x="760" y="150" width="16" height="250" fill="#22c55e"/><line x1="768" y1="140" x2="768" y2="410" stroke="#9ca3af" stroke-width="1.5"/>
+<circle cx="800" cy="150" r="16" fill="none" stroke="#f87171" stroke-width="2"/>
+<polyline points="800,150 840,220 870,280" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+<text x="795" y="500" font-size="11" fill="#f87171" text-anchor="middle">SMH giật quanh tin</text>
+
+<text x="480" y="565" font-size="12" fill="#94a3b8" text-anchor="middle">Sơ đồ minh họa hành vi thị trường mang tính khái niệm, không phải chart giá thật</text>
 </svg>

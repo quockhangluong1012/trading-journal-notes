@@ -1,58 +1,53 @@
-<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Smart Money Low hop le vs. Inducement (sweep gia)</text>
-  <text x="24" y="54" font-size="13" fill="#6B7280">So sanh hanh vi gia ngay sau cu quet SSL. Chart minh hoa khai niem, khong phai du lieu giao dich that.</text>
-  <rect x="24" y="76" width="345" height="330" rx="8" fill="#F0FDF4" stroke="#86EFAC"/>
-  <text x="36" y="100" font-size="13" font-weight="700" fill="#16A34A">Smart Money Low hop le</text>
-  <line x1="40" y1="260" x2="350" y2="260" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="5 3"/>
-  <text x="44" y="255" font-size="9.5" fill="#DC2626">SSL cu</text>
-  <rect x="56.0" y="212" width="2" height="24" fill="#16A34A"/>
-  <rect x="50" y="220" width="14" height="10" fill="#16A34A" rx="1"/>
-  <rect x="82.0" y="217" width="2" height="21" fill="#DC2626"/>
-  <rect x="76" y="225" width="14" height="7" fill="#DC2626" rx="1"/>
-  <rect x="108.0" y="224" width="2" height="37" fill="#DC2626"/>
-  <rect x="102" y="232" width="14" height="23" fill="#DC2626" rx="1"/>
-  <rect x="134.0" y="264" width="2" height="52" fill="#16A34A"/>
-  <rect x="128" y="272" width="14" height="38" fill="#16A34A" rx="1"/>
-  <rect x="161.0" y="300" width="2" height="-38" fill="#DC2626"/>
-  <rect x="154" y="250" width="16" height="12" fill="#DC2626" rx="1"/>
-  <text x="144" y="316" font-size="10" fill="#DC2626">Sweep duoi SSL</text>
-  <rect x="190.0" y="220" width="2" height="38" fill="#16A34A"/>
-  <rect x="184" y="220" width="14" height="30" fill="#16A34A" rx="1"/>
-  <rect x="216.0" y="195" width="2" height="27" fill="#16A34A"/>
-  <rect x="210" y="195" width="14" height="25" fill="#16A34A" rx="1"/>
-  <text x="166" y="182" font-size="10" fill="#16A34A">Reclaim nhanh (1-2 nen)</text>
-  <rect x="242.0" y="140" width="2" height="60" fill="#16A34A"/>
-  <rect x="236" y="150" width="14" height="45" fill="#16A34A" rx="1"/>
-  <rect x="268.0" y="100" width="2" height="55" fill="#16A34A"/>
-  <rect x="262" y="110" width="14" height="40" fill="#16A34A" rx="1"/>
-  <path d="M300,190 L340,190" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="4 3"/>
-  <text x="250" y="120" font-size="10" font-weight="700" fill="#2563EB">MSS tang that + FVG</text>
-  <text x="36" y="386" font-size="11" fill="#374151">Reclaim dut khoat, pha swing high, SML xac nhan</text>
-  <rect x="391" y="76" width="345" height="330" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
-  <text x="403" y="100" font-size="13" font-weight="700" fill="#DC2626">Inducement (sweep gia)</text>
-  <line x1="407" y1="230" x2="717" y2="230" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="5 3"/>
-  <text x="411" y="225" font-size="9.5" fill="#DC2626">Day cu (bay)</text>
-  <rect x="423.0" y="182" width="2" height="24" fill="#16A34A"/>
-  <rect x="417" y="190" width="14" height="10" fill="#16A34A" rx="1"/>
-  <rect x="449.0" y="187" width="2" height="21" fill="#DC2626"/>
-  <rect x="443" y="195" width="14" height="7" fill="#DC2626" rx="1"/>
-  <rect x="475.0" y="194" width="2" height="34" fill="#DC2626"/>
-  <rect x="469" y="202" width="14" height="20" fill="#DC2626" rx="1"/>
-  <rect x="502.0" y="260" width="2" height="-28" fill="#DC2626"/>
-  <rect x="495" y="218" width="16" height="14" fill="#DC2626" rx="1"/>
-  <text x="485" y="286" font-size="10" fill="#DC2626">Sweep duoi day</text>
-  <rect x="531.0" y="205" width="2" height="19" fill="#16A34A"/>
-  <rect x="525" y="205" width="14" height="13" fill="#16A34A" rx="1"/>
-  <text x="491" y="196" font-size="10" fill="#DC2626">Nay yeu - khong pha swing high</text>
-  <rect x="557.0" y="215" width="2" height="23" fill="#DC2626"/>
-  <rect x="551" y="215" width="14" height="20" fill="#DC2626" rx="1"/>
-  <rect x="583.0" y="235" width="2" height="30" fill="#DC2626"/>
-  <rect x="577" y="235" width="14" height="25" fill="#DC2626" rx="1"/>
-  <rect x="609.0" y="258" width="2" height="42" fill="#DC2626"/>
-  <rect x="603" y="260" width="14" height="35" fill="#DC2626" rx="1"/>
-  <text x="539" y="330" font-size="10" font-weight="700" fill="#DC2626">Gia tiep tuc giam - day moi thap hon</text>
-  <text x="403" y="386" font-size="11" fill="#374151">Khong MSS that, sell program con tiep dien</text>
-  <rect x="24" y="418" width="712" height="30" rx="6" fill="#FEF3C7"/>
-  <text x="36" y="438" font-size="12" font-weight="700" fill="#92400E">Chi tin la Smart Money Low khi reclaim NHANH + MSS tang that xay ra ngay sau sweep - khong phai moi cu quet deu la day.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Smart Money Low thật vs. Inducement (sweep giả)</text>
+
+<!-- divider -->
+<line x1="480" y1="60" x2="480" y2="540" stroke="#1f2937" stroke-width="1"/>
+
+<!-- LEFT: valid SML -->
+<text x="70" y="70" font-size="15" font-weight="700" fill="#4ade80">Smart Money Low hợp lệ</text>
+<line x1="48" y1="360" x2="430" y2="360" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="52" y="374" font-size="12" fill="#eab308">SSL cũ</text>
+
+<!-- candles down into sweep -->
+<rect x="90" y="250" width="12" height="60" fill="#ef4444"/><line x1="96" y1="240" x2="96" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="120" y="280" width="12" height="60" fill="#ef4444"/><line x1="126" y1="270" x2="126" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="150" y="320" width="12" height="70" fill="#ef4444"/><line x1="156" y1="300" x2="156" y2="400" stroke="#9ca3af" stroke-width="1.5"/>
+<!-- sweep candle: wick pierces SSL, close reclaims above -->
+<rect x="180" y="330" width="12" height="35" fill="#22c55e"/><line x1="186" y1="315" x2="186" y2="395" stroke="#9ca3af" stroke-width="1.5"/>
+<!-- reclaim candles -->
+<rect x="210" y="300" width="12" height="35" fill="#22c55e"/><line x1="216" y1="288" x2="216" y2="340" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="240" y="260" width="14" height="45" fill="#22c55e"/><line x1="247" y1="245" x2="247" y2="315" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="150" y="415" font-size="11" fill="#94a3b8">Reclaim nhanh</text>
+
+<!-- MSS + displacement + FVG -->
+<line x1="90" y1="230" x2="300" y2="230" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="2 3"/>
+<text x="300" y="226" font-size="11" fill="#a855f7">Swing high</text>
+<rect x="270" y="150" width="16" height="90" fill="#22c55e"/><line x1="278" y1="140" x2="278" y2="248" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="300" y="120" width="16" height="80" fill="#22c55e"/><line x1="308" y1="110" x2="308" y2="205" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="330" y="100" width="16" height="60" fill="#22c55e"/><line x1="338" y1="92" x2="338" y2="165" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="270" y="160" width="76" height="35" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-dasharray="4 3"/>
+<text x="290" y="215" font-size="11" fill="#93c5fd">FVG</text>
+<text x="80" y="440" font-size="12" fill="#4ade80">Reclaim nhanh + MSS thật</text>
+
+<!-- RIGHT: Inducement fake -->
+<text x="540" y="70" font-size="15" font-weight="700" fill="#f87171">Inducement / sweep giả</text>
+<line x1="510" y1="360" x2="910" y2="360" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="514" y="374" font-size="12" fill="#eab308">Đáy cũ</text>
+
+<rect x="560" y="250" width="12" height="60" fill="#ef4444"/><line x1="566" y1="240" x2="566" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="590" y="280" width="12" height="55" fill="#ef4444"/><line x1="596" y1="268" x2="596" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<!-- sweep candle pierces then weak bounce -->
+<rect x="620" y="330" width="12" height="30" fill="#22c55e"/><line x1="626" y1="315" x2="626" y2="400" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="650" y="315" width="12" height="25" fill="#22c55e"/><line x1="656" y1="305" x2="656" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="600" y="420" font-size="11" fill="#94a3b8">Nảy yếu</text>
+<!-- continues lower, no MSS -->
+<rect x="680" y="340" width="12" height="55" fill="#ef4444"/><line x1="686" y1="330" x2="686" y2="410" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="710" y="370" width="12" height="65" fill="#ef4444"/><line x1="716" y1="358" x2="716" y2="450" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="740" y="410" width="12" height="70" fill="#ef4444"/><line x1="746" y1="398" x2="746" y2="495" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="640" y="510" font-size="12" fill="#f87171">Nảy yếu, không MSS,</text>
+<text x="640" y="526" font-size="12" fill="#f87171">sell program tiếp diễn</text>
+
+<text x="480" y="565" font-size="12" fill="#94a3b8" text-anchor="middle">Chart minh họa khái niệm, không phải dữ liệu giao dịch thật</text>
 </svg>

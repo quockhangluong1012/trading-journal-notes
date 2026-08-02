@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Thứ Ba lật kèo: range hẹp thứ Hai là mối nghi</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Backtest 42 tuần: tuần có Monday range hẹp -&gt; 67% lật kèo thứ Ba</text>
+
+  <!-- Monday narrow range -->
+  <rect x="100" y="300" width="280" height="60" fill="#4a90d9" opacity="0.10" stroke="#4a90d9" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="240" y="290" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a90d9">Thứ Hai: range 35 pip (hẹp)</text>
+
+  <g>
+    <line x1="140" y1="315" x2="140" y2="345" stroke="#26a69a" stroke-width="2"/>
+    <rect x="130" y="320" width="20" height="20" fill="#26a69a" rx="1"/>
+    <line x1="190" y1="310" x2="190" y2="340" stroke="#ef5350" stroke-width="2"/>
+    <rect x="180" y="315" width="20" height="20" fill="#ef5350" rx="1"/>
+    <line x1="240" y1="320" x2="240" y2="350" stroke="#26a69a" stroke-width="2"/>
+    <rect x="230" y="325" width="20" height="20" fill="#26a69a" rx="1"/>
+    <line x1="290" y1="315" x2="290" y2="345" stroke="#26a69a" stroke-width="2"/>
+    <rect x="280" y="320" width="20" height="20" fill="#26a69a" rx="1"/>
+  </g>
+  <text x="240" y="400" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">"cảm giác" bullish nhẹ - không có volume xác nhận</text>
+
+  <!-- equal highs/lows of Monday range -->
+  <line x1="100" y1="308" x2="380" y2="308" stroke="#b48ead" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.7"/>
+  <line x1="100" y1="352" x2="380" y2="352" stroke="#b48ead" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.7"/>
+  <text x="390" y="312" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#b48ead">high Mon</text>
+  <text x="390" y="356" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#b48ead">low Mon</text>
+
+  <!-- Tuesday: sweep both then reverse -->
+  <text x="700" y="290" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff6b6b">Thứ Ba: quét cả hai đầu rồi displacement</text>
+
+  <g>
+    <line x1="450" y1="290" x2="450" y2="330" stroke="#26a69a" stroke-width="2"/>
+    <rect x="440" y="295" width="20" height="30" fill="#26a69a" rx="1"/>
+  </g>
+  <text x="450" y="270" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#b48ead">quét high 08:15</text>
+
+  <line x1="500" y1="315" x2="500" y2="460" stroke="#ef5350" stroke-width="3"/>
+  <rect x="484" y="330" width="32" height="120" fill="#ef5350" rx="1"/>
+  <text x="500" y="495" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">displacement giảm mạnh</text>
+
+  <g>
+    <line x1="560" y1="440" x2="560" y2="490" stroke="#ef5350" stroke-width="2"/>
+    <rect x="550" y="445" width="20" height="35" fill="#ef5350" rx="1"/>
+    <line x1="610" y1="470" x2="610" y2="520" stroke="#ef5350" stroke-width="2"/>
+    <rect x="600" y="475" width="20" height="35" fill="#ef5350" rx="1"/>
+  </g>
+
+  <text x="900" y="450" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">bias tuần thật: bearish (lộ diện thứ Ba)</text>
+
+  <!-- data box -->
+  <rect x="750" y="500" width="400" height="110" rx="8" fill="#131722" stroke="#565b66" stroke-width="1"/>
+  <text x="950" y="527" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d1d4dc">Điều kiện để có hiệu lực</text>
+  <text x="950" y="552" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">range_monday &lt;= 55% range_avg_4wk</text>
+  <text x="950" y="575" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">-&gt; 67% lật kèo (vs 31% baseline)</text>
+  <text x="950" y="596" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">đợi quét 1 đầu range Mon trước khi tin</text>
+
+  <text x="640" y="670" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Xem EC-D2 - không nhầm với W2 (mid-week flip vì draw đã đạt xong)</text>
+</svg>

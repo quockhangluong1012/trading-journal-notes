@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="400" rx="12" fill="#0d1117"/>
+  <text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Tần suất thấp &amp; "quyết định fatigue" trong OSOK</text>
+  <text x="32" y="58" font-size="12" fill="#94a3b8">Sơ đồ khái niệm minh họa tâm lý chờ đợi, không phải dữ liệu thật</text>
+
+  <line x1="60" y1="320" x2="920" y2="320" stroke="#334155" stroke-width="2"/>
+  <g font-size="12" fill="#94a3b8" text-anchor="middle">
+    <text x="120" y="340">Mon</text>
+    <text x="300" y="340">Tue</text>
+    <text x="480" y="340">Wed</text>
+    <text x="660" y="340">Thu</text>
+    <text x="840" y="340">Fri</text>
+  </g>
+
+  <!-- fatigue curve rising then dropping after entry -->
+  <path d="M 120 280 Q 300 240 480 160 Q 560 130 660 260 Q 750 300 840 300" fill="none" stroke="#f97316" stroke-width="2.5"/>
+  <text x="480" y="140" font-size="12" fill="#f97316" text-anchor="middle">Đỉnh "thèm vào lệnh"</text>
+  <text x="480" y="156" font-size="11" fill="#94a3b8" text-anchor="middle">(chưa có A+ setup)</text>
+
+  <circle cx="620" cy="200" r="8" fill="#4ade80"/>
+  <text x="620" y="185" font-size="12" fill="#4ade80" text-anchor="middle">A+ setup xuất hiện → vào lệnh</text>
+
+  <text x="750" y="285" font-size="11.5" fill="#94a3b8" text-anchor="middle">Fatigue giảm sau khi</text>
+  <text x="750" y="300" font-size="11.5" fill="#94a3b8" text-anchor="middle">đã có 1 lệnh trong tuần</text>
+
+  <rect x="60" y="90" width="860" height="40" rx="6" fill="rgba(168,85,247,0.12)" stroke="#a855f7" stroke-dasharray="4 3"/>
+  <text x="490" y="115" font-size="12.5" fill="#a855f7" text-anchor="middle">Rủi ro: fatigue cao → dễ hạ chuẩn scorecard để "có lệnh" thay vì chờ A+ thật</text>
+</svg>

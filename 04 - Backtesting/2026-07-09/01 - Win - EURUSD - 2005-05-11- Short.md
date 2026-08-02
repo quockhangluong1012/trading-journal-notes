@@ -74,9 +74,9 @@ tags:
 
 > [!info] Ghi chú chuyển đổi template (2026-07-17)
 > File này được convert từ template backtest cũ sang **template POI & Step Decision**. Dữ liệu gốc (entry/SL/TP/result/lesson learned) được giữ nguyên. Một số điểm cần lưu ý khi convert:
-> 1. **POI thực tế là Balance Price Range (BPR)** — hai FVG đối nghịch chồng lên nhau (Bullish FVG 04/05 bị Bearish FVG 06/05 xuyên qua). Từ vựng chuẩn hiện tại của template chưa có mục riêng cho "BPR", nên tạm xếp `poi_type: FVG` với `poi_stack: FVG+FVG (BPR)` — **đề xuất Khang cân nhắc bổ sung "BPR" vào từ vựng chuẩn** vì đây là POI xuất hiện lặp lại trong bộ backtest.
+> 1. **POI thực tế là Balance Price Range (BPR)** — hai FVG đối nghịch chồng lên nhau (Bullish FVG 04/05 bị Bearish FVG 06/05 xuyên qua). Từ vựng chuẩn hiện tại của template chưa có mục riêng cho "BPR", nên tạm xếp `poi_type: FVG` với `poi_stack: FVG+FVG (BPR)` — **đề xuất  cân nhắc bổ sung "BPR" vào từ vựng chuẩn** vì đây là POI xuất hiện lặp lại trong bộ backtest.
 > 2. **Đã đối chiếu và sửa 1 lỗi tồn đọng**: bảng Backtest Summary bản gốc vẫn ghi R Multiple = 3.03, nhưng chính phần Lesson Learned gốc (mục 5.1) đã tự phát hiện và sửa con số đúng là **2.85R** (blended sau partial TP), khớp với `r_multiple: 2.85` đã có sẵn trong frontmatter. Bảng Summary bên dưới được cập nhật lại cho khớp — không đổi số liệu gốc, chỉ đồng bộ hai nơi đang mâu thuẫn nhau.
-> 3. **Session** gốc ghi chung "New York", không có mốc giờ cụ thể → tạm map sang `New York AM` theo từ vựng chuẩn; đây là suy luận, không phải số liệu Khang đã log giờ chính xác.
+> 3. **Session** gốc ghi chung "New York", không có mốc giờ cụ thể → tạm map sang `New York AM` theo từ vựng chuẩn; đây là suy luận, không phải số liệu  đã log giờ chính xác.
 
 ---
 

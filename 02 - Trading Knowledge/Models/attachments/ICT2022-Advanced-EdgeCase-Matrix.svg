@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480" y="32" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Ma trận Edge Case — 7 tình huống chuỗi hay gãy</text>
+<rect x="40" y="70" width="430" height="96" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+<text x="58" y="100" font-size="14" font-weight="700" fill="#f97316" text-anchor="start">① Double/Triple Sweep</text>
+<text x="58" y="124" font-size="12.5" font-weight="400" fill="#94a3b8" text-anchor="start">Quét nhiều pool trước displacement</text>
+<text x="58" y="146" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">Hiện tượng → nhận diện sớm → hành động đúng → bài học</text>
+<rect x="510" y="70" width="430" height="96" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+<text x="528" y="100" font-size="14" font-weight="700" fill="#a855f7" text-anchor="start">② FVG lấp ngay</text>
+<text x="528" y="124" font-size="12.5" font-weight="400" fill="#94a3b8" text-anchor="start">Không kịp retrace, POI tiêu</text>
+<text x="528" y="146" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">Hiện tượng → nhận diện sớm → hành động đúng → bài học</text>
+<rect x="40" y="190" width="430" height="96" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+<text x="58" y="220" font-size="14" font-weight="700" fill="#f97316" text-anchor="start">③ Sweep không reclaim</text>
+<text x="58" y="244" font-size="12.5" font-weight="400" fill="#94a3b8" text-anchor="start">Có thể là break thật</text>
+<text x="58" y="266" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">Hiện tượng → nhận diện sớm → hành động đúng → bài học</text>
+<rect x="510" y="190" width="430" height="96" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+<text x="528" y="220" font-size="14" font-weight="700" fill="#a855f7" text-anchor="start">④ MSS giả</text>
+<text x="528" y="244" font-size="12.5" font-weight="400" fill="#94a3b8" text-anchor="start">Failure to accept, liquidity grab</text>
+<text x="528" y="266" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">Hiện tượng → nhận diện sớm → hành động đúng → bài học</text>
+<rect x="40" y="310" width="430" height="96" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+<text x="58" y="340" font-size="14" font-weight="700" fill="#f97316" text-anchor="start">⑤ Gap cuối tuần</text>
+<text x="58" y="364" font-size="12.5" font-weight="400" fill="#94a3b8" text-anchor="start">Nuốt POI, tính lại R:R</text>
+<text x="58" y="386" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">Hiện tượng → nhận diện sớm → hành động đúng → bài học</text>
+<rect x="510" y="310" width="430" height="96" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+<text x="528" y="340" font-size="14" font-weight="700" fill="#a855f7" text-anchor="start">⑥ Tin ra giữa retrace</text>
+<text x="528" y="364" font-size="12.5" font-weight="400" fill="#94a3b8" text-anchor="start">Hủy limit, chờ displacement mới</text>
+<text x="528" y="386" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">Hiện tượng → nhận diện sớm → hành động đúng → bài học</text>
+<rect x="40" y="430" width="430" height="96" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+<text x="58" y="460" font-size="14" font-weight="700" fill="#f97316" text-anchor="start">⑦ Unswept liquidity</text>
+<text x="58" y="484" font-size="12.5" font-weight="400" fill="#94a3b8" text-anchor="start">Draw ngược chưa giải quyết</text>
+<text x="58" y="506" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">Hiện tượng → nhận diện sớm → hành động đúng → bài học</text>
+<text x="480" y="578" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Sơ đồ tổng hợp khái niệm các edge case — chi tiết xử lý xem văn bản kèm theo.</text>
+</svg>

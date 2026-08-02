@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="640" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Đo Overlap &amp; 4 kiểu Fill</text>
+<text x="32" y="80" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="start">Đo phần giao nhau về giá</text>
+<rect x="60" y="100" width="500" height="30" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="60" y="96" font-size="12" font-weight="400" fill="#ec4899" text-anchor="start">Breaker [low-high]</text>
+<rect x="240" y="145" width="400" height="30" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="240" y="141" font-size="12" font-weight="400" fill="#3b82f6" text-anchor="start">FVG [low-high]</text>
+<rect x="240" y="122" width="320" height="32" fill="rgba(168,85,247,0.35)" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="240" y="195" font-size="13" font-weight="700" fill="#a855f7" text-anchor="start">Phần giao nhau = Vùng Unicorn</text>
+<text x="640" y="80" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="start">4 kiểu fill overlap</text>
+<text x="640" y="110" font-size="13" font-weight="700" fill="#eab308" text-anchor="start">● Wick-fill</text>
+<text x="654" y="130" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Chỉ râu chạm mép — fill nông, CE</text>
+<text x="654" y="148" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">bị bỏ lại</text>
+<text x="640" y="170" font-size="13" font-weight="700" fill="#4ade80" text-anchor="start">● CE-fill (50%)</text>
+<text x="654" y="190" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Chuẩn — cân bằng khớp lệnh &amp; R:R</text>
+<text x="640" y="230" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">● Body-through</text>
+<text x="654" y="250" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Đóng xuyên qua = acceptance →</text>
+<text x="654" y="268" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">INVALID</text>
+<text x="640" y="290" font-size="13" font-weight="700" fill="#3b82f6" text-anchor="start">● Partial-fill</text>
+<text x="654" y="310" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Khớp 1 phần rồi chạy — R thực bị</text>
+<text x="654" y="328" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">méo</text>
+<text x="32" y="580" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Overlap chất lượng nhất khi Breaker &amp; FVG cùng một displacement/MSS.</text>
+<text x="32" y="600" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Sơ đồ khái niệm minh họa cách đo &amp; fill — không phải chart giá thật.</text>
+</svg>

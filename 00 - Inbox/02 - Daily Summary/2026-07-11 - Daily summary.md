@@ -68,7 +68,7 @@ Số liệu thật đọc trực tiếp từ 6 goal file:
 2. **[[Pass The5er first package challenge (10k$)]]** — `progress: 0`, `status: Not Started`, cột mốc **0/8**, log cuối **2026-06-23 (18 ngày)**. `phase` sai y hệt FTMO. ➡️ Cùng tình trạng.
 3. **[[Build a statistically validated backtest sample]]** — `progress: 6` (frontmatter), cột mốc **0/4 = 0%**, prose "Hiện tại: 10 backtest = 5%". **Mismatch:** frontmatter ghi **6** nhưng 10/200 thực = **5%**, còn theo cột mốc là **0%** — ba con số không khớp nhau. Log cuối 07-10 (1 ngày, chưa stale). Không có backtest mới hôm nay.
 4. **[[Master the ICT 2022 Model]]** — `progress: 30`, cột mốc **0/5 = 0%**, prose "10 setup (8W/2L ≈ 80%)". **Mismatch:** `progress 30` nhưng cột mốc 0/5 = 0%. Ràng buộc thật là **win rate >55%** với n=10 còn quá nhỏ. Log cuối 07-10. Không có setup mới hôm nay.
-5. **[[Hold daily journaling and process discipline]]** — `progress: 40`, cột mốc **0/4 = 0%**, log cuối 07-10. **Mismatch:** `progress 40` nhưng cột mốc 0/4 = 0% — cột mốc #1 ("Định nghĩa quy trình ghi nhật ký") đã dư bằng chứng để tick (chuỗi 7 ngày) nhưng Khang chưa tự tick. ➡️ Đây là goal **có chuyển động thật hôm nay** (xem Cập nhật bên dưới).
+5. **[[Hold daily journaling and process discipline]]** — `progress: 40`, cột mốc **0/4 = 0%**, log cuối 07-10. **Mismatch:** `progress 40` nhưng cột mốc 0/4 = 0% — cột mốc #1 ("Định nghĩa quy trình ghi nhật ký") đã dư bằng chứng để tick (chuỗi 7 ngày) nhưng  chưa tự tick. ➡️ Đây là goal **có chuyển động thật hôm nay** (xem Cập nhật bên dưới).
 6. **[[Cut my top 3 repeated mistakes]]** — `progress: 20`, cột mốc **0/4 = 0%**, log cuối **2026-07-08 (3 ngày — chạm ngưỡng stale)**. Cột mốc #1 (xác định top-3) và #2 (viết biện pháp) đã dư bằng chứng để tick từ 07-08. Không có lệnh live → số đếm lỗi không đổi.
 
 > [!summary] Verdict nhịp độ tới 2027-01-07 (còn 180 ngày)
@@ -80,7 +80,7 @@ Số liệu thật đọc trực tiếp từ 6 goal file:
 - ✅ **[[Hold daily journaling and process discipline]]:** đã thêm **1 dòng mới (2026-07-11)** — vì hôm nay có chuyển động thật: Daily Summary **thứ 8** (07-11) nối chuỗi journaling **7 ngày liên tiếp** (07-05→07-11) + 2 concept tái ôn có bằng chứng. Đây là số liệu nền của chỉ số "số ngày ghi nhật ký/tuần" nên đủ điều kiện log.
 - ❌ **Backtest sample / Master 2022:** KHÔNG thêm dòng — không có backtest/setup mới hôm nay, thêm dòng sẽ là dòng rỗng lặp lại.
 - ❌ **Cut top-3 mistakes:** KHÔNG thêm dòng — không có lệnh live, số đếm lỗi không đổi.
-- ❌ **FTMO / The5ers:** KHÔNG thêm dòng — **không có chuyển động thật** (bảng lot size chưa lập; đây là việc cần Khang tự làm, không tự bịa). Hai track vẫn stale 18 ngày → đã phản ánh ở Cảnh báo thay vì log rỗng.
+- ❌ **FTMO / The5ers:** KHÔNG thêm dòng — **không có chuyển động thật** (bảng lot size chưa lập; đây là việc cần  tự làm, không tự bịa). Hai track vẫn stale 18 ngày → đã phản ánh ở Cảnh báo thay vì log rỗng.
 
 ## 🔭 Việc cần làm ngày mai (07-12)
 
@@ -91,7 +91,7 @@ Feed thẳng vào daily-trading-task sáng mai — **ưu tiên xoá nợ track, 
 3. **Dán dòng `2026-W27`** (đã soạn trong [[2026-07 W27 - Weekly summary]]) vào [[02 - Skill Metrics]], tự chấm Chất lượng quy trình/Kỷ luật (1–5). **07-12 là chốt W28** → chuẩn bị luôn dòng W28.
 4. **Nối lại chuỗi backtest:** log ≥1 backtest mới vào `04 - Backtesting/2026-07-12/`, **đổi thị trường** sang NAS100/GBPUSD/XAUUSD (mẫu đang 9/10 EURUSD). Áp 4-gate pre-trade, chỉ tính entry sau nến đóng cửa có displacement thật.
 5. **Ôn [[18 - Kill Zones]] cho THẬT** (hôm nay chỉ sửa định dạng) — ứng viên `tested` #2 vì đã có lệnh phản chứng `invalid-out-of-KZ`.
-6. **Cân nhắc tick cột mốc đã dư bằng chứng** (Khang tự chấm, không tick giùm): journaling #1, cut-mistakes #1+#2 — rồi chỉnh `progress` frontmatter cho khớp cột mốc để xoá 3 mismatch đang tồn tại.
+6. **Cân nhắc tick cột mốc đã dư bằng chứng** ( tự chấm, không tick giùm): journaling #1, cut-mistakes #1+#2 — rồi chỉnh `progress` frontmatter cho khớp cột mốc để xoá 3 mismatch đang tồn tại.
 
 ## 🔗 Liên kết
 

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="32" font-size="16" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 3 — XAUUSD Short: "Good loss" -1R, SL đặt sai chỗ (trong POI)</text>
+<rect x="50" y="90" width="860" height="200" fill="rgba(239,68,68,0.08)" stroke="none" stroke-width="1.5" stroke-dasharray="0"/>
+<text x="60" y="106" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Premium D1 — Rejection Block H1</text>
+<rect x="200" y="150" width="140" height="60" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="200" y="142" font-size="12" font-weight="400" fill="#ec4899" text-anchor="start">Rejection Block</text>
+<text x="200" y="228" font-size="11" font-weight="400" fill="#4ade80" text-anchor="start">(invalidation thật: đóng &gt; 1304.11)</text>
+<line x1="60" y1="162" x2="850" y2="162" stroke="#f87171" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="300" y="154" font-size="11" font-weight="400" fill="#f87171" text-anchor="start">SL đặt ở đây — mép M1 swing nhỏ TRONG RB (quá chật)</text>
+<line x1="60" y1="180.0" x2="850" y2="180.0" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="620" y="172.0" font-size="11" font-weight="400" fill="#38bdf8" text-anchor="start">Entry tại CE/OTE 0.618 = 1301.482</text>
+<line x1="60" y1="304" x2="60" y2="331" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="54.0" y="310" width="12" height="15" fill="#ef4444"/>
+<line x1="82" y1="309" x2="82" y2="331" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="76.0" y="315" width="12" height="10" fill="#22c55e"/>
+<line x1="104" y1="309" x2="104" y2="334" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="98.0" y="315" width="12" height="13" fill="#ef4444"/>
+<line x1="126" y1="166.0" x2="126" y2="190.0" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="119.5" y="172.0" width="13" height="14.0" fill="#ef4444"/>
+<line x1="150" y1="156" x2="150" y2="190.0" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="143.5" y="166" width="13" height="20.0" fill="#22c55e"/>
+<circle cx="174" cy="162" r="12" fill="none" stroke="#f87171" stroke-width="2.5"/>
+<text x="84" y="142" font-size="11" font-weight="400" fill="#f87171" text-anchor="start">SL quét (retrace bình thường)</text>
+<line x1="200" y1="163" x2="200" y2="235" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="193.5" y="158" width="13" height="82" fill="#ef4444"/>
+<line x1="222" y1="245" x2="222" y2="305" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="215.5" y="240" width="13" height="70" fill="#ef4444"/>
+<line x1="244" y1="315" x2="244" y2="385" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="237.5" y="310" width="13" height="80" fill="#ef4444"/>
+<text x="180" y="420" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">Bias short vẫn đúng — nhưng lệnh này đã bị loại trước đó</text>
+<text x="480" y="575" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest — số liệu minh họa, không phải dữ liệu giao dịch thật kiểm chứng được.</text>
+</svg>

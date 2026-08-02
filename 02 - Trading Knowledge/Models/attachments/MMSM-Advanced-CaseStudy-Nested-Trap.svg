@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Case Study — Nested trap: H4 MMSM trong D1 MMBM (-0.5R, thoát sớm)</text>
+
+<!-- D1 uptrend backdrop -->
+<text x="60" y="70" font-size="13" fill="#94a3b8">D1: xu hướng tăng chính (MMBM lớn)</text>
+<polyline points="60,360 200,310 350,260 500,210 650,160 800,120 900,90" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.4"/>
+
+<!-- H4 MMSM inside -->
+<rect x="330" y="200" width="300" height="180" fill="rgba(56,189,248,0.06)" stroke="#38bdf8" stroke-dasharray="4 3"/>
+<text x="340" y="218" font-size="11" fill="#38bdf8">H4 MMSM bên trong</text>
+
+<line x1="330" y1="240" x2="630" y2="240" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<polyline points="340,340 380,340 380,300 420,300 420,260 460,260 460,240" fill="none" stroke="#22c55e" stroke-width="2"/>
+<circle cx="460" cy="240" r="14" fill="none" stroke="#f87171" stroke-width="2"/>
+<polyline points="460,240 500,270 540,295" fill="none" stroke="#ef4444" stroke-width="2"/>
+<circle cx="500" cy="270" r="5" fill="#f87171"/>
+<text x="500" y="315" font-size="11" fill="#f87171">Entry Sell tại FVG H4</text>
+
+<!-- then D1 trend resumes up -->
+<polyline points="540,295 580,260 620,220 660,180" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+<text x="660" y="165" font-size="11" fill="#4ade80">D1 tiếp tục tăng, nuốt luôn hồi H4</text>
+<line x1="500" y1="270" x2="960" y2="270" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="4 2"/>
+<text x="640" y="288" font-size="11" fill="#4ade80">SL một phần bị chạm — thoát sớm</text>
+
+<rect x="60" y="440" width="560" height="110" rx="8" fill="#1e293b" stroke="#334155"/>
+<text x="76" y="462" font-size="12" fill="#e5e7eb">D1 đang tăng mạnh → H4 MMSM chỉ là điều chỉnh, không phải đảo chiều</text>
+<text x="76" y="482" font-size="12" fill="#e5e7eb">Đúng ra: giảm size, chốt lời sớm tại đối trọng gần, không kỳ vọng SSL xa</text>
+<text x="76" y="502" font-size="12" fill="#4ade80">Kết quả: thoát sớm theo kế hoạch, -0.5R (đã giảm size trước)</text>
+
+<text x="480" y="575" font-size="12" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa</text>
+</svg>

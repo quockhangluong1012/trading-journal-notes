@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Cơ chế Seek and Destroy Friday — Accumulation → Sweep 2 phía → Distribution</text>
+<line x1="24" y1="480" x2="936" y2="480" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="380" x2="936" y2="380" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="280" x2="936" y2="280" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="180" x2="936" y2="180" stroke="#1f2937" stroke-width="1"/>
+<rect x="70" y="260" width="380" height="120" fill="rgba(59,130,246,0.10)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="260" y="252" font-size="13" fill="#3b82f6" text-anchor="middle">Mon–Thu: Consolidation (Accumulation)</text>
+<line x1="70" y1="270" x2="450" y2="270" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="455" y="266" font-size="11" fill="#eab308" text-anchor="start">Range High (BSL)</text>
+<line x1="70" y1="370" x2="450" y2="370" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="455" y="382" font-size="11" fill="#eab308" text-anchor="start">Range Low (SSL)</text>
+<line x1="100" y1="295" x2="100" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="94" y="300" width="12" height="40" fill="#22c55e"/>
+<line x1="140" y1="285" x2="140" y2="340" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="134" y="290" width="12" height="45" fill="#ef4444"/>
+<line x1="180" y1="305" x2="180" y2="355" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="174" y="310" width="12" height="40" fill="#22c55e"/>
+<line x1="220" y1="290" x2="220" y2="335" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="214" y="295" width="12" height="35" fill="#22c55e"/>
+<line x1="260" y1="300" x2="260" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="254" y="305" width="12" height="40" fill="#ef4444"/>
+<line x1="300" y1="280" x2="300" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="294" y="285" width="12" height="40" fill="#22c55e"/>
+<line x1="340" y1="310" x2="340" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="334" y="315" width="12" height="40" fill="#ef4444"/>
+<line x1="380" y1="290" x2="380" y2="340" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="374" y="295" width="12" height="40" fill="#ef4444"/>
+<line x1="420" y1="295" x2="420" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="414" y="300" width="12" height="40" fill="#22c55e"/>
+<text x="260" y="400" font-size="11" fill="#94a3b8" text-anchor="middle">Weekly bias RÕ, nhưng daily action không theo</text>
+<text x="260" y="414" font-size="11" fill="#94a3b8" text-anchor="middle">(divergence = dấu hiệu S&amp;D week)</text>
+<line x1="480" y1="100" x2="480" y2="480" stroke="#f87171" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="480" y="90" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">Tin lớn (NFP/FOMC/CPI)</text>
+<path d="M 500 370 L 540 420 L 580 300" fill="none" stroke="#f97316" stroke-width="2.5"/>
+<text x="540" y="440" font-size="11" fill="#f97316" text-anchor="middle">Sweep 1: quét SSL (Judas)</text>
+<line x1="560" y1="380" x2="620" y2="260" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="600" y="250" font-size="11" fill="#a855f7" text-anchor="middle">MSS/CISD lên</text>
+<line x1="640" y1="215" x2="640" y2="285" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="634" y="220" width="12" height="60" fill="#22c55e"/>
+<line x1="680" y1="185" x2="680" y2="255" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="674" y="190" width="12" height="60" fill="#22c55e"/>
+<line x1="720" y1="155" x2="720" y2="230" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="714" y="160" width="12" height="65" fill="#22c55e"/>
+<line x1="760" y1="135" x2="760" y2="205" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="754" y="140" width="12" height="60" fill="#22c55e"/>
+<line x1="800" y1="115" x2="800" y2="185" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="794" y="120" width="12" height="60" fill="#22c55e"/>
+<line x1="840" y1="105" x2="840" y2="170" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="834" y="110" width="12" height="55" fill="#22c55e"/>
+<line x1="880" y1="95" x2="880" y2="155" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="874" y="100" width="12" height="50" fill="#22c55e"/>
+<text x="800" y="100" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">Distribution: đi đúng weekly bias</text>
+<rect x="60" y="500" width="836" height="70" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="80" y="524" font-size="12" fill="#e5e7eb" text-anchor="start">Power of 3 nén vào 1 tuần: Accumulation (Mon–Thu) → Manipulation (sweep tại tin) → Distribution (sau sweep).</text>
+<text x="80" y="546" font-size="12" fill="#94a3b8" text-anchor="start">Cả 2 phía range đều bị quét trước khi move thật xảy ra — đây là lý do gọi "Seek and Destroy".</text>
+</svg>

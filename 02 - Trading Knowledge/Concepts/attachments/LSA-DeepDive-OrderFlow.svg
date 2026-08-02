@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <!-- grid -->
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="0" y1="90" x2="960" y2="90"/>
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+    <line x1="160" y1="30" x2="160" y2="510"/>
+    <line x1="320" y1="30" x2="320" y2="510"/>
+    <line x1="480" y1="30" x2="480" y2="510"/>
+    <line x1="640" y1="30" x2="640" y2="510"/>
+    <line x1="800" y1="30" x2="800" y2="510"/>
+  </g>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">Order Flow: Trigger (LTF) vs Target (HTF)</text>
+
+  <!-- HTF pool marker (target) at top -->
+  <line x1="60" y1="95" x2="900" y2="95" stroke="#f2c94c" stroke-width="2" stroke-dasharray="8,5"/>
+  <text x="70" y="85" font-family="Arial, sans-serif" font-size="16" fill="#f2c94c">HTF Pool (EQH/BSL) = TARGET, khong phai trigger</text>
+
+  <!-- HTF resting orders zone -->
+  <rect x="60" y="95" width="840" height="18" fill="rgba(242,201,76,0.12)"/>
+
+  <!-- big HTF OB zone -->
+  <rect x="380" y="240" width="220" height="90" fill="rgba(255,152,0,0.25)"/>
+  <text x="390" y="235" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">POI (H1 OB)</text>
+
+  <!-- candles down to POI (bearish setup, retrace up then reject) -->
+  <g>
+    <!-- retrace candles up into POI -->
+    <line x1="420" y1="200" x2="420" y2="260" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="412" y="210" width="16" height="35" fill="#26a69a"/>
+    <line x1="460" y1="190" x2="460" y2="250" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="452" y="200" width="16" height="35" fill="#26a69a"/>
+    <!-- LTF sweep wick tags local STH at POI edge -->
+    <line x1="500" y1="175" x2="500" y2="250" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="492" y="205" width="16" height="30" fill="#26a69a"/>
+    <text x="470" y="168" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">Sweep STH cuc bo (LTF)</text>
+    <line x1="497" y1="178" x2="530" y2="150" stroke="#ffffff" stroke-width="1.5"/>
+    <!-- MSS down candle -->
+    <line x1="540" y1="200" x2="540" y2="340" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="532" y="215" width="16" height="110" fill="#ef5350"/>
+    <text x="500" y="355" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">Displacement + MSS (M5)</text>
+    <!-- FVG from displacement -->
+    <rect x="520" y="240" width="60" height="35" fill="rgba(41,98,255,0.25)"/>
+    <text x="522" y="285" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">FVG entry</text>
+    <!-- continuing down candles toward HTF target far below -->
+    <line x1="580" y1="330" x2="580" y2="400" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="572" y="335" width="16" height="55" fill="#ef5350"/>
+    <line x1="620" y1="380" x2="620" y2="440" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="612" y="385" width="16" height="45" fill="#ef5350"/>
+  </g>
+
+  <!-- arrow from entry to target -->
+  <path d="M 545 260 L 545 460" stroke="#ffffff" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <text x="640" y="470" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">Target = SSL/pool HTF phia duoi (chua bi cham khi vao lenh)</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#ffffff"/>
+    </marker>
+  </defs>
+
+  <!-- legend -->
+  <g font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">
+    <rect x="60" y="490" width="14" height="14" fill="rgba(255,152,0,0.25)"/>
+    <text x="80" y="502">POI / Order Block</text>
+    <rect x="240" y="490" width="14" height="14" fill="rgba(41,98,255,0.25)"/>
+    <text x="260" y="502">FVG entry</text>
+    <line x1="380" y1="497" x2="410" y2="497" stroke="#f2c94c" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="415" y="502">Draw on liquidity (target HTF)</text>
+  </g>
+</svg>

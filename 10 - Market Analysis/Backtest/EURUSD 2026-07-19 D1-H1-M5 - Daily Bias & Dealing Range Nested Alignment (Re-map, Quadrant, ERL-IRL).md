@@ -35,13 +35,13 @@ tags:
 > **WATCHLIST — không vào lệnh.** Đây là note tổng hợp 3 lượt trao đổi trong cùng một phiên: (1) đọc top-down D1→H1→M5 theo [[01 - ICT 2022 Model|2022 Model]] cơ bản, (2) đào sâu Daily Bias + Dealing Range bằng chính framework nâng cao đã có sẵn trong vault ([[12 - Daily Bias]], [[12 - Dealing Range]], [[37 - Re-mapping Dealing Range sau Displacement]]). Note này **không lặp lại** lý thuyết ba bài đó — nó **áp dụng trực tiếp** vào ví dụ cụ thể, đồng thời phơi bày một xung đột quan trọng mà lượt đọc đầu tiên đã bỏ sót.
 
 > [!warning] Ảnh gốc & độ chính xác của số liệu
-> Toàn bộ phân tích dựa trên 3 ảnh chụp màn hình FXReplay (D1, H1, M5) Khang gửi trong chat — **chưa được lưu vào vault**. Nếu muốn tham chiếu lại chính xác, lưu 3 ảnh vào `10 - Market Analysis/Attachments/` với tên gợi ý `EURUSD-20260719-D1-1.png`, `EURUSD-20260719-H1-1.png`, `EURUSD-20260719-M5-1.png`, rồi thêm dòng `![[...]]` tương ứng vào mục 1–3 bên dưới. Mọi mức giá trong note này là **ước lượng đọc từ pixel ảnh** (D1 high 1.39918, low D1 range 1.34811, sweep ~1.35033/1.3520, đỉnh rally ~1.3670, giá hiện tại 1.36582 — mức này là số duy nhất đọc được rõ ràng từ nhãn giá trên ảnh) — không phải giá trích xuất chính xác từ nền tảng. Trước khi dùng case này cho một backtest thật, verify lại toàn bộ số trên chart gốc.
+> Toàn bộ phân tích dựa trên 3 ảnh chụp màn hình FXReplay (D1, H1, M5)  gửi trong chat — **chưa được lưu vào vault**. Nếu muốn tham chiếu lại chính xác, lưu 3 ảnh vào `10 - Market Analysis/Attachments/` với tên gợi ý `EURUSD-20260719-D1-1.png`, `EURUSD-20260719-H1-1.png`, `EURUSD-20260719-M5-1.png`, rồi thêm dòng `![[...]]` tương ứng vào mục 1–3 bên dưới. Mọi mức giá trong note này là **ước lượng đọc từ pixel ảnh** (D1 high 1.39918, low D1 range 1.34811, sweep ~1.35033/1.3520, đỉnh rally ~1.3670, giá hiện tại 1.36582 — mức này là số duy nhất đọc được rõ ràng từ nhãn giá trên ảnh) — không phải giá trích xuất chính xác từ nền tảng. Trước khi dùng case này cho một backtest thật, verify lại toàn bộ số trên chart gốc.
 
 ---
 
 ## 0. Bối cảnh & câu hỏi gốc
 
-Khang gửi 3 ảnh (D1/H1/M5) của EURUSD trên FXReplay, giai đoạn lịch sử khoảng Jun/2013–Jun/2014, và hỏi cách phân tích top-down theo [[01 - ICT 2022 Model|2022 Model]]: mỗi khung cần xác định gì, phân tích gì, chờ gì. Lượt đọc đầu tiên dựng một câu chuyện khá "sách giáo khoa": D1 có draw on liquidity xuống SSL 1.35033/1.34811, giá sweep xong displacement tăng mạnh, H1/M5 test lại vùng OB 1.36000–1.36316 để tìm Long.
+ gửi 3 ảnh (D1/H1/M5) của EURUSD trên FXReplay, giai đoạn lịch sử khoảng Jun/2013–Jun/2014, và hỏi cách phân tích top-down theo [[01 - ICT 2022 Model|2022 Model]]: mỗi khung cần xác định gì, phân tích gì, chờ gì. Lượt đọc đầu tiên dựng một câu chuyện khá "sách giáo khoa": D1 có draw on liquidity xuống SSL 1.35033/1.34811, giá sweep xong displacement tăng mạnh, H1/M5 test lại vùng OB 1.36000–1.36316 để tìm Long.
 
 Ở lượt thứ hai, khi đào sâu bằng đúng framework Daily Bias/Dealing Range nâng cao đã có trong vault, phát hiện ra một lớp quan trọng bị bỏ sót ở lượt đầu: **range H1 cũ đã "chết" sau displacement và bắt buộc phải re-map** — và khi re-map đúng, giá hiện tại (1.36582) hóa ra đang ở **Deep Premium của range mới**, không phải discount như cảm giác ban đầu ("đang test lại OB từ trên xuống, có vẻ để Long tiếp"). Đây chính là bài học lõi của note này.
 
@@ -58,7 +58,7 @@ Khang gửi 3 ảnh (D1/H1/M5) của EURUSD trên FXReplay, giai đoạn lịch 
 | Swing low | **1.34811** | External SSL thật — **chưa từng bị chạm** trong toàn bộ chuỗi sự kiện quan sát được |
 | Swing high | **1.39918** | External BSL — còn mở, là draw on liquidity xa |
 
-**Equilibrium** = (1.34811 + 1.39918) / 2 ≈ **1.37365** — đáng chú ý: mức kháng cự 1.37233 mà Khang tự kẻ trên chart nằm gần như đúng tại EQ này. Vùng consolidation nhiều tháng quanh 1.36–1.37 chính là thị trường "từ chối quyết định" quanh trung tâm giá trị của range (auction theory, mục A1 của [[12 - Dealing Range]]), không phải trùng hợp ngẫu nhiên.
+**Equilibrium** = (1.34811 + 1.39918) / 2 ≈ **1.37365** — đáng chú ý: mức kháng cự 1.37233 mà  tự kẻ trên chart nằm gần như đúng tại EQ này. Vùng consolidation nhiều tháng quanh 1.36–1.37 chính là thị trường "từ chối quyết định" quanh trung tâm giá trị của range (auction theory, mục A1 của [[12 - Dealing Range]]), không phải trùng hợp ngẫu nhiên.
 
 **Chia quadrant (biên độ 0.05107):**
 
@@ -69,7 +69,7 @@ Khang gửi 3 ảnh (D1/H1/M5) của EURUSD trên FXReplay, giai đoạn lịch 
 | 25–50% (Discount nông) | 1.36088 – 1.37365 | Long cần confluence mạnh |
 | **0–25% (Deep Discount)** | **1.34811 – 1.36088** | **Vùng Long tối ưu — OTE thường rơi vào đây** |
 
-Vùng OB Khang tự khoanh tay (1.36000–1.36316) nằm **gần như đúng tại ranh giới Deep Discount / Discount nông** — phần lớn box nằm trong Deep Discount. Đây là một xác nhận đẹp: OB vẽ bằng mắt trùng khớp với vùng có xác suất phản ứng cao nhất theo đúng lý thuyết quadrant.
+Vùng OB  tự khoanh tay (1.36000–1.36316) nằm **gần như đúng tại ranh giới Deep Discount / Discount nông** — phần lớn box nằm trong Deep Discount. Đây là một xác nhận đẹp: OB vẽ bằng mắt trùng khớp với vùng có xác suất phản ứng cao nhất theo đúng lý thuyết quadrant.
 
 **Kết luận tầng D1: vị trí = Deep Discount → điều kiện tiên quyết cho bias Bullish đã thỏa.**
 
@@ -120,7 +120,7 @@ Trên H1, range consolidation cũ (~1.36000–1.37233, kéo dài 22/5–05/6) đ
 |---|---|---|
 | **Discount** (deep) | **Premium** (deep, ~92%) | *"Xung đột: chờ H1 retrace về discount H1 (vẫn trong discount D1) rồi mới tìm Long"* |
 
-Hành động đúng, theo đúng chữ trong note gốc của Khang: **không đuổi mua tại 1.36582.** Chờ giá thoái lui về discount/EQ của range mới (~1.3520–1.3595), đúng khu vực hai hình chữ nhật xám Khang đã khoanh trên M5 (~1.360–1.3635) — đó chính là **internal liquidity (IRL) của range mới**, không phải đích đến.
+Hành động đúng, theo đúng chữ trong note gốc của : **không đuổi mua tại 1.36582.** Chờ giá thoái lui về discount/EQ của range mới (~1.3520–1.3595), đúng khu vực hai hình chữ nhật xám  đã khoanh trên M5 (~1.360–1.3635) — đó chính là **internal liquidity (IRL) của range mới**, không phải đích đến.
 
 ---
 
@@ -172,7 +172,7 @@ Invalidation: D1 đóng thân chấp nhận dưới 1.34811 (SSL thật bị l�
 
 Trục thời gian M5 hiển thị UTC+0. Cú sweep xảy ra quanh mốc **~12:00 UTC ≈ 08:00 NY** (EDT, tháng 6) — **không** rơi vào London Kill Zone cổ điển (~06:00–09:00 UTC = 02:00–05:00 NY), mà rơi sát cửa sổ **8:30 NY** ([[40 - Macro Times]]). Đây khớp với pattern **W1 – Delayed Judas** trong [[12 - Daily Bias]]: London không tạo displacement giữ hướng, manipulation thật chạy muộn hơn, gần giờ tin/giờ mở NY.
 
-> [!question] Cần Khang tự xác minh
+> [!question] Cần  tự xác minh
 > Giờ chính xác của cây nến sweep trên chart gốc, và (nếu muốn dùng case này cho backtest thật) tra lịch tin ngày 05/06/2014 cho EURUSD. Đây là giả thuyết dựa trên đọc trục thời gian từ ảnh, không phải xác nhận chắc chắn.
 
 Nếu đúng là Delayed Judas ngoài London KZ chuẩn, đây là lý do bổ sung để **hạ thêm một bậc tin cậy**, cần xác nhận LTF chắc chắn hơn trước khi entry.
@@ -190,7 +190,7 @@ Nếu đúng là Delayed Judas ngoài London KZ chuẩn, đây là lý do bổ s
 | Re-map range con sau displacement | ✅ thực hiện ở mục 3 — bước không được bỏ qua |
 | Nested alignment D1 vs H1 cùng phía | ❌ Xung đột — lý do CHƯA vào lệnh |
 | Giá đang ở POI (IRL) của range mới | ⏳ Đang tiến vào, chưa xác nhận phản ứng M1/M5 |
-| Weekly profile / lịch tin đã kiểm tra | ❓ Cần Khang tự tra thêm |
+| Weekly profile / lịch tin đã kiểm tra | ❓ Cần  tự tra thêm |
 | Kill Zone / Macro Time của cú sweep | ❓ Nghi vấn Delayed Judas — cần verify (mục 7) |
 
 ---
@@ -207,7 +207,7 @@ Nếu đúng là Delayed Judas ngoài London KZ chuẩn, đây là lý do bổ s
 ## 10. Bài học rút ra
 
 1. **Re-map không phải bước tùy chọn.** Ngay khi một displacement phá external của range con, phải vẽ lại range đó trước khi kết luận premium/discount — lượt đọc đầu tiên của buổi này bỏ qua bước này và suýt kết luận sai rằng giá "đang ở discount, chuẩn bị Long".
-2. **Quadrant chính xác hơn nhị phân 50/50.** OB khoanh tay của Khang trùng khớp gần như chính xác với ranh giới Deep Discount của D1 range — một xác nhận rằng trực giác đọc chart của Khang đang đi đúng hướng với lý thuyết.
+2. **Quadrant chính xác hơn nhị phân 50/50.** OB khoanh tay của  trùng khớp gần như chính xác với ranh giới Deep Discount của D1 range — một xác nhận rằng trực giác đọc chart của  đang đi đúng hướng với lý thuyết.
 3. **Nested range conflict là tín hiệu chờ, không phải tín hiệu hủy.** Discount D1 + Premium H1(mới) không có nghĩa là bias sai — nó có nghĩa là **chưa đúng lúc**; đúng theo chu kỳ ERL↔IRL, đây là Pha 2 (đang rebalance), cần kiên nhẫn chờ Pha 2 hoàn tất.
 4. **Internal pool rất sát external thật (partially consumed ở ranh giới) vẫn để lại rủi ro treo lơ lửng** — 1.34811 chưa bị chạm nghĩa là kịch bản "quay lại ăn nốt SSL sâu hơn" vẫn hợp lệ và cần có trong invalidation.
 5. **Giờ sweep lệch khỏi London KZ chuẩn đáng để nghi vấn Delayed Judas** — một lớp xác nhận bổ sung (hoặc cảnh báo hạ tier) mà nhiều trader bỏ qua vì chỉ nhìn hướng, không nhìn giờ.
@@ -224,7 +224,7 @@ Nếu đúng là Delayed Judas ngoài London KZ chuẩn, đây là lý do bổ s
 
 ## 12. Next steps
 
-- Nếu Khang tiếp tục replay và giá thực sự phản ứng đúng tại vùng 1.360–1.3635 (sweep + MSS + displacement M1/M5), tạo một file backtest riêng theo [[Backtest template - POI & Step Decision (ICT 2022)]] trong `04 - Backtesting/`, cross-link ngược về note này.
+- Nếu  tiếp tục replay và giá thực sự phản ứng đúng tại vùng 1.360–1.3635 (sweep + MSS + displacement M1/M5), tạo một file backtest riêng theo [[Backtest template - POI & Step Decision (ICT 2022)]] trong `04 - Backtesting/`, cross-link ngược về note này.
 - Nếu tình huống "nested range conflict" (Discount HTF / Premium LTF re-map) lặp lại nhiều lần trong quá trình backtest, đây là ứng viên tốt để thêm một case cụ thể vào [[12 - Dealing Range]] mục A2 (hiện bài đó có ma trận lý thuyết nhưng chưa có ví dụ số liệu đầy đủ).
 - Lưu 3 ảnh gốc vào `10 - Market Analysis/Attachments/` (tên gợi ý ở đầu note) để lần sau đối chiếu chính xác thay vì đọc lại ước lượng.
 - Nếu muốn luyện phản xạ, có thể quiz nhanh về quadrant/nested range/re-map để kiểm tra mức độ nắm vững trước khi áp dụng lên chart sống.

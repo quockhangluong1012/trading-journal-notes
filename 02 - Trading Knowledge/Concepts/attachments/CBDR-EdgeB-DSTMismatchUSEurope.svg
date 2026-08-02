@@ -1,0 +1,49 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+<text x="40" y="46" font-size="26" font-weight="bold" fill="#d1d4dc">Hai tuần DST lệch Mỹ-Âu: cửa sổ 14:00-20:00 NY chứa hành vi khác</text>
+<text x="40" y="70" font-size="15" fill="#787b86">Tháng 3 &amp; tháng 11 — Mỹ và châu Âu đổi giờ mùa không cùng ngày, offset GMT của cửa sổ CBDR trôi 1 tuần</text>
+
+<line x1="640" y1="95" x2="640" y2="660" stroke="#2a2e39" stroke-width="2"/>
+
+<rect x="55" y="100" width="230" height="30" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+<text x="170" y="120" font-size="14" fill="#ff6b6b" text-anchor="middle">Tuần lệch: US đã đổi, EU chưa</text>
+<text x="60" y="150" font-size="13" fill="#787b86">Chủ nhật 2 tuần trước DST tháng 3 (US spring forward sớm hơn EU 1 tuần)</text>
+
+<!-- timeline showing offset -->
+<rect x="60" y="200" width="540" height="30" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+<text x="70" y="220" font-size="13" fill="#4a90d9">14:00-20:00 NY (giờ Mỹ vừa DST) = 18:00-00:00 GMT</text>
+
+<rect x="60" y="250" width="540" height="30" fill="#ff9800" opacity="0.16" stroke="#ff9800" stroke-dasharray="6 4"/>
+<text x="70" y="270" font-size="13" fill="#ff9800">EU vẫn giờ mùa đông → London desk coi đây là 19:00-01:00 giờ London</text>
+
+<text x="70" y="320" font-size="13" fill="#d1d4dc">Hệ quả: cửa sổ "CBDR chuẩn" theo đồng hồ NY giờ trùng với</text>
+<text x="70" y="340" font-size="13" fill="#d1d4dc">GIỜ ĐẦU phiên Á CHÂU ÂU đã dịch, không còn đúng "cuối NY,</text>
+<text x="70" y="360" font-size="13" fill="#d1d4dc">trước khi Á mở" như thiết kế gốc — range bị lẫn hành vi phiên Á sớm.</text>
+
+<rect x="70" y="400" width="500" height="60" fill="#f2c94c" opacity="0.14" stroke="#f2c94c" stroke-dasharray="6 4"/>
+<text x="80" y="393" font-size="12" fill="#f2c94c">Range đo được: rộng hơn thường lệ vì lẫn London desk close sớm</text>
+
+<text x="70" y="500" font-size="13" fill="#d1d4dc">SD lệch hệ thống ~15-20% so với tuần trước/sau đó (backtest riêng)</text>
+
+<rect x="695" y="100" width="230" height="30" rx="6" fill="#26a69a" opacity="0.18" stroke="#26a69a"/>
+<text x="810" y="120" font-size="14" fill="#26a69a" text-anchor="middle">Tuần bình thường (cả hai đã DST)</text>
+
+<rect x="700" y="200" width="540" height="30" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+<text x="710" y="220" font-size="13" fill="#4a90d9">14:00-20:00 NY = 18:00-00:00 GMT (đồng bộ 2 bên)</text>
+
+<rect x="700" y="250" width="540" height="30" fill="#26a69a" opacity="0.14" stroke="#26a69a" stroke-dasharray="6 4"/>
+<text x="710" y="270" font-size="13" fill="#26a69a">EU cũng đã DST → offset GMT đúng như thiết kế gốc</text>
+
+<text x="710" y="320" font-size="13" fill="#d1d4dc">Range đo được: kích thước bình thường, đúng pha</text>
+<text x="710" y="340" font-size="13" fill="#d1d4dc">"cuối NY tích lũy trước khi Á mở" như lý thuyết mô tả</text>
+
+<rect x="710" y="400" width="500" height="60" fill="#26a69a" opacity="0.1" stroke="#26a69a" stroke-dasharray="6 4"/>
+<text x="720" y="393" font-size="12" fill="#26a69a">Range đo được: khớp phân phối lịch sử ~40 pip FX</text>
+
+<text x="710" y="500" font-size="13" fill="#d1d4dc">SD projection tin cậy như các tuần chuẩn khác</text>
+
+<line x1="60" y1="550" x2="1220" y2="550" stroke="#2a2e39"/>
+<text x="60" y="580" font-size="14" fill="#f2c94c">Rule: Mỹ đổi DST giữa tháng 3 (2 CN đầu) sớm hơn EU/UK ~2-3 tuần; tháng 11 Mỹ đổi muộn hơn EU ~1 tuần.</text>
+<text x="60" y="604" font-size="14" fill="#d1d4dc">Trong các tuần lệch này, gắn nhãn `dst_mismatch_week: Yes` và không tin SD projection bằng mức bình thường — hoặc bỏ hẳn.</text>
+<text x="60" y="628" font-size="13" fill="#787b86">2026: US DST bắt đầu 08/03, EU DST bắt đầu 29/03 — tuần lệch là 08/03-28/03.</text>
+</svg>

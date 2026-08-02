@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 2 — FOMO đu trend chiều thứ Sáu (Loss)</text>
+<line x1="24" y1="480" x2="936" y2="480" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="380" x2="936" y2="380" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="280" x2="936" y2="280" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="180" x2="936" y2="180" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="360" x2="900" y2="360" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="66" y="352" font-size="12" fill="#38bdf8" text-anchor="start">Weekly Open</text>
+<line x1="150" y1="300" x2="150" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="144.0" y="310" width="12" height="35" fill="#22c55e"/>
+<line x1="200" y1="250" x2="200" y2="310" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="194.0" y="255" width="12" height="50" fill="#22c55e"/>
+<line x1="250" y1="180" x2="250" y2="260" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="244.0" y="190" width="12" height="65" fill="#22c55e"/>
+<line x1="60" y1="180" x2="500" y2="180" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="500" y="172" font-size="12" fill="#eab308" text-anchor="end">Đỉnh tuần đã chín (4/4)</text>
+<line x1="300" y1="190" x2="300" y2="240" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="294.0" y="200" width="12" height="35" fill="#ef4444"/>
+<line x1="350" y1="205" x2="350" y2="255" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="344.0" y="215" width="12" height="35" fill="#ef4444"/>
+<!-- Fri: FOMO entry long near high without checking maturity -->
+<line x1="400" y1="195" x2="400" y2="250" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="394.0" y="200" width="12" height="35" fill="#22c55e"/>
+<circle cx="400" cy="195" r="5" fill="#f87171"/>
+<text x="406" y="185" font-size="11" font-weight="700" fill="#f87171" text-anchor="start">FOMO entry — không check</text>
+<text x="406" y="200" font-size="10" fill="#f87171" text-anchor="start">range maturity/lịch</text>
+<!-- then reversion crashes through weekly open sweeping stop -->
+<line x1="450" y1="220" x2="450" y2="290" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="444.0" y="230" width="12" height="55" fill="#ef4444"/>
+<line x1="500" y1="270" x2="500" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="494.0" y="280" width="12" height="60" fill="#ef4444"/>
+<line x1="550" y1="320" x2="550" y2="400" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="544.0" y="330" width="12" height="65" fill="#ef4444"/>
+<line x1="600" y1="380" x2="600" y2="440" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="594.0" y="390" width="12" height="45" fill="#ef4444"/>
+<line x1="60" y1="410" x2="900" y2="410" stroke="#f87171" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="610" y="402" font-size="11" fill="#f87171" text-anchor="start">Stop quét, xóa lợi nhuận tuần</text>
+<path d="M 400 195 L 600 425" stroke="#f87171" stroke-width="2.5" fill="none" marker-end="url(#arrLoss)"/>
+<rect x="60" y="440" width="836" height="80" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="80" y="464" font-size="12" fill="#e5e7eb" text-anchor="start">missing_step: range-maturity check + calendar check bị bỏ qua.</text>
+<text x="80" y="486" font-size="12" fill="#e5e7eb" text-anchor="start">Đu trend đúng lúc dòng vốn tổ chức giảm exposure = đứng sai phía dòng tiền.</text>
+<text x="80" y="508" font-size="12" fill="#e5e7eb" text-anchor="start">friday_action sai: vào lệnh mới không kiểm tra thay vì take-profit/manage.</text>
+<defs><marker id="arrLoss" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f87171"/></marker></defs>
+<text x="32" y="576" font-size="12" fill="#94a3b8" text-anchor="start">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa.</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="700" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">SIBI vs BISI — Phân biệt rõ ràng ngay từ định nghĩa</text>
+  <text x="40" y="62" font-size="15" fill="#94a3b8">Đo gap giữa 3 nến displacement; SIBI = bullish (đi lên), BISI = bearish (đi xuống)</text>
+
+  <!-- SIBI side (left) -->
+  <rect x="40" y="90" width="540" height="560" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="60" y="120" font-size="18" font-weight="bold" fill="#22c55e">SIBI — Sell-side Imbalance Buy-side Inefficiency</text>
+  <text x="60" y="142" font-size="13" fill="#94a3b8">Sinh ra từ displacement ĐI LÊN — BULLISH — nằm ở Premium</text>
+
+  <!-- 3 candles up -->
+  <line x1="130" y1="420" x2="130" y2="340" stroke="#22c55e" stroke-width="2"/>
+  <rect x="118" y="355" width="24" height="65" fill="#22c55e"/>
+  <text x="105" y="440" font-size="12" fill="#e2e8f0">C1</text>
+  <text x="90" y="335" font-size="12" fill="#94a3b8">high(C1)=1.0940</text>
+
+  <line x1="200" y1="380" x2="200" y2="240" stroke="#22c55e" stroke-width="3"/>
+  <rect x="186" y="260" width="28" height="120" fill="#22c55e"/>
+  <text x="180" y="230" font-size="12" fill="#e2e8f0">C2 (displacement)</text>
+
+  <line x1="270" y1="280" x2="270" y2="200" stroke="#22c55e" stroke-width="2"/>
+  <rect x="258" y="210" width="24" height="70" fill="#22c55e"/>
+  <text x="255" y="440" font-size="12" fill="#e2e8f0">C3</text>
+  <text x="255" y="195" font-size="12" fill="#94a3b8">low(C3)=1.0958</text>
+
+  <!-- SIBI gap zone -->
+  <rect x="90" y="280" width="220" height="55" fill="#22c55e" opacity="0.22"/>
+  <text x="330" y="300" font-size="13" fill="#22c55e">SIBI gap</text>
+  <text x="330" y="318" font-size="12" fill="#94a3b8">high(C1)→low(C3)</text>
+  <line x1="90" y1="307" x2="310" y2="307" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="330" y="335" font-size="12" fill="#eab308">CE = 1.0949 (mean threshold)</text>
+
+  <rect x="60" y="470" width="500" height="160" fill="#0f1420" stroke="#334155" rx="6"/>
+  <text x="80" y="495" font-size="13" fill="#e2e8f0">"Sell-side Imbalance" = phía BÁN bị nuốt/áp đảo</text>
+  <text x="80" y="518" font-size="13" fill="#e2e8f0">"Buy-side Inefficiency" = việc MUA không hiệu quả (bỏ gap)</text>
+  <text x="80" y="548" font-size="13" fill="#22c55e" font-weight="bold">→ KHÔNG phải tín hiệu bán. Đây là vùng BULLISH.</text>
+  <text x="80" y="578" font-size="13" fill="#94a3b8">Vai trò: hỗ trợ khi giá retrace về; kháng cự/target khi</text>
+  <text x="80" y="598" font-size="13" fill="#94a3b8">tiếp cận từ dưới lên (sell-side delivery point).</text>
+  <text x="80" y="620" font-size="13" fill="#a78bfa">Tương đương = Bullish FVG (cùng vật thể, khác lăng kính)</text>
+
+  <!-- BISI side (right) -->
+  <rect x="620" y="90" width="540" height="560" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="640" y="120" font-size="18" font-weight="bold" fill="#ef4444">BISI — Buy-side Imbalance Sell-side Inefficiency</text>
+  <text x="640" y="142" font-size="13" fill="#94a3b8">Sinh ra từ displacement ĐI XUỐNG — BEARISH — nằm ở Discount</text>
+
+  <line x1="710" y1="240" x2="710" y2="320" stroke="#ef4444" stroke-width="2"/>
+  <rect x="698" y="240" width="24" height="65" fill="#ef4444"/>
+  <text x="685" y="335" font-size="12" fill="#e2e8f0">C1</text>
+  <text x="670" y="230" font-size="12" fill="#94a3b8">low(C1)=1.0958</text>
+
+  <line x1="780" y1="280" x2="780" y2="420" stroke="#ef4444" stroke-width="3"/>
+  <rect x="766" y="290" width="28" height="120" fill="#ef4444"/>
+  <text x="760" y="440" font-size="12" fill="#e2e8f0">C2 (displacement)</text>
+
+  <line x1="850" y1="380" x2="850" y2="460" stroke="#ef4444" stroke-width="2"/>
+  <rect x="838" y="380" width="24" height="70" fill="#ef4444"/>
+  <text x="835" y="200" font-size="12" fill="#e2e8f0">C3</text>
+  <text x="825" y="478" font-size="12" fill="#94a3b8">high(C3)=1.0940</text>
+
+  <rect x="670" y="325" width="220" height="55" fill="#ef4444" opacity="0.22"/>
+  <text x="910" y="345" font-size="13" fill="#ef4444">BISI gap</text>
+  <text x="910" y="363" font-size="12" fill="#94a3b8">low(C1)→high(C3)</text>
+  <line x1="670" y1="352" x2="890" y2="352" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="910" y="380" font-size="12" fill="#eab308">CE = 1.0949</text>
+
+  <rect x="640" y="470" width="500" height="160" fill="#0f1420" stroke="#334155" rx="6"/>
+  <text x="660" y="495" font-size="13" fill="#e2e8f0">"Buy-side Imbalance" = phía MUA bị nuốt/áp đảo</text>
+  <text x="660" y="518" font-size="13" fill="#e2e8f0">"Sell-side Inefficiency" = việc BÁN không hiệu quả (bỏ gap)</text>
+  <text x="660" y="548" font-size="13" fill="#ef4444" font-weight="bold">→ KHÔNG phải tín hiệu mua. Đây là vùng BEARISH.</text>
+  <text x="660" y="578" font-size="13" fill="#94a3b8">Vai trò: kháng cự khi giá retrace lên; hỗ trợ/target khi</text>
+  <text x="660" y="598" font-size="13" fill="#94a3b8">tiếp cận từ trên xuống (buy-side delivery point).</text>
+  <text x="660" y="620" font-size="13" fill="#a78bfa">Tương đương = Bearish FVG (cùng vật thể, khác lăng kính)</text>
+
+  <text x="400" y="680" font-size="14" fill="#eab308" font-weight="bold">Mẹo nhớ: chữ cái đầu ("S" hay "B") = phía bị Imbalance/nuốt, KHÔNG phải hướng giá đề xuất trade.</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Bias bằng phép loại trừ - 4 bước quyết định</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Backtest 60 ngày "neutral" ban đầu: 35% rút ra được bias yếu qua loại trừ</text>
+
+  <!-- 4 step flow -->
+  <rect x="60" y="120" width="260" height="90" rx="8" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="190" y="148" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a90d9">Bước 1: P/D rõ ràng?</text>
+  <text x="190" y="172" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#d1d4dc">D1 range 4 ngày quá hẹp</text>
+  <text x="190" y="192" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">✗ loại bỏ cơ sở P/D</text>
+
+  <path d="M 320 165 L 360 165" stroke="#565b66" stroke-width="2" marker-end="url(#arrow1)"/>
+
+  <rect x="370" y="120" width="260" height="90" rx="8" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="500" y="148" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a90d9">Bước 2: draw vượt trội?</text>
+  <text x="500" y="172" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#d1d4dc">BSL và SSL ngang nhau</text>
+  <text x="500" y="192" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">✗ loại bỏ cơ sở draw chính</text>
+
+  <path d="M 630 165 L 670 165" stroke="#565b66" stroke-width="2" marker-end="url(#arrow1)"/>
+
+  <rect x="680" y="120" width="260" height="90" rx="8" fill="#f2c94c" opacity="0.16" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="810" y="148" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#f2c94c">Bước 3: PD Array vừa được tôn trọng?</text>
+  <text x="810" y="172" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#d1d4dc">OB H4 vừa bắt giá hôm trước</text>
+  <text x="810" y="192" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">✓ tín hiệu yếu, nghiêng bullish</text>
+
+  <path d="M 940 165 L 980 165" stroke="#565b66" stroke-width="2" marker-end="url(#arrow1)"/>
+
+  <rect x="990" y="120" width="220" height="90" rx="8" fill="#787b86" opacity="0.14" stroke="#787b86" stroke-width="1.5"/>
+  <text x="1100" y="148" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d1d4dc">Bước 4: nếu không có gì</text>
+  <text x="1100" y="172" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">Neutral chính thức</text>
+  <text x="1100" y="192" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">áp dụng quy tắc "không lệnh"</text>
+
+  <defs>
+    <marker id="arrow1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#565b66"/>
+    </marker>
+  </defs>
+
+  <!-- Result box -->
+  <rect x="300" y="260" width="680" height="140" rx="8" fill="#131722" stroke="#565b66" stroke-width="1"/>
+  <text x="640" y="290" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#d1d4dc">Kết quả backtest 60 ngày "neutral" ban đầu</text>
+  <text x="640" y="320" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">35% dừng ở bước 3: bias yếu, size &lt;= 50%</text>
+  <text x="640" y="348" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">65% dừng ở bước 4: Neutral thật, đứng ngoài</text>
+  <text x="640" y="376" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">phân biệt 2 nhóm này giúp không bỏ lỡ edge nhỏ có thật</text>
+
+  <!-- example NQ chart small -->
+  <g>
+    <line x1="350" y1="470" x2="350" y2="510" stroke="#26a69a" stroke-width="2"/>
+    <rect x="340" y="475" width="20" height="30" fill="#26a69a" rx="1" opacity="0.6"/>
+    <line x1="400" y1="480" x2="400" y2="520" stroke="#ef5350" stroke-width="2"/>
+    <rect x="390" y="485" width="20" height="30" fill="#ef5350" rx="1" opacity="0.6"/>
+    <line x1="450" y1="465" x2="450" y2="505" stroke="#26a69a" stroke-width="2"/>
+    <rect x="440" y="470" width="20" height="30" fill="#26a69a" rx="1" opacity="0.6"/>
+    <line x1="500" y1="475" x2="500" y2="515" stroke="#ef5350" stroke-width="2"/>
+    <rect x="490" y="480" width="20" height="30" fill="#ef5350" rx="1" opacity="0.6"/>
+  </g>
+  <text x="425" y="550" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">NQ D1: sideway 4 ngày, không rõ P/D lẫn draw</text>
+
+  <text x="640" y="650" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Ghi bias_method: full/elimination/neutral riêng biệt trong journal</text>
+
+  <text x="640" y="695" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Xem EC-D4 và CS-D2 - ví dụ thua đúng theo quy trình</text>
+</svg>

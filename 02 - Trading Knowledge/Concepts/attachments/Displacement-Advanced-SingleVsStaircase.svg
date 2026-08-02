@@ -1,0 +1,68 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Hai hình thái Displacement hợp lệ: Single mega-candle vs Staircase</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cả hai đều đáng tin nếu thỏa các tiêu chí đo lường ở §3.1 — khác nhau về hình dạng, không khác nhau về độ tin cậy</text>
+
+  <!-- Panel 1: single mega candle -->
+  <rect x="24" y="72" width="344" height="352" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="94" font-size="13.5" font-weight="700" fill="#15803D">① Single mega-candle</text>
+  <text x="36" y="110" font-size="10" fill="#6B7280">Thường gặp: NQ1/NDX quanh tin, gap mở phiên RTH, XAUUSD quanh CPI/FOMC</text>
+
+  <line x1="44" y1="330" x2="340" y2="330" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="48" y="324" font-size="9" fill="#6B7280">mức cấu trúc</text>
+
+  <!-- small candles before -->
+  <rect x="60" y="300" width="2" height="24" fill="#DC2626"/><rect x="54" y="304" width="12" height="16" fill="#DC2626" rx="1" opacity="0.6"/>
+  <rect x="88" y="296" width="2" height="24" fill="#DC2626"/><rect x="82" y="300" width="12" height="16" fill="#DC2626" rx="1" opacity="0.6"/>
+  <rect x="116" y="292" width="2" height="24" fill="#DC2626"/><rect x="110" y="296" width="12" height="16" fill="#DC2626" rx="1" opacity="0.6"/>
+  <circle cx="122" cy="316" r="6" fill="none" stroke="#B45309" stroke-width="2.2"/>
+  <text x="60" y="342" font-size="8.5" fill="#B45309">sweep</text>
+
+  <!-- one giant candle -->
+  <rect x="180" y="120" width="4" height="210" fill="#16A34A"/>
+  <rect x="164" y="132" width="36" height="186" fill="#16A34A" rx="2"/>
+  <text x="150" y="112" font-size="9.5" fill="#15803D" font-weight="700">1 nến duy nhất — body/range rất cao</text>
+
+  <!-- FVG box -->
+  <rect x="164" y="150" width="36" height="60" fill="#3B82F6" opacity="0.22"/>
+  <text x="205" y="185" font-size="9" fill="#1D4ED8" font-weight="700">FVG lớn,</text>
+  <text x="205" y="197" font-size="9" fill="#1D4ED8" font-weight="700">biên rõ</text>
+
+  <path d="M200,150 L340,90" stroke="#16A34A" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="212" y="86" font-size="9" fill="#15803D">tiếp diễn sau đó</text>
+
+  <rect x="36" y="360" width="308" height="52" rx="6" fill="#16A34A" opacity="0.07" stroke="#16A34A" stroke-width="1"/>
+  <text x="44" y="376" font-size="9.5" fill="#166534">Entry phù hợp: CE của FVG lớn,</text>
+  <text x="44" y="390" font-size="9.5" fill="#166534">hoặc hạ M1 để refine nếu retrace nông</text>
+  <text x="44" y="404" font-size="9" fill="#B45309">Rủi ro: dễ nhầm exhaustion spike nếu bỏ qua bước kiểm tra sweep</text>
+
+  <!-- Panel 2: staircase -->
+  <rect x="392" y="72" width="344" height="352" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="404" y="94" font-size="13.5" font-weight="700" fill="#1D4ED8">② Staircase (chuỗi nến)</text>
+  <text x="404" y="110" font-size="10" fill="#6B7280">Thường gặp: EURUSD/GBPUSD London Open, continuation leg khi trend đã thiết lập</text>
+
+  <line x1="412" y1="330" x2="708" y2="330" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="416" y="324" font-size="9" fill="#6B7280">mức cấu trúc</text>
+
+  <rect x="428" y="300" width="2" height="24" fill="#DC2626"/><rect x="422" y="304" width="12" height="16" fill="#DC2626" rx="1" opacity="0.6"/>
+  <rect x="456" y="296" width="2" height="24" fill="#DC2626"/><rect x="450" y="300" width="12" height="16" fill="#DC2626" rx="1" opacity="0.6"/>
+  <circle cx="462" cy="316" r="6" fill="none" stroke="#B45309" stroke-width="2.2"/>
+  <text x="428" y="342" font-size="8.5" fill="#B45309">sweep</text>
+
+  <!-- staircase candles -->
+  <rect x="500" y="260" width="2" height="70" fill="#1D4ED8"/><rect x="494" y="266" width="12" height="60" fill="#1D4ED8" rx="1"/>
+  <rect x="528" y="210" width="2" height="70" fill="#1D4ED8"/><rect x="522" y="216" width="12" height="60" fill="#1D4ED8" rx="1"/>
+  <rect x="556" y="160" width="2" height="70" fill="#1D4ED8"/><rect x="550" y="166" width="12" height="60" fill="#1D4ED8" rx="1"/>
+  <rect x="584" y="120" width="2" height="60" fill="#1D4ED8"/><rect x="578" y="126" width="12" height="50" fill="#1D4ED8" rx="1"/>
+
+  <!-- nested fvg boxes -->
+  <rect x="522" y="230" width="34" height="24" fill="#0D9488" opacity="0.2"/>
+  <rect x="550" y="180" width="34" height="24" fill="#0D9488" opacity="0.2"/>
+  <text x="592" y="195" font-size="9" fill="#0F766E" font-weight="700">FVG nhỏ lồng nhau</text>
+  <text x="592" y="208" font-size="9" fill="#0F766E" font-weight="700">(nested) giữa chuỗi</text>
+
+  <rect x="404" y="360" width="308" height="52" rx="6" fill="#1D4ED8" opacity="0.06" stroke="#1D4ED8" stroke-width="1"/>
+  <text x="412" y="376" font-size="9.5" fill="#1D4ED8">Entry phù hợp: hạ M1 tìm nested FVG</text>
+  <text x="412" y="390" font-size="9.5" fill="#1D4ED8">ngay giữa chuỗi (Aggressive Displacement Entry)</text>
+  <text x="412" y="404" font-size="9" fill="#B45309">Rủi ro: bị đánh giá thấp nếu không cộng dồn body-to-range cả chuỗi</text>
+</svg>

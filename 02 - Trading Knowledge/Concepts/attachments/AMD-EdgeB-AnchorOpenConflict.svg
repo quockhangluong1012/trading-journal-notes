@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Anchor PO3: Midnight Open vs 08:30 Open — cùng ngày, hai kết luận</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">NQ — giá nằm trên một mốc, dưới mốc kia, cùng lúc</text>
+
+  <line x1="40" y1="400" x2="1240" y2="400" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- price path from midnight to 08:30 to now -->
+  <g>
+    <line x1="100" y1="280" x2="100" y2="360" stroke="#26a69a" stroke-width="1"/>
+    <rect x="92" y="290" width="16" height="55" rx="1" fill="#26a69a"/>
+    <line x1="140" y1="250" x2="140" y2="330" stroke="#ef5350" stroke-width="1"/>
+    <rect x="132" y="260" width="16" height="55" rx="1" fill="#ef5350"/>
+    <line x1="180" y1="290" x2="180" y2="370" stroke="#ef5350" stroke-width="1"/>
+    <rect x="172" y="300" width="16" height="55" rx="1" fill="#ef5350"/>
+  </g>
+  <text x="70" y="260" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">00:00 ET Midnight Open = 18420</text>
+
+  <!-- midnight open reference line spanning full width -->
+  <line x1="100" y1="300" x2="1240" y2="300" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="820" y="293" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Midnight Open 18420</text>
+
+  <!-- price drifts down through asia/london, then at 08:30 marks new open lower -->
+  <g>
+    <line x1="220" y1="330" x2="220" y2="410" stroke="#ef5350" stroke-width="1"/>
+    <rect x="212" y="340" width="16" height="55" rx="1" fill="#ef5350"/>
+    <line x1="260" y1="360" x2="260" y2="440" stroke="#ef5350" stroke-width="1"/>
+    <rect x="252" y="370" width="16" height="55" rx="1" fill="#ef5350"/>
+  </g>
+
+  <!-- 08:30 open marker -->
+  <line x1="300" y1="130" x2="300" y2="640" stroke="#ff9800" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="215" y="120" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff9800">08:30 ET NY Open = 18395</text>
+
+  <line x1="300" y1="405" x2="1240" y2="405" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="1080" y="425" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#4a90d9">08:30 Open 18395</text>
+
+  <!-- current price sits between the two references -->
+  <g>
+    <line x1="340" y1="330" x2="340" y2="410" stroke="#26a69a" stroke-width="1"/>
+    <rect x="332" y="340" width="16" height="55" rx="1" fill="#26a69a"/>
+    <line x1="380" y1="300" x2="380" y2="380" stroke="#26a69a" stroke-width="1"/>
+    <rect x="372" y="310" width="16" height="55" rx="1" fill="#26a69a"/>
+  </g>
+  <text x="400" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#d1d4dc">Giá hiện tại: 18410</text>
+
+  <!-- two conclusion boxes -->
+  <rect x="580" y="140" width="300" height="90" rx="8" fill="#ff6b6b" opacity="0.14" stroke="#ff6b6b" stroke-dasharray="6 4"/>
+  <text x="595" y="165" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">Neo Midnight Open (18420):</text>
+  <text x="595" y="187" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">giá 18410 &lt; open → vẫn dưới,</text>
+  <text x="595" y="209" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">bias ngày vẫn bearish/chưa reclaim</text>
+
+  <rect x="580" y="450" width="300" height="90" rx="8" fill="#26a69a" opacity="0.14" stroke="#26a69a" stroke-dasharray="6 4"/>
+  <text x="595" y="475" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">Neo 08:30 Open (18395):</text>
+  <text x="595" y="497" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">giá 18410 &gt; open → đã reclaim,</text>
+  <text x="595" y="519" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">bias distribution bullish đang chạy</text>
+
+  <rect x="920" y="150" width="290" height="70" rx="8" fill="#f2c94c" opacity="0.14" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="935" y="175" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">Rule: khoá MỘT anchor cho</text>
+  <text x="935" y="197" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#f2c94c">toàn hệ thống, ghi rõ trong playbook</text>
+
+  <text x="40" y="690" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">NQ M15 · minh họa cấu trúc — hai mốc open hợp lệ theo hai trường phái, không thể dùng lẫn trong 1 ngày</text>
+</svg>

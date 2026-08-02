@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Đồng pha Premium/Discount — D1 dealing range ⊇ H1 dealing range</text>
+<rect x="60" y="80" width="840" height="460" rx="10" fill="none" stroke="#38bdf8" stroke-width="2"/>
+<text x="80" y="104" font-size="14" font-weight="700" fill="#38bdf8" text-anchor="start">D1 dealing range</text>
+<rect x="60" y="80" width="840" height="230" fill="rgba(239,68,68,0.08)" stroke="none" stroke-width="1.5" stroke-dasharray="0"/>
+<rect x="60" y="310" width="840" height="230" fill="rgba(34,197,94,0.08)" stroke="none" stroke-width="1.5" stroke-dasharray="0"/>
+<line x1="60" y1="310" x2="900" y2="310" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="640" y="304" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">EQ 50% D1 (Premium trên / Discount dưới)</text>
+<rect x="140" y="360" width="360" height="150" rx="8" fill="none" stroke="#a855f7" stroke-width="2"/>
+<text x="155" y="382" font-size="13" font-weight="700" fill="#a855f7" text-anchor="start">H1 dealing range</text>
+<line x1="140" y1="435" x2="500" y2="435" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="420" y="430" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">EQ 50% H1</text>
+<text x="155" y="500" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">Discount H1</text>
+<text x="155" y="400" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">Premium H1</text>
+<circle cx="620" cy="440" r="16" fill="none" stroke="#4ade80" stroke-width="2.5"/>
+<text x="620" y="445" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">OK</text>
+<text x="500" y="480" font-size="12" font-weight="400" fill="#4ade80" text-anchor="middle">Đồng pha: D1 Discount + H1 Discount</text>
+<rect x="560" y="150" width="300" height="120" rx="8" fill="none" stroke="#f87171" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="575" y="172" font-size="12" font-weight="700" fill="#f87171" text-anchor="start">H1 range LỆCH (ví dụ)</text>
+<text x="575" y="190" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">D1=Discount nhưng H1=Premium</text>
+<text x="575" y="206" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">→ Chờ H1 sweep+retrace trước</text>
+<line x1="560" y1="220" x2="860" y2="220" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="700" y="252" font-size="12" fill="#f87171" text-anchor="middle">X = vào ngay = sai</text>
+<text x="480" y="570" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Sơ đồ khái niệm minh họa quan hệ hai khung — không phải chart giá thật.</text>
+</svg>

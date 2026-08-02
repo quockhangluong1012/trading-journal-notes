@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Arial, sans-serif">
+
+<rect width="960" height="520" rx="12" fill="#0d1117"/>
+<text x="480.0" y="36.0" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">CBDR + SD Projection, Asian range nằm trong CBDR</text>
+<rect x="100.0" y="200.0" width="760.0" height="60.0" rx="0" fill="rgba(59,130,246,0.20)" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="100.0" y="188.0" font-size="13" font-weight="400" fill="#3b82f6" text-anchor="start">CBDR (14h–20h NY) — 28 pip</text>
+<line x1="100.0" y1="140.0" x2="860.0" y2="140.0" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="100.0" y1="320.0" x2="860.0" y2="320.0" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="868.0" y="144.0" font-size="11.5" font-weight="400" fill="#eab308" text-anchor="start">1 SD</text>
+<text x="868.0" y="324.0" font-size="11.5" font-weight="400" fill="#eab308" text-anchor="start">1 SD</text>
+<line x1="100.0" y1="80.0" x2="860.0" y2="80.0" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="100.0" y1="380.0" x2="860.0" y2="380.0" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="868.0" y="84.0" font-size="11.5" font-weight="400" fill="#eab308" text-anchor="start">2 SD</text>
+<text x="868.0" y="384.0" font-size="11.5" font-weight="400" fill="#eab308" text-anchor="start">2 SD</text>
+<line x1="100.0" y1="20.0" x2="860.0" y2="20.0" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="100.0" y1="440.0" x2="860.0" y2="440.0" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="868.0" y="24.0" font-size="11.5" font-weight="400" fill="#eab308" text-anchor="start">3 SD</text>
+<text x="868.0" y="444.0" font-size="11.5" font-weight="400" fill="#eab308" text-anchor="start">3 SD</text>
+<rect x="300.0" y="215.0" width="360.0" height="30.0" rx="0" fill="rgba(168,85,247,0.25)" stroke="#a855f7" stroke-width="1.5"/>
+<text x="300.0" y="205.0" font-size="12" font-weight="400" fill="#a855f7" text-anchor="start">Asian range (20h–0h) — 18 pip</text>
+</svg>

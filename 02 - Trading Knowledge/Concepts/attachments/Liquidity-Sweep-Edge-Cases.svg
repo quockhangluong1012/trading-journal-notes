@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="780" fill="#0f1420" rx="12"/>
+
+  <text x="600" y="40" font-size="26" font-weight="bold" fill="#e2e8f0" text-anchor="middle">Edge Case đắt giá nhất: Liquidation Cascade giả dạng Sweep chất lượng cao (EC5)</text>
+  <text x="600" y="64" font-size="15" fill="#94a3b8" text-anchor="middle">BTCUSD — độ sâu sweep lớn không phản ánh thanh khoản tự nguyện</text>
+
+  <g stroke="#1c2333"><line x1="60" y1="100" x2="1140" y2="100"/><line x1="60" y1="230" x2="1140" y2="230"/><line x1="60" y1="360" x2="1140" y2="360"/></g>
+
+  <text x="70" y="120" font-size="13" fill="#94a3b8">Funding rate cực đoan trước sweep — dấu hiệu cảnh báo cascade</text>
+
+  <rect x="70" y="135" width="480" height="30" fill="#1e293b" stroke="#334155" rx="4"/>
+  <rect x="70" y="135" width="380" height="30" fill="#ef4444" opacity="0.5"/>
+  <text x="80" y="155" font-size="12.5" fill="#e2e8f0">Funding rate: +0.18% (rất cao, dấu hiệu quá tải Long)</text>
+
+  <!-- price action -->
+  <line x1="150" y1="200" x2="150" y2="225" stroke="#22c55e" stroke-width="2"/>
+  <rect x="142" y="205" width="16" height="18" fill="#22c55e"/>
+  <line x1="200" y1="195" x2="200" y2="225" stroke="#22c55e" stroke-width="2"/>
+  <rect x="192" y="200" width="16" height="18" fill="#22c55e"/>
+
+  <line x1="120" y1="230" x2="300" y2="230" stroke="#eab308" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="305" y="234" font-size="12" fill="#eab308">Pool equal-highs 66,150/180</text>
+
+  <!-- the big cascade sweep - unusually deep -->
+  <line x1="260" y1="225" x2="260" y2="340" stroke="#f97316" stroke-width="3"/>
+  <rect x="248" y="250" width="24" height="80" fill="#ef4444" stroke="#f97316" stroke-width="2"/>
+  <text x="290" y="270" font-size="13" fill="#f97316" font-weight="bold">Sweep độ sâu BẤT THƯỜNG</text>
+  <text x="290" y="288" font-size="12" fill="#94a3b8">vượt xa "chữ ký" chuẩn ở mục 7.3</text>
+  <text x="290" y="306" font-size="12" fill="#94a3b8">→ nghi ngờ: liquidation cascade,</text>
+  <text x="290" y="324" font-size="12" fill="#94a3b8">không phải bên gom hàng thật</text>
+
+  <!-- comparison: normal sweep depth -->
+  <text x="750" y="200" font-size="13" fill="#38bdf8" font-weight="bold">So sánh: sweep "chữ ký chuẩn" (không cascade)</text>
+  <line x1="800" y1="225" x2="800" y2="270" stroke="#f97316" stroke-width="2.5"/>
+  <rect x="792" y="235" width="16" height="30" fill="#ef4444" stroke="#f97316" stroke-width="1.5"/>
+  <text x="820" y="250" font-size="12" fill="#94a3b8">Độ sâu vừa phải,</text>
+  <text x="820" y="268" font-size="12" fill="#94a3b8">funding rate bình thường</text>
+
+  <!-- rule box -->
+  <rect x="60" y="380" width="1080" height="80" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="75" y="405" font-size="14" font-weight="bold" fill="#e2e8f0">Rule đo được (EC5)</text>
+  <text x="75" y="425" font-size="13" fill="#e2e8f0">Kiểm tra funding rate + open interest TRƯỚC khi tin vào "chữ ký chất lượng" của một sweep độ sâu bất thường.</text>
+  <text x="75" y="443" font-size="13" fill="#e2e8f0">Funding rate cực đoan = cảnh báo cascade → hạ độ tin tưởng, chờ thêm displacement THẬT (không chỉ độ sâu wick).</text>
+
+  <!-- other edge cases quick reference -->
+  <text x="60" y="510" font-size="17" font-weight="bold" fill="#e2e8f0">Các Edge Case khác cần nhớ (chi tiết ở mục 17)</text>
+
+  <rect x="60" y="530" width="345" height="110" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="72" y="552" font-size="13" font-weight="bold" fill="#eab308">EC3 — Gap thứ Hai</text>
+  <text x="72" y="572" font-size="12" fill="#e2e8f0">"Sweep" trong nến gap không có</text>
+  <text x="72" y="590" font-size="12" fill="#e2e8f0">dòng lệnh liên tục chảy qua mức</text>
+  <text x="72" y="608" font-size="12" fill="#e2e8f0">→ bỏ qua rule "chữ ký sweep"</text>
+
+  <rect x="428" y="530" width="345" height="110" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="440" y="552" font-size="13" font-weight="bold" fill="#eab308">EC4 — Reclaim giả kéo dài sau tin</text>
+  <text x="440" y="572" font-size="12" fill="#e2e8f0">MSS xác nhận đủ nhưng nến #2</text>
+  <text x="440" y="590" font-size="12" fill="#e2e8f0">15-20 phút sau quét ngược lại</text>
+  <text x="440" y="608" font-size="12" fill="#e2e8f0">→ giữ size nhỏ 30 phút đầu sau tin</text>
+
+  <rect x="796" y="530" width="344" height="110" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="808" y="552" font-size="13" font-weight="bold" fill="#eab308">EC6 — Fractal conflict 2 hướng</text>
+  <text x="808" y="572" font-size="12" fill="#e2e8f0">H1 sweep BSL, M5 sweep SSL</text>
+  <text x="808" y="590" font-size="12" fill="#e2e8f0">cùng lúc — 2 hướng đối lập</text>
+  <text x="808" y="608" font-size="12" fill="#e2e8f0">→ ưu tiên bias khung cao hơn</text>
+
+  <text x="600" y="700" font-size="13.5" fill="#94a3b8" text-anchor="middle" font-style="italic">Bài học chung: một cú sweep "trông đẹp" về hình dạng không tự động là bằng chứng của hành vi tập thể thật — luôn kiểm tra bối cảnh vi mô đằng sau (funding, OI, feed, lịch).</text>
+</svg>

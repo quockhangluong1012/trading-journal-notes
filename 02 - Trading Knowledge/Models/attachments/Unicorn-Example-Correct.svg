@@ -1,6 +1,52 @@
-<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="330" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ ĐÚNG — Unicorn A+</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">FVG nằm trọn trong Breaker, thuận bias, trong killzone, có SMT.</text>
-<rect x="24" y="70" width="712" height="250" rx="8" fill="#FFFFFF" stroke="#86EFAC"/><text x="40" y="94" font-size="11.5" font-weight="700" fill="#15803D">✔ Overlap thật  ✔ Displacement sạch  ✔ Thuận HTF bias  ✔ Killzone/Macro  ✔ Limit tại 50% CE  ✔ SMT</text><rect x="250" y="140" width="240" height="80" fill="#F59E0B" opacity="0.18"/><rect x="250" y="160" width="240" height="45" fill="#3B82F6" opacity="0.16"/><rect x="250" y="172" width="240" height="18" fill="#7C3AED" opacity="0.30"/><text x="370" y="185" font-size="10" font-weight="700" fill="#5B21B6" text-anchor="middle">Unicorn — FVG trong Breaker</text><rect x="66" y="220" width="2" height="70" fill="#16A34A"/><rect x="60" y="235" width="13" height="50" fill="#16A34A" rx="1"/><rect x="92" y="208" width="2" height="72" fill="#16A34A"/><rect x="86" y="223" width="13" height="52" fill="#16A34A" rx="1"/><rect x="118" y="196" width="2" height="74" fill="#16A34A"/><rect x="112" y="211" width="13" height="54" fill="#16A34A" rx="1"/><rect x="144" y="184" width="2" height="76" fill="#16A34A"/><rect x="138" y="199" width="13" height="56" fill="#16A34A" rx="1"/><rect x="170" y="175" width="2" height="70" fill="#DC2626"/><rect x="164" y="188" width="13" height="52" fill="#DC2626" rx="1"/><rect x="196" y="191" width="2" height="70" fill="#DC2626"/><rect x="190" y="204" width="13" height="52" fill="#DC2626" rx="1"/><rect x="222" y="207" width="2" height="70" fill="#DC2626"/><rect x="216" y="220" width="13" height="52" fill="#DC2626" rx="1"/><rect x="248" y="223" width="2" height="70" fill="#DC2626"/><rect x="242" y="236" width="13" height="52" fill="#DC2626" rx="1"/><rect x="274" y="239" width="2" height="70" fill="#DC2626"/><rect x="268" y="252" width="13" height="52" fill="#DC2626" rx="1"/><rect x="300" y="255" width="2" height="70" fill="#DC2626"/><rect x="294" y="268" width="13" height="52" fill="#DC2626" rx="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Ví dụ ĐÚNG — Unicorn đủ chuỗi</text>
+<defs>
+<marker id="arrOrange" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#f97316"/>
+</marker>
+<marker id="arrGreen" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#4ade80"/>
+</marker>
+</defs>
+<line x1="90" y1="470" x2="90" y2="430" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="83.0" y="440" width="14" height="20" fill="#ef4444"/>
+<line x1="126" y1="450" x2="126" y2="412" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="119.0" y="420" width="14" height="20" fill="#ef4444"/>
+<line x1="162" y1="430" x2="162" y2="395" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="155.0" y="405" width="14" height="15" fill="#ef4444"/>
+<line x1="198" y1="412" x2="198" y2="296" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="191.0" y="300" width="14" height="105" fill="#22c55e"/>
+<line x1="234" y1="308" x2="234" y2="214" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="227.0" y="220" width="14" height="80" fill="#22c55e"/>
+<line x1="270" y1="228" x2="270" y2="188" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="263.0" y="195" width="14" height="25" fill="#22c55e"/>
+<line x1="306" y1="258" x2="306" y2="183" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="299.0" y="195" width="14" height="55" fill="#ef4444"/>
+<line x1="342" y1="255" x2="342" y2="205" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="335.0" y="210" width="14" height="40" fill="#22c55e"/>
+<line x1="378" y1="218" x2="378" y2="145" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="371.0" y="150" width="14" height="60" fill="#22c55e"/>
+<line x1="70" y1="395" x2="398" y2="395" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="70" y="388" font-size="12" font-weight="400" fill="#eab308" text-anchor="start">(1) SSL swept</text>
+<line x1="130" y1="360" x2="140" y2="393" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrOrange)"/>
+<rect x="76" y="296" width="308" height="22" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="76" y="290" font-size="12" font-weight="400" fill="#ec4899" text-anchor="start">Breaker</text>
+<rect x="76" y="188" width="308" height="36" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="76" y="175" font-size="12" font-weight="400" fill="#3b82f6" text-anchor="start">FVG</text>
+<rect x="76" y="188" width="308" height="26" fill="rgba(168,85,247,0.35)" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="76" y1="201.0" x2="418" y2="201.0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="424" y="205.0" font-size="12" font-weight="400" fill="#38bdf8" text-anchor="start">(2) Entry 50% CE</text>
+<line x1="414" y1="150" x2="444" y2="100" stroke="#4ade80" stroke-width="2.5" marker-end="url(#arrGreen)"/>
+<text x="448" y="95" font-size="12" font-weight="400" fill="#4ade80" text-anchor="start">(3) Target ERL</text>
+<rect x="740" y="79" width="12" height="12" fill="#ec4899"/>
+<text x="758" y="89" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="start">Breaker</text>
+<rect x="740" y="99" width="12" height="12" fill="#3b82f6"/>
+<text x="758" y="109" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="start">FVG</text>
+<rect x="740" y="119" width="12" height="12" fill="#a855f7"/>
+<text x="758" y="129" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="start">Overlap</text>
+<rect x="740" y="139" width="12" height="12" fill="#eab308"/>
+<text x="758" y="149" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="start">Liquidity</text>
+<text x="32" y="560" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Overlap thật (cùng displacement) + đúng bias + killzone + SMT + entry retrace — không đuổi giá.</text>
+<text x="32" y="580" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Chart minh họa cấu trúc swing đúng kịch bản — không phải dữ liệu giao dịch thật.</text>
 </svg>

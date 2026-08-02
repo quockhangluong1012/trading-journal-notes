@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="18" font-weight="700" fill="#e5e7eb" text-anchor="start">Ma trận 6 Edge Cases — 07:00 IFVG Model</text>
+<rect x="50.0" y="90" width="260" height="130" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="180.0" y="144.33333333333334" font-size="13" fill="#e5e7eb" text-anchor="middle">① Sai IFVG</text>
+<text x="180.0" y="159.33333333333334" font-size="13" fill="#e5e7eb" text-anchor="middle">FVG không phải</text>
+<text x="180.0" y="174.33333333333334" font-size="13" fill="#e5e7eb" text-anchor="middle">cái đầu tiên trước hunt</text>
+<rect x="350.0" y="90" width="260" height="130" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="480.0" y="144.33333333333334" font-size="13" fill="#e5e7eb" text-anchor="middle">② Vào ngược 30'</text>
+<text x="480.0" y="159.33333333333334" font-size="13" fill="#e5e7eb" text-anchor="middle">Bắt counter-move</text>
+<text x="480.0" y="174.33333333333334" font-size="13" fill="#e5e7eb" text-anchor="middle">làm move thật</text>
+<rect x="650.0" y="90" width="260" height="130" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="780.0" y="144.33333333333334" font-size="13" fill="#e5e7eb" text-anchor="middle">③ Front-run</text>
+<text x="780.0" y="159.33333333333334" font-size="13" fill="#e5e7eb" text-anchor="middle">Vào trước khi</text>
+<text x="780.0" y="174.33333333333334" font-size="13" fill="#e5e7eb" text-anchor="middle">có sweep</text>
+<rect x="50.0" y="260" width="260" height="130" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="180.0" y="314.3333333333333" font-size="13" fill="#e5e7eb" text-anchor="middle">④ Sai breaker</text>
+<text x="180.0" y="329.3333333333333" font-size="13" fill="#e5e7eb" text-anchor="middle">Chọn nhầm nến</text>
+<text x="180.0" y="344.3333333333333" font-size="13" fill="#e5e7eb" text-anchor="middle">khi không có IFVG</text>
+<rect x="350.0" y="260" width="260" height="130" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="480.0" y="314.3333333333333" font-size="13" fill="#e5e7eb" text-anchor="middle">⑤ Wick tin XAU</text>
+<text x="480.0" y="329.3333333333333" font-size="13" fill="#e5e7eb" text-anchor="middle">Stop bị quét</text>
+<text x="480.0" y="344.3333333333333" font-size="13" fill="#e5e7eb" text-anchor="middle">dù hướng đúng</text>
+<rect x="650.0" y="260" width="260" height="130" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="780.0" y="314.3333333333333" font-size="13" fill="#e5e7eb" text-anchor="middle">⑥ Chốt hết -2</text>
+<text x="780.0" y="329.3333333333333" font-size="13" fill="#e5e7eb" text-anchor="middle">Bỏ lỡ phần lớn</text>
+<text x="780.0" y="344.3333333333333" font-size="13" fill="#e5e7eb" text-anchor="middle">của move</text>
+<text x="32" y="570" font-size="12" fill="#94a3b8" text-anchor="start">Sáu tình huống rìa thường gặp khi live/backtest model 07:00 IFVG — xem chi tiết trong văn bản.</text>
+</svg>

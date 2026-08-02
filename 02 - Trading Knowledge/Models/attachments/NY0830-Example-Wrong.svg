@@ -1,6 +1,46 @@
-<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="300" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ SAI — 08:30 Model</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">Các lỗi hủy hoại xác suất của mô hình.</text>
-<rect x="24" y="70" width="712" height="220" rx="8" fill="#FFFFFF" stroke="#FCA5A5"/><text x="44" y="112" font-size="12.5" fill="#B91C1C">✘ Vào lệnh TRƯỚC 08:30 (front-run cú raid)</text><text x="44" y="144" font-size="12.5" fill="#B91C1C">✘ Bỏ qua MSS — vào ngay khi vừa raid</text><text x="44" y="176" font-size="12.5" fill="#B91C1C">✘ Trade không có context 15m (chỉ nhìn 1m)</text><text x="44" y="208" font-size="12.5" fill="#B91C1C">✘ Chọn sai PD array (đợi hồi quá sâu → lỡ lệnh)</text><text x="44" y="240" font-size="12.5" fill="#B91C1C">✘ Stop quá chặt — chỉ đặt tại swing MSS thay vì ngoài toàn range post-08:30</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="18" font-weight="700" fill="#e5e7eb" text-anchor="start">Ví dụ SAI: front-run trước 08:30 &amp; vào ngay khi vừa raid (chưa MSS)</text>
+<!-- left panel: front-run -->
+<rect x="40" y="70" width="420" height="460" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="250" y="98" font-size="14" font-weight="700" fill="#f87171" text-anchor="middle">Lỗi 1 — Pre-position trước 08:30</text>
+<line x1="70" y1="380" x2="920" y2="380" stroke="#1f2937" stroke-width="0"/>
+<line x1="70" y1="200" x2="70" y2="240" stroke="#9ca3af" stroke-width="1.5"/><rect x="64" y="205" width="12" height="25" fill="#22c55e"/>
+<line x1="110" y1="190" x2="110" y2="235" stroke="#9ca3af" stroke-width="1.5"/><rect x="104" y="195" width="12" height="25" fill="#22c55e"/>
+<line x1="150" y1="195" x2="150" y2="240" stroke="#9ca3af" stroke-width="1.5"/><rect x="144" y="200" width="12" height="25" fill="#ef4444"/>
+<text x="70" y="180" font-size="11" fill="#94a3b8" text-anchor="start">08:05-08:25: chưa có raid nào</text>
+<path d="M160,215 L200,180" stroke="#f87171" stroke-width="2.5" fill="none" marker-end="url(#arrX1)" stroke-dasharray="4 2"/>
+<text x="205" y="176" font-size="11" fill="#f87171" text-anchor="start">Entry ĐOÁN trước 08:30</text>
+<line x1="200" y1="180" x2="200" y2="380" stroke="#f87171" stroke-width="1.5" stroke-dasharray="2 2"/>
+<text x="80" y="410" font-size="11.5" fill="#f87171" text-anchor="start">Kết quả: giá đi ngược hoàn</text>
+<text x="80" y="428" font-size="11.5" fill="#f87171" text-anchor="start">toàn — không có trigger time-</text>
+<text x="80" y="446" font-size="11.5" fill="#f87171" text-anchor="start">based nào xác nhận hướng.</text>
+<text x="80" y="480" font-size="12" font-weight="700" fill="#e5e7eb" text-anchor="start">Vì sao sai:</text>
+<text x="80" y="500" font-size="11.5" fill="#94a3b8" text-anchor="start">Chưa có raid = chưa có bằng</text>
+<text x="80" y="518" font-size="11.5" fill="#94a3b8" text-anchor="start">chứng thanh khoản đã bị lấy.</text>
+<!-- right panel: raid without MSS -->
+<rect x="500" y="70" width="420" height="460" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="710" y="98" font-size="14" font-weight="700" fill="#f87171" text-anchor="middle">Lỗi 2 — Vào ngay khi vừa raid, chưa MSS</text>
+<line x1="540" y1="180" x2="540" y2="280" stroke="#9ca3af" stroke-width="1.5"/><rect x="534" y="200" width="12" height="40" fill="#ef4444"/>
+<path d="M540,190 L575,155" stroke="#f97316" stroke-width="2.5" fill="none" marker-end="url(#arrX2)"/>
+<text x="580" y="150" font-size="11" fill="#f97316" text-anchor="start">Raid BSL sau 08:30</text>
+<path d="M546,220 L590,220" stroke="#f87171" stroke-width="2.5" fill="none" marker-end="url(#arrX3)" stroke-dasharray="4 2"/>
+<text x="595" y="216" font-size="11" fill="#f87171" text-anchor="start">SELL ngay — CHƯA MSS</text>
+<line x1="580" y1="230" x2="580" y2="150" stroke="#f87171" stroke-width="1.5" stroke-dasharray="2 2"/>
+<!-- price continues up (no reversal) -->
+<line x1="620" y1="220" x2="620" y2="280" stroke="#9ca3af" stroke-width="1.5"/><rect x="614" y="230" width="12" height="40" fill="#22c55e"/>
+<line x1="660" y1="170" x2="660" y2="230" stroke="#9ca3af" stroke-width="1.5"/><rect x="654" y="180" width="12" height="40" fill="#22c55e"/>
+<line x1="700" y1="120" x2="700" y2="185" stroke="#9ca3af" stroke-width="1.5"/><rect x="694" y="130" width="12" height="45" fill="#22c55e"/>
+<text x="540" y="410" font-size="11.5" fill="#f87171" text-anchor="start">Kết quả: raid chỉ là mồi — giá</text>
+<text x="540" y="428" font-size="11.5" fill="#f87171" text-anchor="start">tiếp tục lên phá đỉnh, quét stop</text>
+<text x="540" y="446" font-size="11.5" fill="#f87171" text-anchor="start">của lệnh SELL vào sớm.</text>
+<text x="540" y="480" font-size="12" font-weight="700" fill="#e5e7eb" text-anchor="start">Vì sao sai:</text>
+<text x="540" y="500" font-size="11.5" fill="#94a3b8" text-anchor="start">Raid không kèm MSS = thanh</text>
+<text x="540" y="518" font-size="11.5" fill="#94a3b8" text-anchor="start">khoản lấy rồi nhưng chưa cam kết hướng.</text>
+<defs>
+<marker id="arrX1" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f87171"/></marker>
+<marker id="arrX2" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f97316"/></marker>
+<marker id="arrX3" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f87171"/></marker>
+</defs>
+<text x="480" y="565" font-size="12" fill="#94a3b8" text-anchor="middle">Cả hai lỗi đều thiếu bước xác nhận time-based — xem mục 11 (Lỗi thường gặp).</text>
 </svg>

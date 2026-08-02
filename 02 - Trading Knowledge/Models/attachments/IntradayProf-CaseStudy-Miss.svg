@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="Segoe UI, Arial, sans-serif">
+<defs><marker id="arrOrangeMiss" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#f97316"/></marker></defs>
+<rect width="960" height="480" rx="12" fill="#0d1117"/>
+<text x="480.0" y="32.0" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Case Miss — Delayed Protraction bị bỏ qua sớm</text>
+<text x="480.0" y="54.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa</text>
+<line x1="90.0" y1="220.0" x2="870.0" y2="220.0" stroke="#334155" stroke-width="1.5"/>
+<rect x="150.0" y="180.0" width="310.0" height="80.0" rx="0" fill="rgba(148,163,184,0.15)" stroke="#334155" stroke-width="1"/>
+<text x="305.0" y="168.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">0h–2h: không có gì</text>
+<path d="M 590,230 Q 615,170 630,150" stroke="#f97316" stroke-width="2.5" fill="none" marker-end="url(#arrOrangeMiss)"/>
+<text x="640.0" y="140.0" font-size="12" font-weight="400" fill="#f97316" text-anchor="start">2h30 — protract mạnh</text>
+<text x="580.0" y="260.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">Đây là Delayed thật, không phải</text>
+<text x="580.0" y="276.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">one-way</text>
+<text x="300.0" y="210.0" font-size="26" font-weight="700" fill="#f87171" text-anchor="middle">?</text>
+</svg>

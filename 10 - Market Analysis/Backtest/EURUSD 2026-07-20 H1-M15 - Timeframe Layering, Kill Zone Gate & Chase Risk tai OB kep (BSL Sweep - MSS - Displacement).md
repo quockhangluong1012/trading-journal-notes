@@ -9,7 +9,7 @@ htf_bias: "D1 Bearish, H1 đồng bias. Draw on liquidity hướng về SSL 1.15
 setup: "Áp dụng Confirmation Timeframe Layering (H1→M15→M5, theo note 49) + Kill Zone GATE (theo note 18) cho một setup Short tại OB kép sau BSL sweep; đồng thời kiểm tra rủi ro chase khi FVG gốc của cú displacement đã bị bỏ lỡ."
 in_trade: false
 draw_on_liquidity: "SSL 1.15266 (target chính, chưa bị test lại kể từ cú sweep gốc). BSL 1.16874/1.16919 đã bị quét (external, xác nhận narrative bearish ở tầng H1). Pool nội bộ bên trong 2 OB — dùng làm mỏ neo cho MSS tại M15/M5 — CHƯA được xác nhận đã bị quét."
-key_poi: "OB kép chồng tầng: tầng nông 1.16580–1.16700 (đã bị xuyên qua, không có phản ứng bullish rõ) và tầng sâu 1.16322–1.16419 (POI Khang chọn để tìm Short, giá đang test, chưa reclaim)."
+key_poi: "OB kép chồng tầng: tầng nông 1.16580–1.16700 (đã bị xuyên qua, không có phản ứng bullish rõ) và tầng sâu 1.16322–1.16419 (POI  chọn để tìm Short, giá đang test, chưa reclaim)."
 invalidation: "(1) M15 đóng nến chấp nhận dưới 1.16322 và tiếp tục displacement giảm không hồi → đây là BOS tiếp diễn, không phải nơi chờ phản ứng — cần tìm POI premium mới ở tầng cao hơn cho Short, không phải mua kỳ vọng bật lên tại đây. (2) Giá đóng nến ngược lại xuyên qua toàn bộ OB kép và giữ trên 1.16700 → giả thuyết Short tại vùng này thất bại, cần xem lại toàn bộ bias ngắn hạn H1."
 topic: "Confirmation Timeframe Layering (H1→M15→M5) chống nhiễu MSS khi nhảy fractal quá gấp; Kill Zone như một GATE cứng theo note 18 (không chỉ là yếu tố tăng xác suất như cách note Market Structure Shift diễn đạt — có một xung đột nhỏ giữa hai note cần lưu ý); rủi ro chase khi vào muộn tại OB tầng 2 thay vì FVG gốc của displacement (War Story W1 trong note Market Structure Shift); vai trò của external BSL sweep như bằng chứng củng cố narrative H1 chứ không phải trigger để xuống khung thấp hơn."
 tags:
@@ -38,11 +38,11 @@ tags:
 
 ## 0. Bối cảnh & câu hỏi gốc
 
-Khang gửi ảnh H1 của EURUSD (FXReplay/OANDA), D1 bias đang Bearish, hỏi cách phân tích tiếp khi giá đã "về 2 POI, quét lên trên BSL" nhưng không tìm được tín hiệu để xuống M5 xác nhận. Qua các lượt trao đổi, ba lớp vấn đề lần lượt lộ ra:
+ gửi ảnh H1 của EURUSD (FXReplay/OANDA), D1 bias đang Bearish, hỏi cách phân tích tiếp khi giá đã "về 2 POI, quét lên trên BSL" nhưng không tìm được tín hiệu để xuống M5 xác nhận. Qua các lượt trao đổi, ba lớp vấn đề lần lượt lộ ra:
 
-1. **Nhảy fractal quá gấp (H1→M5)** — đúng nguyên văn "Ca thực tế của Khang" đã ghi sẵn trong note 49: thiếu tầng M15 làm mỏ neo khiến M5 "mồ côi", mọi wiggle trông giống MSS.
+1. **Nhảy fractal quá gấp (H1→M5)** — đúng nguyên văn "Ca thực tế của " đã ghi sẵn trong note 49: thiếu tầng M15 làm mỏ neo khiến M5 "mồ côi", mọi wiggle trông giống MSS.
 2. **Nhầm lẫn giữa "trigger quan sát" và "trigger vào lệnh"** — giá lấy BSL bên ngoài trước đó là công việc xác nhận narrative ở tầng H1, không phải điều kiện chờ thêm để bấm nút xuống khung; trigger quan sát M15 thực ra chỉ đơn giản là **giá chạm POI**.
-3. **Kill Zone GATE** — sau khi đọc kỹ M15 (ảnh thứ ba), Khang tự nhận ra toàn bộ chuỗi Sweep→MSS→Displacement trên H1 diễn ra **ngoài** London/NY Kill Zone, và dùng chính lý do đó để đứng ngoài — một chẩn đoán đúng, được xác nhận lại bằng note 18.
+3. **Kill Zone GATE** — sau khi đọc kỹ M15 (ảnh thứ ba),  tự nhận ra toàn bộ chuỗi Sweep→MSS→Displacement trên H1 diễn ra **ngoài** London/NY Kill Zone, và dùng chính lý do đó để đứng ngoài — một chẩn đoán đúng, được xác nhận lại bằng note 18.
 
 ---
 
@@ -56,7 +56,7 @@ Khang gửi ảnh H1 của EURUSD (FXReplay/OANDA), D1 bias đang Bearish, hỏi
 | Swing high (lần 1) | 1.16743 / 1.16808 | Mức BSL bị quét trong lượt đọc đầu tiên |
 | Swing high (đỉnh thật) | **1.16874 / 1.16919** | External BSL — đã bị quét, xác nhận xong vai trò |
 | OB tầng nông | 1.16580 – 1.16700 | Đã bị xuyên qua trong đợt giảm, không có phản ứng bullish rõ |
-| OB tầng sâu (POI) | **1.16322 – 1.16419** | POI Khang chọn để tìm Short, giá đang test |
+| OB tầng sâu (POI) | **1.16322 – 1.16419** | POI  chọn để tìm Short, giá đang test |
 
 **Equilibrium** = (1.15266 + 1.16919) / 2 ≈ **1.16093**. Cả hai OB (1.1658–1.1670 và 1.1632–1.1642) đều nằm **trên** mức này — tức vẫn ở **Premium** của dealing range, dù giá đã rơi khá sâu từ đỉnh sweep. Đây là điểm quan trọng: bán tại đây là bán tiếp diễn từ premium về SSL, không phải "đuổi xuống discount" — vị trí vẫn hợp lệ theo đúng logic Premium/Discount.
 
@@ -68,7 +68,7 @@ Khang gửi ảnh H1 của EURUSD (FXReplay/OANDA), D1 bias đang Bearish, hỏi
 
 Đọc trên ảnh M15 (UTC+0): giá tạo higher-highs/higher-lows từ đáy sweep 1.15266 lên đỉnh **1.16894–1.16920** (đây chính là cú BSL sweep). Sau một nhịp double-top nhẹ quanh 1.1680–1.1690, giá **phá xuống dứt khoát qua higher-low ~1.1670** bằng một chuỗi nến thân đen liên tục, không hồi — thoả đủ ba lớp: **Sweep** (BSL) → **MSS** (phá higher-low bằng thân nến đóng cửa) → **Displacement** (chuỗi nến cascade từ ~1.1680 xuống dưới 1.1660, tiếp tục rơi qua 1.1600, 1.1550, 1.1500... tới vùng OB sâu).
 
-Điểm mấu chốt: cú displacement này đã **chạy hết quãng đường** trước khi Khang nhìn lại — nó vừa là bằng chứng M15 xác nhận (tốt), vừa tạo ra câu hỏi ở mục 5 bên dưới: FVG mà nó để lại nằm ở đâu, và giá hiện tại có đang chase một vùng đã cũ hay không.
+Điểm mấu chốt: cú displacement này đã **chạy hết quãng đường** trước khi  nhìn lại — nó vừa là bằng chứng M15 xác nhận (tốt), vừa tạo ra câu hỏi ở mục 5 bên dưới: FVG mà nó để lại nằm ở đâu, và giá hiện tại có đang chase một vùng đã cũ hay không.
 
 ---
 
@@ -76,7 +76,7 @@ Khang gửi ảnh H1 của EURUSD (FXReplay/OANDA), D1 bias đang Bearish, hỏi
 
 ![[TimeframeLayering-KillZone-Gate-20260720.svg]]
 
-Quy trình gốc của Khang (H1 → M5 trực tiếp) bỏ qua tầng trung gian M15, khiến M5 không có mỏ neo để tự lọc nhiễu — đúng "Ca thực tế của Khang" trong [[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)|note 49]]. Quy tắc rút ra trong phiên này:
+Quy trình gốc của  (H1 → M5 trực tiếp) bỏ qua tầng trung gian M15, khiến M5 không có mỏ neo để tự lọc nhiễu — đúng "Ca thực tế của " trong [[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)|note 49]]. Quy tắc rút ra trong phiên này:
 
 - **Trigger 1 — bắt đầu quan sát M15:** ngay khi giá **chạm** đúng vùng POI H1 (Premium OB cho Short). Việc BSL bên ngoài đã bị quét trước đó là xác nhận narrative ở tầng H1, **không phải** điều kiện chờ thêm để bấm nút xuống khung.
 - **Chạm POI ≠ xác nhận.** Quyền vào lệnh chỉ mở khi M15 tự hoàn thành chuỗi riêng của nó: một pool nội bộ (thường là một inducement) bị quét, rồi MSS bằng displacement để lại FVG.
@@ -89,10 +89,10 @@ Quy trình gốc của Khang (H1 → M5 trực tiếp) bỏ qua tầng trung gia
 
 ## 4. Kill Zone GATE — vì sao đứng ngoài là đúng
 
-Khang tự nhận ra chuỗi Sweep→MSS→Displacement trên H1 diễn ra **ngoài** London/NY Kill Zone, và dùng đó làm lý do không tìm lệnh. Đối chiếu [[18 - Kill Zones]] (note ở trạng thái `status: tested`, tức đã kiểm chứng): mục Quy tắc vô hiệu hóa ghi rõ **"Setup bị vô hiệu (không trade) khi: Ngoài kill zone"** — đây là điều kiện **CẦN**, ngang hàng với bias/sweep/POI, không phải một tuỳ chọn tăng xác suất.
+ tự nhận ra chuỗi Sweep→MSS→Displacement trên H1 diễn ra **ngoài** London/NY Kill Zone, và dùng đó làm lý do không tìm lệnh. Đối chiếu [[18 - Kill Zones]] (note ở trạng thái `status: tested`, tức đã kiểm chứng): mục Quy tắc vô hiệu hóa ghi rõ **"Setup bị vô hiệu (không trade) khi: Ngoài kill zone"** — đây là điều kiện **CẦN**, ngang hàng với bias/sweep/POI, không phải một tuỳ chọn tăng xác suất.
 
 > [!warning] Xung đột nhỏ giữa hai note cần lưu ý
-> Note [[21 - Market Structure Shift|Market Structure Shift]] lại xếp Kill Zone vào nhóm "điều kiện tăng xác suất" (mềm hơn), trong khi note "Kill Zones" chuyên đề xếp nó vào nhóm "vô hiệu hóa" (cứng hơn). Vì note Kill Zones ở trạng thái `tested` và là note chuyên đề cho đúng chủ đề này, nó nên được ưu tiên làm nguồn tham chiếu chính. Đáng để Khang thống nhất lại giọng điệu giữa hai note này một lúc nào đó.
+> Note [[21 - Market Structure Shift|Market Structure Shift]] lại xếp Kill Zone vào nhóm "điều kiện tăng xác suất" (mềm hơn), trong khi note "Kill Zones" chuyên đề xếp nó vào nhóm "vô hiệu hóa" (cứng hơn). Vì note Kill Zones ở trạng thái `tested` và là note chuyên đề cho đúng chủ đề này, nó nên được ưu tiên làm nguồn tham chiếu chính. Đáng để  thống nhất lại giọng điệu giữa hai note này một lúc nào đó.
 
 Quan trọng: đứng ngoài không có nghĩa là xoá level. Theo War Story **W2 "MSS đúng hình, sai giờ — và cú re-deliver"** trong [[20 - Liquidity Sweep]], một chuỗi hợp lệ về cấu trúc nhưng sai giờ thường được "giao lại" (re-deliver) trong kill zone/macro kế tiếp, với một cú quét sâu hơn và displacement thật. Cách làm đúng: giữ nguyên mốc + FVG như một "kịch bản treo", chờ London Open (13:00–16:00 VN mùa hè) hoặc NY AM (18:00–21:00 VN mùa hè) kế tiếp xem chuỗi có lặp lại đúng trong cửa sổ giờ đó không.
 
@@ -102,7 +102,7 @@ Quan trọng: đứng ngoài không có nghĩa là xoá level. Theo War Story **
 
 ![[ChaseRisk-FVGGoc-vs-OBSau-20260720.svg]]
 
-Cú displacement mạnh nhất (phá từ ~1.1680 xuống dưới 1.1660) nhiều khả năng để lại FVG hợp lệ ngay trong vùng **1.1660–1.1680** — trùng với một nhịp dừng nhỏ quan sát được trên M15. Nếu Khang chưa vào ở đó, đây mới là điểm entry mà mô hình 2022 gọi tên cho cú MSS này, **không phải** OB tầng sâu (1.1632–1.1642) mà giá đang test bây giờ.
+Cú displacement mạnh nhất (phá từ ~1.1680 xuống dưới 1.1660) nhiều khả năng để lại FVG hợp lệ ngay trong vùng **1.1660–1.1680** — trùng với một nhịp dừng nhỏ quan sát được trên M15. Nếu  chưa vào ở đó, đây mới là điểm entry mà mô hình 2022 gọi tên cho cú MSS này, **không phải** OB tầng sâu (1.1632–1.1642) mà giá đang test bây giờ.
 
 Đúng như War Story **W1 "MSS quá hoàn hảo"** trong [[21 - Market Structure Shift]]: displacement càng mạnh, retrace về FVG càng nông; vào ở một vùng sâu hơn sau khi giá đã chạy hết một quãng dài không hồi là **chase**, không còn là retracement entry đúng nghĩa — trừ khi tầng sâu này tự cho ra một chuỗi mini sweep + MSS + FVG riêng của chính nó.
 
@@ -138,7 +138,7 @@ Cú displacement mạnh nhất (phá từ ~1.1680 xuống dưới 1.1660) nhiề
 
 1. **"Chạm POI" là trigger quan sát, không phải trigger vào lệnh.** Việc H1 đã lấy BSL bên ngoài trước đó là xác nhận narrative, không phải điều kiện chờ thêm để bấm nút xuống khung — nhầm hai việc này là nguồn gốc chính của cảm giác mơ hồ ban đầu.
 2. **Thiếu tầng M15 khiến M5 "mồ côi".** Nhảy thẳng H1→M5 (cách nhau 12 lần nến) bắt M5 tự sinh xác nhận mà không có mỏ neo — đúng vấn đề note 49 đã cảnh báo trước.
-3. **Kill Zone là GATE cứng, không chỉ là điểm cộng** — theo đúng note chuyên đề đã kiểm chứng (`status: tested`), và Khang đã tự áp đúng nguyên tắc này mà không cần nhắc.
+3. **Kill Zone là GATE cứng, không chỉ là điểm cộng** — theo đúng note chuyên đề đã kiểm chứng (`status: tested`), và  đã tự áp đúng nguyên tắc này mà không cần nhắc.
 4. **Một chuỗi hợp lệ nhưng sai giờ chưa chắc đã chết** — giữ nguyên mốc, chờ re-deliver trong kill zone kế tiếp, thay vì xoá bỏ toàn bộ giả thuyết.
 5. **Displacement càng mạnh, FVG entry đúng nghĩa càng nông** — cần tỉnh táo phân biệt giữa "quay lại đúng chân displacement" và "chase xuống một tầng POI sâu hơn, cũ hơn".
 
@@ -154,7 +154,7 @@ Cú displacement mạnh nhất (phá từ ~1.1680 xuống dưới 1.1660) nhiề
 
 ## 10. Next steps
 
-- Nếu Khang tiếp tục replay và giá thực sự cho ra mini sweep + MSS + FVG riêng tại OB sâu **trong đúng cửa sổ Kill Zone kế tiếp**, tạo một file backtest riêng theo [[Backtest template - POI & Step Decision (ICT 2022)]] trong `04 - Backtesting/`, cross-link ngược về note này.
+- Nếu  tiếp tục replay và giá thực sự cho ra mini sweep + MSS + FVG riêng tại OB sâu **trong đúng cửa sổ Kill Zone kế tiếp**, tạo một file backtest riêng theo [[Backtest template - POI & Step Decision (ICT 2022)]] trong `04 - Backtesting/`, cross-link ngược về note này.
 - Lưu 3 ảnh gốc (2 H1 + 1 M15) vào `10 - Market Analysis/Attachments/` theo tên gợi ý ở đầu note để lần sau đối chiếu chính xác thay vì đọc lại ước lượng.
 - Nếu tình huống "sequence hợp lệ nhưng sai giờ" lặp lại nhiều lần trong quá trình backtest, đây là ứng viên tốt để bổ sung một ví dụ số liệu cụ thể vào mục Best Practices của [[18 - Kill Zones]].
 - Cân nhắc thống nhất lại giọng điệu giữa note [[21 - Market Structure Shift]] và [[18 - Kill Zones]] về việc Kill Zone là điều kiện "tăng xác suất" hay "vô hiệu hóa" (xem cảnh báo ở mục 4).

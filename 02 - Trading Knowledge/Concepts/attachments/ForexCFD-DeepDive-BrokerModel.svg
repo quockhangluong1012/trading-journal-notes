@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+
+  <text x="480" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc" text-anchor="middle">Ba mo hinh xu ly lenh: Market Maker vs STP vs ECN</text>
+
+  <!-- Trader box -->
+  <rect x="30" y="90" width="140" height="60" rx="6" fill="#1e222d" stroke="#d1d4dc" stroke-width="1"/>
+  <text x="100" y="115" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc" text-anchor="middle">Trader</text>
+  <text x="100" y="135" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc" text-anchor="middle">Lenh Buy/Sell</text>
+
+  <!-- Row 1: Market Maker -->
+  <rect x="230" y="90" width="220" height="60" rx="6" fill="rgba(239,83,80,0.18)" stroke="#ef5350" stroke-width="1.5"/>
+  <text x="340" y="112" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc" text-anchor="middle">Broker Market Maker</text>
+  <text x="340" y="132" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc" text-anchor="middle">Doi tac truc tiep (B-book)</text>
+
+  <line x1="170" y1="120" x2="230" y2="120" stroke="#ffffff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="530" y="90" width="220" height="60" rx="6" fill="#1e222d" stroke="#d1d4dc" stroke-width="1"/>
+  <text x="640" y="112" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc" text-anchor="middle">Gia yet noi bo</text>
+  <text x="640" y="132" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc" text-anchor="middle">+ markup trong spread</text>
+
+  <line x1="450" y1="120" x2="530" y2="120" stroke="#ffffff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="780" y="100" font-family="Arial, sans-serif" font-size="12" fill="#f2c94c" text-anchor="start">Co the khong</text>
+  <text x="780" y="118" font-family="Arial, sans-serif" font-size="12" fill="#f2c94c" text-anchor="start">ra thi truong</text>
+  <text x="780" y="136" font-family="Arial, sans-serif" font-size="12" fill="#f2c94c" text-anchor="start">that (hedge mot phan)</text>
+
+  <!-- Row 2: STP -->
+  <rect x="230" y="220" width="220" height="60" rx="6" fill="rgba(255,152,0,0.18)" stroke="#ff9800" stroke-width="1.5"/>
+  <text x="340" y="242" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc" text-anchor="middle">Broker STP</text>
+  <text x="340" y="262" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc" text-anchor="middle">Chuyen thang toi LP</text>
+
+  <line x1="170" y1="120" x2="170" y2="250" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="170" y1="250" x2="230" y2="250" stroke="#ffffff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="530" y="220" width="220" height="60" rx="6" fill="#1e222d" stroke="#d1d4dc" stroke-width="1"/>
+  <text x="640" y="242" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc" text-anchor="middle">1 hoac vai LP</text>
+  <text x="640" y="262" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc" text-anchor="middle">markup + gia goc LP</text>
+
+  <line x1="450" y1="250" x2="530" y2="250" stroke="#ffffff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 3: ECN -->
+  <rect x="230" y="350" width="220" height="60" rx="6" fill="rgba(38,166,154,0.18)" stroke="#26a69a" stroke-width="1.5"/>
+  <text x="340" y="372" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc" text-anchor="middle">Broker ECN</text>
+  <text x="340" y="392" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc" text-anchor="middle">So lenh da LP</text>
+
+  <line x1="170" y1="120" x2="170" y2="380" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="170" y1="380" x2="230" y2="380" stroke="#ffffff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="530" y="350" width="220" height="60" rx="6" fill="#1e222d" stroke="#d1d4dc" stroke-width="1"/>
+  <text x="640" y="372" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc" text-anchor="middle">Nhieu LP canh tranh</text>
+  <text x="640" y="392" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc" text-anchor="middle">phi commission rieng</text>
+
+  <line x1="450" y1="380" x2="530" y2="380" stroke="#ffffff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="780" y="360" font-family="Arial, sans-serif" font-size="12" fill="#26a69a" text-anchor="start">It xung dot</text>
+  <text x="780" y="378" font-family="Arial, sans-serif" font-size="12" fill="#26a69a" text-anchor="start">loi ich hon</text>
+  <text x="780" y="396" font-family="Arial, sans-serif" font-size="12" fill="#26a69a" text-anchor="start">(price-time priority)</text>
+
+  <!-- Legend -->
+  <rect x="30" y="460" width="16" height="16" fill="rgba(239,83,80,0.4)" stroke="#ef5350"/>
+  <text x="52" y="473" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Market Maker: xung dot loi ich cao nhat (B-book)</text>
+
+  <rect x="30" y="485" width="16" height="16" fill="rgba(255,152,0,0.4)" stroke="#ff9800"/>
+  <text x="52" y="498" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">STP: trung gian mot lop, markup tren gia LP</text>
+
+  <rect x="30" y="510" width="16" height="16" fill="rgba(38,166,154,0.4)" stroke="#26a69a"/>
+  <text x="52" y="523" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">ECN: so lenh da LP, phi commission rieng biet</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#ffffff"/>
+    </marker>
+  </defs>
+</svg>

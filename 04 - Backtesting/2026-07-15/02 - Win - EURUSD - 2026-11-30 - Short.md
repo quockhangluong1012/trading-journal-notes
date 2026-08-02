@@ -80,7 +80,7 @@ tags:
 > - `poi_rank` = 1 vì FVG đơn không nằm ở rank cao hơn dù có OB đi kèm (OB không khớp lệnh nên không tính vào poi_stack rank).
 
 > [!success] Đã bổ sung phân tích (2026-07-17)
-> Đã viết tiếp phần bị cắt: nốt mục 6 (Phân tích sau lệnh), mục 7 (Lesson Learned) và mục 8 (Final Grade — lý giải vì sao `grade: C+` dù kết quả Win, RR 2.09). Toàn bộ phần bổ sung được suy luận **hoàn toàn từ dữ liệu đã có sẵn trong chính file này** (frontmatter, bảng 7-Step, Setup Quality checklist, Confluence 2/8) — không có số liệu giá/PnL mới nào bị bịa ra. Các cảnh báo ⚠️ gốc ở trên (mâu thuẫn CE/Edge, TP 1.05882 vs 1.05886, năm 2026/2016 lẫn lộn) vẫn còn nguyên và **chưa được Khang xác nhận** — phần Lesson Learned/Final Grade bên dưới có nhắc lại các điểm này như một phần bài học về kỷ luật ghi chép.
+> Đã viết tiếp phần bị cắt: nốt mục 6 (Phân tích sau lệnh), mục 7 (Lesson Learned) và mục 8 (Final Grade — lý giải vì sao `grade: C+` dù kết quả Win, RR 2.09). Toàn bộ phần bổ sung được suy luận **hoàn toàn từ dữ liệu đã có sẵn trong chính file này** (frontmatter, bảng 7-Step, Setup Quality checklist, Confluence 2/8) — không có số liệu giá/PnL mới nào bị bịa ra. Các cảnh báo ⚠️ gốc ở trên (mâu thuẫn CE/Edge, TP 1.05882 vs 1.05886, năm 2026/2016 lẫn lộn) vẫn còn nguyên và **chưa được  xác nhận** — phần Lesson Learned/Final Grade bên dưới có nhắc lại các điểm này như một phần bài học về kỷ luật ghi chép.
 
 ---
 
@@ -256,12 +256,12 @@ Nhìn thuần theo 7-Step Decision Log, lệnh này *đủ chuỗi* (7/7 bước
 
 ## 7. Lesson Learned
 
-> [!warning] Đây là lesson rút ra từ dữ liệu backtest đã ghi, không phải nhật ký cảm xúc giao dịch thật (đây là backtest, không phải live trade). Khang nên đọc lại và chỉnh sửa nếu cách diễn giải không khớp với những gì đã thấy trên chart.
+> [!warning] Đây là lesson rút ra từ dữ liệu backtest đã ghi, không phải nhật ký cảm xúc giao dịch thật (đây là backtest, không phải live trade).  nên đọc lại và chỉnh sửa nếu cách diễn giải không khớp với những gì đã thấy trên chart.
 
 **1. Một kết quả Win không tự động chứng minh setup tốt — đây là ví dụ giáo khoa của "process vs outcome".**
-Lệnh này thắng +2.09R, nhưng confluence chỉ 2/8, displacement bị chính người phân tích gán nhãn "marginal", và entry precision còn mâu thuẫn chưa giải quyết. Nếu coi đây là bằng chứng "công thức này hiệu quả", Khang sẽ vô tình học sai bài học — cái thắng ở đây đến từ bias/target đúng hướng (yếu tố vĩ mô), không phải từ một chuỗi xác nhận vi mô sắc bén. **Không tăng cỡ vị thế hay độ tự tin cho các setup có confluence tương tự (~2/8) dựa trên lệnh này.**
+Lệnh này thắng +2.09R, nhưng confluence chỉ 2/8, displacement bị chính người phân tích gán nhãn "marginal", và entry precision còn mâu thuẫn chưa giải quyết. Nếu coi đây là bằng chứng "công thức này hiệu quả",  sẽ vô tình học sai bài học — cái thắng ở đây đến từ bias/target đúng hướng (yếu tố vĩ mô), không phải từ một chuỗi xác nhận vi mô sắc bén. **Không tăng cỡ vị thế hay độ tự tin cho các setup có confluence tương tự (~2/8) dựa trên lệnh này.**
 
-**2. Kỷ luật ghi chép ảnh hưởng trực tiếp đến chất lượng dữ liệu backtest — và dữ liệu backtest là thứ sẽ quyết định Khang có đủ điều kiện mua challenge hay không.**
+**2. Kỷ luật ghi chép ảnh hưởng trực tiếp đến chất lượng dữ liệu backtest — và dữ liệu backtest là thứ sẽ quyết định  có đủ điều kiện mua challenge hay không.**
 Có ít nhất hai mâu thuẫn nội bộ trong chính file này: (a) entry được gọi là "cạnh FVG" trong lời văn nhưng lại khớp số học với CE; (b) TP trong bảng Summary (1.05886) lệch với TP trong frontmatter (1.05882) — Dataview chỉ đọc frontmatter, nên nếu con số trong bảng mới là đúng, toàn bộ R-multiple của lệnh này đang bị tính sai một chút trong mọi dashboard tổng hợp. Bài học thực dụng: **chốt số liệu tại thời điểm phân tích, không để "sẽ xác nhận sau" — vì "sau" hiếm khi quay lại.**
 
 **3. Split-entry (0.5/0.5 slot) là một quyết định quản trị rủi ro hợp lý về mặt lý thuyết, nhưng ở đây nó cũng là dấu hiệu thiếu một quyết định dứt khoát.**

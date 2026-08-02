@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">CHoCH tạo bởi nến tin - đẹp kỹ thuật, yếu chất liệu</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">M5, cửa sổ +-5 phút quanh CPI/NFP - FVG bị lấp lại 61% trong 15 phút vs 23% CHoCH thường</text>
+
+  <!-- protected low line -->
+  <line x1="80" y1="480" x2="1200" y2="480" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+  <text x="1140" y="472" text-anchor="end" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">protected low</text>
+
+  <!-- pre-news candles uptrend -->
+  <g>
+    <line x1="150" y1="360" x2="150" y2="420" stroke="#26a69a" stroke-width="2"/>
+    <rect x="142" y="370" width="16" height="35" fill="#26a69a" rx="1"/>
+    <line x1="210" y1="330" x2="210" y2="400" stroke="#26a69a" stroke-width="2"/>
+    <rect x="202" y="340" width="16" height="40" fill="#26a69a" rx="1"/>
+    <line x1="270" y1="300" x2="270" y2="370" stroke="#26a69a" stroke-width="2"/>
+    <rect x="262" y="310" width="16" height="38" fill="#26a69a" rx="1"/>
+    <line x1="330" y1="360" x2="330" y2="440" stroke="#26a69a" stroke-width="2"/>
+    <rect x="322" y="400" width="16" height="30" fill="#26a69a" rx="1"/>
+  </g>
+  <text x="240" y="270" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">uptrend trước tin</text>
+
+  <!-- news candle: huge displacement down through protected low -->
+  <line x1="430" y1="230" x2="430" y2="560" stroke="#ef5350" stroke-width="3"/>
+  <rect x="416" y="235" width="28" height="315" fill="#ef5350" rx="1"/>
+  <text x="430" y="215" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff9800">NFP 08:30</text>
+  <line x1="450" y1="240" x2="530" y2="205" stroke="#787b86" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="535" y="200" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">displacement khổng lồ</text>
+  <text x="535" y="222" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">= "CHoCH" kỹ thuật</text>
+
+  <!-- FVG box left by news candle -->
+  <rect x="450" y="400" width="150" height="80" fill="#ff6b6b" opacity="0.14" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="525" y="500" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">FVG tạo bởi nến tin</text>
+
+  <!-- reversal candles after news within 15min - price returns above protected low -->
+  <g>
+    <line x1="620" y1="480" x2="620" y2="540" stroke="#26a69a" stroke-width="2"/>
+    <rect x="612" y="490" width="16" height="35" fill="#26a69a" rx="1"/>
+    <line x1="680" y1="420" x2="680" y2="500" stroke="#26a69a" stroke-width="2"/>
+    <rect x="672" y="430" width="16" height="55" fill="#26a69a" rx="1"/>
+    <line x1="740" y1="360" x2="740" y2="440" stroke="#26a69a" stroke-width="2"/>
+    <rect x="732" y="370" width="16" height="55" fill="#26a69a" rx="1"/>
+    <line x1="800" y1="330" x2="800" y2="400" stroke="#26a69a" stroke-width="2"/>
+    <rect x="792" y="340" width="16" height="45" fill="#26a69a" rx="1"/>
+  </g>
+
+  <line x1="500" y1="620" x2="800" y2="620" stroke="#787b86" stroke-width="1.5"/>
+  <line x1="500" y1="612" x2="500" y2="628" stroke="#787b86" stroke-width="1.5"/>
+  <line x1="800" y1="612" x2="800" y2="628" stroke="#787b86" stroke-width="1.5"/>
+  <text x="650" y="645" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">trong 15 phút: giá quay lại và lấp FVG (mitigated ~61%)</text>
+
+  <!-- badge -->
+  <rect x="900" y="240" width="200" height="50" rx="8" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="1000" y="271" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff6b6b">✗ CHoCH-tin: chờ xác nhận</text>
+
+  <text x="640" y="695" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Cơ chế: liquidity vacuum tức thời quanh giờ release, không phải delivery có chủ đích - xem EC-B2</text>
+</svg>

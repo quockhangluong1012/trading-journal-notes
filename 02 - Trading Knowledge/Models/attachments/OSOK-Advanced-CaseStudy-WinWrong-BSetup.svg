@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="400" rx="12" fill="#0d1117"/>
+  <text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Case 3 — Win nhưng sai quy trình (B-setup tình cờ thắng)</text>
+  <text x="32" y="58" font-size="12" fill="#94a3b8">Case tái dựng minh họa, số liệu hypothetical — không phải lệnh thật</text>
+
+  <!-- scorecard gauge showing 8/12 -->
+  <text x="230" y="120" font-size="13" fill="#e5e7eb" text-anchor="middle">Scorecard lúc vào lệnh</text>
+  <rect x="80" y="140" width="300" height="26" rx="6" fill="#1e293b" stroke="#334155"/>
+  <rect x="80" y="140" width="200" height="26" rx="6" fill="#eab308" opacity="0.5"/>
+  <text x="230" y="158" font-size="13" fill="#e5e7eb" text-anchor="middle">8 / 12 (B — dưới ngưỡng A+ 10)</text>
+
+  <text x="230" y="200" font-size="11.5" fill="#94a3b8" text-anchor="middle">Sweep mờ · Displacement yếu · Entry rìa kill zone</text>
+
+  <!-- weak setup candles -->
+  <g>
+    <line x1="500" y1="230" x2="500" y2="270" stroke="#9ca3af" stroke-width="1.5"/><rect x="494" y="238" width="12" height="20" fill="#ef4444"/>
+  </g>
+  <line x1="450" y1="265" x2="600" y2="265" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="605" y="269" font-size="10.5" fill="#eab308">liquidity (chỉ chạm nhẹ)</text>
+
+  <g>
+    <line x1="540" y1="200" x2="540" y2="250" stroke="#9ca3af" stroke-width="1.5"/><rect x="532" y="208" width="16" height="35" fill="#22c55e"/>
+  </g>
+  <text x="540" y="190" font-size="11" fill="#94a3b8" text-anchor="middle">displacement yếu, thân ngắn</text>
+
+  <path d="M 560 220 Q 650 190 750 160" fill="none" stroke="#4ade80" stroke-width="2" stroke-dasharray="3 3" marker-end="url(#arrB)"/>
+  <text x="750" y="145" font-size="12" fill="#4ade80" text-anchor="middle">Kết quả: WIN (may mắn)</text>
+
+  <rect x="60" y="300" width="840" height="60" rx="8" fill="rgba(168,85,247,0.10)" stroke="#a855f7" stroke-dasharray="4 3"/>
+  <text x="480" y="325" font-size="12.5" fill="#a855f7" text-anchor="middle">outcome bias: kết quả dương củng cố hành vi "hạ chuẩn cũng được"</text>
+  <text x="480" y="345" font-size="12" fill="#e5e7eb" text-anchor="middle">a_plus_setup: false — vẫn phải ghi nhận là lỗi quy trình</text>
+
+  <defs><marker id="arrB" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#4ade80"/></marker></defs>
+</svg>

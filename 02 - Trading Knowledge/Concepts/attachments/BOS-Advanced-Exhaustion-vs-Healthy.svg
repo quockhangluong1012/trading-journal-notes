@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#1F2937">BOS "khỏe" vs BOS cạn nhiên liệu (exhaustion break)</text>
+  <text x="24" y="52" font-size="13" fill="#6B7280">Cùng là body close + displacement thật. Khác nhau ở câu hỏi: "sau cú phá này, giá còn CHẠY VỀ ĐÂU?"</text>
+
+  <!-- LEFT: healthy -->
+  <rect x="24" y="68" width="350" height="300" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="2"/>
+  <rect x="24" y="68" width="350" height="30" rx="8" fill="#DCFCE7"/>
+  <text x="38" y="88" font-size="13" font-weight="800" fill="#166534">BOS KHỎE — còn room tới draw kế</text>
+
+  <path d="M50,300 L85,255 L110,275 L150,225 L178,250 L210,200" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+  <!-- swing high broken -->
+  <line x1="150" y1="225" x2="360" y2="225" stroke="#374151" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="250" y="220" font-size="9" fill="#374151">swing high bị phá</text>
+  <path d="M210,200 L240,150 L265,168 L300,120" fill="none" stroke="#16A34A" stroke-width="2.8"/>
+  <text x="215" y="185" font-size="9" font-weight="700" fill="#166534">BOS + FVG</text>
+  <!-- next draw far above with room -->
+  <line x1="60" y1="108" x2="360" y2="108" stroke="#16A34A" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="66" y="103" font-size="9.5" fill="#166534">BSL / draw kế còn XA → còn nhiên liệu</text>
+  <path d="M300,120 L330,140 L355,118" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+  <text x="40" y="352" font-size="10.5" fill="#374151">→ Vào tại FVG sau BOS: target rõ, R:R lớn</text>
+
+  <!-- RIGHT: exhaustion -->
+  <rect x="386" y="68" width="350" height="300" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+  <rect x="386" y="68" width="350" height="30" rx="8" fill="#FEE2E2"/>
+  <text x="400" y="88" font-size="13" font-weight="800" fill="#B91C1C">BOS CẠN — target đã lấy, hết ADR</text>
+
+  <path d="M412,300 L447,255 L472,275 L512,225 L540,250 L572,205" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+  <line x1="512" y1="225" x2="722" y2="225" stroke="#374151" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <!-- BOS body close but target right above -->
+  <path d="M572,205 L598,170 L620,182 L642,158" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <text x="576" y="200" font-size="9" font-weight="700" fill="#166534">BOS + FVG (thật)</text>
+  <!-- draw/BSL right at the break — no room -->
+  <line x1="430" y1="150" x2="722" y2="150" stroke="#B91C1C" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="436" y="145" font-size="9.5" font-weight="700" fill="#B91C1C">BSL/draw NGAY TRÊN — đã bị lấy</text>
+  <!-- ADR line -->
+  <line x1="430" y1="140" x2="722" y2="140" stroke="#6B7280" stroke-width="1" stroke-dasharray="2 3"/>
+  <text x="436" y="135" font-size="8.5" fill="#6B7280">ADR cạn</text>
+  <!-- reversal down -->
+  <path d="M642,158 L665,215 L688,195 L710,270" fill="none" stroke="#DC2626" stroke-width="2.8"/>
+  <circle cx="642" cy="158" r="5" fill="#DC2626"/>
+  <text x="560" y="300" font-size="10.5" font-weight="700" fill="#B91C1C">→ phân phối cuối: BOS thật nhưng đảo</text>
+  <text x="400" y="352" font-size="10.5" fill="#374151">→ Long ở đây = mua đỉnh; không còn chỗ để chạy</text>
+
+  <rect x="24" y="376" width="712" height="52" rx="6" fill="#EDE9FE"/>
+  <text x="36" y="396" font-size="11.5" font-weight="700" fill="#5B21B6">Test một câu: SAU cú BOS, còn pool liquidity nào chưa bị lấy ở phía trước không?</text>
+  <text x="36" y="416" font-size="11.5" fill="#5B21B6">Có + còn ADR → BOS khỏe, theo được. Không / draw đã lấy / hết ADR → nghi exhaustion, đừng chase, cân nhắc take profit.</text>
+</svg>

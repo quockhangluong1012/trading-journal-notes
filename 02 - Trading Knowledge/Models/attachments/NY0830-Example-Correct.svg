@@ -1,6 +1,47 @@
-<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="300" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ ĐÚNG — 08:30 Model</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">Bias 15m rõ → raid post-08:30 → MSS → vào PD array đầu tiên → stop ngoài range post-08:30.</text>
-<rect x="24" y="70" width="712" height="220" rx="8" fill="#FFFFFF" stroke="#86EFAC"/><text x="40" y="94" font-size="11" font-weight="700" fill="#15803D">✔ Có bias 15m  ✔ Chờ raid sau 08:30  ✔ MSS xác nhận  ✔ PD array đầu tiên  ✔ Stop ngoài range post-08:30</text><line x1="60" y1="130" x2="360" y2="130" stroke="#6B7280" stroke-dasharray="6 4"/><text x="60" y="124" font-size="9.5" fill="#4B5563">Rel Equal Highs</text><rect x="75" y="150" width="2" height="50" fill="#16A34A"/><rect x="70" y="160" width="12" height="35" fill="#16A34A" rx="1"/><rect x="97" y="150" width="2" height="50" fill="#16A34A"/><rect x="92" y="160" width="12" height="35" fill="#16A34A" rx="1"/><rect x="119" y="110" width="2" height="65" fill="#16A34A"/><rect x="114" y="120" width="12" height="30" fill="#16A34A" rx="1"/><rect x="141" y="155" width="2" height="80" fill="#DC2626"/><rect x="136" y="168" width="12" height="62" fill="#DC2626" rx="1"/><rect x="163" y="167" width="2" height="82" fill="#DC2626"/><rect x="158" y="180" width="12" height="64" fill="#DC2626" rx="1"/><rect x="185" y="179" width="2" height="84" fill="#DC2626"/><rect x="180" y="192" width="12" height="66" fill="#DC2626" rx="1"/><rect x="270" y="170" width="120" height="30" fill="#3B82F6" opacity="0.16"/><text x="394" y="188" font-size="9.5" fill="#1D4ED8">SIBI (đầu tiên)</text><circle cx="330" cy="185" r="5" fill="#DC2626"/><text x="338" y="180" font-size="9.5" font-weight="700" fill="#DC2626">SELL</text><rect x="355" y="200" width="2" height="55" fill="#DC2626"/><rect x="350" y="210" width="12" height="40" fill="#DC2626" rx="1"/><rect x="377" y="216" width="2" height="57" fill="#DC2626"/><rect x="372" y="226" width="12" height="42" fill="#DC2626" rx="1"/><rect x="399" y="232" width="2" height="59" fill="#DC2626"/><rect x="394" y="242" width="12" height="44" fill="#DC2626" rx="1"/><rect x="421" y="248" width="2" height="61" fill="#DC2626"/><rect x="416" y="258" width="12" height="46" fill="#DC2626" rx="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="18" font-weight="700" fill="#e5e7eb" text-anchor="start">Ví dụ ĐÚNG: bias 15m → raid → MSS → SIBI → stop ngoài range → TP tại DOL</text>
+<line x1="24" y1="80" x2="936" y2="80" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="160" x2="936" y2="160" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="240" x2="936" y2="240" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="320" x2="936" y2="320" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="400" x2="936" y2="400" stroke="#1f2937" stroke-width="1"/>
+<!-- build-up relative equal highs -->
+<line x1="60" y1="180" x2="60" y2="220" stroke="#9ca3af" stroke-width="1.5"/><rect x="54" y="185" width="12" height="25" fill="#22c55e"/>
+<line x1="100" y1="165" x2="100" y2="210" stroke="#9ca3af" stroke-width="1.5"/><rect x="94" y="170" width="12" height="25" fill="#22c55e"/>
+<line x1="140" y1="170" x2="140" y2="215" stroke="#9ca3af" stroke-width="1.5"/><rect x="134" y="178" width="12" height="25" fill="#ef4444"/>
+<line x1="80" y1="163" x2="180" y2="165" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="185" y="158" font-size="11" fill="#eab308" text-anchor="start">(1) Relative equal highs</text>
+<!-- raid -->
+<line x1="200" y1="120" x2="200" y2="225" stroke="#9ca3af" stroke-width="1.5"/><rect x="194" y="180" width="12" height="30" fill="#ef4444"/>
+<path d="M200,130 L235,105" stroke="#f97316" stroke-width="2.5" fill="none" marker-end="url(#arrEC)"/>
+<text x="240" y="100" font-size="11" fill="#f97316" text-anchor="start">(2) Raid sau 08:30</text>
+<!-- displacement down -->
+<line x1="240" y1="215" x2="240" y2="300" stroke="#9ca3af" stroke-width="1.5"/><rect x="234" y="225" width="12" height="70" fill="#ef4444"/>
+<line x1="280" y1="280" x2="280" y2="360" stroke="#9ca3af" stroke-width="1.5"/><rect x="274" y="290" width="12" height="65" fill="#ef4444"/>
+<line x1="320" y1="340" x2="320" y2="410" stroke="#9ca3af" stroke-width="1.5"/><rect x="314" y="350" width="12" height="55" fill="#ef4444"/>
+<line x1="260" y1="300" x2="700" y2="300" stroke="#a855f7" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="330" y="292" font-size="11" fill="#a855f7" text-anchor="start">(3) MSS xuống + displacement</text>
+<!-- SIBI zone -->
+<rect x="240" y="295" width="80" height="50" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="280" y="365" font-size="10.5" fill="#3b82f6" text-anchor="middle">SIBI (PD array #1)</text>
+<!-- retest and entry -->
+<line x1="380" y1="300" x2="380" y2="340" stroke="#9ca3af" stroke-width="1.5"/><rect x="374" y="305" width="12" height="25" fill="#22c55e"/>
+<line x1="420" y1="305" x2="420" y2="345" stroke="#9ca3af" stroke-width="1.5"/><rect x="414" y="310" width="12" height="25" fill="#22c55e"/>
+<path d="M426,325 L470,325" stroke="#22c55e" stroke-width="2.5" fill="none" marker-end="url(#arrECsell)"/>
+<text x="475" y="320" font-size="11" fill="#22c55e" font-weight="700" text-anchor="start">(4) Entry retest SIBI</text>
+<!-- continuation to DOL -->
+<line x1="560" y1="330" x2="560" y2="400" stroke="#9ca3af" stroke-width="1.5"/><rect x="554" y="340" width="12" height="55" fill="#ef4444"/>
+<line x1="620" y1="380" x2="620" y2="440" stroke="#9ca3af" stroke-width="1.5"/><rect x="614" y="390" width="12" height="45" fill="#ef4444"/>
+<line x1="680" y1="420" x2="680" y2="470" stroke="#9ca3af" stroke-width="1.5"/><rect x="674" y="430" width="12" height="35" fill="#ef4444"/>
+<line x1="650" y1="470" x2="920" y2="470" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="700" y="490" font-size="11" fill="#eab308" text-anchor="start">(6) TP tại DOL kế (relative equal lows)</text>
+<!-- stop line -->
+<line x1="185" y1="98" x2="900" y2="98" stroke="#f87171" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="895" y="112" font-size="11" fill="#f87171" text-anchor="end">(5) Stop ngoài toàn bộ range post-08:30</text>
+<defs>
+<marker id="arrEC" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f97316"/></marker>
+<marker id="arrECsell" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#22c55e"/></marker>
+</defs>
+<text x="480" y="560" font-size="12" fill="#94a3b8" text-anchor="middle">Chuỗi đủ raid + MSS + PD array đầu tiên đồng hướng DOL 15m — hình mẫu A+.</text>
 </svg>
