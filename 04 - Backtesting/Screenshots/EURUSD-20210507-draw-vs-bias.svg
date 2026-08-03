@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Draw vs Bias - Hindsight Check tren cung Evidence</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">EURUSD 2021-05-07 Short - phan biet fact xac nhan TRUOC vs dien giai SAU outcome</text>
+
+  <!-- LEFT: what note claims (narrative) -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#7d6608">NOTE GOC (mo ta lai SAU outcome)</text>
+  <rect x="70" y="100" width="330" height="410" fill="#fefbe9" stroke="#d4ac0d"/>
+
+  <line x1="70" y1="130" x2="400" y2="130" stroke="#999" stroke-dasharray="2 2"/>
+  <text x="405" y="134" font-size="10" fill="#999">BSL chua lay 1.21296-1.21227</text>
+
+  <line x1="70" y1="230" x2="400" y2="230" stroke="#c0392b" stroke-dasharray="5 3"/>
+  <text x="405" y="234" font-size="10" fill="#c0392b">SL 1.20931</text>
+
+  <rect x="70" y="260" width="330" height="30" fill="#d6dbdf" fill-opacity="0.6"/>
+  <text x="150" y="255" font-size="10" fill="#555">OB 1.20884-1.20780 (entry tai day)</text>
+  <line x1="70" y1="272" x2="400" y2="272" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="130" y="300" font-size="11" font-weight="700" fill="#1a1a1a">Entry 1.20805 (10:05 UTC+7, Asia)</text>
+
+  <line x1="70" y1="400" x2="400" y2="400" stroke="#1e8449" stroke-dasharray="5 3"/>
+  <text x="405" y="404" font-size="10" fill="#1e8449">TP 1.20381</text>
+
+  <path d="M 235 272 Q 260 190 235 135" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#arrowR3)"/>
+  <text x="235" y="440" text-anchor="middle" font-size="11" fill="#943126">"Da biet truoc gia se chay len lay BSL"</text>
+  <text x="235" y="456" text-anchor="middle" font-size="11" font-weight="700" fill="#943126">-- nhung khong co ghi chu real-time nao</text>
+  <text x="235" y="472" text-anchor="middle" font-size="11" font-weight="700" fill="#943126">xac nhan dieu nay TRUOC luc 10:05</text>
+
+  <!-- RIGHT: what's actually provable before -->
+  <text x="665" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#1e8449">CHI XAC NHAN DUOC TRUOC OUTCOME</text>
+  <rect x="500" y="100" width="330" height="410" fill="#eafaf1" stroke="#1e8449"/>
+
+  <g font-size="12" fill="#1a1a1a">
+    <text x="520" y="150">- D1 Bias: Bearish (LH/LL) - FACT</text>
+    <text x="520" y="185">- OB H1 Premium, dung phia - FACT</text>
+    <text x="520" y="220">- Gio entry: 10:05 UTC+7 - FACT</text>
+    <text x="520" y="255">- Session: Asia, ngoai KZ - FACT</text>
+    <text x="520" y="290">- Displacement "khong qua lon"</text>
+    <text x="535" y="308">(tu nhan tai thoi diem) - FACT</text>
+  </g>
+
+  <rect x="510" y="130" width="300" height="200" fill="none" stroke="#1e8449" stroke-dasharray="2 2"/>
+
+  <text x="665" y="360" text-anchor="middle" font-size="11" font-weight="700" fill="#943126">KHONG co trong ghi chu truoc entry:</text>
+  <text x="665" y="378" text-anchor="middle" font-size="11" fill="#943126">"BSL 1.21296 se bi lay truoc"</text>
+  <text x="665" y="396" text-anchor="middle" font-size="11" fill="#943126">-- day la HINDSIGHT (O1)</text>
+
+  <text x="665" y="440" text-anchor="middle" font-size="11" fill="#555">Ket luan: first_error=draw dung</text>
+  <text x="665" y="456" text-anchor="middle" font-size="11" fill="#555">theo canon (nen hoi truoc) nhung</text>
+  <text x="665" y="472" text-anchor="middle" font-size="11" fill="#555">chan doan nguyen nhan La hindsight</text>
+
+  <text x="450" y="540" text-anchor="middle" font-size="12" fill="#444">Bai hoc: rule dung theo doctrine != chan doan nguyen nhan da biet truoc outcome.</text>
+
+  <defs>
+    <marker id="arrowR3" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+</svg>

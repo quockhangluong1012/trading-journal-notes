@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="580" viewBox="0 0 900 580" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="900" height="580" fill="#0e1726"/>
+  <text x="30" y="38" fill="#e2e8f0" font-size="19" font-weight="bold">Kiến trúc D1-gate — Rule R1 (commit 2026-08-03, 15:41 +07)</text>
+
+  <!-- D1 box -->
+  <rect x="50" y="110" width="170" height="60" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="135" y="135" fill="#e2e8f0" font-size="14" font-weight="bold" text-anchor="middle">D1 close</text>
+  <text x="135" y="155" fill="#94a3b8" font-size="12" text-anchor="middle">đêm nay ≈ 05:17 +07</text>
+
+  <!-- Diamond -->
+  <polygon points="370,92 495,140 370,188 245,140" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="370" y="135" fill="#e2e8f0" font-size="13" font-weight="bold" text-anchor="middle">Acceptance</text>
+  <text x="370" y="153" fill="#e2e8f0" font-size="13" text-anchor="middle">bên trong range?</text>
+
+  <line x1="220" y1="140" x2="240" y2="140" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- YES branch -->
+  <line x1="495" y1="140" x2="545" y2="140" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="520" y="126" fill="#4ade80" font-size="11" text-anchor="middle">YES</text>
+  <rect x="550" y="110" width="150" height="60" rx="8" fill="#1e293b" stroke="#22c55e"/>
+  <text x="625" y="135" fill="#e2e8f0" font-size="13" font-weight="bold" text-anchor="middle">H1 — structure</text>
+  <text x="625" y="153" fill="#94a3b8" font-size="12" text-anchor="middle">confirmation</text>
+  <line x1="700" y1="140" x2="730" y2="140" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="735" y="110" width="130" height="60" rx="8" fill="#1e293b" stroke="#22c55e"/>
+  <text x="800" y="135" fill="#e2e8f0" font-size="13" font-weight="bold" text-anchor="middle">M5 — execution</text>
+  <text x="800" y="153" fill="#94a3b8" font-size="12" text-anchor="middle">entry model</text>
+
+  <!-- NO / limbo branch -->
+  <line x1="370" y1="188" x2="370" y2="235" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="382" y="215" fill="#fbbf24" font-size="11">CHƯA (kể cả limbo)</text>
+  <rect x="250" y="240" width="240" height="66" rx="8" fill="#1e293b" stroke="#f59e0b"/>
+  <text x="370" y="266" fill="#fbbf24" font-size="13" font-weight="bold" text-anchor="middle">NO-TRADE</text>
+  <text x="370" y="286" fill="#94a3b8" font-size="12" text-anchor="middle">H1/M5 đọc được nhưng không mang</text>
+  <text x="370" y="301" fill="#94a3b8" font-size="12" text-anchor="middle">trọng lượng quyết định (decoration)</text>
+
+  <!-- Invalidation branch -->
+  <line x1="300" y1="172" x2="185" y2="238" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="50" y="240" width="185" height="66" rx="8" fill="#1e293b" stroke="#ef4444"/>
+  <text x="142" y="264" fill="#f87171" font-size="12" font-weight="bold" text-anchor="middle">Close &lt; 28,187</text>
+  <text x="142" y="281" fill="#94a3b8" font-size="12" text-anchor="middle">+ acceptance bên dưới</text>
+  <text x="142" y="297" fill="#f87171" font-size="12" text-anchor="middle">→ bias invalidated</text>
+
+  <!-- O8 box -->
+  <rect x="50" y="360" width="800" height="150" rx="8" fill="#f59e0b" fill-opacity="0.06" stroke="#f59e0b" stroke-dasharray="7 5" stroke-width="1.5"/>
+  <text x="70" y="390" fill="#fbbf24" font-size="15" font-weight="bold">Tham số CHƯA điền — O8 (gate chưa vận hành được)</text>
+  <text x="70" y="418" fill="#e2e8f0" font-size="13">□  N = bao nhiêu close D1 (liên tiếp?) mới tính là acceptance?</text>
+  <text x="70" y="442" fill="#e2e8f0" font-size="13">□  X = 28,187 (biên range) hay 28,237 (đỉnh vùng EQL)?</text>
+  <text x="70" y="466" fill="#e2e8f0" font-size="13">□  Body close hay chấp nhận wick?</text>
+  <text x="70" y="490" fill="#e2e8f0" font-size="13">□  Limbo: close nằm giữa 28,187–28,237 tính là gì?</text>
+
+  <text x="50" y="545" fill="#94a3b8" font-size="13">Deadline tự nhiên: D1 close đầu tiên sau khi commit — thiếu số thì ngay đêm đầu rule không xử được ca của chính nó.</text>
+</svg>

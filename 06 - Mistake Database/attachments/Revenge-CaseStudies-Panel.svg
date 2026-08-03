@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 640" width="1150" height="640" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1150" height="640" fill="#ffffff"/>
+  <text x="30" y="36" font-size="22" font-weight="bold" fill="#1a1a1a">Case Studies — Revenge Trading (kịch bản minh họa)</text>
+  <text x="30" y="58" font-size="13" fill="#555">3 panel: Case A thất bại / Case B xử lý đúng / Case C vùng xám — số liệu mang tính đại diện</text>
+
+  <!-- Panel A - đỏ -->
+  <rect x="30" y="80" width="350" height="530" rx="8" fill="#fdecea" stroke="#c62828"/>
+  <text x="45" y="106" font-size="15" font-weight="bold" fill="#c62828">Case A — Thất bại (XAUUSD, NY)</text>
+
+  <rect x="45" y="118" width="320" height="170" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="55,180 90,175 120,150 150,240 180,260 210,270 250,285 300,290 350,282"
+            fill="none" stroke="#c62828" stroke-width="2.5"/>
+  <line x1="45" y1="150" x2="330" y2="150" stroke="#333" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="250" y="146" font-size="10" fill="#333">Entry 1</text>
+  <line x1="45" y1="240" x2="330" y2="240" stroke="#c62828" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="250" y="236" font-size="10" fill="#c62828">SL1/SL2</text>
+  <line x1="45" y1="285" x2="330" y2="285" stroke="#8e0000" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="280" y="281" font-size="10" fill="#8e0000">SL3</text>
+
+  <text x="45" y="304" font-size="12" fill="#333">20:32 — Entry short A-tier đúng plan</text>
+  <text x="45" y="320" font-size="12" fill="#333">20:41 — SL1, −0.5% (đúng kế hoạch)</text>
+  <text x="45" y="336" font-size="12" fill="#333">20:45 — Vào lại 2', size 1%, không</text>
+  <text x="45" y="350" font-size="12" fill="#333">setup rõ → SL2, −1%</text>
+  <text x="45" y="366" font-size="12" fill="#333">20:54 — Lệnh 3, size 1.2%, lý do</text>
+  <text x="45" y="380" font-size="12" fill="#333">viết hồi tố → SL3, −1.2%</text>
+  <text x="45" y="400" font-size="12" font-weight="bold" fill="#c62828">Tổng: −2.7% trong 40 phút</text>
+  <text x="45" y="420" font-size="12" fill="#333">Audit: 0/6 câu liên quan PASS</text>
+  <text x="45" y="436" font-size="12" font-weight="bold" fill="#c62828">→ Rubric hạng F</text>
+  <text x="45" y="460" font-size="12" fill="#333">Lỗi kích hoạt: bỏ cooldown (câu 1),</text>
+  <text x="45" y="476" font-size="12" fill="#333">tăng size (câu 2), log hồi tố (câu 11)</text>
+  <text x="45" y="496" font-size="12" font-style="italic" fill="#8e0000">Kịch bản minh họa, không phải log thật.</text>
+
+  <!-- Panel B - xanh -->
+  <rect x="400" y="80" width="350" height="530" rx="8" fill="#e8f5e9" stroke="#2e7d32"/>
+  <text x="415" y="106" font-size="15" font-weight="bold" fill="#2e7d32">Case B — Xử lý đúng (NAS100, NY)</text>
+
+  <rect x="415" y="118" width="320" height="170" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="425,180 460,175 490,150 520,220 550,180 580,130 620,100 670,90 720,85"
+            fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+  <line x1="415" y1="150" x2="735" y2="150" stroke="#333" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="416" y="145" font-size="10" fill="#333">Entry 1 (thua đúng plan)</text>
+  <line x1="415" y1="220" x2="735" y2="220" stroke="#c62828" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="416" y="234" font-size="10" fill="#c62828">SL1 −0.5%</text>
+  <line x1="490" y1="150" x2="735" y2="150" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="490" y="113" font-size="10" fill="#2e7d32">Setup A-tier bị bỏ</text>
+  <text x="490" y="125" font-size="10" fill="#2e7d32">qua (cooldown)</text>
+
+  <text x="415" y="304" font-size="12" fill="#333">21:00 — Entry short, SL1 sau 6' → −0.5%</text>
+  <text x="415" y="320" font-size="12" fill="#333">21:06 — Ghi nhận, tilt flag 2/5, bắt</text>
+  <text x="415" y="336" font-size="12" fill="#333">đầu cooldown 30'</text>
+  <text x="415" y="352" font-size="12" fill="#333">21:15 — Setup A-tier thật xuất hiện —</text>
+  <text x="415" y="368" font-size="12" fill="#333">KHÔNG vào vì chưa hết cooldown</text>
+  <text x="415" y="384" font-size="12" fill="#333">21:36 — Giá đã chạy xa, cơ hội mất</text>
+  <text x="415" y="404" font-size="12" font-weight="bold" fill="#2e7d32">Kết quả: −0.5% (không thêm lỗi),</text>
+  <text x="415" y="420" font-size="12" font-weight="bold" fill="#2e7d32">bỏ lỡ +1.4% tiềm năng</text>
+  <text x="415" y="440" font-size="12" fill="#333">Bài học: process đúng ≠ kết quả</text>
+  <text x="415" y="456" font-size="12" fill="#333">đẹp từng lệnh — đúng tại thời điểm</text>
+  <text x="415" y="472" font-size="12" fill="#333">quyết định, không theo outcome bias</text>
+  <text x="415" y="496" font-size="12" font-style="italic" fill="#1b4d1e">Kịch bản minh họa, không phải log thật.</text>
+
+  <!-- Panel C - amber -->
+  <rect x="770" y="80" width="350" height="530" rx="8" fill="#fff8e1" stroke="#f9a825"/>
+  <text x="785" y="106" font-size="15" font-weight="bold" fill="#3a2c00">Case C — Vùng xám (EURUSD, London)</text>
+
+  <rect x="785" y="118" width="320" height="170" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="795,170 830,165 860,140 890,210 920,175 950,120 990,95 1040,88 1090,85"
+            fill="none" stroke="#f9a825" stroke-width="2.5"/>
+  <line x1="785" y1="140" x2="1105" y2="140" stroke="#333" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="786" y="135" font-size="10" fill="#333">Entry 1, thua nhẹ, tilt flag 1/5</text>
+  <line x1="890" y1="210" x2="1105" y2="210" stroke="#c62828" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="786" y="224" font-size="10" fill="#c62828">SL1 −0.5%</text>
+  <line x1="920" y1="140" x2="1105" y2="140" stroke="#3a2c00" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="920" y="113" font-size="10" fill="#3a2c00">Setup hiếm + SMT,</text>
+  <text x="920" y="125" font-size="10" fill="#3a2c00">giữa cooldown</text>
+
+  <text x="785" y="304" font-size="12" fill="#3a2c00">Lệnh thua đầu tiên, tilt flag 1/5 —</text>
+  <text x="785" y="320" font-size="12" fill="#3a2c00">không dấu hiệu tilt sinh lý rõ</text>
+  <text x="785" y="336" font-size="12" fill="#3a2c00">25' sau: setup A-tier hiếm + SMT tại</text>
+  <text x="785" y="352" font-size="12" fill="#3a2c00">POI H4 đã đánh dấu từ trước</text>
+  <text x="785" y="372" font-size="12" fill="#3a2c00">Rule cứng: chưa đủ 30' → không vào</text>
+  <text x="785" y="388" font-size="12" fill="#3a2c00">Ngoại lệ có điều kiện: tilt thấp +</text>
+  <text x="785" y="404" font-size="12" fill="#3a2c00">setup hiếm + lệnh thua đầu duy nhất</text>
+  <text x="785" y="424" font-size="12" font-weight="bold" fill="#3a2c00">Tie-break: cần ĐỦ 4 điều kiện</text>
+  <text x="785" y="440" font-size="12" fill="#3a2c00">(xem mục 15C) — thiếu 1 thì quay về</text>
+  <text x="785" y="456" font-size="12" fill="#3a2c00">rule cứng mặc định</text>
+  <text x="785" y="476" font-size="12" fill="#3a2c00">Bài học: giới hạn của rule cứng lộ ra</text>
+  <text x="785" y="492" font-size="12" fill="#3a2c00">khi có dữ liệu khách quan mâu thuẫn</text>
+  <text x="785" y="516" font-size="12" font-style="italic" fill="#7a5c00">Kịch bản minh họa, không phải log thật.</text>
+</svg>

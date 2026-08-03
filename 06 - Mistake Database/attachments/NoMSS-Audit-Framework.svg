@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="760" fill="#ffffff"/>
+  <text x="550" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Audit Framework — MSS Confirmation Pipeline</text>
+  <text x="550" y="58" text-anchor="middle" font-size="14" fill="#555">Từ log đủ field đến hành động, kèm khối red flags phân biệt MSS thật/liquidity run</text>
+
+  <!-- Stage 1 -->
+  <rect x="40" y="80" width="230" height="150" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="155" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565c0">1. Log fields bắt buộc</text>
+  <text x="55" y="128" font-size="11.5" fill="#1a1a1a">protected_swing_price</text>
+  <text x="55" y="146" font-size="11.5" fill="#1a1a1a">break_type (body/wick)</text>
+  <text x="55" y="164" font-size="11.5" fill="#1a1a1a">timeframe_confirmed</text>
+  <text x="55" y="182" font-size="11.5" fill="#1a1a1a">intended_entry_timeframe</text>
+  <text x="55" y="200" font-size="11.5" fill="#1a1a1a">sweep_before_swing</text>
+  <text x="55" y="218" font-size="11.5" fill="#1a1a1a">candles_since_sweep_to_mss</text>
+
+  <path d="M 270 155 L 300 155" stroke="#999" stroke-width="2" marker-end="url(#a6)"/>
+
+  <!-- Stage 2 -->
+  <rect x="300" y="80" width="240" height="150" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="420" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">2. 12 câu hỏi PASS/FAIL</text>
+  <text x="315" y="128" font-size="11.5" fill="#555">Swing đạt ngưỡng protected?</text>
+  <text x="315" y="146" font-size="11.5" fill="#555">Break_type = body_close?</text>
+  <text x="315" y="164" font-size="11.5" fill="#555">Khung khớp intended?</text>
+  <text x="315" y="182" font-size="11.5" fill="#555">Trong cửa sổ chờ hợp lệ?</text>
+  <text x="315" y="200" font-size="11.5" fill="#555">SL neo theo protected swing?</text>
+  <text x="315" y="218" font-size="11.5" fill="#555">Không vẽ lại hồi tố?</text>
+
+  <path d="M 540 155 L 570 155" stroke="#999" stroke-width="2" marker-end="url(#a6)"/>
+
+  <!-- Stage 3 -->
+  <rect x="570" y="80" width="230" height="150" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="685" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a2c00">3. Rubric A/B/C/F</text>
+  <text x="585" y="130" font-size="12" fill="#2e7d32">A: 11-12/12 — mẫu chuẩn</text>
+  <text x="585" y="150" font-size="12" fill="#1565c0">B: 8-10/12 — chấp nhận</text>
+  <text x="585" y="170" font-size="12" fill="#3a2c00">C: 5-7/12 — cảnh báo</text>
+  <text x="585" y="190" font-size="12" fill="#c62828">F: 0-4/12 — vi phạm nặng</text>
+  <text x="585" y="212" font-size="11" fill="#555">(điểm/12 câu audit)</text>
+
+  <path d="M 800 155 L 830 155" stroke="#999" stroke-width="2" marker-end="url(#a6)"/>
+
+  <!-- Stage 4 -->
+  <rect x="830" y="80" width="230" height="150" rx="8" fill="#fce4e4" stroke="#c62828" stroke-width="1.5"/>
+  <text x="945" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#c62828">4. Hành động</text>
+  <text x="845" y="130" font-size="11.5" fill="#1a1a1a">≥30% lệnh tháng = C:</text>
+  <text x="845" y="148" font-size="11.5" fill="#1a1a1a">thêm bước xác nhận volume/</text>
+  <text x="845" y="166" font-size="11.5" fill="#1a1a1a">retest trong 2 tuần</text>
+  <text x="845" y="188" font-size="11.5" fill="#1a1a1a">≥2 lệnh F wick_only liên tiếp:</text>
+  <text x="845" y="206" font-size="11.5" fill="#1a1a1a">dừng live/demo, backtest lại</text>
+
+  <defs>
+    <marker id="a6" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- Red flags -->
+  <rect x="40" y="260" width="1020" height="180" rx="10" fill="#fce4e4" stroke="#c62828" stroke-width="2"/>
+  <text x="60" y="288" font-size="15" font-weight="bold" fill="#c62828">Red flags — nhầm lẫn MSS thật với liquidity run</text>
+  <text x="60" y="312" font-size="12.5" fill="#3a2c00">• Wick-only break được ghi nhận là "MSS xác nhận" trong log</text>
+  <text x="60" y="332" font-size="12.5" fill="#3a2c00">• timeframe_confirmed luôn khác intended_entry_timeframe, luôn theo hướng hạ khung</text>
+  <text x="60" y="352" font-size="12.5" fill="#3a2c00">• protected_swing_criteria_met = có ở 100% lệnh dù không có ngưỡng số rõ ràng</text>
+  <text x="60" y="372" font-size="12.5" fill="#3a2c00">• candles_since_sweep_to_mss rất lớn nhưng vẫn ghép là "MSS hợp lệ theo sweep đó"</text>
+  <text x="60" y="392" font-size="12.5" fill="#3a2c00">• Screenshot luôn được chụp SAU khi lệnh đã đóng, không phải ngay trước entry</text>
+  <text x="60" y="416" font-size="12.5" fill="#3a2c00">• "Ngoại lệ wick+volume spike" viện dẫn mà không có số liệu volume cụ thể</text>
+
+  <!-- Cadence -->
+  <rect x="40" y="460" width="330" height="150" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="60" y="486" font-size="13" font-weight="bold" fill="#1a1a1a">Nhịp audit</text>
+  <text x="60" y="510" font-size="12" fill="#555">Hàng ngày: chấm nhanh mọi</text>
+  <text x="60" y="528" font-size="12" fill="#555">tình huống cân nhắc đảo chiều</text>
+  <text x="60" y="546" font-size="12" fill="#555">(kể cả lệnh không vào)</text>
+  <text x="60" y="568" font-size="12" fill="#555">Hàng tuần: tỷ lệ wick_only</text>
+  <text x="60" y="586" font-size="12" fill="#555">trong nhóm lệnh F</text>
+
+  <!-- Meta-audit -->
+  <rect x="390" y="460" width="670" height="150" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="410" y="486" font-size="13" font-weight="bold" fill="#3a2c00">Meta-audit của chính note</text>
+  <text x="410" y="510" font-size="12" fill="#3a2c00">Evidence Tier hiện tại: TIER 0 — định nghĩa protected swing và bảng expectancy</text>
+  <text x="410" y="530" font-size="12" fill="#3a2c00">mô phỏng là suy luận lý thuyết, chưa backtest phân nhóm theo break_type. n=0.</text>
+  <text x="410" y="552" font-size="12" fill="#3a2c00">Cần dữ liệu: backtest ≥20 mẫu theo break_type, đo chi phí cơ hội chờ MSS, xác</text>
+  <text x="410" y="572" font-size="12" fill="#3a2c00">định cửa sổ thời gian hợp lệ chờ MSS dựa trên phân phối thời gian thật.</text>
+  <text x="410" y="594" font-size="12" fill="#3a2c00">Auditor: trader tự đo bằng tiêu chí body-close cụ thể + rule GATE cố định.</text>
+</svg>

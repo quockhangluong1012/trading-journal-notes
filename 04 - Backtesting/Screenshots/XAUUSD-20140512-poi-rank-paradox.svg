@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">POI Rank vs Ket qua thuc te - nghich ly trong cum XAUUSD thang 5/2014</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">4 lenh Short lien tiep cung downtrend - rank cao (RB, Breaker) lai thua, FVG rank thap lai thang</text>
+
+  <!-- axis -->
+  <line x1="90" y1="480" x2="820" y2="480" stroke="#333" stroke-width="2"/>
+  <text x="90" y="500" font-size="11" fill="#333">POI Rank (thang 8.1)</text>
+  <line x1="90" y1="480" x2="90" y2="110" stroke="#333" stroke-width="2"/>
+  <text x="40" y="120" font-size="11" fill="#333">Ket qua</text>
+
+  <!-- WIN row -->
+  <text x="55" y="185" font-size="12" font-weight="700" fill="#1e8449">WIN</text>
+  <line x1="90" y1="200" x2="820" y2="200" stroke="#ddd" stroke-dasharray="3 3"/>
+  <!-- LOSS row -->
+  <text x="55" y="365" font-size="12" font-weight="700" fill="#c0392b">LOSS</text>
+  <line x1="90" y1="380" x2="820" y2="380" stroke="#ddd" stroke-dasharray="3 3"/>
+
+  <!-- Note 1: FVG rank1 WIN -->
+  <circle cx="220" cy="200" r="10" fill="#1e8449"/>
+  <text x="220" y="225" text-anchor="middle" font-size="11" fill="#1e8449">FVG (rank 1)</text>
+  <text x="220" y="240" text-anchor="middle" font-size="10" fill="#555">12/5 sang - WIN +2.9R</text>
+
+  <!-- Note 3: FVG/BPR rank1 WIN -->
+  <circle cx="380" cy="200" r="10" fill="#1e8449"/>
+  <text x="380" y="225" text-anchor="middle" font-size="11" fill="#1e8449">FVG/BPR (rank 1)</text>
+  <text x="380" y="240" text-anchor="middle" font-size="10" fill="#555">14/5 chieu - WIN +2.97R</text>
+
+  <!-- Note 2: RB (off-scale) LOSS -->
+  <circle cx="560" cy="380" r="10" fill="#c0392b"/>
+  <text x="560" y="405" text-anchor="middle" font-size="11" fill="#c0392b">Rejection Block (ngoai thang)</text>
+  <text x="560" y="420" text-anchor="middle" font-size="10" fill="#555">14/5 sang - LOSS -1R</text>
+
+  <!-- Note 4: Breaker rank3 LOSS -->
+  <circle cx="700" cy="380" r="10" fill="#c0392b"/>
+  <text x="700" y="405" text-anchor="middle" font-size="11" fill="#c0392b">Breaker Block (rank 3)</text>
+  <text x="700" y="420" text-anchor="middle" font-size="10" fill="#555">19/5 - LOSS -1R</text>
+
+  <!-- rank axis ticks -->
+  <text x="220" y="495" text-anchor="middle" font-size="10" fill="#888">1</text>
+  <text x="380" y="495" text-anchor="middle" font-size="10" fill="#888">1 (BPR)</text>
+  <text x="560" y="495" text-anchor="middle" font-size="10" fill="#888">- (off-scale)</text>
+  <text x="700" y="495" text-anchor="middle" font-size="10" fill="#888">3</text>
+
+  <!-- SL-on-path-to-untested-POI note box -->
+  <rect x="90" y="115" width="730" height="55" fill="#fdebd0" stroke="#e67e22"/>
+  <text x="105" y="135" font-size="12" font-weight="700" fill="#a04000">Rui ro cau truc chung ca 4 lenh: SL nam tren duong gia toi POI sau hon chua test</text>
+  <text x="105" y="153" font-size="11" fill="#a04000">Lenh 12/5 (WIN) cung co OB H1 0.786 chua test tren duong SL - chi khac la gia khong di toi do truoc khi dao chieu</text>
+
+  <text x="450" y="540" text-anchor="middle" font-size="12" fill="#444">Ket luan: thang POI rank (do do "cao cap" cua khai niem) khong khop voi ty le thang thuc nghiem trong mau nho nay (n=4).</text>
+</svg>

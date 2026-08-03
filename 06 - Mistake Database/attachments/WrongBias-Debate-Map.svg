@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 940" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1100" height="940" fill="#ffffff"/>
+<text x="30" y="40" font-size="22" font-weight="bold" fill="#1a1a1a">WrongBias - Debate Map</text>
+<text x="30" y="62" font-size="13" fill="#555">Trade ngược bias intraday khi LTF cực rõ vs bias là gate tuyệt đối</text>
+
+<text x="60" y="100" font-size="16" font-weight="bold" fill="#2e7d32">Bias là gate tuyệt đối (4)</text>
+<g fill="#ffffff" stroke="#2e7d32" stroke-width="1.5">
+<rect x="40" y="115" width="460" height="80" rx="6"/>
+<rect x="40" y="205" width="460" height="80" rx="6"/>
+<rect x="40" y="295" width="460" height="80" rx="6"/>
+<rect x="40" y="385" width="460" height="80" rx="6"/>
+</g>
+<text x="55" y="138" font-size="13" fill="#1a1a1a">1. Bias sai là nguồn gốc</text>
+<text x="55" y="154" font-size="13" fill="#1a1a1a">cụm lỗi tương quan - ngoại</text>
+<text x="55" y="170" font-size="13" fill="#1a1a1a">lệ mở kẽ hở tâm lý</text>
+
+<text x="55" y="228" font-size="13" fill="#1a1a1a">2. HTF pool = target không</text>
+<text x="55" y="244" font-size="13" fill="#1a1a1a">phải trigger - tín hiệu LTF</text>
+<text x="55" y="260" font-size="13" fill="#1a1a1a">ngược chỉ là pullback</text>
+
+<text x="55" y="318" font-size="13" fill="#1a1a1a">3. Không gate cứng = không</text>
+<text x="55" y="334" font-size="13" fill="#1a1a1a">thể backtest "LTF cực rõ"</text>
+<text x="55" y="350" font-size="13" fill="#1a1a1a">nếu không định nghĩa được</text>
+
+<text x="55" y="408" font-size="13" fill="#1a1a1a">4. Rủi ro bất đối xứng:</text>
+<text x="55" y="424" font-size="13" fill="#1a1a1a">theo gate mất cơ hội, trade</text>
+<text x="55" y="440" font-size="13" fill="#1a1a1a">ngược mất tiền thật</text>
+
+<text x="600" y="100" font-size="16" font-weight="bold" fill="#c62828">Bias là xác suất mềm (4)</text>
+<g fill="#ffffff" stroke="#c62828" stroke-width="1.5">
+<rect x="580" y="115" width="480" height="80" rx="6"/>
+<rect x="580" y="205" width="480" height="80" rx="6"/>
+<rect x="580" y="295" width="480" height="80" rx="6"/>
+<rect x="580" y="385" width="480" height="80" rx="6"/>
+</g>
+<text x="595" y="138" font-size="13" fill="#1a1a1a">1. GATE cứng vs xác suất</text>
+<text x="595" y="154" font-size="13" fill="#1a1a1a">mềm chưa giải quyết ở</text>
+<text x="595" y="170" font-size="13" fill="#1a1a1a">Doctrine v2 3.2/5.1</text>
+
+<text x="595" y="228" font-size="13" fill="#1a1a1a">2. Cấu trúc có thể đổi</text>
+<text x="595" y="244" font-size="13" fill="#1a1a1a">giữa phiên hợp lệ (stale</text>
+<text x="595" y="260" font-size="13" fill="#1a1a1a">bias cần cập nhật)</text>
+
+<text x="595" y="318" font-size="13" fill="#1a1a1a">3. LTF cực rõ có thể định</text>
+<text x="595" y="334" font-size="13" fill="#1a1a1a">nghĩa định lượng: sweep+MSS</text>
+<text x="595" y="350" font-size="13" fill="#1a1a1a">+FVG+displacement 4/5</text>
+
+<text x="595" y="408" font-size="13" fill="#1a1a1a">4. Chi phí cơ hội của gate</text>
+<text x="595" y="424" font-size="13" fill="#1a1a1a">cứng tuyệt đối là có thật</text>
+<text x="595" y="440" font-size="13" fill="#1a1a1a">và có thể đo được</text>
+
+<line x1="500" y1="155" x2="580" y2="235" stroke="#999" stroke-width="1.5" marker-end="url(#a3)"/>
+<line x1="580" y1="335" x2="500" y2="415" stroke="#999" stroke-width="1.5" marker-end="url(#a3)"/>
+<defs>
+<marker id="a3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 z" fill="#999"/>
+</marker>
+</defs>
+<text x="505" y="490" font-size="13" fill="#555">Vòng 1-2: hội tụ về "gate có</text>
+<text x="505" y="506" font-size="13" fill="#555">thể cập nhật có điều kiện"</text>
+
+<rect x="40" y="530" width="1020" height="160" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+<text x="60" y="558" font-size="16" font-weight="bold" fill="#1a1a1a">Phán quyết có điều kiện (giả thuyết đang kiểm định)</text>
+<text x="60" y="582" font-size="13" fill="#1a1a1a">Bias D1 (đặc biệt Tier A) là GATE MẶC ĐỊNH BẮT BUỘC trong phiên.</text>
+<text x="60" y="600" font-size="13" fill="#1a1a1a">Ngoại lệ DUY NHẤT: có đủ bộ bằng chứng cấu trúc mới cùng Tier (sweep</text>
+<text x="60" y="618" font-size="13" fill="#1a1a1a">cùng khung + MSS + FVG + displacement >= 4/5) - ghi log bias_updated_intraday.</text>
+<text x="60" y="644" font-size="13" fill="#1a1a1a">Dữ liệu cần: log bias_tier_initial + bias_updated_intraday + outcome trên n=30 ngày.</text>
+<text x="60" y="668" font-size="13" fill="#1565c0">Đây không còn là "trade ngược bias" mà là "cập nhật bias có căn cứ".</text>
+
+<rect x="40" y="710" width="1020" height="60" rx="6" fill="#f9a825" fill-opacity="0.15" stroke="#f9a825"/>
+<text x="60" y="732" font-size="13" font-weight="bold" fill="#3a2c00">Evidence Tier hiện tại</text>
+<text x="60" y="752" font-size="13" fill="#3a2c00">Tier 0-1: khung Tier A/B/C hợp lý về logic, chưa có backtest riêng xác nhận ngưỡng</text>
+</svg>

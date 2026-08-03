@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="1080" height="560" fill="#ffffff"/>
+  <text x="540" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">FVG Don Rank-1 tai NY AM Kill Zone - Long Discount</text>
+  <text x="540" y="52" text-anchor="middle" font-size="13" fill="#666">EURUSD 2021-07-22 Long - dung bias + dung Kill Zone du de thang, du POI rank thap</text>
+
+  <!-- LEFT: actual trade -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#1e8449">DIEN BIEN THUC TE (Win)</text>
+  <rect x="70" y="100" width="330" height="410" fill="#fafafa" stroke="#ddd"/>
+
+  <line x1="70" y1="130" x2="400" y2="130" stroke="#999" stroke-dasharray="2 2"/>
+  <text x="405" y="134" font-size="10" fill="#999">Range High 1.18956</text>
+  <line x1="70" y1="470" x2="400" y2="470" stroke="#999" stroke-dasharray="2 2"/>
+  <text x="405" y="474" font-size="10" fill="#999">Range Low 1.17054</text>
+  <line x1="70" y1="305" x2="400" y2="305" stroke="#bbb" stroke-dasharray="3 3"/>
+  <text x="405" y="309" font-size="10" fill="#888">EQ 1.18005</text>
+
+  <!-- FVG box -->
+  <rect x="70" y="345" width="330" height="45" fill="#a9dfbf" fill-opacity="0.5"/>
+  <text x="150" y="340" font-size="11" fill="#1e8449">FVG H1 (rank 1, don)</text>
+  <line x1="70" y1="345" x2="400" y2="345" stroke="#1e8449"/>
+  <text x="405" y="349" font-size="10" fill="#1e8449">1.17966</text>
+  <line x1="70" y1="390" x2="400" y2="390" stroke="#1e8449"/>
+  <text x="405" y="394" font-size="10" fill="#1e8449">1.17601</text>
+
+  <!-- CE -->
+  <line x1="70" y1="366" x2="400" y2="366" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="405" y="370" font-size="10" fill="#e67e22">CE 1.17784</text>
+
+  <!-- Entry -->
+  <line x1="70" y1="360" x2="400" y2="360" stroke="#1e8449" stroke-width="2"/>
+  <text x="130" y="300" font-size="11" font-weight="700" fill="#1e8449">Entry 1.17841 (08:10 ET, NY AM KZ)</text>
+
+  <!-- SL -->
+  <line x1="70" y1="405" x2="400" y2="405" stroke="#c0392b" stroke-dasharray="5 3"/>
+  <text x="405" y="409" font-size="10" fill="#c0392b">SL 1.17698</text>
+
+  <!-- TP -->
+  <line x1="70" y1="270" x2="400" y2="270" stroke="#1e8449" stroke-dasharray="5 3"/>
+  <text x="405" y="268" font-size="10" fill="#1e8449">TP 1.18244 (gan EQ,</text>
+  <text x="405" y="281" font-size="10" fill="#1e8449">KHONG neo named level)</text>
+
+  <path d="M 235 360 Q 260 320 260 275" stroke="#1e8449" stroke-width="2.5" fill="none" marker-end="url(#arrowG3)"/>
+
+  <text x="235" y="440" text-anchor="middle" font-size="10" fill="#943126">TP khong trung BSL da map (1.18956)</text>
+  <text x="235" y="455" text-anchor="middle" font-size="10" fill="#943126">-&gt; note tu nhan diem yeu risk mgmt</text>
+
+  <!-- RIGHT: rank comparison -->
+  <text x="775" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#2874a6">SO SANH POI RANK TRONG BATCH</text>
+  <rect x="580" y="100" width="430" height="410" fill="#fafafa" stroke="#ddd"/>
+
+  <g font-size="12" fill="#1a1a1a">
+    <text x="600" y="150" font-weight="700">FVG don (note nay) - rank 1/5</text>
+    <text x="600" y="168">RR ghi 2.86 vs tinh lai 2.818</text>
+    <text x="600" y="184">Chenh 0.042R -- SACH NHAT batch</text>
+
+    <text x="600" y="230" font-weight="700">BPR (07-09) - ngoai thang</text>
+    <text x="600" y="248">CE lech 14.8 pip vs cong thuc</text>
+
+    <text x="600" y="294" font-weight="700">Unicorn (07-10/01) - rank 5/5</text>
+    <text x="600" y="312">RR ghi 3.075 vs tinh lai 2.123</text>
+    <text x="600" y="328">Chenh ~1R -- LON NHAT batch</text>
+  </g>
+
+  <rect x="590" y="130" width="400" height="70" fill="none" stroke="#1e8449" stroke-dasharray="2 2"/>
+  <rect x="590" y="275" width="400" height="70" fill="none" stroke="#c0392b" stroke-dasharray="2 2"/>
+
+  <text x="775" y="380" text-anchor="middle" font-size="11" font-weight="700" fill="#2874a6">Goi y (n=2, khong ket luan):</text>
+  <text x="775" y="398" text-anchor="middle" font-size="11" fill="#2874a6">POI cang phuc tap khong dong nghia</text>
+  <text x="775" y="414" text-anchor="middle" font-size="11" fill="#2874a6">log RR cang chinh xac</text>
+
+  <text x="540" y="540" text-anchor="middle" font-size="12" fill="#444">Bai hoc: ky luat thuc thi + dung Kill Zone quan trong hon POI rank cao.</text>
+
+  <defs>
+    <marker id="arrowG3" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1e8449"/>
+    </marker>
+  </defs>
+</svg>

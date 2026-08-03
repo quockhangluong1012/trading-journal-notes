@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 570" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="1080" height="570" fill="#ffffff"/>
+  <text x="540" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Rejection Block - Invalidation noi VAN BAN vs SL thuc dat</text>
+  <text x="540" y="52" text-anchor="middle" font-size="13" fill="#666">XAUUSD 2014-05-14 sang Short - hai gia tri mau thuan trong cung note</text>
+
+  <!-- LEFT: what the note SAID -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#555">VAN BAN NOI (ke hoach)</text>
+  <rect x="70" y="100" width="330" height="380" fill="#fafafa" stroke="#ddd"/>
+  <line x1="70" y1="120" x2="400" y2="120" stroke="#333" stroke-width="2"/>
+  <text x="405" y="124" font-size="10" fill="#333">RB High 1304.109</text>
+  <rect x="70" y="120" width="330" height="70" fill="#f9d0c4" fill-opacity="0.6"/>
+  <text x="120" y="150" font-size="11" fill="#a93226">Vung RB (rau nen)</text>
+  <line x1="70" y1="155" x2="400" y2="155" stroke="#e67e22" stroke-dasharray="4 3"/>
+  <text x="405" y="159" font-size="10" fill="#e67e22">CE RB 1303.412</text>
+  <line x1="70" y1="190" x2="400" y2="190" stroke="#333" stroke-width="2"/>
+  <text x="405" y="194" font-size="10" fill="#333">RB Low 1302.715</text>
+  <text x="235" y="230" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">"Invalidation: dong nen QUA RB H1"</text>
+  <text x="235" y="248" text-anchor="middle" font-size="11" fill="#c0392b">-&gt; nghia la tren 1304.109</text>
+  <line x1="70" y1="120" x2="400" y2="120" stroke="#c0392b" stroke-width="3" stroke-dasharray="6 3"/>
+  <text x="235" y="108" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">SL "dung" phai o day</text>
+
+  <!-- RIGHT: what SL actually was -->
+  <text x="745" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#555">SO LIEU THUC (frontmatter)</text>
+  <rect x="580" y="100" width="330" height="380" fill="#fafafa" stroke="#ddd"/>
+  <line x1="580" y1="120" x2="910" y2="120" stroke="#333" stroke-width="2"/>
+  <text x="580" y="115" font-size="10" fill="#333">RB High 1304.109</text>
+  <rect x="580" y="120" width="330" height="70" fill="#a9dfbf" fill-opacity="0.4"/>
+  <text x="630" y="150" font-size="11" fill="#1e8449">Vung RB (con hop le)</text>
+  <line x1="580" y1="190" x2="910" y2="190" stroke="#c0392b" stroke-width="3"/>
+  <text x="915" y="194" font-size="11" font-weight="700" fill="#c0392b">SL thuc = 1302.715</text>
+  <text x="915" y="208" font-size="11" font-weight="700" fill="#c0392b">= RB LOW</text>
+  <text x="745" y="235" text-anchor="middle" font-size="12" fill="#a93226">SL nam trong long vung phan ung</text>
+  <text x="745" y="253" text-anchor="middle" font-size="12" fill="#a93226">hop le cua RB - chua ra khoi POI</text>
+  <line x1="580" y1="320" x2="910" y2="320" stroke="#2980b9" stroke-dasharray="4 3"/>
+  <text x="580" y="315" font-size="10" fill="#2980b9">M1 FVG entry CE 1301.4505</text>
+  <path d="M 745 320 L 745 190" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowUp)"/>
+  <text x="780" y="280" font-size="10" fill="#c0392b">retrace binh thuong</text>
+  <text x="780" y="294" font-size="10" fill="#c0392b">trong OTE quet SL</text>
+
+  <text x="540" y="525" text-anchor="middle" font-size="12" fill="#444">Lech ~1.4 diem giua "invalidation noi bang loi" va SL so thuc - root cause chinh cua lenh thua nay.</text>
+  <text x="540" y="545" text-anchor="middle" font-size="11" fill="#888">Xem muc 9 (2026-07-18) cho phan tich goc; muc 10-12 (2026-08-03) bo sung Devil's Advocate + Doctrine check.</text>
+
+  <defs>
+    <marker id="arrowUp" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,6 L5,0 L10,6 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 860" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1100" height="860" fill="#ffffff"/>
+<text x="30" y="40" font-size="22" font-weight="bold" fill="#1a1a1a">WeakDisp - Root Cause 5 Whys</text>
+<text x="30" y="62" font-size="13" fill="#555">Chuỗi nguyên nhân từ triệu chứng đến gốc rễ + cơ chế AMD</text>
+
+<!-- staircase 5 whys -->
+<g>
+<rect x="30" y="90" width="330" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+<text x="45" y="112" font-size="13" fill="#1a1a1a" font-weight="bold">Bề mặt</text>
+<text x="45" y="132" font-size="13" fill="#1a1a1a">Coi grinding là MSS vì</text>
+<text x="45" y="148" font-size="13" fill="#1a1a1a">giá đóng cửa qua mức</text>
+
+<rect x="90" y="170" width="330" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+<text x="105" y="192" font-size="13" fill="#1a1a1a" font-weight="bold">Why 1</text>
+<text x="105" y="212" font-size="13" fill="#1a1a1a">Đánh giá MSS chỉ bằng</text>
+<text x="105" y="228" font-size="13" fill="#1a1a1a">vị trí đóng cửa</text>
+
+<rect x="150" y="250" width="360" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+<text x="165" y="272" font-size="13" fill="#1a1a1a" font-weight="bold">Why 2</text>
+<text x="165" y="292" font-size="13" fill="#1a1a1a">Chưa có checklist định</text>
+<text x="165" y="308" font-size="13" fill="#1a1a1a">lượng chạy trước khi gán nhãn</text>
+
+<rect x="210" y="330" width="380" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+<text x="225" y="352" font-size="13" fill="#1a1a1a" font-weight="bold">Why 3</text>
+<text x="225" y="372" font-size="13" fill="#1a1a1a">Tốc độ quyết định trong</text>
+<text x="225" y="388" font-size="13" fill="#1a1a1a">phiên khiến checklist bị bỏ qua</text>
+
+<rect x="270" y="410" width="380" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+<text x="285" y="432" font-size="13" fill="#1a1a1a" font-weight="bold">Why 4</text>
+<text x="285" y="452" font-size="13" fill="#1a1a1a">Chưa log dữ liệu để thấy</text>
+<text x="285" y="468" font-size="13" fill="#1a1a1a">winrate nhóm weak thấp hơn</text>
+
+<rect x="330" y="490" width="430" height="80" rx="6" fill="#c62828" fill-opacity="0.12" stroke="#c62828" stroke-width="2"/>
+<text x="345" y="514" font-size="13" fill="#c62828" font-weight="bold">GỐC RỄ</text>
+<text x="345" y="534" font-size="13" fill="#1a1a1a">Thiếu cổng chặn bắt buộc trước</text>
+<text x="345" y="550" font-size="13" fill="#1a1a1a">khi gán nhãn MSS - ấn tượng thị</text>
+<text x="345" y="566" font-size="13" fill="#1a1a1a">giác thay thế bằng chứng vi mô</text>
+
+<line x1="195" y1="150" x2="255" y2="170" stroke="#999" stroke-width="2"/>
+<line x1="255" y1="230" x2="330" y2="250" stroke="#999" stroke-width="2"/>
+<line x1="330" y1="310" x2="400" y2="330" stroke="#999" stroke-width="2"/>
+<line x1="400" y1="390" x2="460" y2="410" stroke="#999" stroke-width="2"/>
+<line x1="460" y1="470" x2="545" y2="490" stroke="#999" stroke-width="2"/>
+</g>
+
+<!-- AMD mechanism branch -->
+<rect x="30" y="610" width="1040" height="220" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+<text x="50" y="638" font-size="16" font-weight="bold" fill="#1565c0">Cơ chế vi mô: vì sao grinding khác displacement thật</text>
+
+<rect x="50" y="655" width="300" height="150" rx="6" fill="#ffffff" stroke="#1565c0" stroke-width="1.5"/>
+<text x="65" y="678" font-size="13" font-weight="bold" fill="#1565c0">Displacement thật</text>
+<text x="65" y="700" font-size="13" fill="#1a1a1a">Market order quét hết</text>
+<text x="65" y="716" font-size="13" fill="#1a1a1a">limit đối ứng một lần</text>
+<text x="65" y="736" font-size="13" fill="#1a1a1a">Bên thua không kịp đặt</text>
+<text x="65" y="752" font-size="13" fill="#1a1a1a">lại lệnh -&gt; tạo FVG</text>
+<text x="65" y="772" font-size="13" fill="#1a1a1a">Bằng chứng: tốc độ dòng</text>
+<text x="65" y="788" font-size="13" fill="#1a1a1a">lệnh vượt tốc độ phản ứng</text>
+
+<rect x="380" y="655" width="300" height="150" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1.5"/>
+<text x="395" y="678" font-size="13" font-weight="bold" fill="#3a2c00">Grinding (yếu)</text>
+<text x="395" y="700" font-size="13" fill="#1a1a1a">Giá đi qua mức nhờ</text>
+<text x="395" y="716" font-size="13" fill="#1a1a1a">thương lượng lại nhiều lần</text>
+<text x="395" y="736" font-size="13" fill="#1a1a1a">Không bên nào bị bất ngờ</text>
+<text x="395" y="752" font-size="13" fill="#1a1a1a">Không thanh khoản bị bỏ lại</text>
+<text x="395" y="772" font-size="13" fill="#1a1a1a">-&gt; không có FVG</text>
+<text x="395" y="788" font-size="13" fill="#1a1a1a">= đồng thuận từ từ, không ép</text>
+
+<rect x="710" y="655" width="330" height="150" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1.5"/>
+<text x="725" y="678" font-size="13" font-weight="bold" fill="#c62828">Ai là counterparty?</text>
+<text x="725" y="700" font-size="13" fill="#1a1a1a">SL của trader tin nhầm</text>
+<text x="725" y="716" font-size="13" fill="#1a1a1a">nằm đúng vùng còn thanh</text>
+<text x="725" y="732" font-size="13" fill="#1a1a1a">khoản hai chiều</text>
+<text x="725" y="752" font-size="13" fill="#1a1a1a">Grinding = cuối Manipulation</text>
+<text x="725" y="768" font-size="13" fill="#1a1a1a">hoặc đầu sub-accumulation</text>
+<text x="725" y="784" font-size="13" fill="#1a1a1a">Trader cấp thanh khoản (SL) cho họ</text>
+</svg>

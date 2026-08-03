@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 940" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1100" height="940" fill="#ffffff"/>
+<text x="30" y="40" font-size="22" font-weight="bold" fill="#1a1a1a">WeakDisp - Debate Map</text>
+<text x="30" y="62" font-size="13" fill="#555">Định nghĩa cứng đo được vs đọc cảm nhận context</text>
+
+<!-- Support column -->
+<text x="60" y="100" font-size="16" font-weight="bold" fill="#2e7d32">Ủng hộ rule cứng (4)</text>
+<g fill="#ffffff" stroke="#2e7d32" stroke-width="1.5">
+<rect x="40" y="115" width="460" height="80" rx="6"/>
+<rect x="40" y="205" width="460" height="80" rx="6"/>
+<rect x="40" y="295" width="460" height="80" rx="6"/>
+<rect x="40" y="385" width="460" height="80" rx="6"/>
+</g>
+<text x="55" y="138" font-size="13" fill="#1a1a1a">1. Định lượng loại bỏ biện</text>
+<text x="55" y="154" font-size="13" fill="#1a1a1a">minh hồi tố sau khi biết</text>
+<text x="55" y="170" font-size="13" fill="#1a1a1a">kết quả lệnh</text>
+
+<text x="55" y="228" font-size="13" fill="#1a1a1a">2. FVG là bằng chứng có</text>
+<text x="55" y="244" font-size="13" fill="#1a1a1a">học, xác minh được, không</text>
+<text x="55" y="260" font-size="13" fill="#1a1a1a">phụ thuộc diễn giải</text>
+
+<text x="55" y="318" font-size="13" fill="#1a1a1a">3. Sample nhỏ chưa đủ để</text>
+<text x="55" y="334" font-size="13" fill="#1a1a1a">tin trực giác context -</text>
+<text x="55" y="350" font-size="13" fill="#1a1a1a">cần kỷ luật làm bánh xe tập</text>
+
+<text x="55" y="408" font-size="13" fill="#1a1a1a">4. Định lượng backtest</text>
+<text x="55" y="424" font-size="13" fill="#1a1a1a">được, cảm nhận thì không</text>
+<text x="55" y="440" font-size="13" fill="#1a1a1a">thể mã hóa để kiểm định</text>
+
+<!-- Against column -->
+<text x="600" y="100" font-size="16" font-weight="bold" fill="#c62828">Phản đối rule cứng (4)</text>
+<g fill="#ffffff" stroke="#c62828" stroke-width="1.5">
+<rect x="580" y="115" width="480" height="80" rx="6"/>
+<rect x="580" y="205" width="480" height="80" rx="6"/>
+<rect x="580" y="295" width="480" height="80" rx="6"/>
+<rect x="580" y="385" width="480" height="80" rx="6"/>
+</g>
+<text x="595" y="138" font-size="13" fill="#1a1a1a">1. 5 tiêu chí không bao</text>
+<text x="595" y="154" font-size="13" fill="#1a1a1a">phủ hết bối cảnh (thanh</text>
+<text x="595" y="170" font-size="13" fill="#1a1a1a">khoản mỏng bất thường)</text>
+
+<text x="595" y="228" font-size="13" fill="#1a1a1a">2. Chi phí cơ hội: bỏ lỡ</text>
+<text x="595" y="244" font-size="13" fill="#1a1a1a">setup 3/5 vẫn có edge</text>
+<text x="595" y="260" font-size="13" fill="#1a1a1a">thật ở dạng khác</text>
+
+<text x="595" y="318" font-size="13" fill="#1a1a1a">3. Price action thuần vẫn</text>
+<text x="595" y="334" font-size="13" fill="#1a1a1a">thành công bằng đọc</text>
+<text x="595" y="350" font-size="13" fill="#1a1a1a">context tổng thể</text>
+
+<text x="595" y="408" font-size="13" fill="#1a1a1a">4. Overfit vào đúng 5 tiêu</text>
+<text x="595" y="424" font-size="13" fill="#1a1a1a">chí này khi sample chưa</text>
+<text x="595" y="440" font-size="13" fill="#1a1a1a">đủ để biết là đúng nhất</text>
+
+<!-- cross rebuttal arrows -->
+<line x1="500" y1="155" x2="580" y2="235" stroke="#999" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="580" y1="335" x2="500" y2="415" stroke="#999" stroke-width="1.5" marker-end="url(#arrow)"/>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 z" fill="#999"/>
+</marker>
+</defs>
+<text x="505" y="490" font-size="13" fill="#555">Vòng 1-2: phản đối lại gán</text>
+<text x="505" y="506" font-size="13" fill="#555">quan hệ nhân-quả Tier 0</text>
+
+<!-- verdict box -->
+<rect x="40" y="530" width="1020" height="150" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+<text x="60" y="558" font-size="16" font-weight="bold" fill="#1a1a1a">Phán quyết có điều kiện (giả thuyết đang kiểm định)</text>
+<text x="60" y="582" font-size="13" fill="#1a1a1a">Ở Tier 0 hiện tại: dùng checklist 5 tiêu chí làm MẶC ĐỊNH BẮT BUỘC trong</text>
+<text x="60" y="600" font-size="13" fill="#1a1a1a">giai đoạn backtest/challenge. Override chỉ hợp lệ KHI đã log dữ liệu.</text>
+<text x="60" y="624" font-size="13" fill="#1a1a1a">Dữ liệu cần để giải quyết: log displacement_quality + context_override +</text>
+<text x="60" y="642" font-size="13" fill="#1a1a1a">outcome trên n=30 lệnh, so sánh winrate hai nhóm.</text>
+<text x="60" y="664" font-size="13" fill="#1565c0">Chưa được phép nói "trực giác đáng tin hơn checklist" cho tới khi có dữ liệu.</text>
+
+<!-- evidence tier strip -->
+<rect x="40" y="700" width="1020" height="60" rx="6" fill="#f9a825" fill-opacity="0.15" stroke="#f9a825"/>
+<text x="60" y="722" font-size="13" font-weight="bold" fill="#3a2c00">Evidence Tier hiện tại</text>
+<text x="60" y="742" font-size="13" fill="#3a2c00">Tier 0: ngưỡng 60-70% / 1.5-2x ATR rút từ lý thuyết ICT, chưa backtest riêng</text>
+</svg>

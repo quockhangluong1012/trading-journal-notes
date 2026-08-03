@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="28" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1a1a">MSS som &amp; sweep 2 chuan - GBPUSD 17/7/2014 lam truc</text>
+  <text x="450" y="48" text-anchor="middle" font-size="12" fill="#666">So sanh MSS dang tin (sau sweep cau truc) vs MSS som (LTF inducement, tap dau tien)</text>
+
+  <!-- Left panel: reliable MSS -->
+  <text x="230" y="75" text-anchor="middle" font-size="14" font-weight="700" fill="#1e8449">MSS DANG TIN CAY (chuan)</text>
+  <rect x="50" y="90" width="360" height="220" fill="#eafaf1" stroke="#1e8449" stroke-width="1.5"/>
+  <!-- structure -->
+  <line x1="70" y1="270" x2="120" y2="270" stroke="#333" stroke-width="1.5"/>
+  <text x="95" y="285" text-anchor="middle" font-size="9" fill="#333">SSL/BSL nguon</text>
+  <line x1="120" y1="270" x2="150" y2="150" stroke="#1e8449" stroke-width="2"/>
+  <line x1="150" y1="150" x2="180" y2="270" stroke="#1e8449" stroke-width="2" stroke-dasharray="3 2"/>
+  <circle cx="150" cy="150" r="4" fill="#1e8449"/>
+  <text x="150" y="140" text-anchor="middle" font-size="9" fill="#1e8449" font-weight="700">1. SWEEP cau truc co ten</text>
+  <line x1="180" y1="270" x2="240" y2="180" stroke="#1e8449" stroke-width="2"/>
+  <circle cx="240" cy="180" r="4" fill="#1e8449"/>
+  <text x="240" y="170" text-anchor="middle" font-size="9" fill="#1e8449" font-weight="700">2. Displacement leg</text>
+  <line x1="240" y1="180" x2="270" y2="220" stroke="#1e8449" stroke-width="1.5"/>
+  <line x1="270" y1="220" x2="330" y2="130" stroke="#1e8449" stroke-width="2"/>
+  <line x1="118" y1="200" x2="360" y2="200" stroke="#c0392b" stroke-dasharray="4 2"/>
+  <text x="365" y="204" font-size="9" fill="#c0392b">swing bi pha</text>
+  <circle cx="330" cy="130" r="4" fill="#1e8449"/>
+  <text x="330" y="120" text-anchor="middle" font-size="9" fill="#1e8449" font-weight="700">3. Body close qua swing = MSS</text>
+
+  <text x="230" y="298" text-anchor="middle" font-size="10" fill="#1e8449" font-weight="700">Trinh tu: Sweep -&gt; Displacement -&gt; Body close</text>
+
+  <!-- Right panel: premature MSS -->
+  <text x="670" y="75" text-anchor="middle" font-size="14" font-weight="700" fill="#c0392b">MSS SOM (LTF inducement)</text>
+  <rect x="490" y="90" width="360" height="220" fill="#fdf2f0" stroke="#c0392b" stroke-width="1.5"/>
+  <line x1="510" y1="270" x2="540" y2="270" stroke="#333" stroke-width="1.5"/>
+  <text x="525" y="285" text-anchor="middle" font-size="9" fill="#333">Swing LTF</text>
+  <line x1="540" y1="270" x2="570" y2="180" stroke="#c0392b" stroke-width="2"/>
+  <circle cx="570" cy="180" r="4" fill="#c0392b"/>
+  <text x="600" y="170" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="700">Tap dau tien (chua sweep ERL)</text>
+  <line x1="570" y1="180" x2="600" y2="230" stroke="#c0392b" stroke-width="1.5"/>
+  <line x1="600" y1="230" x2="640" y2="140" stroke="#c0392b" stroke-width="2"/>
+  <line x1="538" y1="200" x2="800" y2="200" stroke="#333" stroke-dasharray="4 2"/>
+  <text x="805" y="204" font-size="9" fill="#333">"swing" bi pha</text>
+  <circle cx="640" cy="140" r="4" fill="#c0392b"/>
+  <text x="640" y="130" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="700">"MSS" ghi nhan - nhung ERL con nguyen</text>
+  <rect x="700" y="230" width="120" height="35" fill="#f9d0c4" fill-opacity="0.6"/>
+  <text x="760" y="252" text-anchor="middle" font-size="8" fill="#a93226">ERL/Range Low</text>
+  <text x="760" y="263" text-anchor="middle" font-size="8" fill="#a93226">1.70592 CHUA quet</text>
+
+  <text x="670" y="298" text-anchor="middle" font-size="10" fill="#c0392b" font-weight="700">Trinh tu thieu: khong co Sweep cau truc TRUOC MSS</text>
+
+  <!-- Bottom: doctrine anchor -->
+  <rect x="30" y="335" width="840" height="90" fill="#eef6fb" stroke="#2980b9"/>
+  <text x="450" y="357" text-anchor="middle" font-size="12" font-weight="700" fill="#2471a3">Doctrine anchor (ict-doctrine SKILL.md § MSS)</text>
+  <text x="50" y="380" font-size="11" fill="#333">MSS = Reversal (pha swing NGUOC short-term move), thuong SAU sweep + displacement. Khong phai moi</text>
+  <text x="50" y="398" font-size="11" fill="#333">"structure trong khac di" deu la MSS - thu tu ERL truoc IRL la dieu kien can, khong phai tuy chon.</text>
+  <text x="450" y="416" text-anchor="middle" font-size="10" fill="#7d6608" font-weight="700">Luu y: thu tu ERL truoc IRL la DOCTRINE GAP (AMBIGUOUS) theo ruling tai note goc muc 11 - khong phai FAIL cung.</text>
+
+  <!-- Sweep 2 standards -->
+  <rect x="30" y="440" width="840" height="95" fill="#fdf6e3" stroke="#b7950b"/>
+  <text x="450" y="462" text-anchor="middle" font-size="12" font-weight="700" fill="#7d6608">Sweep dung theo 2 chuan (rule drift, batchD.md)</text>
+  <text x="50" y="485" font-size="11" fill="#333">Chuan 1 (dung canon): lay resting liquidity CO TEN (PDH/PDL/EQH/EQL) - vi du EURUSD 11/5 neo EQH H1 1.28912.</text>
+  <text x="50" y="503" font-size="11" fill="#333">Chuan 2 (long): "gia cham canh mot PD array khac" khong ten level - xuat hien &gt;=3/5 note cum XAUUSD batch D.</text>
+  <text x="50" y="521" font-size="11" fill="#c0392b" font-weight="700">Gate de xuat: field liquidity_swept chi = Yes khi kem ten level cu the, neu khong ghi AMBIGUOUS.</text>
+</svg>

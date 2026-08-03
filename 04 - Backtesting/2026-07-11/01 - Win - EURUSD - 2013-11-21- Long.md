@@ -268,6 +268,115 @@ Sweep inducement (swing low phía trên OB) + quét vào OB H1 → rejection t�
 
 ---
 
+---
+
+## 9. Phân tích chuyên sâu bổ sung (2026-08-03)
+
+**Bản đồ liquidity IRL↔ERL tại thời điểm entry (1.34239):**
+- Đã bị lấy (ERL, external): SSL inducement (swing low phía trên OB H1) — quét trước displacement, dùng làm sweep hợp lệ ở bước 3.
+- Đã bị lấy (ERL): quét vào OB H1 (1.34083–1.33909) — rejection tại vùng CE của OB tạo displacement.
+- **Chưa bị lấy (IRL, nằm trên đường đi từ entry tới SL 1.34085)**: không có swing low nội bộ nào giữa entry (1.34239) và SL, ngoài chính đáy OB — đây chính là "VUNG TRONG" mà `[[GBPUSD-20140717-liquidity-buffer.svg]]` mô tả cho một pattern khác trong vault: entry tại Edge mà không có liquidity đệm nội bộ giữa entry và SL khiến khoảng cách entry→SL "trống", giá có thể đâm thẳng qua nếu retrace mạnh hơn.
+- DOL chưa bị lấy: BSL D1 FVG 1.35938–1.36970 (target thật theo bias) — TP thực tế (internal liquidity M5) nằm rất gần, chưa chạm DOL này khi lệnh đóng.
+
+**Chất lượng displacement/MSS**: displacement tăng + MSS 16:20 21/11/2013 được note mô tả mạnh nhưng không có `displacement_score` (0–4 theo CLV/wick/acceptance/FVG) — không đánh giá được độ "sạch" thực sự, chỉ có nhãn định tính.
+
+**Yếu tố thời gian**: `session` để trống trong frontmatter — note không xác nhận được New York AM/PM cho giờ MSS 16:20. Không thể đánh giá killzone timing có đúng chuẩn hay chỉ là ngẫu nhiên nằm trong giờ hoạt động cao.
+
+**Vị trí entry trong dealing range**: Discount đúng phía. Nhưng entry tại Edge-top của BPR (0% fill depth) nghĩa là giá gần như không đi vào POI — mức xác nhận "giá tôn trọng POI" yếu hơn một CE-entry nơi giá đã đi tới đúng 50% imbalance.
+
+**So sánh với các lệnh CE chuẩn trong vault**: đối chiếu [[01 - Win - EURUSD - 2021-05-03- Short]] (entry_type: CE, entry tại đúng CE 1.20648, fill_depth ngụ ý 50%, first_error_step: none, grade A) và [[01 - Win - XAUUSD- 2014-05-12- Short]] (entry_type: CE, CE 1300.5, first_error_step: none). Cả hai đạt `first_error_step: none` vì entry đợi đúng CE — khác với note này, nơi `first_error_step: entry` dù outcome cũng Win. Điểm chung của 3 lệnh CE-chuẩn: SL luôn còn "đệm" giữa CE và cạnh xa của POI, tạo buffer chịu được retrace sâu hơn Edge-entry. Xem SVG so sánh số thật ở mục 10.
+
+![[MULTI-20260803-edge-vs-ce-entry.svg|760]]
+
+---
+
+## 10. Phản biện chuyên sâu (Devil's Advocate)
+
+**Evidence base**: chỉ có text note (frontmatter + bảng + narrative), không truy cập được ảnh PNG đính kèm (`Pasted image ...`) — coi các claim structure/POI như mô tả bằng lời của người dùng, không phải evidence hình ảnh độc lập. `evidence_sufficiency: thin` — load-bearing claim (chất lượng entry Edge-top) không thể đối chiếu với chart thật, chỉ với số liệu note tự ghi.
+
+**Claim graph:**
+- C1: HTF bias Bullish đúng (BOS 18/09 + CISD trên pullback) — PASS theo tự-báo cáo.
+- C2: Sweep + displacement + MSS + POI (OB H1 + BPR M5) hợp lệ, nhận diện trước outcome.
+- C3: Entry tại Edge-top của BPR (1.34239) là quyết định *in-the-moment* do FOMO, không theo rule A/B định trước — **load-bearing**, vì đây là claim mà toàn bộ lesson của note xoay quanh.
+- C4 (từ C3): Vì lệnh Win, tác giả tự chấm Overall Grade A mà không hạ điểm cho C3.
+- C5: TP đặt tại internal liquidity M5, không tham chiếu DOL D1 đã xác định ở bước 1 → "chốt non".
+
+**Điều gì survives**: C1, C2 được note tự nhận diện trước outcome (sweep/displacement/MSS đều ghi Yes trước khi biết TP có bị hit) — không có dấu hiệu hindsight rõ ràng ở các bước này.
+
+**Objections:**
+
+**O1 · [METHOD] · fatal · attacks C3, C4**
+Claim: "Lệnh Win nên Overall Grade giữ A dù entry tại Edge do FOMO."
+Fails: quy trình tự chấm điểm dùng outcome (Win) để giữ nguyên grade cho một quyết định entry mà chính note gọi là *reactive*, không phải *planned* — đây là outcome-as-evidence kinh điển: không có gì trong quy trình ra quyết định lúc entry (16:20 21/11/2013) biết trước rằng giá sẽ không retrace sâu hơn.
+Evidence: note tự thừa nhận "Lệnh thắng, nhưng lý do vào lệnh là reactive, không phải planned" (mục 7) và cảnh báo riêng "outcome bias" (mục Pattern lặp lại).
+Consequence: nếu tách outcome ra khỏi grade, Entry Precision đã tự chấm 5/10 (mục 8) — phần này đúng, nhưng Overall Grade A thì không phản chiếu đúng điểm yếu này, tạo lệch giữa sub-score và overall.
+Retracted by: một rule tường minh, viết trước lệnh, định nghĩa khi nào Edge-entry được phép override CE-entry (note tự đề xuất rule này ở mục 7 nhưng chưa áp dụng hồi tố cho grade).
+Your best answer: "5 bước đầu (bias→POI) đều đúng và đó là phần lớn edge, entry chỉ là 1/7 bước." Không cứu được: chính note đặt `first_error_step: entry` là điểm gãy sớm nhất được công nhận, và bước 7 (target) là hệ quả trực tiếp của bước 6 — 2/7 bước sai vẫn đủ để hạ Entry Precision + Risk Management, y như cách GBPUSD (07-12) đã bị hạ Grade A→B cho một lỗi entry tương tự.
+
+**O2 · [HINDSIGHT] · material · attacks C3**
+Claim: "Đây là aggressive entry hợp lệ, đánh đổi fill-probability lấy RR thấp hơn — một trade-off có chủ đích."
+Fails: không có gì trong note cho thấy trade-off này được *cân nhắc trước* lúc entry; nó chỉ được *diễn giải lại thành hợp lý* sau khi biết lệnh Win. Note tự ghi lý do thực là FOMO ("tưởng đã lỡ nhịp"), không phải một phép tính EV có chủ đích.
+Evidence: mục 6 "Entry... có tối ưu không? Không hẳn... Đây là trade-off cần được backtest thêm để lượng hoá, không quyết định bằng cảm giác" — tự note đã phân biệt rõ cảm giác vs rule.
+Consequence: nếu coi đây là "trade-off có chủ đích" thì sample này bị đưa vào thống kê edge như một *entry rule đã kiểm định*, trong khi thực chất là một lần ngoại lệ chưa kiểm định.
+Retracted by: log ≥20-30 mẫu Edge-vs-CE cùng POI-stack để xác nhận Edge-entry có thật sự có edge riêng hay chỉ là biến thể của may rủi (chính note tự đề xuất ở Rule cần thêm).
+Your best answer: không có phản bác mạnh — note đã tự nhận đây chưa kiểm định.
+
+**O3 · [ARITHMETIC] · minor · attacks C3**
+Note không có `fvg_high`/`fvg_low`/`ce_price` do lỗi typo bounds gốc ("1.34-96") nên **không thể tính CE thật của BPR** — mọi khẳng định "Edge-entry có RR cao hơn nếu chờ CE" trong note chỉ là suy luận định tính, chưa có số. Retracted by: bổ sung bounds BPR chính xác từ chart gốc.
+
+**Filter**: soạn 4, cắt 1 (một objection về "POI rank 2 thấp" bị loại vì không đổi kết luận — cả rank cao/thấp đều không phải load-bearing so với vấn đề entry timing).
+
+**Opposite case (từ cùng evidence)**: Edge-entry tại BPR sau MSS xác nhận có thể đọc như *aggressive continuation entry hợp lệ* — vì MSS + displacement đã xảy ra, giá quay lại test cạnh BPR (không phải retest ngẫu nhiên) có thể coi là "second touch xác nhận" giống pattern NAS100 (07-13) chờ nhịp thứ hai. Đối lập tự-kiểm: pattern NAS100 chờ nhịp thứ hai *có thêm* sweep+MSS+FVG mới trên M5 trước khi vào; note này không có nhịp xác nhận mới, chỉ là "giá bật ra rồi bắt cạnh" — nên self-objection này khiến case yếu đi. **Strength: weaker but non-trivial** — nếu note có ghi nhận một MSS/sweep M5 riêng tại thời điểm bắt cạnh (chưa có trong note hiện tại) thì case sẽ mạnh lên đáng kể.
+**Distinguishing observable**: có hay không một swing/sweep M5 riêng ngay trước lúc bắt Edge — note hiện tại không ghi nhận điều này.
+
+**Verdict**: **SURVIVES, WEAKENED** — load-bearing claim (C1, C2: bias & setup chain) đứng vững, nhưng claim entry (C3) và hệ quả grade (C4) bị suy yếu bởi O1/O2. `evidence_sufficiency: thin` (chỉ có text, không có chart) nên không thể nâng lên SURVIVES THIS ATTACK.
+
+**Falsification tests** (tối đa 3):
+1. Thu thập ≥20 Edge-entry và ≥20 CE-entry cùng POI-stack (OB+FVG chồng BPR), đo win rate + RR thực nhận. Nếu Edge-entry RR trung bình thấp hơn CE-entry ≥1R mà win rate không cao hơn đáng kể (≥15pp) → O1/O2 được xác nhận, Edge-entry không có edge độc lập ngoài may rủi. Đóng O1, O2.
+2. Với các Edge-entry Loss trong vault (nếu có), kiểm retrace đã đi sâu bao nhiêu trước khi hit SL — nếu thường xuyên đi qua vùng CE trước khi quay đầu thắng, giả thuyết "Edge chết trước CE" được ủng hộ.
+
+---
+
+## 11. Doctrine check (ICT 2022 canon)
+
+**Thesis**: Bullish bias D1, sweep+displacement+MSS hợp lệ trên OB H1/BPR M5, entry tại Edge-top của BPR, TP tại internal liquidity M5.
+
+**Cần sửa** (load-bearing trước):
+- C3 Entry "Edge" tại cạnh trên BPR — **UNSUPPORTED** (không FAIL định nghĩa) · SKILL.md § CE/Entry refine không cấm Edge-entry, nhưng note không đưa ra rule khách quan đã dùng để chọn Edge thay vì CE, chỉ có tường thuật cảm giác → không đủ evidence để PASS như một entry-rule có chủ đích → cần backtest ≥20-30 mẫu để nâng lên PASS. **(load-bearing)**
+- C5 TP tại internal liquidity M5, không tham chiếu DOL D1 — **FAIL** · SKILL.md § Liquidity/Target: TP nên mô tả draw on liquidity đã xác định, ở đây DOL D1 (FVG 1.35938–1.36970) bị bỏ qua hoàn toàn cho một target gần hơn không có tên rõ ràng → fix: khi trade theo bias D1, TP mặc định nên tham chiếu lại DOL đã ghi ở bước 1, hoặc ghi rõ lý do partial sớm.
+- C6 (`poi_stack` BPR = OB H1 + FVG Bull M5 + FVG Bear M5) — kế thừa từ thiếu bounds chính xác (không FAIL riêng, chỉ AMBIGUOUS vì bounds bị lỗi typo, không kiểm được CE thật).
+
+**PASS**: C1 (HTF bias Bullish, BOS+CISD), C2 (sweep internal + displacement + MSS + POI OB/BPR hợp lệ trong Discount).
+
+**Verdict**: **PARTIALLY ALIGNED** — load-bearing claim entry (C3) không FAIL định nghĩa nhưng UNSUPPORTED vì thiếu rule khách quan; C5 (TP) FAIL rõ theo doctrine liquidity target.
+
+**Notes**: Doctrine gap — canon không fix cứng "khi nào Edge-entry được coi là hợp lệ ngang CE-entry"; đây là điểm mà cả 2 note Edge trong batch này (07-11, 07-12) đều rơi vào cùng một AMBIGUOUS fork, cần một rule Playbook riêng thay vì phán từng lệnh.
+
+---
+
+## 12. Lesson Learned (bản đầy đủ)
+
+**(a) Bài học kỹ thuật:**
+- *Ví dụ số thật*: Edge-entry tại 1.34239 (Edge-top của BPR) đạt RR 3.18 thực nhận; nếu retrace đủ sâu để chạm CE thật của BPR (chưa tính được do lỗi bounds), RR lẽ ra cao hơn nhưng SL không có đệm liquidity nội bộ giữa entry và đáy OB (1.33909) — xem SVG `[[MULTI-20260803-edge-vs-ce-entry.svg]]`.
+- *Tổng quát hóa*: Edge-entry luôn đánh đổi "RR cao hơn + fill-probability thấp hơn" lấy "fill chắc hơn + RR thấp hơn + SL kém đệm hơn". Không có công thức nào đúng tuyệt đối — cần dữ liệu để biết khi nào đánh đổi này có lợi.
+
+**(b) Bài học quy trình/checklist:**
+- Cần field `entry_decision_rule` ghi rõ *trước* lệnh: chọn Edge hay CE theo tiêu chí nào (không phải điền sau khi đã biết outcome).
+- TP luôn phải đối chiếu lại với DOL đã ghi ở bước 1 trước khi chốt — nếu chốt sớm hơn, ghi rõ lý do bằng số (khoảng cách còn lại, thời gian killzone còn lại).
+
+**(c) Bài học tâm lý-hành vi:**
+- FOMO ("tưởng đã lỡ nhịp") là động cơ thật của quyết định entry, được note tự thừa nhận. Nguy cơ: lệnh Win lần này có thể *tăng cường* hành vi FOMO-entry ở các lệnh sau (biến một sai lầm tâm lý thành "kinh nghiệm" giả).
+
+**(d) Rule đề xuất cho Playbook:**
+- [ ] Trước mỗi lệnh, ghi rõ 2 kịch bản A (CE-limit) / B (Edge-aggressive) và điều kiện chọn khách quan (khoảng cách tới CE tính bằng ATR hoặc %, thời gian còn lại trong killzone) — không quyết định bằng cảm giác.
+- [ ] TP mặc định = DOL HTF đã ghi ở bước 1; nếu chốt sớm hơn, bắt buộc ghi lý do định lượng.
+- [ ] Grade tối đa = B cho mọi lệnh có `first_error_step: entry`, bất kể outcome, cho tới khi có ≥20 mẫu Edge-entry xác nhận edge riêng (đồng nhất với rule GBPUSD 07-12 đã tự đề ra).
+
+**(e) Điều KHÔNG nên học từ lệnh này:**
+- KHÔNG nên học rằng "bắt cạnh khi giá rời POI rồi quay lại" là một entry rule đáng tin — outcome Win ở đây là 1 mẫu, không phải kiểm định. Nếu retrace lần này sâu hơn vài pip nữa (không có liquidity đệm nội bộ giữa entry và đáy OB), Edge-entry có thể đã chết trước khi giá chạm CE — điều mà lệnh CE-entry cùng POI-stack (ví dụ [[01 - Win - EURUSD - 2021-05-03- Short]]) sẽ không gặp phải vì SL của CE-entry vốn đã tính đến khoảng đó.
+
+---
+
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">14/5/2014 - Loss sang (RB) va Win chieu (BPR): doc lap hay lien quan?</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">Cung downtrend XAUUSD, cach nhau ~2h40, hai POI khac nhau</text>
+
+  <!-- timeline axis -->
+  <line x1="70" y1="300" x2="830" y2="300" stroke="#333" stroke-width="2"/>
+  <text x="70" y="320" font-size="11" fill="#333">15:00</text>
+  <text x="300" y="320" font-size="11" fill="#333">17:55</text>
+  <text x="500" y="320" font-size="11" fill="#333">19:20</text>
+  <text x="650" y="320" font-size="11" fill="#333">20:00</text>
+  <text x="790" y="320" font-size="11" fill="#333">20:35</text>
+
+  <!-- Lenh 02 markers -->
+  <circle cx="150" cy="300" r="6" fill="#c0392b"/>
+  <text x="150" y="270" text-anchor="middle" font-size="11" fill="#c0392b">Retrace ve RB</text>
+  <circle cx="300" cy="300" r="8" fill="#c0392b"/>
+  <text x="300" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">ENTRY LENH 02</text>
+  <text x="300" y="265" text-anchor="middle" font-size="10" fill="#c0392b">POI: Rejection Block</text>
+  <text x="300" y="345" text-anchor="middle" font-size="10" fill="#a93226">-&gt; SL hit ngay sau</text>
+
+  <!-- Lenh 03 markers -->
+  <circle cx="500" cy="300" r="6" fill="#1e8449"/>
+  <text x="500" y="270" text-anchor="middle" font-size="11" fill="#1e8449">Bullish Displacement</text>
+  <text x="500" y="284" text-anchor="middle" font-size="10" fill="#1e8449">(tao FVG moi)</text>
+  <circle cx="650" cy="300" r="6" fill="#1e8449"/>
+  <text x="650" y="270" text-anchor="middle" font-size="11" fill="#1e8449">Bearish Displacement</text>
+  <text x="650" y="284" text-anchor="middle" font-size="10" fill="#1e8449">(tao BPR)</text>
+  <circle cx="790" cy="300" r="8" fill="#1e8449"/>
+  <text x="790" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#1e8449">ENTRY LENH 03</text>
+  <text x="790" y="265" text-anchor="middle" font-size="10" fill="#1e8449">POI: BPR (2 FVG)</text>
+  <text x="790" y="345" text-anchor="middle" font-size="10" fill="#1e8449">-&gt; TP hit</text>
+
+  <!-- gap arrow -->
+  <path d="M 300 380 L 790 380" stroke="#888" stroke-width="1.5" marker-end="url(#arrowG)" marker-start="url(#arrowG2)"/>
+  <text x="545" y="400" text-anchor="middle" font-size="11" fill="#555">khoang cach ~2h40 - chuoi displacement M5 hoan toan moi</text>
+
+  <!-- price zone comparison -->
+  <rect x="70" y="440" width="330" height="60" fill="#fdebd0" stroke="#e67e22"/>
+  <text x="235" y="462" text-anchor="middle" font-size="12" font-weight="700" fill="#a04000">Lenh 02: RB ~1301-1304</text>
+  <text x="235" y="480" text-anchor="middle" font-size="10" fill="#a04000">O muc OTE 0.618-0.705 (mep ngoai)</text>
+
+  <rect x="500" y="440" width="330" height="60" fill="#d5f5e3" stroke="#1e8449"/>
+  <text x="665" y="462" text-anchor="middle" font-size="12" font-weight="700" fill="#186a3b">Lenh 03: BPR ~1306-1307</text>
+  <text x="665" y="480" text-anchor="middle" font-size="10" fill="#186a3b">O muc OTE 0.712-0.746 (gan sweet spot)</text>
+
+  <text x="450" y="530" text-anchor="middle" font-size="12" fill="#444">Ket luan: khong phai re-entry co hoc (khac POI, khac vung gia) - doc lap ve trigger nhung bias D1/H1 tai su dung.</text>
+
+  <defs>
+    <marker id="arrowG" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#888"/>
+    </marker>
+    <marker id="arrowG2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#888"/>
+    </marker>
+  </defs>
+</svg>

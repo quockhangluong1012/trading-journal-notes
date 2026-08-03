@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">EURUSD 2005-04-12 Short - Sweep sequence tai OB + EQH H1</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">Dealing Range H1: High 1.30585 / Low 1.28001 / Mid 1.29293</text>
+
+  <!-- LEFT PANEL: dealing range + POI -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#2980b9">CAU TRUC H1</text>
+  <rect x="70" y="100" width="330" height="410" fill="#fafafa" stroke="#ddd"/>
+
+  <line x1="70" y1="120" x2="400" y2="120" stroke="#333" stroke-width="2"/>
+  <text x="405" y="124" font-size="11" fill="#333">Range High 1.30585</text>
+
+  <line x1="70" y1="160" x2="400" y2="160" stroke="#8e44ad" stroke-width="1.5"/>
+  <text x="405" y="164" font-size="10" fill="#8e44ad">EQH H1 1.30033 (sweep target)</text>
+
+  <rect x="70" y="150" width="330" height="55" fill="#b0b0b0" fill-opacity="0.4"/>
+  <text x="90" y="145" font-size="11" fill="#555">Order Block (POI)</text>
+  <line x1="70" y1="150" x2="400" y2="150" stroke="#333" stroke-width="1.2"/>
+  <text x="405" y="147" font-size="10" fill="#333">OB Top 1.30110</text>
+  <line x1="70" y1="205" x2="400" y2="205" stroke="#333" stroke-width="1.2"/>
+  <text x="405" y="209" font-size="10" fill="#333">OB Bottom 1.29573</text>
+
+  <line x1="70" y1="222" x2="400" y2="222" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="405" y="226" font-size="10" fill="#e67e22">Entry 1.29729</text>
+
+  <line x1="70" y1="145" x2="400" y2="145" stroke="#c0392b" stroke-dasharray="5 3"/>
+  <text x="405" y="141" font-size="10" fill="#c0392b">SL 1.30164</text>
+
+  <line x1="70" y1="255" x2="400" y2="255" stroke="#27ae60" stroke-dasharray="4 3"/>
+  <text x="405" y="259" font-size="11" fill="#27ae60">Mid Range 1.29293</text>
+
+  <line x1="70" y1="345" x2="400" y2="345" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="405" y="349" font-size="10" fill="#2980b9">PDL / TP 1.28811</text>
+
+  <line x1="70" y1="490" x2="400" y2="490" stroke="#333" stroke-width="2"/>
+  <text x="405" y="494" font-size="11" fill="#333">Range Low 1.28001</text>
+
+  <path d="M 200 145 Q 190 200 200 222" stroke="#c0392b" stroke-width="2" fill="none" marker-end="url(#arrowR)"/>
+  <text x="235" y="465" text-anchor="middle" font-size="11" fill="#555">Sweep EQH+OB top -&gt; MSS M5 -&gt; entry tai retrace</text>
+
+  <!-- RIGHT PANEL: what is unverifiable -->
+  <text x="665" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">CHUA VERIFY DUOC (thieu anh)</text>
+  <rect x="500" y="100" width="330" height="410" fill="#fafafa" stroke="#ddd"/>
+
+  <text x="520" y="140" font-size="13" fill="#1a1a1a" font-weight="700">1. MSS M5 - body close?</text>
+  <text x="520" y="160" font-size="11" fill="#555">Note khong ghi gia dong nen</text>
+  <text x="520" y="178" font-size="11" fill="#555">cua candle pha swing point</text>
+
+  <text x="520" y="220" font-size="13" fill="#1a1a1a" font-weight="700">2. OB "respect" -- gia dong?</text>
+  <text x="520" y="240" font-size="11" fill="#555">Khong co gia dong cu the</text>
+  <text x="520" y="258" font-size="11" fill="#555">cua nen phan ung trong OB</text>
+
+  <text x="520" y="300" font-size="13" fill="#1a1a1a" font-weight="700">3. Checklist 9/9 hoan hao</text>
+  <text x="520" y="320" font-size="11" fill="#555">Khong mot muc nao chua dat</text>
+  <text x="520" y="338" font-size="11" fill="#555">-- co the bi dien theo outcome</text>
+
+  <text x="520" y="380" font-size="13" fill="#1a1a1a" font-weight="700">4. TP xuyen qua PDL</text>
+  <text x="520" y="400" font-size="11" fill="#555">TP 1.28811 nam duoi PDL</text>
+  <text x="520" y="418" font-size="11" fill="#555">1.29090 khoang 27.9 pip</text>
+
+  <text x="450" y="540" text-anchor="middle" font-size="12" fill="#444">Bai hoc: sweep target co ten cu the (EQH 1.30033) manh hon note truoc, nhung MSS M5 van UNSUPPORTED vi thieu gia dong nen.</text>
+
+  <defs>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" viewBox="0 0 900 640" font-family="Arial, Helvetica, sans-serif">
+  <rect width="900" height="640" fill="#0e1726"/>
+  <text x="30" y="38" fill="#e2e8f0" font-size="19" font-weight="bold">Objection ledger — vòng đời O1–O10 qua 5 turn</text>
+
+  <!-- Column headers -->
+  <text x="292" y="78" fill="#94a3b8" font-size="13" text-anchor="middle">Turn 1</text>
+  <text x="404" y="78" fill="#94a3b8" font-size="13" text-anchor="middle">Turn 2</text>
+  <text x="516" y="78" fill="#94a3b8" font-size="13" text-anchor="middle">Turn 3</text>
+  <text x="628" y="78" fill="#94a3b8" font-size="13" text-anchor="middle">Turn 4</text>
+  <text x="740" y="78" fill="#94a3b8" font-size="13" text-anchor="middle">Turn 5</text>
+
+  <!-- Row labels -->
+  <text x="20" y="112" fill="#e2e8f0" font-size="12"><tspan font-weight="bold">O1′</tspan> · nến sweep / tiêu chí</text>
+  <text x="20" y="156" fill="#e2e8f0" font-size="12"><tspan font-weight="bold">O2</tspan> · reclaim chưa chứng minh</text>
+  <text x="20" y="200" fill="#e2e8f0" font-size="12"><tspan font-weight="bold">O3</tspan> · HH/HL structure</text>
+  <text x="20" y="244" fill="#e2e8f0" font-size="12"><tspan font-weight="bold">O4</tspan> · discount arithmetic</text>
+  <text x="20" y="288" fill="#e2e8f0" font-size="12"><tspan font-weight="bold">O5</tspan> · invalidation / target</text>
+  <text x="20" y="332" fill="#e2e8f0" font-size="12"><tspan font-weight="bold">O6</tspan> · 28,197 vs 28,187</text>
+  <text x="20" y="376" fill="#e2e8f0" font-size="12"><tspan font-weight="bold">O7</tspan> · W1 close mâu thuẫn</text>
+  <text x="20" y="420" fill="#e2e8f0" font-size="12"><tspan font-weight="bold">O8</tspan> · acceptance chưa có số</text>
+  <text x="20" y="464" fill="#e2e8f0" font-size="12"><tspan font-weight="bold">O9</tspan> · vai trò H1 / kiến trúc</text>
+  <text x="20" y="508" fill="#e2e8f0" font-size="12"><tspan font-weight="bold">O10</tspan> · H1 positional</text>
+
+  <!-- Row O1' y=90 -->
+  <g font-size="11" text-anchor="middle">
+    <rect x="240" y="90" width="104" height="34" rx="4" fill="#dc2626"/><text x="292" y="111" fill="#fff" font-weight="bold">FATAL</text>
+    <rect x="352" y="90" width="104" height="34" rx="4" fill="#ea580c"/><text x="404" y="111" fill="#fff">NARROWED</text>
+    <rect x="464" y="90" width="104" height="34" rx="4" fill="#d97706"/><text x="516" y="111" fill="#fff">OPEN</text>
+    <rect x="576" y="90" width="104" height="34" rx="4" fill="#d97706"/><text x="628" y="111" fill="#fff">OPEN</text>
+    <rect x="688" y="90" width="104" height="34" rx="4" fill="#d97706"/><text x="740" y="111" fill="#fff">OPEN</text>
+  </g>
+  <!-- Row O2 y=134 -->
+  <g font-size="11" text-anchor="middle">
+    <rect x="240" y="134" width="104" height="34" rx="4" fill="#d97706"/><text x="292" y="155" fill="#fff">OPEN</text>
+    <rect x="352" y="134" width="104" height="34" rx="4" fill="#d97706"/><text x="404" y="155" fill="#fff">OPEN</text>
+    <rect x="464" y="134" width="104" height="34" rx="4" fill="#d97706"/><text x="516" y="155" fill="#fff">OPEN *</text>
+    <rect x="576" y="134" width="104" height="34" rx="4" fill="#d97706"/><text x="628" y="155" fill="#fff">OPEN *</text>
+    <rect x="688" y="134" width="104" height="34" rx="4" fill="#d97706"/><text x="740" y="155" fill="#fff">OPEN *</text>
+  </g>
+  <!-- Row O3 y=178 -->
+  <g font-size="11" text-anchor="middle">
+    <rect x="240" y="178" width="104" height="34" rx="4" fill="#d97706"/><text x="292" y="199" fill="#fff">OPEN</text>
+    <rect x="352" y="178" width="104" height="34" rx="4" fill="#d97706"/><text x="404" y="199" fill="#fff">OPEN</text>
+    <rect x="464" y="178" width="104" height="34" rx="4" fill="#b45309"/><text x="516" y="199" fill="#fff">OPEN ↓</text>
+    <rect x="576" y="178" width="104" height="34" rx="4" fill="#b45309"/><text x="628" y="199" fill="#fff">OPEN ↓</text>
+    <rect x="688" y="178" width="104" height="34" rx="4" fill="#b45309"/><text x="740" y="199" fill="#fff">OPEN ↓</text>
+  </g>
+  <!-- Row O4 y=222 -->
+  <g font-size="11" text-anchor="middle">
+    <rect x="240" y="222" width="104" height="34" rx="4" fill="#d97706"/><text x="292" y="243" fill="#fff">OPEN</text>
+    <rect x="352" y="222" width="104" height="34" rx="4" fill="#d97706"/><text x="404" y="243" fill="#fff">OPEN</text>
+    <rect x="464" y="222" width="104" height="34" rx="4" fill="#16a34a"/><text x="516" y="243" fill="#fff">WITHDRAWN</text>
+    <text x="628" y="243" fill="#475569">—</text><text x="740" y="243" fill="#475569">—</text>
+  </g>
+  <!-- Row O5 y=266 -->
+  <g font-size="11" text-anchor="middle">
+    <rect x="240" y="266" width="104" height="34" rx="4" fill="#d97706"/><text x="292" y="287" fill="#fff">OPEN</text>
+    <rect x="352" y="266" width="104" height="34" rx="4" fill="#d97706"/><text x="404" y="287" fill="#fff">OPEN</text>
+    <rect x="464" y="266" width="104" height="34" rx="4" fill="#16a34a"/><text x="516" y="287" fill="#fff">WITHDRAWN</text>
+    <text x="628" y="287" fill="#475569">—</text><text x="740" y="287" fill="#475569">—</text>
+  </g>
+  <!-- Row O6 y=310 -->
+  <g font-size="11" text-anchor="middle">
+    <rect x="240" y="310" width="104" height="34" rx="4" fill="#d97706"/><text x="292" y="331" fill="#fff">MINOR</text>
+    <rect x="352" y="310" width="104" height="34" rx="4" fill="#d97706"/><text x="404" y="331" fill="#fff">MINOR</text>
+    <rect x="464" y="310" width="104" height="34" rx="4" fill="#64748b"/><text x="516" y="331" fill="#fff">CLOSED</text>
+    <text x="628" y="331" fill="#475569">—</text><text x="740" y="331" fill="#475569">—</text>
+  </g>
+  <!-- Row O7 y=354 -->
+  <g font-size="11" text-anchor="middle">
+    <text x="292" y="375" fill="#475569">·</text>
+    <rect x="352" y="354" width="104" height="34" rx="4" fill="#d97706"/><text x="404" y="375" fill="#fff">ISSUED</text>
+    <rect x="464" y="354" width="104" height="34" rx="4" fill="#64748b"/><text x="516" y="375" fill="#fff">CLOSED</text>
+    <text x="628" y="375" fill="#475569">—</text><text x="740" y="375" fill="#475569">—</text>
+  </g>
+  <!-- Row O8 y=398 -->
+  <g font-size="11" text-anchor="middle">
+    <text x="292" y="419" fill="#475569">·</text><text x="404" y="419" fill="#475569">·</text><text x="516" y="419" fill="#475569">·</text>
+    <rect x="576" y="398" width="104" height="34" rx="4" fill="#d97706"/><text x="628" y="419" fill="#fff">ISSUED</text>
+    <rect x="688" y="398" width="104" height="34" rx="4" fill="#d97706" stroke="#fbbf24" stroke-width="2"/><text x="740" y="419" fill="#fff">OPEN !</text>
+  </g>
+  <!-- Row O9 y=442 -->
+  <g font-size="11" text-anchor="middle">
+    <text x="292" y="463" fill="#475569">·</text><text x="404" y="463" fill="#475569">·</text><text x="516" y="463" fill="#475569">·</text>
+    <rect x="576" y="442" width="104" height="34" rx="4" fill="#d97706"/><text x="628" y="463" fill="#fff">ISSUED</text>
+    <rect x="688" y="442" width="104" height="34" rx="4" fill="#16a34a"/><text x="740" y="463" fill="#fff">WITHDRAWN</text>
+  </g>
+  <!-- Row O10 y=486 -->
+  <g font-size="11" text-anchor="middle">
+    <text x="292" y="507" fill="#475569">·</text><text x="404" y="507" fill="#475569">·</text><text x="516" y="507" fill="#475569">·</text>
+    <rect x="576" y="486" width="104" height="34" rx="4" fill="#d97706"/><text x="628" y="507" fill="#fff">ISSUED</text>
+    <rect x="688" y="486" width="104" height="34" rx="4" fill="#b45309"/><text x="740" y="507" fill="#fff">OPEN ↓</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-size="12" fill="#94a3b8">
+    <rect x="30" y="556" width="14" height="14" rx="3" fill="#dc2626"/><text x="50" y="568">FATAL</text>
+    <rect x="110" y="556" width="14" height="14" rx="3" fill="#d97706"/><text x="130" y="568">OPEN / ISSUED</text>
+    <rect x="240" y="556" width="14" height="14" rx="3" fill="#b45309"/><text x="260" y="568">OPEN ↓ (giảm trọng lượng)</text>
+    <rect x="440" y="556" width="14" height="14" rx="3" fill="#16a34a"/><text x="460" y="568">WITHDRAWN (concede bằng evidence)</text>
+    <rect x="710" y="556" width="14" height="14" rx="3" fill="#64748b"/><text x="730" y="568">CLOSED</text>
+    <text x="30" y="596">* load-bearing objection · ! gate-blocker duy nhất còn lại · NARROWED = thu hẹp phạm vi sau concede một phần</text>
+  </g>
+</svg>

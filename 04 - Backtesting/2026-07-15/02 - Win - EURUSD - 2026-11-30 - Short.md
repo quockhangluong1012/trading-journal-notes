@@ -296,6 +296,173 @@ Checklist mục 5 tự ghi nhận điều này ("RR ≥ 1:2 — bị bóp bởi 
 
 ---
 
+## 9. Phân tích chuyên sâu bổ sung (2026-08-03)
+
+### 9.1. Xác minh lại arithmetic — phát hiện RR discrepancy THẬT (không phải làm tròn)
+
+Chạy lại phép tính độc lập từ chính số liệu frontmatter:
+
+```
+CE FVG = (1.06453 + 1.06414) / 2 = 1.064335   → khớp ce_price (1.064335), lệch 0.00001 so với entry_price 1.06434 (làm tròn bình thường)
+Risk  = |entry_price - stop_loss| = |1.06434 - 1.06668| = 0.00234
+Reward (dùng TP frontmatter 1.05882) = |1.06434 - 1.05882| = 0.00552
+RR    = 0.00552 / 0.00234 = 2.359
+
+Reward (dùng TP bảng Summary 1.05886) = |1.06434 - 1.05886| = 0.00548
+RR    = 0.00548 / 0.00234 = 2.342
+```
+
+Cả hai cách tính đều cho RR ≈ **2.34–2.36**, không phải `r_planned: 2.09` như frontmatter ghi. Đây **không phải sai số làm tròn** (chênh lệch ~0.25-0.27, quá lớn để là lỗi hiển thị thập phân) — là một **[ARITHMETIC] discrepancy thật** chưa được note gốc phát hiện, dù note gốc đã rất kỹ tính trong việc tự phát hiện mâu thuẫn TP 1.05882 vs 1.05886 (mục đầu file) và mâu thuẫn CE vs Edge. Khả năng cao: `stop_loss` hoặc `entry_price` dùng để tính `r_planned` gốc khác với giá trị hiện đang lưu trong frontmatter — hoặc `r_planned` được tính cho leg H1 OB dự kiến (entry 1.06624, SL xa hơn) rồi không cập nhật lại khi chỉ leg M5 FVG khớp lệnh.
+
+**Giả thuyết khớp nhất với dữ liệu**: nếu dùng entry dự kiến ở H1 OB high (1.06624) thay vì entry M5 FVG (1.06434) làm risk base: Risk = |1.06624-1.06668| = 0.00044 → quá nhỏ, RR sẽ quá lớn, không khớp 2.09. Thử ngược: nếu SL kế hoạch ban đầu khác 1.06668 — ví dụ SL ở đỉnh OB cũ hơn — Risk cần ~0.00264 để ra RR=2.09 với Reward 0.00552 (0.00552/2.09=0.00264, tức SL≈1.06434+0.00264=1.06698, lệch ~0.0003 so với SL hiện tại, quá nhỏ để giải thích trọn vẹn). Không có cách nào tái tạo chính xác 2.09 từ các số hiện có trong file — **kết luận: `r_planned: 2.09` là con số không truy nguyên được từ dữ liệu hiện tại, cần coi là lỗi ghi chép cần xác minh lại từ chart gốc, không phải tự suy ra thêm ở đây** (đúng nguyên tắc không bịa evidence).
+
+### 9.2. Bản đồ Liquidity IRL↔ERL tại thời điểm entry
+
+- **Pool đã bị lấy trước entry (13:40)**: đỉnh OB H1 (sweep 1 — giá quét lên cạnh trên OB rồi đóng ngược vào trong); minor high tạo MSS M5 lúc 12:15 (sweep nội bộ, không có tên/level cụ thể — cùng vấn đề `[UNSUPPORTED]` như đã thấy ở note 01/02 trong batch XAU).
+- **Pool CHƯA bị lấy khi entry khớp**: EQL 1.05205 (SSL D1, mục tiêu draw), FVG 1.10036-1.09527 phía trên (không liên quan hướng Short này). TP 1.05882 nằm trên EQL — tức TP là điểm dừng TRƯỚC pool cuối cùng, một phần hợp lý (không tham lam tới tận đáy) nhưng cũng khiến RR thực nhận thấp hơn tiềm năng tối đa nếu tính tới EQL thật.
+- **SL 1.06668 nằm sát mốc OTE 0.786 (1.06668 theo chính bảng H1 trong note)** — SL trùng khít với vùng OTE cao nhất, nghĩa là SL không đặt "xa tùy ý" mà đặt ĐÚNG BIÊN của dải OTE hợp lệ — một điểm neo có cơ sở hơn là bị "bóp bởi SL xa" như note gốc tự nhận xét (mục 7.4) mô tả cảm giác chủ quan, nhưng về cấu trúc SL vẫn nằm đúng biên OTE, không phải một mức tùy tiện.
+
+### 9.3. Chất lượng Displacement/MSS
+
+Đồng ý với tự đánh giá gốc (mục 6): "marginal, xa stoploss". Đối chiếu với 4 lệnh XAU cùng batch: đây là displacement M5 yếu thứ 3 (sau note 02 và note 04, cả hai đều Loss) — nhưng lệnh này vẫn Win. Điều này củng cố thêm luận điểm chính của batch (xem tổng hợp cross-trade, mục 10): chất lượng displacement M5 KHÔNG phải biến số phân tách rõ ràng Win/Loss trong mẫu 5 lệnh này — bias D1/H1 + vị trí POI có vẻ là yếu tố chi phối mạnh hơn.
+
+### 9.4. Yếu tố thời gian
+
+Entry 13:40 giờ dữ liệu gốc — note tự nhận chưa quy đổi UTC+7 và chưa xác nhận có còn trong London Kill Zone chính hay không (đánh dấu `[~]`, mục 5). Không thêm được thông tin mới ngoài việc xác nhận lại đây là một trường UNSUPPORTED thật (không có giờ quy đổi cụ thể để kiểm).
+
+### 9.5. Vị trí entry trong Dealing Range
+
+H1 DR (1.05653–1.06873): entry 1.06434 tương ứng (1.06434-1.05653)/(1.06873-1.05653) = 0.640 — nằm trong dải OTE (0.618-0.786) nhưng ở phần thấp, gần mép 0.618 hơn là sweet spot 0.705, khớp với tự đánh giá gốc ("CE≈OTE chỉ sát biên 0.618").
+
+### 9.6. So sánh với vault
+
+Batch này không có lệnh EURUSD nào khác để so sánh trực tiếp — so sánh chéo instrument với 4 lệnh XAU (xem mục 10 cho phân tích cross-trade đầy đủ). Về mặt cấu trúc split-entry (0.5/0.5), đây là lệnh duy nhất trong batch dùng kỹ thuật này — không có tiền lệ trong cụm để đối chiếu independent confirmation cho từng leg.
+
+![[EURUSD-20161130-rr-discrepancy.svg|760]]
+
+---
+
+## 10. Phản biện chuyên sâu (Devil's Advocate)
+
+```yaml
+type: devils-advocate
+mode: REVIEW
+instrument: EURUSD
+date: 2016-11-30
+timeframes_provided: [D1 (mô tả + 2 ảnh không đọc được), H1 (mô tả + 1 ảnh), M5 (mô tả + 2 ảnh), M1 (không có)]
+verdict: SURVIVES, WEAKENED
+evidence_sufficiency: partial
+opposite_case_strength: weaker
+objections: {fatal: 0, material: 3, minor: 2}
+open_objections: "O1 OPEN, O2 OPEN, O3 OPEN, O4 OPEN, O5 OPEN"
+tags: [ict, devils-advocate, review]
+```
+
+**0. Evidence base**: `evidence_sufficiency = partial` — cao hơn 4 lệnh XAU trong batch vì note gốc (2026-07-17) đã tự làm phần lớn công việc phản biện nội bộ (tự tính % khớp mô hình lý tưởng ~55-60%, tự liệt kê "Không đạt chuẩn/chưa xác minh"), giảm bớt phần việc DA phải tự phát hiện từ đầu. Vẫn không có ảnh đọc được.
+
+**1. Thesis + load-bearing claim**: C1 Bias D1/H1 Bearish. C2 Sweep kép (đỉnh OB rồi cạnh FVG) + MSS M5 12:15 + FVG 12:10 → entry CE FVG 13:40. C3 TP đặt tại draw on liquidity thật (gần EQL Discount). C4 (từ C1+C2+C3) lệnh thắng vì bias/target đúng hướng lớn, không phải vì chuỗi xác nhận vi mô sắc bén — đây là **claim tự chẩn đoán của chính note gốc**, không phải điều DA này phát hiện ra. C5 `r_planned: 2.09`. **Load-bearing: C1 (bias) — nếu bias sai, toàn bộ "thắng nhờ đúng hướng lớn" sụp, vì đó là lý do duy nhất note gốc đưa ra để giải thích tại sao một setup confluence 2/8 lại thắng.**
+
+**2. What survives**: C1 — bias có cơ sở rõ (Consolidation → Bearish Displacement → MSS H1, EQH/EQL xác định draw hai chiều) và outcome (Hit TP) không mâu thuẫn. C3 — TP đặt trước EQL (không tham lam tới tận đáy) là một quyết định risk-conscious hợp lý, giữ nguyên. Đặc biệt: note gốc TỰ đã hoàn thành phần lớn công việc "hunt hindsight/outcome-as-evidence" mà brief yêu cầu — mục 7 Lesson #1 viết thẳng "Một kết quả Win không tự động chứng minh setup tốt" và Final Grade mục 8 tự cho C+ dù Win. Đây là ví dụ hiếm trong toàn batch nơi tác giả đã tự áp dụng đúng kỷ luật "process over outcome" TRƯỚC khi DA vào cuộc.
+
+**3. Objections**
+
+**O1 · [ARITHMETIC] · material · attacks C5**
+Claim: `r_planned: 2.09`.
+Fails: tính lại từ chính entry/SL/TP trong frontmatter cho RR ≈ 2.34-2.36 (xem mục 9.1), không khớp 2.09 dù dùng TP nào trong hai giá trị mâu thuẫn đã biết. Đây là phát hiện MỚI của DA này — note gốc đã tự bắt được 2 mâu thuẫn khác (CE/Edge, TP 1.05882/1.05886) nhưng KHÔNG bắt được mâu thuẫn RR này.
+Evidence: phép tính ở mục 9.1 — Risk=0.00234, Reward=0.00552 (hoặc 0.00548), RR=2.359 (hoặc 2.342), cả hai đều lệch xa 2.09.
+Consequence: `grade: C+` đã dựa một phần vào nhận xét "RR đạt chuẩn ≥1:2 nhưng SL-driven, không phải reward-driven" (mục 8 gốc) — nếu RR thực là 2.34-2.36 thay vì 2.09, đây vẫn ≥1:2 nên không đổi kết luận qualitative, nhưng làm dấy nghi vấn về độ tin cậy của TOÀN BỘ trường số học trong file (đã có 2 mâu thuẫn khác), và ảnh hưởng trực tiếp tới bất kỳ dashboard tổng hợp R-multiple nào dùng field `r_planned`/`r_multiple` (đều ghi 2.09).
+Your best answer: "2.09 có thể tính từ leg H1 OB dự kiến trước khi biết leg nào khớp." Đã thử tái tạo ở mục 9.1 — không khớp được chính xác bằng phép thử ngược đơn giản; không loại trừ khả năng này nhưng không đủ dữ liệu để xác nhận, nên vẫn treo là discrepancy chưa giải thích được.
+Retracted by: đối chiếu lại chart gốc hoặc log tính toán ban đầu (nếu còn giữ) để xác nhận `r_planned` được tính từ cặp entry/SL/TP nào — nếu nó dùng một bộ số khác (ví dụ leg OB dự kiến), objection đóng với ghi chú rõ nguồn gốc con số.
+
+**O2 · [HINDSIGHT/outcome-as-evidence] · material · attacks C2, C4**
+Claim: "Thị trường có tín hiệu xác nhận trước entry — ít nhất 3" (mục 6 gốc, liệt kê sweep kép, MSS, sweep FVG).
+Fails: cần kiểm nghiêm ngặt liệu 3 tín hiệu này có thực sự "trước entry và đủ để hành động" hay đang được liệt kê SAU KHI biết kết quả thắng, khiến chúng trông thuyết phục hơn thực tế tại thời điểm quyết định. Đặc biệt tín hiệu #1 "sweep kép... smart money từ chối Premium" là một diễn giải theo hướng có lợi cho kết luận thắng — nếu lệnh thua, cùng dữ liệu "giá quét lên rồi mới giảm 2 lần" có thể được đọc là "thị trường lưỡng lự, tín hiệu yếu" (chính note gốc cũng tự thừa nhận cách đọc thứ hai này ở Lesson #4: "đừng nhầm nhiều xác nhận với xác nhận chất lượng cao").
+Evidence: mục 6 gốc dùng ngôn ngữ khẳng định mạnh ("smart money từ chối Premium") cho cùng một sự kiện mà Lesson #4 sau đó tự gọi là dấu hiệu "lưỡng lự".
+Consequence: nếu tín hiệu xác nhận thực chất yếu hơn cách mục 6 trình bày, C4 (thắng vì bias/target, không phải vi mô) càng được củng cố — tức objection này KHÔNG đe dọa kết luận cuối, mà thực ra ủng hộ nó; nhưng nó cho thấy chính mục 6 của note gốc chưa hoàn toàn nhất quán về mức độ tự tin khi mô tả cùng một sự kiện ở hai chỗ khác nhau trong file.
+Your best answer: mục 6 và Lesson #4 có thể đọc là bổ sung nhau (mục 6 mô tả sự kiện, Lesson #4 phản biện cách diễn giải) chứ không mâu thuẫn — nếu vậy đây là note tự chứa cả claim và phản biện của chính nó, một điểm mạnh hiếm gặp. Giữ material vì ngôn ngữ ở mục 6 vẫn hơi mạnh so với mức độ chắc chắn thực tế tại M5.
+Retracted by: không cần "đảo ngược" gì thêm — ghi nhận rằng note gốc đã tự làm việc này, hạ objection xuống một dòng ghi chú khi trình bày lại thay vì coi là lỗi chưa được xử lý.
+
+**O3 · [UNSUPPORTED] · material · attacks C2**
+Claim: `idm_swept: Yes`, "sweep đỉnh OB rồi cạnh trên FVG" — cả hai đều không có tên level liquidity cụ thể ngoài mô tả hình dạng giá.
+Fails: giống hệt pattern đã lặp lại ở note 01/02 trong batch XAU — SKILL.md § Sweep đòi hỏi level CÓ TÊN (không chỉ "đỉnh OB", "cạnh FVG" — đây là cạnh của PD array, không phải resting liquidity pool có tên).
+Evidence: mục 3 note gốc "giá quét lên cạnh trên của Order Block... sau khi tạo đỉnh và đóng nến lại trong OB (Sweep)" — không có tên level (không phải EQH/PDH/session high).
+Consequence: `idm_swept=Yes` (+1 confluence, 1/2 điểm confluence hiện có) có thể là overcall — nếu đúng theo canon chặt, confluence_score thực có thể chỉ 1/8, không phải 2/8, khiến grade D+ cho Confluence càng thấp hơn.
+Your best answer: đây là pattern lặp lại toàn batch (xem cross-trade note trong summary), không riêng lệnh này — bản thân việc lặp lại nhất quán một cách hiểu "sweep = quét cạnh PD array" (thay vì đúng nghĩa canon "quét resting liquidity có tên") gợi ý đây là rule drift hệ thống trong cách ghi log của tác giả, không phải lỗi ngẫu nhiên một lệnh.
+Retracted by: xác nhận có level liquidity có tên (EQH, session high, PDH...) trùng với "đỉnh OB"/"cạnh FVG" được nêu.
+
+**O4 · [DOCTRINE] · minor · attacks execution mechanics**
+Claim: split-entry 0.5/0.5 cho 2 POI khác cấp (H1 OB + M5 FVG).
+Fails: đã tự nhận đầy đủ ở Lesson #3 gốc ("leg OB thực chất là một cược dự phòng hơn là entry có cơ sở") — không có gì để DA thêm vào, giữ ở minor chỉ để hoàn thiện ledger.
+Retracted by: đã xử lý trong note gốc.
+
+**O5 · [UNSUPPORTED] · minor · attacks C1**
+Claim: mốc ngày "24/7/2026 – 9/11/2016" trong mô tả Consolidation D1.
+Fails: đã tự flag ⚠️ trong note gốc (lẫn lộn năm 2026/2016) — chỉ ghi nhận lại, không đổi gì thêm.
+Retracted by: đã xử lý trong note gốc (cần xác nhận từ chart nhưng không ảnh hưởng tới load-bearing claim).
+
+Drafted: 5. Cut: 0.
+
+**4. Opposite case (cùng evidence)**: Đọc ngược C4 — thay vì "thắng nhờ bias/target đúng hướng lớn", đọc là "thắng MAY MẮN nhờ chỉ một trong hai leg split-entry khớp lệnh (leg có RR tốt hơn), trong khi leg kia (H1 OB, RR sẽ tệ hơn/rủi ro hơn theo chính point 9.1 nếu SL phải đặt xa hơn) không khớp — nếu cả hai leg đều khớp, kết quả tổng hợp có thể khác." Tự phản biện case ngược: đây gần trùng với chính Lesson #3 gốc đã nêu ("may mắn, vì nếu cả hai leg đều khớp, rủi ro thực nhận sẽ là 1R đầy đủ") — tức note gốc ĐÃ tự nêu ra chính khả năng này, không phải một phát hiện độc quyền của DA. **Strength: weaker** — không thêm insight mới ngoài những gì note gốc đã tự thừa nhận, và không đủ dữ liệu (không biết leg H1 OB nếu khớp sẽ có RR/outcome gì) để định lượng thêm.
+Distinguishing observable: không có — đây là một counterfactual không thể kiểm chứng từ dữ liệu lịch sử đã cố định (leg OB không khớp, không có dữ liệu giá tiếp theo cho kịch bản đó).
+
+**5. Verdict: SURVIVES, WEAKENED.** Load-bearing claim C1 (bias) không bị đe dọa bởi bất kỳ objection nào. Nhưng phát hiện MỚI thật sự (O1, RR discrepancy 2.09 vs 2.34-2.36) là một lỗ hổng ghi chép mà ngay cả note gốc — vốn đã rất kỹ trong tự phê bình — cũng bỏ sót. Kết hợp O3 (sweep không có tên level, pattern lặp lại toàn batch), verdict giữ ở WEAKENED thay vì SURVIVES THIS ATTACK trơn, vì độ tin cậy của các trường số học/confluence trong file cần được xác minh lại toàn diện, không chỉ 2 điểm mà note gốc đã tự bắt.
+
+**6. Falsification tests**:
+1. Đối chiếu chart H1/M5 gốc để xác định `r_planned: 2.09` được tính từ cặp entry/SL/TP nào — đóng O1.
+2. Xác nhận tên cụ thể của level liquidity bị "sweep" (đỉnh OB, cạnh FVG) — có phải EQH/session high/PDH nào không — đóng O3.
+3. Rà toàn vault kiểm tra xem field `r_planned`/`r_multiple` có discrepancy tương tự ở các lệnh khác ngoài batch này không — nếu có, đây là lỗi hệ thống trong quy trình tính RR, không phải lỗi cá biệt của lệnh EURUSD này.
+
+---
+
+## 11. Doctrine check (ICT 2022 canon)
+
+**Thesis**: Short EURUSD 30/11/2016, bias D1/H1 Bearish, split-entry 0.5/0.5 (H1 OB không khớp + M5 FVG khớp), sweep kép + MSS M5 + FVG → entry CE, TP tại draw on liquidity Discount, Hit TP +RR (số RR thực tế cần xác minh lại — xem mục 9-10).
+
+**Cần sửa** (load-bearing trước):
+- C-RR "`r_planned: 2.09`" — **FAIL** (không load-bearing về hướng bias, nhưng load-bearing cho tính toàn vẹn số học của record) · why: arithmetic không khớp — RR tính lại từ entry/SL/TP frontmatter cho 2.34-2.36, không phải 2.09; đây là mâu thuẫn arithmetic thực sự (anchor: SKILL.md nguyên tắc chung về kiểm arithmetic trước khi chấp nhận claim) → fix: đối chiếu chart gốc để xác định con số đúng, cập nhật `r_planned`/`r_multiple` hoặc giải thích rõ cơ sở tính 2.09 nếu nó dùng cặp giá khác.
+- C-sweep "idm_swept=Yes / sweep đỉnh OB, cạnh FVG" — **UNSUPPORTED** · anchor: SKILL.md § Sweep ("Quét liquidity tại level có tên... không có reference level → UNSUPPORTED") — không có tên level cụ thể → fix: nêu tên level liquidity (EQH/session high...) hoặc hạ xuống không tính confluence.
+- C-entry "CE vs Edge" — đã tự xử lý đầy đủ ở note gốc (ghi chú ⚠️ đầu file), không lặp lại, chỉ xác nhận: theo số học CE khớp gần tuyệt đối (lệch 0.00001) → nếu phải chọn 1 nhãn theo canon, **CE** đúng hơn Edge theo bằng chứng số, dù lời văn gọi "cạnh FVG".
+
+**PASS**: C1 (bias D1/H1 Bearish, đồng thuận, draw on liquidity xác định rõ hai chiều) · C-target (TP tại draw on liquidity Discount hợp lệ, không tham lam quá mức) · C-MSS (MSS M5 12:15 phá swing low, mô tả đủ điều kiện hình thức).
+
+**Verdict**: **INSUFFICIENT EVIDENCE** — không phải NOT ALIGNED vì bias/structure chính (load-bearing về hướng) đều PASS, nhưng hai claim phụ quan trọng (RR, sweep) rơi vào FAIL/UNSUPPORTED làm giảm độ tin cậy tổng thể của record đủ để không thể chấm DOCTRINE ALIGNED hay thậm chí PARTIALLY ALIGNED một cách thoải mái — RR sai không phải lỗi kế thừa từ bias, nó độc lập và ảnh hưởng tới tính đúng đắn của toàn bộ log số liệu.
+
+**Notes**: Sweep-không-có-tên-level là pattern lặp lại ở ÍT NHẤT 3/5 lệnh trong batch này (note 01, 02, và note 05) — đây không còn là lỗi cá biệt mà là **rule drift hệ thống**: tác giả nhất quán dùng "sweep" để chỉ "quét cạnh của một PD array" thay vì đúng nghĩa canon "quét resting liquidity tại level có tên". Đề xuất bổ sung vào SKILL.md một cảnh báo misuse pattern cụ thể cho § Sweep: "quét cạnh OB/FVG/Breaker không tự động là sweep — chỉ là việc giá chạm biên PD array, trừ khi biên đó trùng với một liquidity pool có tên độc lập".
+
+---
+
+## 12. Lesson Learned (bản đầy đủ)
+
+> Phần này CHỈ mở rộng — không lặp lại nội dung mục 6-8 gốc (đã có Lesson Learned + Final Grade rất đầy đủ, bao gồm đúng cảnh báo "process over outcome").
+
+### (a) Bài học kỹ thuật
+
+1. **Một record có TP mâu thuẫn ở 2 nơi thường có nguy cơ mâu thuẫn ở field số khác chưa bị phát hiện — cần audit TOÀN BỘ field số khi phát hiện 1 mâu thuẫn, không chỉ sửa chỗ đã thấy.** Ví dụ số thật: note gốc tự bắt TP 1.05882 vs 1.05886, nhưng KHÔNG bắt được `r_planned: 2.09` sai lệch với RR tính lại 2.34-2.36 (mục 9.1/O1). Tổng quát: khi phát hiện 1 lỗi ghi chép số học, chạy lại TOÀN BỘ phép tính phái sinh (RR, CE, OTE) trong file đó, không dừng ở lỗi đã thấy.
+2. **"Sweep" cần một level có tên để tính confluence — quét cạnh của một PD array khác (OB, FVG) không tự động là sweep.** Ví dụ số thật: "sweep đỉnh OB" và "sweep cạnh FVG" trong note này không có tên level, giống hệt pattern ở 2 lệnh XAU khác trong batch. Tổng quát: chỉ tick `idm_swept`/`liquidity_swept` khi có tên level cụ thể (EQH, PDH, session high...).
+
+### (b) Bài học quy trình/checklist
+
+3. **Split-entry cần tiêu chí rõ ràng cho từng leg TRƯỚC khi đặt lệnh, không chỉ là cách né quyết định — đã tự nêu đầy đủ ở Lesson #3 gốc, chỉ nhấn mạnh thêm: tiêu chí này nên là một checkbox có thể tick TRƯỚC entry, không phải nhận xét viết SAU khi biết leg nào khớp** (tránh rơi vào hindsight khi tự đánh giá quyết định split-entry).
+
+### (c) Bài học tâm lý-hành vi
+
+4. **Ngôn ngữ mô tả tín hiệu xác nhận có xu hướng mạnh hơn (confident hơn) khi viết SAU khi biết kết quả thắng — ngay cả trong một note đã rất kỷ luật về "process over outcome".** Ví dụ: mục 6 gốc gọi sweep kép là "smart money từ chối Premium" (khẳng định mạnh), trong khi Lesson #4 cùng file gọi chính sự kiện đó là dấu hiệu "lưỡng lự" (khẳng định yếu hơn) — hai cách mô tả cùng một dữ kiện, khác nhau về mức độ tự tin, mà không có ghi chú nào giải thích tại sao ngôn ngữ đổi giữa hai mục. Đây là dấu hiệu vi mô của outcome bias dù tổng thể note đã cố gắng tránh nó.
+
+### (d) Rule đề xuất cho Playbook
+
+- [ ] **R-BD-13**: Khi phát hiện ≥1 mâu thuẫn số học trong một note, bắt buộc chạy lại toàn bộ chuỗi tính CE/RR/OTE bằng công thức độc lập trước khi đóng note đó.
+- [ ] **R-BD-14**: `idm_swept`/`liquidity_swept` chỉ = Yes khi ghi kèm tên level cụ thể (áp dụng chung cho toàn vault, không chỉ batch này — đã đề xuất tương tự ở note 01/02, nhắc lại ở đây vì lặp lại lần thứ 3 trong cùng batch).
+- [ ] **R-BD-15**: Khi mô tả "tín hiệu xác nhận" trong mục Replay, dùng ngôn ngữ ở mức độ chắc chắn NHẤT QUÁN với mục Lesson Learned cùng file — nếu hai mục mô tả cùng sự kiện khác mức độ tự tin, thêm một dòng giải thích lý do (ví dụ "mục Replay mô tả theo góc nhìn lúc đó, Lesson phản biện lại sau").
+
+### (e) Điều KHÔNG nên học từ lệnh này
+
+- KHÔNG dùng RR đã sửa lại (2.34-2.36, nếu xác nhận đúng) để nâng grade C+ lên cao hơn — grade C+ của note gốc dựa trên nhiều tiêu chí khác (confluence 2/8, POI rank 1, kill zone chưa xác nhận) không liên quan tới con số RR; sửa RR chỉ ảnh hưởng tính toàn vẹn dữ liệu, không tự động cải thiện chất lượng quy trình.
+- KHÔNG kết luận "confluence 2/8 vẫn thắng nên ngưỡng confluence tối thiểu có thể hạ" — đây chính là cảnh báo đã có sẵn ở Final Grade gốc ("Không dùng lệnh này làm căn cứ để hạ chuẩn confluence tối thiểu"), nhắc lại nguyên văn tinh thần đó ở đây vì đây là lệnh Win duy nhất ngoài cụm XAU trong batch, dễ bị dùng sai làm "bằng chứng ngoài mẫu" củng cố xu hướng chọn confluence thấp.
+- KHÔNG dùng pattern "displacement M5 yếu nhưng vẫn thắng" (giống note 01, 03 trong cụm XAU) để kết luận tổng quát "chất lượng displacement M5 không quan trọng" — mẫu quá nhỏ (n=5, không đồng nhất instrument/thời gian) để rút ra quy luật, đây chỉ là một quan sát cần theo dõi thêm.
+
+
+---
+
 ### Liên kết
 
 > Mục Liên kết không tồn tại trong file gốc. Gợi ý liên kết dựa trên nội dung đã đọc: [[01 - ICT 2022 Model]] · [[25 - OB - Order Block]] · [[13 - FVG  - Fair Value Gap]] · [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[_Backtest Dashboard]]

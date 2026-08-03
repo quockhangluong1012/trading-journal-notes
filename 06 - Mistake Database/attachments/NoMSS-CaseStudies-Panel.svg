@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="900" fill="#ffffff"/>
+  <text x="550" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Case Studies — Not Have MSS (kịch bản minh họa)</text>
+  <text x="550" y="58" text-anchor="middle" font-size="14" fill="#555">Case A (đỏ) · Case B (xanh) · Case C (amber) — số liệu mang tính đại diện, không phải log thật</text>
+
+  <!-- Case A -->
+  <rect x="40" y="80" width="1020" height="240" rx="10" fill="#fce4e4" stroke="#c62828" stroke-width="2"/>
+  <text x="60" y="106" font-size="15" font-weight="bold" fill="#c62828">Case A — XAUUSD NY: bắt dao rơi theo wick, tưởng là MSS</text>
+  <text x="60" y="126" font-size="12" fill="#3a2c00">Entry 2439.5 · SL 2435 (cảm tính, 4.5$) · TP 2449 (9.5$, RR≈2.1) — không có body close</text>
+
+  <polyline points="70,110 200,140 320,165 430,190 540,205 590,195 650,215 760,260" fill="none" stroke="#c62828" stroke-width="2.5"/>
+  <line x1="70" y1="200" x2="1030" y2="200" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="204" font-size="10" fill="#1a1a1a">Entry 2439.5</text>
+  <line x1="70" y1="225" x2="1030" y2="225" stroke="#c62828" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="229" font-size="10" fill="#c62828">SL 2435</text>
+  <line x1="70" y1="175" x2="1030" y2="175" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="179" font-size="10" fill="#2e7d32">TP 2449</text>
+
+  <text x="60" y="296" font-size="12.5" fill="#3a2c00">Kết quả: LOSS −0.5% — wick chỉ là liquidity run, downtrend tiếp diễn mạnh sau đó.</text>
+  <text x="60" y="313" font-size="12.5" font-weight="bold" fill="#c62828">Audit: FAIL Q1,Q2,Q3,Q5 (không protected swing, break_type=wick_only) → xếp loại F</text>
+
+  <!-- Case B -->
+  <rect x="40" y="336" width="1020" height="240" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="60" y="362" font-size="15" font-weight="bold" fill="#2e7d32">Case B — NAS100 NY: chờ đủ body close, bỏ lỡ phần đầu đợt hồi</text>
+  <text x="60" y="382" font-size="12" fill="#1a1a1a">Entry 18958 (sau MSS M5 body close) · SL 18940 (18đ) · TP 19010 (52đ, RR≈2.9)</text>
+
+  <polyline points="70,560 200,540 280,555 350,545 430,500 540,460 650,430 760,400" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+  <line x1="70" y1="500" x2="1030" y2="500" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="504" font-size="10" fill="#1a1a1a">Entry 18958</text>
+  <line x1="70" y1="525" x2="1030" y2="525" stroke="#c62828" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="529" font-size="10" fill="#c62828">SL 18940</text>
+  <line x1="70" y1="440" x2="1030" y2="440" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="444" font-size="10" fill="#2e7d32">TP 19010</text>
+  <line x1="70" y1="565" x2="1030" y2="565" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="1035" y="569" font-size="10" fill="#1565c0">Đáy 18905</text>
+
+  <text x="60" y="536" font-size="12.5" fill="#1a1a1a">Kết quả: WIN +2.9R, nhưng bỏ lỡ ~53 điểm đầu (từ đáy 18905 tới entry 18958).</text>
+  <text x="60" y="553" font-size="12.5" font-weight="bold" fill="#2e7d32">Bài học: chờ MSS không tối đa hoá R — tối đa hoá xác suất là lệnh thắng, không bắt dao rơi</text>
+
+  <!-- Case C -->
+  <rect x="40" y="592" width="1020" height="240" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="60" y="618" font-size="15" font-weight="bold" fill="#3a2c00">Case C — EURUSD London: MSS chỉ ở M15, thấp hơn H1 dự kiến</text>
+  <text x="60" y="638" font-size="12" fill="#3a2c00">intended_entry_timeframe=H1 · MSS M15 xuất hiện tại 1.0841 sau 3 giờ chờ H1 vô hiệu</text>
+
+  <polyline points="70,700 200,720 320,740 430,730 540,700 650,670 760,650" fill="none" stroke="#f9a825" stroke-width="2.5"/>
+  <line x1="70" y1="700" x2="1030" y2="700" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="704" font-size="10" fill="#1a1a1a">Sweep 1.0820</text>
+  <line x1="70" y1="660" x2="1030" y2="660" stroke="#f9a825" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="664" font-size="9" fill="#3a2c00">MSS 1.0841</text>
+
+  <text x="60" y="792" font-size="12.5" fill="#3a2c00">Câu hỏi: MSS khung thấp hơn dự kiến có nên giao dịch, hay là khung shopping?</text>
+  <text x="60" y="809" font-size="12.5" font-weight="bold" fill="#3a2c00">Cần cửa sổ thời gian hợp lệ định trước — tránh cả tê liệt chờ mãi và hạ khung tùy tiện</text>
+
+  <!-- Summary bar -->
+  <rect x="40" y="850" width="1020" height="40" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="60" y="875" font-size="12.5" fill="#1a1a1a">So sánh: A = bắt dao rơi thua · B = chờ đúng process thắng nhưng mất đầu sóng · C = vùng xám cần cửa sổ thời gian</text>
+</svg>

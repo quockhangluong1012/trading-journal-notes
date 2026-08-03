@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="28" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1a1a">Ho loi "Trading Into Unswept Liquidity" - 4 lenh Loss</text>
+  <text x="450" y="48" text-anchor="middle" font-size="12" fill="#666">SL luon nam trong duong di toi mot pool thanh khoan CHUA bi lay - nhung tieu chi nay co phan biet duoc Win/Loss?</text>
+
+  <!-- 4 mini panels for the 4 losses -->
+  <!-- Panel 1: GBPUSD 17/7 -->
+  <rect x="30" y="70" width="200" height="180" fill="#fdf2f0" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="130" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">GBPUSD 17/7/2014</text>
+  <text x="130" y="106" text-anchor="middle" font-size="10" fill="#555">first_error: sweep</text>
+  <line x1="45" y1="130" x2="215" y2="130" stroke="#888"/>
+  <text x="50" y="126" font-size="9" fill="#888">FVG 1.70873-1.71103</text>
+  <line x1="45" y1="150" x2="215" y2="150" stroke="#c0392b" stroke-dasharray="4 2"/>
+  <text x="50" y="163" font-size="9" fill="#c0392b">SL 1.70840</text>
+  <rect x="45" y="150" width="170" height="60" fill="#f9d0c4" fill-opacity="0.5"/>
+  <text x="130" y="185" text-anchor="middle" font-size="9" fill="#a93226">ERL: Range Low</text>
+  <text x="130" y="197" text-anchor="middle" font-size="9" fill="#a93226">1.70592 CHUA quet</text>
+  <line x1="45" y1="210" x2="215" y2="210" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Panel 2: XAUUSD 19/5 -->
+  <rect x="245" y="70" width="200" height="180" fill="#fdf2f0" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="345" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">XAUUSD 19/5/2014</text>
+  <text x="345" y="106" text-anchor="middle" font-size="10" fill="#555">first_error: poi (Breaker nong)</text>
+  <line x1="260" y1="130" x2="430" y2="130" stroke="#333" stroke-width="1.5"/>
+  <text x="265" y="126" font-size="9" fill="#333">OB sau 1304.5-1306 (0.786) CHUA test</text>
+  <rect x="260" y="130" width="170" height="50" fill="#f9d0c4" fill-opacity="0.5"/>
+  <line x1="260" y1="150" x2="430" y2="150" stroke="#c0392b" stroke-dasharray="4 2"/>
+  <text x="265" y="163" font-size="9" fill="#c0392b">SL 1301.789</text>
+  <line x1="260" y1="170" x2="430" y2="170" stroke="#888"/>
+  <text x="265" y="185" font-size="9" fill="#555">Entry 1301.167 (Breaker 0.618)</text>
+
+  <!-- Panel 3: XAUUSD 14/5 AM -->
+  <rect x="460" y="70" width="200" height="180" fill="#fdf2f0" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="560" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">XAUUSD 14/5 sang</text>
+  <text x="560" y="106" text-anchor="middle" font-size="10" fill="#555">first_error: poi (SL sai invalid.)</text>
+  <line x1="475" y1="120" x2="645" y2="120" stroke="#888"/>
+  <text x="480" y="116" font-size="9" fill="#888">RB high 1304.109 (invalidation dung)</text>
+  <rect x="475" y="120" width="170" height="40" fill="#f9d0c4" fill-opacity="0.5"/>
+  <line x1="475" y1="160" x2="645" y2="160" stroke="#c0392b" stroke-dasharray="4 2"/>
+  <text x="480" y="173" font-size="9" fill="#c0392b">SL that = RB low 1302.715</text>
+  <text x="560" y="195" text-anchor="middle" font-size="9" fill="#a93226">Lech 1.4 diem vs invalidation</text>
+
+  <!-- Panel 4: EURUSD 07/5 -->
+  <rect x="675" y="70" width="200" height="180" fill="#fdf2f0" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="775" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">EURUSD 7/5/2021</text>
+  <text x="775" y="106" text-anchor="middle" font-size="10" fill="#555">first_error: draw</text>
+  <line x1="690" y1="130" x2="860" y2="130" stroke="#333" stroke-width="1.5"/>
+  <text x="695" y="126" font-size="9" fill="#333">BSL OB 1.21296-1.21227</text>
+  <rect x="690" y="130" width="170" height="40" fill="#f9d0c4" fill-opacity="0.5"/>
+  <line x1="690" y1="170" x2="860" y2="170" stroke="#c0392b" stroke-dasharray="4 2"/>
+  <text x="695" y="183" font-size="9" fill="#c0392b">SL 1.20931</text>
+  <text x="775" y="200" text-anchor="middle" font-size="9" fill="#555">Entry 1.20805 (Asia session)</text>
+
+  <!-- Devil's advocate box -->
+  <rect x="30" y="270" width="845" height="130" fill="#eef6fb" stroke="#2980b9"/>
+  <text x="452" y="292" text-anchor="middle" font-size="13" font-weight="700" fill="#2471a3">Phan bien: tieu chi co phan biet duoc Win/Loss khong?</text>
+  <text x="50" y="315" font-size="11" fill="#333">Dinh nghia "SL nam trong duong di toi pool chua lay" GAN NHU la mo ta MAC DINH cua moi lenh thua theo lens ICT -</text>
+  <text x="50" y="333" font-size="11" fill="#333">thi truong luon co mot pool nao do ma SL "nam tren duong toi" no. Chua test tieu chi nay tren nhom WIN.</text>
+  <text x="50" y="358" font-size="11" fill="#c0392b" font-weight="700">2 lenh Win cung batch E (07-16/02, 07-17/01) co "tap/entry nong" tuong tu - CHUA duoc kiem tra cheo.</text>
+  <text x="50" y="380" font-size="11" fill="#1e8449" font-weight="700">Falsification test: ap tieu chi len toan bo 17 lenh Win. Neu ty le khop tuong duong Loss -> C4 bi bac.</text>
+
+  <!-- Bottom: verdict -->
+  <rect x="30" y="415" width="845" height="120" fill="#fdf6e3" stroke="#b7950b"/>
+  <text x="452" y="437" text-anchor="middle" font-size="13" font-weight="700" fill="#7d6608">Nhom doi chung con thieu</text>
+  <text x="50" y="460" font-size="11" fill="#333">4/4 la toan bo mau quan sat duoc ("4/5 loss gan nhat", khong tinh 07-08 = displacement error khac goc).</text>
+  <text x="50" y="480" font-size="11" fill="#333">Khong biet mau so tong so Loss trong vault -> khong the noi "4/4" la mot ty le dang ke, co the la 100% cua chinh no.</text>
+  <text x="50" y="505" font-size="11" fill="#7d6608" font-weight="700">Ket luan: pattern co that o muc mo ta, nhung chua duoc validate thanh mot "ho loi" thong ke - can n>=10 + nhom doi chung.</text>
+</svg>

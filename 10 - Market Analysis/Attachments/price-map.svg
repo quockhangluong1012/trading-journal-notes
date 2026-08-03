@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="700" viewBox="0 0 980 700" font-family="Arial, Helvetica, sans-serif">
+  <rect width="980" height="700" fill="#0e1726"/>
+  <text x="40" y="38" fill="#e2e8f0" font-size="20" font-weight="bold">US Tech 100 · D1 price map — trạng thái 2026-08-03</text>
+  <text x="40" y="60" fill="#64748b" font-size="13">Trục giá 26,800 → 31,000 · đường giá giản lược từ dữ liệu đã đo trong phiên debate</text>
+
+  <!-- Target zone lines -->
+  <line x1="100" y1="118" x2="560" y2="118" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="100" y1="127" x2="560" y2="127" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="575" y="127" fill="#38bdf8" font-size="13">Targets: EQH 30,660.9 · DR high 30,728.3</text>
+
+  <!-- EQ -->
+  <line x1="100" y1="293" x2="560" y2="293" stroke="#64748b" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="575" y="297" fill="#94a3b8" font-size="13">EQ dealing range 29,457.7 (50%)</text>
+
+  <!-- LH -->
+  <line x1="100" y1="334" x2="560" y2="334" stroke="#94a3b8" stroke-width="1"/>
+  <text x="575" y="338" fill="#94a3b8" font-size="13">LH cuối 29,163 (O3 rút nếu body close vượt)</text>
+
+  <!-- Current price -->
+  <line x1="100" y1="427" x2="560" y2="427" stroke="#22c55e" stroke-width="1" stroke-dasharray="2 3"/>
+  <text x="575" y="431" fill="#22c55e" font-size="13">Live 28,486.6 · discount 9.3% (gap-borne — O2)</text>
+
+  <!-- EQL band -->
+  <rect x="100" y="460" width="460" height="10" fill="#f59e0b" fill-opacity="0.18" stroke="#f59e0b" stroke-width="1"/>
+  <text x="575" y="462" fill="#f59e0b" font-size="13">EQL 28,192–28,237 (pool bị quét?)</text>
+  <text x="575" y="479" fill="#f59e0b" font-size="13">Biên range / invalidation: 28,187</text>
+  <text x="575" y="497" fill="#f87171" font-size="13">W1 close 28,160.6 — dưới biên 26.4 pts</text>
+
+  <!-- Sweep low -->
+  <line x1="100" y1="625" x2="560" y2="625" stroke="#ef4444" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="575" y="629" fill="#f87171" font-size="13">Sweep low 27,052 (−4.06% dưới pool)</text>
+
+  <!-- Price path -->
+  <polyline points="120,334 210,462 250,510 285,565 315,625 355,469 395,472" fill="none" stroke="#e2e8f0" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="395" y1="472" x2="425" y2="433" stroke="#f472b6" stroke-width="2" stroke-dasharray="4 4"/>
+  <polyline points="425,433 470,424 505,427" fill="none" stroke="#e2e8f0" stroke-width="2.5"/>
+  <circle cx="505" cy="427" r="5" fill="#22c55e"/>
+  <circle cx="505" cy="427" r="9" fill="none" stroke="#22c55e" stroke-opacity="0.5"/>
+
+  <!-- Path annotations -->
+  <text x="100" y="447" fill="#94a3b8" font-size="12">break 24/7</text>
+  <text x="60" y="590" fill="#94a3b8" font-size="12">3 close dưới: 28,045 / 27,800 / 27,097</text>
+  <text x="360" y="520" fill="#4ade80" font-size="12">+1,130 pts (30/7)</text>
+  <text x="398" y="418" fill="#f472b6" font-size="12">NWOG 286.9</text>
+
+  <text x="40" y="678" fill="#475569" font-size="12">Sơ đồ minh họa (không phải chart thật) — mọi mức giá lấy từ đo đạc ±35 pts và số platform-exact của phiên debate.</text>
+</svg>

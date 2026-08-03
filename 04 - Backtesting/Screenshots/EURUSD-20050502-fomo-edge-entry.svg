@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="1080" height="560" fill="#ffffff"/>
+  <text x="540" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">FOMO Edge-Entry - vao truoc khi Displacement + MSS xac nhan</text>
+  <text x="540" y="52" text-anchor="middle" font-size="13" fill="#666">EURUSD 2005-05-02 Long - entry tren dinh Order Block, tai nhip fake rejection dau tien</text>
+
+  <!-- LEFT PANEL: ACTUAL (WRONG) -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">LENH THUC TE (FOMO)</text>
+  <rect x="70" y="100" width="330" height="410" fill="#fafafa" stroke="#ddd"/>
+
+  <!-- OB zone -->
+  <rect x="70" y="330" width="330" height="60" fill="#b0b0b0" fill-opacity="0.45"/>
+  <text x="150" y="325" font-size="11" fill="#555">Order Block H1</text>
+  <line x1="70" y1="330" x2="400" y2="330" stroke="#888"/>
+  <text x="405" y="334" font-size="10" fill="#888">OB High 1.28503</text>
+  <line x1="70" y1="390" x2="400" y2="390" stroke="#888"/>
+  <text x="405" y="394" font-size="10" fill="#888">OB Low 1.28249</text>
+  <line x1="70" y1="360" x2="400" y2="360" stroke="#e67e22" stroke-dasharray="3 2"/>
+  <text x="405" y="364" font-size="10" fill="#e67e22">OB CE (tinh lai) 1.28376</text>
+
+  <!-- Entry marker way above OB -->
+  <line x1="70" y1="230" x2="400" y2="230" stroke="#c0392b" stroke-width="2"/>
+  <text x="405" y="234" font-size="11" font-weight="700" fill="#c0392b">ENTRY 1.28639 (Edge-top)</text>
+  <text x="130" y="215" font-size="10" fill="#c0392b">Nhip fake rejection lan 1</text>
+  <text x="130" y="203" font-size="10" fill="#c0392b">KHONG co displacement / MSS</text>
+
+  <!-- gap between entry and OB high -->
+  <rect x="70" y="230" width="330" height="100" fill="#f9d0c4" fill-opacity="0.5"/>
+  <text x="235" y="280" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">+13.6 pip NGOAI OB</text>
+  <text x="235" y="298" text-anchor="middle" font-size="11" fill="#a93226">gia chua thuc su cham vao POI</text>
+
+  <!-- SL -->
+  <line x1="70" y1="405" x2="400" y2="405" stroke="#c0392b" stroke-dasharray="5 3"/>
+  <text x="405" y="409" font-size="10" fill="#c0392b">SL 1.28392</text>
+
+  <path d="M 235 230 Q 260 320 260 410" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#arrowR2)"/>
+  <text x="235" y="450" text-anchor="middle" font-size="11" fill="#c0392b">Gia quet xuyen OB, dinh SL</text>
+
+  <!-- RIGHT PANEL: IDEAL -->
+  <text x="745" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#1e8449">CHUOI DUNG (cho du dieu kien)</text>
+  <rect x="580" y="100" width="330" height="410" fill="#fafafa" stroke="#ddd"/>
+
+  <rect x="580" y="330" width="330" height="60" fill="#a9dfbf" fill-opacity="0.55"/>
+  <text x="660" y="325" font-size="11" fill="#1e8449">Order Block H1</text>
+  <line x1="580" y1="330" x2="910" y2="330" stroke="#1e8449"/>
+  <text x="915" y="334" font-size="10" fill="#1e8449">OB High</text>
+  <line x1="580" y1="390" x2="910" y2="390" stroke="#1e8449"/>
+  <text x="915" y="394" font-size="10" fill="#1e8449">OB Low</text>
+
+  <text x="745" y="250" text-anchor="middle" font-size="11" fill="#1e8449">Nhip 1: gia cham OB, KHONG MSS</text>
+  <text x="745" y="264" text-anchor="middle" font-size="11" fill="#1e8449">-&gt; CHI QUAN SAT, khong vao</text>
+
+  <path d="M 745 270 Q 700 320 740 360 Q 780 380 800 300" stroke="#1e8449" stroke-width="2" fill="none" stroke-dasharray="4 3"/>
+
+  <text x="745" y="410" text-anchor="middle" font-size="11" font-weight="700" fill="#1e8449">Cho: Sweep -&gt; Displacement -&gt; MSS -&gt; FVG</text>
+  <text x="745" y="428" text-anchor="middle" font-size="11" font-weight="700" fill="#1e8449">roi moi Entry tai CE FVG M5 hinh thanh sau</text>
+
+  <line x1="580" y1="460" x2="910" y2="460" stroke="#1e8449" stroke-width="2"/>
+  <text x="745" y="478" text-anchor="middle" font-size="11" fill="#1e8449">Entry hop le (sau chuoi day du)</text>
+
+  <text x="540" y="540" text-anchor="middle" font-size="12" fill="#444">Bai hoc: entry ngoai bien POI + thieu Displacement/MSS la FOMO do duoc bang so, khong can cam giac.</text>
+
+  <defs>
+    <marker id="arrowR2" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+</svg>

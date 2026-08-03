@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 740" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1100" height="740" fill="#ffffff"/>
+<text x="30" y="40" font-size="22" font-weight="bold" fill="#1a1a1a">WeakDisp - Audit Framework</text>
+<text x="30" y="62" font-size="13" fill="#555">Pipeline: Log -&gt; Câu hỏi -&gt; Rubric -&gt; Hành động</text>
+
+<!-- pipeline -->
+<g fill="#ffffff" stroke="#1565c0" stroke-width="1.5">
+<rect x="30" y="90" width="230" height="120" rx="6"/>
+<rect x="300" y="90" width="230" height="120" rx="6"/>
+<rect x="570" y="90" width="230" height="120" rx="6"/>
+<rect x="840" y="90" width="230" height="120" rx="6"/>
+</g>
+<text x="45" y="115" font-size="14" font-weight="bold" fill="#1565c0">1. Log</text>
+<text x="45" y="136" font-size="13" fill="#1a1a1a">body_to_range_pct</text>
+<text x="45" y="152" font-size="13" fill="#1a1a1a">range_vs_atr_ratio</text>
+<text x="45" y="168" font-size="13" fill="#1a1a1a">fvg_present + width</text>
+<text x="45" y="184" font-size="13" fill="#1a1a1a">screenshot trước nến kế</text>
+
+<text x="315" y="115" font-size="14" font-weight="bold" fill="#1565c0">2. Câu hỏi (12)</text>
+<text x="315" y="136" font-size="13" fill="#1a1a1a">PASS/FAIL từng tiêu chí</text>
+<text x="315" y="152" font-size="13" fill="#1a1a1a">MSS chưa tồn tại vs</text>
+<text x="315" y="168" font-size="13" fill="#1a1a1a">không tìm ra (case 4.5)</text>
+<text x="315" y="184" font-size="13" fill="#1a1a1a">tần suất weak đúng</text>
+
+<text x="585" y="115" font-size="14" font-weight="bold" fill="#1565c0">3. Rubric A-F</text>
+<text x="585" y="136" font-size="13" fill="#1a1a1a">A: 11-12 PASS</text>
+<text x="585" y="152" font-size="13" fill="#1a1a1a">B: 8-10 PASS</text>
+<text x="585" y="168" font-size="13" fill="#1a1a1a">C: 5-7 PASS</text>
+<text x="585" y="184" font-size="13" fill="#1a1a1a">F: 0-4 PASS</text>
+
+<text x="855" y="115" font-size="14" font-weight="bold" fill="#1565c0">4. Hành động</text>
+<text x="855" y="136" font-size="13" fill="#1a1a1a">A: tiếp tục, thu ngộng</text>
+<text x="855" y="152" font-size="13" fill="#1a1a1a">B: thêm bước dừng</text>
+<text x="855" y="168" font-size="13" fill="#1a1a1a">C: tạm ngừng, backtest</text>
+<text x="855" y="184" font-size="13" fill="#1a1a1a">F: cấm dùng MSS entry</text>
+
+<line x1="260" y1="150" x2="300" y2="150" stroke="#1565c0" stroke-width="2" marker-end="url(#a2)"/>
+<line x1="530" y1="150" x2="570" y2="150" stroke="#1565c0" stroke-width="2" marker-end="url(#a2)"/>
+<line x1="800" y1="150" x2="840" y2="150" stroke="#1565c0" stroke-width="2" marker-end="url(#a2)"/>
+<defs>
+<marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 z" fill="#1565c0"/>
+</marker>
+</defs>
+
+<!-- red flags -->
+<rect x="30" y="250" width="1040" height="220" rx="8" fill="#c62828" fill-opacity="0.08" stroke="#c62828"/>
+<text x="50" y="278" font-size="16" font-weight="bold" fill="#c62828">Red flags (tự lừa dối thường gặp)</text>
+<text x="50" y="304" font-size="13" fill="#1a1a1a">- Vẽ lại FVG sau khi biết kết quả (không có screenshot trước)</text>
+<text x="50" y="326" font-size="13" fill="#1a1a1a">- Chỉ log các cú displacement đẹp, bỏ qua các lần weak đã bỏ qua</text>
+<text x="50" y="348" font-size="13" fill="#1a1a1a">- Định nghĩa off-session bị xê dịch theo kết quả lệnh thắng/thua</text>
+<text x="50" y="370" font-size="13" fill="#1a1a1a">- Gộp MSS chưa tồn tại với tìm không ra để biện minh bỏ qua setup</text>
+<text x="50" y="392" font-size="13" fill="#1a1a1a">- Hạ ngưỡng ATR/body-to-range dần theo thời gian để vào lệnh</text>
+<text x="50" y="418" font-size="13" fill="#1a1a1a">- Meta-audit: Tier 0, 0 mẫu backtest dẫn chứng cho ngưỡng cụ thể</text>
+<text x="50" y="440" font-size="13" fill="#1a1a1a">- Cần 30 mẫu backtest độc lập để nâng tier lên Tier 1</text>
+
+<!-- cadence -->
+<rect x="30" y="490" width="1040" height="220" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+<text x="50" y="518" font-size="16" font-weight="bold" fill="#1a1a1a">Nhịp Audit</text>
+<text x="50" y="546" font-size="13" fill="#1a1a1a">Sau mỗi lệnh: ghi điểm 5 tiêu chí TRƯỚC khi xem nến kế tiếp</text>
+<text x="50" y="570" font-size="13" fill="#1a1a1a">Hàng tuần: đối chiếu winrate theo nhóm strong/medium/weak/none</text>
+<text x="50" y="594" font-size="13" fill="#1a1a1a">Hàng tháng: rà soát context_override và vùng xám 2-3/5 điểm</text>
+<text x="50" y="622" font-size="13" fill="#1a1a1a">Auditor: chính trader (self-audit ngay sau lệnh, có screenshot trước)</text>
+<text x="50" y="646" font-size="13" fill="#1a1a1a">+ checklist 5 tiêu chí (auditor tự động, không cảm xúc)</text>
+<text x="50" y="670" font-size="13" fill="#1a1a1a">+ review tuần/tháng đối chiếu dữ liệu tổng hợp</text>
+</svg>

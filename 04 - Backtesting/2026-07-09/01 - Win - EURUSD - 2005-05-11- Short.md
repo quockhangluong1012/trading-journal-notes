@@ -322,6 +322,149 @@ Ngày 04/05 giá displacement tăng tạo **Bullish FVG**; ngày 06/05 giá disp
 
 ---
 
+---
+
+## 9. Phân tích chuyên sâu bổ sung (2026-08-03)
+
+![[EURUSD-20050511-bpr-premium-sweep.svg|760]]
+
+### 9.1. Bản đồ liquidity IRL ↔ ERL tại thời điểm entry
+
+- **POI = BPR (Balance Price Range) H1** — 2 FVG đối nghịch chồng lên nhau, tự thân là IRL. CE = 1.29034 (ghi trong note; tính lại trung điểm hình học của FVG bounds 1.29884/1.27889 cho ra 1.28886 — **lệch ~14.8 pip so với ce_price ghi trong frontmatter**, xem O2 mục 10 để phân tích). Dù dùng số nào, cả hai đều nằm trong Premium của dealing range H1 (High 1.29884 / Low 1.27889 → EQ = 1.28887) — vị trí phía so với midpoint không đổi.
+- **Pool đã bị lấy trước entry**: sweep buy-side qua CE BPR + EQH 1.28912 — đây là **ERL** (external, có tên cụ thể: EQH). Đúng chuẩn "named level" mà 07-08/01 còn thiếu.
+- **SL 1.29117 nằm ở đâu so với pool tiếp theo phía trên?** Không có mô tả về pool BSL cụ thể nào nằm giữa SL và cạnh trên BPR (1.29884) trong note — đây là khoảng trống dữ liệu. Không đủ căn cứ để xác nhận SL có nằm "trong đường đi tới pool chưa quét" hay không (khác 07-10/02, nơi dữ liệu này rõ). Không suy diễn thêm.
+- **Draw ngắn hạn**: SSL = EQL 1.28238 + old low trung gian 1.28116 + Dealing Range Low — đây là pool phía **cùng hướng với TP**, không cùng phía SL. Đây chính xác là điều kiện ngược với lỗi ở 07-10/02 (nơi draw ngắn hạn ngược hướng, cùng phía SL) — một minh chứng thực tế "tốt" cho khái niệm draw gate.
+
+### 9.2. Chất lượng displacement/MSS theo canon
+
+- Cả 2 lớp FVG tạo BPR đều sinh ra từ nến displacement thân lớn (04/05 bullish, 06/05 bearish) — đạt chuẩn "expansion một chiều, để lại imbalance" (SKILL.md § Displacement). MSS trên M5 phá higher low gần nhất, tách bạch đúng với Sweep (đã tự sửa lỗi nhãn Sweep/MSS ở mục 4).
+
+### 9.3. Yếu tố thời gian
+
+- Session New York AM là **suy luận** (note tự nhận, không có mốc giờ gốc) → không đủ để chấm `in_macro_time`, đã để trống đúng cách. Tốc độ resolve: không có timestamp entry→TP cụ thể để đo, chỉ biết có partial TP + runner. Không suy diễn thêm số giờ.
+
+### 9.4. Vị trí entry trong dealing range
+
+- Entry 1.28878 trong range H1 [1.27889, 1.29884]: vị trí = (1.28878-1.27889)/(1.29884-1.27889) ≈ 49.5% — **gần đúng giữa range**, không phải Premium sâu như OTE 0.618-0.786 đòi hỏi. Đây khớp với việc note tự nhận `poi_in_ote: No`. Điểm mạnh không đến từ vị trí Fib mà từ cấu trúc BPR (2 FVG chồng), đúng như ghi chú "OTE chỉ là điểm cộng khi có, không phải điều kiện bắt buộc" — nhất quán nội bộ.
+
+### 9.5. So sánh với lệnh khác cùng mẫu trong vault
+
+- **[[03 - Win - EURUSD - 2021-07-22 - Long]]** — cùng entry_type CE, cùng follow đủ 7 bước, nhưng POI rank thấp hơn (FVG đơn, rank 1) mà vẫn Grade B; note này rank BPR (ngoài thang, ước lượng giữa 1-2) nhưng Grade A — chênh lệch grade giữa hai lệnh không đến từ rank POI mà từ chất lượng GATE + kỷ luật, khớp với ghi chú tại mục 5 của cả hai note.
+- **[[01 - Win - EURUSD - 2021-05-03 - Short]]** (Unicorn, note 07-10/01) — cùng hướng Short, cùng chờ đủ chuỗi 7 bước, nhưng POI rank cao hơn hẳn (Unicorn = 5/5). Cả hai đều win — không đủ mẫu (n=2) để nói rank POI quan trọng hay không so với kỷ luật chờ chuỗi.
+
+---
+
+## 10. Phản biện chuyên sâu (Devil's Advocate)
+
+```yaml
+mode: REVIEW
+instrument: EURUSD
+date: 2005-05-11
+timeframes_provided: "D1/H4, H1, M5 — chỉ mô tả tường thuật + 3 ảnh PNG không đọc được"
+verdict: SURVIVES, WEAKENED
+evidence_sufficiency: thin
+opposite_case_strength: weaker but non-trivial
+objections: {fatal: 0, material: 2, minor: 2}
+```
+
+**0. Evidence base.** Không có chart đọc được (3 PNG không truy cập nội dung). Fact base = tường thuật + frontmatter. Vì đây là lệnh Win/Grade A, mặc định nghi hindsight cao hơn (theo brief) — cần săn kỹ outcome-as-evidence.
+
+**1. Thesis + load-bearing claim.**
+- C1: D1 bias Bearish (LH/LL, nhịp hồi tạo 1 nến displacement lớn).
+- C2: H1 hình thành BPR (Bullish FVG 04/05 bị Bearish FVG 06/05 xuyên) nằm trong Premium.
+- C3 **(load-bearing)**: Giá retrace về CE BPR, sweep buy-side (CE + EQH 1.28912) rồi bật giảm với displacement + MSS trên M5, tạo FVG entry hợp lệ.
+- C4: Entry tại CE FVG M5 = 1.28878, đúng chuỗi 7 bước, không chase.
+- C5: Kết quả Win, r_multiple 2.85 (blended, đã tự sửa từ 3.03 sai).
+
+Load-bearing claim: **C3** — toàn bộ Grade A phụ thuộc vào sweep+displacement+MSS trên M5 thật sự xảy ra TRƯỚC entry, không phải được kể lại sau khi biết kết quả thắng.
+
+**2. What survives.** C1, C2 không bị tranh chấp — cấu trúc BPR + Premium là mô tả nhất quán, không cần thông tin tương lai để xác định.
+
+**3. Objections**
+
+**O1 · [HINDSIGHT] · material · attacks C3 (load-bearing)**
+Claim: "Cây nến thân lớn lấp FVG khiến bạn lo lắng thực chất là dấu hiệu repricing mạnh (bullish cho luận điểm Short), không phải mối đe doạ" (mục 7.1, cơ chế thị trường).
+Fails: đây là diễn giải được viết SAU khi biết lệnh thắng. Tại thời điểm entry, chính note tự ghi "tâm lý khi vào lệnh lúc đó hơi lo khi cây nến retrace về FVG là 1 nến lớn" — nỗi lo là fact tại thời điểm quyết định; câu giải thích "đó là dấu hiệu tốt" chỉ được khẳng định chắc chắn sau khi giá đã đi đúng hướng.
+Evidence: mục 3 (nỗi lo tại thời điểm entry) vs mục 7.1 (diễn giải post-hoc khẳng định chắc).
+Consequence: nếu coi "nến lớn lấp FVG = dấu hiệu tốt" là một rule tổng quát rút ra từ đây, đó là outcome-as-evidence — cùng một nến lớn lấp FVG có thể là dấu hiệu absorption thất bại nếu lệnh thua ở case khác.
+Your best answer: "invalidation rõ ràng đã định trước (đóng qua cạnh trên BPR) — nến lớn không phải invalidation, nên không có lý do dừng theo kế hoạch đã lập." Điều này đúng và làm objection **narrow**: nỗi lo không vi phạm invalidation criteria đã định trước, nhưng câu "đó là dấu hiệu bullish cho short" (tích cực hóa) vẫn là điều chỉ có thể nói chắc sau outcome — giữ ở mức material, không fatal vì không đổi hành động entry.
+Retracted by: nếu note có ghi trước một quy tắc khách quan (vd "nến lấp FVG không kèm đóng qua invalidation = tiếp tục giữ lệnh") được viết TRƯỚC lệnh này, objection được retract hoàn toàn.
+
+**O2 · [ARITHMETIC] · material · attacks C2, C4**
+Claim: `ce_price: 1.29034` cho BPR bounds `fvg_high: 1.29884` / `fvg_low: 1.27889`.
+Fails: CE = (1.29884+1.27889)/2 = 1.28886 theo công thức chuẩn CE (SKILL.md/mean threshold), không phải 1.29034. Chênh 14.8 pip.
+Evidence: tính toán trực tiếp từ 2 số đã ghi trong chính frontmatter.
+Consequence: nếu CE thật là 1.28886 (gần EQ range 1.28887 hơn), thì vị trí entry 1.28878 gần CE *đúng* (chênh chỉ 0.08 pip) — thực ra CHẶT hơn note tự nhận, không phải lỗi làm yếu thesis, nhưng cho thấy `ce_price` ghi trong frontmatter (1.29034) là không tự-generate từ bounds mà có thể lấy từ nguồn khác (vd CE nội bộ của chỉ riêng nhánh Bearish FVG 06/05, không phải toàn BPR) — cần minh định nguồn gốc con số.
+Retracted by: xác nhận `ce_price` là CE của BPR toàn phần hay CE riêng của FVG 06/05 — nếu là cái sau, công thức và số đều đúng, chỉ cần ghi rõ trong note.
+
+**O3 · [UNSUPPORTED] · minor** — `confluence_score: 0` nhưng Grade A: hợp lý theo giải thích mục 5 (SCORE đo confluence nâng cao chưa được log thói quen, không phải bằng chứng thiếu chất lượng). Retracted by: không cần, note đã tự giải thích rõ khoảng cách này.
+
+**O4 · [METHOD] · minor** — Partial TP % (50% tại 2.55R) không được định trước bằng rule cụ thể (note tự nhận ở mục 7.3 "chuẩn hoá quy tắc Partial TP" là rule còn thiếu) → r_multiple 2.85 phụ thuộc một phần vào quyết định discretionary tại thời điểm, chưa đủ để coi là thành phần cố định của edge. Retracted by: backtest 20+ lệnh partial-50%-tại-intermediate so với hold-full, xem 7.3 rule đề xuất.
+
+Đã soạn 4, cắt 0 (tất cả qua bộ lọc discharge/consequence/rebuttal — O3, O4 xuống minor vì không đổi kết luận).
+
+**4. Opposite case.** Từ cùng evidence: "Đây thực chất là một lệnh Short hên vì Premium BPR chỉ là một reaction zone tạm, sweep EQH 1.28912 chỉ là internal liquidity nông (giống 07-10/02), và MSS M5 chỉ được xác nhận NHỜ nhìn lại (giá đã giảm) — nếu bối cảnh khác (killzone khác/session khác) chưa chắc sweep đó đủ trọng lượng."
+- Load-bearing của case ngược: "sweep CE BPR + EQH không phải external/structural thật."
+- Tự phản bác: EQH là named level cụ thể (1.28912) đã được xác định TRƯỚC trong Draw on Liquidity (mục 1) — không giống 07-10/02, nơi "cạnh trên OB" không có tên cụ thể trước khi bị coi là sweep. Đây khác biệt định lượng rõ ràng.
+- Strength label: **weaker but non-trivial** — case ngược không thắng được vì thiếu evidence (EQH đã named trước), nhưng chỉ ra rằng nếu EQH này thực ra không quan trọng bằng buy-side khác cao hơn (note không kiểm tra có pool nào cao hơn EQH 1.28912 chưa bị lấy hay không), case ngược có thể mạnh hơn.
+- Distinguishing observable: nếu có một pool BSL named khác nằm giữa entry và SL 1.29117 mà chưa bị lấy tại thời điểm entry — case ngược thắng. Note không cung cấp đủ dữ liệu để loại trừ khả năng này.
+
+**5. Verdict: SURVIVES, WEAKENED.**
+Load-bearing claim C3 (sweep EQH named + displacement + MSS) giữ vững — không tìm được cách phá nó bằng evidence có sẵn. Bị làm yếu bởi O1 (hindsight trong diễn giải tâm lý) và O2 (lệch CE arithmetic 14.8 pip cần minh định nguồn). Điều tôi thất bại không phá được: chuỗi sweep(named EQH)→displacement→MSS→FVG trên M5 đúng trình tự canon. Điều critique này không xác lập: liệu có pool BSL named nào khác cao hơn EQH 1.28912 chưa bị lấy tại thời điểm entry (thiếu dữ liệu để loại trừ hoàn toàn opposite case).
+
+**6. Falsification tests**
+1. Đọc lại 3 ảnh PNG gốc, xác nhận có pool BSL named nào giữa entry và SL 1.29117 không bị đề cập trong tường thuật. Nếu có → nâng opposite case lên equally viable. Đóng phần "distinguishing observable" ở mục 4.
+2. Xác nhận nguồn `ce_price: 1.29034` — hỏi/tra lại xem đây là CE của BPR toàn phần hay của riêng 1 lớp FVG. Đóng O2.
+3. Trước lệnh Short/Long tương tự tiếp theo có "nến lớn lấp FVG gây lo lắng", ghi lại rule khách quan TRƯỚC khi biết outcome (đóng qua invalidation hay không) — nếu 5 case tiếp theo áp dụng đúng rule mà không cần hindsight diễn giải "dấu hiệu tốt/xấu" sau đó, đóng O1.
+
+---
+
+## 11. Doctrine check (ICT 2022 canon)
+
+**Thesis:** Lệnh Short tại CE của Balance Price Range (BPR) H1 trong Premium, sau khi sweep EQH named + displacement + MSS trên M5, đủ chuỗi 7 bước, Win 2.85R.
+
+**Cần sửa** (load-bearing trước):
+- C_CE "ce_price = 1.29034 là CE hợp lệ của BPR" — **AMBIGUOUS** · doctrine (SKILL.md § BPR/CE) không nêu công thức riêng cho CE của BPR (chỉ có CE cho FVG đơn qua Consequent Encroachment) — không rõ 1.29034 tính theo bounds nào → fix: minh định công thức/nguồn số trước khi coi PASS.
+- C_rank "BPR không nằm trong thang poi_rank 1-5 gốc" — note đã tự nhận và để trống, xử lý đúng cách (không tự chế rank).
+
+**PASS:** C1 (D1 Bearish LH/LL), C2 (BPR Premium — SKILL.md § Premium/Discount, đúng theo midpoint EQ 1.28887 tính lại, khớp hướng Premium ghi trong note), C3 (Sweep — SKILL.md § Sweep, có named level EQH 1.28912, đạt evidence bar "level có tên và được dùng"), C4 (MSS — SKILL.md § MSS, phá higher low, tách bạch đúng khỏi Sweep), C5 (Displacement — nến thân lớn, imbalance rõ).
+
+**Verdict:** DOCTRINE ALIGNED — load-bearing claim (sweep+displacement+MSS trình tự) PASS đầy đủ theo canon, không claim nào FAIL/HINDSIGHT ở tầng cấu trúc (chỉ có 1 AMBIGUOUS phụ về công thức CE của BPR — chưa có trong bảng thuật ngữ chuẩn). ALIGNED ở đây nghĩa là đúng luật với evidence đã đưa, không phải xác nhận "sẽ luôn thắng".
+
+**Notes:** Doctrine gap — SKILL.md chưa có mục riêng cho "BPR" (chính note gốc mục info đầu file cũng đã tự đề xuất bổ sung); công thức CE cho BPR (2 FVG chồng) chưa được canon hóa — đề xuất bổ sung định nghĩa: CE của BPR = trung điểm của phần chồng lắp giữa 2 FVG, không phải trung điểm toàn bộ bounds ngoài cùng.
+
+---
+
+## 12. Lesson Learned (bản đầy đủ)
+
+### (a) Bài học kỹ thuật
+
+1. **BPR (2 FVG đối nghịch chồng nhau) là POI mạnh dù không có Fib OTE.** Ví dụ số thật: CE tính lại 1.28886 (hoặc 1.29034 theo note) đều nằm trong Premium của range 1.27889-1.29884 (EQ=1.28887) — sức mạnh không đến từ 0.618-0.786 mà từ chính sự chồng lắp FVG. Tổng quát hóa: với entry model neo FVG/CE (không phải Fibonacci-based), OTE là bonus, không phải điều kiện.
+2. **Sweep phải neo vào named level để tính là external/structural.** Ví dụ số thật: EQH 1.28912 đã được xác định TRƯỚC (trong Draw on Liquidity mục 1), không phải gọi tên sau khi thấy giá phản ứng — đối lập trực tiếp với lỗi ở 07-10/02 (sweep "cạnh trên OB" không tên cụ thể trước).
+
+### (b) Bài học quy trình/checklist
+
+- Note tự phát hiện và sửa 2 lỗi log data (R Multiple 3.03→2.85, nhãn Sweep/MSS bị gộp) TRƯỚC KHI hoàn thiện — đây là hành vi kỷ luật ghi chép tốt, cần nhân rộng làm chuẩn quy trình review trước khi đóng file.
+- `confluence_score: 0` không mâu thuẫn Grade A — bài học meta: SCORE (confluence nâng cao) và GATE (điều kiện cốt lõi) là 2 thước đo độc lập, không nên gộp lẫn khi đọc dashboard.
+
+### (c) Bài học tâm lý-hành vi
+
+- Nỗi lo tại thời điểm entry ("hơi lo khi cây nến retrace về FVG là 1 nến lớn") được note xử lý ĐÚNG cách: không hành động theo cảm giác, chỉ hành động khi vi phạm invalidation đã định trước. Đây là hành vi kỷ luật cần nhân rộng — đối lập với 07-08/01 nơi cảm giác FOMO thắng invalidation criteria.
+- Rủi ro hindsight: diễn giải "nến lớn lấp FVG là dấu hiệu tốt" (mục 7.1) chỉ nói được chắc chắn SAU khi biết outcome — cần tách rõ "cảm giác tại thời điểm" (lo lắng, đúng) và "diễn giải sau khi biết kết quả" (dấu hiệu tốt, cần cẩn trọng) trong lần viết note tiếp theo.
+
+### (d) Rule đề xuất cho Playbook
+
+- [ ] Định nghĩa công thức CE cho BPR = trung điểm phần chồng lắp giữa 2 FVG, khác với CE của FVG đơn — bổ sung vào từ vựng chuẩn `poi_type`.
+- [ ] Mọi claim "sweep" phải trỏ tới named level (EQH/EQL/PDH/PDL/OB cụ thể) được xác định TRƯỚC khi entry, không phải gọi tên sau khi thấy phản ứng giá.
+- [ ] Khi ghi lại tâm lý tại thời điểm entry, tách 2 trường riêng: "cảm giác lúc đó" và "diễn giải sau kết quả" — không gộp một câu.
+- [ ] Chuẩn hoá % và mức partial TP TRƯỚC khi vào lệnh (xem rule đã đề xuất ở mục 7.3 gốc).
+
+### (e) Điều KHÔNG nên học từ lệnh này
+
+- KHÔNG nên kết luận "nến lớn lấp FVG luôn là dấu hiệu tốt cho hướng lệnh" — đây là outcome-as-evidence điển hình (O1). Nến lớn lấp FVG chỉ có ý nghĩa trong bối cảnh không vi phạm invalidation đã định trước, không phải một quy tắc dự đoán hướng độc lập.
+- KHÔNG nên coi Grade A + Win + đủ chuỗi 7 bước là bằng chứng rằng CE của BPR luôn tính đúng theo công thức trung điểm bounds toàn phần — số liệu ce_price trong note (1.29034) không khớp phép tính (1.28886), cần làm rõ trước khi dùng làm chuẩn cho các BPR khác.
+
+
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]

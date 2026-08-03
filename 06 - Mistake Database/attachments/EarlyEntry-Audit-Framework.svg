@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" width="1100" height="700" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="700" fill="#ffffff"/>
+  <text x="30" y="36" font-size="22" font-weight="bold" fill="#1a1a1a">Audit Framework — Entry Before Sweep</text>
+  <text x="30" y="58" font-size="13" fill="#555">Pipeline từ log đủ field đến hành động cụ thể, kèm khối red flags</text>
+
+  <rect x="30" y="80" width="230" height="130" rx="8" fill="#e3f2fd" stroke="#1565c0"/>
+  <text x="45" y="104" font-size="13" font-weight="bold" fill="#1565c0">1. Log fields</text>
+  <text x="45" y="124" font-size="11.5" fill="#333">pool_status_at_entry,</text>
+  <text x="45" y="140" font-size="11.5" fill="#333">sweep_pip_distance,</text>
+  <text x="45" y="156" font-size="11.5" fill="#333">close_back_inside_pct,</text>
+  <text x="45" y="172" font-size="11.5" fill="#333">mss_present,</text>
+  <text x="45" y="188" font-size="11.5" fill="#333">is_continuation_entry...</text>
+
+  <path d="M 260 145 L 290 145" stroke="#1565c0" stroke-width="2" marker-end="url(#a1)"/>
+
+  <rect x="295" y="80" width="230" height="130" rx="8" fill="#e3f2fd" stroke="#1565c0"/>
+  <text x="310" y="104" font-size="13" font-weight="bold" fill="#1565c0">2. 12 câu PASS/FAIL</text>
+  <text x="310" y="124" font-size="11.5" fill="#333">Pool sweep trước entry?</text>
+  <text x="310" y="140" font-size="11.5" fill="#333">MSS thật, không chỉ phản</text>
+  <text x="310" y="156" font-size="11.5" fill="#333">ứng giá? Continuation đủ</text>
+  <text x="310" y="172" font-size="11.5" fill="#333">3 guardrail? Kill zone?</text>
+  <text x="310" y="188" font-size="11.5" fill="#333">Không sửa log hồi tố?</text>
+
+  <path d="M 525 145 L 555 145" stroke="#f9a825" stroke-width="2" marker-end="url(#a2)"/>
+
+  <rect x="560" y="80" width="230" height="130" rx="8" fill="#fff8e1" stroke="#f9a825"/>
+  <text x="575" y="104" font-size="13" font-weight="bold" fill="#3a2c00">3. Rubric A-F</text>
+  <text x="575" y="124" font-size="11.5" fill="#3a2c00">A: 11-12 PASS</text>
+  <text x="575" y="140" font-size="11.5" fill="#3a2c00">B: 9-10 PASS</text>
+  <text x="575" y="156" font-size="11.5" fill="#3a2c00">C: 6-8 PASS</text>
+  <text x="575" y="172" font-size="11.5" fill="#3a2c00">F: ≤5 PASS</text>
+  <text x="575" y="188" font-size="11.5" fill="#3a2c00">(trên 12 câu)</text>
+
+  <path d="M 790 145 L 820 145" stroke="#2e7d32" stroke-width="2" marker-end="url(#a3)"/>
+
+  <rect x="825" y="80" width="245" height="130" rx="8" fill="#e8f5e9" stroke="#2e7d32"/>
+  <text x="840" y="104" font-size="13" font-weight="bold" fill="#2e7d32">4. Hành động</text>
+  <text x="840" y="124" font-size="11.5" fill="#333">A: tiếp tục, review sau 20</text>
+  <text x="840" y="140" font-size="11.5" fill="#333">B: siết định nghĩa sweep</text>
+  <text x="840" y="156" font-size="11.5" fill="#333">C: dừng continuation excep.</text>
+  <text x="840" y="172" font-size="11.5" fill="#333">F: cấm entry OB/FVG mới</text>
+  <text x="840" y="188" font-size="11.5" fill="#333">tới khi đạt B+ x10 lệnh</text>
+
+  <rect x="30" y="235" width="1040" height="180" rx="8" fill="#fdecea" stroke="#c62828"/>
+  <text x="50" y="262" font-size="15" font-weight="bold" fill="#c62828">Red flags khi audit</text>
+  <text x="50" y="288" font-size="12.5" fill="#333">• Vẽ pool sau khi biết kết quả — đánh dấu equal highs/lows SAU khi đã thấy giá đảo chiều.</text>
+  <text x="50" y="310" font-size="12.5" fill="#333">• Semi-sweep ghi nhận là full sweep — ảnh cho thấy còn mức đáy/đỉnh cạnh tranh chưa bị chạm.</text>
+  <text x="50" y="332" font-size="12.5" fill="#333">• sweep_pip_distance luôn ở ngưỡng tối thiểu vừa đủ pass — dấu hiệu định nghĩa bị co giãn.</text>
+  <text x="50" y="354" font-size="12.5" fill="#333">• Continuation entry dùng &gt;30% lệnh trong log — ngoại lệ đang bị lạm dụng làm quy tắc chính.</text>
+  <text x="50" y="380" font-size="12.5" font-weight="bold" fill="#7a1a1a">Nếu ≥2 red flags xuất hiện cùng lúc trong 10 lệnh gần nhất → hạ rubric 1 bậc bất kể điểm PASS.</text>
+
+  <rect x="30" y="430" width="510" height="150" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="50" y="455" font-size="14" font-weight="bold" fill="#1a1a1a">Meta-audit chính note này</text>
+  <text x="50" y="478" font-size="12" fill="#333">Evidence tier: Tier 0. Bảng định lượng §11.3</text>
+  <text x="50" y="496" font-size="12" fill="#333">là mô phỏng, không phải backtest thật.</text>
+  <text x="50" y="514" font-size="12" fill="#333">Sample size: 1 trade log tham chiếu duy nhất.</text>
+  <text x="50" y="536" font-size="12" fill="#333">Cần n≥20 lệnh đủ 10 field, tách nhóm sweep</text>
+  <text x="50" y="554" font-size="12" fill="#333">chuẩn/continuation/vi phạm để nâng tier.</text>
+
+  <rect x="560" y="430" width="510" height="150" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="580" y="455" font-size="14" font-weight="bold" fill="#1a1a1a">Nhịp audit</text>
+  <text x="580" y="478" font-size="12" fill="#333">Hàng ngày: đối chiếu pool status, MSS,</text>
+  <text x="580" y="496" font-size="12" fill="#333">kill zone cuối phiên.</text>
+  <text x="580" y="514" font-size="12" fill="#333">Hàng tuần: chạy đủ 12 câu, theo dõi tỷ lệ</text>
+  <text x="580" y="532" font-size="12" fill="#333">continuation_entry có tăng bất thường.</text>
+  <text x="580" y="554" font-size="12" fill="#333">Hàng tháng: so sánh winrate 3 nhóm entry.</text>
+
+  <defs>
+    <marker id="a1" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1565c0"/></marker>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#f9a825"/></marker>
+    <marker id="a3" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2e7d32"/></marker>
+  </defs>
+
+  <rect x="30" y="600" width="1040" height="80" rx="8" fill="#e3f2fd" stroke="#1565c0"/>
+  <text x="50" y="625" font-size="12" font-weight="bold" fill="#1565c0">Auditor</text>
+  <text x="50" y="645" font-size="12" fill="#333">Bản thân (dựa số đo được, không cảm nhận) + kiểm tra chéo với note 03 (POI validity) + review định kỳ.</text>
+  <text x="50" y="663" font-size="12" fill="#333">Không chỉnh sửa log sau khi biết kết quả — đối chiếu timestamp bắt buộc.</text>
+</svg>

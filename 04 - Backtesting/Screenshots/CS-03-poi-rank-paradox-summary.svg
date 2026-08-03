@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="28" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1a1a">Nghich ly POI rank - thang 8.1 vs ket qua thuc te</text>
+  <text x="450" y="48" text-anchor="middle" font-size="12" fill="#666">POI "cao cap" (Breaker, Rejection Block) thua; POI "co ban" (FVG, OB) thang nhieu nhat</text>
+
+  <!-- Ranking ladder left -->
+  <text x="150" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#333">Thang POI rank (SKILL.md 8.1)</text>
+  <rect x="60" y="95" width="180" height="30" fill="#eafaf1" stroke="#1e8449"/>
+  <text x="150" y="115" text-anchor="middle" font-size="11" fill="#1e8449">1. FVG (co ban nhat)</text>
+  <rect x="60" y="130" width="180" height="30" fill="#eafaf1" stroke="#1e8449"/>
+  <text x="150" y="150" text-anchor="middle" font-size="11" fill="#1e8449">2. Order Block</text>
+  <rect x="60" y="165" width="180" height="30" fill="#fdf2f0" stroke="#c0392b"/>
+  <text x="150" y="185" text-anchor="middle" font-size="11" fill="#c0392b">3. Breaker Block</text>
+  <rect x="60" y="200" width="180" height="30" fill="#fdf2f0" stroke="#c0392b"/>
+  <text x="150" y="220" text-anchor="middle" font-size="11" fill="#c0392b">3b. Rejection Block</text>
+  <rect x="60" y="235" width="180" height="30" fill="#eafaf1" stroke="#1e8449"/>
+  <text x="150" y="255" text-anchor="middle" font-size="11" fill="#1e8449">4. IFVG / Unicorn (cao cap nhat)</text>
+  <text x="150" y="278" text-anchor="middle" font-size="10" fill="#888">(gia dinh: cao cap = it false-positive hon)</text>
+
+  <!-- Result table right -->
+  <text x="670" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#333">Ket qua thuc te (22 lenh)</text>
+  <rect x="500" y="95" width="340" height="30" fill="#eafaf1" stroke="#1e8449"/>
+  <text x="510" y="115" font-size="11" fill="#1e8449">FVG: 8W / 1L</text>
+  <rect x="500" y="130" width="340" height="30" fill="#eafaf1" stroke="#1e8449"/>
+  <text x="510" y="150" font-size="11" fill="#1e8449">Order Block: 6W / 2L</text>
+  <rect x="500" y="165" width="340" height="30" fill="#fdf2f0" stroke="#c0392b"/>
+  <text x="510" y="185" font-size="11" fill="#c0392b">Breaker Block: 0W / 1L  (100% Loss)</text>
+  <rect x="500" y="200" width="340" height="30" fill="#fdf2f0" stroke="#c0392b"/>
+  <text x="510" y="220" font-size="11" fill="#c0392b">Rejection Block: 0W / 1L  (100% Loss)</text>
+  <rect x="500" y="235" width="340" height="30" fill="#eafaf1" stroke="#1e8449"/>
+  <text x="510" y="255" font-size="11" fill="#1e8449">Unicorn/IFVG: 2W / 0L</text>
+
+  <!-- arrow connecting -->
+  <line x1="240" y1="180" x2="500" y2="180" stroke="#e67e22" stroke-width="2" stroke-dasharray="6 3"/>
+  <polygon points="500,180 490,175 490,185" fill="#e67e22"/>
+  <text x="370" y="172" text-anchor="middle" font-size="10" fill="#e67e22" font-weight="700">NGUOC KY VONG</text>
+
+  <!-- Two hypotheses -->
+  <rect x="30" y="310" width="405" height="200" fill="#eef6fb" stroke="#2980b9"/>
+  <text x="232" y="332" text-anchor="middle" font-size="12" font-weight="700" fill="#2471a3">Gia thuyet A: khai niem yeu</text>
+  <text x="50" y="355" font-size="10" fill="#333">Breaker/RB von la khai niem</text>
+  <text x="50" y="370" font-size="10" fill="#333">kem tin cay hon FVG/OB trong</text>
+  <text x="50" y="385" font-size="10" fill="#333">ICT 2022 Model, bat ke ai dung.</text>
+  <text x="50" y="405" font-size="10" fill="#c0392b" font-weight="700">Khong co canh tranh doctrine</text>
+  <text x="50" y="420" font-size="10" fill="#c0392b" font-weight="700">ho tro gia thuyet nay ro rang.</text>
+  <text x="50" y="445" font-size="10" fill="#333">n=1 mỗi loai -> khong the</text>
+  <text x="50" y="460" font-size="10" fill="#333">phan biet khoi nhieu ngau nhien.</text>
+
+  <rect x="465" y="310" width="405" height="200" fill="#fdf6e3" stroke="#b7950b"/>
+  <text x="667" y="332" text-anchor="middle" font-size="12" font-weight="700" fill="#7d6608">Gia thuyet B: quy trinh gan nhan long</text>
+  <text x="485" y="355" font-size="10" fill="#333">Ca 2 lenh Loss deu THIEU chuoi</text>
+  <text x="485" y="370" font-size="10" fill="#333">su kien bat buoc (xem CS-01/</text>
+  <text x="485" y="385" font-size="10" fill="#333">Master Lesson bai hoc #4).</text>
+  <text x="485" y="405" font-size="10" fill="#7d6608" font-weight="700">RB: invalidation ghi 1304.109</text>
+  <text x="485" y="420" font-size="10" fill="#7d6608" font-weight="700">nhung SL that = 1302.715 (lech 1.4)</text>
+  <text x="485" y="445" font-size="10" fill="#333">Neu dung, van de la CACH GAN</text>
+  <text x="485" y="460" font-size="10" fill="#333">NHAN, khong phai ban chat khai niem.</text>
+
+  <text x="450" y="535" text-anchor="middle" font-size="11" fill="#555" font-weight="700">n=1 moi nhom rank cao -> UNSUPPORTED de ket luan theo ca hai chieu. Can n>=10/nhan truoc khi phan xu.</text>
+</svg>

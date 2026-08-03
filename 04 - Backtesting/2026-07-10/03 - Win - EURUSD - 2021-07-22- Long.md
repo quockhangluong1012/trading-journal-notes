@@ -317,6 +317,152 @@ Kỷ luật **data-integrity của file backtest** chưa chặt: metadata và m�
 
 ---
 
+---
+
+## 9. Phân tích chuyên sâu bổ sung (2026-08-03)
+
+![[EURUSD-20210722-fvg-discount-killzone.svg|760]]
+
+### 9.1. Bản đồ liquidity IRL ↔ ERL tại thời điểm entry
+
+- **POI = FVG H1 đơn (1.17966-1.17601)**, rank thấp nhất trong thang (1/5, không OB/Breaker đi kèm) — IRL của bản thân FVG. CE tính lại = (1.17966+1.17601)/2 = 1.17784, khớp chính xác với `ce_price` ghi trong note — arithmetic sạch, không discrepancy.
+- **Draw on Liquidity đã map**: Buy-side D1 Dealing Range High = 1.22649; Sell-side = chính H1 FVG này + D1 Dealing Range Low 1.17054. Đây là named levels rõ ràng, xác định TRƯỚC entry theo mục 1.
+- **Vấn đề tự phát hiện (đã có ở mục 7.1 gốc, không lặp lại chi tiết)**: TP 1.18244 KHÔNG trùng với bất kỳ named level nào trong Draw on Liquidity đã map (không phải 1.18956 H1 range high, không phải 1.22649 D1 range high) — TP gần equilibrium H1 (~1.18005) hơn. Đây là khoảng trống giữa **kế hoạch đã map** và **TP thực đặt** — về mặt liquidity map, TP là một điểm nội bộ (internal), không phải một ERL pool có tên.
+- **SL 1.17698 nằm ở đâu so với pool phía dưới?** Nằm trên D1 Dealing Range Low (1.17054) — không nằm trong đường đi trực tiếp tới SSL lớn hơn phía dưới chưa quét, tức SL không phải "nam châm" cho một sweep tiếp — điểm khác biệt tích cực so với 07-10/02 (nơi SL nằm đúng đường đi tới BSL chưa quét).
+
+### 9.2. Chất lượng displacement/MSS
+
+- Note tự ghi rõ: BOS bullish D1 (21/05) → FVG H1 hình thành → giá pullback sâu về Discount cực đại → nhiều nến wick quét cạnh dưới FVG nhưng đóng lại bên trong (hấp thụ sell-side, chưa displacement giảm) → cuối cùng displacement + MSS xác nhận trên M5 tại đúng NY AM Kill Zone. Đây đạt chuẩn SKILL.md § Displacement + § MSS về mặt mô tả tường thuật — không có mâu thuẫn nội bộ.
+
+### 9.3. Yếu tố thời gian
+
+- Session được suy ra từ **mốc giờ cụ thể đã ghi** (19:10 giờ VN = UTC+7 → ~08:10 ET mùa hè) → New York AM Kill Zone — đây là suy luận có căn cứ (có giờ cụ thể), khác hẳn 2 note trước phải để trống vì thiếu giờ. Đạt evidence bar SKILL.md § Killzone/Time ("chỉ mark từ trục thời gian nhìn thấy được hoặc giờ người dùng nêu").
+
+### 9.4. Vị trí entry trong dealing range
+
+- Dealing range D1/H1: High 1.18956 / Low 1.17054 → EQ = 1.18005. Entry 1.17841 nằm DƯỚI EQ (Discount), đúng phía cho Long. Vị trí trong range = (1.17841-1.17054)/(1.18956-1.17054) ≈ 41.4% — Discount vừa phải, không sâu cực đại như note tự mô tả ở mục 7.4 ("pullback sâu về gần đáy dealing range") — cần phân biệt: "sâu về gần đáy" trong tường thuật có thể mô tả hành vi giá TRƯỚC khi bật lên (test sâu hơn rồi hồi), không nhất thiết mâu thuẫn với entry cuối cùng ở 41.4%.
+
+### 9.5. So sánh với lệnh khác cùng mẫu trong vault
+
+- **[[02 - Win - EURUSD - 2005-05-11 - Short]]** (07-09/01) — cùng đủ chuỗi 7 bước, cùng sweep named level, nhưng khác hướng và khác POI (BPR vs FVG đơn). Cả hai đều chứng minh: POI rank không quyết định outcome bằng kỷ luật thực thi đúng chuỗi.
+- **[[01 - Win - EURUSD - 2021-05-03 - Short]]** (07-10/01, Unicorn) — đối lập trực tiếp về POI rank (5/5 Unicorn vs 1/5 FVG đơn ở đây), cùng Win. Đây là cặp so sánh tốt nhất trong batch để kiểm định giả thuyết "POI rank cao hơn → chất lượng cao hơn": note này (rank 1) đạt RR khớp chính xác (2.818 tính lại vs 2.86 ghi, chênh <0.05R), trong khi note 07-10/01 (rank 5, Unicorn) có RR lệch lớn nhất batch (2.123 tính lại vs 3.075 ghi, chênh ~1R) — gợi ý (không kết luận, n=2) rằng độ phức tạp cấu trúc cao hơn không đồng nghĩa log chính xác hơn.
+- **[[03 - Loss- EURUSD - 2021-05-07- Short]]** (07-10/02) — đối lập rõ nhất: TP ở đây (07-10/03) tuy không neo named level nhưng SL không nằm trong đường đi tới pool chưa quét; TP+SL ở 07-10/02 đều có vấn đề định vị theo draw. Sự khác biệt về SL location (không phải TP) có thể là yếu tố phân biệt Win/Loss quan trọng hơn TP-precision.
+
+---
+
+## 10. Phản biện chuyên sâu (Devil's Advocate)
+
+```yaml
+mode: REVIEW
+instrument: EURUSD
+date: 2021-07-22
+timeframes_provided: "D1/H4, H1, M5 — mô tả tường thuật chi tiết, không có PNG được nhắc trong note này"
+verdict: SURVIVES THIS ATTACK
+evidence_sufficiency: partial
+opposite_case_strength: weaker but non-trivial
+objections: {fatal: 0, material: 2, minor: 2}
+```
+
+**0. Evidence base.** Không có ảnh PNG được nhắc trong note (khác các note khác trong batch) — toàn bộ evidence là tường thuật + frontmatter, khá chi tiết và có mốc giờ cụ thể (hiếm trong batch này). Vì đây là Win Grade B, mặc định nghi hindsight — cần săn kỹ, nhưng ghi nhận note đã tự làm việc này khá tốt ở mục 7 gốc (mục "Sample & Hindsight Bias").
+
+**1. Thesis + load-bearing claim.**
+- C1: D1 Bias Bullish, BOS bullish 21/05 xác nhận.
+- C2: FVG H1 (1.17966-1.17601) hình thành làm Discount POI cho continuation.
+- C3: Giá pullback về FVG, nhiều wick quét cạnh dưới nhưng đóng lại bên trong (hấp thụ sell-side).
+- C4 **(load-bearing)**: Displacement + MSS xác nhận trên M5 TRƯỚC entry, tại đúng NY AM Kill Zone (08:10 ET), theo đúng trình tự 7 bước — không phải nhận diện sau khi biết outcome.
+- C5: Entry tại CE FVG = 1.17841, đúng kế hoạch.
+- C6: TP 1.18244 không neo named level đã map (tự nhận, mục 7.1).
+- C7: Kết quả Win, 2.86R.
+
+Load-bearing: **C4** — đây là claim duy nhất có rủi ro hindsight cao nhất (Win + đủ chuỗi + Grade B "quá đẹp" luôn cần săm soi kỹ theo brief).
+
+**2. What survives.** C1, C2, C3, C6 không tranh chấp — BOS D1, cấu trúc FVG, hành vi wick hấp thụ, và chính điểm yếu TP đã được note tự nhận trung thực, không cần đối kháng thêm.
+
+**3. Objections**
+
+**O1 · [HINDSIGHT] · material · attacks C4 (load-bearing)**
+Claim: "nhiều nến wick quét cạnh dưới FVG nhưng đóng lại bên trong = dấu hiệu smart money hấp thụ sell-side liquidity, chưa cho displacement giảm" (mục 7.4).
+Fails một phần: đây là diễn giải CÓ THỂ đúng tại thời điểm quan sát (wick-reject là hành vi giá khách quan, không cần biết tương lai để mô tả), nhưng câu kết luận "chưa cho displacement giảm" ngầm giả định người quan sát đã biết trước displacement tăng sẽ xảy ra sau đó — cần phân biệt "quan sát hành vi" (không hindsight) khỏi "diễn giải ý nghĩa hành vi đó là tín hiệu tốt" (rủi ro hindsight nhẹ, vì wick-reject có thể là dấu hiệu hấp thụ HOẶC dấu hiệu yếu ớt trước một breakdown, tùy diễn giải).
+Evidence: mục 7.4, câu mô tả liền mạch không tách rõ 2 tầng (quan sát vs diễn giải ý nghĩa).
+Consequence: nếu tách đúng, câu quan sát ("wick quét rồi đóng lại trong") là fact hợp lệ real-time; câu diễn giải ("đây là hấp thụ, không phải yếu") chỉ chắc chắn SAU khi giá đã tăng — không đổi hành động entry (đã có MSS+displacement M5 xác nhận riêng, C4 vẫn đứng), nên material chứ không fatal.
+Your best answer: entry trigger thực tế không dựa vào diễn giải "hấp thụ" này mà dựa vào chuỗi MSS+displacement+FVG trên M5 xảy ra SAU đó — nghĩa là dù diễn giải wick có đúng hay sai, nó không phải là điều kiện entry, chỉ là bối cảnh mô tả thêm. Objection do đó **narrows xuống vấn đề trình bày**, không phải vấn đề entry logic.
+Retracted by: nếu note tách rõ 2 câu (quan sát hành vi wick vs ý nghĩa diễn giải) trong lần viết tiếp theo.
+
+**O2 · [UNSUPPORTED] · material · attacks C4**
+Claim: "Displacement + MSS xác nhận trên M5" tại Kill Zone.
+Fails: không có số liệu định lượng nào cho displacement M5 trong note này (không ATR, không body-to-range ratio, không mô tả cụ thể nến nào) — chỉ có câu chung "đủ displacement + MSS xác nhận trên M5" ở nhiều chỗ (mục 3, 7, 8). So với 07-08/01 (tự nhận "displacement không quá lớn" — cụ thể) hay 07-10/02 (cùng vậy), note này KHÔNG có mức độ chi tiết tương đương để tự kiểm tra ngưỡng.
+Evidence: thiếu — đây là khoảng trống mô tả, không phải mâu thuẫn.
+Consequence: không đủ evidence để PASS dứt khoát chất lượng displacement, dù không có gì mâu thuẫn để FAIL nó — đúng chuẩn phải là UNSUPPORTED, không phải PASS ngầm định vì "Win nên chắc đúng".
+Your best answer: `displacement: Yes` được tick ở 7-Step Log — nhưng tick Yes/No không thay thế cho mô tả định lượng theo đúng gate mà note đề xuất ở các note khác trong vault (vd 07-10/02 mục 7.3 "Định nghĩa displacement khách quan"). Việc chính vault đã tự đề xuất chuẩn này ở nơi khác mà note Win này không áp dụng là một điểm không nhất quán (nhưng không phải lỗi riêng của note này).
+Retracted by: bổ sung số liệu cụ thể cho nến displacement M5 (range, ATR ratio, thời điểm).
+
+**O3 · [ARITHMETIC] · minor** — RR tính lại từ entry/SL/TP = 2.818, note ghi 2.86 — chênh 0.042R, trong ngưỡng làm tròn hợp lý, không đáng kể (nhỏ nhất trong toàn batch B). Retracted by: không cần, đây gần như PASS hoàn toàn.
+
+**O4 · [UNSUPPORTED] · minor** — TP 1.18244 không neo named level (đã tự nhận, mục 7.1/9.1) — ghi nhận đây KHÔNG PHẢI risk cho outcome đã xảy ra (Win), nhưng là risk cho các lệnh TƯƠNG LAI dùng cùng logic "TP tại equilibrium nội bộ" mà không có named level backup nếu giá đảo chiều sớm hơn dự kiến. Retracted by: rule đã đề xuất ở mục 7.3 gốc (neo TP vào Draw on Liquidity cụ thể).
+
+Đã soạn 4, cắt 0 (O1, O2 material vì không đổi được entry logic gốc nhưng đáng flag; O3, O4 minor).
+
+**4. Opposite case.** Từ cùng evidence: "Đây có thể là một lệnh Long thắng nhờ may mắn thị trường tiếp tục trend D1 mạnh, không phải nhờ chất lượng entry trigger M5 — vì displacement/MSS trên M5 không có số liệu định lượng để phân biệt với một MSS yếu kiểu 07-10/02 (phiên mỏng, dễ bị tạo bởi vài lệnh nhỏ)."
+- Load-bearing của case ngược: "MSS M5 ở đây cũng có thể yếu như ở 07-10/02, chỉ khác là giá tiếp tục đúng hướng."
+- Tự phản bác: khác biệt quan trọng là **session** — đây là NY AM Kill Zone (có mốc giờ xác nhận cụ thể), còn 07-10/02 là Asia (ngoài KZ, đã tự nhận GATE fail). Theo canon (SKILL.md § Killzone), trọng số MSS/displacement trong KZ cao hơn hẳn ngoài KZ — đây là khác biệt định tính đủ mạnh để bác case ngược dù thiếu số liệu định lượng displacement.
+- Strength label: **weaker but non-trivial** — case ngược không thắng vì thiếu bằng chứng, và có 1 khác biệt cấu trúc rõ ràng (Kill Zone) ủng hộ case gốc; nhưng thiếu số liệu displacement định lượng vẫn là lỗ hổng thật đáng ghi nhận.
+- Distinguishing observable: nếu displacement M5 được đo lại và cho thấy range/ATR ratio thấp (dưới ngưỡng chuẩn), case ngược mạnh lên đáng kể dù vẫn trong KZ.
+
+**5. Verdict: SURVIVES THIS ATTACK.**
+Load-bearing claim C4 không bị phá — không tìm được mâu thuẫn hay hindsight nào đủ mạnh để lật ngược kết luận entry hợp lệ; điểm yếu duy nhất (thiếu số liệu định lượng displacement, O2) là UNSUPPORTED chứ không FAIL, và Kill Zone xác nhận bằng giờ cụ thể là điểm mạnh khác biệt so với các note Loss trong batch. Điều không phá được: chuỗi BOS D1 → FVG → pullback → Kill Zone xác nhận bằng giờ. Điều không xác lập được: chất lượng định lượng thực sự của displacement M5 (thiếu số liệu để PASS chắc chắn, dù không có gì để FAIL).
+
+**6. Falsification tests**
+1. Bổ sung số liệu định lượng cho nến displacement M5 (range, ATR ratio) — nếu dưới ngưỡng chuẩn đã đề xuất ở 07-10/02 mục 7.3, hạ C4 xuống UNSUPPORTED mạnh hơn; nếu đạt ngưỡng, đóng O2 thành PASS.
+2. Tách rõ 2 câu "quan sát wick" và "diễn giải hấp thụ" trong lần viết note tương lai — đóng O1.
+3. Kiểm tra nếu neo TP vào named level gần nhất (BSL 1.18956, H1 range high) thay vì equilibrium 1.18005, RR sẽ là bao nhiêu — so sánh với 2.86 đã đạt, xem liệu TP hiện tại "may mắn" tối ưu hơn hay kém hơn kế hoạch named-level.
+
+---
+
+## 11. Doctrine check (ICT 2022 canon)
+
+**Thesis:** Lệnh Long tại CE của FVG H1 đơn (rank 1) trong Discount, sau BOS D1 + pullback hấp thụ + displacement/MSS M5 tại NY AM Kill Zone, đủ chuỗi 7 bước, Win 2.86R.
+
+**Cần sửa** (load-bearing trước):
+- C4 "Displacement + MSS M5 đạt chuẩn" — **UNSUPPORTED** · SKILL.md § Displacement yêu cầu "expansion một chiều, năng lượng cao"; note không cung cấp số liệu định lượng (range/ATR) để xác nhận ngưỡng, chỉ có tick Yes/No → fix: bổ sung số liệu cụ thể nến displacement M5.  ← (load-bearing)
+- C_TP "TP 1.18244 hợp lệ theo Draw on Liquidity" — **FAIL** · TP không trùng bất kỳ named level nào đã map (H1 range high 1.18956, D1 range high 1.22649) — SKILL.md § Liquidity/Target yêu cầu mô tả draw on liquidity cụ thể; TP tại equilibrium nội bộ không neo named level → fix: đã đề xuất đúng ở mục 7.3 gốc (neo TP vào named level, ghi rõ nếu chốt tại internal).
+
+**PASS:** C1 (D1 Bullish BOS — SKILL.md § BOS, phá swing thuận trend, có body close theo mô tả), C2 (FVG Discount — SKILL.md § Premium/Discount, entry 41.4% range dưới EQ, đúng phía Long), C3 (wick-reject hành vi hấp thụ — mô tả quan sát hợp lệ, tách khỏi diễn giải theo O1 mục 10), C5 (Kill Zone — SKILL.md § Killzone/Time, giờ cụ thể 08:10 ET, đạt evidence bar).
+
+**Verdict:** INSUFFICIENT EVIDENCE — load-bearing claim C4 (chất lượng displacement/MSS M5) là UNSUPPORTED do thiếu số liệu định lượng, dù không có mâu thuẫn để FAIL. Theo decision rule, thesis với load-bearing claim UNSUPPORTED không được nhận PARTIALLY ALIGNED dù các claim phụ (C1, C2, C3, C5) đều PASS.
+
+**Notes:** Doctrine gap nhỏ — SKILL.md không định nghĩa ngưỡng số cụ thể cho "đủ displacement" (ATR ratio bao nhiêu, body-to-range bao nhiêu) — đây là gap đã được chính vault (07-10/02 mục 7.3) tự đề xuất bổ sung; ghi nhận lại ở đây làm bằng chứng thứ 2 cho việc thiếu chuẩn định lượng này lặp lại ở nhiều note, đáng ưu tiên hoá thành rule Playbook cụ thể.
+
+---
+
+## 12. Lesson Learned (bản đầy đủ)
+
+### (a) Bài học kỹ thuật
+
+1. **FVG đơn (rank 1/5) vẫn đủ để đạt Win chất lượng cao nếu đúng bias + đúng Kill Zone + đủ chuỗi 7 bước.** Ví dụ số thật: CE tính lại 1.17784 khớp chính xác note, RR tính lại 2.818 khớp gần đúng 2.86 (chênh 0.042R, sạch nhất batch) — không cần OB/Breaker/Unicorn để có kết quả tốt. Tổng quát hóa: POI rank là một yếu tố cộng thêm, không phải điều kiện cần.
+2. **TP không neo named level vẫn có thể thắng, nhưng đó là may mắn kế hoạch, không phải bằng chứng cho phương pháp đặt TP.** Ví dụ số thật: TP 1.18244 gần equilibrium H1 (1.18005) chứ không phải BSL đã map (1.18956) — outcome Win không chứng minh cách đặt TP này đúng, chỉ chứng minh giá đủ đi xa để chạm nó lần này.
+
+### (b) Bài học quy trình/checklist
+
+- Note tự phát hiện lỗi TP không neo Draw on Liquidity (mục 7.1 gốc) NGAY TRONG LÚC Win — đây là hành vi kỷ luật xuất sắc, hiếm gặp (thường người backtest chỉ tự phê bình kỹ khi Loss). Cần nhân rộng: mọi note Win cũng phải tự hỏi "có điểm nào trong kế hoạch không khớp thực thi, dù kết quả tốt?"
+- Thiếu số liệu định lượng displacement M5 (O2 mục 10) là khoảng trống lặp lại — nên trở thành trường bắt buộc trong template thay vì tùy chọn.
+
+### (c) Bài học tâm lý-hành vi
+
+- Không có dấu hiệu vi phạm kỷ luật — `followed_plan` không bị nghi ngờ trong note gốc. Điểm cần theo dõi: Grade B (không phải A) dù đủ chuỗi 7 bước — cho thấy note tự chấm khắt khe hợp lý (trừ điểm Risk Management vì TP mập mờ) thay vì tự cho điểm tuyệt đối chỉ vì Win, đây là hành vi chống overconfidence tốt cần giữ.
+
+### (d) Rule đề xuất cho Playbook
+
+- [ ] Mọi TP phải neo vào một named level cụ thể trong Draw on Liquidity đã map trước entry; nếu chốt tại internal/equilibrium, ghi rõ lý do và coi đây là partial, không phải TP cuối cùng đại diện cho toàn bộ kế hoạch.
+- [ ] Bổ sung trường bắt buộc `displacement_atr_ratio` hoặc mô tả định lượng tương đương cho mọi lệnh tick `displacement: Yes` — không chấp nhận tick suông không kèm số liệu.
+- [ ] Khi mô tả hành vi giá (vd wick-reject), tách 2 câu riêng: "quan sát hành vi" (fact) và "diễn giải ý nghĩa" (interpretation, cần gắn nhãn mức độ chắc chắn).
+
+### (e) Điều KHÔNG nên học từ lệnh này
+
+- KHÔNG nên coi Win 2.86R là bằng chứng rằng "đặt TP tại equilibrium nội bộ" là phương pháp đúng để nhân rộng — chính note đã tự flag đây là điểm yếu cần sửa (mục 7.1/7.3 gốc), giữ nguyên đánh giá đó dù kết quả tốt.
+- KHÔNG nên dùng note này làm chuẩn "displacement M5 không cần số liệu định lượng vẫn đủ tốt" — thiếu số liệu ở đây là UNSUPPORTED (Doctrine check mục 11), không phải bằng chứng rằng ngưỡng định lượng là không cần thiết; Win không tự động validate việc bỏ qua ngưỡng.
+- KHÔNG nên khái quát "FVG rank 1 luôn đủ tốt" từ n=1 case — cần đối chiếu với các FVG rank 1 khác (Win và Loss) trong vault trước khi biến thành rule cứng.
+
+
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]

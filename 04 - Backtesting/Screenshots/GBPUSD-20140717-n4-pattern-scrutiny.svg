@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">"4/4 loss cung ho Unswept Liquidity Path" - pattern that hay n=4 narrative fitting?</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">Chat van muc 9 cua chinh note nay (2026-07-18)</text>
+
+  <!-- LEFT: claimed pattern -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">CLAIM CUA MUC 9</text>
+  <rect x="70" y="100" width="330" height="300" fill="#fdedec" stroke="#f5b7b1"/>
+  <text x="90" y="130" font-size="12" fill="#1a1a1a">4 lenh Loss, first_error khac nhau:</text>
+  <text x="90" y="152" font-size="11" fill="#555">- sweep (file nay)</text>
+  <text x="90" y="170" font-size="11" fill="#555">- poi (XAU 19/5)</text>
+  <text x="90" y="188" font-size="11" fill="#555">- poi/SL (XAU 14/5)</text>
+  <text x="90" y="206" font-size="11" fill="#555">- draw (EURUSD 07/5)</text>
+  <text x="90" y="235" font-size="12" font-weight="700" fill="#c0392b">Ket luan: "1 lo hong quy trinh</text>
+  <text x="90" y="253" font-size="12" font-weight="700" fill="#c0392b">duy nhat" -&gt; 1 gate chung</text>
+  <text x="90" y="280" font-size="11" fill="#555">Tieu chi gop nhom: "SL nam trong</text>
+  <text x="90" y="298" font-size="11" fill="#555">duong di toi pool chua lay"</text>
+  <text x="90" y="320" font-size="10" fill="#a93226">-&gt; tieu chi nay RONG toi muc</text>
+  <text x="90" y="336" font-size="10" fill="#a93226">gan nhu MOI lenh thua deu khop</text>
+  <text x="90" y="352" font-size="10" fill="#a93226">(SL luon nam ve phia thanh khoan</text>
+  <text x="90" y="368" font-size="10" fill="#a93226">chua lay theo dinh nghia)</text>
+
+  <!-- RIGHT: scrutiny -->
+  <text x="665" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#2980b9">CAU HOI CHAT VAN</text>
+  <rect x="500" y="100" width="330" height="300" fill="#eaf2f8" stroke="#aed6f1"/>
+  <text x="520" y="130" font-size="12" fill="#1a1a1a">1. n=4 tu tong so bao nhieu lenh Loss?</text>
+  <text x="520" y="148" font-size="11" fill="#555">Note khong cho biet mau so (tong</text>
+  <text x="520" y="164" font-size="11" fill="#555">so Loss trong vault) -&gt; UNSUPPORTED</text>
+
+  <text x="520" y="195" font-size="12" fill="#1a1a1a">2. First_error khac nhau (sweep/</text>
+  <text x="520" y="211" font-size="12" fill="#1a1a1a">poi/draw) co that su "cung ho" khong?</text>
+  <text x="520" y="227" font-size="11" fill="#555">Hay la 4 co che khac nhau duoc</text>
+  <text x="520" y="243" font-size="11" fill="#555">gan nhan lai chung 1 ten SAU KHI</text>
+  <text x="520" y="259" font-size="11" fill="#555">da biet ca 4 deu thua?</text>
+
+  <text x="520" y="290" font-size="12" fill="#1a1a1a">3. Tieu chi "SL trong duong di</text>
+  <text x="520" y="306" font-size="12" fill="#1a1a1a">toi pool" co falsifiable khong?</text>
+  <text x="520" y="322" font-size="11" fill="#c0392b" font-weight="700">-&gt; Kho tim phan vi du: SL nao</text>
+  <text x="520" y="338" font-size="11" fill="#c0392b" font-weight="700">cung "huong ve" mot pool nao do</text>
+
+  <text x="520" y="365" font-size="11" fill="#8e44ad" font-weight="700">4. Time-stop rule de xuat = n=1</text>
+  <text x="520" y="381" font-size="11" fill="#8e44ad" font-weight="700">curve-fit tu chinh file nay?</text>
+
+  <rect x="150" y="420" width="600" height="110" fill="#fdebd0"/>
+  <text x="450" y="440" text-anchor="middle" font-size="12" font-weight="700" fill="#af601a">Verdict chat van: pattern co the THAT nhung</text>
+  <text x="450" y="458" text-anchor="middle" font-size="12" font-weight="700" fill="#af601a">CHUA duoc chung minh o muc "phat hien 1 loi duy nhat"</text>
+  <text x="450" y="480" text-anchor="middle" font-size="11" fill="#af601a">Can: (a) biet mau so tong, (b) dinh nghia gop nhom TRUOC khi</text>
+  <text x="450" y="498" text-anchor="middle" font-size="11" fill="#af601a">xem tung lenh, (c) test tren mau Win de xem co bi false-positive khong</text>
+  <text x="450" y="516" text-anchor="middle" font-size="11" fill="#af601a">(vd note 07-16/02 va 07-17/01 trong batch nay cung co "tap nong" nhung deu Win)</text>
+</svg>

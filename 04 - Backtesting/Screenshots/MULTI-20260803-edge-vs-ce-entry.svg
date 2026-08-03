@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="1180" height="560" fill="#ffffff"/>
+  <text x="590" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Edge Entry vs CE Entry - thang nhung khong chung minh entry dung</text>
+  <text x="590" y="52" text-anchor="middle" font-size="13" fill="#666">So sanh so thuc: EURUSD 2013-11-21 va GBPUSD 2024-12-04 (ca hai first_error_step = entry)</text>
+
+  <!-- LEFT PANEL: EDGE ENTRY (ACTUAL) -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">EDGE ENTRY (lenh thuc te)</text>
+  <rect x="70" y="100" width="470" height="380" fill="#fafafa" stroke="#ddd"/>
+
+  <!-- FVG/OB band -->
+  <rect x="70" y="130" width="470" height="90" fill="#b0b0b0" fill-opacity="0.45"/>
+  <text x="80" y="124" font-size="11" fill="#555">POI band (FVG/OB)</text>
+
+  <line x1="70" y1="130" x2="290" y2="130" stroke="#888"/>
+  <text x="295" y="134" font-size="10" fill="#888">Top: EURUSD ~1.34239 (BPR) | GBPUSD 1.26642 (OB)</text>
+
+  <line x1="70" y1="150" x2="290" y2="150" stroke="#c0392b" stroke-width="2.5"/>
+  <text x="295" y="154" font-size="11" font-weight="700" fill="#c0392b">EDGE ENTRY = day: EURUSD 1.34239</text>
+  <line x1="70" y1="175" x2="290" y2="175" stroke="#c0392b" stroke-width="2.5"/>
+  <text x="295" y="179" font-size="11" font-weight="700" fill="#c0392b">GBPUSD 1.26615 (Between, fill 21%)</text>
+
+  <line x1="70" y1="220" x2="290" y2="220" stroke="#e67e22" stroke-dasharray="4 3" stroke-width="2"/>
+  <text x="295" y="216" font-size="10" fill="#e67e22">CE ly thuyet: EURUSD chua ro (typo bounds)</text>
+  <text x="295" y="228" font-size="10" fill="#e67e22">GBPUSD 1.265785</text>
+
+  <rect x="70" y="220" width="470" height="30" fill="#f9d0c4" fill-opacity="0.6"/>
+  <text x="305" y="240" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">VUNG CE CHUA DUOC TEST</text>
+
+  <line x1="70" y1="250" x2="290" y2="250" stroke="#888"/>
+  <text x="295" y="254" font-size="10" fill="#888">Bottom: GBPUSD 1.26515 (FVG low)</text>
+
+  <!-- risk block below -->
+  <rect x="70" y="290" width="470" height="60" fill="#fff3f0" stroke="#e0a090"/>
+  <text x="80" y="308" font-size="11" fill="#a93226" font-weight="700">Neu retrace sau hon (khong xay ra o day):</text>
+  <text x="80" y="326" font-size="10" fill="#a93226">Edge entry bi quet SL truoc khi gia cham CE</text>
+  <text x="80" y="342" font-size="10" fill="#a93226">-&gt; SL chet som hon CE-entry cung POI</text>
+
+  <text x="305" y="400" text-anchor="middle" font-size="11" fill="#555">RR ke hoach thuc nhan:</text>
+  <text x="305" y="418" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">EURUSD 3.18R | GBPUSD 3.40R</text>
+  <text x="305" y="440" text-anchor="middle" font-size="11" fill="#555">RR neu doi ve CE (uoc tinh):</text>
+  <text x="305" y="458" text-anchor="middle" font-size="12" font-weight="700" fill="#a93226">GBPUSD: 5.31R (mat ~1.9R co hoi)</text>
+  <text x="305" y="478" text-anchor="middle" font-size="10" fill="#888">EURUSD: khong tinh duoc (bounds BPR bi loi typo)</text>
+
+  <!-- RIGHT PANEL: CE ENTRY (STANDARD) -->
+  <text x="875" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#1e8449">CE ENTRY (chuan doctrine)</text>
+  <rect x="640" y="100" width="470" height="380" fill="#fafafa" stroke="#ddd"/>
+
+  <rect x="640" y="130" width="470" height="90" fill="#a9dfbf" fill-opacity="0.5"/>
+  <text x="650" y="124" font-size="11" fill="#1e8449">POI band (FVG/OB)</text>
+
+  <line x1="640" y1="130" x2="1070" y2="130" stroke="#888"/>
+  <text x="1075" y="134" font-size="10" fill="#888">Top</text>
+
+  <line x1="640" y1="175" x2="1070" y2="175" stroke="#1e8449" stroke-width="3"/>
+  <text x="650" y="195" font-size="11" font-weight="700" fill="#1e8449">CE = 50% cua FVG/OB</text>
+  <text x="650" y="210" font-size="10" fill="#1e8449">vd NAS100 23,552.4 | XAUUSD 1300.5 | EURUSD(21-05-03) 1.20648</text>
+
+  <line x1="640" y1="220" x2="1070" y2="220" stroke="#888"/>
+  <text x="1075" y="224" font-size="10" fill="#888">Bottom</text>
+
+  <path d="M 805 130 L 805 175" stroke="#2980b9" stroke-width="2" stroke-dasharray="3 2" marker-end="url(#arrowB)"/>
+  <text x="840" y="145" font-size="10" fill="#2980b9">Dem chiu duoc retrace</text>
+  <text x="840" y="158" font-size="10" fill="#2980b9">sau hon truoc khi SL</text>
+
+  <rect x="640" y="290" width="470" height="60" fill="#eafaf1" stroke="#8fd4ab"/>
+  <text x="650" y="308" font-size="11" fill="#1e8449" font-weight="700">Neu retrace sau hon:</text>
+  <text x="650" y="326" font-size="10" fill="#1e8449">CE-entry van song vi da nam giua POI</text>
+  <text x="650" y="342" font-size="10" fill="#1e8449">-&gt; song sot lau hon Edge-entry cung setup</text>
+
+  <text x="875" y="400" text-anchor="middle" font-size="11" fill="#555">Doi lai:</text>
+  <text x="875" y="418" text-anchor="middle" font-size="12" font-weight="700" fill="#1e8449">RR thap hon Edge (SL rong hon)</text>
+  <text x="875" y="440" text-anchor="middle" font-size="11" fill="#555">Rui ro doi lai:</text>
+  <text x="875" y="458" text-anchor="middle" font-size="12" fill="#1e8449">Xac suat khong duoc fill cao hon</text>
+  <text x="875" y="478" text-anchor="middle" font-size="10" fill="#888">(NAS100 20260402: fill_depth 50% dung CE)</text>
+
+  <text x="590" y="520" text-anchor="middle" font-size="12" font-weight="700" fill="#444">Bai hoc: outcome Win cua Edge entry KHONG chung minh Edge dung.</text>
+  <text x="590" y="540" text-anchor="middle" font-size="11" fill="#444">No chi chung minh retrace lan nay khong du sau de phan biet hai gia thuyet - day la [METHOD] fatal, khong phai [CHART].</text>
+
+  <defs>
+    <marker id="arrowB" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2980b9"/>
+    </marker>
+  </defs>
+</svg>

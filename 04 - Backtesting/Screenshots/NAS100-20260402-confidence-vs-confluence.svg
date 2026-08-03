@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">NAS100 2026-04-02 - Confidence 5/5 co duoc confluence thuc backing khong?</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">confluence_score ghi trong frontmatter = 1/8 - kiem tra outcome bias</text>
+
+  <!-- LEFT PANEL: claimed confidence -->
+  <text x="225" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">CONFIDENCE TU CHAM</text>
+  <rect x="60" y="105" width="330" height="60" fill="#fdecea" stroke="#e0a090"/>
+  <text x="225" y="140" text-anchor="middle" font-size="34" font-weight="700" fill="#c0392b">5 / 5</text>
+  <text x="225" y="180" text-anchor="middle" font-size="11" fill="#555">Grade: A · followed_plan: Yes · first_error_step: none</text>
+
+  <!-- RIGHT PANEL: confluence score breakdown -->
+  <text x="675" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#1e8449">CONFLUENCE SCORE THUC (0-8)</text>
+  <rect x="490" y="105" width="340" height="60" fill="#eafaf1" stroke="#8fd4ab"/>
+  <text x="660" y="140" text-anchor="middle" font-size="34" font-weight="700" fill="#1e8449">1 / 8</text>
+  <text x="660" y="180" text-anchor="middle" font-size="11" fill="#555">Chi tinh duoc muc co bang chung ro trong note</text>
+
+  <!-- checklist of 8 confluence items -->
+  <text x="60" y="215" font-size="13" font-weight="700" fill="#333">8 muc confluence (SCORE 0-8) va trang thai thuc te:</text>
+
+  <g font-size="12">
+    <text x="60" y="240" fill="#333">1. POI hang &gt;=3</text>
+    <text x="420" y="240" fill="#c0392b" font-weight="700">No</text>
+    <text x="470" y="240" fill="#888">Rank 1 (FVG don, du nested)</text>
+
+    <text x="60" y="262" fill="#333">2. CE trung OTE 62-79%</text>
+    <text x="420" y="262" fill="#c0392b" font-weight="700">No</text>
+    <text x="470" y="262" fill="#888">Fib 0.582 &lt; 0.62 - nong hon OTE</text>
+
+    <text x="60" y="284" fill="#333">3. SMT divergence</text>
+    <text x="400" y="284" fill="#999" font-weight="700" font-size="11">chua danh gia</text>
+    <text x="530" y="284" fill="#888">Khong ghi nhan trong note</text>
+
+    <text x="60" y="306" fill="#333">4. CISD flip LTF</text>
+    <text x="420" y="306" fill="#c0392b" font-weight="700">No</text>
+    <text x="470" y="306" fill="#888">Dung MSS, khong dung CISD cho leg nay</text>
+
+    <text x="60" y="328" fill="#333">5. Macro time window</text>
+    <text x="400" y="328" fill="#999" font-weight="700" font-size="11">chua danh gia</text>
+    <text x="530" y="328" fill="#888">Chi co Killzone, chua co macro time hep hon</text>
+
+    <text x="60" y="350" fill="#333">6. NWOG/NDOG align</text>
+    <text x="420" y="350" fill="#c0392b" font-weight="700">No</text>
+    <text x="470" y="350" fill="#888">Khong de cap</text>
+
+    <text x="60" y="372" fill="#333">7. -2SD / ERL target</text>
+    <text x="420" y="372" fill="#c0392b" font-weight="700">No</text>
+    <text x="470" y="372" fill="#888">TP la buffer truoc M15 EQH, khong phai -2SD</text>
+
+    <text x="60" y="394" fill="#333">8. Inducement bi quet truoc POI</text>
+    <text x="420" y="394" fill="#1e8449" font-weight="700">Yes</text>
+    <text x="470" y="394" fill="#888">Quet internal swing low M5 truoc MSS</text>
+  </g>
+
+  <line x1="60" y1="410" x2="840" y2="410" stroke="#ccc"/>
+
+  <rect x="60" y="425" width="780" height="90" fill="#fff8e1" stroke="#e0c060"/>
+  <text x="80" y="448" font-size="13" font-weight="700" fill="#8a6d00">Khoang cach: 1 muc Yes ro rang + 2 muc chua danh gia, tren tong 8 muc - nhung confidence tu cham la MAX (5/5).</text>
+  <text x="80" y="470" font-size="12" fill="#8a6d00">Cai thuc su chong lung confidence o day KHONG phai confluence_score (1/8) ma la qua trinh entry sach: tu choi lan cham dau,</text>
+  <text x="80" y="488" font-size="12" fill="#8a6d00">cho du sweep+MSS+FVG tren M5 roi moi vao CE. Do la ly do hop le de tin - nhung no khong lam confluence_score tang len.</text>
+  <text x="80" y="506" font-size="12" font-weight="700" fill="#c0392b">Rui ro: confidence 5/5 dang duoc cap boi "khong co gi sai" + outcome Win, khong phai boi so luong confluence doc lap.</text>
+
+  <text x="450" y="540" text-anchor="middle" font-size="11" fill="#444">[METHOD]: confidence tu cham sau khi biet outcome de danh gia lai process la outcome-as-evidence, khong phai do luong doc lap.</text>
+</svg>

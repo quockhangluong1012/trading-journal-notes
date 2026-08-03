@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 820" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="820" fill="#ffffff"/>
+  <text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Unswept Liquidity — 5 Whys &amp; HTF Pool Target</text>
+  <text x="500" y="56" text-anchor="middle" font-size="14" fill="#555">Từ "4 lệnh thua liên tiếp" tới nguyên nhân gốc thiếu GATE</text>
+
+  <rect x="40" y="76" width="920" height="50" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="60" y="96" font-size="12" font-weight="bold" fill="#1a1a1a">Bề mặt:</text>
+  <text x="60" y="114" font-size="12" fill="#333">SL nằm cùng phía với pool thanh khoản chưa bị lấy — 4/4 lệnh -1R.</text>
+
+  <line x1="500" y1="126" x2="500" y2="144" stroke="#999" stroke-width="2" marker-end="url(#a5)"/>
+
+  <rect x="70" y="146" width="860" height="48" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="90" y="164" font-size="12" font-weight="bold" fill="#3a2c00">Why 1:</text>
+  <text x="90" y="182" font-size="12" fill="#333">Đếm sweep theo hình dạng ("FVG/OB đẹp") thay vì theo chức năng pool.</text>
+
+  <line x1="500" y1="194" x2="500" y2="212" stroke="#999" stroke-width="2" marker-end="url(#a5)"/>
+
+  <rect x="100" y="214" width="800" height="48" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="120" y="232" font-size="12" font-weight="bold" fill="#3a2c00">Why 2:</text>
+  <text x="120" y="250" font-size="12" fill="#333">Thiếu bước phân loại internal/external bắt buộc trước khi tin MSS.</text>
+
+  <line x1="500" y1="262" x2="500" y2="280" stroke="#999" stroke-width="2" marker-end="url(#a5)"/>
+
+  <rect x="130" y="282" width="740" height="48" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="150" y="300" font-size="12" font-weight="bold" fill="#c62828">Why 3:</text>
+  <text x="150" y="318" font-size="12" fill="#333">Setup "đủ 2022 Model" tạo cảm giác hoàn chỉnh, dừng tìm bằng chứng thêm.</text>
+
+  <line x1="500" y1="330" x2="500" y2="348" stroke="#999" stroke-width="2" marker-end="url(#a5)"/>
+
+  <rect x="160" y="350" width="680" height="48" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="180" y="368" font-size="12" font-weight="bold" fill="#c62828">Why 4:</text>
+  <text x="180" y="386" font-size="12" fill="#333">R:R cao (do SL sai chỗ) bị hiểu lầm là tín hiệu tốt, không phải cảnh báo.</text>
+
+  <line x1="500" y1="398" x2="500" y2="416" stroke="#999" stroke-width="2" marker-end="url(#a5)"/>
+
+  <rect x="130" y="418" width="740" height="80" rx="10" fill="#c62828"/>
+  <text x="500" y="444" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">NGUYÊN NHÂN GỐC</text>
+  <text x="500" y="466" text-anchor="middle" font-size="12" fill="#fff">Không có GATE bắt buộc định vị pool chưa-bị-lấy CẢ hai phía</text>
+  <text x="500" y="484" text-anchor="middle" font-size="12" fill="#fff">trước khi khung entry được mở — bước này hiện là ngầm định, không chặn cứng.</text>
+
+  <!-- HTF pool target diagram -->
+  <rect x="40" y="520" width="920" height="270" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="500" y="546" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565c0">HTF Pool = Target, không phải Trigger (Doctrine v2 Rule 3)</text>
+
+  <rect x="70" y="562" width="270" height="100" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="205" y="586" text-anchor="middle" font-size="12" font-weight="bold" fill="#c62828">Sai: HTF pool = Trigger</text>
+  <text x="205" y="608" text-anchor="middle" font-size="11" fill="#333">"Giá đang hướng tới pool</text>
+  <text x="205" y="624" text-anchor="middle" font-size="11" fill="#333">phía trên" → vào Long</text>
+  <text x="205" y="640" text-anchor="middle" font-size="11" fill="#333">ngay bây giờ.</text>
+
+  <rect x="365" y="562" width="270" height="100" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="500" y="586" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Đúng: HTF pool = Target</text>
+  <text x="500" y="608" text-anchor="middle" font-size="11" fill="#333">Giá "có nợ" phải đi tới đó</text>
+  <text x="500" y="624" text-anchor="middle" font-size="11" fill="#333">trước khi đảo hướng —</text>
+  <text x="500" y="640" text-anchor="middle" font-size="11" fill="#333">kể cả đi ngược bias hiện tại.</text>
+
+  <rect x="660" y="562" width="270" height="100" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="795" y="586" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a2c00">Hệ quả cho GATE</text>
+  <text x="795" y="608" text-anchor="middle" font-size="11" fill="#3a2c00">Pool cùng phía SL = lý do</text>
+  <text x="795" y="624" text-anchor="middle" font-size="11" fill="#3a2c00">KHÔNG vào lệnh, không phải</text>
+  <text x="795" y="640" text-anchor="middle" font-size="11" fill="#3a2c00">lý do để vào lệnh.</text>
+
+  <rect x="70" y="676" width="860" height="46" rx="8" fill="#ffffff" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="495" y="704" text-anchor="middle" font-size="12" fill="#333">4 case thật: coi setup LTF là trigger đủ mạnh, bỏ qua vai trò "lực hấp dẫn" của HTF pool cùng phía SL.</text>
+
+  <rect x="70" y="732" width="860" height="46" rx="8" fill="#ffffff" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="495" y="760" text-anchor="middle" font-size="12" fill="#333">Pool đó không trigger cho lệnh — nhưng nó trigger việc giá xuyên qua SL trước khi quay lại đúng hướng.</text>
+
+  <defs>
+    <marker id="a5" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#999"/>
+    </marker>
+  </defs>
+</svg>

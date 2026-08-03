@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900" width="1100" height="900" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="900" fill="#ffffff"/>
+  <text x="30" y="36" font-size="22" font-weight="bold" fill="#1a1a1a">Entry Before Sweep — Root Cause 5 Whys</text>
+  <text x="30" y="58" font-size="13" fill="#555">Chuỗi bậc thang từ hành vi bề mặt xuống nguyên nhân gốc, kèm nhánh liquidity engineering</text>
+
+  <rect x="30" y="80" width="330" height="90" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="45" y="102" font-size="14" font-weight="bold" fill="#1a1a1a">BỀ MẶT</text>
+  <text x="45" y="122" font-size="13" fill="#333">Vào lệnh ngay khi giá chạm</text>
+  <text x="45" y="140" font-size="13" fill="#333">OB/FVG lần đầu, dù equal</text>
+  <text x="45" y="158" font-size="13" fill="#333">lows vẫn còn nguyên.</text>
+
+  <path d="M 195 170 L 195 195" stroke="#c62828" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="90" y="200" width="390" height="95" rx="8" fill="#fdecea" stroke="#c62828"/>
+  <text x="105" y="222" font-size="14" font-weight="bold" fill="#c62828">WHY 1</text>
+  <text x="105" y="242" font-size="13" fill="#333">Coi phản ứng giá đầu tiên là xác</text>
+  <text x="105" y="260" font-size="13" fill="#333">nhận đủ — FOMO khiến bộ não tìm</text>
+  <text x="105" y="278" font-size="13" fill="#333">bằng chứng xác nhận điều muốn tin,</text>
+  <text x="105" y="292" font-size="12" fill="#333">không kiểm tra điều kiện phủ định.</text>
+
+  <path d="M 285 295 L 285 320" stroke="#c62828" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="150" y="325" width="410" height="95" rx="8" fill="#fdecea" stroke="#c62828"/>
+  <text x="165" y="347" font-size="14" font-weight="bold" fill="#c62828">WHY 2</text>
+  <text x="165" y="367" font-size="13" fill="#333">Kiểm tra pool đòi hỏi dừng lại quan</text>
+  <text x="165" y="385" font-size="13" fill="#333">sát toàn cảnh — "chậm"; FOMO tạo</text>
+  <text x="165" y="403" font-size="13" fill="#333">áp lực hành động ngay, não ưu tiên</text>
+  <text x="165" y="417" font-size="12" fill="#333">giảm căng thẳng tức thời hơn độ chính xác.</text>
+
+  <path d="M 355 420 L 355 445" stroke="#c62828" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="210" y="450" width="420" height="95" rx="8" fill="#fdecea" stroke="#c62828"/>
+  <text x="225" y="472" font-size="14" font-weight="bold" fill="#c62828">WHY 3</text>
+  <text x="225" y="492" font-size="13" fill="#333">Checklist liệt kê sweep như một bước</text>
+  <text x="225" y="510" font-size="13" fill="#333">tuần tự, không phải gate cứng chặn</text>
+  <text x="225" y="528" font-size="13" fill="#333">TRƯỚC khi mắt được đánh giá OB/FVG</text>
+  <text x="225" y="542" font-size="12" fill="#333">— tín hiệu đẹp đã kịp tạo cảm xúc muốn vào.</text>
+
+  <path d="M 420 545 L 420 570" stroke="#c62828" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="270" y="575" width="450" height="105" rx="8" fill="#c62828" stroke="#8e0000"/>
+  <text x="285" y="598" font-size="14" font-weight="bold" fill="#ffffff">WHY 4 — NGUYÊN NHÂN GỐC</text>
+  <text x="285" y="618" font-size="13" fill="#ffffff">Quy trình phân tích xây theo trình tự</text>
+  <text x="285" y="636" font-size="13" fill="#ffffff">"đọc chart tự nhiên" (thấy phản ứng</text>
+  <text x="285" y="654" font-size="13" fill="#ffffff">trước, hỏi sweep sau) — không buộc trả</text>
+  <text x="285" y="670" font-size="12" fill="#ffffff">lời câu hỏi phủ định trước câu hỏi xác nhận.</text>
+
+  <!-- Nhánh liquidity engineering -->
+  <rect x="760" y="200" width="310" height="500" rx="8" fill="#e3f2fd" stroke="#1565c0"/>
+  <text x="775" y="228" font-size="15" font-weight="bold" fill="#1565c0">Nhánh liquidity engineering</text>
+
+  <rect x="780" y="245" width="270" height="90" rx="6" fill="#ffffff" stroke="#1565c0"/>
+  <text x="792" y="265" font-size="12" font-weight="bold" fill="#1565c0">Accumulation</text>
+  <text x="792" y="283" font-size="12" fill="#333">Resting orders tích lũy tại</text>
+  <text x="792" y="299" font-size="12" fill="#333">equal highs/lows — pool thanh</text>
+  <text x="792" y="315" font-size="12" fill="#333">khoản có thật, chưa bị chạm.</text>
+
+  <path d="M 915 335 L 915 355" stroke="#1565c0" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <rect x="780" y="360" width="270" height="90" rx="6" fill="#ffffff" stroke="#1565c0"/>
+  <text x="792" y="380" font-size="12" font-weight="bold" fill="#1565c0">Manipulation (chưa hoàn tất)</text>
+  <text x="792" y="398" font-size="12" fill="#333">OB/FVG "đẹp, dễ thấy" chính là</text>
+  <text x="792" y="414" font-size="12" fill="#333">bước đầu manipulation — cú đẩy</text>
+  <text x="792" y="430" font-size="12" fill="#333">giá tạo inducement để dụ entry sớm.</text>
+
+  <path d="M 915 450 L 915 470" stroke="#c62828" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="780" y="475" width="270" height="105" rx="6" fill="#fdecea" stroke="#c62828"/>
+  <text x="792" y="495" font-size="12" font-weight="bold" fill="#c62828">Entry sớm = nguyên liệu</text>
+  <text x="792" y="513" font-size="12" fill="#333">SL của bạn nằm đúng nơi cần</text>
+  <text x="792" y="529" font-size="12" fill="#333">"ăn" để hoàn tất manipulation —</text>
+  <text x="792" y="545" font-size="12" fill="#333">bạn là chi phí nguyên liệu,</text>
+  <text x="792" y="561" font-size="12" fill="#333">không phải nạn nhân của âm mưu.</text>
+
+  <path d="M 915 580 L 915 600" stroke="#f9a825" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <rect x="780" y="605" width="270" height="80" rx="6" fill="#fff8e1" stroke="#f9a825"/>
+  <text x="792" y="625" font-size="12" font-weight="bold" fill="#3a2c00">Distribution (đúng hướng, muộn)</text>
+  <text x="792" y="643" font-size="12" fill="#3a2c00">Sau khi pool bị hấp thụ, giá mới</text>
+  <text x="792" y="659" font-size="12" fill="#3a2c00">đi đúng hướng bias — bạn đã out.</text>
+
+  <path d="M 630 380 L 760 380" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="640" y="373" font-size="11" fill="#777">liên hệ tầng thị trường</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c62828"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1565c0"/>
+    </marker>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#f9a825"/>
+    </marker>
+  </defs>
+
+  <rect x="30" y="790" width="1040" height="80" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="45" y="812" font-size="12" font-weight="bold" fill="#1a1a1a">Evidence Tier: Tier 0 (giả thuyết)</text>
+  <text x="45" y="830" font-size="12" fill="#555">Chuỗi 5 Whys và nhánh liquidity engineering là suy luận first-principles dựa trên</text>
+  <text x="45" y="846" font-size="12" fill="#555">draw on liquidity/order flow — chưa kiểm định bằng dữ liệu tick thật.</text>
+  <text x="45" y="862" font-size="12" fill="#555">Cần backtest n≥20 để nâng tier.</text>
+</svg>

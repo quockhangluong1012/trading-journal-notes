@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Rule drift: hai lenh GBPUSD Long, hai chuan danh gia khac nhau</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">Khong phai 1 lenh 2 ban doc - la 2 lenh khac ngay bi trung ten file (2014-06-25 vs 2014-07-14)</text>
+
+  <!-- LEFT: note 2 (2014-06-25) -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#2980b9">07-16/02 - 2014-06-25 (CISD/BPR)</text>
+  <rect x="70" y="100" width="330" height="380" fill="#eaf2f8" stroke="#aed6f1"/>
+  <text x="90" y="130" font-size="12" fill="#1a1a1a">Cong cu xac nhan: CISD (open/close)</text>
+  <text x="90" y="155" font-size="12" fill="#1a1a1a">Khung danh gia vi tri POI:</text>
+  <text x="90" y="175" font-size="12" font-weight="700" fill="#2980b9">Discount / Premium / Equilibrium</text>
+  <text x="90" y="195" font-size="11" fill="#555">(KHONG dung OTE fib 62-79%)</text>
+  <text x="90" y="225" font-size="12" fill="#1a1a1a">Tap vao OB: NONG</text>
+  <text x="90" y="245" font-size="11" fill="#555">(khong cham CE/low OB)</text>
+  <text x="90" y="245" font-size="11" fill="#555"></text>
+  <text x="90" y="275" font-size="12" fill="#1a1a1a">confluence_score = 1/8</text>
+  <text x="90" y="295" font-size="11" fill="#555">(tu nhan xet: khong phan anh</text>
+  <text x="90" y="311" font-size="11" fill="#555">dung chat luong that)</text>
+  <text x="90" y="340" font-size="12" fill="#1a1a1a">r_planned = 2.47 (frontmatter)</text>
+  <text x="90" y="360" font-size="12" font-weight="700" fill="#c0392b">Verify lai = 2.373 (lech ~0.1R)</text>
+  <text x="90" y="390" font-size="12" fill="#1a1a1a">Grade: B+</text>
+  <text x="90" y="415" font-size="11" fill="#555">Loi that: quan ly runner</text>
+  <text x="90" y="431" font-size="11" fill="#555">(sau khi vao lenh, ngoai 7 buoc)</text>
+  <text x="90" y="460" font-size="11" fill="#1e8449">Tap nong + CISD =&gt; Win (TP1 hit)</text>
+
+  <!-- RIGHT: note 3 (2014-07-14) -->
+  <text x="665" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#8e44ad">07-17/01 - 2014-07-14 (FVG/OTE)</text>
+  <rect x="500" y="100" width="330" height="380" fill="#f4ecf7" stroke="#d7bde2"/>
+  <text x="520" y="130" font-size="12" fill="#1a1a1a">Cong cu xac nhan: MSS (wick)</text>
+  <text x="520" y="155" font-size="12" fill="#1a1a1a">Khung danh gia vi tri POI:</text>
+  <text x="520" y="175" font-size="12" font-weight="700" fill="#8e44ad">OTE fib 0.618/0.705/0.786</text>
+  <text x="520" y="195" font-size="11" fill="#555">(fib chi tiet, KHONG dung</text>
+  <text x="520" y="211" font-size="11" fill="#555">Discount/Premium don thuan)</text>
+  <text x="520" y="240" font-size="12" fill="#1a1a1a">Entry: NUA NONG cua FVG</text>
+  <text x="520" y="260" font-size="11" fill="#555">(giua EQ 0.5 va 0.618,</text>
+  <text x="520" y="276" font-size="11" fill="#555">CHUA vao OTE that su)</text>
+  <text x="520" y="305" font-size="12" fill="#1a1a1a">confluence_score = 3/8</text>
+  <text x="520" y="325" font-size="11" fill="#555">(khong tu mien tru diem so)</text>
+  <text x="520" y="355" font-size="12" fill="#1a1a1a">RR ke hoach = 2.33 (verify khop)</text>
+  <text x="520" y="375" font-size="12" font-weight="700" fill="#1e8449">RR neu sweet spot ~5.0</text>
+  <text x="520" y="405" font-size="12" fill="#1a1a1a">Grade: B</text>
+  <text x="520" y="425" font-size="11" fill="#555">Loi that: vi tri entry NONG</text>
+  <text x="520" y="441" font-size="11" fill="#555">(trong 7 buoc, step 6 Partial)</text>
+  <text x="520" y="460" font-size="11" fill="#1e8449">Entry nong + MSS som =&gt; van Win</text>
+
+  <!-- middle drift markers -->
+  <line x1="400" y1="140" x2="500" y2="140" stroke="#c0392b" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="450" y="135" text-anchor="middle" font-size="10" fill="#c0392b" font-weight="700">DRIFT 1</text>
+  <text x="450" y="150" text-anchor="middle" font-size="9" fill="#c0392b">CISD vs MSS lam</text>
+  <text x="450" y="162" text-anchor="middle" font-size="9" fill="#c0392b">cong cu xac nhan chinh</text>
+
+  <line x1="400" y1="185" x2="500" y2="185" stroke="#c0392b" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="450" y="200" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="700">DRIFT 2: khung P/D</text>
+  <text x="450" y="212" text-anchor="middle" font-size="9" fill="#c0392b">vs khung OTE fib</text>
+
+  <line x1="400" y1="290" x2="500" y2="290" stroke="#c0392b" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="450" y="285" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="700">DRIFT 3</text>
+  <text x="450" y="300" text-anchor="middle" font-size="9" fill="#c0392b">tu mien tru diem</text>
+  <text x="450" y="312" text-anchor="middle" font-size="9" fill="#c0392b">confluence khac nhau</text>
+
+  <rect x="150" y="500" width="600" height="40" fill="#fdebd0"/>
+  <text x="450" y="516" text-anchor="middle" font-size="11" fill="#af601a" font-weight="700">Ca hai lenh deu "tap/entry nong" nhung deu WIN</text>
+  <text x="450" y="532" text-anchor="middle" font-size="11" fill="#af601a">-&gt; can them mau de biet day la edge that hay 2 lan may man rieng le</text>
+</svg>

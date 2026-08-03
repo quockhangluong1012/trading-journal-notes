@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="Segoe UI, Arial, sans-serif">
   <rect x="0" y="0" width="900" height="500" fill="#ffffff"/>
   <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Trade INTO liquidity vs Trade AFTER sweep + MSS "som"</text>
-  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">Entry truoc khi SSL cau truc bi quet — MSS M5 co the la LTF inducement, khong phai shift that</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">Entry truoc khi SSL cau truc bi quet - MSS M5 co the la LTF inducement, khong phai shift that</text>
 
   <!-- WRONG sequence -->
   <text x="230" y="92" text-anchor="middle" font-size="15" font-weight="700" fill="#c0392b">SAI: vao truoc khi quet</text>

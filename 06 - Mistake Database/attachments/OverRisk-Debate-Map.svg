@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="900" fill="#ffffff"/>
+  <text x="550" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Debate Map — "0.5%/lệnh là trần cứng tuyệt đối?"</text>
+  <text x="550" y="58" text-anchor="middle" font-size="14" fill="#555">Kiến nghị: cấm tuyệt đối vượt 0.5% risk trong challenge và 6 tháng đầu live</text>
+
+  <!-- Ung ho column -->
+  <rect x="40" y="80" width="480" height="34" rx="6" fill="#2e7d32"/>
+  <text x="280" y="103" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">PHE ỦNG HỘ — giữ rule cứng</text>
+
+  <rect x="40" y="124" width="480" height="78" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="55" y="146" font-size="12" fill="#1b5e20" font-weight="bold">1. Toán học rào cản cứng không khoan nhượng</text>
+  <text x="55" y="164" font-size="11" fill="#333">3 lệnh thua = vỡ daily; 6 lệnh = vỡ max ở 2%</text>
+  <text x="55" y="180" font-size="11" fill="#333">Đây là xác suất bình thường, không phải hiếm</text>
+
+  <rect x="40" y="210" width="480" height="78" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="55" y="232" font-size="12" fill="#1b5e20" font-weight="bold">2. Edge Tier 0 chưa đủ cơ sở chọn "lệnh nào</text>
+  <text x="55" y="248" font-size="11" fill="#333">risk cao hơn" — khả năng phân biệt phải được</text>
+  <text x="55" y="264" font-size="11" fill="#333">đo bằng dữ liệu (n≥20) trước khi tin</text>
+
+  <rect x="40" y="296" width="480" height="78" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="55" y="318" font-size="12" fill="#1b5e20" font-weight="bold">3. Chi phí phi đối xứng: thắng 2% vs 0.5%</text>
+  <text x="55" y="334" font-size="11" fill="#333">chỉ hơn 1.5%; thua đúng lúc gặp chuỗi thua</text>
+  <text x="55" y="350" font-size="11" fill="#333">có thể chấm dứt cả challenge</text>
+
+  <rect x="40" y="382" width="480" height="78" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="55" y="404" font-size="12" fill="#1b5e20" font-weight="bold">4. Rule không ngoại lệ loại bỏ bậc quyết định</text>
+  <text x="55" y="420" font-size="11" fill="#333">dễ bị cảm xúc thao túng — không còn kẽ hở</text>
+  <text x="55" y="436" font-size="11" fill="#333">biện minh ngược sau khi thua</text>
+
+  <!-- Phan doi column -->
+  <rect x="580" y="80" width="480" height="34" rx="6" fill="#c62828"/>
+  <text x="820" y="103" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">PHE PHẢN ĐỐI — rule nên mềm</text>
+
+  <rect x="580" y="124" width="480" height="78" rx="6" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="595" y="146" font-size="12" fill="#8e0000" font-weight="bold">1. Chi phí cơ hội thật: setup A+ đáng lẽ</text>
+  <text x="595" y="164" font-size="11" fill="#333">xứng đáng risk cao hơn, risk cố định lãng</text>
+  <text x="595" y="180" font-size="11" fill="#333">phí edge ở đúng nơi xác suất thắng cao nhất</text>
+
+  <rect x="580" y="210" width="480" height="78" rx="6" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="595" y="232" font-size="12" fill="#8e0000" font-weight="bold">2. Overfit ngược: chính số "0.5%" cũng là</text>
+  <text x="595" y="248" font-size="11" fill="#333">Tier 0 chưa kiểm định — áp đặt "tuyệt đối"</text>
+  <text x="595" y="264" font-size="11" fill="#333">là cứng nhắc hóa một giả thuyết</text>
+
+  <rect x="580" y="296" width="480" height="78" rx="6" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="595" y="318" font-size="12" fill="#8e0000" font-weight="bold">3. Turtle Traders, CTA chuyên nghiệp dùng</text>
+  <text x="595" y="334" font-size="11" fill="#333">size biến thiên theo volatility/tín hiệu,</text>
+  <text x="595" y="350" font-size="11" fill="#333">không % cố định tuyệt đối</text>
+
+  <rect x="580" y="382" width="480" height="78" rx="6" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="595" y="404" font-size="12" fill="#8e0000" font-weight="bold">4. Giai đoạn cần xây calibration/tâm lý</text>
+  <text x="595" y="420" font-size="11" fill="#333">ở size lớn hơn (demo/backtest) — rule</text>
+  <text x="595" y="436" font-size="11" fill="#333">cứng mãi có thể làm chậm kỹ năng này</text>
+
+  <!-- Cross arrows -->
+  <line x1="520" y1="163" x2="580" y2="248" stroke="#1565c0" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="580" y1="163" x2="520" y2="248" stroke="#1565c0" stroke-width="2" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1565c0"/>
+    </marker>
+  </defs>
+  <text x="550" y="470" text-anchor="middle" font-size="11.5" fill="#1565c0" font-weight="bold">Vòng phản hồi chéo (2 vòng, xem mục 12 chi tiết)</text>
+
+  <!-- Phan quyet box -->
+  <rect x="60" y="500" width="980" height="150" rx="10" fill="#f5f5f5" stroke="#ddd" stroke-width="2"/>
+  <text x="80" y="526" font-size="14" fill="#1a1a1a" font-weight="bold">Phán quyết có điều kiện</text>
+  <text x="80" y="548" font-size="12" fill="#333">Giai đoạn challenge / đầu live: PHE ỦNG HỘ đúng — bất đối xứng hậu quả (mất challenge vs</text>
+  <text x="80" y="566" font-size="12" fill="#333">tăng trưởng chậm) đủ mạnh để giữ rule gần-cứng.</text>
+  <text x="80" y="588" font-size="12" fill="#333">Sau khi có Tier 1 (n≥20) VÀ đã qua challenge: PHE PHẢN ĐỐI có cơ sở xem xét scale nhẹ</text>
+  <text x="80" y="606" font-size="12" fill="#333">theo Bias Tier A/B/C, nhưng vẫn giữ trần tuyệt đối (vd không quá 1%).</text>
+  <text x="80" y="630" font-size="12" fill="#c62828" font-weight="bold">Dữ liệu giải quyết tranh biện: corr(conviction_score, outcome) trên n≥30 + max drawdown thật</text>
+
+  <!-- Evidence tier strip -->
+  <rect x="60" y="670" width="980" height="50" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="550" y="700" text-anchor="middle" font-size="13" fill="#e65100" font-weight="bold">EVIDENCE TIER HIỆN TẠI: Tier 0 (giả thuyết Kelly/risk-of-ruin) — CHƯA được gọi là "doctrine"</text>
+</svg>

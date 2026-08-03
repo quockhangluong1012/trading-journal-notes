@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="780" fill="#ffffff"/>
+  <text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Audit Framework — Trading Into Unswept Liquidity</text>
+  <text x="500" y="56" text-anchor="middle" font-size="14" fill="#555">Kiểm toán Draw gate — từ log tới rule thống kê tương lai</text>
+
+  <rect x="40" y="80" width="220" height="120" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="150" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565c0">1. 10 field bắt buộc</text>
+  <text x="150" y="128" text-anchor="middle" font-size="11" fill="#333">nearest_unswept_pool_side,</text>
+  <text x="150" y="144" text-anchor="middle" font-size="11" fill="#333">pool_distance_atr,</text>
+  <text x="150" y="160" text-anchor="middle" font-size="11" fill="#333">gate_check_timestamp,</text>
+  <text x="150" y="176" text-anchor="middle" font-size="11" fill="#333">mss_timing_bars...</text>
+
+  <line x1="260" y1="140" x2="290" y2="140" stroke="#999" stroke-width="2" marker-end="url(#a6)"/>
+
+  <rect x="290" y="80" width="220" height="120" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="400" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a2c00">2. 10 câu PASS/FAIL</text>
+  <text x="400" y="128" text-anchor="middle" font-size="11" fill="#3a2c00">Gate trước entry,</text>
+  <text x="400" y="144" text-anchor="middle" font-size="11" fill="#3a2c00">cả hai phía pool,</text>
+  <text x="400" y="160" text-anchor="middle" font-size="11" fill="#3a2c00">R:R từ invalidation thật,</text>
+  <text x="400" y="176" text-anchor="middle" font-size="11" fill="#3a2c00">Scale alignment</text>
+
+  <line x1="510" y1="140" x2="540" y2="140" stroke="#999" stroke-width="2" marker-end="url(#a6)"/>
+
+  <rect x="540" y="80" width="220" height="120" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="650" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#c62828">3. Rubric A/B/C/F</text>
+  <text x="650" y="128" text-anchor="middle" font-size="11" fill="#333">A: 9-10 PASS</text>
+  <text x="650" y="144" text-anchor="middle" font-size="11" fill="#333">B: 7-8 · C: 4-6</text>
+  <text x="650" y="160" text-anchor="middle" font-size="11" fill="#333">F: 0-3 (không có</text>
+  <text x="650" y="176" text-anchor="middle" font-size="11" fill="#333">bằng chứng gate)</text>
+
+  <line x1="760" y1="140" x2="790" y2="140" stroke="#999" stroke-width="2" marker-end="url(#a6)"/>
+
+  <rect x="790" y="80" width="170" height="120" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="875" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#2e7d32">4. Hành động</text>
+  <text x="875" y="128" text-anchor="middle" font-size="11" fill="#333">A/B: giữ sample</text>
+  <text x="875" y="144" text-anchor="middle" font-size="11" fill="#333">C: nghi ngờ,</text>
+  <text x="875" y="160" text-anchor="middle" font-size="11" fill="#333">không dùng kiểm</text>
+  <text x="875" y="176" text-anchor="middle" font-size="11" fill="#333">định · F: loại</text>
+
+  <rect x="60" y="220" width="880" height="180" rx="10" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="500" y="246" text-anchor="middle" font-size="15" font-weight="bold" fill="#c62828">Red Flags</text>
+
+  <rect x="80" y="260" width="400" height="60" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="90" y="280" font-size="12" font-weight="bold" fill="#c62828">Gate timestamp sau entry</text>
+  <text x="90" y="298" font-size="11" fill="#333">Dấu hiệu gate "diễn lại" cho có,</text>
+  <text x="90" y="312" font-size="11" fill="#333">không thực hiện thật trước lệnh.</text>
+
+  <rect x="500" y="260" width="400" height="60" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="510" y="280" font-size="12" font-weight="bold" fill="#c62828">pool_distance_atr luôn tròn số</text>
+  <text x="510" y="298" font-size="11" fill="#333">Ước lượng qua loa, không đo</text>
+  <text x="510" y="312" font-size="11" fill="#333">thật từ chart.</text>
+
+  <rect x="80" y="330" width="400" height="60" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="90" y="350" font-size="12" font-weight="bold" fill="#c62828">100% case same-as-SL bị chặn</text>
+  <text x="90" y="368" font-size="11" fill="#333">Thiếu dữ liệu đối chứng — hạn</text>
+  <text x="90" y="382" font-size="11" fill="#333">chế cần nêu rõ, không phải lỗi.</text>
+
+  <rect x="500" y="330" width="400" height="60" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="510" y="350" font-size="12" font-weight="bold" fill="#c62828">MSS timing ≤0 nhưng vẫn PASS</text>
+  <text x="510" y="368" font-size="11" fill="#333">Mâu thuẫn nội bộ với rule</text>
+  <text x="510" y="382" font-size="11" fill="#333">MSS-sau-sweep, cần rà lại.</text>
+
+  <rect x="60" y="420" width="880" height="120" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="500" y="446" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">Meta-audit chính note này</text>
+  <text x="500" y="470" text-anchor="middle" font-size="12" fill="#333">n=4 đủ giả thuyết mạnh, chưa đủ rule thống kê cứng (Doctrine v2 Rule 1) — giữ ngôn ngữ đúng chuẩn.</text>
+  <text x="500" y="490" text-anchor="middle" font-size="12" fill="#333">Cả 4 case đều là lệnh THUA — thiếu case dương (Draw gate đã ngăn chặn thành công) trong log.</text>
+  <text x="500" y="510" text-anchor="middle" font-size="12" fill="#333">Chưa xác minh: pool được nhận diện lúc entry hay chỉ lúc review — ảnh hưởng độ tin cậy Tier 1.</text>
+
+  <rect x="60" y="560" width="880" height="140" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="500" y="586" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a2c00">Nhịp audit đề xuất</text>
+  <text x="500" y="610" text-anchor="middle" font-size="12" fill="#3a2c00">Trước mỗi lệnh: chạy Draw gate, ghi timestamp ngay lúc đó.</text>
+  <text x="500" y="630" text-anchor="middle" font-size="12" fill="#3a2c00">Sau mỗi lệnh thua: điền outcome_mechanism, so khớp với dự đoán trước đó.</text>
+  <text x="500" y="650" text-anchor="middle" font-size="12" fill="#3a2c00">Sau mỗi 10 lệnh: chấm rubric toàn batch, theo dõi tỷ lệ tuân thủ.</text>
+  <text x="500" y="670" text-anchor="middle" font-size="12" fill="#3a2c00">Sau n=10-15 mẫu mới: kiểm định thống kê so sánh có/không structural_liq_behind_sl.</text>
+
+  <defs>
+    <marker id="a6" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#999"/>
+    </marker>
+  </defs>
+</svg>

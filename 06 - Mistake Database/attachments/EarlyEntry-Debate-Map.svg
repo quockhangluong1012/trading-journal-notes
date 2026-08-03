@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" width="1100" height="820" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="820" fill="#ffffff"/>
+  <text x="30" y="36" font-size="22" font-weight="bold" fill="#1a1a1a">Debate Map — Sweep Bắt Buộc vs Một Dạng Xác Nhận</text>
+  <text x="30" y="58" font-size="13" fill="#555">Kiến nghị: mọi entry thiếu sweep xác nhận trước MSS phải bị cấm tuyệt đối, không ngoại lệ</text>
+
+  <rect x="30" y="80" width="500" height="470" rx="8" fill="#e8f5e9" stroke="#2e7d32"/>
+  <text x="50" y="108" font-size="16" font-weight="bold" fill="#2e7d32">ỦNG HỘ (sweep bắt buộc)</text>
+
+  <rect x="50" y="122" width="460" height="78" rx="6" fill="#ffffff" stroke="#2e7d32"/>
+  <text x="62" y="142" font-size="12" font-weight="bold" fill="#2e7d32">1. Sweep = bằng chứng nhân quả</text>
+  <text x="62" y="160" font-size="12" fill="#333">Không có sweep, MSS chỉ là tương</text>
+  <text x="62" y="176" font-size="12" fill="#333">quan không cơ chế — "xác nhận vô</text>
+  <text x="62" y="192" font-size="12" fill="#333">chủ" như note 03 đã cảnh báo.</text>
+
+  <rect x="50" y="206" width="460" height="78" rx="6" fill="#ffffff" stroke="#2e7d32"/>
+  <text x="62" y="226" font-size="12" font-weight="bold" fill="#2e7d32">2. EV mô phỏng: dương vs âm rõ</text>
+  <text x="62" y="244" font-size="12" fill="#333">Entry đúng chuẩn +0.58R; entry sớm</text>
+  <text x="62" y="260" font-size="12" fill="#333">−0.16R — chênh lệch định hướng đủ</text>
+  <text x="62" y="276" font-size="12" fill="#333">lớn để làm gate cứng tạm thời.</text>
+
+  <rect x="50" y="290" width="460" height="78" rx="6" fill="#ffffff" stroke="#2e7d32"/>
+  <text x="62" y="310" font-size="12" font-weight="bold" fill="#2e7d32">3. Ngoại lệ hợp lý = cửa cho FOMO</text>
+  <text x="62" y="328" font-size="12" fill="#333">Continuation entry giả (11.4-3) cho</text>
+  <text x="62" y="344" font-size="12" fill="#333">thấy mọi ngoại lệ có guardrail vẫn</text>
+  <text x="62" y="360" font-size="12" fill="#333">có nguy cơ bị lạm dụng.</text>
+
+  <rect x="50" y="374" width="460" height="78" rx="6" fill="#ffffff" stroke="#2e7d32"/>
+  <text x="62" y="394" font-size="12" font-weight="bold" fill="#2e7d32">4. Khoảng đệm kiểm tra chéo bias</text>
+  <text x="62" y="412" font-size="12" fill="#333">Chờ sweep cho thời gian nhận ra</text>
+  <text x="62" y="428" font-size="12" fill="#333">nếu bias/phân tích ban đầu sai —</text>
+  <text x="62" y="444" font-size="12" fill="#333">bỏ yêu cầu này mất luôn lớp bảo vệ.</text>
+
+  <rect x="50" y="466" width="460" height="70" rx="6" fill="#c8e6c9" stroke="#2e7d32"/>
+  <text x="62" y="488" font-size="12" font-weight="bold" fill="#1b4d1e">Phản hồi vòng 2:</text>
+  <text x="62" y="506" font-size="12" fill="#1b4d1e">Chọn suy luận có quy tắc rõ, đo được,</text>
+  <text x="62" y="522" font-size="12" fill="#1b4d1e">ít chỗ tự lừa — hơn absorption mơ hồ.</text>
+
+  <rect x="570" y="80" width="500" height="470" rx="8" fill="#fdecea" stroke="#c62828"/>
+  <text x="590" y="108" font-size="16" font-weight="bold" fill="#c62828">PHẢN ĐỐI (sweep chỉ 1 dạng xác nhận)</text>
+
+  <rect x="590" y="122" width="460" height="78" rx="6" fill="#ffffff" stroke="#c62828"/>
+  <text x="602" y="142" font-size="12" font-weight="bold" fill="#c62828">1. Continuation entry đã là ngoại lệ</text>
+  <text x="602" y="160" font-size="12" fill="#333">Note gốc mục 5.6 tự thừa nhận có</text>
+  <text x="602" y="176" font-size="12" fill="#333">trường hợp không cần sweep mới —</text>
+  <text x="602" y="192" font-size="12" fill="#333">đòi hỏi tuyệt đối bỏ lỡ cơ hội tốt.</text>
+
+  <rect x="590" y="206" width="460" height="78" rx="6" fill="#ffffff" stroke="#c62828"/>
+  <text x="602" y="226" font-size="12" font-weight="bold" fill="#c62828">2. Định nghĩa "sweep hợp lệ" có vùng xám</text>
+  <text x="602" y="244" font-size="12" fill="#333">Ranh giới wick sweep vs body</text>
+  <text x="602" y="260" font-size="12" fill="#333">acceptance không luôn rõ real-time —</text>
+  <text x="602" y="276" font-size="12" fill="#333">ép nhị phân lên biến số không rời rạc.</text>
+
+  <rect x="590" y="290" width="460" height="78" rx="6" fill="#ffffff" stroke="#c62828"/>
+  <text x="602" y="310" font-size="12" font-weight="bold" fill="#c62828">3. Absorption signal rộng hơn sweep hẹp</text>
+  <text x="602" y="328" font-size="12" fill="#333">Order-flow/delta cực đoan cũng là</text>
+  <text x="602" y="344" font-size="12" fill="#333">tín hiệu tương đương — retail không đo</text>
+  <text x="602" y="360" font-size="12" fill="#333">được không nghĩa là nó không tồn tại.</text>
+
+  <rect x="590" y="374" width="460" height="78" rx="6" fill="#ffffff" stroke="#c62828"/>
+  <text x="602" y="394" font-size="12" font-weight="bold" fill="#c62828">4. Trend day hiếm tạo sweep rõ</text>
+  <text x="602" y="412" font-size="12" fill="#333">Body acceptance liên tục vẫn tiếp</text>
+  <text x="602" y="428" font-size="12" fill="#333">diễn đúng hướng — rule cứng bỏ lỡ</text>
+  <text x="602" y="444" font-size="12" fill="#333">các ngày RR tốt nhất.</text>
+
+  <rect x="590" y="466" width="460" height="70" rx="6" fill="#f9d6d2" stroke="#c62828"/>
+  <text x="602" y="488" font-size="12" font-weight="bold" fill="#7a1a1a">Phản hồi vòng 2:</text>
+  <text x="602" y="506" font-size="12" fill="#7a1a1a">Thu hẹp ngoại lệ về đúng tiêu chí khách</text>
+  <text x="602" y="522" font-size="12" fill="#7a1a1a">quan đã định nghĩa — mềm có điều kiện.</text>
+
+  <path d="M 530 300 L 570 300" stroke="#777" stroke-width="2" marker-end="url(#arrowd)"/>
+  <path d="M 570 500 L 530 500" stroke="#777" stroke-width="2" marker-end="url(#arrowd2)"/>
+
+  <defs>
+    <marker id="arrowd" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#777"/>
+    </marker>
+    <marker id="arrowd2" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#777"/>
+    </marker>
+  </defs>
+
+  <rect x="30" y="565" width="1040" height="150" rx="8" fill="#e3f2fd" stroke="#1565c0"/>
+  <text x="50" y="590" font-size="15" font-weight="bold" fill="#1565c0">Phán quyết có điều kiện</text>
+  <text x="50" y="612" font-size="12" fill="#333">Entry mới, không thuộc leg đã có MSS/displacement HTF còn hiệu lực: Ủng hộ đúng — sweep bắt buộc.</text>
+  <text x="50" y="630" font-size="12" fill="#333">Continuation entry đủ 3 guardrail mục 5.6: Phản đối đúng — đòi sweep mới là quá mức.</text>
+  <text x="50" y="648" font-size="12" fill="#333">Vùng chưa giải quyết: ranh giới "trend day miễn sweep" vs "FOMO ngụy trang" — xem Case C mục 15.</text>
+  <text x="50" y="670" font-size="12" fill="#333">Dữ liệu cần: n≥20 continuation-guardrail vs n≥20 entry sớm không qua guardrail, đo winrate/RR riêng.</text>
+  <text x="50" y="688" font-size="12" fill="#333">Nếu nhóm continuation-guardrail có EV dương ổn định qua ≥2 giai đoạn thị trường → gần Tier 1.</text>
+
+  <rect x="30" y="730" width="1040" height="60" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="50" y="752" font-size="12" font-weight="bold" fill="#1a1a1a">Evidence Tier hiện tại: Tier 0</text>
+  <text x="50" y="770" font-size="12" fill="#555">Cả hai phe tranh biện trên lý thuyết order flow — chưa có backtest riêng của trader về sweep vs continuation.</text>
+</svg>

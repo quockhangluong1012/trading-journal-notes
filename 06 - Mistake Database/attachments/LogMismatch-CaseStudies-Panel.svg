@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 840" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="840" fill="#ffffff"/>
+  <text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Case Studies — Log Data Mismatch</text>
+  <text x="500" y="56" text-anchor="middle" font-size="14" fill="#555">Case A thật (đã có trong note gốc); Case B/C minh họa — KHÔNG phải log thật</text>
+
+  <rect x="40" y="80" width="280" height="330" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="180" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#c62828">Case A — Thật</text>
+  <text x="180" y="126" text-anchor="middle" font-size="11" fill="#333">EURUSD backtest</text>
+  <text x="180" y="144" text-anchor="middle" font-size="11" fill="#333">Kết quả log: Win, R=2.09</text>
+
+  <rect x="56" y="156" width="248" height="60" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="66" y="174" font-size="11" fill="#333">Filename 2026-11-30 vs</text>
+  <text x="66" y="190" font-size="11" fill="#333">trade_date 2016-11-30 —</text>
+  <text x="66" y="206" font-size="11" fill="#333">chênh 10 năm.</text>
+
+  <rect x="56" y="222" width="248" height="60" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="66" y="240" font-size="11" fill="#333">TP Summary 1.05886 vs</text>
+  <text x="66" y="256" font-size="11" fill="#333">frontmatter 1.05882 —</text>
+  <text x="66" y="272" font-size="11" fill="#333">lệch 4 điểm giá.</text>
+
+  <rect x="56" y="288" width="248" height="60" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="66" y="306" font-size="11" fill="#333">Narrative lẫn cả hai năm</text>
+  <text x="66" y="322" font-size="11" fill="#333">2016/2026 trong cùng một</text>
+  <text x="66" y="338" font-size="11" fill="#333">chuỗi sự kiện.</text>
+
+  <rect x="56" y="354" width="248" height="42" rx="6" fill="#c62828"/>
+  <text x="180" y="380" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Kết quả tốt ≠ dữ liệu sạch</text>
+
+  <rect x="360" y="80" width="280" height="330" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="500" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a2c00">Case B — Minh họa</text>
+  <text x="500" y="126" text-anchor="middle" font-size="11" fill="#333">GBPJPY, log tối giản</text>
+  <text x="500" y="144" text-anchor="middle" font-size="11" fill="#333">Kết quả: không thể audit</text>
+
+  <rect x="376" y="156" width="248" height="60" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1"/>
+  <text x="386" y="174" font-size="11" fill="#3a2c00">Chỉ ghi entry/SL/TP/kết</text>
+  <text x="386" y="190" font-size="11" fill="#3a2c00">quả — thiếu data_source,</text>
+  <text x="386" y="206" font-size="11" fill="#3a2c00">timezone_used.</text>
+
+  <rect x="376" y="222" width="248" height="60" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1"/>
+  <text x="386" y="240" font-size="11" fill="#3a2c00">6 tháng sau, nghi ngờ Kill</text>
+  <text x="386" y="256" font-size="11" fill="#3a2c00">Zone bị gán sai do lỗi</text>
+  <text x="386" y="272" font-size="11" fill="#3a2c00">timezone — không xác minh được.</text>
+
+  <rect x="376" y="288" width="248" height="60" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1"/>
+  <text x="386" y="306" font-size="11" fill="#3a2c00">Rubric chấm F — không vì</text>
+  <text x="386" y="322" font-size="11" fill="#3a2c00">chắc sai, mà vì không thể</text>
+  <text x="386" y="338" font-size="11" fill="#3a2c00">xác minh dứt điểm.</text>
+
+  <rect x="376" y="354" width="248" height="42" rx="6" fill="#f9a825"/>
+  <text x="500" y="380" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a2c00">Thiếu field phá khả năng audit</text>
+
+  <rect x="680" y="80" width="280" height="330" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="820" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565c0">Case C — Minh họa</text>
+  <text x="820" y="126" text-anchor="middle" font-size="11" fill="#333">15 note FVG-sau-sweep</text>
+  <text x="820" y="144" text-anchor="middle" font-size="11" fill="#333">Kết quả: rule sai lan rộng</text>
+
+  <rect x="696" y="156" width="248" height="60" rx="6" fill="#ffffff" stroke="#1565c0" stroke-width="1"/>
+  <text x="706" y="174" font-size="11" fill="#333">1/15 note bẩn: R ghi tay</text>
+  <text x="706" y="190" font-size="11" fill="#333">cao hơn thật +1.2R —</text>
+  <text x="706" y="206" font-size="11" fill="#333">avg hiển thị +0.53R.</text>
+
+  <rect x="696" y="222" width="248" height="60" rx="6" fill="#ffffff" stroke="#1565c0" stroke-width="1"/>
+  <text x="706" y="240" font-size="11" fill="#333">Avg R thật (loại note bẩn)</text>
+  <text x="706" y="256" font-size="11" fill="#333">chỉ +0.42R — dưới ngưỡng</text>
+  <text x="706" y="272" font-size="11" fill="#333">tăng size đã đặt ra.</text>
+
+  <rect x="696" y="288" width="248" height="60" rx="6" fill="#ffffff" stroke="#1565c0" stroke-width="1"/>
+  <text x="706" y="306" font-size="11" fill="#333">Rule "tăng size 1.5x" được</text>
+  <text x="706" y="322" font-size="11" fill="#333">ghi vào — dựa trên số liệu</text>
+  <text x="706" y="338" font-size="11" fill="#333">đã bị lệch.</text>
+
+  <rect x="696" y="354" width="248" height="42" rx="6" fill="#1565c0"/>
+  <text x="820" y="380" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">1 note bẩn → quyết định thật sai</text>
+
+  <rect x="40" y="440" width="920" height="330" rx="10" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="500" y="466" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">Bảng so sánh 3 case</text>
+
+  <line x1="60" y1="482" x2="940" y2="482" stroke="#999" stroke-width="1"/>
+  <text x="80" y="504" font-size="12" font-weight="bold" fill="#1a1a1a">Tiêu chí</text>
+  <text x="330" y="504" font-size="12" font-weight="bold" fill="#c62828">Case A (Thật)</text>
+  <text x="580" y="504" font-size="12" font-weight="bold" fill="#3a2c00">Case B (Minh họa)</text>
+  <text x="830" y="504" font-size="12" font-weight="bold" fill="#1565c0">Case C (Minh họa)</text>
+  <line x1="60" y1="514" x2="940" y2="514" stroke="#ccc" stroke-width="1"/>
+
+  <text x="80" y="536" font-size="12" fill="#333">Loại mismatch</text>
+  <text x="330" y="536" font-size="12" fill="#333">Năm + giá TP</text>
+  <text x="580" y="536" font-size="12" fill="#333">Không thể xác minh</text>
+  <text x="830" y="536" font-size="12" fill="#333">Sai nhất quán, R cao hơn thật</text>
+  <line x1="60" y1="548" x2="940" y2="548" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="570" font-size="12" fill="#333">Checklist mục 7 bắt được?</text>
+  <text x="330" y="570" font-size="12" fill="#333">Có</text>
+  <text x="580" y="570" font-size="12" fill="#333">Không</text>
+  <text x="830" y="570" font-size="12" fill="#333">Không trực tiếp</text>
+  <line x1="60" y1="582" x2="940" y2="582" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="604" font-size="12" fill="#333">Hậu quả</text>
+  <text x="330" y="604" font-size="12" fill="#333">1 note treo unresolved</text>
+  <text x="580" y="604" font-size="12" fill="#333">Không thể audit dứt điểm</text>
+  <text x="830" y="604" font-size="12" fill="#333">Rule sai lan vào quyết định size</text>
+  <line x1="60" y1="616" x2="940" y2="616" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="638" font-size="12" fill="#333">Rubric 14.3</text>
+  <text x="330" y="638" font-size="12" fill="#333">F</text>
+  <text x="580" y="638" font-size="12" fill="#333">F (không xác minh được)</text>
+  <text x="830" y="638" font-size="12" fill="#333">C (nghi ngờ, cần cách ly)</text>
+  <line x1="60" y1="650" x2="940" y2="650" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="672" font-size="12" fill="#333">Evidence Tier</text>
+  <text x="330" y="672" font-size="12" fill="#333">Tier 1 (n=1 thật)</text>
+  <text x="580" y="672" font-size="12" fill="#333">Tier 0 (minh họa)</text>
+  <text x="830" y="672" font-size="12" fill="#333">Tier 0 (minh họa)</text>
+  <line x1="60" y1="684" x2="940" y2="684" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="706" font-size="12" fill="#333">Bài học chính</text>
+  <text x="330" y="706" font-size="12" fill="#333">Kết quả tốt ≠ sạch</text>
+  <text x="580" y="706" font-size="12" fill="#333">Thiếu field phá khả năng audit</text>
+  <text x="830" y="706" font-size="12" fill="#333">Dữ liệu bẩn lan vào hành vi thật</text>
+
+  <rect x="60" y="726" width="880" height="30" rx="6" fill="#e3f2fd"/>
+  <text x="500" y="746" text-anchor="middle" font-size="11" fill="#1565c0">Case B và C là kịch bản minh họa để huấn luyện tư duy audit — không phải log giao dịch thật.</text>
+</svg>
