@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 740" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1150" height="740" fill="#ffffff"/>
+<text x="30" y="40" font-size="22" font-weight="bold" fill="#1a1a1a">WrongBias - Case Studies Panel</text>
+<text x="30" y="62" font-size="13" fill="#555">3 kịch bản minh họa (không phải log thật)</text>
+
+<rect x="30" y="90" width="350" height="600" rx="8" fill="#c62828" fill-opacity="0.06" stroke="#c62828" stroke-width="1.5"/>
+<text x="50" y="118" font-size="16" font-weight="bold" fill="#c62828">Case A - Thất bại</text>
+<text x="50" y="140" font-size="13" fill="#1a1a1a">EURUSD D1/H4, đầu tuần</text>
+<polyline points="55,280 90,270 125,275 160,255 195,240 230,220 265,210 300,195 335,180" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="55" y1="220" x2="335" y2="220" stroke="#c62828" stroke-dasharray="4,3"/>
+<text x="60" y="215" font-size="12" fill="#c62828">entry short 1.09020 (SAI)</text>
+<line x1="55" y1="180" x2="335" y2="180" stroke="#c62828" stroke-dasharray="2,2"/>
+<text x="60" y="176" font-size="11" fill="#c62828">SL 1.09180</text>
+<text x="50" y="330" font-size="13" fill="#1a1a1a">Dealing range vẽ sai biên</text>
+<text x="50" y="348" font-size="13" fill="#1a1a1a">(swing nhỏ thay vì D1 thật)</text>
+<text x="50" y="372" font-size="13" fill="#1a1a1a">Bias short sai, giá tăng</text>
+<text x="50" y="390" font-size="13" fill="#1a1a1a">mạnh đúng hướng bias thật</text>
+<text x="50" y="414" font-size="13" fill="#1a1a1a">Kết quả: -$50, giá lên 1.0948</text>
+<rect x="50" y="450" width="310" height="60" rx="4" fill="#ffffff" stroke="#c62828"/>
+<text x="60" y="472" font-size="12" fill="#c62828" font-weight="bold">Bài học</text>
+<text x="60" y="492" font-size="12" fill="#1a1a1a">Biên dealing range sai làm sai</text>
+<text x="60" y="506" font-size="12" fill="#1a1a1a">toàn bộ premium/discount</text>
+
+<rect x="400" y="90" width="350" height="600" rx="8" fill="#2e7d32" fill-opacity="0.06" stroke="#2e7d32" stroke-width="1.5"/>
+<text x="420" y="118" font-size="16" font-weight="bold" fill="#2e7d32">Case B - Đúng quy trình</text>
+<text x="420" y="140" font-size="13" fill="#1a1a1a">EURUSD, cùng setup</text>
+<polyline points="425,280 460,270 495,275 530,255 565,240 600,255 635,220 670,180 700,150" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="565" y1="240" x2="700" y2="240" stroke="#2e7d32" stroke-dasharray="4,3"/>
+<text x="425" y="235" font-size="12" fill="#2e7d32">entry long 1.08720 (đúng)</text>
+<text x="705" y="152" font-size="12" fill="#2e7d32">TP 1.0945</text>
+<text x="420" y="330" font-size="13" fill="#1a1a1a">Biên dealing range đúng,</text>
+<text x="420" y="348" font-size="13" fill="#1a1a1a">bias long Tier A, chờ sweep</text>
+<text x="420" y="372" font-size="13" fill="#1a1a1a">+MSS+FVG thật mới entry</text>
+<text x="420" y="396" font-size="13" fill="#1a1a1a">Kết quả: WIN +$182.5</text>
+<rect x="420" y="450" width="310" height="60" rx="4" fill="#ffffff" stroke="#2e7d32"/>
+<text x="430" y="472" font-size="12" fill="#2e7d32" font-weight="bold">Bài học</text>
+<text x="430" y="492" font-size="12" fill="#1a1a1a">Bias đúng + chờ đúng trigger</text>
+<text x="430" y="506" font-size="12" fill="#1a1a1a">= hai lớp bằng chứng độc lập</text>
+
+<rect x="770" y="90" width="350" height="600" rx="8" fill="#f9a825" fill-opacity="0.10" stroke="#f9a825" stroke-width="1.5"/>
+<text x="790" y="118" font-size="16" font-weight="bold" fill="#3a2c00">Case C - Vùng xám</text>
+<text x="790" y="140" font-size="13" fill="#1a1a1a">GBPUSD, D1 long / H4 short</text>
+<polyline points="795,220 830,235 865,250 900,265 935,255 970,230 1005,200" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<text x="795" y="200" font-size="12" fill="#3a2c00">D1: target lên (Tier A)</text>
+<text x="890" y="280" font-size="11" fill="#3a2c00">H4: MSS xuống (nested)</text>
+<text x="790" y="340" font-size="13" fill="#1a1a1a">D1 long rõ (Tier A) nhưng</text>
+<text x="790" y="358" font-size="13" fill="#1a1a1a">H4 có MSS xuống ngắn hạn</text>
+<text x="790" y="382" font-size="13" fill="#1a1a1a">HTF=target, LTF=trigger:</text>
+<text x="790" y="400" font-size="13" fill="#1a1a1a">dùng nhịp giảm H4 làm entry</text>
+<rect x="790" y="450" width="310" height="60" rx="4" fill="#ffffff" stroke="#f9a825"/>
+<text x="800" y="472" font-size="12" fill="#3a2c00" font-weight="bold">Bài học</text>
+<text x="800" y="492" font-size="12" fill="#1a1a1a">Mâu thuẫn timeframe có thể là</text>
+<text x="800" y="506" font-size="12" fill="#1a1a1a">bổ sung vai trò, không phải bias sai</text>
+</svg>

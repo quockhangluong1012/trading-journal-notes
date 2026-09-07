@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480.0" y="36.0" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">CE — Quy ước 50%, không phải hằng số toán học</text>
+<line x1="100.0" y1="140.0" x2="860.0" y2="140.0" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="100.0" y1="420.0" x2="860.0" y2="420.0" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="100.0" y1="280.0" x2="860.0" y2="280.0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 4"/>
+<rect x="100.0" y="140.0" width="760.0" height="140.0" rx="0" fill="rgba(239,68,68,0.08)" stroke="none" stroke-width="1.5"/>
+<rect x="100.0" y="280.0" width="760.0" height="140.0" rx="0" fill="rgba(34,197,94,0.08)" stroke="none" stroke-width="1.5"/>
+<rect x="100.0" y="140.0" width="760.0" height="280.0" rx="0" fill="none" stroke="#334155" stroke-width="1.5"/>
+<text x="480.0" y="180.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle">Premium — vùng đắt, ưu tiên SELL setup nội range</text>
+<text x="480.0" y="400.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle">Discount — vùng rẻ, ưu tiên BUY setup nội range</text>
+<text x="860.0" y="272.0" font-size="13" font-weight="400" fill="#38bdf8" text-anchor="end">CE (50%)</text>
+<text x="480.0" y="470.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">CE là quy ước 50%, không phải mức giá có cơ sở toán học đặc biệt</text>
+</svg>

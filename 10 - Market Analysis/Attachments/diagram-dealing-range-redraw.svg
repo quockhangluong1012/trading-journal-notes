@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="640" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">NDX (US Tech 100) — D1 Dealing Range: Redraw sau Sweep EQL (05/08/2026)</text>
+
+  <!-- Chart plot area border -->
+  <rect x="70" y="45" width="750" height="525" fill="#fafafa" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Premium zone tint: from swing high (y=195) to equilibrium (y=362) -->
+  <rect x="70" y="195" width="750" height="167" fill="#3b82f6" opacity="0.07"/>
+  <text x="815" y="205" text-anchor="end" font-size="10" fill="#1d4ed8" font-weight="600">PREMIUM</text>
+
+  <!-- Discount zone tint: from equilibrium (362) to new low (529) -->
+  <rect x="70" y="362" width="750" height="167" fill="#f59e0b" opacity="0.05"/>
+  <text x="815" y="520" text-anchor="end" font-size="10" fill="#92400e" font-weight="600">DISCOUNT</text>
+
+  <!-- Reference lines -->
+  <!-- Old DR high 30,771.6 -->
+  <line x1="70" y1="87" x2="820" y2="87" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="75" y="82" font-size="11" fill="#374151" font-weight="600">30,771.6 — D1 DR High (leg lớn hơn, vẫn là mốc tham chiếu)</text>
+
+  <!-- MSS trigger 29,865.3 -->
+  <line x1="70" y1="195" x2="820" y2="195" stroke="#b45309" stroke-width="2" stroke-dasharray="8,3"/>
+  <text x="815" y="184" text-anchor="end" font-size="11" fill="#92400e" font-weight="700">29,865.3 — MSS TRIGGER (swing high chưa bị phá)</text>
+
+  <!-- Equilibrium 28,463.85 -->
+  <line x1="70" y1="362" x2="820" y2="362" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="815" y="356" text-anchor="end" font-size="10" fill="#6b7280">28,463.85 — Equilibrium (range mới 27,062.4–29,865.3)</text>
+
+  <!-- Old range low 28,215.9 - broken -->
+  <line x1="70" y1="391" x2="820" y2="391" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="2,4"/>
+  <text x="75" y="405" font-size="11" fill="#b91c1c" font-weight="600">28,215.9 — Old DR Low · BROKEN</text>
+
+  <!-- New swing low anchor 27,062.4 -->
+  <line x1="70" y1="529" x2="820" y2="529" stroke="#0f766e" stroke-width="2"/>
+  <text x="75" y="544" font-size="11" fill="#0f766e" font-weight="700">27,062.4 — Swing low mới (anchor range redraw)</text>
+
+  <!-- Sweep zone box (EQL 8/7 & 13/7) -->
+  <rect x="368" y="513" width="130" height="34" fill="#f59e0b" opacity="0.18" stroke="#b45309" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="433" y="507" text-anchor="middle" font-size="10.5" fill="#92400e" font-weight="700">EQL 8/7 &amp; 13/7 — SWEPT</text>
+
+  <!-- Candles: (x, bodyTopY, bodyBottomY, wickTopY, wickBottomY, color) -->
+  <!-- helper: green=#1b8a5a bullish, black=#26272b bearish -->
+  <g stroke="#26272b" stroke-width="1">
+    <!-- 1 -->
+    <line x1="110" x2="110" y1="143" y2="215"/>
+    <rect x="102" y="155" width="16" height="48" fill="#1b8a5a" stroke="#1b8a5a"/>
+    <!-- 2 -->
+    <line x1="140" x2="140" y1="96" y2="179"/>
+    <rect x="132" y="108" width="16" height="59" fill="#1b8a5a" stroke="#1b8a5a"/>
+    <!-- 3 -->
+    <line x1="170" x2="170" y1="87" y2="131"/>
+    <rect x="162" y="87" width="16" height="33" fill="#1b8a5a" stroke="#1b8a5a"/>
+    <!-- 4 -->
+    <line x1="200" x2="200" y1="87" y2="149"/>
+    <rect x="192" y="96" width="16" height="47" fill="#26272b"/>
+    <!-- 5 -->
+    <line x1="230" x2="230" y1="131" y2="215"/>
+    <rect x="222" y="143" width="16" height="60" fill="#26272b"/>
+    <!-- 6 -->
+    <line x1="260" x2="260" y1="149" y2="203"/>
+    <rect x="252" y="161" width="16" height="24" fill="#1b8a5a" stroke="#1b8a5a"/>
+    <!-- 7 -->
+    <line x1="290" x2="290" y1="167" y2="245"/>
+    <rect x="282" y="178" width="16" height="61" fill="#26272b"/>
+    <!-- 8 -->
+    <line x1="320" x2="320" y1="227" y2="304"/>
+    <rect x="312" y="238" width="16" height="60" fill="#26272b"/>
+    <!-- 9 -->
+    <line x1="350" x2="350" y1="292" y2="369"/>
+    <rect x="342" y="298" width="16" height="60" fill="#26272b"/>
+    <!-- 10: closes below old range low (391) -->
+    <line x1="380" x2="380" y1="357" y2="453"/>
+    <rect x="372" y="369" width="16" height="60" fill="#26272b"/>
+    <!-- 11 -->
+    <line x1="410" x2="410" y1="405" y2="489"/>
+    <rect x="402" y="417" width="16" height="60" fill="#26272b"/>
+    <!-- 12: sweep candle, long lower wick to 27,062.4 (y=529) -->
+    <line x1="440" x2="440" y1="399" y2="529"/>
+    <rect x="432" y="405" width="16" height="48" fill="#26272b"/>
+    <!-- 13: large bullish displacement candle -->
+    <line x1="470" x2="470" y1="227" y2="459"/>
+    <rect x="462" y="239" width="16" height="214" fill="#1b8a5a" stroke="#1b8a5a"/>
+    <!-- 14 -->
+    <line x1="500" x2="500" y1="191" y2="245"/>
+    <rect x="492" y="203" width="16" height="36" fill="#1b8a5a" stroke="#1b8a5a"/>
+    <!-- 15 -->
+    <line x1="530" x2="530" y1="179" y2="215"/>
+    <rect x="522" y="185" width="16" height="18" fill="#1b8a5a" stroke="#1b8a5a"/>
+    <!-- 16: current candle, testing 29,865.3 -->
+    <line x1="560" x2="560" y1="199" y2="245"/>
+    <rect x="552" y="208" width="16" height="31" fill="#1b8a5a" stroke="#1b8a5a"/>
+  </g>
+
+  <!-- Annotation callouts -->
+  <line x1="330" x2="378" y1="352" y2="378" stroke="#b91c1c" stroke-width="1"/>
+  <text x="235" y="335" text-anchor="middle" font-size="9.5" fill="#b91c1c">Body close &lt; 28,215.9,<tspan x="235" dy="11">nhiều nến → ACCEPTANCE,</tspan><tspan x="235" dy="11">không phải raid</tspan></text>
+
+  <text x="660" y="500" text-anchor="middle" font-size="9.5" fill="#0f766e" font-weight="600">Sweep EQL 8/7 &amp; 13/7 (~27,000–27,150),<tspan x="660" dy="11">wick chạm 27,062.4 → nến displacement</tspan><tspan x="660" dy="11">bullish đảo chiều ngay sau</tspan></text>
+
+  <line x1="560" x2="592" y1="220" y2="197" stroke="#92400e" stroke-width="1.2" stroke-dasharray="3,2" marker-end="url(#arrow)"/>
+  <text x="596" y="240" font-size="9.5" fill="#92400e" font-weight="700">Đóng thân + high hiện tại<tspan x="596" dy="11">(29,758.1 / 29,834.4)</tspan><tspan x="596" dy="11">vẫn CHƯA vượt 29,865.3</tspan><tspan x="596" dy="11">→ MSS CHƯA xác nhận</tspan></text>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#92400e"/>
+    </marker>
+  </defs>
+
+  <!-- Legend -->
+  <g font-size="10.5" fill="#374151">
+    <rect x="70" y="584" width="14" height="10" fill="#1b8a5a"/>
+    <text x="88" y="593">Nến tăng (bullish)</text>
+    <rect x="230" y="584" width="14" height="10" fill="#26272b"/>
+    <text x="248" y="593">Nến giảm (bearish)</text>
+    <rect x="390" y="583" width="14" height="12" fill="#f59e0b" opacity="0.25" stroke="#b45309"/>
+    <text x="408" y="593">Vùng liquidity đã bị quét (named pool)</text>
+    <rect x="640" y="583" width="14" height="12" fill="#3b82f6" opacity="0.12"/>
+    <text x="658" y="593">Premium zone (range mới)</text>
+  </g>
+  <text x="70" y="615" font-size="10" fill="#9ca3af">Sơ đồ minh hoạ mang tính khái quát cấu trúc — không phải render 1:1 từng nến thật trên TradingView.</text>
+</svg>

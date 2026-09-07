@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">XAUUSD Long NY AM 14/01/2026 — MSS đẹp, chết vì H4 FVG đối diện (-1R)</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Tái dựng minh họa từ mẫu backtest — cổng HTF opposing FVG bị bỏ qua</text>
+
+  <!-- H4 context strip -->
+  <rect x="40" y="100" width="1200" height="150" rx="8" fill="#131722" stroke="#2a2e39"/>
+  <text x="60" y="124" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">H4 context — bias Bullish, nhưng bearish FVG chưa rebalance ngay trên đầu</text>
+
+  <rect x="80" y="160" width="120" height="70" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="86" y="220" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#4a90d9">H4 bull OB</text>
+  <text x="86" y="150" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">2,038-2,041</text>
+
+  <rect x="700" y="150" width="220" height="50" fill="#ff6b6b" opacity="0.16" stroke="#ff6b6b" stroke-dasharray="6 4"/>
+  <text x="710" y="145" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">H4 bearish FVG unmitigated 2,058-2,064</text>
+
+  <line x1="80" y1="195" x2="1200" y2="195" stroke="#787b86" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="1000" y="190" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Target ước tính 2,053 chỉ = 1.8R</text>
+
+  <line x1="40" y1="280" x2="1240" y2="280" stroke="#2a2e39" stroke-width="1"/>
+  <text x="40" y="305" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#d1d4dc">M5 — 8:42-9:20 NY: sweep + MSS đẹp, nhưng room bị chắn</text>
+
+  <!-- price axis labels -->
+  <text x="1160" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#565b66">2,053</text>
+  <text x="1220" y="470" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#565b66">2,045</text>
+  <text x="1160" y="580" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#565b66">2,038</text>
+  <text x="1160" y="660" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#565b66">2,032</text>
+
+  <!-- leg down into SSL sweep -->
+  <g>
+    <line x1="100" y1="420" x2="100" y2="500" stroke="#ef5350" stroke-width="1"/>
+    <rect x="92" y="430" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="140" y1="450" x2="140" y2="540" stroke="#ef5350" stroke-width="1"/>
+    <rect x="132" y="460" width="16" height="60" rx="1" fill="#ef5350"/>
+  </g>
+  <line x1="180" y1="500" x2="180" y2="600" stroke="#ef5350" stroke-width="1"/>
+  <rect x="172" y="510" width="16" height="70" rx="1" fill="#ef5350"/>
+  <line x1="60" y1="590" x2="900" y2="590" stroke="#b48ead" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="65" y="608" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b48ead">SSL 2,036.40 sweep 8:47</text>
+
+  <!-- MSS displacement -->
+  <line x1="220" y1="380" x2="220" y2="570" stroke="#26a69a" stroke-width="1"/>
+  <rect x="212" y="390" width="16" height="150" rx="1" fill="#26a69a"/>
+  <line x1="260" y1="350" x2="260" y2="420" stroke="#787b86" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="196" y="345" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">LH 2,039.80</text>
+  <rect x="280" y="390" width="70" height="70" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="285" y="475" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#4a90d9">M5 FVG</text>
+  <text x="40" y="667" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">MSS bullish 8:53: body lớn, phá LH, để lại FVG</text>
+
+  <g>
+    <line x1="380" y1="360" x2="380" y2="440" stroke="#26a69a" stroke-width="1"/>
+    <rect x="372" y="370" width="16" height="60" rx="1" fill="#26a69a"/>
+  </g>
+
+  <!-- entry retrace -->
+  <line x1="420" y1="400" x2="420" y2="460" stroke="#ef5350" stroke-width="1"/>
+  <rect x="412" y="410" width="16" height="40" rx="1" fill="#ef5350"/>
+  <line x1="460" y1="300" x2="430" y2="420" stroke="#f2c94c" stroke-width="1.5"/>
+  <circle cx="420" cy="430" r="4" fill="#f2c94c"/>
+  <text x="330" y="327" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Entry 2,041.10 (FVG 50%) 9:02</text>
+
+  <!-- SL -->
+  <line x1="60" y1="605" x2="870" y2="605" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="60" y="645" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">SL 2,036.00 (dưới sweep low)</text>
+
+  <!-- TP planned vs actual -->
+  <line x1="60" y1="360" x2="870" y2="360" stroke="#26a69a" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="550" y="353" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">TP kế hoạch 2,053.00 (2.35R) — nằm TRONG H4 FVG</text>
+
+  <!-- price runs up then rejects at 2044.80 before FVG even -->
+  <g>
+    <line x1="560" y1="380" x2="560" y2="440" stroke="#26a69a" stroke-width="1"/>
+    <rect x="552" y="390" width="16" height="40" rx="1" fill="#26a69a"/>
+    <line x1="600" y1="360" x2="600" y2="420" stroke="#26a69a" stroke-width="1"/>
+    <rect x="592" y="370" width="16" height="40" rx="1" fill="#26a69a"/>
+  </g>
+  <line x1="640" y1="380" x2="640" y2="440" stroke="#ef5350" stroke-width="1"/>
+  <rect x="632" y="390" width="16" height="40" rx="1" fill="#ef5350"/>
+  <line x1="680" y1="400" x2="680" y2="470" stroke="#ef5350" stroke-width="1"/>
+  <rect x="672" y="410" width="16" height="50" rx="1" fill="#ef5350"/>
+  <text x="555" y="470" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">Giá bò lên 2,044.80 rồi lùi</text>
+  <text x="555" y="488" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">— chưa đủ đà</text>
+
+  <line x1="720" y1="420" x2="720" y2="500" stroke="#ef5350" stroke-width="1"/>
+  <rect x="712" y="430" width="16" height="60" rx="1" fill="#ef5350"/>
+  <line x1="760" y1="440" x2="760" y2="530" stroke="#ef5350" stroke-width="1"/>
+  <rect x="752" y="450" width="16" height="70" rx="1" fill="#ef5350"/>
+  <line x1="800" y1="470" x2="800" y2="600" stroke="#ef5350" stroke-width="1"/>
+  <rect x="792" y="480" width="16" height="110" rx="1" fill="#ef5350"/>
+  <text x="700" y="640" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">10:05 — nến giảm đóng qua SL, quét 2,036.00</text>
+
+  <line x1="800" y1="605" x2="800" y2="625" stroke="#ff6b6b" stroke-width="2"/>
+  <text x="700" y="600" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">SL hit -1R</text>
+
+  <rect x="900" y="360" width="300" height="250" rx="8" fill="#131722" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="920" y="390" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff6b6b">Vì sao thua dù MSS đúng</text>
+  <text x="920" y="416" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Room tới H4 bearish FVG chỉ 1.8R</text>
+  <text x="920" y="440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">2,058-2,064 — chưa từng rebalance</text>
+  <text x="920" y="464" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">Đội bán còn "hàng" bảo vệ vùng đó</text>
+  <text x="920" y="496" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Giá chạm 2,044.80 (52% đường tới FVG)</text>
+  <text x="920" y="518" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">rồi bị bán lại — đúng phản ứng "fade"</text>
+  <text x="920" y="550" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">MSS + sweep đúng KHÔNG đủ nếu</text>
+  <text x="920" y="572" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">HTF POI đối diện chưa được xử lý</text>
+
+  <text x="40" y="760" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">XAUUSD M5/H4 · minh họa tái dựng từ mẫu backtest — giá tham khảo vùng 2,030-2,065 tháng 1/2026</text>
+</svg>

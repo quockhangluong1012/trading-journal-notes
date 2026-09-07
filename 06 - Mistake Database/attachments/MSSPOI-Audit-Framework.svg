@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" width="1100" height="700" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="700" fill="#ffffff"/>
+  <text x="30" y="36" font-size="22" font-weight="bold" fill="#1a1a1a">Audit Framework — MSS Ngoài Vùng POI</text>
+  <text x="30" y="58" font-size="13" fill="#555">Pipeline từ log đủ field đến hành động cụ thể, kèm khối red flags</text>
+
+  <rect x="30" y="80" width="230" height="140" rx="8" fill="#e3f2fd" stroke="#1565c0"/>
+  <text x="45" y="104" font-size="13" font-weight="bold" fill="#1565c0">1. Log fields</text>
+  <text x="45" y="124" font-size="11.5" fill="#333">poi_identified_before_mss,</text>
+  <text x="45" y="140" font-size="11.5" fill="#333">poi_criteria_score,</text>
+  <text x="45" y="156" font-size="11.5" fill="#333">entry_pct_in_range,</text>
+  <text x="45" y="172" font-size="11.5" fill="#333">poi_buffer_pct,</text>
+  <text x="45" y="188" font-size="11.5" fill="#333">distance_to_ce_pct,</text>
+  <text x="45" y="204" font-size="11.5" fill="#333">mss_in_poi...</text>
+
+  <path d="M 260 150 L 290 150" stroke="#1565c0" stroke-width="2" marker-end="url(#a1)"/>
+
+  <rect x="295" y="80" width="230" height="140" rx="8" fill="#e3f2fd" stroke="#1565c0"/>
+  <text x="310" y="104" font-size="13" font-weight="bold" fill="#1565c0">2. 12 câu PASS/FAIL</text>
+  <text x="310" y="124" font-size="11.5" fill="#333">POI trước MSS? Đạt ≥4/5</text>
+  <text x="310" y="140" font-size="11.5" fill="#333">tiêu chí? Ngoài dải EQ</text>
+  <text x="310" y="156" font-size="11.5" fill="#333">45-55%? Timeframe ≥H1?</text>
+  <text x="310" y="172" font-size="11.5" fill="#333">Buffer đúng quy tắc trước?</text>
+  <text x="310" y="188" font-size="11.5" fill="#333">Đã test qua CE?</text>
+
+  <path d="M 525 150 L 555 150" stroke="#f9a825" stroke-width="2" marker-end="url(#a2)"/>
+
+  <rect x="560" y="80" width="230" height="140" rx="8" fill="#fff8e1" stroke="#f9a825"/>
+  <text x="575" y="104" font-size="13" font-weight="bold" fill="#3a2c00">3. Rubric A-F</text>
+  <text x="575" y="124" font-size="11.5" fill="#3a2c00">A: 11-12 PASS</text>
+  <text x="575" y="140" font-size="11.5" fill="#3a2c00">B: 9-10 PASS</text>
+  <text x="575" y="156" font-size="11.5" fill="#3a2c00">C: 6-8 PASS</text>
+  <text x="575" y="172" font-size="11.5" fill="#3a2c00">F: ≤5 PASS</text>
+  <text x="575" y="188" font-size="11.5" fill="#3a2c00">(trên 12 câu)</text>
+
+  <path d="M 790 150 L 820 150" stroke="#2e7d32" stroke-width="2" marker-end="url(#a3)"/>
+
+  <rect x="825" y="80" width="245" height="140" rx="8" fill="#e8f5e9" stroke="#2e7d32"/>
+  <text x="840" y="104" font-size="13" font-weight="bold" fill="#2e7d32">4. Hành động</text>
+  <text x="840" y="124" font-size="11.5" fill="#333">A: tiếp tục, review sau 20</text>
+  <text x="840" y="140" font-size="11.5" fill="#333">B: siết tiêu chí/buffer POI</text>
+  <text x="840" y="156" font-size="11.5" fill="#333">C: dừng entry buffer&lt;0</text>
+  <text x="840" y="172" font-size="11.5" fill="#333">F: cấm entry sweep-MSS-FVG</text>
+  <text x="840" y="188" font-size="11.5" fill="#333">tới khi đạt B+ x10 lệnh</text>
+
+  <rect x="30" y="245" width="1040" height="180" rx="8" fill="#fdecea" stroke="#c62828"/>
+  <text x="50" y="272" font-size="15" font-weight="bold" fill="#c62828">Red flags khi audit</text>
+  <text x="50" y="298" font-size="12.5" fill="#333">• Vẽ POI sau khi biết kết quả — ảnh screenshot_pre_mss có timestamp SAU thời điểm MSS.</text>
+  <text x="50" y="320" font-size="12.5" fill="#333">• Timeframe shopping — poi_htf ghi H1 nhưng thực chất chỉ là OB nhỏ tìm trên M15/M5.</text>
+  <text x="50" y="342" font-size="12.5" fill="#333">• poi_criteria_score luôn đúng ngưỡng tối thiểu 4/5 — dấu hiệu chấm co giãn theo ý muốn.</text>
+  <text x="50" y="364" font-size="12.5" fill="#333">• poi_buffer_pct âm xuất hiện thường xuyên hơn = 0 — buffer trở thành quy tắc chính, không ngoại lệ.</text>
+  <text x="50" y="390" font-size="12.5" font-weight="bold" fill="#7a1a1a">Nếu ≥2 red flags xuất hiện cùng lúc trong 10 lệnh gần nhất → hạ rubric 1 bậc bất kể điểm PASS.</text>
+
+  <rect x="30" y="440" width="510" height="150" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="50" y="465" font-size="14" font-weight="bold" fill="#1a1a1a">Meta-audit chính note này</text>
+  <text x="50" y="488" font-size="12" fill="#333">Evidence tier: Tier 0. 5 tiêu chí POI validity</text>
+  <text x="50" y="506" font-size="12" fill="#333">là tổng hợp lý thuyết SMC, chưa kiểm định</text>
+  <text x="50" y="524" font-size="12" fill="#333">riêng trên dữ liệu trader này.</text>
+  <text x="50" y="546" font-size="12" fill="#333">Sample size: 1 trade log tham chiếu duy nhất.</text>
+
+  <rect x="560" y="440" width="510" height="150" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="580" y="465" font-size="14" font-weight="bold" fill="#1a1a1a">Nhịp audit</text>
+  <text x="580" y="488" font-size="12" fill="#333">Hàng ngày: đối chiếu POI trước MSS, dải</text>
+  <text x="580" y="506" font-size="12" fill="#333">EQ, buffer cuối phiên.</text>
+  <text x="580" y="524" font-size="12" fill="#333">Hàng tuần: chạy 12 câu, theo dõi buffer âm.</text>
+  <text x="580" y="546" font-size="12" fill="#333">Hàng tháng: vẽ đường cong winrate theo vị trí.</text>
+
+  <defs>
+    <marker id="a1" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1565c0"/></marker>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#f9a825"/></marker>
+    <marker id="a3" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2e7d32"/></marker>
+  </defs>
+
+  <rect x="30" y="610" width="1040" height="80" rx="8" fill="#e3f2fd" stroke="#1565c0"/>
+  <text x="50" y="635" font-size="12" font-weight="bold" fill="#1565c0">Auditor</text>
+  <text x="50" y="655" font-size="12" fill="#333">Bản thân (dựa poi_criteria_score/poi_buffer_pct đo được, không cảm nhận) + kiểm tra chéo với note 02 (sweep) + review định kỳ.</text>
+  <text x="50" y="673" font-size="12" fill="#333">Không chỉnh sửa log sau khi biết kết quả — đối chiếu timestamp bắt buộc.</text>
+</svg>

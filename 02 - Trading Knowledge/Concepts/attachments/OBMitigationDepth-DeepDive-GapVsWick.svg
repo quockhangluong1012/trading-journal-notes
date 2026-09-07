@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="320" y1="70" x2="320" y2="500"/>
+    <line x1="640" y1="70" x2="640" y2="500"/>
+  </g>
+
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">Ba kieu "cham" Order Block: Test dan, Wick-only, Gap-mitigated</text>
+
+  <!-- Panel 1: normal test -->
+  <text x="30" y="75" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#26a69a">1. Test dan binh thuong</text>
+  <rect x="40" y="200" width="240" height="60" fill="rgba(255,152,0,0.25)"/>
+  <text x="40" y="195" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Vung OB</text>
+  <line x1="40" y1="230" x2="280" y2="230" stroke="#d1d4dc" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="285" y="234" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc">CE</text>
+
+  <rect x="70" y="205" width="10" height="14" fill="#ef5350"/><line x1="75" y1="200" x2="75" y2="222" stroke="#ef5350" stroke-width="1.5"/>
+  <rect x="90" y="215" width="10" height="16" fill="#ef5350"/><line x1="95" y1="208" x2="95" y2="235" stroke="#ef5350" stroke-width="1.5"/>
+  <rect x="110" y="225" width="10" height="18" fill="#ef5350"/><line x1="115" y1="218" x2="115" y2="248" stroke="#ef5350" stroke-width="1.5"/>
+  <rect x="130" y="238" width="10" height="16" fill="#26a69a"/><line x1="135" y1="232" x2="135" y2="258" stroke="#26a69a" stroke-width="1.5"/>
+
+  <text x="40" y="290" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Wick va body deu tang dan sau tung nen</text>
+  <text x="40" y="310" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">depth_wick va depth_body gan nhau</text>
+  <text x="40" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#26a69a">-&gt; Dang tin, phan anh dung qua trinh</text>
+
+  <!-- Panel 2: wick only -->
+  <text x="350" y="75" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#f2c94c">2. Wick-only (cham roi bat ngay)</text>
+  <rect x="360" y="200" width="240" height="60" fill="rgba(255,152,0,0.25)"/>
+  <text x="360" y="195" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Vung OB</text>
+  <line x1="360" y1="230" x2="600" y2="230" stroke="#d1d4dc" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="605" y="234" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc">CE</text>
+
+  <!-- long wick to distal, small body near top -->
+  <rect x="450" y="205" width="14" height="10" fill="#26a69a"/>
+  <line x1="457" y1="198" x2="457" y2="258" stroke="#26a69a" stroke-width="2"/>
+  <text x="470" y="255" font-family="Arial, sans-serif" font-size="12" fill="#f2c94c">Wick cham distal</text>
+  <text x="470" y="215" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc">Body dong tren</text>
+
+  <text x="360" y="290" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">depth_wick approx 95%, depth_body approx 35%</text>
+  <text x="360" y="310" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Co the la quet thanh khoan, than van ton trong OB</text>
+  <text x="360" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f2c94c">-&gt; Uu tien body-based de quyet dinh vai tro</text>
+
+  <!-- Panel 3: gap mitigated -->
+  <text x="670" y="75" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#ef5350">3. Gap-mitigated (nhay coc)</text>
+  <rect x="680" y="200" width="240" height="60" fill="rgba(255,152,0,0.25)"/>
+  <text x="680" y="195" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Vung OB</text>
+
+  <!-- candle before gap, far above -->
+  <rect x="700" y="110" width="12" height="16" fill="#26a69a"/><line x1="706" y1="103" x2="706" y2="132" stroke="#26a69a" stroke-width="1.5"/>
+  <text x="695" y="150" font-family="Arial, sans-serif" font-size="12" fill="#d1d4dc">Dong cua truoc</text>
+  <!-- gap arrow -->
+  <line x1="706" y1="135" x2="706" y2="240" stroke="#ef5350" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="715" y="180" font-family="Arial, sans-serif" font-size="12" fill="#ef5350">GAP - khong giao dich</text>
+  <!-- candle after gap, inside/through OB -->
+  <rect x="750" y="235" width="14" height="40" fill="#ef5350"/><line x1="757" y1="228" x2="757" y2="280" stroke="#ef5350" stroke-width="2"/>
+  <text x="770" y="260" font-family="Arial, sans-serif" font-size="12" fill="#ef5350">Mo cua da trong/qua OB</text>
+
+  <text x="680" y="300" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Khong co nen "test dan" nao giua duong</text>
+  <text x="680" y="320" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Khong the danh gia phan ung binh thuong</text>
+  <text x="680" y="345" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef5350">-&gt; Gan nhan rieng, cho test lai lan hai</text>
+
+  <text x="30" y="410" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#d1d4dc">Nguyen tac chung: dong cua nen sau khi cham distal quyet dinh</text>
+  <text x="30" y="432" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">OB con giu vai tro, chuyen Breaker, hay vo hieu hoan toan.</text>
+
+  <text x="30" y="510" font-family="Arial, sans-serif" font-size="15" font-style="italic" fill="#d1d4dc">Legend: xanh=tang, do=giam, cam=vung OB, vang net dut=CE/canh bao, do net dut=gap. Minh hoa khai niem, khong phai gia lich su that.</text>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="700" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế hình thành Buy-side Liquidity (BSL)</text>
+  <text x="40" y="62" font-size="15" fill="#94a3b8">Hai nguồn buy-stop chồng lên nhau tại Equal Highs — tạo pool bị "hút" giá tới</text>
+
+  <!-- grid -->
+  <g stroke="#1c2333" stroke-width="1">
+    <line x1="40" y1="120" x2="1160" y2="120"/>
+    <line x1="40" y1="220" x2="1160" y2="220"/>
+    <line x1="40" y1="320" x2="1160" y2="320"/>
+    <line x1="40" y1="420" x2="1160" y2="420"/>
+    <line x1="40" y1="520" x2="1160" y2="520"/>
+  </g>
+
+  <!-- Equal highs level line -->
+  <line x1="120" y1="220" x2="900" y2="220" stroke="#eab308" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="910" y="225" font-size="15" fill="#eab308">Equal Highs (EQH)</text>
+
+  <!-- candles forming swing 1 -->
+  <g>
+    <line x1="150" y1="360" x2="150" y2="222" stroke="#22c55e" stroke-width="2"/>
+    <rect x="141" y="240" width="18" height="100" fill="#22c55e"/>
+    <line x1="190" y1="380" x2="190" y2="440" stroke="#ef4444" stroke-width="2"/>
+    <rect x="181" y="340" width="18" height="70" fill="#ef4444"/>
+  </g>
+
+  <!-- candles forming swing 2 (equal high) -->
+  <g>
+    <line x1="330" y1="440" x2="330" y2="330" stroke="#22c55e" stroke-width="2"/>
+    <rect x="321" y="345" width="18" height="90" fill="#22c55e"/>
+    <line x1="370" y1="222" x2="370" y2="240" stroke="#22c55e" stroke-width="2"/>
+    <rect x="361" y="222" width="18" height="20" fill="#22c55e"/>
+    <line x1="410" y1="222" x2="410" y2="400" stroke="#ef4444" stroke-width="2"/>
+    <rect x="401" y="300" width="18" height="60" fill="#ef4444"/>
+  </g>
+
+  <!-- annotation: stop cluster above EQH -->
+  <rect x="120" y="140" width="780" height="60" fill="#1e293b" stroke="#334155" rx="6"/>
+  <text x="140" y="163" font-size="15" fill="#e2e8f0">Buy-stop cluster: (1) SL của short-sellers  +  (2) buy-stop breakout traders</text>
+  <text x="140" y="184" font-size="14" fill="#94a3b8">→ Hai nguồn lệnh BUY chờ khớp cùng nằm ngay trên EQH — pool càng dày càng hấp dẫn</text>
+
+  <!-- arrow up pointing to EQH -->
+  <polygon points="330,330 320,300 340,300" fill="#f97316"/>
+  <text x="240" y="295" font-size="13" fill="#f97316">Giá bị hút lên (draw)</text>
+
+  <!-- sweep candle -->
+  <g>
+    <line x1="520" y1="440" x2="520" y2="180" stroke="#f97316" stroke-width="2.5"/>
+    <rect x="508" y="240" width="24" height="120" fill="#f97316"/>
+    <text x="545" y="200" font-size="14" fill="#f97316">Wick sweep vượt EQH</text>
+  </g>
+
+  <!-- reclaim / close back below -->
+  <g>
+    <line x1="590" y1="260" x2="590" y2="440" stroke="#ef4444" stroke-width="2"/>
+    <rect x="578" y="260" width="24" height="100" fill="#ef4444"/>
+    <text x="620" y="270" font-size="14" fill="#e2e8f0">Đóng nến quay lại dưới EQH = SWEEP</text>
+  </g>
+
+  <!-- MSS down -->
+  <line x1="650" y1="410" x2="650" y2="490" stroke="#ef4444" stroke-width="2"/>
+  <rect x="638" y="410" width="24" height="80" fill="#ef4444"/>
+  <line x1="700" y1="480" x2="700" y2="560" stroke="#ef4444" stroke-width="2"/>
+  <rect x="688" y="480" width="24" height="80" fill="#ef4444"/>
+  <line x1="500" y1="440" x2="760" y2="440" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="765" y="445" font-size="13" fill="#94a3b8">STL nội bộ</text>
+  <polygon points="700,480 685,455 715,455" fill="#ef4444"/>
+  <text x="720" y="510" font-size="14" fill="#ef4444">MSS giảm xác nhận</text>
+
+  <!-- entry/stop/target box -->
+  <rect x="850" y="260" width="290" height="230" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="870" y="288" font-size="16" font-weight="bold" fill="#e2e8f0">Sau khi sweep BSL:</text>
+  <circle cx="880" cy="315" r="5" fill="#38bdf8"/>
+  <text x="895" y="320" font-size="14" fill="#38bdf8">Entry: FVG/OB sau MSS</text>
+  <circle cx="880" cy="345" r="5" fill="#ef4444"/>
+  <text x="895" y="350" font-size="14" fill="#ef4444">Stop: trên đỉnh sweep</text>
+  <circle cx="880" cy="375" r="5" fill="#a78bfa"/>
+  <text x="895" y="380" font-size="14" fill="#a78bfa">Target: SSL phía dưới</text>
+  <text x="870" y="415" font-size="13" fill="#94a3b8">Logic: BSL = nam châm hút giá,</text>
+  <text x="870" y="435" font-size="13" fill="#94a3b8">không phải kháng cự để bán mù.</text>
+  <text x="870" y="460" font-size="13" fill="#94a3b8">Chỉ Short SAU sweep + MSS,</text>
+  <text x="870" y="478" font-size="13" fill="#94a3b8">không bán ngay khi chạm đỉnh.</text>
+
+  <!-- step numbers timeline -->
+  <g font-size="14" fill="#e2e8f0">
+    <circle cx="60" cy="600" r="14" fill="#334155"/>
+    <text x="55" y="605" fill="#e2e8f0">1</text>
+    <text x="85" y="605">EQH hình thành → buy-stops tích tụ 2 nguồn</text>
+
+    <circle cx="60" cy="630" r="14" fill="#334155"/>
+    <text x="55" y="635" fill="#e2e8f0">2</text>
+    <text x="85" y="635">Giá bị hút lên, wick vượt EQH (sweep)</text>
+
+    <circle cx="600" cy="600" r="14" fill="#334155"/>
+    <text x="595" y="605" fill="#e2e8f0">3</text>
+    <text x="625" y="605">Đóng nến quay lại dưới EQH + displacement giảm</text>
+
+    <circle cx="600" cy="630" r="14" fill="#334155"/>
+    <text x="595" y="635" fill="#e2e8f0">4</text>
+    <text x="625" y="635">MSS giảm xác nhận → tìm Short reversal tại FVG/OB</text>
+  </g>
+</svg>

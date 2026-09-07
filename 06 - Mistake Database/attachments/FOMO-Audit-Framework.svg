@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="700" fill="#ffffff"/>
+  <text x="550" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Audit Framework — FOMO Entry</text>
+  <text x="550" y="58" text-anchor="middle" font-size="14" fill="#555">Pipeline kiểm toán độc lập: log đủ field → PASS/FAIL → rubric → hành động</text>
+
+  <!-- pipeline stage 1 -->
+  <rect x="40" y="90" width="230" height="120" rx="8" fill="#1565c0"/>
+  <text x="155" y="118" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#fff">1. Log đủ field</text>
+  <text x="60" y="140" font-size="11.5" fill="#fff">screenshot_pre_entry</text>
+  <text x="60" y="156" font-size="11.5" fill="#fff">checklist_score</text>
+  <text x="60" y="172" font-size="11.5" fill="#fff">poi_timeframe_locked</text>
+  <text x="60" y="188" font-size="11.5" fill="#fff">risk_pct_actual, sweep/mss/fvg</text>
+
+  <path d="M 270 150 L 305 150" stroke="#999" stroke-width="2" marker-end="url(#a1)"/>
+
+  <!-- stage 2 -->
+  <rect x="305" y="90" width="230" height="120" rx="8" fill="#1565c0"/>
+  <text x="420" y="118" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#fff">2. Bộ câu hỏi</text>
+  <text x="420" y="138" text-anchor="middle" font-size="12" fill="#fff">12 câu PASS/FAIL</text>
+  <text x="325" y="160" font-size="11.5" fill="#fff">Đo được từ log,</text>
+  <text x="325" y="176" font-size="11.5" fill="#fff">không dựa trí nhớ</text>
+  <text x="325" y="192" font-size="11.5" fill="#fff">hay cảm giác</text>
+
+  <path d="M 535 150 L 570 150" stroke="#999" stroke-width="2" marker-end="url(#a1)"/>
+
+  <!-- stage 3 -->
+  <rect x="570" y="90" width="230" height="120" rx="8" fill="#1565c0"/>
+  <text x="685" y="118" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#fff">3. Rubric A/B/C/F</text>
+  <text x="590" y="140" font-size="11.5" fill="#fff">A: 11-12/12 PASS</text>
+  <text x="590" y="156" font-size="11.5" fill="#fff">B: 8-10 · C: 5-7</text>
+  <text x="590" y="172" font-size="11.5" fill="#fff">F: 0-4 PASS</text>
+  <text x="590" y="192" font-size="11.5" fill="#fff">Điểm theo 12 câu hỏi</text>
+
+  <path d="M 800 150 L 835 150" stroke="#999" stroke-width="2" marker-end="url(#a1)"/>
+
+  <!-- stage 4 -->
+  <rect x="835" y="90" width="225" height="120" rx="8" fill="#2e7d32"/>
+  <text x="947" y="118" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#fff">4. Hành động</text>
+  <text x="855" y="140" font-size="11.5" fill="#fff">F: dừng live, quay lại</text>
+  <text x="855" y="156" font-size="11.5" fill="#fff">backtest ≥1 tuần</text>
+  <text x="855" y="172" font-size="11.5" fill="#fff">C: giảm size 50% nếu</text>
+  <text x="855" y="188" font-size="11.5" fill="#fff">≥30% lệnh trong tháng</text>
+
+  <defs>
+    <marker id="a1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- red flags box -->
+  <rect x="40" y="240" width="1020" height="180" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="60" y="266" font-size="14.5" font-weight="bold" fill="#c62828">Red Flags khi audit</text>
+  <text x="60" y="290" font-size="12.5" fill="#333">• Sửa log sau khi biết kết quả — checklist_score điền sau khi lệnh đã đóng</text>
+  <text x="60" y="310" font-size="12.5" fill="#333">• Chỉ log lệnh đẹp — số entry log thấp hơn hẳn số lệnh thực tế đã bấm trên platform</text>
+  <text x="60" y="330" font-size="12.5" fill="#333">• Định nghĩa xê dịch theo kết quả — "tại POI" khi thắng, "gần POI" khi thua cho cấu trúc giống nhau</text>
+  <text x="60" y="350" font-size="12.5" fill="#333">• Screenshot chụp sau, gắn nhãn "trước" — kiểm tra metadata thời gian tạo file</text>
+  <text x="60" y="370" font-size="12.5" fill="#333">• Checklist score luôn full 8/8 — dấu hiệu điền theo quán tính, không đánh giá thật</text>
+  <text x="60" y="396" font-size="12.5" fill="#c62828" font-weight="bold">Không log đủ field bắt buộc = không audit được = tự động xếp loại F</text>
+
+  <!-- meta-audit box -->
+  <rect x="40" y="440" width="1020" height="140" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="60" y="466" font-size="14.5" font-weight="bold" fill="#3a2c00">Meta-audit chính note này</text>
+  <text x="60" y="490" font-size="12.5" fill="#333">Evidence Tier hiện tại: Tier 0 — cơ chế và số liệu định lượng đều là suy luận/mô phỏng,</text>
+  <text x="60" y="510" font-size="12.5" fill="#333">chưa có backtest số thật (n=0 lệnh log đầy đủ theo schema tại thời điểm viết note).</text>
+  <text x="60" y="530" font-size="12.5" fill="#333">Điểm cần hạ giọng: các câu khẳng định tuyệt đối ("luôn", "chắc chắn") trong mục 3, 5 cần đọc</text>
+  <text x="60" y="550" font-size="12.5" fill="#333">kèm ngữ cảnh "theo lý thuyết ICT gốc, chưa kiểm định bằng số riêng của trader này".</text>
+  <text x="60" y="570" font-size="12.5" fill="#c76b00" font-weight="bold">Cần n≥20 lệnh log đầy đủ để nâng lên Tier 1.</text>
+
+  <!-- audit rhythm -->
+  <rect x="40" y="600" width="1020" height="80" rx="10" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="60" y="624" font-size="13" font-weight="bold" fill="#1a1a1a">Nhịp audit</text>
+  <text x="60" y="644" font-size="12.5" fill="#555">Hàng ngày: chấm nhanh mọi lệnh trong phiên · Hàng tuần: tổng hợp rubric, ≥2 lệnh F → dừng live</text>
+  <text x="60" y="662" font-size="12.5" fill="#555">Hàng tháng: review ma trận tương tác mistake khác · Auditor = bản thân + rule cố định + doctrine v2</text>
+</svg>

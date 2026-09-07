@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="560" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="18" font-weight="700" fill="#f87171" text-anchor="start">Case 3 — Nested trap: MSS 1m ngược DOL 15m/H1</text>
+<!-- 15m context top strip -->
+<rect x="40" y="60" width="880" height="90" rx="8" fill="rgba(34,197,94,0.08)" stroke="#22c55e" stroke-width="1.5"/>
+<text x="60" y="84" font-size="12.5" font-weight="700" fill="#22c55e" text-anchor="start">15m/H1: bias BULLISH, DOL = BSL phía trên (chưa chạm)</text>
+<polyline points="70,130 150,120 230,125 310,105 390,110 470,90 550,95 630,75" fill="none" stroke="#22c55e" stroke-width="2"/>
+<line x1="630" y1="75" x2="900" y2="75" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<!-- 1m zoom -->
+<line x1="24" y1="220" x2="936" y2="220" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="300" x2="936" y2="300" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="380" x2="936" y2="380" stroke="#1f2937" stroke-width="1"/>
+<text x="60" y="195" font-size="12.5" font-weight="700" fill="#f87171" text-anchor="start">1m: raid SSL + "MSS xuống" đẹp — trader short</text>
+<line x1="120" y1="240" x2="120" y2="280" stroke="#9ca3af" stroke-width="1.5"/><rect x="114" y="245" width="12" height="25" fill="#ef4444"/>
+<line x1="160" y1="250" x2="160" y2="300" stroke="#9ca3af" stroke-width="1.5"/><rect x="154" y="260" width="12" height="30" fill="#ef4444"/>
+<path d="M170,290 L210,260" stroke="#f97316" stroke-width="2.5" fill="none" marker-end="url(#arrNT1)"/>
+<text x="215" y="256" font-size="11" fill="#f97316" text-anchor="start">Raid SSL (nạp nhiên liệu)</text>
+<line x1="230" y1="230" x2="230" y2="290" stroke="#9ca3af" stroke-width="1.5"/><rect x="224" y="240" width="12" height="35" fill="#22c55e"/>
+<line x1="270" y1="245" x2="270" y2="300" stroke="#9ca3af" stroke-width="1.5"/><rect x="264" y="255" width="12" height="30" fill="#ef4444"/>
+<line x1="200" y1="270" x2="320" y2="270" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="330" y="266" font-size="10.5" fill="#a855f7" text-anchor="start">"MSS" xuống 1m (bẫy)</text>
+<path d="M280,290 L320,300" stroke="#f87171" stroke-width="2.5" fill="none" marker-end="url(#arrNT2)" stroke-dasharray="4 2"/>
+<text x="330" y="310" font-size="11" fill="#f87171" text-anchor="start">SHORT tại đây — sai</text>
+<!-- price reverses back up -->
+<line x1="400" y1="280" x2="400" y2="330" stroke="#9ca3af" stroke-width="1.5"/><rect x="394" y="290" width="12" height="30" fill="#22c55e"/>
+<line x1="450" y1="220" x2="450" y2="280" stroke="#9ca3af" stroke-width="1.5"/><rect x="444" y="230" width="12" height="40" fill="#22c55e"/>
+<line x1="500" y1="150" x2="500" y2="225" stroke="#9ca3af" stroke-width="1.5"/><rect x="494" y="160" width="12" height="55" fill="#22c55e"/>
+<text x="450" y="130" font-size="11" fill="#4ade80" text-anchor="start">Giá đảo lên tiếp tục dòng tăng lớn hơn</text>
+<line x1="320" y1="300" x2="650" y2="300" stroke="#f87171" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="655" y="304" font-size="11" fill="#f87171" text-anchor="start">Stop bị quét</text>
+<defs>
+<marker id="arrNT1" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f97316"/></marker>
+<marker id="arrNT2" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f87171"/></marker>
+</defs>
+<rect x="60" y="410" width="840" height="130" rx="8" fill="rgba(248,113,113,0.08)" stroke="#f87171" stroke-width="1.5"/>
+<text x="480" y="436" font-size="13" fill="#f87171" font-weight="700" text-anchor="middle">missing_step: context15m</text>
+<text x="90" y="462" font-size="12" fill="#e5e7eb" text-anchor="start">1m cho chuỗi raid + MSS xuống rất đẹp, nhưng 15m đang hướng LÊN một BSL chưa chạm.</text>
+<text x="90" y="484" font-size="12" fill="#e5e7eb" text-anchor="start">Cú "MSS xuống" đó chỉ là nhịp hồi (raid SSL) trong dòng tăng lớn hơn — giá đảo lên quét stop.</text>
+<text x="90" y="510" font-size="12" fill="#94a3b8" text-anchor="start">Bài học: 1m chỉ là trigger; chỉ trade MSS 1m khi ĐỒNG HƯỚNG DOL 15m/H1.</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="760" fill="#ffffff"/>
+  <text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Debate: Entry Proximal vs Chờ CE</text>
+  <text x="500" y="56" text-anchor="middle" font-size="14" fill="#555">Kiến nghị: "Mọi entry FVG phải chờ giá chạm CE, proximal là vi phạm"</text>
+
+  <!-- Left: Support -->
+  <rect x="40" y="80" width="440" height="330" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="260" y="106" text-anchor="middle" font-size="15" font-weight="bold" fill="#2e7d32">Phe Ủng hộ (chờ CE)</text>
+
+  <rect x="58" y="118" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="70" y="136" font-size="12" fill="#333">1. CE là mức cân bằng lý thuyết —</text>
+  <text x="70" y="152" font-size="12" fill="#333">nơi mật độ lệnh tổ chức lý thuyết cao nhất.</text>
+
+  <rect x="58" y="176" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="70" y="194" font-size="12" fill="#333">2. Entry tại CE cho SL chặt hơn,</text>
+  <text x="70" y="210" font-size="12" fill="#333">RR tốt hơn một cách hệ thống.</text>
+
+  <rect x="58" y="234" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="70" y="252" font-size="12" fill="#333">3. Rule cứng loại bỏ quyết định</text>
+  <text x="70" y="268" font-size="12" fill="#333">chủ quan lúc áp lực FOMO cao nhất.</text>
+
+  <rect x="58" y="292" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="70" y="310" font-size="12" fill="#333">4. Biên an toàn của case GBPUSD WIN</text>
+  <text x="70" y="326" font-size="12" fill="#333">n=1 có thể rất mỏng, dễ chỉ là may mắn.</text>
+
+  <!-- Right: Against -->
+  <rect x="520" y="80" width="440" height="330" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="740" y="106" text-anchor="middle" font-size="15" font-weight="bold" fill="#c62828">Phe Phản đối (proximal hợp lệ)</text>
+
+  <rect x="538" y="118" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="550" y="136" font-size="12" fill="#333">1. Nếu giá không chạm CE, rule cứng</text>
+  <text x="550" y="152" font-size="12" fill="#333">= bỏ lỡ 100% lệnh đó (fill_rate=0).</text>
+
+  <rect x="538" y="176" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="550" y="194" font-size="12" fill="#333">2. CE không phải nam châm bắt buộc</text>
+  <text x="550" y="210" font-size="12" fill="#333">theo đúng định nghĩa gốc ICT.</text>
+
+  <rect x="538" y="234" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="550" y="252" font-size="12" fill="#333">3. Rule cứng từ n=1 lệnh là</text>
+  <text x="550" y="268" font-size="12" fill="#333">overfitting kinh điển.</text>
+
+  <rect x="538" y="292" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="550" y="310" font-size="12" fill="#333">4. Split-entry (scale-in cả hai vùng)</text>
+  <text x="550" y="326" font-size="12" fill="#333">cho thấy proximal không phải cực đoan.</text>
+
+  <!-- Cross-response arrows -->
+  <line x1="480" y1="200" x2="520" y2="200" stroke="#333" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="512,192 512,208 528,200" fill="#333"/>
+  <line x1="520" y1="240" x2="480" y2="240" stroke="#333" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="488,232 488,248 472,240" fill="#333"/>
+  <text x="500" y="360" text-anchor="middle" font-size="12" fill="#555" font-style="italic">2 vòng phản hồi chéo: fill_rate=0 vs "mất tiền thật" — chưa phân định được bằng số</text>
+
+  <!-- Judgment box -->
+  <rect x="60" y="430" width="880" height="140" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="500" y="458" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565c0">Phán quyết có điều kiện</text>
+  <text x="500" y="484" text-anchor="middle" font-size="12" fill="#333">Khái niệm: CE không phải sàn bắt buộc (Phe Phản đối đúng theo định nghĩa gốc).</text>
+  <text x="500" y="504" text-anchor="middle" font-size="12" fill="#333">Thực dụng: "proximal hay CE cho expectancy cao hơn" là câu hỏi thống kê chưa trả lời được.</text>
+  <text x="500" y="524" text-anchor="middle" font-size="12" fill="#333">Không phe nào được tuyên bố thắng dứt khoát ở Tier hiện tại.</text>
+  <text x="500" y="550" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Cần ≥20-30 mẫu đo entry_zone_position_in_ob, fill_rate, avgR để giải quyết</text>
+
+  <!-- Evidence tier strip -->
+  <rect x="60" y="590" width="880" height="60" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="500" y="614" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a2c00">Evidence Tier hiện tại: TIER 0</text>
+  <text x="500" y="634" text-anchor="middle" font-size="12" fill="#3a2c00">Dựa trên n=1 lệnh thật (GBPUSD 07-12) — ngôn ngữ bắt buộc: "giả thuyết đang kiểm định"</text>
+
+  <rect x="60" y="670" width="880" height="60" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="500" y="694" text-anchor="middle" font-size="12" fill="#333">Ghi chú: mục 5.1 note gốc dùng giọng "CE là TRẦN, không phải SÀN" — cần</text>
+  <text x="500" y="712" text-anchor="middle" font-size="12" fill="#333">hạ giọng xuống "giả thuyết" cho tới khi đạt Tier 1 (Doctrine v2 Rule 1).</text>
+</svg>

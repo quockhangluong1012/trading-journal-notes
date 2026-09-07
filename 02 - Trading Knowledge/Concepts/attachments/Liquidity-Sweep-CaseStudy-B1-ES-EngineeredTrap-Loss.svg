@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1280" height="760" rx="14" fill="#131722"/>
+  <rect x="1" y="1" width="1278" height="758" rx="14" fill="none" stroke="#2a2e39"/>
+
+  <text x="32" y="42" font-size="26" font-weight="bold" fill="#d1d4dc">ES Short — Thua vì tin EQH "đẹp" bị quét cực nông rồi đảo thật (-1.2R)</text>
+  <text x="32" y="66" font-size="15" fill="#787b86">ES futures, NY AM (tái dựng minh họa từ mẫu backtest)</text>
+
+  <text x="90" y="700" font-size="13" fill="#ff9800">09:30</text>
+  <text x="380" y="700" font-size="13" fill="#ff9800">10:00</text>
+  <text x="700" y="700" font-size="13" fill="#ff9800">10:30</text>
+  <text x="1000" y="700" font-size="13" fill="#ff9800">11:00</text>
+
+  <line x1="80" y1="360" x2="1200" y2="360" stroke="#b48ead" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1000" y="352" font-size="13" fill="#b48ead">EQH 5,942.00 (2 dinh trung tick)</text>
+
+  <g>
+    <rect x="140" y="380" width="20" height="50" fill="#26a69a" rx="1"/><line x1="150" y1="365" x2="150" y2="440" stroke="#26a69a"/>
+    <rect x="200" y="390" width="20" height="40" fill="#ef5350" rx="1"/><line x1="210" y1="370" x2="210" y2="440" stroke="#ef5350"/>
+  </g>
+  <text x="130" y="460" font-size="13" fill="#787b86">Dinh 1 va 2 trung tick</text>
+
+  <!-- sweep candle overshoot far -->
+  <g>
+    <rect x="320" y="220" width="24" height="140" fill="#26a69a" rx="1"/>
+    <line x1="332" y1="150" x2="332" y2="380" stroke="#26a69a" stroke-width="2"/>
+  </g>
+  <text x="290" y="130" font-size="13" fill="#ff6b6b">Wick vuot xa toi 5,961 (+19pt, ~2.1% ADR)</text>
+
+  <!-- trader shorts immediately on the sweep candle close, thinking reversal -->
+  <line x1="360" y1="230" x2="360" y2="280" stroke="#4a90d9" stroke-width="2"/>
+  <polygon points="360,282 354,270 366,270" fill="#4a90d9"/>
+  <text x="280" y="300" font-size="14" fill="#4a90d9">Short tai 5,952 ngay khi nen dong tren EQH</text>
+
+  <!-- but price holds above and continues higher (fails reversal, cascades into breakout) -->
+  <g>
+    <rect x="420" y="180" width="20" height="60" fill="#26a69a" rx="1"/><line x1="430" y1="165" x2="430" y2="250" stroke="#26a69a"/>
+    <rect x="460" y="140" width="20" height="55" fill="#26a69a" rx="1"/><line x1="470" y1="125" x2="470" y2="205" stroke="#26a69a"/>
+    <rect x="600" y="110" width="20" height="45" fill="#26a69a" rx="1"/><line x1="610" y1="98" x2="610" y2="165" stroke="#26a69a"/>
+  </g>
+
+  <line x1="60" y1="220" x2="1200" y2="220" stroke="#ff6b6b" stroke-dasharray="4 3"/>
+  <text x="1060" y="214" font-size="13" fill="#ff6b6b">SL 5,964 (tren wick sweep)</text>
+  <circle cx="700" cy="130" r="7" fill="#ff6b6b"/>
+  <text x="715" y="150" font-size="14" fill="#ff6b6b">Stop out -1.2R — gia giu tren EQH ≥4 nen</text>
+
+  <rect x="700" y="380" width="480" height="240" fill="#1c2030" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="716" y="408" font-size="16" font-weight="bold" fill="#4a90d9">Lam sai o dau (theo EC-B1 va EC-B2)</text>
+  <text x="716" y="434" font-size="13" fill="#d1d4dc">EQH trung tick tuyet doi -&gt; nguy co bi</text>
+  <text x="716" y="454" font-size="13" fill="#d1d4dc">"engineered" cao hon binh thuong</text>
+  <text x="716" y="480" font-size="13" fill="#d1d4dc">Do sau vuot +19pt (~2.1% ADR ES) da</text>
+  <text x="716" y="500" font-size="13" fill="#d1d4dc">roi vao vung &gt;1.5% ADR -&gt; theo EC-B4,</text>
+  <text x="716" y="520" font-size="13" fill="#d1d4dc">day la vung nhieu kha nang la BREAK</text>
+  <text x="716" y="540" font-size="13" fill="#d1d4dc">THAT, khong phai sweep — nhung trader</text>
+  <text x="716" y="560" font-size="13" fill="#d1d4dc">van short ngay ma khong doi xac nhan</text>
+  <text x="716" y="586" font-size="13" fill="#f2c94c">Gia giu tren muc 4 nen lien -&gt; dung la</text>
+  <text x="716" y="606" font-size="13" fill="#f2c94c">breakout, khong phai sweep-of-sweep</text>
+
+  <text x="60" y="730" font-size="13" fill="#565b66">Tái dựng minh họa từ mẫu backtest ES M5 — không phải giao dịch thật.</text>
+</svg>

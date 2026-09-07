@@ -143,7 +143,7 @@ tags: [backtest, ICT2022, LTF]
 - [ ] Entry là **retrace** (M1 refine), không chase M5 displacement
 - [ ] SL ngoài invalidation + buffer wick
 - [ ] **R Net (sau spread) ≥ RR floor** (không chỉ R gross)
-- [ ] (FX) SMT EURUSD↔GBPUSD↔DXY xác nhận tại sweep — [[42 - SMT Divergence]]
+- [ ] (FX) SMT EURUSD↔GBPUSD↔DXY xác nhận tại sweep — [[42-SMT-Divergence]]
 
 ---
 
@@ -199,8 +199,8 @@ tags: [backtest, ICT2022, LTF]
 ### Liên kết
 
 - Model: [[01b - ICT 2022 Model - LTF Intraday (H1-M5-M1)]] · [[01 - ICT 2022 Model]]
-- Layering/nhiễu: [[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)]] · [[43 - Liquidity Scale Alignment (Sweep cùng khung MSS-FVG, HTF là Target)]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[13 - FVG  - Fair Value Gap]] · [[10 - Consequent Encroachment (Mean Threshold)]] · [[26 - OTE - Optimal Trade Entry]]
-- Timing: [[18 - Kill Zones]] · [[40 - Macro Times]]
+- Layering/nhiễu: [[49-Confirmation-Timeframe-Timeframe-Layering-Khu-nhieu-MSS-trong-2022-Model]] · [[43-Liquidity-Scale-Alignment-Sweep-cung-khung-MSS-FVG-HTF-la-Target]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[13-FVG-Fair-Value-Gap]] · [[10-Consequent-Encroachment-Mean-Threshold]] · [[26-OTE-Optimal-Trade-Entry]]
+- Timing: [[18-Kill-Zones]] · [[40-Macro-Times]]
 - Dashboard: [[_Backtest Dashboard]]
 - Mistake liên quan: [[Mistake - Chase Displacement]] · [[Mistake - Skip Liquidity Sweep]]

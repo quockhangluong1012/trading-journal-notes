@@ -23,7 +23,7 @@ A personal ICT (Inner Circle Trader) trading journal for Luong Quoc Khang. It co
 04 - Backtesting/        Backtest notes + _Backtest Dashboard
 05 - Live Trading Journal/  Trades/ and Screenschoots/ (note: existing spelling)
 06 - Mistake Database/   One note per mistake type, linked from trades & reviews
-07 - Reviews/            Weekly reviews
+07 - Reviews/            (EMPTY) — weekly reviews actually live in 00 - Inbox/03 - Weekly Summary/
 08 - Templates/          Source templates — copy these, don't reinvent
 09 - Goal Tracking/      Goal Dashboard, Roadmap, Skill Metrics, Goals/{Long,Mid,Short Term}
 ```
@@ -32,6 +32,7 @@ A personal ICT (Inner Circle Trader) trading journal for Luong Quoc Khang. It co
 
 When creating a new note, copy the matching template in `08 - Templates/` and fill it. Never invent a new structure when a template exists.
 
+- **Daily tasks** → `Daily_Tasks_Template.md` (nội dung từng khối lấy từ menu theo giai đoạn ở `09 - Goal Tracking/05 - Nhịp ngày & tuần - Vận hành lộ trình.md`)
 - **New trade** → `trade log.md`
 - **Backtest** → `Backtest templete.md`
 - **ICT concept** → `ICT_Concept_Template.md`
@@ -43,8 +44,8 @@ When creating a new note, copy the matching template in `08 - Templates/` and fi
 - **Trades**: `05 - Live Trading Journal/Trades/YYYY/MM/DD/` with filename `Result - NN - Trade YYYY-MM-DD SYMBOL Position.md` — e.g. `Win - 01 - Trade 2026-03-31 NQ1 Long.md`. `Result` is `Win`/`Loss`/`BE`; `NN` is the trade number that day (01, 02…).
 - **Screenshots**: `05 - Live Trading Journal/Screenschoots/YYYY/MM/` named `SYMBOL-YYYYMMDD-TF-N.png` (TF = D1/H1/M5/M1).
 - **Backtests**: `04 - Backtesting/`, filename like `NAS100-2026-06-18-Long-...md`.
-- **Concepts**: `02 - Trading Knowledge/Concepts/<Concept Name>.md`.
-- **Mistakes**: `06 - Mistake Database/Mistake - <description>.md`.
+- **Concepts**: `02 - Trading Knowledge/Concepts/NN-Hyphenated-Name.md` (renamed from spaced form in commit `e7ae982`; wikilinks were repaired 2026-09-07 — keep using the hyphenated basename).
+- **Mistakes**: `06 - Mistake Database/NN-Mistake-Hyphenated-Description.md` (hyphenated, numbered).
 - **Goals**: under `09 - Goal Tracking/Goals/<Long|Mid|Short Term ...>/`.
 
 ## Frontmatter that dashboards depend on

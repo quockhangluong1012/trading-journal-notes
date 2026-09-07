@@ -1,0 +1,45 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="17" font-weight="700" fill="#1F2937">Chuyen sau B - Workflow: tu D1 bias den DOL</text>
+  <text x="24" y="52" font-size="12.5" fill="#6B7280">Map profile ky vong TRUOC phien; doi protraction dung phien; cho NY expansion; nham DOL.</text>
+  <rect x="44" y="110" width="126" height="70" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+  <rect x="44" y="110" width="126" height="4" rx="2" fill="#1D4ED8"/>
+  <text x="107" y="142" font-size="11.5" font-weight="700" fill="#1D4ED8" text-anchor="middle">D1 bias</text>
+  <text x="107" y="162" font-size="9.3" fill="#6B7280" text-anchor="middle">Bull / Bear tu Daily</text>
+  <text x="174" y="150" font-size="15" fill="#9CA3AF">&#8594;</text>
+  <rect x="178" y="110" width="126" height="70" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+  <rect x="178" y="110" width="126" height="4" rx="2" fill="#374151"/>
+  <text x="241" y="142" font-size="11.5" font-weight="700" fill="#374151" text-anchor="middle">Expected profile</text>
+  <text x="241" y="162" font-size="9.3" fill="#6B7280" text-anchor="middle">Classic Buy / Sell / ...</text>
+  <text x="308" y="150" font-size="15" fill="#9CA3AF">&#8594;</text>
+  <rect x="312" y="110" width="126" height="70" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+  <rect x="312" y="110" width="126" height="4" rx="2" fill="#B45309"/>
+  <text x="375" y="142" font-size="11.5" font-weight="700" fill="#B45309" text-anchor="middle">Phien protract</text>
+  <text x="375" y="162" font-size="9.3" fill="#6B7280" text-anchor="middle">London Judas nguoc bias</text>
+  <text x="442" y="150" font-size="15" fill="#9CA3AF">&#8594;</text>
+  <rect x="446" y="110" width="126" height="70" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+  <rect x="446" y="110" width="126" height="4" rx="2" fill="#15803D"/>
+  <text x="509" y="142" font-size="11.5" font-weight="700" fill="#15803D" text-anchor="middle">Cho NY expansion</text>
+  <text x="509" y="162" font-size="9.3" fill="#6B7280" text-anchor="middle">displacement dong huong</text>
+  <text x="576" y="150" font-size="15" fill="#9CA3AF">&#8594;</text>
+  <rect x="580" y="110" width="126" height="70" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+  <rect x="580" y="110" width="126" height="4" rx="2" fill="#15803D"/>
+  <text x="643" y="142" font-size="11.5" font-weight="700" fill="#15803D" text-anchor="middle">DOL</text>
+  <text x="643" y="162" font-size="9.3" fill="#6B7280" text-anchor="middle">BSL/SSL doi dien</text>
+  <rect x="40" y="206" width="680" height="120" rx="8" fill="#F8FAFC" stroke="#E5E7EB" stroke-width="1.2"/>
+  <text x="56" y="230" font-size="12.5" font-weight="700" fill="#111827">Khac biet theo thi truong</text>
+  <circle cx="62" cy="248" r="4" fill="#15803D"/>
+  <text x="74" y="252" font-size="11" font-weight="700" fill="#15803D">NQ1 / NAS100</text>
+  <text x="196" y="252" font-size="10.3" fill="#374151">Protraction sach quanh 08:30 / 09:30; NY AM expansion ro net.</text>
+  <circle cx="62" cy="278" r="4" fill="#1D4ED8"/>
+  <text x="74" y="282" font-size="11" font-weight="700" fill="#1D4ED8">EURUSD / GBPUSD</text>
+  <text x="196" y="282" font-size="10.3" fill="#374151">Judas London rat ro; low/high of day hay lap trong London KZ.</text>
+  <circle cx="62" cy="308" r="4" fill="#B45309"/>
+  <text x="74" y="312" font-size="11" font-weight="700" fill="#B45309">XAUUSD</text>
+  <text x="196" y="312" font-size="10.3" fill="#374151">Nhieu tin, protraction gay; can loc newsday, giam ky vong profile.</text>
+  <rect x="40" y="338" width="680" height="88" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+  <text x="56" y="362" font-size="12" font-weight="700" fill="#374151">Nguyen tac chot</text>
+  <text x="56" y="384" font-size="10.5" fill="#374151">- Dung vao NY sau khi move da xong (chase). Ghi profile + hod_time/lod_time moi ngay.</text>
+  <text x="56" y="404" font-size="10.5" fill="#374151">- Thong ke profile nao chiem uu the tren market minh trade; can &#8805;30 ngay mau moi tin.</text>
+  <text x="24" y="456" font-size="10.5" fill="#6B7280">Map ky vong truoc phien bien viec doc profile thanh thoi quen, khong phai phong doan giua tran.</text>
+</svg>

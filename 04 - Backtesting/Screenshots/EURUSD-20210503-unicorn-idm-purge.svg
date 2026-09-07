@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Unicorn POI - IDM Purge + Breaker/FVG chong lap</text>
+  <text x="450" y="52" text-anchor="middle" font-size="13" fill="#666">EURUSD 2021-05-03 Short - Premium 74.9%, sweep noi bo (IDM) truoc dao cuc</text>
+
+  <!-- LEFT: actual sequence -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#1e8449">DIEN BIEN THUC TE (Win)</text>
+  <rect x="70" y="100" width="330" height="410" fill="#fafafa" stroke="#ddd"/>
+
+  <line x1="70" y1="130" x2="400" y2="130" stroke="#999" stroke-dasharray="2 2"/>
+  <text x="405" y="134" font-size="10" fill="#999">Range High 1.21058</text>
+  <line x1="70" y1="480" x2="400" y2="480" stroke="#999" stroke-dasharray="2 2"/>
+  <text x="405" y="484" font-size="10" fill="#999">Range Low 1.19436</text>
+  <line x1="70" y1="305" x2="400" y2="305" stroke="#bbb" stroke-dasharray="3 3"/>
+  <text x="405" y="309" font-size="10" fill="#888">EQ 1.20247 (50%)</text>
+
+  <!-- IDM marker -->
+  <line x1="70" y1="255" x2="220" y2="255" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="70" y="215" font-size="10" fill="#e67e22">IDM (internal high) - SWEPT</text>
+
+  <!-- Breaker/FVG overlap box -->
+  <rect x="70" y="258" width="330" height="20" fill="#aed6f1" fill-opacity="0.6"/>
+  <text x="150" y="233" font-size="10" fill="#1a5276">Unicorn: Breaker + FVG chong lap</text>
+
+  <!-- CE -->
+  <line x1="70" y1="268" x2="400" y2="268" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="405" y="272" font-size="10" fill="#e67e22">CE 1.20648</text>
+
+  <!-- Entry -->
+  <line x1="70" y1="270" x2="400" y2="270" stroke="#1e8449" stroke-width="2"/>
+  <text x="130" y="290" font-size="11" font-weight="700" fill="#1e8449">Entry 1.2065 (74.9% range = Premium sau)</text>
+
+  <!-- SL -->
+  <line x1="70" y1="225" x2="400" y2="225" stroke="#c0392b" stroke-dasharray="5 3"/>
+  <text x="405" y="229" font-size="10" fill="#c0392b">SL 1.20764</text>
+
+  <!-- TP -->
+  <line x1="70" y1="345" x2="400" y2="345" stroke="#1e8449" stroke-dasharray="5 3"/>
+  <text x="405" y="349" font-size="10" fill="#1e8449">TP 1.20408</text>
+
+  <path d="M 235 270 Q 260 310 260 340" stroke="#1e8449" stroke-width="2.5" fill="none" marker-end="url(#arrowG2)"/>
+
+  <!-- RIGHT: RR discrepancy chart -->
+  <text x="665" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#943126">CANH BAO ARITHMETIC</text>
+  <rect x="500" y="100" width="330" height="410" fill="#fdf2e9" stroke="#e67e22"/>
+
+  <text x="665" y="140" text-anchor="middle" font-size="13" font-weight="700" fill="#943126">r_multiple ghi trong note: 3.075</text>
+
+  <rect x="530" y="160" width="270" height="50" fill="#f9e79f" fill-opacity="0.7"/>
+  <text x="665" y="180" text-anchor="middle" font-size="11" fill="#7d6608">RR tinh truc tiep tu entry/SL/TP:</text>
+  <text x="665" y="198" text-anchor="middle" font-size="14" font-weight="700" fill="#7d6608">2.123 (risk 11.4 pip / reward 24.2 pip)</text>
+
+  <text x="665" y="240" text-anchor="middle" font-size="11" fill="#943126">Chenh lech ~1R - lon nhat trong batch</text>
+
+  <rect x="530" y="260" width="270" height="70" fill="#d5f5e3" fill-opacity="0.7"/>
+  <text x="665" y="280" text-anchor="middle" font-size="11" fill="#1e8449">Gia thuyet: 3.075 la R blended</text>
+  <text x="665" y="296" text-anchor="middle" font-size="11" fill="#1e8449">TP1 50% @ ~2.1R + runner den TP2</text>
+  <text x="665" y="312" text-anchor="middle" font-size="11" fill="#1e8449">= 0.5x2.1 + 0.5x4.1 = 3.1 (~khop 3.075)</text>
+
+  <text x="665" y="360" text-anchor="middle" font-size="11" font-weight="700" fill="#943126">Nhung note KHONG ghi ro TP1/%KL</text>
+  <text x="665" y="378" text-anchor="middle" font-size="11" font-weight="700" fill="#943126">-&gt; log thieu minh bach, can bo sung</text>
+
+  <text x="665" y="440" text-anchor="middle" font-size="11" fill="#555">Fix de xuat: tach field</text>
+  <text x="665" y="456" text-anchor="middle" font-size="11" fill="#555">r_planned_single_tp vs r_realized_blended</text>
+
+  <text x="450" y="540" text-anchor="middle" font-size="12" fill="#444">Bai hoc: moi r_multiple can minh bach nguon goc (RR don hay blended qua partial).</text>
+
+  <defs>
+    <marker id="arrowG2" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1e8449"/>
+    </marker>
+  </defs>
+</svg>

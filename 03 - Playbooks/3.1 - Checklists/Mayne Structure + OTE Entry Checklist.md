@@ -12,7 +12,7 @@ created: 2026-07-12
 
 > [!important] Nguyên tắc
 > **Structure cho hướng · OTE cho giá · Confirmation cho thời điểm.** Không đủ ba, không vào.
-> Chi tiết: [[14 - Mayne Structure + OTE Model]].
+> Chi tiết: [[14 - Mayne Structure OTE Model]].
 
 ## 1. Structure & Bias (D1/H4)
 - [ ] HTF bias rõ: HH-HL (bullish) hoặc LH-LL (bearish)

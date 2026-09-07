@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 3 — NFP thứ Sáu ghi đè giả định reversion</text>
+<line x1="24" y1="480" x2="936" y2="480" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="380" x2="936" y2="380" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="280" x2="936" y2="280" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="180" x2="936" y2="180" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="360" x2="900" y2="360" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="66" y="352" font-size="12" fill="#38bdf8" text-anchor="start">Weekly Open</text>
+<line x1="150" y1="300" x2="150" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="144.0" y="310" width="12" height="35" fill="#22c55e"/>
+<line x1="200" y1="250" x2="200" y2="310" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="194.0" y="255" width="12" height="50" fill="#22c55e"/>
+<line x1="250" y1="180" x2="250" y2="260" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="244.0" y="190" width="12" height="65" fill="#22c55e"/>
+<line x1="60" y1="180" x2="500" y2="180" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="500" y="172" font-size="12" fill="#eab308" text-anchor="end">Đỉnh tuần</text>
+<!-- Trader fades near high expecting reversion -->
+<circle cx="250" cy="180" r="5" fill="#f87171"/>
+<text x="150" y="150" font-size="11" font-weight="700" fill="#f87171" text-anchor="start">Fade SHORT (kỳ vọng reversion máy móc)</text>
+<!-- NFP spike breaks through continuing up strongly, invalidating fade -->
+<line x1="350" y1="60" x2="350" y2="200" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="344.0" y="70" width="12" height="120" fill="#22c55e"/>
+<text x="356" y="55" font-size="12" font-weight="700" fill="#f97316" text-anchor="start">NFP — expansion thật</text>
+<line x1="400" y1="30" x2="400" y2="90" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="394.0" y="35" width="12" height="50" fill="#22c55e"/>
+<line x1="60" y1="90" x2="500" y2="90" stroke="#f87171" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="500" y="82" font-size="11" fill="#f87171" text-anchor="end">Stop lệnh fade bị quét</text>
+<path d="M 250 180 L 400 55" stroke="#f87171" stroke-width="2.5" fill="none" marker-end="url(#arrTrap)"/>
+<line x1="450" y1="40" x2="450" y2="80" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="444.0" y="45" width="12" height="30" fill="#22c55e"/>
+<line x1="500" y1="45" x2="500" y2="85" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="494.0" y="50" width="12" height="30" fill="#ef4444"/>
+<line x1="550" y1="55" x2="550" y2="95" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="544.0" y="60" width="12" height="30" fill="#22c55e"/>
+<rect x="60" y="420" width="836" height="100" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="80" y="444" font-size="12" fill="#e5e7eb" text-anchor="start">calendar_exception: nfp. Tiêu chí 4 (mục 3) vi phạm → giả định vô hiệu</text>
+<text x="80" y="466" font-size="12" fill="#e5e7eb" text-anchor="start">hoàn toàn bất kể 3 tiêu chí đầu ra sao.</text>
+<text x="80" y="488" font-size="12" fill="#e5e7eb" text-anchor="start">Đúng ra: xử lý như ngày tin, gác giả định 30-60 phút rồi mới đọc lại cấu trúc.</text>
+<text x="80" y="508" font-size="12" fill="#e5e7eb" text-anchor="start">Fade một ngày tin chỉ vì "thứ Sáu" là nhầm bối cảnh cơ bản nhất.</text>
+<defs><marker id="arrTrap" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f87171"/></marker></defs>
+<text x="32" y="576" font-size="12" fill="#94a3b8" text-anchor="start">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa.</text>
+</svg>

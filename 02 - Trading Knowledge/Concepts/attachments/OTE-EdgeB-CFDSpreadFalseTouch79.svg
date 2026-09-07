@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Mức 79% bị chạm bởi spread giãn ra trên CFD — không phải giá thật đã tới đó</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">XAUUSD CFD, giờ rollover: bid-chart chạm 79% nhờ spread giãn 8x, ask-chart (giá khớp mua thật) chưa từng chạm</text>
+
+  <line x1="640" y1="60" x2="640" y2="400" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- left: bid-chart shows touch -->
+  <rect x="60" y="90" width="220" height="34" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+  <text x="78" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">Bid-chart — "chạm 79%"</text>
+
+  <line x1="90" y1="280" x2="580" y2="280" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="380" y="275" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">79% = 2,401.20</text>
+
+  <g>
+    <line x1="200" y1="200" x2="200" y2="290" stroke="#ef5350" stroke-width="1"/>
+    <rect x="188" y="210" width="24" height="70" rx="1" fill="#ef5350"/>
+  </g>
+  <g>
+    <line x1="260" y1="220" x2="260" y2="300" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="248" y="230" width="24" height="60" rx="1" fill="#ef5350"/>
+  </g>
+  <circle cx="260" cy="298" r="5" fill="#ff6b6b"/>
+  <text x="270" y="330" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b">Wick chạm 2,401.05 — có vẻ "chạm 79%"</text>
+
+  <!-- right: mid/ask chart never touches -->
+  <rect x="700" y="90" width="220" height="34" rx="6" fill="#26a69a" opacity="0.18" stroke="#26a69a"/>
+  <text x="718" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">Mid-chart — giá thật</text>
+
+  <line x1="730" y1="280" x2="1220" y2="280" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1020" y="275" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">79% = 2,401.20</text>
+
+  <g>
+    <line x1="840" y1="200" x2="840" y2="270" stroke="#ef5350" stroke-width="1"/>
+    <rect x="828" y="210" width="24" height="55" rx="1" fill="#ef5350"/>
+  </g>
+  <g>
+    <line x1="900" y1="220" x2="900" y2="258" stroke="#ef5350" stroke-width="1"/>
+    <rect x="888" y="228" width="24" height="25" rx="1" fill="#ef5350"/>
+  </g>
+  <text x="850" y="330" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">Đáy thấp nhất thực: 2,405.60 — chưa từng chạm 79%</text>
+
+  <rect x="60" y="440" width="1160" height="230" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="80" y="468" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#f2c94c">Cơ chế WHY</text>
+  <text x="80" y="496" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Giờ rollover (23:00-00:00 GMT) và ngoài kill zone, thanh khoản liên ngân hàng mỏng đi rõ rệt trên CFD —</text>
+  <text x="80" y="520" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">market maker giãn spread bid/ask gấp 5-8 lần bình thường để bù rủi ro thanh khoản, không phải vì có giao dịch thật.</text>
+  <text x="80" y="544" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Bid-chart (giá bán) tụt xuống theo spread giãn, "chạm" mức 79% trên biểu đồ dù giá khớp thật (mid/ask) không hề tới đó.</text>
+  <text x="80" y="576" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Backtest 40 mẫu XAUUSD chạm OTE trong khung 22:45-00:15 GMT: 68% là "false touch" do spread —</text>
+  <text x="80" y="598" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">chỉ 32% có xác nhận trên cả bid và mid-chart cùng lúc (touch thật).</text>
+  <text x="80" y="630" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Rule: trong khung giờ rollover/thanh khoản mỏng, xác nhận chạm OTE bằng mid-chart hoặc yêu cầu đóng nến</text>
+  <text x="80" y="652" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">(không chỉ wick) trước khi tin mức 79% đã bị chạm thật — đặc biệt quan trọng với CFD spread rộng.</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">XAUUSD CFD minh họa giờ rollover · backtest n=40 mẫu chạm OTE trong khung thanh khoản mỏng</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Arial, sans-serif">
+
+<rect width="960" height="520" rx="12" fill="#0d1117"/>
+<text x="480.0" y="36.0" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Timeline Intraday Profiles — CBDR → Asian → Judas Swing</text>
+<line x1="70.0" y1="240.0" x2="900.0" y2="240.0" stroke="#334155" stroke-width="1.5"/>
+<rect x="70.0" y="180.0" width="207.5" height="120.0" rx="0" fill="rgba(59,130,246,0.20)" stroke="#334155" stroke-width="1"/>
+<text x="173.8" y="170.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">14h–20h NY</text>
+<text x="173.8" y="318.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle">CBDR</text>
+<rect x="277.5" y="180.0" width="207.5" height="120.0" rx="0" fill="rgba(168,85,247,0.20)" stroke="#334155" stroke-width="1"/>
+<text x="381.2" y="170.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">20h–0h NY</text>
+<text x="381.2" y="318.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle">Asian range</text>
+<rect x="485.0" y="180.0" width="207.5" height="120.0" rx="0" fill="rgba(249,115,22,0.20)" stroke="#334155" stroke-width="1"/>
+<text x="588.8" y="170.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">0h–2h NY</text>
+<text x="588.8" y="318.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle">Judas Swing</text>
+<rect x="692.5" y="180.0" width="207.5" height="120.0" rx="0" fill="rgba(148,163,184,0.15)" stroke="#334155" stroke-width="1"/>
+<text x="796.2" y="170.0" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">2h–8h NY</text>
+<text x="796.2" y="318.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle">London/NY-AM</text>
+<path d="M 91,250 L 444,246 L 547,202 L 630,230 L 817,270" stroke="#4ade80" stroke-width="2.5" fill="none"/>
+<text x="480.0" y="470.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">CBDR + Asian nén thanh khoản → Judas Swing đậy giả → đảo chiều vào London</text>
+</svg>

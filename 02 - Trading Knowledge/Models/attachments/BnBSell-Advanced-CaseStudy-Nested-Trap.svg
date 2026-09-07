@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 3 — Bẫy lồng nhau: MSS giả trước MSS thật</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">USDJPY, Asia session — MSS đầu tiên là bẫy, chỉ MSS thứ hai mới hợp lệ</text>
+
+<line x1="60" y1="500" x2="900" y2="500" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="380" x2="900" y2="380" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="260" x2="900" y2="260" stroke="#1f2937" stroke-width="1"/>
+
+<rect x="60" y="150" width="840" height="130" fill="rgba(239,68,68,0.08)"/>
+<text x="880" y="168" font-size="11" fill="#94a3b8" text-anchor="end">Premium</text>
+
+<!-- rally to premium -->
+<rect x="90" y="400" width="12" height="35" fill="#22c55e"/>
+<line x1="96" y1="392" x2="96" y2="440" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="115" y="360" width="12" height="40" fill="#22c55e"/>
+<line x1="121" y1="350" x2="121" y2="405" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="140" y="320" width="12" height="40" fill="#22c55e"/>
+<line x1="146" y1="310" x2="146" y2="365" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="165" y="280" width="12" height="40" fill="#22c55e"/>
+<line x1="171" y1="268" x2="171" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+
+<line x1="60" y1="240" x2="900" y2="240" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="70" y="235" font-size="12" fill="#eab308" text-anchor="start">BSL</text>
+
+<!-- first sweep + fake MSS -->
+<rect x="190" y="210" width="12" height="35" fill="#22c55e"/>
+<line x1="196" y1="198" x2="196" y2="250" stroke="#f97316" stroke-width="2.5"/>
+<path d="M 196 198 L 188 184 L 204 184 Z" fill="#f97316"/>
+<rect x="215" y="225" width="12" height="25" fill="#ef4444"/>
+<line x1="221" y1="218" x2="221" y2="251" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="200" y1="245" x2="290" y2="245" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="240" y="180" font-size="11" font-weight="700" fill="#eab308" text-anchor="middle">MSS giả (5m) — chưa đủ swing</text>
+
+<!-- price retraces up again, sweeping the fake MSS high -->
+<rect x="240" y="200" width="12" height="30" fill="#22c55e"/>
+<line x1="246" y1="188" x2="246" y2="235" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="265" y="175" width="12" height="30" fill="#22c55e"/>
+<line x1="271" y1="163" x2="271" y2="210" stroke="#f97316" stroke-width="2.5"/>
+<path d="M 271 163 L 263 150 L 279 150 Z" fill="#f97316"/>
+<text x="271" y="145" font-size="12" font-weight="700" fill="#f97316" text-anchor="middle">Sweep lần 2 (thật)</text>
+
+<!-- real MSS + displacement -->
+<rect x="295" y="195" width="12" height="30" fill="#ef4444"/>
+<rect x="320" y="225" width="12" height="45" fill="#ef4444"/>
+<line x1="301" y1="185" x2="301" y2="226" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="326" y1="218" x2="326" y2="271" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="255" y1="225" x2="450" y2="225" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="455" y="221" font-size="12" fill="#a855f7" text-anchor="start">MSS thật 5m</text>
+
+<rect x="345" y="260" width="55" height="30" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-dasharray="4 3"/>
+<rect x="350" y="268" width="12" height="15" fill="#22c55e"/>
+<line x1="356" y1="262" x2="356" y2="285" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="440" y="278" font-size="12" font-weight="700" fill="#4ade80" text-anchor="start">SHORT hợp lệ</text>
+
+<rect x="380" y="285" width="12" height="35" fill="#ef4444"/>
+<rect x="405" y="315" width="12" height="40" fill="#ef4444"/>
+<rect x="430" y="350" width="12" height="40" fill="#ef4444"/>
+<line x1="386" y1="278" x2="386" y2="321" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="411" y1="308" x2="411" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="436" y1="343" x2="436" y2="395" stroke="#9ca3af" stroke-width="1.5"/>
+
+<text x="700" y="330" font-size="14" font-weight="700" fill="#4ade80" text-anchor="middle">+18 pips nếu đợi MSS thật</text>
+<text x="700" y="350" font-size="12" fill="#f87171" text-anchor="middle">Vào ở MSS giả → -12 pips (bị nuốt trước khi thật xảy ra)</text>
+
+<rect x="60" y="440" width="840" height="90" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+<text x="80" y="465" font-size="13" font-weight="700" fill="#eab308" text-anchor="start">Bài học: không phải mọi break cấu trúc 5m sau sweep là MSS hợp lệ</text>
+<text x="80" y="485" font-size="12" fill="#94a3b8" text-anchor="start">MSS giả thường có displacement yếu, không phá qua swing low gần nhất rõ ràng — dễ bị cuốn ngược</text>
+<text x="80" y="505" font-size="12" fill="#94a3b8" text-anchor="start">Chờ MSS có thân nến đóng rõ dưới swing low liền trước, không phải chỉ chạm rồi bật</text>
+</svg>

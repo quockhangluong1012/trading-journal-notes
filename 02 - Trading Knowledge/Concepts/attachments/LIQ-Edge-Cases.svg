@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="780" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Edge Case đắt giá: Inducement lồng tầng + Session gap thứ Hai</text>
+  <text x="40" y="62" font-size="15" fill="#94a3b8">Hai cái bẫy phổ biến nhất khi đọc sai "pool nào là terminus thật"</text>
+
+  <!-- Panel A: nested inducement -->
+  <rect x="40" y="90" width="540" height="440" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="60" y="118" font-size="17" font-weight="bold" fill="#e2e8f0">A. Inducement lồng 2 tầng trước POI HTF thật</text>
+
+  <line x1="60" y1="480" x2="560" y2="480" stroke="#334155" stroke-width="1"/>
+
+  <!-- HTF bearish OB zone -->
+  <rect x="450" y="180" width="100" height="80" fill="#ef4444" opacity="0.2"/>
+  <text x="455" y="175" font-size="12" fill="#ef4444">HTF Bearish OB (POI thật)</text>
+
+  <!-- swing 1 inducement -->
+  <line x1="120" y1="420" x2="120" y2="360" stroke="#f97316" stroke-width="2"/>
+  <rect x="110" y="370" width="20" height="45" fill="#f97316"/>
+  <text x="80" y="345" font-size="11" fill="#f97316">Inducement #1</text>
+  <text x="80" y="440" font-size="11" fill="#94a3b8">"Sweep xong, vào thôi"</text>
+
+  <!-- swing 2 inducement deeper -->
+  <line x1="220" y1="400" x2="220" y2="300" stroke="#f97316" stroke-width="2.5"/>
+  <rect x="208" y="315" width="24" height="80" fill="#f97316"/>
+  <text x="185" y="290" font-size="11" fill="#f97316">Inducement #2 (sâu hơn)</text>
+  <text x="180" y="450" font-size="11" fill="#ef4444">Trader vào ở đây → bị quét tiếp</text>
+
+  <!-- real reversal at OB -->
+  <line x1="500" y1="260" x2="500" y2="200" stroke="#38bdf8" stroke-width="2.5"/>
+  <rect x="488" y="205" width="24" height="50" fill="#38bdf8"/>
+  <text x="440" y="190" font-size="12" fill="#38bdf8">Reversal thật tại OB HTF</text>
+
+  <text x="60" y="530" font-size="13" fill="#e2e8f0" font-weight="bold">Vì sao bẫy được cả trader kinh nghiệm:</text>
+  <text x="60" y="552" font-size="12" fill="#94a3b8">Sau khi quét inducement #1, MSS nhỏ hình thành trên LTF trông giống xác nhận</text>
+  <text x="60" y="572" font-size="12" fill="#94a3b8">thật — trader vào sớm, không biết còn tầng mồi #2 sâu hơn trước POI HTF.</text>
+
+  <text x="60" y="600" font-size="13" fill="#e2e8f0" font-weight="bold">Cách nhận diện sớm:</text>
+  <text x="60" y="622" font-size="12" fill="#94a3b8">Luôn tìm swing/equal nhỏ GẦN NHẤT phía trước một OB/FVG HTF —</text>
+  <text x="60" y="642" font-size="12" fill="#94a3b8">giả định mặc định là inducement cho tới khi giá chạm mép POI thật.</text>
+
+  <text x="60" y="670" font-size="13" fill="#e2e8f0" font-weight="bold">Cách xử lý:</text>
+  <text x="60" y="692" font-size="12" fill="#94a3b8">Chờ giá chạm cả inducement lẫn mép POI HTF trước khi entry; không vào ở MSS đầu tiên.</text>
+
+  <!-- Panel B: Monday gap -->
+  <rect x="620" y="90" width="540" height="440" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="640" y="118" font-size="17" font-weight="bold" fill="#e2e8f0">B. Gap thứ Hai xuyên qua SSL cuối tuần trước</text>
+
+  <line x1="640" y1="280" x2="1140" y2="280" stroke="#eab308" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="1000" y="275" font-size="12" fill="#eab308">SSL thứ Sáu 1.0820</text>
+
+  <!-- Friday close candle -->
+  <line x1="700" y1="260" x2="700" y2="330" stroke="#22c55e" stroke-width="2"/>
+  <rect x="688" y="270" width="24" height="50" fill="#22c55e"/>
+  <text x="660" y="350" font-size="11" fill="#94a3b8">Đóng cửa thứ Sáu 1.0838</text>
+
+  <!-- gap down monday open -->
+  <line x1="820" y1="300" x2="820" y2="380" stroke="#ef4444" stroke-width="3"/>
+  <rect x="808" y="310" width="24" height="60" fill="#ef4444"/>
+  <text x="770" y="410" font-size="12" fill="#ef4444">Mở cửa T2: gap xuống 1.0812</text>
+  <text x="770" y="428" font-size="11" fill="#94a3b8">(xuyên thẳng qua SSL bằng gap)</text>
+
+  <!-- reaction weak, then reverse fake -->
+  <line x1="900" y1="380" x2="900" y2="340" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="888" y="345" width="24" height="30" fill="#94a3b8"/>
+  <text x="870" y="325" font-size="11" fill="#94a3b8">Bật nhẹ, không rõ MSS</text>
+
+  <text x="640" y="480" font-size="13" fill="#e2e8f0" font-weight="bold">Vì sao bẫy được:</text>
+  <text x="640" y="502" font-size="12" fill="#94a3b8">Trông giống "sweep" hợp lệ nhưng đây là gap thiếu thanh khoản</text>
+  <text x="640" y="522" font-size="12" fill="#94a3b8">cuối tuần — không phản ánh cuộc chiến buy/sell hai chiều thật.</text>
+
+  <text x="640" y="550" font-size="13" fill="#e2e8f0" font-weight="bold">Cách nhận diện sớm:</text>
+  <text x="640" y="572" font-size="12" fill="#94a3b8">Kiểm tra xem nến "sweep" có phải nến mở cửa tuần (gap) hay không.</text>
+
+  <text x="640" y="600" font-size="13" fill="#e2e8f0" font-weight="bold">Cách xử lý:</text>
+  <text x="640" y="622" font-size="12" fill="#94a3b8">Chờ ít nhất 1-2 nến xác nhận sau gap, ưu tiên đợi London mở</text>
+  <text x="640" y="642" font-size="12" fill="#94a3b8">cửa để có orderflow thật trước khi coi đó là sweep hợp lệ.</text>
+</svg>

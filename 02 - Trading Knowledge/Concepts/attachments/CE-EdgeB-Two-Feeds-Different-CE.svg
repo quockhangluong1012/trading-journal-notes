@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Hai feed khác nhau về gap khác nhau -&gt; hai CE</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">GBPUSD H1 FVG: broker A vs broker B lệch high/low 1.2 pip, CE lệch 2 tick</text>
+
+  <line x1="640" y1="110" x2="640" y2="620" stroke="#2a2e39" stroke-width="2"/>
+
+  <!-- Left: broker A -->
+  <rect x="70" y="150" width="220" height="46" rx="8" fill="#4a90d9" opacity="0.16" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="180" y="179" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#4a90d9">Broker A (feed riêng)</text>
+
+  <g>
+    <line x1="140" y1="260" x2="140" y2="310" stroke="#26a69a" stroke-width="2"/>
+    <rect x="130" y="265" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="190" y1="240" x2="190" y2="290" stroke="#26a69a" stroke-width="2"/>
+    <rect x="180" y="245" width="20" height="35" fill="#26a69a" rx="1"/>
+  </g>
+  <rect x="100" y="330" width="180" height="70" fill="#f2c94c" opacity="0.14" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="100" y1="365" x2="280" y2="365" stroke="#f2c94c" stroke-width="2"/>
+  <text x="190" y="425" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">CE-A = 1.08296</text>
+  <text x="190" y="450" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">high 1.08352 / low 1.08240</text>
+
+  <!-- Right: broker B -->
+  <rect x="990" y="150" width="220" height="46" rx="8" fill="#b48ead" opacity="0.16" stroke="#b48ead" stroke-width="1.5"/>
+  <text x="1100" y="179" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#b48ead">Broker B (feed khác)</text>
+
+  <g>
+    <line x1="1060" y1="255" x2="1060" y2="305" stroke="#26a69a" stroke-width="2"/>
+    <rect x="1050" y="260" width="20" height="35" fill="#26a69a" rx="1"/>
+    <line x1="1110" y1="238" x2="1110" y2="288" stroke="#26a69a" stroke-width="2"/>
+    <rect x="1100" y="243" width="20" height="35" fill="#26a69a" rx="1"/>
+  </g>
+  <rect x="1020" y="325" width="180" height="70" fill="#f2c94c" opacity="0.14" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="1020" y1="360" x2="1200" y2="360" stroke="#f2c94c" stroke-width="2"/>
+  <text x="1110" y="420" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">CE-B = 1.08300</text>
+  <text x="1110" y="445" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">high 1.08360 / low 1.08240</text>
+
+  <!-- center consensus box -->
+  <rect x="440" y="470" width="400" height="110" rx="8" fill="#131722" stroke="#565b66" stroke-width="1"/>
+  <text x="640" y="498" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#d1d4dc">Chọn CE đồng thuận</text>
+  <text x="640" y="525" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">CE-median = 1.08298</text>
+  <text x="640" y="550" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">dùng khi entry/stop sát biên quyết định</text>
+  <text x="640" y="570" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">bỏ qua nếu gap lớn (k≥5)</text>
+
+  <text x="640" y="650" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff9800">Chênh lệch feed trung bình: FX 0.8-1.5 pip, XAUUSD 0.3-0.6 USD (60 mẫu)</text>
+
+  <text x="640" y="695" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">Xem EC-C4 - dùng median, không dùng trung bình, để chống outlier feed lỗi</text>
+</svg>

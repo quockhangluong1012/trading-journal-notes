@@ -67,14 +67,9 @@ function num(v) {
 }
 
 function rValue(t) {
-  const explicit = num(first(t, ["r_multiple", "r", "R", "rMultiple", "r-multiple"]));
-  if (explicit !== null) return explicit;
-
-  // Fallback để dashboard vẫn chạy khi note cũ chưa có r_multiple.
-  // Nên thay bằng R thực tế sau khi review.
-  if (result(t) === "Loss") return -1;
-  if (result(t) === "Win") return 1;
-  return 0;
+  // Tra ve null khi note chua co r_multiple. KHONG fallback +-1R:
+  // bia R lam moi tong R tro thanh so tong hop, khong phai phep do.
+  return num(first(t, ["r_multiple", "r", "R", "rMultiple", "r-multiple"]));
 }
 
 function mistakes(t) {
@@ -105,7 +100,9 @@ const wins = trades.filter(t => result(t) === "Win").length;
 const losses = trades.filter(t => result(t) === "Loss").length;
 const be = trades.filter(t => result(t) === "BE").length;
 const winrate = (wins + losses) > 0 ? (wins / (wins + losses) * 100) : 0;
-const totalR = trades.reduce((sum, t) => sum + rValue(t), 0);
+const tradesWithR = trades.filter(t => rValue(t) !== null);
+const tradesMissingR = trades.length - tradesWithR.length;
+const totalR = tradesWithR.reduce((sum, t) => sum + rValue(t), 0);
 
 const allMistakes = {};
 for (const t of trades) {
@@ -128,8 +125,13 @@ dv.container.innerHTML = `
     <div style="font-size:28px;font-weight:700;">${winrate.toFixed(1)}%</div>
   </div>
   <div style="border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;">
-    <div style="font-size:12px;opacity:.7;">Total R</div>
+    <div style="font-size:12px;opacity:.7;">Total R <span style="opacity:.6;">(${tradesWithR.length} lenh co R)</span></div>
     <div style="font-size:28px;font-weight:700;">${totalR.toFixed(2)}R</div>
+  </div>
+  <div style="border:1px solid ${tradesMissingR>0?"var(--color-red,#d64545)":"var(--background-modifier-border)"};border-radius:12px;padding:14px;">
+    <div style="font-size:12px;opacity:.7;">Lenh THIEU r_multiple</div>
+    <div style="font-size:28px;font-weight:700;">${tradesMissingR}</div>
+    <div style="font-size:11px;opacity:.6;">bi loai khoi Total R</div>
   </div>
 </div>
 
@@ -149,7 +151,7 @@ dv.table(
     symbol(t),
     direction(t),
     result(t),
-    `${rValue(t).toFixed(2)}R`,
+    rValue(t) === null ? "—" : `${rValue(t).toFixed(2)}R`,
     mistakes(t).join(", ")
   ])
 );

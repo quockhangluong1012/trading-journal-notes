@@ -30,9 +30,9 @@ tags:
 
 ## 📚 Học hôm nay
 
-- ✅ **[[10 - Consequent Encroachment (Mean Threshold)]] → `status: tested`** (last_reviewed 2026-07-10). **Đây là concept ĐẦU TIÊN trong toàn vault lên mức `tested`** (trước hôm nay: 0 tested / 49 concept). Bằng chứng kiểm chứng đến trực tiếp từ backtest: cả 3 lệnh hôm nay đều dùng **CE của FVG/BPR/Unicorn** làm mốc entry (BT1 entry tại CE Unicorn H1; BT3 entry tại CE FVG nhịp đẩy). Việc này **phá nút thắt chất lượng dài hạn** mà các daily summary trước liên tục cảnh báo ("0 concept được kiểm chứng qua backtest").
+- ✅ **[[10-Consequent-Encroachment-Mean-Threshold]] → `status: tested`** (last_reviewed 2026-07-10). **Đây là concept ĐẦU TIÊN trong toàn vault lên mức `tested`** (trước hôm nay: 0 tested / 49 concept). Bằng chứng kiểm chứng đến trực tiếp từ backtest: cả 3 lệnh hôm nay đều dùng **CE của FVG/BPR/Unicorn** làm mốc entry (BT1 entry tại CE Unicorn H1; BT3 entry tại CE FVG nhịp đẩy). Việc này **phá nút thắt chất lượng dài hạn** mà các daily summary trước liên tục cảnh báo ("0 concept được kiểm chứng qua backtest").
 - **Tình trạng concept sau hôm nay:** 49 note — **18 seed, 30 developing, 1 tested, 0 mastered** (developing 31→30, tested 0→1 so với hôm qua = đúng 1 concept dịch chuyển developing→tested).
-- ⚠️ **Lưu ý trung thực về checkbox học:** file task sáng tick cả [[35 - Aggressive Displacement Entry]] và [[42 - SMT Divergence]], nhưng frontmatter 2 note này vẫn `last_reviewed: 2026-07-09` (không đổi hôm nay) → **không có bằng chứng ôn hôm nay**. Chỉ tính **1 concept có bằng chứng thật** (CE). Đây là dạng overtick cần để ý (đã gặp ở 07-06).
+- ⚠️ **Lưu ý trung thực về checkbox học:** file task sáng tick cả [[35-Aggressive-Displacement-Entry]] và [[42-SMT-Divergence]], nhưng frontmatter 2 note này vẫn `last_reviewed: 2026-07-09` (không đổi hôm nay) → **không có bằng chứng ôn hôm nay**. Chỉ tính **1 concept có bằng chứng thật** (CE). Đây là dạng overtick cần để ý (đã gặp ở 07-06).
 
 ## 📊 Backtest hôm nay
 
@@ -47,7 +47,7 @@ tags:
 
 ### BT2 — `02 - Loss - EURUSD - 2021-05-07 - Short` · Grade C/D · −1R · followed_plan **No**
 - **Bias:** Bearish, `bias_correct: Yes` — **nhưng đây chính là cái bẫy.** Bias đúng ≠ thời điểm entry đúng.
-- **Mắt xích gãy:** ❌ **KHÔNG ở Kill Zone** (vào lúc Asia, 10:05 UTC+7). Section 3 để trống ô Kill Zone nhưng Section 2 vẫn tick `[x]` mục "Entry trong Kill Zone" → **hai mục tự mâu thuẫn trong cùng file**. ❌ Displacement yếu ("nến không quá lớn", tự ghi 2 lần) = [[08 - Mistake - Weak Displacement]]. ❌ Đứng **sai phía liquidity gần nhất**: buy-side chưa bị lấy (OB 1.21296–1.21227) nằm **cùng phía SL** → giá nhử short vào rồi chạy lên quét SL trước.
+- **Mắt xích gãy:** ❌ **KHÔNG ở Kill Zone** (vào lúc Asia, 10:05 UTC+7). Section 3 để trống ô Kill Zone nhưng Section 2 vẫn tick `[x]` mục "Entry trong Kill Zone" → **hai mục tự mâu thuẫn trong cùng file**. ❌ Displacement yếu ("nến không quá lớn", tự ghi 2 lần) = [[08-Mistake-Weak-Displacement]]. ❌ Đứng **sai phía liquidity gần nhất**: buy-side chưa bị lấy (OB 1.21296–1.21227) nằm **cùng phía SL** → giá nhử short vào rồi chạy lên quét SL trước.
 - **Root cause (tự chẩn, đúng):** lỗi **quy trình** (thiếu Kill Zone gate + nhầm HTF bias với short-term draw on liquidity) — **KHÔNG phải lỗi tâm lý**. File đã tự sửa dòng "cải thiện tâm lý" thành "thêm 4-gate pre-trade checklist".
 - **Hygiene:** file tự đánh dấu lệnh này **`invalid-out-of-KZ`, KHÔNG tính vào cohort đo edge** — đây là kỷ luật thống kê rất tốt.
 - ⚠️ **Data-integrity trong chính file:** `grade` frontmatter **C** vs bảng Summary **D**; `trade_date` 2021-05-07 nhưng heading/bảng ghi 2021-05-03 và phần Phân Tích ghi nhầm năm 2026. Cần đồng bộ (đưa vào việc ngày mai).
@@ -76,11 +76,11 @@ tags:
 
 Lỗi kích hoạt hôm nay đều nằm trong **BT2** (là backtest, **không** phải live → **không** làm đổi số đếm trong [[02 - Mistake Frequency Dashboard]]):
 
-- **[[08 - Mistake - Weak Displacement]]** (đã có note): vào lệnh dù tự ghi "nến displacement không quá lớn" tới 2 lần. Định nghĩa lỗi: hợp lý hoá một nhịp đẩy yếu (không đạt ngưỡng ATR, không phá cấu trúc dứt khoát) thành "displacement hợp lệ" → mất dấu hiệu dòng lệnh tổ chức thật.
+- **[[08-Mistake-Weak-Displacement]]** (đã có note): vào lệnh dù tự ghi "nến displacement không quá lớn" tới 2 lần. Định nghĩa lỗi: hợp lý hoá một nhịp đẩy yếu (không đạt ngưỡng ATR, không phá cấu trúc dứt khoát) thành "displacement hợp lệ" → mất dấu hiệu dòng lệnh tổ chức thật.
 - **Vào lệnh sai Kill Zone** (⚠️ **chưa có note riêng** trong `06 - Mistake Database`): vào phiên Asia thanh khoản mỏng cho một mô hình *phụ thuộc Kill Zone*. → **Đề xuất tạo `[[Mistake - Vào lệnh sai Kill Zone]]`** để dashboard bắt được tần suất.
 - **Lỗi nhận thức (cognitive, chưa cataloged):** nhầm **HTF bias** với **short-term draw on liquidity** — short đúng hướng dài hạn nhưng đứng sai phía liquidity chưa-bị-lấy gần nhất. Đây là bài học sâu nhất của ngày; nên cân nhắc thành một mục checklist ("liquidity chưa-bị-lấy gần nhất nằm phía nào so với entry?").
 
-**Đối chiếu top-3 lỗi hiện tại** ([[06 - Mistake - Not Have Market Structure Shift]] 14 · [[09 - Mistake - Wrong daily bias]] 7 · [[07 - Mistake - Risk more than 0.5% total account]] 5): **không lỗi nào trong top-3 tái phát hôm nay** (BT2 có MSS, bias đúng, và là backtest nên không dính rủi ro vốn). Lỗi Weak Displacement + Kill Zone **không thuộc** top-3 → không kích hoạt cảnh báo top-3.
+**Đối chiếu top-3 lỗi hiện tại** ([[06-Mistake-Not-Have-Market-Structure-Shift]] 14 · [[09-Mistake-Wrong-daily-bias]] 7 · [[07-Mistake-Risk-more-than-0.5-total-account]] 5): **không lỗi nào trong top-3 tái phát hôm nay** (BT2 có MSS, bias đúng, và là backtest nên không dính rủi ro vốn). Lỗi Weak Displacement + Kill Zone **không thuộc** top-3 → không kích hoạt cảnh báo top-3.
 
 ## 🎯 Đối chiếu mục tiêu
 
@@ -92,14 +92,14 @@ Ngày mốc: **2027-01-07** → còn **181 ngày**.
 | [[Pass The5er first package challenge (10k$)]] | 0% | 0/8 | **2026-06-23 (17 ngày)** | không đổi | **Behind** — như trên. |
 | [[Build a statistically validated backtest sample]] | 6% | 0/4 | 2026-07-09 | **10/200 backtest** | **On track (số lượng)** — xem pace dưới. |
 | [[Master the ICT 2022 Model]] | 30% | 0/5 | 2026-07-09 | **10/100 setup, 80% win** | **On track (số lượng)**, ràng buộc thật = win rate/mẫu lớn. |
-| [[Hold daily journaling and process discipline]] | 40% | 0/4 | 2026-07-09 | **summary #7, 6 ngày liên tiếp** | Thói quen bền; cột mốc #1 đủ bằng chứng tick (để Khang tự chấm). |
+| [[Hold daily journaling and process discipline]] | 40% | 0/4 | 2026-07-09 | **summary #7, 6 ngày liên tiếp** | Thói quen bền; cột mốc #1 đủ bằng chứng tick (để  tự chấm). |
 | [[Cut my top 3 repeated mistakes]] | 20% | 0/4 | 2026-07-08 | live không đổi | Đứng yên hợp lệ (không có lệnh live). |
 
 **Mismatch cần nêu rõ (progress fm vs cột mốc thực):**
 - FTMO & The5ers: `progress 0` khớp cột mốc 0/8 — nhưng `phase: "Phase 4 - Challenge"` **sai sự thật** (đang Giai đoạn 0, chưa mua gói).
 - [[Master the ICT 2022 Model]]: `progress 30%` nhưng **cột mốc 0/5** → 30% là ghi tay, chưa khớp cột mốc (thực = 0%).
-- [[Hold daily journaling...]]: `progress 40%` nhưng **cột mốc 0/4** (thực = 0%); cột mốc #1 đã đủ bằng chứng.
-- [[Cut my top 3...]]: `progress 20%` nhưng **cột mốc 0/4** (thực = 0%); cột mốc #1+#2 đã đủ bằng chứng.
+- [[Hold daily journaling and process discipline]]: `progress 40%` nhưng **cột mốc 0/4** (thực = 0%); cột mốc #1 đã đủ bằng chứng.
+- [[Cut my top 3 repeated mistakes]]: `progress 20%` nhưng **cột mốc 0/4** (thực = 0%); cột mốc #1+#2 đã đủ bằng chứng.
 - [[Build a statistically validated backtest sample]]: `progress 6%` gần khớp 10/200 = 5%; **cột mốc 0/4** (50 backtest chưa đạt).
 
 **Pace verdict (số cụ thể, không cảm tính):**
@@ -117,10 +117,10 @@ Ngày mốc: **2027-01-07** → còn **181 ngày**.
 
 **KHÔNG thêm dòng (nêu lý do):**
 - [[Cut my top 3 repeated mistakes]]: không có lệnh live → tần suất lỗi top-3 (đo trên trade live) **không đổi**; thêm dòng sẽ là dòng rỗng.
-- [[Pass FTMO...]] & [[Pass The5er...]]: **chưa làm bước Giai đoạn 0 nào** hôm nay → không có số thật để log; cố tình **không** thêm dòng "vẫn 0%" (giữ cảnh báo 17 ngày trung thực).
+- [[Pass FTMO...]] & [[Pass The5er first package challenge (10k$)]]: **chưa làm bước Giai đoạn 0 nào** hôm nay → không có số thật để log; cố tình **không** thêm dòng "vẫn 0%" (giữ cảnh báo 17 ngày trung thực).
 
 > [!note] Việc KHÔNG tự làm thay (để giữ vòng accountability)
-> Không tự tick cột mốc và không tự sửa `progress %` (Khang tự chấm). Không tự dán W27, không tự sửa 2 nhãn `phase`, không tự lập bảng lot size — đây là **nợ tự tay** để tuần tự xoá, đã liệt kê ở Cảnh báo & Việc ngày mai.
+> Không tự tick cột mốc và không tự sửa `progress %` ( tự chấm). Không tự dán W27, không tự sửa 2 nhãn `phase`, không tự lập bảng lot size — đây là **nợ tự tay** để tuần tự xoá, đã liệt kê ở Cảnh báo & Việc ngày mai.
 
 ## 🔭 Việc cần làm ngày mai
 
@@ -130,7 +130,7 @@ Ngày mốc: **2027-01-07** → còn **181 ngày**.
 4. **Data-integrity 2 backtest hôm nay:** BT2 đồng bộ `grade` (C↔D) + `trade_date`/năm trong body; BT3 sửa tên file/heading "Short/2005" → "Long/2021" và thống nhất `followed_plan`.
 5. **Tạo `[[Mistake - Vào lệnh sai Kill Zone]]`** trong Mistake Database để bắt tần suất lỗi Kill Zone (BT2 hôm nay).
 6. **Backtest ngày 6:** giữ chuỗi + **đổi symbol** (NAS100 hoặc GBPUSD/XAUUSD) để giảm lệch mẫu EURUSD 9/10; áp 4-gate pre-trade (Session → Draw → Location/OTE → Signal-quality) mà BT2 đã rút ra.
-7. **Tự chấm cột mốc đã đủ bằng chứng** (Khang tự tick, không tự tick giùm): [[Hold daily journaling...]] #1, [[Cut my top 3...]] #1+#2, rồi chỉnh `progress %` cho khớp cột mốc.
+7. **Tự chấm cột mốc đã đủ bằng chứng** ( tự tick, không tự tick giùm): [[Hold daily journaling and process discipline]] #1, [[Cut my top 3 repeated mistakes]] #1+#2, rồi chỉnh `progress %` cho khớp cột mốc.
 
 ## 🔗 Liên kết
 

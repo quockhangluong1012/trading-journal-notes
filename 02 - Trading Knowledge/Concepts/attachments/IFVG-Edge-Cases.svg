@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="760" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Edge Cases đắt giá nhất: Feed sai lệch &amp; Nested Inversion trong choppy</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">16.8 — close-through ảo do sai lệch feed | 16.3 mở rộng — đảo cực chồng đảo cực = churn</text>
+
+  <!-- Panel EC 16.8 -->
+  <rect x="40" y="90" width="560" height="620" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="60" y="120" font-size="17" fill="#e2e8f0" font-weight="bold">16.8. Feed khác nhau → "close-through" ảo</text>
+
+  <text x="60" y="150" font-size="13" fill="#94a3b8">FVG biên dưới = 1.0855 (ví dụ)</text>
+  <line x1="70" y1="220" x2="550" y2="220" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="555" y="224" font-size="11" fill="#eab308">Biên gap</text>
+
+  <text x="80" y="260" font-size="13" fill="#e2e8f0" font-weight="bold">Broker A (CFD)</text>
+  <line x1="150" y1="330" x2="150" y2="270" stroke="#ef4444" stroke-width="2"/>
+  <rect x="139" y="280" width="22" height="40" fill="#ef4444"/>
+  <text x="150" y="350" font-size="11" fill="#ef4444" text-anchor="middle">Đóng 1.0852</text>
+  <text x="150" y="368" font-size="11" fill="#ef4444" text-anchor="middle">"Close-through" ✓</text>
+
+  <text x="330" y="260" font-size="13" fill="#e2e8f0" font-weight="bold">CME / Broker B</text>
+  <line x1="400" y1="330" x2="400" y2="200" stroke="#22c55e" stroke-width="2"/>
+  <rect x="389" y="210" width="22" height="120" fill="#22c55e"/>
+  <text x="400" y="350" font-size="11" fill="#22c55e" text-anchor="middle">Đóng 1.0858</text>
+  <text x="400" y="368" font-size="11" fill="#22c55e" text-anchor="middle">KHÔNG close-through ✗</text>
+
+  <rect x="60" y="400" width="500" height="90" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="80" y="424" font-size="13" fill="#e2e8f0" font-weight="bold">Vùng xám: 3-5 tick/pip quanh biên</text>
+  <text x="80" y="446" font-size="12" fill="#94a3b8">Nếu mức đóng cửa quyết định nằm trong khoảng này,</text>
+  <text x="80" y="466" font-size="12" fill="#94a3b8">đối chiếu nguồn dữ liệu khác trước khi kết luận inversion.</text>
+
+  <rect x="60" y="620" width="500" height="80" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="80" y="646" font-size="13" fill="#e2e8f0">Cách xử lý: NQ/ES ưu tiên dữ liệu CME gốc;</text>
+  <text x="80" y="668" font-size="13" fill="#e2e8f0">FX đối chiếu 2 broker khi đóng cửa sát biên.</text>
+
+  <!-- Panel Nested Inversion -->
+  <rect x="620" y="90" width="540" height="620" rx="8" fill="#141b2b" stroke="#1c2333"/>
+  <text x="640" y="120" font-size="17" fill="#e2e8f0" font-weight="bold">16.3 mở rộng. Nested Inversion = Churn</text>
+
+  <line x1="660" y1="400" x2="1120" y2="400" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="1000" y="395" font-size="11" fill="#94a3b8">Range hẹp GBPUSD</text>
+
+  <rect x="700" y="360" width="380" height="40" fill="#f97316" opacity="0.2"/>
+  <text x="710" y="355" font-size="12" fill="#f97316">Vùng iFVG gốc</text>
+
+  <line x1="750" y1="450" x2="750" y2="370" stroke="#ef4444" stroke-width="2"/>
+  <text x="750" y="470" font-size="10" fill="#ef4444" text-anchor="middle">① Inversion #1</text>
+
+  <line x1="850" y1="330" x2="850" y2="410" stroke="#22c55e" stroke-width="2"/>
+  <text x="850" y="315" font-size="10" fill="#22c55e" text-anchor="middle">② Nested #2 (đảo lại)</text>
+
+  <line x1="950" y1="450" x2="950" y2="370" stroke="#ef4444" stroke-width="2"/>
+  <text x="950" y="470" font-size="10" fill="#ef4444" text-anchor="middle">③ Nested #3</text>
+
+  <text x="660" y="500" font-size="13" fill="#ef4444">→ Không có displacement rõ, không có draw HTF</text>
+  <text x="660" y="522" font-size="13" fill="#ef4444">→ Mỗi lần chỉ quét liquidity phe vừa vào (churn)</text>
+
+  <rect x="660" y="550" width="440" height="150" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="680" y="576" font-size="14" fill="#e2e8f0" font-weight="bold">Cách xử lý</text>
+  <text x="680" y="600" font-size="13" fill="#e2e8f0">• Khi thấy iFVG bị đảo tiếp trong vùng hẹp →</text>
+  <text x="680" y="620" font-size="13" fill="#e2e8f0">  dừng lại, nhận diện đây là range</text>
+  <text x="680" y="642" font-size="13" fill="#e2e8f0">• Chờ external move kèm displacement thật</text>
+  <text x="680" y="664" font-size="13" fill="#e2e8f0">• Không đuổi theo từng cú đảo cực trong range</text>
+  <text x="680" y="686" font-size="12" fill="#94a3b8">Case 16.10: dời stop breakeven quá sớm cũng là bẫy liên quan</text>
+</svg>

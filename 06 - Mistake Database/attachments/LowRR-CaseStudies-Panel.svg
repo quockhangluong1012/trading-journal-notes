@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="900" fill="#ffffff"/>
+  <text x="550" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Case Studies — Not enough RR (kịch bản minh họa)</text>
+  <text x="550" y="58" text-anchor="middle" font-size="14" fill="#555">Case A (đỏ) · Case B (xanh) · Case C (amber) — số liệu mang tính đại diện, không phải log thật</text>
+
+  <!-- Case A panel -->
+  <rect x="40" y="80" width="1020" height="240" rx="10" fill="#fce4e4" stroke="#c62828" stroke-width="2"/>
+  <text x="60" y="106" font-size="15" font-weight="bold" fill="#c62828">Case A — GBPUSD London: TP nén vào EQH nội bộ gần</text>
+  <text x="60" y="126" font-size="12" fill="#3a2c00">Entry 1.2699 · SL 1.2688 (11 pip) · TP 1.2712 (13 pip) · RR kế hoạch 1:1.18</text>
+
+  <!-- schematic price line Case A -->
+  <polyline points="70,220 200,180 320,220 430,205 540,150 650,145 760,150" fill="none" stroke="#c62828" stroke-width="2.5"/>
+  <line x1="70" y1="205" x2="1030" y2="205" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="209" font-size="11" fill="#1a1a1a">Entry 1.2699</text>
+  <line x1="70" y1="230" x2="1030" y2="230" stroke="#c62828" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="234" font-size="11" fill="#c62828">SL 1.2688</text>
+  <line x1="70" y1="150" x2="1030" y2="150" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="154" font-size="10" fill="#2e7d32">TP 1.2712</text>
+  <line x1="70" y1="95" x2="1030" y2="95" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="820" y="93" font-size="11" fill="#1565c0">Old high H1 1.2745 (RR≈4.2, bỏ lỡ)</text>
+  <polyline points="760,150 900,110 1030,98" fill="none" stroke="#1565c0" stroke-width="2" stroke-dasharray="3,3"/>
+
+  <text x="60" y="296" font-size="12.5" fill="#3a2c00">Kết quả: WIN nhỏ +1.18R nhưng giá tiếp tục chạy tới 1.2745 — bỏ lỡ ~4.2R khả dụng.</text>
+  <text x="60" y="313" font-size="12.5" font-weight="bold" fill="#c62828">Audit: FAIL Q2 (RR&lt;2), Q4 (runway check), Q10 (TP1/TP2) → xếp loại C dù P&amp;L thắng</text>
+
+  <!-- Case B panel -->
+  <rect x="40" y="336" width="1020" height="240" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="60" y="362" font-size="15" font-weight="bold" fill="#2e7d32">Case B — XAUUSD NY: hạ target vì phát hiện FVG đối ứng</text>
+  <text x="60" y="382" font-size="12" fill="#1a1a1a">Entry 2452 · SL 2454 (2$) · TP1 2447 (5$, RR 2.5) · TP2 2444 runner (RR 4.0)</text>
+
+  <polyline points="70,420 200,440 320,455 430,470 540,468 650,430 760,400" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+  <line x1="70" y1="440" x2="1030" y2="440" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="444" font-size="11" fill="#1a1a1a">Entry 2452</text>
+  <line x1="70" y1="415" x2="1030" y2="415" stroke="#c62828" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="419" font-size="11" fill="#c62828">SL 2454</text>
+  <line x1="70" y1="470" x2="1030" y2="470" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="474" font-size="10" fill="#2e7d32">TP1 2447</text>
+  <line x1="70" y1="495" x2="1030" y2="495" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="1035" y="499" font-size="10" fill="#1565c0">TP2 2444</text>
+
+  <text x="60" y="536" font-size="12.5" fill="#1a1a1a">Kết quả: giá chạm vùng FVG đối ứng rồi bật ngược quét SL — LOSS −0.5% đúng risk kế hoạch.</text>
+  <text x="60" y="553" font-size="12.5" font-weight="bold" fill="#2e7d32">Bài học: tuân thủ runway check + ngưỡng RR không đảm bảo thắng — đảm bảo thua không kèm lỗi quy trình</text>
+
+  <!-- Case C panel -->
+  <rect x="40" y="592" width="1020" height="240" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="60" y="618" font-size="15" font-weight="bold" fill="#3a2c00">Case C — EURUSD London/NY overlap: RR 1.8, sát ngưỡng cứng 2.0</text>
+  <text x="60" y="638" font-size="12" fill="#3a2c00">Entry 1.0859 · SL 1.0855 (4 pip) · TP EQH M15 1.0866 (7 pip) · RR kế hoạch 1:1.8</text>
+
+  <polyline points="70,760 200,730 320,700 430,690 540,670 650,660 760,650" fill="none" stroke="#f9a825" stroke-width="2.5"/>
+  <line x1="70" y1="710" x2="1030" y2="710" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="714" font-size="11" fill="#1a1a1a">Entry 1.0859</text>
+  <line x1="70" y1="735" x2="1030" y2="735" stroke="#c62828" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="739" font-size="11" fill="#c62828">SL 1.0855</text>
+  <line x1="70" y1="672" x2="1030" y2="672" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="1035" y="676" font-size="10" fill="#2e7d32">TP 1.0866</text>
+
+  <text x="60" y="792" font-size="12.5" fill="#3a2c00">Mọi yếu tố khác đạt chuẩn (sweep/MSS/FVG/kill zone/runway sạch) — chỉ RR thiếu 0.2.</text>
+  <text x="60" y="809" font-size="12.5" font-weight="bold" fill="#3a2c00">Cần tiêu chí tie-break lượng hóa định trước (≥4/4 điều kiện) — không quyết định bằng cảm giác "gần đủ"</text>
+
+  <!-- Summary bar -->
+  <rect x="40" y="850" width="1020" height="40" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="60" y="875" font-size="12.5" fill="#1a1a1a">So sánh: A = thắng nhỏ do RR kém · B = thua đúng process · C = vùng xám cần tiêu chí tie-break trước</text>
+</svg>

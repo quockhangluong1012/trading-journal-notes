@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1280" height="760" rx="14" fill="#131722"/>
+  <rect x="1" y="1" width="1278" height="758" rx="14" fill="none" stroke="#2a2e39"/>
+
+  <text x="32" y="42" font-size="26" font-weight="bold" fill="#d1d4dc">NQ Long — thắng nhờ tìm FVG M5 ẩn trong wick sweep H1 (+2.6R)</text>
+  <text x="32" y="66" font-size="15" fill="#787b86">NQ futures, NY AM (tái dựng minh họa từ mẫu backtest) — H1 tự nó không giải thích được điểm đảo</text>
+
+  <text x="90" y="700" font-size="13" fill="#ff9800">09:30</text>
+  <text x="380" y="700" font-size="13" fill="#ff9800">10:00</text>
+  <text x="700" y="700" font-size="13" fill="#ff9800">10:45</text>
+  <text x="1000" y="700" font-size="13" fill="#ff9800">11:15</text>
+
+  <!-- H1 sweep candle - long wick down -->
+  <rect x="120" y="360" width="30" height="60" fill="#ef5350" rx="1"/>
+  <line x1="135" y1="200" x2="135" y2="540" stroke="#ef5350" stroke-width="2"/>
+  <text x="60" y="570" font-size="13" fill="#787b86">Nen H1 sweep — wick dai xuong, phan</text>
+  <text x="60" y="588" font-size="13" fill="#787b86">ung tai day khong the giai thich tren H1</text>
+
+  <!-- M5 zoom box overlay showing FVG inside the wick -->
+  <rect x="220" y="380" width="380" height="200" fill="#1c2030" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="236" y="404" font-size="14" fill="#4a90d9">Zoom M5 ben trong wick:</text>
+
+  <g>
+    <rect x="250" y="500" width="16" height="30" fill="#ef5350" rx="1"/><line x1="258" y1="490" x2="258" y2="540" stroke="#ef5350"/>
+    <rect x="280" y="480" width="16" height="60" fill="#ef5350" rx="1"/><line x1="288" y1="465" x2="288" y2="550" stroke="#ef5350"/>
+    <rect x="310" y="500" width="16" height="20" fill="#26a69a" rx="1"/><line x1="318" y1="490" x2="318" y2="530" stroke="#26a69a"/>
+  </g>
+  <rect x="298" y="465" width="60" height="35" fill="#26a69a" opacity="0.2" stroke="#26a69a" stroke-dasharray="4 3" stroke-opacity="0.7"/>
+  <text x="370" y="480" font-size="13" fill="#26a69a">M5 FVG that</text>
+  <text x="370" y="500" font-size="13" fill="#26a69a">CE trung day wick H1</text>
+
+  <!-- entry point at CE of M5 FVG -->
+  <line x1="326" y1="480" x2="326" y2="440" stroke="#f2c94c" stroke-width="2"/>
+  <polygon points="326,438 320,450 332,450" fill="#f2c94c"/>
+  <text x="336" y="445" font-size="13" fill="#f2c94c">Entry 20,214 (CE M5 FVG)</text>
+
+  <!-- continuation up -->
+  <g>
+    <rect x="680" y="300" width="20" height="60" fill="#26a69a" rx="1"/><line x1="690" y1="285" x2="690" y2="380" stroke="#26a69a"/>
+    <rect x="720" y="240" width="20" height="70" fill="#26a69a" rx="1"/><line x1="730" y1="225" x2="730" y2="320" stroke="#26a69a"/>
+    <rect x="760" y="180" width="20" height="65" fill="#26a69a" rx="1"/><line x1="770" y1="165" x2="770" y2="255" stroke="#26a69a"/>
+    <rect x="900" y="160" width="20" height="40" fill="#26a69a" rx="1"/><line x1="910" y1="148" x2="910" y2="210" stroke="#26a69a"/>
+  </g>
+
+  <line x1="60" y1="530" x2="1200" y2="530" stroke="#ff6b6b" stroke-dasharray="4 3"/>
+  <text x="1080" y="524" font-size="13" fill="#ff6b6b">SL 20,196 (duoi distal M5 FVG)</text>
+
+  <line x1="60" y1="165" x2="1200" y2="165" stroke="#f2c94c" stroke-dasharray="6 4"/>
+  <text x="1080" y="158" font-size="13" fill="#f2c94c">TP 20,332 (BSL H1)</text>
+
+  <rect x="680" y="560" width="500" height="120" fill="#1c2030" stroke="#26a69a" stroke-dasharray="6 4"/>
+  <text x="696" y="588" font-size="16" font-weight="bold" fill="#26a69a">✓ +2.6R — entry chi kha thi vi zoom xuong M5</text>
+  <text x="696" y="612" font-size="14" fill="#d1d4dc">Neu chi nhin H1: khong co POI nao o day</text>
+  <text x="696" y="634" font-size="14" fill="#d1d4dc">de giai thich phan ung — de bi bo qua</text>
+  <text x="696" y="656" font-size="14" fill="#f2c94c">Twist: thang nho ky thuat EC-B3, khong</text>
+  <text x="696" y="674" font-size="14" fill="#f2c94c">phai nho setup H1 dep san co</text>
+
+  <text x="60" y="730" font-size="13" fill="#565b66">Tái dựng minh họa từ mẫu backtest NQ H1/M5 — không phải giao dịch thật.</text>
+</svg>

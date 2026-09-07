@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="500" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="32" font-size="17" font-weight="700" fill="#1F2937">Edge cases &amp; Failure modes — 6 tình huống Seek &amp; Destroy hay gãy</text>
+<text x="24" y="52" font-size="12.5" fill="#6B7280">Mỗi ô: dấu hiệu → cơ chế → xử lý. Đỏ = nguy hiểm/kỷ luật; Cam = context dễ nhầm.</text>
+<rect x="24" y="72" width="232" height="152" rx="7" fill="#FEF2F2" stroke="#DC2626" stroke-opacity="0.5"/>
+<text x="36" y="94" font-size="11" font-weight="700" fill="#DC2626">① S&D "giả trend"</text>
+<text x="36" y="114" font-size="9.3" fill="#374151">Dấu hiệu: một cú quét kéo dài</text>
+<text x="36" y="127.5" font-size="9.3" fill="#374151">trông như breakout thật.</text>
+<text x="36" y="141.0" font-size="9.3" fill="#374151">Cơ chế: mồi nhử displacement giả,</text>
+<text x="36" y="154.5" font-size="9.3" fill="#374151">chạy một đoạn rồi đảo ngược.</text>
+<text x="36" y="168.0" font-size="9.3" fill="#111827" font-weight="600">Xử lý: chờ đóng nến/retest; không</text>
+<text x="36" y="181.5" font-size="9.3" fill="#111827" font-weight="600">đuổi — S&D không giữ hướng.</text>
+<rect x="264" y="72" width="232" height="152" rx="7" fill="#FEF3C7" stroke="#B45309" stroke-opacity="0.5"/>
+<text x="276" y="94" font-size="11" font-weight="700" fill="#B45309">② S&D quanh tin</text>
+<text x="276" y="114" font-size="9.3" fill="#374151">Dấu hiệu: nến tin whipsaw hai chiều.</text>
+<text x="276" y="127.5" font-size="9.3" fill="#374151">Cơ chế: spike hai đầu quét stop</text>
+<text x="276" y="141.0" font-size="9.3" fill="#374151">rồi về chỗ cũ, không hướng thật.</text>
+<text x="276" y="154.5" font-size="9.3" fill="#111827" font-weight="600">Xử lý: coi là ngày tin; chờ 30–60'</text>
+<text x="276" y="168.0" font-size="9.3" fill="#111827" font-weight="600">phản ứng ổn định rồi mới đọc lại.</text>
+<rect x="504" y="72" width="232" height="152" rx="7" fill="#FEF3C7" stroke="#B45309" stroke-opacity="0.5"/>
+<text x="516" y="94" font-size="11" font-weight="700" fill="#B45309">③ Nhầm consolidation-tiền-expansion</text>
+<text x="516" y="114" font-size="9.3" fill="#374151">Dấu hiệu: chop rồi MỚI bùng nổ.</text>
+<text x="516" y="127.5" font-size="9.3" fill="#374151">Cơ chế: một số ngày tích lũy trước</text>
+<text x="516" y="141.0" font-size="9.3" fill="#374151">khi có displacement thật — cần</text>
+<text x="516" y="154.5" font-size="9.3" fill="#374151">weekly context để phân biệt.</text>
+<text x="516" y="168.0" font-size="9.3" fill="#111827" font-weight="600">Xử lý: kiểm còn DOL rõ không; còn</text>
+<text x="516" y="181.5" font-size="9.3" fill="#111827" font-weight="600">draw HTF → chưa chắc là S&D.</text>
+<rect x="24" y="234" width="232" height="152" rx="7" fill="#FEF3C7" stroke="#B45309" stroke-opacity="0.5"/>
+<text x="36" y="256" font-size="11" font-weight="700" fill="#B45309">④ Thứ Sáu NHƯNG có NFP/FOMC</text>
+<text x="36" y="276" font-size="9.3" fill="#374151">Dấu hiệu: catalyst lớn rơi thứ Sáu.</text>
+<text x="36" y="289.5" font-size="9.3" fill="#374151">Cơ chế: không phải S&D thuần —</text>
+<text x="36" y="303.0" font-size="9.3" fill="#374151">là NGÀY TIN, có thể expansion thật.</text>
+<text x="36" y="316.5" font-size="9.3" fill="#111827" font-weight="600">Xử lý: dùng khung ngày tin, không</text>
+<text x="36" y="330.0" font-size="9.3" fill="#111827" font-weight="600">áp giả định săn-diệt hai phía.</text>
+<rect x="264" y="234" width="232" height="152" rx="7" fill="#FEF2F2" stroke="#DC2626" stroke-opacity="0.5"/>
+<text x="276" y="256" font-size="11" font-weight="700" fill="#DC2626">⑤ Revenge trading trong S&D</text>
+<text x="276" y="276" font-size="9.3" fill="#374151">Dấu hiệu: mỗi lệnh thua kéo lệnh gỡ</text>
+<text x="276" y="289.5" font-size="9.3" fill="#374151">tiếp theo, size tăng dần.</text>
+<text x="276" y="303.0" font-size="9.3" fill="#374151">Cơ chế: whipsaw + cảm xúc → chuỗi</text>
+<text x="276" y="316.5" font-size="9.3" fill="#374151">thua nối tiếp, phá kỷ luật.</text>
+<text x="276" y="330.0" font-size="9.3" fill="#111827" font-weight="600">Xử lý: luật cứng 2 lệnh thua liên</text>
+<text x="276" y="343.5" font-size="9.3" fill="#111827" font-weight="600">tiếp → DỪNG, đóng ngày.</text>
+<rect x="504" y="234" width="232" height="152" rx="7" fill="#FEF2F2" stroke="#DC2626" stroke-opacity="0.5"/>
+<text x="516" y="256" font-size="11" font-weight="700" fill="#DC2626">⑥ Scalp không siết kỷ luật</text>
+<text x="516" y="276" font-size="9.3" fill="#374151">Dấu hiệu: scalp liên tục trong chop,</text>
+<text x="516" y="289.5" font-size="9.3" fill="#374151">không stop/target rõ.</text>
+<text x="516" y="303.0" font-size="9.3" fill="#374151">Cơ chế: phí + spread bào mòn tài</text>
+<text x="516" y="316.5" font-size="9.3" fill="#374151">khoản dù thắng thua gần cân.</text>
+<text x="516" y="330.0" font-size="9.3" fill="#111827" font-weight="600">Xử lý: nếu scalp thì tick-by-tick,</text>
+<text x="516" y="343.5" font-size="9.3" fill="#111827" font-weight="600">size cực nhỏ; tốt nhất đứng ngoài.</text>
+<rect x="24" y="400" width="712" height="70" rx="7" fill="#F8FAFC" stroke="#E5E7EB"/>
+<text x="36" y="424" font-size="11.5" font-weight="700" fill="#111827">Nguyên tắc chung khi nghi ngờ</text>
+<text x="36" y="444" font-size="9.5" fill="#374151">S&amp;D là ngày để KHÔNG trade/giảm size, không phải để "đu" cú quét. Nhận diện qua "3 cú fail" đầu phiên, kiểm</text>
+<text x="36" y="458" font-size="9.5" fill="#374151">weekly range maturity + còn DOL rõ không, và tra lịch tin TRƯỚC. Đỏ = nguy hiểm/kỷ luật; Cam = context dễ nhầm.</text>
+<text x="24" y="486" font-size="10.5" fill="#6B7280">Thiếu chắc chắn → đứng ngoài; sau 2 lệnh thua liên tiếp ngày thứ Sáu → DỪNG. Bảo toàn vốn &gt; cố gỡ.</text>
+</svg>

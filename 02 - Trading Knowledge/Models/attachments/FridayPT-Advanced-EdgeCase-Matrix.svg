@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Ma trận Edge Case — thứ Sáu Profit-Taking</text>
+<!-- 6 boxes in 2 rows x 3 cols -->
+<rect x="32" y="66" width="288" height="140" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+<text x="176" y="92" font-size="13" font-weight="700" fill="#f97316" text-anchor="middle">① NFP/CPI/FOMC</text>
+<text x="176" y="112" font-size="12" fill="#94a3b8" text-anchor="middle">Expansion thật</text>
+<text x="176" y="130" font-size="12" fill="#94a3b8" text-anchor="middle">ngược reversion</text>
+<text x="176" y="152" font-size="11" fill="#e5e7eb" text-anchor="middle">Xử lý: ngày tin,</text>
+<text x="176" y="170" font-size="11" fill="#e5e7eb" text-anchor="middle">gác giả định 30-60p</text>
+<rect x="336" y="66" width="288" height="140" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+<text x="480" y="92" font-size="13" font-weight="700" fill="#a855f7" text-anchor="middle">② Month/Quarter-end</text>
+<text x="480" y="112" font-size="12" fill="#94a3b8" text-anchor="middle">Rebalancing flows</text>
+<text x="480" y="130" font-size="12" fill="#94a3b8" text-anchor="middle">không liên quan Fri</text>
+<text x="480" y="152" font-size="11" fill="#e5e7eb" text-anchor="middle">Xử lý: hạ tin cậy,</text>
+<text x="480" y="170" font-size="11" fill="#e5e7eb" text-anchor="middle">chấp nhận 2 chiều</text>
+<rect x="640" y="66" width="288" height="140" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+<text x="784" y="92" font-size="13" font-weight="700" fill="#a855f7" text-anchor="middle">③ Đáo hạn phái sinh</text>
+<text x="784" y="112" font-size="12" fill="#94a3b8" text-anchor="middle">NQ1/NDX hedging MM</text>
+<text x="784" y="130" font-size="12" fill="#94a3b8" text-anchor="middle">biến động bất thường</text>
+<text x="784" y="152" font-size="11" fill="#e5e7eb" text-anchor="middle">Xử lý: giảm size,</text>
+<text x="784" y="170" font-size="11" fill="#e5e7eb" text-anchor="middle">chờ nửa cuối phiên NY</text>
+<rect x="32" y="226" width="288" height="140" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+<text x="176" y="252" font-size="13" font-weight="700" fill="#eab308" text-anchor="middle">④ Range chưa chín</text>
+<text x="176" y="272" font-size="12" fill="#94a3b8" text-anchor="middle">~30-40% AWR</text>
+<text x="176" y="290" font-size="12" fill="#94a3b8" text-anchor="middle">pool chính chưa quét</text>
+<text x="176" y="312" font-size="11" fill="#e5e7eb" text-anchor="middle">Xử lý: coi ngày</text>
+<text x="176" y="330" font-size="11" fill="#e5e7eb" text-anchor="middle">thường, không fade</text>
+<rect x="336" y="226" width="288" height="140" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+<text x="480" y="252" font-size="13" font-weight="700" fill="#eab308" text-anchor="middle">⑤ HTF trend cực mạnh</text>
+<text x="480" y="272" font-size="12" fill="#94a3b8" text-anchor="middle">momentum chưa cạn</text>
+<text x="480" y="290" font-size="12" fill="#94a3b8" text-anchor="middle">không hồi weekly open</text>
+<text x="480" y="312" font-size="11" fill="#e5e7eb" text-anchor="middle">Xử lý: đi theo bias,</text>
+<text x="480" y="330" font-size="11" fill="#e5e7eb" text-anchor="middle">trailing stop</text>
+<rect x="640" y="226" width="288" height="140" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+<text x="784" y="252" font-size="13" font-weight="700" fill="#eab308" text-anchor="middle">⑥ Thanh khoản mỏng</text>
+<text x="784" y="272" font-size="12" fill="#94a3b8" text-anchor="middle">chiều muộn Fri</text>
+<text x="784" y="290" font-size="12" fill="#94a3b8" text-anchor="middle">whipsaw, spread rộng</text>
+<text x="784" y="312" font-size="11" fill="#e5e7eb" text-anchor="middle">Xử lý: tránh cuối</text>
+<text x="784" y="330" font-size="11" fill="#e5e7eb" text-anchor="middle">phiên, đóng sớm nếu lãi</text>
+<rect x="32" y="396" width="896" height="150" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="52" y="424" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">Nguyên tắc chung khi nghi ngờ</text>
+<text x="52" y="448" font-size="12" fill="#94a3b8" text-anchor="start">Hạ kỳ vọng, ưu tiên quản lý/giữ tiền. Chấm điểm range maturity (4 tiêu chí)</text>
+<text x="52" y="468" font-size="12" fill="#94a3b8" text-anchor="start">và kiểm tra ngoại lệ lịch TRƯỚC khi áp bất kỳ giả định reversion nào.</text>
+<text x="52" y="492" font-size="12" fill="#94a3b8" text-anchor="start">Thiếu một điều kiện tin cậy hoặc dính một ngoại lệ lịch là đủ để</text>
+<text x="52" y="512" font-size="12" fill="#94a3b8" text-anchor="start">coi thứ Sáu đó là ngoại lệ, không fade theo mẫu.</text>
+<text x="32" y="576" font-size="12" fill="#94a3b8" text-anchor="start">Sơ đồ tổng hợp edge case, không phải chart giá thật.</text>
+</svg>

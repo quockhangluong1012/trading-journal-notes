@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Case Study — Win: Curve bất đối xứng, buy program chạy nhanh hơn dự kiến (+2.6R)</text>
+
+<!-- long slow sell program -->
+<text x="60" y="65" font-size="12" fill="#94a3b8">Sell program: 4 bậc LRS, kéo dài ~6 giờ</text>
+<line x1="48" y1="380" x2="500" y2="380" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<polyline points="60,120 130,120 130,180 200,180 200,240 270,240 270,300 340,300 340,360 400,360" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+<text x="90" y="145" font-size="11" fill="#94a3b8">08:00</text>
+<text x="360" y="345" font-size="11" fill="#94a3b8">14:00</text>
+
+<circle cx="400" cy="380" r="16" fill="none" stroke="#4ade80" stroke-width="2"/>
+<text x="400" y="405" font-size="11" fill="#4ade80" text-anchor="middle">SML 14:05</text>
+
+<!-- fast buy program -->
+<line x1="48" y1="100" x2="900" y2="100" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="52" y="94" font-size="12" fill="#eab308">BSL target</text>
+<rect x="420" y="220" width="18" height="160" fill="#22c55e"/><line x1="429" y1="210" x2="429" y2="390" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="450" y="130" width="18" height="150" fill="#22c55e"/><line x1="459" y1="120" x2="459" y2="235" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="480" y="100" width="18" height="80" fill="#22c55e"/><line x1="489" y1="92" x2="489" y2="185" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="600" y="150" font-size="12" fill="#4ade80">Buy program: chỉ ~90 phút, 3 nến displacement</text>
+<text x="600" y="168" font-size="12" fill="#4ade80">đã chạm gần BSL — KHÔNG có bậc LRB rõ ràng</text>
+<circle cx="489" cy="140" r="6" fill="#4ade80"/>
+<polyline points="498,105 560,100 650,98 750,96" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.6"/>
+
+<rect x="60" y="440" width="500" height="120" rx="8" fill="#1e293b" stroke="#334155"/>
+<text x="76" y="462" font-size="12" fill="#e5e7eb">Nếu chờ "đối xứng thời gian" (kỳ vọng buy program ≥ 6 giờ)</text>
+<text x="76" y="482" font-size="12" fill="#e5e7eb">→ sẽ nghi ngờ và bỏ lỡ, vì giá chạy quá nhanh không kịp phản ứng</text>
+<text x="76" y="502" font-size="12" fill="#4ade80">Đúng ra: quản lý theo cấu trúc giá (đã gần BSL chưa),</text>
+<text x="76" y="522" font-size="12" fill="#4ade80">không theo đồng hồ. Kết quả: Win +2.6R, chốt sát BSL</text>
+
+<text x="480" y="580" font-size="12" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa</text>
+</svg>

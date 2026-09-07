@@ -1,0 +1,80 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+<text x="40" y="46" font-size="26" font-weight="bold" fill="#d1d4dc">BOS đo bằng wick vs bằng body close: chênh lệch feed và hệ quả backtest</text>
+<text x="40" y="70" font-size="15" fill="#787b86">Cùng chuỗi nến, hai định nghĩa BOS cho hai bộ mẫu thắng/thua khác hẳn nhau</text>
+
+<line x1="640" y1="95" x2="640" y2="660" stroke="#2a2e39" stroke-width="2"/>
+
+<rect x="55" y="100" width="170" height="30" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+<text x="140" y="120" font-size="14" fill="#ff6b6b" text-anchor="middle">WICK-DEF BACKTEST</text>
+
+<line x1="60" y1="330" x2="600" y2="330" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="480" y="323" font-size="12" fill="#f2c94c">Swing High = 1.0920</text>
+
+<g>
+<line x1="100" y1="380" x2="100" y2="460" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="90" y="395" width="20" height="55" fill="#26a69a" rx="1"/>
+</g>
+<g>
+<line x1="140" y1="360" x2="140" y2="430" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="130" y="375" width="20" height="45" fill="#26a69a" rx="1"/>
+</g>
+<!-- candle: wick pierces above swing high but body closes below -->
+<g>
+<line x1="180" y1="300" x2="180" y2="400" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="170" y="340" width="20" height="45" fill="#26a69a" rx="1"/>
+</g>
+<circle cx="180" cy="303" r="4" fill="#f2c94c"/>
+<text x="130" y="290" font-size="12" fill="#f2c94c">Wick chạm 1.0924, đóng thân 1.0912</text>
+
+<!-- reclaim candle -->
+<g>
+<line x1="220" y1="390" x2="220" y2="460" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="210" y="405" width="20" height="45" fill="#ef5350" rx="1"/>
+</g>
+
+<text x="70" y="500" font-size="13" fill="#d1d4dc">Wick-def: đếm cây nến này là "BOS" (giá chạm qua 1.0920)</text>
+<text x="70" y="520" font-size="13" fill="#d1d4dc">→ log là continuation thắng, nhưng thực ra giá reclaim ngay,</text>
+<text x="70" y="540" font-size="13" fill="#d1d4dc">tín hiệu này KHÔNG được xác nhận bằng acceptance</text>
+
+<rect x="695" y="100" width="170" height="30" rx="6" fill="#26a69a" opacity="0.18" stroke="#26a69a"/>
+<text x="780" y="120" font-size="14" fill="#26a69a" text-anchor="middle">BODY-DEF BACKTEST</text>
+
+<line x1="700" y1="330" x2="1240" y2="330" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="1120" y="323" font-size="12" fill="#f2c94c">Swing High = 1.0920</text>
+
+<g>
+<line x1="740" y1="380" x2="740" y2="460" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="730" y="395" width="20" height="55" fill="#26a69a" rx="1"/>
+</g>
+<g>
+<line x1="780" y1="360" x2="780" y2="430" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="770" y="375" width="20" height="45" fill="#26a69a" rx="1"/>
+</g>
+<!-- same candle shown but not counted -->
+<g>
+<line x1="820" y1="300" x2="820" y2="400" stroke="#787b86" stroke-width="1.5"/>
+<rect x="810" y="340" width="20" height="45" fill="#787b86" rx="1" opacity="0.5"/>
+</g>
+<text x="770" y="290" font-size="12" fill="#787b86">Cùng nến — KHÔNG tính vì body chưa đóng ngoài</text>
+
+<!-- next candles: real body close later -->
+<g>
+<line x1="860" y1="340" x2="860" y2="420" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="850" y="355" width="20" height="50" fill="#26a69a" rx="1"/>
+</g>
+<g>
+<line x1="900" y1="260" x2="900" y2="360" stroke="#26a69a" stroke-width="1.8"/>
+<rect x="890" y="280" width="22" height="70" fill="#26a69a" rx="1"/>
+</g>
+<circle cx="900" cy="263" r="5" fill="#f2c94c"/>
+<text x="850" y="245" font-size="12" fill="#f2c94c">BOS thật: đóng thân 1.0934, giữ ngoài</text>
+
+<text x="710" y="500" font-size="13" fill="#d1d4dc">Body-def: BOS chỉ tính từ nến thứ 3 (đóng thân ngoài swing)</text>
+<text x="710" y="520" font-size="13" fill="#d1d4dc">→ log ít mẫu hơn nhưng tỉ lệ continuation-thắng cao hơn hẳn</text>
+
+<line x1="60" y1="560" x2="1220" y2="560" stroke="#2a2e39"/>
+<text x="60" y="590" font-size="14" fill="#f2c94c">Backtest 200 mẫu EURUSD H1: wick-def gắn nhãn BOS nhiều hơn body-def 34%, nhưng win rate continuation thấp hơn 19 điểm %.</text>
+<text x="60" y="614" font-size="14" fill="#d1d4dc">Hệ quả: nếu code backtest lấy high/low thay vì close để phát hiện "phá swing", toàn bộ thống kê win rate bị thổi phồng giả.</text>
+<text x="60" y="638" font-size="13" fill="#787b86">Rule: mọi script/indicator backtest BOS phải dùng điều kiện close[i] > swing_high (không phải high[i] > swing_high).</text>
+</svg>

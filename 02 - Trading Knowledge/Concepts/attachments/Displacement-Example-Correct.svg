@@ -1,0 +1,45 @@
+<svg viewBox="0 0 760 490" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="490" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ đúng — Displacement thật xác nhận MSS bullish</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Sweep SSL → 3 nến thân lớn, overlap thấp → đóng cửa vượt cấu trúc → FVG rộng → retrace nông về CE → tiếp diễn</text>
+
+  <rect x="24" y="70" width="712" height="380" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <line x1="44" y1="300" x2="704" y2="300" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="52" y="294" font-size="10" fill="#6B7280">Lower-high (mức cấu trúc)</text>
+
+  <!-- pre-sweep down leg -->
+  <rect x="60" y="330" width="2" height="26" fill="#DC2626"/><rect x="54" y="334" width="12" height="18" fill="#DC2626" rx="1" opacity="0.7"/>
+  <rect x="88" y="350" width="2" height="26" fill="#DC2626"/><rect x="82" y="354" width="12" height="18" fill="#DC2626" rx="1" opacity="0.7"/>
+  <rect x="116" y="368" width="2" height="26" fill="#DC2626"/><rect x="110" y="372" width="12" height="18" fill="#DC2626" rx="1" opacity="0.7"/>
+  <circle cx="122" cy="394" r="7" fill="none" stroke="#B45309" stroke-width="2.4"/>
+  <text x="70" y="416" font-size="10.5" font-weight="700" fill="#B45309">① Sweep SSL (đáy nhỏ)</text>
+
+  <!-- 3 displacement candles -->
+  <rect x="160" y="260" width="2" height="130" fill="#16A34A"/><rect x="154" y="266" width="12" height="118" fill="#16A34A" rx="1"/>
+  <rect x="188" y="220" width="2" height="130" fill="#16A34A"/><rect x="182" y="226" width="12" height="118" fill="#16A34A" rx="1"/>
+  <rect x="216" y="170" width="2" height="140" fill="#16A34A"/><rect x="210" y="176" width="12" height="128" fill="#16A34A" rx="1"/>
+  <text x="150" y="150" font-size="10.5" font-weight="700" fill="#15803D">② 3 nến thân lớn, overlap thấp</text>
+
+  <!-- close beyond structure marker -->
+  <circle cx="216" cy="300" r="0"/>
+  <text x="240" y="298" font-size="10.5" font-weight="700" fill="#B91C1C">③ Đóng cửa vượt lower-high — MSS bullish</text>
+
+  <!-- FVG box -->
+  <rect x="160" y="226" width="58" height="34" fill="#3B82F6" opacity="0.2"/>
+  <text x="222" y="240" font-size="10" font-weight="700" fill="#1D4ED8">④ FVG ~1.8× ATR(14) M5</text>
+
+  <!-- retrace to CE -->
+  <path d="M228,176 L260,205 L285,243" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <line x1="228" y1="243" x2="330" y2="243" stroke="#1D4ED8" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="290" y="237" font-size="9.5" font-weight="700" fill="#1D4ED8">CE — retrace chỉ tới đây</text>
+
+  <!-- continuation -->
+  <path d="M285,243 L330,205 L365,160 L410,110" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+  <text x="360" y="100" font-size="10.5" font-weight="700" fill="#15803D">⑤ Tiếp diễn — không đảo ngược, xác nhận sống</text>
+
+  <circle cx="285" cy="243" r="6" fill="#16A34A"/>
+  <text x="270" y="270" font-size="10" font-weight="700" fill="#15803D">Entry</text>
+
+  <rect x="24" y="440" width="712" height="0"/>
+</svg>

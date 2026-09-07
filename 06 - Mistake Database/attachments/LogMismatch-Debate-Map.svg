@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="780" fill="#ffffff"/>
+  <text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Debate: Log Tối Giản vs Log Đầy Đủ Bắt Buộc</text>
+  <text x="500" y="56" text-anchor="middle" font-size="14" fill="#555">Duy trì thói quen ghi chép vs đảm bảo tính toàn vẹn dữ liệu</text>
+
+  <rect x="40" y="80" width="440" height="340" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="260" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">Phe Log Tối Giản</text>
+
+  <rect x="58" y="118" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="70" y="136" font-size="11" fill="#333">1. Ma sát thấp giúp duy trì</text>
+  <text x="70" y="152" font-size="11" fill="#333">thói quen ghi chép dài hạn.</text>
+
+  <rect x="58" y="176" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="70" y="194" font-size="11" fill="#333">2. Log nào cũng tốt hơn</text>
+  <text x="70" y="210" font-size="11" fill="#333">không log (100 lệnh &gt; 15 lệnh).</text>
+
+  <rect x="58" y="234" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="70" y="252" font-size="11" fill="#333">3. Nhiều trường không dùng</text>
+  <text x="70" y="268" font-size="11" fill="#333">tới = lãng phí thời gian ghi.</text>
+
+  <rect x="58" y="292" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="70" y="310" font-size="11" fill="#333">4. Nhiều field hơn = nhiều</text>
+  <text x="70" y="326" font-size="11" fill="#333">điểm rủi ro mismatch hơn.</text>
+
+  <rect x="520" y="80" width="440" height="340" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="740" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#c62828">Phe Log Đầy Đủ Bắt Buộc</text>
+
+  <rect x="538" y="118" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="550" y="136" font-size="11" fill="#333">1. Chính mistake #12 chứng</text>
+  <text x="550" y="152" font-size="11" fill="#333">minh log tối giản không đủ.</text>
+
+  <rect x="538" y="176" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="550" y="194" font-size="11" fill="#333">2. Tự động hoá tính R giảm</text>
+  <text x="550" y="210" font-size="11" fill="#333">chi phí duy trì log đầy đủ.</text>
+
+  <rect x="538" y="234" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="550" y="252" font-size="11" fill="#333">3. Sửa note bẩn sau 3 tháng</text>
+  <text x="550" y="268" font-size="11" fill="#333">tốn hơn ghi đủ từ đầu.</text>
+
+  <rect x="538" y="292" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="550" y="310" font-size="11" fill="#333">4. Sample cho readiness gate</text>
+  <text x="550" y="326" font-size="11" fill="#333">cần độ tin cậy cao hơn journal thường.</text>
+
+  <text x="500" y="380" text-anchor="middle" font-size="12" fill="#555" font-style="italic">2 vòng phản biện chéo — thu hẹp về câu hỏi "field lõi vs field mở rộng"</text>
+
+  <rect x="60" y="440" width="880" height="170" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="500" y="466" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565c0">Phán quyết có điều kiện</text>
+  <text x="500" y="492" text-anchor="middle" font-size="12" fill="#333">Đồng thuận: ngày-tháng-năm, entry/SL/TP, kết quả là trường lõi bất khả xâm phạm.</text>
+  <text x="500" y="512" text-anchor="middle" font-size="12" fill="#333">Tranh cãi còn lại: context narrative chi tiết và trường phân tích mở rộng.</text>
+  <text x="500" y="534" text-anchor="middle" font-size="12" fill="#333">Chưa có dữ liệu Tier 1 để xác định ngưỡng tối ưu compliance vs completeness.</text>
+  <text x="500" y="560" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Đề xuất: đo compliance rate 4 tuần, template 8 field lõi vs 12+ field hiện tại.</text>
+  <text x="500" y="586" text-anchor="middle" font-size="12" fill="#1565c0">Evidence Tier hiện tại: TIER 0 (chưa kiểm định thực nghiệm).</text>
+
+  <rect x="60" y="630" width="880" height="120" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="500" y="656" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a2c00">Trường bất khả xâm phạm dù tối giản tới đâu</text>
+  <text x="500" y="680" text-anchor="middle" font-size="12" fill="#3a2c00">trade_date (chống lỗi nhầm năm) · entry/SL/TP (để tự tính R) · result</text>
+  <text x="500" y="700" text-anchor="middle" font-size="12" fill="#3a2c00">→ log "tối giản" thực tế vẫn cần 8-10 trường, không quá xa log "đầy đủ".</text>
+  <text x="500" y="724" text-anchor="middle" font-size="12" fill="#3a2c00">Tranh biện thực chất hẹp hơn tiêu đề ban đầu gợi ý.</text>
+</svg>

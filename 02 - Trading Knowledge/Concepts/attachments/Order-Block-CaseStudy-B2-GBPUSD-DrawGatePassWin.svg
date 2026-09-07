@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">GBPUSD Long — 19/03/2026 — Draw gate PASS + macro time đúng (+2.8R)</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">H1 external BSL đã bị quét sạch trước — OB bullish M15 vào đúng lúc, đúng hướng, đúng thời điểm 10:03 NY macro</text>
+
+  <!-- H1 context panel -->
+  <rect x="40" y="100" width="1200" height="230" rx="10" fill="#131722" stroke="#2a2e39"/>
+  <text x="60" y="126" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#d1d4dc">H1 — bối cảnh trước lệnh</text>
+
+  <!-- external BSL swept -->
+  <line x1="90" y1="180" x2="720" y2="180" stroke="#b48ead" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="440" y="196" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b48ead">External BSL 1.2745</text>
+
+  <g>
+    <line x1="130" y1="220" x2="130" y2="290" stroke="#26a69a" stroke-width="1"/>
+    <rect x="118" y="230" width="24" height="55" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="190" y1="200" x2="190" y2="270" stroke="#26a69a" stroke-width="1"/>
+    <rect x="178" y="210" width="24" height="50" rx="1" fill="#26a69a"/>
+  </g>
+  <!-- sweep wick above BSL then reject -->
+  <g>
+    <line x1="250" y1="150" x2="250" y2="260" stroke="#ef5350" stroke-width="1"/>
+    <rect x="238" y="200" width="24" height="45" rx="1" fill="#ef5350"/>
+  </g>
+  <text x="195" y="300" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b48ead">08:00 NY: quét BSL 1.2745, reject</text>
+
+  <!-- OB formation after sweep -->
+  <g>
+    <line x1="310" y1="230" x2="310" y2="290" stroke="#ef5350" stroke-width="1"/>
+    <rect x="298" y="240" width="24" height="45" rx="1" fill="#ef5350"/>
+  </g>
+  <rect x="296" y="240" width="140" height="55" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="296" y="318" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">H1 OB bullish 1.2701-1.2718</text>
+
+  <g>
+    <line x1="380" y1="150" x2="380" y2="245" stroke="#26a69a" stroke-width="1"/>
+    <rect x="368" y="160" width="24" height="85" rx="1" fill="#26a69a"/>
+  </g>
+  <text x="440" y="170" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">Displacement mạnh — bias Bullish rõ</text>
+
+  <rect x="750" y="130" width="450" height="200" rx="8" fill="#131722" stroke="#26a69a" stroke-width="1.5"/>
+  <text x="770" y="156" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#26a69a">✓ Draw Gate CHECK</text>
+  <text x="770" y="182" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">External BSL 1.2745 đã bị quét TRƯỚC</text>
+  <text x="770" y="204" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">khi OB hình thành — không còn "chủ nợ"</text>
+  <text x="770" y="226" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">thanh khoản đối nghịch phía trên chặn đường.</text>
+  <text x="770" y="252" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">Target kế tiếp: external BSL mới 1.2801 —</text>
+  <text x="770" y="274" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">chưa từng bị chạm, room đủ 2.8R.</text>
+  <text x="770" y="296" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">Đối lập trực tiếp: case EURUSD 07/05/2021</text>
+  <text x="770" y="316" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#26a69a">(mục 15) — nơi BSL trên CHƯA bị quét.</text>
+
+  <!-- M15 entry panel -->
+  <text x="60" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#d1d4dc">M15 — entry trong NY AM macro (10:00-10:10)</text>
+
+  <rect x="90" y="420" width="1100" height="300" rx="8" fill="#131722" stroke="#2a2e39"/>
+
+  <!-- retrace into OB -->
+  <g>
+    <line x1="150" y1="470" x2="150" y2="560" stroke="#ef5350" stroke-width="1"/>
+    <rect x="138" y="480" width="24" height="65" rx="1" fill="#ef5350"/>
+  </g>
+  <g>
+    <line x1="210" y1="500" x2="210" y2="590" stroke="#ef5350" stroke-width="1"/>
+    <rect x="198" y="510" width="24" height="65" rx="1" fill="#ef5350"/>
+  </g>
+
+  <rect x="230" y="540" width="160" height="70" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="105" y="441" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">M15 OB refine 1.2705-1.2715</text>
+
+  <!-- entry candle -->
+  <g>
+    <line x1="290" y1="560" x2="290" y2="610" stroke="#ef5350" stroke-width="1"/>
+    <rect x="278" y="565" width="24" height="40" rx="1" fill="#ef5350"/>
+  </g>
+
+  <!-- entry arrow -->
+  <line x1="200" y1="600" x2="330" y2="600" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="335" y="605" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Entry 1.2710 — 10:03 NY (macro window)</text>
+
+  <!-- SL -->
+  <line x1="200" y1="640" x2="500" y2="640" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="335" y="655" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">SL 1.2691 (dưới OB M15)</text>
+
+  <!-- rally to target -->
+  <g>
+    <line x1="360" y1="470" x2="360" y2="565" stroke="#26a69a" stroke-width="1"/>
+    <rect x="348" y="480" width="24" height="75" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="420" y1="400" x2="420" y2="480" stroke="#26a69a" stroke-width="1"/>
+    <rect x="408" y="410" width="24" height="60" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="480" y1="330" x2="480" y2="410" stroke="#26a69a" stroke-width="1"/>
+    <rect x="468" y="340" width="24" height="60" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="540" y1="270" x2="540" y2="340" stroke="#26a69a" stroke-width="1"/>
+    <rect x="528" y="280" width="24" height="50" rx="1" fill="#26a69a"/>
+  </g>
+
+  <line x1="420" y1="450" x2="900" y2="450" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="700" y="445" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">TP1 1.2778 (+1.9R, 13:00)</text>
+
+  <g>
+    <line x1="600" y1="360" x2="600" y2="405" stroke="#26a69a" stroke-width="1"/>
+    <rect x="588" y="368" width="24" height="37" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="660" y1="345" x2="660" y2="382" stroke="#26a69a" stroke-width="1"/>
+    <rect x="648" y="350" width="24" height="32" rx="1" fill="#26a69a"/>
+  </g>
+
+  <line x1="200" y1="345" x2="900" y2="345" stroke="#26a69a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="700" y="366" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">TP2 / external BSL 1.2801 (+2.8R, 15:40)</text>
+
+  <text x="40" y="765" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">GBPUSD H1/M15 · tái dựng minh họa từ mẫu backtest, tham chiếu draw-gate mục 15 (case thua EURUSD)</text>
+</svg>

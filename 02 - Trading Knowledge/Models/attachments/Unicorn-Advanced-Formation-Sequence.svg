@@ -1,6 +1,30 @@
-<svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="340" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Chuỗi hình thành Unicorn</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">Bias → quét thanh khoản → displacement/MSS → Breaker + FVG chồng lấn → hồi về vào lệnh.</text>
-<rect x="30" y="100" width="132" height="170" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.5"/><text x="40" y="128" font-size="11.5" font-weight="700" fill="#334155">① Bias + P/D</text><text x="40" y="150" font-size="10" fill="#374151">HTF bias rõ, giá ở</text><text x="40" y="165" font-size="10" fill="#374151">đúng</text><text x="40" y="180" font-size="10" fill="#374151">premium/discount</text><text x="164" y="190" font-size="16" fill="#94A3B8">→</text><rect x="175" y="100" width="132" height="170" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/><text x="185" y="128" font-size="11.5" font-weight="700" fill="#DC2626">② Quét TK</text><text x="185" y="150" font-size="10" fill="#374151">Sweep đỉnh/đáy</text><text x="185" y="165" font-size="10" fill="#374151">(inducement / stop</text><text x="185" y="180" font-size="10" fill="#374151">hunt)</text><text x="309" y="190" font-size="16" fill="#94A3B8">→</text><rect x="320" y="100" width="132" height="170" rx="8" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.5"/><text x="330" y="128" font-size="11.5" font-weight="700" fill="#1D4ED8">③ Displacement + MSS</text><text x="330" y="150" font-size="10" fill="#374151">Đẩy mạnh phá cấu</text><text x="330" y="165" font-size="10" fill="#374151">trúc → để lại FVG +</text><text x="330" y="180" font-size="10" fill="#374151">tạo Breaker</text><text x="454" y="190" font-size="16" fill="#94A3B8">→</text><rect x="465" y="100" width="132" height="170" rx="8" fill="#FFFFFF" stroke="#6D28D9" stroke-width="1.5"/><text x="475" y="128" font-size="11.5" font-weight="700" fill="#6D28D9">④ Chồng lấn</text><text x="475" y="150" font-size="10" fill="#374151">FVG nằm trong</text><text x="475" y="165" font-size="10" fill="#374151">Breaker = Unicorn</text><text x="475" y="180" font-size="10" fill="#374151">zone</text><text x="599" y="190" font-size="16" fill="#94A3B8">→</text><rect x="610" y="100" width="132" height="170" rx="8" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/><text x="620" y="128" font-size="11.5" font-weight="700" fill="#15803D">⑤ Retrace entry</text><text x="620" y="150" font-size="10" fill="#374151">Chờ hồi về vùng,</text><text x="620" y="165" font-size="10" fill="#374151">KHÔNG vào lúc MSS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="460" rx="12" fill="#0d1117"/>
+<text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Chuỗi hình thành Unicorn — 5 bước</text>
+<defs>
+<marker id="arrBlue" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/>
+</marker>
+</defs>
+<rect x="32.0" y="180" width="150" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="107.0" y="220.9" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">1. Bias</text>
+<text x="107.0" y="239.1" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">+ P/D</text>
+<line x1="184.0" y1="230.0" x2="216.5" y2="230.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+<rect x="218.5" y="180" width="150" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="293.5" y="220.9" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">2. Quét</text>
+<text x="293.5" y="239.1" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">thanh khoản</text>
+<line x1="370.5" y1="230.0" x2="403.0" y2="230.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+<rect x="405.0" y="180" width="150" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="480.0" y="220.9" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">3. Displacement</text>
+<text x="480.0" y="239.1" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">+ MSS</text>
+<line x1="557.0" y1="230.0" x2="589.5" y2="230.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+<rect x="591.5" y="180" width="150" height="100" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="666.5" y="220.9" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">4. Chồng lấn</text>
+<text x="666.5" y="239.1" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">(Unicorn)</text>
+<line x1="743.5" y1="230.0" x2="776.0" y2="230.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+<rect x="778.0" y="180" width="150" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="853.0" y="220.9" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">5. Retrace</text>
+<text x="853.0" y="239.1" font-size="14" font-weight="400" fill="#e5e7eb" text-anchor="middle">Entry</text>
+<text x="480" y="330" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Bỏ bước 2 (sweep) → MSS "giả" không nhiên liệu. Bỏ bước 5 (retrace) → chase, phá vỡ RR.</text>
+<text x="480" y="352" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Sơ đồ khái niệm minh họa quy trình — không phải chart giá thật.</text>
 </svg>

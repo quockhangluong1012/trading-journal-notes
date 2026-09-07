@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="19" font-weight="700" fill="#e5e7eb" text-anchor="start">Degrees of Freedom — cùng 1 chart, 3 cách chọn swing leg ra 3 vùng OTE khác nhau</text>
+<text x="32" y="58" font-size="12" fill="#94a3b8" text-anchor="start">Đây là phản biện lớn nhất: OTE không có định nghĩa duy nhất cho "nhịp đẩy nào"</text>
+
+<!-- shared price structure -->
+<line x1="60" y1="500" x2="900" y2="500" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="400" x2="900" y2="400" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="300" x2="900" y2="300" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="200" x2="900" y2="200" stroke="#1f2937" stroke-width="1"/>
+
+<!-- candles: minor low A -> minor high B -> deeper low C -> major high D -->
+<line x1="100" y1="480" x2="100" y2="450" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="93.5" y="460" width="13" height="15" fill="#ef4444"/>
+<text x="100" y="498" font-size="11" fill="#94a3b8" text-anchor="middle">A (low nhỏ)</text>
+
+<line x1="130" y1="460" x2="130" y2="380" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="123.5" y="385" width="13" height="70" fill="#22c55e"/>
+<line x1="160" y1="385" x2="160" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="153.5" y="335" width="13" height="50" fill="#22c55e"/>
+<text x="160" y="318" font-size="11" fill="#94a3b8" text-anchor="middle">B (high nhỏ)</text>
+
+<line x1="190" y1="345" x2="190" y2="420" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="183.5" y="345" width="13" height="75" fill="#ef4444"/>
+<line x1="220" y1="410" x2="220" y2="470" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="213.5" y="410" width="13" height="55" fill="#ef4444"/>
+<text x="220" y="490" font-size="11" fill="#94a3b8" text-anchor="middle">C (low sâu hơn A)</text>
+
+<line x1="250" y1="450" x2="250" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="243.5" y="365" width="13" height="85" fill="#22c55e"/>
+<line x1="280" y1="365" x2="280" y2="260" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="273.5" y="265" width="13" height="100" fill="#22c55e"/>
+<line x1="310" y1="265" x2="310" y2="150" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="303.5" y="155" width="13" height="110" fill="#22c55e"/>
+<text x="310" y="138" font-size="11" fill="#94a3b8" text-anchor="middle">D (high lớn nhất)</text>
+
+<!-- Interpretation 1: A->D fib (widest) -->
+<line x1="360" y1="475" x2="900" y2="475" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3 2"/>
+<text x="365" y="472" font-size="11" fill="#3b82f6" text-anchor="start">Fib #1: A→D (nhịp lớn nhất)</text>
+<rect x="600" y="330" width="200" height="55" fill="rgba(59,130,246,0.15)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="605" y="325" font-size="10" fill="#3b82f6" text-anchor="start">OTE #1 (theo A→D)</text>
+
+<!-- Interpretation 2: C->D fib (last leg) -->
+<line x1="360" y1="455" x2="900" y2="455" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="3 2"/>
+<text x="365" y="452" font-size="11" fill="#ec4899" text-anchor="start">Fib #2: C→D (nhịp cuối)</text>
+<rect x="600" y="220" width="200" height="45" fill="rgba(236,72,153,0.15)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="605" y="215" font-size="10" fill="#ec4899" text-anchor="start">OTE #2 (theo C→D)</text>
+
+<!-- Interpretation 3: B->D fib (middle) -->
+<line x1="360" y1="435" x2="900" y2="435" stroke="#eab308" stroke-width="1.5" stroke-dasharray="3 2"/>
+<text x="365" y="432" font-size="11" fill="#eab308" text-anchor="start">Fib #3: B→D (nhịp giữa)</text>
+<rect x="600" y="270" width="200" height="45" fill="rgba(234,179,8,0.15)" stroke="#eab308" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="605" y="330" font-size="10" fill="#eab308" text-anchor="start">OTE #3 (theo B→D)</text>
+
+<text x="360" y="560" font-size="12" fill="#94a3b8" text-anchor="start">Ba trader nhìn cùng 1 chart, chọn 3 anchor khác nhau → 3 vùng OTE không trùng nhau.</text>
+<text x="360" y="580" font-size="12" fill="#94a3b8" text-anchor="start">Đây là bậc tự do lớn nhất khiến backtest Mayne dễ bị hindsight bias.</text>
+</svg>

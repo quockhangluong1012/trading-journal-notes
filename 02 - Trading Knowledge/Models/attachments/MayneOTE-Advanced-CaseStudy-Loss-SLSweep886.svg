@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="560" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="18" font-weight="700" fill="#e5e7eb" text-anchor="start">Case Loss — retrace xuyên 0.79, quét SL tại 0.886 rồi mới đảo chiều</text>
+<text x="32" y="56" font-size="12" fill="#94a3b8" text-anchor="start">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa</text>
+
+<defs>
+<marker id="arrOrangeL" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#f97316"/>
+</marker>
+</defs>
+
+<line x1="60" y1="470" x2="900" y2="470" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="370" x2="900" y2="370" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="270" x2="900" y2="270" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="170" x2="900" y2="170" stroke="#1f2937" stroke-width="1"/>
+
+<!-- swing low anchor -->
+<line x1="100" y1="450" x2="100" y2="420" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="93.5" y="430" width="13" height="15" fill="#ef4444"/>
+<text x="100" y="468" font-size="11" fill="#94a3b8" text-anchor="middle">Swing Low (0%)</text>
+
+<!-- impulse up leg -->
+<line x1="124" y1="430" x2="124" y2="350" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="117.5" y="355" width="13" height="75" fill="#22c55e"/>
+<line x1="148" y1="355" x2="148" y2="220" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="141.5" y="225" width="13" height="130" fill="#22c55e"/>
+<line x1="172" y1="225" x2="172" y2="130" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="165.5" y="135" width="13" height="90" fill="#22c55e"/>
+<text x="172" y="118" font-size="11" fill="#94a3b8" text-anchor="middle">Swing High (100%)</text>
+
+<!-- fib levels -->
+<line x1="60" y1="270" x2="900" y2="270" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="905" y="274" font-size="11" fill="#ec4899" text-anchor="start">0.79</text>
+<rect x="60" y="250" width="840" height="40" fill="rgba(236,72,153,0.15)" stroke="none"/>
+<text x="70" y="245" font-size="12" fill="#ec4899" text-anchor="start">OTE 62–79% — vùng "hợp lệ" theo kế hoạch</text>
+
+<line x1="60" y1="320" x2="900" y2="320" stroke="#f87171" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="905" y="324" font-size="11" fill="#f87171" text-anchor="start">0.886</text>
+<text x="600" y="340" font-size="11" fill="#f87171" text-anchor="start">SL đặt ngoài 0.79 nhưng bị quét tại 0.886</text>
+
+<!-- entry attempt at 0.705 -->
+<line x1="200" y1="140" x2="200" y2="180" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="193.5" y="145" width="13" height="35" fill="#ef4444"/>
+<line x1="224" y1="170" x2="224" y2="235" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="217.5" y="175" width="13" height="60" fill="#ef4444"/>
+<line x1="248" y1="225" x2="248" y2="265" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="241.5" y="230" width="13" height="35" fill="#ef4444"/>
+<text x="248" y="212" font-size="11" fill="#4ade80" text-anchor="middle">Entry ~0.705</text>
+
+<!-- price keeps falling through 0.79 to 0.886, sweeping SL -->
+<line x1="272" y1="255" x2="272" y2="295" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="265.5" y="260" width="13" height="35" fill="#ef4444"/>
+<line x1="296" y1="285" x2="296" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="289.5" y="290" width="13" height="40" fill="#ef4444"/>
+<line x1="298" y1="310" x2="298" y2="332" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrOrangeL)"/>
+<text x="310" y="335" font-size="12" fill="#f97316" text-anchor="start">SL bị quét tại 0.886</text>
+
+<!-- then reverses upward strongly (the "real" move happens after) -->
+<line x1="320" y1="325" x2="320" y2="270" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="313.5" y="275" width="13" height="50" fill="#22c55e"/>
+<line x1="344" y1="275" x2="344" y2="190" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="337.5" y="195" width="13" height="80" fill="#22c55e"/>
+<line x1="368" y1="195" x2="368" y2="100" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="361.5" y="105" width="13" height="90" fill="#22c55e"/>
+<text x="420" y="150" font-size="12" fill="#4ade80" text-anchor="start">Giá bật đúng hướng — nhưng sau khi SL đã bị quét</text>
+
+<text x="60" y="500" font-size="12" fill="#94a3b8" text-anchor="start">Bài học: khi thị trường "giật" mạnh (NQ/Gold), 0.79 không phải giới hạn cứng — cân nhắc SL ngoài 0.886/1.0</text>
+<text x="60" y="520" font-size="12" fill="#94a3b8" text-anchor="start">hoặc giảm size/bỏ setup khi giá xuyên 0.79 mà chưa có MSS khung nhỏ xác nhận.</text>
+</svg>

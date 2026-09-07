@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="780" fill="#ffffff"/>
+  <text x="550" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Not Have MSS — Root Cause: Chuỗi 5 Whys</text>
+  <text x="550" y="58" text-anchor="middle" font-size="14" fill="#555">Từ hành vi "vào lệnh chưa có MSS xác nhận" xuống nguyên nhân gốc thiếu tiêu chí xác nhận cứng</text>
+
+  <!-- Why 1 -->
+  <rect x="60" y="80" width="560" height="66" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="80" y="103" font-size="13" font-weight="bold" fill="#1a1a1a">Why 1: Vì sao vào lệnh khi chưa có MSS?</text>
+  <text x="80" y="123" font-size="13" fill="#555">Giá "trông như" sắp đảo (momentum chậm,</text>
+  <text x="80" y="140" font-size="13" fill="#555">nến đối lập) nên sợ chờ MSS thật sẽ mất giá tốt.</text>
+
+  <!-- Why 2 -->
+  <rect x="120" y="160" width="560" height="66" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="140" y="183" font-size="13" font-weight="bold" fill="#1a1a1a">Why 2: Vì sao "trông như" đủ để hành động?</text>
+  <text x="140" y="203" font-size="13" fill="#555">Đánh đồng "dấu hiệu suy yếu trend cũ" với</text>
+  <text x="140" y="220" font-size="13" fill="#555">"xác nhận cấu trúc mới" — hai thứ khác bản chất.</text>
+
+  <!-- Why 3 -->
+  <rect x="180" y="240" width="560" height="66" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="200" y="263" font-size="13" font-weight="bold" fill="#1a1a1a">Why 3: Vì sao hai khái niệm bị đánh đồng?</text>
+  <text x="200" y="283" font-size="13" fill="#555">MSS thật (body close) và liquidity run (wick)</text>
+  <text x="200" y="300" font-size="13" fill="#555">trông rất giống nhau trong vài giây đầu.</text>
+
+  <!-- Why 4 -->
+  <rect x="240" y="320" width="560" height="66" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="260" y="343" font-size="13" font-weight="bold" fill="#1a1a1a">Why 4: Vì sao không luôn chờ đủ để phân biệt?</text>
+  <text x="260" y="363" font-size="13" fill="#555">Chờ xác nhận đòi hỏi kiên nhẫn đúng lúc FOMO</text>
+  <text x="260" y="380" font-size="13" fill="#555">ngược pha xuất hiện mạnh nhất.</text>
+
+  <!-- Why 5 root -->
+  <rect x="300" y="400" width="560" height="90" rx="8" fill="#c62828"/>
+  <text x="320" y="428" font-size="14" font-weight="bold" fill="#fff">Why 5 (GỐC): Vì sao thiếu tiêu chí xác nhận cứng?</text>
+  <text x="320" y="450" font-size="13" fill="#fff">Chưa gắn bộ điều kiện đo được (swing cụ thể,</text>
+  <text x="320" y="468" font-size="13" fill="#fff">body close/wick, khung xác nhận) làm GATE — MSS</text>
+  <text x="320" y="484" font-size="13" fill="#fff">bị nhận diện bằng CẢM GIÁC, không phải dữ kiện.</text>
+
+  <!-- arrows -->
+  <path d="M 340 146 L 340 158" stroke="#999" stroke-width="2" marker-end="url(#a4)"/>
+  <path d="M 400 226 L 400 238" stroke="#999" stroke-width="2" marker-end="url(#a4)"/>
+  <path d="M 460 306 L 460 318" stroke="#999" stroke-width="2" marker-end="url(#a4)"/>
+  <path d="M 520 386 L 520 398" stroke="#999" stroke-width="2" marker-end="url(#a4)"/>
+  <defs>
+    <marker id="a4" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- MSS vs liquidity run branch -->
+  <rect x="760" y="80" width="290" height="410" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="905" y="108" text-anchor="middle" font-size="14" font-weight="bold" fill="#3a2c00">MSS thật vs Liquidity Run</text>
+
+  <rect x="780" y="126" width="250" height="64" rx="6" fill="#ffffff" stroke="#ddd"/>
+  <text x="795" y="148" font-size="12" font-weight="bold" fill="#1a1a1a">MSS thật</text>
+  <text x="795" y="166" font-size="12" fill="#555">Body close qua protected</text>
+  <text x="795" y="182" font-size="12" fill="#555">swing — lực mới xác nhận</text>
+
+  <rect x="780" y="202" width="250" height="64" rx="6" fill="#ffffff" stroke="#ddd"/>
+  <text x="795" y="224" font-size="12" font-weight="bold" fill="#1a1a1a">Liquidity run</text>
+  <text x="795" y="242" font-size="12" fill="#555">Wick chạm rồi bị từ chối —</text>
+  <text x="795" y="258" font-size="12" fill="#555">quét SL rồi tiếp diễn trend cũ</text>
+
+  <rect x="780" y="278" width="250" height="64" rx="6" fill="#ffffff" stroke="#ddd"/>
+  <text x="795" y="300" font-size="12" font-weight="bold" fill="#1a1a1a">Counterparty</text>
+  <text x="795" y="318" font-size="12" fill="#555">Trader vào theo wick bị kẹt</text>
+  <text x="795" y="334" font-size="12" fill="#555">đúng phía vừa bị quét</text>
+
+  <rect x="780" y="354" width="250" height="64" rx="6" fill="#ffffff" stroke="#ddd"/>
+  <text x="795" y="376" font-size="12" font-weight="bold" fill="#1a1a1a">Thời điểm AMD</text>
+  <text x="795" y="394" font-size="12" fill="#555">Nhầm lẫn nguy hiểm nhất</text>
+  <text x="795" y="410" font-size="12" fill="#555">cuối pha Manipulation</text>
+
+  <rect x="780" y="430" width="250" height="50" rx="6" fill="#fce4e4" stroke="#c62828"/>
+  <text x="795" y="452" font-size="12" font-weight="bold" fill="#c62828">Kết luận</text>
+  <text x="795" y="470" font-size="12" fill="#3a2c00">Body close ≠ Wick chạm</text>
+
+  <!-- Bottom summary -->
+  <rect x="60" y="520" width="990" height="90" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="80" y="546" font-size="14" font-weight="bold" fill="#1565c0">Ý nghĩa thực hành</text>
+  <text x="80" y="568" font-size="13" fill="#1a1a1a">Ghi rõ protected_swing_price + break_type (body/wick) + timeframe_confirmed vào log</text>
+  <text x="80" y="588" font-size="13" fill="#1a1a1a">TRƯỚC khi được phép vào lệnh — biến xác nhận MSS từ cảm giác thành dữ kiện kiểm tra được.</text>
+
+  <!-- Taxonomy -->
+  <rect x="60" y="630" width="990" height="120" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="80" y="656" font-size="14" font-weight="bold" fill="#1a1a1a">5 biến thể con thường gặp</text>
+  <text x="80" y="680" font-size="13" fill="#555">1. Wick-only break coi là MSS   2. MSS khung thấp hơn dự kiến   3. Protected swing nhiễu</text>
+  <text x="80" y="702" font-size="13" fill="#555">4. MSS vẽ chủ quan (subjective)   5. Aggressive entry ngay tại MSS, không chờ retest</text>
+  <text x="80" y="726" font-size="12" fill="#555">Xem mục 11.4 nội dung markdown để biết chi tiết dấu hiệu nhận diện từng biến thể.</text>
+</svg>

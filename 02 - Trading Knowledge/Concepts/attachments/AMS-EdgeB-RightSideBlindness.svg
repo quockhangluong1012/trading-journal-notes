@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Right-Side Blindness: ITL chỉ có thật SAU khi STL kế tiếp hình thành</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">GBPUSD M15 — backtest thấy nhãn, live tại thời điểm đó KHÔNG thấy</text>
+
+  <line x1="40" y1="400" x2="1240" y2="400" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- candles: downtrend then low then up then pullback then continuation -->
+  <!-- group 1: bearish leg into swing low -->
+  <g>
+    <line x1="120" y1="150" x2="120" y2="330" stroke="#ef5350" stroke-width="1"/>
+    <rect x="112" y="160" width="16" height="90" rx="1" fill="#ef5350"/>
+    <line x1="160" y1="180" x2="160" y2="360" stroke="#ef5350" stroke-width="1"/>
+    <rect x="152" y="195" width="16" height="100" rx="1" fill="#ef5350"/>
+    <line x1="200" y1="220" x2="200" y2="400" stroke="#ef5350" stroke-width="1"/>
+    <rect x="192" y="235" width="16" height="105" rx="1" fill="#ef5350"/>
+  </g>
+
+  <!-- candidate STL candle (low point) at x=240 -->
+  <line x1="240" y1="330" x2="240" y2="440" stroke="#26a69a" stroke-width="1"/>
+  <rect x="232" y="340" width="16" height="55" rx="1" fill="#26a69a"/>
+  <text x="205" y="465" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">STL-A (nghi vấn)</text>
+
+  <!-- bounce candles up -->
+  <g>
+    <line x1="280" y1="280" x2="280" y2="380" stroke="#26a69a" stroke-width="1"/>
+    <rect x="272" y="290" width="16" height="70" rx="1" fill="#26a69a"/>
+    <line x1="320" y1="230" x2="320" y2="340" stroke="#26a69a" stroke-width="1"/>
+    <rect x="312" y="240" width="16" height="80" rx="1" fill="#26a69a"/>
+    <line x1="360" y1="190" x2="360" y2="300" stroke="#26a69a" stroke-width="1"/>
+    <rect x="352" y="200" width="16" height="80" rx="1" fill="#26a69a"/>
+  </g>
+
+  <!-- pullback down creating STL-B lower than? no, must be higher-low both sides to confirm STL-A -->
+  <g>
+    <line x1="400" y1="220" x2="400" y2="320" stroke="#ef5350" stroke-width="1"/>
+    <rect x="392" y="230" width="16" height="70" rx="1" fill="#ef5350"/>
+    <line x1="440" y1="250" x2="440" y2="360" stroke="#ef5350" stroke-width="1"/>
+    <rect x="432" y="260" width="16" height="80" rx="1" fill="#ef5350"/>
+  </g>
+
+  <!-- STL-B candle: higher low than STL-A, confirms STL-A is real STL, and if STL-B higher than left STL too -> ITL -->
+  <line x1="480" y1="300" x2="480" y2="400" stroke="#26a69a" stroke-width="1"/>
+  <rect x="472" y="310" width="16" height="60" rx="1" fill="#26a69a"/>
+  <text x="450" y="425" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">STL-B (higher-low)</text>
+
+  <!-- confirmation dashed line pointing back -->
+  <line x1="240" y1="345" x2="480" y2="345" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="255" y="335" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#4a90d9">STL-A chỉ được xác nhận là ITL khi STL-B xuất hiện</text>
+
+  <!-- arrow marking "live blind window" -->
+  <rect x="240" y="500" width="240" height="60" rx="8" fill="#ff6b6b" opacity="0.14" stroke="#ff6b6b" stroke-dasharray="6 4"/>
+  <text x="255" y="525" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">Vùng mù live: 3-6 nến</text>
+  <text x="255" y="545" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">chưa biết STL-A có là ITL không</text>
+
+  <!-- continuation up after confirmation -->
+  <g>
+    <line x1="560" y1="150" x2="560" y2="260" stroke="#26a69a" stroke-width="1"/>
+    <rect x="552" y="160" width="16" height="80" rx="1" fill="#26a69a"/>
+    <line x1="600" y1="110" x2="600" y2="220" stroke="#26a69a" stroke-width="1"/>
+    <rect x="592" y="120" width="16" height="80" rx="1" fill="#26a69a"/>
+    <line x1="640" y1="80" x2="640" y2="180" stroke="#26a69a" stroke-width="1"/>
+    <rect x="632" y="90" width="16" height="70" rx="1" fill="#26a69a"/>
+  </g>
+
+  <text x="560" y="70" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">Backtest: nhìn cả chuỗi → ITL rõ ràng</text>
+
+  <!-- right side panel: live view snapshot -->
+  <line x1="760" y1="60" x2="760" y2="640" stroke="#2a2e39" stroke-width="1"/>
+
+  <rect x="800" y="60" width="160" height="34" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+  <text x="818" y="83" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">✗ LIVE — tại nến STL-A</text>
+
+  <g>
+    <line x1="820" y1="250" x2="820" y2="430" stroke="#ef5350" stroke-width="1"/>
+    <rect x="812" y="260" width="16" height="90" rx="1" fill="#ef5350"/>
+    <line x1="860" y1="280" x2="860" y2="460" stroke="#ef5350" stroke-width="1"/>
+    <rect x="852" y="295" width="16" height="100" rx="1" fill="#ef5350"/>
+    <line x1="900" y1="320" x2="900" y2="500" stroke="#ef5350" stroke-width="1"/>
+    <rect x="892" y="335" width="16" height="105" rx="1" fill="#ef5350"/>
+  </g>
+  <line x1="940" y1="430" x2="940" y2="540" stroke="#26a69a" stroke-width="1"/>
+  <rect x="932" y="440" width="16" height="55" rx="1" fill="#26a69a"/>
+  <text x="895" y="565" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">STL-A vừa in — chưa rõ là ITL</text>
+  <text x="820" y="600" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Trader live: "đáy này có vẻ là ITL, Long ngay"</text>
+  <text x="820" y="622" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">→ chưa có STL-B → nhãn ITL chưa tồn tại</text>
+
+  <text x="40" y="690" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">GBPUSD M15 · minh họa cấu trúc — rule: chờ STL kế tiếp xác nhận trước khi gọi tên degree</text>
+</svg>

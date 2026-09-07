@@ -20,19 +20,19 @@ tags: [daily-summary, prop-firm-prep]
 
 > [!warning] ⚠️ Cảnh báo — 3 điểm có tên cụ thể (nhịp độ số lượng vẫn khoẻ)
 > Hôm nay KHÔNG thiếu hoạt động (3 backtest + 2 concept + journaling ngày thứ 11). Cảnh báo nằm ở **chất lượng dữ liệu** và **vòng chưa đóng**, không phải lười:
-> 1. **[Nghiêm trọng nhất] Nhiễm dữ liệu backtest — [[12 - Mistake - Log Data Mismatch - Backtest]] (note CHƯA tồn tại):** cả 2 note Win hôm nay bị lẫn số liệu do copy từ template/lệnh cũ. Note `01 - Win` tự ghi trong mục 5.2: `htf_bias` từng lẫn Bullish (lệnh là Short), heading lẫn "Long/NAS100", số Dealing Range lẫn số NAS100 (24.570/22.822), POI lẫn giá EURUSD, ngày lẫn 2014↔2026. Note `03 - Win` phải đính chính Entry/SL/TP/R sai (1301.562→1306.90, R 2.9→2.97). **Với backtest, dữ liệu bẩn = mẫu thống kê vô nghĩa ("garbage in, garbage out")** — chính các note tự gọi đây là rủi ro số 1 của dự án. Đây là **pattern lặp lại** (đã xuất hiện rải rác nhiều ngày) → cần diệt tận gốc bằng rule R-BT-01/toàn vẹn dữ liệu.
+> 1. **[Nghiêm trọng nhất] Nhiễm dữ liệu backtest — [[12-Mistake-Log-Data-Mismatch-Backtest]] (note CHƯA tồn tại):** cả 2 note Win hôm nay bị lẫn số liệu do copy từ template/lệnh cũ. Note `01 - Win` tự ghi trong mục 5.2: `htf_bias` từng lẫn Bullish (lệnh là Short), heading lẫn "Long/NAS100", số Dealing Range lẫn số NAS100 (24.570/22.822), POI lẫn giá EURUSD, ngày lẫn 2014↔2026. Note `03 - Win` phải đính chính Entry/SL/TP/R sai (1301.562→1306.90, R 2.9→2.97). **Với backtest, dữ liệu bẩn = mẫu thống kê vô nghĩa ("garbage in, garbage out")** — chính các note tự gọi đây là rủi ro số 1 của dự án. Đây là **pattern lặp lại** (đã xuất hiện rải rác nhiều ngày) → cần diệt tận gốc bằng rule R-BT-01/toàn vẹn dữ liệu.
 > 2. **Outcome bias khi chấm grade:** `02 - Loss` tự chấm **A-** dù root cause là **SL đặt ngay mép dưới POI (RB low = 1302.715), bên trong vùng chop, KHÔNG phải trên invalidation thật (đóng trên 1304.109)** — chính note có "mentor note" đề nghị hạ **B/B-**. `01 - Win` tự chấm A nhưng lesson kết luận nên là **A-** vì file lỗi dữ liệu. Grade thổi phồng làm hỏng đúng ràng buộc thật của [[Master the ICT 2022 Model]]: **win rate/expectancy**, không phải số lượng.
-> 3. **Vòng #2 từ task sáng nay CHƯA đóng:** cột mốc "Chuẩn bị" ở [[Pass FTMO first package challenge (10K$)]] và [[Pass The5er first package challenge (10k$)]] vẫn `[ ]` → **0/8**, và **chưa có dòng "Nhật ký tiến độ" 2026-07-14** ở cả hai goal (dòng cuối vẫn 07-13). Log 2 track này chỉ còn **2 ngày nữa (07-16)** là chạm ngưỡng "stale 3 ngày". *(Vòng #1 — overtick [[42 - SMT Divergence]]: `last_reviewed` vẫn `2026-07-11`, tức đã để nguyên = coi như chưa ôn — đây là cách xử lý trung thực đúng chỉ dẫn task, không phải lỗi mới.)*
+> 3. **Vòng #2 từ task sáng nay CHƯA đóng:** cột mốc "Chuẩn bị" ở [[Pass FTMO first package challenge (10K$)]] và [[Pass The5er first package challenge (10k$)]] vẫn `[ ]` → **0/8**, và **chưa có dòng "Nhật ký tiến độ" 2026-07-14** ở cả hai goal (dòng cuối vẫn 07-13). Log 2 track này chỉ còn **2 ngày nữa (07-16)** là chạm ngưỡng "stale 3 ngày". *(Vòng #1 — overtick [[42-SMT-Divergence]]: `last_reviewed` vẫn `2026-07-11`, tức đã để nguyên = coi như chưa ôn — đây là cách xử lý trung thực đúng chỉ dẫn task, không phải lỗi mới.)*
 > **Standing note (cấu trúc, không phải lỗi hôm nay):** **26 ngày** không có lệnh live (gần nhất `Loss - 01 - Trade 2026-06-18 NDX Short`). Chấp nhận được trong FOUNDATION, nhưng là **biến số DUY NHẤT chưa kiểm chứng** cho cả hai challenge.
 
 ## 📚 Học hôm nay
 
 **2 concept có bằng chứng thật (`last_reviewed: 2026-07-14`):**
 
-- **[[21 - Liquidity Void]]** (`developing`, `last_reviewed` 07-14) — góc ôn: phân biệt *liquidity void* (dải giá bị displacement bỏ qua, gần như không giao dịch 2 chiều) với FVG thường; dùng "void đủ sâu" làm bằng chứng phụ cho gate **Signal quality**. Ứng dụng ngay trong `01 - Win`: giá quét lên **CE của Liquidity Void** (tàn dư nhịp giảm 7/5) rồi bị từ chối tại Premium.
-- **[[28 - Rejection Block]]** (`seed → developing`, `last_reviewed` & `updated` = 07-14) — ⭐ **nâng hạng thật hôm nay.** Định nghĩa RB như PD array entry *thay thế* OB khi không có OB sạch (dùng đuôi nến rejection thay thân). Được **áp dụng trực tiếp** làm POI trong `02 - Loss` → đây là "học đi đôi với hành": vừa nâng concept, vừa test nó trên một setup thật (và học được bài học SL từ chính lệnh thua đó).
+- **[[21-Liquidity-Void]]** (`developing`, `last_reviewed` 07-14) — góc ôn: phân biệt *liquidity void* (dải giá bị displacement bỏ qua, gần như không giao dịch 2 chiều) với FVG thường; dùng "void đủ sâu" làm bằng chứng phụ cho gate **Signal quality**. Ứng dụng ngay trong `01 - Win`: giá quét lên **CE của Liquidity Void** (tàn dư nhịp giảm 7/5) rồi bị từ chối tại Premium.
+- **[[28-Rejection-Block]]** (`seed → developing`, `last_reviewed` & `updated` = 07-14) — ⭐ **nâng hạng thật hôm nay.** Định nghĩa RB như PD array entry *thay thế* OB khi không có OB sạch (dùng đuôi nến rejection thay thân). Được **áp dụng trực tiếp** làm POI trong `02 - Loss` → đây là "học đi đôi với hành": vừa nâng concept, vừa test nó trên một setup thật (và học được bài học SL từ chính lệnh thua đó).
 
-**Đối chiếu task sáng:** [[06 - Breakaway Gap]] (tuỳ chọn) **không** được ôn — `[ ]` đúng thực tế, không tick khống. Đếm concept `tested` **không đổi** hôm nay (vẫn 7); nhưng nhóm `developing` +1 do #28 lên hạng.
+**Đối chiếu task sáng:** [[06-Breakaway-Gap]] (tuỳ chọn) **không** được ôn — `[ ]` đúng thực tế, không tick khống. Đếm concept `tested` **không đổi** hôm nay (vẫn 7); nhưng nhóm `developing` +1 do #28 lên hạng.
 
 ## 📊 Backtest hôm nay
 
@@ -40,9 +40,9 @@ tags: [daily-summary, prop-firm-prep]
 
 | # | Note | Result / Grade tự chấm | POI | Sweep→Disp→MSS→FVG | R_planned / R_multiple | followed_plan |
 |---|---|---|---|---|---|---|
-| 01 | Win — XAUUSD 2014-05-12 Short | **Win / A** (nên A-) | [[13 - FVG  - Fair Value Gap\|FVG]] H1 | Yes / Yes / Yes / Yes | 2.9 / **2.9** | Yes |
-| 02 | Loss — XAUUSD 2014-05-14 Short | **Loss / A-** (nên B/B-) | [[28 - Rejection Block\|Rejection Block]] H1 | Yes / Yes / Yes / Yes | 3.22 / **−1** | Yes |
-| 03 | Win — XAUUSD 2014-05-14 Short | **Win / A** | [[03 - Balanced Price Range\|BPR]] M5 (trên CE của FVG H1) | Yes / Yes / Yes / Yes | 2.97 / **2.97** | Yes |
+| 01 | Win — XAUUSD 2014-05-12 Short | **Win / A** (nên A-) | [[13-FVG-Fair-Value-Gap|FVG]] H1 | Yes / Yes / Yes / Yes | 2.9 / **2.9** | Yes |
+| 02 | Loss — XAUUSD 2014-05-14 Short | **Loss / A-** (nên B/B-) | [[28-Rejection-Block|Rejection Block]] H1 | Yes / Yes / Yes / Yes | 3.22 / **−1** | Yes |
+| 03 | Win — XAUUSD 2014-05-14 Short | **Win / A** | [[03-Balanced-Price-Range|BPR]] M5 (trên CE của FVG H1) | Yes / Yes / Yes / Yes | 2.97 / **2.97** | Yes |
 
 **Phân tích chuỗi (Step 3):**
 
@@ -61,9 +61,9 @@ tags: [daily-summary, prop-firm-prep]
 **Lỗi backtest bị kích hoạt hôm nay (FOUNDATION mode → theo dõi lỗi backtest, không phải live):**
 
 - **[[Mistake - Stop loss đặt sai vị trí]]** *(note CHƯA tồn tại trong `06 - Mistake Database`)* — restated: neo SL vào swing nhỏ khung entry (mép POI) thay vì trên **invalidation thật của POI đang giao dịch** → bị quét bởi nhiễu bình thường trong OTE chứ không phải bởi tín hiệu phủ định luận điểm. Nguồn: `02 - Loss` hôm nay. **Đây là lỗi mới, KHÔNG nằm trong top-3 backtest hiện tại.**
-- **[[12 - Mistake - Log Data Mismatch - Backtest]]** *(note CHƯA tồn tại)* — restated: copy note từ template/lệnh cũ khiến symbol/bias/số Dealing Range/POI/ngày lẫn của instrument khác; Summary table ≠ frontmatter. Nguồn: `01 - Win` và `03 - Win` hôm nay. **Đây là rủi ro hệ thống với cả mẫu backtest, không chỉ một lệnh.**
+- **[[12-Mistake-Log-Data-Mismatch-Backtest]]** *(note CHƯA tồn tại)* — restated: copy note từ template/lệnh cũ khiến symbol/bias/số Dealing Range/POI/ngày lẫn của instrument khác; Summary table ≠ frontmatter. Nguồn: `01 - Win` và `03 - Win` hôm nay. **Đây là rủi ro hệ thống với cả mẫu backtest, không chỉ một lệnh.**
 
-**Đối chiếu top-3 lỗi backtest hiện tại** ([[06 - Mistake - Not Have Market Structure Shift]], [[08 - Mistake - Weak Displacement]], [[09 - Mistake - Wrong daily bias]]):
+**Đối chiếu top-3 lỗi backtest hiện tại** ([[06-Mistake-Not-Have-Market-Structure-Shift]], [[08-Mistake-Weak-Displacement]], [[09-Mistake-Wrong-daily-bias]]):
 - **06 (No MSS):** KHÔNG tái phạm — cả 3 lệnh đều có MSS đóng cửa rõ.
 - **09 (Wrong bias):** KHÔNG tái phạm — cả 3 `bias_correct: Yes` (Bearish đúng chiều).
 - **08 (Weak Displacement):** *cận biên* — `02 - Loss` có tín hiệu "M5 không tạo FVG / phản ứng bán không sạch" (họ hàng với displacement yếu) nhưng root cause được ghi là SL, không phải displacement. Không tính là tái phạm chính thức, nhưng đáng để ý.
@@ -97,17 +97,17 @@ tags: [daily-summary, prop-firm-prep]
 
 **KHÔNG thêm dòng (tránh dòng rỗng — Step 6):**
 - ⏸️ **[[Cut my top 3 repeated mistakes]]** — 0 lệnh live, tần suất live không đổi.
-- ⏸️ **[[Pass FTMO first package challenge (10K$)]]** và **[[Pass The5er first package challenge (10k$)]]** — không có deliverable mới hôm nay; vòng #2 (tick cột mốc + log) là **việc của Khang tự xác nhận đủ điều kiện**, routine không tự tick khống. *(Ghi rõ ở đây để mai không quên: 07-16 hai log này chạm ngưỡng stale 3 ngày.)*
+- ⏸️ **[[Pass FTMO first package challenge (10K$)]]** và **[[Pass The5er first package challenge (10k$)]]** — không có deliverable mới hôm nay; vòng #2 (tick cột mốc + log) là **việc của  tự xác nhận đủ điều kiện**, routine không tự tick khống. *(Ghi rõ ở đây để mai không quên: 07-16 hai log này chạm ngưỡng stale 3 ngày.)*
 
 ## 🔭 Việc cần làm ngày mai
 
-1. **[Ưu tiên #1 — diệt rủi ro dữ liệu] Tạo note [[12 - Mistake - Log Data Mismatch - Backtest]]** trong `06 - Mistake Database` (biện pháp đối phó: rule R-BT-01 "làm sạch file trước khi lưu" + checklist "Summary table = frontmatter, số copy trực tiếp từ chart"), và **rà lại 3 note 07-14** đảm bảo symbol/bias/số liệu/ngày đều đúng XAUUSD (đặc biệt `01 - Win`: kiểm `htf_bias`, Dealing Range, POI, năm dữ liệu).
+1. **[Ưu tiên #1 — diệt rủi ro dữ liệu] Tạo note [[12-Mistake-Log-Data-Mismatch-Backtest]]** trong `06 - Mistake Database` (biện pháp đối phó: rule R-BT-01 "làm sạch file trước khi lưu" + checklist "Summary table = frontmatter, số copy trực tiếp từ chart"), và **rà lại 3 note 07-14** đảm bảo symbol/bias/số liệu/ngày đều đúng XAUUSD (đặc biệt `01 - Win`: kiểm `htf_bias`, Dealing Range, POI, năm dữ liệu).
 2. **Tạo note [[Mistake - Stop loss đặt sai vị trí]]** (rule: SL luôn neo trên invalidation của POI đang giao dịch + buffer; R do SL đúng quyết định vào/không, không siết SL cho đẹp R). Cân nhắc gắn vào top-3 nếu tái diễn.
 3. **Chấm lại grade trung thực cho 2 note hôm nay:** `02 - Loss` A- → **B/B-** (SL trong POI); `01 - Win` A → **A-** (lỗi dữ liệu) — để win rate/expectancy của [[Master the ICT 2022 Model]] phản ánh chất lượng thật.
-4. **[Đóng vòng #2] Phản ánh lot size vào 2 goal challenge:** nếu Khang tự đánh giá đủ điều kiện, tick một phần cột mốc "Chuẩn bị" và **log 1 dòng 2026-07-15 THẬT** vào cả FTMO + The5ers (dẫn `[[Lot size 10K]]`), trước khi log chạm stale 07-16. **Đồng thời làm phần RIÊNG The5ers** còn thiếu: ngưỡng "ngày có lãi = +50$" + ví dụ daily drawdown tính từ equity đóng cửa hôm trước.
+4. **[Đóng vòng #2] Phản ánh lot size vào 2 goal challenge:** nếu  tự đánh giá đủ điều kiện, tick một phần cột mốc "Chuẩn bị" và **log 1 dòng 2026-07-15 THẬT** vào cả FTMO + The5ers (dẫn `[[Lot size 10K]]`), trước khi log chạm stale 07-16. **Đồng thời làm phần RIÊNG The5ers** còn thiếu: ngưỡng "ngày có lãi = +50$" + ví dụ daily drawdown tính từ equity đóng cửa hôm trước.
 5. **Giữ chuỗi backtest sang ngày thứ 10** — ưu tiên non-EURUSD (NAS100/GBPUSD/thêm XAUUSD để đủ ~20 mẫu vàng như note `03` đề xuất, kiểm tra buffer SL cho wick/spread vàng). Chỉ tính entry sau nến ĐÓNG CỬA phá bằng displacement thật.
 6. **Verify replay cho `02 - Loss`:** sau khi quét SL, giá có xuống TP 1297.51 không? → phân định đây thuần là lỗi SL (đúng hướng, sai vị trí dừng) hay lỗi timing (vào quá sớm).
-7. **Kỷ luật tick trung thực:** giữ nguyên cách xử lý [[42 - SMT Divergence]] (không tick khống). Chỉ `[x]` khi có bằng chứng thật (file tồn tại / `last_reviewed` đổi / dòng log thật).
+7. **Kỷ luật tick trung thực:** giữ nguyên cách xử lý [[42-SMT-Divergence]] (không tick khống). Chỉ `[x]` khi có bằng chứng thật (file tồn tại / `last_reviewed` đổi / dòng log thật).
 
 ## 🔗 Liên kết
 

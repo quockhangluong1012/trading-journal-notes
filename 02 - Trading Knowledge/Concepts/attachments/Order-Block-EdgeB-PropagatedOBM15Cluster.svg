@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Propagated OB — 1 nến H1 nhìn trên M15 là cụm 3-4 nến, chọn mean threshold của nến nào?</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">GBPUSD: nến H1 bullish OB tách ra thành 4 nến M15, mỗi nến có mean threshold riêng</text>
+
+  <!-- Top: H1 view -->
+  <rect x="60" y="90" width="220" height="34" rx="6" fill="#4a90d9" opacity="0.18" stroke="#4a90d9"/>
+  <text x="78" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#4a90d9">H1 — 1 nến OB duy nhất</text>
+
+  <line x1="180" y1="150" x2="180" y2="270" stroke="#ef5350" stroke-width="1"/>
+  <rect x="164" y="160" width="32" height="90" rx="1" fill="#ef5350"/>
+  <rect x="150" y="150" width="300" height="130" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="470" y="175" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#4a90d9">H1 OB: high 1.2680, low 1.2648</text>
+  <text x="470" y="197" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Mean Threshold (50% cả nến) = 1.2664</text>
+
+  <g>
+    <line x1="240" y1="90" x2="240" y2="220" stroke="#26a69a" stroke-width="1"/>
+    <rect x="224" y="100" width="32" height="90" rx="1" fill="#26a69a"/>
+  </g>
+
+  <line x1="40" y1="330" x2="1240" y2="330" stroke="#2a2e39" stroke-width="1"/>
+  <text x="40" y="355" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#d1d4dc">M15 — cùng khoảng thời gian, lộ ra 4 nến với vai trò khác nhau</text>
+
+  <!-- M15 breakdown: 4 candles making up the H1 candle -->
+  <g>
+    <line x1="120" y1="420" x2="120" y2="480" stroke="#ef5350" stroke-width="1"/>
+    <rect x="108" y="428" width="24" height="45" rx="1" fill="#ef5350"/>
+    <text x="90" y="500" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">M15-1</text>
+  </g>
+  <g>
+    <line x1="220" y1="440" x2="220" y2="500" stroke="#26a69a" stroke-width="1"/>
+    <rect x="208" y="448" width="24" height="45" rx="1" fill="#26a69a"/>
+    <text x="190" y="520" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">M15-2 (hồi nhẹ)</text>
+  </g>
+  <g>
+    <line x1="320" y1="420" x2="320" y2="490" stroke="#ef5350" stroke-width="1"/>
+    <rect x="308" y="430" width="24" height="50" rx="1" fill="#ef5350"/>
+    <text x="285" y="510" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#f2c94c">M15-3 (true origin)</text>
+  </g>
+  <g>
+    <line x1="420" y1="410" x2="420" y2="460" stroke="#ef5350" stroke-width="1"/>
+    <rect x="408" y="418" width="24" height="35" rx="1" fill="#ef5350"/>
+    <text x="390" y="480" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">M15-4</text>
+  </g>
+
+  <!-- highlight true origin candle M15-3 with its own mean threshold -->
+  <rect x="300" y="425" width="42" height="60" fill="#f2c94c" opacity="0.16" stroke="#f2c94c" stroke-dasharray="6 4"/>
+
+  <line x1="480" y1="200" x2="480" y2="440" stroke="#26a69a" stroke-width="1"/>
+  <rect x="464" y="210" width="32" height="90" rx="1" fill="#26a69a"/>
+  <text x="450" y="185" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#26a69a">Displacement M15 thật</text>
+
+  <rect x="550" y="410" width="640" height="270" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="570" y="440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#f2c94c">Nến nào lấy làm mean threshold thực chiến?</text>
+  <text x="570" y="468" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">M15-1: nến giảm đầu tiên trong cụm — thường bị wick sweep sớm</text>
+  <text x="570" y="492" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">M15-2: hồi nhẹ ngược hướng cụm — không phải OB, chỉ nhiễu nội bộ</text>
+  <text x="570" y="516" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">M15-3: true origin — nến NGAY TRƯỚC nến M15 tạo displacement thật</text>
+  <text x="570" y="540" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">M15-4: nến cuối cụm, đôi khi đã bắt đầu displacement — dễ nhầm là OB</text>
+  <text x="570" y="572" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Rule: OB H1 chỉ dùng để KHOANH VÙNG (biết ranh giới rộng).</text>
+  <text x="570" y="594" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Entry/stop refine theo mean threshold của M15-3 (true origin),</text>
+  <text x="570" y="616" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">không theo mean threshold gộp của cả nến H1 (1.2664) — hai mức</text>
+  <text x="570" y="638" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">này lệch trung bình 4-9 pip trên các mẫu backtest GBPUSD.</text>
+  <text x="570" y="662" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">Khớp với nguyên tắc "origin của leg" ở mục 7.4 — chỉ áp trong khung nhỏ hơn.</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">GBPUSD H1/M15 · minh họa cấu trúc — số pip lệch cụ thể thay đổi theo volatility từng phiên</text>
+</svg>

@@ -1,6 +1,60 @@
-<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-<rect x="0" y="0" width="760" height="400" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Kịch bản BULLISH — quét Relative Equal Lows → MSS lên</text>
-<text x="24" y="54" font-size="13" fill="#6B7280">Vào lệnh long tại PD array (OB / BISI / bullish breaker) khi giá hồi về. TP = next DOL.</text>
-<rect x="24" y="70" width="712" height="325" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/><line x1="60" y1="330" x2="360" y2="330" stroke="#6B7280" stroke-dasharray="6 4"/><text x="60" y="348" font-size="10" fill="#4B5563">Relative Equal Lows (SSL)</text><rect x="85" y="250" width="2" height="50" fill="#DC2626"/><rect x="80" y="260" width="12" height="35" fill="#DC2626" rx="1"/><rect x="107" y="244" width="2" height="50" fill="#DC2626"/><rect x="102" y="254" width="12" height="35" fill="#DC2626" rx="1"/><rect x="129" y="238" width="2" height="50" fill="#DC2626"/><rect x="124" y="248" width="12" height="35" fill="#DC2626" rx="1"/><rect x="151" y="290" width="2" height="70" fill="#DC2626"/><rect x="146" y="320" width="12" height="30" fill="#DC2626" rx="1"/><text x="130" y="380" font-size="10" fill="#DC2626">raid post-08:30</text><rect x="173" y="240" width="2" height="80" fill="#16A34A"/><rect x="168" y="255" width="12" height="60" fill="#16A34A" rx="1"/><rect x="195" y="224" width="2" height="82" fill="#16A34A"/><rect x="190" y="239" width="12" height="62" fill="#16A34A" rx="1"/><rect x="217" y="208" width="2" height="84" fill="#16A34A"/><rect x="212" y="223" width="12" height="64" fill="#16A34A" rx="1"/><rect x="239" y="192" width="2" height="86" fill="#16A34A"/><rect x="234" y="207" width="12" height="66" fill="#16A34A" rx="1"/><text x="290" y="200" font-size="10.5" font-weight="700" fill="#15803D">đóng trên swing high = MSS ↑</text><rect x="290" y="215" width="150" height="55" fill="#F59E0B" opacity="0.18"/><text x="444" y="230" font-size="9.5" fill="#B45309">bullish breaker</text><rect x="290" y="230" width="150" height="35" fill="#3B82F6" opacity="0.16"/><text x="444" y="255" font-size="9.5" fill="#1D4ED8">BISI</text><rect x="261" y="235" width="2" height="55" fill="#DC2626"/><rect x="256" y="247" width="12" height="36" fill="#DC2626" rx="1"/><rect x="283" y="239" width="2" height="55" fill="#DC2626"/><rect x="278" y="251" width="12" height="36" fill="#DC2626" rx="1"/><circle cx="440" cy="247" r="5" fill="#16A34A"/><text x="448" y="242" font-size="10" font-weight="700" fill="#15803D">BUY (retrace)</text><rect x="305" y="195" width="2" height="40" fill="#16A34A"/><rect x="300" y="208" width="12" height="22" fill="#16A34A" rx="1"/><rect x="327" y="185" width="2" height="42" fill="#16A34A"/><rect x="322" y="198" width="12" height="24" fill="#16A34A" rx="1"/><rect x="349" y="175" width="2" height="44" fill="#16A34A"/><rect x="344" y="188" width="12" height="26" fill="#16A34A" rx="1"/><rect x="371" y="165" width="2" height="46" fill="#16A34A"/><rect x="366" y="178" width="12" height="28" fill="#16A34A" rx="1"/><line x1="60" y1="360" x2="300" y2="360" stroke="#16A34A" stroke-dasharray="4 3"/><text x="64" y="374" font-size="10" fill="#15803D">Stop dưới đáy post-08:30</text><line x1="560" y1="110" x2="720" y2="110" stroke="#0EA5E9" stroke-dasharray="6 4"/><text x="560" y="104" font-size="10" fill="#0369A1">TP = Rel Equal Highs / đỉnh phiên trước</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="18" font-weight="700" fill="#e5e7eb" text-anchor="start">Kịch bản BULLISH: grab relative equal lows → MSS lên → BISI/OB/Breaker → BUY</text>
+<line x1="24" y1="80" x2="936" y2="80" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="150" x2="936" y2="150" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="220" x2="936" y2="220" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="290" x2="936" y2="290" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="360" x2="936" y2="360" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="430" x2="936" y2="430" stroke="#1f2937" stroke-width="1"/>
+<!-- build-up 08:00-08:30 forming relative equal lows -->
+<line x1="60" y1="360" x2="60" y2="410" stroke="#9ca3af" stroke-width="1.5"/><rect x="54" y="365" width="12" height="30" fill="#ef4444"/>
+<line x1="100" y1="370" x2="100" y2="425" stroke="#9ca3af" stroke-width="1.5"/><rect x="94" y="380" width="12" height="30" fill="#22c55e"/>
+<line x1="140" y1="365" x2="140" y2="418" stroke="#9ca3af" stroke-width="1.5"/><rect x="134" y="375" width="12" height="28" fill="#ef4444"/>
+<line x1="180" y1="368" x2="180" y2="420" stroke="#9ca3af" stroke-width="1.5"/><rect x="174" y="378" width="12" height="28" fill="#22c55e"/>
+<!-- relative equal lows line -->
+<line x1="80" y1="418" x2="200" y2="418" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="205" y="440" font-size="12" fill="#eab308" text-anchor="start">Relative equal lows (build-up)</text>
+<!-- raid wick after 08:30 -->
+<line x1="230" y1="410" x2="230" y2="470" stroke="#9ca3af" stroke-width="1.5"/><rect x="224" y="415" width="12" height="30" fill="#ef4444"/>
+<path d="M230,460 L260,485" stroke="#f97316" stroke-width="2.5" fill="none" marker-end="url(#arrBU2)"/>
+<text x="150" y="500" font-size="12" fill="#f97316" text-anchor="start">Raid SSL sau 08:30</text>
+<!-- swing high reference -->
+<line x1="140" y1="270" x2="600" y2="270" stroke="#a855f7" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="145" y="262" font-size="11" fill="#a855f7" text-anchor="start">Swing high pre-MSS</text>
+<!-- displacement up: 3 big green candles -->
+<line x1="270" y1="345" x2="270" y2="440" stroke="#9ca3af" stroke-width="1.5"/><rect x="264" y="360" width="12" height="80" fill="#22c55e"/>
+<line x1="310" y1="270" x2="310" y2="360" stroke="#9ca3af" stroke-width="1.5"/><rect x="304" y="285" width="12" height="80" fill="#22c55e"/>
+<line x1="350" y1="200" x2="350" y2="290" stroke="#9ca3af" stroke-width="1.5"/><rect x="344" y="210" width="12" height="80" fill="#22c55e"/>
+<text x="360" y="245" font-size="11" fill="#a855f7" text-anchor="start">MSS: đóng trên swing high</text>
+<!-- BISI FVG zone between candle1 wick and candle3 wick -->
+<rect x="270" y="290" width="80" height="55" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="310" y="325" font-size="11" fill="#3b82f6" text-anchor="middle">BISI (FVG)</text>
+<!-- bullish OB (last down candle before rally) -->
+<rect x="255" y="415" width="30" height="20" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="270" y="452" font-size="10.5" fill="#ec4899" text-anchor="middle">Bullish OB</text>
+<!-- retracement candle into BISI/OB (entry) -->
+<line x1="410" y1="300" x2="410" y2="340" stroke="#9ca3af" stroke-width="1.5"/><rect x="404" y="310" width="12" height="25" fill="#ef4444"/>
+<line x1="450" y1="295" x2="450" y2="335" stroke="#9ca3af" stroke-width="1.5"/><rect x="444" y="305" width="12" height="25" fill="#ef4444"/>
+<path d="M456,318 L490,318" stroke="#22c55e" stroke-width="2.5" fill="none" marker-end="url(#arrBUbuy)"/>
+<text x="494" y="314" font-size="12" fill="#22c55e" font-weight="700" text-anchor="start">BUY tại retest</text>
+<!-- continuation up to DOL -->
+<line x1="530" y1="280" x2="530" y2="320" stroke="#9ca3af" stroke-width="1.5"/><rect x="524" y="290" width="12" height="25" fill="#22c55e"/>
+<line x1="570" y1="230" x2="570" y2="280" stroke="#9ca3af" stroke-width="1.5"/><rect x="564" y="240" width="12" height="30" fill="#22c55e"/>
+<line x1="610" y1="180" x2="610" y2="230" stroke="#9ca3af" stroke-width="1.5"/><rect x="604" y="190" width="12" height="30" fill="#22c55e"/>
+<!-- DOL target line -->
+<line x1="600" y1="165" x2="900" y2="165" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="895" y="156" font-size="11" fill="#eab308" text-anchor="end">DOL: equal highs</text>
+<!-- stop line below post-08:30 low -->
+<line x1="215" y1="480" x2="900" y2="480" stroke="#f87171" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="895" y="495" font-size="11" fill="#f87171" text-anchor="end">Stop dưới đáy post-08:30</text>
+<defs>
+<marker id="arrBU2" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f97316"/></marker>
+<marker id="arrBUbuy" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#22c55e"/></marker>
+</defs>
+<rect x="700" y="200" width="12" height="12" fill="#eab308"/><text x="718" y="210" font-size="12" fill="#94a3b8">Liquidity (relative equal)</text>
+<rect x="700" y="220" width="12" height="12" fill="#3b82f6"/><text x="718" y="230" font-size="12" fill="#94a3b8">BISI (FVG)</text>
+<rect x="700" y="240" width="12" height="12" fill="#ec4899"/><text x="718" y="250" font-size="12" fill="#94a3b8">Bullish OB</text>
+<rect x="700" y="260" width="12" height="12" fill="#a855f7"/><text x="718" y="270" font-size="12" fill="#94a3b8">MSS</text>
+<text x="480" y="560" font-size="12" fill="#94a3b8" text-anchor="middle">Chart minh họa kịch bản Bullish, không phải dữ liệu giao dịch thật.</text>
 </svg>

@@ -27,10 +27,10 @@ tags: [daily-summary, prop-firm-prep]
 
 Hôm nay là ngày học/knowledge-base đậm nhất từ trước tới nay:
 
-- **5 concept lên `status: tested`** (tổng số `tested` nhảy **1 → 6**): [[13 - FVG  - Fair Value Gap|FVG]], [[03 - Balanced Price Range|BPR]], [[27 - Premium Discount|Premium/Discount]], [[25 - OB - Order Block|Order Block]], [[18 - Kill Zones|Kill Zones]]. Đây đều là các **khối trụ** của chuỗi 2022 Model (Sweep → Displacement → MSS → **FVG/OB** → **CE** trong **Premium/Discount** trong **Kill Zone**). Ghi chú trung thực: chỉ [[18 - Kill Zones]] có `last_reviewed = 2026-07-12`; 4 note còn lại được đổi `status` hôm nay (theo commit git) nhưng **không bump `last_reviewed`/`updated`** — nên coi là "chốt trạng thái tested" hơn là "ôn lại toàn bộ".
-- **Concept mới:** [[43 - Liquidity Scale Alignment (Sweep cùng khung MSS-FVG, HTF là Target)|Liquidity Scale Alignment]] (`developing`, `last_reviewed = 2026-07-12`) — ý tưởng: sweep cùng khung với MSS/FVG, HTF là target.
-- **Model note mới:** [[14 - Mayne Structure + OTE Model]] (dài, kèm 6 SVG + [[Mayne Structure + OTE Entry Checklist]]) — mở rộng kho model ngoài 2022 Model.
-- **Kết quả concept tổng:** **51 note** (trước là 50), **6 tested / 0 mastered**. Ứng viên `tested` kế tiếp có thể là [[35 - Aggressive Displacement Entry]] hoặc [[42 - SMT Divergence]] (đã ôn 07-11).
+- **5 concept lên `status: tested`** (tổng số `tested` nhảy **1 → 6**): [[13-FVG-Fair-Value-Gap|FVG]], [[03-Balanced-Price-Range|BPR]], [[27-Premium-Discount|Premium/Discount]], [[25-OB-Order-Block|Order Block]], [[18-Kill-Zones|Kill Zones]]. Đây đều là các **khối trụ** của chuỗi 2022 Model (Sweep → Displacement → MSS → **FVG/OB** → **CE** trong **Premium/Discount** trong **Kill Zone**). Ghi chú trung thực: chỉ [[18-Kill-Zones]] có `last_reviewed = 2026-07-12`; 4 note còn lại được đổi `status` hôm nay (theo commit git) nhưng **không bump `last_reviewed`/`updated`** — nên coi là "chốt trạng thái tested" hơn là "ôn lại toàn bộ".
+- **Concept mới:** [[43-Liquidity-Scale-Alignment-Sweep-cung-khung-MSS-FVG-HTF-la-Target|Liquidity Scale Alignment]] (`developing`, `last_reviewed = 2026-07-12`) — ý tưởng: sweep cùng khung với MSS/FVG, HTF là target.
+- **Model note mới:** [[14 - Mayne Structure OTE Model]] (dài, kèm 6 SVG + [[Mayne Structure + OTE Entry Checklist]]) — mở rộng kho model ngoài 2022 Model.
+- **Kết quả concept tổng:** **51 note** (trước là 50), **6 tested / 0 mastered**. Ứng viên `tested` kế tiếp có thể là [[35-Aggressive-Displacement-Entry]] hoặc [[42-SMT-Divergence]] (đã ôn 07-11).
 
 ## 📊 Backtest hôm nay
 
@@ -60,9 +60,9 @@ Hôm nay là ngày học/knowledge-base đậm nhất từ trước tới nay:
 **Không có lỗi top-3 nào bị trigger hôm nay** — không có lệnh live, và backtest GBPUSD là Win Grade A không tham chiếu `[[Mistake - ...]]` nào.
 
 Top-3 hiện tại (số đếm live-trade **không đổi** vì không có lệnh live mới):
-- [[06 - Mistake - Not Have Market Structure Shift]] — vào lệnh khi chưa có nến đóng cửa phá protected swing bằng displacement (**14 lần**, #1).
-- [[09 - Mistake - Wrong daily bias]] — xác định sai chiều HTF trước khi tìm setup (**7 lần**, #2).
-- [[07 - Mistake - Risk more than 0.5% total account]] — size vượt 0,5% tài khoản/lệnh (**5 lần**, #3).
+- [[06-Mistake-Not-Have-Market-Structure-Shift]] — vào lệnh khi chưa có nến đóng cửa phá protected swing bằng displacement (**14 lần**, #1).
+- [[09-Mistake-Wrong-daily-bias]] — xác định sai chiều HTF trước khi tìm setup (**7 lần**, #2).
+- [[07-Mistake-Risk-more-than-0.5-total-account]] — size vượt 0,5% tài khoản/lệnh (**5 lần**, #3).
 
 Điểm tâm lý cần để ý (từ backtest hôm nay, dạng *pattern* không phải *mistake* tính điểm): **confirmation bias ở checklist** (tick "bias rõ ràng" dù prose nói "chưa xác nhận") và **gán narrative cho hành vi giá** ("trader khác đặt limit ở CE"). Cả hai đều là xu hướng cần chặn bằng rule, không phải lỗi mất tiền.
 
@@ -74,7 +74,7 @@ Top-3 hiện tại (số đếm live-trade **không đổi** vì không có lệ
 | [[Pass The5er first package challenge (10k$)]] | 0% | 0/8 | **2026-07-12** (mới) | Như FTMO. Nhắc luật riêng: daily DD tính từ equity đóng cửa hôm trước + cần ≥3 ngày có lãi ≥0,5%. |
 | [[Build a statistically validated backtest sample]] | 6% | 0/4 | **2026-07-12** (mới) | 12/200 = 6% → **frontmatter 6 nay KHỚP thực tế**; prose đã sync 11 → **12**. `baseline: "6"` vẫn là tàn dư cũ (không phải lỗi progress). |
 | [[Master the ICT 2022 Model]] | 30% | 0/5 | **2026-07-12** (mới) | prose sync 10 → **12 setup**; win rate 10W/2L ≈83% nhưng **n=12 quá nhỏ** cho ràng buộc >55%. Cột mốc #1 (viết checklist vào/ra) vẫn là mốc dễ mở khoá nhất còn treo. |
-| [[Hold daily journaling and process discipline]] | 40% | **2/4** ✅ | **2026-07-12** (mới) | Khang đã tự tick cột mốc #1+#2 hôm nay → **50%**. `progress` FE 40% giờ **THẤP hơn** cột mốc → nên bump 40 → 50. Track khoẻ nhất: **8 ngày journaling liên tiếp**. |
+| [[Hold daily journaling and process discipline]] | 40% | **2/4** ✅ | **2026-07-12** (mới) |  đã tự tick cột mốc #1+#2 hôm nay → **50%**. `progress` FE 40% giờ **THẤP hơn** cột mốc → nên bump 40 → 50. Track khoẻ nhất: **8 ngày journaling liên tiếp**. |
 | [[Cut my top 3 repeated mistakes]] | 20% | 0/4 | 2026-07-08 (**stale 4 ngày**) | Không có lệnh live → tần suất không đổi → không thêm dòng. Cột mốc #1+#2 đã đủ bằng chứng từ 07-08 nhưng **chưa tick**. |
 
 **Verdict pace (2027-01-07, còn 179 ngày):**
@@ -99,7 +99,7 @@ Top-3 hiện tại (số đếm live-trade **không đổi** vì không có lệ
 3. **[[Cut my top 3 repeated mistakes]]:** nếu đồng ý, tự tick cột mốc #1 (đã xác định top-3) + #2 (đã viết biện pháp) — đã dư bằng chứng từ 07-08 — rồi chỉnh `progress` cho khớp.
 4. **Điền `risk_percent`** vào frontmatter backtest GBPUSD 07-12 (đang trống) để đối chiếu rule ≤0,5%.
 5. **Nếu backtest tiếp:** giữ đà đa dạng thị trường — thêm **NAS100/XAUUSD** (mẫu nay 11 EURUSD + 1 GBPUSD, vẫn lệch nặng). Bắt đầu log 2 field mới `entry_zone` + `ce_filled` để định lượng giả thuyết "chờ CE hay bị lỡ".
-6. **Ứng viên `tested` #7:** chốt [[35 - Aggressive Displacement Entry]] hoặc [[42 - SMT Divergence]] nếu dẫn được ≥2 backtest xác nhận.
+6. **Ứng viên `tested` #7:** chốt [[35-Aggressive-Displacement-Entry]] hoặc [[42-SMT-Divergence]] nếu dẫn được ≥2 backtest xác nhận.
 
 ## 🔗 Liên kết
 

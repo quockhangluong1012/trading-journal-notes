@@ -4,7 +4,7 @@ A personal **ICT (Inner Circle Trader)** trading journal and knowledge base, bui
 
 ## What it's for
 
-The vault covers four jobs for **Luong Quoc Khang**, trading the **ICT 2022 Model** across NQ1/NDX (NAS100), EURUSD, GBPUSD, and XAUUSD:
+The vault covers four jobs for **Luong Quoc **, trading the **ICT 2022 Model** across NQ1/NDX (NAS100), EURUSD, GBPUSD, and XAUUSD:
 
 1. **Logging live trades** — one note per trade, structured frontmatter, linked to mistakes and concepts.
 2. **Backtesting** — same structure as live trades, used to validate setups before risking capital.

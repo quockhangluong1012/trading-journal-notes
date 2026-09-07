@@ -1,0 +1,33 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="360" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Công thức khối lượng — 3 biến, 1 phép chia</text>
+  <text x="24" y="55" font-size="12.5" fill="#6B7280">Bắt đầu từ số tiền rủi ro (fix trước), KHÔNG bao giờ từ khối lượng. Khối lượng là kết quả, không phải lựa chọn.</text>
+
+  <rect x="60" y="80" width="640" height="90" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="380" y="120" font-size="16" font-weight="700" fill="#1D4ED8" text-anchor="middle">Khối lượng = Số tiền rủi ro ÷ (Khoảng cách Stop × Giá trị mỗi điểm/pip)</text>
+  <text x="380" y="148" font-size="12" fill="#374151" text-anchor="middle">Position Size = Risk $ / (Stop distance × Value per point)</text>
+
+  <rect x="40" y="196" width="220" height="140" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="150" y="220" font-size="13" font-weight="700" fill="#B91C1C" text-anchor="middle">① Số tiền rủi ro</text>
+  <text x="52" y="246" font-size="11" fill="#374151">= Vốn × % rủi ro/lệnh</text>
+  <text x="52" y="268" font-size="11" fill="#374151">Vd: 100.000 × 0,5%</text>
+  <text x="52" y="290" font-size="14" font-weight="700" fill="#1F2937">= $500</text>
+  <text x="52" y="316" font-size="10" fill="#6B7280">FIX TRƯỚC, đây là</text>
+  <text x="52" y="330" font-size="10" fill="#6B7280">hằng số của bạn.</text>
+
+  <rect x="270" y="196" width="220" height="140" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="380" y="220" font-size="13" font-weight="700" fill="#B45309" text-anchor="middle">② Khoảng cách Stop</text>
+  <text x="282" y="246" font-size="11" fill="#374151">= |Entry − Stop loss|</text>
+  <text x="282" y="268" font-size="11" fill="#374151">Đo bằng điểm / pip /</text>
+  <text x="282" y="290" font-size="11" fill="#374151">tick tùy sản phẩm.</text>
+  <text x="282" y="316" font-size="10" fill="#6B7280">Do CẤU TRÚC chart</text>
+  <text x="282" y="330" font-size="10" fill="#6B7280">quyết định, không ép.</text>
+
+  <rect x="500" y="196" width="220" height="140" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="610" y="220" font-size="13" font-weight="700" fill="#166534" text-anchor="middle">③ Giá trị mỗi điểm</text>
+  <text x="512" y="246" font-size="11" fill="#374151">NQ: $20/điểm (MNQ $2)</text>
+  <text x="512" y="268" font-size="11" fill="#374151">FX: $10/pip (1 lot std)</text>
+  <text x="512" y="290" font-size="11" fill="#374151">XAU: $100/$1 (1 lot)</text>
+  <text x="512" y="316" font-size="10" fill="#6B7280">Hằng số theo sản</text>
+  <text x="512" y="330" font-size="10" fill="#6B7280">phẩm &amp; loại lot.</text>
+</svg>

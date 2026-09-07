@@ -1,0 +1,50 @@
+<svg viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrowhead1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#ffffff"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+
+  <text x="480" y="36" fill="#d1d4dc" font-size="22" font-weight="bold" text-anchor="middle">Cross-Sectional Order Flow va Arbitrage Correction</text>
+  <text x="480" y="58" fill="#787b86" font-size="13" text-anchor="middle">Vi sao tuong quan nen thuong tu sua lai theo thoi gian</text>
+
+  <!-- grid lines -->
+  <line x1="60" y1="100" x2="900" y2="100" stroke="#1e222d" stroke-width="1"/>
+  <line x1="60" y1="180" x2="900" y2="180" stroke="#1e222d" stroke-width="1"/>
+  <line x1="60" y1="260" x2="900" y2="260" stroke="#1e222d" stroke-width="1"/>
+  <line x1="60" y1="340" x2="900" y2="340" stroke="#1e222d" stroke-width="1"/>
+
+  <!-- Panel A: Asset A making new high -->
+  <text x="80" y="95" fill="#d1d4dc" font-size="14" font-weight="bold">Tai san A (vi du NQ)</text>
+  <polyline points="80,180 140,160 200,140 260,150 320,110 380,120" fill="none" stroke="#26a69a" stroke-width="2.5"/>
+  <circle cx="320" cy="110" r="5" fill="#f2c94c"/>
+  <text x="330" y="105" fill="#f2c94c" font-size="12">Dinh moi (higher high)</text>
+
+  <!-- Panel B: Asset B failing -->
+  <text x="80" y="175" fill="#d1d4dc" font-size="14" font-weight="bold">Tai san B tuong quan (vi du ES)</text>
+  <polyline points="80,260 140,240 200,225 260,235 320,222 380,228" fill="none" stroke="#ef5350" stroke-width="2.5"/>
+  <circle cx="320" cy="222" r="5" fill="#f2c94c"/>
+  <text x="330" y="245" fill="#f2c94c" font-size="12">Khong xac nhan dinh (lower high)</text>
+
+  <!-- SMT divergence bracket -->
+  <line x1="320" y1="110" x2="320" y2="222" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="335" y="170" fill="#ffffff" font-size="13" font-weight="bold">SMT Divergence</text>
+
+  <!-- Arbitrage flow arrows -->
+  <text x="480" y="290" fill="#d1d4dc" font-size="14" font-weight="bold" text-anchor="middle">Co che arbitrage / basis trading</text>
+  <rect x="420" y="305" width="120" height="40" fill="rgba(41,98,255,0.25)" stroke="#2962ff" stroke-width="1"/>
+  <text x="480" y="329" fill="#d1d4dc" font-size="12" text-anchor="middle">Basis lech ky vong</text>
+
+  <path d="M 460,345 L 460,380" stroke="#ffffff" stroke-width="2" marker-end="url(#arrowhead1)" fill="none"/>
+  <path d="M 500,345 L 500,380" stroke="#ffffff" stroke-width="2" marker-end="url(#arrowhead1)" fill="none"/>
+
+  <rect x="380" y="385" width="200" height="45" fill="rgba(255,152,0,0.25)" stroke="#ff9800" stroke-width="1"/>
+  <text x="480" y="404" fill="#d1d4dc" font-size="12" text-anchor="middle">Dong lenh arbitrage/hedging</text>
+  <text x="480" y="420" fill="#d1d4dc" font-size="12" text-anchor="middle">keo hai tai san lai gan nhau</text>
+
+  <path d="M 480,430 L 480,460" stroke="#ffffff" stroke-width="2" marker-end="url(#arrowhead1)" fill="none"/>
+  <text x="480" y="485" fill="#26a69a" font-size="13" font-weight="bold" text-anchor="middle">Tuong quan phuc hoi (hoi tu ve muc nen)</text>
+
+  <text x="480" y="520" fill="#787b86" font-size="12" text-anchor="middle">SMT phan anh dong lenh rieng biet (idiosyncratic) trong luc arbitrage flow dang keo tuong quan ve dong bo</text>
+</svg>

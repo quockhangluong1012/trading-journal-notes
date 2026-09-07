@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Kinh nghiệm live/backtest — Seek and Destroy Friday</text>
+<rect x="60" y="100" width="380" height="110" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="80" y="132" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">1. Chờ đủ 3 dấu hiệu</text>
+<text x="80" y="158" font-size="12" fill="#94a3b8" text-anchor="start">Không dự đoán S&amp;D week chỉ từ 1-2 dấu</text>
+<text x="80" y="178" font-size="12" fill="#94a3b8" text-anchor="start">hiệu</text>
+<rect x="480" y="100" width="380" height="110" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="500" y="132" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">2. Không pre-position</text>
+<text x="500" y="158" font-size="12" fill="#94a3b8" text-anchor="start">Đứng ngoài tuyệt đối trước giờ tin, dù đã</text>
+<text x="500" y="178" font-size="12" fill="#94a3b8" text-anchor="start">nhìn thấy hướng rõ</text>
+<rect x="60" y="230" width="380" height="110" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="80" y="262" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">3. MSS/CISD là trigger, không phải wick sweep</text>
+<text x="80" y="288" font-size="12" fill="#94a3b8" text-anchor="start">Không entry ngay tại nến sweep</text>
+<rect x="480" y="230" width="380" height="110" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="500" y="262" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">4. Target = HTF draw, không cố định pip</text>
+<text x="500" y="288" font-size="12" fill="#94a3b8" text-anchor="start">Không đặt TP theo số pip cứng</text>
+<rect x="60" y="360" width="380" height="110" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="80" y="392" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">5. Tách log theo NFP/FOMC/CPI/khác</text>
+<text x="80" y="418" font-size="12" fill="#94a3b8" text-anchor="start">Không gộp chung một tỷ lệ thắng</text>
+<rect x="480" y="360" width="380" height="110" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="500" y="392" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">6. False positive rate cao</text>
+<text x="500" y="418" font-size="12" fill="#94a3b8" text-anchor="start">Nhiều tuần trông giống nhưng không sweep 2</text>
+<text x="500" y="438" font-size="12" fill="#94a3b8" text-anchor="start">phía</text>
+<rect x="60" y="500" width="840" height="70" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<text x="80" y="524" font-size="12" font-weight="700" fill="#4ade80" text-anchor="start">Một câu gói lại: đứng ngoài trước tin, đợi sweep 2 phía + MSS/CISD, vào theo weekly order flow.</text>
+<text x="80" y="546" font-size="12" fill="#94a3b8" text-anchor="start">Giá trị chính của mô hình là NÓI KHÔNG với việc trade sớm — không phải một setup entry cầu kỳ.</text>
+</svg>

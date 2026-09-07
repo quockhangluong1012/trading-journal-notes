@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">GBPUSD Short London — vào sớm theo ITH chưa xác nhận (-1.1R)</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Tái dựng từ mẫu backtest · H1 bias bearish · M15 execution · 08:10-11:40 London</text>
+
+  <line x1="40" y1="460" x2="1240" y2="460" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- ===== PANEL 1: price action, y 100-440, candles kept compact on left, labels laid out in vertical tiers on the right with leader lines ===== -->
+
+  <!-- H4 downtrend leading in -->
+  <g>
+    <line x1="90" y1="260" x2="90" y2="330" stroke="#ef5350" stroke-width="1"/>
+    <rect x="82" y="270" width="16" height="55" rx="1" fill="#ef5350"/>
+    <line x1="130" y1="290" x2="130" y2="360" stroke="#ef5350" stroke-width="1"/>
+    <rect x="122" y="300" width="16" height="55" rx="1" fill="#ef5350"/>
+  </g>
+
+  <!-- pullback up forming candidate STH-1 -->
+  <g>
+    <line x1="170" y1="240" x2="170" y2="310" stroke="#26a69a" stroke-width="1"/>
+    <rect x="162" y="250" width="16" height="55" rx="1" fill="#26a69a"/>
+    <line x1="210" y1="200" x2="210" y2="270" stroke="#26a69a" stroke-width="1"/>
+    <rect x="202" y="210" width="16" height="55" rx="1" fill="#26a69a"/>
+  </g>
+
+  <!-- small pullback -->
+  <g>
+    <line x1="250" y1="220" x2="250" y2="290" stroke="#ef5350" stroke-width="1"/>
+    <rect x="242" y="230" width="16" height="55" rx="1" fill="#ef5350"/>
+  </g>
+
+  <!-- entry marker: trader shorts here believing STH-1 is ITH already -->
+  <line x1="290" y1="185" x2="290" y2="260" stroke="#ff6b6b" stroke-width="2"/>
+  <polygon points="290,180 280,195 300,195" fill="#ff6b6b"/>
+
+  <!-- price continues up through the supposed ITH -->
+  <g>
+    <line x1="330" y1="170" x2="330" y2="240" stroke="#26a69a" stroke-width="1"/>
+    <rect x="322" y="180" width="16" height="55" rx="1" fill="#26a69a"/>
+    <line x1="370" y1="140" x2="370" y2="210" stroke="#26a69a" stroke-width="1"/>
+    <rect x="362" y="150" width="16" height="55" rx="1" fill="#26a69a"/>
+    <line x1="410" y1="120" x2="410" y2="190" stroke="#26a69a" stroke-width="1"/>
+    <rect x="402" y="130" width="16" height="55" rx="1" fill="#26a69a"/>
+  </g>
+
+  <!-- stop loss line, extends across the remaining candles -->
+  <line x1="290" y1="150" x2="450" y2="150" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ============ RIGHT-SIDE LABEL COLUMN — vertical tiers, ≥22px apart, leader lines dashed to price points ============ -->
+  <!-- Tier 1 (y=112): H4 downtrend context -->
+  <line x1="110" y1="270" x2="470" y2="112" stroke="#787b86" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="475" y="116" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">H4 downtrend — LTH protected tại 1.2680</text>
+
+  <!-- Tier 2 (y=142): STH-1 candidate -->
+  <line x1="205" y1="205" x2="470" y2="142" stroke="#f2c94c" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="475" y="146" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">STH-1 tại 1.2648 (nghi vấn ITH)</text>
+
+  <!-- Tier 3 (y=172): entry -->
+  <line x1="290" y1="188" x2="470" y2="172" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="475" y="176" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff6b6b">Entry Short 1.2646 — 08:40</text>
+
+  <!-- Tier 4 (y=202): premature assumption note -->
+  <text x="475" y="206" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">"STH-1 chắc là ITH rồi" — chưa có STH-2</text>
+  <text x="475" y="226" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">xác nhận tại thời điểm vào lệnh</text>
+
+  <!-- Tier 5 (y=256): stop loss -->
+  <line x1="450" y1="150" x2="620" y2="256" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="625" y="260" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">SL 1.2660 — hit 09:55</text>
+
+  <!-- Tier 6 (y=290): price kept rising -->
+  <line x1="420" y1="130" x2="620" y2="290" stroke="#26a69a" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="625" y="294" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">Giá tiếp tục lên — STH-1 KHÔNG</text>
+  <text x="625" y="316" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#26a69a">hề là ITH</text>
+
+  <!-- filler context box using the empty middle-right space, tier 7 y=360 -->
+  <rect x="475" y="345" width="710" height="70" rx="8" fill="#131722" stroke="#2a2e39"/>
+  <text x="490" y="370" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Sai lầm cấu trúc: nâng cấp STH-1 → ITH ngay khi thấy pullback đầu tiên,</text>
+  <text x="490" y="392" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">bỏ qua điều kiện bắt buộc — phải có STH-2 hình thành mới xác nhận được</text>
+
+  <!-- ===== PANEL 2: what really happened after stop-out, y 500-760 ===== -->
+  <rect x="70" y="500" width="230" height="34" rx="6" fill="#4a90d9" opacity="0.18" stroke="#4a90d9"/>
+  <text x="88" y="523" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#4a90d9">Diễn ra thật SAU khi lệnh đã cắt lỗ</text>
+
+  <g>
+    <line x1="560" y1="640" x2="560" y2="710" stroke="#26a69a" stroke-width="1"/>
+    <rect x="552" y="650" width="16" height="55" rx="1" fill="#26a69a"/>
+    <line x1="600" y1="600" x2="600" y2="670" stroke="#26a69a" stroke-width="1"/>
+    <rect x="592" y="610" width="16" height="55" rx="1" fill="#26a69a"/>
+    <line x1="640" y1="560" x2="640" y2="630" stroke="#26a69a" stroke-width="1"/>
+    <rect x="632" y="570" width="16" height="55" rx="1" fill="#26a69a"/>
+  </g>
+  <text x="560" y="545" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Giá lên tới 1.2678 rồi mới tạo STH-2</text>
+
+  <g>
+    <line x1="680" y1="620" x2="680" y2="690" stroke="#ef5350" stroke-width="1"/>
+    <rect x="672" y="630" width="16" height="55" rx="1" fill="#ef5350"/>
+    <line x1="720" y1="650" x2="720" y2="720" stroke="#ef5350" stroke-width="1"/>
+    <rect x="712" y="660" width="16" height="55" rx="1" fill="#ef5350"/>
+  </g>
+  <text x="640" y="745" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#f2c94c">ITH thật chỉ xác nhận LÚC NÀY (1.2678), không phải 1.2648</text>
+
+  <line x1="200" y1="565" x2="640" y2="565" stroke="#787b86" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="900" y="562" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#787b86">Mức 1.2648 chỉ là STH-1, đợi STH-2 mới nâng cấp</text>
+
+  <text x="40" y="775" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">GBPUSD M15/H1 · tái dựng minh họa từ mẫu backtest — bài học: không nâng cấp degree khi chưa có xác nhận hai bên</text>
+</svg>

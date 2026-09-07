@@ -309,10 +309,149 @@ Góc thực tế đáng cân nhắc: giá chỉ chạm TP2 sau 5 ngày, bao gồ
 
 ---
 
+## 9. Phân tích chuyên sâu bổ sung (2026-08-03)
+
+> [!important] Lưu ý phát hiện quan trọng nhất của cả batch
+> File `2026-07-17/01 - Win - GBPUSD - 2014-06-25 - Long.md` (được giao là "note 3", cùng lệnh với note này) thực ra có `trade_date: 2014-07-14` trong frontmatter, KHÔNG PHẢI `2014-06-25` — tên file của bản 07-17 sai (chính bản đó tự cảnh báo trong callout đầu file: "tên file (2014-06-25) không khớp ngày lệnh (2014-07-14)... nên đổi tên"). Đây **không phải hai bản phân tích của cùng một lệnh** như brief mô tả — đây là **hai lệnh GBPUSD Long khác nhau, xảy ra cách nhau ~19 ngày**, vô tình có filename trùng do lỗi đặt tên chưa sửa. Toàn bộ phần so sánh "self-consistency 2 bản cùng lệnh" ở note 3 dưới đây được viết lại thành so sánh **rule drift giữa 2 lệnh khác nhau cùng biến thể** thay vì lỗi diễn giải của cùng 1 lệnh — đây tự nó là một finding data-hygiene cấp batch, không phải lỗi phân tích của bên nào.
+
+**Bản đồ liquidity IRL↔ERL tại thời điểm entry (1.69656).** POI stack: H1 OB (1.69395–1.69562, ERL tương đối vì đây là ranh giới nơi bias được xác nhận) + M5 BPR (1.69649–1.69662, IRL — imbalance nội bộ vừa hình thành từ 2 FVG đối nghịch). Note gốc mô tả cú tap OB là "nông" (chỉ chạm 1.6951–1.6953, không chạm CE/low OB) — nghĩa là ERL-cấp-OB chưa bị lấy dứt điểm trước khi CISD xác nhận. Theo đúng logic ERL→IRL đã áp dụng ở note 4 loss cùng batch ([[02 - Loss - GBPUSD - 2014-07-17 - Long]]), đây lẽ ra là một cờ cảnh báo tương tự "tap nông + MSS sớm = LTF inducement" — nhưng ở đây note gốc lại không đặt câu hỏi này, có thể vì công cụ xác nhận là CISD (open/close) chứ không phải MSS (wick), và bản thân note gốc mục 5 tự flag "SL khá xa entry" như một điểm cần cải thiện chứ không phải một red flag cấu trúc. Đáng đối chiếu: SSL/EQL nội bộ giữa OB low (1.69395) và DR Low H1 (1.69167, không nêu rõ trong note) có bị lấy trước không — note không trả lời, để `[UNSUPPORTED]`.
+
+**Chất lượng CISD.** Note gốc phân biệt đúng CISD (open/close, "full-leg reclaim") với MSS cổ điển (wick-based) — đây là điểm mạnh khái niệm hiếm thấy trong vault (so với note 4 loss, nơi MSS wick-based bị dùng sai vì bỏ qua điều kiện sweep trước). "Full-leg reclaim" (đóng cửa vượt open của TOÀN BỘ cụm nến giảm, không chỉ 1-2 nến gần nhất) là tiêu chuẩn cao hơn CISD "yếu" — nhưng note không định lượng "toàn bộ cụm" là bao nhiêu nến, để đối chiếu định lượng với các CISD khác trong vault sau này.
+
+**Yếu tố thời gian.** Session London Open KZ — killzone chuẩn cho GBP. Note không ghi giờ cụ thể (không có timestamp entry) — thiếu dữ liệu để đo tốc độ resolve từ CISD tới entry, khác với note 4 (có timeline chi tiết theo giờ UTC+7).
+
+**Vị trí entry trong dealing range.** OB nằm hoàn toàn dưới Equilibrium (1.699005) → đúng phía Discount. Nhưng note không dùng khung OTE fib (62–79%) để đánh giá độ sâu — chỉ dùng nhị phân Discount/Premium. Nếu tính theo OTE trên range H1 (Low 1.69167 giả định – High 1.70634): CE BPR 1.696555 nằm ở khoảng fib nào so với 0.618/0.705/0.786 không được tính trong note — một khoảng trống đánh giá so với note 3 và note 4 (cả hai đều dùng khung OTE fib chi tiết).
+
+**So sánh với các lệnh khác cùng mẫu trong vault.**
+- Với [[01 - Win - EURUSD - 2016-06-12 - Short|EURUSD 2016-06-12]] (note 1 batch này): cả hai đều là "process win" có root cause tách biệt khỏi phần không hoàn hảo của outcome — EURUSD tách khỏi gap cuối tuần, GBPUSD tách khỏi runner bị đóng sớm. Điểm chung: cả hai note đều tự phê bình rất kỹ, một dấu hiệu tốt về văn hóa backtest của vault này.
+- Với [[02 - Loss - GBPUSD - 2014-07-17 - Long]] (note 4 batch này, Loss): note 4 dùng MSS wick-based và bị lỗi bỏ qua sweep cấu trúc; note này dùng CISD open/close và không có lỗi tương tự được nêu — nhưng cũng không kiểm tra ERL bên dưới OB, nên chưa chắc "an toàn hơn" chỉ vì công cụ xác nhận khác, có thể đơn giản là chưa gặp trường hợp bất lợi.
+- Với note 3 (07-17, lệnh 2014-07-14 khác) — xem so sánh chi tiết ở mục 10 dưới, vì đây là góc brief yêu cầu tập trung nhất dù đối tượng so sánh thực chất khác lệnh.
+
+![[GBPUSD-20140625-cisd-bpr-runner.svg|760]]
+
+## 10. Phản biện chuyên sâu (Devil's Advocate)
+
+```yaml
+type: devils-advocate
+mode: REVIEW
+instrument: GBPUSD
+date: 2014-06-25
+timeframes_provided: [D1, H1, M5] (mô tả bằng lời + 4 ảnh PNG không đọc được)
+verdict: SURVIVES, WEAKENED
+evidence_sufficiency: thin
+opposite_case_strength: weaker but non-trivial
+objections: {fatal: 0, material: 3, minor: 2}
+open_objections: "O1 OPEN, O2 OPEN, O3 OPEN, O4 OPEN, O5 OPEN"
+tags: [ict, devils-advocate, review]
+```
+
+**0. Evidence base.** 4 wikilink ảnh (`Pasted image...`, `Screenshot...`) không đọc được trong môi trường này. Toàn bộ evidence base là số liệu + mô tả trong chính note. `evidence_sufficiency = thin` — load-bearing claim (CISD full-leg reclaim là xác nhận hợp lệ) không thể kiểm tra độc lập bằng chart.
+
+**1. Thesis + load-bearing claim.**
+- C1: HTF bias Bullish (D1 HH/HL) — mô tả định tính, không kèm số liệu OHLC.
+- C2: OB H1 (1.69395–1.69562) nằm dưới Equilibrium → Discount hợp lệ (arithmetic verify: EQ = 1.699005, khớp).
+- C3: Phản ứng tại OB là "sạch" (wick vào, thân đóng ngoài) → xác nhận OB.
+- C4: CISD full-leg reclaim xác nhận đổi trạng thái giao hàng → entry tại CE BPR hợp lệ (**load-bearing** — toàn bộ chain và grade B+ phụ thuộc vào việc CISD này có thật sự đủ mạnh để thay thế vai trò MSS hay không).
+- C5: r_planned = 2.47 tính từ entry 1.69656 / SL 1.6938 / TP1 1.70311.
+- Inference: C1+C2+C3 → C4 → entry hợp lệ; C4 độc lập với quyết định đóng runner sớm (ngoài phạm vi 7 bước).
+
+**2. Điều gì survive.** Việc tách biệt "quản lý runner" khỏi "chuỗi entry 7 bước" là kỷ luật phân tích đúng đắn — note không để outcome dương (Win tổng thể) che giấu lỗi lệch plan ở phần runner. Phân biệt CISD (open/close) và MSS (wick) là điểm mạnh khái niệm, đúng theo doctrine.
+
+**3. Objections.**
+
+**O1 · [ARITHMETIC] · material · attacks C5**
+Claim: `r_planned: 2.47` từ entry 1.69656, SL 1.6938, TP1 1.70311.
+Evidence: Tính lại: risk = |1.69656−1.6938| = 0.00276 (27.6 pip), reward = |1.70311−1.69656| = 0.00655 (65.5 pip) → RR = 65.5/27.6 = **2.373**, không phải 2.47. Chênh lệch ~0.1R (~4%).
+Consequence: `r_planned` trong frontmatter không tự nhất quán với chính `entry_price`/`stop_loss`/`take_profit` cũng nằm trong frontmatter — ảnh hưởng trực tiếp tới thống kê expectancy nếu dùng field `r_planned` thay vì tính lại từ giá.
+Your best answer: Note tự flag rằng `stop_loss: 1.6938` là số "suy ngược từ RR hiển thị trên platform", không phải đo trực tiếp — nghĩa là 2.47 có thể là RR gốc hiển thị trên platform (dùng SL thật, chưa biết), còn 1.6938 là SL bị suy ngược sai một chút từ chính con số 2.47 đó, tạo ra một vòng lặp tính toán không khớp khi tính xuôi lại.
+Retracted by: Cung cấp SL thật đo trực tiếp từ chart (không suy ngược từ RR).
+
+**O2 · [HINDSIGHT] · material · attacks C4**
+Claim: "CISD full-leg reclaim hoạt động đúng như kỳ vọng" (Lesson 1, mục 7.1 note gốc) được viết như một kết luận đã kiểm chứng.
+Evidence: Kết luận này chỉ dựa trên kết quả của chính lệnh đang được đánh giá (TP1 hit) — không có mẫu độc lập nào khác trong note để so sánh "CISD full-leg" với "CISD yếu" trên cùng điều kiện.
+Consequence: Nếu chỉ n=1, "hoạt động đúng như kỳ vọng" là một câu khẳng định vượt quá những gì 1 mẫu chứng minh được — đúng dạng outcome-as-evidence-cho-process mà mode REVIEW phải săn theo brief.
+Your best answer: Note không tuyên bố đây là rule đã kiểm chứng qua nhiều mẫu, chỉ đề xuất "đáng đưa vào Playbook làm tiêu chuẩn ưu tiên" — nhưng câu mở đầu "hoạt động đúng như kỳ vọng" vẫn đọc như một xác nhận, không phải một giả thuyết cần thêm mẫu.
+Retracted by: Backtest thêm ≥10 mẫu CISD full-leg so với CISD yếu, đo win rate/expectancy riêng.
+
+**O3 · [UNSUPPORTED] · material · attacks C3**
+Claim: "phản ứng tại OB là một trong những kiểu phản ứng 'sạch' nhất khi đánh giá độ tin cậy OB."
+Evidence: Không có ảnh đọc được hoặc OHLC cụ thể của nến phản ứng (biên độ wick, thân nến) để xác nhận "sạch" theo nghĩa nào — đây là đánh giá định tính không kèm số.
+Consequence: Nếu phản ứng thực tế yếu hơn mô tả, độ tin cậy của C2+C3 (nền tảng cho C4) giảm.
+Retracted by: OHLC nến phản ứng hoặc ảnh H1 đọc được.
+
+**O4 · [METHOD] · minor**
+`followed_plan: Partial` cùng `confluence_score: 1` được note tự giải thích là "không phản ánh đúng chất lượng thật" — một dạng tự miễn trừ điểm số template. Hợp lý về logic (8 mục cố định thiên về SMT/macro time, không đo được chain CISD/BPR) nhưng cũng là điểm cần cảnh giác: mọi lệnh có confluence_score thấp đều có thể viện lý do tương tự để "không tính điểm thấp là điểm thấp thật".
+Retracted by: n/a — ghi nhận để theo dõi liệu lý do miễn trừ này có lặp lại có hệ thống ở các note khác trong vault hay không (nếu có, đó là một dạng grade inflation cần soi riêng).
+
+**O5 · [UNSUPPORTED] · minor**
+"Ước tính ~85% khớp mô hình chuẩn" không có breakdown cụ thể cấu thành từ đâu.
+Retracted by: Bảng điểm chi tiết cho từng thành phần.
+
+Bộ lọc: 6 objection nháp, cắt 1 (một objection về "session không ghi giờ cụ thể" bị coi quá vụn) → còn 5.
+
+**4. Opposite case.** Đọc ngược: CISD full-leg reclaim tại đây có thể chỉ là một retrace bình thường bị đọc quá tay thành "đổi trạng thái giao hàng" — vì cú tap vào OB là NÔNG (không chạm CE/low OB), phản ứng có thể chỉ là một nhịp phục hồi kỹ thuật ngắn hạn (dead-cat bounce trong ngôn ngữ non-ICT) chứ chưa chắc smart money đã thật sự "xong việc" tại OB đó — giống hệt cơ chế mà note 4 cùng batch mô tả cho trường hợp Loss (tap nông + MSS sớm = LTF inducement). Nếu áp cùng chuẩn nghi ngờ đó vào đây, CISD ở CE BPR 1.69656 cũng có thể là một internal inducement trước khi giá quay lại quét sâu hơn vào OB — nhưng thực tế nó không xảy ra (giá chạy thẳng lên TP1). Tự phản biện case ngược: nó không giải thích được tại sao, nếu là inducement, giá lại không quay lại test OB gốc trước khi tiếp tục — dữ liệu thực tế ủng hộ case gốc hơn. Nhãn: **weaker but non-trivial** — case ngược không thắng nhưng cùng khung nghi ngờ ("tap nông = cảnh báo") lẽ ra nên được note gốc tự áp dụng nhất quán thay vì chỉ áp dụng ở note Loss. Observable phân biệt: nếu backtest thêm các case "tap nông + CISD full-leg" khác trong vault mà đa số đều thắng, case gốc được củng cố; nếu nhiều case tương tự thất bại (giá quay lại quét sâu OB trước khi đi), case ngược thắng và "tap nông" cần thành cờ giảm size bất kể công cụ xác nhận là CISD hay MSS.
+
+**5. Verdict: SURVIVES, WEAKENED.** Chain lý luận (C1-C4) không bị phá bởi CHART/DOCTRINE/ARITHMETIC trực tiếp nào — nhưng O1 (arithmetic RR lệch 0.1R) và O2 (hindsight nhẹ ở "CISD hoạt động đúng như kỳ vọng") làm yếu độ tin cậy của các con số và kết luận đi kèm. Điều tôi không phá được: logic entry CISD+BPR và tính hợp lệ Discount/Premium. Điều critique này không xác lập: rằng CISD full-leg reclaim là một công cụ đã kiểm chứng qua nhiều mẫu — vẫn là n=1.
+
+**6. Falsification tests.**
+1. Đo lại SL thật bằng chart trực tiếp (không suy ngược từ RR) và tính lại RR — nếu ra đúng 2.47, đóng O1; nếu ra ~2.37 khớp tính toán ở đây, sửa `r_planned` trong frontmatter.
+2. Backtest ≥10 mẫu "tap nông vào OB + CISD full-leg xác nhận" so với "tap sâu (chạm CE/low OB) + CISD" — so win rate. Nếu tap nông có win rate thấp hơn rõ rệt, áp cùng logic "tap nông = cờ cảnh báo" đã dùng ở note 4 vào biến thể CISD/BPR.
+3. Backtest ≥10 mẫu runner được quản lý theo rule rõ ràng (breakeven sau TP1, đóng chỉ khi chạm TP2 hoặc tín hiệu cấu trúc cụ thể) so với đóng theo phản xạ — đo R trung bình bị "bỏ lại trên bàn" mỗi kiểu.
+
+## 11. Doctrine check (ICT 2022 canon)
+
+**Thesis:** Chuỗi Bias(Bullish D1) → Discount POI(H1 OB) → Sweep(tap nông, thân đóng ngoài) → Displacement+CISD(full-leg reclaim) → BPR entry tại CE là một setup Long hợp lệ theo biến thể CISD của ICT 2022 Model.
+
+**Cần sửa** (load-bearing trước):
+- C4 (CISD xác nhận là công cụ hợp lệ thay thế MSS) — **AMBIGUOUS** · why: SKILL.md § CISD định nghĩa "đổi state of delivery, dùng open/close, không đồng nghĩa tùy tiện với MSS" — note gốc đã tự phân biệt đúng, nhưng doctrine không quy định rõ ràng CISD có đủ tự thân thay thế vai trò "Displacement + MSS" (bước 4 của 7-step) hay cần đi kèm MSS riêng biệt trên cùng khung → đây là doctrine gap thật sự, không phải lỗi của tác giả → fix: không cần sửa gì thêm phía tác giả, nhưng ghi nhận gap để tránh áp chuẩn khắt khe hơn canon.
+- C1 (HH/HL D1) — **UNSUPPORTED** · why: mô tả định tính, không kèm OHLC hay ảnh đọc được → fix: đính kèm số liệu D1 cụ thể.
+- C3 (phản ứng "sạch" tại OB) — **UNSUPPORTED** · why: không có OHLC nến phản ứng để đối chiếu "wick vào, thân đóng ngoài" → fix: cung cấp giá cao/thấp/đóng của nến phản ứng.
+
+**PASS:** C2 (Premium/Discount: OB dưới EQ 1.699005 → Discount đúng phía cho Long, arithmetic khớp), C6 (CE BPR = (1.69662+1.69649)/2 = 1.696555, khớp entry 1.69656 gần như tuyệt đối — entry precision đúng chuẩn CE).
+
+**Verdict: PARTIALLY ALIGNED** — load-bearing claim C4 rơi vào AMBIGUOUS do doctrine gap (không phải lỗi tác giả), C1/C3 UNSUPPORTED vì thiếu chart; C2/C6 PASS vững bằng arithmetic. Không có FAIL nào (không claim nào gọi sai tên hiện tượng) nên không rơi xuống NOT ALIGNED, nhưng cũng chưa đủ để DOCTRINE ALIGNED vì load-bearing chưa được evidence hoàn toàn xác nhận.
+
+**Notes:** Doctrine gap ghi nhận — canon (theo SKILL.md hiện có) không nói rõ CISD full-leg reclaim một mình có đủ điều kiện thay thế "Displacement + MSS" ở bước 4 của 7-step hay cần một MSS riêng đi kèm trên cùng khung thời gian. Đề xuất bổ sung vào doctrine.md: làm rõ ranh giới "CISD-as-structural-confirmation" vs "CISD-as-delivery-confirmation-only cần MSS đi kèm".
+
+## 12. Lesson Learned (bản đầy đủ)
+
+### (a) Bài học kỹ thuật
+1. **CISD full-leg reclaim là công cụ hợp lệ nhưng chưa kiểm chứng qua nhiều mẫu.** Ví dụ số thật: entry CE BPR 1.69656, CISD xác nhận bằng đóng cửa vượt open của toàn bộ cụm nến giảm trong nhịp retrace về OB. Tổng quát hóa: trước khi coi CISD full-leg là "chuẩn ưu tiên" cho Playbook (như Lesson 1 note gốc đề xuất), cần ≥10 mẫu so sánh với CISD yếu.
+2. **Frontmatter tự mâu thuẫn khi một field được suy ngược từ field khác rồi dùng để verify chính field gốc.** Ví dụ số thật: SL 1.6938 suy ngược từ RR 2.47, nhưng tính xuôi lại từ SL đó ra RR 2.373 — vòng lặp không khớp. Tổng quát hóa: bất kỳ trường nào ghi "suy ngược từ X" đều không nên dùng để verify lại X.
+3. **Tap nông vào OB xuất hiện ở cả lệnh Win (note này) và Loss (note 4 batch này) — biến số này chưa đủ để tự nó là tín hiệu, cần kết hợp với việc ERL bên dưới có bị quét hay không.**
+
+### (b) Bài học quy trình/checklist
+- Thiếu rule quản lý runner viết TRƯỚC khi vào lệnh — dẫn tới lệch TP2 đã plan (note gốc đã tự nêu rất kỹ, ở đây nhấn mạnh lại vì đây là lỗi thật duy nhất của lệnh, nằm ngoài 7 bước).
+- Thiếu thống nhất khung xác nhận (M5 vs M15 — note gốc tự flag mâu thuẫn giữa nhãn chart và mô tả lời).
+- Thiếu số đo trực tiếp cho SL — dùng số suy ngược từ RR platform là nguồn gốc của O1.
+
+### (c) Bài học tâm lý-hành vi
+- Nguy cơ đọc "TP1 hit + tổng thể vẫn dương" thành "lệnh này chứng minh CISD full-leg có edge" — trong khi phần đóng góp lớn nhất vào R thực tế (nếu tính đủ TP2) đã bị bỏ lại trên bàn do phản xạ chốt lời.
+- `followed_plan: Partial` + giải thích "confluence_score không phản ánh đúng chất lượng" là một dạng tự biện minh hợp lý về logic nhưng cần cảnh giác nếu lặp lại có hệ thống ở nhiều note khác (grade inflation qua lý do miễn trừ).
+
+### (d) Rule đề xuất cho Playbook
+- [ ] Không đưa CISD full-leg reclaim thành "tiêu chuẩn ưu tiên" chính thức cho tới khi có ≥10 mẫu so sánh với CISD yếu và với MSS wick-based trên cùng điều kiện.
+- [ ] Cấm dùng field "suy ngược từ X" để verify lại chính X trong bất kỳ báo cáo nào — luôn ghi rõ nguồn số liệu độc lập.
+- [ ] Viết rule quản lý runner cố định (breakeven sau TP1; đóng phần còn lại chỉ khi chạm TP2 hoặc có tín hiệu cấu trúc cụ thể được định nghĩa trước) — áp dụng cho mọi lệnh có TP nhiều tầng.
+- [ ] Gắn field `poi_tap_depth` (nông/sâu) chuẩn hóa toàn vault, đối chiếu với outcome qua ≥15 mẫu để xác định tap nông có thực sự là biến rủi ro hay không (thay vì chỉ note theo note).
+
+### (e) Điều KHÔNG nên học từ lệnh này (chống overfitting/outcome bias)
+- **Không nên** kết luận "CISD full-leg reclaim hoạt động đúng như kỳ vọng" là một quy luật đã kiểm chứng — đây vẫn là n=1, TP1 hit không tự động chứng minh công cụ xác nhận là chuẩn.
+- **Không nên** dùng r_planned=2.47 trong frontmatter để tính expectancy tổng mà không sửa lại theo số verify (2.373) — nếu không sửa, mọi thống kê dashboard dựa trên field này sẽ lệch nhẹ một cách có hệ thống.
+- **Không nên** coi việc giá "sau đó vẫn vượt TP2 5 ngày sau" là bằng chứng quyết định đóng runner sớm là sai — đây chính là hindsight note gốc đã tự cảnh báo đúng, giữ nguyên quan điểm đó.
+
+---
+
+### Liên kết bổ sung
+- So sánh rule drift: [[01 - Win - GBPUSD - 2014-07-14 - Long]] *(lưu ý: file vật lý tên "2026-07-17/01 - Win - GBPUSD - 2014-06-25 - Long.md" nhưng `trade_date` thật trong frontmatter là 2014-07-14 — xem callout đầu mục 9 và mục 10 của note kia)* — hai lệnh Long GBPUSD khác ngày, cùng biến thể entry-tại-CE, đối chiếu chuẩn OTE/Discount khác nhau giữa hai bản.
+- Đối chiếu tap nông: [[02 - Loss - GBPUSD - 2014-07-17 - Long]] (tap nông + MSS sớm → Loss) vs note này (tap nông + CISD full-leg → Win) — cùng biến "tap nông", hai outcome khác nhau, cần thêm mẫu để phân biệt.
+
+---
+
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- Khái niệm: [[25 - OB - Order Block|Order Block]] · [[13 - FVG  - Fair Value Gap|FVG]] · [[03 - Balanced Price Range|BPR]] · [[10 - Consequent Encroachment (Mean Threshold)|Consequent Encroachment]] · [[41 - Change in State of Delivery|CISD]] · [[21 - Market Structure Shift|MSS]] · [[20 - Liquidity Sweep|Liquidity Sweep]] · [[27 - Premium Discount|Premium Discount]] · [[12 - Dealing Range|Dealing Range]] · [[18 - Kill Zones|Kill Zones]]
+- Khái niệm: [[25-OB-Order-Block|Order Block]] · [[13-FVG-Fair-Value-Gap|FVG]] · [[03-Balanced-Price-Range|BPR]] · [[10-Consequent-Encroachment-Mean-Threshold|Consequent Encroachment]] · [[41-Change-in-State-of-Delivery|CISD]] · [[21-Market-Structure-Shift|MSS]] · [[20-Liquidity-Sweep|Liquidity Sweep]] · [[27-Premium-Discount|Premium Discount]] · [[12-Dealing-Range|Dealing Range]] · [[18-Kill-Zones|Kill Zones]]
 - Dashboard: [[_Backtest Dashboard]]
 - Template: [[Backtest template - POI & Step Decision (ICT 2022)]]
 - Mistake liên quan: *(chưa có — xem đề xuất ở mục 7.2 nếu pattern đóng runner sớm lặp lại)*

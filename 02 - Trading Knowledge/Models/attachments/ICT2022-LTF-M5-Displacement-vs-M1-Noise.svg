@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="560" rx="12" fill="#0d1117"/>
+<text x="480" y="32" font-size="17" font-weight="700" fill="#e5e7eb" text-anchor="middle">M5 Displacement hợp lệ vs M1 "MSS" giả (noise)</text>
+<text x="240" y="70" font-size="14" font-weight="700" fill="#4ade80" text-anchor="middle">M5 Displacement hợp lệ</text>
+<line x1="60" y1="275" x2="60" y2="305" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="54.5" y="280" width="11" height="20" fill="#ef4444"/>
+<line x1="80" y1="280" x2="80" y2="305" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="74.5" y="285" width="11" height="15" fill="#22c55e"/>
+<line x1="100" y1="280" x2="100" y2="315" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="94.5" y="285" width="11" height="25" fill="#ef4444"/>
+<line x1="120" y1="265" x2="120" y2="315" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="114.5" y="270" width="11" height="40" fill="#22c55e"/>
+<line x1="140" y1="274" x2="140" y2="216" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="133.5" y="220" width="13" height="50" fill="#22c55e"/>
+<line x1="162" y1="224" x2="162" y2="171" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="155.5" y="175" width="13" height="45" fill="#22c55e"/>
+<line x1="184" y1="179" x2="184" y2="136" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="177.5" y="140" width="13" height="35" fill="#22c55e"/>
+<rect x="162" y="175" width="60" height="45" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="166" y="168" font-size="11" font-weight="400" fill="#3b82f6" text-anchor="start">M5 FVG</text>
+<line x1="206" y1="136" x2="206" y2="164" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="200.0" y="140" width="12" height="20" fill="#ef4444"/>
+<line x1="226" y1="156" x2="226" y2="152" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="220.0" y="148" width="12" height="12" fill="#ef4444"/>
+<text x="60" y="320" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">Thân lớn, CLV cao, phá swing M5 + acceptance</text>
+<text x="60" y="336" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">→ để lại M5 FVG rõ, dùng làm POI thật</text>
+<text x="60" y="352" font-size="11.5" font-weight="400" fill="#38bdf8" text-anchor="start">M1 bên dưới chỉ dùng để REFINE entry trong FVG này</text>
+<rect x="60" y="380" width="380" height="90" rx="8" fill="#1e293b" stroke="#334155"/>
+<text x="70" y="398" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">M1 (refine only)</text>
+<line x1="80" y1="424" x2="80" y2="416" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="76.0" y="420" width="8" height="2" fill="#ef4444"/>
+<line x1="98" y1="430" x2="98" y2="410" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="94.0" y="414" width="8" height="12" fill="#22c55e"/>
+<line x1="116" y1="424" x2="116" y2="416" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="112.0" y="420" width="8" height="2" fill="#ef4444"/>
+<line x1="134" y1="430" x2="134" y2="410" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="130.0" y="414" width="8" height="12" fill="#22c55e"/>
+<line x1="152" y1="424" x2="152" y2="416" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="148.0" y="420" width="8" height="2" fill="#ef4444"/>
+<line x1="170" y1="430" x2="170" y2="410" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="166.0" y="414" width="8" height="12" fill="#22c55e"/>
+<text x="70" y="460" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">Entry M1 quanh CE của M5 FVG — không phải tín hiệu độc lập</text>
+<text x="720" y="70" font-size="14" font-weight="700" fill="#f87171" text-anchor="middle">M1 "MSS" giả (noise)</text>
+<line x1="540" y1="275" x2="540" y2="295" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="534.5" y="280" width="11" height="10" fill="#ef4444"/>
+<line x1="560" y1="270" x2="560" y2="295" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="554.5" y="275" width="11" height="15" fill="#22c55e"/>
+<line x1="580" y1="270" x2="580" y2="300" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="574.5" y="275" width="11" height="20" fill="#ef4444"/>
+<line x1="600" y1="260" x2="600" y2="300" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="594.5" y="265" width="11" height="30" fill="#22c55e"/>
+<text x="540" y="320" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">Trên M5: chỉ là dao động BÊN TRONG range M5</text>
+<text x="540" y="336" font-size="11.5" font-weight="400" fill="#f87171" text-anchor="start">Không phá cấu trúc M5, không có H1 draw phía sau</text>
+<rect x="540" y="380" width="380" height="90" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="550" y="398" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">M1 (nhìn giống MSS)</text>
+<line x1="560" y1="423" x2="560" y2="412" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="555.5" y="415" width="9" height="5" fill="#22c55e"/>
+<line x1="580" y1="418" x2="580" y2="392" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="575.5" y="395" width="9" height="20" fill="#22c55e"/>
+<line x1="600" y1="398" x2="600" y2="395" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="595.5" y="395" width="9" height="3" fill="#ef4444"/>
+<line x1="620" y1="401" x2="620" y2="367" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="615.5" y="370" width="9" height="28" fill="#22c55e"/>
+<circle cx="630" cy="380" r="10" fill="none" stroke="#f87171" stroke-width="2"/>
+<text x="550" y="462" font-size="10.5" font-weight="400" fill="#f87171" text-anchor="start">"MSS" M1 — chỉ là giật nhỏ, zoom M5 thấy vô nghĩa</text>
+<text x="480" y="500" font-size="12.5" font-weight="400" fill="#94a3b8" text-anchor="middle">Động cơ mô hình = M5 displacement; M1 chỉ refine, không bao giờ là động cơ độc lập</text>
+<text x="480" y="535" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="middle">Sơ đồ khái niệm minh họa, không phải chart giá thật.</text>
+</svg>

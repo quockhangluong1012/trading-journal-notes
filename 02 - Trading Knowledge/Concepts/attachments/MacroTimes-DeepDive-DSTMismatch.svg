@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">Tuan lech DST: My da doi gio, UK/EU chua doi</text>
+
+  <line x1="480" y1="70" x2="480" y2="470" stroke="#1e222d" stroke-width="2"/>
+
+  <text x="30" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d1d4dc">Truoc doi DST (ca hai cung gio dong)</text>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="30" y1="140" x2="450" y2="140"/>
+    <line x1="30" y1="200" x2="450" y2="200"/>
+    <line x1="30" y1="260" x2="450" y2="260"/>
+  </g>
+  <rect x="60" y="150" width="60" height="30" fill="rgba(41,98,255,0.25)"/>
+  <text x="60" y="145" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">London 07:00 GMT</text>
+  <path d="M 140 165 L 300 165" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="150" y="158" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Chenh lech: 5 gio</text>
+  <rect x="320" y="150" width="60" height="30" fill="rgba(38,166,154,0.25)"/>
+  <text x="300" y="145" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">New York 02:00 ET</text>
+  <text x="30" y="300" font-family="Arial, sans-serif" font-size="13" fill="#26a69a">Ca hai gio dong -&gt; offset on dinh 5 gio</text>
+
+  <text x="510" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d1d4dc">Tuan lech (My da doi gio he, UK/EU chua)</text>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="510" y1="140" x2="930" y2="140"/>
+    <line x1="510" y1="200" x2="930" y2="200"/>
+    <line x1="510" y1="260" x2="930" y2="260"/>
+  </g>
+  <rect x="540" y="150" width="60" height="30" fill="rgba(41,98,255,0.25)"/>
+  <text x="540" y="145" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">London 07:00 GMT (chua doi)</text>
+  <path d="M 620 165 L 760 165" stroke="#ef5350" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="630" y="158" font-family="Arial, sans-serif" font-size="12" fill="#ef5350">Chenh lech tam thoi: 4 gio</text>
+  <rect x="780" y="150" width="60" height="30" fill="rgba(38,166,154,0.25)"/>
+  <text x="770" y="145" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">New York 03:00 ET (da doi)</text>
+  <text x="510" y="300" font-family="Arial, sans-serif" font-size="13" fill="#ef5350">Macro 04:03 ET khong con trung voi gio London quen thuoc</text>
+
+  <!-- warning box -->
+  <rect x="30" y="380" width="900" height="110" fill="none" stroke="#f2c94c" stroke-width="1"/>
+  <text x="45" y="405" font-family="Arial, sans-serif" font-size="14" fill="#f2c94c" font-weight="bold">Canh bao: 1-3 tuan moi nam (thang 3 va thang 10-11)</text>
+  <text x="45" y="430" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">My doi DST vao Chu nhat thu 2 thang 3 / dau thang 11.</text>
+  <text x="45" y="452" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">UK/EU doi DST vao Chu nhat cuoi thang 3 / cuoi thang 10.</text>
+  <text x="45" y="474" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Luon xac minh gio ET bang dong ho phu doc lap trong cac tuan nay.</text>
+</svg>

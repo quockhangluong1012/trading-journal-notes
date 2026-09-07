@@ -26,9 +26,9 @@ tags: [daily-summary, prop-firm-prep]
 
 Theo checklist "🌅 Buổi sáng — Học & Ôn khái niệm" trong `2026-07-03 tasks.md`, có 3 mục:
 
-- [x] **[[09 - Change of Character]]** — đánh dấu đã ôn trong task list, nhưng frontmatter của note này (`last_reviewed: 2026-07-02`, `updated: 2026-07-02`) KHÔNG được cập nhật thành hôm nay → không có bằng chứng thực tế rằng note đã được sửa/ghi thêm hôm nay. Đếm là "chưa xác nhận được", không tính vào concepts_reviewed.
-- [x] **[[33 - Turtle Soup]]** — checkbox đã tick, và frontmatter xác nhận `updated: 2026-07-03` (khớp hôm nay). Đây là concept `status: seed`, entry model quét thanh khoản giả breakout, liên quan tới [[20 - Liquidity Sweep]] và [[21 - Market Structure Shift]]. Ghi nhận đây là 1 concept có tiến triển thực sự hôm nay (dù `last_reviewed` vẫn để trống và `status` vẫn giữ `seed`, chưa nâng lên `developing`).
-- [ ] **[[22 - Mitigation Block]]** — không được tick, frontmatter vẫn `last_reviewed: 2026-07-02` — không học hôm nay.
+- [x] **[[09-Change-of-Character]]** — đánh dấu đã ôn trong task list, nhưng frontmatter của note này (`last_reviewed: 2026-07-02`, `updated: 2026-07-02`) KHÔNG được cập nhật thành hôm nay → không có bằng chứng thực tế rằng note đã được sửa/ghi thêm hôm nay. Đếm là "chưa xác nhận được", không tính vào concepts_reviewed.
+- [x] **[[33-Turtle-Soup]]** — checkbox đã tick, và frontmatter xác nhận `updated: 2026-07-03` (khớp hôm nay). Đây là concept `status: seed`, entry model quét thanh khoản giả breakout, liên quan tới [[20-Liquidity-Sweep]] và [[21-Market-Structure-Shift]]. Ghi nhận đây là 1 concept có tiến triển thực sự hôm nay (dù `last_reviewed` vẫn để trống và `status` vẫn giữ `seed`, chưa nâng lên `developing`).
+- [ ] **[[22-Mitigation-Block]]** — không được tick, frontmatter vẫn `last_reviewed: 2026-07-02` — không học hôm nay.
 
 **Tổng kết:** 1/3 mục học buổi sáng có bằng chứng thực tế hoàn thành (Turtle Soup); 1/3 được tick nhưng không có bằng chứng trong note (Change of Character — cần tự kiểm tra lại xem có thực sự ôn không, hay tick nhầm); 1/3 chưa làm (Mitigation Block).
 
@@ -48,7 +48,7 @@ Net R hôm nay: **0** (không có lệnh nào được thực hiện).
 
 **Không có mistake nào được kích hoạt hôm nay** (do không có lệnh live nào để phạm lỗi).
 
-Ghi chú dữ liệu: 3 note lỗi đứng đầu tần suất theo [[02 - Mistake Frequency Dashboard]] — [[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]], [[07 - Mistake - Risk more than 0.5% total account]] — hiện đều là **file rỗng** (không có frontmatter, không có nội dung mô tả), nên không thể "diễn giải lại định nghĩa lỗi" như quy trình yêu cầu. Đây là một khoảng trống dữ liệu cần vá (viết mô tả lỗi + biện pháp đối phó vào 3 note này), độc lập với việc hôm nay không phạm lỗi nào.
+Ghi chú dữ liệu: 3 note lỗi đứng đầu tần suất theo [[02 - Mistake Frequency Dashboard]] — [[06-Mistake-Not-Have-Market-Structure-Shift]], [[09-Mistake-Wrong-daily-bias]], [[07-Mistake-Risk-more-than-0.5-total-account]] — hiện đều là **file rỗng** (không có frontmatter, không có nội dung mô tả), nên không thể "diễn giải lại định nghĩa lỗi" như quy trình yêu cầu. Đây là một khoảng trống dữ liệu cần vá (viết mô tả lỗi + biện pháp đối phó vào 3 note này), độc lập với việc hôm nay không phạm lỗi nào.
 
 ## 🎯 Đối chiếu mục tiêu
 
@@ -76,9 +76,9 @@ Ghi chú dữ liệu: 3 note lỗi đứng đầu tần suất theo [[02 - Mista
 
 1. **Phá thế đứt nhịp backtest ngay ngày mai** — log tối thiểu 1–3 backtest mới trong `04 - Backtesting/2026-07-04/` trước khi chạm ngưỡng cảnh báo cứng 3 ngày không backtest.
 2. **Đối chiếu lại baseline backtest sai lệch:** tìm hiểu vì sao goal [[Build a statistically validated backtest sample]] ghi baseline "~15 backtest" trong khi `04 - Backtesting` chỉ có 1 note thực — sửa baseline cho khớp thực tế hoặc xác nhận có backtest bị thất lạc/di chuyển.
-3. **Xác minh lại checkbox "[[09 - Change of Character]]" đã tick hôm nay** — frontmatter note không phản ánh việc ôn tập; nếu thực sự đã ôn, cập nhật `last_reviewed`/`updated` trong note; nếu tick nhầm, bỏ tick.
-4. **Hoàn thành [[22 - Mitigation Block]]** — mục còn lại chưa làm từ checklist buổi sáng hôm nay.
-5. **Viết nội dung cho 3 note lỗi rỗng** ([[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]], [[07 - Mistake - Risk more than 0.5% total account]]) — hiện không có định nghĩa/biện pháp đối phó nào được ghi, chặn mục tiêu [[Cut my top 3 repeated mistakes]].
+3. **Xác minh lại checkbox "[[09-Change-of-Character]]" đã tick hôm nay** — frontmatter note không phản ánh việc ôn tập; nếu thực sự đã ôn, cập nhật `last_reviewed`/`updated` trong note; nếu tick nhầm, bỏ tick.
+4. **Hoàn thành [[22-Mitigation-Block]]** — mục còn lại chưa làm từ checklist buổi sáng hôm nay.
+5. **Viết nội dung cho 3 note lỗi rỗng** ([[06-Mistake-Not-Have-Market-Structure-Shift]], [[09-Mistake-Wrong-daily-bias]], [[07-Mistake-Risk-more-than-0.5-total-account]]) — hiện không có định nghĩa/biện pháp đối phó nào được ghi, chặn mục tiêu [[Cut my top 3 repeated mistakes]].
 6. **Rà lại nhãn `phase:` của 2 goal FTMO/The5ers** — đang ghi "Phase 4 - Challenge" dù thực tế còn ở Giai đoạn 0 (Chuẩn bị), gây hiểu lầm khi lọc theo phase trong [[01 - Roadmap]].
 7. Cân nhắc quyết định: nếu 15 ngày không lệnh live vẫn tiếp tục, xác nhận rõ đây là lựa chọn có chủ đích (ưu tiên backtest/journaling) chứ không phải trì hoãn — ghi 1 dòng xác nhận vào task list ngày mai.
 

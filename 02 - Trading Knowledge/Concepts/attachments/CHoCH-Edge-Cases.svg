@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="720" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0" textLength="1154" lengthAdjust="spacingAndGlyphs">Edge Case: CHoCH giả trong tuần funding-rate ETH — wick do liquidation, không phải đảo trend</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">ETHUSD H1, 00:00 UTC funding settlement — wick dài xuyên swing low nhưng không phải character đổi thật</text>
+
+<line x1="40" y1="640" x2="1160" y2="640" stroke="#1c2333"/>
+<text x="1080" y="150" font-size="13" fill="#94a3b8">3,420</text>
+<text x="1080" y="480" font-size="13" fill="#94a3b8">3,280</text>
+
+<!-- uptrend into HL -->
+<rect x="90" y="380" width="16" height="45" fill="#22c55e"/><line x1="98" y1="365" x2="98" y2="440" stroke="#22c55e" stroke-width="2"/>
+<rect x="115" y="350" width="16" height="50" fill="#22c55e"/><line x1="123" y1="335" x2="123" y2="415" stroke="#22c55e" stroke-width="2"/>
+<rect x="145" y="390" width="16" height="30" fill="#ef4444"/><line x1="153" y1="375" x2="153" y2="435" stroke="#ef4444" stroke-width="2"/>
+<line x1="70" y1="415" x2="500" y2="415" stroke="#eab308" stroke-dasharray="6,4"/>
+<text x="505" y="419" font-size="12" fill="#eab308">higher-low 3,340 (được bảo vệ 3 lần trước)</text>
+
+<!-- funding candle: huge wick down then close back up -->
+<text x="170" y="230" font-size="13" fill="#f97316" font-weight="bold">00:00 UTC — funding settlement</text>
+<rect x="180" y="230" width="260" height="220" fill="#f97316" opacity="0.06" stroke="#f97316" stroke-dasharray="4,3"/>
+<rect x="220" y="420" width="18" height="22" fill="#22c55e"/>
+<line x1="229" y1="260" x2="229" y2="560" stroke="#22c55e" stroke-width="3"/>
+<rect x="260" y="470" width="200" height="60" fill="#1e293b" stroke="#ef4444" rx="4"/>
+<text x="270" y="492" font-size="12" fill="#ef4444" font-weight="bold">Wick xuống chạm 3,298</text>
+<text x="270" y="512" font-size="12" fill="#ef4444">Body đóng lại 3,344 (TRÊN HL)</text>
+
+<!-- recovery -->
+<rect x="260" y="380" width="16" height="35" fill="#22c55e"/><line x1="268" y1="365" x2="268" y2="425" stroke="#22c55e" stroke-width="2"/>
+<rect x="290" y="340" width="16" height="45" fill="#22c55e"/><line x1="298" y1="325" x2="298" y2="395" stroke="#22c55e" stroke-width="2"/>
+<rect x="320" y="300" width="16" height="50" fill="#22c55e"/><line x1="328" y1="285" x2="328" y2="360" stroke="#22c55e" stroke-width="2"/>
+<text x="260" y="280" font-size="13" fill="#22c55e" font-weight="bold">Giá hồi phục ngay sau funding — HL vẫn giữ (thân nến)</text>
+
+<!-- annotation right -->
+<rect x="560" y="140" width="580" height="260" fill="#1e293b" stroke="#334155" rx="6"/>
+<text x="580" y="165" font-size="15" fill="#e2e8f0" font-weight="bold">Vì sao wick funding dễ bị đọc nhầm là CHoCH</text>
+<text x="580" y="190" font-size="13" fill="#94a3b8">1. Funding settlement (00:00/08:00/16:00 UTC) kích hoạt</text>
+<text x="580" y="210" font-size="13" fill="#94a3b8">   liquidation cascade các vị thế long đòn bẩy cao —</text>
+<text x="580" y="230" font-size="13" fill="#94a3b8">   wick xuyên swing low chỉ trong vài giây, không phải</text>
+<text x="580" y="250" font-size="13" fill="#94a3b8">   dòng lệnh smart money đảo hướng thật.</text>
+<text x="580" y="275" font-size="13" fill="#94a3b8">2. Nếu chỉ nhìn "giá đã xuyên dưới HL" trên wick, dễ kết</text>
+<text x="580" y="295" font-size="13" fill="#94a3b8">   luận nhầm CHoCH bearish và Short đúng đáy funding.</text>
+<text x="580" y="320" font-size="13" fill="#94a3b8">3. CHoCH thật đòi hỏi BODY CLOSE dưới HL — ở đây body</text>
+<text x="580" y="340" font-size="13" fill="#94a3b8">   đóng lại TRÊN HL, quy tắc cơ bản đã tự lọc được nếu</text>
+<text x="580" y="360" font-size="13" fill="#94a3b8">   áp dụng nghiêm ngặt.</text>
+<text x="580" y="385" font-size="14" fill="#22c55e" font-weight="bold">Cách xử lý: luôn kiểm tra giờ funding trước khi tin CHoCH</text>
+
+<rect x="560" y="420" width="580" height="170" fill="#1e293b" stroke="#334155" rx="6"/>
+<text x="580" y="445" font-size="14" fill="#a78bfa" font-weight="bold">Cách nhận diện sớm</text>
+<text x="580" y="470" font-size="13" fill="#e2e8f0">Wick dài bất thường (&gt;2.5x ATR) xảy ra đúng phút 00:00/</text>
+<text x="580" y="490" font-size="13" fill="#e2e8f0">08:00/16:00 UTC trên coin có funding cao (&gt;0.05%/8h)</text>
+<text x="580" y="510" font-size="13" fill="#e2e8f0">gần như luôn là liquidation, không phải order flow đảo</text>
+<text x="580" y="530" font-size="13" fill="#e2e8f0">hướng thật — cho dù wick có xuyên sâu qua swing.</text>
+<text x="580" y="555" font-size="13" fill="#eab308" font-weight="bold">→ Bỏ qua wick funding, chỉ tính body close làm chuẩn.</text>
+</svg>

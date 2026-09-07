@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1280" height="760" rx="14" fill="#131722" stroke="#2a2e39"/>
+<text x="40" y="46" font-size="26" font-weight="bold" fill="#d1d4dc">GBPUSD Short London 19/01/2024 — CBDR sạch + directional hit-rate, +2.4R</text>
+<text x="40" y="70" font-size="15" fill="#787b86">Tái dựng minh họa từ mẫu backtest — ăn nhờ biết GBPUSD có -SD dễ chạm hơn +SD trong giai đoạn đó</text>
+
+<!-- time axis -->
+<rect x="60" y="95" width="1160" height="24" fill="#131722"/>
+<text x="70" y="112" font-size="12" fill="#ff9800">14:00-20:00 NY: đo CBDR</text>
+<text x="380" y="112" font-size="12" fill="#ff9800">20:00-02:00: Á, quét nhẹ +1 SD (manip)</text>
+<text x="700" y="112" font-size="12" fill="#ff9800">02:00 London: MSS bearish + entry</text>
+<text x="980" y="112" font-size="12" fill="#ff9800">05:30: chạm -2 SD (TP2)</text>
+
+<!-- CBDR box -->
+<rect x="60" y="330" width="330" height="30" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+<text x="70" y="323" font-size="13" fill="#4a90d9">CBDR: 1.27180-1.27140 (40 pip, sạch)</text>
+
+<g>
+<line x1="100" y1="330" x2="100" y2="390" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="90" y="345" width="20" height="30" fill="#26a69a" rx="1"/>
+</g>
+<g>
+<line x1="140" y1="335" x2="140" y2="385" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="130" y="345" width="20" height="28" fill="#ef5350" rx="1"/>
+</g>
+<g>
+<line x1="180" y1="332" x2="180" y2="388" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="170" y="345" width="20" height="30" fill="#26a69a" rx="1"/>
+</g>
+
+<!-- SD lines -->
+<line x1="60" y1="270" x2="1220" y2="270" stroke="#f2c94c" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="1080" y="263" font-size="12" fill="#f2c94c">+1 SD = 1.27220</text>
+<line x1="60" y1="470" x2="1220" y2="470" stroke="#f2c94c" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="1080" y="488" font-size="12" fill="#f2c94c">-1 SD = 1.27100</text>
+<line x1="60" y1="600" x2="1220" y2="600" stroke="#f2c94c" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="1080" y="618" font-size="12" fill="#f2c94c">-2 SD = 1.27060</text>
+
+<!-- Asian manipulation sweeping +1 SD -->
+<g>
+<line x1="450" y1="270" x2="450" y2="340" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="440" y="290" width="20" height="40" fill="#26a69a" rx="1"/>
+</g>
+<circle cx="450" cy="268" r="4" fill="#b48ead"/>
+<text x="410" y="250" font-size="12" fill="#b48ead">Sweep nhẹ +1 SD (manipulation, bias bearish)</text>
+
+<!-- displacement down MSS -->
+<g>
+<line x1="560" y1="290" x2="560" y2="420" stroke="#ef5350" stroke-width="1.8"/>
+<rect x="548" y="310" width="24" height="100" fill="#ef5350" rx="1"/>
+</g>
+<g>
+<line x1="600" y1="380" x2="600" y2="460" stroke="#ef5350" stroke-width="1.8"/>
+<rect x="588" y="395" width="24" height="55" fill="#ef5350" rx="1"/>
+</g>
+<circle cx="600" cy="400" r="6" fill="#f2c94c"/>
+<path d="M 600 400 L 650 350" stroke="#787b86" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+<text x="620" y="340" font-size="13" fill="#f2c94c">Entry Short 1.27150 (sau MSS + FVG)</text>
+
+<!-- stop -->
+<line x1="60" y1="310" x2="1220" y2="310" stroke="#ff6b6b" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="70" y="300" font-size="12" fill="#ff6b6b">Stop 1.27235 (trên +1 SD + buffer)</text>
+
+<!-- continuation to -1 SD then -2 SD -->
+<g>
+<line x1="700" y1="420" x2="700" y2="480" stroke="#ef5350" stroke-width="1.8"/>
+<rect x="688" y="435" width="24" height="45" fill="#ef5350" rx="1"/>
+</g>
+<circle cx="700" cy="475" r="5" fill="#d1d4dc"/>
+<text x="710" y="465" font-size="12" fill="#d1d4dc">Chạm -1 SD (TP1 chốt 50%)</text>
+
+<g>
+<line x1="850" y1="470" x2="850" y2="560" stroke="#ef5350" stroke-width="1.8"/>
+<rect x="838" y="490" width="24" height="70" fill="#ef5350" rx="1"/>
+</g>
+<g>
+<line x1="900" y1="540" x2="900" y2="610" stroke="#ef5350" stroke-width="1.8"/>
+<rect x="888" y="555" width="24" height="55" fill="#ef5350" rx="1"/>
+</g>
+<circle cx="900" cy="605" r="6" fill="#f2c94c"/>
+<text x="910" y="595" font-size="13" fill="#f2c94c">Chạm -2 SD (TP2 chốt hết) 1.27060</text>
+
+<line x1="60" y1="660" x2="1220" y2="660" stroke="#2a2e39"/>
+<text x="60" y="688" font-size="14" fill="#d1d4dc">Bài học: CBDR sạch (40pip) + GBPUSD trong giai đoạn này có -SD dễ chạm hơn +SD (xem EC directional hit-rate) → tự tin để TP2 xa hơn mặc định.</text>
+<text x="60" y="712" font-size="14" fill="#d1d4dc">Nếu áp dụng kỳ vọng đối xứng mặc định (chỉ TP1 tại -1 SD rồi chốt hết), lệnh sẽ bỏ lỡ phần lớn phần lãi từ -1 xuống -2 SD.</text>
+<text x="60" y="736" font-size="13" fill="#787b86">Nguồn: tái dựng minh họa từ mẫu backtest GBPUSD London kill zone, kết hợp CBDR target + directional hit-rate rolling.</text>
+</svg>

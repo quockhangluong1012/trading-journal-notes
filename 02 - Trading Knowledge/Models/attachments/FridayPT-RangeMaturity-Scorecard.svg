@@ -1,40 +1,32 @@
-<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
-  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Scorecard: Range tuan da chin hay chua?</text>
-  <text x="24" y="54" font-size="13" fill="#6B7280">4 tieu chi khach quan hoa thay vi doan cam tinh. So do khai niem minh hoa khung danh gia.</text>
-  <rect x="40" y="90" width="500" height="40" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <rect x="52" y="100" width="20" height="20" rx="4" fill="#16A34A"/>
-  <text x="58" y="116" font-size="13" font-weight="700" fill="#FFFFFF">✓</text>
-  <text x="86" y="116" font-size="11.5" fill="#374151">1. % Average Weekly Range da di (>=70-80%)</text>
-  <rect x="560" y="102" width="140" height="16" rx="4" fill="#E5E7EB"/>
-  <rect x="560" y="102" width="119" height="16" rx="4" fill="#16A34A"/>
-  <text x="705" y="115" font-size="10" fill="#374151">vi du</text>
-  <rect x="40" y="140" width="500" height="40" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <rect x="52" y="150" width="20" height="20" rx="4" fill="#16A34A"/>
-  <text x="58" y="166" font-size="13" font-weight="700" fill="#FFFFFF">✓</text>
-  <text x="86" y="166" font-size="11.5" fill="#374151">2. Dinh/day tuan lap ro rang Tue-Thu (co MSS that)</text>
-  <rect x="560" y="152" width="140" height="16" rx="4" fill="#E5E7EB"/>
-  <rect x="560" y="152" width="107" height="16" rx="4" fill="#16A34A"/>
-  <text x="705" y="165" font-size="10" fill="#374151">vi du</text>
-  <rect x="40" y="190" width="500" height="40" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <rect x="52" y="200" width="20" height="20" rx="4" fill="#16A34A"/>
-  <text x="58" y="216" font-size="13" font-weight="700" fill="#FFFFFF">✓</text>
-  <text x="86" y="216" font-size="11.5" fill="#374151">3. Da sweep pool thanh khoan chinh cua tuan</text>
-  <rect x="560" y="202" width="140" height="16" rx="4" fill="#E5E7EB"/>
-  <rect x="560" y="202" width="96" height="16" rx="4" fill="#16A34A"/>
-  <text x="705" y="215" font-size="10" fill="#374151">vi du</text>
-  <rect x="40" y="240" width="500" height="40" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
-  <rect x="52" y="250" width="20" height="20" rx="4" fill="#DC2626"/>
-  <text x="58" y="266" font-size="13" font-weight="700" fill="#FFFFFF">✗</text>
-  <text x="86" y="266" font-size="11.5" fill="#374151">4. Khong co tin lon / ngay lich dac biet thu Sau</text>
-  <rect x="560" y="252" width="140" height="16" rx="4" fill="#E5E7EB"/>
-  <rect x="560" y="252" width="85" height="16" rx="4" fill="#DC2626"/>
-  <text x="705" y="265" font-size="10" fill="#374151">vi du</text>
-  <text x="40" y="310" font-size="12" font-weight="700" fill="#374151">Ket luan tong hop:</text>
-  <rect x="40" y="320" width="220" height="26" rx="6" fill="#DC2626" opacity="0.85"/>
-  <text x="60" y="338" font-size="11" font-weight="700" fill="#FFFFFF">Chua chin (0-1/4)</text>
-  <rect x="270" y="320" width="220" height="26" rx="6" fill="#F59E0B" opacity="0.9"/>
-  <text x="300" y="338" font-size="11" font-weight="700" fill="#FFFFFF">Chua chac (2-3/4)</text>
-  <rect x="500" y="320" width="220" height="26" rx="6" fill="#16A34A"/>
-  <text x="545" y="338" font-size="11" font-weight="700" fill="#FFFFFF">Da chin (4/4)</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Range Maturity Scorecard — 4 tiêu chí</text>
+<!-- 4 rows -->
+<rect x="32" y="66" width="896" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="52" y="90" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="start">1. % Average Weekly Range đã đi (tới hết Thứ Năm)</text>
+<rect x="52" y="100" width="300" height="12" rx="4" fill="#1f2937"/>
+<rect x="52" y="100" width="240" height="12" rx="4" fill="#4ade80"/>
+<text x="700" y="100" font-size="13" fill="#4ade80" text-anchor="start">Yes — ≥70-80% AWR</text>
+<rect x="32" y="136" width="896" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="52" y="160" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="start">2. Đỉnh/đáy tuần lập Tue-Thu (có MSS + displacement)</text>
+<text x="52" y="180" font-size="12" fill="#94a3b8" text-anchor="start">Đồng hồ: lập trước hết Thu</text>
+<text x="700" y="170" font-size="13" fill="#4ade80" text-anchor="start">Yes</text>
+<rect x="32" y="206" width="896" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="52" y="230" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="start">3. Đã sweep pool thanh khoản chính của tuần</text>
+<text x="700" y="240" font-size="13" fill="#4ade80" text-anchor="start">Yes</text>
+<rect x="32" y="276" width="896" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="52" y="300" font-size="14" font-weight="700" fill="#e5e7eb" text-anchor="start">4. Không NFP/CPI/FOMC/month-end/quarter-end/đáo hạn</text>
+<text x="700" y="310" font-size="13" fill="#4ade80" text-anchor="start">Yes</text>
+<!-- Gauge -->
+<text x="480" y="370" font-size="16" font-weight="700" fill="#e5e7eb" text-anchor="middle">Đồng hồ đo tổng hợp</text>
+<path d="M 280 470 A 200 200 0 0 1 373 320" stroke="#f87171" stroke-width="24" fill="none"/>
+<path d="M 373 320 A 200 200 0 0 1 587 320" stroke="#eab308" stroke-width="24" fill="none"/>
+<path d="M 587 320 A 200 200 0 0 1 680 470" stroke="#4ade80" stroke-width="24" fill="none"/>
+<text x="330" y="500" font-size="12" fill="#f87171" text-anchor="middle">0-1/4</text>
+<text x="480" y="500" font-size="12" fill="#eab308" text-anchor="middle">2-3/4</text>
+<text x="630" y="500" font-size="12" fill="#4ade80" text-anchor="middle">4/4</text>
+<line x1="480" y1="470" x2="620" y2="360" stroke="#e5e7eb" stroke-width="3"/>
+<circle cx="480" cy="470" r="8" fill="#e5e7eb"/>
+<text x="480" y="540" font-size="14" font-weight="700" fill="#4ade80" text-anchor="middle">Kim chỉ về vùng xanh: Range đã chín — áp dụng reversion</text>
+<text x="32" y="576" font-size="12" fill="#94a3b8" text-anchor="start">Sơ đồ khái niệm khung đánh giá, không phải chart giá thật.</text>
 </svg>

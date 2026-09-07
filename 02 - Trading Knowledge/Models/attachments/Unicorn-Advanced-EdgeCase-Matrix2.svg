@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 760" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="760" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Ma trận Edge Cases bổ sung — Unicorn (⑦-⑫)</text>
+<rect x="40" y="90" width="440" height="190" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="260.0" y="185.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="60" y="124" font-size="14.5" font-weight="700" fill="#f87171" text-anchor="start">⑦ Breaker bị body-close xuyên qua</text>
+<text x="60" y="162" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Vẫn chạy đúng hướng ban đầu sau đó</text>
+<rect x="510" y="90" width="440" height="190" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+<text x="730.0" y="185.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="530" y="124" font-size="14.5" font-weight="700" fill="#eab308" text-anchor="start">⑧ Killzone vs ngoài killzone</text>
+<text x="530" y="162" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Cùng hình dạng, khác chất lượng</text>
+<rect x="40" y="300" width="440" height="190" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="260.0" y="395.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="60" y="334" font-size="14.5" font-weight="700" fill="#f87171" text-anchor="start">⑨ Unicorn nghịch HTF bias</text>
+<text x="60" y="372" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Hình học đẹp không bù được hướng lớn</text>
+<rect x="510" y="300" width="440" height="190" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+<text x="730.0" y="395.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="530" y="334" font-size="14.5" font-weight="700" fill="#eab308" text-anchor="start">⑩ Overlap 1-2 pip trên M1</text>
+<text x="530" y="372" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Hợp lệ định nghĩa nhưng vô nghĩa kinh tế</text>
+<rect x="40" y="510" width="440" height="190" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+<text x="260.0" y="605.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="60" y="544" font-size="14.5" font-weight="700" fill="#eab308" text-anchor="start">⑪ Double purge quanh overlap</text>
+<text x="60" y="582" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Quét 2 lần trước khi đảo thật</text>
+<rect x="510" y="510" width="440" height="190" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="730.0" y="605.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="530" y="544" font-size="14.5" font-weight="700" fill="#f87171" text-anchor="start">⑫ Tuần thanh khoản mỏng</text>
+<text x="530" y="582" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Overlap dày đặc nhưng đa số là nhiễu</text>
+<text x="32" y="730" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Sáu ca này đến từ kinh nghiệm live/backtest sâu hơn, bổ sung cho 6 ca cơ bản ①-⑥.</text>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+
+  <text x="480" y="34" text-anchor="middle" fill="#d1d4dc" font-size="22" font-weight="bold">Co che Order-flow: Turtle Soup tai muc hien nhien</text>
+
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="40" y1="90" x2="920" y2="90"/>
+    <line x1="40" y1="180" x2="920" y2="180"/>
+    <line x1="40" y1="270" x2="920" y2="270"/>
+    <line x1="40" y1="360" x2="920" y2="360"/>
+    <line x1="40" y1="450" x2="920" y2="450"/>
+  </g>
+
+  <!-- Level line: old low / SSL -->
+  <line x1="60" y1="300" x2="900" y2="300" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="65" y="292" fill="#f2c94c" font-size="13">Old Low / Equal Lows (SSL)</text>
+
+  <!-- Cluster of stop orders above the level (visualized as small marks) -->
+  <g fill="#ef5350">
+    <circle cx="380" cy="292" r="3"/>
+    <circle cx="400" cy="290" r="3"/>
+    <circle cx="420" cy="293" r="3"/>
+    <circle cx="440" cy="291" r="3"/>
+    <circle cx="460" cy="294" r="3"/>
+  </g>
+  <text x="380" y="278" fill="#ef5350" font-size="11">cum stop long + sell-stop breakout</text>
+
+  <!-- candles approaching from left (bearish leg down to level) -->
+  <g>
+    <rect x="80" y="180" width="14" height="50" fill="#ef5350"/>
+    <rect x="100" y="200" width="14" height="60" fill="#ef5350"/>
+    <rect x="120" y="220" width="14" height="55" fill="#ef5350"/>
+    <rect x="140" y="230" width="14" height="50" fill="#ef5350"/>
+    <rect x="160" y="240" width="14" height="45" fill="#ef5350"/>
+  </g>
+
+  <!-- sweep candle: wick below level -->
+  <rect x="200" y="250" width="16" height="40" fill="#ef5350"/>
+  <line x1="208" y1="245" x2="208" y2="330" stroke="#ef5350" stroke-width="2"/>
+  <text x="185" y="345" fill="#d1d4dc" font-size="11">Sweep (wick qua muc)</text>
+
+  <!-- reclaim + displacement up -->
+  <rect x="240" y="220" width="16" height="45" fill="#26a69a"/>
+  <rect x="266" y="150" width="16" height="70" fill="#26a69a"/>
+  <line x1="274" y1="140" x2="274" y2="225" stroke="#26a69a" stroke-width="2"/>
+  <rect x="292" y="110" width="16" height="45" fill="#26a69a"/>
+
+  <!-- FVG zone -->
+  <rect x="260" y="150" width="55" height="70" fill="rgba(41,98,255,0.25)" stroke="#2962ff" stroke-width="1"/>
+  <text x="262" y="145" fill="#5b8dff" font-size="11">FVG</text>
+
+  <!-- MSS marker -->
+  <line x1="300" y1="180" x2="360" y2="180" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="320" y="172" fill="#ffffff" font-size="11">MSS bullish</text>
+
+  <!-- continuation up -->
+  <rect x="330" y="90" width="16" height="45" fill="#26a69a"/>
+  <rect x="356" y="70" width="16" height="40" fill="#26a69a"/>
+
+  <!-- annotation arrow describing mechanism -->
+  <path d="M 208 300 Q 250 340 400 300" stroke="#ffffff" stroke-width="1.5" fill="none" marker-end="url(#arrowh)"/>
+  <text x="420" y="400" fill="#d1d4dc" font-size="13">1. Gia day xuyen muc de kich hoat cum stop/breakout</text>
+  <text x="420" y="420" fill="#d1d4dc" font-size="13">2. Cum lenh do la thanh khoan hap thu cho lenh lon nguoc huong</text>
+  <text x="420" y="440" fill="#d1d4dc" font-size="13">3. Nhien lieu day gia can kiet -&gt; dong lenh chu dich tiep quan</text>
+  <text x="420" y="460" fill="#d1d4dc" font-size="13">4. Reclaim + displacement + MSS xac nhan dao chieu</text>
+
+  <!-- Legend -->
+  <g transform="translate(40,500)">
+    <rect x="0" y="0" width="14" height="14" fill="#26a69a"/>
+    <text x="20" y="12" fill="#d1d4dc" font-size="12">Nen tang</text>
+    <rect x="110" y="0" width="14" height="14" fill="#ef5350"/>
+    <text x="130" y="12" fill="#d1d4dc" font-size="12">Nen giam</text>
+    <rect x="220" y="0" width="14" height="14" fill="rgba(41,98,255,0.25)" stroke="#2962ff"/>
+    <text x="240" y="12" fill="#d1d4dc" font-size="12">FVG</text>
+    <line x1="320" y1="7" x2="350" y2="7" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <text x="356" y="12" fill="#d1d4dc" font-size="12">Muc thanh khoan</text>
+    <line x1="500" y1="7" x2="530" y2="7" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="536" y="12" fill="#d1d4dc" font-size="12">MSS</text>
+  </g>
+
+  <defs>
+    <marker id="arrowh" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#ffffff"/>
+    </marker>
+  </defs>
+</svg>

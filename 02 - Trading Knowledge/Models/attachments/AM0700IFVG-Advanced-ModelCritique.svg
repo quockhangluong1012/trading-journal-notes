@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="640" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="start">Phản biện đặc thù model 07:00 IFVG — 4 điểm cần lưu ý</text>
+<defs><marker id="arrMC" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f87171"/></marker></defs>
+<rect x="32.0" y="70" width="209.0" height="250" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="136.5" y="153.16666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">07:00 NY là</text>
+<text x="136.5" y="166.16666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">QUY ƯỚC</text>
+<text x="136.5" y="179.16666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="136.5" y="192.16666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">Forex: overlap sâu</text>
+<text x="136.5" y="205.16666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">Index futures:</text>
+<text x="136.5" y="218.16666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">pre-market mỏng</text>
+<text x="136.5" y="231.16666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">→ hunt có thể chỉ</text>
+<text x="136.5" y="244.16666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">là nhiễu thanh khoản</text>
+<rect x="261.0" y="70" width="209.0" height="250" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="365.5" y="146.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">IFVG false-signal</text>
+<text x="365.5" y="159.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">TĂNG khi volatility</text>
+<text x="365.5" y="172.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">THẤP</text>
+<text x="365.5" y="185.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="365.5" y="198.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">ATR co hẹp →</text>
+<text x="365.5" y="211.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">MSS yếu, CE phản</text>
+<text x="365.5" y="224.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">ứng ngẫu nhiên</text>
+<text x="365.5" y="237.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">hơn ngày biến động</text>
+<text x="365.5" y="250.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">chuẩn</text>
+<rect x="490.0" y="70" width="209.0" height="250" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<text x="594.5" y="146.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">Inversion THẬT vs</text>
+<text x="594.5" y="159.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">WICK xuyên</text>
+<text x="594.5" y="172.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="594.5" y="185.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">Thật = body-close</text>
+<text x="594.5" y="198.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">xuyên + retest xác</text>
+<text x="594.5" y="211.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">nhận</text>
+<text x="594.5" y="224.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="594.5" y="237.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">Wick-only = KHÔNG</text>
+<text x="594.5" y="250.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">phải inversion hợp lệ</text>
+<rect x="719.0" y="70" width="209.0" height="250" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="823.5" y="146.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">DST làm lệch pha</text>
+<text x="823.5" y="159.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">07:00 NY vs London</text>
+<text x="823.5" y="172.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="823.5" y="185.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">Mỹ/Âu đổi giờ lệch</text>
+<text x="823.5" y="198.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">1-3 tuần/năm</text>
+<text x="823.5" y="211.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="823.5" y="224.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">→ giảm size hoặc</text>
+<text x="823.5" y="237.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">bỏ qua model tuần</text>
+<text x="823.5" y="250.66666666666666" font-size="11" fill="#e5e7eb" text-anchor="middle">chuyển đổi DST</text>
+<text x="32" y="610" font-size="12" fill="#94a3b8" text-anchor="start">Bốn điểm phản biện đặc thù cho 07:00 IFVG — xem chi tiết mục E, "Phản biện &amp; Giới hạn của mô hình".</text>
+</svg>

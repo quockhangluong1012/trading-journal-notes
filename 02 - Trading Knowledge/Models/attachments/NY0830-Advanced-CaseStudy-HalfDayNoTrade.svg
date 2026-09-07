@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="480" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="18" font-weight="700" fill="#94a3b8" text-anchor="start">Case 7 — No-Trade đúng: half-day trước lễ, thanh khoản mỏng bất thường</text>
+<line x1="24" y1="80" x2="936" y2="80" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="160" x2="936" y2="160" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="240" x2="936" y2="240" stroke="#1f2937" stroke-width="1"/>
+<text x="60" y="105" font-size="12" fill="#eab308" font-weight="700" text-anchor="start">08:30: build-up hình thành nhưng lực yếu bất thường</text>
+<line x1="90" y1="180" x2="90" y2="205" stroke="#9ca3af" stroke-width="1.5"/><rect x="84" y="185" width="12" height="12" fill="#22c55e"/>
+<line x1="130" y1="175" x2="130" y2="200" stroke="#9ca3af" stroke-width="1.5"/><rect x="124" y="180" width="12" height="12" fill="#ef4444"/>
+<line x1="170" y1="178" x2="170" y2="203" stroke="#9ca3af" stroke-width="1.5"/><rect x="164" y="183" width="12" height="12" fill="#22c55e"/>
+<line x1="210" y1="180" x2="210" y2="205" stroke="#9ca3af" stroke-width="1.5"/><rect x="204" y="185" width="12" height="12" fill="#ef4444"/>
+<rect x="80" y="175" width="150" height="35" fill="rgba(148,163,184,0.10)" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+<!-- weak raid that fails to follow through -->
+<line x1="260" y1="150" x2="260" y2="220" stroke="#9ca3af" stroke-width="1.5"/><rect x="254" y="180" width="12" height="25" fill="#ef4444"/>
+<path d="M260,160 L290,140" stroke="#f97316" stroke-width="2" fill="none" marker-end="url(#arrHD)" stroke-dasharray="3 2"/>
+<text x="295" y="136" font-size="10.5" fill="#f97316" text-anchor="start">Raid yếu — không đủ lực đi tiếp</text>
+<!-- price falls back into range, no clean MSS -->
+<line x1="320" y1="185" x2="320" y2="215" stroke="#9ca3af" stroke-width="1.5"/><rect x="314" y="190" width="12" height="15" fill="#22c55e"/>
+<line x1="360" y1="180" x2="360" y2="210" stroke="#9ca3af" stroke-width="1.5"/><rect x="354" y="185" width="12" height="15" fill="#ef4444"/>
+<line x1="400" y1="182" x2="400" y2="212" stroke="#9ca3af" stroke-width="1.5"/><rect x="394" y="187" width="12" height="15" fill="#22c55e"/>
+<text x="600" y="180" font-size="60" fill="#f87171" text-anchor="middle" font-weight="700">✕</text>
+<text x="600" y="220" font-size="13" fill="#f87171" font-weight="700" text-anchor="middle">Đứng ngoài — lịch half-day</text>
+<rect x="60" y="270" width="840" height="180" rx="8" fill="rgba(74,222,128,0.06)" stroke="#4ade80" stroke-width="1.5"/>
+<text x="480" y="298" font-size="13" fill="#4ade80" font-weight="700" text-anchor="middle">Chẩn đoán: raid yếu + MSS không rõ + thanh khoản mỏng do half-day → No-Trade</text>
+<text x="90" y="326" font-size="12" fill="#e5e7eb" text-anchor="start">Ngày trước Lễ Tạ ơn (NYSE đóng cửa sớm) — build-up 08:00-08:30 vẫn hình thành nhưng</text>
+<text x="90" y="348" font-size="12" fill="#e5e7eb" text-anchor="start">raid sau đó thiếu lực, giá quay lại range ngay, không có MSS + displacement rõ ràng.</text>
+<text x="90" y="378" font-size="12" fill="#94a3b8" text-anchor="start">Bài học: "có 08:30" không đồng nghĩa "có đủ thanh khoản tổ chức" — kiểm tra lịch half-day</text>
+<text x="90" y="400" font-size="12" fill="#94a3b8" text-anchor="start">trước phiên và hạ kỳ vọng ngay từ đầu nếu trùng ngày rút ngắn phiên.</text>
+<text x="90" y="428" font-size="12" fill="#94a3b8" text-anchor="start">Kết quả minh họa: 0R — quyết định đứng ngoài đúng, không phải bỏ lỡ cơ hội.</text>
+<defs><marker id="arrHD" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#f97316"/></marker></defs>
+</svg>

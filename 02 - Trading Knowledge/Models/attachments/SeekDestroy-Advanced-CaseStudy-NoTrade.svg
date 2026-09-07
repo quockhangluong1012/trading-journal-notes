@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 3 — No-Trade đúng: chỉ sweep 1 phía, weekly bias mù mờ</text>
+<line x1="24" y1="480" x2="936" y2="480" stroke="#1f2937" stroke-width="1"/>
+<line x1="24" y1="380" x2="936" y2="380" stroke="#1f2937" stroke-width="1"/>
+<rect x="60" y="260" width="360" height="90" fill="rgba(59,130,246,0.10)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="240" y="252" font-size="12" fill="#3b82f6" text-anchor="middle">Mon–Thu chop, D1/H4 đi ngang không rõ hướng</text>
+<line x1="60" y1="270" x2="420" y2="270" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="60" y1="340" x2="420" y2="340" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="100" y1="290" x2="100" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="94" y="295" width="12" height="25" fill="#22c55e"/>
+<line x1="140" y1="295" x2="140" y2="335" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="134" y="300" width="12" height="30" fill="#ef4444"/>
+<line x1="180" y1="285" x2="180" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="174" y="290" width="12" height="25" fill="#22c55e"/>
+<line x1="220" y1="300" x2="220" y2="340" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="214" y="305" width="12" height="30" fill="#ef4444"/>
+<line x1="260" y1="290" x2="260" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="254" y="295" width="12" height="25" fill="#22c55e"/>
+<line x1="300" y1="295" x2="300" y2="335" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="294" y="300" width="12" height="30" fill="#ef4444"/>
+<line x1="340" y1="285" x2="340" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="334" y="290" width="12" height="25" fill="#22c55e"/>
+<line x1="380" y1="295" x2="380" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="374" y="300" width="12" height="25" fill="#ef4444"/>
+<line x1="440" y1="100" x2="440" y2="480" stroke="#f87171" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="440" y="90" font-size="12" font-weight="700" fill="#f87171" text-anchor="middle">CPI 08:30 NY</text>
+<path d="M 460 270 L 490 210 L 520 300" fill="none" stroke="#f97316" stroke-width="2.5"/>
+<text x="490" y="200" font-size="11" fill="#f97316" text-anchor="middle">Sweep BSL sau tin</text>
+<line x1="560" y1="265" x2="560" y2="315" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="554" y="270" width="12" height="40" fill="#ef4444"/>
+<line x1="600" y1="275" x2="600" y2="325" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="594" y="280" width="12" height="40" fill="#22c55e"/>
+<line x1="640" y1="270" x2="640" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="634" y="275" width="12" height="40" fill="#ef4444"/>
+<line x1="680" y1="280" x2="680" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="674" y="285" width="12" height="40" fill="#22c55e"/>
+<text x="620" y="345" font-size="12" fill="#94a3b8" text-anchor="middle">Không MSS/CISD rõ ràng — giá loay hoay lại trong range</text>
+<rect x="60" y="400" width="836" height="70" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="1.5"/>
+<text x="80" y="424" font-size="12" fill="#e5e7eb" text-anchor="start">Chỉ có sweep 1 phía (BSL), không có sweep phía SSL, và weekly bias vốn đã mù mờ từ đầu tuần.</text>
+<text x="80" y="446" font-size="12" fill="#e5e7eb" text-anchor="start">Không đủ điều kiện Bonus Tip (không có target rõ) → trader đứng ngoài hoàn toàn. missing_step: none (skip đúng).</text>
+<text x="32" y="576" font-size="12" fill="#94a3b8" text-anchor="start">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa.</text>
+</svg>

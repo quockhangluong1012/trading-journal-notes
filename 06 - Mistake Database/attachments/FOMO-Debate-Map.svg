@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="820" fill="#ffffff"/>
+  <text x="550" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Debate Map — Cấm tuyệt đối mọi entry không tại POI?</text>
+  <text x="550" y="58" text-anchor="middle" font-size="14" fill="#555">Bản đồ tranh biện hai chiều với phản hồi chéo và phán quyết có điều kiện</text>
+
+  <!-- column headers -->
+  <rect x="50" y="80" width="480" height="40" rx="6" fill="#2e7d32"/>
+  <text x="290" y="106" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">PHE ỦNG HỘ (giữ rule cứng)</text>
+
+  <rect x="570" y="80" width="480" height="40" rx="6" fill="#c62828"/>
+  <text x="810" y="106" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">PHE PHẢN ĐỐI (rule nên mềm)</text>
+
+  <!-- Ủng hộ boxes -->
+  <rect x="50" y="130" width="480" height="60" rx="6" fill="#f5f5f5" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="65" y="150" font-size="12.5" font-weight="bold" fill="#1a1a1a">1. Chi phí bất cân xứng</text>
+  <text x="65" y="168" font-size="12.5" fill="#555">Thua tiền thật vs bỏ lỡ cơ hội trong vô số cơ hội</text>
+  <text x="65" y="184" font-size="12.5" fill="#555">— nghiêng hẳn về phía an toàn.</text>
+
+  <rect x="50" y="198" width="480" height="60" rx="6" fill="#f5f5f5" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="65" y="218" font-size="12.5" font-weight="bold" fill="#1a1a1a">2. Cơ chế thị trường có thể dự đoán</text>
+  <text x="65" y="236" font-size="12.5" fill="#555">FOMO đặt trader vào vị trí exit liquidity theo</text>
+  <text x="65" y="252" font-size="12.5" fill="#555">thiết kế thuật toán phân phối, không ngẫu nhiên.</text>
+
+  <rect x="50" y="266" width="480" height="60" rx="6" fill="#f5f5f5" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="65" y="286" font-size="12.5" font-weight="bold" fill="#1a1a1a">3. Rào cản chống overtrading</text>
+  <text x="65" y="304" font-size="12.5" fill="#555">Rule cứng tự động lọc bỏ phần lớn lệnh</text>
+  <text x="65" y="320" font-size="12.5" fill="#555">overtrade trong ngày biến động mạnh.</text>
+
+  <rect x="50" y="334" width="480" height="60" rx="6" fill="#f5f5f5" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="65" y="354" font-size="12.5" font-weight="bold" fill="#1a1a1a">4. Nhất quán với logic ICT gốc</text>
+  <text x="65" y="372" font-size="12.5" fill="#555">Toàn bộ mô hình 2022 xây quanh việc chờ giá</text>
+  <text x="65" y="388" font-size="12.5" fill="#555">chiết khấu về điểm — ngoại lệ phá vỡ tính nhất quán.</text>
+
+  <!-- Phản đối boxes -->
+  <rect x="570" y="130" width="480" height="60" rx="6" fill="#f5f5f5" stroke="#c62828" stroke-width="1.5"/>
+  <text x="585" y="150" font-size="12.5" font-weight="bold" fill="#1a1a1a">1. Chi phí cơ hội thật (trend day)</text>
+  <text x="585" y="168" font-size="12.5" fill="#555">Continuation FVG mới trong sóng đang chạy</text>
+  <text x="585" y="184" font-size="12.5" fill="#555">khác bản chất với FOMO — cấm hết là quá tay.</text>
+
+  <rect x="570" y="198" width="480" height="60" rx="6" fill="#f5f5f5" stroke="#c62828" stroke-width="1.5"/>
+  <text x="585" y="218" font-size="12.5" font-weight="bold" fill="#1a1a1a">2. Trường phái order-flow thành công</text>
+  <text x="585" y="236" font-size="12.5" fill="#555">Một số phương pháp SMC chủ động vào theo</text>
+  <text x="585" y="252" font-size="12.5" fill="#555">continuation LTF với SL chặt microstructure.</text>
+
+  <rect x="570" y="266" width="480" height="60" rx="6" fill="#f5f5f5" stroke="#c62828" stroke-width="1.5"/>
+  <text x="585" y="286" font-size="12.5" font-weight="bold" fill="#1a1a1a">3. Overfit trên sample nhỏ</text>
+  <text x="585" y="304" font-size="12.5" fill="#555">Toàn hệ thống rule dựa trên n rất nhỏ (2 lệnh</text>
+  <text x="585" y="320" font-size="12.5" fill="#555">thật) — "cấm tuyệt đối" vượt quá bằng chứng.</text>
+
+  <rect x="570" y="334" width="480" height="60" rx="6" fill="#f5f5f5" stroke="#c62828" stroke-width="1.5"/>
+  <text x="585" y="354" font-size="12.5" font-weight="bold" fill="#1a1a1a">4. Điều kiện thị trường rule phản tác dụng</text>
+  <text x="585" y="372" font-size="12.5" fill="#555">Trend day thật có thể không pullback về HTF</text>
+  <text x="585" y="388" font-size="12.5" fill="#555">POI trong nhiều giờ — bỏ lỡ toàn bộ trend lớn.</text>
+
+  <!-- cross arrows -->
+  <path d="M 530 160 L 570 160" stroke="#1565c0" stroke-width="2" marker-end="url(#arrowb)"/>
+  <path d="M 570 296 L 530 296" stroke="#1565c0" stroke-width="2" marker-end="url(#arrowb)"/>
+  <text x="550" y="152" text-anchor="middle" font-size="10" fill="#1565c0">V1</text>
+  <text x="550" y="288" text-anchor="middle" font-size="10" fill="#1565c0">V2</text>
+  <defs>
+    <marker id="arrowb" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#1565c0"/>
+    </marker>
+  </defs>
+
+  <!-- rebuttal rounds -->
+  <rect x="50" y="404" width="1000" height="86" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="65" y="426" font-size="12.5" font-weight="bold" fill="#1565c0">Vòng phản hồi chéo 1</text>
+  <text x="65" y="444" font-size="12.5" fill="#333">Ủng hộ: continuation hợp lệ đã được note phân biệt rõ với FOMO — không cấm continuation.</text>
+  <text x="65" y="462" font-size="12.5" fill="#333">Phản đối: cơ chế đúng về lý thuyết không tự chứng minh tần suất thật trong ngữ cảnh cụ thể.</text>
+  <text x="65" y="480" font-size="12.5" fill="#333">của trader — hợp lý (Tier 0) không đảm bảo rule cứng đúng trong mọi điều kiện thị trường.</text>
+
+  <rect x="50" y="498" width="1000" height="86" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="65" y="520" font-size="12.5" font-weight="bold" fill="#1565c0">Vòng phản hồi chéo 2</text>
+  <text x="65" y="538" font-size="12.5" fill="#333">Ủng hộ: sample nhỏ chính là lý do rule phải CỨNG tạm thời để bảo vệ tính sạch dữ liệu backtest,</text>
+  <text x="65" y="556" font-size="12.5" fill="#333">không phải khẳng định vĩnh viễn.</text>
+  <text x="65" y="574" font-size="12.5" fill="#333">Phản đối: chấp nhận, nhưng ngôn ngữ đúng là "cấm tạm thời trong giai đoạn Tier 1", không "tuyệt đối".</text>
+
+  <!-- verdict -->
+  <rect x="50" y="600" width="1000" height="130" rx="10" fill="#f9a825"/>
+  <text x="550" y="626" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a2c00">PHÁN QUYẾT CÓ ĐIỀU KIỆN</text>
+  <text x="70" y="650" font-size="13" fill="#3a2c00">Ở Tier 0 hiện tại: ngôn ngữ đúng là "giả thuyết đang kiểm định — cấm TẠM THỜI mọi entry</text>
+  <text x="70" y="668" font-size="13" fill="#3a2c00">không tại POI trong giai đoạn xây Tier 1", KHÔNG phát biểu như doctrine đã kiểm chứng.</text>
+  <text x="70" y="688" font-size="13" fill="#3a2c00">Ủng hộ đúng về HÀNH ĐỘNG hiện tại; Phản đối đúng về GIỚI HẠN của rule (không đóng cứng</text>
+  <text x="70" y="706" font-size="13" fill="#3a2c00">vĩnh viễn khả năng continuation LTF có kiểm soát).</text>
+  <text x="70" y="722" font-size="12.5" fill="#3a2c00" font-weight="bold">Dữ liệu giải quyết: shadow log ≥30 lệnh bị từ chối (đo chi phí cơ hội) song song log continuation LTF.</text>
+
+  <rect x="50" y="744" width="1000" height="50" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="70" y="764" font-size="12.5" font-weight="bold" fill="#1a1a1a">Evidence Tier hiện tại: Tier 0 (giả thuyết)</text>
+  <text x="70" y="782" font-size="12.5" fill="#555">Chưa có backtest số riêng cho rule FOMO — mọi phát biểu "tuyệt đối" đang vượt quá bằng chứng.</text>
+</svg>

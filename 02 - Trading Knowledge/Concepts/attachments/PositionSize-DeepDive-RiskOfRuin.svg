@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">Risk of Ruin — minh hoa quan he Risk%/lenh va xac suat "chay" von</text>
+
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="90" y1="450" x2="900" y2="450"/>
+    <line x1="90" y1="80" x2="90" y2="450"/>
+  </g>
+  <text x="450" y="480" font-family="Arial, sans-serif" font-size="16" fill="#d1d4dc">Risk % moi lenh (minh hoa)</text>
+  <text x="20" y="270" font-family="Arial, sans-serif" font-size="16" fill="#d1d4dc" transform="rotate(-90 20 270)">Risk-of-Ruin (minh hoa)</text>
+
+  <!-- risk of ruin curve - exponential-like growth -->
+  <polyline points="90,440 180,435 270,420 360,390 450,340 540,270 630,190 720,120 810,80 900,60"
+    fill="none" stroke="#ef5350" stroke-width="3"/>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="16" fill="#ef5350">Rui ro pha san tang PHI TUYEN theo risk%/lenh</text>
+
+  <!-- vertical markers -->
+  <line x1="180" y1="80" x2="180" y2="450" stroke="#26a69a" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="130" y="70" font-family="Arial, sans-serif" font-size="15" fill="#26a69a">0.5% - vung an toan</text>
+
+  <line x1="450" y1="80" x2="450" y2="450" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="15" fill="#f2c94c">2% - vung trung binh</text>
+
+  <line x1="720" y1="80" x2="720" y2="450" stroke="#ef5350" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="670" y="70" font-family="Arial, sans-serif" font-size="15" fill="#ef5350">5%+ - vung nguy hiem</text>
+
+  <text x="100" y="500" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">Cong thuc risk-of-ruin (Vince/gambler ruin) phu thuoc edge (win-rate, RR) VA risk%/lenh.</text>
+  <text x="100" y="520" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">Duong minh hoa dinh tinh xu huong tang nhanh khi risk%/lenh vuot qua mot nguong - can tinh rieng cho tung he thong.</text>
+</svg>

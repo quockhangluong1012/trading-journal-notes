@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="720" fill="#ffffff"/>
+  <text x="550" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Case Studies — FOMO Entry (kịch bản minh họa)</text>
+  <text x="550" y="58" text-anchor="middle" font-size="14" fill="#555">3 panel: Case A thất bại (đỏ) · Case B xử lý đúng (xanh) · Case C vùng xám (amber)</text>
+
+  <!-- Panel A -->
+  <rect x="30" y="80" width="340" height="560" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="200" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#c62828">Case A — NAS100 NY (Thất bại)</text>
+  <rect x="50" y="120" width="300" height="150" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="60,240 100,230 140,190 180,160 210,150 240,155 270,220 300,255 330,250"
+            fill="none" stroke="#c62828" stroke-width="2.5"/>
+  <line x1="60" y1="163" x2="330" y2="163" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="335" y="160" font-size="10" fill="#2e7d32">Entry 18556</text>
+  <line x1="60" y1="204" x2="330" y2="204" stroke="#c62828" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="335" y="207" font-size="10" fill="#c62828">SL 18518</text>
+  <text x="50" y="290" font-size="12" fill="#333">Đuổi nến displacement thứ 4</text>
+  <text x="50" y="308" font-size="12" fill="#333">liên tiếp, không có POI M5.</text>
+  <text x="50" y="330" font-size="12" font-weight="bold" fill="#c62828">Kết quả: LOSS −0.5%</text>
+  <text x="50" y="352" font-size="12" fill="#333">MSS thật chỉ xảy ra sau đó</text>
+  <text x="50" y="370" font-size="12" fill="#333">ở vùng sâu hơn — đã trễ.</text>
+  <text x="50" y="398" font-size="12" font-weight="bold" fill="#c62828">Fail audit: câu 3, 5, 6, 8</text>
+  <text x="50" y="416" font-size="12" fill="#333">→ xếp loại F</text>
+  <text x="50" y="450" font-size="11.5" fill="#666">Phiên NY, 19:32-20:20 VN</text>
+  <text x="50" y="468" font-size="11.5" fill="#666">giờ VN (07:32-08:20 EST)</text>
+
+  <!-- Panel B -->
+  <rect x="380" y="80" width="340" height="560" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="550" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">Case B — XAUUSD London (Đúng)</text>
+  <rect x="400" y="120" width="300" height="150" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="410,250 440,230 470,200 500,175 530,180 545,190 560,175 590,168 620,172 650,150 680,145"
+            fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+  <line x1="410" y1="182" x2="680" y2="182" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="605" y="196" font-size="10" fill="#2e7d32">Entry 2442 (sau pullback)</text>
+  <line x1="410" y1="150" x2="680" y2="150" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="605" y="147" font-size="10" fill="#1565c0">TP2 2468</text>
+  <text x="400" y="290" font-size="12" fill="#333">Chờ cửa sổ 90s, chờ pullback</text>
+  <text x="400" y="308" font-size="12" fill="#333">về FVG mới + MSS M5 xác nhận.</text>
+  <text x="400" y="330" font-size="12" font-weight="bold" fill="#2e7d32">Kết quả: WIN +3.9R</text>
+  <text x="400" y="352" font-size="12" fill="#333">Nhưng bỏ lỡ 34 đô đầu con</text>
+  <text x="400" y="370" font-size="12" fill="#333">sóng — cái giá của process đúng.</text>
+  <text x="400" y="398" font-size="12" font-weight="bold" fill="#2e7d32">Bài học: process đúng ≠</text>
+  <text x="400" y="416" font-size="12" fill="#333">kết quả đẹp từng lệnh</text>
+  <text x="400" y="450" font-size="11.5" fill="#666">Phiên London, 13:10-16:10 VN</text>
+
+  <!-- Panel C -->
+  <rect x="730" y="80" width="340" height="560" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <text x="900" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#3a2c00">Case C — EURUSD trend day (Xám)</text>
+  <rect x="750" y="120" width="300" height="150" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="760,255 790,235 820,210 850,190 880,175 900,180 920,172 950,160 980,168 1010,162 1030,158"
+            fill="none" stroke="#f9a825" stroke-width="2.5"/>
+  <line x1="760" y1="184" x2="1030" y2="184" stroke="#3a2c00" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="960" y="197" font-size="10" fill="#3a2c00">FVG#3 1.0918</text>
+  <text x="750" y="290" font-size="12" fill="#333">FVG continuation thứ 3 trong 2</text>
+  <text x="750" y="308" font-size="12" fill="#333">giờ — đủ điều kiện kỹ thuật,</text>
+  <text x="750" y="326" font-size="12" fill="#333">nhưng đã đi xa 70 pip từ HTF POI.</text>
+  <text x="750" y="352" font-size="12" font-weight="bold" fill="#c76b00">Kết quả: chưa xác định</text>
+  <text x="750" y="374" font-size="12" fill="#333">Cả hai cách xử lý đều biện</text>
+  <text x="750" y="392" font-size="12" fill="#333">minh được ở Tier 0.</text>
+  <text x="750" y="420" font-size="12" font-weight="bold" fill="#3a2c00">Tie-break: đếm số FVG</text>
+  <text x="750" y="438" font-size="12" fill="#333">continuation liên tiếp &lt;3 giờ</text>
+  <text x="750" y="470" font-size="11.5" fill="#666">Phiên NY, ngày CPI thấp kỳ vọng</text>
+
+  <!-- comparison footer -->
+  <rect x="30" y="654" width="1040" height="52" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="50" y="678" font-size="12.5" fill="#333" font-weight="bold">So sánh: A = đuổi giá, không POI, thua · B = chờ đúng, thắng nhưng mất phần đầu sóng</text>
+  <text x="50" y="696" font-size="12.5" fill="#333" font-weight="bold">C = vùng xám kỹ thuật hợp lệ nhưng vị trí trong leg đáng ngờ — cần dữ liệu Tier 1 để phân xử</text>
+</svg>

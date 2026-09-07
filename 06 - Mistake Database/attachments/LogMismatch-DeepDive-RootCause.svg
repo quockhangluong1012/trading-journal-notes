@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="800" fill="#ffffff"/>
+  <text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Log Data Mismatch — 5 Whys &amp; GIGO Pipeline</text>
+  <text x="500" y="56" text-anchor="middle" font-size="14" fill="#555">Từ "gõ nhầm một con số" tới lỗ hổng cách ly dữ liệu</text>
+
+  <rect x="40" y="76" width="920" height="50" rx="8" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="60" y="96" font-size="12" font-weight="bold" fill="#1a1a1a">Bề mặt:</text>
+  <text x="60" y="114" font-size="12" fill="#333">Frontmatter, bảng Summary, narrative điền ở thời điểm khác nhau, không đối chiếu.</text>
+
+  <line x1="500" y1="126" x2="500" y2="144" stroke="#999" stroke-width="2" marker-end="url(#a3)"/>
+
+  <rect x="70" y="146" width="860" height="48" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="90" y="164" font-size="12" font-weight="bold" fill="#3a2c00">Why 1:</text>
+  <text x="90" y="182" font-size="12" fill="#333">Không có bước "audit tự nhất quán" trong quy trình đóng note.</text>
+
+  <line x1="500" y1="194" x2="500" y2="212" stroke="#999" stroke-width="2" marker-end="url(#a3)"/>
+
+  <rect x="100" y="214" width="800" height="48" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="120" y="232" font-size="12" font-weight="bold" fill="#3a2c00">Why 2:</text>
+  <text x="120" y="250" font-size="12" fill="#333">Template tối ưu tốc độ ghi lúc mới học, chưa ưu tiên data integrity.</text>
+
+  <line x1="500" y1="262" x2="500" y2="280" stroke="#999" stroke-width="2" marker-end="url(#a3)"/>
+
+  <rect x="130" y="282" width="740" height="48" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="150" y="300" font-size="12" font-weight="bold" fill="#c62828">Why 3:</text>
+  <text x="150" y="318" font-size="12" fill="#333">Sample nhỏ khiến "1 note lỗi" có vẻ không đáng kể.</text>
+
+  <line x1="500" y1="330" x2="500" y2="348" stroke="#999" stroke-width="2" marker-end="url(#a3)"/>
+
+  <rect x="160" y="350" width="680" height="48" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="180" y="368" font-size="12" font-weight="bold" fill="#c62828">Why 4:</text>
+  <text x="180" y="386" font-size="12" fill="#333">Dashboard cộng gộp mọi note, không phân biệt sạch/bẩn.</text>
+
+  <line x1="500" y1="398" x2="500" y2="416" stroke="#999" stroke-width="2" marker-end="url(#a3)"/>
+
+  <rect x="140" y="418" width="720" height="80" rx="10" fill="#c62828"/>
+  <text x="500" y="444" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">NGUYÊN NHÂN GỐC</text>
+  <text x="500" y="466" text-anchor="middle" font-size="12" fill="#fff">Không có cơ chế cách ly (quarantine) giữa "note đã ghi"</text>
+  <text x="500" y="484" text-anchor="middle" font-size="12" fill="#fff">và "note đã xác minh tự nhất quán".</text>
+
+  <!-- GIGO pipeline -->
+  <rect x="40" y="520" width="920" height="260" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="500" y="546" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565c0">GIGO Pipeline — Garbage In, Garbage Out</text>
+
+  <rect x="70" y="562" width="250" height="90" rx="8" fill="#ffffff" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="195" y="586" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Input</text>
+  <text x="195" y="606" text-anchor="middle" font-size="11" fill="#333">entry/SL/TP, r_multiple,</text>
+  <text x="195" y="622" text-anchor="middle" font-size="11" fill="#333">trade_date trong</text>
+  <text x="195" y="638" text-anchor="middle" font-size="11" fill="#333">frontmatter mỗi note</text>
+
+  <line x1="320" y1="607" x2="360" y2="607" stroke="#999" stroke-width="2" marker-end="url(#a3)"/>
+
+  <rect x="360" y="562" width="270" height="90" rx="8" fill="#ffffff" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="495" y="586" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Transform</text>
+  <text x="495" y="606" text-anchor="middle" font-size="11" fill="#333">Dataview cộng gộp,</text>
+  <text x="495" y="622" text-anchor="middle" font-size="11" fill="#333">tính trung bình, tính</text>
+  <text x="495" y="638" text-anchor="middle" font-size="11" fill="#333">tỷ lệ thắng — KHÔNG validate</text>
+
+  <line x1="630" y1="607" x2="670" y2="607" stroke="#999" stroke-width="2" marker-end="url(#a3)"/>
+
+  <rect x="670" y="562" width="250" height="90" rx="8" fill="#ffffff" stroke="#c62828" stroke-width="1.5"/>
+  <text x="795" y="586" text-anchor="middle" font-size="12" font-weight="bold" fill="#c62828">Output</text>
+  <text x="795" y="606" text-anchor="middle" font-size="11" fill="#333">Win rate, avg R,</text>
+  <text x="795" y="622" text-anchor="middle" font-size="11" fill="#333">expectancy dùng cho</text>
+  <text x="795" y="638" text-anchor="middle" font-size="11" fill="#333">readiness gate</text>
+
+  <rect x="70" y="666" width="850" height="46" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="495" y="694" text-anchor="middle" font-size="12" fill="#3a2c00">Không có bước validate giữa Input và Transform — Dataview tin tuyệt đối frontmatter.</text>
+
+  <rect x="70" y="722" width="850" height="46" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="495" y="750" text-anchor="middle" font-size="12" fill="#c62828">Lỗi phân tích làm hỏng 1 lệnh — GIGO làm hỏng toàn bộ hàm tổng hợp.</text>
+
+  <defs>
+    <marker id="a3" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#999"/>
+    </marker>
+  </defs>
+</svg>

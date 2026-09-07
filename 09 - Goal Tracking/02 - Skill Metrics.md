@@ -36,6 +36,7 @@ dv.container.innerHTML = `
 | 2026-W26 |                     |                    |                            |               | Tuần khởi tạo hệ thống mục tiêu |
 | 2026-W27 |          1           |          1          |           3                 |        2       | Tập trung học, ôn lại các khái niệm cốt lõi của ICT 2022 Model |
 | 2026-W28 |          10           |                    |            3                |         4      | Tuần đầu bắt đầu tập trung học tập và backtest |
+| 2026-W29 → 2026-W36 | **0** | — | — | — | ⛔ **DỪNG THẬT 8 tuần.** Backtest cuối 2026-07-17, daily task cuối 2026-07-20, lệnh live cuối 2026-06-18. Không backfill số giả — ghi nhận để chuỗi được tính lại từ 0. |
 
 ## Định nghĩa chỉ số
 
@@ -48,5 +49,6 @@ dv.container.innerHTML = `
 ## Liên kết
 - Dashboard mục tiêu: [[00 - Goal Dashboard]]
 - Lộ trình: [[01 - Roadmap]]
+- Phương pháp luyện tập & vòng lặp AI: [[04 - Phương pháp luyện tập, vòng lặp AI & giữ động lực]]
 - Dashboard lỗi: [[02 - Mistake Frequency Dashboard]]
 - Dashboard chất lượng quy trình: [[04 - Process Quality Dashboard]]

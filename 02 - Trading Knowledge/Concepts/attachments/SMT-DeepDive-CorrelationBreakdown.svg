@@ -1,0 +1,43 @@
+<svg viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+
+  <text x="480" y="34" fill="#d1d4dc" font-size="22" font-weight="bold" text-anchor="middle">Correlation Breakdown Trong Regime Risk-Off Cuc Doan</text>
+  <text x="480" y="56" fill="#787b86" font-size="13" text-anchor="middle">Vi sao SMT khong nen tin trong khung hoang thanh khoan dien rong</text>
+
+  <!-- Grid -->
+  <line x1="70" y1="100" x2="900" y2="100" stroke="#1e222d" stroke-width="1"/>
+  <line x1="70" y1="180" x2="900" y2="180" stroke="#1e222d" stroke-width="1"/>
+  <line x1="70" y1="260" x2="900" y2="260" stroke="#1e222d" stroke-width="1"/>
+  <line x1="70" y1="340" x2="900" y2="340" stroke="#1e222d" stroke-width="1"/>
+
+  <!-- Normal regime section -->
+  <rect x="70" y="90" width="330" height="260" fill="none" stroke="#3a3e4a" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="235" y="118" fill="#d1d4dc" font-size="14" font-weight="bold" text-anchor="middle">Regime binh thuong</text>
+  <polyline points="90,220 130,205 170,215 210,195 250,210 290,190 330,200 370,180" fill="none" stroke="#26a69a" stroke-width="2"/>
+  <polyline points="90,240 130,228 170,236 210,220 250,232 290,216 330,224 370,208" fill="none" stroke="#ef5350" stroke-width="2"/>
+  <text x="235" y="270" fill="#787b86" font-size="12" text-anchor="middle">Hai tai san di cung huong,</text>
+  <text x="235" y="288" fill="#787b86" font-size="12" text-anchor="middle">tuong quan nen cao va on dinh</text>
+  <text x="235" y="325" fill="#f2c94c" font-size="12" text-anchor="middle">SMT dang tin cay o day</text>
+
+  <!-- Arrow -->
+  <text x="480" y="220" fill="#ffffff" font-size="20" text-anchor="middle">&#8594;</text>
+  <text x="480" y="245" fill="#787b86" font-size="11" text-anchor="middle">VIX tang vot,</text>
+  <text x="480" y="260" fill="#787b86" font-size="11" text-anchor="middle">flight to liquidity</text>
+
+  <!-- Crisis regime section -->
+  <rect x="560" y="90" width="330" height="260" fill="none" stroke="#ef5350" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="725" y="118" fill="#d1d4dc" font-size="14" font-weight="bold" text-anchor="middle">Regime risk-off cuc doan</text>
+  <polyline points="580,200 620,240 660,215 700,260 740,225 780,270 820,235 860,280" fill="none" stroke="#26a69a" stroke-width="2"/>
+  <polyline points="580,205 620,245 660,220 700,265 740,230 780,275 820,240 860,285" fill="none" stroke="#ef5350" stroke-width="2"/>
+  <text x="725" y="300" fill="#787b86" font-size="12" text-anchor="middle">Moi loai tai san giam dong thoi</text>
+  <text x="725" y="318" fill="#787b86" font-size="12" text-anchor="middle">("correlations go to 1 in a crisis")</text>
+  <text x="725" y="336" fill="#f2c94c" font-size="12" text-anchor="middle">Khong the doc SMT dang tin cay</text>
+
+  <!-- bottom callout -->
+  <rect x="150" y="400" width="660" height="80" fill="rgba(255,152,0,0.25)" stroke="#ff9800" stroke-width="1"/>
+  <text x="480" y="425" fill="#d1d4dc" font-size="13" text-anchor="middle" font-weight="bold">Trong khung hoang thanh khoan (thang 3/2020, cac giai doan risk-off dien rong khac):</text>
+  <text x="480" y="445" fill="#d1d4dc" font-size="13" text-anchor="middle">tuong quan lich su co the hoi tu bat thuong (ve 1 hoac ve -1),</text>
+  <text x="480" y="465" fill="#d1d4dc" font-size="13" text-anchor="middle">khien SMT dua tren khung tuong quan cu tro nen khong dang tin cay</text>
+
+  <text x="480" y="515" fill="#787b86" font-size="12" text-anchor="middle">Kiem tra VIX / boi canh vi mo truoc khi tin SMT trong giai doan bat on dien rong</text>
+</svg>

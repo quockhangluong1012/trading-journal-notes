@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="780" fill="#0f1420" rx="12"/>
+  <text x="40" y="42" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế đằng sau Daily Bias: hành trình giữa hai kho lệnh HTF</text>
+  <text x="40" y="66" font-size="15" fill="#94a3b8">Vì sao "một ngày" có hướng — góc nhìn inventory dealer + auction market theory</text>
+
+  <!-- long-term price path -->
+  <line x1="60" y1="400" x2="1150" y2="400" stroke="#334155" stroke-width="1"/>
+  <path d="M 80 480 Q 250 460 400 380 T 700 260 T 1000 200" stroke="#94a3b8" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- Array A (origin) -->
+  <rect x="60" y="450" width="140" height="60" fill="#ef4444" opacity="0.18"/>
+  <text x="70" y="475" font-size="13" fill="#ef4444" font-weight="bold">PD Array A</text>
+  <text x="70" y="493" font-size="12" fill="#94a3b8">(Monthly OB / origin)</text>
+
+  <!-- Array B (target) -->
+  <rect x="990" y="180" width="150" height="60" fill="#22c55e" opacity="0.18"/>
+  <text x="1000" y="205" font-size="13" fill="#22c55e" font-weight="bold">PD Array B</text>
+  <text x="1000" y="223" font-size="12" fill="#94a3b8">(BSL / draw đối diện)</text>
+
+  <!-- day segments as relay legs -->
+  <g>
+    <rect x="220" y="440" width="120" height="45" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="232" y="465" font-size="12" fill="#e2e8f0">Ngày 1: chặng A→B</text>
+  </g>
+  <g>
+    <rect x="400" y="370" width="120" height="45" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="412" y="395" font-size="12" fill="#e2e8f0">Ngày 2: tiếp chặng</text>
+  </g>
+  <g>
+    <rect x="580" y="300" width="130" height="45" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="592" y="325" font-size="12" fill="#e2e8f0">Ngày 3: gần đích</text>
+  </g>
+  <g>
+    <rect x="800" y="230" width="130" height="45" rx="4" fill="#1e293b" stroke="#334155"/>
+    <text x="812" y="255" font-size="12" fill="#e2e8f0">Ngày 4: tới đích B</text>
+  </g>
+
+  <!-- annotation boxes: dealer inventory mechanism -->
+  <rect x="60" y="560" width="330" height="140" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="75" y="585" font-size="14" fill="#e2e8f0" font-weight="bold">1. Inventory dealer</text>
+  <text x="75" y="606" font-size="13" fill="#94a3b8">Lệnh tổ chức lớn cần tồn kho giá tốt</text>
+  <text x="75" y="624" font-size="13" fill="#94a3b8">trước khi đẩy giá xa — mỗi "ngày" là</text>
+  <text x="75" y="642" font-size="13" fill="#94a3b8">một đợt gom/xả có kế hoạch, không</text>
+  <text x="75" y="660" font-size="13" fill="#94a3b8">phải chuyển động ngẫu nhiên.</text>
+  <text x="75" y="682" font-size="13" fill="#94a3b8">→ đây là lý do bias "có hướng".</text>
+
+  <rect x="420" y="560" width="330" height="140" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="435" y="585" font-size="14" fill="#e2e8f0" font-weight="bold">2. Thanh khoản có lịch</text>
+  <text x="435" y="606" font-size="13" fill="#94a3b8">Lệnh lớn chỉ khớp tốt trong giờ</text>
+  <text x="435" y="624" font-size="13" fill="#94a3b8">London/NY — nên bias luôn là mệnh</text>
+  <text x="435" y="642" font-size="13" fill="#94a3b8">đề "hướng + giờ", không chỉ hướng.</text>
+  <text x="435" y="660" font-size="13" fill="#94a3b8">Đúng hướng sai giờ = không có dòng</text>
+  <text x="435" y="682" font-size="13" fill="#94a3b8">tiền bảo vệ cấu trúc bạn đang trade.</text>
+
+  <rect x="780" y="560" width="360" height="140" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="795" y="585" font-size="14" fill="#e2e8f0" font-weight="bold">3. Auction Market Theory</text>
+  <text x="795" y="606" font-size="13" fill="#94a3b8">Giá là "excess" đi tìm value area</text>
+  <text x="795" y="624" font-size="13" fill="#94a3b8">mới — bias = kỳ vọng excess tiếp</text>
+  <text x="795" y="642" font-size="13" fill="#94a3b8">tục hay đã bị từ chối (rejection).</text>
+  <text x="795" y="660" font-size="13" fill="#94a3b8">Trùng với ICT "draw on liquidity"</text>
+  <text x="795" y="682" font-size="13" fill="#94a3b8">nhưng có công cụ đo (TPO) chặt hơn.</text>
+
+  <!-- markers on path -->
+  <circle cx="200" cy="463" r="6" fill="#38bdf8"/>
+  <circle cx="460" cy="392" r="6" fill="#38bdf8"/>
+  <circle cx="645" cy="323" r="6" fill="#38bdf8"/>
+  <circle cx="865" cy="253" r="6" fill="#38bdf8"/>
+</svg>

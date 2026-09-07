@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="750" fill="#0f1420" rx="12"/>
+  <text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Edge Case đắt giá: Breaker retest lần 2-3 — còn giá trị hay đã "rỗng"?</text>
+  <text x="40" y="63" font-size="15" fill="#94a3b8">Mỗi lần retest, một phần "hàng kẹt" đã thoát — phản ứng nhạt dần theo cấp số, không tuyến tính</text>
+
+  <!-- timeline chart with 3 touches -->
+  <rect x="30" y="90" width="1140" height="380" fill="#1e293b" stroke="#334155" rx="8"/>
+
+  <!-- breaker zone -->
+  <rect x="80" y="280" width="1040" height="50" fill="#22c55e" opacity="0.16"/>
+  <text x="900" y="275" font-size="12" fill="#94a3b8">Vùng Bullish Breaker</text>
+
+  <!-- touch 1 - strong reaction -->
+  <rect x="140" y="230" width="16" height="45" fill="#ef4444"/><line x1="148" y1="220" x2="148" y2="300" stroke="#ef4444" stroke-width="2"/>
+  <rect x="170" y="240" width="16" height="55" fill="#ef4444"/><line x1="178" y1="230" x2="178" y2="315" stroke="#ef4444" stroke-width="2"/>
+  <rect x="200" y="260" width="16" height="60" fill="#22c55e"/><line x1="208" y1="250" x2="208" y2="325" stroke="#22c55e" stroke-width="2"/>
+  <rect x="230" y="180" width="16" height="70" fill="#22c55e"/><line x1="238" y1="170" x2="238" y2="255" stroke="#22c55e" stroke-width="2"/>
+  <text x="140" y="360" font-size="13" fill="#22c55e" font-weight="bold">Touch 1 (first retest)</text>
+  <text x="140" y="378" font-size="12" fill="#94a3b8">Phản ứng mạnh — toàn bộ</text>
+  <text x="140" y="394" font-size="12" fill="#94a3b8">hàng kẹt bước 1-2 còn nguyên</text>
+
+  <!-- touch 2 - weaker reaction -->
+  <rect x="420" y="270" width="16" height="35" fill="#ef4444"/><line x1="428" y1="260" x2="428" y2="315" stroke="#ef4444" stroke-width="2"/>
+  <rect x="450" y="275" width="16" height="30" fill="#ef4444"/><line x1="458" y1="265" x2="458" y2="320" stroke="#ef4444" stroke-width="2"/>
+  <rect x="480" y="255" width="16" height="30" fill="#22c55e"/><line x1="488" y1="245" x2="488" y2="298" stroke="#22c55e" stroke-width="2"/>
+  <rect x="510" y="225" width="16" height="30" fill="#22c55e"/><line x1="518" y1="215" x2="518" y2="268" stroke="#22c55e" stroke-width="2"/>
+  <text x="420" y="360" font-size="13" fill="#eab308" font-weight="bold">Touch 2 (second retest)</text>
+  <text x="420" y="378" font-size="12" fill="#94a3b8">Phản ứng yếu hơn — một phần</text>
+  <text x="420" y="394" font-size="12" fill="#94a3b8">hàng kẹt đã thoát ở touch 1</text>
+
+  <!-- touch 3 - fails through -->
+  <rect x="700" y="280" width="16" height="35" fill="#ef4444"/><line x1="708" y1="270" x2="708" y2="325" stroke="#ef4444" stroke-width="2"/>
+  <rect x="730" y="295" width="16" height="50" fill="#ef4444"/><line x1="738" y1="285" x2="738" y2="360" stroke="#ef4444" stroke-width="2"/>
+  <rect x="760" y="330" width="16" height="55" fill="#ef4444"/><line x1="768" y1="320" x2="768" y2="400" stroke="#ef4444" stroke-width="2"/>
+  <rect x="790" y="360" width="16" height="45" fill="#ef4444"/><line x1="798" y1="350" x2="798" y2="420" stroke="#ef4444" stroke-width="2"/>
+  <text x="700" y="360" font-size="13" fill="#ef4444" font-weight="bold">Touch 3 (third retest)</text>
+  <text x="700" y="378" font-size="12" fill="#94a3b8">Xuyên thẳng qua — vùng đã</text>
+  <text x="700" y="394" font-size="12" fill="#94a3b8">"rỗng", không còn ai bảo vệ</text>
+
+  <line x1="80" y1="440" x2="1120" y2="440" stroke="#334155" stroke-dasharray="4,3"/>
+  <text x="80" y="435" font-size="12" fill="#94a3b8">Trục thời gian →</text>
+
+  <!-- decay curve annotation -->
+  <text x="850" y="130" font-size="13" fill="#a78bfa" font-weight="bold">Độ mạnh phản ứng suy giảm</text>
+  <text x="850" y="148" font-size="13" fill="#a78bfa" font-weight="bold">theo cấp số, không tuyến tính</text>
+
+  <rect x="30" y="500" width="1140" height="220" fill="#1e293b" stroke="#334155" rx="8"/>
+  <text x="55" y="530" font-size="16" fill="#e2e8f0" font-weight="bold">Quy tắc thực chiến</text>
+  <text x="55" y="558" font-size="13" fill="#94a3b8">• First retest (touch 1) là đáng tin nhất — toàn bộ vị thế kẹt + limit order chờ của phe mới còn nguyên vẹn.</text>
+  <text x="55" y="580" font-size="13" fill="#94a3b8">• Touch 2 vẫn tradeable nhưng hạ kỳ vọng R:R và size — một phần "nhiên liệu" đã khớp ở touch 1.</text>
+  <text x="55" y="602" font-size="13" fill="#94a3b8">• Touch 3 trở đi: mặc định COI LÀ VÙNG TRỐNG trừ khi có bằng chứng mới (sweep mới + MSS mới tại chính vùng đó).</text>
+  <text x="55" y="624" font-size="13" fill="#94a3b8">• Ghi `breaker_retest_count` vào journal — so R trung bình giữa touch 1/2/3+ để tự kiểm chứng tốc độ suy giảm trên</text>
+  <text x="55" y="642" font-size="13" fill="#94a3b8">  chính tài sản và style của bạn, vì tốc độ này khác nhau giữa FX/futures/crypto.</text>
+  <text x="55" y="670" font-size="13" fill="#f97316" font-weight="bold">Cảnh báo: đừng nhầm "breaker touch 3 xuyên qua" với "OB sống lại" (xem mục 15.7) — đó là hai kết luận khác nhau.</text>
+</svg>

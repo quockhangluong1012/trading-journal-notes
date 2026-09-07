@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="600" rx="12" fill="#0d1117"/>
+  <text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Ma trận 6 Edge case / Failure mode của OSOK</text>
+  <text x="32" y="58" font-size="12" fill="#94a3b8">Sơ đồ tổng hợp — xem chi tiết từng ca trong Chuyên sâu A</text>
+
+  <g font-size="12.5">
+    <rect x="40" y="90" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="55" y="115" font-size="13" font-weight="700" fill="#f97316">① B-setup gắn mác A+</text>
+    <text x="55" y="138" fill="#e5e7eb">Setup điểm thấp được gọi</text>
+    <text x="55" y="156" fill="#94a3b8">"phát duy nhất" cho khớp lệnh</text>
+    <text x="55" y="180" fill="#4ade80">Xử lý: chấm 12 điểm TRƯỚC</text>
+    <text x="55" y="198" fill="#4ade80">khi vào, không hồi tố</text>
+
+    <rect x="340" y="90" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="355" y="115" font-size="13" font-weight="700" fill="#f97316">② Weekly bias flip</text>
+    <text x="355" y="138" fill="#e5e7eb">Bias đảo giữa tuần sau</text>
+    <text x="355" y="156" fill="#94a3b8">đã vào lệnh theo bias cũ</text>
+    <text x="355" y="180" fill="#4ade80">Xử lý: review Thứ 4, có</text>
+    <text x="355" y="198" fill="#4ade80">quy tắc thoát khi bias đổi</text>
+
+    <rect x="640" y="90" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="655" y="115" font-size="13" font-weight="700" fill="#f97316">③ Đạt target sớm rồi FOMO</text>
+    <text x="655" y="138" fill="#e5e7eb">Đạt target Thứ 3, vẫn</text>
+    <text x="655" y="156" fill="#94a3b8">nhặt thêm lệnh Thứ 4-5</text>
+    <text x="655" y="180" fill="#4ade80">Xử lý: khóa sổ tuần sau</text>
+    <text x="655" y="198" fill="#4ade80">khi đạt target</text>
+
+    <rect x="40" y="250" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="55" y="275" font-size="13" font-weight="700" fill="#f97316">④ Nested weekly↔daily</text>
+    <text x="55" y="298" fill="#e5e7eb">Daily bias mâu thuẫn</text>
+    <text x="55" y="316" fill="#94a3b8">weekly bias khi vào lệnh</text>
+    <text x="55" y="340" fill="#4ade80">Xử lý: weekly luôn ưu tiên</text>
+    <text x="55" y="358" fill="#4ade80">daily chỉ tinh chỉnh entry</text>
+
+    <rect x="340" y="250" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="355" y="275" font-size="13" font-weight="700" fill="#f97316">⑤ Prop-firm min-days</text>
+    <text x="355" y="298" fill="#e5e7eb">Áp lực đủ ngày giao dịch</text>
+    <text x="355" y="316" fill="#94a3b8">ép vào lệnh B-setup</text>
+    <text x="355" y="340" fill="#4ade80">Xử lý: tách quy tắc min-days</text>
+    <text x="355" y="358" fill="#4ade80">khỏi quy tắc entry OSOK</text>
+
+    <rect x="640" y="250" width="280" height="140" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+    <text x="655" y="275" font-size="13" font-weight="700" fill="#f97316">⑥ Sai đơn vị mục tiêu</text>
+    <text x="655" y="298" fill="#e5e7eb">Áp pip target lên index/gold</text>
+    <text x="655" y="316" fill="#94a3b8">(đơn vị khác biệt hoàn toàn)</text>
+    <text x="655" y="340" fill="#4ade80">Xử lý: dùng % AWR, không</text>
+    <text x="655" y="358" fill="#4ade80">copy số pip forex</text>
+  </g>
+
+  <rect x="40" y="430" width="880" height="120" rx="8" fill="rgba(168,85,247,0.10)" stroke="#a855f7" stroke-dasharray="4 3"/>
+  <text x="480" y="460" font-size="13.5" fill="#a855f7" text-anchor="middle" font-weight="700">Nguyên tắc chung</text>
+  <text x="480" y="486" font-size="12.5" fill="#e5e7eb" text-anchor="middle">Chấm điểm scorecard TRƯỚC khi vào lệnh, không hồi tố sau khi thấy kết quả.</text>
+  <text x="480" y="506" font-size="12.5" fill="#e5e7eb" text-anchor="middle">Một tuần chỉ 1 setup A+ — mọi ngoại lệ đều cần ghi lại và xét riêng.</text>
+</svg>

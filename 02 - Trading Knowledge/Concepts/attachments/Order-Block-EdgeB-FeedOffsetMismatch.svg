@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">"Nến giảm cuối" khác nhau giữa feed — OB lệch vài pip vì bid vs mid</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">EURUSD H1: broker A (bid-chart) vs broker B (mid-chart), cùng nến gốc</text>
+
+  <line x1="640" y1="60" x2="640" y2="400" stroke="#2a2e39" stroke-width="1"/>
+
+  <!-- Left: bid chart -->
+  <rect x="60" y="90" width="220" height="34" rx="6" fill="#4a90d9" opacity="0.18" stroke="#4a90d9"/>
+  <text x="78" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#4a90d9">Broker A — bid-chart</text>
+
+  <g>
+    <line x1="100" y1="220" x2="100" y2="300" stroke="#ef5350" stroke-width="1"/>
+    <rect x="92" y="230" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="140" y1="240" x2="140" y2="320" stroke="#ef5350" stroke-width="1"/>
+    <rect x="132" y="250" width="16" height="60" rx="1" fill="#ef5350"/>
+  </g>
+  <line x1="180" y1="260" x2="180" y2="330" stroke="#ef5350" stroke-width="1"/>
+  <rect x="172" y="270" width="16" height="45" rx="1" fill="#ef5350"/>
+  <rect x="170" y="260" width="140" height="70" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+  <text x="175" y="253" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">OB (bid) 1.08820-1.08865</text>
+
+  <line x1="220" y1="150" x2="220" y2="280" stroke="#26a69a" stroke-width="1"/>
+  <rect x="212" y="160" width="16" height="110" rx="1" fill="#26a69a"/>
+  <text x="70" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Displacement bắt đầu ngay sau nến này</text>
+
+  <!-- Right: mid chart -->
+  <rect x="700" y="90" width="220" height="34" rx="6" fill="#ff9800" opacity="0.18" stroke="#ff9800"/>
+  <text x="718" y="113" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#ff9800">Broker B — mid-chart</text>
+
+  <g>
+    <line x1="740" y1="220" x2="740" y2="300" stroke="#ef5350" stroke-width="1"/>
+    <rect x="732" y="230" width="16" height="60" rx="1" fill="#ef5350"/>
+    <line x1="780" y1="240" x2="780" y2="320" stroke="#ef5350" stroke-width="1"/>
+    <rect x="772" y="250" width="16" height="60" rx="1" fill="#ef5350"/>
+  </g>
+  <line x1="820" y1="256" x2="820" y2="327" stroke="#ef5350" stroke-width="1"/>
+  <rect x="812" y="266" width="16" height="47" rx="1" fill="#ef5350"/>
+  <rect x="810" y="256" width="140" height="70" fill="#ff9800" opacity="0.14" stroke="#ff9800" stroke-dasharray="6 4"/>
+  <text x="815" y="249" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ff9800">OB (mid) 1.08835-1.08881</text>
+
+  <line x1="860" y1="150" x2="860" y2="280" stroke="#26a69a" stroke-width="1"/>
+  <rect x="852" y="160" width="16" height="110" rx="1" fill="#26a69a"/>
+  <text x="710" y="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Spread ~1.5 pip dịch cả vùng lên</text>
+
+  <rect x="60" y="440" width="1160" height="230" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="80" y="468" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#f2c94c">Cách vẽ OB đồng thuận giữa các feed</text>
+  <text x="80" y="496" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">1. Bid-chart cho giá thấp hơn mid-chart đúng bằng nửa spread trung bình của symbol lúc đó.</text>
+  <text x="80" y="520" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">2. Major pairs (EURUSD spread ~1 pip): lệch OB nhỏ, ảnh hưởng R:R không đáng kể.</text>
+  <text x="80" y="544" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">3. XAUUSD/exotic (spread 20-50 pip điểm): lệch OB có thể quyết định limit khớp hay không khớp.</text>
+  <text x="80" y="576" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Rule: luôn ghi rõ loại chart đang dùng (`chart_type: bid/mid/ask`) khi log OB — đặt limit rộng hơn</text>
+  <text x="80" y="598" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">nửa spread nếu backtest trên mid-chart nhưng thực thi trên broker bid-chart, và ngược lại.</text>
+  <text x="80" y="628" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Đây cũng là lý do limit "khớp trên backtest, không khớp khi live" — không phải do broker "gian".</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">EURUSD H1 · minh họa chênh lệch feed — tỉ lệ % thực tế cần đo theo spread trung bình từng symbol</text>
+</svg>

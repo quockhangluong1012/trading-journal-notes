@@ -32,14 +32,14 @@ tags: [weekly-summary, prop-firm-prep]
 | 2026-07-04 (Sat) | ✅           | ❌             | Có kế hoạch, không có bản ghi thực tế đã xảy ra |
 | 2026-07-05 (Sun) | ✅           | ❌             | Có kế hoạch, không có bản ghi thực tế đã xảy ra |
 
-**Từ ngày duy nhất có Daily Summary (07-03):** `backtests_logged: 0`, `trades_logged: 0`, `concepts_reviewed: 1` ([[33 - Turtle Soup]] — có bằng chứng frontmatter), `mistakes_triggered: []`, `net_r_today: 0`.
+**Từ ngày duy nhất có Daily Summary (07-03):** `backtests_logged: 0`, `trades_logged: 0`, `concepts_reviewed: 1` ([[33-Turtle-Soup]] — có bằng chứng frontmatter), `mistakes_triggered: []`, `net_r_today: 0`.
 
 **Suy luận gián tiếp (không phải bằng chứng Daily Summary, nhưng đối chiếu được qua frontmatter các note liên quan trong tuần):**
 - **Backtest cả tuần vẫn dừng ở 1 note** (`04 - Backtesting/2026-07-01/...`) — không có note backtest mới nào được tạo trong suốt 06-29→07-05. Nhịp backtest đứt ít nhất từ 07-02 tới hết 07-05 (4 ngày+), theo đúng cảnh báo lặp lại trong cả 3 file Daily Tasks của tuần.
 - **Không có lệnh live nào** trong `05 - Live Trading Journal/Trades/2026/07/` (thư mục tháng 7 hoàn toàn trống) và cũng không có ngày nào trong 06/29–06/30. Lệnh gần nhất toàn vault vẫn là `Loss - 01 - Trade 2026-06-18 NDX Short` → 17 ngày không lệnh live tính đến 07-05.
-- **3 concept chuyển từ `seed` → `developing` với `updated` nằm trong tuần** (06-29→07-05): [[22 - Mitigation Block]] (`updated: 2026-07-02`), [[33 - Turtle Soup]] (`updated: 2026-07-03`), [[21 - Liquidity Void]] (`updated: 2026-07-03`). Đây là `concepts_reviewed_week: 3` ở frontmatter trên — tính theo bằng chứng frontmatter thật, không tính theo checkbox tick.
+- **3 concept chuyển từ `seed` → `developing` với `updated` nằm trong tuần** (06-29→07-05): [[22-Mitigation-Block]] (`updated: 2026-07-02`), [[33-Turtle-Soup]] (`updated: 2026-07-03`), [[21-Liquidity-Void]] (`updated: 2026-07-03`). Đây là `concepts_reviewed_week: 3` ở frontmatter trên — tính theo bằng chứng frontmatter thật, không tính theo checkbox tick.
   > [!info] Lệch ngày cần lưu ý
-  > File Daily Tasks `2026-07-04` ghi các mục này là hoàn thành "hôm nay" (07-04), nhưng `updated` của [[22 - Mitigation Block]] lại là `2026-07-02` — sớm hơn 2 ngày so với ngày được tick. Không tự sửa số liệu này — chỉ nêu ra để Khang tự đối chiếu lại xem có phải tick nhầm ngày hay note chỉ được review lại (không sửa nội dung) nên `updated` không đổi.
+  > File Daily Tasks `2026-07-04` ghi các mục này là hoàn thành "hôm nay" (07-04), nhưng `updated` của [[22-Mitigation-Block]] lại là `2026-07-02` — sớm hơn 2 ngày so với ngày được tick. Không tự sửa số liệu này — chỉ nêu ra để  tự đối chiếu lại xem có phải tick nhầm ngày hay note chỉ được review lại (không sửa nội dung) nên `updated` không đổi.
 
 ## 🎯 Đối chiếu mục tiêu (theo công thức cột mốc, không dùng field `progress` ghi tay)
 
@@ -57,7 +57,7 @@ Không có gì thay đổi so với đối chiếu trong Daily Summary `2026-07-
 **Vấn đề dữ liệu khác đã biết, vẫn chưa được vá:**
 - `baseline: ~15 backtest` của [[Build a statistically validated backtest sample]] vẫn lệch xa với thực tế chỉ **1 note** trong `04 - Backtesting`.
 - `baseline: ~20 setup` của [[Master the ICT 2022 Model]] có cùng vấn đề (chỉ 1 backtest note thực tế).
-- 3/3 note lỗi top hiện tại — [[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]], [[07 - Mistake - Risk more than 0.5% total account]] — vẫn hoàn toàn rỗng (0 dòng nội dung), chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] ("viết biện pháp đối phó").
+- 3/3 note lỗi top hiện tại — [[06-Mistake-Not-Have-Market-Structure-Shift]], [[09-Mistake-Wrong-daily-bias]], [[07-Mistake-Risk-more-than-0.5-total-account]] — vẫn hoàn toàn rỗng (0 dòng nội dung), chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] ("viết biện pháp đối phó").
 
 ## 🩺 Pace check
 
@@ -67,7 +67,7 @@ Còn **186 ngày** tới hạn tự đặt `2027-01-07`. Backtest vẫn **1/200*
 
 1. **Phá chuỗi đứng yên 12 ngày ở bảng "Nhật ký tiến độ"** — ưu tiên tuyệt đối cho ít nhất 1 trong 5 goal đang đứng yên (FTMO, The5ers, Backtest sample, Master 2022 Model, Cut top-3 mistakes), vì đây là nợ cũ nhất, đứng trước cả việc thêm backtest mới.
 2. **Log ít nhất 1 backtest thật** vào `04 - Backtesting/2026-07-06/` (hoặc ngày tương ứng) — nợ đã kéo dài từ `2026-07-02`.
-3. **Viết nội dung cho ít nhất 1/3 note lỗi rỗng** ([[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]], [[07 - Mistake - Risk more than 0.5% total account]]) — đang chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] từ `2026-07-03`.
+3. **Viết nội dung cho ít nhất 1/3 note lỗi rỗng** ([[06-Mistake-Not-Have-Market-Structure-Shift]], [[09-Mistake-Wrong-daily-bias]], [[07-Mistake-Risk-more-than-0.5-total-account]]) — đang chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]] từ `2026-07-03`.
 4. Đảm bảo có **Daily Summary cho mọi ngày**, kể cả ngày không có backtest/lệnh live (ghi "0" thay vì bỏ trống) — để tuần `2026-W28` có đủ dữ liệu cho một rollup đầy đủ hơn tuần này.
 
 *(Không có lệnh live nào trong tuần nên không cần chạy Weekly Trading Review đầy đủ — vẫn đúng theo phạm vi Giai đoạn 1.)*
@@ -79,7 +79,7 @@ Còn **186 ngày** tới hạn tự đặt `2027-01-07`. Backtest vẫn **1/200*
 ```
 | 2026-W27 | 0 | 0 |  |  | Tuần đầu hệ thống tự động, chỉ 1/7 ngày có Daily Summary (07-03). 3 concept chuyển seed→developing (Mitigation Block, Turtle Soup, Liquidity Void). 0 backtest mới, 0 lệnh live, 12 ngày đứng yên ở 5/6 bảng Nhật ký tiến độ. |
 ```
-(Chất lượng quy trình và Kỷ luật để trống — Khang tự chấm 1–5.)
+(Chất lượng quy trình và Kỷ luật để trống —  tự chấm 1–5.)
 
 **[[Build a statistically validated backtest sample]] → Nhật ký tiến độ** — thêm dòng:
 ```

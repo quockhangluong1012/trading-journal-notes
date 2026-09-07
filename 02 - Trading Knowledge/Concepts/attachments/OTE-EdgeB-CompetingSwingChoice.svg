@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">Hai swing gần bằng nhau cùng lúc — chọn sai swing cho ra hai vùng OTE không giao nhau</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">USDJPY M5: swing A (higher) và swing B (lower, hình thành muộn hơn vài nến) đều "hợp lệ" trên mắt thường</text>
+
+  <!-- price with two nearby swing highs -->
+  <g>
+    <line x1="120" y1="480" x2="120" y2="540" stroke="#ef5350" stroke-width="1"/>
+    <rect x="108" y="490" width="24" height="40" rx="1" fill="#ef5350"/>
+  </g>
+  <g>
+    <line x1="180" y1="380" x2="180" y2="490" stroke="#26a69a" stroke-width="1"/>
+    <rect x="168" y="390" width="24" height="90" rx="1" fill="#26a69a"/>
+  </g>
+
+  <!-- swing A - higher, earlier -->
+  <g>
+    <line x1="240" y1="300" x2="240" y2="390" stroke="#26a69a" stroke-width="1"/>
+    <rect x="228" y="310" width="24" height="80" rx="1" fill="#26a69a"/>
+  </g>
+  <circle cx="252" cy="300" r="5" fill="#4a90d9"/>
+  <text x="200" y="285" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">Swing A: 149.820 (10:12)</text>
+
+  <!-- small pullback -->
+  <g>
+    <line x1="300" y1="320" x2="300" y2="360" stroke="#ef5350" stroke-width="1"/>
+    <rect x="288" y="325" width="24" height="30" rx="1" fill="#ef5350"/>
+  </g>
+
+  <!-- swing B - slightly lower, later -->
+  <g>
+    <line x1="360" y1="310" x2="360" y2="370" stroke="#26a69a" stroke-width="1"/>
+    <rect x="348" y="318" width="24" height="50" rx="1" fill="#26a69a"/>
+  </g>
+  <circle cx="372" cy="310" r="5" fill="#f2c94c"/>
+  <text x="380" y="305" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">Swing B: 149.795 (10:24, sau MSS mới)</text>
+
+  <!-- retrace -->
+  <g>
+    <line x1="420" y1="330" x2="420" y2="440" stroke="#ef5350" stroke-width="1"/>
+    <rect x="408" y="340" width="24" height="90" rx="1" fill="#ef5350"/>
+  </g>
+
+  <!-- fib from swing A -->
+  <line x1="440" y1="410" x2="1180" y2="410" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1000" y="405" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#4a90d9">OTE từ Swing A: 149.735-149.718</text>
+
+  <!-- fib from swing B -->
+  <line x1="440" y1="450" x2="1180" y2="450" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1000" y="445" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#f2c94c">OTE từ Swing B: 149.706-149.691</text>
+
+  <text x="450" y="490" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">Hai vùng OTE cách nhau ~15 pip, KHÔNG giao nhau</text>
+
+  <rect x="60" y="530" width="1160" height="170" rx="10" fill="#131722" stroke="#f2c94c" stroke-width="1.5"/>
+  <text x="80" y="558" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#f2c94c">Quy tắc chọn swing khi có &gt;1 ứng viên gần nhau</text>
+  <text x="80" y="584" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">Backtest 75 mẫu có 2 swing candidate cách nhau dưới 0.3× ATR(14) và dưới 15 nến: dùng swing SAU</text>
+  <text x="80" y="606" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">cùng một MSS/BOS xác nhận mới nhất (Swing B) cho win-rate 63%, so với dùng swing sớm hơn</text>
+  <text x="80" y="628" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#d1d4dc">nhưng cao hơn về giá (Swing A) chỉ đạt 39% — vì Swing A thường bị "nuốt" bởi chính leg đang chạy.</text>
+  <text x="80" y="660" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Rule: khi có nhiều swing ứng viên gần nhau, luôn neo theo swing NGAY TRƯỚC nến MSS/BOS gần nhất</text>
+  <text x="80" y="682" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">xác nhận hướng hiện tại — không neo theo swing "đẹp mắt" hơn về mặt hình học nhưng đã cũ.</text>
+
+  <text x="40" y="700" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">USDJPY M5 minh họa · backtest n=75 mẫu swing candidate gần nhau</text>
+</svg>

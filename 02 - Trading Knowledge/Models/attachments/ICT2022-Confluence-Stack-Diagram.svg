@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Confluence Stack — chồng xác suất lên Core Sequence</text>
+<rect x="60" y="480" width="620" height="60" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="370.0" y="501.55" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle">Core Sequence (7 bước bắt buộc)</text>
+<text x="370.0" y="518.45" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle">Bias→Sweep→Displacement/MSS→FVG→Entry→Target</text>
+<rect x="70" y="390" width="600" height="55" rx="10" fill="#ec4899" fill-opacity="0.15" stroke="#ec4899" stroke-width="1.5"/>
+<text x="90" y="413" font-size="13" font-weight="700" fill="#ec4899" text-anchor="start">1. POI Quality</text>
+<text x="90" y="432" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">FVG ⊂ OB ⊂ Breaker ⊂ Unicorn</text>
+<rect x="70" y="320" width="600" height="55" rx="10" fill="#a855f7" fill-opacity="0.15" stroke="#a855f7" stroke-width="1.5"/>
+<text x="90" y="343" font-size="13" font-weight="700" fill="#a855f7" text-anchor="start">2. Timing</text>
+<text x="90" y="362" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">Killzone → Macro time → NWOG/NDOG</text>
+<rect x="70" y="250" width="600" height="55" rx="10" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="90" y="273" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="start">3. Cross-market</text>
+<text x="90" y="292" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">SMT: NQ/ES, EURUSD/GBPUSD/DXY</text>
+<rect x="70" y="180" width="600" height="55" rx="10" fill="#eab308" fill-opacity="0.15" stroke="#eab308" stroke-width="1.5"/>
+<text x="90" y="203" font-size="13" font-weight="700" fill="#eab308" text-anchor="start">4. Location/Target</text>
+<text x="90" y="222" font-size="11.5" font-weight="400" fill="#94a3b8" text-anchor="start">Premium/Discount + Std Dev + ERL</text>
+<rect x="740" y="140" width="30" height="340" rx="10" fill="none" stroke="#334155" stroke-width="1.5"/>
+<rect x="743" y="446" width="24" height="14" fill="#f87171" fill-opacity="0.6"/>
+<text x="780" y="457" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">C</text>
+<rect x="743" y="356" width="24" height="14" fill="#94a3b8" fill-opacity="0.6"/>
+<text x="780" y="367" font-size="13" font-weight="700" fill="#94a3b8" text-anchor="start">B</text>
+<rect x="743" y="246" width="24" height="14" fill="#38bdf8" fill-opacity="0.6"/>
+<text x="780" y="257" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="start">A</text>
+<rect x="743" y="146" width="24" height="14" fill="#4ade80" fill-opacity="0.6"/>
+<text x="780" y="157" font-size="13" font-weight="700" fill="#4ade80" text-anchor="start">A+</text>
+<text x="730" y="124" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Điểm confluence</text>
+<text x="730" y="138" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">→ hạng → size</text>
+<text x="480" y="555" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Core Sequence = nền đặc, bắt buộc. 4 lớp confluence = phủ trong suốt, chỉ chồng thêm xác suất, không thay thế.</text>
+<text x="480" y="575" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Sơ đồ khái niệm minh họa cách chồng xác suất — không phải chart giá thật.</text>
+</svg>

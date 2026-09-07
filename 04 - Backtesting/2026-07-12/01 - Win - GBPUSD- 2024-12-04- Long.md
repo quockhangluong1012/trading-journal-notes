@@ -268,12 +268,119 @@ Giá retrace về H1 OB (Discount) → nến bearish displacement đóng xuyên 
 
 ---
 
+---
+
+## 9. Phân tích chuyên sâu bổ sung (2026-08-03)
+
+**Bản đồ liquidity IRL↔ERL tại thời điểm entry (1.26615):**
+- Đã bị lấy (ERL): old lows (1.24852) và 50% của OB H1 — quét trước reversal, dùng làm sweep hợp lệ.
+- **Chưa bị lấy (IRL, trên đường từ entry tới SL 1.26494)**: khoảng cách entry (1.26615) → CE (1.265785) → SL (1.26494) không có internal liquidity pool riêng được note ghi nhận — CE nằm giữa, SL nằm dưới đáy OB. Entry tại Between (fill_depth 21%) nghĩa là 79% chiều sâu OB (bao gồm toàn bộ vùng CE) *chưa được test* trước khi lệnh này coi là "đã xác nhận".
+- DOL chưa bị lấy: H1 DR High (1.27497), D1 FVG (1.28586–1.27688) — TP 1.27027 dừng trước cả DR High, hợp lý và có buffer, khác với case EURUSD (07-11) chốt quá gần.
+
+**Chất lượng displacement/MSS**: CISD (chuỗi nến bullish nuốt trọn nến bearish displacement) 16:05–16:50, tạo 2 FVG chồng OB — mô tả rõ hơn EURUSD nhưng vẫn thiếu `displacement_score` định lượng.
+
+**Yếu tố thời gian**: `session` để trống — không xác nhận được AM/PM cho giờ 16:00–16:50. Note tự cảnh báo cần quy đổi timezone trước khi tick "trong Kill Zone".
+
+**Vị trí entry trong dealing range**: Discount đúng phía, nhưng entry nông hơn CE khá rõ — `ce_ote_overlap: No`, entry ở fib ~21% trong OB, không trùng OTE 62-79%. Đây là entry Edge (trên CE) chứ không phải OTE-refine.
+
+**So sánh với các lệnh CE chuẩn trong vault**: đối chiếu [[01 - Win - EURUSD - 2021-05-03- Short]] và [[01 - Win - GBPUSD - 2014-06-25 - Long]] (entry_type: CE, CE 1.70712, first_error_step: 6 nhưng ghi khác ngữ cảnh — cần đối chiếu thận trọng, không đồng nhất tự động). Điểm khác biệt cốt lõi với GBPUSD hiện tại: `rr_if_ce` = 5.31 tức RR *lẽ ra* cao hơn gần gấp đôi (3.4→5.31) nếu chờ đúng CE — đây là chi phí cơ hội đo được bằng số, không phải suy đoán, khác với case EURUSD (07-11) không tính được do lỗi bounds. Xem SVG so sánh ở mục 10.
+
+![[MULTI-20260803-edge-vs-ce-entry.svg|760]]
+
+---
+
+## 10. Phản biện chuyên sâu (Devil's Advocate)
+
+**Evidence base**: chỉ có text note, không truy cập ảnh PNG đính kèm. `evidence_sufficiency: partial` — số liệu entry/CE/SL/TP đầy đủ và tính lại khớp (xem xác minh arithmetic), nhưng cấu trúc chart HTF (D1) không truy cập được để kiểm độc lập nhãn "tentative bias".
+
+**Claim graph:**
+- C1: Bias D1 "tentative" tại thời điểm phân tích, chỉ confirm bằng H1 retrace + M5 CISD.
+- C2: Sweep old lows + 50% OB + CISD + FVG hợp lệ trong Discount.
+- C3: Entry tại **trên CE** (Between, fill_depth 21%) dựa trên giả thuyết "nhiều trader đặt limit tại CE nên lệnh không được fill" — note tự ghi giả thuyết này **chưa có bằng chứng**. **Load-bearing**, vì đây là claim mà toàn bộ lesson và cả quyết định hạ Grade A→B của chính note xoay quanh.
+- C4: TP có buffer trước DR High — PASS, tốt hơn EURUSD (07-11).
+- C5 (từ C3): rr_if_ce = 5.31 vs r_planned thực nhận 3.4 → chi phí cơ hội đo được ~1.9R.
+
+**Điều gì survives**: C2 (sweep+CISD+FVG) và C4 (target có buffer) đều có evidence và logic mạch lạc, không phụ thuộc outcome. C1 cũng được xử lý minh bạch — note đã tự nhận diện mâu thuẫn nội bộ (checklist tick "rõ ràng" nhưng văn bản ghi "tạm thời") và tự sửa cách đánh giá.
+
+**Objections:**
+
+**O1 · [METHOD] · fatal · attacks C3**
+Claim: "Vào trên CE vì tin lệnh limit ở CE sẽ không được fill — một giả thuyết hợp lý."
+Fails: đây là một free parameter chọn *sau khi có cảm giác*, không kiểm định trước, và chính note gọi nó là "story chưa kiểm chứng". Test outcome (Win) không thể xác nhận hay phủ nhận giả thuyết vì N=1.
+Evidence: mục 3 "> [!important] ... một giả thuyết chưa có bằng chứng (chính bạn ghi 'tôi tự nghĩ, chưa có bằng chứng cụ thể')."
+Consequence: nếu giả thuyết sai, `rr_if_ce` = 5.31 cho thấy chi phí cơ hội gần 2R mỗi lần lặp lại hành vi này — một sai lệch hệ thống, không phải nhiễu ngẫu nhiên.
+Retracted by: ≥20-30 mẫu đo fill-rate tại CE vs tại Edge cùng loại POI-stack (CISD tạo 2 FVG chồng OB) — nếu fill-rate tại CE thấp hơn đáng kể (ví dụ <60%) so với Edge, giả thuyết được nâng lên PASS.
+Your best answer: "lệnh đã Win, nên giả thuyết ít nhất không sai lần này." Không cứu được — outcome không phải evidence cho một quy luật fill-rate; một lần fill thành công tại Edge không nói gì về việc CE có fill được hay không, vì CE chưa từng được test trong sample này.
+
+**O2 · [SELF-CONTRADICTION] · material · attacks C1**
+Claim gốc tick "Bias D1/H4 rõ ràng, không mâu thuẫn H1" trong checklist Setup Quality.
+Fails: mâu thuẫn trực tiếp với chính văn bản HTF Context ghi "Bias tại thời điểm phân tích D1 chưa được xác nhận chính xác... tạm thời tôi đang xác định là Bullish."
+Evidence: mục 1 (narrative) vs mục 5 GATE checklist (tick).
+Consequence: đây chính là lý do note tự hạ Grade A→B — objection này đã được note *chính nó* xử lý minh bạch, không cần phản biện thêm, chỉ cần xác nhận rule đã áp dụng đúng.
+Retracted by: đã retracted — note tự sửa cách đánh giá tại mục 4, dùng "bias confirm trước entry" thay vì "bias rõ ràng ngay từ D1". Ghi nhận là objection đã đóng (không phải đang mở).
+
+**O3 · [ARITHMETIC] · minor · attacks C5**
+`rr_if_ce` = 5.31 tính từ CE 1.265785 (đúng công thức (fvg_high+fvg_low)/2 = 1.265785) và SL giữ nguyên 1.26494 — verify: (1.27027−1.265785)/(1.265785−1.26494) = 5.308 ≈ 5.31, khớp. Không có sai số đáng kể. Retracted by: đã tự retracted qua verify, ghi nhận số liệu note đúng.
+
+**Filter**: soạn 3, cắt 0 — cả 3 đều thỏa discharge/consequence/rebuttal test; không có objection nào bị loại vì tất cả liên quan trực tiếp tới load-bearing claim hoặc đã tự đóng minh bạch.
+
+**Opposite case (từ cùng evidence)**: Entry trên CE (Between, không phải Edge cực đoan) có thể đọc như *entry hợp lý dựa trên tốc độ resolve của CISD mạnh* — note tự đưa ra cơ chế thay thế ở mục 7 Lesson: "sau một CISD mạnh, delivery đã chuyển sang tìm premium, giá thường tiếp tục ngay từ FVG đầu tiên/cạnh gần POI chứ không nhất thiết retrace sâu về CE." Đây là một cơ chế thị trường khả dĩ (đọc CISD-momentum), khác với giả thuyết ban đầu (sợ limit trader khác). Self-objection: cơ chế "CISD mạnh → giá không về CE" là diễn giải *sau* khi thấy note gốc tự sửa, không phải điều được note dùng để quyết định entry tại thời điểm đó — nên dù plausible hơn giả thuyết gốc, nó cũng chưa được kiểm định trước outcome. **Strength: equally viable** — cả hai cách đọc (giả thuyết gốc "sợ limit trader" và cơ chế thay thế "CISD-momentum") đều unfalsifiable từ 1 mẫu.
+**Distinguishing observable**: đo tốc độ retrace (số nến từ CISD tới điểm entry) trên ≥20 mẫu CISD-mạnh — nếu giá hệ thống không về CE sau CISD "mạnh" (định nghĩa được bằng % nến nuốt trọn), cơ chế CISD-momentum được ủng hộ hơn giả thuyết limit-trader.
+
+**Verdict**: **SURVIVES, WEAKENED** — C2/C4 (setup chain + target) đứng vững; C3 (load-bearing, entry-level) bị suy yếu nghiêm trọng bởi O1 nhưng không "BROKEN" vì không có FAIL định nghĩa, chỉ là UNSUPPORTED được chính note gán đúng. `evidence_sufficiency: partial`.
+
+**Falsification tests**:
+1. Thu thập ≥20-30 mẫu "CISD tạo ≥2 FVG chồng lên POI" — đo % giá có về CE trước khi tiếp diễn. Nếu <40% về CE → giả thuyết CISD-momentum được ủng hộ hơn "sợ limit trader"; nếu ≥60% về CE → Edge/Between-entry ở đây có thể là may rủi. Đóng O1 + phần opposite case.
+2. So sánh win-rate/expectancy giữa `entry_precision: CE` và `entry_precision: Between/Edge` trên toàn vault (đã có sẵn field, chỉ cần truy vấn) — nếu Between/Edge có expectancy thấp hơn CE dù win-rate ngang nhau, O1 được xác nhận bằng dữ liệu thật của chính vault.
+
+---
+
+## 11. Doctrine check (ICT 2022 canon)
+
+**Thesis**: Bias D1 tentative, confirm bằng H1 sweep + M5 CISD, entry tại Between (trên CE của OB H1), TP có buffer trước DR High.
+
+**Cần sửa** (load-bearing trước):
+- C3 Entry "Between" trên CE dựa trên giả thuyết fill-rate — **UNSUPPORTED** · SKILL.md § Consequent Encroachment: doctrine không cấm entry trên CE, nhưng note không có rule khách quan biện minh cho việc bỏ qua CE để vào sớm hơn, chỉ có giả thuyết tự nhận "chưa có bằng chứng" → cần dữ liệu fill-rate CE để nâng lên PASS. **(load-bearing)**
+- C1 Bias D1 "rõ ràng" (checklist gốc) — **FAIL** đã tự sửa · SKILL.md § không có mục riêng nhưng nguyên tắc chung: label không được mâu thuẫn với chính văn bản mô tả nó → note đã tự phát hiện và sửa cách đánh giá (ghi nhận là đã fix, không phải lỗi đang mở).
+
+**PASS**: C2 (sweep old lows + 50% OB + CISD + FVG hợp lệ trong Discount — SKILL.md § CISD, § Sweep), C4 (TP có buffer trước DR High, không đua vào pool — SKILL.md § Liquidity/Target).
+
+**Verdict**: **PARTIALLY ALIGNED** — load-bearing claim entry (C3) UNSUPPORTED (không FAIL định nghĩa), một claim phụ (C1 bias-label) đã FAIL nhưng đã được note tự sửa trong quá trình viết — verdict không được nâng lên ALIGNED chỉ vì tác giả tự sửa, vì claim entry vẫn treo.
+
+**Notes**: Doctrine gap giống EURUSD (07-11) — canon không định nghĩa "khi nào Edge/Between-entry hợp lệ ngang CE". Batch-level: cả 2 note Edge (07-11, 07-12) đều dùng chuẩn khác nhau để tự đánh giá — 07-11 tự chấm Entry Precision 5/10 và giữ Grade A; 07-12 tự chấm Entry Precision 4/10 và hạ Grade A→B. Đây là **doctrine drift giữa 2 case cùng batch**: cùng một loại lỗi (`first_error_step: entry`, Edge/Between-entry chưa kiểm định) nhưng được phản chiếu vào Overall Grade khác nhau. 07-12 áp dụng rule nghiêm hơn (hạ cả Overall Grade) — nên dùng chuẩn 07-12 làm baseline và note lại 07-11 nên được cân nhắc hạ tương tự (không tự sửa ở đây theo ràng buộc "chỉ append").
+
+---
+
+## 12. Lesson Learned (bản đầy đủ)
+
+**(a) Bài học kỹ thuật:**
+- *Ví dụ số thật*: entry 1.26615 (Between, fill_depth 21%) vs CE lý thuyết 1.265785 → `rr_if_ce` = 5.31 so với `r_multiple` thực nhận 3.4 — chênh ~1.9R mỗi lần lặp lại hành vi "vào trên CE vì sợ không fill". Xem SVG `[[MULTI-20260803-edge-vs-ce-entry.svg]]`.
+- *Tổng quát hóa*: sau một CISD/displacement mạnh, tồn tại 2 giả thuyết cạnh tranh về hành vi giá — (1) giá không về CE vì cạnh tranh limit order khác, (2) giá không về CE vì momentum của CISD mạnh đẩy delivery sang premium ngay. Cả hai chưa phân biệt được bằng 1 mẫu.
+
+**(b) Bài học quy trình/checklist:**
+- Không tick "bias rõ ràng" khi văn bản phân tích cùng lúc ghi "tạm thời/chưa xác nhận" — nguồn gốc trực tiếp của self-contradiction ở note này.
+- Đối chiếu `entry_precision` thực tế (Between/Edge/CE) với `rr_if_ce` mỗi lệnh để tích lũy dữ liệu chi phí cơ hội, không chỉ ghi RR đạt được.
+
+**(c) Bài học tâm lý-hành vi:**
+- Giả thuyết "trader khác cạnh tranh limit tại CE" là một narrative tự tạo ra cảm giác kiểm soát/lý trí cho một quyết định vốn là phản ứng cảm tính — pattern này giống hệt FOMO ở note EURUSD (07-11) nhưng đội lốt lý luận EV chặt chẽ hơn, nên khó nhận ra hơn.
+- Note tự trừ điểm setup "chỉ vì giá không về CE" trong khi trigger (sweep+CISD+FVG+Discount) vẫn hợp lệ 100% — cần tách bạch: chấm điểm theo tính hợp lệ của trigger, không theo RR đạt được.
+
+**(d) Rule đề xuất cho Playbook:**
+- [ ] Entry-level mặc định = CE khi CISD tạo ≥2 FVG chồng POI; chỉ cho phép vào sớm hơn nếu có ≥20 mẫu backtest xác nhận fill-rate tại CE thấp hơn đáng kể.
+- [ ] Cấm tick "bias rõ ràng" nếu văn bản mô tả cùng lệnh còn dùng từ "tạm thời/chưa xác nhận/tentative".
+- [ ] Áp dụng nhất quán rule hạ Grade A→B cho mọi lệnh `first_error_step: entry` chưa kiểm định — bao gồm cả các lệnh trong batch này đã lỡ giữ Grade A (xem Doctrine check mục 11, Notes).
+
+**(e) Điều KHÔNG nên học từ lệnh này:**
+- KHÔNG nên học rằng "vào trên CE khi nghi ngờ CE bị cạnh tranh" là một entry rule đáng tin. Outcome Win + RR 3.4 (vẫn tốt) có thể khiến hành vi này *cảm thấy* được xác nhận, dù chính note nói rõ nó chỉ "chưa bị phủ nhận", không phải "đã được chứng minh". Nếu giá retrace đủ sâu để chạm CE trước khi tiếp diễn (không xảy ra ở đây), một Edge/Between-entry với SL cùng vị trí vẫn sống — nhưng nếu retrace vượt qua CE rồi mới quay đầu, Edge/Between-entry có thể đã bị stop trước khi CE-entry kịp fill và hưởng lợi từ đúng cú quay đầu đó.
+
+---
+
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI ladder: [[25 - OB - Order Block]] · [[13 - FVG  - Fair Value Gap]]
-- Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[26 - OTE - Optimal Trade Entry]] · [[27 - Premium Discount]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]]
+- POI ladder: [[25-OB-Order-Block]] · [[13-FVG-Fair-Value-Gap]]
+- Entry refine: [[10-Consequent-Encroachment-Mean-Threshold]] · [[26-OTE-Optimal-Trade-Entry]] · [[27-Premium-Discount]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]]
 - Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]
 
 ---

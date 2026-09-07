@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="780" fill="#0f1420" rx="12"/>
+  <text x="40" y="42" font-size="26" font-weight="bold" fill="#e2e8f0">Case Study — USDJPY: Bias Tier A đúng cả tuần nhưng THUA đúng ngày NFP</text>
+  <text x="40" y="66" font-size="15" fill="#94a3b8">Thứ Sáu NFP: bias bullish tuần chuẩn xác — nhưng ngày công bố tin lại đảo chiều dữ dội</text>
+
+  <line x1="60" y1="700" x2="1150" y2="700" stroke="#334155" stroke-width="2"/>
+  <text x="80" y="722" font-size="13" fill="#94a3b8">Thứ Hai</text>
+  <text x="260" y="722" font-size="13" fill="#94a3b8">Thứ Ba</text>
+  <text x="440" y="722" font-size="13" fill="#94a3b8">Thứ Tư</text>
+  <text x="620" y="722" font-size="13" fill="#94a3b8">Thứ Năm</text>
+  <text x="820" y="722" font-size="13" fill="#94a3b8">Thứ Sáu (NFP 08:30)</text>
+
+  <!-- weekly bullish trend Mon-Thu -->
+  <g>
+    <rect x="100" y="560" width="16" height="35" fill="#22c55e"/><line x1="108" y1="548" x2="108" y2="602" stroke="#22c55e" stroke-width="2"/>
+    <rect x="140" y="520" width="16" height="40" fill="#22c55e"/><line x1="148" y1="508" x2="148" y2="565" stroke="#22c55e" stroke-width="2"/>
+    <rect x="280" y="480" width="16" height="35" fill="#22c55e"/><line x1="288" y1="468" x2="288" y2="522" stroke="#22c55e" stroke-width="2"/>
+    <rect x="320" y="445" width="16" height="35" fill="#22c55e"/><line x1="328" y1="433" x2="328" y2="487" stroke="#22c55e" stroke-width="2"/>
+    <rect x="460" y="415" width="16" height="30" fill="#22c55e"/><line x1="468" y1="405" x2="468" y2="450" stroke="#22c55e" stroke-width="2"/>
+    <rect x="500" y="385" width="16" height="30" fill="#22c55e"/><line x1="508" y1="375" x2="508" y2="422" stroke="#22c55e" stroke-width="2"/>
+    <rect x="640" y="355" width="16" height="30" fill="#22c55e"/><line x1="648" y1="345" x2="648" y2="392" stroke="#22c55e" stroke-width="2"/>
+    <rect x="680" y="330" width="16" height="28" fill="#22c55e"/><line x1="688" y1="320" x2="688" y2="365" stroke="#22c55e" stroke-width="2"/>
+  </g>
+  <text x="100" y="300" font-size="13" fill="#22c55e" font-weight="bold">Thứ Hai→Năm: bias bullish Tier A đúng 4 ngày liền, +145 pip tích lũy</text>
+
+  <!-- Friday morning still bullish -->
+  <g>
+    <rect x="840" y="300" width="16" height="28" fill="#22c55e"/><line x1="848" y1="290" x2="848" y2="335" stroke="#22c55e" stroke-width="2"/>
+  </g>
+  <text x="830" y="280" font-size="12" fill="#94a3b8">Trước NFP: vẫn bullish, HTF discount</text>
+
+  <!-- NFP spike then reversal -->
+  <line x1="880" y1="200" x2="880" y2="620" stroke="#f97316" stroke-width="3"/>
+  <text x="815" y="195" font-size="12" fill="#f97316">NFP: +310K vs +180K dự báo (mạnh hơn nhiều)</text>
+
+  <g>
+    <rect x="900" y="330" width="16" height="60" fill="#ef4444"/><line x1="908" y1="318" x2="908" y2="398" stroke="#ef4444" stroke-width="2"/>
+    <rect x="940" y="385" width="16" height="80" fill="#ef4444"/><line x1="948" y1="373" x2="948" y2="473" stroke="#ef4444" stroke-width="2"/>
+    <rect x="980" y="460" width="16" height="70" fill="#ef4444"/><line x1="988" y1="448" x2="988" y2="538" stroke="#ef4444" stroke-width="2"/>
+    <rect x="1020" y="525" width="16" height="65" fill="#ef4444"/><line x1="1028" y1="513" x2="1028" y2="598" stroke="#ef4444" stroke-width="2"/>
+  </g>
+  <text x="890" y="640" font-size="13" fill="#ef4444" font-weight="bold" textLength="304" lengthAdjust="spacingAndGlyphs">Đảo chiều dữ dội: USD mạnh toàn diện, JPY carry-unwind</text>
+  <text x="890" y="658" font-size="12" fill="#94a3b8">giá cắm qua toàn bộ vùng tích lũy 4 ngày trong 90 phút</text>
+
+  <!-- entry/stop markers -->
+  <circle cx="855" cy="295" r="7" fill="#38bdf8"/>
+  <text x="866" y="292" font-size="12" fill="#38bdf8">Entry Long trước tin 08:15 (theo bias tuần)</text>
+  <line x1="700" y1="500" x2="1140" y2="500" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1050" y="495" font-size="12" fill="#ef4444">Stop bị quét 08:52</text>
+
+  <!-- result box -->
+  <rect x="60" y="100" width="470" height="150" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="75" y="125" font-size="14" fill="#e2e8f0" font-weight="bold">Kết quả bằng số cả tuần</text>
+  <text x="75" y="146" font-size="13" fill="#94a3b8">Thứ Hai-Năm: 4 lệnh theo bias, +145 pip tổng (~3.8R)</text>
+  <text x="75" y="164" font-size="13" fill="#94a3b8">Thứ Sáu NFP: 1 lệnh theo bias tuần, -38 pip (-1.4R)</text>
+  <text x="75" y="182" font-size="13" fill="#94a3b8">Net tuần: vẫn dương (+2.4R) nhưng lệnh Thứ Sáu</text>
+  <text x="75" y="200" font-size="13" fill="#94a3b8">xóa gần 40% lợi nhuận tích lũy trong một buổi sáng</text>
+  <text x="75" y="222" font-size="13" fill="#eab308">Bài học: bias tuần đúng không miễn trừ rủi ro tin</text>
+  <text x="75" y="240" font-size="13" fill="#eab308">ngày — luôn giảm size hoặc đứng ngoài giờ NFP/CPI</text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 640" width="1150" height="640" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1150" height="640" fill="#ffffff"/>
+  <text x="30" y="34" font-size="22" font-weight="bold" fill="#1a1a1a">Case Studies — MSS Ngoài Vùng POI (kịch bản minh họa)</text>
+  <text x="30" y="55" font-size="12.5" fill="#555" font-style="italic">Kịch bản minh họa, không phải log giao dịch thật — số liệu đại diện</text>
+
+  <!-- Case A -->
+  <rect x="30" y="75" width="350" height="530" rx="8" fill="#fdecea" stroke="#c62828"/>
+  <text x="45" y="100" font-size="15" font-weight="bold" fill="#c62828">Case A — Thất bại</text>
+  <text x="45" y="118" font-size="11.5" fill="#333">NDX · NY session · bias short H1</text>
+
+  <rect x="45" y="130" width="320" height="150" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="55,200 90,205 120,195 150,210 180,190 210,170 240,205 270,235 300,250 330,245 355,215" fill="none" stroke="#c62828" stroke-width="2.5"/>
+  <line x1="45" y1="195" x2="365" y2="195" stroke="#f9a825" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="50" y="190" font-size="10" fill="#3a2c00">"OB M5" tự gọi tên (sai)</text>
+  <line x1="45" y1="240" x2="365" y2="240" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="50" y="252" font-size="10" fill="#2e7d32">Bullish OB H1 thật (chưa tới)</text>
+
+  <text x="45" y="298" font-size="11.5" font-weight="bold" fill="#333">21:10–21:24 giờ VN</text>
+  <text x="45" y="316" font-size="11" fill="#333">21:10 giá ở EQ 48%, không gần</text>
+  <text x="45" y="332" font-size="11" fill="#333">POI H1 nào. 21:14 mini-MSS M5.</text>
+  <text x="45" y="348" font-size="11" fill="#333">21:15 tự gọi vùng đó là "OB M5"</text>
+  <text x="45" y="364" font-size="11" fill="#333">(timeframe shopping). 21:16 vào</text>
+  <text x="45" y="380" font-size="11" fill="#333">long. 21:24 giá xuống quét SL,</text>
+  <text x="45" y="396" font-size="11" fill="#333">rồi mới đảo chiều tại OB H1 thật.</text>
+
+  <rect x="45" y="425" width="320" height="55" rx="6" fill="#c62828"/>
+  <text x="58" y="447" font-size="12" font-weight="bold" fill="#ffffff">Kết quả: −0.5% · Audit hạng F</text>
+  <text x="58" y="465" font-size="11" fill="#ffffff">0/4 câu cốt lõi PASS</text>
+
+  <text x="45" y="500" font-size="11" fill="#333" font-style="italic">Bài học: nêu tên một vùng không</text>
+  <text x="45" y="516" font-size="11" fill="#333" font-style="italic">đồng nghĩa vùng đó là POI hợp lệ.</text>
+  <text x="45" y="590" font-size="10.5" fill="#777" font-style="italic">Kịch bản minh họa, không phải log thật.</text>
+
+  <!-- Case B -->
+  <rect x="400" y="75" width="350" height="530" rx="8" fill="#e8f5e9" stroke="#2e7d32"/>
+  <text x="415" y="100" font-size="15" font-weight="bold" fill="#2e7d32">Case B — Đúng (bỏ lỡ cơ hội)</text>
+  <text x="415" y="118" font-size="11.5" fill="#333">XAUUSD · London · bias long H1</text>
+
+  <rect x="415" y="130" width="320" height="150" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="425,180 455,190 485,175 515,195 545,215 575,205 605,225 635,240 665,255 695,230 720,180" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+  <line x1="415" y1="195" x2="735" y2="195" stroke="#f9a825" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="420" y="190" font-size="10" fill="#3a2c00">MSS đẹp tại EQ 52% (bỏ qua)</text>
+  <line x1="415" y1="255" x2="735" y2="255" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="420" y="267" font-size="10" fill="#2e7d32">POI H1 thật (~40 pip dưới)</text>
+
+  <text x="415" y="298" font-size="11.5" font-weight="bold" fill="#333">15:20–15:52 giờ VN (London)</text>
+  <text x="415" y="316" font-size="11" fill="#333">15:20 MSS M5 đẹp tại EQ 52%,</text>
+  <text x="415" y="332" font-size="11" fill="#333">POI H1 còn cách 40 pip. 15:22</text>
+  <text x="415" y="348" font-size="11" fill="#333">không vào theo bộ lọc EQ.</text>
+  <text x="415" y="364" font-size="11" fill="#333">15:34 giá tăng ngắn rồi giảm</text>
+  <text x="415" y="380" font-size="11" fill="#333">mạnh, quét đúng vùng bỏ qua,</text>
+  <text x="415" y="396" font-size="11" fill="#333">15:52 MSS thật tại POI H1.</text>
+
+  <rect x="415" y="425" width="320" height="55" rx="6" fill="#2e7d32"/>
+  <text x="428" y="447" font-size="12" font-weight="bold" fill="#ffffff">Kết quả: không lỗ ở vùng giả;</text>
+  <text x="428" y="465" font-size="11" fill="#ffffff">entry thật đúng vị trí sau đó</text>
+
+  <text x="415" y="500" font-size="11" fill="#333" font-style="italic">Bài học: bộ lọc EQ + khoảng cách</text>
+  <text x="415" y="516" font-size="11" fill="#333" font-style="italic">tới POI đã biết ngăn entry sai vị trí.</text>
+  <text x="415" y="590" font-size="10.5" fill="#777" font-style="italic">Kịch bản minh họa, không phải log thật.</text>
+
+  <!-- Case C -->
+  <rect x="770" y="75" width="350" height="530" rx="8" fill="#fff8e1" stroke="#f9a825"/>
+  <text x="785" y="100" font-size="15" font-weight="bold" fill="#3a2c00">Case C — Vùng xám</text>
+  <text x="785" y="118" font-size="11.5" fill="#3a2c00">XAUUSD · NY · MSS chớm ngoài mép POI</text>
+
+  <rect x="785" y="130" width="320" height="150" fill="#ffffff" stroke="#ddd"/>
+  <rect x="795" y="150" width="290" height="60" fill="#e3f2fd" stroke="#1565c0" stroke-dasharray="3,2"/>
+  <text x="800" y="165" font-size="9" fill="#1565c0">Ranh giới OB H1 (2340.0–2344.5)</text>
+  <polyline points="795,215 825,220 855,225 885,232 900,238 915,210 930,190 950,175 975,165 1005,155 1035,145 1060,135 1090,128" fill="none" stroke="#f9a825" stroke-width="2.5"/>
+  <line x1="785" y1="238" x2="1105" y2="238" stroke="#c62828" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="790" y="252" font-size="9.5" fill="#c62828">MSS tại 2339.7 (chớm ngoài, ~6.5%)</text>
+
+  <text x="785" y="298" font-size="11.5" font-weight="bold" fill="#333">Tình huống mơ hồ</text>
+  <text x="785" y="316" font-size="11" fill="#333">Giá chạm 2339.7, thấp hơn ranh</text>
+  <text x="785" y="332" font-size="11" fill="#333">giới OB (2340.0) đúng 0.3, ~6.5%</text>
+  <text x="785" y="348" font-size="11" fill="#333">chiều rộng vùng — sweep SSL,</text>
+  <text x="785" y="364" font-size="11" fill="#333">displacement mạnh, MSS rõ.</text>
+  <text x="785" y="380" font-size="11" fill="#333">5 tiêu chí khác đạt đủ, chỉ vị trí lệch.</text>
+
+  <rect x="785" y="425" width="320" height="55" rx="6" fill="#f9a825"/>
+  <text x="798" y="447" font-size="12" font-weight="bold" fill="#3a2c00">Chưa xác định — cần tie-break</text>
+  <text x="798" y="465" font-size="11" fill="#3a2c00">theo buffer cố định định trước</text>
+
+  <text x="785" y="500" font-size="11" fill="#333" font-style="italic">Bài học: nguyên tắc nhị phân không</text>
+  <text x="785" y="516" font-size="11" fill="#333" font-style="italic">tự xử lý vùng biên có gradient —</text>
+  <text x="785" y="532" font-size="11" fill="#333" font-style="italic">cần buffer định lượng viết trước.</text>
+  <text x="785" y="590" font-size="10.5" fill="#777" font-style="italic">Kịch bản minh họa, không phải log thật.</text>
+</svg>

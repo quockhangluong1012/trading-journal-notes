@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 7 — NO-TRADE: Asia range quá rộng nuốt cả setup</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">GBPJPY — Asia session dao động rộng gấp 3 lần bình thường do tin BOJ, London mở giữa range</text>
+
+<line x1="60" y1="480" x2="900" y2="480" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="360" x2="900" y2="360" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="240" x2="900" y2="240" stroke="#1f2937" stroke-width="1"/>
+
+<!-- wide asia range box -->
+<rect x="80" y="220" width="380" height="220" fill="rgba(234,179,8,0.10)" stroke="#eab308" stroke-dasharray="4 3"/>
+<text x="270" y="212" font-size="12" fill="#eab308" text-anchor="middle">Asia range: 85 pips (bình thường ~25-30 pips)</text>
+
+<!-- volatile asia candles -->
+<rect x="100" y="380" width="12" height="30" fill="#22c55e"/>
+<line x1="106" y1="365" x2="106" y2="415" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="125" y="330" width="12" height="40" fill="#22c55e"/>
+<line x1="131" y1="310" x2="131" y2="375" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="150" y="360" width="12" height="35" fill="#ef4444"/>
+<line x1="156" y1="345" x2="156" y2="400" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="175" y="290" width="12" height="45" fill="#22c55e"/>
+<line x1="181" y1="270" x2="181" y2="340" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="200" y="340" width="12" height="40" fill="#ef4444"/>
+<line x1="206" y1="325" x2="206" y2="385" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="225" y="250" width="12" height="45" fill="#22c55e"/>
+<line x1="231" y1="235" x2="231" y2="300" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="250" y="310" width="12" height="45" fill="#ef4444"/>
+<line x1="256" y1="295" x2="256" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="275" y="380" width="12" height="35" fill="#22c55e"/>
+<line x1="281" y1="365" x2="281" y2="420" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="300" y="270" width="12" height="45" fill="#22c55e"/>
+<line x1="306" y1="255" x2="306" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="325" y="330" width="12" height="40" fill="#ef4444"/>
+<line x1="331" y1="315" x2="331" y2="375" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="350" y="360" width="12" height="30" fill="#22c55e"/>
+<line x1="356" y1="345" x2="356" y2="395" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="375" y="300" width="12" height="40" fill="#22c55e"/>
+<line x1="381" y1="285" x2="381" y2="345" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="400" y="345" width="12" height="35" fill="#ef4444"/>
+<line x1="406" y1="330" x2="406" y2="385" stroke="#9ca3af" stroke-width="1.5"/>
+
+<!-- London open right in the middle -->
+<line x1="430" y1="220" x2="430" y2="440" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="430" y="460" font-size="11" fill="#3b82f6" text-anchor="middle">London Open — giá đang ở giữa range</text>
+
+<rect x="520" y="240" width="360" height="200" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="700" y="270" font-size="14" font-weight="700" fill="#f87171" text-anchor="middle">✗ Không có premium/discount đáng tin</text>
+<text x="540" y="300" font-size="12" fill="#94a3b8" text-anchor="start">Range Asia rộng gấp 3 lần bình thường</text>
+<text x="540" y="320" font-size="12" fill="#94a3b8" text-anchor="start">→ "old high" không rõ đâu là điểm sweep hợp lệ</text>
+<text x="540" y="345" font-size="12" fill="#94a3b8" text-anchor="start">→ mọi mức đều có thể vừa là swing thật</text>
+<text x="540" y="365" font-size="12" fill="#94a3b8" text-anchor="start">vừa là nhiễu tin BOJ qua đêm</text>
+<text x="540" y="395" font-size="13" font-weight="700" fill="#eab308" text-anchor="start">Quyết định: đứng ngoài London Open hôm đó</text>
+<text x="540" y="415" font-size="12" fill="#94a3b8" text-anchor="start">Chờ NY Open để range ổn định hơn rồi đánh giá lại</text>
+
+<rect x="60" y="450" width="840" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="80" y="475" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">Vì sao đứng ngoài: tin BOJ qua đêm đẩy Asia range lên 85 pips so với trung bình 25-30 pips</text>
+<text x="80" y="495" font-size="12" fill="#94a3b8" text-anchor="start">Khi Asia range vượt quá ~2x trung bình 20 ngày, khái niệm "quét thanh khoản old high" mất ý nghĩa —</text>
+<text x="80" y="515" font-size="12" fill="#94a3b8" text-anchor="start">vì bản thân old high vừa mới được tạo bởi biến động tin tức, không phải cấu trúc thanh khoản tự nhiên</text>
+<text x="80" y="535" font-size="12" fill="#94a3b8" text-anchor="start">Bài học: đo ADR/range Asia trước khi map premium-discount; range bất thường → bỏ qua phiên đó</text>
+</svg>

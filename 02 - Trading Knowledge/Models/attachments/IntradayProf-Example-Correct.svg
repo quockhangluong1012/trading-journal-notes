@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Segoe UI, Arial, sans-serif">
+<defs><marker id="arrOrangeEx" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#f97316"/></marker></defs>
+<rect width="960" height="560" rx="12" fill="#0d1117"/>
+<text x="480.0" y="36.0" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">Ví dụ đúng — London Normal Sell Profile</text>
+<rect x="90.0" y="200.0" width="780.0" height="40.0" rx="0" fill="rgba(59,130,246,0.20)" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="90.0" y="190.0" font-size="12" font-weight="400" fill="#3b82f6" text-anchor="start">CBDR 14h–20h — 28 pip</text>
+<line x1="90.0" y1="155.0" x2="870.0" y2="155.0" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="876.0" y="159.0" font-size="11.5" font-weight="400" fill="#eab308" text-anchor="start">1 SD</text>
+<line x1="90.0" y1="110.0" x2="870.0" y2="110.0" stroke="#eab308" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="876.0" y="114.0" font-size="11.5" font-weight="400" fill="#eab308" text-anchor="start">2 SD</text>
+<rect x="260.0" y="206.0" width="300.0" height="28.0" rx="0" fill="rgba(168,85,247,0.25)" stroke="#a855f7" stroke-width="1.5"/>
+<text x="260.0" y="262.0" font-size="12" font-weight="400" fill="#a855f7" text-anchor="start">Asian range 20h–0h — 18 pip</text>
+<path d="M 630,195 Q 650,130 655,112" stroke="#f97316" stroke-width="2.5" fill="none" marker-end="url(#arrOrangeEx)"/>
+<text x="560.0" y="96.0" font-size="12" font-weight="400" fill="#f97316" text-anchor="start">Judas Swing — London Normal</text>
+<text x="560.0" y="112.0" font-size="12" font-weight="400" fill="#f97316" text-anchor="start">Sell</text>
+<line x1="655.0" y1="112.0" x2="705.0" y2="165.0" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="710.0" y="176.0" font-size="12" font-weight="400" fill="#a855f7" text-anchor="start">MSS xuống (M5)</text>
+<rect x="680.0" y="165.0" width="55.0" height="40.0" rx="0" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="686.0" y="190.0" font-size="11.5" font-weight="400" fill="#3b82f6" text-anchor="start">FVG</text>
+<text x="90.0" y="470.0" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Entry SELL tại FVG, target xuống HTF discount PD array</text>
+</svg>

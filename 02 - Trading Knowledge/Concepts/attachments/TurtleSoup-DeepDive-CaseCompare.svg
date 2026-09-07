@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+
+  <text x="480" y="34" text-anchor="middle" fill="#d1d4dc" font-size="22" font-weight="bold">Turtle Soup hop le vs Dut gay chinh sach (CHF depeg kieu)</text>
+
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="40" y1="80" x2="460" y2="80"/>
+    <line x1="40" y1="150" x2="460" y2="150"/>
+    <line x1="40" y1="220" x2="460" y2="220"/>
+    <line x1="40" y1="290" x2="460" y2="290"/>
+    <line x1="40" y1="360" x2="460" y2="360"/>
+    <line x1="40" y1="430" x2="460" y2="430"/>
+    <line x1="500" y1="80" x2="920" y2="80"/>
+    <line x1="500" y1="150" x2="920" y2="150"/>
+    <line x1="500" y1="220" x2="920" y2="220"/>
+    <line x1="500" y1="290" x2="920" y2="290"/>
+    <line x1="500" y1="360" x2="920" y2="360"/>
+    <line x1="500" y1="430" x2="920" y2="430"/>
+  </g>
+
+  <!-- LEFT: valid turtle soup -->
+  <text x="250" y="65" text-anchor="middle" fill="#26a69a" font-size="16" font-weight="bold">Hop le: sweep tai equal lows</text>
+  <line x1="60" y1="280" x2="440" y2="280" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="65" y="272" fill="#f2c94c" font-size="11">equal lows (SSL)</text>
+
+  <rect x="120" y="200" width="12" height="40" fill="#ef5350"/>
+  <rect x="140" y="220" width="12" height="45" fill="#ef5350"/>
+  <rect x="160" y="240" width="12" height="35" fill="#ef5350"/>
+  <rect x="182" y="260" width="12" height="20" fill="#ef5350"/>
+  <line x1="188" y1="255" x2="188" y2="310" stroke="#ef5350" stroke-width="2"/>
+  <text x="150" y="330" fill="#d1d4dc" font-size="10">sweep (wick)</text>
+
+  <rect x="210" y="230" width="12" height="40" fill="#26a69a"/>
+  <rect x="230" y="190" width="12" height="45" fill="#26a69a"/>
+  <rect x="250" y="150" width="12" height="45" fill="#26a69a"/>
+  <text x="200" y="140" fill="#26a69a" font-size="11">reclaim + displacement</text>
+
+  <line x1="260" y1="175" x2="320" y2="175" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="270" y="167" fill="#ffffff" font-size="10">MSS</text>
+
+  <text x="250" y="400" text-anchor="middle" fill="#d1d4dc" font-size="12">Thanh khoan tu nhien can kiet,</text>
+  <text x="250" y="418" text-anchor="middle" fill="#d1d4dc" font-size="12">dong lenh dao chieu ro rang</text>
+
+  <!-- RIGHT: policy break -->
+  <text x="710" y="65" text-anchor="middle" fill="#ef5350" font-size="16" font-weight="bold">Dut gay: muc chinh sach sup do</text>
+  <line x1="520" y1="280" x2="900" y2="280" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="525" y="272" fill="#f2c94c" font-size="11">muc san duy tri boi chinh sach</text>
+
+  <rect x="560" y="270" width="12" height="15" fill="#26a69a"/>
+  <rect x="580" y="268" width="12" height="16" fill="#26a69a"/>
+  <rect x="600" y="269" width="12" height="14" fill="#26a69a"/>
+  <text x="560" y="255" fill="#d1d4dc" font-size="10">on dinh truoc do (nhieu nam)</text>
+
+  <!-- sudden one-directional break, no reclaim -->
+  <rect x="630" y="230" width="12" height="50" fill="#ef5350"/>
+  <rect x="650" y="300" width="12" height="90" fill="#ef5350"/>
+  <line x1="656" y1="230" x2="656" y2="395" stroke="#ef5350" stroke-width="2"/>
+  <rect x="670" y="380" width="12" height="30" fill="#ef5350"/>
+  <rect x="690" y="390" width="12" height="20" fill="#ef5350"/>
+
+  <text x="770" y="330" fill="#d1d4dc" font-size="12">Khong co reclaim -</text>
+  <text x="770" y="348" fill="#d1d4dc" font-size="12">bien dong mot chieu</text>
+  <text x="770" y="366" fill="#d1d4dc" font-size="12">cuc doan, khong dao lai</text>
+
+  <rect x="630" y="420" width="270" height="40" fill="rgba(239,83,80,0.15)" stroke="#ef5350" stroke-width="1"/>
+  <text x="765" y="444" text-anchor="middle" fill="#ef5350" font-size="12">Khong ap dung logic Turtle Soup thong thuong</text>
+
+  <!-- Legend -->
+  <g transform="translate(40,480)">
+    <rect x="0" y="0" width="14" height="14" fill="#26a69a"/>
+    <text x="20" y="12" fill="#d1d4dc" font-size="12">Nen tang</text>
+    <rect x="120" y="0" width="14" height="14" fill="#ef5350"/>
+    <text x="140" y="12" fill="#d1d4dc" font-size="12">Nen giam</text>
+    <line x1="240" y1="7" x2="270" y2="7" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <text x="276" y="12" fill="#d1d4dc" font-size="12">Muc thanh khoan / chinh sach</text>
+    <line x1="500" y1="7" x2="530" y2="7" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="536" y="12" fill="#d1d4dc" font-size="12">MSS xac nhan</text>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="1080" height="560" fill="#ffffff"/>
+  <text x="540" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">EURUSD 2010-10-19 Long - Ban do Liquidity IRL/ERL quanh entry</text>
+  <text x="540" y="52" text-anchor="middle" font-size="13" fill="#666">OB H1 + FVG M5 overlap, nhung SL nam gan mot vung chua duoc map ro</text>
+
+  <!-- LEFT PANEL: what the note claims -->
+  <text x="235" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#2980b9">NOTE GOC MO TA</text>
+  <rect x="70" y="100" width="330" height="410" fill="#fafafa" stroke="#ddd"/>
+
+  <line x1="70" y1="130" x2="400" y2="130" stroke="#333" stroke-width="1.5"/>
+  <text x="405" y="134" font-size="11" fill="#333">OB Top 1.39140</text>
+
+  <rect x="70" y="130" width="330" height="55" fill="#b0b0b0" fill-opacity="0.4"/>
+  <text x="120" y="150" font-size="11" fill="#555">Order Block (POI H1)</text>
+  <line x1="70" y1="185" x2="400" y2="185" stroke="#333" stroke-width="1.5"/>
+  <text x="405" y="189" font-size="11" fill="#333">OB Bottom 1.38869</text>
+
+  <line x1="70" y1="200" x2="400" y2="200" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="405" y="204" font-size="10" fill="#e67e22">Entry (CE FVG M5) 1.39086</text>
+
+  <line x1="70" y1="230" x2="400" y2="230" stroke="#8e44ad" stroke-dasharray="4 3"/>
+  <text x="405" y="234" font-size="10" fill="#8e44ad">Old Low 1.38890 (target sweep)</text>
+
+  <line x1="70" y1="260" x2="400" y2="260" stroke="#c0392b" stroke-dasharray="5 3"/>
+  <text x="405" y="264" font-size="10" fill="#c0392b">SL 1.38801</text>
+
+  <rect x="70" y="230" width="330" height="30" fill="#f9d0c4" fill-opacity="0.5"/>
+  <text x="235" y="300" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">VUNG CHUA MAP RO</text>
+  <text x="235" y="318" text-anchor="middle" font-size="11" fill="#a93226">Giua Old Low va SL (~9 pip)</text>
+  <text x="235" y="336" text-anchor="middle" font-size="11" fill="#a93226">Co pool lien nao khac o day?</text>
+
+  <line x1="70" y1="480" x2="400" y2="480" stroke="#333" stroke-width="2"/>
+  <text x="405" y="484" font-size="11" fill="#333">Dealing Range Low 1.38319</text>
+
+  <path d="M 200 200 Q 190 220 200 260" stroke="#c0392b" stroke-width="2" fill="none" marker-end="url(#arrowR)"/>
+
+  <!-- RIGHT PANEL: what should be checked -->
+  <text x="745" y="88" text-anchor="middle" font-size="15" font-weight="700" fill="#1e8449">CAN LAM RO (checklist)</text>
+  <rect x="580" y="100" width="330" height="410" fill="#fafafa" stroke="#ddd"/>
+
+  <text x="600" y="140" font-size="13" fill="#1a1a1a" font-weight="700">1. Dealing Range High/Low</text>
+  <text x="600" y="160" font-size="11" fill="#c0392b">Note ghi High 1.14594 &lt; Low 1.38319</text>
+  <text x="600" y="178" font-size="11" fill="#c0392b">-&gt; loi so lieu, khong tinh duoc P/D</text>
+
+  <text x="600" y="220" font-size="13" fill="#1a1a1a" font-weight="700">2. MSS tren M5</text>
+  <text x="600" y="240" font-size="11" fill="#555">Note khong ghi gia dong nen</text>
+  <text x="600" y="258" font-size="11" fill="#555">vuot swing point -&gt; UNSUPPORTED</text>
+
+  <text x="600" y="300" font-size="13" fill="#1a1a1a" font-weight="700">3. External liquidity duoi SL</text>
+  <text x="600" y="320" font-size="11" fill="#555">Chua xac dinh co pool nao</text>
+  <text x="600" y="338" font-size="11" fill="#555">giua Old Low va SL hay khong</text>
+
+  <text x="600" y="390" font-size="13" fill="#1a1a1a" font-weight="700">4. Grade A dua vao process</text>
+  <text x="600" y="410" font-size="11" fill="#555">hay outcome? Khong co invalidation</text>
+  <text x="600" y="428" font-size="11" fill="#555">condition doc lap voi ket qua.</text>
+
+  <text x="540" y="540" text-anchor="middle" font-size="12" fill="#444">Bai hoc: note som nhat vault thieu du lieu tuong minh cho MSS/OB reaction -- load-bearing claim dung o UNSUPPORTED, khong phai FAIL hay PASS.</text>
+
+  <defs>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+</svg>

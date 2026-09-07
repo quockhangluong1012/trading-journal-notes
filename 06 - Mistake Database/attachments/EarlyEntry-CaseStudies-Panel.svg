@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 640" width="1150" height="640" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1150" height="640" fill="#ffffff"/>
+  <text x="30" y="34" font-size="22" font-weight="bold" fill="#1a1a1a">Case Studies — Entry Before Sweep (kịch bản minh họa)</text>
+  <text x="30" y="55" font-size="12.5" fill="#555" font-style="italic">Kịch bản minh họa, không phải log giao dịch thật — số liệu đại diện</text>
+
+  <!-- Case A -->
+  <rect x="30" y="75" width="350" height="530" rx="8" fill="#fdecea" stroke="#c62828"/>
+  <text x="45" y="100" font-size="15" font-weight="bold" fill="#c62828">Case A — Thất bại</text>
+  <text x="45" y="118" font-size="11.5" fill="#333">EURUSD · London Open · bias short H1</text>
+
+  <rect x="45" y="130" width="320" height="150" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="55,220 90,210 120,225 150,195 180,175 210,205 240,240 270,250 300,255 330,230 355,180" fill="none" stroke="#c62828" stroke-width="2.5"/>
+  <line x1="45" y1="195" x2="365" y2="195" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="368" y="198" font-size="10" fill="#2e7d32"></text>
+  <text x="50" y="190" font-size="10" fill="#2e7d32">Entry</text>
+  <line x1="45" y1="175" x2="365" y2="175" stroke="#c62828" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="50" y="170" font-size="10" fill="#c62828">SL</text>
+  <line x1="45" y1="240" x2="365" y2="240" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="50" y="252" font-size="10" fill="#1565c0">Equal lows (pool chưa quét)</text>
+
+  <text x="45" y="298" font-size="11.5" font-weight="bold" fill="#333">14:02–14:19 giờ VN</text>
+  <text x="45" y="316" font-size="11" fill="#333">14:02 wick đảo chiều M5, pool</text>
+  <text x="45" y="332" font-size="11" fill="#333">còn nguyên, bỏ qua kiểm tra.</text>
+  <text x="45" y="348" font-size="11" fill="#333">14:04 vào short tại FVG, SL</text>
+  <text x="45" y="364" font-size="11" fill="#333">trên đỉnh wick, risk 0.5%.</text>
+  <text x="45" y="380" font-size="11" fill="#333">14:11 giá quay đầu quét pool,</text>
+  <text x="45" y="396" font-size="11" fill="#333">chạm SL. 14:19 đảo chiều đúng</text>
+  <text x="45" y="412" font-size="11" fill="#333">hướng — nhưng đã bị out.</text>
+
+  <rect x="45" y="425" width="320" height="55" rx="6" fill="#c62828"/>
+  <text x="58" y="447" font-size="12" font-weight="bold" fill="#ffffff">Kết quả: −0.5% · Audit hạng F</text>
+  <text x="58" y="465" font-size="11" fill="#ffffff">0/4 câu cốt lõi PASS</text>
+
+  <text x="45" y="500" font-size="11" fill="#333" font-style="italic">Bài học: phản ứng giá đẹp không</text>
+  <text x="45" y="516" font-size="11" fill="#333" font-style="italic">thay thế bằng chứng pool đã hấp thụ.</text>
+  <text x="45" y="590" font-size="10.5" fill="#777" font-style="italic">Kịch bản minh họa, không phải log thật.</text>
+
+  <!-- Case B -->
+  <rect x="400" y="75" width="350" height="530" rx="8" fill="#e8f5e9" stroke="#2e7d32"/>
+  <text x="415" y="100" font-size="15" font-weight="bold" fill="#2e7d32">Case B — Đúng (bỏ lỡ cơ hội)</text>
+  <text x="415" y="118" font-size="11.5" fill="#333">NAS100 · NY session · bias long H1</text>
+
+  <rect x="415" y="130" width="320" height="150" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="425,240 455,235 485,220 515,190 545,160 575,145 605,150 635,135 665,120 695,110 720,105" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+  <line x1="415" y1="220" x2="735" y2="220" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="420" y="215" font-size="10" fill="#1565c0">Giá không vào (chờ sweep)</text>
+  <line x1="415" y1="245" x2="735" y2="245" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="420" y="257" font-size="10" fill="#1565c0">Equal lows (không bị quét)</text>
+
+  <text x="415" y="298" font-size="11.5" font-weight="bold" fill="#333">20:35–21:05 giờ VN (NY)</text>
+  <text x="415" y="316" font-size="11" fill="#333">20:35 nến xanh mạnh, pool còn</text>
+  <text x="415" y="332" font-size="11" fill="#333">nguyên. 20:36 checklist: chưa</text>
+  <text x="415" y="348" font-size="11" fill="#333">sweep → không vào.</text>
+  <text x="415" y="364" font-size="11" fill="#333">20:44 giá tăng thẳng, không hồi</text>
+  <text x="415" y="380" font-size="11" fill="#333">quét pool. 21:05 đạt target,</text>
+  <text x="415" y="396" font-size="11" fill="#333">cơ hội "nếu đã vào" đã đóng.</text>
+
+  <rect x="415" y="425" width="320" height="55" rx="6" fill="#2e7d32"/>
+  <text x="428" y="447" font-size="12" font-weight="bold" fill="#ffffff">Kết quả: không lỗ, bỏ lỡ +1.55%</text>
+  <text x="428" y="465" font-size="11" fill="#ffffff">tiềm năng (RR 1:3.1)</text>
+
+  <text x="415" y="500" font-size="11" fill="#333" font-style="italic">Bài học: process đúng ≠ kết quả</text>
+  <text x="415" y="516" font-size="11" fill="#333" font-style="italic">đẹp từng lệnh; EV dài hạn vẫn thắng.</text>
+  <text x="415" y="590" font-size="10.5" fill="#777" font-style="italic">Kịch bản minh họa, không phải log thật.</text>
+
+  <!-- Case C -->
+  <rect x="770" y="75" width="350" height="530" rx="8" fill="#fff8e1" stroke="#f9a825"/>
+  <text x="785" y="100" font-size="15" font-weight="bold" fill="#3a2c00">Case C — Vùng xám</text>
+  <text x="785" y="118" font-size="11.5" fill="#3a2c00">XAUUSD · NY · sweep nội vs ngoại khung</text>
+
+  <rect x="785" y="130" width="320" height="150" fill="#ffffff" stroke="#ddd"/>
+  <polyline points="795,150 825,165 855,180 885,200 900,235 915,255 930,225 950,195 975,170 1005,150 1035,135 1060,120 1090,110" fill="none" stroke="#f9a825" stroke-width="2.5"/>
+  <line x1="785" y1="200" x2="1105" y2="200" stroke="#c62828" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="790" y="196" font-size="10" fill="#c62828">Sweep M5 (nội khung, đã quét)</text>
+  <line x1="785" y1="255" x2="1105" y2="255" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="790" y="267" font-size="10" fill="#1565c0">Pool H1 (chưa quét, sâu hơn)</text>
+
+  <text x="785" y="298" font-size="11.5" font-weight="bold" fill="#333">Tình huống mơ hồ</text>
+  <text x="785" y="316" font-size="11" fill="#333">M5: sweep + displacement + MSS</text>
+  <text x="785" y="332" font-size="11" fill="#333">rõ ràng — "đủ điều kiện" theo khung</text>
+  <text x="785" y="348" font-size="11" fill="#333">entry. Nhưng pool H1 (swing low</text>
+  <text x="785" y="364" font-size="11" fill="#333">nhiều giờ trước) còn nguyên, sâu</text>
+  <text x="785" y="380" font-size="11" fill="#333">hơn mức vừa bị sweep M5.</text>
+
+  <rect x="785" y="425" width="320" height="55" rx="6" fill="#f9a825"/>
+  <text x="798" y="447" font-size="12" font-weight="bold" fill="#3a2c00">Chưa xác định — cần tie-break</text>
+  <text x="798" y="465" font-size="11" fill="#3a2c00">theo structural distance + hướng TP</text>
+
+  <text x="785" y="500" font-size="11" fill="#333" font-style="italic">Bài học: rule "cùng khung" đúng cho</text>
+  <text x="785" y="516" font-size="11" fill="#333" font-style="italic">mục đích nó nhắm, không tự xử lý</text>
+  <text x="785" y="532" font-size="11" fill="#333" font-style="italic">multi-timeframe pool còn treo.</text>
+  <text x="785" y="590" font-size="10.5" fill="#777" font-style="italic">Kịch bản minh họa, không phải log thật.</text>
+</svg>

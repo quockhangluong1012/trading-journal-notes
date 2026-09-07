@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="620" viewBox="0 0 940 620" font-family="Segoe UI, Arial, sans-serif">
+<rect x="0" y="0" width="940" height="620" rx="10" fill="#191b1f"/>
+<text x="470" y="26" font-size="14" fill="#e6e8ea" text-anchor="middle" font-weight="600">Khung quyet dinh 3 buoc - Chon dung Dealing Range Low khi co nhieu day canh tranh</text>
+<line x1="470" y1="40" x2="470" y2="430" stroke="#2b2f36" stroke-width="1.5"/>
+
+<!-- ============ LEFT PANEL: Nov'13 - REJECTED ============ -->
+<text x="30" y="58" font-size="13" fill="#fa5252" font-weight="600">Nov'13 Low - KHONG dung lam DR Low</text>
+
+<!-- mini price path: rally, Nov low, rally, Dec higher-low (unbroken) -->
+<polyline points="45,240 75,220 105,190 135,235 165,300 195,250 225,200 255,175 285,215 315,240"
+fill="none" stroke="#9aa0a6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+<circle cx="165" cy="300" r="7" fill="none" stroke="#fa5252" stroke-width="2.2"/>
+<text x="115" y="322" font-size="10" fill="#fa5252" font-weight="600">Nov'13 Low</text>
+
+<circle cx="285" cy="215" r="7" fill="none" stroke="#f0a500" stroke-width="2.2"/>
+<text x="230" y="238" font-size="9.5" fill="#f0a500" font-weight="600">Dec'13 Low (higher-low)</text>
+<line x1="285" y1="215" x2="420" y2="215" stroke="#f0a500" stroke-width="1.4" stroke-dasharray="5 3"/>
+<text x="330" y="211" font-size="9" fill="#f0a500">chua bi pha</text>
+
+<rect x="40" y="350" width="390" height="66" rx="6" fill="none" stroke="#fa5252" stroke-width="1.2"/>
+<text x="50" y="368" font-size="10" fill="#fa5252">Dec'13 (higher-low) van con nguyen giua Nov'13</text>
+<text x="50" y="382" font-size="10" fill="#fa5252">va gia hien tai -&gt; Nov'13 bi "khoa" phia sau.</text>
+<text x="50" y="400" font-size="10.5" fill="#fa5252" font-weight="700">= SSL pool cu (ERL degree cao hon), KHONG phai</text>
+<text x="50" y="414" font-size="10.5" fill="#fa5252" font-weight="700">MSS origin cua leg dang active.</text>
+
+<!-- ============ RIGHT PANEL: Feb'14 - ACCEPTED ============ -->
+<g transform="translate(470,0)">
+<text x="30" y="58" font-size="13" fill="#40c057" font-weight="600">Feb'14 Low - DUNG lam DR Low</text>
+
+<polyline points="45,300 75,260 105,220 135,180 165,235 195,300 225,250 255,120 285,60 315,40"
+fill="none" stroke="#9aa0a6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+<circle cx="195" cy="300" r="8" fill="none" stroke="#f0a500" stroke-width="2.6"/>
+<text x="135" y="322" font-size="10.5" fill="#f0a500" font-weight="700">Feb'14 Low = DR Low</text>
+
+<circle cx="315" cy="40" r="7" fill="none" stroke="#40c057" stroke-width="2.2"/>
+<text x="255" y="30" font-size="9.5" fill="#40c057" font-weight="600">May'14 High = DR High</text>
+
+<line x1="195" y1="235" x2="195" y2="300" stroke="#f0a500" stroke-width="1.6"/>
+<text x="200" y="270" font-size="9" fill="#f0a500">MSS + displacement</text>
+<text x="200" y="282" font-size="9" fill="#f0a500">bat nguon truc tiep tu day nay</text>
+
+<rect x="40" y="350" width="390" height="66" rx="6" fill="none" stroke="#40c057" stroke-width="1.2"/>
+<text x="50" y="368" font-size="10" fill="#40c057">Khong co higher-low nao chua-bi-pha nam giua</text>
+<text x="50" y="382" font-size="10" fill="#40c057">Feb'14 va cao trao hien tai (May'14).</text>
+<text x="50" y="400" font-size="10.5" fill="#40c057" font-weight="700">= MSS origin cua chinh leg dang retrace tu do</text>
+<text x="50" y="414" font-size="10.5" fill="#40c057" font-weight="700">-&gt; hop le lam DR Low hien tai.</text>
+</g>
+
+<!-- ============ 3-step checklist box (full width, below) ============ -->
+<rect x="30" y="440" width="880" height="160" rx="8" fill="#20232a" stroke="#2b2f36" stroke-width="1"/>
+<text x="50" y="466" font-size="12.5" fill="#e6e8ea" font-weight="700">3 buoc kiem tra khi co nhieu day canh tranh (ap dung tuan tu, dung dao thu tu):</text>
+
+<circle cx="60" cy="492" r="11" fill="#2b2f36" stroke="#f0a500" stroke-width="1.4"/>
+<text x="60" y="497" font-size="12" fill="#f0a500" text-anchor="middle" font-weight="700">1</text>
+<text x="82" y="488" font-size="11" fill="#e6e8ea" font-weight="600">Day nay co phai diem khoi phat MSS gan nhat khong?</text>
+<text x="82" y="503" font-size="10" fill="#9aa0a6">(Ngay sau day, gia co displacement pha cau truc va doi huong khong?)</text>
+
+<circle cx="60" cy="530" r="11" fill="#2b2f36" stroke="#f0a500" stroke-width="1.4"/>
+<text x="60" y="535" font-size="12" fill="#f0a500" text-anchor="middle" font-weight="700">2</text>
+<text x="82" y="526" font-size="11" fill="#e6e8ea" font-weight="600">Co day nao CAO HON nam xen giua no va gia hien tai, va day cao hon do CHUA bi pha?</text>
+<text x="82" y="541" font-size="10" fill="#9aa0a6">(Neu co -&gt; day sau bi khoa lai, roi khoi vai tro range-low hien tai - dung tai buoc nay)</text>
+
+<circle cx="60" cy="568" r="11" fill="#2b2f36" stroke="#f0a500" stroke-width="1.4"/>
+<text x="60" y="573" font-size="12" fill="#f0a500" text-anchor="middle" font-weight="700">3</text>
+<text x="82" y="564" font-size="11" fill="#e6e8ea" font-weight="600">Day con lai (sau khi loai o buoc 2) co phai la day gan nhat, chua-mitigate, vua lam ban dap</text>
+<text x="82" y="579" font-size="10" fill="#9aa0a6">cho leg dang mo rong toi dinh hien tai? Neu dung -&gt; day nay la DR Low hien tai.</text>
+
+</svg>

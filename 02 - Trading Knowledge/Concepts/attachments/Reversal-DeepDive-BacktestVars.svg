@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">Thiet ke backtest cho chuoi 3 tang Reversal</text>
+  <text x="30" y="60" font-family="Arial, sans-serif" font-size="15" fill="#d1d4dc">Bien do duoc va quy trinh kiem dinh, tranh look-ahead va selection bias</text>
+
+  <!-- flow boxes -->
+  <g font-family="Arial, sans-serif">
+    <rect x="40" y="90" width="190" height="80" rx="6" fill="#1e222d" stroke="#2962ff" stroke-width="2"/>
+    <text x="55" y="115" font-size="15" fill="#d1d4dc" font-weight="bold">1. Dinh nghia mau</text>
+    <text x="55" y="135" font-size="13" fill="#d1d4dc">Stage2 tai HTF PD</text>
+    <text x="55" y="152" font-size="13" fill="#d1d4dc">array da danh dau truoc</text>
+
+    <rect x="260" y="90" width="190" height="80" rx="6" fill="#1e222d" stroke="#2962ff" stroke-width="2"/>
+    <text x="275" y="115" font-size="15" fill="#d1d4dc" font-weight="bold">2. Tieu chi thang/thua</text>
+    <text x="275" y="135" font-size="13" fill="#d1d4dc">Thang = cham T1 truoc SL</text>
+    <text x="275" y="152" font-size="13" fill="#d1d4dc">Thua = cham SL truoc T1</text>
+
+    <rect x="480" y="90" width="190" height="80" rx="6" fill="#1e222d" stroke="#2962ff" stroke-width="2"/>
+    <text x="495" y="115" font-size="15" fill="#d1d4dc" font-weight="bold">3. Tach nhom</text>
+    <text x="495" y="135" font-size="13" fill="#d1d4dc">2-of-3 vs 3-of-3</text>
+    <text x="495" y="152" font-size="13" fill="#d1d4dc">so sanh rieng biet</text>
+
+    <rect x="700" y="90" width="220" height="80" rx="6" fill="#1e222d" stroke="#2962ff" stroke-width="2"/>
+    <text x="715" y="115" font-size="15" fill="#d1d4dc" font-weight="bold">4. Co mau toi thieu</text>
+    <text x="715" y="135" font-size="13" fill="#d1d4dc">&gt;= 30 case / nhom</text>
+    <text x="715" y="152" font-size="13" fill="#d1d4dc">truoc khi ket luan</text>
+
+    <line x1="230" y1="130" x2="255" y2="130" stroke="#ffffff" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="450" y1="130" x2="475" y2="130" stroke="#ffffff" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="670" y1="130" x2="695" y2="130" stroke="#ffffff" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#ffffff"/>
+    </marker>
+  </defs>
+
+  <!-- table of variables -->
+  <text x="40" y="215" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#d1d4dc">Bien do duoc</text>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">
+    <rect x="40" y="230" width="880" height="34" fill="#1e222d"/>
+    <text x="50" y="252">So nen Stage1-&gt;Stage2</text>
+    <text x="330" y="252">Do rong CISD / ATR(14)</text>
+    <text x="600" y="252">Do sau retest post-MSS (%)</text>
+
+    <rect x="40" y="270" width="880" height="34" fill="#131722"/>
+    <text x="50" y="292">So tang dat duoc (0-3)</text>
+    <text x="330" y="292">Vi tri trong P/D range (%)</text>
+    <text x="600" y="292">Ket qua theo R (T1/T2/SL)</text>
+  </g>
+
+  <!-- warning box -->
+  <rect x="40" y="330" width="880" height="160" rx="6" fill="#1e222d" stroke="#ef5350" stroke-width="2"/>
+  <text x="55" y="358" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ef5350">Tranh 2 loai bias khi backtest</text>
+  <text x="55" y="385" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Look-ahead bias: doc nen da dong tren chart lich su khien tuong minh biet realtime.</text>
+  <text x="55" y="408" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Khac phuc: replay tung nen mot, che phan chart phia sau diem quyet dinh.</text>
+  <text x="55" y="438" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Selection bias: chi ghi lai case dep, bo qua case mo ho khong vao lenh.</text>
+  <text x="55" y="461" font-family="Arial, sans-serif" font-size="14" fill="#d1d4dc">Khac phuc: log MOI lan Stage1/2 xuat hien, ke ca khi quyet dinh khong vao.</text>
+
+  <text x="40" y="520" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Cac so lieu vi du minh hoa quy trinh - can tu backtest de co ket qua thuc te, khong bia so lieu.</text>
+</svg>

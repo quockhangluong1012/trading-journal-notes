@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 840" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="840" fill="#ffffff"/>
+  <text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Case Studies — Trading Into Unswept Liquidity</text>
+  <text x="500" y="56" text-anchor="middle" font-size="14" fill="#555">4 case thật (mục 2 note gốc) + 1 case minh họa gray-zone</text>
+
+  <rect x="40" y="80" width="215" height="230" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="147" y="104" text-anchor="middle" font-size="12" font-weight="bold" fill="#c62828">#1 EURUSD 2021-05-07</text>
+  <text x="147" y="124" text-anchor="middle" font-size="11" fill="#333">External BSL trên entry</text>
+  <rect x="54" y="136" width="187" height="70" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="64" y="154" font-size="10" fill="#333">Nhầm internal sweep</text>
+  <text x="64" y="168" font-size="10" fill="#333">thành raid thật — short</text>
+  <text x="64" y="182" font-size="10" fill="#333">khi buy-side OB nguyên.</text>
+  <rect x="54" y="214" width="187" height="86" rx="6" fill="#c62828"/>
+  <text x="147" y="238" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">First error: draw</text>
+  <text x="147" y="258" text-anchor="middle" font-size="11" fill="#fff">Kết quả: -1R</text>
+  <text x="147" y="280" text-anchor="middle" font-size="10" fill="#fff">Pool: BSL external</text>
+
+  <rect x="270" y="80" width="215" height="230" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="377" y="104" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a2c00">#2 XAUUSD 2014-05-14</text>
+  <text x="377" y="124" text-anchor="middle" font-size="11" fill="#333">Nội bộ POI</text>
+  <rect x="284" y="136" width="187" height="70" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1"/>
+  <text x="294" y="154" font-size="10" fill="#3a2c00">SL đặt tại mép gần</text>
+  <text x="294" y="168" font-size="10" fill="#3a2c00">(RB low) của chính POI</text>
+  <text x="294" y="182" font-size="10" fill="#3a2c00">đang giao dịch.</text>
+  <rect x="284" y="214" width="187" height="86" rx="6" fill="#f9a825"/>
+  <text x="377" y="238" text-anchor="middle" font-size="11" font-weight="bold" fill="#3a2c00">First error: poi (SL)</text>
+  <text x="377" y="258" text-anchor="middle" font-size="11" fill="#3a2c00">Kết quả: -1R</text>
+  <text x="377" y="280" text-anchor="middle" font-size="10" fill="#3a2c00">Pool: phần còn lại POI</text>
+
+  <rect x="500" y="80" width="215" height="230" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="607" y="104" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">#3 XAUUSD 2014-05-19</text>
+  <text x="607" y="124" text-anchor="middle" font-size="11" fill="#333">POI sâu chưa test</text>
+  <rect x="514" y="136" width="187" height="70" rx="6" fill="#ffffff" stroke="#1565c0" stroke-width="1"/>
+  <text x="524" y="154" font-size="10" fill="#333">Short tại BB (0.618) khi</text>
+  <text x="524" y="168" font-size="10" fill="#333">OB (0.786) phía trên</text>
+  <text x="524" y="182" font-size="10" fill="#333">chưa chạm.</text>
+  <rect x="514" y="214" width="187" height="86" rx="6" fill="#1565c0"/>
+  <text x="607" y="238" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">First error: poi</text>
+  <text x="607" y="258" text-anchor="middle" font-size="11" fill="#fff">Kết quả: -1R</text>
+  <text x="607" y="280" text-anchor="middle" font-size="10" fill="#fff">Pool: OB terminal+cụm SL</text>
+
+  <rect x="730" y="80" width="215" height="230" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="837" y="104" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">#4 GBPUSD 2014-07-17</text>
+  <text x="837" y="124" text-anchor="middle" font-size="11" fill="#333">ERL cấu trúc bên dưới</text>
+  <rect x="744" y="136" width="187" height="70" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="754" y="154" font-size="10" fill="#333">Long tại FVG/OTE sát</text>
+  <text x="754" y="168" font-size="10" fill="#333">"móng" range khi SSL</text>
+  <text x="754" y="182" font-size="10" fill="#333">chưa bị quét.</text>
+  <rect x="744" y="214" width="187" height="86" rx="6" fill="#2e7d32"/>
+  <text x="837" y="238" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">First error: sweep</text>
+  <text x="837" y="258" text-anchor="middle" font-size="11" fill="#fff">Kết quả: -1R</text>
+  <text x="837" y="280" text-anchor="middle" font-size="10" fill="#fff">Pool: SSL range low</text>
+
+  <!-- Gray zone case -->
+  <rect x="40" y="330" width="920" height="230" rx="10" fill="#f5f5f5" stroke="#ddd" stroke-width="2"/>
+  <text x="500" y="356" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">Case Gray-zone (Minh họa) — Pool nội bộ nhỏ giữa entry và TP</text>
+  <text x="500" y="376" text-anchor="middle" font-size="11" fill="#555">USDJPY, H1 — EQL nhỏ 0.3 ATR nằm giữa đường tới TP, KHÔNG cùng phía SL</text>
+
+  <rect x="60" y="392" width="280" height="60" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1"/>
+  <text x="70" y="412" font-size="11" fill="#3a2c00">Gate cốt lõi không kích hoạt</text>
+  <text x="70" y="428" font-size="11" fill="#3a2c00">NO-TRADE vì pool không</text>
+  <text x="70" y="444" font-size="11" fill="#3a2c00">cùng phía SL.</text>
+
+  <rect x="360" y="392" width="280" height="60" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1"/>
+  <text x="370" y="412" font-size="11" fill="#3a2c00">Giá có thể quét EQL rồi mới</text>
+  <text x="370" y="428" font-size="11" fill="#3a2c00">tiếp tục — không đe dọa SL,</text>
+  <text x="370" y="444" font-size="11" fill="#3a2c00">nhưng có thể gây hồi giá.</text>
+
+  <rect x="660" y="392" width="260" height="60" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1"/>
+  <text x="670" y="412" font-size="11" fill="#3a2c00">Rule hiện tại không phân xử</text>
+  <text x="670" y="428" font-size="11" fill="#3a2c00">— chưa có hướng dẫn quản</text>
+  <text x="670" y="444" font-size="11" fill="#3a2c00">lý lệnh qua vùng này.</text>
+
+  <rect x="60" y="464" width="860" height="76" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="490" y="490" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a2c00">Bài học: Draw gate trả lời "có nên vào lệnh", chưa trả lời</text>
+  <text x="490" y="512" text-anchor="middle" font-size="12" fill="#3a2c00">"quản lý lệnh thế nào khi có pool nhỏ giữa đường tới TP" — backlog bổ sung.</text>
+
+  <!-- Comparison table -->
+  <rect x="40" y="580" width="920" height="230" rx="10" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="500" y="606" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">So sánh: Pool nguy hiểm vs Pool trung tính</text>
+
+  <line x1="60" y1="622" x2="940" y2="622" stroke="#999" stroke-width="1"/>
+  <text x="80" y="644" font-size="12" font-weight="bold" fill="#1a1a1a">Tiêu chí</text>
+  <text x="420" y="644" font-size="12" font-weight="bold" fill="#c62828">Pool cùng phía SL (4 case thật)</text>
+  <text x="760" y="644" font-size="12" font-weight="bold" fill="#f9a825">Pool giữa đường tới TP (minh họa)</text>
+  <line x1="60" y1="654" x2="940" y2="654" stroke="#ccc" stroke-width="1"/>
+
+  <text x="80" y="676" font-size="12" fill="#333">Đe dọa vốn?</text>
+  <text x="420" y="676" font-size="12" fill="#333">Có — SL bị quét trước khi đúng hướng</text>
+  <text x="760" y="676" font-size="12" fill="#333">Không — SL không gần pool này</text>
+  <line x1="60" y1="688" x2="940" y2="688" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="710" font-size="12" fill="#333">Rule áp dụng</text>
+  <text x="420" y="710" font-size="12" fill="#333">Draw gate: NO-TRADE / chờ quét</text>
+  <text x="760" y="710" font-size="12" fill="#333">Chưa có rule cụ thể</text>
+  <line x1="60" y1="722" x2="940" y2="722" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="744" font-size="12" fill="#333">Rủi ro nếu bỏ qua</text>
+  <text x="420" y="744" font-size="12" fill="#333">Mất vốn thật (-1R, 4/4 case)</text>
+  <text x="760" y="744" font-size="12" fill="#333">Rủi ro tâm lý, không mất vốn trực tiếp</text>
+  <line x1="60" y1="756" x2="940" y2="756" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="778" font-size="12" fill="#333">Evidence Tier</text>
+  <text x="420" y="778" font-size="12" fill="#333">Tier 1 (n=4 thật)</text>
+  <text x="760" y="778" font-size="12" fill="#333">Tier 0 (minh họa, chưa kiểm định)</text>
+</svg>

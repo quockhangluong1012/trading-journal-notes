@@ -75,7 +75,7 @@ tags:
 > [!info] Ghi chú chuyển đổi template (2026-07-17)
 > Convert từ template backtest cũ sang **template POI & Step Decision**. Dữ liệu gốc (entry/SL/TP/result/lesson learned) giữ nguyên. Ba điểm cần lưu ý:
 > 1. **Sửa lỗi ngày tháng tồn đọng đã tự phát hiện trong bản gốc**: tiêu đề/heading gốc ghi nhầm "2005-05-02" và bảng Summary ghi nhầm "2021-05-03", trong khi `trade_date` frontmatter và tên file đều là đúng **2021-05-07**. Bản convert này đồng bộ lại ngày ở mọi nơi theo đúng `trade_date`.
-> 2. **Grade đang mâu thuẫn giữa frontmatter (C) và bảng Summary gốc (D)** — bản gốc tự flag việc này ở mục Data Integrity nhưng chưa chốt số nào đúng. Bản convert giữ nguyên `grade: C` từ frontmatter (vì đây là nguồn dashboard đọc), nhưng **đề xuất Khang xem lại**: với 3 GATE fail (sai Kill Zone, displacement yếu, chọn sai short-term draw on liquidity) + tự chấm 40% khớp mô hình, D hoặc thậm chí F có thể phản ánh đúng hơn C.
+> 2. **Grade đang mâu thuẫn giữa frontmatter (C) và bảng Summary gốc (D)** — bản gốc tự flag việc này ở mục Data Integrity nhưng chưa chốt số nào đúng. Bản convert giữ nguyên `grade: C` từ frontmatter (vì đây là nguồn dashboard đọc), nhưng **đề xuất  xem lại**: với 3 GATE fail (sai Kill Zone, displacement yếu, chọn sai short-term draw on liquidity) + tự chấm 40% khớp mô hình, D hoặc thậm chí F có thể phản ánh đúng hơn C.
 > 3. **Nhãn "Order Block 1" / "Order Block 2" trong bản gốc bị đảo ngược so với mức giá** (OB "1 - thấp hơn" nhưng số lại thấp hơn OB "2 - cao hơn" đúng theo tên, tuy vậy prose mô tả trình tự giá đi ngược lại thứ tự liệt kê). Bản convert dùng trực tiếp **mức giá** thay vì nhãn 1/2 để tránh nhầm lẫn thêm — entry 1.20805 rơi đúng vào vùng OB cao hơn (1.20884–1.20780), đây là POI convert dùng cho frontmatter.
 
 ---
@@ -304,7 +304,7 @@ Setup được đọc rất tốt về mặt cấu trúc (bias → dealing range
 - [ ] **Data integrity:** Đã đồng bộ `trade_date` (2021-05-07) ở mọi nơi trong file này.
 
 > [!warning] Liên kết Mistake Database
-> [[04 - Mistake - FOMO Entry]] (vào sớm trước khi buy-side bị dọn) · cân nhắc tạo thêm mục Mistake riêng cho "Vào lệnh sai Kill Zone" và "Hợp lý hóa displacement yếu" nếu hai lỗi này lặp lại ở các backtest khác.
+> [[04-Mistake-FOMO-Entry]] (vào sớm trước khi buy-side bị dọn) · cân nhắc tạo thêm mục Mistake riêng cho "Vào lệnh sai Kill Zone" và "Hợp lý hóa displacement yếu" nếu hai lỗi này lặp lại ở các backtest khác.
 
 ### 7.4. Sai lầm SÂU hơn cả Kill Zone: nhầm giữa HTF bias và short-term draw on liquidity
 
@@ -371,14 +371,14 @@ Cú "sweep cạnh trên OB" mà tôi coi là tín hiệu entry chỉ là **inter
 
 | Khái niệm | Tôi đã dùng như thế nào (SAI) | Cách dùng ĐÚNG | Ảnh hưởng |
 |---|---|---|---|
-| [[18 - Kill Zones]] | Dùng như một ô confluence để tick SAU khi đã phân tích entry (và phát hiện sai sau khi đặt lệnh) | Kill Zone là **PRECONDITION cấp cổng** của 2022 Model — kiểm tra TRƯỚC khi mở khung M5. Ngoài KZ, displacement/MSS mất luôn ý nghĩa thống kê vì thiếu dòng lệnh tổ chức | Chí mạng (GATE) |
-| [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]] | Dùng một nửa khái niệm: xác định draw dài hạn (SSL dưới) theo HTF bias, bỏ qua draw NGẮN HẠN đang hướng lên (BSL 1.21296–1.21227 chưa lấy) | Draw phải được xác định ở **cả 2 cấp**; khi draw ngắn hạn ngược bias dài hạn → chờ pool gần bị quét xong rồi mới tìm entry theo bias | Chí mạng — first_error |
-| [[16 - Internal & External Range Liquidity (IRL & ERL)]] + [[07 - Buy-side Liquidity]] | Nhầm cú quét cạnh trên OB (internal, nông) thành một raid buy-side thật | Phân loại pool trước khi đếm sweep: sweep hợp lệ cho Short = **external/structural BSL** bị lấy (ở đây là cụm OB 1.21296–1.21227 + swing high liên quan), không phải mọi cú "quét-rồi-đóng-lại" | Chí mạng |
-| [[20 - Liquidity Sweep]] | Đếm sweep theo hình dạng nến (wick qua mép OB) thay vì theo **chức năng** (pool nào bị lấy, còn pool nào chưa) | Câu hỏi đúng không phải "có sweep chưa?" mà là "sweep này lấy LOẠI thanh khoản nào, và pool mục tiêu lớn hơn đã bị lấy chưa?" | Nặng |
-| [[21 - Market Structure Shift]] | Tin MSS M5 hình thành trong phiên Asia mỏng | Trọng số của MSS tỷ lệ thuận với **lực lượng tham gia tạo ra nó**. MSS trong phiên mỏng có thể bị tạo bởi vài lệnh nhỏ và phủ định ngay khi London mở — chỉ đếm MSS trong KZ | Nặng |
-| [[02 - AMD]] (Power of Three) | Không áp dụng: short lúc 10:05 UTC+7 — tức giữa pha **Accumulation** của ngày | Theo AMD, phiên Asia thường là pha A (tích lũy quanh open); nhịp chạy lên quét SL sau đó chính là pha **M (Manipulation / Judas swing)** kinh điển trước khi Distribution theo bias thật. Short trong pha A = tự đặt mình vào đúng hướng của Judas swing sắp tới | Nặng |
-| [[26 - OTE - Optimal Trade Entry]] | Tự nhận "không nằm trong OTE" nhưng vẫn vào | Không đạt location gate = bỏ, không có ngoại lệ vì "các yếu tố khác đẹp" | Nặng |
-| Displacement ([[08 - Mistake - Weak Displacement]]) | Ghi chú "nến không quá lớn" tới 2 lần nhưng vẫn tick hợp lệ | Displacement là biến định lượng (body-to-range, ATR, có FVG) — không phải cảm giác. Tự ghi "không quá lớn" = đã biết nó fail, hợp lý hóa là lỗi kỷ luật | Nặng |
+| [[18-Kill-Zones]] | Dùng như một ô confluence để tick SAU khi đã phân tích entry (và phát hiện sai sau khi đặt lệnh) | Kill Zone là **PRECONDITION cấp cổng** của 2022 Model — kiểm tra TRƯỚC khi mở khung M5. Ngoài KZ, displacement/MSS mất luôn ý nghĩa thống kê vì thiếu dòng lệnh tổ chức | Chí mạng (GATE) |
+| [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]] | Dùng một nửa khái niệm: xác định draw dài hạn (SSL dưới) theo HTF bias, bỏ qua draw NGẮN HẠN đang hướng lên (BSL 1.21296–1.21227 chưa lấy) | Draw phải được xác định ở **cả 2 cấp**; khi draw ngắn hạn ngược bias dài hạn → chờ pool gần bị quét xong rồi mới tìm entry theo bias | Chí mạng — first_error |
+| [[16-Internal-External-Range-Liquidity-IRL-ERL]] + [[07-Buy-side-Liquidity]] | Nhầm cú quét cạnh trên OB (internal, nông) thành một raid buy-side thật | Phân loại pool trước khi đếm sweep: sweep hợp lệ cho Short = **external/structural BSL** bị lấy (ở đây là cụm OB 1.21296–1.21227 + swing high liên quan), không phải mọi cú "quét-rồi-đóng-lại" | Chí mạng |
+| [[20-Liquidity-Sweep]] | Đếm sweep theo hình dạng nến (wick qua mép OB) thay vì theo **chức năng** (pool nào bị lấy, còn pool nào chưa) | Câu hỏi đúng không phải "có sweep chưa?" mà là "sweep này lấy LOẠI thanh khoản nào, và pool mục tiêu lớn hơn đã bị lấy chưa?" | Nặng |
+| [[21-Market-Structure-Shift]] | Tin MSS M5 hình thành trong phiên Asia mỏng | Trọng số của MSS tỷ lệ thuận với **lực lượng tham gia tạo ra nó**. MSS trong phiên mỏng có thể bị tạo bởi vài lệnh nhỏ và phủ định ngay khi London mở — chỉ đếm MSS trong KZ | Nặng |
+| [[02-AMD]] (Power of Three) | Không áp dụng: short lúc 10:05 UTC+7 — tức giữa pha **Accumulation** của ngày | Theo AMD, phiên Asia thường là pha A (tích lũy quanh open); nhịp chạy lên quét SL sau đó chính là pha **M (Manipulation / Judas swing)** kinh điển trước khi Distribution theo bias thật. Short trong pha A = tự đặt mình vào đúng hướng của Judas swing sắp tới | Nặng |
+| [[26-OTE-Optimal-Trade-Entry]] | Tự nhận "không nằm trong OTE" nhưng vẫn vào | Không đạt location gate = bỏ, không có ngoại lệ vì "các yếu tố khác đẹp" | Nặng |
+| Displacement ([[08-Mistake-Weak-Displacement]]) | Ghi chú "nến không quá lớn" tới 2 lần nhưng vẫn tick hợp lệ | Displacement là biến định lượng (body-to-range, ATR, có FVG) — không phải cảm giác. Tự ghi "không quá lớn" = đã biết nó fail, hợp lý hóa là lỗi kỷ luật | Nặng |
 
 **Điểm đáng chú ý nhất của bảng này:** lệnh chỉ có MỘT bước tick Yes thật sự (POI đúng loại đúng phía) — mọi khái niệm còn lại đều bị dùng sai hoặc dùng một nửa. Điều đó nhất quán với confluence_score 0/8 và tự chấm 40% khớp mô hình: đây không phải một setup "gần đủ", đây là một **non-setup được các pattern bề mặt ngụy trang**.
 
@@ -395,15 +395,143 @@ Trong phiên mỏng, order book hai bên đều nông. Điều đó tạo ra hai
 | [[01 - Loss - XAUUSD - 2014-05-19 - Short]] | poi | OB 0.786 chưa test, phía TRÊN BB | **Có** |
 | [[02 - Loss- XAUUSD- 2014-05-14- Short]] | poi (SL) | Phần thân còn lại của chính RB, phía TRÊN | **Có** |
 
-4/4 lệnh thua cùng một gốc: **entry được đặt khi pool thanh khoản chưa-bị-lấy gần nhất nằm cùng phía với SL**. File này là phiên bản "external BSL", và cũng là phiên bản duy nhất cộng thêm lỗi session. Note tổng hợp + gate kiểm tra bắt buộc trước mọi lệnh: [[13 - Mistake - Trading Into Unswept Liquidity]].
+4/4 lệnh thua cùng một gốc: **entry được đặt khi pool thanh khoản chưa-bị-lấy gần nhất nằm cùng phía với SL**. File này là phiên bản "external BSL", và cũng là phiên bản duy nhất cộng thêm lỗi session. Note tổng hợp + gate kiểm tra bắt buộc trước mọi lệnh: [[13-Mistake-Trading-Into-Unswept-Liquidity]].
 
 ---
+
+---
+
+## 10. Phản biện chuyên sâu (Devil's Advocate)
+
+![[EURUSD-20210507-draw-vs-bias.svg|760]]
+
+```yaml
+mode: REVIEW
+instrument: EURUSD
+date: 2021-05-07
+timeframes_provided: "D1/H4, H1, M5 — 2 ảnh PNG không đọc được + tường thuật rất chi tiết đã có ở mục 7.4/9.1"
+verdict: BROKEN
+evidence_sufficiency: partial
+opposite_case_strength: not viable
+objections: {fatal: 2, material: 1, minor: 1}
+```
+
+> [!info] Không lặp lại nội dung mục 9 — mục này chỉ thêm lớp đối kháng mới: kiểm claim gốc bằng cách cố phá nó, không mô tả lại pattern 4 lệnh hay bảng khái niệm sai đã có sẵn.
+
+**0. Evidence base.** Tường thuật rất chi tiết (mục 1, 3, 7.4-7.6, 9.1-9.3) + frontmatter đầy đủ. 2 PNG không đọc được nội dung hình ảnh. Vì tường thuật đã tự phân tích sâu và nhất quán nội bộ, evidence cho load-bearing claim (draw ngắn hạn sai hướng) là **partial** — đủ để đánh giá logic, không đủ để xác nhận độc lập hình dạng nến/sweep trên chart.
+
+**1. Thesis + load-bearing claim.**
+- C1: D1 bias Bearish đúng (LH/LL, pullback chưa phá protected high).
+- C2: H1 có 2 Order Block đúng phía Premium, entry rơi vào OB cao hơn (1.20884-1.20780).
+- C3: Sweep quan sát được (cạnh trên OB) chỉ là internal liquidity nông, không phải external BSL thật.
+- C4 **(load-bearing)**: Short-term draw on liquidity tại thời điểm entry đang hướng LÊN (BSL 1.21296-1.21227 chưa bị lấy), ngược với hướng lệnh Short — đây là first_error thực sự, sâu hơn cả lỗi Kill Zone.
+- C5: Entry ngoài Kill Zone (Asia, 10:05 UTC+7) — lỗi GATE độc lập, cộng dồn.
+- C6: SL 1.20931 nằm trong đường đi tới BSL chưa quét — đây là "nam châm thanh khoản" theo chính note.
+- C7: Kết quả Loss, đúng theo dự đoán từ C4+C6.
+
+Load-bearing: **C4** — toàn bộ khung "Unswept Liquidity Path" (mục 9.3) và cả bài học chính (mục 7.4) phụ thuộc vào việc draw ngắn hạn thực sự hướng lên tại thời điểm entry, không phải hindsight dựng lại sau khi thấy giá chạy lên.
+
+**2. What survives.** C1, C2, C5 không tranh chấp — bias D1, vị trí OB, và vi phạm Kill Zone (giờ cụ thể 10:05 UTC+7) đều là fact có thể kiểm tra khách quan (giờ) hoặc nhất quán nội bộ. C7 là outcome đã biết.
+
+**3. Objections**
+
+**O1 · [HINDSIGHT] · fatal · attacks C4 (load-bearing)**
+Claim: "Draw on liquidity ngắn hạn lúc đó đang hướng LÊN" và toàn bộ khung "giá nhử phe short vào → chạy ngược lên lấy buy-side + quét SL → sau đó mới quay đầu theo bias giảm" (mục 7.4).
+Fails: đây chính xác là mô tả những gì ĐÃ XẢY RA (giá quét SL, chạy lên OB 1.21296-1.21227) được viết lại thành "điều lẽ ra phải nhận ra trước". Note không trích dẫn được bất kỳ dấu hiệu nào tồn tại TRƯỚC entry (10:05 UTC+7) — ví dụ một swing high chưa bị test cụ thể được nhìn thấy trên chart tại thời điểm đó — mà chỉ suy ngược từ việc SL sau đó bị quét.
+Evidence: mục 7.4 dùng chính từ "kịch bản xác suất cao nhất" ở thì tương lai giả định, nhưng luận cứ duy nhất được đưa ra để chứng minh nó "cao xác suất" là... nó đã xảy ra. Không có mốc giá cụ thể nào được nêu là "tại 10:05 UTC+7, tôi thấy OB 1.21296-1.21227 chưa bị test và đó là lý do tôi phải dự đoán giá sẽ chạy lên trước" — con số OB đó chỉ xuất hiện trong mục Draw on Liquidity D1/H4 (mục 1, cấp HTF dài hạn: "Buy-side liquidity: Dealing Range High = 1.23473"), KHÔNG phải trong phần short-term draw tại M5/H1 lúc entry.
+Consequence: nếu draw-ngắn-hạn-hướng-lên chỉ được xác lập SAU khi thấy kết quả, thì "first_error_step: draw" là một chẩn đoán hindsight — nguyên nhân thật của Loss có thể đơn giản là lỗi Kill Zone (C5, đã biết TRƯỚC vì có giờ cụ thể) cộng với volatility ngẫu nhiên của phiên mỏng, không phải một lỗi "đọc sai draw" có thể phòng tránh bằng quan sát tại thời điểm đó.
+Your best answer: "OB 1.21296-1.21227 là một cấu trúc H1/H4 đã tồn tại từ trước, không phải bịa ra sau" — đúng, nhưng việc một OB *tồn tại* trên chart không chứng minh rằng nó là "draw ngắn hạn ưu tiên" tại thời điểm entry; cần một tiêu chí độc lập với outcome để xác định OB đó có "ưu tiên hơn" SSL phía dưới target hay không TẠI THỜI ĐIỂM 10:05 UTC+7 — note không cung cấp tiêu chí đó, chỉ cung cấp kết quả.
+Retracted by: nếu note trích được ghi chú TRƯỚC entry (không phải viết lại sau) nêu rõ OB 1.21296-1.21227 là "chưa test, cần chờ" ĐƯỢC XÁC ĐỊNH TRƯỚC KHI BẤM LỆNH — nhưng theo chính 7-Step Log (mục 4), bước 2 "Draw on Liquidity" được đánh dấu **No** chỉ trong bản ghi backtest, không có bằng chứng đây là nhận thức tại real-time.
+
+**O2 · [METHOD] · fatal · attacks toàn bộ khung "Unswept Liquidity Path" (mục 9.3, không lặp lại nội dung, chỉ tấn công phương pháp)**
+Claim ngầm: 4/4 lệnh thua trong bảng mục 9.3 chia sẻ cùng gốc "pool chưa-bị-lấy gần nhất nằm cùng phía SL" → đây là một pattern có giá trị dự báo.
+Fails: đây là "Texas sharpshooter" cổ điển — bảng chỉ liệt kê **các lệnh ĐÃ THUA** rồi tìm điểm chung sau đó (mọi lệnh thua đều có SL bị quét, và SL-bị-quét-tức-là-đường-tới-1-pool-nào-đó gần như luôn đúng theo định nghĩa, vì thị trường luôn có pool ở đâu đó gần SL). Không có nhóm đối chứng: bao nhiêu lệnh THẮNG cũng có "pool chưa-bị-lấy nằm cùng phía SL" nhưng giá không chạy tới đó trước khi đảo chiều theo bias? Nếu tỷ lệ đó cũng cao ở nhóm Win, "Unswept Liquidity Path" không phải yếu tố phân biệt, chỉ là mô tả hậu-nghiệm của mọi lệnh thua vì SL kề bên.
+Evidence: bảng mục 9.3 chỉ có 4 dòng, toàn bộ đều là Loss — không có cột "n lệnh Win cũng có pool cùng phía SL nhưng không bị quét".
+Consequence: nếu đây là selection bias, thì rule đề xuất ở mục 7.4/7.6 ("hỏi liquidity chưa-bị-lấy gần nhất nằm phía nào") có thể đúng về mặt logic ICT (đáng làm) nhưng **chưa được validate bằng dữ liệu này** — dữ liệu này chỉ mô tả lại 4 lần thua, không chứng minh rule sẽ ngăn được thua lần sau mà không đồng thời ngăn cả các lệnh sẽ thắng.
+Your best answer: rule "draw gate" trong ICT canon là một nguyên tắc độc lập (SKILL.md § Liquidity/Target — "mô tả draw on liquidity, không phải khuyến nghị trade") có thể đúng theo doctrine mà không cần bằng chứng thống kê từ 4 case này — nhưng note trình bày bảng 9.3 NHƯ MỘT BẰNG CHỨNG THỰC NGHIỆM ("4/4 lệnh thua cùng một gốc"), đó là điểm bị FAIL ở đây: dùng ngôn ngữ thống kê cho một mẫu không có nhóm đối chứng.
+Retracted by: kiểm tra lại toàn bộ lệnh Win trong vault, đếm bao nhiêu % cũng có pool cùng phía SL — nếu tỷ lệ đó thấp hơn đáng kể so với nhóm Loss, pattern được validate và objection retract.
+
+**O3 · [ARITHMETIC] · material · attacks C_RR (risk management)**
+Claim: `r_planned: 3.39`.
+Fails một phần: risk = |1.20931-1.20805| = 0.00126, reward = |1.20805-1.20381| = 0.00424 → RR = 3.365, gần khớp 3.39 (chênh 0.025R, nhỏ, trong ngưỡng làm tròn) — **không phải discrepancy đáng kể** như ở note 07-10/01 (chênh gần 1R). Ghi nhận ở đây để đối chiếu cấp portfolio: RR ghi trong log này đáng tin cậy hơn.
+Evidence: tính trực tiếp từ 3 số frontmatter.
+Consequence: không đổi kết luận nào — chỉ củng cố nhận định "RR 3.39 trên giấy không cứu được lệnh" (đã có ở mục 7.5) bằng số chính xác hơn thay vì số làm tròn.
+Retracted by: không cần — đây gần như PASS, ghi mức material chỉ vì chênh lệch (dù nhỏ) chưa được chính note xác nhận bằng phép tính tường minh.
+
+**O4 · [UNSUPPORTED] · minor** — `sweep_type: Internal` được gán nhãn nhưng không có mô tả định lượng (bao nhiêu pip vượt ra ngoài OB, độ dài bấc) để phân biệt khách quan Internal vs External — dựa hoàn toàn vào diễn giải tường thuật. Không phải sai, nhưng thiếu evidence bar theo SKILL.md § Sweep ("named level được dùng"). Retracted by: bổ sung số liệu cụ thể (giá cao nhất bấc, thời gian giữ).
+
+Đã soạn 4, cắt 0 — O1 và O2 đều fatal vì tấn công đúng 2 trụ cột khác nhau của load-bearing claim (O1: bản thân C4 là hindsight; O2: bằng chứng hỗ trợ C4 ở cấp portfolio là selection bias).
+
+**4. Opposite case.** Từ cùng evidence: "Nguyên nhân Loss duy nhất có thể XÁC NHẬN TẠI THỜI ĐIỂM ĐÓ (không cần hindsight) là lỗi Kill Zone (C5) — một GATE khách quan đo bằng đồng hồ, không cần diễn giải. Khung 'draw sai hướng' tuy hấp dẫn về mặt tường thuật nhưng là một lớp diễn giải được xây dựng SAU khi biết kết quả, và khi tổng quát hóa thành pattern 4 lệnh (mục 9.3) mắc lỗi thiếu nhóm đối chứng."
+- Load-bearing của case ngược: "chỉ có 1 lỗi thật sự xác nhận được trước outcome — Kill Zone; 'draw' là chẩn đoán hậu nghiệm."
+- Tự phản bác: draw on liquidity là một khái niệm ICT canon hợp lệ độc lập với outcome (SKILL.md § Liquidity/Target) — về mặt doctrine, hỏi "pool chưa lấy nằm phía nào" là câu hỏi ĐÚNG phải hỏi trước mọi lệnh, bất kể case này có chứng minh được bằng thống kê hay không. Nói cách khác: **rule thì đúng** (theo canon), nhưng **bằng chứng cho rule trong chính note này** (bảng 9.3) là yếu.
+- Strength label: **not viable** để BÁC BỎ HOÀN TOÀN draw gate như một nguyên tắc — nhưng **viable** để bác bỏ cách note trình bày bảng 9.3 như "bằng chứng thực nghiệm 4/4".
+- Distinguishing observable: nếu tìm được ghi chú thời gian-thực (không phải hồi tưởng) từ trước 10:05 UTC+7 xác nhận nhận thức "BSL trên chưa test" tại đúng thời điểm — case gốc thắng hoàn toàn về phần hindsight. Nếu kiểm tra nhóm Win cũng có tỷ lệ cao "pool cùng phía SL nhưng giá không chạy tới" — case ngược thắng phần selection bias.
+
+**5. Verdict: BROKEN.**
+Load-bearing claim C4, khi đọc như "đã được nhận biết TẠI THỜI ĐIỂM entry", không có evidence độc lập với outcome để đứng vững (O1). Bằng chứng hỗ trợ nó ở cấp portfolio (mục 9.3) mắc lỗi phương pháp thiếu nhóm đối chứng (O2). Điều không phá được: bias D1, vị trí OB, và vi phạm Kill Zone (C1, C2, C5) — đây là fact khách quan, không phụ thuộc diễn giải. Điều critique này không xác lập: liệu "draw sai hướng" có thực sự là nguyên nhân độc lập với Kill Zone hay chỉ là cùng một hiện tượng (thanh khoản mỏng phiên Asia) được mô tả hai lần dưới hai tên khác nhau.
+
+**6. Falsification tests (tối đa 3)**
+1. Tìm bất kỳ ghi chú/ảnh chụp thời gian-thực nào (trước 10:05 UTC+7) xác nhận nhận thức về BSL 1.21296-1.21227 tại đúng thời điểm — nếu có, đóng O1 theo hướng thắng cho note gốc.
+2. Chạy thống kê toàn vault: % lệnh Win có "pool named cùng phía SL nhưng chưa bị quét tại entry" so với % lệnh Loss cùng điều kiện — nếu chênh lệch rõ rệt (vd Loss cao hơn hẳn), đóng O2, pattern 9.3 được validate.
+3. Tách biệt 2 giả thuyết bằng cách tìm case tương tự nhưng ĐÚNG Kill Zone (London/NY) và ĐÚNG draw sai hướng — nếu case đó cũng thua, ủng hộ draw là nguyên nhân độc lập; nếu thắng, ủng hộ Kill Zone là nguyên nhân chính và draw chỉ là hindsight dư thừa.
+
+---
+
+## 11. Doctrine check (ICT 2022 canon)
+
+**Thesis:** Lệnh Short tại OB H1 Premium, sweep chỉ đạt mức internal, thiếu Kill Zone, và draw ngắn hạn (theo note) hướng ngược bias — Loss với first_error=draw.
+
+**Cần sửa** (load-bearing trước):
+- C4 "draw ngắn hạn hướng lên được nhận biết tại entry" — **HINDSIGHT** · lập luận chỉ đứng vững nhờ thông tin xuất hiện sau (giá đã chạy lên lấy BSL) — không có mốc quan sát TRƯỚC entry nào được trích dẫn độc lập với outcome (xem O1 mục 10) → fix: tách rõ "draw nên được ưu tiên theo canon" (đúng, độc lập outcome) khỏi "draw này đã được nhận ra tại thời điểm đó" (chưa chứng minh được).  ← (load-bearing)
+- C_sweep "sweep chỉ là internal, không phải external" — **UNSUPPORTED** · SKILL.md § Sweep yêu cầu "level có tên và được dùng"; note tự nhận không có số liệu định lượng phân biệt Internal/External (chỉ diễn giải) → fix: bổ sung độ sâu bấc/pip vượt ra ngoài OB.
+- C_pattern "4/4 lệnh thua cùng họ Unswept Liquidity Path" — **AMBIGUOUS** · doctrine (Liquidity/Target trong SKILL.md) không có ngưỡng thống kê để xác nhận một pattern portfolio, và bảng thiếu nhóm đối chứng (Win) → đây là doctrine gap ở cấp phương pháp luận, không phải lỗi định nghĩa ICT term.
+
+**PASS:** C1 (D1 Bearish, LH/LL — SKILL.md không có tranh chấp định nghĩa ở đây), C2 (OB Premium — SKILL.md § Premium/Discount, entry trên EQ H1 1.20247, đúng phía cho Short), C5 (Kill Zone — SKILL.md § Killzone/Time, giờ cụ thể 10:05 UTC+7 đã nêu, không suy diễn).
+
+**Verdict:** NOT ALIGNED — load-bearing claim C4 mang HINDSIGHT khi đọc theo nghĩa "đã biết trước", điều này theo verdict decision rule (ict-doctrine SKILL.md) tự động dẫn tới NOT ALIGNED bất kể C1/C2/C5 PASS.
+
+**Notes:** Đây là ca đặc biệt: Doctrine check ở cấp CLAIM ĐƠN LẺ (C4 là hindsight) khác với việc RULE ĐỀ XUẤT (draw gate) có sai theo canon hay không (nó không sai — canon ủng hộ hỏi draw trước mọi lệnh). Bài học meta cho vault: một lesson-learned có thể ĐÚNG VỀ MẶT DOCTRINE (nên làm) trong khi CHẨN ĐOÁN NGUYÊN NHÂN của chính lệnh đang xét lại mang tính hindsight — hai việc này cần được note tách bạch rõ hơn trong các lần viết tiếp theo.
+
+---
+
+## 12. Lesson Learned (bản đầy đủ)
+
+> [!info] Không lặp lại các rule đã có ở mục 7.3/7.6/9. Phần dưới đây bổ sung lớp CHƯA có: phân biệt rule-đúng-theo-canon với chẩn-đoán-hindsight, và anti-overfitting cho chính bảng 9.3.
+
+### (a) Bài học kỹ thuật
+
+1. **"First error step" cần phân biệt giữa lỗi xác nhận được TRƯỚC outcome và lỗi chỉ nhìn thấy được SAU outcome.** Ví dụ số thật: Kill Zone (10:05 UTC+7, GATE khách quan đo bằng đồng hồ) là lỗi xác nhận được TRƯỚC; "draw ngắn hạn hướng lên" chỉ được note xác nhận bằng cách trỏ tới OB 1.21296-1.21227 đã tồn tại — nhưng không có ghi chú thời gian-thực nào xác nhận đây là nhận thức tại 10:05 UTC+7, không phải suy ngược. Tổng quát hóa: khi ghi `first_error_step`, luôn tự hỏi "tôi có thể chứng minh mình biết điều này TRƯỚC khi thấy kết quả không?" — nếu không, gắn field phụ `diagnosed_with_hindsight: true`.
+2. **Pattern portfolio (bảng kiểu 9.3) cần nhóm đối chứng để có giá trị thống kê, không chỉ liệt kê các lệnh thua.** Ví dụ số thật: 4/4 lệnh Loss có "pool cùng phía SL" nghe thuyết phục, nhưng nếu 8/10 lệnh Win cũng có đặc điểm này mà không được đếm, tỷ lệ 4/4 không có ý nghĩa phân biệt. Tổng quát hóa: mọi bảng "X/X lệnh thua chia sẻ đặc điểm Y" trong vault cần đi kèm "Z/N lệnh thắng có đặc điểm Y hay không" trước khi được dùng làm cơ sở rule.
+
+### (b) Bài học quy trình/checklist
+
+- Rule "draw gate" (hỏi pool chưa-lấy nằm phía nào trước mọi lệnh) đúng theo canon ICT độc lập với việc case này có chứng minh được bằng thống kê hay không — nên **giữ nguyên rule đó trong Playbook** (đã có ở mục 7.6), nhưng tách nhãn nguồn gốc: "rule theo canon" vs "rule được validate bằng N case trong vault" là hai mức độ tin cậy khác nhau, cần ghi rõ khi báo cáo.
+- Đề xuất thêm field `narrative_written_before_or_after_outcome` (before/after) cho mọi đoạn Lesson Learned mô tả cơ chế thị trường — giúp người đọc sau này tự phân biệt được hindsight risk mà không cần suy luận lại.
+
+### (c) Bài học tâm lý-hành vi
+
+- Việc note tự phát hiện và sửa "cải thiện tâm lý" thành "lỗi quy trình + nhận thức" (mục 7.6) là hành vi tốt, cần giữ nguyên — không lặp lại chi tiết ở đây.
+- Rủi ro mới phát hiện: một lời giải thích cơ chế thị trường càng chi tiết, càng "logic ICT" (như mục 7.4, 9.1, 9.2) càng dễ khiến người đọc (và chính người viết ở lần sau) tin rằng đó là điều đã biết trước, dù thực chất một phần là tái dựng sau outcome — độ chi tiết của narrative không phải bằng chứng cho tính real-time của nó.
+
+### (d) Rule đề xuất cho Playbook
+
+- [ ] Khi viết Lesson Learned mô tả "draw/pool nào đang chi phối", bắt buộc trích dẫn ghi chú hoặc mốc giá **có timestamp trước entry** — nếu không có, gắn nhãn `retrospective_inference` thay vì trình bày như quan sát real-time.
+- [ ] Mọi bảng pattern portfolio kiểu "N/N lệnh thua chia sẻ X" phải kèm cột đối chứng (bao nhiêu lệnh thắng cũng có X) trước khi dùng làm căn cứ rule mới.
+- [ ] Định lượng hóa `sweep_type: Internal/External` bằng số cụ thể (pip vượt ra ngoài level, số nến giữ ngoài) thay vào diễn giải thuần tường thuật.
+
+### (e) Điều KHÔNG nên học từ lệnh này
+
+- KHÔNG nên coi bảng 9.3 ("4/4 lệnh thua cùng họ Unswept Liquidity Path") là một pattern đã được validate thống kê — đây mới là quan sát hậu nghiệm trên đúng 4 case Loss, chưa có nhóm đối chứng Win.
+- KHÔNG nên áp dụng "hỏi draw ngắn hạn trước mọi lệnh" như thể lệnh này đã CHỨNG MINH được giá trị của gate đó bằng dữ liệu thực nghiệm — giá trị của gate đến từ canon ICT, không phải từ n=1 case Loss này (dù case này minh họa tốt cho lý do TẠI SAO canon có gate đó).
+- KHÔNG nên dùng chi tiết narrative phong phú (mục 7.4, 9.1, 9.2) làm thước đo độ tin cậy của chẩn đoán — một lời giải thích dài và logic không tự động có nghĩa là nó được biết trước outcome.
+
 
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI ladder: [[25 - OB - Order Block]] · [[13 - FVG  - Fair Value Gap]] · [[04 - Breaker Block]]
-- Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[27 - Premium Discount]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[18 - Kill Zones]]
+- POI ladder: [[25-OB-Order-Block]] · [[13-FVG-Fair-Value-Gap]] · [[04-Breaker-Block]]
+- Entry refine: [[10-Consequent-Encroachment-Mean-Threshold]] · [[27-Premium-Discount]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[18-Kill-Zones]]
 - Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]
-- Mistakes: [[04 - Mistake - FOMO Entry]] · [[12 - Mistake - Log Data Mismatch - Backtest]] · [[08 - Mistake - Weak Displacement]] · [[13 - Mistake - Trading Into Unswept Liquidity]]
+- Mistakes: [[04-Mistake-FOMO-Entry]] · [[12-Mistake-Log-Data-Mismatch-Backtest]] · [[08-Mistake-Weak-Displacement]] · [[13-Mistake-Trading-Into-Unswept-Liquidity]]

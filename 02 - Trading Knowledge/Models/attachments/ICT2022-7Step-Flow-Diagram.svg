@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="480" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="middle">ICT 2022 Model — Chuỗi 7 bước</text>
+<defs>
+<marker id="arrBlue" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/>
+</marker>
+</defs>
+<rect x="32.0" y="220" width="122" height="90" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="93.0" y="249.4" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">[Huong]</text>
+<text x="93.0" y="265.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">1.Bias</text>
+<text x="93.0" y="280.6" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">(HTF)</text>
+<line x1="156.0" y1="265.0" x2="159.0" y2="265.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+<rect x="161.0" y="220" width="122" height="90" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="222.0" y="249.4" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">[Pool]</text>
+<text x="222.0" y="265.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">2.Draw on</text>
+<text x="222.0" y="280.6" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">Liquidity</text>
+<line x1="285.0" y1="265.0" x2="288.0" y2="265.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+<rect x="290.0" y="220" width="122" height="90" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="351.0" y="249.4" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">[Quet]</text>
+<text x="351.0" y="265.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">3.Liquidity</text>
+<text x="351.0" y="280.6" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">Sweep</text>
+<line x1="414.0" y1="265.0" x2="417.0" y2="265.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+<rect x="419.0" y="220" width="122" height="90" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="480.0" y="249.4" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">[Day]</text>
+<text x="480.0" y="265.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">4.Displace</text>
+<text x="480.0" y="280.6" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">+MSS</text>
+<line x1="543.0" y1="265.0" x2="546.0" y2="265.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+<rect x="548.0" y="220" width="122" height="90" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="609.0" y="249.4" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">[Gap]</text>
+<text x="609.0" y="265.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">5.FVG</text>
+<text x="609.0" y="280.6" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">(POI)</text>
+<line x1="672.0" y1="265.0" x2="675.0" y2="265.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+<rect x="677.0" y="220" width="122" height="90" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="738.0" y="249.4" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">[Vao]</text>
+<text x="738.0" y="265.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">6.Entry</text>
+<text x="738.0" y="280.6" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">(retrace)</text>
+<line x1="801.0" y1="265.0" x2="804.0" y2="265.0" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+<rect x="806.0" y="220" width="122" height="90" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="867.0" y="249.4" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">[Chay]</text>
+<text x="867.0" y="265.0" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle">7.Target</text>
+<text x="867.0" y="280.6" font-size="12" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="480" y="350" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">Thứ tự bắt buộc — bỏ qua bất kỳ bước nào (đặc biệt bước 3: Sweep) đều làm setup mất xác suất.</text>
+<text x="480" y="372" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="middle">Sơ đồ khái niệm minh họa quy trình — không phải chart giá thật.</text>
+</svg>

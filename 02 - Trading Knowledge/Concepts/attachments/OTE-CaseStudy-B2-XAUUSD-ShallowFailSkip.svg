@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800">
+  <rect width="1280" height="800" rx="14" fill="#131722" stroke="#2a2e39"/>
+  <text x="40" y="46" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#d1d4dc">XAUUSD Short NY AM 22/01/2026 — fib cũ giữ nguyên qua sweep giữa retrace (-1R, đáng lẽ SKIP)</text>
+  <text x="40" y="72" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#787b86">Sweep hình thành swing mới ngay trong lúc retrace nhưng trader giữ fib cũ — entry lệch đúng vào vùng vừa bị quét</text>
+
+  <!-- H1 context -->
+  <rect x="40" y="100" width="1200" height="200" rx="10" fill="#131722" stroke="#2a2e39"/>
+  <text x="60" y="126" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#d1d4dc">H1/M5 — bối cảnh trước lệnh</text>
+
+  <g>
+    <line x1="120" y1="180" x2="120" y2="240" stroke="#26a69a" stroke-width="1"/>
+    <rect x="108" y="190" width="24" height="45" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="180" y1="150" x2="180" y2="200" stroke="#ef5350" stroke-width="1"/>
+    <rect x="168" y="160" width="24" height="35" rx="1" fill="#ef5350"/>
+  </g>
+  <text x="150" y="140" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Swing high ban đầu (fib cũ) 2,410.40</text>
+
+  <g>
+    <line x1="240" y1="180" x2="240" y2="280" stroke="#ef5350" stroke-width="1"/>
+    <rect x="228" y="190" width="24" height="80" rx="1" fill="#ef5350"/>
+  </g>
+  <text x="270" y="200" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ef5350">MSS bearish tại 2,398.20</text>
+
+  <rect x="700" y="130" width="500" height="150" rx="8" fill="#131722" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="720" y="156" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff6b6b">Bối cảnh: tin CPI Mỹ 20:30 GMT (21:30 giờ trader)</text>
+  <text x="720" y="182" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">Daily bias Bearish sau MSS H1. Retrace bắt đầu</text>
+  <text x="720" y="204" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">hướng lên để trader tìm vùng OTE short — nhưng</text>
+  <text x="720" y="226" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">một tin phát biểu Fed bất ngờ lúc 8:47 NY tạo</text>
+  <text x="720" y="248" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#d1d4dc">một cú sweep giữa chừng retrace, vượt swing cũ.</text>
+
+  <!-- M5 panel -->
+  <text x="60" y="340" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#d1d4dc">M5 — diễn biến retrace và sweep giữa chừng</text>
+
+  <rect x="90" y="380" width="1100" height="360" rx="8" fill="#131722" stroke="#2a2e39"/>
+
+  <!-- fib old from initial swing -->
+  <line x1="120" y1="420" x2="1160" y2="420" stroke="#787b86" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+  <text x="960" y="415" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#787b86">Fib cũ 0% = 2,398.20 (đáy MSS)</text>
+  <line x1="120" y1="560" x2="1160" y2="560" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.7"/>
+  <text x="960" y="555" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#f2c94c">Fib cũ 62% (entry dự kiến) = 2,405.90</text>
+
+  <!-- retrace candles rising -->
+  <g>
+    <line x1="150" y1="500" x2="150" y2="560" stroke="#26a69a" stroke-width="1"/>
+    <rect x="138" y="510" width="24" height="40" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="210" y1="470" x2="210" y2="520" stroke="#26a69a" stroke-width="1"/>
+    <rect x="198" y="480" width="24" height="35" rx="1" fill="#26a69a"/>
+  </g>
+
+  <!-- sweep candle: strong impulse blowing through old fib swing high -->
+  <g>
+    <line x1="270" y1="380" x2="270" y2="480" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="258" y="390" width="24" height="80" rx="1" fill="#26a69a"/>
+  </g>
+  <circle cx="270" cy="382" r="5" fill="#b48ead"/>
+  <text x="290" y="386" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#b48ead">21:32 NY: tin Fed, sweep 2,412.80 — vượt swing cũ 2,410.40</text>
+
+  <!-- new fib should be re-anchored here -->
+  <line x1="270" y1="382" x2="1160" y2="382" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="960" y="377" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#4a90d9">Fib ĐÚNG (re-anchor) 0% = 2,412.80</text>
+
+  <line x1="270" y1="480" x2="1160" y2="480" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.8"/>
+  <text x="960" y="475" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#4a90d9">Fib đúng 62% = 2,408.90</text>
+
+  <!-- trader still enters at OLD 62% level, which is now inside the sweep -->
+  <g>
+    <line x1="330" y1="530" x2="330" y2="580" stroke="#ef5350" stroke-width="1"/>
+    <rect x="318" y="540" width="24" height="35" rx="1" fill="#ef5350"/>
+  </g>
+  <line x1="260" y1="560" x2="450" y2="560" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="460" y="565" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">Entry (fib CŨ, sai) 2,405.90 — 21:48 NY</text>
+
+  <!-- price never even comes back down to old fib properly -->
+  <g>
+    <line x1="390" y1="440" x2="390" y2="530" stroke="#26a69a" stroke-width="1"/>
+    <rect x="378" y="450" width="24" height="70" rx="1" fill="#26a69a"/>
+  </g>
+  <g>
+    <line x1="450" y1="400" x2="450" y2="460" stroke="#26a69a" stroke-width="1"/>
+    <rect x="438" y="410" width="24" height="45" rx="1" fill="#26a69a"/>
+  </g>
+
+  <line x1="260" y1="440" x2="1000" y2="440" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="700" y="435" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#ff6b6b">SL 2,410.90 — quét lúc 22:15 NY, kết quả -1R</text>
+
+  <g>
+    <line x1="520" y1="360" x2="520" y2="440" stroke="#26a69a" stroke-width="1"/>
+    <rect x="508" y="370" width="24" height="70" rx="1" fill="#26a69a"/>
+  </g>
+
+  <text x="90" y="720" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">Nếu re-anchor đúng theo swing mới 2,412.80: entry 2,408.90 lẽ ra chưa từng khớp trong phiên này — tức</text>
+  <text x="90" y="742" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#787b86">quyết định ĐÚNG là SKIP lệnh, chờ retrace mới hình thành thay vì ép entry theo mức fib đã lỗi thời.</text>
+
+  <text x="40" y="785" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#565b66">XAUUSD M5 · tái dựng minh họa từ mẫu backtest, tham chiếu EC-B1 (sweep trong retracement)</text>
+</svg>

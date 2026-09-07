@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#d1d4dc">Case 2 vs Case 3: cung setup DOL, hai ket qua khac nhau</text>
+
+  <!-- divider -->
+  <line x1="480" y1="60" x2="480" y2="500" stroke="#1e222d" stroke-width="2"/>
+
+  <!-- Left: Case 2 - loss despite correct process -->
+  <text x="30" y="75" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#d1d4dc">Case 2: Dung checklist, van thua (tail risk)</text>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="30" y1="130" x2="450" y2="130"/>
+    <line x1="30" y1="190" x2="450" y2="190"/>
+    <line x1="30" y1="250" x2="450" y2="250"/>
+    <line x1="30" y1="310" x2="450" y2="310"/>
+    <line x1="30" y1="370" x2="450" y2="370"/>
+  </g>
+  <line x1="60" y1="330" x2="420" y2="330" stroke="#f2c94c" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="65" y="325" font-family="Arial, sans-serif" font-size="13" fill="#f2c94c">Day phien A (SSL)</text>
+  <!-- sweep down candle -->
+  <line x1="120" y1="300" x2="120" y2="360" stroke="#ef5350" stroke-width="1"/>
+  <rect x="110" y="310" width="20" height="35" fill="#ef5350"/>
+  <!-- reclaim up + FVG entry -->
+  <rect x="150" y="240" width="35" height="30" fill="rgba(41,98,255,0.25)"/>
+  <line x1="165" y1="220" x2="165" y2="280" stroke="#26a69a" stroke-width="1"/>
+  <rect x="155" y="225" width="20" height="45" fill="#26a69a"/>
+  <line x1="200" y1="180" x2="200" y2="250" stroke="#26a69a" stroke-width="1"/>
+  <rect x="190" y="185" width="20" height="55" fill="#26a69a"/>
+  <text x="130" y="200" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Entry Long tai FVG</text>
+  <!-- reversal due to news shock -->
+  <line x1="260" y1="150" x2="260" y2="220" stroke="#ef5350" stroke-width="1"/>
+  <rect x="250" y="155" width="20" height="60" fill="#ef5350"/>
+  <line x1="300" y1="180" x2="300" y2="280" stroke="#ef5350" stroke-width="1"/>
+  <rect x="290" y="200" width="20" height="70" fill="#ef5350"/>
+  <text x="240" y="140" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Tin soc ngoai lich</text>
+  <line x1="180" y1="270" x2="330" y2="270" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="335" y="274" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Stop -1R</text>
+  <rect x="30" y="400" width="420" height="80" fill="none" stroke="#ef5350" stroke-width="1"/>
+  <text x="40" y="420" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Sweep + rejection + MSS + FVG</text>
+  <text x="40" y="440" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Entry dung ke hoach, RR 5:1 tren giay</text>
+  <text x="40" y="460" font-family="Arial, sans-serif" font-size="13" fill="#ef5350">Ket qua: -1R do tail risk, khong phai loi thuc thi</text>
+
+  <!-- Right: Case 3 - checklist blocked the trade -->
+  <text x="510" y="75" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#d1d4dc">Case 3: Checklist chan lenh (pool da can)</text>
+  <line x1="540" y1="330" x2="900" y2="330" stroke="#f2c94c" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="545" y="325" font-family="Arial, sans-serif" font-size="13" fill="#f2c94c">Day cu (da test 2 lan)</text>
+  <line x1="600" y1="300" x2="600" y2="345" stroke="#ef5350" stroke-width="1"/>
+  <rect x="590" y="310" width="20" height="25" fill="#ef5350"/>
+  <text x="580" y="360" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Sweep nho, khong rejection</text>
+  <!-- choppy sideways -->
+  <g stroke="#d1d4dc" stroke-width="1">
+    <line x1="650" y1="320" x2="650" y2="340"/>
+    <line x1="670" y1="315" x2="670" y2="335"/>
+    <line x1="690" y1="322" x2="690" y2="342"/>
+    <line x1="710" y1="316" x2="710" y2="336"/>
+    <line x1="730" y1="320" x2="730" y2="340"/>
+  </g>
+  <text x="650" y="300" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Ca giat quanh mep pool</text>
+  <!-- breakdown continues -->
+  <line x1="790" y1="340" x2="790" y2="400" stroke="#ef5350" stroke-width="1"/>
+  <rect x="780" y="350" width="20" height="45" fill="#ef5350"/>
+  <line x1="820" y1="370" x2="820" y2="430" stroke="#ef5350" stroke-width="1"/>
+  <rect x="810" y="380" width="20" height="45" fill="#ef5350"/>
+  <text x="770" y="450" font-family="Arial, sans-serif" font-size="13" fill="#ffffff">Pha thang xuong, khong rejection</text>
+  <rect x="510" y="400" width="420" height="80" fill="none" stroke="#26a69a" stroke-width="1"/>
+  <text x="520" y="420" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Checklist: pool da bi test 2 lan truoc</text>
+  <text x="520" y="440" font-family="Arial, sans-serif" font-size="13" fill="#d1d4dc">Khong MSS xac nhan -> khong vao lenh</text>
+  <text x="520" y="460" font-family="Arial, sans-serif" font-size="13" fill="#26a69a">Ket qua: tranh duoc lenh thua -1R</text>
+</svg>

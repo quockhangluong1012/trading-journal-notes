@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 740" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1150" height="740" fill="#ffffff"/>
+<text x="30" y="40" font-size="22" font-weight="bold" fill="#1a1a1a">WeakDisp - Case Studies Panel</text>
+<text x="30" y="62" font-size="13" fill="#555">3 kịch bản minh họa (không phải log thật)</text>
+
+<!-- Case A red -->
+<rect x="30" y="90" width="350" height="600" rx="8" fill="#c62828" fill-opacity="0.06" stroke="#c62828" stroke-width="1.5"/>
+<text x="50" y="118" font-size="16" font-weight="bold" fill="#c62828">Case A - Thất bại</text>
+<text x="50" y="140" font-size="13" fill="#1a1a1a">GBPUSD M15, London</text>
+<polyline points="55,220 90,215 125,225 160,205 195,210 230,195 265,200 300,230 335,260 360,300" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="55" y1="205" x2="360" y2="205" stroke="#2e7d32" stroke-dasharray="4,3"/>
+<text x="365" y="200" font-size="12" fill="#2e7d32">entry 1.27065</text>
+<line x1="55" y1="260" x2="360" y2="260" stroke="#c62828" stroke-dasharray="4,3"/>
+<text x="365" y="265" font-size="12" fill="#c62828">SL 1.27020</text>
+<text x="50" y="340" font-size="13" fill="#1a1a1a">Grinding 4 nến, đóng qua</text>
+<text x="50" y="358" font-size="13" fill="#1a1a1a">mức nhưng 3/5 tiêu chí FAIL</text>
+<text x="50" y="382" font-size="13" fill="#1a1a1a">Coi là MSS, vào full size</text>
+<text x="50" y="406" font-size="13" fill="#1a1a1a">Kết quả: -$50, giá tiếp</text>
+<text x="50" y="424" font-size="13" fill="#1a1a1a">tục giảm đúng hướng thật</text>
+<rect x="50" y="450" width="310" height="60" rx="4" fill="#ffffff" stroke="#c62828"/>
+<text x="60" y="472" font-size="12" fill="#c62828" font-weight="bold">Bài học</text>
+<text x="60" y="492" font-size="12" fill="#1a1a1a">Đóng cửa qua mức không</text>
+<text x="60" y="506" font-size="12" fill="#1a1a1a">đồng nghĩa displacement thật</text>
+
+<!-- Case B green -->
+<rect x="400" y="90" width="350" height="600" rx="8" fill="#2e7d32" fill-opacity="0.06" stroke="#2e7d32" stroke-width="1.5"/>
+<text x="420" y="118" font-size="16" font-weight="bold" fill="#2e7d32">Case B - Đúng quy trình</text>
+<text x="420" y="140" font-size="13" fill="#1a1a1a">GBPUSD M15, cùng setup</text>
+<polyline points="425,230 460,225 495,235 530,215 565,220 600,180 635,150 670,160 700,140" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="600" y1="180" x2="700" y2="180" stroke="#2e7d32" stroke-dasharray="4,3"/>
+<text x="425" y="195" font-size="12" fill="#555">chờ 5/5 tiêu chí thật</text>
+<text x="705" y="178" font-size="12" fill="#2e7d32">entry FVG thật</text>
+<text x="420" y="340" font-size="13" fill="#1a1a1a">Từ chối grinding 3/5 FAIL</text>
+<text x="420" y="358" font-size="13" fill="#1a1a1a">Chờ thêm 15 phút đến khi</text>
+<text x="420" y="376" font-size="13" fill="#1a1a1a">đạt 5/5 thật (FVG rõ ràng)</text>
+<text x="420" y="400" font-size="13" fill="#1a1a1a">Kết quả: WIN nhưng RR</text>
+<text x="420" y="418" font-size="13" fill="#1a1a1a">thấp hơn đáng kể vs vào sớm</text>
+<rect x="420" y="450" width="310" height="60" rx="4" fill="#ffffff" stroke="#2e7d32"/>
+<text x="430" y="472" font-size="12" fill="#2e7d32" font-weight="bold">Bài học</text>
+<text x="430" y="492" font-size="12" fill="#1a1a1a">Trả giá RR thấp hơn vẫn</text>
+<text x="430" y="506" font-size="12" fill="#1a1a1a">tốt hơn về expectancy dài hạn</text>
+
+<!-- Case C amber -->
+<rect x="770" y="90" width="350" height="600" rx="8" fill="#f9a825" fill-opacity="0.10" stroke="#f9a825" stroke-width="1.5"/>
+<text x="790" y="118" font-size="16" font-weight="bold" fill="#3a2c00">Case C - Vùng xám</text>
+<text x="790" y="140" font-size="13" fill="#1a1a1a">XAUUSD M15, trước CPI</text>
+<polyline points="795,260 830,250 865,255 900,200 935,190 970,205 1005,195" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="900" y1="200" x2="1005" y2="200" stroke="#3a2c00" stroke-dasharray="4,3"/>
+<text x="795" y="185" font-size="12" fill="#3a2c00">5/5 tiêu chí kỹ thuật đạt</text>
+<text x="790" y="340" font-size="13" fill="#1a1a1a">Displacement mạnh nhưng</text>
+<text x="790" y="358" font-size="13" fill="#1a1a1a">30 phút trước tin CPI lớn</text>
+<text x="790" y="382" font-size="13" fill="#1a1a1a">5 tiêu chí đo "mạnh" nhưng</text>
+<text x="790" y="400" font-size="13" fill="#1a1a1a">không đo "an toàn trước tin"</text>
+<rect x="790" y="450" width="310" height="60" rx="4" fill="#ffffff" stroke="#f9a825"/>
+<text x="800" y="472" font-size="12" fill="#3a2c00" font-weight="bold">Bài học</text>
+<text x="800" y="492" font-size="12" fill="#1a1a1a">Cần lớp lọc ngữ cảnh lịch</text>
+<text x="800" y="506" font-size="12" fill="#1a1a1a">tin riêng, không gộp vào 5TC</text>
+
+<rect x="30" y="700" width="1090" height="0" stroke="none"/>
+</svg>

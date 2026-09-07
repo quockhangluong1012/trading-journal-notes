@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="700" fill="#ffffff"/>
+  <text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Audit Framework — FVG Not Valid</text>
+  <text x="500" y="56" text-anchor="middle" font-size="14" fill="#555">Pipeline kiểm toán độc lập từ log tới hành động</text>
+
+  <!-- Pipeline boxes -->
+  <rect x="40" y="80" width="200" height="110" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="140" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565c0">1. Log đủ field</text>
+  <text x="140" y="128" text-anchor="middle" font-size="11" fill="#333">12 field bắt buộc:</text>
+  <text x="140" y="144" text-anchor="middle" font-size="11" fill="#333">checklist score, screenshot,</text>
+  <text x="140" y="160" text-anchor="middle" font-size="11" fill="#333">mitigation depth, sweep</text>
+  <text x="140" y="176" text-anchor="middle" font-size="11" fill="#333">scale alignment...</text>
+
+  <line x1="240" y1="135" x2="280" y2="135" stroke="#999" stroke-width="2" marker-end="url(#a2)"/>
+
+  <rect x="280" y="80" width="200" height="110" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="380" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a2c00">2. Bộ câu hỏi</text>
+  <text x="380" y="128" text-anchor="middle" font-size="11" fill="#3a2c00">12 câu PASS/FAIL</text>
+  <text x="380" y="144" text-anchor="middle" font-size="11" fill="#3a2c00">khách quan, đo được</text>
+  <text x="380" y="160" text-anchor="middle" font-size="11" fill="#3a2c00">từ log — không dựa</text>
+  <text x="380" y="176" text-anchor="middle" font-size="11" fill="#3a2c00">vào trí nhớ</text>
+
+  <line x1="480" y1="135" x2="520" y2="135" stroke="#999" stroke-width="2" marker-end="url(#a2)"/>
+
+  <rect x="520" y="80" width="200" height="110" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="620" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#c62828">3. Rubric A/B/C/F</text>
+  <text x="620" y="128" text-anchor="middle" font-size="11" fill="#333">A: 11-12 PASS</text>
+  <text x="620" y="144" text-anchor="middle" font-size="11" fill="#333">B: 8-10 · C: 5-7</text>
+  <text x="620" y="160" text-anchor="middle" font-size="11" fill="#333">F: 0-4</text>
+  <text x="620" y="176" text-anchor="middle" font-size="11" fill="#333">theo điểm PASS</text>
+
+  <line x1="720" y1="135" x2="760" y2="135" stroke="#999" stroke-width="2" marker-end="url(#a2)"/>
+
+  <rect x="760" y="80" width="200" height="110" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="860" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#2e7d32">4. Hành động</text>
+  <text x="860" y="128" text-anchor="middle" font-size="11" fill="#333">A: giữ size</text>
+  <text x="860" y="144" text-anchor="middle" font-size="11" fill="#333">B: review · C: giảm 50%</text>
+  <text x="860" y="160" text-anchor="middle" font-size="11" fill="#333">F: cấm live,</text>
+  <text x="860" y="176" text-anchor="middle" font-size="11" fill="#333">quay lại backtest</text>
+
+  <!-- Red flags box -->
+  <rect x="60" y="230" width="880" height="200" rx="10" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="500" y="256" text-anchor="middle" font-size="15" font-weight="bold" fill="#c62828">Red Flags — mẫu gian lận/tự lừa phổ biến</text>
+
+  <rect x="80" y="270" width="400" height="70" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="90" y="290" font-size="12" font-weight="bold" fill="#c62828">Sửa checklist score sau kết quả</text>
+  <text x="90" y="308" font-size="11" fill="#333">Timestamp chỉnh sửa sau timestamp_exit</text>
+  <text x="90" y="324" font-size="11" fill="#333">là bằng chứng hồi tố hóa.</text>
+
+  <rect x="500" y="270" width="400" height="70" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="510" y="290" font-size="12" font-weight="bold" fill="#c62828">Chỉ log lệnh đẹp</text>
+  <text x="510" y="308" font-size="11" fill="#333">Số note log ít hơn số lệnh thật đã</text>
+  <text x="510" y="324" font-size="11" fill="#333">vào theo lịch sử broker/platform.</text>
+
+  <rect x="80" y="350" width="400" height="70" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="90" y="370" font-size="12" font-weight="bold" fill="#c62828">Định nghĩa "fresh" xê dịch</text>
+  <text x="90" y="388" font-size="11" fill="#333">Ngưỡng mitigation_depth_pct khác nhau</text>
+  <text x="90" y="404" font-size="11" fill="#333">giữa lệnh Win và lệnh Loss.</text>
+
+  <rect x="500" y="350" width="400" height="70" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="510" y="370" font-size="12" font-weight="bold" fill="#c62828">"6/6" ghi mặc định</text>
+  <text x="510" y="388" font-size="11" fill="#333">Không có chi tiết dẫn chứng cho từng</text>
+  <text x="510" y="404" font-size="11" fill="#333">điều kiện — dấu hiệu điền qua loa.</text>
+
+  <!-- Meta-audit strip -->
+  <rect x="60" y="460" width="880" height="100" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="500" y="486" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">Meta-audit chính note này</text>
+  <text x="500" y="510" text-anchor="middle" font-size="12" fill="#333">Bộ 6 điều kiện: Tier 0 (suy luận logic, chưa có bảng số liệu winrate riêng từng điều kiện).</text>
+  <text x="500" y="530" text-anchor="middle" font-size="12" fill="#333">Ví dụ thật duy nhất trong log (mục 8) là n=1, và là lệnh THUA — chưa có ví dụ WIN thật.</text>
+  <text x="500" y="550" text-anchor="middle" font-size="12" fill="#333">Giọng "CE là TRẦN" (mục 5.1) cần hạ xuống "giả thuyết" theo Rule 1 Doctrine v2.</text>
+
+  <!-- Nhịp audit strip -->
+  <rect x="60" y="580" width="880" height="90" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="500" y="606" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a2c00">Nhịp audit</text>
+  <text x="500" y="628" text-anchor="middle" font-size="12" fill="#3a2c00">Sau mỗi lệnh: điền đủ 12 field ngay. Cuối tuần: chấm rubric.</text>
+  <text x="500" y="648" text-anchor="middle" font-size="12" fill="#3a2c00">Cuối tháng: audit ngẫu nhiên 3-5 note cũ, không chỉ note mới nhất.</text>
+
+  <defs>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#999"/>
+    </marker>
+  </defs>
+</svg>

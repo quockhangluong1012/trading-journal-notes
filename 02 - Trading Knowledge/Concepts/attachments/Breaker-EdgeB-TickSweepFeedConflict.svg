@@ -1,0 +1,90 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1280" height="720" rx="14" fill="#131722" stroke="#2a2e39"/>
+<text x="40" y="46" font-size="26" font-weight="bold" fill="#d1d4dc">Sweep 1-2 tick: feed A thấy, feed B không thấy</text>
+<text x="40" y="70" font-size="15" fill="#787b86">GBPUSD M1 — cùng cấu trúc, hai nhãn khác nhau tùy nguồn giá</text>
+
+<!-- divider -->
+<line x1="640" y1="95" x2="640" y2="660" stroke="#2a2e39" stroke-width="2"/>
+
+<!-- Left panel: Feed A - sweep confirmed -->
+<rect x="55" y="100" width="150" height="30" rx="6" fill="#26a69a" opacity="0.18" stroke="#26a69a"/>
+<text x="130" y="120" font-size="14" fill="#26a69a" text-anchor="middle">✓ FEED A: SWEPT</text>
+<text x="60" y="150" font-size="13" fill="#787b86">Broker X (ECN, raw spread)</text>
+
+<!-- swing low reference line -->
+<line x1="60" y1="380" x2="600" y2="380" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+<text x="60" y="373" font-size="13" fill="#f2c94c">Low1 = 1.26410</text>
+
+<!-- candles leading to low -->
+<g>
+<line x1="100" y1="300" x2="100" y2="378" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="93" y="310" width="14" height="55" fill="#ef5350" rx="1"/>
+<line x1="130" y1="310" x2="130" y2="385" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="123" y="320" width="14" height="50" fill="#ef5350" rx="1"/>
+<!-- sweep candle: wick pierces below Low1 by 1-2 tick -->
+<line x1="160" y1="330" x2="160" y2="392" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="153" y="340" width="14" height="45" fill="#ef5350" rx="1"/>
+<circle cx="160" cy="390" r="4" fill="#ff6b6b"/>
+<text x="172" y="405" font-size="12" fill="#ff6b6b">wick chạm 1.26404 (-0.6 pip)</text>
+</g>
+
+<!-- reversal impulse -->
+<g>
+<line x1="220" y1="180" x2="220" y2="345" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="213" y="200" width="14" height="140" fill="#26a69a" rx="1"/>
+<line x1="250" y1="140" x2="250" y2="220" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="243" y="150" width="14" height="65" fill="#26a69a" rx="1"/>
+</g>
+
+<line x1="60" y1="215" x2="600" y2="215" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+<text x="500" y="208" font-size="13" fill="#f2c94c">High1 (MSS)</text>
+
+<!-- breaker zone -->
+<rect x="90" y="310" width="90" height="55" fill="#4a90d9" opacity="0.14" stroke="#4a90d9" stroke-dasharray="6 4"/>
+<text x="95" y="303" font-size="13" fill="#4a90d9">Bullish Breaker (đã sweep)</text>
+
+<text x="60" y="450" font-size="13" fill="#d1d4dc">Kết luận Feed A: sweep hợp lệ → vùng nến giảm</text>
+<text x="60" y="470" font-size="13" fill="#d1d4dc">= BREAKER (đảo cực, entry Long khi retest)</text>
+
+<!-- Right panel: Feed B - no sweep -->
+<rect x="695" y="100" width="170" height="30" rx="6" fill="#ff6b6b" opacity="0.18" stroke="#ff6b6b"/>
+<text x="780" y="120" font-size="14" fill="#ff6b6b" text-anchor="middle">✗ FEED B: KHÔNG SWEEP</text>
+<text x="700" y="150" font-size="13" fill="#787b86">Broker Y (market maker, dealing desk)</text>
+
+<line x1="700" y1="380" x2="1240" y2="380" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+<text x="700" y="373" font-size="13" fill="#f2c94c">Low1 = 1.26411 (feed lệch 0.1 pip)</text>
+
+<g>
+<line x1="740" y1="300" x2="740" y2="376" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="733" y="310" width="14" height="53" fill="#ef5350" rx="1"/>
+<line x1="770" y1="310" x2="770" y2="383" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="763" y="320" width="14" height="48" fill="#ef5350" rx="1"/>
+<!-- wick stops just above Low1, no sweep -->
+<line x1="800" y1="330" x2="800" y2="388" stroke="#ef5350" stroke-width="1.5"/>
+<rect x="793" y="340" width="14" height="43" fill="#ef5350" rx="1"/>
+<circle cx="800" cy="386" r="4" fill="#787b86"/>
+<text x="812" y="401" font-size="12" fill="#787b86">wick chỉ tới 1.26418 (chưa chạm)</text>
+</g>
+
+<g>
+<line x1="860" y1="180" x2="860" y2="345" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="853" y="200" width="14" height="140" fill="#26a69a" rx="1"/>
+<line x1="890" y1="140" x2="890" y2="220" stroke="#26a69a" stroke-width="1.5"/>
+<rect x="883" y="150" width="14" height="65" fill="#26a69a" rx="1"/>
+</g>
+
+<line x1="700" y1="215" x2="1240" y2="215" stroke="#f2c94c" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+<text x="1140" y="208" font-size="13" fill="#f2c94c">High1 (MSS)</text>
+
+<!-- mitigation zone label -->
+<rect x="730" y="310" width="90" height="53" fill="#b48ead" opacity="0.14" stroke="#b48ead" stroke-dasharray="6 4"/>
+<text x="735" y="303" font-size="13" fill="#b48ead">Mitigation Block (không sweep)</text>
+
+<text x="700" y="450" font-size="13" fill="#d1d4dc">Kết luận Feed B: không sweep thật → cùng vùng</text>
+<text x="700" y="470" font-size="13" fill="#d1d4dc">chỉ là MITIGATION BLOCK (stop logic khác)</text>
+
+<line x1="60" y1="560" x2="1220" y2="560" stroke="#2a2e39"/>
+<text x="60" y="590" font-size="14" fill="#f2c94c">Cùng một cây nến M1, chênh giá tick giữa hai feed quyết định nhãn cấu trúc.</text>
+<text x="60" y="615" font-size="14" fill="#d1d4dc">Stop logic khác nhau: breaker → stop ngoài Low2 (điểm sweep); mitigation → stop ngoài extreme swing.</text>
+<text x="60" y="640" font-size="13" fill="#787b86">Ghi chú: chênh lệch quote liên-broker vùng đáy/đỉnh thường 0.1-0.3 pip trên FX major, đủ để đổi nhãn khi swing nằm sát mép.</text>
+</svg>

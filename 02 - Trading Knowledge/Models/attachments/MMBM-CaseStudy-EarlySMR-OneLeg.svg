@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb">Case Study — Win: Smart Money Low sau chỉ 1 leg, pool chất lượng cao (+2.1R)</text>
+
+<!-- only 1 leg down -->
+<text x="60" y="70" font-size="12" fill="#94a3b8">Chỉ 1 bậc LRS duy nhất, không có 3-4 bậc như "chuẩn"</text>
+<rect x="90" y="140" width="14" height="60" fill="#ef4444"/><line x1="97" y1="128" x2="97" y2="212" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="120" y="170" width="14" height="65" fill="#ef4444"/><line x1="127" y1="158" x2="127" y2="248" stroke="#9ca3af" stroke-width="1.5"/>
+
+<!-- equal lows pool resting many sessions -->
+<line x1="60" y1="250" x2="400" y2="250" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="64" y="244" font-size="12" fill="#eab308">SSL — equal lows nghỉ 5 phiên liên tiếp</text>
+
+<defs><marker id="arrOMMBMasym" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#f97316"/></marker></defs>
+<rect x="150" y="230" width="14" height="45" fill="#22c55e"/><line x1="157" y1="215" x2="157" y2="290" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M220,320 C190,300 170,280 160,265" fill="none" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrOMMBMasym)"/>
+<text x="185" y="335" font-size="11" fill="#f97316">Sweep + reclaim ngay</text>
+
+<circle cx="157" cy="252" r="16" fill="none" stroke="#4ade80" stroke-width="2"/>
+
+<!-- immediate strong MSS -->
+<line x1="90" y1="128" x2="280" y2="128" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="285" y="124" font-size="11" fill="#a855f7">MSS ngay sau leg đầu</text>
+<rect x="190" y="80" width="16" height="140" fill="#22c55e"/><line x1="198" y1="70" x2="198" y2="228" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="220" y="55" width="16" height="120" fill="#22c55e"/><line x1="228" y1="45" x2="228" y2="180" stroke="#9ca3af" stroke-width="1.5"/>
+
+<rect x="500" y="120" width="400" height="200" rx="8" fill="#1e293b" stroke="#334155"/>
+<text x="516" y="145" font-size="12" fill="#e5e7eb">Nếu chờ "đủ 3-4 bậc LRS cho chắc" → bỏ lỡ setup này</text>
+<text x="516" y="170" font-size="12" fill="#e5e7eb">4 tiêu chí SML vẫn đủ: reclaim nhanh (1 nến),</text>
+<text x="516" y="190" font-size="12" fill="#e5e7eb">MSS + displacement rõ, pool "nghỉ" 5 phiên (chất lượng</text>
+<text x="516" y="210" font-size="12" fill="#e5e7eb">cao), giá đang ở discount sâu D1</text>
+<text x="516" y="235" font-size="12" fill="#4ade80">Đúng ra: chấm theo 4 tiêu chí, không đếm số bậc</text>
+<text x="516" y="255" font-size="12" fill="#4ade80">Kết quả: Win +2.1R — vào ngay sau MSS đầu tiên</text>
+
+<text x="480" y="565" font-size="12" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa</text>
+</svg>

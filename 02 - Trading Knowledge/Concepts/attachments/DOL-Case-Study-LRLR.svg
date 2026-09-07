@@ -1,0 +1,34 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="32" font-size="15" font-weight="700" fill="#1F2937">Case study — Low-Resistance vs High-Resistance Liquidity Run</text>
+<text x="24" y="52" font-size="11.5" fill="#6B7280">Minh họa khái niệm · sau khi gom đối ứng, giá chạy tới DOL đối diện theo hai "chất lượng" khác nhau</text>
+<!-- LEFT LRLR -->
+<rect x="24" y="66" width="356" height="322" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+<text x="38" y="88" font-size="12.5" font-weight="700" fill="#166534">LRLR — chạy sạch, ít cản</text>
+<line x1="44" y1="120" x2="372" y2="120" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="46" y="114" font-size="9" fill="#1D4ED8">DOL đối diện (target)</text>
+<line x1="44" y1="330" x2="372" y2="330" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="46" y="345" font-size="9" fill="#6B7280">pool vừa quét</text>
+<path d="M60,320 L95,300 L120,330 L145,300 L175,255 L205,215 L235,185 L270,160 L305,135 L345,120" fill="none" stroke="#15803D" stroke-width="2.4"/>
+<circle cx="120" cy="330" r="5" fill="none" stroke="#B45309" stroke-width="2.2"/>
+<text x="60" y="366" font-size="9.5" fill="#374151">Ít FVG chưa lấp / ít old high chắn giữa</text>
+<text x="60" y="380" font-size="9.5" font-weight="700" fill="#166534">→ giá đi thẳng, giữ runner tự tin</text>
+<!-- RIGHT HRLR -->
+<rect x="388" y="66" width="348" height="322" rx="8" fill="#FEF2F2" stroke="#FECACA"/>
+<text x="402" y="88" font-size="12.5" font-weight="700" fill="#B91C1C">HRLR — nhiều cản, giật cục</text>
+<line x1="408" y1="120" x2="728" y2="120" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="410" y="114" font-size="9" fill="#1D4ED8">DOL đối diện (target)</text>
+<!-- obstacles -->
+<rect x="408" y="180" width="320" height="16" fill="#DC2626" opacity="0.14"/>
+<text x="412" y="192" font-size="8" fill="#B91C1C">FVG ngược chưa lấp (cản)</text>
+<rect x="408" y="235" width="320" height="16" fill="#DC2626" opacity="0.14"/>
+<text x="412" y="247" font-size="8" fill="#B91C1C">old high (cản)</text>
+<path d="M420,330 L445,305 L465,332 L490,300 L510,255 L525,270 L545,245 L560,258 L585,205 L600,220 L625,190 L645,205 L675,150 L700,130 L720,120" fill="none" stroke="#B91C1C" stroke-width="2.2"/>
+<text x="402" y="366" font-size="9.5" fill="#374151">Nhiều FVG/old level chắn → dừng-giật liên tục</text>
+<text x="402" y="380" font-size="9.5" font-weight="700" fill="#B91C1C">→ dễ bị đá stop giữa đường, chốt sớm hợp lý hơn</text>
+<!-- bottom -->
+<rect x="24" y="398" width="712" height="60" rx="8" fill="#F3F4F6"/>
+<text x="38" y="420" font-size="12" font-weight="700" fill="#1F2937">Why — "đường tới DOL" quyết định cách quản lệnh</text>
+<text x="38" y="440" font-size="10.5" fill="#374151">Trước khi target một DOL, quét xem giữa giá và DOL có bao nhiêu FVG ngược/old high chưa lấp. Ít cản (LRLR) → giữ runner.</text>
+<text x="38" y="454" font-size="10.5" fill="#374151">Nhiều cản (HRLR) → hạ kỳ vọng R, chốt từng chặng. Cùng một bias, chất lượng đường đi khác nhau hoàn toàn.</text>
+</svg>

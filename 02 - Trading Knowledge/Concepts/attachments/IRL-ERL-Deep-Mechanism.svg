@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="780" fill="#0f1420" rx="12"/>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế đằng sau IRL/ERL: limit order book, stop cluster và footprint imbalance</text>
+<text x="40" y="63" font-size="15" fill="#94a3b8">Vì sao ERL hút giá (thanh khoản chờ sẵn) còn IRL giữ giá (nợ imbalance chưa trả) — đối chiếu orderflow footprint</text>
+
+<!-- Panel 1: LOB at ERL -->
+<rect x="40" y="90" width="550" height="300" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="118" font-size="17" fill="#e2e8f0" font-weight="bold">1. ERL = nơi Limit Order Book dày đặc</text>
+<rect x="70" y="145" width="480" height="200" fill="#0f1420" stroke="#334155"/>
+<line x1="70" y1="170" x2="550" y2="170" stroke="#eab308" stroke-dasharray="5,3"/>
+<text x="420" y="163" font-size="12" fill="#eab308">BSL — equal highs, stop cluster</text>
+<!-- stack of stop orders -->
+<rect x="380" y="175" width="150" height="8" fill="#eab308" opacity="0.5"/>
+<rect x="380" y="185" width="150" height="8" fill="#eab308" opacity="0.4"/>
+<rect x="380" y="195" width="150" height="8" fill="#eab308" opacity="0.3"/>
+<text x="380" y="215" font-size="11" fill="#94a3b8">Buy-stop retail (breakout chasers)</text>
+<text x="380" y="230" font-size="11" fill="#94a3b8">Sell-stop (SL của short trước đó)</text>
+<circle cx="330" cy="270" r="7" fill="#f97316"/>
+<text x="90" y="275" font-size="12" fill="#f97316" font-weight="bold">Giá bị "hút" về đây — orderflow cần đối ứng lớn</text>
+<text x="90" y="330" font-size="12" fill="#e2e8f0">Dealer/MM cần thanh khoản đối ứng để khớp lệnh lớn → giá tự nhiên bị hút về vùng có nhiều lệnh chờ.</text>
+
+<!-- Panel 2: FVG imbalance / footprint -->
+<rect x="610" y="90" width="550" height="300" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="630" y="118" font-size="17" fill="#e2e8f0" font-weight="bold">2. IRL (FVG) = nợ imbalance trong footprint</text>
+<rect x="650" y="145" width="480" height="200" fill="#0f1420" stroke="#334155"/>
+<rect x="700" y="170" width="14" height="35" fill="#22c55e"/><line x1="707" y1="160" x2="707" y2="215" stroke="#22c55e" stroke-width="2"/>
+<rect x="730" y="150" width="14" height="30" fill="#22c55e"/><line x1="737" y1="140" x2="737" y2="190" stroke="#22c55e" stroke-width="2"/>
+<rect x="760" y="130" width="14" height="30" fill="#22c55e"/><line x1="767" y1="120" x2="767" y2="170" stroke="#22c55e" stroke-width="2"/>
+<rect x="705" y="182" width="70" height="20" fill="#22c55e" opacity="0.2" stroke="#22c55e" stroke-dasharray="3,2"/>
+<text x="790" y="195" font-size="12" fill="#22c55e">FVG (imbalance) — bên bán không kịp khớp hết ở đây</text>
+<text x="670" y="260" font-size="12" fill="#94a3b8">Footprint chart: tại nến displacement, delta lệch mạnh một phía —</text>
+<text x="670" y="280" font-size="12" fill="#94a3b8">bằng chứng orderflow thật của "khoảng trống" giao dịch hai chiều.</text>
+<text x="670" y="320" font-size="12" fill="#e2e8f0">→ Giá quay lại IRL không phải "mê tín" mà để hoàn tất phần khớp lệnh còn thiếu.</text>
+
+<!-- bottom: comparison table + cycle -->
+<rect x="40" y="410" width="1120" height="330" fill="#1e293b" stroke="#334155" rx="8"/>
+<text x="60" y="440" font-size="17" fill="#e2e8f0" font-weight="bold">3. Vòng xoay ERL → IRL → ERL và đối chiếu Wyckoff / Auction Theory</text>
+<text x="60" y="465" font-size="13" fill="#94a3b8">Wyckoff: Spring/UTAD lấy thanh khoản tại biên range (~ERL) rồi quay về Value Area (~IRL). Auction Theory: giá dao động giữa "excess" (đuôi phân phối, ~ERL) và "value" (~IRL).</text>
+
+<circle cx="200" cy="560" r="55" fill="none" stroke="#eab308" stroke-width="2"/>
+<text x="165" y="565" font-size="13" fill="#eab308" font-weight="bold">ERL (sweep)</text>
+<path d="M 250 545 Q 350 500 450 545" stroke="#38bdf8" stroke-width="2" fill="none" marker-end="url(#arrow1)"/>
+<circle cx="500" cy="560" r="55" fill="none" stroke="#22c55e" stroke-width="2"/>
+<text x="465" y="565" font-size="13" fill="#22c55e" font-weight="bold">IRL (FVG)</text>
+<path d="M 550 545 Q 650 500 750 545" stroke="#38bdf8" stroke-width="2" fill="none" marker-end="url(#arrow1)"/>
+<circle cx="800" cy="560" r="55" fill="none" stroke="#eab308" stroke-width="2"/>
+<text x="758" y="565" font-size="13" fill="#eab308" font-weight="bold">ERL đối diện</text>
+<defs><marker id="arrow1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="#38bdf8"/></marker></defs>
+
+<text x="60" y="670" font-size="13" fill="#e2e8f0">Điều kiện làm vòng xoay MẠNH: range environment, thanh khoản sâu (London/NY overlap), volatility vừa phải.</text>
+<text x="60" y="695" font-size="13" fill="#e2e8f0">Điều kiện làm vòng xoay YẾU/GÃY: trending mạnh một chiều, tin tức lớn giữa vòng xoay, thanh khoản mỏng (phiên Á, holiday).</text>
+<text x="60" y="720" font-size="13" fill="#94a3b8">FX majors: vòng xoay rõ nét nhất nhờ thanh khoản liên ngân hàng. Index futures: rõ trong RTH, dễ gãy overnight. Crypto: gãy quanh funding/thanh lý.</text>
+</svg>

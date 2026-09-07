@@ -1,0 +1,38 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1280" height="720" rx="14" fill="#131722"/>
+  <rect x="1" y="1" width="1278" height="718" rx="14" fill="none" stroke="#2a2e39"/>
+
+  <text x="32" y="42" font-size="26" font-weight="bold" fill="#d1d4dc">Decay của Equilibrium — phản ứng giảm dần theo số lần chạm</text>
+  <text x="32" y="66" font-size="15" fill="#787b86">Thống kê backtest EURUSD H1, N=140 range, đo phản ứng (pip) tại EQ theo lần chạm thứ mấy</text>
+
+  <!-- axis -->
+  <line x1="140" y1="600" x2="1180" y2="600" stroke="#787b86" stroke-width="1"/>
+  <line x1="140" y1="140" x2="140" y2="600" stroke="#787b86" stroke-width="1"/>
+  <text x="60" y="150" font-size="13" fill="#787b86">Reaction</text>
+  <text x="60" y="166" font-size="13" fill="#787b86">(pip avg)</text>
+
+  <!-- bars: touch 1=38pip, touch2=22pip, touch3=11pip, touch4=4pip -->
+  <rect x="220" y="220" width="120" height="380" fill="#26a69a" opacity="0.85"/>
+  <text x="248" y="210" font-size="16" fill="#d1d4dc">38 pip</text>
+  <text x="255" y="640" font-size="14" fill="#787b86">Lan cham 1</text>
+
+  <rect x="420" y="360" width="120" height="240" fill="#4a90d9" opacity="0.85"/>
+  <text x="448" y="350" font-size="16" fill="#d1d4dc">22 pip</text>
+  <text x="455" y="640" font-size="14" fill="#787b86">Lan cham 2</text>
+
+  <rect x="620" y="480" width="120" height="120" fill="#f2c94c" opacity="0.85"/>
+  <text x="650" y="470" font-size="16" fill="#d1d4dc">11 pip</text>
+  <text x="655" y="640" font-size="14" fill="#787b86">Lan cham 3</text>
+
+  <rect x="820" y="555" width="120" height="45" fill="#ff6b6b" opacity="0.85"/>
+  <text x="852" y="545" font-size="16" fill="#d1d4dc">4 pip</text>
+  <text x="850" y="640" font-size="14" fill="#787b86">Lan cham 4+</text>
+
+  <!-- win rate annotations -->
+  <text x="220" y="670" font-size="13" fill="#787b86">Win rate reversal: 61%</text>
+  <text x="420" y="670" font-size="13" fill="#787b86">Win rate reversal: 47%</text>
+  <text x="620" y="670" font-size="13" fill="#787b86">Win rate reversal: 33%</text>
+  <text x="820" y="670" font-size="13" fill="#787b86">Win rate reversal: 19%</text>
+
+  <text x="140" y="694" font-size="13" fill="#565b66">EQ khong phai muc co dinh: moi lan gia dung lai tai do la mot phan lenh limit bi tieu thu.</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="28" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1a1a">Edge entry vs CE entry - chi phi/loi ich do bang so</text>
+  <text x="450" y="48" text-anchor="middle" font-size="12" fill="#666">2 lenh Win voi first_error_step: entry - "thang du sai"</text>
+
+  <!-- Case 1: EURUSD 2013-11-21 -->
+  <text x="230" y="78" text-anchor="middle" font-size="13" font-weight="700" fill="#333">EURUSD 21/11/2013 (Long)</text>
+  <rect x="50" y="90" width="360" height="170" fill="#fdf6e3" stroke="#b7950b" stroke-width="1.5"/>
+  <line x1="70" y1="220" x2="390" y2="220" stroke="#888" stroke-width="1"/>
+  <text x="75" y="235" font-size="9" fill="#888">BPR 1.34237 - 1.34-96 (typo goc, khong tinh duoc CE)</text>
+  <circle cx="130" cy="150" r="5" fill="#e67e22"/>
+  <text x="130" y="140" text-anchor="middle" font-size="9" fill="#e67e22" font-weight="700">Entry Edge 1.34239</text>
+  <text x="130" y="170" text-anchor="middle" font-size="9" fill="#555">(gan sat bien BPR)</text>
+  <line x1="130" y1="150" x2="360" y2="105" stroke="#1e8449" stroke-width="2"/>
+  <circle cx="360" cy="105" r="5" fill="#1e8449"/>
+  <text x="330" y="98" text-anchor="middle" font-size="9" fill="#1e8449" font-weight="700">R = 3.18 (dat)</text>
+
+  <!-- Case 2: GBPUSD 2024-12-04 -->
+  <text x="670" y="78" text-anchor="middle" font-size="13" font-weight="700" fill="#333">GBPUSD 4/12/2024 (Long)</text>
+  <rect x="490" y="90" width="360" height="170" fill="#fdf6e3" stroke="#b7950b" stroke-width="1.5"/>
+  <line x1="510" y1="220" x2="830" y2="220" stroke="#888" stroke-width="1"/>
+  <text x="515" y="235" font-size="9" fill="#888">FVG 1.26515 - 1.26642, CE = 1.265785</text>
+  <circle cx="570" cy="150" r="5" fill="#e67e22"/>
+  <text x="570" y="140" text-anchor="middle" font-size="9" fill="#e67e22" font-weight="700">Entry Edge/Between 1.26615</text>
+  <text x="570" y="170" text-anchor="middle" font-size="9" fill="#555">Fill depth chi 21% vao FVG</text>
+  <line x1="570" y1="150" x2="800" y2="105" stroke="#1e8449" stroke-width="2"/>
+  <circle cx="800" cy="105" r="5" fill="#1e8449"/>
+  <text x="770" y="98" text-anchor="middle" font-size="9" fill="#1e8449" font-weight="700">R = 3.4 (dat)</text>
+  <!-- dashed CE comparison -->
+  <line x1="510" y1="180" x2="800" y2="70" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="700" y="65" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="700">Neu vao dung CE: rr_if_ce = 5.31</text>
+
+  <!-- cost-benefit table -->
+  <rect x="50" y="280" width="800" height="130" fill="#eef6fb" stroke="#2980b9"/>
+  <text x="450" y="302" text-anchor="middle" font-size="13" font-weight="700" fill="#2471a3">Bang chi phi/loi ich do duoc (chi tinh duoc cho GBPUSD 4/12 - du lieu day du)</text>
+  <line x1="70" y1="315" x2="830" y2="315" stroke="#2980b9" stroke-width="0.5"/>
+  <text x="90" y="335" font-size="11" fill="#333">R thuc nhan (Edge entry, fill 21%)</text>
+  <text x="600" y="335" font-size="11" font-weight="700" fill="#e67e22">3.4 R</text>
+  <text x="90" y="358" font-size="11" fill="#333">R gia dinh neu vao dung CE (rr_if_ce)</text>
+  <text x="600" y="358" font-size="11" font-weight="700" fill="#1e8449">5.31 R</text>
+  <text x="90" y="381" font-size="11" fill="#333">Chi phi co hoi (khi Edge fill nhung CE khong bi cham)</text>
+  <text x="600" y="381" font-size="11" font-weight="700" fill="#c0392b">~1.9 R (dang le duoc, chua nhan)</text>
+  <text x="90" y="401" font-size="10" fill="#888">EURUSD 21/11/2013: khong tinh duoc (BPR bounds bi typo trong note goc, CE = trong)</text>
+
+  <!-- hindsight warning -->
+  <rect x="50" y="425" width="800" height="105" fill="#fdf2f0" stroke="#c0392b"/>
+  <text x="450" y="447" text-anchor="middle" font-size="12" font-weight="700" fill="#a93226">Vi sao "thang" khong chung minh Edge entry la ky thuat dung [HINDSIGHT]</text>
+  <text x="70" y="470" font-size="11" fill="#333">Ca 2 lenh chi Win vi retrace KHONG DU SAU de kiem dinh gia thuyet Edge vs CE - day la thong tin</text>
+  <text x="70" y="488" font-size="11" fill="#333">chi co SAU khi outcome xay ra, khong the dung de bien minh cho quyet dinh entry tai thoi diem do.</text>
+  <text x="70" y="508" font-size="11" fill="#a93226" font-weight="700">Can >=20 mau Edge-entry voi retrace du sau de thuc su phan biet ty le song sot Edge vs CE.</text>
+</svg>

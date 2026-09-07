@@ -16,7 +16,7 @@ tags:
 >
 > Nguyên tắc xuyên suốt: **process over outcome** — một giai đoạn được tính là xong dựa trên *bằng chứng trong vault* (số note, số mẫu, mistake rate), không dựa trên cảm nhận.
 
-## 📍 Vị trí hiện tại của mình (cập nhật 2026-07-18)
+## 📍 Vị trí hiện tại của mình (cập nhật 2026-09-07)
 
 > [!info] Đang đứng ở đâu trên bản đồ
 > Mình **không** bắt đầu từ số 0. Trạng thái thực tế trong vault:
@@ -26,13 +26,16 @@ tags:
 > | Giai đoạn 0 — Nền tảng thị trường | Đã trade demo từ 03/2026 | ✅ Xong |
 > | Giai đoạn 1 — ICT Core Concepts | 52 concept notes trong `02 - Trading Knowledge/Concepts` | ✅ Phần lớn xong — cần ôn sâu (spaced review) thay vì học mới |
 > | Giai đoạn 2 — Model hoá (2022 Model) | Model notes có; **playbook A+ thành văn CHƯA có** | 🟡 Đang dở — đây là nút thắt #1 |
-> | Giai đoạn 3 — Backtest 200 mẫu | **22/200** backtest notes trong `04 - Backtesting` | 🟡 Đang chạy (11%) |
-> | Giai đoạn 4 — Demo forward test | 29 demo trades (16 Win / 12 Loss / 1 BE-Loss?) từ 03–06/2026; **0 lệnh trong ~30 ngày gần đây** | 🟡 Tạm dừng — rủi ro lớn nhất hiện tại |
+> | Giai đoạn 3 — Backtest 200 mẫu | 22 note, nhưng chỉ **14 trong phạm vi** NAS100+EURUSD, và **0 note có R đo thật** (16/18 lệnh thắng có `r_multiple` == `r_planned`, 0 BE, `spread_cost`/`r_net` trống) | 🔴 Mẫu chưa đo được gì — xem lại đơn vị đếm |
+> | Giai đoạn 4 — Demo forward test | 25 lệnh (sau khi gỡ 3 cặp trùng), 03–06/2026. **Dừng 11.5 tuần** kể từ 2026-06-18. **7/28 lệnh ghi `risk_percent: 5%`** = gấp 10 lần rule 0.5% | 🔴 Dừng — và sizing là rủi ro lớn nhất |
 > | Giai đoạn 5 — Challenge rehearsal 10K | Lot size note + Excel calculator đã có; demo-đúng-luật chưa chạy | 🔴 Chưa bắt đầu |
 > | Giai đoạn 6 — Thi & Funded 10K | Chưa mua gói | 🔴 Chưa bắt đầu |
 > | Giai đoạn 7 — Scale 100K | Gate 0/5 — xem [[Pass FTMO & The5ers 100K package]] | 🔴 Khoá |
 >
-> **Kết luận thẳng:** việc cần làm không phải học thêm concept mới, mà là (1) viết playbook A+ thành văn, (2) giữ nhịp backtest đều, (3) nối lại forward test demo. Ba việc này quyết định có kịp mốc readiness 2027-01-07 hay không.
+>
+> **Kết luận thẳng (2026-09-07):** ràng buộc thật **không phải kiến thức — là tính liên tục và tính toàn vẹn dữ liệu**. Chuỗi backtest dài nhất từng ghi nhận là **6 ngày**. Ba dòng công việc (live, backtest, journaling) mỗi cái chạy 3–12 tuần rồi dừng hẳn; note nghiên cứu sống lâu hơn note thực thi đúng một tháng.
+>
+> Thứ tự việc cần làm: (1) sửa hệ đo để số liệu đáng tin, (2) viết playbook A+ thành văn, (3) **phá kỷ lục chuỗi 6 ngày** — đặt "ngày tối thiểu" 20 phút để ngày tệ nhất vẫn không đứt chuỗi, (4) chỉ khi đó mới quay lại đếm mẫu backtest. Xem [[04 - Phương pháp luyện tập, vòng lặp AI & giữ động lực]].
 
 ## 🗺️ Bản đồ 8 giai đoạn
 
@@ -81,7 +84,7 @@ tags:
 1. **Liquidity & vai trò của nó:** tại sao smart money cần vùng thanh khoản để khớp lệnh lớn; equal highs/lows = engineered liquidity.
 2. **BSL / SSL (Buyside & Sellside Liquidity):** nơi cụm stop nằm; thị trường di chuyển *từ pool thanh khoản này tới pool kia*.
 3. **Liquidity sweep / stop hunt / turtle soup:** phân biệt sweep (quét rồi đảo) với break (phá rồi đi tiếp) — nhìn displacement và close.
-4. **Draw on Liquidity (DOL):** câu hỏi bắt buộc trước mọi phân tích: *"giá đang bị hút về pool nào?"* — liên hệ trực tiếp tới cụm lỗi tháng 7 của mình ([[13 - Mistake - Trading Into Unswept Liquidity]], [[02 - Mistake - Enter before liquidity sweep]]).
+4. **Draw on Liquidity (DOL):** câu hỏi bắt buộc trước mọi phân tích: *"giá đang bị hút về pool nào?"* — liên hệ trực tiếp tới cụm lỗi tháng 7 của mình ([[13-Mistake-Trading-Into-Unswept-Liquidity]], [[02-Mistake-Enter-before-liquidity-sweep]]).
 
 ### Khối 2 — Cấu trúc & dịch chuyển (tuần 4–6)
 5. **Market Structure Shift (MSS) & Break of Structure (BOS):** MSS = gãy cấu trúc *ngược xu hướng sau khi sweep* (tín hiệu đảo chiều), BOS = gãy *thuận xu hướng* (tiếp diễn). Nhầm hai cái này = nhầm cả model.
@@ -108,7 +111,7 @@ tags:
 
 ### Với mình — kế hoạch ôn (07–12/2026)
 - Mỗi Chủ nhật: chọn 2 concept `confidence ≤ 3` trong Dataview, review bằng 5 chart mới từ chính backtest tuần đó, cập nhật `last_reviewed`.
-- Ưu tiên ôn theo cụm lỗi thực tế: **Draw on Liquidity, liquidity sweep, MSS in POI** (map thẳng vào các mistake trong `06 - Mistake Database`: [[02 - Mistake - Enter before liquidity sweep]], [[03 - Mistake - Entry When MSS not in POI Zone]], [[13 - Mistake - Trading Into Unswept Liquidity]]).
+- Ưu tiên ôn theo cụm lỗi thực tế: **Draw on Liquidity, liquidity sweep, MSS in POI** (map thẳng vào các mistake trong `06 - Mistake Database`: [[02-Mistake-Enter-before-liquidity-sweep]], [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]], [[13-Mistake-Trading-Into-Unswept-Liquidity]]).
 
 ---
 
@@ -122,7 +125,7 @@ tags:
 1. **HTF bias (D1/H4):** xu hướng + DOL của ngày/tuần nằm đâu? Bias phải chọn TRƯỚC phiên, ghi vào note, không đổi giữa phiên.
 2. **Thời gian:** chỉ trong Kill Zone đã chọn (London / NY AM). Ngoài KZ = không có setup, kể cả "đẹp".
 3. **Liquidity sweep (M15/M5):** giá quét BSL/SSL rõ ràng (old high/low, equal highs/lows, Asia high/low). *Chưa sweep = chưa có gì để chờ* — đây chính là cụm lỗi 04/07 của mình.
-4. **MSS + displacement (M5/M1):** gãy cấu trúc ngược chiều sweep, bằng nến displacement, **và MSS phải xảy ra từ trong/tại POI HTF** ([[03 - Mistake - Entry When MSS not in POI Zone]]).
+4. **MSS + displacement (M5/M1):** gãy cấu trúc ngược chiều sweep, bằng nến displacement, **và MSS phải xảy ra từ trong/tại POI HTF** ([[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]).
 5. **Entry PD array:** FVG sinh ra từ chân displacement (ưu tiên) hoặc OB refine; entry tại CE hoặc mép gap.
 6. **Stop:** ngoài swing tạo sweep (không phải sát mép FVG cho "đẹp R").
 7. **Target:** pool thanh khoản đối diện (DOL) — không phải con số R tròn tuỳ hứng. R:R tối thiểu theo playbook (ví dụ ≥2R) mới được vào.
@@ -177,7 +180,7 @@ tags:
 
 ### Chỉ số theo dõi hàng tuần (ghi vào [[02 - Skill Metrics]] & weekly review)
 - % lệnh followed_plan (mục tiêu >90%)
-- Mistake rate = số mistake link / số lệnh (mục tiêu giảm dần, đặc biệt cụm [[02 - Mistake - Enter before liquidity sweep]])
+- Mistake rate = số mistake link / số lệnh (mục tiêu giảm dần, đặc biệt cụm [[02-Mistake-Enter-before-liquidity-sweep]])
 - Expectancy forward vs expectancy backtest (lệch quá xa = đang trade khác playbook)
 
 ### Tiêu chí thoát
@@ -229,7 +232,7 @@ tags:
 | Đạt target nhưng chưa đủ ngày (FTMO 4 ngày giao dịch / The5ers 3 ngày lãi) | Trade size tối thiểu đúng playbook cho đủ điều kiện ngày, không risk thêm ý nghĩa. |
 | Tin đỏ (CPI/FOMC/NFP) trong KZ | Không lệnh mới 30' trước–sau tin. Lệnh đang chạy: về BE nếu ≥+1R, hoặc đóng. |
 | The5ers: ngày đang xanh +0,4–0,5% cuối phiên | Khoá lợi nhuận đóng "ngày có lãi" ≥+50$ — điều kiện ngày quý hơn vài chục $ để chạy thêm. |
-| Cảm giác "phải vào kẻo lỡ" | Đó là [[04 - Mistake - FOMO Entry]] — đứng dậy 5 phút. Setup A+ tuần nào cũng có. |
+| Cảm giác "phải vào kẻo lỡ" | Đó là [[04-Mistake-FOMO-Entry]] — đứng dậy 5 phút. Setup A+ tuần nào cũng có. |
 
 ### Khác biệt then chốt FTMO vs The5ers (dán cạnh màn hình)
 | | FTMO 2-Step 10K | The5ers High Stakes 10K |
@@ -267,7 +270,120 @@ tags:
 > [!quote] Nguyên tắc cuối
 > Lộ trình này dài hơn quảng cáo của mọi "funded trader guru" — vì nó được thiết kế để pass **một lần và giữ được tài khoản**, không phải pass nhanh rồi cháy. Mỗi gate bị bỏ qua là một khoản phí challenge bị đốt trong tương lai. Thời gian biểu có thể xê dịch; thứ tự gate thì không.
 
+---
+
+# 📕 PHỤ LỤC A — Luật quỹ gói 100K (dùng ở GĐ5, sau khi qua gate 5 điều kiện)
+
+> [!warning] Luật prop firm thay đổi thường xuyên
+> Số liệu dưới đây cập nhật 09/2026. **Trước khi bấm mua, đọc lại trang Trading Objectives chính thức của từng quỹ.**
+
+## A.1. FTMO 100K — 2-Step
+
+| Hạng mục | Phase 1 (Challenge) | Phase 2 (Verification) | Funded |
+|---|---|---|---|
+| Profit target | **10% = $10.000** | **5% = $5.000** | Không có target |
+| Max Daily Loss | 5% = $5.000 | 5% | 5% |
+| Max Loss (tổng) | 10% = $10.000, **tĩnh** (equity không bao giờ chạm $90.000) | 10% | 10% |
+| Ngày giao dịch tối thiểu | 4 ngày | 4 ngày | — |
+| Giới hạn thời gian | **Không** | Không | — |
+| Profit split | — | — | **80% → 90%** theo Scaling Plan |
+
+**Chi tiết sống còn:**
+- **Daily loss tính theo EQUITY** (gồm lỗ nổi + phí + swap), reset lúc **nửa đêm CET**. Ví dụ: balance nửa đêm $103.000 → sàn vi phạm hôm sau là $98.000.
+- **Max loss là sàn TĨNH $90.000** tính từ balance ban đầu, không trail theo đỉnh — điểm dễ thở nhất của FTMO so với quỹ trailing.
+- News trading & giữ lệnh qua đêm/cuối tuần: **tự do trong 2 phase thi**; tài khoản funded loại Standard mới bị hạn chế (±2 phút quanh tin, không giữ qua cuối tuần) — muốn swing thì chọn **Swing account** ngay từ đầu.
+
+**FTMO 1-Step (KHÔNG khuyến nghị):** target 10% một phase, nhưng daily loss chỉ **3%**, max loss 10% **trailing theo ngày**, kèm **Best Day Rule 50%**. Chỉ cân nhắc sau khi đã pass 2-step ít nhất một lần.
+
+## A.2. The5ers 100K — High Stakes
+
+| Hạng mục | Step 1 | Step 2 | Funded |
+|---|---|---|---|
+| Profit target | **10% = $10.000** | **5% = $5.000** | 10% mỗi nấc để scale |
+| Max Daily Loss | 5% — **chạm là cháy** | 5% | 5% |
+| Max Loss (tổng) | 10% | 10% | 10% |
+| Ngày tối thiểu | **3 ngày CÓ LỜI** (mỗi ngày ≥ 0.5% = $500, tính trên lệnh đã đóng) | 3 ngày có lời | 3 ngày có lời mỗi nấc |
+| Thời gian | Không giới hạn — nhưng **30 ngày không giao dịch → hết hạn** | Không giới hạn | — |
+| Profit split | — | — | **80% → 100%** theo nấc scaling |
+
+- **"Ngày có lời"** = min(balance, equity) lúc nửa đêm − balance ngày trước ≥ +0.5% vốn gốc. **Không thể pass bằng một cú ăn đậm duy nhất.**
+- **Cấm đặt/đóng lệnh trong ±2 phút quanh tin tác động mạnh** (được giữ lệnh xuyên tin). Khác biệt lớn nhất so với FTMO khi thi.
+
+## A.3. So sánh nhanh — điều chỉnh chiến thuật
+
+| Điểm khác | FTMO | The5ers | Hệ quả |
+|---|---|---|---|
+| Ngày tối thiểu | 4 ngày giao dịch | 3 ngày **có lời ≥0.5%** | The5ers: nhắm "nhiều ngày lời vừa phải", không dồn 1 ngày |
+| Tin tức khi thi | Tự do | Cấm khớp lệnh ±2' quanh tin đỏ | The5ers: không entry sát giờ tin |
+| Drawdown | Tĩnh | Tĩnh | Giống nhau: sàn $90.000 |
+
+---
+
+# 📕 PHỤ LỤC B — Kế hoạch rủi ro & nhịp một ngày thi
+
+**Cấu hình chuẩn (tài khoản $100.000):** risk **0.5%/lệnh = $500** · tối đa **2 lệnh/ngày** · daily stop cá nhân **−1% = −$1.000** · sau 2 ngày thua liên tiếp → nghỉ 1 ngày.
+
+| | Target | Số R cần (RR 1:2, WR 45%) | Số lệnh dự kiến | Thời gian |
+|---|---|---|---|---|
+| FTMO Phase 1 | +$10.000 = 20R | ~20R ròng | 45–70 lệnh | 6–12 tuần |
+| FTMO Phase 2 | +$5.000 = 10R | ~10R | 25–40 lệnh | 3–6 tuần |
+| The5ers Step 1 | +$10.000, dàn ≥3 ngày lời | ~20R | 45–70 lệnh | 6–12 tuần |
+| The5ers Step 2 | +$5.000 | ~10R | 25–40 lệnh | 3–6 tuần |
+
+> [!tip] Toán an toàn
+> Ở risk 0.5%: cần **20 lệnh thua liên tiếp** mới chạm max loss 10%, và **10 lệnh thua trong 1 ngày** mới chạm daily 5% — trong khi daily stop cá nhân đã chặn ở 2 lệnh. **Xác suất cháy vì thị trường gần bằng 0. Chỉ có thể cháy vì phá kỷ luật.**
+
+**Quy tắc "về đích an toàn":** Đạt +8% → giảm risk còn 0.25%/lệnh. Đạt +9.5% → chỉ trade setup A+ hoàn hảo. **Đừng bao giờ tăng size để "kết thúc cho nhanh"** — đây là nguyên nhân trượt phổ biến nhất ở 2% cuối.
+
+## Nhịp một ngày thi (killzone NY AM — giờ VN)
+
+- **19:00–20:15** — Cập nhật bias D1/H4, đánh dấu dealing range + DOL, check lịch tin đỏ, viết kịch bản "nếu–thì" cho 2 tình huống.
+- **20:30–23:00 (NY AM killzone)** — Chỉ chờ đúng kịch bản: sweep → MSS + displacement M5 → entry FVG/OTE. **Tối đa 2 lệnh.** Hết killzone = hết ngày, kể cả chưa có lệnh nào. **Ngày không lệnh là ngày TỐT nếu không có setup.**
+- **23:15** — Ghi nhật ký 10 phút, chụp chart, chấm điểm tuân thủ. **Không mở lại chart sau đó.**
+- **Cuối tuần** — Tổng kết số liệu + gửi 2–3 setup vào vòng debate.
+
+---
+
+# 📕 PHỤ LỤC C — Danh sách "tử huyệt" và phanh cụ thể
+
+| # | Tử huyệt | Phanh |
+|---|---|---|
+| 1 | Vi phạm daily loss vì **lỗ nổi** (equity) khi ôm nhiều lệnh | Không bao giờ để tổng risk đang mở > 1%; tính cả lệnh đang chạy |
+| 2 | Revenge trading sau lệnh thua đầu ngày | Thua lệnh 1 → nghỉ 15 phút; thua lệnh 2 → hết ngày |
+| 3 | Tăng size khi gần target hoặc khi "nóng máy" | Size cố định ghi trong plan; mọi thay đổi phải chờ sang tuần mới |
+| 4 | Trade ngoài killzone vì sốt ruột "chưa đủ ngày" | Ngày tối thiểu rất dễ đạt — không bao giờ là lý do ép lệnh |
+| 5 | Ôm lệnh qua tin đỏ (The5ers: khớp lệnh quanh tin là vi phạm) | Lịch tin là bước 1 mọi phiên; The5ers: không entry trong 30' trước tin |
+| 6 | Gap cuối tuần đâm thủng sàn drawdown | Trong phase thi: hạn chế giữ qua cuối tuần trừ khi đã +1R và dời BE |
+| 7 | Phase 2 chủ quan ("dễ mà") rồi trade ẩu | Giữ NGUYÊN quy trình, thậm chí giảm risk còn 0.25–0.4% vì chỉ cần 5% |
+| 8 | Thi lại ngay sau khi trượt, trong trạng thái cay cú | Trượt → **bắt buộc 2 tuần** quay lại demo + audit toàn bộ lệnh trước khi mua lại |
+
+## Nếu trượt — kịch bản phải có sẵn
+
+1. Xuất toàn bộ lịch sử lệnh, phân loại: **thua-đúng-hệ-thống** (bình thường, không sửa gì) vs **thua-do-phá-luật** (đây mới là lỗi).
+2. Nếu >20% lệnh là phá luật → quay về giai đoạn rehearsal tối thiểu 4 tuần. Nếu hệ thống được tuân thủ mà vẫn âm → chạy debate vòng 2 để tìm lỗi hệ thống (thường là bias HTF sai quy trình hoặc chọn killzone không hợp múi giờ sinh hoạt).
+3. Ngân sách đã dự phòng 2–3 lần phí — **trượt 1 lần nằm trong kế hoạch, không phải thảm hoạ.**
+
+> [!danger] Gộp "thua đúng hệ thống" với "thua do phá luật" là cách nhanh nhất để phá một hệ thống đang tốt
+> Hệ thống WR 45% thì **55% số lệnh PHẢI thua**. Đó là thiết kế, không phải hỏng hóc.
+
+---
+
+# 📕 PHỤ LỤC D — Nguồn tham chiếu luật (kiểm tra lại trước khi mua)
+
+- FTMO — How it works / Trading Objectives: https://ftmo.com/en/how-it-works/
+- FTMO rules tổng hợp (1-step & 2-step): https://tradetanto.com/learn/ftmo-rules-evaluation-process
+- FTMO Scaling Plan: https://propfirmkey.com/en/blog/ftmo-scaling-plan-2026
+- FTMO pricing mọi account size: https://brokeranalysis.com/prop-trading-firms/ftmo/pricing/
+- The5ers High Stakes: https://the5ers.com/high-stakes/
+- So sánh FTMO vs The5ers: https://propfirmscompare.com/ftmo-vs-the5ers/
+
+---
+
+*Tài liệu này là lộ trình huấn luyện, không phải khuyến nghị đầu tư. Giao dịch ký quỹ có rủi ro mất vốn; chỉ thi quỹ bằng tiền phí bạn sẵn sàng mất.*
+
+
 ## Liên kết
 - Lộ trình tổng: [[01 - Roadmap]] · Dashboard: [[00 - Goal Dashboard]] · Chỉ số: [[02 - Skill Metrics]]
+- **Thi hành hàng ngày** (nhịp ngày/tuần + menu việc theo giai đoạn): [[05 - Nhịp ngày & tuần - Vận hành lộ trình]] · Template ngày: [[Daily_Tasks_Template]]
 - Goals: [[Pass FTMO first package challenge (10K$)]] · [[Pass The5er first package challenge (10k$)]] · [[Pass FTMO & The5ers 100K package]] · [[Build a statistically validated backtest sample]] · [[Master the ICT 2022 Model]] · [[Cut my top 3 repeated mistakes]] · [[Hold daily journaling and process discipline]]
 - Nguồn luật quỹ (kiểm tra lại trước khi mua): [FTMO Trading Objectives](https://ftmo.com/en/trading-objectives/) · [The5ers High Stakes rules](https://help.the5ers.com/what-are-the-general-rules-for-the-high-stakes-program/)

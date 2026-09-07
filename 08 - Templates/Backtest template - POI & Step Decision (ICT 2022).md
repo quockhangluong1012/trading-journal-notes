@@ -162,8 +162,8 @@ tags:
 - **Bounds & CE** (để đo độ sâu fill): FVG High ___ (`fvg_high`) · FVG Low ___ (`fvg_low`) · CE 50% ___ (`ce_price`)
 
 > [!tip] Thang chất lượng POI (từ mục 8.1 của [[01 - ICT 2022 Model]])
-> `1` FVG đơn → `2` [[25 - OB - Order Block|FVG+OB]] → `3` [[04 - Breaker Block|Breaker]] → `4` [[17 - Inverse Fair Value Gap - iFVG|iFVG]] → `5` [[07 - Unicorn Model|Unicorn]]. Ưu tiên POI **nhiều lý do trùng một dải giá**, không phải POI gần giá nhất.
-> POI nâng cao khác: [[28 - Rejection Block]] · [[22 - Mitigation Block]] · [[44 - Hidden Order Block]] · [[34 - Vacuum Block]] · [[14 - Implied Fair Value Gap]] · [[23 - New Day Opening Gap|NDOG]] · [[24 - New Week Opening Gap|NWOG]] · [[21 - Liquidity Void]].
+> `1` FVG đơn → `2` [[25-OB-Order-Block|FVG+OB]] → `3` [[04-Breaker-Block|Breaker]] → `4` [[17-Inverse-Fair-Value-Gap-iFVG|iFVG]] → `5` [[07 - Unicorn Model|Unicorn]]. Ưu tiên POI **nhiều lý do trùng một dải giá**, không phải POI gần giá nhất.
+> POI nâng cao khác: [[28-Rejection-Block]] · [[22-Mitigation-Block]] · [[44-Hidden-Order-Block]] · [[34-Vacuum-Block]] · [[14-Implied-Fair-Value-Gap]] · [[23-New-Day-Opening-Gap|NDOG]] · [[24-New-Week-Opening-Gap|NWOG]] · [[21-Liquidity-Void]].
 
 ![[SYMBOL-YYYYMMDD-M5.png]]
 
@@ -303,9 +303,9 @@ tags:
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]] · [[01b - ICT 2022 Model - LTF Intraday (H1-M5-M1)]]
-- POI ladder: [[13 - FVG  - Fair Value Gap]] · [[25 - OB - Order Block]] · [[04 - Breaker Block]] · [[28 - Rejection Block]] · [[17 - Inverse Fair Value Gap - iFVG]] · [[07 - Unicorn Model]] · [[22 - Mitigation Block]] · [[44 - Hidden Order Block]] · [[34 - Vacuum Block]] · [[14 - Implied Fair Value Gap]]
-- Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[26 - OTE - Optimal Trade Entry]] · [[27 - Premium Discount]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]
-- Timing: [[18 - Kill Zones]] · [[40 - Macro Times]]
+- POI ladder: [[13-FVG-Fair-Value-Gap]] · [[25-OB-Order-Block]] · [[04-Breaker-Block]] · [[28-Rejection-Block]] · [[17-Inverse-Fair-Value-Gap-iFVG]] · [[07 - Unicorn Model]] · [[22-Mitigation-Block]] · [[44-Hidden-Order-Block]] · [[34-Vacuum-Block]] · [[14-Implied-Fair-Value-Gap]]
+- Entry refine: [[10-Consequent-Encroachment-Mean-Threshold]] · [[26-OTE-Optimal-Trade-Entry]] · [[27-Premium-Discount]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]
+- Timing: [[18-Kill-Zones]] · [[40-Macro-Times]]
 - Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]
 - Mistakes: [[Mistake - Chase Displacement]] · [[Mistake - Skip Liquidity Sweep]] · [[Mistake - Trade Against Bias]]

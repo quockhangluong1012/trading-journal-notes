@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 5 — LOSS: gap cuối tuần làm sai tham chiếu (edge case ⑩)</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">GBPJPY, mở phiên thứ Hai Asia, gap xuống qua weekend</text>
+
+<line x1="60" y1="500" x2="900" y2="500" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="400" x2="900" y2="400" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="300" x2="900" y2="300" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="200" x2="900" y2="200" stroke="#1f2937" stroke-width="1"/>
+
+<!-- Friday close candles -->
+<rect x="90" y="230" width="12" height="30" fill="#22c55e"/>
+<line x1="96" y1="222" x2="96" y2="265" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="115" y="215" width="12" height="30" fill="#22c55e"/>
+<line x1="121" y1="207" x2="121" y2="250" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="140" y="205" width="12" height="25" fill="#22c55e"/>
+<line x1="146" y1="197" x2="146" y2="235" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="60" y1="255" x2="200" y2="255" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="70" y="248" font-size="11" fill="#eab308" text-anchor="start">Đáy thứ Sáu (SSL cũ)</text>
+
+<line x1="200" y1="80" x2="200" y2="500" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="200" y="76" font-size="11" fill="#94a3b8" text-anchor="middle">Cuối tuần (gap)</text>
+
+<!-- Gap down: monday opens far below friday close -->
+<rect x="230" y="370" width="12" height="30" fill="#ef4444"/>
+<line x1="236" y1="360" x2="236" y2="405" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="236" y="420" font-size="11" fill="#f87171" text-anchor="middle">Gap down thứ Hai</text>
+<path d="M 200 230 L 230 370" stroke="#f87171" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+
+<rect x="255" y="385" width="12" height="30" fill="#ef4444"/>
+<line x1="261" y1="375" x2="261" y2="420" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="280" y="400" width="12" height="30" fill="#22c55e"/>
+<line x1="286" y1="392" x2="286" y2="435" stroke="#9ca3af" stroke-width="1.5"/>
+
+<!-- trader mistakenly references friday low as SSL and chases -->
+<rect x="305" y="380" width="12" height="30" fill="#22c55e"/>
+<line x1="311" y1="372" x2="311" y2="415" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M 320 385 L 335 370 L 335 400 Z" fill="#22c55e"/>
+<text x="345" y="380" font-size="12" font-weight="700" fill="#ef4444" text-anchor="start">Long đuổi giá</text>
+<text x="345" y="398" font-size="11" fill="#94a3b8" text-anchor="start">(tham chiếu đáy T6 đã vô hiệu)</text>
+
+<rect x="350" y="360" width="12" height="25" fill="#ef4444"/>
+<line x1="356" y1="352" x2="356" y2="390" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="375" y="390" width="12" height="30" fill="#ef4444"/>
+<line x1="381" y1="380" x2="381" y2="425" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="400" y="415" width="12" height="30" fill="#ef4444"/>
+<line x1="406" y1="405" x2="406" y2="450" stroke="#9ca3af" stroke-width="1.5"/>
+
+<line x1="330" y1="415" x2="600" y2="415" stroke="#f87171" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="610" y="419" font-size="12" fill="#f87171" text-anchor="start">Stop khi giá hồi (pullback)</text>
+<path d="M 400 430 L 415 445 L 415 415 Z" fill="#f87171"/>
+
+<rect x="640" y="90" width="280" height="230" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="656" y="114" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">Kết quả: LOSS</text>
+<text x="656" y="140" font-size="12" fill="#e5e7eb" text-anchor="start">Đáy thứ Sáu không còn hợp lệ</text>
+<text x="656" y="158" font-size="12" fill="#e5e7eb" text-anchor="start">sau gap — cấu trúc mới bắt đầu</text>
+<text x="656" y="182" font-size="12" fill="#e5e7eb" text-anchor="start">Trader đuổi giá vào muộn dựa</text>
+<text x="656" y="200" font-size="12" fill="#e5e7eb" text-anchor="start">trên tham chiếu SSL đã lỗi thời</text>
+<text x="656" y="224" font-size="12" font-weight="700" fill="#f87171" text-anchor="start">-15 pips (stop khi pullback)</text>
+<text x="656" y="252" font-size="11.5" fill="#f87171" text-anchor="start">missing_step: cấu trúc mới sau gap</text>
+<text x="656" y="276" font-size="11" fill="#94a3b8" text-anchor="start">Xử lý đúng: bỏ tham chiếu cũ,</text>
+<text x="656" y="292" font-size="11" fill="#94a3b8" text-anchor="start">chờ swing high/low mới hình thành</text>
+<text x="656" y="308" font-size="11" fill="#94a3b8" text-anchor="start">rồi mới tìm Judas/MSS</text>
+
+<text x="480" y="560" font-size="12" fill="#94a3b8" text-anchor="middle">Gap cuối tuần reset toàn bộ tham chiếu cấu trúc — không thể áp nguyên vẹn mốc trước gap</text>
+</svg>

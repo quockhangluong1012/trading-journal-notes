@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Ví dụ SAI — long không bias / bỏ 5m MSS / target tham</text>
+<text x="32" y="58" font-size="13" fill="#94a3b8" text-anchor="start">Long ngay khi chạm discount, chưa xác nhận bias, chưa có MSS → bị stop</text>
+
+<line x1="60" y1="500" x2="900" y2="500" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="400" x2="900" y2="400" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="300" x2="900" y2="300" stroke="#1f2937" stroke-width="1"/>
+<line x1="60" y1="200" x2="900" y2="200" stroke="#1f2937" stroke-width="1"/>
+
+<rect x="60" y="340" width="840" height="140" fill="rgba(34,197,94,0.08)"/>
+<text x="880" y="470" font-size="11" fill="#94a3b8" text-anchor="end">Discount</text>
+
+<rect x="330" y="360" width="140" height="60" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-dasharray="4 3"/>
+<text x="400" y="450" font-size="12" fill="#3b82f6" text-anchor="middle">Discount (chưa có MSS)</text>
+
+<!-- Price falling steadily, no clear bullish HTF, no reversal -->
+<rect x="90" y="200" width="12" height="40" fill="#ef4444"/>
+<line x1="96" y1="192" x2="96" y2="245" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="115" y="235" width="12" height="40" fill="#ef4444"/>
+<line x1="121" y1="225" x2="121" y2="280" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="140" y="270" width="12" height="45" fill="#ef4444"/>
+<line x1="146" y1="260" x2="146" y2="320" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="165" y="310" width="12" height="45" fill="#ef4444"/>
+<line x1="171" y1="300" x2="171" y2="360" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="190" y="350" width="12" height="40" fill="#ef4444"/>
+<line x1="196" y1="340" x2="196" y2="395" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="215" y="380" width="12" height="35" fill="#ef4444"/>
+<line x1="221" y1="370" x2="221" y2="420" stroke="#9ca3af" stroke-width="1.5"/>
+<!-- Trader longs here without MSS -->
+<rect x="240" y="405" width="12" height="30" fill="#ef4444"/>
+<line x1="246" y1="395" x2="246" y2="440" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M 246 440 L 260 455 L 260 425 Z" fill="#22c55e"/>
+<text x="270" y="430" font-size="12" font-weight="700" fill="#ef4444" text-anchor="start">LONG sớm (sai)</text>
+<text x="270" y="448" font-size="11" fill="#94a3b8" text-anchor="start">chưa có 5m MSS, chưa xác nhận bias</text>
+
+<!-- Price continues falling (no reversal) sweeping stop -->
+<rect x="290" y="420" width="12" height="30" fill="#ef4444"/>
+<line x1="296" y1="410" x2="296" y2="455" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="315" y="440" width="12" height="30" fill="#ef4444"/>
+<line x1="321" y1="430" x2="321" y2="475" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="340" y="460" width="12" height="30" fill="#ef4444"/>
+<line x1="346" y1="450" x2="346" y2="495" stroke="#9ca3af" stroke-width="1.5"/>
+
+<line x1="230" y1="450" x2="600" y2="450" stroke="#f87171" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="610" y="454" font-size="12" fill="#f87171" text-anchor="start">Stop bị quét</text>
+<path d="M 340 465 L 355 480 L 355 450 Z" fill="#f87171"/>
+<text x="480" y="530" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">Giá KHÔNG đảo chiều — tiếp tục giảm vì HTF chưa bullish và không có MSS</text>
+
+<rect x="60" y="150" width="380" height="130" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="80" y="178" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">Lỗi 1: Chưa xác nhận HTF bullish</text>
+<text x="80" y="198" font-size="12" fill="#94a3b8" text-anchor="start">D1/H4 thực ra đang đi ngang —</text>
+<text x="80" y="214" font-size="12" fill="#94a3b8" text-anchor="start">mọi discount trông giống setup nhưng không có edge</text>
+<text x="80" y="242" font-size="13" font-weight="700" fill="#f87171" text-anchor="start">Lỗi 2: Bỏ qua 5m MSS</text>
+<text x="80" y="262" font-size="12" fill="#94a3b8" text-anchor="start">Long ngay khi "chạm" discount —</text>
+<text x="80" y="278" font-size="12" fill="#94a3b8" text-anchor="start">chạm discount KHÔNG phải là entry</text>
+
+<rect x="500" y="150" width="360" height="80" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="520" y="178" font-size="13" font-weight="700" fill="#e5e7eb" text-anchor="start">missing_step: bias + mss</text>
+<text x="520" y="200" font-size="12" fill="#94a3b8" text-anchor="start">Cả hai điều kiện lõi đều thiếu cùng lúc —</text>
+<text x="520" y="216" font-size="12" fill="#94a3b8" text-anchor="start">đây là một cú long cảm tính, không phải setup</text>
+
+<text x="480" y="560" font-size="13" fill="#e5e7eb" text-anchor="middle">Bài học: chờ HTF bullish + 5m MSS TRƯỚC, đừng long chỉ vì "giá ở discount"</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="32" font-size="15" font-weight="700" fill="#1F2937">Layering đúng — D1→H1→M15→M5 cho một lệnh Long</text>
+<text x="24" y="52" font-size="11.5" fill="#6B7280">Minh họa khái niệm · mỗi khung một vai; mỏ neo (pool + swing point) định nghĩa TRƯỚC khi xuống khung dưới</text>
+<!-- 4 panels -->
+<g>
+<rect x="24" y="68" width="172" height="330" rx="8" fill="#EFF6FF" stroke="#BFDBFE"/>
+<text x="34" y="88" font-size="11.5" font-weight="700" fill="#1D4ED8">D1 — BIAS</text>
+<text x="34" y="104" font-size="9" fill="#374151">giá ở discount, draw = BSL</text>
+<path d="M44,340 L80,300 L110,320 L140,250 L175,180" fill="none" stroke="#374151" stroke-width="2"/>
+<line x1="34" y1="150" x2="186" y2="150" stroke="#2563EB" stroke-width="1.1" stroke-dasharray="5 3"/>
+<text x="36" y="145" font-size="8" fill="#1D4ED8">BSL target</text>
+<line x1="34" y1="360" x2="186" y2="360" stroke="#16A34A" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="36" y="374" font-size="8" fill="#15803D">discount</text>
+<text x="34" y="392" font-size="8.5" font-weight="700" fill="#1D4ED8">→ giao: hướng Long</text>
+</g>
+<g>
+<rect x="204" y="68" width="172" height="330" rx="8" fill="#F5F3FF" stroke="#DDD6FE"/>
+<text x="214" y="88" font-size="11.5" font-weight="700" fill="#6D28D9">H1 — POI + POOL</text>
+<rect x="214" y="250" width="152" height="34" fill="#16A34A" opacity="0.12"/>
+<text x="218" y="264" font-size="8.5" font-weight="700" fill="#15803D">POI (FVG/OB discount)</text>
+<line x1="214" y1="300" x2="366" y2="300" stroke="#B45309" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="216" y="315" font-size="8.5" font-weight="700" fill="#B45309">SSL cục bộ ← MỎ NEO</text>
+<path d="M214,150 L245,190 L275,230 L305,262 L335,285" fill="none" stroke="#374151" stroke-width="2"/>
+<text x="214" y="392" font-size="8.5" font-weight="700" fill="#6D28D9">→ giao: vùng + pool</text>
+</g>
+<g>
+<rect x="384" y="68" width="172" height="330" rx="8" fill="#FFFBEB" stroke="#FDE68A"/>
+<text x="394" y="88" font-size="11.5" font-weight="700" fill="#92400E">M15 — CONFIRM</text>
+<line x1="394" y1="300" x2="546" y2="300" stroke="#B45309" stroke-width="1.1" stroke-dasharray="4 3"/>
+<text x="396" y="295" font-size="8" fill="#B45309">swing high tham chiếu</text>
+<line x1="394" y1="340" x2="546" y2="340" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="450" y="215" width="96" height="34" fill="#7C3AED" opacity="0.10"/>
+<text x="452" y="212" font-size="8" font-weight="700" fill="#6D28D9">FVG M15</text>
+<path d="M394,250 L415,300 L432,345 L446,330 L462,270 L490,225 L525,185" fill="none" stroke="#374151" stroke-width="2.1"/>
+<circle cx="432" cy="345" r="4.5" fill="none" stroke="#B45309" stroke-width="2"/>
+<text x="394" y="376" font-size="8" fill="#374151">sweep SSL → displacement</text>
+<text x="394" y="392" font-size="8.5" font-weight="700" fill="#92400E">phá swing = MSS + FVG</text>
+</g>
+<g>
+<rect x="564" y="68" width="172" height="330" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+<text x="574" y="88" font-size="11.5" font-weight="700" fill="#166534">M5 — EXECUTION</text>
+<rect x="574" y="230" width="152" height="30" fill="#7C3AED" opacity="0.12"/>
+<text x="578" y="226" font-size="8" font-weight="700" fill="#6D28D9">FVG (chân displacement)</text>
+<line x1="574" y1="245" x2="726" y2="245" stroke="#B45309" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="578" y="242" font-size="7.5" fill="#B45309">50% = CE</text>
+<line x1="574" y1="320" x2="726" y2="320" stroke="#DC2626" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="578" y="333" font-size="8" fill="#B91C1C">SL dưới đáy sweep</text>
+<path d="M574,180 L600,215 L625,245 L645,258 L660,246 L685,210 L715,175" fill="none" stroke="#374151" stroke-width="2.1"/>
+<circle cx="645" cy="252" r="5" fill="#16A34A"/>
+<text x="574" y="376" font-size="8.5" font-weight="700" fill="#166534">entry 50% FVG (CE)</text>
+<text x="574" y="392" font-size="8" fill="#374151">target: BSL còn mở (D1)</text>
+</g>
+</svg>

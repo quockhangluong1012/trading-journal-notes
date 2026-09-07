@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="670" viewBox="0 0 1260 670" font-family="Segoe UI, Arial, sans-serif">
+<rect x="0" y="0" width="1260" height="670" fill="#ffffff"/>
+<text x="630.0" y="26" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">EURUSD D1 — Structure Map (theo trình tự sự kiện, không theo tỉ lệ thời gian)</text>
+<line x1="95" y1="586.7826086956517" x2="1200" y2="586.7826086956517" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="590.7826086956517" text-anchor="end" font-size="11" fill="#9aa1ab">1.05</text>
+<line x1="95" y1="540.347826086956" x2="1200" y2="540.347826086956" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="544.347826086956" text-anchor="end" font-size="11" fill="#9aa1ab">1.06</text>
+<line x1="95" y1="493.91304347826025" x2="1200" y2="493.91304347826025" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="497.91304347826025" text-anchor="end" font-size="11" fill="#9aa1ab">1.07</text>
+<line x1="95" y1="447.47826086956456" x2="1200" y2="447.47826086956456" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="451.47826086956456" text-anchor="end" font-size="11" fill="#9aa1ab">1.08</text>
+<line x1="95" y1="401.0434782608689" x2="1200" y2="401.0434782608689" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="405.0434782608689" text-anchor="end" font-size="11" fill="#9aa1ab">1.09</text>
+<line x1="95" y1="354.60869565217314" x2="1200" y2="354.60869565217314" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="358.60869565217314" text-anchor="end" font-size="11" fill="#9aa1ab">1.10</text>
+<line x1="95" y1="308.17391304347746" x2="1200" y2="308.17391304347746" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="312.17391304347746" text-anchor="end" font-size="11" fill="#9aa1ab">1.11</text>
+<line x1="95" y1="261.73913043478177" x2="1200" y2="261.73913043478177" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="265.73913043478177" text-anchor="end" font-size="11" fill="#9aa1ab">1.12</text>
+<line x1="95" y1="215.3043478260871" x2="1200" y2="215.3043478260871" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="219.3043478260871" text-anchor="end" font-size="11" fill="#9aa1ab">1.13</text>
+<line x1="95" y1="168.86956521739143" x2="1200" y2="168.86956521739143" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="172.86956521739143" text-anchor="end" font-size="11" fill="#9aa1ab">1.14</text>
+<line x1="95" y1="122.43478260869568" x2="1200" y2="122.43478260869568" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="126.43478260869568" text-anchor="end" font-size="11" fill="#9aa1ab">1.15</text>
+<line x1="95" y1="76.0" x2="1200" y2="76.0" stroke="#eef0f3" stroke-width="1"/>
+<text x="85" y="80.0" text-anchor="end" font-size="11" fill="#9aa1ab">1.16</text>
+<rect x="95" y="178.43513043478248" width="1105" height="313.29547826086923" fill="#3b82f6" fill-opacity="0.06" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="4,3"/>
+<text x="103" y="170.43513043478248" font-size="12" fill="#2563eb" font-weight="600">D1 Dealing Range (final): 1.07047 – 1.13794</text>
+<line x1="95" y1="335.0828695652176" x2="1200" y2="335.0828695652176" stroke="#f59e0b" stroke-width="1.4" stroke-dasharray="6,3"/>
+<text x="1196" y="329.0828695652176" text-anchor="end" font-size="11" fill="#b45309" font-weight="600">Equilibrium 1.10421 (50%)</text>
+<rect x="95" y="317.3679999999996" width="1105" height="23.170956521739413" fill="#a855f7" fill-opacity="0.15"/>
+<text x="103" y="313.3679999999996" font-size="10.3" fill="#7e22ce" font-weight="600">FVG #1 (1.10303–1.10802) — đã fully mitigated 10/03/2016, vắt ngang equilibrium</text>
+<rect x="95" y="123.03513043478219" width="1105" height="4.696521739130816" fill="#dc2626" fill-opacity="0.45"/>
+<path d="M 95.0,577.3 L 217.8,60.5 L 340.6,432.7 L 463.3,575.8 L 586.1,491.7 L 708.9,432.7 L 831.7,178.4 L 954.4,436.8 L 1077.2,265.1 L 1200.0,125.0" fill="none" stroke="#111827" stroke-width="2"/>
+<circle cx="95.0" cy="577.3" r="4.5" fill="#6b7280" stroke="white" stroke-width="1.3"/>
+<text x="95.0" y="561.3" text-anchor="middle" font-size="10.3" font-weight="700" fill="#111827">13-14/4/2015</text>
+<text x="95.0" y="549.3" text-anchor="middle" font-size="10.3" font-weight="400" fill="#4b5563">Old low 1.05204/1.05316</text>
+<circle cx="217.8" cy="60.5" r="4.5" fill="#6b7280" stroke="white" stroke-width="1.3"/>
+<text x="217.8" y="44.5" text-anchor="middle" font-size="10.3" font-weight="700" fill="#111827">~10/2015</text>
+<text x="217.8" y="32.5" text-anchor="middle" font-size="10.3" font-weight="400" fill="#4b5563">Đỉnh 1.16334</text>
+<circle cx="340.6" cy="432.7" r="4.5" fill="#f97316" stroke="white" stroke-width="1.3"/>
+<text x="368.6" y="424.7" text-anchor="start" font-size="10.3" font-weight="700" fill="#111827">12/11/2015</text>
+<text x="368.6" y="412.7" text-anchor="start" font-size="10.3" font-weight="400" fill="#4b5563">Internal swing 1.08319</text>
+<text x="368.6" y="400.7" text-anchor="start" font-size="10.3" font-weight="400" fill="#4b5563">(sau này bị MSS phá)</text>
+<circle cx="463.3" cy="575.8" r="4.5" fill="#6b7280" stroke="white" stroke-width="1.3"/>
+<text x="463.3" y="597.8" text-anchor="middle" font-size="10.3" font-weight="700" fill="#111827">~12/2015</text>
+<text x="463.3" y="609.8" text-anchor="middle" font-size="10.3" font-weight="400" fill="#4b5563">Đáy tháng 12: 1.05237</text>
+<text x="463.3" y="621.8" text-anchor="middle" font-size="10.3" font-weight="400" fill="#4b5563">(test, KHÔNG sweep)</text>
+<circle cx="586.1" cy="491.7" r="6" fill="#16a34a" stroke="white" stroke-width="1.3"/>
+<text x="586.1" y="513.7" text-anchor="middle" font-size="10.3" font-weight="700" fill="#111827">05/01/2016</text>
+<text x="586.1" y="525.7" text-anchor="middle" font-size="10.3" font-weight="400" fill="#4b5563">Leg start = D1 DLR LOW</text>
+<text x="586.1" y="537.7" text-anchor="middle" font-size="10.3" font-weight="400" fill="#4b5563">1.07047</text>
+<circle cx="708.9" cy="432.7" r="4.5" fill="#f97316" stroke="white" stroke-width="1.3"/>
+<text x="708.9" y="418.7" text-anchor="middle" font-size="10.3" font-weight="700" fill="#111827">MSS: phá 1.08319</text>
+<circle cx="831.7" cy="178.4" r="6" fill="#dc2626" stroke="white" stroke-width="1.3"/>
+<text x="831.7" y="162.4" text-anchor="middle" font-size="10.3" font-weight="700" fill="#111827">01/02/2016</text>
+<text x="831.7" y="150.4" text-anchor="middle" font-size="10.3" font-weight="400" fill="#4b5563">D1 DLR HIGH: 1.13794</text>
+<circle cx="954.4" cy="436.8" r="4.5" fill="#eab308" stroke="white" stroke-width="1.3"/>
+<text x="954.4" y="460.8" text-anchor="middle" font-size="10.3" font-weight="700" fill="#111827">10/03/2016</text>
+<text x="954.4" y="472.8" text-anchor="middle" font-size="10.3" font-weight="400" fill="#4b5563">Mid-leg pullback + sweep: 1.08229</text>
+<text x="954.4" y="484.8" text-anchor="middle" font-size="10.3" font-weight="400" fill="#4b5563">(KHÔNG phải leg start)</text>
+<circle cx="1077.2" cy="265.1" r="6" fill="#2563eb" stroke="white" stroke-width="1.3"/>
+<text x="1077.2" y="249.1" text-anchor="middle" font-size="10.3" font-weight="700" fill="#111827">Hiện tại: 1.11927</text>
+<text x="1077.2" y="237.1" text-anchor="middle" font-size="10.3" font-weight="400" fill="#4b5563">(72.3% premium)</text>
+<circle cx="1200.0" cy="125.0" r="4.5" fill="#dc2626" stroke="white" stroke-width="1.3"/>
+<text x="1190.0" y="107.0" text-anchor="end" font-size="10.3" font-weight="700" fill="#111827">ERL (chưa bị quét)</text>
+<text x="1190.0" y="95.0" text-anchor="end" font-size="10.3" font-weight="400" fill="#4b5563">1.14929 / 1.14944</text>
+</svg>

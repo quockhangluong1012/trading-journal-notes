@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 760" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="760" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Ma trận Edge Cases — Unicorn (6 tình huống)</text>
+<rect x="40" y="90" width="440" height="190" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="260.0" y="185.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="60" y="124" font-size="15" font-weight="700" fill="#f87171" text-anchor="start">① Overlap tình cờ</text>
+<text x="60" y="152" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Breaker &amp; FVG từ 2 displacement khác nhau</text>
+<rect x="510" y="90" width="440" height="190" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="730.0" y="185.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="530" y="124" font-size="15" font-weight="700" fill="#f87171" text-anchor="start">② Tách rời/tiếp giáp</text>
+<text x="530" y="152" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Gọi nhầm chạm mép là overlap</text>
+<rect x="40" y="300" width="440" height="190" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+<text x="260.0" y="395.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="60" y="334" font-size="15" font-weight="700" fill="#eab308" text-anchor="start">③ FVG lấp ngay</text>
+<text x="60" y="362" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Không kịp retrace về CE</text>
+<rect x="510" y="300" width="440" height="190" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="730.0" y="395.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="530" y="334" font-size="15" font-weight="700" fill="#f87171" text-anchor="start">④ Nested ngược POI HTF</text>
+<text x="530" y="362" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Unicorn LTF đi ngược dòng lớn</text>
+<rect x="40" y="510" width="440" height="190" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+<text x="260.0" y="605.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="60" y="544" font-size="15" font-weight="700" fill="#eab308" text-anchor="start">⑤ NQ nhiều FVG chồng</text>
+<text x="60" y="572" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Chọn nhầm overlap thật</text>
+<rect x="510" y="510" width="440" height="190" rx="10" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+<text x="730.0" y="605.0" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="middle"></text>
+<text x="530" y="544" font-size="15" font-weight="700" fill="#eab308" text-anchor="start">⑥ XAU wick dài / FX spread nuốt</text>
+<text x="530" y="572" font-size="13" font-weight="400" fill="#e5e7eb" text-anchor="start">Stop bị quét dù đúng hướng</text>
+<text x="32" y="730" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Nguyên tắc chung: không đo được overlap thật (cùng displacement, cắt nhau) → No Trade.</text>
+</svg>

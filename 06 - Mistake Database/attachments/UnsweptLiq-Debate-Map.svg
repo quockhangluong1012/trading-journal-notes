@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="800" fill="#ffffff"/>
+  <text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Debate: Cấm Tuyệt Đối vs TP-Trước-Pool-Là-Đủ</text>
+  <text x="500" y="56" text-anchor="middle" font-size="14" fill="#555">Unswept liquidity phía trước SL — mức độ nghiêm khắc của rule</text>
+
+  <rect x="40" y="80" width="440" height="330" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="260" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#c62828">Phe Cấm Tuyệt Đối</text>
+
+  <rect x="58" y="118" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="70" y="136" font-size="11" fill="#333">1. Pool không quan tâm TP —</text>
+  <text x="70" y="152" font-size="11" fill="#333">nó chỉ quan tâm SL nằm ở đâu.</text>
+
+  <rect x="58" y="176" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="70" y="194" font-size="11" fill="#333">2. TP bảo vệ lợi nhuận, không</text>
+  <text x="70" y="210" font-size="11" fill="#333">bảo vệ SL khỏi bị quét trước.</text>
+
+  <rect x="58" y="234" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="70" y="252" font-size="11" fill="#333">3. Rule đơn giản, dễ tuân thủ</text>
+  <text x="70" y="268" font-size="11" fill="#333">dưới áp lực — 1 câu hỏi gate.</text>
+
+  <rect x="58" y="292" width="404" height="52" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="70" y="310" font-size="11" fill="#333">4. 4/4 case thật thua đúng</text>
+  <text x="70" y="326" font-size="11" fill="#333">theo cơ chế này — n=4 đồng nhất.</text>
+
+  <rect x="520" y="80" width="440" height="330" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="740" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">Phe TP-Trước-Pool-Là-Đủ</text>
+
+  <rect x="538" y="118" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="550" y="136" font-size="11" fill="#333">1. Pool quá xa có thể không</text>
+  <text x="550" y="152" font-size="11" fill="#333">ảnh hưởng thực tế tới SL gần.</text>
+
+  <rect x="538" y="176" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="550" y="194" font-size="11" fill="#333">2. Đệm nội bộ đủ có thể hấp</text>
+  <text x="550" y="210" font-size="11" fill="#333">thụ lực hút, giảm rủi ro.</text>
+
+  <rect x="538" y="234" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="550" y="252" font-size="11" fill="#333">3. Cấm tuyệt đối có thể loại</text>
+  <text x="550" y="268" font-size="11" fill="#333">quá nhiều setup khả dụng.</text>
+
+  <rect x="538" y="292" width="404" height="52" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="550" y="310" font-size="11" fill="#333">4. Chưa có nhóm đối chứng</text>
+  <text x="550" y="326" font-size="11" fill="#333">để so sánh 2 cách tiếp cận.</text>
+
+  <text x="500" y="380" text-anchor="middle" font-size="12" fill="#555" font-style="italic">2 vòng phản biện chéo — hội tụ về nhu cầu đo pool_distance_atr</text>
+
+  <rect x="60" y="440" width="880" height="180" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="500" y="466" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565c0">Phán quyết</text>
+  <text x="500" y="492" text-anchor="middle" font-size="12" fill="#333">Giữ Draw gate cứng làm rule mặc định — 4/4 case thật đồng nhất, TP không giải quyết cơ chế gốc.</text>
+  <text x="500" y="512" text-anchor="middle" font-size="12" fill="#333">Tiếp thu luận điểm khoảng cách: bổ sung field pool_distance_atr (đơn vị ATR).</text>
+  <text x="500" y="534" text-anchor="middle" font-size="12" fill="#333">Giả thuyết "pool xa đủ mức an toàn hơn" — hiện tại Tier 0, chưa có bằng chứng nới rule.</text>
+  <text x="500" y="558" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Cần n≥10-15 mẫu mới với field định lượng để kiểm định giả thuyết này.</text>
+  <text x="500" y="580" text-anchor="middle" font-size="12" fill="#1565c0">Evidence Tier hiện tại: TIER 1 (n=4, đồng nhất cơ chế, chưa đủ cho rule thống kê cứng).</text>
+
+  <rect x="60" y="640" width="880" height="120" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="500" y="666" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a2c00">Điểm hội tụ cả hai phe đồng thuận</text>
+  <text x="500" y="690" text-anchor="middle" font-size="12" fill="#3a2c00">Chưa có ngưỡng số cụ thể cho "đệm đủ" — cả hai phe đều thừa nhận đây là điểm yếu chung.</text>
+  <text x="500" y="712" text-anchor="middle" font-size="12" fill="#3a2c00">R:R cao bất thường trong hoàn cảnh POI nông là chỉ số bị nhiễm, không đáng tin để phản bác rule.</text>
+  <text x="500" y="734" text-anchor="middle" font-size="12" fill="#3a2c00">3/4 case "không đệm" gợi ý tương quan giữa setup đẹp và thiếu đệm — cần dữ liệu xác nhận.</text>
+</svg>

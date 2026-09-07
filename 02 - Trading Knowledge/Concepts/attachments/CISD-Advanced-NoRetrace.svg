@@ -1,0 +1,36 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Edge case — CISD mạnh nhất thường KHÔNG hồi về FVG</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Kế hoạch "chỉ limit tại FVG" bỏ lỡ đúng những leg mạnh nhất — cần phương án market-entry theo MSS khi delivery quá dứt khoát</text>
+
+  <rect x="24" y="70" width="345" height="374" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="96" font-size="12.5" font-weight="700" fill="#B45309">A. Chờ limit tại FVG → không khớp</text>
+  <line x1="44" y1="180" x2="350" y2="180" stroke="#0EA5E9" stroke-width="1.8" stroke-dasharray="6 3"/>
+  <text x="150" y="174" font-size="9.5" fill="#0284C7">CISD level</text>
+  <rect x="70" y="180" width="2" height="70" fill="#DC2626"/><rect x="62" y="182" width="14" height="58" fill="#DC2626" rx="1"/>
+  <rect x="104" y="230" width="2" height="60" fill="#DC2626"/><rect x="96" y="234" width="14" height="46" fill="#DC2626" rx="1"/>
+  <circle cx="103" cy="290" r="6" fill="none" stroke="#B45309" stroke-width="2"/>
+  <rect x="140" y="150" width="2" height="150" fill="#16A34A"/><rect x="132" y="168" width="14" height="120" fill="#16A34A" rx="1"/>
+  <rect x="150" y="180" width="46" height="40" fill="#3B82F6" opacity="0.2"/>
+  <text x="150" y="240" font-size="9" font-weight="700" fill="#1D4ED8">FVG (limit chờ ở đây)</text>
+  <path d="M146,185 L200,150 L260,120 L320,104" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <text x="200" y="330" font-size="10" font-weight="700" fill="#B91C1C">Giá bốc thẳng, không hồi về FVG</text>
+  <text x="200" y="348" font-size="10" fill="#B91C1C">→ lệnh limit không bao giờ khớp ✗</text>
+
+  <rect x="391" y="70" width="345" height="374" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="407" y="96" font-size="12.5" font-weight="700" fill="#15803D">B. Market-entry theo MSS (dự phòng)</text>
+  <line x1="411" y1="180" x2="717" y2="180" stroke="#0EA5E9" stroke-width="1.8" stroke-dasharray="6 3"/>
+  <text x="510" y="174" font-size="9.5" fill="#0284C7">CISD level</text>
+  <rect x="437" y="180" width="2" height="70" fill="#DC2626"/><rect x="429" y="182" width="14" height="58" fill="#DC2626" rx="1"/>
+  <rect x="471" y="230" width="2" height="60" fill="#DC2626"/><rect x="463" y="234" width="14" height="46" fill="#DC2626" rx="1"/>
+  <circle cx="470" cy="290" r="6" fill="none" stroke="#B45309" stroke-width="2"/>
+  <rect x="507" y="150" width="2" height="150" fill="#16A34A"/><rect x="499" y="168" width="14" height="120" fill="#16A34A" rx="1"/>
+  <!-- micro pullback then M1 MSS entry -->
+  <path d="M513,185 L540,205 L560,190" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="560" cy="190" r="6" fill="#16A34A"/>
+  <text x="522" y="330" font-size="10" font-weight="700" fill="#15803D">Vào theo M1 MSS ở pullback nông</text>
+  <text x="522" y="348" font-size="10" fill="#374151">(stop dưới wick sweep, size nhỏ hơn)</text>
+  <path d="M560,190 L620,150 L680,116" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+
+  <text x="40" y="454" font-size="1" fill="#fff"> </text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="28" text-anchor="middle" font-size="19" font-weight="700" fill="#1a1a1a">Outcome bias &amp; hindsight - vi sao 5 note dau deu UNPROVEN</text>
+  <text x="450" y="48" text-anchor="middle" font-size="12" fill="#666">Timeline tien trien quy trinh ghi chu, 07-01 -> 07-17</text>
+
+  <!-- timeline axis -->
+  <line x1="60" y1="100" x2="840" y2="100" stroke="#333" stroke-width="1.5"/>
+  <polygon points="840,100 830,95 830,105" fill="#333"/>
+  <text x="450" y="90" text-anchor="middle" font-size="10" fill="#555">Thoi gian viet note (2026-07-01 -> 2026-07-17)</text>
+
+  <!-- 5 red dots for batch A (hindsight) -->
+  <circle cx="100" cy="100" r="7" fill="#c0392b"/>
+  <circle cx="160" cy="100" r="7" fill="#c0392b"/>
+  <circle cx="220" cy="100" r="7" fill="#c0392b"/>
+  <circle cx="280" cy="100" r="7" fill="#c0392b"/>
+  <circle cx="340" cy="100" r="7" fill="#c0392b"/>
+  <text x="220" y="130" text-anchor="middle" font-size="10" fill="#c0392b" font-weight="700">Batch A (07-01->07-07): 5/5 UNPROVEN</text>
+  <text x="220" y="145" text-anchor="middle" font-size="9" fill="#888">Khong entry_type/confluence_score/first_error_step</text>
+
+  <!-- yellow dots batch B/C/D -->
+  <circle cx="420" cy="100" r="7" fill="#e67e22"/>
+  <circle cx="480" cy="100" r="7" fill="#e67e22"/>
+  <circle cx="540" cy="100" r="7" fill="#e67e22"/>
+  <circle cx="600" cy="100" r="7" fill="#e67e22"/>
+  <text x="510" y="130" text-anchor="middle" font-size="10" fill="#e67e22" font-weight="700">Batch B-D (07-08->07-15): field day hon</text>
+  <text x="510" y="145" text-anchor="middle" font-size="9" fill="#888">Nhung van thieu tach biet truoc/sau outcome</text>
+
+  <!-- green dots batch E -->
+  <circle cx="700" cy="100" r="7" fill="#1e8449"/>
+  <circle cx="760" cy="100" r="7" fill="#1e8449"/>
+  <circle cx="800" cy="100" r="7" fill="#1e8449"/>
+  <text x="753" y="130" text-anchor="middle" font-size="10" fill="#1e8449" font-weight="700">Batch E (07-16->07-17): tu sua loi so</text>
+  <text x="753" y="145" text-anchor="middle" font-size="9" fill="#888">Van UNPROVEN ve outcome, nhung quy trinh tot hon</text>
+
+  <!-- Why UNPROVEN box -->
+  <rect x="30" y="175" width="400" height="200" fill="#fdf2f0" stroke="#c0392b"/>
+  <text x="230" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#a93226">Vi sao la HINDSIGHT, khong chi la thieu du lieu</text>
+  <text x="50" y="220" font-size="10" fill="#333">1. Note viet SAU khi outcome da xay ra (backtest</text>
+  <text x="50" y="234" font-size="10" fill="#333">   replay, khong phai live read).</text>
+  <text x="50" y="254" font-size="10" fill="#333">2. Cau danh gia (vd "thang vi cho du dieu kien")</text>
+  <text x="50" y="268" font-size="10" fill="#333">   viet trong phan replay, khong tach biet duoc</text>
+  <text x="50" y="282" font-size="10" fill="#333">   voi phan "se lam gi tai thoi diem entry thuc".</text>
+  <text x="50" y="302" font-size="10" fill="#333">3. Khong co timestamp/annotation nao chung minh</text>
+  <text x="50" y="316" font-size="10" fill="#333">   ket luan duoc rut ra TRUOC khi biet TP/SL hit.</text>
+  <text x="50" y="340" font-size="10" fill="#a93226" font-weight="700">-> Khong the phan biet "read dung" khoi "read</text>
+  <text x="50" y="354" font-size="10" fill="#a93226" font-weight="700">   duoc viet lai de khop voi ket qua da biet".</text>
+
+  <!-- Proposed hard-right-edge process -->
+  <rect x="470" y="175" width="400" height="200" fill="#eafaf1" stroke="#1e8449"/>
+  <text x="670" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#1e8449">Quy trinh de xuat: ghi tai hard right edge</text>
+  <text x="490" y="220" font-size="10" fill="#333">1. Ghi bias/draw/sweep/displacement/POI/entry</text>
+  <text x="490" y="234" font-size="10" fill="#333">   TRUOC khi xem nen sau diem quyet dinh.</text>
+  <text x="490" y="254" font-size="10" fill="#333">2. Chup/luu trang thai chart tai dung nen quyet</text>
+  <text x="490" y="268" font-size="10" fill="#333">   dinh (khong phai chart da keo dai ve sau).</text>
+  <text x="490" y="288" font-size="10" fill="#333">3. Tach rieng section "Du doan tai right edge"</text>
+  <text x="490" y="302" font-size="10" fill="#333">   va section "Replay sau khi biet outcome" -</text>
+  <text x="490" y="316" font-size="10" fill="#333">   khong hoa tron 2 section.</text>
+  <text x="490" y="340" font-size="10" fill="#1e8449" font-weight="700">-> Cho phep phan biet duoc process tot voi</text>
+  <text x="490" y="354" font-size="10" fill="#1e8449" font-weight="700">   process duoc viet lai de trong dep hon.</text>
+
+  <!-- footer -->
+  <rect x="30" y="400" width="840" height="130" fill="#fdf6e3" stroke="#b7950b"/>
+  <text x="450" y="422" text-anchor="middle" font-size="12" font-weight="700" fill="#7d6608">Ket luan cap batch (batchA.md Pattern #1, #2)</text>
+  <text x="50" y="445" font-size="11" fill="#333">"UNPROVEN dong loat o ca 5 note batch A - khong note nao co bang chung tach biet thoi diem ghi</text>
+  <text x="50" y="461" font-size="11" fill="#333">chu truoc/sau khi biet ket qua." Day khong phai loi cua tung note rieng le - la dac diem CO CAU</text>
+  <text x="50" y="477" font-size="11" fill="#333">TRUC cua backtest replay khi khong co quy trinh ghi chu tach biet duoc dung truoc.</text>
+  <text x="450" y="503" text-anchor="middle" font-size="11" fill="#7d6608" font-weight="700">5/17 Win (~30% so lenh Win) mang rui ro nay - khong the loai khoi WR, chi co the ghi nhan ro rui ro.</text>
+</svg>

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 820" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="820" fill="#ffffff"/>
+  <text x="500" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Case Studies — FVG Not Valid</text>
+  <text x="500" y="56" text-anchor="middle" font-size="14" fill="#555">3 kịch bản minh họa: Fail / Compliant / Gray-zone (KHÔNG phải log giao dịch thật)</text>
+
+  <!-- Case A -->
+  <rect x="40" y="80" width="280" height="330" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="180" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#c62828">Case A — Fail</text>
+  <text x="180" y="126" text-anchor="middle" font-size="12" fill="#333">XAUUSD, London KZ</text>
+  <text x="180" y="144" text-anchor="middle" font-size="12" fill="#333">Kết quả: -1R</text>
+
+  <rect x="56" y="156" width="248" height="60" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="66" y="174" font-size="11" fill="#333">FVG hình thành trong</text>
+  <text x="66" y="190" font-size="11" fill="#333">accumulation, không có</text>
+  <text x="66" y="206" font-size="11" fill="#333">displacement gốc.</text>
+
+  <rect x="56" y="222" width="248" height="60" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="66" y="240" font-size="11" fill="#333">Entry proximal ngay khi</text>
+  <text x="66" y="256" font-size="11" fill="#333">chạm biên — bỏ qua bước</text>
+  <text x="66" y="272" font-size="11" fill="#333">kiểm tra dealing range.</text>
+
+  <rect x="56" y="288" width="248" height="60" rx="6" fill="#ffffff" stroke="#c62828" stroke-width="1"/>
+  <text x="66" y="306" font-size="11" fill="#333">Checklist: 2/6 điều kiện —</text>
+  <text x="66" y="322" font-size="11" fill="#333">vẫn vào lệnh vì "nhìn giống</text>
+  <text x="66" y="338" font-size="11" fill="#333">setup đẹp".</text>
+
+  <rect x="56" y="354" width="248" height="42" rx="6" fill="#c62828"/>
+  <text x="180" y="380" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Bài học: hình dạng ≠ hợp lệ</text>
+
+  <!-- Case B -->
+  <rect x="360" y="80" width="280" height="330" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="500" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">Case B — Compliant</text>
+  <text x="500" y="126" text-anchor="middle" font-size="12" fill="#333">XAUUSD, NY KZ</text>
+  <text x="500" y="144" text-anchor="middle" font-size="12" fill="#333">Kết quả: bỏ lỡ +7-8R</text>
+
+  <rect x="376" y="156" width="248" height="60" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="386" y="174" font-size="11" fill="#333">FVG đủ 6/6 điều kiện,</text>
+  <text x="386" y="190" font-size="11" fill="#333">nhưng giá không hồi</text>
+  <text x="386" y="206" font-size="11" fill="#333">về tới CE.</text>
+
+  <rect x="376" y="222" width="248" height="60" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="386" y="240" font-size="11" fill="#333">Tuân thủ rule "chờ CE" —</text>
+  <text x="386" y="256" font-size="11" fill="#333">đứng ngoài, giá chạy thẳng</text>
+  <text x="386" y="272" font-size="11" fill="#333">theo hướng dự kiến.</text>
+
+  <rect x="376" y="288" width="248" height="60" rx="6" fill="#ffffff" stroke="#2e7d32" stroke-width="1"/>
+  <text x="386" y="306" font-size="11" fill="#333">Đúng quy trình 100%, chi phí</text>
+  <text x="386" y="322" font-size="11" fill="#333">cơ hội cao — không được tính</text>
+  <text x="386" y="338" font-size="11" fill="#333">là "lỗi" trong log.</text>
+
+  <rect x="376" y="354" width="248" height="42" rx="6" fill="#2e7d32"/>
+  <text x="500" y="380" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Bài học: kỷ luật ≠ luôn thắng</text>
+
+  <!-- Case C gray-zone -->
+  <rect x="680" y="80" width="280" height="330" rx="10" fill="#fff3e0" stroke="#f9a825" stroke-width="2"/>
+  <text x="820" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#3a2c00">Case C — Gray-zone</text>
+  <text x="820" y="126" text-anchor="middle" font-size="12" fill="#333">EURUSD, London KZ</text>
+  <text x="820" y="144" text-anchor="middle" font-size="12" fill="#333">Kết quả: tranh cãi mở</text>
+
+  <rect x="696" y="156" width="248" height="60" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1"/>
+  <text x="706" y="174" font-size="11" fill="#3a2c00">FVG chồng lấn Order</text>
+  <text x="706" y="190" font-size="11" fill="#3a2c00">Block cùng hướng —</text>
+  <text x="706" y="206" font-size="11" fill="#3a2c00">confluence hay trùng lặp?</text>
+
+  <rect x="696" y="222" width="248" height="60" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1"/>
+  <text x="706" y="240" font-size="11" fill="#3a2c00">CE của FVG và mép OB</text>
+  <text x="706" y="256" font-size="11" fill="#3a2c00">lệch nhau ~15 pip —</text>
+  <text x="706" y="272" font-size="11" fill="#3a2c00">entry tại điểm nào?</text>
+
+  <rect x="696" y="288" width="248" height="60" rx="6" fill="#ffffff" stroke="#f9a825" stroke-width="1"/>
+  <text x="706" y="306" font-size="11" fill="#3a2c00">Không có rule hiện hành</text>
+  <text x="706" y="322" font-size="11" fill="#3a2c00">phân xử — cần bổ sung</text>
+  <text x="706" y="338" font-size="11" fill="#3a2c00">Doctrine v2 backlog.</text>
+
+  <rect x="696" y="354" width="248" height="42" rx="6" fill="#f9a825"/>
+  <text x="820" y="380" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a2c00">Bài học: cần rule OB+FVG</text>
+
+  <!-- Comparison table -->
+  <rect x="40" y="440" width="920" height="330" rx="10" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <text x="500" y="466" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">Bảng so sánh 3 case</text>
+
+  <line x1="60" y1="482" x2="940" y2="482" stroke="#999" stroke-width="1"/>
+  <text x="80" y="504" font-size="12" font-weight="bold" fill="#1a1a1a">Tiêu chí</text>
+  <text x="330" y="504" font-size="12" font-weight="bold" fill="#c62828">Case A (Fail)</text>
+  <text x="580" y="504" font-size="12" font-weight="bold" fill="#2e7d32">Case B (Compliant)</text>
+  <text x="830" y="504" font-size="12" font-weight="bold" fill="#3a2c00">Case C (Gray-zone)</text>
+  <line x1="60" y1="514" x2="940" y2="514" stroke="#ccc" stroke-width="1"/>
+
+  <text x="80" y="536" font-size="12" fill="#333">Checklist score</text>
+  <text x="330" y="536" font-size="12" fill="#333">2/6</text>
+  <text x="580" y="536" font-size="12" fill="#333">6/6</text>
+  <text x="830" y="536" font-size="12" fill="#333">5/6 (mơ hồ 1 mục)</text>
+  <line x1="60" y1="548" x2="940" y2="548" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="570" font-size="12" fill="#333">Entry point</text>
+  <text x="330" y="570" font-size="12" fill="#333">Proximal, vội</text>
+  <text x="580" y="570" font-size="12" fill="#333">Không entry (đúng rule)</text>
+  <text x="830" y="570" font-size="12" fill="#333">Không rõ CE thật ở đâu</text>
+  <line x1="60" y1="582" x2="940" y2="582" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="604" font-size="12" fill="#333">Kết quả R</text>
+  <text x="330" y="604" font-size="12" fill="#333">-1R</text>
+  <text x="580" y="604" font-size="12" fill="#333">0R (đứng ngoài) / +7-8R bỏ lỡ</text>
+  <text x="830" y="604" font-size="12" fill="#333">Chưa xác định</text>
+  <line x1="60" y1="616" x2="940" y2="616" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="638" font-size="12" fill="#333">Vấn đề chính</text>
+  <text x="330" y="638" font-size="12" fill="#333">Bỏ qua checklist</text>
+  <text x="580" y="638" font-size="12" fill="#333">Chi phí cơ hội cao</text>
+  <text x="830" y="638" font-size="12" fill="#333">Thiếu rule phân xử confluence</text>
+  <line x1="60" y1="650" x2="940" y2="650" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="672" font-size="12" fill="#333">Evidence Tier</text>
+  <text x="330" y="672" font-size="12" fill="#333">Tier 1 (n=1 thật)</text>
+  <text x="580" y="672" font-size="12" fill="#333">Tier 0 (minh họa)</text>
+  <text x="830" y="672" font-size="12" fill="#333">Tier 0 (minh họa)</text>
+  <line x1="60" y1="684" x2="940" y2="684" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="706" font-size="12" fill="#333">Hành động đề xuất</text>
+  <text x="330" y="706" font-size="12" fill="#333">Audit rubric = F</text>
+  <text x="580" y="706" font-size="12" fill="#333">Giữ rule, log cơ hội bỏ lỡ</text>
+  <text x="830" y="706" font-size="12" fill="#333">Đưa vào backlog Doctrine v2</text>
+
+  <rect x="60" y="726" width="880" height="30" rx="6" fill="#e3f2fd"/>
+  <text x="500" y="746" text-anchor="middle" font-size="11" fill="#1565c0">Toàn bộ 3 case là kịch bản minh họa để huấn luyện tư duy — không phải log giao dịch thật.</text>
+</svg>

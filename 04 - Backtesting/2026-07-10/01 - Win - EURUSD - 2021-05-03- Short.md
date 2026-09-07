@@ -337,10 +337,152 @@ tags:
 
 ---
 
+---
+
+## 9. Phân tích chuyên sâu bổ sung (2026-08-03)
+
+![[EURUSD-20210503-unicorn-idm-purge.svg|760]]
+
+### 9.1. Bản đồ liquidity IRL ↔ ERL tại thời điểm entry
+
+- **Unicorn POI** = Breaker + FVG chồng lấp, IRL của bản thân cấu trúc. CE tính lại = (1.20680+1.20616)/2 = 1.20648, khớp gần như tuyệt đối với ce_price ghi trong note (~1.20648) — arithmetic sạch, không có discrepancy.
+- **Pool đã lấy trước entry**: IDM (inducement, internal high) bị quét trước — đây là IRL nội bộ, không phải named ERL cấp cao (không phải PDH/EQH toàn phiên). Đây là điểm khác biệt quan trọng với 07-09/01 (nơi sweep neo EQH named cấp cao hơn): ở đây "Unicorn" hợp lệ hoá một sweep cấp thấp hơn (IDM) nhờ chính cấu trúc Breaker+FVG chồng lấp làm tăng độ tin cậy, đúng tinh thần model Unicorn (không cần sweep lớn, cần đúng cấu trúc chồng lấp).
+- **SL 1.20764 nằm ở đâu so với pool tiếp theo phía trên?** Nằm trên đỉnh Breaker — không có mô tả về BSL cụ thể nào giữa SL và đỉnh dealing range (1.21058) trong note; không đủ dữ liệu để xác nhận hay loại trừ liệu SL có nằm trong đường đi tới một pool BSL lớn hơn chưa quét (khác với 07-10/02 nơi dữ liệu này được nêu rõ). Không suy diễn thêm.
+
+### 9.2. Chất lượng displacement/MSS
+
+- Note tự ghi rõ chuỗi: sweep IDM → displacement mạnh → MSS phá swing low → Breaker hình thành → FVG lấp lại một phần → entry tại CE. Đây đạt chuẩn "expansion một chiều, imbalance rõ" theo SKILL.md § Displacement. Tuy nhiên cần kiểm: Breaker (SKILL.md § Breaker) đòi hỏi "OB thất bại sau khi lấy liquidity + phá structure, đảo cực — cần chuỗi sự kiện, không chỉ một nến" — xem mục 10 Doctrine check để đánh giá đủ chuỗi này chưa (evidence tường thuật hay chỉ suy luận).
+
+### 9.3. Yếu tố thời gian
+
+- Không có mốc giờ cụ thể trong note để xác nhận killzone — nếu note có nhắc London/NY, cần đối chiếu; nếu không, để trống, không suy diễn.
+
+### 9.4. Vị trí entry trong dealing range
+
+- Dealing range D1/H1: High 1.21058 / Low 1.19436 → EQ = 1.20247. Entry 1.2065 nằm TRÊN EQ (Premium), đúng phía cho Short. Vị trí trong range = (1.2065-1.19436)/(1.21058-1.19436) ≈ 74.9% — Premium sâu, gần biên OTE 0.786 (78.6%) nhưng chưa xác nhận đây có phải leg swing-to-swing đúng chuẩn OTE hay chỉ là dealing range tổng quát (2 khái niệm khác nhau theo canon — xem Doctrine check).
+
+### 9.5. So sánh với lệnh khác cùng mẫu trong vault
+
+- **[[02 - Win - EURUSD - 2005-05-11 - Short]]** (note 07-09/01) — cùng hướng Short, cùng Premium, nhưng POI khác hẳn về cấp độ sweep (EQH named cấp cao vs IDM nội bộ ở đây). Cả hai đều Win — chưa đủ mẫu để so sánh POI rank ảnh hưởng outcome.
+- **[[04 - Win - EURUSD - 2021-07-22 - Long]]** (07-10/03, cùng batch) — đối lập hướng (Long/Discount) nhưng cùng entry_type CE và cùng kỷ luật chờ đủ chuỗi. Điểm khác: r_multiple ghi 3.075 ở note này **không khớp với RR tính từ entry/SL/TP đã cho** (xem mục arithmetic discrepancy trong Devil's Advocate, O1) — trong khi 07-10/03 khớp gần như chính xác (2.818 vs 2.86 ghi). Đây là điểm cần theo dõi ở cấp portfolio: không phải mọi r_multiple ghi trong log đều tính trực tiếp từ entry/SL/TP-cuối, một số là blended qua partial.
+
+---
+
+## 10. Phản biện chuyên sâu (Devil's Advocate)
+
+```yaml
+mode: REVIEW
+instrument: EURUSD
+date: 2021-05-03
+timeframes_provided: "D1/H4, H1, M5 — chỉ mô tả tường thuật + PNG không đọc được"
+verdict: SURVIVES, WEAKENED
+evidence_sufficiency: thin
+opposite_case_strength: weaker but non-trivial
+objections: {fatal: 0, material: 2, minor: 1}
+```
+
+**0. Evidence base.** Không có chart đọc được. Fact base = tường thuật + frontmatter. Lệnh Win Grade A — mặc định nghi hindsight cao (brief).
+
+**1. Thesis + load-bearing claim.**
+- C1: D1/H1 bias Bearish, Premium xác nhận qua vị trí 74.9% dealing range.
+- C2: IDM bị quét (sweep nội bộ) trước displacement.
+- C3 **(load-bearing)**: Breaker + FVG chồng lấp tạo Unicorn POI hợp lệ — đủ chuỗi "OB thất bại sau lấy liquidity + phá structure, đảo cực" theo canon Breaker.
+- C4: Entry tại CE Unicorn = 1.2065, đúng kế hoạch, không chase.
+- C5: r_planned = r_multiple = 3.075, Win.
+
+Load-bearing: **C3** — nếu Breaker không đạt chuẩn (chỉ là OB thường được gọi nhầm thành Breaker), toàn bộ nhãn "Unicorn" (vốn cần CẢ Breaker + FVG chồng lấp) sụp, POI thực chất chỉ là FVG rank thấp hơn.
+
+**2. What survives.** C1, C2, C4 không bị thách thức bởi bất kỳ mâu thuẫn nội bộ nào trong note — bias, sweep nội bộ, và kỷ luật entry đều nhất quán với tường thuật.
+
+**3. Objections**
+
+**O1 · [ARITHMETIC] · fatal · attacks C5**
+Claim: `r_planned: 3.075`, `r_multiple: 3.075`.
+Fails: từ entry 1.2065 / SL 1.20764 / TP 1.20408: risk = 0.00114, reward = 0.00242 → RR = 2.123, không phải 3.075. Chênh gần 1R — đây là mức lệch LỚN nhất trong toàn bộ 5 note của batch này.
+Evidence: tính trực tiếp từ 3 số đã ghi trong chính frontmatter của note.
+Consequence: nếu 3.075 là con số blended từ partial TP (TP1 50% @ ~2.1R + runner đến TP2 = TP1+2R, cho blended ≈ 3.1R — khớp gần đúng phép tính thử), thì con số này ĐÚNG nhưng đo một đại lượng khác (blended R thực nhận) chứ không phải RR-kế-hoạch-tới-TP-cuối trong frontmatter. Việc dùng cùng field `r_planned` cho hai khái niệm khác nhau (RR đơn tới TP cuối vs R blended qua partial) làm sai lệch mọi thống kê expectancy tổng hợp nếu gộp chung với các lệnh không có partial.
+Your best answer: "TP trong frontmatter (1.20408) là TP2/runner, không phải TP duy nhất — con số 3.075 phản ánh đúng kết quả thực nhận qua 2 lần chốt." Đây là lời giải thích hợp lý và có khả năng đúng (phép tính blended thử cho ra ≈3.1, khớp sát 3.075) — nhưng **note không nêu rõ điều này bằng số** (không có TP1 cụ thể, % khối lượng, R tại TP1) nên objection ở mức fatal cho tính minh bạch của log, dù không phá được outcome thật.
+Retracted by: bổ sung rõ TP1 (giá + % khối lượng + R đạt được) và công thức blended dùng để ra 3.075 — nếu số khớp, hạ objection xuống UNSUPPORTED (thiếu minh bạch) thay vì ARITHMETIC fatal.
+
+**O2 · [DOCTRINE] · material · attacks C3 (load-bearing)**
+Claim: "Breaker + FVG chồng lấp = Unicorn".
+Fails một phần: SKILL.md § Breaker yêu cầu "OB thất bại sau khi lấy liquidity + phá structure, đảo cực — cần chuỗi sự kiện, không chỉ một nến". Note tường thuật có sweep IDM → displacement → MSS, nhưng không mô tả rõ ràng "OB thất bại" là OB nào cụ thể, bị lấy liquidity ở đâu, trước khi trở thành Breaker.
+Evidence: thiếu — đây là khoảng trống mô tả trong note, không phải mâu thuẫn.
+Consequence: nếu chuỗi Breaker thật sự không đủ (chỉ là OB thường bị phá structure một lần, không phải đảo cực đủ điều kiện), thì "Unicorn" là overcall — POI thực chất chỉ là FVG rank thấp hơn, dù outcome vẫn Win.
+Your best answer: note có nhắc "Breaker" như một fact đã xác lập trong quá trình 7 bước — nhưng vì đây chỉ là tường thuật không kèm mô tả OB gốc cụ thể, tôi không có đủ evidence để PASS/FAIL dứt khoát → đúng chuẩn phải xử lý là AMBIGUOUS/UNSUPPORTED, không phải khẳng định FAIL.
+Retracted by: bổ sung mô tả cụ thể: OB nào đã thất bại, mốc liquidity nào bị lấy trước khi đảo cực thành Breaker.
+
+**O3 · [UNSUPPORTED] · minor** — vị trí entry 74.9% dealing range gần biên OTE 0.786 nhưng note không xác nhận đây là leg swing-to-swing đúng chuẩn để tính OTE (dùng dealing range tổng quát thay vì impulse leg cụ thể) — SKILL.md § OTE yêu cầu "retrace của impulse leg", không phải % của toàn dealing range. Hai đại lượng có thể trùng số nhưng không tự động là cùng khái niệm. Retracted by: xác nhận leg cụ thể dùng để tính OTE, nếu trùng với dealing range boundaries thì hợp lệ; nếu không, cần đo lại.
+
+Đã soạn 3 objections, cắt 0.
+
+**4. Opposite case.** Từ cùng evidence: "Đây thực chất là một lệnh Short thắng nhờ Premium sâu (74.9%) và bias D1 đúng hướng, không phải nhờ chất lượng Unicorn — nếu gọi đúng tên (FVG thường, không phải Unicorn), POI rank sẽ thấp hơn và note có thể đã không vào lệnh (do POI rank không đạt ngưỡng tối thiểu)."
+- Load-bearing của case ngược: "nhãn Unicorn là overcall, chuỗi Breaker chưa đủ."
+- Tự phản bác: không đủ evidence để khẳng định Breaker chuỗi không đủ — chỉ là thiếu mô tả, không phải mâu thuẫn (khác O1 nơi có mâu thuẫn số học rõ ràng). Cân bằng: case ngược đáng đưa ra làm cảnh báo nhưng không thắng thế.
+- Strength label: **weaker but non-trivial**.
+- Distinguishing observable: nếu note có (hoặc bổ sung được) mô tả cụ thể OB gốc bị lấy liquidity trước khi đảo cực → case gốc thắng dứt khoát. Nếu không có gì hơn một OB bị phá structure một lần → case ngược có cơ sở mạnh hơn.
+
+**5. Verdict: SURVIVES, WEAKENED.**
+Load-bearing claim C3 không bị BROKEN (không có bằng chứng mâu thuẫn trực tiếp) nhưng cũng chưa PASS chắc chắn — evidence tường thuật thiếu chi tiết chuỗi Breaker đầy đủ. Kết hợp với O1 (mâu thuẫn arithmetic R-multiple lớn nhất batch), verdict là WEAKENED chứ không SURVIVES sạch. Điều không phá được: bias D1 Bearish + Premium 74.9% + sweep IDM + displacement — nhất quán, không mâu thuẫn. Điều không xác lập được: chuỗi Breaker đầy đủ (thiếu mô tả OB gốc); và nguồn gốc chính xác của 3.075 (có thể đúng nếu blended, nhưng không minh bạch trong log).
+
+**6. Falsification tests**
+1. Bổ sung mô tả OB gốc cụ thể (giá, thời điểm) đã thất bại trước khi trở thành Breaker — nếu có, đóng O2 thành PASS; nếu không, hạ Unicorn xuống FVG rank thấp hơn.
+2. Truy lại TP1/partial data gốc để xác nhận công thức blended cho ra đúng 3.075 — nếu khớp, hạ O1 từ fatal xuống UNSUPPORTED (thiếu minh bạch, không phải sai số học).
+3. Xác định leg swing-to-swing cụ thể dùng tính OTE, so với dealing range boundaries — đóng O3.
+
+---
+
+## 11. Doctrine check (ICT 2022 canon)
+
+**Thesis:** Lệnh Short tại CE của Unicorn POI (Breaker + FVG chồng lấp) trong Premium sâu (74.9%), sau sweep IDM + displacement + MSS, Win với r_multiple ghi 3.075.
+
+**Cần sửa** (load-bearing trước):
+- C3 "Breaker hợp lệ theo chuỗi thất bại + đảo cực" — **AMBIGUOUS** · SKILL.md § Breaker yêu cầu chuỗi sự kiện cụ thể (OB thất bại sau lấy liquidity), note không mô tả đủ chi tiết OB gốc để xác nhận → fix: bổ sung mô tả OB gốc và mốc liquidity bị lấy trước khi đảo cực.  ← (load-bearing)
+- C5 "r_multiple 3.075 = RR tính từ entry/SL/TP" — **FAIL** · arithmetic: RR tính trực tiếp = 2.123, không phải 3.075; nếu 3.075 là blended qua partial thì đây là nhầm field, không phải RR đơn → fix: tách 2 field riêng (`rr_planned_single_tp` và `r_realized_blended`).
+- C_OTE "entry tại 74.9% dealing range = trong OTE" — **UNSUPPORTED** · SKILL.md § OTE yêu cầu tính trên impulse leg cụ thể, không phải % dealing range tổng quát → fix: xác định leg swing-to-swing dùng tính OTE.
+
+**PASS:** C1 (D1 Bearish bias), C2 (sweep IDM nội bộ — hợp lệ như một internal liquidity, không cần named ở cấp cao theo đúng tinh thần model Unicorn), C4 (entry đúng kế hoạch, không chase).
+
+**Verdict:** INSUFFICIENT EVIDENCE — load-bearing claim C3 (Breaker hợp lệ) là AMBIGUOUS do thiếu mô tả chuỗi sự kiện cụ thể, không phải vì mâu thuẫn rõ ràng. Theo decision rule (ict-doctrine SKILL.md), một thesis mà claim trung tâm chưa kiểm được thì không được nhận PARTIALLY ALIGNED chỉ vì các claim phụ PASS.
+
+**Notes:** Doctrine gap — SKILL.md không có ngưỡng cụ thể phân biệt "OB thất bại đủ điều kiện đảo cực thành Breaker" khỏi "OB bị phá structure thông thường" khi chỉ có mô tả tường thuật (không có chart) — đề xuất bổ sung: Breaker cần tối thiểu nêu (a) giá/thời điểm OB gốc, (b) mốc liquidity cụ thể bị lấy, (c) mô tả nến đảo cực. Notes cũng ghi nhận: đây là ví dụ tốt cho nguyên tắc "GATE fail không đồng nghĩa Loss" — thiếu evidence Doctrine (AMBIGUOUS) không ngăn lệnh Win, nhắc lại rằng ALIGNED/verdict không phải dự đoán outcome.
+
+---
+
+## 12. Lesson Learned (bản đầy đủ)
+
+### (a) Bài học kỹ thuật
+
+1. **Unicorn POI có thể dùng sweep nội bộ (IDM) thay vì named level cấp cao, nhưng phải có đủ evidence chuỗi Breaker.** Ví dụ số thật: CE tính lại 1.20648 khớp gần tuyệt đối với note (chênh <0.5 pip) — arithmetic sạch cho CE, nhưng chuỗi Breaker (OB gốc, liquidity bị lấy) không được mô tả đủ chi tiết. Tổng quát hóa: một POI có CE tính đúng không tự động có nghĩa nhãn cấu trúc (Breaker/Unicorn) đã được xác nhận đủ.
+2. **r_multiple ghi trong log có thể là con số blended (qua partial TP), không phải RR đơn tới TP cuối trong frontmatter.** Ví dụ số thật: 3.075 ghi vs 2.123 tính trực tiếp từ entry/SL/TP — chênh gần 1R. Nếu không tách rõ 2 khái niệm này trong toàn vault, mọi thống kê expectancy trung bình theo `r_multiple` sẽ bị lẫn giữa lệnh có/không có partial.
+
+### (b) Bài học quy trình/checklist
+
+- Log thiếu trường TP1 (giá, %, R đạt) khi có partial — đây là khoảng trống dữ liệu lặp lại tiềm ẩn ở nhiều note khác trong vault nếu cùng convention; cần chuẩn hóa trường `partial_exits[]` tách bạch khỏi `take_profit` cuối.
+- Khi gọi tên cấu trúc nâng cao (Breaker, Unicorn), log cần một dòng mô tả tối thiểu 3 fact bắt buộc (OB gốc, liquidity bị lấy, nến đảo cực) — thiếu bất kỳ fact nào nên tự gắn cờ AMBIGUOUS ngay khi ghi, không đợi backtest review sau phát hiện.
+
+### (c) Bài học tâm lý-hành vi
+
+- Không có dấu hiệu vi phạm kỷ luật trong note (followed_plan không bị note tự nghi ngờ) — đây là điểm PASS hành vi, không cần bài học sửa.
+- Rủi ro cần theo dõi: Grade A + tên gọi "Unicorn" (cấu trúc hiếm, nghe "cao cấp") có thể tạo thiên kiến xác nhận khiến người backtest ít kiểm tra kỹ chuỗi Breaker hơn so với một FVG rank thấp — đáng chú ý nhưng không có bằng chứng cụ thể trong note này rằng điều đó đã xảy ra (chỉ là rủi ro chung, gắn nhãn giả thuyết).
+
+### (d) Rule đề xuất cho Playbook
+
+- [ ] Khi log nhãn Breaker/Unicorn, bắt buộc ghi 3 fact: giá/thời điểm OB gốc, mốc liquidity cụ thể bị lấy, mô tả nến đảo cực — thiếu 1 trong 3 thì tự động gắn `doctrine_status: AMBIGUOUS` cho POI đó ngay tại thời điểm ghi.
+- [ ] Tách field `r_planned_single_tp` (RR tính trực tiếp entry/SL/TP cuối) khỏi `r_realized_blended` (kết quả thực nhận qua partial) — không dùng chung 1 field `r_planned`/`r_multiple` cho cả hai.
+- [ ] Khi entry nằm trong dải % cao của dealing range (>70%) mà không xác nhận được leg OTE cụ thể, ghi `poi_in_ote: Unclear` thay vì bỏ trống hoàn toàn hoặc suy diễn Yes.
+
+### (e) Điều KHÔNG nên học từ lệnh này
+
+- KHÔNG nên kết luận "Unicorn luôn thắng nhờ chồng lấp Breaker+FVG" — n=1, và bản thân nhãn Breaker trong note này chưa được xác nhận đủ chuỗi qua Doctrine check (AMBIGUOUS, không PASS).
+- KHÔNG nên dùng r_multiple=3.075 làm dữ liệu đầu vào cho tính expectancy trung bình cùng nhóm với các lệnh RR đơn (không partial) — sẽ làm lệch số liệu tổng thể nếu không tách blended vs single-TP.
+- KHÔNG nên coi outcome Win là bằng chứng rằng chuỗi Breaker "chắc chắn đã đúng" — đây chính là outcome-as-evidence mà Devil's Advocate mục 10 đã cảnh báo (O2), giữ nguyên là AMBIGUOUS bất kể kết quả thắng.
+
+
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI ladder: [[04 - Breaker Block]] · [[13 - FVG  - Fair Value Gap]] · [[07 - Unicorn Model]]
-- Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[27 - Premium Discount]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]]
+- POI ladder: [[04-Breaker-Block]] · [[13-FVG-Fair-Value-Gap]] · [[07 - Unicorn Model]]
+- Entry refine: [[10-Consequent-Encroachment-Mean-Threshold]] · [[27-Premium-Discount]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]]
 - Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]

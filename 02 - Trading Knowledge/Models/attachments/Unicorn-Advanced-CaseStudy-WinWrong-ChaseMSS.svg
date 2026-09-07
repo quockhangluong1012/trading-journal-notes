@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="36" font-size="20" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 3 — Win nhưng SAI quy trình (chase tại MSS)</text>
+<defs>
+<marker id="arrRed" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#f87171"/>
+</marker>
+<marker id="arrGreen" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#4ade80"/>
+</marker>
+</defs>
+<line x1="90" y1="470" x2="90" y2="430" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="83.0" y="440" width="14" height="20" fill="#ef4444"/>
+<line x1="126" y1="450" x2="126" y2="412" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="119.0" y="420" width="14" height="20" fill="#ef4444"/>
+<line x1="162" y1="430" x2="162" y2="395" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="155.0" y="405" width="14" height="15" fill="#ef4444"/>
+<line x1="198" y1="412" x2="198" y2="296" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="191.0" y="300" width="14" height="105" fill="#22c55e"/>
+<line x1="234" y1="308" x2="234" y2="214" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="227.0" y="220" width="14" height="80" fill="#22c55e"/>
+<line x1="270" y1="228" x2="270" y2="188" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="263.0" y="195" width="14" height="25" fill="#22c55e"/>
+<line x1="306" y1="200" x2="306" y2="168" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="299.0" y="175" width="14" height="20" fill="#22c55e"/>
+<line x1="70" y1="395" x2="342" y2="395" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="76" y="296" width="252" height="22" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="76" y="188" width="252" height="36" fill="rgba(59,130,246,0.22)" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="76" y="188" width="252" height="26" fill="rgba(168,85,247,0.35)" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="313" y1="150" x2="313" y2="170" stroke="#f87171" stroke-width="2.5" marker-end="url(#arrRed)"/>
+<text x="266" y="140" font-size="12" font-weight="700" fill="#f87171" text-anchor="start">Entry SAI — market order tại MSS</text>
+<line x1="76" y1="201.0" x2="372" y2="201.0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="376" y="205.0" font-size="11" font-weight="400" fill="#38bdf8" text-anchor="start">Lẽ ra: chờ 50% CE</text>
+<text x="76" y="460" font-size="13" font-weight="400" fill="#eab308" text-anchor="start">Stop đặt XA (vì entry ở đỉnh nhịp đẩy) → R:R thực tế nhỏ hơn nhiều</text>
+<text x="76" y="485" font-size="13" font-weight="400" fill="#4ade80" text-anchor="start">Giá tình cờ chạy thẳng → THẮNG (nhưng hành vi chase chưa được validate)</text>
+<text x="32" y="560" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">first_error_step: entry — outcome bias: thắng sẽ củng cố hành vi sai chưa backtest.</text>
+<text x="32" y="580" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa — không phải chart giá thật.</text>
+</svg>

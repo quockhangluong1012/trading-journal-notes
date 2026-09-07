@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="820" fill="#ffffff"/>
+  <text x="550" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Debate: Chờ MSS mất entry đẹp vs MSS là hàng rào chống bắt dao rơi</text>
+  <text x="550" y="58" text-anchor="middle" font-size="14" fill="#555">Motion: "Không vào lệnh đảo chiều nếu chưa có MSS body close đúng khung, không ngoại lệ"</text>
+
+  <!-- Left: Ủng hộ -->
+  <rect x="40" y="80" width="490" height="34" rx="6" fill="#c62828"/>
+  <text x="285" y="103" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">ỦNG HỘ — Chờ MSS xác nhận</text>
+
+  <rect x="40" y="126" width="490" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="55" y="146" font-size="12.5" font-weight="bold" fill="#1a1a1a">1. MSS là bằng chứng khách quan duy nhất</text>
+  <text x="55" y="164" font-size="12" fill="#555">Body close qua protected swing đo được;</text>
+  <text x="55" y="180" font-size="12" fill="#555">mọi tín hiệu khác chỉ là suy đoán.</text>
+
+  <rect x="40" y="192" width="490" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="55" y="212" font-size="12.5" font-weight="bold" fill="#1a1a1a">2. Wick-only = liquidity run ngược hướng</text>
+  <text x="55" y="230" font-size="12" fill="#555">Vào theo wick là vào đúng phía vừa bị</text>
+  <text x="55" y="246" font-size="12" fill="#555">thuật toán thu hoạch thanh khoản.</text>
+
+  <rect x="40" y="258" width="490" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="55" y="278" font-size="12.5" font-weight="bold" fill="#1a1a1a">3. Chi phí bắt dao rơi không đối xứng</text>
+  <text x="55" y="296" font-size="12" fill="#555">SL phải xa hơn do chưa có cấu trúc bảo vệ —</text>
+  <text x="55" y="312" font-size="12" fill="#555">thiệt hại sai hướng lớn hơn bỏ lỡ.</text>
+
+  <rect x="40" y="324" width="490" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="55" y="344" font-size="12.5" font-weight="bold" fill="#1a1a1a">4. WR sụp mạnh khi thiếu MSS</text>
+  <text x="55" y="362" font-size="12" fill="#555">Mô phỏng: WR 52%→28% khi bỏ MSS —</text>
+  <text x="55" y="378" font-size="12" fill="#555">MSS lọc WR, không chỉ RR.</text>
+
+  <!-- Right: Phản đối -->
+  <rect x="570" y="80" width="490" height="34" rx="6" fill="#1565c0"/>
+  <text x="815" y="103" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">PHẢN ĐỐI — Chờ MSS mất entry đẹp nhất</text>
+
+  <rect x="570" y="126" width="490" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="585" y="146" font-size="12.5" font-weight="bold" fill="#1a1a1a">1. Entry đẹp nhất luôn ở trước khi MSS xong</text>
+  <text x="585" y="164" font-size="12" fill="#555">Giá tốt nhất ở gần thời điểm sweep — chờ</text>
+  <text x="585" y="180" font-size="12" fill="#555">MSS luôn vào sau phần "rẻ nhất" đã qua.</text>
+
+  <rect x="570" y="192" width="490" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="585" y="212" font-size="12.5" font-weight="bold" fill="#1a1a1a">2. Scalping M1-M5 không tương thích chờ đủ</text>
+  <text x="585" y="230" font-size="12" fill="#555">Tốc độ hình thành MSS khiến "chờ xác nhận"</text>
+  <text x="585" y="246" font-size="12" fill="#555">tương đương "luôn vào trễ".</text>
+
+  <rect x="570" y="258" width="490" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="585" y="278" font-size="12.5" font-weight="bold" fill="#1a1a1a">3. Không phải mọi wick sâu đều là run giả</text>
+  <text x="585" y="296" font-size="12" fill="#555">Có thể là MSS thật hình thành yếu do thiếu</text>
+  <text x="585" y="312" font-size="12" fill="#555">volume phiên Á — bị loại nhầm.</text>
+
+  <rect x="570" y="324" width="490" height="60" rx="6" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="585" y="344" font-size="12.5" font-weight="bold" fill="#1a1a1a">4. Rule không phân biệt mức "protected"</text>
+  <text x="585" y="362" font-size="12" fill="#555">Swing hình thành sau sweep mạnh khác chất</text>
+  <text x="585" y="378" font-size="12" fill="#555">lượng với swing vừa tạo 10 phút trước.</text>
+
+  <!-- Cross rebuttal arrows -->
+  <path d="M 530 156 L 570 156" stroke="#999" stroke-width="2" marker-end="url(#a5)"/>
+  <path d="M 570 216 L 530 216" stroke="#999" stroke-width="2" marker-end="url(#a5)"/>
+  <defs>
+    <marker id="a5" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- Rebuttal rounds -->
+  <rect x="40" y="400" width="1020" height="92" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="60" y="424" font-size="13" font-weight="bold" fill="#3a2c00">Vòng 1</text>
+  <text x="60" y="444" font-size="12.5" fill="#3a2c00">Ủng hộ → Phản đối #1: chi phí cơ hội là cái giá phải trả để loại rủi ro bắt dao rơi.</text>
+  <text x="60" y="464" font-size="12.5" fill="#3a2c00">Phản đối → Ủng hộ #2: đồng ý wick thường là run giả, nhưng "thường" ≠ "luôn" — cần</text>
+  <text x="60" y="482" font-size="12.5" fill="#3a2c00">cơ chế phân loại wick đáng tin theo volume/mức độ sweep trước đó.</text>
+
+  <rect x="40" y="500" width="1020" height="92" rx="8" fill="#fff3e0" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="60" y="524" font-size="13" font-weight="bold" fill="#3a2c00">Vòng 2</text>
+  <text x="60" y="544" font-size="12.5" fill="#3a2c00">Ủng hộ → Phản đối #3/#4: cần tiêu chí đo được TRƯỚC cho "mức độ protected" — nếu</text>
+  <text x="60" y="562" font-size="12.5" fill="#3a2c00">không, cho phép ngoại lệ mở lại cửa hậu chủ quan mà rule MSS muốn đóng.</text>
+  <text x="60" y="580" font-size="12.5" fill="#3a2c00">Phản đối → Ủng hộ #4: chấp nhận dữ liệu mô phỏng gộp chung mọi kiểu "không MSS".</text>
+
+  <!-- Verdict -->
+  <rect x="40" y="602" width="1020" height="110" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="60" y="626" font-size="14" font-weight="bold" fill="#2e7d32">Phán quyết có điều kiện</text>
+  <text x="60" y="648" font-size="12.5" fill="#1a1a1a">Giả thuyết đang kiểm định: yêu cầu body close là GATE hợp lý cho giai đoạn hiện tại vì</text>
+  <text x="60" y="666" font-size="12.5" fill="#1a1a1a">rủi ro bắt dao rơi không đối xứng, KHÔNG khẳng định loại trừ mọi MSS "yếu về hình dạng".</text>
+  <text x="60" y="684" font-size="12.5" fill="#1a1a1a">Dữ liệu giải quyết: tách nhóm "wick+volume spike" vs MSS chuẩn, đo WR n≥20/nhóm,</text>
+  <text x="60" y="700" font-size="12.5" fill="#1a1a1a">kiểm tra ổn định qua ≥2 giai đoạn thị trường.</text>
+
+  <!-- Evidence tier -->
+  <rect x="40" y="724" width="1020" height="70" rx="8" fill="#fce4e4" stroke="#c62828" stroke-width="1.5"/>
+  <text x="60" y="748" font-size="13" font-weight="bold" fill="#c62828">Evidence Tier hiện tại: TIER 0</text>
+  <text x="60" y="770" font-size="12.5" fill="#3a2c00">Chưa có dữ liệu WR tách nhóm theo break_type, chưa đo chi phí cơ hội thật của việc chờ MSS.</text>
+</svg>

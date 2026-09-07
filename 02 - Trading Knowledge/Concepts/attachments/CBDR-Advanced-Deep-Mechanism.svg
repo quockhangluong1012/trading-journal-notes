@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="780" fill="#0f1420" rx="12"/>
+  <text x="40" y="42" font-size="26" font-weight="bold" fill="#e2e8f0">Cơ chế đằng sau CBDR: vì sao "dealer nghỉ" tạo ra một đơn vị đo được</text>
+  <text x="40" y="66" font-size="15" fill="#94a3b8">Từ thanh khoản có lịch tới random walk có drift — CBDR là gì về mặt thống kê</text>
+
+  <!-- timeline -->
+  <line x1="60" y1="700" x2="1150" y2="700" stroke="#334155" stroke-width="2"/>
+  <text x="90" y="722" font-size="13" fill="#94a3b8">14:00 NY</text>
+  <text x="330" y="722" font-size="13" fill="#94a3b8">20:00 NY (cửa sổ CBDR đóng)</text>
+  <text x="680" y="722" font-size="13" fill="#94a3b8">Phiên Á</text>
+  <text x="950" y="722" font-size="13" fill="#94a3b8">London Open 02:00 NY</text>
+
+  <!-- CBDR window box -->
+  <rect x="80" y="380" width="280" height="90" fill="#eab308" opacity="0.12"/>
+  <text x="90" y="400" font-size="13" fill="#eab308">Cửa sổ CBDR — dealer bank rút bớt quote</text>
+
+  <!-- small consolidating candles inside CBDR -->
+  <g>
+    <rect x="100" y="400" width="14" height="18" fill="#22c55e"/>
+    <line x1="107" y1="392" x2="107" y2="424" stroke="#22c55e" stroke-width="2"/>
+    <rect x="130" y="405" width="14" height="16" fill="#ef4444"/>
+    <line x1="137" y1="397" x2="137" y2="428" stroke="#ef4444" stroke-width="2"/>
+    <rect x="160" y="402" width="14" height="18" fill="#22c55e"/>
+    <line x1="167" y1="394" x2="167" y2="426" stroke="#22c55e" stroke-width="2"/>
+    <rect x="190" y="406" width="14" height="16" fill="#ef4444"/>
+    <line x1="197" y1="398" x2="197" y2="428" stroke="#ef4444" stroke-width="2"/>
+    <rect x="220" y="403" width="14" height="17" fill="#22c55e"/>
+    <line x1="227" y1="395" x2="227" y2="427" stroke="#22c55e" stroke-width="2"/>
+    <rect x="250" y="407" width="14" height="15" fill="#ef4444"/>
+    <line x1="257" y1="399" x2="257" y2="429" stroke="#ef4444" stroke-width="2"/>
+    <rect x="280" y="404" width="14" height="17" fill="#22c55e"/>
+    <line x1="287" y1="396" x2="287" y2="428" stroke="#22c55e" stroke-width="2"/>
+  </g>
+
+  <!-- CBDR high/low body lines -->
+  <line x1="80" y1="392" x2="360" y2="392" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="365" y="396" font-size="12" fill="#e2e8f0">CBDR High (body)</text>
+  <line x1="80" y1="430" x2="360" y2="430" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="365" y="434" font-size="12" fill="#e2e8f0">CBDR Low (body)</text>
+
+  <!-- annotation: why narrow -->
+  <rect x="80" y="150" width="290" height="140" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="95" y="175" font-size="14" fill="#e2e8f0" font-weight="bold">Vì sao range hẹp lại?</text>
+  <text x="95" y="198" font-size="13" fill="#94a3b8">Dealer bank London/NY đã hết ca,</text>
+  <text x="95" y="216" font-size="13" fill="#94a3b8">dealer Á-TBD chưa vào — order book</text>
+  <text x="95" y="234" font-size="13" fill="#94a3b8">mỏng đối tác thật, spread giữ giá</text>
+  <text x="95" y="252" font-size="13" fill="#94a3b8">gần nhau → range hẹp là hệ quả</text>
+  <text x="95" y="270" font-size="13" fill="#94a3b8">của LỊCH LÀM VIỆC, không phải "bí ẩn"</text>
+
+  <!-- SD projection fan -->
+  <line x1="360" y1="411" x2="1140" y2="411" stroke="#334155" stroke-width="1"/>
+  <line x1="360" y1="411" x2="1140" y2="220" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="1000" y="215" font-size="13" fill="#22c55e">+2 SD (BSL)</text>
+  <line x1="360" y1="411" x2="1140" y2="120" stroke="#22c55e" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+  <text x="1000" y="115" font-size="12" fill="#94a3b8">+3 SD (hiếm chạm)</text>
+  <line x1="360" y1="411" x2="1140" y2="600" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="1000" y="615" font-size="13" fill="#ef4444">-2 SD (SSL)</text>
+
+  <!-- price path: sweep -1SD then expand to +2SD -->
+  <g>
+    <rect x="420" y="440" width="14" height="30" fill="#ef4444"/>
+    <line x1="427" y1="430" x2="427" y2="480" stroke="#ef4444" stroke-width="2"/>
+    <rect x="450" y="480" width="14" height="40" fill="#ef4444"/>
+    <line x1="457" y1="470" x2="457" y2="530" stroke="#ef4444" stroke-width="2"/>
+  </g>
+  <text x="410" y="550" font-size="12" fill="#f97316">Manipulation: quét -1 SD</text>
+
+  <g>
+    <rect x="560" y="400" width="16" height="30" fill="#22c55e"/>
+    <line x1="568" y1="388" x2="568" y2="440" stroke="#22c55e" stroke-width="2"/>
+    <rect x="610" y="350" width="16" height="35" fill="#22c55e"/>
+    <line x1="618" y1="338" x2="618" y2="395" stroke="#22c55e" stroke-width="2"/>
+    <rect x="660" y="300" width="16" height="35" fill="#22c55e"/>
+    <line x1="668" y1="288" x2="668" y2="345" stroke="#22c55e" stroke-width="2"/>
+    <rect x="710" y="260" width="16" height="30" fill="#22c55e"/>
+    <line x1="718" y1="250" x2="718" y2="300" stroke="#22c55e" stroke-width="2"/>
+  </g>
+  <text x="560" y="240" font-size="13" fill="#22c55e" font-weight="bold">Distribution: chạy về +2 SD</text>
+
+  <!-- Right box: statistical framing -->
+  <rect x="800" y="60" width="345" height="115" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="815" y="85" font-size="14" fill="#e2e8f0" font-weight="bold">Góc nhìn thống kê</text>
+  <text x="815" y="106" font-size="13" fill="#94a3b8">SD ở đây chỉ là "bội số chiều cao range"</text>
+  <text x="815" y="124" font-size="13" fill="#94a3b8">— KHÔNG phải độ lệch chuẩn thống kê thật</text>
+  <text x="815" y="142" font-size="13" fill="#94a3b8">của một phân phối lợi suất. Tên gọi</text>
+  <text x="815" y="160" font-size="13" fill="#94a3b8">"standard deviation" ở đây là ẩn dụ.</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect x="0" y="0" width="960" height="540" fill="#131722"/>
+  <g stroke="#1e222d" stroke-width="1">
+    <line x1="480" y1="30" x2="480" y2="500"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+  </g>
+
+  <text x="480" y="35" fill="#d1d4dc" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">So sanh case: Thang (C1) vs Thua do tin (C2)</text>
+
+  <!-- LEFT: Case C1 win -->
+  <text x="240" y="65" fill="#26a69a" font-family="Arial" font-size="17" font-weight="bold" text-anchor="middle">C1 - Thang, du lop loc</text>
+
+  <!-- candles pre -->
+  <g>
+    <line x1="60" y1="180" x2="60" y2="210" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="54" y="185" width="12" height="18" fill="#ef5350"/>
+    <line x1="85" y1="175" x2="85" y2="205" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="79" y="180" width="12" height="18" fill="#26a69a"/>
+  </g>
+  <!-- displacement -->
+  <line x1="115" y1="110" x2="115" y2="200" stroke="#26a69a" stroke-width="2"/>
+  <rect x="107" y="120" width="16" height="70" fill="#26a69a"/>
+  <rect x="95" y="140" width="70" height="55" fill="rgba(41,98,255,0.25)" stroke="#2962ff"/>
+  <text x="130" y="230" fill="#d1d4dc" font-family="Arial" font-size="13" text-anchor="middle">1st FVG qualified</text>
+
+  <!-- extend + retest -->
+  <line x1="165" y1="167" x2="360" y2="167" stroke="#2962ff" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="330" cy="167" r="6" fill="#f2c94c"/>
+  <text x="330" y="150" fill="#f2c94c" font-family="Arial" font-size="12" text-anchor="middle">MSS xac nhan</text>
+
+  <!-- price move up to target -->
+  <path d="M 330 167 L 400 90" stroke="#26a69a" stroke-width="2" fill="none"/>
+  <circle cx="400" cy="90" r="5" fill="#26a69a"/>
+  <text x="400" y="78" fill="#26a69a" font-family="Arial" font-size="13" text-anchor="middle">T2 ERL</text>
+
+  <rect x="30" y="245" width="420" height="20" fill="rgba(38,166,154,0.15)"/>
+  <text x="240" y="260" fill="#26a69a" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Ket qua minh hoa: ~+3.5R</text>
+
+  <g font-family="Arial" font-size="13" fill="#d1d4dc">
+    <text x="40" y="300">- Dung cua so 09:30-10:00</text>
+    <text x="40" y="320">- Qualified (pha range nen truoc)</text>
+    <text x="40" y="340">- Thuan Daily Bias</text>
+    <text x="40" y="360">- Confluence HTF PD array</text>
+    <text x="40" y="380">- Co xac nhan MSS truoc entry</text>
+  </g>
+
+  <!-- RIGHT: Case C2 loss -->
+  <text x="720" y="65" fill="#ef5350" font-family="Arial" font-size="17" font-weight="bold" text-anchor="middle">C2 - Thua, tin bat ngo</text>
+
+  <g>
+    <line x1="540" y1="180" x2="540" y2="210" stroke="#26a69a" stroke-width="1.5"/>
+    <rect x="534" y="185" width="12" height="18" fill="#26a69a"/>
+    <line x1="565" y1="175" x2="565" y2="205" stroke="#ef5350" stroke-width="1.5"/>
+    <rect x="559" y="180" width="12" height="18" fill="#ef5350"/>
+  </g>
+  <line x1="595" y1="110" x2="595" y2="200" stroke="#ef5350" stroke-width="2"/>
+  <rect x="587" y="120" width="16" height="70" fill="#ef5350"/>
+  <rect x="575" y="140" width="70" height="55" fill="rgba(41,98,255,0.25)" stroke="#2962ff"/>
+  <text x="610" y="230" fill="#d1d4dc" font-family="Arial" font-size="13" text-anchor="middle">Bearish FVG qualified</text>
+
+  <line x1="645" y1="167" x2="800" y2="167" stroke="#2962ff" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="770" cy="167" r="6" fill="#f2c94c"/>
+  <text x="770" y="150" fill="#f2c94c" font-family="Arial" font-size="12" text-anchor="middle">MSS xuong sach</text>
+
+  <!-- sudden reversal spike due to news -->
+  <path d="M 770 167 L 830 200 L 850 100" stroke="#ef5350" stroke-width="2" fill="none"/>
+  <text x="850" y="88" fill="#ef5350" font-family="Arial" font-size="13" text-anchor="middle">Tin bat ngo - Stop hit</text>
+
+  <rect x="510" y="245" width="420" height="20" fill="rgba(239,83,80,0.15)"/>
+  <text x="720" y="260" fill="#ef5350" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Ket qua minh hoa: -1R</text>
+
+  <g font-family="Arial" font-size="13" fill="#d1d4dc">
+    <text x="520" y="300">- Dung cua so, qualified, thuan bias</text>
+    <text x="520" y="320">- Co xac nhan MSS truoc entry</text>
+    <text x="520" y="340">- Quy trinh 8 buoc lam dung het</text>
+    <text x="520" y="360">- Phat bieu bat ngo tu quan chuc</text>
+    <text x="520" y="380">-&gt; Rui ro ngoai sinh, khong phai loi phuong phap</text>
+  </g>
+
+  <text x="480" y="420" fill="#787b86" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Bai hoc: lam dung quy trinh khong loai bo duoc rui ro su kien bat ngo giua phien</text>
+  <text x="480" y="445" fill="#787b86" font-family="Arial" font-size="13" text-anchor="middle">Ca hai case deu tuan thu day du 8 buoc cua quy trinh vao lenh</text>
+
+</svg>

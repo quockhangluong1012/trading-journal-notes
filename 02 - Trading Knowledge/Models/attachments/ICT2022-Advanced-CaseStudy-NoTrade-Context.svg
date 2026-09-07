@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Segoe UI, Arial, sans-serif">
+<rect width="960" height="600" rx="12" fill="#0d1117"/>
+<text x="32" y="32" font-size="15" font-weight="700" fill="#e5e7eb" text-anchor="start">Case 4 — EURUSD Short: đáng ra No-Trade (sai draw + ngoài Killzone)</text>
+<rect x="50" y="90" width="860" height="200" fill="rgba(239,68,68,0.08)" stroke="none" stroke-width="1.5" stroke-dasharray="0"/>
+<text x="60" y="106" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start">Premium D1 — OB đúng loại nhưng SAI bối cảnh</text>
+<rect x="200" y="150" width="130" height="50" fill="rgba(236,72,153,0.20)" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="200" y="142" font-size="12" font-weight="400" fill="#ec4899" text-anchor="start">OB (Premium — đúng loại)</text>
+<line x1="60" y1="90" x2="850" y2="90" stroke="#eab308" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="300" y="84" font-size="11" font-weight="400" fill="#f87171" text-anchor="start">BSL phía trên — CHƯA bị quét (draw ngắn hạn hướng LÊN)</text>
+<line x1="60" y1="234" x2="60" y2="266" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="54.0" y="240" width="12" height="20" fill="#22c55e"/>
+<line x1="82" y1="234" x2="82" y2="261" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="76.0" y="240" width="12" height="15" fill="#ef4444"/>
+<line x1="104" y1="224" x2="104" y2="261" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="98.0" y="230" width="12" height="25" fill="#22c55e"/>
+<line x1="126" y1="154" x2="126" y2="188" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="119.5" y="160" width="13" height="20" fill="#ef4444"/>
+<circle cx="126" cy="170" r="13" fill="none" stroke="#f87171" stroke-width="2.5"/>
+<text x="86" y="130" font-size="11" font-weight="400" fill="#f87171" text-anchor="start">Short entry (premature)</text>
+<line x1="150" y1="184" x2="150" y2="136" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="144.0" y="140" width="12" height="40" fill="#22c55e"/>
+<line x1="172" y1="144" x2="172" y2="86" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="166.0" y="90" width="12" height="50" fill="#22c55e"/>
+<line x1="194" y1="94" x2="194" y2="91" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="188.0" y="90" width="12" height="5" fill="#22c55e"/>
+<line x1="216" y1="99" x2="216" y2="76" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="210.0" y="80" width="12" height="15" fill="#22c55e"/>
+<text x="160" y="60" font-size="11" font-weight="400" fill="#f87171" text-anchor="start">Giá đi LÊN lấy BSL trước, quét stop Short</text>
+<rect x="600" y="380" width="300" height="90" rx="8" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+<text x="615" y="405" font-size="12" font-weight="400" fill="#f87171" text-anchor="start">Session: Á (10:05 UTC+7)</text>
+<text x="615" y="424" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">Ngoài Killzone London/NY</text>
+<text x="615" y="442" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">"Sweep/displacement" thấy = internal noise</text>
+<text x="615" y="458" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="start">Không có dòng lệnh tổ chức phía sau</text>
+<text x="480" y="575" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="middle">Case tái dựng từ pattern lặp lại trong backtest — số liệu minh họa, không phải dữ liệu giao dịch thật kiểm chứng được.</text>
+</svg>
