@@ -34,7 +34,7 @@ Cụ thể, trader mắc lỗi này khi:
 - Bỏ qua việc kiểm tra xem cú đẩy có *để lại FVG* hay không — trong khi FVG là hệ quả tự nhiên và là bằng chứng khách quan của một displacement thật.
 - Đánh giá displacement bằng mắt ("trông mạnh đấy") thay vì bằng tiêu chí định lượng (body-to-range, so với ATR, có/không FVG).
 
-Đây là lỗi *tiền đề* của hai lỗi khác: nó thường sinh ra [[06 - Mistake - Not Have Market Structure Shift]] (weak MSS) và [[10 - Mistake - FVG Not Valid]] (FVG hình thành từ cú đẩy yếu không đáng tin). Sửa được weak displacement là sửa được cả cụm.
+Đây là lỗi *tiền đề* của hai lỗi khác: nó thường sinh ra [[06-Mistake-Not-Have-Market-Structure-Shift]] (weak MSS) và [[10-Mistake-FVG-Not-Valid]] (FVG hình thành từ cú đẩy yếu không đáng tin). Sửa được weak displacement là sửa được cả cụm.
 
 ![[WeakDisp-Sec-01-MoTa.svg|760]]
 *Sơ đồ: cùng phá qua một mức — bên trái grinding thân nhỏ nhiều wick không FVG (yếu), bên phải thân lớn ít wick để lại FVG (mạnh, là dấu vết order flow thật).*
@@ -68,14 +68,14 @@ Checklist nhanh (thiếu ≥2 tiêu chí "mạnh" → coi là weak):
 
 ## 3. Cơ chế & Vì sao nguy hiểm
 
-Về bản chất order flow, **displacement mạnh là dấu vết vật lý của việc một phía áp đảo hoàn toàn phía kia tại một mức giá**. Để giá bỏ qua nhiều mức trong thời gian ngắn và để lại một khoảng FVG (vùng mà một phía không kịp khớp lệnh), cần một khối lượng lệnh thị trường (aggressive orders) đủ lớn nuốt sạch thanh khoản đối nghịch. Đây chính là [[41 - Change in State of Delivery]] — trạng thái giao hàng của thuật toán đã đổi.
+Về bản chất order flow, **displacement mạnh là dấu vết vật lý của việc một phía áp đảo hoàn toàn phía kia tại một mức giá**. Để giá bỏ qua nhiều mức trong thời gian ngắn và để lại một khoảng FVG (vùng mà một phía không kịp khớp lệnh), cần một khối lượng lệnh thị trường (aggressive orders) đủ lớn nuốt sạch thanh khoản đối nghịch. Đây chính là [[41-Change-in-State-of-Delivery]] — trạng thái giao hàng của thuật toán đã đổi.
 
 Ngược lại, một cú đẩy yếu (grinding, thân nhỏ, nhiều wick, không FVG) phản ánh một trạng thái **cân bằng, giằng co** giữa hai phía — không phía nào thực sự áp đảo. Giá có thể "bò" qua một mức nhờ tích lũy dần, nhưng đó không phải là bằng chứng đổi hướng; nó dễ dàng bị đảo ngược (reclaim) ngay khi phía kia quay lại.
 
 Khi bạn hành động dựa trên weak displacement:
 
-1. **MSS trở thành giả.** Một cú break qua protected swing bằng grinding yếu, không FVG, chỉ là nhiễu — không phải MSS thật (xem [[06 - Mistake - Not Have Market Structure Shift]]). Bạn tưởng cấu trúc đã đổi, nhưng chưa có bằng chứng nào.
-2. **FVG (nếu có) không đáng tin.** FVG hình thành từ một cú đẩy yếu thường mỏng, dễ bị lấp hết và xuyên qua — nó không phải là một POI có "trọng lượng" order flow để giá tựa vào (xem [[10 - Mistake - FVG Not Valid]]).
+1. **MSS trở thành giả.** Một cú break qua protected swing bằng grinding yếu, không FVG, chỉ là nhiễu — không phải MSS thật (xem [[06-Mistake-Not-Have-Market-Structure-Shift]]). Bạn tưởng cấu trúc đã đổi, nhưng chưa có bằng chứng nào.
+2. **FVG (nếu có) không đáng tin.** FVG hình thành từ một cú đẩy yếu thường mỏng, dễ bị lấp hết và xuyên qua — nó không phải là một POI có "trọng lượng" order flow để giá tựa vào (xem [[10-Mistake-FVG-Not-Valid]]).
 3. **Không có nơi để giá tựa.** Displacement mạnh để lại FVG/liquidity void — vùng inefficiency mà giá thường quay lại để "cân bằng" rồi tiếp tục. Weak displacement không tạo ra vùng này, nên pullback không có điểm đỡ, và giá dễ trôi ngược hết đường.
 4. **SL mất logic.** Không có FVG/swing rõ ràng do displacement yếu tạo ra, SL bị đặt cảm tính và thường bị reclaim quét.
 
@@ -131,17 +131,17 @@ Cần phân biệt ba loại chuyển động thường bị gộp làm một:
 
 - **Displacement (impulsive):** nhanh, thân lớn, tạo FVG, một phía áp đảo — bằng chứng order flow đổi/mở rộng. Đây là cái ICT 2022 cần.
 - **Grinding (corrective/consolidation drift):** chậm, thân nhỏ, nhiều wick, chồng lấn, không FVG — giằng co cân bằng, thường là pullback hoặc tích lũy, KHÔNG phải tín hiệu hành động.
-- **Expansion sau tích lũy:** một chuỗi displacement nối tiếp mở rộng range của ngày — thường xảy ra sau consolidation trong [[18 - Kill Zones]]. Đây là môi trường lý tưởng cho displacement chất lượng cao.
+- **Expansion sau tích lũy:** một chuỗi displacement nối tiếp mở rộng range của ngày — thường xảy ra sau consolidation trong [[18-Kill-Zones]]. Đây là môi trường lý tưởng cho displacement chất lượng cao.
 
 Nhầm grinding thành displacement là bản chất của lỗi này. Grinding *có thể* đưa giá qua một mức, nhưng nó không mang thông tin hướng đi giống displacement.
 
 ### 5.5. Liquidity void & runway — vì sao displacement mạnh "tự nuôi" chính nó
 
-Displacement mạnh thường tạo ra một [[21 - Liquidity Void]] (vùng giá di chuyển quá nhanh, gần như không có giao dịch hai chiều). Vùng void này có hai ý nghĩa: (1) nó là bằng chứng về tốc độ/áp đảo, và (2) nó tạo ra một "đường băng" (runway) — vì thiếu thanh khoản đối nghịch trong void, giá có xu hướng di chuyển nhanh khi quay lại lấp nó, hỗ trợ continuation. Weak displacement không tạo void, nên không có runway này — một lý do nữa khiến các entry dựa trên nó thiếu lực đẩy tiếp diễn.
+Displacement mạnh thường tạo ra một [[21-Liquidity-Void]] (vùng giá di chuyển quá nhanh, gần như không có giao dịch hai chiều). Vùng void này có hai ý nghĩa: (1) nó là bằng chứng về tốc độ/áp đảo, và (2) nó tạo ra một "đường băng" (runway) — vì thiếu thanh khoản đối nghịch trong void, giá có xu hướng di chuyển nhanh khi quay lại lấp nó, hỗ trợ continuation. Weak displacement không tạo void, nên không có runway này — một lý do nữa khiến các entry dựa trên nó thiếu lực đẩy tiếp diễn.
 
 ### 5.6. Timing — displacement thật cần volume phiên
 
-Displacement chất lượng cao đòi hỏi khối lượng lệnh tổ chức đủ lớn, nên nó tập trung trong [[18 - Kill Zones]] (London Open, NY Open) và quanh [[40 - Macro Times]]. Một cú đẩy "trông mạnh" giữa phiên Á hoặc giờ nghỉ trưa NY — nơi thanh khoản mỏng — dễ là kết quả của spread giãn hoặc vài lệnh đơn lẻ hơn là dòng lệnh tổ chức thật. Ngay cả khi thỏa tiêu chí kỹ thuật về body-to-range, một displacement off-session vẫn nên bị hạ mức tin cậy và đòi hỏi thêm xác nhận.
+Displacement chất lượng cao đòi hỏi khối lượng lệnh tổ chức đủ lớn, nên nó tập trung trong [[18-Kill-Zones]] (London Open, NY Open) và quanh [[40-Macro-Times]]. Một cú đẩy "trông mạnh" giữa phiên Á hoặc giờ nghỉ trưa NY — nơi thanh khoản mỏng — dễ là kết quả của spread giãn hoặc vài lệnh đơn lẻ hơn là dòng lệnh tổ chức thật. Ngay cả khi thỏa tiêu chí kỹ thuật về body-to-range, một displacement off-session vẫn nên bị hạ mức tin cậy và đòi hỏi thêm xác nhận.
 
 ---
 
@@ -268,7 +268,7 @@ Một cú "break" dạng grinding (thân nhỏ, nhiều wick, chồng lấn) man
 
 Ngay ở 50% (một nửa số lệnh chấp nhận displacement yếu), tổng expectancy giảm gần **52%** so với baseline chỉ vào lệnh khi displacement mạnh — một minh hoạ định lượng cho câu "lỗi gốc" trong note: nó không chỉ làm hỏng một lệnh, nó pha loãng toàn bộ hệ thống.
 
-**Chi phí kép khi weak displacement đi cùng mistake khác:** nếu weak displacement kết hợp với [[07 - Mistake - Risk more than 0.5% total account]] (risk vượt vì "tưởng đã có MSS xác nhận nên tự tin tăng size"), winrate nhóm này càng thấp (giả định 30%) trong khi risk cao hơn (1% thay vì 0.5%) — nhân đôi cả xác suất thua VÀ độ lớn thiệt hại mỗi lần thua, tạo ra một tổ hợp expectancy âm sâu hơn nhiều so với từng lỗi riêng lẻ.
+**Chi phí kép khi weak displacement đi cùng mistake khác:** nếu weak displacement kết hợp với [[07-Mistake-Risk-more-than-0.5-total-account]] (risk vượt vì "tưởng đã có MSS xác nhận nên tự tin tăng size"), winrate nhóm này càng thấp (giả định 30%) trong khi risk cao hơn (1% thay vì 0.5%) — nhân đôi cả xác suất thua VÀ độ lớn thiệt hại mỗi lần thua, tạo ra một tổ hợp expectancy âm sâu hơn nhiều so với từng lỗi riêng lẻ.
 
 ### 11.4. Taxonomy các biến thể con
 
@@ -282,10 +282,10 @@ Ngay ở 50% (một nửa số lệnh chấp nhận displacement yếu), tổng 
 
 | Mistake liên quan | Cơ chế khuếch đại lẫn nhau | Mức nguy hiểm tổ hợp |
 |---|---|---|
-| [[06 - Mistake - Not Have Market Structure Shift]] | Weak displacement là nguyên nhân trực tiếp sinh ra weak MSS (đã nêu rõ trong mục 1 của note gốc) — đây là quan hệ nhân-quả một chiều, không chỉ tương quan | **Rất cao — quan hệ nhân quả trực tiếp** |
-| [[10 - Mistake - FVG Not Valid]] | FVG hình thành từ displacement yếu thường mỏng, dễ bị lấp và không đáng tin làm POI — cùng nguồn gốc dữ liệu vi cấu trúc yếu | **Rất cao — cùng gốc rễ** |
-| [[03 - Mistake - Entry When MSS not in POI Zone]] | Nếu MSS đã yếu (từ displacement yếu) VÀ còn không nằm trong đúng POI zone, hai lỗi cộng dồn thành một entry gần như không có cơ sở cấu trúc nào cả | Cao |
-| [[07 - Mistake - Risk more than 0.5% total account]] | Tự tin sai (tưởng đã có MSS xác nhận) dẫn tới tăng size — nhân đôi cả xác suất thua và độ lớn thiệt hại (xem 11.3) | Cao |
+| [[06-Mistake-Not-Have-Market-Structure-Shift]] | Weak displacement là nguyên nhân trực tiếp sinh ra weak MSS (đã nêu rõ trong mục 1 của note gốc) — đây là quan hệ nhân-quả một chiều, không chỉ tương quan | **Rất cao — quan hệ nhân quả trực tiếp** |
+| [[10-Mistake-FVG-Not-Valid]] | FVG hình thành từ displacement yếu thường mỏng, dễ bị lấp và không đáng tin làm POI — cùng nguồn gốc dữ liệu vi cấu trúc yếu | **Rất cao — cùng gốc rễ** |
+| [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] | Nếu MSS đã yếu (từ displacement yếu) VÀ còn không nằm trong đúng POI zone, hai lỗi cộng dồn thành một entry gần như không có cơ sở cấu trúc nào cả | Cao |
+| [[07-Mistake-Risk-more-than-0.5-total-account]] | Tự tin sai (tưởng đã có MSS xác nhận) dẫn tới tăng size — nhân đôi cả xác suất thua và độ lớn thiệt hại (xem 11.3) | Cao |
 
 > [!question] Tổ hợp nguy hiểm nhất
 > **Weak displacement + Weak MSS + FVG Not Valid** tạo thành một "chuỗi domino" hoàn chỉnh: một cú đẩy yếu (không đủ tiêu chí) → được coi là MSS (dù chưa đủ bằng chứng) → tạo ra FVG mỏng/không đáng tin → entry tại FVG đó. Đây là kịch bản một lệnh trông "đầy đủ mechanics" (có sweep, có MSS, có FVG) trên giấy tờ nhưng KHÔNG có một mắt xích nào thực sự vững — vì tất cả đều thừa hưởng sự yếu từ gốc.
@@ -351,9 +351,9 @@ Phe Phản đối đúng có điều kiện: KHI trader đã ghi log đủ `cont
    **Falsification test:** Nếu trader có quyền truy cập dữ liệu volume/order flow thật (ví dụ qua một số nền tảng có footprint chart), so sánh trực tiếp: displacement đạt 5/5 tiêu chí price action có luôn tương ứng với volume/delta cao thật không? Nếu có sự trùng khớp cao (>70-80%), 5 tiêu chí là proxy tốt; nếu trùng khớp thấp, cần bổ sung nguồn dữ liệu khác.
 
 4. **Đòn tấn công:** "Định nghĩa 'off-session' (mục 5.6) mơ hồ đến mức không falsifiable — ranh giới giữa kill zone và off-session không rõ ràng ở các phiên chuyển giao (London-NY overlap kết thúc lúc nào chính xác?), khiến rule dễ bị áp dụng chọn lọc sau khi biết kết quả."
-   **Cơ sở của đòn tấn công:** Đúng một phần — note liệt kê "London Open, NY Open" và tham chiếu [[18 - Kill Zones]]/[[40 - Macro Times]] nhưng không tự nó định nghĩa lại ranh giờ chính xác (theo giờ server nào, múi giờ nào) ngay trong note này, khiến việc áp dụng phụ thuộc vào một note khác.
-   **Phản bác trung thực:** Phản bác được phần lớn — ranh giờ kill zone ĐÃ được định nghĩa cụ thể ở note nguồn [[18 - Kill Zones]] (không phải một khái niệm bị bỏ ngỏ hoàn toàn), nên đây là vấn đề về việc thiếu link/tham chiếu chéo tường minh trong note này, không phải một lỗ hổng khái niệm thật. Phần chưa đáp được: vùng chuyển giao giữa các kill zone (ví dụ 15-30 phút quanh giờ đóng London) vẫn là vùng xám không được note nào minh định rõ.
-   **Falsification test:** Đối chiếu trực tiếp [[18 - Kill Zones]] để xác nhận ranh giờ chính xác, thêm một dòng tham chiếu chéo tường minh vào note này; với vùng chuyển giao, backtest riêng nhóm "displacement trong 30 phút quanh ranh kill zone" để xem có cần một tier tin cậy trung gian hay không.
+   **Cơ sở của đòn tấn công:** Đúng một phần — note liệt kê "London Open, NY Open" và tham chiếu [[18-Kill-Zones]]/[[40-Macro-Times]] nhưng không tự nó định nghĩa lại ranh giờ chính xác (theo giờ server nào, múi giờ nào) ngay trong note này, khiến việc áp dụng phụ thuộc vào một note khác.
+   **Phản bác trung thực:** Phản bác được phần lớn — ranh giờ kill zone ĐÃ được định nghĩa cụ thể ở note nguồn [[18-Kill-Zones]] (không phải một khái niệm bị bỏ ngỏ hoàn toàn), nên đây là vấn đề về việc thiếu link/tham chiếu chéo tường minh trong note này, không phải một lỗ hổng khái niệm thật. Phần chưa đáp được: vùng chuyển giao giữa các kill zone (ví dụ 15-30 phút quanh giờ đóng London) vẫn là vùng xám không được note nào minh định rõ.
+   **Falsification test:** Đối chiếu trực tiếp [[18-Kill-Zones]] để xác nhận ranh giờ chính xác, thêm một dòng tham chiếu chéo tường minh vào note này; với vùng chuyển giao, backtest riêng nhóm "displacement trong 30 phút quanh ranh kill zone" để xem có cần một tier tin cậy trung gian hay không.
 
 **Bảng tổng hợp — đòn nào note hiện tại CHƯA đỡ được:**
 
@@ -362,7 +362,7 @@ Phe Phản đối đúng có điều kiện: KHI trader đã ghi log đủ `cont
 | 1 | Ngưỡng 60-70%/1.5-2x ATR là tùy ý, chưa tối ưu | Không đỡ được hoàn toàn | Backtest nhiều ngưỡng khác nhau, tìm điểm gãy expectancy thật |
 | 2 | Bộ lọc nhị phân FVG chưa xử lý FVG quá mỏng | Đỡ được một phần | Thêm ngưỡng độ rộng FVG tối thiểu (theo % ATR) |
 | 3 | 5 tiêu chí là proxy price action, không phải order flow thật | Đỡ được một phần (thừa nhận giới hạn) | Đối chiếu với dữ liệu volume/footprint nếu có quyền truy cập |
-| 4 | "Off-session" chưa được định nghĩa ranh giờ tường minh trong chính note | Đỡ được phần lớn | Thêm tham chiếu chéo cụ thể tới [[18 - Kill Zones]], backtest vùng chuyển giao |
+| 4 | "Off-session" chưa được định nghĩa ranh giờ tường minh trong chính note | Đỡ được phần lớn | Thêm tham chiếu chéo cụ thể tới [[18-Kill-Zones]], backtest vùng chuyển giao |
 
 ---
 
@@ -483,7 +483,7 @@ Tự kiểm toán note gốc theo chuẩn Doctrine v2: **Evidence Tier hiện t�
 
 **Phân tích cả hai cách xử lý:**
 - **Xử lý A — Tin tưởng đầy đủ vì đạt 5/5 tiêu chí kỹ thuật:** vào lệnh full size 0.5% theo đúng displacement, chấp nhận rủi ro tin tức có thể đảo ngược hoàn toàn trong vài phút.
-- **Xử lý B — Hạ tier tin cậy vì sắp có tin lớn (áp dụng logic Bias Tier A/B/C từ [[09 - Mistake - Wrong daily bias]] mục 5.1 sang bối cảnh displacement):** giảm size xuống 0.25% hoặc đứng ngoài hoàn toàn cho tới sau khi tin ra và thị trường "chọn hướng" thật.
+- **Xử lý B — Hạ tier tin cậy vì sắp có tin lớn (áp dụng logic Bias Tier A/B/C từ [[09-Mistake-Wrong-daily-bias]] mục 5.1 sang bối cảnh displacement):** giảm size xuống 0.25% hoặc đứng ngoài hoàn toàn cho tới sau khi tin ra và thị trường "chọn hướng" thật.
 
 **Tiêu chí tie-break:** Về nguyên tắc, 5 tiêu chí trong note gốc đo **chất lượng nến đã hình thành**, nhưng không đo **độ bền vững dự kiến** của displacement đó trước một cú sốc thanh khoản sắp tới đã biết trước lịch. Đây là hai câu hỏi khác nhau: "cú đẩy này có mạnh không" (5 tiêu chí trả lời tốt) và "cú đẩy này có đáng tin để giữ vị thế qua sự kiện tin tức không" (5 tiêu chí không trả lời được, cần thêm lớp lọc `session_context`/lịch tin). Xử lý B đúng hơn vì tuân thủ đúng tinh thần mục 5.6 (hạ tin cậy off-context) mở rộng sang trường hợp tin tức, không chỉ giờ giấc thông thường.
 
@@ -502,6 +502,6 @@ Tự kiểm toán note gốc theo chuẩn Doctrine v2: **Evidence Tier hiện t�
 
 ## 16. Liên kết
 
-**Concepts:** [[35 - Aggressive Displacement Entry]] · [[41 - Change in State of Delivery]] · [[13 - FVG  - Fair Value Gap]] · [[21 - Liquidity Void]] · [[21 - Market Structure Shift]] · [[05 - BOS - Break of Structure]] · [[18 - Kill Zones]] · [[40 - Macro Times]]
+**Concepts:** [[35-Aggressive-Displacement-Entry]] · [[41-Change-in-State-of-Delivery]] · [[13-FVG-Fair-Value-Gap]] · [[21-Liquidity-Void]] · [[21-Market-Structure-Shift]] · [[05-BOS-Break-of-Structure]] · [[18-Kill-Zones]] · [[40-Macro-Times]]
 
-**Mistakes liên quan:** [[06 - Mistake - Not Have Market Structure Shift]] · [[10 - Mistake - FVG Not Valid]] · [[03 - Mistake - Entry When MSS not in POI Zone]]
+**Mistakes liên quan:** [[06-Mistake-Not-Have-Market-Structure-Shift]] · [[10-Mistake-FVG-Not-Valid]] · [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]

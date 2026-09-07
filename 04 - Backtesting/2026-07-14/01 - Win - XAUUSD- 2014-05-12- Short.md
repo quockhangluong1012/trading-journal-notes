@@ -441,7 +441,7 @@ Distinguishing observable: liệu tại các đỉnh M5 "không FVG" của 3 l�
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI: [[13 - FVG  - Fair Value Gap]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]
-- Timing: [[18 - Kill Zones]]
+- POI: [[13-FVG-Fair-Value-Gap]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]
+- Timing: [[18-Kill-Zones]]
 - Dashboard: [[_Backtest Dashboard]]

@@ -52,7 +52,7 @@ common_mistakes:
 **Khái niệm:**
 Liquidity Sweep (còn gọi stop hunt, liquidity grab, stop raid) là khi giá di chuyển vượt qua một mức nơi tập trung lệnh chờ — đỉnh cũ, đáy cũ, equal highs/lows, hoặc đường xu hướng rõ ràng — để **kích hoạt** các lệnh đó, sau đó **đảo chiều**. Nhóm thanh khoản bị quét chính là "nhiên liệu": stop loss của trader đang giữ lệnh + breakout order của trader mới vào, cộng lại tạo đủ khối lượng đối ứng để smart money khớp lệnh lớn của họ.
 
-**Bản chất:** thị trường di chuyển từ một pool liquidity này tới một pool liquidity khác. Trước khi đẩy giá đi xa, market thường **lấy thanh khoản ở phía gần** (quét đỉnh/đáy gần nhất) để (1) gom lệnh đối ứng và (2) "đánh lừa" đám đông vào sai hướng. Sweep là khoảnh khắc manipulation trong chu kỳ [[02 - AMD]].
+**Bản chất:** thị trường di chuyển từ một pool liquidity này tới một pool liquidity khác. Trước khi đẩy giá đi xa, market thường **lấy thanh khoản ở phía gần** (quét đỉnh/đáy gần nhất) để (1) gom lệnh đối ứng và (2) "đánh lừa" đám đông vào sai hướng. Sweep là khoảnh khắc manipulation trong chu kỳ [[02-AMD]].
 
 **Sweep vs Break (cực kỳ quan trọng):**
 - **Sweep:** giá xuyên qua mức bằng **bóng nến (wick)** hoặc xuyên rồi nhanh chóng bị kéo lại, **đóng nến trở lại bên trong** vùng, kèm displacement ngược → liquidity đã bị lấy, giá đảo chiều.
@@ -179,7 +179,7 @@ Phần lớn trader thua lỗ vì họ **là** thanh khoản: họ đặt stop n
 > 4. **Đáy/đỉnh sweep ở đâu để đặt stop, và target liquidity phía đối diện ở đâu?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
+- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
 - **Pool liquidity HTF:** đánh dấu PDH/PDL, PWH/PWL, equal highs/lows lớn — đây là các mức dễ bị sweep và là draw on liquidity.
 - **Draw on liquidity:** giá đang bị hút về pool nào? Sweep ở phía ngược thường mở ra leg đi về pool đó.
 
@@ -356,11 +356,11 @@ Hai biến số của mọi cú xuyên mức: **đi sâu bao nhiêu** và **ở 
 | Sâu, càng đi càng **tăng tốc** | Nhiều nến, pullback không reclaim | **Không phải sweep** — có sponsor thật phía sau cú phá; đây là expansion/break; cấm bắt đảo |
 | Sâu nhưng **giảm tốc** rồi đứng im | Nhiều nến lình xình ngoài mức | Chưa phân định — chờ; thường kết thúc bằng một trong hai kịch bản trên |
 
-Thước đo bổ trợ: chiếu **standard deviation của Asia range / CBDR** ([[31 - Standard Deviation]], [[08 - Central Bank Dealers Range]]) — manipulation leg của London thường dừng quanh 1–2 SD dưới/trên range; cú quét chạy vượt xa 2.5–3 SD mà chưa quay lại là cảnh báo mạnh rằng đây không còn là manipulation. Tốc độ quan trọng hơn độ sâu: **stop run thật rời khỏi hiện trường ngay** — nến sau sweep phải là displacement; sự do dự chính là thông tin phủ định.
+Thước đo bổ trợ: chiếu **standard deviation của Asia range / CBDR** ([[31-Standard-Deviation]], [[08-Central-Bank-Dealers-Range]]) — manipulation leg của London thường dừng quanh 1–2 SD dưới/trên range; cú quét chạy vượt xa 2.5–3 SD mà chưa quay lại là cảnh báo mạnh rằng đây không còn là manipulation. Tốc độ quan trọng hơn độ sâu: **stop run thật rời khỏi hiện trường ngay** — nến sau sweep phải là displacement; sự do dự chính là thông tin phủ định.
 
 ### 7.4. Turtle Soup — đóng gói sweep thành một model hoàn chỉnh
 
-[[33 - Turtle Soup]] là phiên bản model hóa của liquidity sweep: nguồn gốc từ việc trade ngược tín hiệu breakout 20-day high/low của hệ thống Turtle — tức **chuyên săn false breakout tại các mức ai-cũng-nhìn**. Bản ICT hiện đại:
+[[33-Turtle-Soup]] là phiên bản model hóa của liquidity sweep: nguồn gốc từ việc trade ngược tín hiệu breakout 20-day high/low của hệ thống Turtle — tức **chuyên săn false breakout tại các mức ai-cũng-nhìn**. Bản ICT hiện đại:
 
 ```text
 Turtle Soup Long (đối xứng cho Short):
@@ -647,7 +647,7 @@ Ba cơ chế này giải thích luôn các W bên dưới: reclaim doji = trận
 ## 14. Phân định ranh giới: Liquidity Sweep vs Inducement vs MSS
 
 > [!danger] Góc nhìn từ Liquidity Sweep — vì sao "sweep" là từ bị lạm dụng nhiều nhất trong ba khái niệm
-> Trong thực chiến, "sweep" thường bị dùng như một từ chung cho MỌI cú giá xuyên qua một mức rồi quay lại — bất kể đó là quét mồi trung gian (Inducement) hay quét pool chính dẫn tới đảo chiều thật. Bài phân định đầy đủ nằm ở [[21 - Market Structure Shift]] mục 16; ở đây nhấn vào điểm mà Liquidity Sweep dễ bị hiểu sai nhất — **sweep là một HÀNH ĐỘNG xuất hiện ở cả hai vai trò (mồi và pool chính), không tự nó cho biết vai trò nào**.
+> Trong thực chiến, "sweep" thường bị dùng như một từ chung cho MỌI cú giá xuyên qua một mức rồi quay lại — bất kể đó là quét mồi trung gian (Inducement) hay quét pool chính dẫn tới đảo chiều thật. Bài phân định đầy đủ nằm ở [[21-Market-Structure-Shift]] mục 16; ở đây nhấn vào điểm mà Liquidity Sweep dễ bị hiểu sai nhất — **sweep là một HÀNH ĐỘNG xuất hiện ở cả hai vai trò (mồi và pool chính), không tự nó cho biết vai trò nào**.
 
 **Câu hỏi cốt lõi mà Liquidity Sweep trả lời:** *"Giá VỪA lấy thanh khoản ở đâu, và cú lấy đó có displacement + reclaim hợp lệ không?"* — đây là một quan sát HÀNH ĐỘNG, xác nhận SAU KHI nến đã đóng. Sweep không tự phân loại "đây là mồi" hay "đây là điểm đảo" — việc phân loại đó phụ thuộc vào VỊ TRÍ của pool bị quét (đây chính là câu hỏi mà Inducement trả lời) và liệu có MSS xác nhận đảo chiều theo sau không (câu hỏi mà MSS trả lời).
 
@@ -851,7 +851,7 @@ Ba lần dùng đúng một từ "sweep" nhưng ý nghĩa hoàn toàn khác — 
 
 ### Case Study D — ETHUSD, Long sau SSL Sweep đơn-lệnh (single-poke) xác nhận KHÔNG phải liquidation cascade
 
-**Bối cảnh HTF:** ETHUSD, chiều thứ Ba (thanh khoản bình thường trong tuần, không phải cuối tuần — chủ đích chọn khung giờ này để tương phản với Case Study D của [[15 - Inducement]], nơi bối cảnh là tối thứ Bảy thanh khoản mỏng), Daily Bias Bullish sau khi giá giữ vững trên D1 bullish OB 2 ngày liên tiếp. Giá quanh 3,180.
+**Bối cảnh HTF:** ETHUSD, chiều thứ Ba (thanh khoản bình thường trong tuần, không phải cuối tuần — chủ đích chọn khung giờ này để tương phản với Case Study D của [[15-Inducement]], nơi bối cảnh là tối thứ Bảy thanh khoản mỏng), Daily Bias Bullish sau khi giá giữ vững trên D1 bullish OB 2 ngày liên tiếp. Giá quanh 3,180.
 
 **Setup:** khác với kịch bản multi-poke equal-highs đã dùng ở Inducement Case Study D, đây là một pool ĐƠN LẺ (single old low, không phải equal lows dày) tại SSL 3,142 — đáy phiên Á duy nhất, chỉ chạm 1 lần trước đó. H1 bullish OB nằm ngay trên pool này tại 3,145-3,158.
 

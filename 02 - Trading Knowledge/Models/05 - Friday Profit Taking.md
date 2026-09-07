@@ -42,7 +42,7 @@ updated: 2026-07-28
 Friday Profit-Taking là quan sát của ICT về **chu kỳ biên độ trong tuần (weekly range profile)**: thị trường thường mở rộng biên độ và lập **high/low của tuần vào giữa tuần** (Tuesday–Thursday, đặc biệt quanh London/NY), còn **thứ Sáu** có xu hướng **chốt lời và hồi về weekly opening price** (mean reversion) khi smart money đóng vị thế trước cuối tuần. Vì vậy thứ Sáu mang tính **co lại / đảo nhẹ** hơn là tạo trend mới.
 
 **Ý tưởng cốt lõi:**
-1. **Weekly range thường chín giữa tuần:** Tue–Wed hay tạo đỉnh/đáy tuần (xem [[03- One Shot One Kill Trading Model]] về weekly bias).
+1. **Weekly range thường chín giữa tuần:** Tue–Wed hay tạo đỉnh/đáy tuần (xem [[03 - One Shot One Kill Trading Model]] về weekly bias).
 2. **Thứ Sáu = profit-taking:** dòng tiền lớn đóng bớt vị thế → giá thường **hồi về weekly open** hoặc đi ngang.
 3. **Reversion > expansion:** kỳ vọng mặc định của thứ Sáu là hồi/đảo nhẹ, không phải bứt phá mạnh theo trend tuần.
 4. **Quản lý lệnh > mở mới:** thứ Sáu hợp để **chốt một phần / dời stop / đóng lệnh**, hơn là vào trend mới chiều muộn.
@@ -80,14 +80,14 @@ Nhiều trader trả lại lợi nhuận cả tuần vào thứ Sáu vì cố v�
 - Hành vi này không phải "cảm tính nghỉ cuối tuần" của trader nhỏ lẻ — nó là **quản trị rủi ro bắt buộc** ở cấp độ tổ chức (risk desk thường có giới hạn overnight/over-weekend exposure), và chính hành vi giảm vị thế đồng loạt này tạo ra áp lực **mua lại (nếu đang short) hoặc bán ra (nếu đang long)** — về bản chất là một lực **mean-reversion tự nhiên** đẩy giá về gần điểm cân bằng của tuần (weekly open).
 
 **Power of Three ở cấp độ tuần (Weekly AMD):**
-- Áp dụng ý tưởng AMD ([[02 - AMD]]) lên khung tuần: **Monday** thường đóng vai **Accumulation** (dò dẫm, range hẹp, ít commit hướng); **Tuesday–Thursday** đóng vai **Manipulation → Distribution** (nơi đỉnh/đáy tuần thật sự được lập và trend chính của tuần diễn ra); **Friday** đóng vai một dạng **"re-accumulation/consolidation"** trước khi chu kỳ tuần mới bắt đầu vào Monday tuần sau.
+- Áp dụng ý tưởng AMD ([[02-AMD]]) lên khung tuần: **Monday** thường đóng vai **Accumulation** (dò dẫm, range hẹp, ít commit hướng); **Tuesday–Thursday** đóng vai **Manipulation → Distribution** (nơi đỉnh/đáy tuần thật sự được lập và trend chính của tuần diễn ra); **Friday** đóng vai một dạng **"re-accumulation/consolidation"** trước khi chu kỳ tuần mới bắt đầu vào Monday tuần sau.
 - Nhìn theo khung này, thứ Sáu về bản chất **không phải "ngày tệ để trade"**, mà là ngày mà thị trường đang **tạm nghỉ và tái cân bằng** sau khi đã "phân phối" xong phần lớn move của tuần — đây chính là lý do reversion về weekly open (điểm cân bằng) là hành vi hợp lý về mặt cấu trúc, không phải ngẫu nhiên.
 
 **Vì sao "Weekly Opening Price" là mốc reversion, không phải một mức bất kỳ:**
-- Xem [[24 - New Week Opening Gap]]: giá mở cửa tuần (thường là giờ mở cửa phiên Á tối Chủ Nhật) được ICT xem như một mốc cân bằng quan trọng — nhiều thuật toán và mô hình định giá dùng nó làm điểm tham chiếu "công bằng" trước khi tuần bắt đầu commit hướng. Khi dòng tiền lớn giảm exposure cuối tuần, giá có xu hướng bị kéo về gần mốc này vì đó là nơi ít "thiên vị" hướng nhất trong tuần.
+- Xem [[24-New-Week-Opening-Gap]]: giá mở cửa tuần (thường là giờ mở cửa phiên Á tối Chủ Nhật) được ICT xem như một mốc cân bằng quan trọng — nhiều thuật toán và mô hình định giá dùng nó làm điểm tham chiếu "công bằng" trước khi tuần bắt đầu commit hướng. Khi dòng tiền lớn giảm exposure cuối tuần, giá có xu hướng bị kéo về gần mốc này vì đó là nơi ít "thiên vị" hướng nhất trong tuần.
 
 **Áp dụng thực dụng của lý thuyết này:**
-- Luôn đánh dấu Weekly Opening Price ngay từ đầu tuần (xem [[24 - New Week Opening Gap]]) — đây là mốc bạn sẽ dùng để đánh giá "đã reversion đủ chưa" vào thứ Sáu.
+- Luôn đánh dấu Weekly Opening Price ngay từ đầu tuần (xem [[24-New-Week-Opening-Gap]]) — đây là mốc bạn sẽ dùng để đánh giá "đã reversion đủ chưa" vào thứ Sáu.
 - Đừng áp dụng máy móc: nếu tuần đó có catalyst lớn rơi đúng vào thứ Sáu (NFP, CPI, FOMC, phát biểu bất ngờ), quy tắc quản trị rủi ro tổ chức có thể bị ghi đè bởi phản ứng tức thời với tin — đây là lúc nên xử lý như "ngày tin", không áp giả định reversion.
 - Hiểu cơ chế này giúp bạn **tự tin chốt lời sớm hơn** thay vì cố nán lại "ăn thêm" vào thứ Sáu chiều muộn, khi biết rằng chính dòng vốn lớn cũng đang làm điều tương tự.
 
@@ -99,15 +99,15 @@ Nhiều trader trả lại lợi nhuận cả tuần vào thứ Sáu vì cố v�
 
 | Ngày | Thiên hướng điển hình | Khái niệm liên kết | Câu hỏi kiểm tra |
 |---|---|---|---|
-| Mon | Tích lũy / dò dẫm (Accumulation) | [[12 - Daily Bias]], [[24 - New Week Opening Gap]] | Weekly open ở đâu? |
-| Tue–Wed | Mở rộng, hay lập high/low tuần (Manipulation→Distribution) | [[18 - Kill Zones]], [[19 - Liquidity]] | Đỉnh/đáy tuần đã lập? |
-| Thu | Mở rộng tiếp / phân phối | [[20 - Liquidity Sweep]] | Đã quét pool tuần chưa? |
-| **Fri** | **Profit-taking, hồi về weekly open (re-accumulation)** | [[27 - Premium Discount]] | Có nên chốt/đóng không? |
+| Mon | Tích lũy / dò dẫm (Accumulation) | [[12-Daily-Bias]], [[24-New-Week-Opening-Gap]] | Weekly open ở đâu? |
+| Tue–Wed | Mở rộng, hay lập high/low tuần (Manipulation→Distribution) | [[18-Kill-Zones]], [[19-Liquidity]] | Đỉnh/đáy tuần đã lập? |
+| Thu | Mở rộng tiếp / phân phối | [[20-Liquidity-Sweep]] | Đã quét pool tuần chưa? |
+| **Fri** | **Profit-taking, hồi về weekly open (re-accumulation)** | [[27-Premium-Discount]] | Có nên chốt/đóng không? |
 
 ### Biến thể thường gặp
-- **+ Weekly bias (OSOK):** nếu mục tiêu tuần đã đạt giữa tuần, thứ Sáu chỉ để quản lý ([[03- One Shot One Kill Trading Model]]).
-- **+ AMD:** thứ Sáu thường nằm ở pha distribution/redistribution của tuần ([[02 - AMD]]).
-- **+ Weekly open reference:** dùng weekly opening price ([[24 - New Week Opening Gap]]) làm mốc reversion để canh chốt lời.
+- **+ Weekly bias (OSOK):** nếu mục tiêu tuần đã đạt giữa tuần, thứ Sáu chỉ để quản lý ([[03 - One Shot One Kill Trading Model]]).
+- **+ AMD:** thứ Sáu thường nằm ở pha distribution/redistribution của tuần ([[02-AMD]]).
+- **+ Weekly open reference:** dùng weekly opening price ([[24-New-Week-Opening-Gap]]) làm mốc reversion để canh chốt lời.
 - **Ngoại lệ tin tức:** thứ Sáu có NFP / dữ liệu lớn có thể tạo expansion thật — cần xét riêng.
 - **Ngoại lệ lịch:** thứ Sáu cuối tháng/cuối quý (month-end, quarter-end rebalancing) hoặc ngày đáo hạn phái sinh (quarterly/monthly expiry, đặc biệt ảnh hưởng NQ1/NDX) có thể tạo biến động bất thường không theo mẫu reversion thông thường.
 
@@ -201,7 +201,7 @@ Nhiều trader trả lại lợi nhuận cả tuần vào thứ Sáu vì cố v�
 > 4. **Có tin lớn hoặc sự kiện lịch đặc biệt thứ Sáu không (ngoại lệ expansion)?**
 
 ### W1 / D1 — Weekly Range & Open
-- **Weekly opening price:** mốc reversion chính ([[24 - New Week Opening Gap]]).
+- **Weekly opening price:** mốc reversion chính ([[24-New-Week-Opening-Gap]]).
 - **Đỉnh/đáy tuần:** đã lập chưa, ở premium hay discount.
 - **Mục tiêu tuần:** đã đạt phần lớn chưa.
 
@@ -417,7 +417,7 @@ Mười hai tình huống dưới đây là những chỗ giả định "thứ S
 
 1. **Chấm điểm range maturity theo 4 tiêu chí TRƯỚC phiên Á, không cảm tính.** "Tuần này có vẻ chạy nhiều rồi" là một cảm giác, không phải một quyết định. Hãy chấm cụ thể: % AWR đã đi, đỉnh/đáy tuần đã lập chưa (có MSS + displacement thật không), pool chính đã quét chưa, có ngoại lệ lịch không — rồi để điểm số quyết định kịch bản thứ Sáu, không để nhịp giá giữa phiên quyết định hộ.
 
-2. **Đánh dấu weekly open ngay đầu tuần làm mốc reversion.** Weekly opening price ([[24 - New Week Opening Gap]]) là mốc bạn dùng để trả lời "đã reversion đủ chưa" vào thứ Sáu. Vẽ nó từ tối Chủ Nhật/đầu Monday — đợi tới thứ Sáu mới đi tìm mốc là đã muộn và dễ vẽ theo thiên kiến.
+2. **Đánh dấu weekly open ngay đầu tuần làm mốc reversion.** Weekly opening price ([[24-New-Week-Opening-Gap]]) là mốc bạn dùng để trả lời "đã reversion đủ chưa" vào thứ Sáu. Vẽ nó từ tối Chủ Nhật/đầu Monday — đợi tới thứ Sáu mới đi tìm mốc là đã muộn và dễ vẽ theo thiên kiến.
 
 3. **Kiểm tra CẢ lịch tin VÀ lịch phái sinh/quỹ trước mỗi thứ Sáu.** Nhiều lần "reversion thất bại khó hiểu" thực ra là do một ngoại lệ lịch mà trader không tra: một NFP, một ngày month-end, hoặc một phiên đáo hạn. Dành 5 phút tra cả hai loại lịch là rẻ hơn nhiều so với một lệnh fade vào ngày sai.
 
@@ -449,9 +449,9 @@ Mười hai tình huống dưới đây là những chỗ giả định "thứ S
 
 ![[FridayPT-Advanced-CaseStudy-Win.svg|720]]
 
-**Chuỗi:** Tuần bullish. Đỉnh tuần lập vào thứ Tư trong NY killzone với MSS + displacement rõ ([[20 - Liquidity Sweep]]), range maturity chấm được 4/4 và mục tiêu pips của tuần đã đạt. Sang thứ Sáu, giá **không phá đỉnh mới** mà hồi dần về weekly open ([[24 - New Week Opening Gap]]), nhịp nhỏ và choppy — đúng chế độ profit-taking. Trader chốt nốt lệnh đang lãi và không mở lệnh mới.
+**Chuỗi:** Tuần bullish. Đỉnh tuần lập vào thứ Tư trong NY killzone với MSS + displacement rõ ([[20-Liquidity-Sweep]]), range maturity chấm được 4/4 và mục tiêu pips của tuần đã đạt. Sang thứ Sáu, giá **không phá đỉnh mới** mà hồi dần về weekly open ([[24-New-Week-Opening-Gap]]), nhịp nhỏ và choppy — đúng chế độ profit-taking. Trader chốt nốt lệnh đang lãi và không mở lệnh mới.
 
-**Chẩn đoán:** Đủ điều kiện reversion theo cả 4 tiêu chí ở mục 3, không có ngoại lệ lịch. Đây là ứng dụng của Weekly AMD ([[02 - AMD]]): tuần đã "distribute" xong phần lớn move, thứ Sáu chuyển sang re-accumulation quanh điểm cân bằng. `friday_action: take-profit`, `missing_step: none`. Hành động đúng = quản lý, không đuổi thêm.
+**Chẩn đoán:** Đủ điều kiện reversion theo cả 4 tiêu chí ở mục 3, không có ngoại lệ lịch. Đây là ứng dụng của Weekly AMD ([[02-AMD]]): tuần đã "distribute" xong phần lớn move, thứ Sáu chuyển sang re-accumulation quanh điểm cân bằng. `friday_action: take-profit`, `missing_step: none`. Hành động đúng = quản lý, không đuổi thêm.
 
 **Bài học:** Khi range đã chín và target đã đạt, nhiệm vụ của thứ Sáu là **bảo vệ thành quả**, không phải "ăn thêm". Hiểu cơ chế dòng vốn tổ chức giảm exposure cuối tuần giúp tự tin chốt sớm thay vì nán lại chờ một nhịp có thể không đến.
 
@@ -463,7 +463,7 @@ Mười hai tình huống dưới đây là những chỗ giả định "thứ S
 
 **Chẩn đoán:** `friday_action` sai — **vào lệnh mới mà không kiểm tra range maturity** và không xem lịch. `missing_step: range-maturity check + calendar check` bị bỏ qua. Đây chính là lỗi "trả lại lợi nhuận tuần" ở mục 10, xảy ra đúng lúc thị trường chuyển sang reversion + thanh khoản mỏng.
 
-**Bài học:** Khi range đã chín, chiều thứ Sáu là nơi reversion hay xảy ra nhất — đu trend muộn là đứng sai phía dòng tiền tổ chức đang giảm exposure. Nếu buộc phải trade, chỉ vào khi có chuỗi A+ đầu phiên đồng bias ([[03- One Shot One Kill Trading Model]]) và quản lý thật chặt, không FOMO cuối tuần.
+**Bài học:** Khi range đã chín, chiều thứ Sáu là nơi reversion hay xảy ra nhất — đu trend muộn là đứng sai phía dòng tiền tổ chức đang giảm exposure. Nếu buộc phải trade, chỉ vào khi có chuỗi A+ đầu phiên đồng bias ([[03 - One Shot One Kill Trading Model]]) và quản lý thật chặt, không FOMO cuối tuần.
 
 ### Case 3 — Ngoại lệ lịch: NFP thứ Sáu tạo expansion thật (bối cảnh sai)
 
@@ -471,7 +471,7 @@ Mười hai tình huống dưới đây là những chỗ giả định "thứ S
 
 **Chuỗi (gãy):** Trader áp máy móc niềm tin "thứ Sáu hay đảo" và đặt một lệnh fade ngược ngay gần đỉnh tuần, kỳ vọng giá hồi về weekly open. Nhưng hôm đó là thứ Sáu đầu tháng có **NFP** — nến tin tạo một cú expansion mạnh tiếp diễn theo hướng cũ, phá qua stop của lệnh fade thay vì hồi về như kỳ vọng.
 
-**Chẩn đoán:** `calendar_exception: nfp`. Tiêu chí 4 trong khung mục 3 bị vi phạm: có catalyst lớn → giả định reversion bị **vô hiệu hoàn toàn**, bất kể 3 tiêu chí đầu ra sao. Đúng ra phải xử lý như ngày tin — gác giả định Friday Profit-Taking cho tới khi phản ứng tin ổn định (30–60 phút) rồi mới đọc lại cấu trúc và premium/discount ([[27 - Premium Discount]]).
+**Chẩn đoán:** `calendar_exception: nfp`. Tiêu chí 4 trong khung mục 3 bị vi phạm: có catalyst lớn → giả định reversion bị **vô hiệu hoàn toàn**, bất kể 3 tiêu chí đầu ra sao. Đúng ra phải xử lý như ngày tin — gác giả định Friday Profit-Taking cho tới khi phản ứng tin ổn định (30–60 phút) rồi mới đọc lại cấu trúc và premium/discount ([[27-Premium-Discount]]).
 
 **Bài học:** Kiểm tra lịch TRƯỚC là bước không thể bỏ. Một ngoại lệ lịch đủ sức ghi đè toàn bộ thiên hướng thời gian; fade một ngày tin chỉ vì "thứ Sáu" là nhầm lẫn bối cảnh cơ bản nhất.
 
@@ -479,7 +479,7 @@ Mười hai tình huống dưới đây là những chỗ giả định "thứ S
 
 ![[FridayPT-Advanced-CaseStudy-NoTrade.svg|720]]
 
-**Chuỗi:** Tới hết thứ Năm, biên độ tuần mới đạt ~35% AWR, thị trường đi ngang/dò dẫm, chưa có đỉnh hay đáy tuần nào đủ mạnh và pool thanh khoản chính vẫn còn nguyên chưa bị quét ([[19 - Liquidity]]). Sang thứ Sáu, trader đứng ngoài, **không áp giả định reversion**, chỉ đánh dấu các pool BSL/SSL để chờ tuần sau.
+**Chuỗi:** Tới hết thứ Năm, biên độ tuần mới đạt ~35% AWR, thị trường đi ngang/dò dẫm, chưa có đỉnh hay đáy tuần nào đủ mạnh và pool thanh khoản chính vẫn còn nguyên chưa bị quét ([[19-Liquidity]]). Sang thứ Sáu, trader đứng ngoài, **không áp giả định reversion**, chỉ đánh dấu các pool BSL/SSL để chờ tuần sau.
 
 **Chẩn đoán:** Range **chưa chín** — không đạt 70–80% AWR, chưa có swing "đỉnh/đáy tuần" rõ, pool chính chưa động tới. `friday_action: no-trade`. Theo bảng quyết định ở mục 3, trạng thái 0–1/4 nghĩa là xử lý như ngày thường, không fade theo mẫu. Thị trường vẫn còn "muốn" đi tìm pool, kể cả bằng một cú bứt phá muộn.
 
@@ -523,14 +523,14 @@ Mười hai tình huống dưới đây là những chỗ giả định "thứ S
 ## 7. Entry model liên quan
 
 Khái niệm này thường kết hợp với:
-- [[12 - Daily Bias]]
-- [[19 - Liquidity]]
-- [[20 - Liquidity Sweep]]
-- [[27 - Premium Discount]]
-- [[18 - Kill Zones]]
-- [[02 - AMD]]
-- [[24 - New Week Opening Gap]]
-- [[03- One Shot One Kill Trading Model]]
+- [[12-Daily-Bias]]
+- [[19-Liquidity]]
+- [[20-Liquidity-Sweep]]
+- [[27-Premium-Discount]]
+- [[18-Kill-Zones]]
+- [[02-AMD]]
+- [[24-New-Week-Opening-Gap]]
+- [[03 - One Shot One Kill Trading Model]]
 - [[01 - ICT 2022 Model]]
 
 ### Sequence mẫu — Friday quản lý
@@ -544,7 +544,7 @@ Khái niệm này thường kết hợp với:
 ```
 
 > [!note]
-> Friday Profit-Taking ghép tốt với [[03- One Shot One Kill Trading Model]]: nếu đã "bắn" và đạt mục tiêu tuần giữa tuần, thứ Sáu chỉ còn nhiệm vụ quản lý và bảo vệ thành quả.
+> Friday Profit-Taking ghép tốt với [[03 - One Shot One Kill Trading Model]]: nếu đã "bắn" và đạt mục tiêu tuần giữa tuần, thứ Sáu chỉ còn nhiệm vụ quản lý và bảo vệ thành quả.
 
 ---
 
@@ -556,7 +556,7 @@ Khái niệm này thường kết hợp với:
 ### Quy trình pre-Friday — chấm điểm range maturity trước khi phiên châu Á/London mở
 
 - Tối thứ Năm hoặc sáng sớm thứ Sáu (trước phiên Á), dành 10–15 phút:
-  1. Xác nhận weekly opening price (mốc reversion — [[24 - New Week Opening Gap]]).
+  1. Xác nhận weekly opening price (mốc reversion — [[24-New-Week-Opening-Gap]]).
   2. Chấm điểm 4 tiêu chí "range maturity" ở mục 3 (AWR đã đi %, đỉnh/đáy tuần đã lập chưa, đã sweep pool chính chưa, có ngoại lệ lịch không).
   3. Kiểm tra lịch kinh tế (NFP/CPI/FOMC) VÀ lịch phái sinh/quỹ (month-end, quarter-end, đáo hạn) cho riêng thứ Sáu đó.
   4. Viết sẵn kế hoạch quản lý cho các lệnh đang mở: chốt bao nhiêu %, dời stop về đâu, điều kiện nào thì đóng hết.
@@ -660,7 +660,7 @@ Khái niệm này thường kết hợp với:
 
 ### Q4
 **Hỏi:** Mốc giá tham chiếu cho reversion thứ Sáu là gì?
-**Đáp:** Weekly opening price (giá mở cửa tuần) — xem [[24 - New Week Opening Gap]].
+**Đáp:** Weekly opening price (giá mở cửa tuần) — xem [[24-New-Week-Opening-Gap]].
 
 ### Q5
 **Hỏi:** Vì sao dòng vốn tổ chức có xu hướng giảm exposure trước cuối tuần?

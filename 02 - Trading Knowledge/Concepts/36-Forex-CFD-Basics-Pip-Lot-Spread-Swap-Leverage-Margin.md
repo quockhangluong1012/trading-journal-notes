@@ -889,9 +889,9 @@ Một trong những nhầm lẫn phổ biến nhất ở trader mới là quy m�
 > Pip, lot, spread, swap, leverage, margin không phải các khái niệm rời rạc — chúng tương tác với nhau và với mô hình broker (MM/STP/ECN) để tạo thành TỔNG CHI PHÍ THẬT của một chiến lược. Một chiến lược "có edge" trên giấy có thể trở thành không có edge trong thực tế nếu chi phí hạ tầng bị bỏ qua, và ngược lại, một chiến lược tưởng chừng cận biên có thể vẫn khả thi nếu chọn đúng loại tài khoản và quản lý đúng các edge case đã liệt kê ở mục D.
 
 **Liên kết chéo quan trọng:**
-- [[35 - Aggressive Displacement Entry]] — để hiểu vì sao SL chặt của setup này đặc biệt nhạy với chi phí spread/slippage đã phân tích ở đây.
-- [[37 - Re-mapping Dealing Range sau Displacement]] — các vùng entry mới sau displacement cũng cần được đánh giá qua lăng kính chi phí giao dịch thật, không chỉ cấu trúc giá.
-- [[38 - Liquidity Reflexivity ( Bẫy đám đông ICT )]] — liên hệ với ý tưởng rằng chính hành vi đặt SL tập trung của đám đông retail (không chỉ đám đông ICT) là một phần nguồn cơn của các cú "sweep giả" đã phân tích ở mục D2.
+- [[35-Aggressive-Displacement-Entry]] — để hiểu vì sao SL chặt của setup này đặc biệt nhạy với chi phí spread/slippage đã phân tích ở đây.
+- [[37-Re-mapping-Dealing-Range-sau-Displacement]] — các vùng entry mới sau displacement cũng cần được đánh giá qua lăng kính chi phí giao dịch thật, không chỉ cấu trúc giá.
+- [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] — liên hệ với ý tưởng rằng chính hành vi đặt SL tập trung của đám đông retail (không chỉ đám đông ICT) là một phần nguồn cơn của các cú "sweep giả" đã phân tích ở mục D2.
 
 > [!info] Ghi chú cuối
 > Phần Deep Dive này được viết dựa trên kinh nghiệm live trade và hiểu biết chung về cấu trúc thị trường CFD/forex, không trích dẫn số liệu thống kê hoặc mức phí/spread chính xác của bất kỳ broker cụ thể nào.

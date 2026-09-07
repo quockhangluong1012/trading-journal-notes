@@ -380,9 +380,9 @@ Note không có `fvg_high`/`fvg_low`/`ce_price` do lỗi typo bounds gốc ("1.3
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI ladder: [[13 - FVG  - Fair Value Gap]] · [[25 - OB - Order Block]]
-- Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[26 - OTE - Optimal Trade Entry]] · [[27 - Premium Discount]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]
+- POI ladder: [[13-FVG-Fair-Value-Gap]] · [[25-OB-Order-Block]]
+- Entry refine: [[10-Consequent-Encroachment-Mean-Threshold]] · [[26-OTE-Optimal-Trade-Entry]] · [[27-Premium-Discount]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]
 - Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]
 - Mistakes: [[Mistake - Chase Displacement]] · [[Mistake - Skip Liquidity Sweep]]
 

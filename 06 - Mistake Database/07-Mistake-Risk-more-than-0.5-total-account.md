@@ -331,7 +331,7 @@ Xét theo khung AMD (Accumulation – Manipulation – Distribution) áp dụng 
 
 *Ghi chú: cột xác suất là ước tính định hướng dựa trên logic random-walk drawdown, KHÔNG phải kết quả mô phỏng chạy thật — cần chạy Monte Carlo thật với đúng phân phối RR/winrate của trader để có con số chính xác.* Xu hướng quan trọng hơn con số tuyệt đối: xác suất chạm rào cản **tăng nhanh hơn tuyến tính** khi tần suất vi phạm tăng, vì các lệnh risk cao có xác suất rơi vào đúng chuỗi thua ngẫu nhiên không hề giảm đi.
 
-**Chi phí kép khi risk-vượt đi cùng mistake khác:** nếu lỗi này xảy ra đồng thời với [[01 - Mistake - Emotional revenge trade]] (revenge sizing sau thua) — hai lỗi không cộng dồn tuyến tính mà **nhân với nhau**: revenge trade thường đi kèm entry vội (bỏ qua checklist sweep/MSS/FVG) nên winrate của riêng nhóm lệnh này thấp hơn baseline (giả định 30% thay vì 45%) VÀ risk cao hơn (2% thay vì 0.5%) cùng lúc — expectancy của tổ hợp này thường **âm rõ rệt**, không chỉ "kém hơn một chút":
+**Chi phí kép khi risk-vượt đi cùng mistake khác:** nếu lỗi này xảy ra đồng thời với [[01-Mistake-Emotional-revenge-trade]] (revenge sizing sau thua) — hai lỗi không cộng dồn tuyến tính mà **nhân với nhau**: revenge trade thường đi kèm entry vội (bỏ qua checklist sweep/MSS/FVG) nên winrate của riêng nhóm lệnh này thấp hơn baseline (giả định 30% thay vì 45%) VÀ risk cao hơn (2% thay vì 0.5%) cùng lúc — expectancy của tổ hợp này thường **âm rõ rệt**, không chỉ "kém hơn một chút":
 
 ```
 Expectancy_tổ_hợp = (0.30 × 2.2 × 200) − (0.70 × 200) = 132 − 140 = −$8/lệnh (âm)
@@ -349,10 +349,10 @@ Expectancy_tổ_hợp = (0.30 × 2.2 × 200) − (0.70 × 200) = 132 − 140 = �
 
 | Mistake liên quan | Cơ chế khuếch đại lẫn nhau | Mức nguy hiểm tổ hợp |
 |---|---|---|
-| [[01 - Mistake - Emotional revenge trade]] | Revenge sizing (tăng risk) + entry vội bỏ qua checklist → winrate giảm VÀ risk tăng cùng lúc, expectancy có thể âm hẳn (xem 11.3) | **Rất cao — tổ hợp nguy hiểm nhất** |
-| [[05 - Mistake - Not enough RR]] | RR thấp làm expectancy vốn đã mỏng ở 0.5%; nếu risk vượt lên 1-2% với RR thấp, một chuỗi thua ngắn cũng đủ chạm daily loss vì mỗi lệnh thua "ăn" nhiều hơn mà mỗi lệnh thắng bù lại ít hơn | Cao |
-| [[09 - Mistake - Wrong daily bias]] | Bias sai tạo cụm lệnh thua tương quan trong cùng phiên (theo mô tả ở chính note 09, mục 3) — nếu risk mỗi lệnh trong cụm đó đã vượt 0.5%, chuỗi 2-3 lệnh thua cùng gốc bias sai có thể chạm daily loss limit chỉ trong một buổi sáng | **Rất cao** |
-| [[02 - Mistake - Enter before liquidity sweep]] | Entry sớm (trước sweep) thường có SL đặt sai vị trí cấu trúc (quá gần hoặc quá xa) — trader dễ "bù" bằng cách không tính lại size đúng cách khi SL thực tế khác kế hoạch | Trung bình-cao |
+| [[01-Mistake-Emotional-revenge-trade]] | Revenge sizing (tăng risk) + entry vội bỏ qua checklist → winrate giảm VÀ risk tăng cùng lúc, expectancy có thể âm hẳn (xem 11.3) | **Rất cao — tổ hợp nguy hiểm nhất** |
+| [[05-Mistake-Not-enough-RR]] | RR thấp làm expectancy vốn đã mỏng ở 0.5%; nếu risk vượt lên 1-2% với RR thấp, một chuỗi thua ngắn cũng đủ chạm daily loss vì mỗi lệnh thua "ăn" nhiều hơn mà mỗi lệnh thắng bù lại ít hơn | Cao |
+| [[09-Mistake-Wrong-daily-bias]] | Bias sai tạo cụm lệnh thua tương quan trong cùng phiên (theo mô tả ở chính note 09, mục 3) — nếu risk mỗi lệnh trong cụm đó đã vượt 0.5%, chuỗi 2-3 lệnh thua cùng gốc bias sai có thể chạm daily loss limit chỉ trong một buổi sáng | **Rất cao** |
+| [[02-Mistake-Enter-before-liquidity-sweep]] | Entry sớm (trước sweep) thường có SL đặt sai vị trí cấu trúc (quá gần hoặc quá xa) — trader dễ "bù" bằng cách không tính lại size đúng cách khi SL thực tế khác kế hoạch | Trung bình-cao |
 
 > [!question] Tổ hợp nguy hiểm nhất
 > **Wrong daily bias + Risk vượt 0.5%** là tổ hợp có khả năng phá tài khoản nhanh nhất trong một buổi sáng duy nhất: bias sai tạo ra 2-3 tín hiệu entry "sách vở" liên tiếp cùng hướng sai (không phải lỗi ngẫu nhiên độc lập — cùng một nguyên nhân gốc), và nếu mỗi lệnh trong chuỗi đó đã risk 1-2% thay vì 0.5%, daily loss limit có thể bị chạm chỉ với 2-3 lệnh trong một phiên London/NY duy nhất.
@@ -394,7 +394,7 @@ Expectancy_tổ_hợp = (0.30 × 2.2 × 200) − (0.70 × 200) = 132 − 140 = �
 
 Ở **Evidence Tier hiện tại (Tier 0 — giả thuyết, dựa trên lý thuyết Kelly/risk-of-ruin, chưa có backtest thật của chính trader)**, phe Ủng hộ đúng cho giai đoạn challenge và ít nhất giai đoạn đầu live: bất đối xứng hậu quả (mất challenge không đảo ngược được vs tăng trưởng chậm có thể bù sau) đủ mạnh để biện minh một rule gần-cứng trong giai đoạn này — ngôn ngữ đúng phải là "giả thuyết đang được áp dụng như chính sách phòng ngừa thận trọng", **chưa được phép nói "đây là doctrine đã kiểm chứng"**.
 
-Phe Phản đối đúng về mặt dài hạn có điều kiện: MỘT KHI trader đã tích lũy Tier 1 thật (n≥20 lệnh log đầy đủ, đo được tương quan giữa `conviction_score` và `outcome`) VÀ đã vượt qua challenge (không còn rào cản ruin nhân tạo tức thời), việc xem xét scale size nhẹ theo tier bias/setup quality (xem [[09 - Mistake - Wrong daily bias]] mục 5.1 — Bias Tier A/B/C đã có sẵn cơ chế này) là hợp lý và không mâu thuẫn với tinh thần risk management, miễn là vẫn có trần tuyệt đối (ví dụ không bao giờ vượt 1% dù tier cao nhất).
+Phe Phản đối đúng về mặt dài hạn có điều kiện: MỘT KHI trader đã tích lũy Tier 1 thật (n≥20 lệnh log đầy đủ, đo được tương quan giữa `conviction_score` và `outcome`) VÀ đã vượt qua challenge (không còn rào cản ruin nhân tạo tức thời), việc xem xét scale size nhẹ theo tier bias/setup quality (xem [[09-Mistake-Wrong-daily-bias]] mục 5.1 — Bias Tier A/B/C đã có sẵn cơ chế này) là hợp lý và không mâu thuẫn với tinh thần risk management, miễn là vẫn có trần tuyệt đối (ví dụ không bao giờ vượt 1% dù tier cao nhất).
 
 **Dữ liệu nào sẽ giải quyết được cuộc tranh biện:** (1) chạy ≥30 lệnh với `conviction_score` (thang 1-5) ghi TRƯỚC entry và đối chiếu với `outcome`/R-multiple thật — nếu tương quan Spearman > 0.3 và có ý nghĩa thống kê, ủng hộ việc cân nhắc scale nhẹ theo conviction đã đo được (không phải cảm tính); (2) tính maximum drawdown thật từ ≥30 lệnh ở 0.5% cố định — nếu drawdown thật thấp hơn nhiều so với ngưỡng breach, có dư địa để xem xét nới nhẹ; nếu bằng hoặc gần ngưỡng, giữ nguyên hoặc hạ thấp hơn 0.5% (đúng logic mục 5.4 của note gốc).
 
@@ -547,7 +547,7 @@ Kết quả: lệnh NAS100 vẫn bị quét SL đúng như kịch bản A (cùng
 
 ### Case C — Vùng xám (gray zone)
 
-**Tình huống mơ hồ:** SL kế hoạch ban đầu là 20 điểm cho NAS100. Ngay trước khi entry, giá có một wick nhỏ vượt qua mức SL dự kiến 3 điểm rồi quay lại — cấu trúc thật (swing low hợp lệ theo đúng quy tắc [[06 - Mistake - Not Have Market Structure Shift]]) giờ nằm ở 23 điểm thay vì 20. Chênh lệch chỉ 3 điểm (15% so với kế hoạch) — không lớn như case A (42 vs 25 điểm), nhưng đủ nhỏ để tạo cám dỗ "chắc không đáng phải tính lại lot, chênh có 3 điểm thôi, làm tròn cho tiện".
+**Tình huống mơ hồ:** SL kế hoạch ban đầu là 20 điểm cho NAS100. Ngay trước khi entry, giá có một wick nhỏ vượt qua mức SL dự kiến 3 điểm rồi quay lại — cấu trúc thật (swing low hợp lệ theo đúng quy tắc [[06-Mistake-Not-Have-Market-Structure-Shift]]) giờ nằm ở 23 điểm thay vì 20. Chênh lệch chỉ 3 điểm (15% so với kế hoạch) — không lớn như case A (42 vs 25 điểm), nhưng đủ nhỏ để tạo cám dỗ "chắc không đáng phải tính lại lot, chênh có 3 điểm thôi, làm tròn cho tiện".
 
 **Phân tích cả hai cách xử lý:**
 - **Xử lý A — giữ nguyên lot (không tính lại):** $ risk tăng từ $512 lên khoảng $588 (~0.575% thay vì 0.5%) — vi phạm kỹ thuật rule nhưng ở mức độ rất nhỏ, khó coi là "risk creep nghiêm trọng" như Case A.
@@ -570,6 +570,6 @@ Kết quả: lệnh NAS100 vẫn bị quét SL đúng như kịch bản A (cùng
 
 ## 16. Liên kết
 
-**Concepts:** [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]]
+**Concepts:** [[36-Forex-CFD-Basics-Pip-Lot-Spread-Swap-Leverage-Margin]]
 
-**Mistakes liên quan:** [[05 - Mistake - Not enough RR]] · [[01 - Mistake - Emotional revenge trade]] · [[09 - Mistake - Wrong daily bias]] · [[02 - Mistake - Enter before liquidity sweep]]
+**Mistakes liên quan:** [[05-Mistake-Not-enough-RR]] · [[01-Mistake-Emotional-revenge-trade]] · [[09-Mistake-Wrong-daily-bias]] · [[02-Mistake-Enter-before-liquidity-sweep]]

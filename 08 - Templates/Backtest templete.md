@@ -174,6 +174,6 @@ tags: [backtest, ICT2022]
 
 ### Liên kết
 
-- Concept: [[Trading Journal/03 - Playbooks/3.2 - Setups/ICT 2022 Model]] · [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[13 - FVG  - Fair Value Gap]] · [[26 - OTE - Optimal Trade Entry]]
+- Concept: [[Trading Journal/03 - Playbooks/3.2 - Setups/ICT 2022 Model]] · [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[13-FVG-Fair-Value-Gap]] · [[26-OTE-Optimal-Trade-Entry]]
 - Dashboard: [[_Backtest Dashboard]]
 - Mistake liên quan: [[Mistake - ]]

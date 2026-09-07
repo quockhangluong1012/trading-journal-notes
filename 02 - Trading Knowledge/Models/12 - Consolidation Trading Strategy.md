@@ -427,7 +427,7 @@ Một sai lầm phổ biến khi tự đánh giá mô hình là chỉ ghi log c�
 | Giá đi ngang hẹp trước một session cụ thể (CBDR/Asian range trước Judas Swing 0h–2h NY) | [[13 - Intraday Profiles]] | Đây là dạng consolidation ĐẶC BIỆT theo cấu trúc giờ cố định, có quy tắc riêng (CBDR<40 pip, SD projection) — không dùng quy tắc CE tổng quát của file này |
 | Giá đang trend rõ, không có giai đoạn đi ngang trước đó | [[01 - ICT 2022 Model]] | Chuỗi sweep→displacement→FVG áp dụng trực tiếp trên trend, không cần định nghĩa range |
 | Cuối tuần, giá đã chạy đủ range tuần, có dấu hiệu chốt lời | [[05 - Friday Profit Taking]] | Thiên hướng mean-reversion về weekly open, khác cơ chế fade sweep nội-range |
-| Range hình thành đúng NY lunch-hour, chuẩn bị cho session PM | Consolidation Trading + tham chiếu [[10 - Bread and Butter Sell-Setup]] cho khung giờ | Kết hợp: dùng khung giờ B&B để định vị session, dùng quy tắc sweep/CE của file này để định vị entry |
+| Range hình thành đúng NY lunch-hour, chuẩn bị cho session PM | Consolidation Trading + tham chiếu [[10 - Bread and Butter Sell Setup]] cho khung giờ | Kết hợp: dùng khung giờ B&B để định vị session, dùng quy tắc sweep/CE của file này để định vị entry |
 
 **Nguyên tắc chọn nhanh:** nếu bạn phải TỰ vẽ support/resistance từ price action đi ngang bất kỳ → đây là Consolidation Trading tổng quát (file này). Nếu range đó có công thức tính sẵn theo giờ cố định (CBDR, Asian range) → chuyển sang [[13 - Intraday Profiles]] vì quy tắc ngưỡng số (pip, SD) khác hẳn.
 

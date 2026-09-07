@@ -48,10 +48,10 @@ common_mistakes:
 Dealing Range trong ICT là **khoảng giá giữa một swing high và một swing low có ý nghĩa** mà giá đang dao động bên trong tại thời điểm phân tích. Hai đầu range không phải là hai điểm bất kỳ: chúng là hai điểm mà **liquidity đã được lấy** (một đỉnh rõ ràng đã quét buy-side liquidity và một đáy rõ ràng đã quét sell-side liquidity), hoặc tối thiểu là một đỉnh rõ tới một đáy rõ tạo bởi displacement/BOS. Dealing Range là **khung tham chiếu** (reference frame) để chia premium/discount, để biết đâu là liquidity bên trong, đâu là liquidity bên ngoài, và để đoán giá đang bị hút về phía nào.
 
 **Mục đích trong ICT:**  
-- Suy ra **Premium / Discount / Equilibrium** — chia range bằng Fibonacci, 50% là equilibrium; trên 50% là premium (vùng để tìm Short), dưới 50% là discount (vùng để tìm Long). Xem [[27 - Premium Discount]].
+- Suy ra **Premium / Discount / Equilibrium** — chia range bằng Fibonacci, 50% là equilibrium; trên 50% là premium (vùng để tìm Short), dưới 50% là discount (vùng để tìm Long). Xem [[27-Premium-Discount]].
 - Phân loại **Internal range liquidity** (FVG, Order Block, imbalance nằm BÊN TRONG range) và **External range liquidity** (chính đỉnh/đáy của range = BSL/SSL nằm ở hai đầu).
 - **Dự phóng draw on liquidity:** giá thường luân chuyển từ internal → external, hoặc quét external rồi đảo về internal đối diện.
-- Cung cấp khung đo lường thống nhất để xây [[12 - Daily Bias]] và canh [[Optimal Trade Entry]].
+- Cung cấp khung đo lường thống nhất để xây [[12-Daily-Bias]] và canh [[Optimal Trade Entry]].
 
 **Vì sao khái niệm này quan trọng:**  
 Premium/Discount, OTE, equilibrium — tất cả đều là **tỷ lệ phần trăm đo trên một range**. Nếu range sai, mọi con số phái sinh đều sai. Dealing Range đúng là **điều kiện tiên quyết** để mọi phép đo premium/discount và OTE có nghĩa. Đây cũng là nền để xây Daily Bias: bias dùng vị trí giá trong range cộng với draw on liquidity để kết luận hướng ưu tiên.
@@ -265,7 +265,7 @@ Trader chọn một range nhỏ và mới (hai swing nhỏ gần giá) thay vì 
 
 **Bài học:**
 - Premium/Discount **chỉ đúng khi đo trên range đúng**; range sai → vị trí sai → mua premium tưởng là discount.
-- Đây chính là lỗi đã được cảnh báo trong [[12 - Daily Bias]]: chọn dealing range quá nhỏ/quá cũ làm premium/discount lệch.
+- Đây chính là lỗi đã được cảnh báo trong [[12-Daily-Bias]]: chọn dealing range quá nhỏ/quá cũ làm premium/discount lệch.
 - Luôn hỏi: "Range này có liquidity ở hai đầu chưa? Nó có khớp timeframe narrative không?" trước khi tin vào con số premium/discount.
 
 ---
@@ -273,16 +273,16 @@ Trader chọn một range nhỏ và mới (hai swing nhỏ gần giá) thay vì 
 ## 7. Entry model liên quan
 
 Khái niệm này thường kết hợp với:
-- [[27 - Premium Discount]]
-- [[19 - Liquidity]]
+- [[27-Premium-Discount]]
+- [[19-Liquidity]]
 - [[30 - Sell-side Liquidity]]
-- [[07 - Buy-side Liquidity]]
+- [[07-Buy-side-Liquidity]]
 - [[Break of Structure]]
 - [[Displacement]]
 - [[Optimal Trade Entry]]
 - [[Fair Value Gap]]
 - [[Order Block]]
-- [[12 - Daily Bias]]
+- [[12-Daily-Bias]]
 
 ### Sequence mẫu — Long từ discount của Dealing Range
 ```text
@@ -351,7 +351,7 @@ Quy tắc vận hành: **HTF range quyết định HƯỚNG được phép, LTF 
 
 ### A3. Re-mapping range sau displacement
 
-Khi một displacement phá external của range, bản đồ cũ hết hiệu lực **ngay lập tức** — nhưng vẽ range mới thế nào mới là kỹ năng (chi tiết đầy đủ: [[37 - Re-mapping Dealing Range sau Displacement]]). Nguyên tắc lõi:
+Khi một displacement phá external của range, bản đồ cũ hết hiệu lực **ngay lập tức** — nhưng vẽ range mới thế nào mới là kỹ năng (chi tiết đầy đủ: [[37-Re-mapping-Dealing-Range-sau-Displacement]]). Nguyên tắc lõi:
 
 1. **Range mới lấy gốc từ origin của displacement leg:** swing low nơi displacement khởi phát → extreme mới vừa tạo. Không giữ đầu range cũ đã bị phá làm biên.
 2. **Chờ leg hoàn thành mới đo:** đo premium/discount khi displacement còn đang chạy = đo trên range chưa đóng; chờ swing xác nhận (pullback đầu tiên tạo cấu trúc) rồi mới chia EQ.
@@ -360,11 +360,11 @@ Khi một displacement phá external của range, bản đồ cũ hết hiệu l
 
 ### A4. Range projection — Standard Deviation khi giá rời range
 
-Khi external bị phá thật và giá expansion, dealing range cũ vẫn còn một công dụng cuối: **làm thước đo projection**. Dùng chiều cao range (hoặc manipulation leg) chiếu các mức -1, -2, -2.5, -4 SD theo hướng expansion để ước lượng terminus của leg mới (xem [[31 - Standard Deviation]] và [[08 - Central Bank Dealers Range]] cho phiên bản CBDR). Ứng dụng: khi không còn external liquidity rõ phía trước (giá vào "vùng trống"), SD projection + HTF FVG là hai công cụ duy nhất để định target.
+Khi external bị phá thật và giá expansion, dealing range cũ vẫn còn một công dụng cuối: **làm thước đo projection**. Dùng chiều cao range (hoặc manipulation leg) chiếu các mức -1, -2, -2.5, -4 SD theo hướng expansion để ước lượng terminus của leg mới (xem [[31-Standard-Deviation]] và [[08-Central-Bank-Dealers-Range]] cho phiên bản CBDR). Ứng dụng: khi không còn external liquidity rõ phía trước (giá vào "vùng trống"), SD projection + HTF FVG là hai công cụ duy nhất để định target.
 
 ### A5. Chu kỳ ERL ↔ IRL — "nhịp thở" của thị trường
 
-Tầng hiểu cao nhất về dealing range là xem luồng internal/external như **chu kỳ hô hấp** ([[16 - Internal & External Range Liquidity (IRL & ERL)]]):
+Tầng hiểu cao nhất về dealing range là xem luồng internal/external như **chu kỳ hô hấp** ([[16-Internal-External-Range-Liquidity-IRL-ERL]]):
 
 ```text
 Pha 1: Giá lấy ERL (external — quét range high/low)
@@ -403,7 +403,7 @@ Trước mỗi phiên, chỉ cần trả lời: **"Giá đang ở pha nào của
 
 Trước khi vào các tình huống, cần trả lời câu hỏi mà đa số trader bỏ qua: **dealing range không có sức mạnh vật lý nào — vậy tại sao nó hoạt động?**
 
-1. **Range là bản đồ phân bố LỆNH, không phải phân bố giá.** Hai đầu range là nơi tập trung stop (external liquidity); bên trong range là nơi các lệnh đã khớp dở dang cần được "hoàn tất hai chiều" (internal — FVG/OB). Giá di chuyển vì các thuật toán khớp lệnh lớn cần **đối tác**: nơi có lệnh chờ dày nhất chính là nơi giá bị hút về. Range "hoạt động" đơn giản vì nó vẽ lại đúng nơi lệnh đang nằm — xem [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]].
+1. **Range là bản đồ phân bố LỆNH, không phải phân bố giá.** Hai đầu range là nơi tập trung stop (external liquidity); bên trong range là nơi các lệnh đã khớp dở dang cần được "hoàn tất hai chiều" (internal — FVG/OB). Giá di chuyển vì các thuật toán khớp lệnh lớn cần **đối tác**: nơi có lệnh chờ dày nhất chính là nơi giá bị hút về. Range "hoạt động" đơn giản vì nó vẽ lại đúng nơi lệnh đang nằm — xem [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]].
 2. **EQ 50% hoạt động vì lý thuyết đấu giá, không vì Fibonacci.** Một dealing range là một phiên đấu giá chưa ngã ngũ: hai đầu là hai mức mà thị trường đã *từ chối* (quét xong rồi quay lại). Điểm giữa của hai mức từ chối là nơi định giá "công bằng" tạm thời — trên nó người bán có lợi thế vị trí, dưới nó người mua có lợi thế. Premium/discount là phát biểu ICT của khái niệm *value area* trong auction theory. Đây là lý do EQ không cần chính xác từng tick vẫn hoạt động: nó là **vùng trọng tâm của giá trị**, không phải một mức ma thuật.
 3. **Luồng internal ↔ external hoạt động vì tồn kho (inventory) phải được cân.** Market maker/thuật toán khớp một khối lệnh lớn tại external (nơi duy nhất đủ thanh khoản) sẽ ôm một vị thế tồn kho lệch; họ đẩy giá về internal (FVG — nơi giao dịch một chiều còn dang dở) để xả/cân tồn kho ở giá tốt, rồi mới bắt đầu chu kỳ mới. "Nhịp thở" ERL↔IRL ở mục A5 chính là chu kỳ cân tồn kho này nhìn từ bên ngoài.
 
@@ -456,7 +456,7 @@ Ba cơ chế trên là nền của mọi tình huống dưới đây: khi range 
 **WHY — vì sao vài điểm lại quan trọng ở đây:** bản thân EQ là *vùng*, không phải mức (W0.2) — nhưng **OTE và quadrant biên là nơi các cụm lệnh limit của cả đám đông ICT trader đặt gần nhau**. Thuật toán khớp quanh các cụm đó với độ chính xác cao (đó chính là lý do "quét đúng mép" tồn tại). Sai số 15–20 điểm đủ để bạn rơi từ "trong cụm" ra "ngoài cụm". Level tĩnh trong một thị trường chạy 24h là một giả định sai âm thầm.
 
 **Rule đo được:**
-- **Đo lại toàn bộ range levels mỗi sáng** như một bước cứng trong pre-market routine (không kế thừa số của hôm qua) — cùng nguyên tắc với câu hỏi mở phiên bên [[12 - Daily Bias]].
+- **Đo lại toàn bộ range levels mỗi sáng** như một bước cứng trong pre-market routine (không kế thừa số của hôm qua) — cùng nguyên tắc với câu hỏi mở phiên bên [[12-Daily-Bias]].
 - Dùng anchored fib trên chart (neo vào swing, tự cập nhật khi wick giãn) thay vì kẻ tay mức giá tĩnh.
 - Alert đặt ở *vùng* (dải giá quanh OTE) chứ không ở một tick.
 
@@ -730,7 +730,7 @@ Dealing Range không phải là một hình chữ nhật vẽ theo "mắt thẩm
 
 **Tình huống:** giá dao động quanh EQ của một range trong 4-5 phiên liên tiếp, chạm đi chạm lại vùng 48-52% mà không breakout dứt khoát về phía nào. Đến lần chạm thứ 5-6, trader vẫn coi đây là "vùng ra quyết định" quan trọng và cố đoán hướng breakout.
 
-**Vì sao bẫy được cả trader có kinh nghiệm:** EQ có sức nặng lý thuyết (value area, xem mục 14) nhưng sức nặng đó **suy giảm dần theo số lần test** giống hệt cơ chế IRL age decay ([[16 - Internal & External Range Liquidity (IRL & ERL)]] Case Study 1) — thị trường "quen" với mức đó và ngày càng ít nhà giao dịch coi đó là điểm quyết định thật sự, khiến phản ứng tại EQ ngày càng yếu và nhiễu hơn.
+**Vì sao bẫy được cả trader có kinh nghiệm:** EQ có sức nặng lý thuyết (value area, xem mục 14) nhưng sức nặng đó **suy giảm dần theo số lần test** giống hệt cơ chế IRL age decay ([[16-Internal-External-Range-Liquidity-IRL-ERL]] Case Study 1) — thị trường "quen" với mức đó và ngày càng ít nhà giao dịch coi đó là điểm quyết định thật sự, khiến phản ứng tại EQ ngày càng yếu và nhiễu hơn.
 
 **Cách nhận diện sớm:** đếm số lần giá chạm dải 45-55% của range trong N phiên gần nhất; từ lần chạm thứ 4 trở đi, hạ kỳ vọng phản ứng mạnh tại EQ.
 
@@ -740,7 +740,7 @@ Dealing Range không phải là một hình chữ nhật vẽ theo "mắt thẩm
 
 **Tình huống:** một swing high từng là external liquidity (BSL) của range D1 bị phá bằng acceptance thật (đóng thân nến ngoài range, giữ được). Trader vẫn tiếp tục coi mức đó là "target BSL" cho lệnh cũ, không nhận ra vai trò của nó đã đổi thành internal liquidity/hỗ trợ cho range mới.
 
-**Vì sao bẫy được cả trader có kinh nghiệm:** vai trò external/internal của một mức giá không cố định — nó phụ thuộc vào **range nào đang hoạt động tại thời điểm đó** (đúng nguyên tắc phân dạng đã nêu ở [[16 - Internal & External Range Liquidity (IRL & ERL)]] mục Nâng cao "Fractal nesting"). Trader quen nhìn một mức giá theo vai trò cũ dễ bỏ lỡ khoảnh khắc nó đổi vai trò.
+**Vì sao bẫy được cả trader có kinh nghiệm:** vai trò external/internal của một mức giá không cố định — nó phụ thuộc vào **range nào đang hoạt động tại thời điểm đó** (đúng nguyên tắc phân dạng đã nêu ở [[16-Internal-External-Range-Liquidity-IRL-ERL]] mục Nâng cao "Fractal nesting"). Trader quen nhìn một mức giá theo vai trò cũ dễ bỏ lỡ khoảnh khắc nó đổi vai trò.
 
 **Cách nhận diện sớm:** mỗi khi có acceptance (không phải wick) qua một đầu range, ngay lập tức tự hỏi "mức vừa bị phá giờ đóng vai trò gì trong range MỚI?" — nó gần như luôn chuyển từ external sang internal của bản đồ mới.
 

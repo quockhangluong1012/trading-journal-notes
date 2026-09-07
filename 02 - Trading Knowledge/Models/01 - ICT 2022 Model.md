@@ -55,10 +55,10 @@ common_mistakes:
 ICT 2022 Model là **mô hình giao dịch tổng hợp** mà ICT công bố trong loạt bài năm 2022, gói toàn bộ các khái niệm cốt lõi (bias, liquidity, sweep, displacement, MSS, FVG, premium/discount) thành **một quy trình entry duy nhất, lặp lại được**. Mục tiêu: biến mớ khái niệm rời rạc thành một checklist hành động rõ ràng từ HTF xuống LTF.
 
 **Chuỗi 7 bước của mô hình:**
-1. **Bias (HTF):** xác định hướng — Bullish / Bearish (xem [[12 - Daily Bias]]).
+1. **Bias (HTF):** xác định hướng — Bullish / Bearish (xem [[12-Daily-Bias]]).
 2. **Draw on liquidity:** xác định pool liquidity mà giá đang bị hút về (target cuối) và pool sẽ bị quét trước.
-3. **Liquidity Sweep:** chờ giá quét một pool liquidity (đỉnh/đáy, equal highs/lows) — đây là trigger ([[20 - Liquidity Sweep]]).
-4. **Displacement + MSS:** một move mạnh, quyết đoán phá cấu trúc ([[21 - Market Structure Shift]] + [[Displacement]]) theo hướng bias, **để lại FVG**.
+3. **Liquidity Sweep:** chờ giá quét một pool liquidity (đỉnh/đáy, equal highs/lows) — đây là trigger ([[20-Liquidity-Sweep]]).
+4. **Displacement + MSS:** một move mạnh, quyết đoán phá cấu trúc ([[21-Market-Structure-Shift]] + [[Displacement]]) theo hướng bias, **để lại FVG**.
 5. **FVG (POI):** xác định Fair Value Gap của nhịp displacement — đây là điểm vào ([[Fair Value Gap]]).
 6. **Entry:** vào lệnh khi giá **retrace** về FVG (thường quanh CE 50%), đúng premium/discount.
 7. **Target:** pool liquidity đối diện (internal trước, external sau).
@@ -119,18 +119,18 @@ Hầu hết người học ICT biết từng khái niệm riêng nhưng không b
 
 | Bước | Tên | Khái niệm liên kết | Câu hỏi kiểm tra |
 |---|---|---|---|
-| 1 | Bias | [[12 - Daily Bias]] | Hướng HTF là gì? |
-| 2 | Draw on liquidity | [[19 - Liquidity]], [[12 - Dealing Range]] | Giá bị hút về pool nào? |
-| 3 | Liquidity Sweep | [[20 - Liquidity Sweep]] | Đã quét pool nào, có reclaim? |
-| 4 | Displacement + MSS | [[Displacement]], [[21 - Market Structure Shift]] | Có phá cấu trúc + để lại FVG không? |
+| 1 | Bias | [[12-Daily-Bias]] | Hướng HTF là gì? |
+| 2 | Draw on liquidity | [[19-Liquidity]], [[12-Dealing-Range]] | Giá bị hút về pool nào? |
+| 3 | Liquidity Sweep | [[20-Liquidity-Sweep]] | Đã quét pool nào, có reclaim? |
+| 4 | Displacement + MSS | [[Displacement]], [[21-Market-Structure-Shift]] | Có phá cấu trúc + để lại FVG không? |
 | 5 | FVG (POI) | [[Fair Value Gap]], [[Order Block]] | FVG ở đâu, CE ở đâu? |
-| 6 | Entry | [[27 - Premium Discount]], [[Optimal Trade Entry]] | Đúng premium/discount, R:R đủ chưa? |
-| 7 | Target | [[19 - Liquidity]] | Pool đối diện ở đâu? |
+| 6 | Entry | [[27-Premium-Discount]], [[Optimal Trade Entry]] | Đúng premium/discount, R:R đủ chưa? |
+| 7 | Target | [[19-Liquidity]] | Pool đối diện ở đâu? |
 
 ### Biến thể thường gặp
 - **+ OTE:** thay vì chỉ FVG, dùng vùng OTE 62–79% trùng FVG để refine entry ([[Optimal Trade Entry]]).
-- **+ Silver Bullet:** chạy mô hình trong cửa sổ 1 giờ của [[18 - Kill Zones]].
-- **+ AMD:** đặt mô hình trong khung Tích lũy–Thao túng–Phân phối ([[02 - AMD]]); sweep ~ manipulation, displacement ~ distribution.
+- **+ Silver Bullet:** chạy mô hình trong cửa sổ 1 giờ của [[18-Kill-Zones]].
+- **+ AMD:** đặt mô hình trong khung Tích lũy–Thao túng–Phân phối ([[02-AMD]]); sweep ~ manipulation, displacement ~ distribution.
 - **+ Order Block / Breaker:** POI ở bước 5 có thể là OB/Breaker thay vì FVG.
 
 > [!tip]
@@ -141,7 +141,7 @@ Hầu hết người học ICT biết từng khái niệm riêng nhưng không b
 - [ ] Có liquidity sweep rõ trước displacement.
 - [ ] Displacement phá cấu trúc và để lại FVG sạch.
 - [ ] FVG ở đúng premium/discount, đồng hướng bias.
-- [ ] Trong [[18 - Kill Zones]] (London/NY) → xác suất cao hơn.
+- [ ] Trong [[18-Kill-Zones]] (London/NY) → xác suất cao hơn.
 
 ### Khi nào nên bỏ qua?
 - [ ] Thiếu liquidity sweep (vào chỉ vì thấy FVG/MSS).
@@ -240,7 +240,7 @@ Hầu hết người học ICT biết từng khái niệm riêng nhưng không b
 > 4. **Entry/stop/target ở đâu, R:R bao nhiêu, có trong kill zone không?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
+- **Bias:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
 - **Draw on liquidity:** pool HTF là target cuối (BSL cho Long, SSL cho Short).
 - **Dealing range & premium/discount:** xác định vùng để chỉ Long ở discount / Short ở premium.
 
@@ -311,7 +311,7 @@ Phần lớn ví dụ trong note này mô tả **một chu kỳ 7 bước duy nh
 
 - **Single-leg entry:** một chu kỳ 7 bước, một entry, một target; phù hợp với ngày sideway/range hoặc khi chỉ có một cơ hội A+ rõ ràng.
 - **Multi-leg continuation:** sau khi chu kỳ 7 bước đầu tiên hoàn tất và target internal bị chạm, giá tạo ra một **dealing range mới** (thường nhỏ hơn) ngay trong nhịp trend đang chạy; nhịp retrace tiếp theo lại tạo ra một sweep nhỏ + displacement mới + FVG mới trong nội bộ trend đó → đây thực chất là chạy lại 7 bước ở một "vòng lặp" nhỏ hơn (nested cycle) mà không cần chờ giá quay lại bias gốc.
-- Điều kiện bắt buộc để coi là multi-leg hợp lệ (không phải chase): sau mỗi leg, **dealing range phải được re-map lại** dựa trên displacement mới nhất — xem chi tiết tại [[37 - Re-mapping Dealing Range sau Displacement]]. Nếu không re-map, trader dễ nhầm lẫn giữa "continuation hợp lệ" và "chase trend đã muộn".
+- Điều kiện bắt buộc để coi là multi-leg hợp lệ (không phải chase): sau mỗi leg, **dealing range phải được re-map lại** dựa trên displacement mới nhất — xem chi tiết tại [[37-Re-mapping-Dealing-Range-sau-Displacement]]. Nếu không re-map, trader dễ nhầm lẫn giữa "continuation hợp lệ" và "chase trend đã muộn".
 - Quản trị rủi ro cho multi-leg: mỗi leg vẫn phải tuân thủ risk ≤0.5%/lệnh độc lập; không cộng dồn size chỉ vì "đang đúng trend"; chỉ vào leg tiếp theo nếu leg đó **đi qua đủ 7 bước riêng của nó** (đặc biệt vẫn cần một sweep nhỏ nội bộ, không chỉ có displacement).
 
 > [!warning]
@@ -324,7 +324,7 @@ Phần lớn ví dụ trong note này mô tả **một chu kỳ 7 bước duy nh
 > Sơ đồ 3 tầng lồng nhau kiểu "hộp trong hộp": tầng ngoài cùng là một chu kỳ AMD Daily (Accumulation–Manipulation–Distribution) trải dài cả phiên; bên trong pha Manipulation/Distribution của tầng Daily, vẽ một chu kỳ AMD Hourly hoàn chỉnh thu nhỏ; và bên trong pha Manipulation/Distribution của tầng Hourly đó lại vẽ tiếp một chu kỳ AMD 5-phút hoàn chỉnh. Dùng màu khác nhau cho mỗi tầng và ghi chú rõ "Daily AMD ⊃ Hourly AMD ⊃ 5-min AMD". Đây là sơ đồ khái niệm minh họa tính fractal của mô hình, không phải chart giá thật.
 
 > [!important] Đây là cách nhìn nâng cao nhất về mô hình — tính chất fractal
-> ICT 2022 Model không chỉ chạy một lần trên một khung thời gian. Vì AMD (Accumulation – Manipulation – Distribution, xem [[02 - AMD]]) có tính **fractal**, một chu kỳ AMD lớn trên Daily luôn CHỨA nhiều chu kỳ AMD nhỏ hơn trên Hourly, và mỗi chu kỳ Hourly đó lại chứa nhiều chu kỳ AMD nhỏ hơn nữa trên M5. Bước Sweep + Displacement của ICT 2022 Model thực chất là cách gọi tên hành vi giá tại pha Manipulation → Distribution, ở BẤT KỲ tầng nào trong cấu trúc lồng này.
+> ICT 2022 Model không chỉ chạy một lần trên một khung thời gian. Vì AMD (Accumulation – Manipulation – Distribution, xem [[02-AMD]]) có tính **fractal**, một chu kỳ AMD lớn trên Daily luôn CHỨA nhiều chu kỳ AMD nhỏ hơn trên Hourly, và mỗi chu kỳ Hourly đó lại chứa nhiều chu kỳ AMD nhỏ hơn nữa trên M5. Bước Sweep + Displacement của ICT 2022 Model thực chất là cách gọi tên hành vi giá tại pha Manipulation → Distribution, ở BẤT KỲ tầng nào trong cấu trúc lồng này.
 
 - **Daily AMD:** Accumulation thường là phiên Á (range hẹp), Manipulation là sweep thanh khoản đầu London/NY, Distribution là move chính trong ngày (thường London hoặc NY session) — đây là bias/draw on liquidity ở bước 1–2 của mô hình.
 - **Hourly AMD (lồng trong pha Manipulation/Distribution của Daily):** trong chính nhịp di chuyển chính của ngày, vẫn có các chu kỳ tích lũy–thao túng–phân phối nhỏ hơn theo giờ — mỗi chu kỳ này có thể tự nó là một setup ICT 2022 Model đầy đủ (sweep nhỏ + displacement nhỏ + FVG nhỏ) dùng để refine entry cho hướng Daily.
@@ -392,20 +392,20 @@ Bias HTF là Bearish (draw thật là SSL phía dưới). Trader thấy một nh
 ---
 
 **Confluence nâng cao (mục 8):**
-- [[42 - SMT Divergence]]
-- [[40 - Macro Times]]
-- [[41 - Change in State of Delivery]]
-- [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]
-- [[04 - Breaker Block]]
+- [[42-SMT-Divergence]]
+- [[40-Macro-Times]]
+- [[41-Change-in-State-of-Delivery]]
+- [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]
+- [[04-Breaker-Block]]
 - [[07 - Unicorn Model]]
-- [[17 - Inverse Fair Value Gap - iFVG]]
-- [[31 - Standard Deviation]]
-- [[15 - Inducement]]
-- [[16 - Internal & External Range Liquidity (IRL & ERL)]]
-- [[10 - Consequent Encroachment (Mean Threshold)]]
-- [[23 - New Day Opening Gap]]
-- [[24 - New Week Opening Gap]]
-- [[43 - Position Sizing]]
+- [[17-Inverse-Fair-Value-Gap-iFVG]]
+- [[31-Standard-Deviation]]
+- [[15-Inducement]]
+- [[16-Internal-External-Range-Liquidity-IRL-ERL]]
+- [[10-Consequent-Encroachment-Mean-Threshold]]
+- [[23-New-Day-Opening-Gap]]
+- [[24-New-Week-Opening-Gap]]
+- [[43-Position-Sizing]]
 
 ### Sequence mẫu — ICT 2022 Long (đầy đủ)
 ```text
@@ -457,30 +457,30 @@ Bước 5 của mô hình gốc chỉ nói "FVG (POI)". Trong thực tế, sau m
 |---|---|---|---|
 | 1 (nền) | **FVG đơn thuần** | Chỉ là imbalance 3 nến — bằng chứng "hết đối ứng", nhưng đứng một mình là POI cơ bản nhất | [[Fair Value Gap]] |
 | 2 | **FVG + Order Block** | FVG nằm chồng lên OB (nến gốc trước displacement) — vừa có imbalance vừa có vùng lệnh tổ chức | [[Order Block]] |
-| 3 | **Breaker Block** | OB đã fail + flip polarity — thêm bằng chứng "đổi trạng thái giao hàng" | [[04 - Breaker Block]] |
-| 4 | **iFVG** | FVG bị close-through và đảo cực — xác nhận delivery đã flip, mạnh cho reversal entry | [[17 - Inverse Fair Value Gap - iFVG]] |
+| 3 | **Breaker Block** | OB đã fail + flip polarity — thêm bằng chứng "đổi trạng thái giao hàng" | [[04-Breaker-Block]] |
+| 4 | **iFVG** | FVG bị close-through và đảo cực — xác nhận delivery đã flip, mạnh cho reversal entry | [[17-Inverse-Fair-Value-Gap-iFVG]] |
 | 5 (đỉnh) | **Unicorn (Breaker ∩ FVG)** | Breaker và FVG từ cùng displacement **trùng vùng** — hai loại POI độc lập cùng chỉ một mức giá | [[07 - Unicorn Model]] |
 
 > [!tip] Quy tắc chọn POI khi có nhiều cái chồng nhau
 > Ưu tiên POI **có nhiều "lý do" trùng nhau tại cùng một dải giá**, không phải POI gần giá nhất. Thứ tự ưu tiên thực dụng: **Unicorn > iFVG/Breaker có FVG hỗ trợ > FVG+OB > FVG đơn**. Nếu POI hạng cao (Unicorn) nằm sâu hơn một chút nhưng cho R:R vẫn đạt kế hoạch → chọn nó thay vì FVG nông nhưng "trơ trọi".
 
 **Refine entry trong POI bằng CE và OTE (hai lớp lồng nhau):**
-- **CE (Consequent Encroachment) = 50% của FVG** ([[10 - Consequent Encroachment (Mean Threshold)]]): mức tham chiếu chuẩn để đặt limit trong FVG. Giá thường phản ứng quanh CE hơn là mép FVG.
+- **CE (Consequent Encroachment) = 50% của FVG** ([[10-Consequent-Encroachment-Mean-Threshold]]): mức tham chiếu chuẩn để đặt limit trong FVG. Giá thường phản ứng quanh CE hơn là mép FVG.
 - **OTE 62–79% (sweet spot 70.5%)** ([[Optimal Trade Entry]]): đo trên toàn nhịp displacement (từ điểm sweep tới đỉnh/đáy displacement).
 - **Confluence entry mạnh nhất = CE của FVG rơi trúng dải OTE 62–79%.** Khi hai lớp này overlap, bạn có một entry vừa "đúng imbalance" (CE) vừa "đúng chiết khấu Fibonacci" (OTE) — đây là điểm vào tối ưu của mô hình.
 
 > [!warning] Bẫy "POI đẹp quá" — liquidity reflexivity
-> Một POI trông "sạch và rõ" (FVG đẹp, OB rõ, equal highs ngay trên) chính là nơi **đám đông ICT cũng nhìn thấy** → cụm stop retail dồn về đó → trở thành pool thanh khoản để smart money quét ngược ([[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]). Đối phó: đừng đặt entry/stop tại mép POI "hiển nhiên"; ưu tiên POI có thêm một **inducement** ([[15 - Inducement]]) bị quét trước nó, và đặt stop ngoài vùng thanh khoản mà đám đông sẽ đặt.
+> Một POI trông "sạch và rõ" (FVG đẹp, OB rõ, equal highs ngay trên) chính là nơi **đám đông ICT cũng nhìn thấy** → cụm stop retail dồn về đó → trở thành pool thanh khoản để smart money quét ngược ([[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]). Đối phó: đừng đặt entry/stop tại mép POI "hiển nhiên"; ưu tiên POI có thêm một **inducement** ([[15-Inducement]]) bị quét trước nó, và đặt stop ngoài vùng thanh khoản mà đám đông sẽ đặt.
 
 **Phân biệt POI internal vs external (dùng để xếp thứ tự target):**
 - POI/entry thường nằm ở **IRL (internal range liquidity)** — FVG, OB bên trong dealing range.
-- Target đi theo trình tự **external → internal → external**: sau khi sweep ERL, giá lấp IRL (đây là entry), rồi chạy về ERL đối diện ([[16 - Internal & External Range Liquidity (IRL & ERL)]]). Điều này giúp bạn không đặt target "lửng lơ" giữa range.
+- Target đi theo trình tự **external → internal → external**: sau khi sweep ERL, giá lấp IRL (đây là entry), rồi chạy về ERL đối diện ([[16-Internal-External-Range-Liquidity-IRL-ERL]]). Điều này giúp bạn không đặt target "lửng lơ" giữa range.
 
 ---
 
 ### 8.2 — Multi-market Confirmation: xác nhận chéo thị trường
 
-Đây là lớp confluence mạnh nhất mà mô hình gốc chưa khai thác: **một setup trên một cặp/chỉ số được xác nhận bởi hành vi của cặp/chỉ số tương quan.** Cốt lõi là **SMT Divergence** ([[42 - SMT Divergence]]).
+Đây là lớp confluence mạnh nhất mà mô hình gốc chưa khai thác: **một setup trên một cặp/chỉ số được xác nhận bởi hành vi của cặp/chỉ số tương quan.** Cốt lõi là **SMT Divergence** ([[42-SMT-Divergence]]).
 
 **Các cặp tương quan dùng cho hai thị trường bạn trade:**
 
@@ -500,13 +500,13 @@ Bước 5 của mô hình gốc chỉ nói "FVG (POI)". Trong thực tế, sau m
 **Nguyên tắc độ tin cậy:** tương quan càng chặt, SMT càng đáng tin. ES↔NQ và EURUSD↔GBPUSD tương quan rất chặt trong phiên chính → SMT giữa chúng đáng tin. Tương quan yếu đi ngoài killzone hoặc quanh tin riêng lẻ (ví dụ tin chỉ tác động GBP) → giảm trọng số SMT lúc đó.
 
 > [!tip] Reflexivity như một lớp xác nhận ngược
-> Ngoài SMT, hãy tự hỏi câu của [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]: *"Nếu tôi là đám đông ICT, tôi sẽ vào ở đâu và đặt stop ở đâu?"* Nếu cú sweep vừa rồi vừa quét đúng cụm stop đó VÀ có SMT divergence xác nhận → xác suất setup là "bẫy đám đông đã hoàn tất, giờ tới lượt move thật" tăng mạnh.
+> Ngoài SMT, hãy tự hỏi câu của [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]: *"Nếu tôi là đám đông ICT, tôi sẽ vào ở đâu và đặt stop ở đâu?"* Nếu cú sweep vừa rồi vừa quét đúng cụm stop đó VÀ có SMT divergence xác nhận → xác suất setup là "bẫy đám đông đã hoàn tất, giờ tới lượt move thật" tăng mạnh.
 
 ---
 
 ### 8.3 — Timing & Macro Precision: bấm entry đúng "giờ thuật toán"
 
-Mô hình gốc chỉ yêu cầu "trong kill zone". Lớp này siết timing xuống **cửa sổ macro 5–20 phút** — nơi IPDA thực sự repricing ([[40 - Macro Times]], [[18 - Kill Zones]]).
+Mô hình gốc chỉ yêu cầu "trong kill zone". Lớp này siết timing xuống **cửa sổ macro 5–20 phút** — nơi IPDA thực sự repricing ([[40-Macro-Times]], [[18-Kill-Zones]]).
 
 **Ba tầng timing, siết dần:**
 1. **Killzone (tầng thô):** London Open & NY AM là hai KZ chất lượng nhất cho cả NQ1 và FX.
@@ -525,11 +525,11 @@ Mô hình gốc chỉ yêu cầu "trong kill zone". Lớp này siết timing xu�
 3. **Silver Bullet (cửa sổ 1 giờ):** NY AM **10:00–11:00 ET** là bản Silver Bullet mạnh nhất — trùng overlap London–NY, dòng lệnh tổ chức Mỹ triển khai sau khi opening range đã lập. Với NQ1 đây là khung ưu tiên số một; setup ICT 2022 đủ chuỗi rơi vào 09:50–10:10 ET = confluence timing mạnh nhất.
 
 > [!info] Đổi giờ Việt Nam (UTC+7)
-> Nhớ trừ DST của Mỹ: khi Mỹ dùng **EDT (mùa hè)**, 10:00 ET ≈ **21:00 VN**; khi Mỹ dùng **EST (mùa đông)**, 10:00 ET ≈ **22:00 VN**. Chi tiết xem bảng trong [[40 - Macro Times]] và [[18 - Kill Zones]].
+> Nhớ trừ DST của Mỹ: khi Mỹ dùng **EDT (mùa hè)**, 10:00 ET ≈ **21:00 VN**; khi Mỹ dùng **EST (mùa đông)**, 10:00 ET ≈ **22:00 VN**. Chi tiết xem bảng trong [[40-Macro-Times]] và [[18-Kill-Zones]].
 
 **Session-open gaps như POI/target bổ sung:**
-- **NDOG — New Day Opening Gap** ([[23 - New Day Opening Gap]]): gap 17:00 ET; giá hay quay lại lấp, dùng làm POI/target intraday.
-- **NWOG — New Week Opening Gap** ([[24 - New Week Opening Gap]]): gap cuối tuần → thứ Hai; là mức tham chiếu tuần quan trọng, đặc biệt cho FX. Nếu FVG entry của bạn trùng NWOG/NDOG → +điểm confluence.
+- **NDOG — New Day Opening Gap** ([[23-New-Day-Opening-Gap]]): gap 17:00 ET; giá hay quay lại lấp, dùng làm POI/target intraday.
+- **NWOG — New Week Opening Gap** ([[24-New-Week-Opening-Gap]]): gap cuối tuần → thứ Hai; là mức tham chiếu tuần quan trọng, đặc biệt cho FX. Nếu FVG entry của bạn trùng NWOG/NDOG → +điểm confluence.
 
 > [!warning] News filter — bắt buộc cho cả hai thị trường
 > Đừng vào entry **sát giờ tin lớn** (NFP, CPI, FOMC, ECB/BoE rate) khi chưa có displacement rõ. Với NQ1, tin 08:30 ET và FOMC 14:00 ET dễ tạo "nến to giả" (volatility, không phải intent — xem khung CLV/wick ở mục 3). Với EURUSD/GBPUSD, tránh entry quanh tin USD (làm nhiễu SMT với DXY) và tin riêng của GBP (phá tương quan EURUSD↔GBPUSD). Quy tắc: có tin đỏ trong 15 phút tới → chờ tin ra + displacement xác nhận rồi mới tính entry.
@@ -556,15 +556,15 @@ Mô hình gốc chỉ yêu cầu "trong kill zone". Lớp này siết timing xu�
 | 1 | POI hạng ≥3 (Breaker/iFVG/**Unicorn**), không phải FVG trơ | +1 | 8.1 |
 | 2 | CE của FVG trùng dải OTE 62–79% | +1 | 8.1 |
 | 3 | SMT divergence xác nhận tại điểm sweep | +1 | 8.2 |
-| 4 | CISD xác nhận flip delivery trên LTF | +1 | [[41 - Change in State of Delivery]] |
+| 4 | CISD xác nhận flip delivery trên LTF | +1 | [[41-Change-in-State-of-Delivery]] |
 | 5 | Entry rơi trong **macro time** (không chỉ killzone) | +1 | 8.3 |
 | 6 | Trùng NWOG/NDOG hoặc HTF PD array (FVG/OB HTF) | +1 | 8.3 |
-| 7 | Target trùng **-2 SD projection** và/hoặc ERL rõ | +1 | [[31 - Standard Deviation]], 8.1 |
-| 8 | Có inducement bị quét trước POI (bẫy đám đông đã xong) | +1 | [[15 - Inducement]] |
+| 7 | Target trùng **-2 SD projection** và/hoặc ERL rõ | +1 | [[31-Standard-Deviation]], 8.1 |
+| 8 | Có inducement bị quét trước POI (bẫy đám đông đã xong) | +1 | [[15-Inducement]] |
 
 **Bước 2 — Quy đổi điểm → hạng → size:**
 
-| Tổng điểm | Hạng | Hành động & Size (theo [[43 - Position Sizing]]) |
+| Tổng điểm | Hạng | Hành động & Size (theo [[43-Position-Sizing]]) |
 |---:|---|---|
 | ≥ 5 | **A+** | Full size chuẩn **≤0.5%**. Setup ưu tiên cao nhất. |
 | 3–4 | **A** | Size chuẩn hoặc giảm nhẹ (0.3–0.5%). Vào nếu R:R tốt. |
@@ -610,11 +610,11 @@ Mô hình gốc chỉ yêu cầu "trong kill zone". Lớp này siết timing xu�
 > **Location của BIAS (khung cao) và Location của ENTRY (khung thấp) phải cùng phía chiết khấu.** Với Long: giá phải đang ở **discount của CẢ D1 lẫn H1**. Với Short: giá phải ở **premium của CẢ hai**. Bias D1 discount mà giá lại đang nằm ở **premium của range H1** = bạn đang mua "rẻ trên khung vĩ mô nhưng đắt trên khung thực thi" — và **draw ngắn hạn H1 sẽ kéo giá xuống discount H1 TRƯỚC** khi nhịp D1 tiếp diễn, đủ để quét stop của bạn.
 
 **Vì sao hai khung phải đồng pha — cơ chế fractal của dealing range:**
-Dealing range có tính lồng nhau ([[12 - Dealing Range]]). D1 range định nghĩa vùng premium/discount **vĩ mô** (giá đang đắt hay rẻ so với swing lớn); H1 range định nghĩa premium/discount **thực thi** (giá đang đắt hay rẻ so với nhịp gần nhất mà bạn thực sự bấm lệnh trong đó). Chúng là hai thước đo khác cấp độ của cùng một câu hỏi "giá đang ở đâu trong range". Khi hai thước đo **cùng chỉ discount**, mọi lực đều đẩy về một hướng: IPDA vừa "muốn" đưa giá lên BSL vĩ mô (D1), vừa hoàn tất việc gom thanh khoản ở đáy nhịp nhỏ (H1). Khi chúng **lệch pha**, tồn tại một draw ngắn hạn ngược chiều chưa được giải quyết — đó chính là cái bẫy.
+Dealing range có tính lồng nhau ([[12-Dealing-Range]]). D1 range định nghĩa vùng premium/discount **vĩ mô** (giá đang đắt hay rẻ so với swing lớn); H1 range định nghĩa premium/discount **thực thi** (giá đang đắt hay rẻ so với nhịp gần nhất mà bạn thực sự bấm lệnh trong đó). Chúng là hai thước đo khác cấp độ của cùng một câu hỏi "giá đang ở đâu trong range". Khi hai thước đo **cùng chỉ discount**, mọi lực đều đẩy về một hướng: IPDA vừa "muốn" đưa giá lên BSL vĩ mô (D1), vừa hoàn tất việc gom thanh khoản ở đáy nhịp nhỏ (H1). Khi chúng **lệch pha**, tồn tại một draw ngắn hạn ngược chiều chưa được giải quyết — đó chính là cái bẫy.
 
 **Cách map hai khung (làm đúng thứ tự):**
-1. **D1 range:** xác định swing high → swing low của range đang vận hành (operative range), kẻ mức **EQ 50%**. Long chỉ hợp lệ khi giá ở **nửa dưới** (discount); Short khi ở nửa trên (premium). Xem [[27 - Premium Discount]].
-2. **Chọn đúng "operative range":** nếu giá đã phá đáy range con nằm trong range lớn, **dời đáy xuống đáy range chính** rồi mới tính lại premium/discount — đừng đo trên một range đã bị vô hiệu (chính lỗi này xuất hiện trong backtest của bạn). Khi có displacement mới định hình lại range, re-map theo [[37 - Re-mapping Dealing Range sau Displacement]].
+1. **D1 range:** xác định swing high → swing low của range đang vận hành (operative range), kẻ mức **EQ 50%**. Long chỉ hợp lệ khi giá ở **nửa dưới** (discount); Short khi ở nửa trên (premium). Xem [[27-Premium-Discount]].
+2. **Chọn đúng "operative range":** nếu giá đã phá đáy range con nằm trong range lớn, **dời đáy xuống đáy range chính** rồi mới tính lại premium/discount — đừng đo trên một range đã bị vô hiệu (chính lỗi này xuất hiện trong backtest của bạn). Khi có displacement mới định hình lại range, re-map theo [[37-Re-mapping-Dealing-Range-sau-Displacement]].
 3. **H1 range:** kẻ range H1 gần nhất (swing high → low của nhịp thực thi), kẻ EQ. Chỉ tìm entry khi giá ở đúng nửa chiết khấu của H1 **trùng phía** với D1.
 4. **Kiểm tra "handoff":** entry hợp lệ khi giá **vừa sweep** một pool ở phía đối diện của range H1 rồi retrace về POI — cú sweep đó chính là thứ đưa giá từ premium-H1 (nếu đang lệch) về discount-H1, tái đồng pha với D1.
 
@@ -645,13 +645,13 @@ Dealing range có tính lồng nhau ([[12 - Dealing Range]]). D1 range định n
 > Việc "xuống M5/M1 quan sát" phải là bước **cuối cùng** sau khi HTF đã chín, chỉ để tinh chỉnh điểm vào (CE/OTE), siết stop và xác nhận trigger. Xuống LTF **quá sớm** — khi giá còn chưa tới POI H1 — là nguyên nhân số một của chase và FOMO: bạn sẽ nhìn thấy hàng chục "M5 MSS" và tự thuyết phục mình vào một lệnh mà khung cao chưa hề cho phép.
 
 **Ba điều kiện GATE bắt buộc trước khi mở M5/M1 (đủ CẢ BA mới drill):**
-1. **Đã có neo HTF:** bias D1/H4 rõ + draw on liquidity xác định. Không có neo = M5 chỉ là noise ([[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)]]).
+1. **Đã có neo HTF:** bias D1/H4 rõ + draw on liquidity xác định. Không có neo = M5 chỉ là noise ([[49-Confirmation-Timeframe-Timeframe-Layering-Khu-nhieu-MSS-trong-2022-Model]]).
 2. **Đúng vị trí:** giá đã **thực sự đi vào** vùng POI H1, ở đúng phía Premium/Discount và **đồng pha hai khung** (xem Chuyên sâu 1). Giá còn cách POI một quãng → chưa được drill.
 3. **Đúng thời gian:** đang trong hoặc sát cửa sổ **London Open / NY AM Killzone** (lý tưởng là macro 5–20 phút, xem §8.3). Ngoài killzone, M5/M1 gần như thuần spread + noise.
 
 **Khi đã pass GATE — LTF làm được gì cho bạn:**
 - **Refine entry:** thay vì vào cả vùng POI H1, chờ M5 sweep + displacement để lại **M5 FVG** nhỏ hơn, vào quanh CE M5 → stop chặt hơn, R:R cao hơn.
-- **Xác nhận trigger:** một **M5/M1 MSS** sau khi chạm POI H1 là xác nhận "delivery đã flip" ([[41 - Change in State of Delivery]]), giảm rủi ro bắt dao rơi.
+- **Xác nhận trigger:** một **M5/M1 MSS** sau khi chạm POI H1 là xác nhận "delivery đã flip" ([[41-Change-in-State-of-Delivery]]), giảm rủi ro bắt dao rơi.
 - **Định vị stop theo cấu trúc LTF:** đặt stop ngoài **điểm sweep LTF** thật, không phải ngoài mép POI (xem bài học Case 3 bên dưới).
 
 > [!warning] Ba cái bẫy khi xuống LTF
@@ -690,13 +690,13 @@ Giá xuyên pool nhưng **đóng nến luôn ở ngoài** pool → chưa chắc 
 Giá phá swing point rồi nến ngay sau đóng ngược vào trong → đây là **liquidity grab**, không phải MSS thật. **Xử lý:** áp tiêu chí "acceptance" ở §3 (nến sau không được đóng lấp lại vùng vừa phá). Ca này thường chính là **bước Sweep của một chu kỳ khác**, không phải Displacement của chu kỳ bạn đang chờ.
 
 **⑤ Gap cuối tuần / tin nhảy nuốt POI.**
-NWOG/NDOG ([[23 - New Day Opening Gap]], [[24 - New Week Opening Gap]]) hoặc một cú nhảy tin làm giá **gap qua** FVG entry → limit không khớp hoặc khớp giá xấu. **Xử lý:** chờ giá tái lập quanh gap; **tính lại R:R sau gap**, đừng giữ nguyên limit cũ với stop cũ vì cấu trúc rủi ro đã thay đổi.
+NWOG/NDOG ([[23-New-Day-Opening-Gap]], [[24-New-Week-Opening-Gap]]) hoặc một cú nhảy tin làm giá **gap qua** FVG entry → limit không khớp hoặc khớp giá xấu. **Xử lý:** chờ giá tái lập quanh gap; **tính lại R:R sau gap**, đừng giữ nguyên limit cũ với stop cũ vì cấu trúc rủi ro đã thay đổi.
 
 **⑥ Tin ra GIỮA lúc retrace.**
 Đang chờ giá về FVG thì một tin lớn ra, volatility phá vỡ cấu trúc vừa dựng. **Xử lý:** **hủy limit trước tin đỏ**; chờ tin ra + một displacement mới xác nhận lại chuỗi rồi mới tính entry. "Nến to do tin" thường fail khung CLV/wick ở §3 → không phải intent thật.
 
 **⑦ Trading into unswept liquidity (draw ngược chưa được giải quyết).**
-Bạn vào lệnh trong khi **vẫn còn một pool thanh khoản gần, đồng hướng draw ngắn hạn, chưa bị lấy** ở phía đối diện — giá sẽ đi lấy nó trước và quét stop bạn. Đây là **họ lỗi đã lặp lại 4 lần trong tháng 7/2026** của bạn (xem [[13 - Mistake - Trading Into Unswept Liquidity]]). **Xử lý:** trước khi bấm, hỏi *"còn pool nào gần hơn, cùng hướng draw ngắn hạn, chưa bị quét không?"* — nếu có, đó là target của giá trước khi tới lượt mình.
+Bạn vào lệnh trong khi **vẫn còn một pool thanh khoản gần, đồng hướng draw ngắn hạn, chưa bị lấy** ở phía đối diện — giá sẽ đi lấy nó trước và quét stop bạn. Đây là **họ lỗi đã lặp lại 4 lần trong tháng 7/2026** của bạn (xem [[13-Mistake-Trading-Into-Unswept-Liquidity]]). **Xử lý:** trước khi bấm, hỏi *"còn pool nào gần hơn, cùng hướng draw ngắn hạn, chưa bị quét không?"* — nếu có, đó là target của giá trước khi tới lượt mình.
 
 **⑧ Spread giãn tại London Open / rollover 5PM NY quét SL "oan".**
 SL của bạn tính theo giá mid nhưng khớp lệnh theo giá bid/ask; ngay khoảnh khắc mở phiên London (~14:00-14:05 giờ VN) hoặc rollover 5PM NY (~04:00-04:05 giờ VN), spread có thể giãn gấp 2-4 lần bình thường trong vài giây rồi thu hẹp lại. **Phát hiện sớm:** nhìn spread hiển thị trên nền tảng — nếu đang giãn bất thường ngay trước/sau các mốc giờ này, đó không phải volatility giá thật. **Xử lý đúng:** nới buffer SL thêm vài pip quanh các mốc chuyển phiên, hoặc tránh đặt entry mới trong khung 2-3 phút quanh giờ mở phiên/rollover nếu SL của bạn vốn đã chặt. **Bài học:** một lệnh bị "quét" đúng lúc rollover, sau đó giá đi đúng hướng dự đoán, là dấu hiệu kinh điển của lỗi này — không phải lỗi phân tích.
@@ -802,7 +802,7 @@ Tăng size chỉ nên xảy ra khi có đủ CẢ BA điều kiện: (a) đã đ
 - **Lỗi 1 — entry:** vào tại **cạnh trên BPR (Edge)** thay vì chờ **CE**, quyết định *in-the-moment* vì cảm giác "sợ lỡ" khi giá bật ra khỏi BPR — không theo một rule A/B định trước.
 - **Lỗi 2 — target:** TP đặt ở **internal liquidity** trong khi DOL đã tự xác định ở HTF là **FVG D1 1.35938–1.36970** (xa hơn nhiều) → chốt non; giá chạy tiếp mạnh sau khi thoát.
 
-**Bài học cốt lõi — outcome bias:** một lệnh **thắng vẫn có thể sai quy trình**, và cái nguy hiểm là **thắng sẽ CỦNG CỐ một hành vi (bắt cạnh vì FOMO) chưa hề được backtest validate**. Sửa: viết trước 2 kịch bản entry (A = limit tại CE ưu tiên R:R; B = aggressive tại cạnh *chỉ khi* MSS đã xác nhận), điều kiện chọn A/B phải khách quan. Xem [[08 - Mistake - Weak Displacement]].
+**Bài học cốt lõi — outcome bias:** một lệnh **thắng vẫn có thể sai quy trình**, và cái nguy hiểm là **thắng sẽ CỦNG CỐ một hành vi (bắt cạnh vì FOMO) chưa hề được backtest validate**. Sửa: viết trước 2 kịch bản entry (A = limit tại CE ưu tiên R:R; B = aggressive tại cạnh *chỉ khi* MSS đã xác nhận), điều kiện chọn A/B phải khách quan. Xem [[08-Mistake-Weak-Displacement]].
 → File gốc: `[[04 - Backtesting/2026-07-11/01 - Win - EURUSD - 2013-11-21- Long]]`.
 
 ### Case 2 — EURUSD 2005-05-02 Long: Loss -1R (chase, thiếu displacement)
@@ -813,7 +813,7 @@ Tăng size chỉ nên xảy ra khi có đủ CẢ BA điều kiện: (a) đã đ
 
 **Bằng chứng định lượng của FOMO:** entry **1.28639 nằm CAO HƠN cả đỉnh OB (1.28503)** — giá còn chưa thực sự vào sâu vùng chiết khấu khi lệnh đã kích hoạt. GATE fail ở 3 mục (displacement, MSS, FVG hợp lệ) → **đúng ra phải No Trade**. Giá sau đó quét xuống sâu hơn (lấy nốt thanh khoản), stop bị dính; **displacement thật chỉ xảy ra SAU đó** — đúng lúc bạn đã bị loại.
 
-**Bài học cốt lõi:** **Sweep KHÔNG phải tín hiệu vào lệnh** — nó là bước thu thập thanh khoản; xác nhận đảo chiều nằm ở **displacement + MSS + acceptance** theo sau. Bỏ mắt xích này là lỗi phổ biến và đắt nhất. Xem [[02 - Mistake - Enter before liquidity sweep]], [[08 - Mistake - Weak Displacement]].
+**Bài học cốt lõi:** **Sweep KHÔNG phải tín hiệu vào lệnh** — nó là bước thu thập thanh khoản; xác nhận đảo chiều nằm ở **displacement + MSS + acceptance** theo sau. Bỏ mắt xích này là lỗi phổ biến và đắt nhất. Xem [[02-Mistake-Enter-before-liquidity-sweep]], [[08-Mistake-Weak-Displacement]].
 → File gốc: `[[04 - Backtesting/2026-07-08/01 - Loss- EURUSD - 2005-05-02 - Long]]`.
 
 ### Case 3 — XAUUSD 2014-05-14 Short: "good loss" -1R, SL sai chỗ
@@ -824,7 +824,7 @@ Tăng size chỉ nên xảy ra khi có đủ CẢ BA điều kiện: (a) đã đ
 
 **Root cause DUY NHẤT — SL logic:** SL đặt **1302.715 = mép dưới RB** (một swing nhỏ M1), **không phải invalidation thật** của RB (đóng trên 1304.109). Một **retrace bình thường trong OTE** đủ để quét cái stop quá chật đó **trước khi** luận điểm short kịp chạy. R:R 3.22 "đẹp" chỉ là **sản phẩm phụ của SL chật** — không phải bằng chứng chất lượng A.
 
-**Bài học cốt lõi — đây là một "good loss":** bạn theo plan, đọc chart đúng, nhưng thua vì **SL sai chỗ**. Đừng để R:R đẹp đánh lừa: một lệnh "R:R thấp nhưng SL đúng invalidation" tốt hơn hẳn "R:R cao nhờ SL nhét trong POI". **Rule:** SL luôn neo trên invalidation POI + buffer; **SL nằm trong POI → chặn trần grade ở B** bất kể R:R. Liên kết [[13 - Mistake - Trading Into Unswept Liquidity]].
+**Bài học cốt lõi — đây là một "good loss":** bạn theo plan, đọc chart đúng, nhưng thua vì **SL sai chỗ**. Đừng để R:R đẹp đánh lừa: một lệnh "R:R thấp nhưng SL đúng invalidation" tốt hơn hẳn "R:R cao nhờ SL nhét trong POI". **Rule:** SL luôn neo trên invalidation POI + buffer; **SL nằm trong POI → chặn trần grade ở B** bất kể R:R. Liên kết [[13-Mistake-Trading-Into-Unswept-Liquidity]].
 → File gốc: `[[04 - Backtesting/2026-07-14/02 - Loss- XAUUSD- 2014-05-14- Short]]`.
 
 ### Case 4 — EURUSD 2021-05-07 Short: đáng ra No-Trade (sai bối cảnh)

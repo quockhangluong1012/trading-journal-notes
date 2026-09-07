@@ -46,7 +46,7 @@ Về bản chất, đây không phải là entry theo ICT 2022, mà là entry th
 | Cảm giác FOMO "sợ bỏ lỡ lệnh đẹp" chi phối quyết định | Amber |
 | Equal highs/equal lows hoặc old high/low còn "treo" ngay sau entry | Đỏ |
 | OB/FVG "quá sạch, quá rõ" mà không cần chờ đợi gì | Đỏ |
-| FVG hình thành nhưng không đi kèm MSS thật sự (xem [[06 - Mistake - Not Have Market Structure Shift]]) | Đỏ |
+| FVG hình thành nhưng không đi kèm MSS thật sự (xem [[06-Mistake-Not-Have-Market-Structure-Shift]]) | Đỏ |
 
 Checklist nhận diện nhanh trước khi bấm lệnh:
 
@@ -62,14 +62,14 @@ Checklist nhận diện nhanh trước khi bấm lệnh:
 
 ## 3. Cơ chế & Vì sao nguy hiểm
 
-Thị trường (đặc biệt các cặp có thanh khoản sâu và bị chi phối bởi order flow tổ chức) vận hành theo cơ chế **draw on liquidity**: giá luôn có xu hướng di chuyển về phía pool thanh khoản gần nhất chưa bị khai thác, vì đó là nơi tồn tại resting orders (stop loss của trader retail, pending orders) mà smart money cần đối ứng để fill khối lượng lớn. Xem [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]].
+Thị trường (đặc biệt các cặp có thanh khoản sâu và bị chi phối bởi order flow tổ chức) vận hành theo cơ chế **draw on liquidity**: giá luôn có xu hướng di chuyển về phía pool thanh khoản gần nhất chưa bị khai thác, vì đó là nơi tồn tại resting orders (stop loss của trader retail, pending orders) mà smart money cần đối ứng để fill khối lượng lớn. Xem [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]].
 
 Khi bạn entry trước khi sweep xảy ra:
 
-1. **Inducement được kích hoạt** — OB/FVG "đẹp" mà bạn thấy thường được thiết kế (về mặt cấu trúc giá) để hấp dẫn entry sớm. Xem [[15 - Inducement]].
+1. **Inducement được kích hoạt** — OB/FVG "đẹp" mà bạn thấy thường được thiết kế (về mặt cấu trúc giá) để hấp dẫn entry sớm. Xem [[15-Inducement]].
 2. **Bạn trở thành thanh khoản** — SL của bạn nằm đúng vị trí mà thuật toán/dòng lệnh tổ chức còn cần "ăn" để hoàn tất chu trình sweep. Bạn không giao dịch cùng chiều với smart money — bạn đang cấp thanh khoản đối ứng cho họ.
 3. **Sweep thật sự diễn ra sau đó** — giá tiếp tục chạy về pool SSL/BSL thật, quét luôn cả SL của bạn trên đường đi.
-4. **Draw on liquidity được giải phóng** — sau khi thanh khoản đã bị hấp thụ, giá mới thật sự đảo chiều và di chuyển đúng hướng bias ban đầu của bạn — nhưng bạn đã bị out từ trước. Đây chính là mô hình **turtle soup ngược lại bạn** (xem [[33 - Turtle Soup]]).
+4. **Draw on liquidity được giải phóng** — sau khi thanh khoản đã bị hấp thụ, giá mới thật sự đảo chiều và di chuyển đúng hướng bias ban đầu của bạn — nhưng bạn đã bị out từ trước. Đây chính là mô hình **turtle soup ngược lại bạn** (xem [[33-Turtle-Soup]]).
 
 Về mặt kỳ vọng (EV): entry sớm không làm bạn sai *hướng*, nó làm bạn sai *thời điểm và vị trí SL*. SL bị đặt tại nơi có xác suất bị chạm cao nhất trước khi di chuyển đúng hướng, nên win rate và R thực tế đều bị bào mòn dù setup "nhìn" hợp lệ.
 
@@ -118,11 +118,11 @@ Không phải mọi cú chạm vào pool thanh khoản đều có giá trị nh�
 
 ### 5.3. IRL vs ERL — quét cái nào mới đủ điều kiện entry
 
-Xem [[16 - Internal & External Range Liquidity (IRL & ERL)]]. Không phải lúc nào cũng cần một cú sweep external (old swing high/low) mới được entry — đôi khi internal range liquidity (một FVG chưa lấp, một inefficiency nội bộ) đã đủ để dẫn dắt giá tới POI. Việc xác định đúng target thanh khoản nào (IRL hay ERL) là điều kiện tiên quyết đang được nhắm tới trong con sóng hiện tại sẽ quyết định bạn cần chờ sweep nào trước khi entry được xem là "sạch".
+Xem [[16-Internal-External-Range-Liquidity-IRL-ERL]]. Không phải lúc nào cũng cần một cú sweep external (old swing high/low) mới được entry — đôi khi internal range liquidity (một FVG chưa lấp, một inefficiency nội bộ) đã đủ để dẫn dắt giá tới POI. Việc xác định đúng target thanh khoản nào (IRL hay ERL) là điều kiện tiên quyết đang được nhắm tới trong con sóng hiện tại sẽ quyết định bạn cần chờ sweep nào trước khi entry được xem là "sạch".
 
 ### 5.4. Timing — sweep theo kill zone và Judas swing
 
-Các cú sweep có chất lượng cao thường xảy ra trong [[18 - Kill Zones]] (London Open, New York Open) và gắn liền với Judas swing — cú đẩy giá sai hướng đầu phiên để quét thanh khoản trước khi đảo chiều theo bias thật. Một "cú sweep" xảy ra ngoài các khung giờ này (giữa phiên Á, giờ thấp thanh khoản) có độ tin cậy thấp hơn nhiều vì thiếu volume tổ chức đứng sau để xác nhận đó là hành động có chủ đích chứ không phải nhiễu giá ngẫu nhiên.
+Các cú sweep có chất lượng cao thường xảy ra trong [[18-Kill-Zones]] (London Open, New York Open) và gắn liền với Judas swing — cú đẩy giá sai hướng đầu phiên để quét thanh khoản trước khi đảo chiều theo bias thật. Một "cú sweep" xảy ra ngoài các khung giờ này (giữa phiên Á, giờ thấp thanh khoản) có độ tin cậy thấp hơn nhiều vì thiếu volume tổ chức đứng sau để xác nhận đó là hành động có chủ đích chứ không phải nhiễu giá ngẫu nhiên.
 
 ### 5.5. Đánh đổi kiên nhẫn / kỳ vọng (patience vs expectancy)
 
@@ -255,7 +255,7 @@ EV entry sớm = 0.28×2.0 − 0.72×1 = 0.56 − 0.72 = **−0.16R/lệnh**.
 
 **Độ nhạy theo loại pool bị bỏ qua:** nếu pool bị bỏ qua là external (old swing high/low, session high/low — pool lớn, được nhiều trader theo dõi), xác suất bị quét trước khi đảo chiều thật cao hơn (giả định winrate entry sớm giảm xuống 22%) so với khi pool là internal nhỏ (winrate entry sớm có thể lên tới 35%, vì pool nhỏ đôi khi giá "lướt qua" mà không cần quét sạch). Đây là lý do phần 5.3 cũ (IRL vs ERL) không phải chi tiết phụ — nó thay đổi trực tiếp độ nghiêm trọng của lỗi.
 
-**Chi phí kép khi entry sớm đi kèm mistake khác:** nếu entry sớm còn kết hợp với [[06 - Mistake - Not Have Market Structure Shift]] (vào khi chỉ có phản ứng giá, không hề có MSS thật), hai lỗi cộng hưởng theo cấp nhân: không chỉ SL sai vị trí (do chưa sweep) mà còn không có xác nhận cấu trúc nào cả — entry hoàn toàn dựa trên "cảm giác nến đẹp". Combo này gần như chắc chắn rơi vào nhóm winrate thấp nhất trong toàn bộ phổ lỗi ICT 2022 Model.
+**Chi phí kép khi entry sớm đi kèm mistake khác:** nếu entry sớm còn kết hợp với [[06-Mistake-Not-Have-Market-Structure-Shift]] (vào khi chỉ có phản ứng giá, không hề có MSS thật), hai lỗi cộng hưởng theo cấp nhân: không chỉ SL sai vị trí (do chưa sweep) mà còn không có xác nhận cấu trúc nào cả — entry hoàn toàn dựa trên "cảm giác nến đẹp". Combo này gần như chắc chắn rơi vào nhóm winrate thấp nhất trong toàn bộ phổ lỗi ICT 2022 Model.
 
 ### 11.4. Taxonomy các biến thể con
 
@@ -269,10 +269,10 @@ EV entry sớm = 0.28×2.0 − 0.72×1 = 0.56 − 0.72 = **−0.16R/lệnh**.
 
 | Kết hợp với | Cơ chế khuếch đại | Mức nguy hiểm tổ hợp |
 |---|---|---|
-| [[06 - Mistake - Not Have Market Structure Shift]] | Entry sớm thường đi kèm việc coi phản ứng giá đơn thuần là đủ, bỏ qua yêu cầu MSS thật — hai lỗi cùng gốc "coi tín hiệu yếu là tín hiệu mạnh" | Rất cao — combo phổ biến nhất, EV gần như chắc chắn âm |
-| [[03 - Mistake - Entry When MSS not in POI Zone]] | Nếu entry sớm xảy ra ở một OB/FVG không phải POI HTF thật (chỉ là inducement), lỗi entry sai thời điểm CỘNG lỗi sai vị trí xảy ra đồng thời — đây chính là gray-zone cần phân tích ở Debate/Case dưới | Rất cao |
-| [[09 - Mistake - Wrong daily bias]] | Nếu bias sai từ đầu, việc vội vào trước sweep khiến trader không có "khoảng đệm thời gian" (thời gian chờ sweep) để nhận ra bias có thể đang sai — chờ sweep vô tình đóng vai trò kiểm tra chéo bias | Trung bình-cao |
-| [[07 - Mistake - Risk more than 0.5% total account]] | Khi FOMO thúc đẩy entry sớm, trader cũng dễ tăng size để "không bỏ lỡ nhiều" — cùng cơ chế tâm lý cấp bách | Trung bình |
+| [[06-Mistake-Not-Have-Market-Structure-Shift]] | Entry sớm thường đi kèm việc coi phản ứng giá đơn thuần là đủ, bỏ qua yêu cầu MSS thật — hai lỗi cùng gốc "coi tín hiệu yếu là tín hiệu mạnh" | Rất cao — combo phổ biến nhất, EV gần như chắc chắn âm |
+| [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] | Nếu entry sớm xảy ra ở một OB/FVG không phải POI HTF thật (chỉ là inducement), lỗi entry sai thời điểm CỘNG lỗi sai vị trí xảy ra đồng thời — đây chính là gray-zone cần phân tích ở Debate/Case dưới | Rất cao |
+| [[09-Mistake-Wrong-daily-bias]] | Nếu bias sai từ đầu, việc vội vào trước sweep khiến trader không có "khoảng đệm thời gian" (thời gian chờ sweep) để nhận ra bias có thể đang sai — chờ sweep vô tình đóng vai trò kiểm tra chéo bias | Trung bình-cao |
+| [[07-Mistake-Risk-more-than-0.5-total-account]] | Khi FOMO thúc đẩy entry sớm, trader cũng dễ tăng size để "không bỏ lỡ nhiều" — cùng cơ chế tâm lý cấp bách | Trung bình |
 
 **Tổ hợp nguy hiểm nhất:** Entry sớm (02) + không có MSS thật (06) + vị trí không phải POI HTF hợp lệ (03) xảy ra đồng thời — đây là trường hợp trader vào lệnh dựa hoàn toàn vào "hình dạng nến đẹp" tại một nơi hoàn toàn không có cấu trúc nào bảo chứng, tương đương giao dịch ngẫu nhiên nhưng có ảo tưởng đang theo mô hình ICT 2022.
 
@@ -287,7 +287,7 @@ EV entry sớm = 0.28×2.0 − 0.72×1 = 0.56 − 0.72 = **−0.16R/lệnh**.
 
 ### Phe Ủng hộ (giữ rule cứng — sweep là điều kiện bắt buộc)
 
-1. **Sweep là bằng chứng trực tiếp duy nhất cho thấy pool thanh khoản đã được hấp thụ trước khi giá đảo chiều.** Không có nó, "phản ứng giá" chỉ là một quan sát mô tả (giá đã đổi hướng), không phải một giải thích nhân quả (tại sao nó đổi hướng) — thiếu sweep, MSS trở thành tương quan không có cơ chế, đúng như lỗi được mô tả ở [[03 - Mistake - Entry When MSS not in POI Zone]] về "xác nhận vô chủ".
+1. **Sweep là bằng chứng trực tiếp duy nhất cho thấy pool thanh khoản đã được hấp thụ trước khi giá đảo chiều.** Không có nó, "phản ứng giá" chỉ là một quan sát mô tả (giá đã đổi hướng), không phải một giải thích nhân quả (tại sao nó đổi hướng) — thiếu sweep, MSS trở thành tương quan không có cơ chế, đúng như lỗi được mô tả ở [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] về "xác nhận vô chủ".
 2. **Dữ liệu định lượng ở mục 11.3 cho thấy EV của entry sớm âm (−0.16R) trong khi entry đúng chuẩn dương (+0.58R)** — dù đây là số mô phỏng, chênh lệch định hướng (một dương, một âm) đủ lớn để làm cơ sở cho một gate cứng trong giai đoạn chưa có dữ liệu thật để phân loại tinh hơn.
 3. **Cho phép ngoại lệ "trông có vẻ hợp lý" chính là cửa mở cho FOMO.** Đây là bài học trực tiếp từ 11.4 (continuation entry giả) — bất kỳ ngoại lệ nào, dù được viết ra với guardrail rõ ràng (mục 5.6 cũ), đều có nguy cơ bị lạm dụng làm vỏ bọc hợp lý hóa khi cảm xúc đủ mạnh. Rule cứng, không ngoại lệ, loại bỏ hoàn toàn không gian để lạm dụng đó tồn tại.
 4. **Chờ sweep tạo ra một "khoảng đệm thời gian" có giá trị kiểm tra chéo** — không chỉ kiểm tra thanh khoản, mà còn cho trader thời gian nhận ra nếu bias/phân tích ban đầu có vấn đề (mục 11.5, tương tác với Wrong daily bias). Bỏ yêu cầu này đồng nghĩa bỏ luôn lớp bảo vệ phụ này.
@@ -343,7 +343,7 @@ Evidence tier hiện tại: **Tier 0** cho câu hỏi tổng quát ("sweep bắt
    - **Phản bác trung thực:** Chưa đáp được bằng số. Chỉ có thể đáp bằng lý thuyết (mục 5.5 cũ: patience vs expectancy, khẳng định EV chờ sweep cao hơn "gần như luôn" — nhưng đây vẫn là khẳng định chưa có số kèm theo).
    - **Falsification test:** Log riêng nhóm "quan sát thấy setup, chờ sweep, nhưng sweep không bao giờ đến / đến quá muộn để entry còn RR tốt" trong n≥20 lần chờ — đo % cơ hội bị mất hoàn toàn so với % cơ hội chỉ trì hoãn (vẫn entry được, chỉ muộn hơn). Nếu % mất hoàn toàn cao (ví dụ >40%), chi phí cơ hội của việc chờ tuyệt đối là đáng kể và cần cân nhắc lại rule.
 
-5. **Đòn tấn công:** "Guardrail continuation entry (mục 5.6 cũ) có 3 điều kiện nhưng điều kiện số 2 ('POI continuation nằm đúng phía discount/premium phù hợp bias') lại phụ thuộc vào đúng câu hỏi mà [[03 - Mistake - Entry When MSS not in POI Zone]] đang cảnh báo — hai note đang dùng chung một khái niệm mơ hồ (vị trí 'đúng' trong range) làm điều kiện cho nhau, tạo vòng lặp tham chiếu (circular dependency) không giải quyết được gốc vấn đề."
+5. **Đòn tấn công:** "Guardrail continuation entry (mục 5.6 cũ) có 3 điều kiện nhưng điều kiện số 2 ('POI continuation nằm đúng phía discount/premium phù hợp bias') lại phụ thuộc vào đúng câu hỏi mà [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] đang cảnh báo — hai note đang dùng chung một khái niệm mơ hồ (vị trí 'đúng' trong range) làm điều kiện cho nhau, tạo vòng lặp tham chiếu (circular dependency) không giải quyết được gốc vấn đề."
    - **Cơ sở:** Rất mạnh — đây là một quan sát cấu trúc thật giữa hai note, không phải suy diễn.
    - **Phản bác trung thực:** Không đáp được trong phạm vi note này — cần một định nghĩa POI validity thống nhất (đã có ở note 03, mục 5.1: 5 tiêu chí) được tham chiếu chéo rõ ràng, không lặp lại định nghĩa riêng ở mỗi note. Đây là backlog liên-note, không phải lỗi có thể sửa chỉ trong file này.
    - **Falsification test:** Không áp dụng theo kiểu số liệu — đây là kiểm tra tính nhất quán khái niệm (consistency audit), pass/fail dựa trên việc rà soát chéo cả hai note dùng đúng 5 tiêu chí POI validity như nhau.
@@ -425,7 +425,7 @@ Audit hành vi: mọi lệnh entry tại OB/FVG trong toàn bộ log backtest/li
 - **Hàng ngày:** đối chiếu nhanh mọi lệnh đã vào với câu hỏi 1, 3, 5 (pool status, MSS, kill zone) ngay cuối phiên.
 - **Hàng tuần:** chạy đủ 12 câu, tính rubric, đặc biệt theo dõi tỷ lệ `is_continuation_entry` có đang tăng bất thường không (red flag ở 14.5).
 - **Hàng tháng:** so sánh winrate nhóm sweep-chuẩn vs continuation-guardrail vs (nếu có) vi phạm — đây là dữ liệu trực tiếp giải quyết cuộc tranh biện ở mục 12.
-- **Auditor:** bản thân (dựa trên `sweep_pip_distance`/`close_back_inside_pct` đo được, không cảm nhận) + rule kiểm tra chéo với note [[03 - Mistake - Entry When MSS not in POI Zone]] (đòn tấn công #5 mục 13) + review định kỳ.
+- **Auditor:** bản thân (dựa trên `sweep_pip_distance`/`close_back_inside_pct` đo được, không cảm nhận) + rule kiểm tra chéo với note [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] (đòn tấn công #5 mục 13) + review định kỳ.
 
 ---
 
@@ -456,7 +456,7 @@ Audit hành vi: mọi lệnh entry tại OB/FVG trong toàn bộ log backtest/li
 - Câu 6 (IRL/ERL xác định trước): **FAIL** — không xác định pool nào đang được nhắm tới trước khi vào.
 - Câu 8 (semi-sweep không rationalize): **FAIL** — trader coi phản ứng giá là "đủ" mà không kiểm tra pool.
 - **Rubric: 0/4 câu liên quan PASS trong nhóm cốt lõi → hạng F.**
-- **Thiệt hại kép:** nếu đây còn là lệnh sau một lệnh thua trước đó trong ngày, tổ hợp với [[01 - Mistake - Emotional revenge trade]] (FOMO-Revenge, mục 11.5 note 01) khiến quyết định bỏ qua kiểm tra pool trở nên dễ xảy ra hơn — cảm xúc và kỹ thuật khuếch đại lẫn nhau.
+- **Thiệt hại kép:** nếu đây còn là lệnh sau một lệnh thua trước đó trong ngày, tổ hợp với [[01-Mistake-Emotional-revenge-trade]] (FOMO-Revenge, mục 11.5 note 01) khiến quyết định bỏ qua kiểm tra pool trở nên dễ xảy ra hơn — cảm xúc và kỹ thuật khuếch đại lẫn nhau.
 
 ### Case B — Xử lý đúng (trả giá bằng một lệnh thắng bị bỏ lỡ)
 
@@ -482,7 +482,7 @@ Audit hành vi: mọi lệnh entry tại OB/FVG trong toàn bộ log backtest/li
 
 **Phân tích cả hai cách xử lý:**
 - **Xử lý theo "sweep M5 đã đủ" (vì cùng khung với MSS/FVG entry):** hợp lý theo đúng câu chữ rule doctrine v2 ("sweep phải cùng khung với MSS/FVG") — MSS và FVG đều ở M5, sweep cũng ở M5, nhất quán về khung. Nhưng bỏ qua việc pool H1 lớn hơn, có trọng lượng cấu trúc cao hơn, vẫn còn nguyên — theo đúng lo-gic mục 5.3 cũ (IRL vs ERL) và mục 11.2 (ai là counterparty), pool H1 chưa bị quét vẫn là một "món nợ thanh khoản" treo lại, có thể kéo giá quay lại quét nó trước khi tiếp diễn thật.
-- **Xử lý theo "phải chờ pool H1 bị quét trước":** an toàn hơn về structural weight, nhưng có thể là quá thận trọng nếu pool H1 đó thực ra không phải target thật của con sóng hiện tại (ví dụ nếu draw on liquidity của leg hiện tại chỉ hướng tới một mức gần hơn, không cần đi xa tới pool H1 đó) — rơi vào chính lỗi được cảnh báo ở note liên quan [[03 - Mistake - Entry When MSS not in POI Zone]] mục 5.3 (Aligned với draw on liquidity): không phải mọi pool chưa quét đều là target bắt buộc.
+- **Xử lý theo "phải chờ pool H1 bị quét trước":** an toàn hơn về structural weight, nhưng có thể là quá thận trọng nếu pool H1 đó thực ra không phải target thật của con sóng hiện tại (ví dụ nếu draw on liquidity của leg hiện tại chỉ hướng tới một mức gần hơn, không cần đi xa tới pool H1 đó) — rơi vào chính lỗi được cảnh báo ở note liên quan [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] mục 5.3 (Aligned với draw on liquidity): không phải mọi pool chưa quét đều là target bắt buộc.
 
 **Tiêu chí tie-break đề xuất (Tier 0, chưa kiểm định):** ưu tiên coi sweep M5 nội khung là ĐỦ ĐIỀU KIỆN chỉ khi ĐỒNG THỜI: (a) pool H1 chưa quét nằm ở khoảng cách xa hơn đáng kể (ví dụ >1.5x average true range H1) so với pool M5 vừa bị quét — tức là về structural distance, pool M5 và pool H1 không thuộc "cùng một cụm thanh khoản", và (b) hướng đi từ entry tới target không đi ngang qua pool H1 đó (nếu TP nằm giữa entry và pool H1, pool H1 vẫn là rủi ro treo lơ lửng đúng hướng TP). Nếu thiếu (a) hoặc (b), mặc định coi pool H1 là "chưa được giải quyết" và hạ mức tin cậy setup xuống một bậc (ví dụ giảm size hoặc chờ thêm xác nhận SMT).
 
@@ -501,6 +501,6 @@ Audit hành vi: mọi lệnh entry tại OB/FVG trong toàn bộ log backtest/li
 
 ## 16. Liên kết
 
-**Concepts:** [[20 - Liquidity Sweep]] · [[15 - Inducement]] · [[19 - Liquidity]] · [[16 - Internal & External Range Liquidity (IRL & ERL)]] · [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]] · [[33 - Turtle Soup]] · [[18 - Kill Zones]]
+**Concepts:** [[20-Liquidity-Sweep]] · [[15-Inducement]] · [[19-Liquidity]] · [[16-Internal-External-Range-Liquidity-IRL-ERL]] · [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]] · [[33-Turtle-Soup]] · [[18-Kill-Zones]]
 
-**Mistakes liên quan:** [[06 - Mistake - Not Have Market Structure Shift]] · [[03 - Mistake - Entry When MSS not in POI Zone]] · [[09 - Mistake - Wrong daily bias]]
+**Mistakes liên quan:** [[06-Mistake-Not-Have-Market-Structure-Shift]] · [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] · [[09-Mistake-Wrong-daily-bias]]

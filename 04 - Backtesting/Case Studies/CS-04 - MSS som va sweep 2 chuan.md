@@ -45,8 +45,8 @@ Ngoài case trục, `batchD.md` xác nhận rule drift **hệ thống** ở fiel
 
 | Chuẩn | Mô tả | Ví dụ dùng đúng |
 |---|---|---|
-| Chuẩn 1 (đúng canon) | Lấy resting liquidity **có tên** (PDH/PDL/EQH/EQL/session level), giá trị số cụ thể | [[../2026-07-09/01 - Win - EURUSD - 2005-05-11- Short\|EURUSD 11/5/2005]] — neo EQH H1 = **1.28912** |
-| Chuẩn 2 (lỏng) | "Giá chạm cạnh một PD array khác" (OB/FVG/Breaker), không kèm tên level thanh khoản | [[../2026-07-10/02 - Loss- EURUSD - 2021-05-07- Short\|EURUSD 7/5/2021]] — gọi "sweep cạnh trên OB" không nêu tên level trước khi coi là sweep |
+| Chuẩn 1 (đúng canon) | Lấy resting liquidity **có tên** (PDH/PDL/EQH/EQL/session level), giá trị số cụ thể | [[01 - Win - EURUSD - 2005-05-11- Short|EURUSD 11/5/2005]] — neo EQH H1 = **1.28912** |
+| Chuẩn 2 (lỏng) | "Giá chạm cạnh một PD array khác" (OB/FVG/Breaker), không kèm tên level thanh khoản | [[02 - Loss- EURUSD - 2021-05-07- Short|EURUSD 7/5/2021]] — gọi "sweep cạnh trên OB" không nêu tên level trước khi coi là sweep |
 
 Đối chiếu các Win có sweep đúng trình tự (chuẩn 1) — vd EURUSD 11/5/2005 — cho thấy khi sweep neo vào một level có tên cụ thể, chuỗi Sweep→Displacement→MSS rõ ràng hơn và không cần tranh luận về AMBIGUOUS. Ngược lại, các case dùng chuẩn 2 (kể cả không phải case Loss) đều khó phân xử dứt điểm bằng doctrine vì thiếu đối tượng tham chiếu rõ ràng để kiểm.
 

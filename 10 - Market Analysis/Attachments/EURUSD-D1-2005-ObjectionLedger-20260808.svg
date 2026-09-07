@@ -1,0 +1,119 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="1200" height="900" fill="#fcfcfb"/>
+
+  <text x="40" y="38" font-size="18" font-weight="700" fill="#0b0b0b">EURUSD D1 2005–2006 — Devil's Advocate Ledger</text>
+  <text x="40" y="58" font-size="12.5" fill="#52514e">5 objections, 3 vòng tranh luận — trạng thái cuối cùng của từng objection</text>
+
+  <!-- column headers -->
+  <g font-size="11" font-weight="700" fill="#898781">
+    <text x="56" y="92">#</text>
+    <text x="96" y="92">TIER / SEVERITY</text>
+    <text x="300" y="92">CLAIM BỊ PHẢN BIỆN</text>
+    <text x="760" y="92">CÁCH ĐÓNG</text>
+    <text x="1050" y="92" text-anchor="end">TRẠNG THÁI</text>
+  </g>
+  <line x1="40" y1="102" x2="1160" y2="102" stroke="#c3c2b7" stroke-width="1"/>
+
+  <!-- ROW O1 -->
+  <g>
+    <circle cx="56" cy="140" r="16" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.4"/>
+    <text x="56" y="145" font-size="13" font-weight="700" text-anchor="middle" fill="#0b0b0b">O1</text>
+    <rect x="96" y="124" width="150" height="18" rx="3" fill="#4a3aa7" opacity="0.12"/>
+    <text x="101" y="137" font-size="10" fill="#4a3aa7" font-weight="700">SELF-CONTRADICTION</text>
+    <text x="96" y="158" font-size="10.5" fill="#e34948" font-weight="600">fatal</text>
+    <text x="300" y="134" font-size="12" fill="#0b0b0b">"W1 cũng đang Bearish" — khẳng định bằng lời, không có</text>
+    <text x="300" y="150" font-size="12" fill="#0b0b0b">chart W1 kèm theo. Toàn bộ khung "pullback trong Bearish</text>
+    <text x="300" y="166" font-size="12" fill="#0b0b0b">lớn hơn" phụ thuộc vào claim này.</text>
+    <text x="760" y="134" font-size="11.5" fill="#52514e">User gửi chart W1 thật: LH/LL Bearish rõ,</text>
+    <text x="760" y="150" font-size="11.5" fill="#52514e">chưa bị phá tính tới bar hiện tại.</text>
+    <rect x="990" y="122" width="130" height="24" rx="12" fill="#0ca30c" opacity="0.15"/>
+    <text x="1055" y="139" font-size="11.5" fill="#0ca30c" font-weight="700" text-anchor="middle">CLOSED</text>
+  </g>
+  <line x1="40" y1="186" x2="1160" y2="186" stroke="#e1e0d9" stroke-width="1"/>
+
+  <!-- ROW O2 -->
+  <g>
+    <circle cx="56" cy="224" r="16" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.4"/>
+    <text x="56" y="229" font-size="13" font-weight="700" text-anchor="middle" fill="#0b0b0b">O2</text>
+    <rect x="96" y="208" width="90" height="18" rx="3" fill="#2a78d6" opacity="0.12"/>
+    <text x="101" y="221" font-size="10" fill="#2a78d6" font-weight="700">ARITHMETIC</text>
+    <text x="96" y="242" font-size="10.5" fill="#eda100" font-weight="600">material</text>
+    <text x="300" y="218" font-size="12" fill="#0b0b0b">"Giá hiện tại đang trong Discount" — 45.6% của D1 range</text>
+    <text x="300" y="234" font-size="12" fill="#0b0b0b">theo convention chuẩn (&lt;45% discount / &gt;55% premium)</text>
+    <text x="300" y="250" font-size="12" fill="#0b0b0b">thực ra là Equilibrium, không phải Discount.</text>
+    <text x="760" y="218" font-size="11.5" fill="#52514e">User chấp nhận, sửa label thành</text>
+    <text x="760" y="234" font-size="11.5" fill="#52514e">"Equilibrium, nghiêng nhẹ discount".</text>
+    <rect x="990" y="206" width="130" height="24" rx="12" fill="#0ca30c" opacity="0.15"/>
+    <text x="1055" y="223" font-size="11.5" fill="#0ca30c" font-weight="700" text-anchor="middle">CLOSED</text>
+  </g>
+  <line x1="40" y1="270" x2="1160" y2="270" stroke="#e1e0d9" stroke-width="1"/>
+
+  <!-- ROW O3 -->
+  <g>
+    <circle cx="56" cy="322" r="16" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.4"/>
+    <text x="56" y="327" font-size="13" font-weight="700" text-anchor="middle" fill="#0b0b0b">O3</text>
+    <rect x="96" y="292" width="60" height="18" rx="3" fill="#1baf7a" opacity="0.15"/>
+    <text x="101" y="305" font-size="10" fill="#0a7a52" font-weight="700">CHART</text>
+    <text x="96" y="326" font-size="10.5" fill="#eda100" font-weight="600">material →</text>
+    <text x="96" y="340" font-size="10.5" fill="#fab219" font-weight="600">minor</text>
+    <text x="300" y="302" font-size="12" fill="#0b0b0b">"DOL chính là D1 Dealing Range High (1.25942)" — cùng</text>
+    <text x="300" y="318" font-size="12" fill="#0b0b0b">chart cho thấy đỉnh Mar'05 (1.34806) cao hơn, chưa bị</text>
+    <text x="300" y="334" font-size="12" fill="#0b0b0b">quét — 1.25942 nhiều khả năng chỉ là internal liquidity.</text>
+    <text x="760" y="302" font-size="11.5" fill="#52514e">User xác nhận 1.34806 (11/03/2005) là</text>
+    <text x="760" y="318" font-size="11.5" fill="#52514e">DOL thật; đổi câu thành "Target = 1.25942,</text>
+    <text x="760" y="334" font-size="11.5" fill="#52514e">DOL = các swing high phía trên".</text>
+    <rect x="990" y="290" width="130" height="24" rx="12" fill="#fab219" opacity="0.18"/>
+    <text x="1055" y="307" font-size="11.5" fill="#a06800" font-weight="700" text-anchor="middle">NARROWED</text>
+  </g>
+  <line x1="40" y1="370" x2="1160" y2="370" stroke="#e1e0d9" stroke-width="1"/>
+
+  <!-- ROW O4 -->
+  <g>
+    <circle cx="56" cy="422" r="16" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.4"/>
+    <text x="56" y="427" font-size="13" font-weight="700" text-anchor="middle" fill="#0b0b0b">O4</text>
+    <rect x="96" y="392" width="140" height="18" rx="3" fill="#eb6834" opacity="0.15"/>
+    <text x="101" y="405" font-size="10" fill="#a04a1f" font-weight="700">UNSUPPORTED</text>
+    <text x="96" y="426" font-size="10.5" fill="#eda100" font-weight="600">material</text>
+    <text x="300" y="402" font-size="12" fill="#0b0b0b">"Displacement sau khi lấy sell-side liquidity" — pool nêu</text>
+    <text x="300" y="418" font-size="12" fill="#0b0b0b">tên (1.18651, quét 4–15/11) cách displacement (03/01) tới</text>
+    <text x="300" y="434" font-size="12" fill="#0b0b0b">7 tuần — quá xa để là nhiên liệu trực tiếp cho MSS/BOS.</text>
+    <text x="760" y="402" font-size="11.5" fill="#52514e">User cho pool đúng, sát hơn: equal lows</text>
+    <text x="760" y="418" font-size="11.5" fill="#52514e">22/11+28/11, quét 02/12 (Low 1.16608),</text>
+    <text x="760" y="434" font-size="11.5" fill="#52514e">MSS 10 ngày sau — đúng chuẩn Step 2.</text>
+    <rect x="990" y="390" width="130" height="24" rx="12" fill="#0ca30c" opacity="0.15"/>
+    <text x="1055" y="407" font-size="11.5" fill="#0ca30c" font-weight="700" text-anchor="middle">WITHDRAWN</text>
+  </g>
+  <line x1="40" y1="470" x2="1160" y2="470" stroke="#e1e0d9" stroke-width="1"/>
+
+  <!-- ROW O5 -->
+  <g>
+    <circle cx="56" cy="508" r="16" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="1.4"/>
+    <text x="56" y="513" font-size="13" font-weight="700" text-anchor="middle" fill="#0b0b0b">O5</text>
+    <rect x="96" y="492" width="90" height="18" rx="3" fill="#2a78d6" opacity="0.12"/>
+    <text x="101" y="505" font-size="10" fill="#2a78d6" font-weight="700">ARITHMETIC</text>
+    <text x="96" y="526" font-size="10.5" fill="#898781" font-weight="600">minor</text>
+    <text x="300" y="502" font-size="12" fill="#0b0b0b">Nến "MSS 04/01" ghi Open 1.21520 nhưng High 1.21438 —</text>
+    <text x="300" y="518" font-size="12" fill="#0b0b0b">High &lt; Open, bất khả thi cho bất kỳ nến nào.</text>
+    <text x="760" y="502" font-size="11.5" fill="#52514e">User sửa Open → 1.20178; High ≥ mọi</text>
+    <text x="760" y="518" font-size="11.5" fill="#52514e">giá trị khác — hợp lệ. (Nến này về sau</text>
+    <text x="760" y="534" font-size="11.5" fill="#52514e">được xác định lại là nến BOS, không phải MSS.)</text>
+    <rect x="990" y="490" width="130" height="24" rx="12" fill="#0ca30c" opacity="0.15"/>
+    <text x="1055" y="507" font-size="11.5" fill="#0ca30c" font-weight="700" text-anchor="middle">WITHDRAWN</text>
+  </g>
+  <line x1="40" y1="570" x2="1160" y2="570" stroke="#c3c2b7" stroke-width="1"/>
+
+  <!-- VERDICT BANNER -->
+  <rect x="40" y="600" width="1120" height="130" rx="8" fill="#0ca30c" opacity="0.07" stroke="#0ca30c" stroke-width="1.2"/>
+  <text x="64" y="634" font-size="15" font-weight="700" fill="#046b04">VERDICT: SURVIVES THIS ATTACK</text>
+  <text x="64" y="658" font-size="12" fill="#0b0b0b">Evidence sufficiency: FULL — D1 và W1 đều được xác nhận bằng chart thật, không còn khoảng trống chặn việc đánh giá load-bearing claim.</text>
+  <text x="64" y="678" font-size="12" fill="#0b0b0b">Đã tấn công và không phá được: hướng D1 bias, backdrop W1 Bearish, toàn bộ chuỗi sweep → MSS (12/12) → BOS (03/01), CE arithmetic của 2 FVG.</text>
+  <text x="64" y="698" font-size="12" fill="#52514e">Không chứng minh: H1/M5 sẽ xác nhận ra sao (chưa xuống khung đó), hay lệnh sẽ thắng — chỉ là quy trình đọc D1/W1 đã đứng vững qua đối kháng.</text>
+  <text x="64" y="718" font-size="11.5" fill="#52514e" font-style="italic">Opposite case strength: weaker but non-trivial — chỉ còn sống nếu swing bị phá bởi MSS 12/12/2005 hóa ra không đáng kể về cấu trúc.</text>
+
+  <!-- legend -->
+  <g font-size="11" fill="#52514e">
+    <rect x="40" y="770" width="14" height="14" rx="7" fill="#0ca30c" opacity="0.25"/><text x="60" y="781">Closed / Withdrawn — objection không còn hiệu lực</text>
+    <rect x="360" y="770" width="14" height="14" rx="7" fill="#fab219" opacity="0.35"/><text x="380" y="781">Narrowed — thu hẹp về 1 điểm nhỏ, không còn material</text>
+  </g>
+  <text x="40" y="820" font-size="10.5" fill="#898781">Nguồn: 3 lượt phản biện devil's-advocate trên case backtest EURUSD D1 05/09/2005–04/01/2006 (FXReplay), 08/08/2026.</text>
+</svg>

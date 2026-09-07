@@ -41,13 +41,13 @@ updated: 2026-07-28
 - Xu hướng hiện tại đã **thật sự yếu** chưa, hay pullback này chỉ là nhịp nghỉ để tiếp diễn?
 - Cực trị vừa hình thành có phải là **điểm đảo chiều** đáng để đặt lệnh ngược xu hướng không?
 - Tôi nên vào ở **tầng nào** — chờ thêm xác nhận (an toàn hơn) hay vào sớm (R lớn hơn nhưng rủi ro cao hơn)?
-- Cú phá cấu trúc vừa rồi là **MSS thật** (đảo chiều) hay chỉ là [[05 - BOS - Break of Structure]] nội bộ theo xu hướng cũ?
+- Cú phá cấu trúc vừa rồi là **MSS thật** (đảo chiều) hay chỉ là [[05-BOS-Break-of-Structure]] nội bộ theo xu hướng cũ?
 
 ### Ba pattern này KHÔNG phải là gì
 
 - **Không phải** ba tín hiệu rời rạc để chọn một — chúng là **một chuỗi có thứ tự**. Giá trị nằm ở việc chúng chồng lên nhau đúng trình tự.
 - **Không phải** lý do để vào lệnh chỉ với Stage 1. IFVG đơn lẻ là dấu hiệu **yếu nhất**; trade nó một mình là lỗi phổ biến nhất.
-- **Không phải** setup dùng được ở bất kỳ đâu trên chart. Đảo chiều chỉ đáng tin khi diễn ra tại một **HTF PD array** (xem [[27 - Premium Discount]]) — không phải giữa range.
+- **Không phải** setup dùng được ở bất kỳ đâu trên chart. Đảo chiều chỉ đáng tin khi diễn ra tại một **HTF PD array** (xem [[27-Premium-Discount]]) — không phải giữa range.
 - **Không** thay thế được bước **retest**. MSS xác nhận cấu trúc, nhưng entry vẫn cần chờ giá retrace về POI post-MSS; vào ngay cây MSS thường bị quét stop.
 - **Không** đảm bảo đảo chiều — nó chỉ nâng xác suất. Vẫn cần quản trị rủi ro ≤0.5% cho mỗi lệnh.
 
@@ -61,7 +61,7 @@ updated: 2026-07-28
 
 **(b) Xếp chồng xác nhận độc lập làm giảm mạnh tín hiệu giả.** Mỗi tầng đơn lẻ đều có tỉ lệ "false positive" cao: một FVG bị phá có thể chỉ là nhiễu; một CISD có thể bị phủ nhận ngay; một cú phá swing có thể là sweep. Nhưng xác suất **cả ba cùng sai theo đúng thứ tự** thấp hơn nhiều. Đây là logic confluence: mỗi lớp không cộng mà **nhân** độ tin cậy, vì chúng đo những khía cạnh khác nhau của cùng hiện tượng (gap delivery → candle delivery → structure).
 
-**(c) Thứ tự mang thông tin.** IFVG/BPR **trước** CISD **trước** MSS là trình tự tự nhiên của một đảo chiều thật. Nếu bạn thấy "MSS" mà trước đó **không** có dấu hiệu yếu (Stage 1) và **không** có CISD, rất có thể đó là [[05 - BOS - Break of Structure]] theo xu hướng cũ hoặc một cú sweep — không phải đảo chiều. Thứ tự sai = cảnh báo đọc nhầm.
+**(c) Thứ tự mang thông tin.** IFVG/BPR **trước** CISD **trước** MSS là trình tự tự nhiên của một đảo chiều thật. Nếu bạn thấy "MSS" mà trước đó **không** có dấu hiệu yếu (Stage 1) và **không** có CISD, rất có thể đó là [[05-BOS-Break-of-Structure]] theo xu hướng cũ hoặc một cú sweep — không phải đảo chiều. Thứ tự sai = cảnh báo đọc nhầm.
 
 **(d) Bắt SỚM nhưng không bắt DAO RƠI.** Cái hay của chuỗi là nó cho phép vào **trước** khi đảo chiều rõ ràng với đám đông, nhưng vẫn có **cấu trúc rủi ro xác định** (stop ngoài cực trị MSS). Bạn không đoán đáy/đỉnh mù quáng — bạn chờ bằng chứng tích lũy đủ rồi mới hành động, và mỗi tầng cho bạn một điểm vào với R:R khác nhau.
 
@@ -73,12 +73,12 @@ updated: 2026-07-28
 ## 3. Bối cảnh sử dụng
 
 ### Khi nào chuỗi có giá trị cao?
-- [ ] Giá đang phản ứng tại một **HTF PD array** rõ ràng (Daily/4h FVG, OB, premium/discount — xem [[27 - Premium Discount]])
+- [ ] Giá đang phản ứng tại một **HTF PD array** rõ ràng (Daily/4h FVG, OB, premium/discount — xem [[27-Premium-Discount]])
 - [ ] Đảo chiều **tại discount** (cho bullish) hoặc **tại premium** (cho bearish)
-- [ ] Có **draw on liquidity** hợp lý ở phía đối diện để làm target (equal highs/lows, ERL — xem [[16 - Internal & External Range Liquidity (IRL & ERL)]])
-- [ ] Trong **killzone** hoặc **macro window** (đặc biệt 09:50 NY-AM — xem [[40 - Macro Times]])
+- [ ] Có **draw on liquidity** hợp lý ở phía đối diện để làm target (equal highs/lows, ERL — xem [[16-Internal-External-Range-Liquidity-IRL-ERL]])
+- [ ] Trong **killzone** hoặc **macro window** (đặc biệt 09:50 NY-AM — xem [[40-Macro-Times]])
 - [ ] Chuỗi diễn ra **theo đúng thứ tự** IFVG/BPR → CISD → MSS
-- [ ] Có thêm confluence: [[42 - SMT Divergence]] tại cực trị, sweep thanh khoản trước Stage 1
+- [ ] Có thêm confluence: [[42-SMT-Divergence]] tại cực trị, sweep thanh khoản trước Stage 1
 
 ### Khi nào nên bỏ qua?
 - [ ] Không có **HTF PD array** — chỉ là đảo chiều giữa range
@@ -92,7 +92,7 @@ updated: 2026-07-28
 
 ## 4. Stage 1 — IFVG / BPR
 
-Trong một xu hướng khỏe, giá **tôn trọng** các FVG: chạm vào là bật ra tiếp tục xu hướng. Dấu hiệu YẾU đầu tiên xuất hiện khi giá **bắt đầu phá** FVG — đóng cửa (close) vượt qua nó theo chiều ngược lại. Khi đó FVG cũ trở thành **IFVG (Inversion FVG)** và đảo vai trò support ↔ resistance (xem [[17 - Inverse Fair Value Gap - iFVG]]). Nếu **trong lúc phá**, giá tạo thêm **một FVG ngược chiều** đè lên FVG cũ, phần chồng nhau là **BPR (Balanced Price Range)** — tín hiệu mạnh hơn (xem [[03 - Balanced Price Range]], [[13 - FVG  - Fair Value Gap]]).
+Trong một xu hướng khỏe, giá **tôn trọng** các FVG: chạm vào là bật ra tiếp tục xu hướng. Dấu hiệu YẾU đầu tiên xuất hiện khi giá **bắt đầu phá** FVG — đóng cửa (close) vượt qua nó theo chiều ngược lại. Khi đó FVG cũ trở thành **IFVG (Inversion FVG)** và đảo vai trò support ↔ resistance (xem [[17-Inverse-Fair-Value-Gap-iFVG]]). Nếu **trong lúc phá**, giá tạo thêm **một FVG ngược chiều** đè lên FVG cũ, phần chồng nhau là **BPR (Balanced Price Range)** — tín hiệu mạnh hơn (xem [[03-Balanced-Price-Range]], [[13-FVG-Fair-Value-Gap]]).
 
 ![[Reversal-Advanced-IFVG-BPR.svg|697]]
 
@@ -113,7 +113,7 @@ Trong một xu hướng khỏe, giá **tôn trọng** các FVG: chạm vào là 
 
 ## 5. Stage 2 — CISD
 
-**CISD (Change in State of Delivery)** là xác nhận cấp nến rằng "chế độ giao hàng" của giá đã đổi chiều. Bullish delivery = chuỗi nến bullish liên tiếp; khi giá **phá xuống dưới ĐIỂM BẮT ĐẦU** của chuỗi bullish đó → CISD sang phía bán. Điểm bắt đầu của bullish delivery = **body low (giá close) của cây bearish CUỐI CÙNG** ngay trước chuỗi nến bullish (xem [[41 - Change in State of Delivery]]).
+**CISD (Change in State of Delivery)** là xác nhận cấp nến rằng "chế độ giao hàng" của giá đã đổi chiều. Bullish delivery = chuỗi nến bullish liên tiếp; khi giá **phá xuống dưới ĐIỂM BẮT ĐẦU** của chuỗi bullish đó → CISD sang phía bán. Điểm bắt đầu của bullish delivery = **body low (giá close) của cây bearish CUỐI CÙNG** ngay trước chuỗi nến bullish (xem [[41-Change-in-State-of-Delivery]]).
 
 ![[Reversal-Advanced-CISD.svg|697]]
 
@@ -129,13 +129,13 @@ Trong một xu hướng khỏe, giá **tôn trọng** các FVG: chạm vào là 
 > [!warning] CISD là BODY, không phải WICK
 > Ba lỗi giết chết CISD: (1) dùng **wick** (đuôi nến) thay vì body — mức sẽ quá xa, dễ bị quét; (2) dùng **open của cây directional đầu tiên** thay vì close của cây đối chiều cuối; (3) đánh CISD giữa range không context. Sai mức = CISD giả, bị sweep rồi stop-out.
 
-**Cách dùng Stage 2:** Sau khi CISD kích hoạt, **chờ giá retrace về Breaker/BPR/FVG/IFVG** hình thành *trong lúc* CISD (xem [[04 - Breaker Block]]), rồi vào **theo chiều CISD**. Đây là điểm vào **aggressive** — sớm hơn MSS, R lớn hơn, nhưng chưa có xác nhận cấu trúc nên rủi ro cao hơn tầng 3.
+**Cách dùng Stage 2:** Sau khi CISD kích hoạt, **chờ giá retrace về Breaker/BPR/FVG/IFVG** hình thành *trong lúc* CISD (xem [[04-Breaker-Block]]), rồi vào **theo chiều CISD**. Đây là điểm vào **aggressive** — sớm hơn MSS, R lớn hơn, nhưng chưa có xác nhận cấu trúc nên rủi ro cao hơn tầng 3.
 
 ---
 
 ## 6. Stage 3 — MSS
 
-**MSS (Market Structure Shift)** là xác nhận thứ ba / gần cuối: giá **phá swing point đối-xu-hướng GẦN NHẤT**, tuyên bố phe cũ đã mất kiểm soát. Bullish MSS = phá **lower swing high gần nhất** (phe bán hết lực); bearish MSS = phá **higher swing low gần nhất** (phe mua hết lực). Xem [[21 - Market Structure Shift]].
+**MSS (Market Structure Shift)** là xác nhận thứ ba / gần cuối: giá **phá swing point đối-xu-hướng GẦN NHẤT**, tuyên bố phe cũ đã mất kiểm soát. Bullish MSS = phá **lower swing high gần nhất** (phe bán hết lực); bearish MSS = phá **higher swing low gần nhất** (phe mua hết lực). Xem [[21-Market-Structure-Shift]].
 
 ![[Reversal-Advanced-MSS.svg|697]]
 
@@ -144,7 +144,7 @@ Trong một xu hướng khỏe, giá **tôn trọng** các FVG: chạm vào là 
 **Điểm phân biệt then chốt — "swing gần nhất", không phải swing bất kỳ:**
 
 - MSS thật phải phá **swing point đối-xu-hướng gần nhất** — tức pullback cuối cùng ngược xu hướng ngay trước cực trị.
-- Phá một **pullback nhỏ nội bộ** không đủ tư cách MSS; đó là dao động thường hoặc [[05 - BOS - Break of Structure]] tiếp diễn.
+- Phá một **pullback nhỏ nội bộ** không đủ tư cách MSS; đó là dao động thường hoặc [[05-BOS-Break-of-Structure]] tiếp diễn.
 - Phá một swing high ở **xa phía trên** (không phải cái gần nhất) = đọc sai — bạn đang đợi quá nhiều và có thể đã bỏ lỡ, hoặc gán nhãn nhầm.
 - **MSS ≠ BOS:** BOS phá cấu trúc **theo** xu hướng (tiếp diễn); MSS phá cấu trúc **ngược** xu hướng (đảo chiều). Cùng một cú phá, ý nghĩa ngược nhau tùy nó phá swing nào.
 
@@ -215,7 +215,7 @@ Ba tầng không ngang nhau — mỗi tầng là một **điểm trên đường
 
 **Bước 8 — Stop.** Đặt **ngoài cực trị của MSS** (dưới đáy MSS cho long, trên đỉnh MSS cho short) + một buffer nhỏ cho spread/nhiễu.
 
-**Bước 9 — Take Profit.** TP về **cực đối diện của leg trước** đó, cộng thêm relative equal highs/lows và HTF FVG. Đây chính là **draw on liquidity** — nhắm ERL đối diện; quản trị partial tại IRL trung gian (xem [[16 - Internal & External Range Liquidity (IRL & ERL)]]).
+**Bước 9 — Take Profit.** TP về **cực đối diện của leg trước** đó, cộng thêm relative equal highs/lows và HTF FVG. Đây chính là **draw on liquidity** — nhắm ERL đối diện; quản trị partial tại IRL trung gian (xem [[16-Internal-External-Range-Liquidity-IRL-ERL]]).
 
 ---
 
@@ -263,8 +263,8 @@ Ba tầng không ngang nhau — mỗi tầng là một **điểm trên đường
 > 7. **Luôn chờ RETEST post-MSS** — không đuổi cây phá. Đây là kỷ luật cứu tài khoản.
 > 8. **Stop ngoài cực trị MSS; TP về ERL đối diện** — rủi ro và target đều định nghĩa trước khi vào.
 
-- Ghép chuỗi với **[[42 - SMT Divergence]]** tại cực trị: nếu tài sản tương quan cũng lệch pha đúng lúc chuỗi hình thành → confluence hạng nhất.
-- Ưu tiên chuỗi diễn ra trong **macro window 09:50 NY-AM** ([[40 - Macro Times]]) — displacement sạch, MSS đáng tin hơn.
+- Ghép chuỗi với **[[42-SMT-Divergence]]** tại cực trị: nếu tài sản tương quan cũng lệch pha đúng lúc chuỗi hình thành → confluence hạng nhất.
+- Ưu tiên chuỗi diễn ra trong **macro window 09:50 NY-AM** ([[40-Macro-Times]]) — displacement sạch, MSS đáng tin hơn.
 - **Cặp/thị trường tốt:** GBPUSD, EURUSD, USDCAD, XAUUSD, XAGUSD, NQ, ES. Context HTF trên Daily/4h; entry trên 5m/15m/1m.
 - Mở sẵn **HTF + LTF cạnh nhau**: HTF cho array + bias, LTF cho chuỗi 3 tầng + timing entry.
 - **Đánh dấu trước** các HTF PD array và draw-on-liquidity đầu phiên, để khi giá tới chỉ việc theo dõi chuỗi hình thành.
@@ -720,7 +720,7 @@ Quy tắc "2-of-3 đã đủ để trade" trong file gốc (mục 8) là một *
 > Chuỗi 3 tầng là một khung đọc hữu ích để lượng hoá "đảo chiều đang mạnh lên tới đâu", nhưng giá trị thật của nó chỉ hiện ra khi được backtest cơ học, tách nhóm theo tổ hợp tầng và khung thời gian, và luôn đi kèm quản trị rủi ro tôn trọng bản chất xác suất — không phải khi được dùng như một công thức "thấy đủ 3 dấu là thắng".
 
 > [!tip] Liên kết với các note khác trong vault khi backtest
-> Khi ghi log các case theo mục A3/A5, đối chiếu thêm với [[41 - Change in State of Delivery]] cho định nghĩa CISD gốc, [[21 - Market Structure Shift]] cho định nghĩa MSS gốc, và [[17 - Inverse Fair Value Gap - iFVG]] cho định nghĩa IFVG gốc — giữ định nghĩa nhất quán giữa các note tránh trường hợp một khái niệm bị diễn giải khác nhau ở hai nơi trong vault theo thời gian.
+> Khi ghi log các case theo mục A3/A5, đối chiếu thêm với [[41-Change-in-State-of-Delivery]] cho định nghĩa CISD gốc, [[21-Market-Structure-Shift]] cho định nghĩa MSS gốc, và [[17-Inverse-Fair-Value-Gap-iFVG]] cho định nghĩa IFVG gốc — giữ định nghĩa nhất quán giữa các note tránh trường hợp một khái niệm bị diễn giải khác nhau ở hai nơi trong vault theo thời gian.
 > [!warning] Nhắc lại rủi ro mô hình
 > Không có phần nào trong khối Deep Dive này thay đổi nguyên tắc risk ≤0.5%/lệnh đã nêu trong phần lõi phía trên — mọi phân tích chuyên sâu chỉ giúp đọc bối cảnh tốt hơn, không loại bỏ được bản chất xác suất của từng lệnh đơn lẻ.
 > [!note] Trạng thái tài liệu

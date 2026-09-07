@@ -36,7 +36,7 @@ common_mistakes:
 > **Độ sâu mà giá retrace vào một Order Block trước khi đảo chiều — chỉ chạm nông (giữa CE và cạnh trên), đúng CE (50%), hay xuyên gần hết tới cạnh dưới — không phải ngẫu nhiên: nó do vị trí nested FVG/OB con, vị trí liquidity pool (SSL/BSL) quanh OB, và vị trí OB trong Premium/Discount của dealing range lớn hơn quyết định.**
 
 > [!important] Nguyên tắc cốt lõi
-> **CE (Consequent Encroachment) là kỳ vọng xác suất trung bình, không phải luật vật lý.** Đọc đúng 3 lớp context — nested structure phía trên, liquidity phía dưới, vị trí trong Premium/Discount — mới biết nên kỳ vọng shallow, CE, hay full mitigation cho từng OB cụ thể. Ghi chú này là phần **bổ sung nguyên nhân (causal layer)** cho bảng kịch bản A–E đã có ở [[25 - OB - Order Block]] §7.2 — không lặp lại, mà trả lời câu hỏi "tại sao lại rơi vào kịch bản đó".
+> **CE (Consequent Encroachment) là kỳ vọng xác suất trung bình, không phải luật vật lý.** Đọc đúng 3 lớp context — nested structure phía trên, liquidity phía dưới, vị trí trong Premium/Discount — mới biết nên kỳ vọng shallow, CE, hay full mitigation cho từng OB cụ thể. Ghi chú này là phần **bổ sung nguyên nhân (causal layer)** cho bảng kịch bản A–E đã có ở [[25-OB-Order-Block]] §7.2 — không lặp lại, mà trả lời câu hỏi "tại sao lại rơi vào kịch bản đó".
 
 ---
 
@@ -65,7 +65,7 @@ OB Mitigation Depth là mức độ sâu mà giá đi vào bên trong một Orde
 
 ### OB Mitigation Depth không phải là gì
 - Không phải một quy luật cố định kiểu "OB luôn về tới CE" hay "luôn cần full mitigation" — cả hai đều sai nếu áp dụng máy móc.
-- Không thay thế cho việc đọc [[25 - OB - Order Block]] §7.2 (bảng kịch bản A–E: touch&go / CE / distal / close-through / breaker) — ghi chú này chỉ trả lời phần "tại sao", còn bảng đó mô tả "hành vi giá trông như thế nào".
+- Không thay thế cho việc đọc [[25-OB-Order-Block]] §7.2 (bảng kịch bản A–E: touch&go / CE / distal / close-through / breaker) — ghi chú này chỉ trả lời phần "tại sao", còn bảng đó mô tả "hành vi giá trông như thế nào".
 - Không phải lý do để bỏ LTF confirmation — dù dự đoán đúng độ sâu, vẫn cần MSS/displacement LTF trước khi entry.
 
 ---
@@ -100,7 +100,7 @@ Khi displacement tạo ra OB đồng thời để lại nhiều lớp imbalance 
 
 ### 3.2. Liquidity pool (SSL/BSL) sát cạnh distal → kéo giá tới full mitigation
 
-Nếu ngay dưới cạnh distal của một Bullish OB (hoặc ngay trên cạnh distal của Bearish OB) có một pool thanh khoản rõ ràng — equal lows, old low, hay đáy của một cú swing gần đó — nhiều khả năng giá sẽ đi xuyên qua CE, tới sát hoặc xuyên nhẹ cạnh distal để quét pool đó trước khi đảo chiều thật. Đây là cơ chế tạo ra **kịch bản C (lấp gần biên distal)** trong bảng §7.2 của [[25 - OB - Order Block]] — nguyên nhân gốc chính là liquidity chưa bị lấy, không phải OB "yếu".
+Nếu ngay dưới cạnh distal của một Bullish OB (hoặc ngay trên cạnh distal của Bearish OB) có một pool thanh khoản rõ ràng — equal lows, old low, hay đáy của một cú swing gần đó — nhiều khả năng giá sẽ đi xuyên qua CE, tới sát hoặc xuyên nhẹ cạnh distal để quét pool đó trước khi đảo chiều thật. Đây là cơ chế tạo ra **kịch bản C (lấp gần biên distal)** trong bảng §7.2 của [[25-OB-Order-Block]] — nguyên nhân gốc chính là liquidity chưa bị lấy, không phải OB "yếu".
 
 **Hệ quả thực chiến quan trọng nhất:** nếu nhận diện được pool này trước, **không đặt stop ngay sát CE**. Hai lựa chọn hợp lý: (a) chờ pool bị quét xong rồi mới tìm LTF MSS để entry muộn hơn nhưng an toàn hơn, hoặc (b) nếu vẫn muốn entry sớm tại CE, đặt stop đủ xa để dự phòng cho cú quét đó (qua điểm sweep, không phải qua CE vài điểm).
 
@@ -115,11 +115,11 @@ Nếu ngay dưới cạnh distal của một Bullish OB (hoặc ngay trên cạn
 - **OB nằm gần equilibrium (45–55%)** của dealing range lớn hơn: về bản chất giá "chưa đủ rẻ" để buyer HTF thấy hấp dẫn. Thường cần đi sâu hơn — full mitigation, đôi khi phải chờ giá lùi tiếp vào vùng OTE (62–79% retracement) mới có phản ứng đáng tin.
 - **OB nằm sâu trong Discount hoặc trùng vùng OTE**: giá vốn đã "rẻ" theo góc nhìn HTF. Shallow tap thường đã đủ vì không cần thêm discount — đây cũng là lý do vì sao nhiều setup 2022 Model tốt nhất chỉ cho một cú test nông rồi bốc thẳng, khiến người máy móc chờ CE bị lỡ tàu.
 
-Xem thêm cách xác định range và vùng này tại [[27 - Premium Discount]] và [[26 - OTE - Optimal Trade Entry]].
+Xem thêm cách xác định range và vùng này tại [[27-Premium-Discount]] và [[26-OTE-Optimal-Trade-Entry]].
 
 ### 3.4. Hai yếu tố phụ trợ (đã có trong OB note, nhắc lại ngắn gọn để đủ khung nhân quả)
 
-- **Origin OB vs mid-leg OB** ([[25 - OB - Order Block]] §7.4): OB hình thành tại chính điểm xuất phát của leg (nơi có sweep) là "true origin" — thường chỉ cần shallow/CE đã đủ vì đây là nơi order institutional dày đặc nhất. OB hình thành giữa một leg đang chạy chỉ là trạm dừng tạm — dễ bị xuyên sâu hơn (tới full) khi leg đã đi xa và cần rebalance nhiều hơn.
+- **Origin OB vs mid-leg OB** ([[25-OB-Order-Block]] §7.4): OB hình thành tại chính điểm xuất phát của leg (nơi có sweep) là "true origin" — thường chỉ cần shallow/CE đã đủ vì đây là nơi order institutional dày đặc nhất. OB hình thành giữa một leg đang chạy chỉ là trạm dừng tạm — dễ bị xuyên sâu hơn (tới full) khi leg đã đi xa và cần rebalance nhiều hơn.
 - **Chất lượng displacement:** displacement càng dứt khoát (nến thân lớn, ít wick đối nghịch, phá cấu trúc rõ) thì xác suất shallow/CE càng cao — vì thị trường "trả giá đủ" ngay từ đầu. Displacement yếu, nhiều nến giằng co mới phá được cấu trúc, thường đòi hỏi discount sâu hơn khi retrace.
 
 ---
@@ -159,7 +159,7 @@ Xem thêm cách xác định range và vùng này tại [[27 - Premium Discount]
 - [ ] OB hình thành giữa leg (không phải origin) sau một chuỗi di chuyển đã dài.
 
 ### Dự đoán bị vô hiệu khi
-- [ ] Giá đóng nến **thân** xuyên qua cạnh distal và giữ acceptance ngoài đó — đây không còn là "full mitigation", mà là **invalidation** (kịch bản D trong [[25 - OB - Order Block]] §7.2). Toàn bộ phân tích độ sâu trong ghi chú này chỉ áp dụng khi OB còn sống.
+- [ ] Giá đóng nến **thân** xuyên qua cạnh distal và giữ acceptance ngoài đó — đây không còn là "full mitigation", mà là **invalidation** (kịch bản D trong [[25-OB-Order-Block]] §7.2). Toàn bộ phân tích độ sâu trong ghi chú này chỉ áp dụng khi OB còn sống.
 - [ ] Giá lình xình quá lâu bên trong OB (quá N nến LTF) mà không phản ứng — dấu hiệu order đang bị hấp thụ dần, xác suất chuyển thành Breaker tăng.
 
 ---
@@ -294,7 +294,7 @@ Xem thêm cách xác định range và vùng này tại [[27 - Premium Discount]
 
 ### Case Study 3 — Nhiều OB lồng nhau từ các leg khác nhau: OB nhỏ/mới thường "hứng" phản ứng trước OB lớn/cũ
 
-**Bối cảnh:** Trong một leg di chuyển dài gồm nhiều nhịp continuation displacement (xem [[50 - Displacement In Depth]] §2), mỗi nhịp có thể tạo một OB riêng — các OB này thường lồng nhau theo chiều dọc, với OB mới (từ nhịp gần nhất) nằm nông hơn và OB cũ (từ nhịp đầu leg) nằm sâu hơn. Khi giá retrace, nó gần như luôn chạm và phản ứng tại **OB nông nhất/mới nhất** trước — giống hệt cơ chế "chỉ lấp lớp FVG nông nhất" đã nêu ở [[16 - Internal & External Range Liquidity (IRL & ERL)|16 - IRL & ERL]] case study 2, vì OB và FVG hình thành đồng thời từ cùng một displacement.
+**Bối cảnh:** Trong một leg di chuyển dài gồm nhiều nhịp continuation displacement (xem [[50-Displacement-In-Depth]] §2), mỗi nhịp có thể tạo một OB riêng — các OB này thường lồng nhau theo chiều dọc, với OB mới (từ nhịp gần nhất) nằm nông hơn và OB cũ (từ nhịp đầu leg) nằm sâu hơn. Khi giá retrace, nó gần như luôn chạm và phản ứng tại **OB nông nhất/mới nhất** trước — giống hệt cơ chế "chỉ lấp lớp FVG nông nhất" đã nêu ở [[16-Internal-External-Range-Liquidity-IRL-ERL|16 - IRL & ERL]] case study 2, vì OB và FVG hình thành đồng thời từ cùng một displacement.
 
 **Hệ quả thực chiến:** đặt lệnh chờ tại một OB sâu/cũ (từ đầu leg) trong khi có một OB mới/nông hơn nằm giữa đường thường dẫn tới việc lệnh không bao giờ khớp — giá đã đảo chiều tại OB nông trước khi đi xa tới mức đó.
 
@@ -311,7 +311,7 @@ Xem thêm cách xác định range và vùng này tại [[27 - Premium Discount]
 
 **Cách xử lý đã kiểm chứng:**
 - **Đánh giá độ sâu mitigation bằng giá ĐÓNG CỬA (thân), không bằng wick** — đúng như §5. Một wick chọc sâu rồi rút lại không phải full mitigation, cũng không phải invalidation; nó là nhiễu biến động.
-- **Đặt stop qua một buffer biến động (theo ATR hoặc spread của chính thị trường), không dán sát distal** — nhất là XAUUSD và quanh tin, nơi wick "giả" thường xuyên chọc sâu hơn distal vài giá rồi quay lại. Liên hệ trực tiếp cách tính buffer theo % range/ATR ở [[27 - Premium Discount]] Case Study 3.
+- **Đặt stop qua một buffer biến động (theo ATR hoặc spread của chính thị trường), không dán sát distal** — nhất là XAUUSD và quanh tin, nơi wick "giả" thường xuyên chọc sâu hơn distal vài giá rồi quay lại. Liên hệ trực tiếp cách tính buffer theo % range/ATR ở [[27-Premium-Discount]] Case Study 3.
 - **Giảm size để bù cho stop rộng hơn**, giữ rủi ro ≤ 0.5% — thà stop rộng đúng cấu trúc + size nhỏ, còn hơn stop chặt "đẹp" bị wick quét oan.
 
 > [!tip]
@@ -321,7 +321,7 @@ Xem thêm cách xác định range và vùng này tại [[27 - Premium Discount]
 
 **Bối cảnh:** §3 giải thích độ sâu mitigation theo ba biến "tĩnh" (nested structure, liquidity pool, vị trí Premium/Discount) — chúng mô tả một OB tại một thời điểm. Nhưng backtest/live nhiều tháng lộ ra một trục thứ tư mang tính **thời gian / số lần chạm**: cùng một Order Block, phản ứng ở lần chạm đầu tiên khác hẳn ở lần thứ hai, thứ ba. **Lần chạm đầu (first clean tap)** thường cho phản ứng nông nhất và mạnh nhất — vì khối order institutional để lại tại OB còn gần như nguyên vẹn, chỉ cần shallow tap đã đủ counterparty để đảo chiều dứt khoát.
 
-**Tại sao chỉ lộ ra khi đã theo dõi nhiều:** trên một khung hình tĩnh, một OB đã bị test 2-3 lần trông y hệt một OB mới — vẫn là cái hộp đó, CE đó, distal đó. Người mới nhìn bảng kịch bản A–E ở [[25 - OB - Order Block]] §7.2 dễ tin "OB vẫn còn đó thì vẫn giao dịch được". Chỉ khi log đủ mẫu và gắn số lần chạm vào mỗi lệnh, ta mới thấy quy luật decay: mỗi lần chạm, một phần order đã bị tiêu thụ → lần sau giá phải đi **sâu hơn** (từ shallow → CE → gần full) mới gom đủ lệnh chờ để phản ứng, và mỗi lần phản ứng lại **yếu hơn**. Đồng thời xác suất giá xuyên thủng cạnh distal và **chuyển vai trò thành Breaker** (Case Study 1) tăng dần theo số lần chạm.
+**Tại sao chỉ lộ ra khi đã theo dõi nhiều:** trên một khung hình tĩnh, một OB đã bị test 2-3 lần trông y hệt một OB mới — vẫn là cái hộp đó, CE đó, distal đó. Người mới nhìn bảng kịch bản A–E ở [[25-OB-Order-Block]] §7.2 dễ tin "OB vẫn còn đó thì vẫn giao dịch được". Chỉ khi log đủ mẫu và gắn số lần chạm vào mỗi lệnh, ta mới thấy quy luật decay: mỗi lần chạm, một phần order đã bị tiêu thụ → lần sau giá phải đi **sâu hơn** (từ shallow → CE → gần full) mới gom đủ lệnh chờ để phản ứng, và mỗi lần phản ứng lại **yếu hơn**. Đồng thời xác suất giá xuyên thủng cạnh distal và **chuyển vai trò thành Breaker** (Case Study 1) tăng dần theo số lần chạm.
 
 **Cách xử lý đã kiểm chứng:** coi số lần chạm như một bộ lọc conviction đặt CHỒNG lên ba nguyên nhân gốc ở §3, không thay thế chúng. Ưu tiên trade OB ở **first clean tap**; ở re-tap thứ 2 hạ conviction và size; một OB đã bị test 2-3 lần không còn là POI A+ dù "trên lý thuyết vẫn còn đó" — tốt hơn nên tìm OB mới hình thành ở nhịp displacement kế tiếp. Kết hợp: một first tap vào OB nằm sâu trong Discount, có nested FVG (§3.1, §3.3) là cấu hình lý tưởng nhất; một re-tap thứ 3 vào OB gần equilibrium gần như luôn nên bỏ qua.
 
@@ -341,7 +341,7 @@ Xem thêm cách xác định range và vùng này tại [[27 - Premium Discount]
 
 **Bối cảnh:** §3 cho ba biến dự đoán độ sâu, nhưng còn một biến ít người dùng mà backtest/live nhiều tháng cho thấy có sức dự đoán cao: **khoảng cách còn lại tới draw on liquidity target của HTF**. Khi target còn RẤT XA (giá còn nhiều dư địa để chạy, "urgency" cao), thuật toán thường chỉ cho một shallow tap vào OB rồi bốc đi ngay — vì mục tiêu ưu tiên là đi lấy khối thanh khoản ở xa, không phải nấn ná rebalance sâu tại chỗ. Ngược lại, khi target đã GẦN, đã bị lấy một phần, hoặc OB đang nằm ở cuối leg, mitigation có xu hướng SÂU hơn, chậm hơn, dễ full và dễ hỏng — vì động lực đẩy giá đi tiếp đã cạn.
 
-**Tại sao chỉ lộ ra khi backtest/live nhiều:** trên một OB đơn lẻ, ba nguyên nhân gốc ở §3 có thể "trông giống nhau" ở hai bối cảnh mà kết quả thực tế lại ngược nhau. Chỉ khi ghép mỗi lệnh với câu hỏi "lúc đó còn bao xa tới draw target" — và làm điều đó qua vài chục mẫu — mới thấy rõ: những cú shallow tap "bốc thẳng" gần như luôn xảy ra khi phía trước còn một draw target xa và rõ; còn những cú full mitigation chậm chạp, dễ biến thành Breaker (Case Study 1) thường rơi vào lúc draw target đã gần cạn. Đây là biến gắn OB Mitigation Depth trực tiếp với [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]] — độ sâu không chỉ do cấu trúc quanh OB, mà do giá "còn việc phải làm" hay đã "gần xong việc".
+**Tại sao chỉ lộ ra khi backtest/live nhiều:** trên một OB đơn lẻ, ba nguyên nhân gốc ở §3 có thể "trông giống nhau" ở hai bối cảnh mà kết quả thực tế lại ngược nhau. Chỉ khi ghép mỗi lệnh với câu hỏi "lúc đó còn bao xa tới draw target" — và làm điều đó qua vài chục mẫu — mới thấy rõ: những cú shallow tap "bốc thẳng" gần như luôn xảy ra khi phía trước còn một draw target xa và rõ; còn những cú full mitigation chậm chạp, dễ biến thành Breaker (Case Study 1) thường rơi vào lúc draw target đã gần cạn. Đây là biến gắn OB Mitigation Depth trực tiếp với [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]] — độ sâu không chỉ do cấu trúc quanh OB, mà do giá "còn việc phải làm" hay đã "gần xong việc".
 
 **Cách xử lý đã kiểm chứng:** trước khi đặt kỳ vọng độ sâu, luôn đọc "còn bao xa tới draw" như một biến bổ sung. Target còn xa → kỳ vọng shallow, có thể entry aggressive tại nested FVG phía trên CE (§3.1) vì giá nhiều khả năng không quay lại sâu. Target đã gần / gần cạn → kỳ vọng sâu và kém tin cậy, kiên nhẫn chờ full mitigation kèm LTF confirmation, hạ kỳ vọng R (vì phần lớn quãng đường đã đi rồi) và cảnh giác khả năng chuyển Breaker. Biến này KHÔNG thay ba nguyên nhân gốc — nó lý giải vì sao đôi khi một OB "trông đủ tiêu chuẩn shallow" lại cho full mitigation: đơn giản vì draw target đã ở ngay trước mặt.
 
@@ -360,13 +360,13 @@ Xem thêm cách xác định range và vùng này tại [[27 - Premium Discount]
 ---
 
 ## Liên kết liên quan
-- [[25 - OB - Order Block]] — khái niệm gốc, bảng kịch bản A–E (touch&go/CE/distal/close-through/breaker)
-- [[10 - Consequent Encroachment (Mean Threshold)]] — định nghĩa và cơ chế CE
-- [[13 - FVG  - Fair Value Gap]] — nested FVG và imbalance
-- [[27 - Premium Discount]] — vị trí trong dealing range
-- [[26 - OTE - Optimal Trade Entry]] — vùng 62–79% retracement
-- [[16 - Internal & External Range Liquidity (IRL & ERL)]] — liquidity pool quanh OB
-- [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]] — lý do giá cần quét thanh khoản trước khi đảo chiều
+- [[25-OB-Order-Block]] — khái niệm gốc, bảng kịch bản A–E (touch&go/CE/distal/close-through/breaker)
+- [[10-Consequent-Encroachment-Mean-Threshold]] — định nghĩa và cơ chế CE
+- [[13-FVG-Fair-Value-Gap]] — nested FVG và imbalance
+- [[27-Premium-Discount]] — vị trí trong dealing range
+- [[26-OTE-Optimal-Trade-Entry]] — vùng 62–79% retracement
+- [[16-Internal-External-Range-Liquidity-IRL-ERL]] — liquidity pool quanh OB
+- [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]] — lý do giá cần quét thanh khoản trước khi đảo chiều
 
 
 ---

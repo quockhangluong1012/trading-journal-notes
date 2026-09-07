@@ -1,0 +1,34 @@
+<svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="320" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="16" font-weight="700" fill="#B91C1C">✗ Sai lầm sizing chết người</text>
+
+  <rect x="24" y="50" width="228" height="240" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="76" font-size="12.5" font-weight="700" fill="#B91C1C">1. Chọn lot trước</text>
+  <text x="38" y="102" font-size="10.5" fill="#374151">"Tôi vào 2 lot cho quen"</text>
+  <text x="38" y="120" font-size="10.5" fill="#374151">→ rồi mới đặt stop.</text>
+  <text x="38" y="144" font-size="10.5" fill="#374151">Stop rộng + lot to =</text>
+  <text x="38" y="162" font-size="10.5" fill="#374151">rủi ro vượt xa 0,5%.</text>
+  <rect x="38" y="182" width="200" height="30" rx="5" fill="#FEE2E2"/>
+  <text x="48" y="202" font-size="10" font-weight="700" fill="#B91C1C">Sửa: risk $ trước → suy ra lot.</text>
+
+  <rect x="266" y="50" width="228" height="240" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="282" y="76" font-size="12.5" font-weight="700" fill="#B91C1C">2. Dời/bỏ stop để "gồng"</text>
+  <text x="280" y="102" font-size="10.5" fill="#374151">Nới stop khi giá chạy</text>
+  <text x="280" y="120" font-size="10.5" fill="#374151">ngược → risk thực tế</text>
+  <text x="280" y="138" font-size="10.5" fill="#374151">tăng vô hạn.</text>
+  <text x="280" y="162" font-size="10.5" fill="#374151">1 lệnh phá cả tháng lãi.</text>
+  <rect x="280" y="182" width="200" height="30" rx="5" fill="#FEE2E2"/>
+  <text x="290" y="202" font-size="10" font-weight="700" fill="#B91C1C">Sửa: stop là bất khả xâm phạm.</text>
+
+  <rect x="508" y="50" width="228" height="240" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="524" y="76" font-size="12.5" font-weight="700" fill="#B91C1C">3. Revenge / gấp đôi</text>
+  <text x="522" y="102" font-size="10.5" fill="#374151">Thua → tăng size gỡ.</text>
+  <text x="522" y="120" font-size="10.5" fill="#374151">Martingale = phá sản</text>
+  <text x="522" y="138" font-size="10.5" fill="#374151">toán học chắc chắn.</text>
+  <text x="522" y="162" font-size="10.5" fill="#374151">Vi phạm daily limit ngay.</text>
+  <rect x="522" y="182" width="200" height="30" rx="5" fill="#FEE2E2"/>
+  <text x="532" y="202" font-size="10" font-weight="700" fill="#B91C1C">Sửa: size cố định; dừng khi chạm limit.</text>
+
+  <rect x="24" y="256" width="712" height="30" rx="6" fill="#F0FDF4"/>
+  <text x="380" y="276" font-size="11.5" font-weight="700" fill="#166534" text-anchor="middle">Quy tắc bất biến: RISK quyết định LOT, không bao giờ ngược lại.</text>
+</svg>

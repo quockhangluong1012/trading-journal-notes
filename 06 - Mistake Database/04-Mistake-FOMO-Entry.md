@@ -27,14 +27,14 @@ updated: 2026-08-02
 
 FOMO Entry (Fear Of Missing Out) là lỗi **tâm lý-thực thi**: trader nhìn thấy một con sóng displacement đang chạy mạnh và nhảy vào giữa/cuối con sóng đó, không phải vì có tín hiệu hợp lệ mà vì sợ "con tàu rời ga mà mình chưa lên". Đây là một trong những lỗi phá tài khoản âm thầm nhất vì nó *cảm giác* như đang chủ động, quyết đoán, "bắt được nhịp" — trong khi thực chất là đang mua đúng nơi đắt nhất và bán đúng nơi rẻ nhất.
 
-Khác với [[02 - Mistake - Enter before liquidity sweep]] (vào sớm, trước khi thanh khoản bị quét) — FOMO thường là vào **muộn**: sweep đã xảy ra, displacement đã đi phần lớn quãng đường, draw on liquidity gần cạn, và bạn nhảy vào đúng lúc con sóng sắp hết nhiên liệu. Cả hai lỗi đều là entry sai thời điểm, nhưng FOMO nằm ở đầu bên kia của trục thời gian.
+Khác với [[02-Mistake-Enter-before-liquidity-sweep]] (vào sớm, trước khi thanh khoản bị quét) — FOMO thường là vào **muộn**: sweep đã xảy ra, displacement đã đi phần lớn quãng đường, draw on liquidity gần cạn, và bạn nhảy vào đúng lúc con sóng sắp hết nhiên liệu. Cả hai lỗi đều là entry sai thời điểm, nhưng FOMO nằm ở đầu bên kia của trục thời gian.
 
 Các biểu hiện điển hình:
 
 - Tôi thấy một nến xanh/đỏ lớn và vào lệnh ngay trên nến đó vì "momentum đang mạnh".
 - Tôi đã bỏ lỡ entry "đẹp" trước đó, nên vào một entry tệ hơn để "cho bằng được".
 - Tôi vào lệnh mà không thể chỉ ra POI phía trước — giá đang ở "vùng trống", không có mốc nào để neo target hay SL.
-- Tôi tự nới rộng SL để "theo kịp" giá, phá vỡ luôn quy tắc rủi ro (xem [[07 - Mistake - Risk more than 0.5% total account]]).
+- Tôi tự nới rộng SL để "theo kịp" giá, phá vỡ luôn quy tắc rủi ro (xem [[07-Mistake-Risk-more-than-0.5-total-account]]).
 
 ![[FOMO-Sec-01-MoTa.svg|760]]
 *Sơ đồ: entry FOMO mua tại đỉnh Premium sau khi sóng đã kéo dài — đúng nơi lẽ ra phải chờ pullback về Discount POI.*
@@ -75,11 +75,11 @@ FOMO nguy hiểm vì nó khai thác trực tiếp cơ chế thưởng-phạt c�
 
 Về mặt cấu trúc thị trường, entry FOMO gần như luôn xảy ra ở giai đoạn muộn nhất của một con sóng — nơi có ba vấn đề chồng lên nhau:
 
-1. **Sai vị trí (Premium/Discount).** Một con sóng tăng đã chạy xa nghĩa là giá đang ở Premium. Mua ở Premium là mua đắt — đi ngược nguyên tắc [[27 - Premium Discount]]. Bạn đang mua nơi smart money muốn bán.
-2. **Sai thời điểm (draw on liquidity đã cạn).** Nếu con sóng đã quét xong pool thanh khoản mục tiêu (BSL/ERL), thì "nhiên liệu" kéo giá đi tiếp đã hết. Không còn draw on liquidity rõ ràng phía trước nghĩa là không có lý do thuật toán nào để giá tiếp tục. Xem [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]].
+1. **Sai vị trí (Premium/Discount).** Một con sóng tăng đã chạy xa nghĩa là giá đang ở Premium. Mua ở Premium là mua đắt — đi ngược nguyên tắc [[27-Premium-Discount]]. Bạn đang mua nơi smart money muốn bán.
+2. **Sai thời điểm (draw on liquidity đã cạn).** Nếu con sóng đã quét xong pool thanh khoản mục tiêu (BSL/ERL), thì "nhiên liệu" kéo giá đi tiếp đã hết. Không còn draw on liquidity rõ ràng phía trước nghĩa là không có lý do thuật toán nào để giá tiếp tục. Xem [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]].
 3. **Sai SL (buộc phải rộng).** Vì vào giữa/cuối sóng, không có mốc cấu trúc gần để đặt SL, bạn buộc phải nới SL rộng để tránh nhiễu — làm RR sụp đổ và thường kéo theo vi phạm quy tắc rủi ro.
 
-**Bạn trở thành thanh khoản thoát hàng (exit liquidity).** Đây là điểm cốt lõi: lệnh mua FOMO của đám đông ở đỉnh chính là đối ứng mà smart money cần để chốt lời khối lượng lớn của họ. Bạn không giao dịch *cùng* SM — bạn đang *cung cấp* cho họ chính xác lượng lệnh mua họ cần để bán ra. Xem [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]].
+**Bạn trở thành thanh khoản thoát hàng (exit liquidity).** Đây là điểm cốt lõi: lệnh mua FOMO của đám đông ở đỉnh chính là đối ứng mà smart money cần để chốt lời khối lượng lớn của họ. Bạn không giao dịch *cùng* SM — bạn đang *cung cấp* cho họ chính xác lượng lệnh mua họ cần để bán ra. Xem [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]].
 
 ![[FOMO-Sec-03-CoChe.svg|760]]
 *Sơ đồ: sóng tăng hoàn tất mục tiêu BSL → SM phân phối → lệnh mua FOMO đổ vào làm đối ứng → đảo chiều, entry FOMO sai cả vị trí, thời điểm lẫn SL.*
@@ -117,7 +117,7 @@ Giá đã đi 5-6 nến tăng liên tiếp. Tôi thấy một nến xanh thân l
 
 ### 5.1. Liquidity Reflexivity — FOMO được thiết kế, không ngẫu nhiên
 
-FOMO không phải là điểm yếu ngẫu nhiên của riêng bạn; nó là một cơ chế *có thể dự đoán và khai thác được* của thị trường. Nguyên lý [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]: khi một chuyển động giá càng trở nên "hiển nhiên" với số đông (displacement mạnh + tin tức + mọi người trên mạng xã hội đều nói cùng một hướng), thì càng nhiều lệnh muộn của đám đông tích tụ về phía đó — và đó chính là pool thanh khoản mà smart money cần để đảo chiều. Quy tắc thực hành: **mức độ "hiển nhiên phải vào" tỷ lệ thuận với mức độ gần đỉnh/đáy.** Khi bạn cảm thấy chắc chắn nhất, hãy nghi ngờ nhất.
+FOMO không phải là điểm yếu ngẫu nhiên của riêng bạn; nó là một cơ chế *có thể dự đoán và khai thác được* của thị trường. Nguyên lý [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]: khi một chuyển động giá càng trở nên "hiển nhiên" với số đông (displacement mạnh + tin tức + mọi người trên mạng xã hội đều nói cùng một hướng), thì càng nhiều lệnh muộn của đám đông tích tụ về phía đó — và đó chính là pool thanh khoản mà smart money cần để đảo chiều. Quy tắc thực hành: **mức độ "hiển nhiên phải vào" tỷ lệ thuận với mức độ gần đỉnh/đáy.** Khi bạn cảm thấy chắc chắn nhất, hãy nghi ngờ nhất.
 
 ### 5.2. FOMO vs continuation entry hợp lệ — ranh giới
 
@@ -130,11 +130,11 @@ Bài kiểm tra một câu: *"Tôi đang vào TẠI một POI, hay đang vào GI
 
 ### 5.3. News-driven FOMO và Judas swing
 
-Các cú spike do tin tức (NFP, CPI, FOMC) là bẫy FOMO cổ điển. Displacement do tin thường tạo cảm giác "cơ hội ngàn năm có một", nhưng phần lớn các cú spike đầu tiên sau tin là **Judas swing** — cú đẩy sai hướng để quét thanh khoản trước khi đảo chiều theo bias thật. Vào FOMO ngay trên cú spike tin tức = vào đúng đỉnh Judas. Nguyên tắc: sau tin, *chờ* cấu trúc lắng lại và một MSS hợp lệ trong [[18 - Kill Zones]] rồi mới hành động; không giao dịch trên nến tin đầu tiên.
+Các cú spike do tin tức (NFP, CPI, FOMC) là bẫy FOMO cổ điển. Displacement do tin thường tạo cảm giác "cơ hội ngàn năm có một", nhưng phần lớn các cú spike đầu tiên sau tin là **Judas swing** — cú đẩy sai hướng để quét thanh khoản trước khi đảo chiều theo bias thật. Vào FOMO ngay trên cú spike tin tức = vào đúng đỉnh Judas. Nguyên tắc: sau tin, *chờ* cấu trúc lắng lại và một MSS hợp lệ trong [[18-Kill-Zones]] rồi mới hành động; không giao dịch trên nến tin đầu tiên.
 
 ### 5.4. OTE — công cụ chống FOMO bằng cấu trúc
 
-[[26 - OTE - Optimal Trade Entry]] (vùng retracement 62%-79% của một leg impulse) là liều thuốc giải kỹ thuật cho FOMO: nó buộc bạn chỉ vào lệnh khi giá đã *hồi về* một vùng chiết khấu định lượng được, thay vì đuổi theo phần impulse. Nếu bạn thấy mình muốn vào ở phần 0%-38% của một leg (tức phần đã chạy), đó là tín hiệu FOMO; OTE nhắc bạn chờ về 62%-79%.
+[[26-OTE-Optimal-Trade-Entry]] (vùng retracement 62%-79% của một leg impulse) là liều thuốc giải kỹ thuật cho FOMO: nó buộc bạn chỉ vào lệnh khi giá đã *hồi về* một vùng chiết khấu định lượng được, thay vì đuổi theo phần impulse. Nếu bạn thấy mình muốn vào ở phần 0%-38% của một leg (tức phần đã chạy), đó là tín hiệu FOMO; OTE nhắc bạn chờ về 62%-79%.
 
 ### 5.5. Cơ chế thần kinh & cửa sổ 90 giây
 
@@ -142,7 +142,7 @@ FOMO là một đợt kích hoạt cảm xúc (amygdala) áp đảo vỏ não tr
 
 ### 5.6. FOMO của việc "bỏ lỡ" vs FOMO của việc "gỡ" — phân biệt với revenge
 
-FOMO thuần túy (sợ bỏ lỡ lợi nhuận) và revenge trading (muốn gỡ lại lệnh vừa thua) là hai trạng thái khác nhau nhưng thường trộn vào nhau và cộng hưởng: bỏ lỡ → tự trách → thấy sóng khác → FOMO để "bù"; hoặc thua → cay cú → FOMO vào lệnh kế tiếp để gỡ. Khi hai lỗi này xuất hiện cùng lúc, mức độ nguy hiểm nhân lên. Xem [[01 - Mistake - Emotional revenge trade]] để nhận diện nhánh revenge.
+FOMO thuần túy (sợ bỏ lỡ lợi nhuận) và revenge trading (muốn gỡ lại lệnh vừa thua) là hai trạng thái khác nhau nhưng thường trộn vào nhau và cộng hưởng: bỏ lỡ → tự trách → thấy sóng khác → FOMO để "bù"; hoặc thua → cay cú → FOMO vào lệnh kế tiếp để gỡ. Khi hai lỗi này xuất hiện cùng lúc, mức độ nguy hiểm nhân lên. Xem [[01-Mistake-Emotional-revenge-trade]] để nhận diện nhánh revenge.
 
 ---
 
@@ -276,25 +276,25 @@ Câu hỏi cốt lõi: **ai là counterparty của một lệnh FOMO, và tiền
 > [!danger] Đọc bảng này thế nào
 > Chỉ cần **25% số lệnh** là FOMO, expectancy tháng giảm gần **45%** so với hệ thống sạch — dù 75% lệnh còn lại vẫn hoàn toàn đúng chuẩn. Ở mức 50%, hệ thống gần như mất hết edge dù mỗi lệnh riêng lẻ "đúng chuẩn" vẫn có kỳ vọng dương — đây là minh chứng định lượng cho lý do FOMO nguy hiểm hơn cảm giác chủ quan của nó.
 
-**Chi phí kép khi FOMO đi kèm mistake khác** (xem chi tiết ma trận 11.5): nếu một lệnh FOMO cũng vi phạm risk >0.5% (SL nới rộng nhưng size không giảm tương ứng — [[07 - Mistake - Risk more than 0.5% total account]]), thiệt hại thực tế trên một lệnh thua không còn là 0.5% mà có thể là 0.8-1.2%, tức **gấp 1.6-2.4 lần** thiệt hại kế hoạch — minh họa bằng số: SL kế hoạch 15 pip risk 0.5%; SL FOMO nới ra 30 pip nhưng size giữ nguyên = risk thực 1.0%.
+**Chi phí kép khi FOMO đi kèm mistake khác** (xem chi tiết ma trận 11.5): nếu một lệnh FOMO cũng vi phạm risk >0.5% (SL nới rộng nhưng size không giảm tương ứng — [[07-Mistake-Risk-more-than-0.5-total-account]]), thiệt hại thực tế trên một lệnh thua không còn là 0.5% mà có thể là 0.8-1.2%, tức **gấp 1.6-2.4 lần** thiệt hại kế hoạch — minh họa bằng số: SL kế hoạch 15 pip risk 0.5%; SL FOMO nới ra 30 pip nhưng size giữ nguyên = risk thực 1.0%.
 
 ### 11.4. Taxonomy các biến thể con
 
 1. **FOMO cổ điển (momentum chase)** — mô tả: đuổi nến thân lớn đang chạy, không có POI. Dấu hiệu: entry ngay trên nến displacement, không có vùng chờ. Mức nguy hiểm: **Cao** — dễ tự nhận ra nhất nên cũng dễ tự sửa nhất nếu có ý thức.
 2. **FOMO ngụy trang thành "continuation entry"** — mô tả: trader tự thuyết phục rằng đây là continuation hợp lệ (mục 5.2 note gốc) nhưng thực chất vào giữa khoảng trống, không tại POI chưa mitigate. Dấu hiệu phân biệt: không thể chỉ ra chính xác giá của POI đang phản ứng; câu trả lời mơ hồ "khoảng vùng này". Mức nguy hiểm: **Rất cao** — nguy hiểm nhất trong 5 biến thể vì tạo cảm giác an toàn giả (đã có "lý do kỹ thuật"), giống cơ chế biến thể B trong note 06.
 3. **FOMO trễ pha (second-chance FOMO)** — mô tả: bỏ lỡ entry đẹp đầu tiên tại POI, sau đó FOMO vào một entry tệ hơn ngay sau đó "để không bỏ lỡ lần hai". Dấu hiệu: xuất hiện ngay sau một miss được ghi nhận trong nhật ký/trong đầu. Mức nguy hiểm: **Cao**, cộng hưởng với revenge nhẹ (xem 11.5).
-4. **FOMO theo tín hiệu xã hội (social proof FOMO)** — mô tả: vào lệnh vì thấy nhiều người khác (nhóm chat, mạng xã hội, KOL) đang nói về cùng một hướng, không tự chạy checklist độc lập. Dấu hiệu: lý do entry là "mọi người đều thấy nó tăng" thay vì "tôi thấy sweep+MSS tại POI". Mức nguy hiểm: **Trung bình-cao** — thường xảy ra đúng lúc [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] mô tả, vì tín hiệu xã hội chính là chỉ báo của đám đông muộn.
+4. **FOMO theo tín hiệu xã hội (social proof FOMO)** — mô tả: vào lệnh vì thấy nhiều người khác (nhóm chat, mạng xã hội, KOL) đang nói về cùng một hướng, không tự chạy checklist độc lập. Dấu hiệu: lý do entry là "mọi người đều thấy nó tăng" thay vì "tôi thấy sweep+MSS tại POI". Mức nguy hiểm: **Trung bình-cao** — thường xảy ra đúng lúc [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] mô tả, vì tín hiệu xã hội chính là chỉ báo của đám đông muộn.
 5. **FOMO vi mô (micro-FOMO trong quản lý lệnh đang mở)** — mô tả: không phải FOMO khi vào lệnh mới, mà là FOMO khi *thêm* vào một lệnh đang có lời để "không bỏ lỡ phần mở rộng", phá vỡ kế hoạch chốt lời ban đầu. Dấu hiệu: quyết định add position không dựa trên một POI continuation mới mà dựa trên "đang chạy tốt quá, thêm vào đi". Mức nguy hiểm: **Trung bình** nhưng dễ bị bỏ qua nhất vì "tưởng" đang quản lý một lệnh thắng, không phải mở lệnh sai.
 
 ### 11.5. Ma trận tương tác với mistake khác
 
 | Mistake kết hợp | Cơ chế khuếch đại lẫn nhau | Mức nguy hiểm tổ hợp |
 |---|---|---|
-| [[07 - Mistake - Risk more than 0.5% total account]] | FOMO buộc SL nới rộng (không có cấu trúc gần) → nếu không giảm size tương ứng, risk thực >0.5% ngay trên chính lệnh FOMO — hai lỗi xảy ra đồng thời trên cùng một lệnh, không phải hai sự kiện độc lập. | **Rất cao** — cộng hưởng trực tiếp, thường xảy ra cùng lúc. |
-| [[01 - Mistake - Emotional revenge trade]] | Trình tự cộng hưởng hai chiều: bỏ lỡ → FOMO bù → thua → cay cú → revenge FOMO lệnh kế tiếp (xem mục 5.6 note gốc) — một chuỗi domino có thể tạo 3-4 lệnh xấu liên tiếp trong một phiên. | **Rất cao** — cơ chế domino, không dừng ở một lệnh. |
-| [[02 - Mistake - Enter before liquidity sweep]] | Về bản chất là hai đầu đối lập của cùng một trục thời gian sai (quá sớm vs quá muộn) — một trader thiếu kỷ luật timing dễ dao động giữa cả hai trong cùng một ngày (miss vì vào sớm quá → sau đó FOMO vì sợ miss lần nữa). | **Cao** — không khuếch đại trực tiếp cùng lệnh, nhưng khuếch đại ở cấp độ ngày giao dịch. |
-| [[06 - Mistake - Not Have Market Structure Shift]] | FOMO thường đi kèm bỏ qua yêu cầu MSS — "giá chạy mạnh" (displacement) bị hiểu lầm thành MSS đã xảy ra, trong khi displacement muộn của con sóng không đồng nghĩa có MSS mới tại vị trí entry. | **Cao** — hai lỗi cùng làm mất bằng chứng cấu trúc tại điểm entry. |
-| [[09 - Mistake - Wrong daily bias]] | Nếu bias ngày đã sai, FOMO theo displacement giả (Judas swing, mục 5.3) khuếch đại gấp đôi: vừa sai hướng, vừa sai timing — tổ hợp nguy hiểm nhất vì cả entry và bias đều không có cơ sở cấu trúc. | **Rất cao** — tổ hợp nguy hiểm nhất trong bảng này. |
+| [[07-Mistake-Risk-more-than-0.5-total-account]] | FOMO buộc SL nới rộng (không có cấu trúc gần) → nếu không giảm size tương ứng, risk thực >0.5% ngay trên chính lệnh FOMO — hai lỗi xảy ra đồng thời trên cùng một lệnh, không phải hai sự kiện độc lập. | **Rất cao** — cộng hưởng trực tiếp, thường xảy ra cùng lúc. |
+| [[01-Mistake-Emotional-revenge-trade]] | Trình tự cộng hưởng hai chiều: bỏ lỡ → FOMO bù → thua → cay cú → revenge FOMO lệnh kế tiếp (xem mục 5.6 note gốc) — một chuỗi domino có thể tạo 3-4 lệnh xấu liên tiếp trong một phiên. | **Rất cao** — cơ chế domino, không dừng ở một lệnh. |
+| [[02-Mistake-Enter-before-liquidity-sweep]] | Về bản chất là hai đầu đối lập của cùng một trục thời gian sai (quá sớm vs quá muộn) — một trader thiếu kỷ luật timing dễ dao động giữa cả hai trong cùng một ngày (miss vì vào sớm quá → sau đó FOMO vì sợ miss lần nữa). | **Cao** — không khuếch đại trực tiếp cùng lệnh, nhưng khuếch đại ở cấp độ ngày giao dịch. |
+| [[06-Mistake-Not-Have-Market-Structure-Shift]] | FOMO thường đi kèm bỏ qua yêu cầu MSS — "giá chạy mạnh" (displacement) bị hiểu lầm thành MSS đã xảy ra, trong khi displacement muộn của con sóng không đồng nghĩa có MSS mới tại vị trí entry. | **Cao** — hai lỗi cùng làm mất bằng chứng cấu trúc tại điểm entry. |
+| [[09-Mistake-Wrong-daily-bias]] | Nếu bias ngày đã sai, FOMO theo displacement giả (Judas swing, mục 5.3) khuếch đại gấp đôi: vừa sai hướng, vừa sai timing — tổ hợp nguy hiểm nhất vì cả entry và bias đều không có cơ sở cấu trúc. | **Rất cao** — tổ hợp nguy hiểm nhất trong bảng này. |
 
 ---
 
@@ -541,6 +541,6 @@ Audit hành vi **quyết định entry** tại đúng thời điểm bấm lện
 
 ## 16. Liên kết
 
-**Concepts:** [[27 - Premium Discount]] · [[26 - OTE - Optimal Trade Entry]] · [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] · [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]] · [[15 - Inducement]] · [[18 - Kill Zones]] · [[19 - Liquidity]]
+**Concepts:** [[27-Premium-Discount]] · [[26-OTE-Optimal-Trade-Entry]] · [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] · [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]] · [[15-Inducement]] · [[18-Kill-Zones]] · [[19-Liquidity]]
 
-**Mistakes liên quan:** [[02 - Mistake - Enter before liquidity sweep]] · [[01 - Mistake - Emotional revenge trade]] · [[06 - Mistake - Not Have Market Structure Shift]] · [[07 - Mistake - Risk more than 0.5% total account]]
+**Mistakes liên quan:** [[02-Mistake-Enter-before-liquidity-sweep]] · [[01-Mistake-Emotional-revenge-trade]] · [[06-Mistake-Not-Have-Market-Structure-Shift]] · [[07-Mistake-Risk-more-than-0.5-total-account]]

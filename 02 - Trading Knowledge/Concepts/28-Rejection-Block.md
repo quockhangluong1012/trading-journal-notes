@@ -24,7 +24,7 @@ updated: 2026-07-28
 > - RB **lấy phần wick** của nến, **không lấy body** như [[Order Block]]. Đây là điểm phân biệt quan trọng nhất.
 > - Vùng RB = khoảng từ **open/close (mép body)** đến **đỉnh/đáy của wick (extreme)** tại điểm đảo chiều.
 > - **Bullish RB** hình thành ở **đáy** một down-move (wick dưới dài); **Bearish RB** hình thành ở **đỉnh** một up-move (wick trên dài).
-> - Wick dài thường là dấu vết của một **[[20 - Liquidity Sweep]]** (quét stop) → RB thường trùng với vùng giá vừa "ăn" thanh khoản rồi quay đầu.
+> - Wick dài thường là dấu vết của một **[[20-Liquidity-Sweep]]** (quét stop) → RB thường trùng với vùng giá vừa "ăn" thanh khoản rồi quay đầu.
 > - RB là PD-array **xác suất phụ** (importance 3): chỉ giá trị khi sự từ chối thể hiện qua wick chứ không qua một body/displacement sạch.
 
 ---
@@ -60,12 +60,12 @@ Khi giá vươn tới một vùng, in ra một wick dài rồi đóng cửa quay
 | Bullish ở đâu       | Đáy down-move, wick dưới dài         | Nến đỏ cuối trước cú tăng                | OB bán cũ bị phá lên → support      |
 | Bearish ở đâu       | Đỉnh up-move, wick trên dài          | Nến xanh cuối trước cú giảm              | OB mua cũ bị phá xuống → resistance |
 
-### Quan hệ với [[20 - Liquidity Sweep]]
-Wick dài ≈ **dấu vết của một cú quét thanh khoản**. Khi giá đâm qua một swing để lấy [[07 - Buy-side Liquidity]] / [[30 - Sell-side Liquidity]] rồi nhanh chóng đóng cửa quay lại, phần đâm ra đó chính là wick tạo nên RB. Vì vậy RB chất lượng cao thường nằm **ngay sau một sweep** — đây cũng là logic của [[33 - Turtle Soup]]. Hãy luôn hỏi: *"Wick này đã quét thanh khoản gì?"*
+### Quan hệ với [[20-Liquidity-Sweep]]
+Wick dài ≈ **dấu vết của một cú quét thanh khoản**. Khi giá đâm qua một swing để lấy [[07-Buy-side-Liquidity]] / [[30 - Sell-side Liquidity]] rồi nhanh chóng đóng cửa quay lại, phần đâm ra đó chính là wick tạo nên RB. Vì vậy RB chất lượng cao thường nằm **ngay sau một sweep** — đây cũng là logic của [[33-Turtle-Soup]]. Hãy luôn hỏi: *"Wick này đã quét thanh khoản gì?"*
 
 ### Mục đích trong ICT
 - Cung cấp một **POI thay thế cho OB** khi sự từ chối thể hiện qua đuôi nến chứ không qua body/displacement.
-- Đánh dấu **vùng S/R có dấu vết thanh khoản** để canh re-entry theo [[27 - Premium Discount]].
+- Đánh dấu **vùng S/R có dấu vết thanh khoản** để canh re-entry theo [[27-Premium-Discount]].
 - Bổ trợ confluence cho các entry model như [[ICT 2022 Model]], [[Optimal Trade Entry]].
 
 ### Vì sao quan trọng
@@ -80,7 +80,7 @@ Nhiều điểm đảo chiều thật **không** để lại một OB body đẹ
 - **Không** phải mọi wick dài đều là RB — phải nằm tại **swing high/low có ý nghĩa cấu trúc**.
 - **Không** phải [[Order Block]] (RB dùng wick, OB dùng body).
 - **Không** phải tín hiệu vào lệnh độc lập — cần confirmation (sweep + phản ứng + cấu trúc).
-- **Không** thay thế [[12 - Daily Bias]]; RB chỉ là POI, hướng do bias quyết định.
+- **Không** thay thế [[12-Daily-Bias]]; RB chỉ là POI, hướng do bias quyết định.
 
 ---
 
@@ -90,19 +90,19 @@ Nhiều điểm đảo chiều thật **không** để lại một OB body đẹ
 | Loại | Vị trí | Wick định hướng | Vai trò | Thiên hướng lệnh | Đi kèm |
 |---|---|---|---|---|---|
 | **Bullish RB** | Đáy của down-move (swing low) | Wick **dưới** dài | Support / discount POI | **Long** | Sweep [[30 - Sell-side Liquidity]] |
-| **Bearish RB** | Đỉnh của up-move (swing high) | Wick **trên** dài | Resistance / premium POI | **Short** | Sweep [[07 - Buy-side Liquidity]] |
+| **Bearish RB** | Đỉnh của up-move (swing high) | Wick **trên** dài | Resistance / premium POI | **Short** | Sweep [[07-Buy-side-Liquidity]] |
 
 ### Khi nào RB có giá trị cao?
-- [ ] Wick **quét thanh khoản** rõ ràng (swing cũ, equal highs/lows, [[19 - Liquidity]] pool) rồi đóng quay lại.
-- [ ] RB nằm đúng phía [[27 - Premium Discount]] (Bullish RB ở discount, Bearish RB ở premium).
+- [ ] Wick **quét thanh khoản** rõ ràng (swing cũ, equal highs/lows, [[19-Liquidity]] pool) rồi đóng quay lại.
+- [ ] RB nằm đúng phía [[27-Premium-Discount]] (Bullish RB ở discount, Bearish RB ở premium).
 - [ ] RB trùng với một POI HTF (OB/FVG/RB khung lớn) → confluence.
-- [ ] Sau RB có **[[21 - Market Structure Shift]] / [[Break of Structure]]** xác nhận đảo chiều.
-- [ ] RB hình thành trong [[18 - Kill Zones]] (London/NY).
+- [ ] Sau RB có **[[21-Market-Structure-Shift]] / [[Break of Structure]]** xác nhận đảo chiều.
+- [ ] RB hình thành trong [[18-Kill-Zones]] (London/NY).
 - [ ] Wick dài bất thường so với các nến lân cận (lực từ chối thật).
 
 ### Khi nào nên bỏ qua RB?
 - [ ] Wick ngắn, không có sự từ chối đáng kể — chỉ là noise.
-- [ ] Nằm ngược phía bias HTF và ngược [[27 - Premium Discount]] (vd Long ở premium).
+- [ ] Nằm ngược phía bias HTF và ngược [[27-Premium-Discount]] (vd Long ở premium).
 - [ ] Giá đã **đóng cửa vượt khỏi wick extreme** → RB đã bị vô hiệu.
 - [ ] Không quét thanh khoản nào → thiếu logic "stop run".
 - [ ] Có một [[Order Block]] body sạch tốt hơn ở cùng vùng → ưu tiên OB.
@@ -145,14 +145,14 @@ Nhiều điểm đảo chiều thật **không** để lại một OB body đẹ
 > 4. **Có MSS/BOS xác nhận sau đó chưa, và invalidation (đóng cửa vượt wick extreme) nằm ở đâu?**
 
 ### D1 / H4 — Bối cảnh & bias
-- Xác định [[12 - Daily Bias]] và vị trí giá trong [[12 - Dealing Range]] ([[27 - Premium Discount]]).
-- Khoanh các swing high/low HTF có **wick dài** + mức [[19 - Liquidity]] quanh đó.
+- Xác định [[12-Daily-Bias]] và vị trí giá trong [[12-Dealing-Range]] ([[27-Premium-Discount]]).
+- Khoanh các swing high/low HTF có **wick dài** + mức [[19-Liquidity]] quanh đó.
 - Đánh dấu RB HTF làm vùng "đại bản doanh" cho POI.
 
 ### H1 / M15 — Định khung POI
 - Trong vùng RB HTF (hoặc gần mức thanh khoản), chờ giá tiếp cận.
 - Xác nhận **sweep** một mức thanh khoản M15/H1, quan sát wick reject.
-- Vẽ RB M15/H1 và canh [[21 - Market Structure Shift]] để xác nhận đảo chiều.
+- Vẽ RB M15/H1 và canh [[21-Market-Structure-Shift]] để xác nhận đảo chiều.
 
 ### M5 / M1 — Entry tinh chỉnh
 - Sau MSS, chờ giá pullback về **mép body của RB** (hoặc FVG/OTE trùng RB).
@@ -192,9 +192,9 @@ R dự kiến: [____]  | Kill zone: [____]
 ### Xác nhận (confirmation) — cần đủ confluence
 - [ ] Wick đã **quét một mức thanh khoản** thực sự (không phải swing vô nghĩa).
 - [ ] Có **phản ứng đảo chiều** (đóng cửa quay lại / displacement) sau wick.
-- [ ] **[[21 - Market Structure Shift]] / [[Break of Structure]]** trên LTF ủng hộ hướng RB.
-- [ ] RB đúng phía [[27 - Premium Discount]] theo bias.
-- [ ] (Bonus) Trùng POI HTF, trong [[18 - Kill Zones]].
+- [ ] **[[21-Market-Structure-Shift]] / [[Break of Structure]]** trên LTF ủng hộ hướng RB.
+- [ ] RB đúng phía [[27-Premium-Discount]] theo bias.
+- [ ] (Bonus) Trùng POI HTF, trong [[18-Kill-Zones]].
 
 ### Vô hiệu hóa (invalidation)
 - [ ] **Giá đóng cửa vượt khỏi wick extreme** (đóng dưới low wick với Bullish RB / đóng trên high wick với Bearish RB) → **RB chết, hủy ý tưởng**.
@@ -257,7 +257,7 @@ Vì sao một cụm RB, dù trông "lộn xộn" hơn, lại có thể **đáng 
 
 ### Nâng cao — Rejection Block vs Turtle Soup: cùng logic sweep-and-reverse nhưng khác vai trò
 
-[[33 - Turtle Soup]] và Rejection Block thường bị dùng lẫn lộn vì cả hai đều xoay quanh logic "quét thanh khoản rồi đảo chiều" (sweep-and-reverse). Nhưng chúng thuộc hai phạm trù khác nhau:
+[[33-Turtle-Soup]] và Rejection Block thường bị dùng lẫn lộn vì cả hai đều xoay quanh logic "quét thanh khoản rồi đảo chiều" (sweep-and-reverse). Nhưng chúng thuộc hai phạm trù khác nhau:
 
 - **Turtle Soup là một ENTRY MODEL / PATTERN** — một cấu trúc setup cụ thể: giá phá giả (false breakout) qua một swing point đã định nghĩa trước, rồi đảo chiều trở lại trong khung cấu trúc đó. Nó có điều kiện vào lệnh, stop, target theo một kịch bản pattern rõ ràng.
 - **Rejection Block là một PD-ARRAY / ZONE** — một vùng giá được đánh dấu bởi wick còn sót lại từ một cú từ chối, dùng làm POI để retest bất cứ khi nào giá quay lại, không gắn với một pattern entry cụ thể nào.
@@ -301,7 +301,7 @@ Nhưng chúng **không phải là từ đồng nghĩa**:
 
 **Mô tả:** Vào lệnh tại "wick dài" nhưng thiếu bối cảnh — RB giả.
 - Wick xuất hiện **không quét thanh khoản** nào (chỉ là noise giữa range).
-- Vào ngược [[27 - Premium Discount]] (Long ở premium) và ngược bias HTF.
+- Vào ngược [[27-Premium-Discount]] (Long ở premium) và ngược bias HTF.
 - Không có MSS xác nhận; ngay sau đó giá **đóng cửa vượt wick extreme** → RB bị vô hiệu.
 - Kết quả: stop tại [____], lệnh thua vì confluence rỗng.
 
@@ -321,7 +321,7 @@ Nhưng chúng **không phải là từ đồng nghĩa**:
 - [[Order Block]] — POI "anh em"; chọn RB khi từ chối qua wick, OB khi qua body.
 - [[Optimal Trade Entry]] — tinh chỉnh entry trong vùng RB bằng vùng OTE.
 - [[Fair Value Gap]] — FVG trùng RB tạo confluence entry mạnh.
-- [[33 - Turtle Soup]] — logic sweep-and-reverse rất hợp với RB sau sweep.
+- [[33-Turtle-Soup]] — logic sweep-and-reverse rất hợp với RB sau sweep.
 - [[Breaker Block]] — nếu RB/OB cũ bị phá rồi flip, chuyển sang đọc breaker.
 
 ```text
@@ -345,15 +345,15 @@ Nhưng chúng **không phải là từ đồng nghĩa**:
 > Mỗi mục bỏ qua là một lần hạ xác suất. RB thiếu confluence = RB giả.
 
 **A. Bối cảnh (HTF)**
-- [ ] [[12 - Daily Bias]] rõ ràng, RB cùng hướng bias.
-- [ ] Giá đúng phía [[27 - Premium Discount]] (Bullish RB ở discount / Bearish RB ở premium).
+- [ ] [[12-Daily-Bias]] rõ ràng, RB cùng hướng bias.
+- [ ] Giá đúng phía [[27-Premium-Discount]] (Bullish RB ở discount / Bearish RB ở premium).
 - [ ] RB có confluence với POI HTF (OB/FVG/RB khung lớn).
 
 **B. Cấu trúc & tín hiệu (LTF)**
 - [ ] Wick đã **quét thanh khoản** thực sự.
-- [ ] Có phản ứng đảo chiều + [[21 - Market Structure Shift]] xác nhận.
+- [ ] Có phản ứng đảo chiều + [[21-Market-Structure-Shift]] xác nhận.
 - [ ] Vùng RB chưa bị đóng cửa vượt wick extreme.
-- [ ] Đang trong [[18 - Kill Zones]] (ưu tiên).
+- [ ] Đang trong [[18-Kill-Zones]] (ưu tiên).
 
 **C. Quản trị & kỷ luật**
 - [ ] Entry, SL (sau wick extreme), TP đã xác định trước.
@@ -368,8 +368,8 @@ Nhưng chúng **không phải là từ đồng nghĩa**:
 |---|---|---|---|
 | Nhầm RB với [[Order Block]] | Vẽ vào body thay vì wick | Sai vùng entry & invalidation | RB = wick; OB = body. Kiểm lại phần nến dùng |
 | Coi mọi wick dài là RB | Vào lệnh ở wick giữa range | Không có logic sweep → noise | Chỉ RB tại swing có quét thanh khoản |
-| Bỏ qua premium/discount | Long ở premium / Short ở discount | Vào ngược dòng tiền | Luôn lọc theo [[27 - Premium Discount]] + bias |
-| Không chờ MSS | Vào ngay khi thấy wick | Bắt dao rơi, không xác nhận đảo | Chờ [[21 - Market Structure Shift]] LTF |
+| Bỏ qua premium/discount | Long ở premium / Short ở discount | Vào ngược dòng tiền | Luôn lọc theo [[27-Premium-Discount]] + bias |
+| Không chờ MSS | Vào ngay khi thấy wick | Bắt dao rơi, không xác nhận đảo | Chờ [[21-Market-Structure-Shift]] LTF |
 | Đặt SL sai chỗ | SL ở mép body, không phải wick | Dễ bị quét bởi wick mới | SL **sau** wick extreme |
 | Phớt lờ invalidation | Giữ lệnh sau khi đóng vượt extreme | RB đã chết, lỗ lan rộng | Đóng nến vượt extreme = thoát ngay |
 | Dùng RB thay vì OB tốt hơn | Bỏ OB body sạch để chọn wick | Mất POI chất lượng cao hơn | Có OB + displacement rõ → ưu tiên OB |
@@ -381,7 +381,7 @@ Nhưng chúng **không phải là từ đồng nghĩa**:
 1. RB lấy phần nào của nến, và khác [[Order Block]] ở chỗ nào?
 2. Bullish RB hình thành ở đâu và wick hướng nào? Còn Bearish RB?
 3. Cách vẽ vùng RB (mốc nào là entry, mốc nào là invalidation)?
-4. Vì sao wick dài thường liên quan đến [[20 - Liquidity Sweep]]?
+4. Vì sao wick dài thường liên quan đến [[20-Liquidity-Sweep]]?
 5. Điều gì làm một RB **vô hiệu hóa** dứt khoát?
 6. Khi nào nên chọn RB thay vì OB, và ngược lại?
 7. RB khác [[Breaker Block]] thế nào về cấu trúc và bối cảnh?
@@ -400,7 +400,7 @@ Nhưng chúng **không phải là từ đồng nghĩa**:
 > **A3.** Ở **đỉnh** một up-move, với **wick trên dài** (giá bị từ chối xuống). POI cho Short.
 
 > **Q4.** Wick dài của RB thường là dấu vết của điều gì?
-> **A4.** Một **[[20 - Liquidity Sweep]]** (stop run) — giá đâm lấy thanh khoản rồi quay lại.
+> **A4.** Một **[[20-Liquidity-Sweep]]** (stop run) — giá đâm lấy thanh khoản rồi quay lại.
 
 > **Q5.** Điều kiện vô hiệu hóa RB là gì?
 > **A5.** **Body đóng cửa vượt khỏi wick extreme** (dưới low wick / trên high wick).
@@ -443,19 +443,19 @@ Nhưng chúng **không phải là từ đồng nghĩa**:
 > [!success] Nguyên tắc vàng
 > **RB là wick, không phải body — và một wick chỉ đáng tin khi nó vừa quét thanh khoản có ý nghĩa, vừa đủ lớn theo tỉ lệ định lượng, vừa được MSS xác nhận.** Thiếu bất kỳ điều nào trong ba điều đó, "RB" chỉ là một cái tên gắn cho noise; đủ cả ba, RB trở thành một trong những POI có edge thật trong bộ công cụ ICT.
 
-1. **Luôn xác nhận wick đã quét một mức thanh khoản có ý nghĩa trước khi gọi nó là RB.** Một wick dài giữa range, không chạm equal highs/lows, không chạm swing cũ nào, chỉ là biến động ngẫu nhiên. Hỏi rõ: *"Wick này vừa lấy [[19 - Liquidity]] gì — buy-side hay sell-side, ở mức nào?"* Nếu không trả lời được, đừng vẽ RB. Ghi trường `liquidity_swept` (loại + mức) vào journal cho mỗi RB đã trade để sau này lọc ra nhóm "RB không sweep" và so win-rate.
+1. **Luôn xác nhận wick đã quét một mức thanh khoản có ý nghĩa trước khi gọi nó là RB.** Một wick dài giữa range, không chạm equal highs/lows, không chạm swing cũ nào, chỉ là biến động ngẫu nhiên. Hỏi rõ: *"Wick này vừa lấy [[19-Liquidity]] gì — buy-side hay sell-side, ở mức nào?"* Nếu không trả lời được, đừng vẽ RB. Ghi trường `liquidity_swept` (loại + mức) vào journal cho mỗi RB đã trade để sau này lọc ra nhóm "RB không sweep" và so win-rate.
 
 2. **Định lượng tỉ lệ wick/body thay vì eyeball "wick dài".** Dùng ngưỡng cụ thể: wick ≥ 2x body, wick ≥ 60-70% tổng range, hoặc dài bất thường so với range trung bình 10-20 nến gần nhất. Một wick "dài" trên M1 giữa phiên Á yên tĩnh có thể chỉ tương đương noise bình thường trên một nến tin tức H1. Ghi `wick_body_ratio` cho từng lệnh và xây ngưỡng riêng theo khung thời gian/thị trường bạn hay trade.
 
 3. **Ưu tiên cụm RB (rejection shelf) hơn một wick spike đơn lẻ khi cả hai đều có mặt.** Một cụm 2-4 nến cùng từ chối gần một mức phản ánh nhiều lần thử và hấp thụ thanh khoản hơn — dấu chân institutional rõ hơn một cú spike đơn. Khi phải chọn POI giữa một RB đơn và một RB cụm ở cùng khu vực, nghiêng về phía cụm, miễn là cụm hình thành liên tục trong thời gian ngắn chứ không rải rác qua nhiều phiên.
 
-4. **Không tin một RB cho tới khi có [[21 - Market Structure Shift]] / Break of Structure xác nhận.** Wick dài chỉ là bằng chứng của sự từ chối tại một thời điểm; nó không tự động nói lên cấu trúc đã đảo. Vào lệnh ngay khi thấy wick mà chưa có MSS là bắt dao rơi. Ghi `mss_confirmed: yes/no` cho mỗi lệnh RB và so sánh nhóm có MSS với nhóm không — gần như chắc chắn nhóm không MSS sẽ kéo win-rate xuống.
+4. **Không tin một RB cho tới khi có [[21-Market-Structure-Shift]] / Break of Structure xác nhận.** Wick dài chỉ là bằng chứng của sự từ chối tại một thời điểm; nó không tự động nói lên cấu trúc đã đảo. Vào lệnh ngay khi thấy wick mà chưa có MSS là bắt dao rơi. Ghi `mss_confirmed: yes/no` cho mỗi lệnh RB và so sánh nhóm có MSS với nhóm không — gần như chắc chắn nhóm không MSS sẽ kéo win-rate xuống.
 
 5. **Đặt stop nghiêm ngặt sau wick extreme, không phải mép body.** Đây là lỗi kinh điển nhất khi giao dịch RB: đặt SL sát mép body cho "gọn" khiến lệnh dễ bị quét bởi một wick mới còn nằm trong logic của cùng RB. SL luôn nằm ngoài điểm xa nhất của wick (hoặc ngoài envelope nếu là cụm RB) — đó là ranh giới invalidation thật, không phải điểm entry.
 
 6. **Coi Rejection Block và [[Order Block]] là hai POI anh em, không ép RB vào mọi chỗ.** Khi cùng một điểm đảo chiều vừa có một OB body sạch với displacement rõ, vừa có một wick dài, ưu tiên OB — nó thường cho vùng entry gọn hơn và ít bị "nhiễu wick mới" chi phối invalidation. Chỉ dùng RB làm POI chính khi sự từ chối thực sự thể hiện qua wick chứ không qua body sạch.
 
-7. **Nhận diện đúng mối quan hệ RB với [[33 - Turtle Soup]] mà không đánh đồng hai khái niệm.** Turtle Soup là entry model (false breakout + reversal theo kịch bản cấu trúc); RB là PD-array (vùng wick để retest). Chúng chồng lấp khi nến đảo chiều của một Turtle Soup chính là RB, nhưng bạn có thể gặp RB không kèm Turtle Soup (trong continuation) và Turtle Soup không để lại RB textbook. Đừng gọi mọi RB là "Turtle Soup" hay ngược lại — mỗi cái có logic quản trị lệnh riêng.
+7. **Nhận diện đúng mối quan hệ RB với [[33-Turtle-Soup]] mà không đánh đồng hai khái niệm.** Turtle Soup là entry model (false breakout + reversal theo kịch bản cấu trúc); RB là PD-array (vùng wick để retest). Chúng chồng lấp khi nến đảo chiều của một Turtle Soup chính là RB, nhưng bạn có thể gặp RB không kèm Turtle Soup (trong continuation) và Turtle Soup không để lại RB textbook. Đừng gọi mọi RB là "Turtle Soup" hay ngược lại — mỗi cái có logic quản trị lệnh riêng.
 
 8. **Log `wick_body_ratio`, loại cụm-hay-đơn, và kết quả từng lệnh RB, rồi review sau 20-30 mẫu trên NQ1/EURUSD/XAUUSD.** Chỉ dữ liệu thực chiến mới trả lời được các câu hỏi: ngưỡng wick/body nào cho win-rate tốt nhất trên từng thị trường? RB cụm có thực sự outperform RB đơn không? RB có kém tin cậy hơn OB tại cùng điểm đảo hay không? Đối chiếu kết quả với [[01 - Roadmap]] và cập nhật [[02 - Skill Metrics]] sau mỗi đợt review, đồng thời nâng `confidence` của note này khi đã có đủ bằng chứng thay vì để mãi ở mức seed.
 

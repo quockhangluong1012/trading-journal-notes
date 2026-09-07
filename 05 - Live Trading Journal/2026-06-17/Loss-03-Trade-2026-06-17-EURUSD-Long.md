@@ -10,8 +10,8 @@ kill_zone:
 pnl: -41.5
 r_multiple:
 mistakes:
-  - "[[06 - Mistake - Not Have Market Structure Shift]]"
-  - "[[01 - Mistake - Emotional revenge trade]]"
+  - "[[06-Mistake-Not-Have-Market-Structure-Shift]]"
+  - "[[01-Mistake-Emotional-revenge-trade]]"
 planned_rr: 1.76
 result: Loss
 session: New York
@@ -45,13 +45,13 @@ da_opposite_case: "not viable"
   ![[EURUSD-20260617-M1.png]]
 ## 2. Phân tích sau lệnh:
 - **Result**: Hit ==stoploss==
-- **Mistake**: [[06 - Mistake - Not Have Market Structure Shift]]
+- **Mistake**: [[06-Mistake-Not-Have-Market-Structure-Shift]]
 - **Lý do**: Vào đuổi giá vì sợ lỡ mất nhịp giá. Khi dó giá chạm PD Array và xuất hiện displacement, tuy nhiên không có MSS. Tôi bỏ qua một điều kiện xác định quan trọng và vào lệnh Long trong khi các khung M15/M5 là nhịp giá giảm
 - Không check các tin tức quan trọng của ngày
 
 ## 4. Phân Tích Sau Lệnh (điền dựa trên dữ kiện có trong file)
 
-Nội dung mục 1 và 2 của file này **giống chữ-đối-chữ** với Loss-01 (cùng D1/H1/M5/M1 narrative, cùng câu "Lý do" ở mục 2) — chỉ khác entry/SL/TP, session (New York thay London), giờ (20:09 thay 17:36), và mistake tag bổ sung `[[01 - Mistake - Emotional revenge trade]]`. Đây có thể là: (a) template lặp lại có chủ đích (cùng setup EURUSD được thử lại lần 2 sau khi thấy giá tiếp tục theo hướng ban đầu tin), hoặc (b) copy-paste cẩu thả không cập nhật narrative. Không thể phân biệt hai khả năng này chỉ từ dữ kiện có trong file *(suy luận có điều kiện — cần chart hoặc log gốc xác nhận)*. Điểm khác biệt xác thực duy nhất là mistake tag revenge-trade tự gắn — đây LÀ tự nhận của user, không phải suy diễn.
+Nội dung mục 1 và 2 của file này **giống chữ-đối-chữ** với Loss-01 (cùng D1/H1/M5/M1 narrative, cùng câu "Lý do" ở mục 2) — chỉ khác entry/SL/TP, session (New York thay London), giờ (20:09 thay 17:36), và mistake tag bổ sung `[[01-Mistake-Emotional-revenge-trade]]`. Đây có thể là: (a) template lặp lại có chủ đích (cùng setup EURUSD được thử lại lần 2 sau khi thấy giá tiếp tục theo hướng ban đầu tin), hoặc (b) copy-paste cẩu thả không cập nhật narrative. Không thể phân biệt hai khả năng này chỉ từ dữ kiện có trong file *(suy luận có điều kiện — cần chart hoặc log gốc xác nhận)*. Điểm khác biệt xác thực duy nhất là mistake tag revenge-trade tự gắn — đây LÀ tự nhận của user, không phải suy diễn.
 
 ## 5. Lesson Learned
 

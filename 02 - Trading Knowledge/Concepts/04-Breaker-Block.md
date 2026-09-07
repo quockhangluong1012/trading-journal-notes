@@ -109,7 +109,7 @@ Breaker chỉ là một thành viên trong nhóm các vùng có "gốc gác orde
 
 ![[Breaker-Advanced-Block-Family.svg|697]]
 
-*So sánh nhanh: [[25 - OB - Order Block|Order Block]] (chưa fail, vào theo hướng gốc) vs Breaker (OB fail + có sweep + đảo cực) vs [[22 - Mitigation Block|Mitigation Block]] (OB fail nhưng KHÔNG sweep, swing giữ) vs [[17 - Inverse Fair Value Gap - iFVG|IFVG]] (nguồn từ FVG, fail bằng close). Breaker là vùng DUY NHẤT bắt buộc có cả sweep lẫn MSS.*
+*So sánh nhanh: [[25-OB-Order-Block|Order Block]] (chưa fail, vào theo hướng gốc) vs Breaker (OB fail + có sweep + đảo cực) vs [[22-Mitigation-Block|Mitigation Block]] (OB fail nhưng KHÔNG sweep, swing giữ) vs [[17-Inverse-Fair-Value-Gap-iFVG|IFVG]] (nguồn từ FVG, fail bằng close). Breaker là vùng DUY NHẤT bắt buộc có cả sweep lẫn MSS.*
 
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Có đủ chuỗi: **sweep liquidity → displacement phá cấu trúc (MSS)** rõ ràng.
@@ -180,7 +180,7 @@ Breaker chỉ là một thành viên trong nhóm các vùng có "gốc gác orde
 *Breaker là POI xuất hiện ở bước ⑤ — SAU khi sweep (③) và MSS (④) đã xảy ra, TRƯỚC retest và entry. Bỏ qua sweep hoặc MSS thì vùng đó không phải breaker.*
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại / đang đổi:** breaker thường xuất hiện tại điểm cấu trúc HTF chuyển hướng (xem [[12 - Daily Bias]]).
+- **Bias hiện tại / đang đổi:** breaker thường xuất hiện tại điểm cấu trúc HTF chuyển hướng (xem [[12-Daily-Bias]]).
 - **Liquidity HTF:** pool nào vừa bị quét để tạo breaker; pool nào là target.
 - **Vị trí premium/discount:** bullish breaker cần ở discount; bearish breaker cần ở premium.
 
@@ -253,7 +253,7 @@ Invalid: đóng nến lại trên breaker + trên MSS
 | Breaker hợp lệ nhưng giá đóng nến xuyên qua khi retest | **Breaker fail** | Hủy lệnh; cảnh giác tiếp diễn hướng cũ |
 
 > [!note]
-> Breaker và **[[25 - OB - Order Block|Order Block]]** là hai mặt của một cấu trúc: cùng một vùng nến, nhưng OB dùng khi vùng còn "giữ" theo hướng gốc, còn breaker dùng khi vùng đã fail và đảo cực. Hỏi đúng một câu: **"Vùng này đã quét liquidity và phá cấu trúc NGƯỢC lại chưa?"** — nếu rồi, đó là breaker.
+> Breaker và **[[25-OB-Order-Block|Order Block]]** là hai mặt của một cấu trúc: cùng một vùng nến, nhưng OB dùng khi vùng còn "giữ" theo hướng gốc, còn breaker dùng khi vùng đã fail và đảo cực. Hỏi đúng một câu: **"Vùng này đã quét liquidity và phá cấu trúc NGƯỢC lại chưa?"** — nếu rồi, đó là breaker.
 
 ![[Breaker-Advanced-Failed-Breaker.svg|697]]
 
@@ -265,7 +265,7 @@ Một breaker "trần" (chỉ có vùng đảo cực) thường quá rộng đ�
 
 - **Vì sao FVG của nhịp MSS là confluence "cùng nguồn":** nhịp displacement phá High1/Low1 (bước tạo MSS) gần như luôn để lại một [[Fair Value Gap]]. FVG này và vùng breaker sinh ra từ **cùng một sự kiện đảo delivery**, nên khi chúng chồng lên nhau, bạn có hai bằng chứng độc lập cùng chỉ về một vùng giá. Đây là trạng thái "Breaker + FVG" ở bảng phân loại mục 2.
 - **Refine bằng CE (điểm 50% của FVG/breaker):** thay vì vào ở mép xa của breaker (giá tốt nhưng dễ bị xuyên) hay mép gần (an toàn nhưng R:R kém), đặt limit tại **Mean Threshold / CE** — trung điểm của vùng chồng lấn breaker∩FVG. Đây là điểm cân bằng giữa fill-rate và stop-distance.
-- **Kết hợp [[26 - OTE - Optimal Trade Entry|OTE]]:** vẽ Fibonacci trên nhịp displacement (từ swept low/high tới đỉnh/đáy displacement). Nếu vùng breaker∩FVG rơi vào cụm OTE 62–79%, đó là "triple confluence" (breaker + FVG + OTE) — ưu tiên cao nhất, size chuẩn.
+- **Kết hợp [[26-OTE-Optimal-Trade-Entry|OTE]]:** vẽ Fibonacci trên nhịp displacement (từ swept low/high tới đỉnh/đáy displacement). Nếu vùng breaker∩FVG rơi vào cụm OTE 62–79%, đó là "triple confluence" (breaker + FVG + OTE) — ưu tiên cao nhất, size chuẩn.
 - **Thứ tự ưu tiên khi nhiều vùng:** breaker∩FVG∩OTE > breaker∩FVG > breaker∩OTE > breaker trần. Ghi lại tag `breaker_fvg_confluence` và `entry_refine` (CE/OTE/mép) vào journal để về sau đo R trung bình theo từng loại.
 
 > [!tip]
@@ -282,7 +282,7 @@ Không phải breaker nào cũng đáng tin ngang nhau. Vì breaker **bắt bu�
 | **C — trung bình** | Swing đã bị test 1 lần | Gần equilibrium (chưa hẳn premium/discount) | Pool đã mỏng bớt; breaker dễ chỉ đủ sức cho một internal leg, giảm size |
 | **D — thấp / bỏ** | Micro swing, hoặc pool đã bị quét nhiều lần | Sai phía (bull breaker ở premium) | "Nhiên liệu" gần cạn + location xấu → phần lớn là failed breaker, đừng trade |
 
-- **Nguyên tắc nhân chất lượng:** một breaker Tier A trong kill zone ([[18 - Kill Zones]]) đồng hướng [[12 - Daily Bias]] là setup A+; cùng cấu trúc đó nhưng sweep một micro swing giữa range thì tụt thẳng xuống Tier D dù "trông giống breaker".
+- **Nguyên tắc nhân chất lượng:** một breaker Tier A trong kill zone ([[18-Kill-Zones]]) đồng hướng [[12-Daily-Bias]] là setup A+; cùng cấu trúc đó nhưng sweep một micro swing giữa range thì tụt thẳng xuống Tier D dù "trông giống breaker".
 - **HTF breaker làm khung, LTF refine:** một breaker trên D1/H4 (sweep PDL/PWL) tạo POI đảo chiều lớn; bạn xuống M15/M5 tìm một breaker/MSS nhỏ **bên trong** vùng HTF đó để refine entry — HTF cho location + độ tin, LTF cho entry + stop chặt.
 - **Ghi vào journal:** tag `breaker_swept_pool_tier` (A/B/C/D) và `breaker_htf_location` (POI-aligned / range). Sau 20–30 mẫu, so R trung bình giữa Tier A và Tier C — gần như chắc chắn bạn sẽ thấy chênh lệch đủ lớn để bỏ hẳn Tier C–D.
 
@@ -293,7 +293,7 @@ Một breaker thất bại không chỉ là "setup hỏng" — nó là **bằng 
 1. **Định nghĩa fail bằng acceptance, không bằng cảm giác:** breaker chỉ được coi là fail khi có **một nến đóng thân xuyên qua vùng breaker + một nến sau giữ bên kia và xuyên lại MSS level** (xem diagram trên). Một wick chọc qua rồi đóng lại bên trong vùng vẫn là respect — đừng thoát non.
 2. **Failed breaker = MSS bị phủ nhận:** khi giá đóng xuyên lại MSS level, cú "đảo chiều" ban đầu bị vô hiệu. Điều này nói: sweep + MSS trước đó chỉ là một cú **liquidity grab tạm thời**, và delivery gốc chưa hề đổi. Đây là lúc chuyển tư duy từ "tìm entry đảo chiều" sang "canh tiếp diễn hướng cũ".
 3. **Setup tiếp diễn sau failed breaker:** vùng breaker đã fail thường **đảo vai trò lần nữa** — trở lại thành rào cản theo hướng cũ (một bullish breaker fail → vùng đó thành kháng cự cho hướng giảm tiếp diễn). Kết hợp với FVG của nhịp phá xuống, bạn có POI để vào theo hướng gốc, thường về đúng pool liquidity mà "MSS giả" vừa tạo ra ở phía đối diện.
-4. **Thông tin cho bias:** nhiều failed breaker liên tiếp ngược [[12 - Daily Bias|Daily Bias]] là dấu hiệu HTF delivery còn rất mạnh theo hướng bias — đáng ghi vào Daily Note như một xác nhận, không phải một thất bại đơn lẻ.
+4. **Thông tin cho bias:** nhiều failed breaker liên tiếp ngược [[12-Daily-Bias|Daily Bias]] là dấu hiệu HTF delivery còn rất mạnh theo hướng bias — đáng ghi vào Daily Note như một xác nhận, không phải một thất bại đơn lẻ.
 
 > [!warning]
 > Đừng "trả thù" một failed breaker bằng cách đảo lệnh ngay tại cây nến phá. Chờ giá **retest vùng breaker đã fail** (giờ là rào cản hướng cũ) hoặc FVG của nhịp phá, rồi mới vào theo hướng tiếp diễn — vẫn phải đúng sequence, chỉ là hướng đã đổi.
@@ -353,7 +353,7 @@ HTF Bias chuyển Bearish
 ```
 
 > [!note]
-> Breaker là "phiên bản đảo cực" của [[25 - OB - Order Block|Order Block]]: cùng nguyên liệu (cụm nến + displacement), nhưng đi kèm bắt buộc một [[20 - Liquidity Sweep]] và một [[21 - Market Structure Shift]] để xác nhận hướng đã đổi. Nếu vùng đó còn trùng một [[Fair Value Gap]] thì confluence càng mạnh.
+> Breaker là "phiên bản đảo cực" của [[25-OB-Order-Block|Order Block]]: cùng nguyên liệu (cụm nến + displacement), nhưng đi kèm bắt buộc một [[20-Liquidity-Sweep]] và một [[21-Market-Structure-Shift]] để xác nhận hướng đã đổi. Nếu vùng đó còn trùng một [[Fair Value Gap]] thì confluence càng mạnh.
 
 ---
 
@@ -500,9 +500,9 @@ HTF Bias chuyển Bearish
 
 1. **Kiểm tra ba cổng theo đúng thứ tự: Có sweep? Có MSS/displacement? Vùng đã đảo cực chưa?** Thiếu một cổng = không phải breaker, không trade. Phần lớn lệnh thua gắn tag breaker trong journal sẽ rơi vào nhóm "không có sweep thật" hoặc "MSS yếu, chỉ là wick". Viết ba câu hỏi này cạnh màn hình cho tới khi thành phản xạ.
 
-2. **Phân biệt breaker với [[22 - Mitigation Block]] bằng phép thử sweep.** Cả hai đều là OB đảo hướng, nhưng breaker BẮT BUỘC có sweep (đáy/đỉnh cũ bị phá), còn mitigation block hình thành khi swing cũ GIỮ VỮNG (không sweep). Tên gọi quyết định vị trí stop: breaker → stop ngoài điểm sweep (Low2/High2); mitigation → stop ngoài extreme failure swing. Đặt sai tên = đặt sai stop.
+2. **Phân biệt breaker với [[22-Mitigation-Block]] bằng phép thử sweep.** Cả hai đều là OB đảo hướng, nhưng breaker BẮT BUỘC có sweep (đáy/đỉnh cũ bị phá), còn mitigation block hình thành khi swing cũ GIỮ VỮNG (không sweep). Tên gọi quyết định vị trí stop: breaker → stop ngoài điểm sweep (Low2/High2); mitigation → stop ngoài extreme failure swing. Đặt sai tên = đặt sai stop.
 
-3. **Ưu tiên breaker trùng FVG của chính nhịp displacement.** Confluence mạnh nhất là khi vùng đảo cực chồng lên FVG do nhịp MSS để lại — lúc đó bạn có sweep + MSS + breaker + FVG trong một vùng. Refine entry quanh CE ([[10 - Consequent Encroachment (Mean Threshold)|Mean Threshold]]) hoặc [[26 - OTE - Optimal Trade Entry|OTE]] của vùng để có stop ngắn hơn và R:R tốt hơn nhiều so với vào cả breaker rộng.
+3. **Ưu tiên breaker trùng FVG của chính nhịp displacement.** Confluence mạnh nhất là khi vùng đảo cực chồng lên FVG do nhịp MSS để lại — lúc đó bạn có sweep + MSS + breaker + FVG trong một vùng. Refine entry quanh CE ([[10-Consequent-Encroachment-Mean-Threshold|Mean Threshold]]) hoặc [[26-OTE-Optimal-Trade-Entry|OTE]] của vùng để có stop ngắn hơn và R:R tốt hơn nhiều so với vào cả breaker rộng.
 
 4. **Chấm chất lượng pool bị sweep trước khi tin breaker.** Một breaker sinh sau khi quét equal highs/lows hay PDH/PDL (external liquidity nhiều "nhiên liệu") đáng tin hơn hẳn một breaker sau khi quét một swing vụn vặt. Ghi trường `breaker_swept_pool_tier` vào journal để sau này lọc — nhiều trader phát hiện chỉ breaker từ pool Tier 1–2 mới có edge ổn định.
 
@@ -540,7 +540,7 @@ Trong news spike, điều ngược lại xảy ra: market maker rút quote trư�
 Hai breaker giống hệt nhau về cấu trúc nhưng khác nhau về **thời điểm và bối cảnh retest** cho kết quả khác hẳn. Có hai đồng hồ chạy ngầm sau lưng mọi breaker:
 
 1. **Đồng hồ mitigation:** lần retest ĐẦU TIÊN có xác suất cao nhất, vì toàn bộ lệnh kẹt + lệnh chờ của phe mới còn nguyên. Mỗi lần chạm sau, một phần lệnh đã khớp/hủy — vùng mỏng dần đúng như OB. Breaker bị test lần 3 trở đi về cơ bản chỉ còn là một level trống.
-2. **Đồng hồ narrative:** breaker sống trong một câu chuyện delivery cụ thể — "cấu trúc đã đổi, giá đang trên đường tới draw X". **Khi draw X đã được giao (pool target đã bị quét), câu chuyện kết thúc** và breaker mất người bảo vệ, dù chưa từng bị retest. Retest một breaker sau khi target của nó đã delivered là trade một cái xác: thuật toán đã sang chu kỳ re-mapping mới (xem [[37 - Re-mapping Dealing Range sau Displacement]]).
+2. **Đồng hồ narrative:** breaker sống trong một câu chuyện delivery cụ thể — "cấu trúc đã đổi, giá đang trên đường tới draw X". **Khi draw X đã được giao (pool target đã bị quét), câu chuyện kết thúc** và breaker mất người bảo vệ, dù chưa từng bị retest. Retest một breaker sau khi target của nó đã delivered là trade một cái xác: thuật toán đã sang chu kỳ re-mapping mới (xem [[37-Re-mapping-Dealing-Range-sau-Displacement]]).
 
 **Why:** người "bảo vệ" breaker là phe vừa lật cấu trúc — họ bảo vệ nó **vì họ còn vị thế hướng về draw**. Draw đạt → họ chốt → không còn ai có động cơ mua/bán tại vùng đó. Vùng giá không có chủ thì không có phản ứng; phản ứng chưa bao giờ đến từ hình vẽ.
 
@@ -632,7 +632,7 @@ Vào các tuần chuyển giờ mùa (DST tháng 3 và tháng 11 ở Mỹ/châu 
 **Why — bài học cấu trúc từ lệnh này:**
 - **R:R 3+ của lệnh này được TẠO RA bởi bước refine, không phải bước dự đoán.** Cùng ý tưởng short, nếu entry ở mép xa breaker (1.20750) với cùng SL/TP thì R chỉ còn ~2.4; nếu vào cả vùng breaker rộng với stop tương ứng thì còn thấp hơn nữa. Chất xám nằm ở việc thu hẹp vùng bằng phép giao breaker ∩ FVG rồi lấy CE — trong khi hướng đi của giá là như nhau ở mọi phương án.
 - **Unicorn mạnh vì hai bằng chứng cùng nguồn cộng hưởng:** breaker chứng minh có người kẹt (nguồn cung khi retest), FVG chứng minh nhịp lật đủ mạnh để bỏ lại inefficiency (giá cần quay lại rebalance). Retest vào vùng chồng kích hoạt cả hai lực bán cùng lúc.
-- **Đối chiếu với lệnh thua OB 07/05/2021** (4 ngày sau, xem case study trong [[25 - OB - Order Block]]): cùng cặp tiền, cùng tuần, cùng bias bearish — khác nhau duy nhất ở chỗ lệnh này sweep external + chuỗi đủ 7 bước, lệnh kia sweep internal + gãy từ bước draw. Cặp win/loss này là minh chứng gọn nhất trong vault rằng **edge nằm ở chuỗi, không nằm ở POI**.
+- **Đối chiếu với lệnh thua OB 07/05/2021** (4 ngày sau, xem case study trong [[25-OB-Order-Block]]): cùng cặp tiền, cùng tuần, cùng bias bearish — khác nhau duy nhất ở chỗ lệnh này sweep external + chuỗi đủ 7 bước, lệnh kia sweep internal + gãy từ bước draw. Cặp win/loss này là minh chứng gọn nhất trong vault rằng **edge nằm ở chuỗi, không nằm ở POI**.
 
 **Việc cần làm tiếp (để biến 1 mẫu thành quy tắc):**
 - [ ] Gom tất cả mẫu backtest có `poi_stack` chứa Breaker (hiện mới có lệnh này là Unicorn thuần) — cần thêm 20+ mẫu trước khi kết luận về edge của Unicorn so với breaker trần.

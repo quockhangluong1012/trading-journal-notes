@@ -434,7 +434,7 @@ Bộ lọc: 6 objection nháp, cắt 1 (một objection về "session label thi�
 
 ### Liên kết
 
-- Concept: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[13 - FVG  - Fair Value Gap]] · [[25 - OB - Order Block]] · [[27 - Premium Discount]] · [[10 - Consequent Encroachment (Mean Threshold)]]
+- Concept: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[13-FVG-Fair-Value-Gap]] · [[25-OB-Order-Block]] · [[27-Premium-Discount]] · [[10-Consequent-Encroachment-Mean-Threshold]]
 - Backtest liên quan (double-tap pattern): [[01 - Win - NAS100 - 2026-04-02- Long]]
 - Dashboard: [[_Backtest Dashboard]]
 - Mistake liên quan: [[Mistake - ]] (chưa có mục riêng cho "giữ lệnh qua gap cuối tuần" — xem checkbox Playbook ở mục 7)

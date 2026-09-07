@@ -18,10 +18,10 @@ Note [[../2026-07-17/02 - Loss - GBPUSD - 2014-07-17 - Long|GBPUSD 17/7/2014]] (
 
 | Lệnh | first_error_step | Pool chưa bị quét | Entry | SL | Khoảng cách SL→pool |
 |---|---|---|---|---|---|
-| [[../2026-07-17/02 - Loss - GBPUSD - 2014-07-17 - Long\|GBPUSD 17/7/2014]] | sweep | ERL Range Low 1.70592 | (FVG 1.70873–1.71103) | 1.70840 | SL nằm phía trong ERL, ERL chưa bị chạm |
-| [[../2026-07-15/01 - Loss - XAUUSD - 2014-05-19 - Short\|XAUUSD 19/5/2014]] | poi | OB 0.786 (~1304.5–1306) | 1301.167 | 1301.789 | OB phía trên chưa từng được test trước khi vào Breaker 0.618 |
-| [[../2026-07-14/02 - Loss- XAUUSD- 2014-05-14- Short\|XAUUSD 14/5 sáng]] | poi | RB high 1304.109 (invalidation đúng) | 1301.482 | 1302.715 (RB low, lệch ~1.4 điểm so với invalidation ghi) | SL thực đặt trong vùng RB, không đúng cạnh invalidation đã công bố |
-| [[../2026-07-10/02 - Loss- EURUSD - 2021-05-07- Short\|EURUSD 7/5/2021]] | draw | BSL/OB 1.21296–1.21227 | 1.20805 | 1.20931 | SL nằm trong đường đi tới OB đối lập phía trên |
+| [[02 - Loss - GBPUSD - 2014-07-17 - Long|GBPUSD 17/7/2014]] | sweep | ERL Range Low 1.70592 | (FVG 1.70873–1.71103) | 1.70840 | SL nằm phía trong ERL, ERL chưa bị chạm |
+| [[01 - Loss - XAUUSD - 2014-05-19 - Short|XAUUSD 19/5/2014]] | poi | OB 0.786 (~1304.5–1306) | 1301.167 | 1301.789 | OB phía trên chưa từng được test trước khi vào Breaker 0.618 |
+| [[02 - Loss- XAUUSD- 2014-05-14- Short|XAUUSD 14/5 sáng]] | poi | RB high 1304.109 (invalidation đúng) | 1301.482 | 1302.715 (RB low, lệch ~1.4 điểm so với invalidation ghi) | SL thực đặt trong vùng RB, không đúng cạnh invalidation đã công bố |
+| [[02 - Loss- EURUSD - 2021-05-07- Short|EURUSD 7/5/2021]] | draw | BSL/OB 1.21296–1.21227 | 1.20805 | 1.20931 | SL nằm trong đường đi tới OB đối lập phía trên |
 
 Số liệu entry/SL trích trực tiếp từ frontmatter mỗi note; cột "Khoảng cách SL→pool" là mô tả định tính từ chính note gốc, chưa được đo bằng đơn vị pip/% range nhất quán (xem Fix ở mục Devil's Advocate).
 

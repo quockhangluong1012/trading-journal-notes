@@ -97,7 +97,7 @@ Khối lượng     = Số tiền rủi ro ÷ (Khoảng cách Stop × Giá trị
 > Stop = **$3,00** (300 "pip" 0,01). Giá trị = $100/$1/lot.
 > Lots = 500 ÷ (3 × 100) = **1,67 lot**. Nếu stop = $5,00 → 500 ÷ 500 = **1,0 lot**.
 
-Xem thêm chi tiết pip/lot/leverage tại [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]]. Bạn cũng có thể dùng máy tính khối lượng có sẵn:
+Xem thêm chi tiết pip/lot/leverage tại [[36-Forex-CFD-Basics-Pip-Lot-Spread-Swap-Leverage-Margin]]. Bạn cũng có thể dùng máy tính khối lượng có sẵn:
 
 ![[ForexBasics-PositionSize-Calculator-Screenshot.png|697]]
 
@@ -197,11 +197,11 @@ Size của bạn bị giới hạn bởi **ràng buộc chặt nhất** trong nh
 
 ## 9. Khái niệm liên quan
 
-- [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]] — nền tảng pip/lot/leverage
-- [[26 - OTE - Optimal Trade Entry]] — entry tối ưu → stop nhỏ tự nhiên
-- [[41 - Change in State of Delivery]] — logic đặt stop sau CISD/sweep
-- [[42 - SMT Divergence]] — xác nhận setup để dám dùng đủ size
-- [[18 - Kill Zones]] — chỉ chịu rủi ro trong giờ chất lượng
+- [[36-Forex-CFD-Basics-Pip-Lot-Spread-Swap-Leverage-Margin]] — nền tảng pip/lot/leverage
+- [[26-OTE-Optimal-Trade-Entry]] — entry tối ưu → stop nhỏ tự nhiên
+- [[41-Change-in-State-of-Delivery]] — logic đặt stop sau CISD/sweep
+- [[42-SMT-Divergence]] — xác nhận setup để dám dùng đủ size
+- [[18-Kill-Zones]] — chỉ chịu rủi ro trong giờ chất lượng
 
 ### Chuỗi tư duy sizing
 ```text
@@ -314,7 +314,7 @@ SORT date DESC
 - Kelly Criterion & fixed-fractional risk — nền tảng toán học quản lý vốn.
 - ICT — risk management & đặt stop theo cấu trúc (sweep, POI).
 - Tài liệu quy tắc các prop firm (daily loss, trailing drawdown, consistency) — đọc bản của firm bạn thi.
-- Concept nội bộ: [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]].
+- Concept nội bộ: [[36-Forex-CFD-Basics-Pip-Lot-Spread-Swap-Leverage-Margin]].
 
 ---
 
@@ -393,8 +393,8 @@ Diễn giải định tính (không gán số liệu cụ thể vì công thức
 
 ### A.5 Tương tác & mâu thuẫn với các khái niệm ICT khác
 
-- **Với [[26 - OTE - Optimal Trade Entry]]:** không mâu thuẫn, mà cộng sinh — entry tại OTE cho stop tự nhiên nhỏ hơn, làm tăng lot tính ra ở cùng risk $ cố định (RR đẹp hơn không đến từ "cố risk nhiều hơn" mà từ "stop nhỏ hơn"). Mâu thuẫn XUẤT HIỆN khi trader hiểu sai và ép entry gần OTE hơn mức cấu trúc cho phép chỉ để có stop nhỏ hơn, làm giảm chất lượng entry (tăng xác suất bị quét trước khi đảo thật) — đây là lỗi "ép stop nhỏ để vào lot to" nói ngược, tức "ép entry đẹp hơn giả tạo để có cớ risk nhiều hơn".
-- **Với [[41 - Change in State of Delivery]]** (logic đặt stop sau CISD/sweep): stop distance trong công thức position sizing PHẢI xuất phát từ logic CISD/sweep này, không phải ngược lại. Mâu thuẫn khi trader tính lot trước (muốn vào N lot) rồi "nắn" stop cho vừa vặn — đây chính là sai lầm số 1 được note gốc liệt ở mục 12 ("Ép stop nhỏ để vào lot to").
+- **Với [[26-OTE-Optimal-Trade-Entry]]:** không mâu thuẫn, mà cộng sinh — entry tại OTE cho stop tự nhiên nhỏ hơn, làm tăng lot tính ra ở cùng risk $ cố định (RR đẹp hơn không đến từ "cố risk nhiều hơn" mà từ "stop nhỏ hơn"). Mâu thuẫn XUẤT HIỆN khi trader hiểu sai và ép entry gần OTE hơn mức cấu trúc cho phép chỉ để có stop nhỏ hơn, làm giảm chất lượng entry (tăng xác suất bị quét trước khi đảo thật) — đây là lỗi "ép stop nhỏ để vào lot to" nói ngược, tức "ép entry đẹp hơn giả tạo để có cớ risk nhiều hơn".
+- **Với [[41-Change-in-State-of-Delivery]]** (logic đặt stop sau CISD/sweep): stop distance trong công thức position sizing PHẢI xuất phát từ logic CISD/sweep này, không phải ngược lại. Mâu thuẫn khi trader tính lot trước (muốn vào N lot) rồi "nắn" stop cho vừa vặn — đây chính là sai lầm số 1 được note gốc liệt ở mục 12 ("Ép stop nhỏ để vào lot to").
 - **Với Daily Bias / SMT Divergence (xác nhận setup):** một setup có nhiều confluence (SMT, đúng bias, đúng kill zone) KHÔNG nên tự động được risk cao hơn 0,5% — đây là một cạm bẫy phổ biến ("setup đẹp thì risk nhiều hơn chút cũng được"). Về mặt toán risk-of-ruin, việc thay đổi risk% theo "cảm giác tự tin" phá vỡ toàn bộ giả định của mô hình fixed-fractional (vốn giả định risk% cố định qua mọi lệnh) và làm biến dạng thống kê backtest (không còn so sánh táo với táo).
 - **Với giới hạn chồng chất của prop firm (mục 5 phần lõi):** đây không phải mâu thuẫn mà là một **ràng buộc bổ sung lên trên** công thức toán học thuần — công thức risk$ = balance × % chỉ đúng khi không vi phạm daily loss/trailing DD; khi có nhiều lệnh mở cùng lúc hoặc gần cuối ngày đã lỗ, risk $ cho phép của lệnh mới phải được tính lại dựa trên **ngân sách còn lại trong ngày**, không phải công thức gốc áp dụng độc lập cho từng lệnh.
 

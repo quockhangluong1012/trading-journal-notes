@@ -4,13 +4,13 @@ horizon: Long
 category: Consistency
 status: In Progress
 priority: High
-progress: 15
+progress: 0
 metric: 6 tháng có lãi liên tiếp (tổng R dương)
 baseline: 0 tháng có lãi liên tiếp
 target: 6 tháng có lãi liên tiếp
 phase: Phase 3 - Consistency
 start_date: 2026-06-23
-due_date: 2028-06-30
+due_date: 2027-09-30
 tags:
   - goal
 ---

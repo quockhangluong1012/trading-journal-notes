@@ -25,7 +25,7 @@ updated: 2026-07-28
 > [ICT 2024 Mentorship Lecture 2 Notes — 07:00 AM IFVG Model + PDF](https://innercircletrader.net/tutorials/ict-2024/mentorship-lecture-2/)
 
 > [!summary] Tóm tắt 1 câu
-> **Mô hình 07:00 AM (ICT 2024, Lecture 2) chuyển entry từ mốc 08:30 sang nhịp hồi AM-session sau 07:00: giá hồi về range London, hunt relative equal highs/lows, tạo [[21 - Market Structure Shift|MSS]]; vào lệnh tại 50% CE ([[10 - Consequent Encroachment (Mean Threshold)|consequent encroachment]]) của [[17 - Inverse Fair Value Gap - iFVG|IFVG]] (FVG đầu tiên trước cú hunt) — hoặc breaker nếu không có IFVG; chốt lời bằng Fib -2/-2.5.**
+> **Mô hình 07:00 AM (ICT 2024, Lecture 2) chuyển entry từ mốc 08:30 sang nhịp hồi AM-session sau 07:00: giá hồi về range London, hunt relative equal highs/lows, tạo [[21-Market-Structure-Shift|MSS]]; vào lệnh tại 50% CE ([[10-Consequent-Encroachment-Mean-Threshold|consequent encroachment]]) của [[17-Inverse-Fair-Value-Gap-iFVG|IFVG]] (FVG đầu tiên trước cú hunt) — hoặc breaker nếu không có IFVG; chốt lời bằng Fib -2/-2.5.**
 
 > [!important] Nguyên tắc cốt lõi
 > **IFVG là FVG ĐẦU TIÊN ngay trước cú stop-hunt** — sau MSS nó bị đảo vai (support↔resistance) và trở thành vùng nhạy nhất. Entry chuẩn là **50% CE của IFVG**, không phải vào lúc MSS. Và luôn nhớ **lưu ý 30 phút đầu**: sau 07:00/08:00/09:00 giá thường đi NGƯỢC bias để hunt thanh khoản trước.
@@ -52,12 +52,12 @@ updated: 2026-07-28
 ## 2. Định nghĩa chủ chốt
 
 - **SIBI** = FVG down-closed (giảm); **BISI** = FVG up-closed (tăng).
-- **IFVG** = [[17 - Inverse Fair Value Gap - iFVG|Inversion Fair Value Gap]] — FVG bị giá đóng xuyên qua sau MSS, đảo vai.
-- **Breaker** = một [[25 - OB - Order Block|Order Block]] **thất bại** (dùng làm entry dự phòng khi không có IFVG).
+- **IFVG** = [[17-Inverse-Fair-Value-Gap-iFVG|Inversion Fair Value Gap]] — FVG bị giá đóng xuyên qua sau MSS, đảo vai.
+- **Breaker** = một [[25-OB-Order-Block|Order Block]] **thất bại** (dùng làm entry dự phòng khi không có IFVG).
 - **Relative Equal High/Low** — đỉnh/đáy có swing đối diện thấp/cao hơn ở bên phải (swing failure).
 - **Fractal** — tính lặp lại của hành vi giá trên mọi khung.
 - **"Specific"** — **FVG đầu tiên ngay trước stop-hunt** là IFVG nhạy nhất.
-- **Consequent Encroachment (CE)** — mức 50% (giữa) của một PD array. Xem [[10 - Consequent Encroachment (Mean Threshold)]].
+- **Consequent Encroachment (CE)** — mức 50% (giữa) của một PD array. Xem [[10-Consequent-Encroachment-Mean-Threshold]].
 - **Fibonacci inputs:** 0 · 0.5 · 1 · **-2** · **-2.5**.
 
 ---
@@ -78,7 +78,7 @@ Một FVG tăng (BISI) là **support** khi giá đi lên. Nhưng sau khi giá **
 > FVG đầu tiên ngay trước cú stop-hunt là **dấu vết cuối cùng của dòng lệnh sai hướng** trước khi thuật toán đảo chiều. Đó là nơi tập trung nhiều lệnh mắc kẹt nhất. Khi giá đóng xuyên qua nó (đảo vai) rồi quay lại test, đây là mức phải được "giải quyết" → phản ứng nhạy và dứt khoát nhất. Đánh dấu FVG sau đó (đã nằm trong chân displacement) hoặc FVG trước đó (quá xa cú hunt) đều cho entry kém nhạy hơn.
 
 > [!note] Vì sao AM session (sau 07:00) là bối cảnh lý tưởng
-> Đặc tính đầu phiên AM là giá **hồi lại vào trong range London** — và range London (đỉnh/đáy) chính là draw on liquidity. Cú hồi này tạo ra hunt relative equal + IFVG một cách tự nhiên. Đây là lý do bạn *chờ giá hồi về range*, không đuổi theo cú mở phiên. Liên hệ [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]: đám đông đặt lệnh quanh relative equal → trở thành nhiên liệu cho cú hunt.
+> Đặc tính đầu phiên AM là giá **hồi lại vào trong range London** — và range London (đỉnh/đáy) chính là draw on liquidity. Cú hồi này tạo ra hunt relative equal + IFVG một cách tự nhiên. Đây là lý do bạn *chờ giá hồi về range*, không đuổi theo cú mở phiên. Liên hệ [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]: đám đông đặt lệnh quanh relative equal → trở thành nhiên liệu cho cú hunt.
 
 ---
 
@@ -118,7 +118,7 @@ Một FVG tăng (BISI) là **support** khi giá đi lên. Nhưng sau khi giá **
 > [!info] Mô tả hình
 > Chart minh họa các mức Fibonacci 0 (swing post-07:00) · 0.5 · 1 (open 07:00) · -2 · -2.5 vẽ ngang qua một nhịp displacement mẫu; đánh dấu điểm chốt bậc thang: một phần tại -2 (dời SL về BE), phần còn lại tại -2.5.
 
-Dùng Fib với inputs **0 · 0.5 · 1 · -2 · -2.5**. Vẽ từ swing hình thành post-07:00 hunt **về** giá mở cửa 07:00. Chốt **theo bậc thang**: một phần tại **-2**, phần còn lại tại **-2.5** — đóng hết tại -2 sẽ bỏ lỡ phần lớn của move. Có thể thay bằng next draw on liquidity làm target. Liên hệ [[31 - Standard Deviation|Standard Deviation]] projections.
+Dùng Fib với inputs **0 · 0.5 · 1 · -2 · -2.5**. Vẽ từ swing hình thành post-07:00 hunt **về** giá mở cửa 07:00. Chốt **theo bậc thang**: một phần tại **-2**, phần còn lại tại **-2.5** — đóng hết tại -2 sẽ bỏ lỡ phần lớn của move. Có thể thay bằng next draw on liquidity làm target. Liên hệ [[31-Standard-Deviation|Standard Deviation]] projections.
 
 ![[AM0700IFVG-CE-Entry.svg|697]]
 > [!info] Mô tả hình
@@ -261,13 +261,13 @@ Model 07:00 IFVG rất "sạch" trên lý thuyết, nhưng phần lớn lệnh t
 
 **① Đánh dấu sai IFVG (không phải FVG ĐẦU TIÊN ngay trước hunt).**
 - *Dấu hiệu:* bạn khoanh một FVG nằm *sau* cú hunt (đã trong chân displacement) hoặc một FVG quá xa phía trước làm IFVG.
-- *Cơ chế:* chỉ **FVG đầu tiên ngay trước stop-hunt** mới là dấu vết cuối cùng của dòng lệnh sai hướng; các FVG khác không tập trung lệnh mắc kẹt nên phản ứng tại [[10 - Consequent Encroachment (Mean Threshold)|50% CE]] yếu và trễ.
+- *Cơ chế:* chỉ **FVG đầu tiên ngay trước stop-hunt** mới là dấu vết cuối cùng của dòng lệnh sai hướng; các FVG khác không tập trung lệnh mắc kẹt nên phản ứng tại [[10-Consequent-Encroachment-Mean-Threshold|50% CE]] yếu và trễ.
 - *Xử lý:* luôn quay ngược từ cú hunt và chọn **FVG liền kề trước nó** — nếu phân vân giữa hai FVG, chọn cái sát cú hunt hơn.
 
 **② Vào ngược trong 30′ đầu (counter-move của lưu ý 30 phút).**
 - *Dấu hiệu:* ngay sau 07:00 giá đi "đúng bias" 5–10 phút, bạn vào luôn vì sợ lỡ.
 - *Cơ chế:* 30 phút đầu sau 07:00/08:00/09:00 thường là **counter-move để hunt thanh khoản trước** — move bạn thấy chính là cái sắp bị đảo.
-- *Xử lý:* để 30 phút đầu **lộ ra cú hunt** (thường ngược bias), rồi *mới* tìm [[21 - Market Structure Shift|MSS]] + IFVG theo hướng thật.
+- *Xử lý:* để 30 phút đầu **lộ ra cú hunt** (thường ngược bias), rồi *mới* tìm [[21-Market-Structure-Shift|MSS]] + IFVG theo hướng thật.
 
 **③ Front-run trước cú hunt / pre-position.**
 - *Dấu hiệu:* đặt lệnh khi chưa có sweep nào, chỉ vì "cấu trúc trông giống".
@@ -340,7 +340,7 @@ Những bài học dưới đây chắt ra từ việc chạy model qua nhiều 
 
 1. **London H/L là mốc DUY NHẤT cần chuẩn bị trước 07:00.** Đừng nạp thêm bias rối; chỉ cần đỉnh/đáy phiên London làm draw on liquidity rồi để giá tự kể chuyện.
 2. **Để 30′ đầu lộ cú hunt rồi mới tìm MSS + IFVG.** Kiên nhẫn ở đây *chính là bộ lọc* — phần lớn lệnh thua sinh ra trong 30 phút đầu vì vào theo counter-move.
-3. **IFVG đầu tiên là dấu vết dòng lệnh sai hướng cuối cùng — nên nhạy nhất.** Khi bị đóng xuyên rồi test lại, đây là vùng "phải được giải quyết"; vào [[17 - Inverse Fair Value Gap - iFVG|IFVG]] tại 50% CE cho phản ứng dứt khoát nhất.
+3. **IFVG đầu tiên là dấu vết dòng lệnh sai hướng cuối cùng — nên nhạy nhất.** Khi bị đóng xuyên rồi test lại, đây là vùng "phải được giải quyết"; vào [[17-Inverse-Fair-Value-Gap-iFVG|IFVG]] tại 50% CE cho phản ứng dứt khoát nhất.
 4. **Khác biệt theo market.** NQ1 cho hunt + IFVG *sạch nhất*; EURUSD/GBPUSD hồi về range London rất rõ (hợp model); XAU *thất thường quanh tin* — dễ dính edge case ⑤.
 5. **Stop ra ngoài TOÀN BỘ swing post-07:00**, không siết vào pivot MSS. Wick quét stop rồi đi đúng hướng là kiểu thua gây ức chế và hoàn toàn tránh được.
 6. **Chốt bậc thang: -2 (dời BE) rồi -2.5.** Backtest **riêng** tỉ lệ đạt -2 vs -2.5 theo từng market để biết nên chốt bao nhiêu % ở mỗi bậc — đừng dùng một tỉ lệ cho mọi thị trường.
@@ -372,7 +372,7 @@ Những bài học dưới đây chắt ra từ việc chạy model qua nhiều 
 > [!info] Mô tả hình
 > Chart case Win: hunt relative equal highs → MSS xuống → IFVG (FVG đầu tiên trước hunt) với 50% CE → SELL đúng nhịp retest → giá chạy tiếp tới vùng chốt bậc thang -2/-2.5; ghi chú grade A, missing_step: none.
 
-**Chuỗi:** dùng London H/L làm DOL; sau 07:00 giá hồi vào range rồi hunt **relative equal highs**; giá đóng dưới swing low tạo [[21 - Market Structure Shift|MSS]] xuống kèm displacement; đánh dấu **IFVG = FVG đầu tiên ngay trước cú hunt**; chờ giá retest và vào **SELL tại 50% CE** ([[10 - Consequent Encroachment (Mean Threshold)|consequent encroachment]]) của IFVG; vẽ Fib từ swing post-07:00 về open 07:00, chốt **bậc thang -2 rồi -2.5**.
+**Chuỗi:** dùng London H/L làm DOL; sau 07:00 giá hồi vào range rồi hunt **relative equal highs**; giá đóng dưới swing low tạo [[21-Market-Structure-Shift|MSS]] xuống kèm displacement; đánh dấu **IFVG = FVG đầu tiên ngay trước cú hunt**; chờ giá retest và vào **SELL tại 50% CE** ([[10-Consequent-Encroachment-Mean-Threshold|consequent encroachment]]) của IFVG; vẽ Fib từ swing post-07:00 về open 07:00, chốt **bậc thang -2 rồi -2.5**.
 **Chẩn đoán:** đủ **hunt + MSS + IFVG**; entry đúng 50% CE (không vào lúc MSS); stop ngoài swing; chốt đúng bậc thang → `missing_step: none`.
 **Bài học:** khi ba dấu vết (hunt → MSS → IFVG đầu tiên) hội tụ và entry nằm đúng CE, đây là kết cấu A của model — chỉ cần lặp lại kỷ luật này, không cần "sáng tạo".
 

@@ -23,7 +23,7 @@ calendar_month: 6
  * r_multiple: -1
  ******************************************************************/
 
-const TRADE_FOLDER = '"Trading Journal/05 - Live Trading Journal/Trades"';
+const TRADE_FOLDER = '"05 - Live Trading Journal/Trades"';
 const CURRENCY = "$";
 const START_WEEK_ON = "MON"; // "SUN" hoặc "MON"
 
@@ -134,7 +134,8 @@ function pnlValue(t) {
 }
 
 function rValue(t) {
-  return num(first(t, ["r_multiple", "r", "R", "rMultiple"])) ?? 0;
+  // null = chua do R. Cong don phai bo qua, khong duoc coi la 0.
+  return num(first(t, ["r_multiple", "r", "R", "rMultiple"]));
 }
 
 function symbol(t) {
@@ -215,7 +216,7 @@ function getMonthData(year, month) {
     };
 
     daily[d].pnl += pnlValue(t);
-    daily[d].r += rValue(t);
+    daily[d].r += (rValue(t) ?? 0);
     daily[d].count++;
 
     const res = result(t);
@@ -334,7 +335,7 @@ function renderDailyView(year, month) {
             <span class="${resClass}">${res}</span>
             · ${symbol(t)} ${direction(t)}
             · ${fmtSignedMoney(pnlValue(t))}
-            · ${rValue(t) > 0 ? "+" : ""}${rValue(t).toFixed(2)}R
+            · ${rValue(t) === null ? "—" : (rValue(t) > 0 ? "+" : "") + rValue(t).toFixed(2) + "R"}
             <br>
             <a href="${safePath(t.file.path)}" class="internal-link">${t.file.name}</a>
           </li>

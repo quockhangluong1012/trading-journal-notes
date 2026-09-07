@@ -43,9 +43,9 @@ updated: 2026-07-28
 - Tôi có thể tìm một **entry chính xác, stop nhỏ** ngay bên trong một vùng mà đám đông HTF bỏ qua không?
 
 ### Hidden OB KHÔNG phải là gì
-- **Không phải** Order Block thường ([[25 - OB - Order Block]]): OB thường là **một nến ngược hướng đơn lẻ nhìn thấy được** trên chart; Hidden OB là **hai nến cùng màu** với OB thật giấu trong vùng wick chồng, chỉ hiện trên LTF.
-- **Không phải** [[22 - Mitigation Block]]: Mitigation Block là OB được giá quay lại "giảm nhẹ" (mitigate) phần lệnh chưa lấp — khác về vòng đời và vai trò, không phải về cách ẩn trong wick.
-- **Không phải** [[04 - Breaker Block]]: Breaker là OB **thất bại rồi đảo cực** sau sweep + MSS; Hidden OB không cần fail/flip, nó chỉ là OB bị che.
+- **Không phải** Order Block thường ([[25-OB-Order-Block]]): OB thường là **một nến ngược hướng đơn lẻ nhìn thấy được** trên chart; Hidden OB là **hai nến cùng màu** với OB thật giấu trong vùng wick chồng, chỉ hiện trên LTF.
+- **Không phải** [[22-Mitigation-Block]]: Mitigation Block là OB được giá quay lại "giảm nhẹ" (mitigate) phần lệnh chưa lấp — khác về vòng đời và vai trò, không phải về cách ẩn trong wick.
+- **Không phải** [[04-Breaker-Block]]: Breaker là OB **thất bại rồi đảo cực** sau sweep + MSS; Hidden OB không cần fail/flip, nó chỉ là OB bị che.
 - **Không phải** Suspension Block: đó là một PD array riêng biệt; đừng gộp chung.
 - **Không phải** trigger vào lệnh: nó là **vùng POI** để chờ giá về, sau đó mới tìm CISD/MSS trên LTF.
 
@@ -69,12 +69,12 @@ updated: 2026-07-28
 ## 3. Bối cảnh sử dụng
 
 ### Khi nào có giá trị cao?
-- [ ] Xuất hiện trên **HTF bias rõ** (D1/H4 swing, hoặc H1 intraday) và **thuận [[12 - Daily Bias]]**
-- [ ] Nằm đúng **vùng Premium/Discount** ([[27 - Premium Discount]]): bullish ở discount, bearish ở premium
+- [ ] Xuất hiện trên **HTF bias rõ** (D1/H4 swing, hoặc H1 intraday) và **thuận [[12-Daily-Bias]]**
+- [ ] Nằm đúng **vùng Premium/Discount** ([[27-Premium-Discount]]): bullish ở discount, bearish ở premium
 - [ ] Zoom LTF vào overlap **thật sự thấy một OB sạch** (có nến ngược hướng + displacement rời đi)
-- [ ] Đi kèm **liquidity sweep** ngay trước đó ([[20 - Liquidity Sweep]]) — sweep dọn entry sớm, Hidden OB giao fill
-- [ ] Có **FVG / breaker / liquidity void** ([[13 - FVG  - Fair Value Gap]], [[21 - Liquidity Void]]) xếp chồng trong cùng vùng
-- [ ] Giá **quay lại tap vùng** rồi cho **CISD/MSS** trên LTF ([[41 - Change in State of Delivery]], [[21 - Market Structure Shift]])
+- [ ] Đi kèm **liquidity sweep** ngay trước đó ([[20-Liquidity-Sweep]]) — sweep dọn entry sớm, Hidden OB giao fill
+- [ ] Có **FVG / breaker / liquidity void** ([[13-FVG-Fair-Value-Gap]], [[21-Liquidity-Void]]) xếp chồng trong cùng vùng
+- [ ] Giá **quay lại tap vùng** rồi cho **CISD/MSS** trên LTF ([[41-Change-in-State-of-Delivery]], [[21-Market-Structure-Shift]])
 
 ### Khi nào nên bỏ qua?
 - [ ] Hai nến **khác màu**, hoặc wick **không thật sự chồng** (có khoảng hở)
@@ -121,7 +121,7 @@ Coi Hidden OB như một **PD array** với hai biên:
 - **Proximal line** = mép **gần giá hiện tại** → đây là nơi **canh vào lệnh** (entry). Với bullish Hidden OB (giá đến từ trên xuống), proximal là mép **trên** của box.
 - **Distal line** = mép **xa giá** → đây là nơi đặt **stop** (ra ngoài distal). Với bullish, distal là mép **dưới** (low wick nến 2).
 
-Lọc theo vùng **Premium/Discount** của dealing range ([[27 - Premium Discount]]):
+Lọc theo vùng **Premium/Discount** của dealing range ([[27-Premium-Discount]]):
 - **Bullish Hidden OB ở DISCOUNT** (dưới equilibrium) = long xác suất cao, target về **ERL high**.
 - **Bearish Hidden OB ở PREMIUM** (trên equilibrium) = short xác suất cao, target về **ERL low**.
 - Hidden OB **ngược vùng PD** (bullish ở premium) là **cờ đỏ** — bỏ hoặc hạ hạng.
@@ -135,9 +135,9 @@ Lọc theo vùng **Premium/Discount** của dealing range ([[27 - Premium Discou
 
 ![[HiddenOB-Advanced-MTF.svg|697]]
 
-Hidden OB về bản chất là câu chuyện **top-down** ([[32 - Top-down Analysis (Multiple Timeframes)]]):
+Hidden OB về bản chất là câu chuyện **top-down** ([[32-Top-down-Analysis-Multiple-Timeframes]]):
 
-1. **HTF (H4/H1) — chọn bias & mark vùng.** Xác định [[12 - Daily Bias]], tìm Hidden OB trên khung bias, vẽ box. Hidden OB càng lớn (khung càng cao) → **move mục tiêu càng lớn**.
+1. **HTF (H4/H1) — chọn bias & mark vùng.** Xác định [[12-Daily-Bias]], tìm Hidden OB trên khung bias, vẽ box. Hidden OB càng lớn (khung càng cao) → **move mục tiêu càng lớn**.
 2. **Chờ retrace — không đuổi.** Để giá chạy khỏi vùng rồi quay lại **tap** box. Đây là kỷ luật quan trọng nhất: Hidden OB là vùng chờ, không phải tín hiệu vào tức thì.
 3. **LTF (M5/M15) — timing entry.** Khi giá vào box, hạ khung tìm **CISD hoặc MSS** cùng hướng bias. Vào tại **close của nến CISD/MSS** hoặc retest sạch của nó (thường có FVG đi kèm).
 
@@ -165,7 +165,7 @@ Chuỗi này mạnh vì nó gộp ba tầng độc lập: sweep (thanh khoản),
 
 ## 9. Quy trình vào lệnh
 
-**Bước 1 — Xác định HTF bias & vùng PD.** Chốt [[12 - Daily Bias]] trên D1/H4 (hoặc H1 intraday). Xác định dealing range và equilibrium để biết premium/discount ([[27 - Premium Discount]]).
+**Bước 1 — Xác định HTF bias & vùng PD.** Chốt [[12-Daily-Bias]] trên D1/H4 (hoặc H1 intraday). Xác định dealing range và equilibrium để biết premium/discount ([[27-Premium-Discount]]).
 
 **Bước 2 — Quét tìm Hidden OB trên khung bias.** Áp 3 bước nhận diện (mục 5): hai nến cùng màu → wick chồng → vẽ box. Ưu tiên vùng gắn với một **pool thanh khoản** hoặc ngay sau một **sweep**.
 
@@ -175,7 +175,7 @@ Chuỗi này mạnh vì nó gộp ba tầng độc lập: sweep (thanh khoản),
 
 **Bước 5 — Trigger + Entry.** Khi giá vào box, tìm **CISD hoặc MSS** cùng hướng trên M5/M15. Vào tại **close của nến CISD/MSS** hoặc **retest sạch** (thường tại FVG / proximal / Mean Threshold của box).
 
-**Bước 6 — Stop & Target.** Stop **dưới swing low của CISD/MSS** (longs) / **trên swing high** (shorts), hoặc rộng hơn **ra ngoài distal** nếu cần thở. Target: **opposing PD array** kế tiếp / **liquidity pool** / bám thang [[16 - Internal & External Range Liquidity (IRL & ERL)]] (T1 = IRL, T2 = ERL / draw on liquidity), nhắm tối thiểu **~1:3**.
+**Bước 6 — Stop & Target.** Stop **dưới swing low của CISD/MSS** (longs) / **trên swing high** (shorts), hoặc rộng hơn **ra ngoài distal** nếu cần thở. Target: **opposing PD array** kế tiếp / **liquidity pool** / bám thang [[16-Internal-External-Range-Liquidity-IRL-ERL]] (T1 = IRL, T2 = ERL / draw on liquidity), nhắm tối thiểu **~1:3**.
 
 ---
 
@@ -223,7 +223,7 @@ Chuỗi này mạnh vì nó gộp ba tầng độc lập: sweep (thanh khoản),
 > 7. **Bỏ phiên thanh khoản mỏng** — tránh giờ nghỉ trưa Asia, cấu trúc dễ giả.
 
 - Vào quanh **proximal / Mean Threshold** của box, đừng tham chờ distal.
-- Stop sau **swing của CISD/MSS** hoặc ngoài **distal**; target bám thang [[16 - Internal & External Range Liquidity (IRL & ERL)]] (T1 = IRL, T2 = ERL), nhắm ~1:3.
+- Stop sau **swing của CISD/MSS** hoặc ngoài **distal**; target bám thang [[16-Internal-External-Range-Liquidity-IRL-ERL]] (T1 = IRL, T2 = ERL), nhắm ~1:3.
 - HTF Hidden OB **càng lớn → move càng lớn**: dùng khung bias để chọn vùng "đáng đi".
 - Ghi nhật ký có kỷ luật: gắn nhãn mỗi lệnh **có/không Hidden OB xác nhận** và **có/không sweep đi kèm** để đo edge tách nhóm.
 
@@ -373,11 +373,11 @@ Trong phân tích **volume profile / order flow chuyên nghiệp** (dùng bởi 
 
 ### A.5 Tương tác & mâu thuẫn với các khái niệm ICT khác
 
-- **Với [[25 - OB - Order Block]] (OB thường):** không mâu thuẫn về bản chất — Hidden OB là một trường hợp đặc biệt của OB thường (chỉ khác ở độ phân giải cần dùng để nhìn thấy), nhưng mâu thuẫn XUẤT HIỆN khi trader ưu tiên tìm Hidden OB (phức tạp, tốn công zoom nhiều khung) trong khi một OB thường đơn giản, rõ ràng đã có sẵn ngay trên khung đang phân tích — nguyên tắc Occam's razor (chọn giải thích đơn giản nhất có đủ sức mạnh) gợi ý nên ưu tiên OB thường trước, chỉ tìm Hidden OB khi khung đang phân tích thực sự không có cấu trúc nào rõ.
-- **Với [[22 - Mitigation Block]] và [[04 - Breaker Block]]:** cả ba khái niệm đều dựa trên việc "gán vai trò" cho một vùng nến lịch sử, và cả ba đều chia sẻ vấn đề falsifiability tương tự ở các mức độ khác nhau — Mitigation Block và Breaker Block có định nghĩa hình học tương đối rõ hơn (dựa trên việc giá đã phá vỡ cấu trúc theo hướng nào, một sự kiện khách quan hơn), trong khi Hidden OB phụ thuộc vào ngưỡng "overlap" chủ quan hơn nhiều — đây là lý do Hidden OB nằm ở vị trí khó kiểm chứng hơn trên phổ falsifiability ở mục B.
-- **Với [[13 - FVG - Fair Value Gap]]:** FVG là khái niệm có định nghĩa hình học chặt (gap giữa wick 1 và wick 3 trong bộ 3 nến, đo được chính xác bằng toán tử so sánh giá) — khi Hidden OB đi kèm FVG LTF rõ ràng (như Case 1), FVG đóng vai trò "mỏ neo khách quan" giúp giảm chủ quan của Hidden OB. Khi Hidden OB KHÔNG có FVG đi kèm, độ tin cậy giảm đáng kể vì thiếu mỏ neo khách quan này — đây là lý do spec gốc thường khuyến nghị chỉ tin Hidden OB khi có FVG xác nhận.
-- **Với [[32 - Top-down Analysis (Multiple Timeframes)]]:** top-down analysis chuẩn đi từ khung LỚN xuống khung NHỎ để xác nhận bias, nhưng việc "tìm Hidden OB" đi ngược một phần logic này — bạn đang dùng khung nhỏ để tìm cấu trúc mà khung lớn không cho thấy, rồi áp ngược lại như thể nó là yếu tố quyết định ở khung lớn. Điều này không sai về nguyên tắc (khung nhỏ luôn chứa nhiều chi tiết hơn khung lớn), nhưng cần thận trọng để không nhầm lẫn "chi tiết bổ sung hợp lệ" với "bằng chứng khung lớn có ý nghĩa mà thực chất chỉ là nhiễu vi cấu trúc".
-- **Với [[16 - Internal & External Range Liquidity (IRL & ERL)]]:** nếu vùng Hidden OB không nằm trên đường đi tới một mục tiêu thanh khoản rõ ràng (ERL hoặc IRL), giá trị dự báo của nó giảm mạnh — nhắc lại phát hiện ở Case 2, phản ứng giá tại một vùng thường được giải thích tốt hơn bằng liquidity draw hơn là bằng chính cấu trúc nến "ẩn".
+- **Với [[25-OB-Order-Block]] (OB thường):** không mâu thuẫn về bản chất — Hidden OB là một trường hợp đặc biệt của OB thường (chỉ khác ở độ phân giải cần dùng để nhìn thấy), nhưng mâu thuẫn XUẤT HIỆN khi trader ưu tiên tìm Hidden OB (phức tạp, tốn công zoom nhiều khung) trong khi một OB thường đơn giản, rõ ràng đã có sẵn ngay trên khung đang phân tích — nguyên tắc Occam's razor (chọn giải thích đơn giản nhất có đủ sức mạnh) gợi ý nên ưu tiên OB thường trước, chỉ tìm Hidden OB khi khung đang phân tích thực sự không có cấu trúc nào rõ.
+- **Với [[22-Mitigation-Block]] và [[04-Breaker-Block]]:** cả ba khái niệm đều dựa trên việc "gán vai trò" cho một vùng nến lịch sử, và cả ba đều chia sẻ vấn đề falsifiability tương tự ở các mức độ khác nhau — Mitigation Block và Breaker Block có định nghĩa hình học tương đối rõ hơn (dựa trên việc giá đã phá vỡ cấu trúc theo hướng nào, một sự kiện khách quan hơn), trong khi Hidden OB phụ thuộc vào ngưỡng "overlap" chủ quan hơn nhiều — đây là lý do Hidden OB nằm ở vị trí khó kiểm chứng hơn trên phổ falsifiability ở mục B.
+- **Với [[13-FVG-Fair-Value-Gap]]:** FVG là khái niệm có định nghĩa hình học chặt (gap giữa wick 1 và wick 3 trong bộ 3 nến, đo được chính xác bằng toán tử so sánh giá) — khi Hidden OB đi kèm FVG LTF rõ ràng (như Case 1), FVG đóng vai trò "mỏ neo khách quan" giúp giảm chủ quan của Hidden OB. Khi Hidden OB KHÔNG có FVG đi kèm, độ tin cậy giảm đáng kể vì thiếu mỏ neo khách quan này — đây là lý do spec gốc thường khuyến nghị chỉ tin Hidden OB khi có FVG xác nhận.
+- **Với [[32-Top-down-Analysis-Multiple-Timeframes]]:** top-down analysis chuẩn đi từ khung LỚN xuống khung NHỎ để xác nhận bias, nhưng việc "tìm Hidden OB" đi ngược một phần logic này — bạn đang dùng khung nhỏ để tìm cấu trúc mà khung lớn không cho thấy, rồi áp ngược lại như thể nó là yếu tố quyết định ở khung lớn. Điều này không sai về nguyên tắc (khung nhỏ luôn chứa nhiều chi tiết hơn khung lớn), nhưng cần thận trọng để không nhầm lẫn "chi tiết bổ sung hợp lệ" với "bằng chứng khung lớn có ý nghĩa mà thực chất chỉ là nhiễu vi cấu trúc".
+- **Với [[16-Internal-External-Range-Liquidity-IRL-ERL]]:** nếu vùng Hidden OB không nằm trên đường đi tới một mục tiêu thanh khoản rõ ràng (ERL hoặc IRL), giá trị dự báo của nó giảm mạnh — nhắc lại phát hiện ở Case 2, phản ứng giá tại một vùng thường được giải thích tốt hơn bằng liquidity draw hơn là bằng chính cấu trúc nến "ẩn".
 
 ### A.6 Vì sao "độ hiếm" của một khái niệm không tự động làm nó có giá trị hơn — vấn đề base rate
 
@@ -483,7 +483,7 @@ Một trực giác sai phổ biến (không riêng gì Hidden OB) là "khái ni�
 
 **7. Overfitting cá nhân — một trader "thấy" Hidden OB rất tốt trên backtest của chính mình vì đã học cách zoom đúng chỗ có kết quả đẹp.** Vì sao xảy ra: qua quá trình luyện tập trên dữ liệu lịch sử đã biết trước, trader có thể vô thức "học" các mẫu hình chồng nến CỤ THỂ của giai đoạn lịch sử đó (không phải một quy luật tổng quát), khiến hiệu suất backtest cá nhân trông rất tốt nhưng không lặp lại được trên dữ liệu forward mới. Cách xử lý: test forward (giao dịch demo với quy tắc đã cố định, không điều chỉnh) trước khi tin tưởng đưa vào hệ thống live với risk thật.
 
-**8. Tương tác sai với position sizing — vì Hidden OB thường cho stop rất hẹp (khung nhỏ), dễ bị cám dỗ tăng size "vì RR đẹp hơn".** Vì sao xảy ra: một OB ở M15/M1 tự nhiên có stop hẹp hơn OB ở H1/H4, làm RR tính ra đẹp hơn — nhưng RR đẹp hơn không đồng nghĩa xác suất thắng cao hơn (xem [[43 - Position Sizing]] mục Kelly/risk-of-ruin) — nếu vùng Hidden OB đó thực chất kém tin cậy hơn (do vấn đề falsifiability ở mục B), RR đẹp trên giấy có thể đi kèm win-rate thực tế thấp hơn dự kiến, và tăng size theo RR đẹp mà không điều chỉnh cho độ tin cậy thấp hơn là một sai lầm ghép hai vấn đề độc lập.
+**8. Tương tác sai với position sizing — vì Hidden OB thường cho stop rất hẹp (khung nhỏ), dễ bị cám dỗ tăng size "vì RR đẹp hơn".** Vì sao xảy ra: một OB ở M15/M1 tự nhiên có stop hẹp hơn OB ở H1/H4, làm RR tính ra đẹp hơn — nhưng RR đẹp hơn không đồng nghĩa xác suất thắng cao hơn (xem [[43-Position-Sizing]] mục Kelly/risk-of-ruin) — nếu vùng Hidden OB đó thực chất kém tin cậy hơn (do vấn đề falsifiability ở mục B), RR đẹp trên giấy có thể đi kèm win-rate thực tế thấp hơn dự kiến, và tăng size theo RR đẹp mà không điều chỉnh cho độ tin cậy thấp hơn là một sai lầm ghép hai vấn đề độc lập.
 
 | Tín hiệu cảnh báo sớm | Hành động |
 |---|---|

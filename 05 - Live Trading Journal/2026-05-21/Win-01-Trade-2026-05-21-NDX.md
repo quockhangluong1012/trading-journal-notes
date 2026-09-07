@@ -16,7 +16,7 @@ pnl: 200
 r_multiple:
 risk_percent: 5%
 mistakes:
-  - "[[06 - Mistake - Not Have Market Structure Shift]]"
+  - "[[06-Mistake-Not-Have-Market-Structure-Shift]]"
 tags:
   - DailyBias
   - FairValueGap
@@ -174,7 +174,7 @@ da_opposite_case: equally viable
 
 - **Result**: Hit TP *(suy luận có điều kiện — cần chart xác nhận: pnl 200 dương và không có ghi "Manual Close"/"BE" nào trong file, khớp với exit tại take_profit 29,197.00 theo entry/SL/TP đã cho)*
 - **Mistake chính**:
-  - [[06 - Mistake - Not Have Market Structure Shift]] *(lấy từ frontmatter — mục "Mistake chính" trong body để trống, nhưng frontmatter đã ghi rõ tag này)*
+  - [[06-Mistake-Not-Have-Market-Structure-Shift]] *(lấy từ frontmatter — mục "Mistake chính" trong body để trống, nhưng frontmatter đã ghi rõ tag này)*
 - **Nguyên nhân gốc rễ**:
   - *(không có dữ kiện trong file để điền — mistake tag có nhưng không có narrative M15/M1 nào giải thích TẠI SAO không có MSS; toàn bộ mục "M15/M5" và "M1 Entry Timeframe" ở trên vẫn là template trống "Yes/No" chưa điền)*
 - **Tại sao lệnh này thua/thắng?**
@@ -190,7 +190,7 @@ da_opposite_case: equally viable
 
 ### Bài học kỹ thuật
 
-- File gốc để trống hoàn toàn. Dữ kiện duy nhất có thể rút ra: mistake tag `[[06 - Mistake - Not Have Market Structure Shift]]` tồn tại trong frontmatter nhưng KHÔNG có bất kỳ narrative nào ở mục M15/M5 hoặc M1 xác nhận hoặc mô tả việc thiếu MSS này — toàn bộ các dòng "Có MSS chưa? Yes/No" vẫn là placeholder chưa điền. Bài học kỹ thuật đáng ghi ở đây không phải về setup, mà về **quy trình ghi log**: một mistake tag không có narrative đi kèm là dữ kiện không kiểm chứng được — liên kết O1 (fatal, dưới).
+- File gốc để trống hoàn toàn. Dữ kiện duy nhất có thể rút ra: mistake tag `[[06-Mistake-Not-Have-Market-Structure-Shift]]` tồn tại trong frontmatter nhưng KHÔNG có bất kỳ narrative nào ở mục M15/M5 hoặc M1 xác nhận hoặc mô tả việc thiếu MSS này — toàn bộ các dòng "Có MSS chưa? Yes/No" vẫn là placeholder chưa điền. Bài học kỹ thuật đáng ghi ở đây không phải về setup, mà về **quy trình ghi log**: một mistake tag không có narrative đi kèm là dữ kiện không kiểm chứng được — liên kết O1 (fatal, dưới).
 - planned_rr 1.04 khớp đúng phép tính arithmetic (risk 56.9đ, reward 59.2đ = RR 1.040) — số liệu này đúng, nhưng RR 1.04 gần 1:1 nghĩa là lệnh này thắng với biên độ reward chỉ nhích hơn risk một chút; đây là 1/3 lệnh Win có RR thật <1.1 mà CS-O6 đã liệt kê (planned_rr 1.04 — trích CS-O6).
 
 ### Bài học tâm lý

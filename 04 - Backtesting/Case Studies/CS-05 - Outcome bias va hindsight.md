@@ -18,11 +18,11 @@ Backtest replay (đọc lại một setup đã biết outcome) mang một rủi 
 
 | Note | Vấn đề hindsight cụ thể |
 |---|---|
-| [[../2026-07-01/01 - Win - EURUSD - 2010-10-19 - Long\|EURUSD 19/10/2010]] | Câu đánh giá "thắng vì chờ đầy đủ điều kiện" viết trong replay sau khi biết Hit TP; không có bằng chứng đây là suy luận trước outcome |
-| [[../2026-07-06/01 - Win - EURUSD - 2005-04-12 - Short\|EURUSD 12/4/2005]] | Cùng pattern — không tách phần "dự đoán" khỏi phần "diễn giải sau" |
-| [[../2026-07-06/02 - Win - EURUSD - 2005-04-13 - Short\|EURUSD 13/4/2005]] | Cùng pattern |
-| [[../2026-07-07/02 - Win - EURUSD - 2005-04-24 - Long\|EURUSD 24/4/2005]] | Cùng pattern, cộng thêm lỗi arithmetic Unicorn overlap (1.8 pip lệch) không được phát hiện lúc viết |
-| [[../2026-07-07/02 - Win - EURUSD - 2005-04-27 - Long\|EURUSD 27/4/2005]] | Grade A giữ nguyên dù note tự nhận lỗi chốt 50% sớm ("quên Liquidity Void phá rất nhanh") — nhận lỗi thực thi nhưng không hạ Grade tương ứng |
+| [[01 - Win - EURUSD - 2010-10-19 - Long|EURUSD 19/10/2010]] | Câu đánh giá "thắng vì chờ đầy đủ điều kiện" viết trong replay sau khi biết Hit TP; không có bằng chứng đây là suy luận trước outcome |
+| [[01 - Win - EURUSD - 2005-04-12 - Short|EURUSD 12/4/2005]] | Cùng pattern — không tách phần "dự đoán" khỏi phần "diễn giải sau" |
+| [[02 - Win - EURUSD - 2005-04-13 - Short|EURUSD 13/4/2005]] | Cùng pattern |
+| [[02 - Win - EURUSD - 2005-04-24 - Long|EURUSD 24/4/2005]] | Cùng pattern, cộng thêm lỗi arithmetic Unicorn overlap (1.8 pip lệch) không được phát hiện lúc viết |
+| [[02 - Win - EURUSD - 2005-04-27 - Long|EURUSD 27/4/2005]] | Grade A giữ nguyên dù note tự nhận lỗi chốt 50% sớm ("quên Liquidity Void phá rất nhanh") — nhận lỗi thực thi nhưng không hạ Grade tương ứng |
 
 Cả 5/5 note đều **thiếu hoàn toàn** field `entry_type`, `confluence_score`, `first_error_step` — nghĩa là ngay cả công cụ cấu trúc để tách bạch quy trình cũng chưa tồn tại ở giai đoạn này (xem [[../00 - Tong hop/00 - Backtest Dashboard & Statistics|Dashboard]] mục 4, schema drift).
 

@@ -29,7 +29,7 @@ tags: [daily-summary, prop-firm-prep]
 
 ## 📊 Backtest hôm nay
 
-**Không có backtest nào được log hôm nay** — thư mục `04 - Backtesting/2026-07-18/` chưa tồn tại. Đối chiếu trực tiếp toàn vault (đếm bằng `grep` trên frontmatter `type: backtest`, không dựa vào log cũ): tổng vẫn **22/200 (11%)** — **13 EURUSD + 4 GBPUSD + 4 XAUUSD + 1 NAS100**, **17 Win / 5 Loss = 77,3%** (n=22, không đổi so với 07-17). [[12 - Mistake - Log Data Mismatch - Backtest]] (tạo 07-17) vẫn là note lỗi mới nhất trong `06 - Mistake Database/` — không có bằng chứng nào cho thấy 2 vấn đề còn treo từ 07-17 (rename file `01 - Win - GBPUSD - 2014-06-25` và wikilink [[02 - Mistake - Enter before liquidity sweep]] vào note `02 - Loss - GBPUSD - 2014-07-17`) đã được xử lý — cả hai vẫn đang chờ xác nhận từ .
+**Không có backtest nào được log hôm nay** — thư mục `04 - Backtesting/2026-07-18/` chưa tồn tại. Đối chiếu trực tiếp toàn vault (đếm bằng `grep` trên frontmatter `type: backtest`, không dựa vào log cũ): tổng vẫn **22/200 (11%)** — **13 EURUSD + 4 GBPUSD + 4 XAUUSD + 1 NAS100**, **17 Win / 5 Loss = 77,3%** (n=22, không đổi so với 07-17). [[12-Mistake-Log-Data-Mismatch-Backtest]] (tạo 07-17) vẫn là note lỗi mới nhất trong `06 - Mistake Database/` — không có bằng chứng nào cho thấy 2 vấn đề còn treo từ 07-17 (rename file `01 - Win - GBPUSD - 2014-06-25` và wikilink [[02-Mistake-Enter-before-liquidity-sweep]] vào note `02 - Loss - GBPUSD - 2014-07-17`) đã được xử lý — cả hai vẫn đang chờ xác nhận từ .
 
 ## 💹 Live Trade hôm nay
 
@@ -37,7 +37,7 @@ tags: [daily-summary, prop-firm-prep]
 
 ## 🧠 Phân tích lỗi & tâm lý
 
-**Không có mistake nào được kích hoạt hôm nay** — không có backtest hay trade nào để tính. Top-3 lỗi backtest hiện tại (FOUNDATION mode) không đổi: [[06 - Mistake - Not Have Market Structure Shift]] (chấm nhầm pullback thành MSS thật — thiếu nến đóng cửa phá protected swing bằng displacement), [[08 - Mistake - Weak Displacement]] (chấm điểm cao cho setup có displacement chỉ là nến thân nhỏ/đóng yếu, không đủ ~1,5–2× ATR khung entry), [[09 - Mistake - Wrong daily bias]] (đọc sai hướng D1 hoặc tin bias mà không xuất phát từ dealing range đúng). Tần suất lỗi **live-trade** chính thức (06=14, 09=7, 07=5 trên tổng lệnh live, theo [[02 - Mistake Frequency Dashboard]] tính tới 07-17) tiếp tục bị đóng băng thêm 1 ngày vì không có lệnh live nào để nạp dữ liệu mới.
+**Không có mistake nào được kích hoạt hôm nay** — không có backtest hay trade nào để tính. Top-3 lỗi backtest hiện tại (FOUNDATION mode) không đổi: [[06-Mistake-Not-Have-Market-Structure-Shift]] (chấm nhầm pullback thành MSS thật — thiếu nến đóng cửa phá protected swing bằng displacement), [[08-Mistake-Weak-Displacement]] (chấm điểm cao cho setup có displacement chỉ là nến thân nhỏ/đóng yếu, không đủ ~1,5–2× ATR khung entry), [[09-Mistake-Wrong-daily-bias]] (đọc sai hướng D1 hoặc tin bias mà không xuất phát từ dealing range đúng). Tần suất lỗi **live-trade** chính thức (06=14, 09=7, 07=5 trên tổng lệnh live, theo [[02 - Mistake Frequency Dashboard]] tính tới 07-17) tiếp tục bị đóng băng thêm 1 ngày vì không có lệnh live nào để nạp dữ liệu mới.
 
 ## 🎯 Đối chiếu mục tiêu
 
@@ -62,7 +62,7 @@ Có cập nhật cho **[[Hold daily journaling and process discipline]]** — l�
 ## 🔭 Việc cần làm ngày mai
 
 1. **Log ít nhất 1 backtest hôm nay (07-18) hoặc trong ngày mai** để không lỡ nhịp — ưu tiên GBPUSD/XAUUSD/NAS100 để tiếp tục cân cohort (non-EURUSD hiện 9/22 ≈ 41%).
-2. **Xác nhận 2 việc còn treo từ 07-17:** đổi tên file `01 - Win - GBPUSD - 2014-06-25 - Long.md` → `...2014-07-14...` (giữ số `01`), và link chính thức [[02 - Mistake - Enter before liquidity sweep]] vào note `02 - Loss - GBPUSD - 2014-07-17 - Long`.
+2. **Xác nhận 2 việc còn treo từ 07-17:** đổi tên file `01 - Win - GBPUSD - 2014-06-25 - Long.md` → `...2014-07-14...` (giữ số `01`), và link chính thức [[02-Mistake-Enter-before-liquidity-sweep]] vào note `02 - Loss - GBPUSD - 2014-07-17 - Long`.
 3. **Quyết định 2 mismatch progress/cột mốc đang treo:** [[Master the ICT 2022 Model]] (30% vs 0/5) và [[Cut my top 3 repeated mistakes]] (20% vs 0/4) — hạ progress cho khớp, hoặc tick cột mốc tương ứng nếu đủ bằng chứng.
 4. **Viết dòng log FTMO/The5ers THẬT cho lần tới** — không chấp nhận "Tập trung backtest"; cần trạng thái prep cụ thể + phân biệt luật riêng từng quỹ.
 5. **Cân nhắc cụ thể ngày bắt đầu Giai đoạn 1 — Demo thử luật (2 tuần)** cho ít nhất 1 trong 2 track — 30 ngày không lệnh live đang ăn vào 173 ngày còn lại mà chưa hề bắt đầu bước kiểm chứng execution dưới luật quỹ thật.

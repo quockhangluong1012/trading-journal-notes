@@ -125,7 +125,7 @@ reward = |entry_price − take_profit|
 R      = reward / risk
 ```
 
-Nếu ba giá trị gốc (entry/SL/TP) đã được log, R không cần "nhớ lại" hay "ước lượng" — nó cần được **tính ra**. Bất kỳ lúc nào R được gõ tay mà không tính lại từ ba giá trị gốc, đó là một điểm rủi ro mismatch tiềm ẩn. Xem thêm [[05 - Mistake - Not enough RR]] về cách đo RR đúng chuẩn tới draw on liquidity — nguyên tắc "RR phải là con số đo được, không phải con số tự chọn" áp dụng ở cả hai lỗi, nhưng ở đây vấn đề là RR *bị log sai* chứ không phải RR *bị chọn thấp*.
+Nếu ba giá trị gốc (entry/SL/TP) đã được log, R không cần "nhớ lại" hay "ước lượng" — nó cần được **tính ra**. Bất kỳ lúc nào R được gõ tay mà không tính lại từ ba giá trị gốc, đó là một điểm rủi ro mismatch tiềm ẩn. Xem thêm [[05-Mistake-Not-enough-RR]] về cách đo RR đúng chuẩn tới draw on liquidity — nguyên tắc "RR phải là con số đo được, không phải con số tự chọn" áp dụng ở cả hai lỗi, nhưng ở đây vấn đề là RR *bị log sai* chứ không phải RR *bị chọn thấp*.
 
 ### 5.3. Lỗi năm khi backtest dữ liệu lịch sử — pattern rất riêng của backtesting
 
@@ -280,8 +280,8 @@ Nói cách khác: Evidence Tier System giả định trục "số lượng mẫu
 
 | Mistake liên quan | Cơ chế tương tác với Log Data Mismatch |
 |---|---|
-| [[05 - Mistake - Not enough RR]] | R-multiple bị log sai (do mismatch) có thể *che giấu* một lệnh thực chất có RR thấp — dashboard sẽ không bao giờ gắn cờ "RR thấp" nếu con số R đã bị ghi sai thành cao hơn thực tế. |
-| [[09 - Mistake - Wrong daily bias]] | `bias_correct` ghi không nhất quán với lesson learned (dạng mismatch thứ 5, chưa liệt kê ở mục 1) khiến không thể biết tỷ lệ đọc bias đúng thực tế là bao nhiêu — làm hỏng luôn cả số liệu để cải thiện mistake #9. |
+| [[05-Mistake-Not-enough-RR]] | R-multiple bị log sai (do mismatch) có thể *che giấu* một lệnh thực chất có RR thấp — dashboard sẽ không bao giờ gắn cờ "RR thấp" nếu con số R đã bị ghi sai thành cao hơn thực tế. |
+| [[09-Mistake-Wrong-daily-bias]] | `bias_correct` ghi không nhất quán với lesson learned (dạng mismatch thứ 5, chưa liệt kê ở mục 1) khiến không thể biết tỷ lệ đọc bias đúng thực tế là bao nhiêu — làm hỏng luôn cả số liệu để cải thiện mistake #9. |
 | 08 — Weak Displacement | Nếu ví dụ minh họa cho "displacement mạnh" trong log bị lấy từ note có mismatch ngày/giá, ranh giới "mạnh vs yếu" được huấn luyện trên dữ liệu không xác thực. |
 | 10 — FVG Not Valid | Bảng thống kê điều kiện hợp lệ FVG (nếu được xây từ log) sẽ kế thừa toàn bộ lỗi GIGO nếu log nguồn có mismatch — hai mistake này cộng hưởng theo chiều "lỗi log làm hỏng lỗi phân tích". |
 
@@ -477,7 +477,7 @@ Tranh biện thu hẹp lại còn một câu hỏi cụ thể hơn ban đầu: k
 
 ## 16. Liên kết
 
-**Mistakes liên quan:** [[05 - Mistake - Not enough RR]] · [[09 - Mistake - Wrong daily bias]]
+**Mistakes liên quan:** [[05-Mistake-Not-enough-RR]] · [[09-Mistake-Wrong-daily-bias]]
 
 **Dashboard:** [[04 - Backtesting/_Backtest Dashboard|_Backtest Dashboard]] · [[01 - Dashboard/02 - Mistake Frequency Dashboard|Mistake Frequency Dashboard]]
 

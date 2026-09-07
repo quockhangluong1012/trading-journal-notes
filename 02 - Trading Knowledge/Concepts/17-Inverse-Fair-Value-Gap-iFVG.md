@@ -36,7 +36,7 @@ common_mistakes:
 
 > [!important] Nguyên tắc cốt lõi
 > **Điều kiện sống còn của IFVG là CANDLE CLOSE qua FVG, không phải chỉ bóng nến chọc qua. Đóng nến xuyên qua = thị trường chấp nhận giá ở phía bên kia → FVG đảo cực. Bóng chọc rồi đóng lại bên trong = FVG vẫn còn hiệu lực (vẫn respect), KHÔNG phải IFVG.**
-> IFVG là tín hiệu mạnh cho thấy delivery đã đổi chiều, thường đi kèm [[21 - Market Structure Shift|MSS]] — chỉ trade retest IFVG khi nó đồng hướng bias MỚI.
+> IFVG là tín hiệu mạnh cho thấy delivery đã đổi chiều, thường đi kèm [[21-Market-Structure-Shift|MSS]] — chỉ trade retest IFVG khi nó đồng hướng bias MỚI.
 
 ---
 
@@ -74,7 +74,7 @@ IFVG là cách ICT biến một "FVG thất bại" thành cơ hội thay vì m�
 > Giải phẫu một Bearish IFVG hoàn chỉnh: bullish FVG hình thành trong nhịp tăng, rồi bị một nến giảm ĐÓNG BODY xuyên thẳng xuống qua (violation) kèm displacement + MSS bearish; vùng gap cũ đảo cực thành kháng cự, giá retrace LÊN retest → reject → Short với stop trên high IFVG và target là SSL. Bullish IFVG (bearish FVG fail) là chuỗi đối xứng ngược lại.
 
 ### Inverse FVG không phải là gì
-- Không phải là [[14 - Implied Fair Value Gap|Implied FVG]] — đó là khái niệm KHÁC (xem mục phân biệt bên dưới).
+- Không phải là [[14-Implied-Fair-Value-Gap|Implied FVG]] — đó là khái niệm KHÁC (xem mục phân biệt bên dưới).
 - Không phải kích hoạt bởi bóng nến — bắt buộc đóng nến (body close) qua FVG.
 - Không phải tín hiệu đảo độc lập — cần đồng hướng bias mới / MSS để đáng tin.
 - Không phải mọi FVG bị chạm đều thành IFVG — phải bị đóng nến XUYÊN QUA, không phải chỉ lấp.
@@ -98,7 +98,7 @@ IFVG là cách ICT biến một "FVG thất bại" thành cơ hội thay vì m�
 
 ![[IFVG-Advanced-vs-Implied.svg|697]]
 
-> Hai mini chart minh họa khác biệt cốt lõi: bên trái, IFVG là một FVG đã bị đóng nến xuyên qua → đảo cực → trade NGƯỢC hướng gốc; bên phải, [[14 - Implied Fair Value Gap|Implied FVG]] là vùng imbalance ngầm suy từ overlap các bóng nến lớn, vẫn sống và được rebalance theo CÙNG hướng. Hỏi trước khi vào lệnh: "Vùng này đã bị ĐÓNG NẾN xuyên qua chưa?" — Có → IFVG; Chưa → PD array thường.
+> Hai mini chart minh họa khác biệt cốt lõi: bên trái, IFVG là một FVG đã bị đóng nến xuyên qua → đảo cực → trade NGƯỢC hướng gốc; bên phải, [[14-Implied-Fair-Value-Gap|Implied FVG]] là vùng imbalance ngầm suy từ overlap các bóng nến lớn, vẫn sống và được rebalance theo CÙNG hướng. Hỏi trước khi vào lệnh: "Vùng này đã bị ĐÓNG NẾN xuyên qua chưa?" — Có → IFVG; Chưa → PD array thường.
 
 ### Các trạng thái của FVG dẫn tới IFVG
 
@@ -114,8 +114,8 @@ IFVG là cách ICT biến một "FVG thất bại" thành cơ hội thay vì m�
 
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Có một FVG rõ vừa bị **đóng nến xuyên qua** (không phải chỉ bóng).
-- [ ] Violation đi kèm displacement + [[21 - Market Structure Shift|MSS]] đổi hướng.
-- [ ] IFVG đồng hướng [[12 - Daily Bias|bias mới]] sau khi đảo.
+- [ ] Violation đi kèm displacement + [[21-Market-Structure-Shift|MSS]] đổi hướng.
+- [ ] IFVG đồng hướng [[12-Daily-Bias|bias mới]] sau khi đảo.
 - [ ] Giá retrace về retest vùng IFVG trong kill zone.
 - [ ] Có liquidity target rõ ràng theo hướng mới.
 
@@ -177,7 +177,7 @@ IFVG là cách ICT biến một "FVG thất bại" thành cơ hội thay vì m�
 > 4. **Đâu là retest và target theo hướng mới — điều gì làm IFVG này invalid?**
 
 ### D1 / H4 — Bias & Narrative
-- Bias hiện tại: Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
+- Bias hiện tại: Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
 - Có dấu hiệu đổi delivery HTF không (một HTF FVG bị đóng nến xuyên qua)?
 - Vị trí premium/discount: IFVG retest có nằm đúng phía cho hướng mới không?
 - Liquidity target theo hướng mới ở đâu?
@@ -257,12 +257,12 @@ Invalid: giá đóng nến XUỐNG lại dưới IFVG (lấy lại gap) → bỏ
 
 IFVG không phải khái niệm "đảo cực" duy nhất trong ICT. Ba PD array cùng dựa trên logic **vùng cũ đổi vai trò sau khi cấu trúc đổi** — nhưng khác nhau ở *nguồn gốc vùng* và *sự kiện kích hoạt*. Hiểu rõ ba cái này giúp bạn không gọi nhầm tên và chọn đúng vùng để retest.
 
-| Tiêu chí | Inverse FVG (IFVG) | [[04 - Breaker Block\|Breaker Block]] | [[22 - Mitigation Block\|Mitigation Block]] |
+| Tiêu chí | Inverse FVG (IFVG) | [[04-Breaker-Block|Breaker Block]] | [[22-Mitigation-Block|Mitigation Block]] |
 |---|---|---|---|
 | **Vùng gốc** | Một [[Fair Value Gap\|FVG]] (imbalance 3 nến) | Một [[Order Block]] tạo swing high/low **bị phá** kèm sweep | Order block của một swing **không** lấy được liquidity trước khi bị phá |
 | **Sự kiện kích hoạt** | Đóng nến (body close) XUYÊN qua FVG | Giá sweep liquidity → phá qua OB → OB đảo vai trò | Giá phá cấu trúc, quay lại "mitigate" OB chưa hoàn thành nhiệm vụ |
 | **Bản chất đảo cực** | Imbalance bị chối bỏ → hỗ trợ ↔ kháng cự | OB bị vô hiệu sau sweep → đảo vai trò S/R | OB được dùng lại để phân phối phần lệnh còn kẹt |
-| **Tín hiệu đi kèm** | Displacement + [[21 - Market Structure Shift\|MSS]] | Sweep + MSS (gần như bắt buộc) | MSS, thường không cần sweep rõ như breaker |
+| **Tín hiệu đi kèm** | Displacement + [[21-Market-Structure-Shift|MSS]] | Sweep + MSS (gần như bắt buộc) | MSS, thường không cần sweep rõ như breaker |
 | **Hướng trade** | NGƯỢC hướng FVG cũ tại retest | Theo hướng breaker sau khi đảo | Theo hướng cấu trúc mới tại retest OB |
 
 > [!tip] Điểm chung then chốt
@@ -284,7 +284,7 @@ Không phải mọi IFVG đều ngang nhau. Chất lượng của một inversio
 
 ### Nâng cao — Dùng CE của IFVG để refine entry và đo acceptance
 
-Giống như FVG thường, một IFVG có [[10 - Consequent Encroachment (Mean Threshold)|Consequent Encroachment (CE)]] — điểm giữa của vùng gap cũ. CE là công cụ tinh chỉnh mạnh cho cả entry lẫn việc đánh giá acceptance:
+Giống như FVG thường, một IFVG có [[10-Consequent-Encroachment-Mean-Threshold|Consequent Encroachment (CE)]] — điểm giữa của vùng gap cũ. CE là công cụ tinh chỉnh mạnh cho cả entry lẫn việc đánh giá acceptance:
 
 1. **Refine entry:** thay vì đặt lệnh ở mép xa của IFVG (retest nông) hay chờ giá xuyên hết vùng (retest sâu, dễ trượt), nhiều trader vào tại **CE của IFVG** — điểm cân bằng giữa xác suất được khớp và chất lượng giá. Với bearish IFVG, Short quanh CE khi giá retrace lên; stop vẫn nằm trên high của IFVG (ngoài đầu kia).
 2. **Đo acceptance bằng CE:** sau violation, nếu giá **không thể đóng nến quay lại quá CE** về phía gap cũ, đó là acceptance mạnh — đảo cực vững. Ngược lại, nếu giá dễ dàng đóng nến vượt CE ngược lại vào gap, hãy nghi ngờ inversion (tier tụt xuống C hoặc loại).
@@ -524,13 +524,13 @@ ifvg_alignment: aligned # aligned với bias mới | counter
 
 1. **Chỉ gọi IFVG khi có BODY CLOSE + acceptance, tuyệt đối không tính wick.** Một bóng nến chọc qua FVG rồi đóng lại BÊN TRONG gap nghĩa là FVG vẫn respect và giá thường tiếp tục hướng gốc — vào ngược ở đây là lỗi kinh điển. Ghi trường `violation_type: close/wick` cho mỗi lệnh; nhóm `wick` gần như luôn có kết quả tệ hơn khi bạn soi lại.
 
-2. **Yêu cầu displacement + MSS đi kèm violation.** Một FVG bị đóng nến xuyên qua một cách yếu ớt (không displacement, không phá swing) là inversion kém tin. IFVG chất lượng cao đánh dấu một sự đổi delivery thật — nên nó gần như luôn trùng một [[21 - Market Structure Shift|MSS]]. Log `violation_with_mss: true/false` và so sánh edge giữa hai nhóm.
+2. **Yêu cầu displacement + MSS đi kèm violation.** Một FVG bị đóng nến xuyên qua một cách yếu ớt (không displacement, không phá swing) là inversion kém tin. IFVG chất lượng cao đánh dấu một sự đổi delivery thật — nên nó gần như luôn trùng một [[21-Market-Structure-Shift|MSS]]. Log `violation_with_mss: true/false` và so sánh edge giữa hai nhóm.
 
-3. **Vào lệnh tại RETEST, không tại cây violation.** Sau khi FVG bị close xuyên, chờ giá retrace về retest vùng IFVG rồi mới vào theo hướng mới; vào ngay lúc violation dễ bị nhịp hồi quét. Refine entry quanh CE ([[10 - Consequent Encroachment (Mean Threshold)|Mean Threshold]]) của chính vùng IFVG để có stop ngắn và R:R tốt hơn.
+3. **Vào lệnh tại RETEST, không tại cây violation.** Sau khi FVG bị close xuyên, chờ giá retrace về retest vùng IFVG rồi mới vào theo hướng mới; vào ngay lúc violation dễ bị nhịp hồi quét. Refine entry quanh CE ([[10-Consequent-Encroachment-Mean-Threshold|Mean Threshold]]) của chính vùng IFVG để có stop ngắn và R:R tốt hơn.
 
 4. **Đặt stop ngoài ĐẦU KIA của IFVG, không bên trong vùng.** Mốc invalidation là khi giá đóng nến "lấy lại gap" (đóng vượt qua IFVG theo hướng cũ) — lúc đó đảo cực bị phủ nhận. Stop đặt bên trong vùng IFVG sẽ bị quét bởi chính nhịp test vùng bình thường.
 
-5. **Phân biệt IFVG với [[14 - Implied Fair Value Gap|Implied FVG]] — hai khái niệm khác hẳn.** IFVG = FVG bị đóng nến xuyên qua → đảo cực → trade NGƯỢC hướng. Implied FVG = vùng imbalance ngầm suy từ cấu trúc nến → dùng như PD array thường, CÙNG hướng. Nhầm hai cái = trade sai hướng hoàn toàn; luôn tự hỏi "mình đang nói về cái nào?".
+5. **Phân biệt IFVG với [[14-Implied-Fair-Value-Gap|Implied FVG]] — hai khái niệm khác hẳn.** IFVG = FVG bị đóng nến xuyên qua → đảo cực → trade NGƯỢC hướng. Implied FVG = vùng imbalance ngầm suy từ cấu trúc nến → dùng như PD array thường, CÙNG hướng. Nhầm hai cái = trade sai hướng hoàn toàn; luôn tự hỏi "mình đang nói về cái nào?".
 
 6. **Chỉ trade IFVG ĐỒNG hướng bias mới, đúng premium/discount.** Một bearish IFVG (từ bullish FVG fail) đáng tin nhất khi retest nằm ở premium và bias đã chuyển bearish; ngược lại cho bullish IFVG ở discount. IFVG counter-trend không có narrative đổi delivery thật thường thiếu room và xác suất thấp.
 
@@ -566,7 +566,7 @@ Lỗi tinh vi: một nến **M1 đóng xuyên** qua một **FVG của H1** KHÔN
 
 ### 16.5. Edge case #5 — iFVG vs Breaker: cây quyết định nhanh khi đang live
 
-Trong thực tế, iFVG và [[04 - Breaker Block]] hay chồng lấn về vị trí và khiến bạn phân vân giữa lúc giá đang chạy. Cây quyết định nhanh: hỏi **"vùng gốc là gì?"** — nếu là một **FVG bị đóng nến xuyên qua** → iFVG; nếu là một **order block tạo swing bị phá SAU một cú sweep** → breaker. Điểm chung sống còn: **cả hai chỉ đáng tin khi có MSS.** Nếu không có MSS, cả hai chỉ là vùng cũ bị chạm ngẫu nhiên. May mắn là playbook retest gần như giống hệt nhau, nên nếu lỡ gọi nhầm tên mà vẫn đòi đủ MSS + acceptance + retest thì rủi ro thực tế thấp — nguy hiểm chỉ đến khi bạn bỏ qua MSS vì "trông giống một trong hai".
+Trong thực tế, iFVG và [[04-Breaker-Block]] hay chồng lấn về vị trí và khiến bạn phân vân giữa lúc giá đang chạy. Cây quyết định nhanh: hỏi **"vùng gốc là gì?"** — nếu là một **FVG bị đóng nến xuyên qua** → iFVG; nếu là một **order block tạo swing bị phá SAU một cú sweep** → breaker. Điểm chung sống còn: **cả hai chỉ đáng tin khi có MSS.** Nếu không có MSS, cả hai chỉ là vùng cũ bị chạm ngẫu nhiên. May mắn là playbook retest gần như giống hệt nhau, nên nếu lỡ gọi nhầm tên mà vẫn đòi đủ MSS + acceptance + retest thì rủi ro thực tế thấp — nguy hiểm chỉ đến khi bạn bỏ qua MSS vì "trông giống một trong hai".
 
 ### 16.6. Edge case #6 — Retest lần đầu mạnh nhất; retest lặp lại yếu dần
 

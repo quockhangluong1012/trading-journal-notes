@@ -64,7 +64,7 @@ Fair Value Gap là một vùng **imbalance** trên chart, hình thành khi giá 
 - Là vùng đặt **stop loss logic**: stop thường nằm ngoài đầu kia của FVG / đầu displacement.
 
 **Vì sao khái niệm này quan trọng:**  
-FVG là một trong những PD Array trung tâm của ICT 2022 model. Nhưng chính vì dễ thấy, nó là khái niệm bị **lạm dụng** nhiều nhất: trader vẽ FVG khắp nơi và trade mọi gap. FVG chỉ có edge khi đặt trong narrative HTF + liquidity + premium/discount đúng — giống hệt triết lý của [[12 - Daily Bias]].
+FVG là một trong những PD Array trung tâm của ICT 2022 model. Nhưng chính vì dễ thấy, nó là khái niệm bị **lạm dụng** nhiều nhất: trader vẽ FVG khắp nơi và trade mọi gap. FVG chỉ có edge khi đặt trong narrative HTF + liquidity + premium/discount đúng — giống hệt triết lý của [[12-Daily-Bias]].
 
 **Nó giúp trả lời câu hỏi nào trên chart?**
 - Sau displacement, giá có khả năng retrace về đâu để tìm entry?
@@ -181,7 +181,7 @@ FVG là một trong những PD Array trung tâm của ICT 2022 model. Nhưng ch�
 > 4. **CE của FVG ở đâu, và điều gì làm FVG này invalid?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
+- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
 - **HTF FVG / imbalance làm DRAW:** có FVG D1/H4 nào còn mở mà giá bị hút về để rebalance không? Đây thường là **target** chứ không phải entry.
 - **HTF FVG làm POI:** có D1/H4 FVG đồng hướng bias, đúng premium/discount, còn unmitigated không?
 - **Vị trí premium/discount:** FVG cần Long phải ở discount; FVG cần Short phải ở premium của HTF dealing range.
@@ -352,11 +352,11 @@ Nhiều trader gọi mọi khoảng trống là "FVG" và trade chúng như nhau
 |---|---|---|---|
 | **FVG (BISI/SIBI)** | Gap 3 nến: wick nến 1 và nến 3 không chạm nhau | Single-sided delivery do displacement | POI entry / draw; CE là mức chính |
 | **Volume Imbalance** | Gap giữa **body** hai nến liên tiếp, nhưng wick chồng lấp | Inefficiency nhỏ giữa close/open | Mốc precision cho entry/target LTF; thường được rebalance nhanh — KHÔNG phải POI chính |
-| **[[21 - Liquidity Void]]** | Cả một đoạn nhiều nến one-sided | Vùng thiếu giao dịch quy mô lớn, chứa nhiều FVG con | Draw mạnh; giá thường rebalance phần lớn void; bên trong void chọn FVG con làm mức |
-| **[[03 - Balanced Price Range]] (BPR)** | Bullish FVG chồng lấp Bearish FVG | Vùng đã được giao dịch đủ **hai chiều** | S/R rất "cứng"; CE của BPR là mức phòng thủ; entry chất lượng cao khi retest |
-| **[[14 - Implied Fair Value Gap]]** | Không có gap thật; đo bằng trung điểm wick nến 1 và nến 3 | "Gap ngầm" trong nến có wick dài | Dùng khi displacement không để lại gap thật; yếu hơn FVG thật |
-| **[[06 - Breakaway Gap]]** | Gap sinh ra khi giá thoát khỏi accumulation/POI với intent cực mạnh | Gap KHÔNG có nhu cầu được lấp trong leg hiện tại | Không chờ lấp để entry — dấu hiệu trend rất mạnh; dùng làm bằng chứng bias |
-| **[[23 - New Day Opening Gap]] / [[24 - New Week Opening Gap]]** | Gap giữa close phiên trước và open phiên sau | Reference gap của thuật toán theo thời gian | Mức tham chiếu draw/support-resistance trong ngày/tuần |
+| **[[21-Liquidity-Void]]** | Cả một đoạn nhiều nến one-sided | Vùng thiếu giao dịch quy mô lớn, chứa nhiều FVG con | Draw mạnh; giá thường rebalance phần lớn void; bên trong void chọn FVG con làm mức |
+| **[[03-Balanced-Price-Range]] (BPR)** | Bullish FVG chồng lấp Bearish FVG | Vùng đã được giao dịch đủ **hai chiều** | S/R rất "cứng"; CE của BPR là mức phòng thủ; entry chất lượng cao khi retest |
+| **[[14-Implied-Fair-Value-Gap]]** | Không có gap thật; đo bằng trung điểm wick nến 1 và nến 3 | "Gap ngầm" trong nến có wick dài | Dùng khi displacement không để lại gap thật; yếu hơn FVG thật |
+| **[[06-Breakaway-Gap]]** | Gap sinh ra khi giá thoát khỏi accumulation/POI với intent cực mạnh | Gap KHÔNG có nhu cầu được lấp trong leg hiện tại | Không chờ lấp để entry — dấu hiệu trend rất mạnh; dùng làm bằng chứng bias |
+| **[[23-New-Day-Opening-Gap]] / [[24-New-Week-Opening-Gap]]** | Gap giữa close phiên trước và open phiên sau | Reference gap của thuật toán theo thời gian | Mức tham chiếu draw/support-resistance trong ngày/tuần |
 
 > [!important] Hệ quả quan trọng nhất của taxonomy
 > **Không phải mọi gap đều "phải" được lấp.** Breakaway gap trong displacement thoát khỏi accumulation thường không được lấp trong cùng một leg. Kỳ vọng "gap nào cũng lấp" là lý do trader counter-trend bị nghiền trong trend mạnh. Câu hỏi đúng không phải "gap này có lấp không?" mà là "**gap này thuộc loại nào, và narrative có cần nó được lấp không?**"
@@ -386,7 +386,7 @@ Nhiều trader gọi mọi khoảng trống là "FVG" và trade chúng như nhau
 
 ICT nhấn mạnh **thời gian đứng trước giá**: cùng một cấu trúc FVG, giá trị hoàn toàn khác nhau tùy thời điểm hình thành.
 
-- **FVG trong Kill Zone > ngoài Kill Zone.** FVG sinh trong London Open / NY AM ([[18 - Kill Zones]]) mang intent của thuật toán ở thời điểm delivery chính. FVG hình thành trong lunch (12:00–13:00 NY) hoặc cuối NY PM thường là nhiễu thanh khoản mỏng.
+- **FVG trong Kill Zone > ngoài Kill Zone.** FVG sinh trong London Open / NY AM ([[18-Kill-Zones]]) mang intent của thuật toán ở thời điểm delivery chính. FVG hình thành trong lunch (12:00–13:00 NY) hoặc cuối NY PM thường là nhiễu thanh khoản mỏng.
 - **Macro windows.** Các cửa sổ macro (~9:50–10:10, 10:50–11:10, 13:10–13:40, 14:50–15:10 NY time) là lúc thuật toán chạy run-on-liquidity / rebalance. FVG hình thành hoặc được retest trong macro có xác suất phản ứng cao hơn rõ rệt — đặc biệt với NQ.
 - **First Presented FVG (FPFVG).** FVG **đầu tiên** hình thành sau 9:30 open của index futures là anchor của NY AM session model: giá thường quay lại rebalance FPFVG trước khi chạy leg chính của phiên sáng. Kết hợp với Silver Bullet window (10:00–11:00: tìm FVG entry đầu tiên trong cửa sổ này) tạo thành playbook thời gian cụ thể cho NQ.
 - **Tuổi của FVG.** LTF FVG (M1–M15) hết hạn nhanh — thường chỉ trong phiên; nếu qua ngày mà chưa được dùng, giá trị giảm mạnh. HTF FVG (H4/D1/W) giữ giá trị nhiều ngày tới nhiều tuần. FVG D1/W chưa lấp của tuần trước là draw tự nhiên cho tuần sau.
@@ -483,7 +483,7 @@ Ba cơ chế này chạy xuyên các W bên dưới: news gap không có kho l�
 **Rule đo được:**
 - Entry mặc định tại **CE thay vì mép** — vừa cải thiện R:R vừa tạo buffer tự nhiên cho spread.
 - Nếu vẫn muốn mép: cộng/trừ spread trung bình của phiên vào giá limit (buy limit đặt cao hơn mép một spread; sell limit thấp hơn một spread).
-- Backtest phải mô phỏng spread — mọi entry "khớp đúng đỉnh wick chạm mép" cần bị nghi ngờ là phantom fill (cùng họ với bài học W3 bên [[20 - Liquidity Sweep]]).
+- Backtest phải mô phỏng spread — mọi entry "khớp đúng đỉnh wick chạm mép" cần bị nghi ngờ là phantom fill (cùng họ với bài học W3 bên [[20-Liquidity-Sweep]]).
 
 > [!success] Tổng kết mục War Stories
 > Một FVG không chỉ có *hình dạng* — nó có **chất liệu** (nến gì tạo ra nó — W1), **cách bị tiếp cận** (W2), **lịch sử chạm thật** (W3), **quốc tịch** (market nào — W4) và **cơ chế khớp lệnh** quanh nó (W5). Journal fields: `fvg_origin`, `approach_speed`, `touch_count_actual`, `fill_depth` theo symbol.
@@ -683,9 +683,9 @@ Thuật ngữ ICT gọi đây là "rebalance imbalance" — nhưng cơ chế ord
 | Tiêu chí | FX Majors (EURUSD, GBPUSD) | Index Futures (NQ/ES) | Crypto (BTC/ETH) |
 |---|---|---|---|
 | **Cấu trúc thanh khoản** | OTC, nhiều venue/dealer khác nhau — không có "một" order book chung; feed có thể lệch nhẹ giữa các broker | Order book tập trung tại CME (Globex) — một nguồn sự thật duy nhất, độ sâu rất lớn tại contract chính | Order book tập trung theo từng sàn (Binance, Coinbase...), nhưng **phân mảnh** giữa nhiều sàn; độ sâu thay đổi mạnh theo giờ |
-| **Độ sâu fill điển hình** | Thường fill sâu 60–100% gap trước khi phản ứng (xem [[13 - FVG-Fair-Value-Gap|mục W4]]) | Thường fill nông hơn, hay phản ứng ngay tại/trước CE, đặc biệt trong kill zone NY AM | Biến thiên rất lớn theo vốn hóa: BTC/ETH major pairs hành xử gần giống futures; altcoin fill cực sâu hoặc xuyên thẳng do thanh khoản mỏng |
+| **Độ sâu fill điển hình** | Thường fill sâu 60–100% gap trước khi phản ứng (xem [[13-FVG-Fair-Value-Gap|mục W4]]) | Thường fill nông hơn, hay phản ứng ngay tại/trước CE, đặc biệt trong kill zone NY AM | Biến thiên rất lớn theo vốn hóa: BTC/ETH major pairs hành xử gần giống futures; altcoin fill cực sâu hoặc xuyên thẳng do thanh khoản mỏng |
 | **Ảnh hưởng tin tức vĩ mô** | Rất mạnh quanh NFP/CPI/lãi suất — FVG sinh trong tin thường là "vết nhảy", không phải dấu vết lệnh thật | Mạnh, nhưng có cơ chế circuit breaker/limit-up-limit-down giúp hạn chế spike cực đoan | Không giới hạn biên độ, không circuit breaker chuẩn hóa — FVG do tin (ETF, SEC, hack sàn) có thể cực đoan và không mean-revert |
-| **Thời gian giữ giá trị của HTF FVG** | D1/H4 FVG giữ giá trị nhiều ngày–tuần, thị trường 24/5 liên tục | D1/H4 FVG có thể "nghỉ" qua đêm/cuối tuần (thị trường đóng cửa), tái mở với gap riêng ([[23 - New Day Opening Gap]]) | Thị trường 24/7 — FVG không bị gián đoạn bởi giờ đóng cửa, nhưng thanh khoản cuối tuần mỏng làm méo hành vi fill |
+| **Thời gian giữ giá trị của HTF FVG** | D1/H4 FVG giữ giá trị nhiều ngày–tuần, thị trường 24/5 liên tục | D1/H4 FVG có thể "nghỉ" qua đêm/cuối tuần (thị trường đóng cửa), tái mở với gap riêng ([[23-New-Day-Opening-Gap]]) | Thị trường 24/7 — FVG không bị gián đoạn bởi giờ đóng cửa, nhưng thanh khoản cuối tuần mỏng làm méo hành vi fill |
 | **Vai trò market maker/dealer** | Ngân hàng lớn làm market maker, dealing desk — inventory hedging rất tinh vi, khó quan sát trực tiếp | Market maker HFT đăng ký chính thức tại CME, hành vi khá đồng nhất và có thể suy luận qua Level 2/footprint | Market maker là các quant fund/prop desk crypto-native; hành vi kém đồng nhất hơn, dễ bị thao túng bởi cá voi đơn lẻ trên coin vốn hóa nhỏ |
 | **Khuyến nghị thực chiến** | CE là "gợi ý", cho phép fill sâu; đòi LTF MSS nhiều hơn | CE gần như "luật" trong kill zone; ưu tiên Silver Bullet/FPFVG | Chỉ tin FVG trên BTC/ETH khung H4+; tránh trade FVG altcoin thanh khoản thấp bằng size lớn |
 
@@ -838,7 +838,7 @@ FVG là PD array bị phản biện nhiều nhất trong toàn bộ hệ ICT —
 
 **Diễn biến & execution:** 10:22 NY, giá retrace về đúng CE 18,260. M1 xuất hiện tín hiệu MSS nhỏ giả (phá một swing rất nhỏ không ý nghĩa). Entry Long tại 18,261. Stop dưới low FVG, tại 18,251 (10 point risk = 200 USD/contract). Target: BSL 18,510.
 
-11:05 NY, một chuỗi 3 nến M5 nhỏ dần (grind, không phải fast tap — xem mục W2 trong War Stories) gặm dần qua FVG, cuối cùng đóng nến M5 tại 18,247 — xuyên qua toàn bộ vùng FVG. Stop bị chạm tại 18,251 trước khi nến đóng hẳn. Vùng FVG cũ ngay sau đó đảo cực thành bearish IFVG (xem [[17 - Inverse Fair Value Gap - iFVG]]) và giá tiếp tục giảm về 18,190.
+11:05 NY, một chuỗi 3 nến M5 nhỏ dần (grind, không phải fast tap — xem mục W2 trong War Stories) gặm dần qua FVG, cuối cùng đóng nến M5 tại 18,247 — xuyên qua toàn bộ vùng FVG. Stop bị chạm tại 18,251 trước khi nến đóng hẳn. Vùng FVG cũ ngay sau đó đảo cực thành bearish IFVG (xem [[17-Inverse-Fair-Value-Gap-iFVG]]) và giá tiếp tục giảm về 18,190.
 
 **Kết quả bằng số:** lỗ **-1R** (200 USD/contract), đúng theo kế hoạch risk nhưng là một trong những lệnh "đau" nhất vì mọi tiêu chí checklist đều đạt.
 

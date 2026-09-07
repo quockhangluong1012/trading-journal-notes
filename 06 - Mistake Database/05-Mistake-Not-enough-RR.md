@@ -30,7 +30,7 @@ updated: 2026-08-02
 1. **RR kế hoạch thấp ngay từ đầu** — TP được đặt theo một số pip "cảm thấy hợp lý" hoặc theo tỷ lệ RR tối thiểu formal (ví dụ 1:1) mà không kiểm tra xem tại đó có thật sự tồn tại một mức liquidity nào không.
 2. **RR trên giấy bị "làm đẹp"** — SL bị nới rộng ra để tránh bị quét (làm risk lớn hơn giá trị thật của setup), hoặc TP bị kéo lại gần vì sợ giá quay đầu (chốt non), khiến RR thực hiện được thấp hơn nhiều so với RR đã lên kế hoạch.
 
-Cả hai biến thể đều vi phạm nguyên tắc cốt lõi của ICT 2022 Model: entry chỉ có giá trị khi có một **draw on liquidity** rõ ràng, đủ xa, và không bị chặn để biện minh cho risk đã bỏ ra. Xem [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]].
+Cả hai biến thể đều vi phạm nguyên tắc cốt lõi của ICT 2022 Model: entry chỉ có giá trị khi có một **draw on liquidity** rõ ràng, đủ xa, và không bị chặn để biện minh cho risk đã bỏ ra. Xem [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]].
 
 - Tôi đặt TP theo một số pip cố định (ví dụ luôn luôn 20 pips) thay vì tại một mức liquidity cụ thể.
 - Tôi không thể trả lời câu hỏi "TP này đang nhắm vào pool thanh khoản nào?".
@@ -112,7 +112,7 @@ Entry tại POI (FVG/OB) hình thành ngay sau sweep + displacement + MSS, SL đ
 ![[LowRR-Example-Correct.svg|760]]
 *Sơ đồ: entry tại POI với SL structural chặt, TP1 internal liquidity ≥2R, TP2 external draw ≈4R, runway sạch suốt đường đi.*
 
-**Vì sao đúng:** SL chặt vì đặt tại cấu trúc thật (ngay sau sweep), không phải vì "hy vọng giá không quay lại". Cả hai target đều là liquidity thật, có thể gọi tên cụ thể, và không có gì cản đường — nên RR đo được (≥1:2 tới TP1) là RR **khả dụng thật**, không phải RR lý thuyết trên giấy. Đây chính là kiểu setup mà kỷ luật chờ đợi (xem [[02 - Mistake - Enter before liquidity sweep]]) được đền đáp bằng một khoảng reward xứng đáng.
+**Vì sao đúng:** SL chặt vì đặt tại cấu trúc thật (ngay sau sweep), không phải vì "hy vọng giá không quay lại". Cả hai target đều là liquidity thật, có thể gọi tên cụ thể, và không có gì cản đường — nên RR đo được (≥1:2 tới TP1) là RR **khả dụng thật**, không phải RR lý thuyết trên giấy. Đây chính là kiểu setup mà kỷ luật chờ đợi (xem [[02-Mistake-Enter-before-liquidity-sweep]]) được đền đáp bằng một khoảng reward xứng đáng.
 
 ### ❌ Sai
 
@@ -132,7 +132,7 @@ Chase entry giữa sóng sau khi displacement đã chạy xong (không phải t�
 
 ### 5.1. Đo RR tới draw on liquidity thật, không phải tới pip tùy ý
 
-RR chỉ có ý nghĩa khi mẫu số (risk) và tử số (reward) đều được neo vào cấu trúc thị trường thật. Risk neo vào SL structural (sau sweep/OB/MSS — xem mục 5.3). Reward phải neo vào một **draw on liquidity** cụ thể: internal range liquidity (EQH/EQL, FVG chưa lấp) hoặc external range liquidity (old H/L, session H/L, PDH/PDL). Xem [[16 - Internal & External Range Liquidity (IRL & ERL)]] và [[19 - Liquidity]]. Nếu không thể chỉ ra chính xác pool nào đang được nhắm tới, con số RR trên màn hình chỉ là ảo giác của sự chuẩn bị — nó không phản ánh gì về khả năng giá thật sự di chuyển tới đó.
+RR chỉ có ý nghĩa khi mẫu số (risk) và tử số (reward) đều được neo vào cấu trúc thị trường thật. Risk neo vào SL structural (sau sweep/OB/MSS — xem mục 5.3). Reward phải neo vào một **draw on liquidity** cụ thể: internal range liquidity (EQH/EQL, FVG chưa lấp) hoặc external range liquidity (old H/L, session H/L, PDH/PDL). Xem [[16-Internal-External-Range-Liquidity-IRL-ERL]] và [[19-Liquidity]]. Nếu không thể chỉ ra chính xác pool nào đang được nhắm tới, con số RR trên màn hình chỉ là ảo giác của sự chuẩn bị — nó không phản ánh gì về khả năng giá thật sự di chuyển tới đó.
 
 ### 5.2. Runway check — có gì cản đường giữa entry và target?
 
@@ -151,7 +151,7 @@ Có hai triết lý đặt SL:
 - **Structural stop:** đặt ngay sau điểm cấu trúc quan trọng nhất (sau sweep, ngoài OB, ngoài điểm MSS) — khoảng cách do thị trường quyết định, không phải do trader "cảm thấy an toàn".
 - **Volatility-based stop:** đặt theo một hệ số của ATR hoặc một khoảng cách cố định — thường xa hơn cần thiết vì không tận dụng được cấu trúc.
 
-Structural stop luôn cho RR tốt hơn với cùng một target, vì risk (mẫu số) nhỏ hơn. Công cụ để tối ưu structural stop mà **không đánh đổi win rate**: dùng **CE (Consequent Encroachment)** — xem [[10 - Consequent Encroachment (Mean Threshold)]] — để refine entry vào đúng điểm giữa của OB/FVG thay vì mép ngoài, và dùng **OTE (Optimal Trade Entry)** — xem [[26 - OTE - Optimal Trade Entry]] — kết hợp với [[27 - Premium Discount]] để đảm bảo entry nằm sâu trong vùng discount/premium hợp lệ. Cả hai kỹ thuật này giúp SL chặt hơn mà không cần đợi thêm confirmation (tức không hy sinh xác suất vào lệnh) — đây là cách "tăng RR mà không giảm win rate" đúng nghĩa, khác với việc chỉ đơn giản nới TP xa hơn.
+Structural stop luôn cho RR tốt hơn với cùng một target, vì risk (mẫu số) nhỏ hơn. Công cụ để tối ưu structural stop mà **không đánh đổi win rate**: dùng **CE (Consequent Encroachment)** — xem [[10-Consequent-Encroachment-Mean-Threshold]] — để refine entry vào đúng điểm giữa của OB/FVG thay vì mép ngoài, và dùng **OTE (Optimal Trade Entry)** — xem [[26-OTE-Optimal-Trade-Entry]] — kết hợp với [[27-Premium-Discount]] để đảm bảo entry nằm sâu trong vùng discount/premium hợp lệ. Cả hai kỹ thuật này giúp SL chặt hơn mà không cần đợi thêm confirmation (tức không hy sinh xác suất vào lệnh) — đây là cách "tăng RR mà không giảm win rate" đúng nghĩa, khác với việc chỉ đơn giản nới TP xa hơn.
 
 ### 5.4. Fixed TP vs partials + runner — tác động tới expectancy và tính nhất quán prop firm
 
@@ -173,7 +173,7 @@ Nói cách khác, kỷ luật RR và kỷ luật entry timing củng cố lẫn 
 
 ### 5.6. Vì sao entry trễ là kẻ giết RR số một
 
-Entry trễ (sau khi displacement đã chạy, "đuổi theo giá") tạo ra tác động kép luôn làm RR xấu đi: (1) SL phải xa hơn vì không còn cấu trúc gần (sweep/OB) để dựa vào, buộc dùng volatility-based stop; (2) reward còn lại ngắn hơn vì một phần con sóng đã "delivered" trước khi vào lệnh. Đây là lý do việc chờ entry đúng tại POI — thay vì đuổi theo phản ứng giá — không chỉ là vấn đề xác suất (win rate) như đã phân tích ở [[02 - Mistake - Enter before liquidity sweep]], mà còn trực tiếp quyết định RR có đạt ngưỡng tối thiểu hay không.
+Entry trễ (sau khi displacement đã chạy, "đuổi theo giá") tạo ra tác động kép luôn làm RR xấu đi: (1) SL phải xa hơn vì không còn cấu trúc gần (sweep/OB) để dựa vào, buộc dùng volatility-based stop; (2) reward còn lại ngắn hơn vì một phần con sóng đã "delivered" trước khi vào lệnh. Đây là lý do việc chờ entry đúng tại POI — thay vì đuổi theo phản ứng giá — không chỉ là vấn đề xác suất (win rate) như đã phân tích ở [[02-Mistake-Enter-before-liquidity-sweep]], mà còn trực tiếp quyết định RR có đạt ngưỡng tối thiểu hay không.
 
 ---
 
@@ -318,7 +318,7 @@ Câu hỏi cốt lõi: **vì sao thị trường trừng phạt RR thấp một 
 > [!danger] Đọc bảng này thế nào
 > Chỉ cần **50% lệnh** rơi vào RR dưới chuẩn, expectancy tháng giảm **44%** dù WR không đổi. Ở 100% (toàn bộ lệnh RR thấp), hệ thống gần như chỉ hòa vốn nhẹ — đây là minh chứng rằng RR là biến số **độc lập và mạnh không kém win rate** trong việc quyết định sống-chết của hệ thống, đúng như logic mục 3 note gốc nhưng lượng hóa cụ thể hơn theo % lệnh vi phạm.
 
-**Chi phí kép khi RR thấp đi kèm mistake khác:** nếu một lệnh RR thấp cũng là kết quả của entry trễ (FOMO — [[04 - Mistake - FOMO Entry]]), thiệt hại kép xảy ra theo hai lớp: (1) SL đã bị nới rộng do thiếu cấu trúc gần (risk thực >0.5% nếu size không giảm), (2) reward còn lại ngắn hơn do displacement đã "delivered" một phần — tức RR bị bóp từ CẢ hai đầu cùng lúc (mục 5.6 note gốc), không phải chỉ một đầu. Minh họa bằng số: risk kế hoạch 0.5% ở SL 15 pip; nếu FOMO đẩy SL lên 25 pip mà size giữ nguyên, risk thực ~0.83%, đồng thời reward khả dụng co lại từ 30 pip (RR2.0) xuống 12 pip (RR0.48) vì phần sóng đã chạy — tổn thất kỳ vọng gấp nhiều lần một lệnh RR thấp đơn thuần.
+**Chi phí kép khi RR thấp đi kèm mistake khác:** nếu một lệnh RR thấp cũng là kết quả của entry trễ (FOMO — [[04-Mistake-FOMO-Entry]]), thiệt hại kép xảy ra theo hai lớp: (1) SL đã bị nới rộng do thiếu cấu trúc gần (risk thực >0.5% nếu size không giảm), (2) reward còn lại ngắn hơn do displacement đã "delivered" một phần — tức RR bị bóp từ CẢ hai đầu cùng lúc (mục 5.6 note gốc), không phải chỉ một đầu. Minh họa bằng số: risk kế hoạch 0.5% ở SL 15 pip; nếu FOMO đẩy SL lên 25 pip mà size giữ nguyên, risk thực ~0.83%, đồng thời reward khả dụng co lại từ 30 pip (RR2.0) xuống 12 pip (RR0.48) vì phần sóng đã chạy — tổn thất kỳ vọng gấp nhiều lần một lệnh RR thấp đơn thuần.
 
 ### 11.4. Taxonomy các biến thể con
 
@@ -332,11 +332,11 @@ Câu hỏi cốt lõi: **vì sao thị trường trừng phạt RR thấp một 
 
 | Mistake kết hợp | Cơ chế khuếch đại lẫn nhau | Mức nguy hiểm tổ hợp |
 |---|---|---|
-| [[04 - Mistake - FOMO Entry]] | Entry trễ luôn bóp RR từ cả hai đầu (SL xa hơn + reward ngắn hơn — mục 5.6 note gốc) — đây là tổ hợp phổ biến nhất và nguy hiểm nhất vì hai lỗi cùng xảy ra trên một lệnh do cùng một nguyên nhân gốc (thiếu gate timing). | **Rất cao** — cơ chế nhân, không cộng. |
-| [[07 - Mistake - Risk more than 0.5% total account]] | Nếu SL bị nới rộng để "làm đẹp" RR theo cách sai (kéo TP xa hơn thực tế thay vì SL chặt), và size không giảm tương ứng, risk% thực vượt 0.5% ngay trên chính lệnh RR thấp. | **Cao** — hai lỗi có thể xảy ra độc lập nhưng cộng hưởng khi cùng lệnh. |
-| [[02 - Mistake - Enter before liquidity sweep]] | Vào trước sweep nghĩa là chưa có xác nhận cấu trúc — SL buộc phải đặt rộng hơn "phòng hờ" vì chưa biết chính xác điểm cấu trúc bảo vệ, làm giảm RR ngay từ khâu lập kế hoạch. | **Trung bình-cao** — cùng làm suy yếu chất lượng SL structural. |
-| [[06 - Mistake - Not Have Market Structure Shift]] | Không có MSS nghĩa là không có mốc cấu trúc mới để neo SL (mục 3.4 note 06) — SL bị đặt cảm tính, thường xa hơn cần thiết, trực tiếp làm RR xấu đi mà không cần bất kỳ lỗi timing nào khác. | **Rất cao** — SL sai logic là nguyên nhân trực tiếp của RR thấp, không phải tương tác gián tiếp. |
-| [[09 - Mistake - Wrong daily bias]] | Nếu bias sai, target (draw on liquidity) được chọn theo hướng sai ngay từ đầu — RR "trông ổn" nhưng đang đo tới một pool không thực sự là target hợp lệ của phe đang thắng, khiến cả entry và RR đều dựa trên nền tảng sai. | **Cao** — sai ở tầng nền tảng khiến việc đo RR đúng kỹ thuật cũng vô nghĩa. |
+| [[04-Mistake-FOMO-Entry]] | Entry trễ luôn bóp RR từ cả hai đầu (SL xa hơn + reward ngắn hơn — mục 5.6 note gốc) — đây là tổ hợp phổ biến nhất và nguy hiểm nhất vì hai lỗi cùng xảy ra trên một lệnh do cùng một nguyên nhân gốc (thiếu gate timing). | **Rất cao** — cơ chế nhân, không cộng. |
+| [[07-Mistake-Risk-more-than-0.5-total-account]] | Nếu SL bị nới rộng để "làm đẹp" RR theo cách sai (kéo TP xa hơn thực tế thay vì SL chặt), và size không giảm tương ứng, risk% thực vượt 0.5% ngay trên chính lệnh RR thấp. | **Cao** — hai lỗi có thể xảy ra độc lập nhưng cộng hưởng khi cùng lệnh. |
+| [[02-Mistake-Enter-before-liquidity-sweep]] | Vào trước sweep nghĩa là chưa có xác nhận cấu trúc — SL buộc phải đặt rộng hơn "phòng hờ" vì chưa biết chính xác điểm cấu trúc bảo vệ, làm giảm RR ngay từ khâu lập kế hoạch. | **Trung bình-cao** — cùng làm suy yếu chất lượng SL structural. |
+| [[06-Mistake-Not-Have-Market-Structure-Shift]] | Không có MSS nghĩa là không có mốc cấu trúc mới để neo SL (mục 3.4 note 06) — SL bị đặt cảm tính, thường xa hơn cần thiết, trực tiếp làm RR xấu đi mà không cần bất kỳ lỗi timing nào khác. | **Rất cao** — SL sai logic là nguyên nhân trực tiếp của RR thấp, không phải tương tác gián tiếp. |
+| [[09-Mistake-Wrong-daily-bias]] | Nếu bias sai, target (draw on liquidity) được chọn theo hướng sai ngay từ đầu — RR "trông ổn" nhưng đang đo tới một pool không thực sự là target hợp lệ của phe đang thắng, khiến cả entry và RR đều dựa trên nền tảng sai. | **Cao** — sai ở tầng nền tảng khiến việc đo RR đúng kỹ thuật cũng vô nghĩa. |
 
 ---
 
@@ -574,6 +574,6 @@ Audit hành vi **đo lường và tuân thủ ngưỡng RR** tại thời điể
 
 ## 16. Liên kết
 
-**Concepts:** [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]] · [[19 - Liquidity]] · [[16 - Internal & External Range Liquidity (IRL & ERL)]] · [[26 - OTE - Optimal Trade Entry]] · [[27 - Premium Discount]] · [[10 - Consequent Encroachment (Mean Threshold)]]
+**Concepts:** [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]] · [[19-Liquidity]] · [[16-Internal-External-Range-Liquidity-IRL-ERL]] · [[26-OTE-Optimal-Trade-Entry]] · [[27-Premium-Discount]] · [[10-Consequent-Encroachment-Mean-Threshold]]
 
-**Mistakes liên quan:** [[07 - Mistake - Risk more than 0.5% total account]] · [[02 - Mistake - Enter before liquidity sweep]] · [[01 - Mistake - Emotional revenge trade]] · [[09 - Mistake - Wrong daily bias]]
+**Mistakes liên quan:** [[07-Mistake-Risk-more-than-0.5-total-account]] · [[02-Mistake-Enter-before-liquidity-sweep]] · [[01-Mistake-Emotional-revenge-trade]] · [[09-Mistake-Wrong-daily-bias]]

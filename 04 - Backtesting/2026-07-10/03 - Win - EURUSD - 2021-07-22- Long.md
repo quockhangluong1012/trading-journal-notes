@@ -345,7 +345,7 @@ Kỷ luật **data-integrity của file backtest** chưa chặt: metadata và m�
 ### 9.5. So sánh với lệnh khác cùng mẫu trong vault
 
 - **[[02 - Win - EURUSD - 2005-05-11 - Short]]** (07-09/01) — cùng đủ chuỗi 7 bước, cùng sweep named level, nhưng khác hướng và khác POI (BPR vs FVG đơn). Cả hai đều chứng minh: POI rank không quyết định outcome bằng kỷ luật thực thi đúng chuỗi.
-- **[[01 - Win - EURUSD - 2021-05-03 - Short]]** (07-10/01, Unicorn) — đối lập trực tiếp về POI rank (5/5 Unicorn vs 1/5 FVG đơn ở đây), cùng Win. Đây là cặp so sánh tốt nhất trong batch để kiểm định giả thuyết "POI rank cao hơn → chất lượng cao hơn": note này (rank 1) đạt RR khớp chính xác (2.818 tính lại vs 2.86 ghi, chênh <0.05R), trong khi note 07-10/01 (rank 5, Unicorn) có RR lệch lớn nhất batch (2.123 tính lại vs 3.075 ghi, chênh ~1R) — gợi ý (không kết luận, n=2) rằng độ phức tạp cấu trúc cao hơn không đồng nghĩa log chính xác hơn.
+- **[[01 - Win - EURUSD - 2021-05-03- Short]]** (07-10/01, Unicorn) — đối lập trực tiếp về POI rank (5/5 Unicorn vs 1/5 FVG đơn ở đây), cùng Win. Đây là cặp so sánh tốt nhất trong batch để kiểm định giả thuyết "POI rank cao hơn → chất lượng cao hơn": note này (rank 1) đạt RR khớp chính xác (2.818 tính lại vs 2.86 ghi, chênh <0.05R), trong khi note 07-10/01 (rank 5, Unicorn) có RR lệch lớn nhất batch (2.123 tính lại vs 3.075 ghi, chênh ~1R) — gợi ý (không kết luận, n=2) rằng độ phức tạp cấu trúc cao hơn không đồng nghĩa log chính xác hơn.
 - **[[03 - Loss- EURUSD - 2021-05-07- Short]]** (07-10/02) — đối lập rõ nhất: TP ở đây (07-10/03) tuy không neo named level nhưng SL không nằm trong đường đi tới pool chưa quét; TP+SL ở 07-10/02 đều có vấn đề định vị theo draw. Sự khác biệt về SL location (không phải TP) có thể là yếu tố phân biệt Win/Loss quan trọng hơn TP-precision.
 
 ---
@@ -466,8 +466,8 @@ Load-bearing claim C4 không bị phá — không tìm được mâu thuẫn hay
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI ladder: [[13 - FVG  - Fair Value Gap]]
-- Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[27 - Premium Discount]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[18 - Kill Zones]]
+- POI ladder: [[13-FVG-Fair-Value-Gap]]
+- Entry refine: [[10-Consequent-Encroachment-Mean-Threshold]] · [[27-Premium-Discount]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[18-Kill-Zones]]
 - Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]
-- Mistakes: [[12 - Mistake - Log Data Mismatch - Backtest]] (tham chiếu lỗi mâu thuẫn metadata đã tự phát hiện và sửa)
+- Mistakes: [[12-Mistake-Log-Data-Mismatch-Backtest]] (tham chiếu lỗi mâu thuẫn metadata đã tự phát hiện và sửa)

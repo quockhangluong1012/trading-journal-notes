@@ -1,0 +1,129 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="1200" height="860" fill="#fcfcfb"/>
+
+  <!-- ============ TITLE ============ -->
+  <text x="40" y="34" font-size="18" font-weight="700" fill="#0b0b0b">EURUSD D1 — Backtest 2005–2006 — Structure Map</text>
+  <text x="40" y="54" font-size="12.5" fill="#52514e">Panel A: toàn cảnh Mar 2005 → Jan 2006 (macro leg)   ·   Panel B: zoom vùng Nov 2005 → Jan 2006 (sweep → MSS → BOS)</text>
+
+  <!-- ============ PANEL A — MACRO ============ -->
+  <text x="40" y="86" font-size="13" font-weight="600" fill="#0b0b0b">Panel A — Macro leg (chưa tới scale)</text>
+
+  <!-- gridlines / price axis labels -->
+  <g font-size="11" fill="#898781">
+    <line x1="80" y1="43" x2="1120" y2="43" stroke="#e1e0d9" stroke-width="1"/>
+    <line x1="80" y1="184.9" x2="1120" y2="184.9" stroke="#e1e0d9" stroke-width="1"/>
+    <line x1="80" y1="261.2" x2="1120" y2="261.2" stroke="#e1e0d9" stroke-width="1"/>
+    <line x1="80" y1="334.2" x2="1120" y2="334.2" stroke="#e1e0d9" stroke-width="1"/>
+  </g>
+
+  <!-- price path (schematic, not to exact pixel scale) -->
+  <polyline points="140,43 260,152 340,233.6 420,296 560,184.9 620,230 700,300 760,334.2 860,300 980,268 1040,255"
+            fill="none" stroke="#0b0b0b" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- True DOL line -->
+  <line x1="80" y1="43" x2="1120" y2="43" stroke="#e34948" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="1000" y="34" font-size="12" fill="#e34948" font-weight="600" text-anchor="end">DOL thật (chưa quét): 1.34806 — 11/03/2005</text>
+
+  <!-- Target / D1 DLR High -->
+  <line x1="80" y1="184.9" x2="1120" y2="184.9" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="1000" y="176.5" font-size="12" fill="#2a78d6" font-weight="600" text-anchor="end">Target (D1 DLR High): 1.25942 — leg-start, chưa bị quét</text>
+
+  <!-- Equilibrium -->
+  <line x1="80" y1="261.2" x2="1120" y2="261.2" stroke="#898781" stroke-width="1.2" stroke-dasharray="3,3"/>
+  <text x="1000" y="253" font-size="11.5" fill="#52514e" text-anchor="end">Equilibrium D1 range: 1.21176 (giá hiện tại 1.20752 nằm ngay dưới, 45.6%)</text>
+
+  <!-- D1 DLR Low -->
+  <line x1="80" y1="334.2" x2="1120" y2="334.2" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="1000" y="349" font-size="12" fill="#2a78d6" font-weight="600" text-anchor="end">D1 DLR Low: 1.16410 — 17/11/2005 (leg-start của range)</text>
+
+  <!-- markers -->
+  <circle cx="140" cy="43" r="4" fill="#e34948"/>
+  <text x="146" y="30" font-size="10.5" fill="#52514e">Mar'05 high 1.34806 (untouched)</text>
+
+  <circle cx="560" cy="184.9" r="4" fill="#2a78d6"/>
+  <text x="568" y="172" font-size="10.5" fill="#52514e">Sep'05 peak = D1 DLR High 1.25942</text>
+
+  <circle cx="760" cy="334.2" r="4" fill="#2a78d6"/>
+  <text x="700" y="352" font-size="10.5" fill="#52514e">Nov'05 low = D1 DLR Low 1.16410</text>
+
+  <circle cx="980" cy="268" r="4" fill="#0b0b0b"/>
+  <text x="988" y="262" font-size="10.5" fill="#0b0b0b" font-weight="600">Giá hiện tại 1.20752</text>
+
+  <!-- panel A -> B connector -->
+  <rect x="740" y="300" width="240" height="60" fill="none" stroke="#c3c2b7" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="860" y="380" font-size="11" fill="#898781" text-anchor="middle">↓ zoom xuống Panel B ↓</text>
+
+  <!-- ============ PANEL B — ZOOM ============ -->
+  <text x="40" y="418" font-size="13" font-weight="600" fill="#0b0b0b">Panel B — Zoom: Sweep → MSS → BOS (Nov 2005 → Jan 2006)</text>
+
+  <!-- FVG/iFVG BPR shaded zone -->
+  <rect x="80" y="470" width="1040" height="90" fill="#2a78d6" opacity="0.08"/>
+  <text x="1110" y="465" font-size="10.5" fill="#2a78d6" text-anchor="end">Bullish FVG (4) 1.18672–1.20003, CE 1.19338 ⊕ Bearish iFVG 1.19141–1.19758, CE 1.19450 = BPR</text>
+
+  <!-- reference lines panel B -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#e1e0d9" stroke-width="1"/>
+  <line x1="80" y1="700" x2="1120" y2="700" stroke="#e1e0d9" stroke-width="1"/>
+
+  <!-- equal lows -->
+  <line x1="220" y1="700" x2="340" y2="700" stroke="#eda100" stroke-width="2"/>
+  <text x="230" y="716" font-size="10.5" fill="#7a5c00" font-weight="600">Relative Equal Lows: 22/11 (1.16858) + 28/11 (1.16812)</text>
+
+  <!-- candle glyphs (simplified schematic) -->
+  <g stroke="#0b0b0b" stroke-width="1.4">
+    <line x1="150" y1="640" x2="150" y2="700"/><rect x="145" y="655" width="10" height="30" fill="#0b0b0b"/>
+    <line x1="220" y1="660" x2="220" y2="705"/><rect x="215" y="670" width="10" height="25" fill="#1baf7a"/>
+    <line x1="280" y1="665" x2="280" y2="710"/><rect x="275" y="675" width="10" height="25" fill="#0b0b0b"/>
+    <line x1="340" y1="700" x2="340" y2="745"/><rect x="335" y="710" width="10" height="25" fill="#0b0b0b"/>
+  </g>
+  <text x="330" y="762" font-size="10.5" fill="#e34948" font-weight="600" text-anchor="middle">SSL sweep 02/12/2005 — Low 1.16608 (dưới cả 2 equal lows)</text>
+  <line x1="80" y1="745" x2="1120" y2="745" stroke="#e34948" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- MSS -->
+  <g stroke="#0b0b0b" stroke-width="1.4">
+    <line x1="420" y1="600" x2="420" y2="680"/><rect x="415" y="610" width="10" height="55" fill="#1baf7a"/>
+    <line x1="470" y1="590" x2="470" y2="650"/><rect x="465" y="600" width="10" height="35" fill="#1baf7a"/>
+  </g>
+  <line x1="380" y1="640" x2="520" y2="640" stroke="#0b0b0b" stroke-width="1.2"/>
+  <text x="450" y="628" font-size="11" fill="#0b0b0b" font-weight="700" text-anchor="middle">MSS</text>
+  <text x="450" y="580" font-size="10.5" fill="#52514e" text-anchor="middle">12/12/2005 — body close qua swing nội bộ đầu tiên</text>
+
+  <!-- intermediate high -->
+  <g stroke="#0b0b0b" stroke-width="1.4">
+    <line x1="560" y1="500" x2="560" y2="560"/><rect x="555" y="510" width="10" height="35" fill="#1baf7a"/>
+  </g>
+  <line x1="500" y1="500" x2="620" y2="500" stroke="#898781" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="565" y="494" font-size="10.5" fill="#52514e">"Intermediate-term high" 14/12/2005 — High 1.20615</text>
+
+  <!-- pullback -->
+  <g stroke="#0b0b0b" stroke-width="1.4">
+    <line x1="620" y1="560" x2="620" y2="610"/><rect x="615" y="570" width="10" height="30" fill="#0b0b0b"/>
+    <line x1="670" y1="570" x2="670" y2="620"/><rect x="665" y="580" width="10" height="30" fill="#0b0b0b"/>
+  </g>
+  <text x="645" y="640" font-size="10" fill="#898781" text-anchor="middle">pullback</text>
+
+  <!-- BOS -->
+  <g stroke="#0b0b0b" stroke-width="1.4">
+    <line x1="740" y1="420" x2="740" y2="560"/><rect x="735" y="430" width="10" height="110" fill="#1baf7a"/>
+  </g>
+  <line x1="700" y1="500" x2="800" y2="500" stroke="#0b0b0b" stroke-width="1.2"/>
+  <text x="750" y="410" font-size="11" fill="#0b0b0b" font-weight="700" text-anchor="middle">BOS</text>
+  <text x="750" y="396" font-size="10.5" fill="#52514e" text-anchor="middle">03/01/2006 — phá qua 1.20615, xác nhận tiếp diễn</text>
+
+  <!-- current price -->
+  <g stroke="#0b0b0b" stroke-width="1.4">
+    <line x1="800" y1="440" x2="800" y2="480"/><rect x="795" y="445" width="10" height="20" fill="#1baf7a"/>
+  </g>
+  <line x1="80" y1="450" x2="1120" y2="450" stroke="#0b0b0b" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="1030" y="440" width="90" height="20" fill="#0b0b0b"/>
+  <text x="1075" y="454" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">1.20752</text>
+
+  <!-- footer legend -->
+  <g font-size="11" fill="#52514e">
+    <rect x="80" y="800" width="14" height="14" fill="#1baf7a"/><text x="100" y="811">Nến tăng (bullish)</text>
+    <rect x="240" y="800" width="14" height="14" fill="#0b0b0b"/><text x="260" y="811">Nến giảm (bearish)</text>
+    <rect x="400" y="800" width="14" height="14" fill="#2a78d6" opacity="0.35"/><text x="420" y="811">BPR (FVG ⊕ iFVG)</text>
+    <line x1="560" x2="590" y1="807" y2="807" stroke="#e34948" stroke-width="1.5" stroke-dasharray="6,4"/><text x="596" y="811">DOL thật / mức chưa quét</text>
+    <line x1="820" x2="850" y1="807" y2="807" stroke="#2a78d6" stroke-width="1.5"/><text x="856" y="811">Dealing range boundary</text>
+  </g>
+  <text x="40" y="845" font-size="10.5" fill="#898781">Ghi chú: sơ đồ minh họa vị trí tương đối các mốc giá &amp; sự kiện cấu trúc — không vẽ đúng tỷ lệ pixel-per-pip của chart gốc.</text>
+</svg>

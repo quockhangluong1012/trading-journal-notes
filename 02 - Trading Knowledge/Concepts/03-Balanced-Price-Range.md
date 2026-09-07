@@ -60,13 +60,13 @@ Balanced Price Range (BPR) là vùng giao nhau (overlap) của **hai Fair Value 
 
 > Lưu ý: cùng một vùng overlap có thể đóng vai bullish hay bearish tùy **context bias + hướng giá tiếp cận**. BPR không tự quyết định hướng — narrative HTF quyết định.
 
-**CE của BPR:** giống FVG, mức **50% (Consequent Encroachment)** của vùng overlap là điểm phản ứng quan trọng nhất; entry tinh chỉnh thường quanh CE của BPR. Xem [[10 - Consequent Encroachment (Mean Threshold)]].
+**CE của BPR:** giống FVG, mức **50% (Consequent Encroachment)** của vùng overlap là điểm phản ứng quan trọng nhất; entry tinh chỉnh thường quanh CE của BPR. Xem [[10-Consequent-Encroachment-Mean-Threshold]].
 
 **Mục đích trong ICT:**  
 - Là **POI cao cấp** để vào lệnh — mạnh hơn một FVG đơn vì có "confluence kép" hai chiều.
 - Là **support/resistance** đáng tin khi giá quay lại.
 - Là vùng đặt **stop loss logic**: stop nằm ngoài đầu kia của BPR.
-- Là một dạng đặc biệt liên quan tới [[17 - Inverse Fair Value Gap - iFVG]]: BPR là nơi một FVG đã bị "đảo" và phối với FVG mới.
+- Là một dạng đặc biệt liên quan tới [[17-Inverse-Fair-Value-Gap-iFVG]]: BPR là nơi một FVG đã bị "đảo" và phối với FVG mới.
 
 **Vì sao khái niệm này quan trọng:**  
 BPR lọc bớt nhiễu của FVG. Thay vì trade mọi FVG, BPR cho bạn một vùng nơi **hai imbalance ngược chiều hội tụ** — xác suất phản ứng cao hơn. Nó đặc biệt hữu ích để xác định điểm đảo chiều chất lượng sau một liquidity sweep.
@@ -200,7 +200,7 @@ Hệ quả thực chiến: khi bạn thấy một iFVG, hãy kiểm tra xem leg 
 ![[BPR-Advanced-MTF-Refinement.svg|695]]
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
+- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
 - **HTF POI & draw:** có HTF FVG/OB nào mà giá đang bị hút về không? BPR có trùng nó không?
 - **Premium/Discount:** BPR cho Long phải ở discount; BPR cho Short phải ở premium của HTF dealing range.
 
@@ -276,7 +276,7 @@ Invalid: đóng nến xuyên thủng trên toàn bộ BPR → bỏ
 | Giá ĐÓNG NẾN xuyên thủng toàn bộ BPR | **Invalidation** | BPR hết hiệu lực; chuyển sang tìm POI/IFVG khác |
 
 > [!note]
-> Vì BPR đã có order flow hai chiều, một BPR bị xuyên thủng thường là tín hiệu order flow đã đổi mạnh — đừng cố giữ lệnh ngược. Khi đó hãy đọc lại theo [[17 - Inverse Fair Value Gap - iFVG]] và [[21 - Market Structure Shift]].
+> Vì BPR đã có order flow hai chiều, một BPR bị xuyên thủng thường là tín hiệu order flow đã đổi mạnh — đừng cố giữ lệnh ngược. Khi đó hãy đọc lại theo [[17-Inverse-Fair-Value-Gap-iFVG]] và [[21-Market-Structure-Shift]].
 
 ---
 
@@ -312,15 +312,15 @@ Trader thấy một bearish FVG ở trên và một bullish FVG ở dưới, g�
 
 Khái niệm này thường kết hợp với:
 - [[Fair Value Gap]]
-- [[17 - Inverse Fair Value Gap - iFVG]]
-- [[10 - Consequent Encroachment (Mean Threshold)]]
-- [[20 - Liquidity Sweep]]
-- [[21 - Market Structure Shift]]
+- [[17-Inverse-Fair-Value-Gap-iFVG]]
+- [[10-Consequent-Encroachment-Mean-Threshold]]
+- [[20-Liquidity-Sweep]]
+- [[21-Market-Structure-Shift]]
 - [[Order Block]]
 - [[Optimal Trade Entry]]
-- [[27 - Premium Discount]]
-- [[19 - Liquidity]]
-- [[12 - Daily Bias]]
+- [[27-Premium-Discount]]
+- [[19-Liquidity]]
+- [[12-Daily-Bias]]
 
 ### Sequence mẫu — Long với Bullish BPR
 ```text
@@ -545,8 +545,8 @@ Vault đã có một mẫu thật minh họa hoàn hảo cho đánh đổi này:
 
 Hai tình huống mà phép giao số học cho ra BPR nhưng cơ chế phía sau đã gãy một nửa:
 
-1. **FVG sinh từ opening gap (NQ/NDX cuối tuần, [[23 - New Day Opening Gap|NDOG]]/[[24 - New Week Opening Gap|NWOG]]):** gap mở cửa tạo "FVG" trên chart nhưng không có displacement nào tạo ra nó — không ai *đánh* giá qua vùng đó, giá chỉ *mở* ở nơi khác. Một overlap mà một nửa là gap kiểu này thiếu một trong hai lần cam kết vốn. Nó vẫn có thể hoạt động như mức tham chiếu rebalance (logic [[34 - Vacuum Block]]/NWOG), nhưng **không nên kỳ vọng nó phản ứng như BPR chuẩn** — người bảo vệ chỉ có ở một phía. Hạ cấp, đòi confluence bổ sung.
-2. **Một trong hai leg là nến news:** như đã phân tích ở note [[04 - Breaker Block]] mục 15.1 — body lớn trong news phản ánh thanh khoản *rút đi*, không phải lệnh lớn *đánh vào*. BPR mà leg thứ hai là spike CPI/NFP có "phía phủ nhận" không được xây bằng vị thế thật → khi retest, phía đó không có ai đỡ. Chờ acceptance sau tin rồi mới công nhận overlap.
+1. **FVG sinh từ opening gap (NQ/NDX cuối tuần, [[23-New-Day-Opening-Gap|NDOG]]/[[24-New-Week-Opening-Gap|NWOG]]):** gap mở cửa tạo "FVG" trên chart nhưng không có displacement nào tạo ra nó — không ai *đánh* giá qua vùng đó, giá chỉ *mở* ở nơi khác. Một overlap mà một nửa là gap kiểu này thiếu một trong hai lần cam kết vốn. Nó vẫn có thể hoạt động như mức tham chiếu rebalance (logic [[34-Vacuum-Block]]/NWOG), nhưng **không nên kỳ vọng nó phản ứng như BPR chuẩn** — người bảo vệ chỉ có ở một phía. Hạ cấp, đòi confluence bổ sung.
+2. **Một trong hai leg là nến news:** như đã phân tích ở note [[04-Breaker-Block]] mục 15.1 — body lớn trong news phản ánh thanh khoản *rút đi*, không phải lệnh lớn *đánh vào*. BPR mà leg thứ hai là spike CPI/NFP có "phía phủ nhận" không được xây bằng vị thế thật → khi retest, phía đó không có ai đỡ. Chờ acceptance sau tin rồi mới công nhận overlap.
 3. **Khác data feed, khác BPR:** trên cùng một thời điểm, chart futures (NQ) và chart CFD (NAS100) có thể cho FVG lệch nhau vài tick vì giờ đóng phiên/gap khác nhau — một overlap "mỏng vừa đủ" trên feed này có thể **không tồn tại** trên feed kia. Với overlap mỏng (cỡ ~1× spread như quy tắc mục 3), đây không còn là chi tiết vặt: hãy backtest và trade trên **cùng một feed**, và coi BPR mỏng chỉ hợp lệ khi nó sống sót trên cả hai cách vẽ.
 
 **Why chung cho cả ba:** BPR = hai lần cam kết vốn ngược chiều. Gap không phải cam kết (không ai đánh); news spike không phải cam kết (không ai kịp đánh); còn khác feed nghĩa là "cam kết" bạn nhìn thấy có thể chỉ là artifact của cách vẽ nến. Phép giao số học là điều kiện cần — nguồn gốc displacement thật của cả hai FVG mới là điều kiện đủ.
@@ -555,11 +555,11 @@ Hai tình huống mà phép giao số học cho ra BPR nhưng cơ chế phía sa
 
 Thứ Hai mở cửa NQ/XAUUSD thường gap so với đóng cửa thứ Sáu. Nếu đúng lúc đó H4 đang có một bullish FVG hình thành thứ Sáu chiều, và cú gap thứ Hai lùi giá xuống đúng dải giá đó tạo cảm giác một "bearish FVG mới" chồng lên — phép giao số học ra một BPR đẹp. Backtest nhiều tuần sẽ thấy loại "BPR" này phản ứng kém hẳn so với BPR sinh từ hai leg displacement thật trong giờ giao dịch liên tục.
 
-**Vì sao bẫy được cả trader có kinh nghiệm:** trên chart H4/D1, gap cuối tuần trông giống mọi cú displacement khác — cùng là một khoảng giá không có nến. Trader quen đọc BPR theo hình dạng sẽ tự động gọi tên nó mà quên hỏi "leg này có giao dịch liên tục hay là một cú nhảy giá do thị trường đóng cửa?" Corr thêm: nếu đối chiếu với [[24 - New Week Opening Gap]], vùng gap cuối tuần vốn đã có cách đọc riêng (NWOG rebalance) — nhét nó vào khung BPR là dùng nhầm công cụ.
+**Vì sao bẫy được cả trader có kinh nghiệm:** trên chart H4/D1, gap cuối tuần trông giống mọi cú displacement khác — cùng là một khoảng giá không có nến. Trader quen đọc BPR theo hình dạng sẽ tự động gọi tên nó mà quên hỏi "leg này có giao dịch liên tục hay là một cú nhảy giá do thị trường đóng cửa?" Corr thêm: nếu đối chiếu với [[24-New-Week-Opening-Gap]], vùng gap cuối tuần vốn đã có cách đọc riêng (NWOG rebalance) — nhét nó vào khung BPR là dùng nhầm công cụ.
 
 **Cách nhận diện sớm:** kiểm tra đúng giờ hình thành nến hai cạnh của "FVG" nghi vấn. Nếu nến ngay trước là đóng cửa thứ Sáu ~21:00–22:00 UTC (tuỳ broker) và nến ngay sau là mở cửa thứ Hai (21:00–22:00 UTC hoặc theo giờ Sydney/Tokyo mở trước), đó là gap phiên, không phải displacement liên tục.
 
-**Cách xử lý:** hạ cấp overlap này xuống mức "tham khảo NWOG rebalance", không dùng logic CE/entry chuẩn BPR. Nếu muốn trade, dùng khung [[24 - New Week Opening Gap]] hoặc chờ giá tạo thêm một cặp FVG thật trong phiên (London/NY) chồng lên đúng vùng đó — lúc đó mới là BPR hai lần cam kết thật.
+**Cách xử lý:** hạ cấp overlap này xuống mức "tham khảo NWOG rebalance", không dùng logic CE/entry chuẩn BPR. Nếu muốn trade, dùng khung [[24-New-Week-Opening-Gap]] hoặc chờ giá tạo thêm một cặp FVG thật trong phiên (London/NY) chồng lên đúng vùng đó — lúc đó mới là BPR hai lần cam kết thật.
 
 ### 15.5 Futures halt / limit-lock tạo "FVG giả" hai đầu phiên — BPR ảo trên CME session break
 
@@ -583,7 +583,7 @@ Khác với edge case 15.3 (một leg là news, một leg là chuẩn), có tìn
 
 ### 15.7 BPR bị xuyên thủng một phía — phân biệt "invalidation thật" với "wick outlier một nến"
 
-Quy tắc ở mục 5 nói "đóng nến xuyên thủng toàn bộ BPR = invalid". Thực chiến phức tạp hơn: có trường hợp giá đóng nến ngoài BPR ở MỘT phía (ví dụ giá Long tại bullish BPR, nến đóng dưới đáy BPR đúng 1 tick) rồi nến kế tiếp đóng trở lại bên trong ngay — về logic thô đây là "invalid", nhưng đối chiếu với hành vi sweep ở [[20 - Liquidity Sweep]] thì đây có thể là một cú quét thanh khoản dưới BPR (stop của các Long đã vào sớm) trước khi đảo đúng hướng ban đầu.
+Quy tắc ở mục 5 nói "đóng nến xuyên thủng toàn bộ BPR = invalid". Thực chiến phức tạp hơn: có trường hợp giá đóng nến ngoài BPR ở MỘT phía (ví dụ giá Long tại bullish BPR, nến đóng dưới đáy BPR đúng 1 tick) rồi nến kế tiếp đóng trở lại bên trong ngay — về logic thô đây là "invalid", nhưng đối chiếu với hành vi sweep ở [[20-Liquidity-Sweep]] thì đây có thể là một cú quét thanh khoản dưới BPR (stop của các Long đã vào sớm) trước khi đảo đúng hướng ban đầu.
 
 **Vì sao bẫy được cả trader có kinh nghiệm:** hai kịch bản — "invalidation thật, order flow đã đổi" (mục 5) và "sweep dưới BPR rồi tiếp diễn" — nhìn GIỐNG NHAU trên nến đóng đầu tiên. Trader cứng nhắc theo rule "1 nến đóng ngoài = out" sẽ thoát đúng lúc thị trường chỉ đang lấy thêm thanh khoản; trader không có rule rõ sẽ giữ lệnh qua một invalidation thật.
 

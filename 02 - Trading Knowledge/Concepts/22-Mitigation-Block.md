@@ -31,7 +31,7 @@ common_mistakes: []
 > **Mitigation Block là một order block hình thành từ một FAILURE SWING — giá KHÔNG quét được đỉnh/đáy cũ (swing point giữ vững, không có sweep), sau đó displacement + MSS xác nhận hướng mới; cụm nến ngược chiều cuối cùng trước nhịp đẩy trở thành POI để giá quay lại "giải tỏa" (mitigate) các lệnh kẹt từ nhịp thất bại trước.**
 
 > [!important] Nguyên tắc cốt lõi
-> **Điều phân biệt Mitigation Block với [[04 - Breaker Block]] là PHÉP THỬ SWEEP: Breaker BẮT BUỘC quét liquidity (phá đáy/đỉnh cũ) trước khi đảo chiều; Mitigation Block hình thành KHI KHÔNG có sweep — đỉnh/đáy cũ GIỮ VỮNG (higher low / lower high), giá không tạo được đáy/đỉnh mới, rồi MSS xác nhận hướng mới.**
+> **Điều phân biệt Mitigation Block với [[04-Breaker-Block]] là PHÉP THỬ SWEEP: Breaker BẮT BUỘC quét liquidity (phá đáy/đỉnh cũ) trước khi đảo chiều; Mitigation Block hình thành KHI KHÔNG có sweep — đỉnh/đáy cũ GIỮ VỮNG (higher low / lower high), giá không tạo được đáy/đỉnh mới, rồi MSS xác nhận hướng mới.**
 > Hỏi một câu để tách hai khái niệm: **"Swing point cũ đã bị PHÁ (sweep) hay vẫn GIỮ?"** — Bị phá → Breaker. Vẫn giữ → Mitigation Block.
 
 ---
@@ -54,8 +54,8 @@ Mitigation Block là một vùng order block sinh ra trong **bối cảnh failur
 **Cấu trúc Bearish Mitigation Block (để Short):** đối xứng — giá tạo **STH**, dip xuống **STL**, rồi rally lên nhưng **THẤT BẠI không phá lên trên STH cũ** (tạo lower high — **KHÔNG có sweep** BSL; đỉnh cũ giữ vững). Sau đó **displacement giảm** phá xuống dưới STL → **MSS bearish**. Cụm **nến tăng (up-close)** cuối cùng trước nhịp đẩy xuống trở thành **bearish mitigation block** (kháng cự) → **Short** khi retest; stop trên vùng MB / trên điểm cao nhất của failure swing; target sellside liquidity phía dưới.
 
 **Phân biệt cốt lõi — Mitigation Block vs Order Block vs Breaker Block:**
-- **[[25 - OB - Order Block|Order Block]]:** cụm nến ngược chiều cuối cùng TRƯỚC displacement trong một nhịp mới (chưa fail); entry theo hướng move ban đầu.
-- **[[04 - Breaker Block|Breaker Block]]:** OB ĐÃ fail; giá **đã quét liquidity** (phá đáy/đỉnh cũ) + displacement phá cấu trúc ngược; vùng đảo cực; entry theo hướng MỚI.
+- **[[25-OB-Order-Block|Order Block]]:** cụm nến ngược chiều cuối cùng TRƯỚC displacement trong một nhịp mới (chưa fail); entry theo hướng move ban đầu.
+- **[[04-Breaker-Block|Breaker Block]]:** OB ĐÃ fail; giá **đã quét liquidity** (phá đáy/đỉnh cũ) + displacement phá cấu trúc ngược; vùng đảo cực; entry theo hướng MỚI.
 - **Mitigation Block:** cùng vị trí ý tưởng với breaker (vùng đảo chiều), nhưng **KHÔNG có sweep** — đỉnh/đáy cũ GIỮ VỮNG (failure swing), rồi MSS xác nhận. Giá quay lại "giải tỏa" lệnh kẹt từ nhịp thất bại.
 
 ![[Mitigation-Advanced-vs-Breaker.svg|697]]
@@ -78,7 +78,7 @@ Mitigation Block giúp đọc các điểm đảo chiều **không kèm sweep** 
 ### Mitigation Block không phải là gì
 - **Không phải** Breaker — breaker có sweep, MB thì swing cũ giữ vững (không sweep). Phép thử sweep tách hai cái.
 - **Không phải** mọi Order Block — MB sinh từ ngữ cảnh failure swing + đảo hướng, không phải OB của một nhịp tiếp diễn thường.
-- **Không phải** tín hiệu độc lập — vẫn cần đúng [[12 - Daily Bias]] + [[27 - Premium Discount]] + MSS xác nhận + (lý tưởng) confluence FVG.
+- **Không phải** tín hiệu độc lập — vẫn cần đúng [[12-Daily-Bias]] + [[27-Premium-Discount]] + MSS xác nhận + (lý tưởng) confluence FVG.
 - **Không phải** lý do để bắt đỉnh/đáy khi chưa có MSS — failure swing chưa được MSS xác nhận thì chưa phải MB hợp lệ.
 
 ---
@@ -98,18 +98,18 @@ Mitigation Block giúp đọc các điểm đảo chiều **không kèm sweep** 
 > Mitigation Block mạnh nhất khi vùng MB **trùng một [[Fair Value Gap]]** của chính nhịp displacement đã tạo MSS. Lúc đó bạn có MB + FVG + (failure swing + MSS) trong cùng một vùng — confluence rất cao, dù không có sweep.
 
 ![[Mitigation-Advanced-Block-Family.svg|697]]
-*Họ Block dùng chung "nguyên liệu" (cụm nến ngược chiều + displacement) nhưng khác bối cảnh: [[25 - OB - Order Block|Order Block]] = nhịp tiếp diễn chưa fail; Mitigation Block = failure swing nhưng KHÔNG sweep; [[04 - Breaker Block|Breaker Block]] = failure swing CÓ sweep. Bảng dưới tóm tắt failure swing / sweep / hướng entry / SL logic của cả ba.*
+*Họ Block dùng chung "nguyên liệu" (cụm nến ngược chiều + displacement) nhưng khác bối cảnh: [[25-OB-Order-Block|Order Block]] = nhịp tiếp diễn chưa fail; Mitigation Block = failure swing nhưng KHÔNG sweep; [[04-Breaker-Block|Breaker Block]] = failure swing CÓ sweep. Bảng dưới tóm tắt failure swing / sweep / hướng entry / SL logic của cả ba.*
 
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Có **failure swing** rõ: higher low (bullish) / lower high (bearish) — swing cũ KHÔNG bị phá.
 - [ ] Có **displacement + MSS** xác nhận hướng mới rõ ràng.
-- [ ] MB đồng hướng [[12 - Daily Bias]] sau khi cấu trúc đã đổi/tiếp diễn.
-- [ ] Vùng MB nằm đúng **discount** (bullish MB) / **premium** (bearish MB) — xem [[27 - Premium Discount]].
+- [ ] MB đồng hướng [[12-Daily-Bias]] sau khi cấu trúc đã đổi/tiếp diễn.
+- [ ] Vùng MB nằm đúng **discount** (bullish MB) / **premium** (bearish MB) — xem [[27-Premium-Discount]].
 - [ ] MB trùng/đi kèm **FVG** của nhịp displacement.
 - [ ] Có target liquidity rõ ở phía hướng mới.
 
 ### Khi nào nên bỏ qua?
-- [ ] Thực ra có **sweep** đáy/đỉnh cũ → đó là [[04 - Breaker Block|Breaker]], dùng logic breaker, không phải MB.
+- [ ] Thực ra có **sweep** đáy/đỉnh cũ → đó là [[04-Breaker-Block|Breaker]], dùng logic breaker, không phải MB.
 - [ ] Không có **MSS** rõ — chỉ là pullback thường, chưa xác nhận hướng.
 - [ ] MB ngược bias mà cấu trúc HTF chưa thực sự đổi.
 - [ ] Vùng MB ở sai premium/discount cho hướng vào.
@@ -140,12 +140,12 @@ Mitigation Block giúp đọc các điểm đảo chiều **không kèm sweep** 
 - [ ] Xác định **failure swing** (higher low / lower high) — xác nhận swing cũ KHÔNG bị quét.
 - [ ] Có **displacement + MSS** phá cấu trúc theo hướng mới.
 - [ ] Xác định **cụm nến ngược chiều cuối cùng** (vùng MB) và mức invalidation.
-- [ ] Đặt trong bối cảnh [[12 - Daily Bias]] / [[27 - Premium Discount]].
+- [ ] Đặt trong bối cảnh [[12-Daily-Bias]] / [[27-Premium-Discount]].
 
 ### Điều kiện tăng xác suất (nice-to-have)
 - [ ] MB trùng **FVG** của nhịp displacement.
 - [ ] MB đúng premium/discount cho hướng vào.
-- [ ] Đồng hướng [[12 - Daily Bias]] sau khi cấu trúc đã đổi.
+- [ ] Đồng hướng [[12-Daily-Bias]] sau khi cấu trúc đã đổi.
 - [ ] HTF MB (D1/H4) làm khung lớn, LTF refine entry.
 - [ ] Có target liquidity rõ; R:R đạt kế hoạch.
 
@@ -166,7 +166,7 @@ Mitigation Block giúp đọc các điểm đảo chiều **không kèm sweep** 
 > 4. **Stop (ngoài extreme của failure swing) và target liquidity ở đâu, R:R bao nhiêu?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại / đang đổi:** MB thường xuất hiện tại điểm cấu trúc HTF chuyển hướng hoặc tiếp diễn sau failure swing (xem [[12 - Daily Bias]]).
+- **Bias hiện tại / đang đổi:** MB thường xuất hiện tại điểm cấu trúc HTF chuyển hướng hoặc tiếp diễn sau failure swing (xem [[12-Daily-Bias]]).
 - **Liquidity HTF:** pool nào CHƯA bị quét (vì MB không có sweep); pool nào là target hướng mới.
 - **Vị trí premium/discount:** bullish MB cần ở discount; bearish MB cần ở premium.
 
@@ -208,7 +208,7 @@ Mitigation Block giúp đọc các điểm đảo chiều **không kèm sweep** 
 ```
 
 > [!warning]
-> **Mitigation Block không phải lý do để bắt đỉnh/đáy sớm.** Nó chỉ hợp lệ SAU khi failure swing + MSS đã xảy ra. Nếu thực ra có sweep, đừng gọi MB — đó là [[04 - Breaker Block|Breaker]], và SL logic khác (ngoài điểm sweep).
+> **Mitigation Block không phải lý do để bắt đỉnh/đáy sớm.** Nó chỉ hợp lệ SAU khi failure swing + MSS đã xảy ra. Nếu thực ra có sweep, đừng gọi MB — đó là [[04-Breaker-Block|Breaker]], và SL logic khác (ngoài điểm sweep).
 
 ---
 
@@ -240,7 +240,7 @@ Mitigation Block giúp đọc các điểm đảo chiều **không kèm sweep** 
 | "MB/Breaker" không có MSS, giá xuyên qua | **Không phải POI** | Bỏ; đó là pullback / level thường |
 
 > [!note]
-> Mitigation Block và **[[04 - Breaker Block|Breaker Block]]** rất giống nhau về vị trí và vai trò — khác biệt nằm ở **một phép thử duy nhất: có sweep hay không**. Breaker = swing cũ bị phá (sweep) rồi đảo cực. MB = swing cũ giữ vững (failure to make new low/high) rồi MSS. Đừng dùng chung; SL logic khác nhau.
+> Mitigation Block và **[[04-Breaker-Block|Breaker Block]]** rất giống nhau về vị trí và vai trò — khác biệt nằm ở **một phép thử duy nhất: có sweep hay không**. Breaker = swing cũ bị phá (sweep) rồi đảo cực. MB = swing cũ giữ vững (failure to make new low/high) rồi MSS. Đừng dùng chung; SL logic khác nhau.
 
 ### Nâng cao — Phép thử sweep chi tiết: khi nào một "higher low" thực ra là một sweep vi mô
 
@@ -248,7 +248,7 @@ Phép thử sweep nghe đơn giản ("đáy cũ giữ hay bị phá?") nhưng tr
 
 Ba câu hỏi để tách "higher low thật" khỏi "sweep trá hình":
 
-1. **Wick hay body xuyên đáy cũ?** Nếu chỉ có wick xuyên nhẹ rồi đóng nến TRÊN đáy cũ → đó vẫn là *raid/sweep* (đã lấy thanh khoản dưới đáy) → hành xử như [[04 - Breaker Block|Breaker]], stop dưới đáy wick, không phải MB. Nếu cả nến (kể cả wick) **không chạm** đáy cũ và tạo đáy cao hơn hẳn → higher low thật → MB hợp lệ.
+1. **Wick hay body xuyên đáy cũ?** Nếu chỉ có wick xuyên nhẹ rồi đóng nến TRÊN đáy cũ → đó vẫn là *raid/sweep* (đã lấy thanh khoản dưới đáy) → hành xử như [[04-Breaker-Block|Breaker]], stop dưới đáy wick, không phải MB. Nếu cả nến (kể cả wick) **không chạm** đáy cũ và tạo đáy cao hơn hẳn → higher low thật → MB hợp lệ.
 2. **Có cụm stop rõ dưới đáy cũ không?** Nếu đáy cũ là equal lows / một đáy được nhiều người theo dõi, khả năng cao thị trường sẽ raid nó — một "higher low" ngay sát trên đó thường chỉ là bẫy trước khi sweep thật. Đợi thêm.
 3. **Khoảng cách higher low tới đáy cũ có "đủ sạch" không?** Higher low cách đáy cũ một biên độ rõ (không dính sát vài tick) là dấu hiệu failure swing thật; higher low dính sát mép đáy cũ dễ bị nhịp sau quét nốt.
 
@@ -375,7 +375,7 @@ HTF Bias Bearish + Location Premium
 > Mitigation Block chỉ là POI sau khi failure swing + MSS đã rõ. Không đủ mục A + B → **không có lệnh**.
 
 ### A. Context (HTF)
-- [ ] [[12 - Daily Bias]] đã rõ / vừa chuyển hướng: `Bullish / Bearish`.
+- [ ] [[12-Daily-Bias]] đã rõ / vừa chuyển hướng: `Bullish / Bearish`.
 - [ ] Đã có **failure swing**: higher low (bullish) / lower high (bearish) — xác nhận swing cũ KHÔNG bị sweep.
 - [ ] Đã có **displacement + MSS** phá cấu trúc theo hướng mới.
 - [ ] Vùng MB đúng discount (bullish) / premium (bearish).
@@ -469,7 +469,7 @@ HTF Bias Bearish + Location Premium
 
 ### Bài học chính
 - MB = order block sinh từ **failure swing** (swing cũ giữ vững, KHÔNG sweep) + MSS xác nhận.
-- **Phép thử sweep** là dao mổ tách MB khỏi [[04 - Breaker Block|Breaker]]: phá = breaker, giữ = MB.
+- **Phép thử sweep** là dao mổ tách MB khỏi [[04-Breaker-Block|Breaker]]: phá = breaker, giữ = MB.
 - MB cho entry theo **hướng mới**, mạnh nhất khi trùng **FVG** + đúng **premium/discount** + đồng hướng bias.
 - Stop nằm ngoài **extreme của failure swing**; target là liquidity phía hướng mới.
 - Đừng gọi mọi OB là "mitigation block".
@@ -514,13 +514,13 @@ HTF Bias Bearish + Location Premium
 > [!success] Nguyên tắc vàng
 > **"Breaker quét rồi đảo; Mitigation giữ rồi đảo."** Trước khi đặt tên cho một vùng đảo chiều, chạy đúng MỘT phép thử: đáy/đỉnh swing cũ đã bị PHÁ (sweep) hay vẫn GIỮ (higher low / lower high)? Câu trả lời quyết định cả tên gọi lẫn vị trí stop — và đó là nơi phần lớn lệnh thua "đúng hướng nhưng sai stop" được sinh ra.
 
-1. **Luôn chạy phép thử sweep TRƯỚC khi gắn nhãn.** Đừng gọi một vùng là "mitigation" chỉ vì thấy đảo chiều + retest. Kéo mức đáy/đỉnh swing cũ ra và hỏi: giá có đóng/wick xuyên qua nó không? Nếu có sweep → đây là [[04 - Breaker Block|Breaker]] (stop dưới điểm sweep); nếu swing giữ vững → mới là MB (stop dưới higher low / trên lower high). Ghi trường `sweep_test: held|swept` vào journal cho mỗi lệnh để sau này lọc thống kê.
+1. **Luôn chạy phép thử sweep TRƯỚC khi gắn nhãn.** Đừng gọi một vùng là "mitigation" chỉ vì thấy đảo chiều + retest. Kéo mức đáy/đỉnh swing cũ ra và hỏi: giá có đóng/wick xuyên qua nó không? Nếu có sweep → đây là [[04-Breaker-Block|Breaker]] (stop dưới điểm sweep); nếu swing giữ vững → mới là MB (stop dưới higher low / trên lower high). Ghi trường `sweep_test: held|swept` vào journal cho mỗi lệnh để sau này lọc thống kê.
 
 2. **Chỉ tin MB sau khi displacement + MSS xác nhận, không phải khi vừa thấy failure swing.** Một higher low đơn thuần chỉ là pullback; nó chỉ trở thành nền của MB khi có một nhịp displacement phá STH/STL kèm MSS. Vào lệnh tại failure swing khi chưa có MSS là bắt dao rơi — phần lớn các lệnh MB thua trong journal sẽ rơi vào nhóm "chưa có MSS".
 
 3. **Phân biệt failure swing thật với sweep vi mô (micro-sweep).** Một "higher low" trên khung lớn đôi khi thực chất đã quét một micro liquidity pool trên khung nhỏ hơn. Soi M1/M5 để xác nhận đáy cũ thực sự GIỮ chứ không bị wick lấy thanh khoản. Nếu có micro-sweep, hãy đọc setup theo logic breaker và dời stop ra ngoài điểm micro-sweep để tránh bị quét.
 
-4. **Ưu tiên MB trùng FVG của chính nhịp displacement.** Confluence mạnh nhất là khi vùng MB (cụm nến ngược chiều cuối) chồng lên FVG do nhịp phá cấu trúc để lại. Lúc đó bạn có failure swing + MSS + FVG trong một vùng — entry refine quanh CE/[[26 - OTE - Optimal Trade Entry|OTE]] cho R:R tốt hơn nhiều so với vào cả vùng MB rộng.
+4. **Ưu tiên MB trùng FVG của chính nhịp displacement.** Confluence mạnh nhất là khi vùng MB (cụm nến ngược chiều cuối) chồng lên FVG do nhịp phá cấu trúc để lại. Lúc đó bạn có failure swing + MSS + FVG trong một vùng — entry refine quanh CE/[[26-OTE-Optimal-Trade-Entry|OTE]] cho R:R tốt hơn nhiều so với vào cả vùng MB rộng.
 
 5. **Đặt stop theo extreme của failure swing, không theo mép MB.** Đây là khác biệt SL cốt lõi so với breaker. Với bullish MB, stop nằm dưới higher low (extreme của failure swing), không phải sát mép dưới vùng MB. Stop sát mép MB là lỗi kinh điển khiến lệnh bị quét bởi nhiễu trước khi giá đi đúng hướng.
 
@@ -568,9 +568,9 @@ HTF Bias Bearish + Location Premium
 
 **Tình huống:** nhịp giảm tạo higher low (MB) đồng thời để lại một FVG ngay trong nhịp giảm đó (do displacement đủ mạnh) — MB và FVG chồng lấp một phần.
 
-**Vì sao bẫy được cả trader có kinh nghiệm:** giống edge case tương tự ở Order Block ([[25 - OB - Order Block]] mục 14.4), nhiều trader gộp toàn bộ vùng MB và FVG thành một "vùng entry" rộng, làm loãng độ chính xác và kéo R:R xuống thấp không cần thiết.
+**Vì sao bẫy được cả trader có kinh nghiệm:** giống edge case tương tự ở Order Block ([[25-OB-Order-Block]] mục 14.4), nhiều trader gộp toàn bộ vùng MB và FVG thành một "vùng entry" rộng, làm loãng độ chính xác và kéo R:R xuống thấp không cần thiết.
 
-**Cách nhận diện sớm:** xác định rõ biên MB (dựa trên nến higher low) và biên FVG (dựa trên 3-nến-gap) riêng biệt trước, sau đó tìm phần giao (intersection) — đây là vùng entry tối ưu (tương tự nguyên tắc Unicorn ở Breaker, [[04 - Breaker Block]]).
+**Cách nhận diện sớm:** xác định rõ biên MB (dựa trên nến higher low) và biên FVG (dựa trên 3-nến-gap) riêng biệt trước, sau đó tìm phần giao (intersection) — đây là vùng entry tối ưu (tương tự nguyên tắc Unicorn ở Breaker, [[04-Breaker-Block]]).
 
 **Cách xử lý:** nếu MB ∩ FVG là một vùng hẹp và nằm trong phần MB (không lệch hẳn ra ngoài), đây là entry mạnh — CE (điểm giữa) của vùng giao là điểm limit tối ưu. Nếu MB và FVG không giao nhau (cách biệt rõ), ưu tiên MB làm entry chính, dùng FVG chỉ để tham chiếu khả năng lấp gap.
 
@@ -598,7 +598,7 @@ HTF Bias Bearish + Location Premium
 
 **Tình huống:** giá tôn trọng MB lần đầu, chạy lên một đoạn, rồi quay lại retest gần vùng MB đó lần thứ 2 (không tạo higher low mới, chỉ quay về vùng cũ).
 
-**Vì sao bẫy được cả trader có kinh nghiệm:** khác với Breaker (nơi lực đỡ đến từ hàng kẹt có hạn, cạn dần rõ theo số lần retest — xem [[04 - Breaker Block]] mục 15.4), MB không có "hàng kẹt" để cạn — nhưng điều này không có nghĩa retest lần 2 của MB đáng tin ngang lần đầu, vì lý do khác: retest lần 2 nghĩa là giá đã không tạo được cấu trúc mới, có thể là dấu hiệu momentum yếu đi.
+**Vì sao bẫy được cả trader có kinh nghiệm:** khác với Breaker (nơi lực đỡ đến từ hàng kẹt có hạn, cạn dần rõ theo số lần retest — xem [[04-Breaker-Block]] mục 15.4), MB không có "hàng kẹt" để cạn — nhưng điều này không có nghĩa retest lần 2 của MB đáng tin ngang lần đầu, vì lý do khác: retest lần 2 nghĩa là giá đã không tạo được cấu trúc mới, có thể là dấu hiệu momentum yếu đi.
 
 **Cách nhận diện sớm:** nếu retest lần 2 xảy ra mà KHÔNG có higher-high mới hình thành giữa hai lần retest (giá chỉ đi ngang rồi quay lại), đây là dấu hiệu tiếp diễn yếu — khác với retest lần 2 xảy ra SAU khi đã có ít nhất một higher-high mới (cấu trúc tăng tiếp tục được xác nhận).
 
@@ -637,9 +637,9 @@ Trong một trend cực mạnh (ví dụ một mùa tăng giá liên tục nhi�
 
 | Khái niệm | Nguyên liệu chung | Điều kiện riêng | Bản chất tín hiệu | Nguồn lực đỡ khi retest |
 |---|---|---|---|---|
-| [[25 - OB - Order Block\|Order Block]] | Cụm nến ngược chiều cuối trước displacement | CHƯA fail (chưa đóng thân xuyên) | Tiếp diễn (chưa được test) | Chưa xảy ra — vùng còn "nguyên" |
+| [[25-OB-Order-Block|Order Block]] | Cụm nến ngược chiều cuối trước displacement | CHƯA fail (chưa đóng thân xuyên) | Tiếp diễn (chưa được test) | Chưa xảy ra — vùng còn "nguyên" |
 | Mitigation Block | Cụm nến ngược chiều cuối trước displacement, đã fail | Failure swing KHÔNG sweep (đáy/đỉnh cũ giữ vững) | Tiếp diễn (đã được test, momentum còn) | Vị thế "đoán đúng" + dòng tiền mới (discretionary) |
-| [[04 - Breaker Block\|Breaker Block]] | Cụm nến ngược chiều cuối trước displacement, đã fail | Failure swing CÓ sweep (đáy/đỉnh cũ bị phá) | Đảo chiều | Đóng lệnh cưỡng ép của phe bị kẹt (forced) |
+| [[04-Breaker-Block|Breaker Block]] | Cụm nến ngược chiều cuối trước displacement, đã fail | Failure swing CÓ sweep (đáy/đỉnh cũ bị phá) | Đảo chiều | Đóng lệnh cưỡng ép của phe bị kẹt (forced) |
 
 ---
 
@@ -691,7 +691,7 @@ Trong một trend cực mạnh (ví dụ một mùa tăng giá liên tục nhi�
 2. **Phép thử sweep:** đáy swing liền trước tại 147.20; nhịp hồi chỉ chạm 147.35, không chạm/xuyên 147.20 → GIỮ VỮNG → Mitigation Block, không phải Breaker.
 3. **MSS:** nến M15 đóng cửa phá đỉnh nhịp hồi ngay sau Low1, xác nhận tiếp diễn tăng.
 4. **Entry & risk:** limit 147.52 trong vùng MB, SL 147.30 (dưới Low1 một khoảng nhỏ, KHÔNG rộng như logic Breaker vì không có điểm sweep để đặt ngoài). Stop 22 pip, target 123 pip → R:R kế hoạch ~2.4, đạt đủ TP.
-5. **Khác biệt so với case Breaker (EURUSD 03/05/2021, [[04 - Breaker Block]]):** ở đó có sweep external rõ trước displacement — logic ngược hoàn toàn với case này, minh chứng thực nghiệm cho bảng đối chiếu ở mục 16.4.
+5. **Khác biệt so với case Breaker (EURUSD 03/05/2021, [[04-Breaker-Block]]):** ở đó có sweep external rõ trước displacement — logic ngược hoàn toàn với case này, minh chứng thực nghiệm cho bảng đối chiếu ở mục 16.4.
 
 **Việc cần làm tiếp:**
 - [ ] Gom thêm mẫu MB thuần trong tiếp diễn trend để so sánh R trung bình với case Breaker tương ứng — kiểm chứng giả thuyết "MB cho R:R thấp hơn nhưng win rate cao hơn trong đúng bối cảnh tiếp diễn".
@@ -734,7 +734,7 @@ Trong một trend cực mạnh (ví dụ một mùa tăng giá liên tục nhi�
 
 **Điểm khác biệt khi trade MB trên crypto:**
 
-1. **Không có "hàng kẹt bị lật" như Breaker sau liquidation cascade** ([[04 - Breaker Block]] case 16.4) — lực đỡ ở đây thực sự là dòng tiền mới quay lại mua sau điều chỉnh, không phải vị thế bị cưỡng ép đóng. Diễn biến giá mượt hơn, ít giật cục hơn breaker-sau-cascade.
+1. **Không có "hàng kẹt bị lật" như Breaker sau liquidation cascade** ([[04-Breaker-Block]] case 16.4) — lực đỡ ở đây thực sự là dòng tiền mới quay lại mua sau điều chỉnh, không phải vị thế bị cưỡng ép đóng. Diễn biến giá mượt hơn, ít giật cục hơn breaker-sau-cascade.
 2. **Funding rate đã về âm nhẹ trước khi MB hình thành** — dấu hiệu phần lớn vị thế long quá mức đã bị loại bỏ trong đợt điều chỉnh trước, tạo điều kiện sạch cho dòng tiền mới vào mà không gặp áp lực bán từ vị thế cũ.
 3. **Quyết định chốt lời từng phần** (không giữ nguyên toàn bộ đến target xa nhất) — phù hợp với đặc điểm biến động cao của crypto, khóa lợi nhuận ở các mức kháng cự tâm lý tròn số dọc đường thay vì risk toàn bộ vị thế cho một target duy nhất.
 

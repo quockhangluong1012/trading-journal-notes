@@ -35,10 +35,10 @@ last_reviewed: 2026-07-28
 created: 2026-07-12
 updated: 2026-07-28
 prerequisites:
-  - "[[26 - OTE - Optimal Trade Entry]]"
-  - "[[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]]"
-  - "[[27 - Premium Discount]]"
-  - "[[20 - Liquidity Sweep]]"
+  - "[[26-OTE-Optimal-Trade-Entry]]"
+  - "[[01-Advance-Market-Structure-Short-Term-Low-Intermediate-Term-Low-Long-Term-Low]]"
+  - "[[27-Premium-Discount]]"
+  - "[[20-Liquidity-Sweep]]"
 common_mistakes:
   - "Vào giữa range, không đợi OTE/discount"
   - "Ngược HTF bias"
@@ -68,10 +68,10 @@ common_mistakes:
 ![[MayneOTE-Anatomy.svg|712]]
 
 **Khái niệm:** Mayne Model là cách Trader Mayne "đóng gói" các mảnh ICT rời rạc thành một quy trình *thuận xu hướng, ưu tiên swing*. Bốn thành phần ICT mà anh ấy dựa vào — đúng như bạn nhận ra — là:
-- **Market Structure** ([[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]], [[05 - BOS - Break of Structure]], [[09 - Change of Character]]) → xác định *hướng*.
-- **Liquidity** ([[19 - Liquidity]], [[20 - Liquidity Sweep]], [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]) → xác định *đích đến* (DOL) và *nhiên liệu* cho move.
-- **PD Array / POI** ([[25 - OB - Order Block]], [[13 - FVG  - Fair Value Gap]], [[04 - Breaker Block]]) → *nơi* giá phản ứng.
-- **OTE** ([[26 - OTE - Optimal Trade Entry]]) → *giá vào chính xác* trong POI, cho stop chặt & RR lớn.
+- **Market Structure** ([[01-Advance-Market-Structure-Short-Term-Low-Intermediate-Term-Low-Long-Term-Low]], [[05-BOS-Break-of-Structure]], [[09-Change-of-Character]]) → xác định *hướng*.
+- **Liquidity** ([[19-Liquidity]], [[20-Liquidity-Sweep]], [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]) → xác định *đích đến* (DOL) và *nhiên liệu* cho move.
+- **PD Array / POI** ([[25-OB-Order-Block]], [[13-FVG-Fair-Value-Gap]], [[04-Breaker-Block]]) → *nơi* giá phản ứng.
+- **OTE** ([[26-OTE-Optimal-Trade-Entry]]) → *giá vào chính xác* trong POI, cho stop chặt & RR lớn.
 
 **Nó trả lời câu hỏi nào trên chart?**
 - Trong một xu hướng đang chạy, **hồi tới đâu thì vào** cho RR tốt nhất mà không "bắt dao rơi"?
@@ -84,7 +84,7 @@ common_mistakes:
 - Không phải scalp intraday tần suất cao — nó ưu tiên **continuation swing** trên HTF (bản này giữ nguyên phong cách gốc của Mayne).
 - Không phải "vào bất kỳ OTE nào" — OTE chỉ hợp lệ khi **thuận cấu trúc + đúng P/D + trùng POI + có xác nhận**.
 - Không phải hệ thống **100% cơ học** — bước xác nhận khung nhỏ (MSS/breaker) mang tính *discretionary*; Mayne nói thẳng model cần "chart time" và phải được cá nhân hóa.
-- Không phải cái cớ bỏ qua quản trị rủi ro — vẫn ≤0.5%/lệnh ([[43 - Position Sizing]]).
+- Không phải cái cớ bỏ qua quản trị rủi ro — vẫn ≤0.5%/lệnh ([[43-Position-Sizing]]).
 
 ---
 
@@ -93,16 +93,16 @@ common_mistakes:
 > [!important] Hiểu WHY trước khi hỏi WHAT
 > Trader mới copy "vẽ fib 62–79% rồi mua" mà không hiểu vì sao — nên họ mua OTE ngược trend hoặc giữa range rồi thua. Ba lớp dưới đây là *lý do* Mayne Model có edge.
 
-**Lớp 1 — Structure = xác suất nền (base rate).** Đứng *cùng phía* với cấu trúc HTF nghĩa là đứng cùng phía [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)|Draw on Liquidity]]. Trong uptrend, thị trường có "nợ" thanh khoản phía trên (BSL chưa quét); giá có động cơ đi lên lấy nó. Mua trong pullback của uptrend = bạn giao dịch *theo* dòng chảy tổ chức, không chống lại.
+**Lớp 1 — Structure = xác suất nền (base rate).** Đứng *cùng phía* với cấu trúc HTF nghĩa là đứng cùng phía [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|Draw on Liquidity]]. Trong uptrend, thị trường có "nợ" thanh khoản phía trên (BSL chưa quét); giá có động cơ đi lên lấy nó. Mua trong pullback của uptrend = bạn giao dịch *theo* dòng chảy tổ chức, không chống lại.
 
-**Lớp 2 — OTE = giá vào tối ưu (risk-defined).** Vùng [[26 - OTE - Optimal Trade Entry|OTE 62–79%]] là nơi cú hồi đã đủ sâu để (a) quét thanh khoản nội vi, (b) cho phép đặt stop *ngay dưới* đáy swing/đáy sweep — tức stop **chặt**. Vì entry sâu và target xa, **RR bung ra**. Mức **0.705 = Consequent Encroachment (CE)** ([[10 - Consequent Encroachment (Mean Threshold)]]) là "mean threshold" của nhịp đẩy — điểm cân bằng mà thuật toán hay tôn trọng.
+**Lớp 2 — OTE = giá vào tối ưu (risk-defined).** Vùng [[26-OTE-Optimal-Trade-Entry|OTE 62–79%]] là nơi cú hồi đã đủ sâu để (a) quét thanh khoản nội vi, (b) cho phép đặt stop *ngay dưới* đáy swing/đáy sweep — tức stop **chặt**. Vì entry sâu và target xa, **RR bung ra**. Mức **0.705 = Consequent Encroachment (CE)** ([[10-Consequent-Encroachment-Mean-Threshold]]) là "mean threshold" của nhịp đẩy — điểm cân bằng mà thuật toán hay tôn trọng.
 
-**Lớp 3 — Confirmation = lọc thời điểm (timing/edge).** OTE chỉ là *vùng*, không phải *tín hiệu*. Chờ một [[21 - Market Structure Shift|MSS]] / [[04 - Breaker Block|breaker]] / [[09 - Change of Character|CHoCH]] trên khung nhỏ **ngay tại OTE** giúp lọc bỏ trường hợp "OTE bị xuyên thẳng" (khi thực ra HTF đang đảo). Đây là cách Mayne biến một limit mù rủi ro cao thành một entry *có phản hồi từ thị trường*.
+**Lớp 3 — Confirmation = lọc thời điểm (timing/edge).** OTE chỉ là *vùng*, không phải *tín hiệu*. Chờ một [[21-Market-Structure-Shift|MSS]] / [[04-Breaker-Block|breaker]] / [[09-Change-of-Character|CHoCH]] trên khung nhỏ **ngay tại OTE** giúp lọc bỏ trường hợp "OTE bị xuyên thẳng" (khi thực ra HTF đang đảo). Đây là cách Mayne biến một limit mù rủi ro cao thành một entry *có phản hồi từ thị trường*.
 
 > [!warning] Hệ quả quan trọng
 > Nếu chỉ có 1–2 lớp thì đây **không phải** setup Mayne A. OTE + structure nhưng *không* confirmation = hạ cấp. Structure + confirmation nhưng vào ngoài OTE (giữa range) = RR kém. **Edge nằm ở giao của cả ba.**
 
-Liên hệ sâu: [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] — đám đông bán đáy pullback (đặt SSL ngay dưới), chính SSL đó là nhiên liệu cho cú sweep trước khi giá bật; Mayne đứng *sau* cú sweep, cùng phía tổ chức.
+Liên hệ sâu: [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] — đám đông bán đáy pullback (đặt SSL ngay dưới), chính SSL đó là nhiên liệu cho cú sweep trước khi giá bật; Mayne đứng *sau* cú sweep, cùng phía tổ chức.
 
 ---
 
@@ -110,13 +110,13 @@ Liên hệ sâu: [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] — đ�
 
 | Cấu phần | Khung | Vai trò | Concept liên quan |
 |---|---|---|---|
-| **HTF Structure + Bias** | D1 / H4 | Xác định hướng (HH-HL hay LH-LL) & DOL | [[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]], [[12 - Daily Bias]] |
-| **Pullback vào P/D** | H4 / H1 | Giá hồi về discount (long) / premium (short) | [[27 - Premium Discount]], [[12 - Dealing Range]] |
-| **POI (PD Array)** | H1 / M15 | Vùng phản ứng: OB / FVG / breaker thuận cấu trúc | [[25 - OB - Order Block]], [[13 - FVG  - Fair Value Gap]], [[04 - Breaker Block]] |
-| **OTE Fib 62–79%** | trên nhịp đẩy | Tinh chỉnh điểm vào, ưu tiên 0.705 (CE) | [[26 - OTE - Optimal Trade Entry]], [[10 - Consequent Encroachment (Mean Threshold)]] |
-| **Liquidity Sweep** | M15 / M5 | Quét STL/STH tại vùng hồi = nhiên liệu | [[20 - Liquidity Sweep]], [[15 - Inducement]], [[33 - Turtle Soup]] |
-| **LTF Confirmation** | M5 / M1 | MSS / breaker / CHoCH xác nhận entry | [[21 - Market Structure Shift]], [[09 - Change of Character]], [[41 - Change in State of Delivery]] |
-| **Target = opposing liquidity** | HTF | BSL (long) / SSL (short), IRL trước ERL sau | [[16 - Internal & External Range Liquidity (IRL & ERL)]], [[07 - Buy-side Liquidity]], [[30 - Sell-side Liquidity]] |
+| **HTF Structure + Bias** | D1 / H4 | Xác định hướng (HH-HL hay LH-LL) & DOL | [[01-Advance-Market-Structure-Short-Term-Low-Intermediate-Term-Low-Long-Term-Low]], [[12-Daily-Bias]] |
+| **Pullback vào P/D** | H4 / H1 | Giá hồi về discount (long) / premium (short) | [[27-Premium-Discount]], [[12-Dealing-Range]] |
+| **POI (PD Array)** | H1 / M15 | Vùng phản ứng: OB / FVG / breaker thuận cấu trúc | [[25-OB-Order-Block]], [[13-FVG-Fair-Value-Gap]], [[04-Breaker-Block]] |
+| **OTE Fib 62–79%** | trên nhịp đẩy | Tinh chỉnh điểm vào, ưu tiên 0.705 (CE) | [[26-OTE-Optimal-Trade-Entry]], [[10-Consequent-Encroachment-Mean-Threshold]] |
+| **Liquidity Sweep** | M15 / M5 | Quét STL/STH tại vùng hồi = nhiên liệu | [[20-Liquidity-Sweep]], [[15-Inducement]], [[33-Turtle-Soup]] |
+| **LTF Confirmation** | M5 / M1 | MSS / breaker / CHoCH xác nhận entry | [[21-Market-Structure-Shift]], [[09-Change-of-Character]], [[41-Change-in-State-of-Delivery]] |
+| **Target = opposing liquidity** | HTF | BSL (long) / SSL (short), IRL trước ERL sau | [[16-Internal-External-Range-Liquidity-IRL-ERL]], [[07-Buy-side-Liquidity]], [[30 - Sell-side Liquidity]] |
 
 > [!tip] Quy tắc "đủ 4 trước khi nghĩ tới entry"
 > Trước khi zoom xuống tìm confirmation, phải có đủ: (1) bias HTF rõ, (2) giá đang ở **đúng nửa** range (discount cho long), (3) một POI thật trong vùng hồi, (4) OTE của nhịp đẩy **chồng** lên POI đó. Thiếu bất kỳ điều nào → chưa phải cơ hội.
@@ -178,8 +178,8 @@ Liên hệ sâu: [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] — đ�
   - *Confirmation entry* (đúng tinh thần Mayne): chờ MSS khung nhỏ rồi vào — an toàn hơn, bỏ lỡ vài lần.
   - *Limit tại 0.705*: đặt trước tại CE của OTE trùng POI — vào được nhiều setup hơn nhưng cần P/D + bias thật chắc.
 - **Stop:** **ngoài đáy của cú sweep** (long) / **ngoài đỉnh sweep** (short) — hoặc ngoài mép xa POI. KHÔNG đặt tại pivot MSS (quá chặt, dễ bị wick quét).
-- **Target:** **opposing liquidity** theo DOL HTF — [[16 - Internal & External Range Liquidity (IRL & ERL)|IRL trước, ERL sau]]. Dời stop về BE sau khi chạm T1. Vì đây là swing, target ERL thường cho **RR 3–5R+**.
-- **Timing:** với NQ/FX intraday-swing, ưu tiên vùng hình thành quanh [[18 - Kill Zones|killzone]] London/NY; với swing thuần thì timing ít quan trọng hơn cấu trúc.
+- **Target:** **opposing liquidity** theo DOL HTF — [[16-Internal-External-Range-Liquidity-IRL-ERL|IRL trước, ERL sau]]. Dời stop về BE sau khi chạm T1. Vì đây là swing, target ERL thường cho **RR 3–5R+**.
+- **Timing:** với NQ/FX intraday-swing, ưu tiên vùng hình thành quanh [[18-Kill-Zones|killzone]] London/NY; với swing thuần thì timing ít quan trọng hơn cấu trúc.
 
 > [!example] Mẫu ghi nhanh — Mayne (Bullish)
 > ```text
@@ -248,7 +248,7 @@ Cùng logic Structure + OTE, nhưng độ sạch của pullback và độ dài w
 | Nhịp độ | Nhiều setup/ngày | **Ít lệnh, R lớn**, giữ swing |
 | Tính cơ học | Cơ học hơn | **Discretionary hơn** (Mayne nói rõ) |
 
-**Điểm giao (cả hai cùng dùng):** [[20 - Liquidity Sweep|sweep]], displacement, [[21 - Market Structure Shift|MSS]], [[27 - Premium Discount|premium/discount]], [[25 - OB - Order Block|OB]]/[[13 - FVG  - Fair Value Gap|FVG]], [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)|DOL]].
+**Điểm giao (cả hai cùng dùng):** [[20-Liquidity-Sweep|sweep]], displacement, [[21-Market-Structure-Shift|MSS]], [[27-Premium-Discount|premium/discount]], [[25-OB-Order-Block|OB]]/[[13-FVG-Fair-Value-Gap|FVG]], [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|DOL]].
 
 > [!warning] Đừng trộn rule của hai game
 > Nếu backtest, hãy **tag rõ** `model: Mayne` vs `model: ICT-2022` để so expectancy tách bạch. Một thói quen tối ưu cho intraday 2022 (vào nhiều, cắt nhanh) có thể phá vỡ tính swing của Mayne (cần kiên nhẫn giữ lệnh tới ERL).
@@ -259,11 +259,11 @@ Cùng logic Structure + OTE, nhưng độ sạch của pullback và độ dài w
 
 Structure + OTE là *lõi*; các lớp dưới là *chất xúc tác* nâng grade:
 
-- **Sweep + Turtle Soup** ([[33 - Turtle Soup]], [[15 - Inducement]]): cú hồi quét đúng một STL/STH "mồi" trước khi bật = xác nhận nhiên liệu.
-- **SMT Divergence** ([[42 - SMT Divergence]]): NQ vs ES, EU vs GU phân kỳ tại điểm sweep của OTE = xác nhận mạnh.
-- **CISD / Displacement chất lượng** ([[41 - Change in State of Delivery]]): nến xác nhận thân lớn tại OTE → confirmation "sạch".
-- **Killzone / Macro** ([[18 - Kill Zones]], [[40 - Macro Times]]): với NQ/FX, OTE hình thành trong killzone đáng tin hơn.
-- **NWOG/NDOG lân cận** ([[24 - New Week Opening Gap]], [[23 - New Day Opening Gap]]): OTE gần gap mở cửa thường được tôn trọng hơn.
+- **Sweep + Turtle Soup** ([[33-Turtle-Soup]], [[15-Inducement]]): cú hồi quét đúng một STL/STH "mồi" trước khi bật = xác nhận nhiên liệu.
+- **SMT Divergence** ([[42-SMT-Divergence]]): NQ vs ES, EU vs GU phân kỳ tại điểm sweep của OTE = xác nhận mạnh.
+- **CISD / Displacement chất lượng** ([[41-Change-in-State-of-Delivery]]): nến xác nhận thân lớn tại OTE → confirmation "sạch".
+- **Killzone / Macro** ([[18-Kill-Zones]], [[40-Macro-Times]]): với NQ/FX, OTE hình thành trong killzone đáng tin hơn.
+- **NWOG/NDOG lân cận** ([[24-New-Week-Opening-Gap]], [[23-New-Day-Opening-Gap]]): OTE gần gap mở cửa thường được tôn trọng hơn.
 - **Unicorn overlap** ([[07 - Unicorn Model]]): nếu OTE 0.705 trùng vùng **breaker + FVG chồng lấn** → đây là biến thể A+ (Mayne × Unicorn).
 
 > [!note] Nguyên tắc confluence
@@ -751,4 +751,4 @@ missing_step: none # none | structure | location | ote | poi | confirmation | st
 ---
 
 > [!info] Liên kết mô hình
-> [[01 - ICT 2022 Model]] · [[07 - Unicorn Model]] · [[26 - OTE - Optimal Trade Entry]] · [[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]] · [[27 - Premium Discount]] · [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]
+> [[01 - ICT 2022 Model]] · [[07 - Unicorn Model]] · [[26-OTE-Optimal-Trade-Entry]] · [[01-Advance-Market-Structure-Short-Term-Low-Intermediate-Term-Low-Long-Term-Low]] · [[27-Premium-Discount]] · [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]

@@ -95,13 +95,13 @@ Theo lý thuyết thị trường đấu giá (Auction Market Theory), mỗi m�
 3. **Tiếp tục mở rộng:** sau retrace nông, giá đi tiếp về phía draw on liquidity, để lại FVG mới ở khung nhỏ.
 
 ### Điều kiện bắt buộc
-- [ ] Có sweep + MSS hợp lệ trước displacement (xem [[21 - Market Structure Shift]], [[20 - Liquidity Sweep]]).
+- [ ] Có sweep + MSS hợp lệ trước displacement (xem [[21-Market-Structure-Shift]], [[20-Liquidity-Sweep]]).
 - [ ] Displacement có chất lượng "aggressive" (body close mạnh, urgency, ít hồi).
 - [ ] Xác định được một PD array hợp lệ ở vị trí retrace nông (CE của FVG M5, hoặc FVG/OB M1).
 
 ### Điều kiện tăng xác suất
 - [ ] M1 cho thấy một micro sweep + micro MSS ngay tại vùng retrace nông (cùng câu chuyện, phóng to).
-- [ ] Vùng entry trùng với **CE (50%)** của FVG M5 — xem [[10 - Consequent Encroachment (Mean Threshold)]].
+- [ ] Vùng entry trùng với **CE (50%)** của FVG M5 — xem [[10-Consequent-Encroachment-Mean-Threshold]].
 - [ ] Còn external liquidity rõ ràng phía trước cho R:R tốt.
 
 ### Điều kiện làm setup yếu đi
@@ -162,10 +162,10 @@ Có những leg retrace nông đến mức **không để lại bất kỳ FVG h
    - **(b) Chấp nhận một FVG sâu hơn nhưng vẫn hợp lệ:** nếu có một FVG ở khung M5 (không phải M1) nằm gần CE và vẫn còn "trẻ" (chưa bị lấp một phần đáng kể), có thể dùng FVG đó thay vì cố tìm một PD array M1 không tồn tại — miễn là entry vẫn nằm **trên/dưới CE theo đúng hướng an toàn hơn** (tức không sâu hơn đáy FVG M5 gốc) và R:R vẫn đạt tối thiểu theo kế hoạch.
    - **Không hợp lệ:** tự vẽ một "FVG" giả hoặc dùng một mức giá bất kỳ chỉ vì "nhìn có vẻ đẹp" — đây là hành vi đoán, không phải phân tích.
 
-**Tương tác với [[10 - Consequent Encroachment (Mean Threshold)]]:**
+**Tương tác với [[10-Consequent-Encroachment-Mean-Threshold]]:**
 CE là ngưỡng entry kỳ vọng tối thiểu trong toàn bộ concept này. Khi không có M1 PD array, CE trở thành **tuyến phòng thủ chính** — nếu giá không chạm được cả CE, đó là bằng chứng move quá mạnh để tham gia bằng limit order, và quy tắc "không đuổi" áp dụng nghiêm ngặt.
 
-**Tương tác với [[17 - Inverse Fair Value Gap - iFVG]]:**
+**Tương tác với [[17-Inverse-Fair-Value-Gap-iFVG]]:**
 Có một tình huống nâng cao đáng chú ý: nếu giá **chạm CE nhưng sau đó đóng nến xuyên ngược qua CE** (tức thất bại giữ vùng entry kỳ vọng) và tiếp tục đóng cửa ở phía "sai" của FVG M5 gốc, bản thân FVG đó có thể **đảo vai trò**:
 - Nếu giá không chỉ chạm CE mà còn đóng cửa xuyên qua **toàn bộ FVG** theo hướng ngược lại với bias ban đầu, FVG gốc (vốn được kỳ vọng là vùng nâng đỡ/kháng cự) có thể **flip thành iFVG** — nghĩa là vùng đó bây giờ đóng vai trò ngược lại (kháng cự nếu trước đó là hỗ trợ, và ngược lại).
 - Về logic quyết định: (1) nếu chỉ chạm/xuyên nhẹ CE rồi bật lại đúng hướng ban đầu → vẫn là retrace nông hợp lệ, cứ theo kế hoạch entry gốc; (2) nếu đóng cửa dứt khoát xuyên qua toàn bộ FVG và giữ giá ở phía đối diện → coi setup gốc **đã bị vô hiệu hóa (invalidated)**, và đánh giá lại toàn bộ FVG đó như một iFVG/breaker tiềm năng cho hướng ngược lại — cần một MSS mới theo hướng ngược để xác nhận, không tự động đảo lệnh chỉ vì giá xuyên qua.
@@ -246,7 +246,7 @@ Giá quét SSL (đáy, blue line), tạo MSS phá lower-high bằng displacement
 
 **Position-management nuance — entry nông thay đổi bài toán R:R và size như thế nào:**
 
-Vì entry tại CE/M1 PD array nằm **cao hơn (gần đỉnh leg hơn)** so với entry tại đáy FVG M5, khoảng cách từ entry tới stop (dưới swing/điểm sweep) **ngắn hơn** so với kịch bản chờ fill sâu. Điều này có hệ quả trực tiếp lên quản lý vị thế — xem thêm cách tính pip/lot/margin cụ thể tại [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]]:
+Vì entry tại CE/M1 PD array nằm **cao hơn (gần đỉnh leg hơn)** so với entry tại đáy FVG M5, khoảng cách từ entry tới stop (dưới swing/điểm sweep) **ngắn hơn** so với kịch bản chờ fill sâu. Điều này có hệ quả trực tiếp lên quản lý vị thế — xem thêm cách tính pip/lot/margin cụ thể tại [[36-Forex-CFD-Basics-Pip-Lot-Spread-Swap-Leverage-Margin]]:
 
 | Yếu tố | Entry tại đáy FVG (giả định, thường KHÔNG khớp trong move aggressive) | Entry tại CE / M1 refine (thực tế trong move aggressive) |
 |---|---|---|
@@ -411,7 +411,7 @@ Hãy tưởng tượng limit order book (LOB) của NQ1/NDX hoặc EURUSD tại 
 - **Biến phụ thuộc (outcome):** độ sâu retrace tối đa tính theo % của FVG M5 gốc trước khi giá tiếp diễn vượt đỉnh/đáy leg. Phân nhóm: 0–25% (rất nông), 25–50% (nông, gần CE), 50–75% (trung bình), >75% (sâu/lấp gần hết).
 - **Tiêu chí thắng/thua cho mục đích entry:** giả định vào tại CE (50%) — thắng nếu giá chạm CE trong vòng N nến rồi tiếp diễn đúng hướng tới target tối thiểu 1R; thua nếu giá xuyên qua toàn bộ FVG và đóng nến acceptance ở phía đối diện (invalidation như mục 4 file gốc mô tả).
 - **Cỡ mẫu tối thiểu:** với một hiện tượng có khả năng thiên lệch mạnh theo regime (biến động cao/thấp), nên nhắm tối thiểu 100 mẫu mỗi symbol trước khi tin vào con số win-rate, và tối thiểu 30 mẫu trong CÙNG một regime biến động (ví dụ tách riêng "biến động cao" vs "biến động thấp" theo ATR percentile) để tránh kết luận giả do trộn regime.
-- **Biến kiểm soát bắt buộc log:** kill zone (London/NY/Á), có tin tức trong ±30 phút không, ngày trong tuần (thứ Tư dễ có swap ảnh hưởng hành vi swing giữ lệnh — xem [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]]).
+- **Biến kiểm soát bắt buộc log:** kill zone (London/NY/Á), có tin tức trong ±30 phút không, ngày trong tuần (thứ Tư dễ có swap ảnh hưởng hành vi swing giữ lệnh — xem [[36-Forex-CFD-Basics-Pip-Lot-Spread-Swap-Leverage-Margin]]).
 - **Cách trình bày kết quả để tránh tự đánh lừa bản thân:** báo cáo win-rate và R trung bình TÁCH RIÊNG theo từng nhóm regime biến động và từng kill zone, không gộp chung thành một con số duy nhất — một con số tổng hợp duy nhất dễ che khuất việc khái niệm chỉ hoạt động tốt trong một điều kiện hẹp (ví dụ chỉ tốt trong kill zone NY Open, biến động cao) và hoạt động kém ở các điều kiện khác.
 
 **Ma trận rủi ro thực dụng khi triển khai:**
@@ -429,7 +429,7 @@ Hãy tưởng tượng limit order book (LOB) của NQ1/NDX hoặc EURUSD tại 
 - **Với CE / Consequent Encroachment:** đây là quan hệ bổ trợ trực tiếp — CE là "tuyến phòng thủ chính" khi không có M1 PD array (đã nêu trong file gốc). Không có mâu thuẫn, nhưng có một điểm mơ hồ: khi CE thất bại (giá xuyên ngược), file gốc yêu cầu KHÔNG tự động đảo lệnh mà chờ MSS mới — điều này đúng về kỷ luật nhưng tạo ra một "khoảng chết" (không long, không short) có thể kéo dài nhiều nến, và trader mới dễ đứng ngoài quá lâu, bỏ lỡ cả continuation thật lẫn đảo chiều thật.
 - **Với FVG chồng lên OB ngược chiều:** một tình huống mâu thuẫn thường gặp là displacement leg vừa để lại FVG bullish (theo bias) nhưng ngay trong vùng CE lại tồn tại một OB bearish cũ (chưa mitigate) từ cấu trúc trước đó. Cách phân xử thực dụng: ưu tiên PD array **mới hơn và cùng hướng bias hiện tại** (FVG của chính displacement leg) làm entry chính; OB ngược chiều cũ chỉ được coi là cảnh báo giảm độ tin (không phải lý do hủy setup) — nếu giá phản ứng rõ tại vùng chồng lấp (wick dài, từ chối), đó là tín hiệu giảm size chứ không phải tín hiệu đảo bias ngay.
 - **Với sweep trùng lúc CISD chưa xác nhận (Change in State of Delivery):** nếu displacement xảy ra nhưng CISD ở khung entry chưa đóng nến xác nhận đổi trạng thái giao hàng, retrace nông có thể chỉ là một nhịp pullback tạm thời trong delivery CŨ chứ chưa chắc là delivery mới đã được CISD xác nhận. Quy tắc phân xử: coi displacement + retrace nông như một **giả thuyết** cần CISD (hoặc MSS LTF tương đương) xác nhận trước khi tin location "cao hơn" là entry hợp lệ — nếu CISD KHÔNG xác nhận trong vài nến, hạ độ tin của toàn bộ setup, không cứ giữ nguyên kỳ vọng ban đầu.
-- **Với Re-mapping Dealing Range ([[37 - Re-mapping Dealing Range sau Displacement]]):** đây là quan hệ song sinh gần như bắt buộc — mọi displacement aggressive tạo range mới đều kích hoạt yêu cầu re-map (xem file 37). Aggressive Displacement Entry trả lời "vào ở đâu trong leg này"; Re-mapping trả lời "sau leg này, bối cảnh premium/discount mới là gì". Bỏ qua re-map sau một displacement aggressive là lỗi phổ biến: trader vào đúng CE, ăn xong 1R rồi không biết tìm entry tiếp theo ở đâu vì vẫn đang đo trên range cũ.
+- **Với Re-mapping Dealing Range ([[37-Re-mapping-Dealing-Range-sau-Displacement]]):** đây là quan hệ song sinh gần như bắt buộc — mọi displacement aggressive tạo range mới đều kích hoạt yêu cầu re-map (xem file 37). Aggressive Displacement Entry trả lời "vào ở đâu trong leg này"; Re-mapping trả lời "sau leg này, bối cảnh premium/discount mới là gì". Bỏ qua re-map sau một displacement aggressive là lỗi phổ biến: trader vào đúng CE, ăn xong 1R rồi không biết tìm entry tiếp theo ở đâu vì vẫn đang đo trên range cũ.
 
 ![[AggressiveDisplacement-DeepDive-OrderFlow.svg]]
 *Sơ đồ cơ chế order flow: resting liquidity hai chiều bị market order + stop cascade tiêu thụ trong displacement, để lại FVG và giải thích vì sao retrace chỉ tới CE.*
@@ -468,7 +468,7 @@ Nếu trả lời "có" cho 4-5 câu, CE thuộc nhóm tín hiệu chất lượ
 **B3. Giải thích thay thế đơn giản hơn.**
 - **Mean reversion quanh mức tâm lý + số tròn:** retrace dừng ở một mức "trông giống CE" đôi khi chỉ trùng hợp với một mức tâm lý số tròn hoặc mức Fibonacci phổ biến (38.2%/50%/61.8%) mà rất nhiều trường phái phân tích kỹ thuật khác cùng theo dõi — CE và Fib 50% là cùng một con số, nên "giá tôn trọng CE" có thể chỉ là "giá tôn trọng Fib 50%, thứ hàng triệu trader non-ICT cũng dùng".
 - **Stop clustering tự nhiên + regression to a shorter-term mean:** trong bất kỳ move có động lượng, một phần thanh khoản hai chiều luôn tồn tại ở gần điểm giữa của move gần nhất — điều này đúng cho MỌI move mạnh trong lịch sử tài chính, không cần khung ICT để giải thích, chỉ cần lý thuyết auction/volume profile tổng quát.
-- **Self-fulfilling prophecy của cộng đồng ICT:** nếu đủ nhiều trader ICT cùng đặt limit tại CE của FVG rõ ràng, chính hành vi đặt lệnh đó tạo ra một cụm thanh khoản khiến giá "phản ứng" tại CE — không phải vì "smart money cho phép", mà vì đám đông ICT đã tự tạo ra điểm phản ứng đó (liên hệ trực tiếp [[38 - Liquidity Reflexivity]]).
+- **Self-fulfilling prophecy của cộng đồng ICT:** nếu đủ nhiều trader ICT cùng đặt limit tại CE của FVG rõ ràng, chính hành vi đặt lệnh đó tạo ra một cụm thanh khoản khiến giá "phản ứng" tại CE — không phải vì "smart money cho phép", mà vì đám đông ICT đã tự tạo ra điểm phản ứng đó (liên hệ trực tiếp [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]).
 - **Randomness / survivorship của ví dụ minh hoạ:** với hàng nghìn cú displacement mỗi ngày trên NQ/EU/Gold, một số phần trăm ngẫu nhiên sẽ retrace nông chỉ vì phân phối biên độ retrace có phương sai lớn — nếu chỉ nhớ các case retrace nông "đẹp" (survivorship trong trí nhớ), sẽ đánh giá quá cao tần suất thật của hiện tượng.
 - **Hiệu ứng round-trip của market maker/dealer trong CFD:** với các sản phẩm CFD nơi broker đóng vai trò market maker (không chuyển lệnh ra thị trường thật — xem chi tiết xung đột lợi ích ở file 36), một phần retrace "đẹp" quan sát được có thể phản ánh cách broker đó tự tạo giá nội bộ hơn là hành vi thật của thị trường liên ngân hàng — đây là lý do nên đối chiếu chart CFD với chart futures/spot tương ứng khi nghi ngờ.
 
@@ -619,7 +619,7 @@ Phần này tập hợp các tình huống thực tế chỉ lộ ra sau hàng t
 
 5. **DST (đổi giờ mùa) làm lệch kill zone 1 tiếng, khiến displacement "aggressive" xuất hiện ngoài kill zone dự kiến trên lịch cũ.** Vì sao: Mỹ và châu Âu đổi DST không cùng ngày trong một số tuần của năm, khiến kill zone London/NY theo giờ server bị lệch tạm thời 1 giờ so với thói quen cũ. Cách xử lý: luôn kiểm tra lịch DST hiện tại của cả hai khu vực trước khi tự động áp bảng ngưỡng ATR theo "kill zone" cố định — một displacement xuất hiện "sớm 1 giờ" có thể vẫn là thật, chỉ là kill zone đã dịch.
 
-6. **Double/triple sweep trước displacement — dễ nhầm cú sweep thứ nhất là điểm entry.** Vì sao: đám đông ICT (bao gồm chính bạn nếu không cẩn thận) có xu hướng vào ngay sau sweep đầu tiên; nếu thanh khoản chưa đủ, thị trường tạo thêm cú sweep thứ hai sâu hơn trước khi displacement thật xảy ra — nếu bạn tính CE dựa trên MSS sau sweep đầu, bạn có thể đang dùng một range/FVG "non" chưa phải là displacement chính. Liên hệ trực tiếp [[38 - Liquidity Reflexivity]] — sweep kép là một kỹ thuật counter đám đông ICT phổ biến. Cách xử lý: nếu nghi ngờ có sweep kép, chờ MSS xác nhận sau cú sweep sâu nhất, không phải cú đầu tiên.
+6. **Double/triple sweep trước displacement — dễ nhầm cú sweep thứ nhất là điểm entry.** Vì sao: đám đông ICT (bao gồm chính bạn nếu không cẩn thận) có xu hướng vào ngay sau sweep đầu tiên; nếu thanh khoản chưa đủ, thị trường tạo thêm cú sweep thứ hai sâu hơn trước khi displacement thật xảy ra — nếu bạn tính CE dựa trên MSS sau sweep đầu, bạn có thể đang dùng một range/FVG "non" chưa phải là displacement chính. Liên hệ trực tiếp [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] — sweep kép là một kỹ thuật counter đám đông ICT phổ biến. Cách xử lý: nếu nghi ngờ có sweep kép, chờ MSS xác nhận sau cú sweep sâu nhất, không phải cú đầu tiên.
 
 7. **Slippage & partial fill khi displacement mạnh — limit tại CE không khớp đủ khối lượng hoặc khớp giá tệ hơn dự kiến.** Vì sao: trong cú đẩy mạnh, thanh khoản tại đúng mức CE có thể mỏng hơn bình thường (đặc biệt XAUUSD/NQ trong tin), khiến lệnh limit lớn chỉ khớp một phần hoặc bị "trượt" nếu dùng stop-market thay vì limit thuần. Cách xử lý: với size lớn, cân nhắc chia nhỏ lệnh (scale-in) tại vùng CE thay vì one lệnh full size; luôn phân biệt rõ limit order (khớp đúng giá hoặc tốt hơn, có thể không khớp) và stop-market (đảm bảo khớp nhưng có thể trượt giá) khi lập kế hoạch entry.
 
@@ -695,9 +695,9 @@ Nếu không thể trả lời "có" cho ít nhất 4/6 câu trên, nên coi set
 | 0-1 | Rất thấp | Không giao dịch, xem lại toàn bộ phân tích bias |
 
 **Liên kết chéo quan trọng:**
-- [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]] — để hiểu đúng chi phí giao dịch thật (spread, commission, swap) ảnh hưởng đến R kỳ vọng của các lệnh stop chặt kiểu này.
-- [[37 - Re-mapping Dealing Range sau Displacement]] — bước tiếp theo bắt buộc sau mỗi displacement aggressive thành công.
-- [[38 - Liquidity Reflexivity ( Bẫy đám đông ICT )]] — để hiểu rõ hơn phần nào của hiệu ứng CE có thể là self-fulfilling prophecy của chính cộng đồng ICT, không phải "smart money" theo nghĩa truyền thống.
+- [[36-Forex-CFD-Basics-Pip-Lot-Spread-Swap-Leverage-Margin]] — để hiểu đúng chi phí giao dịch thật (spread, commission, swap) ảnh hưởng đến R kỳ vọng của các lệnh stop chặt kiểu này.
+- [[37-Re-mapping-Dealing-Range-sau-Displacement]] — bước tiếp theo bắt buộc sau mỗi displacement aggressive thành công.
+- [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] — để hiểu rõ hơn phần nào của hiệu ứng CE có thể là self-fulfilling prophecy của chính cộng đồng ICT, không phải "smart money" theo nghĩa truyền thống.
 
 > [!info] Ghi chú cuối
 > Phần Deep Dive này được viết dựa trên kinh nghiệm live trade và backtest tổng hợp, không trích dẫn số liệu thống kê hoặc giá lịch sử chính xác nào chưa được xác minh.

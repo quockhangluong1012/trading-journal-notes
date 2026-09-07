@@ -46,9 +46,9 @@ common_mistakes:
 Inducement (IDM) là **thanh khoản được tạo ra có chủ đích (engineered liquidity)** đặt giữa giá hiện tại và POI thật. Nó thường là một **swing nhỏ** (minor swing high/low) hoặc một **pool đỉnh/đáy lộ liễu** mà số đông trader nhìn vào sẽ coi là điểm vào lệnh hợp lý hoặc điểm đặt stop loss. Chính vì "ai cũng thấy", nó tích tụ một cụm lệnh chờ (pending orders + stop losses) — và cụm lệnh đó là nhiên liệu để smart money khớp các vị thế lớn của họ.
 
 - **IDM trước một bullish POI:** một **đáy nhỏ (minor low / SSL)** nằm phía trên Order Block tăng. Giá phải quét đáy nhỏ này (lấy [[30 - Sell-side Liquidity]]) TRƯỚC khi chạm OB và đảo chiều lên.
-- **IDM trước một bearish POI:** một **đỉnh nhỏ (minor high / BSL)** nằm phía dưới Order Block giảm. Giá phải quét đỉnh nhỏ này (lấy [[07 - Buy-side Liquidity]]) TRƯỚC khi chạm OB và đảo chiều xuống.
+- **IDM trước một bearish POI:** một **đỉnh nhỏ (minor high / BSL)** nằm phía dưới Order Block giảm. Giá phải quét đỉnh nhỏ này (lấy [[07-Buy-side-Liquidity]]) TRƯỚC khi chạm OB và đảo chiều xuống.
 
-**Bản chất:** Inducement là một dạng [[19 - Liquidity]] đặc biệt — không phải thanh khoản ở cực range (external), mà là thanh khoản **trung gian, gần POI**, được "trưng ra" như mồi nhử. Logic ICT: thị trường là một thuật toán tìm thanh khoản. Trước khi đưa giá tới một vùng OB/FVG nơi smart money muốn khớp lệnh, thuật toán phải **gom đủ counterparty** — và IDM chính là counterparty đó. Đáy/đỉnh nhỏ bị quét là "phí vào cửa" mà giá phải trả trước khi tới POI thật.
+**Bản chất:** Inducement là một dạng [[19-Liquidity]] đặc biệt — không phải thanh khoản ở cực range (external), mà là thanh khoản **trung gian, gần POI**, được "trưng ra" như mồi nhử. Logic ICT: thị trường là một thuật toán tìm thanh khoản. Trước khi đưa giá tới một vùng OB/FVG nơi smart money muốn khớp lệnh, thuật toán phải **gom đủ counterparty** — và IDM chính là counterparty đó. Đáy/đỉnh nhỏ bị quét là "phí vào cửa" mà giá phải trả trước khi tới POI thật.
 
 **Phân biệt cốt lõi — IDM vs POI:**
 - **IDM** = nơi retail BỊ DỤ vào lệnh / đặt stop. Giá đến đây để **lấy** thanh khoản, KHÔNG để đảo chiều.
@@ -89,7 +89,7 @@ IDM là lý do số 1 khiến trader "đúng hướng nhưng vẫn thua": họ n
 | Dạng IDM | Vị trí | Loại liquidity bị lấy | Ý nghĩa thực chiến |
 |---|---|---|---|
 | **IDM trên bullish OB** | Đáy nhỏ phía trên OB tăng | [[30 - Sell-side Liquidity]] (SSL) | Phải quét đáy nhỏ trước → rồi chạm OB → Long |
-| **IDM dưới bearish OB** | Đỉnh nhỏ phía dưới OB giảm | [[07 - Buy-side Liquidity]] (BSL) | Phải quét đỉnh nhỏ trước → rồi chạm OB → Short |
+| **IDM dưới bearish OB** | Đỉnh nhỏ phía dưới OB giảm | [[07-Buy-side-Liquidity]] (BSL) | Phải quét đỉnh nhỏ trước → rồi chạm OB → Short |
 | **IDM kiểu equal highs/lows** | Cặp đỉnh/đáy bằng nhau lộ liễu trước POI | BSL / SSL cụm dày | Mồi rất "ngon mắt" → càng dễ là bẫy |
 | **IDM trong leg (pullback nhỏ)** | Một pullback nhỏ giữa một displacement leg | Stop của counter-trend | Lấy thanh khoản nhỏ trước khi continuation |
 
@@ -101,9 +101,9 @@ IDM là lý do số 1 khiến trader "đúng hướng nhưng vẫn thua": họ n
 > Quy tắc ngón tay cái của nhiều trader theo IDM: **"Mọi POI hợp lệ đều có inducement phía trước nó."** Khi quét một OB/FVG để vào lệnh, hãy hỏi: *đâu là đáy/đỉnh nhỏ mà giá sẽ lấy trước khi chạm POI này?* Nếu không tìm được IDM, POI có thể chưa "chín" hoặc bạn đang nhìn sai vùng.
 
 ### Khi nào khái niệm này có giá trị cao?
-- [ ] Có [[12 - Daily Bias]] rõ ràng và một POI HTF (OB/FVG) đồng hướng.
+- [ ] Có [[12-Daily-Bias]] rõ ràng và một POI HTF (OB/FVG) đồng hướng.
 - [ ] Giữa giá hiện tại và POI có một swing nhỏ / pool đỉnh-đáy lộ liễu (IDM tiềm năng).
-- [ ] Giá đang trong [[27 - Premium Discount|premium/discount]] phù hợp với hướng trade.
+- [ ] Giá đang trong [[27-Premium-Discount|premium/discount]] phù hợp với hướng trade.
 - [ ] IDM nằm logic (đáy nhỏ trên bullish OB / đỉnh nhỏ dưới bearish OB).
 - [ ] Có thời điểm phù hợp: London / New York Kill Zone.
 - [ ] Có liquidity target external rõ ràng phía bên kia làm draw.
@@ -150,7 +150,7 @@ IDM là lý do số 1 khiến trader "đúng hướng nhưng vẫn thua": họ n
 ### Điều kiện tăng xác suất
 - [ ] IDM là cặp equal highs/lows lộ liễu (mồi càng "ngon" càng đáng tin là bẫy).
 - [ ] POI phía sau IDM là một OB/FVG có displacement tạo ra.
-- [ ] Có liquidity sweep IDM rồi mới có displacement / [[21 - Market Structure Shift|MSS]] tại POI.
+- [ ] Có liquidity sweep IDM rồi mới có displacement / [[21-Market-Structure-Shift|MSS]] tại POI.
 - [ ] Entry nằm đúng premium/discount.
 - [ ] Có external liquidity rõ ràng làm target sau khi đảo từ POI.
 
@@ -171,7 +171,7 @@ IDM là lý do số 1 khiến trader "đúng hướng nhưng vẫn thua": họ n
 > 4. **Sau khi IDM bị quét và giá chạm POI, đâu là tín hiệu xác nhận (MSS) để tôi vào?**
 
 ### D1 / H4 — Bias & Narrative
-- Bias hiện tại: Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
+- Bias hiện tại: Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
 - Giá đang trong dealing range nào? Ở premium hay discount?
 - POI HTF quan trọng (OB/FVG) làm điểm đảo dự kiến.
 - External liquidity target (BSL/SSL chính) làm draw.
@@ -185,7 +185,7 @@ IDM là lý do số 1 khiến trader "đúng hướng nhưng vẫn thua": họ n
 ### M5 / M1 — Confirmation & Entry
 - Giá đã quét IDM chưa? (bắt buộc trước khi vào).
 - Sau khi quét IDM, giá có chạm POI và phản ứng không?
-- Có [[21 - Market Structure Shift|MSS]] tại POI sau khi IDM bị lấy không?
+- Có [[21-Market-Structure-Shift|MSS]] tại POI sau khi IDM bị lấy không?
 - Có displacement + [[Fair Value Gap|FVG]] LTF để refine entry không?
 
 ```text
@@ -353,7 +353,7 @@ HTF Bearish Bias
 > Chuỗi sequence bất di bất dịch: HTF Bias/POI → IDM (mồi) BỊ QUÉT → chạm POI (OB/FVG) phản ứng → MSS + displacement xác nhận → Entry tại POI → Target external liquidity. Nhảy thẳng từ POI sang entry mà bỏ bước "IDM bị quét" là entry non — stop của bạn nằm đúng nơi thị trường còn muốn lấy trước khi đảo.
 
 > [!note]
-> IDM ghép cực kỳ tự nhiên với [[Order Block]] và [[Fair Value Gap]]: chuỗi chuẩn là **IDM (mồi) bị quét → POI (OB/FVG) phản ứng → [[21 - Market Structure Shift|MSS]] xác nhận → entry**. Thiếu bước "IDM bị quét", entry tại POI thường non.
+> IDM ghép cực kỳ tự nhiên với [[Order Block]] và [[Fair Value Gap]]: chuỗi chuẩn là **IDM (mồi) bị quét → POI (OB/FVG) phản ứng → [[21-Market-Structure-Shift|MSS]] xác nhận → entry**. Thiếu bước "IDM bị quét", entry tại POI thường non.
 
 ---
 
@@ -411,7 +411,7 @@ HTF Bearish Bias
 
 ### Case Study 4 — IDM equal highs/lows bị quét NHIỀU LẦN (multi-poke) trước khi giá tới POI
 
-**Bối cảnh:** Quy tắc "chờ IDM bị quét rồi vào POI" ngầm giả định IDM bị quét trong **một cú sweep sạch** — một nến thọc qua đáy/đỉnh nhỏ rồi giá đi tiếp. Điều này đúng với IDM mỏng (single old low/high). Nhưng với một **pool equal highs/lows dày** (3+ lần chạm — loại IDM "ngon mắt" nhất, xem [[16 - Internal & External Range Liquidity (IRL & ERL)]] về sức hút pool theo số lần chạm), thực tế phổ biến hơn là giá **thọc pool 2–3 lần (multi-poke)** trước khi thật sự rời khỏi nó để displacement tới POI. Mỗi lần thọc chỉ lấy một phần (partial fill) cụm lệnh chờ dày đặc ở đó; phải qua vài nhịp thì pool mới cạn đủ để order flow đẩy giá đi.
+**Bối cảnh:** Quy tắc "chờ IDM bị quét rồi vào POI" ngầm giả định IDM bị quét trong **một cú sweep sạch** — một nến thọc qua đáy/đỉnh nhỏ rồi giá đi tiếp. Điều này đúng với IDM mỏng (single old low/high). Nhưng với một **pool equal highs/lows dày** (3+ lần chạm — loại IDM "ngon mắt" nhất, xem [[16-Internal-External-Range-Liquidity-IRL-ERL]] về sức hút pool theo số lần chạm), thực tế phổ biến hơn là giá **thọc pool 2–3 lần (multi-poke)** trước khi thật sự rời khỏi nó để displacement tới POI. Mỗi lần thọc chỉ lấy một phần (partial fill) cụm lệnh chờ dày đặc ở đó; phải qua vài nhịp thì pool mới cạn đủ để order flow đẩy giá đi.
 
 **Phân biệt với "IDM lồng nhau đa khung" ở §5:** phần đó nói về một HTF IDM chứa các LTF IDM *khác nhau* theo tính phân dạng. Case này khác hẳn: chỉ có **một** pool equal, trên **cùng một khung**, nhưng bị thọc nhiều lần vì độ sâu order-book của chính nó — không phải hiện tượng fractal.
 
@@ -438,7 +438,7 @@ HTF Bearish Bias
 ## 16. Phân định ranh giới: Inducement vs Liquidity Sweep vs MSS
 
 > [!danger] Vì sao ba khái niệm này luôn bị gộp làm một
-> Inducement, [[20 - Liquidity Sweep|Liquidity Sweep]] và [[21 - Market Structure Shift|MSS]] gần như luôn xuất hiện trong cùng một sequence, trên cùng một chart, cách nhau vài nến — nên trader thường nói "sweep" khi ý là IDM, hoặc gọi MSS là "sweep". Bảng dưới đây phân định dứt điểm bằng câu hỏi mà mỗi khái niệm trả lời.
+> Inducement, [[20-Liquidity-Sweep|Liquidity Sweep]] và [[21-Market-Structure-Shift|MSS]] gần như luôn xuất hiện trong cùng một sequence, trên cùng một chart, cách nhau vài nến — nên trader thường nói "sweep" khi ý là IDM, hoặc gọi MSS là "sweep". Bảng dưới đây phân định dứt điểm bằng câu hỏi mà mỗi khái niệm trả lời.
 
 **Ba câu hỏi cốt lõi:**
 - **Inducement** trả lời: *"Pool thanh khoản NÀO được đặt làm mồi, ở VỊ TRÍ nào so với POI thật?"* — đây là một VAI TRÒ/VỊ TRÍ, được xác định TRƯỚC khi giá chạm tới nó.

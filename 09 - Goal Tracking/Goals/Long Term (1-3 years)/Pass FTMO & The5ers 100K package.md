@@ -10,7 +10,7 @@ baseline: Chưa đủ điều kiện gate — đang ở giai đoạn chuẩn b�
 target: Funded FTMO 100K + Funded The5ers 100K trước 2028-06-30
 phase: Phase 5 - Scaling
 start_date: 2026-07-18
-due_date: 2028-06-30
+due_date: 2029-02-28
 tags:
   - goal
   - prop-firm

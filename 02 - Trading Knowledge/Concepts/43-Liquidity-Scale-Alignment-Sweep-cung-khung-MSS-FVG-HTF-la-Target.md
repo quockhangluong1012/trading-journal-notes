@@ -33,21 +33,21 @@ last_reviewed: 2026-07-12
 created: 2026-07-12
 updated: 2026-07-28
 prerequisites:
-  - "[[20 - Liquidity Sweep]]"
-  - "[[21 - Market Structure Shift]]"
-  - "[[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]"
-  - "[[16 - Internal & External Range Liquidity (IRL & ERL)]]"
-  - "[[32 - Top-down Analysis (Multiple Timeframes)]]"
+  - "[[20-Liquidity-Sweep]]"
+  - "[[21-Market-Structure-Shift]]"
+  - "[[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]"
+  - "[[16-Internal-External-Range-Liquidity-IRL-ERL]]"
+  - "[[32-Top-down-Analysis-Multiple-Timeframes]]"
 common_mistakes:
-  - "[[02 - Mistake - Enter before liquidity sweep]]"
-  - "[[03 - Mistake - Entry When MSS not in POI Zone]]"
-  - "[[06 - Mistake - Not Have Market Structure Shift]]"
+  - "[[02-Mistake-Enter-before-liquidity-sweep]]"
+  - "[[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]"
+  - "[[06-Mistake-Not-Have-Market-Structure-Shift]]"
 ---
 
 # Liquidity Scale Alignment (Sweep cùng khung với MSS & FVG)
 
 > [!summary] Tóm tắt 1 câu
-> **Cú [[20 - Liquidity Sweep|liquidity sweep]] mà mô hình [[01 - ICT 2022 Model|2022]] yêu cầu phải xảy ra CÙNG KHUNG (cùng scale) với [[21 - Market Structure Shift|MSS]] và [[13 - FVG  - Fair Value Gap|FVG]] tạo entry — thường là một short-term high/low cấp LTF ngay tại POI; còn các bể thanh khoản lớn của HTF (EQH/EQL) là [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)|TARGET / draw]], KHÔNG phải điều kiện kích hoạt (TRIGGER) để vào lệnh.**
+> **Cú [[20-Liquidity-Sweep|liquidity sweep]] mà mô hình [[01 - ICT 2022 Model|2022]] yêu cầu phải xảy ra CÙNG KHUNG (cùng scale) với [[21-Market-Structure-Shift|MSS]] và [[13-FVG-Fair-Value-Gap|FVG]] tạo entry — thường là một short-term high/low cấp LTF ngay tại POI; còn các bể thanh khoản lớn của HTF (EQH/EQL) là [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|TARGET / draw]], KHÔNG phải điều kiện kích hoạt (TRIGGER) để vào lệnh.**
 
 > [!important] Nguyên tắc cốt lõi
 > **Trigger và Target phải khác scale và khác vai trò.**
@@ -63,7 +63,7 @@ common_mistakes:
 **Khái niệm:** "Scale alignment" là nguyên tắc khớp **cấp độ (khung thời gian) của cú liquidity sweep** với cấp độ của MSS và FVG trong cùng một entry. Trong chuỗi kinh điển của mô hình 2022 — **Sweep → MSS → FVG → Entry** — cả ba mắt xích diễn ra trên **cùng khung entry**. Nếu bạn vào lệnh trên M5, thì "sweep" cần thiết là một cú quét cấp M5 (một short-term high/low, một cụm equal highs/lows nhỏ *ngay tại POI*), không phải cú quét bể EQH/EQL đồ sộ của H1/H4.
 
 **Mục đích trong ICT:** Phân tách rạch ròi hai vai trò của thanh khoản để không nhầm lẫn:
-- **Draw / Target:** lý do giá *di chuyển* và nơi giá *muốn tới* — thuộc về narrative HTF ([[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)|Draw on Liquidity]]).
+- **Draw / Target:** lý do giá *di chuyển* và nơi giá *muốn tới* — thuộc về narrative HTF ([[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|Draw on Liquidity]]).
 - **Trigger:** bằng chứng khách quan rằng order flow *đã đảo tại POI ngay bây giờ* — thuộc về xác nhận LTF.
 
 **Vì sao khái niệm này quan trọng:** Đây là lằn ranh giữa "chờ đúng kỷ luật" và "chờ nhầm điều kiện rồi đứng nhìn lệnh trôi". Rất nhiều setup A+ đảo chiều **từ trong POI** mà **không** chạy lên quét bể HTF gần nhất; nếu lấy cú quét HTF làm điều kiện bắt buộc, bạn sẽ có một bộ lọc *quá chặt* loại bỏ chính những cú thắng sạch nhất.
@@ -78,10 +78,10 @@ common_mistakes:
 ## 2. Bối cảnh sử dụng
 
 ### Khi nào khái niệm này có giá trị cao?
-- [ ] Đang chạy top-down [[32 - Top-down Analysis (Multiple Timeframes)|D1 → H1 → M5]]: HTF cho bias + POI, LTF cho entry.
+- [ ] Đang chạy top-down [[32-Top-down-Analysis-Multiple-Timeframes|D1 → H1 → M5]]: HTF cho bias + POI, LTF cho entry.
 - [ ] Có một bể EQH/EQL lớn của HTF nằm **phía trên/dưới POI** khiến bạn phân vân "có cần quét nó trước không".
 - [ ] POI (OB/FVG) nằm **thấp/cao hơn** bể HTF đó — tức là chờ quét bể HTF sẽ mâu thuẫn với việc vào lệnh từ POI.
-- [ ] Giá vừa phản ứng tại POI bằng một cú quét nhỏ + [[21 - Market Structure Shift|MSS]] trên LTF.
+- [ ] Giá vừa phản ứng tại POI bằng một cú quét nhỏ + [[21-Market-Structure-Shift|MSS]] trên LTF.
 
 ### Khi nào nên bỏ qua / cẩn trọng?
 - [ ] POI **chính là** bể thanh khoản (khi đó sweep tại POI và sweep bể trùng nhau — xem mục 6, ca Turtle Soup).
@@ -100,8 +100,8 @@ common_mistakes:
 ### Điều kiện bắt buộc (để coi là trigger hợp lệ)
 - [ ] Sweep, MSS và FVG **cùng một khung entry**.
 - [ ] Sweep là **body-context** hợp lệ: wick lấy thanh khoản rồi **đóng cửa quay lại** (không phải phá hẳn).
-- [ ] MSS có **displacement** để lại [[13 - FVG  - Fair Value Gap|FVG]] ([[35 - Aggressive Displacement Entry|displacement]]).
-- [ ] POI có lý do đảo chiều ([[27 - Premium Discount|premium/discount]] hợp bias, [[10 - Consequent Encroachment (Mean Threshold)|CE]] đã chạm).
+- [ ] MSS có **displacement** để lại [[13-FVG-Fair-Value-Gap|FVG]] ([[35-Aggressive-Displacement-Entry|displacement]]).
+- [ ] POI có lý do đảo chiều ([[27-Premium-Discount|premium/discount]] hợp bias, [[10-Consequent-Encroachment-Mean-Threshold|CE]] đã chạm).
 
 ### Điều kiện làm setup yếu đi
 - Bể HTF quá gần và quá "béo" ngay trên POI → xác suất giá bị hút lên quét nó trước cao hơn (rủi ro cho lệnh vào sớm — cân nhắc scale-in / chờ thêm).
@@ -116,14 +116,14 @@ common_mistakes:
 - Ghi rõ: bể HTF này là **nơi giá hướng tới**, không phải điều kiện vào lệnh.
 
 ### H1 / M15 — POI & Context
-- Khoanh POI ([[25 - OB - Order Block|OB]]/FVG) trong [[27 - Premium Discount|premium/discount]] đúng bias.
+- Khoanh POI ([[25-OB-Order-Block|OB]]/FVG) trong [[27-Premium-Discount|premium/discount]] đúng bias.
 - Nhận diện short-term high/low **ngay cạnh POI** — đây mới là bể mà cú entry cần quét.
 - Câu hỏi kiểm tra: "POI của mình có phải chính là bể HTF không? Nếu KHÔNG → tuyệt đối không lấy cú quét bể HTF làm trigger."
 
 ### M5 / M1 — Confirmation & Entry
 - Chờ giá vào POI → soi LTF: **sweep STH/STL tại POI → MSS (displacement) → FVG**.
 - **M5 MSS chính là trọng tài**: nó xuất hiện ở đâu thì cú đảo chiều bắt đầu ở đó — bất kể bể HTF đã bị quét hay chưa.
-- Entry vào FVG / LTF OB do cây displacement để lại, kèm [[26 - OTE - Optimal Trade Entry|OTE]] nếu có. Target = bể HTF (draw).
+- Entry vào FVG / LTF OB do cây displacement để lại, kèm [[26-OTE-Optimal-Trade-Entry|OTE]] nếu có. Target = bể HTF (draw).
 
 ---
 
@@ -131,12 +131,12 @@ common_mistakes:
 
 ### Setup được xem là hợp lệ khi
 - [ ] Sweep + MSS + FVG cùng khung entry, tại POI.
-- [ ] POI có confluence ([[27 - Premium Discount|PD]] + [[10 - Consequent Encroachment (Mean Threshold)|CE]] + lý do liquidity cục bộ).
+- [ ] POI có confluence ([[27-Premium-Discount|PD]] + [[10-Consequent-Encroachment-Mean-Threshold|CE]] + lý do liquidity cục bộ).
 - [ ] Có target HTF rõ ràng để lệnh có nơi đi tới (RR đạt kế hoạch).
 
 ### Setup bị vô hiệu / phải đứng ngoài khi
 - [ ] Không có cú sweep + MSS ở **bất kỳ** khung nào (chưa có trigger thật).
-- [ ] MSS nằm giữa range, không ở POI ([[21 - Market Structure Shift|internal repricing]], không phải đảo chiều).
+- [ ] MSS nằm giữa range, không ở POI ([[21-Market-Structure-Shift|internal repricing]], không phải đảo chiều).
 - [ ] Giá phá hẳn POI mà không phản ứng.
 - [ ] Bạn đang **chờ bể HTF bị quét** trong khi entry model của bạn không yêu cầu điều đó → đây là lỗi scale mismatch, không phải kỷ luật.
 
@@ -147,7 +147,7 @@ common_mistakes:
 ### Ví dụ đúng (case tham chiếu)
 ![[EQH-target-vs-trigger-20260712.svg]]
 
-**Mô tả:** Bias D1 giảm. POI = [[25 - OB - Order Block|OB]] H1 premium (1.75360–1.74360). Phía trên OB có một vùng **EQH (4 đỉnh ngang)** — bể BSL lớn cấp H1. Giá retrace lên, **wick qua mép trên OB (quét BSL cục bộ cấp LTF) rồi đóng lại vào OB**, sau đó displacement giảm + M5 MSS. Giá **không** chạm EQH.
+**Mô tả:** Bias D1 giảm. POI = [[25-OB-Order-Block|OB]] H1 premium (1.75360–1.74360). Phía trên OB có một vùng **EQH (4 đỉnh ngang)** — bể BSL lớn cấp H1. Giá retrace lên, **wick qua mép trên OB (quét BSL cục bộ cấp LTF) rồi đóng lại vào OB**, sau đó displacement giảm + M5 MSS. Giá **không** chạm EQH.
 
 **Vì sao đây là ví dụ tốt:**
 - Cú sweep cục bộ trên OB + M5 MSS = **trigger đầy đủ, cùng scale** → được phép vào.
@@ -160,7 +160,7 @@ common_mistakes:
 **Bài học:**
 - "Chưa có liquidity sweep" là **sai về sự kiện**: cú quét đã xảy ra ở cấp LTF (wick trên OB), chỉ là không ở bể HTF.
 - Đòi quét EQH để short *từ dưới* EQH thường **tự mâu thuẫn**: nếu giá thật sự lên quét EQH, OB có thể đã hỏng.
-- Đây thuần là lỗi **scale mismatch** → xem [[02 - Mistake - Enter before liquidity sweep]].
+- Đây thuần là lỗi **scale mismatch** → xem [[02-Mistake-Enter-before-liquidity-sweep]].
 
 ---
 
@@ -170,7 +170,7 @@ common_mistakes:
 
 Nguyên tắc "trigger cùng khung, target là HTF" đúng ~90% trường hợp, nhưng có bốn ca ngoại lệ mà chỉ khi backtest/trade nhiều mới lộ ra. Không nắm chúng, bạn sẽ hoặc bỏ lỡ (quá cứng nhắc), hoặc dính bẫy (quá lỏng).
 
-**A. POI CHÍNH LÀ bể thanh khoản (ca Turtle Soup).** Khi POI của bạn *trùng* với một pool HTF (ví dụ OB nằm ngay tại vùng equal lows, hoặc FVG bao trùm old low), thì "sweep tại POI" và "sweep bể HTF" là **một sự kiện duy nhất** — lúc này bạn *bắt buộc* phải chờ wick xuyên qua bể rồi đóng lại. Đây không phải mâu thuẫn với nguyên tắc; đây là trường hợp scale của POI và scale của pool **tình cờ bằng nhau**. Dấu hiệu nhận biết: bạn không thể vẽ một "STH/STL cục bộ" nào *bên trong* POI tách biệt với chính cái bể — vì chúng là một. Xem [[33 - Turtle Soup]].
+**A. POI CHÍNH LÀ bể thanh khoản (ca Turtle Soup).** Khi POI của bạn *trùng* với một pool HTF (ví dụ OB nằm ngay tại vùng equal lows, hoặc FVG bao trùm old low), thì "sweep tại POI" và "sweep bể HTF" là **một sự kiện duy nhất** — lúc này bạn *bắt buộc* phải chờ wick xuyên qua bể rồi đóng lại. Đây không phải mâu thuẫn với nguyên tắc; đây là trường hợp scale của POI và scale của pool **tình cờ bằng nhau**. Dấu hiệu nhận biết: bạn không thể vẽ một "STH/STL cục bộ" nào *bên trong* POI tách biệt với chính cái bể — vì chúng là một. Xem [[33-Turtle-Soup]].
 
 **B. Bể HTF quá "béo" và quá sát POI.** Nếu một bể EQH/EQL đồ sộ nằm chỉ chênh vài pip *ngay trên* POI (cho Short), xác suất giá bị **hút lên quét bể trước** rồi mới đảo là rất cao — vì draw on liquidity phía đó còn mạnh. Vào Short *ngay từ mép dưới* bể lúc này là vào quá sớm, dễ bị wick quét stop. Xử lý: (1) hạ size, (2) chia lệnh scale-in (một phần tại POI, một phần sau khi giá quét bể xong nếu OB còn nguyên), hoặc (3) chờ hẳn giá quét bể rồi tìm lại trigger cùng khung. Đây là ngoại lệ *duy nhất* mà việc "để ý bể HTF" là hợp lý — nhưng để **canh thời điểm**, không phải để biến bể thành điều kiện bắt buộc.
 
@@ -208,13 +208,13 @@ Hai ca dưới đây lấp hai lỗ hổng còn lại của nguyên tắc: nó l
 
 > [!note] Minh họa khái niệm, KHÔNG phải dữ liệu giao dịch thật.
 
-Nguyên tắc gốc dồn hết sự chú ý vào **trigger**: sweep + [[21 - Market Structure Shift|MSS]] + [[13 - FVG  - Fair Value Gap|FVG]] phải **cùng khung entry**. Nhưng có một mặt gương ít ai nói tới: **target cũng phân tầng scale**. Giữa POI (nơi bạn entry) và bể HTF mà bạn nhắm tới, gần như luôn tồn tại một **pool TRUNG GIAN** — một STH/STL cấp M15, một session high/low, một cụm EQH/EQL nhỏ — mà đa số không map ra trước khi vào lệnh.
+Nguyên tắc gốc dồn hết sự chú ý vào **trigger**: sweep + [[21-Market-Structure-Shift|MSS]] + [[13-FVG-Fair-Value-Gap|FVG]] phải **cùng khung entry**. Nhưng có một mặt gương ít ai nói tới: **target cũng phân tầng scale**. Giữa POI (nơi bạn entry) và bể HTF mà bạn nhắm tới, gần như luôn tồn tại một **pool TRUNG GIAN** — một STH/STL cấp M15, một session high/low, một cụm EQH/EQL nhỏ — mà đa số không map ra trước khi vào lệnh.
 
 Diễn biến điển hình: giá đảo **đúng từ POI** (trigger cùng khung hoàn toàn hợp lệ — không có gì sai ở khâu vào lệnh), displacement đẹp, R chạy ngon. Nhưng nó chỉ chạy **tới pool trung gian đó** rồi khựng lại / đảo ngược / consolidate một hồi. Người đặt TP **thẳng tới bể HTF** (T2) chứng kiến lệnh đang +2R bị kéo ngược về BE, hoặc ngồi giữ một runner đã hết momentum quá lâu, hoặc tệ hơn là chốt non vì hoảng khi giá quay đầu tại T1.
 
 Hàm ý thực chiến: **map cả tầng target**, không chỉ nhìn bể HTF xa nhất.
 - **T1 = pool trung gian** (cùng hoặc hơi lớn hơn khung entry) → nơi **chốt partial** và **dời BE**.
-- **T2 = bể HTF** ([[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)|draw on liquidity]] thật sự) → nơi để **runner** đi tới.
+- **T2 = bể HTF** ([[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|draw on liquidity]] thật sự) → nơi để **runner** đi tới.
 
 | Tầng target | Scale | Cách dùng |
 |---|---|---|
@@ -237,7 +237,7 @@ Hàm ý thực chiến: **map cả tầng target**, không chỉ nhìn bể HTF 
 
 Một cú sweep STH/STL **đúng cấp khung entry** — tức đã qua được bài kiểm tra scale ở §8 — vẫn có thể là **NHIỄU**. Trường hợp hay gặp nhất: nó chỉ là một **spike cơ học lúc mở phiên** (NY 09:30 open swing, London open), nơi thanh khoản mỏng và giá giật mạnh hai chiều, chứ **không nhắm vào một pool thanh khoản có ý nghĩa** nào.
 
-Điểm mấu chốt: **"cùng khung" là điều kiện CẦN, không ĐỦ.** Một cú sweep hợp lệ phải quét **thanh khoản THẬT** — equal highs/lows, old high/low, session liquidity, một nơi có [[20 - Liquidity Sweep|trader thực sự mắc kẹt]] với stop nằm đó. Spike mở phiên xuyên xuống một vùng trống rỗng không có ai kẹt thì dù wick "trông giống" một cú quét STL cấp M5, nó không mang order flow của một cú lấy thanh khoản.
+Điểm mấu chốt: **"cùng khung" là điều kiện CẦN, không ĐỦ.** Một cú sweep hợp lệ phải quét **thanh khoản THẬT** — equal highs/lows, old high/low, session liquidity, một nơi có [[20-Liquidity-Sweep|trader thực sự mắc kẹt]] với stop nằm đó. Spike mở phiên xuyên xuống một vùng trống rỗng không có ai kẹt thì dù wick "trông giống" một cú quét STL cấp M5, nó không mang order flow của một cú lấy thanh khoản.
 
 **Bộ lọc nội dung** (chạy sau khi đã pass bài đo scale ở §8): hỏi thẳng *"Wick này quét CÁI GÌ? Ai kẹt ở đó?"*
 - Chỉ ra được một pool cụ thể (equal lows tại POI, old low, session low có volume) → là ứng viên trigger thật.
@@ -249,7 +249,7 @@ Một cú sweep STH/STL **đúng cấp khung entry** — tức đã qua được
 > Ghi vào nhật ký mỗi lệnh trường `sweep_target_named: yes/no` — bắt buộc **viết tên cụ thể** của pool mà cú sweep đã quét (ví dụ "equal lows M5 tại đáy POI", "session low London"). Nếu ô này là `no` (không gọi tên được pool nào) → tự động **veto** lệnh. Cuối tháng, đếm tỉ lệ thắng của nhóm `yes` vs `no` để tự chứng minh giá trị của bộ lọc.
 
 > [!info] Liên hệ khái niệm
-> Ca này giao với [[33 - Turtle Soup]] (cú sweep phải nhắm một pool thật để soup) và [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)|Draw on Liquidity]] (không có "ai là đối ứng" thì không có lý do để order flow đảo). Một spike mở phiên rỗng không thỏa cả hai.
+> Ca này giao với [[33-Turtle-Soup]] (cú sweep phải nhắm một pool thật để soup) và [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|Draw on Liquidity]] (không có "ai là đối ứng" thì không có lý do để order flow đảo). Một spike mở phiên rỗng không thỏa cả hai.
 
 ---
 
@@ -355,7 +355,7 @@ Phần lớn tranh cãi về khái niệm này đến từ chỗ "cùng khung" n
 
 ## Liên kết
 - Model: [[01 - ICT 2022 Model]]
-- Nền tảng: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[13 - FVG  - Fair Value Gap]] · [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]] · [[16 - Internal & External Range Liquidity (IRL & ERL)]] · [[32 - Top-down Analysis (Multiple Timeframes)]]
+- Nền tảng: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[13-FVG-Fair-Value-Gap]] · [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]] · [[16-Internal-External-Range-Liquidity-IRL-ERL]] · [[32-Top-down-Analysis-Multiple-Timeframes]]
 - Case liên quan: [[2026-07-12 M15 - Xác định MSS khi retrace OB H1 (nến xanh liên tiếp)]] · [[2026-07-12 H1-M5 - EQH chưa quét - Sweep phải cùng khung MSS-FVG (Target vs Trigger)]]
 
 ---
@@ -400,8 +400,8 @@ Mục 8 của phần lõi đã đưa ra 4 cách đo scale (bậc swing, % biên 
 
 ### A.5 Tương tác & mâu thuẫn với các khái niệm ICT khác
 
-- **Với [[33 - Turtle Soup]]:** mâu thuẫn giả — khi POI trùng với chính bể liquidity (ca A trong mục 6B), Turtle Soup và Scale Alignment không xung đột; Turtle Soup chính là trường hợp đặc biệt mà "cùng scale" xảy ra vì trigger và pool là một. Chỉ mâu thuẫn thật khi trader nhầm một Turtle Soup HTF thuần với một entry LTF thường — lúc đó cần hỏi rõ "entry model của tôi hôm nay là gì" trước khi áp luật.
-- **Với [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]:** không mâu thuẫn — Draw on Liquidity giải thích **lý do vĩ mô** giá di chuyển (ai là đối ứng ở tầng lớn); Scale Alignment giải thích **cách xác nhận vi mô** rằng giá đã bắt đầu di chuyển. Hai khái niệm bổ sung nhau: một cái cho hướng đi/target, một cái cho tín hiệu bấm nút.
+- **Với [[33-Turtle-Soup]]:** mâu thuẫn giả — khi POI trùng với chính bể liquidity (ca A trong mục 6B), Turtle Soup và Scale Alignment không xung đột; Turtle Soup chính là trường hợp đặc biệt mà "cùng scale" xảy ra vì trigger và pool là một. Chỉ mâu thuẫn thật khi trader nhầm một Turtle Soup HTF thuần với một entry LTF thường — lúc đó cần hỏi rõ "entry model của tôi hôm nay là gì" trước khi áp luật.
+- **Với [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]:** không mâu thuẫn — Draw on Liquidity giải thích **lý do vĩ mô** giá di chuyển (ai là đối ứng ở tầng lớn); Scale Alignment giải thích **cách xác nhận vi mô** rằng giá đã bắt đầu di chuyển. Hai khái niệm bổ sung nhau: một cái cho hướng đi/target, một cái cho tín hiệu bấm nút.
 - **Với FVG chồng OB ngược chiều (không phải chủ đề chính của file này nhưng thường gặp cùng lúc):** khi một MSS cấp LTF tại POI tạo FVG, nhưng ngay trong khoảng đó cũng có một OB HTF ngược hướng chưa mitigate — đây là mâu thuẫn *khác*, xử lý bằng cách ưu tiên tín hiệu **gần nhất về thời gian và đang có displacement mạnh hơn** (MSS+FVG mới luôn "nói" nhiều hơn một OB cũ chưa được test lại), không liên quan đến scale alignment.
 - **Với sweep trùng lúc CISD chưa xác nhận:** nếu sweep cấp LTF xảy ra nhưng CISD/MSS cấp LTF chưa đóng nến xác nhận, đó **chưa phải trigger** theo cả hai khái niệm — quy tắc phân xử: luôn chờ đủ cả 3 mắt xích (sweep → MSS → FVG) cùng khung, không tách riêng "đã có sweep" ra để vào sớm.
 
@@ -555,7 +555,7 @@ Người dùng kỷ luật có thể trả lời phản biện falsifiability b�
 
 **13. Sự khác nhau giữa stop-market và stop-limit khi FVG/POI bị "chọc" bởi displacement quá nhanh.** Vì sao xảy ra: khi cây MSS có displacement rất mạnh (thường ngày tin), giá có thể lướt qua toàn bộ vùng FVG dự kiến trong một nến, khiến lệnh limit đặt sẵn tại mép FVG không kịp khớp hoặc chỉ khớp partial; nếu dùng stop-limit cho việc breakout-entry (trường hợp aggressive), có thể bị "không khớp" hoàn toàn nếu giá gap qua ngưỡng limit. Cách xử lý: với thị trường/khung có displacement thường xuyên rất mạnh (ngày tin, NQ), ưu tiên market order tại vùng entry đã xác nhận thay vì limit chờ, chấp nhận trượt giá nhỏ để chắc chắn khớp lệnh.
 
-**14. Correlation risk khi trigger scale-aligned xảy ra đồng thời trên nhiều cặp cùng nhóm (ví dụ EURUSD và GBPUSD cùng long, cả hai đều thực chất là short USD).** Vì sao xảy ra: một trigger LTF hợp lệ tại POI trên EURUSD và một trigger tương tự trên GBPUSD trong cùng phiên thường xuất phát từ cùng một động lực vĩ mô (DXY suy yếu) — về bản chất đây là MỘT rủi ro USD lớn, dù chart hiện ra như hai setup độc lập, mỗi setup đều "đúng" theo Scale Alignment riêng của nó. Cách xử lý: khi hai hoặc nhiều trigger hợp lệ xuất hiện cùng lúc trên các cặp có tương quan cao, tính gộp rủi ro như một vị thế duy nhất (xem thêm [[43 - Position Sizing]] mục về tương quan), không cộng risk % của từng lệnh riêng lẻ.
+**14. Correlation risk khi trigger scale-aligned xảy ra đồng thời trên nhiều cặp cùng nhóm (ví dụ EURUSD và GBPUSD cùng long, cả hai đều thực chất là short USD).** Vì sao xảy ra: một trigger LTF hợp lệ tại POI trên EURUSD và một trigger tương tự trên GBPUSD trong cùng phiên thường xuất phát từ cùng một động lực vĩ mô (DXY suy yếu) — về bản chất đây là MỘT rủi ro USD lớn, dù chart hiện ra như hai setup độc lập, mỗi setup đều "đúng" theo Scale Alignment riêng của nó. Cách xử lý: khi hai hoặc nhiều trigger hợp lệ xuất hiện cùng lúc trên các cặp có tương quan cao, tính gộp rủi ro như một vị thế duy nhất (xem thêm [[43-Position-Sizing]] mục về tương quan), không cộng risk % của từng lệnh riêng lẻ.
 
 **15. Sweep bằng gap (đặc biệt quan trọng với chỉ số mở phiên) khác về bản chất với sweep bằng wick nội phiên.** Vì sao xảy ra: một cú gap mở phiên (ví dụ giá mở NAS100 cách xa giá đóng phiên trước) có thể "quét" qua một STH/STL cục bộ chỉ vì khoảng trống thời gian không giao dịch, không phải vì có áp lực lệnh thật đẩy giá tới đó — về bản chất order-flow, gap sweep và wick sweep nội phiên không tương đương, dù cả hai đều "chạm" qua mức cũ. Cách xử lý: hạ độ tin cậy của một cú "sweep" xảy ra ngay tại giá mở phiên do gap; ưu tiên chờ xác nhận thêm bằng cấu trúc nội phiên (một MSS thật sau gap) trước khi coi đó là trigger hoàn chỉnh.
 

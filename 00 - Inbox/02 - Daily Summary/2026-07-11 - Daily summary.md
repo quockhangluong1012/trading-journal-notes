@@ -29,8 +29,8 @@ tags: [daily-summary, prop-firm-prep]
 
 Hôm nay là phần **làm được nhất** trong ngày. Hai concept có `last_reviewed = 2026-07-11` (bằng chứng thật, khớp 2 ô `[x]` trong mục "🌅 Buổi sáng" của file task):
 
-- **[[35 - Aggressive Displacement Entry]]** (`status: developing`) — ôn lại nguyên tắc "displacement càng mạnh → retrace càng nông", entry thật nằm cao hơn (CE của FVG, hoặc FVG/OB nhỏ ở M1) thay vì chờ fill sâu FVG to. Trực tiếp trị lỗi timing [[08 - Mistake - Weak Displacement]] và bổ trợ cho gate "Signal quality" trong 4-gate pre-trade rút ra hôm 07-10.
-- **[[42 - SMT Divergence]]** (`status: developing`) — ôn lại SMT như công cụ xác nhận cực trị TERMINAL (hai tài sản tương quan lệch pha tại đỉnh/đáy). Đây là công cụ chống lỗi #2 [[09 - Mistake - Wrong daily bias]] — chính lỗi đã tái diễn trong backtest 07-10 số 02 (nhầm HTF bias với short-term draw).
+- **[[35-Aggressive-Displacement-Entry]]** (`status: developing`) — ôn lại nguyên tắc "displacement càng mạnh → retrace càng nông", entry thật nằm cao hơn (CE của FVG, hoặc FVG/OB nhỏ ở M1) thay vì chờ fill sâu FVG to. Trực tiếp trị lỗi timing [[08-Mistake-Weak-Displacement]] và bổ trợ cho gate "Signal quality" trong 4-gate pre-trade rút ra hôm 07-10.
+- **[[42-SMT-Divergence]]** (`status: developing`) — ôn lại SMT như công cụ xác nhận cực trị TERMINAL (hai tài sản tương quan lệch pha tại đỉnh/đáy). Đây là công cụ chống lỗi #2 [[09-Mistake-Wrong-daily-bias]] — chính lỗi đã tái diễn trong backtest 07-10 số 02 (nhầm HTF bias với short-term draw).
 
 > [!summary] Đánh giá học
 > - **Cả3 concept đều ĐÃ ở `developing` từ trước** (từ 07-09) → hôm nay là **tái ôn** (bump `last_reviewed`), KHÔNG có concept nào đổi status. Không có concept `tested` thứ 2 hôm nay.
@@ -57,7 +57,7 @@ Hôm nay là phần **làm được nhất** trong ngày. Hai concept có `last_
 
 **Không có lỗi nào được kích hoạt hôm nay** — vì không có lệnh live và không có backtest mới, không có `[[Mistake - ...]]` nào được tham chiếu trong dữ liệu hôm nay.
 
-- Số đếm top-3 lỗi (từ trade live) **giữ nguyên**: [[06 - Mistake - Not Have Market Structure Shift]] (14 lần — #1), [[09 - Mistake - Wrong daily bias]] (7 lần — #2), [[07 - Mistake - Risk more than 0.5% total account]] (5 lần — #3). Cả 3 note đã có nội dung biện pháp đối phó đầy đủ (viết từ 07-08).
+- Số đếm top-3 lỗi (từ trade live) **giữ nguyên**: [[06-Mistake-Not-Have-Market-Structure-Shift]] (14 lần — #1), [[09-Mistake-Wrong-daily-bias]] (7 lần — #2), [[07-Mistake-Risk-more-than-0.5-total-account]] (5 lần — #3). Cả 3 note đã có nội dung biện pháp đối phó đầy đủ (viết từ 07-08).
 - Tâm lý: đây là ngày "duy trì thói quen" (học + journaling) chứ không có áp lực execution. Điểm cần cảnh giác không phải cảm xúc lệnh, mà là **xu hướng trì hoãn các task track/hành chính** (lot size, W27, phase label) — chúng dễ hơn backtest nhưng lại là thứ liên tục bị bỏ lại.
 
 ## 🎯 Đối chiếu mục tiêu
@@ -90,7 +90,7 @@ Feed thẳng vào daily-trading-task sáng mai — **ưu tiên xoá nợ track, 
 2. **Sửa nhãn `phase`** trong 2 goal challenge: `"Phase 4 - Challenge"` → `"Phase 0 - Preparation"` (1 dòng frontmatter/file).
 3. **Dán dòng `2026-W27`** (đã soạn trong [[2026-07 W27 - Weekly summary]]) vào [[02 - Skill Metrics]], tự chấm Chất lượng quy trình/Kỷ luật (1–5). **07-12 là chốt W28** → chuẩn bị luôn dòng W28.
 4. **Nối lại chuỗi backtest:** log ≥1 backtest mới vào `04 - Backtesting/2026-07-12/`, **đổi thị trường** sang NAS100/GBPUSD/XAUUSD (mẫu đang 9/10 EURUSD). Áp 4-gate pre-trade, chỉ tính entry sau nến đóng cửa có displacement thật.
-5. **Ôn [[18 - Kill Zones]] cho THẬT** (hôm nay chỉ sửa định dạng) — ứng viên `tested` #2 vì đã có lệnh phản chứng `invalid-out-of-KZ`.
+5. **Ôn [[18-Kill-Zones]] cho THẬT** (hôm nay chỉ sửa định dạng) — ứng viên `tested` #2 vì đã có lệnh phản chứng `invalid-out-of-KZ`.
 6. **Cân nhắc tick cột mốc đã dư bằng chứng** ( tự chấm, không tick giùm): journaling #1, cut-mistakes #1+#2 — rồi chỉnh `progress` frontmatter cho khớp cột mốc để xoá 3 mismatch đang tồn tại.
 
 ## 🔗 Liên kết

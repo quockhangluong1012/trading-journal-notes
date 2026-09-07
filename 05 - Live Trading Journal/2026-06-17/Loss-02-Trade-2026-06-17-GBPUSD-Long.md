@@ -9,7 +9,7 @@ kill_zone:
   - London
 pnl: -36
 r_multiple:
-mistakes: "[[09 - Mistake - Wrong daily bias]]"
+mistakes: "[[09-Mistake-Wrong-daily-bias]]"
 planned_rr: 6.14
 result: Loss
 session: London
@@ -43,7 +43,7 @@ da_opposite_case: "not viable"
 
 ## 2. Phân tích sau lệnh:
 - **Result**: Hit ==stoploss==
-- **Mistake**: [[06 - Mistake - Not Have Market Structure Shift]], [[09 - Mistake - Wrong daily bias]]
+- **Mistake**: [[06-Mistake-Not-Have-Market-Structure-Shift]], [[09-Mistake-Wrong-daily-bias]]
 - **Lý do**: 
 	- 1. Vào lệnh khi thấy giá phản ứng khi tới vùng POI (OB) và tạo displacement + FVG. Chờ giá hồi về FVG và vào lệnh
 	- Tuy nhiên giá chưa tạo MSS nên vẫn là trand giảm. Vào lệnh long khi trend giảm là counter trend dẫn đến stoplos

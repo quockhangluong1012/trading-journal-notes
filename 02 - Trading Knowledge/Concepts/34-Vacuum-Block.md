@@ -35,7 +35,7 @@ updated: 2026-07-28
 
 Các nguồn tạo VB phổ biến:
 - **Session gap**: chênh lệch giữa giá đóng phiên hôm trước và giá mở phiên hôm sau (đặc biệt rõ trên index như NQ1/NAS100, futures có giờ nghỉ).
-- **Weekend gap**: gap giữa giá đóng cửa thứ Sáu và giá mở cửa Chủ Nhật/thứ Hai — liên quan trực tiếp tới [[24 - New Week Opening Gap]].
+- **Weekend gap**: gap giữa giá đóng cửa thứ Sáu và giá mở cửa Chủ Nhật/thứ Hai — liên quan trực tiếp tới [[24-New-Week-Opening-Gap]].
 - **News gap / runaway candle**: cú displacement mạnh quanh tin tức (NFP, CPI, FOMC) khiến giá nhảy qua một dải mà thanh khoản gần như cạn — để lại "vacuum" trên cây nến tin.
 
 ### Bản chất (vacuum / void)
@@ -45,7 +45,7 @@ Bản chất của VB là một **vùng định giá bị bỏ qua**. Giống nh
 1. Xác định **mép trên** của gap = mức thấp nhất của vùng giao dịch phía trên (ví dụ open của phiên mới khi gap down, hoặc đáy cây nến trên khi gap up).
 2. Xác định **mép dưới** của gap = mức cao nhất của vùng giao dịch phía dưới (ví dụ close phiên trước, hoặc đỉnh cây nến dưới).
 3. Vùng giữa hai mép = **Vacuum Block range** `[mép trên] – [mép dưới]`.
-4. **CE 50%** = `(mép trên + mép dưới) / 2`. Đây là **mean threshold** — ngưỡng phản ứng quan trọng nhất, thường là nơi giá tối thiểu chạm tới trước khi tiếp diễn (xem [[10 - Consequent Encroachment (Mean Threshold)]]).
+4. **CE 50%** = `(mép trên + mép dưới) / 2`. Đây là **mean threshold** — ngưỡng phản ứng quan trọng nhất, thường là nơi giá tối thiểu chạm tới trước khi tiếp diễn (xem [[10-Consequent-Encroachment-Mean-Threshold]]).
 
 ### So sánh Vacuum Block vs FVG vs Liquidity Void vs NWOG
 
@@ -64,7 +64,7 @@ Bản chất của VB là một **vùng định giá bị bỏ qua**. Giống nh
 ### Mục đích trong ICT
 - Cung cấp một **draw on liquidity (DOL)** rõ ràng: nếu phía trên/dưới có một VB chưa lấp, đó là một đích hợp lý cho giá.
 - Cung cấp một **POI để tìm phản ứng**: khi giá quay về CE của VB, đó là vùng canh entry theo bias.
-- Hỗ trợ xác định **premium/discount** trong [[12 - Dealing Range]] (xem [[27 - Premium Discount]]).
+- Hỗ trợ xác định **premium/discount** trong [[12-Dealing-Range]] (xem [[27-Premium-Discount]]).
 
 ### Vì sao quan trọng
 Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trường ghét sự kém hiệu quả — một vùng định giá chưa ai giao dịch sẽ là một nam châm logic. Trader biết đọc VB có một **target/POI khách quan** thay vì đoán mò.
@@ -78,7 +78,7 @@ Vì gap là một bất thường rất "sạch" và dễ thấy. Thị trườn
 - **Không phải** mọi cây nến lớn — phải có **gap thật / không giao dịch ở giữa** mới gọi là vacuum đúng nghĩa (nếu là dải chạy liên tục thì đó là Liquidity Void / FVG).
 - **Không phải** lệnh đảo chiều tự động — VB là **magnet/POI**, không bảo đảm phản ứng. Cần xác nhận (xem mục 5).
 - **Không phải** chỉ dùng để fill rồi đảo — giá có thể chỉ chạm CE (partial) rồi đi tiếp theo bias.
-- **Không phải** thay thế bias — VB chỉ trả lời "về đâu", còn "đi hướng nào" vẫn do [[12 - Daily Bias]] quyết định.
+- **Không phải** thay thế bias — VB chỉ trả lời "về đâu", còn "đi hướng nào" vẫn do [[12-Daily-Bias]] quyết định.
 
 ### Order-flow / market-maker rationale — vì sao gap chưa lấp lại hoạt động như nam châm
 
@@ -104,8 +104,8 @@ Vacuum Block không "đồng nhất" giữa các thị trường — nguồn g�
 
 | Thị trường | Nguồn gap chính | Đặc thù cần lưu ý | Gợi ý thực chiến |
 |---|---|---|---|
-| **NQ1 / NDX (NAS100)** | Session gap quanh giờ mở cửa RTH (futures đóng cửa ngắn rồi mở lại), gap qua đêm (overnight gap) do CME có phiên electronic gần như 24h nhưng thanh khoản mỏng ngoài RTH | Gap quanh mở cửa NY thường **rebalance rất nhanh** (trong Kill Zone London/NY mở) vì thanh khoản dồn về; gap qua đêm dễ bị "giả" nếu chỉ do thanh khoản mỏng chứ không phải tin thật | Ưu tiên VB hình thành ngay trước/sau [[18 - Kill Zones]] NY; cẩn trọng VB sinh trong phiên Á thanh khoản thấp — dễ bị nuốt lại ngay khi London mở |
-| **EURUSD / GBPUSD** | Chủ yếu là **NWOG** (gap cuối tuần, thị trường đóng cửa thật từ tối thứ Sáu tới Chủ Nhật) — xem [[24 - New Week Opening Gap]]; hiếm khi có session gap giữa tuần vì forex giao dịch liên tục 24/5 | Sunday open thanh khoản cực thấp (chủ yếu Úc/Á mở cửa) → gap cuối tuần dễ bị "spike giả" trước khi ổn định; NWOG có xu hướng được rebalance trong 1–3 ngày đầu tuần nếu không có tin lớn phá vỡ | Không vào lệnh ngay lúc mở cửa Chủ Nhật; chờ thanh khoản London/NY thứ Hai xác nhận hướng trước khi coi NWOG là DOL đáng tin |
+| **NQ1 / NDX (NAS100)** | Session gap quanh giờ mở cửa RTH (futures đóng cửa ngắn rồi mở lại), gap qua đêm (overnight gap) do CME có phiên electronic gần như 24h nhưng thanh khoản mỏng ngoài RTH | Gap quanh mở cửa NY thường **rebalance rất nhanh** (trong Kill Zone London/NY mở) vì thanh khoản dồn về; gap qua đêm dễ bị "giả" nếu chỉ do thanh khoản mỏng chứ không phải tin thật | Ưu tiên VB hình thành ngay trước/sau [[18-Kill-Zones]] NY; cẩn trọng VB sinh trong phiên Á thanh khoản thấp — dễ bị nuốt lại ngay khi London mở |
+| **EURUSD / GBPUSD** | Chủ yếu là **NWOG** (gap cuối tuần, thị trường đóng cửa thật từ tối thứ Sáu tới Chủ Nhật) — xem [[24-New-Week-Opening-Gap]]; hiếm khi có session gap giữa tuần vì forex giao dịch liên tục 24/5 | Sunday open thanh khoản cực thấp (chủ yếu Úc/Á mở cửa) → gap cuối tuần dễ bị "spike giả" trước khi ổn định; NWOG có xu hướng được rebalance trong 1–3 ngày đầu tuần nếu không có tin lớn phá vỡ | Không vào lệnh ngay lúc mở cửa Chủ Nhật; chờ thanh khoản London/NY thứ Hai xác nhận hướng trước khi coi NWOG là DOL đáng tin |
 | **XAUUSD (Gold)** | Gap chủ yếu do **tin tức** (NFP, CPI, FOMC, biến động địa chính trị) và do vàng giao dịch qua nhiều sàn (spot vs futures) với giờ nghỉ khác nhau; ATR/ngày lớn hơn nhiều so với FX chính | Gap tin tức trên vàng thường **rộng hơn** (tính theo % ATR) và có thể **không rebalance ngay** nếu là displacement thật theo tin cơ bản (thay đổi kỳ vọng lãi suất, risk-off mạnh) — dễ nhầm "gap chờ fill" với "repricing vĩnh viễn" | Với VB do tin: đợi ít nhất 1 nến H1 đóng cửa ổn định, spread thu hẹp về bình thường rồi mới đánh giá; size lệnh nhỏ hơn bình thường vì SL cần rộng hơn theo ATR |
 
 > [!warning] Đừng áp dụng máy móc một bộ luật cho mọi thị trường
@@ -139,23 +139,23 @@ ICT mô tả **IPDA (Interbank Price Delivery Algorithm)** như cơ chế thuậ
 | **Gap down** | Phiên/tuần mới mở **thấp hơn** close trước | VB nằm **trên** giá → magnet kéo lên / kháng cự premium |
 | **Session-gap VB** | Gap giữa close phiên & open phiên kế (index/futures) | Thường được rebalance trong vài giờ đầu phiên mới |
 | **News-gap VB** | Cú nhảy quanh tin (NFP/CPI/FOMC) | Có thể giữ lâu nếu là displacement thật; cẩn trọng độ biến động |
-| **Weekend-gap VB (NWOG)** | Gap close Fri ↔ open Sun/Mon | Mốc tham chiếu tuần; xem [[24 - New Week Opening Gap]] |
+| **Weekend-gap VB (NWOG)** | Gap close Fri ↔ open Sun/Mon | Mốc tham chiếu tuần; xem [[24-New-Week-Opening-Gap]] |
 | **Filled VB** | Giá đã chạm hết range gap | Inefficiency hết hiệu lực → ưu tiên thấp |
 | **Unfilled VB** | Gap còn nguyên hoặc chỉ partial | Vẫn là magnet active → ưu tiên cao |
 
 ### Khi nào giá trị cao?
 - [ ] VB **chưa được lấp** (unfilled) hoặc mới partial tới CE.
-- [ ] VB trùng hướng với [[12 - Daily Bias]] (VB nằm đúng phía của draw on liquidity).
-- [ ] VB nằm ở vùng premium/discount hợp lý của [[12 - Dealing Range]].
-- [ ] VB hình thành kèm **displacement** rõ ([[Displacement]]) hoặc sau một [[20 - Liquidity Sweep]].
+- [ ] VB trùng hướng với [[12-Daily-Bias]] (VB nằm đúng phía của draw on liquidity).
+- [ ] VB nằm ở vùng premium/discount hợp lý của [[12-Dealing-Range]].
+- [ ] VB hình thành kèm **displacement** rõ ([[Displacement]]) hoặc sau một [[20-Liquidity-Sweep]].
 - [ ] VB trùng với một PD Array khác (Order Block, FVG, đỉnh/đáy thanh khoản cũ) → confluence.
-- [ ] Đang trong [[18 - Kill Zones]] phù hợp khi giá tiếp cận VB.
+- [ ] Đang trong [[18-Kill-Zones]] phù hợp khi giá tiếp cận VB.
 
 ### Khi nào bỏ qua?
 - [ ] VB đã **filled hoàn toàn** từ lâu (hết năng lượng magnet).
 - [ ] Gap quá nhỏ / nhiễu, không tách bạch khỏi cấu trúc xung quanh.
 - [ ] VB **ngược bias** mạnh và không có confluence — dễ là bẫy phản ứng yếu.
-- [ ] News-gap trong môi trường biến động cực mạnh, spread giãn, chưa rõ hướng AMD ([[02 - AMD]]).
+- [ ] News-gap trong môi trường biến động cực mạnh, spread giãn, chưa rõ hướng AMD ([[02-AMD]]).
 - [ ] Có nhiều VB chồng chéo gây nhiễu — ưu tiên VB gần nhất theo hướng DOL.
 
 ---
@@ -177,7 +177,7 @@ ICT mô tả **IPDA (Interbank Price Delivery Algorithm)** như cơ chế thuậ
 | Kích thước | Đủ lớn, tách khỏi nhiễu | Quá nhỏ, lẫn trong range |
 | Trạng thái fill | Unfilled / partial tới CE | Đã filled hoàn toàn |
 | Confluence | Trùng OB/FVG/liquidity/PD level | Đơn độc, không có gì đỡ |
-| Đồng pha bias | Cùng hướng [[12 - Daily Bias]] | Ngược bias, không lý do |
+| Đồng pha bias | Cùng hướng [[12-Daily-Bias]] | Ngược bias, không lý do |
 | Xúc tác | Sinh từ news/session/sweep | Không rõ nguyên nhân |
 
 ### Điều kiện bắt buộc
@@ -186,10 +186,10 @@ ICT mô tả **IPDA (Interbank Price Delivery Algorithm)** như cơ chế thuậ
 - VB còn **unfilled hoặc partial**.
 
 ### Điều kiện tăng xác suất
-- Trùng hướng [[12 - Daily Bias]] và là **draw on liquidity** hợp lý.
+- Trùng hướng [[12-Daily-Bias]] và là **draw on liquidity** hợp lý.
 - Có **confluence** với PD Array khác.
-- Sinh sau **liquidity sweep** rồi **displacement** ([[21 - Market Structure Shift]] xác nhận).
-- Giá tiếp cận trong [[18 - Kill Zones]].
+- Sinh sau **liquidity sweep** rồi **displacement** ([[21-Market-Structure-Shift]] xác nhận).
+- Giá tiếp cận trong [[18-Kill-Zones]].
 
 ### Điều kiện làm yếu đi
 - VB đã chạm hết range nhiều lần.
@@ -227,7 +227,7 @@ Không phải mọi khung thời gian đều cho tín hiệu VB rõ như nhau �
 
 ### D1 / H4 — Xác định VB lớn & bias
 - Mở D1/H4 để tìm các **session/weekend/news gap** chưa lấp.
-- Đánh dấu range + CE của từng VB. Ghi chú VB nào nằm phía DOL theo [[12 - Daily Bias]].
+- Đánh dấu range + CE của từng VB. Ghi chú VB nào nằm phía DOL theo [[12-Daily-Bias]].
 - Xác định VB nào là **target** (giá đang chạy về) và VB nào là **POI** (giá có thể phản ứng).
 
 ```text
@@ -244,7 +244,7 @@ Không phải mọi khung thời gian đều cho tín hiệu VB rõ như nhau �
 - Định vùng entry: thường canh phản ứng tại CE hoặc mép xa của VB.
 
 ### M5 / M1 — Xác nhận & timing entry
-- Chờ **liquidity sweep + displacement / MSS** ngay tại VB ([[21 - Market Structure Shift]], [[Displacement]]).
+- Chờ **liquidity sweep + displacement / MSS** ngay tại VB ([[21-Market-Structure-Shift]], [[Displacement]]).
 - Xác nhận FVG nội bộ trên M1/M5 để tinh chỉnh entry (xem [[ICT 2022 Model]]).
 
 ```text
@@ -281,7 +281,7 @@ Một sai lầm phổ biến là dành quá nhiều thời gian "canh" VB ở kh
 
 ### Tình huống đặc biệt: VB xuất hiện ngay trong Kill Zone đang active
 
-Khi một gap mới (ví dụ session-gap NQ1 lúc mở cửa NY) hình thành **ngay trong** [[18 - Kill Zones]] đang diễn ra, quy trình top-down chuẩn (D1 → H1 → M5) không kịp áp dụng tuần tự. Xử lý thực tế:
+Khi một gap mới (ví dụ session-gap NQ1 lúc mở cửa NY) hình thành **ngay trong** [[18-Kill-Zones]] đang diễn ra, quy trình top-down chuẩn (D1 → H1 → M5) không kịp áp dụng tuần tự. Xử lý thực tế:
 1. Xác nhận ngay đây có phải gap thật (đứt gãy giao dịch) hay chỉ là nến biến động mạnh trong dữ liệu — kiểm tra dữ liệu tick/giá mở cửa chính thức nếu có thể.
 2. Đo nhanh range + CE trên khung đang giao dịch (thường H1/M15).
 3. **Không vào lệnh ngay** — một VB vừa sinh ra trong phiên biến động cần ít nhất một nhịp ổn định (1–2 nến) trước khi coi là POI đáng tin, vì spread/độ trượt giá ngay lúc mở phiên có thể tạo tín hiệu giả.
@@ -346,11 +346,11 @@ Khi một gap mới (ví dụ session-gap NQ1 lúc mở cửa NY) hình thành *
 ## 7. Entry model liên quan
 
 - [[ICT 2022 Model]] — VB làm **draw on liquidity** & POI; entry qua sweep + displacement + FVG.
-- [[24 - New Week Opening Gap]] — VB cuối tuần làm mốc tham chiếu & magnet tuần.
-- [[21 - Liquidity Void]] — họ hàng gần: void cần rebalance.
+- [[24-New-Week-Opening-Gap]] — VB cuối tuần làm mốc tham chiếu & magnet tuần.
+- [[21-Liquidity-Void]] — họ hàng gần: void cần rebalance.
 - [[Fair Value Gap]] — dùng FVG nội bộ để tinh chỉnh entry tại VB.
 - [[Order Block]] — confluence khi VB trùng OB.
-- [[20 - Liquidity Sweep]] / [[21 - Market Structure Shift]] — tín hiệu xác nhận tại VB.
+- [[20-Liquidity-Sweep]] / [[21-Market-Structure-Shift]] — tín hiệu xác nhận tại VB.
 
 ```text
 [VB Entry Sequence — theo ICT 2022]
@@ -419,9 +419,9 @@ Khi một gap mới (ví dụ session-gap NQ1 lúc mở cửa NY) hình thành *
 > [!warning] Bắt buộc soát đủ trước khi vào lệnh quanh một Vacuum Block.
 
 **Nhóm A — Bối cảnh & bias**
-- [ ] Đã xác định [[12 - Daily Bias]] hôm nay?
+- [ ] Đã xác định [[12-Daily-Bias]] hôm nay?
 - [ ] VB nằm đúng phía draw on liquidity theo bias?
-- [ ] VB ở vùng premium/discount hợp lý ([[27 - Premium Discount]], [[12 - Dealing Range]])?
+- [ ] VB ở vùng premium/discount hợp lý ([[27-Premium-Discount]], [[12-Dealing-Range]])?
 
 **Nhóm B — Chất lượng VB**
 - [ ] Có gap thật (đứt gãy giao dịch), không phải nến chạy liên tục?

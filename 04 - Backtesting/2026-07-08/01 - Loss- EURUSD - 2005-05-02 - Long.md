@@ -281,7 +281,7 @@ tags:
 ### 9.5. So sánh với lệnh khác cùng mẫu trong vault
 
 - **[[01 - Win - GBPUSD - 2014-06-25 - Long]]** — lệnh Win nhưng entry "nóng" (theo ghi chú tại 07-17/02) — cùng nhóm lỗi "entry sớm, không chờ chuỗi hoàn tất" nhưng khác outcome. So sánh cho thấy outcome không phải bằng chứng cho process: cả hai đều có vấn đề entry timing, chỉ một thắng.
-- **[[03 - Win - EURUSD - 2021-07-22 - Long]]** (note 07-10/03, cùng batch) — đối lập trực tiếp: first_error=none, đủ chuỗi 7 bước, kỷ luật chờ retest sau displacement thật. Cùng loại lệnh Long/Discount/FVG nhưng khác biệt duy nhất là **có chờ đủ điều kiện hay không** — minh chứng định lượng cho việc first_error=displacement ở note này là lỗi hành vi, không phải lỗi đọc chart.
+- **[[03 - Win - EURUSD - 2021-07-22- Long]]** (note 07-10/03, cùng batch) — đối lập trực tiếp: first_error=none, đủ chuỗi 7 bước, kỷ luật chờ retest sau displacement thật. Cùng loại lệnh Long/Discount/FVG nhưng khác biệt duy nhất là **có chờ đủ điều kiện hay không** — minh chứng định lượng cho việc first_error=displacement ở note này là lỗi hành vi, không phải lỗi đọc chart.
 
 ---
 

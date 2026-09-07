@@ -181,7 +181,7 @@ Trước các tin lớn (CPI, FOMC, NFP), thị trường thường tạo **fake
 
 Vault này có trường `bias_correct` trong frontmatter của mỗi trade. Đây là công cụ quan trọng để tách bạch hai loại lỗi hoàn toàn khác nhau khi review tuần:
 
-- **Bias đúng nhưng vẫn thua** → lỗi execution (entry sớm, SL sai vị trí, POI không hợp lệ) — xem [[03 - Mistake - Entry When MSS not in POI Zone]], [[02 - Mistake - Enter before liquidity sweep]]
+- **Bias đúng nhưng vẫn thua** → lỗi execution (entry sớm, SL sai vị trí, POI không hợp lệ) — xem [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]], [[02-Mistake-Enter-before-liquidity-sweep]]
 - **Bias sai** → lỗi phân tích gốc rễ, đúng chủ đề của note này
 
 Cách tính bias-accuracy trong weekly review: đếm số trade có `bias_correct: true` / tổng số trade trong tuần → tỷ lệ % chính xác bias. Nếu tỷ lệ này thấp nhưng win rate execution cao, vấn đề nằm ở khâu xây bias (mục 5.1-5.4), không phải khâu vào lệnh — hai hướng khắc phục hoàn toàn khác nhau.
@@ -313,7 +313,7 @@ Chênh lệch giữa Tier A và Tier C không chỉ là hiệu suất giảm d�
 
 Ở mức 50% (một nửa số ngày rơi vào bias Tier C), tổng expectancy giảm khoảng **47%** so với baseline toàn Tier A — một minh hoạ định lượng cho câu trong note gốc "bias sai không phải một lỗi — nó là nguồn gốc của cả một cụm lỗi tương quan trong cùng một phiên": vì mọi lệnh trong ngày dùng chung một bias sai, tổn thất không dừng ở một lệnh mà nhân lên theo số lệnh cùng hướng.
 
-**Chi phí kép khi wrong bias đi cùng mistake khác:** nếu bias sai (Tier C) kết hợp với [[02 - Mistake - Enter before liquidity sweep]] (vào lệnh sớm vì tin chắc vào bias sai), xác suất thua tăng gấp đôi theo hai lớp lỗi độc lập cộng dồn — một lớp do bias sai hướng, một lớp do entry sai timing — tạo ra một chuỗi lệnh gần như chắc chắn âm trong ngày đó.
+**Chi phí kép khi wrong bias đi cùng mistake khác:** nếu bias sai (Tier C) kết hợp với [[02-Mistake-Enter-before-liquidity-sweep]] (vào lệnh sớm vì tin chắc vào bias sai), xác suất thua tăng gấp đôi theo hai lớp lỗi độc lập cộng dồn — một lớp do bias sai hướng, một lớp do entry sai timing — tạo ra một chuỗi lệnh gần như chắc chắn âm trong ngày đó.
 
 ### 11.4. Taxonomy các biến thể con
 
@@ -327,8 +327,8 @@ Chênh lệch giữa Tier A và Tier C không chỉ là hiệu suất giảm d�
 
 | Mistake liên quan | Cơ chế khuếch đại lẫn nhau | Mức nguy hiểm tổ hợp |
 |---|---|---|
-| [[03 - Mistake - Entry When MSS not in POI Zone]] | Bias sai khiến trader tìm POI theo hướng sai, dễ chấp nhận một MSS không thực sự nằm trong POI hợp lệ vì đã "quyết tâm" theo hướng bias từ đầu | Cao |
-| [[02 - Mistake - Enter before liquidity sweep]] | Tin chắc vào bias sai khiến trader bỏ qua bước chờ sweep hợp lệ, vào lệnh sớm vì nghĩ "chắc chắn đúng hướng rồi" — hai lớp lỗi độc lập cộng dồn (xem 11.3) | Rất cao |
+| [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] | Bias sai khiến trader tìm POI theo hướng sai, dễ chấp nhận một MSS không thực sự nằm trong POI hợp lệ vì đã "quyết tâm" theo hướng bias từ đầu | Cao |
+| [[02-Mistake-Enter-before-liquidity-sweep]] | Tin chắc vào bias sai khiến trader bỏ qua bước chờ sweep hợp lệ, vào lệnh sớm vì nghĩ "chắc chắn đúng hướng rồi" — hai lớp lỗi độc lập cộng dồn (xem 11.3) | Rất cao |
 
 > [!question] Tổ hợp nguy hiểm nhất
 > **Wrong bias (dealing range sai) + Entry before sweep + MSS not in POI** tạo thành một "chuỗi domino" hoàn chỉnh: dealing range bị vẽ sai (biên swing sai) → premium/discount bị đọc ngược → bias sai hướng → trader tự tin vào lệnh sớm không chờ sweep → chấp nhận MSS không nằm trong POI hợp lệ vì "đã chắc chắn đúng hướng". Đây là kịch bản một ngày thua liên tiếp nhiều lệnh cùng nguyên nhân gốc duy nhất: một dealing range vẽ sai.
@@ -353,7 +353,7 @@ Chênh lệch giữa Tier A và Tier C không chỉ là hiệu suất giảm d�
 
 1. **Kill Zone GATE cứng vs xác suất mềm — xung đột chưa giải quyết trong Doctrine v2 (§3.2/§5.1)** áp dụng tương tự cho bias: không có bias nào đạt xác suất 100%, ngay cả Tier A cũng chỉ là **giả thuyết có xác suất cao hơn**, không phải chân lý tuyệt đối — coi nó là gate cứng tuyệt đối là gán một mức chắc chắn mà chính hệ thống chưa chứng minh được.
 2. **Cấu trúc thị trường có thể thay đổi giữa phiên hợp lệ** (biến thể "stale bias" ở mục 11.4) — nếu có một sweep + displacement + MSS thật ở khung lớn hơn xảy ra giữa ngày làm đảo ngược draw on liquidity ban đầu, tiếp tục bám bias cũ theo gate cứng là bỏ qua bằng chứng cấu trúc mới, không phải kỷ luật.
-3. **"LTF cực rõ" có thể được định nghĩa định lượng được** (không nhất thiết mù mờ): ví dụ yêu cầu một sweep hợp lệ cùng khung + MSS + FVG + displacement 5/5 tiêu chí (xem [[08 - Mistake - Weak Displacement]]) ở khung H1/H4 — nếu tất cả điều kiện này hội tụ ngược hướng bias D1, đó là một tín hiệu có Tier bằng chứng ngang hoặc cao hơn bias D1 ban đầu, không phải một "cảm giác" mù mờ.
+3. **"LTF cực rõ" có thể được định nghĩa định lượng được** (không nhất thiết mù mờ): ví dụ yêu cầu một sweep hợp lệ cùng khung + MSS + FVG + displacement 5/5 tiêu chí (xem [[08-Mistake-Weak-Displacement]]) ở khung H1/H4 — nếu tất cả điều kiện này hội tụ ngược hướng bias D1, đó là một tín hiệu có Tier bằng chứng ngang hoặc cao hơn bias D1 ban đầu, không phải một "cảm giác" mù mờ.
 4. **Chi phí cơ hội của gate cứng tuyệt đối là có thật và có thể đo được** — nếu backtest cho thấy các lần "LTF cực rõ ngược bias" có winrate không thấp hơn (hoặc cao hơn) các lần theo bias, cấm tuyệt đối đang bỏ qua một nguồn edge thật.
 
 ### Vòng phản hồi chéo

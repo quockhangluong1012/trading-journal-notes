@@ -16,9 +16,9 @@ pnl: -44.46
 r_multiple:
 risk_percent: 0.5%
 mistakes:
-  - "[[09 - Mistake - Wrong daily bias]]"
-  - "[[06 - Mistake - Not Have Market Structure Shift]]"
-  - "[[03 - Mistake - Entry When MSS not in POI Zone]]"
+  - "[[09-Mistake-Wrong-daily-bias]]"
+  - "[[06-Mistake-Not-Have-Market-Structure-Shift]]"
+  - "[[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]"
 tags:
 planned_rr: 2.35
 da_verdict: BROKEN
@@ -159,9 +159,9 @@ da_opposite_case: "not viable"
 
 - **Result**: Hit SL
 - **Mistake chính**:
-  - [[09 - Mistake - Wrong daily bias]]
-  - [[03 - Mistake - Entry When MSS not in POI Zone]]
-  - [[01 - Mistake - Emotional revenge trade]]
+  - [[09-Mistake-Wrong-daily-bias]]
+  - [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]
+  - [[01-Mistake-Emotional-revenge-trade]]
 - **Nguyên nhân gốc rễ**:
   - Revenge trade, cố gắng vào lệnh để gỡ lại 2 lệnh thua trước đó
 - **Tại sao lệnh này thua/thắng?**
@@ -223,7 +223,7 @@ Bài học gốc của user (giữ nguyên, mở rộng dưới đây):
 Claim: "Có Market Structure Shift hợp lệ" đã được xác nhận (checklist tick `[x]`) trước khi entry.
 Fails: ngay trong cùng file, mục "M15/M5" hỏi trực tiếp "Có MSS chưa?" và trả lời "**No**" — cùng một file, cùng một lệnh, hai câu trả lời đối lập cho đúng một câu hỏi.
 Evidence: dòng checklist mục 2 "`- [x] Có Market Structure Shift hợp lệ`" đối chiếu dòng mục 1 "`- **Có MSS chưa?** No`".
-Consequence: checklist không có giá trị làm gate — nó được tick không nhất quán với chính observation đã ghi, nghĩa là hành động entry (C2 làm cơ sở) không có xác nhận MSS thật nào đứng sau, khớp đúng với mistake tag "[[03 - Mistake - Entry When MSS not in POI Zone]]" mà user tự gắn.
+Consequence: checklist không có giá trị làm gate — nó được tick không nhất quán với chính observation đã ghi, nghĩa là hành động entry (C2 làm cơ sở) không có xác nhận MSS thật nào đứng sau, khớp đúng với mistake tag "[[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]" mà user tự gắn.
 Your best answer: "checklist tick nhầm do điền vội." — Không cứu được: dù là nhầm hay không, hậu quả với việc đánh giá quy trình là giống nhau — checklist không đáng tin làm evidence cho "đã kiểm tra trước khi vào."
 Retracted by: xác nhận rằng checklist được tick tại một thời điểm khác (trước khi quan sát M15/M5 thay đổi) — không có timestamp riêng cho từng tick để kiểm.
 

@@ -26,9 +26,9 @@ last_reviewed: 2026-07-21
 created: 2026-07-21
 updated: 2026-07-28
 common_mistakes:
-  - "[[08 - Mistake - Weak Displacement]]"
+  - "[[08-Mistake-Weak-Displacement]]"
   - "[[11 - LTF Displacement Not Create FVG, Big Candle But Wick Overlap]]"
-  - "[[02 - Mistake - Enter before liquidity sweep]]"
+  - "[[02-Mistake-Enter-before-liquidity-sweep]]"
 ---
 
 # Displacement (In Depth)
@@ -44,9 +44,9 @@ common_mistakes:
 ## 1. Định nghĩa
 
 **Khái niệm:**
-Displacement là chữ ký của price delivery khi order flow trở nên mất cân bằng nghiêm trọng về một phía: một hoặc một chuỗi nến thân lớn, đóng cửa quyết đoán, ít wick đối nghịch, xuyên qua một mức cấu trúc (swing high/low) và **để lại một vùng imbalance (Fair Value Gap)** phía sau. Displacement không phải là "một cây nến to" — nó là **hệ quả đo được** của việc lệnh thị trường một chiều tiêu thụ hết thanh khoản giới hạn hai chiều tại các mức giá trung gian nhanh hơn tốc độ thị trường có thể "thương lượng" giá một cách hai chiều (xem lý giải đầy đủ theo Auction Market Theory tại [[35 - Aggressive Displacement Entry]] §1).
+Displacement là chữ ký của price delivery khi order flow trở nên mất cân bằng nghiêm trọng về một phía: một hoặc một chuỗi nến thân lớn, đóng cửa quyết đoán, ít wick đối nghịch, xuyên qua một mức cấu trúc (swing high/low) và **để lại một vùng imbalance (Fair Value Gap)** phía sau. Displacement không phải là "một cây nến to" — nó là **hệ quả đo được** của việc lệnh thị trường một chiều tiêu thụ hết thanh khoản giới hạn hai chiều tại các mức giá trung gian nhanh hơn tốc độ thị trường có thể "thương lượng" giá một cách hai chiều (xem lý giải đầy đủ theo Auction Market Theory tại [[35-Aggressive-Displacement-Entry]] §1).
 
-Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận** cho một [[21 - Market Structure Shift|Market Structure Shift]]: MSS chỉ đáng tin khi nến/chuỗi nến phá cấu trúc đó thực sự displaced, không phải một cú xuyên nhẹ rồi giằng co tại chỗ. Ghi chú này đào sâu ba câu hỏi mà [[21 - Market Structure Shift]] và [[35 - Aggressive Displacement Entry]] không trả lời chi tiết:
+Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận** cho một [[21-Market-Structure-Shift|Market Structure Shift]]: MSS chỉ đáng tin khi nến/chuỗi nến phá cấu trúc đó thực sự displaced, không phải một cú xuyên nhẹ rồi giằng co tại chỗ. Ghi chú này đào sâu ba câu hỏi mà [[21-Market-Structure-Shift]] và [[35-Aggressive-Displacement-Entry]] không trả lời chi tiết:
 
 1. Làm sao **đo** displacement bằng tiêu chí cụ thể, thay vì bằng cảm giác "nến này trông to"?
 2. Làm sao **phân biệt** displacement thật với các hiện tượng dễ giả trang thành nó — exhaustion spike, news wick, expansion thông thường?
@@ -54,7 +54,7 @@ Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận*
 
 **Mục đích trong ICT:**
 - Xác nhận MSS là thật, không phải một fakeout hay một liquidity grab tạm thời rồi giằng co ngược.
-- Tạo ra FVG/imbalance — nguyên liệu thô cho POI entry; Order Block chất lượng cao gần như luôn là nến/chuỗi nến ngay trước một displacement (xem [[25 - OB - Order Block]] §7.4).
+- Tạo ra FVG/imbalance — nguyên liệu thô cho POI entry; Order Block chất lượng cao gần như luôn là nến/chuỗi nến ngay trước một displacement (xem [[25-OB-Order-Block]] §7.4).
 - Đo lực (institutional sponsorship) đứng sau một leg — leg có sponsorship mạnh mới đáng theo tới draw on liquidity; leg yếu dễ thất bại giữa đường.
 - Phân biệt giai đoạn Manipulation (sweep + wick dài, chưa chắc displaced) với giai đoạn Distribution thật trong chu kỳ AMD/PO3.
 
@@ -70,7 +70,7 @@ Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận*
 ### Displacement không phải là gì
 - Không phải "một cây nến to bất kỳ" — biến động lớn do thanh khoản mỏng hoặc tin tức không đồng nghĩa với displacement thật (xem §3.3 phân biệt với exhaustion spike/news wick).
 - Không phải bằng chứng đảo chiều nếu KHÔNG có liquidity sweep hợp lệ đứng trước — một cú đẩy mạnh giữa range, không phá cấu trúc gì, chỉ là expansion thông thường.
-- Không phải một chỉ báo kỹ thuật với một ngưỡng cố định áp dụng cho mọi thị trường/khung thời gian — ngưỡng "đủ mạnh" khác nhau rõ rệt giữa NQ1, EURUSD, XAUUSD (xem bảng hệ số ATR theo thị trường ở [[35 - Aggressive Displacement Entry]] §3).
+- Không phải một chỉ báo kỹ thuật với một ngưỡng cố định áp dụng cho mọi thị trường/khung thời gian — ngưỡng "đủ mạnh" khác nhau rõ rệt giữa NQ1, EURUSD, XAUUSD (xem bảng hệ số ATR theo thị trường ở [[35-Aggressive-Displacement-Entry]] §3).
 - Không phải luôn là một nến đơn — có thể là một chuỗi 2–4 nến cùng hướng, thân liên tiếp, ít chồng lấp wick ("staircase displacement" — xem §3.2).
 - Không phải bất biến sau khi hình thành — một displacement có thể **thất bại** (failed displacement) khi giá quay lại lấp toàn bộ FVG và đóng acceptance ngược hướng (xem §5).
 
@@ -85,8 +85,8 @@ Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận*
 
 | Dạng | Vị trí xuất hiện | Vai trò | Đặc điểm nhận diện |
 |---|---|---|---|
-| **Initial displacement** | Ngay sau sweep tại điểm origin của leg | Xác nhận MSS, khởi đầu leg mới | Thường mạnh nhất, ít wick ngược, sinh OB "origin" chất lượng cao nhất (xem [[25 - OB - Order Block]] §7.4) |
-| **Continuation displacement** | Giữa một leg đang chạy, sau một pullback nhỏ nội bộ | Xác nhận leg còn nguyên lực, tạo POI refine mới | Thường sinh nested FVG bên trong FVG lớn — nền tảng của [[35 - Aggressive Displacement Entry]] |
+| **Initial displacement** | Ngay sau sweep tại điểm origin của leg | Xác nhận MSS, khởi đầu leg mới | Thường mạnh nhất, ít wick ngược, sinh OB "origin" chất lượng cao nhất (xem [[25-OB-Order-Block]] §7.4) |
+| **Continuation displacement** | Giữa một leg đang chạy, sau một pullback nhỏ nội bộ | Xác nhận leg còn nguyên lực, tạo POI refine mới | Thường sinh nested FVG bên trong FVG lớn — nền tảng của [[35-Aggressive-Displacement-Entry]] |
 | **Distribution displacement** | Khi giá tiến vào vùng draw on liquidity (gần ERL target) | Đẩy giá hoàn tất mục tiêu thanh khoản đã đặt ra | Có thể mang dấu hiệu climax nếu là nhịp cuối trước khi đảo — cẩn trọng khi tìm entry mới ở giai đoạn này |
 | **Failed / Exhaustion displacement** | Bất kỳ đâu, nhưng phổ biến nhất ở cuối một chuỗi di chuyển đã dài | KHÔNG xác nhận gì cả — là một cái bẫy nhìn giống displacement thật | Thân lớn nhưng không có sweep hợp lệ trước, hoặc bị lấp ngược gần hết ngay sau đó (xem §3.3, §5) |
 
@@ -94,10 +94,10 @@ Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận*
 > Trước khi tin vào bất kỳ cú đẩy mạnh nào, hãy tự hỏi nó đang đóng vai gì trong bốn vai trên. Một displacement "trông mạnh như nhau" trên chart có thể là initial (rất đáng tin) hoặc exhaustion (rất nguy hiểm) — sự khác biệt nằm ở **bối cảnh trước và sau nó**, không nằm ở kích thước nến.
 
 ### Khi nào khái niệm này có giá trị cao?
-- [ ] Vừa có [[20 - Liquidity Sweep]] hợp lệ và một [[21 - Market Structure Shift|MSS]] khả nghi cần xác nhận có "displaced" thật hay không.
+- [ ] Vừa có [[20-Liquidity-Sweep]] hợp lệ và một [[21-Market-Structure-Shift|MSS]] khả nghi cần xác nhận có "displaced" thật hay không.
 - [ ] Cần đánh giá độ tin cậy của một FVG/OB mới hình thành trước khi dùng làm POI cho entry.
 - [ ] Đang phân vân giữa việc coi một cú phá cấu trúc là MSS thật hay chỉ là một liquidity grab tạm thời rồi giằng co ngược.
-- [ ] Cần đo "lực" của leg hiện tại để quyết định kiểu entry — chờ fill sâu hay refine nông theo [[35 - Aggressive Displacement Entry]].
+- [ ] Cần đo "lực" của leg hiện tại để quyết định kiểu entry — chờ fill sâu hay refine nông theo [[35-Aggressive-Displacement-Entry]].
 - [ ] Đang review một trade thua để tìm xem có phải mình đã trade một exhaustion spike bị nhầm là displacement không.
 
 ### Khi nào nên bỏ qua?
@@ -113,7 +113,7 @@ Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận*
 ### 3.1. Bốn tiêu chí đo lường định lượng (thay cho "nhìn thấy to là tin")
 
 1. **Body-to-range ratio:** thân nến (|close − open|) so với toàn range nến (high − low). Displacement chất lượng cao thường có tỉ lệ này **≥ 0.6–0.7** trên đa số nến trong chuỗi — wick ngắn ở cả hai đầu.
-2. **Hệ số so với ATR:** dùng bảng ngưỡng theo thị trường tại [[35 - Aggressive Displacement Entry]] §3 (NQ1/NDX ≥ 1.5× ATR(14) trên M5; EURUSD/GBPUSD ≥ 1.2–1.3×; XAUUSD ≥ 1.5–2×) làm điểm khởi đầu để backtest cá nhân, không áp dụng như luật cứng.
+2. **Hệ số so với ATR:** dùng bảng ngưỡng theo thị trường tại [[35-Aggressive-Displacement-Entry]] §3 (NQ1/NDX ≥ 1.5× ATR(14) trên M5; EURUSD/GBPUSD ≥ 1.2–1.3×; XAUUSD ≥ 1.5–2×) làm điểm khởi đầu để backtest cá nhân, không áp dụng như luật cứng.
 3. **Độ chồng lấp wick giữa các nến liên tiếp (overlap ratio):** nến sau càng ít "ăn" vào thân/wick của nến trước theo hướng ngược, chuỗi càng "sạch" — đây là dấu hiệu lệch pha cung-cầu thật, không phải giằng co hai chiều tại cùng một vùng giá.
 4. **Kích thước FVG để lại so với ATR:** một displacement thật thường để lại FVG có độ rộng đáng kể (không phải một khe hở vài tick) — xem thêm [[11 - LTF Displacement Not Create FVG, Big Candle But Wick Overlap]] cho trường hợp ngược: nến to nhưng KHÔNG tạo FVG vì wick chồng lấp quá nhiều giữa các nến liên tiếp.
 
@@ -128,9 +128,9 @@ Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận*
 | Tiêu chí | Single mega-candle | Staircase (chuỗi nến) |
 |---|---|---|
 | Thường gặp ở | NQ1/NDX quanh tin, gap mở phiên RTH, XAUUSD quanh CPI/FOMC | EURUSD/GBPUSD London Open, continuation leg khi trend đã thiết lập |
-| FVG tạo ra | Thường một FVG lớn, biên rõ | Có thể tạo chuỗi FVG nhỏ lồng nhau (nested) — liên quan tính phân dạng ở [[16 - Internal & External Range Liquidity (IRL & ERL)]] §3 |
+| FVG tạo ra | Thường một FVG lớn, biên rõ | Có thể tạo chuỗi FVG nhỏ lồng nhau (nested) — liên quan tính phân dạng ở [[16-Internal-External-Range-Liquidity-IRL-ERL]] §3 |
 | Rủi ro đọc sai | Dễ nhầm với exhaustion spike nếu không kiểm tra có sweep hợp lệ trước | Dễ bị đánh giá thấp ("chỉ là vài nến bình thường") nếu không cộng dồn body-to-range qua cả chuỗi |
-| Cách entry phù hợp | CE của FVG lớn, hoặc hạ M1 để refine | Hạ M1 tìm nested FVG ngay giữa chuỗi, theo logic [[35 - Aggressive Displacement Entry]] |
+| Cách entry phù hợp | CE của FVG lớn, hoặc hạ M1 để refine | Hạ M1 tìm nested FVG ngay giữa chuỗi, theo logic [[35-Aggressive-Displacement-Entry]] |
 
 ### 3.3. Bảng chẩn đoán: Displacement thật vs Expansion thông thường vs Exhaustion Spike vs News Wick
 
@@ -147,7 +147,7 @@ Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận*
 > Exhaustion spike và displacement thật có thể **trông giống nhau tại thời điểm nến đang hình thành** — sự khác biệt chỉ rõ ràng SAU khi (a) kiểm tra có liquidity sweep hợp lệ trước đó không, và (b) xem 1–2 nến tiếp theo có tiếp diễn hay đảo ngược ngay. Đừng vội kết luận "đây là displacement" chỉ vì một nến vừa đóng cửa to — luôn chờ xác nhận tiếp diễn trước khi coi FVG/OB nó tạo ra là một POI đáng tin.
 
 ### Điều kiện bắt buộc
-- [ ] Có [[20 - Liquidity Sweep]] hợp lệ ngay trước hoặc trong displacement.
+- [ ] Có [[20-Liquidity-Sweep]] hợp lệ ngay trước hoặc trong displacement.
 - [ ] Đóng cửa (không chỉ wick) vượt qua mức cấu trúc (swing high/low) tạo ra MSS.
 - [ ] Thỏa ít nhất 3/4 tiêu chí đo lường ở §3.1.
 - [ ] Để lại FVG/imbalance đáng kể, không bị wick chồng lấp xóa mất (xem [[11 - LTF Displacement Not Create FVG, Big Candle But Wick Overlap]]).
@@ -175,7 +175,7 @@ Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận*
 > 4. **FVG để lại có đủ lớn so với ATR để dùng làm POI không?**
 
 ### D1 / H4 — Bias & Narrative
-- Bias hiện tại: Bullish / Bearish / Neutral ([[12 - Daily Bias]]).
+- Bias hiện tại: Bullish / Bearish / Neutral ([[12-Daily-Bias]]).
 - Leg HTF hiện tại đã chạy được bao xa? Displacement đang xét là initial hay đã ở cuối một chuỗi di chuyển dài (nguy cơ exhaustion cao hơn)?
 - Draw on liquidity HTF nằm ở đâu — displacement này có đưa giá tới gần draw hơn không?
 
@@ -187,7 +187,7 @@ Trong ICT 2022 Model, displacement đóng vai trò **bằng chứng xác nhận*
 
 ### M5 / M1 — Xác nhận tiếp diễn & entry
 - Sau displacement, 1–2 nến tiếp theo có tiếp diễn cùng hướng hay đảo ngược ngay (dấu hiệu exhaustion)?
-- Nếu retrace: nông (theo [[35 - Aggressive Displacement Entry]]) hay đủ sâu để fill FVG bình thường?
+- Nếu retrace: nông (theo [[35-Aggressive-Displacement-Entry]]) hay đủ sâu để fill FVG bình thường?
 - Entry theo CE của FVG hoặc refine M1; stop dưới/trên điểm sweep gần nhất.
 
 ```text
@@ -385,7 +385,7 @@ HTF Bullish Bias
 
 **Cách xử lý đã kiểm chứng:**
 - Khi có MSS + displacement đo được nhưng không có FVG 3-nến sạch, hạ khung xuống (M5→M1) ngay tại vùng consolidation nhỏ nơi wick chồng lấp — gần như luôn có một Order Block hoặc một FVG rất nhỏ ở khung thấp hơn tại đúng điểm đó, dù không thấy ở khung gốc.
-- Nếu vẫn không tìm được PD array nào ở khung thấp hơn, coi CE của toàn bộ leg displacement (tính từ điểm bắt đầu tới điểm kết thúc chuỗi) làm vùng entry kỳ vọng — tương tự logic CE độc lập trong [[35 - Aggressive Displacement Entry]] §4 khi không có M1 PD array.
+- Nếu vẫn không tìm được PD array nào ở khung thấp hơn, coi CE của toàn bộ leg displacement (tính từ điểm bắt đầu tới điểm kết thúc chuỗi) làm vùng entry kỳ vọng — tương tự logic CE độc lập trong [[35-Aggressive-Displacement-Entry]] §4 khi không có M1 PD array.
 - Không tự vẽ một FVG giả — MSS + displacement đo được vẫn có giá trị làm bằng chứng narrative, nhưng thiếu FVG thật thì entry phải dựa vào CE hoặc chờ leg tiếp theo, không phải "sáng tác" ra một vùng không tồn tại.
 
 ### Case Study 3 — Ngưỡng displacement khác nhau theo session: một cú đẩy "đủ mạnh" ở phiên Á lại tầm thường ở London/NY
@@ -397,7 +397,7 @@ HTF Bullish Bias
 | Session | Đặc điểm liquidity | Cách đọc displacement |
 |---|---|---|
 | Á (Tokyo/Sydney) | Thanh khoản mỏng, dễ có spike đơn lẻ do vài lệnh lớn | Cần ngưỡng ATR cao hơn bình thường để tin; ưu tiên coi là dự phòng, chờ London xác nhận lại chứ không tin ngay |
-| London Open | Thanh khoản tăng mạnh, thường là nơi initial displacement thật xuất hiện | Ngưỡng theo bảng gốc ở [[35 - Aggressive Displacement Entry]] §3 áp dụng tốt nhất tại đây |
+| London Open | Thanh khoản tăng mạnh, thường là nơi initial displacement thật xuất hiện | Ngưỡng theo bảng gốc ở [[35-Aggressive-Displacement-Entry]] §3 áp dụng tốt nhất tại đây |
 | NY / London-NY overlap | Thanh khoản dày nhất trong ngày | Displacement tại đây đáng tin nhất; cũng là nơi distribution displacement thường xảy ra khi giá hoàn tất draw on liquidity |
 | Cuối phiên NY / trước rollover | Thanh khoản rút dần | Cẩn trọng — displacement cuối phiên dễ là exhaustion hoặc bị đảo ngược khi thanh khoản quay lại vào phiên Á kế tiếp |
 
@@ -406,7 +406,7 @@ HTF Bullish Bias
 
 ### Case Study 4 — Gap mở phiên/tuần: "displacement giả" không có sweep phía sau
 
-**Bối cảnh:** Ba tiêu chí ở CS1–CS3 xoay quanh displacement hình thành *trong* một phiên giao dịch liên tục. Nhưng có một hiện tượng phá vỡ toàn bộ khung đo lường: **gap giá qua thời gian đóng cửa** — RTH open 09:30 ET trên NAS100 ([[23 - New Day Opening Gap|NDOG]]), weekend gap mở phiên Chủ nhật ([[24 - New Week Opening Gap|NWOG]]), hoặc gap sau một sự kiện lớn ngoài giờ. Một cây nến mở phiên có thể "trông" y hệt một displacement khổng lồ: thân rất lớn, đóng xa mức mở, thoả cả body-to-range lẫn hệ số ATR. Nhưng nó **không phải displacement** vì một lý do bản chất: **không có order flow nào được giao qua vùng gap** — thị trường đóng cửa, không có nến trung gian, không có liquidity sweep nào đứng trước. Cả bốn tiêu chí §3.1 bị "đánh lừa" bởi một khoảng trống giá, không phải bởi sự mất cân bằng order flow thật.
+**Bối cảnh:** Ba tiêu chí ở CS1–CS3 xoay quanh displacement hình thành *trong* một phiên giao dịch liên tục. Nhưng có một hiện tượng phá vỡ toàn bộ khung đo lường: **gap giá qua thời gian đóng cửa** — RTH open 09:30 ET trên NAS100 ([[23-New-Day-Opening-Gap|NDOG]]), weekend gap mở phiên Chủ nhật ([[24-New-Week-Opening-Gap|NWOG]]), hoặc gap sau một sự kiện lớn ngoài giờ. Một cây nến mở phiên có thể "trông" y hệt một displacement khổng lồ: thân rất lớn, đóng xa mức mở, thoả cả body-to-range lẫn hệ số ATR. Nhưng nó **không phải displacement** vì một lý do bản chất: **không có order flow nào được giao qua vùng gap** — thị trường đóng cửa, không có nến trung gian, không có liquidity sweep nào đứng trước. Cả bốn tiêu chí §3.1 bị "đánh lừa" bởi một khoảng trống giá, không phải bởi sự mất cân bằng order flow thật.
 
 **Câu hỏi thực chiến phải trả lời NGAY:** gap này là **gap-and-go** (giá bỏ gap lại, tiếp diễn theo hướng gap) hay **gap-fill** (giá quay lại lấp gap trước)? Bản thân vùng gap là một **imbalance/IRL** — tức nó thường là một *draw on liquidity*, không phải bằng chứng cho một MSS.
 
@@ -425,7 +425,7 @@ HTF Bullish Bias
 
 **Bối cảnh:** Tiêu chí thứ hai ở §3.1 dùng hệ số so với ATR(14) làm thước đo "cú đẩy này có đủ lớn không". Nhưng ATR là một trung bình trượt — cửa sổ tính của nó (14 nến) sẽ **nạp chính cú displacement lớn vừa xảy ra vào mẫu số**. Ngay sau một initial displacement mạnh, ATR(14) nhảy vọt lên một mức cao bất thường. Nếu bạn tiếp tục dùng cái ATR ĐÃ PHỒNG đó làm mẫu số để chấm cú **continuation displacement** kế tiếp trong cùng leg, cú continuation ấy sẽ "trông" yếu / "không đủ hệ số ATR" — dù xét về order flow, nó vẫn mạnh hơn hẳn nhịp bình thường TRƯỚC khi leg bắt đầu.
 
-**Tại sao điều này chỉ lộ ra khi backtest/live nhiều:** trên một cú đẩy đơn lẻ, bẫy này vô hình — ATR chưa kịp phồng. Nó chỉ xuất hiện khi bạn cố bắt các continuation entry **giữa một leg trending mạnh**, đúng loại setup mà [[35 - Aggressive Displacement Entry]] nhắm tới. Trader đo đúng công thức, tin vào một ngưỡng ATR "cứng", rồi lần lượt loại bỏ 2–3 cú continuation displacement hợp lệ liên tiếp chỉ vì mẫu số đã bị chính move trước bơm phồng — kết quả là bỏ lỡ đúng phần thân của leg, phần dễ ăn nhất. Bẫy đo lường này khó thấy vì nó khiến bạn **thận trọng nhầm chỗ**: bạn nghĩ mình đang kỷ luật, thực ra đang dùng sai mẫu số.
+**Tại sao điều này chỉ lộ ra khi backtest/live nhiều:** trên một cú đẩy đơn lẻ, bẫy này vô hình — ATR chưa kịp phồng. Nó chỉ xuất hiện khi bạn cố bắt các continuation entry **giữa một leg trending mạnh**, đúng loại setup mà [[35-Aggressive-Displacement-Entry]] nhắm tới. Trader đo đúng công thức, tin vào một ngưỡng ATR "cứng", rồi lần lượt loại bỏ 2–3 cú continuation displacement hợp lệ liên tiếp chỉ vì mẫu số đã bị chính move trước bơm phồng — kết quả là bỏ lỡ đúng phần thân của leg, phần dễ ăn nhất. Bẫy đo lường này khó thấy vì nó khiến bạn **thận trọng nhầm chỗ**: bạn nghĩ mình đang kỷ luật, thực ra đang dùng sai mẫu số.
 
 **Cách xử lý đã kiểm chứng:**
 - **Chốt một pre-expansion ATR làm mẫu số cho cả leg:** lấy ATR(14) tại thời điểm NGAY TRƯỚC cú displacement đầu tiên (khi thị trường còn ở nhịp bình thường) và dùng nó làm mẫu số tham chiếu cho mọi cú continuation trong cùng leg đó — thay vì để ATR tự cập nhật kéo ngưỡng lên giữa chừng.
@@ -448,7 +448,7 @@ HTF Bullish Bias
 
 **Bối cảnh:** Một displacement mạnh xảy ra NGƯỢC hướng trend chính — thân lớn, để lại FVG, đóng cửa vượt qua một mức cấu trúc — là một trong những tình huống gài bẫy nhất. Trên chart, tại thời điểm nó hình thành, nó trông y hệt một tín hiệu đảo chiều đầy thuyết phục. Nhưng nó có thể là một trong hai thứ hoàn toàn khác nhau: (a) một **retracement leg mạnh TRONG trend** — sẽ bị nuốt lại và trend chính tiếp diễn; hoặc (b) **khởi đầu của một đảo chiều HTF thật**. Đọc sai cái này theo hướng fade trend sớm là cách thua vốn rất nhanh.
 
-**Tại sao đây là edge case nguy hiểm:** kích thước nến và việc "có phá một mức cấu trúc" KHÔNG đủ để phân biệt hai trường hợp — cả pullback mạnh lẫn reversal thật đều phá được một mức cấu trúc nào đó. Bộ phân biệt thật nằm ở **mức cấu trúc nào bị phá** và **giá đã quét thanh khoản gì trước đó**: cú countertrend chỉ phá **IRL** (cấu trúc nội bộ giữa trend), hay nó đến từ một **HTF POI / premium-discount extreme sau khi đã quét một ERL/external liquidity HTF**? Nếu cú ngược trend chỉ phá IRL giữa trend và CHƯA chạm tới ERL HTF, xác suất rất cao nó chỉ là một pullback-displacement sẽ bị nuốt lại — không phải một tín hiệu để fade trend chính (xem khung IRL/ERL ở [[16 - Internal & External Range Liquidity (IRL & ERL)]] và bối cảnh MSS ở [[21 - Market Structure Shift]]).
+**Tại sao đây là edge case nguy hiểm:** kích thước nến và việc "có phá một mức cấu trúc" KHÔNG đủ để phân biệt hai trường hợp — cả pullback mạnh lẫn reversal thật đều phá được một mức cấu trúc nào đó. Bộ phân biệt thật nằm ở **mức cấu trúc nào bị phá** và **giá đã quét thanh khoản gì trước đó**: cú countertrend chỉ phá **IRL** (cấu trúc nội bộ giữa trend), hay nó đến từ một **HTF POI / premium-discount extreme sau khi đã quét một ERL/external liquidity HTF**? Nếu cú ngược trend chỉ phá IRL giữa trend và CHƯA chạm tới ERL HTF, xác suất rất cao nó chỉ là một pullback-displacement sẽ bị nuốt lại — không phải một tín hiệu để fade trend chính (xem khung IRL/ERL ở [[16-Internal-External-Range-Liquidity-IRL-ERL]] và bối cảnh MSS ở [[21-Market-Structure-Shift]]).
 
 **Cách xử lý đã kiểm chứng:**
 - **Hỏi ERL trước tiên:** "Cú countertrend này đã quét một ERL/external liquidity của HTF chưa?" Nếu chưa — mặc định coi nó là pullback trong trend, không fade trend chính, thay vào đó chờ trend gốc tiếp diễn để tìm entry thuận chiều.
@@ -478,7 +478,7 @@ HTF Bullish Bias
 
 2. **Dùng bảng chẩn đoán bốn hiện tượng ở §3.3 mỗi khi nghi ngờ.** Displacement thật, expansion thường, exhaustion spike, và news wick có thể trông giống nhau tại thời điểm nến đang hình thành — sự khác biệt chỉ lộ ra qua vị trí trong leg và hành vi 1-2 nến kế tiếp. Đừng kết luận ngay khi nến còn đang chạy.
 
-3. **Ghi số, không ghi cảm giác.** Với mỗi displacement được dùng làm cơ sở entry, log `body_to_range`, `atr_multiple`, `wick_overlap`, `fvg_size_vs_atr` vào journal. Sau 30-50 mẫu, những con số này cho biết ngưỡng thật của riêng bạn trên từng thị trường — chính xác hơn nhiều so với bảng gợi ý chung ở [[35 - Aggressive Displacement Entry]] §3.
+3. **Ghi số, không ghi cảm giác.** Với mỗi displacement được dùng làm cơ sở entry, log `body_to_range`, `atr_multiple`, `wick_overlap`, `fvg_size_vs_atr` vào journal. Sau 30-50 mẫu, những con số này cho biết ngưỡng thật của riêng bạn trên từng thị trường — chính xác hơn nhiều so với bảng gợi ý chung ở [[35-Aggressive-Displacement-Entry]] §3.
 
 4. **Luôn hỏi "đây là initial, continuation, distribution, hay exhaustion?" trước khi tin.** Vị trí của displacement trong leg quyết định độ tin cậy nhiều hơn kích thước nến. Một cú đẩy ở cuối một chuỗi di chuyển đã dài cần bằng chứng chặt hơn nhiều so với một cú đẩy ngay sau sweep tại origin.
 

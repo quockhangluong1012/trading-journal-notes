@@ -186,7 +186,7 @@ MSS là cây cầu giữa **liquidity event** (sweep) và **entry model** (FVG/O
 > 4. **Cú phá có displacement và để lại FVG/OB không?**
 
 ### D1 / H4 — Bias & Narrative
-- **Xác định Daily Bias:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]). MSS chỉ là execution; nó không tạo bias.
+- **Xác định Daily Bias:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]). MSS chỉ là execution; nó không tạo bias.
 - **Draw on liquidity:** liquidity nào HTF đang bị hút về? MSS phải đẩy giá **về phía** draw on liquidity đó.
 - **HTF POI:** đánh dấu D1/H4 FVG, OB, breaker, mitigation block còn hiệu lực — đây là vùng kỳ vọng MSS xảy ra sau đó.
 - **Cảnh báo:** một MSS trên LTF KHÔNG đủ để đảo HTF narrative; chỉ HTF displacement/structure shift mới có quyền đó.
@@ -329,7 +329,7 @@ Daily Bias vẫn Bullish, BSL phía trên còn mở. Giá đang ở giữa range
 Một mức giá bị vượt qua thì có gì đặc biệt? Ba cơ chế trả lời — và chúng quyết định mọi rule bên dưới:
 
 1. **Swing không phải là "điểm trên chart" — nó là NƠI CƯ TRÚ của các vị thế đang sống.** Một lower-high hình thành nghĩa là: tại đó, phe bán đã thắng một trận đấu giá và mở vị thế Short; stop của toàn bộ lớp Short đó nằm **ngay trên** lower-high. Chừng nào giá còn dưới mức đó, các vị thế này "sống" và tiếp tục bán các nhịp hồi (đây là lý do lower-high được "phòng thủ"). Khi giá đóng thân qua lower-high: cả lớp Short bị buộc thoát (mua lại) — **nhiên liệu mua tức thời** — và quan trọng hơn, lớp trader từng bán mỗi nhịp hồi giờ mất chỗ dựa. MSS "có nghĩa" vì nó **giải thể một phe** chứ không chỉ vượt một con số.
-2. **Vì sao phải là body close, không phải wick? Vì wick là câu hỏi, body là câu trả lời của phiên đấu giá.** Wick qua mức = giá được *chào* ở đó nhưng bị từ chối (không ai chấp nhận giao dịch tiếp ở vùng đó) — về bản chất giống một cú sweep mini. Body đóng qua + giữ = mức giá mới được **chấp nhận** làm giá trị — các thuật toán reprice quanh vùng chấp nhận mới. Đây cũng đúng là ranh giới sweep/break bên [[20 - Liquidity Sweep]] nhìn từ hướng ngược lại: cùng một phép phân xử acceptance, áp cho hai mục đích khác nhau.
+2. **Vì sao phải là body close, không phải wick? Vì wick là câu hỏi, body là câu trả lời của phiên đấu giá.** Wick qua mức = giá được *chào* ở đó nhưng bị từ chối (không ai chấp nhận giao dịch tiếp ở vùng đó) — về bản chất giống một cú sweep mini. Body đóng qua + giữ = mức giá mới được **chấp nhận** làm giá trị — các thuật toán reprice quanh vùng chấp nhận mới. Đây cũng đúng là ranh giới sweep/break bên [[20-Liquidity-Sweep]] nhìn từ hướng ngược lại: cùng một phép phân xử acceptance, áp cho hai mục đích khác nhau.
 3. **Vì sao MSS cần sweep đứng trước? Vì thứ tự "gom hàng → đẩy giá" không thể đảo ngược.** Displacement phá lower-high là hành vi *tiêu tốn* thanh khoản (mua chủ động ăn qua sổ lệnh). Không tổ chức nào đốt chi phí đó **trước khi** có vị thế. Chuỗi bắt buộc về mặt kinh tế là: gom hàng tại pool (sweep) → rồi mới chi tiền đẩy giá (MSS/displacement) để reprice và bảo vệ tồn kho. MSS xuất hiện *trước* sweep nghĩa là chưa ai gom — cú phá đó không có chủ, và cấu trúc không có chủ thì không được bảo vệ → failed shift. "Sweep trước MSS" không phải quy ước ICT; nó là trình tự dòng tiền.
 
 Từ đây suy ra các W bên dưới: MSS một nến khổng lồ = gom và đẩy xảy ra trong cùng một nhịp, không cần retrace (W1); MSS lunch chết vì không có dòng tiền nào đủ lớn hoạt động giờ đó để bảo vệ cấu trúc (W2); grind M1 = không có cú "giải thể phe" nào xảy ra (W3).
@@ -345,7 +345,7 @@ Từ đây suy ra các W bên dưới: MSS một nến khổng lồ = gom và đ
 
 **Rule đo được:**
 - Mặc định: **chấp nhận lỡ** — ghi `missed_valid_setup`, đó là dữ liệu xác nhận mình đọc đúng.
-- Nâng cao (chỉ khi sweep Tier 1–2 + trong kill zone): limit tại **50% displacement leg** thay vì FVG sâu, stop dưới sweep low — chính là logic của [[35 - Aggressive Displacement Entry]].
+- Nâng cao (chỉ khi sweep Tier 1–2 + trong kill zone): limit tại **50% displacement leg** thay vì FVG sâu, stop dưới sweep low — chính là logic của [[35-Aggressive-Displacement-Entry]].
 - Sớm hơn nữa: luyện **CISD làm trigger** (đo bằng open/close chuỗi nến đẩy — in ra trước khi MSS hoàn thành). Backtest nhóm này tách riêng trước khi dùng tiền demo.
 - Cấm tuyệt đối: market order sau khi leg đã chạy quá 50% mà không retrace.
 
@@ -367,7 +367,7 @@ Từ đây suy ra các W bên dưới: MSS một nến khổng lồ = gom và đ
 
 **Tình huống:** M5 in một nến đóng qua lower-high — checklist pass. Nhưng thả xuống M1, bên trong "cú phá" đó không có capitulation + micro-MSS + displacement, chỉ là một chuỗi nến nhỏ **grind đều** qua mức. Loại phá-bằng-grind này có tỷ lệ fail cao hơn hẳn: không có dấu vết của việc khớp lệnh lớn, chỉ là thanh khoản mỏng bị đẩy trôi.
 
-**Nguyên tắc rút ra:** MSS đáng tin có **cấu trúc fractal** — bản M5 phải được xác nhận bởi một câu chuyện hoàn chỉnh trên M1 (quét → đảo vi mô → displacement ra). Nếu hai tầng khung mâu thuẫn, tầng nhỏ hơn đang nói thật về order flow. Chi tiết đầy đủ về kỹ thuật chọn confirmation timeframe: [[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)]].
+**Nguyên tắc rút ra:** MSS đáng tin có **cấu trúc fractal** — bản M5 phải được xác nhận bởi một câu chuyện hoàn chỉnh trên M1 (quét → đảo vi mô → displacement ra). Nếu hai tầng khung mâu thuẫn, tầng nhỏ hơn đang nói thật về order flow. Chi tiết đầy đủ về kỹ thuật chọn confirmation timeframe: [[49-Confirmation-Timeframe-Timeframe-Layering-Khu-nhieu-MSS-trong-2022-Model]].
 
 **Rule đo được:** với mọi MSS định trade, liếc M1 trong 30 giây và chấm `m1_confirms` (capitulation+shift / grind / không rõ). Không cần phân tích M1 cả phiên — chỉ cần một lần kiểm tra tại thời điểm quyết định.
 
@@ -377,7 +377,7 @@ Từ đây suy ra các W bên dưới: MSS một nến khổng lồ = gom và đ
 
 **Rule đo được:**
 - Khi đánh dấu swing để chờ MSS, kiểm tra **swing đó sinh ra thế nào**: bởi displacement có cấu trúc (hợp lệ) hay bởi news spike / wick rollover / thanh khoản mỏng ngoài giờ (bẩn — hạ tier hoặc loại).
-- Đây là mặt gương của bài học W3 bên [[20 - Liquidity Sweep]]: swing bẩn vừa không đáng làm reference cho MSS, vừa cần buffer stop rộng hơn nếu buộc phải dùng.
+- Đây là mặt gương của bài học W3 bên [[20-Liquidity-Sweep]]: swing bẩn vừa không đáng làm reference cho MSS, vừa cần buffer stop rộng hơn nếu buộc phải dùng.
 
 ### W5. MSS đúng mọi cổng nhưng "chết vì R:R" — bài kiểm tra room-to-target bị bỏ quên
 
@@ -407,7 +407,7 @@ Từ đây suy ra các W bên dưới: MSS một nến khổng lồ = gom và đ
 ## 16. Phân định ranh giới: MSS vs Liquidity Sweep vs Inducement
 
 > [!danger] Ba khái niệm dễ nhầm nhất trong bộ ICT
-> MSS, [[20 - Liquidity Sweep|Liquidity Sweep]] và [[15 - Inducement|Inducement]] thường xuất hiện GẦN NHAU trên cùng một chart, cùng một sequence — điều này khiến trader mới (và cả trader có kinh nghiệm khi mệt/rush) gộp ba khái niệm làm một. Đây là bảng phân định dứt điểm.
+> MSS, [[20-Liquidity-Sweep|Liquidity Sweep]] và [[15-Inducement|Inducement]] thường xuất hiện GẦN NHAU trên cùng một chart, cùng một sequence — điều này khiến trader mới (và cả trader có kinh nghiệm khi mệt/rush) gộp ba khái niệm làm một. Đây là bảng phân định dứt điểm.
 
 **Câu hỏi cốt lõi để phân biệt:** "Sự kiện này TRẢ LỜI câu hỏi gì?"
 - **Liquidity Sweep** trả lời: *"Thanh khoản nào vừa bị LẤY?"* — nó là một HÀNH ĐỘNG lấy thanh khoản tại một mức cụ thể (wick xuyên + reclaim).
@@ -561,7 +561,7 @@ Nói thẳng: MSS — và phần lớn ICT — có những vấn đề phương 
 **Tình huống:** H1 MSS bullish rõ ràng, đúng POI, đúng bias — nhưng mỗi lần refine xuống M5 để tìm entry, M5 lại tạo MSS bearish nhỏ trước, quét stop của entry H1, rồi mới quay lại đúng hướng H1.
 **Vì sao bẫy:** trader áp dụng đúng mọi checklist HTF nhưng liên tục bị "chết vì LTF" — đây là hiện tượng cấu trúc lồng nhau (fractal) tự nhiên của thị trường, không phải lỗi hệ thống.
 **Cách nhận diện sớm:** nếu đã thua ≥2 lần liên tiếp tại cùng một loại setup HTF-đúng/LTF-fail, đó là dấu hiệu regime hiện tại có nhiễu LTF cao.
-**Cách xử lý:** khi phát hiện pattern này lặp lại, chuyển sang chờ M15 MSS thay vì M5 làm confirmation timeframe (khung xác nhận thô hơn, ít nhiễu hơn) — đánh đổi entry muộn hơn lấy tỷ lệ fail LTF thấp hơn. Xem thêm [[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)]].
+**Cách xử lý:** khi phát hiện pattern này lặp lại, chuyển sang chờ M15 MSS thay vì M5 làm confirmation timeframe (khung xác nhận thô hơn, ít nhiễu hơn) — đánh đổi entry muộn hơn lấy tỷ lệ fail LTF thấp hơn. Xem thêm [[49-Confirmation-Timeframe-Timeframe-Layering-Khu-nhieu-MSS-trong-2022-Model]].
 
 ### EC7. Partial fill tại FVG sau MSS — giá chạm thiếu 1-2 tick rồi chạy, front-run bởi algo
 

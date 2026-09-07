@@ -430,6 +430,6 @@ Distinguishing observable: nhật ký cảm xúc/ghi chú tâm lý tại thời 
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI: [[13 - FVG  - Fair Value Gap]] · [[03 - Balanced Price Range]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]]
+- POI: [[13-FVG-Fair-Value-Gap]] · [[03-Balanced-Price-Range]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]]
 - Dashboard: [[_Backtest Dashboard]]

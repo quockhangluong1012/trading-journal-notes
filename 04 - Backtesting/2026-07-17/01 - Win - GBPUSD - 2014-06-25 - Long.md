@@ -460,7 +460,7 @@ Bộ lọc: 7 objection nháp, cắt 2 (một về "session không có timestamp
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- Khái niệm: [[13 - FVG  - Fair Value Gap|FVG]] · [[10 - Consequent Encroachment (Mean Threshold)|Consequent Encroachment]] · [[21 - Market Structure Shift|MSS]] · [[20 - Liquidity Sweep|Liquidity Sweep]] · [[27 - Premium Discount|Premium Discount]] · [[12 - Dealing Range|Dealing Range]] · [[18 - Kill Zones|Kill Zones]]
+- Khái niệm: [[13-FVG-Fair-Value-Gap|FVG]] · [[10-Consequent-Encroachment-Mean-Threshold|Consequent Encroachment]] · [[21-Market-Structure-Shift|MSS]] · [[20-Liquidity-Sweep|Liquidity Sweep]] · [[27-Premium-Discount|Premium Discount]] · [[12-Dealing-Range|Dealing Range]] · [[18-Kill-Zones|Kill Zones]]
 - Dashboard: [[_Backtest Dashboard]]
 - Template: [[Backtest template - POI & Step Decision (ICT 2022)]]
 - Mistake liên quan: *(đề xuất mới — xem mục 7.2: "Entry nông nửa trên POI")*

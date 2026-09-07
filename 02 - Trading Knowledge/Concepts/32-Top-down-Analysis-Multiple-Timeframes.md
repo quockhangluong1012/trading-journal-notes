@@ -21,7 +21,7 @@ updated: 2026-07-28
 # Top-down Analysis (Multiple Timeframes)
 
 > [!summary] Tóm tắt 1 câu
-> **Top-down Analysis là quy trình phân tích đi từ khung thời gian CAO xuống khung THẤP — HTF dựng narrative & xác định [[12 - Daily Bias]] và draw on liquidity → Intermediate xác định POI/PD-array & [[12 - Dealing Range]] → LTF chờ giá tới POI trong [[18 - Kill Zones]] rồi tìm xác nhận (sweep → MSS → displacement → entry) — sao cho MỌI quyết định LTF đều nằm bên trong câu chuyện của HTF.**
+> **Top-down Analysis là quy trình phân tích đi từ khung thời gian CAO xuống khung THẤP — HTF dựng narrative & xác định [[12-Daily-Bias]] và draw on liquidity → Intermediate xác định POI/PD-array & [[12-Dealing-Range]] → LTF chờ giá tới POI trong [[18-Kill-Zones]] rồi tìm xác nhận (sweep → MSS → displacement → entry) — sao cho MỌI quyết định LTF đều nằm bên trong câu chuyện của HTF.**
 
 > [!important] Nguyên tắc cốt lõi
 > - **HTF luôn thắng LTF.** Một setup LTF "đẹp" nhưng ngược bias HTF là một cái bẫy, không phải cơ hội. Context HTF override mọi mô hình LTF đẹp mắt.
@@ -38,9 +38,9 @@ updated: 2026-07-28
 **Top-down Analysis (Multiple Timeframe Analysis / MTF)** là kỷ luật phân tích thị trường **từ khung thời gian cao nhất xuống thấp nhất**, sao cho mỗi quyết định ở khung thấp luôn nằm bên trong một narrative đã được dựng ở khung cao. Đây không phải một mô hình giá (price pattern), mà là một **quy trình / workflow** tổ chức toàn bộ cách bạn đọc chart.
 
 Phân cấp khung điển hình theo phong cách ICT:
-- **HTF (Monthly / Weekly / Daily):** dựng **narrative vĩ mô** và xác định [[12 - Daily Bias]] — draw on liquidity (DOL) ở đâu? giá đang [[27 - Premium Discount|premium hay discount]]? những PD-array & liquidity pool HTF nào đang trong cuộc chơi?
-- **Intermediate (4H / 1H):** định vị **POI / PD-array** mà giá sẽ phản ứng; đánh dấu [[16 - Internal & External Range Liquidity (IRL & ERL)|IRL/ERL]]; tinh chỉnh bias và [[12 - Dealing Range]].
-- **LTF (15m / 5m / 1m):** chờ giá chạm POI của HTF **trong [[18 - Kill Zones]]**, rồi tìm xác nhận: [[20 - Liquidity Sweep]] → [[21 - Market Structure Shift]] (MSS) → displacement → [[Fair Value Gap|FVG]]/[[Order Block|OB]] entry.
+- **HTF (Monthly / Weekly / Daily):** dựng **narrative vĩ mô** và xác định [[12-Daily-Bias]] — draw on liquidity (DOL) ở đâu? giá đang [[27-Premium-Discount|premium hay discount]]? những PD-array & liquidity pool HTF nào đang trong cuộc chơi?
+- **Intermediate (4H / 1H):** định vị **POI / PD-array** mà giá sẽ phản ứng; đánh dấu [[16-Internal-External-Range-Liquidity-IRL-ERL|IRL/ERL]]; tinh chỉnh bias và [[12-Dealing-Range]].
+- **LTF (15m / 5m / 1m):** chờ giá chạm POI của HTF **trong [[18-Kill-Zones]]**, rồi tìm xác nhận: [[20-Liquidity-Sweep]] → [[21-Market-Structure-Shift]] (MSS) → displacement → [[Fair Value Gap|FVG]]/[[Order Block|OB]] entry.
 
 ### Bản chất
 - Top-down Analysis biến thị trường thành một cấu trúc **fractal lồng nhau (nested)**: bức tranh lớn của Weekly chứa bức tranh Daily, Daily chứa H4/H1, và H1 chứa M5/M1. Một entry M5 chỉ có ý nghĩa khi nó là một mảnh khớp với bức tranh lớn.
@@ -92,7 +92,7 @@ Phân cấp khung điển hình theo phong cách ICT:
 - **Không phải** một entry signal — nó là cái khung chứa entry; bản thân nó không cho điểm vào.
 - **Không phải** "mở càng nhiều khung càng tốt" — quá nhiều khung gây analysis paralysis. Chọn một bộ 3 khung gắn kết.
 - **Không phải** phân tích từ dưới lên — bắt đầu từ M1 rồi suy ngược lên Daily là làm sai chiều.
-- **Không phải** lý do để bỏ qua [[18 - Kill Zones]] — đúng giá nhưng sai thời gian vẫn là setup yếu.
+- **Không phải** lý do để bỏ qua [[18-Kill-Zones]] — đúng giá nhưng sai thời gian vẫn là setup yếu.
 
 ---
 
@@ -111,14 +111,14 @@ Phân cấp khung điển hình theo phong cách ICT:
 > Nguyên tắc chọn bộ khung: **mỗi bước xuống một khung nên cách nhau khoảng 4–6 lần** (ví dụ D1 → H1 → M5). Đừng nhảy từ Daily thẳng xuống M1 mà bỏ qua tầng Intermediate — đó là bước hay bị bỏ sót nhất.
 
 ### Khi nào khái niệm này có giá trị cao?
-- [ ] Có [[12 - Daily Bias]] rõ ràng và một draw on liquidity (DOL) xác định trên HTF.
-- [ ] Giá đang ở [[27 - Premium Discount|premium/discount]] phù hợp với hướng bias.
+- [ ] Có [[12-Daily-Bias]] rõ ràng và một draw on liquidity (DOL) xác định trên HTF.
+- [ ] Giá đang ở [[27-Premium-Discount|premium/discount]] phù hợp với hướng bias.
 - [ ] Có POI HTF/Intermediate rõ (OB, FVG, NWOG/NDOG, liquidity pool) để giá phản ứng.
-- [ ] Có liquidity pool ([[16 - Internal & External Range Liquidity (IRL & ERL)|IRL/ERL]]) làm target rõ.
-- [ ] Thời điểm tiếp cận nằm trong [[18 - Kill Zones]] (London / NY).
+- [ ] Có liquidity pool ([[16-Internal-External-Range-Liquidity-IRL-ERL|IRL/ERL]]) làm target rõ.
+- [ ] Thời điểm tiếp cận nằm trong [[18-Kill-Zones]] (London / NY).
 
 ### Khi nào nên bỏ qua / không xuống LTF?
-- [ ] Bias HTF không rõ — giá đang loanh quanh giữa [[12 - Dealing Range]].
+- [ ] Bias HTF không rõ — giá đang loanh quanh giữa [[12-Dealing-Range]].
 - [ ] Không có draw on liquidity rõ ràng → không biết giá đi đâu.
 - [ ] Giá chưa chạm POI HTF (đừng tìm entry "trong không khí").
 - [ ] Ngoài kill zone / có high-impact news đang chi phối.
@@ -145,17 +145,17 @@ Phân cấp khung điển hình theo phong cách ICT:
 | **Đồng thuận** | Ba tầng có khớp? | — | Cùng hướng | LTF ngược bias HTF |
 
 ### Điều kiện bắt buộc (must-have)
-- [ ] [[12 - Daily Bias]] HTF được xác định **trước** khi xuống khung.
+- [ ] [[12-Daily-Bias]] HTF được xác định **trước** khi xuống khung.
 - [ ] Một **draw on liquidity** rõ ràng (giá bị hút về đâu).
 - [ ] Một **POI Intermediate** cụ thể đã khoanh vùng.
 - [ ] Hướng entry LTF **đồng thuận** với bias HTF.
 
 ### Điều kiện tăng xác suất (nice-to-have)
-- [ ] POI có **confluence**: OB + FVG + liquidity + [[24 - New Week Opening Gap|NWOG]]/[[23 - New Day Opening Gap|NDOG]] chồng nhau.
-- [ ] Giá ở đúng [[27 - Premium Discount|premium/discount]] cho hướng vào.
-- [ ] Tiếp cận POI trong [[18 - Kill Zones]].
-- [ ] [[20 - Liquidity Sweep]] rõ ngay trước MSS.
-- [ ] Có cả [[16 - Internal & External Range Liquidity (IRL & ERL)|IRL]] (target gần) và **ERL** (target xa) để quản lý TP.
+- [ ] POI có **confluence**: OB + FVG + liquidity + [[24-New-Week-Opening-Gap|NWOG]]/[[23-New-Day-Opening-Gap|NDOG]] chồng nhau.
+- [ ] Giá ở đúng [[27-Premium-Discount|premium/discount]] cho hướng vào.
+- [ ] Tiếp cận POI trong [[18-Kill-Zones]].
+- [ ] [[20-Liquidity-Sweep]] rõ ngay trước MSS.
+- [ ] Có cả [[16-Internal-External-Range-Liquidity-IRL-ERL|IRL]] (target gần) và **ERL** (target xa) để quản lý TP.
 
 ### Điều kiện làm quy trình yếu đi (warning)
 - Bias HTF mơ hồ / vừa mới đổi chưa xác nhận.
@@ -174,24 +174,24 @@ Phân cấp khung điển hình theo phong cách ICT:
 > 3. **LTF — ENTRY & TIMING:** Giá đã tới POI trong kill zone chưa? Có sweep → MSS → FVG để vào không?
 
 ### Bước 1 — HTF (MN / W1 / D1): Bias & Narrative
-1. Xác định [[12 - Daily Bias]]: bullish / bearish / neutral. Viết thành một câu.
+1. Xác định [[12-Daily-Bias]]: bullish / bearish / neutral. Viết thành một câu.
 2. Xác định **Draw on Liquidity (DOL)** — giá đang bị hút về buyside hay sellside, mốc [level] nào?
-3. Định vị giá trong [[12 - Dealing Range]] HTF: đang [[27 - Premium Discount|premium hay discount]]?
+3. Định vị giá trong [[12-Dealing-Range]] HTF: đang [[27-Premium-Discount|premium hay discount]]?
 4. Đánh dấu các PD-array & liquidity pool HTF lớn (OB/FVG/NWOG/old highs-lows).
 5. **Gate:** Nếu bias mơ hồ hoặc không có DOL → **dừng**, đứng ngoài.
 
 ### Bước 2 — Intermediate (H4 / H1): POI & Context
 1. Khoanh **POI cụ thể** mà giá có khả năng phản ứng (OB, FVG, breaker, NWOG/NDOG CE).
-2. Đánh dấu [[16 - Internal & External Range Liquidity (IRL & ERL)|IRL (target gần) & ERL (target xa)]].
+2. Đánh dấu [[16-Internal-External-Range-Liquidity-IRL-ERL|IRL (target gần) & ERL (target xa)]].
 3. Refine bias: cấu trúc Intermediate có ủng hộ bias HTF không?
-4. Xác minh POI nằm đúng [[27 - Premium Discount|premium/discount]] cho hướng vào.
+4. Xác minh POI nằm đúng [[27-Premium-Discount|premium/discount]] cho hướng vào.
 5. **Gate:** Không có POI cụ thể hoặc POI sai P/D → **dừng**, chờ giá tới vùng tốt hơn.
 
 ### Bước 3 — LTF (M15 / M5 / M1): Confirmation & Entry
-1. Chờ giá **thực sự chạm POI** đã khoanh, **trong [[18 - Kill Zones]]**.
-2. Quan sát [[20 - Liquidity Sweep]] quét pool ngay tại/cạnh POI.
-3. Chờ [[21 - Market Structure Shift]] (MSS) đúng hướng bias HTF (hoặc [[Break of Structure|BOS]] nếu tiếp diễn).
-4. Tinh chỉnh entry vào [[Fair Value Gap|FVG]]/[[Order Block|OB]] hình thành sau displacement; cân nhắc [[26 - OTE - Optimal Trade Entry|OTE]].
+1. Chờ giá **thực sự chạm POI** đã khoanh, **trong [[18-Kill-Zones]]**.
+2. Quan sát [[20-Liquidity-Sweep]] quét pool ngay tại/cạnh POI.
+3. Chờ [[21-Market-Structure-Shift]] (MSS) đúng hướng bias HTF (hoặc [[Break of Structure|BOS]] nếu tiếp diễn).
+4. Tinh chỉnh entry vào [[Fair Value Gap|FVG]]/[[Order Block|OB]] hình thành sau displacement; cân nhắc [[26-OTE-Optimal-Trade-Entry|OTE]].
 5. SL ngoài điểm sweep / ngoài POI; TP1 = IRL, TP2 = ERL/DOL.
 6. **Gate:** Không có sweep/MSS trong POI, hoặc trigger giữa range → **không có lệnh**.
 
@@ -228,7 +228,7 @@ Phân cấp khung điển hình theo phong cách ICT:
 - [ ] Bias HTF rõ + có draw on liquidity xác định.
 - [ ] POI Intermediate cụ thể, đúng premium/discount.
 - [ ] Giá đã tới POI **trong kill zone**.
-- [ ] Có [[20 - Liquidity Sweep]] + [[21 - Market Structure Shift]] LTF đúng hướng bias.
+- [ ] Có [[20-Liquidity-Sweep]] + [[21-Market-Structure-Shift]] LTF đúng hướng bias.
 - [ ] Có entry array (FVG/OB/OTE), SL logic, RR đạt kế hoạch.
 - [ ] **Ba tầng đồng thuận** một câu chuyện.
 
@@ -278,12 +278,12 @@ Cách xử lý:
 
 Top-down Analysis thường được dạy thuần theo trục **giá** (bias → POI → entry) nhưng bỏ sót một trục quan trọng không kém: **thời gian**. Biết giá đang ở đâu trong narrative HTF — ví dụ giá đã chạm đúng POI Intermediate — không tự động có nghĩa là ĐÃ ĐẾN LÚC xuống LTF tìm trigger. Thị trường vận hành theo chu kỳ nội phiên **AMD (Accumulation – Manipulation – Distribution)**: tích lũy đi ngang, sau đó bị thao túng (thường là một sweep thanh khoản), rồi mới phân phối theo hướng thật.
 
-Nếu giá chạm đúng POI HTF nhưng đang ở pha **Accumulation** (thường là phiên Á hoặc đầu phiên, thanh khoản mỏng, giá đi ngang hẹp), thì bất kỳ "MSS" nào xuất hiện lúc đó có xác suất cao chỉ là nhiễu nội phiên — không đủ thanh khoản đằng sau để tạo một displacement thật. Ngược lại, khi giá bước vào pha **Manipulation** — thường trùng với đầu [[18 - Kill Zones|Kill Zone]] London hoặc New York — đây là lúc thị trường thực sự "quét" thanh khoản (liquidity sweep) trước khi phân phối theo hướng đúng. Một sweep + MSS xảy ra trong đúng cửa sổ Manipulation có độ tin cậy cao hơn hẳn cùng một mẫu hình xảy ra giữa lúc Accumulation.
+Nếu giá chạm đúng POI HTF nhưng đang ở pha **Accumulation** (thường là phiên Á hoặc đầu phiên, thanh khoản mỏng, giá đi ngang hẹp), thì bất kỳ "MSS" nào xuất hiện lúc đó có xác suất cao chỉ là nhiễu nội phiên — không đủ thanh khoản đằng sau để tạo một displacement thật. Ngược lại, khi giá bước vào pha **Manipulation** — thường trùng với đầu [[18-Kill-Zones|Kill Zone]] London hoặc New York — đây là lúc thị trường thực sự "quét" thanh khoản (liquidity sweep) trước khi phân phối theo hướng đúng. Một sweep + MSS xảy ra trong đúng cửa sổ Manipulation có độ tin cậy cao hơn hẳn cùng một mẫu hình xảy ra giữa lúc Accumulation.
 
 Nguyên tắc thực hành:
 - **Đừng bắt đầu săn trigger LTF chỉ vì giá đã ở đúng vị trí (POI).** Luôn hỏi thêm: hiện tại đang ở pha nào của chu kỳ AMD trong phiên?
 - **Trong pha Accumulation, chuyển sang chế độ chờ, không phải chế độ săn entry** — dù giá đang nằm đẹp tại POI HTF/Intermediate. Đánh dấu vùng, rồi chờ.
-- **Ưu tiên tìm sweep → MSS trong pha Manipulation**, gần như luôn trùng khung giờ [[18 - Kill Zones]] (London Open, NY AM). Đây là lúc "câu chuyện về giá" (top-down) và "câu chuyện về thời gian" (AMD) gặp nhau.
+- **Ưu tiên tìm sweep → MSS trong pha Manipulation**, gần như luôn trùng khung giờ [[18-Kill-Zones]] (London Open, NY AM). Đây là lúc "câu chuyện về giá" (top-down) và "câu chuyện về thời gian" (AMD) gặp nhau.
 - **Pha Distribution là lúc quản lý lệnh đã vào**, không phải lúc tìm entry mới — nếu bạn mới thấy tín hiệu ở giữa/cuối Distribution, phần lớn move ngon đã đi qua.
 
 ![[TopDown-Advanced-Session-AMD-Timing.svg|697]]
@@ -369,16 +369,16 @@ HTF (D1): Daily Bias + Draw on Liquidity + Premium/Discount
 > Top-down là kỷ luật, không phải gợi ý. Một tầng FAIL là cả quy trình FAIL.
 
 ### A. Context (HTF + Intermediate)
-- [ ] [[12 - Daily Bias]] rõ ràng: `Bullish / Bearish`.
+- [ ] [[12-Daily-Bias]] rõ ràng: `Bullish / Bearish`.
 - [ ] Draw on liquidity (DOL) xác định: [level].
-- [ ] Giá ở [[27 - Premium Discount|premium/discount]] phù hợp hướng trade.
+- [ ] Giá ở [[27-Premium-Discount|premium/discount]] phù hợp hướng trade.
 - [ ] POI Intermediate cụ thể đã khoanh (đúng P/D).
 - [ ] IRL/ERL làm target đã đánh dấu.
 
 ### B. Execution (LTF)
-- [ ] Giá đã **thực sự tới POI** trong [[18 - Kill Zones]].
-- [ ] Có [[20 - Liquidity Sweep]] tại/cạnh POI.
-- [ ] Có [[21 - Market Structure Shift]] LTF đúng hướng bias.
+- [ ] Giá đã **thực sự tới POI** trong [[18-Kill-Zones]].
+- [ ] Có [[20-Liquidity-Sweep]] tại/cạnh POI.
+- [ ] Có [[21-Market-Structure-Shift]] LTF đúng hướng bias.
 - [ ] Có entry array (FVG/OB/OTE), SL ngoài sweep, RR ≥ ngưỡng.
 - [ ] Risk ≤ 0.5% theo khung rủi ro.
 
@@ -489,7 +489,7 @@ HTF (D1): Daily Bias + Draw on Liquidity + Premium/Discount
 
 3. **Coi một bias HTF vừa mới flip là "tentative" cho tới khi Intermediate xác nhận bằng cấu trúc riêng của nó.** Như phân tích ở mục Nâng cao — Xử lý độ trễ giữa các tầng, có một cửa sổ trễ tự nhiên giữa lúc HTF đổi hướng và lúc các tầng thấp hơn "bắt kịp". Vào lệnh full-size ngay trong cửa sổ này là đặt cược vào một bias chưa được xác nhận đầy đủ.
 
-4. **Kết hợp timing theo session/AMD với vị trí POI theo giá — đừng săn trigger LTF trong pha Accumulation.** Giá chạm đúng HTF POI không có nghĩa là "đến giờ" tìm entry; hãy xác định trước xem phiên đang ở pha Accumulation, Manipulation hay Distribution, và chỉ kỳ vọng một sweep + MSS hợp lệ khi bước vào Manipulation (thường trùng [[18 - Kill Zones]]).
+4. **Kết hợp timing theo session/AMD với vị trí POI theo giá — đừng săn trigger LTF trong pha Accumulation.** Giá chạm đúng HTF POI không có nghĩa là "đến giờ" tìm entry; hãy xác định trước xem phiên đang ở pha Accumulation, Manipulation hay Distribution, và chỉ kỳ vọng một sweep + MSS hợp lệ khi bước vào Manipulation (thường trùng [[18-Kill-Zones]]).
 
 5. **Chọn một bộ ba khung gắn kết cho mỗi phiên và không đổi giữa chừng.** Việc nhảy qua lại giữa nhiều tổ hợp khung (lúc dùng D1→H1→M5, lúc lại H4→M15→M1) trong cùng một phiên phân tích tạo ra analysis paralysis và khiến bias bị "làm mới" liên tục theo cảm tính LTF. Cố định một bộ khung trước khi bắt đầu, và chỉ đổi bộ khung ở đầu phiên mới.
 

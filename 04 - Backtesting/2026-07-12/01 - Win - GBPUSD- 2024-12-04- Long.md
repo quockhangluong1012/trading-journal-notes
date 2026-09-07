@@ -378,9 +378,9 @@ Retracted by: đã retracted — note tự sửa cách đánh giá tại mục 4
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI ladder: [[25 - OB - Order Block]] · [[13 - FVG  - Fair Value Gap]]
-- Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[26 - OTE - Optimal Trade Entry]] · [[27 - Premium Discount]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]]
+- POI ladder: [[25-OB-Order-Block]] · [[13-FVG-Fair-Value-Gap]]
+- Entry refine: [[10-Consequent-Encroachment-Mean-Threshold]] · [[26-OTE-Optimal-Trade-Entry]] · [[27-Premium-Discount]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]]
 - Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]
 
 ---

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 970" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="1100" height="970" fill="#fcfcfb"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#52514e"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="550" y="26" text-anchor="middle" font-size="17" font-weight="600" fill="#0b0b0b">Decision Framework — Khi giá D1 đi lên gặp thanh khoản: 3 kịch bản đã pre-register</text>
+  <text x="550" y="45" text-anchor="middle" font-size="12" fill="#52514e">Kết quả cuối cùng của thread devil's-advocate O1–O10 (06–07/08/2026)</text>
+
+  <!-- Top state box -->
+  <rect x="330" y="62" width="440" height="72" rx="8" fill="#eef3fb" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="550" y="82" text-anchor="middle" font-size="12.5" font-weight="700" fill="#184f95">TRẠNG THÁI HIỆN TẠI</text>
+  <text x="550" y="99" text-anchor="middle" font-size="11.5" fill="#0b0b0b">D1 Bias: BULLISH (pullback trong W1 Bearish)</text>
+  <text x="550" y="115" text-anchor="middle" font-size="11.5" fill="#0b0b0b">Discount (dưới EQ 1.15868) · giá ≈ 1.15227</text>
+  <text x="550" y="129" text-anchor="middle" font-size="10.5" fill="#52514e">FVG 1.15255–1.15742 đã bị test-and-reject từ dưới</text>
+
+  <line x1="550" y1="134" x2="550" y2="156" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="550" y="174" text-anchor="middle" font-size="11.5" font-weight="600" fill="#0b0b0b">Giá tiếp tục đi lên vùng thanh khoản phía trên — 3 kịch bản pre-registered:</text>
+
+  <!-- Column headers -->
+  <text x="205" y="196" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4a3aa7">KỊCH BẢN A — phản ứng SỚM tại IRL</text>
+  <text x="550" y="196" text-anchor="middle" font-size="12.5" font-weight="700" fill="#a02a29">KỊCH BẢN 1 — phản ứng đầy đủ tại ERL/DOL</text>
+  <text x="895" y="196" text-anchor="middle" font-size="12.5" font-weight="700" fill="#184f95">KỊCH BẢN 2 — phá Dealing Range</text>
+
+  <!-- ===== LEFT COLUMN ===== -->
+  <rect x="30" y="208" width="350" height="66" rx="6" fill="#f5f3fb" stroke="#4a3aa7" stroke-width="1.5"/>
+  <text x="205" y="230" text-anchor="middle" font-size="11.5" fill="#0b0b0b">Phản ứng (reject/sweep) xuất hiện tại</text>
+  <text x="205" y="246" text-anchor="middle" font-size="11.5" fill="#0b0b0b">Internal Liquidity ~1.16857 (IRL)</text>
+  <text x="205" y="262" text-anchor="middle" font-size="10.5" fill="#52514e">— chưa tới DOL thật (1.17889)</text>
+
+  <line x1="205" y1="274" x2="205" y2="296" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="30" y="298" width="350" height="232" rx="6" fill="#fff" stroke="#0b0b0b" stroke-width="1.5"/>
+  <text x="205" y="318" text-anchor="middle" font-size="12" font-weight="700" fill="#0b0b0b">H1 Confirmation Gate — cần ĐỦ CẢ 5 (AND)</text>
+  <text x="45" y="337" font-size="10.8" fill="#0b0b0b">1. Có H1 POI (FVG/OB) tại vùng này</text>
+  <text x="45" y="354" font-size="10.8" fill="#0b0b0b">2. Quét thanh khoản nội bộ H1, hoặc</text>
+  <text x="55" y="368" font-size="10.8" fill="#0b0b0b">   phản ứng rõ tại POI đó</text>
+  <text x="45" y="385" font-size="10.8" fill="#0b0b0b">3. Displacement chất lượng: thân lớn,</text>
+  <text x="55" y="399" font-size="10.8" fill="#0b0b0b">   không chồng lắp, râu ngắn/không có</text>
+  <text x="45" y="416" font-size="10.8" fill="#0b0b0b">4. ĐÓNG NẾN (không phải wick) vượt qua</text>
+  <text x="55" y="430" font-size="10.8" fill="#0b0b0b">   1 intermediate low H1 (swing cấu trúc)</text>
+  <text x="45" y="447" font-size="10.8" fill="#0b0b0b">5. Để lại FVG H1 mới, chưa mitigate,</text>
+  <text x="55" y="461" font-size="10.8" fill="#0b0b0b">   đủ rộng (≥20% ATR14-H1 VÀ ≥15%</text>
+  <text x="55" y="475" font-size="10.8" fill="#0b0b0b">   biên độ leg displacement)</text>
+  <text x="205" y="497" text-anchor="middle" font-size="10.3" font-style="italic" fill="#a5451f">"Phá qua" = body close (O9). Wick-only = "Quét", không tính.</text>
+  <text x="205" y="514" text-anchor="middle" font-size="10.3" font-style="italic" fill="#a5451f">FVG width theo ngưỡng O10 (xem ghi chú bên dưới).</text>
+
+  <line x1="140" y1="530" x2="90" y2="554" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="270" y1="530" x2="320" y2="554" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="70" y="546" font-size="10" fill="#0ca30c" font-weight="700">ĐỦ 5</text>
+  <text x="300" y="546" font-size="10" fill="#d03b3b" font-weight="700">THIẾU ≥1</text>
+
+  <rect x="20" y="558" width="175" height="118" rx="6" fill="#f0eefc" stroke="#4a3aa7" stroke-width="1.5"/>
+  <text x="107" y="576" text-anchor="middle" font-size="11" font-weight="700" fill="#4a3aa7">H1 MSS hợp lệ</text>
+  <text x="107" y="592" text-anchor="middle" font-size="10.3" fill="#0b0b0b">→ CÂN NHẮC LẠI D1 Bias</text>
+  <text x="107" y="607" text-anchor="middle" font-size="9.8" fill="#52514e">(chưa chắc Bearish —</text>
+  <text x="107" y="620" text-anchor="middle" font-size="9.8" fill="#52514e">cần thêm xác nhận, không</text>
+  <text x="107" y="633" text-anchor="middle" font-size="9.8" fill="#52514e">tự động đổi nhãn ngay)</text>
+  <text x="107" y="655" text-anchor="middle" font-size="9.5" fill="#52514e">O8 discharge condition</text>
+
+  <rect x="205" y="558" width="175" height="118" rx="6" fill="#f4f4f2" stroke="#898781" stroke-width="1.5"/>
+  <text x="292" y="576" text-anchor="middle" font-size="11" font-weight="700" fill="#52514e">Chỉ là quan sát</text>
+  <text x="292" y="592" text-anchor="middle" font-size="10.3" fill="#0b0b0b">(Kịch bản A — liquidity</text>
+  <text x="292" y="606" text-anchor="middle" font-size="10.3" fill="#0b0b0b">engineering / Judas swing)</text>
+  <text x="292" y="626" text-anchor="middle" font-size="10.8" font-weight="700" fill="#52514e">D1 Bias GIỮ NGUYÊN</text>
+  <text x="292" y="640" text-anchor="middle" font-size="10.8" font-weight="700" fill="#52514e">Bullish</text>
+
+  <!-- ===== MIDDLE COLUMN ===== -->
+  <rect x="400" y="208" width="300" height="96" rx="6" fill="#fbeceb" stroke="#a02a29" stroke-width="1.5"/>
+  <text x="550" y="228" text-anchor="middle" font-size="11.3" fill="#0b0b0b">Phản ứng ĐẦY ĐỦ tại DOL/ERL 1.17889:</text>
+  <text x="550" y="244" text-anchor="middle" font-size="11.3" fill="#0b0b0b">reject + sweep + đóng nến xuống +</text>
+  <text x="550" y="260" text-anchor="middle" font-size="11.3" fill="#0b0b0b">displacement + MSS</text>
+  <text x="550" y="277" text-anchor="middle" font-size="10" fill="#52514e">(đủ cả 5 yếu tố tại đúng ERL, không phải IRL)</text>
+  <text x="550" y="292" text-anchor="middle" font-size="10" fill="#52514e">— đây là Kịch bản 1 gốc, không qua gate H1</text>
+
+  <line x1="550" y1="304" x2="550" y2="326" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="400" y="328" width="300" height="90" rx="6" fill="#fbeceb" stroke="#d03b3b" stroke-width="2"/>
+  <text x="550" y="356" text-anchor="middle" font-size="13.5" font-weight="700" fill="#a02a29">D1 Bias → BEARISH</text>
+  <text x="550" y="374" text-anchor="middle" font-size="11" fill="#0b0b0b">đồng bộ với W1</text>
+  <text x="550" y="392" text-anchor="middle" font-size="10" fill="#52514e">Tín hiệu tin cậy cao nhất trong 3 kịch bản</text>
+
+  <!-- ===== RIGHT COLUMN ===== -->
+  <rect x="720" y="208" width="350" height="76" rx="6" fill="#eaf1fb" stroke="#184f95" stroke-width="1.5"/>
+  <text x="895" y="230" text-anchor="middle" font-size="11.3" fill="#0b0b0b">Giá PHÁ QUA Dealing Range High —</text>
+  <text x="895" y="246" text-anchor="middle" font-size="11.3" fill="#0b0b0b">đóng nến (body close) trên 1.18491</text>
+  <text x="895" y="263" text-anchor="middle" font-size="10" fill="#52514e">Range coi như "expired", không còn hiệu lực</text>
+  <text x="895" y="277" text-anchor="middle" font-size="10" fill="#52514e">để đo Premium/Discount như cũ</text>
+
+  <line x1="895" y1="284" x2="895" y2="306" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="720" y="308" width="350" height="110" rx="6" fill="#eaf1fb" stroke="#2a78d6" stroke-width="2"/>
+  <text x="895" y="332" text-anchor="middle" font-size="13" font-weight="700" fill="#184f95">D1 tiếp tục BULLISH mạnh</text>
+  <text x="895" y="352" text-anchor="middle" font-size="10.8" fill="#0b0b0b">W1 Bias có khả năng bị re-đánh giá —</text>
+  <text x="895" y="368" text-anchor="middle" font-size="10.8" fill="#0b0b0b">KHÔNG tự động đổi, cần review lại</text>
+  <text x="895" y="384" text-anchor="middle" font-size="10.8" fill="#0b0b0b">cấu trúc W1 thật (LH/LL còn nguyên?)</text>
+  <text x="895" y="402" text-anchor="middle" font-size="10" fill="#52514e">trước khi kết luận W1 đổi hướng</text>
+
+  <!-- divider -->
+  <line x1="30" y1="700" x2="1070" y2="700" stroke="#e1e0d9" stroke-width="1.5"/>
+
+  <!-- Notes -->
+  <rect x="30" y="716" width="500" height="112" rx="6" fill="#f9f9f7" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="45" y="735" font-size="11.5" font-weight="700" fill="#0b0b0b">O9 — Quy tắc body-close</text>
+  <text x="45" y="753" font-size="10.5" fill="#0b0b0b">"Phá qua" (displacement break) = phải có ít nhất</text>
+  <text x="45" y="768" font-size="10.5" fill="#0b0b0b">1 nến ĐÓNG CỬA (body close) vượt swing cấu trúc.</text>
+  <text x="45" y="783" font-size="10.5" fill="#0b0b0b">Râu nến thọc qua rồi đóng lại bên trong = "Quét"</text>
+  <text x="45" y="798" font-size="10.5" fill="#0b0b0b">(sweep) — KHÔNG được tính là MSS/displacement hợp lệ.</text>
+  <text x="45" y="816" font-size="10" font-style="italic" fill="#52514e">Đây là phân biệt do chính user tự có sẵn, không phải luật mới.</text>
+
+  <rect x="560" y="716" width="510" height="112" rx="6" fill="#f9f9f7" stroke="#e1e0d9" stroke-width="1"/>
+  <text x="575" y="735" font-size="11.5" font-weight="700" fill="#0b0b0b">O10 — Ngưỡng độ rộng FVG (heuristic)</text>
+  <text x="575" y="753" font-size="10.5" fill="#0b0b0b">FVG được coi là "không quá nhỏ" khi thoả CẢ HAI:</text>
+  <text x="575" y="770" font-size="10.5" fill="#0b0b0b">(a) độ rộng ≥ 20% ATR(14) của khung đó, VÀ</text>
+  <text x="575" y="785" font-size="10.5" fill="#0b0b0b">(b) độ rộng ≥ 15% biên độ (high–low) của leg</text>
+  <text x="585" y="800" font-size="10.5" fill="#0b0b0b">displacement đã tạo ra nó.</text>
+  <text x="575" y="818" font-size="10" font-style="italic" fill="#52514e">Không phải luật ICT gốc — đề xuất, cần tự backtest hiệu chỉnh.</text>
+
+  <!-- Legend -->
+  <rect x="30" y="844" width="1040" height="46" fill="#f9f9f7" stroke="#e1e0d9" stroke-width="1"/>
+  <rect x="45" y="858" width="14" height="14" rx="3" fill="#f0eefc" stroke="#4a3aa7"/>
+  <text x="65" y="869" font-size="10.5" fill="#0b0b0b">Cần thêm xác nhận (chưa chắc chắn)</text>
+  <rect x="290" y="858" width="14" height="14" rx="3" fill="#fbeceb" stroke="#d03b3b"/>
+  <text x="310" y="869" font-size="10.5" fill="#0b0b0b">Bearish (đồng bộ W1)</text>
+  <rect x="480" y="858" width="14" height="14" rx="3" fill="#eaf1fb" stroke="#2a78d6"/>
+  <text x="500" y="869" font-size="10.5" fill="#0b0b0b">Bullish tiếp diễn</text>
+  <rect x="660" y="858" width="14" height="14" rx="3" fill="#f4f4f2" stroke="#898781"/>
+  <text x="680" y="869" font-size="10.5" fill="#0b0b0b">Giữ nguyên bias hiện tại</text>
+  <text x="870" y="869" font-size="10" fill="#898781">O1–O10: tất cả đã đóng (withdrawn/concession)</text>
+
+  <text x="550" y="908" text-anchor="middle" font-size="10" fill="#898781">Không phải khuyến nghị vào lệnh — đây là khung xác nhận cấu trúc để cập nhật Daily Bias, không phải entry/SL/TP.</text>
+</svg>

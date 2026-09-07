@@ -11,7 +11,7 @@ entry_model: ICT 2022 Model
 entry_timeframe: M5
 htf_bias: Bullish
 bias_correct: Yes
-poi_type: "[[25 - OB - Order Block|OB]]"
+poi_type: "[[25-OB-Order-Block|OB]]"
 liquidity_swept: Yes
 displacement: Yes
 mss: Yes
@@ -306,6 +306,6 @@ Distinguishing observable: xem nến M5 phá swing có đóng nến (body close)
 
 ### Liên kết
 
-- Concept: [[Trading Journal/03 - Playbooks/3.2 - Setups/ICT 2022 Model]] · [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[13 - FVG  - Fair Value Gap]] · [[26 - OTE - Optimal Trade Entry]]
+- Concept: [[Trading Journal/03 - Playbooks/3.2 - Setups/ICT 2022 Model]] · [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[13-FVG-Fair-Value-Gap]] · [[26-OTE-Optimal-Trade-Entry]]
 - Dashboard: [[_Backtest Dashboard]]
-- Mistake liên quan: [[Mistake - ]]
+- Mistake liên quan: _(chưa gán note lỗi)_

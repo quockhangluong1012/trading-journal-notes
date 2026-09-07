@@ -31,7 +31,7 @@ Lỗi này có hai biến thể, cả hai đều dẫn tới cùng một hệ qu
 
 Điểm chung của cả hai biến thể: **MSS = một break có displacement qua đúng protected swing, kèm theo FVG hoặc origin OB rõ ràng.** Thiếu bất kỳ thành phần nào trong định nghĩa này (không có break, không đúng swing, hoặc không có displacement), đó không phải là MSS — nó chỉ là nhiễu giá hoặc một pullback bình thường trong nội bộ leg đang diễn ra.
 
-Đây là lỗi khác với [[03 - Mistake - Entry When MSS not in POI Zone]] — ở đó MSS có thật nhưng sai vị trí (không tại POI); ở đây, vấn đề nằm ngay tại gốc: **không hề có một MSS hợp lệ nào cả**, dù có thật (biến thể A) hay giả (biến thể B).
+Đây là lỗi khác với [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] — ở đó MSS có thật nhưng sai vị trí (không tại POI); ở đây, vấn đề nằm ngay tại gốc: **không hề có một MSS hợp lệ nào cả**, dù có thật (biến thể A) hay giả (biến thể B).
 
 ![[NoMSS-Sec-01-MoTa.svg|760]]
 *Sơ đồ: cùng một cú sweep tại POI, nhưng bên trái chỉ có wick rejection (không MSS, không displacement) trong khi bên phải có displacement thật đóng nến qua protected swing kèm FVG — đúng định nghĩa MSS.*
@@ -161,7 +161,7 @@ Một trong những cạm bẫy tinh vi nhất: giá tạo ra một MSS trông c
 
 ### 5.6. Timing — MSS trong kill zone vs MSS ngoài phiên
 
-Một MSS xảy ra trong [[18 - Kill Zones]] (London Open, New York Open) có xác suất là dấu vết của dòng lệnh tổ chức thật cao hơn hẳn so với một MSS hình thành giữa phiên Á hoặc giờ thấp thanh khoản (lunch NY, cuối phiên London). Lý do: displacement cần khối lượng lệnh đủ lớn để thực sự áp đảo phía đối nghịch — trong giờ thanh khoản mỏng, một cú break "trông giống displacement" dễ chỉ là kết quả của spread giãn hoặc vài lệnh đơn lẻ, không phản ánh dòng lệnh tổ chức thật. Một MSS off-session, dù kỹ thuật đủ điều kiện (có đóng nến qua protected swing, có FVG), vẫn nên được hạ mức tin cậy và đòi hỏi thêm xác nhận (ví dụ SMT divergence, hoặc chờ MSS đó được giữ vững khi bước vào kill zone kế tiếp) trước khi entry full size.
+Một MSS xảy ra trong [[18-Kill-Zones]] (London Open, New York Open) có xác suất là dấu vết của dòng lệnh tổ chức thật cao hơn hẳn so với một MSS hình thành giữa phiên Á hoặc giờ thấp thanh khoản (lunch NY, cuối phiên London). Lý do: displacement cần khối lượng lệnh đủ lớn để thực sự áp đảo phía đối nghịch — trong giờ thanh khoản mỏng, một cú break "trông giống displacement" dễ chỉ là kết quả của spread giãn hoặc vài lệnh đơn lẻ, không phản ánh dòng lệnh tổ chức thật. Một MSS off-session, dù kỹ thuật đủ điều kiện (có đóng nến qua protected swing, có FVG), vẫn nên được hạ mức tin cậy và đòi hỏi thêm xác nhận (ví dụ SMT divergence, hoặc chờ MSS đó được giữ vững khi bước vào kill zone kế tiếp) trước khi entry full size.
 
 ---
 
@@ -309,11 +309,11 @@ Câu hỏi cốt lõi: **MSS thật khác gì về bản chất cơ chế order 
 
 | Mistake kết hợp | Cơ chế khuếch đại lẫn nhau | Mức nguy hiểm tổ hợp |
 |---|---|---|
-| [[03 - Mistake - Entry When MSS not in POI Zone]] | Có MSS nhưng MSS không nằm tại một POI HTF hợp lệ — kết hợp với việc không phân biệt MSS thật/liquidity run, hai lỗi cùng làm suy yếu điều kiện "MSS xác nhận ĐÚNG NƠI, ĐÚNG CÁCH". | **Rất cao** — hai lớp điều kiện của cùng một khái niệm MSS đều bị vi phạm cùng lúc. |
-| [[02 - Mistake - Enter before liquidity sweep]] | Vào trước sweep gần như luôn đi kèm việc chưa có MSS thật (MSS thường hình thành SAU sweep) — đây là hai mặt của cùng một lỗi trình tự AMD bị đảo (entry trước khi Manipulation hoàn tất). | **Rất cao** — thường xảy ra đồng thời trên cùng một lệnh, không phải hai lỗi tách biệt. |
-| [[09 - Mistake - Wrong daily bias]] | Nếu bias sai, trader có động lực tâm lý mạnh hơn để "thấy" MSS ở những break nhỏ/wick nhằm biện minh cho bias đã chọn (confirmation bias) — bias sai làm giảm ngưỡng tiêu chí xác nhận MSS trong đầu trader. | **Cao** — bias sai là yếu tố tâm lý khuếch đại lỗi nhận diện MSS. |
-| [[04 - Mistake - FOMO Entry]] | Vào không MSS thường xảy ra dưới cùng áp lực tâm lý "sợ lỡ sóng" như FOMO — nhưng khác gốc kỹ thuật: FOMO là đuổi giá đã chạy XA khỏi POI, còn thiếu MSS là vào TẠI hoặc GẦN vùng đảo chiều nhưng chưa có xác nhận cấu trúc. Hai lỗi có thể cộng hưởng khi trader vừa đuổi giá vừa tưởng nhìn thấy MSS giả để tự trấn an. | **Cao** — cộng hưởng tâm lý dù gốc kỹ thuật khác nhau. |
-| [[07 - Mistake - Risk more than 0.5% total account]] (suy ra từ mục 3.4 note gốc) | Thiếu protected swing rõ ràng để neo SL buộc SL phải đặt cảm tính rộng hơn — nếu size không giảm tương ứng, risk% thực vượt chuẩn ngay trên chính lệnh thiếu MSS. | **Cao** — SL sai logic do thiếu MSS trực tiếp đẩy risk thực tăng. |
+| [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] | Có MSS nhưng MSS không nằm tại một POI HTF hợp lệ — kết hợp với việc không phân biệt MSS thật/liquidity run, hai lỗi cùng làm suy yếu điều kiện "MSS xác nhận ĐÚNG NƠI, ĐÚNG CÁCH". | **Rất cao** — hai lớp điều kiện của cùng một khái niệm MSS đều bị vi phạm cùng lúc. |
+| [[02-Mistake-Enter-before-liquidity-sweep]] | Vào trước sweep gần như luôn đi kèm việc chưa có MSS thật (MSS thường hình thành SAU sweep) — đây là hai mặt của cùng một lỗi trình tự AMD bị đảo (entry trước khi Manipulation hoàn tất). | **Rất cao** — thường xảy ra đồng thời trên cùng một lệnh, không phải hai lỗi tách biệt. |
+| [[09-Mistake-Wrong-daily-bias]] | Nếu bias sai, trader có động lực tâm lý mạnh hơn để "thấy" MSS ở những break nhỏ/wick nhằm biện minh cho bias đã chọn (confirmation bias) — bias sai làm giảm ngưỡng tiêu chí xác nhận MSS trong đầu trader. | **Cao** — bias sai là yếu tố tâm lý khuếch đại lỗi nhận diện MSS. |
+| [[04-Mistake-FOMO-Entry]] | Vào không MSS thường xảy ra dưới cùng áp lực tâm lý "sợ lỡ sóng" như FOMO — nhưng khác gốc kỹ thuật: FOMO là đuổi giá đã chạy XA khỏi POI, còn thiếu MSS là vào TẠI hoặc GẦN vùng đảo chiều nhưng chưa có xác nhận cấu trúc. Hai lỗi có thể cộng hưởng khi trader vừa đuổi giá vừa tưởng nhìn thấy MSS giả để tự trấn an. | **Cao** — cộng hưởng tâm lý dù gốc kỹ thuật khác nhau. |
+| [[07-Mistake-Risk-more-than-0.5-total-account]] (suy ra từ mục 3.4 note gốc) | Thiếu protected swing rõ ràng để neo SL buộc SL phải đặt cảm tính rộng hơn — nếu size không giảm tương ứng, risk% thực vượt chuẩn ngay trên chính lệnh thiếu MSS. | **Cao** — SL sai logic do thiếu MSS trực tiếp đẩy risk thực tăng. |
 
 ---
 
@@ -548,6 +548,6 @@ Audit hành vi **xác nhận MSS trước khi vào lệnh đảo chiều**, mứ
 
 ## 16. Liên kết
 
-**Concepts:** [[21 - Market Structure Shift]] · [[09 - Change of Character]] · [[05 - BOS - Break of Structure]] · [[35 - Aggressive Displacement Entry]] · [[20 - Liquidity Sweep]] · [[13 - FVG  - Fair Value Gap]]
+**Concepts:** [[21-Market-Structure-Shift]] · [[09-Change-of-Character]] · [[05-BOS-Break-of-Structure]] · [[35-Aggressive-Displacement-Entry]] · [[20-Liquidity-Sweep]] · [[13-FVG-Fair-Value-Gap]]
 
-**Mistakes liên quan:** [[03 - Mistake - Entry When MSS not in POI Zone]] · [[02 - Mistake - Enter before liquidity sweep]] · [[09 - Mistake - Wrong daily bias]]
+**Mistakes liên quan:** [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] · [[02-Mistake-Enter-before-liquidity-sweep]] · [[09-Mistake-Wrong-daily-bias]]

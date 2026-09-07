@@ -8,7 +8,7 @@ stop_loss: 30,323.0
 kill_zone: New York
 pnl: -32.43
 r_multiple:
-mistakes: "[[03 - Mistake - Entry When MSS not in POI Zone]]"
+mistakes: "[[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]"
 tags:
   - DailyBias
   - KillZones
@@ -42,12 +42,12 @@ da_opposite_case: "weaker but non-trivial"
 ![[NDX-20260618-M5.png]]
 ## 2. Phân tích sau lệnh:
 - **Result**: Hit ==stoploss==
-- **Mistake**: [[06 - Mistake - Not Have Market Structure Shift]]
+- **Mistake**: [[06-Mistake-Not-Have-Market-Structure-Shift]]
 - **Lý do**: Thấy giá quét thanh khoản khung H1 khi đó tôi đã xuống ngay khung thời gian nhỏ hơn để tìm điểm vào lệnh mà quên mất ngay vùng đó không có bất kỳ 1 POI nào -> Quá tập trung tìm MSS mà quên mất phải chờ giá retrace về vùng POI sau đó tìm xác nhận
 
 ## 4. Phân Tích Sau Lệnh (điền dựa trên dữ kiện có trong file)
 
-File không có checklist/Execution Review — mục 2 gộp phân tích. Nguyên nhân tự nhận rất cụ thể và khác các file EURUSD/GBPUSD cùng cụm: không phải "thiếu MSS" đơn thuần mà là **entry tại vùng không có POI nào** (tự nhận: "giá quét thanh khoản tại 1 vùng không có bất kỳ POI nào (OB, FVG,..)") — khớp đúng với mistake tag frontmatter `[[03 - Mistake - Entry When MSS not in POI Zone]]`, dù dòng "Mistake" trong body lại ghi tag khác (`[[06 - Mistake - Not Have Market Structure Shift]]`) — hai tag khác nhau giữa frontmatter và body cho cùng một lệnh *(ghi nhận sự khác biệt, không suy diễn lý do)*. Bias D1 lần này là Bearish (đảo hướng so với Bullish sai của cả 3 lệnh Long ngày 17/06) — và Short đúng theo bias Bearish này, khác các lệnh Long ngày trước đều tự nhận sai bias.
+File không có checklist/Execution Review — mục 2 gộp phân tích. Nguyên nhân tự nhận rất cụ thể và khác các file EURUSD/GBPUSD cùng cụm: không phải "thiếu MSS" đơn thuần mà là **entry tại vùng không có POI nào** (tự nhận: "giá quét thanh khoản tại 1 vùng không có bất kỳ POI nào (OB, FVG,..)") — khớp đúng với mistake tag frontmatter `[[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]`, dù dòng "Mistake" trong body lại ghi tag khác (`[[06-Mistake-Not-Have-Market-Structure-Shift]]`) — hai tag khác nhau giữa frontmatter và body cho cùng một lệnh *(ghi nhận sự khác biệt, không suy diễn lý do)*. Bias D1 lần này là Bearish (đảo hướng so với Bullish sai của cả 3 lệnh Long ngày 17/06) — và Short đúng theo bias Bearish này, khác các lệnh Long ngày trước đều tự nhận sai bias.
 
 ## 5. Lesson Learned
 

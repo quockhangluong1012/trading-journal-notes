@@ -451,7 +451,7 @@ Bộ lọc: 6 objection nháp, cắt 1 (một objection về "session không ghi
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- Khái niệm: [[25 - OB - Order Block|Order Block]] · [[13 - FVG  - Fair Value Gap|FVG]] · [[03 - Balanced Price Range|BPR]] · [[10 - Consequent Encroachment (Mean Threshold)|Consequent Encroachment]] · [[41 - Change in State of Delivery|CISD]] · [[21 - Market Structure Shift|MSS]] · [[20 - Liquidity Sweep|Liquidity Sweep]] · [[27 - Premium Discount|Premium Discount]] · [[12 - Dealing Range|Dealing Range]] · [[18 - Kill Zones|Kill Zones]]
+- Khái niệm: [[25-OB-Order-Block|Order Block]] · [[13-FVG-Fair-Value-Gap|FVG]] · [[03-Balanced-Price-Range|BPR]] · [[10-Consequent-Encroachment-Mean-Threshold|Consequent Encroachment]] · [[41-Change-in-State-of-Delivery|CISD]] · [[21-Market-Structure-Shift|MSS]] · [[20-Liquidity-Sweep|Liquidity Sweep]] · [[27-Premium-Discount|Premium Discount]] · [[12-Dealing-Range|Dealing Range]] · [[18-Kill-Zones|Kill Zones]]
 - Dashboard: [[_Backtest Dashboard]]
 - Template: [[Backtest template - POI & Step Decision (ICT 2022)]]
 - Mistake liên quan: *(chưa có — xem đề xuất ở mục 7.2 nếu pattern đóng runner sớm lặp lại)*

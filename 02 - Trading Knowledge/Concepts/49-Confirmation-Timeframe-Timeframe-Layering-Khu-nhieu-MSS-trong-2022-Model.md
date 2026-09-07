@@ -37,15 +37,15 @@ last_reviewed: 2026-07-11
 created: 2026-07-11
 updated: 2026-07-28
 prerequisites:
-  - "[[21 - Market Structure Shift]]"
-  - "[[20 - Liquidity Sweep]]"
-  - "[[32 - Top-down Analysis (Multiple Timeframes)]]"
+  - "[[21-Market-Structure-Shift]]"
+  - "[[20-Liquidity-Sweep]]"
+  - "[[32-Top-down-Analysis-Multiple-Timeframes]]"
 common_mistakes:
-  - "[[02 - Mistake - Enter before liquidity sweep]]"
-  - "[[03 - Mistake - Entry When MSS not in POI Zone]]"
-  - "[[06 - Mistake - Not Have Market Structure Shift]]"
-  - "[[08 - Mistake - Weak Displacement]]"
-  - "[[10 - Mistake - FVG Not Valid]]"
+  - "[[02-Mistake-Enter-before-liquidity-sweep]]"
+  - "[[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]"
+  - "[[06-Mistake-Not-Have-Market-Structure-Shift]]"
+  - "[[08-Mistake-Weak-Displacement]]"
+  - "[[10-Mistake-FVG-Not-Valid]]"
 ---
 
 # Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)
@@ -101,10 +101,10 @@ Vì phần lớn trader ICT trung cấp *biết* chuỗi Sweep → MSS → Displ
 
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Khung xác nhận (H1/M15) và khung thực thi (M5/M1) cách nhau quá xa, thấy nhiễu khi entry.
-- [ ] Đã có [[12 - Daily Bias]] rõ ràng trên D1 và một POI H1 hợp lệ.
-- [ ] Có [[19 - Liquidity]] pool rõ ràng (SSL/BSL) mà POI đang neo vào.
+- [ ] Đã có [[12-Daily-Bias]] rõ ràng trên D1 và một POI H1 hợp lệ.
+- [ ] Có [[19-Liquidity]] pool rõ ràng (SSL/BSL) mà POI đang neo vào.
 - [ ] Giá vào POI nhưng bạn không chắc "đã đủ điều kiện vào lệnh chưa".
-- [ ] Giao dịch trong [[18 - Kill Zones]] (London/NY) nơi displacement rõ và đáng tin.
+- [ ] Giao dịch trong [[18-Kill-Zones]] (London/NY) nơi displacement rõ và đáng tin.
 
 ### Khi nào nên bỏ qua / điều chỉnh?
 - [ ] Thị trường đang range chặt, không có displacement ở bất kỳ khung nào → không có gì để xác nhận.
@@ -173,7 +173,7 @@ Vì phần lớn trader ICT trung cấp *biết* chuỗi Sweep → MSS → Displ
 
 ### D1 / H4 — Bias & Narrative
 - Bias hiện tại (Long/Short) và lý do (draw on liquidity về phía nào)?
-- Giá đang premium hay discount của dealing range D1? Xem [[12 - Dealing Range]], [[27 - Premium Discount]].
+- Giá đang premium hay discount của dealing range D1? Xem [[12-Dealing-Range]], [[27-Premium-Discount]].
 - External liquidity target gần nhất (draw): SSL/BSL nào là "nam châm"?
 
 ### H1 — POI & Pool thanh khoản (bàn giao mỏ neo cho khung dưới)
@@ -182,14 +182,14 @@ Vì phần lớn trader ICT trung cấp *biết* chuỗi Sweep → MSS → Displ
 - Giá đã *chạm* POI chưa? (chạm ≠ xác nhận).
 
 ### M15 — Confirmation (trái tim của khái niệm này)
-- **Đã quét pool thanh khoản chưa?** Chưa quét → chưa tìm MSS. Xem [[20 - Liquidity Sweep]].
+- **Đã quét pool thanh khoản chưa?** Chưa quét → chưa tìm MSS. Xem [[20-Liquidity-Sweep]].
 - **Swing point tham chiếu:** với Long, đánh dấu swing high cuối cùng ngay trước cú quét đáy — đây là mốc MSS.
-- **MSS = thân nến M15 đóng cửa vượt swing point đó**, tạo bởi displacement (không phải grind chồng chéo). Xem [[21 - Market Structure Shift]].
-- **Displacement có để lại FVG không?** Không FVG → không đủ chất lượng MSS cho 2022 Model. Xem [[13 - FVG  - Fair Value Gap]].
+- **MSS = thân nến M15 đóng cửa vượt swing point đó**, tạo bởi displacement (không phải grind chồng chéo). Xem [[21-Market-Structure-Shift]].
+- **Displacement có để lại FVG không?** Không FVG → không đủ chất lượng MSS cho 2022 Model. Xem [[13-FVG-Fair-Value-Gap]].
 
 ### M5 / M1 — Execution (chỉ tinh chỉnh, không xác nhận lại từ đầu)
 - Xác định FVG (hoặc OB) *bên trong* chân displacement M15.
-- Entry tại 50% FVG = [[10 - Consequent Encroachment (Mean Threshold)]] (CE), hoặc theo [[26 - OTE - Optimal Trade Entry]].
+- Entry tại 50% FVG = [[10-Consequent-Encroachment-Mean-Threshold]] (CE), hoặc theo [[26-OTE-Optimal-Trade-Entry]].
 - Stop dưới đáy sweep (Long) / trên đỉnh sweep (Short) — có logic, không phải đặt cảm tính.
 - Target: external liquidity còn mở (đã xác định ở D1/H1).
 
@@ -208,9 +208,9 @@ Vì phần lớn trader ICT trung cấp *biết* chuỗi Sweep → MSS → Displ
 
 ### Setup bị vô hiệu khi
 - [ ] Giá phá hẳn POI mà không phản ứng (POI bị nếm rồi xuyên thủng).
-- [ ] "MSS" xảy ra nhưng **không có sweep** trước đó → nhiễu, không phải MSS. Xem [[02 - Mistake - Enter before liquidity sweep]].
-- [ ] "MSS" **không để lại FVG / displacement yếu** → không đủ chất lượng. Xem [[08 - Mistake - Weak Displacement]], [[10 - Mistake - FVG Not Valid]].
-- [ ] MSS nằm giữa range, ngoài POI. Xem [[03 - Mistake - Entry When MSS not in POI Zone]].
+- [ ] "MSS" xảy ra nhưng **không có sweep** trước đó → nhiễu, không phải MSS. Xem [[02-Mistake-Enter-before-liquidity-sweep]].
+- [ ] "MSS" **không để lại FVG / displacement yếu** → không đủ chất lượng. Xem [[08-Mistake-Weak-Displacement]], [[10-Mistake-FVG-Not-Valid]].
+- [ ] MSS nằm giữa range, ngoài POI. Xem [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]].
 - [ ] Vào lệnh chỉ vì "nếm giảm rồi nến tăng" — đây là reaction, chưa phải confirmation.
 
 ---
@@ -238,7 +238,7 @@ Khi xuống khung thấp (M15 hoặc M5), áp 4 lọc này — bất kỳ "MSS" 
 | Giá vào POI, "nếm giảm rồi 1 nến tăng" | **Chưa phải tín hiệu** — mới chỉ *chạm* POI. Chờ sweep pool + displacement. |
 | Phá swing con **sau khi** đã quét pool đúng chỗ + để lại FVG | **MSS thật** → xuống khung thực thi tìm entry |
 | Phá swing con **không** có sweep trước / **không** FVG | **Nhiễu** → bỏ qua |
-| Wick xuyên qua đỉnh/đáy rồi đóng ngược lại + displacement ngược | **Sweep + khả năng đảo** ([[33 - Turtle Soup]]) → chờ MSS xác nhận |
+| Wick xuyên qua đỉnh/đáy rồi đóng ngược lại + displacement ngược | **Sweep + khả năng đảo** ([[33-Turtle-Soup]]) → chờ MSS xác nhận |
 | Nhiều "MSS nhỏ" liên tiếp trên M5 trong 5–15 phút | Dấu hiệu **nhảy fractal quá gấp** → lùi lên M15 xác nhận |
 
 ---
@@ -263,7 +263,7 @@ Khi xuống khung thấp (M15 hoặc M5), áp 4 lọc này — bất kỳ "MSS" 
 **Bài học:**
 - "Nếm giảm rồi nến tăng" = *chạm* POI, chưa phải confirmation.
 - Bỏ tầng M15 khiến M5 mồ côi → mọi wiggle trông như MSS.
-- Không sweep + không FVG = không phải MSS. Xem [[06 - Mistake - Not Have Market Structure Shift]].
+- Không sweep + không FVG = không phải MSS. Xem [[06-Mistake-Not-Have-Market-Structure-Shift]].
 
 ---
 
@@ -305,17 +305,17 @@ Quy tắc "chờ M15 confirm rồi mới xuống M5" đúng ~80% thời gian. Nh
 ## 8. Entry model & concept liên quan
 
 - [[01 - ICT 2022 Model]]
-- [[32 - Top-down Analysis (Multiple Timeframes)]]
-- [[21 - Market Structure Shift]]
-- [[20 - Liquidity Sweep]]
-- [[13 - FVG  - Fair Value Gap]]
-- [[10 - Consequent Encroachment (Mean Threshold)]]
-- [[26 - OTE - Optimal Trade Entry]]
-- [[25 - OB - Order Block]]
-- [[12 - Dealing Range]]
-- [[27 - Premium Discount]]
-- [[18 - Kill Zones]]
-- [[37 - Re-mapping Dealing Range sau Displacement]]
+- [[32-Top-down-Analysis-Multiple-Timeframes]]
+- [[21-Market-Structure-Shift]]
+- [[20-Liquidity-Sweep]]
+- [[13-FVG-Fair-Value-Gap]]
+- [[10-Consequent-Encroachment-Mean-Threshold]]
+- [[26-OTE-Optimal-Trade-Entry]]
+- [[25-OB-Order-Block]]
+- [[12-Dealing-Range]]
+- [[27-Premium-Discount]]
+- [[18-Kill-Zones]]
+- [[37-Re-mapping-Dealing-Range-sau-Displacement]]
 
 ### Sequence mẫu — Layering cho lệnh Long
 ```text
@@ -687,7 +687,7 @@ Về nguyên tắc, có thể kiểm định:
 - Đây chính là kịch bản mà mục 2 của note gốc liệt kê là "nên bỏ qua / điều chỉnh".
 - Thanh khoản cực mỏng khiến ngay cả khung xác nhận thông thường (M15) cũng có thể bị nhiễu bởi một sự kiện thanh khoản đột biến không phản ánh order flow institutional bình thường.
 - Một trader áp dụng đúng nguyên tắc layering sẽ nhận ra: biến động này không đến từ một pool thanh khoản đã được đánh dấu trước theo quy trình D1→H1→M15 thông thường.
-- Đây là một cú "quét thanh khoản thô bạo" do thiếu vắng đối ứng hai chiều (liquidity vacuum) — tương tự khái niệm ở [[38 - Liquidity Reflexivity]] và vacuum block.
+- Đây là một cú "quét thanh khoản thô bạo" do thiếu vắng đối ứng hai chiều (liquidity vacuum) — tương tự khái niệm ở [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] và vacuum block.
 
 **Kết quả (tính theo R):** Không áp dụng một con số R cụ thể ở đây vì đây là case minh hoạ nguyên tắc, không phải một lệnh thật. Bài học định tính: bất kỳ ai cố áp dụng layering "máy móc" (thấy MSS trên M15 là vào lệnh) trong chính giữa sự kiện thanh khoản bất thường này gần như chắc chắn sẽ bị cuốn vào biến động hỗn loạn hai chiều ngay sau đó, khi giá phục hồi một phần.
 

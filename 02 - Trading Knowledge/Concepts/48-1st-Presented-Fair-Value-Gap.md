@@ -50,7 +50,7 @@ updated: 2026-07-28
 - **Không phải** bias — bias phải xác định **trước** 09:30; FVG là lớp xác nhận + định thời điểm vào.
 - **Không phải** trigger đứng một mình — cần thêm phản ứng retest (tap trực tiếp hoặc CISD/MSS trên LTF).
 - **Không** đáng tin nếu **không qualified** (nến FVG không phá range nến trước) hoặc **in trong spike tin** 30 phút đầu.
-- **Không phải** New Day Opening Gap ([[23 - New Day Opening Gap]]) — NDOG là khoảng trống giữa đóng cửa và mở cửa; 1st FVG là imbalance 3 nến **sau** khi mở cửa (dù Opening Range Gap thường tạo displacement sinh ra nó).
+- **Không phải** New Day Opening Gap ([[23-New-Day-Opening-Gap]]) — NDOG là khoảng trống giữa đóng cửa và mở cửa; 1st FVG là imbalance 3 nến **sau** khi mở cửa (dù Opening Range Gap thường tạo displacement sinh ra nó).
 
 ---
 
@@ -151,13 +151,13 @@ Cùng một 1st FVG nhưng **vai trò đổi theo tính chất ngày** — đây
 **Ngày TRENDY — FVG là mức CONTINUATION:** giá có xu hướng rõ, **pause/retest tại FVG rồi TIẾP TỤC** theo hướng cũ. Chiến thuật: chờ giá pullback về FVG trong xu hướng, vào **theo trend** khi FVG giữ được, TP tại pool thanh khoản kế tiếp cùng hướng.
 
 > [!info] Làm sao biết ngày nào là ngày nào?
-> Dùng **Daily Bias** + cấu trúc HTF: nếu HTF đang trend mạnh, có draw on liquidity rõ ([[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]) → nghiêng về **continuation**. Nếu HTF nằm trong range, giá kẹp giữa hai pool (equal highs/lows) → nghiêng về **magnet/sideways**. Không cần đoán trước 100% — quan sát **phản ứng đầu tiên** của giá khi quay lại FVG: bật đi tiếp = trendy; bị hút qua lại = sideways.
+> Dùng **Daily Bias** + cấu trúc HTF: nếu HTF đang trend mạnh, có draw on liquidity rõ ([[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]) → nghiêng về **continuation**. Nếu HTF nằm trong range, giá kẹp giữa hai pool (equal highs/lows) → nghiêng về **magnet/sideways**. Không cần đoán trước 100% — quan sát **phản ứng đầu tiên** của giá khi quay lại FVG: bật đi tiếp = trendy; bị hút qua lại = sideways.
 
 ---
 
 ## 8. Ghép với Daily Bias
 
-Đặt **ICT Daily Bias trước 09:30** ([[12 - Daily Bias]]). 1st FVG chỉ dùng để **xác nhận + định thời điểm**, không dùng để đặt bias.
+Đặt **ICT Daily Bias trước 09:30** ([[12-Daily-Bias]]). 1st FVG chỉ dùng để **xác nhận + định thời điểm**, không dùng để đặt bias.
 
 ![[FirstFVG-Advanced-BiasPairing.svg|697]]
 
@@ -182,7 +182,7 @@ Quan trọng với  (trade EURUSD / GBPUSD / XAUUSD). 1st Presented FVG **nguyê
 > [!tip] Lưu ý cho EURUSD/GBPUSD/XAUUSD
 > - Với **XAUUSD/EURUSD/GBPUSD**, biến động lớn nhất thường bám phiên London–NY overlap; cửa sổ 07:00–08:00 AM NY (≈ 18:00–19:00 VN mùa hè) là nơi 1st FVG chất lượng nhất.
 > - Vẫn **tránh giờ tin** (NFP, CPI, ECB/BoE, FOMC) — với vàng và bảng Anh, spike tin xé imbalance còn dữ hơn chỉ số Mỹ.
-> - Kết hợp với **SMT/DXY** ([[42 - SMT Divergence]]) để xác nhận cú quét đầu phiên là terminal khi 1st FVG ngược bias.
+> - Kết hợp với **SMT/DXY** ([[42-SMT-Divergence]]) để xác nhận cú quét đầu phiên là terminal khi 1st FVG ngược bias.
 > - Backtest riêng mốc giờ cho từng cặp — chứng khoán Mỹ neo 09:30 rất chuẩn, forex thì mốc 07:00–08:00 cần  tự kiểm chứng edge trên dữ liệu của mình.
 
 ---
@@ -203,12 +203,12 @@ Quan trọng với  (trade EURUSD / GBPUSD / XAUUSD). 1st Presented FVG **nguyê
 
 **Bước 7 — Vào lệnh trên phản ứng.** Hai cách:
 - **Tap trực tiếp:** vào ngay khi giá chạm FVG và có nến phản ứng (aggressive).
-- **Chờ xác nhận LTF:** chặt hơn — đợi **CISD** ([[41 - Change in State of Delivery]]) hoặc **MSS** ([[21 - Market Structure Shift]]) trên khung nhỏ xác nhận rồi mới vào.
+- **Chờ xác nhận LTF:** chặt hơn — đợi **CISD** ([[41-Change-in-State-of-Delivery]]) hoặc **MSS** ([[21-Market-Structure-Shift]]) trên khung nhỏ xác nhận rồi mới vào.
 
-**Bước 8 — Stop & Target.** **Stop** đặt ngay **ngoài far side** của 1st FVG (phía xa của gap). **Target** = PD array đối nghịch kế tiếp / pool thanh khoản đáng kể trong range ngày. Gắn TP theo [[16 - Internal & External Range Liquidity (IRL & ERL)]]: T1 = IRL gần, T2 = ERL (pool ngoài range).
+**Bước 8 — Stop & Target.** **Stop** đặt ngay **ngoài far side** của 1st FVG (phía xa của gap). **Target** = PD array đối nghịch kế tiếp / pool thanh khoản đáng kể trong range ngày. Gắn TP theo [[16-Internal-External-Range-Liquidity-IRL-ERL]]: T1 = IRL gần, T2 = ERL (pool ngoài range).
 
 > [!info] Trade như một Inverse FVG (IFVG) khi giá phá qua
-> Nếu giá **phá xuyên qua** 1st FVG thay vì giữ nó, FVG **đổi vai** thành [[17 - Inverse Fair Value Gap - iFVG]]: một bullish 1st FVG bị phá xuống trở thành **kháng cự** cho continuation **giảm**, và ngược lại. Đừng cố "bắt dao rơi" giữ mức đã vỡ — hãy đọc cú phá đó như tín hiệu tiếp diễn hướng ngược lại. Đây là cách 1st FVG vẫn cho tín hiệu ngay cả khi kịch bản đầu tiên sai.
+> Nếu giá **phá xuyên qua** 1st FVG thay vì giữ nó, FVG **đổi vai** thành [[17-Inverse-Fair-Value-Gap-iFVG]]: một bullish 1st FVG bị phá xuống trở thành **kháng cự** cho continuation **giảm**, và ngược lại. Đừng cố "bắt dao rơi" giữ mức đã vỡ — hãy đọc cú phá đó như tín hiệu tiếp diễn hướng ngược lại. Đây là cách 1st FVG vẫn cho tín hiệu ngay cả khi kịch bản đầu tiên sai.
 
 ---
 
@@ -420,8 +420,8 @@ Cơ chế đằng sau giá trị của 1st Presented FVG cần được hiểu �
 ### A4. Tương tác & mâu thuẫn với các khái niệm ICT khác
 
 - **1st Presented FVG và New Day Opening Gap (NDOG):** file gốc đã phân biệt rõ hai khái niệm này ở mục "KHÔNG phải là gì", nhưng cần nhấn thêm: NDOG (khoảng gap qua đêm) thường chính là **nguyên nhân vật lý** tạo ra cú displacement sinh ra 1st FVG — khi giá mở cửa cách xa giá đóng cửa hôm trước, chính chuyển động "lấp gap" hoặc "tiếp tục theo hướng gap" trong vài phút đầu tạo ra nến displacement phá range. Hiểu rõ NDOG giúp dự đoán trước khả năng có displacement mạnh hay không, dù không thể biết chắc hướng.
-- **1st Presented FVG trùng với iFVG cũ chưa bị vô hiệu hoá từ ngày hôm trước:** nếu 1st FVG mới hình thành đúng vào vùng một iFVG (xem [[17 - Inverse Fair Value Gap - iFVG]]) từ phiên trước còn hiệu lực, đây là confluence rất mạnh (hai lớp PD array độc lập trùng nhau) — nhưng cũng cần cẩn trọng vì vùng này đã "được test" trước đó, có thể đã yếu hơn một vùng hoàn toàn mới.
-- **1st Presented FVG và SMT Divergence:** khi 1st FVG hình thành trên một công cụ (ví dụ NQ) nhưng không xuất hiện tương ứng trên công cụ tương quan (ES) hoặc lệch hướng, đây là tín hiệu SMT Divergence (xem [[42 - SMT Divergence]]) hữu ích để tăng/giảm conviction — đặc biệt quan trọng khi 1st FVG ngược Daily Bias (mục 8 file gốc), SMT có thể giúp phân biệt đây là manipulation thật hay chỉ là nhiễu riêng của một công cụ.
+- **1st Presented FVG trùng với iFVG cũ chưa bị vô hiệu hoá từ ngày hôm trước:** nếu 1st FVG mới hình thành đúng vào vùng một iFVG (xem [[17-Inverse-Fair-Value-Gap-iFVG]]) từ phiên trước còn hiệu lực, đây là confluence rất mạnh (hai lớp PD array độc lập trùng nhau) — nhưng cũng cần cẩn trọng vì vùng này đã "được test" trước đó, có thể đã yếu hơn một vùng hoàn toàn mới.
+- **1st Presented FVG và SMT Divergence:** khi 1st FVG hình thành trên một công cụ (ví dụ NQ) nhưng không xuất hiện tương ứng trên công cụ tương quan (ES) hoặc lệch hướng, đây là tín hiệu SMT Divergence (xem [[42-SMT-Divergence]]) hữu ích để tăng/giảm conviction — đặc biệt quan trọng khi 1st FVG ngược Daily Bias (mục 8 file gốc), SMT có thể giúp phân biệt đây là manipulation thật hay chỉ là nhiễu riêng của một công cụ.
 
 ### A5. Biến thể theo loại tài sản — chỉ số Mỹ vs forex vs vàng vs crypto
 

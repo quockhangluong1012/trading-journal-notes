@@ -44,9 +44,9 @@ Note này được tạo sau khi review chéo **4 lệnh thua backtest liên ti�
 
 ## 3. Cơ chế thị trường (vì sao lỗi này bị trừng phạt gần như chắc chắn)
 
-Trong khuôn khổ ICT, giá không di chuyển ngẫu nhiên — nó được **giao hàng từ pool thanh khoản này sang pool thanh khoản khác** ([[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]). Một pool rõ ràng chưa bị chạm (equal highs/lows, range extreme, POI sâu chưa test, cụm stop) là một **điểm đến còn nợ**. Khi bạn đặt entry + SL ở giữa đường từ giá hiện tại tới điểm đến đó:
+Trong khuôn khổ ICT, giá không di chuyển ngẫu nhiên — nó được **giao hàng từ pool thanh khoản này sang pool thanh khoản khác** ([[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]). Một pool rõ ràng chưa bị chạm (equal highs/lows, range extreme, POI sâu chưa test, cụm stop) là một **điểm đến còn nợ**. Khi bạn đặt entry + SL ở giữa đường từ giá hiện tại tới điểm đến đó:
 
-1. SL của bạn (cùng cụm stop của những người vào giống bạn) **cộng thêm nhiên liệu** cho chính cú chạy đó ([[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]).
+1. SL của bạn (cùng cụm stop của những người vào giống bạn) **cộng thêm nhiên liệu** cho chính cú chạy đó ([[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]).
 2. Setup càng "textbook" (FVG + OTE + CE hợp lưu đẹp) thì cụm stop càng dày → cú quét càng có động cơ.
 3. Sau khi quét xong, giá thường đi đúng hướng bias ban đầu — tạo ra loại thua **nguy hiểm nhất về tâm lý**: "tôi phân tích đúng mà, chỉ xui thôi" → lỗi được giữ nguyên và lặp lại.
 
@@ -54,9 +54,9 @@ Trong khuôn khổ ICT, giá không di chuyển ngẫu nhiên — nó được *
 
 Lỗi này sống được là nhờ **đếm sweep theo hình dạng thay vì theo chức năng**. Trước mỗi lệnh phải phân loại:
 
-- **Internal (IRL)**: FVG, OB, minor swing, thanh khoản nội bộ trong range — bị quét thường xuyên, KHÔNG đủ điều kiện làm "sweep bước 1" cho một quyết định cấp H1. Xem [[16 - Internal & External Range Liquidity (IRL & ERL)]].
+- **Internal (IRL)**: FVG, OB, minor swing, thanh khoản nội bộ trong range — bị quét thường xuyên, KHÔNG đủ điều kiện làm "sweep bước 1" cho một quyết định cấp H1. Xem [[16-Internal-External-Range-Liquidity-IRL-ERL]].
 - **External / Structural (ERL)**: range high/low, old high/low, điểm định nghĩa dealing range, POI sâu nhất chưa test — đây mới là pool mà mô hình cần thấy bị lấy TRƯỚC khi tin MSS.
-- **Scale alignment**: sweep phải cùng cấp với cấu trúc đang giao dịch — sweep M1 không hợp thức hóa được quyết định POI cấp H1 ([[43 - Liquidity Scale Alignment (Sweep cùng khung MSS-FVG, HTF là Target)]]).
+- **Scale alignment**: sweep phải cùng cấp với cấu trúc đang giao dịch — sweep M1 không hợp thức hóa được quyết định POI cấp H1 ([[43-Liquidity-Scale-Alignment-Sweep-cung-khung-MSS-FVG-HTF-la-Target]]).
 
 ## 5. Dấu hiệu nhận biết trước khi bấm lệnh
 
@@ -68,7 +68,7 @@ Lỗi này sống được là nhờ **đếm sweep theo hình dạng thay vì t
 | Range extreme / old high-low / equal H-L rõ ràng còn nguyên phía sau SL | Đỏ |
 | MSS xuất hiện ngay cú tap đầu tiên vào POI, TRƯỚC khi pool cấu trúc bị quét | Đỏ |
 | Sweep quan sát được chỉ ở cấp LTF (M1) trong khi quyết định ở cấp H1 | Đỏ |
-| Khung xác nhận (M5) không in được FVG sạch nhưng vẫn muốn tụt xuống M1 | Đỏ ([[08 - Mistake - Weak Displacement]]) |
+| Khung xác nhận (M5) không in được FVG sạch nhưng vẫn muốn tụt xuống M1 | Đỏ ([[08-Mistake-Weak-Displacement]]) |
 
 Checklist 4 câu trước khi đặt lệnh:
 
@@ -90,11 +90,11 @@ Checklist 4 câu trước khi đặt lệnh:
 
 ## 7. Quan hệ với các mistake khác
 
-- [[02 - Mistake - Enter before liquidity sweep]] — biến thể *entry-timing* của cùng gốc lỗi; note 13 này tổng quát hóa: kể cả khi "có sweep" (nhưng sai loại/sai scale), lỗi vẫn xảy ra.
-- [[03 - Mistake - Entry When MSS not in POI Zone]] — MSS sai ngữ cảnh, họ hàng gần của "MSS sớm trước sweep".
-- [[04 - Mistake - FOMO Entry]] — động cơ tâm lý thường đứng sau việc không chờ pool bị quét.
-- [[05 - Mistake - Not enough RR]] — mặt ngược của "R:R ảo do SL sai chỗ": R:R phải được tính từ invalidation thật.
-- [[08 - Mistake - Weak Displacement]] · [[11 - LTF Displacement Not Create FVG, Big Candle But Wick Overlap]] — tín hiệu yếu bị hợp lý hóa xuất hiện trong 3/4 case.
+- [[02-Mistake-Enter-before-liquidity-sweep]] — biến thể *entry-timing* của cùng gốc lỗi; note 13 này tổng quát hóa: kể cả khi "có sweep" (nhưng sai loại/sai scale), lỗi vẫn xảy ra.
+- [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] — MSS sai ngữ cảnh, họ hàng gần của "MSS sớm trước sweep".
+- [[04-Mistake-FOMO-Entry]] — động cơ tâm lý thường đứng sau việc không chờ pool bị quét.
+- [[05-Mistake-Not-enough-RR]] — mặt ngược của "R:R ảo do SL sai chỗ": R:R phải được tính từ invalidation thật.
+- [[08-Mistake-Weak-Displacement]] · [[11 - LTF Displacement Not Create FVG, Big Candle But Wick Overlap]] — tín hiệu yếu bị hợp lý hóa xuất hiện trong 3/4 case.
 
 ## 8. Phân tích chuyên sâu (Deep-Dive)
 
@@ -151,10 +151,10 @@ Mục 4 note gốc đã phân loại Internal/External/Scale alignment. Bổ sun
 
 | Mistake liên quan | Cơ chế tương tác cụ thể hơn |
 |---|---|
-| [[02 - Mistake - Enter before liquidity sweep]] | #13 tổng quát hóa: kể cả có sweep, nếu sweep sai scale (internal khi cần external) thì lỗi tương đương "chưa sweep" về mặt chức năng. |
-| [[03 - Mistake - Entry When MSS not in POI Zone]] | MSS hình thành ngay tap đầu tiên (trước khi pool cấu trúc bị quét) là chính dấu hiệu Đỏ thứ 5 ở mục 5 note gốc — hai mistake chia sẻ cùng cơ chế "MSS sớm". |
-| [[08 - Mistake - Weak Displacement]] | 3/4 case có tín hiệu M5 yếu bị hợp lý hóa — Weak Displacement thường là *đồng phạm*, không phải nguyên nhân độc lập, trong các case Unswept Liquidity. |
-| [[05 - Mistake - Not enough RR]] | Quan hệ nghịch trực tiếp: R:R "đẹp" trong #13 thường được tạo ra chính bởi SL đặt sai chỗ (mục 2 note gốc) — R:R cao bất thường ở POI nông nên bị coi là red flag của #13 trước khi được coi là điểm mạnh. |
+| [[02-Mistake-Enter-before-liquidity-sweep]] | #13 tổng quát hóa: kể cả có sweep, nếu sweep sai scale (internal khi cần external) thì lỗi tương đương "chưa sweep" về mặt chức năng. |
+| [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] | MSS hình thành ngay tap đầu tiên (trước khi pool cấu trúc bị quét) là chính dấu hiệu Đỏ thứ 5 ở mục 5 note gốc — hai mistake chia sẻ cùng cơ chế "MSS sớm". |
+| [[08-Mistake-Weak-Displacement]] | 3/4 case có tín hiệu M5 yếu bị hợp lý hóa — Weak Displacement thường là *đồng phạm*, không phải nguyên nhân độc lập, trong các case Unswept Liquidity. |
+| [[05-Mistake-Not-enough-RR]] | Quan hệ nghịch trực tiếp: R:R "đẹp" trong #13 thường được tạo ra chính bởi SL đặt sai chỗ (mục 2 note gốc) — R:R cao bất thường ở POI nông nên bị coi là red flag của #13 trước khi được coi là điểm mạnh. |
 
 ---
 
@@ -331,6 +331,6 @@ Giữ nguyên **Draw gate cứng** (Phe Cấm tuyệt đối) làm rule quy trì
 
 ## 13. Liên kết
 
-- Concepts: [[19 - Liquidity]] · [[20 - Liquidity Sweep]] · [[16 - Internal & External Range Liquidity (IRL & ERL)]] · [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]] · [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] · [[15 - Inducement]] · [[43 - Liquidity Scale Alignment (Sweep cùng khung MSS-FVG, HTF là Target)]] · [[26 - OTE - Optimal Trade Entry]] · [[21 - Market Structure Shift]]
+- Concepts: [[19-Liquidity]] · [[20-Liquidity-Sweep]] · [[16-Internal-External-Range-Liquidity-IRL-ERL]] · [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]] · [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] · [[15-Inducement]] · [[43-Liquidity-Scale-Alignment-Sweep-cung-khung-MSS-FVG-HTF-la-Target]] · [[26-OTE-Optimal-Trade-Entry]] · [[21-Market-Structure-Shift]]
 - Model: [[01 - ICT 2022 Model]]
 - Case files: [[02 - Loss - GBPUSD - 2014-07-17 - Long]] · [[01 - Loss - XAUUSD - 2014-05-19 - Short]] · [[02 - Loss- XAUUSD- 2014-05-14- Short]] · [[02 - Loss- EURUSD - 2021-05-07- Short]]

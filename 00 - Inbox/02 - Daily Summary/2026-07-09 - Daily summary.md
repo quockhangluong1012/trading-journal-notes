@@ -29,10 +29,10 @@ tags: [daily-summary, prop-firm-prep]
 **9 concept có `last_reviewed = 2026-07-09`** (kiểm tra trực tiếp frontmatter, nhiều hơn 3 mục trên task-list):
 
 - **3 concept trên task-list, nâng `seed → developing` hôm nay:**
-  - [[35 - Aggressive Displacement Entry]] — trực tiếp trị điểm gãy hôm qua ([[08 - Mistake - Weak Displacement]]): định lượng thế nào là displacement THẬT (thân nến so với ATR khung entry) để phân biệt với nhịp bật gồm nến thân nhỏ/doji.
-  - [[10 - Consequent Encroachment (Mean Threshold)]] — hôm nay backtest thắng chính nhờ hiểu CE: giá quét CE của BPR H1 (vùng Premium) rồi từ chối → đây là institutional reference cho phe bán, không phải chỗ để đua giá.
-  - [[42 - SMT Divergence]] — công cụ xác nhận bias HTF, liên quan lỗi #2 [[09 - Mistake - Wrong daily bias]].
-- **6 concept ngoài task-list cũng được ôn hôm nay** (last_reviewed = today): [[33 - Turtle Soup]] (`developing`), [[48 - 1st Presented Fair Value Gap]], [[45 - ICT Reversal Patterns]], [[44 - Hidden Order Block]], [[47 - Redelivered Rebalanced Price Range]], [[46 - Reaper Inversion Fair Value Gap]] (5 note này vẫn `seed`) — khối lượng học hôm nay cao hơn task-list phản ánh.
+  - [[35-Aggressive-Displacement-Entry]] — trực tiếp trị điểm gãy hôm qua ([[08-Mistake-Weak-Displacement]]): định lượng thế nào là displacement THẬT (thân nến so với ATR khung entry) để phân biệt với nhịp bật gồm nến thân nhỏ/doji.
+  - [[10-Consequent-Encroachment-Mean-Threshold]] — hôm nay backtest thắng chính nhờ hiểu CE: giá quét CE của BPR H1 (vùng Premium) rồi từ chối → đây là institutional reference cho phe bán, không phải chỗ để đua giá.
+  - [[42-SMT-Divergence]] — công cụ xác nhận bias HTF, liên quan lỗi #2 [[09-Mistake-Wrong-daily-bias]].
+- **6 concept ngoài task-list cũng được ôn hôm nay** (last_reviewed = today): [[33-Turtle-Soup]] (`developing`), [[48-1st-Presented-Fair-Value-Gap]], [[45-ICT-Reversal-Patterns]], [[44-Hidden-Order-Block]], [[47-Redelivered-Rebalanced-Price-Range]], [[46-Reaper-Inversion-Fair-Value-Gap]] (5 note này vẫn `seed`) — khối lượng học hôm nay cao hơn task-list phản ánh.
 
 > [!note] Điểm tích cực về kỷ luật ghi chép
 > Khác với lo ngại "undertick kinh niên", hôm nay bằng chứng học (9 concept) khớp và vượt task-list. `last_reviewed` được cập nhật thật cho từng file — đây là dữ liệu học đáng tin.
@@ -67,7 +67,7 @@ tags: [daily-summary, prop-firm-prep]
 ## 🧠 Phân tích lỗi & tâm lý
 
 **Không có lỗi top-3 nào bị kích hoạt hôm nay** (`mistakes_triggered: []`):
-- Không có lệnh live ⇒ số đếm trong [[02 - Mistake Frequency Dashboard]] **không đổi**: [[06 - Mistake - Not Have Market Structure Shift]] vẫn 14, [[09 - Mistake - Wrong daily bias]] vẫn 7, [[07 - Mistake - Risk more than 0.5% total account]] vẫn 5.
+- Không có lệnh live ⇒ số đếm trong [[02 - Mistake Frequency Dashboard]] **không đổi**: [[06-Mistake-Not-Have-Market-Structure-Shift]] vẫn 14, [[09-Mistake-Wrong-daily-bias]] vẫn 7, [[07-Mistake-Risk-more-than-0.5-total-account]] vẫn 5.
 - Đáng chú ý: backtest hôm nay là **bằng chứng lỗi #1 bị NÉ thành công** — lỗi #1 nghĩa là *"vào lệnh khi CHƯA có Market Structure Shift"*; hôm nay giá phải tạo MSS (phá các higher low bằng displacement) rồi mới entry. Rule "No MSS No Entry" viết ra hôm qua đã hoạt động trong replay. Đây là chuyển động chất lượng cho [[Cut my top 3 repeated mistakes]], dù chưa phải là số đo live-trade nên chưa làm giảm con số thống kê.
 - Tâm lý duy nhất cần để ý (từ backtest): lo lắng khi FVG bị lấp bằng nến thân lớn — đã có phản xạ đúng ghi trong Lesson Learned.
 

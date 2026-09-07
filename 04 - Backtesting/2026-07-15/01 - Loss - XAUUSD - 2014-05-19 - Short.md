@@ -284,7 +284,7 @@ Khớp tốt (context & sequence): bias Bearish đúng; SSL Discount đã bị q
 
 ### 7.2. Pattern lặp lại
 
-- Short POI nông khi còn POI sâu hơn chưa test → giá dễ chạy tới POI sâu, quét mình trên đường đi. Liên kết [[03 - Mistake - Entry When MSS not in POI Zone]].
+- Short POI nông khi còn POI sâu hơn chưa test → giá dễ chạy tới POI sâu, quét mình trên đường đi. Liên kết [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]].
 - Siết SL cho đẹp R:R → đặt SL ở mép POI nông thay vì trên invalidation terminal. Pattern nguy hiểm nhất.
 - Tụt khung "moi" setup khi M5 báo phản ứng yếu/không FVG. Liên kết [[11 - LTF Displacement Not Create FVG, Big Candle But Wick Overlap]].
 - Bán ngược Bullish Displacement đang đẩy vào vùng chưa bị hấp thụ.
@@ -323,12 +323,12 @@ Khớp tốt (context & sequence): bias Bearish đúng; SSL Discount đã bị q
 
 | Khái niệm | Tôi đã dùng như thế nào (SAI) | Cách dùng ĐÚNG | Ảnh hưởng |
 |---|---|---|---|
-| [[04 - Breaker Block]] | Dùng BB (0.618) làm **terminal POI** khi phía trên còn OB (0.786) chưa test | BB đáng tin nhất khi nó là PD array CUỐI CÙNG còn hiệu lực trên đường đi (các pool/POI sâu hơn đã bị dọn). Khi BB xếp chồng DƯỚI một OB chưa test cùng phía, BB nông gần như mặc định là trạm trung chuyển, không phải điểm đảo chiều | Chí mạng — first_error |
-| [[15 - Inducement]] | Không nhận diện rằng chính BB là inducement | Inducement không chỉ là swing nhỏ trước POI — **một PD array nông "trông như POI" nằm trước POI thật** là dạng inducement cao cấp nhất, vì nó dụ được cả trader có học SMC. BB 0.618 + cụm SL trên nó chính là mồi kéo giá lên OB | Chí mạng |
-| [[25 - OB - Order Block]] | Hiểu đúng khái niệm OB nhưng bỏ qua nguyên tắc thứ tự: POI sâu nhất chưa test trong Premium là **điểm đến** của thanh khoản | Khi ≥2 PD array xếp chồng cùng phía: OB/POI sâu hơn là terminal; chỉ giao dịch POI nông sau khi POI sâu đã được test-và-từ-chối | Chí mạng |
-| [[27 - Premium Discount]] + [[26 - OTE - Optimal Trade Entry]] | Coi "chạm 0.618 = đã vào Premium đủ sâu để short" | 0.618 là **mép ngoài** của OTE. Khi phía trên còn PD array + BSL chưa lấy, terminal delivery thường ở sweet spot sâu (0.705–0.79). Vào ở mép ngoài = trả giá bằng việc đứng trước cả đoạn đường còn lại | Nặng |
-| [[20 - Liquidity Sweep]] + [[43 - Liquidity Scale Alignment (Sweep cùng khung MSS-FVG, HTF là Target)]] | Dùng cú sweep minor high **M1** (1301.647) để hợp thức hóa một quyết định POI cấp **H1** | Sweep phải cùng cấp với cấu trúc đang giao dịch: short từ Premium H1 đòi hỏi buy-side CẤP H1 (cụm thanh khoản BB→OB, đỉnh 0.786) bị lấy trước. Sweep M1 chỉ đủ tin cho một target M1 | Nặng |
-| [[13 - FVG  - Fair Value Gap]] | Chấp nhận việc M5 không tạo FVG sạch, tụt xuống M1 tìm trigger | FVG là **bằng chứng khách quan** của displacement thật. M5 không in được FVG = order flow bán chưa áp đảo = đứng ngoài ([[08 - Mistake - Weak Displacement]]) | Nặng |
+| [[04-Breaker-Block]] | Dùng BB (0.618) làm **terminal POI** khi phía trên còn OB (0.786) chưa test | BB đáng tin nhất khi nó là PD array CUỐI CÙNG còn hiệu lực trên đường đi (các pool/POI sâu hơn đã bị dọn). Khi BB xếp chồng DƯỚI một OB chưa test cùng phía, BB nông gần như mặc định là trạm trung chuyển, không phải điểm đảo chiều | Chí mạng — first_error |
+| [[15-Inducement]] | Không nhận diện rằng chính BB là inducement | Inducement không chỉ là swing nhỏ trước POI — **một PD array nông "trông như POI" nằm trước POI thật** là dạng inducement cao cấp nhất, vì nó dụ được cả trader có học SMC. BB 0.618 + cụm SL trên nó chính là mồi kéo giá lên OB | Chí mạng |
+| [[25-OB-Order-Block]] | Hiểu đúng khái niệm OB nhưng bỏ qua nguyên tắc thứ tự: POI sâu nhất chưa test trong Premium là **điểm đến** của thanh khoản | Khi ≥2 PD array xếp chồng cùng phía: OB/POI sâu hơn là terminal; chỉ giao dịch POI nông sau khi POI sâu đã được test-và-từ-chối | Chí mạng |
+| [[27-Premium-Discount]] + [[26-OTE-Optimal-Trade-Entry]] | Coi "chạm 0.618 = đã vào Premium đủ sâu để short" | 0.618 là **mép ngoài** của OTE. Khi phía trên còn PD array + BSL chưa lấy, terminal delivery thường ở sweet spot sâu (0.705–0.79). Vào ở mép ngoài = trả giá bằng việc đứng trước cả đoạn đường còn lại | Nặng |
+| [[20-Liquidity-Sweep]] + [[43-Liquidity-Scale-Alignment-Sweep-cung-khung-MSS-FVG-HTF-la-Target]] | Dùng cú sweep minor high **M1** (1301.647) để hợp thức hóa một quyết định POI cấp **H1** | Sweep phải cùng cấp với cấu trúc đang giao dịch: short từ Premium H1 đòi hỏi buy-side CẤP H1 (cụm thanh khoản BB→OB, đỉnh 0.786) bị lấy trước. Sweep M1 chỉ đủ tin cho một target M1 | Nặng |
+| [[13-FVG-Fair-Value-Gap]] | Chấp nhận việc M5 không tạo FVG sạch, tụt xuống M1 tìm trigger | FVG là **bằng chứng khách quan** của displacement thật. M5 không in được FVG = order flow bán chưa áp đảo = đứng ngoài ([[08-Mistake-Weak-Displacement]]) | Nặng |
 
 ### 9.2. Những điều tôi NGHĨ là đúng nhưng thật ra SAI
 
@@ -342,9 +342,9 @@ Khớp tốt (context & sequence): bias Bearish đúng; SSL Discount đã bị q
 
 ### 9.3. Đào sâu: góc nhìn Liquidity Reflexivity + pattern chéo
 
-**Vì sao BB 0.618 lại "được chọn" làm mồi?** Theo [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]: BB ở 0.618 là vùng **dễ nhìn thấy nhất** đối với đám đông SMC (fib 0.618 + breaker structure — hai thứ được dạy nhiều nhất). Càng nhiều người short tại đó, cụm SL phía trên BB càng dày → cụm SL đó **tự trở thành buy-side liquidity bổ sung** kéo giá lên OB. Bạn không chỉ chọn sai POI — bạn chọn đúng cái POI mà thuật toán *muốn* đám đông chọn. Ngược lại, OB 0.786 "khó vào" hơn về tâm lý (phải chờ giá chạy ngược sâu hơn) — và chính vì ít người dám đợi, nó mới là nơi đảo chiều thật.
+**Vì sao BB 0.618 lại "được chọn" làm mồi?** Theo [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]: BB ở 0.618 là vùng **dễ nhìn thấy nhất** đối với đám đông SMC (fib 0.618 + breaker structure — hai thứ được dạy nhiều nhất). Càng nhiều người short tại đó, cụm SL phía trên BB càng dày → cụm SL đó **tự trở thành buy-side liquidity bổ sung** kéo giá lên OB. Bạn không chỉ chọn sai POI — bạn chọn đúng cái POI mà thuật toán *muốn* đám đông chọn. Ngược lại, OB 0.786 "khó vào" hơn về tâm lý (phải chờ giá chạy ngược sâu hơn) — và chính vì ít người dám đợi, nó mới là nơi đảo chiều thật.
 
-**Vị trí trong họ lỗi chung:** lệnh này là biến thể "POI sâu chưa test" của cùng một pattern xuất hiện ở cả 4 lệnh thua gần nhất — SL luôn nằm trong đường giá đi lấy thanh khoản chưa bị lấy (GBPUSD 17/7: ERL dưới POI; XAU 14/5: phần thân còn lại của chính RB; EURUSD 7/5: BSL external phía trên). Xem phân tích tổng hợp + gate kiểm tra bắt buộc tại [[13 - Mistake - Trading Into Unswept Liquidity]].
+**Vị trí trong họ lỗi chung:** lệnh này là biến thể "POI sâu chưa test" của cùng một pattern xuất hiện ở cả 4 lệnh thua gần nhất — SL luôn nằm trong đường giá đi lấy thanh khoản chưa bị lấy (GBPUSD 17/7: ERL dưới POI; XAU 14/5: phần thân còn lại của chính RB; EURUSD 7/5: BSL external phía trên). Xem phân tích tổng hợp + gate kiểm tra bắt buộc tại [[13-Mistake-Trading-Into-Unswept-Liquidity]].
 
 ---
 
@@ -460,9 +460,9 @@ Distinguishing observable: nếu xác nhận đủ 3 mắt xích Breaker theo ca
 
 ### Liên kết
 
-- Concept POI: [[04 - Breaker Block]] · [[25 - OB - Order Block]] · [[27 - Premium Discount]] · [[26 - OTE - Optimal Trade Entry]] · [[10 - Consequent Encroachment (Mean Threshold)]]
-- Bước mô hình: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[13 - FVG  - Fair Value Gap]] · [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]
+- Concept POI: [[04-Breaker-Block]] · [[25-OB-Order-Block]] · [[27-Premium-Discount]] · [[26-OTE-Optimal-Trade-Entry]] · [[10-Consequent-Encroachment-Mean-Threshold]]
+- Bước mô hình: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[13-FVG-Fair-Value-Gap]] · [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]
 - Model: [[01 - ICT 2022 Model]]
-- Timing: [[18 - Kill Zones]] · [[40 - Macro Times]]
-- Mistake liên quan: [[03 - Mistake - Entry When MSS not in POI Zone]] · [[11 - LTF Displacement Not Create FVG, Big Candle But Wick Overlap]] · [[05 - Mistake - Not enough RR]] · [[13 - Mistake - Trading Into Unswept Liquidity]]
+- Timing: [[18-Kill-Zones]] · [[40-Macro-Times]]
+- Mistake liên quan: [[03-Mistake-Entry-When-MSS-not-in-POI-Zone]] · [[11 - LTF Displacement Not Create FVG, Big Candle But Wick Overlap]] · [[05-Mistake-Not-enough-RR]] · [[13-Mistake-Trading-Into-Unswept-Liquidity]]
 - Dashboard: [[_Backtest Dashboard]]

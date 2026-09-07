@@ -42,7 +42,7 @@ da_opposite_case: "not viable"
   ![[EURUSD-20260617-M1.png]]
 ## 2. Phân tích sau lệnh:
 - **Result**: Hit ==stoploss==
-- **Mistake**: [[06 - Mistake - Not Have Market Structure Shift]]
+- **Mistake**: [[06-Mistake-Not-Have-Market-Structure-Shift]]
 - **Lý do**: Vào đuổi giá vì sợ lỡ mất nhịp giá. Khi dó giá chạm PD Array và xuất hiện displacement, tuy nhiên không có MSS. Tôi bỏ qua một điều kiện xác định quan trọng và vào lệnh Long trong khi các khung M15/M5 là nhịp giá giảm
 - Không check các tin tức quan trọng của ngày
 
@@ -72,7 +72,7 @@ Không thể rút lesson kỹ thuật/tâm lý/quy trình từ nội dung body v
 
 **O1 · [SELF-CONTRADICTION] · fatal · attacks C2 (load-bearing)**
 Claim: nội dung mục 1-2 là phân tích pre/post-trade của lệnh NDX Win này.
-Fails: ba mâu thuẫn độc lập, mỗi cái đủ để bác bỏ riêng: (a) title H1 ghi "EURUSD Long Loss" trong khi frontmatter symbol=NDX, result=Win; (b) mọi caption ảnh trong body ghi `EURUSD-20260617-*.png` — không có ảnh NDX nào; (c) dòng "Result: Hit ==stoploss==" và mistake tag "[[06 - Mistake - Not Have Market Structure Shift]]" trong body mâu thuẫn trực tiếp với frontmatter result=Win. Thêm nữa, frontmatter `date: 2026-06-12T22:31:00` lệch 5 ngày so với tên file và mọi nhắc "2026-06-17" trong nội dung — ba chiều (filename, nội dung, date field) không khớp nhau.
+Fails: ba mâu thuẫn độc lập, mỗi cái đủ để bác bỏ riêng: (a) title H1 ghi "EURUSD Long Loss" trong khi frontmatter symbol=NDX, result=Win; (b) mọi caption ảnh trong body ghi `EURUSD-20260617-*.png` — không có ảnh NDX nào; (c) dòng "Result: Hit ==stoploss==" và mistake tag "[[06-Mistake-Not-Have-Market-Structure-Shift]]" trong body mâu thuẫn trực tiếp với frontmatter result=Win. Thêm nữa, frontmatter `date: 2026-06-12T22:31:00` lệch 5 ngày so với tên file và mọi nhắc "2026-06-17" trong nội dung — ba chiều (filename, nội dung, date field) không khớp nhau.
 Evidence: so khớp nguyên văn từng dòng mục 1-2 với `Loss-01-Trade-2026-06-17-EURUSD-Long.md` — giống tuyệt đối từ tiêu đề D1/H1/M5/M1 đến câu "Lý do: Vào đuổi giá vì sợ lỡ mất nhịp giá."
 Consequence: không có cách nào xác định lệnh NDX Long Win 265 pnl này thực sự dựa trên phân tích nào, kể cả có tồn tại thật hay không như một lệnh riêng biệt với đúng những số trong frontmatter. Đây khớp nguyên văn CS-O3 (`[SELF-CONTRADICTION] · fatal`) trong cross_setup_findings.md.
 Your best answer: không có — đây là lỗi vận hành journal (sai file khi tạo/copy), không phải một cách đọc khác của cùng dữ liệu, đúng như CS-O3 đã kết luận.

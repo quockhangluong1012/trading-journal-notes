@@ -482,7 +482,7 @@ Load-bearing claim C3 không bị BROKEN (không có bằng chứng mâu thuẫn
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI ladder: [[04 - Breaker Block]] · [[13 - FVG  - Fair Value Gap]] · [[07 - Unicorn Model]]
-- Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[27 - Premium Discount]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]]
+- POI ladder: [[04-Breaker-Block]] · [[13-FVG-Fair-Value-Gap]] · [[07 - Unicorn Model]]
+- Entry refine: [[10-Consequent-Encroachment-Mean-Threshold]] · [[27-Premium-Discount]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]]
 - Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]

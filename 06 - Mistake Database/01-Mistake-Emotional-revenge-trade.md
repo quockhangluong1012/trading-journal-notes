@@ -33,7 +33,7 @@ Có ba biến thể, cùng chung một cơ chế lõi nhưng khác nhau ở trig
 - **FOMO-Revenge:** bỏ lỡ một con sóng đẹp (đứng ngoài quan sát, không kịp entry hoặc không đủ điều kiện để vào) → đuổi theo giá đã chạy xa, entry muộn không có setup.
 - **Win-Tilt (biến thể sau thắng, dễ bị bỏ qua):** vừa thắng một lệnh lớn → tâm lý "tiền của nhà cái" (house money effect) khiến size lệnh tiếp theo bị đẩy lên mà không có cơ sở, hoặc entry vào một setup chất lượng thấp chỉ vì đang "hưng phấn".
 
-Cả ba biến thể đều dẫn tới cùng một kết quả: entry không có xác nhận đầy đủ theo mô hình, size vượt kế hoạch, thường diễn ra ngay lập tức và ngoài [[18 - Kill Zones]] đã định trước trong kế hoạch giao dịch.
+Cả ba biến thể đều dẫn tới cùng một kết quả: entry không có xác nhận đầy đủ theo mô hình, size vượt kế hoạch, thường diễn ra ngay lập tức và ngoài [[18-Kill-Zones]] đã định trước trong kế hoạch giao dịch.
 
 ![[Revenge-Sec-01-MoTa.svg|760]]
 *Sơ đồ: ba trigger khác nhau (loss, FOMO, win) hội tụ về cùng một cơ chế — cảm xúc thắng process.*
@@ -145,7 +145,7 @@ Hai nguyên tắc cần nội tâm hóa: (1) **Mỗi lệnh về mặt thống k
 
 ### 5.5. Biến thể Win-Tilt / overconfidence
 
-Sau một lệnh thắng lớn, hiệu ứng "tiền của nhà cái" (house money effect) khiến trader cảm thấy phần lợi nhuận vừa có "không thật sự là tiền của mình", nên sẵn sàng risk nó nhiều hơn mức bình thường. Biểu hiện: size lệnh tiếp theo tăng mà không có cơ sở phân tích nào thay đổi, hoặc hạ tiêu chuẩn setup vì đang "cảm thấy tự tin". Đây vẫn là vi phạm trực tiếp rule ≤ 0.5% (xem [[07 - Mistake - Risk more than 0.5% total account]]) và cần được circuit breaker xử lý y hệt như loss-revenge — chỉ khác trigger, không khác cơ chế hay hậu quả.
+Sau một lệnh thắng lớn, hiệu ứng "tiền của nhà cái" (house money effect) khiến trader cảm thấy phần lợi nhuận vừa có "không thật sự là tiền của mình", nên sẵn sàng risk nó nhiều hơn mức bình thường. Biểu hiện: size lệnh tiếp theo tăng mà không có cơ sở phân tích nào thay đổi, hoặc hạ tiêu chuẩn setup vì đang "cảm thấy tự tin". Đây vẫn là vi phạm trực tiếp rule ≤ 0.5% (xem [[07-Mistake-Risk-more-than-0.5-total-account]]) và cần được circuit breaker xử lý y hệt như loss-revenge — chỉ khác trigger, không khác cơ chế hay hậu quả.
 
 ### 5.6. Post-loss routine — trình tự cụ thể
 
@@ -278,7 +278,7 @@ Expectancy baseline: EV = 0.45 × 2.2 − 0.55 × 1 = 0.99 − 0.55 = **+0.44R/l
 | 25% (10 lệnh) | +17.6R | (30×0.44R)+(10×−0.31R) = 13.2−3.1 = **+10.1R** | Giảm ~43% expectancy tháng |
 | 50% (20 lệnh) | +17.6R | (20×0.44R)+(20×−0.31R) = 8.8−6.2 = **+2.6R** | Giảm ~85% expectancy tháng — hệ thống gần như mất hết edge |
 
-**Chi phí kép khi revenge trade đi kèm mistake khác:** nếu revenge trade còn đồng thời vi phạm [[07 - Mistake - Risk more than 0.5% total account]] (size 1% thay vì 0.5%) VÀ [[05 - Mistake - Not enough RR]] (RR bị co vì SL đặt tuỳ hứng), thiệt hại không cộng tuyến tính mà nhân: một lệnh thua đáng lẽ chỉ −0.5% tài khoản trở thành −1% (size gấp đôi) với RR tệ hơn khiến xác suất thua cao hơn baseline — hai yếu tố cùng làm xấu một phía của phương trình EV, khiến EV âm sâu hơn phép cộng đơn giản gợi ý.
+**Chi phí kép khi revenge trade đi kèm mistake khác:** nếu revenge trade còn đồng thời vi phạm [[07-Mistake-Risk-more-than-0.5-total-account]] (size 1% thay vì 0.5%) VÀ [[05-Mistake-Not-enough-RR]] (RR bị co vì SL đặt tuỳ hứng), thiệt hại không cộng tuyến tính mà nhân: một lệnh thua đáng lẽ chỉ −0.5% tài khoản trở thành −1% (size gấp đôi) với RR tệ hơn khiến xác suất thua cao hơn baseline — hai yếu tố cùng làm xấu một phía của phương trình EV, khiến EV âm sâu hơn phép cộng đơn giản gợi ý.
 
 ### 11.4. Taxonomy các biến thể con
 
@@ -292,10 +292,10 @@ Expectancy baseline: EV = 0.45 × 2.2 − 0.55 × 1 = 0.99 − 0.55 = **+0.44R/l
 
 | Kết hợp với | Cơ chế khuếch đại | Mức nguy hiểm tổ hợp |
 |---|---|---|
-| [[07 - Mistake - Risk more than 0.5% total account]] | Revenge hầu như luôn đi kèm tăng size — hai lỗi này về thống kê gần như không độc lập; risk vượt mức là *cơ chế thực thi* của cảm xúc revenge, không phải lỗi riêng biệt | Rất cao — đây là tổ hợp phổ biến nhất dẫn tới breach giới hạn lỗ ngày của prop firm |
-| [[05 - Mistake - Not enough RR]] | Vào lệnh cảm tính thường đi kèm SL đặt tuỳ hứng (quá gần vì "muốn thắng nhanh" hoặc quá xa vì sợ bị quét lần nữa) → RR thực tế lệch khỏi kế hoạch, khiến ngay cả khi thắng, R thu về cũng thấp hơn baseline | Cao |
-| [[09 - Mistake - Wrong daily bias]] | Khi tilt, trader dễ "đổi bias giữa phiên" để biện minh cho lệnh ngược hướng ban đầu — không phải vì có dữ liệu mới, mà vì cảm xúc cần một lý do để hành động theo hướng đang "cảm thấy đúng" | Trung bình-cao |
-| [[02 - Mistake - Enter before liquidity sweep]] | FOMO-revenge đặc biệt dễ khiến trader bỏ qua yêu cầu chờ sweep — muốn vào "ngay bây giờ" nên chấp nhận entry sớm không có xác nhận | Cao, đặc biệt với biến thể FOMO-Revenge |
+| [[07-Mistake-Risk-more-than-0.5-total-account]] | Revenge hầu như luôn đi kèm tăng size — hai lỗi này về thống kê gần như không độc lập; risk vượt mức là *cơ chế thực thi* của cảm xúc revenge, không phải lỗi riêng biệt | Rất cao — đây là tổ hợp phổ biến nhất dẫn tới breach giới hạn lỗ ngày của prop firm |
+| [[05-Mistake-Not-enough-RR]] | Vào lệnh cảm tính thường đi kèm SL đặt tuỳ hứng (quá gần vì "muốn thắng nhanh" hoặc quá xa vì sợ bị quét lần nữa) → RR thực tế lệch khỏi kế hoạch, khiến ngay cả khi thắng, R thu về cũng thấp hơn baseline | Cao |
+| [[09-Mistake-Wrong-daily-bias]] | Khi tilt, trader dễ "đổi bias giữa phiên" để biện minh cho lệnh ngược hướng ban đầu — không phải vì có dữ liệu mới, mà vì cảm xúc cần một lý do để hành động theo hướng đang "cảm thấy đúng" | Trung bình-cao |
+| [[02-Mistake-Enter-before-liquidity-sweep]] | FOMO-revenge đặc biệt dễ khiến trader bỏ qua yêu cầu chờ sweep — muốn vào "ngay bây giờ" nên chấp nhận entry sớm không có xác nhận | Cao, đặc biệt với biến thể FOMO-Revenge |
 
 **Tổ hợp nguy hiểm nhất:** Loss-Revenge + tăng size (07) + SL đặt tuỳ hứng (05) xảy ra đồng thời trong cùng một lệnh — đây chính là cấu hình đủ để một lệnh thua −0.5% đúng kế hoạch trở thành chuỗi −3% đến −5% chỉ trong một buổi chiều (đã nêu ở mục 5.1 cũ), và tổ hợp này được khuếch đại thêm nếu diễn ra ngoài Kill Zone (thanh khoản mỏng hơn, biến động nhiễu hơn — xem 11.2).
 
@@ -529,6 +529,6 @@ Không log đủ 10 field trên = không audit được = tự động **FAIL** 
 
 ## 16. Liên kết
 
-**Concepts:** [[18 - Kill Zones]] · [[12 - Daily Bias]]
+**Concepts:** [[18-Kill-Zones]] · [[12-Daily-Bias]]
 
-**Mistakes liên quan:** [[07 - Mistake - Risk more than 0.5% total account]] · [[05 - Mistake - Not enough RR]] · [[09 - Mistake - Wrong daily bias]] · [[02 - Mistake - Enter before liquidity sweep]]
+**Mistakes liên quan:** [[07-Mistake-Risk-more-than-0.5-total-account]] · [[05-Mistake-Not-enough-RR]] · [[09-Mistake-Wrong-daily-bias]] · [[02-Mistake-Enter-before-liquidity-sweep]]

@@ -32,7 +32,7 @@ common_mistakes: []
 
 > [!important] Nguyên tắc cốt lõi
 > **CHoCH = cú phá NGƯỢC trend ĐẦU TIÊN, là tín hiệu CẢNH BÁO khả năng đảo chiều, không phải bằng chứng đảo chiều đã hoàn tất.**
-> Một CHoCH "trần" (không có displacement, không có sweep) thường chỉ là **inducement / false break** để bẫy reversal traders. CHoCH chỉ đáng tin khi: (1) phá đúng swing được bảo vệ, (2) có **displacement** (body close + momentum, để lại FVG), và (3) lý tưởng xảy ra **sau khi sweep liquidity** tại HTF POI. Trong ngôn ngữ ICT chặt chẽ, phiên bản "có displacement + sweep" này chính là [[21 - Market Structure Shift]] (MSS); "CHoCH" là cách gọi phổ biến hơn trong SMC — hãy chính xác và ưu tiên tư duy MSS khi xác nhận.
+> Một CHoCH "trần" (không có displacement, không có sweep) thường chỉ là **inducement / false break** để bẫy reversal traders. CHoCH chỉ đáng tin khi: (1) phá đúng swing được bảo vệ, (2) có **displacement** (body close + momentum, để lại FVG), và (3) lý tưởng xảy ra **sau khi sweep liquidity** tại HTF POI. Trong ngôn ngữ ICT chặt chẽ, phiên bản "có displacement + sweep" này chính là [[21-Market-Structure-Shift]] (MSS); "CHoCH" là cách gọi phổ biến hơn trong SMC — hãy chính xác và ưu tiên tư duy MSS khi xác nhận.
 
 ---
 
@@ -68,7 +68,7 @@ CHoCH không chỉ là một đường giá bị xuyên qua. Nó là dấu hiệ
 ![[CHoCH-Advanced-vs-BOS-vs-MSS.svg]]
 *Ba cột phân biệt trực quan: BOS phá thuận trend (tiếp diễn), CHoCH phá ngược trend lần đầu (cảnh báo — thuật ngữ SMC, lỏng), MSS phá ngược + displacement + sweep bắt buộc (ICT, chặt nhất). CHoCH ≈ MSS cùng sự kiện — hãy áp chuẩn MSS lên mọi CHoCH.*
 
-> [!important] Quan hệ với [[21 - Market Structure Shift]] và lựa chọn của ICT
+> [!important] Quan hệ với [[21-Market-Structure-Shift]] và lựa chọn của ICT
 > Trong thực tế, **CHoCH và MSS mô tả cùng một sự kiện cấu trúc** (cú phá ngược trend đầu tiên), nhưng khác nhau ở mức độ chặt chẽ của xác nhận:
 > - **CHoCH** (SMC-popular) thường chỉ cần "phá một swing ngược trend" → dễ dính false break / inducement.
 > - **MSS** (ICT) đòi hỏi **displacement** (body close + momentum + FVG) và lý tưởng là **sweep liquidity trước** → lọc bỏ phần lớn false break.
@@ -96,7 +96,7 @@ CHoCH là tín hiệu cấu trúc **sớm nhất** cho khả năng đảo chiề
 - HTF đã CHoCH chưa, để LTF được phép tìm entry theo hướng mới?
 
 ### CHoCH không phải là gì
-- **Không phải mọi cú phá ngược trend** — nếu chỉ là **wick** xuyên qua rồi đóng lại trong range, đó là [[20 - Liquidity Sweep]] / [[15 - Inducement]], không phải CHoCH.
+- **Không phải mọi cú phá ngược trend** — nếu chỉ là **wick** xuyên qua rồi đóng lại trong range, đó là [[20-Liquidity-Sweep]] / [[15-Inducement]], không phải CHoCH.
 - **Không phải bằng chứng đảo chiều đã hoàn tất** — CHoCH chỉ **cảnh báo**; reversal cần thêm BOS mới theo hướng ngược lại.
 - **Không phải BOS** — BOS thuận trend (tiếp diễn); CHoCH ngược trend (cảnh báo đảo chiều). Nhầm hai cái này = sai bias từ gốc.
 - **Một CHoCH KHÔNG có displacement có thể chỉ là inducement / false break** — được tạo ra để hút lệnh reversal rồi tiếp diễn trend cũ. Không displacement, không sweep → không tin.
@@ -123,12 +123,12 @@ CHoCH là tín hiệu cấu trúc **sớm nhất** cho khả năng đảo chiề
 - [ ] Đang có một xu hướng rõ ràng (HH/HL hoặc LH/LL) để "phá ngược trend lần đầu" có nghĩa.
 - [ ] Giá vừa **sweep external liquidity** (PDH/PDL, đỉnh/đáy cũ, equal highs/lows) tại một HTF POI rồi mới CHoCH ngược → reversal có context.
 - [ ] CHoCH được tạo bằng **đóng body + displacement** (để lại [[Fair Value Gap]]), không chỉ wick.
-- [ ] CHoCH xảy ra tại vùng cực đoan **premium (cho bearish CHoCH)** hoặc **discount (cho bullish CHoCH)** của [[12 - Dealing Range]].
+- [ ] CHoCH xảy ra tại vùng cực đoan **premium (cho bearish CHoCH)** hoặc **discount (cho bullish CHoCH)** của [[12-Dealing-Range]].
 - [ ] Swing bị phá là một **protected high/low** thật (đỉnh/đáy mà trend đang dùng để duy trì cấu trúc), không phải micro swing.
 - [ ] CHoCH HTF đã xảy ra và đang chờ LTF CHoCH để vào lệnh đồng pha.
 
 ### Khi nào nên bỏ qua?
-- [ ] Cú phá ngược trend chỉ là **wick** rồi đóng lại trong range → đây là [[20 - Liquidity Sweep]] / [[15 - Inducement]], không phải CHoCH.
+- [ ] Cú phá ngược trend chỉ là **wick** rồi đóng lại trong range → đây là [[20-Liquidity-Sweep]] / [[15-Inducement]], không phải CHoCH.
 - [ ] CHoCH **không có displacement** (nến yếu, không momentum, không FVG) → khả năng là false break.
 - [ ] CHoCH xảy ra **giữa range**, không sau khi sweep liquidity, không gắn POI → thiếu context reversal.
 - [ ] Phá một **micro swing / inducement** thay vì protected swing thật → tín hiệu rác.
@@ -172,7 +172,7 @@ CHoCH là tín hiệu cấu trúc **sớm nhất** cho khả năng đảo chiề
 ### Điều kiện tăng xác suất
 - [ ] Cú phá có **displacement mạnh** và để lại [[Fair Value Gap]] / imbalance rõ (biến CHoCH thành MSS chặt).
 - [ ] CHoCH xảy ra **sau khi sweep external liquidity** tại HTF POI (sweep đỉnh/đáy rồi đảo).
-- [ ] CHoCH ở vùng cực đoan: premium (bearish CHoCH) / discount (bullish CHoCH) của [[12 - Dealing Range]].
+- [ ] CHoCH ở vùng cực đoan: premium (bearish CHoCH) / discount (bullish CHoCH) của [[12-Dealing-Range]].
 - [ ] HTF đã CHoCH cùng hướng → LTF CHoCH đồng pha có xác suất cao hơn.
 - [ ] Sau CHoCH, giá tạo tiếp một **BOS theo hướng mới** → xác nhận order flow đã thực sự đổi.
 
@@ -303,7 +303,7 @@ Không phải CHoCH nào cũng đáng tin ngang nhau. Một CHoCH chất lượn
 | **Không tính** | Micro swing / inducement (vài nến, không ý nghĩa cấu trúc) | Chính là bẫy inducement — CHoCH sau chỉ là nhiễu | Không trade |
 
 > [!tip] Vị trí và thời điểm nhân thêm chất lượng
-> Ngay cả khi pool đúng tier cao, một CHoCH đạt chất lượng tối đa còn cần: **(1) vị trí** — sweep + CHoCH xảy ra tại HTF POI đúng phía premium (bearish CHoCH) / discount (bullish CHoCH); **(2) thời điểm** — trong [[18 - Kill Zones]] (London / NY AM), ngoài kill zone thanh khoản mỏng dễ tạo CHoCH giả; **(3) displacement + FVG** rõ ràng để có POI entry với stop logic. Ghi `swept_pool_tier` vào journal để có số liệu riêng thay vì cảm tính.
+> Ngay cả khi pool đúng tier cao, một CHoCH đạt chất lượng tối đa còn cần: **(1) vị trí** — sweep + CHoCH xảy ra tại HTF POI đúng phía premium (bearish CHoCH) / discount (bullish CHoCH); **(2) thời điểm** — trong [[18-Kill-Zones]] (London / NY AM), ngoài kill zone thanh khoản mỏng dễ tạo CHoCH giả; **(3) displacement + FVG** rõ ràng để có POI entry với stop logic. Ghi `swept_pool_tier` vào journal để có số liệu riêng thay vì cảm tính.
 
 ### Nâng cao — Vì sao CHoCH là tín hiệu sớm nhất và rủi ro nhất — cách quản trị
 
@@ -520,7 +520,7 @@ HTF Uptrend (HH/HL) + giá tới vùng Premium cực đoan / HTF Bearish POI
 > [!success] Nguyên tắc vàng
 > **"CHoCH chỉ là đèn vàng — chờ BOS hướng mới làm đèn xanh."** CHoCH là tín hiệu cấu trúc SỚM NHẤT và do đó RỦI RO NHẤT cho khả năng đảo chiều. Một cú phá ngược trend không có body close + displacement thường chỉ là inducement để bẫy reversal trader; áp chuẩn MSS (displacement + lý tưởng sweep) lên mọi CHoCH trước khi tin.
 
-1. **Chỉ tính CHoCH khi có BODY CLOSE + displacement, không tính wick.** Một bóng nến chọc qua protected swing rồi đóng lại trong range là [[20 - Liquidity Sweep|sweep]]/[[15 - Inducement|inducement]], không phải CHoCH. Ghi trường `choch_confirmation: body/wick` và `choch_displacement: yes/no` cho mỗi lệnh — nhóm wick-only gần như luôn có tỉ lệ dính bẫy cao.
+1. **Chỉ tính CHoCH khi có BODY CLOSE + displacement, không tính wick.** Một bóng nến chọc qua protected swing rồi đóng lại trong range là [[20-Liquidity-Sweep|sweep]]/[[15-Inducement|inducement]], không phải CHoCH. Ghi trường `choch_confirmation: body/wick` và `choch_displacement: yes/no` cho mỗi lệnh — nhóm wick-only gần như luôn có tỉ lệ dính bẫy cao.
 
 2. **Phá đúng PROTECTED swing, không phải micro swing / inducement.** Protected swing là mốc mà trend đang dùng để duy trì chuỗi HH/HL hoặc LH/LL (thường là swing tạo cú đẩy cuối). Phá một inducement low/high nhỏ rồi gọi là CHoCH là sai mốc cấu trúc — chính là thứ smart money thiết kế để hút lệnh.
 
@@ -598,7 +598,7 @@ HTF Uptrend (HH/HL) + giá tới vùng Premium cực đoan / HTF Bearish POI
 
 **Tình huống:** HTF (H4/H1) đang trong downtrend rõ, chưa có CHoCH nào. Trên M5, giá tạo một CHoCH bullish nhỏ trong nhịp pullback bình thường của downtrend. Trader nhìn thấy chữ "CHoCH" xuất hiện và vội cho rằng xu hướng lớn đã đổi.
 
-**Vì sao bẫy được cả trader kinh nghiệm:** CHoCH M5 là CHoCH thật theo đúng định nghĩa trên khung M5 — không phải tín hiệu giả — vấn đề chỉ là nó đang đo degree nhỏ hơn nhiều so với HTF, và không có tư cách đảo bias lớn (liên hệ mục 15.8 file [[05 - BOS - Break of Structure]] về fractal conflict giữa các khung).
+**Vì sao bẫy được cả trader kinh nghiệm:** CHoCH M5 là CHoCH thật theo đúng định nghĩa trên khung M5 — không phải tín hiệu giả — vấn đề chỉ là nó đang đo degree nhỏ hơn nhiều so với HTF, và không có tư cách đảo bias lớn (liên hệ mục 15.8 file [[05-BOS-Break-of-Structure]] về fractal conflict giữa các khung).
 
 **Cách nhận diện sớm:** luôn hỏi "CHoCH này đang đo trend của degree nào?" trước khi phản ứng; nếu HTF chưa có dấu hiệu CHoCH tương ứng (chưa phá protected swing HTF), CHoCH LTF chỉ nên dùng để tạm dừng/giảm size, không dùng để lật bias.
 
@@ -714,7 +714,7 @@ HTF Uptrend (HH/HL) + giá tới vùng Premium cực đoan / HTF Bearish POI
 
 ### 1. Phản biện từ góc nhìn khoa học / quant
 
-- **Tính chủ quan khi chọn "protected swing":** giống BOS, việc xác định swing nào là "được bảo vệ" và đáng dùng làm mốc CHoCH vẫn phụ thuộc vào việc chọn độ lớn/degree trước đó (xem [[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]]) — hai trader có thể chọn hai swing khác nhau và kết luận CHoCH khác nhau từ cùng một đoạn giá.
+- **Tính chủ quan khi chọn "protected swing":** giống BOS, việc xác định swing nào là "được bảo vệ" và đáng dùng làm mốc CHoCH vẫn phụ thuộc vào việc chọn độ lớn/degree trước đó (xem [[01-Advance-Market-Structure-Short-Term-Low-Intermediate-Term-Low-Long-Term-Low]]) — hai trader có thể chọn hai swing khác nhau và kết luận CHoCH khác nhau từ cùng một đoạn giá.
 - **Hindsight và confirmation bias mạnh hơn cả BOS:** vì CHoCH là tín hiệu sớm và rủi ro cao, trader có xu hướng chỉ nhớ những lần CHoCH dẫn tới đảo chiều lớn (câu chuyện hấp dẫn để kể lại) và quên các lần CHoCH-trần thất bại âm thầm (không có gì để kể).
 - **Không có backtest công khai chuẩn thống kê:** chưa có nghiên cứu độc lập với sample lớn chứng minh "CHoCH + sweep + displacement" có edge dương có ý nghĩa thống kê so với các bộ lọc đảo chiều đơn giản hơn (ví dụ RSI phân kỳ, hoặc đơn giản là mean reversion sau N ngày giảm liên tục).
 - **Unfalsifiable ở lớp thứ hai:** khi một CHoCH hợp lệ thất bại, luôn có lời giải thích retroactive ("thiếu sweep tier cao", "gặp HTF POI đối ứng", "chỉ là LTF không đồng pha HTF") — mỗi lời giải thích đều hợp lý riêng lẻ, nhưng cộng lại khiến hệ thống ngày càng khó bị bác bỏ bằng dữ liệu thô.

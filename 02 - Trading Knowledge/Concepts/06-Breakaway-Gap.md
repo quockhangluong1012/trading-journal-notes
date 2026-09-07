@@ -23,8 +23,8 @@ updated: 2026-07-28
 > [!important] Nguyên tắc cốt lõi
 > - **Breakaway Gap = "phá range + displacement" → bắt đầu move**, không phải mọi gap đều là breakaway. Phải có một cú bứt khỏi vùng cân bằng/level thật.
 > - **Breakaway thì GIỮ và TIẾP DIỄN; Exhaustion thì FILL và ĐẢO CHIỀU.** Phân biệt hai loại này là kỹ năng quan trọng nhất của khái niệm — đừng fade một breakaway gap thật (kỳ vọng nó fill như exhaustion).
-> - Trong ICT, breakaway gap thường trùng một [[Fair Value Gap]] / [[21 - Liquidity Void]] do displacement tạo ra; gap "đáng được tôn trọng" này là một **PD array** để vào lệnh tiếp diễn.
-> - Mạnh nhất khi **cùng hướng [[12 - Daily Bias]]**, đến **sau một [[20 - Liquidity Sweep]]** quét biên range, và break đi từ premium/discount **hướng về draw on liquidity**.
+> - Trong ICT, breakaway gap thường trùng một [[Fair Value Gap]] / [[21-Liquidity-Void]] do displacement tạo ra; gap "đáng được tôn trọng" này là một **PD array** để vào lệnh tiếp diễn.
+> - Mạnh nhất khi **cùng hướng [[12-Daily-Bias]]**, đến **sau một [[20-Liquidity-Sweep]]** quét biên range, và break đi từ premium/discount **hướng về draw on liquidity**.
 
 ---
 
@@ -33,7 +33,7 @@ updated: 2026-07-28
 ### Khái niệm
 **Breakaway Gap (BAG)** là khoảng gap / imbalance hình thành tại thời điểm giá **bứt ra khỏi**:
 - một vùng **tích lũy/phân phối (consolidation / accumulation / distribution)**, hoặc
-- một **biên của range** ([[03 - Balanced Price Range]]), hoặc
+- một **biên của range** ([[03-Balanced-Price-Range]]), hoặc
 - một **mức quan trọng** (key level, swing, OB cũ),
 
 bằng một cú **[[Displacement]]** quyết liệt. Khoảnh khắc giá "nhảy" ra khỏi vùng cân bằng tạo ra một khoảng inefficiency (imbalance) — đó chính là breakaway gap. Nó đánh dấu **điểm khởi đầu của một leg xu hướng mới**.
@@ -56,12 +56,12 @@ bằng một cú **[[Displacement]]** quyết liệt. Khoảnh khắc giá "nh�
 > Việc phải tách bạch: **Breakaway (giữ, tiếp diễn)** vs **Exhaustion (fill, đảo chiều)**. Cùng là một "gap" nhìn trên chart, nhưng nếu nó nằm ở cuối move đã chạy dài và bị fill ngay thì đó là exhaustion — fade một exhaustion thì hợp lý, fade một breakaway thật thì sai.
 
 ### Khung ICT (cách gắn vào hệ thống)
-- Một breakaway gap thường **trùng một [[Fair Value Gap]] / [[21 - Liquidity Void]]** do chính cú displacement bứt range tạo ra.
+- Một breakaway gap thường **trùng một [[Fair Value Gap]] / [[21-Liquidity-Void]]** do chính cú displacement bứt range tạo ra.
 - Gap "đáng được tôn trọng" này hoạt động như một **PD array / vùng support-resistance** để tìm entry **tiếp diễn** theo hướng break.
 - Chất lượng cao nhất khi:
-  - **Cùng hướng [[12 - Daily Bias]]** HTF;
-  - Xuất hiện **sau một [[20 - Liquidity Sweep]]** quét biên range (lấy thanh khoản ở mép vùng tích lũy);
-  - Break đi **từ premium/discount** ([[27 - Premium Discount]]) **hướng về một draw on liquidity** rõ ràng.
+  - **Cùng hướng [[12-Daily-Bias]]** HTF;
+  - Xuất hiện **sau một [[20-Liquidity-Sweep]]** quét biên range (lấy thanh khoản ở mép vùng tích lũy);
+  - Break đi **từ premium/discount** ([[27-Premium-Discount]]) **hướng về một draw on liquidity** rõ ràng.
 
 ### Mục đích trong ICT
 - Đánh dấu **điểm khởi đầu** của một nhịp xu hướng → giúp xác định bạn đang ở đầu hay cuối move.
@@ -82,7 +82,7 @@ bằng một cú **[[Displacement]]** quyết liệt. Khoảnh khắc giá "nh�
 - **Không phải** mọi gap/imbalance — phải có **phá range/level + displacement** rõ.
 - **Không phải** Exhaustion Gap — exhaustion nằm cuối move và thường bị fill; breakaway nằm đầu move và nên giữ. Nhầm hai loại này là lỗi nguy hiểm nhất.
 - **Không phải** tín hiệu để **fade/đặt kỳ vọng "gap sẽ fill"** — một breakaway thật không fill nhanh.
-- **Không phải** tín hiệu độc lập — vẫn cần đúng [[12 - Daily Bias]], [[27 - Premium Discount]], và (lý tưởng) một [[20 - Liquidity Sweep]] trước break.
+- **Không phải** tín hiệu độc lập — vẫn cần đúng [[12-Daily-Bias]], [[27-Premium-Discount]], và (lý tưởng) một [[20-Liquidity-Sweep]] trước break.
 
 ---
 
@@ -100,17 +100,17 @@ bằng một cú **[[Displacement]]** quyết liệt. Khoảnh khắc giá "nh�
 
 ### Khi nào khái niệm này có giá trị cao? (checklist)
 - [ ] Có một cú **bứt khỏi range/level rõ ràng + [[Displacement]]** mạnh.
-- [ ] Break **cùng hướng [[12 - Daily Bias]]** HTF.
-- [ ] Có **[[20 - Liquidity Sweep]]** quét biên range ngay trước cú break.
-- [ ] Gap đi **từ premium/discount hướng về một draw on liquidity** ([[27 - Premium Discount]]).
-- [ ] Breakaway gap **trùng một [[Fair Value Gap]] / [[21 - Liquidity Void]]** của nhịp displacement.
+- [ ] Break **cùng hướng [[12-Daily-Bias]]** HTF.
+- [ ] Có **[[20-Liquidity-Sweep]]** quét biên range ngay trước cú break.
+- [ ] Gap đi **từ premium/discount hướng về một draw on liquidity** ([[27-Premium-Discount]]).
+- [ ] Breakaway gap **trùng một [[Fair Value Gap]] / [[21-Liquidity-Void]]** của nhịp displacement.
 - [ ] Có target liquidity rõ ở phía hướng break.
 
 ### Khi nào nên bỏ qua? (checklist)
 - [ ] Không có phá range/level thật — chỉ là dao động trong range.
 - [ ] Không có displacement (cú break yếu, nến nhỏ, không momentum).
 - [ ] Move đã chạy rất dài → gap khả năng là **exhaustion**, không phải breakaway.
-- [ ] Break **ngược [[12 - Daily Bias]]** HTF.
+- [ ] Break **ngược [[12-Daily-Bias]]** HTF.
 - [ ] Giá đóng nến sạch ngược qua gap (đã invalidation).
 - [ ] Không có target liquidity rõ phía hướng break.
 
@@ -150,14 +150,14 @@ Bullish Breakaway Gap
 - [ ] Xác định vùng cân bằng/level mà giá bứt khỏi.
 - [ ] Có **displacement** thật tạo gap/imbalance khi break.
 - [ ] Xác định cạnh gap (entry zone) và mức invalidation (đóng nến sạch ngược qua gap).
-- [ ] Đặt trong bối cảnh [[12 - Daily Bias]] / [[27 - Premium Discount]].
+- [ ] Đặt trong bối cảnh [[12-Daily-Bias]] / [[27-Premium-Discount]].
 
 ### Điều kiện tăng xác suất (nice-to-have)
-- [ ] Có [[20 - Liquidity Sweep]] quét biên range trước break.
-- [ ] Gap trùng một [[Fair Value Gap]] / [[21 - Liquidity Void]].
-- [ ] Cùng hướng [[12 - Daily Bias]], đi về một draw on liquidity rõ.
+- [ ] Có [[20-Liquidity-Sweep]] quét biên range trước break.
+- [ ] Gap trùng một [[Fair Value Gap]] / [[21-Liquidity-Void]].
+- [ ] Cùng hướng [[12-Daily-Bias]], đi về một draw on liquidity rõ.
 - [ ] BAG trên HTF (D1/H4) làm khung lớn, LTF refine entry.
-- [ ] Có [[21 - Market Structure Shift]] / [[Break of Structure]] đi kèm xác nhận hướng.
+- [ ] Có [[21-Market-Structure-Shift]] / [[Break of Structure]] đi kèm xác nhận hướng.
 
 ### Điều kiện làm setup yếu đi (warning)
 - Displacement mờ nhạt, gap nhỏ / không rõ.
@@ -167,12 +167,12 @@ Bullish Breakaway Gap
 
 ### Nâng cao — Định lượng độ mạnh của displacement tạo breakaway
 
-"Displacement mạnh" là một phán đoán trực quan dễ sai lệch: một cây nến trông "to" trên chart NQ1 khung M1 có thể chỉ là nhiễu bình thường, trong khi một cây nến "vừa phải" trên D1 XAUUSD đã là một cú bứt phá cực đoan. Nếu chỉ eyeball, hai trader nhìn cùng một breakout có thể kết luận trái ngược nhau về việc đó có phải breakaway thật hay không. Cần một phép đo tương đối — giống cách [[31 - Standard Deviation]] dùng bội số của một đoạn tham chiếu thay vì áng chừng bằng mắt — để tách bạch một cú break đáng tin khỏi một cú break yếu dễ thành false break.
+"Displacement mạnh" là một phán đoán trực quan dễ sai lệch: một cây nến trông "to" trên chart NQ1 khung M1 có thể chỉ là nhiễu bình thường, trong khi một cây nến "vừa phải" trên D1 XAUUSD đã là một cú bứt phá cực đoan. Nếu chỉ eyeball, hai trader nhìn cùng một breakout có thể kết luận trái ngược nhau về việc đó có phải breakaway thật hay không. Cần một phép đo tương đối — giống cách [[31-Standard-Deviation]] dùng bội số của một đoạn tham chiếu thay vì áng chừng bằng mắt — để tách bạch một cú break đáng tin khỏi một cú break yếu dễ thành false break.
 
 ![[BreakawayGap-Advanced-DisplacementStrength.svg]]
 *Ba nến cùng phá một biên range nhưng độ mạnh khác nhau: yếu (body ≈ 0.8x range trung bình 10-20 nến trước, ≈45% tổng range nến, mất 6-8 nến mới phá xong biên), vừa (body ≈ 2x average range, ≈65% tổng range, phá trong 2-3 nến), và mạnh (body ≥ 3.5x average range, ≥80% tổng range, phá chỉ trong 1 nến). Tier càng cao, breakaway càng đáng tin.*
 
-Ba phép đo nên dùng song song, tương tự cách tiếp cận của [[28 - Rejection Block]] với tỉ lệ wick/body:
+Ba phép đo nên dùng song song, tương tự cách tiếp cận của [[28-Rejection-Block]] với tỉ lệ wick/body:
 
 1. **Body nến displacement so với range trung bình của 10-20 nến trước đó** (một proxy kiểu ATR đơn giản, không cần chỉ báo). Đo chiều cao body (open→close) của nến bứt phá, chia cho trung bình biên độ (high-low) của 10-20 nến ngay trước nó. Tỉ lệ càng lớn, cú break càng vượt trội so với "nhịp điệu" bình thường của thị trường ngay trước đó.
 2. **Body chiếm bao nhiêu % tổng range (high-low) của chính cây nến displacement.** Body chiếm phần lớn tổng range (thay vì một cây nến có wick dài hai đầu và body nhỏ ở giữa) cho thấy lực mua/bán áp đảo trong suốt cây nến, không chỉ ở một thời điểm ngắn.
@@ -188,7 +188,7 @@ Ba phép đo nên dùng song song, tương tự cách tiếp cận của [[28 - 
 > Ghi `displacement_atr_ratio` (body / average range 10-20 nến) vào journal cho mỗi breakaway gap đã trade. Sau 20-30 mẫu trên NQ1/EURUSD/XAUUSD, bạn sẽ biết ngưỡng nào thực sự phân biệt breakaway "ăn tiền" khỏi breakaway "yếu dễ fail" trên từng thị trường, thay vì dùng cảm giác "nến to" chung chung.
 
 > [!note] Không nhầm với đo Rejection Block
-> Phép đo này nhìn vào **body của nến displacement khi phá RA KHỎI range** (đo động lượng tạo breakaway); còn tỉ lệ wick/body của [[28 - Rejection Block]] nhìn vào **wick của nến tại một swing high/low** (đo sự từ chối). Hai phép đo phục vụ hai câu hỏi khác nhau: "cú break này có mạnh không?" (Breakaway Gap) vs "cú từ chối này có mạnh không?" (Rejection Block) — đừng lẫn hai bảng tier với nhau khi ghi journal.
+> Phép đo này nhìn vào **body của nến displacement khi phá RA KHỎI range** (đo động lượng tạo breakaway); còn tỉ lệ wick/body của [[28-Rejection-Block]] nhìn vào **wick của nến tại một swing high/low** (đo sự từ chối). Hai phép đo phục vụ hai câu hỏi khác nhau: "cú break này có mạnh không?" (Breakaway Gap) vs "cú từ chối này có mạnh không?" (Rejection Block) — đừng lẫn hai bảng tier với nhau khi ghi journal.
 
 ### Nâng cao — Breakaway Gap lồng nhau đa khung thời gian (nested/fractal breakaway)
 
@@ -200,7 +200,7 @@ Một sai lầm phổ biến khi phân tích đa khung thời gian là coi break
 Vì sao điều này quan trọng cho việc tinh chỉnh entry đa khung thời gian:
 - **Các LTF breakaway gap bên trong HTF gap là POI tiếp diễn BỔ SUNG, không phải tín hiệu mâu thuẫn.** Nếu bạn đang chờ giá retest toàn bộ HTF gap để vào lệnh nhưng move quá mạnh không bao giờ quay lại đủ sâu, các LTF gap gần nhất chính là cơ hội entry tiếp diễn thực tế hơn — cùng logic, cùng hướng, chỉ khác quy mô.
 - **Không nên "hủy" ý tưởng breakaway HTF chỉ vì giá không quay về đúng gap lớn.** Giá retest một trong các LTF gap con (gần điểm hiện tại nhất) vẫn tôn trọng toàn bộ cấu trúc HTF — đó là hành vi nested bình thường, không phải dấu hiệu breakaway HTF thất bại.
-- **Áp dụng đúng logic phân tầng như [[31 - Standard Deviation]]**: quy mô POI phải khớp quy mô trade đang cầm. Trade intraday nên ưu tiên retest một LTF gap gần nhất; trade swing đa ngày có thể chờ retest HTF gap tổng nếu còn đủ thời gian nắm giữ.
+- **Áp dụng đúng logic phân tầng như [[31-Standard-Deviation]]**: quy mô POI phải khớp quy mô trade đang cầm. Trade intraday nên ưu tiên retest một LTF gap gần nhất; trade swing đa ngày có thể chờ retest HTF gap tổng nếu còn đủ thời gian nắm giữ.
 
 ```text
 [WALKTHROUGH — Nested Breakaway trên NQ1]
@@ -229,23 +229,23 @@ Zoom M15 trong đúng khung giờ của nến H4 đó:
 > [!example] Quy trình 4 câu bắt buộc trước khi dùng Breakaway Gap
 > 1. **Giá có thật sự bứt khỏi một range/level bằng displacement không?**
 > 2. **Đây là khởi đầu move (breakaway) hay cuối move (exhaustion)?**
-> 3. **Break có cùng [[12 - Daily Bias]] và đi về một draw on liquidity không?**
+> 3. **Break có cùng [[12-Daily-Bias]] và đi về một draw on liquidity không?**
 > 4. **Vùng retest (cạnh gap/FVG), stop (đóng nến xuyên gap) và target ở đâu, R:R bao nhiêu?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** hướng break có cùng [[12 - Daily Bias]] không?
+- **Bias hiện tại:** hướng break có cùng [[12-Daily-Bias]] không?
 - **Vùng cân bằng:** xác định range/level HTF và biên của nó.
 - **Draw on liquidity:** tìm liquidity target phía hướng break.
 - **Vị trí move:** đang ở đầu (favorable cho breakaway) hay đã chạy dài (cảnh giác exhaustion)?
 
 ### H1 / M15 — POI & Context
 - **Xác định breakaway gap cụ thể:** ví dụ `bullish BAG [low]–[high] sau khi displacement phá biên trên range tại [level]`.
-- **Confluence:** gap có trùng [[Fair Value Gap]] / [[21 - Liquidity Void]] không?
+- **Confluence:** gap có trùng [[Fair Value Gap]] / [[21-Liquidity-Void]] không?
 - **Trạng thái:** gap còn unmitigated chưa, đã retest mấy lần?
 
 ### M5 / M1 — Confirmation & Entry
 - **Retest:** chờ giá retrace về cạnh gap / FVG bên trong.
-- **Confirm:** quan sát giá **giữ** (reject) tại gap; lý tưởng có [[21 - Market Structure Shift]] nhỏ xác nhận tiếp diễn.
+- **Confirm:** quan sát giá **giữ** (reject) tại gap; lý tưởng có [[21-Market-Structure-Shift]] nhỏ xác nhận tiếp diễn.
 - **Entry:** tại cạnh gap / FVG; SL ở far side của gap (đóng nến sạch ngược qua gap = invalidation).
 - **Target:** liquidity kế tiếp theo hướng break.
 
@@ -280,7 +280,7 @@ Zoom M15 trong đúng khung giờ của nến H4 đó:
 
 ### Setup được xem là hợp lệ khi
 - [ ] Có phá range/level + displacement rõ tạo gap/imbalance.
-- [ ] Break cùng [[12 - Daily Bias]], đi về draw on liquidity.
+- [ ] Break cùng [[12-Daily-Bias]], đi về draw on liquidity.
 - [ ] (Lý tưởng) có sweep biên range trước break; gap trùng FVG.
 - [ ] Giá retest cạnh gap và **giữ** (reject) + LTF confirm.
 - [ ] SL ở far side gap; target liquidity rõ; R:R đạt kế hoạch.
@@ -318,7 +318,7 @@ Giá tích lũy trong một range; (lý tưởng) quét SSL dưới biên dướ
 **Vì sao đây là ví dụ tốt:**
 - Có đủ chuỗi **range → (sweep) → displacement bứt phá** trước khi gọi là breakaway.
 - Gap **giữ** khi retest (không fill) → đúng bản chất breakaway, không phải exhaustion.
-- Entry tiếp diễn cùng [[12 - Daily Bias]], SL logic ở far side gap.
+- Entry tiếp diễn cùng [[12-Daily-Bias]], SL logic ở far side gap.
 - Target là liquidity rõ ràng phía hướng break.
 
 ### Ví dụ sai / dễ nhầm — Fade một breakaway, hoặc gọi exhaustion là breakaway
@@ -330,7 +330,7 @@ Trader thấy một gap sau khi giá đã chạy rất dài và đặt lệnh **
 **Bài học:**
 - Phân biệt **vị trí của gap trong move**: đầu move (breakaway, giữ, tiếp diễn) vs cuối move (exhaustion, fill, đảo chiều).
 - Không fade một breakaway thật; không đu theo một exhaustion.
-- Phải có **phá range + displacement** mới gọi là breakaway; gắn với [[12 - Daily Bias]] và draw on liquidity.
+- Phải có **phá range + displacement** mới gọi là breakaway; gắn với [[12-Daily-Bias]] và draw on liquidity.
 - Theo dõi xem gap có **bị đóng nến xuyên qua (fill)** không — đó là tín hiệu invalidation quan trọng.
 
 ### Giải phẫu Breakaway Gap
@@ -345,16 +345,16 @@ Trader thấy một gap sau khi giá đã chạy rất dài và đặt lệnh **
 Khái niệm này thường kết hợp với:
 - [[ICT 2022 Model]]
 - [[Fair Value Gap]]
-- [[21 - Liquidity Void]]
+- [[21-Liquidity-Void]]
 - [[Displacement]]
-- [[20 - Liquidity Sweep]]
-- [[21 - Market Structure Shift]]
+- [[20-Liquidity-Sweep]]
+- [[21-Market-Structure-Shift]]
 - [[Break of Structure]]
 - [[Order Block]]
-- [[03 - Balanced Price Range]]
-- [[27 - Premium Discount]]
-- [[12 - Daily Bias]]
-- [[19 - Liquidity]]
+- [[03-Balanced-Price-Range]]
+- [[27-Premium-Discount]]
+- [[12-Daily-Bias]]
+- [[19-Liquidity]]
 
 ### Sequence mẫu — Long từ Bullish Breakaway Gap
 ```text
@@ -395,7 +395,7 @@ HTF Bias Bearish
 > Breakaway gap chỉ là POI tiếp diễn sau khi giá đã bứt range bằng displacement. Chỉ vào khi có context + đúng phía + xác nhận. Không fade một breakaway thật.
 
 ### A. Context (HTF)
-- [ ] [[12 - Daily Bias]] rõ ràng và break **cùng hướng** bias.
+- [ ] [[12-Daily-Bias]] rõ ràng và break **cùng hướng** bias.
 - [ ] Xác định range/level mà giá bứt khỏi.
 - [ ] Có displacement thật tạo gap/imbalance.
 - [ ] (Lý tưởng) có sweep biên range trước break.
@@ -404,7 +404,7 @@ HTF Bias Bearish
 
 ### B. Execution (LTF / khi giá retest)
 - [ ] Giá retest cạnh gap / FVG và **giữ** (reject).
-- [ ] (Lý tưởng) gap trùng [[Fair Value Gap]] / [[21 - Liquidity Void]].
+- [ ] (Lý tưởng) gap trùng [[Fair Value Gap]] / [[21-Liquidity-Void]].
 - [ ] LTF có MSS nhỏ / phản ứng xác nhận tiếp diễn.
 - [ ] Entry tại cạnh gap / FVG; SL ở far side gap.
 - [ ] Target liquidity rõ; R:R tối thiểu đạt kế hoạch.
@@ -426,7 +426,7 @@ HTF Bias Bearish
 | Fade một breakaway thật | Đặt lệnh ngược kỳ vọng "gap sẽ fill" | Breakaway giữ và tiếp diễn → quét stop | Vào THEO hướng break khi retest, không chống lại |
 | Nhầm exhaustion thành breakaway | Đu theo gap ở cuối move đã chạy dài | Exhaustion bị fill và đảo chiều | Kiểm tra vị trí gap trong move (đầu vs cuối) |
 | Gọi mọi gap là breakaway | Đánh dấu breakaway khi không có range break + displacement | Không có cơ sở tiếp diễn | Yêu cầu phá range/level + displacement rõ |
-| Trade ngược bias HTF | Break ngược [[12 - Daily Bias]] vẫn vào | Xác suất thấp | Chỉ trade breakaway cùng bias |
+| Trade ngược bias HTF | Break ngược [[12-Daily-Bias]] vẫn vào | Xác suất thấp | Chỉ trade breakaway cùng bias |
 | Bỏ qua xác nhận động lượng | Vào ngay khi thấy gap, không chờ retest/giữ | Có thể là false break | Chờ retest + giữ + LTF confirm |
 | Bỏ qua việc gap bị fill | Giữ lệnh khi giá đóng nến xuyên qua gap | Invalidation đã xảy ra | Cắt khi đóng nến sạch ngược qua gap |
 | SL quá sát | Đặt SL trong vùng gap | Bị quét dễ dàng | SL ở far side của gap / ngoài biên range |
@@ -438,9 +438,9 @@ HTF Bias Bearish
 - Mình có phân biệt được Breakaway vs Exhaustion gap trong 30 giây không?
 - Gap này nằm ở **đầu** hay **cuối** của move?
 - Giá đã thật sự **bứt khỏi range/level bằng displacement** chưa?
-- Break có **cùng [[12 - Daily Bias]]** và đi về một **draw on liquidity** không?
+- Break có **cùng [[12-Daily-Bias]]** và đi về một **draw on liquidity** không?
 - Gap có **giữ** khi retest hay đã bị **fill** (invalidation)?
-- Gap có trùng [[Fair Value Gap]] / [[21 - Liquidity Void]] không?
+- Gap có trùng [[Fair Value Gap]] / [[21-Liquidity-Void]] không?
 - SL (far side gap) và target (liquidity) ở đâu, R:R bao nhiêu?
 - Nếu không trade gap này, lý do "No Trade" là gì?
 - *(bổ sung)* Trước gap này có một giai đoạn tích lũy/range rõ ràng ≥ 10-15 nến không, hay gap xảy ra giữa/cuối một move đã chạy dài (dấu hiệu runaway/exhaustion)?
@@ -467,7 +467,7 @@ HTF Bias Bearish
 
 ### Q4
 **Hỏi:** Trong ICT, breakaway gap thường trùng với cái gì và đóng vai trò gì?
-**Đáp:** Thường trùng một [[Fair Value Gap]] / [[21 - Liquidity Void]] của nhịp displacement; đóng vai trò PD array / support-resistance cho entry tiếp diễn.
+**Đáp:** Thường trùng một [[Fair Value Gap]] / [[21-Liquidity-Void]] của nhịp displacement; đóng vai trò PD array / support-resistance cho entry tiếp diễn.
 
 ### Q5
 **Hỏi:** Đặt SL cho một bullish breakaway gap ở đâu?
@@ -479,7 +479,7 @@ HTF Bias Bearish
 
 ### Q7
 **Hỏi:** Điều kiện làm breakaway gap chất lượng cao nhất?
-**Đáp:** Cùng [[12 - Daily Bias]], đến sau một [[20 - Liquidity Sweep]] quét biên range, break từ premium/discount hướng về draw on liquidity, và gap trùng FVG.
+**Đáp:** Cùng [[12-Daily-Bias]], đến sau một [[20-Liquidity-Sweep]] quét biên range, break từ premium/discount hướng về draw on liquidity, và gap trùng FVG.
 
 ---
 
@@ -495,7 +495,7 @@ HTF Bias Bearish
 ### Quy tắc cá nhân rút ra
 - [ ] Tôi chỉ gọi một gap là "breakaway" khi có phá range/level + displacement rõ.
 - [ ] Tôi luôn hỏi: gap này ở đầu hay cuối move (breakaway hay exhaustion)?
-- [ ] Tôi chỉ trade breakaway cùng [[12 - Daily Bias]] và đi về draw on liquidity.
+- [ ] Tôi chỉ trade breakaway cùng [[12-Daily-Bias]] và đi về draw on liquidity.
 - [ ] Tôi vào theo hướng break khi retest, không fade gap chờ fill.
 - [ ] Tôi đặt SL ở far side gap và cắt khi giá đóng nến sạch xuyên qua gap.
 
@@ -536,7 +536,7 @@ HTF Bias Bearish
 
 4. **Phân biệt dứt khoát Breakaway với Exhaustion bằng vị trí trong move, không chỉ bằng hình dạng nến.** Hai loại gap có thể trông giống hệt nhau trên một khung nhìn hẹp; điều tách bạch chúng là gap này nằm ở **đầu** một nhịp mới hay ở **cuối** một move đã chạy dài. Luôn zoom ra HTF để đặt câu hỏi "move này đã đi được bao xa rồi?" trước khi tin vào bất kỳ gap nào.
 
-5. **Yêu cầu confluence với [[Fair Value Gap]] / [[21 - Liquidity Void]] và lý tưởng một [[20 - Liquidity Sweep]] trước khi coi breakaway là chất lượng cao.** Một cú phá range không kèm sweep vẫn có thể là breakaway thật, nhưng xác suất thấp hơn hẳn so với một cú phá xảy ra ngay sau khi quét sạch thanh khoản ở biên range — đó là dấu hiệu dòng tiền lớn đã "dọn dẹp" trước khi đẩy giá đi. Ghi `liquidity_swept_before_break: yes/no` để so sánh nhóm có sweep với nhóm không.
+5. **Yêu cầu confluence với [[Fair Value Gap]] / [[21-Liquidity-Void]] và lý tưởng một [[20-Liquidity-Sweep]] trước khi coi breakaway là chất lượng cao.** Một cú phá range không kèm sweep vẫn có thể là breakaway thật, nhưng xác suất thấp hơn hẳn so với một cú phá xảy ra ngay sau khi quét sạch thanh khoản ở biên range — đó là dấu hiệu dòng tiền lớn đã "dọn dẹp" trước khi đẩy giá đi. Ghi `liquidity_swept_before_break: yes/no` để so sánh nhóm có sweep với nhóm không.
 
 6. **Đặt SL ở far side của gap (hoặc far side của gap con gần nhất nếu đang refine theo LTF nested gap), không đặt sát mép gần.** Đóng nến sạch xuyên ngược qua gap là mức invalidation chuẩn — đặt SL trong lòng gap khiến lệnh dễ bị quét bởi một nhịp pullback bình thường trước khi giá tiếp diễn đúng hướng.
 

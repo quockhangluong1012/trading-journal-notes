@@ -37,7 +37,7 @@ updated: 2026-07-28
 One Shot One Kill (OSOK) là **mô hình giao dịch tần suất thấp, xác suất cao** ICT dạy chủ yếu cho forex, với mục tiêu thực tế **50–75 pips/tuần**. Thay vì cố bắt mọi dao động, trader dùng **weekly bias** để xác định hướng và **draw on liquidity** của tuần, rồi kiên nhẫn chờ **một (đôi khi hai) setup chất lượng cao nhất** — thường là Optimal Trade Entry / FVG đồng hướng bias trong kill zone — để vào lệnh. Một phát, một mục tiêu.
 
 **Tinh thần của mô hình:**
-1. **Weekly bias trước:** đầu tuần xác định tuần này nghiêng Bullish hay Bearish (xem [[12 - Daily Bias]] mở rộng lên W1).
+1. **Weekly bias trước:** đầu tuần xác định tuần này nghiêng Bullish hay Bearish (xem [[12-Daily-Bias]] mở rộng lên W1).
 2. **Draw on liquidity của tuần:** pool liquidity mà giá có khả năng bị hút về trong tuần (target tuần).
 3. **Chờ ngày/kill zone tốt nhất:** thường giữa tuần (Tue–Wed) trong London/NY KZ, nơi setup chín nhất.
 4. **Một setup chất lượng cao:** OTE/FVG đồng hướng bias sau khi giá quét liquidity ngược hướng.
@@ -92,17 +92,17 @@ Theo tài liệu gốc ICT, "anchor point" (điểm neo cho setup) thường hì
 
 | Bước | Tên | Khái niệm liên kết | Câu hỏi kiểm tra |
 |---|---|---|---|
-| 1 | Weekly bias | [[12 - Daily Bias]] | Tuần nghiêng Bull hay Bear? |
-| 2 | Draw on liquidity tuần | [[19 - Liquidity]], [[16 - Internal & External Range Liquidity (IRL & ERL)]] | Pool tuần là target nào? |
-| 3 | Chọn ngày/kill zone | [[18 - Kill Zones]] | Ngày & KZ nào setup chín nhất? |
+| 1 | Weekly bias | [[12-Daily-Bias]] | Tuần nghiêng Bull hay Bear? |
+| 2 | Draw on liquidity tuần | [[19-Liquidity]], [[16-Internal-External-Range-Liquidity-IRL-ERL]] | Pool tuần là target nào? |
+| 3 | Chọn ngày/kill zone | [[18-Kill-Zones]] | Ngày & KZ nào setup chín nhất? |
 | 4 | Setup A+ | [[Optimal Trade Entry]], [[Fair Value Gap]], [[01 - ICT 2022 Model]] | OTE/FVG đồng hướng bias sau sweep? |
-| 5 | Một mục tiêu | [[19 - Liquidity]] | 50–75 pips / pool tuần ở đâu? |
+| 5 | Một mục tiêu | [[19-Liquidity]] | 50–75 pips / pool tuần ở đâu? |
 
 ### Biến thể thường gặp
 - **+ ICT 2022 Model:** "phát bắn" thường chính là một chuỗi [[01 - ICT 2022 Model]] hoàn chỉnh trong kill zone ([[01 - ICT 2022 Model]]).
 - **+ OTE:** entry tinh chỉnh bằng vùng OTE 62–79% của nhịp đẩy theo bias ([[Optimal Trade Entry]]).
-- **+ Silver Bullet:** cửa sổ 1 giờ trong kill zone là nơi ưa thích để "bắn" ([[18 - Kill Zones]]).
-- **+ MMXM:** dùng [[04 - Market Maker Buy Model – MMBM]] / [[06 - Market Maker Sell Model – MMSM]] để biết tuần đang ở nửa nào của chu kỳ.
+- **+ Silver Bullet:** cửa sổ 1 giờ trong kill zone là nơi ưa thích để "bắn" ([[18-Kill-Zones]]).
+- **+ MMXM:** dùng [[04 - Market Maker Buy Model MMBM]] / [[06 - Market Maker Sell Model MMSM]] để biết tuần đang ở nửa nào của chu kỳ.
 
 > [!tip]
 > Cách nhớ nhanh OSOK: **"Một tuần, một mục tiêu, một phát ngon."** Nếu không có setup A+ đồng hướng weekly bias trong kill zone → không bóp cò.
@@ -347,19 +347,19 @@ Không chờ setup A+, trader vào 4 lệnh nhỏ rải rác trong tuần, vài 
 ## 7. Entry model liên quan
 
 Khái niệm này tổng hợp:
-- [[12 - Daily Bias]]
-- [[19 - Liquidity]]
-- [[16 - Internal & External Range Liquidity (IRL & ERL)]]
-- [[20 - Liquidity Sweep]]
-- [[21 - Market Structure Shift]]
+- [[12-Daily-Bias]]
+- [[19-Liquidity]]
+- [[16-Internal-External-Range-Liquidity-IRL-ERL]]
+- [[20-Liquidity-Sweep]]
+- [[21-Market-Structure-Shift]]
 - [[Displacement]]
 - [[Fair Value Gap]]
 - [[Optimal Trade Entry]]
-- [[27 - Premium Discount]]
-- [[18 - Kill Zones]]
+- [[27-Premium-Discount]]
+- [[18-Kill-Zones]]
 - [[01 - ICT 2022 Model]]
-- [[04 - Market Maker Buy Model – MMBM]]
-- [[06 - Market Maker Sell Model – MMSM]]
+- [[04 - Market Maker Buy Model MMBM]]
+- [[06 - Market Maker Sell Model MMSM]]
 
 ### Sequence mẫu — OSOK (đầy đủ)
 ```text

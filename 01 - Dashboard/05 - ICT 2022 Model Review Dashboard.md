@@ -19,7 +19,7 @@ dashboard: ICT 2022 Model Review
 Dashboard này giúp tách riêng lỗi quan trọng: **vào FVG nhưng chưa có MSS xác nhận**.
 
 ```dataviewjs
-const TRADE_FOLDER = '"Trading Journal/05 - Live Trading Journal/Trades"';
+const TRADE_FOLDER = '"05 - Live Trading Journal/Trades"';
 
 function first(t,names){ for(const n of names){ if(t[n]!==undefined&&t[n]!==null&&t[n]!=="") return t[n]; } return null; }
 function toText(v){ if(v===null||v===undefined) return ""; if(typeof v==="string") return v.replaceAll("[[","").replaceAll("]]","").trim(); if(v.path) return v.path.split("/").pop().replace(/\.md$/,""); if(v.display) return String(v.display); return String(v); }

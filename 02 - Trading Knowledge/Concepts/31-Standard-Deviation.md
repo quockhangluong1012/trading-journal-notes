@@ -41,10 +41,10 @@ updated: 2026-07-28
 ### Bản chất
 - SD không sinh ra một mức S/R "vật lý" như Order Block hay FVG; nó là **một phép đo đối xứng** — lấy khoảng cách của leg gốc rồi nhân lên thành các mốc kỳ vọng.
 - Vì đo từ manipulation leg, SD biến **độ sâu của cú lừa** thành **tầm với của cú đẩy thật**. Cú manipulation càng "ngọt" thì các mức chiếu càng có ý nghĩa.
-- SD đáng tin nhất khi một mức chiếu **rơi đúng vào** một liquidity pool đã có sẵn, một FVG khung lớn, hoặc biên premium/discount của [[12 - Dealing Range]] — lúc đó projection và draw on liquidity củng cố nhau.
+- SD đáng tin nhất khi một mức chiếu **rơi đúng vào** một liquidity pool đã có sẵn, một FVG khung lớn, hoặc biên premium/discount của [[12-Dealing-Range]] — lúc đó projection và draw on liquidity củng cố nhau.
 
 ### Cách đo & chiếu (workflow vẽ)
-1. Xác định **đoạn tham chiếu**: chân manipulation/Judas swing đã quét thanh khoản, ngay trước displacement (ví dụ: consolidation high → low của phiên, hoặc swing high → swing low đã sweep [[19 - Liquidity]]).
+1. Xác định **đoạn tham chiếu**: chân manipulation/Judas swing đã quét thanh khoản, ngay trước displacement (ví dụ: consolidation high → low của phiên, hoặc swing high → swing low đã sweep [[19-Liquidity]]).
 2. Dùng công cụ **fib "trend-based extension" / projection** (3 điểm) hoặc tự đặt mức: neo điểm đầu và điểm cuối của leg tham chiếu.
 3. Điểm chiếu (-1 SD) = phản chiếu đối xứng của leg sang phía mở rộng; các mức tiếp theo (-2, -2.5, -3, -4 SD) là bội số tăng dần.
 4. Đánh dấu các mức **-1, -2, -2.5, -3, -4 SD** và **đối chiếu từng mức với liquidity / FVG / PD-array HTF** để tìm mức nào có confluence.
@@ -65,7 +65,7 @@ updated: 2026-07-28
 ```
 
 ### Mục đích trong ICT
-- **Đặt target thực tế** sau khi đã có [[21 - Market Structure Shift]] + displacement: biết chốt lời ở đâu thay vì "đoán đỉnh/đáy".
+- **Đặt target thực tế** sau khi đã có [[21-Market-Structure-Shift]] + displacement: biết chốt lời ở đâu thay vì "đoán đỉnh/đáy".
 - **Dự đoán nơi nhịp expansion kết thúc**: phiên trending thường dừng quanh -2 / -2.5 SD nếu trùng liquidity.
 - **Tạo confluence**: khi một mức SD lined up với liquidity pool / FVG HTF → đó là draw on liquidity xác suất cao.
 
@@ -101,11 +101,11 @@ updated: 2026-07-28
 | **-4 SD** | Cực đoan, hiếm | Chỉ tin khi trùng PD-array/liquidity HTF mạnh |
 
 ### Khi nào giá trị cao? (checklist)
-- [ ] Đã có **manipulation leg rõ** (Judas swing quét [[19 - Liquidity]]) để neo.
-- [ ] Đã có **displacement + [[21 - Market Structure Shift]]** xác nhận hướng.
-- [ ] Một mức SD **trùng** liquidity pool / [[Fair Value Gap]] HTF / biên [[12 - Dealing Range]].
-- [ ] Đồng hướng [[12 - Daily Bias]] và đúng phía [[27 - Premium Discount]].
-- [ ] Nhịp diễn ra trong [[18 - Kill Zones]] (London / NY) — expansion đáng tin hơn.
+- [ ] Đã có **manipulation leg rõ** (Judas swing quét [[19-Liquidity]]) để neo.
+- [ ] Đã có **displacement + [[21-Market-Structure-Shift]]** xác nhận hướng.
+- [ ] Một mức SD **trùng** liquidity pool / [[Fair Value Gap]] HTF / biên [[12-Dealing-Range]].
+- [ ] Đồng hướng [[12-Daily-Bias]] và đúng phía [[27-Premium-Discount]].
+- [ ] Nhịp diễn ra trong [[18-Kill-Zones]] (London / NY) — expansion đáng tin hơn.
 
 ### Khi nào bỏ qua? (checklist)
 - [ ] Không có manipulation leg rõ để neo (giá đi loằng ngoằng, không sweep).
@@ -142,10 +142,10 @@ updated: 2026-07-28
 - [ ] Chiếu đủ bộ mức **-1, -2, -2.5, -3, -4 SD** và đánh dấu rõ.
 
 ### Tăng xác suất (nice-to-have)
-- [ ] Một mức SD trùng [[19 - Liquidity]] pool (BSL/SSL) đã thấy trước.
+- [ ] Một mức SD trùng [[19-Liquidity]] pool (BSL/SSL) đã thấy trước.
 - [ ] Mức SD trùng [[Fair Value Gap]] HTF hoặc Order Block đối nghịch.
-- [ ] Mức SD trùng biên premium/discount của [[12 - Dealing Range]].
-- [ ] Đồng hướng [[12 - Daily Bias]]; expansion trong [[18 - Kill Zones]].
+- [ ] Mức SD trùng biên premium/discount của [[12-Dealing-Range]].
+- [ ] Đồng hướng [[12-Daily-Bias]]; expansion trong [[18-Kill-Zones]].
 
 ### Làm yếu đi (warning)
 - [ ] Neo vào swing không sweep / tùy ý.
@@ -158,7 +158,7 @@ updated: 2026-07-28
 ## 4. Quy trình phân tích đa khung thời gian
 
 ### D1 / H4 — Bias & Narrative
-1. Xác định [[12 - Daily Bias]] và [[12 - Dealing Range]] HTF; giá đang premium hay discount (xem [[27 - Premium Discount]]).
+1. Xác định [[12-Daily-Bias]] và [[12-Dealing-Range]] HTF; giá đang premium hay discount (xem [[27-Premium-Discount]]).
 2. Đánh dấu **draw on liquidity HTF** (BSL/SSL, FVG lớn) — đây là nơi SD nên "hạ cánh".
 3. Ghi nhận manipulation leg cấp HTF nếu có (ví dụ Judas của phiên/ngày) để chiếu SD khung lớn làm target tổng.
 
@@ -168,7 +168,7 @@ updated: 2026-07-28
 3. Chốt mức confluence cao nhất làm **target chính**; các mức khác làm TP từng phần.
 
 ### M5 / M1 — Quản trị lệnh theo SD
-1. Entry vẫn theo mô hình chuẩn ([[20 - Liquidity Sweep]] → MSS → [[Fair Value Gap]]/OB) — **SD không quyết định entry**.
+1. Entry vẫn theo mô hình chuẩn ([[20-Liquidity-Sweep]] → MSS → [[Fair Value Gap]]/OB) — **SD không quyết định entry**.
 2. Đặt **TP từng phần** tại -1 / -2 / -2.5 SD; dời SL về BE sau -1 SD.
 3. Tại mỗi mức SD trùng liquidity, quan sát phản ứng (rejection / chậm lại) để quyết định chốt nốt hay giữ runner.
 
@@ -203,9 +203,9 @@ updated: 2026-07-28
 
 ### Setup hợp lệ (✓) — để DÙNG SD làm target
 - [ ] Có manipulation leg rõ (sweep liquidity) để neo.
-- [ ] Có displacement + [[21 - Market Structure Shift]] xác nhận hướng.
+- [ ] Có displacement + [[21-Market-Structure-Shift]] xác nhận hướng.
 - [ ] Ít nhất một mức SD có **confluence** (liquidity/FVG/PD-array HTF).
-- [ ] Đồng hướng [[12 - Daily Bias]], đúng premium/discount.
+- [ ] Đồng hướng [[12-Daily-Bias]], đúng premium/discount.
 - [ ] Entry độc lập đã hợp lệ (SD chỉ dùng để đặt target/TP).
 
 ### Projection bị vô hiệu (✗)
@@ -335,8 +335,8 @@ Vì hai công cụ đo cùng một kiểu bội số nhưng trên hai đoạn th
 
 ### A. Context (anchor & hướng)
 - [ ] Có manipulation/Judas leg đã **sweep liquidity** để neo.
-- [ ] Có displacement + [[21 - Market Structure Shift]] xác nhận hướng.
-- [ ] [[12 - Daily Bias]] rõ ràng, đúng phía [[27 - Premium Discount]].
+- [ ] Có displacement + [[21-Market-Structure-Shift]] xác nhận hướng.
+- [ ] [[12-Daily-Bias]] rõ ràng, đúng phía [[27-Premium-Discount]].
 - [ ] Đã đánh dấu draw on liquidity HTF (BSL/SSL/FVG).
 
 ### B. Projection & target
@@ -464,13 +464,13 @@ Cách xử lý đã kiểm chứng: **chỉ đo reference leg TRONG một phiên
 > [!success] Nguyên tắc vàng
 > **SD chỉ trả lời "giá đi tới đâu", không bao giờ trả lời "vào lệnh ở đâu."** Toàn bộ giá trị của công cụ này sụp đổ nếu neo sai swing (không sweep) hoặc nếu bạn biến nó thành tín hiệu entry — hai lỗi này gộp lại là nguyên nhân của gần như mọi lệnh thua liên quan đến SD trong journal. Chỉ tin một mức SD khi nó vừa được neo đúng vào manipulation leg, vừa có confluence thật với liquidity/FVG/PD-array.
 
-1. **Không bao giờ dùng SD như tín hiệu entry.** SD là công cụ target/projection — nó cho biết nơi giá có khả năng đi tới, không phải nơi nên vào lệnh. Entry luôn phải đến từ chuỗi sweep → [[21 - Market Structure Shift]] → [[Fair Value Gap]]/OB độc lập với các mức SD. Đặt lệnh limit mù tại một mức SD (như trong "Ví dụ sai" ở mục 6) là lỗi khiến trader bỏ qua toàn bộ xác nhận cấu trúc.
+1. **Không bao giờ dùng SD như tín hiệu entry.** SD là công cụ target/projection — nó cho biết nơi giá có khả năng đi tới, không phải nơi nên vào lệnh. Entry luôn phải đến từ chuỗi sweep → [[21-Market-Structure-Shift]] → [[Fair Value Gap]]/OB độc lập với các mức SD. Đặt lệnh limit mù tại một mức SD (như trong "Ví dụ sai" ở mục 6) là lỗi khiến trader bỏ qua toàn bộ xác nhận cấu trúc.
 
-2. **Luôn neo vào một manipulation leg đã thực sự quét thanh khoản — không bao giờ là một swing tiện tay.** Trước khi vẽ SD, tự hỏi: đoạn A→B này có sweep [[19 - Liquidity]] (BSL/SSL) thật không, hay mình chỉ đang chọn một đoạn để các con số "nhìn đẹp"? Nếu không chắc, chạy phép thử tương tự phép thử sweep dùng trong [[22 - Mitigation Block]] và [[04 - Breaker Block]]: xem body/close có thực sự vượt qua đỉnh/đáy cũ hay chỉ là wick.
+2. **Luôn neo vào một manipulation leg đã thực sự quét thanh khoản — không bao giờ là một swing tiện tay.** Trước khi vẽ SD, tự hỏi: đoạn A→B này có sweep [[19-Liquidity]] (BSL/SSL) thật không, hay mình chỉ đang chọn một đoạn để các con số "nhìn đẹp"? Nếu không chắc, chạy phép thử tương tự phép thử sweep dùng trong [[22-Mitigation-Block]] và [[04-Breaker-Block]]: xem body/close có thực sự vượt qua đỉnh/đáy cũ hay chỉ là wick.
 
 3. **Khớp quy mô anchor với quy mô trade đang cầm** (xem mục "Nâng cao — Chọn đúng manipulation leg" ở mục 5). Trade intraday neo vào Judas leg cấp session; trade giữ 1-2 ngày neo vào Judas cấp ngày; swing đa ngày/tuần neo vào Judas cấp tuần. Ghi trường `anchor_scale` trong journal để không lẫn lộn giữa các quy mô khi review.
 
-4. **Chỉ tin những mức SD có confluence thật — bỏ qua các mức "treo lơ lửng".** Một mức SD đứng một mình giữa khoảng trống giá không có giá trị dự báo cao hơn một con số tròn ngẫu nhiên. Chỉ nâng mức đó lên thành target chính khi nó trùng với một liquidity pool, một [[Fair Value Gap]] đối nghịch, hoặc biên [[12 - Dealing Range]] / [[27 - Premium Discount]] đã đánh dấu từ trước ở khung HTF.
+4. **Chỉ tin những mức SD có confluence thật — bỏ qua các mức "treo lơ lửng".** Một mức SD đứng một mình giữa khoảng trống giá không có giá trị dự báo cao hơn một con số tròn ngẫu nhiên. Chỉ nâng mức đó lên thành target chính khi nó trùng với một liquidity pool, một [[Fair Value Gap]] đối nghịch, hoặc biên [[12-Dealing-Range]] / [[27-Premium-Discount]] đã đánh dấu từ trước ở khung HTF.
 
 5. **Nhận diện liquidity void trước khi phản ứng với tốc độ giá.** Khi giá lướt nhanh bất thường về phía một mức SD xa, kiểm tra xem đoạn phía trước có phải một FVG lớn / vùng trống thanh khoản hay không (xem mục "Nâng cao — SD kết hợp với Liquidity Void"). Di chuyển nhanh qua void là bình thường; đừng chốt lời non chỉ vì giá "chạy nhanh quá". Ngược lại, dừng sớm bất thường khi đi qua vùng dày cấu trúc mới là tín hiệu đáng ngờ.
 

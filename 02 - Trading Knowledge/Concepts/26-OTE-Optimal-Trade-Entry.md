@@ -157,7 +157,7 @@ OTE biến "premium/discount" trừu tượng thành vùng giá cụ thể có t
 > 4. **Stop (ngoài 100%) và target (mức mở rộng/liquidity) ở đâu, R:R bao nhiêu?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
+- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
 - **Draw on liquidity:** pool nào là target — sẽ dùng làm vùng mở rộng/TP của OTE.
 - **Vị trí premium/discount:** OTE Long cần ở discount HTF; OTE Short cần ở premium HTF.
 
@@ -231,7 +231,7 @@ Invalid: đóng nến trên 79–100% (nhịp fail)
 | Đóng nến vượt 100% | **Nhịp fail** | Hủy OTE; có thể đảo hướng |
 
 > [!note]
-> OTE là **một cách định lượng hóa "mua rẻ trong discount / bán đắt trong premium"**. Vì thế nó luôn phải đi cùng [[27 - Premium Discount]]: vùng 62–79% của một nhịp Long gần như luôn nằm ở discount, và đó chính là lý do nó cho R:R tốt.
+> OTE là **một cách định lượng hóa "mua rẻ trong discount / bán đắt trong premium"**. Vì thế nó luôn phải đi cùng [[27-Premium-Discount]]: vùng 62–79% của một nhịp Long gần như luôn nằm ở discount, và đó chính là lý do nó cho R:R tốt.
 
 ### Nâng cao — Cuộc tranh luận 61.8 vs 70.5 vs 79: mức nào "ăn" hơn theo thị trường/phiên
 
@@ -287,7 +287,7 @@ Khi làm đúng, bạn đang **chồng hai lớp Fibonacci** lên nhau: giá v�
 
 ### Nâng cao — Overshoot bằng wick vs đóng nến qua 79-100%: phân biệt nhịp còn sống với nhịp đã fail
 
-Section 5 đã quy định: "giá đóng nến vượt 100% → nhịp fail, hủy OTE". Nhưng trên chart thực tế, ranh giới giữa "giá đâm sâu vào vùng 79–100%" và "nhịp đã thật sự fail" hay bị đọc sai vì không phân biệt **wick** với **body close** — đúng nguyên tắc kỷ luật mà [[17 - Inverse Fair Value Gap - iFVG]] áp dụng cho việc xác nhận violation của FVG.
+Section 5 đã quy định: "giá đóng nến vượt 100% → nhịp fail, hủy OTE". Nhưng trên chart thực tế, ranh giới giữa "giá đâm sâu vào vùng 79–100%" và "nhịp đã thật sự fail" hay bị đọc sai vì không phân biệt **wick** với **body close** — đúng nguyên tắc kỷ luật mà [[17-Inverse-Fair-Value-Gap-iFVG]] áp dụng cho việc xác nhận violation của FVG.
 
 Áp dụng cùng logic CLOSE vs WICK vào OTE:
 
@@ -360,7 +360,7 @@ HTF Bearish Bias
 ```
 
 > [!note]
-> OTE là "khung định lượng" để execution các model khác: sau khi [[20 - Liquidity Sweep]] + [[21 - Market Structure Shift]] cho narrative đảo chiều, OTE cho biết **vùng giá chính xác** để vào với R:R tốt nhất, thường trùng một [[Fair Value Gap]] hoặc [[Order Block]].
+> OTE là "khung định lượng" để execution các model khác: sau khi [[20-Liquidity-Sweep]] + [[21-Market-Structure-Shift]] cho narrative đảo chiều, OTE cho biết **vùng giá chính xác** để vào với R:R tốt nhất, thường trùng một [[Fair Value Gap]] hoặc [[Order Block]].
 
 ---
 
@@ -497,11 +497,11 @@ HTF Bearish Bias
 > [!success] Nguyên tắc vàng
 > **OTE không phải là con số Fibonacci — nó là một VÙNG CHỜ có điều kiện: chỉ kéo trên nhịp displacement đã phá cấu trúc đúng hướng bias, chỉ tin khi có confluence (FVG/OB + sweep) bên trong, và chỉ hủy khi ĐÓNG NẾN vượt 100% chứ không phải mỗi lần thấy một cái bóng nến chọc qua.** Phần lớn thất bại của OTE không đến từ Fibonacci sai, mà từ việc bỏ qua ba điều kiện đi kèm này.
 
-1. **Chỉ kéo fib trên một nhịp displacement đã thực sự phá cấu trúc (BOS/MSS).** Đây là điều kiện tiên quyết đứng trước mọi con số Fibonacci — một vùng 62–79% kéo trên nhịp ngẫu nhiên không mang ý nghĩa gì, dù trông "đẹp" trên chart. Trước khi kéo fib, luôn tự hỏi: nhịp này có phá swing high/low nào không, và có đồng hướng [[12 - Daily Bias]] không?
+1. **Chỉ kéo fib trên một nhịp displacement đã thực sự phá cấu trúc (BOS/MSS).** Đây là điều kiện tiên quyết đứng trước mọi con số Fibonacci — một vùng 62–79% kéo trên nhịp ngẫu nhiên không mang ý nghĩa gì, dù trông "đẹp" trên chart. Trước khi kéo fib, luôn tự hỏi: nhịp này có phá swing high/low nào không, và có đồng hướng [[12-Daily-Bias]] không?
 
 2. **Không bao giờ vào ở 38–50%.** Đây là retrace nông (shallow retrace), không phải OTE — vùng equilibrium (50%) chỉ là ranh giới premium/discount, không phải vùng entry. Vào ở đây thường cho R:R kém và dễ bị cuốn vào nhịp fail sớm hơn dự kiến. Nếu giá chỉ về tới 50% rồi đảo, đó là bằng chứng lực đẩy còn mạnh — không phải cơ hội OTE bị bỏ lỡ để đuổi theo.
 
-3. **Yêu cầu confluence (FVG/OB + sweep) trước khi tin tưởng tuyệt đối vào con số 70.5%.** Một vùng OTE "trơ" — chỉ có Fibonacci, không có FVG/OB nào chồng vào, không đến sau một liquidity sweep — là một entry yếu, bất kể nó có nằm chính xác ở 70.5% hay không. Ưu tiên tuyệt đối cho những vùng OTE nơi 62–79% trùng với một [[Fair Value Gap]] hoặc [[25 - OB - Order Block|Order Block]], đến ngay sau một [[20 - Liquidity Sweep]].
+3. **Yêu cầu confluence (FVG/OB + sweep) trước khi tin tưởng tuyệt đối vào con số 70.5%.** Một vùng OTE "trơ" — chỉ có Fibonacci, không có FVG/OB nào chồng vào, không đến sau một liquidity sweep — là một entry yếu, bất kể nó có nằm chính xác ở 70.5% hay không. Ưu tiên tuyệt đối cho những vùng OTE nơi 62–79% trùng với một [[Fair Value Gap]] hoặc [[25-OB-Order-Block|Order Block]], đến ngay sau một [[20-Liquidity-Sweep]].
 
 4. **Log `ote_entry_level` và `ote_confluence` cho mọi lệnh, và review riêng theo từng thị trường sau 30–50 mẫu.** Đừng tin một con số sweet-spot chung chung — NQ1/NAS100 (biến động mạnh, trending) và EURUSD/XAUUSD (đôi khi choppy hơn) có thể có sub-level tối ưu khác nhau (xem mục "Nâng cao — Cuộc tranh luận 61.8 vs 70.5 vs 79"). Chỉ dữ liệu riêng của bạn, tách theo `symbol`, mới cho câu trả lời đúng cho phong cách và thị trường bạn trade.
 
@@ -509,7 +509,7 @@ HTF Bearish Bias
 
 6. **Phân biệt overshoot bằng wick với đóng nến qua 100% trước khi vội hủy setup.** Một cái bóng nến chọc qua 79% hoặc thậm chí qua 100% rồi đóng nến quay lại trong vùng KHÔNG tự động làm nhịp fail — đó có thể chỉ là một cú quét thanh khoản sâu trong chính nhịp retrace. Chỉ khi giá **đóng BODY** hẳn ngoài mốc 100% thì nhịp mới thực sự fail và OTE phải bị hủy ngay, không "chờ giá quay lại".
 
-7. **Luôn giữ OTE ở vị trí phụ thuộc [[12 - Daily Bias]], không bao giờ dùng nó để fade xu hướng.** OTE là một execution model — nó cho biết VÙNG GIÁ để vào lệnh theo một hướng đã được xác định trước bởi bias và nhịp displacement, không phải một tín hiệu độc lập để đoán đảo chiều. Long tại vùng OTE giữa một downtrend rõ ràng (khi nhịp kéo fib không hề phá cấu trúc theo hướng bullish) là bắt dao rơi, không phải OTE.
+7. **Luôn giữ OTE ở vị trí phụ thuộc [[12-Daily-Bias]], không bao giờ dùng nó để fade xu hướng.** OTE là một execution model — nó cho biết VÙNG GIÁ để vào lệnh theo một hướng đã được xác định trước bởi bias và nhịp displacement, không phải một tín hiệu độc lập để đoán đảo chiều. Long tại vùng OTE giữa một downtrend rõ ràng (khi nhịp kéo fib không hề phá cấu trúc theo hướng bullish) là bắt dao rơi, không phải OTE.
 
 8. **Đặt stop nghiêm ngặt ngoài mốc 100% hoặc ngoài rìa của array confluence, không bao giờ đặt bên trong chính vùng OTE.** Stop bên trong vùng 62–79% gần như chắc chắn bị quét bởi nhiễu giá bình thường trước khi nhịp đi đúng hướng — đó là lỗi "stop quá sát" đã liệt kê trong bảng lỗi thường gặp. Stop hợp lý nằm ngoài đầu nhịp (100%) hoặc ngoài rìa xa của FVG/OB đang tạo confluence cho vùng, tùy điểm nào rộng hơn nhưng vẫn hợp lý với kế hoạch R:R.
 
@@ -532,7 +532,7 @@ HTF Bearish Bias
 ![[OTE-Advanced-Anchor-Wick-vs-Body.svg|720]]
 
 **Why — cả hai cách neo đều có logic riêng:**
-- **Neo wick:** wick sweep là nơi lệnh thật ĐÃ khớp (stop bị quét = có giao dịch tại đó, xem [[28 - Rejection Block]]). Đáy wick là extreme thật của leg, và stop của bạn kiểu gì cũng phải nằm ngoài nó. Neo wick giữ cho thang fib và stop nhất quán trên cùng một khung tham chiếu.
+- **Neo wick:** wick sweep là nơi lệnh thật ĐÃ khớp (stop bị quét = có giao dịch tại đó, xem [[28-Rejection-Block]]). Đáy wick là extreme thật của leg, và stop của bạn kiểu gì cũng phải nằm ngoài nó. Neo wick giữ cho thang fib và stop nhất quán trên cùng một khung tham chiếu.
 - **Neo body:** body là vùng đấu giá được *chấp nhận*; wick sweep là sự kiện chớp nhoáng một lần. Một wick dài bất thường (news, thin liquidity) kéo cả thang fib trượt sâu xuống theo một sự kiện không lặp lại — vùng OTE khi đó bị "neo" vào nhiễu.
 
 **Cách xử lý hệ thống (loại bỏ độ tùy tiện thay vì tranh cãi):**
@@ -551,15 +551,15 @@ Trong trend mạnh (NQ trong NY AM có news xuôi chiều), giá thường chỉ
 Retrace sâu tồn tại để position builders gom đủ hàng và quét inducement. Nhưng khi dòng lệnh một chiều đủ mạnh (real money + momentum cùng phía), desk không CẦN chờ giá rẻ — nỗi sợ hụt vị thế lớn hơn nỗi tiếc vài tick, họ mua ngay ở retrace nông và chấp nhận trung bình giá cao. **Việc giá liên tục không về OTE chính là một chỉ báo sức mạnh trend** — thông tin này đáng giá hơn lệnh bạn "lỡ": nó bảo bạn rằng mọi setup NGƯỢC trend hôm đó đều là tự sát, và setup THUẬN trend đáng được nới target.
 
 **Cách xử lý hệ thống:**
-- **Không bao giờ hạ chuẩn xuống 38–50%.** Vào nông không phải "phiên bản linh hoạt của OTE" — nó là một hệ thống khác với stop khác, R:R khác, mà bạn chưa backtest. FOMO mặc đồng phục Fibonacci vẫn là FOMO ([[06 - Mistake Database/04 - Mistake - FOMO Entry|Mistake 04]]).
-- **Re-anchor:** mỗi BOS mới sinh một leg mới → kéo fib mới, OTE mới gần giá hơn, narrative còn nguyên. Trend càng mạnh càng nhiều leg — cơ hội không mất đi, nó chỉ dời lên. Thang fib cũ **xóa ngay** sau BOS mới (đúng logic [[37 - Re-mapping Dealing Range sau Displacement]]: vùng của range cũ không còn ai bảo vệ).
-- Kỷ luật đo lường: đếm số lần "OTE không được chạm" mỗi tuần trong backtest. Nếu >60% setup trên một sản phẩm không bao giờ về OTE, đó là bằng chứng thống kê để xây thêm một entry model tiếp diễn riêng (ví dụ [[35 - Aggressive Displacement Entry]]) — chứ không phải để phá chuẩn của model này.
+- **Không bao giờ hạ chuẩn xuống 38–50%.** Vào nông không phải "phiên bản linh hoạt của OTE" — nó là một hệ thống khác với stop khác, R:R khác, mà bạn chưa backtest. FOMO mặc đồng phục Fibonacci vẫn là FOMO ([[04-Mistake-FOMO-Entry|Mistake 04]]).
+- **Re-anchor:** mỗi BOS mới sinh một leg mới → kéo fib mới, OTE mới gần giá hơn, narrative còn nguyên. Trend càng mạnh càng nhiều leg — cơ hội không mất đi, nó chỉ dời lên. Thang fib cũ **xóa ngay** sau BOS mới (đúng logic [[37-Re-mapping-Dealing-Range-sau-Displacement]]: vùng của range cũ không còn ai bảo vệ).
+- Kỷ luật đo lường: đếm số lần "OTE không được chạm" mỗi tuần trong backtest. Nếu >60% setup trên một sản phẩm không bao giờ về OTE, đó là bằng chứng thống kê để xây thêm một entry model tiếp diễn riêng (ví dụ [[35-Aggressive-Displacement-Entry]]) — chứ không phải để phá chuẩn của model này.
 
 ### 15.3 Giá chạm OTE ngoài kill zone — cùng một mức, khác giờ, khác xác suất
 
 Kịch bản lặp lại rất nhiều trong backtest EURUSD: displacement NY AM tạo leg đẹp, nhưng giá chỉ **bò về vùng OTE lúc 3–4h sáng giờ New York** (phiên Á). Chạm mức, đúng vùng, đúng confluence — rồi lình xình xuyên qua như không có gì.
 
-**Why:** phản ứng tại OTE cần **người thực thi** — desk đã xây vị thế ở leg gốc phải đang hoạt động để bồi thêm khi giá về giá vốn của họ. Thuật toán delivery của các tổ chức lớn tập trung quanh session opens và [[40 - Macro Times]]. Giá trôi vào OTE trong phiên Á giống như khách đến cửa hàng lúc 3h sáng: mức giá đúng, nhưng không có ai đứng quầy. Tệ hơn, cú "thẩm thấu" chậm qua vùng trong giờ vắng sẽ khớp dần hết lệnh chờ — đến khi kill zone mở, vùng đã rỗng.
+**Why:** phản ứng tại OTE cần **người thực thi** — desk đã xây vị thế ở leg gốc phải đang hoạt động để bồi thêm khi giá về giá vốn của họ. Thuật toán delivery của các tổ chức lớn tập trung quanh session opens và [[40-Macro-Times]]. Giá trôi vào OTE trong phiên Á giống như khách đến cửa hàng lúc 3h sáng: mức giá đúng, nhưng không có ai đứng quầy. Tệ hơn, cú "thẩm thấu" chậm qua vùng trong giờ vắng sẽ khớp dần hết lệnh chờ — đến khi kill zone mở, vùng đã rỗng.
 
 **Cách xử lý:**
 - OTE chạm lần đầu **trong kill zone** (London Open, NY AM) → được phép dùng limit tại vùng đồng thuận như bình thường.
@@ -733,7 +733,7 @@ Kịch bản lặp lại rất nhiều trong backtest EURUSD: displacement NY AM
 
 **Cách nhận diện sớm:** kiểm tra xem nhịp impulse dùng để kéo fib có "băng qua" khoảng thời gian thị trường đóng cửa (tối thứ Sáu tới sáng thứ Hai theo giờ giao dịch của instrument) hay không.
 
-**Cách xử lý:** nếu displacement chính nằm gọn trong một phiên giao dịch liên tục, chỉ kéo fib cho phần đó; coi gap cuối tuần là một sự kiện riêng biệt ([[24 - New Week Opening Gap]]) có logic phân tích khác, không gộp chung vào một nhịp Fibonacci duy nhất.
+**Cách xử lý:** nếu displacement chính nằm gọn trong một phiên giao dịch liên tục, chỉ kéo fib cho phần đó; coi gap cuối tuần là một sự kiện riêng biệt ([[24-New-Week-Opening-Gap]]) có logic phân tích khác, không gộp chung vào một nhịp Fibonacci duy nhất.
 
 ---
 

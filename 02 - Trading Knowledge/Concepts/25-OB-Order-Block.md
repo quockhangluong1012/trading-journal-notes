@@ -130,7 +130,7 @@ OB là một trong những PD Array được dùng nhiều nhất để xác đ�
 ### Dấu hiệu chính
 1. **Nến ngược hướng cuối cùng:** với bullish OB là nến giảm (down-close) cuối trước đợt tăng; với bearish OB là nến tăng (up-close) cuối trước đợt giảm.
 2. **Displacement ngay sau OB:** nến/cụm nến thân lớn, có urgency, đóng quyết đoán, đẩy giá đi xa.
-3. **Phá cấu trúc:** đợt displacement đó tạo BOS ([[Break of Structure]]) hoặc MSS ([[21 - Market Structure Shift]]).
+3. **Phá cấu trúc:** đợt displacement đó tạo BOS ([[Break of Structure]]) hoặc MSS ([[21-Market-Structure-Shift]]).
 4. **Imbalance để lại:** displacement thường để lại FVG ([[Fair Value Gap]]) phía sau — dấu hiệu mạnh OB hợp lệ.
 5. **Liquidity sweep trước OB:** lý tưởng OB hình thành ngay sau khi giá quét một liquidity pool (đỉnh/đáy, equal highs/lows).
 
@@ -183,7 +183,7 @@ OB là một trong những PD Array được dùng nhiều nhất để xác đ�
 > 5. **Điều gì chứng minh OB đã fail (chuyển thành breaker)?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** Bullish / Bearish / Neutral (theo [[12 - Daily Bias]]).
+- **Bias hiện tại:** Bullish / Bearish / Neutral (theo [[12-Daily-Bias]]).
 - **HTF OB quan trọng:** đánh dấu OB D1/H4 còn unmitigated, gắn với displacement và BOS rõ.
 - **Location của OB:** OB nằm ở premium hay discount của HTF dealing range?
 - **Draw on liquidity:** OB đồng hướng với liquidity target chính chưa?
@@ -389,10 +389,10 @@ OB không đứng một mình. ICT có cả một **họ "block"**, và đọc n
 |---|---|---|---|
 | **Order Block** | Nến/cụm nến ngược hướng cuối trước displacement | — (chuẩn gốc) | POI entry sau retrace |
 | **[[Breaker Block]]** | OB đã **fail** (đóng thân xuyên + acceptance) rồi flip vai trò | OB còn vai trò vs block đã đổi phe | Entry theo hướng MỚI khi giá retest từ phía ngược |
-| **[[22 - Mitigation Block]]** | Giống breaker nhưng swing tạo nó **không sweep liquidity** (failure swing — không lấy được đỉnh/đáy cũ) | Breaker có sweep, mitigation không | Yếu hơn breaker; cần thêm confluence |
+| **[[22-Mitigation-Block]]** | Giống breaker nhưng swing tạo nó **không sweep liquidity** (failure swing — không lấy được đỉnh/đáy cũ) | Breaker có sweep, mitigation không | Yếu hơn breaker; cần thêm confluence |
 | **Propulsion Block** | Nến test/respect một OB cũ rồi tự tạo displacement mới — "OB sinh trong OB" | Được "tiếp lửa" bởi OB gốc | Momentum mạnh hơn OB thường; entry chặt, stop gọn |
-| **[[28 - Rejection Block]]** | Vùng **wick dài** tại đỉnh/đáy sau khi thân nến bị xuyên | Dùng râu nến làm zone thay vì thân | Bắt reversal tại extreme sau sweep |
-| **[[34 - Vacuum Block]]** | Gap sự kiện (liquidity vacuum) hai bên không giao dịch | Không phải nến ngược hướng, là khoảng trống | Mức tham chiếu rebalance |
+| **[[28-Rejection-Block]]** | Vùng **wick dài** tại đỉnh/đáy sau khi thân nến bị xuyên | Dùng râu nến làm zone thay vì thân | Bắt reversal tại extreme sau sweep |
+| **[[34-Vacuum-Block]]** | Gap sự kiện (liquidity vacuum) hai bên không giao dịch | Không phải nến ngược hướng, là khoảng trống | Mức tham chiếu rebalance |
 | **Reclaimed OB** | OB bị vi phạm **ngắn hạn** (quét qua) rồi được giành lại ngay bằng displacement | Khác breaker: không có acceptance bền | OB "tái sinh" — thường rất mạnh vì đã sweep sâu thêm liquidity |
 
 > [!important] Câu hỏi phân loại bắt buộc
@@ -588,7 +588,7 @@ Một displacement leg dài (đặc biệt trên NQ trong NY AM) hiếm khi ch�
 **Why — cơ chế đằng sau, ba tầng:**
 
 1. **Tầng cơ học (position building):** một vị thế thể chế lớn không thể khớp toàn bộ ở một điểm — nó cần **đối ứng** (counterparty volume). Nơi có đối ứng dày nhất chính là điểm gốc leg: tại đó vừa có stop bị quét (sweep) vừa có breakout trader vào ngược hướng — cả hai đều là seller cho một buyer lớn (trong ví dụ Long). OB giữa leg chỉ là điểm **bồi thêm** (re-accumulation) với volume mỏng hơn nhiều. Vị thế thật nằm ở gốc → mức giá "được bảo vệ" là gốc, không phải trạm dừng.
-2. **Tầng phản xạ đám đông (reflexivity):** SMC/ICT giờ đã phổ biến — mọi retail trader đều đánh dấu OB gần nhất vì nó "mới, dễ thấy". Hệ quả: limit buy chất đống ở OB nông và **stop của chính họ chất đống ngay dưới đó**. Với thuật toán delivery, cụm stop này là một pool thanh khoản mới — và cách rẻ nhất để lấy nó là đẩy giá xuyên OB nông. Chính hành vi đánh dấu OB tạo ra lý do để OB đó bị xuyên (xem [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]).
+2. **Tầng phản xạ đám đông (reflexivity):** SMC/ICT giờ đã phổ biến — mọi retail trader đều đánh dấu OB gần nhất vì nó "mới, dễ thấy". Hệ quả: limit buy chất đống ở OB nông và **stop của chính họ chất đống ngay dưới đó**. Với thuật toán delivery, cụm stop này là một pool thanh khoản mới — và cách rẻ nhất để lấy nó là đẩy giá xuyên OB nông. Chính hành vi đánh dấu OB tạo ra lý do để OB đó bị xuyên (xem [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]).
 3. **Tầng giá trị (repricing to fair value):** displacement càng mạnh thì giá càng bỏ xa vùng giá trị của leg. Thuật toán có xu hướng trả giá về **vùng discount sâu của chính leg đó** (OTE 62–79%) trước khi tiếp tục — và về mặt hình học, OB gốc gần như luôn nằm trong vùng này, còn OB nông thì nằm ở retrace 30–50% (nông, chưa đủ "rẻ").
 
 **Quy tắc rút ra:**
@@ -609,15 +609,15 @@ Cùng một hình dạng, hai câu chuyện ngược nhau — và OB chỉ có e
 - **Không đánh dấu OB mới** từ cụm nến trong ±3 phút quanh high-impact news. Nếu muốn dùng, chờ giá **accept** (đóng vài nến giữ hướng sau khi spread bình thường lại) rồi mới coi vùng đó là POI — lúc này mới có bằng chứng lệnh thật đứng sau move.
 - **OB hình thành TRƯỚC news bị xuyên trong news** không nói lên điều gì về cấu trúc: đó là repricing cưỡng bức trong điều kiện không thanh khoản, không phải "OB fail vì phe cũ mất kiểm soát". Đừng vội flip nó thành breaker; chờ xem post-news giá đối xử với vùng đó thế nào.
 - Với backtest: gắn `news_within_3min: Yes/No` cho mọi lệnh OB. Nếu không có lịch news lịch sử, tối thiểu loại các nến có range gấp >3 lần ATR(14) M5 khỏi việc "sản xuất" OB mới.
-- Stop-out bởi wick news khi chart CFD cho thấy vùng vẫn giữ: nhớ rằng **fill thực tế xảy ra trên spread giãn**, không phải trên đường mid-price của chart. Đây là loại thua không tái hiện được trong backtest chart-only — một lý do để tránh cầm lệnh qua news ngay từ đầu (liên hệ [[36 - Forex CFD Basics ( Pip, Lot, Spread, Swap, Leverage, Margin )]]).
+- Stop-out bởi wick news khi chart CFD cho thấy vùng vẫn giữ: nhớ rằng **fill thực tế xảy ra trên spread giãn**, không phải trên đường mid-price của chart. Đây là loại thua không tái hiện được trong backtest chart-only — một lý do để tránh cầm lệnh qua news ngay từ đầu (liên hệ [[36-Forex-CFD-Basics-Pip-Lot-Spread-Swap-Leverage-Margin]]).
 
 ### 14.3 Cùng một OB, khác giờ chạm — khác hẳn kết quả
 
 Một OB H1 hợp lệ được giá chạm lần đầu lúc 21:00 (NY AM kill zone) và cùng OB đó bị chạm lúc 09:00 sáng giờ VN (giữa phiên Á) là **hai sự kiện xác suất khác nhau**, dù trên chart tĩnh chúng là một.
 
-**Why:** phản ứng tại POI không phải phép màu của vùng giá — nó cần **người thực thi**: thuật toán delivery của các desk lớn hoạt động quanh session opens và [[40 - Macro Times]], còn phiên Á với index/major pairs chủ yếu là drift định vị. Giá "bò" vào OB trong phiên Á thường không có displacement phía sau để bật — nó nằm đó, thẩm thấu qua vùng từng chút một (mỗi nến đóng sâu hơn một chút = lệnh trong block đang bị hấp thụ dần, đúng cảnh báo "thời gian trong block" ở mục 7.4). Đến khi kill zone mở, vùng đã mất phần lớn lệnh chưa khớp.
+**Why:** phản ứng tại POI không phải phép màu của vùng giá — nó cần **người thực thi**: thuật toán delivery của các desk lớn hoạt động quanh session opens và [[40-Macro-Times]], còn phiên Á với index/major pairs chủ yếu là drift định vị. Giá "bò" vào OB trong phiên Á thường không có displacement phía sau để bật — nó nằm đó, thẩm thấu qua vùng từng chút một (mỗi nến đóng sâu hơn một chút = lệnh trong block đang bị hấp thụ dần, đúng cảnh báo "thời gian trong block" ở mục 7.4). Đến khi kill zone mở, vùng đã mất phần lớn lệnh chưa khớp.
 
-- Ưu tiên OB được chạm **lần đầu bên trong kill zone** ([[18 - Kill Zones]]), lý tưởng trùng macro time.
+- Ưu tiên OB được chạm **lần đầu bên trong kill zone** ([[18-Kill-Zones]]), lý tưởng trùng macro time.
 - Giá đã "ngâm" trong OB suốt phiên Á → hạ cấp setup dù mọi thứ khác còn nguyên; đòi hỏi LTF MSS mới trong kill zone thay vì tin phản ứng limit.
 - Đây chính xác là một mắt xích trong lệnh thua thật 07/05/2021 dưới đây — entry trong phiên Á, `in_macro_time: No`.
 
@@ -656,15 +656,15 @@ Xem chi tiết cơ chế tại mục 14.2. Bổ sung góc thực chiến quản 
 
 ### 14.7 Breaker retest lần 2-3 — OB "hồi sinh giả" khi trader nhầm role
 
-Một hiện tượng gây nhiễu thống kê nếu không tách bạch: sau khi một OB fail và trở thành breaker (xem [[04 - Breaker Block]]), giá đôi khi quay lại đúng vùng đó lần nữa nhưng đi theo hướng NGƯỢC với breaker (tức là cùng hướng OB gốc). Trader vội mừng "OB sống lại" — nhưng thực chất đây gần như luôn là nhiễu ngắn hạn (retest thất bại của breaker, không phải OB phục sinh) vì đã có acceptance ngoài vùng.
+Một hiện tượng gây nhiễu thống kê nếu không tách bạch: sau khi một OB fail và trở thành breaker (xem [[04-Breaker-Block]]), giá đôi khi quay lại đúng vùng đó lần nữa nhưng đi theo hướng NGƯỢC với breaker (tức là cùng hướng OB gốc). Trader vội mừng "OB sống lại" — nhưng thực chất đây gần như luôn là nhiễu ngắn hạn (retest thất bại của breaker, không phải OB phục sinh) vì đã có acceptance ngoài vùng.
 
-**Cách phân định:** một OB đã bị đóng thân + acceptance thì **không bao giờ quay lại vai trò OB cũ** trên cùng khung thời gian đó nữa. Nếu giá phản ứng có lợi cho hướng OB gốc tại vùng đó, coi đó là "failed breaker → tín hiệu tiếp diễn hướng OB gốc" (xem mục Nâng cao trong [[04 - Breaker Block]]), không phải "OB sống lại". Sự khác biệt không chỉ là ngữ nghĩa: risk management khác nhau — failed breaker đòi hỏi xác nhận acceptance mới trước khi vào, còn "OB sống lại" (sai) khiến trader vào ngay khi vừa chạm, không chờ xác nhận.
+**Cách phân định:** một OB đã bị đóng thân + acceptance thì **không bao giờ quay lại vai trò OB cũ** trên cùng khung thời gian đó nữa. Nếu giá phản ứng có lợi cho hướng OB gốc tại vùng đó, coi đó là "failed breaker → tín hiệu tiếp diễn hướng OB gốc" (xem mục Nâng cao trong [[04-Breaker-Block]]), không phải "OB sống lại". Sự khác biệt không chỉ là ngữ nghĩa: risk management khác nhau — failed breaker đòi hỏi xác nhận acceptance mới trước khi vào, còn "OB sống lại" (sai) khiến trader vào ngay khi vừa chạm, không chờ xác nhận.
 
 ### 14.8 Mitigation Block trên thị trường trending mạnh — OB có còn ý nghĩa đảo chiều?
 
 Trong một trend một chiều mạnh (ví dụ NQ chạy suốt phiên NY không hồi về OTE), phần lớn OB được vẽ theo lối "đảo chiều" sẽ không bao giờ được test — giá không hồi đủ sâu. Đây không phải OB "sai", mà là OB đúng nhưng **không đúng bối cảnh dùng để đảo chiều**.
 
-**Cách xử lý:** trong regime trending mạnh (ATR(14) H1 giãn rộng, các đợt pullback ngày càng nông hơn theo thời gian), hạ kỳ vọng về OB lớn (H4/D1) làm POI đảo chiều — chúng thường bị bỏ qua hoàn toàn khi trend chưa cạn lực. Thay vào đó, dùng các OB **nhỏ, nội bộ (internal)** hình thành ngay trong từng leg pullback nhỏ để entry tiếp diễn — về bản chất đây chính là Mitigation Block tiếp diễn (xem [[22 - Mitigation Block]]) nhiều hơn là OB đảo chiều. Nhầm lẫn ở đây (chờ OB lớn "bao giờ mới được test" trong khi trend vẫn chạy) là nguyên nhân phổ biến khiến trader đứng ngoài một trend dài mà không có lệnh nào.
+**Cách xử lý:** trong regime trending mạnh (ATR(14) H1 giãn rộng, các đợt pullback ngày càng nông hơn theo thời gian), hạ kỳ vọng về OB lớn (H4/D1) làm POI đảo chiều — chúng thường bị bỏ qua hoàn toàn khi trend chưa cạn lực. Thay vào đó, dùng các OB **nhỏ, nội bộ (internal)** hình thành ngay trong từng leg pullback nhỏ để entry tiếp diễn — về bản chất đây chính là Mitigation Block tiếp diễn (xem [[22-Mitigation-Block]]) nhiều hơn là OB đảo chiều. Nhầm lẫn ở đây (chờ OB lớn "bao giờ mới được test" trong khi trend vẫn chạy) là nguyên nhân phổ biến khiến trader đứng ngoài một trend dài mà không có lệnh nào.
 
 
 ---
@@ -687,18 +687,18 @@ Trong một trend một chiều mạnh (ví dụ NQ chạy suốt phiên NY khô
 
 **Chuỗi reasoning — nơi hệ thống gãy (những gì đã sai):**
 1. **Bước ② Draw:** câu hỏi "giá đang bị hút về đâu?" chưa được trả lời trung thực. Phía TRÊN vùng OB còn nguyên một pool buy-side liquidity external chưa quét. Nghĩa là draw khả dĩ nhất của giá tại thời điểm đó là **đi LÊN lấy pool đó** — ngược với lệnh short. `step2_draw_ok: No`.
-2. **Bước ③ Sweep:** chỉ mới có internal sweep (một swing nhỏ trong range bị quét) — chưa có external sweep làm nền cho đảo chiều thật. `sweep_type: Internal`, `step3_sweep_ok: No`. Theo [[43 - Liquidity Scale Alignment (Sweep cùng khung MSS-FVG, HTF là Target)|Liquidity Scale Alignment]], sweep internal chỉ đủ nhiên liệu cho một nhịp internal — không đủ cho một cú short 3.39R hướng về external.
+2. **Bước ③ Sweep:** chỉ mới có internal sweep (một swing nhỏ trong range bị quét) — chưa có external sweep làm nền cho đảo chiều thật. `sweep_type: Internal`, `step3_sweep_ok: No`. Theo [[43-Liquidity-Scale-Alignment-Sweep-cung-khung-MSS-FVG-HTF-la-Target|Liquidity Scale Alignment]], sweep internal chỉ đủ nhiên liệu cho một nhịp internal — không đủ cho một cú short 3.39R hướng về external.
 3. **Bước ④ Displacement:** score 1 — yếu. Một MSS "cho có" sau internal sweep, không phải bằng chứng chuyển delivery.
 4. **Bối cảnh thời gian:** phiên Á, `in_macro_time: No` — đúng edge case 14.3: không có dòng lệnh nào đủ dày để bảo vệ OB tại thời điểm chạm.
 
 **Why — bài học cơ chế, không phải bài học cảm tính:**
-Giá di chuyển **từ pool thanh khoản này sang pool thanh khoản kia** ([[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]). Khi bạn short tại một OB premium mà ngay trên đầu còn một pool BSL external chưa lấy, bạn không đứng cùng phía với thuật toán — bạn đứng **giữa giá và điểm đến của nó**. OB của bạn khi ấy không phải "vùng smart money bảo vệ" mà là chướng ngại tiện tay: giá xuyên qua nó, khớp buy stops của những người short giống bạn (chính stop của bạn là một phần nhiên liệu), lấy pool BSL, **rồi mới giảm thật** — đúng hướng bạn nghĩ, chỉ là sau khi bạn đã bị loại.
+Giá di chuyển **từ pool thanh khoản này sang pool thanh khoản kia** ([[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]). Khi bạn short tại một OB premium mà ngay trên đầu còn một pool BSL external chưa lấy, bạn không đứng cùng phía với thuật toán — bạn đứng **giữa giá và điểm đến của nó**. OB của bạn khi ấy không phải "vùng smart money bảo vệ" mà là chướng ngại tiện tay: giá xuyên qua nó, khớp buy stops của những người short giống bạn (chính stop của bạn là một phần nhiên liệu), lấy pool BSL, **rồi mới giảm thật** — đúng hướng bạn nghĩ, chỉ là sau khi bạn đã bị loại.
 
 Điểm cần khắc sâu: hướng đi cuối cùng của giá **đúng** với bias. Lệnh vẫn thua. Đây là bằng chứng sạch nhất rằng **đúng hướng không cứu được sai thứ tự thanh khoản** — và vì sao checklist phải chạy theo đúng trình tự ①→⑦, không được nhảy cóc từ ① (bias đúng) sang ⑤ (POI đẹp).
 
 **Quy tắc đã sinh ra từ họ lỗi này (đối chiếu vault):**
-- [[06 - Mistake Database/13 - Mistake - Trading Into Unswept Liquidity|Mistake 13 — Trading Into Unswept Liquidity]]: không short dưới pool BSL chưa quét / không long trên pool SSL chưa quét.
-- [[06 - Mistake Database/02 - Mistake - Enter before liquidity sweep|Mistake 02 — Enter before liquidity sweep]]: internal sweep không thay thế được external sweep khi target là external.
+- [[13-Mistake-Trading-Into-Unswept-Liquidity|Mistake 13 — Trading Into Unswept Liquidity]]: không short dưới pool BSL chưa quét / không long trên pool SSL chưa quét.
+- [[02-Mistake-Enter-before-liquidity-sweep|Mistake 02 — Enter before liquidity sweep]]: internal sweep không thay thế được external sweep khi target là external.
 - **Draw gate:** trước khi nhìn bất kỳ OB nào, viết ra draw hiện tại bằng một câu. Nếu OB nằm ngược đường tới draw → không trade, dù OB đẹp đến đâu.
 
 ### 15.2 Case Study — NQ Long thứ Năm 05/03, NY AM: OB tự-sweep tại true origin, +4.1R (thắng đúng sách)

@@ -16,8 +16,8 @@ pnl: 180
 r_multiple:
 risk_percent: 5%
 mistakes:
-  - "[[05 - Mistake - Not enough RR]]"
-  - "[[07 - Mistake - Risk more than 0.5% total account]]"
+  - "[[05-Mistake-Not-enough-RR]]"
+  - "[[07-Mistake-Risk-more-than-0.5-total-account]]"
 tags:
 planned_rr: 0.6
 da_verdict: BROKEN

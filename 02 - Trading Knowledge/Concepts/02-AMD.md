@@ -59,7 +59,7 @@ AMD (Accumulation – Manipulation – Distribution), còn gọi **Power of 3 (P
 
 **Vì sao thị trường PHẢI có manipulation (logic thanh khoản):** lệnh lớn của smart money cần counterparty. Muốn mua khối lượng lớn mà không đẩy giá chạy mất, họ cần một lượng lớn lệnh **bán** xuất hiện cùng lúc — thứ chỉ có được bằng cách đẩy giá xuống quét sell-stop (stop của phe mua + lệnh sell breakout). Judas swing không phải "âm mưu" thần bí; nó là **cơ chế bơm thanh khoản** để vị thế lớn được khớp. Hiểu điều này giúp bạn tin vào khung AMD một cách có cơ sở thay vì thuộc lòng.
 
-**Liên hệ với chu kỳ thị trường:** AMD là phiên bản "vi mô intraday" của chu kỳ accumulation–distribution kinh điển. Nó ghép trực tiếp với [[18 - Kill Zones]] (thao túng thường xảy ra đầu London / NY, phân phối trong kill zone chính) và với [[20 - Liquidity Sweep]] (giai đoạn manipulation CHÍNH LÀ cú sweep).
+**Liên hệ với chu kỳ thị trường:** AMD là phiên bản "vi mô intraday" của chu kỳ accumulation–distribution kinh điển. Nó ghép trực tiếp với [[18-Kill-Zones]] (thao túng thường xảy ra đầu London / NY, phân phối trong kill zone chính) và với [[20-Liquidity-Sweep]] (giai đoạn manipulation CHÍNH LÀ cú sweep).
 
 **Mục đích trong ICT:**
 - Cho **bản đồ thời gian trong ngày**: biết đang ở pha nào để không trade nhầm.
@@ -104,7 +104,7 @@ Phần lớn trader thua vì họ trade **giai đoạn thao túng** — họ th�
 | **Bearish day** | Range quanh open | Thao túng LÊN, sweep BSL trên range/open | Phân phối XUỐNG, đóng gần đáy ngày |
 
 > [!tip]
-> Ghép AMD với [[18 - Kill Zones]]: thường **Asia = accumulation**, **London open = manipulation (Judas)**, **London/NY = distribution**. NY cũng có thể có một Judas riêng đầu phiên trước khi phân phối tiếp.
+> Ghép AMD với [[18-Kill-Zones]]: thường **Asia = accumulation**, **London open = manipulation (Judas)**, **London/NY = distribution**. NY cũng có thể có một Judas riêng đầu phiên trước khi phân phối tiếp.
 
 ![[AMD-Advanced-Session-Timeline.svg|697]]
 
@@ -184,7 +184,7 @@ AMD không chỉ chạy ở khung ngày. Cùng logic A→M→D lặp lại ở *
 > 4. **Phân phối chạy về pool target nào, và tôi đang ở pha nào?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]) → quyết định hướng phân phối kỳ vọng.
+- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]) → quyết định hướng phân phối kỳ vọng.
 - **Daily Open & pool HTF:** đánh dấu open, PDH/PDL, range Á — đây là các mốc liquidity của AMD.
 - **Draw on liquidity:** pool nào là target cuối của phân phối.
 
@@ -304,13 +304,13 @@ Trong một ngày bullish, giá tích lũy rồi đẩy XUỐNG (manipulation). 
 ## 7. Entry model liên quan
 
 Khái niệm này thường kết hợp với:
-- [[18 - Kill Zones]] — KHI NÀO mỗi pha thường xảy ra
-- [[20 - Liquidity Sweep]] — pha manipulation chính là cú sweep
-- [[21 - Market Structure Shift]] — xác nhận chuyển từ manipulation sang distribution
-- [[12 - Daily Bias]] — quyết định hướng phân phối kỳ vọng
-- [[13 - FVG  - Fair Value Gap]] / [[25 - OB - Order Block]] / [[26 - OTE - Optimal Trade Entry]] — refine entry trong pha phân phối
-- [[08 - Central Bank Dealers Range]] — range Á làm khung accumulation
-- [[33 - Turtle Soup]] — mô hình trade trực tiếp cú Judas
+- [[18-Kill-Zones]] — KHI NÀO mỗi pha thường xảy ra
+- [[20-Liquidity-Sweep]] — pha manipulation chính là cú sweep
+- [[21-Market-Structure-Shift]] — xác nhận chuyển từ manipulation sang distribution
+- [[12-Daily-Bias]] — quyết định hướng phân phối kỳ vọng
+- [[13-FVG-Fair-Value-Gap]] / [[25-OB-Order-Block]] / [[26-OTE-Optimal-Trade-Entry]] — refine entry trong pha phân phối
+- [[08-Central-Bank-Dealers-Range]] — range Á làm khung accumulation
+- [[33-Turtle-Soup]] — mô hình trade trực tiếp cú Judas
 
 ### Sequence mẫu — Long với Bullish AMD
 ```text
@@ -337,7 +337,7 @@ Daily Bias: Bearish
 ```
 
 > [!note]
-> AMD là "khung kể chuyện" cho cả ngày; [[20 - Liquidity Sweep]] là pha manipulation, [[21 - Market Structure Shift]] xác nhận chuyển sang distribution, còn [[Fair Value Gap]]/[[Order Block]]/[[Optimal Trade Entry]] là cách refine entry trong pha phân phối. [[18 - Kill Zones]] cho biết KHI NÀO mỗi pha thường xảy ra.
+> AMD là "khung kể chuyện" cho cả ngày; [[20-Liquidity-Sweep]] là pha manipulation, [[21-Market-Structure-Shift]] xác nhận chuyển sang distribution, còn [[Fair Value Gap]]/[[Order Block]]/[[Optimal Trade Entry]] là cách refine entry trong pha phân phối. [[18-Kill-Zones]] cho biết KHI NÀO mỗi pha thường xảy ra.
 
 ---
 
@@ -438,7 +438,7 @@ Daily Bias: Bearish
 - Move đầu tiên (manipulation/Judas) thường **sai**; move thật (distribution) đi ngược lại.
 - **Đừng trade giai đoạn thao túng**; chờ sweep + reclaim + displacement rồi vào theo phân phối.
 - **Daily Open** là mốc tham chiếu trung tâm cho pha và hướng.
-- AMD ghép chặt với [[18 - Kill Zones]] và [[20 - Liquidity Sweep]]: đúng giờ, đúng pool, đúng pha.
+- AMD ghép chặt với [[18-Kill-Zones]] và [[20-Liquidity-Sweep]]: đúng giờ, đúng pool, đúng pha.
 
 ### Quy tắc cá nhân rút ra
 - [ ] Tôi luôn xác định Daily Open + range tích lũy trước khi trade.
@@ -568,7 +568,7 @@ Mục 15.6 đã cho ví dụ Tuần/Ngày lệch pha. Cạm bẫy sâu hơn — 
 
 Khác với "trend day cải trang" (mục 15.3, nơi vẫn CÓ một cú phá ban đầu nhưng nó không quay lại), có một lớp ngày hiếm hơn và nguy hiểm hơn: **không có Judas nào xuất hiện — giá tích lũy ngắn rồi displacement thẳng theo đúng hướng bias ngay từ đầu London, không hề chạm ngược qua Daily Open.** Trader chờ Judas theo phản xạ (đặc biệt sau khi đã thấy pattern này lặp lại vài lần) sẽ đứng ngoài cả ngày, nhìn một trong những ngày "ăn dày" nhất trôi qua.
 
-**Vì sao xảy ra:** đây thường là ngày mà HTF draw đã quá rõ và quá gấp — ví dụ tin tức tối qua (đóng cửa Á) đã dịch chuyển bias cực mạnh, hoặc một gap cuối tuần đã tự làm luôn phần việc của manipulation (xem liên hệ [[24 - New Week Opening Gap]]). Khi "nhiên liệu" thanh khoản cần cho lệnh lớn đã có sẵn từ phiên trước (residual liquidity từ đêm qua), thuật toán không cần tạo thêm một cú Judas mới trong ngày — nó thẳng tiến.
+**Vì sao xảy ra:** đây thường là ngày mà HTF draw đã quá rõ và quá gấp — ví dụ tin tức tối qua (đóng cửa Á) đã dịch chuyển bias cực mạnh, hoặc một gap cuối tuần đã tự làm luôn phần việc của manipulation (xem liên hệ [[24-New-Week-Opening-Gap]]). Khi "nhiên liệu" thanh khoản cần cho lệnh lớn đã có sẵn từ phiên trước (residual liquidity từ đêm qua), thuật toán không cần tạo thêm một cú Judas mới trong ngày — nó thẳng tiến.
 
 **Cách nhận diện sớm:** (1) gap mở cửa đã đáng kể (không phải range hẹp); (2) phiên Á/tiền-London đã có displacement rõ theo đúng hướng bias, không đi ngang; (3) không có cụm liquidity "hợp lý" nào còn nằm ngược hướng gần giá — tức là *không có gì để Judas quét* vì nó đã bị quét từ phiên trước.
 

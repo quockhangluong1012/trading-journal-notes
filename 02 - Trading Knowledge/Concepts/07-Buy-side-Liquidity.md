@@ -100,7 +100,7 @@ ICT xem thị trường vận hành theo mô hình "đi từ thanh khoản này 
 | **Minor / Internal High** | Đỉnh nhỏ nội bộ | Thấp | Thường là inducement, không phải target chính |
 
 > [!tip]
-> Đối chiếu với [[16 - Internal & External Range Liquidity (IRL & ERL)]]: BSL trên **đỉnh ngoài range (external)** thường là **target chính**; BSL trên đỉnh nội bộ nhỏ thường chỉ là **inducement** (mồi) để dụ trader vào sớm. Đừng nhầm inducement với target thật.
+> Đối chiếu với [[16-Internal-External-Range-Liquidity-IRL-ERL]]: BSL trên **đỉnh ngoài range (external)** thường là **target chính**; BSL trên đỉnh nội bộ nhỏ thường chỉ là **inducement** (mồi) để dụ trader vào sớm. Đừng nhầm inducement với target thật.
 
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Bias bullish → BSL phía trên là **target Long** rõ ràng.
@@ -169,7 +169,7 @@ ICT xem thị trường vận hành theo mô hình "đi từ thanh khoản này 
 > 4. **Sau sweep có MSS giảm + displacement xác nhận không?**
 
 ### D1 / H4 — Bias & Draw
-- **Bias hiện tại:** xem [[12 - Daily Bias]].
+- **Bias hiện tại:** xem [[12-Daily-Bias]].
 - **BSL external chính:** xác định đỉnh HTF / EQH / PWH là draw on liquidity.
 - **Premium/Discount:** sweep BSL để Short có giá trị nhất khi giá ở **premium**.
 - **Nếu bias bullish:** BSL HTF là **target** — kế hoạch giữ Long tới đó, không Short.
@@ -581,7 +581,7 @@ Phần nào của critique trên là đúng và phải chấp nhận, phần nà
 
 **Kết quả bằng số:** TP đạt tại SSL (Asia low) 1.2565 lúc 09:26 EST. Khoảng cách 69 pip, R:R = 69/24 ≈ **2.8R**.
 
-**Bài học chỉ rút ra được nhờ case này:** PWH là pool "nặng" đủ để tạo phản ứng rõ ràng trong vòng chưa đầy 30 phút kể từ sweep tới MSS — thời gian phản ứng nhanh (dưới 25 phút) là một tín hiệu phụ cho thấy đây là terminus thật, không phải waypoint (xem mục 7.5 của [[19 - Liquidity]] về "sponsorship analysis").
+**Bài học chỉ rút ra được nhờ case này:** PWH là pool "nặng" đủ để tạo phản ứng rõ ràng trong vòng chưa đầy 30 phút kể từ sweep tới MSS — thời gian phản ứng nhanh (dưới 25 phút) là một tín hiệu phụ cho thấy đây là terminus thật, không phải waypoint (xem mục 7.5 của [[19-Liquidity]] về "sponsorship analysis").
 
 ### Case 2 — XAUUSD: Setup đẹp như sách nhưng THUA (giá trị nhất)
 
@@ -593,7 +593,7 @@ Phần nào của critique trên là đúng và phải chấp nhận, phần nà
 
 **Kết quả bằng số:** Giá chỉ giảm tới 2,056.8 (chưa đầy 1R) rồi bật ngược mạnh, phá thẳng qua EQH 2,061.5 và tiếp tục tăng lên 2,072 trong phiên chiều sau phát biểu Fed ôn hòa hơn dự kiến. Lệnh bị stop tại 2,063.5: **lỗ -1R chẵn**.
 
-**Bài học chỉ rút ra được nhờ case này:** Đây là ví dụ kinh điển của **nhầm waypoint thành terminus** (xem mục 7.2 của [[19 - Liquidity]]): D1 bias bullish mạnh, EQH trên H1 chỉ là một pool **nội bộ giữa đường lên**, không phải BSL external thật. Setup "đẹp như sách" (sweep + MSS H1/M15) đã bỏ qua điều kiện tối quan trọng: **BSL đồng hướng với bias bullish không nên bị dùng làm điểm Short** — đúng nguyên tắc cốt lõi của file này nhưng chính người viết case vẫn mắc lỗi vì bị cuốn theo tín hiệu LTF đẹp. Thêm nữa, tin Fed chưa ra nhưng thị trường đã bắt đầu định vị trước (pre-positioning), khiến MSS M15 chỉ là nhiễu tạm thời trước sự kiện lớn hơn.
+**Bài học chỉ rút ra được nhờ case này:** Đây là ví dụ kinh điển của **nhầm waypoint thành terminus** (xem mục 7.2 của [[19-Liquidity]]): D1 bias bullish mạnh, EQH trên H1 chỉ là một pool **nội bộ giữa đường lên**, không phải BSL external thật. Setup "đẹp như sách" (sweep + MSS H1/M15) đã bỏ qua điều kiện tối quan trọng: **BSL đồng hướng với bias bullish không nên bị dùng làm điểm Short** — đúng nguyên tắc cốt lõi của file này nhưng chính người viết case vẫn mắc lỗi vì bị cuốn theo tín hiệu LTF đẹp. Thêm nữa, tin Fed chưa ra nhưng thị trường đã bắt đầu định vị trước (pre-positioning), khiến MSS M15 chỉ là nhiễu tạm thời trước sự kiện lớn hơn.
 
 ### Case 3 — EURUSD: Đứng ngoài đúng nhờ nhận ra red flag
 

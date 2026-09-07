@@ -148,7 +148,7 @@ Giá bật lên mạnh sau khi về FVG bên dưới, tuy nhiên tâm lý vẫn 
 - Mistake chính để trống dù có ít nhất một hành vi rõ ràng đủ điều kiện gắn tag (risk 5%, hoặc exit sớm do sợ) — quy trình tự-chấm-điểm không nhất quán khi lệnh có kết quả Win.
 
 **Rule cần thêm/cập nhật**
-- Rule kiểm tra được: mọi lệnh có `risk_percent` > 0.5% phải tự động gắn `[[07 - Mistake - Risk more than 0.5% total account]]` tại thời điểm ghi log, không phụ thuộc vào việc lệnh đó Win hay Loss (liên kết CS-O1 trực tiếp — đây chính là 1 trong 4 lệnh risk-5% "im lặng" mà cross-setup finding đã nêu).
+- Rule kiểm tra được: mọi lệnh có `risk_percent` > 0.5% phải tự động gắn `[[07-Mistake-Risk-more-than-0.5-total-account]]` tại thời điểm ghi log, không phụ thuộc vào việc lệnh đó Win hay Loss (liên kết CS-O1 trực tiếp — đây chính là 1 trong 4 lệnh risk-5% "im lặng" mà cross-setup finding đã nêu).
 - Rule kiểm tra được: khi Execution Review tự nhận "đóng lệnh sớm vì sợ/thiếu tin tưởng", trường Result phải ghi "Win (Early Manual Exit, X.XR of planned Y.YR)" — không ghi "Hit Take Profit" (liên kết O1).
 
 ---

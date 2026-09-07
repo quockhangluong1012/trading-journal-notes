@@ -47,7 +47,7 @@ Khoảng giữa hai mức giá này là **gap cuối tuần** — vùng giá mà
 1. Xác định **Friday Close** (16:59–17:00 ET): vẽ một đường ngang tại mức giá đóng cửa cuối cùng của Thứ Sáu.
 2. Xác định **Sunday Open** (17:00–18:00 ET): vẽ một đường ngang tại mức giá mở cửa đầu tiên của Chủ Nhật.
 3. Vùng giữa hai đường = **NWOG range** (tô màu / box).
-4. Tính **CE = (Friday Close + Sunday Open) / 2** → vẽ đường giữa. **Đây là mức quan trọng nhất.** (Xem [[10 - Consequent Encroachment (Mean Threshold)]].)
+4. Tính **CE = (Friday Close + Sunday Open) / 2** → vẽ đường giữa. **Đây là mức quan trọng nhất.** (Xem [[10-Consequent-Encroachment-Mean-Threshold]].)
 5. Đặt tên & màu cố định, **giữ lại 3–5 NWOG gần nhất** trên chart như mốc tham chiếu.
 
 ```text
@@ -74,7 +74,7 @@ Sunday Open (18:00 ET) ── cạnh dưới ───┘
 ### Mục đích trong ICT
 - Cung cấp **mốc tham chiếu fair value cố định** cho cả tuần.
 - Là một **draw on liquidity** tự nhiên: giá thường hướng về NWOG/CE chưa được fill.
-- Làm **support/resistance** và xác định bias premium/discount của tuần (xem [[27 - Premium Discount]], [[12 - Daily Bias]]).
+- Làm **support/resistance** và xác định bias premium/discount của tuần (xem [[27-Premium-Discount]], [[12-Daily-Bias]]).
 
 ### Vì sao quan trọng
 - Cuối tuần thị trường **không giao dịch** → inefficiency tồn tại mà không thể bị fill trong khoảng thời gian đó → tạo ra "nợ kỹ thuật" mà thị trường thường quay lại trả.
@@ -108,10 +108,10 @@ Sunday Open (18:00 ET) ── cạnh dưới ───┘
 
 ### Khi nào giá trị cao? (checklist)
 - [ ] Giá đang gần hoặc đang hướng về một **NWOG chưa fill** (unfilled).
-- [ ] CE của NWOG trùng với một PD-array khác ([[Order Block]], [[Fair Value Gap]], [[03 - Balanced Price Range]]).
-- [ ] NWOG nằm tại biên premium/discount của [[12 - Dealing Range]] tuần.
-- [ ] Có **confluence** với [[19 - Liquidity]] (buyside/sellside) ngay cạnh NWOG.
-- [ ] Phản ứng được kỳ vọng trong [[18 - Kill Zones]] (London/NY).
+- [ ] CE của NWOG trùng với một PD-array khác ([[Order Block]], [[Fair Value Gap]], [[03-Balanced-Price-Range]]).
+- [ ] NWOG nằm tại biên premium/discount của [[12-Dealing-Range]] tuần.
+- [ ] Có **confluence** với [[19-Liquidity]] (buyside/sellside) ngay cạnh NWOG.
+- [ ] Phản ứng được kỳ vọng trong [[18-Kill-Zones]] (London/NY).
 
 ### Khi nào bỏ qua? (checklist)
 - [ ] Gap quá nhỏ/inside (gần như không có gap) → ít ý nghĩa.
@@ -144,12 +144,12 @@ Sunday Open (18:00 ET) ── cạnh dưới ───┘
 ### Điều kiện bắt buộc (must-have)
 - [ ] Xác định đúng **Friday Close (16:59–17:00 ET)** và **Sunday Open (17:00–18:00 ET)** theo đúng múi giờ ET.
 - [ ] Vẽ đúng **CE = 50%** của range.
-- [ ] Đặt trong bối cảnh [[12 - Daily Bias]] / [[27 - Premium Discount]] của tuần.
+- [ ] Đặt trong bối cảnh [[12-Daily-Bias]] / [[27-Premium-Discount]] của tuần.
 
 ### Tăng xác suất (nice-to-have)
-- [ ] Confluence với PD-array khác (OB, FVG, CBDR — xem [[08 - Central Bank Dealers Range]]).
-- [ ] Trùng với [[19 - Liquidity]] pool gần đó.
-- [ ] Tiếp cận trong [[18 - Kill Zones]].
+- [ ] Confluence với PD-array khác (OB, FVG, CBDR — xem [[08-Central-Bank-Dealers-Range]]).
+- [ ] Trùng với [[19-Liquidity]] pool gần đó.
+- [ ] Tiếp cận trong [[18-Kill-Zones]].
 - [ ] NWOG còn **unfilled** (draw mạnh hơn).
 
 ### Làm yếu đi (warning)
@@ -175,7 +175,7 @@ Ba điều cần tách bạch khi làm việc với dữ liệu đầu tuần:
 
 ### Nâng cao — NWOG lồng NDOG: cấu trúc fractal đa khung theo tuần
 
-NWOG và [[23 - New Day Opening Gap]] không phải hai công cụ tách biệt — chúng là **cùng một cơ chế (gap do ngắt quãng thời gian) lặp lại ở hai khung khác nhau**, theo đúng tinh thần fractal của ICT: mỗi tuần có **một NWOG** (Friday Close → Sunday Open) đóng vai trò khung lớn, và **bên trong tuần đó có 4–5 NDOG hằng ngày** (mỗi ngày một gap prior-close → reopen) nằm lồng bên trong phạm vi thời gian của NWOG đó.
+NWOG và [[23-New-Day-Opening-Gap]] không phải hai công cụ tách biệt — chúng là **cùng một cơ chế (gap do ngắt quãng thời gian) lặp lại ở hai khung khác nhau**, theo đúng tinh thần fractal của ICT: mỗi tuần có **một NWOG** (Friday Close → Sunday Open) đóng vai trò khung lớn, và **bên trong tuần đó có 4–5 NDOG hằng ngày** (mỗi ngày một gap prior-close → reopen) nằm lồng bên trong phạm vi thời gian của NWOG đó.
 
 ![[NWOG-Advanced-NestedWithNDOG.svg]]
 *Một tuần giao dịch với NWOG khung lớn bao trùm toàn bộ tuần, trong khi mỗi ngày (Thứ 2 đến Thứ 6) có một NDOG riêng nằm lồng bên trong — bias tuần đến từ NWOG, phản ứng trong ngày đến từ NDOG.*
@@ -195,18 +195,18 @@ Cách phối hợp hai khung này trong phân tích thực chiến:
 
 ### D1 / H4 — Bối cảnh & bias
 1. Vẽ **3–5 NWOG gần nhất** với CE của từng cái.
-2. Xác định giá đang ở **premium hay discount** so với CE của NWOG hiện hành (xem [[27 - Premium Discount]]).
+2. Xác định giá đang ở **premium hay discount** so với CE của NWOG hiện hành (xem [[27-Premium-Discount]]).
 3. Tìm **NWOG chưa fill** gần nhất → đây là **draw on liquidity** tiềm năng cho tuần.
-4. Ghép với [[12 - Daily Bias]]: bias hướng về NWOG nào?
+4. Ghép với [[12-Daily-Bias]]: bias hướng về NWOG nào?
 
 ### H1 / M15 — Lập kế hoạch & vùng chờ
 1. Khoanh vùng NWOG/CE mà giá có khả năng tiếp cận.
-2. Tìm confluence: [[Order Block]], [[Fair Value Gap]], [[20 - Liquidity Sweep]] gần NWOG.
-3. Chờ giá tiếp cận vùng trong [[18 - Kill Zones]].
+2. Tìm confluence: [[Order Block]], [[Fair Value Gap]], [[20-Liquidity-Sweep]] gần NWOG.
+3. Chờ giá tiếp cận vùng trong [[18-Kill-Zones]].
 
 ### M5 / M1 — Xác nhận & entry
-1. Quan sát phản ứng tại NWOG/CE: rejection, [[20 - Liquidity Sweep]] quét cạnh gap.
-2. Chờ [[21 - Market Structure Shift]] (MSS) xác nhận đảo chiều / tiếp diễn.
+1. Quan sát phản ứng tại NWOG/CE: rejection, [[20-Liquidity-Sweep]] quét cạnh gap.
+2. Chờ [[21-Market-Structure-Shift]] (MSS) xác nhận đảo chiều / tiếp diễn.
 3. Tinh chỉnh entry vào FVG/OB hình thành sau MSS, SL ngoài cạnh NWOG hoặc swing gần.
 
 ```text
@@ -238,10 +238,10 @@ Cách phối hợp hai khung này trong phân tích thực chiến:
 
 ### Setup hợp lệ (✓)
 - [ ] Giá tiếp cận NWOG/CE đúng phía bias (discount → long, premium → short).
-- [ ] Có [[20 - Liquidity Sweep]] hoặc rejection rõ tại cạnh/CE.
-- [ ] [[21 - Market Structure Shift]] LTF xác nhận.
+- [ ] Có [[20-Liquidity-Sweep]] hoặc rejection rõ tại cạnh/CE.
+- [ ] [[21-Market-Structure-Shift]] LTF xác nhận.
 - [ ] Có entry array (FVG/OB) để vào, SL rõ ràng ngoài cạnh NWOG.
-- [ ] Tiếp cận trong [[18 - Kill Zones]].
+- [ ] Tiếp cận trong [[18-Kill-Zones]].
 
 ### Setup bị vô hiệu (✗)
 - [ ] Giá đóng nến **xuyên thẳng qua CE và cạnh đối diện** không phản ứng → mốc bị vô hiệu cho hướng đó.
@@ -301,12 +301,12 @@ Cách phối hợp hai khung này trong phân tích thực chiến:
 ## 7. Entry model liên quan
 
 - [[ICT 2022 Model]] — sweep → MSS → FVG entry, với NWOG/CE làm vùng POI/draw.
-- [[20 - Liquidity Sweep]] — quét cạnh NWOG trước khi đảo chiều.
-- [[21 - Market Structure Shift]] — xác nhận đảo chiều LTF tại NWOG.
+- [[20-Liquidity-Sweep]] — quét cạnh NWOG trước khi đảo chiều.
+- [[21-Market-Structure-Shift]] — xác nhận đảo chiều LTF tại NWOG.
 - [[Fair Value Gap]] — entry array sau MSS.
 - [[Order Block]] — confluence tại cạnh/CE NWOG.
-- [[10 - Consequent Encroachment (Mean Threshold)]] — CE là mức phản ứng chính.
-- [[27 - Premium Discount]] / [[12 - Daily Bias]] — xác định hướng vào lệnh.
+- [[10-Consequent-Encroachment-Mean-Threshold]] — CE là mức phản ứng chính.
+- [[27-Premium-Discount]] / [[12-Daily-Bias]] — xác định hướng vào lệnh.
 
 ```text
 [Chuỗi triển khai chuẩn quanh NWOG]
@@ -331,12 +331,12 @@ Cách phối hợp hai khung này trong phân tích thực chiến:
 - [ ] Đã vẽ 3–5 NWOG gần nhất + CE từng cái.
 - [ ] Xác định giá đang premium hay discount so với CE.
 - [ ] Tìm được NWOG unfilled = draw on liquidity của tuần.
-- [ ] Bias HTF ([[12 - Daily Bias]]) rõ ràng và NHẤT QUÁN với hướng định trade.
+- [ ] Bias HTF ([[12-Daily-Bias]]) rõ ràng và NHẤT QUÁN với hướng định trade.
 
 ### B. Execution
-- [ ] Giá tiếp cận NWOG/CE trong [[18 - Kill Zones]].
-- [ ] Có [[20 - Liquidity Sweep]] / rejection tại vùng.
-- [ ] Có [[21 - Market Structure Shift]] LTF xác nhận.
+- [ ] Giá tiếp cận NWOG/CE trong [[18-Kill-Zones]].
+- [ ] Có [[20-Liquidity-Sweep]] / rejection tại vùng.
+- [ ] Có [[21-Market-Structure-Shift]] LTF xác nhận.
 - [ ] Có entry array (FVG/OB), SL ngoài cạnh NWOG, RR ≥ ngưỡng tối thiểu.
 - [ ] Risk ≤ 0.5% theo khung rủi ro.
 
@@ -585,7 +585,7 @@ Cách phối hợp hai khung này trong phân tích thực chiến:
 
 **Bối cảnh HTF:** Tuần từ Thứ Hai 18/08. Friday Close (tuần trước) tại 1.0920; Sunday Open (18:00 ET, phiên Á/Sydney bắt đầu) tại 1.0894 → NWOG gap-down 1.0894–1.0920, CE = 1.0907. D1 bias bullish (giá vừa sweep sellside tuần trước đó và có MSS H4 tăng), nghĩa là giá mở tuần trong **discount** so với CE — đúng phía bias.
 
-**Setup:** Thứ Hai, giá dao động hẹp quanh 1.0895-1.0905 trong suốt phiên Á (thanh khoản mỏng điển hình đầu tuần). Kỳ vọng: [[18 - Kill Zones|London Kill Zone]] Thứ Hai sẽ quét thanh khoản dưới đáy phiên Á rồi đẩy giá về CE và xa hơn.
+**Setup:** Thứ Hai, giá dao động hẹp quanh 1.0895-1.0905 trong suốt phiên Á (thanh khoản mỏng điển hình đầu tuần). Kỳ vọng: [[18-Kill-Zones|London Kill Zone]] Thứ Hai sẽ quét thanh khoản dưới đáy phiên Á rồi đẩy giá về CE và xa hơn.
 
 **Diễn biến & execution:**
 - 02:10 ET (London Open KZ): giá quét đáy phiên Á tại 1.0891 (sweep sellside, thấp hơn Sunday Open 3 pip), để lại wick dài trên M15.
@@ -670,7 +670,7 @@ Cách phối hợp hai khung này trong phân tích thực chiến:
 ## Best Practices
 
 > [!success] Nguyên tắc vàng
-> **NWOG mạnh nhất và "sạch" nhất khi có một khoảng đóng cửa thị trường thật sự (index/futures); trên forex nó chỉ là một xấp xỉ mềm hơn nhiều. Dùng NWOG làm mốc bias/draw ở khung tuần — không bao giờ làm tín hiệu entry độc lập — và luôn đối chiếu với [[12 - Daily Bias]] trước khi diễn giải hướng.**
+> **NWOG mạnh nhất và "sạch" nhất khi có một khoảng đóng cửa thị trường thật sự (index/futures); trên forex nó chỉ là một xấp xỉ mềm hơn nhiều. Dùng NWOG làm mốc bias/draw ở khung tuần — không bao giờ làm tín hiệu entry độc lập — và luôn đối chiếu với [[12-Daily-Bias]] trước khi diễn giải hướng.**
 
 1. **Trên index/futures (NQ1/NDX, NAS100) NWOG là "sạch" nhất — nên coi đây là ứng dụng chuẩn.** CME futures thực sự đóng cửa cuối tuần và có giờ reopen cố định (~17:00–18:00 ET Chủ Nhật), tạo ra một khoảng gap giá thật, khách quan, không ai tranh cãi được. Đây là nơi lý thuyết NWOG được ICT xây dựng gốc và có độ tin cậy cao nhất trong bốn thị trường bạn theo dõi. Ghi `nwog_instrument_type: futures` khi log các setup trên NQ1/NAS100.
 
@@ -678,7 +678,7 @@ Cách phối hợp hai khung này trong phân tích thực chiến:
 
 3. **Luôn dùng NWOG như một mốc bias/target ở khung TUẦN, không phải một tín hiệu entry.** NWOG trả lời câu hỏi "giá đang premium hay discount so với tuần, và draw on liquidity của tuần nằm ở đâu" — nó không tự nó nói "vào lệnh ngay". Mọi entry thực tế vẫn cần chuỗi sweep → MSS → FVG/OB trên LTF như mô tả ở mục 4–5. Ghi `weekly_bias_aligned: yes/no` cho mỗi lệnh: lệnh có đi đúng hướng bias mà NWOG/CE gợi ý không?
 
-4. **Kết hợp NWOG với [[12 - Daily Bias]] ở cấp độ tuần trước khi hạ xuống ngày.** Trước khi dùng Daily Bias để định hướng cho một ngày cụ thể, hãy hỏi: vị trí giá so với CE của NWOG hiện hành có đồng thuận với bias ngày không? Nếu Daily Bias ngược với vị trí premium/discount của NWOG tuần, đó là tín hiệu cần thận trọng hơn (bias ngày có thể chỉ là một nhịp điều chỉnh trong bias tuần lớn hơn) chứ không phải lý do bỏ qua một trong hai.
+4. **Kết hợp NWOG với [[12-Daily-Bias]] ở cấp độ tuần trước khi hạ xuống ngày.** Trước khi dùng Daily Bias để định hướng cho một ngày cụ thể, hãy hỏi: vị trí giá so với CE của NWOG hiện hành có đồng thuận với bias ngày không? Nếu Daily Bias ngược với vị trí premium/discount của NWOG tuần, đó là tín hiệu cần thận trọng hơn (bias ngày có thể chỉ là một nhịp điều chỉnh trong bias tuần lớn hơn) chứ không phải lý do bỏ qua một trong hai.
 
 5. **Giữ 3–5 NWOG gần nhất trên mọi chart, không chỉ chart đang trade.** Vì NWOG là mốc lịch sử (gap đã fill vẫn là SR), việc xóa sớm khiến bạn mất khả năng nhận diện confluence khi giá quay lại một mức cũ nhiều tuần sau. Việc này tốn ít công nhưng thường bị bỏ qua khi chart bị "dọn dẹp" quá tay.
 

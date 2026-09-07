@@ -24,7 +24,7 @@ updated: 2026-07-28
 > **Reaper IFVG là một Inversion Fair Value Gap hình thành NGAY TRƯỚC một Breaker Block, nằm sâu bên trong chân giá của Breaker đó — đây mới là điểm vào thật của tổ chức, là mức giá thị trường chạm tới SAU KHI những trader vào lệnh sớm tại Breaker đã bị trừng phạt.**
 
 > [!important] Nguyên tắc cốt lõi
-> Đám đông tin rằng cứ chạm Breaker là giá tiếp diễn ngay, nên họ vào lệnh tại Breaker. Nhưng tổ chức cần **giá tốt hơn**, nên thị trường thường **chạy XUYÊN QUA Breaker** (vào discount với setup bull, vào premium với setup bear), tạo drawdown, quét stop của phe vào sớm — nó "gặt" (reap) chính những người này để lấy thanh khoản — rồi mới đảo chiều từ **Reaper IFVG**, mức nằm sâu hơn trong dealing range với pricing tổ chức tốt hơn. Vì thế: **Breaker = ALERT (cảnh báo), Reaper IFVG = ENTRY (điểm vào)**. Chạm được Reaper IFVG mới chỉ là *cảnh báo*; entry vẫn cần confirmation LTF (MSS / displacement / rejection / sweep). Concept này xây trên nền [[04 - Breaker Block]] và [[17 - Inverse Fair Value Gap - iFVG]].
+> Đám đông tin rằng cứ chạm Breaker là giá tiếp diễn ngay, nên họ vào lệnh tại Breaker. Nhưng tổ chức cần **giá tốt hơn**, nên thị trường thường **chạy XUYÊN QUA Breaker** (vào discount với setup bull, vào premium với setup bear), tạo drawdown, quét stop của phe vào sớm — nó "gặt" (reap) chính những người này để lấy thanh khoản — rồi mới đảo chiều từ **Reaper IFVG**, mức nằm sâu hơn trong dealing range với pricing tổ chức tốt hơn. Vì thế: **Breaker = ALERT (cảnh báo), Reaper IFVG = ENTRY (điểm vào)**. Chạm được Reaper IFVG mới chỉ là *cảnh báo*; entry vẫn cần confirmation LTF (MSS / displacement / rejection / sweep). Concept này xây trên nền [[04-Breaker-Block]] và [[17-Inverse-Fair-Value-Gap-iFVG]].
 
 ---
 
@@ -32,8 +32,8 @@ updated: 2026-07-28
 
 **Nền tảng FVG → IFVG → Reaper.**
 
-- **FVG (Fair Value Gap):** vùng mất cân bằng ba nến do displacement để lại — xem [[13 - FVG  - Fair Value Gap]].
-- **IFVG (Inversion FVG):** một FVG bị giá **đóng xuyên qua** rồi **đảo vai trò** — FVG hỗ trợ bị phá thành kháng cự và ngược lại. Xem [[17 - Inverse Fair Value Gap - iFVG]].
+- **FVG (Fair Value Gap):** vùng mất cân bằng ba nến do displacement để lại — xem [[13-FVG-Fair-Value-Gap]].
+- **IFVG (Inversion FVG):** một FVG bị giá **đóng xuyên qua** rồi **đảo vai trò** — FVG hỗ trợ bị phá thành kháng cự và ngược lại. Xem [[17-Inverse-Fair-Value-Gap-iFVG]].
 - **Reaper IFVG:** một IFVG *đặc biệt về vị trí* — nó nằm **ngay trước** và **bên trong chân giá** tạo ra Breaker Block. Nó không phải một loại gap mới về cấu tạo; nó là **một IFVG được định vị đúng chỗ chiến lược**: sâu hơn Breaker, trong đúng vùng Premium/Discount.
 
 **Khái niệm:** Trong một **bullish Breaker** setup, giá tạo một chân đẩy lên (chân giá Breaker). Bên trong chân đó, ở phần **discount**, có một IFVG. Đây là **Reaper IFVG** — mức giá tổ chức thực sự muốn được lấp. Đám đông thấy Breaker (mức hiển nhiên, cao hơn) và vào lệnh; giá lại chạy sâu xuống Reaper IFVG mới đảo chiều. Bearish là gương phản chiếu trong premium.
@@ -61,9 +61,9 @@ updated: 2026-07-28
 
 Đây là phần "why" quyết định. Hiểu cơ chế mới đủ kiên nhẫn để **không** bấm nút tại Breaker.
 
-**(a) Institutions cần pricing tốt hơn.** Lệnh tổ chức có khối lượng lớn; họ không thể lấp toàn bộ tại mức hiển nhiên (Breaker) mà không đẩy giá bất lợi cho chính họ. Họ muốn giá **rẻ hơn** (bull) hoặc **đắt hơn** (bear). Vì vậy engine phân phối giá thường đẩy thị trường **vượt qua** Breaker để chạm mức pricing thật — chính là Reaper IFVG nằm sâu hơn trong dealing range ([[12 - Dealing Range]], [[27 - Premium Discount]]).
+**(a) Institutions cần pricing tốt hơn.** Lệnh tổ chức có khối lượng lớn; họ không thể lấp toàn bộ tại mức hiển nhiên (Breaker) mà không đẩy giá bất lợi cho chính họ. Họ muốn giá **rẻ hơn** (bull) hoặc **đắt hơn** (bear). Vì vậy engine phân phối giá thường đẩy thị trường **vượt qua** Breaker để chạm mức pricing thật — chính là Reaper IFVG nằm sâu hơn trong dealing range ([[12-Dealing-Range]], [[27-Premium-Discount]]).
 
-**(b) Liquidity harvest — thu hoạch thanh khoản.** Khi giá chạm Breaker, đám đông vào lệnh và đặt stop ngay dưới (bull). Cú chạy xuyên Breaker **quét đúng cụm stop này** cộng với các sell-stop/breakout dưới đó. Đây là nhiên liệu (thanh khoản đối ứng) để tổ chức lấp lệnh lớn — xem [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]. Sau khi thanh khoản đã bị "gặt", không còn nhiên liệu cho chân đi tiếp → giá đảo từ Reaper IFVG.
+**(b) Liquidity harvest — thu hoạch thanh khoản.** Khi giá chạm Breaker, đám đông vào lệnh và đặt stop ngay dưới (bull). Cú chạy xuyên Breaker **quét đúng cụm stop này** cộng với các sell-stop/breakout dưới đó. Đây là nhiên liệu (thanh khoản đối ứng) để tổ chức lấp lệnh lớn — xem [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]. Sau khi thanh khoản đã bị "gặt", không còn nhiên liệu cho chân đi tiếp → giá đảo từ Reaper IFVG.
 
 **(c) Vì sao gọi là "Reaper".** Thị trường "gặt" (reaps) chính những trader vào quá sớm tại Breaker: nó vượt Breaker để tạo drawdown, kích hoạt stop, gom thanh khoản từ phe vào sớm, rồi mới đảo chiều từ điểm vào thật. Trong setup bull, giá có thể trade **dưới** Breaker vào discount trước khi có support tại Reaper IFVG; trong setup bear, **trên** Breaker vào premium trước khi có resistance.
 
@@ -78,12 +78,12 @@ updated: 2026-07-28
 
 ### Khi nào Reaper IFVG có giá trị cao?
 
-- [ ] Có **HTF bias rõ** (theo [[12 - Daily Bias]] / top-down) và cấu trúc đồng thuận hướng vào lệnh
-- [ ] Đã vẽ **dealing range** và xác định vùng Premium/Discount ([[12 - Dealing Range]], [[27 - Premium Discount]])
+- [ ] Có **HTF bias rõ** (theo [[12-Daily-Bias]] / top-down) và cấu trúc đồng thuận hướng vào lệnh
+- [ ] Đã vẽ **dealing range** và xác định vùng Premium/Discount ([[12-Dealing-Range]], [[27-Premium-Discount]])
 - [ ] Có một **Breaker Block hợp lệ** (OB bị phá vai trò) làm mốc ALERT
 - [ ] Tồn tại một **IFVG bên trong chân giá Breaker**, đúng vùng P/D (bull→discount, bear→premium)
 - [ ] Giao dịch trên instrument **thanh khoản cao, delivery sạch** (NQ, ES, EURUSD, GBPUSD, XAUUSD)
-- [ ] Có kế hoạch **target** rõ (prev highs/lows, BSL/SSL, HTF liquidity — [[16 - Internal & External Range Liquidity (IRL & ERL)]])
+- [ ] Có kế hoạch **target** rõ (prev highs/lows, BSL/SSL, HTF liquidity — [[16-Internal-External-Range-Liquidity-IRL-ERL]])
 
 ### Khi nào nên bỏ qua?
 
@@ -148,10 +148,10 @@ Bên trái (hợp lệ): IFVG nằm trong chân giá **và** ở discount → �
 
 ![[Reaper-Advanced-MTF.svg|697]]
 
-Quy trình lồng khung (top-down) — xem thêm [[32 - Top-down Analysis (Multiple Timeframes)]]:
+Quy trình lồng khung (top-down) — xem thêm [[32-Top-down-Analysis-Multiple-Timeframes]]:
 
 1. **H1 / M15 — bias & map.** Xác định HTF bias, vẽ dealing range, đánh dấu Breaker và Reaper IFVG. Đây là tầng quyết định **hướng** và **vùng POI**.
-2. **M5 / M3 — confirmation.** Khi giá đi vào vùng Reaper IFVG, hạ khung để chờ tín hiệu vào: **liquidity sweep** ([[20 - Liquidity Sweep]]) + **rejection**, **MSS** ([[21 - Market Structure Shift]]) và **displacement** lên, hoặc **CISD** ([[41 - Change in State of Delivery]]). Confirmation LTF biến "giá tới POI" thành "điểm vào có trigger".
+2. **M5 / M3 — confirmation.** Khi giá đi vào vùng Reaper IFVG, hạ khung để chờ tín hiệu vào: **liquidity sweep** ([[20-Liquidity-Sweep]]) + **rejection**, **MSS** ([[21-Market-Structure-Shift]]) và **displacement** lên, hoặc **CISD** ([[41-Change-in-State-of-Delivery]]). Confirmation LTF biến "giá tới POI" thành "điểm vào có trigger".
 
 > [!tip] Khung trên quyết định hướng, khung dưới quyết định giờ
 > Đừng để một tín hiệu LTF kéo bạn đi ngược HTF bias. LTF chỉ dùng để *canh giờ vào* tại Reaper IFVG, không dùng để *đổi hướng*. Nếu HTF bull nhưng ở LTF không có MSS lên tại IFVG → đứng ngoài, đó là alert chưa thành signal.
@@ -164,9 +164,9 @@ Quy trình lồng khung (top-down) — xem thêm [[32 - Top-down Analysis (Multi
 
 Stop đặt **DƯỚI Reaper IFVG** (bull) hoặc **TRÊN Reaper IFVG** (bear), hoặc dưới/trên **swing gần nhất** — **KHÔNG** đặt bên trong gap.
 
-**Vì sao?** Một cú retest hợp lệ thường có **wick chọc sâu vào gap** (thậm chí quét tới CE / Mean Threshold — [[10 - Consequent Encroachment (Mean Threshold)]]) trước khi bật lên. Nếu stop nằm **trong** gap, nó nằm ngay trên đường đi tự nhiên của wick retest → bị quét oan **ngay trước** khi giá đảo chiều thật. Đây đúng là kịch bản "đúng hướng, đúng vùng, nhưng thua vì stop sai chỗ".
+**Vì sao?** Một cú retest hợp lệ thường có **wick chọc sâu vào gap** (thậm chí quét tới CE / Mean Threshold — [[10-Consequent-Encroachment-Mean-Threshold]]) trước khi bật lên. Nếu stop nằm **trong** gap, nó nằm ngay trên đường đi tự nhiên của wick retest → bị quét oan **ngay trước** khi giá đảo chiều thật. Đây đúng là kịch bản "đúng hướng, đúng vùng, nhưng thua vì stop sai chỗ".
 
-**Đánh đổi:** stop dưới gap rộng hơn một chút, nhưng **sống sót** qua cú retest để giữ được lệnh cho cú đảo thật. Bù lại bằng entry sắc hơn ở LTF (chờ sweep + MSS thay vì vào mù cả vùng) để R:R vẫn lành mạnh và tôn trọng **risk ≤0.5%/lệnh** ([[43 - Position Sizing]]).
+**Đánh đổi:** stop dưới gap rộng hơn một chút, nhưng **sống sót** qua cú retest để giữ được lệnh cho cú đảo thật. Bù lại bằng entry sắc hơn ở LTF (chờ sweep + MSS thay vì vào mù cả vùng) để R:R vẫn lành mạnh và tôn trọng **risk ≤0.5%/lệnh** ([[43-Position-Sizing]]).
 
 ---
 
@@ -176,7 +176,7 @@ Quy trình cho **bullish** (bearish là gương phản chiếu trong premium).
 
 **Bước 1 — Xác định bias & dealing range.** HTF bias bull (Daily Bias, cấu trúc bull). Vẽ dealing range, xác định discount. Chỉ tìm long.
 
-**Bước 2 — Tìm bullish Breaker.** Một bearish OB ([[25 - OB - Order Block]]) bị phá vai trò lên → bullish Breaker. Đây là mốc **ALERT**.
+**Bước 2 — Tìm bullish Breaker.** Một bearish OB ([[25-OB-Order-Block]]) bị phá vai trò lên → bullish Breaker. Đây là mốc **ALERT**.
 
 **Bước 3 — Định vị Reaper IFVG.** Tìm IFVG **ngay trước** bullish Breaker, **bên trong chân giá** Breaker, ở **discount**. Kiểm tra Golden Rule (mục 6).
 
@@ -184,7 +184,7 @@ Quy trình cho **bullish** (bearish là gương phản chiếu trong premium).
 
 **Bước 5 — Chờ confirmation tại IFVG.** Khi giá vào IFVG: **MSS lên**, **displacement lên**, **rejection candles**, hoặc **liquidity sweep + bullish displacement**. Đây mới là *signal*.
 
-**Bước 6 — Entry, stop, target.** Vào long tại IFVG (mép/CE tùy confirmation). **Stop dưới Reaper IFVG hoặc swing low gần nhất** (không trong gap). Target: prev highs / BSL / equal highs / HTF liquidity. Phân tầng TP theo [[16 - Internal & External Range Liquidity (IRL & ERL)]]: **T1 = IRL** (thanh khoản nội vùng), **T2 = ERL** (prev highs / external draw). Có thể kết hợp [[26 - OTE - Optimal Trade Entry]] nếu IFVG trùng vùng OTE.
+**Bước 6 — Entry, stop, target.** Vào long tại IFVG (mép/CE tùy confirmation). **Stop dưới Reaper IFVG hoặc swing low gần nhất** (không trong gap). Target: prev highs / BSL / equal highs / HTF liquidity. Phân tầng TP theo [[16-Internal-External-Range-Liquidity-IRL-ERL]]: **T1 = IRL** (thanh khoản nội vùng), **T2 = ERL** (prev highs / external draw). Có thể kết hợp [[26-OTE-Optimal-Trade-Entry]] nếu IFVG trùng vùng OTE.
 
 > [!note] Bearish (đảo)
 > Bias bear → bearish Breaker (bullish OB bị phá xuống) → Reaper IFVG trên Breaker, trong premium → chờ giá chạy xuyên Breaker lên premium → confirmation (MSS xuống / displacement xuống / rejection / sweep + bearish displacement) → short, stop **trên** Reaper IFVG/swing high, target SSL / prev lows / HTF liquidity dưới.
@@ -419,7 +419,7 @@ Từ bảng trên có thể thấy: dù stop chặt hơn nhiều (0.7 so với 1
 
 ### A8. Vai trò của Consequent Encroachment (CE) trong việc định vị entry chính xác trong vùng Reaper IFVG
 
-Vùng Reaper IFVG, giống mọi PD array khác, có một điểm giữa (Consequent Encroachment — xem [[10 - Consequent Encroachment (Mean Threshold)]]) thường được dùng làm mức tham chiếu cho entry limit thay vì toàn bộ vùng gap. Kinh nghiệm thực dụng: đặt limit order tại CE của Reaper IFVG (thay vì tại cạnh xa nhất của gap) thường cho tỉ lệ khớp lệnh hợp lý mà không cần đợi giá chạm sâu tới tận đáy/đỉnh gap — đồng thời vẫn giữ được phần lớn lợi thế R:R so với entry tại Breaker. Nếu giá chỉ chạm nhẹ mép ngoài của Reaper IFVG mà không tới CE rồi đảo ngay, đây vẫn có thể coi là phản ứng hợp lệ nhưng nên hạ nhẹ conviction so với case giá chọc sâu qua CE trước khi đảo (dấu hiệu hấp thụ mạnh hơn theo đúng logic order-flow ở mục A1).
+Vùng Reaper IFVG, giống mọi PD array khác, có một điểm giữa (Consequent Encroachment — xem [[10-Consequent-Encroachment-Mean-Threshold]]) thường được dùng làm mức tham chiếu cho entry limit thay vì toàn bộ vùng gap. Kinh nghiệm thực dụng: đặt limit order tại CE của Reaper IFVG (thay vì tại cạnh xa nhất của gap) thường cho tỉ lệ khớp lệnh hợp lý mà không cần đợi giá chạm sâu tới tận đáy/đỉnh gap — đồng thời vẫn giữ được phần lớn lợi thế R:R so với entry tại Breaker. Nếu giá chỉ chạm nhẹ mép ngoài của Reaper IFVG mà không tới CE rồi đảo ngay, đây vẫn có thể coi là phản ứng hợp lệ nhưng nên hạ nhẹ conviction so với case giá chọc sâu qua CE trước khi đảo (dấu hiệu hấp thụ mạnh hơn theo đúng logic order-flow ở mục A1).
 
 ### A9. Vì sao "Golden Rule" hai điều kiện lại quan trọng hơn số lượng IFVG quan sát được
 
@@ -596,15 +596,15 @@ Một điểm cần phản biện thêm về toàn bộ khung "đám đông vào
 
 **10. Position sizing sai khi trade Reaper: vì stop tại Reaper thường chặt hơn Breaker, trader tăng size tương ứng để giữ risk $ cố định, nhưng quên rằng slippage tại vùng giá sâu (discount/premium) có thể lớn hơn bình thường.**
 *Vì sao xảy ra:* công thức sizing chuẩn (risk $ cố định / khoảng cách stop) khuyến khích tăng size khi stop chặt hơn — về lý thuyết đúng, nhưng không tính đến việc các vùng giá sâu trong dealing range (đặc biệt quanh kỳ nghỉ, tin tức, hoặc thanh khoản mỏng) có thể có slippage/spread lớn hơn vùng giá gần điểm giữa, khiến rủi ro thực tế cao hơn con số tính trên giấy.
-*Cách xử lý:* khi tính size cho một entry tại Reaper IFVG với stop rất chặt, cộng thêm buffer slippage ước tính (tham khảo mục [[43 - Position Sizing]]) thay vì dùng đúng khoảng cách lý thuyết trên chart; đặc biệt thận trọng nếu Reaper IFVG nằm gần các vùng giá lịch sử có thanh khoản mỏng.
+*Cách xử lý:* khi tính size cho một entry tại Reaper IFVG với stop rất chặt, cộng thêm buffer slippage ước tính (tham khảo mục [[43-Position-Sizing]]) thay vì dùng đúng khoảng cách lý thuyết trên chart; đặc biệt thận trọng nếu Reaper IFVG nằm gần các vùng giá lịch sử có thanh khoản mỏng.
 
 **11. Trong phiên Á (thanh khoản thấp với các cặp không phải JPY/AUD/NZD), Reaper IFVG hình thành nhưng phản ứng rất yếu do thiếu volume xác nhận thật.**
 *Vì sao xảy ra:* toàn bộ lý luận ở mục A1-A2 dựa trên giả định có đủ dòng lệnh tổ chức thật tham gia để "lấp đơn hàng lớn" tại vùng Reaper; trong phiên thanh khoản mỏng, ngay cả một Breaker + IFVG thoả Golden Rule về hình dạng cũng có thể chỉ phản ánh nhiễu giá của một vài lệnh nhỏ, không phải dòng lệnh tổ chức thật.
 *Cách xử lý:* ưu tiên trade Reaper IFVG trong các killzone chính (London, NY AM/PM) nơi thanh khoản đủ sâu để giả định về "tổ chức" có cơ sở hợp lý hơn; hạ conviction rõ rệt với setup hình thành ngoài các khung giờ này.
 
 **12. Trader nhầm lẫn giữa "Breaker Block" thông thường và "Breaker dẫn tới Reaper" — không phải Breaker nào cũng có Reaper IFVG đi kèm.**
-*Vì sao xảy ra:* khái niệm Breaker Block (file [[04 - Breaker Block]]) tồn tại độc lập và có thể dùng như một vùng entry/POI riêng mà không cần có IFVG đi kèm; nhầm lẫn phổ biến là cứ thấy Breaker là tự động tìm "Reaper" ở gần đó, kể cả khi không có IFVG nào thoả Golden Rule tồn tại thật trong chân giá đó.
-*Cách xử lý:* luôn kiểm tra tồn tại thật của IFVG thoả cả hai điều kiện Golden Rule trước khi gọi tên "Reaper IFVG" — nếu không có, coi Breaker đó chỉ là Breaker thông thường, dùng theo đúng logic của [[04 - Breaker Block]], không tự suy diễn thêm một Reaper không tồn tại.
+*Vì sao xảy ra:* khái niệm Breaker Block (file [[04-Breaker-Block]]) tồn tại độc lập và có thể dùng như một vùng entry/POI riêng mà không cần có IFVG đi kèm; nhầm lẫn phổ biến là cứ thấy Breaker là tự động tìm "Reaper" ở gần đó, kể cả khi không có IFVG nào thoả Golden Rule tồn tại thật trong chân giá đó.
+*Cách xử lý:* luôn kiểm tra tồn tại thật của IFVG thoả cả hai điều kiện Golden Rule trước khi gọi tên "Reaper IFVG" — nếu không có, coi Breaker đó chỉ là Breaker thông thường, dùng theo đúng logic của [[04-Breaker-Block]], không tự suy diễn thêm một Reaper không tồn tại.
 
 **13. Với NQ/ES, giờ mở cửa cash session (9:30 NY) có thể tạo ra một Breaker/Reaper hình thành rất nhanh trong vài phút đầu, dễ bị nhiễu bởi chính hiệu ứng opening range (liên hệ file 48).**
 *Vì sao xảy ra:* 30 phút đầu sau 9:30 NY thường có biến động cao bất thường do dòng lệnh mở cửa dồn vào cùng lúc; một Breaker/Reaper hình thành trong chính giai đoạn này có thể phản ánh nhiễu thanh khoản mở cửa hơn là một cấu trúc "sạch" theo đúng logic order-flow ở mục A1.
@@ -628,7 +628,7 @@ Một điểm cần phản biện thêm về toàn bộ khung "đám đông vào
 
 **18. Multi-timeframe conflict: Breaker/Reaper trên H1 nói một câu chuyện, trong khi Breaker/Reaper trên H4 (khung cao hơn) nói câu chuyện khác hẳn tại cùng thời điểm.**
 *Vì sao xảy ra:* các Order Block và FVG hình thành độc lập ở mỗi khung thời gian; một Breaker H1 hợp lệ có thể nằm ngay giữa một Breaker H4 vẫn đang hoạt động theo hướng ngược lại, khiến tín hiệu H1 trở nên kém tin cậy nếu chỉ nhìn riêng khung đó.
-*Cách xử lý:* luôn xác định HTF bias và các PD array quan trọng nhất ở khung cao nhất áp dụng trong phân tích top-down (tham khảo [[32 - Top-down Analysis]]) trước khi tin vào một Reaper IFVG ở khung thấp hơn; nếu H4 đang có một Breaker/OB ngược hướng chưa bị vô hiệu hoá, hạ conviction của tín hiệu H1 tương ứng.
+*Cách xử lý:* luôn xác định HTF bias và các PD array quan trọng nhất ở khung cao nhất áp dụng trong phân tích top-down (tham khảo [[32-Top-down-Analysis-Multiple-Timeframes]]) trước khi tin vào một Reaper IFVG ở khung thấp hơn; nếu H4 đang có một Breaker/OB ngược hướng chưa bị vô hiệu hoá, hạ conviction của tín hiệu H1 tương ứng.
 
 > [!tip] Checklist tự audit nhật ký Reaper sau mỗi 20-30 lệnh
 > 1. Tách riêng kết quả nhóm "vào tại Breaker" và nhóm "vào tại Reaper IFVG có Golden Rule" — nhóm nào đang cho expectancy tốt hơn trong dữ liệu thật của mình?
@@ -676,7 +676,7 @@ Một điểm cần phản biện thêm về toàn bộ khung "đám đông vào
 *(Hết phần mở rộng chuyên sâu file 46 — xem thêm file 45 cho chuỗi Reversal 3 tầng, file 47 cho RDRB, và file 48 cho 1st Presented FVG trong cùng bộ Deep Dive 2026-07-28.)*
 
 > [!tip] Liên kết với các note khác trong vault khi backtest
-> Khi ghi log các case theo mục A3, đối chiếu thêm với [[04 - Breaker Block]] cho định nghĩa Breaker gốc, [[17 - Inverse Fair Value Gap - iFVG]] cho định nghĩa IFVG gốc, [[27 - Premium Discount]] cho điều kiện P/D trong Golden Rule, và [[10 - Consequent Encroachment (Mean Threshold)]] cho cách xác định CE dùng làm mức entry limit — giữ định nghĩa nhất quán giữa các note tránh trường hợp một khái niệm bị diễn giải khác nhau ở hai nơi trong vault theo thời gian.
+> Khi ghi log các case theo mục A3, đối chiếu thêm với [[04-Breaker-Block]] cho định nghĩa Breaker gốc, [[17-Inverse-Fair-Value-Gap-iFVG]] cho định nghĩa IFVG gốc, [[27-Premium-Discount]] cho điều kiện P/D trong Golden Rule, và [[10-Consequent-Encroachment-Mean-Threshold]] cho cách xác định CE dùng làm mức entry limit — giữ định nghĩa nhất quán giữa các note tránh trường hợp một khái niệm bị diễn giải khác nhau ở hai nơi trong vault theo thời gian.
 
 > [!warning] Nhắc lại: Golden Rule không có ngoại lệ "gần đúng"
 > Một IFVG chỉ thoả một trong hai điều kiện Golden Rule (ví dụ đúng vị trí trong chân giá nhưng sai phía P/D, hoặc ngược lại) không phải là "Reaper yếu hơn" — nó đơn giản không phải Reaper IFVG theo đúng định nghĩa và không nên được gán conviction tương tự. Đây là điểm dễ bị trôi dần theo thời gian (xem D-20) nếu không tự kiểm tra định kỳ.
@@ -686,7 +686,7 @@ Một điểm cần phản biện thêm về toàn bộ khung "đám đông vào
 Để tổng hợp lại toàn bộ mục A: (1) Breaker thu hút thanh khoản đám đông → (2) giá chạy xuyên tạo cascade stop làm nhiên liệu → (3) Reaper IFVG là nơi lực đối ứng cạn vì đó là dấu vết displacement gốc mạnh nhất → (4) về mặt định lượng, entry tại Reaper cho R:R tốt hơn Breaker do cơ chế hình học độc lập với động cơ tổ chức → (5) nhưng toàn bộ chuỗi chỉ có giá trị nếu Golden Rule được áp dụng nghiêm ngặt (elimination, không phải accumulation) và bối cảnh HTF phù hợp (không phải trend cực mạnh không hồi) → (6) giá trị thật của toàn bộ chuỗi chỉ được xác nhận bằng backtest song song Breaker-entry vs Reaper-entry trên dữ liệu và công cụ cụ thể của từng người, theo đúng thiết kế thí nghiệm ở mục A3.
 
 > [!note] Về mối quan hệ với Daily Bias
-> Toàn bộ khung phân tích ở mục A chỉ có ý nghĩa khi Daily Bias (xem [[12 - Daily Bias]]) đã được xác định rõ trước đó — Reaper IFVG không phải công cụ để tự suy ra hướng thị trường, mà là công cụ để tinh chỉnh điểm vào theo đúng hướng đã được xác định từ trước bằng phân tích top-down.
+> Toàn bộ khung phân tích ở mục A chỉ có ý nghĩa khi Daily Bias (xem [[12-Daily-Bias]]) đã được xác định rõ trước đó — Reaper IFVG không phải công cụ để tự suy ra hướng thị trường, mà là công cụ để tinh chỉnh điểm vào theo đúng hướng đã được xác định từ trước bằng phân tích top-down.
 
 > [!tip] Câu hỏi tự kiểm tra nhanh trước khi vào lệnh tại Reaper IFVG
 > 1. Golden Rule có thoả đủ CẢ HAI điều kiện chưa (không phải chỉ một)?

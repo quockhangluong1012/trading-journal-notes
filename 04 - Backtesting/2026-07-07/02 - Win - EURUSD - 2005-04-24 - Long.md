@@ -45,7 +45,7 @@ tags:
 | Result               | Win                                   |
 | Session              | New York                              |
 | Setup                | ICT 2022 Model                        |
-| Entry Model          | [[07 - Unicorn Model\|Unicorn Model]] |
+| Entry Model          | [[07 - Unicorn Model|Unicorn Model]] |
 | Entry Timeframe      | M5                                    |
 | HTF Bias             | Bullish                               |
 | Bias Correct?        | Yes                                   |
@@ -174,7 +174,7 @@ tags:
 
 ### Bài học kỹ thuật
 
-- **Swing high/low M5 dùng làm TP thực chất là một vũng [[20 - Liquidity Sweep|BSL/SSL]]** — giá bị *draw* tới để **quét** rồi mới đảo, chứ không "hướng tới cái đỉnh". Vì vậy nên đặt TP **nhỉnh dưới đỉnh vài pip** (front-run liquidity) thay vì đặt ngay tại/vượt đỉnh → tăng tỉ lệ khớp TP và giải quyết đúng nỗi "giá gần chạm TP rồi quay đầu".
+- **Swing high/low M5 dùng làm TP thực chất là một vũng [[20-Liquidity-Sweep|BSL/SSL]]** — giá bị *draw* tới để **quét** rồi mới đảo, chứ không "hướng tới cái đỉnh". Vì vậy nên đặt TP **nhỉnh dưới đỉnh vài pip** (front-run liquidity) thay vì đặt ngay tại/vượt đỉnh → tăng tỉ lệ khớp TP và giải quyết đúng nỗi "giá gần chạm TP rồi quay đầu".
 - **TP tại đỉnh M5 gần nhất chỉ tối ưu win rate**, nó cắt cụt các lệnh còn draw HTF cao hơn (đánh đổi *hit rate ↔ average R*). Lệnh này rơi đúng vào kịch bản đó: TP nằm ở **BSL trung gian** (đường đỏ dưới), còn một swing high cao hơn (đường đỏ trên) **chưa bị quét** → đáng lẽ nên giữ một phần làm runner.
 - **Quyết định "cắt hết hay để runner" phải dựa trên bản đồ Draw on Liquidity đa khung** (đỉnh M5 là *điểm đến cuối* hay *trạm trung gian*?), lấy từ phân tích H1/D1 (draw = PDH/PWH), **không dựa vào cảm giác**.
 
@@ -317,6 +317,6 @@ Distinguishing observable: 3 giá nến cấu thành FVG H1 — nếu xác nhậ
 
 ### Liên kết
 
-- Concept: [[Trading Journal/03 - Playbooks/3.2 - Setups/ICT 2022 Model]] · [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[13 - FVG  - Fair Value Gap]] · [[26 - OTE - Optimal Trade Entry]]
+- Concept: [[Trading Journal/03 - Playbooks/3.2 - Setups/ICT 2022 Model]] · [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[13-FVG-Fair-Value-Gap]] · [[26-OTE-Optimal-Trade-Entry]]
 - Dashboard: [[_Backtest Dashboard]]
-- Mistake liên quan: [[Mistake - ]]
+- Mistake liên quan: _(chưa gán note lỗi)_

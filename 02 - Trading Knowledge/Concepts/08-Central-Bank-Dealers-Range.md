@@ -42,7 +42,7 @@ common_mistakes:
 **Khái niệm:**
 Central Bank Dealers Range là vùng giá tích lũy hình thành trong khoảng thời gian các dealer ngân hàng trung ương "án binh" cuối phiên New York, trước khi phiên Á mở. Trong cách dạy ICT cổ điển, cửa sổ đo là **14:00–20:00 giờ New York** (tương đương **20:00–02:00 GMT** tùy DST). Ta đo **high và low** của vùng này — ưu tiên dùng **thân nến (body)** thay vì bóng nến — để xác định kích thước range.
 
-Từ kích thước range đó, ta chiếu các bội số **standard deviation (độ lệch chuẩn)** lên trên và xuống dưới: **+1 SD, +2 SD, +3 SD** và **-1 SD, -2 SD, -3 SD**. Mỗi SD = một lần chiều cao của CBDR. Các mức này trở thành **mục tiêu giá / vùng thanh khoản dự kiến** cho expansion của phiên Á và London. Xem thêm [[31 - Standard Deviation]] để hiểu bản chất phép chiếu.
+Từ kích thước range đó, ta chiếu các bội số **standard deviation (độ lệch chuẩn)** lên trên và xuống dưới: **+1 SD, +2 SD, +3 SD** và **-1 SD, -2 SD, -3 SD**. Mỗi SD = một lần chiều cao của CBDR. Các mức này trở thành **mục tiêu giá / vùng thanh khoản dự kiến** cho expansion của phiên Á và London. Xem thêm [[31-Standard-Deviation]] để hiểu bản chất phép chiếu.
 
 ![[CBDR-Advanced-SD-Projection.svg|697]]
 
@@ -56,12 +56,12 @@ Từ kích thước range đó, ta chiếu các bội số **standard deviation 
 
 **Mục đích trong ICT:**
 - Cung cấp **target / draw on liquidity** đo lường được cho phiên sắp tới (giá thường chạy tới +1 hoặc +2 SD).
-- Kết hợp với [[12 - Daily Bias]] để biết giá có khả năng chiếu lên SD trên (bias bullish) hay xuống SD dưới (bias bearish).
+- Kết hợp với [[12-Daily-Bias]] để biết giá có khả năng chiếu lên SD trên (bias bullish) hay xuống SD dưới (bias bearish).
 - Định khung **Premium/Discount tạm thời** quanh range tích lũy.
 - Hỗ trợ canh **AMD** (Accumulation – Manipulation – Distribution): CBDR là pha Accumulation, manipulation thường quét một phía SD gần rồi distribution chạy về phía SD đối diện.
 
 **Vì sao khái niệm này quan trọng:**
-CBDR là một trong số ít công cụ ICT cho ra **target định lượng** thay vì chỉ định tính. Nó giúp trả lời "giá có thể chạy bao xa" trong phiên Á/London — đặc biệt hữu ích cho [[18 - Kill Zones]] London. Tuy nhiên nó nhạy cảm với chất lượng range: chỉ phát huy khi range hẹp và sạch.
+CBDR là một trong số ít công cụ ICT cho ra **target định lượng** thay vì chỉ định tính. Nó giúp trả lời "giá có thể chạy bao xa" trong phiên Á/London — đặc biệt hữu ích cho [[18-Kill-Zones]] London. Tuy nhiên nó nhạy cảm với chất lượng range: chỉ phát huy khi range hẹp và sạch.
 
 **Nó giúp trả lời câu hỏi nào trên chart?**
 - Phiên Á/London tới giá có thể chạy tới target nào (theo SD)?
@@ -73,7 +73,7 @@ CBDR là một trong số ít công cụ ICT cho ra **target định lượng** 
 - Không phải tín hiệu entry — chỉ là khung target Time & Price.
 - Không phải lúc nào cũng dùng được: range rộng/tin tức → bỏ.
 - Không đáng tin trên NDX/XAUUSD như trên EURUSD/GBPUSD.
-- Không thay thế bias: SD trên hay dưới được ưu tiên là do [[12 - Daily Bias]] quyết định.
+- Không thay thế bias: SD trên hay dưới được ưu tiên là do [[12-Daily-Bias]] quyết định.
 - Không phải mọi SD đều bị chạm; thường giá tôn trọng +1/+2 SD là chính.
 
 ---
@@ -99,7 +99,7 @@ CBDR là một trong số ít công cụ ICT cho ra **target định lượng** 
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Range CBDR **hẹp** (~40 pip hoặc nhỏ hơn trên EURUSD/GBPUSD).
 - [ ] Không có tin tức lớn rơi vào cửa sổ đo (NFP, FOMC, CPI...).
-- [ ] Có [[12 - Daily Bias]] rõ ràng để chọn hướng SD ưu tiên.
+- [ ] Có [[12-Daily-Bias]] rõ ràng để chọn hướng SD ưu tiên.
 - [ ] Đang giao dịch FX major (EURUSD/GBPUSD).
 - [ ] Phiên London/NY sắp mở — cần target cho expansion.
 - [ ] SD projection trùng với một POI HTF hoặc liquidity pool rõ.
@@ -109,7 +109,7 @@ CBDR là một trong số ít công cụ ICT cho ra **target định lượng** 
 - [ ] Giao dịch chỉ số/vàng (NDX, XAUUSD) — kém tin cậy, hay gap.
 - [ ] Không có bias rõ, không biết ưu tiên SD trên hay dưới.
 - [ ] Cuối tuần / ngày lễ thanh khoản mỏng, range méo.
-- [ ] Có [[24 - New Week Opening Gap]] lớn làm lệch cấu trúc đo.
+- [ ] Có [[24-New-Week-Opening-Gap]] lớn làm lệch cấu trúc đo.
 
 ---
 
@@ -129,7 +129,7 @@ CBDR là một trong số ít công cụ ICT cho ra **target định lượng** 
 
 ### Điều kiện tăng xác suất
 - [ ] Range rất hẹp (≤ ~40 pip FX) → SD projection sắc nét.
-- [ ] SD target trùng với liquidity pool ([[07 - Buy-side Liquidity]]/[[30 - Sell-side Liquidity]]) HTF.
+- [ ] SD target trùng với liquidity pool ([[07-Buy-side-Liquidity]]/[[30 - Sell-side Liquidity]]) HTF.
 - [ ] Bias rõ → ưu tiên một phía SD.
 - [ ] Có manipulation quét SD gần trước khi expansion về SD xa (AMD).
 - [ ] Phiên có volatility kỳ vọng (London/NY) để giá chạy đủ tới SD.
@@ -154,11 +154,11 @@ CBDR là một trong số ít công cụ ICT cho ra **target định lượng** 
 ![[CBDR-Advanced-AMD-Cycle.svg|697]]
 
 > [!info] CBDR đọc theo khung AMD
-> CBDR chính là pha **Accumulation** (xem [[02 - AMD]]): vùng tích lũy hẹp làm gốc. **Manipulation** thường quét -1 SD / SSL ([[30 - Sell-side Liquidity]]) phiên Á để bẫy trước, rồi **Distribution** mới chạy expansion về +2 SD / BSL ([[07 - Buy-side Liquidity]]) đúng bias bullish. Timeline: NY cuối phiên → Á (sweep) → London (expansion).
+> CBDR chính là pha **Accumulation** (xem [[02-AMD]]): vùng tích lũy hẹp làm gốc. **Manipulation** thường quét -1 SD / SSL ([[30 - Sell-side Liquidity]]) phiên Á để bẫy trước, rồi **Distribution** mới chạy expansion về +2 SD / BSL ([[07-Buy-side-Liquidity]]) đúng bias bullish. Timeline: NY cuối phiên → Á (sweep) → London (expansion).
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
-- **Dealing range HTF:** giá đang Premium hay Discount của [[12 - Dealing Range]] lớn?
+- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
+- **Dealing range HTF:** giá đang Premium hay Discount của [[12-Dealing-Range]] lớn?
 - **Liquidity target gần nhất:** BSL/SSL nào giá đang hướng tới — có trùng mức SD không?
 - **POI HTF quan trọng:** FVG/OB D1/H4 nằm gần SD nào.
 
@@ -205,7 +205,7 @@ Invalid: đóng nến vượt -2 SD ngược bias / range gốc quá rộng
 - [ ] Giá đóng nến vượt sâu qua SD ngược bias mà không phản ứng.
 - [ ] Bias không rõ, không biết chọn SD nào.
 - [ ] Sản phẩm biến động lớn (indices/gold) làm SD lệch nhiều.
-- [ ] Gap đầu tuần ([[24 - New Week Opening Gap]]) làm méo cấu trúc.
+- [ ] Gap đầu tuần ([[24-New-Week-Opening-Gap]]) làm méo cấu trúc.
 
 ![[CBDR-Advanced-Clean-vs-Dirty.svg|697]]
 
@@ -223,10 +223,10 @@ Invalid: đóng nến vượt -2 SD ngược bias / range gốc quá rộng
 
 ### Nâng cao — Kết hợp CBDR SD với Silver Bullet / Kill Zones (target × timing)
 
-CBDR và [[18 - Kill Zones]] trả lời hai câu hỏi khác nhau và **bổ sung** cho nhau, không thay thế: **CBDR nói giá đi BAO XA (target theo SD), Kill Zone / Silver Bullet nói vào lệnh KHI NÀO (timing).** Một setup chất lượng cao là khi hai trục này giao nhau: SD projection cho một target đo lường được, còn kill zone cung cấp cửa sổ thanh khoản để cú expansion thực sự chạy tới target đó.
+CBDR và [[18-Kill-Zones]] trả lời hai câu hỏi khác nhau và **bổ sung** cho nhau, không thay thế: **CBDR nói giá đi BAO XA (target theo SD), Kill Zone / Silver Bullet nói vào lệnh KHI NÀO (timing).** Một setup chất lượng cao là khi hai trục này giao nhau: SD projection cho một target đo lường được, còn kill zone cung cấp cửa sổ thanh khoản để cú expansion thực sự chạy tới target đó.
 
 Trình tự thực chiến để ghép hai công cụ:
-1. **Đêm/pre-market:** đo CBDR, project SD, đánh dấu mức SD nào trùng liquidity pool HTF ([[07 - Buy-side Liquidity]] / [[30 - Sell-side Liquidity]]). Đây là "bản đồ target" tĩnh cho ngày.
+1. **Đêm/pre-market:** đo CBDR, project SD, đánh dấu mức SD nào trùng liquidity pool HTF ([[07-Buy-side-Liquidity]] / [[30 - Sell-side Liquidity]]). Đây là "bản đồ target" tĩnh cho ngày.
 2. **Kill zone mở (London 02:00–05:00 NY hoặc NY AM 08:30–11:00):** chờ manipulation quét SD gần đối diện bias, rồi entry theo ICT 2022 (sweep → MSS → displacement → FVG). Silver Bullet (10:00–11:00 NY) là cửa sổ hẹp đặc biệt hợp để "bóp cò" khi SD target đã rõ.
 3. **Quản lý:** dùng +1 SD làm TP1 (thường trong tầm với của một kill zone), +2 SD / BSL làm TP2. Nếu +2 SD nằm quá xa so với range trung bình một phiên của sản phẩm, hạ kỳ vọng xuống +1 SD.
 
@@ -398,7 +398,7 @@ HTF Bullish Bias
 - CBDR là **target tool**, không phải entry signal.
 - Chất lượng range quyết định tất cả: hẹp & sạch mới đáng tin.
 - Đo theo body, nhất quán, chú ý múi giờ NY và DST.
-- SD ưu tiên phải đồng hướng [[12 - Daily Bias]].
+- SD ưu tiên phải đồng hướng [[12-Daily-Bias]].
 - Mạnh trên FX major; cẩn trọng trên gold/indices.
 
 ### Quy tắc cá nhân rút ra
@@ -442,11 +442,11 @@ HTF Bullish Bias
 
 3. **Đo theo thân nến (body), nhất quán một quy ước.** Bóng nến gây nhiễu làm range phồng lên và đẩy SD ra xa vô lý. Dùng body high/low theo cách dạy cổ điển, và nếu muốn thử đo cả bóng thì backtest riêng — đừng đổi qua lại giữa hai cách trong cùng một hệ thống.
 
-4. **Để Daily Bias quyết định phía SD ưu tiên.** CBDR chiếu cả SD trên lẫn dưới, nhưng chỉ một phía là target chính theo [[12 - Daily Bias]]: bias bullish → ưu tiên +SD (BSL phía trên); bias bearish → ưu tiên −SD. Không có bias rõ → không chọn được SD → không trade theo CBDR.
+4. **Để Daily Bias quyết định phía SD ưu tiên.** CBDR chiếu cả SD trên lẫn dưới, nhưng chỉ một phía là target chính theo [[12-Daily-Bias]]: bias bullish → ưu tiên +SD (BSL phía trên); bias bearish → ưu tiên −SD. Không có bias rõ → không chọn được SD → không trade theo CBDR.
 
-5. **Chỉ trade khi SD target trùng một liquidity pool / POI HTF (confluence).** Một mức +2 SD đơn thuần yếu hơn nhiều so với +2 SD trùng BSL/PDH hoặc một FVG HTF. Ưu tiên các phiên mà SD projection rơi đúng vào [[07 - Buy-side Liquidity|BSL]]/[[30 - Sell-side Liquidity|SSL]] có ý nghĩa — đó là nơi giá thực sự bị hút về.
+5. **Chỉ trade khi SD target trùng một liquidity pool / POI HTF (confluence).** Một mức +2 SD đơn thuần yếu hơn nhiều so với +2 SD trùng BSL/PDH hoặc một FVG HTF. Ưu tiên các phiên mà SD projection rơi đúng vào [[07-Buy-side-Liquidity|BSL]]/[[30 - Sell-side Liquidity|SSL]] có ý nghĩa — đó là nơi giá thực sự bị hút về.
 
-6. **Dùng SD làm TP, entry theo ICT 2022; kết hợp Kill Zone cho timing.** CBDR trả lời "đi bao xa", [[18 - Kill Zones]]/Silver Bullet trả lời "vào lúc nào". Vào lệnh theo chuỗi sweep → MSS → displacement → FVG tại discount/premium, đặt +1 SD làm TP1 và +2 SD (hoặc pool trùng) làm TP2; stop nằm ngoài điểm sweep, KHÔNG tại mức SD.
+6. **Dùng SD làm TP, entry theo ICT 2022; kết hợp Kill Zone cho timing.** CBDR trả lời "đi bao xa", [[18-Kill-Zones]]/Silver Bullet trả lời "vào lúc nào". Vào lệnh theo chuỗi sweep → MSS → displacement → FVG tại discount/premium, đặt +1 SD làm TP1 và +2 SD (hoặc pool trùng) làm TP2; stop nằm ngoài điểm sweep, KHÔNG tại mức SD.
 
 7. **Cẩn trọng trên gold/indices và backtest riêng từng sản phẩm.** NDX/XAUUSD biến động lớn và hay gap khiến SD kém tin cậy hơn EURUSD/GBPUSD. Đừng áp cùng một kỳ vọng SD cho mọi sản phẩm — thống kê tỉ lệ chạm +1/+2/+3 SD riêng cho từng cặp/phiên qua 20–30 mẫu ([[04 - Backtesting]]) rồi mới đưa vào playbook.
 
@@ -464,7 +464,7 @@ HTF Bullish Bias
 
 Khung 14:00–20:00 giờ New York là thời điểm **dealer bank London đã hết ca, dealer Mỹ đang giảm hoạt động cuối ngày, và dealer châu Á-Thái Bình Dương chưa vào ca**. Đây không phải hiện tượng thần bí — nó là hệ quả cơ học của việc thanh khoản ngoại hối được cung cấp chủ yếu bởi các desk có giờ làm việc cố định theo múi giờ. Khi số lượng market maker tích cực giảm, order book tự nhiên mỏng đi, và các market maker còn lại **nới spread và giữ giá trong một biên hẹp** để tránh bị "adverse selection" (bị các bên có thông tin tốt hơn khai thác) trong lúc thanh khoản đối ứng ít.
 
-Kết quả orderflow: range hẹp không phải vì "không có gì xảy ra", mà vì cấu trúc vi mô của thị trường (microstructure) tại giờ đó có ít đối tác thật sẵn sàng di chuyển giá xa. Đây là điểm khác biệt quan trọng với AMD Accumulation ở [[02 - AMD]]: AMD accumulation là **TWAP/VWAP đang âm thầm gom lệnh có chủ đích**; CBDR hẹp trước hết là **hệ quả bị động của lịch làm việc**, dù hai điều này có thể xảy ra đồng thời.
+Kết quả orderflow: range hẹp không phải vì "không có gì xảy ra", mà vì cấu trúc vi mô của thị trường (microstructure) tại giờ đó có ít đối tác thật sẵn sàng di chuyển giá xa. Đây là điểm khác biệt quan trọng với AMD Accumulation ở [[02-AMD]]: AMD accumulation là **TWAP/VWAP đang âm thầm gom lệnh có chủ đích**; CBDR hẹp trước hết là **hệ quả bị động của lịch làm việc**, dù hai điều này có thể xảy ra đồng thời.
 
 ### 15.2. "Standard deviation" trong CBDR — ẩn dụ hay thống kê thật?
 
@@ -569,7 +569,7 @@ Vào các ngày đáo hạn quyền chọn FX lớn (thường giữa tháng, li
 
 ### 17.6. Edge case #6 — Thứ Hai đầu tuần: CBDR đêm Chủ Nhật/Thứ Hai không đại diện cho gì cả
 
-CBDR của tối Chủ Nhật sang Thứ Hai (hoặc tối Thứ Hai đo cho Thứ Ba) thường bị ảnh hưởng bởi [[24 - New Week Opening Gap]] — thanh khoản đầu tuần mỏng hơn bình thường, nhiều lệnh còn đang "định vị lại" sau khi thị trường mở cửa cuối tuần. Range CBDR đêm Chủ Nhật thường không tuân theo hành vi "dealer nghỉ" điển hình vì bản chất phiên là mở cửa lại toàn thị trường, không phải một khoảng nghỉ giữa hai ca làm việc liên tục. **Cách nhận diện sớm:** đơn giản — biết trước đó là tối Chủ Nhật/đầu tuần, tự động hạ độ tin cậy CBDR xuống. **Cách xử lý:** với ngày Thứ Hai, ưu tiên quan sát hơn trade theo SD; nếu có gap đầu tuần lớn, bỏ hẳn CBDR cho tới Thứ Ba khi nhịp giao dịch bình thường trở lại.
+CBDR của tối Chủ Nhật sang Thứ Hai (hoặc tối Thứ Hai đo cho Thứ Ba) thường bị ảnh hưởng bởi [[24-New-Week-Opening-Gap]] — thanh khoản đầu tuần mỏng hơn bình thường, nhiều lệnh còn đang "định vị lại" sau khi thị trường mở cửa cuối tuần. Range CBDR đêm Chủ Nhật thường không tuân theo hành vi "dealer nghỉ" điển hình vì bản chất phiên là mở cửa lại toàn thị trường, không phải một khoảng nghỉ giữa hai ca làm việc liên tục. **Cách nhận diện sớm:** đơn giản — biết trước đó là tối Chủ Nhật/đầu tuần, tự động hạ độ tin cậy CBDR xuống. **Cách xử lý:** với ngày Thứ Hai, ưu tiên quan sát hơn trade theo SD; nếu có gap đầu tuần lớn, bỏ hẳn CBDR cho tới Thứ Ba khi nhịp giao dịch bình thường trở lại.
 
 ### 17.7. Edge case #7 — Thứ Sáu chiều: range đo cho phiên Á tối Thứ Sáu gần như vô nghĩa vì thanh khoản cuối tuần
 
@@ -618,7 +618,7 @@ Xem chi tiết đầy đủ trong sơ đồ minh họa.
 
 **Quyết định & lý do:** áp dụng rule mục 17.2 (range > 150% ATR trung bình → CBDR invalid) ngay lập tức. Range 145 điểm so với ATR trung bình cửa sổ ~40 điểm là 362% — vượt xa ngưỡng cảnh báo. Quyết định: **không tính SD cho ngày này**, ghi chú "CBDR invalid — Fed speech spike" vào journal, quay lại dùng liquidity pool HTF thuần (PDH/PDL) làm target thay thế.
 
-**Kết quả:** phiên Á/London hôm đó biến động thất thường, quét cả hai phía nhiều lần (Seek & Destroy profile, xem [[12 - Daily Bias]] mục 7.4) — nếu đã đặt TP tại +1/+2 SD từ range bị phồng, target sẽ nằm ở vị trí hoàn toàn sai so với hành vi giá thật. Không mở lệnh nào theo CBDR ngày đó; chỉ trade một setup nhỏ theo PDH break thuần túy với size giảm, kết quả +0.8R — khiêm tốn nhưng đúng kỷ luật.
+**Kết quả:** phiên Á/London hôm đó biến động thất thường, quét cả hai phía nhiều lần (Seek & Destroy profile, xem [[12-Daily-Bias]] mục 7.4) — nếu đã đặt TP tại +1/+2 SD từ range bị phồng, target sẽ nằm ở vị trí hoàn toàn sai so với hành vi giá thật. Không mở lệnh nào theo CBDR ngày đó; chỉ trade một setup nhỏ theo PDH break thuần túy với size giảm, kết quả +0.8R — khiêm tốn nhưng đúng kỷ luật.
 
 **Bài học chỉ rút ra được nhờ case này:** khả năng NHẬN RA và TỪ CHỐI một range bị nhiễm — ngay cả khi không biết chính xác nguyên nhân — quan trọng hơn khả năng tính SD chính xác. Checklist "so range với ATR trung bình" là một bộ lọc định lượng dùng được ngay, không cần biết trước lịch phát biểu ngoài kế hoạch.
 

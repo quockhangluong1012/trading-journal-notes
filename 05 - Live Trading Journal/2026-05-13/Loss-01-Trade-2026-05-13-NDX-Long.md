@@ -16,8 +16,8 @@ pnl: -129
 r_multiple:
 risk_percent: 5%
 mistakes:
-  - "[[02 - Mistake - Enter before liquidity sweep]]"
-  - "[[07 - Mistake - Risk more than 0.5% total account]]"
+  - "[[02-Mistake-Enter-before-liquidity-sweep]]"
+  - "[[07-Mistake-Risk-more-than-0.5-total-account]]"
 tags:
 planned_rr: 2.2
 da_verdict: BROKEN
@@ -170,10 +170,10 @@ Giá đang trên đường hồi về OB khung H1
 
 - **Result**: Hit SL (khớp exit_price = stop_loss = 29,085.6 theo bản trùng có prose đầy hơn — xem ghi chú trùng lệnh ở mục 8).
 - **Mistake chính**:
-  - [[02 - Mistake - Enter before liquidity sweep]]
+  - [[02-Mistake-Enter-before-liquidity-sweep]]
 - **Nguyên nhân gốc rễ**:
-  - [[02 - Mistake - Enter before liquidity sweep]]
-  - [[07 - Mistake - Risk more than 0.5% total account]]
+  - [[02-Mistake-Enter-before-liquidity-sweep]]
+  - [[07-Mistake-Risk-more-than-0.5-total-account]]
 - **Tại sao lệnh này thua/thắng?**
   - `(field trống trong bản gốc — không điền phân tích mới ngoài dữ kiện đã có trong file, theo brief: không bịa phân tích cho nội dung không thuộc lệnh này)`.
 - **Thị trường đã cho tín hiệu cảnh báo nào trước khi thua?**
@@ -188,7 +188,7 @@ Giá đang trên đường hồi về OB khung H1
 ### Bài học kỹ thuật
 
 - (Bản gốc để trống — mọi mục Lesson Learned, Rule cần thêm/cập nhật đều trống hoàn toàn trong file này.)
-- Mistake tag `[[02 - Mistake - Enter before liquidity sweep]]` khớp trực tiếp với narrative M15 "tuy nhiên giá chưa về tới OB" trong bản trùng — nghĩa là entry xảy ra trước khi sweep chuẩn diễn ra, đúng như tag mô tả (O1, xem mục 8).
+- Mistake tag `[[02-Mistake-Enter-before-liquidity-sweep]]` khớp trực tiếp với narrative M15 "tuy nhiên giá chưa về tới OB" trong bản trùng — nghĩa là entry xảy ra trước khi sweep chuẩn diễn ra, đúng như tag mô tả (O1, xem mục 8).
 
 ### Bài học tâm lý
 

@@ -17,14 +17,16 @@ dashboard: Performance
 ## Performance Summary
 
 ```dataviewjs
-const TRADE_FOLDER = '"Trading Journal/05 - Live Trading Journal/Trades"';
+const TRADE_FOLDER = '"05 - Live Trading Journal/Trades"';
 
 function first(t,names){ for(const n of names){ if(t[n]!==undefined&&t[n]!==null&&t[n]!=="") return t[n]; } return null; }
 function toText(v){ if(v===null||v===undefined) return ""; if(typeof v==="string") return v.replaceAll("[[","").replaceAll("]]","").trim(); if(v.path) return v.path.split("/").pop().replace(/\.md$/,""); if(v.display) return String(v.display); return String(v); }
 function tradeDate(t){ const d=first(t,["date","trade_date","tradeDate"]); if(d?.toISODate) return d.toISODate(); if(d) return String(d).slice(0,10); const m=t.file.name.match(/\d{4}-\d{2}-\d{2}/); if(m) return m[0]; return t.file.cday?.toISODate?.() ?? ""; }
 function result(t){ const raw=toText(first(t,["result","outcome","status","exit_reason"])).toLowerCase(); const name=t.file.name.toLowerCase(); if(raw.includes("win")||raw.includes("profit")||raw.includes("take profit")||raw==="tp"||name.includes("win")) return "Win"; if(raw.includes("loss")||raw.includes("stop")||raw.includes("stoploss")||raw.includes("stop loss")||raw==="sl"||name.includes("loss")) return "Loss"; if(raw.includes("be")||raw.includes("break even")||raw.includes("breakeven")) return "BE"; return "Unknown"; }
 function num(v){ if(v===null||v===undefined) return null; const m=String(v).replaceAll(",","").replaceAll("−","-").match(/-?\d+(\.\d+)?/); return m ? Number(m[0]) : null; }
-function rValue(t){ const explicit=num(first(t,["r_multiple","r","R","rMultiple","r-multiple"])); if(explicit!==null) return explicit; if(result(t)==="Loss") return -1; if(result(t)==="Win") return 1; return 0; }
+// Tra ve null khi note khong co r_multiple. KHONG bia +-1R: mot lenh chua do R
+// phai bi loai khoi moi phep tinh, khong duoc am tham dem thanh 1R.
+function rValue(t){ return num(first(t,["r_multiple","r","R","rMultiple","r-multiple"])); }
 function symbol(t){ return toText(first(t,["symbol","ticker","pair","instrument"])) || "Unknown"; }
 
 const trades = dv.pages(TRADE_FOLDER)
@@ -34,24 +36,33 @@ const trades = dv.pages(TRADE_FOLDER)
 
 const wins=trades.filter(t=>result(t)==="Win");
 const losses=trades.filter(t=>result(t)==="Loss");
-const totalR=trades.reduce((s,t)=>s+rValue(t),0);
-const avgR=trades.length ? totalR/trades.length : 0;
-const avgWin=wins.length ? wins.reduce((s,t)=>s+rValue(t),0)/wins.length : 0;
-const avgLoss=losses.length ? losses.reduce((s,t)=>s+rValue(t),0)/losses.length : 0;
+
+// Chi lenh CO r_multiple moi duoc vao phep tinh R. So lenh thieu R duoc hien thi
+// thanh mot the KPI rieng de khuyet tat lo ra, thay vi bi che bang so bia.
+const withR=trades.filter(t=>rValue(t)!==null);
+const missingR=trades.length-withR.length;
+const winsR=withR.filter(t=>result(t)==="Win");
+const lossesR=withR.filter(t=>result(t)==="Loss");
+
+const totalR=withR.reduce((s,t)=>s+rValue(t),0);
+const avgR=withR.length ? totalR/withR.length : 0;
+const avgWin=winsR.length ? winsR.reduce((s,t)=>s+rValue(t),0)/winsR.length : 0;
+const avgLoss=lossesR.length ? lossesR.reduce((s,t)=>s+rValue(t),0)/lossesR.length : 0;
 const winrate=(wins.length+losses.length) ? wins.length/(wins.length+losses.length)*100 : 0;
 
 let html=`
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:16px 0;">
   <div style="border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;"><div style="font-size:12px;opacity:.7;">Total trades</div><div style="font-size:28px;font-weight:700;">${trades.length}</div></div>
   <div style="border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;"><div style="font-size:12px;opacity:.7;">Winrate</div><div style="font-size:28px;font-weight:700;">${winrate.toFixed(1)}%</div></div>
-  <div style="border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;"><div style="font-size:12px;opacity:.7;">Total R</div><div style="font-size:28px;font-weight:700;">${totalR.toFixed(2)}R</div></div>
-  <div style="border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;"><div style="font-size:12px;opacity:.7;">Expectancy</div><div style="font-size:28px;font-weight:700;">${avgR.toFixed(2)}R</div></div>
+  <div style="border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;"><div style="font-size:12px;opacity:.7;">Total R <span style="opacity:.6;">(${withR.length} lenh co R)</span></div><div style="font-size:28px;font-weight:700;">${totalR.toFixed(2)}R</div></div>
+  <div style="border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;"><div style="font-size:12px;opacity:.7;">Expectancy <span style="opacity:.6;">(${withR.length} lenh co R)</span></div><div style="font-size:28px;font-weight:700;">${avgR.toFixed(2)}R</div></div>
   <div style="border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;"><div style="font-size:12px;opacity:.7;">Average win</div><div style="font-size:28px;font-weight:700;">${avgWin.toFixed(2)}R</div></div>
   <div style="border:1px solid var(--background-modifier-border);border-radius:12px;padding:14px;"><div style="font-size:12px;opacity:.7;">Average loss</div><div style="font-size:28px;font-weight:700;">${avgLoss.toFixed(2)}R</div></div>
+  <div style="border:1px solid ${missingR>0?"var(--color-red,#d64545)":"var(--background-modifier-border)"};border-radius:12px;padding:14px;"><div style="font-size:12px;opacity:.7;">Lenh THIEU r_multiple</div><div style="font-size:28px;font-weight:700;">${missingR}</div><div style="font-size:11px;opacity:.6;">bi loai khoi moi phep tinh R</div></div>
 </div>`;
 
 let cumulativeR=0;
-const data=trades.map((t,i)=>{ cumulativeR+=rValue(t); return {index:i+1,date:tradeDate(t),trade:t.file.name,r:cumulativeR}; });
+const data=withR.map((t,i)=>{ cumulativeR+=rValue(t); return {index:i+1,date:tradeDate(t),trade:t.file.name,r:cumulativeR}; });
 if(data.length){
   const width=900,height=340,pad=50;
   const minR=Math.min(0,...data.map(d=>d.r)), maxR=Math.max(0,...data.map(d=>d.r)), range=maxR-minR||1;
@@ -76,7 +87,7 @@ for(const t of trades){
   const s=symbol(t);
   groups[s]=groups[s]??{count:0,wins:0,losses:0,totalR:0};
   groups[s].count++;
-  groups[s].totalR+=rValue(t);
+  groups[s].totalR+=(rValue(t) ?? 0);
   if(result(t)==="Win") groups[s].wins++;
   if(result(t)==="Loss") groups[s].losses++;
 }

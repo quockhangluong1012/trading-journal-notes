@@ -216,7 +216,7 @@ tags:
 ## 4.1 Mistake Taxonomy
 
 ### A. Analysis Errors
-- [[09 - Mistake - Wrong daily bias]]
+- [[09-Mistake-Wrong-daily-bias]]
 - [[Mistake - Wrong H1 Bias]]
 - [[Mistake - Incorrect Dealing Range]]
 - [[Mistake - Wrong Draw on Liquidity]]
@@ -226,9 +226,9 @@ tags:
 ### B. Confirmation Errors
 - [[Mistake - No Liquidity Sweep]]
 - [[Mistake - MSS Not In POI Zone]]
-- [[08 - Mistake - Weak Displacement]]
+- [[08-Mistake-Weak-Displacement]]
 - [[Mistake - Entered Before Confirmation]]
-- [[10 - Mistake - FVG Not Valid]]
+- [[10-Mistake-FVG-Not-Valid]]
 - [[Mistake - Ignored Market Structure Context]]
 
 ### C. Execution Errors
@@ -243,7 +243,7 @@ tags:
 
 ### D. Psychology & Discipline Errors
 - [[Mistake - Revenge Trade]]
-- [[04 - Mistake - FOMO Entry]]
+- [[04-Mistake-FOMO-Entry]]
 - [[Mistake - Overtrading]]
 - [[Mistake - Trade Outside Kill Zone]]
 - [[Mistake - Ignored Daily Loss Limit]]

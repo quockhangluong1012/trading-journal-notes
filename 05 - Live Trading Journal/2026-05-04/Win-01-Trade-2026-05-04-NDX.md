@@ -184,10 +184,10 @@ da_opposite_case: "equally viable"
 
 - **Result**: Manual Close
 - **Mistake chính**:
-  - [[06 - Mistake - Not Have Market Structure Shift]]
+  - [[06-Mistake-Not-Have-Market-Structure-Shift]]
 - **Nguyên nhân gốc rễ**:
-  - [[06 - Mistake - Not Have Market Structure Shift]]
-  - [[07 - Mistake - Risk more than 0.5% total account]]
+  - [[06-Mistake-Not-Have-Market-Structure-Shift]]
+  - [[07-Mistake-Risk-more-than-0.5-total-account]]
 - **Tại sao lệnh này thua/thắng?**
   - Lệnh này thắng 1 phần là do may mắn. Tuy đã đúng hầu hết các confluence, nhưng thiếu 1 điều kiện quan trọng là MSS
 - **Thị trường đã cho tín hiệu cảnh báo nào trước khi thua?**
@@ -220,7 +220,7 @@ da_opposite_case: "equally viable"
 
 - [ ] Cần MSS xác nhận (bullet gốc)
 - [ ] **KIỂM TRA ĐƯỢC**: Trước khi entry, nếu ≥2 mục trong nhóm 4 điều kiện lõi ("Displacement", "MSS", "FVG/OB valid", "Entry trong POI") của checklist section 2 chưa tick `[x]`, KHÔNG entry — ghi log "SKIPPED - thiếu N/4 điều kiện lõi" thay vì vào lệnh và note post-hoc (đóng O1, O2).
-- [ ] **KIỂM TRA ĐƯỢC**: Khi risk_percent field ghi giá trị ≠ 0.5%, tự động gắn mistake tag 07 vào đúng field `mistakes:` (không phải chỉ "Nguyên nhân gốc rễ") tại thời điểm tạo file — kiểm bằng cách grep `risk_percent: 5%` phải luôn đi kèm `[[07 - Mistake...]]` trong field `mistakes:` (đóng finding rule-drift risk liên hệ CS-O1).
+- [ ] **KIỂM TRA ĐƯỢC**: Khi risk_percent field ghi giá trị ≠ 0.5%, tự động gắn mistake tag 07 vào đúng field `mistakes:` (không phải chỉ "Nguyên nhân gốc rễ") tại thời điểm tạo file — kiểm bằng cách grep `risk_percent: 5%` phải luôn đi kèm `[[07-Mistake-Risk-more-than-0.5-total-account]]` trong field `mistakes:` (đóng finding rule-drift risk liên hệ CS-O1).
 
 ---
 

@@ -23,8 +23,8 @@ last_reviewed: 2026-06-21
 created: 2026-06-20
 updated: 2026-07-28
 common_mistakes:
-  - "[[09 - Mistake - Wrong daily bias]]"
-  - "[[03 - Mistake - Entry When MSS not in POI Zone]]"
+  - "[[09-Mistake-Wrong-daily-bias]]"
+  - "[[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]"
   - "[[Mistake - Entry Before Liquidity Sweep]]"
 ---
 
@@ -307,7 +307,7 @@ HTF Bearish Bias
 
 ### 7.1. Power of Three & Midnight Open — trục thời gian của bias
 
-Daily Bias không chỉ là “hướng” — nó là kỳ vọng về **hình dạng của nến ngày** theo chu kỳ [[02 - AMD]] (Accumulation–Manipulation–Distribution):
+Daily Bias không chỉ là “hướng” — nó là kỳ vọng về **hình dạng của nến ngày** theo chu kỳ [[02-AMD]] (Accumulation–Manipulation–Distribution):
 
 ![[Daily-Bias-Advanced-PO3.svg]]
 
@@ -442,7 +442,7 @@ Ba cơ chế này là khung đọc các W bên dưới: Judas trễ = khâu gom 
 **Tình huống (NQ/NAS100):** bias bullish với draw là BSL tại PDH. Sáng dậy: futures **gap thẳng qua PDH** trong phiên overnight/premarket. Draw đã bị tiêu thụ khi mình chưa có mặt. Phản xạ sai: coi gap là "momentum xác nhận bias" và mua tiếp — thực tế giá đã ở nơi bias *kết thúc*, không phải nơi nó bắt đầu; xác suất cao NY AM sẽ là ngày rebalance ngược (lấp gap / tìm lại IRL bên dưới).
 
 **Rule đo được:**
-- Mỗi sáng với index: câu hỏi đầu tiên là **"overnight đã lấy mất draw của mình chưa?"** Nếu rồi → bias cũ đã hoàn thành; viết lại từ đầu với dealing range mới (thường bias đảo hoặc Neutral chờ NDOG/gap logic — xem [[23 - New Day Opening Gap]]).
+- Mỗi sáng với index: câu hỏi đầu tiên là **"overnight đã lấy mất draw của mình chưa?"** Nếu rồi → bias cũ đã hoàn thành; viết lại từ đầu với dealing range mới (thường bias đảo hoặc Neutral chờ NDOG/gap logic — xem [[23-New-Day-Opening-Gap]]).
 - Không bao giờ "kế thừa" bias hôm qua sang hôm nay mà chưa kiểm tra những gì overnight session đã tiêu thụ.
 
 > [!success] Tổng kết mục War Stories

@@ -342,7 +342,7 @@ Sáu tình huống đầu tiên dưới đây là bản mirror trực tiếp c�
 **Bài học:** Biên độ tương đối của Judas swing so với ATR gần đây là một bộ lọc chất lượng quan trọng — cấu trúc "đủ điều kiện trên giấy" không thay thế được việc đánh giá độ tin cậy của chính cú quét đó.
 
 > [!summary] Sáu ca — một thông điệp
-> Trước mỗi lệnh, xác nhận theo đúng thứ tự **timezone NY → HTF bullish bias → discount → 5m MSS**, rồi **chốt theo target scalp**. Kết quả từng lệnh (win/loss) là **nhiễu**; sự nhất quán của process mới là **tín hiệu**. Case 4–6 cho thấy có những lệnh "thua" vì lỗi tham chiếu cụ thể (gap cuối tuần) khác với các lỗi phổ biến bên Sell, và một số tình huống đòi hỏi đánh giá chất lượng Judas thay vì chỉ đếm đủ bước. Ghi `session`, `engine` và `missing_step` mỗi lệnh ([[07 - Reviews]]) để biến các kịch bản này thành phản xạ. Xem thêm setup ngược [[10 - Bread and Butter Sell Setup]], [[18 - Kill Zones]].
+> Trước mỗi lệnh, xác nhận theo đúng thứ tự **timezone NY → HTF bullish bias → discount → 5m MSS**, rồi **chốt theo target scalp**. Kết quả từng lệnh (win/loss) là **nhiễu**; sự nhất quán của process mới là **tín hiệu**. Case 4–6 cho thấy có những lệnh "thua" vì lỗi tham chiếu cụ thể (gap cuối tuần) khác với các lỗi phổ biến bên Sell, và một số tình huống đòi hỏi đánh giá chất lượng Judas thay vì chỉ đếm đủ bước. Ghi `session`, `engine` và `missing_step` mỗi lệnh ([[07 - Reviews]]) để biến các kịch bản này thành phản xạ. Xem thêm setup ngược [[10 - Bread and Butter Sell Setup]], [[18-Kill-Zones]].
 
 ---
 

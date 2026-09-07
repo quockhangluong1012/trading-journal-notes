@@ -24,7 +24,7 @@ updated: 2026-07-28
 > [ICT 2024 Mentorship Lecture 1 Notes — 08:30 AM Model + PDF](https://innercircletrader.net/tutorials/ict-2024/lecture-1/)
 
 > [!summary] Tóm tắt 1 câu
-> **Mô hình 08:30 AM NY (ICT 2024, Lecture 1) là mô hình time-based: ngồi trước máy từ 08:00 NY, chờ SAU 08:30 giá RAID một cụm [[#2. Định nghĩa chủ chốt|relative equal highs/lows]], rồi tạo [[21 - Market Structure Shift|MSS]]; vào lệnh khi giá hồi về PD array (Order Block / BISI-SIBI / Breaker) mà displacement để lại, target là draw on liquidity kế tiếp.**
+> **Mô hình 08:30 AM NY (ICT 2024, Lecture 1) là mô hình time-based: ngồi trước máy từ 08:00 NY, chờ SAU 08:30 giá RAID một cụm [[#2. Định nghĩa chủ chốt|relative equal highs/lows]], rồi tạo [[21-Market-Structure-Shift|MSS]]; vào lệnh khi giá hồi về PD array (Order Block / BISI-SIBI / Breaker) mà displacement để lại, target là draw on liquidity kế tiếp.**
 
 > [!important] Nguyên tắc cốt lõi
 > **"Không phải giá đi ĐÂU, mà là KHI NÀO giá đi."** Cú raid post-08:30 là trigger; entry TRƯỚC 08:30 là front-run. MSS là bước xác nhận bắt buộc — raid không kèm MSS thì không có lệnh. 15m cho bias, 1m chỉ là trigger.
@@ -41,12 +41,12 @@ updated: 2026-07-28
 - **Vào bàn trước 08:00 NY** (để chứng kiến quá trình build-up 08:00→08:30).
 - **Chỉ tập trung SAU 08:30 NY** — đây là cửa sổ setup.
 - **Ba khung (bỏ mọi thứ khác nếu bạn còn mới):**
-  - **15 phút** — chart mẹ: [[12 - Daily Bias|bias]] + [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)|draw on liquidity]] + inefficiency.
+  - **15 phút** — chart mẹ: [[12-Daily-Bias|bias]] + [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|draw on liquidity]] + inefficiency.
   - **5 phút** — bối cảnh cấu trúc.
   - **1 phút** — quan sát relative equal H/L và trigger entry.
 
 > [!tip] Liên hệ Macro
-> 08:30 rơi trong [[18 - Kill Zones|NY AM killzone]]; cú giải quyết thường trùng [[40 - Macro Times|macro]] 08:50 và 09:50. 09:30 (mở NYSE) khuếch đại setup trên NQ/ES.
+> 08:30 rơi trong [[18-Kill-Zones|NY AM killzone]]; cú giải quyết thường trùng [[40-Macro-Times|macro]] 08:50 và 09:50. 09:30 (mở NYSE) khuếch đại setup trên NQ/ES.
 
 ---
 
@@ -60,7 +60,7 @@ updated: 2026-07-28
 - **Order Block:** vùng tổ chức khớp lượng lớn lệnh, giá bật mạnh khỏi đó.
 - **Breaker Block:** khi giá quét thanh khoản của một đáy/relative equal lows rồi đảo lên phá swing high — các **nến tăng** trước cú quét là bullish breaker; **nến cuối** cùng màu là nhạy nhất (bearish breaker là ảnh gương).
 - **BISI:** FVG **up-closed** (tăng). **SIBI:** FVG **down-closed** (giảm).
-- **NWOG:** [[24 - New Week Opening Gap|New Week Opening Gap]] — gap giữa giá đóng cửa thứ Sáu và mở cửa Chủ nhật.
+- **NWOG:** [[24-New-Week-Opening-Gap|New Week Opening Gap]] — gap giữa giá đóng cửa thứ Sáu và mở cửa Chủ nhật.
 
 ---
 
@@ -73,12 +73,12 @@ updated: 2026-07-28
 
 **① Catalyst tin tức 08:30 ET.** Phần lớn dữ liệu kinh tế Mỹ quan trọng (CPI, NFP, PPI, Jobless Claims, Retail Sales) phát hành đúng **08:30 ET**. Tin tức tạo ra một cú tăng volume + biến động — đây là "cái cớ" hoàn hảo để giá **raid** cụm thanh khoản đã tích lũy từ 08:00→08:30. Ngay cả những ngày không có tin lớn, khung giờ này vẫn là mở màn NY AM nên vẫn có dòng lệnh tổ chức vào.
 
-**② NY AM killzone + macro windows.** 08:30 nằm ở đầu [[18 - Kill Zones|NY AM killzone]]. Cú "giải quyết" (đảo chiều/displacement thật) thường trùng các [[40 - Macro Times|macro]] 08:50 và 09:50. **09:30 mở cửa NYSE** bơm thanh khoản cổ phiếu → displacement trên NQ/ES sạch và mạnh nhất trong ngày.
+**② NY AM killzone + macro windows.** 08:30 nằm ở đầu [[18-Kill-Zones|NY AM killzone]]. Cú "giải quyết" (đảo chiều/displacement thật) thường trùng các [[40-Macro-Times|macro]] 08:50 và 09:50. **09:30 mở cửa NYSE** bơm thanh khoản cổ phiếu → displacement trên NQ/ES sạch và mạnh nhất trong ngày.
 
 **③ Cơ chế build-up → raid → phản công.** Từ 08:00→08:30 giá thường in ra các **relative equal highs/lows** — đám đông đặt stop và lệnh chờ quanh đó. Sau 08:30, thuật toán **raid** cụm thanh khoản này (nạp nhiên liệu đối ứng cho lệnh tổ chức), rồi **đảo chiều tạo MSS**. Bạn vào theo cú phản công tại PD array mà displacement để lại.
 
 > [!warning] Vì sao MSS bắt buộc
-> Raid **không kèm** MSS = thanh khoản đã bị lấy nhưng thị trường chưa "cam kết" hướng. Vào chỉ vì "vừa raid" là đoán mò. MSS (đóng qua swing đối diện + displacement) là bằng chứng khách quan rằng cú raid đã hoàn thành nhiệm vụ và giá chuyển hướng. Xem [[41 - Change in State of Delivery]] và [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] để hiểu sâu vì sao đám đông bị bẫy đúng tại relative equal.
+> Raid **không kèm** MSS = thanh khoản đã bị lấy nhưng thị trường chưa "cam kết" hướng. Vào chỉ vì "vừa raid" là đoán mò. MSS (đóng qua swing đối diện + displacement) là bằng chứng khách quan rằng cú raid đã hoàn thành nhiệm vụ và giá chuyển hướng. Xem [[41-Change-in-State-of-Delivery]] và [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] để hiểu sâu vì sao đám đông bị bẫy đúng tại relative equal.
 
 ---
 
@@ -224,7 +224,7 @@ Cùng trình tự raid → MSS → PD array, nhưng độ sạch và vai trò c�
 > [!important] 1m chỉ là trigger — 15m/H1 mới quyết định PHE
 > Sai lầm nâng cao phổ biến: thấy một chuỗi raid + MSS đẹp trên 1m và vào, nhưng nó **ngược** với draw on liquidity của khung 15m/H1. Kết quả: bạn đang counter-trend cú đẩy lớn hơn và thường bị "nuốt".
 
-**Quy trình đồng hướng (xem [[32 - Top-down Analysis (Multiple Timeframes)]]):**
+**Quy trình đồng hướng (xem [[32-Top-down-Analysis-Multiple-Timeframes]]):**
 1. **15m/H1:** xác định bias + DOL. Nếu DOL là BSL phía trên → sau 08:30 **chỉ tìm BUY**. Nếu DOL là SSL phía dưới → **chỉ tìm SELL**.
 2. Chờ 08:30. Giá thường **raid ngược DOL trước** (ví dụ raid SSL trong ngày bullish) để nạp nhiên liệu — đây là bước "lấy thanh khoản đối ứng".
 3. **Zoom 1m** sau raid: chờ MSS *theo hướng DOL 15m*, đánh dấu PD array, vào retest.
@@ -355,8 +355,8 @@ Những bài học dưới đây chắt ra từ live + backtest phiên 08:30, k�
 3. **Vào PD array đầu tiên sau MSS** (ưu tiên **Unicorn > FVG > OB > breaker**) — chi tiết về Unicorn xem [[07 - Unicorn Model]].
 4. **Khác biệt theo market:** NQ1/ES sạch nhất — 09:30 mở NYSE khuếch đại displacement; EURUSD/GBPUSD hay cho nhịp hồi vào range; XAUUSD wick dài → nới stop, **giảm size**.
 5. **Ngày CÓ tin cho displacement sạch nhưng whipsaw cao** — chờ **nến tin đầu đóng** rồi mới đọc MSS.
-6. **Compound trong ngày trend:** một ngày trend mạnh cho **nhiều** setup 08:30-style tại các macro kế tiếp (09:50, 10:00) **cùng hướng DOL** — mỗi lần tạo relative equal mới → raid → MSS là một cơ hội re-entry. Cùng gia đình logic với [[08 - 7 AM Liquidity Hunt + IFVG Entry]].
-7. **Kỷ luật `missing_step`:** với mỗi lệnh thua/BE, ghi `missing_step` (`raid` / `mss` / `context15m` / `pdarray` / `stop` / `news`) và **thống kê hằng tuần** ([[07 - Reviews]]). Cần **≥30 mẫu**, backtest riêng ngày-có-tin vs ngày-không-tin. Nền tảng đọc đa khung: [[32 - Top-down Analysis (Multiple Timeframes)]]; định nghĩa MSS: [[21 - Market Structure Shift]].
+6. **Compound trong ngày trend:** một ngày trend mạnh cho **nhiều** setup 08:30-style tại các macro kế tiếp (09:50, 10:00) **cùng hướng DOL** — mỗi lần tạo relative equal mới → raid → MSS là một cơ hội re-entry. Cùng gia đình logic với [[08 - 7-AM-Liquidity-Hunt-IFVG-Entry]].
+7. **Kỷ luật `missing_step`:** với mỗi lệnh thua/BE, ghi `missing_step` (`raid` / `mss` / `context15m` / `pdarray` / `stop` / `news`) và **thống kê hằng tuần** ([[07 - Reviews]]). Cần **≥30 mẫu**, backtest riêng ngày-có-tin vs ngày-không-tin. Nền tảng đọc đa khung: [[32-Top-down-Analysis-Multiple-Timeframes]]; định nghĩa MSS: [[21-Market-Structure-Shift]].
 8. **Spread/slippage thật tại đúng giờ mô hình khác giá backtest.** Backtest thường lấy giá đóng nến lý tưởng; live tại 08:30:00-08:30:10 spread thực tế trên nhiều broker retail/CFD giãn rõ (đặc biệt vàng, chỉ số CFD) so với khung giờ bình thường. Nên **ghi riêng** slippage trung bình tại phút đầu tiên sau tin và cộng vào chi phí kỳ vọng thay vì so backtest với live như hai tập dự liệu tương đương.
 9. **Demo / live / tài khoản funded không phải cùng một trải nghiệm.** Demo thường khớp lý tưởng, không requote; live tài khoản cá nhân có slippage thật nhưng tâm lý ít bị bóp bởi luật drawdown ngày; **tài khoản funded/prop** thêm một lớp biến dạng hành vi — luật max daily drawdown khiến trader dễ **thoát sớm trước TP** hoặc **bỏ setup A+ muộn phiên** vì đã gần chạm ngưỡng lỗ ngày — hai hành vi này không xuất hiện khi backtest trên dự liệu lịch sử thuần. Khi so sánh kỳ vọng backtest với kết quả tài khoản funded, phải tách biệt rõ đâu là lỗi đọc model, đâu là hậu quả của luật quản lý rủi ro bị áp thêm.
 10. **Tâm lý sau 2-3 lệnh thua liên tiếp** là giai đoạn dễ vỡ quy tắc nhất: xu hướng tăng size để "gỡ lại" hoặc siết stop quá chặt vì sợ thua tiếp — cả hai đều phá vỡ đúng thứ quy tắc đã giúp chuỗi đúng ở điểm 1-6. Nên có quy tắc cứng: sau 3 lệnh thua liên tiếp trong cùng tuần, **giảm size 50%** cho đến khi có ≥1 lệnh thắng đúng quy trình.
@@ -382,7 +382,7 @@ Những bài học dưới đây chắt ra từ live + backtest phiên 08:30, k�
 ![[NY0830-Advanced-CaseStudy-Win.svg|720]]
 
 **Chuỗi:** bias 15m bearish (DOL = SSL dưới); build-up 08:00–08:30 dựng relative equal highs; sau 08:30 raid BSL; MSS xuống + displacement để lại SIBI; vào PD array đầu tiên (SIBI) tại retest; stop ngoài đỉnh post-08:30; TP tại DOL kế (SSL / đáy phiên trước).
-**Chẩn đoán:** đủ raid + MSS + PD array và **đồng hướng DOL 15m** → `missing_step: none`. Đây là chuỗi chuẩn của [[21 - Market Structure Shift]] trong phiên 08:30.
+**Chẩn đoán:** đủ raid + MSS + PD array và **đồng hướng DOL 15m** → `missing_step: none`. Đây là chuỗi chuẩn của [[21-Market-Structure-Shift]] trong phiên 08:30.
 **Bài học:** hình mẫu A+; khi chuỗi đúng thì kể cả một lần thua vẫn là "good loss".
 
 ### Case 2 — Loss (front-run / vào khi chưa MSS)
@@ -399,7 +399,7 @@ Những bài học dưới đây chắt ra từ live + backtest phiên 08:30, k�
 
 **Chuỗi (gãy):** 1m cho một chuỗi raid + MSS xuống rất đẹp, trader short; nhưng 15m đang hướng **LÊN** một BSL chưa chạm → cú "MSS xuống" đó chỉ là nhịp hồi (raid SSL) trong dòng tăng lớn hơn; giá đảo lên quét stop.
 **Chẩn đoán:** `missing_step: context15m`.
-**Bài học:** 1m chỉ là trigger; chỉ trade MSS 1m khi **đồng hướng DOL 15m** — bảo vệ bằng đọc top-down ([[32 - Top-down Analysis (Multiple Timeframes)]]).
+**Bài học:** 1m chỉ là trigger; chỉ trade MSS 1m khi **đồng hướng DOL 15m** — bảo vệ bằng đọc top-down ([[32-Top-down-Analysis-Multiple-Timeframes]]).
 
 ### Case 4 — No-Trade đúng (không tin, range chặt, không raid rõ)
 

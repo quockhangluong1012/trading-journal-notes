@@ -23,7 +23,7 @@ updated: 2026-07-28
 > **RDRB (Redelivered Rebalanced Price Range) là một PD array "ẩn" gồm HAI nến — giá deliver một chiều, kéo lại để lại một wick rồi redeliver tiếp cùng chiều — không để lại FVG nhìn thấy được, nhưng vùng giá giữa wick của nến TRƯỚC và nến SAU cặp đó vẫn hoạt động như support (bull) / resistance (bear).**
 
 > [!important] Nguyên tắc cốt lõi
-> Điểm mấu chốt của RDRB **không** nằm ở hai nến RDRB, mà ở cách **đánh dấu**: bỏ qua hai nến RDRB, đánh dấu **wick của nến ngay trước** và **wick của nến ngay sau** cặp đó — khoảng giá giữa hai wick này chính là RDRB price range. Vì delivery ở đây "cân bằng hiệu quả" (không có delay để lại imbalance), mắt thường không thấy gap, nhưng smart money vẫn để lại dấu chân ở vùng đó và bảo vệ nó khi giá quay lại. RDRB là **PD array**, dùng đúng như [[13 - FVG  - Fair Value Gap]] hay [[25 - OB - Order Block]]: chờ retest + xác nhận, không phải nút bấm.
+> Điểm mấu chốt của RDRB **không** nằm ở hai nến RDRB, mà ở cách **đánh dấu**: bỏ qua hai nến RDRB, đánh dấu **wick của nến ngay trước** và **wick của nến ngay sau** cặp đó — khoảng giá giữa hai wick này chính là RDRB price range. Vì delivery ở đây "cân bằng hiệu quả" (không có delay để lại imbalance), mắt thường không thấy gap, nhưng smart money vẫn để lại dấu chân ở vùng đó và bảo vệ nó khi giá quay lại. RDRB là **PD array**, dùng đúng như [[13-FVG-Fair-Value-Gap]] hay [[25-OB-Order-Block]]: chờ retest + xác nhận, không phải nút bấm.
 
 ---
 
@@ -63,7 +63,7 @@ updated: 2026-07-28
 **(c) Vì sao đánh dấu bằng wick nến bao quanh, không phải nến RDRB.** Hai nến RDRB là phần "đã giao xong" (đã cân bằng). Vùng **chưa được test lại** — vùng còn "mở" về mặt order flow — nằm ở **rìa**: wick của nến ngay trước (điểm khởi phát delivery) và wick của nến ngay sau (điểm kết thúc redelivery). Đánh dấu trên thân hai nến RDRB sẽ trỏ nhầm vào vùng đã cân bằng, làm lệch cả entry lẫn stop.
 
 > [!info] RDRB so với các PD array khác
-> FVG nói "có delay chưa giao, giá sẽ quay lại lấp". RDRB nói "vùng này đã được giao rồi giao lại trơn tru — nhưng vẫn là mốc engine cam kết, giá sẽ tôn trọng khi quay lại". Cùng họ hàng với [[03 - Balanced Price Range]] và [[41 - Change in State of Delivery]] ở chỗ đều đọc **cách giá được giao (delivery)**, không chỉ nhìn hình nến. RDRB là mảnh hiếm nên đừng ép nó xuất hiện ở mọi nơi.
+> FVG nói "có delay chưa giao, giá sẽ quay lại lấp". RDRB nói "vùng này đã được giao rồi giao lại trơn tru — nhưng vẫn là mốc engine cam kết, giá sẽ tôn trọng khi quay lại". Cùng họ hàng với [[03-Balanced-Price-Range]] và [[41-Change-in-State-of-Delivery]] ở chỗ đều đọc **cách giá được giao (delivery)**, không chỉ nhìn hình nến. RDRB là mảnh hiếm nên đừng ép nó xuất hiện ở mọi nơi.
 
 ---
 
@@ -93,11 +93,11 @@ Quy tắc thao tác:
 
 ### Khi nào RDRB có giá trị cao?
 
-- [ ] **Thuận HTF bias** (Daily/H4) — xem [[12 - Daily Bias]]; RDRB ngược trend hit-rate thấp hẳn
+- [ ] **Thuận HTF bias** (Daily/H4) — xem [[12-Daily-Bias]]; RDRB ngược trend hit-rate thấp hẳn
 - [ ] Nằm trong một **chân đẩy có hướng rõ** (directional leg), không phải giữa vùng đi ngang
-- [ ] Ở đúng vùng **Premium/Discount** phù hợp hướng vào ([[27 - Premium Discount]])
-- [ ] Xuất hiện trong **killzone / macro** ([[18 - Kill Zones]], [[40 - Macro Times]])
-- [ ] Có **draw on liquidity** rõ làm target ([[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]])
+- [ ] Ở đúng vùng **Premium/Discount** phù hợp hướng vào ([[27-Premium-Discount]])
+- [ ] Xuất hiện trong **killzone / macro** ([[18-Kill-Zones]], [[40-Macro-Times]])
+- [ ] Có **draw on liquidity** rõ làm target ([[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]])
 - [ ] Có kế hoạch chờ **LTF MSS** khi giá retest (không vào mù)
 
 ### Khi nào nên bỏ qua?
@@ -158,13 +158,13 @@ Cả hai đều là PD array — support (bull) / resistance (bear). RDRB là bi
 
 **Bước 6 — Hạ khung.** Xuống **M5/M1** khi giá vào range.
 
-**Bước 7 — Chờ LTF MSS.** Một **Market Structure Shift** ([[21 - Market Structure Shift]]) sạch bên trong range xác nhận phản ứng. Đây là *signal*.
+**Bước 7 — Chờ LTF MSS.** Một **Market Structure Shift** ([[21-Market-Structure-Shift]]) sạch bên trong range xác nhận phản ứng. Đây là *signal*.
 
 **Bước 8 — Entry.** Buy tại bullish RDRB / sell tại bearish RDRB, sau MSS.
 
-**Bước 9 — Stop.** **Vượt hẳn mép ĐỐI DIỆN** của RDRB range + một buffer nhỏ. Không parked ở thân nến RDRB (bị wick quét — xem mục Lỗi thường gặp). Tôn trọng **risk ≤0.5%/lệnh** ([[43 - Position Sizing]]).
+**Bước 9 — Stop.** **Vượt hẳn mép ĐỐI DIỆN** của RDRB range + một buffer nhỏ. Không parked ở thân nến RDRB (bị wick quét — xem mục Lỗi thường gặp). Tôn trọng **risk ≤0.5%/lệnh** ([[43-Position-Sizing]]).
 
-**Bước 10 — Target.** Draw on liquidity kế tiếp: old high/low, relative equal highs/lows, HTF FVG. Phân tầng theo [[16 - Internal & External Range Liquidity (IRL & ERL)]]: **T1 = IRL**, **T2 = ERL / external draw** ([[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]).
+**Bước 10 — Target.** Draw on liquidity kế tiếp: old high/low, relative equal highs/lows, HTF FVG. Phân tầng theo [[16-Internal-External-Range-Liquidity-IRL-ERL]]: **T1 = IRL**, **T2 = ERL / external draw** ([[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]).
 
 ---
 
@@ -396,11 +396,11 @@ Kinh nghiệm live trading phù hợp với gợi ý của file gốc: trên M1/
 
 ### A8. RDRB và mối quan hệ với Balanced Price Range — vì sao dễ gộp nhầm hai khái niệm
 
-File gốc đã liên hệ RDRB với [[03 - Balanced Price Range]] ở mục 2 (cùng họ hàng đọc "cách giá được giao"), nhưng đây cũng là một cặp khái niệm dễ gây nhầm lẫn nếu không phân biệt rõ. Balanced Price Range (BPR) trong định nghĩa ICT chuẩn thường mô tả vùng chồng lấp giữa hai FVG ngược hướng liên tiếp (một bullish FVG và một bearish FVG chồng lên nhau) — đây vẫn là một cấu trúc dựa trên FVG hiển thị, chỉ khác là có hai FVG chồng nhau thay vì một. RDRB hoàn toàn khác: không có FVG nào tồn tại cả, chỉ có hình dạng 2 nến deliver-redeliver. Điểm chung duy nhất giữa hai khái niệm là cả hai đều có chữ "balance/rebalance" trong tên gọi và đều mô tả một vùng giá đã đạt được một dạng "cân bằng" nào đó về order-flow — nhưng cơ chế hình thành hoàn toàn khác nhau. Khi ghi log hoặc thảo luận, cần gọi tên chính xác để tránh lẫn lộn hai khái niệm chỉ vì tên gọi gần giống nhau.
+File gốc đã liên hệ RDRB với [[03-Balanced-Price-Range]] ở mục 2 (cùng họ hàng đọc "cách giá được giao"), nhưng đây cũng là một cặp khái niệm dễ gây nhầm lẫn nếu không phân biệt rõ. Balanced Price Range (BPR) trong định nghĩa ICT chuẩn thường mô tả vùng chồng lấp giữa hai FVG ngược hướng liên tiếp (một bullish FVG và một bearish FVG chồng lên nhau) — đây vẫn là một cấu trúc dựa trên FVG hiển thị, chỉ khác là có hai FVG chồng nhau thay vì một. RDRB hoàn toàn khác: không có FVG nào tồn tại cả, chỉ có hình dạng 2 nến deliver-redeliver. Điểm chung duy nhất giữa hai khái niệm là cả hai đều có chữ "balance/rebalance" trong tên gọi và đều mô tả một vùng giá đã đạt được một dạng "cân bằng" nào đó về order-flow — nhưng cơ chế hình thành hoàn toàn khác nhau. Khi ghi log hoặc thảo luận, cần gọi tên chính xác để tránh lẫn lộn hai khái niệm chỉ vì tên gọi gần giống nhau.
 
 ### A9. Vai trò của Consequent Encroachment trong RDRB — có áp dụng được không?
 
-Với FVG và OB, Consequent Encroachment (CE — điểm giữa vùng, xem [[10 - Consequent Encroachment (Mean Threshold)]]) là một mức tham chiếu phổ biến cho entry limit. Với RDRB, vì range được xác định bởi hai wick ở hai đầu (không phải một vùng liên tục có "khối lượng đều" bên trong như FVG), việc áp dụng CE cần thận trọng hơn: điểm giữa hình học của RDRB range không nhất thiết mang cùng ý nghĩa "điểm cân bằng cung cầu" như CE của một FVG, vì bản chất bên trong RDRB range không phải là một khoảng trống đồng nhất mà là toàn bộ thân của hai nến RDRB đã giao dịch. Gợi ý thực dụng: với RDRB, ưu tiên chờ MSS xác nhận rõ ràng ở bất kỳ đâu trong range (không nhất thiết đúng điểm giữa hình học) hơn là cố định vị entry limit chính xác tại CE như thói quen áp dụng cho FVG.
+Với FVG và OB, Consequent Encroachment (CE — điểm giữa vùng, xem [[10-Consequent-Encroachment-Mean-Threshold]]) là một mức tham chiếu phổ biến cho entry limit. Với RDRB, vì range được xác định bởi hai wick ở hai đầu (không phải một vùng liên tục có "khối lượng đều" bên trong như FVG), việc áp dụng CE cần thận trọng hơn: điểm giữa hình học của RDRB range không nhất thiết mang cùng ý nghĩa "điểm cân bằng cung cầu" như CE của một FVG, vì bản chất bên trong RDRB range không phải là một khoảng trống đồng nhất mà là toàn bộ thân của hai nến RDRB đã giao dịch. Gợi ý thực dụng: với RDRB, ưu tiên chờ MSS xác nhận rõ ràng ở bất kỳ đâu trong range (không nhất thiết đúng điểm giữa hình học) hơn là cố định vị entry limit chính xác tại CE như thói quen áp dụng cho FVG.
 
 ### A10. Tóm tắt chuỗi suy luận A1→A9 thành sơ đồ tư duy ngắn
 
@@ -633,14 +633,14 @@ Với FVG và OB, Consequent Encroachment (CE — điểm giữa vùng, xem [[10
 > Khối Deep Dive này là tài liệu tư duy và khung backtest, không phải kết quả nghiên cứu đã hoàn tất — mọi số liệu minh hoạ (bảng R:R ở mục A7, kết quả R trong các case study mục C) chỉ nhằm mục đích giải thích cơ chế, cần tự backtest xác nhận trên dữ liệu và công cụ giao dịch cụ thể của mình trước khi đưa vào playbook thật.
 
 > [!tip] Liên kết với các note khác trong vault khi backtest
-> Khi ghi log các case theo mục A3, đối chiếu thêm với [[13 - FVG  - Fair Value Gap]] cho định nghĩa FVG gốc (bắt buộc để chạy bước kiểm tra loại trừ FVG-mismark), [[03 - Balanced Price Range]] để tránh nhầm lẫn đã nêu ở mục A8, [[25 - OB - Order Block]] để phân biệt rõ với confluence OB đã nêu ở mục D-12, và [[21 - Market Structure Shift]] cho định nghĩa MSS dùng trong bước xác nhận entry — giữ định nghĩa nhất quán giữa các note tránh trường hợp một khái niệm bị diễn giải khác nhau ở hai nơi trong vault theo thời gian.
+> Khi ghi log các case theo mục A3, đối chiếu thêm với [[13-FVG-Fair-Value-Gap]] cho định nghĩa FVG gốc (bắt buộc để chạy bước kiểm tra loại trừ FVG-mismark), [[03-Balanced-Price-Range]] để tránh nhầm lẫn đã nêu ở mục A8, [[25-OB-Order-Block]] để phân biệt rõ với confluence OB đã nêu ở mục D-12, và [[21-Market-Structure-Shift]] cho định nghĩa MSS dùng trong bước xác nhận entry — giữ định nghĩa nhất quán giữa các note tránh trường hợp một khái niệm bị diễn giải khác nhau ở hai nơi trong vault theo thời gian.
 
 ---
 
 *(Hết phần mở rộng chuyên sâu file 47 — xem thêm file 45 cho chuỗi Reversal 3 tầng, file 46 cho Reaper IFVG, và file 48 cho 1st Presented FVG trong cùng bộ Deep Dive 2026-07-28.)*
 
 > [!note] Về mối quan hệ với Daily Bias và top-down analysis
-> Toàn bộ khung phân tích ở mục A chỉ có ý nghĩa khi Daily Bias (xem [[12 - Daily Bias]]) đã được xác định rõ trước đó, đúng như checklist mục 4 và mục 10 của phần lõi — RDRB không phải công cụ để tự suy ra hướng thị trường, mà là một điểm phản ứng (POI) bổ sung để tinh chỉnh entry theo đúng hướng đã xác định từ phân tích top-down.
+> Toàn bộ khung phân tích ở mục A chỉ có ý nghĩa khi Daily Bias (xem [[12-Daily-Bias]]) đã được xác định rõ trước đó, đúng như checklist mục 4 và mục 10 của phần lõi — RDRB không phải công cụ để tự suy ra hướng thị trường, mà là một điểm phản ứng (POI) bổ sung để tinh chỉnh entry theo đúng hướng đã xác định từ phân tích top-down.
 
 ### D bổ sung cuối — hai edge case cuối cùng
 

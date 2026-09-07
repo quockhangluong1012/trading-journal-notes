@@ -17,7 +17,7 @@ dashboard: Mistake Frequency
 ## Top Mistakes
 
 ```dataviewjs
-const TRADE_FOLDER = '"Trading Journal/05 - Live Trading Journal/Trades"';
+const TRADE_FOLDER = '"05 - Live Trading Journal/Trades"';
 
 function toText(v){ if(v===null||v===undefined) return ""; if(typeof v==="string") return v.replaceAll("[[","").replaceAll("]]","").trim(); if(v.path) return v.path.split("/").pop().replace(/\.md$/,""); if(v.display) return String(v.display); return String(v); }
 function toArray(v){ if(v===null||v===undefined) return []; if(Array.isArray(v)) return v; if(v.array) return v.array(); return [v]; }
@@ -58,6 +58,6 @@ if(!data.length){
 
 ```dataview
 TABLE file.mtime AS "Updated"
-FROM "Trading Journal/06 - Mistake Database"
+FROM "06 - Mistake Database"
 SORT file.name ASC
 ```

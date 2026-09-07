@@ -31,20 +31,20 @@ updated: 2026-07-28
 ## 1. Định nghĩa
 
 **Khái niệm:**  
-Mọi phân tích ICT đều diễn ra bên trong một [[12 - Dealing Range]] (vùng giao dịch xác định bởi một swing high và một swing low có ý nghĩa). Bên trong và xung quanh range đó tồn tại hai loại thanh khoản:
+Mọi phân tích ICT đều diễn ra bên trong một [[12-Dealing-Range]] (vùng giao dịch xác định bởi một swing high và một swing low có ý nghĩa). Bên trong và xung quanh range đó tồn tại hai loại thanh khoản:
 
-- **External Range Liquidity (ERL):** thanh khoản nằm ở **hai cực của range** — đỉnh range chứa [[07 - Buy-side Liquidity|Buy-side Liquidity (BSL)]] (stop của short + buy stop trên các old highs / equal highs), đáy range chứa [[30 - Sell-side Liquidity|Sell-side Liquidity (SSL)]] (stop của long + sell stop dưới các old lows / equal lows). Đây là thanh khoản "lộ thiên" ở biên.
+- **External Range Liquidity (ERL):** thanh khoản nằm ở **hai cực của range** — đỉnh range chứa [[07-Buy-side-Liquidity|Buy-side Liquidity (BSL)]] (stop của short + buy stop trên các old highs / equal highs), đáy range chứa [[30 - Sell-side Liquidity|Sell-side Liquidity (SSL)]] (stop của long + sell stop dưới các old lows / equal lows). Đây là thanh khoản "lộ thiên" ở biên.
 - **Internal Range Liquidity (IRL):** các **inefficiency / PD array nằm BÊN TRONG range** — chủ yếu là [[Fair Value Gap|FVG]] chưa lấp, [[Order Block]], imbalance. Giá có xu hướng quay lại **rebalance** các vùng này. IRL là thanh khoản "ẩn" bên trong, không phải ở biên.
 
 **Bản chất:** ICT mô tả delivery của giá như một thuật toán dao động giữa hai cực thanh khoản. Sau khi giá lấy ERL (ví dụ quét một old high), nó có xu hướng quay vào trong để rebalance một IRL (lấp một FVG); sau khi rebalance IRL xong, nó lại hướng ra ERL đối diện (old low). Vòng lặp **ERL → IRL → ERL** này là khung xương để đọc "draw on liquidity" — câu hỏi "giá đang bị hút về đâu tiếp theo?"
 
-**Quan hệ với premium/discount:** ERL ở đỉnh nằm trong vùng [[27 - Premium Discount|premium]]; ERL ở đáy nằm trong discount; equilibrium (50%) chia range. IRL có thể nằm ở premium hoặc discount tùy vị trí FVG/OB. Kết hợp IRL/ERL với premium/discount cho phép xác định: *target nào hợp lý cho hướng trade, và entry nào nằm đúng phía rẻ/đắt.*
+**Quan hệ với premium/discount:** ERL ở đỉnh nằm trong vùng [[27-Premium-Discount|premium]]; ERL ở đáy nằm trong discount; equilibrium (50%) chia range. IRL có thể nằm ở premium hoặc discount tùy vị trí FVG/OB. Kết hợp IRL/ERL với premium/discount cho phép xác định: *target nào hợp lý cho hướng trade, và entry nào nằm đúng phía rẻ/đắt.*
 
 **Mục đích trong ICT:**  
 - **Xác định DRAW on liquidity (target):** loại thanh khoản đối diện là nơi giá có xu hướng đi tới — đó là target logic.
 - **Định trình tự delivery:** dự đoán giá sẽ đi external → internal hay internal → external tiếp theo.
 - **Lọc target không thực tế:** nếu còn IRL (FVG) chưa lấp trên đường đi tới ERL, giá thường xử lý IRL trước → đừng đặt TP vượt qua nó một cách ngây thơ.
-- **Hỗ trợ [[12 - Daily Bias]]:** bias cho biết hướng ưu tiên; IRL/ERL cho biết các "trạm dừng" thanh khoản trên đường đi.
+- **Hỗ trợ [[12-Daily-Bias]]:** bias cho biết hướng ưu tiên; IRL/ERL cho biết các "trạm dừng" thanh khoản trên đường đi.
 
 **Vì sao khái niệm này quan trọng:**  
 IRL/ERL là bản đồ "giá đi từ đâu tới đâu". Không có nó, trader đặt target tùy hứng và bị reject tại các FVG nội bộ mà họ không thấy. Nó biến câu hỏi mơ hồ "giá sẽ đi đâu?" thành một logic rõ: *vừa lấy gì → sẽ hút về cái đối diện*.
@@ -84,8 +84,8 @@ IRL/ERL là bản đồ "giá đi từ đâu tới đâu". Không có nó, trade
 > Câu thần chú: **"External to internal, internal to external."** Mỗi khi giá làm một việc (quét ERL hoặc rebalance IRL), hãy hỏi ngay: *cái đối diện là gì, và nó nằm ở đâu?* Đó chính là draw tiếp theo và là target ứng viên.
 
 ### Khi nào khái niệm này có giá trị cao?
-- [ ] Đã xác định đúng một [[12 - Dealing Range]] có ý nghĩa (swing high/low rõ).
-- [ ] Có [[12 - Daily Bias]] để biết hướng ưu tiên trong vòng xoay IRL/ERL.
+- [ ] Đã xác định đúng một [[12-Dealing-Range]] có ý nghĩa (swing high/low rõ).
+- [ ] Có [[12-Daily-Bias]] để biết hướng ưu tiên trong vòng xoay IRL/ERL.
 - [ ] Có FVG/OB nội bộ (IRL) chưa lấp rõ ràng.
 - [ ] Có old highs/lows hoặc equal highs/lows (ERL) rõ ràng ở hai cực.
 - [ ] Cần định target / draw on liquidity cho một setup.
@@ -123,11 +123,11 @@ IRL/ERL là bản đồ "giá đi từ đâu tới đâu". Không có nó, trade
 - [ ] Biết equilibrium (50%) để gắn premium/discount.
 
 ### Điều kiện tăng xác suất
-- [ ] Vòng xoay IRL/ERL đồng hướng [[12 - Daily Bias]].
+- [ ] Vòng xoay IRL/ERL đồng hướng [[12-Daily-Bias]].
 - [ ] IRL là FVG sinh từ displacement (chất lượng cao), không phải gap ngẫu nhiên.
 - [ ] ERL là equal highs/lows (pool dày → draw mạnh hơn).
 - [ ] IRL nằm đúng premium/discount cho hướng trade (entry tại IRL discount để Long).
-- [ ] Có [[20 - Liquidity Sweep]] tại ERL kèm [[21 - Market Structure Shift|MSS]] để xác nhận đảo.
+- [ ] Có [[20-Liquidity-Sweep]] tại ERL kèm [[21-Market-Structure-Shift|MSS]] để xác nhận đảo.
 
 ### Điều kiện làm setup yếu đi
 - Dealing range mơ hồ / chọn sai swing.
@@ -146,7 +146,7 @@ IRL/ERL là bản đồ "giá đi từ đâu tới đâu". Không có nó, trade
 > 4. **Còn IRL nào chưa lấp chặn đường tới ERL target của tôi không?**
 
 ### D1 / H4 — Bias & Narrative
-- Bias hiện tại: Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
+- Bias hiện tại: Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
 - HTF dealing range: swing high/low nào định range?
 - ERL HTF: old highs (BSL) / old lows (SSL) lớn nhất ở đâu? → target chính.
 - IRL HTF: có FVG/OB D1-H4 chưa lấp nào là draw nội bộ không?
@@ -159,7 +159,7 @@ IRL/ERL là bản đồ "giá đi từ đâu tới đâu". Không có nó, trade
 - Kiểm tra IRL còn dang dở trên đường tới ERL target.
 
 ### M5 / M1 — Confirmation & Entry
-- Sau khi giá tới một IRL hoặc ERL, có [[21 - Market Structure Shift|MSS]] / displacement xác nhận không?
+- Sau khi giá tới một IRL hoặc ERL, có [[21-Market-Structure-Shift|MSS]] / displacement xác nhận không?
 - Entry refine trong IRL (FVG/OB nội bộ) đúng premium/discount.
 - Target: IRL kế tiếp trước (partial), ERL đối diện sau (full).
 
@@ -340,14 +340,14 @@ HTF Bearish Bias
 
 ### Case Study 2 — FVG chồng lớp (stacking) từ nhiều leg displacement liên tiếp: giá chỉ lấp lớp gần nhất
 
-**Bối cảnh:** Trong một leg di chuyển mạnh gồm nhiều nhịp displacement liên tiếp (continuation displacement — xem [[50 - Displacement In Depth]] §2), mỗi nhịp có thể để lại một FVG riêng, và các FVG này thường **chồng lớp lên nhau** hoặc nằm rất gần nhau theo chiều dọc. Trader mới thường kỳ vọng giá sẽ lấp lần lượt TỪNG lớp FVG khi retrace — nhưng thực tế phổ biến hơn là giá chỉ lấp **lớp FVG gần nhất/nông nhất** rồi tiếp tục đi, bỏ qua hoàn toàn các lớp sâu hơn.
+**Bối cảnh:** Trong một leg di chuyển mạnh gồm nhiều nhịp displacement liên tiếp (continuation displacement — xem [[50-Displacement-In-Depth]] §2), mỗi nhịp có thể để lại một FVG riêng, và các FVG này thường **chồng lớp lên nhau** hoặc nằm rất gần nhau theo chiều dọc. Trader mới thường kỳ vọng giá sẽ lấp lần lượt TỪNG lớp FVG khi retrace — nhưng thực tế phổ biến hơn là giá chỉ lấp **lớp FVG gần nhất/nông nhất** rồi tiếp tục đi, bỏ qua hoàn toàn các lớp sâu hơn.
 
 **Tại sao dễ đọc sai:** nếu đặt nhiều lệnh limit tại các lớp FVG khác nhau (lớp nông, lớp giữa, lớp sâu) kỳ vọng "chắc chắn giá phải lấp hết", trader dễ chỉ khớp lệnh ở lớp nông nhất — các lệnh limit sâu hơn không bao giờ được chạm trong khi giá đã đảo và tiếp diễn theo hướng ban đầu.
 
 ![[IRL-ERL-Advanced-FVGStacking.svg|720]]
 *Ba lớp FVG chồng nhau từ ba nhịp continuation displacement liên tiếp trong cùng một leg tăng. Giá retrace chỉ lấp lớp nông nhất (gần giá hiện tại nhất) rồi tiếp tục lên — hai lớp sâu hơn không bao giờ được chạm trong nhịp retrace này.*
 
-**Cách xử lý đã kiểm chứng:** khi thấy nhiều FVG chồng lớp từ cùng một leg, ưu tiên đặt kỳ vọng entry tại **lớp nông nhất** trước (gần với giá hiện tại/đỉnh leg nhất), tương tự logic CE/M1 refine trong [[35 - Aggressive Displacement Entry]]. Chỉ coi các lớp sâu hơn là "dự phòng" nếu lớp nông thất bại (giá xuyên qua với acceptance) — không đặt toàn bộ vị thế kỳ vọng vào một lớp sâu chỉ vì "về lý thuyết nó vẫn là IRL chưa lấp".
+**Cách xử lý đã kiểm chứng:** khi thấy nhiều FVG chồng lớp từ cùng một leg, ưu tiên đặt kỳ vọng entry tại **lớp nông nhất** trước (gần với giá hiện tại/đỉnh leg nhất), tương tự logic CE/M1 refine trong [[35-Aggressive-Displacement-Entry]]. Chỉ coi các lớp sâu hơn là "dự phòng" nếu lớp nông thất bại (giá xuyên qua với acceptance) — không đặt toàn bộ vị thế kỳ vọng vào một lớp sâu chỉ vì "về lý thuyết nó vẫn là IRL chưa lấp".
 
 ### Case Study 3 — Khi một phiên giao dịch phá vỡ hoàn toàn vòng xoay ERL → IRL → ERL
 
@@ -356,7 +356,7 @@ HTF Bearish Bias
 **Hệ quả thực chiến:** một lệnh đang chạy đúng kế hoạch (đã qua IRL, đang hướng tới ERL) có thể đột ngột "quá đích" mà không dừng lại nghỉ tại ERL cũ như dự kiến — nếu đặt toàn bộ TP tại đúng mức ERL cũ theo kịch bản ban đầu, phần lợi nhuận vượt trội từ cú mở rộng range bất ngờ đó bị bỏ lại trên bàn. Ngược lại, nếu chưa vào lệnh và đang chờ giá "quay lại IRL" theo mô hình cũ sau một tin bất ngờ, chờ đợi đó có thể vô nghĩa vì range đã được vẽ lại.
 
 > [!warning]
-> Khi một tin tức lớn hoặc một displacement bất thường xảy ra giữa vòng xoay, dừng lại và hỏi: dealing range hiện tại có còn hợp lệ không, hay cần **re-map** theo đúng quy trình ở [[37 - Re-mapping Dealing Range sau Displacement]]? Đừng cố gán narrative IRL/ERL cũ lên một cấu trúc giá đã thực chất thay đổi.
+> Khi một tin tức lớn hoặc một displacement bất thường xảy ra giữa vòng xoay, dừng lại và hỏi: dealing range hiện tại có còn hợp lệ không, hay cần **re-map** theo đúng quy trình ở [[37-Re-mapping-Dealing-Range-sau-Displacement]]? Đừng cố gán narrative IRL/ERL cũ lên một cấu trúc giá đã thực chất thay đổi.
 
 ### Case Study 4 — Sweep ERL: phân biệt "liquidity grab" (đảo) với "breakout" (mở rộng range)
 
@@ -375,7 +375,7 @@ HTF Bearish Bias
 ![[IRL-ERL-Advanced-SweepVsBreakout.svg|720]]
 *Panel A (grab): wick xuyên BSL, thân đóng lại trong range → đảo về ERL đáy, đúng vòng xoay. Panel B (breakout): thân đóng chấp nhận ngoài biên → range cũ chết, ERL cũ thành IRL/hỗ trợ, nến breakout để lại một IRL/FVG mới; retrace về IRL mới là để TIẾP DIỄN, không phải để đảo.*
 
-**Cách xử lý đã kiểm chứng:** không đảo lệnh tại một ERL chỉ vì "giá đã chạm cực range". Chờ **cách nến đóng cửa** trả lời câu hỏi grab hay breakout: nếu wick-reject đóng lại trong range → coi là grab, fade theo rotation (như §6 ví dụ đúng); nếu body-acceptance ngoài biên → coi range cũ đã chết, chuyển ngay sang đọc range mới, và **cú retrace kế tiếp về ERL cũ (giờ là IRL) là cơ hội vào THEO hướng breakout, không phải cơ hội đảo**. Đây cũng là cơ chế nối trực tiếp sang [[37 - Re-mapping Dealing Range sau Displacement]] — breakout có acceptance chính là tín hiệu bắt buộc re-map.
+**Cách xử lý đã kiểm chứng:** không đảo lệnh tại một ERL chỉ vì "giá đã chạm cực range". Chờ **cách nến đóng cửa** trả lời câu hỏi grab hay breakout: nếu wick-reject đóng lại trong range → coi là grab, fade theo rotation (như §6 ví dụ đúng); nếu body-acceptance ngoài biên → coi range cũ đã chết, chuyển ngay sang đọc range mới, và **cú retrace kế tiếp về ERL cũ (giờ là IRL) là cơ hội vào THEO hướng breakout, không phải cơ hội đảo**. Đây cũng là cơ chế nối trực tiếp sang [[37-Re-mapping-Dealing-Range-sau-Displacement]] — breakout có acceptance chính là tín hiệu bắt buộc re-map.
 
 > [!warning]
 > Sai lầm chết người: thấy giá "sweep" đỉnh range liền short fade ngay, trong khi đó là một breakout body-acceptance. Ranh giới không nằm ở việc giá có vượt biên hay không (cả hai đều vượt), mà ở **nến đóng cửa trong hay ngoài biên** và **hành vi 1–2 nến kế tiếp**. Wick = grab; body-close chấp nhận = breakout. Ghi trường `erl_touch: grab | breakout` vào journal để đo tỷ lệ và luyện đọc phân biệt.
@@ -442,7 +442,7 @@ HTF Bearish Bias
 
 ### Q4
 **Hỏi:** Nên làm gì khi một displacement/tin tức bất thường phá vỡ dealing range đang dùng giữa lệnh?
-**Đáp:** Dừng lại, đánh giá lại range có còn hợp lệ không, và re-map dealing range theo [[37 - Re-mapping Dealing Range sau Displacement]] thay vì giữ nguyên bản đồ IRL/ERL cũ.
+**Đáp:** Dừng lại, đánh giá lại range có còn hợp lệ không, và re-map dealing range theo [[37-Re-mapping-Dealing-Range-sau-Displacement]] thay vì giữ nguyên bản đồ IRL/ERL cũ.
 
 ---
 
@@ -470,7 +470,7 @@ HTF Bearish Bias
 > [!success] Nguyên tắc vàng
 > **IRL/ERL cho biết giá ĐI tới đâu — nhưng không phải mọi IRL/ERL đều đáng tin như nhau.** Tuổi của FVG, số lần đã chạm, việc có bị chồng lớp bởi các nhịp displacement khác, và tính ổn định của chính dealing range đều là những lớp lọc bổ sung bắt buộc trước khi tin vào một draw.
 
-1. **Luôn xác định đúng dealing range trước khi đọc IRL/ERL — và theo dõi xem range đó có còn sống không.** Một displacement/tin tức bất thường có thể phá vỡ range giữa lệnh; khi đó, re-map theo [[37 - Re-mapping Dealing Range sau Displacement]] ngay, không cố giữ narrative cũ.
+1. **Luôn xác định đúng dealing range trước khi đọc IRL/ERL — và theo dõi xem range đó có còn sống không.** Một displacement/tin tức bất thường có thể phá vỡ range giữa lệnh; khi đó, re-map theo [[37-Re-mapping-Dealing-Range-sau-Displacement]] ngay, không cố giữ narrative cũ.
 
 2. **Chấm điểm "tuổi" cho mỗi IRL trước khi dùng làm draw.** FVG trẻ, chưa bị chạm, đáng tin hơn nhiều so với FVG đã nhiều ngày tuổi và đã bị chạm 2-3 lần. Ghi `fvg_age_days` và `fvg_touch_count` vào journal để lượng hóa điều này qua backtest, thay vì coi mọi FVG như nhau.
 
@@ -527,7 +527,7 @@ Hai khái niệm này không phải hai loại "vùng vẽ trên chart" ngang h�
 
 ### 14.1. Phản biện từ góc nhìn khoa học/quant — viết thẳng
 
-1. **Định nghĩa "internal" vs "external" phụ thuộc hoàn toàn vào việc chọn range — quay lại vấn đề gốc của [[12 - Dealing Range]].** Nếu range bị vẽ sai (anchor ambiguity), toàn bộ phân loại IRL/ERL sụp đổ theo — một FVG được gọi là "internal" trong range này có thể là "external" của một range nhỏ hơn lồng bên trong. Đây không phải lỗi độc lập của IRL/ERL, nhưng nó THỪA HƯỞNG toàn bộ tính chủ quan của bước vẽ range.
+1. **Định nghĩa "internal" vs "external" phụ thuộc hoàn toàn vào việc chọn range — quay lại vấn đề gốc của [[12-Dealing-Range]].** Nếu range bị vẽ sai (anchor ambiguity), toàn bộ phân loại IRL/ERL sụp đổ theo — một FVG được gọi là "internal" trong range này có thể là "external" của một range nhỏ hơn lồng bên trong. Đây không phải lỗi độc lập của IRL/ERL, nhưng nó THỪA HƯỞNG toàn bộ tính chủ quan của bước vẽ range.
 2. **Hindsight bias trong việc chọn IRL nào "đáng tin".** Sau khi biết giá đã lấp FVG nào, rất dễ nhớ lại và giải thích "FVG đó trẻ, chưa bị chạm, nên đáng tin" — trong khi tại thời điểm ra quyết định, có thể có 3-4 FVG ứng viên cùng lúc và không có quy tắc khách quan duy nhất chỉ ra FVG nào sẽ được giá "chọn" lấp trước.
 3. **Không có backtest công khai đạt chuẩn thống kê** xác nhận rằng chiến lược "vào lệnh tại IRL, target ERL" có kỳ vọng dương có ý nghĩa thống kê so với các chiến lược mean-reversion/breakout đơn giản hơn không dùng khái niệm FVG.
 4. **Tính unfalsifiable khi vòng xoay "thất bại".** Nếu giá không quay lại IRL như kỳ vọng, luôn có lối giải thích sẵn: "đó là trending regime", "phải là FVG khác mới đúng", hay "range đã re-map". Không có tiêu chí PHỦ ĐỊNH được xác lập trước để nói "vòng xoay này đã sai, không phải đổi range/đổi FVG cho khớp".
@@ -563,8 +563,8 @@ Hai khái niệm này không phải hai loại "vùng vẽ trên chart" ngang h�
 ![[IRL-ERL-Edge-Cases.svg|720]]
 *IRL/ERL flip khi displacement tin tức xuyên thẳng qua ERL cũ mà không dừng — ERL cũ trở thành IRL của range mới, bản đồ liquidity phải vẽ lại giữa lệnh.*
 
-> [!important] Phân biệt với [[12 - Dealing Range]] EC4
-> [[12 - Dealing Range]] mục 16 EC4 xử lý "IRL-ERL flip" ở tầng CHỌN RANGE (khi range mở rộng, quadrant premium/discount đổi theo). EC1 dưới đây xử lý cùng hiện tượng nhưng ở tầng CƠ CHẾ ORDERFLOW: điều gì xảy ra với các lệnh ĐANG CHẠY và cách đọc lại vai trò IRL/ERL ngay tại thời điểm displacement, không phải góc độ vẽ lại range.
+> [!important] Phân biệt với [[12-Dealing-Range]] EC4
+> [[12-Dealing-Range]] mục 16 EC4 xử lý "IRL-ERL flip" ở tầng CHỌN RANGE (khi range mở rộng, quadrant premium/discount đổi theo). EC1 dưới đây xử lý cùng hiện tượng nhưng ở tầng CƠ CHẾ ORDERFLOW: điều gì xảy ra với các lệnh ĐANG CHẠY và cách đọc lại vai trò IRL/ERL ngay tại thời điểm displacement, không phải góc độ vẽ lại range.
 
 ### EC1 — IRL/ERL flip giữa lệnh đang chạy: ERL cũ trở thành IRL mới, TP bị bỏ lại quá sớm
 
@@ -574,7 +574,7 @@ Hai khái niệm này không phải hai loại "vùng vẽ trên chart" ngang h�
 
 **Cách nhận diện sớm:** nến displacement đóng cửa chấp nhận (body-close) vượt xa ERL cũ, kèm volume/tin tức bất thường — khác hẳn một wick-reject thông thường. Khoảng cách vượt qua lớn hơn nhiều biên độ sweep điển hình.
 
-**Cách xử lý:** ngay khi phát hiện body-acceptance ngoài ERL cũ, dừng theo dõi bản đồ cũ, re-map dealing range theo cấu trúc mới (tham chiếu [[37 - Re-mapping Dealing Range sau Displacement]]). Với lệnh đang chạy: dời một phần TP theo ERL mới, dời trailing stop theo IRL mới — không chốt toàn bộ chỉ vì "đã chạm mục tiêu cũ".
+**Cách xử lý:** ngay khi phát hiện body-acceptance ngoài ERL cũ, dừng theo dõi bản đồ cũ, re-map dealing range theo cấu trúc mới (tham chiếu [[37-Re-mapping-Dealing-Range-sau-Displacement]]). Với lệnh đang chạy: dời một phần TP theo ERL mới, dời trailing stop theo IRL mới — không chốt toàn bộ chỉ vì "đã chạm mục tiêu cũ".
 
 ### EC2 — Partial fill tại IRL khiến vị thế nhỏ hơn kế hoạch, R:R thực tế méo mó
 
@@ -602,7 +602,7 @@ Hai khái niệm này không phải hai loại "vùng vẽ trên chart" ngang h�
 
 **Vì sao bẫy được cả trader có kinh nghiệm:** trader quen với volatility bình thường tiếp tục áp dụng đúng quy trình tìm IRL/ERL, nhưng trong regime volatility thấp, các FVG nhỏ này dễ bị nhiễu lấp ngay trong vài phút mà không mang ý nghĩa "nợ imbalance" thật — giao dịch theo chúng cho tỷ lệ thất bại cao hơn bình thường dù về mặt hình thức vẫn là FVG hợp lệ.
 
-**Cách nhận diện sớm:** so sánh độ rộng FVG với ATR(14) hoặc VIX hiện tại; nếu FVG rộng dưới 10-15% ATR(14) khung tương ứng, coi là kém ý nghĩa (áp dụng cùng logic với EC2 mục 16 của [[27 - Premium Discount]] về bộ lọc kích thước range).
+**Cách nhận diện sớm:** so sánh độ rộng FVG với ATR(14) hoặc VIX hiện tại; nếu FVG rộng dưới 10-15% ATR(14) khung tương ứng, coi là kém ý nghĩa (áp dụng cùng logic với EC2 mục 16 của [[27-Premium-Discount]] về bộ lọc kích thước range).
 
 **Cách xử lý:** trong regime VIX thấp, ưu tiên khung thời gian cao hơn (H4/D1 thay vì M15/H1) để tìm FVG đủ lớn có ý nghĩa; hoặc tạm thời giảm tần suất giao dịch theo IRL/ERL cho tới khi volatility trở lại mức bình thường.
 

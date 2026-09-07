@@ -35,7 +35,7 @@ Venom Model là **mô hình entry theo thời gian (time-based)** trong hệ ICT
 
 **Chuỗi điển hình của Venom:**
 1. **Bias / khung tham chiếu:** xác định hướng (HTF bias) và các pool liquidity của phiên trước (Asia high/low, London high/low, PDH/PDL).
-2. **Time window (cửa sổ Venom):** chỉ săn trong kill zone — phổ biến là quanh NY open / NY AM (xem [[18 - Kill Zones]]).
+2. **Time window (cửa sổ Venom):** chỉ săn trong kill zone — phổ biến là quanh NY open / NY AM (xem [[18-Kill-Zones]]).
 3. **Liquidity sweep ("venom strike"):** trong cửa sổ đó, giá quét một pool session (ví dụ quét London low) rồi reclaim.
 4. **Displacement + MSS:** một move mạnh phá cấu trúc theo bias, để lại FVG.
 5. **Entry tại FVG:** giá retrace về FVG (quanh CE), vào lệnh.
@@ -133,18 +133,18 @@ Nhiều trader thua vì giao dịch **sai thời điểm** (giữa phiên chết
 
 | Bước | Tên | Khái niệm liên kết | Câu hỏi kiểm tra |
 |---|---|---|---|
-| 1 | Bias + reference | [[12 - Daily Bias]], [[19 - Liquidity]] | Hướng gì? Pool session nào? |
-| 2 | Time window | [[18 - Kill Zones]] | Đang trong cửa sổ Venom (NY open) chưa? |
-| 3 | Liquidity sweep | [[20 - Liquidity Sweep]] | Đã quét Asia/London/PD pool chưa? |
-| 4 | Displacement + MSS | [[Displacement]], [[21 - Market Structure Shift]] | Có phá cấu trúc + FVG không? |
+| 1 | Bias + reference | [[12-Daily-Bias]], [[19-Liquidity]] | Hướng gì? Pool session nào? |
+| 2 | Time window | [[18-Kill-Zones]] | Đang trong cửa sổ Venom (NY open) chưa? |
+| 3 | Liquidity sweep | [[20-Liquidity-Sweep]] | Đã quét Asia/London/PD pool chưa? |
+| 4 | Displacement + MSS | [[Displacement]], [[21-Market-Structure-Shift]] | Có phá cấu trúc + FVG không? |
 | 5 | FVG entry | [[Fair Value Gap]], [[Optimal Trade Entry]] | FVG/CE ở đâu, đúng PD không? |
-| 6 | Target | [[19 - Liquidity]] | Pool đối diện ở đâu? |
+| 6 | Target | [[19-Liquidity]] | Pool đối diện ở đâu? |
 
 ### Biến thể thường gặp
-- **+ Silver Bullet:** Venom rất gần Silver Bullet — chạy chuỗi trong cửa sổ 1 giờ của kill zone ([[18 - Kill Zones]]).
+- **+ Silver Bullet:** Venom rất gần Silver Bullet — chạy chuỗi trong cửa sổ 1 giờ của kill zone ([[18-Kill-Zones]]).
 - **+ ICT 2022 Model:** lõi entry chính là chuỗi [[01 - ICT 2022 Model]] đặt trong time window.
 - **+ OTE:** tinh chỉnh entry bằng OTE 62–79% trùng FVG ([[Optimal Trade Entry]]).
-- **+ AMD:** sweep đầu NY ~ pha manipulation; displacement ~ distribution ([[02 - AMD]]).
+- **+ AMD:** sweep đầu NY ~ pha manipulation; displacement ~ distribution ([[02-AMD]]).
 
 > [!tip]
 > Cách nhớ nhanh Venom: **"Đúng giờ → Tiêm nọc (sweep session) → Đẩy (displacement) → Vào FVG → Chạy về pool đối diện."** Thiếu "đúng giờ" hoặc "tiêm nọc" thì không phải Venom.
@@ -236,7 +236,7 @@ Nhiều trader thua vì giao dịch **sai thời điểm** (giữa phiên chết
 > 4. **Entry/stop/target ở đâu, R:R bao nhiêu?**
 
 ### D1 / H1 — Bias & Reference
-- **Bias:** Bullish / Bearish (xem [[12 - Daily Bias]]).
+- **Bias:** Bullish / Bearish (xem [[12-Daily-Bias]]).
 - **Reference pools:** Asia/London high-low, PDH/PDL.
 - **Premium/Discount:** xác định vùng vào phù hợp với bias.
 
@@ -339,18 +339,18 @@ Trader thấy một FVG đẹp **giữa phiên chết** (ngoài cửa sổ Venom
 ## 7. Entry model liên quan
 
 Khái niệm này tổng hợp:
-- [[12 - Daily Bias]]
-- [[19 - Liquidity]]
-- [[20 - Liquidity Sweep]]
+- [[12-Daily-Bias]]
+- [[19-Liquidity]]
+- [[20-Liquidity-Sweep]]
 - [[Displacement]]
-- [[21 - Market Structure Shift]]
+- [[21-Market-Structure-Shift]]
 - [[Fair Value Gap]]
 - [[Optimal Trade Entry]]
-- [[27 - Premium Discount]]
-- [[18 - Kill Zones]]
-- [[02 - AMD]]
+- [[27-Premium-Discount]]
+- [[18-Kill-Zones]]
+- [[02-AMD]]
 - [[01 - ICT 2022 Model]]
-- [[03- One Shot One Kill Trading Model]]
+- [[03 - One Shot One Kill Trading Model]]
 
 ### Sequence mẫu — Venom Long (đầy đủ)
 ```text
@@ -364,7 +364,7 @@ Khái niệm này tổng hợp:
 ```
 
 > [!note]
-> Venom, Silver Bullet và [[01 - ICT 2022 Model]] dùng chung lõi (sweep → MSS → FVG). Điểm khác của Venom là **neo vào time window NY open + liquidity của session trước**. Kết hợp tốt với [[03- One Shot One Kill Trading Model]] khi muốn chọn một phát chất lượng trong ngày.
+> Venom, Silver Bullet và [[01 - ICT 2022 Model]] dùng chung lõi (sweep → MSS → FVG). Điểm khác của Venom là **neo vào time window NY open + liquidity của session trước**. Kết hợp tốt với [[03 - One Shot One Kill Trading Model]] khi muốn chọn một phát chất lượng trong ngày.
 
 ---
 ## Chuyên sâu A — Edge cases & Failure modes (thực chiến Venom)

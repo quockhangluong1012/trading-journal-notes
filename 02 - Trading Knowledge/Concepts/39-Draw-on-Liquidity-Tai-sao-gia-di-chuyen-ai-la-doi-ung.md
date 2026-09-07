@@ -48,7 +48,7 @@ Các tổ chức *có* đàm phán trực tiếp qua block trade, dark pool, th�
 **Mục đích trong ICT:**
 - Giải thích **động cơ thật** đằng sau chuyển động giá: giá đi tìm nơi khớp được lệnh, không đi ngẫu nhiên.
 - Xác định **draw on liquidity** — mục tiêu tiếp theo giá bị hút về (buy-side ở trên, sell-side ở dưới).
-- Hiểu vì sao [[20 - Liquidity Sweep|sweep]] xảy ra trước khi giá đảo chiều thật: sweep chính là hành động **gom đối ứng**.
+- Hiểu vì sao [[20-Liquidity-Sweep|sweep]] xảy ra trước khi giá đảo chiều thật: sweep chính là hành động **gom đối ứng**.
 
 **Nó giúp trả lời câu hỏi nào trên chart?**
 - Giá đang bị hút về vũng thanh khoản nào (buy-side hay sell-side)?
@@ -77,7 +77,7 @@ Các tổ chức *có* đàm phán trực tiếp qua block trade, dark pool, th�
 | **Tổ chức có mandate khác** | Index fund/ETF bán khi có dòng rút; hedger đóng vị thế | Index fund mua theo tỷ trọng khi có dòng vào; nhà nhập khẩu mua ngoại tệ | Giao dịch vì **nghĩa vụ**, không vì quan điểm giá |
 
 **Giải thích cặn kẽ nguồn quan trọng nhất — stop-loss:**
-Một stop-loss của vị thế MUA, về bản chất kỹ thuật, **chính là một lệnh BÁN** (sell stop). Dưới một đáy cũ tập trung hàng nghìn stop như vậy, cộng thêm lệnh breakout bán mới. Khi SM đẩy giá xuống *dưới* đáy đó ([[30 - Sell-side Liquidity|sell-side raid]]), toàn bộ số lệnh này kích hoạt cùng lúc → tạo ra một **thác lệnh BÁN**. Đó chính là biển đối ứng để SM âm thầm MUA vào ở giá thấp mà không làm giá bật lên ngay. Ở đỉnh thì đối xứng hoàn toàn với [[07 - Buy-side Liquidity|buy-side liquidity]].
+Một stop-loss của vị thế MUA, về bản chất kỹ thuật, **chính là một lệnh BÁN** (sell stop). Dưới một đáy cũ tập trung hàng nghìn stop như vậy, cộng thêm lệnh breakout bán mới. Khi SM đẩy giá xuống *dưới* đáy đó ([[30 - Sell-side Liquidity|sell-side raid]]), toàn bộ số lệnh này kích hoạt cùng lúc → tạo ra một **thác lệnh BÁN**. Đó chính là biển đối ứng để SM âm thầm MUA vào ở giá thấp mà không làm giá bật lên ngay. Ở đỉnh thì đối xứng hoàn toàn với [[07-Buy-side-Liquidity|buy-side liquidity]].
 
 **Nhóm "mandate khác" — điểm tinh tế ít người nhắc:**
 Không phải mọi tổ chức lớn giao dịch để kiếm lời từ hướng giá. Index fund **bắt buộc** mua theo tỷ trọng khi có dòng tiền mới, bất kể giá cao. Nhà nhập khẩu mua ngoại tệ dù tỷ giá bất lợi vì cần vận hành kinh doanh. Hãng hàng không mua hợp đồng dầu để *bảo hiểm* giá xăng, không phải đầu cơ. Đây là các **"natural counterparty"** — sẵn lòng đứng phía đối ứng ở mức giá mà nhà đầu cơ coi là "xấu".
@@ -109,13 +109,13 @@ Không phải mọi tổ chức lớn giao dịch để kiếm lời từ hướ
 ### Điều kiện bắt buộc để coi là DOL hợp lệ
 - [ ] Có mật độ lệnh chờ thực sự (đỉnh/đáy có ý nghĩa, không phải noise).
 - [ ] Nằm đúng logic bias HTF (giá bị hút về đâu trong dealing range).
-- [ ] Có [[16 - Internal & External Range Liquidity (IRL & ERL)|ERL/IRL]] rõ ràng để định vị.
+- [ ] Có [[16-Internal-External-Range-Liquidity-IRL-ERL|ERL/IRL]] rõ ràng để định vị.
 
 ### Điều kiện tăng xác suất
-- [ ] Có [[15 - Inducement]] phía trước DOL (mồi để gom lệnh).
-- [ ] Sweep đi kèm [[13 - FVG  - Fair Value Gap|FVG]]/displacement sau khi quét.
+- [ ] Có [[15-Inducement]] phía trước DOL (mồi để gom lệnh).
+- [ ] Sweep đi kèm [[13-FVG-Fair-Value-Gap|FVG]]/displacement sau khi quét.
 - [ ] DOL trùng một POI HTF (order block / FVG khung lớn).
-- [ ] Xảy ra trong [[18 - Kill Zones|killzone]] chính.
+- [ ] Xảy ra trong [[18-Kill-Zones|killzone]] chính.
 
 ### Điều kiện làm tín hiệu yếu đi
 - Vùng thanh khoản quá nhỏ / không ai đặt lệnh ở đó.
@@ -132,8 +132,8 @@ Không phải mọi tổ chức lớn giao dịch để kiếm lời từ hướ
 > 3. **Giá đang bị hút về buy-side (trên) hay sell-side (dưới)?**
 
 ### D1 / H4 — Bias & Narrative
-- Bias hiện tại: Bullish / Bearish / Neutral ([[12 - Daily Bias]]).
-- Dealing range hiện tại và vị trí giá (premium/discount — [[27 - Premium Discount]]).
+- Bias hiện tại: Bullish / Bearish / Neutral ([[12-Daily-Bias]]).
+- Dealing range hiện tại và vị trí giá (premium/discount — [[27-Premium-Discount]]).
 - **DOL chính:** vũng thanh khoản HTF (ERL) mà giá đang bị hút về.
 
 ### H1 / M15 — POI & Context
@@ -142,7 +142,7 @@ Không phải mọi tổ chức lớn giao dịch để kiếm lời từ hướ
 - Giá đã sweep vùng thanh khoản có ý nghĩa chưa?
 
 ### M5 / M1 — Confirmation & Entry
-- Sau khi giá chạm DOL và sweep → có phản ứng (rejection/[[21 - Market Structure Shift|MSS]]) không?
+- Sau khi giá chạm DOL và sweep → có phản ứng (rejection/[[21-Market-Structure-Shift|MSS]]) không?
 - MSS có nằm trong POI không, hay chỉ giữa range?
 - Chờ xác nhận SM đã gom đối ứng xong (sweep + displacement) rồi mới tính entry.
 
@@ -159,7 +159,7 @@ Không phải mọi tổ chức lớn giao dịch để kiếm lời từ hướ
 ### Tín hiệu bị vô hiệu / cần xét lại khi
 - [ ] Giá phá thẳng DOL, đóng nến vượt qua, không phản ứng → đó là displacement thật, đổi narrative.
 - [ ] Không có cụm lệnh thực sự ở vùng ta tưởng là DOL.
-- [ ] Vào lệnh *trước* khi sweep xảy ra ([[02 - Mistake - Enter before liquidity sweep]]).
+- [ ] Vào lệnh *trước* khi sweep xảy ra ([[02-Mistake-Enter-before-liquidity-sweep]]).
 
 ---
 
@@ -197,7 +197,7 @@ Sách vở dạy "giá bị hút về pool → quét → đảo". Thực chiến
 
 **B. Partial fill — pool bị "gặm" nhiều lần.** Một cụm thanh khoản lớn đôi khi không bị quét trong một cú; SM lấy *một phần*, giá lùi lại, rồi lấy tiếp phần còn lại ở nhịp sau. Nếu bạn vào ngay sau cú "gặm" đầu tiên (tưởng đã sweep xong), bạn dễ bị cuốn theo cú gặm thứ hai. Dấu hiệu: sau cú quét, giá **không** rejection dứt khoát mà cà giật quanh mép pool → thanh khoản chưa cạn.
 
-**C. Double draw — SSL rồi mới BSL (hoặc ngược lại).** Trong một phiên, giá có thể quét sell-side trước (gom đối ứng để... đẩy lên quét buy-side), tạo cảm giác "đảo tăng" nhưng thực ra chỉ là chặng đầu của một hành trình hai chiều tới bể lớn hơn. Đây là bản chất của [[02 - AMD]] / Power of Three ở khung lớn: manipulation một phía để rồi phân phối phía kia. Luôn hỏi: *"Còn một DOL lớn hơn ở phía đối diện chưa bị chạm không?"* — nếu có, cú đảo hiện tại có thể chỉ là chặng giữa.
+**C. Double draw — SSL rồi mới BSL (hoặc ngược lại).** Trong một phiên, giá có thể quét sell-side trước (gom đối ứng để... đẩy lên quét buy-side), tạo cảm giác "đảo tăng" nhưng thực ra chỉ là chặng đầu của một hành trình hai chiều tới bể lớn hơn. Đây là bản chất của [[02-AMD]] / Power of Three ở khung lớn: manipulation một phía để rồi phân phối phía kia. Luôn hỏi: *"Còn một DOL lớn hơn ở phía đối diện chưa bị chạm không?"* — nếu có, cú đảo hiện tại có thể chỉ là chặng giữa.
 
 **D. Liquidity void — không có ai ở "đáy giả".** Có những đáy/đỉnh *trông* như pool nhưng thực ra **ít lệnh chờ** (đã bị quét trước đó, hoặc là swing không ai để ý). Giá tới đó không phản ứng vì không có đối ứng để gom. Dấu hiệu: đáy/đỉnh đã bị test nhiều lần (thanh khoản cạn), hoặc nằm ở vùng ít ai đặt stop. DOL chỉ có giá trị khi có **mật độ lệnh thật** — một pool đã cạn không còn là nam châm.
 
@@ -218,21 +218,21 @@ Sau khi SM gom xong đối ứng và giá bắt đầu đi tới DOL đối di�
 **Cách đọc thực hành:** *trước* khi target một DOL, quét đường đi và đếm số "cản": mỗi FVG ngược chưa lấp, mỗi old high/low, mỗi vùng equilibrium HTF đều là một điểm dừng tiềm năng. Ít cản → LRLR → giữ runner. Nhiều cản → HRLR → quản lệnh phòng thủ. **Cùng một bias, cùng một DOL, nhưng chất lượng đường đi khác nhau hoàn toàn** — và đó là thứ tách người giữ được runner tới external với người bị đá stop giữa chừng rồi nhìn giá đi tiếp.
 
 > [!tip] Liên hệ với re-mapping & scale-out
-> Mỗi "cản" trên đường HRLR thường chính là một **internal liquidity** — điểm hợp lý để scale-out một phần và, nếu nó là displacement, để [[37 - Re-mapping Dealing Range sau Displacement|re-map]] tìm POI nhịp sau. LRLR thì ngược lại: ít điểm scale-out, nên giữ nguyên vị thế tới external.
+> Mỗi "cản" trên đường HRLR thường chính là một **internal liquidity** — điểm hợp lý để scale-out một phần và, nếu nó là displacement, để [[37-Re-mapping-Dealing-Range-sau-Displacement|re-map]] tìm POI nhịp sau. LRLR thì ngược lại: ít điểm scale-out, nên giữ nguyên vị thế tới external.
 
 ---
 
 ## 7. Entry model liên quan
 
 Khái niệm này là nền tảng **narrative/bias**, thường kết hợp với:
-- [[19 - Liquidity]]
-- [[07 - Buy-side Liquidity]]
+- [[19-Liquidity]]
+- [[07-Buy-side-Liquidity]]
 - [[30 - Sell-side Liquidity]]
-- [[20 - Liquidity Sweep]]
-- [[15 - Inducement]]
-- [[16 - Internal & External Range Liquidity (IRL & ERL)]]
-- [[02 - AMD]]
-- [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]
+- [[20-Liquidity-Sweep]]
+- [[15-Inducement]]
+- [[16-Internal-External-Range-Liquidity-IRL-ERL]]
+- [[02-AMD]]
+- [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]
 - [[01 - ICT 2022 Model|ICT 2022 Model]]
 
 ### Sequence mẫu
@@ -312,7 +312,7 @@ HTF Bias → Xác định DOL (buy-side / sell-side là target)
 > [!note] Auction Theory & Market Microstructure
 > Thị trường là một **cuộc đấu giá hai chiều liên tục (double auction)**. Để khớp một lệnh lớn, giá buộc phải di chuyển đến nơi có **mật độ lệnh chờ cao nhất** — nơi đủ đối ứng hấp thụ khối lượng. ICT gọi nơi đó là "liquidity"; bản chất vi mô là **mật độ lệnh chờ** (resting orders), gồm cụm stop retail, lệnh limit tổ chức, vùng quanh strike quyền chọn lớn, và vùng VWAP nơi thuật toán thực thi đang làm việc.
 
-> [!note] Vai trò retail bị phóng đại — đọc kèm [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]]
+> [!note] Vai trò retail bị phóng đại — đọc kèm [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]]
 > Với NQ/NDX, phần lớn khối lượng đến từ tổ chức, options dealer hedging, arbitrageur, HFT — retail chiếm tỷ trọng nhỏ. "Săn stop retail" là **mô hình sư phạm** hữu ích để đọc chart, nhưng đừng hiểu theo nghĩa đen rằng thị trường tồn tại để lấy tiền cá nhân bạn. Cả hai cách diễn giải (ICT "stop hunt" và microstructure "mật độ lệnh") dẫn tới cùng một hành động giao dịch, nhưng hiểu cơ chế thật giúp bạn không giao dịch mê tín.
 
 > [!tip] Bài học thực chiến cho Prop Firm (risk ≤ 0.5%/lệnh)
@@ -373,7 +373,7 @@ SORT date DESC
 
 **Kế hoạch review tiếp theo:**
 - [ ] Thu thập 20–30 ví dụ giá phản ứng tại DOL (buy-side & sell-side).
-- [ ] Đối chiếu với [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] và [[02 - AMD]].
+- [ ] Đối chiếu với [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] và [[02-AMD]].
 
 ---
 
@@ -634,7 +634,7 @@ Một cách tư duy hữu ích để tránh áp dụng DOL một cách máy móc
 
 ### F2. Mối liên hệ giữa DOL và độ rộng dealing range
 
-Dealing range rộng (đo bằng ATR của khung phân tích) thường đi kèm nhiều DOL trung gian (internal liquidity) trước khi tới DOL biên (external liquidity) — đây là bản chất của IRL/ERL (xem [[16 - Internal & External Range Liquidity (IRL & ERL)]]). Dealing range hẹp (thị trường sideway chặt) có ít DOL trung gian hơn, biên độ di chuyển giữa các DOL nhỏ hơn, RR kỳ vọng cho mỗi lệnh theo đó cũng nên được hạ xuống tương ứng — không nên áp cùng kỳ vọng R cho một dealing range hẹp như một dealing range rộng.
+Dealing range rộng (đo bằng ATR của khung phân tích) thường đi kèm nhiều DOL trung gian (internal liquidity) trước khi tới DOL biên (external liquidity) — đây là bản chất của IRL/ERL (xem [[16-Internal-External-Range-Liquidity-IRL-ERL]]). Dealing range hẹp (thị trường sideway chặt) có ít DOL trung gian hơn, biên độ di chuyển giữa các DOL nhỏ hơn, RR kỳ vọng cho mỗi lệnh theo đó cũng nên được hạ xuống tương ứng — không nên áp cùng kỳ vọng R cho một dealing range hẹp như một dealing range rộng.
 
 ### F3. Câu hỏi mở chưa có câu trả lời dứt điểm — tự backtest để tìm câu trả lời của riêng bạn
 
@@ -691,7 +691,7 @@ Dealing range rộng (đo bằng ATR của khung phân tích) thường đi kèm
 
 ## J. Liên hệ chuỗi khái niệm — DOL như trục xuyên suốt hệ thống ICT
 
-DOL không phải một module rời — nó là **câu hỏi nền** mà gần như mọi khái niệm khác trong hệ thống ICT trả lời một phần. [[19 - Liquidity]] định nghĩa "cái gì" là thanh khoản; [[20 - Liquidity Sweep]] mô tả "hành động" lấy nó; [[21 - Market Structure Shift|MSS]] và [[41 - Change in State of Delivery|CISD]] xác nhận "khi nào" đối ứng đã đủ để đảo hướng; [[42 - SMT Divergence]] xác nhận "cú lấy đó có phải cú cuối"; [[16 - Internal & External Range Liquidity (IRL & ERL)|IRL/ERL]] phân tầng "DOL nào gần, DOL nào xa"; [[27 - Premium Discount]] cho biết "giá đang rẻ hay đắt so với đường tới DOL". Khi ôn lại một trong các khái niệm này mà chưa chắc chỗ nào kết nối với DOL, quay lại chuỗi sequence ở mục 7 của phần gốc là cách nhanh nhất để định vị lại.
+DOL không phải một module rời — nó là **câu hỏi nền** mà gần như mọi khái niệm khác trong hệ thống ICT trả lời một phần. [[19-Liquidity]] định nghĩa "cái gì" là thanh khoản; [[20-Liquidity-Sweep]] mô tả "hành động" lấy nó; [[21-Market-Structure-Shift|MSS]] và [[41-Change-in-State-of-Delivery|CISD]] xác nhận "khi nào" đối ứng đã đủ để đảo hướng; [[42-SMT-Divergence]] xác nhận "cú lấy đó có phải cú cuối"; [[16-Internal-External-Range-Liquidity-IRL-ERL|IRL/ERL]] phân tầng "DOL nào gần, DOL nào xa"; [[27-Premium-Discount]] cho biết "giá đang rẻ hay đắt so với đường tới DOL". Khi ôn lại một trong các khái niệm này mà chưa chắc chỗ nào kết nối với DOL, quay lại chuỗi sequence ở mục 7 của phần gốc là cách nhanh nhất để định vị lại.
 
 Một sai lầm phổ biến ở trader đã học đủ 40+ khái niệm ICT là **coi mỗi khái niệm là một "tín hiệu" riêng biệt cần tick đủ ô** thay vì hiểu chúng là các góc nhìn khác nhau của cùng một câu chuyện: giá đi tìm đối ứng, và DOL chỉ là tên gọi cho "đối ứng đó đang ở đâu". Khi review trade journal, thay vì hỏi "lệnh này có đủ 8 điều kiện checklist không", câu hỏi hữu ích hơn là "câu chuyện đối ứng của lệnh này có nhất quán từ đầu đến cuối không" — nếu câu chuyện logic (ai bán, ai mua, tại sao, khi nào đối ứng đủ), các "điều kiện" trong checklist tự nhiên sẽ khớp theo, vì chúng chỉ là các điểm đo của cùng một câu chuyện đó.
 

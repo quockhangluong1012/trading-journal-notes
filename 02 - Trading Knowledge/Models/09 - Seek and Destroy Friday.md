@@ -27,7 +27,7 @@ updated: 2026-07-28
 
 **Seek and Destroy Friday** là một trong các weekly profile của ICT, mô tả tuần giao dịch mà giá KHÔNG có hướng rõ ngay từ đầu tuần (khác với các weekly profile có bias mở đầu tuần), mà thay vào đó dành Thứ Hai–Thứ Năm để tích lũy (consolidate) ngay trước một sự kiện kinh tế có tác động lớn — phổ biến nhất là **NFP** (Non-Farm Payroll, Thứ Sáu đầu tháng, 08:30 NY) hoặc **FOMC** (8 lần/năm, thường Thứ Tư 14:00 NY). Đến ngày có tin, giá quét cả hai phía của range Mon–Thu — đầu tiên là phía đối lập với hướng thật, sau đó displace mạnh theo hướng weekly order flow — trước khi tiếp tục theo hướng đó.
 
-Trong ngôn ngữ ICT: đây là **Power of 3 nén vào một phiên**. Accumulation đã xảy ra suốt Mon–Thu; Thứ Sáu (hoặc ngày có tin) là **manipulation day** — cú sweep hai phía là hành vi thao túng liquidity thuần túy, không phải move thật; distribution là cú displace sau sweep, đi theo hướng weekly bias thật ([[02 - AMD]]).
+Trong ngôn ngữ ICT: đây là **Power of 3 nén vào một phiên**. Accumulation đã xảy ra suốt Mon–Thu; Thứ Sáu (hoặc ngày có tin) là **manipulation day** — cú sweep hai phía là hành vi thao túng liquidity thuần túy, không phải move thật; distribution là cú displace sau sweep, đi theo hướng weekly bias thật ([[02-AMD]]).
 
 ![[SeekDestroy-PowerOf3-Frame.svg|720]]
 > [!info] Mô tả hình
@@ -43,7 +43,7 @@ Trong ngôn ngữ ICT: đây là **Power of 3 nén vào một phiên**. Accumula
 - **Thị trường phù hợp:** FX majors (EURUSD, GBPUSD, USDJPY…), chỉ số (NQ1/ES, DXY), vàng (XAU) — mọi instrument nhạy với USD macro data.
 - **Khi nào xuất hiện:** phổ biến nhất là tuần NFP (Thứ Sáu đầu tháng), tuần có FOMC (thường Thứ Tư), và các tuần có CPI, quyết định lãi suất ngân hàng trung ương lớn, hoặc sự kiện chính trị lớn đã biết trước. Yếu tố chung: **mức độ bất định lớn tới mức các desk tổ chức không muốn định vị trước khi số liệu ra**, nên họ để giá coil và engineering liquidity ở hai đầu range trong lúc chờ.
 - **Không phù hợp:** những tuần không có lịch tin lớn nào rơi vào cuối tuần, hoặc những tuần daily action đã có hướng rõ ràng từ đầu tuần (đó là profile khác, ví dụ trending week thông thường).
-- **Liên hệ với các mô hình khác trong vault:** đây là một biến thể đặc biệt của tư duy [[20 - Liquidity Sweep]] + [[21 - Market Structure Shift|MSS]]/CISD áp trên khung thời gian tuần, và có quan hệ trực tiếp với [[05 - Friday Profit Taking]] — cả hai đều nói về "ngoại lệ" của thứ Sáu, nhưng theo hai cơ chế hoàn toàn khác nhau (xem mục Bối cảnh sử dụng ở phần liên kết chéo cuối bài).
+- **Liên hệ với các mô hình khác trong vault:** đây là một biến thể đặc biệt của tư duy [[20-Liquidity-Sweep]] + [[21-Market-Structure-Shift|MSS]]/CISD áp trên khung thời gian tuần, và có quan hệ trực tiếp với [[05 - Friday Profit Taking]] — cả hai đều nói về "ngoại lệ" của thứ Sáu, nhưng theo hai cơ chế hoàn toàn khác nhau (xem mục Bối cảnh sử dụng ở phần liên kết chéo cuối bài).
 
 ---
 
@@ -192,7 +192,7 @@ Tám tình huống dưới đây là những chỗ giả định "sweep 2 phía 
 *Hiện tượng:* có tin lớn Thứ Sáu, Mon–Thu chop rõ — nhưng dấu hiệu thứ ba (divergence HTF rõ ↔ LTF chưa theo) không tồn tại vì D1/H4 chính nó cũng đang đi ngang, không có bias nào để "chưa theo". *Cách nhận diện sớm:* kiểm tra kỹ dấu hiệu ③ (không chỉ 2 dấu hiệu đầu) — nếu HTF cũng mù mờ, đây không phải S&D week đủ điều kiện. *Hành động đúng:* không coi đây là S&D week; không có bias nghĩa là không có target, và Bonus Tip trong nguồn gốc đã nói rõ "không target = không trade". *Bài học:* đủ 2/3 dấu hiệu không phải là "gần đủ" — thiếu dấu hiệu bias là thiếu điều kiện quan trọng nhất, không thể bỏ qua.
 
 **⑥ Double sweep cùng một phía trước khi có sweep phía đối diện.**
-*Hiện tượng:* giá quét pool SSL, hồi nhẹ, rồi quét thêm một pool SSL khác thấp hơn (chưa hề chạm BSL) trước khi mới thật sự đảo hướng. *Cách nhận diện sớm:* tương tự Chuyên sâu A⑦ của [[10 - Bread and Butter Sell-Setup]] — một pool liquidity đơn lẻ có thể không đủ cho lệnh tổ chức, cần gộp thêm. *Hành động đúng:* không hoảng khi lần sweep đầu không đảo ngay; nếu chưa có MSS/CISD, tiếp tục chờ, dời điểm tham chiếu stop sang lần sweep sau cùng. *Bài học:* "sweep 2 phía" đôi khi thực chất là "sweep 3 lần cùng phía trước, rồi 1 lần phía đối diện" — số lần chạm không quan trọng, MSS/CISD mới là tín hiệu.
+*Hiện tượng:* giá quét pool SSL, hồi nhẹ, rồi quét thêm một pool SSL khác thấp hơn (chưa hề chạm BSL) trước khi mới thật sự đảo hướng. *Cách nhận diện sớm:* tương tự Chuyên sâu A⑦ của [[10 - Bread and Butter Sell Setup]] — một pool liquidity đơn lẻ có thể không đủ cho lệnh tổ chức, cần gộp thêm. *Hành động đúng:* không hoảng khi lần sweep đầu không đảo ngay; nếu chưa có MSS/CISD, tiếp tục chờ, dời điểm tham chiếu stop sang lần sweep sau cùng. *Bài học:* "sweep 2 phía" đôi khi thực chất là "sweep 3 lần cùng phía trước, rồi 1 lần phía đối diện" — số lần chạm không quan trọng, MSS/CISD mới là tín hiệu.
 
 **⑦ NFP Friday trùng đúng ngày OPEX (đáo hạn phái sinh).**
 *Hiện tượng:* thị trường vừa có NFP buổi sáng vừa có áp lực gamma pinning của OPEX buổi chiều — hai cơ chế chồng lên nhau, làm move sau tin có thể bị "kéo lại" bất thường vào buổi chiều dù sáng đã đi đúng hướng dự kiến. *Cách nhận diện sớm:* kiểm tra lịch phái sinh hàng quý/tháng bên cạnh lịch tin vĩ mô — NFP đầu tháng đôi khi trùng chu kỳ OPEX tháng. *Hành động đúng:* nếu đã vào đúng lệnh theo NFP buổi sáng và đạt target hợp lý, chốt sớm hơn thường lệ; đừng kỳ vọng giá tiếp tục trend sạch cả buổi chiều khi OPEX có thể ghì giá lại. *Bài học:* hai profile cùng ngày không cộng dồn sức mạnh — chúng có thể triệt tiêu nhau ở giai đoạn sau, xem thêm Case 5 của [[05 - Friday Profit Taking]].
@@ -271,7 +271,7 @@ Tám tình huống dưới đây là những chỗ giả định "sweep 2 phía 
 
 **Kết quả (R):** Giá tiếp tục quét thêm về hướng cũ trước khi mới thật sự đảo, quét stop của lệnh **trước khi** đi đúng hướng ban đầu trader đã dự đoán đúng — thua khoảng **-1R**.
 
-**Mổ xẻ lỗi/điểm đúng:** Bias đúng, phía sweep dự đoán đúng — nhưng **thời điểm entry sai**. Đây là lỗi "chạm đúng vùng ≠ entry" tương tự lỗi trong Bread and Butter Sell ([[10 - Bread and Butter Sell-Setup]] Chuyên sâu A③), chỉ khác cấp độ khung thời gian (tuần thay vì phiên). `missing_step: mss_confirmation`.
+**Mổ xẻ lỗi/điểm đúng:** Bias đúng, phía sweep dự đoán đúng — nhưng **thời điểm entry sai**. Đây là lỗi "chạm đúng vùng ≠ entry" tương tự lỗi trong Bread and Butter Sell ([[10 - Bread and Butter Sell Setup]] Chuyên sâu A③), chỉ khác cấp độ khung thời gian (tuần thay vì phiên). `missing_step: mss_confirmation`.
 
 **Bài học thành rule:** Dù bias và phía sweep đã đúng, KHÔNG entry tại chính nến sweep — luôn chờ MSS/CISD LTF đóng nến xác nhận trước khi vào, kể cả khi cảm giác "chắc chắn đã đúng hướng".
 
@@ -566,7 +566,7 @@ followed_plan: Yes
 
 - [[05 - Friday Profit Taking]] — phân biệt rõ Thứ Sáu "thường" (reversion) với Thứ Sáu "Seek and Destroy" (sweep 2 phía do tin lớn); xem Case 5 của bài đó cho tình huống NFP/OPEX chồng lấp.
 - [[01 - ICT 2022 Model]] — chuỗi Bias → Liquidity → Sweep → Displacement/MSS → FVG → Entry → Target là khung gốc mà Seek and Destroy Friday áp dụng ở cấp độ tuần.
-- [[10 - Bread and Butter Sell-Setup]] / [[11 - Bread and Butter Buy-Setup]] — cùng chung logic "premium/discount sweep rồi MSS xác nhận", nhưng ở cấp độ phiên trong ngày thay vì cấp độ tuần.
+- [[10 - Bread and Butter Sell Setup]] / [[11 - Bread and Butter Buy Setup]] — cùng chung logic "premium/discount sweep rồi MSS xác nhận", nhưng ở cấp độ phiên trong ngày thay vì cấp độ tuần.
 - [[12 - Consolidation Trading Strategy]] — tư duy đọc range tích lũy trước một cú breakout có liên hệ trực tiếp tới cách đọc range Mon–Thu trong mô hình này.
 
 ---

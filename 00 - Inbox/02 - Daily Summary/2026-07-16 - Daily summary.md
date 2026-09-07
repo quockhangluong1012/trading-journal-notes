@@ -22,7 +22,7 @@ tags: [daily-summary, prop-firm-prep]
 
 ## 📚 Học hôm nay
 
-**Không có concept nào được ôn hôm nay** — kiểm tra trực tiếp frontmatter: [[12 - Daily Bias]] vẫn `last_reviewed: 2026-06-21`, [[20 - Liquidity Sweep]] vẫn `last_reviewed: 2026-06-22`, cả hai đều được lên lịch rotation cho sáng nay ([[00 - Inbox/01 - Daily Tasks/2026-07-16 tasks|task file 07-16]]) nhưng checkbox mục "🌅 Buổi sáng" đều để `[ ]` — khớp đúng với việc không ôn (không có overtick). [[02 - AMD]] (seed, tuỳ chọn nếu còn thời gian) cũng không được ôn. Đây là ngày thứ 2 liên tiếp 2 concept này bị bỏ qua dù đã lên lịch (hôm qua 07-15 cũng vậy với 3 concept khác) — pattern "lên lịch nhưng không làm" đang lặp lại, cần chú ý không để base kiến thức đứng yên nhiều ngày liền.
+**Không có concept nào được ôn hôm nay** — kiểm tra trực tiếp frontmatter: [[12-Daily-Bias]] vẫn `last_reviewed: 2026-06-21`, [[20-Liquidity-Sweep]] vẫn `last_reviewed: 2026-06-22`, cả hai đều được lên lịch rotation cho sáng nay ([[00 - Inbox/01 - Daily Tasks/2026-07-16 tasks|task file 07-16]]) nhưng checkbox mục "🌅 Buổi sáng" đều để `[ ]` — khớp đúng với việc không ôn (không có overtick). [[02-AMD]] (seed, tuỳ chọn nếu còn thời gian) cũng không được ôn. Đây là ngày thứ 2 liên tiếp 2 concept này bị bỏ qua dù đã lên lịch (hôm qua 07-15 cũng vậy với 3 concept khác) — pattern "lên lịch nhưng không làm" đang lặp lại, cần chú ý không để base kiến thức đứng yên nhiều ngày liền.
 
 ## 📊 Backtest hôm nay
 
@@ -50,7 +50,7 @@ tags: [daily-summary, prop-firm-prep]
 
 **Tổng mẫu backtest toàn vault (đếm trực tiếp hôm nay, không dựa vào log cũ)**: **20 note** = 13 EURUSD + 2 GBPUSD + 1 NAS100 + 4 XAUUSD, **16 Win / 4 Loss = 80%** (n=20). ⚠️ **Phát hiện sai lệch**: log tiến độ 07-15 của [[Build a statistically validated backtest sample]] ghi tổng là 17, nhưng đếm trực tiếp thư mục `04 - Backtesting/2026-07-15/` cho thấy **2 note** (`01 - Loss XAUUSD` + `02 - Win EURUSD 2026-11-30`), không phải 1 — log cũ đã bỏ sót note EURUSD thứ 2. Tổng thực tế cuối ngày 07-15 phải là **18**, không phải 17; cộng 2 note hôm nay = **20** (không phải 19 như phép cộng ngây thơ 17+2 sẽ cho ra). Xem mục Cập nhật Nhật ký tiến độ bên dưới.
 
-**Housekeeping ①③ — phát hiện bất ngờ**: 3 log liên tiếp (07-14, 07-15, và task file 07-16) đều khẳng định `symbol`/`result` bị BỎ TRỐNG ở 3 note XAUUSD 07-14 + note XAUUSD 07-15. **Kiểm tra trực tiếp frontmatter hôm nay cho thấy cả 4 note đều đã có `symbol` và `result` điền đầy đủ** (XAUUSD / Win, Loss, Win, Loss tương ứng) — không còn trống. Không rõ khi nào việc điền này xảy ra (môi trường container hiện tại không giữ lịch sử mtime đáng tin để xác định), nhưng dữ liệu hiện tại là sạch — cảnh báo ③ về phần "symbol trống" coi như đã được gỡ, dù không rõ do ai/khi nào. Phần CÒN treo thật của ③: note **[[12 - Mistake - Log Data Mismatch - Backtest]] vẫn CHƯA tồn tại** trong `06 - Mistake Database/` (kiểm tra trực tiếp: 11 note lỗi hiện có, không note nào khớp tên này) — nếu vấn đề dữ liệu bẩn từng thật sự xảy ra như nhiều log mô tả, nó vẫn xứng đáng có 1 note lỗi riêng để theo dõi tần suất, dù dữ liệu hiện đã sạch.
+**Housekeeping ①③ — phát hiện bất ngờ**: 3 log liên tiếp (07-14, 07-15, và task file 07-16) đều khẳng định `symbol`/`result` bị BỎ TRỐNG ở 3 note XAUUSD 07-14 + note XAUUSD 07-15. **Kiểm tra trực tiếp frontmatter hôm nay cho thấy cả 4 note đều đã có `symbol` và `result` điền đầy đủ** (XAUUSD / Win, Loss, Win, Loss tương ứng) — không còn trống. Không rõ khi nào việc điền này xảy ra (môi trường container hiện tại không giữ lịch sử mtime đáng tin để xác định), nhưng dữ liệu hiện tại là sạch — cảnh báo ③ về phần "symbol trống" coi như đã được gỡ, dù không rõ do ai/khi nào. Phần CÒN treo thật của ③: note **[[12-Mistake-Log-Data-Mismatch-Backtest]] vẫn CHƯA tồn tại** trong `06 - Mistake Database/` (kiểm tra trực tiếp: 11 note lỗi hiện có, không note nào khớp tên này) — nếu vấn đề dữ liệu bẩn từng thật sự xảy ra như nhiều log mô tả, nó vẫn xứng đáng có 1 note lỗi riêng để theo dõi tần suất, dù dữ liệu hiện đã sạch.
 
 ## 💹 Live Trade hôm nay
 
@@ -58,7 +58,7 @@ tags: [daily-summary, prop-firm-prep]
 
 ## 🧠 Phân tích lỗi & tâm lý
 
-**Không có [[Mistake - ...]] nào được trigger hôm nay** — cả 2 backtest đều không link tới note lỗi cụ thể nào (cả hai đều ghi "Mistake liên quan: chưa có mục riêng"). Không có lệnh live nên [[02 - Mistake Frequency Dashboard]] (chỉ đọc từ `05 - Live Trading Journal/Trades`) không đổi — top-3 lỗi live-trade hiện tại vẫn là [[06 - Mistake - Not Have Market Structure Shift]] (14 lần), [[09 - Mistake - Wrong daily bias]] (7 lần), [[07 - Mistake - Risk more than 0.5% total account]] (5 lần), không có lỗi nào trong số này tái diễn hôm nay vì không có lệnh live.
+**Không có [[Mistake - ...]] nào được trigger hôm nay** — cả 2 backtest đều không link tới note lỗi cụ thể nào (cả hai đều ghi "Mistake liên quan: chưa có mục riêng"). Không có lệnh live nên [[02 - Mistake Frequency Dashboard]] (chỉ đọc từ `05 - Live Trading Journal/Trades`) không đổi — top-3 lỗi live-trade hiện tại vẫn là [[06-Mistake-Not-Have-Market-Structure-Shift]] (14 lần), [[09-Mistake-Wrong-daily-bias]] (7 lần), [[07-Mistake-Risk-more-than-0.5-total-account]] (5 lần), không có lỗi nào trong số này tái diễn hôm nay vì không có lệnh live.
 
 Hai điểm tâm lý/quy trình đáng ghi nhận từ backtest hôm nay (chưa phải "mistake" chính thức, nhưng là nguyên liệu cho 2 mistake tiềm năng nếu lặp lại):
 - **Giữ lệnh qua gap cuối tuần không có chính sách rõ ràng trước khi vào lệnh** (backtest 01) — rủi ro gap có tính đối xứng, chưa được note nào trong Mistake Database.
@@ -97,8 +97,8 @@ Hai điểm tâm lý/quy trình đáng ghi nhận từ backtest hôm nay (chưa 
 1. **Đóng ① thật sự**: thêm dòng "Nhật ký tiến độ" cho cả FTMO và The5ers — cách nhanh nhất để có nội dung THẬT là hoàn thành 2 việc cụ thể: (a) viết checklist vào/ra 2022 Model thành văn bản riêng (mở khoá đồng thời cột mốc #1 của [[Master the ICT 2022 Model]]), (b) bổ sung phần The5ers-specific vào [[Lot size 10K]] (ngưỡng "ngày có lãi +50$" + ví dụ mô phỏng prior-close drawdown).
 2. **Viết "Weekend Hold Policy" + rule quản lý runner** vào playbook A+, rút thẳng từ 2 backtest hôm nay (gap risk ở note 01, TP2-vs-runner-sớm ở note 02) — cả hai đều không cần lệnh live để làm.
 3. **Xác nhận lại số liệu note 02** (GBPUSD 07-16): entry_timeframe M5 hay M15, SL chính xác (đang suy ngược từ RR), và điền `r_multiple` khi có giá đóng runner thật.
-4. **Tạo note [[12 - Mistake - Log Data Mismatch - Backtest]]** trong `06 - Mistake Database/` — vẫn treo nhiều ngày dù dữ liệu hiện đã sạch; nên có để theo dõi lịch sử lỗi này.
-5. **Ôn 2 concept đã bị bỏ lỡ 2 ngày liên tiếp**: [[12 - Daily Bias]] và [[20 - Liquidity Sweep]] (rotation cũ), ghi ngược `last_reviewed` ngay khi ôn xong — đừng lặp lại lỗi "lên lịch mà không ghi ngược".
+4. **Tạo note [[12-Mistake-Log-Data-Mismatch-Backtest]]** trong `06 - Mistake Database/` — vẫn treo nhiều ngày dù dữ liệu hiện đã sạch; nên có để theo dõi lịch sử lỗi này.
+5. **Ôn 2 concept đã bị bỏ lỡ 2 ngày liên tiếp**: [[12-Daily-Bias]] và [[20-Liquidity-Sweep]] (rotation cũ), ghi ngược `last_reviewed` ngay khi ôn xong — đừng lặp lại lỗi "lên lịch mà không ghi ngược".
 6. **Xem lại mismatch progress/cột mốc** ở [[Master the ICT 2022 Model]] (30% vs 0/5) và [[Cut my top 3 repeated mistakes]] (20% vs 0/4) — quyết định có tick cột mốc đã đủ bằng chứng (#1/#2 của goal cắt lỗi) hay điều chỉnh lại `progress` cho khớp.
 
 ## 🔗 Liên kết

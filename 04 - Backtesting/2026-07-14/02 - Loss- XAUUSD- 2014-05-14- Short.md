@@ -261,7 +261,7 @@ tags:
 
 ### 7.2. Pattern lặp lại
 
-- Siết SL để làm đẹp R:R — ép SL vào mép POI thay vì trên invalidation thật. Pattern nguy hiểm nhất; liên kết [[13 - Mistake - Trading Into Unswept Liquidity]] (note tổng hợp đã tạo 2026-07-18, bao trùm cả biến thể "SL trong POI" này).
+- Siết SL để làm đẹp R:R — ép SL vào mép POI thay vì trên invalidation thật. Pattern nguy hiểm nhất; liên kết [[13-Mistake-Trading-Into-Unswept-Liquidity]] (note tổng hợp đã tạo 2026-07-18, bao trùm cả biến thể "SL trong POI" này).
 - Tụt khung để "moi" setup khi khung xác nhận (M5) đã báo phản ứng yếu/không FVG.
 - Vào lệnh ngược displacement đối nghịch còn mạnh.
 
@@ -295,12 +295,12 @@ tags:
 
 | Khái niệm | Tôi đã dùng như thế nào (SAI) | Cách dùng ĐÚNG | Ảnh hưởng |
 |---|---|---|---|
-| [[28 - Rejection Block]] | Vừa học xong đã dùng ngay làm **POI chính**, và neo SL ở RB low (1302.715) — tức mép GẦN của vùng | Invalidation của RB = **đóng nến qua cực trị của râu** (RB high 1304.109), vì toàn bộ chiều dài râu là vùng lệnh tổ chức đã bán. SL phải nằm trên RB high + buffer. Ngoài ra RB vốn là POI **phụ trợ** — dùng kèm OB/FVG để tinh chỉnh, hiếm khi standalone | Chí mạng — first_error |
-| [[10 - Consequent Encroachment (Mean Threshold)]] | Hiểu "giá chạm CE RB rồi bật ra" = RB đã hoàn thành nhiệm vụ, có thể entry với SL chặt | CE bị chạm chỉ nghĩa là **một nửa vùng** đã được lấp. Nửa còn lại (CE → RB high, và cả vùng đáy RB 0.705) vẫn là nơi lệnh tổ chức có thể tiếp tục fill — tức vùng test lại HỢP LỆ, không phải vùng cấm | Nặng |
-| [[26 - OTE - Optimal Trade Entry]] | Đặt SL (1302.715) ngay tại ~0.705 → biến rotation bình thường BÊN TRONG OTE thành "invalidation" | OTE 0.618–0.786 là **một vùng nạp lệnh**, không phải một mức. Giá xoay 0.618↔0.705↔0.786 trong vùng là hành vi mặc định. SL đặt trong lòng OTE = tự nguyện bị quét bởi nhiễu | Chí mạng |
-| [[32 - Top-down Analysis (Multiple Timeframes)]] + [[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)]] | **Trộn cấp độ**: invalidation định nghĩa trên H1 ("đóng qua RB H1") nhưng SL đặt theo swing high M1 | Mỗi lớp phải nhất quán: POI H1 → invalidation H1 → SL neo theo H1 (+buffer). M1 chỉ được quyết định *entry timing*, không được quyết định *nơi luận điểm chết* | Chí mạng |
-| [[21 - Market Structure Shift]] | Tin MSS M1 hình thành ngay khi 2 nến Bullish Displacement H1 còn đang đẩy mạnh vào vùng | MSS cấp M1 ngược một displacement cấp H1 chưa bị hấp thụ = tín hiệu cấp thấp cãi lại order flow cấp cao — trọng số gần bằng 0. Chờ dấu hiệu hấp thụ (nến H1 đóng ngược) rồi mới đếm MSS LTF | Nặng |
-| [[13 - FVG  - Fair Value Gap]] | M5 không in được FVG (wick overlap) nhưng vẫn tụt xuống M1 để "moi" trigger | Không có FVG ở khung xác nhận = displacement chưa đủ mạnh = no-trade ([[08 - Mistake - Weak Displacement]] · [[11 - LTF Displacement Not Create FVG, Big Candle But Wick Overlap]]) | Nặng |
+| [[28-Rejection-Block]] | Vừa học xong đã dùng ngay làm **POI chính**, và neo SL ở RB low (1302.715) — tức mép GẦN của vùng | Invalidation của RB = **đóng nến qua cực trị của râu** (RB high 1304.109), vì toàn bộ chiều dài râu là vùng lệnh tổ chức đã bán. SL phải nằm trên RB high + buffer. Ngoài ra RB vốn là POI **phụ trợ** — dùng kèm OB/FVG để tinh chỉnh, hiếm khi standalone | Chí mạng — first_error |
+| [[10-Consequent-Encroachment-Mean-Threshold]] | Hiểu "giá chạm CE RB rồi bật ra" = RB đã hoàn thành nhiệm vụ, có thể entry với SL chặt | CE bị chạm chỉ nghĩa là **một nửa vùng** đã được lấp. Nửa còn lại (CE → RB high, và cả vùng đáy RB 0.705) vẫn là nơi lệnh tổ chức có thể tiếp tục fill — tức vùng test lại HỢP LỆ, không phải vùng cấm | Nặng |
+| [[26-OTE-Optimal-Trade-Entry]] | Đặt SL (1302.715) ngay tại ~0.705 → biến rotation bình thường BÊN TRONG OTE thành "invalidation" | OTE 0.618–0.786 là **một vùng nạp lệnh**, không phải một mức. Giá xoay 0.618↔0.705↔0.786 trong vùng là hành vi mặc định. SL đặt trong lòng OTE = tự nguyện bị quét bởi nhiễu | Chí mạng |
+| [[32-Top-down-Analysis-Multiple-Timeframes]] + [[49-Confirmation-Timeframe-Timeframe-Layering-Khu-nhieu-MSS-trong-2022-Model]] | **Trộn cấp độ**: invalidation định nghĩa trên H1 ("đóng qua RB H1") nhưng SL đặt theo swing high M1 | Mỗi lớp phải nhất quán: POI H1 → invalidation H1 → SL neo theo H1 (+buffer). M1 chỉ được quyết định *entry timing*, không được quyết định *nơi luận điểm chết* | Chí mạng |
+| [[21-Market-Structure-Shift]] | Tin MSS M1 hình thành ngay khi 2 nến Bullish Displacement H1 còn đang đẩy mạnh vào vùng | MSS cấp M1 ngược một displacement cấp H1 chưa bị hấp thụ = tín hiệu cấp thấp cãi lại order flow cấp cao — trọng số gần bằng 0. Chờ dấu hiệu hấp thụ (nến H1 đóng ngược) rồi mới đếm MSS LTF | Nặng |
+| [[13-FVG-Fair-Value-Gap]] | M5 không in được FVG (wick overlap) nhưng vẫn tụt xuống M1 để "moi" trigger | Không có FVG ở khung xác nhận = displacement chưa đủ mạnh = no-trade ([[08-Mistake-Weak-Displacement]] · [[11 - LTF Displacement Not Create FVG, Big Candle But Wick Overlap]]) | Nặng |
 
 ### 9.2. Những điều tôi NGHĨ là đúng nhưng thật ra SAI
 
@@ -312,7 +312,7 @@ tags:
 
 ### 9.3. Đào sâu: vì sao đây là biến thể "nội bộ" của họ lỗi Unswept Liquidity
 
-Ba lệnh thua kia bị quét bởi pool nằm **ngoài** entry (ERL của GBPUSD 17/7, OB sâu của XAU 19/5, BSL external của EURUSD 7/5). Lệnh này tinh vi hơn: pool chưa-bị-lấy chính là **phần thân còn lại của chính POI bạn đang giao dịch** — đoạn từ đáy RB (0.705) lên CE và RB high. Cụm buy-stop của những người short sớm (trong đó có SL của bạn tại đúng đáy RB) là thanh khoản nằm NGAY trên đường giá cần đi để hoàn tất việc test vùng. Câu hỏi gate vẫn y hệt: *"pool chưa-bị-lấy gần nhất nằm phía nào so với SL?"* — ở đây câu trả lời là "ngay trên SL, cách 0 pip" — và đáng lẽ nó chặn lệnh này từ trước khi bấm. Phân tích tổng hợp cả 4 lệnh + checklist gate: [[13 - Mistake - Trading Into Unswept Liquidity]].
+Ba lệnh thua kia bị quét bởi pool nằm **ngoài** entry (ERL của GBPUSD 17/7, OB sâu của XAU 19/5, BSL external của EURUSD 7/5). Lệnh này tinh vi hơn: pool chưa-bị-lấy chính là **phần thân còn lại của chính POI bạn đang giao dịch** — đoạn từ đáy RB (0.705) lên CE và RB high. Cụm buy-stop của những người short sớm (trong đó có SL của bạn tại đúng đáy RB) là thanh khoản nằm NGAY trên đường giá cần đi để hoàn tất việc test vùng. Câu hỏi gate vẫn y hệt: *"pool chưa-bị-lấy gần nhất nằm phía nào so với SL?"* — ở đây câu trả lời là "ngay trên SL, cách 0 pip" — và đáng lẽ nó chặn lệnh này từ trước khi bấm. Phân tích tổng hợp cả 4 lệnh + checklist gate: [[13-Mistake-Trading-Into-Unswept-Liquidity]].
 
 Một hệ quả thực nghiệm cần làm (đã ghi ở 6. mục 4 nhưng nhấn lại vì quyết định bản chất lỗi): **kéo replay sau thời điểm SL** — nếu giá lên test RB high/OB rồi giảm về 1297.51 → xác nhận thuần lỗi SL placement (như XAU 19/5); nếu giá đóng nến trên RB high → lỗi kép (cả timing lẫn SL). Kết quả này quyết định lệnh được đếm vào nhóm lỗi nào trong thống kê.
 
@@ -424,6 +424,6 @@ Distinguishing observable: giá đóng nến của candle phá swing high M5 —
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI: [[28 - Rejection Block]] · [[13 - FVG  - Fair Value Gap]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]]
+- POI: [[28-Rejection-Block]] · [[13-FVG-Fair-Value-Gap]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]]
 - Dashboard: [[_Backtest Dashboard]]

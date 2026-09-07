@@ -25,7 +25,7 @@ updated: 2026-07-28
 > [ICT Unicorn Model — Breaker Block & FVG Overlap Setup + Free PDF](https://innercircletrader.net/tutorials/ict-unicorn-model/)
 
 > [!summary] Tóm tắt 1 câu
-> **Unicorn Model là điểm vào xác suất cao xuất hiện khi một [[04 - Breaker Block|Breaker Block]] và một [[13 - FVG  - Fair Value Gap|Fair Value Gap]] CHỒNG LẤN trên cùng một vùng giá — vùng giao nhau đó ("unicorn") mang áp lực kép: vừa phải lấp imbalance (FVG), vừa là hỗ trợ/kháng cự cấu trúc (Breaker), nên mạnh hơn hẳn FVG đơn hay Breaker đơn.**
+> **Unicorn Model là điểm vào xác suất cao xuất hiện khi một [[04-Breaker-Block|Breaker Block]] và một [[13-FVG-Fair-Value-Gap|Fair Value Gap]] CHỒNG LẤN trên cùng một vùng giá — vùng giao nhau đó ("unicorn") mang áp lực kép: vừa phải lấp imbalance (FVG), vừa là hỗ trợ/kháng cự cấu trúc (Breaker), nên mạnh hơn hẳn FVG đơn hay Breaker đơn.**
 
 > [!important] Nguyên tắc cốt lõi
 > **Không có chồng lấn = không có Unicorn.** Breaker và FVG phải *thực sự* chia sẻ cùng dải giá. Khi FVG nằm TRỌN bên trong Breaker, vùng mạnh "gấp đôi". Và **không bao giờ vào lệnh ngay tại khoảnh khắc MSS** — phải chờ giá HỒI về vùng unicorn (lý tưởng là 50% CE của FVG bên trong Breaker).
@@ -40,8 +40,8 @@ updated: 2026-07-28
 ![[Unicorn-Advanced-Anatomy.svg|697]]
 
 **Khái niệm:** Unicorn = sự **chồng lấn giá** giữa Breaker Block và FVG do cùng một cú displacement tạo ra. Vùng giao nhau là điểm vào. Nó hoạt động vì khi giá quay lại đây, nó chịu **hai lực đồng thời**:
-- **Lấp imbalance** — FVG là vùng mất cân bằng, thuật toán có xu hướng rebalance nó (xem [[41 - Change in State of Delivery]]).
-- **Hỗ trợ/kháng cự cấu trúc** — Breaker (một [[25 - OB - Order Block|Order Block]] đã "thất bại" và đảo vai) là mức mà tổ chức đã để lại lệnh.
+- **Lấp imbalance** — FVG là vùng mất cân bằng, thuật toán có xu hướng rebalance nó (xem [[41-Change-in-State-of-Delivery]]).
+- **Hỗ trợ/kháng cự cấu trúc** — Breaker (một [[25-OB-Order-Block|Order Block]] đã "thất bại" và đảo vai) là mức mà tổ chức đã để lại lệnh.
 
 **Nó trả lời câu hỏi nào trên chart?**
 - Trong nhiều FVG/Breaker rải rác, đâu là **POI có xác suất phản ứng cao nhất**?
@@ -54,7 +54,7 @@ updated: 2026-07-28
 - Không phải một FVG đơn lẻ, cũng không phải một Breaker đơn lẻ — bắt buộc **chồng lấn**.
 - Không phải tín hiệu vào ngay khi MSS xảy ra — phải **retrace**.
 - Không phải cái cớ để bỏ qua bias HTF — vẫn cần narrative + premium/discount đúng.
-- Không phải "chén thánh": overlap chỉ *nâng xác suất*, không *đảm bảo* thắng. Vẫn cần quản trị rủi ro ≤0.5%/lệnh ([[43 - Position Sizing]]).
+- Không phải "chén thánh": overlap chỉ *nâng xác suất*, không *đảm bảo* thắng. Vẫn cần quản trị rủi ro ≤0.5%/lệnh ([[43-Position-Sizing]]).
 
 ---
 
@@ -65,24 +65,24 @@ updated: 2026-07-28
 > [!important] Hiểu WHY trước khi hỏi WHAT
 > Trader mới học "Breaker + FVG chồng nhau thì vào" như một công thức, nhưng không hiểu *vì sao* overlap lại mạnh — nên họ không phân biệt được overlap "thật đáng tin" với overlap "tình cờ". Hai lực dưới đây là nền tảng.
 
-**Lực 1 — Áp lực rebalance imbalance (từ FVG).** Một [[13 - FVG  - Fair Value Gap|Fair Value Gap]] là dấu vết của một cú giao dịch **một chiều quá nhanh** (displacement): thị trường đã "bỏ qua" một dải giá mà không giao dịch cân bằng hai chiều ở đó. Cơ chế phân phối giá (delivery algorithm) của ICT có xu hướng quay lại "trả lại giá trị" cho vùng bị bỏ qua này — nên FVG hoạt động như một **nam châm** kéo giá hồi về. Đây là lý do ta canh giá *quay lại* FVG, không đuổi theo cú đẩy.
+**Lực 1 — Áp lực rebalance imbalance (từ FVG).** Một [[13-FVG-Fair-Value-Gap|Fair Value Gap]] là dấu vết của một cú giao dịch **một chiều quá nhanh** (displacement): thị trường đã "bỏ qua" một dải giá mà không giao dịch cân bằng hai chiều ở đó. Cơ chế phân phối giá (delivery algorithm) của ICT có xu hướng quay lại "trả lại giá trị" cho vùng bị bỏ qua này — nên FVG hoạt động như một **nam châm** kéo giá hồi về. Đây là lý do ta canh giá *quay lại* FVG, không đuổi theo cú đẩy.
 
-**Lực 2 — Dấu chân tổ chức (từ Breaker).** Một [[04 - Breaker Block|Breaker Block]] là một Order Block đã **thất bại và đảo vai**: vùng mà một nhóm lệnh tổ chức từng được đặt, sau đó bị "bẫy" khi cấu trúc đảo chiều. Khi giá quay lại vùng này, các bên liên quan có động cơ **phòng thủ mức** (bảo vệ vị thế, thêm lệnh). Nên Breaker hoạt động như một **bức tường** hỗ trợ/kháng cự cấu trúc.
+**Lực 2 — Dấu chân tổ chức (từ Breaker).** Một [[04-Breaker-Block|Breaker Block]] là một Order Block đã **thất bại và đảo vai**: vùng mà một nhóm lệnh tổ chức từng được đặt, sau đó bị "bẫy" khi cấu trúc đảo chiều. Khi giá quay lại vùng này, các bên liên quan có động cơ **phòng thủ mức** (bảo vệ vị thế, thêm lệnh). Nên Breaker hoạt động như một **bức tường** hỗ trợ/kháng cự cấu trúc.
 
 **Vì sao giao của hai lực mạnh hơn tổng của từng lực:** khi FVG *nằm trong* Breaker, giá quay về vùng đó gặp **cả nam châm rebalance lẫn tường cấu trúc cùng một điểm**. Nếu bias đúng, xác suất phản ứng không chỉ cộng tuyến tính mà *cộng dồn* — đây là lý do Unicorn cho phép **stop chặt hơn** (giá "không nên" xuyên qua nếu setup đúng) và do đó **RR lớn hơn**.
 
 > [!warning] Hệ quả quan trọng
 > Nếu overlap chỉ là *ngẫu nhiên* (Breaker và FVG do hai cú displacement khác nhau, không cùng narrative) thì "hai lực" đó không thực sự cùng câu chuyện — độ tin cậy giảm mạnh. **Overlap chất lượng nhất khi cả Breaker lẫn FVG được tạo bởi CÙNG một cú displacement/MSS.**
 
-Liên hệ sâu: [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] giải thích vì sao đám đông đặt lệnh sai chỗ (tạo thanh khoản để thuật toán "ăn"), còn Unicorn là nơi bạn đứng *cùng phía* với dấu chân tổ chức thay vì phía đám đông.
+Liên hệ sâu: [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] giải thích vì sao đám đông đặt lệnh sai chỗ (tạo thanh khoản để thuật toán "ăn"), còn Unicorn là nơi bạn đứng *cùng phía* với dấu chân tổ chức thay vì phía đám đông.
 
 ---
 
 ## 3. Cấu phần bắt buộc
 
-**Breaker Block** (xem [[04 - Breaker Block]]): là **Order Block thất bại**. Bullish breaker = những nến giảm cuối cùng trước cú đẩy lên đã (a) quét một đáy (SSL) rồi (b) displacement lên phá swing high. Bearish breaker là ảnh gương: nến tăng cuối trước cú đẩy xuống sau khi quét đỉnh (BSL).
+**Breaker Block** (xem [[04-Breaker-Block]]): là **Order Block thất bại**. Bullish breaker = những nến giảm cuối cùng trước cú đẩy lên đã (a) quét một đáy (SSL) rồi (b) displacement lên phá swing high. Bearish breaker là ảnh gương: nến tăng cuối trước cú đẩy xuống sau khi quét đỉnh (BSL).
 
-**Fair Value Gap** (xem [[13 - FVG  - Fair Value Gap]]): khe mất cân bằng để lại bởi chính cú displacement tạo MSS. Bullish = **BISI** (buyside imbalance sellside inefficiency); bearish = **SIBI**.
+**Fair Value Gap** (xem [[13-FVG-Fair-Value-Gap]]): khe mất cân bằng để lại bởi chính cú displacement tạo MSS. Bullish = **BISI** (buyside imbalance sellside inefficiency); bearish = **SIBI**.
 
 **Chồng lấn (overlap):** hai vùng trên phải cắt nhau về giá.
 
@@ -102,9 +102,9 @@ Liên hệ sâu: [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] giải 
 
 ![[Unicorn-Advanced-Formation-Sequence.svg|697]]
 
-1. **Bias + Premium/Discount** — HTF bias rõ ([[27 - Premium Discount]], [[12 - Daily Bias]]).
-2. **Quét thanh khoản** — [[20 - Liquidity Sweep|sweep]] một đỉnh/đáy (inducement/stop hunt — xem [[15 - Inducement]]).
-3. **Displacement + [[21 - Market Structure Shift|MSS]]** — cú đẩy mạnh phá cấu trúc, để lại **FVG** và hình thành **Breaker**.
+1. **Bias + Premium/Discount** — HTF bias rõ ([[27-Premium-Discount]], [[12-Daily-Bias]]).
+2. **Quét thanh khoản** — [[20-Liquidity-Sweep|sweep]] một đỉnh/đáy (inducement/stop hunt — xem [[15-Inducement]]).
+3. **Displacement + [[21-Market-Structure-Shift|MSS]]** — cú đẩy mạnh phá cấu trúc, để lại **FVG** và hình thành **Breaker**.
 4. **Chồng lấn** — FVG rơi vào trong Breaker = **vùng Unicorn**.
 5. **Retrace entry** — chờ giá hồi về vùng, KHÔNG vào lúc MSS.
 
@@ -117,7 +117,7 @@ Liên hệ sâu: [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] giải 
 
 ![[Unicorn-Advanced-Bullish-vs-Bearish.svg|697]]
 
-**Bullish Unicorn:** giá quét **SSL (đáy)** → displacement lên phá swing high → bullish breaker + BISI/FVG chồng lấn → mua khi hồi về vùng. Target hướng lên [[16 - Internal & External Range Liquidity (IRL & ERL)|BSL/ERL]].
+**Bullish Unicorn:** giá quét **SSL (đáy)** → displacement lên phá swing high → bullish breaker + BISI/FVG chồng lấn → mua khi hồi về vùng. Target hướng lên [[16-Internal-External-Range-Liquidity-IRL-ERL|BSL/ERL]].
 
 **Bearish Unicorn:** giá quét **BSL (đỉnh)** → displacement xuống phá swing low → bearish breaker + SIBI/FVG chồng lấn → bán khi hồi về vùng. Target hướng xuống SSL/ERL.
 
@@ -127,12 +127,12 @@ Liên hệ sâu: [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] giải 
 
 ![[Unicorn-Advanced-Reversal-vs-Continuation.svg|697]]
 
-**Reversal Unicorn:** sau khi quét một đỉnh/đáy **lớn** (major high/low), kỳ vọng đảo chiều — rủi ro cao hơn, cần bias HTF ủng hộ mạnh và tốt nhất có [[42 - SMT Divergence]] xác nhận.
+**Reversal Unicorn:** sau khi quét một đỉnh/đáy **lớn** (major high/low), kỳ vọng đảo chiều — rủi ro cao hơn, cần bias HTF ủng hộ mạnh và tốt nhất có [[42-SMT-Divergence]] xác nhận.
 
 **Continuation Unicorn:** sau pullback/inducement **thuận** xu hướng đang chạy — xác suất cao hơn, ưu tiên. Đây là dạng nên tập trung khi mới học vì nó đi *cùng* dòng chảy HTF.
 
 > [!tip] Ưu tiên khi phân vân
-> Nếu không chắc đang ở reversal hay continuation, **mặc định coi là continuation** và chỉ trade khi thuận [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)|DOL]] HTF. Reversal chỉ nên đánh khi bias HTF *đã* nghiêng về đảo chiều từ trước, không phải "hy vọng đảo".
+> Nếu không chắc đang ở reversal hay continuation, **mặc định coi là continuation** và chỉ trade khi thuận [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|DOL]] HTF. Reversal chỉ nên đánh khi bias HTF *đã* nghiêng về đảo chiều từ trước, không phải "hy vọng đảo".
 
 ---
 
@@ -140,10 +140,10 @@ Liên hệ sâu: [[38 - Liquidity Reflexivity (Bẫy đám đông ICT)]] giải 
 
 ![[Unicorn-Advanced-Entry-CE.svg|697]]
 
-- **Entry:** đặt **limit** tại vùng chồng lấn, lý tưởng là **50% CE** ([[10 - Consequent Encroachment (Mean Threshold)]]) của FVG nằm trong Breaker.
+- **Entry:** đặt **limit** tại vùng chồng lấn, lý tưởng là **50% CE** ([[10-Consequent-Encroachment-Mean-Threshold]]) của FVG nằm trong Breaker.
 - **Stop:** vượt qua **wick của cú sweep** / cạnh xa của Breaker — không phải con số cố định.
-- **Target:** [[16 - Internal & External Range Liquidity (IRL & ERL)|IRL trước, ERL sau]]. Dời stop về BE sau khi chạm T1. RR thường lớn nhờ stop chặt.
-- **Timing:** ưu tiên vùng hình thành trong [[18 - Kill Zones|killzone]] / [[40 - Macro Times|macro]].
+- **Target:** [[16-Internal-External-Range-Liquidity-IRL-ERL|IRL trước, ERL sau]]. Dời stop về BE sau khi chạm T1. RR thường lớn nhờ stop chặt.
+- **Timing:** ưu tiên vùng hình thành trong [[18-Kill-Zones|killzone]] / [[40-Macro-Times|macro]].
 
 ![[Unicorn-Stop-Logic.svg|697]]
 
@@ -211,13 +211,13 @@ Cùng cấu trúc overlap, nhưng độ sạch của displacement và độ dài
 > [!important] Đây là nơi Unicorn chuyển từ "setup LTF ngẫu nhiên" sang "vũ khí có bối cảnh"
 > Một Unicorn LTF (5m/1m) **mạnh nhất khi nó hình thành BÊN TRONG một POI HTF cùng hướng** — ví dụ bullish unicorn 5m xuất hiện đúng lúc giá hồi về một bullish Order Block/discount POI trên H1/H4. Khi đó bạn có xác suất của cả hai khung: HTF cho *nơi*, LTF cho *thời điểm & entry chính xác*.
 
-**Quy trình top-down (xem [[32 - Top-down Analysis (Multiple Timeframes)]]):**
+**Quy trình top-down (xem [[32-Top-down-Analysis-Multiple-Timeframes]]):**
 1. **H4/H1:** xác định bias, DOL, và POI HTF (OB/FVG/breaker) mà giá đang hướng về.
 2. Chờ giá **hồi về POI HTF** đó (vùng discount cho long / premium cho short).
 3. **Zoom xuống 5m/1m** ngay tại POI HTF, tìm chuỗi sweep → displacement/MSS → Unicorn.
 4. Entry LTF tại 50% CE của unicorn; **target = ERL của khung HTF** (không chỉ IRL nhỏ).
 
-**Vì sao lồng khung tăng chất lượng:** POI HTF cho bạn lý do "giá nên phản ứng ở đây"; unicorn LTF cho bạn entry stop-chặt để khai thác phản ứng đó với RR lớn. Đây cũng là cách [[07 - Unicorn Model|Unicorn]] gắn vào các model khung lớn hơn — mỗi LRB của [[04 - Market Maker Buy Model – MMBM|MMBM]] hoặc mỗi retest của [[08 - 08 30 AM NY Model]] thường *chính là* một unicorn LTF.
+**Vì sao lồng khung tăng chất lượng:** POI HTF cho bạn lý do "giá nên phản ứng ở đây"; unicorn LTF cho bạn entry stop-chặt để khai thác phản ứng đó với RR lớn. Đây cũng là cách [[07 - Unicorn Model|Unicorn]] gắn vào các model khung lớn hơn — mỗi LRB của [[04 - Market Maker Buy Model MMBM|MMBM]] hoặc mỗi retest của [[08 - 08 30 AM NY Model]] thường *chính là* một unicorn LTF.
 
 > [!warning] Bẫy fractal
 > Đừng đánh unicorn LTF **ngược** với POI HTF. Một bearish unicorn 1m xuất hiện giữa lúc giá đang hồi về một *bullish* POI H4 thường chỉ là nhiễu — bạn đang đứng ngược dòng lớn hơn.
@@ -228,12 +228,12 @@ Cùng cấu trúc overlap, nhưng độ sạch của displacement và độ dài
 
 Unicorn là *lõi cấu trúc*; các lớp dưới đây là *chất xúc tác* nâng grade:
 
-- **Premium/Discount đúng** ([[27 - Premium Discount]]): bullish unicorn nên nằm ở discount của dealing range; bearish ở premium. Unicorn ở "sai nửa" range là cảnh báo.
-- **SMT Divergence** ([[42 - SMT Divergence]]): NQ vs ES, EU vs GU phân kỳ tại điểm sweep = xác nhận mạnh cho reversal unicorn.
-- **Killzone / Macro** ([[18 - Kill Zones]], [[40 - Macro Times]]): unicorn hình thành trong 09:50–10:10 (NQ) hoặc macro forex đáng tin hơn hẳn ngoài giờ.
-- **CISD / Displacement chất lượng** ([[41 - Change in State of Delivery]]): nến displacement thân lớn, ít chồng lấn → FVG/Breaker "sạch".
-- **OTE overlap** ([[26 - OTE - Optimal Trade Entry]]): nếu 50% CE của unicorn trùng vùng OTE 62–79% của nhịp đẩy → confluence điểm vào.
-- **NWOG/NDOG lân cận** ([[24 - New Week Opening Gap]], [[23 - New Day Opening Gap]]): unicorn gần các gap mở cửa thường được "tôn trọng" hơn.
+- **Premium/Discount đúng** ([[27-Premium-Discount]]): bullish unicorn nên nằm ở discount của dealing range; bearish ở premium. Unicorn ở "sai nửa" range là cảnh báo.
+- **SMT Divergence** ([[42-SMT-Divergence]]): NQ vs ES, EU vs GU phân kỳ tại điểm sweep = xác nhận mạnh cho reversal unicorn.
+- **Killzone / Macro** ([[18-Kill-Zones]], [[40-Macro-Times]]): unicorn hình thành trong 09:50–10:10 (NQ) hoặc macro forex đáng tin hơn hẳn ngoài giờ.
+- **CISD / Displacement chất lượng** ([[41-Change-in-State-of-Delivery]]): nến displacement thân lớn, ít chồng lấn → FVG/Breaker "sạch".
+- **OTE overlap** ([[26-OTE-Optimal-Trade-Entry]]): nếu 50% CE của unicorn trùng vùng OTE 62–79% của nhịp đẩy → confluence điểm vào.
+- **NWOG/NDOG lân cận** ([[24-New-Week-Opening-Gap]], [[23-New-Day-Opening-Gap]]): unicorn gần các gap mở cửa thường được "tôn trọng" hơn.
 
 > [!note] Nguyên tắc confluence
 > Confluence để **nâng grade và size**, không để "biện minh" cho một setup không có overlap thật. Không bao giờ đánh đổi: "không overlap nhưng có SMT nên vẫn vào" → đó không còn là Unicorn.
@@ -419,7 +419,7 @@ Unicorn LTF mạnh nhất khi nằm **bên trong một POI HTF cùng hướng** 
 
 **Chẩn đoán:** overlap thật (cùng displacement) + đúng P/D + nested thuận POI HTF + đúng macro + SMT + entry retrace = đủ ≥5/6 confluence → **grade A+**, full size (≤0.5%). Không có mắt xích nào phải "biện minh".
 
-**Bài học:** đây là hình mẫu — mọi lớp (đo overlap, cùng displacement, chờ CE, thuận HTF, đúng giờ) đều đứng độc lập, không cái nào bù cho cái nào. Xem [[27 - Premium Discount]], [[42 - SMT Divergence]], [[40 - Macro Times]].
+**Bài học:** đây là hình mẫu — mọi lớp (đo overlap, cùng displacement, chờ CE, thuận HTF, đúng giờ) đều đứng độc lập, không cái nào bù cho cái nào. Xem [[27-Premium-Discount]], [[42-SMT-Divergence]], [[40-Macro-Times]].
 
 ### Case 2 — Loss (overlap "tình cờ")
 
@@ -439,7 +439,7 @@ Unicorn LTF mạnh nhất khi nằm **bên trong một POI HTF cùng hướng** 
 
 **Chẩn đoán:** `first_error_step: entry`. Lệnh thắng nhưng **outcome bias** — cái nguy hiểm là thắng sẽ **củng cố hành vi chase** vốn chưa được backtest validate. R thực nhỏ hơn hẳn so với nếu chờ CE (stop lẽ ra chặt hơn nhiều).
 
-**Bài học:** một lệnh **thắng vẫn có thể sai quy trình**; chase tại MSS phá vỡ **ưu thế R:R** — chính là thứ làm Unicorn đáng đánh. Chờ **50% CE** là kỷ luật, không phải tùy chọn. Xem [[10 - Consequent Encroachment (Mean Threshold)]].
+**Bài học:** một lệnh **thắng vẫn có thể sai quy trình**; chase tại MSS phá vỡ **ưu thế R:R** — chính là thứ làm Unicorn đáng đánh. Chờ **50% CE** là kỷ luật, không phải tùy chọn. Xem [[10-Consequent-Encroachment-Mean-Threshold]].
 
 ### Case 4 — No-Trade đúng (tách rời)
 
@@ -449,7 +449,7 @@ Unicorn LTF mạnh nhất khi nằm **bên trong một POI HTF cùng hướng** 
 
 **Chẩn đoán:** theo bảng §3, tách rời = **KHÔNG phải Unicorn**. Đây là **FVG đơn / Breaker đơn**, không có vùng chồng lấn để đặt CE. Quyết định đúng là **đứng ngoài**.
 
-**Bài học:** **đo trước, tin sau** — không cắt nhau thì không có Unicorn, bất kể hai vùng "trông gần nhau". Một No-Trade kỷ luật là một quyết định tốt, không phải cơ hội bị bỏ lỡ. Xem [[04 - Breaker Block]], [[13 - FVG  - Fair Value Gap]].
+**Bài học:** **đo trước, tin sau** — không cắt nhau thì không có Unicorn, bất kể hai vùng "trông gần nhau". Một No-Trade kỷ luật là một quyết định tốt, không phải cơ hội bị bỏ lỡ. Xem [[04-Breaker-Block]], [[13-FVG-Fair-Value-Gap]].
 
 > [!info] Ba case bổ sung dưới đây (Case 5-7) — cũng là kịch bản tái dựng, không phải lệnh thật
 > Case tái dựng từ pattern lặp lại trong backtest, số liệu minh họa — giữ cùng nguyên tắc với bốn case ①-④ ở trên: không phải dữ liệu backtest thực, dùng để làm nổi bật *loại* bài học. Case 5 là **Win** (đúng quy trình, phân biệt killzone), Case 6 là **Loss** (phá invalidation vì tin vào "Breaker hồi sinh"), Case 7 là **No-Trade/Miss** (overlap M1 quá mỏng, đứng ngoài đúng nhưng bỏ lỡ một phần move).
@@ -629,7 +629,7 @@ Unicorn LTF mạnh nhất khi nằm **bên trong một POI HTF cùng hướng** 
 | Sau lệnh thua | Trade gỡ ngay | Ghi `missing_step`, chờ setup thật |
 | Tăng size | Sau vài lệnh thắng | Sau ≥30 mẫu backtest xác nhận |
 
-- Kết hợp với các model khung ngày: [[08 - 08 30 AM NY Model]] và [[08 - 7 AM Liquidity Hunt + IFVG Entry]] thường tạo unicorn tại PD array sau MSS — khi PD array của chúng *chính là* Breaker+FVG chồng lấn thì đó là biến thể A+.
+- Kết hợp với các model khung ngày: [[08 - 08 30 AM NY Model]] và [[08 - 7-AM-Liquidity-Hunt-IFVG-Entry]] thường tạo unicorn tại PD array sau MSS — khi PD array của chúng *chính là* Breaker+FVG chồng lấn thì đó là biến thể A+.
 
 > [!tip]
 > Nếu tóm Best Practices thành một câu: **"Đo overlap, chờ hồi, thuận HTF — chỉ đánh khi cả cấu trúc lẫn bối cảnh đồng ý, không phải khi hai cái hộp trông gần nhau."**

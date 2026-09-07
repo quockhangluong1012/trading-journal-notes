@@ -33,9 +33,9 @@ updated: 2026-07-28
 ## 1. Định nghĩa
 
 **Khái niệm:**
-**Macro Time** là một khoảng phút cố định trong ngày khi thuật toán giao dịch của tổ chức (IPDA) chạy **chu kỳ repricing**: nó (a) đi tìm thanh khoản — chạy stop, quét một mức equal high/low — để lấy đối ứng khớp lệnh, và/hoặc (b) định giá lại "fair value" bằng một cú [[21 - Market Structure Shift|displacement]] để lại một [[13 - FVG  - Fair Value Gap|Fair Value Gap]]. FVG đó trở thành bệ phóng cho chân giao dịch kế tiếp hướng về [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)|draw on liquidity]] trong ngày.
+**Macro Time** là một khoảng phút cố định trong ngày khi thuật toán giao dịch của tổ chức (IPDA) chạy **chu kỳ repricing**: nó (a) đi tìm thanh khoản — chạy stop, quét một mức equal high/low — để lấy đối ứng khớp lệnh, và/hoặc (b) định giá lại "fair value" bằng một cú [[21-Market-Structure-Shift|displacement]] để lại một [[13-FVG-Fair-Value-Gap|Fair Value Gap]]. FVG đó trở thành bệ phóng cho chân giao dịch kế tiếp hướng về [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|draw on liquidity]] trong ngày.
 
-**Nguồn gốc tư duy:** Xuất phát từ luận điểm của Michael Huddleston rằng thị trường **không** được vận hành bởi cung–cầu ngẫu nhiên mà bởi một **thuật toán giao price theo lịch**. Lịch đó có cấp độ macro rộng (chính là [[18 - Kill Zones|killzone]]) và cấp độ micro chính xác (chính là các macro time) bên trong killzone.
+**Nguồn gốc tư duy:** Xuất phát từ luận điểm của Michael Huddleston rằng thị trường **không** được vận hành bởi cung–cầu ngẫu nhiên mà bởi một **thuật toán giao price theo lịch**. Lịch đó có cấp độ macro rộng (chính là [[18-Kill-Zones|killzone]]) và cấp độ micro chính xác (chính là các macro time) bên trong killzone.
 
 ![[MacroTimes-Advanced-FullDayMap.svg|697]]
 
@@ -58,7 +58,7 @@ updated: 2026-07-28
 
 ![[MacroTimes-Advanced-vs-Killzone.svg|697]]
 
-[[18 - Kill Zones|Killzone]] là **khung phiên rộng** (ví dụ NY AM 08:30–11:00 ET, London 02:00–05:00 ET) — nơi *được phép* giao dịch. **Macro** là những **phút chính xác** bên trong killzone nơi thuật toán khai hỏa. Ví von: killzone là *khoảng thời gian đi săn*, macro là *khoảnh khắc bóp cò*.
+[[18-Kill-Zones|Killzone]] là **khung phiên rộng** (ví dụ NY AM 08:30–11:00 ET, London 02:00–05:00 ET) — nơi *được phép* giao dịch. **Macro** là những **phút chính xác** bên trong killzone nơi thuật toán khai hỏa. Ví von: killzone là *khoảng thời gian đi săn*, macro là *khoảnh khắc bóp cò*.
 
 > [!warning] Quy tắc bất di bất dịch
 > Bạn **không** thể trade macro 10:10 nếu đang ở NGOÀI killzone NY. Một macro rơi ngoài killzone đang hoạt động là **xác suất thấp** và thường không đáng trade. Macro là *sự tinh chỉnh trong killzone*, không phải thứ thay thế killzone.
@@ -126,7 +126,7 @@ Macro chính là **khi** các khoảnh khắc repricing này xảy ra. Chúng **
 
 ![[MacroTimes-Advanced-AMD-Placement.svg|697]]
 
-Mỗi macro thuộc một pha của [[02 - AMD|chu kỳ AMD]] trong ngày. Biết macro thuộc pha nào = biết vai trò của nó và nên **quan sát** hay **vào lệnh**.
+Mỗi macro thuộc một pha của [[02-AMD|chu kỳ AMD]] trong ngày. Biết macro thuộc pha nào = biết vai trò của nó và nên **quan sát** hay **vào lệnh**.
 
 **Accumulation (Á):** *KHÔNG* có macro (cố ý). Pha tích lũy (≈20:00–02:00 ET) là lúc thuật toán gom vị thế, không repricing → đây là lý do ICT dạy **không trade phiên Á**.
 
@@ -142,13 +142,13 @@ Mỗi macro thuộc một pha của [[02 - AMD|chu kỳ AMD]] trong ngày. Biế
 
 *Chuỗi mẫu bearish trên NQ: 08:50 kéo dài đỉnh pre-market (gom BSL) → 09:30 open Judas quét BSL → 09:50 macro MSS + FVG hình thành → 10:00–10:10 giá hồi về FVG → 10:10 limit sell khớp tại 50% CE → phân phối về T1 (IRL) quanh 11:00.*
 
-**Bước 1 — Xác nhận [[12 - Daily Bias|Daily Bias]] TRƯỚC mọi macro.** Bias quyết định macro phải khai hỏa hướng nào mới tradeable. Ngày bearish: macro 10:10 đẩy lên trên một đỉnh rồi đảo xuống = hợp lệ. Nếu đẩy xuống rồi đảo lên → *failed macro* hoặc chỉ là dao động vặt. **Không bao giờ trade macro ngược bias.**
+**Bước 1 — Xác nhận [[12-Daily-Bias|Daily Bias]] TRƯỚC mọi macro.** Bias quyết định macro phải khai hỏa hướng nào mới tradeable. Ngày bearish: macro 10:10 đẩy lên trên một đỉnh rồi đảo xuống = hợp lệ. Nếu đẩy xuống rồi đảo lên → *failed macro* hoặc chỉ là dao động vặt. **Không bao giờ trade macro ngược bias.**
 
 **Bước 2 — Đánh dấu PD array/FVG TRƯỚC khi macro khai hỏa.** Với macro 10:10, vùng entry thường là FVG/OB tạo ra trong MSS 09:50 (hoặc mức chưa mitigate từ phiên trước). Với macro 04:03, đánh dấu FVG từ MSS 02:33 (nếu có). **Phải có mức entry ghi sẵn trước khi cửa sổ mở.**
 
-**Bước 3 — Quan sát chủ động ±5 phút và đặt limit tại 50% CE.** Từ 10:05–10:20, theo dõi từng nến M1. Giá có hồi vào FVG đã đánh dấu? Có chạm mức [[10 - Consequent Encroachment (Mean Threshold)|50% Consequent Encroachment]] không? Đặt **limit** tại 50% CE của FVG **trước** khi cửa sổ mở. Khớp trong cửa sổ macro = lệnh hợp lệ. Nếu tới 10:20 giá chưa chạm → cơ hội đã trôi.
+**Bước 3 — Quan sát chủ động ±5 phút và đặt limit tại 50% CE.** Từ 10:05–10:20, theo dõi từng nến M1. Giá có hồi vào FVG đã đánh dấu? Có chạm mức [[10-Consequent-Encroachment-Mean-Threshold|50% Consequent Encroachment]] không? Đặt **limit** tại 50% CE của FVG **trước** khi cửa sổ mở. Khớp trong cửa sổ macro = lệnh hợp lệ. Nếu tới 10:20 giá chưa chạm → cơ hội đã trôi.
 
-**Bước 4 — Stop & target theo cấu trúc macro.** Stop **vượt qua wick của nến Judas macro** (không phải con số cố định). T1 = [[16 - Internal & External Range Liquidity (IRL & ERL)|IRL]] theo hướng phân phối (thường chạm ở macro kế, ví dụ 10:50–11:10 cho entry 10:10). T2 = ERL = draw on liquidity trong ngày.
+**Bước 4 — Stop & target theo cấu trúc macro.** Stop **vượt qua wick của nến Judas macro** (không phải con số cố định). T1 = [[16-Internal-External-Range-Liquidity-IRL-ERL|IRL]] theo hướng phân phối (thường chạm ở macro kế, ví dụ 10:50–11:10 cho entry 10:10). T2 = ERL = draw on liquidity trong ngày.
 
 ---
 
@@ -209,7 +209,7 @@ Mỗi macro thuộc một pha của [[02 - AMD|chu kỳ AMD]] trong ngày. Biế
 
 - Vẽ **đường dọc** đánh dấu macro trên chart; chỉ tập trung ±5 phút quanh mỗi macro → giảm ~60% thời gian nhìn màn hình và loại phần lớn entry giả.
 - Ưu tiên macro **có confluence tối đa**: đúng bias + đúng vùng premium/discount + có **SMT divergence** (NQ tạo cực trị mới, ES không) + FVG sạch.
-- Ghép macro với các model có sẵn: [[08 - 08 30 AM NY Model]], [[08 - 7 AM Liquidity Hunt + IFVG Entry]], và bộ khung [[01 - ICT 2022 Model]].
+- Ghép macro với các model có sẵn: [[08 - 08 30 AM NY Model]], [[08 - 7-AM-Liquidity-Hunt-IFVG-Entry]], và bộ khung [[01 - ICT 2022 Model]].
 - Chốt lệnh **theo cấu trúc**: T1 tại IRL (thường chạm ở macro kế), T2 tại ERL — dời stop về BE sau T1.
 - Ghi nhật ký theo macro: mỗi lệnh backtest/live nên gắn nhãn *đã khớp ở macro nào* để đo edge của từng cửa sổ theo thời gian.
 
@@ -342,12 +342,12 @@ Trong ngôn ngữ Auction Market Theory / Market Profile, các macro time tươn
 | Biên độ Judas (điểm/pip) theo macro | Đo khoảng cách từ open macro tới điểm cực trị của Judas swing | So sánh biên độ macro 09:50 với biên độ macro 04:03 trên cùng khoảng thời gian để biết macro nào "mạnh" hơn theo mùa |
 | Tỷ lệ "failed macro" theo ngày trong tuần | Số lần macro chạy ngược bias / tổng số ngày, tách theo thứ trong tuần | Thứ Sáu hè, ngày trước lễ thường có tỷ lệ failed macro cao hơn — cần tách riêng khi backtest |
 
-**Thiết kế thí nghiệm backtest riêng cho macro:** định nghĩa mẫu = một "macro event" hợp lệ khi (1) đang trong killzone tương ứng, (2) trong vòng ±10 phút quanh mốc macro có ít nhất 1 cây nến displacement thực sự (thân ≥ 1.5x trung bình 20 nến gần nhất). Tiêu chí thắng: sau displacement, giá hồi về FVG và tiếp diễn đạt ≥1R theo hướng thuận Daily Bias trong vòng N nến tiếp theo. Tiêu chí thua: giá không hồi về FVG trong thời gian hợp lý (no-retrace, xem case ở [[41 - Change in State of Delivery]] mục Case Study 2 áp dụng tương tự cho macro) hoặc hồi về nhưng tiếp tục đi ngược. Số mẫu tối thiểu: vì mỗi macro chỉ xảy ra 1 lần/ngày, cần tối thiểu 60-90 ngày dữ liệu (khoảng 3-4 tháng liên tục) cho MỘT macro cụ thể để có ý nghĩa thống kê sơ bộ — không nên gộp chung 9 macro khác nhau vào một con số duy nhất vì bản chất mỗi macro khác nhau về vai trò AMD.
+**Thiết kế thí nghiệm backtest riêng cho macro:** định nghĩa mẫu = một "macro event" hợp lệ khi (1) đang trong killzone tương ứng, (2) trong vòng ±10 phút quanh mốc macro có ít nhất 1 cây nến displacement thực sự (thân ≥ 1.5x trung bình 20 nến gần nhất). Tiêu chí thắng: sau displacement, giá hồi về FVG và tiếp diễn đạt ≥1R theo hướng thuận Daily Bias trong vòng N nến tiếp theo. Tiêu chí thua: giá không hồi về FVG trong thời gian hợp lý (no-retrace, xem case ở [[41-Change-in-State-of-Delivery]] mục Case Study 2 áp dụng tương tự cho macro) hoặc hồi về nhưng tiếp tục đi ngược. Số mẫu tối thiểu: vì mỗi macro chỉ xảy ra 1 lần/ngày, cần tối thiểu 60-90 ngày dữ liệu (khoảng 3-4 tháng liên tục) cho MỘT macro cụ thể để có ý nghĩa thống kê sơ bộ — không nên gộp chung 9 macro khác nhau vào một con số duy nhất vì bản chất mỗi macro khác nhau về vai trò AMD.
 
 ### A4. Tương tác & mâu thuẫn với các khái niệm ICT khác
 
 - **Macro vs Killzone khi killzone vừa mở, giá đã di chuyển mạnh trước cả macro đầu tiên:** đôi khi giá "chạy trước" ngay khi killzone mở (ví dụ 08:30 NY AM) mà chưa tới macro 08:50. Quy tắc phân xử: nếu displacement đã xảy ra và tạo MSS rõ *trước* macro đầu tiên của killzone, coi macro đó đã "bị bỏ qua" — không cố tìm setup tại đúng phút macro nếu cấu trúc đã xác nhận sớm hơn; bám theo cấu trúc thực tế, không bám theo đồng hồ một cách máy móc.
-- **Macro vs SMT divergence khi SMT xuất hiện lệch macro vài phút:** SMT lý tưởng xuất hiện đúng trong macro window, nhưng đôi khi công cụ "trễ" (laggard, xem [[42 - SMT Divergence]] mục 13D) chỉ xác nhận từ chối vài phút sau khi macro đã đóng. Quy tắc: chấp nhận một buffer hợp lý (2-3 nến M1/M5) sau khi macro đóng để SMT "kịp" xác nhận, không đòi nó phải trùng khít từng giây với mốc macro.
+- **Macro vs SMT divergence khi SMT xuất hiện lệch macro vài phút:** SMT lý tưởng xuất hiện đúng trong macro window, nhưng đôi khi công cụ "trễ" (laggard, xem [[42-SMT-Divergence]] mục 13D) chỉ xác nhận từ chối vài phút sau khi macro đã đóng. Quy tắc: chấp nhận một buffer hợp lý (2-3 nến M1/M5) sau khi macro đóng để SMT "kịp" xác nhận, không đòi nó phải trùng khít từng giây với mốc macro.
 - **Macro vs CISD khi CISD in ra ngay trước macro mở vài phút:** nếu chuỗi giao hàng cuối đã đủ dài và CISD level đã bị phá *ngay trước* khi macro window chính thức mở, cách phân xử hợp lý là coi macro đó đã "khai hỏa sớm" — dùng chính CISD đó làm bằng chứng, không chờ đến đúng phút macro mới hành động, vì chờ máy móc có thể lỡ giá đã hồi và đi tiếp.
 
 ![[MacroTimes-DeepDive-RepricingMicrostructure.svg]]
@@ -476,7 +476,7 @@ Trong ngôn ngữ Auction Market Theory / Market Profile, các macro time tươn
 
 10. **Tâm lý thực chiến — ép lệnh vì "đã canh giờ, phải có gì đó xảy ra".** Sau khi đã dành thời gian ngồi canh đúng phút macro, nhiều trader cảm thấy "phải làm gì đó" để không lãng phí thời gian đã bỏ ra, dẫn tới vào lệnh dù displacement yếu/không rõ. Cách xử lý: tách bạch rõ hai việc — "quan sát tại macro window" và "quyết định vào lệnh" là hai bước độc lập; không có displacement rõ = đóng chart, không phải một thất bại cá nhân.
 
-11. **Macro window trùng vào lúc chuyển đổi hợp đồng futures rollover (đầu tháng, quý).** Khi macro rơi đúng vào giai đoạn thanh khoản đang dịch chuyển giữa hợp đồng tháng hiện tại và tháng kế tiếp (xem thêm ở note [[42 - SMT Divergence]] về rollover), giá trên contract "front month" có thể phản ứng khác thường do một phần thanh khoản đã chuyển sang contract mới. Cách xử lý: vào các ngày rollover chính thức của CME (thường công bố lịch trước), kiểm tra volume của contract đang trade so với contract kế tiếp — nếu volume đã nghiêng hẳn sang contract mới, macro trên contract cũ có thể mất phần lớn ý nghĩa.
+11. **Macro window trùng vào lúc chuyển đổi hợp đồng futures rollover (đầu tháng, quý).** Khi macro rơi đúng vào giai đoạn thanh khoản đang dịch chuyển giữa hợp đồng tháng hiện tại và tháng kế tiếp (xem thêm ở note [[42-SMT-Divergence]] về rollover), giá trên contract "front month" có thể phản ứng khác thường do một phần thanh khoản đã chuyển sang contract mới. Cách xử lý: vào các ngày rollover chính thức của CME (thường công bố lịch trước), kiểm tra volume của contract đang trade so với contract kế tiếp — nếu volume đã nghiêng hẳn sang contract mới, macro trên contract cũ có thể mất phần lớn ý nghĩa.
 
 ### Bảng tín hiệu cảnh báo sớm → hành động
 
@@ -524,7 +524,7 @@ Với trader tại Việt Nam (UTC+7, không có DST), điểm cần lưu ý là
 
 ## F. Liên hệ chuỗi khái niệm — Macro Time trong toàn hệ thống
 
-Macro Time là lớp "định giờ" chồng lên gần như mọi khái niệm cấu trúc khác: [[18 - Kill Zones|Killzone]] cho khung rộng; [[21 - Market Structure Shift|MSS]] và [[41 - Change in State of Delivery|CISD]] cho bằng chứng cấu trúc bên trong macro; [[13 - FVG  - Fair Value Gap|FVG]] cho vùng entry sau displacement; [[42 - SMT Divergence|SMT]] cho xác nhận liên thị trường tại đúng cửa sổ đó; [[02 - AMD]] cho biết macro thuộc pha thao túng hay phân phối. Khi ôn lại, câu hỏi hữu ích nhất không phải "macro này đúng giờ chưa" mà là **"macro này đang đóng vai trò gì trong câu chuyện AMD của cả ngày, và các khái niệm cấu trúc khác có đồng thuận không"** — giờ chỉ là cái khung để bạn biết lúc nào nên tập trung nhìn, còn nội dung câu chuyện vẫn phải do cấu trúc giá thực tế kể lại.
+Macro Time là lớp "định giờ" chồng lên gần như mọi khái niệm cấu trúc khác: [[18-Kill-Zones|Killzone]] cho khung rộng; [[21-Market-Structure-Shift|MSS]] và [[41-Change-in-State-of-Delivery|CISD]] cho bằng chứng cấu trúc bên trong macro; [[13-FVG-Fair-Value-Gap|FVG]] cho vùng entry sau displacement; [[42-SMT-Divergence|SMT]] cho xác nhận liên thị trường tại đúng cửa sổ đó; [[02-AMD]] cho biết macro thuộc pha thao túng hay phân phối. Khi ôn lại, câu hỏi hữu ích nhất không phải "macro này đúng giờ chưa" mà là **"macro này đang đóng vai trò gì trong câu chuyện AMD của cả ngày, và các khái niệm cấu trúc khác có đồng thuận không"** — giờ chỉ là cái khung để bạn biết lúc nào nên tập trung nhìn, còn nội dung câu chuyện vẫn phải do cấu trúc giá thực tế kể lại.
 
 > [!example] Bài tập tự luyện đề xuất
 > Chọn ra 15 ngày giao dịch gần nhất, trong đó cố ý chọn ít nhất 3 ngày rơi vào tuần chuyển DST (hoặc ngày trước/sau lễ nếu không trùng mùa DST). Với mỗi ngày, ghi lại: macro nào khai hỏa, macro nào im lặng, và bạn có phát hiện đúng nguyên nhân im lặng (do DST/half-day hay do thị trường thực sự yên tĩnh) không. Đây là cách rèn phản xạ phân biệt hai loại "macro im lặng" khác nhau về bản chất.
@@ -544,7 +544,7 @@ Vàng vừa được trade như một tài sản trú ẩn phản ứng với US
 
 ### G3. Bối cảnh chỉ số DXY và macro — vì sao nên xem đồng thời
 
-DXY (chỉ số đô la) thường phản ứng gần như đồng thời với các macro NY, và vì vàng/EU/GU đều có tương quan nghịch/thuận rõ với DXY (xem thêm [[42 - SMT Divergence]]), một thực hành tốt là mở thêm chart DXY cạnh chart chính khi trade quanh macro NY — nếu DXY không có displacement tương ứng trong khi cặp bạn trade lại có, đây có thể là dấu hiệu di chuyển đó mang tính "riêng lẻ" (idiosyncratic) của cặp đó chứ không phải một macro event có tính hệ thống rộng, và độ tin cậy nên được hạ xuống.
+DXY (chỉ số đô la) thường phản ứng gần như đồng thời với các macro NY, và vì vàng/EU/GU đều có tương quan nghịch/thuận rõ với DXY (xem thêm [[42-SMT-Divergence]]), một thực hành tốt là mở thêm chart DXY cạnh chart chính khi trade quanh macro NY — nếu DXY không có displacement tương ứng trong khi cặp bạn trade lại có, đây có thể là dấu hiệu di chuyển đó mang tính "riêng lẻ" (idiosyncratic) của cặp đó chứ không phải một macro event có tính hệ thống rộng, và độ tin cậy nên được hạ xuống.
 
 ## H. Sai lầm thường gặp khi mới học macro time (góc nhìn người hướng dẫn)
 
@@ -661,6 +661,6 @@ Phần mở rộng chuyên sâu này không thay đổi nội dung cốt lõi c�
 - Phạm vi: bổ sung phản biện, case study, và edge case vận hành (đặc biệt DST và half-day); không chỉnh sửa nội dung gốc.
 - Tất cả số liệu thống kê trong phần này (tỷ lệ %, ngưỡng R, số mẫu N) là ví dụ minh họa cho cách thiết kế backtest, không phải số liệu lịch sử thực tế đã kiểm chứng — người đọc cần tự backtest trên dữ liệu và instrument của riêng mình trước khi áp dụng.
 
-- Liên kết nội bộ liên quan: [[18 - Kill Zones]], [[21 - Market Structure Shift]], [[41 - Change in State of Delivery]], [[42 - SMT Divergence]], [[02 - AMD]], [[13 - FVG  - Fair Value Gap]].
+- Liên kết nội bộ liên quan: [[18-Kill-Zones]], [[21-Market-Structure-Shift]], [[41-Change-in-State-of-Delivery]], [[42-SMT-Divergence]], [[02-AMD]], [[13-FVG-Fair-Value-Gap]].
 
 *(Hết phần mở rộng chuyên sâu — Macro Times.)*

@@ -349,8 +349,8 @@ Ngày 04/05 giá displacement tăng tạo **Bullish FVG**; ngày 06/05 giá disp
 
 ### 9.5. So sánh với lệnh khác cùng mẫu trong vault
 
-- **[[03 - Win - EURUSD - 2021-07-22 - Long]]** — cùng entry_type CE, cùng follow đủ 7 bước, nhưng POI rank thấp hơn (FVG đơn, rank 1) mà vẫn Grade B; note này rank BPR (ngoài thang, ước lượng giữa 1-2) nhưng Grade A — chênh lệch grade giữa hai lệnh không đến từ rank POI mà từ chất lượng GATE + kỷ luật, khớp với ghi chú tại mục 5 của cả hai note.
-- **[[01 - Win - EURUSD - 2021-05-03 - Short]]** (Unicorn, note 07-10/01) — cùng hướng Short, cùng chờ đủ chuỗi 7 bước, nhưng POI rank cao hơn hẳn (Unicorn = 5/5). Cả hai đều win — không đủ mẫu (n=2) để nói rank POI quan trọng hay không so với kỷ luật chờ chuỗi.
+- **[[03 - Win - EURUSD - 2021-07-22- Long]]** — cùng entry_type CE, cùng follow đủ 7 bước, nhưng POI rank thấp hơn (FVG đơn, rank 1) mà vẫn Grade B; note này rank BPR (ngoài thang, ước lượng giữa 1-2) nhưng Grade A — chênh lệch grade giữa hai lệnh không đến từ rank POI mà từ chất lượng GATE + kỷ luật, khớp với ghi chú tại mục 5 của cả hai note.
+- **[[01 - Win - EURUSD - 2021-05-03- Short]]** (Unicorn, note 07-10/01) — cùng hướng Short, cùng chờ đủ chuỗi 7 bước, nhưng POI rank cao hơn hẳn (Unicorn = 5/5). Cả hai đều win — không đủ mẫu (n=2) để nói rank POI quan trọng hay không so với kỷ luật chờ chuỗi.
 
 ---
 
@@ -468,8 +468,8 @@ Load-bearing claim C3 (sweep EQH named + displacement + MSS) giữ vững — kh
 ### Liên kết
 
 - Model: [[01 - ICT 2022 Model]]
-- POI ladder: [[13 - FVG  - Fair Value Gap]] · [[04 - Breaker Block]] · [[07 - Unicorn Model]]
-- Entry refine: [[10 - Consequent Encroachment (Mean Threshold)]] · [[27 - Premium Discount]]
-- Bước: [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]]
+- POI ladder: [[13-FVG-Fair-Value-Gap]] · [[04-Breaker-Block]] · [[07 - Unicorn Model]]
+- Entry refine: [[10-Consequent-Encroachment-Mean-Threshold]] · [[27-Premium-Discount]]
+- Bước: [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]]
 - Dashboard: [[_POI Analytics Dashboard]] · [[_Backtest Dashboard]]
-- Mistakes: [[12 - Mistake - Log Data Mismatch - Backtest]] (tham chiếu lỗi mâu thuẫn dữ liệu đã tự sửa)
+- Mistakes: [[12-Mistake-Log-Data-Mismatch-Backtest]] (tham chiếu lỗi mâu thuẫn dữ liệu đã tự sửa)

@@ -65,7 +65,7 @@ Kill Zone là một **cửa sổ thời gian** trong ngày mà ICT cho rằng x�
 
 **Mục đích trong ICT:**
 - Lọc **khi nào** được phép săn entry → tăng chất lượng, giảm số lệnh.
-- Ghép với [[02 - AMD]]: London KZ ~ manipulation, NY KZ ~ distribution.
+- Ghép với [[02-AMD]]: London KZ ~ manipulation, NY KZ ~ distribution.
 - Định khung cho **Silver Bullet** và các model phụ thuộc thời gian.
 - Tránh các "vùng chết" (NY lunch, cuối phiên) nơi giá đi ngang/whipsaw.
 
@@ -104,7 +104,7 @@ Nhiều trader có hệ thống tốt nhưng vẫn thua vì trade SAI GIỜ — 
 
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Setup hình thành **trong** một kill zone (đặc biệt London Open / NY AM).
-- [ ] Kill zone trùng với pha distribution của [[02 - AMD]].
+- [ ] Kill zone trùng với pha distribution của [[02-AMD]].
 - [ ] Có sweep liquidity + displacement xảy ra ngay trong KZ.
 - [ ] Bias rõ và move trong KZ đồng hướng bias.
 - [ ] Thị trường đang trong mùa "có biến động" (không phải kỳ nghỉ lễ).
@@ -224,7 +224,7 @@ Cách các lớp lồng vào nhau:
 > 4. **Nếu hết KZ mà chưa có setup, tôi có kỷ luật đứng ngoài không?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]) → hướng kỳ vọng cho move trong KZ.
+- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]) → hướng kỳ vọng cho move trong KZ.
 - **Draw on liquidity:** pool HTF làm target cho distribution trong NY KZ.
 - **Lịch tin tức:** đánh dấu tin lớn rơi vào KZ nào.
 
@@ -281,7 +281,7 @@ Vùng chết cần tránh: NY lunch (~23:30–01:00 VN)
 | Tin lớn sắp ra trong KZ | **KZ rủi ro tin** | Chờ qua tin rồi đánh giá lại |
 
 > [!note]
-> Kill Zone là "trục thời gian" của bộ ba **Time–Price–Liquidity**: [[02 - AMD]] cho biết pha nào, Kill Zone cho biết giờ nào, còn [[19 - Liquidity]] cho biết giá bị hút về đâu. Một entry A+ thường là giao điểm của cả ba.
+> Kill Zone là "trục thời gian" của bộ ba **Time–Price–Liquidity**: [[02-AMD]] cho biết pha nào, Kill Zone cho biết giờ nào, còn [[19-Liquidity]] cho biết giá bị hút về đâu. Một entry A+ thường là giao điểm của cả ba.
 
 ---
 
@@ -344,7 +344,7 @@ Cửa sổ Silver Bullet NY 10:00–11:00 EST
 ```
 
 > [!note]
-> Kill Zone định **KHI NÀO** săn; [[02 - AMD]] định **PHA**; [[20 - Liquidity Sweep]] là **TRIGGER**; [[Fair Value Gap]]/[[Optimal Trade Entry]] là **ĐIỂM VÀO**. Thiếu yếu tố thời gian, các model còn lại mất nhiều xác suất.
+> Kill Zone định **KHI NÀO** săn; [[02-AMD]] định **PHA**; [[20-Liquidity-Sweep]] là **TRIGGER**; [[Fair Value Gap]]/[[Optimal Trade Entry]] là **ĐIỂM VÀO**. Thiếu yếu tố thời gian, các model còn lại mất nhiều xác suất.
 
 ---
 
@@ -589,7 +589,7 @@ Kill Zone không phải một khái niệm ICT phát minh ra từ đầu — nó
 
 ### Edge Case 4 — Futures Sunday 18:00 ET open không phải "London Open KZ" — dễ nhầm hai khái niệm mở phiên
 
-**Tình huống:** Một số trader mới nhầm giờ CME futures reopen Chủ Nhật (18:00 ET, liên quan đến NWOG — xem [[24 - New Week Opening Gap]]) với "London Open Kill Zone" (02:00-05:00 EST) — hai mốc hoàn toàn khác nhau về bản chất: một là giờ mở lại giao dịch futures sau cuối tuần, một là cửa sổ biến động cao do London bắt đầu hoạt động thương mại.
+**Tình huống:** Một số trader mới nhầm giờ CME futures reopen Chủ Nhật (18:00 ET, liên quan đến NWOG — xem [[24-New-Week-Opening-Gap]]) với "London Open Kill Zone" (02:00-05:00 EST) — hai mốc hoàn toàn khác nhau về bản chất: một là giờ mở lại giao dịch futures sau cuối tuần, một là cửa sổ biến động cao do London bắt đầu hoạt động thương mại.
 
 **Vì sao bẫy được cả trader có kinh nghiệm:** Trên chart futures, cả hai mốc đều là "điểm bắt đầu của một giai đoạn mới trong tuần" nên dễ gộp chung tư duy — nhưng thanh khoản tại 18:00 ET Chủ Nhật cực mỏng (chỉ có Sydney/Tokyo vừa mở), còn London Open KZ 02:00-05:00 EST mới là lúc thanh khoản dồi dào thật của châu Âu.
 
@@ -733,4 +733,4 @@ Kill Zone không phải một khái niệm ICT phát minh ra từ đầu — nó
 5. **Dùng Silver Bullet như một sub-window cụ thể (10:00–11:00 EST cho NY AM), không phải cách gọi khác của cả NY AM KZ.** Nhầm hai khái niệm khiến bạn mở rộng "Silver Bullet" ra 3 tiếng thay vì 1 tiếng chọn lọc — làm giảm chất lượng bộ lọc thời gian. Nếu dùng thêm ICT Macro (~20 phút, xem Mục 3), coi đó là lớp tinh chỉnh bên trong Silver Bullet, không phải thay thế nó.
 6. **Không ép có lệnh chỉ vì đang trong Kill Zone.** KZ là điều kiện CẦN, không phải ĐỦ — vẫn phải có bias, sweep, và POI đúng như checklist ở Mục 8. Ghi lại số lần bạn "ép lệnh trong KZ" vào `common_mistakes` liên kết tới [[Mistake - Trade Outside Killzone]] nếu việc này lặp lại.
 7. **Backtest và so sánh hiệu suất theo từng Kill Zone cho đúng thị trường bạn giao dịch (NQ1, EURUSD, GBPUSD, XAUUSD).** Bảng xếp hạng biến động tương đối ở Mục 3 chỉ là định tính từ tài liệu ICT chung — không phải số đo trên tài khoản của bạn. Sau 20–30 mẫu, so sánh win rate/average R giữa London Open, NY AM, London Close cho từng thị trường, và chỉ giữ lại Kill Zone thực sự chứng minh được edge cho phong cách của bạn.
-8. **Liên kết lại với [[02 - AMD]] và [[19 - Liquidity]] mỗi khi review.** Kill Zone chỉ là một trục trong bộ ba Time–Price–Liquidity; đánh giá một trade không nên dừng ở "có đúng giờ không" mà phải hỏi thêm "đúng pha AMD chưa, đúng liquidity chưa".
+8. **Liên kết lại với [[02-AMD]] và [[19-Liquidity]] mỗi khi review.** Kill Zone chỉ là một trục trong bộ ba Time–Price–Liquidity; đánh giá một trade không nên dừng ở "có đúng giờ không" mà phải hỏi thêm "đúng pha AMD chưa, đúng liquidity chưa".

@@ -20,7 +20,7 @@ updated: 2026-07-28
 # Turtle Soup
 
 > [!summary] Tóm tắt 1 câu
-> **Turtle Soup** là mô hình đảo chiều dựa trên một cú **false breakout** — giá phá vỡ một mức swing high/low hiển nhiên để quét stop của breakout traders ([[20 - Liquidity Sweep]]), rồi nhanh chóng **reclaim** (lấy lại) vào trong range và đảo chiều — và ta vào lệnh theo chiều ngược lại với đám đông vừa bị bẫy.
+> **Turtle Soup** là mô hình đảo chiều dựa trên một cú **false breakout** — giá phá vỡ một mức swing high/low hiển nhiên để quét stop của breakout traders ([[20-Liquidity-Sweep]]), rồi nhanh chóng **reclaim** (lấy lại) vào trong range và đảo chiều — và ta vào lệnh theo chiều ngược lại với đám đông vừa bị bẫy.
 
 > [!important] Nguyên tắc cốt lõi
 > Một cú phá vỡ chỉ trở thành **Turtle Soup** khi giá **RECLAIM** lại mức vừa phá VÀ tạo **displacement** (nến/đoạn dịch chuyển mạnh) ngược chiều, kèm **MSS** trên khung thấp.
@@ -34,18 +34,18 @@ updated: 2026-07-28
 ### Khái niệm (nguồn gốc)
 **Turtle Soup** là tên một chiến lược cổ điển do Linda Raschke đặt, ban đầu là *phản đòn* (counter-trade) lại hệ thống nổi tiếng của nhóm **Turtle Traders** — những người mua/bán khi giá phá vỡ đỉnh/đáy 20 ngày (20-day high/low). Raschke nhận ra rằng phần lớn các cú phá vỡ đó là **giả**: giá chỉ nhú qua mức rồi quay lại. "Turtle Soup" = "nấu súp từ những con rùa" = ăn tiền của các Turtle bị bẫy bởi false breakout.
 
-ICT (Inner Circle Trader) đã hấp thụ ý tưởng này và đóng khung lại bằng ngôn ngữ thanh khoản: **Turtle Soup là một [[20 - Liquidity Sweep]] của một mức external/hiển nhiên (obvious level) được dùng như tín hiệu vào lệnh đảo chiều.**
+ICT (Inner Circle Trader) đã hấp thụ ý tưởng này và đóng khung lại bằng ngôn ngữ thanh khoản: **Turtle Soup là một [[20-Liquidity-Sweep]] của một mức external/hiển nhiên (obvious level) được dùng như tín hiệu vào lệnh đảo chiều.**
 
 ### Bản chất (liquidity grab reversal)
 Phía sau mỗi đỉnh/đáy rõ ràng là một cụm **stop order** và **breakout order**:
-- Trên một old high / equal highs → là [[07 - Buy-side Liquidity]] (BSL): stop của người short + buy-stop của breakout buyers.
+- Trên một old high / equal highs → là [[07-Buy-side-Liquidity]] (BSL): stop của người short + buy-stop của breakout buyers.
 - Dưới một old low / equal lows → là [[30 - Sell-side Liquidity]] (SSL): stop của người long + sell-stop của breakout sellers.
 
 Smart money cần thanh khoản để khớp lệnh lớn. Họ đẩy giá **xuyên qua mức** để kích hoạt đám lệnh đó (lấy "nhiên liệu"), rồi đảo chiều. Turtle Soup chính là việc **vào lệnh ngay sau cú quét đó, theo chiều smart money**.
 
-### Quan hệ với [[20 - Liquidity Sweep]]
-Turtle Soup gần như **đồng nghĩa với cách dùng đảo chiều của [[20 - Liquidity Sweep]]**:
-- [[20 - Liquidity Sweep]] = khái niệm gốc (giá quét qua một pool thanh khoản rồi từ chối).
+### Quan hệ với [[20-Liquidity-Sweep]]
+Turtle Soup gần như **đồng nghĩa với cách dùng đảo chiều của [[20-Liquidity-Sweep]]**:
+- [[20-Liquidity-Sweep]] = khái niệm gốc (giá quét qua một pool thanh khoản rồi từ chối).
 - **Turtle Soup** = tên *mô hình giao dịch* cụ thể khi cú sweep đó xảy ra ở một **mức external hiển nhiên** (PDH/PDL, equal highs/lows, session H/L, swing high/low) và được dùng làm **entry đảo chiều**.
 
 > Hiểu đơn giản: Turtle Soup là Liquidity Sweep "đóng gói thành một setup có entry/stop/target".
@@ -60,10 +60,10 @@ Turtle Soup gần như **đồng nghĩa với cách dùng đảo chiều của [
 
 ### Mục đích trong ICT
 - Cung cấp một **điểm vào đảo chiều xác suất cao** ngay tại đỉnh/đáy của một swing — nơi rủi ro nhỏ (stop sát) còn reward lớn (cả range để chạy).
-- Là "công tắc" xác nhận [[12 - Daily Bias]]: nếu bias là long, ta chờ Turtle Soup quét SSL bên dưới rồi mua.
+- Là "công tắc" xác nhận [[12-Daily-Bias]]: nếu bias là long, ta chờ Turtle Soup quét SSL bên dưới rồi mua.
 
 ### Vì sao quan trọng
-- Nó cho entry tại **external range liquidity** (xem [[16 - Internal & External Range Liquidity (IRL & ERL)]]) — các điểm cực trị nơi đảo chiều thực sự bắt đầu.
+- Nó cho entry tại **external range liquidity** (xem [[16-Internal-External-Range-Liquidity-IRL-ERL]]) — các điểm cực trị nơi đảo chiều thực sự bắt đầu.
 - Tránh được cái bẫy lớn nhất của trader mới: **đu theo breakout** đúng lúc smart money đang phân phối.
 
 ### Nó giúp trả lời câu hỏi gì?
@@ -75,7 +75,7 @@ Turtle Soup gần như **đồng nghĩa với cách dùng đảo chiều của [
 - **Không phải** lệnh đoán đáy/đỉnh mù quáng. Phải có sweep + reclaim + displacement + MSS, không chỉ "giá rớt sâu nên mua".
 - **Không phải** mọi cú chạm đỉnh/đáy. Cần mức **hiển nhiên/external** mà đám đông nhìn thấy (chứa thanh khoản thật).
 - **Không phải** real breakout. Nếu có acceptance ngoài mức → đó là continuation, không phải Turtle Soup.
-- **Không phải** entry độc lập với context. Phải khớp với [[12 - Daily Bias]] và vùng [[27 - Premium Discount]].
+- **Không phải** entry độc lập với context. Phải khớp với [[12-Daily-Bias]] và vùng [[27-Premium-Discount]].
 
 ---
 
@@ -85,24 +85,24 @@ Turtle Soup gần như **đồng nghĩa với cách dùng đảo chiều của [
 | Loại Turtle Soup | Hướng lệnh | Mức bị quét | Thanh khoản | Vào lệnh khi |
 |---|---|---|---|---|
 | TS Long (bullish) | Mua | Quét **SSL** dưới old low / equal lows / PDL / session low | [[30 - Sell-side Liquidity]] | Giá reclaim lên trên mức + displacement up + MSS bullish |
-| TS Short (bearish) | Bán | Quét **BSL** trên old high / equal highs / PDH / session high | [[07 - Buy-side Liquidity]] | Giá reclaim xuống dưới mức + displacement down + MSS bearish |
+| TS Short (bearish) | Bán | Quét **BSL** trên old high / equal highs / PDH / session high | [[07-Buy-side-Liquidity]] | Giá reclaim xuống dưới mức + displacement down + MSS bearish |
 | TS tại PDH/PDL | Hai chiều | Previous Day High / Low | ERL ngày | Quét PDH→short; quét PDL→long |
 | TS tại Equal Highs/Lows | Hai chiều | Hai+ đỉnh/đáy bằng nhau | Pool tập trung, "magnet" | Quét hết equal levels rồi reclaim |
-| TS tại Session H/L | Hai chiều | Asia/London/NY high-low | Thanh khoản phiên | Trong kill zone kế tiếp ([[18 - Kill Zones]]) |
+| TS tại Session H/L | Hai chiều | Asia/London/NY high-low | Thanh khoản phiên | Trong kill zone kế tiếp ([[18-Kill-Zones]]) |
 | TS tại Swing High/Low cũ | Hai chiều | Swing point rõ trên HTF | ERL cấu trúc | Reclaim swing point + MSS |
 
 ### Khi nào giá trị cao?
 - [ ] Mức bị quét là **rất hiển nhiên** (PDH/PDL, equal highs/lows, đỉnh/đáy tuần) — chứa nhiều thanh khoản.
-- [ ] Cú quét diễn ra trong **[[18 - Kill Zones]]** (London / NY AM) chứ không phải giờ chết.
-- [ ] Hướng Turtle Soup **trùng [[12 - Daily Bias]]** và HTF structure.
-- [ ] Quét xảy ra tại vùng [[27 - Premium Discount]] đúng phe (quét SSL ở discount để long; quét BSL ở premium để short).
-- [ ] Có **displacement rõ** + **MSS** ngay sau cú quét (xem [[Displacement]], [[21 - Market Structure Shift]]).
+- [ ] Cú quét diễn ra trong **[[18-Kill-Zones]]** (London / NY AM) chứ không phải giờ chết.
+- [ ] Hướng Turtle Soup **trùng [[12-Daily-Bias]]** và HTF structure.
+- [ ] Quét xảy ra tại vùng [[27-Premium-Discount]] đúng phe (quét SSL ở discount để long; quét BSL ở premium để short).
+- [ ] Có **displacement rõ** + **MSS** ngay sau cú quét (xem [[Displacement]], [[21-Market-Structure-Shift]]).
 - [ ] Cú quét để lại **[[Fair Value Gap]]** hoặc [[Order Block]] làm entry refinement.
 
 ### Khi nào bỏ qua?
 - [ ] Giá **đóng cửa chấp nhận** ngoài mức (real breakout) — không reclaim.
 - [ ] Không có displacement ngược chiều, chỉ là wick yếu rồi đi sideway.
-- [ ] Hướng setup **ngược [[12 - Daily Bias]]** mạnh trên HTF.
+- [ ] Hướng setup **ngược [[12-Daily-Bias]]** mạnh trên HTF.
 - [ ] Mức bị quét không phải mức hiển nhiên (không ai nhìn thấy → ít thanh khoản → ít ý nghĩa).
 - [ ] Tin tức lớn / spread giãn / ngoài kill zone.
 - [ ] Còn quá nhiều thanh khoản chưa quét phía xa hơn (giá có thể đi tiếp tới đó trước).
@@ -117,7 +117,7 @@ Turtle Soup gần như **đồng nghĩa với cách dùng đảo chiều của [
 3. **Từ chối (rejection)**: giá **không đóng cửa chấp nhận** ngoài mức; quay đầu nhanh.
 4. **Reclaim**: giá đóng cửa trở lại **bên trong** range (vượt lại mức vừa phá theo chiều ngược).
 5. **Displacement**: một đoạn dịch chuyển mạnh, có động lượng, ngược chiều cú quét (thường để lại FVG).
-6. **MSS / CHoCH**: phá vỡ cấu trúc vi mô trên khung thấp xác nhận đảo chiều ([[21 - Market Structure Shift]], [[09 - Change of Character]]).
+6. **MSS / CHoCH**: phá vỡ cấu trúc vi mô trên khung thấp xác nhận đảo chiều ([[21-Market-Structure-Shift]], [[09-Change-of-Character]]).
 
 ### Ma trận nhận diện
 | Yếu tố | Turtle Soup hợp lệ | Mơ hồ / yếu | ⚠️ Cảnh báo real breakout |
@@ -127,7 +127,7 @@ Turtle Soup gần như **đồng nghĩa với cách dùng đảo chiều của [
 | Displacement | Mạnh, ngược chiều quét, để lại FVG | Yếu, không FVG rõ | Mạnh **cùng chiều** cú phá |
 | MSS khung thấp | Có, rõ ràng | Chỉ minor structure | Không có; structure tiếp diễn cùng chiều phá |
 | Mức bị quét | External/hiển nhiên | Mức nội bộ nhỏ | Phá xong tạo loạt high/low mới cao hơn |
-| Context bias | Trùng [[12 - Daily Bias]] | Trung tính | Ngược lại — giá đang trending mạnh qua mức |
+| Context bias | Trùng [[12-Daily-Bias]] | Trung tính | Ngược lại — giá đang trending mạnh qua mức |
 
 ### Điều kiện
 **Bắt buộc:**
@@ -136,8 +136,8 @@ Turtle Soup gần như **đồng nghĩa với cách dùng đảo chiều của [
 - Có **displacement** + **MSS** ngược chiều cú quét.
 
 **Tăng xác suất:**
-- Quét trong [[18 - Kill Zones]], đúng vùng [[27 - Premium Discount]].
-- Trùng [[12 - Daily Bias]] và HTF POI ([[Order Block]] / [[Fair Value Gap]] HTF).
+- Quét trong [[18-Kill-Zones]], đúng vùng [[27-Premium-Discount]].
+- Trùng [[12-Daily-Bias]] và HTF POI ([[Order Block]] / [[Fair Value Gap]] HTF).
 - Quét **equal highs/lows** (pool dày) hoặc PDH/PDL.
 - Để lại FVG sạch để entry/refine.
 
@@ -204,17 +204,17 @@ Khi nào nên ưu tiên biến thể nào — *cần backtest xác nhận trên 
 ## 4. Quy trình phân tích đa khung thời gian
 
 ### D1 / H4 — Context & Bias
-- Xác định [[12 - Daily Bias]]: hôm nay nghiêng long hay short?
+- Xác định [[12-Daily-Bias]]: hôm nay nghiêng long hay short?
 - Đánh dấu các **mức external hiển nhiên**: PDH/PDL, weekly H/L, equal highs/lows, swing cũ → đây là *mục tiêu* của cú quét.
-- Xác định [[27 - Premium Discount]] của [[12 - Dealing Range]]: ta muốn long từ discount sau khi quét SSL; short từ premium sau khi quét BSL.
+- Xác định [[27-Premium-Discount]] của [[12-Dealing-Range]]: ta muốn long từ discount sau khi quét SSL; short từ premium sau khi quét BSL.
 
 ### H1 / M15 — Định vị setup
-- Chờ giá tiến tới mức đã đánh dấu (giá thường được [[15 - Inducement]] kéo về).
+- Chờ giá tiến tới mức đã đánh dấu (giá thường được [[15-Inducement]] kéo về).
 - Quan sát cú **quét đầu tiên**: giá có nhú qua mức rồi từ chối không?
 - Khoanh vùng FVG/OB hình thành ngay sau cú quét làm vùng entry tiềm năng.
 
 ### M5 / M1 — Trigger & Entry
-- Chờ **displacement** + **MSS** xác nhận đảo chiều ([[21 - Market Structure Shift]]).
+- Chờ **displacement** + **MSS** xác nhận đảo chiều ([[21-Market-Structure-Shift]]).
 - Vào lệnh sau reclaim: hoặc market sau MSS, hoặc limit tại [[Fair Value Gap]] / [[Order Block]] của đoạn displacement ([[Optimal Trade Entry]]).
 - Stop **bên kia cực trị cú quét** (ngoài wick). Target: thanh khoản đối diện / về trong range.
 
@@ -258,7 +258,7 @@ Confidence: __/5   | Kill zone: London/NY AM
 - [ ] Giá reclaim lại trong range.
 - [ ] Displacement ngược chiều cú quét, để lại FVG.
 - [ ] MSS / CHoCH trên khung entry.
-- [ ] Trùng [[12 - Daily Bias]] + vùng [[27 - Premium Discount]] đúng phe.
+- [ ] Trùng [[12-Daily-Bias]] + vùng [[27-Premium-Discount]] đúng phe.
 
 **Vô hiệu hóa (huỷ setup khi):**
 - [ ] Giá **đóng cửa chấp nhận** ngoài mức (chuyển thành real breakout).
@@ -284,7 +284,7 @@ Confidence: __/5   | Kill zone: London/NY AM
 
 ### Ví dụ ĐÚNG
 ![[TurtleSoup-Example-Correct.svg]]
-**Mô tả:** Turtle Soup Long tại PDL/equal lows trong NY AM kill zone, đúng [[12 - Daily Bias]] bullish.
+**Mô tả:** Turtle Soup Long tại PDL/equal lows trong NY AM kill zone, đúng [[12-Daily-Bias]] bullish.
 - Giá tiến về cụm **equal lows** (SSL hiển nhiên) — đám đông đặt stop dưới đó.
 - Cú quét nhú **qua** equal lows tạo wick dài @ [level], **không đóng cửa chấp nhận** bên dưới.
 - Giá **reclaim** nhanh lên trên mức + **displacement up** mạnh để lại [[Fair Value Gap]] @ [range].
@@ -307,15 +307,15 @@ Confidence: __/5   | Kill zone: London/NY AM
 
 ## 7. Entry model liên quan
 
-- [[20 - Liquidity Sweep]] — khái niệm gốc; Turtle Soup là ứng dụng đảo chiều của nó tại mức external.
-- [[21 - Market Structure Shift]] — tín hiệu xác nhận đảo chiều sau cú quét.
-- [[09 - Change of Character]] — CHoCH khung vi mô đi kèm.
+- [[20-Liquidity-Sweep]] — khái niệm gốc; Turtle Soup là ứng dụng đảo chiều của nó tại mức external.
+- [[21-Market-Structure-Shift]] — tín hiệu xác nhận đảo chiều sau cú quét.
+- [[09-Change-of-Character]] — CHoCH khung vi mô đi kèm.
 - [[Fair Value Gap]] / [[Order Block]] — vùng refine entry sau displacement.
 - [[Optimal Trade Entry]] — fib refinement của đoạn displacement để vào.
 - [[Displacement]] — động lượng xác nhận có "ý định" đảo chiều.
-- [[12 - Daily Bias]] + [[27 - Premium Discount]] — bộ lọc context.
-- [[15 - Inducement]] — thanh khoản "mồi" thường nằm trước mức bị quét.
-- [[16 - Internal & External Range Liquidity (IRL & ERL)]] — Turtle Soup quét ERL để vào, chạy tới IRL/ERL đối diện.
+- [[12-Daily-Bias]] + [[27-Premium-Discount]] — bộ lọc context.
+- [[15-Inducement]] — thanh khoản "mồi" thường nằm trước mức bị quét.
+- [[16-Internal-External-Range-Liquidity-IRL-ERL]] — Turtle Soup quét ERL để vào, chạy tới IRL/ERL đối diện.
 
 ```text
 --- SEQUENCE: TURTLE SOUP LONG ---
@@ -341,10 +341,10 @@ BSL (equal highs/PDH) -> sweep -> reject -> reclaim
 > [!warning] Không tick đủ → KHÔNG vào lệnh. Turtle Soup sai = bắt dao rơi.
 
 **A. Context**
-- [ ] [[12 - Daily Bias]] đã xác định và setup **trùng** hướng bias.
+- [ ] [[12-Daily-Bias]] đã xác định và setup **trùng** hướng bias.
 - [ ] Mức bị nhắm là **external/hiển nhiên** (PDH/PDL, equal H/L, swing cũ).
-- [ ] Giá ở đúng vùng [[27 - Premium Discount]] cho hướng lệnh.
-- [ ] Đang trong [[18 - Kill Zones]], không sát tin tức lớn.
+- [ ] Giá ở đúng vùng [[27-Premium-Discount]] cho hướng lệnh.
+- [ ] Đang trong [[18-Kill-Zones]], không sát tin tức lớn.
 
 **B. Execution**
 - [ ] Đã thấy **sweep** (wick qua mức, không acceptance).
@@ -371,7 +371,7 @@ BSL (equal highs/PDH) -> sweep -> reject -> reclaim
 | Bỏ qua MSS | Không kiểm tra structure khung thấp | Đảo chiều chưa được xác nhận | Bắt buộc có MSS/CHoCH mới vào |
 | Stop quá sát wick | Đặt SL ngay sát đỉnh/đáy quét | Bị double sweep quét nốt | Đặt SL ngoài cực trị + buffer; lường double sweep |
 | Quét mức không hiển nhiên | Mức nội bộ nhỏ, ít người thấy | Ít thanh khoản → tín hiệu yếu | Chỉ chọn PDH/PDL, equal H/L, swing rõ |
-| Ngược bias HTF | Long khi D1 bearish mạnh | Đánh ngược dòng tiền lớn | Lọc bằng [[12 - Daily Bias]] trước |
+| Ngược bias HTF | Long khi D1 bearish mạnh | Đánh ngược dòng tiền lớn | Lọc bằng [[12-Daily-Bias]] trước |
 | Bỏ qua Premium/Discount | Long ở premium, short ở discount | Vào sai phe của range | Long từ discount, short từ premium |
 | Tham target | Bỏ TP1 chờ TP2 luôn | Cho lợi nhuận quay đầu | Chốt một phần tại thanh khoản gần |
 
@@ -381,7 +381,7 @@ BSL (equal highs/PDH) -> sweep -> reject -> reclaim
 1. Cú phá vỡ này có **acceptance** ngoài mức không, hay chỉ là wick rồi reclaim?
 2. Mức bị quét có thực sự **hiển nhiên / external** (chứa thanh khoản) không?
 3. Sau cú quét có **displacement + MSS** ngược chiều chưa?
-4. Hướng setup có trùng [[12 - Daily Bias]] và đúng [[27 - Premium Discount]] không?
+4. Hướng setup có trùng [[12-Daily-Bias]] và đúng [[27-Premium-Discount]] không?
 5. Stop của tôi có nằm ngoài cực trị cú quét (lường double sweep) không?
 6. Nếu đây hoá ra là real breakout, dấu hiệu vô hiệu hoá của tôi là gì?
 7. Target là thanh khoản đối diện nào (BSL/SSL/PDH/PDL)?
@@ -390,7 +390,7 @@ BSL (equal highs/PDH) -> sweep -> reject -> reclaim
 
 ## 11. Flashcards / Active Recall
 - **Q1.** Turtle Soup về bản chất là gì theo ngôn ngữ ICT?
-  - *A:* Một [[20 - Liquidity Sweep]] của mức external/hiển nhiên, dùng làm entry đảo chiều (false breakout reversal).
+  - *A:* Một [[20-Liquidity-Sweep]] của mức external/hiển nhiên, dùng làm entry đảo chiều (false breakout reversal).
 - **Q2.** Điều kiện duy nhất biến một cú phá thành Turtle Soup thay vì breakout thật?
   - *A:* Giá **reclaim** lại mức (không acceptance ngoài) + **displacement + MSS** ngược chiều.
 - **Q3.** Turtle Soup Long quét loại thanh khoản nào, ở đâu?
@@ -425,7 +425,7 @@ BSL (equal highs/PDH) -> sweep -> reject -> reclaim
 
 **Kế hoạch ôn tập:**
 - Backtest ≥ 30 cú Turtle Soup (cả đúng & sai) trên NQ1 / EURUSD, ghi vào [[04 - Backtesting]].
-- Đối chiếu mỗi case với [[20 - Liquidity Sweep]] và [[21 - Market Structure Shift]].
+- Đối chiếu mỗi case với [[20-Liquidity-Sweep]] và [[21-Market-Structure-Shift]].
 - Review lại note này khi `confidence` lên ≥ 3; cập nhật `status` seed → developing → tested.
 
 ---
@@ -437,7 +437,7 @@ BSL (equal highs/PDH) -> sweep -> reject -> reclaim
 
 1. **Chỉ gọi là Turtle Soup khi mức bị quét là một swing/liquidity pool đã được định nghĩa rõ trước đó — không phải bất kỳ wick ngẫu nhiên nào.** PDH/PDL, equal highs/lows, session high/low, hoặc swing point cấu trúc rõ trên HTF đều hợp lệ; một wick nhỏ giữa range mà không ai để ý thì không. Ghi trường `swept_level_type: PDH|PDL|equal-highs|equal-lows|session-hl|swing-point` vào journal cho mỗi lệnh — nếu sau vài chục lệnh nhóm "swing-point mơ hồ" cho win-rate thấp hơn hẳn nhóm PDH/PDL hay equal-highs/lows, đó là bằng chứng để siết lại tiêu chí chọn mức.
 
-2. **Phân biệt rạch ròi Turtle Soup với một Judas Swing thông thường trước khi vào lệnh.** Cả hai đều là sweep-and-reverse, nhưng Judas Swing ràng buộc chặt với khung giờ mở phiên (London/NY Open) còn Turtle Soup thì không. Nhầm lẫn hai khái niệm khiến trader áp sai bộ lọc thời gian — ví dụ chờ "Judas Swing" ngoài giờ mở phiên, hoặc áp timing cứng nhắc của Judas Swing lên một setup Turtle Soup xảy ra giữa phiên NY AM. Xem thêm [[28 - Rejection Block]] để phân biệt thêm với trường hợp PD-array (Rejection Block) hình thành từ chính wick của cú Turtle Soup.
+2. **Phân biệt rạch ròi Turtle Soup với một Judas Swing thông thường trước khi vào lệnh.** Cả hai đều là sweep-and-reverse, nhưng Judas Swing ràng buộc chặt với khung giờ mở phiên (London/NY Open) còn Turtle Soup thì không. Nhầm lẫn hai khái niệm khiến trader áp sai bộ lọc thời gian — ví dụ chờ "Judas Swing" ngoài giờ mở phiên, hoặc áp timing cứng nhắc của Judas Swing lên một setup Turtle Soup xảy ra giữa phiên NY AM. Xem thêm [[28-Rejection-Block]] để phân biệt thêm với trường hợp PD-array (Rejection Block) hình thành từ chính wick của cú Turtle Soup.
 
 3. **Không bao giờ vào lệnh khi giá còn đang nhú qua mức — luôn chờ đóng nến xác nhận phản ứng.** Tại thời điểm giá vượt mức, không có cách nào phân biệt sweep giả với breakout thật. Ghi thời điểm entry thực tế (nến nào sau reclaim) để tự kiểm tra kỷ luật — nếu bạn thường xuyên vào trước khi có MSS, đó là dấu hiệu FOMO cần sửa trước khi sửa kỹ thuật.
 
@@ -445,11 +445,11 @@ BSL (equal highs/PDH) -> sweep -> reject -> reclaim
 
 5. **Đặt stop ngoài cực trị của cú quét, luôn kèm buffer, và chủ động lường trước double sweep.** Equal highs/lows đặc biệt hay bị quét hai lần (dụ rồi quét sâu hơn) vì pool thanh khoản dày. Đặt SL sát ngay wick đầu tiên là mời gọi bị quét nốt ở lần hai. Ghi `double_sweep_occurred: yes/no` để theo dõi tần suất trên từng loại mức và thị trường bạn hay trade.
 
-6. **Luôn lọc theo [[12 - Daily Bias]] và đúng phía [[27 - Premium Discount]] trước khi cân nhắc bất kỳ Turtle Soup nào.** Một setup kỹ thuật hoàn hảo nhưng ngược dòng tiền HTF vẫn là một lệnh xác suất thấp. Turtle Soup mạnh nhất khi nó xác nhận bias đã có, không phải khi nó tự đứng một mình chống lại bias.
+6. **Luôn lọc theo [[12-Daily-Bias]] và đúng phía [[27-Premium-Discount]] trước khi cân nhắc bất kỳ Turtle Soup nào.** Một setup kỹ thuật hoàn hảo nhưng ngược dòng tiền HTF vẫn là một lệnh xác suất thấp. Turtle Soup mạnh nhất khi nó xác nhận bias đã có, không phải khi nó tự đứng một mình chống lại bias.
 
 7. **Không fade một cú phá vỡ có acceptance rõ ràng — đó là continuation, không phải Turtle Soup, dù bạn "cảm thấy" giá đã đi quá xa.** Đây là lỗi tốn tiền nhất trong nhóm setup sweep-and-reverse. Nếu thân nến đóng cửa dứt khoát ngoài mức và không reclaim trong vài nến kế tiếp, đứng ngoài hoặc chuyển sang tư duy theo trend, đừng cố "bắt đáy/đỉnh" một cú breakout thật.
 
-8. **Backtest tối thiểu 30 mẫu Turtle Soup (cả đúng lẫn sai) trên từng thị trường trước khi tin vào bất kỳ con số hiệu suất nào — mọi tỉ lệ thắng nêu trong note này đều cần backtest xác nhận, không phải số đo sẵn.** Ghi đầy đủ `swept_level_type`, `plus_one_variant_used`, `double_sweep_occurred`, kết quả và R vào [[04 - Backtesting]] cho từng lệnh. Đối chiếu với [[20 - Liquidity Sweep]] và [[21 - Market Structure Shift]], cập nhật [[02 - Skill Metrics]] và nâng `confidence`/`status` của note này khi đã có đủ dữ liệu thay vì giữ mãi ở mức seed.
+8. **Backtest tối thiểu 30 mẫu Turtle Soup (cả đúng lẫn sai) trên từng thị trường trước khi tin vào bất kỳ con số hiệu suất nào — mọi tỉ lệ thắng nêu trong note này đều cần backtest xác nhận, không phải số đo sẵn.** Ghi đầy đủ `swept_level_type`, `plus_one_variant_used`, `double_sweep_occurred`, kết quả và R vào [[04 - Backtesting]] cho từng lệnh. Đối chiếu với [[20-Liquidity-Sweep]] và [[21-Market-Structure-Shift]], cập nhật [[02 - Skill Metrics]] và nâng `confidence`/`status` của note này khi đã có đủ dữ liệu thay vì giữ mãi ở mức seed.
 
 ---
 

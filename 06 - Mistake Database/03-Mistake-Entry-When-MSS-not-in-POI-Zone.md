@@ -236,7 +236,7 @@ EV = 0.24×1.8 − 0.76×1 = 0.432 − 0.76 = **−0.33R/lệnh**.
 
 **Độ nhạy theo khoảng cách tới CE của POI (liên hệ mục 5.5 cũ):** nếu MSS xảy ra sau khi giá đã test tới gần/qua CE của POI HTF, winrate giả định của nhóm MSS_in_POI=yes tăng lên 58% (phản ứng mạnh hơn, đã "kích hoạt" đúng nghĩa); nếu MSS xảy ra ngay tại mép ngoài POI, chưa từng tiến gần CE, winrate giả định giảm về 39% (liquidity grab tạm thời, chưa chắc là phản ứng thật) — đây chính là vùng chuyển tiếp cần phân tích kỹ ở Debate mục 12 và Case C mục 15.
 
-**Chi phí kép khi kết hợp với lỗi khác:** nếu MSS_in_POI=no còn kết hợp với vào lệnh trước khi có xác nhận sweep thật (tức là chính pool bị "sweep" trong mini-MSS cũng chưa đủ điều kiện — [[02 - Mistake - Enter before liquidity sweep]]), hai lỗi cộng hưởng: không chỉ MSS xảy ra ở vị trí sai, mà bằng chứng sweep hỗ trợ cho MSS đó cũng yếu — gần như không còn cơ sở khách quan nào cho quyết định entry ngoài "pattern trông đẹp".
+**Chi phí kép khi kết hợp với lỗi khác:** nếu MSS_in_POI=no còn kết hợp với vào lệnh trước khi có xác nhận sweep thật (tức là chính pool bị "sweep" trong mini-MSS cũng chưa đủ điều kiện — [[02-Mistake-Enter-before-liquidity-sweep]]), hai lỗi cộng hưởng: không chỉ MSS xảy ra ở vị trí sai, mà bằng chứng sweep hỗ trợ cho MSS đó cũng yếu — gần như không còn cơ sở khách quan nào cho quyết định entry ngoài "pattern trông đẹp".
 
 ### 11.4. Taxonomy các biến thể con
 
@@ -250,10 +250,10 @@ EV = 0.24×1.8 − 0.76×1 = 0.432 − 0.76 = **−0.33R/lệnh**.
 
 | Kết hợp với | Cơ chế khuếch đại | Mức nguy hiểm tổ hợp |
 |---|---|---|
-| [[02 - Mistake - Enter before liquidity sweep]] | Nếu cả sweep hỗ trợ mini-MSS cũng chưa đủ điều kiện (chưa thật sự quét pool, chỉ semi-sweep), cả hai lớp bằng chứng (vị trí VÀ xác nhận) đều yếu cùng lúc — entry gần như ngẫu nhiên có ảo tưởng cấu trúc | Rất cao |
-| [[06 - Mistake - Not Have Market Structure Shift]] | Ngược chiều: note 06 là thiếu MSS hoàn toàn, note 03 là có MSS nhưng sai vị trí — cả hai đều xuất phát từ việc không phân biệt được "tín hiệu mạnh" và "tín hiệu yếu trông giống mạnh", cần cùng một disciplin kiểm tra | Trung bình-cao |
-| [[09 - Mistake - Wrong daily bias]] | Directional bias override (mục 11.4-5) trực tiếp phụ thuộc vào việc bias ban đầu có đúng không — nếu bias sai, việc hạ chuẩn POI validity theo bias khiến lỗi kép nặng hơn cả hai lỗi riêng lẻ | Cao |
-| [[07 - Mistake - Risk more than 0.5% total account]] | Vì pattern "nhìn đủ điều kiện", trader tin đây là setup A+ và dễ vào oversize — đúng như cảnh báo mục 3 cũ ("rò rỉ expectancy âm thầm... vẫn vào full size") | Cao |
+| [[02-Mistake-Enter-before-liquidity-sweep]] | Nếu cả sweep hỗ trợ mini-MSS cũng chưa đủ điều kiện (chưa thật sự quét pool, chỉ semi-sweep), cả hai lớp bằng chứng (vị trí VÀ xác nhận) đều yếu cùng lúc — entry gần như ngẫu nhiên có ảo tưởng cấu trúc | Rất cao |
+| [[06-Mistake-Not-Have-Market-Structure-Shift]] | Ngược chiều: note 06 là thiếu MSS hoàn toàn, note 03 là có MSS nhưng sai vị trí — cả hai đều xuất phát từ việc không phân biệt được "tín hiệu mạnh" và "tín hiệu yếu trông giống mạnh", cần cùng một disciplin kiểm tra | Trung bình-cao |
+| [[09-Mistake-Wrong-daily-bias]] | Directional bias override (mục 11.4-5) trực tiếp phụ thuộc vào việc bias ban đầu có đúng không — nếu bias sai, việc hạ chuẩn POI validity theo bias khiến lỗi kép nặng hơn cả hai lỗi riêng lẻ | Cao |
+| [[07-Mistake-Risk-more-than-0.5-total-account]] | Vì pattern "nhìn đủ điều kiện", trader tin đây là setup A+ và dễ vào oversize — đúng như cảnh báo mục 3 cũ ("rò rỉ expectancy âm thầm... vẫn vào full size") | Cao |
 
 **Tổ hợp nguy hiểm nhất:** MSS sai vị trí (03) + sweep hỗ trợ cũng không đạt chuẩn (02) + oversize vì tin là setup đẹp (07) — ba lỗi cộng hưởng tạo ra một lệnh có xác suất thắng thấp nhất trong toàn bộ phổ nhưng lại được risk với size cao nhất, vì ảo tưởng "đủ điều kiện" càng mạnh khi nhiều thành phần checklist bị thoả (dù sai vị trí).
 
@@ -324,7 +324,7 @@ Evidence tier hiện tại: **Tier 0** cho câu hỏi tổng quát ("ranh giới
 
 5. **Đòn tấn công:** "Toàn bộ khung 'POI là địa chỉ, MSS là xác nhận' giả định ngầm rằng thị trường có cấu trúc smart-money-driven ổn định — nhưng nếu thị trường đang trong giai đoạn thanh khoản cực thấp hoặc biến động cực cao bất thường (tin tức, holiday thinning), khái niệm 'origin displacement' và 'POI' có thể mất hoàn toàn ý nghĩa, vì chuyển động giá lúc đó do cơ chế hoàn toàn khác (gap, thiếu thanh khoản đối ứng) chi phối, không phải smart money footprint thông thường."
    - **Cơ sở:** Hợp lý — đây là giới hạn phạm vi áp dụng chưa được note gốc nêu rõ.
-   - **Phản bác trung thực:** Không đáp được trong note gốc. Cần bổ sung điều kiện tiên quyết: khung POI/MSS chỉ áp dụng trong điều kiện thanh khoản bình thường (trong Kill Zone, ngoài các sự kiện tin tức lớn) — note liên quan [[02 - Mistake - Enter before liquidity sweep]] mục 5.4 đã có khái niệm "kill zone status" cho sweep, nhưng note 03 chưa có điều kiện tương tự cho POI/MSS.
+   - **Phản bác trung thực:** Không đáp được trong note gốc. Cần bổ sung điều kiện tiên quyết: khung POI/MSS chỉ áp dụng trong điều kiện thanh khoản bình thường (trong Kill Zone, ngoài các sự kiện tin tức lớn) — note liên quan [[02-Mistake-Enter-before-liquidity-sweep]] mục 5.4 đã có khái niệm "kill zone status" cho sweep, nhưng note 03 chưa có điều kiện tương tự cho POI/MSS.
    - **Falsification test:** So sánh winrate của lệnh MSS_in_POI=yes xảy ra trong Kill Zone chuẩn vs xảy ra trong giờ thanh khoản thấp/quanh tin tức lớn — nếu chênh lệch đáng kể, cần thêm điều kiện "thanh khoản bình thường" vào 5 tiêu chí POI validity.
 
 **Bảng tổng hợp — đòn nào note hiện tại CHƯA đỡ được:**
@@ -405,7 +405,7 @@ Audit hành vi: mọi lệnh entry theo mô hình sweep→displacement→MSS→F
 - **Hàng ngày:** đối chiếu nhanh mọi lệnh đã vào với câu hỏi 1, 3, 6 (POI trước MSS, dải EQ, buffer) ngay cuối phiên.
 - **Hàng tuần:** chạy đủ 12 câu, tính rubric, đặc biệt theo dõi tần suất `poi_buffer_pct` âm (red flag 14.5).
 - **Hàng tháng:** vẽ đường cong winrate theo `entry_pct_in_range` (giải quyết đòn tấn công #4) và theo `poi_buffer_pct` (giải quyết Debate mục 12).
-- **Auditor:** bản thân (dựa `poi_criteria_score`/`poi_buffer_pct` đo được, không cảm nhận) + kiểm tra chéo với note [[02 - Mistake - Enter before liquidity sweep]] (cùng cần field sweep) + review định kỳ.
+- **Auditor:** bản thân (dựa `poi_criteria_score`/`poi_buffer_pct` đo được, không cảm nhận) + kiểm tra chéo với note [[02-Mistake-Enter-before-liquidity-sweep]] (cùng cần field sweep) + review định kỳ.
 
 ---
 
@@ -481,9 +481,9 @@ Audit hành vi: mọi lệnh entry theo mô hình sweep→displacement→MSS→F
 
 ## 16. Liên kết
 
-**Concepts:** [[21 - Market Structure Shift]] · [[25 - OB - Order Block]] · [[13 - FVG  - Fair Value Gap]] · [[27 - Premium Discount]] · [[10 - Consequent Encroachment (Mean Threshold)]] · [[12 - Dealing Range]] · [[16 - Internal & External Range Liquidity (IRL & ERL)]]
+**Concepts:** [[21-Market-Structure-Shift]] · [[25-OB-Order-Block]] · [[13-FVG-Fair-Value-Gap]] · [[27-Premium-Discount]] · [[10-Consequent-Encroachment-Mean-Threshold]] · [[12-Dealing-Range]] · [[16-Internal-External-Range-Liquidity-IRL-ERL]]
 
-**Mistakes liên quan:** [[06 - Mistake - Not Have Market Structure Shift]] · [[02 - Mistake - Enter before liquidity sweep]] · [[09 - Mistake - Wrong daily bias]]
+**Mistakes liên quan:** [[06-Mistake-Not-Have-Market-Structure-Shift]] · [[02-Mistake-Enter-before-liquidity-sweep]] · [[09-Mistake-Wrong-daily-bias]]
 
 **Model:** [[03 - Playbooks/3.2 - Setups/ICT 2022 Model|ICT 2022 Model]]
 

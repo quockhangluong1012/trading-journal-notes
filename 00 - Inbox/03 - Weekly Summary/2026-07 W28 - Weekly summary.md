@@ -51,14 +51,14 @@ tags: [weekly-summary, prop-firm-prep]
 
 | Lỗi | Số lần | Ngày | Ghi chú |
 |---|---:|---|---|
-| [[08 - Mistake - Weak Displacement]] | 2 | 07-08, 07-10 | Vào lệnh khi nhịp đẩy chỉ gồm nến thân nhỏ/doji |
-| [[04 - Mistake - FOMO Entry]] | 1 | 07-08 | *Root cause* của cụm lỗi 07-08 |
-| [[06 - Mistake - Not Have Market Structure Shift]] | 1 | 07-08 | Lỗi top-3 #1 — tái xuất trong backtest (nơi cần bắt được nó) |
-| [[10 - Mistake - FVG Not Valid]] | 1 | 07-08 | FVG entry sinh từ nến thân nhỏ |
+| [[08-Mistake-Weak-Displacement]] | 2 | 07-08, 07-10 | Vào lệnh khi nhịp đẩy chỉ gồm nến thân nhỏ/doji |
+| [[04-Mistake-FOMO-Entry]] | 1 | 07-08 | *Root cause* của cụm lỗi 07-08 |
+| [[06-Mistake-Not-Have-Market-Structure-Shift]] | 1 | 07-08 | Lỗi top-3 #1 — tái xuất trong backtest (nơi cần bắt được nó) |
+| [[10-Mistake-FVG-Not-Valid]] | 1 | 07-08 | FVG entry sinh từ nến thân nhỏ |
 | Vào lệnh sai Kill Zone | 1 | 07-10 | ⚠️ **Chưa có note** trong Mistake Database |
 
 > [!info] Tần suất lỗi top-3 trên trade **live** giữ nguyên cả tuần
-> [[06 - Mistake - Not Have Market Structure Shift]] = **14** · [[09 - Mistake - Wrong daily bias]] = **7** · [[07 - Mistake - Risk more than 0.5% total account]] = **5**. Không có lệnh live nào trong tuần nên [[02 - Mistake Frequency Dashboard]] (chỉ đọc field `mistakes` của trade live) không đổi. Cả 3 note lỗi đều đã có nội dung biện pháp đối phó đầy đủ (244/280/287 dòng — viết từ 07-08, vẫn còn nguyên).
+> [[06-Mistake-Not-Have-Market-Structure-Shift]] = **14** · [[09-Mistake-Wrong-daily-bias]] = **7** · [[07-Mistake-Risk-more-than-0.5-total-account]] = **5**. Không có lệnh live nào trong tuần nên [[02 - Mistake Frequency Dashboard]] (chỉ đọc field `mistakes` của trade live) không đổi. Cả 3 note lỗi đều đã có nội dung biện pháp đối phó đầy đủ (244/280/287 dòng — viết từ 07-08, vẫn còn nguyên).
 
 ## 🎯 Đối chiếu mục tiêu (theo công thức cột mốc, KHÔNG dùng `progress` ghi tay)
 
@@ -82,8 +82,8 @@ tags: [weekly-summary, prop-firm-prep]
 
 Đây là **tuần học mạnh nhất** từ khi có hệ thống, với bằng chứng frontmatter thật (không chỉ checkbox):
 
-- **Phá nút thắt "0 `tested`":** [[10 - Consequent Encroachment (Mean Threshold)]] là concept **đầu tiên toàn vault** lên `status: tested` (07-10), kiểm chứng trực tiếp qua backtest (nhiều lệnh entry tại CE của FVG/BPR/Unicorn). Tại thời điểm tạo bản này, số concept `tested` đã lên **5** (thêm [[13 - FVG  - Fair Value Gap]], [[03 - Balanced Price Range]], [[25 - OB - Order Block]], [[18 - Kill Zones]] — 4 note này lên `tested` **sau 07-11**, tức trong ngày 07-12 chưa có Daily Summary; ghi nhận là số liệu thật tại thời điểm chốt, không tính vào rollup 6 ngày).
-- **Chuỗi nâng `seed → developing` có bằng chứng:** [[21 - Market Structure Shift]] + [[41 - Change in State of Delivery]] (07-07); [[05 - BOS - Break of Structure]] + [[04 - Breaker Block]] + [[18 - Kill Zones]] (07-08); [[35 - Aggressive Displacement Entry]] + [[10 - Consequent Encroachment (Mean Threshold)]] + [[42 - SMT Divergence]] (07-09). 07-09 còn ôn thêm 6 concept ngoài task-list.
+- **Phá nút thắt "0 `tested`":** [[10-Consequent-Encroachment-Mean-Threshold]] là concept **đầu tiên toàn vault** lên `status: tested` (07-10), kiểm chứng trực tiếp qua backtest (nhiều lệnh entry tại CE của FVG/BPR/Unicorn). Tại thời điểm tạo bản này, số concept `tested` đã lên **5** (thêm [[13-FVG-Fair-Value-Gap]], [[03-Balanced-Price-Range]], [[25-OB-Order-Block]], [[18-Kill-Zones]] — 4 note này lên `tested` **sau 07-11**, tức trong ngày 07-12 chưa có Daily Summary; ghi nhận là số liệu thật tại thời điểm chốt, không tính vào rollup 6 ngày).
+- **Chuỗi nâng `seed → developing` có bằng chứng:** [[21-Market-Structure-Shift]] + [[41-Change-in-State-of-Delivery]] (07-07); [[05-BOS-Break-of-Structure]] + [[04-Breaker-Block]] + [[18-Kill-Zones]] (07-08); [[35-Aggressive-Displacement-Entry]] + [[10-Consequent-Encroachment-Mean-Threshold]] + [[42-SMT-Divergence]] (07-09). 07-09 còn ôn thêm 6 concept ngoài task-list.
 - **Snapshot concept tại thời điểm chốt (07-12):** **50 note — 17 `seed`, 28 `developing`, 5 `tested`, 0 `mastered`** (đầu tuần 07-06 là 44 note, 19 `seed`/24 `developing`/0 `tested`).
 - **Trọng tâm học bám sát điểm yếu execution:** MSS/BOS/CISD (trị lỗi #1), Aggressive Displacement (trị Weak Displacement), Kill Zones (trị lỗi out-of-KZ), SMT (trị lỗi #2 Wrong bias) — học có mục tiêu, không tản mạn.
 
@@ -102,7 +102,7 @@ tags: [weekly-summary, prop-firm-prep]
 
 ## 🚫 4. Lỗi/thói quen xấu lặp trong tuần
 
-- **Overtick checkbox không khớp bằng chứng:** 07-06 (nhiều mục ôn concept + "sửa baseline" tick nhưng file không đổi) và 07-10 (tick [[35 - Aggressive Displacement Entry]] + [[42 - SMT Divergence]] nhưng `last_reviewed` không đổi). 07-11 đã tự bù đúng 2 note này — nhưng thói quen tick-cho-xong cần cảnh giác.
+- **Overtick checkbox không khớp bằng chứng:** 07-06 (nhiều mục ôn concept + "sửa baseline" tick nhưng file không đổi) và 07-10 (tick [[35-Aggressive-Displacement-Entry]] + [[42-SMT-Divergence]] nhưng `last_reviewed` không đổi). 07-11 đã tự bù đúng 2 note này — nhưng thói quen tick-cho-xong cần cảnh giác.
 - **Mismatch prose ↔ frontmatter** lặp lại xuyên tuần (baseline, "Cách đo lường → Hiện tại") — sửa một chỗ, bỏ lại chỗ kia.
 - **Mismatch Daily Summary ↔ file thật (07-11 backtest):** dạng nợ dữ liệu mới, cần quy trình "đối chiếu file trước khi chốt summary".
 

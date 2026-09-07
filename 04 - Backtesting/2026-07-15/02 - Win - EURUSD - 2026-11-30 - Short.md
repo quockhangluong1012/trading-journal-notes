@@ -465,4 +465,4 @@ Distinguishing observable: không có — đây là một counterfactual không 
 
 ### Liên kết
 
-> Mục Liên kết không tồn tại trong file gốc. Gợi ý liên kết dựa trên nội dung đã đọc: [[01 - ICT 2022 Model]] · [[25 - OB - Order Block]] · [[13 - FVG  - Fair Value Gap]] · [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]] · [[_Backtest Dashboard]]
+> Mục Liên kết không tồn tại trong file gốc. Gợi ý liên kết dựa trên nội dung đã đọc: [[01 - ICT 2022 Model]] · [[25-OB-Order-Block]] · [[13-FVG-Fair-Value-Gap]] · [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]] · [[_Backtest Dashboard]]

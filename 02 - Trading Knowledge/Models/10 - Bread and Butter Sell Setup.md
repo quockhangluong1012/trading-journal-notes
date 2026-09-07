@@ -275,9 +275,9 @@ Sáu tình huống dưới đây là những chỗ giả định "fade premium �
 
 ![[BnBSell-Advanced-CaseStudy-Win.svg|720]]
 
-**Chuỗi:** HTF bearish đã xác nhận (D1 + H4). Chart để giờ NY. Vào phiên NY, tại **08:20 NY** giá tạo một Judas swing lên vào một **premium FVG** trên open — re-distribution gom buy-side liquidity. Trên 5m, giá đóng dưới swing low nội phiên + displacement = **MSS xuống** ([[21 - Market Structure Shift]]). Trader chờ **retest** vào post-MSS PD array và vào **SHORT**, stop ngoài đỉnh premium bị quét. Giá rơi về **HTF discount array** kế, chốt **+25 pips**.
+**Chuỗi:** HTF bearish đã xác nhận (D1 + H4). Chart để giờ NY. Vào phiên NY, tại **08:20 NY** giá tạo một Judas swing lên vào một **premium FVG** trên open — re-distribution gom buy-side liquidity. Trên 5m, giá đóng dưới swing low nội phiên + displacement = **MSS xuống** ([[21-Market-Structure-Shift]]). Trader chờ **retest** vào post-MSS PD array và vào **SHORT**, stop ngoài đỉnh premium bị quét. Giá rơi về **HTF discount array** kế, chốt **+25 pips**.
 
-**Chẩn đoán:** Đủ cả ba điều kiện lõi — timezone NY, HTF bearish, 5m MSS tại premium ([[27 - Premium Discount]]). `session: NY`, `engine: redistribution`, `mss_5m: true`, `missing_step: none`. Hành động đúng = chờ trigger, không đoán, chốt theo target scalp.
+**Chẩn đoán:** Đủ cả ba điều kiện lõi — timezone NY, HTF bearish, 5m MSS tại premium ([[27-Premium-Discount]]). `session: NY`, `engine: redistribution`, `mss_5m: true`, `missing_step: none`. Hành động đúng = chờ trigger, không đoán, chốt theo target scalp.
 
 **Bài học:** Khi bias + session + MSS đồng thuận, đây là một scalp "cơm áo" điển hình. Không cần cú lớn — chỉ cần lặp lại kỷ luật này với risk chặt. `missing_step: none`.
 
@@ -287,7 +287,7 @@ Sáu tình huống dưới đây là những chỗ giả định "fade premium �
 
 **Chuỗi (gãy):** Trader thấy giá chạm một vùng premium đẹp trong phiên NY và **short ngay**, nhưng (a) chưa xác nhận HTF bearish — D1/H4 thực ra đang đi ngang, và (b) chưa có 5m MSS. Giá chỉ pullback nông rồi tiếp tục tăng, quét stop trên premium.
 
-**Chẩn đoán:** Vi phạm hai điều kiện lõi cùng lúc. `missing_step: bias + mss`. Đây là lỗi "chạm premium ≠ entry" ghép với "trade khi chưa có bias" — mọi premium trông như setup khi ta bỏ qua bước xác nhận order flow ([[21 - Market Structure Shift]]).
+**Chẩn đoán:** Vi phạm hai điều kiện lõi cùng lúc. `missing_step: bias + mss`. Đây là lỗi "chạm premium ≠ entry" ghép với "trade khi chưa có bias" — mọi premium trông như setup khi ta bỏ qua bước xác nhận order flow ([[21-Market-Structure-Shift]]).
 
 **Bài học:** Premium chỉ là zone. Nếu không có HTF bearish và không có 5m MSS thì đó không phải setup, chỉ là một cú short cảm tính. Chờ trigger là rẻ hơn nhiều so với một stop-out.
 
@@ -307,7 +307,7 @@ Sáu tình huống dưới đây là những chỗ giả định "fade premium �
 
 **Chuỗi:** Vào phiên, giá đi ngang choppy — **không có cú Judas swing lên premium sạch**, không có premium rõ để react, và không xuất hiện 5m MSS. Ở kịch bản London Close, London + NY **chưa cùng giảm** và giá **chưa chạm HTF discount** → không có bối cảnh cho cú BUY hồi đáy. Trader đứng ngoài, chỉ đánh dấu các pool BSL/SSL để chờ.
 
-**Chẩn đoán:** Thiếu điều kiện bắt buộc — không premium sạch, không MSS, hoặc (London Close) không đồng giảm ([[19 - Liquidity]]). `missing_step: none` (đây là skip đúng, không phải lỗi). Theo mục 5, thiếu điều kiện = không trade phiên đó.
+**Chẩn đoán:** Thiếu điều kiện bắt buộc — không premium sạch, không MSS, hoặc (London Close) không đồng giảm ([[19-Liquidity]]). `missing_step: none` (đây là skip đúng, không phải lỗi). Theo mục 5, thiếu điều kiện = không trade phiên đó.
 
 **Bài học:** Không có setup thì đứng ngoài chính là quyết định thắng. Đừng ép một lệnh vào một phiên chưa "kể xong câu chuyện" — đặc biệt London Close, phiên khó nhất, không được ép mỗi ngày.
 
@@ -348,7 +348,7 @@ Sáu tình huống dưới đây là những chỗ giả định "fade premium �
 **Bài học:** Target cố định (15–20 pips) giả định ngầm một mức volatility nền ổn định; khi ATR phiên giãn bất thường, một setup "đủ điều kiện cấu trúc" vẫn cần bị hạ xếp hạng hoặc bỏ qua — cấu trúc đúng không thay thế được cho việc kiểm tra regime hiện tại.
 
 > [!summary] Bảy ca — một thông điệp
-> Trước mỗi lệnh, xác nhận theo đúng thứ tự **timezone NY → HTF bearish bias → premium → 5m MSS**, rồi **chốt theo target scalp**. Kết quả từng lệnh (win/loss) là **nhiễu**; sự nhất quán của process — chờ trigger, tôn trọng target, bỏ phiên khi thiếu điều kiện — mới là **tín hiệu**. Case 5–7 cho thấy có những lệnh "thua" hoàn toàn đúng quy trình (chi phí hệ thống) và những lệnh "thắng" nhờ kiên nhẫn chờ thêm xác nhận thay vì hoảng loạn. Ghi `session`, `engine` và `missing_step` mỗi lệnh ([[07 - Reviews]]) để biến bảy kịch bản này thành phản xạ. Xem thêm setup ngược [[11 - Bread and Butter Buy-Setup]], [[18 - Kill Zones]].
+> Trước mỗi lệnh, xác nhận theo đúng thứ tự **timezone NY → HTF bearish bias → premium → 5m MSS**, rồi **chốt theo target scalp**. Kết quả từng lệnh (win/loss) là **nhiễu**; sự nhất quán của process — chờ trigger, tôn trọng target, bỏ phiên khi thiếu điều kiện — mới là **tín hiệu**. Case 5–7 cho thấy có những lệnh "thua" hoàn toàn đúng quy trình (chi phí hệ thống) và những lệnh "thắng" nhờ kiên nhẫn chờ thêm xác nhận thay vì hoảng loạn. Ghi `session`, `engine` và `missing_step` mỗi lệnh ([[07 - Reviews]]) để biến bảy kịch bản này thành phản xạ. Xem thêm setup ngược [[11 - Bread and Butter Buy Setup]], [[18-Kill-Zones]].
 
 ## Phản biện & Giới hạn của mô hình
 

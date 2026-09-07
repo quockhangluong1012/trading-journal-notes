@@ -47,12 +47,12 @@ Refer Link: [ICT SIBI and BISI Explained — Sell-Side & Buy-Side Imbalance FVGs
 
 - **Cận trên (top) của SIBI** = `low(C3)`.
 - **Cận dưới (bottom) của SIBI** = `high(C1)`.
-- **CE (Consequent Encroachment)** = trung điểm = `(low(C3) + high(C1)) / 2` — xem [[10 - Consequent Encroachment (Mean Threshold)]].
+- **CE (Consequent Encroachment)** = trung điểm = `(low(C3) + high(C1)) / 2` — xem [[10-Consequent-Encroachment-Mean-Threshold]].
 
 ### Bản chất
 - SIBI là **dấu vết của order flow tăng**: người bán (sell-side) bị áp đảo/hấp thụ, người mua đẩy giá lên quá nhanh, để lại một "vết nứt" trên chart.
 - Vì giá thích vận hành **hiệu quả (efficient delivery)**, nên thị trường có xu hướng quay lại "tô lại" (rebalance) vùng SIBI — đây là cơ sở của ý tưởng **draw on liquidity / draw to fill**.
-- SIBI nằm trong nửa **premium** của dealing range (xem [[27 - Premium Discount]] và [[12 - Dealing Range]]): nó là nơi giá đã được đẩy lên cao, do đó khi giá tiếp cận từ bên dưới nó có thể đóng vai trò **kháng cự**; khi giá đã ở trên và lùi về nó đóng vai trò **hỗ trợ**.
+- SIBI nằm trong nửa **premium** của dealing range (xem [[27-Premium-Discount]] và [[12-Dealing-Range]]): nó là nơi giá đã được đẩy lên cao, do đó khi giá tiếp cận từ bên dưới nó có thể đóng vai trò **kháng cự**; khi giá đã ở trên và lùi về nó đóng vai trò **hỗ trợ**.
 
 ### Giải thích tên gọi (đọc kỹ — đây là chỗ ai cũng nhầm)
 | Thành phần tên | Nghĩa thực sự | KHÔNG có nghĩa là |
@@ -81,7 +81,7 @@ Refer Link: [ICT SIBI and BISI Explained — Sell-Side & Buy-Side Imbalance FVGs
 |---|---|---|---|
 | **SIBI** | Bullish imbalance từ cú đẩy lên, gap `high(C1)→low(C3)` | 3 nến lên | Tên mô tả order flow (sell-side bị nuốt); luôn là premium array |
 | **[[Fair Value Gap]] (FVG)** | Tên trung tính cho cùng cấu trúc gap 3 nến | 3 nến | SIBI = bullish FVG; BISI = bearish FVG. FVG là tên "kỹ thuật", SIBI/BISI là tên "order flow" |
-| **[[21 - Liquidity Void]]** | Vùng giá lớn gần như không có giao dịch hai chiều, thường là chuỗi nến displacement dài | nhiều nến | Rộng và "trống" hơn FVG/SIBI; thường chứa nhiều SIBI/FVG nhỏ bên trong; giá thường rebalance toàn bộ void |
+| **[[21-Liquidity-Void]]** | Vùng giá lớn gần như không có giao dịch hai chiều, thường là chuỗi nến displacement dài | nhiều nến | Rộng và "trống" hơn FVG/SIBI; thường chứa nhiều SIBI/FVG nhỏ bên trong; giá thường rebalance toàn bộ void |
 
 > [!tip] SIBI và bullish FVG là **cùng một vật thể trên chart** — chỉ khác lăng kính. Dùng "FVG" khi nói về kỹ thuật vẽ; dùng "SIBI" khi muốn nhấn mạnh *ai bị nuốt và giá sẽ draw về đâu*.
 
@@ -92,7 +92,7 @@ Refer Link: [ICT SIBI and BISI Explained — Sell-Side & Buy-Side Imbalance FVGs
 
 ### Vì sao quan trọng
 - ICT cho rằng thị trường vận hành để **lấp các inefficiency** → SIBI là bản đồ chỉ nơi giá *có lý do* để quay về.
-- Kết hợp với [[Displacement]], [[21 - Market Structure Shift]] và [[20 - Liquidity Sweep]], SIBI cung cấp vùng entry/exit có logic order flow chứ không phải kẻ tay tùy ý.
+- Kết hợp với [[Displacement]], [[21-Market-Structure-Shift]] và [[20-Liquidity-Sweep]], SIBI cung cấp vùng entry/exit có logic order flow chứ không phải kẻ tay tùy ý.
 
 ### Nó giúp trả lời câu hỏi gì?
 - "Giá có khả năng bị **kéo lên fill** vùng nào ở phía trên không?" → SIBI chưa fill ở premium.
@@ -115,21 +115,21 @@ Refer Link: [ICT SIBI and BISI Explained — Sell-Side & Buy-Side Imbalance FVGs
 | **Unmitigated (chưa fill)** | Giá chưa quay lại chạm vùng | Còn "hiệu lực" hút giá; mục tiêu draw hoặc POI tiềm năng |
 | **Partially filled (fill một phần)** | Giá đã chạm tới CE nhưng chưa fill hết | CE đã được "respect"; thường vẫn còn giá trị |
 | **Fully filled / closed** | Giá lấp hết vùng `high(C1)→low(C3)` | Inefficiency đã rebalance; giá trị giảm mạnh |
-| **Inverted (IFVG)** | Giá đóng cửa xuyên qua → SIBI bị "lật" thành kháng cự đảo chiều | Xem [[17 - Inverse Fair Value Gap - iFVG]] — đổi vai trò |
-| **SIBI trong Liquidity Void** | SIBI nằm trong một [[21 - Liquidity Void]] rộng | Khả năng giá rebalance cả void cao |
+| **Inverted (IFVG)** | Giá đóng cửa xuyên qua → SIBI bị "lật" thành kháng cự đảo chiều | Xem [[17-Inverse-Fair-Value-Gap-iFVG]] — đổi vai trò |
+| **SIBI trong Liquidity Void** | SIBI nằm trong một [[21-Liquidity-Void]] rộng | Khả năng giá rebalance cả void cao |
 
 ### Khi nào giá trị cao? (checklist)
 - [ ] SIBI sinh ra từ **displacement rõ ràng** (nến giữa thân lớn, có ý đồ).
-- [ ] Đi kèm hoặc theo sau một **[[21 - Market Structure Shift]]** ủng hộ hướng lên.
-- [ ] SIBI nằm tại vùng **premium** hợp lý trong [[12 - Dealing Range]].
-- [ ] Hình thành sau một **[[20 - Liquidity Sweep]]** quét sell-side liquidity bên dưới.
+- [ ] Đi kèm hoặc theo sau một **[[21-Market-Structure-Shift]]** ủng hộ hướng lên.
+- [ ] SIBI nằm tại vùng **premium** hợp lý trong [[12-Dealing-Range]].
+- [ ] Hình thành sau một **[[20-Liquidity-Sweep]]** quét sell-side liquidity bên dưới.
 - [ ] Trùng (confluence) với [[Order Block]], [[Optimal Trade Entry]], hoặc mức HTF.
 - [ ] Khung lớn (HTF) cũng có inefficiency cùng hướng → align bias.
 
 ### Khi nào bỏ qua? (checklist)
 - [ ] Gap quá nhỏ / không có displacement (chỉ là noise).
 - [ ] SIBI đã **fully filled** rồi.
-- [ ] Ngược với [[12 - Daily Bias]] và HTF structure.
+- [ ] Ngược với [[12-Daily-Bias]] và HTF structure.
 - [ ] Nằm giữa vùng giá đi ngang, không có liquidity rõ ràng phía trên để draw tới.
 - [ ] Tin tức lớn sắp ra (rủi ro spike), trừ khi đó là setup tin của bạn.
 
@@ -167,7 +167,7 @@ Refer Link: [ICT SIBI and BISI Explained — Sell-Side & Buy-Side Imbalance FVGs
 ## 4. Quy trình phân tích đa khung thời gian
 
 ### D1 / H4 — Bias & bản đồ
-- Xác định [[12 - Daily Bias]] và [[12 - Dealing Range]]; đánh dấu các SIBI/BISI lớn chưa fill.
+- Xác định [[12-Daily-Bias]] và [[12-Dealing-Range]]; đánh dấu các SIBI/BISI lớn chưa fill.
 - Xác định **draw on liquidity**: giá HTF đang hướng tới SIBI nào ở premium?
 
 ```text
@@ -205,11 +205,11 @@ Planned RR: ____
 - [ ] Có **displacement** tạo SIBI (không phải gap noise).
 - [ ] Giá phản ứng tại **CE** hoặc tại cận của SIBI (rejection / respect).
 - [ ] Có **MSS** đồng hướng trên khung entry.
-- [ ] Align với [[12 - Daily Bias]] / HTF.
+- [ ] Align với [[12-Daily-Bias]] / HTF.
 - [ ] Có **liquidity / inefficiency** rõ phía trên để làm target.
 
 ### Vô hiệu hóa (invalidation) — checklist
-- [ ] Giá **đóng cửa xuyên qua hết** SIBI mà không phản ứng → inefficiency đã rebalance, mất giá trị (hoặc chuyển thành IFVG, xem [[17 - Inverse Fair Value Gap - iFVG]]).
+- [ ] Giá **đóng cửa xuyên qua hết** SIBI mà không phản ứng → inefficiency đã rebalance, mất giá trị (hoặc chuyển thành IFVG, xem [[17-Inverse-Fair-Value-Gap-iFVG]]).
 - [ ] MSS ngược hướng xuất hiện sau khi vào.
 - [ ] Giá giao dịch ngược qua SL ngoài cận SIBI.
 
@@ -232,7 +232,7 @@ Planned RR: ____
 **Mô tả:** Sau khi giá [quét sell-side liquidity] bên dưới, một cú **displacement lên** tạo SIBI sạch trong premium; giá retrace về **CE** và bật lên tiếp, fill target inefficiency phía trên.
 - Chuỗi 3 nến lên rõ; nến giữa thân lớn.
 - Gap đo `high(C1)=[level]` → `low(C3)=[level]`, CE=[level].
-- Có [[21 - Market Structure Shift]] đồng hướng trước entry.
+- Có [[21-Market-Structure-Shift]] đồng hướng trước entry.
 - Retrace về CE → long; SL dưới `high(C1)`; TP tại inefficiency phía trên [level].
 - Vai trò: SIBI làm **hỗ trợ** khi giá lùi về từ trên.
 
@@ -257,8 +257,8 @@ Planned RR: ____
 - [[ICT 2022 Model]] — sweep → MSS → displacement → entry tại FVG/SIBI.
 - [[Optimal Trade Entry]] — OTE thường trùng vùng SIBI/CE.
 - [[Order Block]] — OB + SIBI confluence cho POI mạnh.
-- [[21 - Market Structure Shift]] — trigger xác nhận hướng trước khi dùng SIBI làm entry.
-- [[16 - Internal & External Range Liquidity (IRL & ERL)]] — SIBI là IRL (mục tiêu nội vùng) hút giá.
+- [[21-Market-Structure-Shift]] — trigger xác nhận hướng trước khi dùng SIBI làm entry.
+- [[16-Internal-External-Range-Liquidity-IRL-ERL]] — SIBI là IRL (mục tiêu nội vùng) hút giá.
 
 ```text
 [SEQUENCE — long dùng SIBI]
@@ -282,12 +282,12 @@ Planned RR: ____
 - [ ] Đã xác định đúng đây là **SIBI (bullish, từ cú lên)**, không phải BISI.
 - [ ] Có **displacement** tạo vùng.
 - [ ] SIBI **chưa fill hết** (còn hiệu lực).
-- [ ] Align với [[12 - Daily Bias]] / HTF.
+- [ ] Align với [[12-Daily-Bias]] / HTF.
 - [ ] Có **liquidity / target** rõ phía trên.
 
 **Nhóm B — Tăng xác suất**
-- [ ] Theo sau [[20 - Liquidity Sweep]] sell-side.
-- [ ] Có [[21 - Market Structure Shift]] đồng hướng.
+- [ ] Theo sau [[20-Liquidity-Sweep]] sell-side.
+- [ ] Có [[21-Market-Structure-Shift]] đồng hướng.
 - [ ] Confluence với [[Order Block]] / [[Optimal Trade Entry]].
 - [ ] Trong killzone / phiên ưu tiên.
 
@@ -453,7 +453,7 @@ Dưới góc nhìn market microstructure, một nến bình thường có **hai 
 2. **SIBI bị đóng cửa xuyên qua (invert) nhưng trader vẫn coi là hỗ trợ cũ:** khi giá đóng nến hoàn toàn dưới `high(C1)` của SIBI, vai trò của vùng đó đã đảo thành kháng cự tiềm năng (Inverse FVG) — nhưng nếu không theo dõi sát trạng thái fill, trader dễ tiếp tục coi nó là hỗ trợ và Long nhầm.
    - *Vì sao bẫy được:* trí nhớ ngắn hạn về "vùng này từng là hỗ trợ" mạnh hơn việc theo dõi liên tục trạng thái đóng cửa của từng nến.
    - *Cách nhận diện sớm:* mỗi khi giá tiếp cận lại một SIBI cũ, kiểm tra ngay: đã có nến nào đóng cửa hoàn toàn dưới bottom (`high(C1)`) hay chưa.
-   - *Cách xử lý:* áp dụng logic [[17 - Inverse Fair Value Gap - iFVG]] — nếu đã bị xuyên/đóng cửa qua, chuyển kỳ vọng từ hỗ trợ sang kháng cự khi giá quay lại retest.
+   - *Cách xử lý:* áp dụng logic [[17-Inverse-Fair-Value-Gap-iFVG]] — nếu đã bị xuyên/đóng cửa qua, chuyển kỳ vọng từ hỗ trợ sang kháng cự khi giá quay lại retest.
 
 3. **Data feed khác nhau khiến kích thước SIBI đo được khác nhau:** trên broker CFD có spread/giờ nến lệch so với sàn gốc, cùng một cú displacement có thể tạo SIBI với `high(C1)` và `low(C3)` lệch vài tick — dẫn tới CE tính ra khác nhau giữa hai nguồn.
    - *Vì sao bẫy được:* chênh lệch nhỏ nhưng đủ để một trader thấy giá "đã chạm CE" trong khi trên feed khác giá chưa chạm.
@@ -562,7 +562,7 @@ Dưới góc nhìn market microstructure, một nến bình thường có **hai 
 > 2. **Đặt ngưỡng kích thước gap tối thiểu theo ATR trước khi trade**, tránh coi mọi khoảng trống nhỏ là SIBI có ý nghĩa — gap dưới 0.3x ATR M15 thường chỉ là noise.
 > 3. **Không tin tưởng SIBI/BISI hình thành trong ±10-15 phút quanh tin tier-1** (NFP/CPI/FOMC) làm POI chính — chờ giá ổn định rồi mới đánh giá lại.
 > 4. **Kiểm tra trạng thái fill/invert MỖI LẦN giá quay lại một SIBI cũ**, không dựa vào trí nhớ. Nếu đã có nến đóng cửa xuyên qua bottom, chuyển sang logic Inverse FVG (kháng cự thay vì hỗ trợ).
-> 5. **Ưu tiên trade SIBI hình thành NGAY SAU một liquidity sweep** (xem [[20 - Liquidity Sweep]]) thay vì SIBI đứng một mình — combo sweep→displacement→SIBI→MSS có độ tin cậy cao hơn hẳn.
+> 5. **Ưu tiên trade SIBI hình thành NGAY SAU một liquidity sweep** (xem [[20-Liquidity-Sweep]]) thay vì SIBI đứng một mình — combo sweep→displacement→SIBI→MSS có độ tin cậy cao hơn hẳn.
 > 6. **Với crypto, điều chỉnh kỳ vọng thời gian:** SIBI/BISI hình thành từ liquidation cascade có kích thước lớn hơn và chu kỳ retest nhanh hơn nhiều so với FX/index — không áp dụng khung thời gian quản lý lệnh giống hệt nhau giữa các loại tài sản.
 > 7. **Đặt SL ngoài cận `high(C1)`/`low(C1)` một cách nhất quán**, không đặt bên trong vùng gap — vì bản thân dao động lấp gap có thể quét SL đặt sai vị trí.
 > 8. **Log dữ liệu mỗi lệnh:** `sibi_or_bisi`, `formed_after_sweep` (có/không), `formed_near_news` (có/không), `ce_respected` (có/không). Sau 30+ lệnh, thống kê tỷ lệ CE được respect theo từng điều kiện để biết bộ lọc nào thực sự cải thiện xác suất.

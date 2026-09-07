@@ -56,7 +56,7 @@ Biến thể **H1 → M5 → M1** giải quyết đúng nút thắt đó — nh�
 > Sơ đồ 2 cột song song thể hiện phép "dịch một tầng khung thời gian". Cột trái: mô hình GỐC **D1 (Bias/Draw) → H1 (POI/Sweep/MSS) → M5 (Entry refine)**. Cột phải: BIẾN THỂ LTF **H1/H4 (Bias/Draw) → M5 (POI/Sweep/MSS) → M1 (Entry refine)**. Mũi tên chéo nối từng tầng theo đúng vai trò (D1→H1, H1→M5, M5→M1) nhấn mạnh "cùng vai trò, khác khung".
 
 **Khái niệm:**
-ICT 2022 Model là mô hình **fractal** — cùng một logic "smart money" (quét thanh khoản → displacement để lại imbalance → retrace → chạy về pool đối diện) lặp lại ở *mọi* thang khung thời gian (xem [[43 - Liquidity Scale Alignment (Sweep cùng khung MSS-FVG, HTF là Target)]]). Vì vậy ta có thể **trượt toàn bộ bộ ba khung xuống một nấc** mà không đổi bản chất mô hình:
+ICT 2022 Model là mô hình **fractal** — cùng một logic "smart money" (quét thanh khoản → displacement để lại imbalance → retrace → chạy về pool đối diện) lặp lại ở *mọi* thang khung thời gian (xem [[43-Liquidity-Scale-Alignment-Sweep-cung-khung-MSS-FVG-HTF-la-Target]]). Vì vậy ta có thể **trượt toàn bộ bộ ba khung xuống một nấc** mà không đổi bản chất mô hình:
 
 | Vai trò | Khung gốc | Khung biến thể LTF | Nhiệm vụ tại tầng đó |
 |---|---|---|---|
@@ -65,14 +65,14 @@ ICT 2022 Model là mô hình **fractal** — cùng một logic "smart money" (qu
 | **Confirmation & Entry refine** | M5 | **M1** | Refine điểm vào quanh CE/OTE, tối ưu stop; **không** dùng M1 làm động cơ mô hình |
 
 > [!important] Quy tắc "một tầng bias, không nhảy cóc"
-> Bias luôn nằm ở tầng **cao hơn setup đúng một–hai nấc**, không nhiều hơn. Ở biến thể này H1 là bias chính; H4 chỉ dùng để *kiểm tra không giao dịch ngược trend H4* (một bộ lọc, không phải nguồn setup). Nếu bạn để D1 làm bias rồi cố entry trên M1, bạn đang nhảy 3–4 tầng — khoảng cách quá lớn khiến M1 noise nuốt mất tín hiệu, đúng vấn đề [[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)]] cảnh báo.
+> Bias luôn nằm ở tầng **cao hơn setup đúng một–hai nấc**, không nhiều hơn. Ở biến thể này H1 là bias chính; H4 chỉ dùng để *kiểm tra không giao dịch ngược trend H4* (một bộ lọc, không phải nguồn setup). Nếu bạn để D1 làm bias rồi cố entry trên M1, bạn đang nhảy 3–4 tầng — khoảng cách quá lớn khiến M1 noise nuốt mất tín hiệu, đúng vấn đề [[49-Confirmation-Timeframe-Timeframe-Layering-Khu-nhieu-MSS-trong-2022-Model]] cảnh báo.
 
 **Chuỗi 7 bước — giữ nguyên, chỉ đổi khung:**
-1. **Bias (H1, lọc H4):** Bullish / Bearish — xem [[12 - Daily Bias]]. Trên intraday, "bias" nghĩa là hướng của nhịp H1 hiện tại trong dealing range H1/H4.
-2. **Draw on liquidity (H1):** pool H1 mà giá đang bị hút về (session high/low, equal highs/lows H1, PDH/PDL) — target cuối. Xem [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]].
-3. **Liquidity Sweep (M5):** chờ M5 quét một pool (đáy/đỉnh M5, Asian range, session liquidity) + reclaim — trigger. Xem [[20 - Liquidity Sweep]].
-4. **Displacement + MSS (M5):** một move M5 dứt khoát phá cấu trúc M5 theo hướng bias H1, **để lại M5 FVG**. Xem [[21 - Market Structure Shift]].
-5. **FVG/POI (M5):** xác định M5 FVG + CE. Xem [[13 - FVG  - Fair Value Gap]].
+1. **Bias (H1, lọc H4):** Bullish / Bearish — xem [[12-Daily-Bias]]. Trên intraday, "bias" nghĩa là hướng của nhịp H1 hiện tại trong dealing range H1/H4.
+2. **Draw on liquidity (H1):** pool H1 mà giá đang bị hút về (session high/low, equal highs/lows H1, PDH/PDL) — target cuối. Xem [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]].
+3. **Liquidity Sweep (M5):** chờ M5 quét một pool (đáy/đỉnh M5, Asian range, session liquidity) + reclaim — trigger. Xem [[20-Liquidity-Sweep]].
+4. **Displacement + MSS (M5):** một move M5 dứt khoát phá cấu trúc M5 theo hướng bias H1, **để lại M5 FVG**. Xem [[21-Market-Structure-Shift]].
+5. **FVG/POI (M5):** xác định M5 FVG + CE. Xem [[13-FVG-Fair-Value-Gap]].
 6. **Entry (M1 refine):** vào khi giá retrace về M5 FVG; dùng M1 để bấm quanh CE / M1 FVG bên trong, hoặc chờ một M1 MSS xác nhận nếu muốn thêm confirmation.
 7. **Target (H1):** pool H1 đối diện — internal M5 trước, external H1 sau.
 
@@ -103,7 +103,7 @@ ICT 2022 Model là mô hình **fractal** — cùng một logic "smart money" (qu
 | 10:50–11:10 | NY AM 3 | Continuation sau SB | Continuation | 21:50 / 22:50 |
 
 > [!info] Nhớ trừ DST
-> Mỹ dùng **EDT (mùa hè)**: 10:00 ET ≈ **21:00 VN**. Mỹ dùng **EST (mùa đông)**: 10:00 ET ≈ **22:00 VN**. Chi tiết: [[40 - Macro Times]], [[18 - Kill Zones]].
+> Mỹ dùng **EDT (mùa hè)**: 10:00 ET ≈ **21:00 VN**. Mỹ dùng **EST (mùa đông)**: 10:00 ET ≈ **22:00 VN**. Chi tiết: [[40-Macro-Times]], [[18-Kill-Zones]].
 
 ### Cửa sổ thực dụng cho lịch của bạn (làm ở Amaris)
 - **FX (EURUSD/GBPUSD):** khung **London (13:00–16:00 VN mùa hè)** là hợp lý nhất nếu bạn rảnh đầu giờ chiều; đây là lúc FX cho sweep "sạch" nhờ thanh khoản sâu.
@@ -134,7 +134,7 @@ ICT 2022 Model là mô hình **fractal** — cùng một logic "smart money" (qu
 > Chart 2 cột: trái "M5 displacement hợp lệ" — thân lớn, CLV cao, phá swing M5 kèm acceptance, để lại M5 FVG rõ; M1 bên dưới chỉ dùng để refine entry trong FVG đó. Phải "M1 MSS giả (noise)" — M1 trông giống MSS nhưng zoom M5 chỉ là dao động trong range M5, không phá cấu trúc, không có H1 draw phía sau.
 
 > [!important] Quy tắc vàng: M5 là động cơ, M1 là vô-lăng tinh chỉnh
-> Sai lầm chết người của khung thấp là **nâng M1 MSS lên thành động cơ mô hình**. Trên M1, một cú giật spread cũng tạo ra "MSS" trông y như thật. Quy tắc: **displacement + MSS phải được xác nhận trên M5** (tầng POI); M1 chỉ dùng để bấm entry chính xác hơn bên trong M5 FVG (ví dụ chờ M1 FVG hoặc M1 sweep nhỏ quanh CE). Đây chính là nội dung cốt lõi của [[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)]].
+> Sai lầm chết người của khung thấp là **nâng M1 MSS lên thành động cơ mô hình**. Trên M1, một cú giật spread cũng tạo ra "MSS" trông y như thật. Quy tắc: **displacement + MSS phải được xác nhận trên M5** (tầng POI); M1 chỉ dùng để bấm entry chính xác hơn bên trong M5 FVG (ví dụ chờ M1 FVG hoặc M1 sweep nhỏ quanh CE). Đây chính là nội dung cốt lõi của [[49-Confirmation-Timeframe-Timeframe-Layering-Khu-nhieu-MSS-trong-2022-Model]].
 
 **4 tiêu chí displacement (áp cho M5, điều chỉnh cho khung thấp):**
 
@@ -161,9 +161,9 @@ ICT 2022 Model là mô hình **fractal** — cùng một logic "smart money" (qu
 > 4. **Entry/stop/target ở đâu, R:R *sau khi trừ spread* có ≥ kế hoạch không?**
 
 ### H1 (lọc H4) — Bias & Narrative
-- **Bias:** hướng nhịp H1 hiện tại trong dealing range H1/H4 ([[12 - Daily Bias]], [[12 - Dealing Range]]).
+- **Bias:** hướng nhịp H1 hiện tại trong dealing range H1/H4 ([[12-Daily-Bias]], [[12-Dealing-Range]]).
 - **Draw:** pool H1 là target cuối (BSL cho Long / SSL cho Short) — PDH/PDL, session high/low, equal highs/lows H1.
-- **Premium/Discount:** chia dealing range H1 → chỉ Long ở discount, Short ở premium ([[27 - Premium Discount]]).
+- **Premium/Discount:** chia dealing range H1 → chỉ Long ở discount, Short ở premium ([[27-Premium-Discount]]).
 - **Lọc H4:** nếu H4 đang displacement mạnh ngược hướng → hạ cấp hoặc bỏ.
 
 ### M5 — POI · Sweep · Displacement (tầng ra quyết định)
@@ -204,7 +204,7 @@ R:R sau trừ spread: [..]   Invalid: M5 đóng nến trên FVG
 ```
 
 > [!warning] Đừng chase M5 displacement
-> Y như khung gốc: M5 displacement để **xác nhận**, không phải để vào. Entry ở bước **retrace về M5 FVG**. Vào ngay khi thấy nến M5 lớn = bỏ bước retrace, R:R xấu, dễ trúng đỉnh/đáy micro. Xem [[35 - Aggressive Displacement Entry]] để biết *khi nào* mới được phép vào sớm (chỉ khi có tiêu chí bổ sung rất chặt).
+> Y như khung gốc: M5 displacement để **xác nhận**, không phải để vào. Entry ở bước **retrace về M5 FVG**. Vào ngay khi thấy nến M5 lớn = bỏ bước retrace, R:R xấu, dễ trúng đỉnh/đáy micro. Xem [[35-Aggressive-Displacement-Entry]] để biết *khi nào* mới được phép vào sớm (chỉ khi có tiêu chí bổ sung rất chặt).
 
 ---
 
@@ -219,7 +219,7 @@ Cùng một chuỗi M5, nhưng hai thị trường bạn chọn hành xử khác
 | Wick / stop buffer | **Cần buffer rộng** — wick M5 dài | Buffer vừa; sweep "sạch" hơn nhờ thanh khoản sâu |
 | Spread/commission so target | Trung bình (giãn quanh tin) | Thấp (trừ lúc tin) — hợp khung thấp hơn NQ1 |
 | Killzone tốt nhất | **NY AM 09:50–10:10 ET** | London Open, NY AM (overlap) |
-| SMT soi kèm | ES/S&P (thuận) | GBPUSD↔EURUSD (thuận) + DXY (nghịch) — [[42 - SMT Divergence]] |
+| SMT soi kèm | ES/S&P (thuận) | GBPUSD↔EURUSD (thuận) + DXY (nghịch) — [[42-SMT-Divergence]] |
 | Bẫy chính | Nhiều "cơ hội" → **overtrade**; wick quét stop | Trade giờ Á thanh khoản mỏng; tin riêng GBP phá SMT |
 
 > [!tip] Quy tắc thực dụng
@@ -269,7 +269,7 @@ Cùng một chuỗi M5, nhưng hai thị trường bạn chọn hành xử khác
 - Target nhỏ → **spread + commission chiếm tỷ trọng lớn trong R**. Một setup R:R "3R trên giấy" có thể còn ~2R sau chi phí. Luôn tính R:R *ròng*.
 - Slippage quanh tin ăn mạnh hơn vì stop/target gần giá.
 
-**Position sizing & stop:** stop LTF nhỏ hơn (tính theo giá) → với cùng **risk ≤ 0.5%/lệnh** (luật vault), bạn có thể size lớn hơn về khối lượng. Điều này *khuếch đại* tác động của slippage. Xem [[43 - Position Sizing]] và luật risk trong `CLAUDE.md`.
+**Position sizing & stop:** stop LTF nhỏ hơn (tính theo giá) → với cùng **risk ≤ 0.5%/lệnh** (luật vault), bạn có thể size lớn hơn về khối lượng. Điều này *khuếch đại* tác động của slippage. Xem [[43-Position-Sizing]] và luật risk trong `CLAUDE.md`.
 
 **FTMO 10K (daily loss theo balance khởi đầu cố định, reset hằng ngày; có yêu cầu số ngày trade tối thiểu):**
 - LTF cho **nhiều ngày trade** hơn → dễ đạt yêu cầu min trading days.
@@ -359,7 +359,7 @@ Bảng "4 tiêu chí displacement" ở mục 3 nêu ngưỡng CLV ≥0.7, body/w
 **Hiện tượng:** trong 5-10 phút trước một mốc macro time đã biết (ví dụ 09:50 ET Silver Bullet), thị trường thường có các nhịp giật do positioning của các bàn giao dịch chờ tin/mốc — những nhịp này có thể trông giống M5 displacement + MSS nhưng không phải động cơ thật của mô hình. **Phát hiện sớm:** so sánh giờ hiện tại với mốc macro time đã định nghĩa ở mục 2 — nếu còn cách macro time chính thức dưới 5-10 phút, hạ mức tin cậy cho bất kỳ M5 MSS nào quan sát được. **Xử lý đúng:** chờ qua đúng mốc macro time mới xác nhận M5 displacement là thật; không hạ tiêu chuẩn "đang trong killzone" thành "gần killzone". **Bài học:** "gần đến giờ vàng" không phải "đang trong giờ vàng" — ranh giới vài phút này chính là ranh giới giữa setup thật và noise ở khung LTF.
 
 **③ Tin kinh tế bất ngờ (không nằm trong lịch tin đã biết trước, ví dụ phát biểu ngoài lịch của quan chức ngân hàng trung ương) làm M1/M5 displacement giả xuất hiện ngoài mọi mốc killzone/macro đã định nghĩa.**
-**Hiện tượng:** một phát biểu hoặc tin bất ngờ (không phải NFP/CPI/FOMC đã biết lịch) gây biến động đột ngột ngoài các cửa sổ killzone/macro đã liệt kê ở mục 2 — M5/M1 có thể tạo displacement "đẹp" về mặt hình thái nhưng không nằm trong logic timing của mô hình. **Phát hiện sớm:** nếu displacement xảy ra hoàn toàn ngoài các mốc đã liệt kê trong bảng killzone/macro (mục 2) và không rõ nguyên nhân ngay lập tức, coi đây là tín hiệu cảnh báo, không phải cơ hội. **Xử lý đúng:** kiểm tra nhanh nguồn tin (economic calendar, breaking news) trước khi vào; nếu xác nhận có tin bất ngờ, đây thuộc nhóm "aggressive displacement entry" cần tiêu chí bổ sung chặt hơn (xem [[35 - Aggressive Displacement Entry]]), không áp dụng quy trình LTF chuẩn. **Bài học:** mô hình LTF được thiết kế quanh timing DỰ ĐOÁN ĐƯỢC (killzone, macro time cố định) — tin bất ngờ phá vỡ chính giả định nền tảng đó, nên cần một bộ luật riêng, không phải một biến thể của luật thường.
+**Hiện tượng:** một phát biểu hoặc tin bất ngờ (không phải NFP/CPI/FOMC đã biết lịch) gây biến động đột ngột ngoài các cửa sổ killzone/macro đã liệt kê ở mục 2 — M5/M1 có thể tạo displacement "đẹp" về mặt hình thái nhưng không nằm trong logic timing của mô hình. **Phát hiện sớm:** nếu displacement xảy ra hoàn toàn ngoài các mốc đã liệt kê trong bảng killzone/macro (mục 2) và không rõ nguyên nhân ngay lập tức, coi đây là tín hiệu cảnh báo, không phải cơ hội. **Xử lý đúng:** kiểm tra nhanh nguồn tin (economic calendar, breaking news) trước khi vào; nếu xác nhận có tin bất ngờ, đây thuộc nhóm "aggressive displacement entry" cần tiêu chí bổ sung chặt hơn (xem [[35-Aggressive-Displacement-Entry]]), không áp dụng quy trình LTF chuẩn. **Bài học:** mô hình LTF được thiết kế quanh timing DỰ ĐOÁN ĐƯỢC (killzone, macro time cố định) — tin bất ngờ phá vỡ chính giả định nền tảng đó, nên cần một bộ luật riêng, không phải một biến thể của luật thường.
 
 **④ Chuyển đổi DST giữa Mỹ và EU không cùng ngày làm lệch bảng quy đổi killzone 1 tuần mỗi năm.**
 **Hiện tượng:** Mỹ và Liên minh châu Âu chuyển đổi giờ mùa hè/đông vào các Chủ nhật khác nhau (thường lệch 1-2 tuần vào tháng 3 và cuối tháng 10/đầu tháng 11) — trong tuần lệch đó, khoảng cách giữa killzone London và killzone NY tính theo giờ VN dịch chuyển 1 tiếng so với bảng đã ghi ở mục 2, dù bảng đó vẫn đúng cho phần lớn thời gian trong năm. **Phát hiện sớm:** đầu tháng 3 và cuối tháng 10 mỗi năm, đối chiếu lại đồng hồ giờ London VÀ giờ New York hiển thị trực tiếp trên nền tảng — không giả định cả hai lệch cùng lúc. **Xử lý đúng:** trong tuần lệch DST không đồng bộ, ưu tiên tin vào đồng hồ hiển thị trực tiếp thay vì bảng quy đổi VN cố định; cân nhắc giảm size hoặc bỏ qua tuần đó nếu không chắc chắn về giờ chính xác. **Bài học:** đây là biến thể nguy hiểm hơn DST thường (đã nêu trong edge case ⑨ của note gốc) vì cả HAI killzone (London và NY) đều dùng trong biến thể LTF — sai lệch nhân đôi cơ hội canh nhầm giờ.
@@ -480,22 +480,22 @@ Bảng đánh đổi ở mục 0 ghi "1-3 setup A+ mỗi phiên" — đây là b
 
 **Note gốc & khung layering:**
 - [[01 - ICT 2022 Model]] (note mẹ)
-- [[49 - Confirmation Timeframe & Timeframe Layering (Khử nhiễu MSS trong 2022 Model)]]
-- [[43 - Liquidity Scale Alignment (Sweep cùng khung MSS-FVG, HTF là Target)]]
-- [[32 - Top-down Analysis (Multiple Timeframes)]]
-- [[37 - Re-mapping Dealing Range sau Displacement]]
+- [[49-Confirmation-Timeframe-Timeframe-Layering-Khu-nhieu-MSS-trong-2022-Model]]
+- [[43-Liquidity-Scale-Alignment-Sweep-cung-khung-MSS-FVG-HTF-la-Target]]
+- [[32-Top-down-Analysis-Multiple-Timeframes]]
+- [[37-Re-mapping-Dealing-Range-sau-Displacement]]
 
 **Bước trong chuỗi:**
-- [[12 - Daily Bias]] · [[12 - Dealing Range]] · [[27 - Premium Discount]]
-- [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]] · [[19 - Liquidity]]
-- [[20 - Liquidity Sweep]] · [[21 - Market Structure Shift]]
-- [[13 - FVG  - Fair Value Gap]] · [[10 - Consequent Encroachment (Mean Threshold)]] · [[26 - OTE - Optimal Trade Entry]]
-- [[16 - Internal & External Range Liquidity (IRL & ERL)]]
+- [[12-Daily-Bias]] · [[12-Dealing-Range]] · [[27-Premium-Discount]]
+- [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]] · [[19-Liquidity]]
+- [[20-Liquidity-Sweep]] · [[21-Market-Structure-Shift]]
+- [[13-FVG-Fair-Value-Gap]] · [[10-Consequent-Encroachment-Mean-Threshold]] · [[26-OTE-Optimal-Trade-Entry]]
+- [[16-Internal-External-Range-Liquidity-IRL-ERL]]
 
 **Timing & xác nhận:**
-- [[18 - Kill Zones]] · [[40 - Macro Times]]
-- [[42 - SMT Divergence]] · [[35 - Aggressive Displacement Entry]]
+- [[18-Kill-Zones]] · [[40-Macro-Times]]
+- [[42-SMT-Divergence]] · [[35-Aggressive-Displacement-Entry]]
 
 **Rủi ro & lỗi:**
-- [[43 - Position Sizing]]
+- [[43-Position-Sizing]]
 - [[Mistake - Skip Liquidity Sweep]] · [[Mistake - Chase Displacement]] · [[Mistake - Trade Against Bias]]

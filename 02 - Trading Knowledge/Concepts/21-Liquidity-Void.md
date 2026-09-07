@@ -32,17 +32,17 @@ updated: 2026-07-28
 ### Khái niệm
 **Liquidity Void (LV)** — còn gọi là *Liquidity Gap* hoặc *Liquidity Vacuum* — là một **dải giá** mà thị trường đi qua bằng một loạt nến displacement mạnh, gần như không có sự chồng lấp (overlap) giữa thân các nến và rất ít giao dịch hai chiều. Kết quả là một khu vực **mỏng thanh khoản**, nơi giá "trượt" qua thay vì "đi bộ" qua.
 
-Khác với một [[Fair Value Gap]] đơn lẻ (khoảng trống ba nến rất cụ thể), Liquidity Void là một **khái niệm vùng rộng hơn**: nó thường **bao trùm nhiều FVG liên tiếp**, nhiều [[Order Block]] bị bỏ lại, và thường nối liền hai cụm thanh khoản (ví dụ từ một [[20 - Liquidity Sweep]] ở đáy lên tới buy-side liquidity ở đỉnh).
+Khác với một [[Fair Value Gap]] đơn lẻ (khoảng trống ba nến rất cụ thể), Liquidity Void là một **khái niệm vùng rộng hơn**: nó thường **bao trùm nhiều FVG liên tiếp**, nhiều [[Order Block]] bị bỏ lại, và thường nối liền hai cụm thanh khoản (ví dụ từ một [[20-Liquidity-Sweep]] ở đáy lên tới buy-side liquidity ở đỉnh).
 
 ### Bản chất
 - Là hệ quả trực tiếp của **[[Displacement]]** — không có displacement thì không có void.
-- Là một **PD Array** ([[27 - Premium Discount]] array) ở cấp độ vùng: nó nằm hẳn trong premium hoặc discount của [[12 - Dealing Range]], và điều đó quyết định ta tiếp cận nó thế nào.
+- Là một **PD Array** ([[27-Premium-Discount]] array) ở cấp độ vùng: nó nằm hẳn trong premium hoặc discount của [[12-Dealing-Range]], và điều đó quyết định ta tiếp cận nó thế nào.
 - Là một **inefficiency mang tính cấu trúc**: thị trường ghi nhớ rằng vùng này chưa được giao dịch hai chiều và sẽ tìm cách trả lại sự cân bằng.
 
 ### Mục đích trong ICT
 1. **Làm TARGET (draw on liquidity):** khi giá vừa quét thanh khoản và mở ra một void phía trước, void đó trở thành "đường băng" để giá lao tới phía xa rất nhanh. Ta giao dịch *theo* hướng void.
 2. **Làm MAGNET (rebalance):** một void cũ phía sau giá là vùng kém hiệu quả chưa được lấp; giá có xu hướng quay lại "rebalance" nó. Ta giao dịch *retracement* về void.
-3. **Lọc bias:** nếu phía trên có void chưa lấp và phía dưới cũng có void chưa lấp, void nào "gần nguồn thanh khoản hơn" thường là draw mạnh hơn — giúp xác nhận [[12 - Daily Bias]].
+3. **Lọc bias:** nếu phía trên có void chưa lấp và phía dưới cũng có void chưa lấp, void nào "gần nguồn thanh khoản hơn" thường là draw mạnh hơn — giúp xác nhận [[12-Daily-Bias]].
 
 ### Vì sao quan trọng
 Vì void trả lời được câu hỏi mà nhiều trader hay bỏ sót: **"Giá đang bị HÚT về đâu, và đi đến đó nhanh hay chậm?"** Một FVG cho ta điểm vào (POI); một Liquidity Void cho ta **đoạn đường giá có thể đi rất nhanh** và **mục tiêu giá có thể chạy thẳng tới**. Nó là cầu nối giữa "vào lệnh ở đâu" và "thoát lệnh ở đâu".
@@ -57,7 +57,7 @@ Vì void trả lời được câu hỏi mà nhiều trader hay bỏ sót: **"Gi
 - **Không phải** chỉ là một FVG đơn lẻ — void rộng hơn, thường chứa nhiều FVG.
 - **Không phải** một điểm vào lệnh chính xác — nó là một *vùng/đoạn đường*; điểm vào cụ thể vẫn đến từ [[Fair Value Gap]], [[Order Block]] hay [[Optimal Trade Entry]] *bên trong* hoặc *ở rìa* void.
 - **Không phải** lúc nào cũng được lấp 100% — fill có thể là partial (lấp một phần rồi đi tiếp).
-- **Không phải** tín hiệu vào lệnh độc lập — nó cần [[20 - Liquidity Sweep]] + bias + premium/discount mới có giá trị.
+- **Không phải** tín hiệu vào lệnh độc lập — nó cần [[20-Liquidity-Sweep]] + bias + premium/discount mới có giá trị.
 - **Không phải** gap cuối tuần thuần túy (weekend gap) — dù gap cũng là một dạng inefficiency, void ở đây là khái niệm intraday/cấu trúc do displacement.
 
 ### Void vs FVG vs Imbalance (phân biệt cốt lõi)
@@ -68,7 +68,7 @@ Vì void trả lời được câu hỏi mà nhiều trader hay bỏ sót: **"Gi
 | Cấu trúc đo | Toàn bộ dải displacement, thiếu overlap | Khoảng giữa nến 1 và nến 3 (nến giữa bỏ lại) | Một phía (buy hoặc sell) bị bỏ trống |
 | Vai trò chính | TARGET + MAGNET (draw / rebalance) | POI / điểm vào lệnh | Mô tả tính chất của khoảng trống |
 | Số lượng FVG bên trong | Thường chứa NHIỀU FVG | Là một đơn vị | — |
-| Liên hệ | Bao trùm FVG | Là "viên gạch" cấu thành void | [[29 - Sell-side Imbalance Buy-side Inefficiency]] là loại imbalance |
+| Liên hệ | Bao trùm FVG | Là "viên gạch" cấu thành void | [[29-Sell-side-Imbalance-Buy-side-Inefficiency]] là loại imbalance |
 | Cách dùng điển hình | "Giá sẽ chạy/quay về vùng này" | "Tôi vào lệnh tại đây" | "Vùng này thiếu giao dịch ở phía X" |
 
 > [!tip] Cách nhớ nhanh
@@ -88,16 +88,16 @@ Liquidity Void có hai vai trò trái ngược nhau — và phần khó nhất l
 | **Void làm MAGNET (rebalance)** | Void cũ phía sau giá, chưa lấp | Nam châm hút giá quay lại | Chờ retracement về void rồi vào theo bias gốc |
 | **Void đang được lấp (filling)** | Giá đang pullback vào trong void | Trung tính — đang cân bằng | Quan sát phản ứng tại các FVG/OB bên trong |
 | **Void đã lấp đầy (full fill)** | Giá đã trượt hết qua void | Hết "nhiên liệu" — void không còn là draw | Bỏ qua như một POI; tìm void/draw kế tiếp |
-| **Void lấp một phần (partial fill)** | Giá chỉ vào tới [[10 - Consequent Encroachment (Mean Threshold)]] hoặc rìa rồi đi tiếp | Còn hiệu lực một phần | CE thường là điểm chốt/đảo chiều của pullback |
-| **Void mới ngược hướng** | Pullback tạo displacement & void ngược lại | Cảnh báo đổi bias / [[21 - Market Structure Shift]] | Đánh giá lại bias, không vào theo hướng cũ |
+| **Void lấp một phần (partial fill)** | Giá chỉ vào tới [[10-Consequent-Encroachment-Mean-Threshold]] hoặc rìa rồi đi tiếp | Còn hiệu lực một phần | CE thường là điểm chốt/đảo chiều của pullback |
+| **Void mới ngược hướng** | Pullback tạo displacement & void ngược lại | Cảnh báo đổi bias / [[21-Market-Structure-Shift]] | Đánh giá lại bias, không vào theo hướng cũ |
 
 ### Khi nào có giá trị cao?
-- [ ] Void hình thành **ngay sau một [[20 - Liquidity Sweep]]** (sweep → displacement → void) trong [[18 - Kill Zones]].
-- [ ] Void nằm đúng **premium (cho lệnh Short)** hoặc **discount (cho lệnh Long)** của [[12 - Dealing Range]].
-- [ ] Void **cùng hướng với [[12 - Daily Bias]]** và trỏ về một cụm thanh khoản rõ ràng ([[07 - Buy-side Liquidity]] / [[30 - Sell-side Liquidity]]).
+- [ ] Void hình thành **ngay sau một [[20-Liquidity-Sweep]]** (sweep → displacement → void) trong [[18-Kill-Zones]].
+- [ ] Void nằm đúng **premium (cho lệnh Short)** hoặc **discount (cho lệnh Long)** của [[12-Dealing-Range]].
+- [ ] Void **cùng hướng với [[12-Daily-Bias]]** và trỏ về một cụm thanh khoản rõ ràng ([[07-Buy-side-Liquidity]] / [[30 - Sell-side Liquidity]]).
 - [ ] Void **chưa được lấp** và là khoảng trống "sạch" (ít overlap, nến body dài).
 - [ ] Có **[[Displacement]]** rõ ràng tạo void (không phải dao động lình xình).
-- [ ] Void mở ra trong/đầu một phiên ([[02 - AMD]] — manipulation → distribution).
+- [ ] Void mở ra trong/đầu một phiên ([[02-AMD]] — manipulation → distribution).
 
 ### Khi nào nên bỏ qua?
 - [ ] Void **đã được lấp đầy 100%** từ trước — không còn là draw.
@@ -126,9 +126,9 @@ Liquidity Void có hai vai trò trái ngược nhau — và phần khó nhất l
 | Displacement | Bắt buộc | Chuỗi nến body dài, một chiều | Không phải void, chỉ là dao động |
 | Thiếu overlap giữa các nến | Bắt buộc | Giá nhảy bậc, ít giao thoa | Vùng đã "cân bằng", không phải void |
 | ≥1 FVG bên trong | Tăng xác suất | Đếm FVG liên tiếp | Void yếu, dễ bị nghi ngờ |
-| Sweep ngay trước void | Tăng xác suất | [[20 - Liquidity Sweep]] tạo "nhiên liệu" | Void thiếu lý do, dễ là bẫy |
+| Sweep ngay trước void | Tăng xác suất | [[20-Liquidity-Sweep]] tạo "nhiên liệu" | Void thiếu lý do, dễ là bẫy |
 | Cụm thanh khoản ở phía xa | Tăng xác suất | BSL/SSL làm "mồi" | Void không có target rõ ràng |
-| Nằm đúng premium/discount | Tăng xác suất | Theo [[27 - Premium Discount]] | Vào lệnh kém lợi thế |
+| Nằm đúng premium/discount | Tăng xác suất | Theo [[27-Premium-Discount]] | Vào lệnh kém lợi thế |
 | Đã lấp một phần | Làm yếu đi | Giá đã đi vào một phần void | Còn lại ít "nhiên liệu" |
 | Overlap nhiều, nến nhỏ | Làm yếu đi | Vùng lình xình | Không nên xem là void |
 
@@ -138,13 +138,13 @@ Liquidity Void có hai vai trò trái ngược nhau — và phần khó nhất l
 - [ ] Xác định được **hai biên** của void (đỉnh và đáy của dải).
 
 ### Điều kiện tăng xác suất
-- [ ] Void hình thành **sau [[20 - Liquidity Sweep]]**.
-- [ ] Bên trong có **FVG liên tiếp** và/hoặc [[29 - Sell-side Imbalance Buy-side Inefficiency]].
+- [ ] Void hình thành **sau [[20-Liquidity-Sweep]]**.
+- [ ] Bên trong có **FVG liên tiếp** và/hoặc [[29-Sell-side-Imbalance-Buy-side-Inefficiency]].
 - [ ] Phía xa của void có **cụm thanh khoản** rõ (equal highs/lows, old high/low).
-- [ ] Void **cùng hướng [[12 - Daily Bias]]** và nằm đúng premium/discount.
+- [ ] Void **cùng hướng [[12-Daily-Bias]]** và nằm đúng premium/discount.
 
 ### Điều kiện làm yếu đi
-- [ ] Void **đã lấp phần lớn** hoặc đã chạm [[10 - Consequent Encroachment (Mean Threshold)]].
+- [ ] Void **đã lấp phần lớn** hoặc đã chạm [[10-Consequent-Encroachment-Mean-Threshold]].
 - [ ] Void hình thành trong **consolidation** hoặc do **tin tức lệch bias**.
 - [ ] **Overlap nhiều** giữa các nến — chất lượng inefficiency thấp.
 - [ ] Không có **draw on liquidity** rõ ràng ở phía xa.
@@ -156,7 +156,7 @@ Ba khái niệm này đều thuộc "họ gap/imbalance" của ICT nhưng dễ b
 ![[LiquidityVoid-Advanced-vs-FVG-vs-BPR.svg]]
 *So sánh trực quan ba PD-array: FVG là một đơn vị 3 nến duy nhất, Liquidity Void là cả một dải displacement chứa nhiều FVG con, BPR là phần overlap giữa hai FVG ngược chiều.*
 
-| Tiêu chí | **Liquidity Void** | **[[13 - FVG  - Fair Value Gap]]** | **[[03 - Balanced Price Range]] (BPR)** |
+| Tiêu chí | **Liquidity Void** | **[[13-FVG-Fair-Value-Gap]]** | **[[03-Balanced-Price-Range]] (BPR)** |
 |---|---|---|---|
 | Cơ chế định nghĩa | Chuỗi **nhiều nến displacement** cùng chiều, gần như không overlap thân nến | **3 nến** cụ thể: gap giữa nến 1 và nến 3, nến 2 là displacement | **2 FVG ngược chiều CHỒNG LẤP** nhau trên cùng dải giá |
 | Số nến tối thiểu | Không cố định — thường ≥ 4-5 nến, có thể tới 8-10 nến | Đúng 3 nến | Tối thiểu 2 leg ngược chiều (mỗi leg tự đủ 3 nến để tạo FVG riêng) |
@@ -207,14 +207,14 @@ Vì cơ chế lấp khác nhau, khi trade một macro void, ưu tiên coi **CE c
 > Nguyên tắc: **HTF xác định void nào là draw + premium/discount; LTF tinh chỉnh điểm vào và xác nhận displacement.**
 
 ### D1 / H4 — Bias & bản đồ void lớn
-- Xác định [[12 - Daily Bias]] và [[12 - Dealing Range]] tổng (HTF premium/discount).
+- Xác định [[12-Daily-Bias]] và [[12-Dealing-Range]] tổng (HTF premium/discount).
 - Đánh dấu các **void HTF chưa lấp** (gắn với swing displacement lớn) — đây là các *draw* tầm xa.
-- Xác định cụm thanh khoản chính ([[07 - Buy-side Liquidity]] / [[30 - Sell-side Liquidity]]) mà giá có thể bị hút tới.
+- Xác định cụm thanh khoản chính ([[07-Buy-side-Liquidity]] / [[30 - Sell-side Liquidity]]) mà giá có thể bị hút tới.
 - Quyết định: void nào là **target** (cùng hướng bias) và void nào có thể là **magnet rebalance** ngược chiều.
 
 ### H1 / M15 — Cấu trúc & lựa chọn kịch bản
-- Tìm [[20 - Liquidity Sweep]] gần nhất → có displacement → có void mới mở ra không?
-- Xác định [[21 - Market Structure Shift]] / [[Break of Structure]] xác nhận hướng.
+- Tìm [[20-Liquidity-Sweep]] gần nhất → có displacement → có void mới mở ra không?
+- Xác định [[21-Market-Structure-Shift]] / [[Break of Structure]] xác nhận hướng.
 - Khoanh vùng void H1/M15 nằm trong premium/discount đúng phía → đây là vùng làm việc.
 - Xác định xem ta đang **đi tới void** (target) hay **chờ giá quay về void** (rebalance).
 
@@ -247,15 +247,15 @@ HTF: H4 premium, bias DOWN, có void cũ CHƯA lấp phía trên: [void_low] -> 
 ```
 
 > [!warning] Bẫy đa khung
-> Đừng nhầm **"giá đang lấp void cũ" (lành mạnh, theo bias)** với **"giá đang tạo void mới ngược chiều" (đảo bias)**. Nếu pullback rebalance lại đi kèm displacement mạnh xuyên qua cấu trúc → đó không còn là rebalance, mà là [[21 - Market Structure Shift]] báo đổi hướng. Luôn kiểm tra void mới có hình thành ngược chiều không.
+> Đừng nhầm **"giá đang lấp void cũ" (lành mạnh, theo bias)** với **"giá đang tạo void mới ngược chiều" (đảo bias)**. Nếu pullback rebalance lại đi kèm displacement mạnh xuyên qua cấu trúc → đó không còn là rebalance, mà là [[21-Market-Structure-Shift]] báo đổi hướng. Luôn kiểm tra void mới có hình thành ngược chiều không.
 
 ---
 
 ## 5. Quy tắc xác nhận / vô hiệu hóa
 
 ### Setup hợp lệ khi
-- [ ] Void được tạo bởi **displacement rõ ràng** sau một **[[20 - Liquidity Sweep]]**.
-- [ ] Void **cùng hướng [[12 - Daily Bias]]** và nằm đúng **premium/discount**.
+- [ ] Void được tạo bởi **displacement rõ ràng** sau một **[[20-Liquidity-Sweep]]**.
+- [ ] Void **cùng hướng [[12-Daily-Bias]]** và nằm đúng **premium/discount**.
 - [ ] Có **draw on liquidity** rõ ở phía xa của void (target tồn tại).
 - [ ] LTF cho **MSS + displacement vi mô** xác nhận trước khi vào.
 - [ ] Void **chưa lấp** hoặc mới lấp một phần (còn "nhiên liệu").
@@ -272,13 +272,13 @@ HTF: H4 premium, bias DOWN, có void cũ CHƯA lấp phía trên: [void_low] -> 
 | Tiêu chí | Còn hiệu lực (tradeable) | Hết hiệu lực (bỏ qua) |
 |---|---|---|
 | Mức độ lấp | Chưa lấp / lấp một phần | Đã lấp đầy ~100% |
-| Bias | Cùng [[12 - Daily Bias]] | Ngược bias hiện tại |
+| Bias | Cùng [[12-Daily-Bias]] | Ngược bias hiện tại |
 | Vị trí PD | Đúng premium/discount | Sai phía |
 | Draw phía xa | Có cụm thanh khoản | Không còn target |
 | Phản ứng giá | Tôn trọng rìa/CE | Xuyên thẳng không phản ứng |
 
 > [!note]
-> CE — [[10 - Consequent Encroachment (Mean Threshold)]] — là đường giữa của void/FVG. Trong rất nhiều trường hợp giá **chỉ lấp tới CE rồi quay đầu** (partial fill). Hãy dùng CE làm mốc kỳ vọng cho retracement thay vì đòi giá phải lấp 100%.
+> CE — [[10-Consequent-Encroachment-Mean-Threshold]] — là đường giữa của void/FVG. Trong rất nhiều trường hợp giá **chỉ lấp tới CE rồi quay đầu** (partial fill). Hãy dùng CE làm mốc kỳ vọng cho retracement thay vì đòi giá phải lấp 100%.
 
 ---
 
@@ -290,7 +290,7 @@ HTF: H4 premium, bias DOWN, có void cũ CHƯA lấp phía trên: [void_low] -> 
 
 **Vì sao đây là ví dụ tốt:**
 - Có đủ chuỗi: **sweep → displacement → void → target** (draw on liquidity).
-- Void nằm trong **discount** của [[12 - Dealing Range]] và cùng [[12 - Daily Bias]] UP.
+- Void nằm trong **discount** của [[12-Dealing-Range]] và cùng [[12-Daily-Bias]] UP.
 - Điểm vào đến từ một FVG cụ thể *bên trong* void — void làm target, FVG làm POI.
 - Giá tôn trọng CE của FVG khi pullback (partial fill rồi đi tiếp).
 
@@ -317,9 +317,9 @@ Liquidity Void hiếm khi là điểm vào trực tiếp — nó định *hướ
 - [[Fair Value Gap]] — POI chính bên trong/ở rìa void.
 - [[Order Block]] — block tạo ra cú displacement mở void.
 - [[Optimal Trade Entry]] — vùng fib 62–79% trùng với rìa/CE của void.
-- [[10 - Consequent Encroachment (Mean Threshold)]] — mốc partial fill, thường là điểm phản ứng.
-- [[21 - Market Structure Shift]] / [[Break of Structure]] — xác nhận LTF trước khi vào.
-- [[20 - Liquidity Sweep]] — sự kiện tạo "nhiên liệu" cho void.
+- [[10-Consequent-Encroachment-Mean-Threshold]] — mốc partial fill, thường là điểm phản ứng.
+- [[21-Market-Structure-Shift]] / [[Break of Structure]] — xác nhận LTF trước khi vào.
+- [[20-Liquidity-Sweep]] — sự kiện tạo "nhiên liệu" cho void.
 - [[ICT 2022 Model]] — khung tích hợp sweep → MSS → FVG → target (void là target).
 
 ```text
@@ -343,9 +343,9 @@ Liquidity Void hiếm khi là điểm vào trực tiếp — nó định *hướ
 > [!warning] Không có void hợp lệ + không có draw → KHÔNG có lệnh. Void không tự nó là tín hiệu.
 
 ### A. Context (bối cảnh)
-- [ ] Đã xác định [[12 - Daily Bias]] và [[12 - Dealing Range]] (premium/discount).
+- [ ] Đã xác định [[12-Daily-Bias]] và [[12-Dealing-Range]] (premium/discount).
 - [ ] Void **cùng hướng bias** và nằm đúng phía PD.
-- [ ] Có **[[20 - Liquidity Sweep]]** tạo nhiên liệu cho void.
+- [ ] Có **[[20-Liquidity-Sweep]]** tạo nhiên liệu cho void.
 - [ ] Có **draw on liquidity** rõ ở phía xa của void (target tồn tại).
 - [ ] Void **chưa lấp / mới lấp một phần**.
 
@@ -370,12 +370,12 @@ Liquidity Void hiếm khi là điểm vào trực tiếp — nó định *hướ
 | Lỗi | Dấu hiệu | Vì sao nguy hiểm | Cách sửa |
 |---|---|---|---|
 | Nhầm void với FVG đơn lẻ | Coi cả vùng rộng như một điểm vào | Vào sai vị trí, SL phi logic | Tách rõ: void = target/đoạn đường, FVG = POI |
-| Trade void ngược bias | Long vào void trong premium khi bias DOWN | Đi ngược dòng tiền lớn, dễ cháy SL | Luôn lọc qua [[12 - Daily Bias]] + premium/discount |
-| Đòi void lấp 100% | Giữ lệnh chờ fill toàn bộ | Bỏ lỡ partial fill / quay đầu tại CE | Dùng [[10 - Consequent Encroachment (Mean Threshold)]] làm mốc kỳ vọng |
+| Trade void ngược bias | Long vào void trong premium khi bias DOWN | Đi ngược dòng tiền lớn, dễ cháy SL | Luôn lọc qua [[12-Daily-Bias]] + premium/discount |
+| Đòi void lấp 100% | Giữ lệnh chờ fill toàn bộ | Bỏ lỡ partial fill / quay đầu tại CE | Dùng [[10-Consequent-Encroachment-Mean-Threshold]] làm mốc kỳ vọng |
 | Bỏ qua void đã lấp | Vào vùng đã hết "nhiên liệu" | Không còn draw, giá không chạy | Kiểm tra mức độ lấp trước khi xem là target |
 | Coi void do tin tức là draw | Vào sau spike news ngược bias | Whipsaw, SL bị quét hai chiều | Loại void không khớp HTF / tránh quanh tin |
 | Bỏ qua void mới ngược chiều | Vẫn vào theo hướng cũ | Bias đã đổi, vào đúng đỉnh/đáy | Khi có MSS + void ngược → dừng, đánh giá lại |
-| Không có target ở phía xa | Vào theo void nhưng không có cụm thanh khoản | TP mơ hồ, exit cảm tính | Chỉ trade void có [[07 - Buy-side Liquidity]]/[[30 - Sell-side Liquidity]] làm mồi |
+| Không có target ở phía xa | Vào theo void nhưng không có cụm thanh khoản | TP mơ hồ, exit cảm tính | Chỉ trade void có [[07-Buy-side-Liquidity]]/[[30 - Sell-side Liquidity]] làm mồi |
 | Đặt SL trong lòng void | SL nằm giữa vùng thiếu thanh khoản | Giá đi qua void nhanh, dễ quét SL | Đặt SL ngoài cấu trúc tạo void |
 
 ---
@@ -383,9 +383,9 @@ Liquidity Void hiếm khi là điểm vào trực tiếp — nó định *hướ
 ## 10. Câu hỏi tự kiểm tra
 - Void này đang đóng vai trò **target** hay **magnet rebalance**? Vì sao?
 - Void **đã lấp bao nhiêu phần** rồi? Còn "nhiên liệu" không?
-- Void nằm trong **premium hay discount**? Có khớp [[12 - Daily Bias]] không?
+- Void nằm trong **premium hay discount**? Có khớp [[12-Daily-Bias]] không?
 - **Cụm thanh khoản nào** ở phía xa làm target của void?
-- Có **[[20 - Liquidity Sweep]]** nào tạo ra void này không?
+- Có **[[20-Liquidity-Sweep]]** nào tạo ra void này không?
 - Điểm vào của tôi đến từ **FVG/OB nào** bên trong/cạnh void?
 - Nếu giá tạo **void mới ngược chiều**, tôi sẽ làm gì?
 - TP của tôi có đặt ở **phía xa của void** không, hay chỉ là số tròn cảm tính?
@@ -413,7 +413,7 @@ Liquidity Void hiếm khi là điểm vào trực tiếp — nó định *hướ
 
 **Q4.** Partial fill nghĩa là gì và mốc nào hay được dùng?
 > Hỏi: Lấp một phần?
-> Đáp: Giá chỉ đi vào **một phần** void rồi quay đầu — thường tới **CE ([[10 - Consequent Encroachment (Mean Threshold)]])**, đường giữa void/FVG. Không nên đòi lấp 100%.
+> Đáp: Giá chỉ đi vào **một phần** void rồi quay đầu — thường tới **CE ([[10-Consequent-Encroachment-Mean-Threshold]])**, đường giữa void/FVG. Không nên đòi lấp 100%.
 
 **Q5.** Dấu hiệu nào cảnh báo void không còn đáng tin để vào?
 > Hỏi: Khi nào bỏ qua?
@@ -456,8 +456,8 @@ Liquidity Void hiếm khi là điểm vào trực tiếp — nó định *hướ
 
 **Kế hoạch review tiếp theo:**
 - [ ] Mark thủ công 10 void trên dữ liệu lịch sử, phân loại target/magnet.
-- [ ] Đối chiếu mỗi void với [[12 - Daily Bias]] và premium/discount tại thời điểm đó.
-- [ ] Backtest 10 setup "void làm target" trong [[18 - Kill Zones]] (ghi RR thực tế).
+- [ ] Đối chiếu mỗi void với [[12-Daily-Bias]] và premium/discount tại thời điểm đó.
+- [ ] Backtest 10 setup "void làm target" trong [[18-Kill-Zones]] (ghi RR thực tế).
 - [ ] Backtest 10 setup "rebalance void" và đo tỷ lệ partial fill tới CE.
 - [ ] Cập nhật `confidence` và `status` sau khi hoàn tất backtest.
 
@@ -468,17 +468,17 @@ Liquidity Void hiếm khi là điểm vào trực tiếp — nó định *hướ
 > [!success] Nguyên tắc vàng
 > **Liquidity Void chỉ đáng tin khi bạn phân biệt được nó với FVG/BPR, đo được biên thật của nó (kể cả khi trải dài nhiều nến), và luôn ghép nó với một draw on liquidity + bias đúng phía — nếu không, "void" chỉ là một cái tên đẹp gắn cho một đoạn chart bất kỳ.**
 
-1. **Luôn phân loại trước khi trade: đây là FVG (điểm), Liquidity Void (đoạn đường), hay BPR (vùng đã cân bằng)?** Nhầm ba khái niệm này là lỗi gốc phổ biến nhất — mỗi loại có cách fill và cách vô hiệu hóa khác nhau (xem bảng so sánh ở mục 3). Ghi `void_vs_fvg_overlap: yes/no` cho mỗi lần đánh dấu void để về sau kiểm tra bạn có đang lẫn lộn hai khái niệm không. Xem thêm [[13 - FVG  - Fair Value Gap]] và [[03 - Balanced Price Range]].
+1. **Luôn phân loại trước khi trade: đây là FVG (điểm), Liquidity Void (đoạn đường), hay BPR (vùng đã cân bằng)?** Nhầm ba khái niệm này là lỗi gốc phổ biến nhất — mỗi loại có cách fill và cách vô hiệu hóa khác nhau (xem bảng so sánh ở mục 3). Ghi `void_vs_fvg_overlap: yes/no` cho mỗi lần đánh dấu void để về sau kiểm tra bạn có đang lẫn lộn hai khái niệm không. Xem thêm [[13-FVG-Fair-Value-Gap]] và [[03-Balanced-Price-Range]].
 
 2. **Với void trải dài nhiều nến (macro void), lấy biên từ nến đầu và nến cuối của CẢ chuỗi, không chốt sớm ở nến thứ 3-4.** Nếu các nến sau vẫn tiếp tục không overlap với nến liền trước, void còn đang mở rộng. Ghi `void_span_candles` (số nến tạo void) vào journal — con số này giúp phân biệt một FVG-cỡ-lớn với một macro void thực sự.
 
 3. **Không đòi hỏi full fill; dùng CE của toàn dải làm mốc kỳ vọng mặc định.** Dữ liệu thực chiến (và cách ICT/practitioner mô tả khái niệm này) đều cho thấy giá thường chỉ cần tới **Consequent Encroachment (50%)** là đủ để tiếp tục di chuyển theo hướng cũ. Giữ lệnh chờ lấp 100% dễ khiến bạn bỏ lỡ điểm reject thật hoặc hoảng loạn khi thấy giá "chưa lấp đủ". Ghi `void_fill_percent` khi review để tự xây ngưỡng kỳ vọng theo từng thị trường (NQ1/EURUSD/XAUUSD có thể khác nhau — **cần backtest xác nhận**).
 
-4. **Chỉ coi void là draw đáng trade khi có cụm thanh khoản rõ ràng ở phía xa.** Một void không có buy-side/sell-side liquidity nào chờ sẵn ở đầu kia chỉ là một quan sát cấu trúc, không phải một target thực chiến. Luôn hỏi: "Giá đang bị hút VỀ ĐÂU, không chỉ 'đi qua đâu'?" Cross-link target với [[07 - Buy-side Liquidity]] / [[30 - Sell-side Liquidity]].
+4. **Chỉ coi void là draw đáng trade khi có cụm thanh khoản rõ ràng ở phía xa.** Một void không có buy-side/sell-side liquidity nào chờ sẵn ở đầu kia chỉ là một quan sát cấu trúc, không phải một target thực chiến. Luôn hỏi: "Giá đang bị hút VỀ ĐÂU, không chỉ 'đi qua đâu'?" Cross-link target với [[07-Buy-side-Liquidity]] / [[30 - Sell-side Liquidity]].
 
-5. **Bắt buộc đối chiếu void với [[12 - Daily Bias]] và [[27 - Premium Discount]] trước khi gán vai trò TARGET hay MAGNET.** Cùng một void, sai bias/sai phía PD sẽ biến một "draw hợp lệ" thành một cái bẫy đảo chiều. Không có void nào tự thân nó quyết định hướng — narrative HTF quyết định.
+5. **Bắt buộc đối chiếu void với [[12-Daily-Bias]] và [[27-Premium-Discount]] trước khi gán vai trò TARGET hay MAGNET.** Cùng một void, sai bias/sai phía PD sẽ biến một "draw hợp lệ" thành một cái bẫy đảo chiều. Không có void nào tự thân nó quyết định hướng — narrative HTF quyết định.
 
-6. **Cảnh giác với void mới hình thành ngược chiều bên trong một void cũ — đó thường là tín hiệu đổi bias, không phải nhiễu.** Nếu một pullback "rebalance" bất ngờ tạo ra một displacement mạnh ngược hướng với [[21 - Market Structure Shift]] đi kèm, dừng ngay giả định "đang lấp void cũ" và đánh giá lại toàn bộ setup.
+6. **Cảnh giác với void mới hình thành ngược chiều bên trong một void cũ — đó thường là tín hiệu đổi bias, không phải nhiễu.** Nếu một pullback "rebalance" bất ngờ tạo ra một displacement mạnh ngược hướng với [[21-Market-Structure-Shift]] đi kèm, dừng ngay giả định "đang lấp void cũ" và đánh giá lại toàn bộ setup.
 
 7. **Đặt SL ngoài cấu trúc tạo void, không đặt SL nằm giữa lòng void.** Vì bản chất void là vùng mỏng thanh khoản, một SL đặt giữa void rất dễ bị quét khi giá "trượt" qua nhanh. SL logic phải nằm ngoài điểm bắt đầu/kết thúc thật của dải displacement.
 
@@ -571,7 +571,7 @@ Chart NQ/XAUUSD sáng thứ Hai thường có một khoảng trống giữa đó
 
 **Vì sao bẫy được cả trader có kinh nghiệm:** trên chart continuous futures hoặc CFD nối liền cuối tuần, hình dạng trực quan của gap cuối tuần và một macro void thật (nhiều nến displacement) trông giống nhau khi zoom ra D1/H4 — cả hai đều là "một khoảng không có giao dịch hai chiều rõ ràng ngay trước mắt".
 
-**Cách nhận diện sớm:** kiểm tra số nến thực tạo ra "void" — nếu chỉ là MỘT khoảng cách giữa hai nến (không phải một chuỗi ≥4-5 nến displacement liên tục trong giờ giao dịch), đó là gap phiên, nên xử lý theo logic [[24 - New Week Opening Gap]], không theo logic Liquidity Void.
+**Cách nhận diện sớm:** kiểm tra số nến thực tạo ra "void" — nếu chỉ là MỘT khoảng cách giữa hai nến (không phải một chuỗi ≥4-5 nến displacement liên tục trong giờ giao dịch), đó là gap phiên, nên xử lý theo logic [[24-New-Week-Opening-Gap]], không theo logic Liquidity Void.
 
 **Cách xử lý:** loại các "void" có một cạnh trùng giờ đóng/mở phiên cuối tuần khỏi danh sách void giao dịch được; chỉ tính void khi chuỗi nến tạo ra nó nằm hoàn toàn trong giờ giao dịch liên tục.
 

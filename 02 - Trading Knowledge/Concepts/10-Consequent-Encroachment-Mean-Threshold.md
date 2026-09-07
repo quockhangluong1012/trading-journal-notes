@@ -43,7 +43,7 @@ common_mistakes:
 ## 1. Định nghĩa
 
 **Khái niệm:**
-Consequent Encroachment là **mức 50% chính xác** của một vùng PD array — thường là một [[Fair Value Gap]], nhưng cũng áp dụng cho gap, [[Order Block]], liquidity void hay [[03 - Balanced Price Range]]. Tên gọi khác là **Mean Threshold (ngưỡng trung bình)**: nó là "đường trung tâm" của array.
+Consequent Encroachment là **mức 50% chính xác** của một vùng PD array — thường là một [[Fair Value Gap]], nhưng cũng áp dụng cho gap, [[Order Block]], liquidity void hay [[03-Balanced-Price-Range]]. Tên gọi khác là **Mean Threshold (ngưỡng trung bình)**: nó là "đường trung tâm" của array.
 
 Cách tính cơ bản: lấy **high và low của vùng array**, CE = (high + low) / 2. Với một bullish FVG có high (= low nến 3) và low (= high nến 1), CE nằm đúng giữa hai mức đó.
 
@@ -63,7 +63,7 @@ ICT coi CE là **mức phản ứng quan trọng nhất** bên trong array vì:
 - **Confluence:** khi CE của một FVG trùng với CE/mép của một array khác (OB, equilibrium, [[Optimal Trade Entry]]) → điểm vào mạnh.
 
 **Vì sao khái niệm này quan trọng:**
-CE là "bí mật" giúp entry ICT sắc hơn. Nhiều trader vào ở mép gap (full gap entry) và chịu R:R kém; vào quanh CE thường cho cùng hướng nhưng stop nhỏ hơn → R:R lớn hơn. CE cũng là tiêu chí khách quan để phân biệt một array đang được tôn trọng với một array sắp hỏng — gắn chặt với cách đọc [[Fair Value Gap]] và [[17 - Inverse Fair Value Gap - iFVG]].
+CE là "bí mật" giúp entry ICT sắc hơn. Nhiều trader vào ở mép gap (full gap entry) và chịu R:R kém; vào quanh CE thường cho cùng hướng nhưng stop nhỏ hơn → R:R lớn hơn. CE cũng là tiêu chí khách quan để phân biệt một array đang được tôn trọng với một array sắp hỏng — gắn chặt với cách đọc [[Fair Value Gap]] và [[17-Inverse-Fair-Value-Gap-iFVG]].
 
 **Nó giúp trả lời câu hỏi nào trên chart?**
 - Mức nào bên trong array là điểm phản ứng / entry tối ưu?
@@ -94,7 +94,7 @@ CE là "bí mật" giúp entry ICT sắc hơn. Nhiều trader vào ở mép gap 
 
 ![[CE-Advanced-Array-Family.svg|697]]
 
-*CE (Mean Threshold) không chỉ dành cho FVG: [[Fair Value Gap]], [[Order Block]], liquidity void, [[03 - Balanced Price Range]] và [[24 - New Week Opening Gap]] đều có mức 50% = (high+low)/2 làm điểm phản ứng và refine entry.*
+*CE (Mean Threshold) không chỉ dành cho FVG: [[Fair Value Gap]], [[Order Block]], liquidity void, [[03-Balanced-Price-Range]] và [[24-New-Week-Opening-Gap]] đều có mức 50% = (high+low)/2 làm điểm phản ứng và refine entry.*
 
 > [!tip]
 > CE đặc biệt mạnh khi **trùng** với một mức tham chiếu khác: equilibrium của dealing range, mức 0.705 của [[Optimal Trade Entry]], mép một OB, hoặc CE của một FVG ở khung lớn hơn. CE-on-CE giữa hai khung (vd CE của H1 FVG trùng CE của M15 FVG) là confluence rất đáng giá.
@@ -108,8 +108,8 @@ CE là "bí mật" giúp entry ICT sắc hơn. Nhiều trader vào ở mép gap 
 Ba mức này đều là "mốc trung tâm" nhưng đo trên ba đối tượng khác nhau — hiểu rõ sự khác biệt mới xếp hạng được confluence thay vì gộp bừa:
 
 - **CE (Consequent Encroachment):** 50% của một **array cụ thể** (FVG/OB/void). Đo cục bộ trong array.
-- **Equilibrium:** 50% của **cả dealing range** (từ swing high tới swing low). Đo toàn cục — phân định premium/discount của [[27 - Premium Discount]].
-- **OTE (Optimal Trade Entry):** vùng retrace Fibonacci **0.62–0.79** (lý tưởng 0.705) của một **leg xung lực** cụ thể — xem [[26 - OTE - Optimal Trade Entry]].
+- **Equilibrium:** 50% của **cả dealing range** (từ swing high tới swing low). Đo toàn cục — phân định premium/discount của [[27-Premium-Discount]].
+- **OTE (Optimal Trade Entry):** vùng retrace Fibonacci **0.62–0.79** (lý tưởng 0.705) của một **leg xung lực** cụ thể — xem [[26-OTE-Optimal-Trade-Entry]].
 
 Điểm mấu chốt: chúng đo trên ba khung tham chiếu độc lập, nên khi **trùng nhau** đó là sự đồng thuận của ba hệ đo — không phải một mức được vẽ lại ba lần. Đó mới là confluence thật.
 
@@ -177,9 +177,9 @@ Ba mức này đều là "mốc trung tâm" nhưng đo trên ba đối tượng 
 > 4. **Entry quanh CE có cải thiện R:R và cho stop logic gọn không?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
+- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
 - **HTF array & CE:** có FVG/OB D1/H4 còn unmitigated mà CE của nó là draw/target không?
-- **Premium/discount:** CE dùng Long phải ở discount; CE dùng Short phải ở premium của [[27 - Premium Discount]] HTF.
+- **Premium/discount:** CE dùng Long phải ở discount; CE dùng Short phải ở premium của [[27-Premium-Discount]] HTF.
 
 ### H1 / M15 — POI & Context
 - **POI cụ thể:** ghi rõ array và mức CE, ví dụ `H1 bullish FVG 1.0820–1.0835, CE = 1.08275`.
@@ -234,14 +234,14 @@ Invalid: đóng nến M5/H1 vượt CE theo hướng lấp gap → cảnh báo /
 | Giá dừng trước CE (chưa tới 50%) rồi reject | **Shallow respect** | Array rất khỏe; có thể bỏ lỡ entry nếu chỉ đặt limit tại CE |
 | Giá xuyên CE nhẹ rồi đóng nến quay lại trên CE | **Wick qua CE** | Vẫn respect; cảnh giác, chờ đóng nến xác nhận |
 | Giá **đóng nến** vượt hẳn CE theo hướng lấp | **CE breach (cảnh báo)** | Array yếu đi; khả năng full fill / invalidation |
-| Sau breach, giá lấp hết array & đóng nến xuyên | **Invalidation** | Array hỏng; cảnh giác đảo cực thành [[17 - Inverse Fair Value Gap - iFVG]] |
+| Sau breach, giá lấp hết array & đóng nến xuyên | **Invalidation** | Array hỏng; cảnh giác đảo cực thành [[17-Inverse-Fair-Value-Gap-iFVG]] |
 
 > [!note]
 > Phân biệt **wick qua CE** và **close qua CE**. Một bóng nến chạm sâu hơn CE rồi đóng quay lại vẫn là respect (thậm chí là cú "stop hunt" quanh CE). Chỉ **đóng nến** giữ giá bên kia CE mới là cảnh báo thật.
 
 ![[CE-Advanced-Respect-vs-Breach.svg|697]]
 
-*Trái — Respect CE: bóng nến (wick) xuyên CE rồi đóng body quay lại trên CE → array vẫn khỏe, đừng thoát non. Phải — Breach CE: nến ĐÓNG body vượt hẳn CE theo hướng lấp → cảnh báo → lấp hết array → đóng xuyên đáy = invalidation, vùng đảo cực thành [[17 - Inverse Fair Value Gap - iFVG]]. Ranh giới cứng là close, không phải wick.*
+*Trái — Respect CE: bóng nến (wick) xuyên CE rồi đóng body quay lại trên CE → array vẫn khỏe, đừng thoát non. Phải — Breach CE: nến ĐÓNG body vượt hẳn CE theo hướng lấp → cảnh báo → lấp hết array → đóng xuyên đáy = invalidation, vùng đảo cực thành [[17-Inverse-Fair-Value-Gap-iFVG]]. Ranh giới cứng là close, không phải wick.*
 
 ### Nâng cao — CE breach → chuỗi invalidation → cơ hội Inverse FVG
 
@@ -249,7 +249,7 @@ Một CE breach hiếm khi là sự kiện đơn lẻ; nó thường mở màn m
 
 1. **Cảnh báo (CE breach):** nến đầu tiên **đóng body** vượt CE theo hướng lấp array và giữ giá bên kia. Đây chưa phải invalidation, nhưng "hợp đồng ngầm" của array đã bị phá — nửa array còn lại (từ CE tới mép xa) chỉ còn là vùng thanh khoản chờ bị quét, không còn là hỗ trợ/kháng cự đáng tin.
 2. **Full fill:** giá tiếp tục lấp hết phần array còn lại. Long dựa trên FVG này giờ hoàn toàn không còn cơ sở — mọi lệnh "trung bình giá xuống vì CE là hỗ trợ" đang giao dịch ngược delivery.
-3. **Invalidation:** giá **đóng nến xuyên hẳn mép xa** của array. Array bullish chính thức hỏng; cực của nó đảo lại — vùng gap cũ trở thành [[17 - Inverse Fair Value Gap - iFVG]] đóng vai **kháng cự** thay vì hỗ trợ.
+3. **Invalidation:** giá **đóng nến xuyên hẳn mép xa** của array. Array bullish chính thức hỏng; cực của nó đảo lại — vùng gap cũ trở thành [[17-Inverse-Fair-Value-Gap-iFVG]] đóng vai **kháng cự** thay vì hỗ trợ.
 4. **Cơ hội ngược (iFVG entry):** nếu bias HTF cũng đã nghiêng về hướng mới (kèm MSS bearish), giá retrace lên test lại vùng iFVG là một short-setup hợp lệ. Điều thú vị: **iFVG cũng có CE của chính nó** — CE của iFVG (= (iFVG high + low)/2) là mức refine entry cho lệnh short đó.
 
 | Nấc | Tín hiệu quan sát | Hành động với lệnh cũ | Cơ hội mới |
@@ -331,7 +331,7 @@ Bullish FVG hợp lệ nhưng giá ĐÓNG NẾN vượt CE xuống (CE breach)
 ```
 
 > [!note]
-> CE là cây cầu nối giữa [[Fair Value Gap]] và [[26 - OTE - Optimal Trade Entry|Optimal Trade Entry]]: cả hai đều tìm cách vào sâu hơn để có R:R tốt. Trong nhiều setup, CE của FVG rơi gần vùng OTE 0.62–0.79 — khi chúng trùng nhau, đó là confluence rất mạnh.
+> CE là cây cầu nối giữa [[Fair Value Gap]] và [[26-OTE-Optimal-Trade-Entry|Optimal Trade Entry]]: cả hai đều tìm cách vào sâu hơn để có R:R tốt. Trong nhiều setup, CE của FVG rơi gần vùng OTE 0.62–0.79 — khi chúng trùng nhau, đó là confluence rất mạnh.
 
 ---
 
@@ -414,7 +414,7 @@ Bullish FVG hợp lệ nhưng giá ĐÓNG NẾN vượt CE xuống (CE breach)
 
 ### Q6
 **Hỏi:** CE liên quan gì tới OTE?
-**Đáp:** CE thường rơi gần vùng [[26 - OTE - Optimal Trade Entry|Optimal Trade Entry]] (0.62–0.79). Khi CE của FVG trùng vùng OTE / equilibrium / OB, đó là confluence rất mạnh.
+**Đáp:** CE thường rơi gần vùng [[26-OTE-Optimal-Trade-Entry|Optimal Trade Entry]] (0.62–0.79). Khi CE của FVG trùng vùng OTE / equilibrium / OB, đó là confluence rất mạnh.
 
 ---
 
@@ -447,11 +447,11 @@ Bullish FVG hợp lệ nhưng giá ĐÓNG NẾN vượt CE xuống (CE breach)
 
 2. **Tính CE chính xác = (high + low)/2, đừng nhầm với mép array.** Một sai số nhỏ giữa CE và mép làm hỏng cả entry lẫn stop logic. Với FVG dùng đúng high (mép trên) và low (mép dưới) của gap; nhiều nền tảng có công cụ FVG hiển thị sẵn CE. Nhất quán một quy ước đo và backtest theo nó.
 
-3. **Ưu tiên CE trùng confluence: OTE, equilibrium, mép/CE của array khác.** Điểm vào mạnh nhất là nơi CE của FVG chồng lên vùng [[26 - OTE - Optimal Trade Entry|OTE]] 0.62–0.79, equilibrium của dealing range, hoặc CE của một FVG khung lớn hơn (CE-on-CE). Xếp hạng setup theo số lớp confluence và dành size lớn hơn cho các vùng A+ nhiều lớp.
+3. **Ưu tiên CE trùng confluence: OTE, equilibrium, mép/CE của array khác.** Điểm vào mạnh nhất là nơi CE của FVG chồng lên vùng [[26-OTE-Optimal-Trade-Entry|OTE]] 0.62–0.79, equilibrium của dealing range, hoặc CE của một FVG khung lớn hơn (CE-on-CE). Xếp hạng setup theo số lớp confluence và dành size lớn hơn cho các vùng A+ nhiều lớp.
 
 4. **Phân biệt WICK qua CE (vẫn respect) với CLOSE qua CE (cảnh báo).** Một bóng nến chọc sâu hơn CE rồi đóng quay lại thường là stop-hunt quanh 50% — vẫn respect. Chỉ một nến ĐÓNG BODY giữ giá bên kia CE mới là breach. Đừng thoát non vì bóng nến; đừng ôm lệnh khi đã có close breach.
 
-5. **Đọc CE breach như đầu của một chuỗi invalidation → cơ hội [[17 - Inverse Fair Value Gap - iFVG|IFVG]].** Khi giá đóng nến vượt CE theo hướng lấp, array đang yếu; nếu tiếp tục lấp hết và đóng xuyên mép, array đảo cực thành IFVG đồng hướng bias mới. Thay vì "mua thêm vì CE là hỗ trợ", hãy chuyển tư duy sang trade IFVG theo hướng ngược.
+5. **Đọc CE breach như đầu của một chuỗi invalidation → cơ hội [[17-Inverse-Fair-Value-Gap-iFVG|IFVG]].** Khi giá đóng nến vượt CE theo hướng lấp, array đang yếu; nếu tiếp tục lấp hết và đóng xuyên mép, array đảo cực thành IFVG đồng hướng bias mới. Thay vì "mua thêm vì CE là hỗ trợ", hãy chuyển tư duy sang trade IFVG theo hướng ngược.
 
 6. **Đặt stop ngoài mép xa array, tuyệt đối không sát CE.** Vùng quanh 50% là nơi nhiễu và stop-hunt tập trung. Entry quanh CE nhưng stop phải nằm ngoài mép xa array (hoặc ngoài điểm sweep) để chịu được dao động bình thường trong array. Đây chính là lý do vào tại CE cho R:R tốt hơn vào mép mà vẫn an toàn.
 
@@ -619,7 +619,7 @@ Vì sao 50% của khoảng trống này lại đặc biệt hơn các mức khá
 
 ### 18.3. Rollover cuối tuần: gap cuối tuần lớn hơn hẳn CE trung bình có nên tính riêng?
 
-**Tình huống:** [[24 - New Week Opening Gap]] (NWOG) trên EURUSD từ thứ Sáu đóng cửa tới thứ Hai mở cửa đôi khi rộng 40-60 pip trong giai đoạn thị trường biến động, so với FVG H1 thông thường trong tuần chỉ rộng 8-15 pip.
+**Tình huống:** [[24-New-Week-Opening-Gap]] (NWOG) trên EURUSD từ thứ Sáu đóng cửa tới thứ Hai mở cửa đôi khi rộng 40-60 pip trong giai đoạn thị trường biến động, so với FVG H1 thông thường trong tuần chỉ rộng 8-15 pip.
 
 **Vì sao bẫy được cả trader có kinh nghiệm:** áp cùng một logic "CE là mức tinh chỉnh entry tốt hơn mép" cho NWOG như cho FVG H1 thông thường bỏ qua sự khác biệt về bản chất: NWOG hình thành do thiếu thanh khoản cuối tuần (thị trường đóng cửa), không phải do một dòng lệnh institutional liên tục như FVG giữa tuần — logic "trung bình giá của vị thế lớn" ở mục cơ chế áp dụng yếu hơn nhiều cho NWOG.
 
@@ -693,7 +693,7 @@ Vì sao 50% của khoảng trống này lại đặc biệt hơn các mức khá
 
 **Bối cảnh HTF:** BTCUSD, thứ Sáu 17/07, bias H4 chuyển từ bullish sang bearish sau một chuỗi lower-highs mới hình thành.
 
-**Setup ban đầu (đã hỏng):** một bullish FVG H1 65,200–66,100 (CE = 65,650) từng hợp lệ, nhưng 08:00 UTC giá đóng nến H1 tại 65,580 (dưới CE, breach thật) rồi tiếp tục đóng nến tại 64,950 (dưới hẳn mép xa 65,200) — invalidation xác nhận theo đúng chuỗi 4 nấc đã mô tả trong note gốc (mục "CE breach → chuỗi invalidation"). Vùng FVG cũ đảo cực thành [[17 - Inverse Fair Value Gap - iFVG]] đóng vai kháng cự.
+**Setup ban đầu (đã hỏng):** một bullish FVG H1 65,200–66,100 (CE = 65,650) từng hợp lệ, nhưng 08:00 UTC giá đóng nến H1 tại 65,580 (dưới CE, breach thật) rồi tiếp tục đóng nến tại 64,950 (dưới hẳn mép xa 65,200) — invalidation xác nhận theo đúng chuỗi 4 nấc đã mô tả trong note gốc (mục "CE breach → chuỗi invalidation"). Vùng FVG cũ đảo cực thành [[17-Inverse-Fair-Value-Gap-iFVG]] đóng vai kháng cự.
 
 **Diễn biến & execution:** 14:30 UTC, giá retrace lên test lại vùng iFVG cũ, chạm 65,340. CE của chính iFVG này (= (66,100+65,200)/2 = 65,650, cùng công thức nhưng giờ đóng vai kháng cự) không bị chạm — giá chỉ tới mép dưới của iFVG rồi phản ứng bearish ngay, một dạng "shallow respect" áp dụng cho iFVG. M15 xác nhận MSS bearish tại 65,100. Short entry 65,300, SL 65,720 (trên CE của iFVG, đệm biến động crypto), TP tại sell-side liquidity 4h 62,800.
 

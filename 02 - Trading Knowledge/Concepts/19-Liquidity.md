@@ -51,7 +51,7 @@ Liquidity trong ICT là **các cụm lệnh chờ tồn tại sẵn trên thị 
 **Mục đích trong ICT:**
 - Xác định **draw on liquidity** — nơi giá có xác suất cao hướng tới làm mục tiêu (target / điểm phân phối).
 - Giải thích vì sao giá "đột nhiên" đảo chiều ngay sau khi phá một đỉnh/đáy rõ ràng (đó là sweep, không phải breakout thật).
-- Đặt nền cho [[12 - Daily Bias]]: bias chính là việc chọn phía liquidity (buy-side hay sell-side) sẽ là draw chính trong ngày.
+- Đặt nền cho [[12-Daily-Bias]]: bias chính là việc chọn phía liquidity (buy-side hay sell-side) sẽ là draw chính trong ngày.
 - Định vị target hợp lý cho lệnh: TP đặt quanh liquidity còn mở, không phải số pip tùy ý.
 - Phân biệt nơi smart money **gom lệnh** (liquidity pool) với nơi smart money **đẩy giá nhanh** (imbalance / liquidity void).
 
@@ -83,7 +83,7 @@ Liquidity là **khái niệm nền tảng nhất** của toàn bộ phương ph�
 
 | Phía | Tên | Vị trí | Loại lệnh nằm ở đó | Khi nào trở thành draw |
 |---|---|---|---|---|
-| **Phía trên** | [[07 - Buy-side Liquidity]] (BSL) | Trên old highs, equal/relative equal highs, swing highs, đường trendline | Buy stops của người bán khống (stop loss) + buy stop của breakout traders | Khi [[12 - Daily Bias]] bullish, hoặc khi market cần lấy BSL trước khi đảo xuống |
+| **Phía trên** | [[07-Buy-side-Liquidity]] (BSL) | Trên old highs, equal/relative equal highs, swing highs, đường trendline | Buy stops của người bán khống (stop loss) + buy stop của breakout traders | Khi [[12-Daily-Bias]] bullish, hoặc khi market cần lấy BSL trước khi đảo xuống |
 | **Phía dưới** | [[30 - Sell-side Liquidity]] (SSL) | Dưới old lows, equal lows, swing lows | Sell stops của người mua (stop loss) + sell stop breakout | Khi bias bearish, hoặc khi market cần lấy SSL trước khi đảo lên |
 
 > [!tip]
@@ -118,7 +118,7 @@ Equal highs / equal lows hiếm khi xuất hiện "tình cờ". Khi giá tạo r
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Có pool liquidity rõ ràng và chưa bị lấy (PDH/PDL, PWH/PWL, equal highs/lows, session high/low).
 - [ ] Xác định được draw on liquidity **chính**, phân biệt với pool thứ yếu.
-- [ ] Pool liquidity phù hợp với hướng [[12 - Daily Bias]] và vị trí [[27 - Premium Discount]].
+- [ ] Pool liquidity phù hợp với hướng [[12-Daily-Bias]] và vị trí [[27-Premium-Discount]].
 - [ ] Có engineered liquidity (equal highs/lows) hình thành đúng phía draw.
 - [ ] Giá đang tiến tới một external liquidity rõ ràng còn nhiều room cho R:R.
 
@@ -157,11 +157,11 @@ Equal highs / equal lows hiếm khi xuất hiện "tình cờ". Khi giá tạo r
 - [ ] Xác định được pool nằm ở **phía nào** (trên = BSL, dưới = SSL).
 - [ ] Pool tương ứng với một loại cụ thể (PDH/PDL, equal highs/lows, swing, session...).
 - [ ] Pool **chưa bị lấy** (còn liquidity để hút giá tới).
-- [ ] Xác định được vị trí pool trong [[12 - Dealing Range]]: external hay internal.
+- [ ] Xác định được vị trí pool trong [[12-Dealing-Range]]: external hay internal.
 
 ### Điều kiện tăng xác suất
 - [ ] Pool là **engineered liquidity** (equal highs/lows) — rất dễ trở thành target.
-- [ ] Pool nằm cùng phía với [[12 - Daily Bias]] và đúng [[27 - Premium Discount]] (BSL ở premium, SSL ở discount).
+- [ ] Pool nằm cùng phía với [[12-Daily-Bias]] và đúng [[27-Premium-Discount]] (BSL ở premium, SSL ở discount).
 - [ ] Pool là HTF reference (PDH/PDL, PWH/PWL) — draw mạnh hơn pool LTF.
 - [ ] Có nhiều loại liquidity chồng lên nhau tại một vùng (vd equal highs + PDH + trendline).
 - [ ] Đường tới pool còn nhiều "room" và không bị pool gần hơn chặn lại.
@@ -222,7 +222,7 @@ Cảnh báo: nếu SSL đã bị lấy hôm trước → draw có thể đã c�
 
 ### M5 / M1 — Confirmation & Entry
 - **Sweep đã hoàn tất chưa:** giá đã quét liquidity đối diện entry và **reclaim** lại chưa? Đây là điều kiện tiên quyết.
-- **[[20 - Liquidity Sweep]] + [[21 - Market Structure Shift]]:** sau sweep, có MSS xác nhận đảo chiều không?
+- **[[20-Liquidity-Sweep]] + [[21-Market-Structure-Shift]]:** sau sweep, có MSS xác nhận đảo chiều không?
 - **Có displacement không:** chuyển động sau sweep có để lại FVG/imbalance không?
 - **Entry tại internal liquidity của LTF:** vào lệnh ở FVG/OB hình thành từ displacement, stop nằm sau điểm sweep.
 - **Target là external liquidity:** TP hướng về pool liquidity đã xác định từ HTF (BSL/SSL chính).
@@ -241,9 +241,9 @@ Cảnh báo: nếu SSL đã bị lấy hôm trước → draw có thể đã c�
 - [ ] Draw on liquidity chính được xác định rõ và còn mở.
 - [ ] Pool liquidity đối diện entry đã bị **sweep** (đã lấy nhiên liệu) trước khi tìm reversal.
 - [ ] Sau sweep, giá **reclaim** lại vùng và để lại displacement / FVG.
-- [ ] Có [[21 - Market Structure Shift]] xác nhận giá quay đầu khỏi pool vừa quét.
+- [ ] Có [[21-Market-Structure-Shift]] xác nhận giá quay đầu khỏi pool vừa quét.
 - [ ] Target là external liquidity còn mở, đủ room cho R:R.
-- [ ] Pool sweep và draw target cùng phục vụ một narrative [[12 - Daily Bias]].
+- [ ] Pool sweep và draw target cùng phục vụ một narrative [[12-Daily-Bias]].
 
 ### Setup bị vô hiệu khi
 - [ ] Giá **đóng nến mạnh qua pool và giữ giá ngoài** (acceptance) → đây là break-and-go, không phải sweep.
@@ -271,7 +271,7 @@ Cảnh báo: nếu SSL đã bị lấy hôm trước → draw có thể đã c�
 ![[Liquidity-Example-Correct.png]]
 
 **Mô tả:**  
-D1/H4 cho draw chính là BSL phía trên (PWH còn mở). Giá retrace vào discount và tạo equal lows nhỏ trên M15 (engineered SSL). Trong London Kill Zone, giá quét SSL dưới equal lows đó — lấy sell stops của đám đông — rồi lập tức reclaim range với một displacement bullish để lại FVG. M5 xác nhận bằng [[21 - Market Structure Shift]]. Entry tại FVG retracement; TP hướng về BSL (PWH) đã xác định từ đầu.
+D1/H4 cho draw chính là BSL phía trên (PWH còn mở). Giá retrace vào discount và tạo equal lows nhỏ trên M15 (engineered SSL). Trong London Kill Zone, giá quét SSL dưới equal lows đó — lấy sell stops của đám đông — rồi lập tức reclaim range với một displacement bullish để lại FVG. M5 xác nhận bằng [[21-Market-Structure-Shift]]. Entry tại FVG retracement; TP hướng về BSL (PWH) đã xác định từ đầu.
 
 **Vì sao đây là ví dụ tốt:**
 - Draw chính (BSL phía trên) được xác định **trước**, không phải sau khi vào lệnh.
@@ -362,7 +362,7 @@ ICT phân biệt hai "địa hình" mà giá chạy qua:
 
 ### 7.4. Inducement & liquidity phân tầng trước POI
 
-Smart money không chỉ quét pool tự nhiên — nó **xây pool** ngay trước POI thật ([[15 - Inducement]]): một swing nhỏ hình thành phía trước OB/FVG HTF, dụ trader entry sớm và đặt stop ngay dưới swing đó. Kịch bản chuẩn: giá quét inducement (đám đông tưởng "đã sweep, vào thôi") → chạy tiếp VÀO POI thật sâu hơn → đảo thật từ đó.
+Smart money không chỉ quét pool tự nhiên — nó **xây pool** ngay trước POI thật ([[15-Inducement]]): một swing nhỏ hình thành phía trước OB/FVG HTF, dụ trader entry sớm và đặt stop ngay dưới swing đó. Kịch bản chuẩn: giá quét inducement (đám đông tưởng "đã sweep, vào thôi") → chạy tiếp VÀO POI thật sâu hơn → đảo thật từ đó.
 
 Kỹ thuật đọc: trước mỗi POI HTF, tìm **swing/equal nhỏ gần nhất phía trước nó**. Nếu có → giả định đó là inducement; entry chỉ hợp lệ khi CẢ inducement lẫn mép POI đã được chạm. Đây là lời giải cho câu hỏi kinh điển "vì sao giá quét xong vẫn chạy thêm 20 pip nữa rồi mới đảo" — vì cú quét đầu chỉ là tầng inducement, chưa phải pool chính.
 
@@ -405,13 +405,13 @@ Nguyên tắc: **thời gian giá ở lại vùng pool tỉ lệ nghịch với 
 - [ ] Pool draw chính còn mở (chưa bị lấy).
 - [ ] Tôi phân biệt được external liquidity (target lớn) và internal liquidity (điểm retrace).
 - [ ] Tôi đã ghi nhận engineered liquidity (equal highs/lows) đang được dọn sẵn.
-- [ ] Draw chính phù hợp với [[12 - Daily Bias]] và [[27 - Premium Discount]].
+- [ ] Draw chính phù hợp với [[12-Daily-Bias]] và [[27-Premium-Discount]].
 - [ ] Tôi biết pool nào cần bị **sweep trước** để leg đảo chiều có nhiên liệu.
 
 ### B. Execution (LTF / khi giá tới POI)
 - [ ] Liquidity đối diện entry đã thực sự bị **sweep** (không phải break-and-go).
 - [ ] Sau sweep, giá đã **reclaim** và để lại displacement.
-- [ ] Có [[21 - Market Structure Shift]] xác nhận đảo chiều.
+- [ ] Có [[21-Market-Structure-Shift]] xác nhận đảo chiều.
 - [ ] Entry tại internal liquidity (FVG/OB), không phải đu theo sweep.
 - [ ] Stop loss nằm **sau** điểm sweep (nơi market đã quét xong).
 - [ ] Target là external liquidity còn mở, đường đi đủ room cho R:R.

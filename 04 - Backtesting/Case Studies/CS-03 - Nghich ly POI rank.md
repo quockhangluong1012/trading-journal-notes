@@ -20,8 +20,8 @@ Thang POI rank trong vault (theo `SKILL.md` § 8.1) xếp hạng độ "cao cấ
 |---|---|---|---|---|
 | FVG (kể cả BPR gộp — xem O11) | 1 (cơ bản nhất) | 8 | 1 | Nhóm thắng nhiều nhất |
 | Order Block | 2 | 6 | 2 | |
-| Breaker Block | 3 | 0 | 1 | [[../2026-07-15/01 - Loss - XAUUSD - 2014-05-19 - Short\|XAUUSD 19/5/2014]] — 100% Loss |
-| Rejection Block | 3b (không có trên scale 8.1 chuẩn) | 0 | 1 | [[../2026-07-14/02 - Loss- XAUUSD- 2014-05-14- Short\|XAUUSD 14/5 sáng]] — 100% Loss |
+| Breaker Block | 3 | 0 | 1 | [[01 - Loss - XAUUSD - 2014-05-19 - Short|XAUUSD 19/5/2014]] — 100% Loss |
+| Rejection Block | 3b (không có trên scale 8.1 chuẩn) | 0 | 1 | [[02 - Loss- XAUUSD- 2014-05-14- Short|XAUUSD 14/5 sáng]] — 100% Loss |
 | Unicorn / IFVG | 4 (cao cấp nhất) | 2 | 0 | |
 
 ## Hai cách đọc — cả hai đều chưa được chứng minh ở n hiện có

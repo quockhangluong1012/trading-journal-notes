@@ -57,10 +57,10 @@ BOS là cách ICT đọc "thị trường có còn đi theo hướng tôi nghĩ 
 
 ### Break of Structure không phải là gì
 - Không phải mọi lần wick xuyên qua swing — wick xuyên rồi đóng lại trong range thường là **liquidity sweep**, không phải BOS.
-- Không phải tín hiệu **đảo chiều** — đó là vai trò của [[21 - Market Structure Shift]] (MSS), phá ngược trend.
+- Không phải tín hiệu **đảo chiều** — đó là vai trò của [[21-Market-Structure-Shift]] (MSS), phá ngược trend.
 - Không phải entry trigger độc lập — BOS xác nhận context tiếp diễn, entry vẫn cần POI + displacement + sequence hợp lệ.
 - Không phải lý do đuổi giá (chase) sau khi cấu trúc đã phá xa.
-- Không phải bằng chứng đủ một mình; cần đặt trong [[12 - Daily Bias]] và vị trí [[27 - Premium Discount]].
+- Không phải bằng chứng đủ một mình; cần đặt trong [[12-Daily-Bias]] và vị trí [[27-Premium-Discount]].
 
 ---
 
@@ -82,7 +82,7 @@ BOS là cách ICT đọc "thị trường có còn đi theo hướng tôi nghĩ 
 
 Giá trị lớn nhất của một external BOS không nằm ở tín hiệu vào lệnh, mà ở việc nó **bắt buộc bạn vẽ lại toàn bộ khung tham chiếu**:
 
-1. **Dealing range mới:** đo từ **protected low mới** (ITL cuối cùng trước cú phá — *không phải* đáy cũ của range) tới đỉnh mới mà leg sau BOS đang in. Xem thêm [[37 - Re-mapping Dealing Range sau Displacement]].
+1. **Dealing range mới:** đo từ **protected low mới** (ITL cuối cùng trước cú phá — *không phải* đáy cũ của range) tới đỉnh mới mà leg sau BOS đang in. Xem thêm [[37-Re-mapping-Dealing-Range-sau-Displacement]].
 2. **Premium/Discount dịch chuyển:** vùng từng là premium của range cũ có thể trở thành **discount của range mới**. Đây là lý do nhiều trader "chờ giá rẻ" mãi không thấy — họ đang đo độ rẻ trên bản đồ đã hết hạn.
 3. **Protected swing dời theo:** mỗi BOS dời protected low/high lên/xuống một nấc. Stop loss của vị thế đang chạy cũng nên được đánh giá lại theo protected swing mới (trail theo cấu trúc, không trail theo cảm giác).
 4. **Liquidity map mới:** swing vừa bị phá giờ là mốc liquidity hai phía — phía trên nó là stop của phe short mới; quay lại retest vùng phá (breaker logic) là hành vi phổ biến trước khi leg tiếp tục.
@@ -91,14 +91,14 @@ Giá trị lớn nhất của một external BOS không nằm ở tín hiệu v�
 
 ### Khi nào khái niệm này có giá trị cao?
 - [ ] Đang có một xu hướng rõ ràng (chuỗi HH/HL cho uptrend, LH/LL cho downtrend) để "tiếp diễn" có nghĩa.
-- [ ] Có [[12 - Daily Bias]] đã viết ra; BOS dùng để xác nhận bias còn hiệu lực.
+- [ ] Có [[12-Daily-Bias]] đã viết ra; BOS dùng để xác nhận bias còn hiệu lực.
 - [ ] BOS được tạo bằng **đóng nến + displacement**, không phải chỉ wick.
 - [ ] BOS đồng thời **lấy liquidity** tại swing bị phá (sweep BSL/SSL) rồi tiếp tục đi (không quay đầu).
 - [ ] BOS xảy ra **sau khi** giá phản ứng tại POI hợp lệ ở đúng vùng premium/discount.
 - [ ] Swing bị phá là một **protected high/low** có ý nghĩa, không phải micro swing ngẫu nhiên.
 
 ### Khi nào nên bỏ qua?
-- [ ] Giá chỉ wick qua swing rồi đóng lại trong range → khả năng là [[20 - Liquidity Sweep]], không phải BOS.
+- [ ] Giá chỉ wick qua swing rồi đóng lại trong range → khả năng là [[20-Liquidity-Sweep]], không phải BOS.
 - [ ] "BOS" xảy ra giữa range, không gắn với POI hay draw on liquidity nào.
 - [ ] Cấu trúc đang choppy, không có trend rõ → "tiếp diễn" không có ý nghĩa.
 - [ ] BOS đã phá rất xa, daily range gần như cạn → vào lệnh giờ là chase ở premium/discount xấu.
@@ -138,7 +138,7 @@ Giá trị lớn nhất của một external BOS không nằm ở tín hiệu v�
 - [ ] Cú phá có **displacement mạnh** và để lại [[Fair Value Gap]] / imbalance rõ ràng.
 - [ ] BOS đồng thời **sweep liquidity** (BSL/SSL) tại swing bị phá rồi tiếp tục đi.
 - [ ] BOS xảy ra ở external structure (phá swing chính) → vẽ lại dealing range lớn.
-- [ ] BOS cùng hướng với [[12 - Daily Bias]] và đúng vùng [[27 - Premium Discount]].
+- [ ] BOS cùng hướng với [[12-Daily-Bias]] và đúng vùng [[27-Premium-Discount]].
 - [ ] Có chuỗi BOS liên tiếp cùng hướng (order flow khỏe).
 
 ### Điều kiện làm setup yếu đi
@@ -210,7 +210,7 @@ Invalidation: H4 đóng body TRÊN protected high [level] = MSS bullish, hủy b
 - [ ] Có **đóng body + displacement** qua swing, không chỉ wick.
 - [ ] Swing bị phá là protected high/low / swing có ý nghĩa, không phải micro swing.
 - [ ] BOS lấy liquidity tại swing rồi **tiếp tục đi**, không quay đầu reclaim.
-- [ ] BOS đồng bộ với [[12 - Daily Bias]] và vị trí premium/discount hợp lý.
+- [ ] BOS đồng bộ với [[12-Daily-Bias]] và vị trí premium/discount hợp lý.
 - [ ] Entry tham gia tại POI sau BOS, không phải chase sau khi đã phá xa.
 
 ### Setup bị vô hiệu khi
@@ -286,7 +286,7 @@ Trong uptrend, giá đẩy lên và **wick xuyên qua** swing high gần nhất,
 ### A. Context (HTF)
 - [ ] Tôi xác định được xu hướng nền rõ ràng (HH/HL hoặc LH/LL).
 - [ ] Cú phá đi **thuận** hướng trend (xác nhận đây là BOS, không phải MSS).
-- [ ] Tôi đã viết [[12 - Daily Bias]] và BOS này đồng bộ với bias đó.
+- [ ] Tôi đã viết [[12-Daily-Bias]] và BOS này đồng bộ với bias đó.
 - [ ] Tôi đánh dấu external structure và protected high/low hiện tại.
 - [ ] Tôi xác định draw on liquidity của leg sau BOS.
 
@@ -334,7 +334,7 @@ Trong uptrend, giá đẩy lên và **wick xuyên qua** swing high gần nhất,
 - Swing bị phá là protected high/low có ý nghĩa, hay chỉ là micro swing?
 - BOS này lấy liquidity rồi **tiếp tục đi**, hay **sweep rồi quay đầu**?
 - Đây là internal BOS (timing) hay external BOS (vẽ lại dealing range)?
-- BOS này có đồng bộ với [[12 - Daily Bias]] và vị trí premium/discount không?
+- BOS này có đồng bộ với [[12-Daily-Bias]] và vị trí premium/discount không?
 - Tôi đang vào lệnh tại POI sau cú phá, hay đang chase sau khi giá đã đi xa?
 - Nếu giá reclaim ngược lại range, tôi có thừa nhận đó là sweep và thoát không?
 - Setup nào trong trade journal đã áp dụng đúng/sai phân biệt BOS vs sweep vs MSS?
@@ -488,7 +488,7 @@ Trên FX retail, spread giãn 3-8 lần bình thường trong 30-90 giây đầu
 
 ### 15.8. Edge case #7 — BOS internal chồng chéo giữa nhiều timeframe cùng lúc (fractal conflict)
 
-Khi bạn mở đồng thời M5 và M15 trong lúc giá đang dao động mạnh, rất dễ gặp tình huống: M15 vừa in một internal BOS bullish (phá STH M15), nhưng đúng lúc đó M5 lại đang tạo một bearish BOS của riêng nó (phá một swing low M5 hình thành ngay trong nhịp tăng M15). Hai tín hiệu "hợp lệ" cùng lúc, hai hướng ngược nhau — vì chúng đang đo hai degree khác nhau (xem [[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]]).
+Khi bạn mở đồng thời M5 và M15 trong lúc giá đang dao động mạnh, rất dễ gặp tình huống: M15 vừa in một internal BOS bullish (phá STH M15), nhưng đúng lúc đó M5 lại đang tạo một bearish BOS của riêng nó (phá một swing low M5 hình thành ngay trong nhịp tăng M15). Hai tín hiệu "hợp lệ" cùng lúc, hai hướng ngược nhau — vì chúng đang đo hai degree khác nhau (xem [[01-Advance-Market-Structure-Short-Term-Low-Intermediate-Term-Low-Long-Term-Low]]).
 
 **Vì sao bẫy được cả trader kinh nghiệm:** cả hai BOS đều thật theo đúng định nghĩa (body close + displacement) trên khung của chúng — không có "BOS giả" ở đây, chỉ có sự nhầm lẫn khi so sánh hai degree khác nhau như thể chúng ngang hàng.
 
@@ -520,7 +520,7 @@ Khi bạn mở đồng thời M5 và M15 trong lúc giá đang dao động mạn
 
 **Diễn biến & execution:** 14:55 GMT giá retrace vào FVG, chạm 1.2911. Entry Long 1.2913, stop 1.2898 (15 pip), target ban đầu đặt tại 1.2980 (67 pip, R:R ≈ 4.5:1) dựa trên "đường như còn nhiều đất chạy".
 
-**Vì sao đây là bẫy đắt giá:** đỉnh tháng trước tại 1.2955 chính là draw on liquidity CUỐI CÙNG của cả leg tăng — ADR trung bình của GBPUSD giai đoạn đó chỉ khoảng 75-85 pip/ngày, và giá đã đi 288 pip trong 4 ngày (gần 3.5x ADR một ngày dồn lại), tức phần lớn "nhiên liệu" xu hướng đã bị tiêu thụ. BOS này về kỹ thuật hoàn toàn hợp lệ nhưng xảy ra đúng vào điểm exhaustion — không khác gì [[05 - BOS - Break of Structure]] mục 15.1 mô tả, nhưng ở đây là GBPUSD chứ không phải NQ.
+**Vì sao đây là bẫy đắt giá:** đỉnh tháng trước tại 1.2955 chính là draw on liquidity CUỐI CÙNG của cả leg tăng — ADR trung bình của GBPUSD giai đoạn đó chỉ khoảng 75-85 pip/ngày, và giá đã đi 288 pip trong 4 ngày (gần 3.5x ADR một ngày dồn lại), tức phần lớn "nhiên liệu" xu hướng đã bị tiêu thụ. BOS này về kỹ thuật hoàn toàn hợp lệ nhưng xảy ra đúng vào điểm exhaustion — không khác gì [[05-BOS-Break-of-Structure]] mục 15.1 mô tả, nhưng ở đây là GBPUSD chứ không phải NQ.
 
 **Kết cục:** giá chạm 1.2952 (chưa tới target), quay đầu giảm mạnh, đóng nến H4 thủng protected low 1.2898 chỉ 5 giờ sau — Change of Character hình thành. Lệnh Long bị stop tại 1.2898, lỗ đúng 1R.
 
@@ -555,7 +555,7 @@ Khi bạn mở đồng thời M5 và M15 trong lúc giá đang dao động mạn
 - **Acceptance vs excess (nguyên lý cốt lõi từ Auction Market Theory):** một wick xuyên qua swing là "excess" — thị trường thử một mức giá, gặp đủ đối ứng (limit order chờ sẵn) để bị đẩy lùi ngay trong cùng nến. Một body đóng cửa ngoài swing là "acceptance" — thị trường thử mức giá đó và KHÔNG gặp đủ đối ứng để bị đẩy lùi trong suốt thời gian còn lại của nến; đây là bằng chứng trực tiếp rằng cán cân cung-cầu đã đổi tại chính vùng giá đó.
 - **Stop cluster tại swing bị phá:** phần lớn BOS đi kèm việc quét một lớp stop-loss của phe ngược hướng đặt ngay ngoài swing. Về mặt cơ chế, chính lệnh stop bị kích hoạt (chuyển từ pending order thành market order) là một phần "nhiên liệu" đẩy giá tiếp — đây là lý do BOS thật thường "tự nuôi" đà đi tiếp một đoạn ngắn ngay sau khi phá.
 - **Dealer hedging / options gamma:** trên các sản phẩm có options liên quan sâu (SPX/NDX ảnh hưởng ES/NQ, hay OTC options trên XAUUSD), khi giá phá qua một mức có gamma tập trung, dealer phải mua/bán theo để giữ trung hòa delta — hành vi này có thể khuếch đại displacement của BOS thật (gamma dương của dealer bên thắng) hoặc ngược lại ghìm giá lại nếu gamma âm.
-- **Algo execution TWAP/VWAP:** các quỹ thực thi lệnh lớn theo lịch trình cố định trong ngày. Khi một BOS xảy ra đúng lúc một cửa sổ thực thi lớn (đầu giờ, các mốc 30 phút) đang hoạt động, displacement có xác suất là dòng lệnh có tổ chức, không phải momentum ngẫu nhiên — đây là lý do BOS trong kill zone (mục [[18 - Kill Zones]]) đáng tin hơn BOS giờ thanh khoản mỏng.
+- **Algo execution TWAP/VWAP:** các quỹ thực thi lệnh lớn theo lịch trình cố định trong ngày. Khi một BOS xảy ra đúng lúc một cửa sổ thực thi lớn (đầu giờ, các mốc 30 phút) đang hoạt động, displacement có xác suất là dòng lệnh có tổ chức, không phải momentum ngẫu nhiên — đây là lý do BOS trong kill zone (mục [[18-Kill-Zones]]) đáng tin hơn BOS giờ thanh khoản mỏng.
 
 ### Đối chiếu với các khung lý thuyết khác
 

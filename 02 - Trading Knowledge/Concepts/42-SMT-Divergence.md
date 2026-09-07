@@ -211,7 +211,7 @@ SMT gắn rất chặt với **Power of Three (Accumulation – Manipulation –
 Đây là một trong những confluence sạch nhất: bạn biết **narrative** (PO3) *và* có **bằng chứng liên thị trường** (SMT) cùng chỉ một hướng, ngay tại thời điểm thanh khoản bị lấy.
 
 > [!info] Kết hợp với Turtle Soup
-> Judas swing + SMT chính là bộ khung của [[33 - Turtle Soup]] nâng cao: quét một cực trị "hiển nhiên" (false breakout) rồi đảo. SMT thêm lớp xác nhận rằng cú quét đó là bẫy, không phải breakout thật.
+> Judas swing + SMT chính là bộ khung của [[33-Turtle-Soup]] nâng cao: quét một cực trị "hiển nhiên" (false breakout) rồi đảo. SMT thêm lớp xác nhận rằng cú quét đó là bẫy, không phải breakout thật.
 
 ---
 
@@ -288,7 +288,7 @@ Bối cảnh: bias ngày bullish, giá ở discount, cửa sổ macro 09:50–10
 **Vì sao đây là mẫu A+:**
 - **Cặp lõi** NQ/ES — tương quan kinh điển nhất, khó ngụy tạo.
 - **SMT tại pool** (SSL đáy phiên), không giữa range; **discount, thuận bias**.
-- **Trong macro window 09:50** — confluence thời gian hạng nhất cho NQ (xem [[40 - Macro Times]]).
+- **Trong macro window 09:50** — confluence thời gian hạng nhất cho NQ (xem [[40-Macro-Times]]).
 - **Đủ chuỗi:** SMT (xác nhận) + sweep (lý do) + CISD/MSS (trigger) + FVG (entry).
 
 **Điểm mấu chốt — SMT trả lời câu hỏi mà sweep + CISD KHÔNG trả lời được:** *"Cú sweep này có phải cú CUỐI không?"* Một sweep đơn lẻ có thể là chặng đầu của một chuỗi sweep sâu hơn (sweep chồng sweep). Nhưng khi **ES từ chối phá đáy theo NQ**, xác suất đây là cú lấy thanh khoản *cuối cùng* tăng vọt → giảm mạnh rủi ro dính "sweep chồng sweep" và bị stop-out sớm. Đó chính là giá trị gia tăng của SMT trên đúng một entry đã có sweep + MSS.
@@ -324,7 +324,7 @@ Bối cảnh: bias ngày bullish, giá ở discount, cửa sổ macro 09:50–10
 
 - Mở sẵn **layout 2 chart** (instrument giao dịch + benchmark tương quan) để không phải chuyển tab lúc quyết định.
 - Ưu tiên SMT trên **HTF (H1/H4)** để chọn bias, rồi tìm SMT **LTF (M5/M1)** cùng hướng cho entry — SMT đồng thuận đa khung là cực mạnh (mục 9).
-- Ghép SMT với **macro window** ([[40 - Macro Times]]): SMT hình thành ngay trong 09:50–10:10 ET là confluence hạng nhất cho NQ.
+- Ghép SMT với **macro window** ([[40-Macro-Times]]): SMT hình thành ngay trong 09:50–10:10 ET là confluence hạng nhất cho NQ.
 - Với XAUUSD/forex, dùng **DXY** làm benchmark mặc định vì nó phản ánh cả rổ USD; thêm cặp thuận (XAG, GU) để có "quad" xác nhận.
 - **Kiểm tra tương quan còn "sống" không** trước khi đọc: 20–30 nến gần nhất hai công cụ có đi cùng nhịp không?
 - **Ghi nhật ký có kỷ luật:** gắn nhãn mỗi lệnh *có/không có SMT xác nhận* và *cấp SMT* để đo edge — nhiều trader thấy win-rate tăng rõ rệt ở nhóm "có SMT A+". Đây là cách backtest biến SMT thành edge cá nhân đã kiểm chứng, thay vì niềm tin.
@@ -660,7 +660,7 @@ Quy trình backtest SMT nghiêm túc nên gồm: (1) cố định trước danh 
 
 ## L. Liên hệ chuỗi khái niệm
 
-SMT là một lớp xác nhận liên thị trường độc lập, hoạt động tốt nhất khi kết hợp với: [[18 - Kill Zones|Killzone]]/[[40 - Macro Times|Macro Time]] cho khung giờ ưu tiên quan sát; sweep thanh khoản (xem [[39 - Draw on Liquidity - Tai sao gia di chuyen ai la doi ung|Draw on Liquidity]]) cho bối cảnh "vì sao" giá tạo cực trị; [[41 - Change in State of Delivery|CISD]] và MSS cho xác nhận cấu trúc trên chính tài sản đang trade; và [[13 - FVG  - Fair Value Gap|FVG]] cho vùng entry cụ thể. Một SMT đơn độc, không có bất kỳ lớp nào trong chuỗi này hỗ trợ, và đặc biệt khi tương quan nền đã suy yếu (rollover, correlation breakdown, giờ đóng cửa khác biệt), nên được xem là tín hiệu rất yếu bất kể trông thuyết phục ra sao trên biểu đồ.
+SMT là một lớp xác nhận liên thị trường độc lập, hoạt động tốt nhất khi kết hợp với: [[18-Kill-Zones|Killzone]]/[[40-Macro-Times|Macro Time]] cho khung giờ ưu tiên quan sát; sweep thanh khoản (xem [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|Draw on Liquidity]]) cho bối cảnh "vì sao" giá tạo cực trị; [[41-Change-in-State-of-Delivery|CISD]] và MSS cho xác nhận cấu trúc trên chính tài sản đang trade; và [[13-FVG-Fair-Value-Gap|FVG]] cho vùng entry cụ thể. Một SMT đơn độc, không có bất kỳ lớp nào trong chuỗi này hỗ trợ, và đặc biệt khi tương quan nền đã suy yếu (rollover, correlation breakdown, giờ đóng cửa khác biệt), nên được xem là tín hiệu rất yếu bất kể trông thuyết phục ra sao trên biểu đồ.
 
 
 
@@ -697,7 +697,7 @@ SMT là một lớp xác nhận liên thị trường độc lập, hoạt độ
 - Phiên bản bổ sung: 2026-07-28.
 - Phạm vi: bổ sung cơ chế cross-sectional/arbitrage, phản biện falsifiability, 4 case study mới (không trùng case 13C gốc), và các edge case vận hành trọng tâm về futures rollover, chênh lệch giờ đóng cửa, và correlation breakdown trong regime risk-off/risk-on — không chỉnh sửa nội dung gốc, bao gồm giữ nguyên toàn bộ 13B, 13C, 13D gốc.
 - Tất cả số liệu thống kê trong phần này (hệ số tương quan, tỷ lệ %, ngưỡng R) là ví dụ minh họa cho cách thiết kế backtest, không phải số liệu lịch sử thực tế đã kiểm chứng — người đọc cần tự backtest trên dữ liệu và cặp tương quan của riêng mình trước khi áp dụng.
-- Liên kết nội bộ liên quan: [[18 - Kill Zones]], [[40 - Macro Times]], [[39 - Draw on Liquidity - Tai sao gia di chuyen ai la doi ung]], [[41 - Change in State of Delivery]], [[13 - FVG  - Fair Value Gap]], [[21 - Market Structure Shift]].
+- Liên kết nội bộ liên quan: [[18-Kill-Zones]], [[40-Macro-Times]], [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]], [[41-Change-in-State-of-Delivery]], [[13-FVG-Fair-Value-Gap]], [[21-Market-Structure-Shift]].
 
 ## P. Danh sách hình minh họa kèm theo
 

@@ -38,11 +38,11 @@ common_mistakes:
 **Khái niệm:**  
 Re-mapping Dealing Range là hành động **vẽ lại khung dealing range** sau khi một nhịp **displacement** (giãn nở mạnh, có động lượng, thường tạo FVG) đã **lấy external liquidity** ở một đầu range cũ hoặc tạo một swing point mới có ý nghĩa. Range cũ — vốn dùng để đo premium/discount và phân loại liquidity — không còn phản ánh cấu trúc hiện tại, nên mọi phép đo dựa trên nó trở nên sai. Re-mapping nghĩa là: xác định lại **swing high mới** và **swing low mới**, đo lại **equilibrium (50%)**, phân loại lại **internal vs external liquidity**, và từ đó **định vị POI tiếp theo**.
 
-Đây là một **quy trình bảo trì range**, không phải một entry model. Nó là bước "cập nhật bản đồ" sau khi thị trường đã đi một quãng đường mới. Xem nền tảng ở [[12 - Dealing Range]].
+Đây là một **quy trình bảo trì range**, không phải một entry model. Nó là bước "cập nhật bản đồ" sau khi thị trường đã đi một quãng đường mới. Xem nền tảng ở [[12-Dealing-Range]].
 
 **Mục đích trong ICT:**  
 - **Giữ premium/discount luôn đúng thời sự:** sau displacement, giá có thể đã chuyển từ discount của range cũ sang một range hoàn toàn mới; nếu không re-map, bạn sẽ Long ở "discount" tưởng tượng trong khi thực chất đang ở premium của range mới.
-- **Tái phân loại liquidity:** đỉnh vừa bị quét trở thành liquidity đã tiêu thụ; đáy mới / đỉnh mới trở thành external mới; các FVG/OB trong nhịp đẩy trở thành internal liquidity mới. Xem [[16 - Internal & External Range Liquidity (IRL & ERL)]].
+- **Tái phân loại liquidity:** đỉnh vừa bị quét trở thành liquidity đã tiêu thụ; đáy mới / đỉnh mới trở thành external mới; các FVG/OB trong nhịp đẩy trở thành internal liquidity mới. Xem [[16-Internal-External-Range-Liquidity-IRL-ERL]].
 - **Tìm POI kế tiếp:** nhịp displacement tự sinh ra PD array (FVG, OB, breaker). POI tiếp theo là cái nằm trong **discount/equilibrium của range mới** và còn unmitigated.
 - **Cập nhật draw on liquidity:** external nào vừa bị lấy, external nào còn mở → hướng hút tiếp theo của giá.
 
@@ -64,7 +64,7 @@ Vì thị trường vận động theo chu kỳ **expansion → retracement → 
 
 ### Lý thuyết nested ranges (range lồng nhau / fractal range)
 
-**Nguyên lý fractal:** Dealing range không tồn tại đơn lẻ trên một khung thời gian — nó luôn là một **mảnh vỡ (fractal)** của một range lớn hơn ở khung cao hơn. Một range M15 mới re-map luôn nằm **bên trong** một range H1 vẫn còn hiệu lực; range H1 đó lại nằm bên trong một range H4/D1 còn hiệu lực. Re-mapping ở LTF **không xóa** range HTF — nó chỉ cập nhật "lớp trong cùng" của một chồng range (stack) đang tồn tại song song trên nhiều khung. Đây là phần mở rộng trực tiếp của tư duy đa khung thời gian ở [[32 - Top-down Analysis (Multiple Timeframes)]].
+**Nguyên lý fractal:** Dealing range không tồn tại đơn lẻ trên một khung thời gian — nó luôn là một **mảnh vỡ (fractal)** của một range lớn hơn ở khung cao hơn. Một range M15 mới re-map luôn nằm **bên trong** một range H1 vẫn còn hiệu lực; range H1 đó lại nằm bên trong một range H4/D1 còn hiệu lực. Re-mapping ở LTF **không xóa** range HTF — nó chỉ cập nhật "lớp trong cùng" của một chồng range (stack) đang tồn tại song song trên nhiều khung. Đây là phần mở rộng trực tiếp của tư duy đa khung thời gian ở [[32-Top-down-Analysis-Multiple-Timeframes]].
 
 > [!example] Mô hình "chồng range" (range stack)
 > ```text
@@ -147,7 +147,7 @@ Vì thị trường vận động theo chu kỳ **expansion → retracement → 
 - [ ] POI mới **cộng hưởng** với một PD array HTF (ví dụ FVG H1 nằm trong discount của range D1).
 - [ ] External phía draw on liquidity **vẫn còn mở** (còn room để giá chạy tới target).
 - [ ] Nhịp displacement đủ mạnh để tạo FVG "sạch" (ít bị lấp một phần).
-- [ ] Range mới nằm cùng hướng với [[12 - Daily Bias]].
+- [ ] Range mới nằm cùng hướng với [[12-Daily-Bias]].
 
 ### Điều kiện làm setup yếu đi
 - Displacement yếu / mập mờ → range mới không đáng tin.
@@ -193,7 +193,7 @@ Re-mapping là một kỹ năng cần **hiệu chỉnh đúng tần suất** —
 
 ### M5 / M1 — Chờ giá về POI mới rồi mới tìm entry
 - **Không đuổi giá ở premium** của range mới. Chờ retrace về POI H1 đã đánh dấu.
-- **Khi giá chạm POI:** xuống M5 chờ đúng chuỗi ICT 2022 — sweep liquidity nội bộ → **MSS + displacement + FVG M5** → entry tại 50% FVG M5 (giống hệt lệnh trước của bạn). Xem [[21 - Market Structure Shift]].
+- **Khi giá chạm POI:** xuống M5 chờ đúng chuỗi ICT 2022 — sweep liquidity nội bộ → **MSS + displacement + FVG M5** → entry tại 50% FVG M5 (giống hệt lệnh trước của bạn). Xem [[21-Market-Structure-Shift]].
 - **Quản lý lệnh lần này:** target external còn mở; **scale-out tại internal liquidity, giữ runner** — sửa lỗi thoát toàn bộ ở 1.6R.
 
 > [!warning]
@@ -289,7 +289,7 @@ Sau khi thoát lệnh, trader vẫn dán mắt vào OB H1 cũ (đã mitigate) v�
 **Bài học:**
 - **POI đổi dạng sau displacement** — đừng chờ POI cũ đã tiêu thụ.
 - Trước khi vào lệnh tiếp, **luôn re-map và đo lại premium/discount trên range mới**; đừng Long ở premium vì tưởng còn ở discount range cũ.
-- Đây là mặt còn lại của [[12 - Dealing Range]]: chọn/giữ sai range → mua premium tưởng discount.
+- Đây là mặt còn lại của [[12-Dealing-Range]]: chọn/giữ sai range → mua premium tưởng discount.
 
 ---
 
@@ -344,18 +344,18 @@ Cả khái niệm re-map treo trên một từ định tính: *"displacement th�
 ## 7. Entry model liên quan
 
 Khái niệm này thường kết hợp với:
-- [[12 - Dealing Range]]
-- [[27 - Premium Discount]]
-- [[16 - Internal & External Range Liquidity (IRL & ERL)]]
-- [[13 - FVG  - Fair Value Gap]]
-- [[25 - OB - Order Block]]
-- [[04 - Breaker Block]]
-- [[20 - Liquidity Sweep]]
-- [[21 - Market Structure Shift]]
-- [[26 - OTE - Optimal Trade Entry]]
-- [[12 - Daily Bias]]
-- [[32 - Top-down Analysis (Multiple Timeframes)]]
-- [[35 - Aggressive Displacement Entry]]
+- [[12-Dealing-Range]]
+- [[27-Premium-Discount]]
+- [[16-Internal-External-Range-Liquidity-IRL-ERL]]
+- [[13-FVG-Fair-Value-Gap]]
+- [[25-OB-Order-Block]]
+- [[04-Breaker-Block]]
+- [[20-Liquidity-Sweep]]
+- [[21-Market-Structure-Shift]]
+- [[26-OTE-Optimal-Trade-Entry]]
+- [[12-Daily-Bias]]
+- [[32-Top-down-Analysis-Multiple-Timeframes]]
+- [[35-Aggressive-Displacement-Entry]]
 
 ### Sequence mẫu — Re-map để tìm nhịp Long thứ hai
 ```text
@@ -687,7 +687,7 @@ Một cách để tự kiểm tra xem bạn có đang rơi vào bẫy unfalsifia
 Trả lời được: (1) luôn áp dụng tiêu chí định lượng cứng (6D) trước khi tuyên bố "đã re-map", tránh diễn giải chủ quan sau sự kiện; (2) backtest số lượng lớn trên đúng symbol/khung thời gian mình dùng để có ngưỡng ATR/body-ratio phù hợp thay vì dùng số chung; (3) chấp nhận rằng một phần hiệu quả có thể đến từ self-fulfilling prophecy tập thể, và điều đó không làm mất giá trị thực dụng của kỹ thuật (nếu đủ nhiều người phản ứng tại một vùng giá, vùng đó CÓ THẬT trở thành vùng phản ứng, bất kể lý do ban đầu là gì). Không trả lời được: không thể chứng minh chắc chắn re-mapping phản ánh "ý định thật" của một dòng tiền tổ chức cụ thể — đây là một diễn giải, không phải một sự thật quan sát được trực tiếp, và người dùng cần chấp nhận đây là rủi ro mô hình (model risk) khi tin vào ngôn ngữ "smart money" của khung ICT.
 
 > [!tip] Gợi ý đọc thêm liên quan
-> Chủ đề "self-fulfilling prophecy trong phân tích kỹ thuật" được bàn sâu hơn ở [[38 - Liquidity Reflexivity ( Bẫy đám đông ICT )]] — nên đọc nối tiếp file đó ngay sau phần này để có bức tranh đầy đủ về giới hạn nhận thức luận của toàn bộ khung ICT/SMC, không chỉ riêng khái niệm re-mapping.
+> Chủ đề "self-fulfilling prophecy trong phân tích kỹ thuật" được bàn sâu hơn ở [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] — nên đọc nối tiếp file đó ngay sau phần này để có bức tranh đầy đủ về giới hạn nhận thức luận của toàn bộ khung ICT/SMC, không chỉ riêng khái niệm re-mapping.
 
 > [!warning] Kết luận phản biện
 > - Dùng được khi: bạn áp dụng nghiêm ngặt tiêu chí định lượng (6D) trước khi tuyên bố re-map, và coi range mới là một GIẢ THUYẾT làm việc cần xác nhận thêm (qua entry model khung thấp), không phải một sự thật tuyệt đối.
@@ -900,9 +900,9 @@ Không phải mọi lần re-map đều nên dẫn tới một lệnh ngay lập
 **Cách dùng bảng:** đếm số cột "hành động" đạt được — nếu đạt từ 4/5 tiêu chí trở lên, có thể tự tin đặt lệnh limit theo kế hoạch; nếu chỉ đạt 2-3/5, nên coi đây là một range để theo dõi thêm, ghi vào log nhưng chưa vội đặt lệnh.
 
 **Liên kết chéo quan trọng:**
-- [[35 - Aggressive Displacement Entry]] — cơ chế displacement dùng để kích hoạt entry cũng chính là cơ chế kích hoạt việc re-map range ở đây; hai khái niệm nên được học/áp dụng song song.
-- [[36 - Forex CFD Basics - Pip Lot Spread Swap Leverage Margin]] — chi phí giao dịch thật (spread, slippage) cần được cộng vào khi đánh giá R:R của POI mới sau re-map, đặc biệt với range mới hẹp.
-- [[38 - Liquidity Reflexivity ( Bẫy đám đông ICT )]] — liên hệ trực tiếp tới phản biện B3/B5 ở trên: một phần lý do POI mới "hoạt động" có thể đến từ chính hành vi tập thể của cộng đồng dùng chung khung ICT, không chỉ từ dòng tiền tổ chức khách quan.
+- [[35-Aggressive-Displacement-Entry]] — cơ chế displacement dùng để kích hoạt entry cũng chính là cơ chế kích hoạt việc re-map range ở đây; hai khái niệm nên được học/áp dụng song song.
+- [[36-Forex-CFD-Basics-Pip-Lot-Spread-Swap-Leverage-Margin]] — chi phí giao dịch thật (spread, slippage) cần được cộng vào khi đánh giá R:R của POI mới sau re-map, đặc biệt với range mới hẹp.
+- [[38-Liquidity-Reflexivity-Bay-dam-dong-ICT]] — liên hệ trực tiếp tới phản biện B3/B5 ở trên: một phần lý do POI mới "hoạt động" có thể đến từ chính hành vi tập thể của cộng đồng dùng chung khung ICT, không chỉ từ dòng tiền tổ chức khách quan.
 
 > [!info] Ghi chú cuối
 > Phần Deep Dive này viết dựa trên kinh nghiệm quan sát chung của cộng đồng trader ICT/SMC lâu năm và các khung lý thuyết liên ngành (AMT, Wyckoff) đã được công nhận rộng rãi trong phân tích kỹ thuật, không trích dẫn số liệu thống kê hoặc mức giá lịch sử chính xác của bất kỳ sự kiện thị trường cụ thể nào.

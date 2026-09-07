@@ -39,7 +39,7 @@ updated: 2026-07-28
 > Sơ đồ dạng đường zig-zag mô tả một chu kỳ giá hoàn chỉnh theo chiều ngang: bắt đầu bằng một hộp "Original Consolidation" phía trên bên trái, sau đó một chuỗi các đoạn giảm bậc thang đi xuống (mỗi bậc gắn nhãn nhỏ "LRS"), tô màu đỏ nhạt cho toàn bộ vùng này và ghi chú "Sell Program — Nửa A". Đáy của chuỗi bậc thang là một điểm sweep rõ ràng xuyên qua một đường ngang đánh dấu "SSL", có một vòng tròn nhấn mạnh ghi chữ "Smart Money Low" ngay tại điểm đó. Từ điểm đó, vẽ mũi tên bật lên phá qua một đường ngang mảnh ghi "MSS tăng", sau đó là chuỗi các đoạn tăng bậc thang đi lên (mỗi bậc gắn nhãn nhỏ "LRB"), tô màu xanh nhạt cho vùng này và ghi chú "Buy Program — Nửa B", kết thúc ở một đường ngang phía trên ghi "BSL / Original Consolidation (Target)". Đây là sơ đồ khái niệm minh họa cấu trúc mô hình, không phải chart giá thật.
 
 **Khái niệm:**
-Market Maker Buy Model (MMBM) là **mô hình hành vi giá** mô tả cách market maker tạo ra một đợt tăng giá lớn. ICT chia một chu kỳ giá thành hai chương trình (program): **Sell Program** (đẩy giá xuống để gom thanh khoản phía dưới) và **Buy Program** (đẩy giá lên để phân phối về thanh khoản phía trên). MMBM là toàn bộ kịch bản nhìn từ góc độ: "đáy đã hình thành xong, giờ là chu kỳ mua". Nó là một biến thể trong họ **MMXM** (Market Maker Models), cặp đôi với [[06 - Market Maker Sell Model – MMSM]].
+Market Maker Buy Model (MMBM) là **mô hình hành vi giá** mô tả cách market maker tạo ra một đợt tăng giá lớn. ICT chia một chu kỳ giá thành hai chương trình (program): **Sell Program** (đẩy giá xuống để gom thanh khoản phía dưới) và **Buy Program** (đẩy giá lên để phân phối về thanh khoản phía trên). MMBM là toàn bộ kịch bản nhìn từ góc độ: "đáy đã hình thành xong, giờ là chu kỳ mua". Nó là một biến thể trong họ **MMXM** (Market Maker Models), cặp đôi với [[06 - Market Maker Sell Model MMSM]].
 
 **Cấu trúc 2 nửa quanh Smart Money Low:**
 1. **Original Consolidation:** vùng tích lũy ban đầu phía trên, nơi market maker bắt đầu chương trình bán.
@@ -81,12 +81,12 @@ Nhiều trader thua vì **short đúng vào lúc sell program kết thúc** (bá
 - Một cú sweep duy nhất hiếm khi đủ thanh khoản cho một cú đảo chiều lớn (HTF). Vì vậy giá thường phải "đi thu gom" qua **nhiều bậc thang giảm liên tiếp** (mỗi bậc là một LRS), mỗi bậc quét một cụm stop nhỏ hơn, trước khi tới cụm lớn nhất (nơi hình thành Smart Money Low thật).
 
 **Inducement — bẫy được thiết kế TRƯỚC Smart Money Low thật:**
-- ICT gọi các đáy trung gian trong sell program (không phải đáy cuối) là **[[15 - Inducement]]**: những đáy "đẹp", dễ nhìn thấy, khiến trader retail đặt lệnh mua sớm hoặc đặt stop ngay dưới đó — chính những lệnh này lại trở thành thanh khoản để market maker tiếp tục đẩy giá xuống bậc kế tiếp.
+- ICT gọi các đáy trung gian trong sell program (không phải đáy cuối) là **[[15-Inducement]]**: những đáy "đẹp", dễ nhìn thấy, khiến trader retail đặt lệnh mua sớm hoặc đặt stop ngay dưới đó — chính những lệnh này lại trở thành thanh khoản để market maker tiếp tục đẩy giá xuống bậc kế tiếp.
 - Phân biệt Inducement với Smart Money Low thật: sau khi quét Inducement, giá có thể nảy lên nhưng **không đủ mạnh để tạo MSS tăng thật** (không phá được swing high có ý nghĩa, không có displacement + FVG rõ) — đây chỉ là một nhịp hồi kỹ thuật rồi tiếp tục giảm. Smart Money Low thật là điểm sweep DUY NHẤT sau đó có MSS tăng + displacement hợp lệ.
-- Đây cũng chính là ý tưởng đứng sau [[33 - Turtle Soup]]: một cú phá đáy giả (false break) rồi đảo chiều — về bản chất Turtle Soup mô tả đúng hành vi tại từng Inducement bên trong sell program, chỉ khác là ICT 2022 Model/Turtle Soup thường zoom vào một cú sweep đơn lẻ LTF, còn MMBM zoom ra để thấy toàn bộ chuỗi.
+- Đây cũng chính là ý tưởng đứng sau [[33-Turtle-Soup]]: một cú phá đáy giả (false break) rồi đảo chiều — về bản chất Turtle Soup mô tả đúng hành vi tại từng Inducement bên trong sell program, chỉ khác là ICT 2022 Model/Turtle Soup thường zoom vào một cú sweep đơn lẻ LTF, còn MMBM zoom ra để thấy toàn bộ chuỗi.
 
 **Tính fractal của MMXM — MMBM có thể chỉ là một mảnh của mô hình lớn hơn:**
-- Xem [[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]]: mỗi cú sweep trong sell program tương ứng một **Short Term Low (STL)**; khi một STL bị phá bằng MSS mạnh, nó có thể trở thành **Intermediate Term Low (ITL)**; và nếu ITL đó tiếp tục giữ vững qua nhiều nhịp hồi lớn hơn, nó có thể được nhìn nhận là **Long Term Low (LTL)**. Smart Money Low của một MMBM trên H1 thường chỉ là một STL/ITL — nó có thể chỉ là **một LRB bên trong một MMBM lớn hơn trên D1**, hoặc tệ hơn, chỉ là **một nhịp hồi bên trong nửa A của một MMSM D1** vẫn đang chạy.
+- Xem [[01-Advance-Market-Structure-Short-Term-Low-Intermediate-Term-Low-Long-Term-Low]]: mỗi cú sweep trong sell program tương ứng một **Short Term Low (STL)**; khi một STL bị phá bằng MSS mạnh, nó có thể trở thành **Intermediate Term Low (ITL)**; và nếu ITL đó tiếp tục giữ vững qua nhiều nhịp hồi lớn hơn, nó có thể được nhìn nhận là **Long Term Low (LTL)**. Smart Money Low của một MMBM trên H1 thường chỉ là một STL/ITL — nó có thể chỉ là **một LRB bên trong một MMBM lớn hơn trên D1**, hoặc tệ hơn, chỉ là **một nhịp hồi bên trong nửa A của một MMSM D1** vẫn đang chạy.
 - Hệ quả thực dụng: trước khi tin một Smart Money Low H1/M15 là "đáy thật để mua mạnh tay", luôn phải hỏi: *"Đáy này đang đóng vai trò gì trên D1/H4 — nó là Smart Money Low của một MMBM D1, hay chỉ là một nhịp hồi kỹ thuật (Inducement) bên trong một sell program D1 vẫn chưa kết thúc?"*
 
 **Áp dụng thực dụng của lý thuyết này:**
@@ -102,18 +102,18 @@ Nhiều trader thua vì **short đúng vào lúc sell program kết thúc** (bá
 
 | Giai đoạn | Tên | Khái niệm liên kết | Câu hỏi kiểm tra |
 |---|---|---|---|
-| Đỉnh | Original Consolidation | [[19 - Liquidity]], [[12 - Dealing Range]] | BSL phía trên ở đâu (target cuối)? |
-| Nửa A | Sell Program (các LRS) | [[Order Block]], [[Fair Value Gap]], [[15 - Inducement]] | Giá đang giảm bậc thang quét SSL nào? Đây là Inducement hay SML thật? |
-| Đáy | Smart Money Low | [[20 - Liquidity Sweep]], [[30 - Sell-side Liquidity]] | SSL cuối đã bị quét + reclaim chưa? |
-| Chuyển pha | MSS tăng | [[21 - Market Structure Shift]], [[Displacement]] | Đã phá swing high gần nhất chưa? |
+| Đỉnh | Original Consolidation | [[19-Liquidity]], [[12-Dealing-Range]] | BSL phía trên ở đâu (target cuối)? |
+| Nửa A | Sell Program (các LRS) | [[Order Block]], [[Fair Value Gap]], [[15-Inducement]] | Giá đang giảm bậc thang quét SSL nào? Đây là Inducement hay SML thật? |
+| Đáy | Smart Money Low | [[20-Liquidity-Sweep]], [[30 - Sell-side Liquidity]] | SSL cuối đã bị quét + reclaim chưa? |
+| Chuyển pha | MSS tăng | [[21-Market-Structure-Shift]], [[Displacement]] | Đã phá swing high gần nhất chưa? |
 | Nửa B | Buy Program (các LRB) | [[Fair Value Gap]], [[Order Block]], [[Optimal Trade Entry]] | LRB tiếp theo ở FVG/OB nào? |
-| Target | Buy-side liquidity | [[07 - Buy-side Liquidity]], [[16 - Internal & External Range Liquidity (IRL & ERL)]] | BSL/đỉnh cũ nào là target? Internal hay external? |
+| Target | Buy-side liquidity | [[07-Buy-side-Liquidity]], [[16-Internal-External-Range-Liquidity-IRL-ERL]] | BSL/đỉnh cũ nào là target? Internal hay external? |
 
 ### Biến thể thường gặp
-- **+ AMD:** sell program ~ pha manipulation/distribution xuống; SML ~ accumulation; buy program ~ distribution lên ([[02 - AMD]]).
+- **+ AMD:** sell program ~ pha manipulation/distribution xuống; SML ~ accumulation; buy program ~ distribution lên ([[02-AMD]]).
 - **+ ICT 2022 Model:** mỗi LRB chính là một chuỗi ICT 2022 thu nhỏ (sweep nhỏ → MSS → FVG → entry) ([[01 - ICT 2022 Model]]).
 - **+ OTE:** LRB tinh chỉnh bằng vùng OTE 62–79% của nhịp đẩy lên ([[Optimal Trade Entry]]).
-- **+ Silver Bullet / Kill Zones:** SML hoặc các LRB thường rơi vào London/NY KZ ([[18 - Kill Zones]]).
+- **+ Silver Bullet / Kill Zones:** SML hoặc các LRB thường rơi vào London/NY KZ ([[18-Kill-Zones]]).
 
 > [!tip]
 > Cách nhớ nhanh MMBM: **"Bán xuống lấy đáy → Lập Smart Money Low → Mua lên từng bậc về đỉnh."** Bạn chỉ tham gia khi đã thấy đáy được lập (sweep SSL + MSS tăng), rồi mua các LRB.
@@ -123,7 +123,7 @@ Nhiều trader thua vì **short đúng vào lúc sell program kết thúc** (bá
 - [ ] Sell program đã quét một pool SSL lớn (equal lows, đáy cũ HTF).
 - [ ] Có MSS tăng rõ ràng + displacement để lại FVG.
 - [ ] Buy-side liquidity phía trên rõ (target có room).
-- [ ] Trong [[18 - Kill Zones]] (London/NY).
+- [ ] Trong [[18-Kill-Zones]] (London/NY).
 
 ### Khi nào nên bỏ qua?
 - [ ] Sell program còn đang chạy mạnh, chưa quét SSL chính → đừng bắt đáy.
@@ -220,7 +220,7 @@ Nhiều trader thua vì **short đúng vào lúc sell program kết thúc** (bá
 > 4. **Buy-side target ở đâu, R:R bao nhiêu, có trong kill zone không?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias:** đang chuyển/đang là Bullish (xem [[12 - Daily Bias]]).
+- **Bias:** đang chuyển/đang là Bullish (xem [[12-Daily-Bias]]).
 - **Original consolidation & BSL:** vùng đỉnh và pool buy-side là target cuối.
 - **Discount:** xác nhận giá đang ở nửa dưới dealing range (vùng mua).
 
@@ -358,7 +358,7 @@ Trader thấy giá giảm "đã sâu" nên **mua bắt đáy** giữa sell progr
 ```
 
 > [!note]
-> MMBM và [[06 - Market Maker Sell Model – MMSM]] là cặp đối xứng. Học một cái là hiểu cái kia (lật ngược). Chúng cùng thuộc họ MMXM và là "khung kịch bản" để gắn các chuỗi [[01 - ICT 2022 Model]] nhỏ vào từng LRB/LRS.
+> MMBM và [[06 - Market Maker Sell Model MMSM]] là cặp đối xứng. Học một cái là hiểu cái kia (lật ngược). Chúng cùng thuộc họ MMXM và là "khung kịch bản" để gắn các chuỗi [[01 - ICT 2022 Model]] nhỏ vào từng LRB/LRS.
 
 ---
 
@@ -371,7 +371,7 @@ Trader thấy giá giảm "đã sâu" nên **mua bắt đáy** giữa sell progr
 Mười hai tình huống dưới đây là những chỗ chuỗi **Sell Program → Smart Money Low → Buy Program** hay gãy trong thực tế mà lý thuyết gọn gàng ở mục 1–5 không nhắc tới. Với mỗi ca: dấu hiệu nhận biết → cơ chế → cách xử lý.
 
 **① Mua nhầm Inducement (tưởng là SML).**
-Bạn thấy giá quét một đáy "đẹp" rồi nảy lên, tưởng đó là Smart Money Low và mua ngay. Dấu hiệu: nhịp nảy **yếu**, không phá được swing high có ý nghĩa (không MSS thật), không để lại displacement/FVG rõ. Cơ chế: đây chỉ là một **[[15 - Inducement]]** bên trong sell program — lệnh mua và stop của bạn trở thành thanh khoản để market maker đẩy giá **giảm tiếp một bậc LRS** nữa. **Xử lý:** chờ **reclaim nhanh (1–2 nến) + MSS tăng thật**; nếu chưa đủ, hạ cấp cú sweep thành "một LRS", đánh dấu lại và tiếp tục chờ — không mua.
+Bạn thấy giá quét một đáy "đẹp" rồi nảy lên, tưởng đó là Smart Money Low và mua ngay. Dấu hiệu: nhịp nảy **yếu**, không phá được swing high có ý nghĩa (không MSS thật), không để lại displacement/FVG rõ. Cơ chế: đây chỉ là một **[[15-Inducement]]** bên trong sell program — lệnh mua và stop của bạn trở thành thanh khoản để market maker đẩy giá **giảm tiếp một bậc LRS** nữa. **Xử lý:** chờ **reclaim nhanh (1–2 nến) + MSS tăng thật**; nếu chưa đủ, hạ cấp cú sweep thành "một LRS", đánh dấu lại và tiếp tục chờ — không mua.
 
 **② Nested trong MMSM D1.**
 MMBM trên H1 trông "sạch" (có đủ sweep + MSS + LRB) nhưng thực chất chỉ là một **nhịp hồi bên trong Sell Program của một MMSM D1 lớn hơn** vẫn đang chạy. Dấu hiệu: D1/H4 chưa hề có Smart Money High + MSS giảm bị bác bỏ; giá vẫn đang tạo các đáy thấp dần trên khung lớn. Cơ chế: bạn đang **mua ngược trend HTF** — buy program H1 sớm hết room và giá quay lại chiều giảm chủ đạo. **Xử lý:** luôn chạy **nested check** D1/H4 trước mọi SML trên LTF; nếu D1 còn trong MMSM chưa hoàn tất → chỉ coi là cơ hội **scalp ngắn để bán lại**, không giữ dài theo buy program.
@@ -492,7 +492,7 @@ Tăng size chỉ nên xảy ra khi đủ CẢ BA điều kiện: (a) đã tích 
 
 **Chẩn đoán:** `missing_step: sml`. Điểm mua là một **Inducement**, không phải SML: thất bại ở 3 dấu hiệu (chưa sweep SSL chính, chưa MSS, nảy yếu). GATE lẽ ra phải chặn lệnh này.
 
-**Bài học:** **"giảm sâu" không phải tín hiệu vào lệnh** — sweep SSL chính + reclaim + MSS mới là tín hiệu. Bỏ mắt xích này là lỗi phổ biến và đắt nhất của MMBM. Xem [[15 - Inducement]], [[20 - Liquidity Sweep]].
+**Bài học:** **"giảm sâu" không phải tín hiệu vào lệnh** — sweep SSL chính + reclaim + MSS mới là tín hiệu. Bỏ mắt xích này là lỗi phổ biến và đắt nhất của MMBM. Xem [[15-Inducement]], [[20-Liquidity-Sweep]].
 
 ### Case 3 — Nested trap (mua MMBM H1 ngược MMSM D1)
 
@@ -504,7 +504,7 @@ Tăng size chỉ nên xảy ra khi đủ CẢ BA điều kiện: (a) đã tích 
 
 **Chẩn đoán:** `missing_step: nested`. Chuỗi H1 đủ bề mặt nhưng **sai bối cảnh**: MMBM H1 chỉ là **một LRS/nhịp hồi bên trong sell program D1 lớn hơn**. Mua theo nó = mua ngược trend HTF thật.
 
-**Bài học:** một MMBM LTF "sạch" vẫn có thể là **hồi kỹ thuật trong MMSM HTF**. Luôn chạy **nested check D1/H4 TRƯỚC**; nếu D1 còn MMSM → chỉ scalp ngắn, không giữ dài. Xem [[06 - Market Maker Sell Model – MMSM]], [[01 - Advance Market Structure ( Short Term Low, Intermediate Term Low & Long Term Low )]].
+**Bài học:** một MMBM LTF "sạch" vẫn có thể là **hồi kỹ thuật trong MMSM HTF**. Luôn chạy **nested check D1/H4 TRƯỚC**; nếu D1 còn MMSM → chỉ scalp ngắn, không giữ dài. Xem [[06 - Market Maker Sell Model MMSM]], [[01-Advance-Market-Structure-Short-Term-Low-Intermediate-Term-Low-Long-Term-Low]].
 
 ### Case 4 — No-Trade đúng (sell program còn chạy)
 

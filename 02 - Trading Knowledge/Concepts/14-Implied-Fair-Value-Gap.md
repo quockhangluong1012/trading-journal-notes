@@ -35,7 +35,7 @@ common_mistakes:
 > [!important] Phân biệt rõ — KHÔNG nhầm với Inverse FVG
 > **"Implied FVG" (ngụ ý / ẩn) ≠ "Inverse FVG" (đảo cực).**
 > - **Implied FVG:** imbalance ẩn trong mô hình 4 nến mà FVG 3-nến tiêu chuẩn không hiện rõ trên chart; xác định bằng trung điểm các bóng nến.
-> - **[[17 - Inverse Fair Value Gap - iFVG]]:** một FVG bình thường bị giá đóng nến xuyên qua nên ĐẢO CỰC vai trò S/R.
+> - **[[17-Inverse-Fair-Value-Gap-iFVG]]:** một FVG bình thường bị giá đóng nến xuyên qua nên ĐẢO CỰC vai trò S/R.
 > Đây là hai khái niệm hoàn toàn khác nhau — đừng gộp lẫn.
 
 ---
@@ -84,7 +84,7 @@ Trong nhiều đợt displacement mạnh, nến nối tiếp nhau với bóng d�
 |---|---|---|---|
 | **FVG thường (BISI/SIBI)** | Imbalance 3 nến rõ ràng | Gap giữa high nến 1 & low nến 3 (bullish) | Cao |
 | **Implied FVG** | Imbalance ẩn trong cụm 4 nến, bóng chồng lấp | Trung điểm bóng 2 nến thân lớn | Trung bình (bổ trợ) |
-| **[[17 - Inverse Fair Value Gap - iFVG]]** | FVG cũ bị đóng nến xuyên → đảo cực S/R | FVG fail + đóng nến xuyên qua | Cao (khi có MSS) |
+| **[[17-Inverse-Fair-Value-Gap-iFVG]]** | FVG cũ bị đóng nến xuyên → đảo cực S/R | FVG fail + đóng nến xuyên qua | Cao (khi có MSS) |
 
 > [!warning]
 > Lỗi phổ biến nhất với khái niệm này là **gọi nhầm một Inverse FVG là "Implied FVG"** chỉ vì hai từ viết tắt na ná. Hãy nhớ: **Implied = ẩn (4 nến, trung điểm bóng); Inverse = đảo cực (FVG bị xuyên).**
@@ -93,7 +93,7 @@ Trong nhiều đợt displacement mạnh, nến nối tiếp nhau với bóng d�
 - [ ] Displacement mạnh nhưng bóng nến chồng lấp khiến FVG 3-nến không hiện rõ.
 - [ ] Hai nến thân lớn liên tiếp với bóng dài chồng nhau.
 - [ ] Vùng implied trùng một POI HTF / mức tham chiếu khác (confluence).
-- [ ] Đồng hướng [[12 - Daily Bias]] và đúng phía premium/discount.
+- [ ] Đồng hướng [[12-Daily-Bias]] và đúng phía premium/discount.
 - [ ] Có liquidity sweep trước cụm nến tạo implied.
 
 ### Khi nào nên bỏ qua?
@@ -148,7 +148,7 @@ Trong nhiều đợt displacement mạnh, nến nối tiếp nhau với bóng d�
 
 Trong thực chiến, tình huống phổ biến nhất khiến trader "bó tay" là: có một cú displacement rõ ràng, nến ở giữa thân rất lớn — nhưng bóng của nến trước và nến sau lại chồng lấn vào đúng phần range của nến lớn đó, khiến **high của nến trước** và **low của nến sau** (hoặc ngược lại với bearish) không tạo ra một khoảng trống sạch. Nếu chỉ nhìn high/low thô như FVG chuẩn, kết luận sẽ là "không có FVG ở đây" — nhưng đó là kết luận sai: imbalance vẫn tồn tại, chỉ là bị che bởi bóng nến. Đây chính là lúc cần kỹ thuật Implied FVG.
 
-Kỹ thuật chuẩn (dựa trên [[10 - Consequent Encroachment (Mean Threshold)|Consequent Encroachment]]) không dùng high/low thô của bóng nến, mà dùng **CE — trung điểm 50%** của từng bóng nến liên quan:
+Kỹ thuật chuẩn (dựa trên [[10-Consequent-Encroachment-Mean-Threshold|Consequent Encroachment]]) không dùng high/low thô của bóng nến, mà dùng **CE — trung điểm 50%** của từng bóng nến liên quan:
 
 ![[ImpliedFVG-Advanced-DrawingRule.svg]]
 *Bên trái: cụm 3 nến với nến lớn ở giữa, bóng của nến 1 và nến 3 chồng lấn vào range nến lớn nên không có FVG 3-nến rõ (high N1 / low N3 không tạo gap sạch). Bên phải: dùng CE (50%) của bóng nến 1 (phần bóng hướng về nến lớn) và CE (50%) của bóng nến 3 (phần bóng hướng về nến lớn) — khoảng giữa hai mức CE này chính là vùng Implied FVG.*
@@ -168,9 +168,9 @@ Kỹ thuật chuẩn (dựa trên [[10 - Consequent Encroachment (Mean Threshold
 Ba khái niệm này có tên gần giống nhau và đều xoay quanh chữ "FVG", nhưng là ba cơ chế hoàn toàn khác nhau. Nhầm lẫn giữa chúng dẫn tới vẽ sai vùng, sai logic phản ứng (cùng hướng vs ngược hướng), và sai stop/entry.
 
 ![[ImpliedFVG-Advanced-vs-StandardVsInverse.svg]]
-*Ba cột minh họa: FVG chuẩn (gap 3-nến rõ bằng high/low), Implied FVG (gap ẩn suy ra từ CE của bóng nến hai bên nến lớn), và [[17 - Inverse Fair Value Gap - iFVG]] (một FVG chuẩn cũ đã bị đóng nến xuyên qua nên đảo cực vai trò S/R). Bảng so sánh bên dưới liệt kê cơ sở xác định, số nến liên quan, điều kiện vô hiệu hóa và vai trò PD-array của từng loại.*
+*Ba cột minh họa: FVG chuẩn (gap 3-nến rõ bằng high/low), Implied FVG (gap ẩn suy ra từ CE của bóng nến hai bên nến lớn), và [[17-Inverse-Fair-Value-Gap-iFVG]] (một FVG chuẩn cũ đã bị đóng nến xuyên qua nên đảo cực vai trò S/R). Bảng so sánh bên dưới liệt kê cơ sở xác định, số nến liên quan, điều kiện vô hiệu hóa và vai trò PD-array của từng loại.*
 
-| Tiêu chí | **FVG chuẩn (3 nến)** | **Implied FVG** | **[[17 - Inverse Fair Value Gap - iFVG]]** |
+| Tiêu chí | **FVG chuẩn (3 nến)** | **Implied FVG** | **[[17-Inverse-Fair-Value-Gap-iFVG]]** |
 |---|---|---|---|
 | **Cơ sở xác định** | Gap giá rõ: high nến 1 → low nến 3 (bullish) | CE (50%) bóng nến trước → CE (50%) bóng nến sau nến lớn | Một FVG chuẩn đã tồn tại, sau đó bị **đóng nến xuyên qua** |
 | **Số nến liên quan** | 3 nến (gap thấy rõ bằng mắt) | 3 nến, nhưng bóng chồng lấp che gap → phải dùng CE | FVG gốc (3 nến) + nến vi phạm (violation) sau này |
@@ -194,7 +194,7 @@ Ba khái niệm này có tên gần giống nhau và đều xoay quanh chữ "FV
 > 4. **Có một FVG 3-nến rõ hơn để ưu tiên thay vì implied không?**
 
 ### D1 / H4 — Bias & Narrative
-- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12 - Daily Bias]]).
+- **Bias hiện tại:** Bullish / Bearish / Neutral (xem [[12-Daily-Bias]]).
 - **Premium/discount:** vùng implied cần Long phải ở discount; cần Short phải ở premium.
 - **HTF POI:** vùng implied có nằm trong/trùng một POI HTF không.
 
@@ -247,7 +247,7 @@ Invalid: đóng nến xuyên xuống dưới biên dưới vùng implied
 
 ### Implied FVG sau khi bị xuyên
 > [!note]
-> Giống FVG thường, một Implied FVG bị **đóng nến xuyên qua** có thể mất hiệu lực và **đảo cực** — lúc đó nó hành xử như một [[17 - Inverse Fair Value Gap - iFVG]] (implied). Nhưng hãy ghi rõ trong nhật ký: "Implied FVG bị xuyên → đảo cực", để không lẫn lộn khái niệm gốc với hệ quả.
+> Giống FVG thường, một Implied FVG bị **đóng nến xuyên qua** có thể mất hiệu lực và **đảo cực** — lúc đó nó hành xử như một [[17-Inverse-Fair-Value-Gap-iFVG]] (implied). Nhưng hãy ghi rõ trong nhật ký: "Implied FVG bị xuyên → đảo cực", để không lẫn lộn khái niệm gốc với hệ quả.
 
 ---
 
@@ -280,7 +280,7 @@ Trader thấy một bullish FVG 3-nến **bị đóng nến xuyên xuống** và
 **Bài học:**
 - **Implied FVG ≠ Inverse FVG.** Implied = imbalance ẩn (4 nến, trung điểm bóng); Inverse = FVG bị xuyên & đảo cực.
 - Implied FVG được xác định bằng trung điểm bóng hai nến lớn, không liên quan tới việc FVG cũ bị xuyên.
-- Khi thấy FVG bị đóng nến xuyên qua, đó là [[17 - Inverse Fair Value Gap - iFVG]] — gọi đúng tên để dùng đúng logic.
+- Khi thấy FVG bị đóng nến xuyên qua, đó là [[17-Inverse-Fair-Value-Gap-iFVG]] — gọi đúng tên để dùng đúng logic.
 
 ---
 ### Sequence mẫu — Bullish Implied FVG (imbalance ẩn)
@@ -305,7 +305,7 @@ Trường hợp B — Inverse FVG:
 ```
 
 > [!note]
-> Vì Implied FVG tinh tế và chủ quan hơn, hãy luôn dùng [[10 - Consequent Encroachment (Mean Threshold)|CE]] của vùng implied làm mức tham chiếu chính và yêu cầu LTF confirmation. Nếu có một FVG 3-nến rõ, ưu tiên nó trước.
+> Vì Implied FVG tinh tế và chủ quan hơn, hãy luôn dùng [[10-Consequent-Encroachment-Mean-Threshold|CE]] của vùng implied làm mức tham chiếu chính và yêu cầu LTF confirmation. Nếu có một FVG 3-nến rõ, ưu tiên nó trước.
 
 ---
 
@@ -445,7 +445,7 @@ Trường hợp B — Inverse FVG:
 
 2. **Đo vùng bằng CE (50%) của bóng nến, không phải bằng high/low thô hay cảm giác "nhìn có vẻ trùng nhau".** Dùng công cụ đo cụ thể (Fibonacci retracement hoặc kẻ ngang thủ công) để tìm trung điểm bóng nến trước và bóng nến sau nến lớn. Ghi `ce_midpoint_used: yes/no` — nếu câu trả lời là "no" vì bạn chỉ ước lượng bằng mắt, hãy hạ độ tin cậy của setup đó khi review.
 
-3. **Không bao giờ nhầm Implied FVG với [[17 - Inverse Fair Value Gap - iFVG]].** Đây là lỗi phổ biến và nguy hiểm nhất với khái niệm này vì tên viết tắt gần giống nhau. Implied = imbalance ẩn, phản ứng CÙNG hướng gốc; Inverse = một FVG cũ bị đóng nến xuyên qua rồi đảo cực, phản ứng NGƯỢC hướng gốc. Trước khi vào lệnh, luôn tự hỏi và ghi rõ trong journal: "Đây là Implied hay Inverse?"
+3. **Không bao giờ nhầm Implied FVG với [[17-Inverse-Fair-Value-Gap-iFVG]].** Đây là lỗi phổ biến và nguy hiểm nhất với khái niệm này vì tên viết tắt gần giống nhau. Implied = imbalance ẩn, phản ứng CÙNG hướng gốc; Inverse = một FVG cũ bị đóng nến xuyên qua rồi đảo cực, phản ứng NGƯỢC hướng gốc. Trước khi vào lệnh, luôn tự hỏi và ghi rõ trong journal: "Đây là Implied hay Inverse?"
 
 4. **Bắt buộc có liquidity sweep trước cụm nến tạo ra vùng implied.** Vì Implied FVG vốn là một cấu trúc suy luận (inferred), không phải một gap quan sát trực tiếp, nó cần thêm bằng chứng bối cảnh để bù lại độ chính xác thấp hơn. Một cụm nến sinh ra ngẫu nhiên giữa range, không sau sweep nào, gần như chắc chắn là noise. Ghi `liquidity_swept: yes/no` (kèm loại pool) cho mỗi setup.
 
@@ -572,11 +572,11 @@ FVG chuẩn đã bị phản biện nhiều; Implied FVG — vốn là một l�
 
 **Tình huống:** giống FVG chuẩn, một cụm nến Implied FVG được đánh giá "hình thành trong Silver Bullet 10-11h NY" nhưng thực chất do lệch DST 1 tuần giao thời, nó hình thành ngoài khung đó theo giờ NY thật.
 
-**Cách nhận diện sớm & xử lý:** áp dụng đúng quy tắc đã nêu ở EC4 của [[13 - FVG-Fair-Value-Gap]] — kiểm tra lịch DST Mỹ/EU hai lần mỗi năm, dùng đồng hồ giờ NY tuyệt đối trên chart.
+**Cách nhận diện sớm & xử lý:** áp dụng đúng quy tắc đã nêu ở EC4 của [[13-FVG-Fair-Value-Gap]] — kiểm tra lịch DST Mỹ/EU hai lần mỗi năm, dùng đồng hồ giờ NY tuyệt đối trên chart.
 
 ### EC5. Partial/không khớp tại midpoint — sai số tick cộng dồn với sai số vị trí thực thi
 
-**Tình huống:** đặt limit tại CE của vùng implied (đã là một xấp xỉ), giá chạm gần đó nhưng lệch 1-2 tick do chính sai số đo midpoint ban đầu cộng thêm hiện tượng front-run tương tự FVG chuẩn (xem EC7 của [[13 - FVG-Fair-Value-Gap]]) — tổng sai số đủ để lệnh không khớp trong khi giá "trông như đã chạm" trên chart.
+**Tình huống:** đặt limit tại CE của vùng implied (đã là một xấp xỉ), giá chạm gần đó nhưng lệch 1-2 tick do chính sai số đo midpoint ban đầu cộng thêm hiện tượng front-run tương tự FVG chuẩn (xem EC7 của [[13-FVG-Fair-Value-Gap]]) — tổng sai số đủ để lệnh không khớp trong khi giá "trông như đã chạm" trên chart.
 
 **Vì sao bẫy được cả trader có kinh nghiệm:** hai lớp sai số (đo lường + thực thi) cộng dồn nhưng dễ bị đánh giá riêng lẻ, khiến trader đánh giá thấp tổng rủi ro "hụt lệnh".
 

@@ -70,14 +70,14 @@ Advance Market Structure (cấu trúc thị trường nâng cao) là hệ thốn
 **Bản chất (fractal):** cấu trúc lặp lại ở mọi degree. Một STL trên M5 có thể là một ITL khi nhìn rộng hơn, và một LTL trên M15 có thể chỉ là một STL trên H4. **Degree luôn mang tính tương đối với khung quan sát.** Điều quan trọng không phải con số tuyệt đối mà là **thứ bậc**: cái nào gom cái nào.
 
 **Mục đích trong ICT:**  
-- Xác định **swing point thật** để vẽ [[12 - Dealing Range]] và xác định Premium/Discount chính xác.
+- Xác định **swing point thật** để vẽ [[12-Dealing-Range]] và xác định Premium/Discount chính xác.
 - Đo **BOS/MSS đúng degree**: phá ITH mới là BOS của xu hướng trung hạn; phá STH chỉ là chuyển động nội bộ.
 - Xác định **Protected High / Protected Low** — đỉnh/đáy mà nếu bị phá thì cấu trúc đổi.
 - **Lọc nhiễu**: bỏ qua các dao động nhỏ không đủ tư cách swing, tránh overtrade.
 - Định vị **liquidity**: dưới mỗi STL/ITL/LTL là sell-side liquidity; trên mỗi STH/ITH/LTH là buy-side liquidity, với "trọng lượng" tăng dần theo degree.
 
 **Vì sao khái niệm này quan trọng:**  
-Mọi khái niệm ICT khác (bias, dealing range, premium/discount, OTE, liquidity target) đều **dựa trên việc bạn đọc cấu trúc đúng**. Nếu bạn gắn nhãn swing sai, toàn bộ phân tích phía sau lệch. Đây là **nền móng** — quan trọng ngang [[19 - Liquidity]].
+Mọi khái niệm ICT khác (bias, dealing range, premium/discount, OTE, liquidity target) đều **dựa trên việc bạn đọc cấu trúc đúng**. Nếu bạn gắn nhãn swing sai, toàn bộ phân tích phía sau lệch. Đây là **nền móng** — quan trọng ngang [[19-Liquidity]].
 
 **Nó giúp trả lời câu hỏi nào trên chart?**
 - Đỉnh/đáy nào là swing point THẬT, đỉnh/đáy nào chỉ là nhiễu?
@@ -300,13 +300,13 @@ Trader gắn nhãn "BOS" lên một STH lẻ xuất hiện trong một pullback 
 ## 7. Entry model liên quan
 
 Khái niệm này thường kết hợp với:
-- [[05 - BOS - Break of Structure]] — cú phá tiếp diễn, phải đo đúng degree
-- [[21 - Market Structure Shift]] — cú phá đảo chiều, xác nhận trên LTF
-- [[09 - Change of Character]] — thủng protected level, cảnh báo đổi cấu trúc
-- [[12 - Dealing Range]] — vẽ từ swing degree cao
-- [[27 - Premium Discount]] — đo trên dealing range đúng degree
-- [[19 - Liquidity]] / [[20 - Liquidity Sweep]] — trọng lượng pool theo degree
-- [[15 - Inducement]] — sweep STL nội bộ trước move thật
+- [[05-BOS-Break-of-Structure]] — cú phá tiếp diễn, phải đo đúng degree
+- [[21-Market-Structure-Shift]] — cú phá đảo chiều, xác nhận trên LTF
+- [[09-Change-of-Character]] — thủng protected level, cảnh báo đổi cấu trúc
+- [[12-Dealing-Range]] — vẽ từ swing degree cao
+- [[27-Premium-Discount]] — đo trên dealing range đúng degree
+- [[19-Liquidity]] / [[20-Liquidity-Sweep]] — trọng lượng pool theo degree
+- [[15-Inducement]] — sweep STL nội bộ trước move thật
 
 ### Sequence mẫu — Long theo cấu trúc tăng đúng degree
 ```text

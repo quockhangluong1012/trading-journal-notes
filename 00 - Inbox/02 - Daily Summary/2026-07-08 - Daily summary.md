@@ -6,7 +6,7 @@ exam_target: 2027-01-07
 backtests_logged: 1
 trades_logged: 0
 concepts_reviewed: 3
-mistakes_triggered: ["[[04 - Mistake - FOMO Entry]]", "[[06 - Mistake - Not Have Market Structure Shift]]", "[[08 - Mistake - Weak Displacement]]", "[[10 - Mistake - FVG Not Valid]]"]
+mistakes_triggered: ["[[04-Mistake-FOMO-Entry]]", "[[06-Mistake-Not-Have-Market-Structure-Shift]]", "[[08-Mistake-Weak-Displacement]]", "[[10-Mistake-FVG-Not-Valid]]"]
 net_r_today: 0
 tags: [daily-summary, prop-firm-prep]
 ---
@@ -21,16 +21,16 @@ tags: [daily-summary, prop-firm-prep]
 > - **Bảng tuần 2026-W27 trong [[02 - Skill Metrics]] vẫn CHƯA được dán, trễ 6 ngày** (07-03 → 07-08). Bảng hiện chỉ có đúng 1 dòng `2026-W26` bỏ trống. Hôm nay là ngày thứ 4 của tuần 2026-W28 mà cả W27 lẫn W28 đều chưa có dòng nào. Dòng dán tay đã soạn sẵn trong [[2026-07 W27 - Weekly summary]].
 > - **Prose thân file của 2 goal mid-term vẫn lệch với `baseline` đã sửa** (mismatch nội bộ trong cùng 1 file): [[Master the ICT 2022 Model]] mục "Cách đo lường → Hiện tại" vẫn ghi "~20 setup" (frontmatter `baseline` đã đúng "5"); [[Build a statistically validated backtest sample]] mục "Cách đo lường → Hiện tại" vẫn ghi "~15 backtest" (frontmatter `baseline` "5"). Con số thật hôm nay: **6 backtest / 6 setup**.
 > - **Nhãn `phase: "Phase 4 - Challenge"` trong 2 goal FTMO/The5ers vẫn gây hiểu lầm** — kế hoạch hành động nội bộ cả hai vẫn ở "Giai đoạn 0 — Chuẩn bị" (chưa mua gói). Vấn đề nêu nhiều ngày, chưa sửa.
-> - **Lỗi top-3 #1 tái xuất trong backtest hôm nay (nhẹ, có bối cảnh):** [[06 - Mistake - Not Have Market Structure Shift]] xuất hiện lại trong backtest EURUSD 2005-05-02 (là *triệu chứng* của root cause [[04 - Mistake - FOMO Entry]]). Đây là lỗi trong **backtest** — chính là nơi cần bắt được nó — không phải lỗi tiền thật, và đã được ghi nhận trung thực. Không làm thay đổi số đếm live-trade của [[02 - Mistake Frequency Dashboard]] (dashboard chỉ đọc field `mistakes` của trade live).
+> - **Lỗi top-3 #1 tái xuất trong backtest hôm nay (nhẹ, có bối cảnh):** [[06-Mistake-Not-Have-Market-Structure-Shift]] xuất hiện lại trong backtest EURUSD 2005-05-02 (là *triệu chứng* của root cause [[04-Mistake-FOMO-Entry]]). Đây là lỗi trong **backtest** — chính là nơi cần bắt được nó — không phải lỗi tiền thật, và đã được ghi nhận trung thực. Không làm thay đổi số đếm live-trade của [[02 - Mistake Frequency Dashboard]] (dashboard chỉ đọc field `mistakes` của trade live).
 > - **Không có lệnh live 20 ngày** (gần nhất 2026-06-18, `Loss - 01 - Trade 2026-06-18 NDX Short`). Chấp nhận được trong Giai đoạn 1 (ưu tiên backtest/journaling, không phải khối lượng lệnh), nhưng đã vượt xa ngưỡng 10 ngày.
 
 ## 📚 Học hôm nay
 
 **3 concept có bằng chứng review thật hôm nay** (`last_reviewed`/`updated` = `2026-07-08`, khớp đúng 3 checkbox `[x]` buổi sáng trong `2026-07-08 tasks.md`), **cả 3 đều được nâng `seed` → `developing`**:
 
-1. **[[05 - BOS - Break of Structure]]** — việc còn nợ từ 07-07, hôm nay đã làm. Đối chiếu trực tiếp với [[21 - Market Structure Shift]] (đã lên `developing` hôm 07-07) để phân biệt rạch ròi **BOS = phá thuận hướng (tiếp diễn)** vs **MSS = phá ngược hướng sweep (đảo chiều)** — đúng phân biệt cốt lõi cho việc chọn POI.
-2. **[[04 - Breaker Block]]** — POI xuất hiện trong chính 2 backtest Grade A hôm 07-07 (Unicorn = Breaker + FVG). Đào sâu tiêu chí nhận diện Breaker Block hợp lệ.
-3. **[[18 - Kill Zones]]** — đối chiếu khung giờ London/NY đã dùng trong các backtest gần đây; nâng lên `developing` vì đã viết được tiêu chí theo từng phiên.
+1. **[[05-BOS-Break-of-Structure]]** — việc còn nợ từ 07-07, hôm nay đã làm. Đối chiếu trực tiếp với [[21-Market-Structure-Shift]] (đã lên `developing` hôm 07-07) để phân biệt rạch ròi **BOS = phá thuận hướng (tiếp diễn)** vs **MSS = phá ngược hướng sweep (đảo chiều)** — đúng phân biệt cốt lõi cho việc chọn POI.
+2. **[[04-Breaker-Block]]** — POI xuất hiện trong chính 2 backtest Grade A hôm 07-07 (Unicorn = Breaker + FVG). Đào sâu tiêu chí nhận diện Breaker Block hợp lệ.
+3. **[[18-Kill-Zones]]** — đối chiếu khung giờ London/NY đã dùng trong các backtest gần đây; nâng lên `developing` vì đã viết được tiêu chí theo từng phiên.
 
 **Đếm lại toàn bộ Concepts** (số thật, không suy đoán): **44 note, 12 `seed`, 32 `developing`, 0 `tested`, 0 `mastered`** — tăng **3 `developing`** (giảm 3 `seed`) đúng bằng 3 concept đổi trạng thái hôm nay (hôm qua là 15/29).
 
@@ -43,7 +43,7 @@ tags: [daily-summary, prop-firm-prep]
 - **Chuỗi entry ICT 2022 (Sweep → Displacement → MSS → FVG/OB → Entry):** khâu gãy nằm ở **Displacement (No)** và **MSS (No)** — `fvg_valid: No`. Chỉ có Liquidity Sweep (Yes) là hợp lệ. Vào lệnh trên **nhịp reject ĐẦU TIÊN** tại Order Block H1 khi mô hình 2022 **chưa hoàn tất** — đây là điểm gãy quyết định.
 - **SL/TP & R:** Entry 1.28639, SL 1.28392, TP 1.29304, `r_planned` 2.76 nhưng `r_multiple` **−1** (stop). Vị trí SL/TP hợp lý theo kế hoạch; vấn đề không phải quản trị lệnh mà là **timing bấm cò**.
 - **followed_plan: No**, Grade **D**, tự chấm khớp mô hình chuẩn **40%**.
-- **Root cause (theo mục 5 note):** [[04 - Mistake - FOMO Entry]] — vào sớm vì sợ lỡ sóng; ba lỗi kèm theo ([[06 - Mistake - Not Have Market Structure Shift]], [[08 - Mistake - Weak Displacement]], [[10 - Mistake - FVG Not Valid]]) đều là **hệ quả** của việc vào sớm, không phải lỗi độc lập. Cú reject đầu tiên là **liquidity trap**: giá bật fake hút lệnh buy → quét đúng stop → còn quét thêm 2 lần xuống CE để gom nốt thanh khoản → chỉ SAU đó mới bung displacement + MSS + FVG thật. Khoảng cách giữa lệnh thua và entry đúng chỉ là **sự kiên nhẫn chờ MSS** (< 25 pips về giá, cả một thế giới về xác suất).
+- **Root cause (theo mục 5 note):** [[04-Mistake-FOMO-Entry]] — vào sớm vì sợ lỡ sóng; ba lỗi kèm theo ([[06-Mistake-Not-Have-Market-Structure-Shift]], [[08-Mistake-Weak-Displacement]], [[10-Mistake-FVG-Not-Valid]]) đều là **hệ quả** của việc vào sớm, không phải lỗi độc lập. Cú reject đầu tiên là **liquidity trap**: giá bật fake hút lệnh buy → quét đúng stop → còn quét thêm 2 lần xuống CE để gom nốt thanh khoản → chỉ SAU đó mới bung displacement + MSS + FVG thật. Khoảng cách giữa lệnh thua và entry đúng chỉ là **sự kiên nhẫn chờ MSS** (< 25 pips về giá, cả một thế giới về xác suất).
 - **Lesson Learned:** đã điền **đầy đủ ngay trong ngày** — kèm rule đề xuất playbook: *"No MSS, No Entry"*, quy trình **"cò 2 tầng"** (đánh dấu sẵn swing cần phá → chỉ đặt lệnh sau khi nến ĐÓNG CỬA phá bằng displacement → hủy nếu FVG sinh từ nến thân nhỏ/doji), và tiêu chí định lượng displacement (thân ≥ 1.5–2× ATR khung entry).
 
 **Aggregate hôm nay:** 1 backtest, 0 Win / **1 Loss** / 0 BE. **R backtest hôm nay = −1R.** Đây là **lệnh thua đầu tiên** của mẫu backtest gần đây (4 backtest trước 07-06/07-07 đều Win Grade A). Một lệnh thua *đúng-quy-trình-ghi-chép* (dù sai-quy-trình-vào-lệnh) có giá trị dữ liệu cao: nó cho mẫu một điểm âm thực tế thay vì chuỗi thắng đẹp không phản ánh rủi ro FOMO thật.
@@ -62,15 +62,15 @@ tags: [daily-summary, prop-firm-prep]
 
 **Lỗi kích hoạt hôm nay — toàn bộ trong bối cảnh BACKTEST** (không có lệnh live để phạm lỗi tiền thật). Backtest EURUSD 2005-05-02 gắn 4 mistake note (đã mở đọc để nêu đúng bản chất, không chỉ lặp title):
 
-- **[[04 - Mistake - FOMO Entry]]** *(root cause)* — vào lệnh trên phản ứng đầu tiên tại POI vì sợ lỡ sóng, trước khi có xác nhận. Đây là gốc rễ của cả cụm lỗi hôm nay.
-- **[[06 - Mistake - Not Have Market Structure Shift]]** *(lỗi top-3 #1)* — tại thời điểm entry giá **chưa phá swing point ngược hướng sweep**; không có MSS = chưa có bằng chứng smart money đảo hướng. **Đây là lỗi top-3 tần suất cao nhất tái xuất** — nhưng bắt được nó trong backtest chính là mục đích của backtest.
-- **[[08 - Mistake - Weak Displacement]]** — nhịp bật khỏi OB chỉ gồm nến thân nhỏ + doji, không phải displacement thật.
-- **[[10 - Mistake - FVG Not Valid]]** — FVG dùng để entry sinh từ nến thân nhỏ → không hợp lệ.
+- **[[04-Mistake-FOMO-Entry]]** *(root cause)* — vào lệnh trên phản ứng đầu tiên tại POI vì sợ lỡ sóng, trước khi có xác nhận. Đây là gốc rễ của cả cụm lỗi hôm nay.
+- **[[06-Mistake-Not-Have-Market-Structure-Shift]]** *(lỗi top-3 #1)* — tại thời điểm entry giá **chưa phá swing point ngược hướng sweep**; không có MSS = chưa có bằng chứng smart money đảo hướng. **Đây là lỗi top-3 tần suất cao nhất tái xuất** — nhưng bắt được nó trong backtest chính là mục đích của backtest.
+- **[[08-Mistake-Weak-Displacement]]** — nhịp bật khỏi OB chỉ gồm nến thân nhỏ + doji, không phải displacement thật.
+- **[[10-Mistake-FVG-Not-Valid]]** — FVG dùng để entry sinh từ nến thân nhỏ → không hợp lệ.
 
 **Ghi nhận lớn nhất hôm nay về mặt lỗi:** **3 note lỗi top-3 — rỗng suốt 6 ngày (từ 07-03) — hôm nay đã có nội dung THẬT** (đối chiếu trực tiếp, không còn `wc -l` = 0):
-- [[06 - Mistake - Not Have Market Structure Shift]] — 244 dòng (`updated: 2026-07-08`): định nghĩa MSS chuẩn ("sweep là câu hỏi, MSS là câu trả lời"), 2 biến thể lỗi (không chờ MSS / gọi nhầm break yếu là MSS), bảng dấu hiệu nhận biết, biện pháp đối phó.
-- [[09 - Mistake - Wrong daily bias]] — 280 dòng (kèm SVG minh hoạ, commit hôm nay).
-- [[07 - Mistake - Risk more than 0.5% total account]] — 287 dòng.
+- [[06-Mistake-Not-Have-Market-Structure-Shift]] — 244 dòng (`updated: 2026-07-08`): định nghĩa MSS chuẩn ("sweep là câu hỏi, MSS là câu trả lời"), 2 biến thể lỗi (không chờ MSS / gọi nhầm break yếu là MSS), bảng dấu hiệu nhận biết, biện pháp đối phó.
+- [[09-Mistake-Wrong-daily-bias]] — 280 dòng (kèm SVG minh hoạ, commit hôm nay).
+- [[07-Mistake-Risk-more-than-0.5-total-account]] — 287 dòng.
 
 Đây là khoản nợ nặng nhất trong danh sách cảnh báo nhiều ngày (chặn cột mốc #2 của [[Cut my top 3 repeated mistakes]]) — nay đã được trả. **Số đếm tần suất live-trade không đổi** (14/7/5) vì backtest hôm nay không ghi vào [[02 - Mistake Frequency Dashboard]] (dashboard chỉ đọc field `mistakes` của trade live, backtest 07-08 không có field này).
 
@@ -113,7 +113,7 @@ tags: [daily-summary, prop-firm-prep]
 5. **Cập nhật ≥1 dòng "Nhật ký tiến độ"** cho FTMO **hoặc** The5ers (đứng yên 15 ngày) — ghi đúng thực tế kể cả "0%, chưa mua gói", hoặc tốt hơn: bắt đầu 1 bước Giai đoạn 0 thật (ví dụ lập bảng lot size 0,5%/1% cho tài khoản 10K$) để có nội dung thật mà log.
 6. **Duy trì chuỗi backtest** (đã 3 ngày liên tiếp) — log ≥1 backtest ngày mai để thành 4 ngày và tiếp tục thu hẹp khoảng cách nhịp (1,35 lần). **Ưu tiên một setup mà mình chờ đủ MSS + displacement** để cân lại điểm dữ liệu âm FOMO hôm nay.
 7. **Áp dụng ngay bài học FOMO hôm nay:** trước backtest/lệnh kế tiếp, đánh dấu sẵn **protected swing cần phá để có MSS** (quy trình "cò 2 tầng"), và chỉ tính entry sau nến ĐÓNG CỬA phá bằng displacement — biến rule vừa viết thành phản xạ.
-8. **(Tùy chọn) Ôn tiếp 1 concept** để giữ nhịp học — ưu tiên [[07 - Unicorn Model]] hoặc [[17 - Inverse Fair Value Gap - iFVG]] (POI đã dùng trong các backtest Grade A) để nâng dần seed→developing.
+8. **(Tùy chọn) Ôn tiếp 1 concept** để giữ nhịp học — ưu tiên [[07 - Unicorn Model]] hoặc [[17-Inverse-Fair-Value-Gap-iFVG]] (POI đã dùng trong các backtest Grade A) để nâng dần seed→developing.
 
 ## 🔗 Liên kết
 

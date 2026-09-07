@@ -59,7 +59,7 @@ updated: 2026-07-28
 
 Đây là phần cốt lõi tách người hiểu CISD sâu khỏi người chỉ vẽ đường theo công thức.
 
-**"Delivery" nghĩa là gì?** ICT mô hình hoá thị trường như một **thuật toán giao giá (price delivery)** — IPDA (Interbank Price Delivery Algorithm). Thuật toán không "mua/bán" theo cảm xúc; nó **giao giá theo một chương trình** hướng về một mục tiêu thanh khoản (draw on liquidity, xem [[39 - Draw on Liquidity (Tại sao giá di chuyển & ai là đối ứng)]]). Khi đang giao xuống, ta thấy một **chuỗi nến giảm cùng màu** — đó là một "chân giao hàng" (delivery leg) thể hiện chương trình đang chạy theo chiều bán.
+**"Delivery" nghĩa là gì?** ICT mô hình hoá thị trường như một **thuật toán giao giá (price delivery)** — IPDA (Interbank Price Delivery Algorithm). Thuật toán không "mua/bán" theo cảm xúc; nó **giao giá theo một chương trình** hướng về một mục tiêu thanh khoản (draw on liquidity, xem [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]]). Khi đang giao xuống, ta thấy một **chuỗi nến giảm cùng màu** — đó là một "chân giao hàng" (delivery leg) thể hiện chương trình đang chạy theo chiều bán.
 
 **Vì sao mốc quan trọng là OPEN, không phải low hay close?**
 - **Open của nến đầu chuỗi = nơi chương trình bán bắt đầu.** Nó là "dấu vân tay" của ý định thuật toán tại thời điểm khởi động leg đó.
@@ -82,7 +82,7 @@ updated: 2026-07-28
 - [ ] CISD xảy ra tại/gần một **POI HTF** (OB, FVG, breaker, OTE zone)
 - [ ] Đang trong **killzone** (London / NY AM / NY PM) hoặc **macro window**
 - [ ] Chuỗi nến đẩy trước CISD là **displacement rõ** (không phải nến lèo tèo)
-- [ ] Có **SMT divergence** xác nhận cực trị là terminal ([[42 - SMT Divergence]])
+- [ ] Có **SMT divergence** xác nhận cực trị là terminal ([[42-SMT-Divergence]])
 
 ### Khi nào nên bỏ qua?
 - [ ] CISD xuất hiện **giữa range**, không ở cực trị
@@ -116,11 +116,11 @@ updated: 2026-07-28
 - [ ] Có **sweep thanh khoản** trước khi CISD in ra.
 
 ### Điều kiện tăng xác suất
-- [ ] Nến phá CISD là **displacement** để lại FVG/imbalance ([[13 - FVG  - Fair Value Gap|FVG]])
+- [ ] Nến phá CISD là **displacement** để lại FVG/imbalance ([[13-FVG-Fair-Value-Gap|FVG]])
 - [ ] CISD level trùng với một **Order Block / FVG / OTE** HTF
 - [ ] Có **SMT divergence** giữa các cặp tương quan (NQ/ES, EU/GU, XAU/DXY)
 - [ ] CISD in trong **macro window** (vd 09:50–10:10 ET cho NQ)
-- [ ] Giá đang ở **Premium/Discount** đúng phía với hướng CISD ([[27 - Premium Discount]])
+- [ ] Giá đang ở **Premium/Discount** đúng phía với hướng CISD ([[27-Premium-Discount]])
 
 ### Điều kiện làm setup yếu đi
 - Chuỗi đẩy quá dài (>7–8 nến) → CISD level ở quá xa, stop rộng, RR xấu.
@@ -138,8 +138,8 @@ Ba khái niệm này đều mô tả **sự đảo chiều dòng lệnh** nhưng
 | Khái niệm | Đo bằng | Thời điểm in | Ý nghĩa |
 |---|---|---|---|
 | **CISD** | Đóng qua **open chuỗi nến đẩy** | **Sớm nhất** | Delivery đổi trạng thái — nhạy, entry giá tốt |
-| **MSS** ([[21 - Market Structure Shift]]) | Đóng qua **swing high/low** gần nhất | Trung bình | Cấu trúc thị trường đảo — chắc hơn CISD |
-| **CHoCH** ([[09 - Change of Character]]) | Phá swing đối nghịch **đầu tiên** của trend | Trung bình–muộn | Đổi "tính cách" trend, dùng nhiều ở LTF |
+| **MSS** ([[21-Market-Structure-Shift]]) | Đóng qua **swing high/low** gần nhất | Trung bình | Cấu trúc thị trường đảo — chắc hơn CISD |
+| **CHoCH** ([[09-Change-of-Character]]) | Phá swing đối nghịch **đầu tiên** của trend | Trung bình–muộn | Đổi "tính cách" trend, dùng nhiều ở LTF |
 
 > [!info] Vì sao CISD luôn in trước MSS
 > Open của nến đầu chuỗi đẩy nằm **thấp hơn (gần hơn)** so với swing high phía trên (trong reversal bullish). Vì mốc gần hơn nên giá **chạm và đóng qua nó trước** khi kịp phá swing → CISD cho tín hiệu **sớm hơn**, đổi lại **rủi ro nhiễu cao hơn** nếu thiếu sweep + POI. Cách phối hợp tối ưu: dùng **CISD làm trigger sớm** để chuẩn bị, rồi **MSS làm xác nhận chắc** — hoặc vào một phần ở CISD, gia tăng ở MSS.
@@ -150,7 +150,7 @@ Ba khái niệm này đều mô tả **sự đảo chiều dòng lệnh** nhưng
 
 ![[CISD-Advanced-vs-OrderBlock.svg|697]]
 
-CISD là một **mức giá** (một đường), còn [[25 - OB - Order Block|Order Block]] là một **vùng** (dải high–low của nến gốc). Điều này quyết định cách dùng:
+CISD là một **mức giá** (một đường), còn [[25-OB-Order-Block|Order Block]] là một **vùng** (dải high–low của nến gốc). Điều này quyết định cách dùng:
 
 - **CISD** dễ đặt alert, cho **điểm trigger chính xác**, nhưng bản thân nó không phải vùng để "chờ giá phản ứng".
 - **Order Block** cho **vùng entry** để đặt limit, nhưng điểm trigger kém chính xác hơn.
@@ -162,7 +162,7 @@ CISD là một **mức giá** (một đường), còn [[25 - OB - Order Block|Or
 
 ![[CISD-Advanced-Timeframe.svg|697]]
 
-CISD hoạt động ở **mọi khung** theo nguyên lý fractal. Quy tắc top-down ([[32 - Top-down Analysis (Multiple Timeframes)]]):
+CISD hoạt động ở **mọi khung** theo nguyên lý fractal. Quy tắc top-down ([[32-Top-down-Analysis-Multiple-Timeframes]]):
 
 - **H4/H1 — Bias:** CISD trên HTF xác nhận **draw on liquidity đã đổi hướng**. Dùng để **chọn phe**, không phải để entry (entry sẽ quá muộn/stop rộng).
 - **M15/M5 — Context:** chờ CISD tại POI HTF trong killzone → xác nhận thao túng kết thúc. Đây là **điểm cân bằng tốt nhất** giữa độ tin cậy và giá entry.
@@ -176,7 +176,7 @@ CISD hoạt động ở **mọi khung** theo nguyên lý fractal. Quy tắc top-
 - Dùng **CISD LTF** để **vào lệnh sớm với stop nhỏ**, rồi **gia tăng (scale-in)** khi **CISD HTF** đóng xác nhận.
 - Chuỗi nested cho phép **dời stop nhanh**: mỗi CISD LTF mới thuận hướng là một cột mốc để trail.
 
-**Failed CISD (bẫy):** CISD bị **vô hiệu** khi một nến sau đó **đóng body trở lại phía sai** của CISD level. Nguyên nhân điển hình: CISD in ra **thiếu sweep**, **ngược bias**, hoặc **giữa range**. Đây là tín hiệu **cắt lệnh dứt khoát** — đừng "hy vọng" nó hồi lại. Một CISD thất bại thường tự nó trở thành **inducement** cho phe ngược lại (xem [[15 - Inducement]]).
+**Failed CISD (bẫy):** CISD bị **vô hiệu** khi một nến sau đó **đóng body trở lại phía sai** của CISD level. Nguyên nhân điển hình: CISD in ra **thiếu sweep**, **ngược bias**, hoặc **giữa range**. Đây là tín hiệu **cắt lệnh dứt khoát** — đừng "hy vọng" nó hồi lại. Một CISD thất bại thường tự nó trở thành **inducement** cho phe ngược lại (xem [[15-Inducement]]).
 
 > [!warning] Quy tắc invalidation
 > Bullish CISD bị huỷ khi giá **đóng cửa body trở lại DƯỚI** CISD level (và/hoặc dưới wick sweep). Đặt mức này làm **stop logic**, không phải một con số cảm tính.
@@ -187,7 +187,7 @@ CISD hoạt động ở **mọi khung** theo nguyên lý fractal. Quy tắc top-
 
 ![[CISD-Advanced-PO3.svg|697]]
 
-Ghép CISD vào khung **Power of Three / AMD** ([[02 - AMD]]) là cách mạnh nhất để biết mình đang ở đâu trong "câu chuyện" trong ngày:
+Ghép CISD vào khung **Power of Three / AMD** ([[02-AMD]]) là cách mạnh nhất để biết mình đang ở đâu trong "câu chuyện" trong ngày:
 
 - **Accumulation:** giá tích luỹ quanh giá mở cửa (open) — chưa trade.
 - **Manipulation:** thuật toán **đẩy giá ngược hướng thật** để sweep thanh khoản (vd quét SSL trong ngày bullish). Đây là "chân giao hàng" mà ta sẽ đo CISD.
@@ -202,7 +202,7 @@ Ghép CISD vào khung **Power of Three / AMD** ([[02 - AMD]]) là cách mạnh n
 
 ![[CISD-Advanced-Reclaim.svg|697]]
 
-Một biến thể cao cấp: dùng **giá mở cửa tham chiếu** (Midnight Open 00:00 ET, hoặc [[23 - New Day Opening Gap|NDOG]] / [[24 - New Week Opening Gap|NWOG]]) làm **mốc delivery gốc** thay cho open của một chuỗi nến LTF.
+Một biến thể cao cấp: dùng **giá mở cửa tham chiếu** (Midnight Open 00:00 ET, hoặc [[23-New-Day-Opening-Gap|NDOG]] / [[24-New-Week-Opening-Gap|NWOG]]) làm **mốc delivery gốc** thay cho open của một chuỗi nến LTF.
 
 - Thuật toán coi **open trong ngày là "giá trị công bằng"**: dưới open = **discount** (rẻ), trên open = **premium** (đắt).
 - Kịch bản bullish: giá bị đẩy **xuống dưới open** để sweep SSL (manipulation, gom hàng giá rẻ) → sau đó một nến **đóng cửa trở lại TRÊN open** = **opening-price reclaim**. Đây là một dạng CISD ở "độ phân giải trong ngày" và thường **xác nhận bias bullish của ngày**.
@@ -217,13 +217,13 @@ Một biến thể cao cấp: dùng **giá mở cửa tham chiếu** (Midnight O
 
 ![[CISD-Advanced-StdDev.svg|697]]
 
-CISD không chỉ cho **điểm vào**; chân giao hàng của nó cho ta một **thước đo khách quan để chiếu mục tiêu** ([[31 - Standard Deviation]]):
+CISD không chỉ cho **điểm vào**; chân giao hàng của nó cho ta một **thước đo khách quan để chiếu mục tiêu** ([[31-Standard-Deviation]]):
 
 1. **Đo 1 SD** = khoảng cách từ **điểm sweep (cực trị)** tới **CISD level** — chính là biên độ của chân thao túng.
 2. **Chiếu bội số** theo hướng delivery mới: **-2 SD, -2.5 SD, -4 SD** (dấu âm chỉ hướng mở rộng ngược lại chân thao túng).
 3. **Gán target:** thường **-2 SD ≈ T1 / IRL gần nhất**, **-2.5 SD ≈ T2**, **-4 SD** cho ngày xu hướng mạnh.
 
-**Best practice:** đừng chốt tại một SD "trần trụi". Ưu tiên SD **trùng với IRL/ERL** ([[16 - Internal & External Range Liquidity (IRL & ERL)]]) hoặc **POI HTF** — confluence giữa SD và một pool thanh khoản thật cho target đáng tin hơn nhiều so với một con số hình học đơn thuần.
+**Best practice:** đừng chốt tại một SD "trần trụi". Ưu tiên SD **trùng với IRL/ERL** ([[16-Internal-External-Range-Liquidity-IRL-ERL]]) hoặc **POI HTF** — confluence giữa SD và một pool thanh khoản thật cho target đáng tin hơn nhiều so với một con số hình học đơn thuần.
 
 ---
 
@@ -240,7 +240,7 @@ CISD không chỉ cho **điểm vào**; chân giao hàng của nó cho ta một 
 **Bước 4 — Entry ở retrace, không đuổi.** Đặt limit tại **FVG (50% CE)** hoặc **OB** trùng CISD level. **Stop dưới wick nến sweep** (bullish) / trên wick sweep (bearish). T1 = IRL gần nhất, T2 = ERL / draw on liquidity. Dời BE sau T1.
 
 ### Scaling nâng cao (khi đã thành thạo)
-- **Vào một phần ở CISD LTF** (M1) với stop nhỏ dưới wick sweep → **gia tăng khi CISD/MSS HTF** (M5/M15) xác nhận. Rủi ro trung bình mỗi lệnh vẫn ≤ 0.5% ([[43 - Position Sizing]]).
+- **Vào một phần ở CISD LTF** (M1) với stop nhỏ dưới wick sweep → **gia tăng khi CISD/MSS HTF** (M5/M15) xác nhận. Rủi ro trung bình mỗi lệnh vẫn ≤ 0.5% ([[43-Position-Sizing]]).
 - **Nếu bỏ lỡ retrace đầu:** chờ **CISD nội bộ tiếp theo** trên đường đi (nested) thay vì đuổi giá.
 - **Quản lý theo SD:** chốt một phần ở -2 SD, để phần còn lại chạy về ERL với stop đã BE.
 
@@ -298,7 +298,7 @@ CISD không chỉ cho **điểm vào**; chân giao hàng của nó cho ta một 
 
 - Đặt **alert** tại CISD level ngay khi thấy sweep → không phải dán mắt vào chart chờ nến đóng.
 - Trên LTF, ưu tiên CISD tạo bởi **displacement mạnh** (nến thân dài, đóng gần đỉnh/đáy) — displacement yếu = delivery yếu.
-- Ghép CISD với **macro window** ([[40 - Macro Times]]): CISD in trong 09:50–10:10 ET (NQ) có xác suất cao hơn hẳn CISD ngoài macro.
+- Ghép CISD với **macro window** ([[40-Macro-Times]]): CISD in trong 09:50–10:10 ET (NQ) có xác suất cao hơn hẳn CISD ngoài macro.
 - Dùng **open trong ngày làm bộ lọc bias** (mục 9): đừng long khi giá còn dưới open, đừng short khi còn trên open, trừ khi HTF ép buộc.
 - Ghi nhật ký: mỗi lệnh nên đánh dấu **CISD in ở khung nào**, **có trùng POI/SMT không**, **có nằm sau sweep + trong AMD-distribution không** để đo edge từng loại setup theo thời gian.
 - Với người mới: hãy **chờ MSS xác nhận** thay vì vào ngay CISD, cho đến khi backtest chứng minh bạn đọc CISD đủ tốt.
@@ -410,7 +410,7 @@ CISD không chỉ cho **điểm vào**; chân giao hàng của nó cho ta một 
 **Bối cảnh:** §11 dạy vào lệnh ở retrace (limit tại FVG 50% CE / OB) để có giá tốt và không đuổi nến. Đúng trong đa số trường hợp. Nhưng backtest lộ ra một nghịch lý: **chính những CISD mạnh nhất — dẫn tới những leg lớn nhất — lại thường không hề hồi về FVG.** Khi delivery quá dứt khoát (institutional sponsorship mạnh), giá bốc thẳng sau khi CISD in, để lại một lệnh limit không bao giờ khớp. Kết quả: kế hoạch "chỉ limit tại FVG" một cách máy móc **lọc bỏ đúng những trade tốt nhất trong tháng** và chỉ giữ lại những trade retrace nhiều (thường là các leg yếu hơn).
 
 ![[CISD-Advanced-NoRetrace.svg|720]]
-*Panel A: chờ limit tại FVG → giá bốc thẳng, lệnh không khớp, bỏ lỡ leg mạnh. Panel B: phương án dự phòng — vào theo một M1 MSS ở pullback nông (logic giống [[35 - Aggressive Displacement Entry]]), stop dưới wick sweep, size nhỏ hơn để bù cho entry kém tối ưu.*
+*Panel A: chờ limit tại FVG → giá bốc thẳng, lệnh không khớp, bỏ lỡ leg mạnh. Panel B: phương án dự phòng — vào theo một M1 MSS ở pullback nông (logic giống [[35-Aggressive-Displacement-Entry]]), stop dưới wick sweep, size nhỏ hơn để bù cho entry kém tối ưu.*
 
 **Cách xử lý đã kiểm chứng:** luôn chuẩn bị **hai kịch bản song song** ngay khi CISD in — (1) *kịch bản retrace*: limit tại FVG/CE như tiêu chuẩn; (2) *kịch bản no-retrace*: nếu giá không hồi mà tạo một pullback nông rồi một M1 MSS tiếp diễn, vào theo MSS đó với size nhỏ hơn và stop dưới wick sweep. Ranh giới để chuyển sang kịch bản 2 là **độ nông của pullback đầu tiên** — nếu pullback không chạm nổi CE của FVG mà đã có M1 MSS tiếp diễn, đó là dấu hiệu delivery quá mạnh, nên vào theo momentum thay vì cố chờ giá "tặng" mình mức limit đẹp.
 
@@ -427,7 +427,7 @@ Trong phiên Á, một "chuỗi giao hàng" có thể chỉ là hệ quả của
 |---|---|---|
 | Phiên Á (Tokyo/Sydney) | Chuỗi đẩy dễ là nhiễu thanh khoản mỏng, không phải delivery institutional | Hạ conviction; ưu tiên chờ London xác nhận lại thay vì tin CISD phiên Á làm nền bias cả ngày |
 | Rollover 17:00 ET (futures) | Gap giữa các nến làm mốc open nến đầu chuỗi mơ hồ | Không đếm chuỗi xuyên qua rollover; bắt đầu đếm lại từ nến sau gap |
-| Weekend gap (mở phiên Chủ nhật) | Chuỗi trước/sau gap thuộc hai "phiên delivery" khác nhau | Ưu tiên dùng [[24 - New Week Opening Gap|NWOG]] làm mốc reclaim thay cho CISD chuỗi thường |
+| Weekend gap (mở phiên Chủ nhật) | Chuỗi trước/sau gap thuộc hai "phiên delivery" khác nhau | Ưu tiên dùng [[24-New-Week-Opening-Gap|NWOG]] làm mốc reclaim thay cho CISD chuỗi thường |
 | London / NY overlap | Thanh khoản dày nhất — phép đếm đáng tin nhất | Áp dụng CISD tiêu chuẩn; đây là nơi CISD hoạt động tốt nhất |
 
 **Cách xử lý đã kiểm chứng:** coi CISD như một công cụ **của phiên thanh khoản dày** (London Open, NY AM, London-NY overlap, macro window). Ngoài các cửa sổ đó — đặc biệt phiên Á và quanh mọi loại gap — hoặc là hạ hẳn conviction, hoặc chuyển sang mốc reclaim theo giá mở cửa tham chiếu (Midnight Open / NDOG / NWOG, xem §9) vốn ổn định hơn phép đếm chuỗi nến khi cấu trúc nến bị đứt đoạn.
@@ -636,7 +636,7 @@ Trong ngôn ngữ Market Profile, một CISD hợp lệ có nét tương đồng
 
 5. **Sai lệch dữ liệu giữa các nguồn cấp giá (data feed) khác nhau về giá open chính xác.** Với cùng một cây nến, hai broker/nền tảng khác nhau đôi khi ghi nhận open hơi khác nhau (do độ trễ nhận dữ liệu, xử lý tick đầu tiên khác nhau) — ở các thị trường thanh khoản thấp hoặc giờ chuyển phiên, sai lệch nhỏ này đôi khi đủ để một CISD "có" trên nền tảng này nhưng "không có" trên nền tảng khác. Cách xử lý: nếu giao dịch với độ chính xác cao, ưu tiên nhất quán dùng một nguồn dữ liệu duy nhất cho cả backtest lẫn live, tránh chuyển đổi qua lại giữa các nguồn.
 
-6. **CISD hình thành ngay trước kỳ nghỉ lễ dài hoặc cuối tuần — thanh khoản rút trước khi xác nhận đầy đủ.** Tương tự vấn đề half-day đã bàn ở [[40 - Macro Times]], một CISD hình thành trong những giờ cuối cùng trước kỳ nghỉ dài có thể không có đủ thời gian giao dịch để được "xác nhận" bằng sự tiếp diễn trước khi thị trường đóng cửa, khiến việc đánh giá thành/bại của nó bị trì hoãn không tự nhiên tới phiên mở cửa tiếp theo (có thể đã gap qua CISD level).
+6. **CISD hình thành ngay trước kỳ nghỉ lễ dài hoặc cuối tuần — thanh khoản rút trước khi xác nhận đầy đủ.** Tương tự vấn đề half-day đã bàn ở [[40-Macro-Times]], một CISD hình thành trong những giờ cuối cùng trước kỳ nghỉ dài có thể không có đủ thời gian giao dịch để được "xác nhận" bằng sự tiếp diễn trước khi thị trường đóng cửa, khiến việc đánh giá thành/bại của nó bị trì hoãn không tự nhiên tới phiên mở cửa tiếp theo (có thể đã gap qua CISD level).
 
 7. **Nhầm lẫn giữa CISD và một cú "false breakout" thông thường không có bối cảnh AMD.** Nhiều mẫu hình trông giống CISD về mặt hình học thuần túy (đóng cửa vượt qua một mức nào đó) xuất hiện liên tục trong thị trường đi ngang (ranging) mà không có bối cảnh sweep + AMD phía sau — đây chính là "CISD giữa range" đã được note gốc cảnh báo (mục 19) nhưng đáng nhấn mạnh lại: tần suất xuất hiện của các tín hiệu giả dạng này trong thị trường đi ngang là rất cao, và việc phân biệt đòi hỏi luôn kiểm tra ngữ cảnh AMD tổng thể trước khi tin bất kỳ CISD nào.
 
@@ -706,7 +706,7 @@ CISD là một công cụ đọc hành vi giá có cơ sở cơ chế order-book
 
 ### J1. CISD trên forex majors (EU/GU/USDJPY) — vai trò của phiên London/NY overlap
 
-Trên các cặp forex chính, CISD hình thành trong giai đoạn overlap London-New York (khoảng 08:00-11:00 ET) thường có độ tin cậy cao hơn CISD hình thành trong phiên Á (thanh khoản mỏng hơn nhiều đối với các cặp gốc châu Âu/Mỹ). Điều này phù hợp với logic đã bàn ở [[40 - Macro Times]] về việc thanh khoản tổ chức thực sự của các cặp gắn London chỉ "thức dậy" khi London mở cửa — một CISD hình thành lúc 22:00-23:00 ET (giữa đêm theo giờ Mỹ, sáng sớm theo giờ châu Á) trên EURUSD gần như luôn nên bị nghi ngờ về độ bền vững trừ khi có tin tức bất ngờ đủ lớn để kích hoạt dòng lệnh ngoài giờ bình thường.
+Trên các cặp forex chính, CISD hình thành trong giai đoạn overlap London-New York (khoảng 08:00-11:00 ET) thường có độ tin cậy cao hơn CISD hình thành trong phiên Á (thanh khoản mỏng hơn nhiều đối với các cặp gốc châu Âu/Mỹ). Điều này phù hợp với logic đã bàn ở [[40-Macro-Times]] về việc thanh khoản tổ chức thực sự của các cặp gắn London chỉ "thức dậy" khi London mở cửa — một CISD hình thành lúc 22:00-23:00 ET (giữa đêm theo giờ Mỹ, sáng sớm theo giờ châu Á) trên EURUSD gần như luôn nên bị nghi ngờ về độ bền vững trừ khi có tin tức bất ngờ đủ lớn để kích hoạt dòng lệnh ngoài giờ bình thường.
 
 ### J2. CISD trên chỉ số Mỹ (NQ/ES/YM) — vai trò của giờ mở cửa cash
 
@@ -739,7 +739,7 @@ Vì crypto giao dịch 24/7 không có khái niệm "mở phiên" rõ ràng như
 
 ## M. Liên hệ chuỗi khái niệm
 
-CISD không hoạt động độc lập — nó là một trong nhiều lớp xác nhận trong chuỗi: [[18 - Kill Zones|Killzone]] xác định khung giờ ưu tiên quan sát; sweep thanh khoản (xem [[39 - Draw on Liquidity - Tai sao gia di chuyen ai la doi ung|Draw on Liquidity]]) cung cấp bối cảnh "vì sao" giá đến vùng đó; CISD xác nhận "khi nào" dòng lệnh đối ứng đã đủ mạnh để đảo hướng; [[13 - FVG  - Fair Value Gap|FVG]] cung cấp vùng entry cụ thể sau CISD; và [[42 - SMT Divergence|SMT]] cung cấp một lớp xác nhận liên thị trường độc lập để tăng độ tin cậy tổng thể. Một CISD đơn độc, không có bất kỳ lớp nào trong chuỗi này hỗ trợ, nên được coi là tín hiệu yếu bất kể trông "đẹp" thế nào về hình học trên biểu đồ.
+CISD không hoạt động độc lập — nó là một trong nhiều lớp xác nhận trong chuỗi: [[18-Kill-Zones|Killzone]] xác định khung giờ ưu tiên quan sát; sweep thanh khoản (xem [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung|Draw on Liquidity]]) cung cấp bối cảnh "vì sao" giá đến vùng đó; CISD xác nhận "khi nào" dòng lệnh đối ứng đã đủ mạnh để đảo hướng; [[13-FVG-Fair-Value-Gap|FVG]] cung cấp vùng entry cụ thể sau CISD; và [[42-SMT-Divergence|SMT]] cung cấp một lớp xác nhận liên thị trường độc lập để tăng độ tin cậy tổng thể. Một CISD đơn độc, không có bất kỳ lớp nào trong chuỗi này hỗ trợ, nên được coi là tín hiệu yếu bất kể trông "đẹp" thế nào về hình học trên biểu đồ.
 
 
 
@@ -775,7 +775,7 @@ CISD không hoạt động độc lập — nó là một trong nhiều lớp x�
 - Phiên bản bổ sung: 2026-07-28.
 - Phạm vi: bổ sung phân tích cơ chế order-book, phản biện học thuật, 4 case study mới (không trùng 5 case gốc mục 18), và các edge case vận hành liên quan tới gap/loại nến/đa khung/thanh khoản phái sinh — không chỉnh sửa nội dung gốc, bao gồm giữ nguyên toàn bộ mục 18 và 19 gốc.
 - Tất cả số liệu thống kê trong phần này (tỷ lệ %, ngưỡng R, số mẫu N) là ví dụ minh họa cho cách thiết kế backtest, không phải số liệu lịch sử thực tế đã kiểm chứng — người đọc cần tự backtest trên dữ liệu và instrument của riêng mình trước khi áp dụng.
-- Liên kết nội bộ liên quan: [[18 - Kill Zones]], [[39 - Draw on Liquidity - Tai sao gia di chuyen ai la doi ung]], [[40 - Macro Times]], [[42 - SMT Divergence]], [[13 - FVG  - Fair Value Gap]], [[21 - Market Structure Shift]].
+- Liên kết nội bộ liên quan: [[18-Kill-Zones]], [[39-Draw-on-Liquidity-Tai-sao-gia-di-chuyen-ai-la-doi-ung]], [[40-Macro-Times]], [[42-SMT-Divergence]], [[13-FVG-Fair-Value-Gap]], [[21-Market-Structure-Shift]].
 
 
 
