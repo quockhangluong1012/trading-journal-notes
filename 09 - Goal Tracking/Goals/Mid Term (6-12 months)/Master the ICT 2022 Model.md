@@ -4,7 +4,7 @@ horizon: Mid
 category: Skill
 status: In Progress
 priority: High
-progress: 0
+progress: 20
 metric: Số setup 2022-model đã backtest kèm win rate
 baseline: "5"
 target: 100 setup @ win rate >55%
@@ -35,7 +35,7 @@ tags:
 
 ## Cột mốc
 > Mỗi checkbox = một cột mốc. Dashboard đếm các mục này để tính tiến độ.
-- [ ] Viết đầy đủ checklist vào/ra lệnh cho 2022 model
+- [x] Viết đầy đủ checklist vào/ra lệnh cho 2022 model ✅ 2026-09-07 → [[2022 Model A+ Setup]]
 - [ ] 50 setup đã ghi nhận
 - [ ] 100 setup đã ghi nhận
 - [ ] Win rate xác thực >55% trên mẫu
@@ -44,6 +44,7 @@ tags:
 ## Nhật ký tiến độ
 | Ngày       | Tiến độ % | Ghi chú                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | ---------- | --------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-09-07 | 20 | **Cột mốc #1 XONG.** Viết [[2022 Model A+ Setup]] — GATE 7 bước (pass/fail) tách khỏi SCORE 8 confluence, ngưỡng số cụ thể cho displacement (CLV ≥0.7-0.8, thân ≥65-70%, acceptance, ≥1 FVG — cần ≥3/4), phân loại swing 3 tầng STH/ITH/LTH (MSS phải phá **ITH** bằng close + giữ 3-5 nến, phá STH là nhiễu), 3 tầng invalidation tách biệt, biểu mẫu thi hành + biểu mẫu **ghi setup bị loại** (thuốc giải survivorship O1), và bảng đối chiếu 11 mistake note. Tham số lấy từ 12 định nghĩa `CONFIRMED` trong `AI Trading Research Lab/definitions/ict_definitions.json` (khoá 2026-08-23). Đồng thời lấp file setup 0-byte đã treo từ 2026-06-18 (36 link trỏ tới) và nâng `ICT 2022 Entry Checklist` từ 67 từ thành thẻ nhanh thật. `progress` sync 30 → 20 cho khớp cột mốc 1/5. |
 | 2026-06-23 |        30 | Đã ghi ~6 setup; checklist còn sơ sài.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | 2026-07-06 |        30 | 2 setup ICT 2022 Model mới được backtest hôm nay (EURUSD Short 2005-04-12 và 2005-04-13), cả hai Grade A, followed_plan: Yes, đủ chuỗi Sweep → Displacement → MSS → FVG. Tổng setup ghi nhận trong `04 - Backtesting` hiện là 3 — không phải ~20 như `baseline` ghi. Checklist vào/ra lệnh (cột mốc #1) vẫn chưa được viết thành văn bản riêng; cột mốc "50 setup đã ghi nhận" vẫn 0/5.                                                                                                                                                                                                                                                                                                                                |
 | 2026-07-07 |        30 | 2 setup ICT 2022 Model mới được backtest hôm nay (EURUSD Long 2005-04-24 và 2005-04-27), cả hai Grade A, followed_plan: Yes, đủ chuỗi Sweep → Displacement → MSS → FVG. Tổng setup ghi nhận trong `04 - Backtesting` hiện là 5 — không phải ~20 như `baseline` vẫn ghi (trễ 5 ngày, chưa sửa dù đã nêu từ 07-03). Nhịp thực tế 5/14 ngày ≈ 0,357 setup/ngày — gần như đúng nhịp cần thiết (0,356/ngày) để đạt 100 setup trước due_date 2027-03-31, lần đầu tiên đạt mức này. Checklist vào/ra lệnh (cột mốc #1) vẫn chưa được viết; cột mốc "50 setup đã ghi nhận" vẫn 0/5.                                                                                                                                            |

@@ -175,3 +175,4 @@ gantt
 - Chỉ số: [[02 - Skill Metrics]]
 - Lộ trình chi tiết từng giai đoạn: [[03 - Lộ trình chi tiết - Từ số 0 đến Funded 100K]]
 - Phương pháp luyện tập & vòng lặp AI: [[04 - Phương pháp luyện tập, vòng lặp AI & giữ động lực]]
+- **Hôm nay làm gì** (nhịp ngày/tuần, menu việc theo giai đoạn): [[05 - Nhịp ngày & tuần - Vận hành lộ trình]]

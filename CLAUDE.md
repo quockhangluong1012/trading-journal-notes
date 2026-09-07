@@ -32,6 +32,7 @@ A personal ICT (Inner Circle Trader) trading journal for Luong Quoc Khang. It co
 
 When creating a new note, copy the matching template in `08 - Templates/` and fill it. Never invent a new structure when a template exists.
 
+- **Daily tasks** → `Daily_Tasks_Template.md` (nội dung từng khối lấy từ menu theo giai đoạn ở `09 - Goal Tracking/05 - Nhịp ngày & tuần - Vận hành lộ trình.md`)
 - **New trade** → `trade log.md`
 - **Backtest** → `Backtest templete.md`
 - **ICT concept** → `ICT_Concept_Template.md`

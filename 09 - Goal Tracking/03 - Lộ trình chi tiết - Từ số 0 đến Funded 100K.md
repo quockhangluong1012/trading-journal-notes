@@ -384,5 +384,6 @@ tags:
 
 ## Liên kết
 - Lộ trình tổng: [[01 - Roadmap]] · Dashboard: [[00 - Goal Dashboard]] · Chỉ số: [[02 - Skill Metrics]]
+- **Thi hành hàng ngày** (nhịp ngày/tuần + menu việc theo giai đoạn): [[05 - Nhịp ngày & tuần - Vận hành lộ trình]] · Template ngày: [[Daily_Tasks_Template]]
 - Goals: [[Pass FTMO first package challenge (10K$)]] · [[Pass The5er first package challenge (10k$)]] · [[Pass FTMO & The5ers 100K package]] · [[Build a statistically validated backtest sample]] · [[Master the ICT 2022 Model]] · [[Cut my top 3 repeated mistakes]] · [[Hold daily journaling and process discipline]]
 - Nguồn luật quỹ (kiểm tra lại trước khi mua): [FTMO Trading Objectives](https://ftmo.com/en/trading-objectives/) · [The5ers High Stakes rules](https://help.the5ers.com/what-are-the-general-rules-for-the-high-stakes-program/)

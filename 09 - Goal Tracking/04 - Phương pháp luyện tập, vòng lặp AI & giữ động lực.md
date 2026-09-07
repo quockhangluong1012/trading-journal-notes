@@ -19,6 +19,8 @@ tags:
 > 4. Làm sao vượt qua chán nản khi học kỹ năng khó trong nhiều năm và khi thất bại?
 >
 > Liên kết: [[01 - Roadmap]] · [[02 - Skill Metrics]] · [[03 - Lộ trình chi tiết - Từ số 0 đến Funded 100K]]
+>
+> **Phần thi hành của note này** — ba loại ngày, ngày tối thiểu 20', menu việc theo giai đoạn, luật chống đứt chuỗi — đã được viết thành quy trình dùng được hàng ngày ở [[05 - Nhịp ngày & tuần - Vận hành lộ trình]].
 
 ---
 

@@ -50,7 +50,7 @@ tags:
 - [x] Sửa `phase:`/`horizon:`/`progress:` cho 8 goal note
 - [x] Sửa CLAUDE.md (vị trí Reviews + quy ước đặt tên đã đổi)
 - [ ] Chốt một bản live journal duy nhất (còn 2 bản song song đã trôi lệch)
-- [ ] Tạo `30-Sell-side-Liquidity` (đang bị link 38 lần nhưng không tồn tại)
+- [ ] Tạo `30-Sell-side-Liquidity` (đếm lại 2026-09-07: **138 wikilink trong 22 file** trỏ tới `[[30 - Sell-side Liquidity]]` + 3 link `[[Sell-side Liquidity]]`, note đích không tồn tại — con số 38 ghi ban đầu là thiếu). Gồm 2 phần: tạo note + đổi link sang basename gạch nối theo quy ước [[CLAUDE]].
 - [ ] Điền `r_multiple` cho 10 lệnh live còn thiếu, hoặc đánh dấu là không đo được
 
 ## Nhật ký tiến độ
