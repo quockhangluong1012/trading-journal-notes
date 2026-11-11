@@ -1,0 +1,70 @@
+<svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="500" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Dealing Range nâng cao — Quadrants, OTE &amp; Nested Ranges</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Chia range thành 4 phần + range con LTF lồng trong range HTF</text>
+
+  <!-- ===== Left: quadrants ===== -->
+  <rect x="24" y="70" width="350" height="404" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="94" font-size="14" font-weight="700" fill="#1D4ED8">Quadrants của Dealing Range (bullish context)</text>
+
+  <!-- range band x=70..260, y=120..420 -->
+  <line x1="70" y1="120" x2="290" y2="120" stroke="#DC2626" stroke-width="2"/>
+  <text x="296" y="124" font-size="11.5" fill="#B91C1C" font-weight="700">Range High (BSL)</text>
+
+  <rect x="70" y="120" width="220" height="75" fill="#DC2626" opacity="0.10"/>
+  <text x="80" y="150" font-size="11" fill="#991B1B" font-weight="700">75–100%: Deep Premium</text>
+  <text x="80" y="165" font-size="10.5" fill="#991B1B">Bearish PD Array mạnh nhất; cấm Long mới</text>
+
+  <line x1="70" y1="195" x2="290" y2="195" stroke="#F87171" stroke-width="1" stroke-dasharray="4 3"/>
+  <rect x="70" y="195" width="220" height="75" fill="#DC2626" opacity="0.05"/>
+  <text x="80" y="222" font-size="11" fill="#B91C1C">50–75%: Premium nông</text>
+  <text x="80" y="237" font-size="10.5" fill="#B91C1C">Short cần confluence thêm</text>
+
+  <line x1="70" y1="270" x2="290" y2="270" stroke="#6B7280" stroke-width="1.6" stroke-dasharray="7 4"/>
+  <text x="296" y="274" font-size="11.5" fill="#374151" font-weight="700">Equilibrium 50%</text>
+
+  <rect x="70" y="270" width="220" height="75" fill="#16A34A" opacity="0.05"/>
+  <text x="80" y="297" font-size="11" fill="#15803D">25–50%: Discount nông</text>
+  <text x="80" y="312" font-size="10.5" fill="#15803D">Long cần confluence thêm</text>
+
+  <line x1="70" y1="345" x2="290" y2="345" stroke="#4ADE80" stroke-width="1" stroke-dasharray="4 3"/>
+  <rect x="70" y="345" width="220" height="75" fill="#16A34A" opacity="0.12"/>
+  <text x="80" y="372" font-size="11" fill="#166534" font-weight="700">0–25%: Deep Discount</text>
+  <text x="80" y="387" font-size="10.5" fill="#166534">Bullish PD Array mạnh nhất + vùng OTE</text>
+
+  <line x1="70" y1="420" x2="290" y2="420" stroke="#16A34A" stroke-width="2"/>
+  <text x="296" y="424" font-size="11.5" fill="#15803D" font-weight="700">Range Low (SSL)</text>
+
+  <!-- OTE bracket: 62-79% retracement of up leg = ~21-38% of range -->
+  <line x1="60" y1="325" x2="60" y2="400" stroke="#7C3AED" stroke-width="3"/>
+  <text x="36" y="368" font-size="10.5" fill="#6B21A8" font-weight="700" transform="rotate(-90 44 368)">OTE 62–79%</text>
+
+  <text x="36" y="448" font-size="11" fill="#6B7280">Long chất lượng nhất: deep discount + OTE + PD Array;</text>
+  <text x="36" y="463" font-size="11" fill="#6B7280">quanh EQ = vùng "không làm gì".</text>
+
+  <!-- ===== Right: nested ranges ===== -->
+  <rect x="398" y="70" width="338" height="404" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="410" y="94" font-size="14" font-weight="700" fill="#0F766E">Nested Ranges — LTF lồng trong HTF</text>
+
+  <!-- HTF range -->
+  <line x1="440" y1="120" x2="700" y2="120" stroke="#DC2626" stroke-width="2"/>
+  <text x="444" y="114" font-size="11" fill="#B91C1C" font-weight="700">D1 Range High</text>
+  <line x1="440" y1="430" x2="700" y2="430" stroke="#16A34A" stroke-width="2"/>
+  <text x="444" y="447" font-size="11" fill="#15803D" font-weight="700">D1 Range Low</text>
+  <line x1="440" y1="275" x2="700" y2="275" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="644" y="270" font-size="10.5" fill="#6B7280">D1 EQ 50%</text>
+
+  <!-- LTF sub-range inside D1 discount -->
+  <rect x="470" y="300" width="180" height="110" fill="#14B8A6" opacity="0.10" stroke="#0F766E" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="478" y="318" font-size="11" fill="#0F766E" font-weight="700">H1 range con</text>
+  <line x1="470" y1="355" x2="650" y2="355" stroke="#0F766E" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="654" y="359" font-size="10" fill="#0F766E">H1 EQ</text>
+
+  <!-- zigzag price inside -->
+  <path d="M480 340 L505 385 L525 350 L548 400 L575 330 L600 365 L625 310"
+        fill="none" stroke="#374151" stroke-width="1.8"/>
+  <circle cx="548" cy="400" r="4" fill="#16A34A"/>
+  <text x="520" y="420" font-size="10.5" fill="#166534" font-weight="700">Long: discount H1 TRONG discount D1</text>
+
+  <text x="410" y="464" font-size="11" fill="#6B7280">Alignment: chỉ trade khi vị trí LTF cộng hưởng vị trí HTF.</text>
+</svg>

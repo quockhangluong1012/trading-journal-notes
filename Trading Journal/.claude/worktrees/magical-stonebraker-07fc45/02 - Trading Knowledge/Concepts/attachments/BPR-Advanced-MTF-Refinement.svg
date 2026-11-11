@@ -1,0 +1,49 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Tinh chỉnh đa khung — H1 BPR làm POI, M5 refine, M1 trigger</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">BPR khung càng cao càng đáng tin; LTF chỉ để thu nhỏ stop, không để "tự chế" BPR ngoài context.</text>
+
+  <!-- H1 panel -->
+  <rect x="24" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="100" font-size="13" font-weight="700" fill="#1F2937">H1 — xác định vùng</text>
+  <rect x="48" y="190" width="180" height="52" fill="#7C3AED" opacity="0.2"/>
+  <line x1="48" y1="216" x2="228" y2="216" stroke="#5B21B6" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <path d="M56,300 L84,340 L112,230 L136,150 L162,205 L186,235 L212,210" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <text x="56" y="184" font-size="10.5" font-weight="700" fill="#5B21B6">H1 BPR + CE</text>
+  <text x="36" y="326" font-size="10.5" fill="#374151">Vùng thô ~15–20 điểm. Đủ để</text>
+  <text x="36" y="340" font-size="10.5" fill="#374151">biết CHỜ Ở ĐÂU, chưa đủ để</text>
+  <text x="36" y="354" font-size="10.5" fill="#374151">có stop gọn.</text>
+
+  <!-- M5 panel -->
+  <rect x="266" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="278" y="100" font-size="13" font-weight="700" fill="#1F2937">M5 — cấu trúc bên trong vùng</text>
+  <rect x="290" y="180" width="180" height="72" fill="#7C3AED" opacity="0.12"/>
+  <path d="M298,130 L320,175 L338,215 L352,200 L366,240 L384,222 L402,180 L420,196 L446,150" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="366" cy="240" r="7" fill="none" stroke="#F59E0B" stroke-width="2.2"/>
+  <text x="300" y="268" font-size="10" fill="#B45309">sweep STL nội bộ trong BPR</text>
+  <line x1="384" y1="205" x2="450" y2="205" stroke="#0EA5E9" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="388" y="200" font-size="10" fill="#0284C7">M5 MSS</text>
+  <text x="278" y="326" font-size="10.5" fill="#374151">Trong lúc giá "ăn" vào H1 BPR,</text>
+  <text x="278" y="340" font-size="10.5" fill="#374151">chờ sweep nội bộ + MSS bullish</text>
+  <text x="278" y="354" font-size="10.5" fill="#374151">→ xác nhận vùng đang được mua.</text>
+
+  <!-- M1 panel -->
+  <rect x="508" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="520" y="100" font-size="13" font-weight="700" fill="#1F2937">M1 — FVG refined để trigger</text>
+  <rect x="532" y="205" width="180" height="26" fill="#3B82F6" opacity="0.18"/>
+  <text x="536" y="200" font-size="10" fill="#1D4ED8">M1 FVG của displacement leg</text>
+  <path d="M540,260 L560,238 L575,252 L595,190 L612,215 L630,228 L648,205 L668,160 L695,130" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="630" cy="228" r="5.5" fill="#16A34A"/>
+  <text x="640" y="246" font-size="10" font-weight="700" fill="#15803D">entry</text>
+  <line x1="532" y1="268" x2="712" y2="268" stroke="#DC2626" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="536" y="284" font-size="10" fill="#B91C1C">stop: dưới sweep low (không cần dưới cả H1 BPR)</text>
+  <text x="520" y="326" font-size="10.5" fill="#374151">Entry tại M1 FVG quanh CE của</text>
+  <text x="520" y="340" font-size="10.5" fill="#374151">H1 BPR → stop 1/3 kích thước,</text>
+  <text x="520" y="354" font-size="10.5" fill="#374151">R:R tăng 2–3 lần so với entry thô.</text>
+
+  <text x="197" y="230" font-size="16" fill="#9CA3AF">→</text>
+  <text x="497" y="230" font-size="16" fill="#9CA3AF">→</text>
+
+  <rect x="24" y="392" width="712" height="26" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="410" font-size="11.5" font-weight="700" fill="#92400E">Nguyên tắc: khung cao cho VÙNG (where), khung thấp cho THỜI ĐIỂM (when). Không bao giờ dùng M1 để tự tạo BPR khi H1/HTF không có POI.</text>
+</svg>

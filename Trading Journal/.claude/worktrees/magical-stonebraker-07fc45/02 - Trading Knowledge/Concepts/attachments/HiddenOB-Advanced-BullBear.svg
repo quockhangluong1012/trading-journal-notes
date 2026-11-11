@@ -1,0 +1,49 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Bullish vs Bearish Hidden OB — gương phản chiếu</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Cùng nguyên tắc: 2 nến CÙNG MÀU, wick chồng; box = từ wick extreme này sang wick extreme kia.</text>
+
+  <!-- Bullish panel -->
+  <rect x="24" y="72" width="352" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="94" font-size="13" font-weight="700" fill="#166534">Bullish Hidden OB (2 nến XANH)</text>
+
+  <!-- box low2 -> high1 -->
+  <rect x="120" y="130" width="60" height="150" fill="#DBEAFE" stroke="#1D4ED8" stroke-dasharray="4 3"/>
+  <!-- candle 1: upper wick prominent, high 130, body 175-235, low 250 -->
+  <line x1="132" y1="130" x2="132" y2="250" stroke="#16A34A" stroke-width="1.4"/><rect x="126.5" y="175" width="11" height="60" fill="#16A34A"/>
+  <!-- candle 2: lower wick overlaps, high 150, body 165-215, low 280 -->
+  <line x1="160" y1="150" x2="160" y2="280" stroke="#16A34A" stroke-width="1.4"/><rect x="154.5" y="165" width="11" height="50" fill="#16A34A"/>
+
+  <line x1="120" y1="130" x2="330" y2="130" stroke="#1D4ED8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="185" y="128" font-size="9.5" fill="#1D4ED8">high wick nến 1</text>
+  <line x1="120" y1="280" x2="330" y2="280" stroke="#1D4ED8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="185" y="294" font-size="9.5" fill="#1D4ED8">low wick nến 2</text>
+
+  <text x="40" y="120" font-size="10" fill="#374151">① nến 1: upper wick dài</text>
+  <text x="40" y="325" font-size="10.5" font-weight="700" fill="#166534">Box = low wick nến 2 → high wick nến 1</text>
+  <text x="40" y="343" font-size="10" fill="#6B7280">Đặt trong DISCOUNT → long mạnh. Wick nến 2 chồng thân nến 1.</text>
+  <text x="40" y="200" font-size="10" fill="#374151">② nến 2: lower wick chồng xuống</text>
+
+  <!-- Bearish panel -->
+  <rect x="392" y="72" width="344" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="94" font-size="13" font-weight="700" fill="#B91C1C">Bearish Hidden OB (2 nến ĐỎ)</text>
+
+  <rect x="490" y="130" width="60" height="150" fill="#FEE2E2" stroke="#DC2626" stroke-dasharray="4 3"/>
+  <!-- candle 1: lower wick prominent, low 280, body 165-225, high 145 -->
+  <line x1="502" y1="145" x2="502" y2="280" stroke="#DC2626" stroke-width="1.4"/><rect x="496.5" y="165" width="11" height="60" fill="#DC2626"/>
+  <!-- candle 2: upper wick overlaps up, high 130, body 195-245, low 260 -->
+  <line x1="530" y1="130" x2="530" y2="260" stroke="#DC2626" stroke-width="1.4"/><rect x="524.5" y="195" width="11" height="50" fill="#DC2626"/>
+
+  <line x1="490" y1="130" x2="700" y2="130" stroke="#DC2626" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="555" y="128" font-size="9.5" fill="#B91C1C">high wick nến 2</text>
+  <line x1="490" y1="280" x2="700" y2="280" stroke="#DC2626" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="555" y="294" font-size="9.5" fill="#B91C1C">low wick nến 1</text>
+
+  <text x="408" y="120" font-size="10" fill="#374151">① nến 1: lower wick dài</text>
+  <text x="408" y="200" font-size="10" fill="#374151">② nến 2: upper wick chồng lên</text>
+  <text x="408" y="325" font-size="10.5" font-weight="700" fill="#B91C1C">Box = high wick nến 2 → low wick nến 1</text>
+  <text x="408" y="343" font-size="10" fill="#6B7280">Đặt trong PREMIUM → short mạnh.</text>
+
+  <rect x="24" y="410" width="712" height="0" fill="none"/>
+  <text x="24" y="426" font-size="11" font-weight="700" fill="#1D4ED8">Quy tắc chung: 2 nến cùng màu + wick chồng → OB ẩn nằm trong vùng overlap, chỉ hiện trên LTF.</text>
+</svg>

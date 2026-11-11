@@ -1,0 +1,59 @@
+<svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="500" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Tilt-detection Metrics — đo tilt bằng số, không bằng cảm giác</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">4 chỉ số nên track trong nhật ký giao dịch để review hàng tuần</text>
+
+  <rect x="24" y="72" width="712" height="412" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- Panel 1: time between trades -->
+  <rect x="40" y="88" width="336" height="184" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="54" y="110" font-size="12" font-weight="700" fill="#1F2937">1. Thời gian giữa các lệnh</text>
+  <rect x="54" y="122" width="308" height="26" rx="4" fill="#16A34A" fill-opacity="0.10"/>
+  <text x="62" y="139" font-size="10.5" fill="#15803D">Bình thường: &gt; 20–30 phút sau lệnh thua</text>
+  <rect x="54" y="152" width="308" height="26" rx="4" fill="#DC2626" fill-opacity="0.12"/>
+  <text x="62" y="169" font-size="10.5" fill="#B91C1C" font-weight="600">Cảnh báo: &lt; 5 phút sau lệnh thua = tilt signal</text>
+  <text x="54" y="196" font-size="10" fill="#4B5563">Cách track: timestamp entry mỗi lệnh, tính delta so với lệnh</text>
+  <text x="54" y="212" font-size="10" fill="#4B5563">liền trước — cờ đỏ tự động nếu delta quá ngắn sau 1 lệnh thua.</text>
+  <text x="54" y="232" font-size="10" fill="#4B5563">Review tuần: đếm số lần vi phạm ngưỡng thời gian tối thiểu.</text>
+  <text x="54" y="250" font-size="10" fill="#4B5563">Mục tiêu: 0 vi phạm/tuần trước khi buy challenge.</text>
+
+  <!-- Panel 2: size deviation -->
+  <rect x="384" y="88" width="336" height="184" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="398" y="110" font-size="12" font-weight="700" fill="#1F2937">2. Độ lệch size so với kế hoạch</text>
+  <rect x="398" y="128" width="60" height="80" fill="#16A34A" fill-opacity="0.5"/>
+  <text x="400" y="222" font-size="9.5" fill="#374151">Lệnh 1</text>
+  <text x="400" y="120" font-size="9" fill="#15803D">0.5%</text>
+  <rect x="470" y="140" width="60" height="68" fill="#D97706" fill-opacity="0.6"/>
+  <text x="472" y="222" font-size="9.5" fill="#374151">Lệnh 2</text>
+  <text x="466" y="132" font-size="9" fill="#B45309">0.6%</text>
+  <rect x="542" y="88" width="60" height="120" fill="#DC2626" fill-opacity="0.7"/>
+  <text x="544" y="222" font-size="9.5" fill="#374151">Lệnh 3</text>
+  <text x="536" y="80" font-size="9" fill="#B91C1C" font-weight="700">1.5%</text>
+  <line x1="392" y1="208" x2="614" y2="208" stroke="#4B5563" stroke-width="1.2"/>
+  <text x="398" y="240" font-size="10" fill="#4B5563">Cờ đỏ khi size lệnh &gt; 1.5x risk kế hoạch, đặc biệt</text>
+  <text x="398" y="256" font-size="10" fill="#4B5563">ngay sau một lệnh thua trong cùng ngày.</text>
+
+  <!-- Panel 3: checklist adherence -->
+  <rect x="40" y="284" width="336" height="184" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="54" y="306" font-size="12" font-weight="700" fill="#1F2937">3. Điểm tuân thủ checklist (%)</text>
+  <circle cx="120" cy="380" r="52" fill="none" stroke="#E5E7EB" stroke-width="12"/>
+  <circle cx="120" cy="380" r="52" fill="none" stroke="#16A34A" stroke-width="12"
+          stroke-dasharray="261 327" stroke-linecap="round" transform="rotate(-90 120 380)"/>
+  <text x="120" y="386" font-size="18" font-weight="700" fill="#15803D" text-anchor="middle">80%</text>
+  <text x="196" y="360" font-size="10.5" fill="#374151">Mỗi lệnh: bias, POI, sweep, MSS,</text>
+  <text x="196" y="376" font-size="10.5" fill="#374151">size đúng plan, đúng Kill Zone = 5 tiêu chí.</text>
+  <text x="196" y="396" font-size="10.5" fill="#374151">Điểm = số tiêu chí đạt / 5, trung bình tuần.</text>
+  <text x="196" y="416" font-size="10.5" fill="#B91C1C" font-weight="600">Dưới 70% = process đang bị cảm xúc lấn át.</text>
+
+  <!-- Panel 4: trades after first loss -->
+  <rect x="384" y="284" width="336" height="184" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="398" y="306" font-size="12" font-weight="700" fill="#1F2937">4. Số lệnh sau lệnh thua đầu tiên/ngày</text>
+  <rect x="398" y="324" width="308" height="30" rx="4" fill="#16A34A" fill-opacity="0.10"/>
+  <text x="406" y="344" font-size="11" fill="#15803D" font-weight="600">0 lệnh — lý tưởng (circuit breaker hoạt động)</text>
+  <rect x="398" y="358" width="308" height="30" rx="4" fill="#D97706" fill-opacity="0.12"/>
+  <text x="406" y="378" font-size="11" fill="#B45309" font-weight="600">1 lệnh A-tier — chấp nhận được, có xác nhận đủ</text>
+  <rect x="398" y="392" width="308" height="30" rx="4" fill="#DC2626" fill-opacity="0.14"/>
+  <text x="406" y="412" font-size="11" fill="#B91C1C" font-weight="700">2+ lệnh — tilt xác nhận, vi phạm circuit breaker</text>
+  <text x="398" y="440" font-size="10" fill="#4B5563">Đây là chỉ số quan trọng nhất — track mỗi ngày,</text>
+  <text x="398" y="456" font-size="10" fill="#4B5563">tổng hợp vào review tuần cùng Weekly Trading Review.</text>
+</svg>

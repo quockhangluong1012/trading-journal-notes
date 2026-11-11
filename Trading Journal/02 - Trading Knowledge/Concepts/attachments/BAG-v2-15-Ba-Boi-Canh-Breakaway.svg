@@ -1,0 +1,121 @@
+<svg viewBox="0 0 1000 560" width="1000" height="560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="1" y="1" width="998" height="558" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<rect x="882.4" y="22" width="89.6" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="927.2" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">PHÂN LOẠI</text>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">Ba bối cảnh thường gặp của Breakaway Gap</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Cả ba đều có điểm chung: giá rời khỏi một vùng/mức mà nhiều người đã nhìn thấy. Khác nhau ở loại vùng bị rời bỏ.</text>
+<rect x="28.0" y="100.0" width="304.0" height="330.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="40.0" y="120.0" font-size="12" font-weight="700" fill="#0F9D74" text-anchor="start">① Rời vùng tích lũy</text>
+<rect x="36.0" y="283.6" width="180.0" height="76.8" rx="2" fill="#F1F5F9" stroke="#64748B" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.6"/>
+<line x1="45.0" y1="299.0" x2="45.0" y2="348.9" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="39.4" y="306.6" width="11.2" height="30.7" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="63.0" y1="285.5" x2="63.0" y2="325.8" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="57.4" y="306.6" width="11.2" height="15.4" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="81.0" y1="310.5" x2="81.0" y2="354.6" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="75.4" y="322.0" width="11.2" height="21.1" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="99.0" y1="314.3" x2="99.0" y2="356.6" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="93.4" y="320.1" width="11.2" height="23.0" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="117.0" y1="284.6" x2="117.0" y2="327.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="111.4" y="291.3" width="11.2" height="28.8" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="135.0" y1="285.5" x2="135.0" y2="318.2" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="129.4" y="291.3" width="11.2" height="21.1" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="153.0" y1="304.7" x2="153.0" y2="352.7" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="147.4" y="312.4" width="11.2" height="32.6" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="171.0" y1="318.2" x2="171.0" y2="358.5" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="165.4" y="323.9" width="11.2" height="21.1" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="189.0" y1="295.1" x2="189.0" y2="331.6" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="183.4" y="300.9" width="11.2" height="23.0" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="207.0" y1="283.6" x2="207.0" y2="310.5" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="201.4" y="287.4" width="11.2" height="13.4" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<rect x="216.0" y="237.5" width="108.0" height="46.1" rx="2" fill="#DDF4EC" stroke="#0F9D74" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.85"/>
+<line x1="225.0" y1="204.9" x2="225.0" y2="237.5" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="219.4" y="210.6" width="11.2" height="15.4" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="243.0" y1="179.9" x2="243.0" y2="220.2" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="237.4" y="185.7" width="11.2" height="25.0" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="261.0" y1="176.1" x2="261.0" y2="210.6" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="255.4" y="185.7" width="11.2" height="17.3" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="279.0" y1="164.6" x2="279.0" y2="206.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="273.4" y="170.3" width="11.2" height="32.6" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="297.0" y1="145.4" x2="297.0" y2="178.0" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="291.4" y="153.0" width="11.2" height="17.3" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<text x="40.0" y="452.0" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">Dạng 'sách giáo khoa': một hộp đi ngang rõ rồi</text>
+<text x="40.0" y="467.9" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">nhảy ra ngoài.</text>
+<rect x="348.0" y="100.0" width="304.0" height="330.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="360.0" y="120.0" font-size="12" font-weight="700" fill="#2563EB" text-anchor="start">② Vượt kháng cự lớn</text>
+<line x1="365.0" y1="346.0" x2="365.0" y2="394.0" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="359.4" y="354.0" width="11.2" height="32.0" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="383.0" y1="306.0" x2="383.0" y2="360.4" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="377.4" y="312.4" width="11.2" height="41.6" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="401.0" y1="258.0" x2="401.0" y2="318.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="395.4" y="267.6" width="11.2" height="44.8" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="419.0" y1="259.6" x2="419.0" y2="309.2" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="413.4" y="267.6" width="11.2" height="35.2" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="437.0" y1="283.6" x2="437.0" y2="334.8" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="431.4" y="302.8" width="11.2" height="25.6" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="455.0" y1="280.4" x2="455.0" y2="333.2" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="449.4" y="285.2" width="11.2" height="43.2" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="473.0" y1="258.0" x2="473.0" y2="293.2" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="467.4" y="270.8" width="11.2" height="14.4" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="491.0" y1="264.4" x2="491.0" y2="307.6" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="485.4" y="270.8" width="11.2" height="28.8" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="509.0" y1="270.8" x2="509.0" y2="306.0" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="503.4" y="275.6" width="11.2" height="24.0" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="527.0" y1="259.6" x2="527.0" y2="283.6" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="521.4" y="264.4" width="11.2" height="11.2" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="356.0" y1="258.0" x2="644.0" y2="258.0" stroke="#E0464B" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="358.0" y="254.0" font-size="10" font-weight="700" fill="#E0464B" text-anchor="start">kháng cự test 3 lần</text>
+<text x="401.0" y="248.0" font-size="9" font-weight="700" fill="#E0464B" text-anchor="middle">▲</text>
+<text x="473.0" y="248.0" font-size="9" font-weight="700" fill="#E0464B" text-anchor="middle">▲</text>
+<text x="527.0" y="248.0" font-size="9" font-weight="700" fill="#E0464B" text-anchor="middle">▲</text>
+<rect x="536.0" y="222.8" width="108.0" height="35.2" rx="2" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.85"/>
+<line x1="545.0" y1="190.8" x2="545.0" y2="222.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="539.4" y="195.6" width="11.2" height="17.6" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="563.0" y1="176.4" x2="563.0" y2="205.2" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="557.4" y="184.4" width="11.2" height="11.2" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="581.0" y1="152.4" x2="581.0" y2="190.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="575.4" y="157.2" width="11.2" height="27.2" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="599.0" y1="146.0" x2="599.0" y2="178.0" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="593.4" y="157.2" width="11.2" height="11.2" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="617.0" y1="139.6" x2="617.0" y2="173.2" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="611.4" y="144.4" width="11.2" height="24.0" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<text x="360.0" y="452.0" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">Mức cụ thể nhiều người đặt lệnh quanh đó (chốt,</text>
+<text x="360.0" y="467.9" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">dừng lỗ, chờ breakout). Gap đưa giá qua mức đó mà</text>
+<text x="360.0" y="483.7" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">không giao dịch ở giữa.</text>
+<rect x="668.0" y="100.0" width="304.0" height="330.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="680.0" y="120.0" font-size="12" font-weight="700" fill="#7C3AED" text-anchor="start">③ Trong quá trình đảo chiều</text>
+<line x1="685.0" y1="179.0" x2="685.0" y2="222.2" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="679.4" y="187.6" width="11.2" height="28.8" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="703.0" y1="204.9" x2="703.0" y2="251.0" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="697.4" y="216.4" width="11.2" height="28.8" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="721.0" y1="222.2" x2="721.0" y2="251.0" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="715.4" y="227.9" width="11.2" height="17.3" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="739.0" y1="222.2" x2="739.0" y2="275.4" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="733.4" y="227.9" width="11.2" height="41.8" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="757.0" y1="262.5" x2="757.0" y2="308.6" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="751.4" y="269.7" width="11.2" height="33.1" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="775.0" y1="276.9" x2="775.0" y2="308.6" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="769.4" y="282.6" width="11.2" height="20.2" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="793.0" y1="275.4" x2="793.0" y2="328.7" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="787.4" y="282.6" width="11.2" height="40.3" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="811.0" y1="297.0" x2="811.0" y2="348.9" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="805.4" y="302.8" width="11.2" height="20.2" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="829.0" y1="285.5" x2="829.0" y2="318.6" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="823.4" y="302.8" width="11.2" height="7.2" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="847.0" y1="279.8" x2="847.0" y2="315.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="841.4" y="285.5" width="11.2" height="24.5" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="748.0" y1="262.5" x2="964.0" y2="262.5" stroke="#7C3AED" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="757.0" y="254.5" font-size="10" font-weight="700" fill="#7C3AED" text-anchor="middle">LH gần nhất</text>
+<rect x="856.0" y="239.4" width="108.0" height="36.0" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.85"/>
+<line x1="865.0" y1="210.6" x2="865.0" y2="239.4" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="859.4" y="215.0" width="11.2" height="15.8" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="883.0" y1="202.0" x2="883.0" y2="230.8" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="877.4" y="215.0" width="11.2" height="10.1" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="901.0" y1="190.5" x2="901.0" y2="227.9" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="895.4" y="194.8" width="11.2" height="30.2" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="919.0" y1="173.2" x2="919.0" y2="200.6" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="913.4" y="179.0" width="11.2" height="15.8" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<text x="680.0" y="452.0" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">Gap vượt đỉnh thấp dần gần nhất sau một vùng</text>
+<text x="680.0" y="467.9" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">tạo đáy. Gọi 'breakaway' chỉ hợp lý nếu có vùng</text>
+<text x="680.0" y="483.7" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">đáy đi ngang để rời khỏi; nếu không, đó là gap</text>
+<text x="680.0" y="499.6" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">trong đảo chiều — cần tên và kiểm chứng riêng.</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo0Y2E3YjUxOS1kYWNlLTQ3ZmMtOWU1Yi05NTNhMTU1NmEzNjIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaMUKnJ6vvLi2VQQcM/0DLyAAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozOGYxMTgzYi0wNTZhLTQyNTMtOTdiZi01NzI0ZTBlODQxYzlscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo89LB0RmjTPPDVQTABbVW7wAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg+5eTpS/0Sy7kmg2+tCEat5K/xZDY88lNJVw9rliYFZekZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaKbfKT1ffD2D9IAtQ+JmpJkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYILQzfZ0I85ZFiADyUzQENAGKljFQrFKbv2GBQFYngh4HZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTQdZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjRjYTdiNTE5LWRhY2UtNDdmYy05ZTViLTk1M2ExNTU2YTM2Mi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjNkZTRmNTMwLTdlM2QtNGZjMS05YmIxLWI1NTIyODRhMWMxNHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCD7l5OlL/RLLuSaDb60IRq3kr/FkNjzyU0lXD2uWJgVl6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggY6A30D29B3cs0dzv0m46Z0Ed4Ak61JofquYYxlUgMzeiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggDCI1Ey4DMKmUOgy5yIdhG6ZoyeMdhACeXL7Aiji4RRd0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQGU/tKI5LvCvEX+YHaThTciM2CeplhrpRDN1UZX074TlSFhbCJaBC3F9xdU5sZme5YWWFLe53iTYJjqzDE+O/uk=</c2pa:manifest></metadata></svg>

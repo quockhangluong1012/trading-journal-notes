@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" font-family="'Segoe UI', Arial, sans-serif" font-size="14">
+  <text x="24" y="30" font-size="18" font-weight="700" fill="currentColor">Real-time vs Hindsight — bạn biết gì, và khi nào</text>
+  <text x="24" y="50" font-size="12.5" fill="var(--muted)">PO3(T) chỉ được dùng thông tin đã có tại T. Mọi thứ xảy ra sau đó không được đặt tên ngược quá khứ.</text>
+  <line x1="450" y1="60" x2="450" y2="360" stroke="var(--border)" stroke-dasharray="4 3"/>
+  <text x="40" y="80" font-size="12.5" font-weight="700" fill="var(--warning)">TẠI T (real-time): chỉ thấy tới đây</text>
+  <path d="M40,200 L90,192 L140,205 L190,190 L240,202 L290,194 L320,200 L360,238" fill="none" stroke="currentColor" stroke-width="2.4"/>
+  <circle cx="360" cy="238" r="13" fill="none" stroke="var(--warning)" stroke-width="2" stroke-dasharray="3 2"/>
+  <text x="352" y="242" font-size="14" font-weight="700" fill="var(--warning)">?</text>
+  <line x1="40" y1="222" x2="300" y2="222" stroke="var(--error)" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <text x="44" y="216" font-size="11" fill="var(--error)">SSL vừa bị chạm</text>
+  <text x="40" y="280" font-size="12" fill="var(--fg)">Được gọi: POTENTIAL manipulation.</text>
+  <text x="40" y="300" font-size="12" fill="var(--fg)">Chưa có: reclaim, MSS, displacement.</text>
+  <text x="40" y="320" font-size="12" font-weight="700" fill="var(--warning)">→ CHƯA vào. Chờ reclaim + displacement.</text>
+  <text x="40" y="342" font-size="12" fill="var(--muted)">Lúc này "Judas hay breakout thật" là chưa biết được.</text>
+  <text x="470" y="80" font-size="12.5" font-weight="700" fill="var(--error)">SAU KHI CHẠY (hindsight): hiện rõ tất cả</text>
+  <path d="M470,200 L520,192 L570,205 L620,190 L670,202 L700,200 L730,238 L760,210 L790,190 L830,150 L850,155 L890,120" fill="none" stroke="currentColor" stroke-width="2" opacity="0.55"/>
+  <text x="640" y="262" font-size="11.5" fill="var(--accent)">"Accumulation" — gọi sau khi thấy range</text>
+  <text x="700" y="282" font-size="11.5" fill="var(--warning)">"Judas" — gọi sau khi thấy đảo chiều</text>
+  <text x="770" y="182" font-size="11.5" fill="var(--success)">"Distribution" — gọi sau khi thấy chạy</text>
+  <text x="470" y="320" font-size="12" font-weight="700" fill="var(--error)">→ Bẫy: dùng kết quả để đặt tên quá khứ.</text>
+  <text x="470" y="342" font-size="12" fill="var(--muted)">Mọi ngày nhìn lại đều "rõ ràng" — đó là look-ahead bias.</text>
+  <text x="24" y="392" font-size="12.5" font-weight="700" fill="currentColor">Luật: không bao giờ dùng displacement tương lai để xác nhận manipulation hiện tại.</text>
+  <text x="24" y="412" font-size="12" fill="var(--muted)">Ngôn ngữ đúng: potential accumulation → manipulation candidate → distribution hypothesis, cho tới khi từng mắt xích được giá xác nhận.</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg viewBox="0 0 860 620" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="620" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Cơ chế vi mô — vì sao CÙNG MỘT mức vừa đảo chiều vừa tăng tốc</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Osler (NY Fed SR125 / Journal of Finance 58(5)): stop-loss và take-profit orders cụm quanh round number, với pattern KHÁC NHAU.</text>
+
+  <!-- ============ PANEL A: STOP-LOSS ============ -->
+  <rect x="24" y="74" width="396" height="316" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.8"/>
+  <rect x="24" y="74" width="396" height="36" rx="8" fill="#FEE2E2"/>
+  <text x="222" y="98" font-size="12.5" font-weight="700" fill="#B91C1C" text-anchor="middle">A. STOP-LOSS ORDERS → TĂNG TỐC</text>
+
+  <!-- price axis -->
+  <line x1="70" y1="130" x2="70" y2="360" stroke="#9CA3AF" stroke-width="1.4"/>
+  <text x="40" y="136" font-size="9" fill="#6B7280">giá</text>
+
+  <!-- round number level -->
+  <line x1="70" y1="240" x2="390" y2="240" stroke="#1F2937" stroke-width="2"/>
+  <text x="76" y="234" font-size="10.5" font-weight="700" fill="#1F2937">ROUND NUMBER (mức tròn)</text>
+
+  <!-- sell stops BELOW -->
+  <text x="88" y="300" font-size="10" font-weight="700" fill="#B91C1C">SELL STOPS — tập NGAY DƯỚI mức</text>
+  <polygon points="96,258 101,268 91,268" fill="#DC2626"/>
+  <polygon points="126,264 131,274 121,274" fill="#DC2626"/>
+  <polygon points="156,258 161,268 151,268" fill="#DC2626"/>
+  <polygon points="186,266 191,276 181,276" fill="#DC2626"/>
+  <polygon points="216,260 221,270 211,270" fill="#DC2626"/>
+
+  <!-- buy stops ABOVE -->
+  <text x="88" y="196" font-size="10" font-weight="700" fill="#B91C1C">BUY STOPS — tập NGAY TRÊN mức</text>
+  <polygon points="96,222 101,212 91,212" fill="#DC2626"/>
+  <polygon points="132,216 137,206 127,206" fill="#DC2626"/>
+  <polygon points="168,222 173,212 163,212" fill="#DC2626"/>
+  <polygon points="204,214 209,204 199,204" fill="#DC2626"/>
+
+  <!-- trigger cascade -->
+  <path d="M250 155 L262 200 L272 238 L282 262 L300 300 L330 342" fill="none" stroke="#DC2626" stroke-width="2.2"/>
+  <circle cx="272" cy="238" r="4.5" fill="#DC2626"/>
+  <text x="278" y="226" font-size="9.5" font-weight="700" fill="#B91C1C">trigger</text>
+  <text x="306" y="322" font-size="10" font-weight="700" fill="#B91C1C">cascade</text>
+  <text x="306" y="336" font-size="9.5" fill="#991B1B">tự củng cố</text>
+
+  <text x="40" y="376" font-size="9.5" font-style="italic" fill="#7F1D1D">Stop khi trigger TRỞ THÀNH market order — nó TIÊU THỤ liquidity, không cung cấp.</text>
+
+  <!-- ============ PANEL B: TAKE-PROFIT ============ -->
+  <rect x="440" y="74" width="396" height="316" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.8"/>
+  <rect x="440" y="74" width="396" height="36" rx="8" fill="#DCFCE7"/>
+  <text x="638" y="98" font-size="12.5" font-weight="700" fill="#15803D" text-anchor="middle">B. TAKE-PROFIT ORDERS → ĐẢO CHIỀU</text>
+
+  <line x1="486" y1="130" x2="486" y2="360" stroke="#9CA3AF" stroke-width="1.4"/>
+  <text x="456" y="136" font-size="9" fill="#6B7280">giá</text>
+
+  <line x1="486" y1="240" x2="806" y2="240" stroke="#1F2937" stroke-width="2"/>
+  <text x="492" y="234" font-size="10.5" font-weight="700" fill="#1F2937">ROUND NUMBER</text>
+
+  <!-- TP clusters AT the level -->
+  <text x="504" y="300" font-size="10" font-weight="700" fill="#15803D">TP orders cụm TẠI mức (không lệch)</text>
+  <polygon points="512,258 517,248 507,248" fill="#16A34A"/>
+  <polygon points="542,262 547,252 537,252" fill="#16A34A"/>
+  <polygon points="572,256 577,246 567,246" fill="#16A34A"/>
+  <polygon points="602,262 607,252 597,252" fill="#16A34A"/>
+  <polygon points="632,258 637,248 627,248" fill="#16A34A"/>
+  <rect x="506" y="234" width="136" height="8" fill="#16A34A" opacity="0.18"/>
+
+  <!-- reversal path -->
+  <path d="M680 160 L692 205 L702 238 L716 268 L742 322 L770 348" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+  <circle cx="702" cy="238" r="4.5" fill="#16A34A"/>
+  <text x="708" y="228" font-size="9.5" font-weight="700" fill="#15803D">đảo chiều</text>
+
+  <text x="456" y="376" font-size="9.5" font-style="italic" fill="#166534">Hai loại order nằm hai phía mức và hành xử NGƯỢC nhau — nên cả hai kết cục đều hợp lý.</text>
+
+  <!-- ============ BOTTOM: EVIDENCE + BASE RATE ============ -->
+  <rect x="24" y="404" width="812" height="196" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="44" y="428" font-size="12.5" font-weight="700" fill="#334155">BẰNG CHỨNG ĐẾN ĐÂU — và chỗ bằng chứng TỰ MÂU THUẪN</text>
+
+  <!-- support -->
+  <rect x="44" y="442" width="376" height="76" rx="6" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="58" y="462" font-size="11" font-weight="700" fill="#15803D">✓ ĐƯỢC HỖ TRỢ (abstract xác nhận trực tiếp)</text>
+  <text x="58" y="480" font-size="10" fill="#166534">•  Stop-loss &amp; take-profit cụm mạnh quanh round number</text>
+  <text x="58" y="495" font-size="10" fill="#166534">•  Pattern clustering KHÁC nhau giữa hai loại order</text>
+  <text x="58" y="510" font-size="10" fill="#166534">•  Stop-loss đóng góp vào move nhanh, tự củng cố (SR150)</text>
+
+  <!-- contradiction -->
+  <rect x="436" y="442" width="400" height="76" rx="6" fill="#FEF3C7" stroke="#D97706"/>
+  <text x="450" y="462" font-size="11" font-weight="700" fill="#B45309">⚠ BASE RATE — kẻ thù lớn nhất</text>
+  <text x="450" y="480" font-size="10" fill="#92400E">Round-crossing xảy ra ~5 lần MỖI NGÀY</text>
+  <text x="450" y="495" font-size="10" fill="#92400E">Cascade thật chỉ ~1 lần MỖI TUẦN</text>
+  <text x="450" y="510" font-size="10" font-weight="700" fill="#B45309">→ phần lớn lần chạm pool là NHIỄU, không phải cascade</text>
+
+  <text x="44" y="540" font-size="10.5" fill="#334155">Ba cảnh báo bắt buộc khi trích dẫn cơ chế này làm nền tảng cho DOL:</text>
+  <text x="44" y="560" font-size="10" fill="#4B5563">1.  Nghiên cứu dùng <tspan font-weight="700">round numbers</tspan> — KHÁC swing high/low. Đừng đánh đồng hai loại mức giá.</text>
+  <text x="44" y="576" font-size="10" fill="#4B5563">2.  Hiệu ứng chỉ kéo dài hàng giờ và <tspan font-weight="700">không nói gì về daily bias</tspan>.</text>
+  <text x="44" y="592" font-size="10" fill="#4B5563">3.  Cơ chế "hội tụ do cùng lý do" (focal point) giải thích clustering <tspan font-weight="700">mà không cần</tspan> giả định có ai chủ ý nhắm tới.</text>
+</svg>

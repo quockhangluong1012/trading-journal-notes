@@ -1,0 +1,161 @@
+<svg viewBox="0 0 980 700" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo0ZjU0NmNlOC01MmVlLTRmZTAtODM4Yy0yMTU0NTUwODYyOWEAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaFkWBrRwPrzZ0vwXUVs0UsUAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDowYzIwNDZkOC0xOTUxLTRkZmQtOTQ3Ni01ODViMTg4OGFjMDBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo4fRiBto+JOs5xgYo4JxTbAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgghQG0NgFToY/tGoSS0QJelkLRtOc3BjwyoEqi6/FyN6ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaL6F3neLd7Mk1lmubxihzp8AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCDQCsM5u7xrLNT/pgjHmWD7H5MxxRH5Vq1oK/UFCrpsEGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjRmNTQ2Y2U4LTUyZWUtNGZlMC04MzhjLTIxNTQ1NTA4NjI5YS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjgyNDFhMzMzLThiOGItNGU3OC04NWJiLWVlNDAyNjFhODUyOXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCFAbQ2AVOhj+0ahJLRAl6WQtG05zcGPDKgSqLr8XI3qKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg7b+2PeduCHHr+hWLZMFsJt8Y2xx/YeWph3d7oud/cmOiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggpVkPeGi8UqQZTHEuYAvKVIBwN3Z6wan08wR6QlHC89p0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQBcf2rJB6t4q5kgjTIszRD1qZcwmCr03oTx9CcE7muOaNnTIFfPd6vhFks0smSc+Ze+ko0UMQoKVdymx1ceyt/Y=</c2pa:manifest></metadata>
+<defs><marker id="aK" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#6B7280"/></marker><marker id="aR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#B91C1C"/></marker><marker id="aG" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#15803D"/></marker><marker id="aB" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/></marker><marker id="aO" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#B45309"/></marker><marker id="aP" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#6D28D9"/></marker><marker id="aS" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#334155"/></marker><marker id="aD" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#111827"/></marker></defs>
+<rect x="0" y="0" width="980" height="700" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="26.0" y="34.0" font-size="18" font-weight="700" fill="#1F2937" text-anchor="start">Bốn thứ có thể 'sai' — OB, lệnh, luận điểm, hay chỉ là xuyên tạm thời</text>
+<text x="26.0" y="56.0" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start">'Giá xuyên OB thì OB fail' gộp bốn sự kiện khác nhau. Mỗi cái cần quy tắc riêng, viết TRƯỚC khi vào lệnh (55 §12, nguyên tắc 1).</text>
+<rect x="26.0" y="80.0" width="458.0" height="230.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="38.0" y="100.0" font-size="12.5" font-weight="700" fill="#6D28D9" text-anchor="start">① Xuyên tạm thời</text>
+<rect x="40.0" y="206.0" width="426.0" height="18.6" rx="2" fill="#2563EB" fill-opacity="0.15" stroke="#2563EB" stroke-width="1.3"/>
+<line x1="40.0" y1="226.2" x2="466.0" y2="226.2" stroke="#DC2626" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="466.0" y="237.2" font-size="8.5" font-weight="600" fill="#B91C1C" text-anchor="end">stop</text>
+<line x1="58.0" y1="206.0" x2="58.0" y2="224.5" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="50.0" y="209.3" width="16.0" height="10.1" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="88.0" y1="193.1" x2="88.0" y2="222.2" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="80.0" y="195.8" width="16.0" height="23.6" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="80.0" y="195.8" width="16.0" height="23.6" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="118.0" y1="172.9" x2="118.0" y2="198.5" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="110.0" y="175.6" width="16.0" height="20.3" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="110.0" y="175.6" width="16.0" height="20.3" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="148.0" y1="172.9" x2="148.0" y2="198.5" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="140.0" y="175.6" width="16.0" height="20.3" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="178.0" y1="193.1" x2="178.0" y2="215.4" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="170.0" y="195.8" width="16.0" height="16.9" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="208.0" y1="209.3" x2="208.0" y2="238.0" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="200.0" y="212.7" width="16.0" height="16.9" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="238.0" y1="206.6" x2="238.0" y2="232.3" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="230.0" y="209.3" width="16.0" height="20.3" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="230.0" y="209.3" width="16.0" height="20.3" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="268.0" y1="186.4" x2="268.0" y2="212.0" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="260.0" y="189.1" width="16.0" height="20.3" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="260.0" y="189.1" width="16.0" height="20.3" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="298.0" y1="166.1" x2="298.0" y2="191.8" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="290.0" y="168.8" width="16.0" height="20.3" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="290.0" y="168.8" width="16.0" height="20.3" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<text x="38.0" y="280.0" font-size="9.6" font-weight="700" fill="#6D28D9" text-anchor="start">râu/close qua distal rồi lấy lại ≤ k nến</text>
+<text x="38.0" y="298.0" font-size="9.4" font-weight="400" fill="#374151" text-anchor="start">OB: còn · lệnh: có thể đã bị stop · luận điểm: còn</text>
+<rect x="496.0" y="80.0" width="458.0" height="230.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="508.0" y="100.0" font-size="12.5" font-weight="700" fill="#B45309" text-anchor="start">② Trade invalidation</text>
+<rect x="510.0" y="206.0" width="426.0" height="18.6" rx="2" fill="#2563EB" fill-opacity="0.15" stroke="#2563EB" stroke-width="1.3"/>
+<line x1="510.0" y1="226.2" x2="936.0" y2="226.2" stroke="#DC2626" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="936.0" y="237.2" font-size="8.5" font-weight="600" fill="#B91C1C" text-anchor="end">stop</text>
+<line x1="528.0" y1="206.0" x2="528.0" y2="224.5" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="520.0" y="209.3" width="16.0" height="10.1" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="558.0" y1="193.1" x2="558.0" y2="222.2" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="550.0" y="195.8" width="16.0" height="23.6" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="550.0" y="195.8" width="16.0" height="23.6" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="588.0" y1="172.9" x2="588.0" y2="198.5" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="580.0" y="175.6" width="16.0" height="20.3" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="580.0" y="175.6" width="16.0" height="20.3" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="618.0" y1="172.9" x2="618.0" y2="198.5" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="610.0" y="175.6" width="16.0" height="20.3" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="648.0" y1="193.1" x2="648.0" y2="215.4" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="640.0" y="195.8" width="16.0" height="16.9" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="678.0" y1="212.7" x2="678.0" y2="224.9" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="670.0" y="212.7" width="16.0" height="8.4" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="708.0" y1="203.3" x2="708.0" y2="223.9" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="700.0" y="206.0" width="16.0" height="15.2" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="700.0" y="206.0" width="16.0" height="15.2" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="738.0" y1="186.4" x2="738.0" y2="208.7" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="730.0" y="189.1" width="16.0" height="16.9" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="730.0" y="189.1" width="16.0" height="16.9" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="768.0" y1="166.1" x2="768.0" y2="191.8" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="760.0" y="168.8" width="16.0" height="20.3" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="760.0" y="168.8" width="16.0" height="20.3" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<text x="508.0" y="280.0" font-size="9.6" font-weight="700" fill="#B45309" text-anchor="start">chạm STOP (đặt sát distal) nhưng OB vẫn giữ</text>
+<text x="508.0" y="298.0" font-size="9.4" font-weight="400" fill="#374151" text-anchor="start">OB: còn · lệnh: SAI · luận điểm: còn → 'good loss'?</text>
+<rect x="26.0" y="320.0" width="458.0" height="230.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="38.0" y="340.0" font-size="12.5" font-weight="700" fill="#B91C1C" text-anchor="start">③ OB invalidation</text>
+<rect x="40.0" y="446.0" width="426.0" height="18.6" rx="2" fill="#2563EB" fill-opacity="0.15" stroke="#2563EB" stroke-width="1.3"/>
+<line x1="40.0" y1="466.2" x2="466.0" y2="466.2" stroke="#DC2626" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="466.0" y="477.2" font-size="8.5" font-weight="600" fill="#B91C1C" text-anchor="end">stop</text>
+<line x1="58.0" y1="446.0" x2="58.0" y2="464.5" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="50.0" y="449.3" width="16.0" height="10.1" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="88.0" y1="433.1" x2="88.0" y2="462.2" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="80.0" y="435.8" width="16.0" height="23.6" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="80.0" y="435.8" width="16.0" height="23.6" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="118.0" y1="412.9" x2="118.0" y2="438.5" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="110.0" y="415.6" width="16.0" height="20.3" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="110.0" y="415.6" width="16.0" height="20.3" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="148.0" y1="412.9" x2="148.0" y2="438.5" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="140.0" y="415.6" width="16.0" height="20.3" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="178.0" y1="433.1" x2="178.0" y2="455.4" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="170.0" y="435.8" width="16.0" height="16.9" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="208.0" y1="450.0" x2="208.0" y2="472.3" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="200.0" y="452.7" width="16.0" height="16.9" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="238.0" y1="466.9" x2="238.0" y2="482.4" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="230.0" y="469.6" width="16.0" height="10.1" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="268.0" y1="477.0" x2="268.0" y2="489.2" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="260.0" y="479.7" width="16.0" height="6.8" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="298.0" y1="480.4" x2="298.0" y2="489.2" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="290.0" y="483.1" width="16.0" height="3.4" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="290.0" y="483.1" width="16.0" height="3.4" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="328.0" y1="480.4" x2="328.0" y2="495.9" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="320.0" y="483.1" width="16.0" height="10.1" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<text x="38.0" y="520.0" font-size="9.6" font-weight="700" fill="#B91C1C" text-anchor="start">≥ k close ngoài distal, không reclaim</text>
+<text x="38.0" y="538.0" font-size="9.4" font-weight="400" fill="#374151" text-anchor="start">OB: chết · lệnh: sai · luận điểm: XEM LẠI (chưa chắc sai)</text>
+<rect x="496.0" y="320.0" width="458.0" height="230.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="508.0" y="340.0" font-size="12.5" font-weight="700" fill="#334155" text-anchor="start">④ Thesis invalidation</text>
+<rect x="510.0" y="446.0" width="426.0" height="18.6" rx="2" fill="#2563EB" fill-opacity="0.15" stroke="#2563EB" stroke-width="1.3"/>
+<line x1="510.0" y1="466.2" x2="936.0" y2="466.2" stroke="#DC2626" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="936.0" y="477.2" font-size="8.5" font-weight="600" fill="#B91C1C" text-anchor="end">stop</text>
+<line x1="528.0" y1="446.0" x2="528.0" y2="464.5" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="520.0" y="449.3" width="16.0" height="10.1" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="558.0" y1="433.1" x2="558.0" y2="462.2" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="550.0" y="435.8" width="16.0" height="23.6" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="550.0" y="435.8" width="16.0" height="23.6" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="588.0" y1="412.9" x2="588.0" y2="438.5" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="580.0" y="415.6" width="16.0" height="20.3" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="580.0" y="415.6" width="16.0" height="20.3" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="618.0" y1="399.3" x2="618.0" y2="418.3" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="610.0" y="402.0" width="16.0" height="13.5" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="610.0" y="402.0" width="16.0" height="13.5" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="648.0" y1="385.8" x2="648.0" y2="404.7" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="640.0" y="388.5" width="16.0" height="13.5" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="640.0" y="388.5" width="16.0" height="13.5" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="678.0" y1="385.8" x2="678.0" y2="398.0" stroke="#DC2626" stroke-width="1.3"/>
+<rect x="670.0" y="388.5" width="16.0" height="6.8" rx="1" fill="#DC2626" stroke="#DC2626" stroke-width="1.3"/>
+<line x1="708.0" y1="379.1" x2="708.0" y2="398.0" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="700.0" y="381.8" width="16.0" height="13.5" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="700.0" y="381.8" width="16.0" height="13.5" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="738.0" y1="365.6" x2="738.0" y2="384.5" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="730.0" y="368.3" width="16.0" height="13.5" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="730.0" y="368.3" width="16.0" height="13.5" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="768.0" y1="358.8" x2="768.0" y2="371.0" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="760.0" y="361.5" width="16.0" height="6.8" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="760.0" y="361.5" width="16.0" height="6.8" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<line x1="798.0" y1="352.1" x2="798.0" y2="364.2" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="790.0" y="354.8" width="16.0" height="6.8" rx="1" fill="#ffffff" stroke="#16A34A" stroke-width="1.3"/>
+<rect x="790.0" y="354.8" width="16.0" height="6.8" rx="1" fill="#16A34A" fill-opacity="0.85" stroke="#16A34A" stroke-width="1.3"/>
+<text x="508.0" y="520.0" font-size="9.6" font-weight="700" fill="#334155" text-anchor="start">DOL phía trên bị lấy KHÔNG qua OB; hoặc cấu trúc D1 đổi</text>
+<text x="508.0" y="538.0" font-size="9.4" font-weight="400" fill="#374151" text-anchor="start">OB: không còn liên quan · lệnh: không có · luận điểm: kết thúc</text>
+<rect x="26.0" y="565.0" width="928.0" height="22.0" rx="4" fill="#F1F5F9"/>
+<text x="36.0" y="581.0" font-size="9.6" font-weight="700" fill="#374151" text-anchor="start">sự kiện</text>
+<text x="280.0" y="581.0" font-size="9.6" font-weight="700" fill="#374151" text-anchor="start">OB</text>
+<text x="380.0" y="581.0" font-size="9.6" font-weight="700" fill="#374151" text-anchor="start">lệnh</text>
+<text x="500.0" y="581.0" font-size="9.6" font-weight="700" fill="#374151" text-anchor="start">luận điểm D1/H1</text>
+<text x="640.0" y="581.0" font-size="9.6" font-weight="700" fill="#374151" text-anchor="start">quy tắc ghi journal</text>
+<rect x="26.0" y="589.0" width="928.0" height="22.0" rx="4" fill="#FFFFFF"/>
+<text x="36.0" y="605.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">râu qua distal, close trong</text>
+<text x="280.0" y="605.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">còn</text>
+<text x="380.0" y="605.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">stop nếu sát</text>
+<text x="500.0" y="605.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">còn</text>
+<text x="640.0" y="605.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">scenario D; distal_swept = 1</text>
+<rect x="26.0" y="613.0" width="928.0" height="22.0" rx="4" fill="#F9FAFB"/>
+<text x="36.0" y="629.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">close ngoài 1–3 nến rồi về</text>
+<text x="280.0" y="629.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">tranh luận</text>
+<text x="380.0" y="629.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">thường đã stop</text>
+<text x="500.0" y="629.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">còn</text>
+<text x="640.0" y="629.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">scenario E; reclaim_bars</text>
+<rect x="26.0" y="637.0" width="928.0" height="22.0" rx="4" fill="#FFFFFF"/>
+<text x="36.0" y="653.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">≥ k close ngoài, không về</text>
+<text x="280.0" y="653.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">CHẾT</text>
+<text x="380.0" y="653.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">sai</text>
+<text x="500.0" y="653.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">xem lại</text>
+<text x="640.0" y="653.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">scenario F; ob_state = INVALIDATED</text>
+<rect x="26.0" y="661.0" width="928.0" height="22.0" rx="4" fill="#F9FAFB"/>
+<text x="36.0" y="677.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">DOL bị lấy không qua OB</text>
+<text x="280.0" y="677.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">hết vai trò</text>
+<text x="380.0" y="677.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">—</text>
+<text x="500.0" y="677.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">hoàn tất</text>
+<text x="640.0" y="677.0" font-size="9.6" font-weight="400" fill="#374151" text-anchor="start">ob_state = SUPERSEDED</text>
+</svg>

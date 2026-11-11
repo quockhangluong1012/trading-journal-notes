@@ -1,0 +1,76 @@
+<svg viewBox="0 0 860 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="540" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ba cột hiểu biết — cây cầu duy nhất mà DOL được phép bắc</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">DOL nối cột 1 sang cột 2. Mọi phát biểu nhảy sang cột 3 phải bị dán nhãn [INTERPRETATION] và không được là cơ sở duy nhất cho lệnh.</text>
+
+  <!-- ====== COLUMN 1: OBSERVABLE ====== -->
+  <rect x="24" y="74" width="252" height="330" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.8"/>
+  <rect x="24" y="74" width="252" height="42" rx="8" fill="#DCFCE7"/>
+  <text x="150" y="94" font-size="12.5" font-weight="700" fill="#15803D" text-anchor="middle">1. QUAN SÁT ĐƯỢC</text>
+  <text x="150" y="109" font-size="9.5" fill="#166534" text-anchor="middle">tính trực tiếp từ OHLC + volume</text>
+  <line x1="40" y1="134" x2="260" y2="134" stroke="#D1FAE5" stroke-width="1"/>
+  <text x="40" y="156" font-size="11" fill="#374151">•  Giá cao nhất / thấp nhất</text>
+  <text x="40" y="178" font-size="11" fill="#374151">•  Thứ tự thời gian các cực trị</text>
+  <text x="40" y="200" font-size="11" fill="#374151">•  Close / open / body / wick</text>
+  <text x="40" y="222" font-size="11" fill="#374151">•  Volume (nếu có)</text>
+  <text x="40" y="244" font-size="11" fill="#374151">•  Cấu trúc swing HH/HL/LH/LL</text>
+  <text x="40" y="266" font-size="11" fill="#374151">•  Khoảng cách giữa các mức</text>
+  <text x="40" y="288" font-size="11" fill="#374151">•  Session boundaries, gap</text>
+  <text x="40" y="310" font-size="11" fill="#374151">•  Đã chạm mức nào, lúc nào</text>
+  <line x1="40" y1="328" x2="260" y2="328" stroke="#D1FAE5" stroke-width="1"/>
+  <text x="40" y="350" font-size="10.5" font-weight="700" fill="#15803D">Cho biết: CÁI GÌ ĐÃ XẢY RA</text>
+  <text x="40" y="372" font-size="10" fill="#4B5563">Phần lớn framework DOL là [O]</text>
+  <text x="40" y="388" font-size="10" fill="#4B5563">hoặc [S] semi-objective.</text>
+
+  <!-- ====== COLUMN 2: INFERENCE ====== -->
+  <rect x="292" y="74" width="252" height="330" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1.8"/>
+  <rect x="292" y="74" width="252" height="42" rx="8" fill="#FEF3C7"/>
+  <text x="418" y="94" font-size="12.5" font-weight="700" fill="#B45309" text-anchor="middle">2. SUY LUẬN ĐƯỢC</text>
+  <text x="418" y="109" font-size="9.5" fill="#92400E" text-anchor="middle">có cơ sở, nhưng không phải phép đo</text>
+  <line x1="308" y1="134" x2="528" y2="134" stroke="#FDE68A" stroke-width="1"/>
+  <text x="308" y="156" font-size="11" fill="#374151">•  Nơi lệnh CÓ THỂ tập trung</text>
+  <text x="308" y="178" font-size="11" fill="#374151">•  Hướng order-flow imbalance gần đây</text>
+  <text x="308" y="200" font-size="11" fill="#374151">•  Mức độ sạch / nhiễu của move</text>
+  <text x="308" y="222" font-size="11" fill="#374151">•  Volatility regime</text>
+  <text x="308" y="244" font-size="11" fill="#374151">•  Độ trễ xác nhận của cấu trúc</text>
+  <text x="308" y="266" font-size="11" fill="#374151">•  Reachability tương đối</text>
+  <text x="308" y="288" font-size="11" fill="#374151">•  Phân bố kết quả theo giờ</text>
+  <text x="308" y="310" font-size="11" fill="#374151">•  Xác suất tương đối (cần base rate)</text>
+  <line x1="308" y1="328" x2="528" y2="328" stroke="#FDE68A" stroke-width="1"/>
+  <text x="308" y="350" font-size="10.5" font-weight="700" fill="#B45309">Đây là LÃNH THỔ CỦA DOL</text>
+  <text x="308" y="372" font-size="10" fill="#4B5563">Mệnh đề DOL sống hoặc chết ở cột này.</text>
+  <text x="308" y="388" font-size="10" fill="#4B5563">Cần: snapshot + base rate + OOS.</text>
+
+  <!-- ====== COLUMN 3: UNKNOWABLE ====== -->
+  <rect x="560" y="74" width="276" height="330" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.8"/>
+  <rect x="560" y="74" width="276" height="42" rx="8" fill="#FEE2E2"/>
+  <text x="698" y="94" font-size="12.5" font-weight="700" fill="#B91C1C" text-anchor="middle">3. KHÔNG THỂ BIẾT</text>
+  <text x="698" y="109" font-size="9.5" fill="#991B1B" text-anchor="middle">giới hạn cấu trúc, không phải giới hạn công cụ</text>
+  <line x1="576" y1="134" x2="820" y2="134" stroke="#FECACA" stroke-width="1"/>
+  <text x="576" y="156" font-size="11" fill="#7F1D1D">✗  Lượng lệnh thật tại một mức</text>
+  <text x="576" y="178" font-size="11" fill="#7F1D1D">✗  Loại lệnh (stop / limit / market)</text>
+  <text x="576" y="200" font-size="11" fill="#7F1D1D">✗  Ai giao dịch (institution vs retail)</text>
+  <text x="576" y="222" font-size="11" fill="#7F1D1D">✗  Absorption đã xảy ra hay chưa</text>
+  <text x="576" y="244" font-size="11" fill="#7F1D1D">✗  Inventory transfer</text>
+  <text x="576" y="266" font-size="11" fill="#7F1D1D">✗  Ý định của participant</text>
+  <text x="576" y="288" font-size="11" fill="#7F1D1D">✗  Hidden / iceberg liquidity</text>
+  <text x="576" y="310" font-size="11" fill="#7F1D1D">✗  Lý do của một move</text>
+  <line x1="576" y1="328" x2="820" y2="328" stroke="#FECACA" stroke-width="1"/>
+  <text x="576" y="350" font-size="10.5" font-weight="700" fill="#B91C1C">Đây là nơi narrative ICT hay tuyên bố nhất</text>
+  <text x="576" y="372" font-size="10" fill="#4B5563">Không phải trùng hợp: thứ không quan sát</text>
+  <text x="576" y="388" font-size="10" fill="#4B5563">được là thứ dễ kể chuyện nhất.</text>
+
+  <!-- ====== BOTTOM: TWO READINGS OF SAME CANDLE ====== -->
+  <rect x="24" y="418" width="812" height="102" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="44" y="442" font-size="12" font-weight="700" fill="#334155">VÌ SAO CỘT 3 NGUY HIỂM: cùng một cây nến, hai cách đọc trái ngược, không cách nào bị phủ định</text>
+
+  <!-- candle -->
+  <line x1="96" y1="462" x2="96" y2="504" stroke="#374151" stroke-width="1.6"/>
+  <rect x="88" y="472" width="16" height="24" fill="#374151"/>
+  <line x1="70" y1="466" x2="126" y2="466" stroke="#DC2626" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="130" y="470" font-size="9.5" font-weight="700" fill="#B91C1C">mức bị xuyên</text>
+
+  <text x="210" y="470" font-size="10.5" fill="#B91C1C">ĐỌC A — "sweep":  wick qua mức rồi đóng quay lại → liquidity đã bị lấy</text>
+  <text x="210" y="490" font-size="10.5" fill="#15803D">ĐỌC B — "breakout":  giá đã giao dịch trên mức và giữ được → acceptance</text>
+  <text x="210" y="510" font-size="10" font-style="italic" fill="#6B7280">Cả hai chỉ khác nhau ở KẾT QUẢ SAU ĐÓ — mà kết quả sau đó là tương lai. Không suy ra được ý định từ cây nến.</text>
+</svg>

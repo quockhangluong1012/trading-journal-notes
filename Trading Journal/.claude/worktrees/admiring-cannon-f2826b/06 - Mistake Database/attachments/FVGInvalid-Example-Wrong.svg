@@ -1,0 +1,36 @@
+<svg viewBox="0 0 760 450" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="450" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#B91C1C">SAI — mua FVG nằm ở Premium, ngược bias HTF</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">HTF bias giảm. FVG mua nằm ở Premium (counter-trend), giá chỉ pullback rồi tiếp tục giảm.</text>
+
+  <rect x="24" y="74" width="712" height="356" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-opacity="0.5"/>
+
+  <line x1="50" y1="252" x2="710" y2="252" stroke="#9CA3AF" stroke-width="1.1" stroke-dasharray="6 4"/>
+  <text x="640" y="246" font-size="10" fill="#6B7280">50% (EQ)</text>
+  <text x="58" y="104" font-size="10.5" fill="#B91C1C" font-weight="600">PREMIUM (FVG mua ở đây = SAI phía)</text>
+  <text x="58" y="410" font-size="10.5" fill="#15803D">DISCOUNT</text>
+
+  <!-- HTF downtrend arrow -->
+  <path d="M 60 130 L 700 340" fill="none" stroke="#B91C1C" stroke-width="1" stroke-dasharray="8 5" opacity="0.5"/>
+  <text x="360" y="220" font-size="10" fill="#B91C1C" opacity="0.8" transform="rotate(18 360 220)">HTF bias: GIẢM (draw xuống SSL)</text>
+
+  <!-- small pullback up creating a bullish FVG in premium -->
+  <path d="M 120 180 L 160 150 L 200 128" fill="none" stroke="#16A34A" stroke-width="2"/>
+  <rect x="150" y="140" width="80" height="40" fill="#3B82F6" fill-opacity="0.16" stroke="#1D4ED8"/>
+  <text x="234" y="158" font-size="10" fill="#1D4ED8">FVG mua (Premium)</text>
+
+  <!-- entry -->
+  <path d="M 200 128 L 240 158 L 270 165" fill="none" stroke="#374151" stroke-width="1.8"/>
+  <circle cx="268" cy="163" r="6" fill="#DC2626"/>
+  <polygon points="268,163 260,149 276,149" fill="#DC2626"/>
+  <text x="278" y="158" font-size="10.5" fill="#B91C1C" font-weight="700">BUY tại FVG Premium</text>
+
+  <!-- continuation down -->
+  <path d="M 268 165 L 320 220 L 380 275 L 460 320 L 560 360 L 660 395"
+        fill="none" stroke="#B91C1C" stroke-width="2.2"/>
+  <line x1="150" y1="135" x2="700" y2="135" stroke="#DC2626" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <text x="560" y="130" font-size="10" fill="#B91C1C">SL quét sớm</text>
+  <circle cx="320" cy="135" r="4.5" fill="#DC2626"/>
+
+  <text x="90" y="422" font-size="10.5" fill="#4B5563">Bài học: một FVG "hình dạng đẹp" nhưng sai phía PD và ngược draw HTF chỉ là bẫy counter-trend.</text>
+</svg>

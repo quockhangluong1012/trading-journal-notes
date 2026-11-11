@@ -1,0 +1,99 @@
+<svg viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="0.8" y="0.8" width="998.5" height="638.5" rx="14" fill="#FBFBFD" stroke="#DADDE3" stroke-width="1.5"/>
+<text x="28.0" y="42.0" font-size="20" font-weight="700" fill="#111827">Case E — Breaker đúng định nghĩa nhưng không giữ được</text>
+<rect x="882.1" y="23.0" width="89.9" height="24.0" rx="12" fill="#F3F4F6" stroke="#DADDE3" stroke-width="1"/>
+<text x="927.1" y="39.5" font-size="10.5" font-weight="700" fill="#4B5563" text-anchor="middle">CASE DỰNG</text>
+<text x="28.0" y="66.0" font-size="13" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Đủ ba mắt xích. Giá quay lại, bật nhẹ một nến rồi đóng cửa xuyên qua vùng. Bối cảnh: khung lớn đang hướng xuống.</text>
+<rect x="28.0" y="92.5" width="600.0" height="519.5" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<rect x="171.3" y="312.6" width="208.9" height="56.0" rx="2" fill="#D97706" fill-opacity="0.16" stroke="#D97706" stroke-width="1.2" stroke-dasharray="5,3"/>
+<rect x="380.2" y="312.6" width="229.8" height="56.0" rx="2" fill="#2563EB" fill-opacity="0.13" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="5,3"/>
+<g>
+<line x1="56.4" y1="346.8" x2="56.4" y2="393.3" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="50.0" y="354.4" width="13.0" height="33.4" rx="1" fill="#E5484D"/>
+<line x1="77.3" y1="383.7" x2="77.3" y2="436.7" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="70.9" y="387.8" width="13.0" height="41.8" rx="1" fill="#E5484D"/>
+<line x1="98.2" y1="423.1" x2="98.2" y2="479.7" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="91.7" y="429.6" width="13.0" height="33.4" rx="1" fill="#E5484D"/>
+<line x1="119.1" y1="429.2" x2="119.1" y2="466.8" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="112.6" y="438.0" width="13.0" height="25.1" rx="1" fill="#0E9F6E"/>
+<line x1="140.0" y1="399.2" x2="140.0" y2="443.4" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="133.5" y="404.5" width="13.0" height="33.4" rx="1" fill="#0E9F6E"/>
+<line x1="160.9" y1="355.1" x2="160.9" y2="411.6" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="154.4" y="362.8" width="13.0" height="41.8" rx="1" fill="#0E9F6E"/>
+<line x1="181.8" y1="312.6" x2="181.8" y2="368.6" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="175.3" y="329.3" width="13.0" height="33.4" rx="1" fill="#0E9F6E"/>
+<line x1="202.7" y1="322.7" x2="202.7" y2="366.5" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="196.2" y="329.3" width="13.0" height="33.4" rx="1" fill="#E5484D"/>
+<line x1="223.6" y1="354.0" x2="223.6" y2="414.1" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="217.1" y="362.8" width="13.0" height="46.0" rx="1" fill="#E5484D"/>
+<line x1="244.4" y1="403.4" x2="244.4" y2="461.8" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="238.0" y="408.7" width="13.0" height="46.0" rx="1" fill="#E5484D"/>
+<line x1="265.3" y1="447.0" x2="265.3" y2="500.6" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="258.9" y="454.7" width="13.0" height="33.4" rx="1" fill="#E5484D"/>
+<line x1="286.2" y1="483.9" x2="286.2" y2="529.9" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="279.7" y="488.1" width="13.0" height="16.7" rx="1" fill="#E5484D"/>
+<line x1="307.1" y1="439.8" x2="307.1" y2="510.2" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="300.6" y="446.3" width="13.0" height="58.5" rx="1" fill="#0E9F6E"/>
+<line x1="328.0" y1="366.5" x2="328.0" y2="453.4" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="321.5" y="375.3" width="13.0" height="71.0" rx="1" fill="#0E9F6E"/>
+<line x1="348.9" y1="340.7" x2="348.9" y2="384.1" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="342.4" y="346.1" width="13.0" height="29.2" rx="1" fill="#0E9F6E"/>
+<line x1="369.8" y1="315.1" x2="369.8" y2="362.8" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="363.3" y="321.0" width="13.0" height="25.1" rx="1" fill="#0E9F6E"/>
+<line x1="390.7" y1="270.9" x2="390.7" y2="333.5" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="384.2" y="275.0" width="13.0" height="46.0" rx="1" fill="#0E9F6E"/>
+<line x1="411.6" y1="239.3" x2="411.6" y2="282.1" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="405.1" y="245.8" width="13.0" height="29.2" rx="1" fill="#0E9F6E"/>
+<line x1="432.4" y1="237.0" x2="432.4" y2="279.6" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="426.0" y="245.8" width="13.0" height="25.1" rx="1" fill="#E5484D"/>
+<line x1="453.3" y1="265.5" x2="453.3" y2="308.0" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="446.9" y="270.9" width="13.0" height="33.4" rx="1" fill="#E5484D"/>
+<line x1="474.2" y1="296.7" x2="474.2" y2="326.4" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="467.7" y="304.3" width="13.0" height="16.7" rx="1" fill="#E5484D"/>
+<line x1="495.1" y1="287.6" x2="495.1" y2="328.1" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="488.6" y="291.7" width="13.0" height="29.2" rx="1" fill="#0E9F6E"/>
+<line x1="516.0" y1="285.3" x2="516.0" y2="321.4" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="509.5" y="291.7" width="13.0" height="20.9" rx="1" fill="#E5484D"/>
+<line x1="536.9" y1="303.9" x2="536.9" y2="349.8" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="530.4" y="312.6" width="13.0" height="33.4" rx="1" fill="#E5484D"/>
+<line x1="557.8" y1="340.7" x2="557.8" y2="384.9" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="551.3" y="346.1" width="13.0" height="33.4" rx="1" fill="#E5484D"/>
+<line x1="578.7" y1="371.8" x2="578.7" y2="415.8" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="572.2" y="379.5" width="13.0" height="29.2" rx="1" fill="#E5484D"/>
+</g>
+<line x1="87.8" y1="479.7" x2="317.6" y2="479.7" stroke="#7C3AED" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="6,4"/>
+<line x1="171.3" y1="312.6" x2="401.1" y2="312.6" stroke="#475569" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="6,4"/>
+<text x="98.2" y="494.7" font-size="10.5" font-weight="700" fill="#7C3AED" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">đáy cũ</text>
+<text x="181.8" y="304.6" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">đỉnh giữa</text>
+<text x="286.2" y="344.8" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">OB gốc</text>
+<text x="430.4" y="338.3" font-size="10.5" font-weight="700" fill="#2563EB" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">BULLISH</text>
+<text x="430.4" y="351.4" font-size="10.5" font-weight="700" fill="#2563EB" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">BREAKER</text>
+<circle cx="467.8" cy="299.0" r="9.5" fill="#111827" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="467.8" y="302.8" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<circle cx="495.1" cy="271.7" r="9.5" fill="#B45309" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="495.1" y="275.5" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<circle cx="579.8" cy="379.5" r="9.5" fill="#B91C1C" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="579.8" y="383.3" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<line x1="338.4" y1="120.5" x2="610.0" y2="120.5" stroke="#6B7280" stroke-width="1" stroke-linecap="round" stroke-dasharray="6,4"/>
+<text x="340.4" y="115.5" font-size="10.5" font-weight="700" fill="#6B7280" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">đỉnh khung lớn — giá đang ở nửa trên</text>
+<rect x="642.0" y="92.5" width="330.0" height="519.5" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<text x="656.0" y="118.0" font-size="13.5" font-weight="700" fill="#111827" data-bx="655.0,961.0">Bối cảnh và diễn biến</text>
+<text x="656.0" y="142.5" font-size="11.8" font-weight="700" fill="#2563EB">Bối cảnh</text>
+<text x="656.0" y="158.5" font-size="11.5" font-weight="400" fill="#111827" data-bx="655.0,959.0">D1 hướng xuống; nhịp tăng H1 này là nhịp hồi vào nửa</text>
+<text x="656.0" y="174.8" font-size="11.5" font-weight="400" fill="#111827" data-bx="655.0,959.0">trên của khoảng giá lớn.</text>
+<text x="656.0" y="198.1" font-size="11.8" font-weight="700" fill="#2563EB">① Retest</text>
+<text x="656.0" y="214.1" font-size="11.5" font-weight="400" fill="#111827" data-bx="655.0,959.0">Giá về vùng, nến đóng cửa trong vùng.</text>
+<text x="656.0" y="237.4" font-size="11.8" font-weight="700" fill="#2563EB">② Phản ứng yếu</text>
+<text x="656.0" y="253.4" font-size="11.5" font-weight="400" fill="#111827" data-bx="655.0,959.0">Một nến tăng nhỏ, không tạo đỉnh mới, không có</text>
+<text x="656.0" y="269.8" font-size="11.5" font-weight="400" fill="#111827" data-bx="655.0,959.0">displacement.</text>
+<text x="656.0" y="293.1" font-size="11.8" font-weight="700" fill="#2563EB">③ Thất bại</text>
+<text x="656.0" y="309.1" font-size="11.5" font-weight="400" fill="#111827" data-bx="655.0,959.0">Nến đóng cửa dưới mép xa của vùng và giá đi tiếp</text>
+<text x="656.0" y="325.4" font-size="11.5" font-weight="400" fill="#111827" data-bx="655.0,959.0">xuống.</text>
+<rect x="656.0" y="493.0" width="302.0" height="101.9" rx="8" fill="#B91C1C" fill-opacity="0.07" stroke="#B91C1C" stroke-width="1" stroke-opacity="0.35"/>
+<rect x="656.0" y="493.0" width="4.0" height="101.9" rx="2" fill="#B91C1C"/>
+<text x="670.0" y="512.9" font-size="11.6" font-weight="700" fill="#B91C1C" data-bx="656.0,958.0">Điều thật sự kết luận được</text>
+<text x="670.0" y="532.3" font-size="11.6" font-weight="400" fill="#111827" data-bx="656.0,958.0">Vùng đúng tên, sai bối cảnh. Một mẫu không</text>
+<text x="670.0" y="548.8" font-size="11.6" font-weight="400" fill="#111827" data-bx="656.0,958.0">chứng minh “Breaker ngược khung lớn thì hỏng”</text>
+<text x="670.0" y="565.3" font-size="11.6" font-weight="400" fill="#111827" data-bx="656.0,958.0">— nhưng nó cho một giả thuyết đáng đếm: tỷ lệ</text>
+<text x="670.0" y="581.7" font-size="11.6" font-weight="400" fill="#111827" data-bx="656.0,958.0">giữ khi thuận so với khi ngược khung lớn.</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTplZTY0NjYyYy01M2Q3LTRiMDUtOGE1NC1jNjFlZWQyOTc4MjkAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaK2tLlScEC87cfmeI00YP9YAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpmODc4MTJjOS0yOTcxLTQ5ZWEtOGI5ZC1kM2JiYTY4MDExYzZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo8Mx0X4WmdN8YdMSeTDIyRgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggv36P51881Vkmc6onQ7kBUpfv9xwl8J8g9X6y6D3MtYukZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaHhZH0IrcfqhjmVL9Ii2+eAAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYICK59B1DuGreqSJXFLPsZxeDTPYXJmTYft5WxJC/oOnwZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSm9Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmVlNjQ2NjJjLTUzZDctNGIwNS04YTU0LWM2MWVlZDI5NzgyOS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmU2MWRmYjRkLWVhOTYtNGJlZi1hMDIzLTkwY2FlYWJiOWI0OXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCC/fo/nXzzVWSZzqidDuQFSl+/3HCXwnyD1frLoPcy1i6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg+WQw8IwRI3Soe7UxDevo0iOgWQlEHd379X93lvJ33nmiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggK2BUUR2bvm74Z2e+8i6+bVY3TrstSpSs2Nvfu248gQd0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQAIlquDllGTQE5Gds+lrEYWHoAOx0yvvGp18Sbx9kf6KwxAocTSBdN+4GbP0FjYNe1PRdciYy+Dddnb71CTP0Hc=</c2pa:manifest></metadata></svg>

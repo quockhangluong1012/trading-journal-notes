@@ -1,0 +1,65 @@
+<svg viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs><marker id="ah6B7280" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/></marker></defs>
+<rect x="1" y="1" width="998" height="518" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">Mental model cuối cùng về CISD</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Một trang để mang theo khi nhìn chart.</text>
+<rect x="852.8" y="22" width="119.2" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="912.4" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">MENTAL MODEL</text>
+<text x="28.0" y="508.0" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start">Sơ đồ minh họa (synthetic) — giá trong hình là ví dụ, không phải dữ liệu thị trường thật.</text>
+<rect x="28.0" y="95.0" width="148.0" height="120.0" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.4"/>
+<text x="102.0" y="121.0" font-size="12.5" font-weight="700" fill="#2563EB" text-anchor="middle">CHẶNG</text>
+<text x="102.0" y="145.0" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">Chuỗi nến đóng cùng</text>
+<text x="102.0" y="160.2" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">chiều = một đoạn</text>
+<text x="102.0" y="175.4" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">delivery</text>
+<line x1="177.0" y1="155.0" x2="186.0" y2="155.0" stroke="#6B7280" stroke-width="1.4" marker-end="url(#ah6B7280)"/>
+<rect x="187.0" y="95.0" width="148.0" height="120.0" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
+<text x="261.0" y="121.0" font-size="12.5" font-weight="700" fill="#D97706" text-anchor="middle">VẠCH XUẤT PHÁT</text>
+<text x="261.0" y="145.0" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">Open của nến đầu chuỗi</text>
+<text x="261.0" y="160.2" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">(kẻ trước, không dời)</text>
+<line x1="336.0" y1="155.0" x2="345.0" y2="155.0" stroke="#6B7280" stroke-width="1.4" marker-end="url(#ah6B7280)"/>
+<rect x="346.0" y="95.0" width="148.0" height="120.0" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
+<text x="420.0" y="121.0" font-size="12.5" font-weight="700" fill="#D97706" text-anchor="middle">TIẾNG CHUÔNG</text>
+<text x="420.0" y="145.0" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">Chỉ giá ĐÓNG CỬA của</text>
+<text x="420.0" y="160.2" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">khung đang dùng mới</text>
+<text x="420.0" y="175.4" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">tính</text>
+<line x1="495.0" y1="155.0" x2="504.0" y2="155.0" stroke="#6B7280" stroke-width="1.4" marker-end="url(#ah6B7280)"/>
+<rect x="505.0" y="95.0" width="148.0" height="120.0" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.4"/>
+<text x="579.0" y="121.0" font-size="12.5" font-weight="700" fill="#059669" text-anchor="middle">CISD</text>
+<text x="579.0" y="145.0" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">Đóng vượt vạch = cả</text>
+<text x="579.0" y="160.2" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">chặng bị lấy lại</text>
+<line x1="654.0" y1="155.0" x2="663.0" y2="155.0" stroke="#6B7280" stroke-width="1.4" marker-end="url(#ah6B7280)"/>
+<rect x="664.0" y="95.0" width="148.0" height="120.0" rx="10" fill="#EEF2FF" stroke="#4338CA" stroke-width="1.4"/>
+<text x="738.0" y="121.0" font-size="12.5" font-weight="700" fill="#4338CA" text-anchor="middle">BỐI CẢNH</text>
+<text x="738.0" y="145.0" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">Ở đâu? Sau sweep? Tại</text>
+<text x="738.0" y="160.2" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">POI? Thuận HTF?</text>
+<text x="738.0" y="175.4" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">Range?</text>
+<line x1="813.0" y1="155.0" x2="822.0" y2="155.0" stroke="#6B7280" stroke-width="1.4" marker-end="url(#ah6B7280)"/>
+<rect x="823.0" y="95.0" width="148.0" height="120.0" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.4"/>
+<text x="897.0" y="121.0" font-size="12.5" font-weight="700" fill="#059669" text-anchor="middle">CHỨNG MINH</text>
+<text x="897.0" y="145.0" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">Giữ được mức?</text>
+<text x="897.0" y="160.2" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">Displacement? MSS? Về</text>
+<text x="897.0" y="175.4" font-size="11" font-weight="400" fill="#1F2937" text-anchor="middle">thanh khoản?</text>
+<rect x="28.0" y="235.0" width="466.0" height="124.4" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="40.0" y="259.4" font-size="13" font-weight="700" fill="#059669" text-anchor="start">CISD LÀ</text>
+<circle cx="44.0" cy="277.6" r="2.6" fill="#059669" stroke="none" stroke-width="1.2"/>
+<text x="54.0" y="281.6" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Một phép thử có/không trên giá đóng cửa.</text>
+<circle cx="44.0" cy="297.4" r="2.6" fill="#059669" stroke="none" stroke-width="1.2"/>
+<text x="54.0" y="301.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Bằng chứng SỚM rằng chặng gần nhất đã bị lấy lại.</text>
+<circle cx="44.0" cy="317.2" r="2.6" fill="#059669" stroke="none" stroke-width="1.2"/>
+<text x="54.0" y="321.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Một mức giá cụ thể để biết khi nào mình sai.</text>
+<circle cx="44.0" cy="337.0" r="2.6" fill="#059669" stroke="none" stroke-width="1.2"/>
+<text x="54.0" y="341.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Hữu ích nhất khi xuất hiện ĐÚNG CHỖ đã chuẩn bị trước.</text>
+<rect x="506.0" y="235.0" width="466.0" height="124.4" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.3"/>
+<text x="518.0" y="259.4" font-size="13" font-weight="700" fill="#DC2626" text-anchor="start">CISD KHÔNG PHẢI</text>
+<circle cx="522.0" cy="277.6" r="2.6" fill="#DC2626" stroke="none" stroke-width="1.2"/>
+<text x="532.0" y="281.6" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Đổi xu hướng, hay đổi cấu trúc (đó là MSS/BOS).</text>
+<circle cx="522.0" cy="297.4" r="2.6" fill="#DC2626" stroke="none" stroke-width="1.2"/>
+<text x="532.0" y="301.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Bằng chứng về “Smart Money” hay ý định của ai.</text>
+<circle cx="522.0" cy="317.2" r="2.6" fill="#DC2626" stroke="none" stroke-width="1.2"/>
+<text x="532.0" y="321.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Lệnh vào tự động; lời hứa giá sẽ đi tiếp.</text>
+<circle cx="522.0" cy="337.0" r="2.6" fill="#DC2626" stroke="none" stroke-width="1.2"/>
+<text x="532.0" y="341.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Thứ hiếm: nó xảy ra ở đầu MỌI chặng giá, mọi khung.</text>
+<rect x="28.0" y="411.0" width="944.0" height="63.4" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.3"/>
+<text x="40.0" y="435.4" font-size="13" font-weight="700" fill="#D97706" text-anchor="start">Một câu để nhớ</text>
+<text x="40.0" y="458.5" font-size="13" font-weight="400" fill="#1F2937" text-anchor="start">“CISD cho biết chặng cũ đã bị lấy lại. Bối cảnh cho biết điều đó có quan trọng không. Follow-through cho biết nó có thật không.”</text>
+</svg>

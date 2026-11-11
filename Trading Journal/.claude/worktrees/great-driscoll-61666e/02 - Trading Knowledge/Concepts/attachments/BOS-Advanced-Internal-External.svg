@@ -1,0 +1,43 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Internal BOS sống bên trong External BOS</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Nhiều internal BOS cùng hướng dồn lại tạo một external BOS. Internal = timing; External = vẽ lại bản đồ.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- external swing high line -->
+  <line x1="60" y1="130" x2="700" y2="130" stroke="#7C3AED" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="64" y="120" font-size="11.5" font-weight="700" fill="#5B21B6">External swing high (đỉnh dealing range HTF)</text>
+
+  <!-- price path: pullback into discount, then stair-step up with internal BOS -->
+  <path d="M70,150 L120,320 L160,270 L190,345 L225,255 L255,300 L300,220 L330,265 L375,185 L405,225 L455,105 L485,150 L530,80"
+        fill="none" stroke="#374151" stroke-width="2.2"/>
+
+  <!-- internal BOS markers -->
+  <line x1="140" y1="270" x2="235" y2="270" stroke="#0EA5E9" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="238" y="274" font-size="10" fill="#0284C7">internal BOS ①</text>
+  <line x1="235" y1="255" x2="308" y2="255" stroke="#0EA5E9" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="240" y="240" font-size="10" fill="#0284C7">internal BOS ②</text>
+  <line x1="310" y1="220" x2="382" y2="220" stroke="#0EA5E9" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="386" y="224" font-size="10" fill="#0284C7">internal BOS ③</text>
+
+  <!-- external BOS marker -->
+  <circle cx="455" cy="105" r="10" fill="none" stroke="#7C3AED" stroke-width="3"/>
+  <text x="470" y="98" font-size="12" font-weight="700" fill="#5B21B6">EXTERNAL BOS — body close trên đỉnh range</text>
+  <text x="470" y="114" font-size="10.5" fill="#6B7280">→ dealing range mới, protected low mới</text>
+
+  <!-- sweep at bottom -->
+  <circle cx="190" cy="345" r="8" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="120" y="372" font-size="10.5" fill="#B45309">sweep SSL (inducement) trước chuỗi internal BOS</text>
+
+  <!-- protected low new -->
+  <circle cx="405" cy="225" r="7" fill="none" stroke="#16A34A" stroke-width="2.5"/>
+  <text x="398" y="250" font-size="10" fill="#15803D">ITL cuối trước external BOS</text>
+  <text x="398" y="264" font-size="10" fill="#15803D">= protected low MỚI</text>
+
+  <!-- annotations -->
+  <text x="40" y="94" font-size="12" font-weight="700" fill="#1F2937">Uptrend H4 — nhìn bằng hai lớp kính:</text>
+
+  <rect x="24" y="408" width="712" height="0" fill="none"/>
+  <text x="40" y="425" font-size="11.5" fill="#4B5563"><tspan font-weight="700" fill="#0284C7">Internal BOS (M5/M15):</tspan> xác nhận pullback xong, dùng để TIMING entry. <tspan font-weight="700" fill="#5B21B6">External BOS (H1/H4):</tspan> xác nhận trend HTF, dùng để VẼ LẠI range — không lẫn vai trò.</text>
+</svg>

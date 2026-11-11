@@ -1,0 +1,85 @@
+<svg viewBox="0 0 940 580" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="940" height="580" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="26" y="34" font-size="18" font-weight="700" fill="#1F2937">Phân cấp swing: cấp = PHẠM VI VÔ HIỆU, không phải kích thước</text>
+  <text x="26" y="55" font-size="13" fill="#6B7280">Câu hỏi phân cấp duy nhất: “nếu swing này bị phá, có bao nhiêu kết luận trước đó mất hiệu lực?”</text>
+
+  <!-- ===== chart ===== -->
+  <rect x="25" y="76" width="540" height="418" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="38" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Một đường giá — năm cấp swing lồng nhau</text>
+  <rect x="38" y="110" width="514" height="370" rx="5" fill="#FFFFFF" stroke="#EFF1F5"/>
+  <g transform="translate(45,118)">
+    <path d="M 0,320 L 22,296 L 40,312 L 58,300 L 78,268 L 100,288 L 112,252 L 132,292 L 152,240 L 176,278 L 200,214 L 226,254 L 250,175 L 272,215 L 290,140 L 316,178 L 330,130 L 356,168 L 380,60 L 404,150 L 420,240 L 448,196 L 470,225 L 490,205"
+          fill="none" stroke="#374151" stroke-width="1.7"/>
+
+    <!-- L1 micro -->
+    <circle cx="40" cy="312" r="2.6" fill="#9CA3AF"/>
+    <circle cx="100" cy="288" r="2.6" fill="#9CA3AF"/>
+    <circle cx="226" cy="254" r="2.6" fill="#9CA3AF"/>
+    <text x="20" y="338" font-size="9.5" fill="#9CA3AF">L1 micro — nhiễu</text>
+
+    <!-- L2 internal -->
+    <circle cx="132" cy="292" r="5" fill="none" stroke="#1D4ED8" stroke-width="2.2"/>
+    <text x="96" y="318" font-size="10" font-weight="700" fill="#1D4ED8">L2 · internal low</text>
+
+    <!-- L3 intermediate -->
+    <circle cx="250" cy="175" r="5.5" fill="none" stroke="#7C3AED" stroke-width="2.4"/>
+    <text x="196" y="163" font-size="10" font-weight="700" fill="#7C3AED">L3 · intermediate low</text>
+
+    <!-- L4 external -->
+    <circle cx="330" cy="130" r="6" fill="none" stroke="#D97706" stroke-width="2.6"/>
+    <text x="272" y="120" font-size="10" font-weight="700" fill="#B45309">L4 · protected low (neo dưới)</text>
+    <circle cx="380" cy="60" r="6" fill="none" stroke="#D97706" stroke-width="2.6"/>
+    <text x="352" y="48" font-size="10" font-weight="700" fill="#B45309">L4 · range high (unswept)</text>
+    <line x1="330" y1="130" x2="496" y2="130" stroke="#D97706" stroke-width="1.3" stroke-dasharray="5 4" opacity="0.75"/>
+    <line x1="380" y1="60" x2="496" y2="60" stroke="#D97706" stroke-width="1.3" stroke-dasharray="5 4" opacity="0.75"/>
+    <text x="424" y="104" font-size="10" font-weight="700" fill="#B45309">range đang chi phối</text>
+
+    <!-- L5 major -->
+    <circle cx="78" cy="268" r="6.5" fill="none" stroke="#111827" stroke-width="2.8"/>
+    <text x="8" y="256" font-size="10" font-weight="700" fill="#111827">L5 · major HTF low</text>
+
+    <!-- current price -->
+    <circle cx="490" cy="205" r="3.8" fill="#111827"/>
+    <text x="404" y="262" font-size="10" fill="#374151">giá hiện tại</text>
+  </g>
+
+  <!-- ===== ladder ===== -->
+  <rect x="582" y="76" width="333" height="418" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="595" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Thuật toán phân cấp (đệ quy)</text>
+
+  <rect x="595" y="110" width="307" height="52" rx="6" fill="#F9FAFB" stroke="#E5E7EB"/>
+  <text x="606" y="128" font-size="10.5" font-weight="700" fill="#6B7280">L1 · Micro</text>
+  <text x="606" y="143" font-size="10" fill="#6B7280">Không kết luận nào phụ thuộc → không tính</text>
+  <text x="606" y="156" font-size="10" fill="#6B7280">vào bản đồ cấu trúc.</text>
+
+  <rect x="595" y="170" width="307" height="52" rx="6" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="606" y="188" font-size="10.5" font-weight="700" fill="#1D4ED8">L2 · Internal</text>
+  <text x="606" y="203" font-size="10" fill="#374151">Phá nó đổi cấu trúc BÊN TRONG một leg.</text>
+  <text x="606" y="216" font-size="10" fill="#374151">Dùng cho timing LTF, không đổi bias.</text>
+
+  <rect x="595" y="230" width="307" height="52" rx="6" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <text x="606" y="248" font-size="10.5" font-weight="700" fill="#7C3AED">L3 · Intermediate</text>
+  <text x="606" y="263" font-size="10" fill="#374151">Phá nó đổi nhãn cấu trúc khung trung gian</text>
+  <text x="606" y="276" font-size="10" fill="#374151">(H1/H4) → hạ bậc luận điểm.</text>
+
+  <rect x="595" y="290" width="307" height="52" rx="6" fill="#FFFBEB" stroke="#FDE68A"/>
+  <text x="606" y="308" font-size="10.5" font-weight="700" fill="#B45309">L4 · External</text>
+  <text x="606" y="323" font-size="10" fill="#374151">Phá nó đổi CỰC TRỊ của range đang chi phối</text>
+  <text x="606" y="336" font-size="10" fill="#374151">→ REPLACED hoặc INVALIDATED.</text>
+
+  <rect x="595" y="350" width="307" height="52" rx="6" fill="#F3F4F6" stroke="#D1D5DB"/>
+  <text x="606" y="368" font-size="10.5" font-weight="700" fill="#111827">L5 · Major HTF</text>
+  <text x="606" y="383" font-size="10" fill="#374151">Phá nó mất hiệu lực cấu trúc khung cao hơn</text>
+  <text x="606" y="396" font-size="10" fill="#374151">(D1/W1) → đây mới là lúc xét đổi bias.</text>
+
+  <line x1="595" y1="414" x2="902" y2="414" stroke="#E5E7EB"/>
+  <text x="595" y="434" font-size="10.5" font-weight="700" fill="#B91C1C">Cấp KHÔNG phải thuộc tính cố định.</text>
+  <text x="595" y="450" font-size="10" fill="#4B5563">Nó đệ quy theo cấu trúc quanh swing, nên đổi khi</text>
+  <text x="595" y="464" font-size="10" fill="#4B5563">cấu trúc đổi: internal → external khi có BOS mới</text>
+  <text x="595" y="478" font-size="10" fill="#4B5563">tham chiếu nó; và tụt cấp khi bị supersession.</text>
+
+  <rect x="25" y="508" width="890" height="56" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="38" y="528" font-size="11.5" font-weight="700" fill="#15803D">Vì sao định nghĩa này đứng vững còn “phân cấp theo tên gọi” thì không</text>
+  <text x="38" y="546" font-size="10.5" fill="#374151">Nó không dùng tham số kích thước nào (không point, không pip), nên không thể “trông to nên chắc là cấp 4”. Và nó phụ thuộc workflow:</text>
+  <text x="38" y="560" font-size="10.5" fill="#374151">cùng một chart, hai trader có workflow khác nhau sẽ phân cấp khác nhau — và cả hai đều đúng trong hệ của họ. Vì vậy phải ghi workflow vào cấu hình.</text>
+</svg>

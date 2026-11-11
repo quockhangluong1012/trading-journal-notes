@@ -1,0 +1,44 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#B91C1C">SAI — coi cú grinding yếu là "MSS"</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Chuỗi nến thân nhỏ, wick dài, không FVG, bò qua mức → entry → giá reclaim, quét SL.</text>
+
+  <rect x="24" y="74" width="712" height="346" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-opacity="0.5"/>
+
+  <line x1="60" y1="185" x2="700" y2="185" stroke="#6B7280" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="64" y="179" font-size="10.5" fill="#4B5563">Mức "phá vỡ" (protected swing)</text>
+
+  <!-- downtrend -->
+  <g stroke="#B91C1C" stroke-width="1.2">
+    <line x1="80" y1="230" x2="80" y2="255"/><rect x="75" y="234" width="10" height="16" fill="#DC2626"/>
+    <line x1="105" y1="242" x2="105" y2="270"/><rect x="100" y="246" width="10" height="18" fill="#DC2626"/>
+    <line x1="130" y1="258" x2="130" y2="288"/><rect x="125" y="262" width="10" height="18" fill="#DC2626"/>
+  </g>
+  <!-- weak grinding candles crossing the level with big wicks small bodies -->
+  <g>
+    <line x1="160" y1="235" x2="160" y2="300" stroke="#15803D" stroke-width="1.2"/><rect x="155" y="258" width="10" height="14" fill="#16A34A"/>
+    <line x1="185" y1="215" x2="185" y2="278" stroke="#B91C1C" stroke-width="1.2"/><rect x="180" y="238" width="10" height="13" fill="#DC2626"/>
+    <line x1="210" y1="200" x2="210" y2="262" stroke="#15803D" stroke-width="1.2"/><rect x="205" y="222" width="10" height="14" fill="#16A34A"/>
+    <line x1="235" y1="172" x2="235" y2="235" stroke="#15803D" stroke-width="1.2"/><rect x="230" y="196" width="10" height="14" fill="#16A34A"/>
+    <line x1="260" y1="162" x2="260" y2="228" stroke="#B91C1C" stroke-width="1.2"/><rect x="255" y="185" width="10" height="12" fill="#DC2626"/>
+  </g>
+  <text x="150" y="150" font-size="10" fill="#B91C1C" font-weight="600">Grinding qua mức — thân nhỏ, không FVG</text>
+
+  <!-- entry on the weak break -->
+  <circle cx="270" cy="185" r="6" fill="#DC2626"/>
+  <polygon points="270,185 262,171 278,171" fill="#DC2626"/>
+  <text x="280" y="180" font-size="10.5" font-weight="700" fill="#B91C1C">Entry (tưởng là MSS)</text>
+
+  <!-- reclaim and continuation down -->
+  <g stroke="#B91C1C" stroke-width="1.2">
+    <line x1="295" y1="180" x2="295" y2="250" stroke="#B91C1C"/><rect x="290" y="195" width="10" height="45" fill="#DC2626"/>
+    <line x1="320" y1="220" x2="320" y2="295"/><rect x="315" y="235" width="10" height="52" fill="#DC2626"/>
+    <line x1="345" y1="270" x2="345" y2="345"/><rect x="340" y="285" width="10" height="52" fill="#DC2626"/>
+  </g>
+  <!-- SL -->
+  <line x1="270" y1="205" x2="700" y2="205" stroke="#DC2626" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <text x="560" y="200" font-size="10" fill="#B91C1C">SL bị quét</text>
+  <circle cx="295" cy="205" r="4.5" fill="#DC2626"/>
+
+  <text x="90" y="405" font-size="10.5" fill="#4B5563">Bài học: cú "break" bò qua mức mà không có body-to-range cao và không tạo FVG chỉ là nhiễu, không phải displacement.</text>
+</svg>

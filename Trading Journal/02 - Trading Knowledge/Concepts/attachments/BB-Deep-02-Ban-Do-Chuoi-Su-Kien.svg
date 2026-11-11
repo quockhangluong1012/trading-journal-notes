@@ -1,0 +1,91 @@
+<svg viewBox="0 0 980 530" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<defs><marker id="m0" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#334155"/></marker></defs>
+<rect x="0" y="0" width="980" height="530" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="26.0" y="34.0" font-size="18" font-weight="700" fill="#1F2937" text-anchor="start">Bản đồ một trang: Breaker Block là một CHUỖI sự kiện, không phải một hình chữ nhật</text>
+<text x="26.0" y="56.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Bốn ô đầu là ĐỊNH NGHĨA (quan sát được). Hai ô sau là THEO DÕI (giả thuyết). Ô cuối là KẾT CỤC — phải ghi cả ba nhánh.</text>
+<rect x="877.5" y="18" width="76.5" height="22" rx="11" fill="#F3F4F6" stroke="#D8DBE2"/>
+<text x="915.7" y="33.0" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">OVERVIEW</text>
+<rect x="26.0" y="72.0" width="928.0" height="34.0" rx="8" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+<text x="40.0" y="94.0" font-size="12" font-weight="600" fill="#1D4ED8" text-anchor="start">Bối cảnh D1 bao trùm toàn bộ chuỗi: cấu trúc lớn · dealing range · thanh khoản HTF · Daily Bias — Breaker nằm TRONG bối cảnh.</text>
+<rect x="26.0" y="128.0" width="140.0" height="178.0" rx="9" fill="#FFFFFF" stroke="#B45309" stroke-width="1.4"/>
+<circle cx="44.0" cy="148.0" r="11" fill="#B45309"/>
+<text x="44.0" y="152.1" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="62.0" y="153.0" font-size="12.5" font-weight="700" fill="#B45309" text-anchor="start">OB gốc</text>
+<text x="38.0" y="200.0" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">Một vùng nến ngược</text>
+<text x="38.0" y="215.6" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">hướng tại đỉnh/đáy,</text>
+<text x="38.0" y="231.2" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">được đánh dấu</text>
+<text x="38.0" y="246.8" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">TRƯỚC.</text>
+<text x="38.0" y="282.0" font-size="9.8" font-weight="700" fill="#6B7280" text-anchor="start">QUAN SÁT</text>
+<line x1="168.0" y1="217.0" x2="180.0" y2="217.0" stroke="#334155" stroke-width="1.6" marker-end="url(#m0)"/>
+<rect x="182.0" y="128.0" width="140.0" height="178.0" rx="9" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.4"/>
+<circle cx="200.0" cy="148.0" r="11" fill="#B91C1C"/>
+<text x="200.0" y="152.1" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="218.0" y="153.0" font-size="12.5" font-weight="700" fill="#B91C1C" text-anchor="start">Cực trị cũ bị vi</text>
+<text x="218.0" y="169.0" font-size="12.5" font-weight="700" fill="#B91C1C" text-anchor="start">phạm</text>
+<text x="194.0" y="200.0" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">Giá tạo đáy thấp hơn</text>
+<text x="194.0" y="215.6" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">L1 (bull) / đỉnh cao</text>
+<text x="194.0" y="231.2" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">hơn (bear).</text>
+<text x="194.0" y="282.0" font-size="9.8" font-weight="700" fill="#6B7280" text-anchor="start">QUAN SÁT + nhãn ICT:</text>
+<text x="194.0" y="294.0" font-size="9.8" font-weight="700" fill="#6B7280" text-anchor="start">sweep</text>
+<line x1="324.0" y1="217.0" x2="336.0" y2="217.0" stroke="#334155" stroke-width="1.6" marker-end="url(#m0)"/>
+<rect x="338.0" y="128.0" width="140.0" height="178.0" rx="9" fill="#FFFFFF" stroke="#111827" stroke-width="1.4"/>
+<circle cx="356.0" cy="148.0" r="11" fill="#111827"/>
+<text x="356.0" y="152.1" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="374.0" y="153.0" font-size="12.5" font-weight="700" fill="#111827" text-anchor="start">Thân nến đóng</text>
+<text x="374.0" y="169.0" font-size="12.5" font-weight="700" fill="#111827" text-anchor="start">qua swing</text>
+<text x="350.0" y="200.0" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">Đóng cửa vượt H1</text>
+<text x="350.0" y="215.6" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">(bull) / dưới L1 (bear)</text>
+<text x="350.0" y="231.2" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">— OB gốc thất bại.</text>
+<text x="350.0" y="282.0" font-size="9.8" font-weight="700" fill="#6B7280" text-anchor="start">QUAN SÁT + nhãn: MSS</text>
+<line x1="480.0" y1="217.0" x2="492.0" y2="217.0" stroke="#334155" stroke-width="1.6" marker-end="url(#m0)"/>
+<rect x="494.0" y="128.0" width="140.0" height="178.0" rx="9" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.4"/>
+<circle cx="512.0" cy="148.0" r="11" fill="#0F766E"/>
+<text x="512.0" y="152.1" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="530.0" y="153.0" font-size="12.5" font-weight="700" fill="#0F766E" text-anchor="start">Breaker được</text>
+<text x="530.0" y="169.0" font-size="12.5" font-weight="700" fill="#0F766E" text-anchor="start">XÁC NHẬN</text>
+<text x="506.0" y="200.0" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">Từ lúc nến ở ô 3</text>
+<text x="506.0" y="215.6" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">đóng cửa. Trước đó</text>
+<text x="506.0" y="231.2" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">chỉ là ứng viên.</text>
+<text x="506.0" y="282.0" font-size="9.8" font-weight="700" fill="#6B7280" text-anchor="start">ĐỊNH NGHĨA v0.1</text>
+<line x1="636.0" y1="217.0" x2="648.0" y2="217.0" stroke="#334155" stroke-width="1.6" marker-end="url(#m0)"/>
+<rect x="650.0" y="128.0" width="140.0" height="178.0" rx="9" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.4"/>
+<circle cx="668.0" cy="148.0" r="11" fill="#0F766E"/>
+<text x="668.0" y="152.1" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="686.0" y="153.0" font-size="12.5" font-weight="700" fill="#0F766E" text-anchor="start">Chờ retest</text>
+<text x="662.0" y="200.0" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">Giá có thể quay lại —</text>
+<text x="662.0" y="215.6" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">hoặc không bao giờ</text>
+<text x="662.0" y="231.2" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">quay lại.</text>
+<text x="662.0" y="282.0" font-size="9.8" font-weight="700" fill="#6B7280" text-anchor="start">THEO DÕI</text>
+<line x1="792.0" y1="217.0" x2="804.0" y2="217.0" stroke="#334155" stroke-width="1.6" marker-end="url(#m0)"/>
+<rect x="806.0" y="128.0" width="140.0" height="178.0" rx="9" fill="#FFFFFF" stroke="#6D28D9" stroke-width="1.4"/>
+<circle cx="824.0" cy="148.0" r="11" fill="#6D28D9"/>
+<text x="824.0" y="152.1" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="842.0" y="153.0" font-size="12.5" font-weight="700" fill="#6D28D9" text-anchor="start">Quan sát phản</text>
+<text x="842.0" y="169.0" font-size="12.5" font-weight="700" fill="#6D28D9" text-anchor="start">ứng</text>
+<text x="818.0" y="200.0" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">Trên M5: sweep nhỏ,</text>
+<text x="818.0" y="215.6" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">MSS nhỏ — là bằng</text>
+<text x="818.0" y="231.2" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">chứng, không phải lời</text>
+<text x="818.0" y="246.8" font-size="11.3" font-weight="400" fill="#1F2937" text-anchor="start">hứa.</text>
+<text x="818.0" y="282.0" font-size="9.8" font-weight="700" fill="#6B7280" text-anchor="start">GIẢ THUYẾT</text>
+<path d="M26.0,316 L26.0,324 L634.0,324 L634.0,316" fill="none" stroke="#334155" stroke-width="1.5"/>
+<text x="330.0" y="342.0" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">ĐỊNH NGHĨA — kiểm tra được khách quan, có thời điểm t_avail</text>
+<path d="M650.0,316 L650.0,324 L946.0,324 L946.0,316" fill="none" stroke="#0F766E" stroke-width="1.5"/>
+<text x="798.0" y="342.0" font-size="12" font-weight="700" fill="#0F766E" text-anchor="middle">THEO DÕI — chưa phải lệnh</text>
+<text x="26.0" y="380.0" font-size="13" font-weight="700" fill="#334155" text-anchor="start">7 · KẾT CỤC (ghi tất cả, kể cả kết cục xấu):</text>
+<rect x="26.0" y="392.0" width="300.0" height="74.0" rx="8" fill="#ECFDF5" stroke="#15803D" stroke-width="1.2"/>
+<rect x="26.0" y="392.0" width="4.0" height="74.0" rx="2" fill="#15803D"/>
+<text x="38.0" y="414.5" font-size="12.5" font-weight="700" fill="#15803D" text-anchor="start">A · Phản ứng theo kỳ vọng</text>
+<text x="38.0" y="433.9" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Giá giữ vùng và đi xa khỏi nó. Vẫn chỉ là MỘT</text>
+<text x="38.0" y="449.7" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">mẫu.</text>
+<rect x="340.0" y="392.0" width="300.0" height="74.0" rx="8" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.2"/>
+<rect x="340.0" y="392.0" width="4.0" height="74.0" rx="2" fill="#B91C1C"/>
+<text x="352.0" y="414.5" font-size="12.5" font-weight="700" fill="#B91C1C" text-anchor="start">B · Xuyên qua vùng</text>
+<text x="352.0" y="433.9" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Thân nến đóng qua mép xa và giữ ở đó → vùng</text>
+<text x="352.0" y="449.7" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">vô hiệu. Không dời vùng.</text>
+<rect x="654.0" y="392.0" width="300.0" height="74.0" rx="8" fill="#FFFBEB" stroke="#B45309" stroke-width="1.2"/>
+<rect x="654.0" y="392.0" width="4.0" height="74.0" rx="2" fill="#B45309"/>
+<text x="666.0" y="414.5" font-size="12.5" font-weight="700" fill="#B45309" text-anchor="start">C · Không bao giờ retest</text>
+<text x="666.0" y="433.9" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Giá chạy thẳng tới mục tiêu. Không phải thất bại</text>
+<text x="666.0" y="449.7" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">— là một kết cục riêng.</text>
+<text x="954.0" y="516.0" font-size="11" font-weight="600" fill="#6B7280" text-anchor="end">Không có ô nào trong chuỗi này nói rằng giá “phải” đi theo hướng nào.</text>
+</svg>

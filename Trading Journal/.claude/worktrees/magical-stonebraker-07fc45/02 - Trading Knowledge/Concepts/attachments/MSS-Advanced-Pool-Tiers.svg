@@ -1,0 +1,41 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Pool bị quét trước MSS — thang "nhiên liệu" 5 bậc</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">MSS chỉ mạnh bằng cú sweep đứng trước nó. Pool càng nhiều stop dồn vào, đảo chiều càng có nhiên liệu.</text>
+
+  <!-- Tier bars, descending width -->
+  <rect x="40" y="80" width="560" height="52" rx="8" fill="#16A34A" opacity="0.85"/>
+  <text x="56" y="102" font-size="13" font-weight="800" fill="#FFFFFF">TIER 1 — Equal Highs / Equal Lows</text>
+  <text x="56" y="120" font-size="10.5" fill="#DCFCE7">Stop + breakout order dồn vào đúng một mức → thanh khoản giải phóng lớn nhất</text>
+  <text x="612" y="112" font-size="11" font-weight="700" fill="#166534">MSS sau đó: tin cậy nhất</text>
+
+  <rect x="40" y="142" width="500" height="52" rx="8" fill="#22C55E" opacity="0.6"/>
+  <text x="56" y="164" font-size="13" font-weight="800" fill="#14532D">TIER 2 — PDH/PDL, PWH/PWL, Session H/L</text>
+  <text x="56" y="182" font-size="10.5" fill="#166534">External liquidity cả thị trường theo dõi; sweep tại đây thường mở cả một leg</text>
+
+  <rect x="40" y="204" width="420" height="52" rx="8" fill="#FDE68A" opacity="0.8"/>
+  <text x="56" y="226" font-size="13" font-weight="800" fill="#92400E">TIER 3 — Swing đơn rõ ràng, unmitigated</text>
+  <text x="56" y="244" font-size="10.5" fill="#B45309">Hợp lệ nhưng ít nhiên liệu hơn; nên đòi thêm confluence (POI + kill zone)</text>
+
+  <rect x="40" y="266" width="330" height="52" rx="8" fill="#FCA5A5" opacity="0.6"/>
+  <text x="56" y="288" font-size="13" font-weight="800" fill="#991B1B">TIER 4 — Swing đã bị quét nhiều lần</text>
+  <text x="56" y="306" font-size="10.5" fill="#B91C1C">Pool đã "mỏng" — MSS sau đó dễ thành failed shift</text>
+
+  <rect x="40" y="328" width="240" height="52" rx="8" fill="#E5E7EB"/>
+  <text x="56" y="350" font-size="13" font-weight="800" fill="#6B7280">KHÔNG HỢP LỆ — Micro swing</text>
+  <text x="56" y="368" font-size="10.5" fill="#9CA3AF">Vài nến, không ý nghĩa cấu trúc → nhiễu</text>
+
+  <!-- Right side note -->
+  <rect x="560" y="204" width="176" height="176" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="574" y="228" font-size="12" font-weight="700" fill="#1F2937">3 hệ số nhân chất lượng</text>
+  <text x="574" y="252" font-size="10.5" fill="#374151"><tspan font-weight="700">① Vị trí:</tspan> sweep xảy ra</text>
+  <text x="574" y="266" font-size="10.5" fill="#374151">TẠI HTF POI, đúng P/D</text>
+  <text x="574" y="290" font-size="10.5" fill="#374151"><tspan font-weight="700">② Thời điểm:</tspan> trong</text>
+  <text x="574" y="304" font-size="10.5" fill="#374151">kill zone (LO / NY AM)</text>
+  <text x="574" y="328" font-size="10.5" fill="#374151"><tspan font-weight="700">③ CISD đi kèm:</tspan> đóng</text>
+  <text x="574" y="342" font-size="10.5" fill="#374151">qua open của chuỗi nến</text>
+  <text x="574" y="356" font-size="10.5" fill="#374151">đẩy ngược → sớm + chắc</text>
+
+  <rect x="24" y="396" width="712" height="26" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="414" font-size="11.5" font-weight="700" fill="#92400E">Quy tắc: Tier 1–2 + đủ 3 hệ số = setup hạng A. Tier 3 cần confluence. Tier 4–5 = bỏ, dù cú phá "trông đẹp" đến đâu.</text>
+</svg>

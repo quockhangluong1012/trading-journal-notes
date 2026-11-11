@@ -1,0 +1,1 @@
+Link: [ICT 2024 Mentorship Lecture 1 Notes — 08:30 AM Model + PDF](https://innercircletrader.net/tutorials/ict-2024/lecture-1/)

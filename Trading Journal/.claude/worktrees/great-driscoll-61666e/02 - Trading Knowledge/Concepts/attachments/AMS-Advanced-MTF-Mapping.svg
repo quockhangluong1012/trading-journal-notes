@@ -1,0 +1,40 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Degree là TƯƠNG ĐỐI theo timeframe — cùng một đáy, ba cái tên</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Một swing low duy nhất (★) được gắn nhãn khác nhau tùy khung quan sát. Thứ bậc mới cố định, nhãn thì không.</text>
+
+  <!-- Panel H4 -->
+  <rect x="24" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="100" font-size="13" font-weight="700" fill="#1F2937">H4</text>
+  <polyline points="44,150 90,250 140,190 190,300 236,180" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="90" cy="250" r="5" fill="#9CA3AF"/>
+  <text x="70" y="272" font-size="11" font-weight="700" fill="#4B5563">★ chỉ là STL</text>
+  <text x="36" y="340" font-size="10.5" fill="#6B7280">Trên H4 đáy này chỉ là một</text>
+  <text x="36" y="355" font-size="10.5" fill="#6B7280">nhịp nhỏ trong leg lớn.</text>
+
+  <!-- Panel M15 -->
+  <rect x="266" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="278" y="100" font-size="13" font-weight="700" fill="#1F2937">M15</text>
+  <polyline points="282,140 310,210 330,180 355,250 380,200 400,230 420,170 445,220 478,150" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="355" cy="250" r="8" fill="none" stroke="#2563EB" stroke-width="2.5"/>
+  <circle cx="310" cy="210" r="3.5" fill="#9CA3AF"/>
+  <circle cx="400" cy="230" r="3.5" fill="#9CA3AF"/>
+  <text x="330" y="275" font-size="11" font-weight="700" fill="#2563EB">★ = ITL</text>
+  <text x="278" y="340" font-size="10.5" fill="#6B7280">Zoom vào: đáy ★ có STL cao</text>
+  <text x="278" y="355" font-size="10.5" fill="#6B7280">hơn hai bên → nâng cấp ITL.</text>
+
+  <!-- Panel M1 -->
+  <rect x="508" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="520" y="100" font-size="13" font-weight="700" fill="#1F2937">M1</text>
+  <polyline points="522,130 540,170 552,150 568,200 582,175 596,230 612,190 626,250 644,200 656,225 672,160 690,190 718,140" fill="none" stroke="#374151" stroke-width="1.8"/>
+  <circle cx="626" cy="250" r="10" fill="none" stroke="#7C3AED" stroke-width="3"/>
+  <circle cx="568" cy="200" r="5" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="672" cy="160" r="3.5" fill="#9CA3AF"/>
+  <text x="600" y="278" font-size="11" font-weight="700" fill="#7C3AED">★ = LTL</text>
+  <text x="520" y="340" font-size="10.5" fill="#6B7280">Trên M1, ★ gom cả một cụm</text>
+  <text x="520" y="355" font-size="10.5" fill="#6B7280">ITL/STL → là LTL của khung này.</text>
+
+  <!-- Bottom rule -->
+  <rect x="24" y="390" width="712" height="28" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="409" font-size="12" font-weight="700" fill="#92400E">Quy tắc thực chiến: chọn 1 khung "phán quyết" (H4/H1) chấm degree TRƯỚC, rồi mới xuống LTF execute — không đổi nhãn giữa chừng.</text>
+</svg>

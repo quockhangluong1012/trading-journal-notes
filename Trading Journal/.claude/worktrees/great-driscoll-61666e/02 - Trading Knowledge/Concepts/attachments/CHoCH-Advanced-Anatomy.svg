@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Giải phẫu Bearish CHoCH trong uptrend — cảnh báo đảo chiều đúng thứ tự</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Bối cảnh: uptrend HH/HL đang chạy; giá lên vùng premium + chạm HTF POI. CHoCH thật = body close + displacement + FVG.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- premium POI zone -->
+  <rect x="44" y="90" width="672" height="80" fill="#3B82F6" opacity="0.06"/>
+  <text x="52" y="106" font-size="10.5" fill="#1D4ED8">HTF / H1 POI (bearish FVG-OB) + premium của dealing range</text>
+
+  <!-- up leg with higher highs / higher lows -->
+  <path d="M60,360 L110,250 L150,300 L205,180 L245,240 L300,130" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <text x="66" y="378" font-size="10.5" fill="#6B7280">① Chuỗi HH/HL — uptrend đang chạy</text>
+  <!-- HL markers -->
+  <circle cx="150" cy="300" r="5" fill="#D1D5DB"/>
+  <text x="120" y="318" font-size="10" fill="#9CA3AF">HL cũ</text>
+  <circle cx="245" cy="240" r="6" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+  <text x="200" y="228" font-size="10.5" font-weight="700" fill="#15803D">③ Higher-low được BẢO VỆ — mốc CHoCH</text>
+  <line x1="245" y1="240" x2="470" y2="240" stroke="#16A34A" stroke-width="1.4" stroke-dasharray="6 4"/>
+
+  <!-- sweep BSL at final high -->
+  <circle cx="300" cy="130" r="9" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+  <line x1="235" y1="122" x2="365" y2="122" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <text x="330" y="116" font-size="10.5" font-weight="700" fill="#B45309">② High cuối + sweep BSL (wick quét đỉnh + reject)</text>
+
+  <!-- displacement leg down breaking protected HL -->
+  <path d="M300,130 L345,200 L365,182 L430,320" fill="none" stroke="#DC2626" stroke-width="2.8"/>
+  <!-- body close candle below HL -->
+  <rect x="434" y="235" width="2" height="95" fill="#DC2626"/><rect x="428" y="245" width="13" height="75" fill="#DC2626" rx="1"/>
+  <text x="450" y="248" font-size="10.5" font-weight="700" fill="#B91C1C">④ CHoCH: BODY CLOSE dưới protected low</text>
+  <text x="450" y="263" font-size="10.5" fill="#B91C1C">+ displacement (không phải wick)</text>
+
+  <!-- bearish FVG left behind -->
+  <rect x="360" y="205" width="120" height="26" fill="#DC2626" opacity="0.15"/>
+  <text x="486" y="222" font-size="10.5" fill="#B91C1C">⑤ Để lại bearish FVG = POI Short</text>
+
+  <!-- retrace + entry -->
+  <path d="M430,320 L465,270 L490,235 L512,262 L555,335 L600,300 L665,380" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="490" cy="235" r="6" fill="#DC2626"/>
+  <text x="500" y="300" font-size="10.5" font-weight="700" fill="#B91C1C">⑤ Retrace vào FVG → Short</text>
+  <text x="500" y="315" font-size="10.5" fill="#6B7280">stop trên sweep high; target SSL</text>
+
+  <!-- BOS confirmation target -->
+  <line x1="600" y1="380" x2="716" y2="380" stroke="#DC2626" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="590" y="372" font-size="10.5" fill="#B91C1C">⑥ BOS hướng xuống xác nhận flip order flow</text>
+
+  <rect x="24" y="408" width="712" height="56" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="428" font-size="11.5" font-weight="700" fill="#92400E">Bullish CHoCH đối xứng: downtrend LH/LL → sweep SSL dưới đáy cũ (discount) → body close phá LÊN qua lower-high được bảo vệ</text>
+  <text x="36" y="446" font-size="11.5" font-weight="700" fill="#92400E">+ displacement + bullish FVG = bullish CHoCH → retrace vào FVG → Long. CHoCH chỉ CẢNH BÁO; chờ BOS hướng mới để xác nhận.</text>
+</svg>

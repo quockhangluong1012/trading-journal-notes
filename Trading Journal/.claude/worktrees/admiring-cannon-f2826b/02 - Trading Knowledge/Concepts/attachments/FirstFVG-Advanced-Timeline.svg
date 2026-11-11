@@ -1,0 +1,42 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="420" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Dòng thời gian phiên NY (giờ New York)</text>
+<text x="24" y="54" font-size="12.5" fill="#6B7280">Từ đóng cửa hôm trước → Opening Range Gap → mở 09:30 → 1st FVG → extend level đến 03:45 PM.</text>
+<rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<!-- timeline axis -->
+<line x1="60" y1="150" x2="700" y2="150" stroke="#6B7280" stroke-width="2"/>
+<!-- prev close -->
+<line x1="90" y1="140" x2="90" y2="160" stroke="#6B7280" stroke-width="2"/>
+<text x="60" y="130" font-size="10.5" font-weight="700" fill="#374151">04:14 PM</text>
+<text x="60" y="118" font-size="9.5" fill="#6B7280">hôm trước</text>
+<text x="66" y="180" font-size="9.5" fill="#6B7280">đóng cửa</text>
+<!-- gap zone -->
+<rect x="90" y="138" width="120" height="24" fill="#FEF3C7" stroke="#F59E0B" stroke-dasharray="4 3"/>
+<text x="98" y="205" font-size="10" font-weight="700" fill="#B45309">Opening Range Gap</text>
+<text x="98" y="219" font-size="9.5" fill="#6B7280">(chênh giá qua đêm)</text>
+<!-- 09:30 open -->
+<line x1="210" y1="135" x2="210" y2="165" stroke="#B45309" stroke-width="2.4"/>
+<text x="180" y="130" font-size="10.5" font-weight="700" fill="#B45309">09:30 open</text>
+<!-- opening range window shading -->
+<rect x="210" y="139" width="120" height="22" fill="#FEF3C7" opacity="0.9"/>
+<line x1="330" y1="135" x2="330" y2="165" stroke="#B45309" stroke-width="1.6" stroke-dasharray="4 3"/>
+<text x="308" y="130" font-size="10.5" font-weight="700" fill="#B45309">10:00</text>
+<text x="212" y="250" font-size="10" font-weight="700" fill="#B45309">Opening Range 09:30–10:00</text>
+<text x="212" y="264" font-size="9.5" fill="#6B7280">cửa sổ DUY NHẤT để 1st FVG hợp lệ</text>
+<!-- 09:31 earliest FVG marker -->
+<line x1="228" y1="142" x2="228" y2="158" stroke="#1D4ED8" stroke-width="2"/>
+<circle cx="228" cy="150" r="5" fill="#1D4ED8"/>
+<text x="230" y="290" font-size="10" font-weight="700" fill="#1D4ED8">09:31 = nến sớm nhất</text>
+<text x="230" y="304" font-size="9.5" fill="#6B7280">imbalance có thể in ra (1st FVG)</text>
+<path d="M228 158 Q228 275 228 282" fill="none" stroke="#1D4ED8" stroke-width="1" stroke-dasharray="3 3"/>
+<!-- extend to 03:45 -->
+<line x1="330" y1="150" x2="640" y2="150" stroke="#1D4ED8" stroke-width="1.6" stroke-dasharray="6 4"/>
+<line x1="640" y1="135" x2="640" y2="165" stroke="#1D4ED8" stroke-width="2"/>
+<text x="600" y="130" font-size="10.5" font-weight="700" fill="#1D4ED8">03:45 PM</text>
+<text x="430" y="140" font-size="10" font-weight="700" fill="#1D4ED8">Extend 1st FVG level qua cả ngày →</text>
+<!-- VN time note -->
+<rect x="60" y="325" width="640" height="58" rx="6" fill="#EFF6FF" stroke="#93C5FD"/>
+<text x="74" y="346" font-size="11" font-weight="700" fill="#1D4ED8">Quy đổi giờ VN (UTC+7):</text>
+<text x="74" y="364" font-size="10.5" fill="#374151">09:30 NY ≈ 20:30 VN (mùa hè EDT, ~Mar–Nov) · ≈ 21:30 VN (mùa đông EST, ~Nov–Mar).</text>
+<text x="74" y="378" font-size="10.5" fill="#374151">Mốc extend 03:45 PM NY ≈ 02:45 / 03:45 sáng VN hôm sau → setup rơi vào buổi TỐI của Khang.</text>
+</svg>

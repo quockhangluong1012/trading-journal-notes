@@ -1,0 +1,1726 @@
+---
+type: ict-concept
+concept: Breaker Block
+aliases:
+  - BB
+  - Breaker Block
+  - Breaker
+  - Bullish Breaker
+  - Bearish Breaker
+  - Failed Order Block
+tags:
+  - trading/ict/concept
+  - trading/study
+  - "#BreakerBlock"
+status: developing
+category: PD Array
+timeframes:
+  - D1
+  - H4
+  - H1
+  - M15
+  - M5
+  - M1
+models:
+  - "[[01 - ICT 2022 Model|ICT 2022]]"
+  - "[[07 - Unicorn Model|Unicorn]]"
+markets:
+  - NQ1
+  - EURUSD
+  - GBPUSD
+  - XAUUSD
+importance: 5
+confidence:
+last_reviewed: 2026-10-17
+created: 2026-06-22
+updated: 2026-10-17
+prerequisites:
+  - "[[25-OB-Order-Block]]"
+  - "[[55-Order-Block-OB-Nghien-cuu-chuyen-sau-Selection-Hierarchy-Backtest]]"
+  - "[[21-Market-Structure-Shift]]"
+  - "[[50-Displacement-In-Depth]]"
+  - "[[20-Liquidity-Sweep]]"
+  - "[[12-Dealing-Range]]"
+common_mistakes:
+  - "[[02-Mistake-Enter-before-liquidity-sweep]]"
+  - "[[03-Mistake-Entry-When-MSS-not-in-POI-Zone]]"
+  - "[[06-Mistake-Not-Have-Market-Structure-Shift]]"
+  - "[[08-Mistake-Weak-Displacement]]"
+  - "[[13-Mistake-Trading-Into-Unswept-Liquidity]]"
+  - "[[12-Mistake-Log-Data-Mismatch-Backtest]]"
+---
+
+# Breaker Block (BB)
+
+> [!summary] Tóm tắt 1 câu
+> **Breaker Block là tên ICT đặt cho một vùng Order Block đã THẤT BẠI theo một trình tự cụ thể — OB gốc tại một đỉnh/đáy → cực trị cũ bị vi phạm → một thân nến đóng xuyên qua chính swing chứa OB đó — sau thời điểm ấy vùng được theo dõi với vai trò ngược lại. Nó là một NHÃN CẤU TRÚC có thời điểm ra đời rõ ràng, không phải lời hứa rằng giá sẽ bật lại tại đó.**
+
+> [!important] Nguyên tắc cốt lõi
+> **Breaker = một chuỗi sự kiện được ghi lại TRƯỚC, không phải một hình chữ nhật vẽ SAU.**
+> Ba mắt xích, đúng thứ tự: **OB gốc được nêu tên → cực trị cũ bị vi phạm → thân nến đóng qua swing**. Thiếu một mắt xích thì gọi đúng tên khác (Mitigation Block, OB còn sống, UNCLEAR…).
+> Ba câu hỏi luôn tách riêng: **(1) vùng có phải Breaker theo định nghĩa không? (2) giá có quay lại không? (3) nếu quay lại, có setup giao dịch không?** — đúng ở câu (1) không nói gì về câu (2) và (3).
+
+> [!info] Đây là bản v2 (2026-10-17) — đọc trước khi dùng
+> - Viết lại toàn bộ theo protocol nghiên cứu Breaker Block (18 phần, 71 mục đầu ra). Bản v1 (2026-06 → 07) được sao lưu ở `Claude outputs/backups/04-Breaker-Block.2026-10-17.md.bak`. Bản đồ thay đổi nằm ở [[#Changelog]].
+> - **Sửa định nghĩa quan trọng nhất:** v1 mô tả vùng Bullish Breaker là “cụm nến GIẢM gần High1”. Bản v2 chọn quy ước phổ biến nhất (gắn với tài liệu mentorship ICT qua nguồn thứ cấp): **nến TĂNG cuối cùng tại đỉnh H1** — tức đúng cái bearish OB đã thất bại. Quy ước “nến giảm” được giữ làm **biến thể VAR-B** để so sánh khi backtest (xem [[#12. Ranh giới vùng và điều kiện phân loại]]).
+> - **Gỡ khỏi phần chính** ba case study của v1 (ES/FOMC 10/09, NQ 06/12/2023, BTCUSD 19/03/2024) vì **không tìm thấy lệnh backtest/journal tương ứng trong vault** — số liệu của chúng không kiểm chứng được. Bài học định tính của chúng được giữ dưới dạng **giả thuyết** (HYP-BB-011, 012, 017).
+> - Hình `BB-Deep-*` là sơ đồ **dựng (synthetic)**, không phải dữ liệu thị trường. Hình `BB-Sim-*` là **mô phỏng random walk (null model)** — baseline mà mọi claim phải vượt. Mọi ngưỡng là **HEURISTIC**; mọi RULE-BB là **v0.1 — BACKTEST REQUIRED**.
+> - Note này **kế thừa** định nghĩa OB-DEF v0.1 và OB-INVAL v0.1 của [[55-Order-Block-OB-Nghien-cuu-chuyen-sau-Selection-Hierarchy-Backtest]], DEF-MSS-03 của [[21-Market-Structure-Shift]], và hệ thống gate G1/G2 của [[01c - ICT 2022 Model - He thong quyet dinh da khung (State Machine D1-H1-M5)]]. Không lặp lại thông số của các note đó.
+
+> [!abstract]- Mục lục (bấm để mở)
+> - **Cách đọc note** — hệ thống nhãn, năm tầng giải thích, nguồn ICT
+> - **0. Executive Summary**
+> - **PART I — Nền tảng** (1–6): Breaker là gì · Order Block · vì sao OB thất bại · khi nào OB thất bại thành Breaker · Breaker không phải là gì · giới hạn suy luận từ chart
+> - **PART II — Phân loại** (7–13): Bullish · Bearish · OB/Failed OB/Breaker · Mitigation Block · Hỗ trợ/kháng cự · ranh giới vùng · trường hợp mơ hồ
+> - **PART III — Bối cảnh cấu trúc** (14–22): market structure · swing · MSS/BOS · displacement · FVG · liquidity · dealing range · premium/discount · đếm trùng bằng chứng
+> - **PART IV — Hình thành & retest** (23–31): OB gốc · sự kiện phá · BB-DEF v0.1 · thời điểm biết · retest · invalidation · thất bại · không retest · vùng ≠ setup
+> - **PART V — Đa khung D1 → H1 → M5** (32–41) + bảy tình huống chuyển khung
+> - **PART VI — Vận hành** (42–50): SOP mở chart · phân loại · retest · invalidation · decision tree · quy tắc nếu–thì · UNCLEAR · 24 lỗi
+> - **PART VII — Kiểm chứng** (51–59): định nghĩa vận hành · ghi real-time · journal · hindsight · backtest · mô phỏng null · biến thể · giả thuyết · câu hỏi mở
+> - **PART VIII — Tổng hợp** (60–71): ELI5 · bảy ví dụ D1→M5 · case thật trong vault · quy trình một trang · checklist · danh sách định nghĩa · danh sách giả thuyết
+> - **Năm câu trả lời cuối** · QC · Flashcards · Mức độ thành thạo · Tài liệu tham khảo · Changelog
+
+---
+
+## Cách đọc note này
+
+### Hệ thống nhãn
+
+| Nhãn | Ý nghĩa | Mức tin cậy mặc định |
+|---|---|---|
+| **[OBSERVABLE]** | Điều nhìn thấy trực tiếp trên OHLC: “giá đóng cửa trên đỉnh H1” | Cao — chỉ mô tả, không giải thích |
+| **[MARKET MECHANICS]** | Giải thích bằng lệnh, khớp lệnh, thanh khoản, có bằng chứng đã công bố | Trung bình → cao, tùy bằng chứng |
+| **[ICT FRAMEWORK]** | Cách ICT / cộng đồng ICT đặt tên và diễn giải | Cao về *định nghĩa*; không nói gì về *hiệu quả* |
+| **[INTERPRETATION]** | Cách hiểu hợp lý nhưng không chứng minh được từ OHLC | Trung bình → thấp |
+| **[HYPOTHESIS]** | Mệnh đề có thể kiểm chứng (có mã HYP-BB-xxx) | Chưa biết |
+| **[BACKTEST REQUIRED]** | Không được coi là lợi thế cho tới khi test đúng phương pháp | — |
+| **[SIMULATION]** | Kết quả mô phỏng trên dữ liệu ngẫu nhiên (null model) | Cao về mô hình null; KHÔNG phải dữ liệu thị trường |
+| **[HEURISTIC]** | Một con số chọn để bắt đầu, không phải chân lý | Phải được thay bằng dữ liệu |
+
+**Về nguồn ICT:** giáo trình gốc của ICT (Michael J. Huddleston) chủ yếu ở dạng video/mentorship; note này **chưa đối chiếu được video gốc**. “[ICT FRAMEWORK]” = cách diễn đạt phổ biến trong tài liệu thứ cấp (Tier 3–4)[^S1][^S2][^S3]. Không có câu nào trong note được trình bày như trích dẫn nguyên văn của ICT.
+
+### Năm tầng giải thích (yêu cầu “đứa trẻ 5 tuổi cũng hiểu”)
+
+| Tầng | Tên | Mục tiêu |
+|---|---|---|
+| T1 | Ngôn ngữ đời thường | Hiểu ý tưởng mà chưa cần thuật ngữ |
+| T2 | Diễn biến giá | Thấy chuỗi sự kiện theo thời gian, biết lúc nào biết được điều gì |
+| T3 | ICT | Gắn đúng tên: OB, Breaker, MSS, sweep, displacement, FVG |
+| T4 | Ứng dụng | Mở khung nào, đánh dấu gì, chờ gì, bỏ gì |
+| T5 | Giới hạn & phản ví dụ | Khi nào hình đẹp mà không có giá trị |
+
+---
+
+## 0. Executive Summary
+
+1. **Breaker là một chuỗi, không phải một vùng.** Định nghĩa gồm ba mắt xích quan sát được (OB gốc → cực trị cũ bị vi phạm → thân nến đóng qua swing chứa OB gốc). Vùng chỉ “tồn tại” từ thời điểm **t_avail** = lúc nến phá swing đóng cửa. [ICT FRAMEWORK + OBSERVABLE]
+2. **Có hai quy ước đánh dấu nến đang lưu hành.** VAR-A (mặc định v2): nến **tăng** cuối tại đỉnh H1 (Bullish Breaker) — đúng là bearish OB đã thất bại. VAR-B: các nến **giảm** mở đầu nhịp đi xuống. Một cách thứ ba hay gặp — gọi nến giảm tại đáy L2 là “breaker” — là **sai nhãn**: đó là OB của chính cú tăng tạo MSS. [ICT FRAMEWORK]
+3. **Breaker khác Mitigation Block ở đúng một điểm:** cực trị cũ có bị vi phạm hay không (đáy mới vs đáy cao hơn). ICT coi Breaker “mạnh hơn” — chưa có bằng chứng định lượng (HYP-BB-004). [ICT FRAMEWORK]
+4. **“Sweep” trong định nghĩa chỉ có nghĩa là “cực trị cũ bị vi phạm”** — quan sát được. Việc đó có “quét thanh khoản đáng kể” hay không là một **biến chất lượng** (pool nào, cấp nào), không phải điều kiện định nghĩa. Chart OHLC không cho thấy lệnh dừng lỗ. [OBSERVABLE vs INTERPRETATION]
+5. **Displacement và FVG không nằm trong định nghĩa v0.1** — chúng là biến cần đo. Nhét chúng vào định nghĩa thì sẽ không bao giờ biết chúng có giúp gì. MSS + displacement + FVG của **cùng một nhịp** là **một** nhóm bằng chứng, không phải ba. [ICT FRAMEWORK + phương pháp]
+6. **Cấp của Breaker = cấp của swing H1 mà thân nến đóng vượt qua.** Breaker phá một swing nội bộ trong nhịp giảm lớn là chuyện khác hẳn Breaker phá đỉnh được bảo vệ của cấu trúc. [phương pháp]
+7. **Ba giai đoạn A · B · C phải tách rời:** ỨNG VIÊN (cực trị đã bị phá, chưa đóng qua swing) → ĐÃ XÁC NHẬN (đóng qua swing) → RETEST (giá quay lại). Mỗi giai đoạn có thông tin khác nhau; gộp lại là nguồn chính của hindsight.
+8. **Ba kết cục sau xác nhận đều phải được ghi:** A giữ, B xuyên (INVALIDATED), C không bao giờ retest (EXPIRED). Thiếu B và C thì “tỷ lệ thắng” vô nghĩa.
+9. **Bốn loại “sai” khác nhau:** vùng (mép xa), luận điểm (đáy quét L2), setup (stop/giờ/gate), HTF (cấu trúc D1). Không dùng một đường cho tất cả.
+10. **Đa khung:** D1 chọn vùng đáng chờ và ghi trạng thái; H1 tìm Breaker *bên trong* vùng D1 và đánh dấu trước mức M5; M5 chỉ tìm **bằng chứng phản ứng** tại vùng đã có. M5 không tạo bối cảnh.
+11. **Mô phỏng null [SIMULATION]:** trên 400.000 nến random walk (không có ai đặt lệnh), định nghĩa Breaker v0.1 vẫn cho **vài mẫu mỗi ngày** trên khung 288 nến/ngày, **phần lớn được retest rất nhanh**, và **“giữ giá” khoảng một nửa số lần — y hệt vùng ngẫu nhiên cùng kích thước**. Vậy: thấy Breaker, thấy giá quay lại, thấy giá bật — đều không phải bằng chứng.
+12. **Câu hỏi nghiên cứu đúng:** trên dữ liệu thật, Breaker (và từng biến thể/bộ lọc) có giữ giá **nhiều hơn vùng đối chứng cùng hình học**, và có expectancy dương **sau chi phí**, trên dữ liệu ngoài mẫu không? Hiện tại vault có **hai** mẫu gắn nhãn Breaker (1 thắng, 1 thua do gán nhãn) — **chưa có gì để kết luận**.
+
+![[BB-Deep-02-Ban-Do-Chuoi-Su-Kien.svg|760]]
+*Hình BB-Deep-02 — Bản đồ một trang. Bốn ô đầu là định nghĩa (kiểm tra được, có t_avail); hai ô sau là theo dõi; ô cuối là ba kết cục phải ghi.*
+
+---
+
+# PART I — NỀN TẢNG
+
+## 1. Breaker Block là gì?
+
+### 1.1 Tầng 1 — Giải thích cho trẻ 5 tuổi
+
+Hãy tưởng tượng một ngôi nhà hai tầng và một quả bóng nảy.
+
+- Lúc đầu, bóng nảy lên và **đụng trần nhà**, rồi rơi xuống. Trần nhà “chặn” bóng.
+- Một lần, bóng nảy **rất mạnh** và **làm thủng trần**, bay lên tầng trên.
+- Bây giờ bóng ở tầng trên. Nó rơi xuống… và chạm đúng **chỗ trần cũ** — mà giờ là **sàn** của tầng trên. Có khi bóng nảy lên lại.
+- Nhưng sàn đó vừa bị thủng một lỗ. **Có lúc bóng rơi xuyên qua** và rớt xuống tầng dưới.
+
+Breaker Block chính là “cái trần cũ đã bị phá thủng, giờ được thử lại như một cái sàn”.
+
+![[BB-Deep-01-ELI5-Tran-Nha-Thanh-San.svg|760]]
+*Hình BB-Deep-01 — Ẩn dụ trần nhà thành sàn nhà. Bốn ô tương ứng: OB gốc giữ vai trò → OB thất bại + MSS → retest Breaker và giữ → Breaker bị xuyên.*
+
+> [!warning] Ẩn dụ gãy ở đâu
+> Trần nhà là bê tông thật. Vùng giá thì **không có gì cả** ngoài những lệnh mà người tham gia có thể (hoặc không) đặt ở đó — và biểu đồ **không cho ta thấy họ là ai, đặt bao nhiêu**. Ẩn dụ đúng ở **thứ tự** (chặn → bị phá → quay lại thử), sai ở chỗ gợi ý rằng sàn **chắc chắn** sẽ đỡ. Mô phỏng ở Part VII cho thấy trên dữ liệu ngẫu nhiên “sàn” đỡ được khoảng một nửa số lần — giống tung đồng xu.
+
+### 1.2 Tầng 2 — Diễn biến giá theo thời gian
+
+```text
+Bullish Breaker — đọc từ trái sang phải, mỗi dòng là một thời điểm bạn BIẾT thêm một điều
+
+ T0  giá giảm, tạo đáy L1 ................................ biết: có một đáy (sau khi nó được xác nhận)
+ T1  giá tăng lên đỉnh H1; nến TĂNG cuối tại H1 = OB gốc .. biết: có một bearish OB tại H1
+ T2  giá giảm, xuyên xuống dưới L1 → tạo L2 ................ biết: đáy cũ bị vi phạm  → ỨNG VIÊN
+ T3  giá tăng mạnh, một THÂN nến ĐÓNG trên H1 ............... biết: OB gốc thất bại + cấu trúc đổi → XÁC NHẬN (t_avail)
+ T4  giá có thể quay về vùng OB gốc (giờ là Breaker) ........ biết: vùng đang được thử lại → RETEST
+ T5  giữ được / bị xuyên / (hoặc không bao giờ quay lại) ..... biết: kết cục — GHI LẠI CẢ BA
+
+            H1 ┌─OB gốc─┐                       ┌── thân nến đóng trên H1 (T3)
+               │ ▓ nến  │........................│.........................
+          ▲    │  tăng  │      ▼                 ▲│   ┌─ Breaker (vai trò mới) ─┐
+         ╱ ╲   └────────┘     ╱ ╲               ╱ │   │  ◄── retest (T4) ──     │
+   L1 ──╱───╲────────────────╱───╲─────────────╱──┘   └─────────────────────────┘
+       ╱     ╲              ╱     ╲   L2 < L1 ╱
+              ╲____________╱       ╲_________╱   (T2: đáy cũ bị vi phạm)
+```
+
+![[BB-Deep-04-Bullish-Breaker-Hinh-Thanh.svg|760]]
+*Hình BB-Deep-04 — Bullish Breaker từng bước, đánh số theo thứ tự trader biết được sự kiện. Bước 1–4 là định nghĩa; bước 5–6 là theo dõi giả thuyết.*
+
+### 1.3 Tầng 3 — Định nghĩa theo ICT (cách diễn đạt phổ biến)
+
+**[ICT FRAMEWORK]** Trong tài liệu thứ cấp về ICT, Bullish Breaker thường được mô tả là *“nến tăng (hoặc chuỗi nến tăng) tại swing high gần nhất, trước khi một đáy cũ bị vi phạm”*; khi giá sau đó giao dịch/đóng vượt lên trên swing high đó, vùng nến này được gọi là Bullish Breaker và được kỳ vọng làm hỗ trợ. Bearish Breaker đối xứng: *nến giảm tại swing low gần nhất trước khi một đỉnh cũ bị vi phạm*[^S1][^S2][^S3]. Chuỗi swing thường được tóm tắt là **Low – High – Lower Low – Higher High** (bullish) và **High – Low – Higher High – Lower Low** (bearish)[^S2].
+
+**Định nghĩa làm việc của note này (rút gọn — đầy đủ ở mục 25):**
+
+> **Bullish Breaker (BB-DEF v0.1, VAR-A):** vùng của **nến tăng cuối cùng tại đỉnh H1** (bearish OB gốc), được xác nhận khi — sau khi giá đã giao dịch **dưới đáy L1** có trước H1 — một **thân nến đóng cửa trên H1**. Từ thời điểm đó (t_avail), vùng được theo dõi như một vùng có thể hỗ trợ.
+> **Bearish Breaker:** đối xứng (nến giảm cuối tại đáy L1; đỉnh H1 bị vi phạm; thân nến đóng dưới L1).
+
+### 1.4 Tầng 4 — Khi mở chart, bạn làm gì
+
+1. Trên khung nguồn (D1 hoặc H1), tìm cặp swing **đáy L1 – đỉnh H1** đã xác nhận.
+2. Tại H1, đánh dấu **OB gốc** (nến tăng cuối) **ngay lúc đó** — ghi giờ.
+3. Khi giá phá xuống dưới L1: đổi trạng thái thành **ỨNG VIÊN**, ghi mức H1 cần bị phá.
+4. Khi một thân nến đóng trên H1: **XÁC NHẬN**, khóa ranh giới vùng, ghi t_avail.
+5. Chờ. Không giả định giá sẽ quay lại. Nếu giá quay lại: theo gate xuống khung thấp tìm **bằng chứng phản ứng**.
+6. Ghi kết cục, kể cả khi giá xuyên vùng hoặc không bao giờ quay lại.
+
+### 1.5 Tầng 5 — Giới hạn
+
+- Một vùng đúng định nghĩa **không** có nghĩa giá sẽ quay lại; quay lại **không** có nghĩa sẽ giữ; giữ **không** có nghĩa có lệnh thắng sau chi phí.
+- Định nghĩa phụ thuộc vào **cách xác định swing** (fractal mấy nến, khung nào, feed nào). Đổi tham số → đổi tập Breaker. Phải khai báo.
+- Trên dữ liệu ngẫu nhiên, mẫu hình này xuất hiện thường xuyên (mục 55.4). “Thấy nó” không phải bằng chứng gì.
+
+---
+
+## 2. Order Block là gì và đóng vai trò gì?
+
+Breaker là **OB đã thất bại**, nên phải nói rõ OB trước. Note này **không định nghĩa lại OB** — dùng OB-DEF v0.1 của [[55-Order-Block-OB-Nghien-cuu-chuyen-sau-Selection-Hierarchy-Backtest]]:
+
+- **[ICT FRAMEWORK]** Bullish OB = nến giảm cuối cùng trước một cú tăng mạnh; **Bearish OB = nến tăng cuối cùng trước một cú giảm mạnh**.
+- **OB-DEF v0.1 (vault):** Tầng 1 *candidate* = nến ngược hướng + ngay sau đó là displacement đo được; Tầng 2 *valid* = cú đẩy có hệ quả cấu trúc (đóng qua một swing đã xác nhận); Tầng 3 *qualified* = sweep, FVG, vị trí, HTF… là **biến**, không phải điều kiện.
+- **Vai trò được kỳ vọng [ICT FRAMEWORK]:** khi giá quay lại OB **từ phía ban đầu**, OB được kỳ vọng phản ứng theo hướng cú đẩy gốc. Kỳ vọng đó là [HYPOTHESIS] (xem hypothesis register HYP-OB của note OB).
+
+**Điểm nối với Breaker:** trong chuỗi Bullish Breaker, cú giảm từ H1 xuống L2 **chính là cú đẩy** khiến nến tăng cuối tại H1 trở thành bearish OB. Nếu cú giảm đó **đóng cửa** dưới L1 thì bearish OB ở H1 đạt cả Tầng 2 của OB-DEF; nếu chỉ **râu** xuyên L1 thì OB gốc chỉ đạt Tầng 1. Ghi lại khác biệt này bằng cột `ob_origin_tier` — đừng giả định.
+
+![[BB-Deep-03-OB-vs-Breaker.svg|760]]
+*Hình BB-Deep-03 — Cùng 17 nến đầu. Bên trái: giá quay lại OB từ dưới lên và bị từ chối → OB giữ vai trò. Bên phải: giá đóng xuyên lên trên H1 rồi quay lại từ trên xuống → vùng được đọc như Breaker. Tên của vùng cam do diễn biến SAU quyết định.*
+
+---
+
+## 3. Tại sao Order Block có thể thất bại?
+
+### 3.1 Điều quan sát được vs điều được diễn giải
+
+| Lớp | Câu đúng ở lớp này |
+|---|---|
+| **[OBSERVABLE]** | “Một thân nến đã đóng cửa ở phía bên kia vùng OB, và sau đó đóng qua swing chứa OB.” |
+| **[ICT FRAMEWORK]** | “OB gốc thất bại; vùng có thể trở thành Breaker.” |
+| **[HYPOTHESIS]** | “Khi giá quay lại, vùng này có thể phản ứng theo hướng mới.” |
+| **[BACKTEST REQUIRED]** | “Phản ứng đó xảy ra NHIỀU HƠN vùng ngẫu nhiên cùng kích thước, và đủ lớn để có lãi sau chi phí.” |
+
+### 3.2 Các cách giải thích cạnh tranh (không cái nào được chứng minh từ chart)
+
+1. **Lệnh tại vùng không đủ lớn.** Nếu có lệnh bán chờ ở bearish OB, áp lực mua đi lên đã hấp thụ hết. [MARKET MECHANICS — hợp lý về cơ chế; không đo được trên OHLC]
+2. **Không có lệnh nào ở đó cả.** Vùng OB chỉ là dấu vết của một cú đi nhanh trong quá khứ; không có gì bắt buộc người bán phải quay lại. Mô phỏng null cho thấy “OB” và “Breaker” vẫn hình thành trên dữ liệu không có người tham gia. [SIMULATION]
+3. **Thông tin mới.** Tin tức/định giá lại khiến giá trị hợp lý dịch chuyển; vùng cũ mất nghĩa. [MARKET MECHANICS]
+4. **Dòng lệnh dừng lỗ dây chuyền.** Khi giá vượt một mức có nhiều lệnh dừng lỗ mua (stop-buy), các lệnh này kích hoạt và **đẩy giá đi tiếp** theo hướng phá. Osler (2001/2003) dùng dữ liệu lệnh thật của một ngân hàng FX cho thấy lệnh stop-loss tụ ngay **phía bên kia** các mức tròn và có xu hướng **khuếch đại** chuyển động sau khi mức bị vượt, còn lệnh take-profit tụ **tại** mức tròn và hay gây **đảo chiều**[^S5]. [MARKET MECHANICS — bằng chứng thực nghiệm, nhưng cho mức tròn, không cho “OB”]
+5. **Cấu trúc khung lớn hơn.** OB trên H1 nằm ngược hướng một nhịp D1 mạnh → nó chỉ là một điểm dừng tạm. [INTERPRETATION]
+
+> [!note] Điều không được nói
+> “OB thất bại vì tổ chức lớn đã đảo ngược toàn bộ vị thế” là **[INTERPRETATION]** không kiểm chứng được. Chart cho biết giá đã đi đâu, không cho biết ai đã làm gì.
+
+---
+
+## 4. Điều gì khiến OB thất bại trở thành Breaker (theo định nghĩa đã chọn)?
+
+### 4.1 Vì sao “giá phá qua OB” chưa đủ
+
+“Phá qua OB” có thể là: một râu nến (sweep), một thân nến đóng qua rồi lấy lại ngay (deviation/reclaim), hay một cú đi thật. Ngoài ra, vị trí của OB trong chuỗi swing cũng quan trọng: ICT không gọi **mọi** OB bị phá là Breaker — tên Breaker gắn với **một trình tự swing cụ thể**[^S2]. Vì vậy v0.1 đòi đủ ba mắt xích:
+
+| Mắt xích | Bullish Breaker | Vì sao cần |
+|---|---|---|
+| ① OB gốc được nêu tên | nến tăng cuối tại đỉnh H1, ghi lúc H1 xác nhận | Không có OB gốc thì “OB thất bại” là câu vô nghĩa |
+| ② Cực trị cũ bị vi phạm | giá giao dịch dưới đáy L1 → L2 | Đây là điểm phân biệt Breaker với Mitigation Block |
+| ③ Thân nến đóng qua swing | close trên H1 | Đây là bằng chứng OB gốc thất bại **và** cấu trúc khung đó đổi |
+
+### 4.2 Ba giai đoạn — không phải một sự kiện
+
+![[BB-Deep-07-Ba-Giai-Doan-ABC.svg|760]]
+*Hình BB-Deep-07 — A · ỨNG VIÊN (từ lúc L1 bị phá tới trước nến đóng trên H1) · B · ĐÃ XÁC NHẬN (từ t_avail tới trước lần chạm đầu) · C · RETEST.*
+
+- **Giai đoạn A — Breaker tiềm năng (CANDIDATE).** Đáy cũ đã bị vi phạm; chưa có thân nến đóng trên H1. Rất nhiều ứng viên **không bao giờ** được xác nhận (trong mô phỏng null, khoảng 4 trên 10 ứng viên hết hạn mà không xác nhận). Việc làm: ghi ứng viên + đánh dấu trước mức H1.
+- **Giai đoạn B — Breaker theo định nghĩa (CONFIRMED / AWAITING RETEST).** Thân nến đóng trên H1. Việc làm: khóa ranh giới, ghi t_avail, mục tiêu (DOL), điều kiện hết hạn.
+- **Giai đoạn C — Retest và phản ứng.** Giá chạm vùng. Việc làm: xuống khung thấp theo gate, quan sát bằng chứng, ghi kết cục.
+
+---
+
+## 5. Breaker Block KHÔNG phải là gì
+
+- **Không phải mọi OB bị xuyên.** Phải có đủ ba mắt xích.
+- **Không phải mọi vùng “phá rồi retest”.** Đó có thể là S/R flip thông thường (mục 11).
+- **Không phải vùng nến giảm tại đáy L2** (bullish). Đó là OB của cú tăng tạo MSS — một POI khác, logic khác (mục 12).
+- **Không phải tín hiệu vào lệnh.** Breaker là **vị trí**; lệnh cần bằng chứng tại thời điểm retest + gate + quản trị rủi ro.
+- **Không phải lời hứa đảo chiều.** Breaker có thể xuất hiện trong một nhịp hồi của xu hướng lớn ngược chiều (mục 15), và có thể không bao giờ được retest.
+- **Không phải bằng chứng về “smart money”.** Xem mục 6.
+- **Không giống IFVG.** Cùng ý tưởng “đổi vai”, nhưng IFVG xuất phát từ FVG bị đóng xuyên, Breaker xuất phát từ OB tại swing ([[17-Inverse-Fair-Value-Gap-iFVG]]).
+
+---
+
+## 6. Giới hạn của việc suy luận từ biểu đồ
+
+| Câu hỏi | OHLC trả lời được? | Ghi chú |
+|---|---|---|
+| Giá đã đóng trên H1 chưa? | **Có** | [OBSERVABLE] |
+| Đáy L1 có bị vi phạm không? | **Có** (phụ thuộc feed) | Chênh lệch vài tick giữa CFD và futures có thể đổi kết luận (HYP-BB-017) |
+| Có bao nhiêu lệnh dừng lỗ dưới L1? | **Không** | Cần dữ liệu sổ lệnh / lệnh thật[^S5] |
+| Ai đã mua ở L2? “Tổ chức”? | **Không** | [INTERPRETATION] |
+| Người bán ở OB gốc có bị “kẹt” và sẽ thoát lệnh khi giá quay lại? | **Không** | Câu chuyện “hàng kẹt” là một giả thuyết cơ chế (mục 11.3), không phải dữ kiện |
+| Vùng có phản ứng nhiều hơn ngẫu nhiên không? | **Chỉ bằng thống kê có đối chứng** | Part VII |
+
+> [!important] Một quy tắc chung cho cả note
+> Mỗi khi muốn viết “tổ chức đã…”, hãy viết lại thành “giá đã… ; trong framework ICT, điều này được diễn giải là…”. Nếu câu viết lại nghe yếu hơn, đó chính là mức độ chắc chắn thật của nó.
+
+---
+
+# PART II — PHÂN LOẠI
+
+## 7. Bullish Breaker Block
+
+**Định nghĩa (VAR-A):** vùng nến tăng cuối tại đỉnh H1, xác nhận khi thân nến đóng trên H1 **sau khi** giá đã giao dịch dưới đáy L1 có trước H1.
+
+**Trình tự và thời điểm biết:**
+
+| Bước | Sự kiện | Biết được khi nào | Nhãn |
+|---|---|---|---|
+| 1 | Đáy L1 | Sau khi đủ số nến xác nhận swing (ví dụ 2 nến mỗi bên — HEURISTIC) | [OBSERVABLE] |
+| 2 | Đỉnh H1; nến tăng cuối tại H1 = OB gốc | Sau khi H1 được xác nhận | [OBSERVABLE] + [ICT FRAMEWORK] |
+| 3 | Giá giao dịch dưới L1 → L2 | Ngay khi xảy ra (ghi theo nến đóng) | [OBSERVABLE]; “SSL bị quét” = [ICT FRAMEWORK] |
+| 4 | Thân nến đóng trên H1 | Tại close của nến đó = **t_avail** | [OBSERVABLE]; “MSS” = nhãn |
+| 5 | Vùng OB gốc → Bullish Breaker | Từ t_avail | [ICT FRAMEWORK] |
+| 6 | Giá quay về vùng | Khi giá chạm mép gần (đỉnh vùng) | [OBSERVABLE] |
+| 7 | Giữ / xuyên | Theo định nghĩa phản ứng / invalidation (mục 27–28) | [HYPOTHESIS] cần đo |
+
+**Vai trò của swing high và swing low:**
+- **L1** là cực trị **bị vi phạm** — nó tạo ra mắt xích ②. Cấp của L1 (đáy vụn hay đáy cụm/đáy ngày) là biến chất lượng `sweep_pool`.
+- **H1** là swing **bị phá** — nó quyết định **cấp** của Breaker (mục 15). Đóng trên H1 là bắt buộc; râu vượt H1 thì chưa.
+- **L2** (đáy mới) là **gốc của nhịp tăng phá cấu trúc** → là mức sai của **luận điểm** (mục 28).
+
+**Khi nào vùng không còn phù hợp với giả thuyết bullish:** (a) thân nến đóng dưới mép xa (đáy vùng) và giữ ở dưới → vùng INVALIDATED; (b) giá đóng dưới L2 → luận điểm đảo chiều sai; (c) DOL phía trên bị lấy trước khi retest → vùng EXPIRED; (d) D1 đổi cấu trúc ngược hướng → đọc lại từ D1.
+
+---
+
+## 8. Bearish Breaker Block
+
+**Định nghĩa (VAR-A):** vùng **nến giảm cuối tại đáy L1** (bullish OB gốc), xác nhận khi **thân nến đóng dưới L1** sau khi giá đã giao dịch **trên đỉnh H1** có trước L1.
+
+![[BB-Deep-05-Bearish-Breaker-Hinh-Thanh.svg|760]]
+*Hình BB-Deep-05 — Bearish Breaker từng bước: H1 → L1 (nến giảm cuối = bullish OB) → H2 > H1 → thân nến đóng dưới L1 → vùng được theo dõi như kháng cự tiềm năng.*
+
+**Đối xứng — và chỗ có thể KHÔNG đối xứng:**
+- Về hình học, Bearish Breaker là ảnh gương của Bullish Breaker.
+- Về hành vi, có lý do để nghi ngờ đối xứng hoàn hảo: chỉ số chứng khoán (NQ1/NDX) có xu hướng tăng dài hạn; các cú giảm thường nhanh hơn cú tăng; phiên/tin tức ảnh hưởng khác nhau. Đây là **HYP-BB-008** — phải thống kê riêng bullish và bearish, theo từng thị trường. Không gộp.
+
+---
+
+## 9. Order Block, Failed Order Block và Breaker Block
+
+| Tiêu chí | Order Block | Failed Order Block | Breaker Block (v0.1) |
+|---|---|---|---|
+| **Định nghĩa** | Nến ngược hướng cuối trước displacement có hệ quả cấu trúc (OB-DEF v0.1) | OB bị thân nến đóng qua mép xa và **giữ** bên ngoài (DEF-OB-07 của vault) | OB gốc tại swing + cực trị cũ bị vi phạm + thân nến đóng qua swing chứa OB |
+| **Bối cảnh hình thành** | Gốc của một cú đẩy | Bất kỳ đâu OB bị chấp nhận xuyên qua | Một trình tự swing cụ thể (Low–High–Lower Low–Higher High) |
+| **Vai trò cấu trúc** | Cấp OB = cấp swing mà cú đẩy phá | Không nói gì về cấu trúc | Cấp Breaker = cấp swing H1 bị đóng qua |
+| **Điều kiện phá vùng** | — | Thân nến đóng qua mép xa + giữ k nến | Thân nến đóng qua **swing** (thường trùng hoặc vượt mép xa của OB gốc) |
+| **Điều kiện phân loại** | Tầng 1–2 OB-DEF | k, m khai báo | Ba mắt xích + t_avail |
+| **Vùng được đánh dấu** | Nến OB (full/body) | Vùng OB cũ | Nến OB gốc tại H1 (VAR-A) |
+| **Vai trò khi giá quay lại** | Theo hướng cú đẩy gốc | Chưa xác định — chỉ biết OB “chết” | Ngược hướng cú đẩy gốc |
+| **Dấu hiệu giả thuyết yếu đi** | Thân đóng qua mép xa | — | Thân đóng qua mép xa mới (phía bên kia) |
+| **Hiểu lầm phổ biến** | “Mọi nến ngược hướng là OB” | “Mọi OB chết đều thành Breaker” | “Breaker chắc chắn sẽ bật” |
+| **Backtest được?** | Có (OB-DEF v0.1) | Có (DEF-OB-07) | Có (BB-DEF v0.1) — xem Part VII |
+
+> [!important] Một câu chốt
+> **“Order Block bị phá” là một QUAN SÁT. “Breaker Block” là một PHÂN LOẠI theo framework và theo định nghĩa đang dùng.** Mọi Breaker đều là OB đã thất bại; không phải mọi OB thất bại đều là Breaker. Vault (OB note) ghi nhận cả “Failed OB → theo dõi breaker” theo nghĩa rộng — note này gọi đó là **VAR-BROAD** và so sánh với định nghĩa chặt (HYP-BB-015).
+
+---
+
+## 10. Breaker Block và Mitigation Block
+
+**[ICT FRAMEWORK]** Hai khái niệm trông gần như giống nhau. Điểm tách duy nhất được các nguồn thứ cấp thống nhất: **swing cuối có vượt qua cực trị cũ hay không**. “Sweep thì là breaker, hụt (failure) thì là mitigation block”[^S4][^S3].
+
+![[BB-Deep-09-Breaker-vs-Mitigation.svg|760]]
+*Hình BB-Deep-09 — Trái: đáy cũ bị phá (lower low) → Breaker. Phải: đáy cũ giữ (higher low) → Mitigation Block. Mức sai của luận điểm khác nhau: dưới L2 quét vs dưới đáy cao hơn.*
+
+| Tiêu chí | Breaker | Mitigation Block |
+|---|---|---|
+| Cực trị cũ | Bị vi phạm (đáy/đỉnh mới) | Không bị vi phạm (failure swing) |
+| Nhãn ICT của bước giữa | Liquidity sweep / stop run | Không có liquidity event |
+| Vùng được đánh dấu (quy ước v0.1) | OB gốc tại swing bị phá | OB gốc tại swing bị phá (cùng logic) |
+| Mức sai của luận điểm | Dưới đáy quét L2 | Dưới đáy cao hơn |
+| “Mạnh hơn/yếu hơn” | ICT coi Breaker mạnh hơn | → **HYP-BB-004**, vault có n = 0 Mitigation Block |
+
+> [!warning] Mâu thuẫn trong chính vault — cần xem lại sau
+> Note [[22-Mitigation-Block]] hiện mô tả vùng Bullish Mitigation Block là “cụm nến giảm cuối cùng trước nhịp đẩy” (tức nến tại đáy cao hơn), còn [[07 - Unicorn Model]] mô tả Bullish Breaker là “những nến giảm cuối cùng trước cú đẩy lên” (tức nến tại L2). Cả hai đặt vùng **ở đáy**, khác với quy ước VAR-A của note này (vùng **ở swing bị phá**). Đây là **khác biệt định nghĩa**, không phải lỗi nhỏ: nó đổi vị trí entry và stop. Note này không sửa hai note kia; ghi lại để review riêng. Trong lúc chờ, khi log, ghi rõ `bb_variant`.
+
+**Khi một trường hợp có nhiều cách phân loại:** ví dụ đáy L2 chỉ thấp hơn L1 một khoảng nhỏ hơn spread → trên feed này là Breaker, trên feed khác là Mitigation. Đừng ép. Ghi `classification = AMBIGUOUS (breaker|mitigation)` và lý do (`sweep_margin_vs_spread`).
+
+---
+
+## 11. Breaker Block và hỗ trợ/kháng cự
+
+### 11.1 Giống và khác
+
+- **[MARKET MECHANICS / TA cổ điển]** “Hỗ trợ cũ bị phá thành kháng cự mới” (role reversal) là một ý tưởng có từ trước ICT rất lâu. Breaker có thể xem là **một trường hợp cụ thể hóa** của role reversal, với thêm hai điều kiện: vùng phải là **OB gốc tại swing**, và phải có **cực trị cũ bị vi phạm** trước cú phá.
+- Một vùng Breaker có thể **đồng thời** là S/R theo nghĩa cổ điển (nhiều lần chạm), là mức tròn, là đỉnh ngày trước… **Đó không phải ba bằng chứng độc lập** nếu chúng cùng nằm ở một mức giá vì cùng một nguyên nhân (mục 22).
+
+### 11.2 Bằng chứng ngoài ICT (Tier 2)
+
+- **Osler (2001/2003)**[^S5]: lệnh take-profit tụ **tại** mức tròn → làm giá hay đổi chiều ở đó; lệnh stop-loss tụ **ngay bên kia** mức tròn → khi bị kích hoạt, làm chuyển động **tiếp diễn** sau khi mức bị vượt. Đây là một cơ chế thật có thể giải thích vì sao **cú phá H1** đôi khi đi nhanh (stop cascade) — nhưng nghiên cứu nói về **mức tròn**, không nói về OB hay Breaker.
+- **Chung & Bellotti (2021)**[^S6]: trên dữ liệu intraday, các mức S/R tìm bằng thuật toán **đảo chiều xu hướng nhiều hơn ngẫu nhiên có ý nghĩa thống kê**; mức nào đã bật **nhiều lần** thì càng **dễ bật** lần nữa; xác suất bật **giảm dần theo thời gian**. Lưu ý: phát hiện “càng chạm nhiều càng dễ bật” **ngược** với một niềm tin phổ biến về Breaker/OB (“lần chạm đầu mạnh nhất, sau đó mỏng dần” — v1 §15.4). Hai niềm tin này không thể cùng đúng một cách tổng quát → **HYP-BB-007**, cần test.
+- **Kavajecz & Odders-White (2004)**[^S7] (đã dùng trong note OB): mức S/R kỹ thuật trùng với vùng có thanh khoản tụ trong sổ lệnh — gợi ý rằng S/R phản ánh **nơi lệnh đặt**, không nhất thiết là “dự báo”.
+
+### 11.3 Những “cơ chế” hay được kể cho Breaker — xếp theo độ chắc chắn
+
+| # | Cơ chế | Nhãn | Ghi chú |
+|---|---|---|---|
+| M1 | **Người bán ở OB gốc bị kẹt** (bán ở H1, giá đi lên) → khi giá quay về giá vốn, họ đóng lệnh (mua) → đỡ giá | [INTERPRETATION] | Có nền hành vi: hiệu ứng “thoát ở hòa vốn” / disposition effect[^S8]. Không đo được trên FX spot |
+| M2 | **Người lỡ cú phá** đặt lệnh mua chờ tại mức vừa bị phá | [INTERPRETATION] | Hợp lý; không đo được |
+| M3 | **Lệnh dừng lỗ trên H1 bị kích hoạt** làm cú phá nhanh (cascade) | [MARKET MECHANICS] | Có bằng chứng cho mức tròn[^S5] |
+| M4 | **Sự chú ý/neo giá** — nhiều người cùng nhìn một mức | [INTERPRETATION] | Tự hoàn thành một phần, khó tách |
+| M5 | **Không có cơ chế nào** — chỉ là hình học: vùng nằm sát giá sau cú phá nên hay bị chạm lại, và “bật” khoảng một nửa số lần | [SIMULATION] | Đây là **giả thuyết rỗng (null)** mà các cơ chế M1–M4 phải đánh bại |
+
+> [!note] Giữ phần hay nhất của v1 nhưng đặt đúng chỗ
+> v1 §17 gọi M1 (“hàng kẹt bị lật”) là “cơ chế thật”. Bản v2 giữ M1 như **giả thuyết cơ chế hợp lý nhất hiện có** cho FX — có nền tảng hành vi — nhưng **không** trình bày nó như dữ kiện. Trên thị trường có volume/open interest công khai (futures), M1 sinh ra dự đoán kiểm tra được (ví dụ: volume tại lúc retest), và đó là nơi nên test nó trước.
+
+---
+
+## 12. Ranh giới vùng và điều kiện phân loại
+
+### 12.1 Nến nào là Breaker? — ba cách đang lưu hành
+
+![[BB-Deep-06-Ba-Quy-Uoc-Danh-Dau.svg|760]]
+*Hình BB-Deep-06 — A: nến tăng tại đỉnh H1 (VAR-A, mặc định v0.1). B: nến giảm mở đầu nhịp thất bại (VAR-B). C: nến giảm tại đáy L2 — sai nhãn, đó là OB của cú tăng.*
+
+| Mã | Mô tả (bullish) | Nguồn thường gặp | Đánh giá |
+|---|---|---|---|
+| **VAR-A** | Nến (chuỗi nến) **tăng** cuối tại swing high H1 trước khi đáy cũ bị vi phạm | Cách diễn đạt gắn với tài liệu mentorship ICT, lặp lại ở nhiều nguồn thứ cấp[^S1][^S2][^S3]; TTrades[^S9] | **Chọn cho v0.1**: đúng nghĩa đen “OB đã thất bại”, nhất quán với OB-DEF của vault |
+| **VAR-B** | Nến **giảm** mở đầu (hoặc nằm trong) nhịp đi xuống quét L1 | LuxAlgo library[^S11], một số blog[^S10]; v1 của note này | Vùng thường chồng gần hết lên VAR-A → giữ làm **biến thể** (HYP-BB-014) |
+| **Sai nhãn** | Nến **giảm** tại đáy L2 ngay trước cú tăng tạo MSS | Gặp trong nhiều video/ghi chú, kể cả [[07 - Unicorn Model]] | Đây là **bullish OB của nhịp MSS** (điểm vào kiểu OB của 2022 Model), không phải vùng OB đã thất bại. Có thể giao dịch — nhưng đừng gọi là Breaker |
+
+### 12.2 Đo vùng — ghi tất cả, không chọn một
+
+![[BB-Deep-27-Do-Vung-Mep-Gan-Mep-Xa.svg|760]]
+*Hình BB-Deep-27 — Mép gần/mép xa đổi chỗ khi vùng đổi vai. Vùng full (có râu) và vùng body (thân) là hai vùng khác nhau; MT thân và CE cả nến là hai mức khác nhau.*
+
+- **zone_full** = từ high tới low của nến OB gốc (có râu).
+- **zone_body** = từ open tới close (thân).
+- **MT thân** = điểm giữa thân; **CE cả nến** = điểm giữa full range — hai mức **khác nhau**, đừng trộn (giống cảnh báo trong note OB).
+- **Mép gần / mép xa:** trước khi thất bại (bearish OB, giá đến từ dưới): mép gần = đáy, mép xa = đỉnh. **Sau khi thành Bullish Breaker** (giá đến từ trên): **mép gần = đỉnh vùng, mép xa = đáy vùng**. Nhiều lỗi stop đến từ việc quên đổi chỗ này.
+- **Chuỗi nến:** nếu tại H1 có 2–3 nến tăng liền nhau, ghi cờ `ob_series = true` và ghi cả hai cách (nến cuối / cả chuỗi).
+
+### 12.3 Thời điểm phân loại
+
+Ranh giới vùng được **khóa tại t_avail**. Sau t_avail không được nới, dời hay “làm tròn” vùng. Nếu muốn thử một ranh giới khác, đó là một **biến thể khai báo trước**, không phải chỉnh sửa sau khi thấy giá.
+
+---
+
+## 13. Những trường hợp mơ hồ và ngoại lệ
+
+![[BB-Deep-08-OB-Bi-Pha-Chua-Thanh-Breaker.svg|760]]
+*Hình BB-Deep-08 — Bốn trường hợp thiếu một mắt xích: (a) râu vượt H1 nhưng thân không đóng; (b) đóng trên H1 nhưng đáy cũ không bị phá → Mitigation; (c) đóng trên H1 rồi đóng lại dưới vùng ngay → SUSPENDED; (d) OB gốc mơ hồ → UNCLEAR.*
+
+| Trường hợp | Kết luận v0.1 | Ghi gì |
+|---|---|---|
+| Râu vượt H1, thân không đóng trên H1 | CANDIDATE (chưa xác nhận); có thể là sweep đỉnh H1 | `confirm = wick_only` |
+| Đóng trên H1 nhưng L1 không bị vi phạm | **Mitigation Block** | `classification = mitigation` |
+| Đóng trên H1, nến sau đóng ngược lại dưới vùng | CONFIRMED → SUSPENDED ngay | `snapback = true`; không sửa vùng |
+| Tại H1 không có nến tăng trong cửa sổ tìm (ví dụ đỉnh tạo bởi một nến giảm râu dài, trước đó cũng là nến giảm) | “Không có OB gốc” → không phải Breaker | `ob_origin = none` |
+| Cụm đỉnh nhiều nến tăng/giảm xen kẽ | UNCLEAR, hoặc dùng biến thể “cả cụm” đã khai báo | `ob_origin = ambiguous` |
+| L2 thấp hơn L1 một khoảng nhỏ hơn spread | AMBIGUOUS breaker/mitigation; kiểm tra feed thứ hai | `sweep_margin_vs_spread` |
+| Cả chuỗi L1→H1→L2→phá H1 nằm gọn trong vài nến quanh tin lớn | Đạt định nghĩa nhưng gắn cờ | `news_window = true` (HYP-BB-011) |
+| Nhiều cặp L1/H1 lồng nhau (V-reversal lởm chởm) → nhiều ứng viên chồng nhau | Xếp theo cấp swing H1; vùng gắn với **swing bị phá có cấp cao nhất** là ứng viên chính, còn lại ghi là phụ | `candidate_rank` |
+
+![[BB-Deep-25-Khong-Du-Bang-Chung.svg|760]]
+*Hình BB-Deep-25 — Range chồng chéo: có thể vẽ “breaker” ở ba chỗ tùy cách chọn swing. Kết luận đúng là UNCLEAR.*
+
+---
+
+# PART III — BỐI CẢNH CẤU TRÚC
+
+## 14. Breaker Block và Market Structure
+
+Breaker không phải một hình chữ nhật độc lập. Nó là **dấu vết tại swing bị phá** của một sự kiện cấu trúc. Vì vậy câu hỏi đầu tiên luôn là: **swing nào đã bị phá, trên khung nào, và swing đó quan trọng tới đâu?** — trước cả câu hỏi “vùng nằm ở đâu”.
+
+Ba hệ quả:
+1. Breaker kế thừa **cấp** của swing H1 (mục 15).
+2. Breaker kế thừa **ý nghĩa** của sự kiện phá: một MSS ở lớp protected của khung nguồn khác một cú phá swing nội bộ (mục 16).
+3. Breaker kế thừa **giới hạn** của swing detector: đổi detector → đổi Breaker. Mọi thống kê phải ghi detector và tham số (fractal n, hoặc Directional Change θ — [[54-Thuat-toan-phat-hien-swing-turning-point-Directional-Change-va-Nen-tang-dinh-luong]]).
+
+---
+
+## 15. Breaker Block và swing high/swing low — swing nào thực sự quan trọng?
+
+![[BB-Deep-10-Cap-Swing-Bi-Pha.svg|760]]
+*Hình BB-Deep-10 — Cùng một mẫu hình nhỏ. A: H1 là một đỉnh nội bộ trong nhịp giảm lớn; đỉnh được bảo vệ của nhịp lớn còn nguyên → breaker nội bộ, có thể chỉ là nhịp hồi. B: chính H1 là gốc của nhịp đã phá L1 → H1 là đỉnh được bảo vệ (DEF-MSS-03) → đóng trên H1 = cấu trúc khung này đổi thật.*
+
+### 15.1 Năm cấp swing (khung nghiên cứu của project — không phải phân cấp chuẩn của ICT)
+
+| Cấp | Tên | Breaker phá swing cấp này nghĩa là gì |
+|---|---|---|
+| L1 | Micro swing | Gần như nhiễu; chỉ dùng để **tinh chỉnh điểm vào** khi đã có bằng chứng ở cấp cao hơn |
+| L2 | Internal swing | Đổi cấu trúc **bên trong** dealing range hiện tại; thường là nhịp hồi |
+| L3 | Intermediate structural swing | Đổi cấu trúc của khung nguồn; ứng viên POI chính trên khung đó |
+| L4 | External / dealing-range swing | Đổi cực trị của dealing range → range phải được **re-map** ([[37-Re-mapping-Dealing-Range-sau-Displacement]]) |
+| L5 | Major HTF swing | Sự kiện của khung lớn hơn; ảnh hưởng tới Daily Bias ([[59-Daily-Bias]]) |
+
+### 15.2 Bảy câu hỏi cho mỗi swing liên quan (L1, H1, L2)
+
+1. Swing thuộc khung nào, cấp nào (L1–L5)?
+2. Nó có vai trò gì — bị **vi phạm** (L1), bị **phá** (H1), hay là **gốc** nhịp phá (L2)?
+3. Nó đã được **xác nhận trước** khi sự kiện xảy ra chưa (known_at < thời điểm dùng)?
+4. Bị phá bằng **râu** hay bằng **thân nến đóng**?
+5. Nhịp phá có **displacement** không (mục 17)?
+6. Nó có liên quan trực tiếp tới OB gốc không (H1 chính là swing chứa OB gốc)?
+7. Nếu nó bị phá, điều gì **tự động** đổi (chuỗi BOS, range, DOL ứng viên) và điều gì **không tự động** đổi (bias khung lớn)? — theo [[21-Market-Structure-Shift]] §7.5.
+
+### 15.3 Năm biến chấm điểm (S · L · D · R · T) — để ghi, chưa để cộng
+
+| Biến | Hỏi gì | Cách ghi (quan sát được) |
+|---|---|---|
+| **S** — structural | H1 có phải swing được bảo vệ của khung nguồn không? | `h1_protected = yes/no`, `h1_level = L1…L5` |
+| **L** — liquidity | L1 là loại đáy gì? | `sweep_pool = micro / swing / EQL / PDL / session / PWL` |
+| **D** — displacement | Nhịp phá H1 có mất cân bằng không? | `disp_score` theo [[50-Displacement-In-Depth]] |
+| **R** — reaction | Nhịp từ H1 xuống L2 và từ L2 lên có lớn so với ATR? | `leg_down_atr`, `leg_up_atr` |
+| **T** — timeframe | Khung nguồn | `src_tf = D1/H4/H1/M15/M5` |
+
+> [!warning] Đừng cộng thành một điểm tổng ngay
+> Một “điểm chất lượng Breaker” cộng S+L+D+R+T trông khoa học nhưng chưa có cơ sở: các biến có thể tương quan với nhau và với hình học (mục 55.4). Ghi riêng từng biến; để dữ liệu nói biến nào có giá trị.
+
+---
+
+## 16. Breaker Block và MSS/BOS
+
+### 16.1 Phân biệt các khái niệm (không dùng thay thế nhau)
+
+| Khái niệm | Là gì | Loại |
+|---|---|---|
+| **Order Block** | Vùng nến theo OB-DEF | Vùng |
+| **Failed OB** | OB bị chấp nhận xuyên qua | Trạng thái của vùng |
+| **Breaker Block** | Vùng OB gốc tại swing, sau chuỗi ba mắt xích | Phân loại vùng |
+| **MSS** | Close vượt một mức tham chiếu đã xác nhận, **ngược** trạng thái cấu trúc hiện tại (DEF-MSS của vault) | Sự kiện cấu trúc |
+| **BOS** | Close vượt mức tham chiếu **cùng** chiều trạng thái hiện tại | Sự kiện cấu trúc |
+| **Displacement** | Đặc điểm của **chuyển động** (nhanh, thân dài, mất cân bằng) | Thuộc tính của nhịp |
+| **FVG** | Khoảng giá chỉ giao dịch một chiều trong 3 nến | Dấu vết trên đường đi |
+| **Retest** | Giá quay lại vùng | Sự kiện; không chứng minh vùng sẽ giữ |
+
+**Quan hệ trong chuỗi Breaker:** cú đóng trên H1 thường **là** một MSS (vì H1 là đỉnh được bảo vệ của nhịp giảm vừa phá L1 — khi nhịp đó đã đóng dưới L1). Nếu nhịp H1→L2 **chỉ râu** dưới L1 (không có BOS giảm), thì H1 không phải đỉnh được bảo vệ theo DEF-MSS-03 và cú đóng trên H1 được ghi là **“phá swing sau một sweep”** — vẫn đạt BB-DEF, nhưng `mss_layer` khác. Ghi lại, đừng gộp.
+
+### 16.2 Bảy tình huống
+
+| # | Tình huống | Đã biết | Chưa biết | Quan sát tiếp | Hủy giả thuyết khi |
+|---|---|---|---|---|---|
+| 1 | OB bị phá, cấu trúc đổi, có Breaker tiềm năng | Ba mắt xích đủ | Có retest không | Khoảng cách tới vùng, DOL | Vùng/luận điểm/HTF invalidation |
+| 2 | OB bị xuyên nhưng không có thay đổi cấu trúc (không đóng qua swing) | OB có thể đã thất bại | Đây là deviation hay cú đi thật | Có đóng qua swing trong W nến không | Quá W nến → EXPIRED |
+| 3 | MSS xảy ra nhưng không có OB gốc rõ | Cấu trúc đổi | Vùng nào để theo dõi | Có FVG / OB của nhịp MSS không (POI khác) | — (không có Breaker) |
+| 4 | Giá phá swing nhỏ, swing lớn vẫn giữ | Breaker nội bộ (L1–L2) | Có phá được swing lớn không | Swing lớn của khung trên | Swing lớn từ chối giá → mục tiêu ngắn hoặc bỏ |
+| 5 | Breaker xuất hiện ngược hướng D1 | Khác cấp | D1 có đổi không | D1 | D1 tiếp diễn → breaker chỉ là nhịp hồi |
+| 6 | Retest rồi xuyên qua | Thân đóng qua mép xa | Có reclaim không | k nến tiếp theo | k nến giữ ngoài → INVALIDATED |
+| 7 | Phá OB rồi chạy luôn, không retest | Vùng CONFIRMED | Có quay lại trước khi DOL bị lấy không | DOL | DOL bị lấy → EXPIRED |
+
+---
+
+## 17. Breaker Block và Displacement
+
+![[BB-Deep-11-Displacement.svg|760]]
+*Hình BB-Deep-11 — Cả hai đều đạt định nghĩa (thân đóng trên H1). A: cú phá là displacement, để lại FVG. B: cú phá “bò” bằng nến nhỏ chồng chéo — không có dấu hiệu mất cân bằng.*
+
+- **[ICT FRAMEWORK]** Displacement = chuyển động nhanh, thân dài, ít chồng chéo, thường để lại FVG; được hiểu là “một phía áp đảo”.
+- **Thông tin nó thêm vào:** cú phá H1 có phải một sự kiện mạnh, hay chỉ là trôi qua mức. Cùng nhãn “MSS” nhưng chất lượng khác.
+- **Phân biệt với nến lớn bất thường:** một nến khổng lồ quanh tin tức có thể **trông** như displacement nhưng phản ánh định giá lại trong thanh khoản mỏng (xem [[50-Displacement-In-Depth]] — bảng chẩn đoán). Ghi `news_window`.
+- **Khi displacement chỉ lặp lại thông tin của cú phá:** nếu bạn đã chấm “cú phá có hệ quả cấu trúc”, thì displacement + FVG **của cùng nhịp** không thêm một bằng chứng độc lập (mục 22).
+- **v0.1:** displacement **không** là điều kiện định nghĩa; ghi `disp_score`. Lý do: nếu bắt buộc, sẽ không còn nhóm “không displacement” để so sánh → không bao giờ biết nó giúp gì (**HYP-BB-002**).
+- **Bẫy hình học [SIMULATION]:** cú phá càng mạnh thì giá đóng càng xa vùng → retest càng ít. Nếu không kiểm soát khoảng cách, bạn có thể “phát hiện” displacement làm thay đổi kết quả chỉ vì nó thay đổi hình học (mục 55.4).
+
+---
+
+## 18. Breaker Block và FVG
+
+![[BB-Deep-12-Breaker-va-FVG.svg|760]]
+*Hình BB-Deep-12 — (a) FVG chồng lên Breaker → phần giao gọi là Unicorn. (b) FVG nằm trên, tách khỏi Breaker → hai POI riêng. (c) Không có FVG → Breaker vẫn hợp lệ theo v0.1.*
+
+- **FVG xuất hiện ở đâu:** trên **đường đi** của cú phá (nhịp L2 → trên H1). Breaker nằm ở **gốc swing bị phá** (H1). Hai thứ có thể chồng nhau, tách nhau, hoặc FVG không có.
+- **FVG có xác nhận Breaker không?** Không theo v0.1. FVG nói về **cách** giá đi qua (một chiều, nhanh), không nói vùng H1 có giá trị gì.
+- **Unicorn [ICT FRAMEWORK]:** mô hình ICT dùng **phần giao** của Breaker và FVG làm vùng vào lệnh; nếu không chồng nhau thì “là hai ý tưởng riêng, không phải Unicorn”[^S12]. Xem [[07 - Unicorn Model]] (lưu ý mâu thuẫn quy ước nến ở mục 10).
+- **Khi chồng nhau thông tin bổ sung là gì?** Phần giao **hẹp hơn** → stop có thể gần hơn (R lớn hơn nếu khớp), nhưng **xác suất khớp thấp hơn**. Đây là đánh đổi thực thi, không phải “xác suất phản ứng cao hơn” (**HYP-BB-003**, **HYP-BB-013**).
+- **Tránh quá khớp:** mỗi điều kiện thêm vào (FVG phải nằm trọn trong breaker, CE trùng OTE, …) làm giảm số mẫu. Với vài mẫu, điều kiện nào cũng có thể trông như “cải thiện kết quả”.
+
+---
+
+## 19. Breaker Block và Liquidity
+
+![[BB-Deep-13-Y-Nghia-Cua-Sweep.svg|760]]
+*Hình BB-Deep-13 — A: đáy bị phá là một cụm đáy bằng nhau (EQL) rõ ràng, nhìn thấy trước. B: đáy bị phá là một đáy vụn vừa hình thành. Cả hai đều đạt định nghĩa; khác nhau ở biến `sweep_pool`.*
+
+**Breaker có nhất thiết phải hình thành sau một Liquidity Sweep không?**
+
+- **Theo định nghĩa chặt (v0.1):** phải có **cực trị cũ bị vi phạm** — đó là mắt xích ② và là thứ tách Breaker khỏi Mitigation Block. Đây là **sự kiện quan sát được**.
+- **Theo nghĩa “quét thanh khoản đáng kể”:** **không bắt buộc**. Việc đáy L1 có chứa nhiều lệnh dừng lỗ hay không là [INTERPRETATION]. Ghi loại pool (`micro / swing / EQL / PDL / session / PWL`) và cấp của L1, rồi để dữ liệu trả lời (**HYP-BB-005**).
+- **Theo nghĩa rộng (VAR-BROAD — OB thất bại bất kỳ):** không cần cả cực trị bị vi phạm. Đây là biến thể để so sánh (**HYP-BB-015**).
+
+**Ba lớp, ba nhãn — đừng trộn:**
+- [OBSERVABLE] Giá đã giao dịch dưới đáy L1.
+- [ICT FRAMEWORK] “Sell-side liquidity bị quét”.
+- [HYPOTHESIS] Có nhiều lệnh dừng lỗ ở đó và việc khớp chúng đã cung cấp đối ứng cho cú tăng.
+
+**Vì sao không nên mặc định mọi Breaker đều được tạo ra để “săn stop”:** vì cùng một hình dạng xuất hiện trên dữ liệu ngẫu nhiên (mục 55.4), nơi không có ai săn ai. Câu chuyện “săn stop” có thể đúng ở một số nơi, nhưng nó **không phải điều suy ra được** từ hình dạng.
+
+**Liquidity ở hai đầu Breaker:**
+- **Phía sau** (đã bị vi phạm): L1 — nguồn của mắt xích ②.
+- **Phía trước** (mục tiêu): pool ở hướng mới (BSL phía trên với Bullish Breaker) — đây là **DOL** của nhịp, quyết định khi nào Breaker **hết hạn** (DOL bị lấy trước retest → EXPIRED) và có đủ “khoảng trống” để giao dịch hay không ([[13-Mistake-Trading-Into-Unswept-Liquidity]]).
+
+---
+
+## 20. Breaker Block và Dealing Range
+
+![[BB-Deep-14-Dealing-Range-Premium-Discount.svg|760]]
+*Hình BB-Deep-14 — Cùng một vùng Breaker: nằm ở DISCOUNT của dealing range lớn, nhưng ở PREMIUM của nhịp tăng nhỏ vừa tạo MSS. “Breaker ở premium hay discount” vô nghĩa nếu không nói range nào.*
+
+- **Sau một Bullish Breaker, cấu trúc của khung nguồn đã đổi** → dealing range của khung đó cần được **re-map**: đáy mới = L2 (đáy quét), đỉnh mới = đỉnh của nhịp phá (sẽ cập nhật khi nhịp tiếp diễn). Xem [[37-Re-mapping-Dealing-Range-sau-Displacement]], [[12-Dealing-Range]].
+- **Một điều hình học thường bị bỏ qua:** H1 vừa bị phá nằm **sát đỉnh** nhịp phá → vùng Breaker thường ở **nửa trên** (premium) của nhịp L2 → đỉnh mới. Đây không phải dấu hiệu xấu — chỉ là hình học. Nhưng nó có nghĩa: nếu bạn dùng range của **nhịp MSS** để lọc “chỉ mua ở discount”, bạn sẽ loại gần hết Breaker.
+- **Quy tắc đề xuất (kế thừa note OB):** range dùng để đánh giá premium/discount là **range của khung mà DOL/target được lấy ra**. Ghi `pd_range_used` và `pd_location`.
+
+---
+
+## 21. Breaker Block và Premium/Discount
+
+- **[ICT FRAMEWORK]** Mua ở discount, bán ở premium.
+- **Không được dùng Premium/Discount thay cho phân tích cấu trúc.** P/D là **vị trí**, không phải hướng.
+- **Bốn trường hợp:**
+
+| Breaker | Vị trí (range đã khai báo) | Đọc thế nào |
+|---|---|---|
+| Bullish | Discount | Cấu hình được ICT ưa thích; vẫn là [HYPOTHESIS] |
+| Bullish | Premium | Không tự động loại; kiểm tra range nào đang dùng, DOL còn bao xa |
+| Bullish | Gần equilibrium | Thông tin vị trí yếu; dựa vào các biến khác |
+| Bearish | Discount | Bán ở discount của range lớn = đi ngược logic vị trí → chỉ hợp lý nếu range lớn đã đổi cấu trúc |
+
+- Ghi biến, test **HYP-BB-006** (Breaker tại HTF POI/discount đúng phía vs giữa range).
+
+---
+
+## 22. Khi các khái niệm bổ sung ít thông tin mới — đếm trùng bằng chứng
+
+![[BB-Deep-29-Dem-Trung-Bang-Chung.svg|760]]
+*Hình BB-Deep-29 — MSS, displacement, FVG có thể cùng được sinh ra từ 3–4 cây nến. Gọi đó là “3 confluence” là tự thổi phồng độ tin cậy.*
+
+**Quy tắc v0.1 (RULE-BB-009):** trong checklist, **MSS + displacement + FVG của cùng một nhịp** được gom thành **một nhóm** “chất lượng cú phá”, chấm bằng **một** biến (`disp_score`). Không cộng ba lần.
+
+**Bằng chứng độc lập hơn** là bằng chứng **khác nguồn**:
+- **Khác khung:** vị trí trong range D1 / HTF POI.
+- **Khác thời gian:** killzone / macro time ([[18-Kill-Zones]]).
+- **Khác sự kiện:** một pool HTF bị lấy trước đó (ví dụ PDL), tách biệt với cú phá H1.
+- **Khác thị trường:** SMT với tài sản tương quan ([[42-SMT-Divergence]]) — nếu dùng, phải định nghĩa trước.
+
+Ngay cả những thứ “khác nguồn” cũng có thể tương quan với nhau. Chỉ thống kê theo nhóm tách riêng mới cho biết đóng góp thật.
+
+---
+
+# PART IV — HÌNH THÀNH VÀ RETEST
+
+## 23. Xác định Order Block ban đầu
+
+Làm **trước khi** biết bất kỳ điều gì về tương lai:
+
+1. **Cấu trúc trước sự kiện:** khung nguồn đang tăng/giảm/range; swing nào là protected.
+2. **Cặp swing:** đáy L1 đã xác nhận → đỉnh H1 đã xác nhận sau L1 (bullish). H1 phải là **đỉnh gần nhất trước khi L1 bị vi phạm**.
+3. **OB gốc (VAR-A):** từ nến tạo đỉnh H1, tìm lùi tối đa **3 nến** (HEURISTIC) để lấy nến **tăng** (close > open) gần nhất. Nếu có chuỗi nến tăng liền nhau, ghi cả chuỗi (`ob_series`). Không có → `ob_origin = none`.
+4. **Lý do chọn:** “nến tăng cuối tại H1 trước nhịp giảm đã phá L1” — một câu, ghi vào journal.
+5. **Ranh giới:** zone_full, zone_body, MT thân, CE cả nến.
+6. **Khung nguồn** và **thời điểm ghi** (screenshot có giờ).
+7. Nếu nhịp H1→L2 đã **đóng** dưới L1 → `ob_origin_tier = 2` (bearish OB đạt Tầng 2 của OB-DEF); nếu chỉ râu → `ob_origin_tier = 1`.
+
+> [!warning] Không chọn OB gốc theo kết quả
+> Nếu bạn đang nhìn một chart **đã chạy** và chọn nến OB “cho ra breaker đẹp nhất”, đó là hindsight. Quy tắc ở bước 3 là cơ học để chống lại việc đó.
+
+---
+
+## 24. Xác định sự kiện phá vùng
+
+| Lựa chọn | Mô tả | Ưu | Nhược | v0.1 |
+|---|---|---|---|---|
+| **W** — râu xuyên | Giá giao dịch qua H1 | Sớm nhất | Đa số chỉ là sweep đỉnh; rất nhiều tín hiệu giả | Không dùng để xác nhận (ghi `wick_only`) |
+| **C** — thân đóng qua vùng | Close trên đỉnh vùng OB gốc | Đơn giản | Đỉnh vùng và H1 có thể khác nhau nếu OB gốc không phải nến đỉnh | Ghi lại |
+| **C+** — thân đóng + tiếp tục | Close trên vùng và nến sau không đóng lại vào trong | Lọc snap-back | Chậm hơn 1 nến; t_avail lùi lại | Biến thể VAR-C2 |
+| **S** — thân đóng qua **swing H1** | Close trên H1 | Gắn với cấu trúc; khớp định nghĩa ICT | Phụ thuộc swing detector | **Chọn cho v0.1** |
+| **S+D** — đóng qua swing + displacement | S và disp_score đạt ngưỡng | Ít mẫu “bò” | Ngưỡng là HEURISTIC; mất nhóm đối chứng | Biến thể VAR-DISP |
+
+**Định nghĩa phá vùng v0.1:** **S** — một thân nến của khung nguồn **đóng cửa** trên H1 (bullish) / dưới L1 (bearish), trong tối đa **W = 60 nến** kể từ khi cực trị cũ bị vi phạm (HEURISTIC; nếu quá W mà chưa đóng → ứng viên EXPIRED).
+
+---
+
+## 25. Xác định Breaker theo định nghĩa — BB-DEF v0.1
+
+> [!abstract] BB-DEF v0.1 (Bullish; Bearish đối xứng)
+> **Tầng 1 — ỨNG VIÊN (CANDIDATE)**
+> (a) Có đáy **L1** đã xác nhận bằng swing detector đã khai báo (mặc định: fractal 2 nến mỗi bên — HEURISTIC; test 2/3/5).
+> (b) Có đỉnh **H1** đã xác nhận, nằm sau L1, là đỉnh gần nhất trước khi L1 bị vi phạm.
+> (c) Có **OB gốc** theo mục 23 (nến tăng cuối tại H1, tìm lùi ≤ 3 nến).
+> (d) Giá **giao dịch dưới L1** (râu là đủ) sau khi L1 đã được xác nhận → ghi **L2**.
+> **Tầng 2 — XÁC NHẬN (CONFIRMED)**
+> (e) Trong ≤ W nến kể từ (d), **một thân nến đóng cửa trên H1**. Close của nến đó = **t_avail**.
+> (f) Tại t_avail **khóa**: zone_full, zone_body, MT, CE, `h1_level`, `sweep_pool`, `disp_score`, quan hệ FVG, `pd_range_used`, DOL ứng viên, điều kiện hết hạn.
+> **Tầng 3 — ĐẶC ĐIỂM (không phải điều kiện)**
+> Cấp swing H1 · loại pool L1 · displacement · FVG/Unicorn · vị trí P/D (range khai báo) · HTF alignment · killzone · cửa sổ tin · khoảng cách tới DOL · thời gian từ t_avail · số lần chạm.
+> **Không phải Breaker nếu:** thiếu (c) → “không có OB gốc”; thiếu (d) nhưng có (e) → **Mitigation Block**; có (d) nhưng không có (e) trong W nến → ứng viên **EXPIRED**.
+
+**Biến thể khai báo trước (để so sánh, không trộn):**
+
+| Mã | Khác v0.1 ở đâu |
+|---|---|
+| VAR-B | Vùng = các nến giảm mở đầu nhịp H1 → L2 |
+| VAR-BROAD | Bất kỳ OB nào INVALIDATED theo DEF-OB-07, không cần trình tự swing |
+| VAR-WICK | Cho phép râu vượt H1 thay cho thân đóng |
+| VAR-C2 | Thân đóng qua H1 + nến kế tiếp không đóng lại vào trong vùng |
+| VAR-DISP | Bắt buộc `disp_score` đạt ngưỡng |
+| VAR-N3/N5 | Swing detector fractal 3 hoặc 5 nến mỗi bên |
+
+**Nếu có nhiều trường phái** — đó là thực tế ở đây (mục 12). v0.1 chọn **một** định nghĩa chính và **ghi tên** biến thể nào đã dùng trong mỗi bản ghi (`bb_def = v0.1`, `bb_variant = A`).
+
+---
+
+## 26. Thời điểm có thể biết vùng đã hình thành
+
+![[BB-Deep-30-Thoi-Diem-Thong-Tin.svg|760]]
+*Hình BB-Deep-30 — Swing L1, H1 chỉ được “biết” sau khi đủ nến xác nhận; Breaker chỉ tồn tại sau khi nến phá H1 đóng cửa.*
+
+| Mốc | Thông tin có từ khi nào | Lỗi look-ahead thường gặp |
+|---|---|---|
+| Swing L1, H1 | Sau khi đủ n nến xác nhận đóng cửa | Dùng H1 ngay tại nến đỉnh (khi đó chưa ai biết đó là đỉnh) |
+| Cực trị cũ bị vi phạm | Khi giá giao dịch qua L1 (ghi theo nến đóng) | Chọn L1 “phù hợp” sau khi đã thấy đáy L2 |
+| Breaker CONFIRMED | Close của nến đầu tiên đóng qua H1 | Đặt lệnh trước close rồi chỉ giữ những lần đóng thành công |
+| Ranh giới vùng | Khóa tại t_avail | Nới vùng sau khi giá xuyên một chút “để vẫn đúng” |
+
+> [!example] Một ví dụ về look-ahead mà mắt thường không thấy
+> Bạn đánh dấu H1 tại nến đỉnh lúc 10:00. Nhưng với fractal 2 nến, H1 chỉ được xác nhận lúc 12:00. Nếu giá phá L1 lúc 11:00, thì **lúc 11:00 bạn chưa biết H1 là swing** — một backtest cho phép dùng H1 lúc 11:00 đang dùng thông tin tương lai. Quy tắc: mọi mức tham chiếu có `known_at`, và chỉ được dùng khi `known_at` < thời điểm quyết định.
+
+---
+
+## 27. Retest và phản ứng
+
+### 27.1 Retest là gì (RT-DEF v0.1)
+
+**Retest** = nến đầu tiên sau t_avail mà giá **chạm mép gần** của vùng (bullish: low ≤ đỉnh vùng). Ghi **độ sâu** theo năm mức:
+
+| Mã | Độ sâu | Ghi chú |
+|---|---|---|
+| D0 | Chạm mép gần | Râu là đủ để tính “đã retest” |
+| D1 | Tới MT thân | |
+| D2 | Tới mép xa | |
+| D3 | Râu qua mép xa, thân đóng lại trong vùng | `distal_swept = true` — vùng **còn sống** (đúng quy tắc acceptance của bạn: râu là sweep, không phải invalidation) |
+| D4 | Thân đóng qua mép xa | → SUSPENDED (mục 28) |
+
+**Chạm gần nhưng không chạm** (near miss — giá dừng cách mép gần một chút rồi đi): ghi `near_miss = true` + khoảng cách. Đây **không** phải retest; nhưng nếu bỏ qua, bạn sẽ đánh giá thấp tần suất “lệnh limit bị lỡ”.
+
+### 27.2 Phản ứng (RX-DEF v0.1 — dùng cho nghiên cứu)
+
+Sau lần chạm đầu: nếu giá **đi xa khỏi mép gần ít nhất 1 ATR** (HEURISTIC) **trước khi** có thân nến đóng qua mép xa → **“giữ” (A)**. Nếu thân nến đóng qua mép xa trước → ứng viên **“xuyên” (B)** → SUSPENDED. Không cái nào trong H = 200 nến → “chưa kết thúc”.
+
+Đây là định nghĩa **đo lường**, không phải quy tắc giao dịch. Quy tắc giao dịch (entry, stop, target) đặt riêng (mục 31, 48).
+
+### 27.3 Vì sao một Breaker đã được phân loại vẫn không chắc giữ
+
+Vì “được phân loại đúng” là câu về **quá khứ** (chuỗi đã xảy ra). “Sẽ giữ” là câu về **tương lai**. Trên dữ liệu ngẫu nhiên, vùng được phân loại đúng vẫn chỉ giữ khoảng một nửa số lần (mục 55.4). Muốn nói nhiều hơn thế, cần dữ liệu thật **có đối chứng**.
+
+---
+
+## 28. Invalidation
+
+![[BB-Deep-19-Bon-Loai-Invalidation.svg|760]]
+*Hình BB-Deep-19 — Bốn mức sai: ① mép xa của vùng, ② đáy quét L2, ③ stop của lệnh, ④ đáy được bảo vệ của D1. Mỗi mức có hệ quả riêng.*
+
+| Loại | Điều kiện (bullish) | Hệ quả | Nhãn |
+|---|---|---|---|
+| **① Vùng** | Một thân nến đóng dưới mép xa → **SUSPENDED**; **k = 2** thân nến liên tiếp đóng dưới mép xa mà không lấy lại → **INVALIDATED** (HEURISTIC; khớp quy tắc “đóng và giữ 2–3 nến” của bạn và OB-INVAL của vault) | Xóa vùng khỏi watchlist | BB-INVAL v0.1 |
+| **② Luận điểm** | Thân nến đóng dưới **L2** | Cú “đảo chiều” bị phủ nhận; cấu trúc quay lại trạng thái cũ | [ICT FRAMEWORK] |
+| **③ Setup** | Chạm stop / hết thời gian / gate fail / tin lớn | Lệnh này sai; vùng **có thể** vẫn sống | quy tắc giao dịch |
+| **④ HTF** | D1 đổi cấu trúc ngược hướng, hoặc giá vào PD array D1 ngược hướng | Đọc lại từ D1 | [[59-Daily-Bias]] |
+
+**Reclaim:** sau SUSPENDED, nếu trong k nến có thân nến đóng **trở lại vào trong vùng** → quay về RETEST IN PROGRESS (ghi `reclaim_bars`). Đây là chỗ hay bị “sửa vùng”: đừng dời mép xa xuống để hợp thức hóa.
+
+**Hết hạn (EXPIRED) — tách khỏi INVALIDATED:** (i) DOL của nhịp phá bị lấy **trước** lần retest đầu; (ii) quá thời hạn sống (TTL) khai báo theo khung (HEURISTIC, ví dụ 3 phiên cho Breaker H1); (iii) cấu trúc HTF đổi. EXPIRED nghĩa là vùng **hết vai trò mà không bị phá**.
+
+![[BB-Deep-26-Vong-Doi-Trang-Thai.svg|760]]
+*Hình BB-Deep-26 — Vòng đời: NOT FORMED → CANDIDATE → CONFIRMED → AWAITING RETEST → RETEST IN PROGRESS → REACTION OBSERVED; nhánh SUSPENDED → INVALIDATED (hoặc reclaim); nhánh EXPIRED; UNCLEAR từ bất kỳ đâu.*
+
+---
+
+## 29. Các kịch bản thất bại
+
+![[BB-Deep-18-Ba-Ket-Cuc-Sau-Xac-Nhan.svg|760]]
+*Hình BB-Deep-18 — A: retest và giữ (REACTION OBSERVED). B: retest và xuyên (SUSPENDED → INVALIDATED). C: không bao giờ retest (AWAITING → EXPIRED).*
+
+**Kịch bản A — phản ứng theo kỳ vọng.** Đã xác nhận: vùng giữ theo RX-DEF. Chưa xác nhận: phản ứng có đủ lớn để giao dịch, có thay đổi cấu trúc khung thấp hơn không, hay chỉ là một nhịp ngắn. Một lần “giữ” vẫn chỉ là **một mẫu**.
+
+**Kịch bản B — xuyên qua vùng.** Ranh giới bị phá là **mép xa**. Breaker không còn hợp lệ khi đủ k nến. Kiểm tra luận điểm: nếu giá còn trên L2, cấu trúc **chưa chắc** đã quay lại; nếu đóng dưới L2, cú đảo chiều sai. **Không** tìm “một breaker khác sâu hơn” ngay — chờ cấu trúc mới. Ghi `first_error_step` (định nghĩa sai? bối cảnh sai? hay chỉ là kết cục xác suất?).
+
+**Kịch bản C — không bao giờ retest.** Xem mục 30.
+
+**Failed breaker → tiếp diễn hướng cũ** *(giữ từ v1, gắn nhãn)*: khi Breaker bị INVALIDATED và giá đóng lại qua L2, v1 đề xuất đọc đó như **bằng chứng hướng cũ vẫn mạnh**, và vùng breaker đã chết có thể đổi vai **lần nữa** (thành vùng cản theo hướng cũ). Đây là **HYP-BB-016**. Quy tắc giữ nguyên từ v1: không đảo lệnh ngay tại cây nến phá; chờ acceptance mới và một POI theo hướng cũ.
+
+**Những cách thất bại khác cần ghi:**
+- **Sweep không có phản ứng** (L1 bị phá, giá đi tiếp, không bao giờ đóng trên H1) → ứng viên EXPIRED.
+- **MSS không có displacement** → đạt định nghĩa nhưng `disp_score` thấp.
+- **Snap-back** (đóng trên H1 rồi đóng lại dưới vùng ngay) → SUSPENDED sớm.
+- **Breaker M5 ngược bối cảnh H1/D1** → đúng định nghĩa, sai bối cảnh.
+- **Nhiều Breaker chồng nhau** → chọn sai ứng viên (mục 13).
+
+![[BB-Deep-24-Can-Danh-Gia-Lai.svg|760]]
+*Hình BB-Deep-24 — (a) DOL đã bị lấy trước khi retest → vùng EXPIRED. (b) Một MSS ngược hướng hình thành phía trên vùng trước khi retest → hạ mức tin cậy, đánh giá lại.*
+
+---
+
+## 30. Vùng không bao giờ được retest
+
+- **Vì sao xảy ra:** cú phá mạnh và giá đi thẳng tới mục tiêu; hoặc bối cảnh HTF kéo giá đi tiếp; hoặc đơn giản là ngẫu nhiên.
+- **Có phải thất bại không?** **Không.** Đây là một kết cục **riêng**: vùng hợp lệ nhưng không được kiểm tra. Đếm nó như “thua” hay bỏ nó khỏi dữ liệu đều làm sai thống kê.
+- **Khác biệt:** *hình thành nhưng chưa retest* (AWAITING) ≠ *đã retest và thất bại* (INVALIDATED) ≠ *hết vai trò* (EXPIRED).
+- **Ghi journal:** `retest = no`, `expired_reason = dol_taken / ttl / htf_change`, khoảng cách lớn nhất giá đi được trước khi hết hạn (để biết nếu vào lệnh ngay tại t_avail thì sao — nhưng đó là **một chiến lược khác**, không phải Breaker retest).
+
+---
+
+## 31. Phân biệt vùng hợp lệ với setup giao dịch
+
+| Lớp | Câu hỏi | Ví dụ quy tắc |
+|---|---|---|
+| **Nhận diện** | Vùng này có phải Breaker theo BB-DEF v0.1 không? | Ba mắt xích, t_avail, ranh giới khóa |
+| **Theo dõi** | Vùng còn sống không? Giá đang ở đâu? | Trạng thái vòng đời; DOL; TTL |
+| **Bằng chứng** | Lúc retest, có phản ứng thật không? | Sweep M5 + MSS M5 trên mức đã đánh dấu trước |
+| **Giao dịch** | Có đáng mạo hiểm tiền không? | Gate G1/G2, killzone, R tối thiểu, risk ≤ 0,5% |
+| **Kết quả** | Lệnh có lãi sau chi phí không? | Chỉ biết sau, và chỉ có nghĩa khi đủ mẫu |
+
+Năm lớp này **không tương đương**. Một Breaker đúng định nghĩa có thể không bao giờ có setup; một setup có thể đúng quy trình mà vẫn thua (“good loss” — đúng tinh thần của vault).
+
+---
+
+# PART V — PHÂN TÍCH ĐA KHUNG: D1 → H1 → M5
+
+![[BB-Deep-20-D1-H1-M5-Pipeline.svg|760]]
+*Hình BB-Deep-20 — Mỗi khung một câu hỏi, một đầu ra, một cổng. Kế thừa Context Card → Setup Card → Execution Card và gate G1/G2 của [[01c - ICT 2022 Model - He thong quyet dinh da khung (State Machine D1-H1-M5)]]; phần dưới chỉ ghi điều RIÊNG cho Breaker.*
+
+> [!important] Ba điều cấm xuyên suốt
+> - Không coi D1, H1, M5 là ba chart độc lập.
+> - Không bắt đầu từ M5 rồi “tìm” D1/H1 để hợp thức hóa.
+> - Không mặc định một Breaker M5 có ý nghĩa với cấu trúc D1.
+
+## 32. D1 — Higher-Timeframe Context
+
+![[BB-Deep-15-D1-Context.svg|760]]
+*Hình BB-Deep-15 — D1: xác định, phân loại và ghi trạng thái từng vùng. Mũi tên A/B là kịch bản, không phải dự báo.*
+
+**D1 trả lời:** cấu trúc lớn đang thế nào? swing nào chi phối? dealing range nào (nếu có)? giá đang ở đâu? có OB/Breaker D1 nào đáng theo dõi, trạng thái gì? liên quan tới pool BSL/SSL nào? giá đang tiến tới, ở trong, hay rời xa vùng? kịch bản thay thế? điều gì khiến phải đọc lại?
+
+**Quy trình D1 (6 bước):**
+1. **Cấu trúc lớn:** đánh dấu swing L4–L5; xác định trạng thái (tăng / giảm / range / chuyển tiếp). Giải thích vì sao swing này quan trọng hơn swing kia (cấp, hệ quả cấu trúc).
+2. **Bối cảnh giá:** nếu dùng dealing range, ghi rõ hai neo; tính EQ; ghi premium/discount **của range đó**. Không coi premium = bán, discount = mua một cách máy móc.
+3. **Liệt kê và phân loại vùng:** OB chưa bị phá · OB đã bị phá nhưng chưa đủ điều kiện Breaker · Breaker CONFIRMED · vùng INVALIDATED/EXPIRED · vùng UNCLEAR.
+4. **Quan hệ cấu trúc:** mỗi vùng gắn với swing nào, pool nào đã bị vi phạm, DOL nào phía trước.
+5. **Kịch bản:** A (retest + giữ → H1 tìm setup theo hướng Breaker), B (thân D1 đóng qua mép xa → vùng chết, đọc lại), C (giá không về vùng, đi tới DOL → vùng hết hạn).
+6. **Câu hỏi cho H1:** viết ra H1 cần trả lời điều gì (ví dụ: “giá có vào vùng D1 không, và trong vùng có Breaker H1 đạt định nghĩa không?”).
+
+**Những điều KHÔNG làm trên D1:** đánh dấu mọi OB thành Breaker · chọn vùng vì nó từng phản ứng đẹp · dùng một swing M5 để đổi cấu trúc D1 · giả định Breaker D1 sẽ được retest · ép bullish/bearish khi bằng chứng mâu thuẫn · dùng P/D thay cho cấu trúc.
+
+## 33. D1 checklist (handoff)
+
+| Trường | Bắt buộc? | Ghi chú |
+|---|---|---|
+| D1 structure | **Bắt buộc** | trạng thái + swing chi phối |
+| Major swing high/low | **Bắt buộc** | cấp L4–L5 |
+| Breaker candidate / status | **Bắt buộc** | một trong các trạng thái vòng đời |
+| Ranh giới vùng | **Bắt buộc** (nếu có vùng) | full + body, khóa tại t_avail |
+| Structural evidence | **Bắt buộc** | ba mắt xích, swing nào bị phá |
+| Current price location | **Bắt buộc** | trên/trong/dưới vùng, khoảng cách theo ATR |
+| Invalidation condition | **Bắt buộc** | vùng + luận điểm |
+| What I need to observe on H1 | **Bắt buộc** | một câu hỏi cụ thể |
+| Dealing range | Bổ trợ | hai neo, EQ |
+| Relevant Order Block khác | Bổ trợ | PD array ngược hướng gần nhất |
+| Alternative scenario | Bổ trợ (nên có) | kịch bản B |
+
+## 34. Điều kiện chuyển D1 → H1
+
+- **Chuyển khi:** Context Card đủ để H1 biết **mình đang tìm gì, ở đâu** (gate G1 của vault: structure state rõ, DOL đã chọn, location tương thích, không có sự kiện SUSPEND).
+- **Thêm cho Breaker:** Breaker D1 (nếu dùng làm vùng) ở trạng thái CONFIRMED/AWAITING (không INVALIDATED/EXPIRED); DOL của nhịp phá **chưa** bị lấy; giá đang tiến về vùng hoặc đã ở gần.
+- **Nếu D1 chưa rõ:** vẫn có thể nhìn H1 để **thu thập thông tin** (ghi “D1 = UNCLEAR”), nhưng **không** được giả vờ D1 đã cho bias.
+
+## 35. H1 — Setup Development
+
+![[BB-Deep-16-H1-Trong-D1.svg|760]]
+*Hình BB-Deep-16 — H1 tìm Breaker NẰM TRONG vùng D1, không tìm khắp nơi.*
+
+**H1 trả lời:** giá ở đâu so với vùng D1? có OB/Breaker H1 liên quan tới cấu trúc D1 không? điều kiện hình thành đã đủ chưa, swing nào bị phá, có displacement không? vùng có hợp lý trong cấu trúc lớn không? giá đã retest hay mới tiếp cận? có lý do xuống M5 không?
+
+**Quy trình H1 (6 bước):**
+1. **Đọc cấu trúc H1 trong bối cảnh D1** — phân biệt internal vs external; không coi mọi swing H1 là quan trọng.
+2. **Xác định OB gốc H1** — nguồn gốc, ranh giới, lý do (mục 23).
+3. **Kiểm tra sự kiện phá** — cực trị cũ có bị vi phạm? thân nến có đóng qua swing? (mục 24–25).
+4. **Phân loại trạng thái:** NOT FORMED · CANDIDATE · CONFIRMED BY DEFINITION · AWAITING RETEST · RETEST IN PROGRESS · REACTION OBSERVED · SUSPENDED · INVALIDATED · EXPIRED · UNCLEAR.
+5. **Đánh giá thông tin mới** — điều gì thật sự đổi nhận định (đóng qua swing có cấp, phá L2) và điều gì chỉ là dao động nhỏ (một nến M15 đỏ).
+6. **Chỉ rõ M5 cần quan sát gì** — đánh dấu **trước** đáy/đỉnh M5 sẽ bị quét và swing M5 cần phá (gate G2.R5 — điều kiện quan trọng nhất của toàn hệ thống theo note 01c).
+
+## 36. H1 checklist (handoff)
+
+```text
+D1 context:                         (từ Context Card)
+H1 structure:                       tăng / giảm / range · internal hay external so với D1
+Original Order Block:               nến nào, giờ ghi, tier (1/2)
+Breaker Block status:               (vòng đời)
+Ranh giới vùng:                     full [..–..] · body [..–..] · MT · CE
+Swing liên quan:                    L1 (cấp, pool) · H1 (cấp, protected?) · L2
+Structural break:                   close qua H1 lúc .. (t_avail)
+Displacement:                       disp_score ..
+FVG (nếu có):                       none / separate / unicorn
+Giá đang ở đâu so với vùng:         trên / chạm / trong / dưới · khoảng cách
+Retest status:                      chưa / D0–D4
+Alternative scenario:               ..
+Invalidation condition:             vùng: .. · luận điểm: .. · HTF: ..
+What I need to observe on M5:       pool M5 sẽ bị quét (đánh dấu lúc ..) · swing M5 cần phá (đánh dấu lúc ..)
+Status:                             NOT READY / MONITORING / EVENT UNDER EVALUATION
+```
+
+## 37. Điều kiện chuyển H1 → M5
+
+![[BB-Deep-21-Trang-Thai-Chuyen-Khung.svg|760]]
+*Hình BB-Deep-21 — Ba trạng thái theo dõi trên H1 và đường quay lại.*
+
+| Trạng thái | Vào khi | Hành động | Không làm |
+|---|---|---|---|
+| **A · NOT READY** | Giá còn xa vùng, hoặc Breaker chưa đạt định nghĩa | Ở lại H1/D1; cập nhật sau mỗi nến H1 đóng | Mở M5 để “tìm” tín hiệu |
+| **B · MONITORING** | Giá tiến sát (ví dụ ≤ 0,1 ATR H1 — HEURISTIC, theo G2.R3) hoặc đã vào vùng | Đánh dấu trước mức M5; kiểm tra killzone; mở M5 để **quan sát** | Kết luận vùng sẽ giữ |
+| **C · EVENT UNDER EVALUATION** | Đang có sự kiện: sweep M5 trong vùng, hoặc MSS M5 vừa đóng | So sự kiện với mức đã đánh dấu; nếu đủ setup → đánh giá lệnh | Coi đó là setup khi mức tham chiếu được “tìm ra sau” |
+
+**Về đường quay lại:** vùng INVALIDATED/EXPIRED hoặc D1 đổi → về A và đọc lại từ D1. Sự kiện M5 không đạt → về B.
+
+## 38. M5 — Detailed Observation and Execution
+
+![[BB-Deep-17-M5-Quan-Sat-Retest.svg|760]]
+*Hình BB-Deep-17 — M5 không tạo bối cảnh. Nó trả lời: có bằng chứng phản ứng tại vùng đã có không?*
+
+**Quy trình M5 (7 bước):**
+1. **Xác nhận lại vùng** — vùng đến từ D1, H1, hay mới thấy trên M5? Không được nới ranh giới H1 cho khớp phản ứng M5.
+2. **Hành vi tiếp cận** — đã chạm, xuyên, đóng bên kia, hay quay lại vùng?
+3. **Quan sát phản ứng** — hướng, độ mạnh tương đối, vị trí đóng nến, swing bị phá, displacement, FVG, quãng đường đi được. Một cây nến lớn đơn lẻ **không** đủ cho mọi kết luận.
+4. **Kiểm tra cấu trúc** — nếu dùng MSS/BOS M5: swing nào bị phá, swing đó đã được đánh dấu **trước** chưa.
+5. **Phân loại kịch bản** — phản ứng theo kỳ vọng · xuyên qua vùng · dao động trong vùng · chạm nhưng chưa phản ứng rõ · rời vùng mà không retest sâu · không đủ bằng chứng.
+6. **Cập nhật nhận định** — ghi rõ điều gì đã xác nhận, điều gì còn là giả thuyết, bước tiếp theo.
+7. **Không ép kết luận** — không đạt định nghĩa thì ghi “chưa xác định” hoặc “mô hình không áp dụng”.
+
+**Điều kiện kết thúc phân tích M5 — sáu điều khác nhau, ghi riêng:** vùng đã được xác định · retest đã xảy ra · phản ứng đã được quan sát · cấu trúc M5 đã đổi hay chưa · giả thuyết giao dịch có đủ điều kiện hay chưa · kết quả thực tế sau đó.
+
+## 39. M5 checklist
+
+- [ ] Vùng H1 (ranh giới khóa) đang được theo dõi; trạng thái H1 = MONITORING hoặc EVENT.
+- [ ] Đang trong killzone đã khai báo (London ≈ 02:00–05:00 NY; NY AM ≈ 07:00–10:00 NY — theo vault) ([[18-Kill-Zones]]).
+- [ ] Không có tin cấp cao trong cửa sổ cấm (G2.R7).
+- [ ] Pool M5 sẽ bị quét và swing M5 cần phá **đã đánh dấu trước** (giờ: ..).
+- [ ] Sweep M5 xảy ra **bên trong** vùng, không đóng qua mép xa H1 (hoặc ghi D3/D4).
+- [ ] MSS M5 đóng qua swing **đã đánh dấu**.
+- [ ] Có điểm vào khai báo (FVG M5 / CE / MT vùng H1) — chọn trước, không chọn sau.
+- [ ] Stop khai báo: dưới đáy sweep M5 hoặc dưới mép xa H1 + đệm — **không** đặt trong vùng.
+- [ ] Target: DOL của nhịp H1 (internal trước, external sau); R ≥ tối thiểu; risk ≤ 0,5% ([[07-Mistake-Risk-more-than-0.5-total-account]]).
+- [ ] Nếu bất kỳ ô nào fail → ghi “retest không có setup”, không vào lệnh.
+
+## 40. Khi D1, H1 và M5 mâu thuẫn
+
+![[BB-Deep-28-Xung-Dot-D1-H1-M5.svg|760]]
+*Hình BB-Deep-28 — D1 giảm, giá ở premium; H1 vừa có Bullish Breaker; M5 phản ứng tăng tại vùng H1. Phần lớn “mâu thuẫn” là ba cấp cấu trúc khác nhau.*
+
+**Ba câu hỏi trước khi kết luận:**
+1. **Mỗi khung đang mô tả cấu trúc nào?** H1 breaker nằm **bên trong** nhịp hồi D1, hay phá swing cấp D1?
+2. **Mâu thuẫn thật hay khác cấp?** Nếu khác cấp → giữ authority top-down: D1 quyết định hướng ưu tiên; H1/M5 mô tả nhịp bên trong.
+3. **Khi nào đọc lại D1?** Khi một thân nến D1 đóng qua swing cấp D1 (không phải khi M5 “đẹp”).
+
+**Lựa chọn hợp lệ (phải ghi TRƯỚC):** bỏ qua · giao dịch như **countertrend** với mục tiêu ngắn (ví dụ tới PD array D1 ngược hướng gần nhất) và size nhỏ · chờ D1 tự đổi cấu trúc · giữ **UNCLEAR**.
+
+## 41. Quy trình tích hợp ba khung
+
+```text
+D1  ── Context Card ──► [G1: D1→H1 + điều kiện Breaker] ──► H1 ── Setup Card ──► [G2: H1→M5 + điều kiện Breaker] ──► M5 ── Execution Card
+ ▲                                                          │                                                       │
+ └──────────── vùng INVALIDATED / EXPIRED / D1 đổi ◄─────────┴──────────── sự kiện không đạt → về MONITORING ◄────────┘
+```
+
+### 41.1 Bảy tình huống chuyển khung (Part 9 của protocol)
+
+**Tình huống 1 — D1 có Breaker rõ nhưng giá còn ở xa**
+
+```text
+ D1:   ┌Breaker D1┐                          giá hiện tại ●  (còn xa vùng)
+       └──────────┘ . . . . . . . . . . . . . . . . . .
+```
+- Đã biết: vùng CONFIRMED, ranh giới, DOL. Chưa biết: giá có về không, về lúc nào.
+- Theo dõi: **H1** (không cần M5). Lý do không xem M5 liên tục: M5 không có câu hỏi nào để trả lời khi giá chưa ở vùng.
+- Chuyển bước: giá vào phạm vi MONITORING. Đánh giá lại khi: DOL bị lấy (→ EXPIRED), D1 đổi cấu trúc.
+- Không kết luận: “giá sẽ về vùng”.
+
+**Tình huống 2 — Giá đang tiến đến Breaker D1**
+
+```text
+ D1:   ┌Breaker D1┐    ↙ ↙ giá hồi dần về vùng
+       └──────────┘
+```
+- H1 hữu ích: tìm cấu trúc H1 khi giá đi vào vùng; đánh dấu trước pool H1/M5 có thể bị quét. M5 **chưa cần**: chưa có sự kiện tại vùng.
+- Ghi: tốc độ tiếp cận (một nến D1 xuyên cả vùng = acceptance đang diễn ra, G2.X1 — không phải “tiếp cận”).
+- Không kết luận: vùng sẽ giữ vì “đã về đúng chỗ”.
+
+**Tình huống 3 — Giá đã chạm vùng Breaker trên H1**
+
+```text
+ H1:   ┌──Breaker──┐ ◄─ râu chạm mép gần
+       └───────────┘
+```
+- Quan sát M5 **khi** đang trong killzone và mức M5 đã đánh dấu trước. Nếu ngoài killzone hoặc chưa có mức → tiếp tục chờ trên H1.
+- Đánh giá lại khi: thân H1 đóng qua mép xa (SUSPENDED).
+- Không kết luận: “đã chạm là đã giữ”.
+
+**Tình huống 4 — M5 tạo Breaker nhưng H1 chưa có vùng quan tâm**
+
+```text
+ M5:  ┌bb┐  (đẹp)            H1: không có POI nào ở đây
+```
+- Không tự động nâng một vùng M5 thành POI H1/D1. Ghi như **quan sát nội bộ** (L1–L2). Giao dịch nó = một chiến lược khác (không top-down), phải thống kê riêng.
+- Không kết luận: “M5 báo hướng mới cho cả ngày”.
+
+**Tình huống 5 — M5 tạo MSS nhưng không liên quan tới Breaker đang theo dõi**
+
+```text
+ H1:  ┌Breaker H1┐                M5: MSS ở chỗ khác ✱
+```
+- Ghi lại (thời điểm, swing) mà không gán ý nghĩa. Một MSS M5 xảy ra **nhiều lần mỗi phiên** kể cả trên dữ liệu ngẫu nhiên (note MSS: MSS-Sim-01).
+- Không kết luận: setup.
+
+**Tình huống 6 — Giá xuyên qua Breaker và tiếp tục chạy**
+
+```text
+ H1:  ┌──Breaker──┐
+      └───────────┘
+            ▼▼ thân đóng dưới mép xa, giữ 2 nến
+```
+- Cập nhật: SUSPENDED → INVALIDATED. Kiểm tra L2 (luận điểm) và D1. Dừng theo dõi vùng cũ ngay khi INVALIDATED.
+- Không làm: dời vùng xuống, hoặc “tìm breaker mới” ngay trong cú rơi.
+
+**Tình huống 7 — D1, H1, M5 cho thông tin mâu thuẫn**
+- Xem mục 40. Giữ D1 khi mâu thuẫn là **khác cấp**; đọc lại D1 khi có thân nến D1 đóng qua swing cấp D1; giữ **UNCLEAR** khi không xác định được H1 thuộc nhịp nào của D1.
+
+---
+
+# PART VI — KHUNG VẬN HÀNH
+
+## 42. Quy trình mở chart từ đầu (SOP)
+
+> [!example] SOP-BB v0.1 — bốn bước, không bắt buộc phải kết thúc bằng một lệnh
+> **Bước 1 — D1** (10–15 phút, trước phiên)
+> Cấu trúc lớn → swing chi phối → dealing range (nếu dùng) → liệt kê OB/Breaker D1 và **trạng thái** từng vùng → ranh giới + điều kiện hình thành + invalidation → kịch bản A/B/C → câu hỏi cho H1.
+> *Đầu ra:* bản đồ D1, mỗi vùng có nhãn và lý do (Context Card).
+>
+> **Bước 2 — H1** (khi giá liên quan tới vùng D1)
+> Cấu trúc H1 trong bối cảnh D1 → OB gốc / Breaker H1 liên quan → ba mắt xích → displacement / FVG (ghi, không cộng) → trạng thái vùng → giá đang tiến đến / retest / xuyên → quyết định NOT READY / MONITORING / EVENT.
+> *Đầu ra:* danh sách vùng H1 có trạng thái, điều kiện xác nhận, điều kiện loại bỏ; mức M5 đánh dấu trước (Setup Card).
+>
+> **Bước 3 — M5** (chỉ khi H1 = MONITORING/EVENT và đang trong killzone)
+> Xác nhận vùng → cách giá tiếp cận → độ sâu retest (D0–D4) → sweep M5 + MSS M5 so với mức đã đánh dấu → phân biệt phản ứng thật với dao động → cập nhật/bác bỏ → chỉ đánh giá lệnh khi mọi điều kiện setup đạt.
+> *Đầu ra:* bản ghi sự kiện theo thời gian (Execution Card), không dựa vào hindsight.
+>
+> **Bước 4 — Tổng hợp** (cuối phiên)
+> OB gốc ở đâu, vì sao chọn? Điều gì làm nó thất bại? Ba mắt xích đã đủ chưa? Swing nào bị phá? Đã retest chưa? Phản ứng thực tế? Điều gì ủng hộ, điều gì mâu thuẫn? Vùng còn hợp lệ? Theo dõi gì tiếp?
+
+## 43. Cách xác định vùng Order Block ban đầu
+
+Tóm tắt từ mục 23 (dùng làm thẻ nhớ khi mở chart):
+1. Cặp swing đã xác nhận (L1 → H1 cho bullish).
+2. Nến **tăng** cuối tại H1 (lùi ≤ 3 nến); chuỗi thì ghi cả chuỗi.
+3. Ghi giờ, khung, full/body, MT/CE.
+4. Không có nến phù hợp → “không có OB gốc”. Cụm mơ hồ → UNCLEAR.
+
+## 44. Cách phân loại Breaker
+
+```text
+Có OB gốc?                ── không ──► không phải Breaker (ghi ob_origin = none)
+ └ có
+Cực trị cũ bị vi phạm?    ── không ──► nếu sau đó đóng qua swing: MITIGATION BLOCK; nếu không: chưa có gì
+ └ có  → CANDIDATE
+Thân nến đóng qua swing
+trong ≤ W nến?            ── không ──► EXPIRED (không xác nhận)
+ └ có  → CONFIRMED (t_avail) → AWAITING RETEST
+```
+
+## 45. Cách ghi nhận retest
+
+| Trường | Ví dụ |
+|---|---|
+| `retest_time` | 2026-..-.. 08:35 NY |
+| `retest_tf` | nến của khung nguồn chạm vùng |
+| `retest_depth` | D0 / D1 / D2 / D3 / D4 (mục 27.1) |
+| `touch_n` | lần chạm thứ mấy kể từ t_avail |
+| `near_miss` | có/không + khoảng cách (ATR) |
+| `in_killzone` | có/không |
+| `news_window_min` | số phút tới/từ tin cấp cao gần nhất |
+| `reaction` | A / B / chưa kết thúc (RX-DEF) |
+| `mfe_atr`, `mae_atr` | quãng thuận/nghịch lớn nhất sau lần chạm (đơn vị ATR) |
+
+## 46. Cách xác định invalidation
+
+Bốn mức, ghi riêng (mục 28): **vùng** (mép xa, k = 2), **luận điểm** (L2), **setup** (stop/giờ/gate), **HTF** (cấu trúc D1). Cộng thêm **EXPIRED** (DOL bị lấy trước retest / TTL / HTF đổi). Một quy tắc không có ngoại lệ: **không dời ranh giới vùng sau t_avail.**
+
+## 47. Decision Tree
+
+![[BB-Deep-22-Decision-Tree.svg|760]]
+*Hình BB-Deep-22 — Decision tree v0.1. Mỗi ô là một câu hỏi trả lời được bằng quan sát; nhánh phải là kết luận được phép tại thời điểm đó.*
+
+```mermaid
+flowchart TD
+    A{1. Có bối cảnh cấu trúc D1→H1?} -- Chưa --> A1[Tiếp tục phân tích / UNCLEAR]
+    A -- Có --> B{2. Có OB gốc theo định nghĩa?}
+    B -- Chưa --> B1[Không tự tạo vùng. ob_origin = none]
+    B -- Có --> C{3. OB gốc ghi TRƯỚC khi biết kết quả?}
+    C -- Không --> C1[Quan sát hồi cứu: học, không thống kê]
+    C -- Có --> D{4. Cực trị cũ bị vi phạm?}
+    D -- Không --> D1[Nếu vẫn đóng qua swing: Mitigation Block]
+    D -- Có --> E{5. Thân nến đóng qua swing trong W nến?}
+    E -- Chưa --> E1[CANDIDATE / quá W nến: EXPIRED]
+    E -- Có --> F{6. CONFIRMED. Giá đã retest?}
+    F -- Chưa --> F1[AWAITING RETEST / DOL bị lấy: EXPIRED]
+    F -- Có --> G{7. Hành vi khi retest?}
+    G -- Xuyên + giữ k nến --> G1[INVALIDATED]
+    G -- Dao động / thiếu thông tin --> G2[Chờ / UNCLEAR]
+    G -- Phản ứng --> H{8. Đạt tiêu chí SETUP: G2 + bằng chứng M5?}
+    H -- Không --> H1[Ghi 'retest không có setup']
+    H -- Có --> I[9. Đánh giá lệnh: entry, stop, target, R, risk ≤ 0,5%]
+    I --> J{10. Có invalidation nào?}
+    J -- Có --> J1[Cập nhật trạng thái. Không dời vùng]
+    J -- Không --> J2[Tiếp tục theo dõi theo quy tắc]
+```
+
+**Ngoại lệ cần nhớ:** (a) ở ô 4, nếu đáy L2 chỉ thấp hơn L1 một khoảng nhỏ hơn spread → AMBIGUOUS; (b) ở ô 5, cú đóng qua swing nằm trọn trong cửa sổ tin → đạt định nghĩa nhưng gắn cờ `news_window`; (c) ở ô 7, râu qua mép xa nhưng thân đóng lại trong vùng (D3) **không** phải xuyên.
+
+> [!warning] Không đọc decision tree như quy luật nhân quả
+> Cây mô tả **trình tự kiểm tra**, không phải trình tự giá “phải” đi. Phần lớn đường đi thực tế dừng ở ô 5–8.
+
+## 48. Các quy tắc nếu–thì (RULE-BB v0.1)
+
+**Nhóm A — Quy tắc NHẬN DIỆN** (giúp nhất quán; không chứng minh lợi nhuận)
+
+| Mã | Quy tắc một câu | Vì sao cần | Đúng / Sai | Cách kiểm tra quy tắc hữu ích |
+|---|---|---|---|---|
+| RULE-BB-001 | Nếu chưa nêu tên được OB gốc tại swing → không gọi là Breaker | Không có OB thì “OB thất bại” vô nghĩa | Đúng: ghi nến tăng tại H1 lúc 10:00 · Sai: vẽ vùng ở chỗ giá vừa bật | Tỷ lệ đồng thuận khi hai lần gán nhãn cùng chart cách nhau một tuần |
+| RULE-BB-002 | Nếu đáy cũ không bị vi phạm → gọi là Mitigation Block | Tách hai khái niệm | Đúng: HL rồi phá H1 = MB · Sai: gọi mọi đảo chiều là breaker | So hai nhóm (HYP-BB-004) |
+| RULE-BB-003 | Nếu chỉ có râu vượt swing → chưa xác nhận | Râu thường chỉ là sweep | Đúng: chờ thân đóng · Sai: vào lệnh khi râu vượt | So VAR-WICK vs v0.1 |
+| RULE-BB-004 | Ranh giới vùng khóa tại t_avail; không nới sau đó | Chống “sửa vùng” | Đúng: vùng cố định · Sai: dời mép xa sau khi giá xuyên | Đếm số lần sửa vùng trong journal (mục tiêu: 0) |
+| RULE-BB-005 | Mọi mức tham chiếu có known_at; chỉ dùng khi known_at < thời điểm quyết định | Chống look-ahead | Đúng: H1 dùng sau khi xác nhận · Sai: dùng H1 tại nến đỉnh | Code kiểm tra known_at |
+| RULE-BB-006 | Ghi cả vùng không retest, vùng bị xuyên, vùng UNCLEAR | Chống survivorship | — | Tỷ lệ UNCLEAR và EXPIRED > 0 |
+| RULE-BB-007 | Ghi cấp swing H1 trước khi đánh giá | Cấp quyết định ý nghĩa | — | So kết quả theo `h1_level` |
+| RULE-BB-008 | Không đổi định nghĩa giữa các ví dụ; đổi = tăng version | Dữ liệu so sánh được | — | `bb_def` giống nhau trong một batch |
+| RULE-BB-009 | MSS + displacement + FVG của cùng nhịp = một nhóm bằng chứng | Chống đếm trùng | — | Hồi quy: thêm FVG có tăng giải thích sau khi đã có disp_score không |
+
+**Nhóm B — Quy tắc GIAO DỊCH** (v0.1; mỗi quy tắc là một giả thuyết thực thi)
+
+| Mã | Quy tắc |
+|---|---|
+| RULE-BB-101 | Chỉ xét lệnh tại **retest**, không vào ngay tại t_avail (vào tại t_avail là một chiến lược khác — thống kê riêng) |
+| RULE-BB-102 | Chỉ xét lệnh khi Breaker nằm trong vùng/hướng mà Context Card D1 cho phép (hoặc đã ghi trước là countertrend) |
+| RULE-BB-103 | Bắt buộc gate G2: arrival, killzone, mức M5 đánh dấu trước, room tới target, không tin cấp cao |
+| RULE-BB-104 | Bằng chứng M5 tối thiểu: sweep M5 trong vùng + MSS M5 trên swing đã đánh dấu |
+| RULE-BB-105 | Điểm vào khai báo trước một trong: FVG M5 · CE/MT vùng H1 · mép gần (ghi `entry_type`) |
+| RULE-BB-106 | Stop ngoài đáy sweep M5 hoặc ngoài mép xa H1 + đệm; không đặt trong vùng |
+| RULE-BB-107 | Target = DOL của nhịp H1 (internal trước, external sau); R ≥ tối thiểu của kế hoạch; risk ≤ 0,5% |
+| RULE-BB-108 | Không giao dịch Breaker đã EXPIRED (DOL bị lấy trước retest) |
+| RULE-BB-109 | Hai lệnh thua trong cùng vùng trong ngày → đóng vùng (G2.X3) |
+
+## 49. Những trường hợp phải giữ trạng thái UNCLEAR
+
+- Cặp swing không rõ (nhiều đỉnh/đáy gần bằng nhau, range chồng chéo).
+- OB gốc mơ hồ (cụm nến xen kẽ) và không có biến thể “cả cụm” đã khai báo trước.
+- Cực trị cũ bị vi phạm với biên độ nhỏ hơn spread / khác nhau giữa các feed.
+- Cú đóng qua swing chỉ vừa đủ rồi đi ngang (không rõ hệ quả cấu trúc).
+- Không xác định được Breaker H1 thuộc nhịp nào của D1.
+- Dữ liệu có lỗ (rollover, nến Chủ nhật, feed lệch).
+
+> [!tip] Một hệ thống trung thực có tỷ lệ UNCLEAR khác 0
+> Nếu journal của bạn không bao giờ có UNCLEAR, khả năng cao là bạn đang gán nhãn sau khi đã biết kết quả.
+
+## 50. Những lỗi nhận diện thường gặp (24 lỗi)
+
+| # | Lỗi | Vì sao xuất hiện | Dấu hiệu / ví dụ | Cách sửa → quy tắc ngăn lặp | Kiểm tra việc sửa |
+|---|---|---|---|---|---|
+| 1 | Mọi OB bị phá đều là Breaker | Nhớ câu “breaker = OB thất bại” mà quên trình tự | Gọi breaker khi không có đáy mới | Ba mắt xích (RULE-BB-001/002) | % bản ghi đủ ba mắt xích = 100% |
+| 2 | Không xác định OB gốc | Nhìn vùng trước, tìm lý do sau | Vùng vẽ theo chỗ giá bật | Ghi OB gốc lúc H1 xác nhận | Có timestamp OB gốc < t_avail |
+| 3 | Chọn vùng sau khi giá phản ứng | Hindsight | “Thấy chưa, bật đúng chỗ” | Chỉ thống kê vùng có timestamp trước retest | Tỷ lệ vùng “hồi cứu” bị loại khỏi thống kê |
+| 4 | Không khóa ranh giới trước retest | Muốn vùng “đúng” | Mép xa bị dời | RULE-BB-004 | Số lần sửa vùng = 0 |
+| 5 | Nhầm Breaker với Mitigation Block | Hai hình gần giống nhau | Đáy cao hơn mà vẫn gọi breaker | Phép thử “đáy cũ phá hay giữ” | Bảng nhầm lẫn khi tự kiểm tra lại |
+| 6 | Nhầm Breaker với S/R thường | Role reversal quen thuộc | Gọi mọi mức “phá rồi retest” là breaker | Phải có OB gốc tại swing | — |
+| 7 | Coi “sweep đáng kể” là điều kiện bắt buộc | Nghe narrative “săn stop” | Bỏ breaker hợp lệ vì đáy L1 “không đủ đẹp” | Định nghĩa chỉ cần vi phạm cực trị; chất lượng pool là biến | Có đủ nhóm pool yếu để so |
+| 8 | Bắt buộc FVG | Nhớ Unicorn | Loại breaker không FVG | FVG là biến | So có/không FVG (HYP-BB-003) |
+| 9 | Đòi một “MSS chuẩn” giống nhau ở mọi khung | Định nghĩa MSS khác nhau | Tranh cãi MSS hay BOS | Khai báo lớp MSS (`mss_layer`) | — |
+| 10 | Râu xuyên vùng = xác nhận đầy đủ | Vội | Vào lệnh khi râu vượt H1 | RULE-BB-003 | So VAR-WICK |
+| 11 | Không xác định swing nào quan trọng | Thấy swing là phá | Breaker phá micro swing được coi như đảo chiều D1 | Ghi `h1_level` (RULE-BB-007) | Kết quả theo cấp |
+| 12 | Dùng swing M5 để đổi cấu trúc D1 | Chart nhỏ “nói to” | Đảo bias vì một MSS M5 | Authority top-down | Số lần đổi bias D1 trong tuần |
+| 13 | Xuống M5 quá sớm *(v1: “vào ngay khi breaker vừa hình thành, sợ lỡ tàu”)* | FOMO | Mở M5 khi giá còn xa vùng | Trạng thái NOT READY / MONITORING ([[04-Mistake-FOMO-Entry]]) | % lần mở M5 khi H1 = NOT READY |
+| 14 | Giá chạm vùng = vùng sẽ giữ | Nhầm vị trí với bằng chứng | “Đã về đúng breaker rồi” | Tách location vs evidence | — |
+| 15 | Mọi Breaker sẽ được retest | Chỉ nhớ các ví dụ có retest | Đặt limit ở mọi breaker | Ghi kết cục C (EXPIRED) | Tỷ lệ retest thực tế |
+| 16 | Breaker hình thành = có setup | Gộp năm lớp (mục 31) | Vào lệnh không có gate | RULE-BB-101…104 | % lệnh có đủ gate |
+| 17 | Không có điều kiện invalidation | Chỉ nghĩ đến kịch bản thắng | Ôm lệnh khi thân đóng qua mép xa | Bốn mức invalidation | Có trường invalidation trong 100% bản ghi |
+| 18 | Dời ranh giới vùng sau khi giá xuyên | Không muốn sai | “Breaker thật ở thấp hơn” | RULE-BB-004 | — |
+| 19 | Đổi định nghĩa giữa các ví dụ | Mỗi chart một cách hiểu | Lúc VAR-A lúc VAR-B | RULE-BB-008 | `bb_def/bb_variant` đồng nhất |
+| 20 | Chỉ lưu ví dụ đẹp | Muốn có thư viện “mẫu chuẩn” | Thư mục toàn ví dụ thắng | Ghi mọi breaker gặp được trong cửa sổ quét | Tỷ lệ B và C > 0 |
+| 21 | Bỏ qua vùng bị xuyên / không retest | Không có “bài học” rõ | Mẫu số thiếu | RULE-BB-006 | Mẫu số = số CONFIRMED |
+| 22 | Đếm MSS, displacement, FVG như ba bằng chứng | Checklist dài cho cảm giác chắc | “5/6 confluence” | RULE-BB-009 | — |
+| 23 | Vài ví dụ đẹp → kết luận có lợi thế | Trí nhớ chọn lọc | “Breaker rất chuẩn” sau 3 lệnh thắng | Đối chứng + cỡ mẫu + ngoài mẫu (Part VII) | Khoảng tin cậy |
+| 24 | Tin chart chứng minh ý định tổ chức | Narrative hấp dẫn | “Smart money bảo vệ vùng này” | Viết lại câu theo mục 6 | — |
+
+**Ba lỗi hành vi giữ từ v1** *(War Stories, rút gọn)*: (W1) vào ngay tại t_avail vì sợ lỡ → stop xa vô lý hoặc stop gần phi cấu trúc; (W2) sau chuỗi thua, “phải tìm ra breaker” → hạ chuẩn phân loại pool; (W3) coi mọi lần chạm như lần đầu, không ghi cường độ phản ứng từng lần → đây cũng chính là lý do cần HYP-BB-007. Dấu hiệu chung của cả ba: **trạng thái cảm xúc đang quyết định thay cho trạng thái của vùng** ([[01-Mistake-Emotional-revenge-trade]]).
+
+---
+
+# PART VII — KIỂM CHỨNG
+
+## 51. Xây dựng định nghĩa vận hành
+
+Mỗi định nghĩa dưới đây là **lựa chọn nghiên cứu v0.1**, không phải quy luật phổ quát của ICT. Chỗ có nhiều cách, ghi biến thể để so sánh.
+
+| Mã | Khái niệm | Định nghĩa vận hành v0.1 | Biến thể ghi lại |
+|---|---|---|---|
+| DEF-BB-01 | Swing high/low | Fractal 2 nến mỗi bên trên khung nguồn; `known_at` = close của nến xác nhận thứ 2 | fractal 3/5; Directional Change θ |
+| DEF-BB-02 | OB gốc | Nến tăng (bull breaker) / giảm (bear breaker) cuối tại swing H1/L1, tìm lùi ≤ 3 nến | VAR-B (nến mở đầu nhịp thất bại); chuỗi |
+| DEF-BB-03 | Ranh giới OB | zone_full + zone_body; MT thân; CE cả nến | — |
+| DEF-BB-04 | OB thất bại | Thân nến đóng qua mép xa của OB gốc (theo vai trò cũ) | DEF-OB-07 với k, m (VAR-BROAD) |
+| DEF-BB-05 | Điều kiện phá vùng | Thân nến đóng qua **swing** H1/L1 trong ≤ W = 60 nến kể từ khi cực trị cũ bị vi phạm | VAR-WICK, VAR-C2 |
+| DEF-BB-06 | Bullish Breaker | BB-DEF v0.1 Tầng 1 + 2 (mục 25) | — |
+| DEF-BB-07 | Bearish Breaker | Đối xứng DEF-BB-06 | — |
+| DEF-BB-08 | MSS | Theo [[21-Market-Structure-Shift]]: close vượt mức tham chiếu đã xác nhận, ngược trạng thái; ghi `mss_layer` | — |
+| DEF-BB-09 | BOS | Close vượt mức tham chiếu cùng chiều trạng thái | — |
+| DEF-BB-10 | Displacement | `disp_score` theo [[50-Displacement-In-Depth]] (thân/ATR, tỷ lệ thân/range, số nến liên tiếp) | VAR-DISP (bắt buộc ngưỡng) |
+| DEF-BB-11 | FVG | 3 nến, râu nến 1 và 3 không chồng; quan hệ: none / separate / unicorn | — |
+| DEF-BB-12 | Retest | Nến đầu tiên sau t_avail chạm mép gần; độ sâu D0–D4 | near-miss ghi riêng |
+| DEF-BB-13 | Phản ứng sau retest | Đi xa ≥ 1 ATR khỏi mép gần trước khi có thân đóng qua mép xa (RX-DEF) | 0,5 / 2 ATR; theo R |
+| DEF-BB-14 | Invalidation vùng | 1 thân qua mép xa → SUSPENDED; k = 2 liên tiếp → INVALIDATED | k = 1, 3 |
+| DEF-BB-15 | Breaker có ý nghĩa cấu trúc | `h1_level` ≥ L3 **hoặc** H1 là đỉnh/đáy được bảo vệ của khung nguồn | — |
+| DEF-BB-16 | Breaker HTF | Khung nguồn D1/H4 | — |
+| DEF-BB-17 | Breaker LTF | Khung nguồn M15/M5 | — |
+| DEF-BB-18 | Setup dựa trên Breaker | RULE-BB-101…109 đạt đủ tại thời điểm quyết định | — |
+
+---
+
+## 52. Ghi nhận sự kiện theo thời gian thực
+
+1. **Mỗi trạng thái mới = một dòng log có giờ** (giờ NY như TradingView của bạn), không ghi đè dòng cũ.
+2. **Screenshot tại t_avail** (trước khi thấy retest) — đặt tên theo quy ước vault `SYMBOL-YYYYMMDD-TF-N.png`.
+3. **Mức M5 đánh dấu trước** có screenshot riêng (giờ < giờ sweep).
+4. **Không sửa log cũ.** Nếu phân loại sai, thêm dòng “sửa: … lý do: …”.
+5. **Cuối phiên:** cập nhật trạng thái mọi vùng đang theo dõi (kể cả vùng không có gì xảy ra).
+
+---
+
+## 53. Thiết kế journal
+
+> [!info] Không sửa template backtest hiện có
+> Các trường dưới đây là **phần mở rộng cho Breaker**. Template [[Backtest template - POI & Step Decision (ICT 2022)]] đã có `poi_type`, `poi_stack`, `liquidity_swept`, `sweep_type`, `displacement`, `mss`, `fvg_valid`, `entry_type`… — giữ nguyên. Muốn dashboard đọc trường mới thì thêm vào template **sau** khi đã dùng thử 10–20 bản ghi.
+
+```yaml
+# --- Breaker extension (v0.1) ---
+bb_def: v0.1                 # version định nghĩa
+bb_variant: A                # A | B | BROAD | WICK | C2 | DISP
+bb_direction: bull           # bull | bear
+src_tf: H1                   # khung nguồn của Breaker
+ob_origin_time:              # giờ nến OB gốc (NY)
+ob_origin_tier: 2            # 1 = chỉ candidate OB, 2 = OB valid (nhịp phá đã đóng qua L1)
+ob_series: false
+zone_full_hi:                # khóa tại t_avail
+zone_full_lo:
+zone_body_hi:
+zone_body_lo:
+h1_level: L3                 # L1..L5 của swing bị phá
+h1_protected: true
+sweep_pool: EQL              # micro | swing | EQL | PDL | PWL | session
+sweep_margin_vs_spread:      # biên vi phạm cực trị / spread trung bình
+mss_layer: protected         # protected | internal | sweep-then-break
+disp_score:
+fvg_relation: unicorn        # none | separate | unicorn
+pd_range_used: D1            # range dùng để đánh giá P/D
+pd_location: discount
+t_avail:                     # close của nến đóng qua swing
+bb_state: AWAITING           # NOT_FORMED | CANDIDATE | CONFIRMED | AWAITING | RETEST | REACTION | SUSPENDED | INVALIDATED | EXPIRED | UNCLEAR
+retest_time:
+retest_depth: D1             # D0..D4
+touch_n: 1
+near_miss: false
+in_killzone: true
+news_window_min:
+reaction: A                  # A | B | open
+mfe_atr:
+mae_atr:
+expired_reason:              # dol_taken | ttl | htf_change
+hypothesis_before: ""        # viết TRƯỚC retest
+evidence_for: ""
+evidence_against: ""
+unclear_reason: ""
+```
+
+**Ý nghĩa và khi nào cần:** mỗi câu hỏi nghiên cứu chỉ cần một tập con. Ví dụ HYP-BB-004 (Breaker vs Mitigation) chỉ cần `classification`, `reaction`, `mfe_atr`, `mae_atr`, `src_tf`, `bb_direction`. Đừng điền 40 trường cho mọi bản ghi nếu câu hỏi chỉ cần 6 — journal quá nặng sẽ bị bỏ dở.
+
+---
+
+## 54. Tránh hindsight bias và look-ahead bias
+
+![[BB-Deep-23-Xac-Dinh-Truoc-vs-Ve-Sau.svg|760]]
+*Hình BB-Deep-23 — Trái: vùng khóa tại t_avail, tương lai bị che. Phải: nhìn cả chart rồi chọn vùng “đã chạy” — đẹp nhưng không chứng minh gì.*
+
+**Danh sách kiểm tra:**
+- [ ] Vùng xác định **trước** khi biết kết quả; có timestamp.
+- [ ] Chỉ dùng thông tin có `known_at` < thời điểm đánh giá (swing cần nến xác nhận — mục 26).
+- [ ] Không đổi ranh giới sau t_avail mà không ghi lại.
+- [ ] Ghi cả vùng **không retest**, vùng **bị xuyên**, vùng **không đủ điều kiện**.
+- [ ] Không bỏ ví dụ bất lợi.
+- [ ] Phân biệt “không retest” với “retest rồi thất bại”.
+- [ ] Khi backtest thủ công trên chart: dùng chế độ replay, che phần bên phải, **quét tuần tự** mọi ứng viên trong cửa sổ — không chỉ những chỗ “nhìn có vẻ đẹp”.
+- [ ] Gán nhãn lại cùng một tập chart sau ≥ 1 tuần (không xem lần đầu) để đo **độ ổn định** của chính mình (inter-rater với chính mình).
+
+---
+
+## 55. Thiết kế backtest
+
+### 55.1 Câu hỏi nghiên cứu (đều là giả thuyết)
+
+1. Bao nhiêu OB bị phá đạt BB-DEF v0.1? (tỷ lệ chuyển đổi)
+2. Tỷ lệ Breaker được retest; thời gian tới retest.
+3. Tỷ lệ phản ứng theo kỳ vọng sau retest (RX-DEF) — **so với vùng đối chứng**.
+4. Khác biệt Bullish vs Bearish (HYP-BB-008); H1 vs M5 (HYP-BB-009).
+5. Ảnh hưởng của bối cảnh D1 (HYP-BB-006); của sweep pool (HYP-BB-005); displacement (HYP-BB-002); FVG/Unicorn (HYP-BB-003); P/D; HTF POI.
+6. Độ ổn định qua các giai đoạn thị trường (regime) và trên dữ liệu ngoài mẫu.
+
+### 55.2 Thiết kế (17 yếu tố)
+
+| # | Yếu tố | v0.1 |
+|---|---|---|
+| 1 | Giả thuyết | Một HYP-BB cụ thể / lần test; viết trước |
+| 2 | Quần thể | Mọi Breaker đạt BB-DEF v0.1 trên khung nguồn trong cửa sổ quét — **không chọn** |
+| 3 | Timeframe | H1 (nguồn) + M5 (bằng chứng); D1 riêng |
+| 4 | Thị trường | Bắt đầu với một: EURUSD (dữ liệu dài, vault đã có mẫu); sau đó NQ1, XAUUSD |
+| 5 | Cỡ mẫu | ≥ 100 Breaker / nhóm cho câu hỏi mô tả; nhiều hơn cho so sánh nhóm |
+| 6 | Tiêu chí đưa vào | Đủ ba mắt xích; có t_avail; dữ liệu liền mạch |
+| 7 | Tiêu chí loại | Lỗ dữ liệu; rollover; (ghi riêng, **không** loại) các mẫu cửa sổ tin |
+| 8 | Entry | Theo RULE-BB-105 (khai báo một loại / lần test) |
+| 9 | Stop | Theo RULE-BB-106 (khai báo) |
+| 10 | Target | DOL của nhịp; và một biến thể R cố định để so |
+| 11 | Phiên | Ghi killzone; test có/không killzone |
+| 12 | Spread/slippage | Trừ spread thực tế của broker; slippage cho lệnh stop |
+| 13 | Chống look-ahead | known_at cho mọi mức; t_avail; replay |
+| 14 | Survivorship | Feed cố định; không chỉ dùng giai đoạn “đẹp” |
+| 15 | Biến kết quả | retest, reaction A/B, MFE/MAE (ATR), R thực, R sau chi phí |
+| 16 | Thống kê | Tỷ lệ + khoảng tin cậy; expectancy; profit factor; max drawdown; median R; phân phối chuỗi thua |
+| 17 | Kiểm tra độ bền | Ngoài mẫu theo thời gian; đổi tham số swing (n = 2/3/5); đổi k; đổi định nghĩa phản ứng; vùng đối chứng |
+
+### 55.3 Vùng đối chứng — phần quan trọng nhất
+
+Mỗi Breaker cần một **vùng đối chứng** có **cùng độ rộng** (theo ATR), **cùng khoảng cách** từ giá lúc t_avail (theo ATR), **cùng hướng**, ở **thời điểm khác** (hoặc cùng thời điểm nhưng không phải vùng OB gốc). Chỉ phần **vượt** đối chứng mới có thể là thông tin. Đây cũng là cách note OB của vault dùng nhóm C1.
+
+### 55.4 Mô phỏng null — baseline mà mọi kết quả thật phải vượt [SIMULATION]
+
+**Thiết lập:** 400.000 nến tạo từ bước ngẫu nhiên thuần túy (mỗi nến gồm 12 bước nhỏ để có râu tự nhiên). Không có lệnh, không có người tham gia, không có “smart money”. Áp dụng **đúng** BB-DEF v0.1 (bullish), swing fractal 2/3/5 nến. Đối chứng: vùng cùng độ rộng và khoảng cách (theo ATR) đặt ở thời điểm ngẫu nhiên. Phản ứng theo RX-DEF (1 ATR trước khi thân đóng qua mép xa). Mã và số liệu thô lưu ở `Claude outputs/BB-Sim/` (xem Changelog).
+
+![[BB-Sim-01-Pheu-Hinh-Thanh-Null.svg|760]]
+*Hình BB-Sim-01 — Trên dữ liệu ngẫu nhiên: khoảng 6 trên 10 ứng viên được xác nhận; khoảng 9 trên 10 Breaker đã xác nhận được retest trong 100 nến (đa số chỉ sau vài nến); khoảng một nửa số vùng đã retest “giữ”. Trên khung 288 nến/ngày, định nghĩa cho khoảng 3–9 Breaker bullish mỗi ngày tùy tham số swing.*
+
+![[BB-Sim-02-Ty-Le-Giu-vs-Doi-Chung.svg|760]]
+*Hình BB-Sim-02 — Tỷ lệ “giữ” của Breaker ≈ 50%, của vùng đối chứng ≈ 51–53%: không khác nhau. Bên phải: phá càng xa (cú phá càng mạnh) → retest càng ít, còn tỷ lệ giữ vẫn quanh một nửa.*
+
+**Đọc kết quả bằng lời:**
+1. **Mẫu hình Breaker không hiếm** — nó xuất hiện nhiều lần mỗi ngày trên dữ liệu không có ai giao dịch. Vậy “tìm thấy một Breaker” không nói gì cả.
+2. **Retest gần như luôn xảy ra, và rất nhanh** — vì vùng nằm sát ngay dưới giá đóng phá H1. Vậy “giá đã quay lại breaker” cũng không nói gì cả.
+3. **“Giữ” khoảng một nửa — giống vùng ngẫu nhiên** — vậy một vài lần “bật đẹp” hoàn toàn có thể chỉ là may.
+4. **Hình học tạo ảo giác** — cú phá mạnh làm thay đổi xác suất retest **mà không cần bất kỳ cơ chế thị trường nào**. Mọi phân tích “displacement mạnh thì breaker tốt hơn” phải kiểm soát khoảng cách trước.
+5. **Mô phỏng KHÔNG chứng minh ICT sai.** Nó chỉ cho biết **mức nền**. Nếu trên dữ liệu thật Breaker giữ nhiều hơn đối chứng một cách ổn định, đó mới là thông tin — và đó là điều chưa ai trong vault đo.
+
+---
+
+## 56. Đánh giá kết quả
+
+Giải thích các con số bằng lời, theo thứ tự:
+
+| Con số | Nói gì | Không nói gì |
+|---|---|---|
+| Tỷ lệ OB bị phá → Breaker | Định nghĩa chặt tới đâu | Breaker có giá trị không |
+| Tỷ lệ retest | Vùng có hay được thử lại | Vùng có giữ không |
+| Thời gian tới retest | Nên theo dõi bao lâu (TTL) | — |
+| Tỷ lệ giữ (so với đối chứng!) | Vùng có thông tin vượt hình học không | Có lãi không |
+| MFE / MAE | Giá đi thuận/nghịch bao xa sau chạm | R thực (phụ thuộc entry/stop) |
+| R trung bình sau chi phí, expectancy | Có lãi theo quy tắc giao dịch cụ thể không | Có lãi theo quy tắc khác không |
+| Khác biệt theo nhóm (bull/bear, H1/M5, D1 context) | Bộ lọc nào **có thể** có ích | Bộ lọc đó có ích ngoài mẫu không |
+| Kết quả ngoài mẫu | Có tổng quát hóa không | — |
+
+### 56.1 Ba loại kết luận — không tương đương
+
+1. **Mô tả:** giá đã làm gì quanh Breaker? (thống kê hành vi)
+2. **Dự báo:** nhận diện Breaker có giúp đoán hành vi tiếp theo **tốt hơn đối chứng** không?
+3. **Ứng dụng giao dịch:** thông tin đó có dùng được trong một hệ thống có expectancy dương **sau chi phí**, ngoài mẫu không?
+
+Một Breaker được phân loại đúng (1) không kéo theo (2); (2) không kéo theo (3).
+
+### 56.2 Bao nhiêu mẫu là đủ để tin?
+
+Không cần công thức để thấy điều này: với khoảng 30 mẫu, một tỷ lệ “60% giữ” vẫn hoàn toàn có thể đến từ một đồng xu công bằng; với vài trăm mẫu, khoảng dao động hẹp lại đủ để bắt đầu phân biệt. Khi so **nhiều** bộ lọc cùng lúc, cái “tốt nhất” trong mẫu thường xấu đi ngoài mẫu (data snooping[^S13][^S14]). Vì vậy: ít bộ lọc, viết trước, test ngoài mẫu.
+
+---
+
+## 57. So sánh các biến thể definition
+
+| So sánh | Câu hỏi | Ghi chú |
+|---|---|---|
+| VAR-A vs VAR-B | Vùng nến tăng tại H1 hay nến giảm mở đầu nhịp có phản ứng khác nhau? | Hai vùng chồng nhau nhiều → khác biệt có thể nhỏ |
+| v0.1 vs VAR-BROAD | Trình tự swing có thêm thông tin so với “mọi OB thất bại”? | HYP-BB-015 |
+| v0.1 vs VAR-WICK | Đòi thân đóng có lọc được tín hiệu giả? | — |
+| v0.1 vs VAR-C2 | Thêm một nến xác nhận có đáng mất giá vào? | — |
+| v0.1 vs VAR-DISP | Bắt buộc displacement có cải thiện, **sau khi kiểm soát khoảng cách**? | Bẫy hình học |
+| fractal 2 vs 3 vs 5 | Kết luận có đứng vững khi đổi swing detector? | Nếu không → không có cấu trúc thật |
+| k = 1 / 2 / 3 | Invalidation sớm hay muộn tốt hơn? | Chọn theo chi phí hai loại sai, như note OB |
+| zone_full vs zone_body; entry mép gần vs MT vs mép xa | Đánh đổi khớp lệnh vs R | HYP-BB-013 |
+
+---
+
+## 58. Các giả thuyết cần kiểm chứng (Hypothesis Register)
+
+| Mã | Giả thuyết | Biến chính | Bác bỏ nếu | Trạng thái |
+|---|---|---|---|---|
+| HYP-BB-001 | Breaker v0.1 giữ giá **nhiều hơn** vùng đối chứng cùng hình học trên dữ liệu thật | reaction, đối chứng | Không khác đối chứng (như null) | UNTESTED |
+| HYP-BB-002 | `disp_score` cao → kết quả tốt hơn, **sau khi** kiểm soát khoảng cách tới vùng | disp_score, dist_atr | Hiệu ứng biến mất khi kiểm soát | UNTESTED |
+| HYP-BB-003 | Unicorn (Breaker ∩ FVG) tốt hơn Breaker trần (theo R sau chi phí, tính cả lệnh không khớp) | fvg_relation | Không khác / kém hơn khi tính missed trades | REQUIRES MORE DATA (vault n = 1) |
+| HYP-BB-004 | Breaker tốt hơn Mitigation Block | classification | Không khác | UNTESTED (vault MB n = 0) |
+| HYP-BB-005 | Pool L1 có cấp cao (EQL/PDL/session) → kết quả tốt hơn pool micro | sweep_pool | Không khác | UNTESTED |
+| HYP-BB-006 | Breaker cùng hướng D1 / tại HTF POI tốt hơn Breaker ngược hướng / giữa range | htf_alignment, pd_location | Không khác | UNTESTED |
+| HYP-BB-007 | Lần retest đầu có phản ứng mạnh nhất, các lần sau yếu dần (v1) — **đối lập** với bằng chứng S/R “càng chạm nhiều càng dễ bật”[^S6] | touch_n | Phản ứng không giảm, hoặc tăng theo touch_n | UNTESTED — có bằng chứng ngoài ICT ngược chiều |
+| HYP-BB-008 | Bullish và Bearish Breaker hành xử khác nhau (theo thị trường) | bb_direction × symbol | Không khác | UNTESTED |
+| HYP-BB-009 | Breaker H1 có expectancy sau chi phí khác Breaker M5 | src_tf | Không khác | UNTESTED |
+| HYP-BB-010 | Retest cùng phiên/phiên kế tiếp tốt hơn retest muộn; retest sau khi DOL đã bị lấy kém hơn (v1 §15.2) | retest delay, expired_reason | Không khác | UNTESTED |
+| HYP-BB-011 | Breaker hình thành trong cửa sổ tin cấp cao có tỷ lệ giữ thấp hơn (v1 §15.1) | news_window_min | Không khác | UNTESTED |
+| HYP-BB-012 | Breaker hình thành trong tuần lễ / thanh khoản mỏng kém hơn (v1 §15.6) | holiday flag | Không khác | UNTESTED |
+| HYP-BB-013 | Entry ở MT/CE tốt hơn mép gần sau khi tính lệnh không khớp | entry_type, missed | Không khác | UNTESTED |
+| HYP-BB-014 | VAR-A và VAR-B cho kết quả khác nhau | bb_variant | Không khác (chọn cái đơn giản hơn) | UNTESTED |
+| HYP-BB-015 | Định nghĩa chặt (trình tự swing) thêm thông tin so với VAR-BROAD | bb_variant | Không khác | UNTESTED |
+| HYP-BB-016 | Failed Breaker (INVALIDATED + đóng qua L2) báo hiệu tiếp diễn hướng cũ (v1 §5/§15.7) | sau-INVALIDATED outcome | Không khác đối chứng | UNTESTED |
+| HYP-BB-017 | Breaker có biên vi phạm cực trị nhỏ so với spread kém tin cậy hơn và phụ thuộc feed (v1 §15.5) | sweep_margin_vs_spread | Không khác | UNTESTED |
+| HYP-BB-018 | Breaker hình thành/retest trong killzone tốt hơn ngoài killzone | in_killzone | Không khác | UNTESTED |
+
+---
+
+## 59. Giới hạn và câu hỏi nghiên cứu còn mở
+
+**Giới hạn đã biết:**
+1. Định nghĩa ICT gốc chưa đối chiếu được với video gốc; các nguồn thứ cấp **không thống nhất** về nến nào là Breaker.
+2. Breaker phụ thuộc OB và swing detector phía trước — sai ở gốc thì sai theo.
+3. Trên FX spot không có sổ lệnh/volume tập trung → các cơ chế M1–M4 (mục 11.3) không đo trực tiếp được.
+4. Mô phỏng null là random walk không có đuôi dày, không có biến động theo phiên — baseline thật có thể khác. Nên lặp lại null bằng **xáo trộn dữ liệu thật** (block bootstrap) khi có dữ liệu.
+5. Vault hiện chỉ có **hai** bản ghi gắn nhãn Breaker; không thể kết luận gì.
+
+**Câu hỏi mở:**
+- Breaker có thông tin **khác** với “một mức vừa bị phá” bất kỳ (role reversal thuần túy) không?
+- Trên futures có volume/OI: lúc retest Breaker, volume có khác lúc retest vùng đối chứng không? (cách duy nhất để chạm vào M1)
+- Có tồn tại một khung thời gian/thị trường mà Breaker tốt hơn hẳn, hay hiệu ứng (nếu có) đến từ bối cảnh D1 chứ không từ Breaker?
+- TTL tối ưu của Breaker H1 là bao lâu, đo bằng dữ liệu?
+
+---
+
+# PART VIII — TỔNG HỢP
+
+## 60. Giải thích Breaker Block cho trẻ 5 tuổi
+
+> Có một **cái trần** từng chặn quả bóng. Một hôm bóng **phá thủng trần** và bay lên tầng trên. Người lớn gọi chỗ trần cũ đó là **“breaker”**: bây giờ nó có thể là **sàn** cho quả bóng đứng lên. Nhưng sàn ấy vừa bị thủng, nên **có lúc bóng rơi xuyên qua**. Vì vậy mình **không đoán** — mình **nhìn xem** bóng có đứng được trên sàn không, và **ghi lại cả những lần nó rơi**.
+
+Ba điều đứa trẻ cũng hiểu được: (1) phải thấy trần **bị phá thật** (không phải chỉ chạm); (2) phải biết **trần nào** (trần nhà hay trần cái tủ — cấp swing); (3) **chờ** bóng rơi xuống rồi mới xem, đừng đứng sẵn dưới đó.
+
+---
+
+## 61. Ví dụ Bullish Breaker từ D1 đến M5 (dựng — không phải dữ liệu thật)
+
+| Thời điểm | Khung | Điều đã biết | Quyết định |
+|---|---|---|---|
+| T0 | D1 | D1 giảm, rồi tạo đáy L1-D1; hồi lên H1-D1 (nến tăng cuối = OB gốc) | Ghi OB gốc D1; chưa có gì để giao dịch |
+| T1 | D1 | Giá phá dưới L1-D1 (đáy ngày trước) → CANDIDATE | Đánh dấu trước mức H1-D1 |
+| T2 | D1 | Thân nến D1 đóng trên H1-D1 → **CONFIRMED** (t_avail). Range D1 re-map: L2-D1 → đỉnh mới. BSL phía trên = DOL | Context Card: “chỉ tìm mua; vùng = Breaker D1; hết hạn nếu BSL bị lấy trước retest” |
+| T3 | H1 | Hai ngày sau giá hồi về vùng Breaker D1; bên trong vùng, H1 tạo L1→H1→L2→đóng trên H1 → Breaker H1 **trong** vùng D1 | Setup Card: đánh dấu trước SSL M5 và swing M5; trạng thái MONITORING |
+| T4 | M5 | Trong NY AM: giá quét SSL M5 bên trong vùng H1 (D1 sâu), MSS M5 đóng trên swing đã đánh dấu, để lại FVG | Đạt G2 + bằng chứng → đánh giá lệnh theo RULE-BB-105…107 |
+| T5 | — | Kết cục ghi lại: A (giữ) — **một mẫu**; nếu giá đã xuyên mép xa H1 thì đó là B, ghi như nhau | Journal đầy đủ, kể cả nếu thua |
+
+---
+
+## 62. Ví dụ Bearish Breaker từ D1 đến M5 (dựng)
+
+| Thời điểm | Khung | Điều đã biết | Quyết định |
+|---|---|---|---|
+| T0 | D1 | D1 tăng; tạo đỉnh H1-D1; hồi xuống L1-D1 (nến giảm cuối = bullish OB gốc) | Ghi OB gốc |
+| T1 | D1 | Giá vượt H1-D1 (đỉnh tuần trước) → CANDIDATE | Đánh dấu trước L1-D1 |
+| T2 | D1 | Thân D1 đóng dưới L1-D1 → **Bearish Breaker D1 CONFIRMED**; SSL phía dưới = DOL | Context Card: “chỉ tìm bán; vùng = Bearish Breaker D1” |
+| T3 | H1 | Giá hồi lên vùng; H1 tạo Bearish Breaker nhỏ bên trong vùng D1 | MONITORING; đánh dấu trước BSL M5, swing M5 |
+| T4 | M5 | London: quét BSL M5 trong vùng, MSS M5 xuống, FVG | Đánh giá lệnh |
+| T5 | — | Ghi kết cục; thống kê **riêng** với bullish (HYP-BB-008) | — |
+
+---
+
+## 63. Ví dụ OB bị phá nhưng chưa đủ điều kiện thành Breaker (dựng)
+
+- **H1:** giá tạo L1, H1 (nến tăng cuối), rồi giảm nhưng chỉ tạo **đáy cao hơn** L1. Sau đó một thân nến đóng trên H1.
+- **Kết luận đúng:** **Mitigation Block** (đáy cũ không bị vi phạm). Mức sai của luận điểm: dưới đáy cao hơn, không phải dưới L1.
+- **Biến thể khác:** râu vượt H1 nhưng thân không đóng → vẫn CANDIDATE; nếu quá W nến → EXPIRED.
+- **Bài học:** vùng có thể vẫn đáng theo dõi, nhưng **dưới tên khác**, thống kê **nhóm khác**.
+
+---
+
+## 64. Ví dụ Breaker được retest và phản ứng (dựng)
+
+- **T0–T2:** Breaker H1 CONFIRMED, ranh giới khóa, DOL = đỉnh H4 phía trên chưa bị lấy.
+- **T3:** giá hồi về, râu chạm tới MT thân (D1), thân nến H1 đóng lại trên vùng.
+- **T4:** M5 quét một đáy nhỏ trong vùng rồi MSS lên.
+- **T5:** giá đi xa khỏi mép gần hơn 1 ATR trước khi có bất kỳ thân nến nào đóng qua mép xa → **REACTION OBSERVED (A)**.
+- **Đọc đúng:** đây là **một** quan sát “giữ”. Trên dữ liệu ngẫu nhiên điều này xảy ra khoảng một nửa số lần. Chưa nói gì về lợi thế.
+
+---
+
+## 65. Ví dụ giá retest nhưng xuyên qua vùng (dựng)
+
+- **T3:** giá về vùng, M5 không có MSS (không có bằng chứng) → **không vào lệnh** (đúng quy trình).
+- **T4:** một thân nến H1 đóng dưới mép xa → SUSPENDED; nến H1 kế tiếp cũng đóng dưới → **INVALIDATED** (k = 2).
+- **T5:** giá tiếp tục xuống và đóng dưới L2 → luận điểm đảo chiều sai.
+- **Ghi journal:** `reaction = B`, `first_error_step = none` (định nghĩa và quy trình đúng; kết cục xấu là một phần của xác suất), hoặc `first_error_step = context` nếu D1 vốn đang ngược hướng mà vẫn theo dõi.
+- **Không làm:** dời vùng xuống “breaker thật ở dưới”; vào bán ngay tại nến phá vì “failed breaker” (HYP-BB-016 chưa được test).
+
+---
+
+## 66. Ví dụ Breaker không được retest (dựng)
+
+- **T2:** Breaker H1 CONFIRMED với cú phá rất mạnh; giá đóng xa vùng.
+- **T3–T4:** giá tiếp tục tăng thẳng tới DOL (đỉnh H4), không quay lại vùng.
+- **Trạng thái:** AWAITING → **EXPIRED** (`expired_reason = dol_taken`).
+- **Ghi gì:** retest = no; quãng giá đi được. **Không** ghi là thua; **không** bỏ khỏi dữ liệu.
+- **Nhắc từ mô phỏng:** cú phá càng xa, retest càng ít — một hiệu ứng **hình học**.
+
+---
+
+## 67. Ví dụ D1/H1/M5 mâu thuẫn (dựng)
+
+- **D1:** giảm rõ, giá đang hồi lên premium, ngay dưới một bearish OB D1.
+- **H1:** vừa xác nhận một Bullish Breaker (phá một đỉnh H1 nội bộ của nhịp hồi).
+- **M5:** đang phản ứng tăng tại Breaker H1.
+- **Phân tích:** khác cấp — Breaker H1 là cấu trúc **bên trong** nhịp hồi D1. Authority top-down: D1 ưu tiên bán.
+- **Lựa chọn ghi trước:** (1) bỏ qua; (2) countertrend nhỏ, mục tiêu tới bearish OB D1; (3) chờ — nếu giá vào bearish OB D1 và H1 tạo **Bearish** Breaker ở đó, đó mới là setup cùng hướng D1.
+
+---
+
+## 68. Case thật trong vault (n = 2) — đọc lại bằng BB-DEF v0.1
+
+> [!example] Case 1 — [[01 - Win - EURUSD - 2021-05-03- Short|EURUSD 03/05/2021 Short]] (backtest 10/07/2026) · **+3,075R**
+> **Dữ liệu gốc (của bạn):** OB 24/04/2021 tại 1.20750–1.20616 → nhịp tăng tạo đỉnh range → 30/04 các nến displacement thân lớn đóng xuyên OB và quét old lows tới 1.20142 → Breaker + FVG 1.20688–1.20430 → vùng Unicorn 1.20680–1.20616 (Premium) → 03/05 giá hồi, **đóng một nến bên ngoài** cạnh trên Unicorn rồi có nến reject mạnh đóng trở lại bên dưới → M5 FVG tại CE → entry 1.20650, SL 1.20764 (trên điểm sweep), TP 1.20408.
+> **Đọc lại theo v0.1:**
+> - Mắt xích ① (OB gốc) — **có**, được nêu tên (bullish OB 24/04).
+> - Mắt xích ③ (thân nến đóng xuyên qua swing) — **có** (30/04, displacement, quét old lows).
+> - Mắt xích ② (đỉnh cũ bị vi phạm trước cú phá — điều kiện tách Breaker khỏi Mitigation) — **chưa xác minh được từ ghi chép**: note chỉ nói nhịp tăng sau OB “tạo swing high (đỉnh của range)”, không nói đỉnh đó có vượt một đỉnh trước không. → Phân loại hiện tại: **Breaker theo VAR-BROAD; cần mở lại chart H1 để xác định strict Breaker hay Mitigation Block.**
+> - Hành vi khi retest: một thân nến đóng **ngoài cạnh trên vùng Unicorn** (1.20680) rồi được lấy lại ngay. Lưu ý: cạnh trên Unicorn **không phải** mép xa của Breaker (1.20750) — đỉnh quét nằm dưới SL 1.20764, nên rất có thể giá chưa đóng qua mép xa Breaker. Nếu coi “vùng” là Unicorn: **SUSPENDED → reclaim** (chưa đủ k = 2); nếu coi “vùng” là Breaker: **chưa chạm điều kiện invalidation**. Cả hai đều khớp quy tắc acceptance bạn đã ghi (“nến sau tăng tiếp và giữ bên ngoài thì invalidate”). Bài học log: **ghi rõ vùng nào là vùng được theo dõi** (`bb_zone` vs `unicorn_zone`).
+> - Displacement + FVG + Unicorn là **một** nhóm bằng chứng (cùng nhịp 30/04). Bằng chứng độc lập khác: bias D1 giảm, vị trí premium, killzone NY AM (ghi “suy luận”).
+> **Giá trị:** một mẫu thắng, quy trình chặt (`chained_fully: Yes`). **Không** phải bằng chứng về Unicorn hay Breaker nói chung (n = 1).
+
+> [!failure] Case 2 — [[01 - Loss - XAUUSD - 2014-05-19 - Short|XAUUSD 19/05/2014 Short]] · **−1R**
+> **Dữ liệu gốc:** “Bearish Breaker” H1 1300.545–1301.645 (quanh Fib 0.618) được chọn thay cho OB sâu hơn ở 0.786; giá quét qua cạnh trên breaker bằng displacement tăng → SL; sau đó giá lên OB 0.786 rồi giảm đúng hướng tới TP.
+> **Đọc lại theo v0.1:** [[CS-03 - Nghich ly POI rank]] đã chỉ ra vùng được gán bằng **vị trí Fib** mà **không nêu tên OB gốc** → thiếu mắt xích ① → theo v0.1 **không phải mẫu Breaker** mà là lỗi gán nhãn. Bài học thứ hai: khi hai POI cùng phía chồng nhau, POI nông hơn có thể chỉ là **thanh khoản** mà giá cần lấy để tới POI sâu hơn ([[15-Inducement]]).
+> **Giá trị:** bằng chứng về **quy trình gán nhãn**, không phải về khái niệm Breaker.
+
+**Đã gỡ khỏi phần chính (v1 §16.2–16.4):** ES 10/09 (FOMC), NQ 06/12/2023, BTCUSD 19/03/2024. Không tìm thấy bản ghi backtest/journal tương ứng trong `04 - Backtesting/` hay `05 - Live Trading Journal/`; các con số đi kèm (spread giãn, volume % trung bình, OI, funding) không có nguồn. Nếu đó là các quan sát thật của bạn, hãy tạo bản ghi backtest theo template rồi đưa lại vào note dưới dạng case.
+
+---
+
+## 69. Toàn bộ quy trình trên một trang
+
+```text
+┌─────────────────────────────── BREAKER BLOCK — MỘT TRANG (v0.1) ───────────────────────────────┐
+│ ĐỊNH NGHĨA (khách quan)                                                                        │
+│   ① OB gốc tại swing (bull: nến TĂNG cuối tại H1)  ② cực trị cũ bị vi phạm (L2 < L1)             │
+│   ③ THÂN nến đóng qua swing (close > H1) trong ≤ W nến  → CONFIRMED tại t_avail, khóa vùng      │
+│   Thiếu ② → Mitigation · Thiếu ③ → CANDIDATE/EXPIRED · Thiếu ① → không phải Breaker           │
+│ GHI (biến, không cộng): cấp H1 · pool L1 · disp_score · FVG · P/D (range nào) · HTF · giờ · tin │
+│ ĐA KHUNG                                                                                       │
+│   D1: vùng nào đáng chờ, trạng thái gì, DOL, kịch bản A/B/C   → G1                               │
+│   H1: Breaker H1 BÊN TRONG vùng D1? đánh dấu TRƯỚC mức M5    → NOT READY / MONITORING / EVENT  │
+│   M5: trong killzone, sweep + MSS trên mức đã đánh dấu = BẰNG CHỨNG (không phải định nghĩa)    │
+│ RETEST: D0 chạm · D1 MT · D2 mép xa · D3 râu qua (còn sống) · D4 thân qua → SUSPENDED          │
+│ SAI: vùng (k=2 thân qua mép xa) · luận điểm (đóng qua L2) · setup (stop/giờ/gate) · HTF (D1)   │
+│ HẾT HẠN: DOL bị lấy trước retest · TTL · HTF đổi                                                │
+│ KẾT CỤC: A giữ · B xuyên · C không retest — ghi CẢ BA                                          │
+│ NULL: trên dữ liệu ngẫu nhiên, breaker vẫn có mỗi ngày, hay được retest, giữ ~ một nửa         │
+│ CÂU HỎI THẬT: giữ NHIỀU HƠN đối chứng cùng hình học, có lãi SAU CHI PHÍ, NGOÀI MẪU?            │
+└────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 70. Checklist thực hành
+
+### A. Nhận diện (trước khi có bất kỳ ý định giao dịch nào)
+- [ ] Cặp swing đã xác nhận, ghi `known_at`.
+- [ ] OB gốc được nêu tên, có giờ, đúng VAR đã khai báo.
+- [ ] Cực trị cũ bị vi phạm (ghi biên so với spread).
+- [ ] Thân nến đóng qua swing; ghi t_avail.
+- [ ] Khóa zone_full/zone_body/MT/CE.
+- [ ] Ghi cấp H1, pool L1, disp_score, quan hệ FVG, range P/D, DOL, điều kiện hết hạn.
+
+### B. Theo dõi
+- [ ] Trạng thái vòng đời cập nhật sau mỗi nến khung nguồn đóng.
+- [ ] DOL chưa bị lấy; TTL chưa hết; D1 chưa đổi.
+- [ ] Không mở M5 khi H1 = NOT READY.
+
+### C. Giao dịch (chỉ khi A và B đạt)
+- [ ] Gate G1 (D1→H1) + G2 (H1→M5) đạt; killzone; không tin cấp cao.
+- [ ] Mức M5 đánh dấu **trước**; sweep M5 trong vùng; MSS M5 trên mức đã đánh dấu.
+- [ ] Entry / stop / target khai báo trước; R ≥ tối thiểu; risk ≤ 0,5%.
+
+### D. Không có lệnh nếu
+- [ ] Thiếu một trong ba mắt xích → không phải Breaker.
+- [ ] Vùng EXPIRED/INVALIDATED.
+- [ ] Breaker ngược D1 mà chưa ghi trước là countertrend.
+- [ ] Mức M5 được “tìm ra” sau sự kiện.
+- [ ] Hai lệnh thua trong cùng vùng hôm nay.
+
+### E. Sau phiên
+- [ ] Ghi kết cục A/B/C cho **mọi** vùng đang theo dõi.
+- [ ] `first_error_step` nếu có; không sửa log cũ.
+
+---
+
+## 71. Danh sách định nghĩa đã chọn & giả thuyết chưa kiểm chứng
+
+- **Định nghĩa:** DEF-BB-01 … DEF-BB-18 (mục 51); BB-DEF v0.1 (mục 25); RT-DEF, RX-DEF (mục 27); BB-INVAL v0.1 (mục 28).
+- **Quy tắc:** RULE-BB-001 … 009 (nhận diện), RULE-BB-101 … 109 (giao dịch) (mục 48).
+- **Giả thuyết:** HYP-BB-001 … 018 (mục 58) — **tất cả UNTESTED hoặc REQUIRES MORE DATA**. Không có thành phần nào trong note là lợi thế đã được kiểm chứng.
+
+---
+
+## Năm câu trả lời cuối cùng
+
+**1. Breaker Block thực sự là gì, và khác gì một OB bị phá thông thường?**
+Là **một phân loại** cho vùng OB gốc tại một swing, sau khi (a) cực trị cũ bị vi phạm và (b) một thân nến đóng qua chính swing đó. Một OB bị phá thông thường chỉ là **quan sát** “vùng đã bị xuyên”; Breaker thêm **trình tự swing** và **thời điểm ra đời** (t_avail). Khác Mitigation Block ở việc cực trị cũ có bị vi phạm hay không.
+
+**2. Cần nhìn thấy gì trên D1, H1, M5, theo thứ tự?**
+D1: cấu trúc lớn, range, vùng D1 và **trạng thái** của chúng, DOL, kịch bản. H1: Breaker (hoặc POI) **bên trong** vùng D1, ba mắt xích, trạng thái theo dõi, mức M5 **đánh dấu trước**. M5: trong killzone, sweep + MSS trên mức đã đánh dấu — **bằng chứng phản ứng**, không phải định nghĩa.
+
+**3. Khi nào chờ, khi nào xuống khung thấp, khi nào loại bỏ?**
+**Chờ** khi giá xa vùng hoặc Breaker mới là CANDIDATE. **Xuống khung thấp** khi giá ở/sát vùng đã CONFIRMED, đang trong killzone, mức tham chiếu đã đánh dấu trước. **Loại bỏ** khi vùng INVALIDATED (k thân nến đóng qua mép xa), luận điểm sai (đóng qua L2), vùng EXPIRED (DOL bị lấy trước retest / TTL / HTF đổi), hoặc giữ UNCLEAR khi dữ liệu mơ hồ.
+
+**4. Làm sao biến Breaker thành quy tắc khách quan có thể backtest?**
+Khóa BB-DEF v0.1 (swing detector, OB gốc, W, close qua swing, t_avail), RT-DEF/RX-DEF, BB-INVAL; ghi biến chất lượng thay vì nhét vào định nghĩa; quét **mọi** mẫu; dùng **vùng đối chứng cùng hình học**; trừ chi phí; test ngoài mẫu; so các biến thể khai báo trước.
+
+**5. Điều gì thực sự biết, điều gì là diễn giải ICT, điều gì cần dữ liệu?**
+- **Biết [OBSERVABLE / SIMULATION]:** trình tự swing và t_avail có thể xác định khách quan; trên dữ liệu ngẫu nhiên mẫu hình này vẫn xuất hiện thường xuyên, hay được retest, và giữ khoảng một nửa số lần — như vùng ngẫu nhiên.
+- **Diễn giải ICT [ICT FRAMEWORK / INTERPRETATION]:** vùng “đổi vai” vì phe cũ bị kẹt / smart money bảo vệ; sweep là “săn stop”; Breaker mạnh hơn Mitigation; Unicorn mạnh hơn Breaker trần.
+- **Cần dữ liệu [BACKTEST REQUIRED]:** mọi khẳng định về tỷ lệ, lợi thế, R — HYP-BB-001 … 018.
+
+---
+
+## Kiểm tra chất lượng (Phần 17 của protocol)
+
+| Nhóm | Tiêu chí | Đạt? | Ở đâu |
+|---|---|---|---|
+| A · Người mới | Giải thích từ đầu; vì sao OB thất bại; OB thất bại ≠ Breaker; thuật ngữ trước khi dùng sâu; ví dụ theo thời gian; hạn chế công thức | ✓ | §1–4, §60–67 |
+| B · ICT | Bull/Bear; OB gốc; điều kiện cấu trúc; vs Mitigation; MSS/BOS/Displacement/FVG tách bạch; sweep không mặc định bắt buộc theo nghĩa “thanh khoản lớn”; vùng ≠ setup; invalidation | ✓ | §7–12, §16–19, §28, §31 |
+| C · Đa khung | D1 cho bối cảnh; H1 quyết định khi xuống M5; M5 tập trung vùng đã có; khi không cần xuống; mâu thuẫn | ✓ | §32–41 |
+| D · Khách quan | OB gốc, điều kiện phá, BB-DEF, ranh giới khóa trước retest, t_avail, wick vs close, cho phép UNCLEAR | ✓ | §23–28, §49 |
+| E · Backtest | Câu hỏi cụ thể; ghi vùng không retest; ghi thất bại; không chọn ví dụ đẹp; tách nhận diện/dự báo/lợi nhuận; chi phí + ngoài mẫu | ✓ | §52–58 |
+| F · Phản biện | Quan sát vs diễn giải; không suy ý định tổ chức; phản ví dụ; đếm trùng; nêu điều chưa chứng minh | ✓ | §3, §6, §11, §22, §55.4, §59 |
+
+**Điểm còn yếu (ghi thật):** chưa đối chiếu video gốc ICT; vault chưa có dữ liệu breaker đủ mẫu; mô phỏng null chưa có phiên/đuôi dày; mâu thuẫn quy ước nến với [[22-Mitigation-Block]] và [[07 - Unicorn Model]] chưa được xử lý.
+
+---
+
+## Flashcards
+
+**Q1.** Ba mắt xích của Breaker theo v0.1? — **A.** OB gốc tại swing được nêu tên → cực trị cũ bị vi phạm → thân nến đóng qua swing chứa OB gốc.
+**Q2.** Bullish Breaker: nến nào là vùng (VAR-A)? — **A.** Nến **tăng** cuối tại đỉnh H1 (bearish OB đã thất bại). Nến giảm tại L2 là OB của cú tăng, không phải Breaker.
+**Q3.** Breaker khác Mitigation Block ở đâu? — **A.** Cực trị cũ bị vi phạm (Breaker) hay giữ (Mitigation).
+**Q4.** t_avail là gì? — **A.** Close của nến đầu tiên đóng qua swing; trước đó Breaker chưa tồn tại.
+**Q5.** Sau khi thành Bullish Breaker, mép gần/mép xa là gì? — **A.** Mép gần = đỉnh vùng; mép xa = đáy vùng.
+**Q6.** Râu xuyên mép xa rồi thân đóng lại trong vùng? — **A.** D3, `distal_swept`, vùng còn sống.
+**Q7.** Bốn loại invalidation? — **A.** Vùng · luận điểm (L2) · setup · HTF. Cộng thêm EXPIRED.
+**Q8.** Vì sao “breaker bật đẹp” không phải bằng chứng? — **A.** Trên dữ liệu ngẫu nhiên, breaker cũng hay được retest và giữ khoảng một nửa — như vùng đối chứng. Cần so với đối chứng trên dữ liệu thật.
+**Q9.** MSS + displacement + FVG cùng nhịp là mấy bằng chứng? — **A.** Một nhóm (`disp_score`).
+**Q10.** Breaker không retest có tính là thua? — **A.** Không. Kết cục C (EXPIRED khi DOL bị lấy) — ghi riêng.
+
+---
+
+## Mức độ thành thạo
+
+| Tiêu chí | Điểm 1-5 | Ghi chú |
+|---|---:|---|
+| Hiểu định nghĩa (ba mắt xích, VAR-A/B, vs Mitigation) |  | |
+| Nhận diện trên chart trước khi biết kết quả (có timestamp) |  | |
+| Biết khi nào bỏ qua / ghi UNCLEAR |  | |
+| Đặt Breaker trong bối cảnh D1 → H1 → M5 |  | |
+| Tách vùng / bằng chứng / setup / kết quả |  | |
+| Review bằng dữ liệu có đối chứng |  | |
+
+**Kế hoạch review tiếp theo:**
+- [ ] Mở lại chart H1 EURUSD 24/04–03/05/2021: xác định mắt xích ② (strict Breaker hay Mitigation).
+- [ ] Quét tuần tự 3 tháng EURUSD H1 theo BB-DEF v0.1 (replay), ghi **mọi** Breaker + vùng đối chứng.
+- [ ] Gán nhãn lại 30 chart sau 1 tuần để đo độ ổn định của chính mình.
+- [ ] Thống nhất quy ước nến giữa [[04-Breaker-Block]], [[22-Mitigation-Block]], [[07 - Unicorn Model]].
+
+---
+
+## Note liên quan
+
+- Họ block & OB: [[25-OB-Order-Block]] · [[55-Order-Block-OB-Nghien-cuu-chuyen-sau-Selection-Hierarchy-Backtest]] · [[51-OB-Mitigation-Depth-Vi-sao-Shallow-CE-hay-Full-khac-nhau]] · [[22-Mitigation-Block]] · [[28-Rejection-Block]] · [[17-Inverse-Fair-Value-Gap-iFVG]] · [[44-Hidden-Order-Block]]
+- Cấu trúc: [[21-Market-Structure-Shift]] · [[05-BOS-Break-of-Structure]] · [[09-Change-of-Character]] · [[01-Advance-Market-Structure-Short-Term-Low-Intermediate-Term-Low-Long-Term-Low]] · [[54-Thuat-toan-phat-hien-swing-turning-point-Directional-Change-va-Nen-tang-dinh-luong]] · [[50-Displacement-In-Depth]]
+- Thanh khoản & vị trí: [[19-Liquidity]] · [[20-Liquidity-Sweep]] · [[15-Inducement]] · [[16-Internal-External-Range-Liquidity-IRL-ERL]] · [[12-Dealing-Range]] · [[37-Re-mapping-Dealing-Range-sau-Displacement]] · [[27-Premium-Discount]] · [[52-Draw-on-Liquidity-DOL-Nghien-cuu-chuyen-sau-SOP-dau-ngay-Confluence]]
+- FVG & thực thi: [[13-FVG-Fair-Value-Gap]] · [[10-Consequent-Encroachment-Mean-Threshold]] · [[26-OTE-Optimal-Trade-Entry]] · [[18-Kill-Zones]] · [[49-Confirmation-Timeframe-Timeframe-Layering-Khu-nhieu-MSS-trong-2022-Model]]
+- Mô hình & bias: [[01 - ICT 2022 Model]] · [[01c - ICT 2022 Model - He thong quyet dinh da khung (State Machine D1-H1-M5)]] · [[07 - Unicorn Model]] · [[59-Daily-Bias]] · [[32-Top-down-Analysis-Multiple-Timeframes]]
+
+---
+
+## Tài liệu tham khảo
+
+**ICT / cộng đồng (Tier 3–4 — dùng cho định nghĩa, không cho hiệu quả)**
+[^S1]: WritoFinance — “Breaker Block (SMC and ICT in Forex)”: Bullish Breaker là “a bullish range or up-close candle in the most recent swing high prior to an old low being violated”. https://www.writofinance.com/breaker-block-smc-and-ict-in-forex/
+[^S2]: OpoFinance — “ICT Trading: Breaker Block vs Order Block”: chuỗi “Low – High – Lower Low – Higher High”; breaker hợp lệ khi stop dưới đáy cũ bị lấy và giá phá lên swing high chứa nến breaker. https://blog.opofinance.com/en/ict-trading-breaker-block-vs-order-block/
+[^S3]: El Trader Financiado — “Breaker block”: nến tăng tại swing high nơi cú giảm quét đáy bắt đầu; phân biệt với Mitigation Block bằng có/không sweep. https://www.eltraderfinanciado.com/en/blog/breaker-block
+[^S4]: LuxAlgo Library — “Mitigation Block”: “Sweep means breaker, failure means mitigation block.” https://www.luxalgo.com/library/concept/mitigation-block/
+[^S9]: TTrades (qua bản tóm tắt tự động, có thể sai sót) — “Breaker Blocks Simplified”: breaker gồm chuỗi nến up-close; Unicorn = breaker + FVG. https://videohighlight.com/v/75S4vwD4P1U
+[^S10]: MQL5 blog — “Breaker Blocks: Why Most ICT Traders Draw Them Wrong”: dùng nến giảm tạo swing high bị phá (quy ước VAR-B); không có số liệu hiệu quả; tác giả bán công cụ. https://www.mql5.com/en/blogs/post/773691
+[^S11]: LuxAlgo Library — “Breaker Block”: vùng = nến giảm trong nhịp thất bại (VAR-B); “marking conventions vary”. https://www.luxalgo.com/library/concept/breaker-block/
+[^S12]: LuxAlgo Library — “Unicorn”: breaker chồng FVG; “if they do not overlap, you have two separate ideas”; không có tỷ lệ thất bại đáng tin. https://www.luxalgo.com/library/concept/unicorn/
+
+**Nghiên cứu ngoài ICT (Tier 2)**
+[^S5]: Osler, C. L. (2001). *Currency Orders and Exchange-Rate Dynamics: Explaining the Success of Technical Analysis*. Federal Reserve Bank of New York Staff Report No. 125 (bản tạp chí: *Journal of Finance*, 2003). https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr125.pdf
+[^S6]: Chung, K., & Bellotti, A. (2021). *Evidence and Behaviour of Support and Resistance Levels in Financial Time Series*. arXiv:2101.07410. https://ideas.repec.org/p/arx/papers/2101.07410.html
+[^S7]: Kavajecz, K. A., & Odders-White, E. R. (2004). Technical Analysis and Liquidity Provision. *Review of Financial Studies*, 17(4).
+[^S8]: Shefrin, H., & Statman, M. (1985). The Disposition to Sell Winners Too Early and Ride Losers Too Long. *Journal of Finance*, 40(3).
+[^S13]: Sullivan, R., Timmermann, A., & White, H. (1999). Data-Snooping, Technical Trading Rule Performance, and the Bootstrap. *Journal of Finance*, 54(5).
+[^S14]: White, H. (2000). A Reality Check for Data Snooping. *Econometrica*, 68(5).
+
+---
+
+## Changelog
+
+### v2 — 2026-10-17
+**Cấu trúc:** viết lại theo protocol 18 phần / 71 mục đầu ra (PART I–VIII), thêm hệ thống nhãn, năm tầng giải thích, BB-DEF v0.1 ba tầng, vòng đời 10 trạng thái, bốn loại invalidation + EXPIRED, SOP, decision tree (SVG + Mermaid), 24 lỗi, registers DEF-BB-01…18, RULE-BB-001…009/101…109, HYP-BB-001…018, journal extension, thiết kế backtest 17 yếu tố, mô phỏng null.
+**Sửa nội dung:**
+- Quy ước nến Bullish Breaker: “cụm nến giảm gần High1” (v1) → **nến tăng cuối tại H1** (VAR-A); v1 giữ làm VAR-B.
+- “Bắt buộc sweep + MSS” (v1) → tách: **vi phạm cực trị** là điều kiện định nghĩa; **chất lượng pool** là biến; displacement/FVG là biến.
+- “Cơ chế thật: hàng kẹt bị lật” (v1 §17) → giữ như giả thuyết cơ chế M1, cạnh M2–M5.
+- Các con số không có nguồn của v1 (spread “giãn 3–10 lần”, thanh khoản ngày lễ “mỏng hơn 40–60%”, “touch 2 giảm size 30–50%”, Tier A–D như kết luận) → bỏ, hoặc chuyển thành giả thuyết HYP-BB-007/010/011/012/017.
+- Gỡ case ES 10/09, NQ 06/12/2023, BTCUSD 19/03/2024 (không có bản ghi trong vault). Giữ và đọc lại case EURUSD 03/05/2021; thêm case XAUUSD 19/05/2014.
+- Sửa link hỏng: `[[Fair Value Gap]]` → [[13-FVG-Fair-Value-Gap]]; `[[Mistake - Confuse OB with Breaker Block]]`, `[[Mistake - Breaker Without Sweep]]`, `[[Mistake - Breaker Without MSS]]` → mistakes hiện có trong `06 - Mistake Database`.
+**Hình:** 30 sơ đồ mới `BB-Deep-01…30` + 2 hình mô phỏng `BB-Sim-01…02`. Hình v1 vẫn còn trong `attachments/` (không xóa): `Breaker-Advanced-*`, `Breaker-Block-Example-*.png`, `Breaker-Case-Study-*`, `Breaker-CaseStudy-B2-*`, `Breaker-Deep-Mechanism`, `Breaker-Edge-Cases`, `Breaker-EdgeB-*` — **không nhúng nữa** vì dùng quy ước nến v1 hoặc minh họa case không có nguồn (`Breaker-Case-Study-2.svg` = ES/FOMC). `Breaker-Case-Study-EURUSD-20210503.svg` có thể nhúng lại sau khi xác minh mắt xích ②.
+**Mô phỏng:** mã `bb_null_sim.py` + kết quả JSON lưu ở `Claude outputs/BB-Sim/`.
+**Backup v1:** `Claude outputs/backups/04-Breaker-Block.2026-10-17.md.bak`.
+
+### v1 — 2026-06-22 → 2026-07-28
+Bản gốc: định nghĩa, bối cảnh, nhận diện, MTF, xác nhận/vô hiệu, nâng cao (Breaker + FVG, phân tầng pool, failed breaker), ví dụ chart, checklist, lỗi, câu hỏi, flashcards, lesson learned, best practices, edge cases 15.1–15.7, case studies 16.1–16.4, cơ chế & phản biện 17–18, war stories 19.1–19.3.

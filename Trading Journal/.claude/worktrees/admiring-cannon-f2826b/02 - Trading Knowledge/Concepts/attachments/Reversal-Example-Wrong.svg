@@ -1,0 +1,61 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Ví dụ SAI — hai lỗi kinh điển khi trade đảo chiều</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">(A) Trade IFVG đơn lẻ giữa range, không HTF PD array. (B) Vào ngay cây MSS, không chờ retest.</text>
+
+  <!-- Panel A -->
+  <rect x="24" y="72" width="352" height="308" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="94" font-size="12.5" font-weight="700" fill="#B91C1C">(A) IFVG đơn lẻ giữa range</text>
+  <!-- range box -->
+  <line x1="40" y1="130" x2="360" y2="130" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="40" y1="300" x2="360" y2="300" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="300" y="125" font-size="9" fill="#6B7280">range high</text>
+  <text x="300" y="315" font-size="9" fill="#6B7280">range low</text>
+  <text x="150" y="125" font-size="9.5" font-weight="700" fill="#B91C1C">KHÔNG có HTF PD array ở đây</text>
+  <!-- choppy candles mid-range -->
+  <line x1="70" y1="175" x2="70" y2="225" stroke="#DC2626" stroke-width="1.4"/><rect x="64.5" y="185" width="11" height="30" fill="#DC2626"/>
+  <line x1="92" y1="190" x2="92" y2="240" stroke="#DC2626" stroke-width="1.4"/><rect x="86.5" y="200" width="11" height="30" fill="#DC2626"/>
+  <rect x="80" y="230" width="120" height="22" fill="#FEF3C7"/>
+  <text x="104" y="246" font-size="8.5" fill="#B45309">FVG bị phá → "IFVG"</text>
+  <line x1="114" y1="200" x2="114" y2="250" stroke="#16A34A" stroke-width="1.4"/><rect x="108.5" y="210" width="11" height="30" fill="#16A34A"/>
+  <circle cx="120" cy="205" r="9" fill="none" stroke="#B91C1C" stroke-width="2.5"/>
+  <text x="132" y="200" font-size="9.5" font-weight="700" fill="#B91C1C">vào long chỉ vì IFVG</text>
+  <!-- price chops, stops out -->
+  <line x1="136" y1="200" x2="136" y2="250" stroke="#DC2626" stroke-width="1.4"/><rect x="130.5" y="208" width="11" height="35" fill="#DC2626"/>
+  <line x1="158" y1="220" x2="158" y2="280" stroke="#DC2626" stroke-width="1.4"/><rect x="152.5" y="230" width="11" height="42" fill="#DC2626"/>
+  <line x1="180" y1="245" x2="180" y2="300" stroke="#DC2626" stroke-width="1.4"/><rect x="174.5" y="255" width="11" height="40" fill="#DC2626"/>
+  <text x="150" y="330" font-size="10" font-weight="700" fill="#B91C1C">→ chop, dính stop</text>
+  <rect x="40" y="342" width="320" height="30" rx="5" fill="#FEE2E2"/>
+  <text x="50" y="361" font-size="9.5" fill="#991B1B">1 tín hiệu yếu, không context, không CISD/MSS = nhiễu.</text>
+
+  <!-- Panel B -->
+  <rect x="392" y="72" width="344" height="308" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="94" font-size="12.5" font-weight="700" fill="#B91C1C">(B) Vào cây MSS, không chờ retest</text>
+  <!-- swing high level -->
+  <line x1="408" y1="160" x2="720" y2="160" stroke="#166534" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="600" y="155" font-size="8.5" fill="#166534">swing high gần nhất</text>
+  <!-- down then MSS break candle -->
+  <line x1="440" y1="180" x2="440" y2="230" stroke="#DC2626" stroke-width="1.4"/><rect x="434.5" y="188" width="11" height="35" fill="#DC2626"/>
+  <line x1="462" y1="210" x2="462" y2="275" stroke="#DC2626" stroke-width="1.4"/><rect x="456.5" y="220" width="11" height="45" fill="#DC2626"/>
+  <line x1="484" y1="200" x2="484" y2="270" stroke="#16A34A" stroke-width="1.4"/><rect x="478.5" y="210" width="11" height="45" fill="#16A34A"/>
+  <!-- MSS break candle (big bull) -->
+  <line x1="506" y1="120" x2="506" y2="205" stroke="#16A34A" stroke-width="1.4"/><rect x="500.5" y="130" width="11" height="60" fill="#16A34A"/>
+  <circle cx="506" cy="150" r="9" fill="none" stroke="#B91C1C" stroke-width="2.5"/>
+  <text x="518" y="132" font-size="9.5" font-weight="700" fill="#B91C1C">vào NGAY cây MSS (đuổi)</text>
+  <!-- price retraces deep, sweeps entry, stops out then goes -->
+  <line x1="528" y1="130" x2="528" y2="190" stroke="#DC2626" stroke-width="1.4"/><rect x="522.5" y="140" width="11" height="40" fill="#DC2626"/>
+  <line x1="550" y1="160" x2="550" y2="245" stroke="#DC2626" stroke-width="1.4"/><rect x="544.5" y="170" width="11" height="60" fill="#DC2626"/>
+  <line x1="572" y1="215" x2="572" y2="285" stroke="#DC2626" stroke-width="1.4"/><rect x="566.5" y="225" width="11" height="45" fill="#DC2626"/>
+  <circle cx="572" cy="285" r="8" fill="none" stroke="#B91C1C" stroke-width="2.5"/>
+  <text x="560" y="305" font-size="9.5" font-weight="700" fill="#B91C1C">quét stop entry</text>
+  <!-- then reverses up (missed) -->
+  <line x1="594" y1="200" x2="594" y2="280" stroke="#16A34A" stroke-width="1.4"/><rect x="588.5" y="210" width="11" height="55" fill="#16A34A"/>
+  <line x1="616" y1="150" x2="616" y2="215" stroke="#16A34A" stroke-width="1.4"/><rect x="610.5" y="160" width="11" height="45" fill="#16A34A"/>
+  <line x1="638" y1="115" x2="638" y2="170" stroke="#16A34A" stroke-width="1.4"/><rect x="632.5" y="123" width="11" height="40" fill="#16A34A"/>
+  <path d="M580 290 Q610 250 640 120" fill="none" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="600" y="120" font-size="9" fill="#6B7280">giá đi thật SAU khi mình bị stop</text>
+  <rect x="408" y="342" width="320" height="30" rx="5" fill="#FEE2E2"/>
+  <text x="418" y="361" font-size="9.5" fill="#991B1B">Cây MSS thường retrace về POI trước — phải CHỜ retest.</text>
+
+  <text x="24" y="404" font-size="11.5" font-weight="700" fill="#B91C1C">Bài học: (1) đảo chiều cần HTF PD array + chuỗi xác nhận; (2) luôn chờ retest post-MSS, đừng đuổi cây phá.</text>
+</svg>

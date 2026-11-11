@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" font-family="'Segoe UI', Arial, sans-serif" font-size="14">
+  <text x="24" y="30" font-size="18" font-weight="700" fill="currentColor">Bearish PO3 — quét BSL rồi phân phối xuống SSL</text>
+  <text x="24" y="50" font-size="12.5" fill="var(--muted)">Đối xứng cơ chế với bullish: range tạo pool → Judas lấy pool trên → reclaim + displacement → expansion về pool dưới.</text>
+  <line x1="30" y1="200" x2="870" y2="200" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="2 3"/>
+  <text x="786" y="194" font-size="11" fill="var(--muted)">Daily Open</text>
+  <rect x="40" y="168" width="260" height="62" fill="none" stroke="var(--accent)" stroke-width="1.3" stroke-dasharray="6 4"/>
+  <line x1="40" y1="165" x2="400" y2="165" stroke="var(--error)" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <text x="44" y="157" font-size="11" fill="var(--error)">BSL (stop phe Short + buy-stop breakout)</text>
+  <path d="M40,200 L85,210 L130,192 L175,212 L220,195 L265,208 L300,200 L350,152 L385,185 L415,202 L450,220 L500,250 L540,240 L600,275 L650,268 L710,300 L770,292 L830,320 L865,316" fill="none" stroke="currentColor" stroke-width="2.4"/>
+  <circle cx="120" cy="250" r="9" fill="var(--accent)"/>
+  <text x="116" y="254" font-size="11" font-weight="700" fill="var(--surface)">1</text>
+  <text x="136" y="262" font-size="11.5" fill="var(--accent)">Accumulation: đi ngang quanh open</text>
+  <circle cx="350" cy="152" r="9" fill="var(--warning)"/>
+  <text x="346" y="156" font-size="11" font-weight="700" fill="var(--surface)">2</text>
+  <text x="300" y="130" font-size="11.5" font-weight="700" fill="var(--warning)">Judas LÊN quét BSL</text>
+  <circle cx="415" cy="202" r="9" fill="var(--success)"/>
+  <text x="411" y="206" font-size="11" font-weight="700" fill="var(--surface)">3</text>
+  <text x="430" y="184" font-size="11.5" fill="var(--success)">Reclaim dưới đỉnh range</text>
+  <circle cx="500" cy="250" r="9" fill="var(--success)"/>
+  <text x="496" y="254" font-size="11" font-weight="700" fill="var(--surface)">4</text>
+  <text x="516" y="262" font-size="11.5" fill="var(--success)">MSS + displacement XUỐNG</text>
+  <line x1="640" y1="316" x2="870" y2="316" stroke="var(--success)" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <circle cx="770" cy="292" r="9" fill="var(--success)"/>
+  <text x="766" y="296" font-size="11" font-weight="700" fill="var(--surface)">5</text>
+  <text x="700" y="330" font-size="11" fill="var(--success)">Target: SSL / PDL</text>
+  <text x="40" y="356" font-size="12" fill="var(--fg)">Entry: FVG/OB nhịp phân phối · Stop: trên đỉnh Judas · Target: SSL phía dưới.</text>
+  <text x="40" y="378" font-size="12" fill="var(--muted)">Không chỉ đảo ngược hình bullish — kiểm tra lại pool bị quét có ngược hướng bias không (§15).</text>
+</svg>

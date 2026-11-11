@@ -1,0 +1,44 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Wrong Daily Bias — chọn sai hướng HTF cho cả ngày</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Bias không phải màu nến D1 hay trendline — mà là điểm đến (destination array) mà giá đang được deliver tới.</text>
+
+  <!-- LEFT: correct definition -->
+  <rect x="24" y="70" width="340" height="360" rx="8" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="38" y="94" font-size="13" font-weight="700" fill="#15803D">ĐÚNG — Bias = Array-to-Array Delivery</text>
+  <rect x="42" y="108" width="304" height="230" rx="4" fill="none" stroke="#9CA3AF" stroke-width="1.2"/>
+  <rect x="42" y="108" width="304" height="115" fill="#DC2626" opacity="0.06"/>
+  <rect x="42" y="223" width="304" height="115" fill="#16A34A" opacity="0.06"/>
+  <line x1="42" y1="223" x2="346" y2="223" stroke="#6B7280" stroke-width="1.3" stroke-dasharray="6 4"/>
+  <text x="350" y="227" font-size="9.5" fill="#6B7280">EQ 50%</text>
+  <text x="48" y="120" font-size="10" fill="#B91C1C">Premium</text>
+  <text x="48" y="332" font-size="10" fill="#15803D">Discount</text>
+  <rect x="70" y="290" width="90" height="24" rx="3" fill="#3B82F6" opacity="0.18" stroke="#1D4ED8"/>
+  <text x="76" y="306" font-size="10" fill="#1D4ED8">Origin: Bullish OB (H4)</text>
+  <rect x="230" y="118" width="96" height="20" rx="3" fill="#D97706" opacity="0.18" stroke="#D97706"/>
+  <text x="236" y="132" font-size="10" fill="#B45309">Đích: BSL / PDH</text>
+  <path d="M115 288 C 150 240, 200 190, 270 140" fill="none" stroke="#16A34A" stroke-width="2"/>
+  <polygon points="270,140 260,146 264,132" fill="#16A34A"/>
+  <text x="60" y="358" font-size="11" font-weight="700" fill="#15803D">Bias chỉ đổi khi giá ĐẾN đích, hoặc bị accept ngược qua ORIGIN.</text>
+  <text x="60" y="376" font-size="10.5" fill="#4B5563">Câu hỏi mỗi sáng: "Giá đang được deliver từ array nào TỚI array nào?"</text>
+  <text x="60" y="394" font-size="10.5" fill="#4B5563">Dealing range + draw on liquidity quyết định — không phải cảm giác.</text>
+
+  <!-- RIGHT: wrong definition -->
+  <rect x="396" y="70" width="340" height="360" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="410" y="94" font-size="13" font-weight="700" fill="#B91C1C">SAI — Bias = màu nến / trendline</text>
+  <rect x="414" y="108" width="304" height="230" rx="4" fill="none" stroke="#9CA3AF" stroke-width="1.2"/>
+  <rect x="414" y="108" width="304" height="115" fill="#DC2626" opacity="0.10"/>
+  <rect x="414" y="223" width="304" height="115" fill="#16A34A" opacity="0.06"/>
+  <line x1="414" y1="223" x2="718" y2="223" stroke="#6B7280" stroke-width="1.3" stroke-dasharray="6 4"/>
+  <text x="428" y="150" font-size="10" fill="#B91C1C">Giá đã NẰM SẴN trong Premium</text>
+  <rect x="440" y="270" width="16" height="55" fill="#16A34A" rx="1"/>
+  <text x="432" y="342" font-size="9.5" fill="#4B5563">"D1 hôm qua xanh → tưởng long"</text>
+  <rect x="600" y="130" width="90" height="20" rx="3" fill="#D97706" opacity="0.18" stroke="#D97706"/>
+  <text x="606" y="144" font-size="9.5" fill="#B45309">BSL đã bị lấy hôm qua</text>
+  <path d="M448 268 C 520 210, 570 160, 640 140" fill="none" stroke="#4B5563" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <path d="M640 140 C 660 190, 630 260, 560 305" fill="none" stroke="#DC2626" stroke-width="2"/>
+  <polygon points="560,305 570,297 570,311" fill="#DC2626"/>
+  <text x="410" y="358" font-size="11" font-weight="700" fill="#B91C1C">Đích đã được deliver từ hôm trước → hết "room" để đi tiếp.</text>
+  <text x="410" y="376" font-size="10.5" fill="#4B5563">Trader vẫn long "theo quán tính" vì nến hôm qua xanh — bỏ qua vị trí</text>
+  <text x="410" y="392" font-size="10.5" fill="#4B5563">hiện tại trong dealing range và trạng thái của liquidity pool.</text>
+</svg>

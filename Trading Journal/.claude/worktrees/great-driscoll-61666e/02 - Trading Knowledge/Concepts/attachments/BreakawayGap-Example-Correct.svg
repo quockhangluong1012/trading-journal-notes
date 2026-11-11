@@ -1,0 +1,61 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ đúng — Bullish Breakaway Gap: sweep + displacement + retest giữ, Long tiếp diễn</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Range → sweep SSL → displacement bứt biên trên để lại gap/FVG → gap giữ khi retest → LTF MSS → Long.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- discount context -->
+  <rect x="44" y="290" width="672" height="96" fill="#3B82F6" opacity="0.06"/>
+  <text x="52" y="308" font-size="10.5" fill="#1D4ED8">Discount của dealing range — nơi tìm bullish breakaway</text>
+
+  <!-- consolidation range -->
+  <rect x="70" y="300" width="140" height="60" fill="#6B7280" opacity="0.12" stroke="#6B7280" stroke-dasharray="4 3"/>
+  <text x="76" y="294" font-size="10.5" font-weight="700" fill="#374151">① Range / tích lũy</text>
+  <path d="M78,330 L98,320 L118,335 L138,325 L158,332 L178,322 L198,328" fill="none" stroke="#374151" stroke-width="1.8"/>
+
+  <!-- SSL sweep -->
+  <line x1="70" y1="360" x2="210" y2="360" stroke="#6B7280" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="76" y="374" font-size="10" fill="#374151">SSL biên dưới</text>
+  <path d="M198,328 L206,368" fill="none" stroke="#DC2626" stroke-width="2"/>
+  <circle cx="206" cy="366" r="7" fill="none" stroke="#DC2626" stroke-width="2"/>
+  <text x="150" y="392" font-size="10.5" font-weight="700" fill="#B91C1C">② Sweep SSL</text>
+
+  <!-- displacement candle breaking range high -->
+  <rect x="230" y="220" width="18" height="80" fill="#16A34A" opacity="0.9" rx="1"/>
+  <rect x="237" y="210" width="4" height="100" fill="#15803D"/>
+  <line x1="70" y1="300" x2="248" y2="300" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="72" y="296" font-size="9.5" fill="#6B7280">Biên trên range</text>
+  <text x="200" y="204" font-size="10.5" font-weight="700" fill="#15803D">③ Displacement tăng bứt phá</text>
+
+  <!-- gap / FVG -->
+  <rect x="212" y="260" width="40" height="40" fill="#F59E0B" opacity="0.25" stroke="#B45309" stroke-dasharray="4 3"/>
+  <text x="256" y="266" font-size="9.5" font-weight="700" fill="#92400E">Breakaway Gap / FVG</text>
+
+  <!-- continuation up -->
+  <path d="M248,220 L290,190 L340,165 L400,140" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+
+  <!-- retrace to gap edge -->
+  <path d="M400,140 L440,190 L470,250 L490,280" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="490" cy="280" r="7" fill="#16A34A"/>
+  <text x="440" y="308" font-size="10.5" font-weight="700" fill="#15803D">④ Retest cạnh gap — giữ (support)</text>
+  <line x1="252" y1="280" x2="716" y2="280" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="600" y="276" font-size="10" fill="#166534">Entry: mép gap</text>
+
+  <!-- MSS + entry -->
+  <circle cx="490" cy="280" r="14" fill="none" stroke="#3B82F6" stroke-width="1.6"/>
+  <text x="500" y="248" font-size="10" fill="#1D4ED8">M5 MSS tiếp diễn</text>
+  <path d="M490,280 L530,240 L580,190 L630,150" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+
+  <!-- SL below gap -->
+  <line x1="212" y1="300" x2="716" y2="300" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="590" y="316" font-size="10" fill="#B91C1C">SL: dưới far side gap / biên range</text>
+
+  <!-- TP -->
+  <line x1="630" y1="150" x2="716" y2="110" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="590" y="104" font-size="10.5" fill="#166534">⑤ TP: BSL / liquidity trên</text>
+
+  <rect x="24" y="410" width="712" height="56" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="430" font-size="11.5" font-weight="700" fill="#92400E">Chuỗi đủ: range → sweep SSL → displacement bứt phá tạo gap → gap GIỮ khi retest → LTF MSS →</text>
+  <text x="36" y="450" font-size="11.5" font-weight="700" fill="#92400E">Long tại cạnh gap, SL dưới far side gap, TP tại liquidity phía trên. Không fade — vào THEO hướng break.</text>
+</svg>

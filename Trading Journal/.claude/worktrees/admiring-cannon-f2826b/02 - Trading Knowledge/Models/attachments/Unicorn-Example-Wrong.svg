@@ -1,0 +1,6 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="330" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ SAI — Breaker và FVG KHÔNG chồng lấn</text>
+<text x="24" y="54" font-size="13" fill="#6B7280">Hai vùng tách rời → KHÔNG phải Unicorn. Đừng gộp FVG đơn hay Breaker đơn thành 'unicorn'.</text>
+<rect x="24" y="70" width="712" height="250" rx="8" fill="#FFFFFF" stroke="#FCA5A5"/><text x="40" y="94" font-size="11.5" font-weight="700" fill="#B91C1C">✘ Không overlap  ✘ Vào lúc MSS (không chờ hồi)  ✘ Ngược bias</text><rect x="250" y="130" width="240" height="45" fill="#F59E0B" opacity="0.18"/><text x="496" y="150" font-size="10" fill="#B45309">Breaker (ở trên)</text><rect x="250" y="215" width="240" height="45" fill="#3B82F6" opacity="0.16"/><text x="496" y="240" font-size="10" fill="#1D4ED8">FVG (ở dưới, tách rời)</text><text x="250" y="195" font-size="12" font-weight="700" fill="#B91C1C" text-anchor="start">▲ Khoảng trống → không có vùng chồng lấn</text>
+</svg>

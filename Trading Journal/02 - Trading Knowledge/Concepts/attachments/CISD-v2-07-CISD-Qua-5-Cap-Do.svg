@@ -1,0 +1,28 @@
+<svg viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs></defs>
+<rect x="1" y="1" width="998" height="538" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">CISD qua 5 cấp độ hiểu</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Cùng một hiện tượng, đọc ở 5 tầng. Tầng 1–2 là điều ai cũng thấy giống nhau. Tầng 3 là định nghĩa của ICT. Tầng 4–5 là diễn giải và</text>
+<text x="28.0" y="81.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">cách dùng — có thể sai.</text>
+<rect x="894.0" y="22" width="78.0" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="933.0" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">5 CẤP ĐỘ</text>
+<text x="28.0" y="528.0" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start">Sơ đồ minh họa (synthetic) — giá trong hình là ví dụ, không phải dữ liệu thị trường thật.</text>
+<rect x="28.0" y="108.0" width="944.0" height="63.3" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.3"/>
+<text x="40.0" y="132.8" font-size="13.5" font-weight="700" fill="#2563EB" text-anchor="start">1 · Trẻ 5 tuổi</text>
+<text x="40.0" y="155.7" font-size="12.5" font-weight="400" fill="#1F2937" text-anchor="start">Giá vừa đi xuống một đoạn. Rồi giá quay lên và “chốt sổ” ở trên chỗ đoạn đi xuống bắt đầu. Cả đoạn đi xuống đã bị xóa.</text>
+<rect x="50.0" y="181.3" width="922.0" height="63.3" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="62.0" y="206.1" font-size="13.5" font-weight="700" fill="#059669" text-anchor="start">2 · Price action</text>
+<text x="62.0" y="229.0" font-size="12.5" font-weight="400" fill="#1F2937" text-anchor="start">Có một chuỗi nến đóng giảm liên tiếp. Sau đó một cây nến ĐÓNG CỬA cao hơn giá MỞ CỬA của nến đầu tiên trong chuỗi đó.</text>
+<rect x="72.0" y="254.6" width="900.0" height="80.8" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.3"/>
+<text x="84.0" y="279.5" font-size="13.5" font-weight="700" fill="#D97706" text-anchor="start">3 · ICT framework</text>
+<text x="84.0" y="302.3" font-size="12.5" font-weight="400" fill="#1F2937" text-anchor="start">Bullish CISD: giá đóng cửa trên opening price của (chuỗi) nến đóng giảm đã đưa giá vào đáy. Bearish CISD: ngược lại. ICT coi đây là dấu hiệu “trạng</text>
+<text x="84.0" y="319.8" font-size="12.5" font-weight="400" fill="#1F2937" text-anchor="start">thái giao giá” đã đổi.</text>
+<rect x="94.0" y="345.5" width="878.0" height="80.8" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.3"/>
+<text x="106.0" y="370.3" font-size="13.5" font-weight="700" fill="#EA580C" text-anchor="start">4 · Diễn giải thị trường</text>
+<text x="106.0" y="393.2" font-size="12.5" font-weight="400" fill="#1F2937" text-anchor="start">Phía đang vội (người bán) đã không còn kiểm soát ít nhất trong lúc này: phía bên kia đủ mạnh để đưa giá về lại điểm xuất phát của cả chặng.</text>
+<text x="106.0" y="410.7" font-size="12.5" font-weight="400" fill="#1F2937" text-anchor="start">Ai làm và vì sao: chart không cho biết.</text>
+<rect x="116.0" y="436.3" width="856.0" height="80.8" rx="10" fill="#EEF2FF" stroke="#4338CA" stroke-width="1.3"/>
+<text x="128.0" y="461.1" font-size="13.5" font-weight="700" fill="#4338CA" text-anchor="start">5 · Ý nghĩa thực dụng</text>
+<text x="128.0" y="484.0" font-size="12.5" font-weight="400" fill="#1F2937" text-anchor="start">Một bằng chứng SỚM rằng chặng cũ đã bị lấy lại. Chỉ có giá trị khi đặt đúng chỗ (sau sweep, tại POI, thuận bối cảnh HTF) và có</text>
+<text x="128.0" y="501.5" font-size="12.5" font-weight="400" fill="#1F2937" text-anchor="start">follow-through. Không phải lệnh vào tự động.</text>
+</svg>

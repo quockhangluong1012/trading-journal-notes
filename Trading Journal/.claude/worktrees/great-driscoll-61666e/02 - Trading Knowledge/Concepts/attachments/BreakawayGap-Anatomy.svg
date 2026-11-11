@@ -1,0 +1,59 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Giải phẫu Breakaway Gap</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Range/consolidation → sweep biên → displacement bứt phá → gap/FVG giữ → retest → invalidation.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- Consolidation range box -->
+  <rect x="60" y="230" width="150" height="70" fill="#6B7280" opacity="0.10" stroke="#6B7280" stroke-dasharray="4 3"/>
+  <text x="66" y="224" font-size="10.5" font-weight="700" fill="#374151">① Vùng tích lũy / range</text>
+  <path d="M70,260 L90,250 L110,265 L130,255 L150,262 L170,252 L190,258" fill="none" stroke="#374151" stroke-width="1.8"/>
+
+  <!-- lower boundary sweep -->
+  <line x1="60" y1="300" x2="210" y2="300" stroke="#6B7280" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <path d="M190,258 L200,310" fill="none" stroke="#DC2626" stroke-width="2"/>
+  <circle cx="200" cy="308" r="7" fill="none" stroke="#DC2626" stroke-width="2"/>
+  <text x="140" y="330" font-size="10" font-weight="700" fill="#B91C1C">② Sweep SSL biên dưới (lý tưởng)</text>
+
+  <!-- upper boundary -->
+  <line x1="60" y1="230" x2="210" y2="230" stroke="#6B7280" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="64" y="226" font-size="9" fill="#6B7280"> </text>
+
+  <!-- displacement candle breaking range high, leaving gap -->
+  <rect x="230" y="150" width="20" height="70" fill="#16A34A" opacity="0.85" rx="1"/>
+  <rect x="238" y="140" width="4" height="90" fill="#15803D"/>
+  <text x="200" y="135" font-size="10.5" font-weight="700" fill="#15803D">③ Displacement bứt phá biên trên</text>
+
+  <!-- the gap / FVG zone -->
+  <rect x="210" y="195" width="45" height="35" fill="#F59E0B" opacity="0.25" stroke="#B45309" stroke-dasharray="4 3"/>
+  <text x="258" y="200" font-size="10" font-weight="700" fill="#92400E">④ Gap / FVG</text>
+  <text x="258" y="213" font-size="9" fill="#92400E">(breakaway gap zone)</text>
+
+  <!-- continuation path up -->
+  <path d="M250,150 L300,120 L360,95 L430,75" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+
+  <!-- retrace back to gap edge -->
+  <path d="M430,75 L470,110 L500,175 L520,200" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="520" cy="200" r="7" fill="#16A34A"/>
+  <text x="470" y="228" font-size="10.5" font-weight="700" fill="#15803D">⑤ Retest cạnh gap = giữ (support)</text>
+  <line x1="255" y1="200" x2="716" y2="200" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+  <!-- LTF MSS confirm + entry -->
+  <circle cx="520" cy="200" r="14" fill="none" stroke="#3B82F6" stroke-width="1.6"/>
+  <text x="536" y="196" font-size="10" fill="#1D4ED8">LTF MSS xác nhận</text>
+  <path d="M520,200 L560,160 L610,120 L660,95" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+  <text x="560" y="112" font-size="10.5" font-weight="700" fill="#166534">Entry Long tại cạnh gap</text>
+
+  <!-- invalidation level -->
+  <line x1="210" y1="230" x2="716" y2="230" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="590" y="245" font-size="10" fill="#B91C1C">Invalidation: đóng nến sạch xuyên NGƯỢC qua gap</text>
+
+  <!-- target -->
+  <line x1="660" y1="95" x2="716" y2="80" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="600" y="72" font-size="10.5" fill="#166534">⑥ Target: liquidity phía trên</text>
+
+  <rect x="24" y="410" width="712" height="56" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="430" font-size="11.5" font-weight="700" fill="#92400E">Chuỗi: range → (sweep) → displacement bứt phá + gap → gap GIỮ khi retest → LTF MSS xác nhận →</text>
+  <text x="36" y="450" font-size="11.5" font-weight="700" fill="#92400E">Entry tiếp diễn. Đóng nến sạch ngược qua gap = invalidation (nghi exhaustion/false break).</text>
+</svg>

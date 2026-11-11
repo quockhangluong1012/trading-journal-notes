@@ -1,0 +1,66 @@
+<svg viewBox="0 0 760 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="540" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Co che &amp; vi sao nguy hiem: 0.5% vs 1% vs 2% qua 1 chuoi thua</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Equity ($10,000 start) qua 12 lenh thua lien tiep - sizing tinh lai theo equity hien tai</text>
+
+  <rect x="24" y="72" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- threshold lines -->
+  <line x1="60" y1="213" x2="700" y2="213" stroke="#D97706" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="606" y="208" font-size="11" fill="#B45309" font-weight="700">-5% daily ($9,500)</text>
+
+  <line x1="60" y1="307" x2="700" y2="307" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="606" y="302" font-size="11" fill="#B91C1C" font-weight="700">-10% max ($9,000)</text>
+
+  <line x1="60" y1="120" x2="700" y2="120" stroke="#9CA3AF" stroke-width="1.2"/>
+  <text x="64" y="114" font-size="10.5" fill="#6B7280">$10,000 (start)</text>
+
+  <!-- axis -->
+  <line x1="60" y1="90" x2="60" y2="380" stroke="#9CA3AF" stroke-width="1.2"/>
+  <line x1="60" y1="380" x2="700" y2="380" stroke="#9CA3AF" stroke-width="1.2"/>
+  <text x="360" y="398" font-size="11" fill="#6B7280">So lenh thua lien tiep (trong 1 phien/chuoi)</text>
+
+  <!-- 0.5% line (safe, stays high) -->
+  <path d="M 60,120 113,129 167,139 220,148 273,157 327,166 380,176 433,185 487,194 540,203 593,212 647,220 700,229"
+        fill="none" stroke="#16A34A" stroke-width="2.4"/>
+
+  <!-- 1% line (crosses -5% ~trade6, approaches -10% ~trade11) -->
+  <path d="M 60,120 113,139 167,157 220,176 273,194 327,212 380,229 433,246 487,263 540,280 593,297 647,313 700,330"
+        fill="none" stroke="#3B82F6" stroke-width="2.4"/>
+
+  <!-- 2% line (breaches -5% ~trade3, -10% ~trade6, keeps falling) -->
+  <path d="M 60,120 113,157 167,194 220,230 273,265 327,300 380,333 433,366"
+        fill="none" stroke="#DC2626" stroke-width="2.6"/>
+  <polygon points="433,366 421,354 441,352" fill="#DC2626"/>
+  <text x="446" y="368" font-size="11" fill="#B91C1C" font-weight="700">Tiep tuc roi - bi loai khoi challenge</text>
+
+  <!-- breach markers -->
+  <circle cx="220" cy="230" r="5" fill="#DC2626"/>
+  <text x="140" y="252" font-size="10.5" fill="#B91C1C" font-weight="700">2% pha vo daily ~lenh 3</text>
+
+  <circle cx="380" cy="333" r="5" fill="#DC2626"/>
+  <text x="392" y="336" font-size="10.5" fill="#B91C1C" font-weight="700">2% pha vo max ~lenh 6</text>
+
+  <circle cx="380" cy="229" r="5" fill="#1D4ED8"/>
+  <text x="230" y="200" font-size="10.5" fill="#1D4ED8" font-weight="700">1% cham daily ~lenh 6</text>
+
+  <circle cx="647" cy="313" r="5" fill="#1D4ED8"/>
+  <text x="470" y="316" font-size="10.5" fill="#1D4ED8" font-weight="700">1% pha vo max ~lenh 11</text>
+
+  <text x="70" y="235" font-size="10.5" fill="#15803D" font-weight="700">0.5% van an toan het chart (~lenh 20-21 moi cham max)</text>
+
+  <!-- legend -->
+  <rect x="60" y="410" width="18" height="10" fill="#16A34A"/>
+  <text x="84" y="419" font-size="12" fill="#374151">0.5% / lenh (song sot)</text>
+  <rect x="260" y="410" width="18" height="10" fill="#3B82F6"/>
+  <text x="284" y="419" font-size="12" fill="#374151">1% / lenh (rui ro cao)</text>
+  <rect x="460" y="410" width="18" height="10" fill="#DC2626"/>
+  <text x="484" y="419" font-size="12" fill="#374151">2% / lenh (pha vo)</text>
+
+  <!-- note box -->
+  <rect x="24" y="440" width="712" height="86" rx="6" fill="#374151" fill-opacity="0.05" stroke="#4B5563" stroke-opacity="0.3"/>
+  <text x="40" y="460" font-size="12" fill="#374151" font-weight="700">Luu y: daily loss ($500) tinh theo balance dau ngay cua FTMO, chi vo hieu neu chuoi thua</text>
+  <text x="40" y="478" font-size="12" fill="#374151">xay ra CUNG mot ngay. Max loss ($1,000) tinh xuyen suot nhieu ngay. Mot chuoi 6-10 lenh</text>
+  <text x="40" y="496" font-size="12" fill="#374151">thua lien tiep la HOAN TOAN BINH THUONG voi mot edge duong (khong co nghia edge sai) -</text>
+  <text x="40" y="514" font-size="12" fill="#374151">o 2% no be gay challenge trong vai lenh, o 0.5% no chi la mot ngay/tuan xau binh thuong.</text>
+</svg>

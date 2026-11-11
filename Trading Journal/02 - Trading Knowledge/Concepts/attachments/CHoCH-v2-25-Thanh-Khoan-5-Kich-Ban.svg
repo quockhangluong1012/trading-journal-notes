@@ -1,0 +1,115 @@
+<svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="0.8" y="0.8" width="998.5" height="618.5" rx="14" fill="#FBFBFD" stroke="#DADDE3" stroke-width="1.5"/>
+<text x="28.0" y="42.0" font-size="20" font-weight="700" fill="#111827">CHoCH và thanh khoản: năm kịch bản A–E</text>
+<rect x="877.1" y="23.0" width="94.9" height="24.0" rx="12" fill="#F3F4F6" stroke="#DADDE3" stroke-width="1"/>
+<text x="924.6" y="39.5" font-size="10.5" font-weight="700" fill="#4B5563" text-anchor="middle">SƠ ĐỒ DỰNG</text>
+<text x="28.0" y="66.0" font-size="13" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Tím = cú quét thanh khoản (râu đi qua một đỉnh/đáy cũ rồi quay lại). Hồng = CHoCH. Không kịch bản nào là “luật”; chúng là các trường hợp phải</text>
+<text x="28.0" y="84.5" font-size="13" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">phân biệt.</text>
+<rect x="28.0" y="110.9" width="180.0" height="450.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<text x="42.0" y="136.4" font-size="12.5" font-weight="700" fill="#111827" data-bx="41.0,197.0">A. Quét → CHoCH</text>
+<line x1="115.8" y1="264.1" x2="215.8" y2="264.1" stroke="#B45309" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="6,4"/>
+<line x1="100.2" y1="293.3" x2="215.8" y2="293.3" stroke="#7C3AED" stroke-width="1" stroke-linecap="round" stroke-dasharray="3,3"/>
+<polyline points="49.1,188.3 71.3,258.3 89.1,223.3 111.3,293.3 126.9,264.1 142.4,316.6 173.6,199.9 191.3,229.1" fill="none" stroke="#111827" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="71.3" cy="258.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="89.1" cy="223.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="111.3" cy="293.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="126.9" cy="264.1" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="142.4" cy="316.6" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="173.6" cy="199.9" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="191.3" cy="229.1" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="142.4" y="331.6" font-size="10" font-weight="700" fill="#7C3AED" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="32.0,204.0">quét</text>
+<text x="173.6" y="191.9" font-size="10" font-weight="700" fill="#C026D3" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="32.0,204.0">CHoCH</text>
+<text x="40.0" y="410.9" font-size="11.5" font-weight="400" fill="#111827" data-bx="39.0,197.0">Thứ tự “đẹp” của ICT 2022.</text>
+<text x="40.0" y="427.2" font-size="11.5" font-weight="400" fill="#111827" data-bx="39.0,197.0">Quét xong, giá đảo và phá</text>
+<text x="40.0" y="443.6" font-size="11.5" font-weight="400" fill="#111827" data-bx="39.0,197.0">protected high.</text>
+<rect x="40.0" y="524.9" width="138.6" height="18.5" rx="9.25" fill="#6B7280" fill-opacity="0.12" stroke="#6B7280" stroke-width="1"/>
+<text x="109.3" y="535.6" font-size="9.5" font-weight="700" fill="#6B7280" text-anchor="middle">thường gặp trong mô hình</text>
+<rect x="218.0" y="110.9" width="180.0" height="450.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<text x="232.0" y="136.4" font-size="12.5" font-weight="700" fill="#111827" data-bx="231.0,387.0">B. CHoCH không quét</text>
+<line x1="305.8" y1="264.1" x2="405.8" y2="264.1" stroke="#B45309" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="6,4"/>
+<line x1="290.2" y1="293.3" x2="405.8" y2="293.3" stroke="#7C3AED" stroke-width="1" stroke-linecap="round" stroke-dasharray="3,3"/>
+<polyline points="239.1,188.3 261.3,258.3 279.1,223.3 301.3,293.3 316.9,264.1 332.4,284.5 363.6,211.6 381.3,240.8" fill="none" stroke="#111827" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="261.3" cy="258.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="279.1" cy="223.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="301.3" cy="293.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="316.9" cy="264.1" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="332.4" cy="284.5" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="363.6" cy="211.6" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="381.3" cy="240.8" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="332.4" y="299.5" font-size="10" font-weight="700" fill="#6B7280" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="222.0,394.0">đáy cao hơn,</text>
+<text x="332.4" y="312.0" font-size="10" font-weight="700" fill="#6B7280" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="222.0,394.0">không quét</text>
+<text x="363.6" y="203.6" font-size="10" font-weight="700" fill="#C026D3" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="222.0,394.0">CHoCH</text>
+<text x="230.0" y="410.9" font-size="11.5" font-weight="400" fill="#111827" data-bx="229.0,387.0">Hợp lệ theo định nghĩa.</text>
+<text x="230.0" y="427.2" font-size="11.5" font-weight="400" fill="#111827" data-bx="229.0,387.0">Thiếu một bằng chứng bối</text>
+<text x="230.0" y="443.6" font-size="11.5" font-weight="400" fill="#111827" data-bx="229.0,387.0">cảnh — không có nghĩa là</text>
+<text x="230.0" y="459.9" font-size="11.5" font-weight="400" fill="#111827" data-bx="229.0,387.0">sai.</text>
+<rect x="230.0" y="524.9" width="152.4" height="18.5" rx="9.25" fill="#6B7280" fill-opacity="0.12" stroke="#6B7280" stroke-width="1"/>
+<text x="306.2" y="535.6" font-size="9.5" font-weight="700" fill="#6B7280" text-anchor="middle">[FRAMEWORK-DEPENDENT]</text>
+<rect x="408.0" y="110.9" width="180.0" height="450.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<text x="422.0" y="136.4" font-size="12.5" font-weight="700" fill="#111827" data-bx="421.0,577.0">C. Quét, không CHoCH</text>
+<line x1="495.8" y1="264.1" x2="595.8" y2="264.1" stroke="#B45309" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="6,4"/>
+<line x1="480.2" y1="293.3" x2="595.8" y2="293.3" stroke="#7C3AED" stroke-width="1" stroke-linecap="round" stroke-dasharray="3,3"/>
+<polyline points="429.1,188.3 451.3,258.3 469.1,223.3 491.3,293.3 506.9,264.1 522.4,316.6 540.2,275.8 571.3,351.6" fill="none" stroke="#111827" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="451.3" cy="258.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="469.1" cy="223.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="491.3" cy="293.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="506.9" cy="264.1" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="522.4" cy="316.6" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="540.2" cy="275.8" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="571.3" cy="351.6" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="522.4" y="331.6" font-size="10" font-weight="700" fill="#7C3AED" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="412.0,584.0">quét</text>
+<text x="562.4" y="363.7" font-size="10" font-weight="700" fill="#E5484D" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="412.0,584.0">giảm tiếp</text>
+<text x="420.0" y="410.9" font-size="11.5" font-weight="400" fill="#111827" data-bx="419.0,577.0">Quét xong giá bật yếu,</text>
+<text x="420.0" y="427.2" font-size="11.5" font-weight="400" fill="#111827" data-bx="419.0,577.0">không chạm protected</text>
+<text x="420.0" y="443.6" font-size="11.5" font-weight="400" fill="#111827" data-bx="419.0,577.0">high, rồi giảm tiếp. Quét</text>
+<text x="420.0" y="459.9" font-size="11.5" font-weight="400" fill="#111827" data-bx="419.0,577.0">không tự tạo đảo chiều.</text>
+<rect x="420.0" y="524.9" width="85.7" height="18.5" rx="9.25" fill="#6B7280" fill-opacity="0.12" stroke="#6B7280" stroke-width="1"/>
+<text x="462.8" y="535.6" font-size="9.5" font-weight="700" fill="#6B7280" text-anchor="middle">rất thường gặp</text>
+<rect x="598.0" y="110.9" width="180.0" height="450.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<text x="612.0" y="136.4" font-size="12.5" font-weight="700" fill="#111827" data-bx="611.0,767.0">D. CHoCH trước, quét</text>
+<text x="612.0" y="152.7" font-size="12.5" font-weight="700" fill="#111827" data-bx="611.0,767.0">sau</text>
+<line x1="685.8" y1="264.1" x2="785.8" y2="264.1" stroke="#B45309" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="6,4"/>
+<line x1="670.2" y1="293.3" x2="785.8" y2="293.3" stroke="#7C3AED" stroke-width="1" stroke-linecap="round" stroke-dasharray="3,3"/>
+<polyline points="619.1,188.3 641.3,258.3 659.1,223.3 681.3,293.3 696.9,264.1 714.7,287.4 734.7,240.8 750.2,296.2 770.2,211.6" fill="none" stroke="#111827" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="641.3" cy="258.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="659.1" cy="223.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="681.3" cy="293.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="696.9" cy="264.1" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="714.7" cy="287.4" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="734.7" cy="240.8" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="750.2" cy="296.2" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="770.2" cy="211.6" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="734.7" y="232.8" font-size="10" font-weight="700" fill="#C026D3" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="602.0,774.0">CHoCH</text>
+<text x="750.2" y="311.2" font-size="10" font-weight="700" fill="#7C3AED" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="602.0,774.0">quét sau</text>
+<text x="610.0" y="410.9" font-size="11.5" font-weight="400" fill="#111827" data-bx="609.0,767.0">CHoCH rồi giá quay xuống</text>
+<text x="610.0" y="427.2" font-size="11.5" font-weight="400" fill="#111827" data-bx="609.0,767.0">quét đáy cũ, sau đó mới đi</text>
+<text x="610.0" y="443.6" font-size="11.5" font-weight="400" fill="#111827" data-bx="609.0,767.0">lên thật. Ai vào ngay ở</text>
+<text x="610.0" y="459.9" font-size="11.5" font-weight="400" fill="#111827" data-bx="609.0,767.0">CHoCH bị dừng lỗ.</text>
+<rect x="610.0" y="524.9" width="76.8" height="18.5" rx="9.25" fill="#6B7280" fill-opacity="0.12" stroke="#6B7280" stroke-width="1"/>
+<text x="648.4" y="535.6" font-size="9.5" font-weight="700" fill="#6B7280" text-anchor="middle">có thể xảy ra</text>
+<rect x="788.0" y="110.9" width="180.0" height="450.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<text x="802.0" y="136.4" font-size="12.5" font-weight="700" fill="#111827" data-bx="801.0,957.0">E. Quét đáy nhỏ →</text>
+<text x="802.0" y="152.7" font-size="12.5" font-weight="700" fill="#111827" data-bx="801.0,957.0">CHoCH</text>
+<line x1="875.8" y1="264.1" x2="975.8" y2="264.1" stroke="#B45309" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="6,4"/>
+<line x1="860.2" y1="293.3" x2="975.8" y2="293.3" stroke="#7C3AED" stroke-width="1" stroke-linecap="round" stroke-dasharray="3,3"/>
+<polyline points="809.1,188.3 831.3,258.3 849.1,223.3 871.3,293.3 886.9,264.1 900.2,281.6 911.3,272.3 920.2,285.7 942.4,211.6 955.8,234.9" fill="none" stroke="#111827" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="831.3" cy="258.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="849.1" cy="223.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="871.3" cy="293.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="886.9" cy="264.1" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="900.2" cy="281.6" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="911.3" cy="272.3" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="920.2" cy="285.7" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="942.4" cy="211.6" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="955.8" cy="234.9" r="3.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="920.2" y="300.7" font-size="10" font-weight="700" fill="#7C3AED" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="792.0,964.0">quét đáy nhỏ</text>
+<text x="942.4" y="203.6" font-size="10" font-weight="700" fill="#C026D3" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="792.0,964.0">CHoCH</text>
+<text x="800.0" y="410.9" font-size="11.5" font-weight="400" fill="#111827" data-bx="799.0,957.0">Đáy bị quét chỉ là đáy</text>
+<text x="800.0" y="427.2" font-size="11.5" font-weight="400" fill="#111827" data-bx="799.0,957.0">internal. Thanh khoản</text>
+<text x="800.0" y="443.6" font-size="11.5" font-weight="400" fill="#111827" data-bx="799.0,957.0">mỏng hơn, ý nghĩa thấp</text>
+<text x="800.0" y="459.9" font-size="11.5" font-weight="400" fill="#111827" data-bx="799.0,957.0">hơn kịch bản A.</text>
+<rect x="800.0" y="524.9" width="63.7" height="18.5" rx="9.25" fill="#6B7280" fill-opacity="0.12" stroke="#6B7280" stroke-width="1"/>
+<text x="831.9" y="535.6" font-size="9.5" font-weight="700" fill="#6B7280" text-anchor="middle">yếu hơn A</text>
+<text x="28.0" y="587.0" font-size="12" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Cam = protected high; tím đứt = đáy cũ (sell-side liquidity). Câu hỏi trung tâm: quét có TẠO RA CHoCH không? Không — quét chỉ là một sự kiện CÓ THỂ đi trước</text>
+<text x="28.0" y="604.0" font-size="12" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">nó.</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo4MmY5M2ZlYi0xODJkLTQ5NDgtODJjNS1iYTAxYjU4ZThkYWEAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaHnNT0N54COv04MeRcaVCfAAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoxYzUxMDFkYS00ZmY0LTRlY2MtOTcxMC1kNDFjZDJjN2UyM2NscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoCaTqYK4VlgjtcUvLjd3Q0QAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg65iY0/vl30EIfPrKQCeVtjBi2xpSB/7gJktsNF5S/s6kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaEbxL1wZ0rzvY+ffG+uo4SIAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIDmndmUnNFAfskK/AzPWptKgJqIfOMjGbxN9LBY9OBdBZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTp/Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjgyZjkzZmViLTE4MmQtNDk0OC04MmM1LWJhMDFiNThlOGRhYS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmVmMWZhN2I1LTliZTQtNGNmNy1hOTk0LWE1ODNjYmNjZjU5N3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDrmJjT++XfQQh8+spAJ5W2MGLbGlIH/uAmS2w0XlL+zqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggVY3Chr6EtCkUU95GJlDznv3YWZ7oGScJ9hS+U8Sn8iWiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg5fNfMPO4sjc7+uoHXl9PT6KzzSbkKLoRQdOgZCw7Hp90Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQKCicWWRWmfAOecFMit1j3g6drQTOmoFn29/Cuf/CfuVUhP2cAIXyVaHr/xSMh5J2EiCnhaJiWI6/4Qbvq73MsI=</c2pa:manifest></metadata></svg>

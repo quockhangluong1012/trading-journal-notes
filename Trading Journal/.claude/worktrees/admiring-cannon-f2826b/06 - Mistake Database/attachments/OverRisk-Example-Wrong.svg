@@ -1,0 +1,46 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Vi du sai: 2% "sure thing", SL rong khong giam size, double-up correlated</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">NAS100 + US30 Long cung luc - "setup dep qua, khong the sai duoc"</text>
+
+  <rect x="24" y="76" width="712" height="290" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- step 1: oversized -->
+  <rect x="44" y="94" width="672" height="52" rx="6" fill="#DC2626" fill-opacity="0.08" stroke="#DC2626"/>
+  <text x="56" y="114" font-size="12.5" font-weight="700" fill="#B91C1C">Buoc 1: "Conviction cao" -&gt; risk 2% thay vi 0.5%</text>
+  <text x="56" y="134" font-size="12" fill="#374151">$10,000 x 2% = $200 risk (gap 4 lan tran cho phep, khong dua tren edge thuc te)</text>
+
+  <!-- step 2: widened stop kept same lot -->
+  <rect x="44" y="156" width="330" height="86" rx="6" fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.6"/>
+  <text x="56" y="176" font-size="12" font-weight="700" fill="#B91C1C">SL doi rong ra giua chung:</text>
+  <text x="56" y="196" font-size="11.5" fill="#374151">Gia chay qua SL du kien, "doi" SL rong</text>
+  <text x="56" y="212" font-size="11.5" fill="#374151">hon nhung GIU nguyen lot size cu</text>
+  <text x="56" y="228" font-size="11.5" fill="#374151">-&gt; $ risk thuc te &gt; $200 ban dau.</text>
+
+  <!-- step 3: correlated double up -->
+  <rect x="386" y="156" width="330" height="86" rx="6" fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.6"/>
+  <text x="398" y="176" font-size="12" font-weight="700" fill="#B91C1C">Double-up correlated:</text>
+  <text x="398" y="196" font-size="11.5" fill="#374151">Mo them US30 Long "vi cung xu huong"</text>
+  <text x="398" y="212" font-size="11.5" fill="#374151">Correlation ~0.9 -&gt; rui ro thuc te</text>
+  <text x="398" y="228" font-size="11.5" fill="#374151">~gan gap doi 1 vi the 2% don le.</text>
+
+  <!-- no circuit breaker -->
+  <rect x="44" y="252" width="672" height="70" rx="6" fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.6"/>
+  <text x="56" y="272" font-size="12" font-weight="700" fill="#B91C1C">Khong co circuit breaker:</text>
+  <text x="56" y="292" font-size="11.5" fill="#374151">Khong co rule dung lai, tiep tuc "gau von" bang cach vao them lenh</text>
+  <text x="56" y="308" font-size="11.5" fill="#374151">khi dang am - quyet dinh size luc nay bi cam xuc chi phoi hoan toan.</text>
+
+  <!-- equity impact bar -->
+  <text x="44" y="344" font-size="12.5" font-weight="700" fill="#1F2937">Ket qua: pha vo daily limit chi sau ~3 lenh thua lien tiep</text>
+  <rect x="44" y="352" width="672" height="18" rx="3" fill="#374151" fill-opacity="0.08"/>
+  <rect x="44" y="352" width="248" height="18" rx="3" fill="#DC2626" fill-opacity="0.75"/>
+  <line x1="292" y1="348" x2="292" y2="374" stroke="#D97706" stroke-width="2"/>
+  <text x="296" y="365" font-size="10.5" fill="#B91C1C" font-weight="700">Da vuot -5% daily ($9,412 con lai)</text>
+
+  <!-- annotation -->
+  <rect x="24" y="382" width="712" height="82" rx="6" fill="#374151" fill-opacity="0.04" stroke="#4B5563" stroke-opacity="0.25"/>
+  <text x="40" y="402" font-size="12" fill="#374151" font-weight="700">Bai hoc: bias dung va setup dep khong bao gio la ly do de tang risk. Mot chuoi</text>
+  <text x="40" y="420" font-size="12" fill="#374151">thua 3-6 lenh la BINH THUONG voi bat ky edge nao - o 2% no da du de pha vo</text>
+  <text x="40" y="438" font-size="12" fill="#374151">daily limit; cong them correlated exposure va SL bi doi giua chung, con so</text>
+  <text x="40" y="456" font-size="12" fill="#374151">thuc te con te hon $200 tren giay rat nhieu.</text>
+</svg>

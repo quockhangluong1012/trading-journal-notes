@@ -1,0 +1,97 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ba khái niệm dễ nhầm: FVG chuẩn vs Implied FVG vs Inverse FVG</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cùng liên quan tới "gap", nhưng cơ chế và vai trò hoàn toàn khác nhau</text>
+
+  <!-- Column 1: Standard FVG -->
+  <rect x="24" y="72" width="228" height="230" rx="8" fill="#FFFFFF" stroke="#3B82F6" stroke-width="1.5"/>
+  <rect x="24" y="72" width="228" height="30" rx="8" fill="#3B82F6"/>
+  <rect x="24" y="88" width="228" height="14" fill="#3B82F6"/>
+  <text x="138" y="93" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">FVG chuẩn (3 nến)</text>
+
+  <line x1="50" y1="245" x2="228" y2="245" stroke="#D8DBE2" stroke-width="1"/>
+  <rect x="70" y="180" width="2" height="65" fill="#16A34A"/><rect x="64" y="195" width="12" height="30" fill="#16A34A" rx="1"/>
+  <rect x="110" y="140" width="2.5" height="105" fill="#15803D"/><rect x="102" y="150" width="18" height="80" fill="#16A34A" rx="1"/>
+  <rect x="155" y="160" width="2" height="85" fill="#16A34A"/><rect x="149" y="165" width="12" height="55" fill="#16A34A" rx="1"/>
+  <rect x="72" y="195" width="83" height="15" fill="#3B82F6" opacity="0.25"/>
+  <text x="60" y="260" font-size="9.5" fill="#1D4ED8" font-weight="600">Gap = high N1 → low N3</text>
+
+  <text x="34" y="280" font-size="10" font-weight="700" fill="#1D4ED8">Cơ sở:</text>
+  <text x="34" y="292" font-size="9.5" fill="#374151">Gap giá rõ giữa 3 nến</text>
+
+  <!-- Column 2: Implied FVG -->
+  <rect x="266" y="72" width="228" height="230" rx="8" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="266" y="72" width="228" height="30" rx="8" fill="#F59E0B"/>
+  <rect x="266" y="88" width="228" height="14" fill="#F59E0B"/>
+  <text x="380" y="93" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Implied FVG</text>
+
+  <line x1="292" y1="245" x2="470" y2="245" stroke="#D8DBE2" stroke-width="1"/>
+  <rect x="312" y="185" width="2" height="60" fill="#16A34A"/><rect x="306" y="205" width="12" height="25" fill="#16A34A" rx="1"/>
+  <rect x="352" y="140" width="2.5" height="105" fill="#15803D"/><rect x="344" y="150" width="18" height="80" fill="#16A34A" rx="1"/>
+  <rect x="397" y="170" width="2" height="75" fill="#16A34A"/><rect x="391" y="180" width="12" height="40" fill="#16A34A" rx="1"/>
+  <line x1="292" y1="210" x2="470" y2="210" stroke="#B45309" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <line x1="292" y1="223" x2="470" y2="223" stroke="#B45309" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <rect x="292" y="210" width="178" height="13" fill="#F59E0B" opacity="0.3"/>
+  <text x="296" y="258" font-size="9.5" fill="#92400E" font-weight="600">Gap = CE bóng N1 → CE bóng N3</text>
+
+  <text x="276" y="280" font-size="10" font-weight="700" fill="#92400E">Cơ sở:</text>
+  <text x="276" y="292" font-size="9.5" fill="#374151">Bóng chồng lấp che gap — dùng CE bóng</text>
+
+  <!-- Column 3: Inverse FVG -->
+  <rect x="508" y="72" width="228" height="230" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="508" y="72" width="228" height="30" rx="8" fill="#DC2626"/>
+  <rect x="508" y="88" width="228" height="14" fill="#DC2626"/>
+  <text x="622" y="93" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Inverse FVG (iFVG)</text>
+
+  <line x1="534" y1="245" x2="712" y2="245" stroke="#D8DBE2" stroke-width="1"/>
+  <rect x="554" y="180" width="2" height="60" fill="#16A34A"/><rect x="548" y="195" width="12" height="30" fill="#16A34A" rx="1"/>
+  <rect x="590" y="150" width="2.5" height="90" fill="#15803D"/><rect x="582" y="160" width="18" height="65" fill="#16A34A" rx="1"/>
+  <rect x="630" y="170" width="2" height="75" fill="#16A34A"/><rect x="624" y="180" width="12" height="40" fill="#16A34A" rx="1"/>
+  <rect x="556" y="195" width="76" height="14" fill="#3B82F6" opacity="0.2"/>
+  <!-- breaking candle closing through -->
+  <rect x="668" y="205" width="2" height="55" fill="#DC2626"/><rect x="662" y="215" width="12" height="35" fill="#DC2626" rx="1"/>
+  <path d="M 645 225 L 665 235" stroke="#DC2626" stroke-width="1.3" marker-end="url(#invarrow)"/>
+  <defs><marker id="invarrow" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#DC2626"/></marker></defs>
+  <text x="536" y="258" font-size="9.5" fill="#B91C1C" font-weight="600">FVG cũ bị đóng nến xuyên → đảo cực</text>
+
+  <text x="518" y="280" font-size="10" font-weight="700" fill="#B91C1C">Cơ sở:</text>
+  <text x="518" y="292" font-size="9.5" fill="#374151">FVG cũ (thường) đã fail, đảo vai trò</text>
+
+  <!-- Comparison table -->
+  <rect x="24" y="312" width="712" height="150" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="38" y="332" font-size="12.5" font-weight="700" fill="#1F2937">Bảng so sánh nhanh</text>
+
+  <line x1="38" y1="342" x2="722" y2="342" stroke="#E5E7EB"/>
+  <text x="42" y="358" font-size="10" font-weight="700" fill="#374151">Tiêu chí</text>
+  <text x="200" y="358" font-size="10" font-weight="700" fill="#1D4ED8">FVG chuẩn</text>
+  <text x="370" y="358" font-size="10" font-weight="700" fill="#92400E">Implied FVG</text>
+  <text x="560" y="358" font-size="10" font-weight="700" fill="#B91C1C">Inverse FVG</text>
+  <line x1="38" y1="366" x2="722" y2="366" stroke="#F3F4F6"/>
+
+  <text x="42" y="382" font-size="9.5" fill="#374151">Số nến liên quan</text>
+  <text x="200" y="382" font-size="9.5" fill="#374151">3 nến</text>
+  <text x="370" y="382" font-size="9.5" fill="#374151">3 nến (bóng chồng)</text>
+  <text x="560" y="382" font-size="9.5" fill="#374151">FVG cũ + nến phá</text>
+
+  <text x="42" y="398" font-size="9.5" fill="#374151">Cách xác định</text>
+  <text x="200" y="398" font-size="9.5" fill="#374151">High N1 → Low N3</text>
+  <text x="370" y="398" font-size="9.5" fill="#374151">CE bóng N1 → CE bóng N3</text>
+  <text x="560" y="398" font-size="9.5" fill="#374151">FVG cũ bị close xuyên qua</text>
+
+  <text x="42" y="414" font-size="9.5" fill="#374151">Điều vô hiệu hóa</text>
+  <text x="200" y="414" font-size="9.5" fill="#374151">Đóng nến xuyên hết gap</text>
+  <text x="370" y="414" font-size="9.5" fill="#374151">Đóng nến xuyên hết vùng CE</text>
+  <text x="560" y="414" font-size="9.5" fill="#374151">Đóng nến lấy lại gap cũ</text>
+
+  <text x="42" y="430" font-size="9.5" fill="#374151">Vai trò PD-array</text>
+  <text x="200" y="430" font-size="9.5" fill="#374151">POI chính, ưu tiên cao</text>
+  <text x="370" y="430" font-size="9.5" fill="#374151">POI bổ trợ, ưu tiên thấp hơn</text>
+  <text x="560" y="430" font-size="9.5" fill="#374151">POI đảo cực sau violation</text>
+
+  <text x="42" y="446" font-size="9.5" fill="#374151">Hướng phản ứng</text>
+  <text x="200" y="446" font-size="9.5" fill="#374151">Cùng hướng FVG gốc</text>
+  <text x="370" y="446" font-size="9.5" fill="#374151">Cùng hướng imbalance ẩn</text>
+  <text x="560" y="446" font-size="9.5" fill="#B91C1C" font-weight="600">NGƯỢC hướng FVG gốc</text>
+
+  <text x="24" y="475" font-size="11" fill="#6B7280">Xem chi tiết Inverse FVG tại ghi chú riêng — hai khái niệm Implied và Inverse KHÔNG hoán đổi cho nhau.</text>
+</svg>

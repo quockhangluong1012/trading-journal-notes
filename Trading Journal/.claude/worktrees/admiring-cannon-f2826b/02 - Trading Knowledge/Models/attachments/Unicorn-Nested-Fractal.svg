@@ -1,0 +1,24 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="420" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Unicorn lồng trong PD array HTF (tính fractal)</text>
+<text x="24" y="54" font-size="13" fill="#6B7280">Unicorn LTF chất lượng nhất khi nó nằm bên trong một POI HTF cùng hướng.</text>
+<rect x="24" y="72" width="712" height="150" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="40" y="96" font-size="13" font-weight="700" fill="#334155">HTF (H4/H1) — bức tranh lớn</text>
+<rect x="120" y="120" width="520" height="70" fill="#F59E0B" opacity="0.14" stroke="#F59E0B" stroke-dasharray="4 3"/>
+<text x="130" y="138" font-size="11" font-weight="700" fill="#B45309">HTF Bullish OB / Discount POI (DOL hướng lên)</text>
+<path d="M60 175 Q200 185 340 150 T640 130" stroke="#111827" stroke-width="2" fill="none"/>
+<circle cx="380" cy="150" r="7" fill="#7C3AED" opacity="0.5"/>
+<text x="360" y="205" font-size="10.5" fill="#6B7280">Giá hồi về POI HTF → zoom xuống LTF tìm Unicorn</text>
+<rect x="24" y="236" width="712" height="168" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="40" y="260" font-size="13" font-weight="700" fill="#334155">LTF (5m/1m) — bên trong vòng tròn tím ở trên</text>
+<rect x="250" y="288" width="260" height="18" fill="#F59E0B" opacity="0.22"/>
+<text x="250" y="284" font-size="10" font-weight="700" fill="#B45309">Bullish Breaker (LTF)</text>
+<rect x="250" y="300" width="260" height="26" fill="#7C3AED" opacity="0.30" stroke="#6D28D9" stroke-dasharray="4 3"/>
+<text x="380" y="317" font-size="11" font-weight="700" fill="#5B21B6" text-anchor="middle">UNICORN (50% CE)</text>
+<rect x="250" y="320" width="260" height="18" fill="#3B82F6" opacity="0.18"/>
+<text x="250" y="356" font-size="10" font-weight="700" fill="#1D4ED8">BISI / FVG (LTF)</text>
+<path d="M120 380 L250 313" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#g)"/>
+<path d="M510 313 L640 270" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#g)"/>
+<text x="540" y="360" font-size="11" font-weight="700" fill="#047857">Entry LTF, target = ERL của HTF</text>
+<defs><marker id="g" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#10B981"/></marker></defs>
+</svg>

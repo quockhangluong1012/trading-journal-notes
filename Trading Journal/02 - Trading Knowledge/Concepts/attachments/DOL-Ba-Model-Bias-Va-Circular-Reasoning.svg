@@ -1,0 +1,149 @@
+<svg viewBox="0 0 860 700" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="700" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ba model quan hệ DOL ↔ Daily Bias — và chỗ circular reasoning xuất hiện</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Không được mặc định chiều nhân quả. Chỉ một model là coherent về logic — nhưng coherent KHÔNG đồng nghĩa có edge.</text>
+
+  <!-- ================= MODEL A ================= -->
+  <rect x="24" y="72" width="256" height="300" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.8"/>
+  <rect x="24" y="72" width="256" height="34" rx="8" fill="#FEE2E2"/>
+  <text x="152" y="95" font-size="12" font-weight="700" fill="#B91C1C" text-anchor="middle">MODEL A — DOL → Bias</text>
+
+  <rect x="48" y="120" width="208" height="36" rx="6" fill="#FEE2E2" stroke="#DC2626"/>
+  <text x="152" y="143" font-size="10.5" font-weight="700" fill="#B91C1C" text-anchor="middle">nhìn thấy pool "rõ nhất"</text>
+  <line x1="152" y1="156" x2="152" y2="172" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="152,176 147,166 157,166" fill="#6B7280"/>
+
+  <rect x="48" y="180" width="208" height="36" rx="6" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="152" y="203" font-size="10.5" font-weight="700" fill="#991B1B" text-anchor="middle">DOL</text>
+  <line x1="152" y1="216" x2="152" y2="232" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="152,236 147,226 157,226" fill="#6B7280"/>
+
+  <rect x="48" y="240" width="208" height="36" rx="6" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="152" y="263" font-size="10.5" font-weight="700" fill="#991B1B" text-anchor="middle">directional expectation</text>
+  <line x1="152" y1="276" x2="152" y2="292" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="152,296 147,286 157,286" fill="#6B7280"/>
+
+  <rect x="48" y="300" width="208" height="36" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.8"/>
+  <text x="152" y="323" font-size="10.5" font-weight="700" fill="#B91C1C" text-anchor="middle">DAILY BIAS</text>
+
+  <!-- feedback arrow -->
+  <path d="M40 318 L32 318 L32 138 L44 138" fill="none" stroke="#DC2626" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <polygon points="48,138 38,133 38,143" fill="#DC2626"/>
+  <text x="34" y="228" font-size="8.5" font-weight="700" fill="#B91C1C" transform="rotate(-90 34 228)" text-anchor="middle">vòng lặp ẩn</text>
+
+  <rect x="40" y="346" width="224" height="18" rx="4" fill="#FEE2E2"/>
+  <text x="152" y="359" font-size="9.5" font-weight="700" fill="#B91C1C" text-anchor="middle">✗ CIRCULAR</text>
+
+  <!-- ================= MODEL B ================= -->
+  <rect x="302" y="72" width="256" height="300" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1.8"/>
+  <rect x="302" y="72" width="256" height="34" rx="8" fill="#FEF3C7"/>
+  <text x="430" y="95" font-size="12" font-weight="700" fill="#B45309" text-anchor="middle">MODEL B — Bias → DOL</text>
+
+  <rect x="326" y="120" width="208" height="36" rx="6" fill="#FEF3C7" stroke="#D97706"/>
+  <text x="430" y="143" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">HTF structure → chốt bias</text>
+  <line x1="430" y1="156" x2="430" y2="172" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="430,176 425,166 435,166" fill="#6B7280"/>
+
+  <rect x="326" y="180" width="208" height="36" rx="6" fill="#FFFFFF" stroke="#D97706"/>
+  <text x="430" y="203" font-size="10.5" font-weight="700" fill="#92400E" text-anchor="middle">DAILY BIAS (đã chốt)</text>
+  <line x1="430" y1="216" x2="430" y2="232" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="430,236 425,226 435,226" fill="#6B7280"/>
+
+  <rect x="326" y="240" width="208" height="36" rx="6" fill="#FFFFFF" stroke="#D97706"/>
+  <text x="430" y="263" font-size="10.5" font-weight="700" fill="#92400E" text-anchor="middle">tìm pool phù hợp với bias</text>
+  <line x1="430" y1="276" x2="430" y2="292" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="430,296 425,286 435,286" fill="#6B7280"/>
+
+  <rect x="326" y="300" width="208" height="36" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.8"/>
+  <text x="430" y="323" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">DOL</text>
+
+  <rect x="318" y="346" width="224" height="18" rx="4" fill="#FEF3C7"/>
+  <text x="430" y="359" font-size="9.5" font-weight="700" fill="#B45309" text-anchor="middle">⚠ CONFIRMATION BIAS có cấu trúc</text>
+
+  <!-- why B fails -->
+  <text x="326" y="384" font-size="9.5" fill="#4B5563">Bias "bullish" sẽ LUÔN tìm được</text>
+  <text x="326" y="398" font-size="9.5" fill="#4B5563">một BSL nào đó — chart nào</text>
+  <text x="326" y="412" font-size="9.5" fill="#4B5563">cũng có đỉnh. Cần cơ chế bác bỏ:</text>
+  <text x="326" y="426" font-size="9.5" font-weight="700" fill="#B45309">không viết được đối thủ mạnh</text>
+  <text x="326" y="440" font-size="9.5" font-weight="700" fill="#B45309">→ bias phải bị nghi ngờ.</text>
+
+  <!-- ================= MODEL C ================= -->
+  <rect x="580" y="72" width="256" height="300" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="2.2"/>
+  <rect x="580" y="72" width="256" height="34" rx="8" fill="#DCFCE7"/>
+  <text x="708" y="95" font-size="12" font-weight="700" fill="#15803D" text-anchor="middle">MODEL C — nhất quán ✓</text>
+
+  <rect x="604" y="118" width="208" height="52" rx="6" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="708" y="138" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">INPUT ĐỘC LẬP (data ≤ t)</text>
+  <text x="708" y="154" font-size="9.5" fill="#166534" text-anchor="middle">structure + liquidity + range</text>
+
+  <line x1="708" y1="172" x2="708" y2="188" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="708,192 703,182 713,182" fill="#6B7280"/>
+
+  <rect x="604" y="196" width="208" height="36" rx="6" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="708" y="219" font-size="10.5" font-weight="700" fill="#15803D" text-anchor="middle">directional hypothesis</text>
+
+  <line x1="708" y1="232" x2="708" y2="248" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="708,252 703,242 713,242" fill="#6B7280"/>
+
+  <rect x="604" y="256" width="208" height="36" rx="6" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="708" y="279" font-size="10.5" font-weight="700" fill="#15803D" text-anchor="middle">candidate selection (DOL)</text>
+
+  <rect x="604" y="300" width="208" height="36" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.8"/>
+  <text x="708" y="316" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">coherence check</text>
+  <text x="708" y="330" font-size="9" fill="#166534" text-anchor="middle">dừng ở đây nếu không nhất quán</text>
+
+  <text x="604" y="356" font-size="9.5" font-weight="700" fill="#15803D">Bias và DOL là hai OUTPUT SONG SONG</text>
+  <text x="604" y="370" font-size="9.5" fill="#4B5563">của cùng một tập input — không</text>
+  <text x="604" y="384" font-size="9.5" fill="#4B5563">phải output này từ output kia.</text>
+
+  <rect x="596" y="394" width="224" height="18" rx="4" fill="#DCFCE7"/>
+  <text x="708" y="407" font-size="9.5" font-weight="700" fill="#15803D" text-anchor="middle">✓ HỆ PHƯƠNG TRÌNH, KHÔNG PHẢI VÒNG LẶP</text>
+
+  <!-- ================= STOPPING RULE ================= -->
+  <rect x="24" y="452" width="812" height="128" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="44" y="476" font-size="12.5" font-weight="700" fill="#334155">STOPPING RULE chống iterative circularity — chỉ được lặp MỘT lần</text>
+
+  <rect x="44" y="490" width="182" height="76" rx="6" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="135" y="508" font-size="10.5" font-weight="700" fill="#1D4ED8" text-anchor="middle">VÒNG 1 (bắt buộc)</text>
+  <text x="135" y="525" font-size="9" fill="#4B5563" text-anchor="middle">viết RA TRƯỚC, không sửa:</text>
+  <text x="135" y="539" font-size="9" fill="#1E3A8A" text-anchor="middle">(a) hypothesis thô</text>
+  <text x="135" y="552" font-size="9" fill="#1E3A8A" text-anchor="middle">(b) candidate hai phía</text>
+  <text x="135" y="565" font-size="9" fill="#1E3A8A" text-anchor="middle">(c) asymmetry sơ bộ</text>
+
+  <line x1="230" y1="528" x2="252" y2="528" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="256,528 246,523 246,533" fill="#6B7280"/>
+
+  <rect x="260" y="490" width="182" height="76" rx="6" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+  <text x="351" y="508" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">COHERENCE CHECK</text>
+  <text x="351" y="525" font-size="9" fill="#4B5563" text-anchor="middle">hypothesis và asymmetry</text>
+  <text x="351" y="538" font-size="9" fill="#4B5563" text-anchor="middle">có nhất quán không?</text>
+  <text x="351" y="556" font-size="9" fill="#92400E" text-anchor="middle">nếu không: có lý do CẤU TRÚC</text>
+  <text x="351" y="568" font-size="9" fill="#92400E" text-anchor="middle">nào giải thích được không?</text>
+
+  <line x1="446" y1="528" x2="468" y2="528" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="472,528 462,523 462,533" fill="#6B7280"/>
+
+  <rect x="476" y="490" width="182" height="76" rx="6" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="567" y="508" font-size="10.5" font-weight="700" fill="#1D4ED8" text-anchor="middle">VÒNG 2 (tối đa 1 lần)</text>
+  <text x="567" y="525" font-size="9" fill="#4B5563" text-anchor="middle">sửa MỘT TRONG HAI:</text>
+  <text x="567" y="539" font-size="9" fill="#1E3A8A" text-anchor="middle">hypothesis HOẶC candidate set</text>
+  <text x="567" y="556" font-size="9" font-weight="700" fill="#B45309" text-anchor="middle">Cấm sửa cả hai.</text>
+  <text x="567" y="568" font-size="9" fill="#4B5563" text-anchor="middle">Phải GHI RÕ lý do sửa.</text>
+
+  <line x1="662" y1="528" x2="684" y2="528" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="688,528 678,523 678,533" fill="#6B7280"/>
+
+  <rect x="692" y="490" width="128" height="76" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1.8"/>
+  <text x="756" y="512" font-size="10.5" font-weight="700" fill="#374151" text-anchor="middle">vẫn không</text>
+  <text x="756" y="526" font-size="10.5" font-weight="700" fill="#374151" text-anchor="middle">nhất quán</text>
+  <text x="756" y="546" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">→ NEUTRAL</text>
+  <text x="756" y="561" font-size="8.5" fill="#6B7280" text-anchor="middle">đây là output ĐÚNG</text>
+
+  <!-- ================= CORRUPTION ================= -->
+  <rect x="24" y="594" width="812" height="88" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.8"/>
+  <text x="44" y="618" font-size="12.5" font-weight="700" fill="#B91C1C">CÁCH BIẾN MODEL C THÀNH CIRCULAR — và tại sao nó khó tự phát hiện</text>
+
+  <text x="44" y="642" font-size="10.5" fill="#7F1D1D">Lặp vô hạn: chọn bias sơ bộ → thấy DOL không hợp → sửa bias → thấy DOL hợp → dừng.</text>
+  <text x="44" y="660" font-size="10.5" font-weight="700" fill="#991B1B">Kết quả "khớp" đó là ARTIFACT CỦA VIỆC LẶP, không phải thông tin thị trường — và nó cảm thấy y hệt như một phân tích tốt.</text>
+  <text x="44" y="676" font-size="10" font-style="italic" fill="#B91C1C">Chỉ stopping rule "lặp tối đa một lần + ghi lý do" mới phân biệt được hai trường hợp này.</text>
+</svg>

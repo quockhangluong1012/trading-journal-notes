@@ -1,0 +1,53 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Đánh dấu RDRB — lỗi #1 làm ĐẢO NGƯỢC vùng</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">SAI: kẻ zone trên thân 2 nến RDRB. ĐÚNG: kẻ zone giữa wick nến TRƯỚC và nến SAU.</text>
+
+  <!-- LEFT panel: WRONG -->
+  <rect x="24" y="72" width="344" height="316" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="94" font-size="13" font-weight="700" fill="#DC2626">SAI — đánh dấu trên 2 nến RDRB</text>
+  <!-- wrong zone across RDRB bodies -->
+  <rect x="55" y="152" width="255" height="90" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="150" y="145" font-size="10.5" font-weight="700" fill="#DC2626">zone SAI (trên thân RDRB)</text>
+  <!-- before -->
+  <line x1="75" y1="227" x2="75" y2="312" stroke="#16A34A" stroke-width="1.5"/><rect x="62" y="242" width="26" height="50" fill="#16A34A"/>
+  <!-- A -->
+  <line x1="140" y1="162" x2="140" y2="257" stroke="#16A34A" stroke-width="1.5"/><rect x="127" y="212" width="26" height="30" fill="#16A34A"/>
+  <!-- B -->
+  <line x1="205" y1="142" x2="205" y2="217" stroke="#16A34A" stroke-width="1.5"/><rect x="192" y="152" width="26" height="60" fill="#16A34A"/>
+  <!-- after -->
+  <line x1="270" y1="117" x2="270" y2="192" stroke="#16A34A" stroke-width="1.5"/><rect x="257" y="127" width="26" height="25" fill="#16A34A"/>
+  <!-- retrace slicing through wrong zone -->
+  <path d="M283 130 Q320 150 330 200" fill="none" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <line x1="330" y1="200" x2="330" y2="300" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <path d="M330 300 l -6 -14 l 12 0 z" fill="#DC2626"/>
+  <text x="300" y="330" font-size="10.5" font-weight="700" fill="#DC2626">giá xuyên qua</text>
+  <text x="60" y="366" font-size="10.5" fill="#374151">Zone lệch chỗ → không có support → bị quét.</text>
+
+  <!-- RIGHT panel: CORRECT -->
+  <rect x="392" y="72" width="344" height="316" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="94" font-size="13" font-weight="700" fill="#166534">ĐÚNG — wick nến trước &amp; nến sau</text>
+  <!-- correct zone between wicks: y 192-227 -->
+  <rect x="423" y="192" width="255" height="35" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.2"/>
+  <text x="560" y="215" font-size="10.5" font-weight="700" fill="#1D4ED8">RDRB range</text>
+  <!-- before -->
+  <line x1="443" y1="227" x2="443" y2="312" stroke="#16A34A" stroke-width="1.5"/><rect x="430" y="242" width="26" height="50" fill="#16A34A"/>
+  <circle cx="443" cy="227" r="5" fill="none" stroke="#1D4ED8" stroke-width="2.3"/>
+  <text x="400" y="252" font-size="9.5" fill="#1D4ED8">wick trước</text>
+  <!-- A -->
+  <line x1="508" y1="162" x2="508" y2="257" stroke="#16A34A" stroke-width="1.5"/><rect x="495" y="212" width="26" height="30" fill="#16A34A"/>
+  <!-- B -->
+  <line x1="573" y1="142" x2="573" y2="217" stroke="#16A34A" stroke-width="1.5"/><rect x="560" y="152" width="26" height="60" fill="#16A34A"/>
+  <!-- after -->
+  <line x1="638" y1="117" x2="638" y2="192" stroke="#16A34A" stroke-width="1.5"/><rect x="625" y="127" width="26" height="25" fill="#16A34A"/>
+  <circle cx="638" cy="192" r="5" fill="none" stroke="#1D4ED8" stroke-width="2.3"/>
+  <text x="648" y="184" font-size="9.5" fill="#1D4ED8">wick sau</text>
+  <!-- retrace bounces off zone -->
+  <path d="M651 130 Q690 160 700 208" fill="none" stroke="#166534" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <path d="M700 208 Q705 170 715 120" fill="none" stroke="#166534" stroke-width="1.8"/>
+  <path d="M715 120 l -8 12 l 12 2 z" fill="#166534"/>
+  <text x="600" y="360" font-size="10.5" font-weight="700" fill="#166534">retest → phản ứng đúng (support)</text>
+
+  <text x="24" y="418" font-size="11.5" font-weight="700" fill="#1F2937">Vì sao đảo ngược? Thân 2 nến RDRB nằm CAO hơn range thật; đánh dấu ở đó đặt zone sai phía →</text>
+  <text x="24" y="440" font-size="11.5" fill="#374151">giá không tôn trọng, stop bị hunt. Range thật ẩn giữa wick nến trước &amp; nến sau, thấp hơn — mới là POI.</text>
+</svg>

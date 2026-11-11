@@ -1,0 +1,82 @@
+<svg viewBox="0 0 860 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="560" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Bài toán competing risks — câu hỏi đúng để backtest DOL</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Không hỏi "giá có chạm liquidity không?" mà hỏi "U hay L chạm TRƯỚC trong horizon H?"</text>
+
+  <!-- ====== MAIN PANEL ====== -->
+  <rect x="24" y="74" width="812" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- cutoff -->
+  <line x1="90" y1="98" x2="90" y2="384" stroke="#DC2626" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="96" y="112" font-size="10.5" font-weight="700" fill="#B91C1C">cutoff t</text>
+  <text x="96" y="126" font-size="9.5" fill="#991B1B">chỉ dùng data ≤ t</text>
+
+  <!-- horizon -->
+  <line x1="762" y1="98" x2="762" y2="384" stroke="#6B7280" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="756" y="112" font-size="10.5" font-weight="700" fill="#374151" text-anchor="end">hết horizon H</text>
+
+  <!-- UPPER line -->
+  <line x1="60" y1="150" x2="800" y2="150" stroke="#DC2626" stroke-width="2"/>
+  <text x="66" y="142" font-size="11" font-weight="700" fill="#B91C1C">U — upper candidate (BSL / PDH / equal highs)</text>
+
+  <!-- LOWER line -->
+  <line x1="60" y1="350" x2="800" y2="350" stroke="#16A34A" stroke-width="2"/>
+  <text x="66" y="368" font-size="11" font-weight="700" fill="#15803D">L — lower candidate (SSL / PDL / equal lows)</text>
+
+  <!-- price start -->
+  <circle cx="90" cy="250" r="5" fill="#1F2937"/>
+  <text x="100" y="246" font-size="10" font-weight="700" fill="#1F2937">price tại t</text>
+
+  <!-- distance arrows -->
+  <line x1="150" y1="232" x2="150" y2="156" stroke="#9CA3AF" stroke-width="1.3"/>
+  <polygon points="150,152 146,161 154,161" fill="#9CA3AF"/>
+  <text x="156" y="200" font-size="9.5" fill="#6B7280">d_own</text>
+
+  <line x1="196" y1="268" x2="196" y2="344" stroke="#9CA3AF" stroke-width="1.3"/>
+  <polygon points="196,348 192,339 200,339" fill="#9CA3AF"/>
+  <text x="202" y="312" font-size="9.5" fill="#6B7280">d_opp (= d_opposing)</text>
+
+  <!-- SCENARIO 1: U first (green check) -->
+  <path d="M90 250 L170 240 L230 200 L300 175 L360 158 L420 152" fill="none" stroke="#16A34A" stroke-width="2"/>
+  <circle cx="420" cy="152" r="5" fill="#16A34A"/>
+  <text x="430" y="148" font-size="10" font-weight="700" fill="#15803D">U chạm trước → label +1</text>
+
+  <!-- SCENARIO 2: L first (red x) -->
+  <path d="M90 250 L180 262 L250 300 L320 330 L390 346" fill="none" stroke="#DC2626" stroke-width="2"/>
+  <circle cx="390" cy="348" r="5" fill="#DC2626"/>
+  <text x="400" y="336" font-size="10" font-weight="700" fill="#B91C1C">L chạm trước → label −1</text>
+
+  <!-- SCENARIO 3: neither -->
+  <path d="M90 250 L200 258 L300 246 L420 256 L540 248 L660 254 L760 250" fill="none" stroke="#6B7280" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="620" y="272" font-size="10" font-weight="700" fill="#4B5563">không chạm → label 0</text>
+
+  <!-- SCENARIO 4: tie -->
+  <path d="M560 262 L590 145 L604 355 L618 250" fill="none" stroke="#D97706" stroke-width="2"/>
+  <rect x="580" y="120" width="60" height="30" rx="5" fill="#FEF3C7" stroke="#D97706"/>
+  <text x="610" y="139" font-size="9.5" font-weight="700" fill="#B45309" text-anchor="middle">tie</text>
+  <text x="646" y="196" font-size="9.5" fill="#B45309">cả hai trong</text>
+  <text x="646" y="209" font-size="9.5" fill="#B45309">cùng một bar</text>
+
+  <!-- ====== BOTTOM: THREE WARNINGS ====== -->
+  <rect x="24" y="420" width="264" height="118" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="44" y="444" font-size="11" font-weight="700" fill="#B91C1C">⚠ Xử lý "tie" — hay bị làm sai</text>
+  <text x="44" y="466" font-size="10" fill="#7F1D1D">Với bar data, tie phải xử lý</text>
+  <text x="44" y="481" font-size="10" fill="#7F1D1D">CONSERVATIVE: loại khỏi mẫu,</text>
+  <text x="44" y="496" font-size="10" fill="#7F1D1D">hoặc gán cho phía BẤT LỢI</text>
+  <text x="44" y="511" font-size="10" fill="#7F1D1D">cho mô hình.</text>
+  <text x="44" y="530" font-size="9.5" font-style="italic" fill="#991B1B">Không giả định target thuận lợi chạm trước.</text>
+
+  <rect x="298" y="420" width="264" height="118" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+  <text x="318" y="444" font-size="11" font-weight="700" fill="#B45309">★ Metric trung tâm</text>
+  <text x="318" y="466" font-size="10.5" font-weight="700" fill="#92400E">target-before-opposite-target</text>
+  <text x="318" y="486" font-size="10" fill="#78350F">Hit rate thuần tuý KHÔNG trả lời</text>
+  <text x="318" y="501" font-size="10" fill="#78350F">được "X thay vì Y": một target có</text>
+  <text x="318" y="516" font-size="10" fill="#78350F">thể hit 70% mà đối thủ hit 75%.</text>
+
+  <rect x="572" y="420" width="264" height="118" rx="8" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="592" y="444" font-size="11" font-weight="700" fill="#1D4ED8">★ Biến gần nhất với DOL</text>
+  <text x="592" y="466" font-size="10.5" font-weight="700" fill="#1E40AF">asymmetry_ratio = d_own / d_opp</text>
+  <text x="592" y="486" font-size="10" fill="#1E3A8A">Nếu DOL có nội dung, nó phải nằm</text>
+  <text x="592" y="501" font-size="10" fill="#1E3A8A">ở đây. Baseline nearest-first cho</text>
+  <text x="592" y="516" font-size="10" fill="#1E3A8A">tỷ lệ ≈ 1 một cách tầm thường.</text>
+</svg>

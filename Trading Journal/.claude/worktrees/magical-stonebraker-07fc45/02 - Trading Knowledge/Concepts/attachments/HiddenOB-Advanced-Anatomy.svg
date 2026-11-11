@@ -1,0 +1,64 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Giải phẫu Hidden Order Block — OB ẩn trong wick chồng nhau</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">HTF chỉ thấy 2 nến cùng màu wick chồng lên nhau. Zoom LTF vào vùng overlap → một OB sạch hiện ra.</text>
+
+  <!-- HTF panel -->
+  <rect x="24" y="72" width="360" height="360" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="94" font-size="12.5" font-weight="700" fill="#1F2937">HTF (D1/H4) — "hidden in plain sight"</text>
+
+  <!-- context bearish candles leading into pair -->
+  <line x1="70" y1="110" x2="70" y2="150" stroke="#DC2626" stroke-width="1.4"/><rect x="64.5" y="118" width="11" height="26" fill="#DC2626"/>
+  <line x1="95" y1="128" x2="95" y2="175" stroke="#DC2626" stroke-width="1.4"/><rect x="89.5" y="140" width="11" height="30" fill="#DC2626"/>
+  <line x1="120" y1="150" x2="120" y2="235" stroke="#DC2626" stroke-width="1.4"/><rect x="114.5" y="162" width="11" height="55" fill="#DC2626"/>
+
+  <!-- hidden OB range box -->
+  <rect x="140" y="120" width="52" height="130" fill="#FEF3C7" stroke="#B45309" stroke-dasharray="4 3"/>
+
+  <!-- candle 1 (green): high wick 120, body 155-205, low wick 235 -->
+  <line x1="150" y1="120" x2="150" y2="235" stroke="#16A34A" stroke-width="1.4"/><rect x="144.5" y="155" width="11" height="50" fill="#16A34A"/>
+  <!-- candle 2 (green): high wick 138, body 150-200, low wick 250 -->
+  <line x1="175" y1="138" x2="175" y2="250" stroke="#16A34A" stroke-width="1.4"/><rect x="169.5" y="150" width="11" height="50" fill="#16A34A"/>
+
+  <!-- distal/proximal guide lines -->
+  <line x1="140" y1="120" x2="330" y2="120" stroke="#B45309" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="196" y="118" font-size="9.5" fill="#B45309">high nến 1 (distal trên)</text>
+  <line x1="140" y1="250" x2="330" y2="250" stroke="#B45309" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="196" y="264" font-size="9.5" fill="#B45309">low nến 2 (distal dưới)</text>
+
+  <text x="40" y="300" font-size="10.5" font-weight="700" fill="#B45309">Hidden OB range = low wick nến 2 → high wick nến 1</text>
+  <text x="40" y="316" font-size="10" fill="#6B7280">Cả hai nến CÙNG MÀU (xanh) và wick CHỒNG nhau.</text>
+
+  <!-- continuation up -->
+  <line x1="205" y1="130" x2="205" y2="175" stroke="#16A34A" stroke-width="1.4"/><rect x="199.5" y="140" width="11" height="35" fill="#16A34A"/>
+  <line x1="230" y1="100" x2="230" y2="150" stroke="#16A34A" stroke-width="1.4"/><rect x="224.5" y="112" width="11" height="35" fill="#16A34A"/>
+
+  <!-- zoom arrow -->
+  <path d="M300 200 Q370 210 410 235" fill="none" stroke="#1D4ED8" stroke-width="2" stroke-dasharray="5 3"/>
+  <polygon points="410,235 400,229 401,240" fill="#1D4ED8"/>
+  <text x="305" y="345" font-size="11" font-weight="700" fill="#1D4ED8">zoom LTF vào overlap ⤵</text>
+
+  <!-- LTF inset -->
+  <rect x="416" y="90" width="320" height="342" rx="8" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.3"/>
+  <text x="432" y="112" font-size="12.5" font-weight="700" fill="#1D4ED8">LTF (M5/M15) bên trong vùng overlap</text>
+
+  <!-- clean bullish OB: last down candle then displacement up -->
+  <line x1="460" y1="150" x2="460" y2="230" stroke="#DC2626" stroke-width="1.4"/><rect x="454.5" y="165" width="11" height="45" fill="#DC2626"/>
+  <line x1="485" y1="175" x2="485" y2="300" stroke="#DC2626" stroke-width="1.4"/><rect x="479.5" y="200" width="11" height="55" fill="#DC2626"/>
+  <!-- OB candle (last down before up) -->
+  <rect x="502" y="235" width="130" height="55" fill="#DBEAFE" stroke="#1D4ED8" stroke-dasharray="4 3"/>
+  <line x1="515" y1="215" x2="515" y2="300" stroke="#DC2626" stroke-width="1.4"/><rect x="509.5" y="240" width="11" height="45" fill="#DC2626"/>
+  <text x="540" y="228" font-size="10" font-weight="700" fill="#1D4ED8">Order Block sạch (nến giảm cuối)</text>
+  <!-- displacement up -->
+  <line x1="540" y1="150" x2="540" y2="260" stroke="#16A34A" stroke-width="1.4"/><rect x="534.5" y="165" width="11" height="80" fill="#16A34A"/>
+  <line x1="565" y1="115" x2="565" y2="200" stroke="#16A34A" stroke-width="1.4"/><rect x="559.5" y="128" width="11" height="60" fill="#16A34A"/>
+  <line x1="590" y1="130" x2="590" y2="180" stroke="#16A34A" stroke-width="1.4"/><rect x="584.5" y="140" width="11" height="35" fill="#16A34A"/>
+  <line x1="615" y1="150" x2="615" y2="195" stroke="#16A34A" stroke-width="1.4"/><rect x="609.5" y="160" width="11" height="30" fill="#16A34A"/>
+
+  <line x1="502" y1="235" x2="700" y2="235" stroke="#166534" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="502" y="360" font-size="10.5" font-weight="700" fill="#166534">Proximal (mép gần) = điểm vào; Distal (mép xa) = stop</text>
+  <text x="502" y="378" font-size="10" fill="#6B7280">OB "ẩn" trên HTF nhưng RÕ trên LTF — đây là edge.</text>
+  <text x="502" y="396" font-size="10" fill="#6B7280">Displacement rời OB xác nhận đây là vùng thật.</text>
+
+  <rect x="24" y="440" width="712" height="0" fill="none"/>
+</svg>

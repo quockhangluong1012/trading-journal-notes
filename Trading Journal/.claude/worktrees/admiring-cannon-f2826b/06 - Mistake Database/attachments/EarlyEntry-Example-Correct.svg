@@ -1,0 +1,41 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Vi du dung: doi sweep + MSS roi moi entry</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">HTF discount POI -&gt; quet SSL -&gt; displacement + MSS -&gt; entry tai FVG</text>
+
+  <rect x="24" y="76" width="712" height="352" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- HTF discount zone -->
+  <rect x="50" y="130" width="660" height="60" fill="#3B82F6" fill-opacity="0.08" stroke="#1D4ED8" stroke-opacity="0.5"/>
+  <text x="58" y="124" font-size="12" fill="#1D4ED8" font-weight="600">HTF Discount POI</text>
+
+  <!-- equal lows -->
+  <line x1="60" y1="330" x2="700" y2="330" stroke="#DC2626" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="66" y="322" font-size="11.5" fill="#B91C1C" font-weight="600">SSL - Equal Lows</text>
+
+  <!-- price path: enters discount, wicks below equal lows, closes back inside, MSS, FVG entry -->
+  <path d="M 70 160 L 150 200 L 220 175 L 290 230 L 340 210 L 400 280 L 430 345 L 450 300 L 480 250 L 540 170 L 610 120 L 680 100"
+        fill="none" stroke="#374151" stroke-width="1.8"/>
+
+  <!-- sweep wick marker -->
+  <circle cx="430" cy="345" r="5" fill="#D97706"/>
+  <text x="380" y="366" font-size="11.5" fill="#B45309" font-weight="600">Sweep: wick qua SSL, dong lai ben trong</text>
+
+  <!-- MSS line -->
+  <line x1="290" y1="230" x2="480" y2="230" stroke="#16A34A" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="486" y="234" font-size="11" fill="#15803D" font-weight="600">MSS level</text>
+
+  <!-- FVG entry zone -->
+  <rect x="460" y="235" width="55" height="35" fill="#3B82F6" fill-opacity="0.16" stroke="#1D4ED8"/>
+  <text x="450" y="222" font-size="11" fill="#1D4ED8" font-weight="600">FVG entry</text>
+  <circle cx="480" cy="250" r="5" fill="#16A34A"/>
+  <polygon points="480,250 472,262 488,262" fill="#16A34A"/>
+
+  <!-- SL below sweep -->
+  <line x1="430" y1="352" x2="680" y2="352" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="486" y="368" font-size="10.5" fill="#B91C1C">SL duoi diem sweep</text>
+
+  <!-- target -->
+  <polygon points="680,100 670,118 692,116" fill="#16A34A"/>
+  <text x="600" y="90" font-size="11.5" fill="#15803D" font-weight="600">Displacement dung bias -&gt; ERL</text>
+</svg>

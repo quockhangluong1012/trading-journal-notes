@@ -1,0 +1,72 @@
+<svg viewBox="0 0 920 580" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="920" height="580" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="26" y="34" font-size="18" font-weight="700" fill="#1F2937">Cái gì có bằng chứng, cái gì không — trạng thái thật của lĩnh vực này</text>
+  <text x="26" y="55" font-size="13" fill="#6B7280">Cái có bằng chứng là các THÀNH PHẦN CƠ HỌC bên dưới. Cái không có bằng chứng là CHÍNH khái niệm dealing range.</text>
+
+  <!-- ===== LEFT : has evidence ===== -->
+  <rect x="25" y="76" width="425" height="368" rx="8" fill="#FFFFFF" stroke="#BBF7D0"/>
+  <rect x="38" y="88" width="200" height="24" rx="5" fill="#DCFCE7"/>
+  <text x="46" y="105" font-size="12.5" font-weight="700" fill="#15803D">CÓ bằng chứng (kèm giới hạn)</text>
+
+  <rect x="38" y="122" width="399" height="72" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="48" y="140" font-size="10.5" font-weight="700" fill="#15803D">Lệnh chờ tập trung ở mức tròn</text>
+  <text x="48" y="156" font-size="10" fill="#374151">Osler 2003, Journal of Finance — order book THẬT của một dealing bank.</text>
+  <text x="48" y="171" font-size="10" fill="#374151">Đuôi “00”: ~8,7% vs null ~1%; TP 9,3% vs SL 4,4%.</text>
+  <text x="48" y="187" font-size="10" font-style="italic" fill="#B45309">Giới hạn: KHÔNG chứng minh S/R sinh lời; 1 bank; đo nơi đặt lệnh, không đo hành vi giá.</text>
+
+  <rect x="38" y="202" width="399" height="62" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="48" y="220" font-size="10.5" font-weight="700" fill="#15803D">Stop bị kích hoạt làm trend TĂNG TỐC</text>
+  <text x="48" y="236" font-size="10" fill="#374151">Osler 2005, JIMF — đây là cơ chế [B] đứng sau “displacement sau sweep”.</text>
+  <text x="48" y="252" font-size="10" font-style="italic" fill="#B45309">Giới hạn: ý nghĩa theo GIỜ, không theo ngày. Không có con số tần suất cascade.</text>
+
+  <rect x="38" y="272" width="399" height="62" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="48" y="290" font-size="10.5" font-weight="700" fill="#15803D">Mức S/R trùng đỉnh độ sâu trên order book</text>
+  <text x="48" y="306" font-size="10" fill="#374151">Kavajecz &amp; Odders-White 2004, RFS — đo limit order book NYSE.</text>
+  <text x="48" y="322" font-size="10" font-style="italic" fill="#B45309">Giới hạn: khung của họ là market efficiency — nói về CUNG THANH KHOẢN, không về hướng giá.</text>
+
+  <rect x="38" y="342" width="399" height="62" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="48" y="360" font-size="10.5" font-weight="700" fill="#15803D">Rào cản tâm lý ở mức tròn</text>
+  <text x="48" y="376" font-size="10" fill="#374151">De Grauwe &amp; Decupere 1992 — giá kháng lại mức 130, 140… ở USD/JPY.</text>
+  <text x="48" y="392" font-size="10" font-style="italic" fill="#B45309">Giới hạn: với USD/DM thì “less clear-cut”. Không phải kết quả lợi nhuận.</text>
+
+  <text x="38" y="424" font-size="10" fill="#6B7280">→ Tất cả đều là bằng chứng về việc LỆNH TẬP TRUNG Ở ĐÂU. Không cái nào là bằng chứng</text>
+  <text x="38" y="438" font-size="10" fill="#6B7280">cho việc một dealing range cụ thể có edge.</text>
+
+  <!-- ===== RIGHT : no evidence ===== -->
+  <rect x="470" y="76" width="425" height="368" rx="8" fill="#FFFFFF" stroke="#FECACA"/>
+  <rect x="483" y="88" width="230" height="24" rx="5" fill="#FEE2E2"/>
+  <text x="491" y="105" font-size="12.5" font-weight="700" fill="#B91C1C">KHÔNG có bằng chứng bình duyệt</text>
+
+  <rect x="483" y="122" width="399" height="86" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="493" y="140" font-size="10.5" font-weight="700" fill="#B91C1C">Không có bài bình duyệt nào kiểm định ICT/SMC</text>
+  <text x="493" y="156" font-size="10" fill="#374151">Bài gần nhất (Oukhouya et al. 2026, Informatica) tự viết rằng ICT/SMC</text>
+  <text x="493" y="171" font-size="10" fill="#374151">“lack rigorous statistical validation, standardized definitions…”</text>
+  <text x="493" y="187" font-size="10" font-weight="700" fill="#B91C1C">Ablation của họ: calibration và CVaR mới là driver — KHÔNG phải order block/FVG.</text>
+  <text x="493" y="202" font-size="10" fill="#6B7280">Một thị trường, một khung thời gian.</text>
+
+  <rect x="483" y="216" width="399" height="72" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="493" y="234" font-size="10.5" font-weight="700" fill="#B91C1C">Fibonacci: test bình duyệt duy nhất là PHỦ ĐỊNH</text>
+  <text x="493" y="250" font-size="10" fill="#374151">Tsinaslanidis et al. 2022, ESWA — giá bounce ở mức Fib NGANG BẰNG mức không-Fib;</text>
+  <text x="493" y="265" font-size="10" fill="#374151">rule Fibonacci thất bại so với mức chọn ngẫu nhiên.</text>
+  <text x="493" y="281" font-size="10" font-weight="700" fill="#B45309">→ Áp trực tiếp vào OTE 62–79%: đây là lý do OTE phải là QUY ƯỚC, không phải edge.</text>
+
+  <rect x="483" y="296" width="399" height="58" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="493" y="314" font-size="10.5" font-weight="700" fill="#B91C1C">Mức 50% (EQ): phép thử gần nhất cho kết quả phủ định</text>
+  <text x="493" y="330" font-size="10" fill="#374151">Batchelor &amp; Ramyar 2006 (KHÔNG bình duyệt): các tỷ lệ “có ý nghĩa” không nhiều</text>
+  <text x="493" y="345" font-size="10" fill="#374151">hơn mức ngẫu nhiên kỳ vọng. Và 50% không phải tỷ lệ Fibonacci — gốc là Dow Theory.</text>
+
+  <rect x="483" y="362" width="399" height="42" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="493" y="380" font-size="10.5" font-weight="700" fill="#B91C1C">Value area 70% · “ICT win rate 75–85%”</text>
+  <text x="493" y="396" font-size="10" fill="#374151">Quy ước ≈ 1 độ lệch chuẩn · và con số vendor. Không có nguồn học thuật.</text>
+
+  <text x="483" y="424" font-size="10" fill="#6B7280">→ Không có nghĩa “đừng dùng”. Có nghĩa: dùng như KHUNG CHUẨN HOÁ, không như LÝ DO.</text>
+  <text x="483" y="438" font-size="10" fill="#6B7280">Mọi con số ngưỡng trong bài là practice number — điểm khởi đầu để backtest.</text>
+
+  <!-- footer -->
+  <rect x="25" y="458" width="870" height="106" rx="8" fill="#1F2937" opacity="0.05"/>
+  <text x="38" y="480" font-size="11.5" font-weight="700" fill="#1F2937">Điều này thay đổi cách dùng dealing range như thế nào</text>
+  <text x="38" y="500" font-size="10.5" fill="#374151">Không thay đổi <tspan font-weight="700">chức năng chuẩn hoá</tspan> (biến giá tuyệt đối thành pd so sánh được) — chức năng đó đúng theo thiết kế, không cần bằng chứng.</text>
+  <text x="38" y="518" font-size="10.5" fill="#374151">Không thay đổi <tspan font-weight="700">giá trị quy trình</tspan> (buộc chốt range trước, viết invalidation trước, timestamp) — đây là giá trị phương pháp luận.</text>
+  <text x="38" y="536" font-size="10.5" fill="#374151">Thay đổi <tspan font-weight="700">tầng dự báo</tspan>: mọi tuyên bố “range này có edge” phải hạ xuống tầng giả thuyết [E] cho tới khi tự kiểm định trên dữ liệu của chính bạn.</text>
+  <text x="38" y="556" font-size="10.5" font-weight="700" fill="#B91C1C">Và đó chính là lý do §29–§32 tồn tại: nếu không ai kiểm định giúp bạn, bạn phải tự làm — hoặc chấp nhận dùng nó như một ngôn ngữ, không phải một edge.</text>
+</svg>

@@ -1,0 +1,106 @@
+<svg viewBox="0 0 860 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="640" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Epistemic ladder — sáu bậc, và ba kiểu nhảy bậc sai</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Mục tiêu: tránh nhầm "Tôi thấy X trên chart" với "Tôi biết tại sao X xảy ra".</text>
+
+  <!-- ============ LADDER ============ -->
+  <!-- RUNG 6 -->
+  <rect x="24" y="76" width="440" height="62" rx="7" fill="#0F172A" stroke="#0F172A" stroke-width="1.5"/>
+  <text x="40" y="98" font-size="10" font-weight="700" fill="#7DD3FC">BẬC 6</text>
+  <text x="40" y="116" font-size="12" font-weight="700" fill="#F8FAFC">EMPIRICAL TEST</text>
+  <text x="40" y="131" font-size="9.5" fill="#94A3B8">thí nghiệm có thể bác bỏ — competing risks, baseline, OOS</text>
+
+  <line x1="244" y1="138" x2="244" y2="152" stroke="#6B7280" stroke-width="1.8"/>
+  <polygon points="244,156 239,146 249,146" fill="#6B7280"/>
+
+  <!-- RUNG 5 -->
+  <rect x="24" y="158" width="440" height="62" rx="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.8"/>
+  <text x="40" y="180" font-size="10" font-weight="700" fill="#B91C1C">BẬC 5</text>
+  <text x="40" y="198" font-size="12" font-weight="700" fill="#B91C1C">CAUSAL CLAIM</text>
+  <text x="40" y="213" font-size="9.5" fill="#7F1D1D">"giá bị đẩy tới đó ĐỂ lấy stops" — cần test mới được phát biểu</text>
+
+  <line x1="244" y1="220" x2="244" y2="234" stroke="#6B7280" stroke-width="1.8"/>
+  <polygon points="244,238 239,228 249,228" fill="#6B7280"/>
+
+  <!-- RUNG 4 -->
+  <rect x="24" y="240" width="440" height="62" rx="7" fill="#FFFFFF" stroke="#D97706" stroke-width="1.8"/>
+  <text x="40" y="262" font-size="10" font-weight="700" fill="#B45309">BẬC 4</text>
+  <text x="40" y="280" font-size="12" font-weight="700" fill="#B45309">PARTICIPANT-MECHANISM HYPOTHESIS</text>
+  <text x="40" y="295" font-size="9.5" fill="#92400E">cơ chế CÓ THỂ giải thích quan sát — nêu được, chưa tin được</text>
+
+  <line x1="244" y1="302" x2="244" y2="316" stroke="#6B7280" stroke-width="1.8"/>
+  <polygon points="244,320 239,310 249,310" fill="#6B7280"/>
+
+  <!-- RUNG 3 -->
+  <rect x="24" y="322" width="440" height="62" rx="7" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.8"/>
+  <text x="40" y="344" font-size="10" font-weight="700" fill="#1D4ED8">BẬC 3</text>
+  <text x="40" y="362" font-size="12" font-weight="700" fill="#1D4ED8">ICT INTERPRETATION</text>
+  <text x="40" y="377" font-size="9.5" fill="#1E3A8A">gán nhãn theo framework: DOL, BSL/SSL, Judas, inducement</text>
+
+  <line x1="244" y1="384" x2="244" y2="398" stroke="#6B7280" stroke-width="1.8"/>
+  <polygon points="244,402 239,392 249,392" fill="#6B7280"/>
+
+  <!-- RUNG 2 -->
+  <rect x="24" y="404" width="440" height="62" rx="7" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.8"/>
+  <text x="40" y="426" font-size="10" font-weight="700" fill="#15803D">BẬC 2</text>
+  <text x="40" y="444" font-size="12" font-weight="700" fill="#15803D">STRUCTURAL DESCRIPTION</text>
+  <text x="40" y="459" font-size="9.5" fill="#166534">mô tả khách quan: HH/HL, mức nào, thứ tự nào, khoảng cách</text>
+
+  <line x1="244" y1="466" x2="244" y2="480" stroke="#6B7280" stroke-width="1.8"/>
+  <polygon points="244,484 239,474 249,474" fill="#6B7280"/>
+
+  <!-- RUNG 1 -->
+  <rect x="24" y="486" width="440" height="62" rx="7" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="40" y="508" font-size="10" font-weight="700" fill="#15803D">BẬC 1</text>
+  <text x="40" y="526" font-size="12" font-weight="700" fill="#15803D">OBSERVABLE PRICE DATA</text>
+  <text x="40" y="541" font-size="9.5" fill="#166534">OHLC, volume, timestamp — nền duy nhất không thể tranh cãi</text>
+
+  <text x="40" y="575" font-size="10.5" font-weight="700" fill="#334155">Nguồn gốc của mọi lỗi: phát biểu ở bậc N+2</text>
+  <text x="40" y="592" font-size="10.5" font-weight="700" fill="#334155">trong khi bằng chứng chỉ ở bậc N.</text>
+  <text x="40" y="614" font-size="10" fill="#6B7280">Ladder không cấm bạn SUY LUẬN — nó cấm bạn</text>
+  <text x="40" y="628" font-size="10" fill="#6B7280">TRÌNH BÀY suy luận như thể đó là quan sát.</text>
+
+  <!-- ============ SKIP FAULTS ============ -->
+  <rect x="484" y="76" width="352" height="472" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.8"/>
+  <rect x="484" y="76" width="352" height="34" rx="8" fill="#FEE2E2"/>
+  <text x="660" y="99" font-size="12" font-weight="700" fill="#B91C1C" text-anchor="middle">BA KIỂU NHẢY BẬC SAI</text>
+
+  <!-- SKIP 1 -->
+  <rect x="500" y="122" width="320" height="132" rx="7" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.4"/>
+  <text x="514" y="142" font-size="10.5" font-weight="700" fill="#B91C1C">① INTENT LEAP — bậc 2 → bậc 5</text>
+  <text x="514" y="162" font-size="10" fill="#7F1D1D">"Giá wick qua đỉnh rồi quay đầu"</text>
+  <text x="514" y="177" font-size="10" fill="#7F1D1D">→ "Smart money đã lấy stops của retail"</text>
+
+  <rect x="514" y="188" width="292" height="54" rx="5" fill="#FFFFFF" stroke="#FECACA"/>
+  <text x="524" y="205" font-size="9.5" font-weight="700" fill="#B91C1C">Vì sao sai:</text>
+  <text x="524" y="220" font-size="9.5" fill="#7F1D1D">wick chỉ chứng minh giá ĐÃ giao dịch ở đó. Nó không</text>
+  <text x="524" y="234" font-size="9.5" fill="#7F1D1D">chứng minh absorption, inventory transfer, hay ý định.</text>
+
+  <!-- SKIP 2 -->
+  <rect x="500" y="266" width="320" height="132" rx="7" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.4"/>
+  <text x="514" y="286" font-size="10.5" font-weight="700" fill="#B91C1C">② LABEL LEAP — bậc 1 → bậc 3</text>
+  <text x="514" y="306" font-size="10" fill="#7F1D1D">"Có hai đỉnh cao gần bằng nhau"</text>
+  <text x="514" y="321" font-size="10" fill="#7F1D1D">→ "Đây là equal highs = BSL = DOL"</text>
+
+  <rect x="514" y="332" width="292" height="54" rx="5" fill="#FFFFFF" stroke="#FECACA"/>
+  <text x="524" y="349" font-size="9.5" font-weight="700" fill="#B91C1C">Vì sao sai:</text>
+  <text x="524" y="364" font-size="9.5" fill="#7F1D1D">"gần bằng nhau" phụ thuộc ε do bạn chọn. Đổi ε là đổi</text>
+  <text x="524" y="378" font-size="9.5" fill="#7F1D1D">số pool → đổi DOL. Chưa qua bậc 2 thì chưa có mô tả.</text>
+
+  <!-- SKIP 3 -->
+  <rect x="500" y="410" width="320" height="122" rx="7" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.4"/>
+  <text x="514" y="430" font-size="10.5" font-weight="700" fill="#B91C1C">③ CONFIRM LEAP — bậc 6 → bậc 5</text>
+  <text x="514" y="450" font-size="10" fill="#7F1D1D">"DOL hit 7/10 lần trong backtest của tôi"</text>
+  <text x="514" y="465" font-size="10" fill="#7F1D1D">→ "vậy giá THỰC SỰ bị hút về liquidity"</text>
+
+  <rect x="514" y="476" width="292" height="46" rx="5" fill="#FFFFFF" stroke="#FECACA"/>
+  <text x="524" y="493" font-size="9.5" font-weight="700" fill="#B91C1C">Vì sao sai:</text>
+  <text x="524" y="508" font-size="9.5" fill="#7F1D1D">hit rate cao có thể chỉ là DISTANCE. Chưa kiểm soát</text>
+  <text x="524" y="520" font-size="9.5" fill="#7F1D1D">distance bucket thì chưa chứng minh được cơ chế.</text>
+
+  <!-- ============ FIVE EXAMPLES ============ -->
+  <rect x="24" y="562" width="812" height="66" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="44" y="584" font-size="11.5" font-weight="700" fill="#334155">ÁP DỤNG VÀO DOL — viết đúng bậc cho mỗi phát biểu:</text>
+  <text x="44" y="604" font-size="9.5" fill="#4B5563">① "PDH chưa bị chạm" <tspan font-weight="700" fill="#15803D">[bậc 1]</tspan>  ② "cấu trúc D1 đang HH/HL" <tspan font-weight="700" fill="#15803D">[bậc 2]</tspan>  ③ "PDH là DOL của hôm nay" <tspan font-weight="700" fill="#1D4ED8">[bậc 3]</tspan></text>
+  <text x="44" y="620" font-size="9.5" fill="#4B5563">④ "stops cụm quanh PDH nên giá tăng tốc khi xuyên qua" <tspan font-weight="700" fill="#B45309">[bậc 4]</tspan>  ⑤ "giá được đẩy lên PDH để lấy thanh khoản" <tspan font-weight="700" fill="#B91C1C">[bậc 5 — CẦN TEST]</tspan></text>
+</svg>

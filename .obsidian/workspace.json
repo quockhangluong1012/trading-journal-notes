@@ -1,50 +1,73 @@
 {
   "main": {
-    "id": "2d515c283fee8fc8",
+    "id": "38c43ce02aab296c",
     "type": "split",
     "children": [
       {
-        "id": "795e894a248a402e",
+        "id": "244b04817fdbac79",
         "type": "tabs",
         "children": [
           {
-            "id": "2c9047c0aaf79ce9",
+            "id": "95f823fe17d7ff92",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Trading Journal/02 - Trading Knowledge/Concepts/19-Liquidity.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "19-Liquidity"
+            }
+          },
+          {
+            "id": "ec4295d2876fdd99",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Trading Journal/02 - Trading Knowledge/Concepts/09-Change-of-Character.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "09-Change-of-Character"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "97110599fd0c6fb7",
+    "id": "cd9a99f66276376f",
     "type": "split",
     "children": [
       {
-        "id": "389fbc18d6f2c077",
+        "id": "7fb6dfc6ed28599e",
         "type": "tabs",
         "children": [
           {
-            "id": "de0a408f513beab1",
+            "id": "9e4a3c2287dac48b",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "3b6aecb24aa3aa09",
+            "id": "87057cf505ce3cf8",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -52,7 +75,7 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -61,11 +84,14 @@
             }
           },
           {
-            "id": "b692c7b3a34543ea",
+            "id": "93bd190c46d32e58",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -74,40 +100,42 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 347.5
   },
   "right": {
-    "id": "b3d1e2d93cbba502",
+    "id": "d79b3885b3c30bea",
     "type": "split",
     "children": [
       {
-        "id": "9128e082c14a63a8",
+        "id": "0b7cefc382f73243",
         "type": "tabs",
         "children": [
           {
-            "id": "1af4ffabad719000",
+            "id": "b82910787a0dbfed",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
+                "file": "Trading Journal/02 - Trading Knowledge/Concepts/59-Daily-Bias.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
               "title": "Backlinks"
             }
           },
           {
-            "id": "00ce76ef526ace3e",
+            "id": "3acc73157a1d4aa1",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Trading Journal/09 - Goal Tracking/Goals/Short Term (3-6 months)/Sua he do - du lieu dang tin truoc khi dat gate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -116,7 +144,7 @@
             }
           },
           {
-            "id": "a7375db9fa29fd75",
+            "id": "f112dffb007bcb5d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +159,7 @@
             }
           },
           {
-            "id": "6d8f4fdb531d1828",
+            "id": "25a2fd045f39edd2",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,17 +173,30 @@
             }
           },
           {
-            "id": "6cf4c52a59009260",
+            "id": "84b9ccd1f3b29dbe",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Trading Journal/02 - Trading Knowledge/Concepts/09-Change-of-Character.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "Outline"
+            }
+          },
+          {
+            "id": "f632523e725140f2",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Trading Journal/02 - Trading Knowledge/Concepts/59-Daily-Bias.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties"
             }
           }
         ],
@@ -174,58 +215,57 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2c9047c0aaf79ce9",
+  "active": "ec4295d2876fdd99",
   "lastOpenFiles": [
-    "Untitled 1.base",
-    "Untitled.base",
-    "05 - Live Trading Journal/Screenschoots/2026/06/05/NDX-20260605-M5.png",
-    "05 - Live Trading Journal/Screenschoots/2026/06/05/NDX-20260605-M15.png",
-    "05 - Live Trading Journal/Screenschoots/2026/06/05/NDX-20260605-H1.png",
-    "05 - Live Trading Journal/Screenschoots/2026/06/05/NDX-20260605-D1.png",
-    "05 - Live Trading Journal/Screenschoots/2026/06/18/NDX-20260618-D1.png",
-    "05 - Live Trading Journal/Trades/2026/06/05/Loss - 01 - Trade 2026-06-05 NDX.md",
-    "05 - Live Trading Journal/Screenschoots/2026/06/05",
-    "Pasted image 20260619102151.png",
-    "Pasted image 20260619102153.png",
-    "05 - Live Trading Journal/Trades/2026/06/17/Loss - 04 - Trade 2026-06-17 NDX Long.md",
-    "08 - Templates/trade log.md",
-    "01 - Dashboard/00 - Trading Home.md",
-    "05 - Live Trading Journal/Trades/2026/06/05",
-    "05 - Live Trading Journal/Trades/2026/06/18/Loss - 01 - Trade 2026-06-18 NDX Short.md",
-    "05 - Live Trading Journal/Screenschoots/2026/06/17/NDX-20260617-D1.png",
-    "05 - Live Trading Journal/Screenschoots/2026/06/17/NDX-20260617-M5.png",
-    "05 - Live Trading Journal/Screenschoots/2026/06/17/NDX-20260617-H1.png",
-    "05 - Live Trading Journal/Trades/2026/06/17/Loss - 03 - Trade 2026-06-17 EURUSD Long.md",
-    "05 - Live Trading Journal/Trades/2026/06/17/Loss - 02 - Trade 2026-06-17 GBPUSD Long.md",
-    "05 - Live Trading Journal/Trades/2026/06/17/Loss - 01 - Trade 2026-06-17 EURUSD Long.md",
-    "05 - Live Trading Journal/Trades/2026/06/12/Win - 01 - Trade 2026-06-17 NDX Long.md",
-    "01 - Dashboard/01 - Loss Review Dashboard.md",
-    "01 - Dashboard/03 - Performance Dashboard.md",
-    "01 - Dashboard/04 - Process Quality Dashboard.md",
-    "01 - Dashboard/05 - ICT 2022 Model Review Dashboard.md",
-    "01 - Dashboard/06 - PnL Calendar Interactive Fixed.md",
-    "01 - Dashboard/README - Dashboard Setup.md",
-    "01 - Dashboard/06 - PnL Calendar Dashboard V2.md",
-    "01 - Dashboard/README - PnL Calendar Setup.md",
-    "01 - Dashboard/06 - PnL Calendar Dashboard.md",
-    "01 - Dashboard/02 - Mistake Frequency Dashboard.md",
-    "01 - Dashboard/01 - Loss Review Dashboard.md.md",
-    "01 - Dashboard/00 - Trading Home.md.md",
-    "03 - Playbooks/3.1 - Checklists/ICT 2022 Entry Checklist.md",
-    "2026-06-19.md",
-    "06 - Mistake Database/Mistake - Wrong daily bias.md",
-    "06 - Mistake Database/Mistake - Not Have Market Structure Shift.md",
-    "05 - Live Trading Journal/Screenschoots/2026/06/18",
-    "08 - Templates",
-    "05 - Live Trading Journal/Trades/2026/06/12",
-    "08 - Dashboard",
-    "05 - Live Trading Journal/Screenschoots/2026/06/17",
-    "05 - Live Trading Journal/Screenschoots/2026/06",
-    "05 - Live Trading Journal/Screenschoots/2026",
-    "Untitled.canvas",
-    "Untitled 1.canvas"
+    "Trading Journal/Claude outputs/CHoCH-v2-figures/sheet.py",
+    "Trading Journal/Claude outputs/CHoCH-v2-figures/qa.js",
+    "Trading Journal/Claude outputs/CHoCH-v2-figures/figs4.py",
+    "Trading Journal/Claude outputs/CHoCH-v2-figures/figs3.py",
+    "Trading Journal/Claude outputs/CHoCH-v2-figures/figs2.py",
+    "Trading Journal/Claude outputs/CHoCH-v2-figures/figs1.py",
+    "Trading Journal/Claude outputs/CHoCH-v2-figures/chdraw.py",
+    "Trading Journal/Claude outputs/CHoCH-v2-figures/bbdraw.py",
+    "Trading Journal/Claude outputs/CHoCH-v2-figures/README.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/CHoCH-v2-54-Mental-Model-Cuoi-Cung.svg",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/CHoCH-v2-53-Dieu-Ta-Biet-va-Dieu-Ta-Gia-Dinh.svg",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/CHoCH-v2-52-Muoi-Sau-Loi-Thuong-Gap.svg",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/CHoCH-v2-51-Case-H-CHoCH-Displacement-Yeu.svg",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/CHoCH-v2-50-Case-G-CHoCH-Trong-Vung-Di-Ngang.svg",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/CHoCH-v2-49-Case-F-Internal-CHoCH-Trong-Trend-HTF.svg",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/CHoCH-v2-48-Case-E-Quet-Khong-CHoCH.svg",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/CHoCH-v2-47-Case-D-CHoCH-Khong-Co-Quet.svg",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/CHoCH-v2-46-Case-C-False-CHoCH-Internal.svg",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/CHoCH-v2-45-Case-B-Bearish-CHoCH-Hop-Le.svg",
+    "Trading Journal/Claude outputs/CHoCH-v2-figures",
+    "Trading Journal/Claude outputs/backups/09-Change-of-Character.2026-11-10.md.bak",
+    "Trading Journal/02 - Trading Knowledge/Concepts/attachments/_backup/01-Advance-Market-Structure-v1-2026-07-28.md.bak",
+    "Trading Journal/02 - Trading Knowledge/Concepts/08-Central-Bank-Dealers-Range.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/06-Breakaway-Gap.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/05-BOS-Break-of-Structure.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/04-Breaker-Block.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/03-Balanced-Price-Range.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/02-AMD.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/01-Advance-Market-Structure-Short-Term-Low-Intermediate-Term-Low-Long-Term-Low.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/31-Standard-Deviation.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/28-Rejection-Block.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/19-Liquidity.md",
+    "Trading Journal/Claude outputs/BB-v3-figures/README.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/09-Change-of-Character.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/12-Dealing-Range.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/13-FVG-Fair-Value-Gap.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/17-Inverse-Fair-Value-Gap-iFVG.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/18-Kill-Zones.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/20-Liquidity-Sweep.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/21-Liquidity-Void.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/21-Market-Structure-Shift.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/25-OB-Order-Block.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/33-Turtle-Soup.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/34-Vacuum-Block.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/59-Daily-Bias.md",
+    "Trading Journal/02 - Trading Knowledge/Concepts/45-ICT-Reversal-Patterns.md"
   ]
 }

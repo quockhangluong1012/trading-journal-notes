@@ -1,0 +1,41 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ma trận xếp hạng Unicorn — A+ / A / B / Bỏ qua</text>
+<text x="24" y="54" font-size="13" fill="#6B7280">Chấm điểm khách quan trước khi đặt lệnh; càng nhiều confluence, size càng tự tin.</text>
+<rect x="24" y="72" width="170" height="330" rx="8" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+<text x="109" y="100" font-size="20" font-weight="800" fill="#047857" text-anchor="middle">A+</text>
+<text x="109" y="122" font-size="11" fill="#065F46" text-anchor="middle">Full-size (≤0.5%)</text>
+<text x="36" y="150" font-size="11" fill="#374151">✓ FVG nằm TRỌN trong Breaker</text>
+<text x="36" y="172" font-size="11" fill="#374151">✓ Đúng premium/discount</text>
+<text x="36" y="194" font-size="11" fill="#374151">✓ Displacement sạch + CISD</text>
+<text x="36" y="216" font-size="11" fill="#374151">✓ Trong killzone/macro</text>
+<text x="36" y="238" font-size="11" fill="#374151">✓ Có SMT divergence</text>
+<text x="36" y="260" font-size="11" fill="#374151">✓ Thuận HTF DOL</text>
+<text x="36" y="290" font-size="11" fill="#065F46">→ ≥5/6 tiêu chí</text>
+<rect x="204" y="72" width="170" height="330" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+<text x="289" y="100" font-size="20" font-weight="800" fill="#1D4ED8" text-anchor="middle">A</text>
+<text x="289" y="122" font-size="11" fill="#1E40AF" text-anchor="middle">Size chuẩn</text>
+<text x="216" y="150" font-size="11" fill="#374151">✓ Overlap thật rõ ràng</text>
+<text x="216" y="172" font-size="11" fill="#374151">✓ Đúng bias + P/D</text>
+<text x="216" y="194" font-size="11" fill="#374151">✓ Displacement ok</text>
+<text x="216" y="216" font-size="11" fill="#374151">± Thiếu 1-2 confluence phụ</text>
+<text x="216" y="238" font-size="11" fill="#374151">  (SMT hoặc macro)</text>
+<text x="216" y="290" font-size="11" fill="#1E40AF">→ 3-4/6 tiêu chí</text>
+<rect x="384" y="72" width="170" height="330" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+<text x="469" y="100" font-size="20" font-weight="800" fill="#B45309" text-anchor="middle">B</text>
+<text x="469" y="122" font-size="11" fill="#92400E" text-anchor="middle">Half-size / bỏ</text>
+<text x="396" y="150" font-size="11" fill="#374151">± Overlap nhỏ, mỏng</text>
+<text x="396" y="172" font-size="11" fill="#374151">± Displacement trung bình</text>
+<text x="396" y="194" font-size="11" fill="#374151">± Bias chưa thật rõ</text>
+<text x="396" y="216" font-size="11" fill="#374151">± Ngoài killzone</text>
+<text x="396" y="290" font-size="11" fill="#92400E">→ 2/6, cân nhắc kỹ</text>
+<rect x="564" y="72" width="172" height="330" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
+<text x="650" y="100" font-size="16" font-weight="800" fill="#B91C1C" text-anchor="middle">BỎ QUA</text>
+<text x="576" y="128" font-size="11" fill="#374151">✗ Breaker &amp; FVG KHÔNG</text>
+<text x="576" y="146" font-size="11" fill="#374151">  chồng lấn (chỉ tách rời)</text>
+<text x="576" y="172" font-size="11" fill="#374151">✗ Ngược HTF bias</text>
+<text x="576" y="198" font-size="11" fill="#374151">✗ Không có sweep trước</text>
+<text x="576" y="224" font-size="11" fill="#374151">✗ Displacement yếu, chồng</text>
+<text x="576" y="250" font-size="11" fill="#374151">✗ Chỉ vào được bằng chase</text>
+<text x="576" y="290" font-size="11" fill="#B91C1C">→ Không phải Unicorn</text>
+</svg>

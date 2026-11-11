@@ -1,0 +1,100 @@
+<svg viewBox="0 0 860 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="500" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ontology của DOL — bốn tầng, ba lần loại bỏ</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Pool KHÔNG tự động là DOL. Mỗi mũi tên là một lần loại bỏ có tiêu chí — không phải một lần đổi tên.</text>
+
+  <!-- ============ FLOW ROW ============ -->
+  <!-- Box 1 -->
+  <rect x="24" y="100" width="140" height="74" rx="8" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="94" y="128" font-size="13" font-weight="700" fill="#374151" text-anchor="middle">LIQUIDITY</text>
+  <text x="94" y="146" font-size="10" fill="#6B7280" text-anchor="middle">khái niệm chung</text>
+  <text x="94" y="161" font-size="10" fill="#6B7280" text-anchor="middle">chưa có giá cụ thể</text>
+
+  <!-- arrow 1 -->
+  <line x1="166" y1="137" x2="196" y2="137" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="200,137 190,132 190,142" fill="#6B7280"/>
+  <text x="181" y="128" font-size="9" fill="#6B7280" text-anchor="middle">quan sát</text>
+
+  <!-- Box 2 -->
+  <rect x="204" y="100" width="140" height="74" rx="8" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="274" y="128" font-size="13" font-weight="700" fill="#374151" text-anchor="middle">POOL</text>
+  <text x="274" y="146" font-size="10" fill="#6B7280" text-anchor="middle">DỮ LIỆU</text>
+  <text x="274" y="161" font-size="10" fill="#6B7280" text-anchor="middle">PDH/PDL/equal H-L</text>
+
+  <!-- GATE 1 -->
+  <rect x="348" y="96" width="112" height="82" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="404" y="116" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">LỌC 1</text>
+  <text x="404" y="132" font-size="9.5" fill="#92400E" text-anchor="middle">Alignment</text>
+  <text x="404" y="145" font-size="9.5" fill="#92400E" text-anchor="middle">Reachability</text>
+  <text x="404" y="158" font-size="9.5" fill="#92400E" text-anchor="middle">Freshness</text>
+  <text x="404" y="172" font-size="9" fill="#B45309" text-anchor="middle">→ loại phần lớn pool</text>
+
+  <!-- arrow 2 -->
+  <line x1="464" y1="137" x2="492" y2="137" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="496,137 486,132 486,142" fill="#6B7280"/>
+
+  <!-- Box 3 -->
+  <rect x="500" y="100" width="140" height="74" rx="8" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="570" y="124" font-size="12" font-weight="700" fill="#1D4ED8" text-anchor="middle">CANDIDATE DOL</text>
+  <text x="570" y="142" font-size="10" fill="#6B7280" text-anchor="middle">ỨNG VIÊN HỢP LỆ</text>
+  <text x="570" y="157" font-size="10" fill="#6B7280" text-anchor="middle">≥1 mỗi phía</text>
+
+  <!-- GATE 2 -->
+  <rect x="644" y="96" width="100" height="82" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="694" y="116" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">LỌC 2</text>
+  <text x="694" y="133" font-size="9.5" fill="#92400E" text-anchor="middle">So sánh</text>
+  <text x="694" y="146" font-size="9.5" fill="#92400E" text-anchor="middle">hai phía</text>
+  <text x="694" y="163" font-size="9.5" fill="#92400E" text-anchor="middle">asymmetry</text>
+
+  <!-- arrow 3 down-right to row 2 -->
+  <line x1="744" y1="137" x2="772" y2="137" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="776,137 766,132 766,142" fill="#6B7280"/>
+
+  <!-- ============ ROW 2 (right to left) ============ -->
+  <!-- Box 4: DOL (rightmost of row 2) -->
+  <rect x="660" y="240" width="176" height="76" rx="8" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="748" y="266" font-size="14" font-weight="700" fill="#1D4ED8" text-anchor="middle">DOL</text>
+  <text x="748" y="284" font-size="10" fill="#1E40AF" text-anchor="middle">MỆNH ĐỀ XÁC SUẤT</text>
+  <text x="748" y="299" font-size="9.5" fill="#1E40AF" text-anchor="middle">"X chạm trước Y trong H"</text>
+
+  <!-- arrow from gate2 down to DOL -->
+  <path d="M776 178 L776 236" fill="none" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="776,240 771,230 781,230" fill="#6B7280"/>
+
+  <!-- GATE 3 -->
+  <rect x="516" y="238" width="112" height="80" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="572" y="258" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">LỌC 3</text>
+  <text x="572" y="274" font-size="9.5" fill="#92400E" text-anchor="middle">Lượng hoá</text>
+  <text x="572" y="287" font-size="9.5" fill="#92400E" text-anchor="middle">vận hành</text>
+  <text x="572" y="304" font-size="9" fill="#B45309" text-anchor="middle">tolerance + horizon</text>
+
+  <!-- arrow DOL -> gate3 (leftwards) -->
+  <line x1="656" y1="278" x2="632" y2="278" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="628,278 638,273 638,283" fill="#6B7280"/>
+
+  <!-- arrow gate3 -> TARGET -->
+  <line x1="512" y1="278" x2="488" y2="278" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="484,278 494,273 494,283" fill="#6B7280"/>
+
+  <!-- Box 5: TARGET -->
+  <rect x="316" y="240" width="164" height="76" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="398" y="266" font-size="14" font-weight="700" fill="#15803D" text-anchor="middle">TARGET</text>
+  <text x="398" y="284" font-size="10" fill="#166534" text-anchor="middle">MỨC GIÁ VẬN HÀNH</text>
+  <text x="398" y="299" font-size="9.5" fill="#166534" text-anchor="middle">T1 partial / T2 runner</text>
+
+  <!-- ============ WARNING BLOCK ============ -->
+  <rect x="24" y="356" width="812" height="118" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="44" y="380" font-size="12.5" font-weight="700" fill="#B91C1C">BỐN LỖI NHẦM TẦNG — nguồn gốc của gần như mọi tranh luận về DOL</text>
+
+  <text x="44" y="404" font-size="11" fill="#7F1D1D">✗  Gọi mọi pool là DOL</text>
+  <text x="248" y="404" font-size="10.5" fill="#991B1B">→ bỏ qua cả ba lần lọc; pool là dữ liệu, không phải kết luận</text>
+
+  <text x="44" y="426" font-size="11" fill="#7F1D1D">✗  Nhảy thẳng POOL → TARGET</text>
+  <text x="248" y="426" font-size="10.5" fill="#991B1B">→ bỏ candidate + so sánh; không có đối thủ thì không có DOL</text>
+
+  <text x="44" y="448" font-size="11" fill="#7F1D1D">✗  Coi DOL là mức giá cố định cả ngày</text>
+  <text x="248" y="448" font-size="10.5" fill="#991B1B">→ DOL là biến trạng thái: projected → active → resolved/invalidated</text>
+
+  <text x="44" y="470" font-size="11" fill="#7F1D1D">✗  Dùng DOL làm entry trigger</text>
+  <text x="248" y="470" font-size="10.5" fill="#991B1B">→ DOL là destination; entry đến từ POI + MSS + displacement</text>
+</svg>

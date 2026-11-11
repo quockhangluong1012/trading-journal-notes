@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Breaker RESPECT vs Breaker FAIL — đọc bằng acceptance</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Ranh giới hành động: 1 nến ĐÓNG xuyên qua vùng + 1 nến GIỮ bên kia = acceptance = breaker fail.</text>
+
+  <!-- LEFT: respect -->
+  <rect x="24" y="72" width="350" height="288" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.6"/>
+  <rect x="24" y="72" width="350" height="28" rx="8" fill="#16A34A"/>
+  <text x="199" y="91" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Breaker RESPECT (reject) → giữ lệnh</text>
+
+  <!-- breaker zone left -->
+  <rect x="48" y="200" width="300" height="34" fill="#16A34A" opacity="0.16" stroke="#16A34A" stroke-dasharray="4 3"/>
+  <text x="54" y="194" font-size="10" fill="#15803D">Bullish breaker (hỗ trợ)</text>
+  <line x1="48" y1="150" x2="348" y2="150" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="270" y="144" font-size="9.5" fill="#166534">MSS level</text>
+
+  <!-- price rejects at breaker -->
+  <path d="M60,130 L100,175 L140,215 L165,230 L185,200 L230,150 L280,120 L330,95" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="165" cy="230" r="6" fill="#16A34A"/>
+  <text x="120" y="262" font-size="10" font-weight="700" fill="#15803D">Nến chạm breaker rồi REJECT</text>
+  <text x="120" y="277" font-size="10" fill="#4B5563">(wick vào, body đóng phía trên)</text>
+  <text x="60" y="330" font-size="10.5" font-weight="700" fill="#15803D">→ Order flow mới còn hiệu lực, giữ Long.</text>
+  <text x="60" y="347" font-size="10" fill="#6B7280">Retrace sâu nhưng CHƯA đóng qua = vẫn "chờ".</text>
+
+  <!-- RIGHT: fail -->
+  <rect x="386" y="72" width="350" height="288" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
+  <rect x="386" y="72" width="350" height="28" rx="8" fill="#DC2626"/>
+  <text x="561" y="91" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Breaker FAIL → hủy lệnh, cảnh giác tiếp diễn</text>
+
+  <!-- breaker zone right -->
+  <rect x="410" y="180" width="300" height="34" fill="#16A34A" opacity="0.12" stroke="#16A34A" stroke-dasharray="4 3"/>
+  <text x="416" y="174" font-size="10" fill="#15803D">Bullish breaker (bị phá)</text>
+  <line x1="410" y1="140" x2="710" y2="140" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="628" y="134" font-size="9.5" fill="#B91C1C">MSS level (bị xuyên lại)</text>
+
+  <!-- price closes through -->
+  <path d="M410,120 L445,150 L470,185 L495,205 L520,235 L560,275" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <!-- close-through candle -->
+  <rect x="493" y="188" width="2" height="70" fill="#DC2626"/><rect x="487" y="196" width="13" height="56" fill="#DC2626" rx="1"/>
+  <text x="512" y="212" font-size="10" font-weight="700" fill="#B91C1C">① Nến ĐÓNG xuyên qua vùng</text>
+  <!-- hold-below candle -->
+  <rect x="558" y="248" width="2" height="55" fill="#DC2626"/><rect x="552" y="256" width="13" height="42" fill="#DC2626" rx="1"/>
+  <text x="512" y="230" font-size="10" font-weight="700" fill="#B91C1C">② Nến sau GIỮ bên kia + xuyên lại MSS</text>
+  <path d="M560,275 L600,310 L640,345" fill="none" stroke="#DC2626" stroke-width="2.6"/>
+  <text x="420" y="330" font-size="10.5" font-weight="700" fill="#B91C1C">→ Acceptance = fail: hủy lệnh ngay.</text>
+  <text x="420" y="347" font-size="10" fill="#6B7280">Cảnh giác giá tiếp diễn hướng cũ (giảm).</text>
+
+  <rect x="24" y="374" width="712" height="52" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="394" font-size="11.5" font-weight="700" fill="#92400E">Đừng thoát non vì một wick chọc vào breaker — đó vẫn là "chờ". Đừng ôm hy vọng sau khi ĐÓNG xuyên qua.</text>
+  <text x="36" y="412" font-size="11" fill="#92400E">Một failed breaker (đóng qua + xuyên lại MSS) là tín hiệu phía cũ còn kiểm soát → có thể là setup tiếp diễn hướng cũ.</text>
+</svg>

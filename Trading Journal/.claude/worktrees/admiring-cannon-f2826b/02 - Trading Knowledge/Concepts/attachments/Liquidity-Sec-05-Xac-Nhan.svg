@@ -1,0 +1,55 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Quy tắc xác nhận / vô hiệu hóa</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Phân biệt Sweep (stop hunt) và Break thật (acceptance) tại pool liquidity</text>
+
+  <!-- Panel trái: SWEEP hợp lệ -->
+  <rect x="24" y="70" width="350" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="94" font-size="14" font-weight="700" fill="#16A34A">✔ Sweep → hợp lệ</text>
+  <text x="40" y="111" font-size="11" fill="#6B7280">Wick qua pool rồi đóng lại + displacement ngược</text>
+
+  <line x1="60" y1="150" x2="340" y2="150" stroke="#DC2626" stroke-dasharray="5 3" stroke-width="1.3"/>
+  <text x="60" y="145" font-size="10" fill="#DC2626">BSL / equal highs (pool)</text>
+
+  <!-- nến chạy lên -->
+  <line x1="90" y1="230" x2="90" y2="300" stroke="#16A34A" stroke-width="1.4"/><rect x="84" y="245" width="12" height="45" fill="#16A34A"/>
+  <line x1="120" y1="200" x2="120" y2="270" stroke="#16A34A" stroke-width="1.4"/><rect x="114" y="210" width="12" height="45" fill="#16A34A"/>
+  <!-- nến sweep: wick vượt pool rồi đóng dưới -->
+  <line x1="152" y1="132" x2="152" y2="205" stroke="#DC2626" stroke-width="1.4"/><rect x="146" y="165" width="12" height="30" fill="#DC2626"/>
+  <text x="150" y="126" font-size="10" fill="#DC2626" text-anchor="middle">wick vượt</text>
+  <!-- displacement giảm -->
+  <line x1="184" y1="160" x2="184" y2="300" stroke="#DC2626" stroke-width="1.4"/><rect x="178" y="180" width="12" height="110" fill="#DC2626"/>
+  <line x1="216" y1="250" x2="216" y2="340" stroke="#DC2626" stroke-width="1.4"/><rect x="210" y="265" width="12" height="60" fill="#DC2626"/>
+  <text x="240" y="215" font-size="11" font-weight="700" fill="#DC2626">Displacement</text>
+  <text x="240" y="231" font-size="11" fill="#374151">+ MSS ngược</text>
+
+  <text x="40" y="360" font-size="11" fill="#16A34A">• Đóng nến trở lại trong range</text>
+  <text x="40" y="378" font-size="11" fill="#16A34A">• Có reclaim + FVG → chờ entry đảo</text>
+  <text x="40" y="394" font-size="11" fill="#16A34A">• Liquidity đã bị lấy = nhiên liệu</text>
+
+  <!-- Panel phải: BREAK THẬT vô hiệu -->
+  <rect x="386" y="70" width="350" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="402" y="94" font-size="14" font-weight="700" fill="#DC2626">✘ Break thật → vô hiệu</text>
+  <text x="402" y="111" font-size="11" fill="#6B7280">Đóng thân mạnh qua pool và giữ giá ngoài (acceptance)</text>
+
+  <line x1="422" y1="200" x2="702" y2="200" stroke="#DC2626" stroke-dasharray="5 3" stroke-width="1.3"/>
+  <text x="422" y="195" font-size="10" fill="#DC2626">BSL / equal highs (pool)</text>
+
+  <!-- nến chạy lên rồi đóng thân qua pool và giữ ngoài -->
+  <line x1="452" y1="250" x2="452" y2="320" stroke="#16A34A" stroke-width="1.4"/><rect x="446" y="265" width="12" height="45" fill="#16A34A"/>
+  <line x1="484" y1="215" x2="484" y2="285" stroke="#16A34A" stroke-width="1.4"/><rect x="478" y="225" width="12" height="45" fill="#16A34A"/>
+  <!-- nến displacement đóng thân qua pool -->
+  <line x1="516" y1="120" x2="516" y2="230" stroke="#16A34A" stroke-width="1.4"/><rect x="510" y="135" width="12" height="80" fill="#16A34A"/>
+  <text x="516" y="114" font-size="10" fill="#16A34A" text-anchor="middle">đóng thân qua</text>
+  <!-- giữ giá ngoài, tiếp tục -->
+  <line x1="548" y1="140" x2="548" y2="185" stroke="#16A34A" stroke-width="1.4"/><rect x="542" y="150" width="12" height="30" fill="#16A34A"/>
+  <line x1="580" y1="120" x2="580" y2="165" stroke="#16A34A" stroke-width="1.4"/><rect x="574" y="128" width="12" height="30" fill="#16A34A"/>
+  <text x="600" y="150" font-size="11" font-weight="700" fill="#16A34A">Giữ giá ngoài</text>
+  <text x="600" y="166" font-size="11" fill="#374151">→ break-and-go</text>
+
+  <text x="402" y="360" font-size="11" fill="#DC2626">• Không tìm reversal ở đây</text>
+  <text x="402" y="378" font-size="11" fill="#DC2626">• Pullback không reclaim được pool</text>
+  <text x="402" y="394" font-size="11" fill="#DC2626">• Trade ngược = bị nghiền trong trend</text>
+
+  <text x="380" y="432" text-anchor="middle" font-size="12" fill="#374151">Sweep cần: wick vượt → đóng lại trong range → displacement + reclaim. Thiếu reclaim = chưa đủ bằng chứng đảo chiều.</text>
+</svg>

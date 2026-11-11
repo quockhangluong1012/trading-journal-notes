@@ -1,0 +1,122 @@
+<svg viewBox="0 0 1000 700" width="1000" height="700" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="1" y="1" width="998" height="698" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<rect x="852.6" y="22" width="119.4" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="912.3" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">ICT 2022 MODEL</text>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">Breakaway Gap trong khung D1 → H1 → M5</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Breakaway Gap thuộc tầng BỐI CẢNH (D1). FVG trên M5 mới là tham chiếu entry. Sơ đồ dựng, không phải dữ liệu thật.</text>
+<rect x="28.0" y="100.0" width="470.0" height="300.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="40.0" y="120.0" font-size="12" font-weight="700" fill="#0F9D74" text-anchor="start">D1 — CONTEXT: rời range bằng gap</text>
+<rect x="36.0" y="290.1" width="283.8" height="71.2" rx="2" fill="#F1F5F9" stroke="#64748B" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5"/>
+<rect x="319.8" y="247.4" width="170.2" height="42.7" rx="2" fill="#DDF4EC" stroke="#0F9D74" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.8"/>
+<line x1="50.2" y1="304.4" x2="50.2" y2="350.6" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="41.4" y="311.5" width="17.6" height="28.5" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="78.6" y1="291.9" x2="78.6" y2="329.3" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="69.8" y="311.5" width="17.6" height="14.2" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="106.9" y1="315.0" x2="106.9" y2="356.0" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="98.1" y="325.7" width="17.6" height="19.6" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="135.3" y1="318.6" x2="135.3" y2="357.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="126.5" y="323.9" width="17.6" height="21.4" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="163.7" y1="291.0" x2="163.7" y2="331.1" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="154.9" y="297.3" width="17.6" height="26.7" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="192.1" y1="291.9" x2="192.1" y2="322.2" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="183.3" y="297.3" width="17.6" height="19.6" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="220.4" y1="309.7" x2="220.4" y2="354.2" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="211.6" y="316.8" width="17.6" height="30.2" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="248.8" y1="322.2" x2="248.8" y2="359.5" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="240.0" y="327.5" width="17.6" height="19.6" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="277.2" y1="300.8" x2="277.2" y2="334.6" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="268.4" y="306.2" width="17.6" height="21.4" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="305.6" y1="290.1" x2="305.6" y2="315.0" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="296.8" y="293.7" width="17.6" height="12.5" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="333.9" y1="217.2" x2="333.9" y2="247.4" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="325.1" y="222.5" width="17.6" height="14.2" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="362.3" y1="194.1" x2="362.3" y2="231.4" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="353.5" y="199.4" width="17.6" height="23.1" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="390.7" y1="190.5" x2="390.7" y2="226.1" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="381.9" y="199.4" width="17.6" height="21.4" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="36.0" y1="147.8" x2="490.0" y2="147.8" stroke="#E0464B" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="488.0" y="143.8" font-size="10" font-weight="700" fill="#E0464B" text-anchor="end">BSL / DOL phía trên</text>
+<text x="419.1" y="283.0" font-size="10.5" font-weight="700" fill="#0F9D74" text-anchor="middle">gap</text>
+<text x="40.0" y="424.0" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">Hỏi: range cũ còn là 'nhà' của giá không? Gap có rời biên NGOÀI không? DOL bây</text>
+<text x="40.0" y="439.9" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">giờ ở đâu? → Daily bias là GIẢ THUYẾT, không phải lệnh.</text>
+<rect x="510.0" y="100.0" width="462.0" height="300.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="522.0" y="120.0" font-size="12" font-weight="700" fill="#2563EB" text-anchor="start">H1 — SETUP: giá quay về vùng gap / biên cũ</text>
+<rect x="518.0" y="306.3" width="446.0" height="77.4" rx="2" fill="#DDF4EC" stroke="#0F9D74" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.5"/>
+<line x1="529.1" y1="220.3" x2="529.1" y2="259.0" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="522.2" y="228.9" width="13.8" height="17.2" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="551.5" y1="194.5" x2="551.5" y2="241.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="544.5" y="203.1" width="13.8" height="25.8" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="573.8" y1="185.9" x2="573.8" y2="228.9" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="566.8" y="203.1" width="13.8" height="17.2" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="596.0" y1="211.7" x2="596.0" y2="254.7" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="589.1" y="220.3" width="13.8" height="25.8" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="618.4" y1="237.5" x2="618.4" y2="280.5" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="611.4" y="246.1" width="13.8" height="25.8" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="640.6" y1="259.0" x2="640.6" y2="297.7" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="633.7" y="271.9" width="13.8" height="17.2" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="663.0" y1="276.2" x2="663.0" y2="310.6" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="656.0" y="289.1" width="13.8" height="12.9" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="685.2" y1="293.4" x2="685.2" y2="336.4" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="678.3" y="302.0" width="13.8" height="25.8" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="707.5" y1="314.9" x2="707.5" y2="349.3" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="700.6" y="323.5" width="13.8" height="4.3" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="729.9" y1="284.8" x2="729.9" y2="332.1" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="722.9" y="293.4" width="13.8" height="30.1" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="752.1" y1="254.7" x2="752.1" y2="302.0" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="745.2" y="263.3" width="13.8" height="30.1" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="774.5" y1="228.9" x2="774.5" y2="271.9" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="767.5" y="237.5" width="13.8" height="25.8" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="607.2" y1="310.6" x2="718.7" y2="310.6" stroke="#E0464B" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="609.2" y="306.6" font-size="9.5" font-weight="700" fill="#E0464B" text-anchor="start">SSL nội bộ</text>
+<text x="707.5" y="369.6" font-size="10" font-weight="700" fill="#0F9D74" text-anchor="middle">vào vùng gap D1</text>
+<text x="522.0" y="424.0" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">Hỏi: giá đang test vùng gap/biên cũ như POI? Có SSL nội bộ bị quét không?</text>
+<text x="522.0" y="439.9" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">Setup đang hình thành hay chưa có gì?</text>
+<rect x="28.0" y="470.0" width="560.0" height="214.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="40.0" y="490.0" font-size="12" font-weight="700" fill="#7C3AED" text-anchor="start">M5 — EXECUTION (độc lập với việc gọi tên gap D1)</text>
+<rect x="388.0" y="561.0" width="128.0" height="16.6" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.85"/>
+<text x="390.0" y="590.7" font-size="9.5" font-weight="700" fill="#7C3AED" text-anchor="start">FVG M5 = tham chiếu entry</text>
+<line x1="52.0" y1="588.8" x2="52.0" y2="611.0" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="42.1" y="594.3" width="19.8" height="11.1" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="84.0" y1="599.9" x2="84.0" y2="622.1" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="74.1" y="605.4" width="19.8" height="11.1" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="116.0" y1="605.4" x2="116.0" y2="633.2" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="106.1" y="611.0" width="19.8" height="5.5" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="148.0" y1="594.3" x2="148.0" y2="616.5" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="138.1" y="599.9" width="19.8" height="11.1" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="180.0" y1="597.1" x2="180.0" y2="616.5" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="170.1" y="599.9" width="19.8" height="11.1" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="212.0" y1="605.4" x2="212.0" y2="627.6" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="202.1" y="611.0" width="19.8" height="11.1" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="244.0" y1="616.5" x2="244.0" y2="655.4" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="234.1" y="622.1" width="19.8" height="16.6" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="276.0" y1="627.6" x2="276.0" y2="649.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="266.1" y="633.2" width="19.8" height="5.5" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="308.0" y1="611.0" x2="308.0" y2="638.7" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="298.1" y="616.5" width="19.8" height="16.6" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="340.0" y1="577.7" x2="340.0" y2="622.1" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="330.1" y="583.2" width="19.8" height="33.3" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="372.0" y1="538.8" x2="372.0" y2="588.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="362.1" y="544.4" width="19.8" height="38.8" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="404.0" y1="533.3" x2="404.0" y2="561.0" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="394.1" y="544.4" width="19.8" height="11.1" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="436.0" y1="552.7" x2="436.0" y2="572.1" stroke="#E0464B" stroke-width="1.2"/>
+<rect x="426.1" y="555.5" width="19.8" height="11.1" rx="0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="468.0" y1="538.8" x2="468.0" y2="569.4" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="458.1" y="544.4" width="19.8" height="22.2" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="500.0" y1="522.2" x2="500.0" y2="549.9" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="490.1" y="527.7" width="19.8" height="16.6" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="532.0" y1="511.1" x2="532.0" y2="538.8" stroke="#0F9D74" stroke-width="1.2"/>
+<rect x="522.1" y="516.6" width="19.8" height="11.1" rx="0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="36.0" y1="630.4" x2="292.0" y2="630.4" stroke="#E0464B" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="38.0" y="626.4" font-size="9.5" font-weight="700" fill="#E0464B" text-anchor="start">SSL bị quét</text>
+<line x1="132.0" y1="594.3" x2="388.0" y2="594.3" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="134.0" y="590.3" font-size="9.5" font-weight="700" fill="#2563EB" text-anchor="start">MSS: phá đỉnh nhỏ</text>
+<line x1="196.0" y1="658.1" x2="580.0" y2="658.1" stroke="#E0464B" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="578.0" y="654.1" font-size="9.5" font-weight="700" fill="#E0464B" text-anchor="end">SL dưới đáy sweep</text>
+<rect x="604.0" y="470.0" width="368.0" height="214.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="618.0" y="500.0" font-size="11.5" font-weight="700" fill="#0F9D74" text-anchor="start">Gap D1 = BỐI CẢNH: vì sao tìm Long quanh đây</text>
+<text x="618.0" y="523.9" font-size="11.5" font-weight="700" fill="#2563EB" text-anchor="start">H1 = SETUP: giá về vùng gap/biên cũ, quét SSL nội bộ</text>
+<text x="618.0" y="547.7" font-size="11.5" font-weight="700" fill="#7C3AED" text-anchor="start">M5 = TRIGGER: sweep → MSS → displacement → FVG</text>
+<text x="618.0" y="571.6" font-size="11.5" font-weight="700" fill="#E0464B" text-anchor="start">Không có chuỗi M5 → không có lệnh, dù gap D1 'đẹp'</text>
+<text x="618.0" y="595.5" font-size="11.5" font-weight="700" fill="#64748B" text-anchor="start">Gap D1 KHÔNG phải điều kiện bắt buộc của ICT 2022 Model</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTplODBlZTBjYi1kYjc4LTQwOGItOTJhMC00NjkwYjlkMzIwOWUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaHBLfsfWNR09ILPIbUr63tUAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoxNDYzZmM5Zi05OGQ3LTQ1Y2ItODg2NS0yMGEzYWM0NDYzM2JscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNod7NaibNxuxh0MWHExzPvuwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg++mOGwf5Kbg4tni1zGXW9rQrT/MfS08hRMZTT8XEj/ikZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaKnUPG9ZmCNotMCYGjkWqtUAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIKEmZ+PwFmH4W94EHqqp9OF/1wqvpDMaVRLHamPP3+xOZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTWsZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmU4MGVlMGNiLWRiNzgtNDA4Yi05MmEwLTQ2OTBiOWQzMjA5ZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjM3NGMyNGMyLTA3NTgtNGQzNi05OGNmLWYwNzkzMDFlNDYzMXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCD76Y4bB/kpuDi2eLXMZdb2tCtP8x9LTyFExlNPxcSP+KJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggN3beEwXDNSvV4f6yvORtCqZY+2l0HbORuGDUsAq6w7+iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg2IetVN+2SLL7oIvgHHjuuu4wdZE5+Af/ZHIcN3NiSEF0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQLS5WPqVLA9LbHvd3qKfmTVOfW5MclRuqXAreuM3wVFTdmBwJGFRopeYvsvjiuJK41fHMORyBkflIvExTp2LgFo=</c2pa:manifest></metadata></svg>

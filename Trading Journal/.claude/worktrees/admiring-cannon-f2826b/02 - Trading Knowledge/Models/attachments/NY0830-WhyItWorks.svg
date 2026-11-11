@@ -1,0 +1,26 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Vì sao "08:30" hoạt động — không phải giá đi ĐÂU mà là KHI NÀO</text>
+<text x="24" y="54" font-size="13" fill="#6B7280">08:30 là cửa sổ tin kinh tế Mỹ + đầu NY AM killzone: nơi thanh khoản &amp; displacement dồn lại.</text>
+<rect x="24" y="74" width="345" height="120" rx="8" fill="#FFFFFF" stroke="#3B82F6"/>
+<text x="40" y="98" font-size="13" font-weight="700" fill="#1D4ED8">① Catalyst tin tức 08:30 ET</text>
+<text x="40" y="120" font-size="11.5" fill="#374151">CPI · NFP · PPI · Jobless Claims phát lúc</text>
+<text x="40" y="138" font-size="11.5" fill="#374151">08:30 → biến động + volume tăng vọt.</text>
+<text x="40" y="160" font-size="11.5" fill="#374151">Đây là "cớ" để giá raid thanh khoản đã</text>
+<text x="40" y="178" font-size="11.5" fill="#374151">được xây từ 08:00→08:30.</text>
+<rect x="391" y="74" width="345" height="120" rx="8" fill="#FFFFFF" stroke="#F59E0B"/>
+<text x="407" y="98" font-size="13" font-weight="700" fill="#B45309">② NY AM killzone + macro</text>
+<text x="407" y="120" font-size="11.5" fill="#374151">08:30 nằm đầu NY AM KZ; giải quyết</text>
+<text x="407" y="138" font-size="11.5" fill="#374151">thường trùng macro 08:50 &amp; 09:50.</text>
+<text x="407" y="160" font-size="11.5" fill="#374151">09:30 mở NYSE khuếch đại setup trên</text>
+<text x="407" y="178" font-size="11.5" fill="#374151">NQ/ES → displacement sạch nhất.</text>
+<rect x="24" y="208" width="712" height="96" rx="8" fill="#F5F3FF" stroke="#7C3AED"/>
+<text x="40" y="232" font-size="13" font-weight="700" fill="#5B21B6">③ Cơ chế: build-up → raid → phản công (MSS)</text>
+<text x="40" y="256" font-size="11.5" fill="#374151">Từ 08:00→08:30 giá tạo relative equal H/L (đám đông đặt stop quanh đó). Sau 08:30, giá RAID cụm</text>
+<text x="40" y="274" font-size="11.5" fill="#374151">thanh khoản đó để nạp nhiên liệu, rồi ĐẢO CHIỀU (MSS) — bạn vào theo cú phản công tại PD array.</text>
+<text x="40" y="294" font-size="11.5" fill="#6B7280">→ Raid không kèm MSS = chưa có lệnh. MSS là bước xác nhận thanh khoản đã bị lấy đúng hướng.</text>
+<rect x="24" y="318" width="712" height="86" rx="8" fill="#F0FDF4" stroke="#10B981"/>
+<text x="40" y="342" font-size="12.5" font-weight="700" fill="#047857">Hệ quả thực dụng</text>
+<text x="40" y="364" font-size="11.5" fill="#374151">Bạn KHÔNG cần dự đoán hướng trước 08:30. Bạn để thị trường tự lộ diện bằng cú raid + MSS, rồi</text>
+<text x="40" y="383" font-size="11.5" fill="#374151">tham gia theo phản công. Đây là model "time-based": kỷ luật thời gian quan trọng hơn dự đoán.</text>
+</svg>

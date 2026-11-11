@@ -1,0 +1,58 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ đúng — NWOG gap down, giá về CE đúng phía bias, sweep + MSS trước khi Long</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Index futures (NQ1/NAS100): tuần mở gap down, giá ở discount dưới CE; phản ứng tại cạnh dưới NWOG trong London KZ.</text>
+
+  <rect x="24" y="70" width="712" height="322" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- discount zone shading -->
+  <rect x="44" y="230" width="672" height="90" fill="#3B82F6" opacity="0.06"/>
+  <text x="52" y="248" font-size="10.5" fill="#1D4ED8">Discount của tuần — đúng phía bias bullish</text>
+
+  <!-- Friday close level -->
+  <line x1="70" y1="150" x2="230" y2="150" stroke="#374151" stroke-width="1.6"/>
+  <text x="72" y="142" font-size="10" fill="#374151">Friday Close (~17:00 ET)</text>
+  <circle cx="230" cy="150" r="5" fill="#374151"/>
+
+  <!-- gap down to sunday open -->
+  <rect x="230" y="150" width="34" height="105" fill="#F59E0B" opacity="0.15" stroke="#B45309" stroke-dasharray="4 3"/>
+  <text x="270" y="165" font-size="10" font-weight="700" fill="#92400E">NWOG (gap down)</text>
+
+  <!-- CE line -->
+  <line x1="230" y1="202" x2="716" y2="202" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="3 3"/>
+  <text x="590" y="197" font-size="10.5" font-weight="700" fill="#B91C1C">CE 50% NWOG — mục tiêu TP1</text>
+
+  <!-- Sunday open -->
+  <line x1="264" y1="255" x2="500" y2="255" stroke="#374151" stroke-width="1.6"/>
+  <circle cx="264" cy="255" r="5" fill="#374151"/>
+  <text x="270" y="270" font-size="10" fill="#374151">① Sunday Open — tuần mở gap down (Sunday Open &lt; Friday Close)</text>
+
+  <!-- price path: opens near sunday open, dips to sweep sellside near lower edge, reacts -->
+  <path d="M264,255 L300,270 L330,290 L360,305" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <line x1="330" y1="305" x2="480" y2="305" stroke="#6B7280" stroke-width="1.3" stroke-dasharray="6 4"/>
+  <text x="336" y="320" font-size="9.5" fill="#6B7280">Sell-side liquidity dưới cạnh dưới NWOG</text>
+
+  <!-- rejection wick at lower edge -->
+  <rect x="352" y="298" width="14" height="14" fill="#16A34A" opacity="0.85" rx="1"/>
+  <rect x="358" y="312" width="4" height="26" fill="#16A34A" opacity="0.85"/>
+  <circle cx="359" cy="322" r="12" fill="none" stroke="#B45309" stroke-width="1.6"/>
+  <text x="378" y="345" font-size="10.5" font-weight="700" fill="#15803D">② Quét sellside tại cạnh dưới NWOG, reject lên (London KZ)</text>
+
+  <!-- MSS + displacement up toward CE -->
+  <path d="M366,298 L400,260 L440,240 L470,204" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <text x="420" y="228" font-size="10" font-weight="700" fill="#15803D">③ MSS lên + FVG bullish M5</text>
+  <circle cx="470" cy="204" r="6" fill="#16A34A"/>
+
+  <!-- continue to CE and beyond -->
+  <path d="M470,204 L520,190 L570,150 L640,110" fill="none" stroke="#16A34A" stroke-width="2.6" stroke-dasharray="0"/>
+  <text x="500" y="140" font-size="10" fill="#166534">④ Đạt CE rồi hướng NWOG unfilled phía trên</text>
+
+  <!-- unfilled NWOG above target -->
+  <rect x="600" y="95" width="90" height="30" fill="#3B82F6" opacity="0.14" stroke="#1D4ED8" stroke-dasharray="4 3"/>
+  <text x="606" y="90" font-size="9.5" fill="#1D4ED8">NWOG unfilled tuần trước — TP2 (draw on liquidity)</text>
+
+  <rect x="24" y="402" width="712" height="64" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="422" font-size="11.5" font-weight="700" fill="#92400E">Đúng: NWOG vẽ đúng Friday Close → Sunday Open; vào lệnh chỉ SAU sweep + MSS + FVG tại cạnh dưới,</text>
+  <text x="36" y="440" font-size="11.5" font-weight="700" fill="#92400E">không phải ngay khi chạm CE. TP1 = CE, TP2 = NWOG unfilled kế tiếp — đúng phía bias và trong kill zone.</text>
+  <text x="36" y="456" font-size="10.5" fill="#92400E">Lưu ý: setup "sạch" kiểu này rõ nhất trên index futures; với forex, gap Chủ Nhật thường mỏng và ít dứt khoát hơn.</text>
+</svg>

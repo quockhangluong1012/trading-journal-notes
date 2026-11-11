@@ -1,0 +1,66 @@
+<svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="500" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Respect CE vs Breach CE — Wick qua CE ≠ Close qua CE</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Chỉ một CÚ ĐÓNG NẾN (body) vượt hẳn CE mới là cảnh báo; bóng nến xuyên rồi đóng lại vẫn là respect.</text>
+
+  <!-- LEFT PANEL: Respect -->
+  <rect x="24" y="72" width="344" height="404" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.6"/>
+  <rect x="24" y="72" width="344" height="28" rx="8" fill="#16A34A" opacity="0.12"/>
+  <text x="40" y="91" font-size="13" font-weight="700" fill="#15803D">TRÁI — Respect CE (array khỏe)</text>
+
+  <!-- FVG box left -->
+  <rect x="60" y="150" width="270" height="150" fill="#3B82F6" opacity="0.08" stroke="#1D4ED8" stroke-width="1"/>
+  <line x1="60" y1="150" x2="330" y2="150" stroke="#1D4ED8" stroke-width="1.2"/>
+  <text x="60" y="144" font-size="9.5" fill="#1D4ED8">FVG high</text>
+  <line x1="60" y1="300" x2="330" y2="300" stroke="#1D4ED8" stroke-width="1.2"/>
+  <text x="60" y="314" font-size="9.5" fill="#1D4ED8">FVG low</text>
+  <!-- CE left -->
+  <line x1="60" y1="225" x2="330" y2="225" stroke="#F59E0B" stroke-width="2.4" stroke-dasharray="7 4"/>
+  <text x="278" y="220" font-size="10.5" font-weight="700" fill="#B45309">CE 50%</text>
+
+  <!-- candle: wick pierces CE, closes back above -->
+  <path d="M80,120 L110,160 L140,200 L165,218" fill="none" stroke="#374151" stroke-width="2"/>
+  <line x1="180" y1="215" x2="180" y2="255" stroke="#16A34A" stroke-width="2"/>
+  <rect x="173" y="215" width="15" height="22" fill="#16A34A" rx="1"/>
+  <text x="196" y="252" font-size="10" font-weight="700" fill="#15803D">WICK xuyên CE</text>
+  <text x="196" y="266" font-size="10" fill="#15803D">rồi ĐÓNG quay lại trên CE</text>
+  <path d="M180,215 L215,175 L250,190 L300,130" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+  <text x="60" y="345" font-size="10.5" font-weight="700" fill="#15803D">→ Vẫn respect. Array còn hiệu lực,</text>
+  <text x="60" y="360" font-size="10.5" fill="#15803D">có thể là cú stop-hunt quanh 50%.</text>
+  <rect x="40" y="380" width="312" height="80" rx="6" fill="#16A34A" opacity="0.06"/>
+  <text x="52" y="402" font-size="10.5" fill="#166534">• Body đóng vẫn ở trên CE.</text>
+  <text x="52" y="422" font-size="10.5" fill="#166534">• Entry quanh CE + LTF confirm hợp lệ.</text>
+  <text x="52" y="442" font-size="10.5" fill="#166534">• Đừng thoát non chỉ vì thấy bóng nến.</text>
+
+  <!-- RIGHT PANEL: Breach -->
+  <rect x="392" y="72" width="344" height="404" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
+  <rect x="392" y="72" width="344" height="28" rx="8" fill="#DC2626" opacity="0.12"/>
+  <text x="408" y="91" font-size="13" font-weight="700" fill="#DC2626">PHẢI — Breach CE → Invalidation</text>
+
+  <rect x="428" y="140" width="270" height="150" fill="#3B82F6" opacity="0.08" stroke="#1D4ED8" stroke-width="1"/>
+  <line x1="428" y1="140" x2="698" y2="140" stroke="#1D4ED8" stroke-width="1.2"/>
+  <text x="428" y="134" font-size="9.5" fill="#1D4ED8">FVG high</text>
+  <line x1="428" y1="290" x2="698" y2="290" stroke="#1D4ED8" stroke-width="1.2"/>
+  <text x="428" y="304" font-size="9.5" fill="#1D4ED8">FVG low</text>
+  <!-- CE right -->
+  <line x1="428" y1="215" x2="698" y2="215" stroke="#F59E0B" stroke-width="2.4" stroke-dasharray="7 4"/>
+  <text x="646" y="210" font-size="10.5" font-weight="700" fill="#B45309">CE 50%</text>
+
+  <!-- candle CLOSES below CE -->
+  <path d="M448,120 L472,160 L495,195" fill="none" stroke="#374151" stroke-width="2"/>
+  <line x1="510" y1="185" x2="510" y2="255" stroke="#DC2626" stroke-width="2"/>
+  <rect x="503" y="222" width="15" height="30" fill="#DC2626" rx="1"/>
+  <text x="524" y="240" font-size="10" font-weight="700" fill="#DC2626">CLOSE (body) vượt hẳn CE</text>
+  <text x="524" y="254" font-size="10" fill="#DC2626">theo hướng lấp → cảnh báo</text>
+  <!-- continues down, fills whole array -->
+  <path d="M510,240 L540,275 L570,265 L600,300 L640,320" fill="none" stroke="#DC2626" stroke-width="2.2"/>
+  <circle cx="600" cy="300" r="5" fill="#DC2626"/>
+  <text x="428" y="330" font-size="10" font-weight="700" fill="#DC2626">→ Lấp hết array → đóng xuyên đáy</text>
+  <text x="428" y="344" font-size="10" fill="#DC2626">= Invalidation → đảo cực thành iFVG</text>
+
+  <rect x="408" y="360" width="312" height="100" rx="6" fill="#DC2626" opacity="0.06"/>
+  <text x="420" y="382" font-size="10.5" fill="#991B1B">• Body đóng bên kia CE và GIỮ giá.</text>
+  <text x="420" y="402" font-size="10.5" fill="#991B1B">• Không "mua thêm vì CE là hỗ trợ".</text>
+  <text x="420" y="422" font-size="10.5" fill="#991B1B">• Full fill + đóng xuyên = array hỏng.</text>
+  <text x="420" y="442" font-size="10.5" fill="#991B1B">• Vùng đảo cực thành iFVG (kháng cự).</text>
+</svg>

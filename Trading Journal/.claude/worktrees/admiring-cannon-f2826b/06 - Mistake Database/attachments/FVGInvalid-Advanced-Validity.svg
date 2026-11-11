@@ -1,0 +1,61 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Nâng cao: CE, mitigation &amp; iFVG</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Ba chủ đề quyết định một FVG còn dùng được hay không: mức CE, mức độ đã mitigate, và FVG bị đảo (iFVG).</text>
+
+  <!-- CE panel -->
+  <rect x="24" y="74" width="230" height="230" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="38" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Consequent Encroachment</text>
+  <rect x="70" y="120" width="120" height="150" fill="#3B82F6" fill-opacity="0.12" stroke="#1D4ED8"/>
+  <line x1="70" y1="195" x2="190" y2="195" stroke="#1D4ED8" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="196" y="199" font-size="10" fill="#1D4ED8" font-weight="600">CE = 50%</text>
+  <text x="76" y="138" font-size="9.5" fill="#6B7280">high FVG</text>
+  <text x="76" y="264" font-size="9.5" fill="#6B7280">low FVG</text>
+  <text x="38" y="292" font-size="10" fill="#4B5563">Entry/đo phản ứng quanh CE,</text>
+  <text x="38" y="306" font-size="10" fill="#4B5563">không phải rìa FVG.</text>
+
+  <!-- mitigation panel -->
+  <rect x="266" y="74" width="230" height="230" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="280" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Mức độ mitigation</text>
+  <!-- fresh -->
+  <rect x="292" y="120" width="55" height="90" fill="#16A34A" fill-opacity="0.18" stroke="#16A34A"/>
+  <text x="290" y="224" font-size="9.5" fill="#15803D">Fresh 0%</text>
+  <!-- partial -->
+  <rect x="372" y="120" width="55" height="90" fill="#D97706" fill-opacity="0.14" stroke="#D97706"/>
+  <rect x="372" y="120" width="55" height="45" fill="#D97706" fill-opacity="0.3"/>
+  <text x="366" y="224" font-size="9.5" fill="#B45309">Partial ~50%</text>
+  <!-- full -->
+  <rect x="452" y="120" width="30" height="90" fill="#DC2626" fill-opacity="0.14" stroke="#DC2626"/>
+  <rect x="452" y="120" width="30" height="90" fill="#DC2626" fill-opacity="0.3"/>
+  <text x="446" y="224" font-size="9.5" fill="#B91C1C">Đã lấp hết</text>
+  <text x="280" y="256" font-size="10" fill="#4B5563">Fresh &gt; partial (tới CE) &gt; đã</text>
+  <text x="280" y="270" font-size="10" fill="#4B5563">lấp hết (hết hiệu lực).</text>
+  <text x="280" y="290" font-size="10" fill="#4B5563">Ưu tiên FVG chưa bị chạm.</text>
+
+  <!-- iFVG panel -->
+  <rect x="508" y="74" width="228" height="230" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="522" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Inverse FVG (iFVG)</text>
+  <rect x="560" y="120" width="120" height="55" fill="#16A34A" fill-opacity="0.14" stroke="#16A34A"/>
+  <text x="566" y="140" font-size="9" fill="#15803D">Bullish FVG</text>
+  <path d="M620 178 L620 200" stroke="#B91C1C" stroke-width="1.6" marker-end="url(#aFV)"/>
+  <text x="524" y="196" font-size="9" fill="#B91C1C">Giá đóng xuyên qua</text>
+  <rect x="560" y="205" width="120" height="55" fill="#DC2626" fill-opacity="0.14" stroke="#DC2626"/>
+  <text x="566" y="225" font-size="9" fill="#B91C1C">→ trở thành iFVG (kháng cự)</text>
+  <text x="522" y="284" font-size="10" fill="#4B5563">FVG bị phá đổi vai trò —</text>
+  <text x="522" y="298" font-size="10" fill="#4B5563">dùng sai chiều = thua.</text>
+
+  <!-- decision footer -->
+  <rect x="24" y="316" width="712" height="146" rx="8" fill="#F8FAFC" stroke="#E5E7EB"/>
+  <text x="40" y="340" font-size="12.5" font-weight="700" fill="#1F2937">Cây quyết định trước khi entry một FVG</text>
+  <g font-size="11" fill="#4B5563">
+    <text x="40" y="366">1. Nến giữa có phải displacement mạnh (có body lớn)? — nếu không → bỏ.</text>
+    <text x="40" y="388">2. FVG còn fresh (chưa bị chạm/lấp)? — đã lấp hết → bỏ.</text>
+    <text x="40" y="410">3. Đúng phía PD (bullish→Discount) và cùng draw HTF? — sai phía → bỏ.</text>
+    <text x="40" y="432">4. Có MSS/CISD chống lưng? — FVG ngẫu nhiên giữa range → bỏ.</text>
+    <text x="40" y="454">5. Đủ dày để dùng CE làm mốc entry/SL? — quá mỏng → bỏ. Nếu đã bị đóng xuyên → xử lý như iFVG.</text>
+  </g>
+
+  <defs>
+    <marker id="aFV" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#B91C1C"/></marker>
+  </defs>
+</svg>

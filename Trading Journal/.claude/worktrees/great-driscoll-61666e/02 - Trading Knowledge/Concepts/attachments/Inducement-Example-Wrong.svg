@@ -1,0 +1,50 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Inducement — Lỗi: vào lệnh TẠI vùng IDM</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Nhầm bẫy thanh khoản là POI → bị quét stop trước khi giá tới OB thật</text>
+
+  <!-- real OB lower -->
+  <rect x="120" y="350" width="560" height="44" fill="#3B82F6" opacity="0.14"/>
+  <text x="128" y="370" font-size="13" font-weight="700" fill="#1D4ED8">Order Block thật (POI HTF) — giá CHƯA tới</text>
+
+  <!-- IDM minor swing where trader wrongly enters -->
+  <rect x="120" y="250" width="320" height="40" fill="#EF4444" opacity="0.12"/>
+  <text x="128" y="244" font-size="13" font-weight="700" fill="#DC2626">Đáy nhỏ / IDM — trader nhầm là OB</text>
+
+  <!-- down move into minor swing -->
+  <rect x="156" y="110" width="2" height="70" fill="#DC2626"/>
+  <rect x="150" y="120" width="14" height="48" fill="#DC2626" rx="1"/>
+  <rect x="182" y="140" width="2" height="80" fill="#DC2626"/>
+  <rect x="176" y="150" width="14" height="60" fill="#DC2626" rx="1"/>
+  <rect x="208" y="190" width="2" height="75" fill="#16A34A"/>
+  <rect x="202" y="205" width="14" height="40" fill="#16A34A" rx="1"/>
+  <!-- small pullback -->
+  <rect x="234" y="175" width="2" height="55" fill="#16A34A"/>
+  <rect x="228" y="185" width="14" height="38" fill="#16A34A" rx="1"/>
+
+  <!-- WRONG entry marker at IDM -->
+  <circle cx="241" cy="250" r="6" fill="#DC2626"/>
+  <text x="252" y="240" font-size="13" font-weight="700" fill="#DC2626">✗ Entry sớm tại IDM</text>
+
+  <!-- price drops THROUGH IDM, stops out, continues to real OB -->
+  <rect x="262" y="200" width="2" height="130" fill="#DC2626"/>
+  <rect x="256" y="220" width="14" height="95" fill="#DC2626" rx="1"/>
+  <rect x="288" y="250" width="2" height="120" fill="#DC2626"/>
+  <rect x="282" y="280" width="14" height="80" fill="#DC2626" rx="1"/>
+  <rect x="314" y="300" width="2" height="80" fill="#DC2626"/>
+  <rect x="308" y="320" width="14" height="50" fill="#DC2626" rx="1"/>
+
+  <!-- stop hit line -->
+  <line x1="120" y1="300" x2="500" y2="300" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="370" y="294" font-size="13" font-weight="700" fill="#DC2626">Stop Loss bị quét</text>
+
+  <!-- then bounce from real OB (too late) -->
+  <rect x="350" y="320" width="2" height="60" fill="#16A34A"/>
+  <rect x="344" y="335" width="14" height="40" fill="#16A34A" rx="1"/>
+  <rect x="376" y="270" width="2" height="90" fill="#16A34A"/>
+  <rect x="370" y="285" width="14" height="65" fill="#16A34A" rx="1"/>
+  <text x="400" y="350" font-size="12" fill="#374151">Giá mới bật từ OB thật — quá muộn</text>
+
+  <text x="24" y="440" font-size="16" font-weight="700" fill="#DC2626">✗ Sai</text>
+  <text x="64" y="440" font-size="13" fill="#374151">Vào tại IDM = nuôi thanh khoản cho smart money; giá quét stop rồi mới tới POI thật.</text>
+</svg>

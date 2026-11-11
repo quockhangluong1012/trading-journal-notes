@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Chấm điểm chất lượng BOS — Grade A / B / C</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Không phải BOS nào cũng đáng theo. Chấm điểm trước khi hành động; grade quyết định size và kỳ vọng.</text>
+
+  <!-- Grade A -->
+  <rect x="24" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="2"/>
+  <rect x="24" y="76" width="228" height="40" rx="8" fill="#DCFCE7"/>
+  <text x="104" y="102" font-size="15" font-weight="800" fill="#166534">GRADE A</text>
+  <text x="38" y="140" font-size="11" fill="#374151">✓ Body close + displacement mạnh</text>
+  <text x="38" y="162" font-size="11" fill="#374151">✓ Để lại FVG rõ ràng</text>
+  <text x="38" y="184" font-size="11" fill="#374151">✓ Phá swing ĐƯỢC BẢO VỆ (đúng degree)</text>
+  <text x="38" y="206" font-size="11" fill="#374151">✓ Có sweep liquidity trước cú phá</text>
+  <text x="38" y="228" font-size="11" fill="#374151">✓ Đồng hướng Daily Bias + kill zone</text>
+  <text x="38" y="250" font-size="11" fill="#374151">✓ Pullback giữ trên swing cũ (no reclaim)</text>
+  <line x1="38" y1="270" x2="238" y2="270" stroke="#E5E7EB"/>
+  <text x="38" y="292" font-size="11" font-weight="700" fill="#166534">Hành động: trade full size theo plan;</text>
+  <text x="38" y="308" font-size="11" font-weight="700" fill="#166534">tin BOS này khi map target/range.</text>
+  <text x="38" y="336" font-size="10.5" fill="#6B7280">Đây là BOS "sách giáo khoa" —</text>
+  <text x="38" y="351" font-size="10.5" fill="#6B7280">thường mở leg mới rõ rệt.</text>
+
+  <!-- Grade B -->
+  <rect x="266" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+  <rect x="266" y="76" width="228" height="40" rx="8" fill="#FEF3C7"/>
+  <text x="344" y="102" font-size="15" font-weight="800" fill="#B45309">GRADE B</text>
+  <text x="280" y="140" font-size="11" fill="#374151">✓ Body close qua swing</text>
+  <text x="280" y="162" font-size="11" fill="#374151">△ Displacement trung bình, FVG nhỏ/mờ</text>
+  <text x="280" y="184" font-size="11" fill="#374151">△ Swing tham chiếu hạng hai (internal)</text>
+  <text x="280" y="206" font-size="11" fill="#374151">△ Sweep không rõ / pool đã mỏng</text>
+  <text x="280" y="228" font-size="11" fill="#374151">✓ Vẫn đồng hướng bias</text>
+  <text x="280" y="250" font-size="11" fill="#374151">? Chưa kiểm chứng reclaim (nến mới)</text>
+  <line x1="280" y1="270" x2="480" y2="270" stroke="#E5E7EB"/>
+  <text x="280" y="292" font-size="11" font-weight="700" fill="#B45309">Hành động: giảm size / đòi thêm</text>
+  <text x="280" y="308" font-size="11" font-weight="700" fill="#B45309">confluence (OB, OTE, kill zone).</text>
+  <text x="280" y="336" font-size="10.5" fill="#6B7280">Dùng để giữ bias, nhưng entry</text>
+  <text x="280" y="351" font-size="10.5" fill="#6B7280">phải chọn lọc hơn Grade A.</text>
+
+  <!-- Grade C -->
+  <rect x="508" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+  <rect x="508" y="76" width="228" height="40" rx="8" fill="#FEE2E2"/>
+  <text x="586" y="102" font-size="15" font-weight="800" fill="#B91C1C">GRADE C</text>
+  <text x="522" y="140" font-size="11" fill="#374151">✗ Chỉ wick qua / body sát mép</text>
+  <text x="522" y="162" font-size="11" fill="#374151">✗ Không displacement, không FVG</text>
+  <text x="522" y="184" font-size="11" fill="#374151">✗ Micro swing vô nghĩa</text>
+  <text x="522" y="206" font-size="11" fill="#374151">✗ Giữa range / ngoài kill zone</text>
+  <text x="522" y="228" font-size="11" fill="#374151">✗ Ngược bias hoặc range đã cạn</text>
+  <text x="522" y="250" font-size="11" fill="#374151">✗ Nến chưa đóng đã vội gắn nhãn</text>
+  <line x1="522" y1="270" x2="722" y2="270" stroke="#E5E7EB"/>
+  <text x="522" y="292" font-size="11" font-weight="700" fill="#B91C1C">Hành động: KHÔNG trade, không</text>
+  <text x="522" y="308" font-size="11" font-weight="700" fill="#B91C1C">dùng để giữ/đổi bias.</text>
+  <text x="522" y="336" font-size="10.5" fill="#6B7280">Phần lớn "BOS" thua lỗ trong</text>
+  <text x="522" y="351" font-size="10.5" fill="#6B7280">journal thuộc nhóm này.</text>
+
+  <rect x="24" y="392" width="712" height="24" rx="6" fill="#EDE9FE"/>
+  <text x="36" y="409" font-size="11.5" font-weight="700" fill="#5B21B6">Log trường `bos_grade: A/B/C` vào journal — sau 30 lệnh, so sánh win rate theo grade để tự chứng minh bộ lọc này bằng dữ liệu của chính bạn.</text>
+</svg>

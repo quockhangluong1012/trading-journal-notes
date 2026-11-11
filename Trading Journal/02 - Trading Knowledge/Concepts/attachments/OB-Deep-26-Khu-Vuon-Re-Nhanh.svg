@@ -1,0 +1,242 @@
+<svg viewBox="0 0 980 620" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmNjE1ZjA1YS0yODc1LTQ5YTMtYTAzZS1hNzg4ZjBmMGQ2ZDMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaA4hb1L+cAT86GMvisYu3f0AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo2MmEwOThkYy05NzRlLTQwZGUtYWQzZC00ZWVlOWIxZmQ5NDBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoIM3AjDBA/lXVrx7EPwYvNQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg+sx5BprKLSFPDSqDHtww8lXztFrnUS7n/2t9+UqZc/+kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaDPvJwKBxiKTGB03U1w9HrgAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAzZK1bdh7vG+cIwYOSlmy6UJrfkiMy26plV9hlN/Gr/2RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmY2MTVmMDVhLTI4NzUtNDlhMy1hMDNlLWE3ODhmMGYwZDZkMy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjdmMGZhM2ZmLTEwZWItNDZkNS1hMDRkLTFiYzE3MzIyYzcyMnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCD6zHkGmsotIU8NKoMe3DDyVfO0WudRLuf/a335Splz/6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggdVdyxLf46Tz6qIl3U4ofiDZxA1FpmF96HGrppm9CVimiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggqNAkcxkGGZ2FgkU0UqYf2F8uKoxNUzUmTFssegUS81B0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQJZku6LFTCYA24WbcSqWcD6DLYco4dMIY/axHNy1P5q120K0Vb7d8+wkLc1XBamZHsbsqCETtOdSS7wXnzxJGDM=</c2pa:manifest></metadata>
+<defs><marker id="aK" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#6B7280"/></marker><marker id="aR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#B91C1C"/></marker><marker id="aG" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#15803D"/></marker><marker id="aB" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/></marker><marker id="aO" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#B45309"/></marker><marker id="aP" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#6D28D9"/></marker><marker id="aS" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#334155"/></marker><marker id="aD" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#111827"/></marker></defs>
+<rect x="0" y="0" width="980" height="620" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="26.0" y="34.0" font-size="18" font-weight="700" fill="#1F2937" text-anchor="start">Khu vườn rẽ nhánh — vì sao một backtest OB rất đẹp vẫn có thể chỉ là overfit</text>
+<text x="26.0" y="56.0" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start">Mỗi lựa chọn 'hợp lý' nhân số đường đi. Protocol: 5 định nghĩa × 5 ngưỡng displacement × 5 swing × 4 entry × 4 stop × 4 target = 8.000 cấu hình.</text>
+<rect x="26.0" y="80.0" width="520.0" height="380.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="40.0" y="114.0" font-size="9.6" font-weight="700" fill="#334155" text-anchor="start">định nghĩa OB</text>
+<circle cx="150.0" cy="110.0" r="5" fill="#2563EB"/>
+<circle cx="230.0" cy="110.0" r="5" fill="#2563EB"/>
+<circle cx="310.0" cy="110.0" r="5" fill="#2563EB"/>
+<circle cx="390.0" cy="110.0" r="5" fill="#2563EB"/>
+<circle cx="470.0" cy="110.0" r="5" fill="#2563EB"/>
+<text x="536.0" y="114.0" font-size="10.6" font-weight="700" fill="#1D4ED8" text-anchor="end">5</text>
+<text x="40.0" y="170.0" font-size="9.6" font-weight="700" fill="#334155" text-anchor="start">ngưỡng displ.</text>
+<circle cx="150.0" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="163.3" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="176.7" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="190.0" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="203.3" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="216.7" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="230.0" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="243.3" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="256.7" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="270.0" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="283.3" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="296.7" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="310.0" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="323.3" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="336.7" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="350.0" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="363.3" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="376.7" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="390.0" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="403.3" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="416.7" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="430.0" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="443.3" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="456.7" cy="166.0" r="3.2" fill="#2563EB"/>
+<circle cx="470.0" cy="166.0" r="3.2" fill="#2563EB"/>
+<text x="536.0" y="170.0" font-size="10.6" font-weight="700" fill="#1D4ED8" text-anchor="end">25</text>
+<text x="40.0" y="226.0" font-size="9.6" font-weight="700" fill="#334155" text-anchor="start">thuật toán swing</text>
+<circle cx="150.0" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="158.2" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="166.4" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="174.6" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="182.8" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="191.0" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="199.2" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="207.4" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="215.6" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="223.8" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="232.1" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="240.3" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="248.5" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="256.7" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="264.9" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="273.1" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="281.3" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="289.5" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="297.7" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="305.9" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="314.1" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="322.3" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="330.5" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="338.7" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="346.9" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="355.1" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="363.3" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="371.5" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="379.7" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="387.9" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="396.2" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="404.4" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="412.6" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="420.8" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="429.0" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="437.2" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="445.4" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="453.6" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="461.8" cy="222.0" r="3.2" fill="#2563EB"/>
+<circle cx="470.0" cy="222.0" r="3.2" fill="#2563EB"/>
+<text x="536.0" y="226.0" font-size="10.6" font-weight="700" fill="#1D4ED8" text-anchor="end">125</text>
+<text x="40.0" y="282.0" font-size="9.6" font-weight="700" fill="#334155" text-anchor="start">entry</text>
+<circle cx="150.0" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="158.2" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="166.4" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="174.6" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="182.8" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="191.0" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="199.2" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="207.4" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="215.6" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="223.8" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="232.1" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="240.3" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="248.5" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="256.7" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="264.9" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="273.1" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="281.3" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="289.5" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="297.7" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="305.9" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="314.1" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="322.3" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="330.5" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="338.7" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="346.9" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="355.1" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="363.3" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="371.5" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="379.7" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="387.9" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="396.2" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="404.4" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="412.6" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="420.8" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="429.0" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="437.2" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="445.4" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="453.6" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="461.8" cy="278.0" r="3.2" fill="#2563EB"/>
+<circle cx="470.0" cy="278.0" r="3.2" fill="#2563EB"/>
+<text x="536.0" y="282.0" font-size="10.6" font-weight="700" fill="#1D4ED8" text-anchor="end">500</text>
+<text x="40.0" y="338.0" font-size="9.6" font-weight="700" fill="#334155" text-anchor="start">stop</text>
+<circle cx="150.0" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="158.2" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="166.4" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="174.6" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="182.8" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="191.0" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="199.2" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="207.4" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="215.6" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="223.8" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="232.1" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="240.3" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="248.5" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="256.7" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="264.9" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="273.1" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="281.3" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="289.5" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="297.7" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="305.9" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="314.1" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="322.3" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="330.5" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="338.7" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="346.9" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="355.1" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="363.3" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="371.5" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="379.7" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="387.9" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="396.2" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="404.4" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="412.6" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="420.8" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="429.0" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="437.2" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="445.4" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="453.6" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="461.8" cy="334.0" r="3.2" fill="#2563EB"/>
+<circle cx="470.0" cy="334.0" r="3.2" fill="#2563EB"/>
+<text x="536.0" y="338.0" font-size="10.6" font-weight="700" fill="#1D4ED8" text-anchor="end">2.000</text>
+<text x="40.0" y="394.0" font-size="9.6" font-weight="700" fill="#334155" text-anchor="start">target</text>
+<circle cx="150.0" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="158.2" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="166.4" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="174.6" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="182.8" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="191.0" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="199.2" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="207.4" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="215.6" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="223.8" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="232.1" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="240.3" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="248.5" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="256.7" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="264.9" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="273.1" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="281.3" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="289.5" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="297.7" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="305.9" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="314.1" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="322.3" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="330.5" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="338.7" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="346.9" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="355.1" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="363.3" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="371.5" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="379.7" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="387.9" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="396.2" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="404.4" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="412.6" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="420.8" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="429.0" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="437.2" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="445.4" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="453.6" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="461.8" cy="390.0" r="3.2" fill="#D97706"/>
+<circle cx="470.0" cy="390.0" r="3.2" fill="#D97706"/>
+<text x="536.0" y="394.0" font-size="10.6" font-weight="700" fill="#1D4ED8" text-anchor="end">8.000</text>
+<text x="150.0" y="456.0" font-size="10.2" font-weight="700" fill="#B91C1C" text-anchor="start">… 8.000 cấu hình. Với α = 5%, ~400 cấu hình 'có ý nghĩa' dù KHÔNG có edge nào.</text>
+<rect x="560.0" y="80.0" width="394.0" height="380.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="572.0" y="100.0" font-size="12.5" font-weight="700" fill="#B45309" text-anchor="start">OB-Sim-08 (random walk, 3.240 biến thể)</text>
+<rect x="572.0" y="105.0" width="370.0" height="28.0" rx="4" fill="#FFFBEB"/>
+<text x="582.0" y="123.0" font-size="10" font-weight="600" fill="#374151" text-anchor="start">biến thể đủ mẫu</text>
+<text x="932.0" y="123.0" font-size="10" font-weight="700" fill="#B45309" text-anchor="end">3.240</text>
+<rect x="572.0" y="139.0" width="370.0" height="28.0" rx="4" fill="#FFFFFF"/>
+<text x="582.0" y="157.0" font-size="10" font-weight="600" fill="#374151" text-anchor="start">t &gt; 2 in-sample</text>
+<text x="932.0" y="157.0" font-size="10" font-weight="700" fill="#B45309" text-anchor="end">2.3% (≈ kỳ vọng dưới H0)</text>
+<rect x="572.0" y="173.0" width="370.0" height="28.0" rx="4" fill="#FFFBEB"/>
+<text x="582.0" y="191.0" font-size="10" font-weight="600" fill="#374151" text-anchor="start">t lớn nhất in-sample</text>
+<text x="932.0" y="191.0" font-size="10" font-weight="700" fill="#B45309" text-anchor="end">3.14</text>
+<rect x="572.0" y="207.0" width="370.0" height="28.0" rx="4" fill="#FFFFFF"/>
+<text x="582.0" y="225.0" font-size="10" font-weight="600" fill="#374151" text-anchor="start">biến thể tốt nhất: IS</text>
+<text x="932.0" y="225.0" font-size="10" font-weight="700" fill="#B45309" text-anchor="end">+0.19R (n = 501)</text>
+<rect x="572.0" y="241.0" width="370.0" height="28.0" rx="4" fill="#FFFBEB"/>
+<text x="582.0" y="259.0" font-size="10" font-weight="600" fill="#374151" text-anchor="start">… cùng biến thể: OOS</text>
+<text x="932.0" y="259.0" font-size="10" font-weight="700" fill="#B45309" text-anchor="end">+0.04R ± 0.15 (không ý nghĩa)</text>
+<rect x="572.0" y="275.0" width="370.0" height="28.0" rx="4" fill="#FFFFFF"/>
+<text x="582.0" y="293.0" font-size="10" font-weight="600" fill="#374151" text-anchor="start">top 10 IS → OOS</text>
+<text x="932.0" y="293.0" font-size="10" font-weight="700" fill="#B45309" text-anchor="end">+0.15R → +0.06R</text>
+<rect x="572.0" y="309.0" width="370.0" height="28.0" rx="4" fill="#FFFBEB"/>
+<text x="582.0" y="327.0" font-size="10" font-weight="600" fill="#374151" text-anchor="start">tương quan IS ~ OOS</text>
+<text x="932.0" y="327.0" font-size="10" font-weight="700" fill="#B45309" text-anchor="end">+0.21 (yếu)</text>
+<text x="574.0" y="372.0" font-size="9.8" font-weight="600" fill="#B45309" text-anchor="start">Biến thể 'thắng': thr 2.0, full, entry CE, buffer 0,</text>
+<text x="574.0" y="387.0" font-size="9.8" font-weight="600" fill="#B45309" text-anchor="start">target 3R, FVG + sweep bắt buộc, phiên 1 — một câu</text>
+<text x="574.0" y="402.0" font-size="9.8" font-weight="600" fill="#B45309" text-anchor="start">chuyện ICT rất 'hợp lý' cho một kết quả ngẫu nhiên.</text>
+<rect x="26.0" y="474.0" width="928.0" height="132.0" rx="9" fill="#F1F5F9" stroke="#475569" stroke-width="1.2"/>
+<text x="38.0" y="494.0" font-size="11.2" font-weight="700" fill="#334155" text-anchor="start">Phòng vệ (theo mức chi phí tăng dần)</text>
+<text x="38.0" y="512.0" font-size="10" font-weight="400" fill="#374151" text-anchor="start">1. Đăng ký trước (pre-register): viết OB-DEF, giả thuyết, quy tắc trước khi chạy; mọi thay đổi → version mới (v0.1 → v0.2) và ghi lý do.</text>
+<text x="38.0" y="529.0" font-size="10" font-weight="400" fill="#374151" text-anchor="start">2. OOS khóa + walk-forward; báo cáo SỐ biến thể đã thử, không chỉ biến thể tốt nhất.</text>
+<text x="38.0" y="546.0" font-size="10" font-weight="400" fill="#374151" text-anchor="start">3. Hiệu chỉnh nhiều phép thử: Bonferroni/Holm cho vài giả thuyết; White's Reality Check / SPA, PBO–CSCV (Bailey et al. 2017) cho tìm kiếm tham số.</text>
+<text x="38.0" y="563.0" font-size="10" font-weight="400" fill="#374151" text-anchor="start">4. Ưu tiên mô hình ít tham số; tham số chọn theo lý do cơ chế, không theo đỉnh của bề mặt tối ưu; kiểm tra độ ổn định quanh tham số (không chỉ điểm tốt nhất).</text>
+</svg>

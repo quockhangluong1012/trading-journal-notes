@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">NWOG lồng NDOG — cấu trúc fractal đa khung theo tuần</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Một NWOG đầu tuần "chứa" 4-5 NDOG hằng ngày bên trong — bias tuần (NWOG) khung lớn, phản ứng ngày (NDOG) khung nhỏ.</text>
+
+  <rect x="24" y="70" width="712" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- Big NWOG zone spanning the whole week, drawn as a large background band -->
+  <rect x="60" y="120" width="40" height="220" fill="#3B82F6" opacity="0.12" stroke="#1D4ED8" stroke-dasharray="4 3"/>
+  <text x="20" y="115" font-size="10.5" font-weight="700" fill="#1D4ED8">NWOG (Fri→Sun)</text>
+  <line x1="60" y1="230" x2="716" y2="230" stroke="#1D4ED8" stroke-width="1.4" stroke-dasharray="2 4" opacity="0.5"/>
+  <text x="640" y="225" font-size="9.5" fill="#1D4ED8" opacity="0.8">CE tuần (NWOG) — bias khung lớn</text>
+
+  <!-- weekly price path across 5 days -->
+  <path d="M100,180 L150,200 L200,170 L260,210 L320,190 L380,230 L440,200 L500,240 L560,215 L620,180 L680,150" fill="none" stroke="#374151" stroke-width="2"/>
+
+  <!-- Day 1 NDOG -->
+  <rect x="140" y="185" width="16" height="35" fill="#F59E0B" opacity="0.22" stroke="#B45309" stroke-dasharray="3 2"/>
+  <text x="120" y="345" font-size="9" fill="#92400E">NDOG Thứ 2</text>
+
+  <!-- Day 2 NDOG -->
+  <rect x="250" y="180" width="16" height="35" fill="#F59E0B" opacity="0.22" stroke="#B45309" stroke-dasharray="3 2"/>
+  <text x="232" y="345" font-size="9" fill="#92400E">NDOG Thứ 3</text>
+
+  <!-- Day 3 NDOG -->
+  <rect x="370" y="205" width="16" height="35" fill="#F59E0B" opacity="0.22" stroke="#B45309" stroke-dasharray="3 2"/>
+  <text x="352" y="345" font-size="9" fill="#92400E">NDOG Thứ 4</text>
+
+  <!-- Day 4 NDOG -->
+  <rect x="490" y="215" width="16" height="35" fill="#F59E0B" opacity="0.22" stroke="#B45309" stroke-dasharray="3 2"/>
+  <text x="472" y="345" font-size="9" fill="#92400E">NDOG Thứ 5</text>
+
+  <!-- Day 5 NDOG -->
+  <rect x="610" y="160" width="16" height="35" fill="#F59E0B" opacity="0.22" stroke="#B45309" stroke-dasharray="3 2"/>
+  <text x="592" y="345" font-size="9" fill="#92400E">NDOG Thứ 6</text>
+
+  <!-- callouts numbered -->
+  <circle cx="80" cy="160" r="11" fill="none" stroke="#1D4ED8" stroke-width="1.8"/>
+  <text x="76" y="164" font-size="10" font-weight="700" fill="#1D4ED8">①</text>
+  <text x="98" y="100" font-size="10" fill="#1D4ED8">① NWOG khung tuần — xác định bias &amp; draw cả tuần</text>
+
+  <circle cx="148" cy="202" r="10" fill="none" stroke="#B45309" stroke-width="1.6"/>
+  <text x="144" y="206" font-size="9.5" font-weight="700" fill="#B45309">②</text>
+  <text x="170" y="95" font-size="10" fill="#92400E">② Mỗi NDOG là "gap nhỏ" trong ngày, nằm trong lòng NWOG tuần</text>
+
+  <text x="440" y="80" font-size="10" fill="#374151">③ Giá lượn giữa các NDOG hằng ngày trong khi vẫn tôn trọng CE của NWOG tuần</text>
+  <path d="M440,86 L460,150" stroke="#6B7280" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="24" y="380" width="712" height="88" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="400" font-size="11.5" font-weight="700" fill="#1F2937">Cách phối hợp thực chiến</text>
+  <text x="36" y="418" font-size="10.5" fill="#374151">• Dùng NWOG (D1/H4) để xác định <tspan font-weight="700">bias tuần</tspan>: giá đang premium hay discount so với CE tuần?</text>
+  <text x="36" y="436" font-size="10.5" fill="#374151">• Dùng NDOG (H1/M15) để tìm <tspan font-weight="700">điểm phản ứng trong ngày</tspan> — chỉ ưu tiên NDOG cùng hướng với bias NWOG.</text>
+  <text x="36" y="454" font-size="10.5" fill="#374151">• Khi một NDOG trong tuần trùng vị trí với CE/cạnh NWOG → confluence mạnh nhất, xem <tspan font-weight="700">[[23 - New Day Opening Gap]]</tspan>.</text>
+
+  <rect x="24" y="0" width="0" height="0"/>
+</svg>

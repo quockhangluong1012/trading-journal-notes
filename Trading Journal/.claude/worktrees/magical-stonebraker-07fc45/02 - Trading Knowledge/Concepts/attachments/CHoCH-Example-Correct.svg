@@ -1,0 +1,43 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ ĐÚNG — Bullish CHoCH sau sweep SSL, đảo chiều downtrend</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Downtrend LH/LL → sweep SSL/PDL tại discount (chạm bullish FVG POI) → body close trên lower-high + displacement.</text>
+
+  <rect x="24" y="70" width="712" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- discount POI zone -->
+  <rect x="44" y="270" width="672" height="80" fill="#3B82F6" opacity="0.06"/>
+  <text x="52" y="286" font-size="10.5" fill="#1D4ED8">HTF POI (bullish FVG) + discount của dealing range</text>
+
+  <!-- downtrend with lower highs / lower lows -->
+  <path d="M60,120 L110,190 L145,150 L200,255 L240,205 L295,320" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <text x="66" y="112" font-size="10.5" fill="#6B7280">① Downtrend LH/LL đang chạy</text>
+  <!-- protected lower-high -->
+  <circle cx="240" cy="205" r="6" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+  <text x="150" y="198" font-size="10.5" font-weight="700" fill="#15803D">② Protected lower-high — mốc bullish CHoCH</text>
+  <line x1="240" y1="205" x2="470" y2="205" stroke="#16A34A" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <!-- sweep SSL -->
+  <circle cx="295" cy="320" r="9" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+  <line x1="230" y1="328" x2="360" y2="328" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <text x="250" y="348" font-size="10.5" font-weight="700" fill="#B45309">③ Sweep SSL / PDL (quét đáy cũ + reject) tại discount</text>
+  <!-- displacement leg up breaking LH -->
+  <path d="M295,320 L340,255 L360,273 L430,150" fill="none" stroke="#16A34A" stroke-width="2.8"/>
+  <rect x="434" y="150" width="2" height="90" fill="#16A34A"/><rect x="428" y="158" width="13" height="72" fill="#16A34A" rx="1"/>
+  <text x="448" y="160" font-size="10.5" font-weight="700" fill="#15803D">④ Bullish CHoCH ( ≈ MSS ):</text>
+  <text x="448" y="175" font-size="10.5" fill="#15803D">body close TRÊN protected LH + displacement</text>
+  <!-- bullish FVG -->
+  <rect x="365" y="230" width="120" height="26" fill="#3B82F6" opacity="0.18"/>
+  <text x="490" y="247" font-size="10.5" fill="#1D4ED8">⑤ Để lại bullish FVG = POI Long</text>
+  <!-- retrace + entry -->
+  <path d="M430,150 L465,200 L488,238 L510,210 L555,150 L600,185 L665,100" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="488" cy="238" r="6" fill="#16A34A"/>
+  <text x="498" y="290" font-size="10.5" font-weight="700" fill="#15803D">⑥ Retrace M5 vào FVG → Long</text>
+  <text x="498" y="305" font-size="10.5" fill="#6B7280">stop dưới sweep low; target BSL</text>
+  <!-- BSL target -->
+  <line x1="600" y1="100" x2="716" y2="100" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="600" y="92" font-size="10.5" fill="#166534">Target: BSL phía trên (lower-high cấu trúc)</text>
+
+  <rect x="24" y="378" width="712" height="42" rx="6" fill="#DCFCE7"/>
+  <text x="36" y="397" font-size="11.5" font-weight="700" fill="#166534">Vì sao tốt: phá ngược downtrend lần đầu + protected LH + body close + displacement + FVG, SAU sweep external tại discount.</text>
+  <text x="36" y="414" font-size="11.5" font-weight="700" fill="#166534">Sau CHoCH có thêm BOS hướng mới → order flow xác nhận đã đổi.</text>
+</svg>

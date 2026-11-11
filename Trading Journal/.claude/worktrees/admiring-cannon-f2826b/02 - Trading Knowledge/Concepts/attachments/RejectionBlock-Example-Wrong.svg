@@ -1,0 +1,46 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ sai — "RB" giả giữa range, không sweep, ngược premium/discount</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Wick nhỏ giữa range bị gọi nhầm là RB; không quét thanh khoản, không MSS; giá đóng cửa vượt wick extreme.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- premium zone (wrong side for a long) -->
+  <rect x="44" y="90" width="672" height="96" fill="#DC2626" opacity="0.06"/>
+  <text x="52" y="108" font-size="10.5" fill="#B91C1C">Premium của dealing range — SAI phía cho lệnh Long</text>
+
+  <!-- range boundaries -->
+  <line x1="60" y1="130" x2="716" y2="130" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="620" y="126" font-size="9.5" fill="#374151">Đỉnh range</text>
+  <line x1="60" y1="330" x2="716" y2="330" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="620" y="345" font-size="9.5" fill="#374151">Đáy range</text>
+
+  <!-- choppy sideways price action -->
+  <path d="M60,220 L110,240 L150,200 L200,250 L240,210 L280,245" fill="none" stroke="#374151" stroke-width="2"/>
+  <text x="64" y="200" font-size="10.5" fill="#6B7280">① Giá đi ngang giữa range — không tại swing có ý nghĩa</text>
+
+  <!-- small random wick candle mislabeled as RB -->
+  <rect x="270" y="238" width="14" height="14" fill="#DC2626" opacity="0.8" rx="1"/>
+  <rect x="275" y="252" width="4" height="18" fill="#DC2626" opacity="0.8"/>
+  <rect x="266" y="235" width="24" height="38" fill="#F59E0B" opacity="0.18" stroke="#B45309" stroke-dasharray="4 3"/>
+  <text x="240" y="292" font-size="10.5" font-weight="700" fill="#B45309">② Wick nhỏ, KHÔNG quét thanh khoản nào — gọi nhầm là "RB"</text>
+
+  <!-- wrong long entry -->
+  <path d="M284,252 L320,235 L360,260 L400,220" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="300" cy="245" r="7" fill="#DC2626"/>
+  <text x="310" y="200" font-size="10.5" font-weight="700" fill="#B91C1C">③ Vào Long tại đây — ngược bias HTF, ngược premium/discount</text>
+
+  <!-- no MSS, price reverses and closes past wick extreme -->
+  <path d="M400,220 L440,260 L480,300 L520,340 L560,300" fill="none" stroke="#DC2626" stroke-width="2.4"/>
+  <line x1="284" y1="270" x2="716" y2="270" stroke="#DC2626" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="600" y="266" font-size="10" fill="#B91C1C">Wick extreme (invalidation)</text>
+
+  <circle cx="520" cy="340" r="7" fill="none" stroke="#B91C1C" stroke-width="2.4"/>
+  <text x="420" y="368" font-size="10.5" font-weight="700" fill="#B91C1C">④ Đóng cửa VƯỢT wick extreme → RB vô hiệu → Stop out</text>
+
+  <text x="60" y="170" font-size="10" fill="#6B7280">Không có MSS xác nhận trước khi vào lệnh</text>
+
+  <rect x="24" y="410" width="712" height="56" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="430" font-size="11.5" font-weight="700" fill="#92400E">Lỗi: coi mọi wick dài là RB dù không sweep thanh khoản có ý nghĩa; vào ngược premium/discount và bias;</text>
+  <text x="36" y="450" font-size="11.5" font-weight="700" fill="#92400E">không chờ MSS xác nhận. Giá đóng cửa vượt wick extreme ngay sau đó = RB chết, lệnh thua.</text>
+</svg>

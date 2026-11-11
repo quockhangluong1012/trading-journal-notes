@@ -1,0 +1,100 @@
+<svg viewBox="0 0 860 660" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="660" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Bốn case Dealing Range — vị trí KHÔNG dự báo hướng</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Vị trí trong range là bộ lọc ENTRY, không phải bộ dự báo HƯỚNG. Discount không có nghĩa là bullish.</text>
+
+  <!-- axis labels -->
+  <text x="34" y="88" font-size="10.5" font-weight="700" fill="#6B7280">Bối cảnh</text>
+  <text x="248" y="88" font-size="10.5" font-weight="700" fill="#B91C1C" text-anchor="middle">BSL ở TRÊN</text>
+  <text x="640" y="88" font-size="10.5" font-weight="700" fill="#15803D" text-anchor="middle">SSL ở DƯỚI</text>
+
+  <text x="34" y="222" font-size="10.5" font-weight="700" fill="#1D4ED8">DISCOUNT</text>
+  <text x="34" y="238" font-size="9" fill="#6B7280">(nửa dưới range)</text>
+  <text x="34" y="446" font-size="10.5" font-weight="700" fill="#B45309">PREMIUM</text>
+  <text x="34" y="462" font-size="9" fill="#6B7280">(nửa trên range)</text>
+
+  <!-- ================= CASE A ================= -->
+  <rect x="132" y="102" width="332" height="238" rx="8" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.8"/>
+  <rect x="132" y="102" width="332" height="30" rx="8" fill="#DBEAFE"/>
+  <text x="148" y="122" font-size="12" font-weight="700" fill="#1D4ED8">CASE A — Discount + BSL trên</text>
+
+  <text x="148" y="152" font-size="10" font-weight="700" fill="#B91C1C">Trực giác SAI:  "discount → long"</text>
+
+  <text x="148" y="176" font-size="10" font-weight="700" fill="#374151">Candidate:</text>
+  <text x="148" y="191" font-size="9.5" fill="#4B5563">A1 = BSL trên  (nếu structural state BULLISH)</text>
+  <text x="148" y="205" font-size="9.5" fill="#4B5563">A2 = SSL dưới (nếu structural state BEARISH)</text>
+
+  <text x="148" y="228" font-size="10" font-weight="700" fill="#15803D">Ủng hộ A1:</text>
+  <text x="148" y="242" font-size="9.5" fill="#166534">discount ủng hộ ENTRY long (không ủng hộ destination)</text>
+
+  <text x="148" y="262" font-size="10" font-weight="700" fill="#B91C1C">Phản bác A1:</text>
+  <text x="148" y="276" font-size="9.5" fill="#991B1B">BSL là imbalance / đã test nhiều lần; opposing POI ngay dưới</text>
+
+  <rect x="148" y="290" width="300" height="38" rx="6" fill="#EFF6FF" stroke="#1D4ED8"/>
+  <text x="158" y="306" font-size="10" font-weight="700" fill="#1D4ED8">Điều quyết định thật:</text>
+  <text x="158" y="321" font-size="9.5" fill="#1E3A8A">STRUCTURAL STATE — không phải vị trí trong range.</text>
+
+  <!-- ================= CASE B ================= -->
+  <rect x="480" y="102" width="356" height="238" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="2"/>
+  <rect x="480" y="102" width="356" height="30" rx="8" fill="#FEF3C7"/>
+  <text x="496" y="122" font-size="12" font-weight="700" fill="#B45309">CASE B — Discount + SSL dưới  ⚠ KHÓ NHẤT</text>
+
+  <text x="496" y="152" font-size="10" font-weight="700" fill="#B45309">Trực giác SAI:  "rẻ + SSL ngay dưới → sẽ quét rồi lên"</text>
+
+  <text x="496" y="176" font-size="10" font-weight="700" fill="#374151">Candidate:</text>
+  <text x="496" y="191" font-size="9.5" fill="#4B5563">B1 = BSL trên   (SSL dưới là FUEL cho reversal long)</text>
+  <text x="496" y="205" font-size="9.5" fill="#4B5563">B2 = SSL dưới  (SSL là CONTINUATION target)</text>
+
+  <rect x="496" y="216" width="324" height="62" rx="6" fill="#FFFBEB" stroke="#D97706" stroke-dasharray="5 3"/>
+  <text x="506" y="234" font-size="10" font-weight="700" fill="#B45309">★ PHÂN BIỆT QUYẾT ĐỊNH:</text>
+  <text x="506" y="250" font-size="9.5" fill="#92400E">SSL dưới là INDUCEMENT (nhỏ, gần, trước POI thật)</text>
+  <text x="506" y="265" font-size="9.5" fill="#92400E">hay TARGET (điểm kết thúc leg)?  → trả lời bằng POI LOCATION</text>
+
+  <text x="496" y="296" font-size="10" font-weight="700" fill="#B45309">Hai DOL cạnh tranh THẬT SỰ:</text>
+  <text x="496" y="311" font-size="9.5" fill="#92400E">không giải được bằng vị trí — chỉ giải bằng cấu trúc + POI.</text>
+  <text x="496" y="330" font-size="9.5" font-style="italic" fill="#B45309">Nếu có POI chất lượng ngay dưới SSL → SSL là inducement.</text>
+
+  <!-- ================= CASE C ================= -->
+  <rect x="132" y="356" width="332" height="238" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1.8"/>
+  <rect x="132" y="356" width="332" height="30" rx="8" fill="#FEF3C7"/>
+  <text x="148" y="376" font-size="12" font-weight="700" fill="#B45309">CASE C — Premium + BSL trên  ⚠ MÔ HÌNH HAY SAI</text>
+
+  <text x="148" y="406" font-size="10" font-weight="700" fill="#B45309">Trực giác SAI:  "premium → short"</text>
+
+  <text x="148" y="430" font-size="10" font-weight="700" fill="#374151">Candidate:</text>
+  <text x="148" y="445" font-size="9.5" fill="#4B5563">C1 = BSL trên   (continuation)</text>
+  <text x="148" y="459" font-size="9.5" fill="#4B5563">C2 = SSL dưới  (reversal / rebalance)</text>
+
+  <text x="148" y="482" font-size="10" font-weight="700" fill="#15803D">Ủng hộ C1:</text>
+  <text x="148" y="496" font-size="9.5" fill="#166534">trend mạnh vượt qua premium — compression vào level</text>
+
+  <rect x="148" y="508" width="300" height="72" rx="6" fill="#FFFBEB" stroke="#D97706"/>
+  <text x="158" y="526" font-size="10" font-weight="700" fill="#B45309">Điểm mô hình premium/discount THẤT BẠI:</text>
+  <text x="158" y="542" font-size="9.5" fill="#92400E">Premium chặn ENTRY PERMISSION, không chặn DESTINATION.</text>
+  <text x="158" y="558" font-size="9.5" fill="#92400E">Nếu structural state bullish → BSL trên VẪN là DOL;</text>
+  <text x="158" y="573" font-size="9.5" fill="#92400E">chỉ là entry sẽ ở chỗ khác (hoặc R:R thấp hơn).</text>
+
+  <!-- ================= CASE D ================= -->
+  <rect x="480" y="356" width="356" height="238" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.8"/>
+  <rect x="480" y="356" width="356" height="30" rx="8" fill="#DCFCE7"/>
+  <text x="496" y="376" font-size="12" font-weight="700" fill="#15803D">CASE D — Premium + SSL dưới  ✓ DỄ NHẤT</text>
+
+  <text x="496" y="406" font-size="10" font-weight="700" fill="#15803D">Trực giác ĐÚNG (nhưng vì thế mà bị bỏ qua kiểm tra)</text>
+
+  <text x="496" y="430" font-size="10" font-weight="700" fill="#374151">Candidate:</text>
+  <text x="496" y="445" font-size="9.5" fill="#4B5563">D1 = SSL dưới  (nếu structural state bearish)</text>
+  <text x="496" y="459" font-size="9.5" fill="#4B5563">D2 = BSL trên mới (nếu SSL dưới chỉ là pullback trong trend tăng)</text>
+
+  <text x="496" y="482" font-size="10" font-weight="700" fill="#B45309">★ Câu hỏi quyết định:</text>
+  <text x="496" y="497" font-size="9.5" fill="#92400E">Lần quét gần nhất ở phía nào, và có RECLAIM không?</text>
+  <text x="496" y="512" font-size="9.5" fill="#92400E">BSL vừa swept + reclaim xuống  → D1 mạnh</text>
+  <text x="496" y="527" font-size="9.5" fill="#92400E">SSL vừa swept + reclaim lên    → D2 mạnh</text>
+
+  <rect x="496" y="540" width="324" height="40" rx="6" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="506" y="557" font-size="10" font-weight="700" fill="#15803D">Kỷ luật bắt buộc:</text>
+  <text x="506" y="572" font-size="9.5" fill="#166534">vị trí và DOL cùng hướng → vẫn PHẢI kiểm tra Alignment.</text>
+
+  <!-- ================= BOTTOM LINE ================= -->
+  <rect x="132" y="608" width="704" height="38" rx="8" fill="#0F172A"/>
+  <text x="484" y="632" font-size="11.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">Cả bốn case dạy CÙNG MỘT điều: vị trí trong range trả lời "vào ở đây có hợp lý không", KHÔNG BAO GIỜ trả lời "đi đâu".</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="500" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Bieu hien &amp; dau hieu nhan biet</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cac "tell" cho thay ban dang risk vuot 0.5% - tung lenh hoac cong don</text>
+
+  <rect x="24" y="74" width="712" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <rect x="44" y="92" width="672" height="30" rx="4" fill="#374151" fill-opacity="0.06"/>
+  <text x="56" y="112" font-size="13" font-weight="700" fill="#374151">Dau hieu</text>
+  <text x="420" y="112" font-size="13" font-weight="700" fill="#374151">Vi sao la canh bao</text>
+
+  <line x1="44" y1="122" x2="716" y2="122" stroke="#E5E7EB"/>
+  <text x="56" y="144" font-size="12" fill="#374151">"Setup nay chac ăn qua, size gap doi thoi"</text>
+  <text x="420" y="144" font-size="11.5" fill="#6B7280">Conviction khong lam giam bien do bien dong</text>
+  <circle cx="396" cy="139" r="5" fill="#DC2626"/>
+
+  <line x1="44" y1="154" x2="716" y2="154" stroke="#E5E7EB"/>
+  <text x="56" y="176" font-size="12" fill="#374151">Doi SL rong hon nhung khong bam lai lot size</text>
+  <text x="420" y="176" font-size="11.5" fill="#6B7280">$ risk thuc te tang ty le voi SL moi</text>
+  <circle cx="396" cy="171" r="5" fill="#DC2626"/>
+
+  <line x1="44" y1="186" x2="716" y2="186" stroke="#E5E7EB"/>
+  <text x="56" y="208" font-size="12" fill="#374151">Vao them lenh de "trung binh gia" khi dang am</text>
+  <text x="420" y="208" font-size="11.5" fill="#6B7280">Rui ro cong don tren cung 1 huong sai</text>
+  <circle cx="396" cy="203" r="5" fill="#DC2626"/>
+
+  <line x1="44" y1="218" x2="716" y2="218" stroke="#E5E7EB"/>
+  <text x="56" y="240" font-size="12" fill="#374151">Mo cung luc NAS100 + US30, hoac EURUSD + GBPUSD cung huong</text>
+  <text x="420" y="240" font-size="11.5" fill="#6B7280">Correlation cao -&gt; risk thuc te gan gap doi</text>
+  <circle cx="396" cy="235" r="5" fill="#D97706"/>
+
+  <line x1="44" y1="250" x2="716" y2="250" stroke="#E5E7EB"/>
+  <text x="56" y="272" font-size="12" fill="#374151">"Risk creep" sau vai lenh thang - choi bang tien cua thi truong</text>
+  <text x="420" y="272" font-size="11.5" fill="#6B7280">Tam ly lech chuan, quen rang do la equity that</text>
+  <circle cx="396" cy="267" r="5" fill="#D97706"/>
+
+  <line x1="44" y1="282" x2="716" y2="282" stroke="#E5E7EB"/>
+  <text x="56" y="304" font-size="12" fill="#374151">Revenge sizing - tang size de "gau lai" lenh vua thua</text>
+  <text x="420" y="304" font-size="11.5" fill="#6B7280">Cam xuc dieu khien size, khong phai ke hoach</text>
+  <circle cx="396" cy="299" r="5" fill="#DC2626"/>
+
+  <line x1="44" y1="314" x2="716" y2="314" stroke="#E5E7EB"/>
+  <text x="56" y="336" font-size="12" fill="#374151">Khong biet chinh xac $ risk truoc khi bam lenh</text>
+  <text x="420" y="336" font-size="11.5" fill="#6B7280">Neu khong tinh duoc, khong the kiem soat duoc</text>
+  <circle cx="396" cy="331" r="5" fill="#DC2626"/>
+
+  <line x1="44" y1="346" x2="716" y2="346" stroke="#E5E7EB"/>
+  <text x="56" y="360" font-size="12" fill="#374151">Checklist nhanh: 4 cau hoi truoc khi bam lenh -&gt; xem panel duoi</text>
+
+  <!-- checklist mini panel -->
+  <rect x="24" y="386" width="712" height="98" rx="8" fill="#3B82F6" fill-opacity="0.05" stroke="#1D4ED8" stroke-opacity="0.4"/>
+  <text x="40" y="406" font-size="12.5" fill="#1D4ED8" font-weight="700">Checklist truoc khi bam lenh:</text>
+  <text x="40" y="426" font-size="11.5" fill="#374151">[  ] Toi da tinh $ risk chinh xac tu StopDistance va da xac dinh lot size tuong ung chua?</text>
+  <text x="40" y="444" font-size="11.5" fill="#374151">[  ] Neu SL rong hon du kien, toi da GIAM lot de giu nguyen $ risk chua?</text>
+  <text x="40" y="462" font-size="11.5" fill="#374151">[  ] Toi co dang mo cung luc mot lenh tuong quan cao (NAS100/US30, EURUSD/GBPUSD) khong?</text>
+  <text x="40" y="480" font-size="11.5" fill="#374151">[  ] Day co phai la revenge sizing hay "choi bang tien thi truong" khong?</text>
+</svg>

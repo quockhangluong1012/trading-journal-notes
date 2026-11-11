@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Ví dụ SAI — hai kiểu hỏng thường gặp</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Trái: đánh dấu trên thân nến RDRB + stop ở thân. Phải: chỉ là 2 nến continuation, ngược bias.</text>
+
+  <!-- LEFT: wrong marking + tight stop -->
+  <rect x="24" y="72" width="344" height="316" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="94" font-size="12.5" font-weight="700" fill="#DC2626">SAI 1 — zone trên thân RDRB, stop quá sát</text>
+  <!-- wrong zone on bodies -->
+  <rect x="55" y="152" width="255" height="80" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="150" y="145" font-size="10" font-weight="700" fill="#DC2626">zone SAI (thân nến)</text>
+  <line x1="75" y1="227" x2="75" y2="312" stroke="#16A34A" stroke-width="1.5"/><rect x="63" y="242" width="24" height="50" fill="#16A34A"/>
+  <line x1="140" y1="162" x2="140" y2="257" stroke="#16A34A" stroke-width="1.5"/><rect x="128" y="212" width="24" height="30" fill="#16A34A"/>
+  <line x1="205" y1="142" x2="205" y2="217" stroke="#16A34A" stroke-width="1.5"/><rect x="193" y="152" width="24" height="60" fill="#16A34A"/>
+  <line x1="270" y1="117" x2="270" y2="192" stroke="#16A34A" stroke-width="1.5"/><rect x="258" y="127" width="24" height="25" fill="#16A34A"/>
+  <!-- tight stop at body -->
+  <line x1="55" y1="242" x2="310" y2="242" stroke="#DC2626" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="60" y="256" font-size="9.5" font-weight="700" fill="#DC2626">stop ở thân nến (quá sát)</text>
+  <!-- retrace wick spikes through stop -->
+  <path d="M283 130 Q315 190 322 250" fill="none" stroke="#DC2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <path d="M322 250 l -6 -13 l 12 0 z" fill="#DC2626"/>
+  <text x="235" y="345" font-size="10" font-weight="700" fill="#DC2626">wick quét stop → out</text>
+  <text x="40" y="368" font-size="10" fill="#374151">Zone lệch chỗ + stop sát thân = bị hunt.</text>
+
+  <!-- RIGHT: plain continuation, counter-bias -->
+  <rect x="392" y="72" width="344" height="316" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="408" y="94" font-size="12.5" font-weight="700" fill="#DC2626">SAI 2 — 2 nến continuation, ngược bias</text>
+  <text x="408" y="112" font-size="10" fill="#B45309">HTF bias: BEARISH ↓ (đang tìm sell)</text>
+  <!-- downtrend context candles -->
+  <line x1="430" y1="120" x2="430" y2="170" stroke="#DC2626" stroke-width="1.4"/><rect x="420" y="128" width="20" height="35" fill="#DC2626"/>
+  <line x1="465" y1="140" x2="465" y2="200" stroke="#DC2626" stroke-width="1.4"/><rect x="455" y="150" width="20" height="42" fill="#DC2626"/>
+  <!-- two plain green continuation candles (no deliver-pullback-redeliver, no wick) -->
+  <line x1="510" y1="188" x2="510" y2="240" stroke="#16A34A" stroke-width="1.4"/><rect x="500" y="200" width="20" height="38" fill="#16A34A"/>
+  <line x1="545" y1="168" x2="545" y2="212" stroke="#16A34A" stroke-width="1.4"/><rect x="535" y="178" width="20" height="30" fill="#16A34A"/>
+  <text x="480" y="262" font-size="9.5" fill="#B45309">2 nến "continuation" — KHÔNG có</text>
+  <text x="480" y="277" font-size="9.5" fill="#B45309">deliver→pullback→redeliver, không wick</text>
+  <!-- trader buys, price drops -->
+  <circle cx="565" cy="185" r="5" fill="#16A34A"/>
+  <text x="573" y="180" font-size="9.5" font-weight="700" fill="#16A34A">buy (sai)</text>
+  <line x1="585" y1="185" x2="585" y2="250" stroke="#DC2626" stroke-width="1.4"/><rect x="575" y="190" width="20" height="55" fill="#DC2626"/>
+  <line x1="620" y1="210" x2="620" y2="300" stroke="#DC2626" stroke-width="1.4"/><rect x="610" y="220" width="20" height="70" fill="#DC2626"/>
+  <path d="M630 300 l -6 -13 l 12 0 z" fill="#DC2626"/>
+  <text x="560" y="330" font-size="10" font-weight="700" fill="#DC2626">tiếp diễn ↓ → thua</text>
+  <text x="408" y="368" font-size="10" fill="#374151">Không phải mọi cặp 2 nến đều là RDRB.</text>
+
+  <text x="24" y="414" font-size="11.5" font-weight="700" fill="#DC2626">Bài học: RDRB cần đúng deliver→pullback (wick)→redeliver; đo range giữa wick nến trước/sau;</text>
+  <text x="24" y="438" font-size="11.5" fill="#374151">thuận HTF bias; chờ LTF MSS; stop ngoài cạnh đối diện range + buffer, không đặt ở thân nến.</text>
+</svg>

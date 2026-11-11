@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="'Segoe UI', Arial, sans-serif" font-size="13">
+  <text x="24" y="30" font-size="18" font-weight="700" fill="currentColor">Cây quyết định PO3 — từ context tới lệnh</text>
+  <text x="24" y="50" font-size="12.5" fill="var(--muted)">Đi từ trên xuống. Gặp NO đầu tiên ở đâu thì dừng ở đó — không "vớt" setup.</text>
+  <rect x="250" y="62" width="260" height="36" rx="8" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <text x="380" y="85" font-size="12.5" font-weight="700" fill="currentColor" text-anchor="middle">START: Daily Bias + HTF context</text>
+  <polygon points="380,106 505,134 380,162 255,134" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="380" y="130" font-size="11.5" font-weight="700" fill="var(--accent)" text-anchor="middle">DOL / pool target rõ?</text>
+  <text x="380" y="145" font-size="11" fill="var(--muted)" text-anchor="middle">không có draw = không có phân phối</text>
+  <polygon points="380,172 505,200 380,228 255,200" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="380" y="196" font-size="11.5" font-weight="700" fill="var(--accent)" text-anchor="middle">Range đo được (high/low)?</text>
+  <text x="380" y="211" font-size="11" fill="var(--muted)" text-anchor="middle">biên vẽ kiểu nào cũng được = random</text>
+  <polygon points="380,238 505,266 380,294 255,266" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="380" y="262" font-size="11.5" font-weight="700" fill="var(--accent)" text-anchor="middle">Sweep 1 phía + reclaim?</text>
+  <text x="380" y="277" font-size="11" fill="var(--muted)" text-anchor="middle">chưa quét = chưa có manipulation</text>
+  <polygon points="380,304 505,332 380,360 255,332" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="380" y="328" font-size="11.5" font-weight="700" fill="var(--accent)" text-anchor="middle">MSS + displacement đúng bias?</text>
+  <text x="380" y="343" font-size="11" fill="var(--muted)" text-anchor="middle">không = có thể breakout thật</text>
+  <polygon points="380,370 505,398 380,426 255,398" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="380" y="394" font-size="11.5" font-weight="700" fill="var(--accent)" text-anchor="middle">Còn early + R:R + kill zone?</text>
+  <text x="380" y="409" font-size="11" fill="var(--muted)" text-anchor="middle">cuối distribution = chase</text>
+  <line x1="380" y1="98" x2="380" y2="106" stroke="currentColor" stroke-width="1.6"/>
+  <line x1="380" y1="162" x2="380" y2="172" stroke="currentColor" stroke-width="1.6"/>
+  <line x1="380" y1="228" x2="380" y2="238" stroke="currentColor" stroke-width="1.6"/>
+  <line x1="380" y1="294" x2="380" y2="304" stroke="currentColor" stroke-width="1.6"/>
+  <line x1="380" y1="360" x2="380" y2="370" stroke="currentColor" stroke-width="1.6"/>
+  <line x1="380" y1="426" x2="380" y2="440" stroke="currentColor" stroke-width="1.6"/>
+  <text x="388" y="122" font-size="10.5" fill="var(--success)">YES ↓</text>
+  <rect x="250" y="440" width="260" height="40" rx="8" fill="var(--success)" opacity="0.15" stroke="var(--success)" stroke-width="1.6"/>
+  <text x="380" y="457" font-size="12.5" font-weight="700" fill="var(--success)" text-anchor="middle">TRADE theo phân phối</text>
+  <text x="380" y="473" font-size="11" fill="var(--success)" text-anchor="middle">stop ngoài Judas → target DOL</text>
+  <line x1="505" y1="134" x2="560" y2="134" stroke="var(--error)" stroke-width="1.4"/>
+  <line x1="505" y1="200" x2="560" y2="200" stroke="var(--error)" stroke-width="1.4"/>
+  <line x1="505" y1="266" x2="560" y2="266" stroke="var(--error)" stroke-width="1.4"/>
+  <line x1="505" y1="332" x2="560" y2="332" stroke="var(--error)" stroke-width="1.4"/>
+  <line x1="505" y1="398" x2="560" y2="398" stroke="var(--error)" stroke-width="1.4"/>
+  <text x="508" y="128" font-size="10.5" fill="var(--error)">NO →</text>
+  <text x="508" y="194" font-size="10.5" fill="var(--error)">NO →</text>
+  <text x="508" y="260" font-size="10.5" fill="var(--error)">NO →</text>
+  <text x="508" y="326" font-size="10.5" fill="var(--error)">NO →</text>
+  <text x="508" y="392" font-size="10.5" fill="var(--error)">NO →</text>
+  <rect x="560" y="114" width="300" height="40" rx="6" fill="none" stroke="var(--error)" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="710" y="130" font-size="11.5" font-weight="700" fill="var(--error)" text-anchor="middle">IGNORE — không có draw, không trade</text>
+  <text x="710" y="146" font-size="11" fill="var(--muted)" text-anchor="middle">ngày neutral / thiếu target HTF</text>
+  <rect x="560" y="180" width="300" height="40" rx="6" fill="none" stroke="var(--error)" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="710" y="196" font-size="11.5" font-weight="700" fill="var(--error)" text-anchor="middle">ĐỔI MODEL — trend / range lớn</text>
+  <text x="710" y="212" font-size="11" fill="var(--muted)" text-anchor="middle">không ép khung AMD (xem §38)</text>
+  <rect x="560" y="246" width="300" height="40" rx="6" fill="none" stroke="var(--warning)" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="710" y="262" font-size="11.5" font-weight="700" fill="var(--warning)" text-anchor="middle">WAIT — còn accumulation / Judas sớm</text>
+  <text x="710" y="278" font-size="11" fill="var(--muted)" text-anchor="middle">đánh dấu pool, không đuổi</text>
+  <rect x="560" y="312" width="300" height="40" rx="6" fill="none" stroke="var(--warning)" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="710" y="328" font-size="11.5" font-weight="700" fill="var(--warning)" text-anchor="middle">WAIT — nghi trend day / breakout thật</text>
+  <text x="710" y="344" font-size="11" fill="var(--muted)" text-anchor="middle">kiểm tra 3 tell §38, quy tắc 2 lần thử</text>
+  <rect x="560" y="378" width="300" height="40" rx="6" fill="none" stroke="var(--error)" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="710" y="394" font-size="11.5" font-weight="700" fill="var(--error)" text-anchor="middle">IGNORE — đã lỡ, để nó đi</text>
+  <text x="710" y="410" font-size="11" fill="var(--muted)" text-anchor="middle">vào cuối distribution = chase</text>
+  <rect x="24" y="500" width="852" height="118" rx="8" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
+  <text x="40" y="524" font-size="12.5" font-weight="700" fill="currentColor">Bài kiểm tra trung thực trước khi bấm lệnh — che nửa phải chart lại:</text>
+  <text x="40" y="546" font-size="12" fill="var(--fg)">① Với chỉ dữ liệu tới T, tôi có dám gọi tên pha không? ② Cú sweep quét pool NGƯỢC hướng bias chứ? ③ Đây là potential/ hypothesis — điều gì sẽ chứng minh tôi sai?</text>
+  <text x="40" y="568" font-size="12" fill="var(--fg)">Nếu câu trả lời cần tới diễn biến SAU T thì đó là hindsight — quay lại WAIT.</text>
+  <text x="40" y="592" font-size="12" fill="var(--muted)">Mọi cú phá range đầu tiên mặc định là Judas cho tới khi chứng minh ngược lại (đóng H1 ngoài range + pullback nông không reclaim).</text>
+</svg>

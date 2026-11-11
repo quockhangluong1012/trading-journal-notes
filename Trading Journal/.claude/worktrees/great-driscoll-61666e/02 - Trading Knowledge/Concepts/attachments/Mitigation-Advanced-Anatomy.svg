@@ -1,0 +1,63 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Giải phẫu Bullish Mitigation Block — failure swing, KHÔNG sweep</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Điểm cốt lõi: đáy cũ (STL) GIỮ VỮNG — giá tạo higher low, không quét SSL. Rồi MSS xác nhận đảo chiều.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- discount zone -->
+  <rect x="44" y="300" width="672" height="86" fill="#3B82F6" opacity="0.06"/>
+  <text x="52" y="318" font-size="10.5" fill="#1D4ED8">Discount của dealing range — nơi tìm bullish MB</text>
+
+  <!-- STL level line (giu vung) -->
+  <line x1="120" y1="360" x2="520" y2="360" stroke="#16A34A" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="150" y="376" font-size="10" fill="#15803D">STL — đáy cũ GIỮ VỮNG (không sweep)</text>
+
+  <!-- STL -->
+  <path d="M60,250 L120,360 L175,240" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="120" cy="360" r="5" fill="#16A34A"/>
+  <text x="70" y="240" font-size="10.5" fill="#6B7280">① STL → rally lên STH</text>
+
+  <!-- OB cu = cum nen giam gan STH -->
+  <rect x="170" y="170" width="30" height="58" fill="#DC2626" opacity="0.5" rx="1"/>
+  <text x="150" y="162" font-size="10" fill="#B91C1C">cụm nến giảm = OB cũ</text>
+
+  <!-- STH -->
+  <circle cx="185" cy="215" r="6" fill="none" stroke="#3B82F6" stroke-width="2.2"/>
+  <line x1="185" y1="215" x2="500" y2="215" stroke="#3B82F6" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="205" y="210" font-size="10.5" font-weight="700" fill="#1D4ED8">STH — mức MSS phải phá</text>
+
+  <!-- pullback FAILS: higher low -->
+  <path d="M185,215 L245,325 L300,255" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="245" cy="325" r="7" fill="none" stroke="#16A34A" stroke-width="2.5"/>
+  <text x="215" y="348" font-size="10.5" font-weight="700" fill="#15803D">② Pullback THẤT BẠI → higher low</text>
+  <text x="240" y="363" font-size="10" fill="#15803D">KHÔNG phá STL, KHÔNG sweep SSL</text>
+
+  <!-- displacement up breaking STH = MSS -->
+  <path d="M300,255 L340,215 L360,235 L420,120" fill="none" stroke="#16A34A" stroke-width="2.8"/>
+  <rect x="424" y="112" width="2" height="86" fill="#16A34A"/><rect x="418" y="118" width="13" height="70" fill="#16A34A" rx="1"/>
+  <text x="440" y="124" font-size="10.5" font-weight="700" fill="#15803D">③ Displacement phá STH = MSS bullish + FVG</text>
+
+  <!-- FVG -->
+  <rect x="355" y="200" width="120" height="24" fill="#3B82F6" opacity="0.18"/>
+  <text x="358" y="216" font-size="9.5" fill="#1D4ED8">FVG</text>
+
+  <!-- last down candle before push = MB -->
+  <rect x="305" y="240" width="26" height="46" fill="#F59E0B" opacity="0.55" rx="1"/>
+  <text x="300" y="303" font-size="10" font-weight="700" fill="#B45309">④ cụm nến giảm cuối = bullish MB (hỗ trợ)</text>
+
+  <!-- retrace + entry -->
+  <path d="M420,120 L455,175 L478,252 L500,215 L545,130 L600,165 L660,90" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="478" cy="252" r="6" fill="#16A34A"/>
+  <text x="478" y="278" font-size="10.5" font-weight="700" fill="#15803D">⑤ Retest MB = Long</text>
+  <text x="478" y="292" font-size="10" fill="#6B7280">stop dưới higher low</text>
+
+  <!-- target BSL -->
+  <line x1="600" y1="90" x2="716" y2="90" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="600" y="82" font-size="10.5" fill="#166534">⑥ Target: BSL phía trên</text>
+
+  <rect x="24" y="410" width="712" height="60" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="430" font-size="11.5" font-weight="700" fill="#92400E">Bearish MB đối xứng: STH → dip STL (cụm nến tăng = OB cũ) → rally THẤT BẠI không phá STH (lower high,</text>
+  <text x="36" y="448" font-size="11.5" font-weight="700" fill="#92400E">KHÔNG sweep BSL) → displacement phá STL = MSS bearish → cụm nến tăng cuối = bearish MB (kháng cự) →</text>
+  <text x="36" y="466" font-size="11.5" font-weight="700" fill="#92400E">Short khi retest, stop trên lower high, target SSL phía dưới.</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">MMBM bieu hien khac nhau ra sao theo tung thi truong</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cung kich ban 2 nua, khac do dai sell program va so bac LRS truoc Smart Money Low that.</text>
+  <rect x="24" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="100" font-size="13" font-weight="700" fill="#7C3AED">NQ1 / NDX</text>
+  <line x1="40" y1="220" x2="236" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="42" y="214" font-size="9.5" fill="#6B7280">2-4 bac LRS, ~1 phien</text>
+  <path d="M46,222 L70,214 L90,228 L112,270 L134,236 L160,178 L185,198 L215,140" fill="none" stroke="#374151" stroke-width="2.2" transform="translate(-22,0)"/>
+  <text x="36" y="344" font-size="10.5" fill="#374151">Sell program ngan, doc;</text>
+  <text x="36" y="358" font-size="10.5" fill="#374151">nhieu bac LRS trong vai gio.</text>
+  <rect x="266" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="278" y="100" font-size="13" font-weight="700" fill="#2563EB">EURUSD / GBPUSD</text>
+  <line x1="282" y1="220" x2="478" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="284" y="214" font-size="9.5" fill="#6B7280">1-2 bac, trai nhieu ngay</text>
+  <path d="M288,222 L310,216 L330,226 L352,262 L372,240 L400,190 L425,204 L458,150" fill="none" stroke="#374151" stroke-width="2.2" transform="translate(220,0)"/>
+  <text x="278" y="344" font-size="10.5" fill="#374151">Sell program thoai thoai,</text>
+  <text x="278" y="358" font-size="10.5" fill="#374151">keo dai 1-3 ngay.</text>
+  <rect x="508" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="520" y="100" font-size="13" font-weight="700" fill="#166534">XAUUSD</text>
+  <line x1="524" y1="220" x2="720" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="526" y="214" font-size="9.5" fill="#6B7280">Co the 1 bac, gay dot ngot</text>
+  <path d="M530,222 L548,220 L564,228 L582,300 L600,270 L626,200 L648,214 L700,150" fill="none" stroke="#374151" stroke-width="2.2" transform="translate(462,0)"/>
+  <text x="520" y="344" font-size="10.5" fill="#374151">SML co the toi rat nhanh</text>
+  <text x="520" y="358" font-size="10.5" fill="#374151">quanh gio tin (NFP/CPI/FOMC).</text>
+</svg>

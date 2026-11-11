@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">PO3 là Fractal — Weekly, Daily và Session lồng vào nhau</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Cùng một logic A→M→D chạy ở mọi cấp. Judas của khung nhỏ thường chính là một phần manipulation của khung lớn hơn.</text>
+
+  <!-- Weekly panel -->
+  <rect x="24" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="100" font-size="13" font-weight="700" fill="#5B21B6">Weekly PO3</text>
+  <line x1="40" y1="220" x2="240" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="42" y="214" font-size="9.5" fill="#6B7280">Weekly Open (Thứ 2)</text>
+  <path d="M46,222 L70,216 L90,226 L112,270 L134,240 L160,180 L185,196 L215,140" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="112" cy="270" r="7" fill="none" stroke="#DC2626" stroke-width="2.2"/>
+  <text x="52" y="296" font-size="10" fill="#B91C1C">Low của tuần thường in vào</text>
+  <text x="52" y="310" font-size="10" fill="#B91C1C">Thứ 2–Thứ 3 (Judas tuần)</text>
+  <text x="36" y="344" font-size="10.5" fill="#374151">Bullish week: tích lũy đầu tuần,</text>
+  <text x="36" y="358" font-size="10.5" fill="#374151">quét dưới weekly open, phân phối</text>
+  <text x="36" y="372" font-size="10.5" fill="#374151">Thứ 3–Thứ 5, đóng tuần gần đỉnh.</text>
+
+  <!-- Daily panel -->
+  <rect x="266" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="278" y="100" font-size="13" font-weight="700" fill="#1E40AF">Daily PO3</text>
+  <line x1="282" y1="220" x2="482" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="284" y="214" font-size="9.5" fill="#6B7280">Daily Open (midnight NY)</text>
+  <path d="M288,222 L310,218 L330,225 L352,262 L372,238 L400,185 L425,200 L458,150" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="352" cy="262" r="7" fill="none" stroke="#DC2626" stroke-width="2.2"/>
+  <text x="294" y="290" font-size="10" fill="#B91C1C">Judas ngày: London sweep</text>
+  <text x="294" y="304" font-size="10" fill="#B91C1C">dưới open / range Á</text>
+  <text x="278" y="344" font-size="10.5" fill="#374151">Đây chính là AMD "chuẩn" —</text>
+  <text x="278" y="358" font-size="10.5" fill="#374151">một ngày = một nến D1 được</text>
+  <text x="278" y="372" font-size="10.5" fill="#374151">xây bằng 3 pha.</text>
+
+  <!-- Session panel -->
+  <rect x="508" y="76" width="228" height="300" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="520" y="100" font-size="13" font-weight="700" fill="#166534">Session PO3 (NY AM)</text>
+  <line x1="524" y1="220" x2="724" y2="220" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="526" y="214" font-size="9.5" fill="#6B7280">NY Open (07:00/08:30)</text>
+  <path d="M530,222 L548,218 L564,226 L582,256 L600,236 L626,190 L648,204 L700,158" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="582" cy="256" r="7" fill="none" stroke="#DC2626" stroke-width="2.2"/>
+  <text x="534" y="288" font-size="10" fill="#B91C1C">Judas NY: quét đáy đầu phiên</text>
+  <text x="534" y="302" font-size="10" fill="#B91C1C">(hoặc pool London để lại)</text>
+  <text x="520" y="344" font-size="10.5" fill="#374151">Ngay cả trong một session cũng</text>
+  <text x="520" y="358" font-size="10.5" fill="#374151">có A→M→D riêng — dùng cho</text>
+  <text x="520" y="372" font-size="10.5" fill="#374151">timing entry M5/M1.</text>
+
+  <!-- bottom alignment rule -->
+  <rect x="24" y="392" width="712" height="32" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="413" font-size="12" font-weight="700" fill="#92400E">Xác suất cao nhất khi 3 cấp ĐỒNG PHA: Judas ngày xảy ra đúng lúc tuần đang cần quét low tuần → phân phối ngày = phân phối tuần cùng hướng.</text>
+</svg>

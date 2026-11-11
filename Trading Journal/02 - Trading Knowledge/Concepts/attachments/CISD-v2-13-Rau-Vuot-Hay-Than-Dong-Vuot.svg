@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs></defs>
+<rect x="1" y="1" width="998" height="518" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">Râu vượt hay thân đóng vượt? Chỉ GIÁ ĐÓNG CỬA được tính</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Ba tình huống ở cùng một vạch xuất phát. Chỉ tình huống C là CISD. Râu nến cho biết giá ĐÃ TỚI đó, nhưng không ở lại được tới lúc</text>
+<text x="28.0" y="81.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">chuông reo.</text>
+<rect x="866.0" y="22" width="106.0" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="919.0" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">BODY vs WICK</text>
+<text x="28.0" y="508.0" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start">Sơ đồ minh họa (synthetic) — giá trong hình là ví dụ, không phải dữ liệu thị trường thật.</text>
+<rect x="28.0" y="108.0" width="302.0" height="300.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="40.0" y="130.0" font-size="13" font-weight="700" fill="#DC2626" text-anchor="start">A · Râu vượt, đóng dưới</text>
+<line x1="69.4" y1="188.9" x2="69.4" y2="249.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="53.5" y="197.5" width="31.8" height="42.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="124.2" y1="231.8" x2="124.2" y2="303.3" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="108.3" y="240.4" width="31.8" height="54.3" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="179.0" y1="286.2" x2="179.0" y2="369.1" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="163.1" y="294.7" width="31.8" height="62.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="233.8" y1="168.9" x2="233.8" y2="363.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="217.9" y="254.7" width="31.8" height="103.0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="53.0" y1="197.5" x2="316.0" y2="197.5" stroke="#D97706" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="314.0" y="192.5" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">vạch xuất phát</text>
+<rect x="28.0" y="420.0" width="302.0" height="55.6" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.3"/>
+<text x="40.0" y="443.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Chưa phải CISD. Đây là một lần “thử” bị từ</text>
+<text x="40.0" y="460.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">chối.</text>
+<rect x="346.0" y="108.0" width="302.0" height="300.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="358.0" y="130.0" font-size="13" font-weight="700" fill="#EA580C" text-anchor="start">B · Đóng ngay sát vạch</text>
+<line x1="387.4" y1="188.9" x2="387.4" y2="249.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="371.5" y="197.5" width="31.8" height="42.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="442.2" y1="231.8" x2="442.2" y2="303.3" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="426.3" y="240.4" width="31.8" height="54.3" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="497.0" y1="286.2" x2="497.0" y2="369.1" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="481.1" y="294.7" width="31.8" height="62.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="551.8" y1="188.9" x2="551.8" y2="363.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="535.9" y="197.5" width="31.8" height="160.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="371.0" y1="197.5" x2="634.0" y2="197.5" stroke="#D97706" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="632.0" y="192.5" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">vạch xuất phát</text>
+<rect x="346.0" y="420.0" width="302.0" height="55.6" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.3"/>
+<text x="358.0" y="443.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Chưa rõ. Quy tắc v2: phải đóng VƯỢT hẳn qua,</text>
+<text x="358.0" y="460.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">không tính đóng bằng.</text>
+<rect x="664.0" y="108.0" width="302.0" height="300.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="676.0" y="130.0" font-size="13" font-weight="700" fill="#059669" text-anchor="start">C · Thân đóng trên vạch</text>
+<line x1="705.4" y1="188.9" x2="705.4" y2="249.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="689.5" y="197.5" width="31.8" height="42.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="760.2" y1="231.8" x2="760.2" y2="303.3" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="744.3" y="240.4" width="31.8" height="54.3" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="815.0" y1="286.2" x2="815.0" y2="369.1" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="799.1" y="294.7" width="31.8" height="62.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="869.8" y1="171.7" x2="869.8" y2="363.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="853.9" y="177.5" width="31.8" height="180.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="689.0" y1="197.5" x2="952.0" y2="197.5" stroke="#D97706" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="950.0" y="192.5" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">vạch xuất phát</text>
+<rect x="664.0" y="420.0" width="302.0" height="55.6" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="676.0" y="443.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">CISD. Lúc chuông reo, giá ở trên điểm xuất</text>
+<text x="676.0" y="460.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">phát của chặng.</text>
+</svg>

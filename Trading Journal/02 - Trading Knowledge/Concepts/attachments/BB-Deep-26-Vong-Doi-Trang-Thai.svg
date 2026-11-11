@@ -1,0 +1,65 @@
+<svg viewBox="0 0 980 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<defs><marker id="m0" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#B45309"/></marker><marker id="m1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0F766E"/></marker><marker id="m2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#6D28D9"/></marker><marker id="m3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#15803D"/></marker><marker id="m4" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#B91C1C"/></marker><marker id="m5" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#9CA3AF"/></marker></defs>
+<rect x="0" y="0" width="980" height="600" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="26.0" y="34.0" font-size="18" font-weight="700" fill="#1F2937" text-anchor="start">Vòng đời của một vùng Breaker — trạng thái và điều kiện chuyển</text>
+<text x="26.0" y="56.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Mỗi mũi tên là một sự kiện kiểm tra được. Trạng thái được cập nhật khi nến của khung nguồn ĐÓNG.</text>
+<rect x="846.3" y="18" width="107.7" height="22" rx="11" fill="#F3F4F6" stroke="#D8DBE2"/>
+<text x="900.1" y="33.0" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">STATE MACHINE</text>
+<rect x="26.0" y="104.0" width="150.0" height="46.0" rx="23" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+<text x="101.0" y="132.0" font-size="12" font-weight="800" fill="#9CA3AF" text-anchor="middle">NOT FORMED</text>
+<rect x="256.0" y="104.0" width="150.0" height="46.0" rx="23" fill="#FFFBEB" stroke="#B45309" stroke-width="1.8"/>
+<text x="331.0" y="132.0" font-size="12" font-weight="800" fill="#B45309" text-anchor="middle">CANDIDATE</text>
+<rect x="486.0" y="104.0" width="150.0" height="46.0" rx="23" fill="#ECFDF5" stroke="#0F766E" stroke-width="1.8"/>
+<text x="561.0" y="132.0" font-size="12" font-weight="800" fill="#0F766E" text-anchor="middle">CONFIRMED</text>
+<rect x="716.0" y="104.0" width="238.0" height="46.0" rx="23" fill="#ECFDF5" stroke="#0F766E" stroke-width="1.8"/>
+<text x="835.0" y="132.0" font-size="12" font-weight="800" fill="#0F766E" text-anchor="middle">AWAITING RETEST</text>
+<rect x="26.0" y="262.0" width="170.0" height="46.0" rx="23" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1.8"/>
+<text x="111.0" y="290.0" font-size="12" font-weight="800" fill="#9CA3AF" text-anchor="middle">EXPIRED</text>
+<rect x="380.0" y="262.0" width="170.0" height="46.0" rx="23" fill="#FFFBEB" stroke="#B45309" stroke-width="1.8"/>
+<text x="465.0" y="290.0" font-size="12" font-weight="800" fill="#B45309" text-anchor="middle">SUSPENDED</text>
+<rect x="716.0" y="262.0" width="238.0" height="46.0" rx="23" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1.8"/>
+<text x="835.0" y="290.0" font-size="12" font-weight="800" fill="#6D28D9" text-anchor="middle">RETEST IN PROGRESS</text>
+<rect x="26.0" y="410.0" width="170.0" height="46.0" rx="23" fill="#F3F4F6" stroke="#334155" stroke-width="1.8"/>
+<text x="111.0" y="438.0" font-size="12" font-weight="800" fill="#334155" text-anchor="middle">UNCLEAR</text>
+<rect x="380.0" y="410.0" width="170.0" height="46.0" rx="23" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.8"/>
+<text x="465.0" y="438.0" font-size="12" font-weight="800" fill="#B91C1C" text-anchor="middle">INVALIDATED</text>
+<rect x="716.0" y="410.0" width="238.0" height="46.0" rx="23" fill="#ECFDF5" stroke="#15803D" stroke-width="1.8"/>
+<text x="835.0" y="438.0" font-size="12" font-weight="800" fill="#15803D" text-anchor="middle">REACTION OBSERVED</text>
+<line x1="176.0" y1="127.0" x2="256.0" y2="127.0" stroke="#B45309" stroke-width="1.5" marker-end="url(#m0)"/>
+<rect x="161.0" y="85.0" width="110.0" height="15.0" rx="3" fill="#FBFBFD"/>
+<text x="216.0" y="96.0" font-size="10" font-weight="700" fill="#B45309" text-anchor="middle">cực trị cũ bị vi phạm</text>
+<line x1="406.0" y1="127.0" x2="486.0" y2="127.0" stroke="#0F766E" stroke-width="1.5" marker-end="url(#m1)"/>
+<rect x="389.1" y="85.0" width="113.8" height="15.0" rx="3" fill="#FBFBFD"/>
+<text x="446.0" y="96.0" font-size="10" font-weight="700" fill="#0F766E" text-anchor="middle">thân đóng qua swing</text>
+<line x1="636.0" y1="127.0" x2="716.0" y2="127.0" stroke="#0F766E" stroke-width="1.5" marker-end="url(#m1)"/>
+<rect x="655.1" y="85.0" width="41.8" height="15.0" rx="3" fill="#FBFBFD"/>
+<text x="676.0" y="96.0" font-size="10" font-weight="700" fill="#0F766E" text-anchor="middle">t_avail</text>
+<line x1="835.0" y1="150.0" x2="835.0" y2="262.0" stroke="#6D28D9" stroke-width="1.5" marker-end="url(#m2)"/>
+<rect x="849.8" y="199.0" width="100.5" height="15.0" rx="3" fill="#FBFBFD"/>
+<text x="900.0" y="210.0" font-size="10" font-weight="700" fill="#6D28D9" text-anchor="middle">giá chạm mép gần</text>
+<line x1="835.0" y1="308.0" x2="835.0" y2="410.0" stroke="#15803D" stroke-width="1.5" marker-end="url(#m3)"/>
+<rect x="716.1" y="369.0" width="207.8" height="15.0" rx="3" fill="#FBFBFD"/>
+<text x="820.0" y="380.0" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">đi xa ≥ ngưỡng, không đóng qua mép xa</text>
+<line x1="716.0" y1="285.0" x2="550.0" y2="285.0" stroke="#B45309" stroke-width="1.5" marker-end="url(#m0)"/>
+<rect x="573.1" y="265.0" width="119.9" height="15.0" rx="3" fill="#FBFBFD"/>
+<text x="633.0" y="276.0" font-size="10" font-weight="700" fill="#B45309" text-anchor="middle">thân đóng qua mép xa</text>
+<line x1="465.0" y1="308.0" x2="465.0" y2="410.0" stroke="#B91C1C" stroke-width="1.5" marker-end="url(#m4)"/>
+<rect x="409.7" y="357.0" width="110.6" height="15.0" rx="3" fill="#FBFBFD"/>
+<text x="465.0" y="368.0" font-size="10" font-weight="700" fill="#B91C1C" text-anchor="middle">k thân giữ bên ngoài</text>
+<line x1="291.0" y1="150.0" x2="141.0" y2="262.0" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#m5)"/>
+<rect x="138.6" y="195.0" width="62.9" height="15.0" rx="3" fill="#FBFBFD"/>
+<text x="170.0" y="206.0" font-size="10" font-weight="700" fill="#9CA3AF" text-anchor="middle">quá W nến</text>
+<path d="M 760,150 C 700,220 220,200 140,262" fill="none" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#m5)"/>
+<rect x="320.7" y="203.0" width="258.7" height="15.0" rx="3" fill="#FBFBFD"/>
+<text x="450.0" y="214.0" font-size="10" font-weight="700" fill="#9CA3AF" text-anchor="middle">DOL bị lấy trước retest · quá TTL · cấu trúc HTF đổi</text>
+<path d="M 520,308 C 560,350 680,350 740,308" fill="none" stroke="#B45309" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#m0)"/>
+<rect x="557.1" y="339.0" width="145.9" height="15.0" rx="3" fill="#FBFBFD"/>
+<text x="630.0" y="350.0" font-size="10" font-weight="700" fill="#B45309" text-anchor="middle">reclaim (đóng lại vào trong)</text>
+<text x="111.0" y="476.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">từ bất kỳ trạng thái nào khi</text>
+<text x="111.0" y="490.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">dữ liệu mơ hồ / feed mâu thuẫn</text>
+<rect x="26.0" y="506.0" width="928.0" height="72.3" rx="8" fill="#F3F4F6" stroke="#334155" stroke-width="1.2"/>
+<rect x="26.0" y="506.0" width="4.0" height="72.3" rx="2" fill="#334155"/>
+<text x="38.0" y="528.5" font-size="12.5" font-weight="700" fill="#334155" text-anchor="start">Hai trạng thái thêm vào danh sách của protocol</text>
+<text x="38.0" y="547.4" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="start">SUSPENDED (đã có một thân nến đóng qua mép xa nhưng chưa đủ k nến) — để không phải chọn giữa “còn sống” và “đã chết” quá sớm; kế thừa OB-INVAL của vault.</text>
+<text x="38.0" y="568.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="start">EXPIRED (hết vai trò mà không bị phá: DOL đã bị lấy, quá thời hạn, hoặc HTF đổi) — tách khỏi INVALIDATED để thống kê không lẫn “vùng thất bại” với “vùng hết hạn”.</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg viewBox="0 0 980 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<defs><marker id="m0" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#334155"/></marker><marker id="m1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0F766E"/></marker><marker id="m2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#B91C1C"/></marker></defs>
+<rect x="0" y="0" width="980" height="600" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="26.0" y="34.0" font-size="18" font-weight="700" fill="#1F2937" text-anchor="start">Giải thích cho trẻ 5 tuổi: “Trần nhà biến thành sàn nhà”</text>
+<text x="26.0" y="56.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Một quả bóng nảy trong ngôi nhà hai tầng. Hình chỉ giúp nhớ THỨ TỰ sự kiện — không mô tả ai đang đặt lệnh trên thị trường.</text>
+<rect x="914.5" y="18" width="39.5" height="22" rx="11" fill="#F3F4F6" stroke="#D8DBE2"/>
+<text x="934.3" y="33.0" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">ELI5</text>
+<rect x="26.0" y="76.0" width="222.0" height="300.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="38.0" y="98.0" font-size="13" font-weight="700" fill="#B45309" text-anchor="start">① Trần chặn bóng</text>
+<rect x="48.0" y="126.0" width="178.0" height="220.0" rx="0" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+<line x1="48.0" y1="346.0" x2="226.0" y2="346.0" stroke="#64748B" stroke-width="4"/>
+<text x="54.0" y="338.0" font-size="10" font-weight="500" fill="#6B7280" text-anchor="start">tầng dưới</text>
+<text x="54.0" y="142.0" font-size="10" font-weight="500" fill="#6B7280" text-anchor="start">tầng trên</text>
+<rect x="48.0" y="230.0" width="178.0" height="12.0" rx="0" fill="#FDE68A" stroke="#B45309" stroke-width="1.2"/>
+<path d="M87.0,336 Q112.0,206 137.0,248 Q157.0,296 182.0,336" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="4,3" marker-end="url(#m0)"/>
+<circle cx="137.0" cy="250.0" r="9" fill="#F97316" stroke="#C2410C" stroke-width="1.2"/>
+<rect x="262.0" y="76.0" width="222.0" height="300.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="274.0" y="98.0" font-size="13" font-weight="700" fill="#111827" text-anchor="start">② Bóng phá thủng trần</text>
+<rect x="284.0" y="126.0" width="178.0" height="220.0" rx="0" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+<line x1="284.0" y1="346.0" x2="462.0" y2="346.0" stroke="#64748B" stroke-width="4"/>
+<text x="290.0" y="338.0" font-size="10" font-weight="500" fill="#6B7280" text-anchor="start">tầng dưới</text>
+<text x="290.0" y="142.0" font-size="10" font-weight="500" fill="#6B7280" text-anchor="start">tầng trên</text>
+<rect x="284.0" y="230.0" width="74.8" height="12.0" rx="0" fill="#FDE68A" stroke="#B45309" stroke-width="1.2"/>
+<rect x="387.2" y="230.0" width="74.8" height="12.0" rx="0" fill="#FDE68A" stroke="#B45309" stroke-width="1.2"/>
+<path d="M358.8,230 l6,4 l-4,4 l5,4" fill="none" stroke="#B45309" stroke-width="1.2"/>
+<path d="M387.2,230 l-6,4 l4,4 l-5,4" fill="none" stroke="#B45309" stroke-width="1.2"/>
+<path d="M333.0,336 Q363.0,276 373.0,156" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="4,3" marker-end="url(#m0)"/>
+<circle cx="373.0" cy="148.0" r="9" fill="#F97316" stroke="#C2410C" stroke-width="1.2"/>
+<rect x="498.0" y="76.0" width="222.0" height="300.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="510.0" y="98.0" font-size="13" font-weight="700" fill="#0F766E" text-anchor="start">③ Trần cũ thành sàn</text>
+<rect x="520.0" y="126.0" width="178.0" height="220.0" rx="0" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+<line x1="520.0" y1="346.0" x2="698.0" y2="346.0" stroke="#64748B" stroke-width="4"/>
+<text x="526.0" y="338.0" font-size="10" font-weight="500" fill="#6B7280" text-anchor="start">tầng dưới</text>
+<text x="526.0" y="142.0" font-size="10" font-weight="500" fill="#6B7280" text-anchor="start">tầng trên</text>
+<rect x="520.0" y="230.0" width="74.8" height="12.0" rx="0" fill="#99F6E4" stroke="#0F766E" stroke-width="1.2"/>
+<rect x="623.2" y="230.0" width="74.8" height="12.0" rx="0" fill="#99F6E4" stroke="#0F766E" stroke-width="1.2"/>
+<rect x="594.8" y="233.0" width="28.5" height="6.0" rx="0" fill="#99F6E4" stroke="#0F766E" stroke-width="1" stroke-dasharray="2,2"/>
+<path d="M649.0,146 Q619.0,146 599.0,220" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="4,3" marker-end="url(#m0)"/>
+<circle cx="597.0" cy="220.0" r="9" fill="#F97316" stroke="#C2410C" stroke-width="1.2"/>
+<path d="M595.0,208 Q579.0,156 554.0,154" fill="none" stroke="#0F766E" stroke-width="1.8" marker-end="url(#m1)"/>
+<rect x="734.0" y="76.0" width="222.0" height="300.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="746.0" y="98.0" font-size="13" font-weight="700" fill="#B91C1C" text-anchor="start">④ Nhưng sàn có thể thủng</text>
+<rect x="756.0" y="126.0" width="178.0" height="220.0" rx="0" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+<line x1="756.0" y1="346.0" x2="934.0" y2="346.0" stroke="#64748B" stroke-width="4"/>
+<text x="762.0" y="338.0" font-size="10" font-weight="500" fill="#6B7280" text-anchor="start">tầng dưới</text>
+<text x="762.0" y="142.0" font-size="10" font-weight="500" fill="#6B7280" text-anchor="start">tầng trên</text>
+<rect x="756.0" y="230.0" width="53.4" height="12.0" rx="0" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1.2"/>
+<rect x="880.6" y="230.0" width="53.4" height="12.0" rx="0" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1.2"/>
+<path d="M885.0,146 Q850.0,156 845.0,236" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="4,3"/>
+<path d="M845.0,236 L845.0,320" fill="none" stroke="#B91C1C" stroke-width="1.8" marker-end="url(#m2)"/>
+<circle cx="845.0" cy="328.0" r="9" fill="#F97316" stroke="#C2410C" stroke-width="1.2"/>
+<rect x="26.0" y="384.0" width="222.0" height="108.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="38.0" y="404.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Bóng nảy lên, đụng trần, rơi xuống.</text>
+<text x="38.0" y="420.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Trần = vùng OB gốc từng chặn giá.</text>
+<rect x="38.0" y="468.5" width="104.6" height="19.5" rx="9.75" fill="#FFFFFF" stroke="#B45309" stroke-width="1.1"/>
+<text x="90.3" y="483.0" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">chart: OB gốc giữ</text>
+<rect x="262.0" y="384.0" width="222.0" height="108.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="274.0" y="404.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Bóng nảy rất mạnh, xuyên qua</text>
+<text x="274.0" y="420.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">trần, lên tầng trên. = giá đóng nến</text>
+<text x="274.0" y="436.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">vượt qua vùng và phá đỉnh cũ.</text>
+<rect x="274.0" y="468.5" width="141.3" height="19.5" rx="9.75" fill="#FFFFFF" stroke="#111827" stroke-width="1.1"/>
+<text x="344.6" y="483.0" font-size="10.5" font-weight="700" fill="#111827" text-anchor="middle">chart: OB thất bại + MSS</text>
+<rect x="498.0" y="384.0" width="222.0" height="108.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="510.0" y="404.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Bóng rơi xuống, chạm đúng chỗ</text>
+<text x="510.0" y="420.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">trần cũ và nảy lên lại. = retest</text>
+<text x="510.0" y="436.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Breaker và phản ứng.</text>
+<rect x="510.0" y="468.5" width="126.3" height="19.5" rx="9.75" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.1"/>
+<text x="573.1" y="483.0" font-size="10.5" font-weight="700" fill="#0F766E" text-anchor="middle">chart: Breaker giữ (A)</text>
+<rect x="734.0" y="384.0" width="222.0" height="108.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="746.0" y="404.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Có lúc bóng rơi xuyên qua lỗ</text>
+<text x="746.0" y="420.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">thủng, rớt xuống tầng dưới. =</text>
+<text x="746.0" y="436.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Breaker thất bại. Không có gì bảo</text>
+<text x="746.0" y="452.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">đảm.</text>
+<rect x="746.0" y="468.5" width="153.0" height="19.5" rx="9.75" fill="#FFFFFF" stroke="#B91C1C" stroke-width="1.1"/>
+<text x="822.5" y="483.0" font-size="10.5" font-weight="700" fill="#B91C1C" text-anchor="middle">chart: Breaker bị xuyên (B)</text>
+<rect x="26.0" y="504.0" width="928.0" height="68.1" rx="8" fill="#FFFBEB" stroke="#B45309" stroke-width="1.2"/>
+<rect x="26.0" y="504.0" width="4.0" height="68.1" rx="2" fill="#B45309"/>
+<text x="38.0" y="526.5" font-size="12.5" font-weight="700" fill="#B45309" text-anchor="start">Ẩn dụ gãy ở đâu?</text>
+<text x="38.0" y="545.9" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Trần nhà là vật thật; vùng giá thì không. Không có “bê tông” nào ở đó — chỉ có lệnh của những người tham gia, và biểu đồ không cho ta thấy họ là ai. Ẩn dụ đúng ở</text>
+<text x="38.0" y="561.7" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">THỨ TỰ (chặn → bị phá → quay lại thử), sai ở chỗ gợi ý rằng sàn chắc chắn sẽ đỡ.</text>
+</svg>

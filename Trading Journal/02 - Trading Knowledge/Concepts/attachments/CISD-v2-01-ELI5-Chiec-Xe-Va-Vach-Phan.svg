@@ -1,0 +1,96 @@
+<svg viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs><marker id="ah2563EB" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563EB"/></marker><marker id="ah9CA3AF" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9CA3AF"/></marker><marker id="ahEA580C" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#EA580C"/></marker></defs>
+<rect x="1" y="1" width="998" height="638" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">CISD cho trẻ 5 tuổi: chiếc xe, vạch phấn và tiếng chuông</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Chiếc xe là GIÁ. Độ cao của xe là giá cao hay thấp. Vạch phấn đánh dấu chỗ xe BẮT ĐẦU lăn xuống lần này. Mỗi phút chuông reo một</text>
+<text x="28.0" y="81.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">lần — ta chỉ ghi lại vị trí xe đúng lúc chuông reo.</text>
+<rect x="920.3" y="22" width="51.7" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="946.2" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">ELI5</text>
+<text x="28.0" y="628.0" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start">Sơ đồ minh họa (synthetic) — giá trong hình là ví dụ, không phải dữ liệu thị trường thật.</text>
+<rect x="28.0" y="110.0" width="226.0" height="330.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="40.0" y="134.0" font-size="13" font-weight="700" fill="#2563EB" text-anchor="start">1. Xe đang lăn xuống</text>
+<path d="M46,180 L224,360 L242,360" fill="none" stroke="#6B7280" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M46,180 L224,360 L46,360 Z" fill="#F3F4F6" opacity="0.7"/>
+<line x1="228.0" y1="330.0" x2="228.0" y2="360.0" stroke="#92400E" stroke-width="3"/>
+<line x1="236.0" y1="330.0" x2="236.0" y2="360.0" stroke="#92400E" stroke-width="3"/>
+<line x1="224.0" y1="338.0" x2="240.0" y2="338.0" stroke="#92400E" stroke-width="2"/>
+<line x1="36.0" y1="234.0" x2="246.0" y2="234.0" stroke="#D97706" stroke-width="2.2" stroke-dasharray="7,4"/>
+<text x="244.0" y="228.0" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="end">vạch phấn</text>
+<g transform="translate(103.0,237.6) rotate(45.3)"><rect x="-20" y="-26" width="40" height="18" rx="3" fill="#FDE68A" stroke="#374151" stroke-width="1.6"/><line x1="-14" y1="-8" x2="14" y2="-8" stroke="#374151" stroke-width="1.6"/><circle cx="-11" cy="-5" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="1.6"/><circle cx="11" cy="-5" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="1.6"/></g>
+<line x1="129.0" y1="235.6" x2="173.0" y2="281.6" stroke="#2563EB" stroke-width="1.8" marker-end="url(#ah2563EB)"/>
+<g transform="translate(58.0,162.0)"><path d="M-9,6 Q-9,-10 0,-11 Q9,-10 9,6 L12,9 L-12,9 Z" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1.6"/><circle cx="0" cy="12" r="3" fill="#9CA3AF"/><line x1="0" y1="-11" x2="0" y2="-15" stroke="#9CA3AF" stroke-width="1.6"/></g>
+<text x="78.0" y="167.0" font-size="11" font-weight="700" fill="#9CA3AF" text-anchor="start">chưa reo</text>
+<text x="40.0" y="384.0" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">Ai đó đẩy xe xuống dốc. Ta vạch</text>
+<text x="40.0" y="399.9" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">phấn ở chỗ xe bắt đầu lăn.</text>
+<rect x="266.0" y="110.0" width="226.0" height="330.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="278.0" y="134.0" font-size="13" font-weight="700" fill="#2563EB" text-anchor="start">2. Xe chạm hàng rào</text>
+<path d="M284,180 L462,360 L480,360" fill="none" stroke="#6B7280" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M284,180 L462,360 L284,360 Z" fill="#F3F4F6" opacity="0.7"/>
+<line x1="466.0" y1="330.0" x2="466.0" y2="360.0" stroke="#92400E" stroke-width="3"/>
+<line x1="474.0" y1="330.0" x2="474.0" y2="360.0" stroke="#92400E" stroke-width="3"/>
+<line x1="462.0" y1="338.0" x2="478.0" y2="338.0" stroke="#92400E" stroke-width="2"/>
+<line x1="274.0" y1="234.0" x2="484.0" y2="234.0" stroke="#D97706" stroke-width="2.2" stroke-dasharray="7,4"/>
+<text x="482.0" y="228.0" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="end">vạch phấn</text>
+<g transform="translate(437.1,334.8) rotate(45.3)"><rect x="-20" y="-26" width="40" height="18" rx="3" fill="#FDE68A" stroke="#374151" stroke-width="1.6"/><line x1="-14" y1="-8" x2="14" y2="-8" stroke="#374151" stroke-width="1.6"/><circle cx="-11" cy="-5" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="1.6"/><circle cx="11" cy="-5" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="1.6"/></g>
+<line x1="324.0" y1="200.0" x2="422.0" y2="330.0" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#ah9CA3AF)"/>
+<g transform="translate(296.0,162.0)"><path d="M-9,6 Q-9,-10 0,-11 Q9,-10 9,6 L12,9 L-12,9 Z" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1.6"/><circle cx="0" cy="12" r="3" fill="#9CA3AF"/><line x1="0" y1="-11" x2="0" y2="-15" stroke="#9CA3AF" stroke-width="1.6"/></g>
+<text x="316.0" y="167.0" font-size="11" font-weight="700" fill="#9CA3AF" text-anchor="start">chưa reo</text>
+<text x="278.0" y="384.0" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">Xe lăn tới hàng rào cuối dốc, lố qua</text>
+<text x="278.0" y="399.9" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">một chút rồi dừng.</text>
+<rect x="504.0" y="110.0" width="226.0" height="330.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="516.0" y="134.0" font-size="13" font-weight="700" fill="#EA580C" text-anchor="start">3. Bị đẩy ngược — nhưng trôi lại</text>
+<path d="M522,180 L700,360 L718,360" fill="none" stroke="#6B7280" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M522,180 L700,360 L522,360 Z" fill="#F3F4F6" opacity="0.7"/>
+<line x1="704.0" y1="330.0" x2="704.0" y2="360.0" stroke="#92400E" stroke-width="3"/>
+<line x1="712.0" y1="330.0" x2="712.0" y2="360.0" stroke="#92400E" stroke-width="3"/>
+<line x1="700.0" y1="338.0" x2="716.0" y2="338.0" stroke="#92400E" stroke-width="2"/>
+<line x1="512.0" y1="234.0" x2="722.0" y2="234.0" stroke="#D97706" stroke-width="2.2" stroke-dasharray="7,4"/>
+<text x="720.0" y="228.0" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="end">vạch phấn</text>
+<g transform="translate(550.5,208.8) rotate(45.3)" opacity="0.35"><rect x="-20" y="-26" width="40" height="18" rx="3" fill="none" stroke="#374151" stroke-width="1.6" stroke-dasharray="3,2"/><line x1="-14" y1="-8" x2="14" y2="-8" stroke="#374151" stroke-width="1.6"/><circle cx="-11" cy="-5" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="1.6" stroke-dasharray="3,2"/><circle cx="11" cy="-5" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="1.6" stroke-dasharray="3,2"/></g>
+<line x1="568.5" y1="212.8" x2="603.4" y2="244.4" stroke="#EA580C" stroke-width="1.6" stroke-dasharray="4,3" marker-end="url(#ahEA580C)"/>
+<g transform="translate(607.4,266.4) rotate(45.3)"><rect x="-20" y="-26" width="40" height="18" rx="3" fill="#FDE68A" stroke="#374151" stroke-width="1.6"/><line x1="-14" y1="-8" x2="14" y2="-8" stroke="#374151" stroke-width="1.6"/><circle cx="-11" cy="-5" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="1.6"/><circle cx="11" cy="-5" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="1.6"/></g>
+<g transform="translate(534.0,162.0)"><path d="M-9,6 Q-9,-10 0,-11 Q9,-10 9,6 L12,9 L-12,9 Z" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1.6"/><circle cx="0" cy="12" r="3" fill="#9CA3AF"/><line x1="0" y1="-11" x2="0" y2="-15" stroke="#9CA3AF" stroke-width="1.6"/></g>
+<text x="554.0" y="167.0" font-size="11" font-weight="700" fill="#9CA3AF" text-anchor="start">chưa reo</text>
+<text x="516.0" y="384.0" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">Có bạn đẩy xe lên quá vạch phấn,</text>
+<text x="516.0" y="399.9" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">nhưng xe trôi xuống lại TRƯỚC khi</text>
+<text x="516.0" y="415.7" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">chuông reo. Chưa tính!</text>
+<rect x="742.0" y="110.0" width="226.0" height="330.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="754.0" y="134.0" font-size="13" font-weight="700" fill="#059669" text-anchor="start">4. Chuông reo, xe TRÊN vạch</text>
+<path d="M760,180 L938,360 L956,360" fill="none" stroke="#6B7280" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M760,180 L938,360 L760,360 Z" fill="#F3F4F6" opacity="0.7"/>
+<line x1="942.0" y1="330.0" x2="942.0" y2="360.0" stroke="#92400E" stroke-width="3"/>
+<line x1="950.0" y1="330.0" x2="950.0" y2="360.0" stroke="#92400E" stroke-width="3"/>
+<line x1="938.0" y1="338.0" x2="954.0" y2="338.0" stroke="#92400E" stroke-width="2"/>
+<line x1="750.0" y1="234.0" x2="960.0" y2="234.0" stroke="#D97706" stroke-width="2.2" stroke-dasharray="7,4"/>
+<text x="958.0" y="228.0" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="end">vạch phấn</text>
+<g transform="translate(784.9,205.2) rotate(45.3)"><rect x="-20" y="-26" width="40" height="18" rx="3" fill="#FDE68A" stroke="#374151" stroke-width="1.6"/><line x1="-14" y1="-8" x2="14" y2="-8" stroke="#374151" stroke-width="1.6"/><circle cx="-11" cy="-5" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="1.6"/><circle cx="11" cy="-5" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="1.6"/></g>
+<g transform="translate(772.0,162.0)"><path d="M-9,6 Q-9,-10 0,-11 Q9,-10 9,6 L12,9 L-12,9 Z" fill="#FEF3C7" stroke="#D97706" stroke-width="1.6"/><circle cx="0" cy="12" r="3" fill="#D97706"/><line x1="0" y1="-11" x2="0" y2="-15" stroke="#D97706" stroke-width="1.6"/></g>
+<path d="M756.0,154.0 q-5.0,6 0,12" fill="none" stroke="#D97706" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M751.0,151.0 q-7.0,9 0,18" fill="none" stroke="#D97706" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M788.0,154.0 q5.0,6 0,12" fill="none" stroke="#D97706" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M793.0,151.0 q7.0,9 0,18" fill="none" stroke="#D97706" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="804.0" y="167.0" font-size="11" font-weight="700" fill="#D97706" text-anchor="start">chuông reo!</text>
+<text x="754.0" y="384.0" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">Lúc chuông reo, xe đang ở trên</text>
+<text x="754.0" y="399.9" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">vạch phấn. Cả đoạn xe vừa lăn xuống</text>
+<text x="754.0" y="415.7" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">đã bị đẩy ngược hết. Trạng thái đã</text>
+<text x="754.0" y="431.6" font-size="11.5" font-weight="400" fill="#1F2937" text-anchor="start">đổi!</text>
+<text x="28.0" y="460.0" font-size="13" font-weight="700" fill="#1F2937" text-anchor="start">Đổi sang ngôn ngữ chart:</text>
+<rect x="28.0" y="474.0" width="305.0" height="38.0" rx="8" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1"/>
+<text x="38.0" y="490.0" font-size="11.5" font-weight="700" fill="#1F2937" text-anchor="start">Chiếc xe</text>
+<text x="38.0" y="505.0" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">→ giá</text>
+<rect x="343.0" y="474.0" width="305.0" height="38.0" rx="8" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1"/>
+<text x="353.0" y="490.0" font-size="11.5" font-weight="700" fill="#1F2937" text-anchor="start">Đoạn xe lăn xuống đều</text>
+<text x="353.0" y="505.0" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">→ một chặng delivery xuống (chuỗi nến đóng giảm)</text>
+<rect x="658.0" y="474.0" width="305.0" height="38.0" rx="8" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1"/>
+<text x="668.0" y="490.0" font-size="11.5" font-weight="700" fill="#1F2937" text-anchor="start">Vạch phấn</text>
+<text x="668.0" y="505.0" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">→ giá MỞ CỬA của nến đầu tiên trong chặng</text>
+<rect x="28.0" y="520.0" width="305.0" height="38.0" rx="8" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1"/>
+<text x="38.0" y="536.0" font-size="11.5" font-weight="700" fill="#1F2937" text-anchor="start">Tiếng chuông</text>
+<text x="38.0" y="551.0" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">→ giá ĐÓNG CỬA của mỗi cây nến</text>
+<rect x="343.0" y="520.0" width="305.0" height="38.0" rx="8" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1"/>
+<text x="353.0" y="536.0" font-size="11.5" font-weight="700" fill="#1F2937" text-anchor="start">Lố qua hàng rào</text>
+<text x="353.0" y="551.0" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">→ quét thanh khoản (sweep)</text>
+<rect x="658.0" y="520.0" width="305.0" height="38.0" rx="8" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1"/>
+<text x="668.0" y="536.0" font-size="11.5" font-weight="700" fill="#1F2937" text-anchor="start">Chuông reo khi xe trên vạch</text>
+<text x="668.0" y="551.0" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">→ CISD tăng (bullish CISD)</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg viewBox="0 0 960 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="560" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="26" y="34" font-size="18" font-weight="700" fill="#1F2937">Mô hình hai tầng: GATES lọc cứng → SCORES xếp hạng</text>
+  <text x="26" y="55" font-size="13" fill="#6B7280">Gate là nhị phân và KHÔNG bù trừ được. Điểm chỉ dùng để xếp hạng giữa các ứng viên đã qua gate.</text>
+
+  <!-- Stage 1 : swings -->
+  <rect x="26" y="80" width="150" height="86" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="38" y="102" font-size="11.5" font-weight="700" fill="#1F2937">1 · Phát hiện swing</text>
+  <text x="38" y="120" font-size="10.5" fill="#6B7280">Toàn bộ swing do thuật</text>
+  <text x="38" y="134" font-size="10.5" fill="#6B7280">toán tìm được — KHÔNG</text>
+  <text x="38" y="148" font-size="10.5" fill="#6B7280">chỉ swing “nhìn thấy”.</text>
+
+  <path d="M178 123 L206 123" stroke="#9CA3AF" stroke-width="1.6" fill="none"/>
+  <polygon points="206,118 216,123 206,128" fill="#9CA3AF"/>
+
+  <!-- Stage 2 : GATES -->
+  <rect x="220" y="80" width="330" height="200" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="234" y="102" font-size="12.5" font-weight="700" fill="#B91C1C">2 · GATES — điều kiện CẦN (nhị phân)</text>
+  <text x="234" y="119" font-size="10.5" fill="#7F1D1D">Trượt một gate = LOẠI. Không có ngoại lệ, không cộng điểm.</text>
+
+  <rect x="234" y="129" width="302" height="38" rx="6" fill="#FFFFFF" stroke="#FECACA"/>
+  <text x="244" y="145" font-size="11" font-weight="700" fill="#374151">G1 · đã xác nhận</text>
+  <text x="244" y="159" font-size="10" fill="#6B7280">đủ N nến sau → không phải đáy nến đang chạy</text>
+
+  <rect x="234" y="172" width="302" height="38" rx="6" fill="#FFFFFF" stroke="#FECACA"/>
+  <text x="244" y="188" font-size="11" font-weight="700" fill="#B91C1C">G2 · phá nó có ĐỔI NHÃN CẤU TRÚC không?</text>
+  <text x="244" y="202" font-size="10" fill="#6B7280">gate quan trọng nhất — đây là bộ lọc nhiễu duy nhất</text>
+
+  <rect x="234" y="215" width="302" height="38" rx="6" fill="#FFFFFF" stroke="#FECACA"/>
+  <text x="244" y="231" font-size="11" font-weight="700" fill="#374151">G3 · đúng CẤP của khung đang phân tích</text>
+  <text x="244" y="245" font-size="10" fill="#6B7280">sai cấp = sai loại, không phải “yếu”</text>
+
+  <rect x="234" y="259" width="302" height="14" rx="4" fill="#DC2626" opacity="0.10"/>
+  <text x="244" y="270" font-size="10" font-weight="700" fill="#B91C1C">Không thể bù trừ: L cao không cứu được G2 = 0</text>
+
+  <path d="M552 180 L580 180" stroke="#9CA3AF" stroke-width="1.6" fill="none"/>
+  <polygon points="580,175 590,180 580,185" fill="#9CA3AF"/>
+
+  <!-- Stage 3 : SCORES -->
+  <rect x="594" y="80" width="340" height="200" rx="8" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="608" y="102" font-size="12.5" font-weight="700" fill="#1D4ED8">3 · SCORES — cộng được, mỗi chiều [0,1]</text>
+  <text x="608" y="119" font-size="10.5" fill="#1E3A8A">Dùng để XẾP HẠNG. Trọng số chưa biết → không bịa.</text>
+
+  <text x="608" y="143" font-size="11" font-weight="700" fill="#374151">L · liquidity</text>
+  <rect x="700" y="134" width="150" height="10" rx="3" fill="#DBEAFE"/>
+  <rect x="700" y="134" width="104" height="10" rx="3" fill="#1D4ED8"/>
+  <text x="858" y="143" font-size="10" fill="#6B7280">clustering</text>
+
+  <text x="608" y="167" font-size="11" font-weight="700" fill="#374151">D · displacement</text>
+  <rect x="700" y="158" width="150" height="10" rx="3" fill="#DBEAFE"/>
+  <rect x="700" y="158" width="126" height="10" rx="3" fill="#1D4ED8"/>
+  <text x="858" y="167" font-size="10" fill="#6B7280">disp · FVG</text>
+
+  <text x="608" y="191" font-size="11" font-weight="700" fill="#374151">R · reaction</text>
+  <rect x="700" y="182" width="150" height="10" rx="3" fill="#DBEAFE"/>
+  <rect x="700" y="182" width="72" height="10" rx="3" fill="#1D4ED8"/>
+  <text x="858" y="191" font-size="10" fill="#6B7280">n_tests</text>
+
+  <text x="608" y="215" font-size="11" font-weight="700" fill="#374151">P · protected</text>
+  <rect x="700" y="206" width="150" height="10" rx="3" fill="#DBEAFE"/>
+  <rect x="700" y="206" width="88" height="10" rx="3" fill="#93C5FD"/>
+  <text x="858" y="215" font-size="10" fill="#6B7280">trùng S</text>
+
+  <text x="608" y="239" font-size="11" font-weight="700" fill="#7C3AED">C · context</text>
+  <rect x="700" y="230" width="150" height="10" rx="3" fill="#EDE9FE"/>
+  <rect x="700" y="230" width="30" height="10" rx="3" fill="#7C3AED"/>
+  <text x="858" y="239" font-size="10" fill="#7C3AED">cấm chọn</text>
+
+  <text x="608" y="262" font-size="10.5" font-weight="700" fill="#B91C1C">C có thể tự sinh ra chính nó → nguy cơ vòng lặp logic</text>
+  <text x="608" y="276" font-size="10" fill="#6B7280">P trùng S nên phải giảm trọng số, nếu không là đếm S hai lần</text>
+
+  <!-- Bottom : outcome -->
+  <path d="M480 286 L480 306" stroke="#9CA3AF" stroke-width="1.6" fill="none"/>
+  <polygon points="475,306 480,316 485,306" fill="#9CA3AF"/>
+
+  <rect x="220" y="322" width="714" height="92" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="234" y="344" font-size="12.5" font-weight="700" fill="#1F2937">4 · Sắp thứ tự TỪ ĐIỂN (không phải tổng có trọng số)</text>
+  <text x="234" y="368" font-size="11" fill="#374151">khoá 1 <tspan font-weight="700">gate-strength</tspan> (G2 ∧ D≥1 ∧ L chưa spent)  →  khoá 2 <tspan font-weight="700">unswept_count</tspan>  →  khoá 3 <tspan font-weight="700">containment</tspan>  →  khoá 4 <tspan font-weight="700">S_score</tspan>  →  khoá 5 <tspan font-weight="700">age</tspan></text>
+  <text x="234" y="390" font-size="10.5" fill="#6B7280">Lý do dùng thứ tự từ điển: không cho phép một ưu điểm lớn ở tiêu chí thứ yếu bù cho thất bại ở tiêu chí chính — điều mà tổng có trọng số luôn cho phép.</text>
+  <text x="234" y="406" font-size="10.5" fill="#B91C1C">Tuổi range (age) bị đẩy xuống khoá cuối vì nó là heuristic CHƯA có nền tảng bằng chứng.</text>
+
+  <rect x="26" y="432" width="908" height="106" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="40" y="454" font-size="12.5" font-weight="700" fill="#15803D">Vì sao gate phải đứng TRƯỚC điểm — lập luận, không phải khẩu hiệu</text>
+  <text x="40" y="476" font-size="11" fill="#374151">Một swing có L và D rất cao nhưng G2 = 0 (không tham chiếu cấu trúc nào) thì <tspan font-weight="700">không thể làm neo range</tspan>, bất kể L và D.</text>
+  <text x="40" y="496" font-size="11" fill="#374151">Nếu dùng tổng có trọng số, swing đó vẫn được điểm khá và sẽ thắng trong một số trường hợp — vì thang điểm không biết rằng</text>
+  <text x="40" y="516" font-size="11" fill="#374151">có những thuộc tính <tspan font-style="italic">không thể bù trừ</tspan>. Đây là lỗi thiết kế, không phải lỗi tham số, nên tăng dữ liệu không sửa được.</text>
+</svg>

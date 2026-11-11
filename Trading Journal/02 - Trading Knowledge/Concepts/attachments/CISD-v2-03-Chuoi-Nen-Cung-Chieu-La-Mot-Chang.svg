@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs></defs>
+<rect x="1" y="1" width="998" height="558" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">Chuỗi nến cùng chiều = một chặng “giao hàng” (delivery leg)</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Mỗi nến mở cửa gần chỗ nến trước đóng cửa, nên các thân nến nối vào nhau như những bậc thang. Cả chuỗi bắt đầu từ open của nến</text>
+<text x="28.0" y="81.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">ĐẦU TIÊN — đó là “vạch xuất phát” của chặng.</text>
+<rect x="888.1" y="22" width="83.9" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="930.0" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">DELIVERY</text>
+<text x="28.0" y="548.0" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start">Sơ đồ minh họa (synthetic) — giá trong hình là ví dụ, không phải dữ liệu thị trường thật.</text>
+<rect x="28.0" y="108.0" width="620.0" height="380.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="40.0" y="130.0" font-size="13" font-weight="700" fill="#1F2937" text-anchor="start">Chặng lên #3–#5, chặng xuống #6–#9</text>
+<rect x="168.9" y="140.0" width="126.9" height="336.0" rx="0" fill="#ECFDF5" stroke="none" stroke-width="0"/>
+<text x="232.3" y="154.0" font-size="11" font-weight="700" fill="#059669" text-anchor="middle" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">chặng LÊN</text>
+<rect x="295.7" y="140.0" width="169.1" height="336.0" rx="0" fill="#FEF2F2" stroke="none" stroke-width="0"/>
+<text x="380.3" y="154.0" font-size="11" font-weight="700" fill="#DC2626" text-anchor="middle" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">chặng XUỐNG</text>
+<line x1="63.1" y1="269.7" x2="63.1" y2="320.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="50.9" y="286.5" width="24.5" height="16.9" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="105.4" y1="278.1" x2="105.4" y2="354.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="93.2" y="286.5" width="24.5" height="56.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="147.7" y1="331.5" x2="147.7" y2="415.8" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="135.5" y="342.7" width="24.5" height="56.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="190.0" y1="325.9" x2="190.0" y2="404.6" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="177.7" y="334.3" width="24.5" height="64.6" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="232.3" y1="275.3" x2="232.3" y2="342.7" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="220.0" y="283.7" width="24.5" height="50.6" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="274.6" y1="207.8" x2="274.6" y2="294.9" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="262.3" y="230.3" width="24.5" height="53.4" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="316.9" y1="221.9" x2="316.9" y2="280.9" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="304.6" y="230.3" width="24.5" height="42.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="359.1" y1="264.0" x2="359.1" y2="334.3" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="346.9" y="272.5" width="24.5" height="53.4" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="401.4" y1="317.4" x2="401.4" y2="387.7" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="389.2" y="325.9" width="24.5" height="53.4" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="443.7" y1="373.6" x2="443.7" y2="449.5" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="431.5" y="379.3" width="24.5" height="25.3" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="486.0" y1="314.6" x2="486.0" y2="413.0" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="473.7" y="320.2" width="24.5" height="84.3" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="329.1" y1="272.5" x2="346.9" y2="272.5" stroke="#6B7280" stroke-width="1" stroke-dasharray="2,2"/>
+<line x1="371.4" y1="325.9" x2="389.2" y2="325.9" stroke="#6B7280" stroke-width="1" stroke-dasharray="2,2"/>
+<line x1="413.7" y1="379.3" x2="431.5" y2="379.3" stroke="#6B7280" stroke-width="1" stroke-dasharray="2,2"/>
+<line x1="278.8" y1="230.3" x2="634.0" y2="230.3" stroke="#D97706" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="632.0" y="225.3" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">vạch xuất phát chặng xuống (open #6)</text>
+<line x1="151.9" y1="398.9" x2="634.0" y2="398.9" stroke="#059669" stroke-width="1.3" stroke-dasharray="4,3"/>
+<text x="632.0" y="412.4" font-size="10.5" font-weight="700" fill="#059669" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">vạch xuất phát chặng lên (open #3)</text>
+<text x="63.1" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#0</text>
+<text x="105.4" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#1</text>
+<text x="147.7" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#2</text>
+<text x="190.0" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#3</text>
+<text x="232.3" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#4</text>
+<text x="274.6" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#5</text>
+<text x="316.9" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#6</text>
+<text x="359.1" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#7</text>
+<text x="401.4" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#8</text>
+<text x="443.7" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#9</text>
+<text x="486.0" y="484.0" font-size="9.5" font-weight="600" fill="#9CA3AF" text-anchor="middle">#10</text>
+<rect x="670.0" y="108.0" width="302.0" height="95.6" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.3"/>
+<text x="682.0" y="132.3" font-size="13" font-weight="700" fill="#2563EB" text-anchor="start">Delivery là gì (nói đơn giản)?</text>
+<text x="682.0" y="154.6" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Là đoạn giá đang được “chở” đều đặn về một</text>
+<text x="682.0" y="171.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">phía: hết nến này tới nến kia đều đóng cửa theo</text>
+<text x="682.0" y="188.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">cùng một hướng.</text>
+<rect x="670.0" y="213.6" width="302.0" height="118.4" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.3"/>
+<text x="682.0" y="237.9" font-size="13" font-weight="700" fill="#1F2937" text-anchor="start">Vì sao gọi là một chặng?</text>
+<circle cx="686.0" cy="256.2" r="2.6" fill="#6B7280" stroke="none" stroke-width="1.2"/>
+<text x="696.0" y="260.1" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Các thân nến nối tiếp nhau, không bị nến</text>
+<text x="696.0" y="276.9" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">ngược chiều cắt ngang.</text>
+<circle cx="686.0" cy="292.8" r="2.6" fill="#6B7280" stroke="none" stroke-width="1.2"/>
+<text x="696.0" y="296.7" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Chặng kết thúc khi xuất hiện nến đóng cửa</text>
+<text x="696.0" y="313.5" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">theo chiều ngược lại.</text>
+<rect x="670.0" y="341.9" width="302.0" height="95.6" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.3"/>
+<text x="682.0" y="366.3" font-size="13" font-weight="700" fill="#D97706" text-anchor="start">Điều quan trọng cho CISD</text>
+<text x="682.0" y="388.5" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Open của nến đầu chặng là chỗ chặng bắt đầu.</text>
+<text x="682.0" y="405.3" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Nếu sau này giá ĐÓNG CỬA vượt qua lại chỗ đó,</text>
+<text x="682.0" y="422.1" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">nghĩa là toàn bộ chặng đã bị lấy lại.</text>
+</svg>

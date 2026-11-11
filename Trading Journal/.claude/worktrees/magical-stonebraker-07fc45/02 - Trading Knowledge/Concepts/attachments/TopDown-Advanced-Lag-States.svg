@@ -1,0 +1,46 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#1F2937">Độ trễ giữa các tầng — HTF flip trước, Intermediate &amp; LTF "bắt kịp" sau</text>
+  <text x="24" y="52" font-size="13" fill="#6B7280">Timeline ba tầng: khoảng cách giữa lúc HTF đổi bias và lúc Intermediate/LTF xác nhận là "vùng nguy hiểm".</text>
+
+  <!-- timeline axis -->
+  <line x1="60" y1="380" x2="720" y2="380" stroke="#9CA3AF" stroke-width="1.4"/>
+  <text x="700" y="398" font-size="10" fill="#6B7280">Thời gian →</text>
+
+  <!-- HTF row -->
+  <text x="24" y="100" font-size="12.5" font-weight="700" fill="#1D4ED8">HTF (D1)</text>
+  <line x1="130" y1="110" x2="720" y2="110" stroke="#3B82F6" stroke-width="4"/>
+  <circle cx="200" cy="110" r="7" fill="#3B82F6"/>
+  <text x="150" y="95" font-size="10.5" font-weight="700" fill="#1D4ED8">① Fresh MSS — bias flip (tentative)</text>
+  <line x1="200" y1="110" x2="200" y2="370" stroke="#3B82F6" stroke-dasharray="4 4" stroke-width="1.2"/>
+
+  <!-- Intermediate row -->
+  <text x="24" y="200" font-size="12.5" font-weight="700" fill="#B45309">Intermediate (H1)</text>
+  <line x1="130" y1="210" x2="720" y2="210" stroke="#F59E0B" stroke-width="4" opacity="0.4"/>
+  <line x1="360" y1="210" x2="720" y2="210" stroke="#F59E0B" stroke-width="4"/>
+  <circle cx="360" cy="210" r="7" fill="#F59E0B"/>
+  <text x="368" y="196" font-size="10.5" font-weight="700" fill="#B45309">② Intermediate hình thành POI mới, xác nhận</text>
+  <line x1="360" y1="210" x2="360" y2="370" stroke="#F59E0B" stroke-dasharray="4 4" stroke-width="1.2"/>
+
+  <!-- LTF row -->
+  <text x="24" y="300" font-size="12.5" font-weight="700" fill="#15803D">LTF (M5)</text>
+  <line x1="130" y1="310" x2="720" y2="310" stroke="#16A34A" stroke-width="4" opacity="0.4"/>
+  <line x1="500" y1="310" x2="720" y2="310" stroke="#16A34A" stroke-width="4"/>
+  <circle cx="500" cy="310" r="7" fill="#16A34A"/>
+  <text x="508" y="296" font-size="10.5" font-weight="700" fill="#15803D">③ LTF cấu trúc đổi theo hướng mới</text>
+  <line x1="500" y1="310" x2="500" y2="370" stroke="#16A34A" stroke-dasharray="4 4" stroke-width="1.2"/>
+
+  <!-- Danger zone box between 200 and 500 -->
+  <rect x="200" y="70" width="300" height="300" fill="#DC2626" opacity="0.07"/>
+  <rect x="200" y="70" width="300" height="20" fill="#DC2626" opacity="0.85"/>
+  <text x="212" y="84" font-size="11" font-weight="700" fill="#FFFFFF">VÙNG NGUY HIỂM — HTF đã flip nhưng Intermediate/LTF chưa "bắt kịp"</text>
+
+  <!-- old-direction LTF structure still showing inside danger zone -->
+  <path d="M220,340 L260,320 L300,335 L340,315" fill="none" stroke="#DC2626" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="220" y="355" font-size="9.5" fill="#B91C1C">LTF vẫn còn cấu trúc hướng CŨ trong lúc này</text>
+
+  <rect x="24" y="410" width="712" height="60" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="428" font-size="10.5" font-weight="700" fill="#92400E">Trong "vùng nguy hiểm": coi bias HTF là TENTATIVE, không rush entry LTF theo hướng mới,</text>
+  <text x="36" y="444" font-size="10.5" font-weight="700" fill="#92400E">giảm size hoặc đứng ngoài cho tới khi Intermediate tự xác nhận bằng cấu trúc của chính nó.</text>
+  <text x="36" y="460" font-size="10.5" font-weight="700" fill="#92400E">Chỉ full-size khi cả ba tầng (①②③) đã xác nhận đồng thuận.</text>
+</svg>

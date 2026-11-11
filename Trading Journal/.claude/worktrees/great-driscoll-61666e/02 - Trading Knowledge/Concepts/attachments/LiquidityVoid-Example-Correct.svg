@@ -1,0 +1,55 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Ví dụ đúng — Liquidity Void làm TARGET: sweep, displacement, partial fill, continuation</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Sweep SSL mở displacement mạnh tạo void rộng; giá pullback tới CE rồi tiếp tục lao qua void tới buy-side liquidity.</text>
+
+  <rect x="24" y="70" width="712" height="326" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- discount zone -->
+  <rect x="44" y="300" width="672" height="80" fill="#3B82F6" opacity="0.06"/>
+  <text x="52" y="316" font-size="10.5" fill="#1D4ED8">Discount của dealing range — void cùng hướng bias UP</text>
+
+  <!-- SSL level -->
+  <line x1="70" y1="352" x2="300" y2="352" stroke="#6B7280" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="76" y="348" font-size="10" fill="#374151">Đáy cũ — SSL bị quét</text>
+
+  <!-- approach down into sweep -->
+  <path d="M50,240 L110,290 L150,340 L175,356" fill="none" stroke="#374151" stroke-width="2.2"/>
+  <circle cx="175" cy="356" r="7" fill="#B45309"/>
+  <text x="56" y="230" font-size="10.5" fill="#6B7280">① Giá quét SSL (nhiên liệu cho void)</text>
+
+  <!-- displacement candles forming the void: series of tall bullish candles with minimal overlap -->
+  <g>
+    <rect x="200" y="300" width="20" height="56" fill="#16A34A" opacity="0.9" rx="1"/>
+    <rect x="208" y="292" width="4" height="72" fill="#15803D"/>
+    <rect x="232" y="250" width="20" height="52" fill="#16A34A" opacity="0.9" rx="1"/>
+    <rect x="240" y="242" width="4" height="68" fill="#15803D"/>
+    <rect x="264" y="204" width="20" height="48" fill="#16A34A" opacity="0.9" rx="1"/>
+    <rect x="272" y="196" width="4" height="62" fill="#15803D"/>
+    <rect x="296" y="160" width="20" height="46" fill="#16A34A" opacity="0.9" rx="1"/>
+    <rect x="304" y="152" width="4" height="60" fill="#15803D"/>
+  </g>
+  <text x="200" y="140" font-size="10.5" font-weight="700" fill="#15803D">② Chuỗi nến displacement — thiếu overlap giữa các thân nến</text>
+
+  <!-- void zone box -->
+  <rect x="196" y="160" width="124" height="196" fill="#F59E0B" opacity="0.14" stroke="#B45309" stroke-dasharray="4 3"/>
+  <text x="324" y="170" font-size="10" font-weight="700" fill="#B45309">Liquidity Void</text>
+  <text x="324" y="182" font-size="9" fill="#92400E">void_low → void_high</text>
+
+  <!-- CE line -->
+  <line x1="196" y1="258" x2="320" y2="258" stroke="#3B82F6" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="324" y="262" font-size="9.5" fill="#1D4ED8">CE (mean threshold, 50%)</text>
+
+  <!-- pullback to CE then continuation -->
+  <path d="M316,160 L360,220 L380,258 L420,200 L470,140 L540,90" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <circle cx="380" cy="258" r="7" fill="#16A34A"/>
+  <text x="330" y="290" font-size="10.5" font-weight="700" fill="#15803D">③ Pullback chỉ tới CE (partial fill) — entry tại FVG chân void</text>
+
+  <!-- BSL target -->
+  <line x1="540" y1="90" x2="716" y2="90" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="560" y="82" font-size="10.5" fill="#166534">④ Target: buy-side liquidity phía xa void</text>
+
+  <rect x="24" y="410" width="712" height="52" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="430" font-size="11.5" font-weight="700" fill="#92400E">Chuỗi: sweep → displacement mở void → pullback chỉ tới CE (không lấp hết) → tiếp tục lao qua void.</text>
+  <text x="36" y="448" font-size="11.5" font-weight="700" fill="#92400E">Void làm TARGET vì cùng hướng bias, đúng discount, và có draw on liquidity rõ ở phía xa.</text>
+</svg>

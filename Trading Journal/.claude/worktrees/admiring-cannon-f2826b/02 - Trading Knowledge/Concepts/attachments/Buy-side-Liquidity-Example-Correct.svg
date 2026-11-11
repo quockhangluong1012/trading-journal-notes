@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Buy-side Liquidity (BSL) — raid rồi đảo chiều</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Buy-stops nằm TRÊN equal highs/đỉnh cũ; giá quét BSL → MSS giảm → Short.</text>
+
+  <!-- Equal highs forming BSL -->
+  <line x1="120" y1="130" x2="700" y2="130" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="540" y="124" font-size="12" font-weight="700" fill="#2563EB">BSL (buy-stops trên equal highs)</text>
+
+  <!-- first high touching BSL -->
+  <rect x="120" y="160" width="2" height="60" fill="#16A34A"/><rect x="114" y="165" width="14" height="45" fill="#16A34A" rx="1"/>
+  <rect x="146" y="132" width="2" height="60" fill="#16A34A"/><rect x="140" y="137" width="14" height="42" fill="#16A34A" rx="1"/>
+  <rect x="172" y="150" width="2" height="55" fill="#DC2626"/><rect x="166" y="155" width="14" height="40" fill="#DC2626" rx="1"/>
+  <!-- pull down -->
+  <rect x="198" y="180" width="2" height="55" fill="#DC2626"/><rect x="192" y="185" width="14" height="40" fill="#DC2626" rx="1"/>
+  <rect x="224" y="210" width="2" height="55" fill="#DC2626"/><rect x="218" y="215" width="14" height="40" fill="#DC2626" rx="1"/>
+  <!-- equal high #2 -->
+  <rect x="250" y="190" width="2" height="55" fill="#16A34A"/><rect x="244" y="195" width="14" height="40" fill="#16A34A" rx="1"/>
+  <rect x="276" y="133" width="2" height="60" fill="#16A34A"/><rect x="270" y="138" width="14" height="42" fill="#16A34A" rx="1"/>
+  <rect x="302" y="155" width="2" height="55" fill="#DC2626"/><rect x="296" y="160" width="14" height="40" fill="#DC2626" rx="1"/>
+  <rect x="328" y="185" width="2" height="55" fill="#DC2626"/><rect x="322" y="190" width="14" height="40" fill="#DC2626" rx="1"/>
+
+  <!-- the SWEEP candle: spikes above BSL then closes back -->
+  <rect x="354" y="195" width="2" height="60" fill="#16A34A"/><rect x="348" y="200" width="14" height="42" fill="#16A34A" rx="1"/>
+  <rect x="380" y="105" width="2" height="135" fill="#DC2626"/><rect x="374" y="150" width="14" height="55" fill="#DC2626" rx="1"/>
+  <text x="392" y="112" font-size="12" font-weight="700" fill="#DC2626">Sweep / Raid BSL</text>
+  <circle cx="381" cy="108" r="4" fill="#DC2626"/>
+
+  <!-- displacement down + MSS -->
+  <rect x="406" y="200" width="2" height="120" fill="#DC2626"/><rect x="400" y="210" width="14" height="95" fill="#DC2626" rx="1"/>
+  <rect x="432" y="300" width="2" height="60" fill="#DC2626"/><rect x="426" y="305" width="14" height="45" fill="#DC2626" rx="1"/>
+  <line x1="340" y1="240" x2="470" y2="240" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="440" y="258" font-size="12" fill="#DC2626">MSS giảm (phá STL)</text>
+
+  <!-- entry on retrace + arrow down to SSL -->
+  <rect x="458" y="270" width="2" height="55" fill="#16A34A"/><rect x="452" y="275" width="14" height="38" fill="#16A34A" rx="1"/>
+  <rect x="484" y="300" width="2" height="55" fill="#DC2626"/><rect x="478" y="305" width="14" height="40" fill="#DC2626" rx="1"/>
+  <rect x="510" y="335" width="2" height="60" fill="#DC2626"/><rect x="504" y="340" width="14" height="45" fill="#DC2626" rx="1"/>
+  <circle cx="465" cy="278" r="5" fill="#DC2626"/>
+  <text x="474" y="272" font-size="12" font-weight="600" fill="#DC2626">Entry Short</text>
+
+  <line x1="450" y1="400" x2="700" y2="400" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="560" y="416" font-size="12" fill="#2563EB">Target = SSL phía dưới</text>
+  <path d="M512 388 l 16 10 l 1 -11 z" fill="#DC2626"/>
+
+  <text x="24" y="444" font-size="15" font-weight="700" fill="#16A34A">✓ Đúng</text>
+  <text x="80" y="444" font-size="12" fill="#374151">— giá raid BSL trên equal highs, đóng nến quay lại + MSS giảm; Short về SSL.</text>
+</svg>

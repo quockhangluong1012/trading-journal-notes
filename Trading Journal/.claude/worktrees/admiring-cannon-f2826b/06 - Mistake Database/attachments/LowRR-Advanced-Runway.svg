@@ -1,0 +1,52 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="1" y="1" width="758" height="458" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Runway check: có gì cản đường giữa Entry và Target?</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">So sánh hai kịch bản cùng bias, cùng RR "trên giấy" — khác nhau ở runway</text>
+
+  <!-- Scenario A: clean runway -->
+  <rect x="24" y="76" width="344" height="176" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="38" y="98" font-size="13" fill="#15803D" font-weight="700">A. Runway sạch — RR thật ≈ RR kế hoạch</text>
+
+  <line x1="50" y1="205" x2="345" y2="205" stroke="#3B82F6" stroke-width="1.6"/>
+  <text x="290" y="200" font-size="10.5" fill="#1D4ED8">Entry</text>
+  <line x1="50" y1="230" x2="345" y2="230" stroke="#DC2626" stroke-width="1.6"/>
+  <text x="285" y="226" font-size="10.5" fill="#B91C1C">SL</text>
+  <line x1="50" y1="120" x2="345" y2="120" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="270" y="115" font-size="10.5" fill="#15803D">Target (liquidity thật)</text>
+  <path d="M 60 228 L 120 200 L 190 165 L 260 135 L 330 122" fill="none" stroke="#374151" stroke-width="1.6"/>
+  <rect x="50" y="120" width="295" height="85" fill="#16A34A" fill-opacity="0.05"/>
+  <text x="60" y="145" font-size="10" fill="#15803D">không FVG / pool đối ứng nằm giữa</text>
+
+  <!-- Scenario B: blocked runway -->
+  <rect x="392" y="76" width="344" height="176" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="406" y="98" font-size="13" fill="#B91C1C" font-weight="700">B. Runway bị chặn — RR thật &lt;&lt; RR kế hoạch</text>
+
+  <line x1="418" y1="205" x2="713" y2="205" stroke="#3B82F6" stroke-width="1.6"/>
+  <text x="658" y="200" font-size="10.5" fill="#1D4ED8">Entry</text>
+  <line x1="418" y1="230" x2="713" y2="230" stroke="#DC2626" stroke-width="1.6"/>
+  <text x="653" y="226" font-size="10.5" fill="#B91C1C">SL</text>
+  <line x1="418" y1="120" x2="713" y2="120" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4" opacity="0.5"/>
+  <text x="600" y="115" font-size="10.5" fill="#6B7280">Target (liquidity thật, ngoài tầm với)</text>
+
+  <!-- opposing pool blocking -->
+  <rect x="540" y="145" width="90" height="45" rx="6" fill="#D97706" fill-opacity="0.18" stroke="#D97706" stroke-width="1.5"/>
+  <text x="548" y="163" font-size="10" fill="#B45309" font-weight="600">Unfilled FVG /</text>
+  <text x="548" y="176" font-size="10" fill="#B45309" font-weight="600">equal highs (EQH)</text>
+
+  <path d="M 428 228 L 480 200 L 540 175 L 590 170 L 630 195 L 680 210" fill="none" stroke="#374151" stroke-width="1.6"/>
+  <text x="600" y="225" font-size="10" fill="#4B5563" font-style="italic">đảo chiều tại pool đối ứng</text>
+
+  <!-- verdict boxes -->
+  <rect x="24" y="266" width="344" height="40" rx="6" fill="#16A34A" fill-opacity="0.1" stroke="#16A34A"/>
+  <text x="36" y="290" font-size="12" fill="#15803D" font-weight="600">→ Giữ nguyên lệnh, RR đo được là RR khả dụng thật.</text>
+
+  <rect x="392" y="266" width="344" height="40" rx="6" fill="#DC2626" fill-opacity="0.1" stroke="#DC2626"/>
+  <text x="404" y="290" font-size="12" fill="#991B1B" font-weight="600">→ Hạ target về trước pool, hoặc bỏ lệnh nếu RR mới &lt; ngưỡng tối thiểu.</text>
+
+  <!-- checklist panel -->
+  <rect x="24" y="322" width="712" height="118" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="346" font-size="13" fill="#1F2937" font-weight="700">Runway check — 3 câu hỏi bắt buộc trước khi chốt RR kế hoạch</text>
+  <text x="40" y="372" font-size="12" fill="#374151">1. Có equal highs/lows (EQH/EQL) hoặc old H/L nằm giữa entry và target không?</text>
+  <text x="40" y="394" font-size="12" fill="#374151">2. Có FVG/OB đối ứng (chiều ngược bias) chưa được lấp nằm trên đường đi không?</text>
+  <text x="40" y="416" font-size="12" fill="#374151">3. Draw on liquidity hiện tại đã được "giao" một phần chưa — còn đủ quãng đường không?</text>
+</svg>

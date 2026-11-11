@@ -1,0 +1,124 @@
+<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="600" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="26" y="34" font-size="18" font-weight="700" fill="#1F2937">Thuật toán chọn Dealing Range — từ 7 ứng viên về 1 range chính</text>
+  <text x="26" y="55" font-size="13" fill="#6B7280">Hai bộ lọc cứng trước, rồi mới xếp hạng. Không dùng tổng có trọng số — dùng thứ tự từ điển.</text>
+
+  <!-- ===== column 1: candidates ===== -->
+  <rect x="25" y="76" width="330" height="414" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="38" y="98" font-size="12.5" font-weight="700" fill="#1F2937">7 ứng viên</text>
+  <text x="38" y="114" font-size="10.5" fill="#6B7280">sinh từ mọi cặp neo đã qua gate</text>
+
+  <rect x="38" y="126" width="304" height="40" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="48" y="142" font-size="10.5" font-weight="700" fill="#15803D">C1 · 20.120 – 20.480</text>
+  <text x="48" y="157" font-size="9.5" fill="#4B5563">gate ✓ · 1 đầu unswept · D 1.8 · VALID</text>
+  <text x="318" y="152" font-size="11" font-weight="700" fill="#15803D" text-anchor="end">✓</text>
+
+  <rect x="38" y="170" width="304" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="48" y="186" font-size="10.5" font-weight="700" fill="#B91C1C">C2 · 20.395 – 20.480</text>
+  <text x="48" y="201" font-size="9.5" fill="#7F1D1D">G2 ✗ — phá neo này không đổi nhãn nào</text>
+  <text x="318" y="196" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="end">✗</text>
+
+  <rect x="38" y="214" width="304" height="40" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="48" y="230" font-size="10.5" font-weight="700" fill="#15803D">C3 · 20.238 – 20.395</text>
+  <text x="48" y="245" font-size="9.5" fill="#4B5563">gate ✓ · range con H1 · VALID</text>
+  <text x="318" y="240" font-size="11" font-weight="700" fill="#15803D" text-anchor="end">✓</text>
+
+  <rect x="38" y="258" width="304" height="40" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="48" y="274" font-size="10.5" font-weight="700" fill="#15803D">C4 · 20.180 – 20.455</text>
+  <text x="48" y="289" font-size="9.5" fill="#4B5563">gate ✓ · nhưng cả hai đầu đã spent</text>
+  <text x="318" y="284" font-size="11" font-weight="700" fill="#15803D" text-anchor="end">✓</text>
+
+  <rect x="38" y="302" width="304" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="48" y="318" font-size="10.5" font-weight="700" fill="#B91C1C">C5 · 20.205 – 20.480</text>
+  <text x="48" y="333" font-size="9.5" fill="#7F1D1D">G1 ✗ — neo là đáy nến đang chạy</text>
+  <text x="318" y="328" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="end">✗</text>
+
+  <rect x="38" y="346" width="304" height="40" rx="6" fill="#FFFBEB" stroke="#FDE68A"/>
+  <text x="48" y="362" font-size="10.5" font-weight="700" fill="#B45309">C6 · 20.120 – 20.455</text>
+  <text x="48" y="377" font-size="9.5" fill="#92400E">gate ✓ nhưng σ = INVALIDATED (protected bị phá)</text>
+  <text x="318" y="372" font-size="11" font-weight="700" fill="#B45309" text-anchor="end">✗</text>
+
+  <rect x="38" y="390" width="304" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="48" y="406" font-size="10.5" font-weight="700" fill="#B91C1C">C7 · 20.300 – 20.480</text>
+  <text x="48" y="421" font-size="9.5" fill="#7F1D1D">G3 ✗ — neo cấp M5, không phải cấp D1</text>
+  <text x="318" y="416" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="end">✗</text>
+
+  <text x="38" y="452" font-size="10" fill="#6B7280">Nhiều ứng viên cùng hợp lệ là BÌNH THƯỜNG —</text>
+  <text x="38" y="466" font-size="10" fill="#6B7280">vấn đề không phải “tìm ra range đúng duy nhất”,</text>
+  <text x="38" y="480" font-size="10" fill="#6B7280">mà là phân cấp chúng.</text>
+
+  <!-- arrows -->
+  <path d="M357 230 L386 230" stroke="#9CA3AF" stroke-width="1.6"/>
+  <polygon points="386,225 396,230 386,235" fill="#9CA3AF"/>
+  <path d="M357 300 L386 300" stroke="#9CA3AF" stroke-width="1.6"/>
+  <polygon points="386,295 396,300 386,305" fill="#9CA3AF"/>
+  <path d="M357 370 L386 370" stroke="#9CA3AF" stroke-width="1.6"/>
+  <polygon points="386,365 396,370 386,375" fill="#9CA3AF"/>
+
+  <!-- ===== column 2: filters ===== -->
+  <rect x="400" y="76" width="234" height="414" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="413" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Bộ lọc (theo thứ tự)</text>
+
+  <rect x="413" y="112" width="208" height="86" rx="6" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="423" y="130" font-size="11" font-weight="700" fill="#B91C1C">1 · Lọc GATE</text>
+  <text x="423" y="147" font-size="10" fill="#374151">G1 đã xác nhận · G2 phá-nó-đổi-</text>
+  <text x="423" y="160" font-size="10" fill="#374151">cấu-trúc · G3 đúng cấp</text>
+  <text x="423" y="178" font-size="10.5" font-weight="700" fill="#B91C1C">Loại C2, C5, C7</text>
+  <text x="423" y="192" font-size="9.5" fill="#7F1D1D">Trượt một gate = loại, không ngoại lệ</text>
+
+  <rect x="413" y="210" width="208" height="86" rx="6" fill="#FFFBEB" stroke="#FDE68A"/>
+  <text x="423" y="228" font-size="11" font-weight="700" fill="#B45309">2 · Lọc HIỆU LỰC</text>
+  <text x="423" y="245" font-size="10" fill="#374151">σ ∈ {VALID, REFINED}</text>
+  <text x="423" y="263" font-size="10.5" font-weight="700" fill="#B45309">Loại C6 (INVALIDATED)</text>
+  <text x="423" y="277" font-size="9.5" fill="#92400E">Range chết không được tham gia,</text>
+  <text x="423" y="290" font-size="9.5" fill="#92400E">kể cả khi điểm significance cao</text>
+
+  <rect x="413" y="308" width="208" height="86" rx="6" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="423" y="326" font-size="11" font-weight="700" fill="#1D4ED8">3 · SẮP THỨ TỰ TỪ ĐIỂN</text>
+  <text x="423" y="343" font-size="10" fill="#374151">gate-strength → unswept_count →</text>
+  <text x="423" y="356" font-size="10" fill="#374151">containment → S_score → age</text>
+  <text x="423" y="374" font-size="10.5" font-weight="700" fill="#1D4ED8">C1 &gt; C3 &gt; C4</text>
+  <text x="423" y="388" font-size="9.5" fill="#1E3A8A">age ở khoá CUỐI vì là heuristic</text>
+
+  <rect x="413" y="406" width="208" height="72" rx="6" fill="#F3F4F6" stroke="#D1D5DB"/>
+  <text x="423" y="424" font-size="11" font-weight="700" fill="#111827">Kiểm tra xung đột</text>
+  <text x="423" y="441" font-size="10" fill="#374151">nested_conflict? → size 50% / no-trade</text>
+  <text x="423" y="456" font-size="10" fill="#374151">dol_conflict? → không đổi PRIMARY,</text>
+  <text x="423" y="469" font-size="10" fill="#374151">chỉ hạ confidence</text>
+
+  <!-- ===== column 3: output ===== -->
+  <rect x="646" y="76" width="289" height="414" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="659" y="98" font-size="12.5" font-weight="700" fill="#1F2937">Kết quả</text>
+
+  <rect x="659" y="112" width="263" height="92" rx="7" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.6"/>
+  <text x="671" y="132" font-size="11.5" font-weight="700" fill="#15803D">PRIMARY — C1</text>
+  <text x="671" y="150" font-size="10.5" fill="#374151">20.120 – 20.480 · EQ 20.300</text>
+  <text x="671" y="165" font-size="10.5" fill="#374151">pd = 0.236 → deep discount</text>
+  <text x="671" y="182" font-size="10" fill="#4B5563">Quyết định HƯỚNG được phép</text>
+  <text x="671" y="196" font-size="10" fill="#4B5563">và DOL cấp lớn.</text>
+
+  <rect x="659" y="214" width="263" height="92" rx="7" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1.4"/>
+  <text x="671" y="234" font-size="11.5" font-weight="700" fill="#1D4ED8">SECONDARY — C3</text>
+  <text x="671" y="252" font-size="10.5" fill="#374151">20.238 – 20.395 · range con H1</text>
+  <text x="671" y="267" font-size="10.5" fill="#374151">nằm TRONG PRIMARY</text>
+  <text x="671" y="284" font-size="10" fill="#4B5563">Quyết định THỜI ĐIỂM và điểm vào.</text>
+  <text x="671" y="298" font-size="10" fill="#4B5563">Không có quyền đổi bias.</text>
+
+  <rect x="659" y="316" width="263" height="162" rx="7" fill="#F9FAFB" stroke="#E5E7EB"/>
+  <text x="671" y="336" font-size="11.5" font-weight="700" fill="#6B7280">REJECTED (ghi lý do, không xoá)</text>
+  <text x="671" y="356" font-size="10" fill="#6B7280">C2 — G2 fail (không gánh kết luận nào)</text>
+  <text x="671" y="373" font-size="10" fill="#6B7280">C5 — G1 fail (đáy nến đang chạy)</text>
+  <text x="671" y="390" font-size="10" fill="#6B7280">C7 — G3 fail (sai cấp khung)</text>
+  <text x="671" y="407" font-size="10" fill="#6B7280">C6 — INVALIDATED (protected bị phá)</text>
+  <text x="671" y="424" font-size="10" fill="#6B7280">C4 — thua ở khoá 2 (cả hai đầu spent)</text>
+  <line x1="671" y1="436" x2="910" y2="436" stroke="#E5E7EB"/>
+  <text x="671" y="453" font-size="10" font-weight="700" fill="#B91C1C">Ghi lại lý do loại là bắt buộc:</text>
+  <text x="671" y="467" font-size="10" fill="#6B7280">không có nó, bạn không biết gate nào</text>
+  <text x="671" y="478" font-size="10" fill="#6B7280">đang thực sự loại swing trên dữ liệu của bạn.</text>
+
+  <rect x="25" y="504" width="910" height="76" rx="8" fill="#1F2937" opacity="0.05"/>
+  <text x="38" y="524" font-size="11.5" font-weight="700" fill="#1F2937">Hai tình huống phải xử lý riêng — và cả hai đều là KẾT LUẬN, không phải sự bất lực</text>
+  <text x="38" y="543" font-size="10.5" fill="#374151">(1) Hai range ngang cấp, kết luận pd mâu thuẫn, không range nào vượt trội → ghi <tspan font-weight="700">no-trade / ambiguous_structure</tspan>. Theo cơ chế inventory,</text>
+  <text x="38" y="558" font-size="10.5" fill="#374151">nhiều range cùng hợp lệ mà không range nào có draw rõ nghĩa là <tspan font-weight="700">chưa có delivery nào đang dang dở</tspan> — chưa có gì để trade.</text>
+  <text x="38" y="573" font-size="10.5" fill="#374151">(2) Range nhỏ mâu thuẫn range lớn về pd → <tspan font-weight="700">không phải mâu thuẫn</tspan>: range lớn quyết định HƯỚNG, range nhỏ quyết định THỜI ĐIỂM.</text>
+</svg>

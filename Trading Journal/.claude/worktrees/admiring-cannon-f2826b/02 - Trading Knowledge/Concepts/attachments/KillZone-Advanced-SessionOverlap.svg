@@ -1,0 +1,58 @@
+<svg viewBox="0 0 780 400" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="780" height="400" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Chồng lấp Kill Zone (session overlap) — vùng thanh khoản cao nhất</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Khi hai kill zone chồng lên nhau, khối lượng giao dịch có xu hướng lớn hơn — cần backtest xác nhận trên dữ liệu thật.</text>
+
+  <rect x="24" y="70" width="732" height="240" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- Timeline base 07:00-16:00 NY, scale x=60+((h-7)*74) -->
+  <line x1="60" y1="200" x2="700" y2="200" stroke="#D8DBE2" stroke-width="1.5"/>
+  <g font-size="9.5" fill="#9CA3AF" text-anchor="middle">
+    <text x="60" y="225">07:00</text>
+    <text x="134" y="225">08:00</text>
+    <text x="208" y="225">09:00</text>
+    <text x="282" y="225">10:00</text>
+    <text x="356" y="225">11:00</text>
+    <text x="430" y="225">12:00</text>
+    <text x="504" y="225">13:00</text>
+    <text x="578" y="225">14:00</text>
+    <text x="652" y="225">15:00</text>
+    <text x="700" y="225">16:00</text>
+  </g>
+  <text x="380" y="242" font-size="10" fill="#6B7280" text-anchor="middle">Giờ New York (EST/EDT)</text>
+
+  <!-- NY AM KZ 07:00-10:00 -->
+  <rect x="60" y="100" width="222" height="26" rx="4" fill="#16A34A" opacity="0.25" stroke="#16A34A"/>
+  <text x="171" y="117" font-size="10" font-weight="700" fill="#166534" text-anchor="middle">NY AM Kill Zone (07:00–10:00)</text>
+
+  <!-- London Close KZ 10:00-12:00 -->
+  <rect x="282" y="130" width="148" height="26" rx="4" fill="#3B82F6" opacity="0.22" stroke="#3B82F6"/>
+  <text x="356" y="147" font-size="10" font-weight="700" fill="#1D4ED8" text-anchor="middle">London Close KZ (10:00–12:00)</text>
+
+  <!-- Overlap zone highlight: London-NY broad overlap treated 07:00-10:00 as highest volume; also NY AM / London Close boundary near 10:00 -->
+  <rect x="245" y="90" width="74" height="76" rx="6" fill="#F59E0B" opacity="0.28" stroke="#B45309" stroke-dasharray="4,2"/>
+  <text x="282" y="82" font-size="9" font-weight="700" fill="#92400E" text-anchor="middle">Vùng giao NY AM ↔ London Close</text>
+
+  <!-- NY Lunch dead zone -->
+  <rect x="386" y="130" width="43" height="26" rx="4" fill="#DC2626" opacity="0.15" stroke="#DC2626" stroke-dasharray="3,2"/>
+  <text x="407" y="180" font-size="9" fill="#B91C1C" text-anchor="middle">NY Lunch</text>
+  <text x="407" y="190" font-size="8.5" fill="#B91C1C" text-anchor="middle">(vùng chết)</text>
+
+  <!-- NY PM KZ -->
+  <rect x="504" y="100" width="122" height="26" rx="4" fill="#16A34A" opacity="0.18" stroke="#16A34A"/>
+  <text x="565" y="117" font-size="9.5" font-weight="700" fill="#166534" text-anchor="middle">NY PM KZ (13:30–16:00)</text>
+
+  <!-- annotation arrow -->
+  <text x="171" y="90" font-size="8.5" fill="#166534" text-anchor="middle">London vẫn mở (đến 11:30 giờ London)</text>
+
+  <!-- Relative ranking table -->
+  <rect x="24" y="316" width="732" height="70" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="36" y="332" font-size="11" font-weight="700" fill="#1F2937">Xếp hạng tương đối biến động theo thị trường (định tính — cần backtest cá nhân xác nhận)</text>
+  <line x1="36" y1="340" x2="722" y2="340" stroke="#F3F4F6"/>
+  <text x="42" y="356" font-size="10" fill="#374151">NQ1/NAS100: NY AM (đặc biệt quanh 09:30 mở cửa NYSE) &gt; London Open &gt; London Close &gt; NY PM</text>
+  <text x="42" y="370" font-size="10" fill="#374151">EURUSD/GBPUSD: London Open &amp; vùng chồng lấp NY AM/London Close &gt; NY AM thuần &gt; NY PM</text>
+  <text x="42" y="384" font-size="10" fill="#374151">XAUUSD: NY AM (tin Mỹ, CPI/NFP) &amp; London Open thường biến động mạnh &gt; London Close &gt; NY PM</text>
+
+  <!-- Bottom banner -->
+  <rect x="24" y="0" width="0" height="0"/>
+</svg>

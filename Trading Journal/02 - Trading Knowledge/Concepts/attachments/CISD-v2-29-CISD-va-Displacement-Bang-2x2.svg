@@ -1,0 +1,111 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs></defs>
+<rect x="1" y="1" width="998" height="698" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">CISD và Displacement là hai thứ khác nhau — bảng 2×2</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Displacement = cú di chuyển mạnh, thân nến lớn, thường để lại FVG. CISD = đóng cửa vượt open đầu chặng. Có thể có cái này mà</text>
+<text x="28.0" y="81.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">không có cái kia.</text>
+<rect x="926.2" y="22" width="45.8" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="949.1" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">2×2</text>
+<text x="28.0" y="688.0" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start">Sơ đồ minh họa (synthetic) — giá trong hình là ví dụ, không phải dữ liệu thị trường thật.</text>
+<rect x="28.0" y="108.0" width="270.0" height="270.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="40.0" y="130.0" font-size="13" font-weight="700" fill="#059669" text-anchor="start">CISD + Displacement</text>
+<line x1="54.1" y1="201.8" x2="54.1" y2="239.6" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="47.1" y="207.2" width="14.0" height="27.0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="78.3" y1="228.8" x2="78.3" y2="273.8" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="71.3" y="234.2" width="14.0" height="34.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="102.5" y1="263.0" x2="102.5" y2="308.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="95.5" y="268.4" width="14.0" height="34.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="126.7" y1="299.0" x2="126.7" y2="347.6" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="119.7" y="302.6" width="14.0" height="16.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="150.9" y1="261.2" x2="150.9" y2="324.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="143.9" y="264.8" width="14.0" height="54.0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="175.1" y1="182.0" x2="175.1" y2="270.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="168.1" y="185.6" width="14.0" height="79.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="199.3" y1="178.4" x2="199.3" y2="214.4" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="192.3" y="185.6" width="14.0" height="21.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="223.5" y1="158.6" x2="223.5" y2="210.8" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="216.5" y="164.0" width="14.0" height="43.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="42.0" y1="207.2" x2="284.0" y2="207.2" stroke="#D97706" stroke-width="1.7" stroke-dasharray="6,4"/>
+<text x="282.0" y="202.2" font-size="9.5" font-weight="700" fill="#D97706" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">mức CISD</text>
+<rect x="155.7" y="214.4" width="128.3" height="46.8" rx="2" fill="#F3EEFF" stroke="#7C3AED" stroke-width="1.1" stroke-dasharray="3,2"/>
+<text x="281.0" y="210.4" font-size="9" font-weight="700" fill="#7C3AED" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">FVG</text>
+<rect x="306.0" y="108.0" width="188.0" height="270.0" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.2"/>
+<text x="318.0" y="138.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Nến mạnh đóng vượt mức và</text>
+<text x="318.0" y="154.6" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">để lại FVG. Bằng chứng mạnh</text>
+<text x="318.0" y="171.1" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">nhất trong bốn ô.</text>
+<rect x="506.0" y="108.0" width="270.0" height="270.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="518.0" y="130.0" font-size="13" font-weight="700" fill="#EA580C" text-anchor="start">CISD, KHÔNG displacement</text>
+<line x1="532.1" y1="201.8" x2="532.1" y2="239.6" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="525.1" y="207.2" width="14.0" height="27.0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="556.3" y1="228.8" x2="556.3" y2="273.8" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="549.3" y="234.2" width="14.0" height="34.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="580.5" y1="263.0" x2="580.5" y2="308.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="573.5" y="268.4" width="14.0" height="34.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="604.7" y1="299.0" x2="604.7" y2="347.6" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="597.7" y="302.6" width="14.0" height="16.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="628.9" y1="297.2" x2="628.9" y2="322.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="621.9" y="300.8" width="14.0" height="18.0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="653.1" y1="272.0" x2="653.1" y2="304.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="646.1" y="275.6" width="14.0" height="25.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="677.3" y1="243.2" x2="677.3" y2="279.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="670.3" y="248.6" width="14.0" height="27.0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="701.5" y1="218.0" x2="701.5" y2="254.0" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="694.5" y="221.6" width="14.0" height="27.0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="725.7" y1="200.0" x2="725.7" y2="227.0" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="718.7" y="203.6" width="14.0" height="18.0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="520.0" y1="207.2" x2="762.0" y2="207.2" stroke="#D97706" stroke-width="1.7" stroke-dasharray="6,4"/>
+<text x="760.0" y="202.2" font-size="9.5" font-weight="700" fill="#D97706" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">mức CISD</text>
+<rect x="784.0" y="108.0" width="188.0" height="270.0" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.2"/>
+<text x="796.0" y="138.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Giá “bò” lên từng chút rồi</text>
+<text x="796.0" y="154.6" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">nến cuối đóng vượt sát mức.</text>
+<text x="796.0" y="171.1" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Hợp lệ theo định nghĩa,</text>
+<text x="796.0" y="187.7" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">nhưng yếu: không có dấu vết</text>
+<text x="796.0" y="204.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">lực mạnh.</text>
+<rect x="28.0" y="390.0" width="270.0" height="270.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="40.0" y="412.0" font-size="13" font-weight="700" fill="#2563EB" text-anchor="start">Displacement, KHÔNG CISD</text>
+<line x1="54.1" y1="447.8" x2="54.1" y2="492.8" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="47.1" y="453.2" width="14.0" height="36.0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="78.3" y1="483.8" x2="78.3" y2="521.6" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="71.3" y="489.2" width="14.0" height="27.0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="102.5" y1="510.8" x2="102.5" y2="555.8" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="95.5" y="516.2" width="14.0" height="34.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="126.7" y1="545.0" x2="126.7" y2="590.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="119.7" y="550.4" width="14.0" height="34.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="150.9" y1="581.0" x2="150.9" y2="629.6" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="143.9" y="584.6" width="14.0" height="16.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="175.1" y1="507.2" x2="175.1" y2="604.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="168.1" y="510.8" width="14.0" height="90.0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="199.3" y1="501.8" x2="199.3" y2="525.2" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="192.3" y="510.8" width="14.0" height="9.0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="42.0" y1="453.2" x2="284.0" y2="453.2" stroke="#D97706" stroke-width="1.7" stroke-dasharray="6,4"/>
+<text x="282.0" y="448.2" font-size="9.5" font-weight="700" fill="#D97706" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">mức CISD</text>
+<rect x="155.7" y="525.2" width="128.3" height="55.8" rx="2" fill="#F3EEFF" stroke="#7C3AED" stroke-width="1.1" stroke-dasharray="3,2"/>
+<text x="281.0" y="521.2" font-size="9" font-weight="700" fill="#7C3AED" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">FVG</text>
+<rect x="306.0" y="390.0" width="188.0" height="270.0" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/>
+<text x="318.0" y="420.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Chặng dài bắt đầu ở 108.6.</text>
+<text x="318.0" y="436.6" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Nến xanh rất mạnh (có FVG)</text>
+<text x="318.0" y="453.1" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">nhưng đóng dưới mức. Phản</text>
+<text x="318.0" y="469.7" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">ứng mạnh ≠ delivery đã đổi.</text>
+<rect x="506.0" y="390.0" width="270.0" height="270.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="518.0" y="412.0" font-size="13" font-weight="700" fill="#6B7280" text-anchor="start">Không có cả hai</text>
+<line x1="532.1" y1="483.8" x2="532.1" y2="521.6" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="525.1" y="489.2" width="14.0" height="27.0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="556.3" y1="510.8" x2="556.3" y2="555.8" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="549.3" y="516.2" width="14.0" height="34.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="580.5" y1="545.0" x2="580.5" y2="590.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="573.5" y="550.4" width="14.0" height="34.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="604.7" y1="581.0" x2="604.7" y2="629.6" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="597.7" y="584.6" width="14.0" height="16.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="628.9" y1="573.8" x2="628.9" y2="604.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="621.9" y="579.2" width="14.0" height="21.6" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="653.1" y1="572.0" x2="653.1" y2="597.2" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="646.1" y="579.2" width="14.0" height="12.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="677.3" y1="568.4" x2="677.3" y2="595.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="670.3" y="575.6" width="14.0" height="16.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="520.0" y1="489.2" x2="762.0" y2="489.2" stroke="#D97706" stroke-width="1.7" stroke-dasharray="6,4"/>
+<text x="760.0" y="484.2" font-size="9.5" font-weight="700" fill="#D97706" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">mức CISD</text>
+<rect x="784.0" y="390.0" width="188.0" height="270.0" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="1.2"/>
+<text x="796.0" y="420.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Chỉ là nhịp nảy nhỏ sau cú</text>
+<text x="796.0" y="436.6" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">quét. Không có thông tin</text>
+<text x="796.0" y="453.1" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">mới về delivery.</text>
+</svg>

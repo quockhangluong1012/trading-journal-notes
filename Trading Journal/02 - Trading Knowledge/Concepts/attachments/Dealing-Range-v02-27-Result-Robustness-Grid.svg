@@ -1,0 +1,274 @@
+<svg viewBox="0 0 1280 920" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5ZGY3N2ZmOC03YjE0LTQ0NjUtYjQ0Zi1hM2MxN2IxMTNmMzcAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaIstuDmzVFshlbpeM6dKMhEAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo5NzU0N2U2Zi0yMmI5LTRiMTktYTI4Yy1kMjdjMjQyZTZiNmJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNotuyn6jJdpU1D79lb8JylAAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggvUa3Gb/q+yMee3D6rfAgrqMexBB6rsrYvGsic9L9HZSkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaKs0PHdtv+0EsZ4XlZ/7tzwAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAwUYqvNR9NG6URm9+gJoacHFcTMDwXUDKM4maseVAq6mRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi9Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjlkZjc3ZmY4LTdiMTQtNDQ2NS1iNDRmLWEzYzE3YjExM2YzNy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjJiYzhhMDNkLTZkMzUtNDVkYy1iZWY2LWViYmExZGYxZTJhNXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCC9RrcZv+r7Ix57cPqt8CCuox7EEHquyti8ayJz0v0dlKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggl2Zf02qZsk7wZu87B8TYm9bhv5L8vAzPgvCGbgHvL3iiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggQtFM/I/8VTSfRu4cBEAmVbPeCt4tMLpDc3ebtxEDlMZ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQHkTCDb/l8QhTv0IKoN26xK+8MsJVRXW7UTKBi6slfNF7jR/nltv9Nom+tkJMndZFNzsjMC+7ynnQ2p2PC9ia7c=</c2pa:manifest></metadata>
+  
+  <rect x="0" y="0" width="1280" height="920" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="26.0" y="34.0" font-size="18" font-weight="700" fill="#1F2937">Kết quả 2 — Robustness: P/W theo bin u × định nghĩa range × θ</text>
+  <text x="26.0" y="55.0" font-size="13" fill="#6B7280">● thật (CI 95%), ◇ null. Ô viền cam = CI không chứa 0. Với ~36 phép thử ở mức 5%, kỳ vọng ~1–2 ô &#x27;có ý nghĩa&#x27; chỉ do ngẫu nhiên — và các ô đó không lặp lại qua θ hay qua arm.</text>
+  <text x="26.0" y="225.0" font-size="14" font-weight="700" fill="#1F2937">θ = 1.5</text>
+  <rect x="150.0" y="150.0" width="320.0" height="150.0" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="150.0" y="142.0" font-size="12" font-weight="700" fill="#1F2937">A · Structural leg DR</text>
+  <line x1="150.0" y1="300.0" x2="470.0" y2="300.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="145.0" y="304.0" font-size="9.5" fill="#6B7280" text-anchor="end">-0.10</text>
+  <line x1="150.0" y1="225.0" x2="470.0" y2="225.0" stroke="#374151" stroke-width="1.2"/>
+  <text x="145.0" y="229.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.00</text>
+  <line x1="150.0" y1="150.0" x2="470.0" y2="150.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="145.0" y="154.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.10</text>
+  <line x1="182.0" y1="229.5" x2="182.0" y2="180.7" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="178.0" y1="229.5" x2="186.0" y2="229.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="178.0" y1="180.7" x2="186.0" y2="180.7" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="182.0" cy="205.0" r="4.5" fill="#1D4ED8"/>
+  <polygon points="202.0,221.7 208.0,227.7 202.0,233.7 196.0,227.7" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="262.0" y1="228.5" x2="262.0" y2="185.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="258.0" y1="228.5" x2="266.0" y2="228.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="258.0" y1="185.8" x2="266.0" y2="185.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="262.0" cy="208.9" r="4.5" fill="#1D4ED8"/>
+  <polygon points="282.0,219.3 288.0,225.3 282.0,231.3 276.0,225.3" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="342.0" y1="238.9" x2="342.0" y2="205.7" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="338.0" y1="238.9" x2="346.0" y2="238.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="338.0" y1="205.7" x2="346.0" y2="205.7" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="342.0" cy="222.0" r="4.5" fill="#1D4ED8"/>
+  <polygon points="362.0,216.0 368.0,222.0 362.0,228.0 356.0,222.0" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="422.0" y1="243.4" x2="422.0" y2="213.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="418.0" y1="243.4" x2="426.0" y2="243.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="418.0" y1="213.1" x2="426.0" y2="213.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="422.0" cy="228.8" r="4.5" fill="#1D4ED8"/>
+  <polygon points="442.0,211.4 448.0,217.4 442.0,223.4 436.0,217.4" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <text x="466.0" y="166.0" font-size="9.5" fill="#6B7280" text-anchor="end">mid-bracket M: +0.005</text>
+  <rect x="525.0" y="150.0" width="320.0" height="150.0" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="525.0" y="142.0" font-size="12" font-weight="700" fill="#1F2937">C · IPDA-20 (Donchian)</text>
+  <line x1="525.0" y1="300.0" x2="845.0" y2="300.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="520.0" y="304.0" font-size="9.5" fill="#6B7280" text-anchor="end">-0.10</text>
+  <line x1="525.0" y1="225.0" x2="845.0" y2="225.0" stroke="#374151" stroke-width="1.2"/>
+  <text x="520.0" y="229.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.00</text>
+  <line x1="525.0" y1="150.0" x2="845.0" y2="150.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="520.0" y="154.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.10</text>
+  <line x1="557.0" y1="243.2" x2="557.0" y2="186.0" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="553.0" y1="243.2" x2="561.0" y2="243.2" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="553.0" y1="186.0" x2="561.0" y2="186.0" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="557.0" cy="214.8" r="4.5" fill="#1D4ED8"/>
+  <polygon points="577.0,214.6 583.0,220.6 577.0,226.6 571.0,220.6" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="637.0" y1="257.1" x2="637.0" y2="212.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="633.0" y1="257.1" x2="641.0" y2="257.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="633.0" y1="212.5" x2="641.0" y2="212.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="637.0" cy="234.9" r="4.5" fill="#1D4ED8"/>
+  <polygon points="657.0,218.1 663.0,224.1 657.0,230.1 651.0,224.1" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="717.0" y1="235.5" x2="717.0" y2="201.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="713.0" y1="235.5" x2="721.0" y2="235.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="713.0" y1="201.9" x2="721.0" y2="201.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="717.0" cy="218.9" r="4.5" fill="#1D4ED8"/>
+  <polygon points="737.0,216.7 743.0,222.7 737.0,228.7 731.0,222.7" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="797.0" y1="245.1" x2="797.0" y2="215.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="793.0" y1="245.1" x2="801.0" y2="245.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="793.0" y1="215.8" x2="801.0" y2="215.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="797.0" cy="230.3" r="4.5" fill="#1D4ED8"/>
+  <polygon points="817.0,211.0 823.0,217.0 817.0,223.0 811.0,217.0" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <rect x="900.0" y="150.0" width="320.0" height="150.0" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="900.0" y="142.0" font-size="12" font-weight="700" fill="#1F2937">E · Anchor ngẫu nhiên</text>
+  <line x1="900.0" y1="300.0" x2="1220.0" y2="300.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="895.0" y="304.0" font-size="9.5" fill="#6B7280" text-anchor="end">-0.10</text>
+  <line x1="900.0" y1="225.0" x2="1220.0" y2="225.0" stroke="#374151" stroke-width="1.2"/>
+  <text x="895.0" y="229.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.00</text>
+  <line x1="900.0" y1="150.0" x2="1220.0" y2="150.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="895.0" y="154.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.10</text>
+  <line x1="932.0" y1="244.7" x2="932.0" y2="212.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="928.0" y1="244.7" x2="936.0" y2="244.7" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="928.0" y1="212.4" x2="936.0" y2="212.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="932.0" cy="228.8" r="4.5" fill="#1D4ED8"/>
+  <polygon points="952.0,219.5 958.0,225.5 952.0,231.5 946.0,225.5" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="1012.0" y1="239.8" x2="1012.0" y2="194.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1008.0" y1="239.8" x2="1016.0" y2="239.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1008.0" y1="194.4" x2="1016.0" y2="194.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="1012.0" cy="216.4" r="4.5" fill="#1D4ED8"/>
+  <polygon points="1032.0,217.5 1038.0,223.5 1032.0,229.5 1026.0,223.5" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="1092.0" y1="249.6" x2="1092.0" y2="206.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1088.0" y1="249.6" x2="1096.0" y2="249.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1088.0" y1="206.1" x2="1096.0" y2="206.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="1092.0" cy="228.6" r="4.5" fill="#1D4ED8"/>
+  <polygon points="1112.0,223.1 1118.0,229.1 1112.0,235.1 1106.0,229.1" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="1172.0" y1="229.1" x2="1172.0" y2="204.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1168.0" y1="229.1" x2="1176.0" y2="229.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1168.0" y1="204.5" x2="1176.0" y2="204.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="1172.0" cy="216.8" r="4.5" fill="#1D4ED8"/>
+  <polygon points="1192.0,209.0 1198.0,215.0 1192.0,221.0 1186.0,215.0" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <text x="26.0" y="445.0" font-size="14" font-weight="700" fill="#1F2937">θ = 2</text>
+  <rect x="150.0" y="370.0" width="320.0" height="150.0" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="150.0" y1="520.0" x2="470.0" y2="520.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="145.0" y="524.0" font-size="9.5" fill="#6B7280" text-anchor="end">-0.10</text>
+  <line x1="150.0" y1="445.0" x2="470.0" y2="445.0" stroke="#374151" stroke-width="1.2"/>
+  <text x="145.0" y="449.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.00</text>
+  <line x1="150.0" y1="370.0" x2="470.0" y2="370.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="145.0" y="374.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.10</text>
+  <line x1="182.0" y1="460.8" x2="182.0" y2="409.2" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="178.0" y1="460.8" x2="186.0" y2="460.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="178.0" y1="409.2" x2="186.0" y2="409.2" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="182.0" cy="434.8" r="4.5" fill="#1D4ED8"/>
+  <polygon points="202.0,431.3 208.0,437.3 202.0,443.3 196.0,437.3" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="262.0" y1="458.0" x2="262.0" y2="411.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="258.0" y1="458.0" x2="266.0" y2="458.0" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="258.0" y1="411.1" x2="266.0" y2="411.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="262.0" cy="435.0" r="4.5" fill="#1D4ED8"/>
+  <polygon points="282.0,445.8 288.0,451.8 282.0,457.8 276.0,451.8" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="342.0" y1="464.1" x2="342.0" y2="427.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="338.0" y1="464.1" x2="346.0" y2="464.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="338.0" y1="427.8" x2="346.0" y2="427.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="342.0" cy="445.3" r="4.5" fill="#1D4ED8"/>
+  <polygon points="362.0,443.3 368.0,449.3 362.0,455.3 356.0,449.3" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="422.0" y1="466.9" x2="422.0" y2="433.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="418.0" y1="466.9" x2="426.0" y2="466.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="418.0" y1="433.6" x2="426.0" y2="433.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="422.0" cy="450.2" r="4.5" fill="#1D4ED8"/>
+  <polygon points="442.0,442.4 448.0,448.4 442.0,454.4 436.0,448.4" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <text x="466.0" y="386.0" font-size="9.5" fill="#6B7280" text-anchor="end">mid-bracket M: +0.006</text>
+  <rect x="525.0" y="370.0" width="320.0" height="150.0" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="525.0" y1="520.0" x2="845.0" y2="520.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="520.0" y="524.0" font-size="9.5" fill="#6B7280" text-anchor="end">-0.10</text>
+  <line x1="525.0" y1="445.0" x2="845.0" y2="445.0" stroke="#374151" stroke-width="1.2"/>
+  <text x="520.0" y="449.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.00</text>
+  <line x1="525.0" y1="370.0" x2="845.0" y2="370.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="520.0" y="374.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.10</text>
+  <line x1="557.0" y1="477.4" x2="557.0" y2="422.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="553.0" y1="477.4" x2="561.0" y2="477.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="553.0" y1="422.5" x2="561.0" y2="422.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="557.0" cy="450.0" r="4.5" fill="#1D4ED8"/>
+  <polygon points="577.0,426.3 583.0,432.3 577.0,438.3 571.0,432.3" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="637.0" y1="469.3" x2="637.0" y2="421.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="633.0" y1="469.3" x2="641.0" y2="469.3" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="633.0" y1="421.6" x2="641.0" y2="421.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="637.0" cy="445.7" r="4.5" fill="#1D4ED8"/>
+  <polygon points="657.0,445.8 663.0,451.8 657.0,457.8 651.0,451.8" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="717.0" y1="463.5" x2="717.0" y2="424.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="713.0" y1="463.5" x2="721.0" y2="463.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="713.0" y1="424.8" x2="721.0" y2="424.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="717.0" cy="443.9" r="4.5" fill="#1D4ED8"/>
+  <polygon points="737.0,443.2 743.0,449.2 737.0,455.2 731.0,449.2" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="797.0" y1="473.8" x2="797.0" y2="437.0" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="793.0" y1="473.8" x2="801.0" y2="473.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="793.0" y1="437.0" x2="801.0" y2="437.0" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="797.0" cy="455.0" r="4.5" fill="#1D4ED8"/>
+  <polygon points="817.0,436.6 823.0,442.6 817.0,448.6 811.0,442.6" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <rect x="900.0" y="370.0" width="320.0" height="150.0" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="900.0" y1="520.0" x2="1220.0" y2="520.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="895.0" y="524.0" font-size="9.5" fill="#6B7280" text-anchor="end">-0.10</text>
+  <line x1="900.0" y1="445.0" x2="1220.0" y2="445.0" stroke="#374151" stroke-width="1.2"/>
+  <text x="895.0" y="449.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.00</text>
+  <line x1="900.0" y1="370.0" x2="1220.0" y2="370.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="895.0" y="374.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.10</text>
+  <line x1="932.0" y1="464.5" x2="932.0" y2="429.7" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="928.0" y1="464.5" x2="936.0" y2="464.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="928.0" y1="429.7" x2="936.0" y2="429.7" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="932.0" cy="447.8" r="4.5" fill="#1D4ED8"/>
+  <polygon points="952.0,447.8 958.0,453.8 952.0,459.8 946.0,453.8" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="1012.0" y1="477.5" x2="1012.0" y2="428.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1008.0" y1="477.5" x2="1016.0" y2="477.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1008.0" y1="428.6" x2="1016.0" y2="428.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="1012.0" cy="454.0" r="4.5" fill="#1D4ED8"/>
+  <polygon points="1032.0,446.0 1038.0,452.0 1032.0,458.0 1026.0,452.0" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="1092.0" y1="463.9" x2="1092.0" y2="418.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1088.0" y1="463.9" x2="1096.0" y2="463.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1088.0" y1="418.1" x2="1096.0" y2="418.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="1092.0" cy="440.3" r="4.5" fill="#1D4ED8"/>
+  <polygon points="1112.0,435.9 1118.0,441.9 1112.0,447.9 1106.0,441.9" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="1172.0" y1="458.6" x2="1172.0" y2="432.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1168.0" y1="458.6" x2="1176.0" y2="458.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1168.0" y1="432.1" x2="1176.0" y2="432.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="1172.0" cy="445.0" r="4.5" fill="#1D4ED8"/>
+  <polygon points="1192.0,432.8 1198.0,438.8 1192.0,444.8 1186.0,438.8" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <text x="26.0" y="665.0" font-size="14" font-weight="700" fill="#1F2937">θ = 3</text>
+  <rect x="150.0" y="590.0" width="320.0" height="150.0" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="150.0" y1="740.0" x2="470.0" y2="740.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="145.0" y="744.0" font-size="9.5" fill="#6B7280" text-anchor="end">-0.10</text>
+  <line x1="150.0" y1="665.0" x2="470.0" y2="665.0" stroke="#374151" stroke-width="1.2"/>
+  <text x="145.0" y="669.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.00</text>
+  <line x1="150.0" y1="590.0" x2="470.0" y2="590.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="145.0" y="594.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.10</text>
+  <text x="190.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">0–.25</text>
+  <text x="270.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">.25–.5</text>
+  <text x="350.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">.5–.75</text>
+  <text x="430.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">.75–1</text>
+  <line x1="182.0" y1="694.4" x2="182.0" y2="636.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="178.0" y1="694.4" x2="186.0" y2="694.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="178.0" y1="636.4" x2="186.0" y2="636.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="182.0" cy="664.4" r="4.5" fill="#1D4ED8"/>
+  <polygon points="202.0,648.1 208.0,654.1 202.0,660.1 196.0,654.1" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="262.0" y1="681.6" x2="262.0" y2="630.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="258.0" y1="681.6" x2="266.0" y2="681.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="258.0" y1="630.8" x2="266.0" y2="630.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="262.0" cy="655.9" r="4.5" fill="#1D4ED8"/>
+  <polygon points="282.0,654.6 288.0,660.6 282.0,666.6 276.0,660.6" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="342.0" y1="669.5" x2="342.0" y2="627.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="338.0" y1="669.5" x2="346.0" y2="669.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="338.0" y1="627.6" x2="346.0" y2="627.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="342.0" cy="649.5" r="4.5" fill="#1D4ED8"/>
+  <polygon points="362.0,662.5 368.0,668.5 362.0,674.5 356.0,668.5" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="422.0" y1="684.7" x2="422.0" y2="645.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="418.0" y1="684.7" x2="426.0" y2="684.7" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="418.0" y1="645.6" x2="426.0" y2="645.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="422.0" cy="665.2" r="4.5" fill="#1D4ED8"/>
+  <polygon points="442.0,655.7 448.0,661.7 442.0,667.7 436.0,661.7" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <text x="466.0" y="606.0" font-size="9.5" fill="#6B7280" text-anchor="end">mid-bracket M: +0.003</text>
+  <rect x="525.0" y="590.0" width="320.0" height="150.0" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="525.0" y1="740.0" x2="845.0" y2="740.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="520.0" y="744.0" font-size="9.5" fill="#6B7280" text-anchor="end">-0.10</text>
+  <line x1="525.0" y1="665.0" x2="845.0" y2="665.0" stroke="#374151" stroke-width="1.2"/>
+  <text x="520.0" y="669.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.00</text>
+  <line x1="525.0" y1="590.0" x2="845.0" y2="590.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="520.0" y="594.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.10</text>
+  <text x="565.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">0–.25</text>
+  <text x="645.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">.25–.5</text>
+  <text x="725.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">.5–.75</text>
+  <text x="805.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">.75–1</text>
+  <line x1="557.0" y1="701.9" x2="557.0" y2="645.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="553.0" y1="701.9" x2="561.0" y2="701.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="553.0" y1="645.9" x2="561.0" y2="645.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="557.0" cy="674.6" r="4.5" fill="#1D4ED8"/>
+  <polygon points="577.0,631.4 583.0,637.4 577.0,643.4 571.0,637.4" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="637.0" y1="696.9" x2="637.0" y2="642.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="633.0" y1="696.9" x2="641.0" y2="696.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="633.0" y1="642.1" x2="641.0" y2="642.1" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="637.0" cy="668.5" r="4.5" fill="#1D4ED8"/>
+  <polygon points="657.0,666.1 663.0,672.1 657.0,678.1 651.0,672.1" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="717.0" y1="680.9" x2="717.0" y2="630.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="713.0" y1="680.9" x2="721.0" y2="680.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="713.0" y1="630.9" x2="721.0" y2="630.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="717.0" cy="655.9" r="4.5" fill="#1D4ED8"/>
+  <polygon points="737.0,651.5 743.0,657.5 737.0,663.5 731.0,657.5" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <rect x="775.0" y="593.0" width="60.0" height="144.0" rx="5" fill="none" stroke="#D97706" stroke-width="2"/>
+  <line x1="797.0" y1="725.5" x2="797.0" y2="665.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="793.0" y1="725.5" x2="801.0" y2="725.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="793.0" y1="665.4" x2="801.0" y2="665.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="797.0" cy="695.3" r="4.5" fill="#1D4ED8"/>
+  <polygon points="817.0,651.0 823.0,657.0 817.0,663.0 811.0,657.0" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <rect x="900.0" y="590.0" width="320.0" height="150.0" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <line x1="900.0" y1="740.0" x2="1220.0" y2="740.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="895.0" y="744.0" font-size="9.5" fill="#6B7280" text-anchor="end">-0.10</text>
+  <line x1="900.0" y1="665.0" x2="1220.0" y2="665.0" stroke="#374151" stroke-width="1.2"/>
+  <text x="895.0" y="669.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.00</text>
+  <line x1="900.0" y1="590.0" x2="1220.0" y2="590.0" stroke="#D8DBE2" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="895.0" y="594.0" font-size="9.5" fill="#6B7280" text-anchor="end">+0.10</text>
+  <text x="940.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">0–.25</text>
+  <text x="1020.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">.25–.5</text>
+  <text x="1100.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">.5–.75</text>
+  <text x="1180.0" y="754.0" font-size="10" fill="#374151" text-anchor="middle">.75–1</text>
+  <line x1="932.0" y1="666.4" x2="932.0" y2="618.0" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="928.0" y1="666.4" x2="936.0" y2="666.4" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="928.0" y1="618.0" x2="936.0" y2="618.0" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="932.0" cy="641.9" r="4.5" fill="#1D4ED8"/>
+  <polygon points="952.0,663.1 958.0,669.1 952.0,675.1 946.0,669.1" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="1012.0" y1="694.9" x2="1012.0" y2="635.7" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1008.0" y1="694.9" x2="1016.0" y2="694.9" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1008.0" y1="635.7" x2="1016.0" y2="635.7" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="1012.0" cy="666.8" r="4.5" fill="#1D4ED8"/>
+  <polygon points="1032.0,646.1 1038.0,652.1 1032.0,658.1 1026.0,652.1" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <rect x="1070.0" y="593.0" width="60.0" height="144.0" rx="5" fill="none" stroke="#D97706" stroke-width="2"/>
+  <line x1="1092.0" y1="656.8" x2="1092.0" y2="599.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1088.0" y1="656.8" x2="1096.0" y2="656.8" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1088.0" y1="599.5" x2="1096.0" y2="599.5" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="1092.0" cy="628.4" r="4.5" fill="#1D4ED8"/>
+  <polygon points="1112.0,667.5 1118.0,673.5 1112.0,679.5 1106.0,673.5" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <line x1="1172.0" y1="682.6" x2="1172.0" y2="650.0" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1168.0" y1="682.6" x2="1176.0" y2="682.6" stroke="#1D4ED8" stroke-width="1.6"/>
+  <line x1="1168.0" y1="650.0" x2="1176.0" y2="650.0" stroke="#1D4ED8" stroke-width="1.6"/>
+  <circle cx="1172.0" cy="665.4" r="4.5" fill="#1D4ED8"/>
+  <polygon points="1192.0,650.8 1198.0,656.8 1192.0,662.8 1186.0,656.8" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+  <text x="150.0" y="820.0" font-size="12.5" font-weight="700" fill="#D97706">Tổng: 2/36 ô có CI không chứa 0 (kỳ vọng do ngẫu nhiên ≈ 1.8).</text>
+  <text x="150.0" y="842.0" font-size="12" fill="#374151">Không có định nghĩa range nào (structural / IPDA-20 / ngẫu nhiên) cho P/W khác 0 một cách nhất quán → chọn anchor &#x27;đúng&#x27; không tự tạo edge vị trí.</text>
+</svg>

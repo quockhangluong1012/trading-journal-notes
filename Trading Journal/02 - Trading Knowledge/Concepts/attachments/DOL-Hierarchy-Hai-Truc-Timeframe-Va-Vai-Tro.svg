@@ -1,0 +1,90 @@
+<svg viewBox="0 0 860 580" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="580" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Hai trục của DOL hierarchy — và vì sao gộp chúng là nguồn gốc nhầm lẫn</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Trục A trả lời "ai có quyền phủ quyết". Trục B trả lời "cái gì chạm trước". Hai trục KHÔNG đồng nhất.</text>
+
+  <text x="24" y="78" font-size="10" font-style="italic" fill="#9CA3AF">[ANALYTICAL FRAMEWORK] — Primary/Secondary/Intermediate/Final là khung do chúng ta xây, không phải terminology chính thức của ICT.</text>
+
+  <!-- ============ AXIS A ============ -->
+  <rect x="24" y="94" width="392" height="330" rx="8" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="1.8"/>
+  <rect x="24" y="94" width="392" height="34" rx="8" fill="#DBEAFE"/>
+  <text x="220" y="117" font-size="12.5" font-weight="700" fill="#1D4ED8" text-anchor="middle">TRỤC A — TIMEFRAME (quyền phủ quyết)</text>
+
+  <!-- levels -->
+  <rect x="48" y="144" width="344" height="42" rx="6" fill="#EFF6FF" stroke="#1D4ED8"/>
+  <text x="62" y="162" font-size="11.5" font-weight="700" fill="#1E40AF">Monthly / Weekly DOL</text>
+  <text x="62" y="178" font-size="9.5" fill="#1E3A8A">quyền phủ quyết về HƯỚNG và SIZE</text>
+
+  <line x1="220" y1="188" x2="220" y2="200" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="220,204 215,194 225,194" fill="#6B7280"/>
+
+  <rect x="48" y="206" width="344" height="42" rx="6" fill="#DBEAFE" stroke="#1D4ED8"/>
+  <text x="62" y="224" font-size="11.5" font-weight="700" fill="#1E40AF">Daily DOL</text>
+  <text x="62" y="240" font-size="9.5" fill="#1E3A8A">chọn FINAL objective của ngày</text>
+
+  <line x1="220" y1="250" x2="220" y2="262" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="220,266 215,256 225,256" fill="#6B7280"/>
+
+  <rect x="48" y="268" width="344" height="42" rx="6" fill="#FFFFFF" stroke="#93C5FD"/>
+  <text x="62" y="286" font-size="11.5" font-weight="700" fill="#1D4ED8">H1 DOL</text>
+  <text x="62" y="302" font-size="9.5" fill="#4B5563">chọn INTERMEDIATE objective</text>
+
+  <line x1="220" y1="312" x2="220" y2="324" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="220,328 215,318 225,318" fill="#6B7280"/>
+
+  <rect x="48" y="330" width="344" height="42" rx="6" fill="#F3F4F6" stroke="#9CA3AF"/>
+  <text x="62" y="348" font-size="11.5" font-weight="700" fill="#4B5563">M5 DOL</text>
+  <text x="62" y="364" font-size="9.5" fill="#6B7280">chỉ TIMING — gần như không có quyền</text>
+
+  <text x="48" y="398" font-size="10" font-weight="700" fill="#1D4ED8">Quyền phủ quyết ≠ quyền thay thế.</text>
+  <text x="48" y="414" font-size="10" fill="#4B5563">HTF quyết định hướng + size; LTF quyết định entry.</text>
+
+  <!-- ============ AXIS B ============ -->
+  <rect x="444" y="94" width="392" height="330" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.8"/>
+  <rect x="444" y="94" width="392" height="34" rx="8" fill="#DCFCE7"/>
+  <text x="640" y="117" font-size="12.5" font-weight="700" fill="#15803D" text-anchor="middle">TRỤC B — VAI TRÒ TRONG LEG (cái gì chạm trước)</text>
+
+  <rect x="468" y="144" width="344" height="56" rx="6" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="482" y="164" font-size="11.5" font-weight="700" fill="#15803D">INTERMEDIATE OBJECTIVE (T1)</text>
+  <text x="482" y="181" font-size="9.5" fill="#166534">pool gần, chạm trước → dùng PARTIAL (ví dụ 50%)</text>
+
+  <line x1="640" y1="204" x2="640" y2="224" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="640,228 635,218 645,218" fill="#6B7280"/>
+
+  <rect x="468" y="232" width="344" height="56" rx="6" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="482" y="252" font-size="11.5" font-weight="700" fill="#15803D">FINAL OBJECTIVE (T2)</text>
+  <text x="482" y="269" font-size="9.5" fill="#166534">pool xa, kết thúc leg → dùng RUNNER</text>
+
+  <!-- CROSS-AXIS WARNING -->
+  <rect x="468" y="304" width="344" height="52" rx="6" fill="#FEF2F2" stroke="#DC2626"/>
+  <text x="482" y="324" font-size="10.5" font-weight="700" fill="#B91C1C">hai trục KHÔNG đồng nhất:</text>
+  <text x="482" y="341" font-size="9.5" fill="#7F1D1D">T1 có thể là D1 DOL (nếu gần); T2 có thể là H1 DOL (nếu range lớn).</text>
+
+  <text x="468" y="380" font-size="10" font-weight="700" fill="#15803D">T1 và T2 BẮT BUỘC cùng hướng.</text>
+  <text x="468" y="396" font-size="10" fill="#4B5563">Nếu "T1" và "T2" nằm hai phía, đó không phải hai tầng</text>
+  <text x="468" y="412" font-size="10" fill="#4B5563">target — đó là hai kịch bản trái ngược = tự bảo hiểm.</text>
+
+  <!-- ============ BOTTOM: CONFLICT MODES ============ -->
+  <rect x="24" y="440" width="812" height="124" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="44" y="464" font-size="12.5" font-weight="700" fill="#334155">BỐN CHẾ ĐỘ PHÂN GIẢI CONFLICT — và chế độ thứ năm bị CẤM</text>
+
+  <rect x="44" y="476" width="186" height="42" rx="6" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="137" y="494" font-size="10.5" font-weight="700" fill="#15803D" text-anchor="middle">A — PATH SPLIT</text>
+  <text x="137" y="509" font-size="9" fill="#166534" text-anchor="middle">LTF là waypoint trên đường tới HTF</text>
+
+  <rect x="240" y="476" width="186" height="42" rx="6" fill="#FEF3C7" stroke="#D97706"/>
+  <text x="333" y="494" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">B — HTF VETO</text>
+  <text x="333" y="509" font-size="9" fill="#92400E" text-anchor="middle">T1 only, nửa size, hoặc no-trade</text>
+
+  <rect x="436" y="476" width="186" height="42" rx="6" fill="#F3F4F6" stroke="#6B7280"/>
+  <text x="529" y="494" font-size="10.5" font-weight="700" fill="#374151" text-anchor="middle">C — NEUTRAL</text>
+  <text x="529" y="509" font-size="9" fill="#4B5563" text-anchor="middle">hai phía tương đương → no-trade</text>
+
+  <rect x="632" y="476" width="186" height="42" rx="6" fill="#EFF6FF" stroke="#1D4ED8"/>
+  <text x="725" y="494" font-size="10.5" font-weight="700" fill="#1D4ED8" text-anchor="middle">D — RE-SELECT</text>
+  <text x="725" y="509" font-size="9" fill="#1E3A8A" text-anchor="middle">có structural event mới → xây lại</text>
+
+  <rect x="44" y="528" width="774" height="40" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-dasharray="5 3"/>
+  <text x="58" y="544" font-size="10.5" font-weight="700" fill="#B91C1C">✗ CHẾ ĐỘ THỨ NĂM (CẤM): "giữ nguyên DOL cũ nhưng diễn giải lại"</text>
+  <text x="58" y="560" font-size="10" fill="#991B1B">Giá đi ngược và vượt invalidation, nhưng DOL vẫn được coi là còn hiệu lực. Đây là narrative tự chữa mình, không phải phân tích.</text>
+</svg>

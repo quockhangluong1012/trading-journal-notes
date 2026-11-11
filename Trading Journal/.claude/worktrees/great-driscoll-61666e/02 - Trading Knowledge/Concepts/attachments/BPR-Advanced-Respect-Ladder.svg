@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Thang phản ứng tại Bullish BPR — từ Respect tới Invalidation</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Độ sâu giá "ăn" vào BPR là THÔNG TIN: càng nông càng mạnh; đóng nến xuyên hết = order flow đã đổi.</text>
+
+  <!-- shared BPR band template, 4 panels -->
+  <!-- Panel 1 -->
+  <rect x="24" y="76" width="172" height="280" rx="8" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="36" y="99" font-size="12" font-weight="700" fill="#166534">Respect tại CE</text>
+  <rect x="44" y="180" width="132" height="70" fill="#7C3AED" opacity="0.2"/>
+  <line x1="44" y1="215" x2="176" y2="215" stroke="#5B21B6" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <path d="M60,120 L85,180 L105,212 L120,190 L140,140 L160,110" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="105" cy="212" r="5" fill="#16A34A"/>
+  <text x="36" y="290" font-size="10.5" fill="#374151">Chạm CE rồi bật với</text>
+  <text x="36" y="304" font-size="10.5" fill="#374151">displacement ngược.</text>
+  <text x="36" y="326" font-size="10.5" font-weight="700" fill="#166534">Mạnh nhất — entry chuẩn.</text>
+
+  <!-- Panel 2 -->
+  <rect x="208" y="76" width="172" height="280" rx="8" fill="#FFFFFF" stroke="#84CC16"/>
+  <text x="220" y="99" font-size="12" font-weight="700" fill="#4D7C0F">Partial respect (mép)</text>
+  <rect x="228" y="180" width="132" height="70" fill="#7C3AED" opacity="0.2"/>
+  <line x1="228" y1="215" x2="360" y2="215" stroke="#5B21B6" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <path d="M244,120 L268,182 L285,196 L300,185 L322,150 L346,115" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="285" cy="196" r="5" fill="#84CC16"/>
+  <text x="220" y="290" font-size="10.5" fill="#374151">Chỉ nhúng mép trên, chưa</text>
+  <text x="220" y="304" font-size="10.5" fill="#374151">tới CE đã bật.</text>
+  <text x="220" y="326" font-size="10.5" font-weight="700" fill="#4D7C0F">Rất mạnh — nhưng dễ lỡ entry.</text>
+
+  <!-- Panel 3 -->
+  <rect x="392" y="76" width="172" height="280" rx="8" fill="#FFFFFF" stroke="#F59E0B"/>
+  <text x="404" y="99" font-size="12" font-weight="700" fill="#B45309">Full fill (lấp hết)</text>
+  <rect x="412" y="180" width="132" height="70" fill="#7C3AED" opacity="0.2"/>
+  <line x1="412" y1="215" x2="544" y2="215" stroke="#5B21B6" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <path d="M428,120 L452,190 L470,248 L488,230 L505,195 L530,140" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="470" cy="248" r="5" fill="#F59E0B"/>
+  <text x="404" y="290" font-size="10.5" fill="#374151">Wick chạm đáy BPR (chưa</text>
+  <text x="404" y="304" font-size="10.5" fill="#374151">đóng xuyên) rồi mới bật.</text>
+  <text x="404" y="326" font-size="10.5" font-weight="700" fill="#B45309">Yếu — đòi LTF MSS mới vào.</text>
+
+  <!-- Panel 4 -->
+  <rect x="576" y="76" width="160" height="280" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="588" y="99" font-size="12" font-weight="700" fill="#B91C1C">Invalidation</text>
+  <rect x="594" y="180" width="128" height="70" fill="#7C3AED" opacity="0.2"/>
+  <path d="M608,120 L630,190 L646,260 L662,300 L690,330" fill="none" stroke="#374151" stroke-width="2"/>
+  <rect x="640" y="252" width="2" height="70" fill="#DC2626"/>
+  <rect x="634" y="258" width="14" height="56" fill="#DC2626" rx="1"/>
+  <text x="588" y="290" font-size="10.5" fill="#374151" transform="translate(0,50)">Body ĐÓNG dưới toàn bộ</text>
+  <text x="588" y="304" font-size="10.5" fill="#374151" transform="translate(0,50)">BPR + giữ giá ngoài vùng.</text>
+  <text x="588" y="130" font-size="10.5" font-weight="700" fill="#B91C1C">Hết hiệu lực — không</text>
+  <text x="588" y="144" font-size="10.5" font-weight="700" fill="#B91C1C">giữ lệnh ngược. Vùng có</text>
+  <text x="588" y="158" font-size="10.5" font-weight="700" fill="#B91C1C">thể đảo vai (như iFVG).</text>
+
+  <rect x="24" y="372" width="712" height="40" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="388" font-size="11.5" font-weight="700" fill="#92400E">Quy tắc đọc: mức độ "ăn sâu" tỷ lệ nghịch với sức mạnh phe bảo vệ vùng. Respect tại CE cho phép entry trực tiếp;</text>
+  <text x="36" y="404" font-size="11.5" font-weight="700" fill="#92400E">full fill bắt buộc chờ LTF MSS; đóng nến xuyên hết = lật kịch bản, tìm setup theo hướng ngược (iFVG logic).</text>
+</svg>

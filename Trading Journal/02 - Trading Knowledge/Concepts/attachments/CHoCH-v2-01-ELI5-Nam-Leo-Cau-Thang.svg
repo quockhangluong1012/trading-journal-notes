@@ -1,0 +1,115 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="0.8" y="0.8" width="998.5" height="598.5" rx="14" fill="#FBFBFD" stroke="#DADDE3" stroke-width="1.5"/>
+<text x="28.0" y="42.0" font-size="20" font-weight="700" fill="#111827">CHoCH cho bé 5 tuổi: bạn Nam leo cầu thang kiểu “tiến ba, lùi một”</text>
+<rect x="923.4" y="23.0" width="48.6" height="24.0" rx="12" fill="#F3F4F6" stroke="#DADDE3" stroke-width="1"/>
+<text x="947.7" y="39.5" font-size="10.5" font-weight="700" fill="#4B5563" text-anchor="middle">ELI5</text>
+<text x="28.0" y="66.0" font-size="13" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Nam leo lên ba bậc rồi lùi một bậc để nghỉ, cứ thế mãi. Hãy để ý cái bậc Nam dùng để lấy đà cho lần leo gần nhất (màu cam).</text>
+<rect x="28.0" y="92.5" width="227.0" height="452.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<circle cx="52.0" cy="113.5" r="10.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="52.0" y="117.4" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="69.0" y="118.0" font-size="13.5" font-weight="700" fill="#111827" data-bx="68.0,244.0">Leo đều: thói quen rất rõ</text>
+<polyline points="46.0,434.5 46.0,409.5 70.0,409.5 70.0,384.5 94.0,384.5 94.0,359.5 118.0,359.5 118.0,334.5 142.0,334.5 142.0,309.5 166.0,309.5 166.0,284.5 190.0,284.5 190.0,259.5 214.0,259.5 214.0,234.5 238.0,234.5" fill="none" stroke="#9CA3AF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="94.0" y1="359.5" x2="118.0" y2="359.5" stroke="#B45309" stroke-width="5" stroke-linecap="round"/>
+<line x1="90.0" y1="359.5" x2="243.0" y2="359.5" stroke="#B45309" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4,3"/>
+<text x="241.0" y="374.5" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="end">bậc lấy đà</text>
+<polyline points="58.0,406.5 130.0,331.5 106.0,356.5 178.0,281.5 154.0,306.5 226.0,231.5" fill="none" stroke="#111827" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle cx="58.0" cy="406.5" r="3.2" fill="#6B7280"/>
+<circle cx="130.0" cy="331.5" r="3.2" fill="#6B7280"/>
+<circle cx="106.0" cy="356.5" r="3.2" fill="#6B7280"/>
+<circle cx="178.0" cy="281.5" r="3.2" fill="#6B7280"/>
+<circle cx="154.0" cy="306.5" r="3.2" fill="#6B7280"/>
+<circle cx="226.0" cy="205.0" r="5.7" fill="#111827"/>
+<line x1="226.0" y1="210.7" x2="226.0" y2="223.0" stroke="#111827" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="226.0" y1="223.0" x2="221.2" y2="233.5" stroke="#111827" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="226.0" y1="223.0" x2="230.8" y2="233.5" stroke="#111827" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="226.0" y1="213.5" x2="219.3" y2="204.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="226.0" y1="213.5" x2="232.7" y2="204.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<text x="176.0" y="241.5" font-size="10" font-weight="700" fill="#2563EB" text-anchor="middle">cao nhất</text>
+<text x="156.0" y="324.5" font-size="10" font-weight="700" fill="#0E9F6E" text-anchor="middle">chỗ nghỉ</text>
+<text x="42.0" y="464.5" font-size="12" font-weight="400" fill="#111827" data-bx="41.0,242.0">Mỗi lần lùi, Nam vẫn đứng cao</text>
+<text x="42.0" y="481.5" font-size="12" font-weight="400" fill="#111827" data-bx="41.0,242.0">hơn chỗ nghỉ lần trước. Mỗi lần</text>
+<text x="42.0" y="498.5" font-size="12" font-weight="400" fill="#111827" data-bx="41.0,242.0">leo, Nam lên cao hơn lần trước.</text>
+<text x="42.0" y="515.6" font-size="12" font-weight="400" fill="#111827" data-bx="41.0,242.0">Đó là “tính cách” leo lên.</text>
+<rect x="267.0" y="92.5" width="227.0" height="452.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<circle cx="291.0" cy="113.5" r="10.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="291.0" y="117.4" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="308.0" y="118.0" font-size="13.5" font-weight="700" fill="#111827" data-bx="307.0,483.0">Lùi hơi nhiều — vẫn chưa</text>
+<text x="308.0" y="135.5" font-size="13.5" font-weight="700" fill="#111827" data-bx="307.0,483.0">đổi</text>
+<polyline points="285.0,434.5 285.0,409.5 309.0,409.5 309.0,384.5 333.0,384.5 333.0,359.5 357.0,359.5 357.0,334.5 381.0,334.5 381.0,309.5 405.0,309.5 405.0,284.5 429.0,284.5 429.0,259.5 453.0,259.5 453.0,234.5 477.0,234.5" fill="none" stroke="#9CA3AF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="333.0" y1="359.5" x2="357.0" y2="359.5" stroke="#B45309" stroke-width="5" stroke-linecap="round"/>
+<line x1="329.0" y1="359.5" x2="482.0" y2="359.5" stroke="#B45309" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4,3"/>
+<text x="480.0" y="374.5" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="end">bậc lấy đà</text>
+<polyline points="297.0,406.5 369.0,331.5 345.0,356.5 417.0,281.5 369.0,331.5" fill="none" stroke="#111827" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle cx="297.0" cy="406.5" r="3.2" fill="#6B7280"/>
+<circle cx="369.0" cy="331.5" r="3.2" fill="#6B7280"/>
+<circle cx="345.0" cy="356.5" r="3.2" fill="#6B7280"/>
+<circle cx="417.0" cy="281.5" r="3.2" fill="#6B7280"/>
+<circle cx="369.0" cy="305.0" r="5.7" fill="#111827"/>
+<line x1="369.0" y1="310.7" x2="369.0" y2="323.0" stroke="#111827" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="369.0" y1="323.0" x2="364.2" y2="333.5" stroke="#111827" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="369.0" y1="323.0" x2="373.8" y2="333.5" stroke="#111827" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="369.0" y1="313.5" x2="362.4" y2="320.2" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="369.0" y1="313.5" x2="375.6" y2="320.2" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<text x="281.0" y="464.5" font-size="12" font-weight="400" fill="#111827" data-bx="280.0,481.0">Lần này Nam lùi 2 bậc. Hơi lạ,</text>
+<text x="281.0" y="481.5" font-size="12" font-weight="400" fill="#111827" data-bx="280.0,481.0">nhưng Nam vẫn đứng TRÊN bậc</text>
+<text x="281.0" y="498.5" font-size="12" font-weight="400" fill="#111827" data-bx="280.0,481.0">lấy đà. Thói quen cũ vẫn chưa bị</text>
+<text x="281.0" y="515.6" font-size="12" font-weight="400" fill="#111827" data-bx="280.0,481.0">phá.</text>
+<rect x="506.0" y="92.5" width="227.0" height="452.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<circle cx="530.0" cy="113.5" r="10.0" fill="#C026D3" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="530.0" y="117.4" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="547.0" y="118.0" font-size="13.5" font-weight="700" fill="#C026D3" data-bx="546.0,722.0">Lùi xuống DƯỚI bậc lấy</text>
+<text x="547.0" y="135.5" font-size="13.5" font-weight="700" fill="#C026D3" data-bx="546.0,722.0">đà</text>
+<polyline points="524.0,434.5 524.0,409.5 548.0,409.5 548.0,384.5 572.0,384.5 572.0,359.5 596.0,359.5 596.0,334.5 620.0,334.5 620.0,309.5 644.0,309.5 644.0,284.5 668.0,284.5 668.0,259.5 692.0,259.5 692.0,234.5 716.0,234.5" fill="none" stroke="#9CA3AF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="572.0" y1="359.5" x2="596.0" y2="359.5" stroke="#B45309" stroke-width="5" stroke-linecap="round"/>
+<line x1="568.0" y1="359.5" x2="721.0" y2="359.5" stroke="#B45309" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4,3"/>
+<text x="719.0" y="374.5" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="end">bậc lấy đà</text>
+<polyline points="536.0,406.5 608.0,331.5 584.0,356.5 656.0,281.5 560.0,381.5" fill="none" stroke="#C026D3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle cx="536.0" cy="406.5" r="3.2" fill="#6B7280"/>
+<circle cx="608.0" cy="331.5" r="3.2" fill="#6B7280"/>
+<circle cx="584.0" cy="356.5" r="3.2" fill="#6B7280"/>
+<circle cx="656.0" cy="281.5" r="3.2" fill="#6B7280"/>
+<circle cx="560.0" cy="355.0" r="5.7" fill="#C026D3"/>
+<line x1="560.0" y1="360.7" x2="560.0" y2="373.0" stroke="#C026D3" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="560.0" y1="373.0" x2="555.2" y2="383.5" stroke="#C026D3" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="560.0" y1="373.0" x2="564.8" y2="383.5" stroke="#C026D3" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="560.0" y1="363.5" x2="553.4" y2="370.2" stroke="#C026D3" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="560.0" y1="363.5" x2="566.6" y2="370.2" stroke="#C026D3" stroke-width="1.9" stroke-linecap="round"/>
+<text x="572.0" y="397.5" font-size="10" font-weight="700" fill="#C026D3">thấp hơn bậc lấy đà!</text>
+<text x="520.0" y="464.5" font-size="12" font-weight="400" fill="#111827" data-bx="519.0,720.0">Nam đi xuống thấp hơn cả cái</text>
+<text x="520.0" y="481.5" font-size="12" font-weight="400" fill="#111827" data-bx="519.0,720.0">bậc đã giúp Nam leo lần trước. Cả</text>
+<text x="520.0" y="498.5" font-size="12" font-weight="400" fill="#111827" data-bx="519.0,720.0">lần leo đó coi như bị xoá. Thói</text>
+<text x="520.0" y="515.6" font-size="12" font-weight="400" fill="#111827" data-bx="519.0,720.0">quen “tiến ba lùi một” vừa bị phá.</text>
+<rect x="745.0" y="92.5" width="227.0" height="452.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<circle cx="769.0" cy="113.5" r="10.0" fill="#111827" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="769.0" y="117.4" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="786.0" y="118.0" font-size="13.5" font-weight="700" fill="#111827" data-bx="785.0,961.0">Rồi sao nữa? Chưa ai biết</text>
+<polyline points="763.0,434.5 763.0,409.5 787.0,409.5 787.0,384.5 811.0,384.5 811.0,359.5 835.0,359.5 835.0,334.5 859.0,334.5 859.0,309.5 883.0,309.5 883.0,284.5 907.0,284.5 907.0,259.5 931.0,259.5 931.0,234.5 955.0,234.5" fill="none" stroke="#9CA3AF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="811.0" y1="359.5" x2="835.0" y2="359.5" stroke="#B45309" stroke-width="5" stroke-linecap="round"/>
+<line x1="807.0" y1="359.5" x2="960.0" y2="359.5" stroke="#B45309" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4,3"/>
+<text x="958.0" y="374.5" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="end">bậc lấy đà</text>
+<polyline points="775.0,406.5 847.0,331.5 823.0,356.5 895.0,281.5 799.0,381.5" fill="none" stroke="#C026D3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,4"/>
+<circle cx="775.0" cy="406.5" r="3.2" fill="#6B7280"/>
+<circle cx="847.0" cy="331.5" r="3.2" fill="#6B7280"/>
+<circle cx="823.0" cy="356.5" r="3.2" fill="#6B7280"/>
+<circle cx="895.0" cy="281.5" r="3.2" fill="#6B7280"/>
+<circle cx="799.0" cy="355.0" r="5.7" fill="#C026D3"/>
+<line x1="799.0" y1="360.7" x2="799.0" y2="373.0" stroke="#C026D3" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="799.0" y1="373.0" x2="794.2" y2="383.5" stroke="#C026D3" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="799.0" y1="373.0" x2="803.8" y2="383.5" stroke="#C026D3" stroke-width="2.09" stroke-linecap="round"/>
+<line x1="799.0" y1="363.5" x2="792.4" y2="370.2" stroke="#C026D3" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="799.0" y1="363.5" x2="805.6" y2="370.2" stroke="#C026D3" stroke-width="1.9" stroke-linecap="round"/>
+<path d="M805.0 365.5 Q839.0 311.5 895.0 271.5" fill="none" stroke="#0E9F6E" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polygon points="895.0,271.5 892.2,279.0 887.0,271.7" fill="#0E9F6E"/>
+<text x="897.0" y="269.5" font-size="10" font-weight="700" fill="#0E9F6E" text-anchor="end">leo tiếp?</text>
+<line x1="809.0" y1="373.5" x2="877.0" y2="371.6" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polygon points="883.0,371.5 876.5,376.1 876.2,367.2" fill="#475569"/>
+<text x="891.0" y="359.5" font-size="10" font-weight="700" fill="#475569" text-anchor="end">đứng nghỉ?</text>
+<path d="M805.0 385.5 Q829.0 407.5 869.0 421.5" fill="none" stroke="#E5484D" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="5,4"/>
+<polygon points="869.0,421.5 861.3,423.5 864.2,415.1" fill="#E5484D"/>
+<text x="873.0" y="437.5" font-size="10" font-weight="700" fill="#E5484D" text-anchor="end">đi xuống?</text>
+<text x="759.0" y="464.5" font-size="12" font-weight="400" fill="#111827" data-bx="758.0,959.0">Nam có thể leo tiếp, đứng nghỉ</text>
+<text x="759.0" y="481.5" font-size="12" font-weight="400" fill="#111827" data-bx="758.0,959.0">lâu, hoặc đi xuống luôn. Phá thói</text>
+<text x="759.0" y="498.5" font-size="12" font-weight="400" fill="#111827" data-bx="758.0,959.0">quen là một LỜI CẢNH BÁO, chưa</text>
+<text x="759.0" y="515.6" font-size="12" font-weight="400" fill="#111827" data-bx="758.0,959.0">phải câu trả lời.</text>
+<text x="28.0" y="584.0" font-size="12" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Giới hạn của ví dụ: Nam tự quyết định bước chân của mình. Giá thì không có “một người” quyết định — nó là kết quả của rất nhiều lệnh mua bán gặp nhau.</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmOGNiYWRhYi01ZTMxLTQxOGItYmUzNC1lMmQ5ZGE1NmFhMzYAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaK+5vDhnHa6MwdkY5hJ1ZwcAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo4YzgxMTFhYi0yZjQ3LTQ3M2YtYjExMC0zYTkzODUzNTdmYzBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo1SN9Xz5KX24aefmeaGSp+AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg7M/9i4TKTxqiEe86IiW0EQloHjhq7PI1lstSB6L6VZ+kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaCG6XU7UX4QaQEzr1VlKpiUAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIHVr/cfu5g83OQwP7atMyAMRupPLoBM3yzrh+hWuSi3rZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTXFZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmY4Y2JhZGFiLTVlMzEtNDE4Yi1iZTM0LWUyZDlkYTU2YWEzNi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjBkM2YzZThiLTdhOGYtNGVlZi04ZGVmLTlhNDM5YjhjMmU4MXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDsz/2LhMpPGqIR7zoiJbQRCWgeOGrs8jWWy1IHovpVn6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggcIVCubD8Z/L+42X8PeIn2XTlj0UWpz4NECMPFhSONE6iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg7q9vdTtkdczViSNvOPgweSbCXJ8leA16MizdnOIpk8Z0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQMUKKyStFk6SI3l10PJTrn2FNoMQ5tV+IdyWUiVRAXXgxxuj1iM+WxsvNuZSp/dYQ2V81f3kOzA5tU91FG+tRxo=</c2pa:manifest></metadata></svg>

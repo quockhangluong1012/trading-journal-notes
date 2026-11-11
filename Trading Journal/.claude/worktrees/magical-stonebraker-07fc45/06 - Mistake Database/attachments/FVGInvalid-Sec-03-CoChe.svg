@@ -1,0 +1,31 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Cơ chế: FVG đã mitigate = "hết đơn hàng"</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">FVG là nơi có lệnh tổ chức chưa khớp. Khi giá đã quay lại lấp nó, các lệnh đó đã được thực thi → không còn lực đỡ.</text>
+
+  <rect x="24" y="74" width="712" height="366" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- displacement creating FVG -->
+  <path d="M 60 340 L 110 320 L 150 200 L 190 175" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+  <rect x="120" y="210" width="70" height="60" fill="#3B82F6" fill-opacity="0.18" stroke="#1D4ED8" stroke-dasharray="4 3"/>
+  <text x="126" y="204" font-size="10" fill="#1D4ED8" font-weight="600">FVG mới (nhiều đơn chưa khớp)</text>
+
+  <!-- first return: fills FVG (mitigation) -->
+  <path d="M 190 175 L 230 210 L 260 245" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="255" cy="240" r="5" fill="#D97706"/>
+  <text x="265" y="236" font-size="10" fill="#B45309" font-weight="600">Lần 1: giá lấp FVG → đơn hàng được khớp (mitigation)</text>
+
+  <!-- bounce continuation -->
+  <path d="M 260 245 L 320 190 L 380 150 L 430 130" fill="none" stroke="#16A34A" stroke-width="1.8" stroke-dasharray="1 0"/>
+  <text x="330" y="130" font-size="10" fill="#15803D">Sóng đầu tiên (FVG còn hiệu lực) chạy tốt</text>
+
+  <!-- second return: FVG now empty, price cuts through -->
+  <path d="M 430 130 L 470 190 L 500 245 L 540 300 L 600 350"
+        fill="none" stroke="#B91C1C" stroke-width="2.2"/>
+  <circle cx="500" cy="245" r="6" fill="#DC2626"/>
+  <polygon points="500,245 492,231 508,231" fill="#DC2626"/>
+  <text x="470" y="228" font-size="10.5" fill="#B91C1C" font-weight="700">Entry lần 2 tại FVG đã mitigate</text>
+  <text x="470" y="378" font-size="10.5" fill="#B91C1C" font-weight="600">Đơn hàng đã hết → giá xuyên thẳng qua, quét SL</text>
+
+  <rect x="24" y="392" width="712" height="0" />
+</svg>

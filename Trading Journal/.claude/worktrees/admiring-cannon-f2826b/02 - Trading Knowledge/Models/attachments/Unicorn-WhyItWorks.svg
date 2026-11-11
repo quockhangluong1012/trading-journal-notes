@@ -1,0 +1,29 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Vì sao Unicorn hoạt động — hai lực thuật toán cùng một điểm giá</text>
+<text x="24" y="54" font-size="13" fill="#6B7280">Overlap = giao của "phải rebalance imbalance" và "phải tôn trọng dấu chân tổ chức".</text>
+<rect x="24" y="72" width="345" height="150" rx="8" fill="#FFFFFF" stroke="#3B82F6"/>
+<text x="40" y="98" font-size="13" font-weight="700" fill="#1D4ED8">Lực 1 — Rebalance imbalance (FVG)</text>
+<text x="40" y="122" font-size="11.5" fill="#374151">Displacement tạo khe giá 1 chiều (SIBI/BISI).</text>
+<text x="40" y="142" font-size="11.5" fill="#374151">Delivery algorithm có xu hướng quay lại</text>
+<text x="40" y="160" font-size="11.5" fill="#374151">"trả lại" phần giá giao dịch không hiệu quả.</text>
+<text x="40" y="184" font-size="11.5" fill="#374151">→ FVG là NAM CHÂM giá hồi về.</text>
+<text x="40" y="206" font-size="11" fill="#6B7280">Xem [[13 - FVG]] · [[41 - CISD]]</text>
+<rect x="391" y="72" width="345" height="150" rx="8" fill="#FFFFFF" stroke="#F59E0B"/>
+<text x="407" y="98" font-size="13" font-weight="700" fill="#B45309">Lực 2 — Dấu chân tổ chức (Breaker)</text>
+<text x="407" y="122" font-size="11.5" fill="#374151">Breaker = Order Block "thất bại" đã đảo vai.</text>
+<text x="407" y="142" font-size="11.5" fill="#374151">Là nơi lệnh tổ chức bị mắc kẹt / cần bảo vệ.</text>
+<text x="407" y="160" font-size="11.5" fill="#374151">Khi giá quay lại, họ phòng thủ mức này.</text>
+<text x="407" y="184" font-size="11.5" fill="#374151">→ Breaker là TƯỜNG cấu trúc S/R.</text>
+<text x="407" y="206" font-size="11" fill="#6B7280">Xem [[04 - Breaker Block]] · [[25 - OB]]</text>
+<rect x="230" y="250" width="300" height="70" rx="10" fill="#7C3AED" opacity="0.14" stroke="#6D28D9" stroke-dasharray="5 3"/>
+<text x="380" y="280" font-size="14" font-weight="700" fill="#5B21B6" text-anchor="middle">VÙNG UNICORN = giao của 2 lực</text>
+<text x="380" y="303" font-size="11.5" fill="#5B21B6" text-anchor="middle">Xác suất phản ứng cộng dồn, không phải cộng tuyến tính</text>
+<path d="M196 222 L330 250" stroke="#3B82F6" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M564 222 L430 250" stroke="#F59E0B" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#6B7280"/></marker></defs>
+<rect x="24" y="336" width="712" height="78" rx="8" fill="#F0FDF4" stroke="#10B981"/>
+<text x="40" y="360" font-size="12.5" font-weight="700" fill="#047857">Hệ quả thực dụng</text>
+<text x="40" y="382" font-size="11.5" fill="#374151">Một POI có 2 lý do độc lập để giá phản ứng đáng tin hơn hẳn POI chỉ có 1 lý do. Đây là lý do</text>
+<text x="40" y="401" font-size="11.5" fill="#374151">Unicorn cho phép stop chặt + RR lớn: bạn đặt lệnh nơi thuật toán "buộc" phải phản ứng nếu bias đúng.</text>
+</svg>

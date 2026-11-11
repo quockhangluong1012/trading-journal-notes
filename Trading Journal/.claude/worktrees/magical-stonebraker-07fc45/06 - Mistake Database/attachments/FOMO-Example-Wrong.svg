@@ -1,0 +1,46 @@
+<svg viewBox="0 0 760 450" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="450" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#B91C1C">SAI — đuổi nến xanh lớn tại đỉnh</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Thấy nến displacement to → nhảy vào ngay ở Premium, không POI, SL rộng. Đảo chiều tức thì.</text>
+
+  <rect x="24" y="74" width="712" height="356" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-opacity="0.5"/>
+
+  <line x1="50" y1="250" x2="710" y2="250" stroke="#9CA3AF" stroke-width="1.1" stroke-dasharray="6 4"/>
+  <text x="640" y="244" font-size="10" fill="#6B7280">50% (EQ)</text>
+
+  <!-- extended rally candles -->
+  <g stroke="#15803D" stroke-width="1.3">
+    <line x1="90" y1="360" x2="90" y2="392"/><rect x="84" y="364" width="12" height="26" fill="#16A34A"/>
+    <line x1="130" y1="330" x2="130" y2="368"/><rect x="124" y="336" width="12" height="30" fill="#16A34A"/>
+    <line x1="170" y1="295" x2="170" y2="340"/><rect x="164" y="300" width="12" height="38" fill="#16A34A"/>
+    <line x1="210" y1="250" x2="210" y2="305"/><rect x="204" y="256" width="12" height="48" fill="#16A34A"/>
+    <line x1="250" y1="200" x2="250" y2="260"/><rect x="244" y="206" width="12" height="52" fill="#16A34A"/>
+    <line x1="290" y1="150" x2="290" y2="212"/><rect x="284" y="156" width="12" height="54" fill="#16A34A"/>
+  </g>
+  <!-- big last candle -->
+  <line x1="330" y1="120" x2="330" y2="175" stroke="#15803D" stroke-width="1.3"/>
+  <rect x="322" y="126" width="16" height="45" fill="#16A34A"/>
+  <text x="150" y="150" font-size="10.5" fill="#64748B">Sóng đã kéo dài — draw on liquidity gần cạn</text>
+
+  <!-- FOMO entry -->
+  <circle cx="330" cy="128" r="7" fill="#DC2626"/>
+  <polygon points="330,128 321,112 339,112" fill="#DC2626"/>
+  <text x="300" y="106" font-size="11" font-weight="700" fill="#B91C1C">FOMO BUY</text>
+
+  <!-- reversal candles -->
+  <g stroke="#B91C1C" stroke-width="1.3">
+    <line x1="370" y1="128" x2="370" y2="185"/><rect x="364" y="140" width="12" height="34" fill="#DC2626"/>
+    <line x1="410" y1="160" x2="410" y2="230"/><rect x="404" y="170" width="12" height="48" fill="#DC2626"/>
+    <line x1="450" y1="205" x2="450" y2="285"/><rect x="444" y="215" width="12" height="58" fill="#DC2626"/>
+    <line x1="490" y1="260" x2="490" y2="340"/><rect x="484" y="270" width="12" height="60" fill="#DC2626"/>
+    <line x1="530" y1="315" x2="530" y2="385"/><rect x="524" y="322" width="12" height="55" fill="#DC2626"/>
+  </g>
+
+  <!-- SL hit -->
+  <line x1="330" y1="150" x2="700" y2="150" stroke="#DC2626" stroke-width="1.1" stroke-dasharray="5 4"/>
+  <text x="560" y="145" font-size="10" fill="#B91C1C">SL — dính ngay nến thứ 2</text>
+  <circle cx="410" cy="150" r="5" fill="#DC2626"/>
+  <text x="418" y="146" font-size="10" fill="#B91C1C" font-weight="700">✘ SL hit</text>
+
+  <text x="80" y="418" font-size="10.5" fill="#4B5563">Bài học: nến xanh lớn nhất thường là nến CUỐI của sóng — nơi retail vào, nơi SM ra.</text>
+</svg>

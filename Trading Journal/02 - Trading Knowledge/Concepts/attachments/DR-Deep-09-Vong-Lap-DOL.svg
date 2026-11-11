@@ -1,0 +1,82 @@
+<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="600" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="26" y="34" font-size="18" font-weight="700" fill="#1F2937">Vòng lặp logic Range ↔ DOL — và cách chặn nó bằng timestamp</text>
+  <text x="26" y="55" font-size="13" fill="#6B7280">Nếu range được chọn bằng tiêu chí “hai đầu có liquidity”, thì DOL trùng biên range là tautology — không phải xác nhận.</text>
+
+  <defs>
+    <marker id="ar2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arB" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/>
+    </marker>
+  </defs>
+
+  <!-- ============ LEFT : the loop ============ -->
+  <rect x="25" y="76" width="430" height="290" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="38" y="98" font-size="12.5" font-weight="700" fill="#B91C1C">Cách SAI — vòng lặp tự xác nhận</text>
+
+  <rect x="140" y="118" width="200" height="48" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="240" y="140" font-size="11.5" font-weight="700" fill="#B91C1C" text-anchor="middle">RANGE</text>
+  <text x="240" y="156" font-size="10" fill="#374151" text-anchor="middle">“hai đầu có liquidity lớn”</text>
+
+  <rect x="270" y="250" width="170" height="48" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="355" y="272" font-size="11.5" font-weight="700" fill="#B91C1C" text-anchor="middle">DOL</text>
+  <text x="355" y="288" font-size="10" fill="#374151" text-anchor="middle">“pool lớn nhất theo bias”</text>
+
+  <rect x="40" y="250" width="170" height="48" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="125" y="272" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">“range ĐÚNG vì</text>
+  <text x="125" y="288" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">nó hướng về DOL”</text>
+
+  <path d="M310 168 C 370 190, 380 220, 366 246" fill="none" stroke="#B91C1C" stroke-width="1.8" marker-end="url(#ar2)"/>
+  <path d="M266 274 L 216 274" fill="none" stroke="#B91C1C" stroke-width="1.8" marker-end="url(#ar2)"/>
+  <path d="M120 246 C 110 200, 140 172, 180 158" fill="none" stroke="#B91C1C" stroke-width="1.8" marker-end="url(#ar2)"/>
+
+  <text x="290" y="196" font-size="10" fill="#B91C1C">(1) suy ra</text>
+  <text x="222" y="266" font-size="10" fill="#B91C1C">(2)</text>
+  <text x="76" y="212" font-size="10" fill="#B91C1C">(3) hợp thức hoá ngược</text>
+
+  <text x="38" y="336" font-size="10.5" font-weight="700" fill="#7F1D1D">Bốn dấu hiệu bạn đang ở trong vòng lặp:</text>
+  <text x="38" y="352" font-size="10" fill="#7F1D1D">· không nêu được lý do chọn range mà không nhắc tới DOL</text>
+  <text x="38" y="366" font-size="10" fill="#7F1D1D">· mỗi lần DOL đổi thì range cũng đổi — và luôn đổi SAU</text>
+  <text x="38" y="380" font-size="10" fill="#7F1D1D">· range luôn có đúng một đầu trùng DOL, chưa bao giờ cả hai đều không</text>
+  <text x="38" y="394" font-size="10" fill="#7F1D1D">· bạn không nhớ range được chốt lúc nào</text>
+
+  <!-- ============ RIGHT : the fix ============ -->
+  <rect x="485" y="76" width="450" height="290" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="498" y="98" font-size="12.5" font-weight="700" fill="#15803D">Cách ĐÚNG — bốn bước có timestamp</text>
+
+  <rect x="498" y="110" width="424" height="54" rx="7" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="510" y="128" font-size="11" font-weight="700" fill="#15803D">t₀ · CHỐT RANGE</text>
+  <text x="510" y="143" font-size="10" fill="#374151">Chỉ dùng tiêu chí ĐỘC LẬP với DOL: gate cấu trúc (G2) + displacement + trạng thái liquidity.</text>
+  <text x="510" y="157" font-size="10" font-weight="700" fill="#B91C1C">Ghi (h, l, τ, t₀, lý do). ⛔ Cấm dùng “range này hướng về DOL của tôi” ở bước này.</text>
+
+  <rect x="498" y="172" width="424" height="62" rx="7" fill="#FFFFFF" stroke="#1D4ED8"/>
+  <text x="510" y="190" font-size="11" font-weight="700" fill="#1D4ED8">t₁ · GHI DOL</text>
+  <text x="510" y="205" font-size="10" fill="#374151">Bằng chứng độc lập: (a) bên nào vừa bị ăn? (b) BOS/MSS gần nhất hướng nào?</text>
+  <text x="510" y="219" font-size="10" fill="#374151">(c) pool nào nhiều khung cùng tham chiếu? (d) còn khả thi trong phiên không?</text>
+  <text x="510" y="231" font-size="10" fill="#1E3A8A">→ ghi pool + giá cụ thể</text>
+
+  <rect x="498" y="242" width="424" height="54" rx="7" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="510" y="260" font-size="11" font-weight="700" fill="#374151">t₂ · ĐỐI CHIẾU</text>
+  <text x="510" y="275" font-size="10" fill="#374151">Trùng biên range → OK, nhưng ghi rõ “trùng là hệ quả của (a)–(d)”.</text>
+  <text x="510" y="289" font-size="10" font-weight="700" fill="#B45309">KHÔNG trùng → đây là thông tin quan trọng nhất: range đã chốt có thể sai → xét lại t₀.</text>
+
+  <rect x="498" y="304" width="424" height="52" rx="7" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="510" y="322" font-size="11" font-weight="700" fill="#374151">t₃ · KIỂM TRA</text>
+  <text x="510" y="337" font-size="10" fill="#374151">Không được sửa t₀ sau khi biết t₁ để làm chúng khớp nhau.</text>
+  <text x="510" y="351" font-size="10" fill="#374151">Nếu buộc phải sửa → ghi lại như một lần REPLACED hợp lệ, có log và có giờ.</text>
+
+  <!-- footer -->
+  <rect x="25" y="380" width="910" height="100" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="38" y="402" font-size="12.5" font-weight="700" fill="#1F2937">Vì sao chặn được — lập luận, không phải quy tắc hình thức</text>
+  <text x="38" y="424" font-size="11" fill="#374151">Một kết luận chỉ có <tspan font-weight="700">giá trị thông tin</tspan> nếu nó loại trừ được điều gì đó. Nếu mọi cách chọn range đều dẫn tới DOL ở biên, thì</text>
+  <text x="38" y="442" font-size="11" fill="#374151">“DOL trùng biên range” đúng trong 100% trường hợp — một phát biểu đúng trong mọi trường hợp <tspan font-style="italic">không mang thông tin về trường hợp cụ thể này</tspan>.</text>
+  <text x="38" y="464" font-size="11" fill="#374151">Timestamp không phải thủ tục hành chính: nó là <tspan font-weight="700">cách duy nhất</tspan> để biến một phát biểu luôn đúng thành một phát biểu có thể sai — và do đó có thể học được từ nó.</text>
+
+  <rect x="25" y="492" width="910" height="92" rx="8" fill="#FFFBEB" stroke="#FDE68A"/>
+  <text x="38" y="513" font-size="11.5" font-weight="700" fill="#B45309">Hệ quả thực hành quan trọng nhất</text>
+  <text x="38" y="533" font-size="10.5" fill="#374151">Nếu DOL (t₁) KHÔNG trùng biên range (t₀), bạn vừa phát hiện một trong hai điều — và cả hai đều hữu ích:</text>
+  <text x="38" y="551" font-size="10.5" fill="#374151">(1) range chốt sai neo (thường là neo quá cũ hoặc không qua G2) → sửa range, ghi log REPLACED; hoặc</text>
+  <text x="38" y="569" font-size="10.5" fill="#374151">(2) range đúng nhưng bạn đang ở trong một nhịp đi ngược nó (pullback) → đây chính là cấu hình “Judas fuel”, không phải đảo chiều.</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="600" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="26" y="34" font-size="18" font-weight="700" fill="#1F2937">Alignment đa khung: hai cấu hình khó nhất</text>
+  <text x="26" y="55" font-size="13" fill="#6B7280">HTF range quyết định HƯỚNG được phép · LTF range quyết định THỜI ĐIỂM. Không bao giờ để LTF phủ quyết HTF.</text>
+
+  <!-- ============ CASE 1 ============ -->
+  <rect x="25" y="76" width="440" height="386" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="38" y="88" width="300" height="22" rx="5" fill="#EFF6FF"/>
+  <text x="46" y="104" font-size="12" font-weight="700" fill="#1D4ED8">CASE 1 · D1 premium + H1 discount</text>
+  <rect x="38" y="120" width="414" height="216" rx="5" fill="#FFFFFF" stroke="#EFF1F5"/>
+
+  <g transform="translate(56,132)">
+    <rect x="0" y="0" width="378" height="190" fill="#DC2626" opacity="0.07"/>
+    <rect x="0" y="95" width="378" height="95" fill="#16A34A" opacity="0.08"/>
+    <line x1="0" y1="0" x2="378" y2="0" stroke="#DC2626" stroke-width="2"/>
+    <text x="6" y="16" font-size="10" font-weight="700" fill="#B91C1C">D1 RANGE HIGH</text>
+    <line x1="0" y1="95" x2="378" y2="95" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="6" y="91" font-size="10" font-weight="700" fill="#374151">EQ (D1)</text>
+    <line x1="0" y1="190" x2="378" y2="190" stroke="#16A34A" stroke-width="2"/>
+    <text x="6" y="184" font-size="10" font-weight="700" fill="#15803D">D1 RANGE LOW</text>
+
+    <rect x="196" y="122" width="182" height="68" fill="#1D4ED8" opacity="0.06" stroke="#1D4ED8" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <line x1="196" y1="156" x2="378" y2="156" stroke="#1D4ED8" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="200" y="138" font-size="10" font-weight="700" fill="#1D4ED8">H1 range</text>
+    <text x="200" y="172" font-size="9.5" fill="#1D4ED8">EQ (H1)</text>
+
+    <circle cx="330" cy="150" r="5" fill="#111827"/>
+    <text x="290" y="140" font-size="10" font-weight="700" fill="#111827">GIÁ</text>
+    <text x="126" y="188" font-size="9.5" fill="#6B7280">giá ở discount của H1 nhưng premium của D1</text>
+  </g>
+
+  <text x="38" y="356" font-size="10.5" fill="#374151">Đây KHÔNG phải mâu thuẫn — đây là một nhịp hồi đang diễn ra. D1 nói giá đắt ở cấp lớn;</text>
+  <text x="38" y="372" font-size="10.5" fill="#374151">H1 nói trong nhịp gần nhất giá đang rẻ. Hai thước đo khác cấp của cùng câu hỏi.</text>
+  <rect x="38" y="382" width="414" height="66" rx="6" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="48" y="400" font-size="10.5" font-weight="700" fill="#1D4ED8">Hành động</text>
+  <text x="48" y="416" font-size="10" fill="#374151">D1 bearish → tìm Short tại PREMIUM của H1 (chờ H1 hết discount).</text>
+  <text x="48" y="431" font-size="10" fill="#374151">D1 bullish → chờ giá về DISCOUNT của D1 + array D1. Không Long chỉ vì H1 đang discount.</text>
+
+  <!-- ============ CASE 2 ============ -->
+  <rect x="495" y="76" width="440" height="386" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="508" y="88" width="360" height="22" rx="5" fill="#FEF2F2"/>
+  <text x="516" y="104" font-size="12" font-weight="700" fill="#B91C1C">CASE 2 · D1 discount + H1 premium + H1 bearish (BẪY)</text>
+  <rect x="508" y="120" width="414" height="216" rx="5" fill="#FFFFFF" stroke="#EFF1F5"/>
+
+  <g transform="translate(526,132)">
+    <rect x="0" y="0" width="378" height="95" fill="#DC2626" opacity="0.07"/>
+    <rect x="0" y="95" width="378" height="95" fill="#16A34A" opacity="0.08"/>
+    <line x1="0" y1="0" x2="378" y2="0" stroke="#DC2626" stroke-width="2"/>
+    <text x="6" y="16" font-size="10" font-weight="700" fill="#B91C1C">D1 RANGE HIGH</text>
+    <line x1="0" y1="95" x2="378" y2="95" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="6" y="91" font-size="10" font-weight="700" fill="#374151">EQ (D1)</text>
+    <line x1="0" y1="190" x2="378" y2="190" stroke="#16A34A" stroke-width="2"/>
+    <text x="6" y="184" font-size="10" font-weight="700" fill="#15803D">D1 RANGE LOW</text>
+
+    <rect x="196" y="36" width="182" height="86" fill="#B91C1C" opacity="0.06" stroke="#B91C1C" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <line x1="196" y1="79" x2="378" y2="79" stroke="#B91C1C" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="200" y="52" font-size="10" font-weight="700" fill="#B91C1C">H1 range (bearish)</text>
+    <text x="200" y="74" font-size="9.5" fill="#B91C1C">EQ (H1)</text>
+
+    <path d="M210 118 L240 104 L268 112 L300 92 L330 100 L356 84" fill="none" stroke="#B91C1C" stroke-width="1.6"/>
+    <circle cx="356" cy="84" r="5" fill="#111827"/>
+    <text x="286" y="76" font-size="10" font-weight="700" fill="#111827">GIÁ</text>
+    <text x="120" y="176" font-size="9.5" fill="#6B7280">giá ở premium H1 nhưng discount D1</text>
+  </g>
+
+  <text x="508" y="356" font-size="10.5" fill="#374151">Cấu hình mà đa số lệnh thua “đúng phương pháp” xảy ra. D1 cho phép Long (điều kiện CẦN,</text>
+  <text x="508" y="372" font-size="10.5" fill="#374151">chưa đủ), nhưng H1 đang ở premium và cấu trúc H1 bearish → THỜI ĐIỂM sai.</text>
+  <rect x="508" y="382" width="414" height="66" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="518" y="400" font-size="10.5" font-weight="700" fill="#B91C1C">Hành động: KHÔNG mua ở đây</text>
+  <text x="518" y="416" font-size="10" fill="#374151">Chờ H1 tạo đáy mới + MSS bullish → mua ở discount của H1 MỚI (vẫn trong discount D1).</text>
+  <text x="518" y="431" font-size="10" fill="#374151">Chỉ xét đảo chiều khi protected low D1 bị phá bằng BODY-CLOSE. Chưa có → mặc định là pullback.</text>
+
+  <!-- footer -->
+  <rect x="25" y="478" width="910" height="106" rx="8" fill="#1F2937" opacity="0.05"/>
+  <text x="38" y="500" font-size="11.5" font-weight="700" fill="#1F2937">Nguyên tắc phân xử — và lý do nó không phải là “đạo lý HTF”</text>
+  <text x="38" y="520" font-size="10.5" fill="#374151">Tầng trên KHÔNG phủ quyết tầng dưới về ĐIỂM VÀO, nhưng phủ quyết về HƯỚNG. Tầng dưới được phép <tspan font-weight="700">trì hoãn</tspan> một lệnh mà tầng trên cho phép —</text>
+  <text x="38" y="538" font-size="10.5" fill="#374151">đó chính là toàn bộ mục đích của nó. Điều tầng dưới KHÔNG được phép làm là tự mình đổi hướng.</text>
+  <text x="38" y="560" font-size="10.5" fill="#374151">Lý do sâu hơn: ở deep discount của D1, số học R:R tự chống lại lệnh Short — khoảng cách tới target khả thi nhỏ, khoảng cách tới invalidation lớn.</text>
+  <text x="38" y="577" font-size="10.5" fill="#374151">Nên quy tắc “cấm short ở deep discount” là một kết luận ĐO ĐƯỢC, không phải một niềm tin.</text>
+</svg>

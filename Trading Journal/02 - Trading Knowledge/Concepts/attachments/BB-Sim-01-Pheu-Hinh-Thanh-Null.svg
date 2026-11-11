@@ -1,0 +1,29 @@
+<svg viewBox="0 0 980 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+
+<rect x="0" y="0" width="980" height="560" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="26.0" y="34.0" font-size="18" font-weight="700" fill="#1F2937" text-anchor="start">Mô phỏng null (random walk): Breaker xuất hiện thường xuyên trên dữ liệu KHÔNG có ai đặt lệnh</text>
+<text x="26.0" y="56.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">400.000 nến giả lập từ bước ngẫu nhiên thuần túy. Áp dụng đúng định nghĩa BB-DEF v0.1 (bullish). Không có tổ chức, không có thanh khoản thật.</text>
+<rect x="879.3" y="18" width="74.7" height="22" rx="11" fill="#F3F4F6" stroke="#D8DBE2"/>
+<text x="916.7" y="33.0" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">BB-SIM-01</text>
+<rect x="330.0" y="100.0" width="470.0" height="38.0" rx="6" fill="#B45309" fill-opacity="0.85"/>
+<text x="26.0" y="116.0" font-size="11.6" font-weight="700" fill="#1F2937" text-anchor="start">Ứng viên (đáy cũ bị phá, có OB gốc)</text>
+<text x="808.0" y="124.0" font-size="11.5" font-weight="700" fill="#B45309" text-anchor="start">≈ 100% ứng viên</text>
+<rect x="330.0" y="158.0" width="282.0" height="38.0" rx="6" fill="#0F766E" fill-opacity="0.85"/>
+<text x="26.0" y="174.0" font-size="11.6" font-weight="700" fill="#1F2937" text-anchor="start">Được xác nhận (đóng qua H1 trong 60 nến)</text>
+<text x="620.0" y="182.0" font-size="11.5" font-weight="700" fill="#0F766E" text-anchor="start">≈ 60% ứng viên</text>
+<rect x="330.0" y="216.0" width="259.6" height="38.0" rx="6" fill="#6D28D9" fill-opacity="0.85"/>
+<text x="26.0" y="232.0" font-size="11.6" font-weight="700" fill="#1F2937" text-anchor="start">Được retest trong 100 nến</text>
+<text x="597.6" y="240.0" font-size="11.5" font-weight="700" fill="#6D28D9" text-anchor="start">≈ 55% ứng viên</text>
+<rect x="330.0" y="274.0" width="131.1" height="38.0" rx="6" fill="#15803D" fill-opacity="0.85"/>
+<text x="26.0" y="290.0" font-size="11.6" font-weight="700" fill="#1F2937" text-anchor="start">“Giữ” (đi thêm 1 ATR trước khi đóng qua mép xa)</text>
+<text x="469.1" y="298.0" font-size="11.5" font-weight="700" fill="#15803D" text-anchor="start">≈ 28% ứng viên</text>
+<text x="26.0" y="348.0" font-size="12" font-weight="700" fill="#334155" text-anchor="start">Tần suất (khung có 288 nến/ngày, ví dụ M5), chỉ phía bullish:</text>
+<text x="46.0" y="374.0" font-size="11.6" font-weight="500" fill="#1F2937" text-anchor="start">• swing fractal 2 nến mỗi bên: khoảng 9 Breaker “đúng định nghĩa” mỗi ngày</text>
+<text x="46.0" y="396.0" font-size="11.6" font-weight="500" fill="#1F2937" text-anchor="start">• swing fractal 3 nến mỗi bên: khoảng 6 Breaker “đúng định nghĩa” mỗi ngày</text>
+<text x="46.0" y="418.0" font-size="11.6" font-weight="500" fill="#1F2937" text-anchor="start">• swing fractal 5 nến mỗi bên: khoảng 3 Breaker “đúng định nghĩa” mỗi ngày</text>
+<rect x="26.0" y="452.0" width="928.0" height="67.5" rx="8" fill="#FFFBEB" stroke="#B45309" stroke-width="1.2"/>
+<rect x="26.0" y="452.0" width="4.0" height="67.5" rx="2" fill="#B45309"/>
+<text x="38.0" y="474.5" font-size="12.5" font-weight="700" fill="#B45309" text-anchor="start">Đọc kết quả này thế nào</text>
+<text x="38.0" y="493.7" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">Trên dữ liệu ngẫu nhiên, mẫu hình Breaker vẫn xuất hiện nhiều lần mỗi ngày và gần như luôn được retest rất nhanh (vì vùng nằm sát ngay dưới giá đóng phá H1). Vậy:</text>
+<text x="38.0" y="509.2" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">“thấy Breaker” và “thấy giá quay lại vùng” KHÔNG phải bằng chứng của bất kỳ điều gì. [SIMULATION]</text>
+</svg>

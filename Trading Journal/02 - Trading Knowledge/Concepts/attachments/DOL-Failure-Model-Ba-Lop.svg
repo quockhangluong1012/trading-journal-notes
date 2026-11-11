@@ -1,0 +1,128 @@
+<svg viewBox="0 0 860 660" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="660" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Failure model — ba lớp, ba cách sửa hoàn toàn khác nhau</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Chẩn đoán sai lớp là lỗi tốn kém nhất: nó khiến bạn hoặc overfit mô hình, hoặc không bao giờ sửa được lỗi hệ thống.</text>
+
+  <!-- start -->
+  <rect x="330" y="72" width="200" height="34" rx="7" fill="#0F172A"/>
+  <text x="430" y="94" font-size="11.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">"DOL của tôi không hit"</text>
+
+  <line x1="430" y1="106" x2="430" y2="120" stroke="#6B7280" stroke-width="1.8"/>
+  <line x1="152" y1="120" x2="708" y2="120" stroke="#6B7280" stroke-width="1.8"/>
+  <line x1="152" y1="120" x2="152" y2="134" stroke="#6B7280" stroke-width="1.8"/>
+  <line x1="430" y1="120" x2="430" y2="134" stroke="#6B7280" stroke-width="1.8"/>
+  <line x1="708" y1="120" x2="708" y2="134" stroke="#6B7280" stroke-width="1.8"/>
+  <polygon points="152,138 147,128 157,128" fill="#6B7280"/>
+  <polygon points="430,138 425,128 435,128" fill="#6B7280"/>
+  <polygon points="708,138 703,128 713,128" fill="#6B7280"/>
+
+  <!-- ===== TYPE 1 ===== -->
+  <rect x="24" y="144" width="256" height="330" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.8"/>
+  <rect x="24" y="144" width="256" height="52" rx="8" fill="#DCFCE7"/>
+  <text x="152" y="166" font-size="12.5" font-weight="700" fill="#15803D" text-anchor="middle">TYPE 1</text>
+  <text x="152" y="184" font-size="11" font-weight="700" fill="#15803D" text-anchor="middle">PREDICTION FAILED</text>
+
+  <text x="40" y="216" font-size="10" font-weight="700" fill="#374151">Định nghĩa</text>
+  <text x="40" y="232" font-size="10" fill="#4B5563">Candidate xác định HỢP LÝ theo mô</text>
+  <text x="40" y="246" font-size="10" fill="#4B5563">hình, nhưng giá không tới trong H.</text>
+
+  <text x="40" y="274" font-size="10" font-weight="700" fill="#374151">Dấu hiệu nhận biết</text>
+  <text x="40" y="290" font-size="10" fill="#4B5563">•  Quy trình ĐÚNG</text>
+  <text x="40" y="305" font-size="10" fill="#4B5563">•  Candidate qua hết filter</text>
+  <text x="40" y="320" font-size="10" fill="#4B5563">•  Có đối thủ được viết ra</text>
+  <text x="40" y="335" font-size="10" fill="#4B5563">•  Invalidation KHÔNG bị chạm</text>
+  <text x="40" y="350" font-size="10" fill="#4B5563">•  Giá đi ngang hoặc tới nơi khác</text>
+
+  <rect x="40" y="364" width="224" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="152" y="378" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">ĐÂY KHÔNG PHẢI LỖI</text>
+  <text x="152" y="392" font-size="9" fill="#166534" text-anchor="middle">chi phí bình thường của dự báo xác suất</text>
+
+  <text x="40" y="420" font-size="10" font-weight="700" fill="#15803D">Cách sửa</text>
+  <text x="40" y="436" font-size="10" fill="#4B5563">KHÔNG sửa mô hình vì một mẫu.</text>
+  <text x="40" y="451" font-size="10" fill="#4B5563">Đo base rate. Tăng cỡ mẫu.</text>
+
+  <rect x="40" y="460" width="224" height="8" rx="4" fill="#16A34A" opacity="0.25"/>
+
+  <!-- ===== TYPE 2 ===== -->
+  <rect x="302" y="144" width="256" height="330" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.2"/>
+  <rect x="302" y="144" width="256" height="52" rx="8" fill="#FEE2E2"/>
+  <text x="430" y="166" font-size="12.5" font-weight="700" fill="#B91C1C" text-anchor="middle">TYPE 2  ⚠ NGUY HIỂM NHẤT</text>
+  <text x="430" y="184" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">INTERPRETATION INVALID</text>
+
+  <text x="318" y="216" font-size="10" font-weight="700" fill="#374151">Định nghĩa</text>
+  <text x="318" y="232" font-size="10" fill="#4B5563">Candidate được chọn dựa trên</text>
+  <text x="318" y="246" font-size="10" fill="#4B5563">reasoning SAI NGAY TỪ ĐẦU.</text>
+
+  <text x="318" y="274" font-size="10" font-weight="700" fill="#374151">Dấu hiệu nhận biết</text>
+  <text x="318" y="290" font-size="10" fill="#4B5563">Kiểm tra lại TẠI cutoff:</text>
+  <text x="318" y="305" font-size="10" fill="#B91C1C">•  không qua được filter</text>
+  <text x="318" y="320" font-size="10" fill="#B91C1C">•  hoặc KHÔNG có đối thủ</text>
+  <text x="318" y="335" font-size="10" fill="#B91C1C">•  hoặc range không đóng băng được</text>
+
+  <rect x="318" y="348" width="224" height="50" rx="6" fill="#FEE2E2" stroke="#DC2626"/>
+  <text x="430" y="366" font-size="10" font-weight="700" fill="#B91C1C" text-anchor="middle">ĐÂY LÀ LỖI QUY TRÌNH</text>
+  <text x="430" y="381" font-size="9" fill="#991B1B" text-anchor="middle">nhưng VÔ HÌNH lúc xảy ra —</text>
+  <text x="430" y="393" font-size="9" fill="#991B1B" text-anchor="middle">nó trông giống một quyết định tốt</text>
+
+  <text x="318" y="420" font-size="10" font-weight="700" fill="#B91C1C">Cách sửa</text>
+  <text x="318" y="436" font-size="10" fill="#4B5563">Sửa QUY TRÌNH LỌC. Thêm filter.</text>
+  <text x="318" y="451" font-size="10" fill="#4B5563">Viết rule chặt hơn.</text>
+
+  <rect x="318" y="460" width="224" height="8" rx="4" fill="#DC2626" opacity="0.35"/>
+
+  <!-- ===== TYPE 3 ===== -->
+  <rect x="580" y="144" width="256" height="330" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1.8"/>
+  <rect x="580" y="144" width="256" height="52" rx="8" fill="#FEF3C7"/>
+  <text x="708" y="166" font-size="12.5" font-weight="700" fill="#B45309" text-anchor="middle">TYPE 3</text>
+  <text x="708" y="184" font-size="11" font-weight="700" fill="#B45309" text-anchor="middle">THESIS BECAME OBSOLETE</text>
+
+  <text x="596" y="216" font-size="10" font-weight="700" fill="#374151">Định nghĩa</text>
+  <text x="596" y="232" font-size="10" fill="#4B5563">Candidate TỪNG hợp lý, nhưng</text>
+  <text x="596" y="246" font-size="10" fill="#4B5563">market state đổi làm nó hết hiệu lực.</text>
+
+  <text x="596" y="274" font-size="10" font-weight="700" fill="#374151">Dấu hiệu nhận biết</text>
+  <text x="596" y="290" font-size="10" fill="#4B5563">Có sự kiện cấu trúc RÕ RÀNG</text>
+  <text x="596" y="305" font-size="10" fill="#4B5563">xảy ra SAU cutoff:</text>
+  <text x="596" y="320" font-size="10" fill="#B45309">•  structural shift / external shift</text>
+  <text x="596" y="335" font-size="10" fill="#B45309">•  regime change, volatility shock</text>
+  <text x="596" y="350" font-size="10" fill="#B45309">•  pool mới hình thành gần hơn</text>
+
+  <rect x="596" y="364" width="224" height="34" rx="6" fill="#FEF3C7" stroke="#D97706"/>
+  <text x="708" y="378" font-size="10" font-weight="700" fill="#B45309" text-anchor="middle">KHÔNG LỖI — nếu đã re-select</text>
+  <text x="708" y="392" font-size="9" fill="#92400E" text-anchor="middle">LỖI — nếu vẫn giữ thesis cũ</text>
+
+  <text x="596" y="420" font-size="10" font-weight="700" fill="#B45309">Cách sửa</text>
+  <text x="596" y="436" font-size="10" fill="#4B5563">Sửa QUY TẮC CẬP NHẬT — định</text>
+  <text x="596" y="451" font-size="10" fill="#4B5563">nghĩa rõ sự kiện nào trigger re-select.</text>
+
+  <rect x="596" y="460" width="224" height="8" rx="4" fill="#D97706" opacity="0.35"/>
+
+  <!-- ===== AUDIT ORDER ===== -->
+  <rect x="24" y="490" width="812" height="152" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="44" y="514" font-size="12.5" font-weight="700" fill="#334155">THỨ TỰ AUDIT ĐÚNG — hỏi theo thứ tự này, đừng hỏi "tại sao DOL không hit?"</text>
+
+  <rect x="44" y="526" width="240" height="52" rx="6" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="164" y="546" font-size="10.5" font-weight="700" fill="#B91C1C" text-anchor="middle">Câu 1 (loại Type 2)</text>
+  <text x="164" y="563" font-size="9.5" fill="#4B5563" text-anchor="middle">Tại cutoff, candidate có qua cả ba</text>
+  <text x="164" y="575" font-size="9.5" fill="#4B5563" text-anchor="middle">điều kiện A ∧ R ∧ F không? Có đối thủ?</text>
+
+  <line x1="288" y1="552" x2="312" y2="552" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="316,552 306,547 306,557" fill="#6B7280"/>
+
+  <rect x="320" y="526" width="240" height="52" rx="6" fill="#FFFFFF" stroke="#D97706" stroke-width="1.5"/>
+  <text x="440" y="546" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">Câu 2 (loại Type 3)</text>
+  <text x="440" y="563" font-size="9.5" fill="#4B5563" text-anchor="middle">Có sự kiện cấu trúc nào SAU cutoff</text>
+  <text x="440" y="575" font-size="9.5" fill="#4B5563" text-anchor="middle">làm đổi state không?</text>
+
+  <line x1="564" y1="552" x2="588" y2="552" stroke="#6B7280" stroke-width="1.6"/>
+  <polygon points="592,552 582,547 582,557" fill="#6B7280"/>
+
+  <rect x="596" y="526" width="224" height="52" rx="6" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="708" y="546" font-size="10.5" font-weight="700" fill="#15803D" text-anchor="middle">Còn lại = Type 1</text>
+  <text x="708" y="563" font-size="9.5" fill="#4B5563" text-anchor="middle">CHỈ LÚC NÀY mới bắt đầu</text>
+  <text x="708" y="575" font-size="9.5" fill="#4B5563" text-anchor="middle">phân tích thị trường</text>
+
+  <rect x="44" y="590" width="776" height="40" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-dasharray="5 3"/>
+  <text x="58" y="607" font-size="10.5" font-weight="700" fill="#B91C1C">VÌ SAO PHẢI CÓ SNAPSHOT BẤT BIẾN:  Type 2 không tạo ra dấu hiệu nào ở thời điểm xảy ra.</text>
+  <text x="58" y="622" font-size="10" fill="#991B1B">Cách duy nhất phát hiện là audit lại quyết định TẠI CUTOFF, không nhìn kết quả. Nếu chỉ lưu ảnh sau khi trade xong, Type 2 là KHÔNG THỂ chẩn đoán.</text>
+</svg>

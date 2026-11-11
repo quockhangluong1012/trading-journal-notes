@@ -1,0 +1,44 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Ví dụ ĐÚNG — 1st FVG qualified, thuận bias, trong HTF PD array</text>
+<text x="24" y="54" font-size="12.5" fill="#6B7280">Bullish bias + bullish 1st FVG hợp lệ nằm trong daily FVG (HTF) + retest sạch trên M5.</text>
+<rect x="24" y="70" width="712" height="350" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<!-- HTF PD array zone -->
+<rect x="40" y="240" width="680" height="70" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="50" y="302" font-size="10" font-weight="700" fill="#166534">HTF PD array (daily FVG / discount)</text>
+<!-- opening range shade -->
+<rect x="150" y="90" width="130" height="220" fill="#FEF3C7" opacity="0.65"/>
+<text x="158" y="106" font-size="10" font-weight="700" fill="#B45309">Opening Range 09:30–10:00</text>
+<line x1="150" y1="90" x2="150" y2="310" stroke="#B45309" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="112" y="325" font-size="9.5" font-weight="700" fill="#B45309">09:30</text>
+<!-- pre-open small candles -->
+<line x1="70" y1="255" x2="70" y2="300" stroke="#DC2626" stroke-width="1.4"/><rect x="64.5" y="262" width="11" height="30" fill="#DC2626"/>
+<line x1="92" y1="258" x2="92" y2="298" stroke="#16A34A" stroke-width="1.4"/><rect x="86.5" y="266" width="11" height="28" fill="#16A34A"/>
+<line x1="114" y1="260" x2="114" y2="300" stroke="#DC2626" stroke-width="1.4"/><rect x="108.5" y="268" width="11" height="28" fill="#DC2626"/>
+<!-- 1st FVG bullish qualified -->
+<line x1="162" y1="268" x2="162" y2="305" stroke="#DC2626" stroke-width="1.4"/><rect x="156.5" y="272" width="11" height="30" fill="#DC2626"/>
+<line x1="184" y1="215" x2="184" y2="305" stroke="#16A34A" stroke-width="1.4"/><rect x="178.5" y="225" width="11" height="78" fill="#16A34A"/>
+<line x1="206" y1="180" x2="206" y2="240" stroke="#16A34A" stroke-width="1.4"/><rect x="200.5" y="190" width="11" height="48" fill="#16A34A"/>
+<rect x="162" y="240" width="160" height="28" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1.4"/>
+<text x="240" y="259" font-size="10" font-weight="700" fill="#1D4ED8">1st FVG (qualified)</text>
+<line x1="322" y1="240" x2="700" y2="240" stroke="#93C5FD" stroke-width="1.1" stroke-dasharray="4 3"/>
+<line x1="322" y1="268" x2="700" y2="268" stroke="#93C5FD" stroke-width="1.1" stroke-dasharray="4 3"/>
+<!-- up move then retrace to FVG (M5 retest) then continuation -->
+<line x1="240" y1="150" x2="240" y2="200" stroke="#16A34A" stroke-width="1.4"/><rect x="234.5" y="160" width="11" height="35" fill="#16A34A"/>
+<line x1="262" y1="165" x2="262" y2="258" stroke="#DC2626" stroke-width="1.4"/><rect x="256.5" y="175" width="11" height="70" fill="#DC2626"/>
+<line x1="284" y1="200" x2="284" y2="272" stroke="#DC2626" stroke-width="1.4"/><rect x="278.5" y="250" width="11" height="18" fill="#DC2626"/>
+<circle cx="284" cy="272" r="8" fill="none" stroke="#166534" stroke-width="2.2"/>
+<text x="296" y="290" font-size="10" font-weight="700" fill="#166534">retest FVG (M5) → CISD/MSS xác nhận</text>
+<!-- entry stop target markers -->
+<line x1="270" y1="255" x2="700" y2="255" stroke="#1D4ED8" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="640" y="250" font-size="9.5" font-weight="700" fill="#1D4ED8">Entry</text>
+<line x1="270" y1="308" x2="700" y2="308" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="640" y="322" font-size="9.5" font-weight="700" fill="#DC2626">Stop (sau far side FVG)</text>
+<line x1="270" y1="130" x2="700" y2="130" stroke="#166534" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="640" y="125" font-size="9.5" font-weight="700" fill="#166534">TP = ERL phía trên</text>
+<!-- continuation up -->
+<line x1="306" y1="150" x2="306" y2="255" stroke="#16A34A" stroke-width="1.4"/><rect x="300.5" y="160" width="11" height="90" fill="#16A34A"/>
+<line x1="328" y1="120" x2="328" y2="165" stroke="#16A34A" stroke-width="1.4"/><rect x="322.5" y="130" width="11" height="35" fill="#16A34A"/>
+<line x1="350" y1="110" x2="350" y2="145" stroke="#16A34A" stroke-width="1.4"/><rect x="344.5" y="120" width="11" height="22" fill="#16A34A"/>
+<path d="M370 250 Q450 190 700 135" fill="none" stroke="#166534" stroke-width="1.6" stroke-dasharray="4 4"/>
+</svg>

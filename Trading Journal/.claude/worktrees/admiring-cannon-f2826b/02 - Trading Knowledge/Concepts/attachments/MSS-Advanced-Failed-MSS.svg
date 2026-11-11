@@ -1,0 +1,38 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="440" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Failed MSS — nhận diện sớm và thoát đúng lúc</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">MSS hợp lệ vẫn có thể fail. Dấu hiệu quyết định: giá ĐÓNG NGƯỢC qua MSS level và GIỮ (acceptance) bên kia.</text>
+
+  <!-- Left: healthy MSS -->
+  <rect x="24" y="70" width="350" height="310" rx="8" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="38" y="94" font-size="13" font-weight="700" fill="#166534">MSS khỏe mạnh — respect displacement leg</text>
+  <line x1="50" y1="200" x2="340" y2="200" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="54" y="194" font-size="10" fill="#B91C1C">MSS level (LH bị phá)</text>
+  <path d="M60,130 L95,250 L120,210 L145,320 L185,155 L215,230 L240,205 L270,140 L300,165 L330,100" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="145" cy="320" r="8" fill="none" stroke="#F59E0B" stroke-width="2.3"/>
+  <text x="98" y="345" font-size="10" fill="#B45309">sweep SSL</text>
+  <rect x="170" y="235" width="90" height="22" fill="#3B82F6" opacity="0.16"/>
+  <text x="176" y="272" font-size="10" fill="#1D4ED8">FVG giữ được — retrace không đóng dưới</text>
+  <circle cx="215" cy="230" r="5.5" fill="#16A34A"/>
+  <text x="38" y="366" font-size="10.5" font-weight="700" fill="#166534">Retrace vào FVG rồi bật tiếp → shift thật, hold theo plan.</text>
+
+  <!-- Right: failed MSS -->
+  <rect x="386" y="70" width="350" height="310" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="400" y="94" font-size="13" font-weight="700" fill="#B91C1C">Failed MSS — acceptance ngược qua level</text>
+  <line x1="412" y1="200" x2="700" y2="200" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="416" y="194" font-size="10" fill="#B91C1C">MSS level</text>
+  <path d="M422,130 L455,250 L478,215 L502,320 L540,160 L565,240 L590,285 L615,265 L640,330 L670,360" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="502" cy="320" r="8" fill="none" stroke="#F59E0B" stroke-width="2.3"/>
+  <text x="450" y="345" font-size="10" fill="#B45309">sweep SSL</text>
+  <!-- close back below level + hold -->
+  <rect x="586" y="238" width="2" height="70" fill="#DC2626"/><rect x="580" y="245" width="13" height="55" fill="#DC2626" rx="1"/>
+  <text x="560" y="230" font-size="10" font-weight="700" fill="#B91C1C">① đóng nến NGƯỢC xuống qua level</text>
+  <rect x="612" y="255" width="2" height="55" fill="#DC2626"/><rect x="606" y="260" width="13" height="42" fill="#DC2626" rx="1"/>
+  <text x="600" y="322" font-size="10" font-weight="700" fill="#B91C1C">② nến sau GIỮ dưới level</text>
+  <text x="602" y="336" font-size="10" font-weight="700" fill="#B91C1C">= acceptance → failed</text>
+  <text x="400" y="366" font-size="10.5" font-weight="700" fill="#B91C1C">Hành động: thoát/không vào. Thường giá quay lại lấy nốt pool sâu hơn.</text>
+
+  <rect x="24" y="396" width="712" height="28" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="408" font-size="11" font-weight="700" fill="#92400E">Phân biệt: retrace SÂU vào FVG nhưng không ĐÓNG qua level = bình thường (chờ). Một nến đóng qua + một nến giữ = failed shift (hành động).</text>
+  <text x="36" y="421" font-size="11" fill="#92400E">Failed MSS cũng là THÔNG TIN: phía đối diện còn mạnh — thường dẫn tới sweep pool sâu hơn rồi mới đảo thật (kịch bản "sweep kép").</text>
+</svg>

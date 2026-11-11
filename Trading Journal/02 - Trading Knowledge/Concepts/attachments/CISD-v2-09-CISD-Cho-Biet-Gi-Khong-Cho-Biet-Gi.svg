@@ -1,0 +1,32 @@
+<svg viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs></defs>
+<rect x="1" y="1" width="998" height="398" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">CISD cho biết gì — và KHÔNG cho biết gì</text>
+<rect x="896.8" y="22" width="75.2" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="934.4" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">GIỚI HẠN</text>
+<text x="28.0" y="388.0" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start">Sơ đồ minh họa (synthetic) — giá trong hình là ví dụ, không phải dữ liệu thị trường thật.</text>
+<text x="28.0" y="86.0" font-size="14" font-weight="700" fill="#059669" text-anchor="start">CHO BIẾT (quan sát được)</text>
+<text x="512.0" y="86.0" font-size="14" font-weight="700" fill="#DC2626" text-anchor="start">KHÔNG CHO BIẾT</text>
+<rect x="28.0" y="100.0" width="460.0" height="55.6" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="40.0" y="123.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Chặng nến cùng chiều gần nhất đã bị lấy lại hoàn toàn TÍNH THEO GIÁ</text>
+<text x="40.0" y="140.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">ĐÓNG CỬA.</text>
+<rect x="28.0" y="163.6" width="460.0" height="55.6" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="40.0" y="187.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Ở thời điểm đóng nến đó, phía ngược chiều đủ mạnh để đưa giá về qua điểm</text>
+<text x="40.0" y="203.8" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">xuất phát của chặng.</text>
+<rect x="28.0" y="227.2" width="460.0" height="55.6" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="40.0" y="250.6" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Một mức giá cụ thể (mức CISD) để theo dõi: giá đóng lại phía bên kia → tín</text>
+<text x="40.0" y="267.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">hiệu yếu đi.</text>
+<rect x="28.0" y="290.8" width="460.0" height="55.6" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="40.0" y="314.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Một mốc thời gian: từ cây nến này trở đi mới có quyền nói “delivery đã đổi”</text>
+<text x="40.0" y="331.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">ở khung này.</text>
+<rect x="512.0" y="100.0" width="460.0" height="38.8" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.3"/>
+<text x="524.0" y="123.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Ai đã mua/bán và vì sao (không thấy được “Smart Money” trên OHLC).</text>
+<rect x="512.0" y="146.8" width="460.0" height="38.8" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.3"/>
+<text x="524.0" y="170.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Giá sẽ đi tiếp bao xa, hay có đi tiếp hay không.</text>
+<rect x="512.0" y="193.6" width="460.0" height="38.8" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.3"/>
+<text x="524.0" y="217.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Xu hướng lớn đã đổi (cần cấu trúc + khung lớn hơn).</text>
+<rect x="512.0" y="240.4" width="460.0" height="38.8" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.3"/>
+<text x="524.0" y="263.8" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Cấu trúc đã đổi (đó là việc của MSS/BOS).</text>
+<rect x="512.0" y="287.2" width="460.0" height="38.8" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.3"/>
+<text x="524.0" y="310.6" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Lệnh này có lợi thế thống kê (cần backtest của chính bạn).</text>
+</svg>

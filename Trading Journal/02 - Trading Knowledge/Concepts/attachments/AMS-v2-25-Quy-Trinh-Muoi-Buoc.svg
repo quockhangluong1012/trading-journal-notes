@@ -1,0 +1,109 @@
+<svg viewBox="0 0 1000 560" width="1000" height="560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="1" y="1" width="998" height="558" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">Quy trình mười bước đọc Advanced Market Structure</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Đi từ trái sang phải, từ trên xuống dưới. Không nhảy bước. Mỗi bước có một câu "dừng lại nếu…".</text>
+<rect x="876.2" y="22.0" width="95.8" height="24.0" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="924.1" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">QUY TRÌNH</text>
+<rect x="28.0" y="90.0" width="174.0" height="196.0" rx="10" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.8"/>
+<rect x="28.0" y="90.0" width="174.0" height="34.0" rx="10" fill="#6B7280" stroke="#6B7280" stroke-width="0"/>
+<text x="115.0" y="112.0" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1. Chọn MỘT khung</text>
+<text x="115.0" y="152.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">Ghi tên khung lên chart:</text>
+<text x="115.0" y="169.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">D1, H1 hoặc M5.</text>
+<rect x="36.0" y="222.0" width="158.0" height="52.0" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+<text x="115.0" y="241.0" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Dừng lại nếu:</text>
+<text x="115.0" y="260.0" font-size="9.6" font-weight="400" fill="#1F2937" text-anchor="middle">Đang trộn hai khung.</text>
+<line x1="203.0" y1="188.0" x2="217.0" y2="188.0" stroke="#6B7280" stroke-width="1.6"/>
+<polygon points="217.0,188.0 209.6,191.1 209.6,184.9" fill="#6B7280"/>
+<rect x="218.0" y="90.0" width="174.0" height="196.0" rx="10" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.8"/>
+<rect x="218.0" y="90.0" width="174.0" height="34.0" rx="10" fill="#9CA3AF" stroke="#9CA3AF" stroke-width="0"/>
+<text x="305.0" y="112.0" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2. Chấm đáy/đỉnh nhỏ</text>
+<text x="305.0" y="152.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">Mọi STL/STH đã được</text>
+<text x="305.0" y="169.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">nến bên phải xác nhận.</text>
+<rect x="226.0" y="222.0" width="158.0" height="52.0" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+<text x="305.0" y="241.0" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Dừng lại nếu:</text>
+<text x="305.0" y="260.0" font-size="9.6" font-weight="400" fill="#1F2937" text-anchor="middle">Nến chưa đóng → chưa chấm.</text>
+<line x1="393.0" y1="188.0" x2="407.0" y2="188.0" stroke="#6B7280" stroke-width="1.6"/>
+<polygon points="407.0,188.0 399.6,191.1 399.6,184.9" fill="#6B7280"/>
+<rect x="408.0" y="90.0" width="174.0" height="196.0" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.8"/>
+<rect x="408.0" y="90.0" width="174.0" height="34.0" rx="10" fill="#2563EB" stroke="#2563EB" stroke-width="0"/>
+<text x="495.0" y="112.0" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3. Lên cấp lần 1</text>
+<text x="495.0" y="152.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">STL thấp hơn hai STL</text>
+<text x="495.0" y="169.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">bên cạnh → ITL. Đỉnh: ITH.</text>
+<rect x="416.0" y="222.0" width="158.0" height="52.0" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+<text x="495.0" y="241.0" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Dừng lại nếu:</text>
+<text x="495.0" y="260.0" font-size="9.6" font-weight="400" fill="#1F2937" text-anchor="middle">Thiếu một bên → "ứng viên".</text>
+<line x1="583.0" y1="188.0" x2="597.0" y2="188.0" stroke="#6B7280" stroke-width="1.6"/>
+<polygon points="597.0,188.0 589.6,191.1 589.6,184.9" fill="#6B7280"/>
+<rect x="598.0" y="90.0" width="174.0" height="196.0" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.8"/>
+<rect x="598.0" y="90.0" width="174.0" height="34.0" rx="10" fill="#DC2626" stroke="#DC2626" stroke-width="0"/>
+<text x="685.0" y="112.0" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4. Lên cấp lần 2</text>
+<text x="685.0" y="152.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">ITL thấp hơn hai ITL</text>
+<text x="685.0" y="169.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">bên cạnh → LTL. Đỉnh: LTH.</text>
+<rect x="606.0" y="222.0" width="158.0" height="52.0" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+<text x="685.0" y="241.0" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Dừng lại nếu:</text>
+<text x="685.0" y="260.0" font-size="9.6" font-weight="400" fill="#1F2937" text-anchor="middle">Không có cũng bình thường.</text>
+<line x1="773.0" y1="188.0" x2="787.0" y2="188.0" stroke="#6B7280" stroke-width="1.6"/>
+<polygon points="787.0,188.0 779.6,191.1 779.6,184.9" fill="#6B7280"/>
+<rect x="788.0" y="90.0" width="174.0" height="196.0" rx="10" fill="#FFFFFF" stroke="#D97706" stroke-width="1.8"/>
+<rect x="788.0" y="90.0" width="174.0" height="34.0" rx="10" fill="#D97706" stroke="#D97706" stroke-width="0"/>
+<text x="875.0" y="112.0" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5. Đánh dấu mép phải</text>
+<text x="875.0" y="152.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">Đáy/đỉnh mới nhất luôn</text>
+<text x="875.0" y="169.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">là "ứng viên".</text>
+<rect x="796.0" y="222.0" width="158.0" height="52.0" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+<text x="875.0" y="241.0" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Dừng lại nếu:</text>
+<text x="875.0" y="260.0" font-size="9.6" font-weight="400" fill="#1F2937" text-anchor="middle">Không nâng cấp bằng cảm giác.</text>
+<rect x="28.0" y="312.0" width="174.0" height="196.0" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="1.8"/>
+<rect x="28.0" y="312.0" width="174.0" height="34.0" rx="10" fill="#059669" stroke="#059669" stroke-width="0"/>
+<text x="115.0" y="334.0" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">6. Đọc hướng từng cấp</text>
+<text x="115.0" y="374.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">Chuỗi ITL/ITH cao dần</text>
+<text x="115.0" y="391.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">hay thấp dần? STL/STH?</text>
+<rect x="36.0" y="444.0" width="158.0" height="52.0" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+<text x="115.0" y="463.0" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Dừng lại nếu:</text>
+<text x="115.0" y="482.0" font-size="9.6" font-weight="400" fill="#1F2937" text-anchor="middle">Lẫn lộn → ghi "không rõ".</text>
+<line x1="203.0" y1="410.0" x2="217.0" y2="410.0" stroke="#6B7280" stroke-width="1.6"/>
+<polygon points="217.0,410.0 209.6,413.1 209.6,406.9" fill="#6B7280"/>
+<rect x="218.0" y="312.0" width="174.0" height="196.0" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="1.8"/>
+<rect x="218.0" y="312.0" width="174.0" height="34.0" rx="10" fill="#059669" stroke="#059669" stroke-width="0"/>
+<text x="305.0" y="334.0" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">7. Tìm swing giữ cấu trúc</text>
+<text x="305.0" y="374.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">Đáy nào đã đẩy giá vượt</text>
+<text x="305.0" y="391.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">đỉnh? Đó là protected low.</text>
+<rect x="226.0" y="444.0" width="158.0" height="52.0" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+<text x="305.0" y="463.0" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Dừng lại nếu:</text>
+<text x="305.0" y="482.0" font-size="9.6" font-weight="400" fill="#1F2937" text-anchor="middle">Chưa vượt đỉnh → chưa protected.</text>
+<line x1="393.0" y1="410.0" x2="407.0" y2="410.0" stroke="#6B7280" stroke-width="1.6"/>
+<polygon points="407.0,410.0 399.6,413.1 399.6,406.9" fill="#6B7280"/>
+<rect x="408.0" y="312.0" width="174.0" height="196.0" rx="10" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.8"/>
+<rect x="408.0" y="312.0" width="174.0" height="34.0" rx="10" fill="#7C3AED" stroke="#7C3AED" stroke-width="0"/>
+<text x="495.0" y="334.0" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">8. Trong / ngoài + liquidity</text>
+<text x="495.0" y="374.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">Hai mép ITH–ITL. Đáy/đỉnh</text>
+<text x="495.0" y="391.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">nào chưa bị xuyên qua?</text>
+<rect x="416.0" y="444.0" width="158.0" height="52.0" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+<text x="495.0" y="463.0" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Dừng lại nếu:</text>
+<text x="495.0" y="482.0" font-size="9.6" font-weight="400" fill="#1F2937" text-anchor="middle">Đã bị xuyên → gạch bỏ.</text>
+<line x1="583.0" y1="410.0" x2="597.0" y2="410.0" stroke="#6B7280" stroke-width="1.6"/>
+<polygon points="597.0,410.0 589.6,413.1 589.6,406.9" fill="#6B7280"/>
+<rect x="598.0" y="312.0" width="174.0" height="196.0" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.8"/>
+<rect x="598.0" y="312.0" width="174.0" height="34.0" rx="10" fill="#DC2626" stroke="#DC2626" stroke-width="0"/>
+<text x="685.0" y="334.0" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">9. Theo dõi phá vỡ</text>
+<text x="685.0" y="374.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">Râu hay thân? Cấp nào?</text>
+<text x="685.0" y="391.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">Có lực (displacement)?</text>
+<rect x="606.0" y="444.0" width="158.0" height="52.0" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+<text x="685.0" y="463.0" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Dừng lại nếu:</text>
+<text x="685.0" y="482.0" font-size="9.6" font-weight="400" fill="#1F2937" text-anchor="middle">Một nến chưa đủ để kết luận.</text>
+<line x1="773.0" y1="410.0" x2="787.0" y2="410.0" stroke="#6B7280" stroke-width="1.6"/>
+<polygon points="787.0,410.0 779.6,413.1 779.6,406.9" fill="#6B7280"/>
+<rect x="788.0" y="312.0" width="174.0" height="196.0" rx="10" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.8"/>
+<rect x="788.0" y="312.0" width="174.0" height="34.0" rx="10" fill="#1F2937" stroke="#1F2937" stroke-width="0"/>
+<text x="875.0" y="334.0" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">10. Ghép ba khung</text>
+<text x="875.0" y="374.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">D1 → H1 → M5. Mỗi nhãn</text>
+<text x="875.0" y="391.0" font-size="11.2" font-weight="400" fill="#1F2937" text-anchor="middle">kèm tên khung.</text>
+<rect x="796.0" y="444.0" width="158.0" height="52.0" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+<text x="875.0" y="463.0" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Dừng lại nếu:</text>
+<text x="875.0" y="482.0" font-size="9.6" font-weight="400" fill="#1F2937" text-anchor="middle">M5 không được cãi lại D1.</text>
+<line x1="875.0" y1="287.0" x2="875.0" y2="300.0" stroke="#6B7280" stroke-width="1.2"/>
+<polygon points="875.0,300.0 871.9,292.6 878.1,292.6" fill="#6B7280"/>
+<line x1="875.0" y1="300.0" x2="115.0" y2="300.0" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="115.0" y1="300.0" x2="115.0" y2="311.0" stroke="#6B7280" stroke-width="1.2"/>
+<polygon points="115.0,311.0 111.9,303.6 118.1,303.6" fill="#6B7280"/>
+<text x="500.0" y="545.0" font-size="11" font-weight="400" fill="#6B7280" text-anchor="middle">Thay đổi so với quy trình gốc: bỏ "xác định hướng" ở bước đầu (hướng là KẾT QUẢ của việc phân loại, không phải đầu vào) và thêm bước "mép phải".</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo2MDE2YjU5NC04ODdiLTQ0ZWYtODNkNi03OTcwMzY2NDY0OWIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaFhlenU+xz8Tii1gH911/UoAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozZDViYTE4ZS0wNzc4LTRlZWMtOTkwNy05OGJlNjdiZjUyMzdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoISLzcAPmJCPJZUDSSMMyNQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggxvN5XOSKkzEywQZFb8sQQ4Wn237Um6oadWUshqK3hIekZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaOKzDZvEMjm+BOsisqnZe2IAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIEaqgBoZW/1HZ7Sp3DyCJ7OhlSgUfutSXzsMo7h1FLk8ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTJPZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjYwMTZiNTk0LTg4N2ItNDRlZi04M2Q2LTc5NzAzNjY0NjQ5Yi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmUwZmEzZTU0LTkzODYtNGE4Ni05YWFlLTk3MTg4YWEwOTRhYnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDG83lc5IqTMTLBBkVvyxBDhafbftSbqhp1ZSyGoreEh6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggDBejn30fMhIp6oJay7cMqIVKZlqlc3drVuVimURVDgCiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggUctnT5BTaYpkgcd7pSRlcrJRo/JrPnuyHkDAoigwgct0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQELhIT19S/I7Wb/KwvWPg35zMxV1S6IrLrXhgoTZ0bkfX3kQyjv/4UAMAuBrRSL1DNJVGzsVPvI1aln/SODNF3g=</c2pa:manifest></metadata></svg>

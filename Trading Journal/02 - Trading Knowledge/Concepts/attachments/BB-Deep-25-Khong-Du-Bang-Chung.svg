@@ -1,0 +1,88 @@
+<svg viewBox="0 0 980 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+
+<rect x="0" y="0" width="980" height="560" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="26.0" y="34.0" font-size="18" font-weight="700" fill="#1F2937" text-anchor="start">Không đủ bằng chứng để kết luận — UNCLEAR là một đầu ra HỢP LỆ</text>
+<text x="26.0" y="56.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Ví dụ dựng: vùng đi ngang chồng chéo. Có thể vẽ “breaker” ở ba chỗ tùy cách chọn swing — dấu hiệu định nghĩa không áp dụng được ở đây.</text>
+<rect x="884.0" y="18" width="70.0" height="22" rx="11" fill="#F3F4F6" stroke="#D8DBE2"/>
+<text x="919.0" y="33.0" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">UNCLEAR</text>
+<rect x="20.0" y="74.0" width="600.0" height="400.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="32.0" y="95.0" font-size="13" font-weight="700" fill="#334155" text-anchor="start">H1 — range chồng chéo</text>
+<line x1="41.9" y1="286.6" x2="41.9" y2="310.0" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="35.8" y="289.0" width="12.3" height="12.2" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="61.8" y1="298.1" x2="61.8" y2="310.2" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="55.6" y="301.2" width="12.3" height="2.8" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="81.7" y1="293.7" x2="81.7" y2="317.0" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="75.5" y="304.0" width="12.3" height="5.1" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="101.5" y1="298.5" x2="101.5" y2="351.3" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="95.4" y="309.1" width="12.3" height="30.2" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="121.4" y1="303.6" x2="121.4" y2="345.7" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="115.2" y="313.3" width="12.3" height="26.0" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="141.2" y1="215.6" x2="141.2" y2="345.1" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="135.1" y="251.9" width="12.3" height="61.4" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="161.1" y1="227.2" x2="161.1" y2="256.3" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="154.9" y="228.7" width="12.3" height="23.2" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="181.0" y1="214.9" x2="181.0" y2="294.8" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="174.8" y="228.7" width="12.3" height="44.2" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="200.8" y1="266.2" x2="200.8" y2="312.1" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="194.7" y="272.9" width="12.3" height="26.5" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="220.7" y1="265.7" x2="220.7" y2="387.6" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="214.5" y="299.3" width="12.3" height="60.1" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="240.6" y1="278.8" x2="240.6" y2="392.1" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="234.4" y="289.6" width="12.3" height="69.8" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="260.4" y1="284.2" x2="260.4" y2="305.1" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="254.3" y="289.6" width="12.3" height="5.8" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="280.3" y1="213.2" x2="280.3" y2="321.4" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="274.1" y="243.8" width="12.3" height="51.6" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="300.1" y1="232.5" x2="300.1" y2="277.2" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="294.0" y="243.8" width="12.3" height="22.3" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="320.0" y1="232.9" x2="320.0" y2="339.1" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="313.8" y="266.1" width="12.3" height="56.0" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="339.9" y1="319.4" x2="339.9" y2="383.1" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="333.7" y="322.1" width="12.3" height="47.4" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="359.7" y1="317.0" x2="359.7" y2="376.0" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="353.6" y="328.4" width="12.3" height="41.1" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="379.6" y1="230.8" x2="379.6" y2="350.6" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="373.4" y="265.3" width="12.3" height="63.1" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="399.4" y1="211.8" x2="399.4" y2="276.8" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="393.3" y="218.6" width="12.3" height="46.7" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="419.3" y1="207.9" x2="419.3" y2="258.9" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="413.2" y="218.6" width="12.3" height="36.2" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="439.2" y1="236.6" x2="439.2" y2="301.3" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="433.0" y="254.8" width="12.3" height="30.9" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="459.0" y1="269.6" x2="459.0" y2="339.2" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="452.9" y="285.7" width="12.3" height="33.5" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="478.9" y1="302.0" x2="478.9" y2="326.3" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="472.7" y="311.9" width="12.3" height="7.3" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="498.8" y1="290.4" x2="498.8" y2="321.8" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="492.6" y="299.2" width="12.3" height="12.7" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="518.6" y1="162.7" x2="518.6" y2="345.5" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="512.5" y="208.6" width="12.3" height="90.6" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="538.5" y1="207.5" x2="538.5" y2="229.7" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="532.3" y="208.6" width="12.3" height="16.2" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="558.3" y1="217.2" x2="558.3" y2="231.0" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="552.2" y="223.6" width="12.3" height="1.4" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="578.2" y1="214.5" x2="578.2" y2="230.9" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="572.0" y="223.6" width="12.3" height="4.2" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="598.1" y1="213.9" x2="598.1" y2="270.4" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="591.9" y="227.9" width="12.3" height="31.0" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<text x="161.1" y="217.2" font-size="10.5" font-weight="700" fill="#334155" text-anchor="middle">H1?</text>
+<text x="280.3" y="203.2" font-size="10.5" font-weight="700" fill="#334155" text-anchor="middle">H1?</text>
+<text x="399.4" y="201.8" font-size="10.5" font-weight="700" fill="#334155" text-anchor="middle">H1?</text>
+<text x="220.7" y="405.6" font-size="10.5" font-weight="700" fill="#9CA3AF" text-anchor="middle">L1?</text>
+<text x="339.9" y="401.1" font-size="10.5" font-weight="700" fill="#9CA3AF" text-anchor="middle">L1?</text>
+<line x1="518.6" y1="162.7" x2="498.6" y2="134.7" stroke="#B45309" stroke-width="1" stroke-dasharray="2,2"/>
+<text x="498.6" y="128.7" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">đóng trên đỉnh nào?</text>
+<rect x="636.0" y="74.0" width="324.0" height="400.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="648.0" y="95.0" font-size="13" font-weight="700" fill="#334155" text-anchor="start">Vì sao giữ UNCLEAR</text>
+<text x="650.0" y="116.0" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">• Nhiều đỉnh/đáy gần bằng nhau → không có swing</text>
+<text x="650.0" y="131.7" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">nào nổi bật về cấp.</text>
+<text x="650.0" y="155.5" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">• Cú “phá” chỉ vượt đỉnh gần nhất một chút rồi đi</text>
+<text x="650.0" y="171.2" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">ngang → không có hệ quả cấu trúc.</text>
+<text x="650.0" y="194.9" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">• Đổi cách chọn swing → đổi vùng breaker. Một định</text>
+<text x="650.0" y="210.7" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">nghĩa tốt không được nhạy như vậy.</text>
+<text x="650.0" y="234.4" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">• Kết luận đúng: “chưa xác định”. Ghi lại để thống kê</text>
+<text x="650.0" y="250.1" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">tần suất UNCLEAR, không ép thành nhãn.</text>
+<rect x="20.0" y="486.0" width="940.0" height="33.5" rx="8" fill="#FFFBEB" stroke="#B45309" stroke-width="1.2"/>
+<rect x="20.0" y="486.0" width="4.0" height="33.5" rx="2" fill="#B45309"/>
+<text x="32.0" y="507.4" font-size="11.4" font-weight="400" fill="#1F2937" text-anchor="start">Một hệ thống trung thực có tỷ lệ UNCLEAR khác 0. Nếu journal của bạn không bao giờ có UNCLEAR, khả năng cao là bạn đang gán nhãn sau khi đã biết kết quả.</text>
+</svg>

@@ -1,0 +1,1 @@
+Link: [ICT Bread and Butter Sell-Setup — 4-Session Intraday Bearish Model](https://innercircletrader.net/tutorials/ict-bread-and-butter/)

@@ -1,0 +1,114 @@
+<svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="0.8" y="0.8" width="998.5" height="618.5" rx="14" fill="#FBFBFD" stroke="#DADDE3" stroke-width="1.5"/>
+<text x="28.0" y="42.0" font-size="20" font-weight="700" fill="#111827">Mười kiểu CHoCH “giả” hoặc chưa đủ cơ sở (6–10)</text>
+<rect x="877.1" y="23.0" width="94.9" height="24.0" rx="12" fill="#F3F4F6" stroke="#DADDE3" stroke-width="1"/>
+<text x="924.6" y="39.5" font-size="10.5" font-weight="700" fill="#4B5563" text-anchor="middle">SƠ ĐỒ DỰNG</text>
+<text x="28.0" y="66.0" font-size="13" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Ô 6 là quan trọng nhất: một CHoCH có ĐỦ mọi bằng chứng vẫn có thể thất bại. Không có bộ điều kiện nào biến một cảnh báo thành chắc chắn.</text>
+<rect x="28.0" y="92.5" width="180.0" height="470.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<circle cx="52.0" cy="113.5" r="10.0" fill="#B91C1C" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="52.0" y="117.4" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="69.0" y="118.0" font-size="12" font-weight="700" fill="#B91C1C" data-bx="68.0,197.0">Có quét, xu hướng</text>
+<text x="69.0" y="133.6" font-size="12" font-weight="700" fill="#B91C1C" data-bx="68.0,197.0">cũ vẫn chạy</text>
+<line x1="105.0" y1="246.0" x2="196.1" y2="246.0" stroke="#B45309" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="90.1" y1="266.8" x2="196.1" y2="266.8" stroke="#7C3AED" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3,3"/>
+<polyline points="47.3,191.8 65.9,241.8 80.8,216.8 99.4,266.8 114.3,246.0 127.3,279.3 145.9,233.5 158.9,254.3 170.1,241.8 188.7,300.1" fill="none" stroke="#111827" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="65.9" cy="241.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="80.8" cy="216.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="99.4" cy="266.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="114.3" cy="246.0" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="127.3" cy="279.3" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="145.9" cy="233.5" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="158.9" cy="254.3" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="170.1" cy="241.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="188.7" cy="300.1" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="127.3" y="293.3" font-size="9.5" font-weight="700" fill="#7C3AED" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="32.0,204.0">quét</text>
+<text x="145.9" y="225.5" font-size="9.5" font-weight="700" fill="#C026D3" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="32.0,204.0">CHoCH</text>
+<text x="40.0" y="382.5" font-size="11.3" font-weight="400" fill="#111827" data-bx="39.0,197.0">Có đủ: quét, CHoCH. Vẫn</text>
+<text x="40.0" y="398.5" font-size="11.3" font-weight="400" fill="#111827" data-bx="39.0,197.0">thất bại. Đây là thất bại</text>
+<text x="40.0" y="414.6" font-size="11.3" font-weight="400" fill="#111827" data-bx="39.0,197.0">BÌNH THƯỜNG của một xác</text>
+<text x="40.0" y="430.6" font-size="11.3" font-weight="400" fill="#111827" data-bx="39.0,197.0">suất, không phải lỗi nhận</text>
+<text x="40.0" y="446.6" font-size="11.3" font-weight="400" fill="#111827" data-bx="39.0,197.0">diện.</text>
+<rect x="218.0" y="92.5" width="180.0" height="470.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<circle cx="242.0" cy="113.5" r="10.0" fill="#B91C1C" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="242.0" y="117.4" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">7</text>
+<text x="259.0" y="118.0" font-size="12" font-weight="700" fill="#B91C1C" data-bx="258.0,387.0">FVG không giữ</text>
+<rect x="317.8" y="241.8" width="26.3" height="20.8" rx="2" fill="#0891B2" fill-opacity="0.2" stroke="#0891B2" stroke-width="1.2"/>
+<line x1="298.2" y1="246.0" x2="386.0" y2="246.0" stroke="#B45309" stroke-width="1.2" stroke-linecap="round"/>
+<polyline points="237.8,191.8 257.3,241.8 272.9,216.8 292.4,266.8 308.0,246.0 321.7,279.3 341.2,221.0 360.7,266.8 378.2,291.8" fill="none" stroke="#111827" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="257.3" cy="241.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="272.9" cy="216.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="292.4" cy="266.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="308.0" cy="246.0" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="321.7" cy="279.3" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="341.2" cy="221.0" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="360.7" cy="266.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="378.2" cy="291.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="341.2" y="213.0" font-size="9.5" font-weight="700" fill="#C026D3" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="222.0,394.0">CHoCH</text>
+<text x="360.7" y="280.8" font-size="9.5" font-weight="700" fill="#B91C1C" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="222.0,394.0">xuyên FVG</text>
+<text x="230.0" y="382.5" font-size="11.3" font-weight="400" fill="#111827" data-bx="229.0,387.0">Giá quay về xuyên qua FVG</text>
+<text x="230.0" y="398.5" font-size="11.3" font-weight="400" fill="#111827" data-bx="229.0,387.0">của cú phá, đóng bên dưới.</text>
+<text x="230.0" y="414.6" font-size="11.3" font-weight="400" fill="#111827" data-bx="229.0,387.0">Lý do để vào lệnh ở đó đã</text>
+<text x="230.0" y="430.6" font-size="11.3" font-weight="400" fill="#111827" data-bx="229.0,387.0">mất.</text>
+<rect x="408.0" y="92.5" width="180.0" height="470.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<circle cx="432.0" cy="113.5" r="10.0" fill="#B91C1C" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="432.0" y="117.4" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">8</text>
+<text x="449.0" y="118.0" font-size="12" font-weight="700" fill="#B91C1C" data-bx="448.0,577.0">Phá rồi reclaim</text>
+<text x="449.0" y="133.6" font-size="12" font-weight="700" fill="#B91C1C" data-bx="448.0,577.0">nhanh</text>
+<line x1="495.8" y1="246.0" x2="575.8" y2="246.0" stroke="#B45309" stroke-width="1.2" stroke-linecap="round"/>
+<polyline points="428.8,191.8 450.4,241.8 467.7,216.8 489.4,266.8 506.6,246.0 521.8,271.0 534.8,239.7 545.6,258.5 567.2,291.8" fill="none" stroke="#111827" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="450.4" cy="241.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="467.7" cy="216.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="489.4" cy="266.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="506.6" cy="246.0" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="521.8" cy="271.0" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="534.8" cy="239.7" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="545.6" cy="258.5" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="567.2" cy="291.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="534.8" y="231.7" font-size="9.5" font-weight="700" fill="#C026D3" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="412.0,584.0">đóng trên</text>
+<text x="545.6" y="272.5" font-size="9.5" font-weight="700" fill="#B91C1C" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="412.0,584.0">đóng lại dưới</text>
+<text x="420.0" y="382.5" font-size="11.3" font-weight="400" fill="#111827" data-bx="419.0,577.0">Đóng qua mức một nến rồi</text>
+<text x="420.0" y="398.5" font-size="11.3" font-weight="400" fill="#111827" data-bx="419.0,577.0">ngay nến sau đóng ngược</text>
+<text x="420.0" y="414.6" font-size="11.3" font-weight="400" fill="#111827" data-bx="419.0,577.0">trở lại. Chưa bao giờ lên G2.</text>
+<rect x="598.0" y="92.5" width="180.0" height="470.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<circle cx="622.0" cy="113.5" r="10.0" fill="#B91C1C" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="622.0" y="117.4" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">9</text>
+<text x="639.0" y="118.0" font-size="12" font-weight="700" fill="#B91C1C" data-bx="638.0,767.0">Ngược D1</text>
+<line x1="685.8" y1="241.8" x2="765.8" y2="241.8" stroke="#B45309" stroke-width="1.2" stroke-linecap="round"/>
+<polyline points="618.8,300.1 640.4,258.5 657.7,275.1 679.4,216.8 696.6,241.8 709.6,229.3 722.6,250.1 739.9,208.5 757.2,175.1" fill="none" stroke="#111827" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="640.4" cy="258.5" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="657.7" cy="275.1" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="679.4" cy="216.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="696.6" cy="241.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="709.6" cy="229.3" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="722.6" cy="250.1" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="739.9" cy="208.5" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="757.2" cy="175.1" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="722.6" y="264.1" font-size="9.5" font-weight="700" fill="#C026D3" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="602.0,774.0">M5 CHoCH ↓</text>
+<text x="746.4" y="171.3" font-size="9.5" font-weight="700" fill="#2563EB" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="602.0,774.0">D1 tăng tiếp</text>
+<text x="610.0" y="382.5" font-size="11.3" font-weight="400" fill="#111827" data-bx="609.0,767.0">CHoCH khung nhỏ chống lại</text>
+<text x="610.0" y="398.5" font-size="11.3" font-weight="400" fill="#111827" data-bx="609.0,767.0">xu hướng khung lớn, không</text>
+<text x="610.0" y="414.6" font-size="11.3" font-weight="400" fill="#111827" data-bx="609.0,767.0">ở POI lớn nào. Thường chỉ là</text>
+<text x="610.0" y="430.6" font-size="11.3" font-weight="400" fill="#111827" data-bx="609.0,767.0">một nhịp hồi.</text>
+<rect x="788.0" y="92.5" width="180.0" height="470.0" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<circle cx="812.0" cy="113.5" r="10.0" fill="#B91C1C" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="812.0" y="117.4" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">10</text>
+<text x="829.0" y="118.0" font-size="12" font-weight="700" fill="#B91C1C" data-bx="828.0,957.0">Nến tin tức</text>
+<line x1="875.8" y1="246.0" x2="955.8" y2="246.0" stroke="#B45309" stroke-width="1.2" stroke-linecap="round"/>
+<polyline points="808.8,191.8 830.4,241.8 847.7,216.8 869.4,266.8 886.6,246.0 897.5,254.3 903.9,208.5 910.4,271.0 929.9,258.5 947.2,291.8" fill="none" stroke="#111827" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="830.4" cy="241.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="847.7" cy="216.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="869.4" cy="266.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="886.6" cy="246.0" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="897.5" cy="254.3" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="903.9" cy="208.5" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="910.4" cy="271.0" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="929.9" cy="258.5" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="947.2" cy="291.8" r="2.8" fill="#111827" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="903.9" y="200.5" font-size="9.5" font-weight="700" fill="#C026D3" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="792.0,964.0">giật lên</text>
+<text x="910.4" y="285.0" font-size="9.5" font-weight="700" fill="#B91C1C" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="792.0,964.0">giật xuống</text>
+<text x="800.0" y="382.5" font-size="11.3" font-weight="400" fill="#111827" data-bx="799.0,957.0">Một nến tin quét cả hai phía.</text>
+<text x="800.0" y="398.5" font-size="11.3" font-weight="400" fill="#111827" data-bx="799.0,957.0">Spread giãn, râu dài. Cấu</text>
+<text x="800.0" y="414.6" font-size="11.3" font-weight="400" fill="#111827" data-bx="799.0,957.0">trúc trong phút đó ít có ý</text>
+<text x="800.0" y="430.6" font-size="11.3" font-weight="400" fill="#111827" data-bx="799.0,957.0">nghĩa.</text>
+<text x="28.0" y="604.0" font-size="12" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Mỗi thất bại phải được ghi lại trong backtest như mọi mẫu khác — loại bỏ chúng sau khi đã biết kết quả là hindsight.</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTphNjNhOTEyNS01YTE5LTQyNTktYmNlNy01ODAyZjFkMzM2YmMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaCOA162uCZHDA4+WmHYku5wAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo3YWZkOGUxMy1lZjM4LTQ5NGYtYWFkNy1mOWI5ZjM5N2NkNDZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNozMiwC9I2XKruZYKKlOt+zgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggjkGRV8oeR4P45o/q0OQKMjeKcFAtySTGWU07TWVQVOWkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaAcoADiKdCx0It92m89brJEAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIDzbW7Q9Uz2f5hPbu7aKjJvdv/g+2gvv2wFW+q5exEcYZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTeyZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmE2M2E5MTI1LTVhMTktNDI1OS1iY2U3LTU4MDJmMWQzMzZiYy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjFjNjRhMTQzLTFmM2EtNDMyZi04YjYwLTRhMWYyNjY2NTQ5N3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCOQZFXyh5Hg/jmj+rQ5AoyN4pwUC3JJMZZTTtNZVBU5aJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggw1bX6OuP1/NrF3BB/fD8EmUHDFfW7cQ7WXK7Ahe7yv2iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggo0HKbV2ywl2ZAwXOPEbTg9FH6EY7EWTLvp95loNZmER0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQDs5UF/GI+XqchH1eCRF2u1pxKlYKyBlK3zHOxl5wXf+zJ/HMAhJ2LL/q/Gt9wbTn0RdusGWwh9Bksq9ww0Jl3M=</c2pa:manifest></metadata></svg>

@@ -1,3 +1,7 @@
 {
-  "cssTheme": ""
+  "theme": "obsidian",
+  "accentColor": "",
+  "baseFontSize": 18,
+  "nativeMenus": false,
+  "cssTheme": "Minimal"
 }

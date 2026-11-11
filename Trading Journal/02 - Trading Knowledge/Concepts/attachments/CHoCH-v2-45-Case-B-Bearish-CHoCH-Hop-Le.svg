@@ -1,0 +1,122 @@
+<svg viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="0.8" y="0.8" width="998.5" height="638.5" rx="14" fill="#FBFBFD" stroke="#DADDE3" stroke-width="1.5"/>
+<text x="28.0" y="42.0" font-size="20" font-weight="700" fill="#111827">Case B — Bearish CHoCH hợp lệ</text>
+<rect x="876.7" y="23.0" width="95.3" height="24.0" rx="12" fill="#F3F4F6" stroke="#DADDE3" stroke-width="1"/>
+<text x="924.4" y="39.5" font-size="10.5" font-weight="700" fill="#4B5563" text-anchor="middle">CASE STUDY</text>
+<text x="28.0" y="66.0" font-size="13" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Cấu trúc tăng → quét đỉnh → protected low bị phá bằng displacement → cấu trúc giảm thành hình.</text>
+<rect x="28.0" y="92.5" width="560.0" height="501.5" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<rect x="426.8" y="323.6" width="132.0" height="55.7" rx="2" fill="#0891B2" fill-opacity="0.14" stroke="#0891B2" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="281.6" y1="385.8" x2="492.8" y2="385.8" stroke="#B45309" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="6,4"/>
+<text x="283.6" y="401.8" font-size="10.5" font-weight="700" fill="#B45309" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="38.0,578.0">protected low</text>
+<line x1="334.4" y1="192.8" x2="426.8" y2="192.8" stroke="#7C3AED" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="4,3"/>
+<g>
+<line x1="50.6" y1="539.2" x2="50.6" y2="559.0" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="46.5" y="545.5" width="8.2" height="4.5" rx="1" fill="#0E9F6E"/>
+<line x1="63.8" y1="489.1" x2="63.8" y2="555.7" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="59.7" y="493.8" width="8.2" height="51.7" rx="1" fill="#0E9F6E"/>
+<line x1="77.0" y1="480.5" x2="77.0" y2="498.3" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="72.9" y="484.1" width="8.2" height="9.7" rx="1" fill="#0E9F6E"/>
+<line x1="90.2" y1="451.4" x2="90.2" y2="487.7" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="86.1" y="451.4" width="8.2" height="32.7" rx="1" fill="#0E9F6E"/>
+<line x1="103.4" y1="422.1" x2="103.4" y2="453.1" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="99.3" y="422.1" width="8.2" height="29.3" rx="1" fill="#0E9F6E"/>
+<line x1="116.6" y1="390.2" x2="116.6" y2="424.2" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="112.5" y="390.2" width="8.2" height="31.9" rx="1" fill="#0E9F6E"/>
+<line x1="129.8" y1="354.6" x2="129.8" y2="392.7" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="125.7" y="358.2" width="8.2" height="31.9" rx="1" fill="#0E9F6E"/>
+<line x1="143.0" y1="357.0" x2="143.0" y2="370.6" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="138.9" y="358.2" width="8.2" height="6.7" rx="1" fill="#E5484D"/>
+<line x1="156.2" y1="357.0" x2="156.2" y2="433.2" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="152.1" y="365.0" width="8.2" height="61.4" rx="1" fill="#E5484D"/>
+<line x1="169.4" y1="412.6" x2="169.4" y2="434.5" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="165.3" y="418.9" width="8.2" height="7.4" rx="1" fill="#0E9F6E"/>
+<line x1="182.6" y1="414.2" x2="182.6" y2="469.7" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="178.5" y="418.9" width="8.2" height="47.2" rx="1" fill="#E5484D"/>
+<line x1="195.8" y1="414.9" x2="195.8" y2="467.3" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="191.7" y="417.4" width="8.2" height="48.7" rx="1" fill="#0E9F6E"/>
+<line x1="209.0" y1="366.8" x2="209.0" y2="420.8" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="204.9" y="368.8" width="8.2" height="48.7" rx="1" fill="#0E9F6E"/>
+<line x1="222.2" y1="322.7" x2="222.2" y2="370.2" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="218.1" y="324.2" width="8.2" height="44.6" rx="1" fill="#0E9F6E"/>
+<line x1="235.4" y1="270.7" x2="235.4" y2="326.0" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="231.3" y="274.3" width="8.2" height="49.9" rx="1" fill="#0E9F6E"/>
+<line x1="248.6" y1="273.1" x2="248.6" y2="284.6" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="244.5" y="274.3" width="8.2" height="6.7" rx="1" fill="#E5484D"/>
+<line x1="261.8" y1="273.1" x2="261.8" y2="347.2" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="257.7" y="281.0" width="8.2" height="61.4" rx="1" fill="#E5484D"/>
+<line x1="275.0" y1="327.0" x2="275.0" y2="348.5" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="270.9" y="335.0" width="8.2" height="7.4" rx="1" fill="#0E9F6E"/>
+<line x1="288.2" y1="328.6" x2="288.2" y2="385.8" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="284.1" y="335.0" width="8.2" height="47.2" rx="1" fill="#E5484D"/>
+<line x1="301.4" y1="333.1" x2="301.4" y2="383.4" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="297.3" y="336.2" width="8.2" height="46.0" rx="1" fill="#0E9F6E"/>
+<line x1="314.6" y1="286.5" x2="314.6" y2="338.9" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="310.5" y="289.1" width="8.2" height="47.1" rx="1" fill="#0E9F6E"/>
+<line x1="327.8" y1="239.9" x2="327.8" y2="292.1" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="323.7" y="241.9" width="8.2" height="47.1" rx="1" fill="#0E9F6E"/>
+<line x1="341.0" y1="192.8" x2="341.0" y2="245.4" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="336.9" y="196.4" width="8.2" height="45.5" rx="1" fill="#0E9F6E"/>
+<line x1="354.2" y1="195.2" x2="354.2" y2="208.5" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="350.1" y="196.4" width="8.2" height="3.6" rx="1" fill="#E5484D"/>
+<line x1="367.4" y1="200.0" x2="367.4" y2="257.5" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="363.3" y="200.0" width="8.2" height="47.8" rx="1" fill="#E5484D"/>
+<line x1="380.6" y1="238.2" x2="380.6" y2="259.9" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="376.5" y="247.8" width="8.2" height="8.5" rx="1" fill="#E5484D"/>
+<line x1="393.8" y1="245.7" x2="393.8" y2="257.5" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="389.7" y="250.4" width="8.2" height="5.9" rx="1" fill="#0E9F6E"/>
+<line x1="407.0" y1="173.6" x2="407.0" y2="254.4" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="402.9" y="206.0" width="8.2" height="44.4" rx="1" fill="#0E9F6E"/>
+<line x1="420.2" y1="204.8" x2="420.2" y2="267.1" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="416.1" y="206.0" width="8.2" height="61.1" rx="1" fill="#E5484D"/>
+<line x1="433.4" y1="265.6" x2="433.4" y2="323.6" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="429.3" y="267.1" width="8.2" height="54.9" rx="1" fill="#E5484D"/>
+<line x1="446.6" y1="318.7" x2="446.6" y2="383.9" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="442.5" y="322.0" width="8.2" height="59.9" rx="1" fill="#E5484D"/>
+<line x1="459.8" y1="379.2" x2="459.8" y2="445.7" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="455.7" y="381.9" width="8.2" height="60.2" rx="1" fill="#E5484D"/>
+<line x1="473.0" y1="424.4" x2="473.0" y2="443.3" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="468.9" y="434.0" width="8.2" height="8.1" rx="1" fill="#0E9F6E"/>
+<line x1="486.2" y1="358.9" x2="486.2" y2="440.5" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="482.1" y="366.9" width="8.2" height="67.2" rx="1" fill="#0E9F6E"/>
+<line x1="499.4" y1="348.6" x2="499.4" y2="374.6" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="495.3" y="352.2" width="8.2" height="14.7" rx="1" fill="#0E9F6E"/>
+<line x1="512.6" y1="351.0" x2="512.6" y2="397.8" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="508.5" y="352.2" width="8.2" height="43.2" rx="1" fill="#E5484D"/>
+<line x1="525.8" y1="392.9" x2="525.8" y2="442.4" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="521.7" y="395.5" width="8.2" height="44.1" rx="1" fill="#E5484D"/>
+<line x1="539.0" y1="437.6" x2="539.0" y2="486.9" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="534.9" y="439.6" width="8.2" height="44.1" rx="1" fill="#E5484D"/>
+<line x1="552.2" y1="482.2" x2="552.2" y2="529.6" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="548.1" y="483.7" width="8.2" height="42.4" rx="1" fill="#E5484D"/>
+</g>
+<text x="182.6" y="484.7" font-size="10.5" font-weight="700" fill="#0E9F6E" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="38.0,578.0">HL1</text>
+<text x="288.2" y="413.8" font-size="10.5" font-weight="700" fill="#0E9F6E" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="38.0,578.0">HL2</text>
+<text x="341.0" y="184.8" font-size="10.5" font-weight="700" fill="#0E9F6E" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="38.0,578.0">HH</text>
+<text x="407.0" y="165.6" font-size="10.5" font-weight="700" fill="#7C3AED" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="38.0,578.0">quét</text>
+<text x="459.8" y="460.7" font-size="10.5" font-weight="700" fill="#C026D3" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="38.0,578.0">CHoCH G1</text>
+<text x="499.4" y="340.6" font-size="10.5" font-weight="700" fill="#E5484D" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="38.0,578.0">LH mới</text>
+<text x="544.3" y="544.6" font-size="10.5" font-weight="700" fill="#2563EB" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="38.0,578.0">BOS ↓ = G3</text>
+<rect x="600.0" y="92.5" width="372.0" height="501.5" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<rect x="614.0" y="106.5" width="119.0" height="20.0" rx="10.0" fill="#15803D" fill-opacity="0.12" stroke="#15803D" stroke-width="1"/>
+<text x="673.5" y="118.7" font-size="11" font-weight="700" fill="#15803D" text-anchor="middle">Valid CHoCH → G3</text>
+<text x="616.0" y="150.5" font-size="11" font-weight="700" fill="#6B7280">BỐI CẢNH</text>
+<text x="616.0" y="166.5" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">D1 đang ở premium của range, giá tới POI giảm của H1 (giả</text>
+<text x="616.0" y="182.9" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">định của case).</text>
+<text x="616.0" y="205.4" font-size="11" font-weight="700" fill="#6B7280">CẤU TRÚC</text>
+<text x="616.0" y="221.4" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">Tăng: HL1 → HH → HL2 → HH. Trạng thái khai báo: TĂNG,</text>
+<text x="616.0" y="237.9" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">lớp protected.</text>
+<text x="616.0" y="260.3" font-size="11" font-weight="700" fill="#6B7280">CHỌN SWING</text>
+<text x="616.0" y="276.3" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">HL2 = gốc của chân tăng đã vượt đỉnh trước → protected</text>
+<text x="616.0" y="292.8" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">low.</text>
+<text x="616.0" y="315.3" font-size="11" font-weight="700" fill="#6B7280">CHUỖI GIÁ</text>
+<text x="616.0" y="331.3" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">Quét đỉnh HH → nến giảm thân to → thân nến đóng dưới</text>
+<text x="616.0" y="347.8" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">HL2, để lại FVG.</text>
+<text x="616.0" y="370.2" font-size="11" font-weight="700" fill="#6B7280">PHÂN LOẠI</text>
+<text x="616.0" y="386.2" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">Valid CHoCH G1; lên G2 khi hồi bị từ chối dưới FVG; G3 khi</text>
+<text x="616.0" y="402.7" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">thủng đáy CHoCH.</text>
+<text x="616.0" y="425.2" font-size="11" font-weight="700" fill="#6B7280">HÀM Ý</text>
+<text x="616.0" y="441.2" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">Ứng viên Short khi giá hồi vào FVG; stop trên đỉnh quét.</text>
+<text x="616.0" y="463.7" font-size="11" font-weight="700" fill="#6B7280">VÔ HIỆU</text>
+<text x="616.0" y="479.7" font-size="11.6" font-weight="400" fill="#111827" data-bx="615.0,957.0">Thân nến đóng trên đỉnh quét → câu chuyện giảm sai.</text>
+<text x="28.0" y="624.0" font-size="12" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Ảnh gương của case A. Sơ đồ dựng, số minh họa.</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYToxNjk5ZDZhYi0xYWQ5LTRkMWYtOGFiYi04ZGQ1OWY5ZDBkNDIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaEV5EWiNMcLiGhyGT09qhvkAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo5ZTg0Mzk1MC02Y2E5LTRlNDMtYWRjYy1jNjhkOTRmYWQ1ZGNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoT8CXZEFPXTfofBPMOUWiuQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg97WMq6lsUPPRptbZyArsU4C+o5WDDMX+OHIzNwnHQtOkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaOoBLJW8XI8/f/YFL1qwQrsAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIKn6BZRH5kSceUEdD/UR7jX1Inj0rAy1qGZI1Rqoxbr6ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTDhZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjE2OTlkNmFiLTFhZDktNGQxZi04YWJiLThkZDU5ZjlkMGQ0Mi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjg1MjZlYjkyLTg5NDMtNGFmNy1hNWFhLTU3YTQzOGI1NjYwYXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCD3tYyrqWxQ89Gm1tnICuxTgL6jlYMMxf44cjM3CcdC06JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggtEkkwY52mpMZvqxQC5ZL/6PEGm6ekA+pSdxheieKq0GiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggHcspcRB0vzVBGrQKIh70x9Sh3Bt1/oxb5/9izYHNzld0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQPtJ1vqdyh69Rlqjs5QbBgDd5MLW5DC8mgJWk7IT3cqYad9Vtxk6xhao+wT1oorAByjw5dEZXEqWETGkCLgA7K8=</c2pa:manifest></metadata></svg>

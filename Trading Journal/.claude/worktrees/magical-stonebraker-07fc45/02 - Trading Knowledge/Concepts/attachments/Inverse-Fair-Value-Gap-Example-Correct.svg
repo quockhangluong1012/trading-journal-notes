@@ -1,0 +1,71 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Inverse FVG — Bullish FVG fail → đảo cực thành kháng cự</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Đóng nến XUYÊN qua FVG → retest → reject ngược hướng → Short</text>
+
+  <!-- Original bullish FVG zone -->
+  <rect x="150" y="180" width="500" height="46" fill="#3B82F6" opacity="0.14"/>
+  <text x="158" y="174" font-size="13" font-weight="700" fill="#1D4ED8">Bullish FVG (cũ)</text>
+
+  <!-- after flip it becomes resistance -->
+  <text x="470" y="244" font-size="13" font-weight="700" fill="#DC2626">→ IFVG (kháng cự sau khi flip)</text>
+
+  <!-- bullish FVG formation: 3 candles up -->
+  <rect x="160" y="240" width="2" height="70" fill="#16A34A"/>
+  <rect x="154" y="255" width="14" height="50" fill="#16A34A" rx="1"/>
+  <rect x="186" y="170" width="2" height="120" fill="#16A34A"/>
+  <rect x="180" y="185" width="14" height="95" fill="#16A34A" rx="1"/>
+  <rect x="212" y="130" width="2" height="60" fill="#16A34A"/>
+  <rect x="206" y="140" width="14" height="42" fill="#16A34A" rx="1"/>
+  <text x="150" y="330" font-size="12" fill="#374151">FVG tăng hình thành</text>
+
+  <!-- price stalls, then bearish displacement CLOSING through FVG -->
+  <rect x="238" y="135" width="2" height="60" fill="#DC2626"/>
+  <rect x="232" y="145" width="14" height="40" fill="#DC2626" rx="1"/>
+  <!-- big bearish candle closing below FVG -->
+  <rect x="264" y="150" width="2" height="180" fill="#DC2626"/>
+  <rect x="258" y="160" width="14" height="150" fill="#DC2626" rx="1"/>
+  <text x="278" y="300" font-size="13" font-weight="700" fill="#DC2626">Nến ĐÓNG xuyên FVG</text>
+
+  <!-- MSS line broken -->
+  <line x1="150" y1="245" x2="420" y2="245" stroke="#9333EA" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <text x="395" y="262" font-size="12" fill="#9333EA" font-weight="700">MSS bearish</text>
+
+  <!-- price drops, then retraces back UP to retest IFVG -->
+  <rect x="290" y="280" width="2" height="80" fill="#DC2626"/>
+  <rect x="284" y="295" width="14" height="55" fill="#DC2626" rx="1"/>
+  <rect x="316" y="250" width="2" height="90" fill="#16A34A"/>
+  <rect x="310" y="265" width="14" height="65" fill="#16A34A" rx="1"/>
+  <rect x="342" y="200" width="2" height="80" fill="#16A34A"/>
+  <rect x="336" y="215" width="14" height="55" fill="#16A34A" rx="1"/>
+  <!-- retest into IFVG zone -->
+  <rect x="368" y="185" width="2" height="55" fill="#16A34A"/>
+  <rect x="362" y="195" width="14" height="35" fill="#16A34A" rx="1"/>
+
+  <path d="M 340 300 L 372 205" stroke="#374151" stroke-width="1.5" marker-end="url(#a2)"/>
+  <text x="385" y="200" font-size="12" fill="#374151">Retest IFVG</text>
+
+  <!-- reject DOWN (entry) -->
+  <circle cx="375" cy="200" r="6" fill="#DC2626"/>
+  <text x="392" y="186" font-size="13" font-weight="700" fill="#DC2626">Entry Short tại retest</text>
+
+  <rect x="394" y="200" width="2" height="120" fill="#DC2626"/>
+  <rect x="388" y="220" width="14" height="90" fill="#DC2626" rx="1"/>
+  <rect x="420" y="280" width="2" height="100" fill="#DC2626"/>
+  <rect x="414" y="300" width="14" height="75" fill="#DC2626" rx="1"/>
+  <rect x="446" y="340" width="2" height="80" fill="#DC2626"/>
+  <rect x="440" y="355" width="14" height="55" fill="#DC2626" rx="1"/>
+
+  <!-- SSL target -->
+  <line x1="150" y1="410" x2="650" y2="410" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="540" y="404" font-size="13" font-weight="700" fill="#2563EB">SSL (target)</text>
+
+  <defs>
+    <marker id="a2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#374151"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="448" font-size="16" font-weight="700" fill="#16A34A">✓ Đúng</text>
+  <text x="78" y="448" font-size="13" fill="#374151">Chờ đóng nến xuyên FVG + MSS, rồi Short tại retest IFVG theo bias mới.</text>
+</svg>

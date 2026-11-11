@@ -1,0 +1,45 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Giải phẫu phân cấp khung — Top-down Analysis</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Ba tầng lồng nhau (nested): mỗi tầng trả lời đúng MỘT câu hỏi, rồi mới được xuống tầng kế tiếp.</text>
+
+  <!-- HTF outer box -->
+  <rect x="32" y="72" width="696" height="360" rx="10" fill="#FFFFFF" stroke="#3B82F6" stroke-width="2"/>
+  <text x="52" y="100" font-size="14" font-weight="700" fill="#1D4ED8">① HTF — Monthly / Weekly / Daily</text>
+  <text x="52" y="120" font-size="11.5" fill="#1D4ED8">Câu hỏi: "Đi đâu — vì sao?" → BIAS &amp; DRAW ON LIQUIDITY</text>
+  <rect x="52" y="132" width="200" height="20" fill="#3B82F6" opacity="0.12"/>
+  <text x="58" y="146" font-size="10" fill="#1D4ED8">Daily Bias · DOL · Premium/Discount</text>
+
+  <!-- Intermediate box nested -->
+  <rect x="70" y="164" width="626" height="230" rx="10" fill="#FBFBFD" stroke="#F59E0B" stroke-width="2"/>
+  <text x="90" y="190" font-size="14" font-weight="700" fill="#B45309">② Intermediate — H4 / H1</text>
+  <text x="90" y="210" font-size="11.5" fill="#B45309">Câu hỏi: "Phản ứng ở đâu?" → POI / PD-ARRAY &amp; RANGE</text>
+  <rect x="90" y="222" width="220" height="20" fill="#F59E0B" opacity="0.15"/>
+  <text x="96" y="236" font-size="10" fill="#92400E">POI cụ thể · IRL/ERL · Refine bias</text>
+
+  <!-- LTF box nested inside intermediate -->
+  <rect x="110" y="256" width="566" height="118" rx="10" fill="#FFFFFF" stroke="#16A34A" stroke-width="2"/>
+  <text x="130" y="282" font-size="14" font-weight="700" fill="#15803D">③ LTF — M15 / M5 / M1</text>
+  <text x="130" y="302" font-size="11.5" fill="#15803D">Câu hỏi: "Vào lúc nào, ở đâu chính xác?" → ENTRY &amp; TIMING</text>
+  <rect x="130" y="314" width="500" height="20" fill="#16A34A" opacity="0.12"/>
+  <text x="136" y="328" font-size="10" fill="#166534">Chờ giá tới POI trong Kill Zone → Sweep → MSS → Displacement → FVG/OB Entry</text>
+  <text x="130" y="350" font-size="10.5" fill="#374151">Gate: không có sweep/MSS trong POI → KHÔNG CÓ LỆNH</text>
+
+  <!-- flow arrows top-down -->
+  <path d="M400,152 L400,164" stroke="#1F2937" stroke-width="2.4" marker-end="url(#arrowTD)"/>
+  <path d="M400,242 L400,256" stroke="#1F2937" stroke-width="2.4" marker-end="url(#arrowTD)"/>
+  <defs>
+    <marker id="arrowTD" markerWidth="9" markerHeight="9" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1F2937"/>
+    </marker>
+  </defs>
+
+  <!-- consensus arrow on the right, side flow label -->
+  <text x="600" y="140" font-size="11" font-weight="700" fill="#1D4ED8">Bias</text>
+  <text x="600" y="230" font-size="11" font-weight="700" fill="#B45309">POI</text>
+  <text x="600" y="320" font-size="11" font-weight="700" fill="#15803D">Entry</text>
+
+  <rect x="32" y="410" width="696" height="56" rx="6" fill="#FEF3C7"/>
+  <text x="46" y="430" font-size="11.5" font-weight="700" fill="#92400E">Fractal lồng nhau: entry LTF chỉ có ý nghĩa khi nó là một mảnh khớp với POI Intermediate,</text>
+  <text x="46" y="448" font-size="11.5" font-weight="700" fill="#92400E">và POI Intermediate chỉ có ý nghĩa khi nó phục vụ đúng bias/draw đã dựng ở tầng HTF.</text>
+</svg>

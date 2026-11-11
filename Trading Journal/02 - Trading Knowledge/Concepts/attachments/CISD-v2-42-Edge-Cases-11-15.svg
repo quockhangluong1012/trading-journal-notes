@@ -1,0 +1,188 @@
+<svg viewBox="0 0 1000 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs></defs>
+<rect x="1" y="1" width="998" height="468" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">Edge cases 11–15: CISD, thanh khoản và cấu trúc</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Mỗi ô: bối cảnh → chuỗi giá → phân loại → vì sao → điều có thể xảy ra tiếp → kết luận được gì. Đường cam = mức CISD.</text>
+<rect x="872.8" y="22" width="99.2" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="922.4" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">EDGE CASES</text>
+<text x="28.0" y="458.0" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start">Sơ đồ minh họa (synthetic) — giá trong hình là ví dụ, không phải dữ liệu thị trường thật.</text>
+<rect x="28.0" y="91.0" width="180.0" height="230.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="40.0" y="113.0" font-size="13" font-weight="700" fill="#059669" text-anchor="start">11 · Sau sweep</text>
+<line x1="41.9" y1="178.8" x2="41.9" y2="212.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="38.5" y="190.0" width="6.8" height="11.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="53.6" y1="184.4" x2="53.6" y2="234.8" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="50.2" y="190.0" width="6.8" height="37.3" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="65.3" y1="219.9" x2="65.3" y2="275.8" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="61.9" y="227.3" width="6.8" height="37.3" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="77.0" y1="216.1" x2="77.0" y2="268.3" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="73.6" y="221.7" width="6.8" height="42.9" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="88.7" y1="182.6" x2="88.7" y2="227.3" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="85.3" y="188.2" width="6.8" height="33.6" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="100.4" y1="137.8" x2="100.4" y2="195.6" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="97.0" y="152.7" width="6.8" height="35.4" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="112.1" y1="147.1" x2="112.1" y2="186.3" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="108.7" y="152.7" width="6.8" height="28.0" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="123.9" y1="175.1" x2="123.9" y2="221.7" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="120.5" y="180.7" width="6.8" height="35.4" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="135.6" y1="210.5" x2="135.6" y2="257.2" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="132.2" y="216.1" width="6.8" height="35.4" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="147.3" y1="247.8" x2="147.3" y2="298.2" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="143.9" y="251.6" width="6.8" height="16.8" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="159.0" y1="208.7" x2="159.0" y2="273.9" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="155.6" y="212.4" width="6.8" height="55.9" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="170.7" y1="139.7" x2="170.7" y2="218.0" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="167.3" y="145.3" width="6.8" height="67.1" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="182.4" y1="141.6" x2="182.4" y2="171.4" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="179.0" y="145.3" width="6.8" height="3.7" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="36.0" y1="152.7" x2="200.0" y2="152.7" stroke="#D97706" stroke-width="1.6" stroke-dasharray="6,4"/>
+<line x1="36.0" y1="275.8" x2="200.0" y2="275.8" stroke="#1D4ED8" stroke-width="1.1" stroke-dasharray="3,3"/>
+<rect x="28.0" y="331.0" width="180.0" height="74.8" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="37.0" y="350.0" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">Quét SSL rồi CISD. → Trình tự</text>
+<text x="37.0" y="364.7" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">quen thuộc của ICT. Kết luận:</text>
+<text x="37.0" y="379.4" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">có điểm sai rõ ràng (đáy cú</text>
+<text x="37.0" y="394.1" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">quét).</text>
+<rect x="219.0" y="91.0" width="180.0" height="230.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="231.0" y="113.0" font-size="13" font-weight="700" fill="#DC2626" text-anchor="start">12 · Sweep, không CISD</text>
+<line x1="232.5" y1="169.3" x2="232.5" y2="195.1" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="229.3" y="177.9" width="6.3" height="8.6" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="243.4" y1="173.6" x2="243.4" y2="212.3" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="240.2" y="177.9" width="6.3" height="28.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="254.3" y1="200.8" x2="254.3" y2="243.8" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="251.2" y="206.5" width="6.3" height="28.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="265.3" y1="198.0" x2="265.3" y2="238.0" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="262.1" y="202.3" width="6.3" height="32.9" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="276.2" y1="172.2" x2="276.2" y2="206.5" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="273.0" y="176.5" width="6.3" height="25.8" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="287.1" y1="137.8" x2="287.1" y2="182.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="284.0" y="149.3" width="6.3" height="27.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="298.1" y1="145.0" x2="298.1" y2="175.1" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="294.9" y="149.3" width="6.3" height="21.5" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="309.0" y1="166.5" x2="309.0" y2="202.3" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="305.8" y="170.8" width="6.3" height="27.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="319.9" y1="193.7" x2="319.9" y2="229.5" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="316.8" y="198.0" width="6.3" height="27.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="330.9" y1="222.3" x2="330.9" y2="260.9" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="327.7" y="225.2" width="6.3" height="12.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="341.8" y1="206.5" x2="341.8" y2="242.3" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="338.6" y="210.8" width="6.3" height="27.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="352.7" y1="208.0" x2="352.7" y2="258.1" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="349.6" y="210.8" width="6.3" height="42.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="363.7" y1="249.5" x2="363.7" y2="281.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="360.5" y="253.8" width="6.3" height="21.5" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="374.6" y1="271.0" x2="374.6" y2="298.2" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="371.4" y="275.3" width="6.3" height="18.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="227.0" y1="149.3" x2="391.0" y2="149.3" stroke="#D97706" stroke-width="1.6" stroke-dasharray="6,4"/>
+<line x1="227.0" y1="243.8" x2="391.0" y2="243.8" stroke="#1D4ED8" stroke-width="1.1" stroke-dasharray="3,3"/>
+<rect x="219.0" y="331.0" width="180.0" height="74.8" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.3"/>
+<text x="228.0" y="350.0" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">Quét đáy nhưng không lấy lại</text>
+<text x="228.0" y="364.7" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">được chặng. → Không có CISD.</text>
+<text x="228.0" y="379.4" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">Kết luận: cú quét không phải</text>
+<text x="228.0" y="394.1" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">tín hiệu; giá đi tiếp xuống.</text>
+<rect x="410.0" y="91.0" width="180.0" height="230.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="422.0" y="113.0" font-size="13" font-weight="700" fill="#EA580C" text-anchor="start">13 · CISD trước sweep</text>
+<line x1="424.8" y1="178.5" x2="424.8" y2="197.7" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="420.9" y="183.3" width="7.9" height="9.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="438.5" y1="188.1" x2="438.5" y2="221.6" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="434.5" y="192.9" width="7.9" height="23.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="452.2" y1="212.0" x2="452.2" y2="247.9" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="448.2" y="216.8" width="7.9" height="23.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="465.8" y1="202.4" x2="465.8" y2="245.5" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="461.9" y="207.2" width="7.9" height="33.5" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="479.5" y1="168.9" x2="479.5" y2="212.0" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="475.5" y="173.7" width="7.9" height="33.5" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="493.2" y1="145.0" x2="493.2" y2="178.5" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="489.2" y="149.8" width="7.9" height="23.9" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="506.8" y1="145.0" x2="506.8" y2="197.7" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="502.9" y="149.8" width="7.9" height="40.7" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="520.5" y1="185.7" x2="520.5" y2="247.9" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="516.5" y="190.5" width="7.9" height="50.3" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="534.2" y1="235.9" x2="534.2" y2="298.2" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="530.2" y="240.7" width="7.9" height="47.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="547.8" y1="202.4" x2="547.8" y2="293.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="543.9" y="207.2" width="7.9" height="81.4" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="561.5" y1="137.8" x2="561.5" y2="212.0" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="557.5" y="142.6" width="7.9" height="64.6" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="418.0" y1="183.3" x2="582.0" y2="183.3" stroke="#D97706" stroke-width="1.6" stroke-dasharray="6,4"/>
+<line x1="418.0" y1="279.0" x2="582.0" y2="279.0" stroke="#1D4ED8" stroke-width="1.1" stroke-dasharray="3,3"/>
+<rect x="410.0" y="331.0" width="180.0" height="74.8" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.3"/>
+<text x="419.0" y="350.0" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">CISD khi đáy lớn chưa bị quét,</text>
+<text x="419.0" y="364.7" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">sau đó giá quay xuống quét. →</text>
+<text x="419.0" y="379.4" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">CISD sớm. Kết luận: thường chỉ</text>
+<text x="419.0" y="394.1" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">là nhịp hồi.</text>
+<rect x="601.0" y="91.0" width="180.0" height="230.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="613.0" y="113.0" font-size="13" font-weight="700" fill="#2563EB" text-anchor="start">14 · Cấu trúc không đổi</text>
+<line x1="613.8" y1="260.7" x2="613.8" y2="298.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="611.0" y="266.9" width="5.6" height="25.0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="623.5" y1="235.7" x2="623.5" y2="273.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="620.7" y="241.9" width="5.6" height="25.0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="633.1" y1="221.1" x2="633.1" y2="248.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="630.3" y="227.4" width="5.6" height="14.6" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="642.8" y1="221.1" x2="642.8" y2="246.1" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="640.0" y="227.4" width="5.6" height="12.5" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="652.4" y1="233.6" x2="652.4" y2="254.4" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="649.6" y="239.9" width="5.6" height="8.3" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="662.1" y1="214.9" x2="662.1" y2="254.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="659.3" y="221.1" width="5.6" height="27.1" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="671.7" y1="214.9" x2="671.7" y2="235.7" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="668.9" y="221.1" width="5.6" height="8.3" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="681.4" y1="198.2" x2="681.4" y2="235.7" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="678.6" y="204.5" width="5.6" height="25.0" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="691.0" y1="177.4" x2="691.0" y2="210.7" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="688.2" y="183.6" width="5.6" height="20.8" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="700.6" y1="160.7" x2="700.6" y2="189.9" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="697.8" y="167.0" width="5.6" height="16.7" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="710.3" y1="137.8" x2="710.3" y2="173.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="707.5" y="156.6" width="5.6" height="10.4" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="719.9" y1="150.3" x2="719.9" y2="181.6" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="717.1" y="156.6" width="5.6" height="18.7" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="729.6" y1="169.1" x2="729.6" y2="204.5" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="726.8" y="175.3" width="5.6" height="22.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="739.2" y1="192.0" x2="739.2" y2="239.9" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="736.4" y="198.2" width="5.6" height="35.4" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="748.9" y1="217.0" x2="748.9" y2="239.9" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="746.1" y="223.2" width="5.6" height="10.4" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="758.5" y1="217.0" x2="758.5" y2="244.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="755.7" y="223.2" width="5.6" height="14.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="609.0" y1="229.5" x2="773.0" y2="229.5" stroke="#D97706" stroke-width="1.6" stroke-dasharray="6,4"/>
+<line x1="609.0" y1="254.4" x2="773.0" y2="254.4" stroke="#4338CA" stroke-width="1.2" stroke-dasharray="4,3"/>
+<rect x="601.0" y="331.0" width="180.0" height="74.8" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.3"/>
+<text x="610.0" y="350.0" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">Bearish CISD nhưng HL vẫn giữ.</text>
+<text x="610.0" y="364.7" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">→ Delivery đổi, cấu trúc tăng</text>
+<text x="610.0" y="379.4" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">còn nguyên. Kết luận: chưa đủ</text>
+<text x="610.0" y="394.1" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">để gọi là đảo chiều.</text>
+<rect x="792.0" y="91.0" width="180.0" height="230.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="804.0" y="113.0" font-size="13" font-weight="700" fill="#059669" text-anchor="start">15 · CISD + MSS + lực</text>
+<line x1="805.9" y1="206.5" x2="805.9" y2="232.3" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="802.5" y="215.1" width="6.8" height="8.6" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="817.6" y1="210.8" x2="817.6" y2="249.5" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="814.2" y="215.1" width="6.8" height="28.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="829.3" y1="238.0" x2="829.3" y2="281.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="825.9" y="243.8" width="6.8" height="28.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="841.0" y1="235.2" x2="841.0" y2="275.3" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="837.6" y="239.5" width="6.8" height="32.9" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="852.7" y1="209.4" x2="852.7" y2="243.8" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="849.3" y="213.7" width="6.8" height="25.8" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="864.4" y1="175.1" x2="864.4" y2="219.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="861.0" y="186.5" width="6.8" height="27.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="876.1" y1="182.2" x2="876.1" y2="212.3" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="872.7" y="186.5" width="6.8" height="21.5" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="887.9" y1="203.7" x2="887.9" y2="239.5" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="884.5" y="208.0" width="6.8" height="27.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="899.6" y1="230.9" x2="899.6" y2="266.7" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="896.2" y="235.2" width="6.8" height="27.2" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="911.3" y1="259.5" x2="911.3" y2="298.2" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="907.9" y="262.4" width="6.8" height="12.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="923.0" y1="160.7" x2="923.0" y2="279.6" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="919.6" y="165.0" width="6.8" height="110.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="934.7" y1="153.6" x2="934.7" y2="175.1" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="931.3" y="157.9" width="6.8" height="7.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="946.4" y1="137.8" x2="946.4" y2="162.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="943.0" y="140.7" width="6.8" height="17.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="800.0" y1="186.5" x2="964.0" y2="186.5" stroke="#D97706" stroke-width="1.6" stroke-dasharray="6,4"/>
+<line x1="800.0" y1="175.1" x2="964.0" y2="175.1" stroke="#4338CA" stroke-width="1.2" stroke-dasharray="4,3"/>
+<rect x="792.0" y="331.0" width="180.0" height="74.8" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="801.0" y="350.0" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">Một nến mạnh đóng vượt cả</text>
+<text x="801.0" y="364.7" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">mức CISD và swing high, để lại</text>
+<text x="801.0" y="379.4" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">FVG. → Bằng chứng mạnh nhất.</text>
+<text x="801.0" y="394.1" font-size="10.5" font-weight="400" fill="#1F2937" text-anchor="start">Kết luận: vẫn cần bối cảnh HTF.</text>
+</svg>

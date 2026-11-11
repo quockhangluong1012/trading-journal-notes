@@ -1,0 +1,53 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">❌ Ví dụ SAI — "D1 xanh nên tôi long"</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Đuổi giá vào Premium, nhắm vào BSL pool đã mỏng → bị sweep và đảo chiều mạnh.</text>
+
+  <rect x="24" y="70" width="440" height="330" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="38" y="92" font-size="11.5" font-weight="700" fill="#B91C1C">D1 trước — nến xanh lớn</text>
+  <rect x="50" y="290" width="24" height="70" fill="#16A34A" rx="1"/>
+  <text x="40" y="374" font-size="9" fill="#4B5563">"Hôm qua tăng mạnh → bias long"</text>
+  <rect x="100" y="120" width="356" height="220" rx="4" fill="none" stroke="#9CA3AF" stroke-width="1.2"/>
+  <rect x="100" y="120" width="356" height="90" fill="#DC2626" opacity="0.10"/>
+  <rect x="100" y="210" width="356" height="130" fill="#16A34A" opacity="0.05"/>
+  <line x1="100" y1="210" x2="456" y2="210" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="410" y="205" font-size="9" fill="#6B7280">EQ</text>
+  <text x="110" y="145" font-size="9.5" fill="#B91C1C">Giá đã Ở SẴN trong Premium hôm nay</text>
+  <line x1="100" y1="155" x2="456" y2="155" stroke="#D97706" stroke-width="1.3" stroke-dasharray="6 4"/>
+  <text x="380" y="150" font-size="9" fill="#B45309">BSL cũ — pool đã mỏng</text>
+  <!-- chase entries -->
+  <rect x="130" y="255" width="12" height="50" fill="#16A34A" rx="1"/>
+  <rect x="155" y="230" width="12" height="45" fill="#16A34A" rx="1"/>
+  <circle cx="167" cy="232" r="4" fill="#DC2626"/>
+  <text x="112" y="222" font-size="8.5" fill="#B91C1C">entry đuổi #1</text>
+  <rect x="180" y="200" width="12" height="45" fill="#16A34A" rx="1"/>
+  <!-- judas spike into thin BSL -->
+  <rect x="205" y="160" width="12" height="55" fill="#16A34A" rx="1"/>
+  <circle cx="211" cy="162" r="9" fill="none" stroke="#D97706" stroke-width="2"/>
+  <circle cx="211" cy="180" r="4" fill="#DC2626"/>
+  <text x="170" y="132" font-size="8.5" font-weight="700" fill="#B45309">"phá đỉnh!" — entry đuổi #2</text>
+  <!-- reversal displacement down -->
+  <rect x="240" y="175" width="12" height="65" fill="#DC2626" rx="1"/>
+  <rect x="270" y="215" width="12" height="65" fill="#DC2626" rx="1"/>
+  <rect x="300" y="255" width="12" height="60" fill="#DC2626" rx="1"/>
+  <rect x="330" y="285" width="12" height="45" fill="#DC2626" rx="1"/>
+  <path d="M217 165 C 250 210, 280 260, 335 310" fill="none" stroke="#DC2626" stroke-width="2"/>
+  <polygon points="335,310 324,306 330,320" fill="#DC2626"/>
+  <text x="230" y="330" font-size="10" font-weight="700" fill="#B91C1C">Displacement thật đi XUỐNG — SL của cả 2 entry bị quét</text>
+
+  <rect x="480" y="70" width="256" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="494" y="92" font-size="12" font-weight="700" fill="#B91C1C">Lỗi cụ thể ở đây</text>
+  <text x="494" y="118" font-size="10.5" fill="#4B5563">• Bias dựng từ màu nến D1, không từ</text>
+  <text x="494" y="136" font-size="10.5" fill="#4B5563">  array-to-array delivery</text>
+  <text x="494" y="158" font-size="10.5" fill="#4B5563">• Không kiểm tra vị trí hiện tại trong</text>
+  <text x="494" y="176" font-size="10.5" fill="#4B5563">  dealing range → đang ở Premium</text>
+  <text x="494" y="198" font-size="10.5" fill="#4B5563">• Coi "phá đỉnh nhỏ" là confirmation,</text>
+  <text x="494" y="216" font-size="10.5" fill="#4B5563">  thực chất là Judas swing lấy BSL mỏng</text>
+  <text x="494" y="238" font-size="10.5" fill="#4B5563">• Vào thêm lệnh #2 để "khẳng định" bias</text>
+  <text x="494" y="256" font-size="10.5" fill="#4B5563">  → nhân đôi rủi ro cho cùng 1 lỗi gốc</text>
+  <rect x="494" y="272" width="228" height="1" fill="#E5E7EB"/>
+  <text x="494" y="294" font-size="11" font-weight="700" fill="#B91C1C">Bài học: bias phải trả lời được</text>
+  <text x="494" y="312" font-size="10.5" fill="#4B5563">"đích chưa bị deliver, mình đang ở</text>
+  <text x="494" y="330" font-size="10.5" fill="#4B5563">discount hay premium?" TRƯỚC khi</text>
+  <text x="494" y="348" font-size="10.5" fill="#4B5563">nhìn màu nến hôm trước.</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg viewBox="0 0 1000 760" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="0.8" y="0.8" width="998.5" height="758.5" rx="14" fill="#FBFBFD" stroke="#DADDE3" stroke-width="1.5"/>
+<text x="28.0" y="42.0" font-size="20" font-weight="700" fill="#111827">Cây quyết định: từ “có cây nến nào không?” tới “có lệnh không?”</text>
+<rect x="863.9" y="23.0" width="108.1" height="24.0" rx="12" fill="#F3F4F6" stroke="#DADDE3" stroke-width="1"/>
+<text x="917.9" y="39.5" font-size="10.5" font-weight="700" fill="#4B5563" text-anchor="middle">DECISION TREE</text>
+<text x="28.0" y="66.0" font-size="13" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Ba câu đầu là ĐỊNH NGHĨA (theo ICT). Câu 4 là bộ LỌC của bạn. Câu 5–6 là THỰC THI. Trả lời “không” ở đâu thì dừng ở đó.</text>
+<rect x="96.0" y="98.5" width="500.0" height="60.0" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+<circle cx="118.0" cy="128.5" r="11.0" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="118.0" y="132.8" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="140.0" y="124.5" font-size="12.6" font-weight="700" fill="#111827" data-bx="139.0,585.0">Có cây nến ngược màu tại đỉnh/đáy giữa (OB gốc) không?</text>
+<line x1="598.0" y1="128.5" x2="644.8" y2="128.5" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+<polygon points="650.0,128.5 644.2,132.4 644.2,124.6" fill="#6B7280"/>
+<text x="624.0" y="120.5" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="middle">không</text>
+<rect x="654.0" y="102.5" width="318.0" height="52.0" rx="9" fill="#6B7280" fill-opacity="0.07" stroke="#6B7280" stroke-width="1.2"/>
+<text x="668.0" y="124.5" font-size="11.6" font-weight="400" fill="#111827" data-bx="667.0,961.0">Không có gì để gọi tên. Dừng.</text>
+<line x1="346.0" y1="159.5" x2="346.0" y2="181.0" stroke="#15803D" stroke-width="2" stroke-linecap="round"/>
+<polygon points="346.0,185.5 342.7,180.5 349.3,180.5" fill="#15803D"/>
+<text x="358.0" y="174.5" font-size="10.5" font-weight="700" fill="#15803D">có</text>
+<rect x="96.0" y="186.5" width="500.0" height="60.0" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+<circle cx="118.0" cy="216.5" r="11.0" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="118.0" y="220.8" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="140.0" y="212.5" font-size="12.6" font-weight="700" fill="#111827" data-bx="139.0,585.0">Cực trị cũ (đáy/đỉnh có trước) đã bị vi phạm chưa?</text>
+<line x1="598.0" y1="216.5" x2="644.8" y2="216.5" stroke="#0D9488" stroke-width="2" stroke-linecap="round"/>
+<polygon points="650.0,216.5 644.2,220.4 644.2,212.6" fill="#0D9488"/>
+<text x="624.0" y="208.5" font-size="10.5" font-weight="700" fill="#0D9488" text-anchor="middle">không</text>
+<rect x="654.0" y="190.5" width="318.0" height="52.0" rx="9" fill="#0D9488" fill-opacity="0.07" stroke="#0D9488" stroke-width="1.2"/>
+<text x="668.0" y="212.5" font-size="11.6" font-weight="400" fill="#111827" data-bx="667.0,961.0">Nếu swing giữa vẫn bị phá: đó là Mitigation Block.</text>
+<line x1="346.0" y1="247.5" x2="346.0" y2="269.0" stroke="#15803D" stroke-width="2" stroke-linecap="round"/>
+<polygon points="346.0,273.5 342.7,268.5 349.3,268.5" fill="#15803D"/>
+<text x="358.0" y="262.5" font-size="10.5" font-weight="700" fill="#15803D">có</text>
+<rect x="96.0" y="274.5" width="500.0" height="60.0" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6"/>
+<circle cx="118.0" cy="304.5" r="11.0" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="118.0" y="308.8" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="140.0" y="300.5" font-size="12.6" font-weight="700" fill="#111827" data-bx="139.0,585.0">Thân nến đã ĐÓNG CỬA qua swing giữa chưa?</text>
+<line x1="598.0" y1="304.5" x2="644.8" y2="304.5" stroke="#B45309" stroke-width="2" stroke-linecap="round"/>
+<polygon points="650.0,304.5 644.2,308.4 644.2,300.6" fill="#B45309"/>
+<text x="624.0" y="296.5" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">không</text>
+<rect x="654.0" y="278.5" width="318.0" height="52.0" rx="9" fill="#B45309" fill-opacity="0.07" stroke="#B45309" stroke-width="1.2"/>
+<text x="668.0" y="300.5" font-size="11.6" font-weight="400" fill="#111827" data-bx="667.0,961.0">Mới là ứng viên. Chờ. Râu vượt qua chưa tính.</text>
+<line x1="346.0" y1="335.5" x2="346.0" y2="377.0" stroke="#15803D" stroke-width="2" stroke-linecap="round"/>
+<polygon points="346.0,381.5 342.7,376.5 349.3,376.5" fill="#15803D"/>
+<text x="358.0" y="350.5" font-size="10.5" font-weight="700" fill="#15803D">có</text>
+<rect x="96.0" y="382.5" width="500.0" height="60.0" rx="10" fill="#FFFFFF" stroke="#B45309" stroke-width="1.6"/>
+<circle cx="118.0" cy="412.5" r="11.0" fill="#B45309" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="118.0" y="416.8" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="140.0" y="408.5" font-size="12.6" font-weight="700" fill="#111827" data-bx="139.0,585.0">Bối cảnh khung lớn có ủng hộ không? (bias, DOL, vị trí)</text>
+<line x1="598.0" y1="412.5" x2="644.8" y2="412.5" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+<polygon points="650.0,412.5 644.2,416.4 644.2,408.6" fill="#6B7280"/>
+<text x="624.0" y="404.5" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="middle">không</text>
+<rect x="654.0" y="386.5" width="318.0" height="52.0" rx="9" fill="#6B7280" fill-opacity="0.07" stroke="#6B7280" stroke-width="1.2"/>
+<text x="668.0" y="408.5" font-size="11.6" font-weight="400" fill="#111827" data-bx="667.0,961.0">Breaker hợp lệ nhưng không dùng. Chỉ ghi chú.</text>
+<line x1="346.0" y1="443.5" x2="346.0" y2="485.0" stroke="#15803D" stroke-width="2" stroke-linecap="round"/>
+<polygon points="346.0,489.5 342.7,484.5 349.3,484.5" fill="#15803D"/>
+<text x="358.0" y="458.5" font-size="10.5" font-weight="700" fill="#15803D">có</text>
+<rect x="96.0" y="490.5" width="500.0" height="60.0" rx="10" fill="#FFFFFF" stroke="#15803D" stroke-width="1.6"/>
+<circle cx="118.0" cy="520.5" r="11.0" fill="#15803D" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="118.0" y="524.8" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="140.0" y="516.5" font-size="12.6" font-weight="700" fill="#111827" data-bx="139.0,585.0">Giá đã quay lại vùng chưa?</text>
+<line x1="598.0" y1="520.5" x2="644.8" y2="520.5" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+<polygon points="650.0,520.5 644.2,524.4 644.2,516.6" fill="#6B7280"/>
+<text x="624.0" y="512.5" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="middle">không</text>
+<rect x="654.0" y="494.5" width="318.0" height="52.0" rx="9" fill="#6B7280" fill-opacity="0.07" stroke="#6B7280" stroke-width="1.2"/>
+<text x="668.0" y="516.5" font-size="11.6" font-weight="400" fill="#111827" data-bx="667.0,961.0">Chờ. Nếu mục tiêu đạt trước → hết hạn, bỏ.</text>
+<line x1="346.0" y1="551.5" x2="346.0" y2="573.0" stroke="#15803D" stroke-width="2" stroke-linecap="round"/>
+<polygon points="346.0,577.5 342.7,572.5 349.3,572.5" fill="#15803D"/>
+<text x="358.0" y="566.5" font-size="10.5" font-weight="700" fill="#15803D">có</text>
+<rect x="96.0" y="578.5" width="500.0" height="60.0" rx="10" fill="#FFFFFF" stroke="#15803D" stroke-width="1.6"/>
+<circle cx="118.0" cy="608.5" r="11.0" fill="#15803D" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="118.0" y="612.8" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="140.0" y="604.5" font-size="12.6" font-weight="700" fill="#111827" data-bx="139.0,585.0">Khung nhỏ có sweep → MSS → displacement → FVG không?</text>
+<line x1="598.0" y1="608.5" x2="644.8" y2="608.5" stroke="#B91C1C" stroke-width="2" stroke-linecap="round"/>
+<polygon points="650.0,608.5 644.2,612.4 644.2,604.6" fill="#B91C1C"/>
+<text x="624.0" y="600.5" font-size="10.5" font-weight="700" fill="#B91C1C" text-anchor="middle">không</text>
+<rect x="654.0" y="582.5" width="318.0" height="52.0" rx="9" fill="#B91C1C" fill-opacity="0.07" stroke="#B91C1C" stroke-width="1.2"/>
+<text x="668.0" y="604.5" font-size="11.6" font-weight="400" fill="#111827" data-bx="667.0,961.0">Không có lệnh. Quan sát, ghi lại kết cục.</text>
+<line x1="70.0" y1="98.5" x2="70.0" y2="334.5" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+<line x1="70.0" y1="98.5" x2="80.0" y2="98.5" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+<line x1="70.0" y1="334.5" x2="80.0" y2="334.5" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+<text x="54" y="216.5" font-size="11.5" font-weight="700" fill="#2563EB" text-anchor="middle" transform="rotate(-90 54 216.5)">ĐỊNH NGHĨA</text>
+<line x1="70.0" y1="382.5" x2="70.0" y2="442.5" stroke="#B45309" stroke-width="3" stroke-linecap="round"/>
+<line x1="70.0" y1="382.5" x2="80.0" y2="382.5" stroke="#B45309" stroke-width="3" stroke-linecap="round"/>
+<line x1="70.0" y1="442.5" x2="80.0" y2="442.5" stroke="#B45309" stroke-width="3" stroke-linecap="round"/>
+<text x="54" y="412.5" font-size="11.5" font-weight="700" fill="#B45309" text-anchor="middle" transform="rotate(-90 54 412.5)">LỌC</text>
+<line x1="70.0" y1="490.5" x2="70.0" y2="638.5" stroke="#15803D" stroke-width="3" stroke-linecap="round"/>
+<line x1="70.0" y1="490.5" x2="80.0" y2="490.5" stroke="#15803D" stroke-width="3" stroke-linecap="round"/>
+<line x1="70.0" y1="638.5" x2="80.0" y2="638.5" stroke="#15803D" stroke-width="3" stroke-linecap="round"/>
+<text x="54" y="564.5" font-size="11.5" font-weight="700" fill="#15803D" text-anchor="middle" transform="rotate(-90 54 564.5)">THỰC THI</text>
+<text x="386.0" y="352.5" font-size="11.5" font-weight="700" fill="#2563EB" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round">← đủ ba câu: BREAKER ĐÃ XÁC NHẬN — khoá vùng</text>
+<line x1="346.0" y1="639.5" x2="346.0" y2="661.0" stroke="#15803D" stroke-width="2" stroke-linecap="round"/>
+<polygon points="346.0,665.5 342.7,660.5 349.3,660.5" fill="#15803D"/>
+<rect x="96.0" y="666.5" width="876.0" height="44.0" rx="10" fill="#15803D" fill-opacity="0.08" stroke="#15803D" stroke-width="1.5"/>
+<text x="116.0" y="693.5" font-size="12" font-weight="700" fill="#15803D">CÓ LỆNH: vào theo kế hoạch, mức dừng theo điều kiện “sai” đã chọn trước, mục tiêu là liquidity. Ghi nhật ký.</text>
+<text x="28.0" y="727.0" font-size="12" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Chỉ câu 1–3 đến từ lời ICT (và “thân nến đóng cửa” ở câu 3 là quy ước của note). Câu 4–6 là khung ICT 2022 của bạn, không phải điều kiện để một vùng ĐƯỢC</text>
+<text x="28.0" y="744.0" font-size="12" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">GỌI là Breaker.</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYToxOTk1MjVmZi0wZDYyLTQxMTYtOGRiZS0yY2IwZWQ0NWFkYzUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaKZW05cQLWot6Dy6m9eHIIoAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDowOTFlOWVlZS03MmE1LTQ3ZGEtOTZlNC0wYjg1YmY5MjIxZjlscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoEJkMS2ml+kj2exh6HvxnvAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggNrlPtnEJBAmNB+IM3ODwJCB3IpBtncbA1Y9nLrMt0hOkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaCTl5QGXCXLl+dI35xTX6p8AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIP4e83E9DRZzJ/1p6FlzdcMRd4RrktreKtH8mw0AvtLaZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSwSZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjE5OTUyNWZmLTBkNjItNDExNi04ZGJlLTJjYjBlZDQ1YWRjNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjA4OTQwZGY0LTdlYzAtNDljYi04MTRmLWM0NTk0MTkyNzEyMXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCA2uU+2cQkECY0H4gzc4PAkIHcikG2dxsDVj2cusy3SE6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggIETfwxn9XjIcqS9QfDZLcyPcqKWRjIpzBPdQQsOJC2CiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg1Z54Dj9T9JdRcqJQ0R1nqzKisxRmiEJ84j1kxYBE6qF0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQCfB++3Bw/qPIeBZ0D1Nfgprhq9vY+P1CxSH9/F+1c16g50f3D0WCf3lnlora1Wz32b6eG5pTjLibu1Xr0/2R5o=</c2pa:manifest></metadata></svg>

@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1000 450" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs></defs>
+<rect x="1" y="1" width="998" height="448" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">Năm loại câu nói về CÙNG MỘT CISD</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Sự kiện: nến #11 đóng trên open nến #6 sau khi #9 quét đáy cũ. Mỗi câu dưới đây thuộc một loại sự thật khác nhau. Lỗi phổ biến</text>
+<text x="28.0" y="81.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">nhất: đọc câu DIỄN GIẢI như thể nó là QUAN SÁT.</text>
+<rect x="876.0" y="22" width="96.0" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="924.0" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">FACT vs ICT</text>
+<text x="28.0" y="438.0" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start">Sơ đồ minh họa (synthetic) — giá trong hình là ví dụ, không phải dữ liệu thị trường thật.</text>
+<rect x="28.0" y="108.0" width="130.0" height="56.8" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="93.0" y="141.4" font-size="13" font-weight="700" fill="#059669" text-anchor="middle">[QUAN SÁT]</text>
+<rect x="168.0" y="108.0" width="540.0" height="56.8" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.3"/>
+<text x="180.0" y="131.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">“Close của nến #11 cao hơn open của nến #6. Low của #9 thấp hơn low của #2.”</text>
+<rect x="718.0" y="108.0" width="254.0" height="56.8" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="730.0" y="130.4" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">Ai nhìn chart cũng thấy giống nhau. Kiểm</text>
+<text x="730.0" y="145.8" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">chứng được 100%.</text>
+<rect x="28.0" y="172.8" width="130.0" height="56.8" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.3"/>
+<text x="93.0" y="206.2" font-size="13" font-weight="700" fill="#D97706" text-anchor="middle">[ICT]</text>
+<rect x="168.0" y="172.8" width="540.0" height="56.8" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.3"/>
+<text x="180.0" y="196.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">“Đây là bullish CISD sau một cú quét SSL — trạng thái giao giá đã chuyển sang</text>
+<text x="180.0" y="213.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">buy-side.”</text>
+<rect x="718.0" y="172.8" width="254.0" height="56.8" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.3"/>
+<text x="730.0" y="195.2" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">Tên gọi và cách đọc của framework. Đúng</text>
+<text x="730.0" y="210.7" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">TRONG framework.</text>
+<rect x="28.0" y="237.6" width="130.0" height="72.2" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.3"/>
+<text x="93.0" y="278.7" font-size="13" font-weight="700" fill="#2563EB" text-anchor="middle">[CƠ CHẾ]</text>
+<rect x="168.0" y="237.6" width="540.0" height="72.2" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.3"/>
+<text x="180.0" y="261.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">“Dưới đáy cũ thường có lệnh dừng lỗ của người mua; khi bị chạm, chúng thành lệnh bán</text>
+<text x="180.0" y="277.8" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">thị trường. Lệnh chờ mua bên dưới có thể hấp thụ chúng.”</text>
+<rect x="718.0" y="237.6" width="254.0" height="72.2" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.3"/>
+<text x="730.0" y="260.1" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">Giải thích bằng cách lệnh được khớp. Có cơ</text>
+<text x="730.0" y="275.4" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">sở nghiên cứu, nhưng ta KHÔNG thấy sổ</text>
+<text x="730.0" y="290.8" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">lệnh trên chart.</text>
+<rect x="28.0" y="317.8" width="130.0" height="56.8" rx="8" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.3"/>
+<text x="93.0" y="351.2" font-size="13" font-weight="700" fill="#EA580C" text-anchor="middle">[DIỄN GIẢI]</text>
+<rect x="168.0" y="317.8" width="540.0" height="56.8" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.3"/>
+<text x="180.0" y="341.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">“Smart Money đã gom hàng xong và đảo chiều.”</text>
+<rect x="718.0" y="317.8" width="254.0" height="56.8" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.3"/>
+<text x="730.0" y="340.2" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">Có thể hợp lý, nhưng không thể xác nhận từ</text>
+<text x="730.0" y="355.6" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">OHLC. Không biết ai, không biết ý định.</text>
+<rect x="28.0" y="382.6" width="130.0" height="56.8" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="1.3"/>
+<text x="93.0" y="416.0" font-size="13" font-weight="700" fill="#4338CA" text-anchor="middle">[GIẢ THUYẾT]</text>
+<rect x="168.0" y="382.6" width="540.0" height="56.8" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.3"/>
+<text x="180.0" y="406.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">“CISD sau sweep tại H1 POI có follow-through tốt hơn CISD giữa range.”</text>
+<rect x="718.0" y="382.6" width="254.0" height="56.8" rx="10" fill="#EEF2FF" stroke="#4338CA" stroke-width="1.3"/>
+<text x="730.0" y="405.1" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">Phải được kiểm chứng trên dữ liệu của</text>
+<text x="730.0" y="420.4" font-size="11" font-weight="400" fill="#1F2937" text-anchor="start">chính bạn → [BACKTEST REQUIRED].</text>
+</svg>

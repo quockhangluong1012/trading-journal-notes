@@ -1,0 +1,81 @@
+<svg viewBox="0 0 920 610" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="920" height="610" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="26" y="34" font-size="18" font-weight="700" fill="#1F2937">Structural significance ≠ visual size</text>
+  <text x="26" y="55" font-size="13" fill="#6B7280">Swing 220 point bị LOẠI. Swing 45 point được chọn làm neo. Lý do không nằm ở kích thước mà ở việc phá nó làm mất hiệu lực điều gì.</text>
+
+  <!-- ===== LEFT: Swing A ===== -->
+  <rect x="25" y="76" width="430" height="238" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="38" y="88" width="196" height="22" rx="5" fill="#FEE2E2"/>
+  <text x="46" y="104" font-size="12" font-weight="700" fill="#B91C1C">Swing A · biên độ 220 point</text>
+  <rect x="38" y="118" width="404" height="150" rx="5" fill="#FFFFFF" stroke="#EFF1F5"/>
+  <g transform="translate(50,122)">
+    <line x1="80" y1="30" x2="380" y2="30" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.7"/>
+    <path d="M 0,130 L 40,120 L 80,30 L 120,95 L 160,60 L 200,25 L 240,80 L 280,40 L 320,110 L 360,90 L 380,88"
+          fill="none" stroke="#374151" stroke-width="1.7"/>
+    <circle cx="80" cy="30" r="5" fill="none" stroke="#DC2626" stroke-width="2.2"/>
+    <text x="86" y="20" font-size="10.5" font-weight="700" fill="#B91C1C">A — đỉnh cao nhất chart</text>
+    <circle cx="200" cy="25" r="3.6" fill="#9CA3AF"/>
+    <text x="208" y="46" font-size="10" fill="#6B7280">giá đã vượt A bằng grind</text>
+    <text x="298" y="20" font-size="10" fill="#9CA3AF">(A đã bị vượt rồi)</text>
+  </g>
+  <rect x="38" y="278" width="404" height="24" rx="5" fill="#B91C1C" opacity="0.10"/>
+  <text x="46" y="294" font-size="11.5" font-weight="700" fill="#B91C1C">G2 = 0 → LOẠI (dù to nhất, dù nhìn “quan trọng” nhất)</text>
+
+  <!-- ===== RIGHT: Swing B ===== -->
+  <rect x="465" y="76" width="430" height="238" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="478" y="88" width="196" height="22" rx="5" fill="#DCFCE7"/>
+  <text x="486" y="104" font-size="12" font-weight="700" fill="#15803D">Swing B · biên độ 45 point</text>
+  <rect x="478" y="118" width="404" height="150" rx="5" fill="#FFFFFF" stroke="#EFF1F5"/>
+  <g transform="translate(490,122)">
+    <line x1="80" y1="45" x2="380" y2="45" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="5 4"/>
+    <rect x="132" y="52" width="36" height="26" fill="#3B82F6" opacity="0.18" stroke="#1D4ED8" stroke-width="0.9" stroke-dasharray="3 3"/>
+    <path d="M 0,60 L 40,92 L 80,45 L 110,120 L 140,58 L 180,25 L 220,55 L 260,35 L 300,80 L 340,60 L 380,55"
+          fill="none" stroke="#374151" stroke-width="1.7"/>
+    <circle cx="110" cy="120" r="5" fill="none" stroke="#16A34A" stroke-width="2.2"/>
+    <text x="24" y="136" font-size="10.5" font-weight="700" fill="#15803D">B — đáy nhỏ, 45 point</text>
+    <line x1="110" y1="120" x2="180" y2="25" stroke="#16A34A" stroke-width="2.4" opacity="0.55"/>
+    <text x="112" y="104" font-size="10" font-weight="700" fill="#15803D">leg displacement</text>
+    <text x="172" y="70" font-size="10" fill="#1D4ED8">FVG</text>
+    <text x="228" y="33" font-size="10" font-weight="700" fill="#374151">BOS — vượt đỉnh trước</text>
+  </g>
+  <rect x="478" y="278" width="404" height="24" rx="5" fill="#16A34A" opacity="0.12"/>
+  <text x="486" y="294" font-size="11.5" font-weight="700" fill="#15803D">G1 ✓ · G2 ✓ · G3 ✓ → NHẬN làm neo range</text>
+
+  <!-- ===== COMPARISON TABLE ===== -->
+  <rect x="25" y="330" width="870" height="212" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="38" y="352" font-size="12.5" font-weight="700" fill="#1F2937">Cùng một chart, hai swing — so sánh theo 6 tiêu chí</text>
+  <line x1="38" y1="362" x2="882" y2="362" stroke="#E5E7EB"/>
+  <text x="46" y="382" font-size="11" font-weight="700" fill="#6B7280">Tiêu chí</text>
+  <text x="290" y="382" font-size="11" font-weight="700" fill="#B91C1C">Swing A</text>
+  <text x="620" y="382" font-size="11" font-weight="700" fill="#15803D">Swing B</text>
+  <line x1="38" y1="390" x2="882" y2="390" stroke="#E5E7EB"/>
+
+  <text x="46" y="410" font-size="10.5" fill="#374151">Biên độ</text>
+  <text x="290" y="410" font-size="10.5" fill="#374151">220 point — to nhất trên chart</text>
+  <text x="620" y="410" font-size="10.5" fill="#374151">45 point</text>
+
+  <text x="46" y="432" font-size="10.5" fill="#374151">Phá nó làm gì?</text>
+  <text x="290" y="432" font-size="10.5" fill="#B91C1C">Không gì — giá đã vượt nó rồi</text>
+  <text x="620" y="432" font-size="10.5" fill="#15803D">Mất nhãn HL; chuỗi BOS mất hiệu lực</text>
+
+  <text x="46" y="454" font-size="10.5" fill="#374151">Displacement từ nó</text>
+  <text x="290" y="454" font-size="10.5" fill="#B91C1C">Không — bị vượt bằng grind</text>
+  <text x="620" y="454" font-size="10.5" fill="#15803D">Có — thân lớn + FVG M15</text>
+
+  <text x="46" y="476" font-size="10.5" fill="#374151">Liquidity tại đó</text>
+  <text x="290" y="476" font-size="10.5" fill="#374151">Đã bị quét (spent)</text>
+  <text x="620" y="476" font-size="10.5" fill="#374151">Chưa — equal lows phía dưới</text>
+
+  <text x="46" y="498" font-size="10.5" fill="#374151">Gate</text>
+  <text x="290" y="498" font-size="10.5" font-weight="700" fill="#B91C1C">G1 ✓ · G2 ✗</text>
+  <text x="620" y="498" font-size="10.5" font-weight="700" fill="#15803D">G1 ✓ · G2 ✓ · G3 ✓</text>
+
+  <line x1="38" y1="508" x2="882" y2="508" stroke="#E5E7EB"/>
+  <text x="46" y="527" font-size="11" font-weight="700" fill="#1F2937">Kết quả</text>
+  <text x="290" y="527" font-size="11" font-weight="700" fill="#B91C1C">LOẠI</text>
+  <text x="620" y="527" font-size="11" font-weight="700" fill="#15803D">NEO RANGE</text>
+
+  <rect x="25" y="556" width="870" height="40" rx="7" fill="#1F2937" opacity="0.05"/>
+  <text x="38" y="572" font-size="11" font-weight="700" fill="#1F2937">Lập luận: neo range có chức năng là MỐC THAM CHIẾU, không phải MỐC KÍCH THƯỚC.</text>
+  <text x="38" y="588" font-size="10.5" fill="#4B5563">Một mốc chỉ hoàn thành chức năng đó nếu có kết luận khác phụ thuộc vào nó. Đưa swing A vào neo sẽ nới rộng range giả tạo → pd bị nén về giữa → mọi vùng premium/discount mất nghĩa.</text>
+</svg>

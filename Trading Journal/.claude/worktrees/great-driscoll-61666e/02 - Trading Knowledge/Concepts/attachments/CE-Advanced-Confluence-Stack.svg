@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Confluence Stack — nhiều mức trùng nhau tại một vùng giá</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Khi CE trùng equilibrium, OTE 0.705, mép/CE của OB, và CE khung lớn hơn → "CE-on-CE" = confluence rất mạnh.</text>
+
+  <rect x="24" y="70" width="712" height="386" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- price axis on left -->
+  <text x="40" y="90" font-size="10.5" fill="#6B7280">Premium</text>
+  <text x="40" y="440" font-size="10.5" fill="#6B7280">Discount</text>
+  <line x1="70" y1="100" x2="70" y2="430" stroke="#D1D5DB" stroke-width="1"/>
+
+  <!-- The confluence zone highlighted -->
+  <rect x="90" y="240" width="500" height="70" fill="#F59E0B" opacity="0.14" stroke="#B45309" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="600" y="270" font-size="13" font-weight="700" fill="#B45309">VÙNG</text>
+  <text x="600" y="288" font-size="13" font-weight="700" fill="#B45309">CONFLUENCE</text>
+  <text x="600" y="306" font-size="10.5" fill="#B45309">— entry mạnh nhất</text>
+
+  <!-- Level 1: CE of FVG -->
+  <line x1="90" y1="258" x2="560" y2="258" stroke="#1D4ED8" stroke-width="2.2" stroke-dasharray="8 4"/>
+  <text x="96" y="253" font-size="10.5" font-weight="700" fill="#1D4ED8">① CE của FVG (khung giao dịch) = (high+low)/2</text>
+
+  <!-- Level 2: equilibrium dealing range -->
+  <line x1="90" y1="272" x2="560" y2="272" stroke="#6B7280" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="96" y="285" font-size="10.5" font-weight="700" fill="#374151">② Equilibrium (50%) của dealing range HTF</text>
+
+  <!-- Level 3: OTE 0.705 -->
+  <line x1="90" y1="288" x2="560" y2="288" stroke="#16A34A" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="96" y="301" font-size="10.5" font-weight="700" fill="#15803D">③ Mức OTE 0.705 (retrace Fibonacci)</text>
+
+  <!-- Level 4: OB edge / CE -->
+  <rect x="150" y="250" width="60" height="52" fill="#DC2626" opacity="0.12" stroke="#DC2626" stroke-width="1"/>
+  <line x1="150" y1="276" x2="210" y2="276" stroke="#DC2626" stroke-width="1.6"/>
+  <text x="150" y="322" font-size="10" font-weight="700" fill="#DC2626">④ Mép/CE của Order Block</text>
+
+  <!-- dealing range on the right showing full range -->
+  <line x1="640" y1="120" x2="640" y2="410" stroke="#9CA3AF" stroke-width="1.4"/>
+  <circle cx="640" cy="120" r="4" fill="#DC2626"/>
+  <text x="650" y="123" font-size="9.5" fill="#DC2626">Range high (BSL)</text>
+  <circle cx="640" cy="410" r="4" fill="#16A34A"/>
+  <text x="650" y="413" font-size="9.5" fill="#15803D">Range low (SSL)</text>
+  <line x1="632" y1="265" x2="648" y2="265" stroke="#6B7280" stroke-width="2"/>
+  <text x="650" y="268" font-size="9.5" fill="#374151">EQ 50%</text>
+
+  <!-- Larger TF FVG CE -->
+  <rect x="90" y="220" width="500" height="110" fill="none" stroke="#1D4ED8" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <line x1="90" y1="255" x2="120" y2="255" stroke="#1D4ED8" stroke-width="3"/>
+  <text x="96" y="210" font-size="10.5" font-weight="700" fill="#1D4ED8">⑤ CE của FVG khung LỚN hơn (H4/D1) chồng lên cùng vùng → CE-on-CE</text>
+
+  <!-- callout -->
+  <rect x="90" y="356" width="500" height="82" rx="6" fill="#FEF3C7"/>
+  <text x="102" y="378" font-size="11" font-weight="700" fill="#92400E">CE-on-CE giữa hai khung là confluence đắt giá nhất:</text>
+  <text x="102" y="398" font-size="10.5" fill="#92400E">CE của FVG khung nhỏ trùng CE của FVG khung lớn = cùng một mức "trung bình" được cả</text>
+  <text x="102" y="414" font-size="10.5" fill="#92400E">hai khung tôn trọng. Càng nhiều mức xếp chồng, xác suất phản ứng tại vùng càng cao —</text>
+  <text x="102" y="430" font-size="10.5" fill="#92400E">nhưng vẫn cần array gốc hợp lệ + sweep + đúng bias trước khi vào.</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg viewBox="0 0 760 490" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="490" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="32" font-size="18" font-weight="700" fill="#1F2937">Range SẠCH vs Range BẨN — khi nào SD còn nghĩa</text>
+  <text x="24" y="52" font-size="13" fill="#6B7280">Chất lượng range quyết định độ tin của SD. Range bẩn → bỏ phiên đó.</text>
+
+  <!-- LEFT panel: CLEAN -->
+  <rect x="24" y="66" width="348" height="360" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.6"/>
+  <rect x="24" y="66" width="348" height="26" rx="8" fill="#16A34A" opacity="0.12"/>
+  <text x="38" y="84" font-size="13" font-weight="700" fill="#15803D">Range SẠCH (~40 pip)</text>
+
+  <!-- clean SD lines evenly, price reaches +2 -->
+  <line x1="44" y1="150" x2="352" y2="150" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="48" y="145" font-size="9.5" font-weight="700" fill="#15803D">+2 SD</text>
+  <line x1="44" y1="200" x2="352" y2="200" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="48" y="195" font-size="9.5" fill="#166534">+1 SD</text>
+  <!-- narrow clean range -->
+  <rect x="120" y="248" width="90" height="30" fill="#374151" opacity="0.14" stroke="#374151" stroke-width="1"/>
+  <text x="126" y="240" font-size="9" fill="#374151">range hẹp, đo body</text>
+  <line x1="44" y1="248" x2="352" y2="248" stroke="#374151" stroke-width="1"/>
+  <line x1="44" y1="278" x2="352" y2="278" stroke="#374151" stroke-width="1"/>
+  <line x1="44" y1="326" x2="352" y2="326" stroke="#DC2626" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="48" y="340" font-size="9.5" fill="#B91C1C">-1 SD</text>
+  <!-- clean small candles in range then rally to +2 -->
+  <g stroke="#374151" stroke-width="1"><line x1="130" y1="252" x2="130" y2="274"/><line x1="150" y1="250" x2="150" y2="276"/><line x1="170" y1="253" x2="170" y2="273"/><line x1="190" y1="251" x2="190" y2="275"/></g>
+  <g fill="#374151"><rect x="126" y="256" width="8" height="14" rx="1"/><rect x="146" y="254" width="8" height="16" rx="1"/><rect x="166" y="257" width="8" height="12" rx="1"/><rect x="186" y="255" width="8" height="14" rx="1"/></g>
+  <path d="M194,263 L215,300 L235,270 L260,210 L300,170 L335,150" fill="none" stroke="#16A34A" stroke-width="2.6"/>
+  <circle cx="235" cy="300" r="6" fill="none" stroke="#F59E0B" stroke-width="2"/>
+  <text x="190" y="320" font-size="8.5" fill="#B45309">quét -1 SD nhẹ</text>
+  <circle cx="335" cy="150" r="5" fill="#16A34A"/>
+  <text x="250" y="118" font-size="10" font-weight="700" fill="#15803D">giá chạy tới +1/+2 SD</text>
+
+  <text x="38" y="402" font-size="10.5" fill="#15803D">✓ ít bóng, đo body, SD sắc nét → SD đáng tin</text>
+  <text x="38" y="418" font-size="10.5" fill="#15803D">✓ đủ điều kiện dùng SD làm target</text>
+
+  <!-- RIGHT panel: DIRTY -->
+  <rect x="388" y="66" width="348" height="360" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.6"/>
+  <rect x="388" y="66" width="348" height="26" rx="8" fill="#DC2626" opacity="0.10"/>
+  <text x="402" y="84" font-size="13" font-weight="700" fill="#B91C1C">Range BẨN (&gt;90 pip, tin tức)</text>
+
+  <!-- dirty SD lines pushed far, price stuck -->
+  <line x1="408" y1="112" x2="716" y2="112" stroke="#16A34A" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="412" y="108" font-size="9.5" fill="#166534">+1 SD (quá xa, vô nghĩa)</text>
+  <!-- wide dirty range with long wicks -->
+  <rect x="480" y="180" width="120" height="120" fill="#DC2626" opacity="0.07" stroke="#DC2626" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="486" y="172" font-size="9" fill="#B91C1C">range rộng, bóng dài, đo cả wick</text>
+  <line x1="408" y1="180" x2="716" y2="180" stroke="#374151" stroke-width="1"/>
+  <line x1="408" y1="300" x2="716" y2="300" stroke="#374151" stroke-width="1"/>
+  <line x1="408" y1="368" x2="716" y2="368" stroke="#DC2626" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="412" y="382" font-size="9.5" fill="#B91C1C">-1 SD (quá xa)</text>
+  <!-- long-wick candles -->
+  <g stroke="#374151" stroke-width="1.2">
+    <line x1="500" y1="185" x2="500" y2="290"/><line x1="530" y1="192" x2="530" y2="295"/>
+    <line x1="560" y1="188" x2="560" y2="285"/><line x1="590" y1="195" x2="590" y2="292"/>
+  </g>
+  <g fill="#6B7280">
+    <rect x="495" y="225" width="10" height="26" rx="1"/><rect x="525" y="235" width="10" height="22" rx="1"/>
+    <rect x="555" y="222" width="10" height="28" rx="1"/><rect x="585" y="238" width="10" height="20" rx="1"/>
+  </g>
+  <!-- price chops sideways, never reaches +1 -->
+  <path d="M500,240 L520,255 L545,235 L570,258 L600,240 L630,252 L660,238" fill="none" stroke="#DC2626" stroke-width="2" stroke-dasharray="3 2"/>
+  <text x="500" y="330" font-size="10" font-weight="700" fill="#B91C1C">giá lẹt đẹt, không tới +1 SD</text>
+
+  <text x="402" y="402" font-size="10.5" fill="#B91C1C">✗ bóng dài đẩy SD ra xa vô nghĩa</text>
+  <text x="402" y="418" font-size="10.5" fill="#B91C1C">✗ giá không chạm nổi +1 SD</text>
+
+  <rect x="24" y="440" width="712" height="34" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="461" font-size="12" font-weight="700" fill="#92400E">Kết luận: range bẩn (rộng/dính tin/nhiều bóng) → SD vô giá trị → BỎ PHIÊN. Chỉ tin SD khi range hẹp &amp; sạch.</text>
+</svg>

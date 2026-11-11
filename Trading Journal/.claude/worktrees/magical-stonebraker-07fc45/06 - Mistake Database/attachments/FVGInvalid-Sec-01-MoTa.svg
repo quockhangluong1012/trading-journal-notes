@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="470" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">FVG hợp lệ vs FVG không hợp lệ</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Không phải mọi khoảng trống 3 nến đều là POI để entry. Hợp lệ đòi hỏi nhiều điều kiện, không chỉ hình dạng.</text>
+
+  <!-- LEFT: valid FVG anatomy -->
+  <rect x="24" y="72" width="350" height="386" rx="8" fill="#FFFFFF" stroke="#16A34A"/>
+  <text x="40" y="96" font-size="13" font-weight="700" fill="#15803D">HỢP LỆ — sinh từ displacement, còn nguyên</text>
+  <!-- 3 candles bullish FVG -->
+  <line x1="110" y1="290" x2="110" y2="345" stroke="#B91C1C" stroke-width="1.3"/><rect x="100" y="300" width="20" height="30" fill="#DC2626"/>
+  <text x="90" y="362" font-size="9.5" fill="#6B7280">Nến 1</text>
+  <!-- big displacement candle -->
+  <line x1="170" y1="150" x2="170" y2="300" stroke="#15803D" stroke-width="1.4"/><rect x="160" y="165" width="20" height="120" fill="#16A34A"/>
+  <text x="150" y="378" font-size="9.5" fill="#6B7280">Nến 2 (displacement)</text>
+  <line x1="230" y1="150" x2="230" y2="210" stroke="#15803D" stroke-width="1.3"/><rect x="220" y="160" width="20" height="40" fill="#16A34A"/>
+  <text x="215" y="362" font-size="9.5" fill="#6B7280">Nến 3</text>
+  <!-- FVG gap: high of candle1 (y=290) to low of candle3 (y=200) -->
+  <rect x="100" y="200" width="140" height="90" fill="#3B82F6" fill-opacity="0.18" stroke="#1D4ED8" stroke-dasharray="4 3"/>
+  <text x="245" y="230" font-size="10.5" fill="#1D4ED8" font-weight="700">FVG</text>
+  <line x1="100" y1="245" x2="240" y2="245" stroke="#1D4ED8" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="245" y="250" font-size="9" fill="#1D4ED8">CE (50%)</text>
+  <text x="100" y="196" font-size="9" fill="#6B7280">high nến 1</text>
+  <text x="100" y="300" font-size="9" fill="#6B7280"> </text>
+  <rect x="40" y="388" width="318" height="58" rx="5" fill="#DCFCE7" stroke="#16A34A" stroke-opacity="0.5"/>
+  <text x="50" y="408" font-size="10" fill="#166534">Khe = high(nến1) → low(nến3), do displacement tạo,</text>
+  <text x="50" y="426" font-size="10" fill="#166534">chưa bị chạm, đúng phía Discount + bias HTF.</text>
+
+  <!-- RIGHT: invalid FVG -->
+  <rect x="386" y="72" width="350" height="386" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="402" y="96" font-size="13" font-weight="700" fill="#B91C1C">KHÔNG HỢP LỆ — mỏng, đã bị lấp / sai phía</text>
+  <line x1="470" y1="280" x2="470" y2="330" stroke="#15803D" stroke-width="1.2"/><rect x="462" y="292" width="16" height="20" fill="#16A34A"/>
+  <line x1="520" y1="250" x2="520" y2="315" stroke="#15803D" stroke-width="1.2"/><rect x="512" y="270" width="16" height="30" fill="#16A34A"/>
+  <line x1="570" y1="245" x2="570" y2="300" stroke="#B91C1C" stroke-width="1.2"/><rect x="562" y="262" width="16" height="18" fill="#DC2626"/>
+  <!-- thin gap already filled by later wick -->
+  <rect x="462" y="280" width="120" height="18" fill="#DC2626" fill-opacity="0.14" stroke="#DC2626" stroke-dasharray="4 3"/>
+  <text x="588" y="292" font-size="9.5" fill="#B91C1C">FVG mỏng</text>
+  <!-- later candle wick fills it -->
+  <line x1="610" y1="270" x2="610" y2="360" stroke="#B91C1C" stroke-width="1.2"/><rect x="602" y="320" width="16" height="24" fill="#DC2626"/>
+  <path d="M610 292 L610 285" stroke="#B91C1C" stroke-width="1.4" marker-end="url(#aFred)"/>
+  <text x="470" y="380" font-size="9.5" fill="#B91C1C">Wick sau đã lấp hết FVG → đã mitigate</text>
+  <rect x="402" y="388" width="318" height="58" rx="5" fill="#FEE2E2" stroke="#DC2626" stroke-opacity="0.5"/>
+  <text x="412" y="408" font-size="10" fill="#991B1B">Sinh từ cú đẩy yếu, mỏng, đã bị lấp một phần,</text>
+  <text x="412" y="426" font-size="10" fill="#991B1B">hoặc nằm sai phía Premium/ngược bias → bẫy.</text>
+
+  <defs>
+    <marker id="aFred" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#B91C1C"/></marker>
+  </defs>
+</svg>

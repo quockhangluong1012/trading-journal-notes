@@ -1,0 +1,110 @@
+<svg viewBox="0 0 860 700" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="700" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Bảy đường dẫn thông tin tương lai vào quá khứ — và cách chặn từng loại</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Look-ahead trong DOL tinh vi hơn trong indicator: swing, range, và "level quan trọng" đều chỉ rõ SAU khi biết kết quả.</text>
+
+  <!-- flow into metric -->
+  <rect x="24" y="72" width="300" height="30" rx="6" fill="#FEE2E2" stroke="#DC2626"/>
+  <text x="174" y="92" font-size="10.5" font-weight="700" fill="#B91C1C" text-anchor="middle">tất cả bảy đường dẫn cùng chảy vào…</text>
+
+  <rect x="352" y="66" width="484" height="42" rx="7" fill="#0F172A"/>
+  <text x="594" y="84" font-size="11.5" font-weight="700" fill="#FCA5A5" text-anchor="middle">KẾT QUẢ BACKTEST BỊ THỔI PHỒNG</text>
+  <text x="594" y="100" font-size="10" fill="#94A3B8" text-anchor="middle">hit rate cao một cách vô nghĩa — mẫu đã được lọc bằng đáp án</text>
+
+  <line x1="324" y1="87" x2="348" y2="87" stroke="#DC2626" stroke-width="2"/>
+  <polygon points="352,87 342,82 342,92" fill="#DC2626"/>
+
+  <!-- ============ SEVEN TYPES ============ -->
+  <!-- L1 -->
+  <rect x="24" y="126" width="392" height="68" rx="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.4"/>
+  <rect x="24" y="126" width="34" height="68" rx="7" fill="#FEE2E2"/>
+  <text x="41" y="163" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">L1</text>
+  <text x="68" y="146" font-size="10.5" font-weight="700" fill="#991B1B">Swing chỉ rõ SAU xác nhận</text>
+  <text x="68" y="163" font-size="9.5" fill="#4B5563">Chọn swing bằng mắt trên chart đã hoàn thành</text>
+  <text x="68" y="181" font-size="9.5" font-weight="700" fill="#15803D">→ N-bar pivot causal; timestamp level tại lúc BIẾT</text>
+
+  <!-- L2 -->
+  <rect x="428" y="126" width="408" height="68" rx="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.4"/>
+  <rect x="428" y="126" width="34" height="68" rx="7" fill="#FEE2E2"/>
+  <text x="445" y="163" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">L2</text>
+  <text x="472" y="146" font-size="10.5" font-weight="700" fill="#991B1B">Dùng cấu trúc TƯƠNG LAI để phân loại cấu trúc HIỆN TẠI</text>
+  <text x="472" y="163" font-size="9.5" fill="#4B5563">Gọi một break là "BOS" vì sau đó giá tiếp tục</text>
+  <text x="472" y="181" font-size="9.5" font-weight="700" fill="#15803D">→ Chỉ dùng data ≤ t; rule viết TRƯỚC</text>
+
+  <!-- L3 -->
+  <rect x="24" y="202" width="392" height="68" rx="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.4"/>
+  <rect x="24" y="202" width="34" height="68" rx="7" fill="#FEE2E2"/>
+  <text x="41" y="239" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">L3</text>
+  <text x="68" y="222" font-size="10.5" font-weight="700" fill="#991B1B">Biết liquidity nào cuối cùng bị lấy</text>
+  <text x="68" y="239" font-size="9.5" fill="#4B5563">Vô thức ưu tiên pool "trông sẽ bị lấy"</text>
+  <text x="68" y="257" font-size="9.5" font-weight="700" fill="#15803D">→ Candidate set phải LƯU SNAPSHOT tại t</text>
+
+  <!-- L4 -->
+  <rect x="428" y="202" width="408" height="68" rx="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.4"/>
+  <rect x="428" y="202" width="34" height="68" rx="7" fill="#FEE2E2"/>
+  <text x="445" y="239" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">L4</text>
+  <text x="472" y="222" font-size="10.5" font-weight="700" fill="#991B1B">Định nghĩa dealing range HỒI TỐ</text>
+  <text x="472" y="239" font-size="9.5" fill="#4B5563">Chọn range để nhãn external/internal khớp ý muốn</text>
+  <text x="472" y="257" font-size="9.5" font-weight="700" fill="#15803D">→ Rule đóng băng viết trước + sensitivity analysis</text>
+
+  <!-- L5 -->
+  <rect x="24" y="278" width="392" height="68" rx="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.4"/>
+  <rect x="24" y="278" width="34" height="68" rx="7" fill="#FEE2E2"/>
+  <text x="41" y="315" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">L5</text>
+  <text x="68" y="298" font-size="10.5" font-weight="700" fill="#991B1B">Chọn "liquidity quan trọng" theo PHẢN ỨNG cuối</text>
+  <text x="68" y="315" font-size="9.5" fill="#4B5563">Gọi một level "quan trọng" vì giá đã phản ứng ở đó</text>
+  <text x="68" y="333" font-size="9.5" font-weight="700" fill="#15803D">→ Salience định nghĩa bằng thuộc tính TẠI t</text>
+
+  <!-- L6 -->
+  <rect x="428" y="278" width="408" height="68" rx="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.4"/>
+  <rect x="428" y="278" width="34" height="68" rx="7" fill="#FEE2E2"/>
+  <text x="445" y="315" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">L6</text>
+  <text x="472" y="298" font-size="10.5" font-weight="700" fill="#991B1B">Dùng displacement / MSS / POI validity TƯƠNG LAI</text>
+  <text x="472" y="315" font-size="9.5" fill="#4B5563">Xác nhận MSS bằng FVG hình thành sau đó</text>
+  <text x="472" y="333" font-size="9.5" font-weight="700" fill="#15803D">→ Chỉ dùng event đã close; tách "signal" vs "confirm"</text>
+
+  <!-- L7 -->
+  <rect x="24" y="354" width="812" height="72" rx="7" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.2"/>
+  <rect x="24" y="354" width="34" height="72" rx="7" fill="#FEE2E2"/>
+  <text x="41" y="394" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">L7</text>
+  <text x="68" y="376" font-size="11" font-weight="700" fill="#B91C1C">⚠ Loại candidate FAIL sau khi thấy kết quả  — dạng NGUY HIỂM NHẤT vì VÔ HÌNH</text>
+  <text x="68" y="395" font-size="10" fill="#4B5563">Bỏ khỏi mẫu những candidate "rõ ràng là sai". Nó KHÔNG cảm thấy như gian lận — nó cảm thấy như "dọn dữ liệu".</text>
+  <text x="68" y="414" font-size="10" font-weight="700" fill="#15803D">→ MỌI candidate mark tại cutoff phải Ở LẠI dataset, kèm cờ selected: true/false và lý do. Số candidate bị loại là một METRIC, không phải rác.</text>
+
+  <!-- ============ MECHANISM OF INFLATION ============ -->
+  <rect x="24" y="440" width="812" height="106" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="44" y="464" font-size="12.5" font-weight="700" fill="#334155">CƠ CHẾ LÀM SAI SỐ LIỆU — vì sao L7 nguy hiểm nhất</text>
+
+  <rect x="44" y="478" width="228" height="54" rx="6" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="158" y="498" font-size="10.5" font-weight="700" fill="#15803D" text-anchor="middle">Mẫu TRUNG THỰC</text>
+  <text x="158" y="515" font-size="10" fill="#166534" text-anchor="middle">5 candidate / cutoff</text>
+  <text x="158" y="528" font-size="10" fill="#166534" text-anchor="middle">1 đúng → hit rate đo được ≈ 20%</text>
+
+  <line x1="276" y1="505" x2="316" y2="505" stroke="#DC2626" stroke-width="2"/>
+  <polygon points="320,505 310,500 310,510" fill="#DC2626"/>
+  <text x="298" y="498" font-size="9" font-weight="700" fill="#B91C1C" text-anchor="middle">L7</text>
+
+  <rect x="324" y="478" width="240" height="54" rx="6" fill="#FEE2E2" stroke="#DC2626"/>
+  <text x="444" y="498" font-size="10.5" font-weight="700" fill="#B91C1C" text-anchor="middle">Sau khi "dọn dữ liệu"</text>
+  <text x="444" y="515" font-size="10" fill="#991B1B" text-anchor="middle">4 candidate bị loại "vì rõ ràng sai"</text>
+  <text x="444" y="528" font-size="10" font-weight="700" fill="#991B1B" text-anchor="middle">còn 1 → hit rate ≈ 100%</text>
+
+  <rect x="580" y="478" width="236" height="54" rx="6" fill="#0F172A"/>
+  <text x="698" y="498" font-size="10.5" font-weight="700" fill="#FCA5A5" text-anchor="middle">Kết quả</text>
+  <text x="698" y="515" font-size="10" fill="#E2E8F0" text-anchor="middle">hit rate tăng vọt một cách GIẢ TẠO</text>
+  <text x="698" y="530" font-size="9.5" font-style="italic" fill="#94A3B8" text-anchor="middle">nhưng không có gì về thị trường thay đổi</text>
+
+  <!-- ============ THE ONLY DECISIVE TEST ============ -->
+  <rect x="24" y="562" width="812" height="120" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="2"/>
+  <text x="44" y="586" font-size="12.5" font-weight="700" fill="#B45309">PHÉP THỬ DUY NHẤT ĐỦ MẠNH — nhị phân, không phải thang điểm</text>
+
+  <text x="44" y="612" font-size="12" font-weight="700" fill="#78350F">Bạn có thể chứng minh mình đã xác định DOL TRƯỚC khi giá di chuyển — bằng một artifact có TIMESTAMP, tạo trước khi biết kết quả?</text>
+
+  <rect x="44" y="626" width="376" height="44" rx="6" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="232" y="644" font-size="10.5" font-weight="700" fill="#15803D" text-anchor="middle">CÓ → dữ liệu dùng được cho kết luận về edge</text>
+  <text x="232" y="661" font-size="9.5" fill="#166534" text-anchor="middle">snapshot bất biến: cutoff, candidate 2 phía, đối thủ, invalid</text>
+
+  <rect x="440" y="626" width="376" height="44" rx="6" fill="#FEE2E2" stroke="#DC2626"/>
+  <text x="628" y="644" font-size="10.5" font-weight="700" fill="#B91C1C" text-anchor="middle">KHÔNG → dữ liệu KHÔNG DÙNG ĐƯỢC</text>
+  <text x="628" y="661" font-size="9.5" fill="#991B1B" text-anchor="middle">không phải "yếu" — mà là không dùng được, cho bất kỳ kết luận nào</text>
+</svg>

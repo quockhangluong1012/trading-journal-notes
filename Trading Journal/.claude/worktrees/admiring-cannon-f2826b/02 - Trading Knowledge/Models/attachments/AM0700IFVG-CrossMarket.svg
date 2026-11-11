@@ -1,0 +1,35 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<rect x="0" y="0" width="760" height="430" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">07:00 IFVG Model theo từng thị trường</text>
+<text x="24" y="54" font-size="13" fill="#6B7280">London H/L làm DOL; IFVG + Fib -2/-2.5. Độ sạch của IFVG khác nhau.</text>
+<rect x="24" y="72" width="230" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="139" y="98" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">NQ1 / ES</text>
+<text x="42" y="128" font-size="11" fill="#374151">• IFVG sạch, precision cao</text>
+<text x="42" y="150" font-size="11" fill="#374151">• Hồi về range London rõ</text>
+<text x="42" y="172" font-size="11" fill="#374151">• 50% CE khớp lệnh chuẩn</text>
+<text x="42" y="194" font-size="11" fill="#374151">• Fib -2/-2.5 dễ chạm</text>
+<text x="42" y="226" font-size="11" font-weight="700" fill="#047857">Tốt nhất cho precision</text>
+<text x="42" y="248" font-size="11" fill="#374151">entry IFVG.</text>
+<text x="42" y="280" font-size="11" font-weight="700" fill="#B45309">Cảnh báo: nhiều FVG nhỏ</text>
+<text x="42" y="300" font-size="11" fill="#374151">→ chọn đúng "FVG đầu tiên".</text>
+<rect x="264" y="72" width="230" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="379" y="98" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">EURUSD / GBPUSD</text>
+<text x="282" y="128" font-size="11" fill="#374151">• Nhịp hồi vào range London</text>
+<text x="282" y="150" font-size="11" fill="#374151">  rất rõ ràng</text>
+<text x="282" y="172" font-size="11" fill="#374151">• Relative equal thoai thoải</text>
+<text x="282" y="194" font-size="11" fill="#374151">• Thanh khoản sâu, IFVG bền</text>
+<text x="282" y="226" font-size="11" font-weight="700" fill="#047857">London H/L là DOL rất</text>
+<text x="282" y="248" font-size="11" fill="#374151">đáng tin cho FX.</text>
+<text x="282" y="280" font-size="11" font-weight="700" fill="#B45309">Cảnh báo: tính spread vào</text>
+<text x="282" y="300" font-size="11" fill="#374151">CE; IFVG có thể mỏng.</text>
+<rect x="504" y="72" width="232" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+<text x="620" y="98" font-size="14" font-weight="700" fill="#334155" text-anchor="middle">XAUUSD</text>
+<text x="522" y="128" font-size="11" fill="#374151">• Displacement mạnh quanh</text>
+<text x="522" y="150" font-size="11" fill="#374151">  tin Mỹ; IFVG rộng</text>
+<text x="522" y="172" font-size="11" fill="#374151">• Hunt + MSS có thể dồn</text>
+<text x="522" y="194" font-size="11" fill="#374151">  vào vài phút</text>
+<text x="522" y="226" font-size="11" font-weight="700" fill="#B45309">Cảnh báo: wick dài dễ quét</text>
+<text x="522" y="248" font-size="11" fill="#374151">stop trên swing post-07:00.</text>
+<text x="522" y="280" font-size="11" font-weight="700" fill="#047857">Nới stop; giảm size; đòi</text>
+<text x="522" y="300" font-size="11" fill="#374151">MSS + IFVG thật rõ.</text>
+</svg>

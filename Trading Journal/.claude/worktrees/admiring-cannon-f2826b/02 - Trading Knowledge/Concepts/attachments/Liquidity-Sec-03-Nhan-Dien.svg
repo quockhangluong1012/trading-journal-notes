@@ -1,0 +1,72 @@
+<svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="500" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Nhận diện trên chart — pool thật vs "không phải pool"</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">BSL phía trên đỉnh • SSL phía dưới đáy • cảnh giác nhầm với FVG / liquidity void</text>
+
+  <!-- Panel 1: engineered -->
+  <rect x="24" y="68" width="224" height="302" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="92" font-size="13" font-weight="700" fill="#1F2937">Engineered liquidity</text>
+  <text x="52" y="108" font-size="11" font-weight="600" fill="#D97706">equal highs → BSL</text>
+  <line x1="52" y1="128" x2="200" y2="128" stroke="#D97706" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <circle cx="70" cy="118" r="3" fill="#D97706"/><circle cx="95" cy="118" r="3" fill="#D97706"/>
+  <circle cx="120" cy="118" r="3" fill="#D97706"/><circle cx="145" cy="118" r="3" fill="#D97706"/>
+  <circle cx="170" cy="118" r="3" fill="#D97706"/>
+  <line x1="72" y1="136" x2="72" y2="196" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="66" y="150" width="12" height="34" fill="#16A34A"/>
+  <line x1="94" y1="136" x2="94" y2="200" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="88" y="152" width="12" height="38" fill="#DC2626"/>
+  <line x1="132" y1="136" x2="132" y2="198" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="126" y="152" width="12" height="34" fill="#16A34A"/>
+  <line x1="154" y1="136" x2="154" y2="202" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="148" y="154" width="12" height="38" fill="#DC2626"/>
+  <text x="52" y="228" font-size="11" fill="#6B7280">Stops dồn về MỘT mức</text>
+  <text x="52" y="243" font-size="11" fill="#6B7280">→ target dễ bị quét nhất</text>
+  <line x1="76" y1="250" x2="76" y2="320" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="70" y="262" width="12" height="38" fill="#DC2626"/>
+  <line x1="98" y1="252" x2="98" y2="320" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="92" y="266" width="12" height="36" fill="#16A34A"/>
+  <line x1="136" y1="250" x2="136" y2="320" stroke="#DC2626" stroke-width="1.5"/>
+  <rect x="130" y="260" width="12" height="38" fill="#DC2626"/>
+  <line x1="158" y1="254" x2="158" y2="320" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="152" y="268" width="12" height="36" fill="#16A34A"/>
+  <line x1="52" y1="328" x2="200" y2="328" stroke="#D97706" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <circle cx="76" cy="338" r="3" fill="#D97706"/><circle cx="101" cy="338" r="3" fill="#D97706"/>
+  <circle cx="126" cy="338" r="3" fill="#D97706"/><circle cx="151" cy="338" r="3" fill="#D97706"/>
+  <circle cx="176" cy="338" r="3" fill="#D97706"/>
+  <text x="52" y="358" font-size="11" font-weight="600" fill="#D97706">equal lows → SSL</text>
+
+  <!-- Panel 2: trendline -->
+  <rect x="260" y="68" width="224" height="302" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="276" y="92" font-size="13" font-weight="700" fill="#1F2937">Trendline liquidity</text>
+  <text x="276" y="110" font-size="11" fill="#6B7280">chuỗi higher lows tựa vào trendline</text>
+  <line x1="280" y1="326" x2="460" y2="158" stroke="#6B7280" stroke-width="1.5"/>
+  <polyline points="288,320 305,258 315,296 345,226 356,260 386,190 398,222 430,155" fill="none" stroke="#1D4ED8" stroke-width="2"/>
+  <circle cx="300" cy="317" r="3" fill="#D97706"/><circle cx="330" cy="290" r="3" fill="#D97706"/>
+  <circle cx="360" cy="262" r="3" fill="#D97706"/><circle cx="390" cy="234" r="3" fill="#D97706"/>
+  <circle cx="420" cy="206" r="3" fill="#D97706"/>
+  <text x="276" y="350" font-size="11" fill="#374151">Stops của trend/breakout trader</text>
+  <text x="276" y="364" font-size="11" fill="#374151">nằm dọc dưới trendline → một chuỗi pool</text>
+
+  <!-- Panel 3: not a pool -->
+  <rect x="496" y="68" width="240" height="302" rx="8" fill="#FFFFFF" stroke="#DC2626"/>
+  <text x="512" y="92" font-size="13" font-weight="700" fill="#DC2626">KHÔNG phải pool: FVG / void</text>
+  <rect x="545" y="190" width="110" height="50" fill="#3B82F6" opacity="0.12" stroke="#3B82F6" stroke-dasharray="4 3"/>
+  <text x="548" y="182" font-size="11" font-weight="600" fill="#1D4ED8">FVG / liquidity void</text>
+  <line x1="566" y1="240" x2="566" y2="310" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="560" y="255" width="12" height="45" fill="#16A34A"/>
+  <line x1="598" y1="150" x2="598" y2="265" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="592" y="165" width="12" height="93" fill="#16A34A"/>
+  <line x1="630" y1="120" x2="630" y2="190" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="624" y="130" width="12" height="55" fill="#16A34A"/>
+  <text x="512" y="330" font-size="11.5" fill="#374151">Vùng giá đi nhanh, THIẾU giao dịch</text>
+  <text x="512" y="346" font-size="11.5" fill="#374151">— không có cụm lệnh nào để quét</text>
+  <text x="512" y="362" font-size="11.5" font-weight="600" fill="#DC2626">Đọc theo logic imbalance, đừng chờ sweep</text>
+
+  <!-- bottom strip -->
+  <rect x="24" y="384" width="712" height="92" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="40" y="406" font-size="13" font-weight="700" fill="#1F2937">Điều kiện bắt buộc trước khi dùng một pool</text>
+  <text x="44" y="428" font-size="11.5" fill="#374151">• Phía nào: BSL phía trên / SSL phía dưới</text>
+  <text x="44" y="448" font-size="11.5" fill="#374151">• Loại: PDH/PDL, equal H/L, swing, session (Asia/London/NY)</text>
+  <text x="410" y="428" font-size="11.5" fill="#374151">• Pool CHƯA bị lấy — còn liquidity hút giá tới</text>
+  <text x="410" y="448" font-size="11.5" fill="#374151">• Vị trí trong dealing range: external hay internal</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="460" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1F2937">Ví dụ ĐÚNG — Hidden OB long trong discount sau sweep</text>
+  <text x="24" y="54" font-size="12.5" fill="#6B7280">Thuận bias, ở discount, sau liquidity sweep, có LTF CISD trigger.</text>
+
+  <rect x="24" y="72" width="712" height="360" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- equilibrium &amp; discount -->
+  <line x1="60" y1="180" x2="700" y2="180" stroke="#6B7280" stroke-width="1.1" stroke-dasharray="4 4"/>
+  <text x="600" y="174" font-size="9.5" fill="#6B7280">Equilibrium (50%)</text>
+  <rect x="60" y="180" width="16" height="200" fill="#DCFCE7"/>
+  <text x="82" y="290" font-size="10.5" font-weight="700" fill="#166534">DISCOUNT</text>
+
+  <!-- SSL line -->
+  <line x1="60" y1="350" x2="700" y2="350" stroke="#6B7280" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="66" y="344" font-size="9.5" fill="#6B7280">SSL (swing low)</text>
+
+  <!-- hidden OB two green candles in discount -->
+  <rect x="270" y="260" width="80" height="90" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="1.3"/>
+  <text x="270" y="255" font-size="10" font-weight="700" fill="#1D4ED8">Hidden OB (2 nến xanh, wick chồng)</text>
+  <line x1="292" y1="260" x2="292" y2="358" stroke="#16A34A" stroke-width="1.4"/><rect x="286.5" y="280" width="11" height="45" fill="#16A34A"/>
+  <line x1="318" y1="270" x2="318" y2="372" stroke="#16A34A" stroke-width="1.4"/><rect x="312.5" y="288" width="11" height="45" fill="#16A34A"/>
+
+  <!-- price drops, sweep SSL -->
+  <path d="M100,150 L150,210 L200,190 L250,270 L300,320 L330,365" fill="none" stroke="#374151" stroke-width="2"/>
+  <circle cx="330" cy="365" r="8" fill="none" stroke="#B45309" stroke-width="2.5"/>
+  <text x="150" y="400" font-size="10.5" font-weight="700" fill="#B45309">① Sweep SSL rồi reject</text>
+
+  <!-- CISD inside OB, displacement up -->
+  <path d="M330,365 L360,310 L385,290" fill="none" stroke="#16A34A" stroke-width="2.4"/>
+  <line x1="345" y1="300" x2="450" y2="300" stroke="#166534" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="345" y="295" font-size="10" font-weight="700" fill="#166534">② LTF CISD</text>
+  <circle cx="360" cy="315" r="6" fill="#16A34A"/>
+  <text x="345" y="420" font-size="10.5" font-weight="700" fill="#166534">③ Entry Long tại proximal</text>
+
+  <!-- rally to target -->
+  <path d="M385,290 L430,230 L490,175 L560,140 L640,115" fill="none" stroke="#166534" stroke-width="2.6"/>
+  <polygon points="640,115 630,120 633,128" fill="#166534"/>
+  <line x1="540" y1="130" x2="700" y2="130" stroke="#16A34A" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="540" y="124" font-size="10" fill="#166534">Target: ERL / BSL (~1:3)</text>
+</svg>

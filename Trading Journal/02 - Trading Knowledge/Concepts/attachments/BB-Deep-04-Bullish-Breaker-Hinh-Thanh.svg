@@ -1,0 +1,142 @@
+<svg viewBox="0 0 980 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+
+<rect x="0" y="0" width="980" height="640" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="26.0" y="34.0" font-size="18" font-weight="700" fill="#1F2937" text-anchor="start">Bullish Breaker hình thành từng bước — đọc theo thời gian, không đọc ngược</text>
+<text x="26.0" y="56.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Ví dụ dựng (synthetic). Đánh số theo thứ tự trader BIẾT được sự kiện. Vùng cam = OB gốc; vùng xanh ngọc = Breaker sau khi xác nhận.</text>
+<rect x="870.4" y="18" width="83.6" height="22" rx="11" fill="#F3F4F6" stroke="#D8DBE2"/>
+<text x="912.2" y="33.0" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">SCHEMATIC</text>
+<rect x="20.0" y="74.0" width="600.0" height="500.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="32.0" y="95.0" font-size="13" font-weight="700" fill="#334155" text-anchor="start">H1 — chuỗi hình thành Bullish Breaker</text>
+<rect x="212.0" y="293.6" width="180.0" height="35.1" rx="2" fill="#F59E0B" fill-opacity="0.13" stroke="#B45309" stroke-width="1.2" stroke-dasharray="5,3"/>
+<text x="387.0" y="314.8" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="end">OB gốc (bearish OB)</text>
+<rect x="392.0" y="293.6" width="216.0" height="35.1" rx="2" fill="#14B8A6" fill-opacity="0.2" stroke="#0F766E" stroke-width="1.2"/>
+<text x="604.0" y="341.7" font-size="11" font-weight="700" fill="#0F766E" text-anchor="end">Bullish Breaker</text>
+<line x1="131.0" y1="449.7" x2="347.0" y2="449.7" stroke="#9CA3AF" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="315.0" y="463.7" font-size="10.5" font-weight="600" fill="#9CA3AF" text-anchor="end">SSL dưới L1</text>
+<line x1="167.0" y1="293.6" x2="221.0" y2="293.6" stroke="#334155" stroke-width="1.2" stroke-dasharray="3,3"/>
+<text x="163.0" y="297.6" font-size="11" font-weight="700" fill="#334155" text-anchor="end">H1</text>
+<line x1="41.0" y1="261.2" x2="41.0" y2="301.7" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="35.4" y="268.7" width="11.2" height="31.4" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="59.0" y1="295.5" x2="59.0" y2="326.3" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="53.4" y="300.1" width="11.2" height="22.9" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="77.0" y1="322.3" x2="77.0" y2="342.0" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="71.4" y="323.0" width="11.2" height="16.3" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="95.0" y1="338.0" x2="95.0" y2="364.5" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="89.4" y="339.2" width="11.2" height="23.9" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="113.0" y1="359.9" x2="113.0" y2="414.9" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="107.4" y="363.1" width="11.2" height="47.1" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="131.0" y1="403.3" x2="131.0" y2="449.7" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="125.4" y="410.2" width="11.2" height="30.0" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="149.0" y1="398.1" x2="149.0" y2="445.6" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="143.4" y="405.5" width="11.2" height="34.6" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="167.0" y1="366.1" x2="167.0" y2="409.2" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="161.4" y="375.3" width="11.2" height="30.2" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="185.0" y1="345.9" x2="185.0" y2="377.1" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="179.4" y="347.9" width="11.2" height="27.4" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="203.0" y1="323.5" x2="203.0" y2="352.8" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="197.4" y="325.5" width="11.2" height="22.5" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="221.0" y1="293.6" x2="221.0" y2="328.7" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="215.4" y="299.6" width="11.2" height="25.9" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<rect x="211.9" y="289.6" width="18.2" height="43.1" rx="3" fill="none" stroke="#B45309" stroke-width="1.8" stroke-dasharray="3,2"/>
+<line x1="239.0" y1="297.4" x2="239.0" y2="313.2" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="233.4" y="299.6" width="11.2" height="13.0" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="257.0" y1="306.6" x2="257.0" y2="340.8" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="251.4" y="312.6" width="11.2" height="24.2" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="275.0" y1="333.1" x2="275.0" y2="371.0" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="269.4" y="336.8" width="11.2" height="28.1" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="293.0" y1="353.8" x2="293.0" y2="413.8" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="287.4" y="364.9" width="11.2" height="39.0" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="311.0" y1="400.9" x2="311.0" y2="438.1" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="305.4" y="403.9" width="11.2" height="28.2" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="329.0" y1="421.9" x2="329.0" y2="493.3" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="323.4" y="432.1" width="11.2" height="51.6" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="347.0" y1="411.8" x2="347.0" y2="486.0" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="341.4" y="423.6" width="11.2" height="60.2" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="365.0" y1="365.8" x2="365.0" y2="431.8" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="359.4" y="370.7" width="11.2" height="52.9" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="383.0" y1="301.0" x2="383.0" y2="380.2" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="377.4" y="302.6" width="11.2" height="68.1" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="401.0" y1="228.7" x2="401.0" y2="310.3" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="395.4" y="238.7" width="11.2" height="63.9" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<rect x="391.9" y="224.7" width="18.2" height="89.6" rx="3" fill="none" stroke="#111827" stroke-width="1.8" stroke-dasharray="3,2"/>
+<line x1="419.0" y1="235.7" x2="419.0" y2="245.7" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="413.4" y="238.7" width="11.2" height="5.8" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="437.0" y1="241.2" x2="437.0" y2="260.7" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="431.4" y="244.5" width="11.2" height="13.3" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="455.0" y1="252.3" x2="455.0" y2="282.3" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="449.4" y="257.8" width="11.2" height="18.4" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="473.0" y1="273.1" x2="473.0" y2="296.8" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="467.4" y="276.1" width="11.2" height="16.6" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="491.0" y1="292.3" x2="491.0" y2="303.7" stroke="#DC2626" stroke-width="1.3" opacity="1.0"/>
+<rect x="485.4" y="292.8" width="11.2" height="8.5" rx="1" fill="#DC2626" fill-opacity="0.88" stroke="#DC2626" stroke-width="1.2"/>
+<line x1="509.0" y1="289.5" x2="509.0" y2="302.5" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="503.4" y="292.3" width="11.2" height="9.1" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="527.0" y1="287.2" x2="527.0" y2="294.6" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="521.4" y="288.7" width="11.2" height="3.6" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="545.0" y1="250.1" x2="545.0" y2="291.0" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="539.4" y="253.1" width="11.2" height="35.6" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="563.0" y1="224.5" x2="563.0" y2="260.6" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="557.4" y="225.8" width="11.2" height="27.3" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="581.0" y1="190.7" x2="581.0" y2="235.2" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="575.4" y="195.4" width="11.2" height="30.5" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<line x1="599.0" y1="143.5" x2="599.0" y2="203.9" stroke="#16A34A" stroke-width="1.3" opacity="1.0"/>
+<rect x="593.4" y="146.1" width="11.2" height="49.2" rx="1" fill="#16A34A" fill-opacity="0.88" stroke="#16A34A" stroke-width="1.2"/>
+<circle cx="131.0" cy="471.7" r="9" fill="#334155"/>
+<text x="131.0" y="475.5" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="131.0" y="495.7" font-size="11" font-weight="700" fill="#334155" text-anchor="middle">L1</text>
+<circle cx="221.0" cy="277.6" r="9" fill="#B45309"/>
+<text x="221.0" y="281.4" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<circle cx="329.0" cy="515.3" r="9" fill="#B91C1C"/>
+<text x="329.0" y="519.1" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="329.0" y="539.3" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">L2 &lt; L1</text>
+<circle cx="401.0" cy="212.7" r="9" fill="#111827"/>
+<text x="401.0" y="216.5" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<circle cx="508.0" cy="337.7" r="9" fill="#0F766E"/>
+<text x="508.0" y="341.5" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<circle cx="473.0" cy="257.1" r="9" fill="#0F766E"/>
+<text x="473.0" y="260.9" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="595.0" y="135.5" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="end">phản ứng?</text>
+<rect x="636.0" y="74.0" width="324.0" height="500.0" rx="9" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<circle cx="659.0" cy="100.0" r="11" fill="#334155"/>
+<text x="659.0" y="104.1" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="678.0" y="105.0" font-size="12.5" font-weight="700" fill="#334155" text-anchor="start">Đáy L1 được xác nhận</text>
+<text x="678.0" y="123.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Một đáy rõ ràng. Bên dưới nó thường có lệnh</text>
+<text x="678.0" y="139.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">dừng lỗ của người mua — ICT gọi là sell-side</text>
+<text x="678.0" y="155.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">liquidity (SSL).</text>
+<circle cx="659.0" cy="181.0" r="11" fill="#B45309"/>
+<text x="659.0" y="185.2" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="678.0" y="186.0" font-size="12.5" font-weight="700" fill="#B45309" text-anchor="start">Đỉnh H1 và OB gốc</text>
+<text x="678.0" y="204.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Giá tăng lên H1. Cây nến TĂNG cuối cùng trước</text>
+<text x="678.0" y="220.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">cú giảm là bearish OB — vùng “đáng lẽ chặn giá</text>
+<text x="678.0" y="236.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">đi lên”.</text>
+<circle cx="659.0" cy="262.0" r="11" fill="#B91C1C"/>
+<text x="659.0" y="266.2" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="678.0" y="267.0" font-size="12.5" font-weight="700" fill="#B91C1C" text-anchor="start">Giá phá xuống dưới L1 → L2</text>
+<text x="678.0" y="285.0" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Đáy cũ bị vi phạm. Quan sát được: một đáy mới.</text>
+<text x="678.0" y="301.1" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Diễn giải ICT: SSL bị quét. Chưa biết gì về đảo</text>
+<text x="678.0" y="317.1" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">chiều.</text>
+<circle cx="659.0" cy="343.1" r="11" fill="#111827"/>
+<text x="659.0" y="347.2" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="678.0" y="348.1" font-size="12.5" font-weight="700" fill="#111827" text-anchor="start">Thân nến đóng TRÊN H1</text>
+<text x="678.0" y="366.1" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Thời điểm OB gốc thất bại VÀ cấu trúc đổi</text>
+<text x="678.0" y="382.1" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">(MSS). Breaker chỉ “tồn tại” từ lúc nến này đóng</text>
+<text x="678.0" y="398.1" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">cửa.</text>
+<circle cx="659.0" cy="424.1" r="11" fill="#0F766E"/>
+<text x="659.0" y="428.2" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="678.0" y="429.1" font-size="12.5" font-weight="700" fill="#0F766E" text-anchor="start">Vùng đổi vai</text>
+<text x="678.0" y="447.1" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Vùng OB gốc (từng là trần) giờ được theo dõi</text>
+<text x="678.0" y="463.1" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">như sàn tiềm năng: Bullish Breaker. Đây là một</text>
+<text x="678.0" y="479.1" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">nhãn, chưa là lệnh.</text>
+<circle cx="659.0" cy="505.1" r="11" fill="#0F766E"/>
+<text x="659.0" y="509.3" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="678.0" y="510.1" font-size="12.5" font-weight="700" fill="#0F766E" text-anchor="start">Retest</text>
+<text x="678.0" y="528.1" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">Giá quay về vùng. Bây giờ mới quan sát phản</text>
+<text x="678.0" y="544.1" font-size="11.6" font-weight="400" fill="#1F2937" text-anchor="start">ứng. Giữ được hay bị xuyên — đều phải ghi lại.</text>
+<rect x="26.0" y="597.0" width="18.0" height="11.0" rx="2" fill="#F59E0B" fill-opacity="0.22" stroke="#B45309" stroke-width="1.1" stroke-dasharray="5,3"/>
+<text x="50.0" y="606.0" font-size="11" font-weight="500" fill="#1F2937" text-anchor="start">OB gốc (trước khi thất bại)</text>
+<rect x="207.3" y="597.0" width="18.0" height="11.0" rx="2" fill="#14B8A6" fill-opacity="0.22" stroke="#0F766E" stroke-width="1.1"/>
+<text x="231.3" y="606.0" font-size="11" font-weight="500" fill="#1F2937" text-anchor="start">Bullish Breaker (sau khi xác nhận)</text>
+<line x1="428.3" y1="602.0" x2="446.3" y2="602.0" stroke="#9CA3AF" stroke-width="1.6" stroke-dasharray="5,3"/>
+<text x="452.3" y="606.0" font-size="11" font-weight="500" fill="#1F2937" text-anchor="start">Thanh khoản (SSL)</text>
+<text x="954.0" y="628.0" font-size="11" font-weight="600" fill="#6B7280" text-anchor="end">Bước 1–4 là ĐỊNH NGHĨA; bước 5–6 là THEO DÕI GIẢ THUYẾT.</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="760" height="480" rx="10" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#1F2937">Giải phẫu Dealing Range — ERL (hai cực) và IRL (bên trong)</text>
+  <text x="24" y="54" font-size="13" fill="#6B7280">Vòng xoay delivery: External → Internal → External. Giá luân chuyển giữa hai loại thanh khoản đối diện.</text>
+
+  <rect x="24" y="70" width="712" height="330" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- premium zone -->
+  <rect x="44" y="90" width="672" height="110" fill="#DC2626" opacity="0.05"/>
+  <text x="52" y="106" font-size="10.5" fill="#B91C1C">Premium — nửa trên dealing range</text>
+
+  <!-- discount zone -->
+  <rect x="44" y="290" width="672" height="90" fill="#3B82F6" opacity="0.06"/>
+  <text x="52" y="308" font-size="10.5" fill="#1D4ED8">Discount — nửa dưới dealing range</text>
+
+  <!-- equilibrium -->
+  <line x1="44" y1="200" x2="716" y2="200" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="620" y="196" font-size="10" fill="#6B7280">Equilibrium (50%)</text>
+
+  <!-- ERL top -->
+  <line x1="60" y1="98" x2="700" y2="98" stroke="#DC2626" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="64" y="90" font-size="11.5" font-weight="700" fill="#B91C1C">ERL đỉnh — BSL (old highs / equal highs)</text>
+
+  <!-- ERL bottom -->
+  <line x1="60" y1="372" x2="700" y2="372" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="64" y="388" font-size="11.5" font-weight="700" fill="#15803D">ERL đáy — SSL (old lows / equal lows)</text>
+
+  <!-- price path: from ERL top -> IRL -> ERL bottom -->
+  <path d="M90,98 L140,140 L200,110 L260,150 L330,235 L380,225 L430,255 L470,340 L520,372 L560,330 L610,250 L660,150 L690,98"
+        fill="none" stroke="#374151" stroke-width="2.2"/>
+
+  <!-- candles along the path (thin body + wick) illustrative -->
+  <rect x="135" y="120" width="3" height="40" fill="#374151"/>
+  <rect x="131" y="128" width="11" height="24" fill="#DC2626" rx="1"/>
+  <rect x="255" y="130" width="3" height="40" fill="#374151"/>
+  <rect x="251" y="138" width="11" height="24" fill="#DC2626" rx="1"/>
+  <rect x="425" y="235" width="3" height="40" fill="#374151"/>
+  <rect x="421" y="243" width="11" height="24" fill="#16A34A" rx="1"/>
+  <rect x="605" y="220" width="3" height="40" fill="#374151"/>
+  <rect x="601" y="228" width="11" height="24" fill="#16A34A" rx="1"/>
+
+  <!-- IRL box (FVG) inside range -->
+  <rect x="300" y="210" width="130" height="50" fill="#3B82F6" opacity="0.18" stroke="#3B82F6" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="308" y="204" font-size="11" font-weight="700" fill="#1D4ED8">IRL — FVG chưa lấp (bên trong range)</text>
+
+  <!-- step numbers -->
+  <circle cx="90" cy="98" r="12" fill="#DC2626"/>
+  <text x="90" y="103" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">①</text>
+  <text x="108" y="82" font-size="10.5" fill="#B91C1C">① Giá quét ERL đỉnh — lấy BSL</text>
+
+  <circle cx="365" cy="235" r="12" fill="#3B82F6"/>
+  <text x="365" y="240" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">②</text>
+  <text x="383" y="240" font-size="10.5" fill="#1D4ED8">② Quay vào rebalance IRL (FVG)</text>
+
+  <circle cx="690" cy="98" r="12" fill="#16A34A"/>
+  <text x="690" y="103" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">③</text>
+  <text x="530" y="120" font-size="10.5" fill="#15803D">③ Hướng ra ERL đáy — lấy SSL</text>
+
+  <rect x="24" y="410" width="712" height="55" rx="6" fill="#FEF3C7"/>
+  <text x="36" y="430" font-size="11.5" font-weight="700" fill="#92400E">Câu thần chú: "External to internal, internal to external." Mỗi khi giá lấy một loại thanh khoản,</text>
+  <text x="36" y="448" font-size="11.5" font-weight="700" fill="#92400E">draw tiếp theo luôn là loại đối diện — ERL vừa lấy → tìm IRL kế tiếp; IRL vừa xử lý → tìm ERL đối diện.</text>
+</svg>

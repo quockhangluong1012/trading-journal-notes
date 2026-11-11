@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif">
+<defs></defs>
+<rect x="1" y="1" width="998" height="618" rx="12" fill="#FBFBFD" stroke="#D8DBE2" stroke-width="1.5"/>
+<text x="28.0" y="40.0" font-size="20" font-weight="700" fill="#1F2937" text-anchor="start">CISD trong 2 phút — kể cho trẻ 5 tuổi</text>
+<text x="28.0" y="64.0" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Hãy coi mỗi cây nến là một bậc thang. Bậc đỏ là bước xuống, bậc xanh là bước lên.</text>
+<rect x="920.3" y="22" width="51.7" height="24" rx="12" fill="#F3F4F6" stroke="#D8DBE2" stroke-width="1.2"/>
+<text x="946.2" y="38.5" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">ELI5</text>
+<text x="28.0" y="608.0" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start">Sơ đồ minh họa (synthetic) — giá trong hình là ví dụ, không phải dữ liệu thị trường thật.</text>
+<rect x="28.0" y="91.0" width="560.0" height="440.0" rx="10" fill="#FFFFFF" stroke="#D8DBE2" stroke-width="1.2"/>
+<line x1="66.2" y1="223.6" x2="66.2" y2="270.2" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="52.2" y="235.2" width="28.1" height="23.3" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="114.5" y1="223.6" x2="114.5" y2="293.5" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="100.5" y="235.2" width="28.1" height="46.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="162.9" y1="270.2" x2="162.9" y2="351.8" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="148.9" y="281.9" width="28.1" height="58.3" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="211.3" y1="328.5" x2="211.3" y2="421.7" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="197.2" y="340.1" width="28.1" height="69.9" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="259.6" y1="398.4" x2="259.6" y2="480.0" stroke="#E0464B" stroke-width="1.3"/>
+<rect x="245.6" y="410.1" width="28.1" height="46.6" fill="#E0464B" stroke="#E0464B" stroke-width="0.6"/>
+<line x1="308.0" y1="328.5" x2="308.0" y2="468.4" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="294.0" y="340.1" width="28.1" height="116.6" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="356.4" y1="200.3" x2="356.4" y2="351.8" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="342.3" y="211.9" width="28.1" height="128.2" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="404.7" y1="142.0" x2="404.7" y2="223.6" stroke="#0F9D74" stroke-width="1.3"/>
+<rect x="390.7" y="153.6" width="28.1" height="58.3" fill="#0F9D74" stroke="#0F9D74" stroke-width="0.6"/>
+<line x1="71.0" y1="235.2" x2="574.0" y2="235.2" stroke="#D97706" stroke-width="2.2" stroke-dasharray="6,4"/>
+<text x="572.0" y="230.2" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="end" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" paint-order="stroke">vạch phấn: chỗ bắt đầu đi xuống</text>
+<circle cx="114.5" cy="207.6" r="10" fill="#E0464B" stroke="none" stroke-width="1.2"/>
+<text x="114.5" y="211.5" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<circle cx="259.6" cy="500.0" r="10" fill="#E0464B" stroke="none" stroke-width="1.2"/>
+<text x="259.6" y="504.0" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<circle cx="308.0" cy="312.5" r="10" fill="#9CA3AF" stroke="none" stroke-width="1.2"/>
+<text x="308.0" y="316.4" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<circle cx="356.4" cy="184.3" r="10" fill="#059669" stroke="none" stroke-width="1.2"/>
+<text x="356.4" y="188.2" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<rect x="606.0" y="91.0" width="366.0" height="78.1" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.3"/>
+<text x="618.0" y="114.9" font-size="12.5" font-weight="700" fill="#DC2626" text-anchor="start">① Giá đi xuống từng bậc</text>
+<text x="618.0" y="136.9" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Bốn bậc đỏ liền nhau. Ta vạch phấn ở chỗ bậc đầu tiên bắt</text>
+<text x="618.0" y="153.7" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">đầu.</text>
+<rect x="606.0" y="177.1" width="366.0" height="61.3" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.3"/>
+<text x="618.0" y="201.0" font-size="12.5" font-weight="700" fill="#DC2626" text-anchor="start">② Xuống tới đáy</text>
+<text x="618.0" y="223.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Giá xuống thấp nhất rồi dừng.</text>
+<rect x="606.0" y="246.4" width="366.0" height="78.1" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="1.3"/>
+<text x="618.0" y="270.3" font-size="12.5" font-weight="700" fill="#6B7280" text-anchor="start">③ Bước lên — nhưng chưa tới vạch</text>
+<text x="618.0" y="292.3" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Một bậc xanh, nhưng lúc chuông reo vẫn ở dưới vạch. Chưa</text>
+<text x="618.0" y="309.1" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">đổi.</text>
+<rect x="606.0" y="332.5" width="366.0" height="94.9" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.3"/>
+<text x="618.0" y="356.4" font-size="12.5" font-weight="700" fill="#059669" text-anchor="start">④ Đứng trên vạch khi chuông reo!</text>
+<text x="618.0" y="378.4" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Bậc xanh này kết thúc ở TRÊN vạch phấn. Mọi bước xuống</text>
+<text x="618.0" y="395.2" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">đã bị đi ngược hết. Đó là CISD: “trạng thái” đã đổi từ đi</text>
+<text x="618.0" y="412.0" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">xuống sang đi lên.</text>
+<rect x="606.0" y="435.4" width="366.0" height="78.1" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.3"/>
+<text x="618.0" y="459.3" font-size="12.5" font-weight="700" fill="#EA580C" text-anchor="start">Nhưng nhớ nhé</text>
+<text x="618.0" y="481.3" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">Đổi trạng thái không có nghĩa là sẽ lên mãi. Có khi giá lại</text>
+<text x="618.0" y="498.1" font-size="12" font-weight="400" fill="#1F2937" text-anchor="start">tụt xuống dưới vạch. Phải xem tiếp.</text>
+</svg>

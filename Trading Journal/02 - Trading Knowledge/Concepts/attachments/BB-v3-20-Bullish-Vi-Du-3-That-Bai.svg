@@ -1,0 +1,119 @@
+<svg viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<rect x="0.8" y="0.8" width="998.5" height="638.5" rx="14" fill="#FBFBFD" stroke="#DADDE3" stroke-width="1.5"/>
+<text x="28.0" y="42.0" font-size="20" font-weight="700" fill="#111827">Bullish Breaker · Ví dụ 3 — đúng định nghĩa, và thất bại</text>
+<rect x="882.0" y="23.0" width="90.0" height="24.0" rx="12" fill="#F3F4F6" stroke="#DADDE3" stroke-width="1"/>
+<text x="927.0" y="39.5" font-size="10.5" font-weight="700" fill="#4B5563" text-anchor="middle">VÍ DỤ DỰNG</text>
+<text x="28.0" y="66.0" font-size="13" font-weight="400" fill="#6B7280" data-bx="27.0,973.0">Mười bảy nến đầu giống hệt Ví dụ 1. Khác biệt chỉ xuất hiện khi giá quay lại: vùng không đỡ được.</text>
+<rect x="28.0" y="92.5" width="600.0" height="519.5" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<rect x="176.2" y="308.1" width="216.9" height="55.2" rx="2" fill="#D97706" fill-opacity="0.16" stroke="#D97706" stroke-width="1.2" stroke-dasharray="5,3"/>
+<rect x="393.1" y="308.1" width="216.9" height="55.2" rx="2" fill="#2563EB" fill-opacity="0.13" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="5,3"/>
+<g>
+<line x1="56.8" y1="341.8" x2="56.8" y2="387.7" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="50.1" y="349.4" width="13.4" height="33.0" rx="1" fill="#E5484D"/>
+<line x1="78.5" y1="378.2" x2="78.5" y2="430.6" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="71.8" y="382.3" width="13.4" height="41.2" rx="1" fill="#E5484D"/>
+<line x1="100.2" y1="417.2" x2="100.2" y2="473.0" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="93.5" y="423.6" width="13.4" height="33.0" rx="1" fill="#E5484D"/>
+<line x1="121.9" y1="423.2" x2="121.9" y2="460.3" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="115.2" y="431.8" width="13.4" height="24.7" rx="1" fill="#0E9F6E"/>
+<line x1="143.6" y1="393.6" x2="143.6" y2="437.2" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="136.9" y="398.8" width="13.4" height="33.0" rx="1" fill="#0E9F6E"/>
+<line x1="165.3" y1="350.1" x2="165.3" y2="405.8" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="158.6" y="357.6" width="13.4" height="41.2" rx="1" fill="#0E9F6E"/>
+<line x1="187.0" y1="308.1" x2="187.0" y2="363.4" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="180.3" y="324.6" width="13.4" height="33.0" rx="1" fill="#0E9F6E"/>
+<line x1="208.7" y1="318.0" x2="208.7" y2="361.3" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="202.0" y="324.6" width="13.4" height="33.0" rx="1" fill="#E5484D"/>
+<line x1="230.4" y1="348.9" x2="230.4" y2="408.3" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="223.7" y="357.6" width="13.4" height="45.4" rx="1" fill="#E5484D"/>
+<line x1="252.1" y1="397.7" x2="252.1" y2="455.3" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="245.4" y="403.0" width="13.4" height="45.4" rx="1" fill="#E5484D"/>
+<line x1="273.8" y1="440.8" x2="273.8" y2="493.7" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="267.0" y="448.3" width="13.4" height="33.0" rx="1" fill="#E5484D"/>
+<line x1="295.5" y1="477.2" x2="295.5" y2="522.5" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="288.7" y="481.3" width="13.4" height="16.5" rx="1" fill="#E5484D"/>
+<line x1="317.2" y1="433.7" x2="317.2" y2="503.1" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="310.4" y="440.1" width="13.4" height="57.7" rx="1" fill="#0E9F6E"/>
+<line x1="338.8" y1="361.3" x2="338.8" y2="447.1" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="332.1" y="370.0" width="13.4" height="70.1" rx="1" fill="#0E9F6E"/>
+<line x1="360.5" y1="335.8" x2="360.5" y2="378.6" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="353.8" y="341.1" width="13.4" height="28.9" rx="1" fill="#0E9F6E"/>
+<line x1="382.2" y1="310.6" x2="382.2" y2="357.6" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="375.5" y="316.4" width="13.4" height="24.7" rx="1" fill="#0E9F6E"/>
+<line x1="403.9" y1="266.9" x2="403.9" y2="328.7" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="397.2" y="271.0" width="13.4" height="45.4" rx="1" fill="#0E9F6E"/>
+<line x1="425.6" y1="235.8" x2="425.6" y2="278.0" stroke="#0E9F6E" stroke-width="1.4"/>
+<rect x="418.9" y="242.2" width="13.4" height="28.9" rx="1" fill="#0E9F6E"/>
+<line x1="447.3" y1="233.5" x2="447.3" y2="267.3" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="440.6" y="242.2" width="13.4" height="16.5" rx="1" fill="#E5484D"/>
+<line x1="469.0" y1="253.4" x2="469.0" y2="291.2" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="462.3" y="258.6" width="13.4" height="28.9" rx="1" fill="#E5484D"/>
+<line x1="490.7" y1="280.0" x2="490.7" y2="330.0" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="484.0" y="287.5" width="13.4" height="37.1" rx="1" fill="#E5484D"/>
+<line x1="512.4" y1="320.5" x2="512.4" y2="364.6" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="505.7" y="324.6" width="13.4" height="33.0" rx="1" fill="#E5484D"/>
+<line x1="534.1" y1="351.2" x2="534.1" y2="403.4" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="527.4" y="357.6" width="13.4" height="37.1" rx="1" fill="#E5484D"/>
+<line x1="555.8" y1="386.0" x2="555.8" y2="427.3" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="549.0" y="394.7" width="13.4" height="28.9" rx="1" fill="#E5484D"/>
+<line x1="577.5" y1="418.3" x2="577.5" y2="453.7" stroke="#E5484D" stroke-width="1.4"/>
+<rect x="570.7" y="423.6" width="13.4" height="24.7" rx="1" fill="#E5484D"/>
+</g>
+<line x1="89.4" y1="473.0" x2="328.0" y2="473.0" stroke="#7C3AED" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="6,4"/>
+<line x1="176.2" y1="308.1" x2="414.8" y2="308.1" stroke="#475569" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="6,4"/>
+<text x="56.8" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">1</text>
+<text x="78.5" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">2</text>
+<text x="100.2" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">3</text>
+<text x="121.9" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">4</text>
+<text x="143.6" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">5</text>
+<text x="165.3" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">6</text>
+<text x="187.0" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">7</text>
+<text x="208.7" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">8</text>
+<text x="230.4" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">9</text>
+<text x="252.1" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">10</text>
+<text x="273.8" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">11</text>
+<text x="295.5" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">12</text>
+<text x="317.2" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">13</text>
+<text x="338.8" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">14</text>
+<text x="360.5" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">15</text>
+<text x="382.2" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">16</text>
+<text x="403.9" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">17</text>
+<text x="425.6" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">18</text>
+<text x="447.3" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">19</text>
+<text x="469.0" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">20</text>
+<text x="490.7" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">21</text>
+<text x="512.4" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">22</text>
+<text x="534.1" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">23</text>
+<text x="555.8" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">24</text>
+<text x="577.5" y="585.0" font-size="8.5" font-weight="400" fill="#9CA3AF" text-anchor="middle">25</text>
+<rect x="176.2" y="308.1" width="21.7" height="55.2" rx="2" fill="#D97706" fill-opacity="0" stroke="#D97706" stroke-width="1.8"/>
+<text x="100.2" y="488.0" font-size="10.5" font-weight="700" fill="#7C3AED" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">ĐÁY CŨ</text>
+<text x="187.0" y="300.1" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">ĐỈNH GIỮA</text>
+<text x="295.5" y="537.5" font-size="10.5" font-weight="700" fill="#E5484D" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">ĐÁY MỚI</text>
+<text x="295.5" y="339.9" font-size="10.5" font-weight="700" fill="#D97706" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">OB gốc (bearish OB)</text>
+<text x="447.3" y="333.4" font-size="10.5" font-weight="700" fill="#2563EB" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">BULLISH</text>
+<text x="447.3" y="346.5" font-size="10.5" font-weight="700" fill="#2563EB" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">BREAKER</text>
+<text x="520.1" y="398.7" font-size="10.5" font-weight="700" fill="#B91C1C" text-anchor="end" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" data-bx="40.0,616.0">đóng cửa dưới mép xa</text>
+<rect x="642.0" y="92.5" width="330.0" height="519.5" rx="11" fill="#FFFFFF" stroke="#DADDE3" stroke-width="1.2"/>
+<text x="656.0" y="118.0" font-size="13.5" font-weight="700" fill="#111827" data-bx="655.0,961.0">Đọc từng nến (số ở dưới chart)</text>
+<text x="656.0" y="142.5" font-size="12" font-weight="700" fill="#2563EB">Nến 1–17</text>
+<text x="656.0" y="158.5" font-size="11.8" font-weight="400" fill="#111827" data-bx="655.0,959.0">Đủ ba mắt xích. Vùng được gọi là Bullish Breaker —</text>
+<text x="656.0" y="175.2" font-size="11.8" font-weight="400" fill="#111827" data-bx="655.0,959.0">hoàn toàn đúng định nghĩa.</text>
+<text x="656.0" y="199.0" font-size="12" font-weight="700" fill="#2563EB">Nến 20–21</text>
+<text x="656.0" y="215.0" font-size="11.8" font-weight="400" fill="#111827" data-bx="655.0,959.0">Giá hồi về. Nến 21 đóng cửa trong vùng.</text>
+<text x="656.0" y="238.7" font-size="12" font-weight="700" fill="#2563EB">Nến 22</text>
+<text x="656.0" y="254.7" font-size="11.8" font-weight="400" fill="#111827" data-bx="655.0,959.0">Đóng cửa sát mép xa. Chưa thủng, nhưng không có</text>
+<text x="656.0" y="271.5" font-size="11.8" font-weight="400" fill="#111827" data-bx="655.0,959.0">cây nến tăng nào phản ứng.</text>
+<text x="656.0" y="295.2" font-size="12" font-weight="700" fill="#2563EB">Nến 23</text>
+<text x="656.0" y="311.2" font-size="11.8" font-weight="400" fill="#111827" data-bx="655.0,959.0">Đóng cửa DƯỚI mép xa của vùng. Theo quy ước của</text>
+<text x="656.0" y="328.0" font-size="11.8" font-weight="400" fill="#111827" data-bx="655.0,959.0">note: Breaker thất bại.</text>
+<text x="656.0" y="351.8" font-size="12" font-weight="700" fill="#2563EB">Nến 24–25</text>
+<text x="656.0" y="367.8" font-size="11.8" font-weight="400" fill="#111827" data-bx="655.0,959.0">Giá đi tiếp xuống. Ai mua “vì giá chạm Breaker” ở</text>
+<text x="656.0" y="384.5" font-size="11.8" font-weight="400" fill="#111827" data-bx="655.0,959.0">nến 21 đang lỗ.</text>
+<rect x="656.0" y="510.8" width="302.0" height="86.5" rx="8" fill="#B91C1C" fill-opacity="0.07" stroke="#B91C1C" stroke-width="1" stroke-opacity="0.35"/>
+<rect x="656.0" y="510.8" width="4.0" height="86.5" rx="2" fill="#B91C1C"/>
+<text x="670.0" y="530.8" font-size="11.8" font-weight="700" fill="#B91C1C" data-bx="656.0,958.0">Breaker hợp lệ — và thất bại</text>
+<text x="670.0" y="550.6" font-size="11.8" font-weight="400" fill="#111827" data-bx="656.0,958.0">Tên đúng không hứa kết quả. Lệnh chỉ nên có</text>
+<text x="670.0" y="567.3" font-size="11.8" font-weight="400" fill="#111827" data-bx="656.0,958.0">khi khung nhỏ cho bằng chứng phản ứng; ở đây</text>
+<text x="670.0" y="584.1" font-size="11.8" font-weight="400" fill="#111827" data-bx="656.0,958.0">không có.</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo2MjI0ZDc2OC1kM2VmLTQ3OTAtYTM1Yy1lM2JkNGMyMGZlYTUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaK6XmhMeNszmJmSr2hH6ZZ4AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo3MjEyODFjNS1kZWZjLTQ5NTUtOWNjNi02YmE4NTgzNTUxMTJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo0kk2456AvBXW9lcN+xrNYgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggfrm4MaDD5W7/Y+qzvFylIVTxx+gURWwJ6pMqHxA0sBWkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaE3Byf3zYCFhBunEVXxBF4QAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIA4O/lJHXQrTdRlnoZCta2aA50og5+ORkmb2WJiKOnt1ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GTLBZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjYyMjRkNzY4LWQzZWYtNDc5MC1hMzVjLWUzYmQ0YzIwZmVhNS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmU2NDAyMmJjLTMyNzEtNDViNy1iYmI0LTBiOWJhOWJkMzBiN3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCB+ubgxoMPlbv9j6rO8XKUhVPHH6BRFbAnqkyofEDSwFaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggATWCjkCLKvzZYhhqoCs4wugB1WdccnMr4VFeABSpHrGiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggV5mPXXiWk06JYTKjnLq/GfckoMKYb0eWoCRQ/KNStNt0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQPVffOc7r7100Kb12TOwZ5SQ/haOkcCKBApaDzQHMJ+uQCJSDgi9bNvpa2CPOKCVsxgQ6Quh6uuYtNzr9vqu0zY=</c2pa:manifest></metadata></svg>

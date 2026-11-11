@@ -1,10 +1,7 @@
 {
-  "pdfExportSettings": {
-    "pageSize": "Letter",
-    "landscape": false,
-    "margin": "0",
-    "downscalePercent": 100
-  },
   "alwaysUpdateLinks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "defaultViewMode": "preview",
+  "showInlineTitle": true,
+  "readableLineLength": false
 }
